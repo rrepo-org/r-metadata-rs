@@ -1,0 +1,32 @@
+Package: extraSuperpower
+Title: Power Calculation for Two-Way Factorial Designs
+Version: 1.6.2
+Authors@R: c(person(given = "Louis",
+                      family = "Macias",
+                      role = c("aut", "cre", "cph"),
+                      email = "luisrmacias@gmail.com",
+                      comment = "ORCID = <https://orcid.org/0000-0002-3080-2835>"),
+               person(given = "Silke",
+                      family = "Szymczak",
+                      role = "aut",
+                      comment = "ORCID = <https://orcid.org/0000-0002-8897-9035>"))
+Author: Louis Macias [aut, cre, cph] (ORCID =
+    <https://orcid.org/0000-0002-3080-2835>),
+  Silke Szymczak [aut] (ORCID = <https://orcid.org/0000-0002-8897-9035>)
+Maintainer: Louis Macias <luisrmacias@gmail.com>
+Description: The basic use of this package is with 3 sequential functions. First to generate a cell mean matrix. In case of a repeated measurements design also generate correlation and covariance matrices. This is followed by iterative experiment simulation. Finally, power is calculated from the simulated data. Features that may be considered in the model are interaction, measure correlation, non-normal and unbalanced designs distributions.
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: MASS (>= 7.3.0), afex (>= 1.3.0), rlang, Matrix, rlist,
+        ggplot2, plyr, reshape2, scales, ggthemes, fGarch, truncnorm,
+        sn, tmvtnorm, ARTool, permuco, methods, stats, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), linpk, Superpower
+VignetteBuilder: knitr, rmarkdown
+Config/testthat/edition: 3
+License: MIT + file LICENSE
+URL: https://github.com/luisrmacias/extraSuperpower
+BugReports: https://github.com/luisrmacias/extraSuperpower/issues
+NeedsCompilation: no
+Packaged: 2025-12-17 15:08:34 UTC; lr
+Repository: CRAN
+Date/Publication: 2025-12-17 23:20:07 UTC

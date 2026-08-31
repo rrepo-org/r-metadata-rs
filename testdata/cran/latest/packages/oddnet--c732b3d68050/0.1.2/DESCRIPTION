@@ -1,0 +1,31 @@
+Package: oddnet
+Type: Package
+Title: Anomaly Detection in Temporal Networks
+Version: 0.1.2
+Authors@R: c(person("Sevvandi", "Kandanaarachchi", email = "sevvandik@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0337-0395")),
+    person("Rob", "Hyndman", email = "rob.hyndman@monash.edu",
+    role = c("aut"), comment = c(ORCID = "0000-0002-2140-5352")) 
+    )
+Maintainer: Sevvandi Kandanaarachchi <sevvandik@gmail.com>
+Description: Anomaly detection in dynamic, temporal networks. The package 
+    'oddnet' uses a feature-based method to identify anomalies. First, it computes 
+    many features for each network. Then it models the features using time series 
+    methods. Using time series residuals it detects anomalies. This way, the 
+    temporal dependencies are accounted for when identifying anomalies 
+    (Kandanaarachchi, Sanderson, Hyndman 2024) <doi:10.1109/ISCMI63661.2024.10851659>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: dplyr, fable, fabletools, feasts, igraph, lookout, pcaPP,
+        rlang, tibble, tidyr, tsibble, utils
+Suggests: knitr, rmarkdown, urca
+VignetteBuilder: knitr
+URL: https://sevvandi.github.io/oddnet/
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-21 21:35:41 UTC; kan092
+Author: Sevvandi Kandanaarachchi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0337-0395>),
+  Rob Hyndman [aut] (ORCID: <https://orcid.org/0000-0002-2140-5352>)
+Repository: CRAN
+Date/Publication: 2026-07-22 06:00:02 UTC

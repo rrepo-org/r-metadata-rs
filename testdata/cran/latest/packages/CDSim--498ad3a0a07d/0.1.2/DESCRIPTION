@@ -1,0 +1,32 @@
+Package: CDSim
+Type: Package
+Title: Simulating Climate Data for Research and Modelling
+Version: 0.1.2
+Date: 2026-04-19
+Authors@R: 
+    c(
+    person("Isaac", "Osei", role = c("aut", "cre"), email = "ikemillar65@gmail.com"),
+    person("Acheampong", "Baafi-Adomako", role = "aut", email = "acheampongbaafi1@gmail.com")
+    )
+Maintainer: Isaac Osei <ikemillar65@gmail.com>
+Description: Generate synthetic station-based monthly climate time-series including
+    temperature and rainfall, export to Network Common Data Form (NetCDF), 
+    and provide visualization helpers for climate workflows. The approach is 
+    inspired by statistical weather generator concepts described in Wilks (1999)
+    <doi:10.1016/S0168-1923(99)00037-4> and Richardson (1981) <doi:10.1029/WR017i001p00182>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: trend, truncnorm, ncdf4, lubridate, readr, dplyr, ggplot2,
+        rlang, tidyr, vroom, tibble, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://github.com/ikemillar/CDSim
+BugReports: https://github.com/ikemillar/CDSim/issues
+NeedsCompilation: no
+Packaged: 2026-04-22 13:38:18 UTC; isaacosei
+Author: Isaac Osei [aut, cre],
+  Acheampong Baafi-Adomako [aut]
+Repository: CRAN
+Date/Publication: 2026-04-22 14:10:02 UTC

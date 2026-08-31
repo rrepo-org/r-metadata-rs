@@ -1,0 +1,38 @@
+Package: readtextgrid
+Type: Package
+Title: Read in a 'Praat' 'TextGrid' File
+Version: 0.2.0
+Authors@R: c(
+    person("Tristan", "Mahr", role = c("aut", "cre"), 
+           email = "tristan.mahr@wisc.edu", 
+           comment = c(ORCID = "0000-0002-8890-5116")),
+    person("Dan", "Villarreal", role = "ctb"),
+    person("Jonathan", "Washington", role = "ctb"),
+    person("Josef", "Fruehwald", role = "aut"))
+Description: 'Praat' <https://www.fon.hum.uva.nl/praat/> is a widely 
+    used tool for manipulating, annotating and analyzing speech and 
+    acoustic data. It stores annotation data in a format called a 
+    'TextGrid'. This package provides a way to read these 
+    files into R.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.3.0)
+Suggests: testthat (>= 2.1.0)
+RoxygenNote: 7.3.3
+Imports: utils, stats, tibble, purrr, readr, stringr, dplyr, rlang,
+        withr
+URL: https://github.com/tjmahr/readtextgrid,
+        https://www.tjmahr.com/readtextgrid/
+BugReports: https://github.com/tjmahr/readtextgrid/issues
+LinkingTo: cpp11
+Config/Needs/website: rmarkdown
+NeedsCompilation: yes
+Packaged: 2025-10-27 19:42:15 UTC; Tristan
+Author: Tristan Mahr [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8890-5116>),
+  Dan Villarreal [ctb],
+  Jonathan Washington [ctb],
+  Josef Fruehwald [aut]
+Maintainer: Tristan Mahr <tristan.mahr@wisc.edu>
+Repository: CRAN
+Date/Publication: 2025-10-27 20:00:09 UTC

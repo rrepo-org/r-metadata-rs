@@ -1,0 +1,63 @@
+Package: GapAnalysis
+Title: Conservation Indicators Using Spatial Information
+Version: 2.1.0
+Date: 2026-07-23
+Authors@R: c(person("Dan", "Carver", role = c("aut","cre","cph"), comment = c(ORCID = "0000-0002-1344-6357"),
+                    email= "carver.dan1@gmail.com"),
+             person("Sarah", "Gore",role = c("aut","cph"), comment = c(ORCID = "0000-0003-0511-7884"),
+                    email= "sarahluciagora@gmail.com"),
+             person("Chrystian", "Sosa",role = c("aut","cph"), comment = c(ORCID = "0000-0002-3734-3248"),
+                    email= "chrystiam.sossa@gmail.com"),
+             person("Colin", "Khoury", role = c("aut","cph"), comment = c(ORCID = "0000-0001-7893-5744"),
+                    email= "colin.khoury@gmail.com"),
+             person("Julian", "Ramirez-Villegas",role = c("aut","cph"), comment = c(ORCID = "0000-0002-8044-583X"),
+                    email = "J.R.Villegas@cgiar.org"),
+             person("Valentin", "Stefan",role = c("ctb"), email = "valentin.stefan@ufz.de"),
+             person("Harold", "Achicanoy",role = c("ctb","cph"), email = "h.a.achicanoy@cgiar.org"),
+             person("Maria Victoria", "Diaz",role = c("ctb","cph"), email = "m.v.diaz@cgiar.org"),
+             person("Steven", "Sotelo",role = c("ctb","cph"), email = "h.sotelo@cgiar.org"),
+             person("Nora", "Castaneda-Alvarez",role = c("ctb","cph"), email = "nora.castaneda@croptrust.org"),
+             person("Kaue", "De Sousa",role = c("ctb"), email = "k.desousa@cgiar.org"))
+Description: Supports the assessment of the degree of conservation of taxa 
+    in conservation systems, both in ex situ (in genebanks, 
+    botanical gardens, and other repositories), and in situ 
+    (in protected natural areas). Methods are described in 
+    Carver et al. (2021) <doi:10.1111/ecog.05430>, building on 
+    Khoury et al. (2020) <doi:10.1073/pnas.2007029117>, 
+    Khoury et al. (2019) <doi:10.1016/j.ecolind.2018.11.016>, 
+    Khoury et al. (2019) <doi:10.1111/DDI.13008>, 
+    Castaneda-Alvarez et al. (2016) <doi:10.1038/nplants.2016.22>, 
+    and Ramirez-Villegas et al. (2010) <doi:10.1371/journal.pone.0013497>.
+URL: https://github.com/CIAT-DAPA/GapAnalysis
+BugReports: https://github.com/CIAT-DAPA/GapAnalysis/issues
+Depends: R (>= 4.3.0)
+Imports: dataverse, dplyr, leaflet, terra
+License: GPL-3
+LazyData: true
+Encoding: UTF-8
+Suggests: sf, knitr, rmarkdown, devtools, remotes, tidyr, stringr,
+        openxlsx, ggplot2, ggtext, cowplot, htmltools, htmlwidgets,
+        kableExtra, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-23 18:42:30 UTC; dancarver
+Author: Dan Carver [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1344-6357>),
+  Sarah Gore [aut, cph] (ORCID: <https://orcid.org/0000-0003-0511-7884>),
+  Chrystian Sosa [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-3734-3248>),
+  Colin Khoury [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-7893-5744>),
+  Julian Ramirez-Villegas [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-8044-583X>),
+  Valentin Stefan [ctb],
+  Harold Achicanoy [ctb, cph],
+  Maria Victoria Diaz [ctb, cph],
+  Steven Sotelo [ctb, cph],
+  Nora Castaneda-Alvarez [ctb, cph],
+  Kaue De Sousa [ctb]
+Maintainer: Dan Carver <carver.dan1@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-23 19:00:02 UTC

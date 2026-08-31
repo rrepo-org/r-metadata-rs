@@ -1,0 +1,39 @@
+Package: heatwaveR
+Version: 0.5.5
+Date: 2026-01-13
+Title: Detect Heatwaves and Cold-Spells
+Description: The different methods for defining, detecting, and categorising the extreme events 
+    known as heatwaves or cold-spells, as first proposed in Hobday et al. (2016) <doi: 10.1016/j.pocean.2015.12.014> 
+    and Hobday et al. (2018) <https://www.jstor.org/stable/26542662>. The functions in this package work on both air 
+    and water temperature data of hourly and daily temporal resolution. These detection algorithms may be used on 
+    non-temperature data as well.
+Type: Package
+Authors@R: c(person("Robert W.", "Schlegel", role = c("aut", "cre", "ctb"),
+    email = "robwschlegel@gmail.com",
+    comment = c(ORCID = "0000-0002-0705-1287")),
+    person("Albertus J.", "Smit", role = c("aut", "ctb"),
+    comment = c(ORCID = "0000-0002-3799-6126")))
+Maintainer: Robert W. Schlegel <robwschlegel@gmail.com>
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.0.2)
+Suggests: covr, doParallel, dplyr, ggpubr, knitr, lubridate, ncdf4,
+        plyr, rerddap, rmarkdown, stringr, testthat, tibble, tidync,
+        tidyr,
+Imports: data.table, fasttime, ggplot2, Rcpp, RcppRoll, stats, utils
+LinkingTo: Rcpp (>= 0.12.16), RcppArmadillo
+NeedsCompilation: yes
+VignetteBuilder: knitr
+URL: https://robwschlegel.github.io/heatwaveR/index.html,
+        https://github.com/robwschlegel/heatwaveR
+BugReports: https://github.com/robwschlegel/heatwaveR/issues
+Packaged: 2026-01-13 12:31:26 UTC; calanus
+Author: Robert W. Schlegel [aut, cre, ctb] (ORCID:
+    <https://orcid.org/0000-0002-0705-1287>),
+  Albertus J. Smit [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-3799-6126>)
+Repository: CRAN
+Date/Publication: 2026-01-13 13:00:02 UTC

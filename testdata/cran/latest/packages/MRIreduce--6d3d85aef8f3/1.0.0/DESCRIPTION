@@ -1,0 +1,44 @@
+Package: MRIreduce
+Type: Package
+Title: ROI-Based Transformation of Neuroimages into High-Dimensional
+        Data Frames
+Version: 1.0.0
+Authors@R: c(
+    person("Joshua", "Milstein", email = "joshua.millstein@usc.edu", role = c("aut")),
+    person("Jinyao", "Tian", email = "jinyaoti@usc.edu", role = c("aut", "cre"))
+  )
+Maintainer: Jinyao Tian <jinyaoti@usc.edu>
+Description: Converts NIfTI format T1/FL neuroimages into structured,
+    high-dimensional 2D data frames with a focus on region of interest
+    (ROI) based processing. The package incorporates the partition
+    algorithm, which offers a flexible framework for agglomerative
+    partitioning based on the Direct-Measure-Reduce approach. This
+    method ensures that each reduced variable maintains a user-specified
+    minimum level of information while remaining interpretable, as each
+    maps uniquely to one variable in the reduced dataset. The
+    partition framework is described in Millstein et al. (2020)
+    <doi:10.1093/bioinformatics/btz661>. The package allows
+    customization in variable selection, measurement of information
+    loss, and data reduction methods for neuroimaging analysis and
+    machine learning workflows.
+License: MIT + file LICENSE
+Imports: R6, Rcpp, fslr, neurobase, oro.nifti, parallel, partition,
+        reshape2, reticulate
+Depends: R (>= 3.5.0)
+SystemRequirements: FSL (FMRIB Software Library, available at
+        https://fsl.fmrib.ox.ac.uk/fsl/docs/#/install/index)
+LinkingTo: Rcpp
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Suggests: DT, EveTemplate, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://uscbiostats.github.io/MRIreduce/
+Additional_repositories: https://neuroconductor.org/releases/2020/05
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-04-19 04:42:57 UTC; jinyaotian
+Author: Joshua Milstein [aut],
+  Jinyao Tian [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-04-21 20:42:25 UTC

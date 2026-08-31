@@ -1,0 +1,39 @@
+Package: mixedsubjectsirt
+Title: Item Response Theory Calibration with a Mixed Subjects Design
+Version: 1.0.0
+Authors@R: 
+    person("Klint", "Kanopka", , "klint.kanopka@nyu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3196-9538"))
+Description: Integrates large language model generated item responses into
+    psychometric calibration studies through a mixed-subjects design for
+    unidimensional two-parameter and one-parameter logistic item response
+    theory models. Human pilot responses are augmented with model-generated
+    responses using a prediction-powered inference estimator (Angelopoulos,
+    Bates, Fannjiang, Jordan and Zrnic (2023) <doi:10.1126/science.adi6000>;
+    Angelopoulos, Duchi and Zrnic (2023) <doi:10.48550/arXiv.2311.01453>)
+    adapted to marginal maximum-likelihood estimation, following the
+    mixed-subjects design of Broska, Howes and van Loon (2025)
+    <doi:10.1177/00491241251326865>. The estimator is anchored to the human
+    responses and is asymptotically unbiased for the human item parameters at
+    any tuning weight; the weight on the synthetic responses is chosen to
+    minimize propagated ability-score risk, down-weighting uninformative or
+    biased generated responses. Louis-corrected sandwich standard errors,
+    ability scoring, cross-fitted tuning, and scale linking are also provided.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: mirt, rmutil
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://klintkanopka.com/mixedsubjectsirt/,
+        https://github.com/klintkanopka/mixedsubjectsirt
+BugReports: https://github.com/klintkanopka/mixedsubjectsirt/issues
+NeedsCompilation: no
+Packaged: 2026-06-22 02:19:58 UTC; klintkanopka
+Author: Klint Kanopka [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3196-9538>)
+Maintainer: Klint Kanopka <klint.kanopka@nyu.edu>
+Repository: CRAN
+Date/Publication: 2026-06-25 15:50:09 UTC

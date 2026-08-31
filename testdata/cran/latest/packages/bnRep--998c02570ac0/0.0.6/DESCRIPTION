@@ -1,0 +1,25 @@
+Package: bnRep
+Title: A Repository of Bayesian Networks from the Academic Literature
+Version: 0.0.6
+Authors@R: 
+    person("Manuele", "Leonelli", , "manuele.leonelli@ie.edu", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-2562-5192"))
+Description: A collection of Bayesian networks (discrete, Gaussian, and conditional linear Gaussian) collated from recent academic literature. The 'bnRep_summary' object provides an overview of the Bayesian networks in the repository and the package documentation includes details about the variables in each network. A Shiny app to explore the repository can be launched with 'bnRep_app()' and is available online at <https://manueleleonelli.shinyapps.io/bnRep>. Reference: 'M. Leonelli' (2025) <doi:10.1016/j.neucom.2025.129502>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+Imports: bnlearn, dplyr, DT, Rgraphviz, qgraph,shiny, shinyjs,
+        shinythemes
+URL: https://github.com/manueleleonelli/bnRep
+BugReports: https://github.com/manueleleonelli/bnRep/issues
+Depends: R (>= 3.5)
+Suggests: knitr, rmarkdown, ggplot2, scales, stringr, RColorBrewer
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-10-25 18:14:12 UTC; manueleleonelli
+Author: Manuele Leonelli [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-2562-5192>)
+Maintainer: Manuele Leonelli <manuele.leonelli@ie.edu>
+Repository: CRAN
+Date/Publication: 2025-10-26 18:50:09 UTC

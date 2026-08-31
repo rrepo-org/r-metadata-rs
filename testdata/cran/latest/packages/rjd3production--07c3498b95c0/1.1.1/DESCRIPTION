@@ -1,0 +1,30 @@
+Package: rjd3production
+Title: Prepare for Production of Seasonal Adjustment with 'JDemetra+'
+Version: 1.1.1
+Authors@R: 
+    person("Tanguy", "Barthelemy", , "timeserieswithjdemetraandr@gmail.com", role = c("aut", "cre", "art"))
+Description: A comprehensive tool for setting up seasonal data pipelines
+    using 'JDemetra+' (version 3) and 'rjdverse'. This includes setting up
+    a new working environment, creating and selecting calendar regressors,
+    managing specifications (trading-days regressors and outliers) at the
+    workspace level, making a workspace usable by the 'cruncher', removing
+    insignificant outliers, and comparing workspaces.
+License: EUPL
+URL: https://github.com/InseeFr/rjd3production,
+        https://inseefr.github.io/rjd3production/
+Depends: R (>= 4.2.0)
+Imports: constructive, date4ts, dygraphs, flextable, lintr, rjd3jars,
+        rjd3providers, rjd3toolkit, rjd3workspace, rjd3x13, shiny,
+        stats, TBox, tidyr, tools, usethis, utils, yaml, zoo
+Suggests: knitr, quarto, rmarkdown, testthat (>= 3.0.0), waldo
+VignetteBuilder: knitr, quarto
+Config/Needs/build: moodymudskipper/devtag
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-07-17 13:34:11 UTC; onyxia
+Author: Tanguy Barthelemy [aut, cre, art]
+Maintainer: Tanguy Barthelemy <timeserieswithjdemetraandr@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-17 15:50:16 UTC

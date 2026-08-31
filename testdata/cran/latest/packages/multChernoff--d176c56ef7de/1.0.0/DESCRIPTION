@@ -1,0 +1,34 @@
+Package: multChernoff
+Title: Finite-Sample Tail Bound of Likelihood Ratio Test under
+        Multinomial Sampling
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Richard",
+           family = "Guo",
+           role = c("aut", "cre", "cph"),
+           email = "ricguo@umich.edu"),
+    person(given = "Ivana",
+           family = "Liu",
+           role = "aut",
+           email = "yifeiliu@umich.edu"))
+Description: Computes a finite-sample tail bound for the log-likelihood ratio test
+    (LRT) statistic under multinomial sampling. The resulting bound is used to compute
+    finite-sample conservative p-values and critical values when the standard 
+    chi-squared asymptotics can be unreliable. The package also supports multiple 
+    independent multinomial trials.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/richardkwo/multChernoff
+BugReports: https://github.com/richardkwo/multChernoff/issues
+Imports: plyr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-17 18:53:53 UTC; ricguo
+Author: Richard Guo [aut, cre, cph],
+  Ivana Liu [aut]
+Maintainer: Richard Guo <ricguo@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-03-21 10:10:02 UTC

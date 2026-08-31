@@ -1,0 +1,43 @@
+Package: spaAlign
+Title: Stratigraphic Plug Alignment for Integrating Plug-Based and XRF
+        Data
+Version: 0.0.6
+Authors@R: c(
+    person(given = c("Hope", "E."),
+           family = "Omodolor",
+           email = "hopeomodolor@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0005-7842-406X")),
+    person(given = c("Jeffrey", "M."),
+           family = "Yarus",
+           role = "aut")
+    )
+Description: Implements the Stratigraphic Plug Alignment (SPA) procedure for
+    integrating sparsely sampled plug-based measurements (e.g., total organic
+    carbon, porosity, mineralogy) with high-resolution X-ray fluorescence
+    (XRF) geochemical data. SPA uses linear interpolation via the base
+    approx() function with constrained extrapolation (rule = 1) to preserve
+    stratigraphic order and avoid estimation beyond observed depths. The
+    method aligns all datasets to a common depth grid, enabling high-resolution
+    multivariate analysis and stratigraphic interpretation of core-based
+    datasets such as those from the Utica and Point Pleasant formations.
+    See R Core Team (2025)
+    <https://stat.ethz.ch/R-manual/R-devel/library/stats/html/stats-package.html>
+    and Omodolor (2025)
+    <http://rave.ohiolink.edu/etdc/view?acc_num=case175262671767524>
+    for methodological background and geological context.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-07 05:28:00 UTC; hxo76
+Author: Hope E. Omodolor [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-7842-406X>),
+  Jeffrey M. Yarus [aut]
+Maintainer: Hope E. Omodolor <hopeomodolor@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-08 04:20:02 UTC

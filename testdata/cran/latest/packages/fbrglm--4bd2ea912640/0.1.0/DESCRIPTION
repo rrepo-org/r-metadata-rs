@@ -1,0 +1,39 @@
+Package: fbrglm
+Title: Safe Formula-Based Regularized Generalized Linear Models
+Version: 0.1.0
+Authors@R: 
+    person(given = "Koki",
+           family = "Tsuyuzaki",
+           role = c("aut", "cre"),
+           email = "k.t.the-answer@hotmail.co.jp")
+Description: A formula-based wrapper around 'glmnet' that brings the
+    'glm()'-compatible modeling workflow to regularized generalized
+    linear models. Training-time 'terms', 'xlevels', and 'contrasts'
+    are stored on the fit object and reused at predict time, so the
+    design matrix is reconstructed consistently across sessions.
+    Complete-case bookkeeping is exposed via 'nobs_info', and linearly
+    dependent columns are detected by a QR pivot and reported as 'NA'
+    in 'coef()' and 'summary()' (the 'stats::glm()' convention),
+    distinguishing "not identifiable" from "shrunk to zero by the
+    penalty". Novel factor levels at predict time raise the same error
+    'stats::predict.glm()' does by default, with
+    'on_new_levels = "na"' as a production-style opt-in. Accepts
+    character family strings ('gaussian', 'binomial', 'poisson',
+    'cox', 'multinomial', 'mgaussian') and any 'glm' family object the
+    underlying 'glmnet' itself accepts, including 'Gamma' and
+    fixed-theta negative binomial via 'MASS::negative.binomial'.
+URL: https://github.com/dsc-chiba-u/fbrglm
+BugReports: https://github.com/dsc-chiba-u/fbrglm/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: glmnet, stats, graphics, generics, tibble
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, survival, MASS
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-14 08:14:20 UTC; koki
+Author: Koki Tsuyuzaki [aut, cre]
+Maintainer: Koki Tsuyuzaki <k.t.the-answer@hotmail.co.jp>
+Repository: CRAN
+Date/Publication: 2026-07-14 08:30:02 UTC

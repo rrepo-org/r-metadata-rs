@@ -1,0 +1,23 @@
+Package: autoLibLoad
+Version: 1.0
+Date: 2026-05-25
+Title: Automate Retrieving, Building, Installing and Loading Specified
+        Packages
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Author: Barry Zeeberg [aut, cre]
+Depends: R (>= 4.2.0)
+Imports: utils, stringr, devtools, tools, vprint
+Description: Packages required for the search path may be located in the CRAN repository, the system library, or a local directory. We automate determining the disposition of each required package, retrieving it, and loading it as needed.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-01 20:42:49 UTC; barryzeeberg
+Config/roxygen2/version: 8.0.0
+Repository: CRAN
+Date/Publication: 2026-06-08 15:10:09 UTC

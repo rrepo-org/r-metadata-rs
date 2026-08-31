@@ -1,0 +1,38 @@
+Package: gpss
+Title: Gaussian Processes for Social Science
+Version: 1.0.3
+Date: 2026-04-01
+Authors@R: 
+   c(person("Soonhong", "Cho", , "tnsehdtm@gmail.com", role = c("aut")),
+    person("Doeun", "Kim", , "doeun2@ucla.edu", role = c("aut"),
+           comment = c(ORCID = "0000-0003-4789-6599")),
+    person("Chad", "Hazlett", , "chazlett@ucla.edu", role = c("aut", "cre")))
+Description: Provides Gaussian process (GP) regression tools for social
+    science inference problems.  GPs combine flexible nonparametric
+    regression with principled uncertainty quantification: rather than
+    committing to a single model fit, the posterior reflects lesser
+    knowledge at the edge of or beyond the observed data, where other
+    approaches become highly model-dependent.  The package reduces
+    user-chosen hyperparameters from three to zero and supplies
+    convenience functions for regression discontinuity (gp_rdd()),
+    interrupted time-series (gp_its()), and general GP fitting
+    (gpss(), gp_train(), gp_predict()).  Methods are described in
+    Cho, Kim, and Hazlett (2026) <doi:10.1017/pan.2026.10032>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://doeunkim.org/gpss/, https://github.com/doeun-kim/gpss
+BugReports: https://github.com/doeun-kim/gpss/issues
+Imports: Rcpp (>= 1.0.14), Matrix, ggplot2, rlang
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 3.5.0)
+LazyData: true
+Suggests: MASS, posterior, testthat (>= 3.0.0)
+NeedsCompilation: yes
+Packaged: 2026-04-01 20:02:06 UTC; chadhazlett
+Author: Soonhong Cho [aut],
+  Doeun Kim [aut] (ORCID: <https://orcid.org/0000-0003-4789-6599>),
+  Chad Hazlett [aut, cre]
+Maintainer: Chad Hazlett <chazlett@ucla.edu>
+Repository: CRAN
+Date/Publication: 2026-04-08 19:10:17 UTC

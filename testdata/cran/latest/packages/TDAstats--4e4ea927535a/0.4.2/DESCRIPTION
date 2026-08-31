@@ -1,0 +1,53 @@
+Package: TDAstats
+Type: Package
+Title: Pipeline for Topological Data Analysis
+Version: 0.4.2
+Authors@R: c(
+    person("Raoul", "Wadhwa", role = "aut"),
+    person("Andrew", "Dhawan", role = "aut"),
+    person("Drew", "Williamson", role = "aut"),
+    person("Jacob", "Scott", role = "aut"),
+    person("Jason Cory", "Brunson", email = "cornelioid@gmail.com", role = c("aut", "cre")),
+    person("Shota", "Ochi", role = "ctb"))
+Description: A comprehensive toolset for any
+    useR conducting topological data analysis, specifically via the
+    calculation of persistent homology in a Vietoris-Rips complex.
+    The tools this package currently provides can be conveniently split
+    into three main sections: (1) calculating persistent homology; (2)
+    conducting statistical inference on persistent homology calculations;
+    (3) visualizing persistent homology and statistical inference.
+    The published form of TDAstats can be found in Wadhwa et al. (2018)
+    <doi:10.21105/joss.00860>.   
+    For a general background on computing persistent homology for
+    topological data analysis, see Otter et al. (2017)
+    <doi:10.1140/epjds/s13688-017-0109-5>.
+    To learn more about how the permutation test is used for
+    nonparametric statistical inference in topological data analysis,
+    read Robinson & Turner (2017) <doi:10.1007/s41468-017-0008-7>.
+    To learn more about how TDAstats calculates persistent homology,
+    you can visit the GitHub repository for Ripser, the software that
+    works behind the scenes at <https://github.com/Ripser/ripser>.
+    This package has been published as Wadhwa et al. (2018)
+    <doi:10.21105/joss.00860>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.3)
+Imports: ggplot2 (>= 2.2.1), Rcpp (>= 0.12.15), methods (>= 3.6.2)
+URL: https://tdaverse.github.io/TDAstats/
+BugReports: https://github.com/tdaverse/TDAstats/issues
+LinkingTo: Rcpp
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 2.0.0), knitr, rmarkdown, covr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-02-23 00:26:04 UTC; jasoncorybrunson
+Author: Raoul Wadhwa [aut],
+  Andrew Dhawan [aut],
+  Drew Williamson [aut],
+  Jacob Scott [aut],
+  Jason Cory Brunson [aut, cre],
+  Shota Ochi [ctb]
+Maintainer: Jason Cory Brunson <cornelioid@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-23 08:30:15 UTC

@@ -1,0 +1,33 @@
+Package: CytoProfile
+Title: Cytokine Profiling Analysis Tool
+Version: 0.2.4
+Authors@R: c(
+    person("Shubh", "Saraswat", email = "shubh.saraswat00@gmail.com", role = c("cre", "aut", "cph"),
+    comment = c(ORCID = "0009-0009-2359-1484")),
+    person("Xiaohua Douglas", "Zhang", email = "douglas.zhang@uky.edu", role = "aut",
+    comment = c(ORCID = "0000-0002-2486-7931")))
+Description: Provides comprehensive cytokine profiling analysis through quality control using biologically meaningful cutoffs on raw cytokine measurements and by testing for distributional symmetry to recommend appropriate transformations. Offers exploratory data analysis with summary statistics, enhanced boxplots, and barplots, along with univariate and multivariate analytical capabilities for in-depth cytokine profiling such as Principal Component Analysis based on Andrzej Maćkiewicz and Waldemar Ratajczak (1993) <doi:10.1016/0098-3004(93)90090-R>, Sparse Partial Least Squares Discriminant Analysis based on Lê Cao K-A, Boitard S, and Besse P (2011) <doi:10.1186/1471-2105-12-253>, Random Forest based on Breiman, L. (2001) <doi:10.1023/A:1010933404324>, and Extreme Gradient Boosting based on Tianqi Chen and Carlos Guestrin (2016) <doi:10.1145/2939672.2939785>.
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/saraswatsh/CytoProfile,
+        https://cytoprofile.cytokineprofile.org/
+Depends: R (>= 4.3)
+Imports: mixOmics, dplyr, tidyr, pROC, plot3D, caret, xgboost,
+        randomForest, pheatmap, e1071, ggplot2, ggrepel, gridExtra,
+        reshape2, lifecycle, data.table
+Suggests: spelling, BiocManager, Ckmeans.1d.dp, prodlim, testthat,
+        knitr, rmarkdown, devtools
+NeedsCompilation: no
+License: GPL (>= 2)
+LazyData: true
+VignetteBuilder: knitr
+BugReports: https://github.com/saraswatsh/CytoProfile/issues
+Language: en-US
+Packaged: 2026-02-27 16:01:55 UTC; ssa390
+Author: Shubh Saraswat [cre, aut, cph] (ORCID:
+    <https://orcid.org/0009-0009-2359-1484>),
+  Xiaohua Douglas Zhang [aut] (ORCID:
+    <https://orcid.org/0000-0002-2486-7931>)
+Maintainer: Shubh Saraswat <shubh.saraswat00@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-27 16:32:05 UTC

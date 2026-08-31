@@ -1,0 +1,36 @@
+Package: bayesSSM
+Type: Package
+Title: Bayesian Methods for State Space Models
+Version: 0.7.1
+Authors@R: c(
+    person(
+      "Bjarke", "Hautop",
+      email = "bjarke.hautop@gmail.com",
+      role = c("aut", "cre", "cph")
+    )
+  )
+Description: Implements methods for Bayesian analysis of State Space Models. 
+  Includes implementations of the Particle Marginal Metropolis-Hastings 
+  algorithm described in Andrieu et al. (2010) 
+  <doi:10.1111/j.1467-9868.2009.00736.x> and automatic tuning inspired by 
+  Pitt et al. (2012) <doi:10.1016/j.jeconom.2012.06.004> and J. Dahlin and
+  T. B. Schön (2019) <doi:10.18637/jss.v088.c02>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: MASS, stats, dplyr, future, future.apply, Rcpp, checkmate
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), ggplot2, tidyr,
+        extraDistr, rlang, expm
+Config/testthat/edition: 3
+URL: https://github.com/BjarkeHautop/bayesSSM,
+        https://bjarkehautop.github.io/bayesSSM/
+BugReports: https://github.com/BjarkeHautop/bayesSSM/issues
+VignetteBuilder: knitr
+Config/Needs/website: rmarkdown
+NeedsCompilation: yes
+Packaged: 2025-12-06 08:01:03 UTC; bjarke
+Author: Bjarke Hautop [aut, cre, cph]
+Maintainer: Bjarke Hautop <bjarke.hautop@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-06 16:30:02 UTC

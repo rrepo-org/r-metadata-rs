@@ -1,0 +1,33 @@
+Package: rmsBMA
+Title: Reduced Model Space Bayesian Model Averaging
+Version: 0.1.2
+Authors@R: 
+    person("Krzysztof", "Beck", , "beckkrzysztof@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3679-2962"))
+Description: Implements Bayesian model averaging for settings with many
+    candidate regressors relative to the available sample size, including
+    cases where the number of regressors exceeds the number of observations.
+    By restricting attention to models with at most M regressors, the package
+    supports reduced model space inference, thereby preserving degrees of
+    freedom for estimation. It provides posterior summaries, Extreme Bounds
+    Analysis, model selection procedures, joint inclusion measures, and
+    graphical tools for exploring model probabilities, model size
+    distributions, and coefficient distributions. The methodological
+    approach follows Doppelhofer and Weeks (2009) <doi:10.1002/jae.1046>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Imports: ggplot2, ggpubr, grid, gridExtra, Matrix, stats, tidyr, utils
+Depends: R (>= 3.5.0)
+LazyData: true
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-03-13 22:57:45 UTC; becku
+Author: Krzysztof Beck [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3679-2962>)
+Maintainer: Krzysztof Beck <beckkrzysztof@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-14 16:20:02 UTC

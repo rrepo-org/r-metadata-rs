@@ -1,0 +1,109 @@
+Package: sd2R
+Type: Package
+Title: Stable Diffusion Image Generation
+Version: 0.2.1
+Authors@R: c(
+    person("Yuri", "Baramykov",
+        email = "lbsbmsu@mail.ru",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0009-0000-7627-4217")),
+    person("Georgi", "Gerganov",
+        role = c("ctb", "cph"),
+        comment = "Author of the GGML library"),
+    person("leejet",
+        role = c("ctb", "cph"),
+        comment = "Author of stable-diffusion.cpp"),
+    person("stduhpf",
+        role = "ctb",
+        comment = "Core contributor to stable-diffusion.cpp"),
+    person("Green-Sky",
+        role = "ctb",
+        comment = "Contributor to stable-diffusion.cpp"),
+    person("wbruna",
+        role = "ctb",
+        comment = "Contributor to stable-diffusion.cpp"),
+    person("akleine",
+        role = "ctb",
+        comment = "Contributor to stable-diffusion.cpp"),
+    person("Martin", "Raiber",
+        role = "cph",
+        comment = "Copyright holder in miniz.h"),
+    person("Rich", "Geldreich",
+        role = "cph",
+        comment = "Author of miniz.h"),
+    person("RAD Game Tools",
+        role = "cph",
+        comment = "Copyright holder in miniz.h"),
+    person("Valve Software",
+        role = "cph",
+        comment = "Copyright holder in miniz.h"),
+    person("Alex", "Evans",
+        role = "cph",
+        comment = "PNG writing code in miniz.h"),
+    person("Sean", "Barrett",
+        role = "cph",
+        comment = "Author of stb_image.h"),
+    person("Jorge L", "Rodriguez",
+        role = "cph",
+        comment = "Author of stb_image_resize.h"),
+    person("Niels", "Lohmann",
+        role = "cph",
+        comment = "Author of json.hpp (nlohmann/json)"),
+    person("Susumu", "Yata",
+        role = "cph",
+        comment = "Author of darts.h (darts-clone)"),
+    person("Kuba", "Podgorski",
+        role = "cph",
+        comment = "Author of zip.h/zip.c (kuba--/zip)"),
+    person("Meta Platforms Inc.",
+        role = "cph",
+        comment = "rng_mt19937.hpp (ported from PyTorch)"),
+    person("Google Inc.",
+        role = "cph",
+        comment = "Sentencepiece tokenizer code in t5.hpp")
+    )
+Description: Provides Stable Diffusion image generation using the 'ggmlR'
+    library, with no 'Python' or external API dependencies. Supports
+    text-to-image and image-to-image generation for SD 1.x, SD 2.x, 'SDXL',
+    Flux, and 'FLUX.2'. A single sd_generate() function handles the entire pipeline,
+    including sampling and high-resolution output. Features multi-GPU support,
+    a 'Shiny' GUI, and runs on CPU or 'Vulkan' GPU across Linux, macOS, and
+    Windows.
+SystemRequirements: GNU make, curl or wget (for downloading vocabulary
+        files during installation)
+License: MIT + file LICENSE
+URL: https://github.com/Zabis13/sd2R
+BugReports: https://github.com/Zabis13/sd2R/issues
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.0), ggmlR (>= 0.5.0), shiny, base64enc, jsonlite,
+        later, png
+LinkingTo: Rcpp, ggmlR
+Suggests: testthat (>= 3.0.0), callr, plumber, drogonR, withr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-06-19 04:45:44 UTC; yuri
+Author: Yuri Baramykov [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-7627-4217>),
+  Georgi Gerganov [ctb, cph] (Author of the GGML library),
+  leejet [ctb, cph] (Author of stable-diffusion.cpp),
+  stduhpf [ctb] (Core contributor to stable-diffusion.cpp),
+  Green-Sky [ctb] (Contributor to stable-diffusion.cpp),
+  wbruna [ctb] (Contributor to stable-diffusion.cpp),
+  akleine [ctb] (Contributor to stable-diffusion.cpp),
+  Martin Raiber [cph] (Copyright holder in miniz.h),
+  Rich Geldreich [cph] (Author of miniz.h),
+  RAD Game Tools [cph] (Copyright holder in miniz.h),
+  Valve Software [cph] (Copyright holder in miniz.h),
+  Alex Evans [cph] (PNG writing code in miniz.h),
+  Sean Barrett [cph] (Author of stb_image.h),
+  Jorge L Rodriguez [cph] (Author of stb_image_resize.h),
+  Niels Lohmann [cph] (Author of json.hpp (nlohmann/json)),
+  Susumu Yata [cph] (Author of darts.h (darts-clone)),
+  Kuba Podgorski [cph] (Author of zip.h/zip.c (kuba--/zip)),
+  Meta Platforms Inc. [cph] (rng_mt19937.hpp (ported from PyTorch)),
+  Google Inc. [cph] (Sentencepiece tokenizer code in t5.hpp)
+Maintainer: Yuri Baramykov <lbsbmsu@mail.ru>
+Repository: CRAN
+Date/Publication: 2026-06-19 06:40:02 UTC

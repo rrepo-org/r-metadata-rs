@@ -1,0 +1,37 @@
+Package: vcd2df
+Title: Value Change Dump to Data Frame
+Version: 1.0.1
+Authors@R: person(
+    "Calvin", "Deutschbein", , 
+    email = "ckdeutschbein@willamette.edu", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-1354-7200"))
+Description: Provides the 'vcd2df' function, which loads a IEEE 1364-1995/2001
+    VCD (.vcd) file, specified as a parameter of type string containing exactly
+    a file path, and returns an R dataframe containing values over time.  
+    A VCD file captures the register values at discrete timepoints from a 
+    simulated trace of execution of a hardware design in Verilog or VHDL.
+    The returned dataframe contains a row for each register, by name, and a
+    column for each time point, specified VCD-style using octothorpe-prefixed 
+    multiples of the timescale as strings. 
+    The only non-trivial implementation details are that (1) VCD 'x' and 'z' 
+    non-numerical values are encoded as negative value -1 (as otherwise all bit
+    values are positive) and (2) registers with repeated names in distinct 
+    modules are ignored, rather than duplicated, as we anticipate these 
+    registers to have the same values.
+    Read more in arXiv preprint: 'vcd2df' -- Leveraging Data Science Insights 
+    for Hardware Security Research <doi:10.48550/arXiv.2505.06470>.
+URL: https://github.com/vcd2df/r
+BugReports: https://github.com/vcd2df/r/issues
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: quarto
+Suggests: quarto
+NeedsCompilation: no
+Packaged: 2025-05-13 23:20:30 UTC; user
+Author: Calvin Deutschbein [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1354-7200>)
+Maintainer: Calvin Deutschbein <ckdeutschbein@willamette.edu>
+Repository: CRAN
+Date/Publication: 2025-05-16 09:20:02 UTC

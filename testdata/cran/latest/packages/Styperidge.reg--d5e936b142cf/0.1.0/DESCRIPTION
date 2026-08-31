@@ -1,0 +1,38 @@
+Package: Styperidge.reg
+Type: Package
+Title: S-Type Ridge Regression
+Version: 0.1.0
+Authors@R: c(
+ person("Filiz", "Karadag", email = "filiz.karadag@ege.edu.tr", role = c("cre"),
+           comment = c(ORCID = "0000-0002-0116-7772")),    
+ person("HakanSavas", "Sazak", email = "hakan.savas.sazak@ege.edu.tr", role = c("aut"),
+           comment = c(ORCID = "0000-0001-6123-1214")),   
+    person("Olgun", "Aydin", email = "olgun.aydin@pg.edu.pl", role = c("aut"),
+           comment = c(ORCID = "0000-0002-7090-0931")))
+Description: Implements S-type ridge regression, a robust and
+ multicollinearity-aware linear regression estimator that combines S-type
+ robust weighting (via the 'Stype.est' package) with ridge penalization;
+ automatically selects the ridge parameter using the 'ridgregextra'
+ approach targeting a close to 1 variance inflation factor (VIF), and returns
+ comprehensive outputs (coefficients, fitted values, residuals, mean
+ squared error (MSE), etc.) with an easy x/y interface and optional
+ user-supplied weights. See Sazak and Mutlu (2021)
+ <doi:10.1080/03610918.2021.1928196>, Karadag et al. (2023)
+ <https://CRAN.R-project.org/package=ridgregextra> and Sazak et al. (2025)
+ <https://CRAN.R-project.org/package=Stype.est>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats, mctest, isdals, ridgregextra, Stype.est
+Suggests: knitr, rmarkdown
+URL: https://github.com/filizkrdg/Styperidge.reg
+BugReports: https://github.com/filizkrdg/Styperidge.reg/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-09 09:21:53 UTC; pc
+Author: Filiz Karadag [cre] (ORCID: <https://orcid.org/0000-0002-0116-7772>),
+  HakanSavas Sazak [aut] (ORCID: <https://orcid.org/0000-0001-6123-1214>),
+  Olgun Aydin [aut] (ORCID: <https://orcid.org/0000-0002-7090-0931>)
+Maintainer: Filiz Karadag <filiz.karadag@ege.edu.tr>
+Repository: CRAN
+Date/Publication: 2026-01-12 20:30:07 UTC

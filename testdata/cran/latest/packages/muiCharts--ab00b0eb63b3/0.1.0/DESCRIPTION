@@ -1,0 +1,50 @@
+Package: muiCharts
+Type: Package
+Title: 'MUI X Charts' for 'shiny' Apps and 'Quarto'
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Felix", family = "Luginbuhl", role = c("aut", "cre", "cph"), email = "felix.luginbuhl@protonmail.ch", comment = c(ORCID = "0009-0008-6625-2899")),
+      person(family = "MUI",
+             role = "cph",
+             comment = "Copyright holder of the bundled '@mui/x-charts' JavaScript library and its '@mui/x-charts-vendor', '@mui/x-internals', '@mui/x-internal-gestures' and '@mui/system' (subpath imports) helpers; see LICENSE.note"),
+      person(given = "Mike", family = "Bostock",
+             role = "cph",
+             comment = "Copyright holder of the bundled D3 modules and 'internmap' (ISC license), vendored via '@mui/x-charts-vendor'; see LICENSE.note"),
+      person(family = "Meta Platforms, Inc. and affiliates",
+             role = "cph",
+             comment = "Copyright holder of the bundled 'react-is', 'prop-types' and 'use-sync-external-store' JavaScript libraries; 'react' and 'react-dom' are declared as peer dependencies and provided at runtime by 'shiny.react'"))
+Maintainer: Felix Luginbuhl <felix.luginbuhl@protonmail.ch>
+Description: 
+  'MUI X Charts' React chart components for data visualization for building
+  'shiny' applications and 'quarto' documents. Bundles the MIT-licensed
+  community edition of the '@mui/x-charts' JavaScript library (the commercial
+  'Pro' tier is not included).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+Imports: muiMaterial (>= 0.2.1), htmltools, shiny.react (>= 0.4.0),
+        utils
+Suggests: dplyr, tidyr, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/lgnbhl/muiCharts
+BugReports: https://github.com/lgnbhl/muiCharts/issues
+NeedsCompilation: no
+Packaged: 2026-07-19 10:30:22 UTC; felix
+Author: Felix Luginbuhl [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0008-6625-2899>),
+  MUI [cph] (Copyright holder of the bundled '@mui/x-charts' JavaScript
+    library and its '@mui/x-charts-vendor', '@mui/x-internals',
+    '@mui/x-internal-gestures' and '@mui/system' (subpath imports)
+    helpers; see LICENSE.note),
+  Mike Bostock [cph] (Copyright holder of the bundled D3 modules and
+    'internmap' (ISC license), vendored via '@mui/x-charts-vendor'; see
+    LICENSE.note),
+  Meta Platforms, Inc. and affiliates [cph] (Copyright holder of the
+    bundled 'react-is', 'prop-types' and 'use-sync-external-store'
+    JavaScript libraries; 'react' and 'react-dom' are declared as peer
+    dependencies and provided at runtime by 'shiny.react')
+Repository: CRAN
+Date/Publication: 2026-07-28 16:20:02 UTC

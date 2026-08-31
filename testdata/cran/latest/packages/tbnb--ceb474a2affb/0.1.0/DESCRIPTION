@@ -1,0 +1,47 @@
+Package: tbnb
+Type: Package
+Title: Threshold-Based and Iterative Threshold-Based Naive Bayes
+        Classifier
+Version: 0.1.0
+Authors@R: 
+    person(given = "Maurizio", family = "Romano",
+           email = "romano.maurizio@unica.it", role = c("aut", "cre"))
+Description: Implements the Threshold-Based Naive Bayes (Tb-NB) classifier
+    and its iterative refinement (iTb-NB) for binary sentiment / text
+    classification problems. The classifier computes a continuous
+    log-likelihood ratio score per document and uses a data-driven decision
+    threshold estimated via K-fold cross-validation on a user-selected
+    criterion (accuracy, F1 score, Matthews correlation coefficient,
+    balanced error, etc.). An optional
+    iterative refinement procedure locally re-estimates the threshold in
+    regions of class overlap using either Gaussian kernel density estimation
+    or a Central Limit Theorem bootstrap approximation. The package exposes
+    an idiomatic R formula + data.frame interface together with a
+    'quanteda'-based text preprocessing pipeline, supports user-supplied
+    document-feature matrices, and includes an optional word-embedding
+    extension that augments the Bag-of-Words with K nearest semantic
+    neighbours of each token. The package additionally implements the
+    p-value extension proposed by Romano (2025) for both document- and
+    feature-level interpretability via tbnb_pvalues(). Methods are
+    described in Romano, Contu, Mola, Conversano (2024)
+    <doi:10.1007/s11634-023-00536-8>,
+    Romano, Zammarchi, Conversano (2024)
+    <doi:10.1007/s10260-023-00721-1>, and Romano (2025)
+    <doi:10.1007/978-3-031-96736-8_41>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+Depends: R (>= 4.0)
+Imports: Matrix, methods, stats, grDevices, graphics, quanteda (>=
+        3.0.0)
+Suggests: text2vec, stopwords, SnowballC, cld2, cld3, dbscan,
+        viridisLite, testthat (>= 3.0.0), ggplot2
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-11 09:53:18 UTC; 39346
+Author: Maurizio Romano [aut, cre]
+Maintainer: Maurizio Romano <romano.maurizio@unica.it>
+Repository: CRAN
+Date/Publication: 2026-07-21 09:30:07 UTC

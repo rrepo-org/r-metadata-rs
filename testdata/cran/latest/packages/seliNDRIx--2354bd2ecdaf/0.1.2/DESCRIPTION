@@ -1,0 +1,33 @@
+Package: seliNDRIx
+Title: Construction of Selection Index
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Raja",
+           family = "TV",
+           role = c("aut", "cre"),
+           email = "venkatesanraja09@gmail.com"), person("Alex", "Rani", email = "ranialex01vet@gmail.com", role = "aut"),person("Gowane", "Gopal", email = "gopalgowane@gmail.com", role = "aut"),person("Vohra", "Vikas", email = "vohravikas@gmail.com", role = "aut"))
+Description: Selection index is one of the efficient and acurrate method for selection of animals. This package is useful for construction of selection indices.
+    It uses mixed and random model least squares analysis to estimate the heritability of
+    traits and genetic correlation between traits. The package uses the sire model as it is considered as
+    random effect. The genetic and phenotypic (co)variances along with the relative economic values are 
+    used to construct the selection index for any number of traits. It also estimates the accuracy of the
+    index and the genetic gain expected for different traits. Fisher (1936) <doi:10.1111/j.1469-1809.1936.tb02137.x>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, psych, stats, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+URL: https://github.com/venkatesanraja/seliNDRIx
+BugReports: https://github.com/venkatesanraja/seliNDRIx/issues
+NeedsCompilation: no
+Packaged: 2025-05-08 05:54:42 UTC; hp
+Author: Raja TV [aut, cre],
+  Alex Rani [aut],
+  Gowane Gopal [aut],
+  Vohra Vikas [aut]
+Maintainer: Raja TV <venkatesanraja09@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-09 14:30:02 UTC

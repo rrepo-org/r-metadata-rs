@@ -1,0 +1,37 @@
+Package: serieshaz
+Title: Series System Distributions from Dynamic Failure Rate Components
+Version: 0.2.0
+Authors@R: person("Alexander", "Towell", , "lex@metafunctor.com",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0001-6443-9897"))
+Description: Compose multiple dynamic failure rate distributions into
+    series system distributions where the system hazard equals the sum
+    of component hazards. Supports hazard, survival, cumulative
+    distribution function, density, sampling, and maximum likelihood
+    estimation fitting via the dfr_dist() class from 'flexhaz'. Series
+    distributions implement the 'dist.structure' protocol so structural
+    queries (phi, min_paths, min_cuts, system_signature, structural
+    importance, reliability, dual) and the importance measures from
+    'dist.structure' work directly on serieshaz objects. Methods for
+    series system reliability follow Barlow and Proschan (1975,
+    ISBN:0898713692).
+License: GPL (>= 3)
+URL: https://github.com/queelius/serieshaz,
+        https://queelius.github.io/serieshaz/
+BugReports: https://github.com/queelius/serieshaz/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: flexhaz, algebraic.dist, likelihood.model, generics, numDeriv,
+        dist.structure
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-21 16:45:56 UTC; spinoza
+Author: Alexander Towell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6443-9897>)
+Maintainer: Alexander Towell <lex@metafunctor.com>
+Repository: CRAN
+Date/Publication: 2026-05-23 11:50:29 UTC

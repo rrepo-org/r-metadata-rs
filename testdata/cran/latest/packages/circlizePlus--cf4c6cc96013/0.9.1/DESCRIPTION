@@ -1,0 +1,33 @@
+Package: circlizePlus
+Title: Using 'ggplot2' Feature to Write Readable R Code for Circular
+        Visualization
+Version: 0.9.1
+Authors@R: c(
+    person("Tianze", "Cao", , "hnrcao@qq.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4308-1878")),
+    person("Zheyu", "Zhang", , "2054906893@qq.com", role = c("aut"))
+  )
+Description: A wrapper for 'circlize'. All components are based on classes and objects. Users can use the addition symbol (+) to combine components for a circular visualization with 'ggplot2' style.The package is described in Zhang Z, Cao T, Huang Y and Xia Y (2025) <doi:10.3389/fgene.2025.1535368>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: 'track.R' 'heatmap.R' 'cell-geom.R' 'track-geom.R' 'link.R'
+        'param.R' 'utils.R' 'initialize.R' 'add.R'
+        'circlizePlus-package.R' 'data.R'
+Depends: circlize (>= 0.4.16), R (>= 4.4.0)
+Imports: methods, stats
+Suggests: png, ape, dendextend, ComplexHeatmap, testthat (>= 3.0.0),
+        knitr, rmarkdown
+Config/testthat/edition: 3
+URL: https://github.com/TianzeLab/circlizePlus,
+        https://tianzelab.github.io/circlizePlus/,
+        https://doi.org/10.3389/fgene.2025.1535368
+BugReports: https://github.com/TianzeLab/circlizePlus/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-05-23 09:05:12 UTC; caotianze
+Author: Tianze Cao [aut, cre] (ORCID: <https://orcid.org/0000-0003-4308-1878>),
+  Zheyu Zhang [aut]
+Maintainer: Tianze Cao <hnrcao@qq.com>
+Repository: CRAN
+Date/Publication: 2025-05-23 09:22:02 UTC

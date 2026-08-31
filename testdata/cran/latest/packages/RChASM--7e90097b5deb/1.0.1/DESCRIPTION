@@ -1,0 +1,50 @@
+Package: RChASM
+Title: Detection of Chromosomal Aneuploidies in Ancient DNA Studies
+Version: 1.0.1
+Authors@R: 
+    c(
+      person(
+        given = "Adam B.", 
+        family = "Rohrlach",
+        email = "adam.rohrlach@adelaide.edu.au", 
+        role = c("aut", "cph"),
+        comment = c(ORCID = "0000-0002-4204-5018")
+      ), 
+    person(
+      given = "Jono", 
+      family = "Tuke", 
+      email = "simon.tuke@adelaide.edu.au", 
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-1688-8951")
+    ), 
+    person(
+      given = "Wolfgang", 
+      family = "Haak",
+      email = "wolfgang_haak@eva.mpg.de", 
+      role = "aut",
+      comment = c(ORCID = "0000-0003-2475-2007")
+    )
+    )
+Description: An R implementation of ChASM (Chromosomal Aneuploidy Screening Methodology): a statistically rigorous Bayesian approach for screening data sets for autosomal and sex chromosomal aneuploidies. This package takes as input the number of (deduplicated) reads mapping to chromosomes 1-22 and the X and Y chromosomes, and models these using a Dirichlet-multinomial distribution. From this, This package returns posterior probabilities of sex chromosomal karyotypes (XX, XY, XXY, XYY, XXX and X) and full autosomal aneuploidies (trisomy 13, trisomy 18 and trisomy 21). This package also returns two diagnostic statistics: (i) a posterior probability addressing whether contamination between XX and XY may explain the observed sex chromosomal aneuploidy, and (ii) a chi-squared statistic measuring whether the observed read counts are too divergent from the underlying distribution (and may represent abnormal sequencing/quality issues).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: checkmate, cowplot, dplyr, EnvStats, ggplot2, ggrepel, ggsci,
+        ggstar, magrittr, matrixStats, mclust, rstatix, sirt, stringr,
+        tibble, tidyr, readr
+LazyData: true
+Suggests: knitr, rmarkdown, extraDistr
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+URL: https://jonotuke.github.io/RChASM/,
+        https://github.com/jonotuke/RChASM
+BugReports: https://github.com/jonotuke/RChASM/issues
+NeedsCompilation: no
+Packaged: 2026-04-22 07:52:48 UTC; a1078881
+Author: Adam B. Rohrlach [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-4204-5018>),
+  Jono Tuke [aut, cre] (ORCID: <https://orcid.org/0000-0002-1688-8951>),
+  Wolfgang Haak [aut] (ORCID: <https://orcid.org/0000-0003-2475-2007>)
+Maintainer: Jono Tuke <simon.tuke@adelaide.edu.au>
+Repository: CRAN
+Date/Publication: 2026-04-22 08:10:10 UTC

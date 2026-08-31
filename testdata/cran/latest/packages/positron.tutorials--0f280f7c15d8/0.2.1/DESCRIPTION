@@ -1,0 +1,35 @@
+Package: positron.tutorials
+Title: Tutorials for Learning 'Positron' and for Using AI
+Version: 0.2.1
+Authors@R: 
+    c(
+    person(given = "David",
+           family = "Kane",
+           role = c("aut", "cre", "cph"),
+           email = "dave.kane@gmail.com",
+           comment = c(ORCID = "0000-0002-6660-3934")))    
+Description: Collection of tutorials for working with 'Positron' 
+    and for learning how to apply generative AI when coding with R. 
+    Covers scripts, 'Quarto' documents, 'Git', 'GitHub', and 
+    'Quarto' websites. Makes extensive use of the tools in the 
+    'tutorial.helpers' package. 
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+BugReports: https://github.com/PPBDS/positron.tutorials/issues
+URL: https://ppbds.github.io/positron.tutorials/,
+        https://github.com/PPBDS/positron.tutorials
+Imports: tutorial.helpers, usethis
+Suggests: arrow, babynames, DBI, dbplyr, duckdb, fs, ggrepel, gitcreds,
+        httr2, knitr, leaflet, learnr, nycflights13, palmerpenguins,
+        pkgbuild, plotly, quarto, rsconnect, testthat, tidycensus,
+        tidyverse, viridis
+NeedsCompilation: no
+Packaged: 2026-02-17 11:35:37 UTC; dkane
+Author: David Kane [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6660-3934>)
+Maintainer: David Kane <dave.kane@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-17 11:50:02 UTC

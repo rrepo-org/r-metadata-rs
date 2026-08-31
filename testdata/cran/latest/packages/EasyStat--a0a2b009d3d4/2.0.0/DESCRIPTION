@@ -1,0 +1,56 @@
+Package: EasyStat
+Type: Package
+Title: Automated Statistical Analysis, Visualization and Multi-Format
+        Narrative Reporting
+Version: 2.0.0
+Date: 2026-04-28
+Authors@R: c(
+    person("Mahesh", "Divakaran",
+           email   = "imaheshdivakaran@gmail.com",
+           role    = c("aut", "cre"),
+           comment = c(Affiliation = "Amity School of Applied Sciences, Amity University Lucknow")),
+    person("Gunjan", "Singh",
+           role    = "aut",
+           comment = c(Affiliation = "Amity School of Applied Sciences, Amity University Lucknow")),
+    person("Jayadevan", "Shreedharan",
+           role    = "aut",
+           comment = c(Affiliation = "Gulf Medical University"))
+    )
+Description: Provides automated statistical analysis, rich visualization, and
+    multi-format narrative reporting through a unified pipeline. Descriptive
+    statistics are available via easy_describe() and easy_group_summary().
+    Inferential tests with plain-language narratives are provided by
+    easy_regression(), easy_logistic_regression(), easy_ttest(), easy_anova(),
+    easy_chisq(), easy_ztest(), easy_ftest(), easy_correlation(), easy_wilcox(),
+    and easy_kruskal(). Publication-ready 'ggplot2' visualizations are produced
+    by easy_histogram(), easy_boxplot(), easy_scatter(), easy_barplot(),
+    easy_qqplot(), easy_density(), easy_correlation_heatmap(),
+    easy_regression_diagnostics(), and easy_odds_ratio_plot(). The core
+    Narrative Generator Module applies conditional logic to extracted p-values,
+    effect sizes, and model-fit metrics to produce statistically sound,
+    human-readable explanations automatically. Results render in the 'RStudio'
+    Viewer (HTML), the console (ASCII), or export directly to Microsoft Word
+    via 'flextable' and 'officer'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.3
+Imports: broom (>= 1.0.0), glue (>= 1.6.0), ggplot2 (>= 3.4.0), knitr
+        (>= 1.40), kableExtra (>= 1.3.4), htmltools (>= 0.5.0),
+        flextable (>= 0.9.0), officer (>= 0.6.0), stats, utils, tools
+Suggests: testthat (>= 3.0.0), scales (>= 1.2.0), rmarkdown (>= 2.0)
+VignetteBuilder: knitr
+URL: https://github.com/itsmdivakaran/Easystat,
+        https://itsmdivakaran.github.io/Easystat/
+BugReports: https://github.com/itsmdivakaran/Easystat/issues
+NeedsCompilation: no
+Packaged: 2026-04-29 08:21:54 UTC; maheshdivakaran
+Author: Mahesh Divakaran [aut, cre] (Affiliation: Amity School of Applied
+    Sciences, Amity University Lucknow),
+  Gunjan Singh [aut] (Affiliation: Amity School of Applied Sciences,
+    Amity University Lucknow),
+  Jayadevan Shreedharan [aut] (Affiliation: Gulf Medical University)
+Maintainer: Mahesh Divakaran <imaheshdivakaran@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-29 19:10:14 UTC

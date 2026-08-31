@@ -1,0 +1,23 @@
+Package: NSMM
+Type: Package
+Title: Non-Stationary Multivariate (Copula-Based) Framework,
+        Hydrological Applications
+Version: 0.1.2
+Authors@R: c(person( given = "Dorsaf", ,family = "Goutali", "dorsaf.goutali@inrs.ca", role = c("aut", "cre")),
+    person(given = "Fateh", ,family = "Chebana", "fateh.chebana@inrs.ca", role = "aut"))
+Description: To account for non-stationary multivariate data, this package implements the framework including copula and marginal distributions. In addition to modeling and parameter estimations, it allows the computation and visualization of multivariate quantile curves for given events.
+  This package is useful for a variety of disciplines such as finance, climatology and particularly for hydrological applications, where dependence structures and marginal parameters may vary over time.
+  This framework, based on Chebana & Ouarda (2021) <doi:10.1016/j.jhydrol.2020.125907>, integrates both multivariate and non-stationary aspects to be more accurate (e.g. for risk assessment) and more realistic (e.g. considering climate changes).
+Imports: colorspace, copula, dplyr, EnvStats, evd, ggplot2, openxlsx
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-04-06 21:49:54 UTC; gabrielreynoso
+Author: Dorsaf Goutali [aut, cre],
+  Fateh Chebana [aut]
+Maintainer: Dorsaf Goutali <dorsaf.goutali@inrs.ca>
+Repository: CRAN
+Date/Publication: 2026-04-15 12:40:13 UTC

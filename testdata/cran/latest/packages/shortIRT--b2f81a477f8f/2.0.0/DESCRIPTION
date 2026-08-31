@@ -1,0 +1,39 @@
+Package: shortIRT
+Type: Package
+Title: Procedures Based on Item Response Theory Models for the
+        Development of Short Test Forms
+Version: 2.0.0
+Authors@R: 
+  c(person(given = c("Ottavia", "M."),
+           family = "Epifania",
+           role = c("aut", "cre"),
+           email = "ottavia.epifania@unitn.it", 
+           comment = c(ORCID = "0000-0001-8552-568X")),
+  person(given = "Pasquale",
+           family = "Anselmi",
+           role = "ctb"),
+  person(given = "Egidio",
+           family = "Robusto",
+           role = "ctb"), 
+  person(given = "Livio",
+           family = "Finos",
+           role = "ctb"))
+Maintainer: Ottavia M. Epifania <ottavia.epifania@unitn.it>
+Description: Implement different Item Response Theory (IRT) based procedures for the development of tests from item bank. The procedures are flexible enough to be adopted for the development of short forms of full-length tests. Different procedures are considered (Epifania, Anselmi & Robusto, 2022 <doi:10.1007/978-3-031-27781-8_7> and Epifania & Finos, 2025 <doi:10.1007/978-3-031-95995-0_32>).
+        The main difference between the presented procedures refers to the degree of control that they allow for targeting specific latent trait levels. The simplest procedure, denoted as benchmark procedure, does not allow for any control on the latent trait levels of interest, while the other procedures allow for specifying either discrete latent trait levels for which the information needs to be maximized (theta-target procedure, <doi:10.1007/978-3-031-27781-8_7>) or a target information function that needs to be recreated with the selected items (item selection algorithm -ISA- denoted as Frank in <doi:10.1007/978-3-031-95995-0_32>).
+        Another difference concerns the definition of the number of items to be selected. In the benchmark and theta-target procedures, the number of items must be defined a priori, while in ISA the number of items is determined automatically by the algorithm. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: ggplot2
+RoxygenNote: 7.3.3
+Suggests: MASS, rmarkdown, sirt, testthat (>= 3.0.0), V8
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-04 10:59:02 UTC; Ottavia
+Author: Ottavia M. Epifania [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8552-568X>),
+  Pasquale Anselmi [ctb],
+  Egidio Robusto [ctb],
+  Livio Finos [ctb]
+Repository: CRAN
+Date/Publication: 2026-06-04 14:50:02 UTC

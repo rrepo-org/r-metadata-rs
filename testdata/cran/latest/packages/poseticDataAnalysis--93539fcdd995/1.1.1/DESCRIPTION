@@ -1,0 +1,50 @@
+Package: poseticDataAnalysis
+Type: Package
+Title: Posetic Data Analysis
+Version: 1.1.1
+Authors@R: c(
+    person("Alessandro", "Avellone", email = "alessandro.avellone@unimib.it", role = c("aut", "cre")),
+    person("Lucio", "De Capitani", email = "lucio.decapitani1@unimib.it", role = c("aut")),
+    person("Marco", "Fattore", email = "marco.fattore@unimib.it", role = c("aut"))
+    )
+Maintainer: Alessandro Avellone <alessandro.avellone@unimib.it>
+Description: Build and manipulate partially ordered sets (posets), to perform some data analysis 
+    on them and to implement multi-criteria decision making procedures. Several efficient ways for generating linear extensions are implemented, together with functions for building mutual ranking probabilities, incomparability, dominance and separation scores (Fattore, M., De Capitani, L., Avellone, A., Suardi, A. (2024). A fuzzy posetic toolbox for multi-criteria evaluation on ordinal data systems. ANNALS OF OPERATIONS RESEARCH <doi:10.1007/s10479-024-06352-3>). 
+License: GPL (>= 2)
+Imports: methods
+SystemRequirements: C++20
+NeedsCompilation: yes
+Encoding: UTF-8
+Repository: CRAN
+Collate: '00package-exports.R' '00package-class.R' 'IsSymmetric.R'
+        'IsReflexive.R' 'IsAntisymmetric.R' 'IsTransitive.R'
+        'IsPreorder.R' 'IsPartialOrder.R' 'TransitiveClosure.R'
+        'ReflexiveClosure.R' 'POSet.R' 'LinearPOSet.R' 'ProductPOSet.R'
+        'BinaryVariablePOSet.R' 'IntersectionPOSet.R'
+        'LinearSumPOSet.R' 'DisjointSumPOSet.R' 'LiftingPOSet.R'
+        'CrownPOSet.R' 'FencePOSet.R' 'DualPOSet.R'
+        'LexicographicProductPOSet.R' 'POSetElements.R'
+        'DominanceMatrix.R' 'IsDominatedBy.R' 'Dominates.R'
+        'IsComparableWith.R' 'IsIncomparableWith.R' 'UpsetOf.R'
+        'IsUpset.R' 'DownsetOf.R' 'IsDownset.R' 'ComparabilitySetOf.R'
+        'IncomparabilitySetOf.R' 'POSetMinimals.R' 'POSetMaximals.R'
+        'IsMinimal.R' 'IsMaximal.R' 'CoverRelation.R' 'CoverMatrix.R'
+        'OrderRelation.R' 'IncomparabilityRelation.R' 'POSetMeet.R'
+        'POSetJoin.R' 'IsExtensionOf.R' 'LEGenerator.R'
+        'LEBubleyDyer.R' 'LEGet.R' 'ExactMRP.R'
+        'BubleyDyerMRPGenerator.R' 'BubleyDyerMRP.R'
+        'ExactEvaluation.R' 'BuildBubleyDyerEvaluationGenerator.R'
+        'BubleyDyerEvaluation.R' 'BLSDominance.R'
+        'BubleyDyerSeparation.R' 'BuildBubleyDyerSeparationGenerator.R'
+        'ExactSeparation.R' 'LexSeparation.R' 'LexMRP.R'
+        'FuzzyInBetweenness.R' 'FuzzyInBetweennessMinMax.R'
+        'FuzzyInBetweennessProbabilistic.R' 'FuzzySeparation.R'
+        'FuzzySeparationMinMax.R' 'FuzzySeparationProbabilistic.R'
+        'OptimalBidimensionalEmbedding.R'
+        'BidimentionalPosetRepresentation.R'
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-27 12:43:49 UTC; ale
+Author: Alessandro Avellone [aut, cre],
+  Lucio De Capitani [aut],
+  Marco Fattore [aut]
+Date/Publication: 2026-07-27 13:10:02 UTC

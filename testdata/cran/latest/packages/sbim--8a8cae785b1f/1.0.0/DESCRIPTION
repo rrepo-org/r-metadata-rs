@@ -1,0 +1,23 @@
+Package: sbim
+Title: Simulation-Based Inference using a Metamodel for Log-Likelihood
+        Estimator
+Version: 1.0.0
+Authors@R: 
+    person("Joonha", "Park", , "j.park@ku.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4493-7730"))
+Description: Parameter inference methods for models defined implicitly using a random simulator. Inference is carried out using simulation-based estimates of the log-likelihood of the data. The inference methods implemented in this package are explained in Park, J. (2025) <doi:10.48550/arxiv.2311.09446>. These methods are built on a simulation metamodel which assumes that the estimates of the log-likelihood are approximately normally distributed with the mean function that is locally quadratic around its maximum. Parameter estimation and uncertainty quantification can be carried out using the ht() function (for hypothesis testing) and the ci() function (for constructing a confidence interval for one-dimensional parameters).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp
+Imports: Rcpp, stats
+Suggests: devtools, dplyr, ggplot2, knitr, magrittr, pomp, rmarkdown,
+        tidyr
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+NeedsCompilation: yes
+Packaged: 2025-03-11 16:31:09 UTC; j139p002_a
+Author: Joonha Park [aut, cre] (<https://orcid.org/0000-0002-4493-7730>)
+Maintainer: Joonha Park <j.park@ku.edu>
+Repository: CRAN
+Date/Publication: 2025-03-13 12:50:02 UTC

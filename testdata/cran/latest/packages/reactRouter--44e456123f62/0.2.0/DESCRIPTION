@@ -1,0 +1,30 @@
+Package: reactRouter
+Type: Package
+Title: 'React Router' for 'shiny' Apps and 'Quarto'
+Version: 0.2.0
+Authors@R: c(
+    person(given = "Felix", family = "Luginbuhl", role = c("aut", "cre", "cph"), email = "felix.luginbuhl@protonmail.ch", comment = c(ORCID = "0009-0008-6625-2899")),
+    person(given = "Andryas", family = "Waurzenczak", role = c("ctb"))
+    )
+Maintainer: Felix Luginbuhl <felix.luginbuhl@protonmail.ch>
+Description: Provides a wrapper around the 'react-router-dom' 'React' library for use in
+  'Shiny' applications and 'Quarto' documents. Enables client-side routing with hash,
+  memory, and browser history strategies, nested routes, dynamic segments, data loaders,
+  actions, and navigation hooks.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: htmltools, shiny, shiny.react, checkmate, jsonlite
+Suggests: testthat (>= 3.0.0), chromote (>= 0.1.1), shinytest2, dplyr,
+        muiMaterial
+RoxygenNote: 7.3.3
+URL: https://felixluginbuhl.com/reactRouter/
+BugReports: https://github.com/lgnbhl/reactRouter/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-10 10:03:04 UTC; felix
+Author: Felix Luginbuhl [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0008-6625-2899>),
+  Andryas Waurzenczak [ctb]
+Repository: CRAN
+Date/Publication: 2026-05-10 10:20:02 UTC

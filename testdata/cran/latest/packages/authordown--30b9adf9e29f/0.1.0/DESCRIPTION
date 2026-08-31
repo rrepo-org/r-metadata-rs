@@ -1,0 +1,27 @@
+Package: authordown
+Title: Author Metadata Management and Manuscript Front Matter
+Version: 0.1.0
+Authors@R: c(
+    person("Zhipeng", "Cao", email = "zhipeng30@foxmail.com", role = c("aut", "cre"))
+  )
+Author: Zhipeng Cao [aut, cre]
+Maintainer: Zhipeng Cao <zhipeng30@foxmail.com>
+Description: Manage author metadata and generate manuscript front matter.
+    It produces title pages, acknowledgements, conflicts of interest, and
+    contribution sections for large author lists, with helpers for validating
+    and reading common spreadsheet formats.
+License: AGPL-3
+URL: https://zh1peng.github.io/authordown/,
+        https://github.com/zh1peng/authordown
+BugReports: https://github.com/zh1peng/authordown/issues
+Encoding: UTF-8
+Depends: R (>= 3.5)
+RoxygenNote: 7.3.2
+Imports: openxlsx, rlang
+Suggests: knitr, pkgdown, rmarkdown, shiny, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-20 01:51:44 UTC; Zhipeng
+Repository: CRAN
+Date/Publication: 2026-03-24 09:20:08 UTC

@@ -1,0 +1,38 @@
+Package: pathintdid
+Title: Path-Integrated Difference-in-Differences
+Version: 0.1.0
+Authors@R: 
+    person("Comlan Apollinaire-Fabrice", "Salavi",
+           email = "fsalavi@africanschoolofeconomics.com",
+           role = c("aut", "cre"))
+Description: Implements the Path-Integrated Difference-in-Differences
+    ('PI-DiD') framework of Salavi (2026), which treats the treatment
+    effect as a trajectory tau(t) = c1(t) - c0(t) and integrates the
+    baseline-differenced gap over a post-treatment window to obtain a
+    cumulative causal effect and a path-integrated average treatment
+    effect on the treated, together with cluster-robust standard errors,
+    confidence intervals, diagnostic plots, and the pre-treatment
+    parallel-trends, grid-density, and anticipation-robustness checks of
+    section 5 of the companion paper. This approach avoids the
+    endpoint-subtraction bias that arises whenever a transitory policy's
+    effect has fully decayed by the evaluation date, in which case the
+    conventional static difference-in-differences estimate can be zero
+    even though the cumulative benefit delivered to treated units was
+    strictly positive. Formerly distributed as a Stata package under the
+    names 'pidid' and 'pididplot'.
+License: MIT + file LICENSE
+URL: https://github.com/FabriceSALAVI/PathIntDID
+BugReports: https://github.com/FabriceSALAVI/PathIntDID/issues
+Depends: R (>= 3.5)
+Imports: graphics, grDevices, stats
+Suggests: testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-01 23:28:50 UTC; HP
+Author: Comlan Apollinaire-Fabrice Salavi [aut, cre]
+Maintainer: Comlan Apollinaire-Fabrice Salavi <fsalavi@africanschoolofeconomics.com>
+Repository: CRAN
+Date/Publication: 2026-08-08 11:50:02 UTC

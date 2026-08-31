@@ -1,0 +1,39 @@
+Package: ffiec
+Type: Package
+Title: R Interface to 'FFIEC Central Data Repository REST API' Service
+Version: 0.2.0
+Authors@R: c(
+    person("Michael", "Thomas", email = "mthomas@ketchbrookanalytics.com",
+           role = c("aut", "cre")),
+    person("Ketchbrook Analytics", role = c("cph", "fnd")),
+    person("Dylan", "Hughes", email = "dhughes@ketchbrookanalytics.com",
+           role = "ctb")
+  )
+Description: Provides a simplified interface to the Central Data Repository 'REST
+    API' service made available by the United States Federal Financial
+    Institutions Examination Council ('FFIEC'). Contains functions to retrieve
+    reports of Condition and Income (Call Reports) and Uniform Bank Performance
+    Reports ('UBPR') in list or tidy data frame format for most 'FDIC' insured
+    institutions. See
+    <https://cdr.ffiec.gov/public/Files/SIS611_-_Retrieve_Public_Data_via_Web_Service.pdf>
+    for the official 'REST API' documentation published by the 'FFIEC'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: cli, dplyr, httr2, jsonlite, purrr, rlang, stringr, tibble,
+        xml2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://github.com/ketchbrookanalytics/ffiec,
+        https://ketchbrookanalytics.github.io/ffiec/
+BugReports: https://github.com/ketchbrookanalytics/ffiec/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-18 14:23:44 UTC; root
+Author: Michael Thomas [aut, cre],
+  Ketchbrook Analytics [cph, fnd],
+  Dylan Hughes [ctb]
+Maintainer: Michael Thomas <mthomas@ketchbrookanalytics.com>
+Repository: CRAN
+Date/Publication: 2026-04-18 14:40:02 UTC

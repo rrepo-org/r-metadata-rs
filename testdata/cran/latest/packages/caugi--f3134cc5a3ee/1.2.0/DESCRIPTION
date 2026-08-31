@@ -1,0 +1,60 @@
+Package: caugi
+Title: Causal Graph Interface
+Version: 1.2.0
+Authors@R: c(
+    person(
+      given = "Frederik",
+      family = "Fabricius-Bjerre",
+      email = "frederik@fabriciusbjerre.dk",
+      role = c("aut", "cre", "cph")
+    ),
+    person(
+      given = "Johan",
+      family = "Larsson",
+      role = "aut",
+      email = "johan@jolars.co",
+      comment = c(ORCID = "0000-0002-4029-5945")
+    ),
+    person(
+      given = "Michael",
+      family = "Sachs",
+      role = "aut",
+      email = "sachsmc@gmail.com",
+      comment = c(ORCID = "0000-0002-1279-8676")
+    ),
+    person(
+        given = "Bjarke Hautop",
+        family = "Kristensen",
+        role = "aut",
+        email = "bjarke.hautop@gmail.com"
+    )
+  )
+Description: Create, query, and modify causal graphs. 'caugi' (Causal Graph
+    Interface) is a causality-first, high performance graph package that
+    provides a simple interface to build, structure, and examine causal
+    relationships.
+License: MIT + file LICENSE
+Language: en-US
+URL: https://caugi.org/,
+        https://github.com/frederikfabriciusbjerre/caugi
+BugReports: https://github.com/frederikfabriciusbjerre/caugi/issues
+Depends: R (>= 4.2)
+Imports: data.table, grid, S7, stats, methods
+Suggests: bnlearn, dagitty, devtools, ggm, graph, gRbase, igraph,
+        jsonlite, knitr, MASS, Matrix, rextendr, rmarkdown, testthat,
+        waldo, withr
+VignetteBuilder: knitr
+Config/rextendr/version: 0.4.2
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.80.0, xz
+Config/Needs/website: rmarkdown
+NeedsCompilation: yes
+Packaged: 2026-05-05 14:03:55 UTC; jola
+Author: Frederik Fabricius-Bjerre [aut, cre, cph],
+  Johan Larsson [aut] (ORCID: <https://orcid.org/0000-0002-4029-5945>),
+  Michael Sachs [aut] (ORCID: <https://orcid.org/0000-0002-1279-8676>),
+  Bjarke Hautop Kristensen [aut]
+Maintainer: Frederik Fabricius-Bjerre <frederik@fabriciusbjerre.dk>
+Repository: CRAN
+Date/Publication: 2026-05-05 14:56:15 UTC

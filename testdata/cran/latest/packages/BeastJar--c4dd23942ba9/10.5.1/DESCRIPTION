@@ -1,0 +1,35 @@
+Package: BeastJar
+Type: Package
+Title: JAR Dependency for MCMC Using 'BEAST'
+Version: 10.5.1
+Authors@R: c(
+    person("Marc A.", "Suchard", email = "msuchard@ucla.edu", role = c("aut","cre","cph")),
+    person("Andrew", "Rambaut", role = "cph"),
+    person("Alexei J.", "Drummond", role = "cph")
+    )
+Description: Provides JAR to perform Markov chain Monte Carlo (MCMC) inference using
+    the popular Bayesian Evolutionary Analysis by Sampling Trees 'BEAST X' software
+    library of Baele et al (2025) <doi:10.1038/s41592-025-02751-x>. 'BEAST X' supports
+    auto-tuning Metropolis-Hastings, slice, Hamiltonian Monte Carlo and Sequential Monte
+    Carlo sampling for a large variety of composable standard and phylogenetic
+    statistical models using high performance computing.  By placing the 'BEAST X' JAR in
+    this package, we offer an efficient distribution system for 'BEAST X' use by other R
+    packages using CRAN.
+License: Apache License 2.0
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: rJava
+URL: https://github.com/beast-dev/BeastJar
+Copyright: See file COPYRIGHTS
+RoxygenNote: 7.3.2
+SystemRequirements: Java (>= 1.8)
+Suggests: testthat
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-08-20 13:59:11 UTC; msuchard
+Author: Marc A. Suchard [aut, cre, cph],
+  Andrew Rambaut [cph],
+  Alexei J. Drummond [cph]
+Maintainer: Marc A. Suchard <msuchard@ucla.edu>
+Repository: CRAN
+Date/Publication: 2025-08-21 13:20:02 UTC

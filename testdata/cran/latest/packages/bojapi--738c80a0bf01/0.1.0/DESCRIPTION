@@ -1,0 +1,26 @@
+Package: bojapi
+Title: Access the Bank of Japan Time-Series Data API
+Version: 0.1.0
+Authors@R: 
+    person("Kenji", "Miyazaki", email = "kenjimyzk@gmail.com",
+           role = c("aut", "cre"))
+Description: An unofficial, tidy, rate-limited interface to the 'Bank of Japan
+    Time-Series Data Search' API. Search series metadata, retrieve observations
+    by series code or hierarchy, follow pagination automatically, and work with
+    normalized long or wide data frames. The API does not require an API key.
+URL: https://github.com/kenjimyzk/bojapi
+BugReports: https://github.com/kenjimyzk/bojapi/issues
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: httr2 (>= 1.1.0), tibble
+Suggests: knitr, rmarkdown, testthat (>= 3.2.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-17 05:21:41 UTC; root
+Author: Kenji Miyazaki [aut, cre]
+Maintainer: Kenji Miyazaki <kenjimyzk@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-24 10:20:08 UTC

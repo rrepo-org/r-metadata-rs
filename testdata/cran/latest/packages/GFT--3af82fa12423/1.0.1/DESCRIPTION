@@ -1,0 +1,33 @@
+Package: GFT
+Type: Package
+Title: Generalized Fisher Transformation of Correlation Matrices
+Version: 1.0.1
+Authors@R: c(
+    person("Ilya", "Archakov", role = "aut"),
+    person("Peter Reinhard", "Hansen", email = "hansen@unc.edu",
+           role = c("aut", "cre")))
+Description: Forward and inverse generalized Fisher transformation (GFT)
+    of correlation matrices, gamma = vecl(log C), which maps the positive
+    definite correlation matrices one-to-one onto the Euclidean space of
+    dimension n(n-1)/2, see Archakov and Hansen (2021)
+    <doi:10.3982/ECTA16910>. The inverse is computed from a variational
+    characterization by the GFT-FP+N algorithm: a fixed-point phase in
+    the log domain followed by a matrix-free inexact Newton phase with
+    preconditioned conjugate gradients. Reference implementations of the
+    plain fixed point, Broyden's method, and full Newton are included.
+    Uses base R only.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/reinhardhansen/GFT
+BugReports: https://github.com/reinhardhansen/GFT/issues
+NeedsCompilation: no
+Packaged: 2026-08-22 20:54:24 UTC; prhansen
+Author: Ilya Archakov [aut],
+  Peter Reinhard Hansen [aut, cre]
+Maintainer: Peter Reinhard Hansen <hansen@unc.edu>
+Repository: CRAN
+Date/Publication: 2026-08-23 15:40:08 UTC

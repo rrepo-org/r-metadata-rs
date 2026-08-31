@@ -1,0 +1,46 @@
+Package: ebrahim.gof
+Type: Package
+Title: Goodness-of-Fit and Calibration Tests for Logistic Regression
+Version: 2.6.0
+Date: 2026-08-26
+Authors@R: person("Ebrahim", "Khaled Ebrahim",
+                  email = "ebrahimkhaled@alexu.edu.eg",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0009-0006-7839-8778"))
+Maintainer: Ebrahim Khaled Ebrahim <ebrahimkhaled@alexu.edu.eg>
+Description: Provides a unified battery of goodness-of-fit and calibration
+    tests for binary logistic regression, runnable in a single call via
+    'run.all.gof()'. Around twenty-five tests spanning five decades of
+    literature are aggregated and grouped by the departure each is built to
+    detect: global and standardized statistics, partition tests, directed and
+    covariate-space tests, smoothing and resampling tests, and calibration
+    tests. Each is obtained from its own package where installed and
+    attributed to its authors. The package also implements the author's own
+    procedures for sparse data, where the Hosmer-Lemeshow test loses power:
+    the omnibus Ebrahim-Farrington test, the directed 'EDGE' test,
+    'DeepGOF-1' (a pretrained convolutional statistic whose level comes from the
+    analyst's own parametric bootstrap rather than from the network), a
+    Cauchy-combination ensemble, 'legoft()' (a pretrained combination whose
+    weights are fixed offline and ship frozen, so two analysts obtain the same
+    p-value), and 'shrink.gof()' for penalized (ridge) logistic regression,
+    where shrinkage biases the fitted probabilities and invalidates the usual
+    chi-squared references. For more details see Hosmer (1980)
+    <doi:10.1080/03610928008827941> and Farrington (1996)
+    <doi:10.1111/j.2517-6161.1996.tb02086.x>.
+License: GPL-3
+URL: https://github.com/ebrahimkhaled/ebrahim.gof
+BugReports: https://github.com/ebrahimkhaled/ebrahim.gof/issues
+Depends: R (>= 3.5.0)
+Imports: parallel, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, ResourceSelection,
+        ggplot2, CompQuadForm, statmod, mgcv, BAGofT, givitiR, callr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-26 12:25:31 UTC; ebrah
+Author: Ebrahim Khaled Ebrahim [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-7839-8778>)
+Repository: CRAN
+Date/Publication: 2026-08-28 09:50:24 UTC

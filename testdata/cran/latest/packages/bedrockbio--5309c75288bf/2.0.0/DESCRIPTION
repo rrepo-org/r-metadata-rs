@@ -1,0 +1,32 @@
+Package: bedrockbio
+Title: Open-Access Computational Biology Datasets
+Version: 2.0.0
+Authors@R: 
+    person(
+      "Liam", "Abbott", , "liam@bedrock.bio", role = c("aut", "cre", "cph")
+    )
+Description: Efficiently access the 'Bedrock Bio' library of open-access
+    computational biology datasets. Lazily query datasets backed by 'DuckDB'
+    and 'Apache Iceberg', with support for predicate pushdown and column
+    projection to the cloud storage backend. This enables quick, iterative
+    access to otherwise massive, unwieldy datasets without downloading them
+    in full. See <https://bedrock.bio> for available datasets and
+    documentation.
+Language: en-US
+License: GPL (>= 3)
+URL: https://bedrock.bio,
+        https://github.com/bedrock-bio/bedrock-bio-client
+BugReports: https://github.com/bedrock-bio/bedrock-bio-client/issues
+Depends: R (>= 4.2)
+Imports: curl, DBI, dbplyr, dplyr, duckdb, jsonlite
+Suggests: testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+OS_type: unix
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-02 13:03:40 UTC; runner
+Author: Liam Abbott [aut, cre, cph]
+Maintainer: Liam Abbott <liam@bedrock.bio>
+Repository: CRAN
+Date/Publication: 2026-07-02 13:20:07 UTC

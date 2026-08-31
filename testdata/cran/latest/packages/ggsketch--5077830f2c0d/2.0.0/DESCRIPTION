@@ -1,0 +1,37 @@
+Package: ggsketch
+Title: Grammar-Native Hand-Drawn Geoms for 'ggplot2'
+Version: 2.0.0
+Authors@R: 
+    person("Arijit", "Ghosh", email = "arijitghosh2009@gmail.com",
+           role = c("aut", "cre"))
+Description: Provides 'ggplot2' geoms that render with a hand-drawn, sketchy
+    aesthetic: roughened strokes, double-pass lines, and hachure, cross-hatch,
+    zigzag, and dots fill patterns. Implemented as pure-R 'grid' grobs wrapped
+    in 'ggproto' geoms, composable with aes(), stats, scales, and faceting.
+    Works on every R graphics device (PDF, PNG, SVG, screen) with no browser
+    dependency. Algorithms are reimplemented from the published 'rough.js'
+    algorithm description (Shihn, 2020,
+    <https://shihn.ca/posts/2020/roughjs-algorithms/>) and Wood and others
+    (2012, <doi:10.1109/TVCG.2012.262>); see the NOTICE file in the package
+    sources for attribution.
+License: MIT + file LICENSE
+URL: https://github.com/orijitghosh/ggsketch,
+        https://orijitghosh.github.io/ggsketch/
+BugReports: https://github.com/orijitghosh/ggsketch/issues
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.4.0), ggplot2 (>= 3.5.0), grDevices, grid, rlang (>=
+        1.0.0), scales (>= 1.2.0), withr (>= 2.5.0)
+Suggests: gganimate, gifski, hexbin, igraph, knitr, magick, MASS,
+        patchwork, quantreg, ragg, rmarkdown, sf, svglite, systemfonts,
+        testthat (>= 3.0.0), vdiffr (>= 1.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-09 01:21:33 UTC; ariji
+Author: Arijit Ghosh [aut, cre]
+Maintainer: Arijit Ghosh <arijitghosh2009@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-17 14:00:07 UTC

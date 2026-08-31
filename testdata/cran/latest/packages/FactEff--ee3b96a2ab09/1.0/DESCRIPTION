@@ -1,0 +1,19 @@
+Package: FactEff
+Version: 1.0
+Date: 2025-11-24
+Title: Efficiencies of Block Designs for Factorial and Fractional
+        Factorial Experiments
+Authors@R: c(person("Sukanta", "Dash", role = "aut"), person("Baidya Nath", "Mandal", email = "mandal.stat@gmail.com", role = c("aut", "cre")), person("Anil", "Kumar", role = "aut"))
+Author: Sukanta Dash [aut],
+  Baidya Nath Mandal [aut, cre],
+  Anil Kumar [aut]
+Maintainer: Baidya Nath Mandal <mandal.stat@gmail.com>
+Depends: R (>= 4.5.0)
+Imports: shiny, MASS, Matrix, htmltools
+Description: Opens a 'shiny' app which supports theoretical and computational analysis of block designs for symmetrical and mixed level factorial experiments. This package includes tools to check whether a design has orthogonal factorial structure (OFS) with balance or not and is able to find the orthogonality deviation value if not having OFS. This package includes function  to evaluate efficiency factor of all factorial effects in two situations, in the first situation if the design is verified with OFS and balance then calculate the efficiencies of all factorial effects using a specific analytical procedure  and in the second situation if the design is verified with non-OFS and balance then a new general method has been developed and used to calculate efficiencies under the condition that the design should be proper and equi-replicated, See Gupta, S.C. and Mukerjee, R. (1987): "A Calculus for factorial arrangements".  Lecture Notes in Statistics. No. 59, Springer-Verlag, Berlin, New York, <doi:10.1007/978-1-4419-8730-3>. For the easy use of package, 'shiny' app is used for giving inputs and inputs validation. 
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-11-24 07:13:26 UTC; user17
+Repository: CRAN
+Date/Publication: 2025-11-27 19:10:20 UTC

@@ -1,0 +1,49 @@
+Package: ICtest
+Type: Package
+Title: Estimating and Testing the Number of Interesting Components in
+        Linear Dimension Reduction
+Version: 0.3-7
+Date: 2026-04-01
+Authors@R: 
+    c(person(given = "Klaus",
+             family = "Nordhausen",
+             role = c("aut", "cre"),
+             email = "klausnordhausenR@gmail.com",
+             comment = c(ORCID = "0000-0002-3758-8501")),
+      person(given = "Hannu",
+             family = "Oja",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-4945-5976")),
+      person(given = "Katariina",
+      family = "Perkonoja",
+      role = "aut",
+      comment = c(ORCID = "0000-0002-3812-0871")),
+      person(given = "David E.",
+             family = "Tyler",
+             role = "aut"),
+      person(given = "Joni",
+             family = "Virta",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-2150-2769"))
+      )
+Maintainer: Klaus Nordhausen <klausnordhausenR@gmail.com>
+LinkingTo: Rcpp, RcppArmadillo
+Depends: JADE, ICS (>= 1.4-0), ggplot2
+Imports: stats, graphics, Rcpp (>= 0.12.3), ICSNP, survey, GGally, png,
+        zoo, xts, RcppRoll, mvtnorm, progress, utils
+Description: For different linear dimension reduction methods like principal components analysis (PCA), independent components analysis (ICA) and supervised linear dimension reduction tests and estimates for the number of interesting components (ICs) are provided.
+License: GPL (>= 2)
+Suggests: knitr, rmarkdown, fICA
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-04-01 11:19:39 UTC; nordklau
+Author: Klaus Nordhausen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3758-8501>),
+  Hannu Oja [aut] (ORCID: <https://orcid.org/0000-0002-4945-5976>),
+  Katariina Perkonoja [aut] (ORCID:
+    <https://orcid.org/0000-0002-3812-0871>),
+  David E. Tyler [aut],
+  Joni Virta [aut] (ORCID: <https://orcid.org/0000-0002-2150-2769>)
+Repository: CRAN
+Date/Publication: 2026-04-02 08:20:08 UTC

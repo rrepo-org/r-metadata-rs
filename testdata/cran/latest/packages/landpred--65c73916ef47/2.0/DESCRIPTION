@@ -1,0 +1,20 @@
+Package: landpred
+Type: Package
+Title: Landmark Prediction of a Survival Outcome
+Version: 2.0
+Authors@R: c(person("Dylan", "Huynh", email = "dylanhuynh@utexas.edu", role = c("aut")), person("Layla", "Parast", email = "parast@austin.utexas.edu", role = c("aut", "cre")))
+Description: Nonparametric methods for landmark prediction of long-term survival outcomes, incorporating covariate and short-term event information. The package supports the construction of flexible varying-coefficient models that use discrete covariates, as well as multiple continuous covariates.
+ The goal is to improve prediction accuracy when censored short-term events are available as predictors, using robust nonparametric procedures that do not require correct model specification and avoid restrictive parametric assumptions found in alternative methods.
+ More information on these methods can be found in Parast et al. 2012 <doi:10.1080/01621459.2012.721281>, 
+ Parast et al. 2011 <doi:10.1002/bimj.201000150>, and Parast and Cai 2013 <doi:10.1002/sim.5776>.
+ A tutorial for this package is available here: <https://www.laylaparast.com/landpred>.
+License: GPL
+Imports: survival, stats, quantreg, splines, sm, quantreg
+NeedsCompilation: no
+Suggests: testthat (>= 3.0.0)
+Packaged: 2025-12-15 10:41:54 UTC; parastlm
+Author: Dylan Huynh [aut],
+  Layla Parast [aut, cre]
+Maintainer: Layla Parast <parast@austin.utexas.edu>
+Repository: CRAN
+Date/Publication: 2025-12-15 15:10:02 UTC

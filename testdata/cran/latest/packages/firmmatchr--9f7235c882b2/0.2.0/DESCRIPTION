@@ -1,0 +1,28 @@
+Package: firmmatchr
+Title: Robust Probabilistic Matching of Company Names
+Version: 0.2.0
+Authors@R: person("Giulian", "Etingin-Frati", email = "etingin-frati@kof.ethz.ch", role = c("aut", "cre"))
+Description: A pipeline for matching messy company name strings against a clean dictionary (e.g., 'Orbis').
+    Implements a cascading strategy: Exact -> Fuzzy ('zoomerjoin') -> 'FTS5' ('SQLite') -> Rarity Weighted.
+    Name normalization covers German, French, Italian and English legal forms and conventions,
+    which suits multilingual registers such as the Swiss one.
+    Normalization discards detail, so several dictionary entries can collapse onto one string;
+    these groups are matched once and a crosswalk back to every original entry is retained.
+    References: Beniamino Green (2025) <https://github.com/beniaminogreen/zoomerjoin>; <https://www.sqlite.org/fts5.html>.
+License: MIT + file LICENSE
+URL: https://github.com/swediot/firmmatchr
+BugReports: https://github.com/swediot/firmmatchr/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: data.table, stringi, stringdist, zoomerjoin, DBI, RSQLite,
+        cli, progressr, httr, jsonlite, glue, purrr, readr, dplyr,
+        stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-28 09:08:10 UTC; getingin
+Author: Giulian Etingin-Frati [aut, cre]
+Maintainer: Giulian Etingin-Frati <etingin-frati@kof.ethz.ch>
+Repository: CRAN
+Date/Publication: 2026-07-28 09:40:02 UTC

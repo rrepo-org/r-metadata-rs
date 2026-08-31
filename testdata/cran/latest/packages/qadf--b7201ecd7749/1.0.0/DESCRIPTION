@@ -1,0 +1,31 @@
+Package: qadf
+Type: Package
+Title: Quantile Autoregressive Distributed Lag Unit Root Test
+Version: 1.0.0
+Authors@R: person("Muhammad", "Alkhalaf", email = "muhammedalkhalaf@gmail.com",
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0009-0002-2677-9246"))
+Description: Implements the Quantile Autoregressive Distributed Lag (QADF)
+    unit root test proposed by Koenker and Xiao (2004)
+    <doi:10.1198/016214504000001114>. The test examines unit root behaviour
+    across the conditional distribution of a time series using quantile
+    regression, providing a richer characterisation of persistence than
+    standard ADF tests. Critical values follow Hansen (1995)
+    <doi:10.1017/S0266466600009713>. Lag order selection is supported via
+    AIC, BIC, or the t-statistic sequential testing approach.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: stats, quantreg
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/muhammedalkhalaf/qadf
+BugReports: https://github.com/muhammedalkhalaf/qadf/issues
+NeedsCompilation: no
+Packaged: 2026-03-17 01:45:18 UTC; acad_
+Author: Muhammad Alkhalaf [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-2677-9246>)
+Maintainer: Muhammad Alkhalaf <muhammedalkhalaf@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-20 11:50:02 UTC

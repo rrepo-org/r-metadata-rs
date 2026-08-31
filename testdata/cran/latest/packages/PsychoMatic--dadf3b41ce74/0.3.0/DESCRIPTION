@@ -1,0 +1,40 @@
+Package: PsychoMatic
+Type: Package
+Title: Automated Psychometric Workflows and Reporting Tools
+Version: 0.3.0
+Authors@R: 
+    person("Jose", "Gamarra-Moncayo",
+           email = "gamarramoncayoj@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0781-3616"))
+Description: Automates common psychometric workflows for applied researchers,
+    including item descriptives, inter-item correlations, exploratory and
+    confirmatory factor analysis, reliability, multi-group measurement
+    invariance, and alignment optimization. Decision heuristics are informed by
+    procedures such as parallel analysis (Horn, 1965,
+    <doi:10.1007/BF02289447>), multivariate normality diagnostics (Mardia,
+    1970, <doi:10.1093/biomet/57.3.519>), measurement-invariance fit-change
+    rules (Chen, 2007, <doi:10.1080/10705510701301834>), and alignment
+    optimization (Asparouhov and Muthen, 2014,
+    <doi:10.1080/10705511.2014.919210>), among others. Results can be returned as structured
+    R objects and exported as bilingual reports for transparent analytical
+    documentation.
+License: MIT + file LICENSE
+URL: https://github.com/gmoncayoj/PsychoMatic
+BugReports: https://github.com/gmoncayoj/PsychoMatic/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: GPArotation, lavaan, Matrix, psych, stats, utils
+Suggests: flextable, knitr, mirt, MVN, officer, openxlsx, rmarkdown,
+        semTools, sirt, testthat (>= 3.0.0), writexl
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-23 01:51:06 UTC; JoseGM
+Author: Jose Gamarra-Moncayo [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0781-3616>)
+Maintainer: Jose Gamarra-Moncayo <gamarramoncayoj@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-29 13:00:55 UTC

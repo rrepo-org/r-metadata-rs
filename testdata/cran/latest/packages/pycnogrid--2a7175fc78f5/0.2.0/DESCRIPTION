@@ -1,0 +1,32 @@
+Package: pycnogrid
+Title: Flexible Pycnophylactic Interpolation to Discrete Global and
+        Local Grid Systems
+Version: 0.2.0
+Authors@R: 
+    person(
+        given = "Christopher",
+        family = "Higgins",
+        email = "cd.higgins@utoronto.ca",
+        role = c("aut", "cre", "cph")
+    )
+Description: Provides tools for pycnophylactic interpolation of polygon totals to discrete global and local grid systems. The method follows Tobler (1979) <doi:10.1080/01621459.1979.10481647>, preserving source-zone totals while smoothing values across neighboring target cells.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: a5R, dplyr, h3o, hexify, Matrix, rlang, s2, sf, sfdep, terra,
+        tibble
+Suggests: forcats, gt, knitr, purrr, quarto, testthat (>= 3.0.0),
+        tidyr, tmap
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+LazyData: true
+Config/roxygen2/version: 8.0.0
+URL: https://higgicd.github.io/pycnogrid/,
+        https://github.com/higgicd/pycnogrid
+BugReports: https://github.com/higgicd/pycnogrid/issues
+NeedsCompilation: no
+Packaged: 2026-07-03 15:46:12 UTC; chris
+Author: Christopher Higgins [aut, cre, cph]
+Maintainer: Christopher Higgins <cd.higgins@utoronto.ca>
+Repository: CRAN
+Date/Publication: 2026-07-10 20:30:13 UTC

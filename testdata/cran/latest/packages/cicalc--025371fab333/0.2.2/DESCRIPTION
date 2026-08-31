@@ -1,0 +1,38 @@
+Type: Package
+Package: cicalc
+Title: Calculate Confidence Intervals
+Version: 0.2.2
+Authors@R: c(
+    person("Christina", "Fillmore", , "christina.e.fillmore@gsk.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0595-2302")),
+    person("GlaxoSmithKline Research & Development Limited", role = c("cph", "fnd")),
+    person("Mike", "Sprys", role = "aut"),
+    person("Dan", "Lythgoe", role = "aut",
+           comment = c(ORCID = "0000-0002-4682-772X"))
+  )
+Description: This calculates a variety of different CIs for proportions
+    and difference of proportions that are commonly used in the
+    pharmaceutical industry including Wald, Wilson, Clopper-Pearson,
+    Agresti-Coull and Jeffreys for proportions. And Miettinen-Nurminen
+    (1985) <doi:10.1002/sim.4780040211>, Wald, Haldane, and Mee
+    <https://www.lexjansen.com/wuss/2016/127_Final_Paper_PDF.pdf> for
+    difference in proportions.
+License: Apache License (>= 2)
+URL: https://gsk-biostatistics.github.io/cicalc/,
+        https://github.com/gsk-biostatistics/cicalc
+Depends: R (>= 4.1.0)
+Imports: broom, cli, dplyr, forcats, glue, purrr, rlang, tidyr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-30 13:59:11 UTC; christinafillmore
+Author: Christina Fillmore [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0595-2302>),
+  GlaxoSmithKline Research & Development Limited [cph, fnd],
+  Mike Sprys [aut],
+  Dan Lythgoe [aut] (ORCID: <https://orcid.org/0000-0002-4682-772X>)
+Maintainer: Christina Fillmore <christina.e.fillmore@gsk.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 15:20:02 UTC

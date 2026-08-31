@@ -1,0 +1,40 @@
+Package: rsdv
+Type: Package
+Title: Synthetic Tabular Data Generation with Gaussian Copulas
+Version: 0.2.0
+Authors@R: 
+    person(given = "Kailas",
+           family = "Venkitasubramanian",
+           email = "kailasv@gmail.com",
+           role = c("aut", "cre"))
+Description: Generates synthetic tabular data from real datasets using
+    Gaussian copula models, with parametric marginal selection for
+    numerical columns and a cumulative-frequency embedding that brings
+    categorical and boolean columns into the same joint copula. Includes
+    a metadata system with column types and primary keys, declarative
+    constraints enforced via rejection sampling, conditional sampling,
+    and quality, validity and privacy reports modeled on those of the
+    'SDMetrics' library. Inspired by the Python 'SDV' (Synthetic Data
+    Vault) library by 'DataCebo'; see Patki, Wedge and Veeramachaneni
+    (2016) "The Synthetic Data Vault" <doi:10.1109/DSAA.2016.49>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+URL: https://kvenkita.github.io/rsdv/, https://github.com/kvenkita/rsdv
+BugReports: https://github.com/kvenkita/rsdv/issues
+Depends: R (>= 4.3.0)
+Imports: copula (>= 1.1-0), generics (>= 0.1.3), jsonlite (>= 1.8.0),
+        ggplot2 (>= 3.4.0), tibble (>= 3.2.0), FNN (>= 1.1.3), rpart
+        (>= 4.1.0), scales (>= 1.2.0), stats, utils
+Suggests: testthat (>= 3.0.0), withr, knitr (>= 1.40), rmarkdown (>=
+        2.20)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-08 18:13:46 UTC; kyle
+Author: Kailas Venkitasubramanian [aut, cre]
+Maintainer: Kailas Venkitasubramanian <kailasv@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-09 07:00:02 UTC

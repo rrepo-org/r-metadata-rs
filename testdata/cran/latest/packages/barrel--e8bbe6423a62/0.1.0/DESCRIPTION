@@ -1,0 +1,26 @@
+Package: barrel
+Title: Covariance-Based Ellipses and Annotation Tools for Ordination
+        Plots
+Version: 0.1.0
+Authors@R: 
+    person("Diego", "Barranco-Elena", , "diego.barranco@udl.cat", role = c("aut", "cre"))
+Description: Provides tools to visualize ordination results in 'R' by adding covariance-based ellipses, centroids, vectors, and confidence regions to plots created with 'ggplot2'. 
+    The package extends the 'vegan' framework and supports Principal Component Analysis (PCA), Redundancy Analysis (RDA), and Non-metric Multidimensional Scaling (NMDS). 
+    Ellipses can represent either group dispersion (standard deviation, SD) or centroid precision (standard error, SE), following Wang et al. (2015) <doi:10.1371/journal.pone.0118537>. 
+    Robust estimators of covariance are implemented, including the Minimum Covariance Determinant (MCD) method of Hubert et al. (2018) <doi:10.1002/wics.1421>. 
+    This approach reduces the influence of outliers. 
+    barrel is particularly useful for multivariate ecological datasets, promoting reproducible, publication-quality ordination graphics with minimal effort.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: robustbase, ggplot2, stats, ggrepel, vegan, grid, rlang
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), vdiffr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-10-30 10:41:14 UTC; Usuari
+Author: Diego Barranco-Elena [aut, cre]
+Maintainer: Diego Barranco-Elena <diego.barranco@udl.cat>
+Repository: CRAN
+Date/Publication: 2025-11-03 19:20:07 UTC

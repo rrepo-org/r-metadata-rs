@@ -1,0 +1,36 @@
+Package: carsAlgo
+Title: Competitive Adaptive Reweighted Sampling (CARS) Algorithm
+Version: 0.5.0
+Authors@R: c(
+  person("Md. Ashraful", "Haque", email = "ashrafulhaque664@gmail.com" , role = c("aut", "cre")),
+  person("Avijit", "Ghosh", email = "avijitghosh19892@gmail.com" , role = "aut"),
+  person("Sayantani", "Karmakar", email = "sayantanikarmakar20@gmail.com" , role = "aut"),
+  person("Harsh", "Sachan", email = "harsh1635095@gmail.com" , role = "aut"),
+  person("Shalini", "Kumari", email = "shalinik554@gmail.com" , role = "aut")
+  )
+Maintainer: Md. Ashraful Haque  <ashrafulhaque664@gmail.com>
+Description: Implements Competitive Adaptive Reweighted Sampling (CARS) 
+    algorithm for variable selection from high-dimensional dataset using Partial 
+    Least Squares (PLS) regression models. CARS algorithm iteratively applies the 
+    Monte Carlo sub-sampling and exponential variable elimination techniques to 
+    identify/select the most informative variables/features subjected to minimal 
+    cross-validated RMSE score. The implementation of CARS algorithm is inspired 
+    from the work of Li et al. (2009) <doi:10.1016/j.aca.2009.06.046>. 
+    This algorithm is widely applied in near-infrared (NIR), mid-infrared (MIR), 
+    hyperspectral chemometrics areas, etc.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: ggplot2, pls, rlang, stats, utils
+URL: https://github.com/mah-iasri/carsAlgo
+BugReports: https://github.com/mah-iasri/carsAlgo/issues
+NeedsCompilation: no
+Packaged: 2026-04-10 13:44:44 UTC; Ashraful
+Author: Md. Ashraful Haque [aut, cre],
+  Avijit Ghosh [aut],
+  Sayantani Karmakar [aut],
+  Harsh Sachan [aut],
+  Shalini Kumari [aut]
+Repository: CRAN
+Date/Publication: 2026-04-16 10:12:11 UTC

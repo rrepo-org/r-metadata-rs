@@ -1,0 +1,25 @@
+Package: lpl
+Type: Package
+Title: Local Partial Likelihood Estimation and Simultaneous Confidence
+        Band
+Version: 0.13
+Date: 2025-08-19
+Author: Bingshu E. Chen [aut, cre],
+  Yicong Liu [aut],
+  Siwei Zhang [aut],
+  Teng Wen [aut],
+  Wenyu Jiang [aut]
+Maintainer: Bingshu E. Chen <bingshu.chen@queensu.ca>
+Authors@R: c(person(given = c("Bingshu", "E."), family = "Chen", role = c("aut", "cre"), email = "bingshu.chen@queensu.ca"),
+        person(given = "Yicong", family = "Liu", role = "aut"),
+        person(given = "Siwei",  family = "Zhang", role = "aut"),
+        person(given = "Teng",   family = "Wen", role = "aut"),
+	person(given = "Wenyu",  family = "Jiang", role = "aut"))
+Depends: R (>= 3.5.0), MASS, methods, parallel, survival
+Description: Local partial likelihood estimation by Fan, Lin and Zhou(2006)<doi:10.1214/009053605000000796> and simultaneous confidence band is a set of tools to test the covariates-biomarker interaction for survival data. Test for the covariates-biomarker interaction using the bootstrap method and the asymptotic method with simultaneous confidence band (Liu, Jiang and Chen (2015)<doi:10.1002/sim.6563>).
+License: GPL-2
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2025-08-20 22:34:23 UTC; b3chen
+Repository: CRAN
+Date/Publication: 2025-08-20 23:00:01 UTC

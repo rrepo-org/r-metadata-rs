@@ -1,0 +1,78 @@
+Package: hubEvals
+Title: Tools for Scoring and Evaluating Hubverse Model Outputs
+Version: 0.4.0
+Authors@R: c(
+    person(given = "Anna",
+           family = "Krystalli",
+           email = "annakrystalli@googlemail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2378-4915")),
+    person(given = "Nicholas",
+           family = "Reich",
+           email = "nick@umass.edu",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-3503-9899")),
+    person(given = "Evan",
+           family = "Ray",
+           role = c("aut")),
+    person(given = "Nikos",
+           family = "Bosse",
+           email = "nikosbosse@gmail.com",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-7750-5280")),
+    person(given = "Kimberlyn",
+           family = "Roosa",
+           email = "kimberlyn626@gmail.com",
+           role = c("aut")),
+    person(given = "Zhian",
+           family = "Kamvar",
+           role = c("ctb"),
+           comment = c(ORCID = "0000-0003-1458-7108")),
+    person(given = "Li",
+           family = "Shandross",
+           email = "lshandross@umass.edu",
+           role = c("ctb"),
+           comment = c(ORCID = "0009-0008-1348-1954")),
+    person(given = "Becky",
+           family = "Sweger",
+           role = c("ctb")),
+    person(given = "Lucie",
+           family = "Contamin",
+           role = c("ctb")),
+    person("Consortium of Infectious Disease Modeling Hubs",
+           role = "cph")
+    )
+Description: 
+    Provides tools for scoring and evaluating 'hubverse' model outputs
+    against observed data, wrapping scoring workflows from the
+    'scoringutils' package and bridging hubverse model output formats
+    to 'scoringutils' forecast classes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: cli, dplyr, hubUtils (>= 1.2.0), purrr, rlang, scoringutils
+        (>= 2.2.0), tibble
+RoxygenNote: 7.3.3
+URL: https://hubverse-org.github.io/hubEvals/,
+        https://github.com/hubverse-org/hubEvals
+BugReports: https://github.com/hubverse-org/hubEvals/issues
+Additional_repositories: https://hubverse-org.r-universe.dev
+Depends: R (>= 4.1.0)
+Config/Needs/website: hubverse-org/hubStyle
+Suggests: hubExamples, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-22 12:12:57 UTC; Anna
+Author: Anna Krystalli [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2378-4915>),
+  Nicholas Reich [aut] (ORCID: <https://orcid.org/0000-0003-3503-9899>),
+  Evan Ray [aut],
+  Nikos Bosse [aut] (ORCID: <https://orcid.org/0000-0002-7750-5280>),
+  Kimberlyn Roosa [aut],
+  Zhian Kamvar [ctb] (ORCID: <https://orcid.org/0000-0003-1458-7108>),
+  Li Shandross [ctb] (ORCID: <https://orcid.org/0009-0008-1348-1954>),
+  Becky Sweger [ctb],
+  Lucie Contamin [ctb],
+  Consortium of Infectious Disease Modeling Hubs [cph]
+Maintainer: Anna Krystalli <annakrystalli@googlemail.com>
+Repository: CRAN
+Date/Publication: 2026-07-22 17:40:07 UTC

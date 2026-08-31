@@ -1,0 +1,43 @@
+Package: exeval
+Type: Package
+Language: en-US
+Title: External Evaluation of Population
+        Pharmacokinetic-Pharmacodynamic (popPKPD) Models
+Version: 0.0.1
+Authors@R: c(
+             person(given = "Manuel",
+                    family = "Ibarra",
+                    role = c("aut")),
+             person(given = "Martin",
+                    family = "Umpierrez",
+                    role = c("aut", "cre"),
+                    email ="mumpierrez@fq.edu.uy"),
+              person(given = "Ignacio",
+                    family = "Alvarez Castro",
+                    role = c("aut"), 
+                    comment = c(ORCID = "0000-0003-1633-2432") ),
+              person(given = "Nicolas", 
+                    family = "Schmidt", 
+                    role = c("aut"),
+                    comment = c(ORCID = "0000-0001-5083-5792")))
+Description: Provides tools to automate external pharmacokinetic model evaluation workflows, including Bayesian forecasting, predictive performance metrics, diagnostic plotting, and automated reporting.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1)
+Imports: mapbayr, dplyr, ggplot2, ggpubr, mrgsolve (>= 1.0.8), scales,
+        stats, methods, rlang
+Suggests: knitr, rmarkdown,
+URL: https://github.com/Martin-Umpierrez/exeval
+BugReports: https://github.com/Martin-Umpierrez/exeval/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-05 15:03:33 UTC; ialvarez
+Author: Manuel Ibarra [aut],
+  Martin Umpierrez [aut, cre],
+  Ignacio Alvarez Castro [aut] (ORCID:
+    <https://orcid.org/0000-0003-1633-2432>),
+  Nicolas Schmidt [aut] (ORCID: <https://orcid.org/0000-0001-5083-5792>)
+Maintainer: Martin Umpierrez <mumpierrez@fq.edu.uy>
+Repository: CRAN
+Date/Publication: 2026-06-10 08:10:14 UTC

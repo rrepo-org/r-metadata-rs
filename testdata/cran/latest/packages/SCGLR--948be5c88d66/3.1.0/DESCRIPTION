@@ -1,0 +1,79 @@
+Package: SCGLR
+Type: Package
+Title: Supervised Component Generalized Linear Regression
+Description: 
+    An extension of the Fisher Scoring Algorithm to combine PLS regression with GLM 
+    estimation in the multivariate context. Covariates can also be grouped in themes.
+Version: 3.1.0
+Date: 2025-03-24
+Authors@R: 
+    c(person(
+      given = "Guillaume",
+      family = "Cornu",
+      email = "gcornu@cirad.fr", 
+      role = c("aut","cre"), 
+      comment = c(ORCID = "0000-0002-7523-5176")),
+    person(
+      given = "Frederic",
+      family = "Mortier",
+      email = "fmortier@cirad.fr",
+      role = "aut", 
+      comment = c(ORCID = "0000-0001-5473-709X")),
+    person(
+      given = "Catherine",
+      family = "Trottier",
+      email = "catherine.trottier@univ-montp3.fr",
+      role = "aut"),
+    person(
+      given = "Xavier",
+      family = "Bry",
+      email = "xavier.bry@univ-montp2.fr",
+      role = "aut"),
+    person(
+      given = "Jocelyn",
+      family = "Chauvet",
+      role = "aut", 
+      comment = c(ORCID="0000-0002-4466-6483")),
+    person(
+      given = "Sylvie",
+      family = "Gourlet-Fleury",
+      email = "sylvie.gourlet-fleury@cirad.fr",
+      role = "dtc",
+      comment = c(ORCID = "0000-0002-1136-4307", "Projet CoForChange <https://coforchange.cirad.fr>")),
+    person(
+      given = "Claude",
+      family = "Garcia",
+      email = "claude.garcia@cirad.fr",
+      role = "dtc",
+      comment = c(ORCID = "0000-0002-7351-0226", "Projet CoForTips <https://www.cofortips.org>")),
+    person(
+      "GAMBAS", 
+      role = "fnd",
+      comment = "<https://gambas.cirad.fr>")
+    )
+License: CeCILL-2 | GPL-2
+URL: https://scnext.github.io/SCGLR/, https://github.com/scnext/SCGLR,
+        https://cran.r-project.org/package=SCGLR
+BugReports: https://github.com/SCnext/SCGLR/issues
+Depends: R (>= 3.0.0)
+Imports: Matrix, Formula, graphics, ggplot2 (>= 3.0.0), grid,pROC (>=
+        1.9), ade4, rlang, pls
+Suggests: future, future.apply, progressr
+LazyData: yes
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-03-26 15:45:08 UTC; gcornu
+Author: Guillaume Cornu [aut, cre] (<https://orcid.org/0000-0002-7523-5176>),
+  Frederic Mortier [aut] (<https://orcid.org/0000-0001-5473-709X>),
+  Catherine Trottier [aut],
+  Xavier Bry [aut],
+  Jocelyn Chauvet [aut] (<https://orcid.org/0000-0002-4466-6483>),
+  Sylvie Gourlet-Fleury [dtc] (<https://orcid.org/0000-0002-1136-4307>,
+    Projet CoForChange <https://coforchange.cirad.fr>),
+  Claude Garcia [dtc] (<https://orcid.org/0000-0002-7351-0226>, Projet
+    CoForTips <https://www.cofortips.org>),
+  GAMBAS [fnd] (<https://gambas.cirad.fr>)
+Maintainer: Guillaume Cornu <gcornu@cirad.fr>
+Repository: CRAN
+Date/Publication: 2025-03-26 16:00:01 UTC

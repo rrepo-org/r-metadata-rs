@@ -1,0 +1,35 @@
+Package: phontrast
+Title: Contrast and Separation Metrics for Phonological Categories
+Version: 2.4.0
+Authors@R: 
+    person(c("Grant", "M."), "Berry", email = "berry.grant@gmail.com",
+           role = c("aut", "cre"))
+Author: Grant M. Berry [aut, cre]
+Maintainer: Grant M. Berry <berry.grant@gmail.com>
+Description: Computes and compares multiple measures of separation and overlap
+    between phonological categories (for example vowels or consonants) in
+    arbitrary multi-dimensional acoustic spaces such as formant values,
+    mel-frequency cepstral coefficients (MFCCs), duration, or learned
+    embeddings. The main entry point, phontrast(), reports several contrast
+    metrics in one call -- Jensen-Shannon divergence and distance (Lin, 1991)
+    <doi:10.1109/18.61115>, the Pillai-Bartlett trace, Bhattacharyya distance
+    and affinity, Mahalanobis distance, and proportional overlap -- globally or
+    by group on a common separation-oriented scale, with bootstrap confidence
+    intervals. Also provides utilities for preparing estimates for downstream
+    modelling such as generalized additive models and mixed-effects models.
+    Formerly released as 'phonJSD'.
+License: MIT + file LICENSE
+URL: https://github.com/berrygrant/phontrast
+BugReports: https://github.com/berrygrant/phontrast/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: ks, dplyr, purrr, tibble, rlang, stats, grDevices, utils
+Suggests: ggplot2, mgcv, mvtnorm, tuneR, testthat (>= 3.0.0), knitr,
+        rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-21 11:08:51 UTC; root
+Repository: CRAN
+Date/Publication: 2026-08-21 17:10:02 UTC

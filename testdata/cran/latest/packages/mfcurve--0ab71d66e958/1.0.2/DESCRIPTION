@@ -1,0 +1,28 @@
+Package: mfcurve
+Type: Package
+Title: Multi-Factor Curve Analysis for Grouped Data in 'R'
+Version: 1.0.2
+Authors@R: c(
+    person("Maximilian", "Frank", email = "maximilian.frank@psy.lmu.de", role = c("aut", "cre")),
+	person("Daniel", "Krähmer", email = "Daniel.Kraehmer@soziologie.uni-muenchen.de", role = "aut"),
+    person("Claudia", "Weileder", email = "maximilian.frank@psy.lmu.de", role = "aut"))
+Maintainer: Maximilian Frank <maximilian.frank@psy.lmu.de>
+Description: Implements multi-factor curve analysis for grouped data in 'R', replicating and
+    extending the functionality of the the 'Stata' ado 'mfcurve' (Krähmer, 2023) <https://ideas.repec.org/c/boc/bocode/s459224.html>. 
+	Related to the idea of specification curve analysis (Simonsohn, Simmons, and Nelson, 2020) <doi:10.1038/s41562-020-0912-z>.
+	Includes data preprocessing, statistical testing, and visualization of results with confidence intervals.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, stats, plotly, tidyr, tidyselect, magrittr, rlang
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+URL: https://github.com/XAM12/mfcurve_R
+BugReports: https://github.com/XAM12/mfcurve_R/issues
+NeedsCompilation: no
+Packaged: 2026-01-19 22:10:32 UTC; ra35riq
+Author: Maximilian Frank [aut, cre],
+  Daniel Krähmer [aut],
+  Claudia Weileder [aut]
+Repository: CRAN
+Date/Publication: 2026-01-23 14:40:07 UTC

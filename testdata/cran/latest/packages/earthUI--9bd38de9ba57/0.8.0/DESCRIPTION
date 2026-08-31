@@ -1,0 +1,31 @@
+Package: earthUI
+Title: Interactive 'shiny' GUI for the 'earth' Package
+Version: 0.8.0
+Authors@R: 
+    person("William", "Craytor", , "bcraytor@proton.me", role = c("aut", "cre"))
+Description: Provides a 'shiny'-based graphical user interface for the 'earth'
+    package, enabling interactive building and exploration of Multivariate
+    Adaptive Regression Splines (MARS) models. Features include data import
+    from CSV and 'Excel' files, automatic detection of categorical variables,
+    interactive control of interaction terms via an allowed matrix,
+    comprehensive model diagnostics with variable importance and partial
+    dependence plots, and publication-quality report generation via 'Quarto'.
+License: AGPL (>= 3)
+URL: https://github.com/wcraytor/earthUI
+BugReports: https://github.com/wcraytor/earthUI/issues
+Depends: R (>= 4.1.0)
+Imports: DBI, earth (>= 5.3.0), ggplot2, jsonlite, openxlsx, plotly,
+        readxl, RSQLite, shiny, stats, tools, utils
+Suggests: bslib, callr, DT, knitr, quarto, rmarkdown, shinyFiles,
+        showtext, sysfonts, testthat (>= 3.0.0), tinytex, withr,
+        writexl
+Config/testthat/edition: 3
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-02 07:10:09 UTC; claude-code
+Author: William Craytor [aut, cre]
+Maintainer: William Craytor <bcraytor@proton.me>
+Repository: CRAN
+Date/Publication: 2026-06-02 07:40:02 UTC

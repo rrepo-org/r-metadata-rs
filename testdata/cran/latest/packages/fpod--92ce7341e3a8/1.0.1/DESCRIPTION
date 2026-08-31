@@ -1,0 +1,39 @@
+Package: fpod
+Title: Read and Process 'FPOD' and 'CPOD' Data
+Version: 1.0.1
+Date: 2026-04-30
+Authors@R: 
+    person(given = "André", 
+           family = "Moan", 
+           role = c("aut", "cre", "cph"),
+           email = "andre.moan@hi.no")
+Description: Read 'FPOD' and 'CPOD' data into 'R' directly from the
+    'FPOD' data files (i.e. .CP1, .CP3, .FP1 and .FP3 files). The 'FPOD' data
+    files contain binary data, so they can't trivially be read into 'R' using the
+    usual approach, e.g. fread() or read.csv(). This package decodes the binary
+    data and imports all the data in one go (i.e. header/metadata, clicks, 
+    'KERNO' classifications, environmental data and pseudo-WAV data). It is then 
+    trivial to aggregate data as you please, e.g. detection-positive-minutes per
+    time block. The advantage of handling data processing in 'R' is a long topic, 
+    but suffice it to say that it 1) simplifies things (many fewer steps, as 
+    different vars have to be exported in multiple goes in the official 'FPOD'
+    app), and more importantly, 2) makes data processing transparent and 
+    reproducible.
+    References: Pirotta et al. 2014 <doi:10.1111/1365-2435.12146>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp
+Imports: Rcpp (>= 1.1.0), data.table
+Suggests: knitr, mixtools, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 3.5)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/supermoan/fpod
+BugReports: https://github.com/supermoan/fpod/issues
+NeedsCompilation: yes
+Packaged: 2026-05-07 11:21:56 UTC; a21997
+Author: André Moan [aut, cre, cph]
+Maintainer: André Moan <andre.moan@hi.no>
+Repository: CRAN
+Date/Publication: 2026-05-12 18:20:07 UTC

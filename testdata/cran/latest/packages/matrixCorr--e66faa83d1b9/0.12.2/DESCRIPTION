@@ -1,0 +1,57 @@
+Package: matrixCorr
+Type: Package
+Title: Collection of Correlation, Agreement, and Reliability Estimators
+Version: 0.12.2
+Authors@R: c(
+    person(
+        given = "Thiago de Paula",
+        family = "Oliveira",
+        email = "thiago.paula.oliveira@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-4555-2584")
+    )
+    )
+Author: Thiago de Paula Oliveira [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4555-2584>)
+Maintainer: Thiago de Paula Oliveira <thiago.paula.oliveira@gmail.com>
+Description: Compute correlation, association, agreement, and reliability
+    measures for small to high-dimensional datasets through a consistent
+    matrix-oriented interface. Supports classical correlations (Pearson,
+    Spearman, Kendall, Chatterjee's rank correlation), distance correlation, partial correlation with
+    regularised estimators, shrinkage correlation for p >= n settings, robust
+    correlations including biweight mid-correlation, percentage-bend,
+    Winsorized, and skipped correlation, latent-variable methods for binary
+    and ordinal data, pairwise and overall intraclass correlation for wide
+    data, repeated-measures correlation, and agreement/reliability analyses
+    based on Cohen's kappa, weighted kappa, multi-rater kappa, Gwet's AC1/AC2,
+    Krippendorff's alpha, Bland-Altman methods, Lin's concordance correlation
+    coefficient, Poisson GLMM concordance for count data, and
+    repeated-measures intraclass/concordance correlation.
+    Implemented with optimized C++ backends using BLAS/OpenMP and memory-aware
+    symmetric updates, and returns standard R objects with print/summary/plot
+    methods plus optional Shiny viewers for matrix inspection. Methods based
+    on Ledoit and Wolf (2004) <doi:10.1016/S0047-259X(03)00096-4>;
+    high-dimensional shrinkage covariance estimation
+    <doi:10.2202/1544-6115.1175>; Lin (1989) <doi:10.2307/2532051>; Wilcox
+    (1994) <doi:10.1007/BF02294395>; Wilcox (2004)
+    <doi:10.1080/0266476032000148821>; Hayes and Krippendorff (2007)
+    <doi:10.1080/19312450709336664>; weighted repeated-measures correlation by
+    Kondo et al. (2025) <doi:10.1002/sim.70046>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.4.0)
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp (>= 1.1.0), ggplot2 (>= 3.5.2), Matrix (>= 1.7.2), cli,
+        generics, rlang
+Suggests: knitr, rmarkdown, MASS, mnormt, shiny, shinyWidgets,
+        viridisLite, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Enhances: plotly
+RoxygenNote: 7.3.3
+URL: https://github.com/Prof-ThiagoOliveira/matrixCorr
+BugReports: https://github.com/Prof-ThiagoOliveira/matrixCorr/issues
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-05-31 12:40:49 UTC; ThiagoOliveira
+Repository: CRAN
+Date/Publication: 2026-05-31 15:00:18 UTC

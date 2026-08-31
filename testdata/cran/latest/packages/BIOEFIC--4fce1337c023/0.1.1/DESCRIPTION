@@ -1,0 +1,37 @@
+Package: BIOEFIC
+Type: Package
+Title: Relative Bioefficiency via Simultaneous Regressions
+Version: 0.1.1
+Authors@R: c(
+    person("Michel", "Blezins de Arruda",
+           email   = "michel_blezins@yahoo.com.br",
+           role    = c("aut", "cre"),
+           comment = c(ORCID = "0009-0003-1192-820X"))
+    )
+Description: Fits simultaneous regression models to compare two sources
+    (reference and test) and estimates relative bioefficiency. Includes
+    simultaneous exponential model with common asymptote (model = 1),
+    slope-ratio model (model = 2), quadratic model (model = 3),
+    linear-response plateau model (model = 4), and Michaelis-Menten
+    model (model = 5). Output style follows the 'easyreg' package.
+    Methods are based on Finney (1978, ISBN:0-85264-252-0),
+    Mercer et al. (1978) <doi:10.1093/jn/108.8.1244>,
+    Robbins et al. (1979) <doi:10.1093/jn/109.10.1710>,
+    Noll et al. (1984) <doi:10.3382/ps.0632458>,
+    Gallant and Fuller (1973) <doi:10.1080/01621459.1973.10481356>,
+    Littell et al. (1997) <doi:10.2527/1997.75102672x>, and
+    Burnham and Anderson (2002, ISBN:978-0-387-95364-9).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Imports: ggplot2, minpack.lm, stats
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-19 11:51:52 UTC; Michel
+Author: Michel Blezins de Arruda [aut, cre] (ORCID:
+    <https://orcid.org/0009-0003-1192-820X>)
+Maintainer: Michel Blezins de Arruda <michel_blezins@yahoo.com.br>
+Repository: CRAN
+Date/Publication: 2026-05-27 09:20:07 UTC

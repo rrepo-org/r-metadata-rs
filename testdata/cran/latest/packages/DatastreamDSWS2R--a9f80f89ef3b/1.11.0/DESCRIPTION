@@ -1,0 +1,35 @@
+Package: DatastreamDSWS2R
+Type: Package
+Title: Provides a Link Between the 'LSEG Datastream' System and R
+Version: 1.11.0
+Date: 2026-07-09
+Authors@R: person(given = "Charles",
+                    family = "Cara",
+                    role = c("aut", "cre", "cph"),
+                    email = "charles.cara@absolute-strategy.com",
+                    comment = c(affiliation = "Absolute Strategy Research Ltd"))
+Maintainer: Charles Cara <charles.cara@absolute-strategy.com>
+Description: Provides a set of functions and a class to connect, extract and
+    upload information from the 'LSEG Datastream' database. This
+    package uses the 'DSWS' API.  
+    Details of this API are available at <https://www.lseg.com/en/data-analytics>.
+    Please report issues at <https://github.com/CharlesCara/DatastreamDSWS2R/issues>.
+License: GPL-3
+LazyData: TRUE
+Depends: R (>= 4.1.0)
+Imports: httr2, jsonlite, stringi, stringr, xts, zoo, methods, foreach,
+        dplyr
+Suggests: testthat
+Collate: 'DatastreamDSWS2R.R' 'common.R' 'classConstructor.R'
+        'wrapper.R' 'UCTSUpload.R' 'cbindRobust.R' 'data.R'
+Encoding: UTF-8
+Language: en-GB
+URL: https://github.com/CharlesCara/DatastreamDSWS2R
+BugReports: https://github.com/CharlesCara/DatastreamDSWS2R/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-09 13:09:05 UTC; CharlesC
+Author: Charles Cara [aut, cre, cph] (affiliation: Absolute Strategy Research
+    Ltd)
+Repository: CRAN
+Date/Publication: 2026-07-09 16:30:09 UTC

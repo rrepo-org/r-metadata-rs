@@ -1,0 +1,30 @@
+Package: mcount
+Type: Package
+Title: Marginalized Count Regression Models
+Version: 1.0.1
+Authors@R: 
+    c(
+      person("Zhengyang", "Zhou", role = c("aut", "cre"),
+             email = "zhengyang.zhou@unthsc.edu"),
+      person("Dateng", "Li", role = "aut"),
+      person("David", "Huh", role = "aut"),
+      person("Minge", "Xie", role = "aut"),
+      person("Eun-Young", "Mun", role = "aut")
+    )
+Description: Implementation of marginalized models for zero-inflated count data. The package provides tools to estimate marginalized count regression models for direct inference on the effect of covariates on the marginal mean of the outcome. The methods include the marginalized zero-inflated Poisson (MZIP) model described in Long et al. (2014) <doi:10.1002/sim.6293> and the marginalized zero- and N-inflated binomial (MZNIB) model, which extends marginalized modeling to fractional count outcomes with boundary inflation at zero and the upper limit.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: bbmle, boot, boot.pval, rootSolve, robustbase, stats
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+Packaged: 2026-04-10 19:17:29 UTC; bill_
+Author: Zhengyang Zhou [aut, cre],
+  Dateng Li [aut],
+  David Huh [aut],
+  Minge Xie [aut],
+  Eun-Young Mun [aut]
+Maintainer: Zhengyang Zhou <zhengyang.zhou@unthsc.edu>
+Repository: CRAN
+Date/Publication: 2026-04-21 22:22:11 UTC

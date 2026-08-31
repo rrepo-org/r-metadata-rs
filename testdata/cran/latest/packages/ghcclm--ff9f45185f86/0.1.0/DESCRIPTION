@@ -1,0 +1,26 @@
+Package: ghcclm
+Type: Package
+Title: Generalized Hybrid Contrast Coding in Linear Models
+Version: 0.1.0
+Authors@R: 
+    person("Okechukwu J.", "Obulezi", 
+           email = "oj.obulezi@unizik.edu.ng", 
+           role = c("aut", "cre"))
+Description: Implements generalized hybrid contrast coding methods for 
+    K-level categorical predictors in linear models as established by 
+    Obulezi (2026)[cite: 3]. The package automates design matrix construction mixing 
+    dummy indicators and composite group contrasts, checks rank constraints 
+    via singular value decomposition, computes closed-form OLS parameter 
+    mappings, and estimates robust heteroscedastic covariance matrices[cite: 3].
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-03 16:38:47 UTC; Dr. O. J. Obulezi
+Author: Okechukwu J. Obulezi [aut, cre]
+Maintainer: Okechukwu J. Obulezi <oj.obulezi@unizik.edu.ng>
+Repository: CRAN
+Date/Publication: 2026-08-08 13:00:06 UTC

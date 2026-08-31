@@ -1,0 +1,66 @@
+Package: aridagri
+Type: Package
+Title: Comprehensive Statistical Tools for Agricultural Research
+Version: 2.0.4
+Authors@R: c(
+    person("Lalit Kumar", "Rolaniya", 
+           email = "lalitrolaniya@gmail.com", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8908-1211")),
+    person("Ram Lal", "Jat", 
+           email = "khokharagro1986@gmail.com", 
+           role = "aut",
+           comment = c(ORCID = "0009-0003-4339-0555")),
+    person("Monika", "Punia", 
+           email = "monikapunia02@gmail.com", 
+           role = "aut",
+           comment = c(ORCID = "0009-0002-0294-6767")),
+    person("Raja Ram", "Choudhary", 
+           email = "rajaramchoudhary26@gmail.com", 
+           role = "aut"))
+Description: A comprehensive suite of statistical and analytical tools for 
+    agricultural research. Includes complete analysis of variance (ANOVA) 
+    functions for all experimental designs: Completely Randomized Design (CRD), 
+    Randomized Block Design (RBD), Pooled RBD, Split Plot with all variations, 
+    Split-Split Plot, Strip Plot, Latin Square, Factorial, Augmented, and Alpha 
+    Lattice, with proper error terms and comprehensive Standard Error (SE) and 
+    Critical Difference (CD) calculations. Features multiple post-hoc tests: 
+    Least Significant Difference (LSD), Duncan Multiple Range Test (DMRT), 
+    Tukey Honestly Significant Difference (HSD), Student-Newman-Keuls (SNK), 
+    Scheffe, Bonferroni, and Dunnett, along with assumption checking and 
+    publication-ready output. Advanced methods include stability analysis using 
+    Eberhart-Russell regression, Additive Main Effects and Multiplicative 
+    Interaction (AMMI), Finlay-Wilkinson regression, Shukla stability variance, 
+    Wricke ecovalence, Coefficient of Variation (CV), and Cultivar Superiority 
+    Index as described in Eberhart and Russell (1966) 
+    <doi:10.2135/cropsci1966.0011183X000600010011x>. Thermal indices include 
+    Growing Degree Days (GDD), Heliothermal Units (HTU), Photothermal Units 
+    (PTU), and Heat Use Efficiency (HUE). Crop growth analysis covers Crop 
+    Growth Rate (CGR), Relative Growth Rate (RGR), Net Assimilation Rate (NAR), 
+    and Leaf Area Index (LAI). Also provides harvest index, yield gap analysis, 
+    economic efficiency indices (Benefit-Cost ratio), nutrient use efficiency 
+    calculations, correlation matrix, Principal Component Analysis (PCA), path 
+    analysis, and Structural Equation Modeling (SEM). Statistical methods follow 
+    Gomez and Gomez (1984, ISBN:0471870927) and Panse and Sukhatme (1985, 
+    ISBN:8170271169).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: grDevices, graphics, stats, utils
+Suggests: ggplot2, dplyr, tidyr, emmeans, multcomp, corrplot,
+        factoextra, FactoMineR, lavaan, semPlot, agricolae, car,
+        writexl, rmarkdown, testthat (>= 3.0.0)
+URL: https://github.com/lalitrolaniya/aridagri
+BugReports: https://github.com/lalitrolaniya/aridagri/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-10 17:28:37 UTC; lalitrolaniya
+Author: Lalit Kumar Rolaniya [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8908-1211>),
+  Ram Lal Jat [aut] (ORCID: <https://orcid.org/0009-0003-4339-0555>),
+  Monika Punia [aut] (ORCID: <https://orcid.org/0009-0002-0294-6767>),
+  Raja Ram Choudhary [aut]
+Maintainer: Lalit Kumar Rolaniya <lalitrolaniya@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-10 18:00:02 UTC

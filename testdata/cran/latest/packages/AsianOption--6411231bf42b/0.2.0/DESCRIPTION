@@ -1,0 +1,38 @@
+Package: AsianOption
+Type: Package
+Title: Asian Option Pricing under Price Impact
+Version: 0.2.0
+Date: 2026-03-10
+Authors@R: c(
+    person("Priyanshu", "Tiwari",
+           email = "tiwari.priyanshu.iitk@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0007-8917-4689")),
+    person("Sourav", "Majumdar",
+           email = "souravm@iitk.ac.in",
+           role = c("ctb"))
+    )
+Maintainer: Priyanshu Tiwari <tiwari.priyanshu.iitk@gmail.com>
+Description: Implements the framework of Tiwari and Majumdar (2025)
+    <doi:10.48550/arXiv.2512.07154> for valuing arithmetic and geometric
+    Asian options under transient and permanent market impact. Provides
+    three pricing approaches: Kemna-Vorst frictionless benchmarks,
+    exogenous diffusion pricing (closed-form for geometric, Monte Carlo
+    for arithmetic), and endogenous Hamilton-Jacobi-Bellman valuation
+    via a tree-based Bellman scheme producing indifference bid-ask prices.
+License: GPL (>= 3)
+URL: https://github.com/plato-12/AsianOption
+BugReports: https://github.com/plato-12/AsianOption/issues
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0), covr
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-03-09 21:42:43 UTC; priyanshutiwari
+Author: Priyanshu Tiwari [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-8917-4689>),
+  Sourav Majumdar [ctb]
+Repository: CRAN
+Date/Publication: 2026-03-10 09:50:19 UTC

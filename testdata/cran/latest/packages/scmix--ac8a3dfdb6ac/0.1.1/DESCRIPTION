@@ -1,0 +1,40 @@
+Package: scmix
+Type: Package
+Title: Bayesian Model-Based Clustering with Sparse Conditional Mixture
+        Models
+Version: 0.1.1
+Authors@R: c(
+    person("Aqi", "Dong", email = "donga2@erau.edu",
+           role = c("aut", "cre")),
+    person("Yang-Li", "Liao", email = "yanglliao@fcu.edu.tw",
+           role = "aut"),
+    person("Danhyang", "Lee", email = "danhyang@smu.edu", role = "aut"))
+Description: Fits Bayesian sparse conditional (Gaussian) mixture models for
+    model-based clustering. Each mixture component factorizes into a chain
+    of univariate polynomial regressions with per-component, per-equation
+    Bayesian variable selection under a centered Zellner g-prior; the
+    number of clusters is selected within a single run via an overfitted
+    sparse mixture (Dirichlet concentration 1/K). The blocked Gibbs sampler
+    draws the selection sets exactly by enumeration (or by validated
+    single-flip Metropolis-Hastings in higher dimension), is provably
+    well-posed under a documented proper fallback prior, and reports a
+    label-invariant consensus partition (Dahl's least-squares criterion).
+    Companion package to Dong, Liao, and Lee (2026), "Replacing three nested searches with one sweep:
+    a Bayesian treatment of sparse conditional mixture clustering". Multiple-imputation
+    functionality for the same engine is also exposed.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: graphics, stats
+Suggests: knitr, mclust, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-15 17:13:34 UTC; july
+Author: Aqi Dong [aut, cre],
+  Yang-Li Liao [aut],
+  Danhyang Lee [aut]
+Maintainer: Aqi Dong <donga2@erau.edu>
+Repository: CRAN
+Date/Publication: 2026-08-20 14:30:02 UTC

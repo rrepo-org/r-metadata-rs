@@ -1,0 +1,27 @@
+Package: ineapir
+Title: Obtaining Data Published by the National Statistics Institute
+Version: 0.2.6
+Authors@R: c(
+    person("David", "Crespo", email = "david.crespo.roces@ine.es", role = c("aut", "cre")),
+    person("National Statistics Institute, INE", role = c("cph")))
+Description: Get open statistical data and metadata disseminated by the
+    National Statistics Institute of Spain (INE). The functions return
+    data frames with the requested information thanks to calls to
+    the 'INE' API <https://www.ine.es/dyngs/DAB/index.htm?cid=1100>.
+License: EUPL (== 1.2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: httr, jsonlite
+Config/Needs/website: rmarkdown
+URL: https://github.com/es-ine/ineapir,
+        https://es-ine.github.io/ineapir/
+BugReports: https://github.com/es-ine/ineapir/issues
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-08 09:49:12 UTC; U851427
+Author: David Crespo [aut, cre],
+  National Statistics Institute, INE [cph]
+Maintainer: David Crespo <david.crespo.roces@ine.es>
+Repository: CRAN
+Date/Publication: 2026-07-08 10:20:02 UTC

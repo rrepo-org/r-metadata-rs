@@ -1,0 +1,23 @@
+Package: beast
+Type: Package
+Title: Bayesian Estimation of Change-Points in the Slope of
+        Multivariate Time-Series
+Version: 1.2
+Date: 2026-02-04
+Authors@R: 
+    c(person(given = "Panagiotis",
+             family = "Papastamoulis",
+             email = "papapast@yahoo.gr",
+             role = c( "aut", "cre"),
+             comment = c(ORCID = "0000-0001-9468-7613")))
+Maintainer: Panagiotis Papastamoulis <papapast@yahoo.gr>
+Description: Assume that a temporal process is composed of contiguous segments with differing slopes and replicated noise-corrupted time series measurements are observed. The unknown mean of the data generating process is modelled as a piecewise linear function of time with an unknown number of change-points. The package infers the joint posterior distribution of the number and position of change-points as well as the unknown mean parameters per time-series by MCMC sampling. A-priori, the proposed model uses an overfitting number of mean parameters but, conditionally on a set of change-points, only a subset of them influences the likelihood. An exponentially decreasing prior distribution on the number of change-points gives rise to a posterior distribution concentrating on sparse representations of the underlying sequence, but also available is the Poisson distribution. See Papastamoulis et al (2019) <doi:10.1515/ijb-2018-0052> for a detailed presentation of the method.
+License: GPL-2
+Imports: RColorBrewer
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2026-02-04 08:17:55 UTC; panos
+Author: Panagiotis Papastamoulis [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9468-7613>)
+Repository: CRAN
+Date/Publication: 2026-02-04 08:50:02 UTC

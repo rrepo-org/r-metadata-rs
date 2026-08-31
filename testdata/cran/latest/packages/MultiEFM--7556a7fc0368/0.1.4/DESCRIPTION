@@ -1,0 +1,33 @@
+Package: MultiEFM
+Type: Package
+Title: Robust Estimation for Multi-Study High-Dimensional Elliptical
+        Factor Analytics
+Version: 0.1.4
+Date: 2026-08-03
+Authors@R: 
+    c(person(given = "Ruihan",
+             family = "Zhang",
+             role = c("aut", "cre"),
+             email = "ruihanzhang6166@gmail.com"),
+      person(given = "Wei",
+             family = "Liu",
+             role = "aut",
+             email = "liuweideng@gmail.com"))
+Description: We introduce a multi-study high-dimensional factor analysis toolbox 'MultiEFM' based on the elliptical factor model framework, which learns latent heterogeneous features and accounts for cross-study variation among sources. It provides robust estimation algorithms for heterogeneous datasets, particularly tailored for multi-study RNA sequencing arrays and complex spatial multi-omics layers. The package implements highly efficient initialization strategies, identifiability constraints alignment, and computationally scalable parameter estimation paradigms.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: MASS, irlba, mvtnorm, Rcpp (>= 1.0.8.3), stats
+URL: https://RRuihan-Zhang.github.io/MultiEFM/
+BugReports: https://github.com/RRuihan-Zhang/MultiEFM/issues
+Encoding: UTF-8
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Suggests: cowplot, ggplot2, knitr, rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-30 06:52:34 UTC; think
+Author: Ruihan Zhang [aut, cre],
+  Wei Liu [aut]
+Maintainer: Ruihan Zhang <ruihanzhang6166@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 14:00:14 UTC

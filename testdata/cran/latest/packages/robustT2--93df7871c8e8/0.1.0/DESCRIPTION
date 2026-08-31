@@ -1,0 +1,45 @@
+Package: robustT2
+Title: Robust Hotelling-Type T² Control Chart Based on the Dual STATIS
+        Approach
+Version: 0.1.0
+Authors@R: c(
+    person("Sergio Daniel", "Frutos Galarza", , "sergio_dan88@hotmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0007-2961-032X")),
+    person("Omar", "Ruiz Barzola", , "oruiz@espol.edu.ec", role = "aut",
+           comment = c(ORCID = "0000-0001-8206-1744")),
+    person("Purificación", "Galindo Villardón", , "pgalindo@usal.es", role = "aut",
+           comment = c(ORCID = "0000-0001-6977-7545"))
+  )
+Description: Implements a robust multivariate control-chart methodology for
+    batch-based industrial processes with multiple correlated variables using the
+    Dual STATIS (Structuration des Tableaux A Trois Indices de la Statistique) framework.
+    A robust compromise covariance matrix is constructed from Phase I batches with the
+    Minimum Covariance Determinant (MCD) estimator, and a Hotelling-type T² statistic is
+    applied for anomaly detection in Phase II. The package includes functions to simulate
+    clean and contaminated batches, to compute both robust and classical Hotelling T²
+    control charts, to visualize results via robust biplots, and to launch an interactive
+    'shiny' dashboard. An internal dataset (pharma_data) is provided for reproducibility.
+    See Lavit, Escoufier, Sabatier and Traissac (1994) <doi:10.1016/0167-9473(94)90134-1>
+    for the original STATIS methodology, and Rousseeuw and Van Driessen (1999)
+    <doi:10.1080/00401706.1999.10485670> for the MCD estimator.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: dplyr, MASS, ggplot2, rrcov, shiny, ggrepel, forcats, Matrix
+Depends: R (>= 3.5)
+URL: https://github.com/SergioDanielFG/robustT2
+BugReports: https://github.com/SergioDanielFG/robustT2/issues
+Suggests: spelling
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-09-05 12:19:03 UTC; sergi
+Author: Sergio Daniel Frutos Galarza [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-2961-032X>),
+  Omar Ruiz Barzola [aut] (ORCID:
+    <https://orcid.org/0000-0001-8206-1744>),
+  Purificación Galindo Villardón [aut] (ORCID:
+    <https://orcid.org/0000-0001-6977-7545>)
+Maintainer: Sergio Daniel Frutos Galarza <sergio_dan88@hotmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-10 08:00:02 UTC

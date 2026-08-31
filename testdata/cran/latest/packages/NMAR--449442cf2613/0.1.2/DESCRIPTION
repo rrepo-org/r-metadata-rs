@@ -1,0 +1,46 @@
+Package: NMAR
+Type: Package
+Title: Estimation under not Missing at Random Nonresponse
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Maciej",
+             family = "Beresewicz",
+             role = c("aut", "cre"),
+             email = "maciej.beresewicz@ue.poznan.pl",
+             comment = c(ORCID = "0000-0002-8281-4301")),
+      person(given = "Igor",
+             family = "Kołodziej",
+             role = c("aut", "ctb"),
+             email = "igor.kolodziej@proton.me"),
+      person(given = "Mateusz",
+             family = "Iwaniuk",
+             role = c("aut", "ctb"),
+             email = "mateusz.iwaniuk11@gmail.com"))
+Description: Methods to estimate finite-population parameters under nonresponse that is not missing at
+    random (NMAR, nonignorable). Incorporates auxiliary information and user-specified response models,
+    and supports independent samples and complex survey designs via objects from the 'survey' package.
+    Provides diagnostics and optional variance estimates. For methodological background see
+    Qin, Leung and Shao (2002) <doi:10.1198/016214502753479338> and Riddles, Kim and Im (2016) <doi:10.1093/jssam/smv047>.
+License: MIT + file LICENSE
+URL: https://github.com/ncn-foreigners/NMAR,
+        https://ncn-foreigners.ue.poznan.pl/NMAR/index.html
+BugReports: https://github.com/ncn-foreigners/NMAR/issues
+Encoding: UTF-8
+Imports: stats, nleqslv, utils, generics, Formula
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), numDeriv, survey,
+        svrep, broom, progressr, future, future.apply, spelling
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-02-04 15:05:13 UTC; runner
+Author: Maciej Beresewicz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8281-4301>),
+  Igor Kołodziej [aut, ctb],
+  Mateusz Iwaniuk [aut, ctb]
+Maintainer: Maciej Beresewicz <maciej.beresewicz@ue.poznan.pl>
+Repository: CRAN
+Date/Publication: 2026-02-05 07:40:23 UTC

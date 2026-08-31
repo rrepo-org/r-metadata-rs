@@ -1,0 +1,23 @@
+Package: mlS3
+Type: Package
+Title: Unified S3 Interface to Machine Learning Models
+Version: 0.1.1
+Date: 2026-05-24
+Authors@R: 
+    person("T.", "Moudiki",
+           email = "thierry.moudiki@gmail.com",
+           role = c("aut", "cre"))
+Maintainer: T. Moudiki <thierry.moudiki@gmail.com>
+Description: Provides a unified and consistent S3 interface for training and predicting with a variety of machine learning models in R. The package wraps popular algorithms (e.g., from 'glmnet', 'lightgbm', 'ranger', 'e1071', and 'caret') under a common workflow based on simple wrap_*() and predict() functions, allowing users to switch between models without changing their code structure. It supports both classification and regression tasks and facilitates rapid experimentation, benchmarking, and comparison of models. By abstracting away package-specific APIs while preserving flexibility in parameter specification, the package streamlines machine learning workflows and promotes reproducibility.
+License: GPL-3
+Encoding: UTF-8
+Imports: e1071, glmnet, lightgbm, ranger
+Suggests: caret, knitr, randomForest, kernlab
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-05-27 22:20:47 UTC; t
+Author: T. Moudiki [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-05-28 07:30:16 UTC

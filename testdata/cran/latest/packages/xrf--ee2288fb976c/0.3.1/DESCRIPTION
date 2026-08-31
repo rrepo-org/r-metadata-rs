@@ -1,0 +1,31 @@
+Package: xrf
+Title: eXtreme RuleFit
+Version: 0.3.1
+Authors@R: 
+    person("Karl", "Holub", , "karljholub@gmail.com", role = c("aut", "cre"))
+Description: An implementation of the RuleFit algorithm as described in
+    Friedman & Popescu (2008) <doi:10.1214/07-AOAS148>. eXtreme Gradient
+    Boosting ('XGBoost') is used to build rules, and 'glmnet' is used to
+    fit a sparse linear model on the raw and rule features. The result is
+    a model that learns similarly to a tree ensemble, while often offering
+    improved interpretability and achieving improved scoring runtime in
+    live applications. Several algorithms for reducing rule complexity are
+    provided, most notably hyperrectangle de-overlapping. All algorithms
+    scale to several million rows and support sparse representations to
+    handle tens of thousands of dimensions.
+License: MIT + file LICENSE
+URL: https://github.com/holub008/xrf
+BugReports: https://github.com/holub008/xrf/issues
+Depends: R (>= 4.3.0)
+Imports: cli, dplyr, glmnet (>= 3.0), Matrix, methods, rlang, xgboost
+        (>= 3.1.2.1)
+Suggests: covr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-17 22:17:58 UTC; kholub
+Author: Karl Holub [aut, cre]
+Maintainer: Karl Holub <karljholub@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-17 22:30:02 UTC

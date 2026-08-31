@@ -1,0 +1,26 @@
+Package: fICA
+Type: Package
+Title: Classical, Reloaded and Adaptive FastICA Algorithms
+Version: 1.1-3
+Date: 2025-03-27
+Authors@R: c(person(given = "Jari", family = "Miettinen", role = c("aut"),
+    comment = c(ORCID = "0000-0002-3270-7014")),
+    person(given = "Klaus", family = "Nordhausen", role = c("aut","cre"), email = "klausnordhausenr@gmail.com",
+    comment = c(ORCID = "0000-0002-3758-8501")),
+    person(given = "Hannu", family = "Oja", role = "aut", comment = c(ORCID = "0000-0002-4945-5976")),
+    person(given = "Sara", family = "Taskinen", role = "aut",
+    comment = c(ORCID = "0000-0001-9470-7258")))
+Author: Jari Miettinen [aut] (<https://orcid.org/0000-0002-3270-7014>),
+  Klaus Nordhausen [aut, cre] (<https://orcid.org/0000-0002-3758-8501>),
+  Hannu Oja [aut] (<https://orcid.org/0000-0002-4945-5976>),
+  Sara Taskinen [aut] (<https://orcid.org/0000-0001-9470-7258>)
+Maintainer: Klaus Nordhausen <klausnordhausenr@gmail.com>
+Imports: stats, JADE, Rcpp (>= 0.11.0)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: BSSasymp
+Description: Algorithms for classical symmetric and deflation-based FastICA, reloaded deflation-based FastICA algorithm and an algorithm for adaptive deflation-based FastICA using multiple nonlinearities. For details, see Miettinen et al. (2014) <doi:10.1109/TSP.2014.2356442> and Miettinen et al. (2017) <doi:10.1016/j.sigpro.2016.08.028>. The package is described in Miettinen, Nordhausen and Taskinen (2018) <doi:10.32614/RJ-2018-046>.
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2025-03-27 16:28:28 UTC; nordklau
+Repository: CRAN
+Date/Publication: 2025-03-27 22:00:02 UTC

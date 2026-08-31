@@ -1,0 +1,32 @@
+Package: netplot
+Title: Beautiful Graph Drawing
+Version: 0.4-0
+Authors@R: c(
+  person("George", "Vega Yon", email = "g.vegayon@gmail.com", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-3171-0844")),
+  person("Porter", "Bischoff", email = "portergbischoff@gmail.com", role = c("aut"), comment = c(ORCID = "0009-0004-6742-6281"))
+  )
+Description: A graph visualization engine that emphasizes on 
+  aesthetics at the same time providing default parameters that yield
+  out-of-the-box-nice visualizations. The package is built on top of
+  'The Grid Graphics Package' and seamlessly work with 'igraph' and 
+  'network' objects.
+Depends: R (>= 3.4.0), grid
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: graphics, grDevices, igraph, network, sna, stats
+Suggests: knitr, rmarkdown, markdown, igraphdata, intergraph, ggraph,
+        gridGraphics, ggplot2, gridExtra, gridBase, magrittr, tinytest
+VignetteBuilder: knitr
+URL: https://github.com/USCCANA/netplot,
+        https://usccana.github.io/netplot/
+BugReports: https://github.com/USCCANA/netplot/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-23 00:31:26 UTC; runner
+Author: George Vega Yon [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3171-0844>),
+  Porter Bischoff [aut] (ORCID: <https://orcid.org/0009-0004-6742-6281>)
+Maintainer: George Vega Yon <g.vegayon@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-23 10:50:22 UTC

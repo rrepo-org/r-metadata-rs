@@ -1,0 +1,24 @@
+Package: randnet
+Type: Package
+Title: Random Network Model Estimation, Selection and Parameter Tuning
+Version: 1.0
+Date: 2025-07-28
+Authors@R: c(person("Tianxi Li", email = "tianxili@umn.edu", role = c("aut", "cre")),
+  person("Elizeveta Levina", email = "elevina@umich.edu", role = c("aut")),
+  person("Ji Zhu", email = "jizhu@umich.edu", role = c("aut")),
+  person("Can M. Le", email = "canle@ucdavis.edu", role = c("aut")))
+Description: Model fitting, model selection and parameter tuning procedures for a class of random network models. Many useful network modeling, estimation, and processing methods are included. The work to build and improve this package is partially supported by the NSF grants DMS-2015298 and DMS-2015134.
+License: GPL (>= 2)
+Imports: methods, stats, poweRlaw, RSpectra, irlba, pracma, nnls,
+        data.table, Rcpp, Matrix, entropy, AUC, sparseFLMM, mgcv
+Depends: R (>= 2.10)
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+Packaged: 2025-07-29 00:08:03 UTC; tianxili
+Author: Tianxi Li [aut, cre],
+  Elizeveta Levina [aut],
+  Ji Zhu [aut],
+  Can M. Le [aut]
+Maintainer: Tianxi Li <tianxili@umn.edu>
+Repository: CRAN
+Date/Publication: 2025-07-29 09:40:02 UTC

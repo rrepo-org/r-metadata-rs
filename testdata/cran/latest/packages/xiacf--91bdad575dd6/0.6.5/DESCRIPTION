@@ -1,0 +1,23 @@
+Package: xiacf
+Type: Package
+Title: Nonlinear Dependence and Lead-Lag Analysis via Chatterjee's Xi
+Version: 0.6.5
+Date: 2026-08-24
+Authors@R: person(given = "Yasunori", family = "Watanabe", role = c("aut", "cre"), email = "watanabe.yasunori@outlook.com")
+Maintainer: Yasunori Watanabe <watanabe.yasunori@outlook.com>
+Description: Computes Chatterjee's non-parametric correlation coefficient for time series data. It extends the original metric to time series analysis by providing the univariate Xi-Autocorrelation Function (Xi-ACF), directional Xi-Cross-Correlation Function (Xi-CCF), and multivariate network evaluation matrices. The package allows users to test for non-linear dependence using Iterative Amplitude Adjusted Fourier Transform (IAAFT) and Multivariate IAAFT (MIAAFT) surrogate data with strict Family-Wise Error Rate ('FWER') control via Max-statistic approaches. Methodologies are based on Chatterjee (2021) <doi:10.1080/01621459.2020.1758115>, surrogate data testing methods by Schreiber and Schmitz (1996) <doi:10.1103/PhysRevLett.77.635>, and local structural identification by Watanabe (2026) <doi:10.2139/ssrn.6829431>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: dplyr (>= 1.1.4), doFuture, foreach, future, ggplot2 (>=
+        4.0.1), patchwork, progressr, Rcpp (>= 1.1.0), stats,
+        parallelly
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.3.2)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-24 15:35:54 UTC; yasunori
+Author: Yasunori Watanabe [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-08-24 17:10:02 UTC

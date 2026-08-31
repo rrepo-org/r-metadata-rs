@@ -1,0 +1,50 @@
+Package: mapsf.gui
+Title: Create Thematic Maps Interactively
+Version: 0.1.0
+Authors@R: 
+    c(
+      person(
+        given = "Matthieu",
+        family = "Viry",
+        email = "matthieu.viry@cnrs.fr",
+        role = c("cre", "aut"),
+        comment = c(ORCID = "0000-0002-0693-8556")),
+      person(
+        given = "Timothée",
+        family = "Giraud",
+        email = "timothee.giraud@cnrs.fr",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0002-1932-3323")),
+      person(
+        given = "Hugues",
+        family = "Pecout",
+        email = "hugues.pecout@cnrs.fr",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0002-0246-0954"))
+    )
+Description: A 'Shiny' application to create thematic maps interactively, based on the 'mapsf' package. Features include:
+    a user-friendly interface to create and customize thematic maps without coding, support for various map types (choropleth, proportional symbols, etc.) and customization options (colors, legends, etc.),
+    R code generation to ensure reproducibility and export options to save maps in different formats (PNG, SVG).
+License: GPL (>= 3)
+URL: https://codeberg.org/riatelab/mapsf.gui,
+        https://riatelab.r-universe.dev/mapsf.gui
+BugReports: https://codeberg.org/riatelab/mapsf.gui/issues
+Depends: R (>= 4.0.0)
+Imports: base64enc, bslib (>= 0.10.0), colourpicker, Ckmeans.1d.dp, DT,
+        formatR, jpeg, graphics, grDevices, htmltools, mapsf (>=
+        1.2.1), phosphoricons, png, sf, shiny (>= 1.12.0), shinyjs (>=
+        2.0.0), shiny.i18n, sortable, stats, utils
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Suggests: shinytest2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-23 12:30:09 UTC; mthh
+Author: Matthieu Viry [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-0693-8556>),
+  Timothée Giraud [aut] (ORCID: <https://orcid.org/0000-0002-1932-3323>),
+  Hugues Pecout [aut] (ORCID: <https://orcid.org/0000-0002-0246-0954>)
+Maintainer: Matthieu Viry <matthieu.viry@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2026-06-29 14:20:02 UTC

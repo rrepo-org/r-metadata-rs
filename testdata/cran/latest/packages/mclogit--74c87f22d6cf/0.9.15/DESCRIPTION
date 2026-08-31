@@ -1,0 +1,33 @@
+Package: mclogit
+Type: Package
+Title: Multinomial Logit Models for Categorical Responses and Discrete
+        Choices
+Version: 0.9.15
+Date: 2025-12-15
+Authors@R: person(given = "Martin",
+                    family = "Elff",
+                    role = c("aut", "cre"),
+                    email = "martin@elff.eu")
+Maintainer: Martin Elff <martin@elff.eu>
+Description: Provides estimators for multinomial logit models in their
+    conditional logit (for discrete choices) and baseline logit variants
+    (for categorical responses), optionally with overdispersion or random
+    effects. Random effects models are estimated using the PQL technique
+    (based on a Laplace approximation) or the MQL technique (based on a
+    Solomon-Cox approximation). Estimates should be treated
+    with caution if the group sizes are small.
+License: GPL-2
+Depends: stats, Matrix
+Imports: MASS, memisc, methods, nlme
+Suggests: nnet, ucminf, knitr, rmarkdown
+LazyLoad: Yes
+VignetteBuilder: knitr
+URL: http://melff.github.io/mclogit/,https://github.com/melff/mclogit/
+BugReports: https://github.com/melff/mclogit/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-12-15 20:17:38 UTC; elff
+Author: Martin Elff [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-12-16 06:10:30 UTC

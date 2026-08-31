@@ -1,0 +1,27 @@
+Package: nordstatExtras
+Title: Shared 'SQLite' Cache Backend for the 'nordstat' Package Family
+Version: 0.1.0
+Authors@R: 
+    person("Love", "Hansson", , "love.hansson@gmail.com",
+           role = c("aut", "cre"))
+Description: Provides a SQLite-backed cell-level cache that can be used as a
+    drop-in backend by the nordstat family of packages ('rKolada', 'rTrafa', and
+    'pixieweb'). Designed for multi-user web applications where minimal fetch
+    latency and asynchronous writes are required. Individual statistical
+    values ("cells") are stored in a gatekeeper schema with a sidecar table
+    for arbitrary metadata dimensions, enabling deduplication across
+    overlapping queries.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: DBI, RSQLite, rlang, tibble, jsonlite, digest
+Suggests: mirai, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+URL: https://github.com/LCHansson/nordstatExtras
+BugReports: https://github.com/LCHansson/nordstatExtras/issues
+NeedsCompilation: no
+Packaged: 2026-04-14 06:40:40 UTC; tgslhn
+Author: Love Hansson [aut, cre]
+Maintainer: Love Hansson <love.hansson@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 08:30:19 UTC

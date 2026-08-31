@@ -1,0 +1,27 @@
+Package: funviewR
+Title: Visualize Function Call Dependencies in R Source Code
+Version: 0.1.1
+Authors@R: 
+    person("Chathura", "Jayalath", email = "acj.chathura@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2056-0211"))
+Description: Provides tools to analyze R source code and detect function definitions
+    and their internal dependencies across multiple files. Creates interactive network
+    visualizations using 'visNetwork' to display function call relationships, with
+    detailed tooltips showing function arguments, return values, and documentation.
+    Supports both individual files and directory-based analysis with automatic file
+    detection. Useful for understanding code structure, identifying dependencies,
+    and documenting R projects.
+License: GPL-3
+URL: https://github.com/deamonpog/funviewR
+BugReports: https://github.com/deamonpog/funviewR/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: codetools, visNetwork, igraph, htmltools, magrittr
+Suggests: htmlwidgets
+NeedsCompilation: no
+Packaged: 2025-12-03 04:14:48 UTC; pog66
+Author: Chathura Jayalath [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2056-0211>)
+Maintainer: Chathura Jayalath <acj.chathura@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-04 08:20:21 UTC

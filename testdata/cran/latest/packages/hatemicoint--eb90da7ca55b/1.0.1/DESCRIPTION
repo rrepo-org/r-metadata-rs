@@ -1,0 +1,31 @@
+Package: hatemicoint
+Type: Package
+Title: Hatemi-J Cointegration Test with Two Unknown Regime Shifts
+Version: 1.0.1
+Authors@R: c(
+    person("Muhammad", "Alkhalaf", 
+           email = "muhammedalkhalaf@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-2677-9246")))
+Description: Implements the Hatemi-J (2008) cointegration test which allows 
+    for two unknown structural breaks (regime shifts) in the cointegrating 
+    relationship. The test provides three test statistics: ADF* (Augmented 
+    Dickey-Fuller), Zt* (Phillips-Perron Z_t), and Za* (Phillips-Perron Z_alpha), 
+    along with endogenously determined break dates. Critical values are based 
+    on simulations from Hatemi-J (2008) <doi:10.1007/s00181-007-0175-9>.
+License: GPL-3
+URL: https://github.com/muhammedalkhalaf/hatemicoint
+BugReports: https://github.com/muhammedalkhalaf/hatemicoint/issues
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-09 17:14:09 UTC; acad_
+Author: Muhammad Alkhalaf [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-2677-9246>)
+Maintainer: Muhammad Alkhalaf <muhammedalkhalaf@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-13 13:30:08 UTC

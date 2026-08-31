@@ -1,0 +1,31 @@
+Package: refundBayes
+Encoding: UTF-8
+Type: Package
+Title: Bayesian Regression with Functional Data
+Version: 0.6.0
+Authors@R: 
+   c(person("Ziren", "Jiang", email = "jian0746@umn.edu",
+             role = c("aut", "cre")),
+      person("Erjia", "Cui", role = c("aut")),
+      person("Ciprian", "Crainiceanu", role = c("ctb")))
+Depends: R (>= 3.6.0)
+Imports: ggplot2 (>= 2.0.0), mgcv, refund, rstan (>= 2.29.0), splines2,
+        stats
+Description: Bayesian regression with functional data, including regression with scalar, survival, or functional outcomes. The package allows regression with scalar and functional predictors. Methods are described in Jiang et al. (2025)
+    "Tutorial on Bayesian Functional Regression Using Stan"
+    <doi:10.1002/sim.70265>.
+NeedsCompilation: no
+BugReports: https://github.com/ZirenJiang/refundBayes/issues
+License: GPL-2
+URL: https://zirenjiang.github.io/refundBayes/,
+        https://github.com/ZirenJiang/refundBayes
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Packaged: 2026-05-08 04:25:08 UTC; 12805
+Author: Ziren Jiang [aut, cre],
+  Erjia Cui [aut],
+  Ciprian Crainiceanu [ctb]
+Maintainer: Ziren Jiang <jian0746@umn.edu>
+Repository: CRAN
+Date/Publication: 2026-05-08 05:00:23 UTC

@@ -1,0 +1,28 @@
+Type: Package
+Package: OwenQ
+Title: Owen Q-Function
+Version: 1.0.8
+Authors@R: c(person(given = "Stéphane", family = "Laurent", role = "aut"),
+                  person(given = "Alex", family = "Ball", role = "cre",
+                         email = "alex_keith_ball@hotmail.com"))
+Description: Evaluates the Owen Q-function for an integer value of the
+    degrees of freedom, by applying Owen's algorithm (1965)
+    <doi:10.1093/biomet/52.3-4.437>.  It is useful for the calculation of
+    the power of equivalence tests.
+License: BSD_3_clause + file LICENSE
+URL: https://github.com/stla/OwenQ
+BugReports: https://github.com/stla/OwenQ/issues
+Imports: Rcpp (>= 0.12.10), stats
+Suggests: knitr, mvtnorm, rmarkdown, testthat
+LinkingTo: BH, Rcpp, RcppEigen, RcppNumerical
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2025-07-31 11:37:49 UTC; alex_
+Repository: CRAN
+Date/Publication: 2025-08-19 14:50:20 UTC
+Author: Stéphane Laurent [aut],
+  Alex Ball [cre]
+Maintainer: Alex Ball <alex_keith_ball@hotmail.com>

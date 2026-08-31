@@ -1,0 +1,22 @@
+Package: restfulr
+Type: Package
+Title: R Interface to RESTful Web Services
+Version: 0.0.17
+Authors@R: person(given = "Michael",
+    family = "Lawrence",
+    role = c("aut", "cre"),
+    email = "lawremi@gmail.com")
+Description: Models a RESTful service as if it were a nested R list.
+License: Artistic-2.0
+Imports: XML, RCurl, rjson, S4Vectors (>= 0.13.15), yaml
+Depends: R (>= 3.4.0), methods
+Suggests: getPass, rsolr, RUnit
+Collate: CRUDProtocol-class.R CacheInfo-class.R Credentials-class.R
+        HTTP-class.R Media-class.R MediaCache-class.R RestUri-class.R
+        RestContainer-class.R test_restfulr_package.R utils.R
+NeedsCompilation: yes
+Packaged: 2026-06-11 02:01:19 UTC; lawremi
+Author: Michael Lawrence [aut, cre]
+Maintainer: Michael Lawrence <lawremi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-11 05:10:02 UTC

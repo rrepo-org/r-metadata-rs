@@ -1,0 +1,44 @@
+Package: betaARMA
+Title: Beta Autoregressive Moving Average Models
+Version: 1.2.0
+Date: 2026-04-22
+Authors@R: c(
+  person(given = "Everton",
+         family = "da Costa",
+         email = "everto.cost@gmail.com",
+         role = c("aut", "cre"),
+         comment = c(ORCID = "0000-0001-7580-2639")),
+  person(given = "Francisco",
+         family = "Cribari-Neto",
+         email = "francisco.cribari@ufpe.br",
+         role = c("ctb", "ths"),
+         comment = c(ORCID = "0000-0002-5909-6698", "Theoretical foundations")),
+  person(given = "Vinicius",
+         family = "Scher",
+         role = "ctb",
+         comment = c(ORCID = "0000-0003-0406-0265"))
+  )
+Description: Fits Beta Autoregressive Moving Average (BARMA) models for time series data distributed in the standard unit interval (0, 1). The estimation is performed via the conditional maximum likelihood method using the Broyden-Fletcher-Goldfarb-Shanno (BFGS) quasi-Newton algorithm. A ridge penalization scheme is available to improve numerical stability of the estimation, as proposed by Cribari-Neto, Costa and Fonseca (2025) <doi:10.1214/25-BJPS645>. The package includes tools for model fitting, diagnostic checking, and forecasting, along with two hydro-environmental datasets from Brazil. Based on the work of Rocha and Cribari-Neto (2009) <doi:10.1007/s11749-008-0112-z> and the associated erratum Rocha and Cribari-Neto (2017) <doi:10.1007/s11749-017-0528-4>. The original code was developed by Fabio M. Bayer.
+License: MIT + file LICENSE
+URL: https://github.com/Everton-da-Costa/betaARMA
+BugReports: https://github.com/Everton-da-Costa/betaARMA/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Language: en-US
+Imports: forecast, ggplot2, rlang, gridExtra
+Suggests: knitr, zoo, xtable, here, moments, rmarkdown, tseries, lbfgs,
+        dplyr, scales, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-23 17:12:22 UTC; cost
+Author: Everton da Costa [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7580-2639>),
+  Francisco Cribari-Neto [ctb, ths] (ORCID:
+    <https://orcid.org/0000-0002-5909-6698>, Theoretical foundations),
+  Vinicius Scher [ctb] (ORCID: <https://orcid.org/0000-0003-0406-0265>)
+Maintainer: Everton da Costa <everto.cost@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-23 22:30:02 UTC

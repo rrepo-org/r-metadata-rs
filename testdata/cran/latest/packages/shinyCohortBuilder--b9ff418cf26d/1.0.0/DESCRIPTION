@@ -1,0 +1,56 @@
+Package: shinyCohortBuilder
+Type: Package
+Title: Modular Cohort-Building Framework for Analytical Dashboards
+Version: 1.0.0
+Authors@R: 
+    c(person('Krystian', 'Igras', 
+             email = 'krystian8207@gmail.com', 
+             role = c('cre', 'aut')),
+      person('Kamil', 'Wais', 
+             email = 'kamil.wais@gmail.com', 
+             role = c('aut')),
+      person('Adam', 'Foryś',
+             role = "ctb"))
+Maintainer: Krystian Igras <krystian8207@gmail.com>
+Description: You can easily add advanced cohort-building component
+    to your analytical dashboard or simple 'Shiny' app.
+    Then you can instantly start building cohorts using multiple
+    filters of different types, filtering datasets, and filtering steps.
+    Filters can be complex and data-specific, and together
+    with multiple filtering steps you can use complex filtering rules.
+    The cohort-building sidebar panel allows you to easily
+    work with filters, add and remove filtering steps.
+    It helps you with handling missing values during filtering,
+    and provides instant filtering feedback with filter feedback plots.
+    The GUI panel is not only compatible with native shiny
+    bookmarking, but also provides reproducible R code.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: glue, bslib, jsonlite, purrr, htmltools, htmlwidgets, shiny
+        (>= 1.7.0), shinyWidgets (>= 0.7.0), dplyr, cohortBuilder (>=
+        1.0.0), S7, tryCatchLog, highr, shinyGizmo (>= 0.4.2), rlang
+        (>= 1.0), tibble, lifecycle
+Suggests: queryBuilder (>= 0.1.0), shinyQueryBuilder (>= 0.1.0),
+        shinychat, magrittr, pkgload, sass, knitr, rmarkdown, testthat
+        (>= 3.0.0), shinytest2, withr
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://r-world-devs.github.io/shinyCohortBuilder/,
+        https://github.com/r-world-devs/shinyCohortBuilder
+BugReports: https://github.com/r-world-devs/shinyCohortBuilder/issues
+Collate: 'shinyCohortBuilder-package.R' 'ui_utils.R' 'control_utils.R'
+        'actions.R' 'renders.R' 'feedback_html.R' 'filter_discrete.R'
+        'filter_range.R' 'filter_date_range.R'
+        'filter_datetime_range.R' 'filter_discrete_text.R'
+        'filter_multi_discrete.R' 'filter_query.R' 'app.R' 'cb_layer.R'
+        'source.R' 'source_tblist.R' 'chat.R'
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-05 22:27:29 UTC; krystiai
+Author: Krystian Igras [cre, aut],
+  Kamil Wais [aut],
+  Adam Foryś [ctb]
+Repository: CRAN
+Date/Publication: 2026-07-06 00:00:02 UTC

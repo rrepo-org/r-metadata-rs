@@ -1,0 +1,35 @@
+Package: EBASS
+Type: Package
+Title: Expected Value of Information Based Sample Size Calculation
+Version: 0.1.1
+Authors@R: c(person("Audrey", "Cordon", role=c("aut", "cre"), email="audrey.cordon@chu-bordeaux.fr"),
+  person("Clement", "Bader", role="ctb"),
+  person("Morgane", "Donadel", role="ctb"),
+  person("Aline", "Maillard", role="ctb"),
+  person("Sebastien", "Cossin", role="ctb"),
+  person("Mohamedou", "Sow", role="ctb"),
+  person("Antoine", "Benard", role="ctb"))
+Maintainer: Audrey Cordon <audrey.cordon@chu-bordeaux.fr>
+URL: https://github.com/aud33/EBASS
+BugReports: https://github.com/aud33/EBASS/issues
+Description: Computes sample sizes for trial-based cost-effectiveness analyses using the expected value of information. The implementation follows the method described by Bader et al. (2018) <doi:10.1186/s12874-018-0571-1>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Collate: 'POP.R' 'INMB_DIRECT.R' 'VAR_INMB_DIRECT.R' 'EVPI.R'
+        'internal.R' 'INMB.R' 'Lambda.R' 'VAR_INMB.R' 'VAR_INMB_DIFF.R'
+        'fonctions_sujets.R'
+Imports: methods
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-24 10:04:27 UTC; cordaud
+Author: Audrey Cordon [aut, cre],
+  Clement Bader [ctb],
+  Morgane Donadel [ctb],
+  Aline Maillard [ctb],
+  Sebastien Cossin [ctb],
+  Mohamedou Sow [ctb],
+  Antoine Benard [ctb]
+Repository: CRAN
+Date/Publication: 2026-08-04 09:50:07 UTC

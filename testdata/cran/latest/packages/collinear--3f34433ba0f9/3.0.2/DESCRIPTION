@@ -1,0 +1,30 @@
+Package: collinear
+Title: Automated Multicollinearity Management
+Version: 3.0.2
+Authors@R: 
+    person(given = "Blas M.", 
+          family = "Benito", , 
+          email = "blasbenito@gmail.com", 
+          role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-5105-7232"))
+URL: https://blasbenito.github.io/collinear/
+BugReports: https://github.com/blasbenito/collinear/issues
+Description: Provides a comprehensive and automated workflow for managing multicollinearity in data frames with numeric and/or categorical variables. The package integrates five robust methods into a single function: (1) target encoding of categorical variables based on response values (Micci-Barreca, 2001 (Micci-Barreca, D. 2001 <doi:10.1145/507533.507538>); (2) automated feature prioritization to preserve key predictors during filtering; (3 and 4) pairwise correlation and VIF filtering across all variable types (numeric–numeric, numeric–categorical, and categorical–categorical); (5) adaptive correlation and VIF thresholds. Together, these methods enable a reliable multicollinearity management in most use cases while maintaining model integrity. The package also supports parallel processing and progress tracking via the packages 'future' and 'progressr', and provides seamless integration with the 'tidymodels' ecosystem through a dedicated recipe step.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: progressr, future.apply, mgcv, ranger, recipes (>= 1.0.9),
+        rlang, spatialData
+Suggests: future, testthat (>= 3.0.0), spelling
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LazyData: true
+LazyDataCompression: xz
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-04 06:32:49 UTC; blas
+Author: Blas M. Benito [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5105-7232>)
+Maintainer: Blas M. Benito <blasbenito@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-04 06:50:02 UTC

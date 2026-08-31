@@ -1,0 +1,29 @@
+Package: PosiR
+Type: Package
+Title: Post-Selection Inference via Simultaneous Confidence Intervals
+Version: 0.1.2
+Authors@R: c(
+    person("Henry", "Chukwuma",
+           email = "chukyhenry55@gmail.com",
+           role = c("aut", "cre")))
+Description: Post-selection inference in linear regression models,
+    constructing simultaneous confidence intervals across a user-specified universe of models.
+    Implements the methodology described in Kuchibhotla, Kolassa, and Kuffner (2022) "Post-Selection Inference"
+    <doi:10.1146/annurev-statistics-100421-044639> to ensure valid inference after model
+    selection, with applications in high-dimensional settings like Lasso selection.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: knitr, pbapply, rmarkdown, testthat (>= 3.0.0), dplyr, glmnet
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+URL: https://github.com/Chukyhenry/PosiR
+BugReports: https://github.com/Chukyhenry/PosiR/issues
+Imports: graphics, parallel, stats
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0)
+NeedsCompilation: no
+Packaged: 2025-04-29 08:49:59 UTC; henrychukwuma
+Author: Henry Chukwuma [aut, cre]
+Maintainer: Henry Chukwuma <chukyhenry55@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-30 15:10:06 UTC

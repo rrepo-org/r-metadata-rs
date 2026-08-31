@@ -1,0 +1,38 @@
+Package: orbitr
+Type: Package
+Title: A Tidy Physics Engine for Building and Visualizing Orbital
+        Simulations
+Version: 0.3.0
+Authors@R: c(
+    person(
+      "Dave", "Rosenman",
+      email = "dave.rosenman.data@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: A lightweight, fully vectorized N-body physics engine built for
+    the R ecosystem. Simulate and visualize complex orbital mechanics,
+    celestial trajectories, and gravitational interactions using tidy data
+    principles. Features multiple numerical integration methods, including
+    the energy-conserving velocity Verlet algorithm
+    (Verlet (1967) <doi:10.1103/PhysRev.159.98>), to ensure highly stable
+    orbital propagation. Gravitational N-body methods follow
+    Aarseth (2003, ISBN:0-521-43272-3).
+URL: https://orbit-r.com/, https://github.com/DRosenman/orbitr
+BugReports: https://github.com/DRosenman/orbitr/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, ggplot2, Rcpp, tibble
+Suggests: plotly, gganimate, gifski, magick, knitr, rmarkdown, pkgdown,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-05-01 18:48:54 UTC; daver
+Author: Dave Rosenman [aut, cre]
+Maintainer: Dave Rosenman <dave.rosenman.data@gmail.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-05-03 06:30:02 UTC

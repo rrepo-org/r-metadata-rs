@@ -1,0 +1,35 @@
+Package: rwicc
+Title: Regression with Interval-Censored Covariates
+Version: 0.2.0
+Authors@R: c(
+    person(given = "Douglas Ezra",
+           family = "Morrison",
+           role = c("aut", "cre","cph"),
+           email = "demorrison@ucdavis.edu",
+           comment = c(ORCID = "0000-0002-7195-830X")),
+    person(given = "Ron",
+           family = "Brookmeyer",
+           role = c("aut")))
+Description: Provides functions to simulate and analyze data for a regression model with an interval censored covariate, as described in Morrison et al. (2021) <doi:10.1111/biom.13472>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Imports: biglm, dplyr (>= 1.1.0), lubridate, stats, lobstr, arm,
+        ggplot2, scales, plotly, rlang, ggrepel
+Suggests: spelling, rmarkdown, knitr, testthat (>= 3.0.0), markdown,
+        pander, vdiffr, withr, badger
+Language: en-US
+URL: https://d-morrison.github.io/rwicc/,
+        https://github.com/d-morrison/rwicc
+BugReports: https://github.com/d-morrison/rwicc/issues
+Depends: R (>= 4.1.0)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-27 06:40:28 UTC; ezramorrison
+Author: Douglas Ezra Morrison [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-7195-830X>),
+  Ron Brookmeyer [aut]
+Maintainer: Douglas Ezra Morrison <demorrison@ucdavis.edu>
+Repository: CRAN
+Date/Publication: 2026-05-27 07:10:02 UTC

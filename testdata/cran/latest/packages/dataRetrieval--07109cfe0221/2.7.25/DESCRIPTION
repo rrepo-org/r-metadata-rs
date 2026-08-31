@@ -1,0 +1,77 @@
+Package: dataRetrieval
+Type: Package
+Title: Retrieval Functions for USGS and EPA Hydrology and Water Quality
+        Data
+Version: 2.7.25
+Authors@R: c(
+    person("Laura", "DeCicco", role = c("aut","cre"),
+            email = "ldecicco@usgs.gov",
+            comment=c(ORCID="0000-0002-3915-9487")),
+    person("Robert", "Hirsch", role = c("aut"),
+            comment=c(ORCID = "0000-0002-4534-075X")),
+    person("David","Lorenz", role=c("aut")),
+    person("Jordan", "Read", role = c("ctb")),
+    person("Jordan", "Walker", role = c("ctb")),
+    person("Lindsay","Platt", role=c("ctb")),
+    person("David","Watkins", role=c("aut"),
+            email = "wwatkins@usgs.gov",
+            comment=c(ORCID = "0000-0002-7544-0700")),
+    person("David", "Blodgett", role="aut",
+            comment=c(ORCID = "0000-0001-9489-1710"),
+            email = "dblodgett@usgs.gov"),
+    person("Mike", "Johnson", role=c("aut"),
+            email = "mikecp11@gmail.com",
+            comment=c(ORCID = "0000-0002-5288-8350")),
+    person("Aliesha", "Krall", role="ctb",
+            email = "akrall@usgs.gov",
+            comment=c(ORCID = "0000-0003-2521-5043")),
+    person("Lee", "Stanish", role="ctb",
+            comment=c(ORCID = "0000-0002-9775-6861")),
+    person("Joseph", "Zemmels", role="aut",
+            email = "jzemmels@usgs.gov",
+            comment=c(ORCID = "0009-0008-1463-6313")),
+    person("Elise", "Hinman", role="aut",
+            email = "ehinman@usgs.gov",
+            comment=c(ORCID = "0000-0001-5396-1583")),  
+    person("Michael", "Mahoney", role="ctb",
+            email = "mjmahoney@usgs.gov",
+            comment=c(ORCID = "0000-0003-2402-304X"))  
+            )
+Description: Collection of functions to help retrieve U.S. Geological Survey
+    and U.S. Environmental Protection Agency water quality and
+    hydrology data from web services. 
+License: CC0
+Copyright: This software is in the public domain because it contains
+        materials that originally came from the United States
+        Geological Survey, an agency of the United States Department of
+        Interior.
+Depends: R (>= 4.1.0)
+Imports: curl (>= 7.0.0), lubridate (>= 1.5.0), stats, utils, xml2,
+        readr (>= 1.4.0), jsonlite, httr2, whisker, sf, data.table,
+        rlang
+Suggests: covr, dplyr, knitr, rmarkdown, testthat
+Encoding: UTF-8
+BuildVignettes: true
+VignetteBuilder: knitr
+BugReports: https://github.com/DOI-USGS/dataRetrieval/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-27 18:01:15 UTC; ldecicco
+Author: Laura DeCicco [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3915-9487>),
+  Robert Hirsch [aut] (ORCID: <https://orcid.org/0000-0002-4534-075X>),
+  David Lorenz [aut],
+  Jordan Read [ctb],
+  Jordan Walker [ctb],
+  Lindsay Platt [ctb],
+  David Watkins [aut] (ORCID: <https://orcid.org/0000-0002-7544-0700>),
+  David Blodgett [aut] (ORCID: <https://orcid.org/0000-0001-9489-1710>),
+  Mike Johnson [aut] (ORCID: <https://orcid.org/0000-0002-5288-8350>),
+  Aliesha Krall [ctb] (ORCID: <https://orcid.org/0000-0003-2521-5043>),
+  Lee Stanish [ctb] (ORCID: <https://orcid.org/0000-0002-9775-6861>),
+  Joseph Zemmels [aut] (ORCID: <https://orcid.org/0009-0008-1463-6313>),
+  Elise Hinman [aut] (ORCID: <https://orcid.org/0000-0001-5396-1583>),
+  Michael Mahoney [ctb] (ORCID: <https://orcid.org/0000-0003-2402-304X>)
+Maintainer: Laura DeCicco <ldecicco@usgs.gov>
+Repository: CRAN
+Date/Publication: 2026-05-28 05:11:18 UTC

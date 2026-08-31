@@ -1,0 +1,26 @@
+Package: TensorMCMC
+Type: Package
+Title: Tensor Regression with Stochastic Low-Rank Updates
+Version: 0.1.0
+Date: 2026-01-08
+Authors@R: person("Ritwick", "Mondal", email = "ritwick12@tamu.edu", role = c("aut", "cre"))
+Maintainer: Ritwick Mondal <ritwick12@tamu.edu>
+Description: Provides methods for low-rank tensor regression with tensor-valued predictors
+    and scalar covariates. Model estimation is performed using stochastic optimization
+    with random-walk updates for low-rank factor matrices. Computationally intensive
+    components for coefficient estimation and prediction are implemented in C++ via
+    'Rcpp'. The package also includes tools for cross-validation and prediction error
+    assessment.
+Imports: Rcpp (>= 1.0.10), glmnet, stats
+LinkingTo: Rcpp
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-01-08 18:55:16 UTC; User
+Author: Ritwick Mondal [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-01-12 19:30:06 UTC

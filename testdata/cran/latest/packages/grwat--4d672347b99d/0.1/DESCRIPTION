@@ -1,0 +1,44 @@
+Package: grwat
+Type: Package
+Title: River Hydrograph Separation and Analysis
+Version: 0.1
+Date: 2025-10-02
+Authors@R: c(
+    person("Timofey", "Samsonov",, "tsamsonov@geogr.msu.ru", role = c("aut", "cre"), 
+      comment = c(ORCID = "0000-0001-5994-0302")
+    ),
+    person("Ekaterina", "Rets", role = "ctb", comment = c(ORCID = "0000-0002-4505-1173")),
+    person("Maria", "Kireeva", role = "ctb", comment = c(ORCID = "0000-0002-8285-9761"))
+    )
+Description: River hydrograph separation and daily runoff time series analysis. Provides
+  various filters to separate baseflow and quickflow. Implements advanced separation 
+  technique by Rets et al. (2022) <doi:10.1134/S0097807822010146> which involves 
+  meteorological data to reveal genetic components of the runoff: ground, rain, thaw 
+  and spring (seasonal thaw). High-performance C++17 computation, annually aggregated 
+  variables, statistical testing and numerous plotting functions for high-quality 
+  visualization.
+License: MIT + file LICENSE
+URL: https://github.com/tsamsonov/grwat,
+        https://tsamsonov.github.io/grwat/
+BugReports: https://github.com/tsamsonov/grwat/issues
+Encoding: UTF-8
+Language: en-US
+LinkingTo: Rcpp
+SystemRequirements: pandoc
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Depends: R (>= 4.1)
+Imports: cli, Rcpp, dplyr, tidyr, lubridate, stringr, rlang, grid,
+        ggplot2, zoo, trend, mblm, R.utils
+Suggests: ggridges, ggHoriPlot, ggthemes, kableExtra, knitr, ncdf4,
+        rmarkdown, sf, testthat, stringi
+NeedsCompilation: yes
+Packaged: 2025-10-02 16:20:18 UTC; tsamsonov
+Author: Timofey Samsonov [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5994-0302>),
+  Ekaterina Rets [ctb] (ORCID: <https://orcid.org/0000-0002-4505-1173>),
+  Maria Kireeva [ctb] (ORCID: <https://orcid.org/0000-0002-8285-9761>)
+Maintainer: Timofey Samsonov <tsamsonov@geogr.msu.ru>
+Repository: CRAN
+Date/Publication: 2025-10-02 17:50:09 UTC

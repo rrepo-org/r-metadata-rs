@@ -1,0 +1,49 @@
+Package: arcgisutils
+Title: R-ArcGIS Bridge Utility Functions
+Version: 0.6.0
+Authors@R: c(
+    person("Josiah", "Parry", , "josiah.parry@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9910-865X")),
+    person("Kenneth", "Vernon", , "kenneth.b.vernon@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0003-0098-5092")),
+    person("Martha", "Bass", role = "ctb",
+           comment = c(ORCID = "0009-0004-0268-5426")),
+    person("Eli", "Pousson", , "eli.pousson@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0001-8280-1706")),
+    person("Ryan", "Zomorrodi", , "ryanzomorrodi@gmail.com", role = "ctb",
+           comment = c(ORCID = "0009-0003-6417-5985"))
+  )
+Description: Developer oriented utility functions designed to be used as
+    the building blocks of R packages that work with ArcGIS Location
+    Services. It provides functionality for authorization, Esri JSON
+    construction and parsing, as well as other utilities pertaining to
+    geometry and Esri type conversions. To support 'ArcGIS Pro' users,
+    authorization can be done via 'arcgisbinding'. Installation
+    instructions for 'arcgisbinding' can be found at
+    <https://developers.arcgis.com/r-bridge/installation/>.
+License: Apache License (>= 2)
+URL: https://github.com/R-ArcGIS/arcgisutils,
+        https://developers.arcgis.com/r-bridge/api-reference/arcgisutils/
+BugReports: https://github.com/R-ArcGIS/arcgisutils/issues
+Depends: R (>= 4.2)
+Imports: cli, httr2 (>= 1.0.5), R6, RcppSimdJson, rlang, S7, sf, utils,
+        yyjsonr, lifecycle
+Suggests: arcgisbinding, collapse (>= 2.0.0), data.table, jsonify,
+        testthat (>= 3.0.0), vctrs, curl, shinyOAuth
+Config/rextendr/version: 0.4.2
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en
+RoxygenNote: 7.3.3
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.67, xz
+NeedsCompilation: yes
+Packaged: 2026-07-10 18:46:24 UTC; josiahparry
+Author: Josiah Parry [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9910-865X>),
+  Kenneth Vernon [ctb] (ORCID: <https://orcid.org/0000-0003-0098-5092>),
+  Martha Bass [ctb] (ORCID: <https://orcid.org/0009-0004-0268-5426>),
+  Eli Pousson [ctb] (ORCID: <https://orcid.org/0000-0001-8280-1706>),
+  Ryan Zomorrodi [ctb] (ORCID: <https://orcid.org/0009-0003-6417-5985>)
+Maintainer: Josiah Parry <josiah.parry@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-10 23:20:08 UTC

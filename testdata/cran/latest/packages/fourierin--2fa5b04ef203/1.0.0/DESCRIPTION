@@ -1,0 +1,32 @@
+Package: fourierin
+Type: Package
+Title: Computes Numeric Fourier Integrals
+Version: 1.0.0
+Date: 2026-06-27
+Authors@R: 
+    person(
+        given = "Guillermo",
+        family = "Basulto-Elias",
+        role = c("aut", "cre"),
+        email = "guillermobasulto@gmail.com",
+        comment = c(ORCID = "0000-0002-5205-2190")
+    )
+Description: Computes Fourier integrals of functions of one and two variables using the Fast Fourier transform. The Fourier transforms must be evaluated on a regular grid for fast evaluation.
+License: MIT + file LICENSE
+Imports: Rcpp (>= 1.0.1)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: MASS, knitr, rmarkdown, dplyr, tidyr, purrr, ggplot2,
+        lattice, rbenchmark, testthat (>= 3.1.0), covr, spelling
+URL: https://github.com/gbasulto/fourierin
+BugReports: https://github.com/gbasulto/fourierin/issues
+VignetteBuilder: knitr, rmarkdown
+Encoding: UTF-8
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-27 18:53:10 UTC; basulto
+Author: Guillermo Basulto-Elias [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5205-2190>)
+Maintainer: Guillermo Basulto-Elias <guillermobasulto@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-27 19:20:02 UTC

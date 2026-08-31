@@ -1,0 +1,37 @@
+Package: ISPYARDSWinProbabilityGSDesign
+Type: Package
+Title: Trial Design in Respiratory Disease Based on the Win Probability
+Version: 0.1.0
+Authors@R: c(person("Andrew G", "Chapple", role = c("aut","cre"),
+                     email="a.chapple@qlhc.org"),
+                     person("Andrew", "Chapple", role = c("ctb"),
+                      email = "andrewchapple21@gmail.com"),
+                      person("Peter", "Norwood", role = c("ctb"),
+                      email = "p.norwood@qlhc.org"),
+                      person("Martin", "Eklund", role = c("ctb"),
+                      email = "martin.eklund@ki.se"),
+                       person("Derek", "Russell", role = c("ctb"),
+                      email = "dwrussell@uabmc.edu"),
+                             person("Phil", "Beineke", role = c("ctb"),
+                      email = "p.beineke@qlhc.org"),
+                      person("Quantum Leap Healthcare Collaborative", role=c("ctb","cph"))
+                      )
+Description: Provides analysis results and trial simulation functions for the I-SPY Acute Respiratory Disease Syndrome trial based on composite ranked outcomes. The composite ranked outcome is a hierarchical outcome where trial participants are ranked first by 28 day mortality, then ventilator days, then by advanced respiratory support days. A Bayesian win probability approach is used for analysis. Trial design options include group sequential looks for safety, superiority, futility, and adjustment of randomization probabilities. 
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: DFBA
+NeedsCompilation: no
+Packaged: 2025-09-10 21:05:33 UTC; a.chapple
+Author: Andrew G Chapple [aut, cre],
+  Andrew Chapple [ctb],
+  Peter Norwood [ctb],
+  Martin Eklund [ctb],
+  Derek Russell [ctb],
+  Phil Beineke [ctb],
+  Quantum Leap Healthcare Collaborative [ctb, cph]
+Maintainer: Andrew G Chapple <a.chapple@qlhc.org>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-09-15 09:10:25 UTC

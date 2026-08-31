@@ -1,0 +1,59 @@
+Package: ValidationExplorer
+Title: Simulation-Based Tools for Bioacoustic Study Design
+Version: 0.1.2
+Authors@R: c(
+    person(
+      "Jacob", "Oram", 
+      email = "j.oram.stats@gmail.com", 
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0009-0001-8405-529X")
+    ),
+    person(
+      "Katharine", "Banner",
+      email = "katharine.banner@montana.edu",
+      role = "aut",
+      comment = c(ORCID = "0000-0002-7103-0042")
+    ),
+    person(
+      "Christian", "Stratton",
+      role = "aut",
+      comment = c(ORCID = "0000-0001-8051-2185")
+    ),
+    person(
+      "Kathryn", "Irvine",
+      role = "aut",
+      comment = c(ORCID = "0000-0002-6426-940X")
+    ))
+Description: Many bioacoustic data workflows rely on manual review (i.e., 
+    validation) of a subset of call files to provide information to statistical
+    models that account for misclassification by automated algorithms.
+    Because manual review can be prohibitively expensive, simulation can be a 
+    valuable tool to aid the design of studies that use validation. This package 
+    provides user-friendly functions to reduce the programming burden of 
+    simulation studies that compare validation sampling designs. Simulations 
+    assume the count-detection model, which is a realistic model for bioacoustic 
+    data, especially for bats. For more information, see Oram et al. (2025) 
+    <doi:10.1214/25-AOAS2096>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: nimble, R (>= 4.1.0)
+Imports: coda, dplyr, ggplot2, magrittr, purrr, rlang, rstan, stringr,
+        tibble, tidyr, viridis
+LazyData: true
+Suggests: testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Config/Needs/website: rmarkdown
+URL: https://j-oram.github.io/ValidationExplorer/
+BugReports: https://github.com/j-oram/ValidationExplorer/issues
+NeedsCompilation: no
+Packaged: 2026-08-25 15:56:52 UTC; jacoboram
+Author: Jacob Oram [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0001-8405-529X>),
+  Katharine Banner [aut] (ORCID: <https://orcid.org/0000-0002-7103-0042>),
+  Christian Stratton [aut] (ORCID:
+    <https://orcid.org/0000-0001-8051-2185>),
+  Kathryn Irvine [aut] (ORCID: <https://orcid.org/0000-0002-6426-940X>)
+Maintainer: Jacob Oram <j.oram.stats@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 21:10:26 UTC

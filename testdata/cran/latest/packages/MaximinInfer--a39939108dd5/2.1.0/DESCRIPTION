@@ -1,0 +1,19 @@
+Package: MaximinInfer
+Type: Package
+Title: Inference for Maximin Effects in High-Dimensional Settings
+Version: 2.1.0
+Authors@R: c(person(given = "Zhenyu", family = "Wang", role = c("aut", "cre"), email = "zw425@stat.rutgers.edu"), person(given = "Zijian", family = "Guo", role = "aut"))
+Description: Implementation of the sampling and aggregation method for the covariate shift maximin effect, which was proposed in <doi:10.48550/arXiv.2011.07568>. It constructs the confidence interval for any linear combination of the high-dimensional maximin effect.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown
+Imports: MASS, stats, CVXR (>= 1.8), glmnet, intervals, SIHR
+Depends: R (>= 4.3.0)
+NeedsCompilation: no
+Packaged: 2026-03-21 21:36:48 UTC; zw425
+Repository: CRAN
+Date/Publication: 2026-03-21 21:50:02 UTC
+Author: Zhenyu Wang [aut, cre],
+  Zijian Guo [aut]
+Maintainer: Zhenyu Wang <zw425@stat.rutgers.edu>

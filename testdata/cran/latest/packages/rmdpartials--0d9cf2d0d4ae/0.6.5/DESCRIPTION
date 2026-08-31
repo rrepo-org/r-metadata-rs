@@ -1,0 +1,36 @@
+Package: rmdpartials
+Title: Partial 'rmarkdown' Documents to Prettify your Reports
+Description: 
+		Use 'rmarkdown' partials, also know as child documents in
+		'knitr', so you can make components for HTML, PDF, and Word documents. 
+		The package provides various helper functions to make certain functions easier. 
+		You may want to use this package, if you want to flexibly summarise objects 
+		using a combination of figures, tables, text, and HTML widgets. 
+		Unlike HTML widgets, the output is Markdown and can hence be turn into other
+		output formats than HTML. Currently does not play well with 'rmarkdown' notebooks,
+		not tested with Quarto.
+Version: 0.6.5
+Authors@R: c(
+  person("Ruben", "Arslan", email = "ruben.arslan@gmail.com", role = c("aut", "cre")),
+  person("Gjalt-Jorn", "Peters", email = "gjalt-jorn@userfriendlyscience.com",
+                    role = c("aut", "ctb"))
+  )
+Depends: R (>= 3.0.1)
+Language: en-GB
+URL: https://github.com/rubenarslan/rmdpartials,
+        https://rubenarslan.github.io/rmdpartials/
+BugReports: https://github.com/rubenarslan/rmdpartials/issues
+License: MIT + file LICENSE
+Imports: stats, digest, utils, knitr, rlang
+Suggests: grDevices, graphics, testthat, rmarkdown, covr, dplyr, DT,
+        ggplot2, pkgdown, spelling
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-22 15:47:50 UTC; rubenarslan
+Author: Ruben Arslan [aut, cre],
+  Gjalt-Jorn Peters [aut, ctb]
+Maintainer: Ruben Arslan <ruben.arslan@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-22 17:10:02 UTC

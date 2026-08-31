@@ -1,0 +1,27 @@
+Package: ofhsyn
+Type: Package
+Title: Synthetic Our Future Health Data Generator
+Version: 0.1.3
+Authors@R: person(given = "Hannah", family = "Nicholls", role = c("aut", "cre"), email = "hlnichollsdev@outlook.com")
+Author: Hannah Nicholls [aut, cre]
+Maintainer: Hannah Nicholls <hlnichollsdev@outlook.com>
+Description: Generates synthetic Our Future Health cohort datasets for method development,
+    including participant, questionnaire, clinic measurements, outpatient,
+    inpatient, emergency, mortality, primary care medication, and geography
+    outputs. Supports reproducible generation with configurable cohort size and
+    user-defined International Classification of Diseases, Tenth Revision
+    (ICD-10), Office of Population Censuses and Surveys Classification of
+    Interventions and Procedures, version 4 (OPCS-4), and British National
+    Formulary (BNF) code pools.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2.0)
+Imports: methods, utils, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-26 07:47:57 UTC; btx925
+Repository: CRAN
+Date/Publication: 2026-08-26 21:10:02 UTC

@@ -1,0 +1,43 @@
+Package: SVG
+Type: Package
+Title: Spatially Variable Genes Detection Methods for Spatial
+        Transcriptomics
+Version: 1.0.0
+Authors@R: c(
+    person("Zaoqu", "Liu", email = "liuzaoqu@163.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0452-742X")),
+    person("SVGbench", "Contributors", role = "ctb",
+           comment = "Original method implementations"))
+Description: A unified framework for detecting spatially variable genes (SVGs) 
+    in spatial transcriptomics data. This package integrates multiple 
+    state-of-the-art SVG detection methods including 'MERINGUE' (Moran's I based 
+    spatial autocorrelation), 'Giotto' binSpect (binary spatial enrichment test), 
+    'SPARK-X' (non-parametric kernel-based test), and 'nnSVG' (nearest-neighbor 
+    Gaussian processes). Each method is implemented with optimized performance 
+    through vectorization, parallelization, and 'C++' acceleration where applicable.
+    Methods are described in Miller et al. (2021) <doi:10.1101/gr.271288.120>,
+    Dries et al. (2021) <doi:10.1186/s13059-021-02286-2>, 
+    Zhu et al. (2021) <doi:10.1186/s13059-021-02404-0>, and
+    Weber et al. (2023) <doi:10.1038/s41467-023-39748-z>.
+License: MIT + file LICENSE
+URL: https://github.com/Zaoqu-Liu/SVG, https://zaoqu-liu.github.io/SVG/
+BugReports: https://github.com/Zaoqu-Liu/SVG/issues
+Encoding: UTF-8
+LazyData: false
+Depends: R (>= 4.0.0)
+Imports: parallel, stats, utils, methods, MASS, Rcpp (>= 1.0.0)
+Suggests: BRISC, geometry, RANN, CompQuadForm, BiocParallel,
+        SpatialExperiment, SingleCellExperiment, SummarizedExperiment,
+        spatstat.geom, spatstat.explore, testthat (>= 3.0.0), knitr,
+        rmarkdown, covr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-01-28 03:40:06 UTC; liuzaoqu
+Author: Zaoqu Liu [aut, cre] (ORCID: <https://orcid.org/0000-0002-0452-742X>),
+  SVGbench Contributors [ctb] (Original method implementations)
+Maintainer: Zaoqu Liu <liuzaoqu@163.com>
+Repository: CRAN
+Date/Publication: 2026-02-01 07:20:07 UTC

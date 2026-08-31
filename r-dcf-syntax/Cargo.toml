@@ -1,0 +1,18 @@
+[package]
+name = "r-dcf-syntax"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Lossless syntax trees for R DCF metadata"
+
+[dependencies]
+rowan.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+static_assertions.workspace = true
+
+[lints]
+workspace = true

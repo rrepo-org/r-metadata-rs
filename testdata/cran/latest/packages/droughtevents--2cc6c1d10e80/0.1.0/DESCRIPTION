@@ -1,0 +1,33 @@
+Package: droughtevents
+Title: Identify and Characterize Drought Events from Drought Index Time
+        Series
+Version: 0.1.0
+Authors@R: 
+    person("Antonio Jesus", "Perez-Luque", , "ajpelu@gmail.com", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0002-1747-0469"))
+Description: Detects, describes, and analyzes drought events from time series
+    of drought indices, such as the Standardized Precipitation-Evapotranspiration
+    Index (SPEI). Identifies drought episodes based on threshold values and calculates 
+    their duration, intensity, severity, and peak month. Includes utilities for summarizing
+    and visualizing drought dynamics over time. The Standardized Precipitation-Evapotranspiration
+    Index is described in Vicente-Serrano et al. (2010) 
+    <doi:10.1175/2009JCLI2909.1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/ajpelu/droughtevents,
+        https://ajpelu.github.io/droughtevents/
+BugReports: https://github.com/ajpelu/droughtevents/issues
+Imports: cli, data.table, dplyr, ggplot2, lubridate, rlang, scales
+Depends: R (>= 4.1)
+LazyData: true
+Config/roxygen2/version: 8.0.0
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-25 10:18:05 UTC; ajpelu
+Author: Antonio Jesus Perez-Luque [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-1747-0469>)
+Maintainer: Antonio Jesus Perez-Luque <ajpelu@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 20:00:06 UTC

@@ -1,0 +1,45 @@
+Package: mitey
+Title: Serial Interval and Case Reproduction Number Estimation
+Version: 0.2.0
+Authors@R: 
+    person(given = "Kylie", 
+           family = "Ainslie", 
+           role = c("aut", "cre", "cph"), 
+           email = "ainslie.kylie@gmail.com",
+           comment = c(ORCID = "0000-0001-5419-7206"))
+Description: Provides methods to estimate serial intervals and time-varying case
+  reproduction numbers from infectious disease outbreak data. Serial intervals measure
+  the time between symptom onset in linked transmission pairs, while case reproduction 
+  numbers quantify how many secondary cases each infected individual generates 
+  over time. These parameters are essential for understanding transmission 
+  dynamics, evaluating control measures, and informing public health responses. 
+  The package implements the maximum likelihood framework from Vink et al. (2014) 
+  <doi:10.1093/aje/kwu209> for serial interval estimation and the retrospective 
+  method from Wallinga & Lipsitch (2007) <doi:10.1098/rspb.2006.3754> for 
+  reproduction number estimation. Originally developed for scabies transmission 
+  analysis but applicable to other infectious diseases including influenza, 
+  COVID-19, and emerging pathogens. Designed for epidemiologists, public health 
+  researchers, and infectious disease modelers working with outbreak surveillance 
+  data.
+Date: 2025-08-16
+License: EUPL-1.2
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: fdrtool, ggplot2, stats
+URL: https://github.com/kylieainslie/mitey,
+        https://kylieainslie.github.io/mitey/
+BugReports: https://github.com/kylieainslie/mitey/issues
+Suggests: brms, broom, cowplot, dplyr, EpiLPS, flextable, forcats,
+        ftExtra, ggridges, gt, here, ISOweek, knitr, lubridate,
+        officer, openxlsx, outbreaks, purrr, rmarkdown, stringr,
+        testthat (>= 3.0.0), tidybayes, tidyr, viridis, zoo
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2025-08-27 15:22:05 UTC; kylieainslie
+Author: Kylie Ainslie [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5419-7206>)
+Maintainer: Kylie Ainslie <ainslie.kylie@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-02 05:40:18 UTC

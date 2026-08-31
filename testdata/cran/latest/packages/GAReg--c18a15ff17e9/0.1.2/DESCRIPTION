@@ -1,0 +1,46 @@
+Package: GAReg
+Type: Package
+Title: Genetic Algorithms in Regression
+Version: 0.1.2
+Authors@R: c(
+    person(
+    given = "Mo",
+    family = "Li",
+    role = c("aut", "cre"),
+    email = "mo.li@louisiana.edu"),
+    person(
+    given = "QiQi", 
+    family = "Lu", 
+    role = "aut", 
+    email = "qlu2@vcu.edu"),
+    person(
+    given = "Robert", 
+    family = "Lund", 
+    role = "aut", 
+    email = "rolund@ucsc.edu"),
+    person(
+    given = "Xueheng", 
+    family = "Shi", 
+    role = "aut", 
+    email = "shixueheng@gmail.com")
+  )
+Description: Provides a genetic algorithm framework for regression problems requiring discrete optimization over model spaces with unknown or varying dimension, where gradient-based methods and exhaustive enumeration are impractical. Uses a compact chromosome representation for tasks including spline knot placement and best-subset variable selection, with constraint-preserving crossover and mutation, exact uniform initialization under spacing constraints, steady-state replacement, and optional island-model parallelization from Lu, Lund, and Lee (2010, <doi:10.1214/09-AOAS289>). The computation is built on the 'GA' engine of Scrucca (2017, <doi:10.32614/RJ-2017-008>) and 'changepointGA' engine from Li and Lu (2024, <doi:10.48550/arXiv.2410.15571>). In challenging high-dimensional settings, 'GAReg' enables efficient search and delivers near-optimal solutions when alternative algorithms are not well-justified.
+License: Apache License (== 2.0)
+RoxygenNote: 7.3.3
+Depends: R (>= 4.3.0)
+Imports: stats, splines, utils, methods, changepointGA, GA
+URL: https://github.com/mli171/GAReg
+BugReports: https://github.com/mli171/GAReg/issues
+Suggests: MASS, knitr, rmarkdown
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-04-27 04:48:47 UTC; mli171
+Author: Mo Li [aut, cre],
+  QiQi Lu [aut],
+  Robert Lund [aut],
+  Xueheng Shi [aut]
+Maintainer: Mo Li <mo.li@louisiana.edu>
+Repository: CRAN
+Date/Publication: 2026-04-27 05:10:23 UTC

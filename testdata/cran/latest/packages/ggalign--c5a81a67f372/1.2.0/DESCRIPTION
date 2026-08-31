@@ -1,0 +1,87 @@
+Package: ggalign
+Title: A 'ggplot2' Extension for Composable Visualization
+Version: 1.2.0
+Authors@R: c(
+        person("Yun", "Peng", , "yunyunp96@163.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-2801-3332")),
+        person("Shixiang", "Wang", , "w_shixiang@163.com", role = "aut", comment = c(ORCID = "0000-0001-9855-7357")),
+        person("Guangchuang", "Yu", email = "guangchuangyu@gmail.com", role = "ths", comment = c(ORCID = "0000-0002-6485-8781"))
+    )
+Description: A 'ggplot2' extension providing an integrative framework for
+    composable visualization, enabling the creation of complex multi-plot
+    layouts such as insets, circular arrangements, and multi-panel compositions.
+    Built on the grammar of graphics, it offers tools to align, stack, and nest
+    plots, simplifying the construction of richly annotated figures for
+    high-dimensional data contexts—such as genomics, transcriptomics, and
+    microbiome studies—by making it easy to link related plots, overlay
+    clustering results, or highlight shared patterns.
+License: MIT + file LICENSE
+URL: https://github.com/Yunuuuu/ggalign,
+        https://yunuuuu.github.io/ggalign/
+BugReports: https://github.com/Yunuuuu/ggalign/issues
+Depends: ggplot2 (>= 4.0.0)
+Imports: S7, vctrs (>= 0.5.0), rlang, cli, grDevices, grid, gtable,
+        scales, methods, stats, utils, lifecycle
+Suggests: gridGraphics, ragg, magick, testthat (>= 3.0.0), vdiffr (>=
+        1.0.6)
+Enhances: patchwork, ggrastr, maftools
+ByteCompile: true
+Config/Needs/check: R.utils, patchwork, ape, lattice, ComplexHeatmap,
+        pheatmap
+Config/Needs/website: patchwork, bench, pheatmap, gplots,
+        ComplexHeatmap
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Language: en-GB
+Collate: 'active.R' 'alignpatch-.R' 'ggplot-theme.R'
+        'alignpatch-theme.R' 'utils-ggplot.R' 'alignpatch-tags.R'
+        'alignpatch-title.R' 'alignpatch-area.R'
+        'import-standalone-pkg.R' 'utils-grid.R' 'alignpatch-design.R'
+        'alignpatch-alignpatches.R' 'alignpatch-ggplot2.R'
+        'alignpatch-build.R' 'alignpatch-free-align.R'
+        'alignpatch-free-border.R' 'alignpatch-free-guide.R'
+        'alignpatch-free-lab.R' 'alignpatch-free-space.R'
+        'alignpatch-free-vp.R' 'alignpatch-grob.R'
+        'alignpatch-guides.R' 'alignpatch-inset.R'
+        'alignpatch-patchwork.R' 'alignpatch-update.R'
+        'alignpatch-wrap.R' 'attributes.R' 'craftsman.R'
+        'craft-align-.R' 'craft-align-hclust.R'
+        'craft-align-dendrogram.R' 'craft-align-group.R'
+        'craft-align-kmeans.R' 'craft-align-order.R'
+        'craft-align-order2.R' 'craft-align-phylo.R' 'craft-cross-.R'
+        'craft-cross-link.R' 'craft-cross-mark.R' 'craft-cross-none.R'
+        'scheme-.R' 'craftbox.R' 'domain.R' 'fortify-data-frame-.R'
+        'fortify-data-frame-dendrogram.R' 'fortify-data-frame-phylo.R'
+        'fortify-matrix-.R' 'fortify-matrix-list.R'
+        'fortify-matrix-maftools.R' 'fortify-matrix-matrix.R'
+        'genomic-helper.R' 'ggalign-package.R' 'ggalign.R' 'ggcross.R'
+        'ggfree.R' 'ggmark.R' 'ggplot-coord-circle.R'
+        'ggplot-facet-sector.R' 'ggplot-geom-draw.R'
+        'ggplot-geom-gshape.R' 'ggplot-geom-magick.R'
+        'ggplot-geom-pie.R' 'ggplot-geom-rect3d.R'
+        'ggplot-geom-subrect.R' 'ggplot-helper.R' 'grid-grob-magick.R'
+        'import-standalone-assert.R' 'import-standalone-obj-type.R'
+        'import-standalone-purrr.R' 'import-standalone-tibble.R'
+        'layer-order.R' 'layout-.R' 'layout-align.R'
+        'layout-quad-scope.R' 'layout-operator.R' 'layout-chain-.R'
+        'layout-chain-circle-.R' 'layout-chain-circle-build.R'
+        'layout-chain-circle-genomic.R' 'layout-chain-circle-switch.R'
+        'layout-chain-stack-.R' 'layout-chain-stack-build.R'
+        'layout-chain-stack-composer.R' 'layout-chain-stack-cross.R'
+        'layout-chain-stack-genomic.R' 'layout-chain-stack-switch.R'
+        'layout-domain.R' 'layout-heatmap-.R' 'layout-heatmap-build.R'
+        'layout-heatmap-oncoplot.R' 'layout-quad-.R'
+        'layout-quad-build.R' 'layout-quad-operator.R'
+        'layout-quad-switch.R' 'layout-quad-upset.R' 'link.R' 'mark.R'
+        'object-name.R' 'pair-links.R' 'plot-ideogram.R'
+        'raster-magick.R' 'rasterise.R' 'scheme-align.R'
+        'scheme-data.R' 'scheme-theme.R' 'tune.R' 'utils-assert.R'
+        'utils-rd.R' 'utils.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2025-10-18 15:32:10 UTC; yun
+Author: Yun Peng [aut, cre] (ORCID: <https://orcid.org/0000-0003-2801-3332>),
+  Shixiang Wang [aut] (ORCID: <https://orcid.org/0000-0001-9855-7357>),
+  Guangchuang Yu [ths] (ORCID: <https://orcid.org/0000-0002-6485-8781>)
+Maintainer: Yun Peng <yunyunp96@163.com>
+Repository: CRAN
+Date/Publication: 2025-10-18 15:50:02 UTC

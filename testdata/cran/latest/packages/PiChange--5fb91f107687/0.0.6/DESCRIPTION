@@ -1,0 +1,33 @@
+Package: PiChange
+Title: Pi-Change: Change Point Detection with Prior-Informed Penalties
+Version: 0.0.6
+Authors@R: c(
+    person("Jonathon", "Jacobs", role = c("aut", "cph"),
+           email = "jacobsjr@vcu.edu"),
+    person("Shanshan", "Chen", role = c("aut", "cre", "cph"),
+           email = "schen3@vcu.edu")
+  )
+Description: PI-Change is a prior-informed multiple change point detection
+    method that incorporates prespecified plausible change point locations
+    through a time-varying penalized likelihood. The method extends multiple
+    change point detection beyond purely data-driven segmentation by allowing
+    external knowledge about plausible change point locations to enter the
+    objective function; see Jacobs and Chen (2026)
+    <doi:10.48550/arXiv.2605.01003>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: grid, ggplot2, Rcpp (>= 1.0.10), rlang, stats
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-17 20:13:09 UTC; schen3
+Author: Jonathon Jacobs [aut, cph],
+  Shanshan Chen [aut, cre, cph]
+Maintainer: Shanshan Chen <schen3@vcu.edu>
+Repository: CRAN
+Date/Publication: 2026-07-28 15:00:02 UTC

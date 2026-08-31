@@ -1,0 +1,63 @@
+Package: opencltools
+Type: Package
+Title: 'OpenCL' Tools for R Package Developers
+Version: 0.8.3
+Date: 2026-07-31
+Authors@R: c(
+    person("Kjell", "Nygren", role = c("aut", "cre"),
+           email = "kjell.a.nygren@gmail.com"),
+    person("The R Core Team", role = c("ctb", "cph"),
+           comment = "R Mathlib sources, R stats modeling code, and derived/adapted routines"),
+    person("The R Foundation", role = "cph",
+           comment = "Portions of R Mathlib and R source code"),
+    person("Ross", "Ihaka", role = c("ctb", "cph"),
+           comment = "R Mathlib and original R modeling infrastructure"),
+    person("Robert", "Gentleman", role = c("ctb", "cph"),
+           comment = "Portions of R Mathlib"),
+    person("Simon", "Davies", role = "ctb",
+           comment = "Original R glm implementation"),
+    person("Morten", "Welinder", role = c("ctb", "cph"),
+           comment = "Portions of R Mathlib"),
+    person("Martin", "Maechler", role = "ctb",
+           comment = "Portions of R Mathlib")
+    )
+Description: Runtime 'OpenCL' support for R package developers: probe hardware
+    and drivers, load and concatenate kernel sources, and manage
+    dependency-annotated '.cl' libraries, so packages like 'nmathopencl' and
+    other ported libraries can offer GPU acceleration without each re-implementing
+    and related helpers. Vignettes illustrate integration with suggested package
+    'nmathopencl' and with downstream applications such as 'glmbayes';
+    production kernels for those applications ship in those packages rather
+    than here.
+License: GPL-2
+URL: https://github.com/knygren/opencltools,
+        https://knygren.r-universe.dev/opencltools
+BugReports: https://github.com/knygren/opencltools/issues
+Imports: stats, Rcpp (>= 1.1.1), RcppParallel, Rdpack (>= 0.11-0),
+        jsonlite
+RdMacros: Rdpack
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+Depends: R (>= 3.5.0)
+Suggests: nmathopencl, testthat (>= 3.0.0), spelling, knitr, rmarkdown
+VignetteBuilder: knitr
+SystemRequirements: Optional 'OpenCL' support. If available, GPU
+        acceleration will be used; otherwise, computation runs on CPU.
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-08-01 00:03:58 UTC; kjell
+Author: Kjell Nygren [aut, cre],
+  The R Core Team [ctb, cph] (R Mathlib sources, R stats modeling code,
+    and derived/adapted routines),
+  The R Foundation [cph] (Portions of R Mathlib and R source code),
+  Ross Ihaka [ctb, cph] (R Mathlib and original R modeling
+    infrastructure),
+  Robert Gentleman [ctb, cph] (Portions of R Mathlib),
+  Simon Davies [ctb] (Original R glm implementation),
+  Morten Welinder [ctb, cph] (Portions of R Mathlib),
+  Martin Maechler [ctb] (Portions of R Mathlib)
+Maintainer: Kjell Nygren <kjell.a.nygren@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 18:00:07 UTC

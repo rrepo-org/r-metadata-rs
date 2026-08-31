@@ -1,0 +1,66 @@
+Package: BRCore
+Title: A Unified Framework for Identification and Ecological
+        Interpretation of Microbial Data from Bioenergy Research
+        Centers
+Version: 2.0.7
+Authors@R: c(
+    person("Bolívar", "Aponte Rolón",
+           email = "bolaponte@pm.me", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2544-4551")),
+    person("Gian Maria Niccolò", "Benucci",
+           email = "benucci@msu.edu",
+           role = "aut", 
+           comment = c(ORCID = "0000-0003-1589-947X", "Co-maintainer")),
+    person("Brandon", "Kristy", 
+           role = "aut", 
+           comment = c(ORCID = "0000-0003-2421-7143")),
+    person("Ashley", "Shade", 
+           role = "aut", 
+           comment = c(ORCID = "0000-0002-7189-3067")),
+    person("Nejc", "Stopnisek", 
+           role = "aut", 
+           comment = c(ORCID = "0000-0002-1532-6826")),
+    person("Adina", "Howe", 
+           role = "aut", 
+           comment = c(ORCID = "0000-0002-7705-343X")),
+    person("Center for Advanced Bioenergy and Bioproducts Innovation", 
+           role = c("cph", "fnd")),
+    person("Great Lakes Bioenergy Research Center", 
+           role = c("cph", "fnd"))
+  )
+Description: A unified framework for identification and ecological interpretation of core microbiomes across time and space, enhancing robustness and reproducibility in microbiome data analysis. 'BRCore' implements the workflow proposed by Shade and Stopnisek (2019) and incorporates additional rarefaction steps. The proposed workflow aims to identify persistent microbiomes using abundance-occupancy distributions and neutral community model fitting. For more details on abundance-occupancy distributions see Shade A, Stopnisek N (2019) <doi:10.1016/j.mib.2019.09.008>, for neutral models, see Sloan et al. (2006) <doi:10.1111/j.1462-2920.2005.00956.x> and Burns et al. (2015) <doi:10.1038/ismej.2015.142>.
+Depends: R (>= 4.4)
+biocViews:
+Imports: cli (>= 3.6.5), dplyr (>= 1.1.4), ggplot2 (>= 4.0.1), ggpubr
+        (>= 0.6.2), ggrepel (>= 0.9.6), Hmisc (>= 5.2.4), magrittr (>=
+        2.0.4), minpack.lm (>= 1.2.4), phyloseq, rlang (>= 1.1.6),
+        scales (>= 1.4.0), stats4, tibble (>= 3.3.0), tidyr (>= 1.3.1),
+        vegan (>= 2.7.2)
+Suggests: knitr (>= 1.50), rmarkdown (>= 2.30), testthat (>= 3.2.3),
+        tidyverse (>= 2.0.0), viridis (>= 0.6.5)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+LazyData: true
+VignetteBuilder: knitr
+URL: https://github.com/germs-lab/BRCore,
+        https://www.germslab.org/BRCore/
+BugReports: https://github.com/germs-lab/BRCore/issues
+NeedsCompilation: no
+Packaged: 2026-05-19 23:26:14 UTC; baponte
+Author: Bolívar Aponte Rolón [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2544-4551>),
+  Gian Maria Niccolò Benucci [aut] (ORCID:
+    <https://orcid.org/0000-0003-1589-947X>, Co-maintainer),
+  Brandon Kristy [aut] (ORCID: <https://orcid.org/0000-0003-2421-7143>),
+  Ashley Shade [aut] (ORCID: <https://orcid.org/0000-0002-7189-3067>),
+  Nejc Stopnisek [aut] (ORCID: <https://orcid.org/0000-0002-1532-6826>),
+  Adina Howe [aut] (ORCID: <https://orcid.org/0000-0002-7705-343X>),
+  Center for Advanced Bioenergy and Bioproducts Innovation [cph, fnd],
+  Great Lakes Bioenergy Research Center [cph, fnd]
+Maintainer: Bolívar Aponte Rolón <bolaponte@pm.me>
+Repository: CRAN
+Date/Publication: 2026-05-20 06:50:08 UTC

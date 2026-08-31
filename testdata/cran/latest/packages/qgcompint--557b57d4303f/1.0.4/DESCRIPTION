@@ -1,0 +1,35 @@
+Package: qgcompint
+Title: Quantile G-Computation Extensions for Effect Measure
+        Modification
+Version: 1.0.4
+Date: 2026-07-20
+Authors@R: 
+    person(given = "Alexander",
+           family = "Keil",
+           role = c("aut", "cre", "cph"),
+           email = "alex.keil@nih.gov")
+Author: Alexander Keil [aut, cre, cph]
+Maintainer: Alexander Keil <alex.keil@nih.gov>
+URL: https://github.com/alexpkeil1/qgcompint/
+BugReports: https://github.com/alexpkeil1/qgcompint/issues
+Description: G-computation for a set of time-fixed exposures
+    with quantile-based basis functions, possibly under linearity and
+    homogeneity assumptions. Effect measure modification in this method is a way
+    to assess how the effect of the mixture varies by a binary, categorical or continuous variable.  
+    Reference: Alexander P. Keil, Jessie P.
+    Buckley, Katie M. OBrien, Kelly K. Ferguson, Shanshan Zhao, and
+    Alexandra J. White (2019) A quantile-based g-computation approach to
+    addressing the effects of exposure mixtures; <doi:10.1289/EHP5838>.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: qgcomp, arm, survival, future, future.apply, ggplot2,
+        gridExtra, rootSolve, numDeriv, MASS
+Suggests: knitr, markdown, pak
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-20 20:59:59 UTC; keilap
+Repository: CRAN
+Date/Publication: 2026-07-20 21:10:02 UTC

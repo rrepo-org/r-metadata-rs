@@ -1,0 +1,18 @@
+Encoding: UTF-8
+Package: CBAModel
+Type: Package
+Title: Stochastic 3D Structure Model for Binder-Conductive Additive
+        Phase
+Version: 0.0.1.2
+License: GPL (>= 3.0)
+Description: Simulation of the stochastic 3D structure model for the nanoporous binder-conductive additive phase in battery cathodes introduced in P. Gräfensteiner, M. Osenberg, A. Hilger, N. Bohn, J. R. Binder, I. Manke, V. Schmidt, M. Neumann (2024) <doi:10.48550/arXiv.2409.11080>. The model is developed for a binder-conductive additive phase of consisting of carbon black, polyvinylidene difluoride binder and graphite particles. For its stochastic 3D modeling, a three-step procedure based on methods from stochastic geometry is used. First, the graphite particles are described by a Boolean model with ellipsoidal grains. Second, the mixture of carbon black and binder is modeled by an excursion set of a Gaussian random field in the complement of the graphite particles. Third, large pore regions within the mixture of carbon black and binder are described by a Boolean model with spherical grains.  
+Authors@R: c(person("Matthias", "Neumann", email = "neumann@tugraz.at", role = c("aut", "cre")), person("Phillip", "Gräfensteiner", email = "phillip.graefensteiner@uni-ulm.de", role = "aut"))
+RoxygenNote: 7.3.2
+Imports: pracma
+NeedsCompilation: no
+Packaged: 2025-05-07 10:09:42 UTC; mattneum
+Author: Matthias Neumann [aut, cre],
+  Phillip Gräfensteiner [aut]
+Maintainer: Matthias Neumann <neumann@tugraz.at>
+Repository: CRAN
+Date/Publication: 2025-05-07 11:30:06 UTC

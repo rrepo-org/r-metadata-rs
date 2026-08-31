@@ -1,0 +1,40 @@
+Package: BOLDconnectR
+Title: Retrieve, Transform and Analyze the Barcode of Life Data Systems
+        Data
+Version: 1.0.2
+Authors@R: c(
+    person("Sameer", "Padhye", , "spadhye@uoguelph.ca", role = c("aut", "cre")),
+    person("Liliana", "Ballesteros-Mejia", , "cballest@uoguelph.ca", role = "aut"),
+    person("Timothy", "Agda", , "tagda@uoguelph.ca", role = "aut"),
+    person("Jireh", "Agda", , "agdaj@uoguelph.ca", role = "aut"),
+    person("Sujeevan", "Ratnasingham", , "sratnasi@uoguelph.ca", role = "aut")
+  )
+Maintainer: Sameer Padhye <spadhye@uoguelph.ca>
+Description: Facilitates retrieval, transformation and analysis of the data
+    from the Barcode of Life Data Systems (BOLD) database <https://boldsystems.org/>. 
+    This package allows both public and private user data to be easily downloaded into the R
+    environment using a variety of inputs such as: IDs (processid, sampleid), BINs, dataset codes, 
+    project codes, taxonomy, geography etc. It provides frictionless data conversion  
+    into formats compatible with other R-packages and third-party tools, 
+    as well as functions for sequence alignment & clustering, biodiversity analysis and spatial mapping.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+biocViews:
+Imports: ape (>= 5.5), BAT (>= 2.0), data.table (>= 1.13), dplyr (>=
+        1.0.1), ggplot2 (>= 3.3.2), httr (>= 1.4.2), jsonlite (>= 1.7),
+        maps (>= 3.3), methods, rlang, rnaturalearth, sf (>= 0.9.4),
+        skimr (>= 2.1.2), tidyr (>= 1.1.1), utils, vegan (>= 2.5.7)
+Suggests: Biostrings, BiocManager, DT, msa, muscle, knitr, rmarkdown
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-19 18:14:42 UTC; sameerpadhye
+Author: Sameer Padhye [aut, cre],
+  Liliana Ballesteros-Mejia [aut],
+  Timothy Agda [aut],
+  Jireh Agda [aut],
+  Sujeevan Ratnasingham [aut]
+Repository: CRAN
+Date/Publication: 2026-08-20 00:40:02 UTC

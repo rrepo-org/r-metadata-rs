@@ -1,0 +1,34 @@
+Package: easynem
+Title: Nematode Community Analysis
+Version: 1.0.3
+Authors@R: 
+    person("Wang", "Kunguang", , "whkygl@163.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7384-5002"))
+Description: Provides a built-in Nemaplex database for nematodes, 
+    which can be used to search for various nematodes. 
+    Also supports various nematode community and functional 
+    analyses such as nematode diversity, maturity index, metabolic footprint, 
+    and functional guild. The methods are based on
+     <https://shiny.wur.nl/ninja/>, Bongers, T. (1990)
+     <doi:10.1007/BF00324627>, Ferris, H. (2010)
+     <doi:10.1016/j.ejsobi.2010.01.003>, Wan, B. et al. (2022)
+     <doi:10.1016/j.soilbio.2022.108695>, and Van Den Hoogen, J. et al.
+     (2019) <doi:10.1038/s41586-019-1418-6>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: agricolae, broom, dplyr, DT, ggplot2, ggpubr, ggraph, igraph,
+        methods, multcompView, readr, reshape2, rlang, rstatix, shiny,
+        shinydashboard, stats, Ternary, tibble, tidyr, utils, vegan
+Depends: R (>= 4.1.0)
+LazyData: true
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-10-23 15:20:21 UTC; wkg
+Author: Wang Kunguang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7384-5002>)
+Maintainer: Wang Kunguang <whkygl@163.com>
+Repository: CRAN
+Date/Publication: 2025-10-28 12:30:13 UTC

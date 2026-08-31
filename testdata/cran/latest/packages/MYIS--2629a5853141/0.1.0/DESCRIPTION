@@ -1,0 +1,46 @@
+Package: MYIS
+Type: Package
+Title: 'Moreau-Yosida' Importance Sampling for Statistical Inference
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut"))
+Description: Implements 'Moreau-Yosida' Markov chain Monte Carlo ('MCMC')
+    importance sampling for parameter estimation and Bayesian inference under
+    smooth, non-differentiable, or light-tailed target posterior distributions
+    and arbitrary probability models with complete or censored data. Users supply
+    user-defined probability density functions, optional distribution functions,
+    parameter ranges, and observations subject to complete, right, left, interval,
+    Type-I, Type-II, progressive Type-II, first-failure, or truncation schemes.
+    Constructs 'Moreau-Yosida' envelopes, gradient-based proposals ('MALA',
+    'HMC', or 'RWM'), self-normalized importance weights, batch-means asymptotic
+    variance estimates, and Bayesian marginal quantiles. Methodologies are based
+    on 'Shukla', 'Vats', and 'Chi' (2025) <doi:10.48550/arXiv.2501.02228>,
+    'Pereyra' (2016) <doi:10.1111/sjos.12208>, 'Durmus' and others (2022)
+    <doi:10.1214/22-EJS2027>, 'Chen' and 'Shao' (1999) <doi:10.1214/ss/1009211804>,
+    'Roberts' and 'Rosenthal' (1998) <doi:10.1214/aoap/1028903378>, 'Geweke' (1989)
+    <doi:10.2307/2290062>, 'Hesterberg' (1995) <doi:10.1080/00031305.1995.10476138>,
+    and 'Balakrishnan' and 'Aggarwala' (2000, ISBN:978-0-8176-4001-9).
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-26 18:27:22 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 07:50:12 UTC

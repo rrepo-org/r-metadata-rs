@@ -1,0 +1,39 @@
+Package: interSAE
+Type: Package
+Title: Intersectional Small Area Estimation from Survey and Census Data
+Version: 0.1.0
+Authors@R: person(
+    given = "Leila",
+    family = "Marvian Mashhad",
+    email = "leila.marveian@gmail.com",
+    role = c("aut", "cre")
+    )
+Description: Implements design-aware, margin-constrained estimation of
+    population indicators for geographic areas crossed with demographic
+    subgroups. Complex-survey microdata supply outcomes and association
+    information, while one or more aggregate census tables supply overlapping
+    population margins. A generalized iterative proportional fitting engine
+    reconstructs a coherent latent population table, and an augmented
+    model-assisted estimator produces domain means, proportions, and totals
+    for sampled and unsampled intersections. Tools
+    diagnose non-identification, compute linear-programming sensitivity bounds,
+    propagate sampling and model uncertainty with replicate-weight or
+    multiplier bootstrap procedures, enforce structural zeros, and benchmark
+    estimates to official totals. The framework extends calibration ideas from
+    Deville and Sarndal (1992) <doi:10.1080/01621459.1992.10475217> and small
+    area estimation ideas from Fay and Herriot (1979)
+    <doi:10.1080/01621459.1979.10482505>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: graphics, stats, utils
+Suggests: knitr, lpSolve, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-08-24 16:38:42 UTC; marvian
+Author: Leila Marvian Mashhad [aut, cre]
+Maintainer: Leila Marvian Mashhad <leila.marveian@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 05:20:31 UTC

@@ -1,0 +1,56 @@
+Package: ct
+Type: Package
+Title: Integrated Camera-Trap Data Management and Analysis
+Version: 0.4.0
+Date: 2026-06-20
+Imports: activity (>= 1.3.4), dplyr (>= 1.1.4), camtrapdp, cli (>=
+        3.6.3), Distance (>= 2.0.0), ggplot2 (>= 3.5.2), lubridate,
+        magrittr (>= 2.0.3), methods, overlap (>= 0.3.9), rlang (>=
+        1.1.5), sbd (>= 0.1.0), sf (>= 1.0-19), terra (>= 1.8-29),
+        tibble, tidyr (>= 1.3.1), tidyselect, Rcpp (>= 1.0.14)
+Authors@R: c(
+    person(given = "Stanislas Mahussi", family = "Gandaho", 
+           email = "stangandaho@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0003-4969-1252")
+           ),
+    person(given = "Pablo", family = "Palencia", 
+           email = "palencia.pablo.m@gmail.com", role = c("ctb", "rev"),
+           comment = c(ORCID = "0000-0002-2928-4241")
+           ),
+    person("R Consortium", role = "fnd")
+    )
+Maintainer: Stanislas Mahussi Gandaho <stangandaho@gmail.com>
+Description: An integrated, tidyverse-friendly workflow for camera trap data in
+    wildlife monitoring and ecological research. Reads and edits media metadata,
+    filters independent detections, analyses activity patterns and species
+    diversity, and estimates species density or
+    abundance with several methods, including the random encounter model,
+    camera-trap distance sampling, time-to-event, space-to-event, and the random
+    encounter and staying-time model (see 
+    Rowcliffe et al. (2008) <doi:10.1111/j.1365-2664.2008.01473.x>,
+    Howe et al. (2017) <doi:10.1111/2041-210X.12790>,
+    Nakashima et al. (2018) <doi:10.1111/1365-2664.13059>, and
+    Moeller et al. (2018) <doi:10.1002/ecs2.2331>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: assertr, iNEXT (>= 3.0.2), httr2, kableExtra (>= 1.4.0),
+        knitr (>= 1.50), leaflet (>= 2.2.2), MASS, MCMCvis, msm,
+        nimble, coda, progress, rmarkdown, shiny (>= 1.10.0), testthat
+        (>= 3.0.0), vegan (>= 2.6-6.1), xml2
+Config/testthat/edition: 3
+URL: https://stangandaho.github.io/ct/
+BugReports: https://github.com/stangandaho/ct/issues
+Depends: R (>= 3.5)
+Config/Needs/website: rmarkdown
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-07-07 17:39:17 UTC; ganda
+Author: Stanislas Mahussi Gandaho [aut, cre] (ORCID:
+    <https://orcid.org/0009-0003-4969-1252>),
+  Pablo Palencia [ctb, rev] (ORCID:
+    <https://orcid.org/0000-0002-2928-4241>),
+  R Consortium [fnd]
+Repository: CRAN
+Date/Publication: 2026-07-16 13:10:08 UTC

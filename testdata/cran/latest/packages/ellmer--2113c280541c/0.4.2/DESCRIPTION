@@ -1,0 +1,76 @@
+Package: ellmer
+Title: Chat with Large Language Models
+Version: 0.4.2
+Authors@R: c(
+    person("Hadley", "Wickham", , "hadley@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4757-117X")),
+    person("Joe", "Cheng", role = "aut"),
+    person("Aaron", "Jacobs", role = "aut"),
+    person("Garrick", "Aden-Buie", , "garrick@posit.co", role = "aut",
+           comment = c(ORCID = "0000-0002-7111-0077")),
+    person("Barret", "Schloerke", , "barret@posit.co", role = "aut",
+           comment = c(ORCID = "0000-0001-9986-114X")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: Chat with large language models from a range of providers
+    including 'Claude' <https://claude.ai>, 'OpenAI'
+    <https://chatgpt.com>, and more. Supports streaming, asynchronous
+    calls, tool calling, and structured data extraction.
+License: MIT + file LICENSE
+URL: https://ellmer.tidyverse.org, https://github.com/tidyverse/ellmer
+BugReports: https://github.com/tidyverse/ellmer/issues
+Depends: R (>= 4.1)
+Imports: cli, coro (>= 1.1.0), glue, httr2 (>= 1.2.3), jsonlite, later
+        (>= 1.4.0), lifecycle, promises (>= 1.5.0), R6, rlang (>=
+        1.3.0), S7 (>= 0.2.0), tibble, vctrs
+Suggests: connectcreds, curl (>= 6.0.1), gargle, gitcreds, jose, knitr,
+        magick, openssl, otel (>= 0.2.0), otelsdk (>= 0.2.0),
+        paws.common, png, rmarkdown, shiny, shinychat (>= 0.3.0),
+        testthat (>= 3.0.0), vcr (>= 2.0.0), withr
+VignetteBuilder: knitr
+Config/Needs/prices: cli, dplyr, jsonlite, jsonvalidate, stringr,
+        tidyr, usethis
+Config/Needs/website: tidyverse/tidytemplate, rmarkdown
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: chat, provider*
+Encoding: UTF-8
+Collate: 'utils-S7.R' 'types.R' 'ellmer-package.R' 'tools-def.R'
+        'content.R' 'provider.R' 'as-json.R' 'batch-chat.R'
+        'chat-structured.R' 'chat-tools-content.R' 'turns.R'
+        'chat-tools.R' 'chat-utils.R' 'utils-coro.R' 'chat.R'
+        'content-image.R' 'content-pdf.R' 'content-replay.R' 'httr2.R'
+        'import-standalone-defer.R' 'import-standalone-obj-type.R'
+        'import-standalone-purrr.R' 'import-standalone-types-check.R'
+        'interpolate.R' 'live.R' 'otel.R' 'parallel-chat.R' 'params.R'
+        'provider-any.R' 'provider-aws.R'
+        'provider-openai-compatible.R' 'provider-azure.R'
+        'provider-claude-files.R' 'provider-claude-tools.R'
+        'provider-claude.R' 'provider-google.R' 'provider-cloudflare.R'
+        'provider-databricks.R' 'provider-deepseek.R'
+        'provider-github.R' 'provider-google-tools.R'
+        'provider-google-upload.R' 'provider-groq.R'
+        'provider-huggingface.R' 'provider-lmstudio.R'
+        'provider-mistral.R' 'provider-ollama.R'
+        'provider-openai-tools.R' 'provider-openai.R'
+        'provider-openrouter.R' 'provider-perplexity.R'
+        'provider-portkey.R' 'provider-posit.R' 'provider-snowflake.R'
+        'provider-vllm.R' 'schema.R' 'stream-controller.R' 'tokens.R'
+        'tools-built-in.R' 'tools-def-auto.R' 'utils-auth.R'
+        'utils-callbacks.R' 'utils-cat.R' 'utils-merge.R'
+        'utils-prettytime.R' 'utils.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2026-07-13 13:22:49 UTC; nic
+Author: Hadley Wickham [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4757-117X>),
+  Joe Cheng [aut],
+  Aaron Jacobs [aut],
+  Garrick Aden-Buie [aut] (ORCID:
+    <https://orcid.org/0000-0002-7111-0077>),
+  Barret Schloerke [aut] (ORCID: <https://orcid.org/0000-0001-9986-114X>),
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
+Maintainer: Hadley Wickham <hadley@posit.co>
+Repository: CRAN
+Date/Publication: 2026-07-13 23:00:09 UTC

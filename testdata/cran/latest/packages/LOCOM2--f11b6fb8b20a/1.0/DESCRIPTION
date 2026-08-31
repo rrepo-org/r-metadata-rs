@@ -1,0 +1,28 @@
+Package: LOCOM2
+Type: Package
+Title: A Logistic Regression Model for Testing Microbial Differential
+        Abundance
+Version: 1.0
+Date: 2026-04-18
+Authors@R: person(given = "Yi-Juan",
+                      family = "Hu",
+                      role = c("aut", "cre"),
+                      email = "yijuanhu@bicmr.pku.edu.cn")
+Maintainer: Yi-Juan Hu <yijuanhu@bicmr.pku.edu.cn>
+Description: Testing differential abundance at individual taxa and in a whole microbial community. The tests are based on the log-ratio of relative abundances. The tests accommodate continuous, discrete (binary, categorical), and multivariate traits, and allow adjustment of confounders. For more details see He (2026) <doi:10.64898/2026.04.07.716976>.
+License: GPL (>= 2)
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.11), stats, permute, parallel, BiocParallel,
+        matrixStats, abind, car
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, survival
+URL: https://github.com/yijuanhu/LOCOM2
+BugReports: https://github.com/yijuanhu/LOCOM2/issues
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-04-30 01:08:36 UTC; yhu30
+Author: Yi-Juan Hu [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-05-04 12:10:14 UTC

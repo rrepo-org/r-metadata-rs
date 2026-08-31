@@ -1,0 +1,46 @@
+Package: okBATHTUB
+Title: Empirical Reservoir Eutrophication Modelling with Oklahoma
+        Calibration
+Version: 0.1.11
+Authors@R: 
+    person("Jordon", "Henderson",
+           role  = c("aut", "cre", "cph"),
+           email = "jordon.henderson@owrb.ok.gov")
+Description: Empirical reservoir water quality modelling using Walker's
+    'BATHTUB' Model 1 (second-order available-phosphorus sedimentation)
+    from Walker (1985) <https://hdl.handle.net/11681/13884>
+    and Walker (1996) <https://hdl.handle.net/11681/4353> as the
+    default retention model. The Vollenweider (1976) hydraulic-
+    residence form and the equivalent formulation of Larsen and Mercier
+    (1976) are available as alternatives. Predicts in-lake total
+    phosphorus, total nitrogen, chlorophyll-a, and Secchi depth from
+    tributary nutrient and hydraulic loading inputs, and computes
+    Carlson (1977) <doi:10.4319/lo.1977.22.2.0361> Trophic State
+    Indices. Optional Oklahoma-specific chlorophyll and Secchi
+    regression coefficients are provided, calibrated from publicly
+    available state lake monitoring data. Supports single-segment and
+    multi-segment reservoir configurations and load-reduction scenario
+    analysis. Designed to complement watershed loading models such as
+    the Soil and Water Assessment Tool ('SWAT';
+    <https://swat.tamu.edu>) and the U.S. EPA Hydrologic and Water
+    Quality System ('HAWQS'; <https://hawqs.tamu.edu>) in a
+    two-model nutrient management workflow.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: utils
+Suggests: ggplot2 (>= 3.4.0), dplyr (>= 1.1.0), tidyr (>= 1.3.0),
+        stringr (>= 1.5.0), knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+URL: https://0011235813.github.io/Oklahoma-BATHTUB/,
+        https://github.com/0011235813/Oklahoma-BATHTUB
+BugReports: https://github.com/0011235813/Oklahoma-BATHTUB/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-24 16:32:48 UTC; 364483
+Author: Jordon Henderson [aut, cre, cph]
+Maintainer: Jordon Henderson <jordon.henderson@owrb.ok.gov>
+Repository: CRAN
+Date/Publication: 2026-06-24 18:50:02 UTC

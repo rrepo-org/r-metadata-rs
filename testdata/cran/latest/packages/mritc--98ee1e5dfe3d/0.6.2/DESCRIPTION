@@ -1,0 +1,27 @@
+Package: mritc
+Title: MRI Tissue Classification
+Date: 2026-08-19
+Version: 0.6.2
+Authors@R: c(person("Dai", "Feng", role="aut"),
+             person("Luke", "Tierney", role="aut"),
+             person("Jon", "Clayden", role=c("cre","aut"),
+        email="code@clayden.org", comment=c(ORCID="0000-0002-6608-0619")))
+Description: Implements various methods for tissue classification in magnetic
+        resonance (MR) images of the brain, including normal mixture models
+        and hidden Markov normal mixture models, as outlined in Feng &
+        Tierney (2011) <doi:10.18637/jss.v044.i07>. These methods allow a
+        structural MR image to be classified into gray matter, white matter
+        and cerebrospinal fluid tissue types.
+Imports: methods, oro.nifti
+Suggests: lattice, RNifti, misc3d, tinytest, covr
+License: GPL
+URL: https://github.com/jonclayden/mritc
+BugReports: https://github.com/jonclayden/mritc/issues
+NeedsCompilation: yes
+Packaged: 2026-08-19 18:45:13 UTC; jon
+Author: Dai Feng [aut],
+  Luke Tierney [aut],
+  Jon Clayden [cre, aut] (ORCID: <https://orcid.org/0000-0002-6608-0619>)
+Maintainer: Jon Clayden <code@clayden.org>
+Repository: CRAN
+Date/Publication: 2026-08-20 05:50:02 UTC

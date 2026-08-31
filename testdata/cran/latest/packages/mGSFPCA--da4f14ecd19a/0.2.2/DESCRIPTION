@@ -1,0 +1,40 @@
+Package: mGSFPCA
+Title: Estimate Functional Principal Components from Sparse Data
+Version: 0.2.2
+Authors@R: 
+    c(person("Uche", "Mbaka", , "uche.mbaka@ucd.ie", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1427-6388")), 
+      person("Michelle", "Carey", , "michelle.carey@ucd.ie", role = "ctb",
+            comment = c(ORCID = "0000-0002-5603-4264"))
+      )
+Description: Implements functional principal component analysis (FPCA) for
+    univariate and multivariate sparse functional data. The package estimates
+    eigenfunctions, eigenvalues, and error variance simultaneously via maximum
+    likelihood estimation (MLE), using a spline basis representation of the
+    eigenfunctions. Orthonormality of the estimated eigenfunctions is enforced
+    through a modified Gram-Schmidt (MGS) orthogonalization procedure applied
+    iteratively during estimation, avoiding direct optimization over the Stiefel
+    manifold and improving numerical stability. The optimal number of basis
+    functions and principal components is selected via an Akaike Information
+    Criterion (AIC)-type criterion, supporting both a full grid-search strategy
+    and a computationally efficient sequential selection approach. Principal
+    component scores are estimated by conditional expectation, enabling
+    reconstruction of individual trajectories over the entire domain from sparse
+    observations. Pointwise confidence intervals for reconstructed trajectories 
+    are also provided. Methods are described in Mbaka, Cao and Carey
+    (2026) <doi:10.48550/arXiv.2603.18833> and Mbaka and Carey (2026)
+    <doi:10.48550/arXiv.2603.19799>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+LazyData: true
+Imports: fda, pracma, Rcpp, Metrics
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+Packaged: 2026-05-05 11:16:36 UTC; fdagroup
+Author: Uche Mbaka [aut, cre] (ORCID: <https://orcid.org/0000-0002-1427-6388>),
+  Michelle Carey [ctb] (ORCID: <https://orcid.org/0000-0002-5603-4264>)
+Maintainer: Uche Mbaka <uche.mbaka@ucd.ie>
+Repository: CRAN
+Date/Publication: 2026-05-08 14:30:02 UTC

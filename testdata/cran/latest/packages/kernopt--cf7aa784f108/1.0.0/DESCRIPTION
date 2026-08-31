@@ -1,0 +1,46 @@
+Package: kernopt
+Title: Estimating Count Data Distributions with Discrete Optimal
+        Symmetric Kernel
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Tristan",
+           family = "Senga Kiesse",
+           email = "tristan.senga-kiesse@inrae.fr",
+           role = "aut",
+           comment = c(ORCID = "0000-0003-2710-5825")),
+    person(given = "Gilles",
+           family = "Durrieu",
+           email = "gilles.durrieu@univ-ubs.fr",
+           role = "aut",
+           comment = c(ORCID = "0000-0003-0375-912X")),
+    person(given = "Thomas",
+           family = "Fillon",
+           email = "thomas.fillon@univ-ubs.fr",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1207-8414")),
+    person("INRAE, Institut Agro, CNRS - UMR SAS", role = "cph"),
+    person("Université de Bretagne Sud, CNRS - UMR 6205 LMBA", role = "cph")
+    )
+Maintainer: Thomas Fillon <thomas.fillon@univ-ubs.fr>
+Description: Implementation of Discrete Symmetric Optimal Kernel for estimating count data distributions, as described by T. Senga Kiessé and G. Durrieu (2024) <doi:10.1016/j.spl.2024.110078>.The nonparametric estimator using the discrete symmetric optimal kernel was illustrated on simulated data sets and a real-word data set included in the package, in comparison with two other discrete symmetric kernels.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+URL: https://thomasfillon.github.io/kernopt/,
+        https://github.com/thomasfillon/kernopt
+BugReports: https://github.com/thomasfillon/kernopt/issues
+NeedsCompilation: no
+Packaged: 2025-03-18 14:11:14 UTC; rstudio
+Author: Tristan Senga Kiesse [aut] (<https://orcid.org/0000-0003-2710-5825>),
+  Gilles Durrieu [aut] (<https://orcid.org/0000-0003-0375-912X>),
+  Thomas Fillon [aut, cre] (<https://orcid.org/0000-0003-1207-8414>),
+  INRAE, Institut Agro, CNRS - UMR SAS [cph],
+  Université de Bretagne Sud, CNRS - UMR 6205 LMBA [cph]
+Repository: CRAN
+Date/Publication: 2025-03-19 13:20:05 UTC

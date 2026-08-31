@@ -1,0 +1,36 @@
+Package: socialdrift
+Type: Package
+Title: Temporal Auditing of Social Interaction Networks
+Version: 0.1.0
+Authors@R: 
+    person("Subir", "Hait",
+           email = "haitsubi@msu.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-9871-9677"))
+Description: Tools for constructing, auditing, and visualizing temporal
+    social interaction networks from event-log data. Supports graph
+    construction from raw user-to-user interaction logs, longitudinal
+    tracking of network structure, community dynamics, user role
+    trajectories, and concentration of engagement over time. Designed
+    for computational social science, platform analytics, and digital
+    community health monitoring. Includes four longitudinal audit indices: the
+    Network Drift Index ('NDI'), Community Fragmentation Index ('CFI'),
+    Visibility Concentration Index ('VCI'), and Role Mobility Index ('RMI').
+    'NDI', 'CFI', 'VCI', and 'RMI' are purpose-built composite scores for longitudinal platform auditing.
+License: GPL-3
+URL: https://github.com/causalfragility-lab/socialdrift
+BugReports: https://github.com/causalfragility-lab/socialdrift/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.1.0), tibble (>= 3.2.0), tidyr (>= 1.3.0), purrr
+        (>= 1.0.0), ggplot2 (>= 3.4.0), igraph (>= 1.5.0), stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, patchwork
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-19 03:27:55 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-21 19:52:45 UTC

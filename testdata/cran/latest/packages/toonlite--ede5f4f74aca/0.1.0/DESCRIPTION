@@ -1,0 +1,24 @@
+Package: toonlite
+Title: Read, Write, Validate, Stream, and Convert TOON Data
+Version: 0.1.0
+Authors@R: person("Alejandro Jiménez Rico", role = c("aut", "cre"),
+                  email = "aljrico@gmail.com")
+Description: A minimal-dependency, performance-first R package for reading,
+    writing, validating, streaming, and converting TOON (Token-Oriented Object
+    Notation) data. Optimized for very large tabular files with robust
+    diagnostics. Supports lossless JSON conversion and tabular CSV/Parquet/Feather
+    conversion.
+License: MIT + file LICENSE
+URL: https://github.com/aljrico/toonlite
+BugReports: https://github.com/aljrico/toonlite/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: C++17
+Suggests: testthat (>= 3.0.0), jsonlite, arrow
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-02-05 13:47:19 UTC; alejandrojimenezrico
+Author: Alejandro Jiménez Rico [aut, cre]
+Maintainer: Alejandro Jiménez Rico <aljrico@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-09 13:10:02 UTC

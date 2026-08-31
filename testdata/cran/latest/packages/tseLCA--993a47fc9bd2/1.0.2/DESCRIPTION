@@ -1,0 +1,31 @@
+Package: tseLCA
+Type: Package
+Title: Three-Step Estimation for Latent Class Analysis
+Version: 1.0.2
+Authors@R: c(
+    person("Sam", "Lee", email = "samlee@arizona.edu", role = c("aut", "cre", "cph"), 
+           comment = c(ORCID = "0009-0007-2977-6661")),
+    person("Jay", "Goodliffe", email = "goodliffe@byu.edu", role = "ctb")
+    )
+Description: Implements BCH (Bolck-Croon-Hagenaars) <doi:10.1093/pan/mph001> and ML (Vermunt's maximum likelihood) <doi:10.1093/pan/mpq025> approaches for three-step estimation of latent class models with covariates and distal outcomes, following Bakk, Tekle & Vermunt (2013) <doi:10.1177/0081175012470644>, Bakk, Oberski & Vermunt (2014) <https://www.jstor.org/stable/24573086>, and Bakk & Kuha (2018) <doi:10.1007/s11336-017-9592-7>. Built on 'multilevLCA' (Lyrvall et al., 2025) <doi:10.1080/00273171.2025.2473935> for Step-1 measurement model estimation, this package extends it with support for Gaussian, Poisson, and binomial distal outcome families. Unlike 'poLCA', which relies on one-step estimation and cannot accommodate a measurement model from a different sample, this package uses a stepwise approach to prevent the structural model from influencing latent class formation. Implements correct sandwich variance estimation that propagates measurement uncertainty from the first-step through classification-error correction in the final step (Bakk, Oberski & Vermunt, 2014). Supports polytomous items and missing data in the measurement model with full information maximum likelihood. A data-generating process replicating the Bakk & Kuha (2018) simulation study is included.
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: multilevLCA, cli
+Suggests: poLCA, testthat (>= 3.0.0), parallel, knitr, rmarkdown,
+        spelling
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+URL: https://samleebyu.github.io/tseLCA/,
+        https://github.com/SamLeeBYU/tseLCA
+BugReports: https://github.com/SamLeeBYU/tseLCA/issues
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2026-07-05 03:07:06 UTC; samle
+Author: Sam Lee [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0007-2977-6661>),
+  Jay Goodliffe [ctb]
+Maintainer: Sam Lee <samlee@arizona.edu>
+Repository: CRAN
+Date/Publication: 2026-07-11 08:40:02 UTC

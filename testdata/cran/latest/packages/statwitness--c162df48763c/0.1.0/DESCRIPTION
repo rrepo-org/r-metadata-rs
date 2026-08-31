@@ -1,0 +1,41 @@
+Package: statwitness
+Type: Package
+Title: Model-Aware Validation and Audit Certificates for Statistical
+        Analyses
+Version: 0.1.0
+Authors@R: 
+    person(
+      given = "Georgios P.",
+      family = "Georgiou",
+      email = "georgiou.georg@unic.ac.cy",
+      role = c("aut", "cre")
+    )
+Description: Provides model-aware behavioral validation and audit
+    certificates for statistical analyses. Controlled transformations and
+    model-specific diagnostic checks are organized across five domains:
+    computational integrity, numerical stability, design adequacy, assumption
+    screening, and influence stability. Supported workflows include linear
+    models, generalized linear models, classical and repeated-measures analyses
+    of variance, mixed-effects models fitted using 'lme4' or 'glmmTMB', and
+    survival models fitted using 'survival'. Checks are selected according to
+    registered applicability conditions for each model class. The resulting
+    certificates describe computational behavior and selected diagnostic
+    findings; they do not establish causal validity, model correctness, or
+    scientific appropriateness.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: graphics, reformulas, stats, tools
+Suggests: afex, glmmTMB, knitr, lme4, rmarkdown, survival, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/George33cy/statwitness
+BugReports: https://github.com/George33cy/statwitness/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-12 10:13:36 UTC; georg
+Author: Georgios P. Georgiou [aut, cre]
+Maintainer: Georgios P. Georgiou <georgiou.georg@unic.ac.cy>
+Repository: CRAN
+Date/Publication: 2026-07-21 10:40:08 UTC

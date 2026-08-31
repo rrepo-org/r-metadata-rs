@@ -1,0 +1,40 @@
+Package: SelectionBias
+Title: Calculates Bounds for the Selection Bias for Binary Treatment
+        and Outcome Variables
+Version: 2.1.0
+Authors@R: 
+    c(person("Stina", "Zetterstrom", email = "stina.zetterstrom@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0730-9425")),
+    person("Ingeborg", "Waernbaum",
+    role = c("aut"), comment = c(ORCID = "0000-0002-4457-5311")))
+Description: Computes bounds and sensitivity parameters as part of sensitivity 
+    analysis for selection bias. Different bounds are provided: the SV (Smith 
+    and VanderWeele), sharp bounds,  AF (assumption-free) bound, GAF (generalized 
+    AF), and CAF (counterfactual AF) bounds. The calculation of the sensitivity 
+    parameters for the SV, sharp, and GAF bounds assume an additional dependence 
+    structure in form of a generalized M-structure. The bounds can be
+    calculated for any structure as long as the necessary assumptions hold. See 
+    Smith and VanderWeele (2019) <doi:10.1097/EDE.0000000000001032>,
+    Zetterstrom, Sjölander, and Waernabum (2025) <doi:10.1177/09622802251374168>,
+    Zetterstrom and Waernbaum (2022) <doi:10.1515/em-2022-0108>, and
+    Zetterstrom (2024) <doi:10.1515/em-2023-0033>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: arm, lifecycle, stats
+Suggests: knitr, table1, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://github.com/StinaZet/SelectionBias
+BugReports: https://github.com/StinaZet/SelectionBias/issues
+NeedsCompilation: no
+Packaged: 2025-10-13 16:28:21 UTC; Stina
+Author: Stina Zetterstrom [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0730-9425>),
+  Ingeborg Waernbaum [aut] (ORCID:
+    <https://orcid.org/0000-0002-4457-5311>)
+Maintainer: Stina Zetterstrom <stina.zetterstrom@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-13 18:30:03 UTC

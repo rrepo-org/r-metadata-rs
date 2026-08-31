@@ -1,0 +1,36 @@
+Package: scaledescr
+Type: Package
+Title: Descriptive, Reliability, and Inferential Tables for
+        Psychometric Scales and Demographic Data
+Version: 0.2.7
+Authors@R: 
+    person(
+      given  = "Darshankumar",
+      family = "Dharaiya",
+      email  = "dharaiya.darshan@gmail.com",
+      role   = c("aut", "cre"),
+      comment = c(ORCID = "0009-0009-9351-8602")
+    )
+Description: Provides functions to format and summarise already computed 
+    outputs from commonly used statistical and psychometric functions into 
+    compact, single-row tables and simple graphs, with utilities to export 
+    results to CSV, Word, and Excel formats. The package does not implement 
+    new statistical methods or estimation procedures; instead, it organises 
+    and presents results obtained from existing packages such as 'psych', 
+    'stats', 'gtsummary', and 'lavaan' to streamline reporting workflows in 
+    clinical and psychological research.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr, gtsummary, purrr, rlang, stats, officer, openxlsx,
+        utils, psych, stringr, flextable, lavaan
+Suggests: testthat (>= 3.0.0), webshot2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Author: Darshankumar Dharaiya [aut, cre] (ORCID:
+    <https://orcid.org/0009-0009-9351-8602>)
+Maintainer: Darshankumar Dharaiya <dharaiya.darshan@gmail.com>
+Packaged: 2026-06-10 12:33:27 UTC; HP
+Repository: CRAN
+Date/Publication: 2026-06-10 13:20:02 UTC

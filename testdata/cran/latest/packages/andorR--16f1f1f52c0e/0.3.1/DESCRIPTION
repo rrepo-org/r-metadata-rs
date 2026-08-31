@@ -1,0 +1,48 @@
+Package: andorR
+Type: Package
+Title: Optimisation of the Analysis of AND-OR Decision Trees
+Version: 0.3.1
+Date: 2025-10-01
+Authors@R: c(
+    person(
+      c("Angus","R"), "Cameron",
+      email = "angus.cameron@epimundi.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-8801-0366")
+    ), 
+    person(
+      "EpiMundi",
+      role = c("cph", "fnd")
+    )
+  )
+Description: A decision support tool to strategically prioritise evidence gathering 
+  in complex, hierarchical AND-OR decision trees. It is designed for situations 
+  with incomplete or uncertain information where the goal is to reach a confident 
+  conclusion as efficiently as possible (responding to the minimum number of 
+  questions, and only spending resources on generating improved evidence when 
+  it is of significant value to the final decision). The framework excels in 
+  complex analyses with multiple potential successful pathways to a conclusion 
+  ('OR' nodes). Key features include a dynamic influence index to guide users to 
+  the most impactful question, a system for propagating answers and 
+  semi-quantitative confidence scores (0-5) up the tree, and post-conclusion 
+  guidance to identify the best actions to increase the final confidence. 
+  These components are brought together in an interactive command-line workflow 
+  that guides the analysis from start to finish.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+Imports: data.tree, dplyr, yaml, jsonlite, cli, crayon, glue, rlang
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tibble
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://epimundi.github.io/andorR/
+NeedsCompilation: no
+Packaged: 2025-10-09 11:26:45 UTC; Angus Cameron
+Author: Angus R Cameron [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8801-0366>),
+  EpiMundi [cph, fnd]
+Maintainer: Angus R Cameron <angus.cameron@epimundi.com>
+Repository: CRAN
+Date/Publication: 2025-10-15 20:00:13 UTC

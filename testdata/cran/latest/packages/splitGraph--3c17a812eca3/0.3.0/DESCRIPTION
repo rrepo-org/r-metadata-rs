@@ -1,0 +1,31 @@
+Package: splitGraph
+Title: Dataset Dependency Graphs for Leakage-Aware Evaluation
+Version: 0.3.0
+Authors@R: c(
+    person("Selcuk", "Korkmaz", role = c("aut","cre"), email = "selcukorkmaz@gmail.com",
+           comment = c(ORCID = "0000-0003-4632-6850"))
+    )
+Description: Represent biomedical dataset structure as typed dependency
+    graphs so that sample provenance, repeated-measure structure, study
+    design, batch effects, and temporal relationships are explicit and
+    inspectable. Validates dataset structure, detects sample-level overlap,
+    derives deterministic split constraints, and produces a tool-agnostic
+    split specification for leakage-aware evaluation workflows.
+License: MIT + file LICENSE
+URL: https://github.com/selcukorkmaz/splitGraph
+BugReports: https://github.com/selcukorkmaz/splitGraph/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: graphics, igraph, stats, utils
+Suggests: bioLeak, jsonlite, knitr, pkgload, rmarkdown, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+Packaged: 2026-07-03 11:48:54 UTC; selcuk
+Author: Selcuk Korkmaz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4632-6850>)
+Maintainer: Selcuk Korkmaz <selcukorkmaz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-03 12:40:02 UTC

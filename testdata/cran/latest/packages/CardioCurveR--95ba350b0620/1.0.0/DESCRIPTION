@@ -1,0 +1,25 @@
+Package: CardioCurveR
+Title: Nonlinear Modeling of R-R Interval Dynamics
+Version: 1.0.0
+Authors@R: 
+    person("Matías", "Castillo-Aguilar", , "m99castillo@gmail.com", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-7291-247X"))
+Description: Automated and robust framework for analyzing R-R interval (RRi) signals using advanced nonlinear modeling and preprocessing techniques. The package implements a dual-logistic model to capture the rapid drop and subsequent recovery of RRi during exercise, as described by Castillo-Aguilar et al. (2025) <doi:10.1038/s41598-025-93654-6>. In addition, 'CardioCurveR' includes tools for filtering RRi signals using zero-phase Butterworth low-pass filtering and for cleaning ectopic beats via adaptive outlier replacement using local regression and robust statistics. These integrated methods preserve the dynamic features of RRi signals and facilitate accurate cardiovascular monitoring and clinical research.
+License: MIT + file LICENSE
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: signal (>= 1.8.1), ggplot2 (>= 3.5.1), gridExtra (>= 2.3),
+        data.table (>= 1.16.4)
+URL: https://github.com/matcasti/CardioCurveR,
+        https://matcasti.github.io/CardioCurveR/
+BugReports: https://github.com/matcasti/CardioCurveR/issues
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-04-03 16:47:24 UTC; matias
+Author: Matías Castillo-Aguilar [aut, cre, cph]
+    (<https://orcid.org/0000-0001-7291-247X>)
+Maintainer: Matías Castillo-Aguilar <m99castillo@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-07 16:00:09 UTC

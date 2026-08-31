@@ -1,0 +1,46 @@
+Package: CDMConnector
+Title: Connect to an OMOP Common Data Model
+Version: 2.7.0
+Authors@R: c(
+    person("Ger", "Inberg", email = "g.inberg@erasmusmc.nl", role = c("aut", "cre"), 
+            comment = c(ORCID = "0000-0001-8993-8748")),
+    person("Adam", "Black", , "ablack3@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0001-5576-8701")),
+    person("Artem", "Gorbachev", , "artem.gorbachev@odysseusinc.com", role = "aut"),
+    person("Edward", "Burn", , "edward.burn@ndorms.ox.ac.uk", role = "aut"),
+    person("Marti", "Catala Sabate", , "marti.catalasabate@ndorms.ox.ac.uk", role = "aut"),
+    person("Ioanna", "Nika", , "i.nika@darwin-eu.org", role = "aut")
+  )
+Description: Provides tools for working with observational health data in the 
+  Observational Medical Outcomes Partnership (OMOP) Common Data Model format with a pipe friendly syntax.
+  Common data model database table references are stored in a single compound object along with metadata.
+License: Apache License (>= 2)
+URL: https://darwin-eu.github.io/CDMConnector/,
+        https://github.com/darwin-eu/CDMConnector
+BugReports: https://github.com/darwin-eu/CDMConnector/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: httr2, dplyr, dbplyr (>= 2.5.0), DBI (>= 0.3.0), checkmate,
+        cli, purrr, rlang, tidyselect, glue, methods, withr, lifecycle,
+        stringr, stringi, generics, tidyr, jsonlite, readr,
+        omopgenerics (>= 1.2.0)
+Suggests: SqlRender, CirceR, rJava, covr, knitr, rmarkdown, duckdb,
+        RSQLite, RPostgres, DatabaseConnector, odbc, ggplot2,
+        bigrquery, lubridate, clock, tibble, testthat (>= 3.0.0), pool,
+        snakecase, digest, rstudioapi, uuid
+Enhances: arrow
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-26 17:17:35 UTC; ginberg
+Author: Ger Inberg [aut, cre] (ORCID: <https://orcid.org/0000-0001-8993-8748>),
+  Adam Black [aut] (ORCID: <https://orcid.org/0000-0001-5576-8701>),
+  Artem Gorbachev [aut],
+  Edward Burn [aut],
+  Marti Catala Sabate [aut],
+  Ioanna Nika [aut]
+Maintainer: Ger Inberg <g.inberg@erasmusmc.nl>
+Repository: CRAN
+Date/Publication: 2026-08-27 05:10:51 UTC

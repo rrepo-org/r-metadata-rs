@@ -1,0 +1,58 @@
+Type: Package
+Package: GRCFE
+Title: Generate Optimal Row-Column Factorial Experiments
+Version: 0.1.0
+Authors@R: c(
+    person(
+        given = "Sukanta",
+        family = "Dash",
+        email = "sukanta.iasri@gmail.com",
+        role = c("aut", "cre")
+    ),
+    person(
+        given = c("Amrit", "Kumar"),
+        family = "Paul",
+        email = "apaul_66@yahoo.com",
+        role = "aut"
+    ),
+    person(
+        given = c("Med", "Ram"),
+        family = "Verma",
+        email = "drmrverma@gmail.com",
+        role = "aut"
+    ),
+    person(
+        given = "Anurag",
+        family = "Rawat",
+        email = "anuragrawat5683@gmail.com",
+        role = "aut"
+    )
+ )
+Maintainer: Sukanta Dash <sukanta.iasri@gmail.com>
+Description: Provides tools for constructing row-column factorial
+    experiment layouts for the estimation of main effects and two-factor
+    interactions in factorial and fractional factorial experiments. The
+    package implements generator-matrix based design construction methods
+    motivated by 2fi-optimal row-column designs, where all main effects
+    are estimable and as many two-factor interactions as possible are
+    unconfounded; see Zhang, Pan and Shi (2025)
+    <doi:10.1016/j.jspi.2024.106192>. It also includes theorem-based
+    constructions, heuristic D-optimal search routines for unsupported or
+    composite-level cases, utilities for building generator matrices, and
+    diagnostic functions for evaluating aliasing and estimability
+    properties of the generated designs.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: stats
+Suggests: roxygen2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+Packaged: 2026-04-25 11:28:09 UTC; B.N Mandal
+Author: Sukanta Dash [aut, cre],
+  Amrit Kumar Paul [aut],
+  Med Ram Verma [aut],
+  Anurag Rawat [aut]
+Repository: CRAN
+Date/Publication: 2026-04-28 19:40:25 UTC

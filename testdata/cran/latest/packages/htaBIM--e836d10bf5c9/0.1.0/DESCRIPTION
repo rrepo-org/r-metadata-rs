@@ -1,0 +1,52 @@
+Package: htaBIM
+Type: Package
+Title: Budget Impact Modelling for Health Technology Assessment
+Version: 0.1.0
+Authors@R: c(
+    person("Shubhram", "Pandey",
+           email = "shubhram.pandey@heorlytics.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0005-2303-1592")),
+    person("Heorlytics Ltd",
+           role = "cph"))
+Description: Implements a structured, reproducible framework for budget impact
+    modelling (BIM) in health technology assessment (HTA), following the ISPOR
+    Task Force guidelines (Sullivan et al. (2014) <doi:10.1016/j.jval.2013.08.2291>
+    and Mauskopf et al. (2007) <doi:10.1111/j.1524-4733.2007.00187.x>).
+    Provides functions for epidemiology-driven population estimation, market
+    share modelling with flexible uptake dynamics, per-patient cost calculation
+    across multiple cost categories, multi-year budget projections, payer
+    perspective analysis, deterministic sensitivity analysis (DSA), and
+    probabilistic sensitivity analysis (PSA) via Monte Carlo simulation.
+    Produces submission-quality outputs including ISPOR-aligned summary tables,
+    scenario comparison tables, per-patient cost breakdowns, tornado diagrams,
+    PSA histograms, and text and HTML reports compatible with NICE, CADTH, and
+    EU-HTA dossier formats. Ships with an interactive 'shiny' dashboard built on
+    'bslib' for point-and-click model building and exploration.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: stats, utils, graphics, rlang (>= 1.1.0)
+Suggests: dplyr (>= 1.1.0), tidyr (>= 1.3.0), ggplot2 (>= 3.4.0), cli
+        (>= 3.6.0), checkmate (>= 2.3.0), glue (>= 1.7.0), purrr (>=
+        1.0.0), tibble (>= 3.2.0), scales (>= 1.3.0), flextable (>=
+        0.9.0), officer (>= 0.6.0), shiny (>= 1.8.0), bslib (>= 0.7.0),
+        bsicons (>= 0.1.2), DT (>= 0.31), openxlsx (>= 4.2.0), knitr,
+        rmarkdown, testthat (>= 3.0.0), spelling, covr, pkgdown
+Config/Needs/website: pkgdown
+Config/Needs/check: testthat
+VignetteBuilder: knitr
+URL: https://github.com/heorlytics/htaBIM,
+        https://heorlytics.github.io/htaBIM/
+BugReports: https://github.com/heorlytics/htaBIM/issues
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2026-04-16 17:08:22 UTC; ShubhramPandey
+Author: Shubhram Pandey [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-2303-1592>),
+  Heorlytics Ltd [cph]
+Maintainer: Shubhram Pandey <shubhram.pandey@heorlytics.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 19:12:11 UTC

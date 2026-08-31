@@ -1,0 +1,37 @@
+Package: cdcanthro
+Title: Standardized Metrics Based on the CDC and WHO Growth Charts
+Version: 0.4.0
+Date: 2026-08-30
+Authors@R: c(
+    person("David", "Freedman",
+           role = c("aut", "cre"),
+           email = "DavidSFreedman@gmail.com",
+           comment = c(ORCID = "0000-0001-8014-0289")),
+    person("Carrie", "Daymont",
+           role = "ctb",
+           email = "cdaymont@pennstatehealth.psu.edu")
+  )
+Description: Calculation of sex- and age-standardized growth metrics using
+    the LMS method (lambda-mu-sigma). The package includes functions for the CDC 
+    Growth Charts (cdc_z) and the WHO Charts (who_z). Because CDC recommends 
+    using the WHO Charts for children under 24 months and the CDC Charts among 
+    older children, there can be large differences at age 2.0 years. For example, 
+    a girl weighing 9.9 kg would be at the WHO 10th percentile on the day before 
+    her second birthday, but at the CDC 2nd percentile the following day. 
+    The 'gradual_z' function reduces the differences among 2- to 5-year-olds 
+    by taking a weighted average of the CDC and WHO z-scores.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+NeedsCompilation: no
+Depends: R (>= 3.5.0)
+Imports: data.table (>= 1.15.0), stats, utils
+Suggests: tibble
+Packaged: 2026-08-30 14:51:44 UTC; davidfreedman
+Author: David Freedman [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8014-0289>),
+  Carrie Daymont [ctb]
+Maintainer: David Freedman <DavidSFreedman@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-31 15:20:03 UTC

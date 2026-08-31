@@ -1,0 +1,36 @@
+Package: attestix
+Type: Package
+Title: Offline Verifier for Attestix Ed25519 Credentials and UCAN
+        Delegations
+Version: 0.4.1
+Authors@R: c(
+    person("Pavan Kumar", "Dubasi", role = c("aut", "cre"),
+           email = "info@vibetensor.com"),
+    person("VibeTensor", role = c("cph", "fnd")))
+Description: An offline verifier for verifiable credentials and delegation
+    chains issued by the Attestix Python core. Verifies Ed25519 (RFC 8032)
+    signatures over W3C Verifiable Credentials, decodes Ed25519 'did:key'
+    identifiers, and verifies UCAN delegation chains (EdDSA 'JWT's) including
+    capability attenuation, with no Python runtime required. Reproduces the
+    Attestix JCS-style JSON canonical form (a practical subset of RFC 8785 that
+    additionally applies 'NFC' Unicode normalization) byte-for-byte so that
+    signatures produced by the reference implementation verify here. Useful for
+    compliance, research and biostatistics users who work in R and need to check
+    AI-agent compliance credentials. See <https://attestix.io> for the project
+    and <https://attestix.io/spec/bundle/v1> for the bundle wire format.
+License: Apache License (>= 2)
+URL: https://github.com/VibeTensor/attestix-r, https://attestix.io
+BugReports: https://github.com/VibeTensor/attestix-r/issues
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: sodium, openssl, stringi
+Suggests: jsonlite, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-26 15:36:15 UTC; runner
+Author: Pavan Kumar Dubasi [aut, cre],
+  VibeTensor [cph, fnd]
+Maintainer: Pavan Kumar Dubasi <info@vibetensor.com>
+Repository: CRAN
+Date/Publication: 2026-07-04 07:00:02 UTC

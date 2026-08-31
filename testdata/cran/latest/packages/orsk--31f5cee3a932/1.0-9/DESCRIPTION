@@ -1,0 +1,29 @@
+Package: orsk
+Type: Package
+Title: Converting Odds Ratio to Relative Risk in Cohort Studies with
+        Partial Data Information
+Version: 1.0-9
+Date: 2026-03-18
+Author: Zhu Wang [aut, cre] (ORCID: <https://orcid.org/0000-0002-0773-0052>)
+Maintainer: Zhu Wang <zwang145@uthsc.edu>
+Authors@R: person(given = "Zhu",
+    family = "Wang",
+    role = c("aut", "cre"),
+    email = "zwang145@uthsc.edu",
+    comment = c(ORCID = "0000-0002-0773-0052"))
+Description: Reconstructs plausible 2 by 2 contingency tables from
+    published cohort-study summaries when the original cell counts are
+    unavailable. Given group sample sizes and an odds ratio with partial
+    confidence interval information, the package searches for compatible
+    event counts, then derives corresponding relative risks and confidence
+    intervals. It implements the methods described in Wang (2013)
+    <doi:10.18637/jss.v055.i05> and includes summary and plotting methods
+    for reviewing admissible scenarios.
+Imports: BB
+Suggests: setRNG
+License: GPL (>= 2)
+LazyLoad: yes
+Packaged: 2026-03-18 16:45:46 UTC; zwang145
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2026-03-18 17:50:02 UTC

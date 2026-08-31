@@ -1,0 +1,36 @@
+Package: causalDT
+Title: Causal Distillation Trees
+Version: 1.0.1
+Authors@R: c(
+    person("Tiffany", "Tang", , "ttang4@nd.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8079-6867")),
+    person("Melody", "Huang", , "melody.huang@yale.edu", role = "aut"),
+    person("Ana", "Kenney", , "anamaria.kenney@uci.edu", role = "aut")
+  )
+Description: Causal Distillation Tree (CDT) is a novel machine learning method 
+    for estimating interpretable subgroups with heterogeneous treatment effects. 
+    CDT allows researchers to fit any machine learning model (or metalearner) to 
+    estimate heterogeneous treatment effects for each individual, and then 
+    "distills" these predicted heterogeneous treatment effects into 
+    interpretable subgroups by fitting an ordinary decision tree to predict the
+    previously-estimated heterogeneous treatment effects. This package 
+    provides tools to estimate causal distillation trees (CDT), as detailed in
+    Huang, Tang, and Kenney (2025) <doi:10.48550/arXiv.2502.07275>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: bcf, dplyr, ggparty, ggplot2, grf, lifecycle, partykit, purrr,
+        R.utils, Rcpp, rlang, rpart, stringr, tibble, tidyselect
+URL: https://tiffanymtang.github.io/causalDT/
+NeedsCompilation: yes
+Packaged: 2026-08-28 19:16:13 UTC; ttang4
+Author: Tiffany Tang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8079-6867>),
+  Melody Huang [aut],
+  Ana Kenney [aut]
+Maintainer: Tiffany Tang <ttang4@nd.edu>
+Repository: CRAN
+Date/Publication: 2026-08-28 20:00:08 UTC

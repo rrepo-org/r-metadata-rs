@@ -1,0 +1,35 @@
+Package: orbweaver
+Title: Fast and Efficient Graph Data Structures
+Version: 0.18.2
+Authors@R: c(
+    person("ixpantia, SRL", , , "hola@ixpantia.com", role = "cph"),
+    person("Andres", "Quintero", , "andres@ixpantia.com", role = c("aut", "cre")),
+    person("The authors of the dependency Rust crates", role = "ctb",
+           comment = "see inst/AUTHORS file for details")
+  )
+Description: Seamlessly build and manipulate graph structures, leveraging
+    its high-performance methods for filtering, joining, and mutating
+    data. Ensures that mutations and changes to the graph are performed in
+    place, streamlining your workflow for optimal productivity.
+License: MIT + file LICENSE
+URL: https://github.com/ixpantia/orbweaver-r
+BugReports: https://github.com/ixpantia/orbweaver-r/issues
+Depends: R (>= 4.2.0)
+Imports: glue, methods, rlang
+Suggests: testthat (>= 3.0.0)
+Config/rextendr/version: 0.3.1.9001
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+SystemRequirements: Cargo (Rust's package manager) >= 1.70, rustc >=
+        1.70
+Config/Needs/website: rmarkdown
+NeedsCompilation: yes
+Packaged: 2025-04-21 15:21:23 UTC; andres
+Author: ixpantia, SRL [cph],
+  Andres Quintero [aut, cre],
+  The authors of the dependency Rust crates [ctb] (see inst/AUTHORS file
+    for details)
+Maintainer: Andres Quintero <andres@ixpantia.com>
+Repository: CRAN
+Date/Publication: 2025-04-28 13:50:07 UTC

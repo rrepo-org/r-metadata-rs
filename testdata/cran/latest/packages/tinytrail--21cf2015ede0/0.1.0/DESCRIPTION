@@ -1,0 +1,32 @@
+Package: tinytrail
+Title: Lightweight Auto-Updating Project Tracker and Data Dictionary
+Version: 0.1.0
+Authors@R: 
+    person("Tomas", "Reivinger", , "tomas.reivinger@gmail.com", role = c("aut", "cre", "cph"))
+Description: Once initialized, the package leaves a 'tiny trail' of human- and AI-readable
+    text that makes it effortless to keep track of small to medium-sized
+    projects. The package is lightweight (hence 'tiny') and maintains a YAML
+    trail file recording which scripts produced which output files. Call
+    tinytrail() once at the top of each script to record metadata, wrap any
+    save call with tinytrail_write() to log the output path, and optionally
+    use tinytrail_dict() to capture a data dictionary for each input data frame.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: yaml
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 8.0.0
+URL: https://github.com/tinytrail-r/tinytrail,
+        https://tinytrail-r.github.io/tinytrail/
+BugReports: https://github.com/tinytrail-r/tinytrail/issues
+Suggests: arrow, data.table, ggplot2, haven, jsonlite, kableExtra,
+        knitr, openxlsx, purrr, readr, rmarkdown, rstudioapi, testthat
+        (>= 3.0.0), tinytable, withr, writexl
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-30 06:26:03 UTC; tomas
+Author: Tomas Reivinger [aut, cre, cph]
+Maintainer: Tomas Reivinger <tomas.reivinger@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-04 08:40:02 UTC

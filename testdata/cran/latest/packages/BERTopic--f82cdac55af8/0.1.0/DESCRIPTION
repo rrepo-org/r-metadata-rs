@@ -1,0 +1,25 @@
+Package: BERTopic
+Type: Package
+Title: Topic Modeling with 'BERTopic'
+Version: 0.1.0
+Authors@R: 
+    person("Biying", "Zhou", email = "biying.zhou@psu.edu",
+           role = c("aut", "cre"))
+Description: Interface to the Python package 'BERTopic' <https://maartengr.github.io/BERTopic/index.html> for transformer-based topic modeling. Provides R wrappers to fit BERTopic models, transform new documents, update and reduce topics, extract topic- and document-level information, and generate interactive visualizations. 'Python' backends and dependencies are managed via the 'reticulate' package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5)
+Imports: reticulate, rlang, tibble, utils
+Suggests: Matrix, htmltools, testthat (>= 3.1.0)
+LazyData: true
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://github.com/Feng-Ji-Lab/BERTopic
+BugReports: https://github.com/Feng-Ji-Lab/BERTopic/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-01-21 18:28:49 UTC; zby15
+Author: Biying Zhou [aut, cre]
+Maintainer: Biying Zhou <biying.zhou@psu.edu>
+Repository: CRAN
+Date/Publication: 2026-01-26 16:50:14 UTC

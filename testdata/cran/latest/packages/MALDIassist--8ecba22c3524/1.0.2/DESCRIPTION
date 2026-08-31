@@ -1,0 +1,35 @@
+Package: MALDIassist
+Title: Mathematical Utilities for MALDI-TOF Mass Spectrometry
+Version: 1.0.2
+Authors@R: 
+    person("Wonseok", "Oh", , "hiows97@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-0687-8466"))
+Description: Supports matrix-assisted laser desorption/ionization time-of-flight
+    (MALDI-TOF) mass spectrometry workflows from raw Bruker spectra to
+    cohort-level peak matrices. Provides spectrum loading, Savitzky-Golay
+    smoothing, baseline correction (SNIP and TopHat), Gaussian
+    kernel-regression-based peak detection including shoulder peaks,
+    peak-quality assessment, filtering, and cohort feature analysis.
+    Computationally intensive routines are implemented in C++ using 'Rcpp'.
+    The implemented signal-processing methods include those described by
+    Savitzky and Golay (1964) <doi:10.1021/ac60214a047>, Ryan et al. (1988)
+    <doi:10.1016/0168-583X(88)90063-8>, Stanford, Bagley and Solomon (2016)
+    <doi:10.1186/s12953-016-0107-8>, and Nadaraya-Watson kernel regression
+    (Nadaraya (1964) <doi:10.1137/1109020>; Watson (1964)
+    <https://www.jstor.org/stable/25049340>).
+License: MIT + file LICENSE
+URL: https://github.com/hiows/MALDIassist
+BugReports: https://github.com/hiows/MALDIassist/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: Rcpp, gtools
+LinkingTo: Rcpp
+Suggests: colorspace, pheatmap, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-24 12:19:39 UTC; hiows
+Author: Wonseok Oh [aut, cre] (ORCID: <https://orcid.org/0009-0002-0687-8466>)
+Maintainer: Wonseok Oh <hiows97@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 10:10:13 UTC

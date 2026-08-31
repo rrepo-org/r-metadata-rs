@@ -1,0 +1,36 @@
+Package: RMeDPower2
+Type: Package
+Title: Design and Modeling for Repeated Measures Studies
+Version: 1.0.2
+Authors@R: c(
+    person("Min-Gyoung", "Shin",
+           email = "mingyoung.shin@gladstone.ucsf.edu",
+           role = c("aut")),
+    person("Reuben", "Thomas",
+           email = "reuben.thomas@gladstone.ucsf.edu",
+           role = c("aut", "cre"))
+    )
+Description: Provides complete functionality to analyse data from repeated
+    measures experiments with hierarchical or crossed experimental designs.
+    Supports testing modeling assumptions, identifying outlier observations
+    and experimental units, estimating statistical power, and performing
+    sample size calculations. Uses linear mixed effects models via 'lme4'
+    and simulation-based power analysis via 'simr'. Handles both normal and
+    non-normal error distributions including binomial and Poisson families. For more details see Shin et al. (2022) <doi:10.1101/2022.07.18.500490>, Bates et al. (2015) <doi:10.18637/jss.v067.i01>, Green and MacLeod (2016) <doi:10.1111/2041-210X.12504>, Hartig (2024) <doi:10.32614/CRAN.package.DHARMa>, Nieuwenhuis et al. (2012) <doi:10.32614/RJ-2012-011>, Millard  (2013) <doi:10.1007/978-1-4614-8456-1> and Kuznetsova et al. (2017) <doi:10.18637/jss.v082.i13>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Depends: R (>= 4.0)
+Imports: lme4, dplyr, simr, magrittr, ggplot2, ggtext, quantreg,
+        tibble, lmerTest, DHARMa, influence.ME, EnvStats, jsonlite,
+        methods, stats, grDevices, graphics
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-06-06 15:59:21 UTC; rthomas
+Author: Min-Gyoung Shin [aut],
+  Reuben Thomas [aut, cre]
+Maintainer: Reuben Thomas <reuben.thomas@gladstone.ucsf.edu>
+Repository: CRAN
+Date/Publication: 2026-06-06 16:50:02 UTC

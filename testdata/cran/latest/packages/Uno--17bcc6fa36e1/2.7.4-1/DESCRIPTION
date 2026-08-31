@@ -1,0 +1,44 @@
+Package: Uno
+Type: Package
+Title: R Interface to the 'Uno' Nonlinear Optimization Solver
+Version: 2.7.4-1
+Date: 2026-08-27
+Authors@R: c(
+    person("Balasubramanian", "Narasimhan", role = c("aut", "cre"),
+           email = "naras@stanford.edu"),
+    person("Charlie", "Vanaret", role = c("aut", "cph"),
+           comment = "Designed and implemented Uno"),
+    person("Sven", "Leyffer", role = c("aut", "cph"),
+           comment = "Co-developed the Uno framework"),
+    person("HiGHS development team", role = "cph",
+           comment = "Bundled HiGHS LP/QP/MIP solver (MIT); see inst/COPYRIGHTS"))
+Description: Bindings to 'Uno' (Unifying Nonlinear Optimization), a C++ solver
+    for smooth nonlinearly constrained optimization. 'Uno' unifies Lagrange-Newton
+    methods, including sequential quadratic programming and interior-point
+    methods, by decomposing them into interacting building blocks
+    (constraint-relaxation, inequality-handling, Hessian, and globalization
+    strategies) that can be freely combined, either through options or through
+    presets that reproduce established solvers such as 'filterSQP' and 'IPOPT'.
+    The framework is described in Vanaret and Leyffer (2024)
+    <doi:10.48550/arXiv.2406.13454>.
+License: MIT + file LICENSE
+Copyright: file inst/COPYRIGHTS
+URL: https://bnaras.github.io/Uno/, https://github.com/bnaras/Uno
+BugReports: https://github.com/bnaras/Uno/issues
+SystemRequirements: CMake (>= 3.16), C++17, GNU make
+Imports: rmumps (>= 5.2.1-41)
+LinkingTo: cpp11, rmumps
+Suggests: cpp11, tinytest, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+Packaged: 2026-08-27 20:49:39 UTC; naras
+Author: Balasubramanian Narasimhan [aut, cre],
+  Charlie Vanaret [aut, cph] (Designed and implemented Uno),
+  Sven Leyffer [aut, cph] (Co-developed the Uno framework),
+  HiGHS development team [cph] (Bundled HiGHS LP/QP/MIP solver (MIT); see
+    inst/COPYRIGHTS)
+Maintainer: Balasubramanian Narasimhan <naras@stanford.edu>
+Repository: CRAN
+Date/Publication: 2026-08-30 14:10:18 UTC

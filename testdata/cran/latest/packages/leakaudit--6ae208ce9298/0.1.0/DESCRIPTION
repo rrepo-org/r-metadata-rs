@@ -1,0 +1,34 @@
+Package: leakaudit
+Title: Detect and Audit Train/Test Leakage from Near-Duplicate Images
+Version: 0.1.0
+Authors@R: c(
+    person("Kartik", "Patel", email = "kartikpatel.id@gmail.com",
+           role = c("aut", "cre")),
+    person("Samruddhi Amol", "Shah", email = "samruddhishah.id@gmail.com",
+           role = "aut"),
+    person("BitandByte", role = "cph")
+    )
+Description: Detects near-duplicate images across dataset splits using
+    perceptual hashing, reports the resulting train/validation/test
+    contamination, and produces a corrected, leak-free split assignment.
+    Intended for machine learning researchers who need to verify that
+    image classification splits do not share near-duplicate samples
+    across partitions before reporting model metrics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: magick
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+URL: https://github.com/anakincodex/leakaudit
+BugReports: https://github.com/anakincodex/leakaudit/issues
+Depends: R (>= 4.1)
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-20 07:00:58 UTC; Kartik
+Author: Kartik Patel [aut, cre],
+  Samruddhi Amol Shah [aut],
+  BitandByte [cph]
+Maintainer: Kartik Patel <kartikpatel.id@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-29 16:40:13 UTC

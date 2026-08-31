@@ -1,0 +1,50 @@
+Package: AgePopDenom
+Type: Package
+Title: Model Fine-Scale Age-Structured Population Data using
+        Open-Source Data
+Version: 1.2.3
+Authors@R: c(
+  person("Mohamed A.", "Yusuf",
+         role = c("aut", "cre"),
+         email = "moyusuf@who.int",
+         comment = c(ORCID = "0000-0002-9339-4613")),
+  person("Victor A.", "Alegana",
+         role = "aut",
+         comment = c(ORCID = "0000-0001-5177-9227")),
+  person("Chibuzor Christopher", "Nnanatu",
+         role = "aut",
+         comment = c(ORCID = "0000-0002-5841-3700")),
+  person("Andrew", "Tatem",
+         role = "aut",
+         comment = c(ORCID = "0000-0002-7270-941X")))
+Description: Automate the modelling of age-structured population data
+  using survey data, grid population estimates and urban-rural extents.
+License: MIT + file LICENSE
+Encoding: UTF-8
+SystemRequirements: C++17, TMB
+Imports: dplyr, cli, glue, terra, sf, here, ggplot2, stringr, rlang,
+        tidyr, utils, stats, base, rdhs, TMB, curl, gstat, haven,
+        crayon, purrr, countrycode, parallel
+Suggests: sp, tibble, rstudioapi, graphics, methods, future,
+        future.apply, pbmcapply, knitr, httr, scales, rmarkdown,
+        exactextractr, pdist, numDeriv, openxlsx2, matrixStats,
+        testthat, RcppEigen
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://truenomad.github.io/AgePopDenom/,
+        https://github.com/truenomad/AgePopDenom
+BugReports: https://github.com/truenomad/AgePopDenom/issues
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2025-07-23 11:25:49 UTC; mohamedyusuf
+Author: Mohamed A. Yusuf [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9339-4613>),
+  Victor A. Alegana [aut] (ORCID:
+    <https://orcid.org/0000-0001-5177-9227>),
+  Chibuzor Christopher Nnanatu [aut] (ORCID:
+    <https://orcid.org/0000-0002-5841-3700>),
+  Andrew Tatem [aut] (ORCID: <https://orcid.org/0000-0002-7270-941X>)
+Maintainer: Mohamed A. Yusuf <moyusuf@who.int>
+Repository: CRAN
+Date/Publication: 2025-07-23 12:00:15 UTC

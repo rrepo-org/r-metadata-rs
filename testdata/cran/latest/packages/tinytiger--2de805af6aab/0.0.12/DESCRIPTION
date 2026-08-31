@@ -1,0 +1,32 @@
+Package: tinytiger
+Title: Lightweight Interface to TIGER/Line Shapefiles
+Version: 0.0.12
+Authors@R: c(
+    person("Christopher T.", "Kenny", email = "ctkenny@proton.me",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9386-6860")),
+    person("Cory", "McCartan", email = "mccartan@psu.edu", role = "aut"))
+Description: Download geographic shapes from the United States Census Bureau
+    TIGER/Line Shapefiles <https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html>.
+    Functions support downloading and reading in geographic boundary data.
+    All downloads can be set up with a cache to avoid multiple downloads.
+    Data is available back to 2000 for most geographies.
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: cli, glue, curl, sf
+Suggests: knitr, rappdirs, rmarkdown, testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/alarm-redist/tinytiger,
+        https://alarm-redist.org/tinytiger/
+BugReports: https://github.com/alarm-redist/tinytiger/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-22 16:09:57 UTC; chris
+Author: Christopher T. Kenny [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9386-6860>),
+  Cory McCartan [aut]
+Maintainer: Christopher T. Kenny <ctkenny@proton.me>
+Repository: CRAN
+Date/Publication: 2026-08-22 17:00:02 UTC

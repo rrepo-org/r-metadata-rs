@@ -1,0 +1,41 @@
+Package: SRscore
+Type: Package
+Title: Simple Transcriptome Meta-Analysis for Identifying
+        Stress-Responsive Genes
+Version: 0.1.2
+Author: Yusuke Fukuda [aut, cre],
+  Atsushi Fukushima [aut]
+Authors@R: c(person(given = "Yusuke",
+                    family = "Fukuda",
+                    role = c("aut", "cre"),
+                    email = "s823631038@kpu.ac.jp"),
+              person(given = "Atsushi",
+                    family = "Fukushima",
+                    role = "aut"))
+Maintainer: Yusuke Fukuda <s823631038@kpu.ac.jp>
+Description: Stress Response score (SRscore) is a stress responsiveness 
+    measure for transcriptome datasets and is based on the vote-counting 
+    method. The SRscore is determined to evaluate and score genes on the 
+    basis of the consistency of the direction of their regulation 
+    (Up-regulation, Down-regulation, or No change) under stress conditions 
+    across multiple analyzed research projects. This package is based on 
+    the HN-score (score based on the ratio of gene expression between
+    hypoxic and normoxic conditions) proposed by 
+    Tamura and Bono (2022) <doi:10.3390/life12071079>, and can calculate both 
+    the original method and an extended calculation method described in 
+    Fukuda et al. (2025) <doi:10.1093/plphys/kiaf105>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: dplyr, tidyr, utils, rlang
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), ggplot2, tibble,
+        ComplexHeatmap, clusterProfiler, org.At.tair.db, BiocStyle,
+        RColorBrewer, genefilter, DT
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2026-01-07 09:36:19 UTC; kpufukuda
+Repository: CRAN
+Date/Publication: 2026-01-08 18:50:19 UTC

@@ -1,0 +1,24 @@
+Package: peticontrast
+Title: Professional Contrast Coding for OLS Models
+Version: 0.1.0
+Authors@R: person("Peti", "Mester", role = c("aut", "cre"), email = "petyatoth2005@gmail.com")
+Description: Automates sum coding (also known as effect coding) for 
+    Ordinary Least Squares (OLS) regression models. This approach is 
+    specifically designed to handle seasonal time series and categorical 
+    variables by comparing each group to the grand mean, rather than a 
+    single baseline category. This ensures that the intercept represents 
+    the unweighted grand mean of the dependent variable. For a comprehensive 
+    overview of contrast coding systems, see the UCLA Advanced Research 
+    Computing documentation (2021) <https://stats.oarc.ucla.edu/r/library/r-library-contrast-coding-systems-for-categorical-variables/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: stats
+Suggests: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-22 10:51:15 UTC; petya
+Author: Peti Mester [aut, cre]
+Maintainer: Peti Mester <petyatoth2005@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-23 19:40:02 UTC

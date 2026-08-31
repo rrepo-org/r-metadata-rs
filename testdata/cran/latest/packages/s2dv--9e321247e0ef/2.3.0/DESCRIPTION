@@ -1,0 +1,65 @@
+Package: s2dv
+Title: Seasonal to Decadal Verification
+Version: 2.3.0
+Authors@R: c(
+    person("BSC-CNS", role = c("aut", "cph")),
+    person("An-Chi", "Ho", , "an.ho@bsc.es", role = c("aut")),
+    person("Nuria", "Perez-Zanon", , "nuria.perez@bsc.es", role = "aut"),
+    person("Roberto", "Bilbao", , "roberto.bilbao@bsc.es", role = "ctb"),
+    person("Josep", "Cos", , "josep.cos@bsc.es", role = "ctb"),
+    person("Carlos", "Delgado", , "carlos.delgado@bsc.es", role = "ctb"),
+    person("Llorenç", "Lledó", , "llorenc.lledo@bsc.es", role = "ctb"),
+    person("Andrea", "Manrique", , "andrea.manrique@bsc.es", role = "ctb"),
+    person("Deborah", "Verfaillie", , "deborah.verfaillie@bsc.es", role = "ctb"),
+    person("Eva", "Rifà", , "eva.rifarovira@bsc.es", role = "ctb"),
+    person("Victòria", "Agudetse", , "victoria.agudetse@bsc.es", role = "ctb"),
+    person("Nadia", "Milders", , "nadia.milders@bsc.es", role = "ctb"),
+    person("Ariadna", "Batalla", , "ariadna.batalla@bsc.es", role = c("ctb", "cre")),
+    person("Javier", "Corvillo", , "javier.corvillo@bsc.es", role = "ctb"))
+Description: An advanced version of package 's2dverification'. Intended for 
+    seasonal to decadal (s2d) climate forecast verification, but also applicable
+    to other types of forecasts or general climate analysis. This package is 
+    specifically designed for comparing experimental and observational datasets. 
+    It provides functionality for data retrieval, post-processing, skill score 
+    computation against observations, and visualization. Compared to 
+    's2dverification', 's2dv' is more compatible with the package 'startR', able 
+    to use multiple cores for computation and handle multi-dimensional arrays 
+    with a higher flexibility. The Climate Data Operators (CDO) version used in 
+    development is 1.9.8. Implements methods described in Wilks (2011) 
+    <doi:10.1016/B978-0-12-385022-5.00008-7>, DelSole and Tippett 
+    (2016) <doi:10.1175/MWR-D-15-0218.1>, Kharin et al. (2012) 
+    <doi:10.1029/2012GL052647>, Doblas-Reyes et al. (2003) 
+    <doi:10.1007/s00382-003-0350-4>.
+Depends: R (>= 3.6.0)
+Imports: abind, bigmemory, graphics, grDevices, maps, mapproj, methods,
+        parallel, ClimProjDiags, stats, plyr, ncdf4, NbClust,
+        multiApply (>= 2.1.1), SpecsVerification (>= 0.5.0), easyNCDF,
+        easyVerification, signal, zoo
+Suggests: testthat
+License: GPL-3
+URL: https://gitlab.earth.bsc.es/es/s2dv/
+BugReports: https://gitlab.earth.bsc.es/es/s2dv/-/issues
+LazyData: true
+SystemRequirements: cdo
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-11 13:49:09 UTC; abatalla
+Author: BSC-CNS [aut, cph],
+  An-Chi Ho [aut],
+  Nuria Perez-Zanon [aut],
+  Roberto Bilbao [ctb],
+  Josep Cos [ctb],
+  Carlos Delgado [ctb],
+  Llorenç Lledó [ctb],
+  Andrea Manrique [ctb],
+  Deborah Verfaillie [ctb],
+  Eva Rifà [ctb],
+  Victòria Agudetse [ctb],
+  Nadia Milders [ctb],
+  Ariadna Batalla [ctb, cre],
+  Javier Corvillo [ctb]
+Maintainer: Ariadna Batalla <ariadna.batalla@bsc.es>
+Repository: CRAN
+Date/Publication: 2026-05-12 05:20:02 UTC

@@ -1,0 +1,43 @@
+Package: tlda
+Title: Tools for Language Data Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Lukas", "Soenning", 
+      email = "lukas.soenning@uni-bamberg.de", 
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-2705-395X")),
+    person("German Research Foundation (DFG)", 
+      role = "fnd",
+      comment = c(ROR = "018mejw64", "Grant number 548274092")))
+Description: Support functions and datasets to facilitate the analysis of linguistic
+    data. The current focus is on the calculation of corpus-linguistic dispersion
+    measures as described in Gries (2021) <doi:10.1007/978-3-030-46216-1_5> and 
+    Soenning (2025) <doi:10.3366/cor.2025.0326>. The most commonly used parts-based 
+    indices are implemented, including different formulas and modifications that are 
+    found in the literature, with the additional option to obtain frequency-adjusted 
+    scores. Dispersion scores can be computed based on individual count variables or 
+    a term-document matrix.  
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+LazyData: true
+URL: https://github.com/lsoenning/tlda
+BugReports: https://github.com/lsoenning/tlda/issues
+VignetteBuilder: knitr
+Collate: 'biber150_ice_gb.R' 'biber150_spokenBNC1994.R'
+        'biber150_spokenBNC2014.R' 'brown_metadata.R' 'disp.R'
+        'disp_DA.R' 'disp_DKL.R' 'disp_DP.R' 'disp_R.R' 'disp_S.R'
+        'dispersion_min_max_functions.R' 'ice_metadata.R'
+        'spokenBNC1994_metadata.R' 'spokenBNC2014_metadata.R'
+NeedsCompilation: no
+Packaged: 2025-04-24 19:55:00 UTC; ba4rh5
+Author: Lukas Soenning [aut, cre, cph]
+    (<https://orcid.org/0000-0002-2705-395X>),
+  German Research Foundation (DFG) [fnd] (018mejw64, Grant number
+    548274092)
+Maintainer: Lukas Soenning <lukas.soenning@uni-bamberg.de>
+Repository: CRAN
+Date/Publication: 2025-04-25 12:40:01 UTC

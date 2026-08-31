@@ -1,0 +1,31 @@
+Package: kvkapiR
+Title: Interface to the Dutch Chamber of Commerce (KvK) API
+Version: 0.1.2
+Authors@R: 
+    person("Coen", "Eisma", , "coeneisma@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0007-9001-2572"))
+Description: Access business registration data from the Dutch Chamber of
+    Commerce (Kamer van Koophandel, KvK) through their official API
+    <https://developers.kvk.nl/>. Search for companies by name, location,
+    or registration number. Retrieve detailed business profiles,
+    establishment information, and company name histories. Built on
+    'httr2' for robust API interaction with automatic pagination, error
+    handling, and usage tracking.
+License: MIT + file LICENSE
+URL: https://coeneisma.github.io/kvkapiR/,
+        https://github.com/coeneisma/kvkapiR/
+BugReports: https://github.com/coeneisma/kvkapiR/issues
+Imports: cli, dplyr, httr2, lifecycle, purrr, tibble, tidyr, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr
+Config/Needs/website: rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-06-22 21:05:52 UTC; coeneisma
+Author: Coen Eisma [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0007-9001-2572>)
+Maintainer: Coen Eisma <coeneisma@gmail.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2025-06-25 15:20:02 UTC

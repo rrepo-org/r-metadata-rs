@@ -1,0 +1,24 @@
+Package: spFFBS
+Title: Spatiotemporal Propagation for Multivariate Bayesian Dynamic
+        Learning
+Version: 1.0-1
+Authors@R: 
+    person("Luca", "Presicce", , "l.presicce@campus.unimib.it", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0005-7062-3523"))
+Maintainer: Luca Presicce <l.presicce@campus.unimib.it>
+Description: Implementation of the Forward Filtering Backward Sampling (FFBS) algorithm with Dynamic Bayesian Predictive Stacking (DYNBPS) integration for multivariate spatiotemporal models, as introduced in "Adaptive Markovian Spatiotemporal Transfer Learning in Multivariate Bayesian Modeling" (Presicce and Banerjee, 2026+) <doi:10.48550/arXiv.2602.08544>. This methodology enables efficient Bayesian multivariate spatiotemporal modeling, utilizing dynamic predictive stacking to improve inference across multivariate time series of spatial datasets. The core functions leverage 'C++' for high-performance computation, making the framework well-suited for large-scale spatiotemporal data analysis in parallel computing environments.
+LinkingTo: Rcpp, RcppArmadillo
+Imports: spBPS, Rcpp (>= 1.1.1), abind
+Suggests: doParallel, mniw, MBA, ggplot2, patchwork, reshape2, knitr,
+        rmarkdown
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+URL: https://lucapresicce.github.io/spFFBS/
+NeedsCompilation: yes
+Packaged: 2026-07-15 17:16:35 UTC; presi
+Author: Luca Presicce [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-7062-3523>)
+Repository: CRAN
+Date/Publication: 2026-07-15 19:20:02 UTC

@@ -1,0 +1,109 @@
+Package: crmPack
+Title: Object-Oriented Implementation of Dose Escalation Designs
+Version: 2.2.1
+Authors@R: c(
+    person("Daniel", "Sabanés Bové", , "daniel.sabanes_bove@rconis.com", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0002-0176-9239")),
+    person("Wai", "Yin Yeung", , "winnie.yeung@roche.com", role = "aut"),
+    person("Burak Kuersad", "Guenhan", , "burakgunhan@gmail.com", role = "aut"),
+    person("Giuseppe", "Palermo", , "giuseppe.palermo@roche.com", role = "aut"),
+    person("Thomas", "Jaki", , "jaki.thomas@gmail.com", role = "aut"),
+    person("Jiawen", "Zhu", , "zhu.jiawen@gene.com", role = "aut"),
+    person("Ziwei", "Liao", , "ziwei.liao.fdu@gmail.com", role = "aut"),
+    person("Dimitris", "Kontos", , "dimitris.kontos@bayer.com", role = "aut"),
+    person("Marlene", "Schulte-Goebel", , "marlene.schulte-goebel@merckgroup.com", role = "aut"),
+    person("Doug", "Kelkhoff", , "doug.kelkhoff@gmail.com", role = "aut",
+           comment = c(ORCID = "0009-0003-7845-4061")),
+    person("Oliver", "Boix", , "oliver.boix@bayer.com", role = "aut"),
+    person("Robert", "Adams", , "robert.adams@bayer.com", role = "aut"),
+    person("Clara", "Beck", , "clara.beck@bayer.com", role = "aut"),
+    person("John", "Kirkpatrick", , "john@puzzledface.net", role = "aut"),
+    person("Wojciech", "Wójciak", , "wojciech.wojciak@gmail.com", role = "aut"),
+    person("Guanya", "Peng", , role = "aut"),
+    person("Prerana", "Chandratre", , role = "aut"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
+    person("Merck Healthcare KGaA", role = c("cph", "fnd")),
+    person("Bayer AG", role = c("cph", "fnd")),
+    person("RPACT GmbH", role = c("cph", "fnd"))
+  )
+Description: Implements a wide range of dose escalation
+    designs. The focus is on model-based designs, ranging from classical and 
+    modern continual reassessment methods (CRMs) based on dose-limiting toxicity
+    endpoints to dual-endpoint designs taking into account a biomarker/efficacy
+    outcome. Bayesian inference is performed via MCMC sampling in JAGS, and it is easy
+    to setup a new design with custom JAGS code. However, it is also possible to
+    implement 3+3 designs for comparison or models with non-Bayesian estimation. 
+    The whole package is written in a modular form in the S4 class system, making it 
+    very flexible for adaptation to new models, escalation or stopping rules. 
+    Further details are presented in 
+    Sabanés Bové et al. (2019) <doi:10.18637/jss.v089.i10>.
+License: GPL (>= 2)
+URL: https://docs.crmpack.org/
+BugReports: https://github.com/openpharma/crmPack/issues
+Depends: ggplot2 (>= 3.0.0), graphics, R (>= 4.1.0)
+Imports: checkmate (>= 2.2.0), dplyr, futile.logger, GenSA, gridExtra,
+        kableExtra, knitr, lifecycle, magrittr, methods, mvtnorm,
+        parallel, parallelly, Rdpack, rjags, rlang, survival, tibble,
+        tidyselect (>= 1.2.0), tools, utils
+Suggests: bookdown, broom, covr, data.tree, DiagrammeR, ggmcmc, quarto
+        (>= 1.4), rmarkdown, stringr, testthat (>= 3.0.0), tidyr,
+        vdiffr, withr
+VignetteBuilder: knitr, quarto
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyLoad: yes
+RdMacros: Rdpack
+Collate: 'Backfill-validity.R' 'CrmPackClass-class.R'
+        'Rules-validity.R' 'helpers.R' 'Rules-class.R'
+        'Backfill-class.R' 'Backfill-methods.R'
+        'CrmPackClass-methods.R' 'Data-validity.R' 'Data-class.R'
+        'helpers_data.R' 'Data-methods.R' 'ModelParams-validity.R'
+        'ModelParams-class.R' 'Model-validity.R' 'helpers_jags.R'
+        'Model-class.R' 'HierarchicalModel-class.R'
+        'TwoDrugsCombo-class.R' 'Design-validity.R' 'Design-class.R'
+        'McmcOptions-validity.R' 'McmcOptions-class.R'
+        'McmcOptions-methods.R' 'Samples-validity.R' 'Samples-class.R'
+        'logger.R' 'helpers_covr.R' 'mcmc.R' 'Simulations-validity.R'
+        'Simulations-class.R' 'helpers_broom.R' 'helpers_rules.R'
+        'Model-methods.R' 'checkmate.R' 'Rules-methods.R'
+        'Design-methods.R' 'HierarchicalDesign-validity.R'
+        'HierarchicalDesign-class.R' 'HierarchicalDesign-methods.R'
+        'fromQuantiles.R' 'Samples-methods.R' 'Simulations-methods.R'
+        'crmPack-package.R' 'helpers_backfill.R' 'helpers_design.R'
+        'helpers_knitr.R' 'helpers_knitr_Backfill.R'
+        'helpers_knitr_CohortSize.R' 'helpers_knitr_Design.R'
+        'helpers_knitr_GeneralData.R' 'helpers_knitr_GeneralModel.R'
+        'helpers_knitr_Increments.R' 'helpers_knitr_NextBest.R'
+        'helpers_knitr_Opening.R' 'helpers_knitr_Recruitment.R'
+        'helpers_knitr_SafetyWindow.R' 'helpers_knitr_Stopping.R'
+        'helpers_model.R' 'helpers_samples.R' 'helpers_simulations.R'
+        'utils-pipe.R' 'utils.R'
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 13:22:47 UTC; daniel
+Author: Daniel Sabanés Bové [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0176-9239>),
+  Wai Yin Yeung [aut],
+  Burak Kuersad Guenhan [aut],
+  Giuseppe Palermo [aut],
+  Thomas Jaki [aut],
+  Jiawen Zhu [aut],
+  Ziwei Liao [aut],
+  Dimitris Kontos [aut],
+  Marlene Schulte-Goebel [aut],
+  Doug Kelkhoff [aut] (ORCID: <https://orcid.org/0009-0003-7845-4061>),
+  Oliver Boix [aut],
+  Robert Adams [aut],
+  Clara Beck [aut],
+  John Kirkpatrick [aut],
+  Wojciech Wójciak [aut],
+  Guanya Peng [aut],
+  Prerana Chandratre [aut],
+  F. Hoffmann-La Roche AG [cph, fnd],
+  Merck Healthcare KGaA [cph, fnd],
+  Bayer AG [cph, fnd],
+  RPACT GmbH [cph, fnd]
+Maintainer: Daniel Sabanés Bové <daniel.sabanes_bove@rconis.com>
+Repository: CRAN
+Date/Publication: 2026-07-27 14:10:02 UTC

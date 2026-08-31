@@ -1,0 +1,31 @@
+Package: rcdo
+Title: Wrapper of 'CDO' Operators
+Version: 0.3.2
+Authors@R: c(
+      person("Elio", "Campitelli", , "eliocampitelli@gmail.com", role = c("cre", "aut", "cph"),
+             comment = c(ORCID = "0000-0002-7742-9230")),
+      person("MPI für Meteorologie", role = "cph")
+    )
+Description: Provides a translation layer between 'R' and 'CDO' operators. Each 
+  operator is it's own function with documentation. Nested or piped functions
+  will be translated into 'CDO' chains. 
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+SystemRequirements: cdo
+URL: https://eliocamp.github.io/rcdo/, https://github.com/eliocamp/rcdo
+Imports: cli, R6, rlang
+BugReports: https://github.com/eliocamp/rcdo/issues
+Suggests: glue, knitr, markdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-11-27 04:11:30 UTC; user1
+Author: Elio Campitelli [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-7742-9230>),
+  MPI für Meteorologie [cph]
+Maintainer: Elio Campitelli <eliocampitelli@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-28 13:00:02 UTC

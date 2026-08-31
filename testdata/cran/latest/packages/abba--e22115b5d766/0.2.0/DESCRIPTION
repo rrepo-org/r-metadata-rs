@@ -1,0 +1,58 @@
+Package: abba
+Title: Batch Execution of R Programs on 'Kubernetes', 'SLURM', and
+        'Posit Workbench'
+Version: 0.2.0
+Authors@R: 
+    c(
+    person(given = "Eli",
+           family = "Miller",
+           role = "aut",
+           email = "Eli.Miller@AtorusResearch.com",
+           comment = c(ORCID = "0000-0002-2127-9456")),
+    person(given = "Mike",
+           family = "Stackhouse",
+           role = c("aut", "cre"),
+           email = "mike.stackhouse@atorusresearch.com",
+           comment = c(ORCID = "0000-0001-6030-723X")),
+    person(given = "Ross",
+           family = "Didenko",
+           role = c("aut"),
+           email = "Rostyslav.Didenko@atorusresearch.com"),
+    person(given = "Yevhenii",
+           family = "Boiko",
+           role = c("aut"),
+           email = "Yevhenii.Boiko@atorusresearch.com"),
+    person("Atorus Research, Inc.", role = "cph")
+           )
+Description: Submit and monitor batch execution of R programs across
+    distributed computing backends including 'Kubernetes', 'SLURM', and
+    'Posit Workbench'. Provides end-user job submission functions, cluster
+    interface functions using 'kubectl' and 'SLURM' commands, and a
+    'plumber' API template for secure identity segregation. Supports
+    parallel and sequential batch execution, file-based caching to skip
+    unchanged programs, and 'logrx' integration for execution logging.
+License: Apache License (>= 2)
+URL: https://atorus-research.github.io/abba/,
+        https://github.com/atorus-research/abba
+BugReports: https://github.com/atorus-research/abba/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: yaml, uuid, stringr, httr2, magrittr, tools, rstudioapi,
+        digest, tidyr
+Suggests: testthat (>= 3.0.0), mockery, knitr, rmarkdown, logrx
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+SystemRequirements: kubectl (optional, for Kubernetes backend), SLURM
+        (optional, sbatch/scontrol/sacct/squeue for SLURM backend),
+        Posit Workbench (optional, for Workbench backend)
+NeedsCompilation: no
+Packaged: 2026-04-23 14:18:31 UTC; mstackhouse
+Author: Eli Miller [aut] (ORCID: <https://orcid.org/0000-0002-2127-9456>),
+  Mike Stackhouse [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6030-723X>),
+  Ross Didenko [aut],
+  Yevhenii Boiko [aut],
+  Atorus Research, Inc. [cph]
+Maintainer: Mike Stackhouse <mike.stackhouse@atorusresearch.com>
+Repository: CRAN
+Date/Publication: 2026-04-28 18:10:14 UTC

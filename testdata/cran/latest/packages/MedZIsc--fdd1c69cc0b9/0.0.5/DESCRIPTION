@@ -1,0 +1,28 @@
+Package: MedZIsc
+Type: Package
+Title: Statistical Framework for Co-Mediators of Zero-Inflated
+        Single-Cell Data
+Version: 0.0.5
+Authors@R: 
+    c(person("Seungjun", "Ahn", email = "seungjun.ahn@mountsinai.org",
+		 role = c("cre", "aut"),
+	    comment = c(ORCID = "0000-0002-4816-8924")),
+    person("Zhigang", "Li", email = "zhigang.li@ufl.edu",
+		 role = c("ctb")))
+Description: A causal mediation framework for single-cell data that incorporates two key features ('MedZIsc', pronounced Magics): (1) zero-inflation using beta regression and (2) overdispersed expression counts using negative binomial regression. This approach also includes a screening step based on penalized and marginal models to handle high-dimensionality. Full methodological details are available in our recent preprint by Ahn S et al. (2025) <doi:10.48550/arXiv.2507.06113>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: MASS, betareg, glmnet
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-27 03:07:02 UTC; seungjunahn
+Author: Seungjun Ahn [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-4816-8924>),
+  Zhigang Li [ctb]
+Maintainer: Seungjun Ahn <seungjun.ahn@mountsinai.org>
+Repository: CRAN
+Date/Publication: 2026-08-28 09:50:43 UTC

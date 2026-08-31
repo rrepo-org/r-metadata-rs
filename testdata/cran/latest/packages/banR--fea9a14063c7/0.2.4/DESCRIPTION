@@ -1,0 +1,28 @@
+Package: banR
+Type: Package
+Title: Client for the 'BAN' API
+Version: 0.2.4
+Authors@R: c(
+    person("Joel", "Gombin", email = "joel.gombin@gmail.com", role = c("cre", "aut")),
+    person("Paul-Antoine", "Chevalier", email = "pachevalier@gmail.com", role = "aut"))
+Description: A client for the 'Base Adresses Nationale' ('BAN') API, which allows to (batch)
+    geocode and reverse-geocode French addresses. For more information about the 'BAN' and its API, please see <https://adresse.data.gouv.fr/outils/api-doc/adresse>. 
+License: GPL-3
+LazyData: TRUE
+Depends: R (>= 2.10)
+Imports: dplyr (>= 0.7.0), httr, readr, magrittr, tibble, purrr, rlang,
+        utils, stringr, tidyr
+Suggests: testthat, knitr, rmarkdown
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+URL: https://joelgombin.github.io/banR/,
+        https://github.com/joelgombin/banR/
+BugReports: https://github.com/joelgombin/banR/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-11-26 18:09:00 UTC; joel
+Author: Joel Gombin [cre, aut],
+  Paul-Antoine Chevalier [aut]
+Maintainer: Joel Gombin <joel.gombin@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-28 13:10:27 UTC

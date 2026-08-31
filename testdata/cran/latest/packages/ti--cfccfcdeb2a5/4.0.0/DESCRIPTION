@@ -1,0 +1,28 @@
+Package: ti
+Title: Time Intelligence and Customer Segmentation for Financial
+        Analysis
+Description: Calculate time intelligence metrics for financial planning and
+    analysis. 'ti' provides functions for period-over-period comparisons
+    (year-over-year, month-over-month), period-to-date calculations (YTD, MTD,
+    QTD), and customer segmentation (ABC analysis, cohorts). Supports standard
+    and retail calendars (4-4-5, 4-5-4, 5-4-4) with both in-memory and database
+    backends via 'dbplyr'.
+Version: 4.0.0
+Authors@R: 
+    person(given="Alejandro",family= "Hagan", email="alejandro.hagan@outlook.com", role = c("aut", "cre"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: assertthat, cli, DBI, dbplyr, dplyr, duckdb, glue, janitor,
+        lubridate, rlang, S7, scales, tidyr
+Suggests: testthat (>= 3.0.0), cohorts, quarto, devtools, tibble, gt,
+        fansi, crayon, contoso
+Config/testthat/edition: 3
+Depends: R (>= 4.2.0)
+URL: https://codeberg.org/usrbinr/ti
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2026-02-07 05:22:48 UTC; hagan
+Author: Alejandro Hagan [aut, cre]
+Maintainer: Alejandro Hagan <alejandro.hagan@outlook.com>
+Date/Publication: 2026-02-10 20:30:02 UTC

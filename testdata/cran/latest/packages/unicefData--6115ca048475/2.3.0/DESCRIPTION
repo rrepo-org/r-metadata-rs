@@ -1,0 +1,36 @@
+Package: unicefData
+Title: Download Indicators from UNICEF Data Warehouse
+Version: 2.3.0
+Authors@R: c(
+    person("Joao Pedro", "Azevedo", email = "jpazevedo@unicef.org", role = c("aut", "cre")),
+    person("Lucas", "Rodrigues", role = "ctb"),
+    person("Yang", "Liu", role = "ctb"),
+    person("Karen", "Avanesian", role = "ctb")
+  )
+Description: An R client to fetch SDMX (Statistical Data and Metadata eXchange)
+    CSV series from the UNICEF Data Warehouse <https://data.unicef.org/>.
+    Part of a trilingual suite also available for 'Python' and 'Stata'.
+    Features include automatic pagination, caching with memoisation, country
+    name lookups, metadata versioning (vintages), and comprehensive indicator
+    support for SDG (Sustainable Development Goals) monitoring.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: httr, readr, dplyr, tibble, xml2, memoise, countrycode, yaml,
+        tools, jsonlite, magrittr, purrr, rlang, digest, tidyr
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/unicef-drp/unicefData,
+        https://jpazvd.github.io/
+BugReports: https://github.com/unicef-drp/unicefData/issues
+NeedsCompilation: no
+Packaged: 2026-02-25 02:33:03 UTC; jpazevedo
+Author: Joao Pedro Azevedo [aut, cre],
+  Lucas Rodrigues [ctb],
+  Yang Liu [ctb],
+  Karen Avanesian [ctb]
+Maintainer: Joao Pedro Azevedo <jpazevedo@unicef.org>
+Repository: CRAN
+Date/Publication: 2026-03-03 21:20:08 UTC

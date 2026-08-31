@@ -1,0 +1,25 @@
+Package: fkcentroids
+Title: Functional K-Centroids Clustering Using Phase and Amplitude
+        Components
+Version: 0.0.3
+Authors@R: c(
+  person("Seungwoo", "Kang", email = "kangsw@skku.edu", role = c("aut", "cre"), 
+  comment=c(ORCID="0000-0001-8082-0794")),
+  person("Hee-Seok", "Oh", email = "heeseok@stats.snu.ac.kr", role = c("aut")))
+Description: Cluster functional data using phase and amplitude components of each function. By weighting phase and amplitude variation differently, clustering results can be obtained from multiple perspectives. Routines for synchronization, functional k-means clustering, and functional k-medians clustering are provided.
+URL: https://github.com/seungwoo-stat/fkcentroids
+BugReports: https://github.com/seungwoo-stat/fkcentroids/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: fdasrvf, graphics, Kmedians, stats, withr
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-03-20 00:12:05 UTC; SeungwooKang
+Author: Seungwoo Kang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8082-0794>),
+  Hee-Seok Oh [aut]
+Maintainer: Seungwoo Kang <kangsw@skku.edu>
+Repository: CRAN
+Date/Publication: 2026-03-24 09:10:08 UTC

@@ -1,0 +1,34 @@
+Package: ISMtools
+Type: Package
+Title: Interpretive Structural Modelling Analysis Tools
+Version: 0.1.0
+Authors@R: c(
+    person("Yi", "Tang", 
+           email = "tangyi@cidp.edu.cn", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4374-6334")))
+Description: A comprehensive toolkit for Interpretive Structural Modelling (ISM) 
+    analysis. Provides functions for creating adjacency matrices from various 
+    input formats including SSIM (Structural Self-Interaction Matrix), computing 
+    reachability matrices using Warshall's algorithm, performing hierarchical 
+    level partitioning, MICMAC (Cross-Impact Matrix Multiplication Applied to 
+    Classification) analysis, and visualizing ISM structures through both static 
+    and interactive diagrams. ISM is a methodology for identifying and summarizing 
+    relationships among specific elements which define an issue or problem, 
+    as described in Warfield (1974) <doi:10.1109/TSMC.1974.5408524>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: graphics, stats
+Suggests: igraph, visNetwork, viridis, testthat (>= 3.0.0), knitr,
+        rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-09 03:46:49 UTC; tangy
+Author: Yi Tang [aut, cre] (ORCID: <https://orcid.org/0000-0002-4374-6334>)
+Maintainer: Yi Tang <tangyi@cidp.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-03-12 19:30:08 UTC

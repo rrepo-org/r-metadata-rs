@@ -1,0 +1,51 @@
+Package: llmimpute
+Type: Package
+Title: Missing Data Imputation via Language Models and Statistics
+Version: 0.1.0
+Authors@R: c(
+    person("Sadikul", "Islam", email = "sadikul.islamiasri@gmail.com", role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0003-2924-7122")),
+    person("Rajesh", "Kaushal", role = "aut"))
+Description: Provides missing data imputation through two complementary
+    engines: a large language model engine that communicates with the
+    'Anthropic' 'Claude' application programming interface for
+    context-aware semantic imputation, and a fully self-contained offline
+    engine implementing nineteen statistical and machine learning algorithms
+    entirely in base R with no additional package dependencies. Offline
+    methods include mean, median, mode, last observation carried forward,
+    next observation carried backward, hot-deck, predictive mean matching,
+    k-nearest neighbours, ordinary least-squares regression, Lasso with
+    coordinate descent, Ridge with closed-form solution, Bayesian Ridge
+    regression with evidence approximation following MacKay (1992), support
+    vector regression with a radial basis function kernel, classification
+    and regression trees, random forests, gradient boosting, iterative
+    random forest imputation, principal component analysis imputation via
+    iterative singular value decomposition, and nuclear-norm minimisation
+    via singular value thresholding. When no API key is available the
+    package automatically falls back to the offline engine, ensuring full
+    operation in environments without internet access. Every imputed value
+    is accompanied by a confidence score and a plain-language reasoning
+    string, producing reproducible audit trails. The automatic method
+    selector chooses the best algorithm per column based on data type,
+    skewness, missingness rate, and inter-column correlations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Language: en-US
+Config/Needs/check: spelling
+Depends: R (>= 4.1.0)
+Imports: httr2 (>= 1.0.0), methods, jsonlite (>= 1.8.0), cli (>=
+        3.6.0),
+Suggests: testthat (>= 3.0.0), knitr (>= 1.40), rmarkdown (>= 2.14),
+        withr (>= 2.5.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+BugReports: https://cran.r-project.org/submit.html
+NeedsCompilation: no
+Packaged: 2026-06-18 06:25:03 UTC; acer
+Maintainer: Sadikul Islam <sadikul.islamiasri@gmail.com>
+Author: Sadikul Islam [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2924-7122>),
+  Rajesh Kaushal [aut]
+Repository: CRAN
+Date/Publication: 2026-06-23 13:40:02 UTC

@@ -1,0 +1,33 @@
+Package: pccc
+Title: Pediatric Complex Chronic Conditions
+Version: 1.0.7
+Authors@R: c(
+    person(given = "Peter", family = "DeWitt",    email = "dewittpe@gmail.com",             role = c("aut"),        comment = c(ORCID = "0000-0002-6391-0795")),
+    person(given = "Tell",  family = "Bennett",   email = "tell.bennett@cuanschutz.edu",    role = c("ctb"),        comment = c(ORCID = "0000-0003-1483-4236")),
+    person(given = "James", family = "Feinstein", email = "james.feinstein@cuanschutz.edu", role = c("aut"),        comment = c(ORCID = "0000-0003-3074-8805")),
+    person(given = "Seth",  family = "Russell",   email = "seth.russell@cuanschutz.edu",    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-2436-1367"))
+    )
+Description: An implementation of the pediatric complex chronic conditions (CCC)
+    classification system using R and C++.
+Depends: R (>= 3.5.0)
+License: GPL-2
+Encoding: UTF-8
+Language: en-us
+LazyData: true
+Imports: dplyr (>= 1.0.0), Rcpp (>= 1.0.11)
+Suggests: covr, knitr, rmarkdown, readr
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp (>= 1.0.11)
+VignetteBuilder: knitr
+URL: https://github.com/CUD2V/pccc
+BugReports: https://github.com/CUD2V/pccc/issues
+NeedsCompilation: yes
+Packaged: 2026-01-22 21:54:34 UTC; seth
+Author: Peter DeWitt [aut] (ORCID: <https://orcid.org/0000-0002-6391-0795>),
+  Tell Bennett [ctb] (ORCID: <https://orcid.org/0000-0003-1483-4236>),
+  James Feinstein [aut] (ORCID: <https://orcid.org/0000-0003-3074-8805>),
+  Seth Russell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2436-1367>)
+Maintainer: Seth Russell <seth.russell@cuanschutz.edu>
+Repository: CRAN
+Date/Publication: 2026-01-23 03:50:02 UTC

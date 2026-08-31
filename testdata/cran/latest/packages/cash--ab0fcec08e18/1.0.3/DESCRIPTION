@@ -1,0 +1,37 @@
+Package: cash
+Version: 1.0.3
+Title: Discrete Choice and Competitive Reactions: End-to-End Simulation
+Authors@R: c(
+    person("Jan H. R.", "Dressler", email = "jhrd13@tu-clausthal.de", role = c("aut", "cre", "cph")),
+	person("Peter", "Kurz", role = "ths"),
+	person("Winfried J.", "Steiner", role = "ths"))
+Author: Jan H. R. Dressler [aut, cre, cph],
+  Peter Kurz [ths],
+  Winfried J. Steiner [ths]
+Maintainer: Jan H. R. Dressler <jhrd13@tu-clausthal.de>
+License: GPL (>= 3)
+Imports: reshape2, ggplot2, idefix (>= 1.1.0), DoE.base, evd, bayesm,
+        coda, ggridges, foreach, doParallel, parallel, doRNG, Rcpp,
+        arrangements, grDevices, stats, utils
+LinkingTo: Rcpp
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Repository: CRAN
+Description: Although discrete choice (choice-based conjoint) analysis has become a widely used 
+        technique for the elicitation of consumer preferences and hence a foundation for product 
+	design, to the best of our knowledge, there exists neither free and open-source nor 
+	commercial software that covers the game-theoretic simulation of competitive reactions among 
+	firms based on discrete choice models to improve decision making beyond traditional product 
+	(line) optimization. The package does not only provide functions to fill this gap but 
+	comprises an entire simulation pipeline including the upstream processes of discrete choice 
+	analysis itself. It ranges from preference generation, choice design, design assessment, 
+	error and response simulation, through hierarchical Bayesian estimation of mixed logit models 
+	as well as convergence and model assessment, to Nash equilibrium computation. Doing so, it 
+	partly draws from established packages concerned with discrete choice analysis. While its 
+	structure generally aims towards end-to-end simulation as well as simulation of competitive 
+	dynamics based on real data, all its key elements mentioned above may be of use independently 
+	of each other. For implementation and application details, see Dressler et al. (2026) 
+	<doi:10.48550/arXiv.2606.15593>.
+NeedsCompilation: yes
+Packaged: 2026-06-16 05:55:26 UTC; jan_d
+Date/Publication: 2026-06-16 06:50:27 UTC

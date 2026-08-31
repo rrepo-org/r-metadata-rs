@@ -1,0 +1,45 @@
+Package: rabhit
+Type: Package
+Title: Inference Tool for Antibody Haplotype
+Version: 0.4.0
+Authors@R: c(person("Ayelet", "Peres", role=c("aut","cre"), 
+                    email="ayelet.peres@yale.edu"),
+            person("Moriah", "Gidoni", role=c("aut"), 
+                    email="moriah.cohen@biu.ac.il"),
+             person("Gur", "Yaari", role=c("aut","cph"), 
+                    email="gur.yaari@biu.ac.il"))
+Description: Infers V-D-J (Variable-Diversity-Joining) haplotypes and gene
+    deletions from AIRR-seq (Adaptive Immune Receptor Repertoire sequencing)
+    data for Ig (Immunoglobulin) and TR (T cell Receptor) chains, based on J
+    (Joining), D (Diversity), or V (Variable) genes as anchor, by adapting a
+    Bayesian framework.
+    It also calculates a Bayes factor, a number that indicates the certainty level of the inference, for each haplotyped gene.
+    Citation:
+    Gidoni, et al (2019) <doi:10.1038/s41467-019-08489-3>.
+    Peres and Gidoni, et al (2019) <doi:10.1093/bioinformatics/btz481>.
+License: CC BY-SA 4.0
+URL: https://github.com/ayeletperes/rabhit,
+        https://ayeletperes.github.io/rabhit/
+BugReports: https://github.com/ayeletperes/rabhit/issues
+LazyData: true
+BuildVignettes: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: ggplot2 (>= 3.2.0), dplyr (>= 1.0.0), tidyr (>= 1.0.0),
+        cowplot (>= 0.9.1), gtable (>= 0.3.0), grid, stats, utils,
+        graphics, grDevices
+Suggests: knitr, rmarkdown, plotly (>= 4.7.1), htmlwidgets (>= 1.3.0),
+        ggdendro (>= 0.1.20), piglet, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Config/testthat/edition: 3
+Collate: 'Data.R' 'rabhit.R' 'asc_support.R' 'internal_functions.R'
+        'functions.R' 'graphic_functions.R' 'zzz.R'
+Packaged: 2026-07-16 19:11:48 UTC; ayelet
+Author: Ayelet Peres [aut, cre],
+  Moriah Gidoni [aut],
+  Gur Yaari [aut, cph]
+Maintainer: Ayelet Peres <ayelet.peres@yale.edu>
+Repository: CRAN
+Date/Publication: 2026-07-24 09:30:02 UTC

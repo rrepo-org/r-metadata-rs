@@ -1,0 +1,37 @@
+Package: a5R
+Title: 'A5' Discrete Global Grid System
+Version: 0.5.0
+Authors@R: c(
+    person("Hugh", "Graham", role = c("aut", "cre"),
+           email = "hugh@belian.earth"),
+    person("belian.earth", role = "cph")
+    )
+Description: Bindings for the "A5 geospatial index"
+    <https://a5geo.org/>. 'A5' partitions the Earth's surface into
+    pentagonal cells across 31 resolution levels using an equal-area
+    projection onto a dodecahedron. Provides functions for indexing
+    coordinates to cells, traversing the cell hierarchy, computing cell
+    boundaries, and compacting/uncompacting cell sets. Powered by the
+    'A5' 'Rust' crate via 'extendr'.
+License: Apache License (>= 2)
+URL: https://github.com/belian-earth/a5R,
+        https://belian-earth.github.io/a5R/
+BugReports: https://github.com/belian-earth/a5R/issues
+Depends: R (>= 4.2)
+Imports: cli, rlang (>= 1.1.0), units, vctrs (>= 0.6.0), wk (>= 0.9.0)
+Suggests: arrow, knitr, pillar, rmarkdown, sf, terra, testthat (>=
+        3.0.0), tibble, withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/rextendr/version: 0.5.0
+SystemRequirements: Cargo (Rust's package manager), rustc
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-01 21:26:54 UTC; hugh
+Author: Hugh Graham [aut, cre],
+  belian.earth [cph]
+Maintainer: Hugh Graham <hugh@belian.earth>
+Repository: CRAN
+Date/Publication: 2026-07-02 03:20:30 UTC

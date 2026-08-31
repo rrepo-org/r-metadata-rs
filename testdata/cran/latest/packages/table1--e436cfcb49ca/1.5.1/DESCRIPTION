@@ -1,0 +1,26 @@
+Package: table1
+Type: Package
+Version: 1.5.1
+Date: 2025-09-19
+Title: Tables of Descriptive Statistics in HTML
+Authors@R: person("Benjamin", "Rich", role=c("aut", "cre", "cph"), email="mail@benjaminrich.net")
+Author: Benjamin Rich [aut, cre, cph]
+Maintainer: Benjamin Rich <mail@benjaminrich.net>
+URL: https://github.com/benjaminrich/table1
+BugReports: https://github.com/benjaminrich/table1/issues
+Description: Create HTML tables of descriptive statistics, as one would expect
+    to see as the first table (i.e. "Table 1") in a medical/epidemiological journal
+    article.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: stats,Formula,knitr,htmltools,yaml,methods
+Suggests:
+        boot,MatchIt,rmarkdown,printr,kableExtra,flextable,officer,Hmisc,survey
+VignetteBuilder: knitr
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-09-19 16:22:47 UTC; benja
+Repository: CRAN
+Date/Publication: 2025-09-19 16:50:02 UTC

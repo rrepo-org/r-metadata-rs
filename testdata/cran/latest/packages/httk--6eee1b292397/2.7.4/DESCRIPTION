@@ -1,0 +1,152 @@
+Package: httk
+Version: 2.7.4
+Date: 2025-12-08
+Title: High-Throughput Toxicokinetics
+Description: Pre-made models that can be rapidly tailored to various chemicals
+             and species using chemical-specific in vitro data and physiological 
+             information. These tools allow incorporation of chemical 
+             toxicokinetics ("TK") and in vitro-in vivo extrapolation ("IVIVE") 
+             into bioinformatics, as described by Pearce et al. (2017) 
+             (<doi:10.18637/jss.v079.i04>). Chemical-specific 
+             in vitro data characterizing toxicokinetics have been obtained 
+             from relatively high-throughput experiments.   The 
+             chemical-independent ("generic") physiologically-based ("PBTK") and empirical 
+             (for example, one compartment) "TK" models included here can be 
+             parameterized with in vitro data or in silico predictions which are 
+             provided for thousands of chemicals, multiple exposure routes, 
+             and various species. High throughput toxicokinetics ("HTTK") is the 
+             combination of in vitro data and generic models. We establish the
+             expected accuracy of HTTK for chemicals without in vivo data 
+             through statistical evaluation of HTTK predictions for chemicals
+             where in vivo data do exist. The models are systems of ordinary 
+             differential equations that are developed in MCSim and solved
+             using compiled (C-based) code for speed. A Monte Carlo sampler is
+             included for simulating human biological variability
+             (Ring et al., 2017 <doi:10.1016/j.envint.2017.06.004>)
+             and propagating parameter uncertainty 
+             (Wambaugh et al., 2019 <doi:10.1093/toxsci/kfz205>). 
+             Empirically calibrated methods are included for predicting 
+             tissue:plasma partition coefficients and volume of distribution  
+             (Pearce et al., 2017 <doi:10.1007/s10928-017-9548-7>).
+             These functions and data provide a set of tools for using IVIVE to
+             convert concentrations from high-throughput screening experiments
+             (for example, Tox21, ToxCast) to real-world exposures via reverse 
+             dosimetry (also known as "RTK")
+             (Wetmore et al., 2015 <doi:10.1093/toxsci/kfv171>).
+Authors@R: c(
+           person("John", "Wambaugh", email = "wambaugh.research@gmail.com", 
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-4024-534X")), 
+           person("Sarah", "Davidson-Fritz", email = "davidsonfritz.sarah@epa.gov", 
+             role = c("aut"), comment = c(ORCID = "0000-0002-2891-9380")),
+           person("Robert", "Pearce", role = c("aut"),
+             comment = c(ORCID = "0000-0003-3168-4049")), 
+           person("Caroline", "Ring", email = "Ring.Caroline@epa.gov", 
+             role = c("aut"), comment = c(ORCID = "0000-0002-0463-1251")), 
+           person("Greg", "Honda", email = "honda.gregory@epa.gov", 
+             role = c("aut"), comment = c(ORCID = "0000-0001-7713-9850")), 
+           person("Mark", "Sfeir", 
+             role = c("aut")), 
+           person("Matt", "Linakis", email = "MLINAKIS@ramboll.com", 
+             role = c("aut"), comment = c(ORCID = "0000-0003-0526-2395")), 
+           person("Dustin", "Kapraun", email = "kapraun.dustin@epa.gov",
+             role = c("aut"), comment = c(ORCID= "0000-0001-5570-6383")),
+           person("Kimberly", "Truong", email = "truong.kimberly@epa.gov", 
+             role = c("aut"), comment = c(ORCID = "0000-0003-1716-1006")), 
+           person("Colin", "Thomson", email = "thomson.colin@epa.gov", 
+             role = c("aut"), comment = c(ORCID = "0000-0001-5303-6646")), 
+           person("Meredith", "Scherer", email="Scherer.Meredith@epa.gov",
+             role = c("aut"), comment = c(ORCID = "0000-0002-9785-7363")),
+           person("Annabel", "Meade", email = "aemeade7@gmail.com",
+             role = c("aut"), comment = c(ORCID = "0000-0002-5452-8797")),
+           person("Celia", "Schacht", email="Schacht.Celia@epa.gov",
+             role = c("aut"), comment = c(ORCID = "0000-0002-8131-513X")),
+           person("Leonie", "Lautz", email="leonie.lautz@wur.nl",
+             role = c("aut"), comment = c(ORCID = "0000-0003-4648-666X")),
+           person("Todor", "Antonijevic", email="tantonijevic@toxstrategies.com",
+             role = c("ctb"), comment = c(ORCID = "0000-0002-0248-8412")),
+           person("Miyuki", "Breen", email = "breen.miyuki@epa.gov",
+             role = c("ctb"), comment = c(ORCID= "0000-0001-8511-4653")),
+           person("Shannon", "Bell", email="Shannon.bell@inotivco.com",
+             role = c("ctb"), comment = c(ORCID= "0000-0002-5754-6085")), 
+           person("Xiaoqing", "Chang", email="Xiaoqing.chang@inotivco.com",
+             role = c("ctb"), comment = c(ORCID = "0000-0003-0752-1848")), 
+           person("Jimena", "Davis", role = c("ctb")), 
+           person("Elaina", "Kenyon", email="kenyon.elaina@epa.gov",
+             role = c("ctb"), comment = c(ORCID = "0000-0001-8781-2391")),
+           person("Gilberto", "Padilla Mercado", email="PadillaMercado.Gilberto@epa.gov",
+             role = c("ctb"), comment = c(ORCID = "0000-0001-5423-1646")),
+           person("Katie", "Paul Friedman", email="Paul-Friedman.Katie@epa.gov",
+             role = c("ctb"), comment = c(ORCID = "0000-0002-2710-1691")),
+           person("Nathan","Pollesch",email = "pollesch.nathan@epa.gov",
+             role = c("ctb"),comment = c(ORCID = "0000-0001-8992-9294")),
+           person("Noelle", "Sinski", email = "Noelle.Sinski@icf.com",
+             role = c("ctb")), 
+           person("Nisha", "Sipes", email = "sipes.nisha@epa.gov", 
+             role = c("ctb"), comment = c(ORCID = "0000-0003-4203-6426")), 
+           person("James", "Sluka", email = "jsluka@indiana.edu", 
+             role = c("ctb"), comment = c(ORCID = "0000-0002-5901-1404")),
+           person("Caroline", "Stevens", email = "stevens.caroline@epa.gov", 
+             role = c("ctb"), comment = c(ORCID = "0000-0001-7780-2691")), 
+           person("Barbara", "Wetmore", email = "wetmore.barbara@epa.gov", 
+             role = c("ctb"), comment = c(ORCID = "0000-0002-6878-5348")), 
+           person("Lily", "Whipple",role = c("ctb")),
+           person("Woodrow", "Setzer",
+             role = c("ctb"), comment = c(ORCID = "0000-0002-6709-9186"))
+           )
+Depends: R (>= 2.10)
+Imports: deSolve, msm, data.table, survey, mvtnorm, truncnorm, stats,
+        graphics, utils, magrittr, purrr, methods, Rdpack (>= 2.3),
+        ggplot2, dplyr
+RdMacros: Rdpack
+Suggests: knitr, rmarkdown, gplots, scales, EnvStats, MASS,
+        RColorBrewer, stringr, reshape, viridis, gmodels, colorspace,
+        cowplot, ggrepel, forcats, smatr, gridExtra, readxl, ks,
+        testthat, ggpubr, tidyverse
+License: MIT + file LICENSE
+LazyData: true
+LazyDataCompression: xz
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+BugReports: https://github.com/USEPA/CompTox-ExpoCast-httk/issues
+NeedsCompilation: yes
+Packaged: 2025-12-08 16:30:38 UTC; WambaughJohn
+Author: John Wambaugh [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4024-534X>),
+  Sarah Davidson-Fritz [aut] (ORCID:
+    <https://orcid.org/0000-0002-2891-9380>),
+  Robert Pearce [aut] (ORCID: <https://orcid.org/0000-0003-3168-4049>),
+  Caroline Ring [aut] (ORCID: <https://orcid.org/0000-0002-0463-1251>),
+  Greg Honda [aut] (ORCID: <https://orcid.org/0000-0001-7713-9850>),
+  Mark Sfeir [aut],
+  Matt Linakis [aut] (ORCID: <https://orcid.org/0000-0003-0526-2395>),
+  Dustin Kapraun [aut] (ORCID: <https://orcid.org/0000-0001-5570-6383>),
+  Kimberly Truong [aut] (ORCID: <https://orcid.org/0000-0003-1716-1006>),
+  Colin Thomson [aut] (ORCID: <https://orcid.org/0000-0001-5303-6646>),
+  Meredith Scherer [aut] (ORCID: <https://orcid.org/0000-0002-9785-7363>),
+  Annabel Meade [aut] (ORCID: <https://orcid.org/0000-0002-5452-8797>),
+  Celia Schacht [aut] (ORCID: <https://orcid.org/0000-0002-8131-513X>),
+  Leonie Lautz [aut] (ORCID: <https://orcid.org/0000-0003-4648-666X>),
+  Todor Antonijevic [ctb] (ORCID:
+    <https://orcid.org/0000-0002-0248-8412>),
+  Miyuki Breen [ctb] (ORCID: <https://orcid.org/0000-0001-8511-4653>),
+  Shannon Bell [ctb] (ORCID: <https://orcid.org/0000-0002-5754-6085>),
+  Xiaoqing Chang [ctb] (ORCID: <https://orcid.org/0000-0003-0752-1848>),
+  Jimena Davis [ctb],
+  Elaina Kenyon [ctb] (ORCID: <https://orcid.org/0000-0001-8781-2391>),
+  Gilberto Padilla Mercado [ctb] (ORCID:
+    <https://orcid.org/0000-0001-5423-1646>),
+  Katie Paul Friedman [ctb] (ORCID:
+    <https://orcid.org/0000-0002-2710-1691>),
+  Nathan Pollesch [ctb] (ORCID: <https://orcid.org/0000-0001-8992-9294>),
+  Noelle Sinski [ctb],
+  Nisha Sipes [ctb] (ORCID: <https://orcid.org/0000-0003-4203-6426>),
+  James Sluka [ctb] (ORCID: <https://orcid.org/0000-0002-5901-1404>),
+  Caroline Stevens [ctb] (ORCID: <https://orcid.org/0000-0001-7780-2691>),
+  Barbara Wetmore [ctb] (ORCID: <https://orcid.org/0000-0002-6878-5348>),
+  Lily Whipple [ctb],
+  Woodrow Setzer [ctb] (ORCID: <https://orcid.org/0000-0002-6709-9186>)
+Maintainer: John Wambaugh <wambaugh.research@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-09 06:10:32 UTC

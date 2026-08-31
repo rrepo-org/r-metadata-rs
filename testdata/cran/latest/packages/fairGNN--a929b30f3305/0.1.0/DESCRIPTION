@@ -1,0 +1,30 @@
+Package: fairGNN
+Title: Fairness-Aware Gated Neural Networks
+Version: 0.1.0
+Authors@R: 
+    person("Rhys", "Holland", , "rhys.holland@icloud.com", role = c("aut", "cre"))
+Description: Tools for training and analysing fairness-aware gated neural 
+    networks for subgroup-aware prediction and interpretation in clinical datasets. 
+    Methods draw on prior work in mixture-of-experts neural networks by
+    Jordan and Jacobs (1994) <doi:10.1007/978-1-4471-2097-1_113>,
+    fairness-aware learning by Hardt, Price, and Srebro (2016) <doi:10.48550/arXiv.1610.02413>,
+    and personalised treatment prediction for depression by Iniesta, Stahl, and McGuffin (2016) 
+    <doi:10.1016/j.jpsychires.2016.03.016>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, tibble, ggplot2, readr, pROC, magrittr, tidyr, purrr,
+        utils, stats, ggalluvial, tidyselect
+Suggests: knitr, torch, testthat, readxl, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/rhysholland/fairGNN
+BugReports: https://github.com/rhysholland/fairGNN/issues
+Depends: R (>= 4.1.0)
+SystemRequirements: Optional 'LibTorch' backend; install via
+        torch::install_torch().
+NeedsCompilation: no
+Packaged: 2025-10-22 11:32:41 UTC; k2584926
+Author: Rhys Holland [aut, cre]
+Maintainer: Rhys Holland <rhys.holland@icloud.com>
+Repository: CRAN
+Date/Publication: 2025-10-26 19:50:10 UTC

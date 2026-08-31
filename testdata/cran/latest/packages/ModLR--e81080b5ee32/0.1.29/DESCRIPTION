@@ -1,0 +1,30 @@
+Package: ModLR
+Type: Package
+Title: Information-Theoretic Approach for Moderation Analysis
+Version: 0.1.29
+Authors@R: c(
+    person(
+      "Ahmad", "Daryanto",
+      email = "ahdar_2000@yahoo.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Provides a robust implementation of information-theoretic moderation analysis
+    using multi-model inference based on Akaike's Information Criterion (AIC) and its small-sample corrected form (Corrected AIC).
+    The package enables researchers to compare competing model specifications
+    and helps distinguish true interaction effects from nonlinear relationships
+    that may produce spurious moderation. The methods build on Daryanto (2019)
+    <doi:10.1016/j.jbusres.2019.06.012>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+URL: https://github.com/ahdar1/ModLR
+Imports: stats, ggplot2, broom, lmtest, sandwich, rlang
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-24 15:44:51 UTC; antob
+Author: Ahmad Daryanto [aut, cre]
+Maintainer: Ahmad Daryanto <ahdar_2000@yahoo.com>
+Repository: CRAN
+Date/Publication: 2026-05-29 10:10:08 UTC

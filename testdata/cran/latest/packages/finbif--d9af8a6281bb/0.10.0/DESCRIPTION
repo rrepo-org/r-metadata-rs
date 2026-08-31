@@ -1,0 +1,58 @@
+Package: finbif
+Title: Interface for the 'Finnish Biodiversity Information Facility'
+        API
+Version: 0.10.0
+Authors@R: c(
+    person(given = "Finnish Museum of Natural History - Luomus",
+           role = "cph",
+           comment = c(ROR = "03tcx6c30")),
+    person(given = "Finnish Biodiversity Information Facility",
+           role = "cph",
+           comment = c(ROR = "01c0yey93")),
+    person(given = "William K.",
+           family = "Morris",
+           role = c("aut", "cre"),
+           email = "willi@mmorris.email",
+           comment = c(ORCID = "0000-0002-8686-4154"))
+    )
+Description: A programmatic interface to the 'Finnish Biodiversity Information
+    Facility' ('FinBIF') API (<https://api.laji.fi>). 'FinBIF' aggregates
+    Finnish biodiversity data from multiple sources in a single open access
+    portal for researchers, citizen scientists, industry and government.
+    'FinBIF' allows users of biodiversity information to find, access, combine
+    and visualise data on Finnish plants, animals and microorganisms. The
+    'finbif' package makes the publicly available data in 'FinBIF' easily
+    accessible to programmers. Biodiversity information is available on taxonomy
+    and taxon occurrence. Occurrence data can be filtered by taxon, time,
+    location and other variables. The data accessed are conveniently
+    preformatted for subsequent analyses.
+License: MIT + file LICENSE
+URL: https://github.com/luomus/finbif, https://luomus.github.io/finbif/
+BugReports: https://github.com/luomus/finbif/issues
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: secretbase, httr2 (>= 1.1.2), jsonlite, lutz, utils
+Suggests: callr, data.table, DBI, future, knitr, rmarkdown, RSQLite,
+        testthat (>= 3.0.0), vcr (>= 0.6.0), webfakes
+Config/testthat/edition: 3
+X-schema.org-applicationCategory: Biodiversity
+X-schema.org-keywords: api, biodiversity, biodiversity-informatics,
+        biodiversity-information, finbif, finbif-access, occurrences,
+        r-package, r-programming, rstats, species, specimens, taxon,
+        taxonomy, web-services
+X-schema.org-isPartOf: https://species.fi
+Config/roxygen2/version: 8.0.0
+Config/roxygen2/markdown: TRUE
+NeedsCompilation: no
+Packaged: 2026-07-02 12:14:35 UTC; atlanci
+Author: Finnish Museum of Natural History - Luomus [cph] (ROR:
+    <https://ror.org/03tcx6c30>),
+  Finnish Biodiversity Information Facility [cph] (ROR:
+    <https://ror.org/01c0yey93>),
+  William K. Morris [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8686-4154>)
+Maintainer: William K. Morris <willi@mmorris.email>
+Repository: CRAN
+Date/Publication: 2026-07-02 12:30:09 UTC

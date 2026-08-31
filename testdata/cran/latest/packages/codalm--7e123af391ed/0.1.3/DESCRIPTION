@@ -1,0 +1,39 @@
+Package: codalm
+Type: Package
+Title: Transformation-Free Linear Regression for Compositional Outcomes
+        and Predictors
+Version: 0.1.3
+Authors@R: c(person(given = "Jacob",
+           family = "Fiksel",
+           role = c("aut"),
+           email = "jfiksel@gmail.com",
+           comment = c(ORCID = "0000-0001-7067-1334")),
+           person(given = "Abhirup",
+           family = "Datta",
+           role = c("ctb"),
+           email = "abhidatta@jhu.edu"),
+           person(given = "Sandipan",
+           family = "Pramanik",
+           role = c("cre", "ctb"),
+           email = "sandy.pramanik@gmail.com",
+           comment = c(ORCID = "0000-0002-7196-155X")))
+Maintainer: Sandipan Pramanik <sandy.pramanik@gmail.com>
+Description: Implements the expectation-maximization (EM) algorithm as described in Fiksel et al. (2022) <doi:10.1111/biom.13465>
+    for transformation-free linear regression for compositional outcomes and predictors.
+License: GPL-2
+biocViews:
+Imports: SQUAREM (>= 2020.3), future, future.apply
+Encoding: UTF-8
+URL: https://github.com/jfiksel/codalm
+BugReports: https://github.com/jfiksel/codalm/issues
+RoxygenNote: 7.3.3
+Suggests: knitr, gtools, remotes, testthat, rmarkdown, ggtern, ggplot2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-11 11:16:42 UTC; sandipanpramanik
+Author: Jacob Fiksel [aut] (ORCID: <https://orcid.org/0000-0001-7067-1334>),
+  Abhirup Datta [ctb],
+  Sandipan Pramanik [cre, ctb] (ORCID:
+    <https://orcid.org/0000-0002-7196-155X>)
+Repository: CRAN
+Date/Publication: 2025-12-11 16:20:08 UTC

@@ -1,0 +1,42 @@
+Package: FracFixR
+Type: Package
+Title: Compositional Statistical Framework for RNA Fractionation
+        Analysis
+Version: 1.1.0
+Date: 2026-05-11
+Authors@R: c(
+    person("Alice", "Cleynen", email = "alice.cleynen@cnrs.fr", 
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0001-8083-0204")),
+    person("Agin", "Ravindran", role = "aut"),
+    person("Nikolay", "Shirokikh", email = "nikolay.shirokikh@uwa.edu.au", 
+           role = "aut", comment = c(ORCID = "0000-0001-8249-358X")))
+Description: A compositional statistical framework for absolute proportion 
+    estimation between fractions in RNA sequencing data. 'FracFixR' addresses 
+    the fundamental challenge in fractionated RNA-seq experiments where library 
+    preparation and sequencing depth obscure the original proportions of RNA 
+    fractions. It reconstructs original fraction proportions using non-negative 
+    linear regression, estimates the "lost" unrecoverable fraction, corrects 
+    individual transcript frequencies, and performs differential proportion 
+    testing between conditions. Supports any RNA fractionation protocol including
+    polysome profiling, sub-cellular localization, and RNA-protein complex isolation.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: future.apply (>= 1.8.1), nnls (>= 1.4), ggplot2 (>= 3.3.5),
+        dplyr (>= 1.0.7), RColorBrewer (>= 1.1-2), tidyr (>= 1.1.3),
+        matrixStats (>= 0.60.0), aod (>= 1.3.1), parallelly (>=
+        1.30.0), stats, utils, future, grDevices
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-11 01:26:24 UTC; acleynen
+Author: Alice Cleynen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8083-0204>),
+  Agin Ravindran [aut],
+  Nikolay Shirokikh [aut] (ORCID:
+    <https://orcid.org/0000-0001-8249-358X>)
+Maintainer: Alice Cleynen <alice.cleynen@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2026-05-11 03:40:02 UTC

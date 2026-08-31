@@ -1,0 +1,51 @@
+Package: influential
+Type: Package
+Title: Identification and Classification of the Most Influential Nodes
+Language: en-US
+Version: 2.3.2
+Authors@R: 
+    c(
+      person("Adrian", "Salavaty",
+       role = c("aut", "cre"),
+       email = "abbas.salavaty@gmail.com",
+       comment = c(ORCID = "0000-0001-9320-5889")),
+      person("Mirana", "Ramialison", role = "ths"),
+      person(c("Peter", "D."), "Currie", role = "ths")
+    )
+Description: Provides functions for the identification, classification, and
+    ranking of influential nodes and candidate features from network and omics
+    data. The package implements the Integrated Value of Influence (IVI) for
+    integrative network centrality analysis, the SIR-based Influence Ranking
+    (SIRIR) model for unsupervised influence ranking, and the Experimental
+    data-based Integrative Ranking (ExIR) model for prioritizing candidate
+    driver, biomarker, and mediator features from experimental omics data.
+    Functions are provided for network reconstruction from adjacency matrices
+    and data frames, topological analysis, centrality calculation, assessment
+    of associations between centrality measures, and conditional probability
+    analysis. ExIR supports bulk and single-cell omics data, including matrices,
+    sparse matrices, data frames, tibbles, and Seurat objects.
+Imports: igraph, irlba, edgeR, cli, Matrix, SeuratObject, tibble,
+        janitor, ranger, foreach, doParallel, ggplot2, Rcpp
+LinkingTo: Rcpp
+Suggests: Hmisc (>= 4.3-0), mgcv (>= 1.8-31), nortest (>= 1.0-4), NNS
+        (>= 0.4.7.1), BiocManager, readr, shiny, shinythemes,
+        shinyWidgets, shinyjs, shinycssloaders, colourpicker, magrittr,
+        DT, knitr, rmarkdown
+Depends: R (>= 4.0.0)
+URL: https://github.com/asalavaty/influential,
+        https://asalavaty.github.io/influential/
+BugReports: https://github.com/asalavaty/influential/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-08-23 10:39:26 UTC; salavatyadrian
+Author: Adrian Salavaty [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9320-5889>),
+  Mirana Ramialison [ths],
+  Peter D. Currie [ths]
+Maintainer: Adrian Salavaty <abbas.salavaty@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-23 12:30:02 UTC

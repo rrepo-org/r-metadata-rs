@@ -1,0 +1,42 @@
+Package: spatialAtomizeR
+Type: Package
+Title: Spatial Analysis with Misaligned Data Using Atom-Based
+        Regression Models
+Version: 0.2.8
+Date: 2026-03-24
+Authors@R: c(
+    person("Yunzhe", "Qian", email = "qyzanemos@gmail.com", role = c("aut", "cre")),
+    person("Rachel", "Nethery", email = "rnethery@hsph.harvard.edu", role = "aut"),
+    person("Nancy", "Krieger", role = "ctb",
+           comment = "Contributed to the project conceptualization and manuscript"),
+    person("Nykesha", "Johnson", role = "ctb",
+           comment = "Contributed to the project conceptualization and manuscript")
+    )
+Description: Implements atom-based regression models (ABRM) for analyzing spatially 
+    misaligned data. Provides functions for simulating misaligned spatial data, 
+    preparing NIMBLE model inputs, running MCMC diagnostics, and providing results. All main functions return
+    S3 objects with print(), summary(), and plot() methods for intuitive result exploration.
+    Methods originally described in Mugglin et al. (2000) <doi:10.1080/01621459.2000.10474279>,
+    further investigated in Trevisani & Gelfand (2013), and applied in Nethery et al. (2023) 
+    <doi:10.1101/2023.01.10.23284410>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: nimble, sp, sf, spdep, MASS, dplyr, tidyr, ggplot2, reshape2,
+        coda, BiasedUrn, stats, utils, grDevices, methods, raster
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, tigris
+VignetteBuilder: knitr
+URL: https://github.com/bellayqian/spatialAtomizeR
+BugReports: https://github.com/bellayqian/spatialAtomizeR/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-24 19:46:38 UTC; anemos
+Author: Yunzhe Qian [aut, cre],
+  Rachel Nethery [aut],
+  Nancy Krieger [ctb] (Contributed to the project conceptualization and
+    manuscript),
+  Nykesha Johnson [ctb] (Contributed to the project conceptualization and
+    manuscript)
+Maintainer: Yunzhe Qian <qyzanemos@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-24 20:10:03 UTC

@@ -1,0 +1,43 @@
+Package: tceper
+Title: Access the 'Open Data API' of Pernambuco Court of Accounts
+Version: 0.1.4
+Authors@R: c(
+    person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+    person("Marcos", "Wasilew", email = "marcos.wasilew@gmail.com", role = "aut"),
+    person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+    person("Carlos", "Amorin", email = "carlos.agaf@ufpe.br", role = "aut"),
+    person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"))
+Description: An R interface to the 'Open Data API' of the Tribunal de Contas do
+    Estado de Pernambuco (TCE-PE), the Court of Accounts of the State of
+    Pernambuco, Brazil. Provides tidy, ready-to-use functions to query public
+    data on revenues, expenditures, commitments, procurement, contracts,
+    agreements, public works, legal processes, personnel and reference tables
+    for all state and municipal government entities in Pernambuco. All results
+    are returned as tibbles with column names converted to 'snake_case' by
+    default. Uses 'httr2' for HTTP requests and 'cli' for user-friendly
+    messages. See <https://sistemas.tcepe.tc.br/DadosAbertos/> for the API
+    documentation.
+License: MIT + file LICENSE
+URL: https://strategicprojects.github.io/tceper/,
+        https://github.com/StrategicProjects/tceper
+BugReports: https://github.com/StrategicProjects/tceper/issues
+Encoding: UTF-8
+Language: en
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.6.0), httr2 (>= 1.0.0), jsonlite, rlang (>= 1.1.0),
+        tibble, purrr, janitor
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, dplyr, stringr,
+        ggplot2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-28 20:33:08 UTC; leite
+Author: Andre Leite [aut, cre],
+  Marcos Wasilew [aut],
+  Hugo Vasconcelos [aut],
+  Carlos Amorin [aut],
+  Diogo Bezerra [aut]
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-06-01 14:20:02 UTC

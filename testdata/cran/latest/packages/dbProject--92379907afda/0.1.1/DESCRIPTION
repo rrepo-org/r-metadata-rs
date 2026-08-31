@@ -1,0 +1,44 @@
+Package: dbProject
+Title: Database Connection Management and Utilities for 'dbverse'
+Version: 0.1.1
+Authors@R: 
+  c(person("Edward C.", "Ruiz", , "ecr7407@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9174-5387")),
+    person("Jiaji", "George Chen", email = "jiajic@bu.edu", role = c("aut")),
+    person("Ruben", "Dries", email = "rubendries@gmail.com", role = c("aut")))
+Description: Provides an R6-based project container for managing 'DuckDB'
+    connections, reconnecting lazy database tables after session restarts, and
+    storing metadata for database-backed objects used by packages in the
+    'dbverse'. The package supplies S4 base classes and generics for
+    database-backed data, helpers for validating 'DuckDB' connections and table
+    names, utilities for creating persistent database views, and methods for
+    writing and restoring pinned lazy tables through the 'pins' package. These
+    tools help package authors and analysts keep database paths, cached
+    connections, and table references synchronized across interactive sessions
+    and project directories.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/dbverse-org/dbproject-r,
+        https://dbverse-org.github.io/dbproject-r/
+BugReports: https://github.com/dbverse-org/dbproject-r/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, duckdb (>= 1.4.0), DBI, pins, dbplyr, methods, glue,
+        cli, R6, connections, yaml
+Suggests: knitr, rmarkdown, withr, testthat (>= 3.0.0), dbMatrix
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Collate: 'classes.R' 'table-reconnection.R' 'connection-registry.R'
+        'generics.R' 'connection-methods.R' 'dbList.R' 'dbMatrix-pin.R'
+        'dbProject-R6.R' 'dbSpatial-pin.R' 'extract.R' 'imports.R'
+        'input-validation.R' 'path-utils.R' 'to_view.R'
+        'unique_table_name.R'
+NeedsCompilation: no
+Packaged: 2026-06-02 14:52:21 UTC; ecruiz
+Author: Edward C. Ruiz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9174-5387>),
+  Jiaji George Chen [aut],
+  Ruben Dries [aut]
+Maintainer: Edward C. Ruiz <ecr7407@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-02 16:40:02 UTC

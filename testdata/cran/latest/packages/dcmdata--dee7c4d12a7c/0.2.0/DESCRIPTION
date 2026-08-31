@@ -1,0 +1,36 @@
+Package: dcmdata
+Title: Data Sets for Diagnostic Classification Modeling
+Version: 0.2.0
+Authors@R: c(
+    person("W. Jake", "Thompson", , "wjakethompson@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7339-0300")),
+    person("University of Kansas", role = "cph"),
+    person("Institute of Education Sciences", role = "fnd")
+  )
+Description: Access data sets for demonstrating or testing diagnostic
+    classification models. Simulated data sets can be used to compare estimated
+    model output to true data-generating values. Real data sets can be used to
+    demonstrate real-world applications of diagnostic models.
+License: MIT + file LICENSE
+URL: https://dcmdata.r-dcm.org, https://github.com/r-dcm/dcmdata
+BugReports: https://github.com/r-dcm/dcmdata/issues
+Depends: R (>= 3.5)
+Imports: cli, rlang (>= 1.1.0), tibble
+Config/testthat/edition: 3
+Config/Needs/website: r-dcm/rdcmtemplate
+Config/Needs/documentation: openpharma/roxylint
+Config/roxylint: list(linters = roxylint::tidy)
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: spelling, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-03-10 18:59:14 UTC; jakethompson
+Author: W. Jake Thompson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7339-0300>),
+  University of Kansas [cph],
+  Institute of Education Sciences [fnd]
+Maintainer: W. Jake Thompson <wjakethompson@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-10 19:20:02 UTC

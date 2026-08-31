@@ -1,0 +1,35 @@
+Package: bigANNOY
+Type: Package
+Title: Approximate k-Nearest Neighbour Search for 'bigmemory' Matrices
+        with Annoy
+Version: 0.3.0
+Date: 2026-03-27
+Authors@R: person("Frederic", "Bertrand", role = c("aut", "cre"),
+    email = "frederic.bertrand@lecnam.net")
+Author: Frederic Bertrand [aut, cre]
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
+Description: Approximate Euclidean k-nearest neighbour search routines that
+    operate on 'bigmemory::big.matrix' data through Annoy indexes created with
+    'RcppAnnoy'. The package builds persistent on-disk indexes plus sidecar
+    metadata from streamed 'big.matrix' rows, supports euclidean, angular,
+    Manhattan, and dot-product Annoy metrics, and can either return in-memory
+    results or stream neighbour indices and distances into destination
+    'bigmemory' matrices. Explicit index life cycle helpers, stronger metadata
+    validation, descriptor-aware file-backed workflows, and benchmark helpers
+    are also included.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: methods, Rcpp, RcppAnnoy
+LinkingTo: BH, bigmemory, Rcpp, RcppAnnoy
+Suggests: bigmemory, knitr, litedown, testthat (>= 3.0.0)
+VignetteBuilder: litedown
+Encoding: UTF-8
+NeedsCompilation: yes
+URL: https://fbertran.github.io/bigANNOY/,
+        https://github.com/fbertran/bigANNOY
+BugReports: https://github.com/fbertran/bigANNOY/issues
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Packaged: 2026-03-27 20:39:35 UTC; bertran7
+Repository: CRAN
+Date/Publication: 2026-04-01 08:00:33 UTC

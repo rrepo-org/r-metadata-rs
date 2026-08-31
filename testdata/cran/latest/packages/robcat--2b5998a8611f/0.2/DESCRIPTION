@@ -1,0 +1,39 @@
+Package: robcat
+Type: Package
+Title: Robust Categorical Data Analysis
+Version: 0.2
+Date: 2026-02-10
+Authors@R: 
+    c(person(given = "Max",
+           family = "Welz",
+           role = c("aut", "cre"),
+           email = "max.welz@uzh.ch",
+           comment = c(ORCID = "0000-0003-2945-1860")),
+      person(given = "Andreas",
+             family = "Alfons",
+             role = "aut",
+             email = "alfons@ese.eur.nl",
+             comment = c(ORCID = "0000-0002-2513-3788")),
+      person(given = "Patrick",
+             family = "Mair",
+             role = "aut",
+             email = "mair@fas.harvard.edu",
+             comment = c(ORCID = "0000-0003-0100-6511"))
+             )
+Maintainer: Max Welz <max.welz@uzh.ch>
+Description: Robust categorical data analysis based on the theory of C-estimation developed in Welz (2024) <doi:10.48550/arXiv.2403.11954>. For now, the package only implements robust estimation of polychoric correlation as proposed in Welz, Mair and Alfons (2026) <doi:10.1017/psy.2025.10066> and robust estimation of polyserial correlation (Welz, 2026 <doi:10.1017/psy.2026.10091>) with methods for printing and plotting. We will implement further models in future releases. In addition, the package is still experimental, so input arguments and class structure may change in future releases.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: ggplot2
+Imports: Rcpp (>= 1.0.10), stats, mvtnorm, stringr, parallel, Matrix,
+        numDeriv, pracma, utils
+Suggests: testthat (>= 3.0.0)
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-02-10 10:45:25 UTC; mwelz
+Author: Max Welz [aut, cre] (ORCID: <https://orcid.org/0000-0003-2945-1860>),
+  Andreas Alfons [aut] (ORCID: <https://orcid.org/0000-0002-2513-3788>),
+  Patrick Mair [aut] (ORCID: <https://orcid.org/0000-0003-0100-6511>)
+Repository: CRAN
+Date/Publication: 2026-02-10 11:50:02 UTC

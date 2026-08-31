@@ -1,0 +1,30 @@
+Package: brpop
+Title: Brazilian Population Estimates
+Version: 0.7.0
+Authors@R: 
+    person("Raphael", "Saldanha", , "raphael.saldanha@fiocruz.br", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0652-8466"))
+Description: Provides Brazilian municipality population estimates from official
+    and research sources, with functions to aggregate the data by state, health
+    region, sex, and age group.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5)
+LazyData: true
+LazyDataCompression: xz
+Suggests: testthat (>= 3.0.0), ggplot2, scales
+Config/testthat/edition: 3
+Imports: checkmate, data.table, dplyr, dtplyr, magrittr, rlang, tibble,
+        zendown
+URL: https://rfsaldanha.github.io/brpop/,
+        https://github.com/rfsaldanha/brpop
+BugReports: https://github.com/rfsaldanha/brpop/issues
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-29 15:18:10 UTC; raphaelsaldanha
+Author: Raphael Saldanha [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0652-8466>)
+Maintainer: Raphael Saldanha <raphael.saldanha@fiocruz.br>
+Repository: CRAN
+Date/Publication: 2026-07-29 21:50:15 UTC

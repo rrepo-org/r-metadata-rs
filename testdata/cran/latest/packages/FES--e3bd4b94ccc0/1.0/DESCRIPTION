@@ -1,0 +1,29 @@
+Package: FES
+Type: Package
+Title: Fisher Exact Scanning for Dependency
+Version: 1.0
+Authors@R: person(
+    "Li", "Ma", email = "mastatlab@gmail.com",
+    role = c("aut", "cre", "cph")
+  )
+Description: Implements Fisher exact scanning (FES), a multiscale test of
+    dependence for continuous or discrete bivariate data. The method scans
+    nested binary partitions using Fisher's exact tests and combines evidence
+    across windows and resolutions with Sidak, Bonferroni, and meta-analysis
+    corrections. The methodology is described in Ma and Mao (2019)
+    <doi:10.1080/01621459.2017.1397522>.
+License: GPL (>= 3)
+URL: https://github.com/mastatlab/fes
+BugReports: https://github.com/mastatlab/fes/issues
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: graphics, grDevices, methods, stats
+Suggests: BayesFactor, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-14 12:17:22 UTC; li.ma
+Author: Li Ma [aut, cre, cph]
+Maintainer: Li Ma <mastatlab@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-22 08:30:31 UTC

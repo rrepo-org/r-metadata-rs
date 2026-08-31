@@ -1,0 +1,76 @@
+Package: btw
+Title: A Toolkit for Connecting R and Large Language Models
+Version: 1.4.0
+Authors@R: c(
+    person("Garrick", "Aden-Buie", , "garrick@adenbuie.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7111-0077")),
+    person("Simon", "Couch", , "simon.couch@posit.co", role = "aut",
+           comment = c(ORCID = "0000-0001-5676-5107")),
+    person("Joe", "Cheng", , "joe@posit.co", role = "aut"),
+    person("Posit Software, PBC", role = c("cph", "fnd")),
+    person("Google", role = "cph",
+           comment = "Material Design Icons"),
+    person("Microsoft", role = "cph",
+           comment = "@vscode/codicons"),
+    person("Jamie Perkins", role = "cph",
+           comment = "countUp.js author")
+  )
+Description: A complete toolkit for connecting 'R' environments with Large
+    Language Models (LLMs). Provides utilities for describing 'R' objects,
+    package documentation, and workspace state in plain text formats
+    optimized for LLM consumption. Supports multiple workflows:
+    interactive copy-paste to external chat interfaces, programmatic tool
+    registration with 'ellmer' chat clients, batteries-included chat
+    applications via 'shinychat', and exposure to external coding agents
+    through the Model Context Protocol. Project configuration files enable
+    stable, repeatable conversations with project-specific context and
+    preferred LLM settings.
+License: MIT + file LICENSE
+URL: https://github.com/posit-dev/btw, https://posit-dev.github.io/btw/
+BugReports: https://github.com/posit-dev/btw/issues
+Depends: R (>= 4.2.0)
+Imports: brio, cli, clipr, dplyr, ellmer (>= 0.3.0), frontmatter, fs,
+        jsonlite, lifecycle, methods, mcptools, pkgsearch, rlang (>=
+        1.1.0), rmarkdown, rstudioapi, S7, sessioninfo, skimr, utils,
+        withr, xml2
+Suggests: bslib (>= 0.11.0), callr, chromote, covr, DBI, desc,
+        devtools, diffviewer, duckdb, evaluate, fansi, gert, gh,
+        htmltools, pandoc, pkgload, processx, ragg, Rapp (>= 0.3.0),
+        renv, roxygen2, shiny, shinychat (>= 0.4.0), testthat (>=
+        3.0.0), tibble, usethis
+Config/Needs/website: brand.yml, tidyverse/tidytemplate
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: web, news, covr, search
+Encoding: UTF-8
+Collate: 'aaa-tools.R' 'addins.R' 'btw-config.R' 'btw-package.R'
+        'btw.R' 'btw_client.R' 'btw_client_app.R' 'btw_task.R'
+        'btw_this.R' 'cli.R' 'clipboard.R' 'deprecated.R'
+        'edit_btw_md.R' 'import-standalone-obj-type.R'
+        'import-standalone-purrr.R' 'import-standalone-types-check.R'
+        'mcp.R' 'task_create_btw_md.R' 'task_create_readme.R'
+        'task_create_skill.R' 'tool-result.R' 'tool-agent-subagent.R'
+        'tool-agent-custom.R' 'tool-cran.R' 'tool-docs-news.R'
+        'tool-docs.R' 'tool-env-df.R' 'tool-env.R' 'tool-files-edit.R'
+        'tool-files-list.R' 'tool-files-patch.R' 'tool-files-read.R'
+        'tool-files-replace.R' 'tool-files-search.R'
+        'tool-files-write.R' 'tool-git.R' 'tool-github.R' 'tool-ide.R'
+        'tool-pkg-covr.R' 'tool-pkg-devtools.R' 'tool-pkg-src.R'
+        'tool-run.R' 'tool-session-package-installed.R'
+        'tool-sessioninfo.R' 'tool-skills.R' 'tool-web.R' 'tools.R'
+        'utils-ellmer.R' 'utils-gitignore.R' 'utils-ide.R' 'utils-md.R'
+        'utils-r.R' 'utils.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2026-08-05 05:53:46 UTC; garrick
+Author: Garrick Aden-Buie [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7111-0077>),
+  Simon Couch [aut] (ORCID: <https://orcid.org/0000-0001-5676-5107>),
+  Joe Cheng [aut],
+  Posit Software, PBC [cph, fnd],
+  Google [cph] (Material Design Icons),
+  Microsoft [cph] (@vscode/codicons),
+  Jamie Perkins [cph] (countUp.js author)
+Maintainer: Garrick Aden-Buie <garrick@adenbuie.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 06:10:03 UTC

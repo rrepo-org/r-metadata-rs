@@ -1,0 +1,34 @@
+Package: z22
+Type: Package
+Title: Official Gridded Data from the German Census 2022
+Version: 1.1.4
+Authors@R: 
+    person("Jonas", "Lieth", , "jslth@outlook.com", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0002-3451-3176"))
+Maintainer: Jonas Lieth <jslth@outlook.com>
+Description: Provides fast and easy access to German census grid data
+    from the 2011 and 2022 censuses <https://www.zensus2022.de/>, including a
+    wide range of socio-economic indicators at multiple spatial resolutions
+    (100m, 1km, 10km). Enables efficient download, processing, and analysis
+    of large census datasets covering population, households, families,
+    dwellings, and buildings. Harmonized data structures allow direct
+    comparison with the 2011 census, supporting temporal and spatial analyses.
+    Facilitates conversion of data into common formats for spatial analysis and
+    mapping ('terra', 'sf', 'ggplot2').
+License: MIT + file LICENSE
+URL: https://github.com/jslth/z22/, https://jslth.github.io/z22/
+BugReports: https://github.com/jslth/z22/issues
+Encoding: UTF-8
+Depends: R (>= 3.3.0)
+Imports: utils, stats, cli, httr2, dplyr, arrow
+Suggests: terra, sf, ggplot2, sinew, knitr, rmarkdown, testthat (>=
+        3.0.0)
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-23 09:58:43 UTC; PC
+Author: Jonas Lieth [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-3451-3176>)
+Repository: CRAN
+Date/Publication: 2026-01-23 11:50:02 UTC

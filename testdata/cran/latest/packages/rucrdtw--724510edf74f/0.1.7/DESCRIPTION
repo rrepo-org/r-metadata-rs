@@ -1,0 +1,37 @@
+Package: rucrdtw
+Type: Package
+Title: R Bindings for the UCR Suite
+Version: 0.1.7
+Date: 2026-03-06
+Authors@R: c(person("Philipp", "Boersch-Supan", email = "pboesu@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6723-6833")),
+             person("Thanawin", "Rakthanmanon", role = "aut"),
+             person("Bilson", "Campana", role = "aut"),
+             person("Abdullah", "Mueen", role = "aut"),
+             person("Gustavo", "Batista", role = "aut"),
+             person("Eamonn", "Keogh", role = "aut")
+             )
+BugReports: https://github.com/pboesu/rucrdtw/issues
+URL: https://github.com/pboesu/rucrdtw
+Description: R bindings for functions from the UCR Suite by Rakthanmanon et al. (2012) <DOI:10.1145/2339530.2339576>, which enables ultrafast subsequence
+      search for a best match under Dynamic Time Warping and Euclidean Distance.
+License: Apache License
+LazyData: TRUE
+LinkingTo: Rcpp
+Depends: R (>= 3.6)
+Imports: Rcpp
+RoxygenNote: 7.3.3
+Suggests: testthat, knitr, rmarkdown, dtw, rbenchmark
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2026-03-06 17:11:52 UTC; 44759
+Author: Philipp Boersch-Supan [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6723-6833>),
+  Thanawin Rakthanmanon [aut],
+  Bilson Campana [aut],
+  Abdullah Mueen [aut],
+  Gustavo Batista [aut],
+  Eamonn Keogh [aut]
+Maintainer: Philipp Boersch-Supan <pboesu@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-06 17:50:02 UTC

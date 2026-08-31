@@ -1,0 +1,52 @@
+Package: ragR
+Title: Retrieval-Augmented Generation and RAG Evaluation Tools
+Version: 0.1.0
+Authors@R: c(
+    person(
+        given = "Muhammad Aimal",
+        family = "Rehman",
+        email = "rehman.aimal@gmail.com",
+        role = c("aut", "cre")
+    ),
+    person(
+        given = "Zhili",
+        family = "Lu",
+        role = "aut"
+    ),
+    person(
+        given = "Chi-Kuang",
+        family = "Yeh",
+        role = "aut"
+    )
+    )
+Description: Provides tools for document ingestion, embedding storage,
+    retrieval-augmented generation (RAG), and evaluation of question-answering
+    systems. The package includes an R-native vector store, wrappers for OpenAI
+    embedding and chat-completion application programming interfaces (APIs),
+    question-answering logging utilities, and large language model (LLM)-based
+    evaluation metrics for context precision, context recall, answer relevance,
+    and faithfulness. These metrics are based on the Retrieval-Augmented
+    Generation Assessment (RAGAS) framework. The retrieval-augmented generation
+    methodology is described by Lewis et al. (2020) "Retrieval-Augmented
+    Generation for Knowledge-Intensive NLP Tasks"
+    <doi:10.48550/arXiv.2005.11401>. The evaluation metrics are based on
+    Es et al. (2024) "RAGAS: Automated Evaluation of Retrieval Augmented
+    Generation" <doi:10.18653/v1/2024.eacl-demo.16>.
+License: GPL-3
+URL: https://github.com/aimalrehman92/ragR
+BugReports: https://github.com/aimalrehman92/ragR/issues
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: dplyr, httr2, jsonlite, pdftools, readtext, tibble
+Suggests: plumber, stringr, yaml, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-14 05:51:17 UTC; aimalrehman
+Author: Muhammad Aimal Rehman [aut, cre],
+  Zhili Lu [aut],
+  Chi-Kuang Yeh [aut]
+Maintainer: Muhammad Aimal Rehman <rehman.aimal@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-22 07:40:02 UTC

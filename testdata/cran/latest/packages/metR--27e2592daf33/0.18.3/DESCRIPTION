@@ -1,0 +1,33 @@
+Package: metR
+Title: Tools for Easier Analysis of Meteorological Fields
+Version: 0.18.3
+Authors@R: 
+    person("Elio", "Campitelli", , "eliocampitelli@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-7742-9230"))
+Description: Many useful functions and extensions for dealing with
+    meteorological data in the tidy data framework. Extends 'ggplot2' for
+    better plotting of scalar and vector fields and provides commonly used
+    analysis methods in the atmospheric sciences.
+License: GPL-3
+URL: https://eliocamp.github.io/metR/, https://github.com/eliocamp/metR
+BugReports: https://github.com/eliocamp/metR/issues
+Depends: R (>= 2.10)
+Imports: checkmate, data.table, digest, Formula, formula.tools, ggplot2
+        (>= 3.5.0), grid, gtable, isoband, lubridate, memoise, plyr,
+        purrr, rlang, scales, sf, stringr
+Suggests: CFtime, furrr, gsignal, irlba, knitr, kriging, maps,
+        markdown, ncdf4, proj4, rcdo, reshape2, rnaturalearth, terra,
+        testthat (>= 2.1.0), vdiffr
+VignetteBuilder: knitr
+ByteCompile: yes
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-09 00:33:13 UTC; user1
+Author: Elio Campitelli [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-7742-9230>)
+Maintainer: Elio Campitelli <eliocampitelli@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-09 06:10:24 UTC

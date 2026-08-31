@@ -1,0 +1,31 @@
+Package: linktree
+Title: Estimate Transmission Assortativity Coefficients
+Version: 0.1.0
+Authors@R: 
+    c(person("Cyril", "Geismar", email = "c.geismar21@imperial.ac.uk", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-8486-5890")))
+Description: Estimates group transmission assortativity coefficients from transmission trees. 
+    Group transmission assortativity coefficients measure the tendency for individuals to transmit 
+    within their own group (e.g. age group, vaccination status, or location) compared to other groups. 
+    The package requires information on who infected whom, group membership for all individuals, 
+    and the relative sizes of each group in the population. 
+    For more details see Geismar et al. (2024) <doi:10.1371/journal.pone.0313037>.
+License: CC BY 4.0
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), pak, epicontacts,
+        visNetwork
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://github.com/CyGei/linktree,
+        https://cygei.github.io/linktree/
+BugReports: https://github.com/CyGei/linktree/issues
+NeedsCompilation: no
+Packaged: 2025-12-09 19:18:40 UTC; cy
+Author: Cyril Geismar [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8486-5890>)
+Maintainer: Cyril Geismar <c.geismar21@imperial.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-12-15 18:30:02 UTC

@@ -1,0 +1,29 @@
+Package: SmartPK
+Type: Package
+Title: Automated Noncompartmental Pharmacokinetic Analysis
+Version: 0.1.0
+Authors@R: c(person(given = "N.", family = "Shreenithi", email = "Shreenithi092@gmail.com", role = c("aut", "cre")), person(given = "S.", family = "Vishnu Shankar", role = "aut"), person(given = "Balaji", family = "Kannan", role = "aut"))
+Maintainer: N. Shreenithi <Shreenithi092@gmail.com>
+Description: Provides functions for automated noncompartmental pharmacokinetic
+    (NCA) analysis using concentration-time data. The package estimates
+    pharmacokinetic parameters including area under the concentration-time
+    curve (AUC), area under the first moment curve (AUMC), maximum
+    concentration (Cmax), time to maximum concentration (Tmax),
+    terminal elimination rate constant (Kel), elimination half-life,
+    clearance, volume of distribution, and mean residence time (MRT).
+    It supports automatic terminal phase selection, bootstrap confidence
+    intervals, and publication-ready concentration-time profiles. Methods are 
+    based on Gibaldi and Perrier (1982, ISBN:9780824710422).
+License: GPL-3
+Encoding: UTF-8
+Imports: ggplot2, rlang
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-17 15:15:28 UTC; JARVIS
+Author: N. Shreenithi [aut, cre],
+  S. Vishnu Shankar [aut],
+  Balaji Kannan [aut]
+Repository: CRAN
+Date/Publication: 2026-08-24 14:40:02 UTC

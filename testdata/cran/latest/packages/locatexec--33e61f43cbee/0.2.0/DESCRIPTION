@@ -1,0 +1,32 @@
+Type: Package
+Package: locatexec
+Title: Detection and Localization of Executable Files
+Version: 0.2.0
+Authors@R: c(
+    person("David", "Gohel", , "david.gohel@ardata.fr", role = c("aut", "cre")),
+    person("ArData", role = "cph")
+  )
+Description: A set of functions to locate some programs available on the
+    user machine. It can locate 'Node.js', 'npm', 'LibreOffice',
+    'Microsoft Word', 'Microsoft PowerPoint', 'Microsoft Excel', 'Python',
+    'pip', 'Mozilla Firefox', 'Google Chrome', 'Air' and 'Pandoc'. The
+    user can test the availability of a program, optionally with a
+    required version, and call it with the functions system2() or
+    system(). This allows the use of a single function to retrieve the
+    path to a program regardless of the operating system and its
+    configuration.
+License: MIT + file LICENSE
+URL: https://ardata-fr.github.io/locatexec/
+BugReports: https://github.com/ardata-fr/locatexec/issues
+Imports: utils
+Suggests: testthat (>= 3.0.0)
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-05-25 15:46:17 UTC; davidgohel
+Author: David Gohel [aut, cre],
+  ArData [cph]
+Maintainer: David Gohel <david.gohel@ardata.fr>
+Repository: CRAN
+Date/Publication: 2026-05-25 17:00:02 UTC

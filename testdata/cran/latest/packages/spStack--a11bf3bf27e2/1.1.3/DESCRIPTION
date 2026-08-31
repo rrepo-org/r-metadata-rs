@@ -1,0 +1,40 @@
+Package: spStack
+Type: Package
+Version: 1.1.3
+Title: Bayesian Geostatistics Using Predictive Stacking
+Authors@R: c(
+    person("Soumyakanti", "Pan", role = c("aut", "cre"),
+    email = "span18@ucla.edu", comment = c(ORCID = "0009-0005-9889-7112")),
+    person("Sudipto", "Banerjee", role = "aut", email = "sudipto@ucla.edu"))
+Description: Fits Bayesian hierarchical spatial and spatial-temporal process
+    models for point-referenced Gaussian, Poisson, binomial, and binary data
+    using stacking of predictive densities. It involves sampling from
+    analytically available posterior distributions conditional upon candidate
+    values of the spatial process parameters and, subsequently assimilate
+    inference from these individual posterior distributions using Bayesian
+    predictive stacking. Our algorithm is highly parallelizable and hence, much
+    faster than traditional Markov chain Monte Carlo algorithms while delivering
+    competitive predictive performance. See Zhang, Tang, and Banerjee (2025)
+    <doi:10.1080/01621459.2025.2566449>, and, Pan, Zhang, Bradley, and Banerjee
+    (2025) <doi:10.1214/25-BA1582> for details.
+Imports: CVXR, future, future.apply, ggplot2, loo, MBA, rstudioapi
+NeedsCompilation: yes
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: dplyr, knitr, patchwork, rmarkdown, spelling, testthat (>=
+        3.0.0), tidyr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Depends: R (>= 4.4)
+VignetteBuilder: knitr
+URL: https://span-18.github.io/spStack-dev/
+BugReports: https://github.com/SPan-18/spStack-dev/issues
+Language: en-US
+Packaged: 2026-03-08 08:12:38 UTC; soumyakantipan
+Author: Soumyakanti Pan [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-9889-7112>),
+  Sudipto Banerjee [aut]
+Maintainer: Soumyakanti Pan <span18@ucla.edu>
+Repository: CRAN
+Date/Publication: 2026-03-08 08:30:02 UTC

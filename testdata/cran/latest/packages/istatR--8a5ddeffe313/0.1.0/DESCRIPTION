@@ -1,0 +1,25 @@
+Package: istatR
+Title: Interface to the Italian National Institute of Statistics
+        ('ISTAT') API
+Version: 0.1.0
+Authors@R: person("Juan Ignacio", "Fulponi", email = "jfulponi@economicas.uba.ar", role = c("aut", "cre"))
+Description: Provides an interface to the 'ISTAT' 'SDMX' RESTful API
+    <https://esploradati.istat.it/SDMXWS>. Allows users to discover
+    available datasets, explore their structure and dimensions, and retrieve
+    statistical data from the Italian National Institute of Statistics. Based
+    on the Python 'istatapi' package by Jacopo Attolini.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: httr2, xml2, dplyr, tibble, stringr, purrr, readr, rlang
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/jfulponi/istatR
+BugReports: https://github.com/jfulponi/istatR/issues
+NeedsCompilation: no
+Packaged: 2026-01-25 20:37:45 UTC; juan
+Author: Juan Ignacio Fulponi [aut, cre]
+Maintainer: Juan Ignacio Fulponi <jfulponi@economicas.uba.ar>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-01-29 20:20:01 UTC

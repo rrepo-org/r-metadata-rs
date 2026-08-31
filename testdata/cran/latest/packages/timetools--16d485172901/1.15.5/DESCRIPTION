@@ -1,0 +1,23 @@
+Package: timetools
+Type: Package
+Title: Seasonal/Sequential (Instants/Durations, Even or not) Time
+        Series
+Version: 1.15.5
+Date: 2025-05-22
+Imports: methods
+Author: Vladislav Navel [aut, cre]
+Authors@R: person(given = "Vladislav",
+		family = "Navel",
+		role = c("aut", "cre"),
+		email = "vnavel@yahoo.fr")
+Maintainer: Vladislav Navel <vnavel@yahoo.fr>
+Description: Objects to manipulate sequential and seasonal time series. Sequential time series based on time instants and time duration are handled. Both can be regularly or unevenly spaced (overlapping duration are allowed). Only POSIX* format are used for dates and times. The following classes are provided : 'POSIXcti', 'POSIXctp', 'TimeIntervalDataFrame', 'TimeInstantDataFrame', 'SubtimeDataFrame' ; methods to switch from a class to another and to modify the time support of series (hourly time series to daily time series for instance) are also defined. Tools provided can be used for instance to handle environmental monitoring data (not always produced on a regular time base).
+License: GPL
+LazyLoad: yes
+URL: https://sourceforge.net/projects/timetools/
+Encoding: UTF-8
+NeedsCompilation: yes
+RoxygenNote: 7.2.3
+Packaged: 2025-05-22 14:40:39 UTC; vnavel
+Repository: CRAN
+Date/Publication: 2025-05-22 15:00:02 UTC

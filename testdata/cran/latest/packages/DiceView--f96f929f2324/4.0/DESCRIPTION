@@ -1,0 +1,37 @@
+Package: DiceView
+Title: Methods for Visualization of Computer Experiments Design and
+        Surrogate
+Version: 4.0
+Date: 2026-06-17
+Authors@R: 
+    c(person(given = "Yann",
+             family = "Richet",
+             role = c("aut","cre"),
+             email = "yann.richet@asnr.fr",
+             comment = c(ORCID = "0000-0002-5677-8458")),
+      person(given = "Yves",
+             family = "Deville",
+             role = c("aut"),
+             email = "deville.yves@alpestat.com"),
+      person(given = "Clement",
+             family = "Chevalier",
+             role = c("ctb"),
+             email = "clement.chevalier1@gmail.com"))
+Maintainer: Yann Richet <yann.richet@asnr.fr>
+Description: View 2D/3D sections, contour plots, mesh of excursion sets for computer experiments designs, surrogates or test functions.
+Depends: methods, utils, stats, grDevices, graphics
+Imports: DiceDesign, R.cache, geometry, scatterplot3d, parallel,
+        foreach
+Suggests: rlibkriging, DiceKriging, DiceEval, rgl, arrangements,
+        parallelPlot
+License: GPL-3
+URL: https://github.com/IRSN/DiceView
+Repository: CRAN
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-17 14:54:07 UTC; richet
+Author: Yann Richet [aut, cre] (ORCID: <https://orcid.org/0000-0002-5677-8458>),
+  Yves Deville [aut],
+  Clement Chevalier [ctb]
+Date/Publication: 2026-06-17 15:30:02 UTC

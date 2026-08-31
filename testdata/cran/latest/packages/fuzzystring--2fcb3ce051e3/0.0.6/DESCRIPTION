@@ -1,0 +1,48 @@
+Package: fuzzystring
+Title: Fast Fuzzy String Joins for Data Frames
+Version: 0.0.6
+Authors@R: 
+    c(person(given = "Paul E.",
+           family = "Santos Andrade",
+           role = c("aut", "cre", "cph"),
+           email = "paulefrens@gmail.com",
+           comment = c(ORCID = "0000-0002-6635-0375")),
+           person(given = "David",
+             family = "Robinson",
+             role = "ctb",
+             email = "admiral.david@gmail.com",
+             comment = "aut of fuzzyjoin"))
+Description: Perform fuzzy joins on data frames using approximate string
+    matching. Implements inner, left, right, full, semi, and anti joins with
+    string distance metrics from the 'stringdist' package, including Optimal
+    String Alignment, Levenshtein, Damerau-Levenshtein, Jaro-Winkler, q-gram,
+    cosine, Jaccard, and Soundex. Uses a 'data.table' backend plus compiled
+    'C++' result assembly to reduce overhead in large joins, while adaptive
+    candidate planning avoids unnecessary distance evaluations in single-column
+    string joins. Suitable for reconciling misspellings, inconsistent labels,
+    and other near-match identifiers while optionally returning the computed
+    distance for each match. Bibliographic references include the 'stringdist'
+    package documentation (2014) <https://CRAN.R-project.org/package=stringdist>
+    and Robinson, D. (2015) <https://github.com/dgrtwo/fuzzyjoin>.
+License: MIT + file LICENSE
+Depends: R (>= 4.1)
+Imports: data.table, Rcpp, stringdist
+LinkingTo: Rcpp
+Suggests: dplyr, ggplot2, knitr, qdapDictionaries, readr, rmarkdown,
+        rvest, stringr, testthat (>= 3.0.0), tibble, tidyr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/PaulESantos/fuzzystring,
+        https://paulesantos.github.io/fuzzystring/
+BugReports: https://github.com/PaulESantos/fuzzystring/issues
+VignetteBuilder: knitr
+Maintainer: Paul E. Santos Andrade <paulefrens@gmail.com>
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-24 01:38:59 UTC; PC
+Author: Paul E. Santos Andrade [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6635-0375>),
+  David Robinson [ctb] (aut of fuzzyjoin)
+Repository: CRAN
+Date/Publication: 2026-07-24 06:40:02 UTC

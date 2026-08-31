@@ -1,0 +1,46 @@
+Package: GHRmodel
+Title: Bayesian Hierarchical Modelling of Spatio-Temporal Health Data
+Version: 0.1.1
+Authors@R: c(
+    person("Carles", "Milà", , "carles.milagarcia@bsc.es", 
+    role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0470-0760")),
+    person("Giovenale", "Moirano", role = "aut",
+           comment = c(ORCID = "0000-0001-8748-3321")),
+    person("Anna B.", "Kawiecki", role = "aut",
+           comment = c(ORCID = "0000-0002-0499-2612")),
+    person("Rachel", "Lowe", role = "aut",
+           comment = c(ORCID = "0000-0003-3939-7343")))
+Description: Supports modeling health outcomes using Bayesian hierarchical 
+  spatio-temporal models with complex covariate effects (e.g., linear, 
+  non-linear, interactions, distributed lag linear and non-linear 
+  models) in the 'INLA' framework. It is designed to help users identify key 
+  drivers and  predictors of disease risk by enabling streamlined model 
+  exploration, comparison, and visualization of complex covariate effects. 
+  See an application of the modelling framework in Lowe, Lee, O'Reilly et al. (2021)
+  <doi:10.1016/S2542-5196(20)30292-8>.
+License: GPL (>= 2)
+URL: https://gitlab.earth.bsc.es/ghr/ghrmodel,
+        https://bsc-es.github.io/GHRtools/docs/GHRmodel/GHRmodel
+BugReports: https://gitlab.earth.bsc.es/ghr/ghrmodel/-/issues
+Depends: R (>= 4.1.0)
+Imports: cowplot, dlnm, dplyr, ggplot2 (>= 3.5.0), GHRexplore, rlang,
+        scales, tidyr, tidyselect
+Suggests: INLA, sf, sn, RColorBrewer, colorspace, testthat (>= 3.0.0),
+        spdep, knitr, rmarkdown
+Additional_repositories: https://inla.r-inla-download.org/R/stable
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-11-07 15:15:37 UTC; cmilagar
+Author: Carles Milà [aut, cre] (ORCID: <https://orcid.org/0000-0003-0470-0760>),
+  Giovenale Moirano [aut] (ORCID:
+    <https://orcid.org/0000-0001-8748-3321>),
+  Anna B. Kawiecki [aut] (ORCID: <https://orcid.org/0000-0002-0499-2612>),
+  Rachel Lowe [aut] (ORCID: <https://orcid.org/0000-0003-3939-7343>)
+Maintainer: Carles Milà <carles.milagarcia@bsc.es>
+Repository: CRAN
+Date/Publication: 2025-11-07 15:50:25 UTC

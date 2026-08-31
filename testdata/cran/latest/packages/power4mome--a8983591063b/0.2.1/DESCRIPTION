@@ -1,0 +1,48 @@
+Package: power4mome
+Title: Power Analysis for Moderation and Mediation
+Version: 0.2.1
+Authors@R: 
+    c(person(given = "Shu Fai",
+           family = "Cheung",
+           role = c("aut", "cre"),
+           email = "shufai.cheung@gmail.com",
+           comment = c(ORCID = "0000-0002-9871-9448")),
+      person(given = "Sing-Hang",
+           family = "Cheung",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0001-5182-0752")),
+      person(given = "Wendie",
+             family ="Yang",
+             role = c("aut"),
+             comment = c(ORCID = "0009-0000-8388-6481")))
+Description: Power analysis and sample size determination
+  for moderation, mediation, and moderated mediation in models
+  fitted by structural equation modelling using the 'lavaan'
+  package by Rosseel (2012) <doi:10.18637/jss.v048.i02> or
+  by multiple regression. The package 'manymome' by
+  Cheung and Cheung (2024) <doi:10.3758/s13428-023-02224-z>
+  is used to specify the indirect paths or conditional
+  indirect paths to be tested.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Depends: R (>= 4.4.0)
+URL: https://sfcheung.github.io/power4mome/
+BugReports: https://github.com/sfcheung/power4mome/issues
+Imports: lavaan, stats, manymome (>= 0.3.1.4), pbapply, parallel,
+        pgnorm, lmhelprs (>= 0.4.2), psych, yaml, graphics, methods,
+        cli, mice
+Config/Needs/website: rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-23 13:19:25 UTC; shufa
+Author: Shu Fai Cheung [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9871-9448>),
+  Sing-Hang Cheung [aut] (ORCID: <https://orcid.org/0000-0001-5182-0752>),
+  Wendie Yang [aut] (ORCID: <https://orcid.org/0009-0000-8388-6481>)
+Maintainer: Shu Fai Cheung <shufai.cheung@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-24 05:10:02 UTC

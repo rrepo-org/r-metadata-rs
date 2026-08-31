@@ -1,0 +1,30 @@
+Package: wkpool
+Title: Vertex Pool Topology for Well-Known Geometry
+Version: 0.3.0
+Authors@R: 
+    person("Michael", "Sumner", , "mdsumner@gmail.com", role = c("aut", "cre"))
+Description: Establishes and maintains vertex pool topology for geometry 
+    handled by 'wk'. Segments are the atomic unit, vertices are shared via
+    integer references into a pool. Topology is made discoverable via coincident
+    vertex detection while not requiring modification of the input data. 
+    Topological data models follow principles described in Worboys and
+    Duckham (2004, ISBN:978-0415283755). The edge-based topology geometry decomposed 
+    into vertices and directed edge pairs is a simplification of the quad-edge case in
+    Guibas & Stolfi (1985) <doi:10.1145/282918.282923>. 
+License: MIT + file LICENSE
+URL: https://github.com/hypertidy/wkpool
+BugReports: https://github.com/hypertidy/wkpool/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: vctrs, wk (>= 0.9.4)
+Suggests: knitr, rmarkdown, RTriangle, spelling, testthat (>= 3.0.0),
+        traipse
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2026-02-28 23:10:02 UTC; mdsumner
+Author: Michael Sumner [aut, cre]
+Maintainer: Michael Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-05 19:10:02 UTC

@@ -1,0 +1,20 @@
+Package: doseSens
+Title: Conduct Sensitivity Analysis with Continuous Exposures and
+        Binary or Continuous Outcomes
+Version: 1.0.0
+Authors@R: 
+    person("Jeffrey", "Zhang", email = "jeffreyzhang1226@gmail.com", role = c("aut", "cre"))
+Description: Performs sensitivity analysis for the sharp null, attributable effects, and weak nulls in matched studies with continuous exposures and binary or continuous outcomes as described in Zhang, Small, Heng (2024) <doi:10.48550/arXiv.2401.06909> and Zhang, Heng (2024) <doi:10.48550/arXiv.2409.12848>. Two of the functions require installation of the 'Gurobi' optimizer. Please see <https://docs.gurobi.com/current/#refman/ins_the_r_package.html> for guidance.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+LazyData: true
+Imports: dplyr, gtools, stats, utils, nloptr, lpSolve
+Suggests: gurobi
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2025-10-10 00:20:40 UTC; jeffreyzhang
+Author: Jeffrey Zhang [aut, cre]
+Maintainer: Jeffrey Zhang <jeffreyzhang1226@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-10 08:30:07 UTC

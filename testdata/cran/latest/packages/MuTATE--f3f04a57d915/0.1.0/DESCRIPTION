@@ -1,0 +1,32 @@
+Package: MuTATE
+Title: Multi-Target Automated Tree Engine (MuTATE)
+Version: 0.1.0
+Authors@R: c(
+    person("Sarah", "Ayton", , "sarahgabrielleayton@gmail.com", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-5247-9912")) )
+Description: Recursively partitions datasets on binary splits across
+    multiple targets having different dependent variable types, including
+    categorical, continuous, count, and survival outcomes. This overcomes
+    single-target limitations of traditional decision trees while
+    retaining model interpretability. See Ayton and Trevino (2023)
+    <doi:10.1093/bioinformatics/btad507> and Ayton et al. (2025)
+    <doi:10.1038/s44401-025-00025-4> for details.
+License: GPL (>= 3)
+URL: https://github.com/SarahAyton/MuTATE
+BugReports: https://github.com/SarahAyton/MuTATE/issues
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 3.5)
+Imports: reshape2, matrixStats, survival, stringr, irr, Metrics,
+        plotrix, scales, stats, caret, dplyr, igraph, ggraph, grDevices
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-20 03:06:13 UTC; sarahayton
+Author: Sarah Ayton [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5247-9912>)
+Maintainer: Sarah Ayton <sarahgabrielleayton@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 15:40:09 UTC

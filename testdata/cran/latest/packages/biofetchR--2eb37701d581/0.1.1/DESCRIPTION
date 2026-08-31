@@ -1,0 +1,44 @@
+Package: biofetchR
+Type: Package
+Title: Download, Clean, Classify, Enrich and Export Biodiversity
+        Occurrence Data
+Version: 0.1.1
+Authors@R: person(given = "Darren", family = "Stuart", email = "dstuart04@qub.ac.uk", role = c("aut", "cre"))
+Description: Downloads, imports, cleans, classifies, enriches and exports biodiversity
+    occurrence data, with an emphasis on reproducible Global Biodiversity
+    Information Facility (GBIF) <https://api.gbif.org/v1/> workflows. The package
+    supports batch occurrence downloads, taxonomic standardisation, coordinate
+    cleaning, optional spatial thinning, spatial attribution and structured
+    export of processed occurrence records and audit outputs. Terrestrial and
+    freshwater workflows can join records to administrative units, protected
+    areas, freshwater ecoregions, basins, rivers, lakes, reservoirs, wetlands and
+    other contextual spatial overlays. Marine workflows support offshore and
+    coastal records through joins to Marine Regions
+    <https://www.marineregions.org/> style layers, Exclusive Economic Zone (EEZ)
+    units, marine ecoregions, Large Marine Ecosystems and user-supplied marine
+    overlays. The package also supports native-range and invasive-status evidence
+    workflows using the World Register of Marine Species (WoRMS)
+    <https://www.marinespecies.org/>, evidence derived from Standardising and
+    Integrating Alien Species (SInAS) <https://zenodo.org/records/18220953>,
+    and Global Register of Introduced and Invasive Species (GRIIS)
+    <https://griis.org/> style species-country records. These tools are intended
+    for biodiversity, macroecological and invasion-biology analyses where
+    occurrence records need to be processed consistently, transparently and
+    reproducibly.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: cli, CoordinateCleaner, countrycode, curl, dplyr, geodata,
+        jsonlite, mregions2, readr, rgbif, rlang, sf, tibble
+Suggests: geosphere, ggplot2, httr, knitr, lwgeom, mapme.biodiversity,
+        osmdata, readxl, remotes, rmarkdown, rnaturalearth, stringi,
+        stringr, terra, testthat (>= 3.0.0), tidyr, worrms
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-09 02:21:16 UTC; 40467281
+Author: Darren Stuart [aut, cre]
+Maintainer: Darren Stuart <dstuart04@qub.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-08-19 19:50:02 UTC

@@ -1,0 +1,40 @@
+Package: lineager
+Title: Row-Level Data Provenance and Exclusion Tracking
+Version: 0.1.1
+Authors@R: person("Ndoh", "Penn",
+    email = "ndohpenn9@gmail.com",
+    role  = c("aut", "cre"),
+    comment = c(ORCID = "0009-0003-9054-465X"))
+Description: Provides row-level data provenance tracking for analytical
+    pipelines. Tags datasets with unique lineage identifiers that persist
+    through filter, join, and derive operations. Requires documented reasons
+    for every row exclusion, capturing who was removed, why, and at which
+    pipeline stage. Variable derivations are registered as structured
+    specifications linking output variables back to their source. Any row
+    in any downstream dataset can be traced back to its origin via
+    lg_trace(). Generates structured HTML provenance reports suitable for
+    regulatory submissions, internal audit, or analytical documentation.
+    General-purpose: works for clinical data, machine learning pipelines,
+    financial modelling, epidemiology, or any workflow where row-level
+    accountability matters. Optional features support pharmaceutical
+    users including population flag definitions, source-to-analysis variable 
+    mapping, and Reviewer's Guide-aligned report output. Complements
+    the 'regulog' package for tamper-evident session-level audit logging.
+    For more details see <https://reprostats.org/lineager/>.
+License: MIT + file LICENSE
+URL: https://reprostats.org, https://github.com/repro-stats/lineager
+BugReports: https://github.com/repro-stats/lineager/issues
+Imports: dplyr (>= 1.1.0), magrittr (>= 2.0.3)
+Suggests: admiral, DiagrammeR, ggplot2, haven, knitr, mockery,
+        rmarkdown, testthat (>= 3.0.0), tibble
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-19 12:35:38 UTC; ndohpenn
+Author: Ndoh Penn [aut, cre] (ORCID: <https://orcid.org/0009-0003-9054-465X>)
+Maintainer: Ndoh Penn <ndohpenn9@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 14:20:20 UTC

@@ -1,0 +1,29 @@
+Package: fastM
+Type: Package
+Title: Fast Computation of Multivariate M-Estimators
+Version: 0.0-5
+Date: 2025-03-26
+Authors@R: c(person(given = "Lutz",
+                      family = "Duembgen",
+                      role = "aut",
+                      comment = c(ORCID = "0000-0003-0172-9285")),
+               person(given = "Klaus",
+                      family = "Nordhausen",
+                      role = c("aut", "cre"),
+                      email = "klausnordhausenr@gmail.com",
+                      comment = c(ORCID = "0000-0002-3758-8501")),
+               person(given = "Heike",
+                      family = "Schuhmacher",
+                      role = "aut"))
+Author: Lutz Duembgen [aut] (<https://orcid.org/0000-0003-0172-9285>),
+  Klaus Nordhausen [aut, cre] (<https://orcid.org/0000-0002-3758-8501>),
+  Heike Schuhmacher [aut]
+Maintainer: Klaus Nordhausen <klausnordhausenr@gmail.com>
+Imports: Rcpp (>= 0.11.0)
+LinkingTo: Rcpp, RcppArmadillo
+Description: Implements the new algorithm for fast computation of M-scatter matrices using a partial Newton-Raphson procedure for several estimators. The algorithm is described in Duembgen, Nordhausen and Schuhmacher (2016) <doi:10.1016/j.jmva.2015.11.009>. 
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2025-03-26 21:38:48 UTC; nordklau
+Repository: CRAN
+Date/Publication: 2025-03-27 11:50:22 UTC

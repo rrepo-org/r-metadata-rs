@@ -1,0 +1,28 @@
+Package: wrds
+Title: Access 'Wharton Research Data Services' ('WRDS')
+Version: 0.1.1
+Authors@R: 
+    person("Ulrich", "Atz", , "ulrich.atz@unibocconi.it", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-1719-3780"))
+Description: Provides simple functions for accessing data from 'Wharton Research
+    Data Services' ('WRDS'), a widely used financial database in academic
+    research. Includes credential management via the system keyring,
+    database tools, and functions for downloading generic tables, 'Compustat'
+    fundamentals, and linking tables.
+Depends: R (>= 4.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Config/roxygen2/markdown: TRUE
+URL: https://github.com/statzhero/wrds
+BugReports: https://github.com/statzhero/wrds/issues
+Suggests: testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Imports: cli, DBI, dbplyr, dplyr, keyring, rlang, RPostgres, tidylog
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-11 11:44:52 UTC; rico
+Author: Ulrich Atz [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1719-3780>)
+Maintainer: Ulrich Atz <ulrich.atz@unibocconi.it>
+Repository: CRAN
+Date/Publication: 2026-05-11 16:10:02 UTC

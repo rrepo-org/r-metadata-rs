@@ -1,0 +1,22 @@
+Package: ememax
+Type: Package
+Title: Estimation for Binary Emax Models with Missing Responses and
+        Bias Reduction
+Version: 0.1.0
+Authors@R: 
+    c(person("Jiangshan", "Zhang", email = "jiszhang@ucdavis.edu", role = c("aut", "cre")),person("Vivek", "Pradhan", email = "Vivek.Pradhan@pfizer.com", role = c("aut")),person("Yuxi", "Zhao", email = "yuxi.zhao@pfizer.com", role = c("aut")))
+Description: Provides estimation utilities for binary Emax dose-response models. Includes Expectation-Maximization based maximum likelihood estimation when the binary response is missing, as well as bias-reduced estimators including Jeffreys-penalized likelihood, Firth-score, and Cox-Snell corrections.The methodology is described in Zhang, Pradhan, and Zhao (2025) <doi:10.1177/09622802251403356> and Zhang, Pradhan, and Zhao (2026) <doi:10.1080/10543406.2026.2627387>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0), clinDR (>= 2.5.2)
+Imports: BB, brglm, boot, formula.tools, MASS, maxLik, numDeriv, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-12 21:13:36 UTC; jiangshanzhang
+Author: Jiangshan Zhang [aut, cre],
+  Vivek Pradhan [aut],
+  Yuxi Zhao [aut]
+Maintainer: Jiangshan Zhang <jiszhang@ucdavis.edu>
+Repository: CRAN
+Date/Publication: 2026-03-17 19:10:20 UTC

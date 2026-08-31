@@ -1,0 +1,38 @@
+Package: ShrinkageTrees
+Type: Package
+Title: Bayesian Tree Ensembles for Survival Analysis and Causal
+        Inference
+Version: 2.0.2
+Date: 2026-04-20
+Authors@R: 
+    c(person("Tijn", "Jacobs",
+             role = c("aut", "cre"),
+             email = "t.jacobs@vu.nl",
+             comment = c(ORCID = "0009-0003-6188-9296")))
+Maintainer: Tijn Jacobs <t.jacobs@vu.nl>
+Description: Bayesian regression tree ensembles for survival analysis
+    and causal inference. Implements BART, DART, Bayesian Causal
+    Forests (BCF), and Horseshoe Forest models. Supports
+    right-censored and interval-censored survival outcomes via
+    accelerated failure time (AFT) formulations. Designed for
+    high-dimensional prediction and heterogeneous treatment effect
+    estimation.
+URL: https://github.com/tijn-jacobs/ShrinkageTrees
+BugReports: https://github.com/tijn-jacobs/ShrinkageTrees/issues
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: parallel, Rcpp
+LinkingTo: Rcpp (>= 1.0.11)
+Suggests: coda, ggplot2, knitr, rmarkdown, survival, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-04-21 19:25:57 UTC; tijnjacobs
+Author: Tijn Jacobs [aut, cre] (ORCID: <https://orcid.org/0009-0003-6188-9296>)
+Repository: CRAN
+Date/Publication: 2026-04-21 19:53:08 UTC

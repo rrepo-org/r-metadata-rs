@@ -1,0 +1,38 @@
+Type: Package
+Package: BootstrapTests
+Title: Bootstrap-Based Hypothesis Testing using Different Resampling
+        Schemes
+Version: 0.1.0
+Authors@R: c(
+    person("Alexis", "Derumigny", , "A.F.F.Derumigny@tudelft.nl", role = "aut",
+           comment = c(ORCID = "0000-0002-6163-8097")),
+    person("Miltiadis", "Galanis", , "mgalan@di.uoa.gr", role = "aut"),       
+    person("Wieger", "Schipper", , "W.R.Schipper@tudelft.nl", role = c("aut", "cre"),
+          comment = c(ORCID = "0009-0004-5661-4949")),
+    person("Aad", "van der Vaart", , "A.W.vanderVaart@tudelft.nl", role = "aut",
+           comment = c(ORCID = "0000-0002-8074-2375"))
+  )
+Description: Perform bootstrap-based hypothesis testing procedures on
+    three statistical problems. In particular, it covers independence
+    testing, testing the slope in a linear regression setting, and
+    goodness-of-fit testing, following (Derumigny, Galanis, Schipper and Van der Vaart, 2025)
+    <doi:10.48550/arXiv.2512.10546>.
+License: GPL-3
+URL: https://github.com/AlexisDerumigny/BootstrapTests
+BugReports: https://github.com/AlexisDerumigny/BootstrapTests/issues
+Imports: pbapply (>= 1.7.2), stats (>= 4.4.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-18 16:06:00 UTC; wiegerschipper
+Author: Alexis Derumigny [aut] (ORCID: <https://orcid.org/0000-0002-6163-8097>),
+  Miltiadis Galanis [aut],
+  Wieger Schipper [aut, cre] (ORCID:
+    <https://orcid.org/0009-0004-5661-4949>),
+  Aad van der Vaart [aut] (ORCID:
+    <https://orcid.org/0000-0002-8074-2375>)
+Maintainer: Wieger Schipper <W.R.Schipper@tudelft.nl>
+Repository: CRAN
+Date/Publication: 2025-12-22 20:00:11 UTC

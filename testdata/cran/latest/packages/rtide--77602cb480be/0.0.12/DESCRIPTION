@@ -1,0 +1,36 @@
+Package: rtide
+Title: Tide Heights
+Version: 0.0.12
+Authors@R: c(
+    person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = "aut",
+           comment = c(ORCID = "0000-0002-7683-4592")),
+    person("Luke", "Miller", , "contact@lukemiller.org", role = c("aut", "cre")),
+    person("Abram", "Fleishman", role = "aut"),
+    person("Poisson Consulting", role = "cph")
+  )
+Description: Calculates tide heights based on tide station harmonics.  It
+    includes the harmonics data for 637 US stations.  The harmonics data
+    was converted from
+    <https://github.com/poissonconsulting/rtide/blob/main/data-raw/harmonics-dwf-20151227-free.tar.bz2>,
+    NOAA web site data processed by David Flater for 'XTide'.  The code to
+    calculate tide heights from the harmonics is based on 'XTide'.
+License: GPL-3
+URL: https://github.com/millerlp/rtide
+BugReports: https://github.com/millerlp/rtide/issues
+Depends: R (>= 4.0)
+Imports: abind, chk (>= 0.10.0), dttr2, tibble, utils
+Suggests: covr, ggplot2, scales, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-25 04:25:02 UTC; millerlp
+Author: Joe Thorley [aut] (ORCID: <https://orcid.org/0000-0002-7683-4592>),
+  Luke Miller [aut, cre],
+  Abram Fleishman [aut],
+  Poisson Consulting [cph]
+Maintainer: Luke Miller <contact@lukemiller.org>
+Repository: CRAN
+Date/Publication: 2026-07-25 04:40:02 UTC

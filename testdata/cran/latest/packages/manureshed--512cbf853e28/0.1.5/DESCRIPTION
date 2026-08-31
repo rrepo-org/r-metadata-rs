@@ -1,0 +1,82 @@
+Package: manureshed
+Type: Package
+Title: Spatiotemporal Nutrient Balance Analysis Across Agricultural and
+        Municipal Systems
+Version: 0.1.5
+Authors@R: c(
+    person("Olatunde D.", "Akanbi", , "olatunde.akanbi@case.edu", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-7719-2619")),
+    person("Vibha", "Mandayam", role = "aut",
+           comment = c(ORCID = "0009-0008-8628-9904")),
+    person("Atharva", "Gupta", role = "aut",
+           comment = c(ORCID = "0009-0004-5372-0260")),
+    person("K. Colton", "Flynn", role = "aut",
+           comment = c(ORCID = "0000-0002-5718-1071")),
+    person("Jeffrey", "Yarus", role = "aut",
+           comment = c(ORCID = "0000-0002-9331-9568")),
+    person("Erika I.", "Barcelos", , "erika.barcelos@case.edu", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0002-9273-8488")),
+    person("Roger H.", "French", , "roger.french@case.edu", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0002-6162-0532"))
+  )
+Maintainer: Olatunde D. Akanbi <olatunde.akanbi@case.edu>
+Description: A comprehensive framework for analyzing agricultural nutrient 
+    balances across multiple spatial scales (county, 'HUC8', 'HUC2') with 
+    integration of wastewater treatment plant ('WWTP') effluent loads for both 
+    nitrogen and phosphorus. Supports classification of spatial units as 
+    nutrient sources, sinks, or balanced areas based on agricultural surplus 
+    and deficit calculations. Includes visualization tools, spatial transition 
+    probability analysis, and nutrient flow network mapping. Built-in datasets 
+    include agricultural nutrient balance data from the Nutrient Use Geographic 
+    Information System ('NuGIS'; The Fertilizer Institute and Plant Nutrition 
+    Canada, 1987-2016) <https://nugis.tfi.org/tabular_data/> and U.S. Environmental 
+    Protection Agency ('EPA') wastewater discharge data from the 'ECHO' Discharge 
+    Monitoring Report ('DMR') Loading Tool (2007-2016) 
+    <https://echo.epa.gov/trends/loading-tool/water-pollution-search>. Data 
+    are downloaded on demand from the Open Science Framework ('OSF') repository to
+    minimize package size while maintaining full functionality. The integrated 
+    'manureshed' framework methodology is described in Akanbi et al. (2025) 
+    <doi:10.1016/j.resconrec.2025.108697>. Designed for 
+    nutrient management planning, environmental analysis, and circular 
+    economy research at watershed/administrative to national scales.  
+    This material is based upon financial support by the National Science Foundation, 
+    EEC Division of Engineering Education and Centers, 
+    NSF Engineering Research Center for Advancing Sustainable and Distributed 
+    Fertilizer Production (CASFER), NSF 20-553 Gen-4 Engineering Research Centers 
+    award 2133576. We thank Dr. Robert D. Sabo (U.S. Environmental Protection Agency) 
+    for his valuable contributions to the conceptual development and review of this work. 
+    We acknowledge Dr. Sheri Spiegal (U.S. Department of Agriculture–Agricultural Research Service) 
+    for foundational contributions to the manureshed classification framework 
+    (Spiegal et al. 2020) <doi:10.1016/j.agsy.2020.102813>.
+License: MIT + file LICENSE
+URL: https://osf.io/g39xa/, https://github.com/cwru-sdle/manureshed,
+        https://exelegch.github.io/manureshed-docs/
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.0.0), sf (>= 1.0.0), ggplot2 (>= 3.3.0), tidyr (>=
+        1.1.0), jsonlite (>= 1.7.0), rlang (>= 0.4.0), magrittr, scales
+        (>= 1.1.0), igraph (>= 1.2.0), tigris (>= 1.5.0), stats, utils,
+        tools
+Suggests: nhdplusTools (>= 0.5.0), RColorBrewer (>= 1.1.0), cowplot (>=
+        1.1.0), ggpubr (>= 0.4.0), viridis (>= 0.6.0), testthat (>=
+        3.0.0), knitr, ragg, progress, rmarkdown, shiny (>= 1.7.0),
+        shinydashboard (>= 0.7.0), leaflet (>= 2.0.0), plotly (>=
+        4.9.0), DT (>= 0.18), exactextractr, ggrepel, terra
+SystemRequirements: GDAL (>= 2.0.1), GEOS (>= 3.4.0), PROJ (>= 4.8.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-11 16:41:01 UTC; oda10
+Author: Olatunde D. Akanbi [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7719-2619>),
+  Vibha Mandayam [aut] (ORCID: <https://orcid.org/0009-0008-8628-9904>),
+  Atharva Gupta [aut] (ORCID: <https://orcid.org/0009-0004-5372-0260>),
+  K. Colton Flynn [aut] (ORCID: <https://orcid.org/0000-0002-5718-1071>),
+  Jeffrey Yarus [aut] (ORCID: <https://orcid.org/0000-0002-9331-9568>),
+  Erika I. Barcelos [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-9273-8488>),
+  Roger H. French [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-6162-0532>)
+Repository: CRAN
+Date/Publication: 2026-05-11 18:50:13 UTC

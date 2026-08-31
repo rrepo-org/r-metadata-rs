@@ -1,0 +1,32 @@
+Package: descsuppR
+Authors@R: 
+    c(person(given = "Andreas",
+             family = "Leha",
+             role = c("aut"),
+             email = "andreas.leha@med.uni-goettingen.de"),
+      person(given = "Fabian",
+             family = "Kück",
+             role = c("aut", "cre"),
+             email = "fabian.kueck@med.uni-goettingen.de"))
+Version: 1.2
+License: GPL-3
+Title: Support Functions for (Reproducible) Descriptive Statistics
+Description: Contains functions to help with generating tables with
+    descriptive statistics. In addition, the package can display results
+    of statistical tests for group comparisons. A wide range of test
+    procedures is supported, and user-defined test functions can be
+    incorporated.
+Depends: foreach
+Imports: plyr, descutils, tibble, dplyr, rlang, DescTools, nparcomp,
+        rankFD, circular, glue, purrr
+Suggests: roxygen2, survival, stringr
+Encoding: UTF-8
+Collate: 'descsuppR-package.r' 'tod.r'
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2025-09-24 18:38:18 UTC; kueck2
+Author: Andreas Leha [aut],
+  Fabian Kück [aut, cre]
+Maintainer: Fabian Kück <fabian.kueck@med.uni-goettingen.de>
+Repository: CRAN
+Date/Publication: 2025-10-01 07:10:08 UTC

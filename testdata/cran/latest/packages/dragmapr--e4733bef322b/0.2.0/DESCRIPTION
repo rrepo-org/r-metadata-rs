@@ -1,0 +1,44 @@
+Package: dragmapr
+Title: Create Draggable Plots from Projected Geometry
+Version: 0.2.0
+Authors@R: 
+    person("George", "Arthur", , "prigasgenthian48@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1975-1459"))
+Description: Creates interactive draggable plots from grouped projected
+    'sf' geometry. The primary deliverable is a browser-based 'D3' helper
+    where regions and labels can be moved freely; users drag, then copy or
+    download the resulting offset tables. Labels can be derived
+    automatically with make_region_labels(), supplied directly with
+    as_drag_labels(), and their moved positions saved and restored with
+    read_label_state() and apply_label_state(). Hierarchical spatial
+    datasets are supported via hierarchy detection, upload profiling,
+    make_hierarchy_key(), and inherit_layout(), which recommend parent-child
+    groupings and propagate parent-level drag offsets to finer child groupings.
+    Automatic starting layouts are provided by suggest_offsets() using
+    radial, grid, or directional algorithms. Spatial file diagnostics are
+    available through dragmapr_diagnostics(). When a reproducible static
+    image is also needed, render_dragged_map() reconstructs the layout as
+    a 'ggplot2' plot from the source geometry plus the exported offset
+    tables. Project bundles can be written with write_dragmapr_project()
+    and rendered with render_dragmapr_project(). The interactive layer is
+    built on the 'D3' library: Bostock, Ogievetsky and Heer (2011)
+    <doi:10.1109/TVCG.2011.185>. Spatial data handling uses the 'sf'
+    package: Pebesma (2018) <doi:10.32614/RJ-2018-009>.
+License: MIT + file LICENSE
+URL: https://prigasg.github.io/dragmapr/
+BugReports: https://github.com/PrigasG/dragmapr/issues
+Imports: ggplot2, grid, jsonlite, rlang, sf, stats, tools, utils
+Suggests: glasstabs, knitr, miniUI, pkgdown, rmarkdown, shiny,
+        shinyWidgets (>= 0.8.6), spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-17 13:23:32 UTC; priga
+Author: George Arthur [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1975-1459>)
+Maintainer: George Arthur <prigasgenthian48@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-22 15:40:29 UTC

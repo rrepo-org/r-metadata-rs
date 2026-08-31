@@ -1,0 +1,24 @@
+Package: DSFM
+Type: Package
+Title: Distributed Skew Factor Model Estimation Methods
+Version: 1.0.1
+Authors@R: 
+    c(
+      person(given = "Guangbao", family = "Guo", role = c("aut", "cre"), email = "ggb11111111@163.com"),
+      person(given = "Yu", family = "Jin", role = "aut")
+    )
+Author: Guangbao Guo [aut, cre],
+  Yu Jin [aut]
+Maintainer: Guangbao Guo <ggb11111111@163.com>
+Description: Provides a distributed framework for simulating and estimating skew factor models under various skewed and heavy-tailed distributions. The methods support distributed data generation, aggregation of local estimators, and evaluation of estimation performance via mean squared error, relative error, and sparsity measures. The distributed principal component (PC) estimators implemented in the package include 'IPC' (Independent Principal Component),'PPC' (Project Principal Component), 'SPC' (Sparse Principal Component), and other related distributed PC methods. The methodological background follows Guo G. (2023) <doi:10.1007/s00180-022-01270-z>.
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0.0)
+Imports: MASS, matrixcalc, sn, stats, psych, elasticnet, SOPC
+Suggests: ggplot2, cowplot, testthat (>= 3.0.0)
+NeedsCompilation: no
+Language: en-US
+License: MIT + file LICENSE
+Packaged: 2025-11-26 11:35:33 UTC; AIERXUAN
+Repository: CRAN
+Date/Publication: 2025-12-01 15:10:02 UTC

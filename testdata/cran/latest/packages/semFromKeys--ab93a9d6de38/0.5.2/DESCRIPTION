@@ -1,0 +1,37 @@
+Package: semFromKeys
+Type: Package
+Title: Run 'lavaan' Models from Keys Lists
+Version: 0.5.2
+Authors@R: c(
+    person(
+      "Timothy F.", "Bainbridge",
+      email = "tfbainbridge@gmail.com",
+      role = c("aut", "cre", "cph")
+    )
+  )
+Description: Specifying 'lavaan' models manually can be time consuming when
+    multiple similar models are required. The 'semFromKeys' package streamlines
+    the process of running 'lavaan' models by generating model code from simple
+    keys lists and running entire collections of models at once.
+    The package was inspired by the process used in the code for
+    Bainbridge, T. F., Ludeke, S. G., & Smillie, L. D. (2022)
+    <doi:10.1037/pspp0000395>.
+    The package also optionally checks that identical models have not been run
+    on the same data, which saves time when code needs to be run again.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.1.0
+Depends: R (>= 3.6.0)
+Imports: stringr, lavaan, openssl, withr, tools, matrixcalc, Matrix,
+        stats, stringr
+Suggests: testthat (>= 3.0.0), here, rstudioapi
+Config/testthat/edition: 3
+URL: https://github.com/timbainbridge/semFromKeys
+BugReports: https://github.com/timbainbridge/semFromKeys/issues
+NeedsCompilation: no
+Packaged: 2026-08-22 06:13:46 UTC; tim
+Author: Timothy F. Bainbridge [aut, cre, cph]
+Maintainer: Timothy F. Bainbridge <tfbainbridge@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-22 06:40:02 UTC

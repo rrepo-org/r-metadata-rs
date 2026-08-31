@@ -1,0 +1,26 @@
+Package: boostPM
+Type: Package
+Title: Unsupervised Tree Boosting for Learning Probability
+        Distributions
+Version: 0.1.0
+Authors@R: person("Naoki", "Awaya", role = c("aut", "cre"),
+    email = "nawaya@waseda.jp")
+Description: Implements the unsupervised tree boosting method for learning
+    probability distributions introduced by Awaya and Ma (2024). Provides
+    model fitting, density evaluation, simulation, and diagnostic methods.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/nawaya040/boostPM-cran
+BugReports: https://github.com/nawaya040/boostPM-cran/issues
+Imports: graphics, Rcpp (>= 1.0.7), stats
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0), knitr (>= 1.43), rmarkdown (>= 2.20)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-07-17 11:27:46 UTC; naway
+Author: Naoki Awaya [aut, cre]
+Maintainer: Naoki Awaya <nawaya@waseda.jp>
+Repository: CRAN
+Date/Publication: 2026-07-26 10:30:02 UTC

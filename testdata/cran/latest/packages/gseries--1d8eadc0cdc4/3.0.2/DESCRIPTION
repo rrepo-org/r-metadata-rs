@@ -1,0 +1,33 @@
+Package: gseries
+Title: Improve the Coherence of Your Time Series Data
+Version: 3.0.2
+Authors@R: c(
+    person("Michel", "Ferland", email = "michel.ferland@statcan.gc.ca", 
+    role = c("aut", "cre")),
+    person("Statistics Canada", role = c("cph", "fnd"))
+    )
+Description: 
+    'R' version of 'G-Series', Statistics Canada's generalized system devoted
+    to the benchmarking and reconciliation of time series data. The methods
+    used in 'G-Series' essentially come from Dagum, E. B., and P. Cholette 
+    (2006) <doi:10.1007/0-387-35439-5>.
+License: GPL (>= 3)
+URL: https://StatCan.github.io/gensol-gseries/en/,
+        https://StatCan.github.io/gensol-gseries/fr/
+BugReports: https://github.com/StatCan/gensol-gseries/issues/
+Depends: R (>= 4.0)
+Imports: ggplot2, ggtext, graphics, grDevices, gridExtra, lifecycle,
+        osqp, rlang (>= 1.1.0), stats, utils, xmpdf
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-06-16 21:21:23 UTC; ferlmic
+Author: Michel Ferland [aut, cre],
+  Statistics Canada [cph, fnd]
+Maintainer: Michel Ferland <michel.ferland@statcan.gc.ca>
+Repository: CRAN
+Date/Publication: 2025-06-18 08:10:07 UTC

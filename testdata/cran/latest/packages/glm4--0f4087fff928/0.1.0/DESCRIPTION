@@ -1,0 +1,23 @@
+Package: glm4
+Type: Package
+Title: Fitting Generalized Linear Models Using Sparse Matrices
+Version: 0.1.0
+Authors@R: person("Angus", "Hughes", role = c("aut", "cre", "cph"),
+    email = "angus-hughes+glm4@outlook.com",
+    comment = c(ORCID = "0000-0002-0428-4085"))
+Description: Fits Generalised Linear Models (GLMs) with sparse and dense 'Matrix' matrices for memory efficiency. Acts as a wrapper for the glm4() function in the 'MatrixModels' package <doi:10.32614/CRAN.package.MatrixModels>, but adds convenient model methods and functions designed to mimic those associated with the glm() function from the 'stats' package.
+URL: https://github.com/awhug/glm4/issues
+BugReports: https://github.com/awhug/glm4/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: methods, Matrix, MatrixModels, stats
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-09 23:40:09 UTC; angus
+Author: Angus Hughes [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0428-4085>)
+Maintainer: Angus Hughes <angus-hughes+glm4@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-04-16 09:30:02 UTC

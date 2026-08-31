@@ -1,0 +1,38 @@
+Package: colourspace
+Title: Convert from One Colour Space to Another, Print a Ready-to-Paste
+        Modern 'CSS' Syntax
+Version: 0.1.1
+Authors@R: c(
+    person(
+        given = "Yann",
+        family = "Cohen",
+        role = c("aut", "cre"),
+        email = "yannco5@gmail.com",
+        comment = c(ORCID = "0009-0009-0509-3609")
+    )
+    )
+Description: Provides a comprehensive 'API' for colour conversion between popular
+    colour spaces ('RGB', 'HSL', 'OKLab', 'OKLch', 'hex', and named colours) along with
+    clean, modern 'CSS' Color Level 4 syntax output. Integrates seamlessly into
+    'Shiny' and 'Quarto' workflows. Includes nearest colour name lookup powered by
+    a curated database of over 30,000 colour names.
+    'OKLab'/'OKLCh' colour spaces are described in Ottosson (2020)
+    <https://bottosson.github.io/posts/oklab/>. 'CSS' Color Level 4 syntax follows
+    the W3C specification <https://www.w3.org/TR/css-color-4/>.
+License: MIT + file LICENSE
+URL: https://github.com/iamyannc/colourspace
+BugReports: https://github.com/iamyannc/colourspace/issues
+Language: en-GB
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+Imports: farver, RANN
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-03-23 21:47:20 UTC; 97253
+Author: Yann Cohen [aut, cre] (ORCID: <https://orcid.org/0009-0009-0509-3609>)
+Maintainer: Yann Cohen <yannco5@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-23 22:00:03 UTC

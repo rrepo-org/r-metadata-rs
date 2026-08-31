@@ -1,0 +1,48 @@
+Package: cpsvote
+Title: A Toolbox for Using the CPS’s Voting and Registration Supplement
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Jay",
+           family = "Lee",
+           role = c("aut")),
+    person(given = "Paul",
+           family = "Gronke",
+           role = c("aut", "cre"),
+           email = "gronkep@reed.edu"),
+    person(given = "Frank",
+            family = "Adonteng",
+            role = c("ctb")),       
+    person(given = "John",
+           family = "Curiel",
+           role = c("ctb"))
+           )
+Description: Provides automated methods for downloading, recoding, and merging 
+    selected years of the Current Population Survey's Voting and Registration 
+    Supplement <https://www.nber.org/research/data/current-population-survey-cps-supplements-voting-and-registration>, 
+    a large N national survey about registration, voting, and non-voting in 
+    United States federal elections. Provides documentation for appropriate use 
+    of sample weights to generate statistical estimates, drawing from Hur & 
+    Achen (2013) <doi:10.1093/poq/nft042> and McDonald (2018) 
+    <https://www.electproject.org/election-data/voter-turnout-data>.
+URL: https://github.com/Reed-EVIC/cpsvote,
+        https://reed-evic.github.io/cpsvote/
+BugReports: https://github.com/Reed-EVIC/cpsvote/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+Suggests: knitr, tidyverse, rmarkdown, survey, srvyr, here, scales,
+        ggplot2, usmap, ggthemes, tweenr
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Imports: magrittr, readr, dplyr, stringr, forcats (>= 1.0.0), rlang
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-24 23:25:29 UTC; gronkep
+Author: Jay Lee [aut],
+  Paul Gronke [aut, cre],
+  Frank Adonteng [ctb],
+  John Curiel [ctb]
+Maintainer: Paul Gronke <gronkep@reed.edu>
+Repository: CRAN
+Date/Publication: 2026-06-25 11:00:29 UTC

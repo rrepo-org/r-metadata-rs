@@ -1,0 +1,37 @@
+Package: openaq
+Title: Access Air Quality Data from the 'OpenAQ' API
+Description: Provides an interface to the 'OpenAQ' API <https://openaq.org/>,
+    a platform for real-time and historical air quality data from around the
+    world. Users can retrieve measurement data, metadata for sensors and
+    locations for air quality research and monitoring.
+Version: 1.1.0
+License: Apache License (== 2.0)
+URL: https://github.com/openaq/openaq-r,
+        https://openaq.github.io/openaq-r/
+BugReports: https://github.com/openaq/openaq-r/issues
+Authors@R: c(
+    person("Russ", "Biggs", email="russ@openaq.org", role = c("aut", "cre"),
+    comment = c(ORCID = "0009-0008-0777-8479")),
+    person("Christian", "Parker", email="chris@talloaks.io", role = c("aut")),
+    person("Francesca", "Mills", role = c("ctb")),
+    person("OpenAQ", email="dev@openaq.org", role = c("cph", "fnd"))
+    )
+Depends: R (>= 4.1.0)
+Imports: httr2 (>= 1.2.0), rstudioapi, methods, lubridate
+Suggests: testthat (>= 3.0.0), webmockr (>= 0.8.0), vcr (>= 2.1.0),
+        withr (>= 3.0.2), knitr, maps, rmarkdown, sf (>= 0.9),
+        spelling, jsonlite, mockery, webfakes
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-08-19 17:54:45 UTC; russbiggs
+Author: Russ Biggs [aut, cre] (ORCID: <https://orcid.org/0009-0008-0777-8479>),
+  Christian Parker [aut],
+  Francesca Mills [ctb],
+  OpenAQ [cph, fnd]
+Maintainer: Russ Biggs <russ@openaq.org>
+Repository: CRAN
+Date/Publication: 2026-08-19 23:30:02 UTC

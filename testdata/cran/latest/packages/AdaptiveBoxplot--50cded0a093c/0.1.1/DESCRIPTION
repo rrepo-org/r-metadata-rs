@@ -1,0 +1,27 @@
+Package: AdaptiveBoxplot
+Title: FDR(BH) Boxplot and FWER(Holm) Boxplot
+Version: 0.1.1
+Authors@R: c(
+    person("Bowen", "Gang", email = "gangbowen02@gmail.com", role = c("aut", "cre")),
+    person("Hongmei", "Lin", email = "hmlin@suibe.edu.cn", role = "aut"),
+    person("Tiejun", "Tong", email = "tongt@hkbu.edu.hk", role = "aut"))
+Description: Implements a framework for creating boxplots where the 
+    whisker lengths are determined by formal multiple testing procedures, 
+    making them adaptive to sample size and data characteristics. The function bh_boxplot()
+    generates boxplots that control the False Discovery 
+    Rate (FDR) via the Benjamini-Hochberg procedure, and the function holm_boxplot() generates
+    boxplots that control the Family-Wise Error Rate (FWER) via the Holm procedure. 
+    The methods are based on the framework in Gang, Lin, and Tong (2025) 
+    <doi:10.48550/arXiv.2510.20259>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-04 01:13:52 UTC; bowengang
+Author: Bowen Gang [aut, cre],
+  Hongmei Lin [aut],
+  Tiejun Tong [aut]
+Maintainer: Bowen Gang <gangbowen02@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-09 16:30:34 UTC

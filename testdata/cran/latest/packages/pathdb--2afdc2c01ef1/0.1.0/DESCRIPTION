@@ -1,0 +1,46 @@
+Package: pathdb
+Type: Package
+Title: Comprehensive Database for Pathway Enrichment Analysis
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Aidan", "Frederick",
+      email = "Aidan.Frederick@sdstate.edu",
+      role = c("aut", "cre")
+    ),
+    person(
+      "Xijin", "Ge",
+      email = "Xijin.Ge@sdstate.edu",
+      role = c("fnd")
+    )
+  )
+Description: Provides access to large-scale genomics data from the South Dakota 
+    State University's bioinformatics database, a unified platform for pathway 
+    analysis of over 13,000 organisms. It includes various gene mappings, gene 
+    characteristics, and pathway mapping data from KEGG, GOBP, GOCC, and many 
+    more pathway databases. Also provides various helper functions for 
+    processing RNA-Seq data for differential expression analysis and pathway 
+    enrichment analysis, occasionally sourced from code from Integrated 
+    Differential Expression & Pathway analysis (iDEP), developed by Ge, S.X., 
+    Son, E.W. & Yao, R. (2018) <doi:10.1186/s12859-018-2486-6>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Language: en-US
+Imports: DBI, dplyr, edgeR, R.utils, RSQLite, stats, utils, tools
+RoxygenNote: 7.3.3
+Suggests: clusterProfiler, curl, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+URL: https://github.com/aidanfred24/pathdb,
+        https://aidanfred24.github.io/pathdb/
+BugReports: https://github.com/aidanfred24/pathdb/issues
+Config/Needs/editorial: spelling
+NeedsCompilation: no
+Packaged: 2026-05-29 23:02:25 UTC; aidan
+Author: Aidan Frederick [aut, cre],
+  Xijin Ge [fnd]
+Maintainer: Aidan Frederick <Aidan.Frederick@sdstate.edu>
+Repository: CRAN
+Date/Publication: 2026-06-03 13:00:02 UTC

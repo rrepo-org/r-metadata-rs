@@ -1,0 +1,30 @@
+Package: rpanelauto
+Title: Perform Automatic Estimation on Time Series in Multidimensional
+        Panels
+Version: 1.0.0
+Authors@R: c(
+        person("Ilya", "Bolotov", email = "ilya.bolotov@vse.cz",
+                        role = c("aut", "cre"),
+                        comment = c(ORCID = "0000-0003-1148-7144"))
+    )
+Description: Provides a framework for automatic estimation of time-series models
+    for univariate and multidimensional panel data. A user-supplied estimation
+    function is applied independently to each time series, with optional
+    processing before and after estimation. The function returns the transformed
+    data together with the fitted models.
+Language: en-US
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.3)
+Suggests: forecast, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/econcz/rpanelauto
+BugReports: https://github.com/econcz/rpanelauto/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-25 21:59:32 UTC; ilyabolotov
+Author: Ilya Bolotov [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1148-7144>)
+Maintainer: Ilya Bolotov <ilya.bolotov@vse.cz>
+Repository: CRAN
+Date/Publication: 2026-08-05 07:10:02 UTC

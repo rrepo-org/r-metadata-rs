@@ -1,0 +1,44 @@
+Package: pridit
+Type: Package
+Title: Composite Scoring via Principal Component Analysis of Ridit
+        Scores
+Version: 1.1.1
+Authors@R: person("Robert D.", "Lieberthal",
+                  email   = "rlieberthal@gmail.com",
+                  role    = c("aut", "cre"))
+Description: 
+    Implements 'PRIDIT' (Principal Component Analysis applied to 'RIDITs'), an
+    unsupervised, nonparametric method for aggregating ordinal, categorical,
+    and continuous indicators into a single interpretable composite score.
+    Originally proposed by Brockett et al. (2002)
+    <doi:10.1111/1539-6975.00027> for insurance fraud detection and
+    extended to hospital quality measurement by Lieberthal (2008)
+    <doi:10.1111/j.1475-6773.2007.00821.x> and Lieberthal and Comer (2013)
+    <doi:10.1111/rmir.12009>.
+    The package provides:
+    (1) low-level functions ridit(), PRIDITweight(), and PRIDITscore();
+    (2) a unified pridit() entry point returning a classed object with
+        print, summary, 'autoplot', and 'coef' methods;
+    (3) pridit_boot() for bootstrap confidence intervals on scores and weights;
+    (4) a step_pridit() recipe step for out-of-sample scoring within the
+        'tidymodels' framework; and
+    (5) pridit_longitudinal() for panel data, computing cross-period
+        stability of scores and weights.
+License: Apache License (>= 2)
+URL: https://github.com/rlieberthal/PRIDIT
+BugReports: https://github.com/rlieberthal/PRIDIT/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: ggplot2 (>= 3.4.0), rlang, stats, utils
+Suggests: generics, patchwork, recipes (>= 1.0.0), testthat (>= 3.0.0),
+        knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-31 15:29:09 UTC; roblieberthal
+Author: Robert D. Lieberthal [aut, cre]
+Maintainer: Robert D. Lieberthal <rlieberthal@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-31 16:20:02 UTC

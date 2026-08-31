@@ -1,0 +1,30 @@
+Package: mccount
+Title: Estimate Recurrent Event Burden with Competing Risks
+Version: 0.1.1
+Authors@R: 
+    person("Kenneth A.", "Taylor", , "kenneth.taylor.dpt@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-3205-9280"))
+Description: Calculates mean cumulative count (MCC) to estimate the expected cumulative number of recurrent events per person over time in the presence of competing risks and censoring. Implements both the Dong-Yasui equation method and sum of cumulative incidence method described in Dong, et al. (2015) <doi:10.1093/aje/kwu289>. Supports inverse probability weighting for causal inference as outlined in Gaber, et al. (2023) <doi:10.1093/aje/kwad031>. Provides S3 methods for printing, summarizing, plotting, and extracting results. Handles grouped analyses and integrates with 'ggplot2' <https://ggplot2.tidyverse.org/> for visualization.
+License: MIT + file LICENSE
+URL: https://github.com/KennethATaylor/mccount,
+        https://kennethataylor.github.io/mccount/
+BugReports: https://github.com/KennethATaylor/mccount/issues
+Depends: R (>= 4.1.0)
+Imports: cards, cli, cmprsk, data.table, dplyr, glue, lifecycle, rlang,
+        stringr, tibble, tidyr
+Suggests: boot, ggplot2 (>= 3.5.0), knitr, MatchIt, mstate, optmatch,
+        patchwork, rmarkdown, spelling, survival, testthat (>= 3.0.0),
+        WeightIt, withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Config/Needs/website: rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-11-10 14:18:54 UTC; uindy
+Author: Kenneth A. Taylor [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3205-9280>)
+Maintainer: Kenneth A. Taylor <kenneth.taylor.dpt@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-13 19:00:02 UTC

@@ -1,0 +1,29 @@
+Package: regMR
+Title: Regularized Finite Mixture Regression Models Using MM Algorithm
+Version: 1.0.0
+Authors@R: c(
+    person("Cameron", "Bechthold", email = "cbechtho@uoguelph.ca", role = c("aut", "cre", "cph")),
+    person("Vinay", "Joshy", email = "joshy@uoguelph.ca", role = c("aut", "ctb", "cph")),
+    person("Zeny", "Feng", email = "zfeng@uoguelph.ca", role = c("aut", "ths", "cph")),
+    person("Grace", "Stelter", email = "stelterg@uoguelph.ca", role = c("ctb")))
+Description: Provides a comprehensive framework for fitting regularized finite mixture regression models via an MM algorithm. The sparse group lasso (sgl) penalty is applied to parameter updates within the MM algorithm for variable selection with respect to groups and covariates. The package provides multiple functions for estimation and allows users to fit models over different lambda-alpha sgl penalties and group counts.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 4.1.0)
+Imports: furrr, future, ggplot2, graphics, mclust, purrr, Rcpp,
+        reshape2, plotly, stats
+Suggests: mvtnorm, rlang, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/vjoshy/regMR
+BugReports: https://github.com/vjoshy/regMR/issues
+NeedsCompilation: yes
+Packaged: 2026-07-22 18:41:35 UTC; cambechthold
+Author: Cameron Bechthold [aut, cre, cph],
+  Vinay Joshy [aut, ctb, cph],
+  Zeny Feng [aut, ths, cph],
+  Grace Stelter [ctb]
+Maintainer: Cameron Bechthold <cbechtho@uoguelph.ca>
+Repository: CRAN
+Date/Publication: 2026-07-31 14:10:02 UTC

@@ -1,0 +1,26 @@
+Package: ssebiEF
+Type: Package
+Title: Calculation of SSEBI and Evaporative Fraction from Raster Data
+Version: 1.0.1
+Date: 2025-10-21
+Authors@R: 
+    person(
+        given = "Gaelle",
+        family = "Hamelin",
+        role = c("aut", "cre"),
+        email = "gaelle.hamelin@institut-agro.fr",
+        comment = c(ORCID = "0009-0007-2148-7937")
+    )
+Description: Calculates a modified Simplified Surface Energy Balance Index (SSEBI) and the Evaporative Fraction (EF) using geospatial raster data such as albedo and surface-air temperature difference (TS–TA). The SSEBI is computed from albedo and TS–TA to estimate surface moisture and evaporative dynamics, providing a robust assessment of surface dryness while accounting for atmospheric variations. Based on Roerink, Su, and Menenti (2000) <doi:10.1016/S1464-1909(99)00128-8>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, stats, terra
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2025-10-28 17:51:10 UTC; hamelin
+Author: Gaelle Hamelin [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-2148-7937>)
+Maintainer: Gaelle Hamelin <gaelle.hamelin@institut-agro.fr>
+Repository: CRAN
+Date/Publication: 2025-11-03 08:20:02 UTC

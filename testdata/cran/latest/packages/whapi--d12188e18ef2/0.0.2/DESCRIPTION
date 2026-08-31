@@ -1,0 +1,28 @@
+Package: whapi
+Title: R Client for 'whapi.cloud'
+Version: 0.0.2
+Date: 2025-09-10
+Authors@R: c(
+            person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+            person("Hugo", "Vaconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+            person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"))
+Description: Provides an 'R' interface to the 'Whapi' 'API' <https://whapi.cloud>, enabling sending and receiving 'WhatsApp' messages directly from 'R'. Functions include sending text, images, documents, stickers, geographic locations, and interactive messages (buttons and lists). Also includes 'webhook' parsing utilities and channel health checks.
+License: MIT + file LICENSE
+URL: https://github.com/StrategicProjects/whapi/
+BugReports: https://github.com/StrategicProjects/whapi/issues/
+Depends: R (>= 4.2.0)
+Imports: httr2 (>= 1.0.0), cli (>= 3.6.0), tibble (>= 3.2.0), purrr (>=
+        1.0.0), stringr (>= 1.5.0), stringi, dplyr, readr, lubridate
+        (>= 1.9.0), jsonlite (>= 1.8.0), mime, openssl
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, pkgdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-09-22 11:21:29 UTC; leite
+Author: Andre Leite [aut, cre],
+  Hugo Vaconcelos [aut],
+  Diogo Bezerra [aut]
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2025-09-29 17:00:02 UTC

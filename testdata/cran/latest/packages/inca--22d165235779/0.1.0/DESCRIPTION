@@ -1,0 +1,32 @@
+Package: inca
+Type: Package
+Title: Integer Calibration
+Version: 0.1.0
+Date: 2025-05-28
+Authors@R: c(person("Luca", "Sartore",
+                    role = "aut",
+                    email = "luca.sartore@usda.gov",
+                    comment = "ORCID = \"0000-0002-0446-1328\""),
+             person("Luca", "Sartore",
+                    role = "cre",
+                    email = "drwolf85@gmail.com",
+                    comment = "ORCID = \"0000-0002-0446-1328\""),
+             person("Kelly", "Toppin",
+                    role = "aut", 
+                    email = "kelly.toppin@nass.usda.gov"))
+Maintainer: Luca Sartore <drwolf85@gmail.com>
+Description: Specific functions are provided for rounding real weights to integers and performing an integer programming algorithm for calibration problems. These functions are useful for census-weights adjustments, survey calibration, or for performing linear regression with integer parameters <https://www.nass.usda.gov/Education_and_Outreach/Reports,_Presentations_and_Conferences/reports/New_Integer_Calibration_%20Procedure_2016.pdf>. This research was supported in part by the U.S. Department of Agriculture, National Agriculture Statistics Service. The findings and conclusions in this publication are those of the authors and should not be construed to represent any official USDA, or US Government determination or policy.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0), stats, Matrix
+Imports: Rcpp (>= 0.12.1)
+Suggests: survey
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2025-05-28 05:02:40 UTC; sartore
+Author: Luca Sartore [aut] (ORCID = "0000-0002-0446-1328"),
+  Luca Sartore [cre] (ORCID = "0000-0002-0446-1328"),
+  Kelly Toppin [aut]
+Repository: CRAN
+Date/Publication: 2025-05-28 05:20:02 UTC

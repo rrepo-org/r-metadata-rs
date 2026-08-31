@@ -1,0 +1,29 @@
+Package: cg
+Type: Package
+Version: 1.0-4
+Title: Compare Groups, Analytically and Graphically
+Authors@R: c(person(given = "Bill",
+                    family = "Pikounis",
+                    role = c("aut", "cre", "cph"),
+                    email = "cg@billpikounis.net"),
+            person(given = "John",
+                   family = "Oleynick",
+                   role = "aut"),
+            person(given = "Eva",
+                   family = "Ye",
+                   role = "ctb"))
+Maintainer: Bill Pikounis <cg@billpikounis.net>
+Description: Comprehensive data analysis software, and the name "cg" stands for "compare groups." Its genesis and evolution are driven by common needs to compare administrations, conditions, etc. in medicine research and development. The current version provides comparisons of unpaired samples, i.e. a linear model with one factor of at least two levels. It also provides comparisons of two paired samples. Good data graphs, modern statistical methods, and useful displays of results are emphasized.
+License: GPL-2 | GPL-3
+LazyLoad: yes
+LazyData: true
+Depends: R (>= 3.2.3), Hmisc (>= 3.17-1)
+Imports: VGAM (>= 1.0-0), methods, graphics, stats, utils, grid, MASS,
+        lattice, survival, multcomp, nlme, rms
+NeedsCompilation: no
+Packaged: 2025-04-13 15:25:24 UTC; bill
+Author: Bill Pikounis [aut, cre, cph],
+  John Oleynick [aut],
+  Eva Ye [ctb]
+Repository: CRAN
+Date/Publication: 2025-04-13 16:00:11 UTC

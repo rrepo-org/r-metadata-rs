@@ -1,0 +1,31 @@
+Package: DstarM
+Type: Package
+Title: Analyze Two Choice Reaction Time Data with the D*M Method
+Version: 0.5.0
+Authors@R: c(
+  person(given = "Don", family = "van den Bergh", role = c("aut", "cre"),
+         email = "donvdbergh@hotmail.com",
+         comment = c(ORCID = "0000-0002-9838-7308")),
+  person(given = "Stijn", family = "Verdonck", role = "aut",
+         comment = c(ORCID = "0000-0002-2199-1072")),
+  person(given = "Francis", family = "Tuerlinckx", role = "aut",
+         comment = c(ORCID = "0000-0002-1775-7654"))
+  )
+Maintainer: Don van den Bergh <donvdbergh@hotmail.com>
+Description: A collection of functions to estimate parameters of a diffusion model via a D*M analysis. Build in models are: the Ratcliff diffusion model, the RWiener diffusion model, and Linear Ballistic Accumulator models. Custom models functions can be specified as long as they have a density function.
+License: GPL (>= 2)
+Imports: DEoptim, RWiener, rtdists, stats, ggplot2, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+ByteCompile: TRUE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/vandenman/DstarM
+BugReports: https://github.com/vandenman/DstarM/issues
+Suggests: testthat
+Packaged: 2025-04-01 08:50:31 UTC; don
+Author: Don van den Bergh [aut, cre] (<https://orcid.org/0000-0002-9838-7308>),
+  Stijn Verdonck [aut] (<https://orcid.org/0000-0002-2199-1072>),
+  Francis Tuerlinckx [aut] (<https://orcid.org/0000-0002-1775-7654>)
+Repository: CRAN
+Date/Publication: 2025-04-01 09:00:02 UTC

@@ -1,0 +1,63 @@
+Type: Package
+Package: AirportProblems
+Title: Analysis of Cost Allocation for Airport Problems
+Version: 0.1.0
+Date: 2025-04-29
+Authors@R: c(
+    person("Alejandro", "Bernárdez Ferradás", , "alejandro.bernardez@uvigo.es", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-0960-3555", "SiDOR. Departamento de Estatística e Investigación Operativa. Universidade de Vigo. CITMAga. Spain")),
+    person("Estela", "Sánchez Rodríguez", , "esanchez@uvigo.es", role = "aut",
+           comment = c(ORCID = "0000-0002-0933-6411", "SiDOR. Departamento de Estatística e Investigación Operativa. Universidade de Vigo. CITMAga. Spain")),
+    person("Miguel Ángel", "Mirás Calvo", , "mmiras@uvigo.es", role = "aut",
+           comment = c(ORCID = "0000-0001-7247-1926", "RGEAF. Departamento de Matemáticas. Universidade de Vigo. Spain")),
+    person("Carmen", "Quinteiro Sandomingo", , "quinteir@uvigo.gal", role = "aut",
+           comment = c(ORCID = "0000-0002-2711-1945", "Departamento de Matemáticas. Universidade de Vigo. Spain")),
+    person("MCIN/AEI/10.13039/501100011033", role = "fnd",
+           comment = "Project PID2021-124030NB-C33. ERDF A way of making Europe/EU")
+  )
+Maintainer: Alejandro Bernárdez Ferradás <alejandro.bernardez@uvigo.es>
+Description: Airport problems, introduced by Littlechild and Owen (1973)
+    <https://www.jstor.org/stable/2629727>, are cost allocation 
+    problems where agents share the cost of a facility (or service) based on 
+    their ordered needs. Valid allocations must satisfy no-subsidy constraints, 
+    meaning that no group of agents contributes more than the highest cost of 
+    its members (i.e., no agent is allowed to subsidize another). A rule is a 
+    mechanism that selects an allocation vector for a given problem. This 
+    package computes several rules proposed in the literature, including both 
+    standard rules and their variants, such as weighted versions, rules for 
+    clones, and rules based on the agents’ hierarchy order. These rules can be 
+    applied to various problems of interest, including the allocation of 
+    liabilities and the maintenance of irrigation systems, among others.  
+    Moreover, the package provides functions for graphical representation, 
+    enabling users to visually compare the outcomes produced by each rule, 
+    or to display the no-subsidy set. In addition, it includes four datasets 
+    illustrating different applications and examples of airport problems. For a 
+    more detailed explanation of all concepts, see Thomson (2024)
+    <doi:10.1016/j.mathsocsci.2024.03.007>.
+License: GPL-3
+Depends: R (>= 3.5)
+Imports: graphics, grDevices, magrittr, plotly, stats, utils
+Suggests: rmarkdown
+Encoding: UTF-8
+LazyData: True
+NeedsCompilation: no
+RoxygenNote: 7.3.2
+Packaged: 2025-05-01 10:46:52 UTC; alebe
+Author: Alejandro Bernárdez Ferradás [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-0960-3555>, SiDOR. Departamento de
+    Estatística e Investigación Operativa. Universidade de Vigo.
+    CITMAga. Spain),
+  Estela Sánchez Rodríguez [aut] (ORCID:
+    <https://orcid.org/0000-0002-0933-6411>, SiDOR. Departamento de
+    Estatística e Investigación Operativa. Universidade de Vigo.
+    CITMAga. Spain),
+  Miguel Ángel Mirás Calvo [aut] (ORCID:
+    <https://orcid.org/0000-0001-7247-1926>, RGEAF. Departamento de
+    Matemáticas. Universidade de Vigo. Spain),
+  Carmen Quinteiro Sandomingo [aut] (ORCID:
+    <https://orcid.org/0000-0002-2711-1945>, Departamento de
+    Matemáticas. Universidade de Vigo. Spain),
+  MCIN/AEI/10.13039/501100011033 [fnd] (Project PID2021-124030NB-C33.
+    ERDF A way of making Europe/EU)
+Repository: CRAN
+Date/Publication: 2025-05-05 10:00:02 UTC

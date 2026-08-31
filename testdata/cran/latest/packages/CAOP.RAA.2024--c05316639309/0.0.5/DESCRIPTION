@@ -1,0 +1,32 @@
+Package: CAOP.RAA.2024
+Title: Official Administrative Map of the Azores (CAOP 2024)
+Version: 0.0.5
+Authors@R: c(
+    person("Ramiro", "Magno", , "rmagno@pattern.institute", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5226-3441")),
+    person("Pattern Institute", role = c("cph", "fnd"))
+  )
+Description: Provides the official administrative boundaries of the Azores 
+    (Região Autónoma dos Açores (RAA)) as defined in the 2024 edition of the 
+    Carta Administrativa Oficial de Portugal (CAOP), published by the 
+    Direção-Geral do Território (DGT). The package includes convenience
+    functions to import these boundaries as 'sf' objects for spatial analysis in
+    R.
+    Source: <https://geo2.dgterritorio.gov.pt/caop/CAOP_RAA_2024-gpkg.zip>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5)
+Imports: sf, tibble, dplyr, readr, stringi, glue
+Suggests: testthat (>= 3.0.0), roxygen2, knitr, rmarkdown, ggplot2
+RoxygenNote: 7.3.2
+URL: https://github.com/patterninstitute/CAOP.RAA.2024,
+        https://www.pattern.institute/CAOP.RAA.2024/
+BugReports: https://github.com/patterninstitute/CAOP.RAA.2024/issues
+Config/Needs/website: patterninstitute/chic
+NeedsCompilation: no
+Packaged: 2025-03-11 16:50:27 UTC; rmagno
+Author: Ramiro Magno [aut, cre] (<https://orcid.org/0000-0001-5226-3441>),
+  Pattern Institute [cph, fnd]
+Maintainer: Ramiro Magno <rmagno@pattern.institute>
+Repository: CRAN
+Date/Publication: 2025-03-13 13:00:11 UTC

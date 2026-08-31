@@ -1,0 +1,31 @@
+Package: HCPclust
+Title: Hierarchical Conformal Prediction for Clustered Data with
+        Missing Responses
+Version: 0.1.1
+Authors@R: 
+    c(
+      person("Menghan", "Yi",email = "menghany@umich.edu", role = c("aut", "cre")),
+      person("Judy", "Wang", role = "aut")
+    )
+Description: Implements hierarchical conformal prediction for clustered data with missing responses. The method uses repeated cluster-level
+    splitting and within-cluster subsampling to accommodate dependence, and
+    inverse-probability weighting to correct distribution shift induced by missingness.
+    Conditional densities are estimated by inverting fitted conditional quantiles
+    (linear quantile regression or quantile regression forests), and p-values are
+    aggregated across resampling and splitting steps using the Cauchy combination test.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/judywangstat/HCP
+BugReports: https://github.com/judywangstat/HCP/issues
+Imports: stats, grf, quantreg, xgboost, quantregForest
+Suggests: foreach, doParallel, doRNG, parallel, testthat (>= 3.0.0),
+        knitr, rmarkdown, FNN, rstudioapi
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-26 23:42:16 UTC; yimenghan
+Author: Menghan Yi [aut, cre],
+  Judy Wang [aut]
+Maintainer: Menghan Yi <menghany@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-01-30 11:10:02 UTC

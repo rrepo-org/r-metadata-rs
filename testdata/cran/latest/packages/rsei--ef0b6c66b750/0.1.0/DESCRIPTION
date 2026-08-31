@@ -1,0 +1,48 @@
+Package: rsei
+Type: Package
+Title: Client for the 'SEI' Electronic Information System Web Services
+Version: 0.1.0
+Authors@R: c(
+    person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+    person("Marcos", "Wasilew", email = "marcos.wasilew@gmail.com", role = "aut"),
+    person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+    person("Carlos", "Amorin", email = "carlos.agaf@ufpe.br", role = "aut"),
+    person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"),
+    person("Júlia", "Nascimento Barreto", email = "juliabarreto@gd.seplag.pe.gov.br", role = "aut"))
+Description: Toolkit to interact with the 'SOAP' web services of the
+    'SEI' (Sistema Eletronico de Informacoes), the electronic system for
+    document and process management widely used by Brazilian public
+    administration bodies. Provides functions to build the 'SOAP' envelopes,
+    perform the requests, handle 'SOAP' faults, and parse the 'XML' responses
+    into data frames. Covers process and document queries, listing services,
+    write operations (creating processes and documents, sending and signing
+    off processes, blocks, deadlines and markers) and the permission services
+    of the companion 'SIP' system. Note that access to the web services is
+    restricted by the server to previously authorized network addresses.
+    For more information about the 'SEI' system and its web services see
+    <https://www.gov.br/gestao/pt-br/assuntos/processo-eletronico-nacional>.
+License: GPL-3
+Encoding: UTF-8
+Language: pt-BR
+Depends: R (>= 4.1.0)
+Imports: httr2, xml2, keyring, jsonlite, magrittr, dplyr, tidyr, purrr,
+        tibble
+Suggests: testthat (>= 3.0.0), roxygen2, knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/StrategicProjects/rsei,
+        https://strategicprojects.github.io/rsei/
+BugReports: https://github.com/StrategicProjects/rsei/issues
+Config/Needs/website: tidyverse/tidytemplate
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-20 20:21:58 UTC; leite
+Author: Andre Leite [aut, cre],
+  Marcos Wasilew [aut],
+  Hugo Vasconcelos [aut],
+  Carlos Amorin [aut],
+  Diogo Bezerra [aut],
+  Júlia Nascimento Barreto [aut]
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-06-25 11:10:02 UTC

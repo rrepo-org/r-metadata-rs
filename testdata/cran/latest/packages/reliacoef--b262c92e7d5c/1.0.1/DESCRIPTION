@@ -1,0 +1,31 @@
+Package: reliacoef
+Type: Package
+Title: Unidimensional and Multidimensional Reliability Coefficients
+Version: 1.0.1
+Authors@R: person("Eunseong", "Cho", email = "bene@kw.ac.kr", 
+                  role = c("aut", "cre"))
+Description: Calculates and compares various reliability coefficients for 
+    unidimensional and multidimensional scales. Supported unidimensional 
+    estimators include coefficient alpha, congeneric reliability, the 
+    Gilmer-Feldt coefficient, Feldt's classical congeneric reliability, 
+    Hancock's H, Heise-Bohrnstedt's omega, Kaiser-Caffrey's alpha, and Ten 
+    Berge and Zegers' mu series. Multidimensional estimators include 
+    stratified alpha, maximal reliability, correlated factors reliability, 
+    second-order factor reliability, and bifactor reliability.
+    See Cho (2021) <doi:10.1007/s11336-021-09801-1>,
+    Cho (2024) <doi:10.1037/met0000475>,
+    Cho (2025) <doi:10.1037/met0000525>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: lavaan, psych, matrixcalc, stats
+Suggests: knitr, rmarkdown, Rcsdp, testthat (>= 3.0.0)
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-28 03:01:28 UTC; bene
+Author: Eunseong Cho [aut, cre]
+Maintainer: Eunseong Cho <bene@kw.ac.kr>
+Repository: CRAN
+Date/Publication: 2026-03-05 10:30:10 UTC

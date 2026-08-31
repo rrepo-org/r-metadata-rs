@@ -1,0 +1,45 @@
+Package: ExpDesignR
+Type: Package
+Title: Experimental Design and Randomization Methods for Biomedical and
+        Veterinary Research
+Version: 0.1.0
+Authors@R: c(
+    person(
+      given = "Vinodhkumar",
+      family = "Obli Rajendran",
+      email = "vinodhkumar.rajendran@gmail.com",
+      role = c("aut", "cre")
+    ),
+    person(
+      given = "Keerthi",
+      family = "Aaradhana",
+      email = "vkeerthi1817@gmail.com",
+      role = "aut"
+    )
+  )
+Description: Generates randomized experimental designs for biomedical,
+    veterinary, agricultural, and clinical research, including simple,
+    block, stratified, and cluster randomization, Latin square and
+    crossover designs, allocation summaries, schedule export, and
+    visualization of treatment allocations. The methods are based on
+    established principles of randomization and experimental design; see
+    Rosenberger and Lachin (2015, ISBN:9781118742242) and Jones and
+    Kenward (2014, ISBN:9781439861424).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Imports: stats, utils, tibble, dplyr, ggplot2, rlang
+Suggests: testthat (>= 3.0.0), covr, spelling, knitr, rmarkdown
+URL: https://github.com/vinodhpmd/ExpDesignR
+BugReports: https://github.com/vinodhpmd/ExpDesignR/issues
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: no
+Config/roxygen2/version: 8.1.0
+VignetteBuilder: knitr
+Packaged: 2026-08-21 07:53:39 UTC; m
+Author: Vinodhkumar Obli Rajendran [aut, cre],
+  Keerthi Aaradhana [aut]
+Maintainer: Vinodhkumar Obli Rajendran <vinodhkumar.rajendran@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-27 10:30:08 UTC

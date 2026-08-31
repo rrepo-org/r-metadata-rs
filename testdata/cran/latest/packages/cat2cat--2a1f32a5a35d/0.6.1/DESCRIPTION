@@ -1,0 +1,34 @@
+Package: cat2cat
+Title: Handling an Inconsistently Coded Categorical Variable in a
+        Longitudinal Dataset
+Version: 0.6.1
+Authors@R: c(
+    person("Maciej", "Nasinski", email = "nasinski.maciej@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5236-8040"))
+    )
+Maintainer: Maciej Nasinski <nasinski.maciej@gmail.com>
+Description: 
+    Unifying an inconsistently coded categorical variable between two different time points in accordance with a mapping table. 
+    The main rule is to replicate the observation if it could be assigned to a few categories. 
+    Then using frequencies or statistical methods to approximate the probabilities of being assigned to each of them. 
+    This procedure was invented and implemented in the paper by 'Nasinski', 'Majchrowska', and 'Broniatowska' (2020) <doi:10.24425/cejeme.2020.134747>.
+Depends: R (>= 3.6)
+License: GPL (>= 2) | file LICENSE
+URL: https://github.com/Polkas/cat2cat,
+        https://polkas.github.io/cat2cat/
+BugReports: https://github.com/Polkas/cat2cat/issues
+Encoding: UTF-8
+Imports: MASS
+Suggests: caret, dplyr, e1071, fixest, forcats, knitr, magrittr,
+        randomForest, rmarkdown, spelling, testthat (>= 3.0.0), tidyr
+LazyData: true
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-05-17 20:59:10 UTC; maciejnasinski
+Author: Maciej Nasinski [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5236-8040>)
+Repository: CRAN
+Date/Publication: 2026-05-17 21:40:02 UTC

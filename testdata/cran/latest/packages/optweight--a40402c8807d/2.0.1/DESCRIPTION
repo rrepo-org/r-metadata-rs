@@ -1,0 +1,33 @@
+Package: optweight
+Type: Package
+Title: Optimization-Based Stable Balancing Weights
+Version: 2.0.1
+Authors@R: c(
+    person("Noah", "Greifer", role = c("aut", "cre"), 
+           email = "noah.greifer@gmail.com",
+	       comment=c(ORCID="0000-0003-3067-7154"))
+    )
+Description: Use optimization to estimate weights that balance covariates for binary, multi-category, continuous, and multivariate treatments in the spirit of Zubizarreta (2015) <doi:10.1080/01621459.2015.1023805>. The degree of balance can be specified for each covariate. In addition, sampling weights can be estimated that allow a sample to generalize to a population specified with given target moments of covariates, as in matching-adjusted indirect comparison (MAIC).
+Depends: R (>= 4.1.0)
+Imports: osqp (>= 0.6.3.3), chk (>= 0.10.0), rlang (>= 1.1.6), cli (>=
+        3.6.5), Matrix (>= 1.2-13), collapse (>= 2.1.5), ggplot2 (>=
+        4.0.0), graphics, stats, utils
+Suggests: cobalt (>= 4.6.0), scs (>= 3.2.7), clarabel (>= 0.10.1),
+        highs (>= 1.10.0-3), lpSolve (>= 5.6.23), WeightIt, gbm,
+        marginaleffects, sandwich, fwb, knitr, rmarkdown, testthat (>=
+        3.0.0)
+License: GPL
+Encoding: UTF-8
+URL: https://ngreifer.github.io/optweight/,
+        https://github.com/ngreifer/optweight
+BugReports: https://github.com/ngreifer/optweight/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-18 19:08:56 UTC; NoahGreifer
+Author: Noah Greifer [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3067-7154>)
+Maintainer: Noah Greifer <noah.greifer@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-19 07:00:10 UTC

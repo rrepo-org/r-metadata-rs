@@ -1,0 +1,37 @@
+Package: irtsim
+Title: Monte Carlo Simulation-Based Sample-Size Planning for Item
+        Response Theory
+Version: 0.2.0
+Authors@R: 
+    person("Stephen", "Ward", , "stephen_ward+irtsim@abhome.co", role = c("aut", "cre"))
+Description: Provides a pipeline application programming interface (API) for
+    Monte Carlo simulation-based sample-size planning in item response theory
+    (IRT). Implements the 10-decision framework
+    from Schroeders and Gnambs (2025) <doi:10.1177/25152459251314798> as a
+    three-step workflow: specify the data-generating model with irt_design(),
+    add study conditions with irt_study(), and run simulations with
+    irt_simulate(). Supports one-parameter logistic (1PL), two-parameter
+    logistic (2PL), three-parameter logistic (3PL), graded response (GRM),
+    partial credit (PCM), and generalized partial credit (GPCM) models with
+    missing-completely-at-random (MCAR), missing-at-random (MAR), booklet,
+    and linking missingness mechanisms. Results include mean squared error (MSE), bias, root mean
+    squared error (RMSE), standard error (SE), and coverage criteria with
+    summary and plot methods.
+License: GPL (>= 3)
+URL: https://sward1.github.io/irtsim/, https://github.com/sward1/irtsim
+BugReports: https://github.com/sward1/irtsim/issues
+Depends: R (>= 4.1.0)
+Imports: cli, future.apply, ggplot2, mirt, rlang
+Suggests: future, knitr, R.rsp (>= 0.46.0), rmarkdown, scales, testthat
+        (>= 3.0.0)
+VignetteBuilder: R.rsp, knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-27 13:45:20 UTC; stephenward
+Author: Stephen Ward [aut, cre]
+Maintainer: Stephen Ward <stephen_ward+irtsim@abhome.co>
+Repository: CRAN
+Date/Publication: 2026-06-27 14:50:02 UTC

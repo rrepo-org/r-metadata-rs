@@ -1,0 +1,40 @@
+Package: ofemeantest
+Type: Package
+Title: On Farm Experimentation Mean Test
+Version: 1.0.0
+Authors@R: 
+    c(
+      person("Mariano", "Córdoba", email = "marianoacba@agro.unc.edu.ar", 
+             role = c("aut", "cph")),
+      person("Pablo", "Paccioretti", email = "pablopaccioretti@agro.unc.edu.ar", 
+             role = c("aut", "cre", "cph")),
+      person("Monica", "Balzarini", email = "mbalzari@agro.unc.edu.ar", 
+             role = c("aut"))
+    )
+Description: Provides tools for comparing treatments in unreplicated on-farm
+    experiments (OFE) using georeferenced data. The package includes functions
+    for constructing spatial grids, estimating the effective sample size from
+    spatial autocorrelation, performing repeated permutation tests, adjusting
+    pairwise comparisons, and visualizing the results. It implements the
+    OFE-mean test described in Córdoba, Paccioretti and Balzarini (2025)
+    <doi:10.1007/s11119-024-10206-0>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: multcompView, permuco, sf, spatialreg, spdep, withr
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://ppaccioretti.github.io/ofemeantest/,
+        https://github.com/PPaccioretti/ofemeantest
+BugReports: https://github.com/PPaccioretti/ofemeantest/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-19 12:43:09 UTC; ariel
+Author: Mariano Córdoba [aut, cph],
+  Pablo Paccioretti [aut, cre, cph],
+  Monica Balzarini [aut]
+Maintainer: Pablo Paccioretti <pablopaccioretti@agro.unc.edu.ar>
+Repository: CRAN
+Date/Publication: 2026-08-20 14:20:14 UTC

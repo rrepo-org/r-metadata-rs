@@ -1,0 +1,36 @@
+Package: AeRobiology
+Type: Package
+Title: A Computational Tool for Aerobiological Data
+Version: 2.0.4
+Authors@R: c(
+    person(given = "Jesus",
+           family = "Rojo",
+           role = "aut",
+           email = "Jesus.Rojo@uclm.es"),
+    person(given = "Antonio",
+           family = "Picornell",
+           role = "aut",
+           email = "picornell@uma.es"),
+    person(given = "Jose",
+           family = "Oteros",
+           role = c("aut", "cre"),
+           email = "OterosJose@gmail.com")
+ )
+Author: Jesus Rojo [aut],
+  Antonio Picornell [aut],
+  Jose Oteros [aut, cre]
+Maintainer: Jose Oteros <OterosJose@gmail.com>
+Description: Different tools for managing databases of airborne particles, elaborating the main calculations and visualization of results. In a first step, data are checked using tools for quality control and all missing gaps are completed. Then, the main parameters of the pollen season are calculated and represented graphically. Multiple graphical tools are available: pollen calendars, phenological plots, time series, tendencies, interactive plots, abundance plots...
+License: GPL-3
+Depends: R (>= 2.10)
+Imports: dplyr, writexl, ggvis, lubridate, plotly, ggplot2, tidyr,
+        circular, scales, grDevices, zoo, grid, data.table
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-09 17:29:26 UTC; CodexSandboxOnline
+Repository: CRAN
+Date/Publication: 2026-07-09 22:10:19 UTC

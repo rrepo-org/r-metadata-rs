@@ -1,0 +1,27 @@
+Package: DRPT
+Title: Density Ratio Permutation Test
+Version: 1.1
+Authors@R: c(person(given  = "Alberto", family = "Bordino", 
+                    email  = "alberto.bordino@warwick.ac.uk", role   = c("aut", "cre"),
+                    comment = c(ORCID = "0009-0006-1556-6973")), 
+             person(given  = "Thomas B.", family = "Berrett", role   = "aut", 
+                    comment = c(ORCID = "0000-0002-2005-110X")))
+Description: Implementation of the Density Ratio Permutation Test for testing the goodness-of-fit of a hypothesised ratio of two densities, as described in Bordino and Berrett (2025) <doi:10.48550/arXiv.2505.24529>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp
+Imports: Rcpp, BiasedUrn, rootSolve, future, future.apply, Rdpack (>=
+        2.6)
+RdMacros: Rdpack
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-07-02 16:26:52 UTC; laburd
+Author: Alberto Bordino [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-1556-6973>),
+  Thomas B. Berrett [aut] (ORCID:
+    <https://orcid.org/0000-0002-2005-110X>)
+Maintainer: Alberto Bordino <alberto.bordino@warwick.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-07-07 09:10:05 UTC

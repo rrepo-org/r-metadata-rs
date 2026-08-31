@@ -1,0 +1,30 @@
+Package: h3o
+Title: H3 Geospatial Indexing System
+Version: 0.3.0
+Authors@R: c(
+    person("Josiah", "Parry", , "josiah.parry@gmail.com", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0001-9910-865X")),
+    person("Kenneth", "Vernon", , "kenneth.b.vernon@gmail.com", role = c("cre", "ctb"),
+           comment = c(ORCID = "0000-0003-0098-5092"))
+    )
+Description: A dependency free interface to the H3 geospatial indexing system utilizing the Rust library 'h3o' <https://github.com/HydroniumLabs/h3o> via the 'extendr' library <https://github.com/extendr/extendr>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en
+RoxygenNote: 7.3.2
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.75
+Imports: rlang, stats, vctrs
+Suggests: sf, wk
+Config/rextendr/version: 0.4.0.9000
+Depends: R (>= 4.2)
+URL: https://github.com/extendr/h3o, https://extendr.rs/h3o/
+BugReports: https://github.com/extendr/h3o/issues
+NeedsCompilation: yes
+Packaged: 2025-08-24 15:17:51 UTC; kenne
+Author: Josiah Parry [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-9910-865X>),
+  Kenneth Vernon [cre, ctb] (ORCID:
+    <https://orcid.org/0000-0003-0098-5092>)
+Maintainer: Kenneth Vernon <kenneth.b.vernon@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-08-29 11:00:02 UTC

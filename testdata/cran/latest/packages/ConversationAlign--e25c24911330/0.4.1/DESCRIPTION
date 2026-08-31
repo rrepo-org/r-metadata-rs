@@ -1,0 +1,45 @@
+Package: ConversationAlign
+Type: Package
+Title: Process Text and Compute Linguistic Alignment in Conversation
+        Transcripts
+Version: 0.4.1
+Authors@R: c(
+     person("Jamie", "Reilly", 
+           role = c("aut", "cre"), 
+           email = "jamie_reilly@temple.edu",
+           comment = c(ORCID = "0000-0002-0891-438X")),
+    person("Virginia", "Ulichney", role = "aut"),
+    person("Ben", "Sacks", role = "aut"),
+    person("Sarah", "Weinstein", role = "ctb"),
+    person("Chelsea", "Helion", role = "ctb"),
+    person("Gus", "Cooney", role = "ctb"))
+Maintainer: Jamie Reilly <jamie_reilly@temple.edu>
+Description: Imports conversation transcripts into R, concatenates them into a single dataframe appending event identifiers, cleans and formats the text, then yokes user-specified psycholinguistic database values to each word.  'ConversationAlign' then computes alignment indices between two interlocutors across each transcript for >40 possible semantic, lexical, and affective dimensions. In addition to alignment, 'ConversationAlign' also produces a table of analytics (e.g., token count, type-token-ratio) in a summary table describing your particular text corpus.
+License: LGPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5)
+Imports: DescTools, dplyr (>= 0.4.3), httr, magrittr, purrr, rlang,
+        stringi, stringr, textstem, tibble, tidyr, tidyselect, stats,
+        utils, zoo
+Suggests: devtools, knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://github.com/Reilly-ConceptsCognitionLab/ConversationAlign
+RoxygenNote: 7.3.3
+LazyData: true
+VignetteBuilder: knitr
+Collate: 'ConversationAlign-package.R' 'compute_auc.R'
+        'compute_lagcorr.R' 'corpus_analytics.R' 'data.R'
+        'generate_shams.R' 'globals.R' 'prep_dyads.R' 'read_1file.R'
+        'read_dyads.R' 'replacements_25.R' 'summarize_dyads.R'
+        'utils.R' 'zzz.R'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-29 13:17:50 UTC; Jamie
+Author: Jamie Reilly [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0891-438X>),
+  Virginia Ulichney [aut],
+  Ben Sacks [aut],
+  Sarah Weinstein [ctb],
+  Chelsea Helion [ctb],
+  Gus Cooney [ctb]
+Repository: CRAN
+Date/Publication: 2026-04-29 15:10:25 UTC

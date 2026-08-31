@@ -1,0 +1,31 @@
+Package: vivainsights
+Type: Package
+Title: Analyze and Visualize Data from 'Microsoft Viva Insights'
+Version: 0.7.3
+Authors@R: c(
+    person(given = "Martin", family = "Chan", role = c("aut", "cre"), email = "martin.chan@microsoft.com"),
+    person(given = "Carlos", family = "Morales", role = "aut", email = "carlos.morales@microsoft.com")
+	)
+Maintainer: Martin Chan <martin.chan@microsoft.com>
+Description: Provides a versatile range of functions, including exploratory data analysis, time-series analysis, organizational network analysis, and data validation, whilst at the same time implements a set of best practices in analyzing and visualizing data specific to 'Microsoft Viva Insights'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: dplyr, stats, utils, tidyr, tibble, tidyselect (>= 1.0.0),
+        magrittr, ggplot2, reshape2, scales, ggrepel, purrr,
+        data.table, methods, htmltools, markdown, networkD3, rmarkdown,
+        wpa, ggraph, lifecycle, glue, igraph, rlang, tidytext
+Suggests: flexdashboard, testthat (>= 3.0.0), lmtest, sandwich, slider,
+        ggwordcloud, yaml
+URL: https://microsoft.github.io/vivainsights/
+BugReports: https://github.com/microsoft/vivainsights/issues/
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-04 16:08:19 UTC; martinchan
+Author: Martin Chan [aut, cre],
+  Carlos Morales [aut]
+Repository: CRAN
+Date/Publication: 2026-08-04 17:50:02 UTC

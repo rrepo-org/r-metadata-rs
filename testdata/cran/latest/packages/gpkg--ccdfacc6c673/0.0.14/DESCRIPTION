@@ -1,0 +1,24 @@
+Package: gpkg
+Type: Package
+Title: Utilities for the Open Geospatial Consortium 'GeoPackage' Format
+Version: 0.0.14
+Authors@R: person(given="Andrew", family="Brown", email="brown.andrewg@gmail.com", role=c("aut", "cre"), comment=c(ORCID="0000-0002-4565-533X"))
+Maintainer: Andrew Brown <brown.andrewg@gmail.com>
+Description: Build Open Geospatial Consortium 'GeoPackage' files (<https://www.geopackage.org/>). 'GDAL' utilities for reading and writing spatial data are provided by the 'terra' package. Additional 'GeoPackage' and 'SQLite' features for attributes and tabular data are implemented with the 'RSQLite' package.
+URL: https://humus.rocks/gpkg/, https://github.com/brownag/gpkg
+BugReports: https://github.com/brownag/gpkg/issues
+Imports: utils, methods, DBI
+Suggests: RSQLite, terra (>= 1.6), gdalraster, tinytest, sf, dplyr,
+        dbplyr, knitr, rmarkdown
+License: CC0
+Depends: R (>= 3.1.0)
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-02 03:16:49 UTC; andrew
+Author: Andrew Brown [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4565-533X>)
+Repository: CRAN
+Date/Publication: 2026-04-03 05:10:10 UTC

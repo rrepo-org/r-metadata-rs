@@ -1,0 +1,36 @@
+Package: carbondata
+Title: Access Carbon Market Data from Emissions Trading Systems and
+        Voluntary Registries
+Version: 0.1.0
+Authors@R: 
+    person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
+Description: Unified access to carbon market data from compliance
+    emissions trading systems ('EU ETS', 'UK ETS', 'RGGI', California
+    Cap-and-Trade) and voluntary carbon markets (Verra, Gold Standard,
+    American Carbon Registry, Climate Action Reserve, via the Berkeley
+    Voluntary Registry Offsets Database and the 'CarbonPlan' 'OffsetsDB'
+    API). Includes cross-market price data from the 'International
+    Carbon Action Partnership' ('ICAP') Allowance Price Explorer
+    <https://icapcarbonaction.com/en/ets-prices>, global carbon pricing
+    from the World Bank Carbon Pricing Dashboard
+    <https://carbonpricingdashboard.worldbank.org/>, and the historical
+    'RFF' World Carbon Pricing Database following Dolphin, Pollitt and
+    Newbery (2020) <doi:10.1038/s41597-022-01659-x>. Data is downloaded
+    from public sources on first use and cached locally.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: cli (>= 3.6.0), httr2 (>= 1.0.0), jsonlite, readxl, tools,
+        utils
+Suggests: arrow, nanoparquet, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/charlescoverdale/carbondata
+BugReports: https://github.com/charlescoverdale/carbondata/issues
+NeedsCompilation: no
+Packaged: 2026-04-15 18:56:57 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:42:29 UTC

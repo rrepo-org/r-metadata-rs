@@ -1,0 +1,24 @@
+Package: openaiRtools
+Title: R Client for the 'OpenAI' API
+Version: 0.2.2
+Authors@R: 
+    person("Chaoyang", "Luo", email = "xiaoluolorn@gmail.com", role = c("aut", "cre"))
+Description: Complete R implementation of the 'OpenAI' Python 'SDK'. Provides
+    full compatibility with the 'OpenAI' API including chat completions,
+    'embeddings', images, audio, fine-tuning, and model management.
+License: MIT + file LICENSE
+URL: https://github.com/xiaoluolorn/openaiRtools
+BugReports: https://github.com/xiaoluolorn/openaiRtools/issues
+Depends: R (>= 4.0.0)
+Imports: R6, httr2, jsonlite, rlang, tools, grDevices
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, ggplot2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-02 12:24:17 UTC; luoch
+Author: Chaoyang Luo [aut, cre]
+Maintainer: Chaoyang Luo <xiaoluolorn@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-06 13:20:02 UTC

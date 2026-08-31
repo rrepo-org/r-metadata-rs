@@ -1,0 +1,28 @@
+Package: facetsviz
+Type: Package
+Title: Parse and Visualize Facets Output Files
+Version: 0.1.1
+Authors@R: 
+    person(given = c("Muhammad", "Yoga"), family = "Prabowo", email = "muhammadyogaprabowo@gmail.com", role = c("aut", "cre"))
+Description: Utilities to parse output files from 'Facets' (a software widely
+    used for multi-facet Rasch measurement) and build accurate visualizations
+    from the measurement reports. For more details on the underlying measurement
+    framework, see Linacre (1994, ISBN:0-941938-02-6) and Linacre (2023)
+    <https://www.winsteps.com/a/Facets-Manual.pdf>.
+URL: https://github.com/myprabowo/facetsviz
+BugReports: https://github.com/myprabowo/facetsviz/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: ggrepel, ggplot2, rlang, scales, stats, tibble, tidyr, tools,
+        utils
+Suggests: bslib, DT, knitr, rmarkdown, shiny, testthat
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-11 08:29:43 UTC; muhammadyogaprabowo
+Author: Muhammad Yoga Prabowo [aut, cre]
+Maintainer: Muhammad Yoga Prabowo <muhammadyogaprabowo@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 09:20:02 UTC

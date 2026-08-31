@@ -1,0 +1,45 @@
+Package: CDSimX
+Type: Package
+Title: Simulating Climate Data for Research and Modelling
+Version: 1.1.2
+Date: 2026-06-25
+Authors@R: 
+    c(
+    person("Isaac", "Osei", role = c("aut", "cre"), email = "ikemillar65@gmail.com"),
+    person("Acheampong", "Baafi-Adomako", role = "aut", email = "acheampongbaafi1@gmail.com"),
+    person("Jayanti", "Maji", role = "aut", email = "")
+    )
+Maintainer: Isaac Osei <ikemillar65@gmail.com>
+Description: Advanced climate simulation, forecasting, visualization, export,
+    and machine learning tools. Generates synthetic climate datasets for single
+    or multiple weather stations using stochastic weather generation techniques.
+    'CDSimX' simulates daily climate variables including minimum and maximum
+    temperature, rainfall, relative humidity, solar radiation, wind speed,
+    wind direction, dew point temperature, and potential evapotranspiration.
+    The package incorporates seasonal harmonic models, Markov chain rainfall
+    occurrence processes, Gamma-distributed rainfall amounts, copula-based
+    dependence structures, bias-correction procedures, and physical consistency
+    constraints. 'CDSimX' supports climate data generation, environmental
+    modeling, machine learning benchmarking, sensitivity analysis, and
+    educational applications. Methods are based on established stochastic
+    weather generation approaches described in Richardson (1981)
+    <doi:10.1029/WR017i001p00182>, Wilks (1999)
+    <doi:10.1016/S0168-1923(99)00037-4>, and Osei et al. (2026)
+    <doi:10.5334/jors.666>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: copula, ggplot2, dplyr, tidyr, lubridate, randomForest, gbm,
+        forecast, xgboost, nnet, ncdf4, rlang, readr, scales, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://ikemillar.github.io/CDSimX/
+BugReports: https://github.com/ikemillar/CDSimX/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-03 06:25:47 UTC; isaacosei
+Author: Isaac Osei [aut, cre],
+  Acheampong Baafi-Adomako [aut],
+  Jayanti Maji [aut]
+Repository: CRAN
+Date/Publication: 2026-07-10 20:10:26 UTC

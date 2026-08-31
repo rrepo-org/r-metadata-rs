@@ -1,0 +1,25 @@
+Package: GenHMM1d
+Type: Package
+Title: Goodness-of-Fit for Zero-Inflated Univariate Hidden Markov
+        Models
+Version: 0.2.6
+Authors@R: c(
+        person(c("Bouchra","R."), "Nasri", role = c("aut", "cre","cph"), email = "bouchra.nasri@umontreal.ca"),
+        person("Mamadou Yamar", "Thioub", role = c("aut","cph")),
+        person(c("Bruno","N."), "Remillard", role = c("aut","cph")))
+Description: Inference, goodness-of-fit tests, and predictions for continuous and discrete univariate  Hidden Markov Models (HMM), including zero-inflated distributions. The goodness-of-fit test is based on a Cramer-von Mises statistic and uses parametric bootstrap to estimate the p-value. The description of the methodology is taken from Nasri et al (2020) <doi:10.1029/2019WR025122>.
+License: GPL-3
+Encoding: UTF-8
+Maintainer: Bouchra R. Nasri <bouchra.nasri@umontreal.ca>
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0), doParallel, parallel, foreach
+Imports: ggplot2, stats, matrixcalc, reshape2, rmutil, VaRES, VGAM,
+        EnvStats, GLDEX, GeneralizedHyperbolic, actuar, extraDistr,
+        gamlss.dist, sgt, skewt, sn, ssdtools, stabledist
+NeedsCompilation: no
+Packaged: 2025-09-05 07:58:59 UTC; 49009427
+Author: Bouchra R. Nasri [aut, cre, cph],
+  Mamadou Yamar Thioub [aut, cph],
+  Bruno N. Remillard [aut, cph]
+Repository: CRAN
+Date/Publication: 2025-09-07 22:10:32 UTC

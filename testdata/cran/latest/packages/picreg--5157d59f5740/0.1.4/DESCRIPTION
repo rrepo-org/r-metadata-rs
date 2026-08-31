@@ -1,0 +1,49 @@
+Package: picreg
+Type: Package
+Title: Variable Selection using the Pivotal Information Criterion
+Version: 0.1.4
+Date: 2026-07-20
+Authors@R: c(
+    person("Maxime", "van Cutsem",
+           role  = c("aut", "cre"),
+           email = "maxime.vancutsem@unige.ch"),
+    person("Sylvain", "Sardy",
+           role  = "aut",
+           email = "sylvain.sardy@unige.ch"))
+Description: Sparse regression and classification via the Pivotal
+    Information Criterion (PIC), an alternative to the Bayesian
+    Information Criterion (BIC), cross-validation, and Lasso-based
+    tuning. The regularization parameter is selected from a pivotal
+    null-distribution statistic, eliminating the need for
+    cross-validation and yielding sharper support recovery. Provides
+    Fast Iterative Shrinkage-Thresholding Algorithm (FISTA)
+    optimization for the L1, Smoothly Clipped Absolute Deviation
+    (SCAD), and Minimax Concave Penalty (MCP) penalties across six
+    response distributions: Gaussian, binomial, Poisson, exponential,
+    Gumbel, and Cox. Under standard sparsity assumptions, the
+    selector achieves a phase transition for exact support recovery,
+    analogous to results in compressed sensing. See Sardy, van Cutsem
+    and van de Geer (2026) <doi:10.48550/arXiv.2603.04172>.
+License: GPL-2
+URL: https://github.com/VcMaxouuu/picreg,
+        https://vcmaxouuu.github.io/picreg/
+BugReports: https://github.com/VcMaxouuu/picreg/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+Imports: stats, graphics, grDevices, parallel, future, future.apply,
+        Matrix, Rcpp (>= 1.0.10)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, xfun, glmnet
+VignetteBuilder: knitr
+SystemRequirements: C++17
+RoxygenNote: 8.0.0
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-20 11:13:41 UTC; maxvancutsem
+Author: Maxime van Cutsem [aut, cre],
+  Sylvain Sardy [aut]
+Maintainer: Maxime van Cutsem <maxime.vancutsem@unige.ch>
+Repository: CRAN
+Date/Publication: 2026-07-20 12:20:17 UTC

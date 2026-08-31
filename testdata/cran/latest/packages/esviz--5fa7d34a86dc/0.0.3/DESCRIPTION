@@ -1,0 +1,51 @@
+Package: esviz
+Title: Plotting Functions for Climate Science and Services
+Version: 0.0.3
+Authors@R: c(
+    person("BSC-CNS", role = c("aut", "cph")),
+    person("An-Chi", "Ho", , "an.ho@bsc.es", role = "aut"),
+    person("Eva", "Rifà", , "eva.rifarovira@bsc.es", role = "ctb"),
+    person("Victòria", "Agudetse", , "victoria.agudetse@bsc.es", role = "ctb"),
+    person("Ariadna", "Batalla", , "ariadna.batalla@bsc.es", role = c("ctb", "cre")),
+    person("Núria", "Pérez-Zanón", , "nuria.perez@bsc.es", role = "ctb"),
+    person("Nadia", "Milders", , "nadia.milders@bsc.es", role = "ctb"),
+    person("Verónica", "Torralba", , "veronica.torralba@bsc.es", role = "ctb"),
+    person("Raúl", "Capellán", , , role = "ctb"),
+    person("Anindita", "Patra", , "anindita.patra@bsc.es", role = "ctb"))
+Description: A plotting package for climate science and services. Provides a set
+    of functions for visualizing climate data, including maps, time series, 
+    scorecards and other diagnostics. Some functions are adapted and extended 
+    from the 's2dv' and 'CSTools' packages (Manubens et al. (2018)
+    <doi:10.1016/j.envsoft.2018.01.018>; Pérez-Zanón et al. (2022)
+    <doi:10.5194/gmd-15-6115-2022>), with more consistent and integrated 
+    functionalities.
+Depends: R (>= 3.6.0)
+Imports: graphics, grDevices, maps, ClimProjDiags, sf, ggplot2,
+        rnaturalearth, cowplot, s2dv, RColorBrewer, CSTools, easyNCDF
+        (>= 0.1.4), dplyr, plyr, data.table, reshape2, scales, stats,
+        utils, foreach, rlang, kableExtra, gridExtra, gtable,
+        doParallel, mapproj, webshot2, jsonlite, sp, methods, magrittr
+Suggests: testthat, rnaturalearthdata
+Maintainer: Ariadna Batalla <ariadna.batalla@bsc.es>
+License: GPL-3
+URL: https://gitlab.earth.bsc.es/es/esviz/
+BugReports: https://gitlab.earth.bsc.es/es/esviz/-/issues
+SystemRequirements: GDAL (>= 2.0.1), GEOS (>= 3.4.0), PROJ (>= 4.8.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-05-11 08:48:09 UTC; abatalla
+Author: BSC-CNS [aut, cph],
+  An-Chi Ho [aut],
+  Eva Rifà [ctb],
+  Victòria Agudetse [ctb],
+  Ariadna Batalla [ctb, cre],
+  Núria Pérez-Zanón [ctb],
+  Nadia Milders [ctb],
+  Verónica Torralba [ctb],
+  Raúl Capellán [ctb],
+  Anindita Patra [ctb]
+Repository: CRAN
+Date/Publication: 2026-05-28 08:30:09 UTC

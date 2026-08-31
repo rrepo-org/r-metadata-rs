@@ -1,0 +1,33 @@
+Package: APS
+Title: Analysing Prediction Stability of Non-Deterministic Prediction
+        Models
+Version: 1.0.1
+Authors@R: c(person(given = c("Thomas", "Martin"),
+                 family = "Lange",
+                 email = "thomas.lange@uni-goettingen.de", 
+                 role = c("cre","aut"), 
+                 comment = c(ORCID = "0000-0003-4351-7950")),
+          person(given = "Felix",
+                 family = "Heinrich",
+                 role = "ctb",
+                 comment = c(ORCID = "0000-0002-6093-8522")))
+Maintainer: Thomas Martin Lange <thomas.lange@uni-goettingen.de>
+Description: Provides methods to analyse the stability of non-deterministic prediction models. 
+    Prediction stability is quantified either as data-based prediction stability (phi) 
+    or as model-based prediction stability (psi). The package implements measures for 
+    categorical, ordinal, and metric predictions based on repeated model fitting 
+    and corresponding predictions. Methods are based on Lange et al. (2025) <doi:10.1186/s12859-025-06097-1>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.6.0)
+Imports: stats
+Suggests: ranger, covr, rmarkdown, spelling, testthat
+NeedsCompilation: no
+Packaged: 2026-04-09 12:25:10 UTC; thoma
+Author: Thomas Martin Lange [cre, aut] (ORCID:
+    <https://orcid.org/0000-0003-4351-7950>),
+  Felix Heinrich [ctb] (ORCID: <https://orcid.org/0000-0002-6093-8522>)
+LazyData: true
+Repository: CRAN
+Date/Publication: 2026-04-16 09:02:07 UTC

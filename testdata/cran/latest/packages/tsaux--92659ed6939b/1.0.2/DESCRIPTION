@@ -1,0 +1,25 @@
+Package: tsaux
+Type: Package
+Title: Time Series Forecasting Auxiliary Functions
+Version: 1.0.2
+Authors@R: c(person("Alexios", "Galanos", role = c("aut", "cre","cph"), email = "alexios@4dscape.com", comment = c(ORCID = "0009-0000-9308-0457")))
+Maintainer: Alexios Galanos <alexios@4dscape.com>
+Description: A suite of auxiliary functions that enhance time series estimation and forecasting, including a robust anomaly detection routine based on Chen and Liu (1993) <doi:10.2307/2290724> (imported and wrapped from the 'tsoutliers' package), utilities for managing calendar and time conversions, performance metrics to assess both point forecasts and distributional predictions, advanced simulation by allowing the generation of time series components—such as trend, seasonal, ARMA, irregular, and anomalies—in a modular fashion based on the innovations form of the state space model and a number of transformation methods including Box-Cox, Logit, 'Softplus-Logit' and Sigmoid.
+Depends: R (>= 4.1.0), tsmethods
+Imports: methods (>= 1.0.3), zoo, xts, lubridate, car, Rdpack,
+        scoringRules, tsoutliers, forecast, data.table
+RdMacros: Rdpack
+License: GPL-2
+Encoding: UTF-8
+BugReports: https://github.com/tsmodels/tsaux/issues
+URL: https://github.com/tsmodels/tsaux
+RoxygenNote: 7.3.2
+Suggests: knitr, kableExtra, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-03 20:04:56 UTC; alexios
+Author: Alexios Galanos [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0000-9308-0457>)
+Repository: CRAN
+Date/Publication: 2026-04-04 05:20:08 UTC

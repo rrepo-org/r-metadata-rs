@@ -1,0 +1,39 @@
+Package: DirichletRF
+Type: Package
+Title: Dirichlet Random Forest
+Version: 0.2.0
+Authors@R: c(
+    person("Khaled", "Masoumifard", , "masoumifardk@yahoo.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1921-2145")),
+    person("Stephan", "van der Westhuizen", , "stephanvdw@sun.ac.za", role = "aut",
+           comment = c(ORCID = "0000-0001-9469-8427")),
+    person("Sugnet", "Lubbe", , "slubbe@sun.ac.za", role = "aut",
+           comment = c(ORCID = "0000-0003-2762-9944")))
+Description: Implementation of the Dirichlet Random Forest algorithm
+    for compositional response data. Trees are grown using a Dirichlet
+    log-likelihood splitting criterion, with maximum likelihood ('MLE') and
+    method-of-moments ('MOM') parameter estimation. Provides averaging-based
+    predictions (average of responses within terminal nodes), parameter-based
+    predictions (expected value derived from the estimated Dirichlet
+    parameters within terminal nodes), and distributional predictions
+    represented as a weighted distribution over the training responses.
+    Out-of-bag estimation and impurity- and permutation-based variable
+    importance are also supported. For more details see Masoumifard, van der
+    Westhuizen, and Gardner-Lubbe (2026, ISBN:9781032903910).
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.0), parallel
+LinkingTo: Rcpp
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-23 21:10:49 UTC; 29827094
+Author: Khaled Masoumifard [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1921-2145>),
+  Stephan van der Westhuizen [aut] (ORCID:
+    <https://orcid.org/0000-0001-9469-8427>),
+  Sugnet Lubbe [aut] (ORCID: <https://orcid.org/0000-0003-2762-9944>)
+Maintainer: Khaled Masoumifard <masoumifardk@yahoo.com>
+Repository: CRAN
+Date/Publication: 2026-07-23 21:30:02 UTC

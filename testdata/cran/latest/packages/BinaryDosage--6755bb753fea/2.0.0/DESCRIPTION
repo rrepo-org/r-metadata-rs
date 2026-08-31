@@ -1,0 +1,42 @@
+Package: BinaryDosage
+Title: Creates, Merges, and Reads Binary Dosage Files
+Version: 2.0.0
+Authors@R: 
+    c(person(given = "John",
+             family = "Morrison",
+             role = c("aut", "cre"),
+             email = "jmorr@usc.edu"),
+      person(given = "NCI",
+             role = "fnd",
+             comment = "CA196559"),
+      person(given = "NCI",
+             role = "fnd",
+             comment = "CA201407"),
+      person(given = "NIEHS",
+             role = "fnd",
+             comment = "ES007048"),
+      person(given = "NHLBI",
+             role = "fnd",
+             comment = "HL115606"))
+Description: Tools to create binary dosage files from either VCF
+    or GEN files, merge binary dosage files, and read
+    binary dosage files. Binary dosage files tend to have quicker
+    read times than VCF and GEN formats. There is a small increase
+    in size compared to compressed VCF and GEN files.
+License: GPL-3
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0), vcfppR
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp
+Imports: Rcpp, digest, prodlim
+NeedsCompilation: yes
+Packaged: 2026-04-24 19:52:03 UTC; jmorr
+Author: John Morrison [aut, cre],
+  NCI [fnd] (CA196559),
+  NCI [fnd] (CA201407),
+  NIEHS [fnd] (ES007048),
+  NHLBI [fnd] (HL115606)
+Maintainer: John Morrison <jmorr@usc.edu>
+Repository: CRAN
+Date/Publication: 2026-04-29 18:10:02 UTC

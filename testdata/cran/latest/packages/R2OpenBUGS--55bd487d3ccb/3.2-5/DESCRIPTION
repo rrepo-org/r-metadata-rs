@@ -1,0 +1,49 @@
+Package: R2OpenBUGS
+Title: Running OpenBUGS from R
+Date: 2026-02-23
+Version: 3.2-5
+Authors@R: c(person(given = "Andrew",
+                        family = "Gelman",
+                        role = "aut",
+                        email = "gelman@stat.columbia.edu"),
+                 person(given = "Sibylle",
+                        family = "Sturtz",
+                        role = "aut",
+                        email = "sturtz@statistik.tu-dortmund.de"),
+                 person(given = "Uwe", 
+						family = "Ligges",
+						email = "ligges@statistik.tu-dortmund.de",
+					    role = c("cre", "aut")),
+				 person(given = "Gregor", 
+						family = "Gorjanc",
+                        role = "ctb",
+                        email = "gregor.gorjanc@bfro.uni-lj.si"),
+                 person(given = "Jouni", 
+				        family = "Kerman",
+						role = "ctb",
+                        email = "kerman@stat.columbia.edu"),
+				 person(given = "Neal",
+						family =  "Thomas",
+						email= "snthomas99@yahoo.com",
+						comment = "adapted from R2WinBUGS",
+                        role = "aut")
+				)
+Description: Using this package,
+ it is possible to call a BUGS model, summarize inferences and
+ convergence in a table and graph, and save the simulations in arrays for easy access
+ in R. 
+Depends: R (>= 2.13.0)
+Imports: coda (>= 0.11-0), boot
+SystemRequirements: OpenBUGS (>= 3.2.2)
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2026-02-23 13:35:16 UTC; ligges
+Author: Andrew Gelman [aut],
+  Sibylle Sturtz [aut],
+  Uwe Ligges [cre, aut],
+  Gregor Gorjanc [ctb],
+  Jouni Kerman [ctb],
+  Neal Thomas [aut] (adapted from R2WinBUGS)
+Maintainer: Uwe Ligges <ligges@statistik.tu-dortmund.de>
+Repository: CRAN
+Date/Publication: 2026-02-23 17:00:29 UTC

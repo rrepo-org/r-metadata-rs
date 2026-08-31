@@ -1,0 +1,43 @@
+Package: scholar
+Type: Package
+Title: Analyse Citation Data from Google Scholar
+Version: 1.0.0
+Authors@R: c(
+    person("Guangchuang", "Yu",   email = "guangchuangyu@gmail.com",   role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6485-8781")),
+    person("James", "Keirstead",  email = "james.keirstead@gmail.com", role = "aut"),
+    person("Gregory", "Jefferis", email = "jefferis@gmail.com",        role = "aut", comment = c(ORCID = "0000-0002-0587-9355")),
+    person("Gordon", "Getzinger", role = "ctb"),
+    person("Jorge", "Cimentada",    email = "cimentadaj@gmail.com",        role = "ctb"),
+    person("Max", "Czapanskiy",     email = "maxczapanskiy@gmail.com",        role = "ctb"),
+    person("Dominique", "Makowski", email = "dom.makowski@gmail.com",        role = "ctb")
+    )
+Maintainer: Guangchuang Yu <guangchuangyu@gmail.com>
+Description: Provides tools to retrieve, analyse, and format publication and
+    citation data from Google Scholar profiles. It supports profile lookup,
+    publication records, citation histories, scholar comparison, coauthor
+    networks, journal ranking queries, CV-ready publication lists, and citation
+    metric summaries.
+Depends: R (>= 4.1.0)
+Imports: R.cache, dplyr, httr, rlang, rvest, stringr, xml2, tidygraph,
+        ggraph, ggplot2
+Suggests: knitr, quarto, rmarkdown, roxygen2, spelling, testthat (>=
+        2.1.0), yulab.utils
+VignetteBuilder: quarto
+License: MIT + file LICENSE
+URL: https://github.com/YuLab-SMU/scholar
+BugReports: https://github.com/YuLab-SMU/scholar/issues
+Encoding: UTF-8
+Language: en-GB
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-07 08:04:16 UTC; HUAWEI
+Author: Guangchuang Yu [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6485-8781>),
+  James Keirstead [aut],
+  Gregory Jefferis [aut] (ORCID: <https://orcid.org/0000-0002-0587-9355>),
+  Gordon Getzinger [ctb],
+  Jorge Cimentada [ctb],
+  Max Czapanskiy [ctb],
+  Dominique Makowski [ctb]
+Repository: CRAN
+Date/Publication: 2026-07-07 08:50:02 UTC

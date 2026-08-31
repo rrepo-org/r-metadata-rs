@@ -1,0 +1,33 @@
+Package: rregm
+Type: Package
+Title: Reparameterized Regression Models
+Version: 1.3
+Authors@R: c(person("Diego", "Gallardo", role = c("aut","cre"), email = "dgallardo@ubiobio.cl"),
+	person("Marcelo", "Bourguignon", role = "aut", email = "m.p.bourguignon@gmail.com"),
+	person("Marcia","Brandao",role="aut", email="mbrandao07@gmail.com"),
+	person("Tiago","Magalhaes",role="ctb", email="tiago.magalhaes@ufjf.br"),
+	person("Rafael","Izbicki",role="ctb", email="rizbicki@ufscar.br"))
+Maintainer: Diego Gallardo <dgallardo@ubiobio.cl>
+Description: Provides estimation and data generation tools for several new regression models,
+             including the gamma, beta, inverse gamma, beta prime, log-normal and log-logistic
+             distributions. These models can be parameterized based on the mean, median, mode, 
+             geometric mean and harmonic mean, except for the log-logistic model which is based
+             on alternative parametrizations.  
+             For details, see Bourguignon and Gallardo (2025a) <doi:10.1016/j.chemolab.2025.105382> and
+             Bourguignon and Gallardo (2025b) <doi:10.1111/stan.70007>.
+             The package also implements higher-order likelihood inference through Skovgaard-adjusted
+             likelihood ratio statistics and predictive shrinkage estimators reparameterized 
+             beta regression models.
+Depends: R (>= 4.0.0), stats
+Imports: extraDistr, pracma, gamlss, gamlss.dist, invgamma, skewMLRM
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: no
+Author: Diego Gallardo [aut, cre],
+  Marcelo Bourguignon [aut],
+  Marcia Brandao [aut],
+  Tiago Magalhaes [ctb],
+  Rafael Izbicki [ctb]
+Packaged: 2026-07-21 23:26:29 UTC; Diego
+Repository: CRAN
+Date/Publication: 2026-07-21 23:50:02 UTC

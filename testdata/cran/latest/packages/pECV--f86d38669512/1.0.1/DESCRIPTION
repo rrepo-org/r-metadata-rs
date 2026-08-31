@@ -1,0 +1,30 @@
+Package: pECV
+Type: Package
+Title: Entrywise Splitting Cross-Validation for Factor Models
+Version: 1.0.1
+Authors@R: 
+    person(given = "Zhijing",
+           family = "Wang",
+           email = "wangzhijing@sjtu.edu.cn",
+           role = c("aut", "cre"))
+Description: Implements entrywise splitting cross-validation (ECV) and its
+    penalized variant (pECV) for selecting the number of factors in
+    generalized factor models.
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 3.5.0)
+Imports: stats, Rcpp (>= 1.0.0), irlba
+Suggests: mirtjml, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://github.com/wangATsu/ECV
+BugReports: https://github.com/wangATsu/ECV/issues
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+ByteCompile: true
+NeedsCompilation: yes
+Packaged: 2025-08-23 02:29:40 UTC; clswt-wangzhijing
+Author: Zhijing Wang [aut, cre]
+Maintainer: Zhijing Wang <wangzhijing@sjtu.edu.cn>
+Repository: CRAN
+Date/Publication: 2025-08-28 08:50:07 UTC

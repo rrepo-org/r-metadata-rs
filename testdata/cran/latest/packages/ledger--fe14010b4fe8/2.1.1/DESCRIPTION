@@ -1,0 +1,31 @@
+Package: ledger
+Type: Package
+Title: Utilities for Importing Data from Plain Text Accounting Files
+Version: 2.1.1
+Authors@R: c(person("Trevor L.", "Davis", role=c("aut", "cre"),
+             email="trevor.l.davis@gmail.com",
+             comment = c(ORCID = "0000-0001-6341-4639")),
+    person("Jenya", "Sovetkin", role="ctb"),
+    person("Chris", "Lloyd", role="ctb"))
+URL: https://github.com/trevorld/r-ledger,
+        https://trevorldavis.com/R/ledger/
+BugReports: https://github.com/trevorld/r-ledger/issues
+Description: Utilities for querying plain text accounting files from 'Ledger', 'HLedger', and 'Beancount'.
+Imports: dplyr (>= 0.7.0), rlang, stringr, tidyr (>= 0.7.0), tibble,
+        tidyselect (>= 1.2.0), tools
+Suggests: rio, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+SystemRequirements: ledger (>= 3.1), hledger (>= 1.2), beanquery or
+        rustledger (>= 0.15.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-12 21:32:04 UTC; trevor
+Author: Trevor L. Davis [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6341-4639>),
+  Jenya Sovetkin [ctb],
+  Chris Lloyd [ctb]
+Maintainer: Trevor L. Davis <trevor.l.davis@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-12 23:00:02 UTC

@@ -1,0 +1,33 @@
+Package: umweltapir
+Title: Access 'umwelt.info' API
+Version: 0.2.2
+Encoding: UTF-8
+Authors@R: 
+    c(person(given = "Luise", family = "Quoß", email = "luise.quoss@uba.de", role = c("aut", "cre")),
+      person(given = "Johannes", family = "Vogel", email = "johannes.vogel@uba.de", role = "aut"),
+      person(given = "Maximilian", family = "Berthold", email = "maximilian.berthold@uba.de", role = "aut"),
+      person(given = "Nationales Zentrum für Umwelt- und Naturschutzinformationen", email = "umwelt.info@uba.de", role = "cph"))
+Description: Provides an R-based access to the datasets including their 
+    resources from the portal <https://umwelt.info>. The package allows for
+    an easy integration of those datasets into your R-based workflows. The
+    functionality of the package mirrors the web-based access as provided 
+    at <https://umwelt.info>. You can use the same queries and get the same
+    datasets by accessing our API.
+URL:
+        https://gitlab.opencode.de/umwelt-info/packages/-/tree/main/umweltapir?ref_type=heads
+BugReports: https://gitlab.opencode.de/umwelt-info/packages/-/work_items
+License: MIT + file LICENSE | Apache License 2.0
+Depends: R (>= 4.1.0)
+Imports: arrow, dplyr, httr2, jsonlite, purrr, rlang, tibble, tidyr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-24 09:12:23 UTC; ubuntu
+Author: Luise Quoß [aut, cre],
+  Johannes Vogel [aut],
+  Maximilian Berthold [aut],
+  Nationales Zentrum für Umwelt- und Naturschutzinformationen [cph]
+Maintainer: Luise Quoß <luise.quoss@uba.de>
+Repository: CRAN
+Date/Publication: 2026-08-24 11:20:02 UTC

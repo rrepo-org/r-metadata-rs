@@ -1,0 +1,45 @@
+Package: tlsR
+Type: Package
+Title: Detection and Spatial Analysis of Tertiary Lymphoid Structures
+Version: 0.3.0
+Date: 2026-04-02
+Authors@R: c(
+    person("Ali", "Amiryousefi",
+           email = "ali_amiryousefi@hms.harvard.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6317-3860")),
+    person("Jeremiah", "Wala",
+           email = "jeremiah_wala@dfci.harvard.edu",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-6591-1620")),
+    person("Peter", "Sorger",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-3364-1838")))
+Description: Fast, reproducible detection and quantitative analysis of
+    tertiary lymphoid structures (TLS) in multiplexed tissue imaging.
+    Implements Independent Component Analysis Trace (ICAT) index, local
+    Ripley's K scanning, automated K Nearest Neighbor (KNN)-based TLS
+    detection, and T-cell clusters identification as described in
+    Amiryousefi et al. (2025) <doi:10.1101/2025.09.21.677465>.
+License: MIT + file LICENSE
+URL: https://github.com/labsyspharm/tlsR
+Depends: R (>= 4.0.0)
+Imports: dbscan (>= 1.1-10), fastICA (>= 1.2-3), FNN (>= 1.1.3),
+        spatstat.explore (>= 3.0-0), spatstat.geom (>= 3.0-0), ggplot2
+        (>= 3.4.0), rlang (>= 1.0.0), grDevices, graphics, stats,
+        methods
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-23 20:08:52 UTC; ali
+Author: Ali Amiryousefi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6317-3860>),
+  Jeremiah Wala [aut] (ORCID: <https://orcid.org/0000-0001-6591-1620>),
+  Peter Sorger [ctb] (ORCID: <https://orcid.org/0000-0002-3364-1838>)
+Maintainer: Ali Amiryousefi <ali_amiryousefi@hms.harvard.edu>
+Repository: CRAN
+Date/Publication: 2026-04-23 20:40:02 UTC

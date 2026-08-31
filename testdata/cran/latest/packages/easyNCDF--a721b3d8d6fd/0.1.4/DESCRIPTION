@@ -1,0 +1,35 @@
+Package: easyNCDF
+Title: Tools to Easily Read/Write NetCDF Files into/from
+        Multidimensional R Arrays
+Version: 0.1.4
+Authors@R: c(
+    person("BSC-CNS", role = c("aut", "cph")),
+    person("Nicolau", "Manubens", , "nicolau.manubens@bsc.es", role = c("aut")),
+    person("Nuria", "Perez-Zanon", , "nuria.perez@bsc.es", role = c("ctb"), comment = c(ORCID = "0000-0001-8568-3071")),
+    person("An-Chi", "Ho", , "an.ho@bsc.es", role = c("ctb")),
+    person("Ariadna", "Batalla", , "ariadna.batalla@bsc.es", role = c("cre")),
+    person("Victoria", "Agudetse", , "victoria.agudetse@bsc.es", role = c("ctb")))
+Description: Set of wrappers for the 'ncdf4' package to simplify and extend its
+    reading/writing capabilities into/from multidimensional R arrays.
+Depends: R (>= 3.2.0)
+Imports: ncdf4, abind
+Suggests: testthat
+License: GPL-3
+URL: https://earth.bsc.es/gitlab/es/easyNCDF
+BugReports: https://earth.bsc.es/gitlab/es/easyNCDF/-/issues
+SystemRequirements: netcdf development libraries
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-07-31 15:19:30 UTC; abatalla
+Author: BSC-CNS [aut, cph],
+  Nicolau Manubens [aut],
+  Nuria Perez-Zanon [ctb] (ORCID:
+    <https://orcid.org/0000-0001-8568-3071>),
+  An-Chi Ho [ctb],
+  Ariadna Batalla [cre],
+  Victoria Agudetse [ctb]
+Maintainer: Ariadna Batalla <ariadna.batalla@bsc.es>
+Repository: CRAN
+Date/Publication: 2025-08-27 07:20:09 UTC

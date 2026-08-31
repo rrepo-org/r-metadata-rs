@@ -1,0 +1,47 @@
+Package: HaDeX2
+Title: Analysis and Visualisation of Hydrogen/Deuterium Exchange Mass
+        Spectrometry Data
+Version: 1.0.0
+Authors@R: c(person("Weronika", "Puchala", 
+           email = "puchala.weronika@gmail.com", 
+           comment = c(ORCID = "0000-0003-2163-1429"),
+           role = c("cre", "aut")),
+           person("Michal", "Burdukiewicz", 
+           email = "michalburdukiewicz@gmail.com", 
+           comment = c(ORCID = "0000-0001-8926-582X"),
+           role = c("aut")),
+           person("Dominik", "Rafacz", 
+           email = "dominikrafacz@gmail.com",
+           role = c("ctb")),
+           person("Krystyna", "Grzesiak", 
+           email = "krygrz11@gmail.com",
+           role = c("ctb")))
+Description: Processing, analysis and visualization of Hydrogen Deuterium eXchange monitored by 
+             Mass Spectrometry experiments (HDX-MS). 'HaDeX2' introduces a new 
+             standardized and reproducible workflow for the analysis of the HDX-MS data, including uncertainty propagation, data aggregation and visualization on 3D structure.
+             Additionally, it covers data exploration, quality control and generation of publication-quality 
+             figures. All functionalities are also available in the accompanying 'shiny' app.
+Depends: R (>= 3.5)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: checkmate, data.table, dplyr, ggplot2, glue, gridExtra,
+        magick, purrr, readr, readxl, r3dmol (>= 0.1.2), remotes,
+        stringi, tidyr, ggiraph
+Suggests: bookdown, digest, knitr, magrittr, pander, renv, rmarkdown,
+        microbenchmark, testthat, vdiffr, scales, shiny, spelling
+VignetteBuilder: knitr
+Language: en-US
+URL: https://hadexversum.github.io/HaDeX2/
+NeedsCompilation: no
+Packaged: 2026-02-05 15:05:03 UTC; User
+Author: Weronika Puchala [cre, aut] (ORCID:
+    <https://orcid.org/0000-0003-2163-1429>),
+  Michal Burdukiewicz [aut] (ORCID:
+    <https://orcid.org/0000-0001-8926-582X>),
+  Dominik Rafacz [ctb],
+  Krystyna Grzesiak [ctb]
+Maintainer: Weronika Puchala <puchala.weronika@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-09 13:30:26 UTC

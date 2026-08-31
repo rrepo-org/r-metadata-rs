@@ -1,0 +1,50 @@
+Package: pvEBayes
+Title: Empirical Bayes Methods for Pharmacovigilance
+Version: 0.3.0
+Authors@R: c(
+    person(
+    "Yihao", "Tan", 
+    email = "yihaotan@buffalo.edu", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0009-0002-9196-8166")
+    ),
+    person(
+    "Marianthi", "Markatou", 
+    role = "aut",
+    comment = c(ORCID = "0000-0002-1453-8229")
+    ),
+    person(
+    "Saptarshi", "Chakraborty", 
+    role = c("aut"),
+    comment = c(ORCID = "0000-0002-3121-9174")
+    ),
+    person(given = "Raktim", family = "Mukhopadhyay", 
+      role = c("aut"),
+      comment = c(ORCID = "0009-0007-8972-6682"))
+    )
+Maintainer: Yihao Tan <yihaotan@buffalo.edu>
+Description: A suite of empirical Bayes methods to use in pharmacovigilance. Contains various model fitting and post-processing functions. For more details see Tan et al. (2025) <doi:10.1002/sim.70195>, <doi:10.48550/arXiv.2512.01057>; Koenker and Mizera (2014) <doi:10.1080/01621459.2013.869224>; Efron (2016) <doi:10.1093/biomet/asv068>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.6.0)
+Imports: data.table, ggdist, ggfittext, ggplot2, glue, graphics,
+        magrittr, methods, stats, wacolors, Rcpp, splines, CVXR, cli
+LinkingTo: Rcpp, RcppEigen
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/ropensci/pvEBayes
+BugReports: https://github.com/ropensci/pvEBayes/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-06-15 23:39:13 UTC; yihao
+Author: Yihao Tan [aut, cre] (ORCID: <https://orcid.org/0009-0002-9196-8166>),
+  Marianthi Markatou [aut] (ORCID:
+    <https://orcid.org/0000-0002-1453-8229>),
+  Saptarshi Chakraborty [aut] (ORCID:
+    <https://orcid.org/0000-0002-3121-9174>),
+  Raktim Mukhopadhyay [aut] (ORCID:
+    <https://orcid.org/0009-0007-8972-6682>)
+Repository: CRAN
+Date/Publication: 2026-06-16 17:20:02 UTC

@@ -1,0 +1,47 @@
+Package: mqqcause
+Type: Package
+Title: Multivariate Quantile-on-Quantile Granger Causality
+Version: 1.0.0
+Authors@R: c(
+    person("Merwan", "Roudane",
+           email = "merwanroudane920@gmail.com",
+           role = c("aut", "cre", "cph")),
+    person("Avik", "Sinha", role = "ctb",
+           comment = "Original multivariate QQ causality methodology"),
+    person("Nicholas", "Sim", role = "ctb",
+           comment = "Original QQ regression methodology"),
+    person("Hongtao", "Zhou", role = "ctb",
+           comment = "Original QQ regression methodology"))
+Description: Implements bivariate and Multivariate Quantile-on-Quantile
+    Granger causality tests building on the Quantile-on-Quantile
+    regression framework of Sim and Zhou (2015)
+    <doi:10.1016/j.jbankfin.2015.01.013> and the quantile Granger
+    causality test of Troster (2018)
+    <doi:10.1080/07474938.2016.1172400>. The bivariate test estimates
+    the local-linear slope in the quantile regression of y_t on lagged
+    x_t with lagged y_t as control, using Gaussian kernel weights, and
+    tests it against zero by paired bootstrap. The multivariate
+    (conditional) test additionally conditions on a set of moderators Z
+    and optional x times Z interaction terms, in the spirit of Sinha,
+    Ghosh, Hussain, Nguyen and Das (2023)
+    <doi:10.1016/j.eneco.2023.107021>. A Sup-Wald summary across the
+    quantile grid is also provided. Heatmaps and 3D surfaces default to
+    the 'MATLAB' 'Parula' colour map.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+Imports: quantreg (>= 5.0), plotly (>= 4.0.0), stats, utils, grDevices
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://github.com/merwanroudane/qqcaus
+BugReports: https://github.com/merwanroudane/qqcaus/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-28 13:02:20 UTC; HP
+Author: Merwan Roudane [aut, cre, cph],
+  Avik Sinha [ctb] (Original multivariate QQ causality methodology),
+  Nicholas Sim [ctb] (Original QQ regression methodology),
+  Hongtao Zhou [ctb] (Original QQ regression methodology)
+Maintainer: Merwan Roudane <merwanroudane920@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-01 09:00:31 UTC

@@ -1,0 +1,24 @@
+Package: rerddapUtils
+Title: Miscellaneous Utilities for 'rerddap'
+Version: 1.0.2
+Date: 2026-06-05
+Authors@R: person("Roy", "Mendelssohn", email = "roy.mendelssohn@noaa.gov", role = c("aut","cre"))
+Description: The 'rerddapUtils' package is an 'R' package that is a set of four main
+ functions designed to work with and extend the 'rerddap' package. These functions includes one for restricting by season,
+ one for splitting large requests, and two for working with projected datasets. There are also two utility functions
+ that provide estimates of the size of a proposed 'rerddap::griddap()' request.
+License: CC0
+Encoding: UTF-8
+Depends: R(>= 4.4.0)
+Imports: cli, DBI, duckdb, lubridate, ncdf4, rerddap, sf, stats,
+        stringr,
+Suggests: arrow, dplyr, duckplyr, httr, knitr, rmarkdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0.9000
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-07 16:59:08 UTC; rmendels
+Author: Roy Mendelssohn [aut, cre]
+Maintainer: Roy Mendelssohn <roy.mendelssohn@noaa.gov>
+Repository: CRAN
+Date/Publication: 2026-06-08 06:50:08 UTC

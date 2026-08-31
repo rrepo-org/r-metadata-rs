@@ -1,0 +1,45 @@
+Package: PONG2
+Type: Package
+Title: KIR Genotype Imputation and Model Training from SNP Array Data
+Version: 1.0.1
+Date: 2026-05-30
+Description: A scalable and accurate tool for Killer-cell Immunoglobulin-like
+    Receptor (KIR) genotype imputation directly from SNP array data using
+    supervised machine learning models trained across five continental ancestry
+    groups. Uses attribute bagging and an ensemble classifier method with
+    haplotype inference for SNPs and KIR types. Models are built from global
+    populations in the 1000 Genomes Project and validated across diverse
+    biobank cohorts. Methods are based on Zheng et al. (2014)
+    <doi:10.1016/j.ajhg.2013.12.015> and Sadeeq et al. (2026)
+    <https://github.com/NormanLabUCD/PONG2>.
+Authors@R: c(
+    person("Suraju A.", "Sadeeq", email = "suraju.sadeeq@cuanschutz.edu",
+           role = c("aut", "cre")),
+    person("Laura A.", "Leaton", role = "aut"),
+    person("Katherine M.", "Kichula", role = "aut"),
+    person("Paul J.", "Norman", role = "aut"),
+    person("Xiuwen", "Zheng", role = c("ctb", "cph"),
+           comment = "Original HIBAG C++ code adapted in src/PONG.cpp and src/LibKIR.cpp"))
+Maintainer: Suraju A. Sadeeq <suraju.sadeeq@cuanschutz.edu>
+License: GPL-3
+URL: https://normanlabucd.github.io/PONG2/,
+        https://github.com/NormanLabUCD/PONG2
+BugReports: https://github.com/NormanLabUCD/PONG2/issues
+Depends: R (>= 4.0.0)
+Imports: parallel, graphics, stats, utils, tools
+LinkingTo: Rcpp, RcppParallel
+Suggests: HIBAG, knitr, rmarkdown, pkgdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: PLINK2 (>= 2.0), minimac4 (>= 4.1.6, optional)
+NeedsCompilation: yes
+Packaged: 2026-06-18 16:44:28 UTC; suraju
+Author: Suraju A. Sadeeq [aut, cre],
+  Laura A. Leaton [aut],
+  Katherine M. Kichula [aut],
+  Paul J. Norman [aut],
+  Xiuwen Zheng [ctb, cph] (Original HIBAG C++ code adapted in
+    src/PONG.cpp and src/LibKIR.cpp)
+Repository: CRAN
+Date/Publication: 2026-06-24 08:10:02 UTC

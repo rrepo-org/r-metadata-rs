@@ -1,0 +1,35 @@
+Type: Package
+Package: NeEDS4BigData
+Title: New Experimental Design Based Subsampling Methods for Big Data
+Version: 1.0.1
+Authors@R: person(given = "Amalan", family = "Mahendran", email = "amalan0595@gmail.com", role = c("aut", "cre"),comment = c(ORCID = "0000-0002-0643-9052"))
+Maintainer: Amalan Mahendran <amalan0595@gmail.com>
+Description: Subsampling methods for big data under different models and assumptions.
+    Starting with linear regression and leading to Generalised Linear Models, softmax
+    regression, and quantile regression. Specifically, the model-robust subsampling method 
+    proposed in Mahendran, A., Thompson, H., and McGree, J. M. (2023) <doi:10.1007/s00362-023-01446-9>, 
+    where multiple models can describe the big data, and the subsampling framework for potentially 
+    misspecified Generalised Linear Models in Mahendran, A., Thompson, H., and McGree, J. M. (2025)
+    <doi:10.48550/arXiv.2510.05902>.
+License: MIT + file LICENSE
+URL:
+        https://github.com/Amalan-ConStat/NeEDS4BigData,https://amalan-constat.github.io/NeEDS4BigData/index.html
+BugReports: https://github.com/Amalan-ConStat/NeEDS4BigData/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, foreach, gam, ggh4x, ggplot2, ggridges, matrixStats,
+        mvnfast, psych, Rdpack, Rfast, rlang, stats, tidyr
+RdMacros: Rdpack
+Suggests: doParallel, ggpubr, kableExtra, knitr, parallel, rmarkdown,
+        spelling, testthat, vctrs, pillar
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-18 14:12:20 UTC; amala
+Author: Amalan Mahendran [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0643-9052>)
+Repository: CRAN
+Date/Publication: 2025-10-22 19:00:08 UTC

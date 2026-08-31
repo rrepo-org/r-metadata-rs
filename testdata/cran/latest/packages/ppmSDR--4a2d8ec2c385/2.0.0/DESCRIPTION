@@ -1,0 +1,46 @@
+Package: ppmSDR
+Type: Package
+Title: Penalized Principal Machine for Sufficient Dimension Reduction
+Version: 2.0.0
+Authors@R: c(
+    person(given = "Jungmin", family = "Shin", role = c("aut", "cre"),
+           email = "c16267@gmail.com",
+           comment = "Department of Biomedical Informatics, The Ohio State University"),
+    person(given = c("Seung", "Jun"), family = "Shin", role = "aut",
+           email = "sjshin@korea.ac.kr",
+           comment = "Department of Statistics, Korea University"))
+Author: Jungmin Shin [aut, cre] (Department of Biomedical Informatics, The Ohio
+    State University),
+  Seung Jun Shin [aut] (Department of Statistics, Korea University)
+Maintainer: Jungmin Shin <c16267@gmail.com>
+Description: A unified, computation-friendly framework for penalized principal
+    machines (P2M), a class of sparse sufficient dimension reduction (SDR)
+    estimators for regression and binary classification. Principal machines
+    (PM) estimate the central subspace by solving a family of convex-loss
+    problems over several cutoffs; their penalized counterparts (P2M) add a
+    row-group sparsity penalty so that dimension reduction and variable
+    selection are performed simultaneously. All estimators are fitted by a
+    single group coordinate descent (GCD) algorithm that accommodates least
+    squares, logistic, asymmetric least squares, L2-hinge, hinge (support
+    vector machine, SVM) and quantile losses, together with the least absolute
+    shrinkage and selection operator (LASSO), the smoothly clipped absolute
+    deviation (SCAD) penalty and the minimax concave penalty (MCP). Methods are
+    described in Li, Artemiou and Li (2011) <doi:10.1214/11-AOS932>, Shin and
+    Artemiou (2017) <doi:10.1016/j.csda.2016.12.003>, Artemiou, Dong and Shin
+    (2021) <doi:10.1016/j.patcog.2020.107768> and Breheny and Huang (2015)
+    <doi:10.1007/s11222-013-9424-2>.
+Depends: R (>= 4.1.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: stats, Matrix, grpreg, energy
+Suggests: MASS, knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://github.com/c16267/ppmSDR
+BugReports: https://github.com/c16267/ppmSDR/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-13 23:05:11 UTC; shin.991
+Repository: CRAN
+Date/Publication: 2026-06-19 16:30:10 UTC

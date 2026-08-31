@@ -1,0 +1,59 @@
+Package: metalite.ae
+Title: Adverse Events Analysis Using 'metalite'
+Version: 0.1.4
+Authors@R: c(
+    person("Yilong", "Zhang", role = c("aut")),
+    person("Yujie", "Zhao", email = "yujie.zhao@merck.com", role = c("aut", "cre")),
+    person("Hiroaki", "Fukuda", role = c("aut")),
+    person("Benjamin", "Wang", role = c("aut")),
+    person("Nan", "Xiao", role = c("aut")),
+    person("Sarad", "Nepal", role = c("aut")),
+    person("Madhusudhan", "Ginnaram", role = c("aut")),
+    person("Venkatesh", "Burla", role = c("ctb")),
+    person("Ruchitbhai", "Patel", role = c("aut")),
+    person("Brian", "Lang", role = c("aut")),
+    person("Xuan", "Deng", role = c("aut")),
+    person("Bing", "Liu", role = c("aut")),
+    person("Jeetender", "Chauhan", role = c("aut")),
+    person("Li", "Ma", role = c("ctb")),
+    person("Merck Sharp & Dohme Corp", role = c("cph"))
+    )
+Description: Analyzes adverse events in clinical trials using the 'metalite'
+    data structure. The package simplifies the workflow to create
+    production-ready tables, listings, and figures discussed in the
+    adverse events analysis chapters of
+    "R for Clinical Study Reports and Submission"
+    by Zhang et al. (2022) <https://r4csr.org/>.
+License: GPL-3
+URL: https://merck.github.io/metalite.ae/,
+        https://github.com/Merck/metalite.ae
+BugReports: https://github.com/Merck/metalite.ae/issues
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+Imports: glue, metalite, r2rtf, stats, gt
+Suggests: DescTools, covr, dplyr, knitr, forestly, reactable,
+        rmarkdown, testthat (>= 3.0.0), tibble, tidyr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-28 14:42:05 UTC; zhayuji4
+Author: Yilong Zhang [aut],
+  Yujie Zhao [aut, cre],
+  Hiroaki Fukuda [aut],
+  Benjamin Wang [aut],
+  Nan Xiao [aut],
+  Sarad Nepal [aut],
+  Madhusudhan Ginnaram [aut],
+  Venkatesh Burla [ctb],
+  Ruchitbhai Patel [aut],
+  Brian Lang [aut],
+  Xuan Deng [aut],
+  Bing Liu [aut],
+  Jeetender Chauhan [aut],
+  Li Ma [ctb],
+  Merck Sharp & Dohme Corp [cph]
+Maintainer: Yujie Zhao <yujie.zhao@merck.com>
+Repository: CRAN
+Date/Publication: 2026-08-29 12:10:22 UTC

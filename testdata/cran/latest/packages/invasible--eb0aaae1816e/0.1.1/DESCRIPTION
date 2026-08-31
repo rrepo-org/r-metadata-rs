@@ -1,0 +1,27 @@
+Package: invasible
+Title: Predicting Invasion Probabilities from Phylogenetic Data and
+        Species Traits
+Version: 0.1.1
+Authors@R: 
+    person("Shahar", "Dubiner", email="dubiner@mail.tau.ac.il", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-1771-0087"))
+Description: A phylogenetic modelling approach for predicting species invasion risk, out of
+    a given pool of local species where a subset is known to be invasive elsewhere.
+    The package uses phylogenetic signal estimation and phylogenetic linear and logistic models
+    to estimate probabilities of being invasive based on phylogeny and any set of additional 
+    predictors. A ranking method is implemented to evaluate prioritisation strategies. A manuscript
+    describing these methods, by Shahar Dubiner and Tamar Guy-Haim, is in preparation.
+License: GPL-3
+Encoding: UTF-8
+Imports: ape, caper, ggplot2, phylolm, phyr, phytools, pROC, rotl,
+        stats
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-02 08:57:44 UTC; shadu
+Author: Shahar Dubiner [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1771-0087>)
+Maintainer: Shahar Dubiner <dubiner@mail.tau.ac.il>
+Depends: R (>= 3.5)
+LazyData: true
+Repository: CRAN
+Date/Publication: 2026-08-05 08:20:12 UTC

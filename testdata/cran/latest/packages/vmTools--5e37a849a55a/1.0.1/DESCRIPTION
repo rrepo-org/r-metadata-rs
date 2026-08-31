@@ -1,0 +1,32 @@
+Package: vmTools
+Type: Package
+Title: Version Management Tools on the File System
+Version: 1.0.1
+Authors@R: c(
+    person("Sam", "Byrne", email = "ssbyrne@uw.edu"
+    , role = c("aut", "cre", "cph")
+    , comment = c(ORCID = "0009-0008-1067-307X"))
+           )
+Maintainer: Sam Byrne <ssbyrne@uw.edu>
+Description: Data version management on the file system for smaller projects.
+    Manage data pipeline outputs with symbolic folder links, structured logging
+    and reports, using 'R6' classes for encapsulation and 'data.table' for
+    speed. Directory-specific logs used as source of truth to allow portability
+    of versioned data folders.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: R6 (>= 2.5.1), data.table (>= 1.10.0)
+Suggests: devtools (>= 2.4.5), knitr (>= 1.46), rmarkdown (>= 2.27),
+        testthat (>= 3.0.0), withr (>= 2.5.0), qpdf
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Acknowledgments:
+URL: https://github.com/epi-sam/vmTools
+BugReports: https://github.com/epi-sam/vmTools/issues
+NeedsCompilation: no
+Packaged: 2025-07-24 18:13:43 UTC; ssbyrne
+Author: Sam Byrne [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0008-1067-307X>)
+Repository: CRAN
+Date/Publication: 2025-07-25 16:50:02 UTC

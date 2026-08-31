@@ -1,0 +1,33 @@
+Package: PracTools
+Type: Package
+Title: Designing and Weighting Survey Samples
+Version: 1.7.5
+Date: 2026-01-14
+Authors@R: c(
+   RV = person("Richard", "Valliant",
+          email = "valliant@umich.edu",
+          role = c("aut","cre")),
+   JD = person("Jill A.", "Dever", role=c("ctb")),
+   FK = person("Frauke", "Kreuter", role=c("ctb")),
+   GZ = person("George", "Zipf", , role=c("aut"))
+   )
+Author: Richard Valliant [aut, cre],
+  Jill A. Dever [ctb],
+  Frauke Kreuter [ctb],
+  George Zipf [aut]
+Maintainer: Richard Valliant <valliant@umich.edu>
+Description: Functions and datasets to support Valliant, Dever, and Kreuter (2018), <doi:10.1007/978-3-319-93632-1>, "Practical Tools for Designing and Weighting Survey Samples". Contains functions for sample size calculation for survey samples using stratified or clustered one-, two-, and three-stage sample designs, and single-stage audit sample designs. Functions are included that will group geographic units accounting for distances apart and measures of size. Other functions compute variance components for multistage designs, sample sizes in two-phase designs, and a stopping rule for ending data collection. A number of example data sets are included.
+Suggests: doBy, foreign, kableExtra, knitr, lpSolve, markdown, plyr,
+        pps, Rcpp, reshape, rmarkdown, roxygen2, sampling,
+        samplingbook, sp, survey
+Depends: R (>= 3.5.0)
+Imports: dplyr, geosphere, ggplot2, graphics, MASS, usmap
+License: GPL-3
+LazyLoad: yes
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2026-01-14 21:39:55 UTC; rvall
+Repository: CRAN
+Date/Publication: 2026-01-17 09:20:08 UTC

@@ -1,0 +1,32 @@
+Package: mixedsubjects
+Title: Causal Inference in Experiments with Mixed-Subjects Designs
+Version: 1.0.0
+Authors@R: c(
+    person("Austin", "van Loon", email = "avanloon@mit.edu", role = c("aut")),
+    person("Klint", "Kanopka", email = "klint.kanopka@nyu.edu", role = c("aut", "cre")),
+    person("Yuan", "Huang", email = "yh2741@nyu.edu", role = "ctb")
+  )
+Description: Implements seven estimators for average treatment effect (ATE)
+    estimation in mixed-subjects designs (MSDs), where human subjects data is
+    augmented with predictions from large language models (LLMs). Includes
+    Difference-in-Means, GREG, PPI++, Doubly-Tuned, Difference-in-Predictions
+    (DiP), DiP++, and D-T DiP estimators. Provides point estimates, variance
+    estimation via delta-method or bootstrap, and optimal design selection for
+    budget allocation between human observations and LLM predictions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://klintkanopka.com/mixedsubjects/
+BugReports: https://github.com/klintkanopka/mixedsubjects/issues
+NeedsCompilation: no
+Packaged: 2026-06-26 16:15:06 UTC; klintkanopka
+Author: Austin van Loon [aut],
+  Klint Kanopka [aut, cre],
+  Yuan Huang [ctb]
+Maintainer: Klint Kanopka <klint.kanopka@nyu.edu>
+Repository: CRAN
+Date/Publication: 2026-07-02 18:30:02 UTC

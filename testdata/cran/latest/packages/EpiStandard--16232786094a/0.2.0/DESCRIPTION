@@ -1,0 +1,51 @@
+Package: EpiStandard
+Title: Directly Standardise Rates by Age
+Version: 0.2.0
+Authors@R: c(
+    person(
+        "Elin", "Rowlands", email = "elin.rowlands@ndorms.ox.ac.uk", 
+        role = c("aut", "cre"), comment = c(ORCID = "0009-0005-5166-0417")
+    ),
+    person( 
+        "Marta", "Alcalde-Herraiz", email = "marta.alcaldeherraiz@ndorms.ox.ac.uk", 
+        role = c("aut"), comment = c(ORCID = "0009-0002-4405-1814")
+    ),
+    person(
+        "Nuria", "Mercade-Besora", email = "nuria.mercadebesora@ndorms.ox.ac.uk", 
+        role = c("aut"), comment = c(ORCID = "0009-0006-7948-3747")
+    ),
+    person(
+        "Edward", "Burn", email = "edward.burn@ndorms.ox.ac.uk", 
+        role = c("aut"), comment = c(ORCID = "0000-0002-9286-1128")
+    ),
+    person(
+        "Danielle", "Newby", email = "danielle.newby@ndorms.ox.ac.uk", 
+        role = c("aut"), comment = c(ORCID = "0000-0002-3001-1478")
+    ))
+Maintainer: Elin Rowlands <elin.rowlands@ndorms.ox.ac.uk>
+Description: Provides functions for age standardisation of epidemiological measures such as incidence and prevalence rates. It allows users to apply standard population structures to observed age-specific estimates in order to obtain comparable summary measures across populations or time periods. Functions support calculation of standardised rates, outcome counts, and corresponding confidence intervals. The tools are designed to facilitate reproducible and transparent adjustment for differences in age distributions in epidemiological and public health research.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: gt, knitr, rmarkdown, testthat (>= 3.0.0), DBI, duckdb,
+        IncidencePrevalence, omopgenerics
+Config/testthat/edition: 3
+Imports: cli, dplyr, rlang, stringr, tidyr, tidyselect, tibble
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+URL: https://oxford-pharmacoepi.github.io/EpiStandard/,
+        https://github.com/oxford-pharmacoepi/EpiStandard
+Language: en-GB
+BugReports: https://github.com/oxford-pharmacoepi/EpiStandard/issues
+NeedsCompilation: no
+Packaged: 2026-03-11 15:15:50 UTC; rowelin
+Author: Elin Rowlands [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-5166-0417>),
+  Marta Alcalde-Herraiz [aut] (ORCID:
+    <https://orcid.org/0009-0002-4405-1814>),
+  Nuria Mercade-Besora [aut] (ORCID:
+    <https://orcid.org/0009-0006-7948-3747>),
+  Edward Burn [aut] (ORCID: <https://orcid.org/0000-0002-9286-1128>),
+  Danielle Newby [aut] (ORCID: <https://orcid.org/0000-0002-3001-1478>)
+Repository: CRAN
+Date/Publication: 2026-03-24 10:00:02 UTC

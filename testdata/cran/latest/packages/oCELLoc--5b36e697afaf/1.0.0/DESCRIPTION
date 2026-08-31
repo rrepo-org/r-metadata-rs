@@ -1,0 +1,40 @@
+Package: oCELLoc
+Title: Predicts Suitable Cell Types in Spatial Transcriptomics and
+        scRNA-seq Data
+Version: 1.0.0
+Authors@R: c(
+  person(given = "Afeefa",
+                  family = "Zainab",
+                  email = "afeeffazainab@gmail.com",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0003-3357-8661")),
+          person("Vladyslav", "Honcharuk",
+                 email = "vladyslav.s.honcharuk@gmail.com",
+                 role = "aut",
+                 comment = c(ORCID = "0000-0002-7464-500X")),
+          person("Alexis", "Vandenbon",
+                 email = "alexisvdb@infront.kyoto-u.ac.jp",
+                 role = "aut",
+                 comment = c(ORCID = "0000-0003-2180-5732")))
+Description: Picks the suitable cell types in spatial and scRNA-seq data using shrinkage methods.
+    The package includes curated reference gene expression profiles for human and mouse cell types, 
+    facilitating immediate application to common spatial transcriptomics or scRNA datasets. 
+    Additionally, users can input custom reference data to support tissue- or experiment-specific analyses.
+License: MIT + file LICENSE
+URL: https://doi.org/10.64898/2025.12.11.693812
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: glmnet, utils, stats, ggplot2, rlang, reshape2,
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+LazyData: true
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2025-12-17 06:14:28 UTC; vlaruks
+Author: Afeefa Zainab [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3357-8661>),
+  Vladyslav Honcharuk [aut] (ORCID:
+    <https://orcid.org/0000-0002-7464-500X>),
+  Alexis Vandenbon [aut] (ORCID: <https://orcid.org/0000-0003-2180-5732>)
+Maintainer: Afeefa Zainab <afeeffazainab@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-22 17:20:02 UTC

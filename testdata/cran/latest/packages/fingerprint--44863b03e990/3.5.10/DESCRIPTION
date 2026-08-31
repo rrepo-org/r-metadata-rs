@@ -1,0 +1,36 @@
+Package: fingerprint
+Version: 3.5.10
+Date: 2026-04-03
+Title: Functions to Operate on Binary Fingerprint Data
+Authors@R: c(
+    person(given = "Rajarshi",
+           family = "Guha",
+           role = c("aut"),
+           email = "rajarshi.guha@gmail.com"),
+    person(given = "Zach",
+           family = "Charlop-Powers",
+           role = c("cre"),
+           email = "zach.charlop.powers@gmail.com"))
+Author: Rajarshi Guha [aut],
+  Zach Charlop-Powers [cre]
+Maintainer: Zach Charlop-Powers <zach.charlop.powers@gmail.com>
+BugReports: https://github.com/CDK-R/cdkr/issues
+Description: Functions to manipulate binary fingerprints
+ of arbitrary length. A fingerprint is represented by an object of S4 class 'fingerprint'
+ which is internally represented a vector of integers, such
+ that each element represents the position in the fingerprint that is set to 1.
+ The bitwise logical functions in R are overridden so that they can be used directly
+ with 'fingerprint' objects. A number of distance metrics are also
+ available (many contributed by Michael Fadock). Fingerprints
+ can be converted to Euclidean vectors (i.e., points on the unit hypersphere) and
+ can also be folded using OR.  Arbitrary fingerprint formats can be handled via line
+ handlers. Currently handlers are provided for CDK, MOE and BCI fingerprint data.
+License: GPL | file LICENSE
+Depends: methods
+LazyLoad: yes
+Suggests: RUnit, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-04-03 16:52:07 UTC; zcpowers
+Repository: CRAN
+Date/Publication: 2026-04-04 05:11:07 UTC

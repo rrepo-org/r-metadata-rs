@@ -1,0 +1,28 @@
+Package: howManyImputations
+Type: Package
+Title: Calculate How many Imputations are Needed for Multiple
+        Imputation
+Version: 0.2.6
+Description: When performing multiple imputations, while 5-10 imputations are
+             sufficient for obtaining point estimates, a larger number of
+             imputations are needed for proper standard error estimates.
+             This package allows you to calculate how many imputations are
+             needed, following the work of von Hippel (2020)
+             <doi:10.1177/0049124117747303>.
+Authors@R: person("Josh", "Errickson", email = "jerrick@umich.edu",
+                  role = c("aut", "cre"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: roxygen2, jomo, Amelia, mitools, testthat (>= 3.0.0)
+Imports: methods, stats, mice
+URL: https://errickson.net/howManyImputations/
+BugReports: https://github.com/josherrickson/howManyImputations/issues/
+Language: en-US
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-24 17:02:31 UTC; jerrick
+Author: Josh Errickson [aut, cre]
+Maintainer: Josh Errickson <jerrick@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-08-24 18:00:10 UTC

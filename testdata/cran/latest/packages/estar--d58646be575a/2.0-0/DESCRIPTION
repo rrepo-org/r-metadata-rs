@@ -1,0 +1,43 @@
+Package: estar
+Title: Ecological Stability Metrics
+Version: 2.0-0
+Authors@R: c(
+    person(given = "Ludmilla",
+           family = "Figueiredo",
+           role = c("aut", "cre"),
+           email = "ludmilla.figueiredo@protonmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0001-8217-7800")),
+    person(given = "Viktoriia",
+           family = "Radchuk",
+           role = c("aut"),
+           email = "radchuk@izw-berlin.de",
+           comment = c(ORCID = "https://orcid.org/0000-0003-3072-0095")),
+    person(given = "Cédric",
+           family = "Scherer",
+           role = c("ctb"),
+           email = "cedricphilippscherer@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0003-0465-2543"))) 
+Description: Standardises and facilitates the use of eleven established stability properties that have been used to assess systems’ responses to press or pulse disturbances at different ecological levels (e.g. population, community). There are two sets of functions. The first set corresponds to functions that measure stability at any level of organisation, from individual to community and can be applied to a time series of a system’s state variables (e.g., body mass, population abundance, or species diversity). The properties included in this set are: invariability, resistance, extent and rate of recovery, persistence, and overall ecological vulnerability. The second set of functions can be applied to Jacobian matrices. The functions in this set measure the stability of a community at short and long time scales. In the short term, the community’s response is measured by maximal amplification, reactivity and initial resilience (i.e. initial rate of return to equilibrium). In the long term, stability can be measured as asymptotic resilience and intrinsic stochastic invariability. Figueiredo et al. (2025) <doi:10.32942/X2M053>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, Matrix, hesim,
+        cowplot, viridis, forcats, tidyr, utils, MARSS, magrittr,
+        dplyr, purrr, tibble, kableExtra
+Depends: R (>= 4.1.0)
+Imports: ggplot2, stats, vegan, zoo
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+URL: https://github.com/ludmillafigueiredo/estar
+BugReports: https://github.com/ludmillafigueiredo/estar/issues
+NeedsCompilation: no
+Packaged: 2026-05-22 04:24:56 UTC; fx97izoz
+Author: Ludmilla Figueiredo [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8217-7800>),
+  Viktoriia Radchuk [aut] (ORCID:
+    <https://orcid.org/0000-0003-3072-0095>),
+  Cédric Scherer [ctb] (ORCID: <https://orcid.org/0000-0003-0465-2543>)
+Maintainer: Ludmilla Figueiredo <ludmilla.figueiredo@protonmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-29 13:50:02 UTC

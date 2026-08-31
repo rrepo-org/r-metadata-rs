@@ -1,0 +1,28 @@
+Type: Package
+Package: container
+Title: Extending Base 'R' Lists
+Version: 1.1.0
+Authors@R: 
+    person("Roman", "Pahl", , "roman.pahl@gmail.com", role = c("aut", "cre"))
+Author: Roman Pahl [aut, cre]
+Maintainer: Roman Pahl <roman.pahl@gmail.com>
+Description: Extends the functionality of base 'R' lists and provides
+    specialized data structures 'deque', 'set', 'dict', and 'dict.table',
+    the latter to extend the 'data.table' package.
+License: GPL-3
+URL: https://rpahl.github.io/container/,
+        https://github.com/rpahl/container
+BugReports: https://github.com/rpahl/container/issues
+Depends: R (>= 3.5.0)
+Imports: data.table, methods, R6, utils
+Suggests: dplyr, ggplot2, knitr, microbenchmark, rmarkdown, testthat
+        (>= 3.0.0), tibble
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+NeedsCompilation: no
+Repository: CRAN
+RoxygenNote: 7.3.3
+Packaged: 2025-11-10 23:19:22 UTC; Roman
+Date/Publication: 2025-11-11 00:00:02 UTC

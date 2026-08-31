@@ -1,0 +1,41 @@
+Package: getLattes
+Type: Package
+Title: Import and Process Data from the 'Lattes' Curriculum Platform
+Version: 1.0.0
+Authors@R: 
+    c(person(
+        given = c("Roney", "Fraga"),
+        family = "Souza",
+        role = c("aut", "cre", "cph"),
+        email = "roneyfraga@gmail.com",
+        comment = c(ORCID = "orcid.org/0000-0001-5750-489X")
+    ),
+      person(given = "Winicius",
+             family = "Sabino",
+             role = c("aut"),
+             email = "winiciuss15@gmail.com"),
+      person(
+        given = c("Luis", "Felipe"),
+        family = "de Souza Rodrigues",
+        role = "aut",
+        email = "lfsouza25@gmail.com"
+    ))
+Maintainer: Roney Fraga Souza <roneyfraga@gmail.com>
+Description: Tool for import and process data from 'Lattes' curriculum platform (<http://lattes.cnpq.br/>). The Brazilian government keeps an extensive base of curricula for academics from all over the country, with over 5 million registrations. The academic life of the Brazilian researcher, or related to Brazilian universities, is documented in 'Lattes'. Some information that can be obtained: professional formation, research area, publications, academics advisories, projects, etc. 'getLattes' package allows work with 'Lattes' data exported to XML format.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: https://github.com/roneyfraga/getLattes
+BugReports: https://github.com/roneyfraga/getLattes/issues
+Suggests: knitr, rlang, rmarkdown
+VignetteBuilder: knitr
+Imports: xml2, dplyr, tibble, janitor, purrr
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2025-09-19 17:28:32 UTC; roney
+Author: Roney Fraga Souza [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5750-489X>),
+  Winicius Sabino [aut],
+  Luis Felipe de Souza Rodrigues [aut]
+Repository: CRAN
+Date/Publication: 2025-09-19 17:40:02 UTC

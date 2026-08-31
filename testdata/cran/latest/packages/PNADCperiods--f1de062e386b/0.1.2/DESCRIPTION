@@ -1,0 +1,59 @@
+Package: PNADCperiods
+Title: Identify Reference Periods in Brazil's PNADC Survey Data
+Version: 0.1.2
+Date: 2026-04-27
+Authors@R: c(
+    person("Rogerio", "Barbosa", email = "rogerio.barbosa@iesp.uerj.br", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6796-4547",
+                       contribution = "R package, dashboard, and website")),
+    person("Marcos", "Hecksher", email = "mdhecksher@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0003-2992-1252",
+                       contribution = "Mensalization methodology"))
+    )
+Description: Identifies reference periods (months, fortnights, and weeks) in
+    Brazil's quarterly PNADC (Pesquisa Nacional por Amostra de Domicilios
+    Continua) survey data and computes calibrated weights for sub-quarterly
+    analysis. The core algorithm uses IBGE (Instituto Brasileiro de Geografia
+    e Estatistica) 'Parada Tecnica' (technical break) rules combined with
+    respondent birthdates to determine which temporal period each survey
+    observation refers to. Period identification follows a nested hierarchy
+    enforced by construction: fortnights require months, weeks require
+    fortnights. Achieves approximately 97% monthly determination rate with
+    the full series (2012-2025). Strict fortnight and week rates are
+    approximately 9% and 3% respectively, as they cannot leverage
+    cross-quarter panel aggregation. Experimental strategies (probabilistic
+    assignment and UPA (Primary Sampling Unit) aggregation) further improve
+    these determination rates. The package provides adaptive hierarchical
+    weight calibration (4/2/1 cell levels for month/fortnight/week) with
+    period-specific smoothing to produce survey weights calibrated to
+    SIDRA (Sistema IBGE de Recuperacao Automatica) population totals. Also
+    includes a SIDRA mensalization module that converts 86+ official rolling
+    quarter series from the IBGE SIDRA API (Application Programming
+    Interface) into exact monthly estimates, without requiring access to
+    microdata. Hecksher (2020)
+    <https://repositorio.ipea.gov.br/handle/11058/9859>.
+License: MIT + file LICENSE
+Language: en-US
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: data.table (>= 1.14.0), checkmate (>= 2.0.0), sidrar (>=
+        0.2.9), lubridate (>= 1.9.4)
+Suggests: dplyr, fst, haven, testthat (>= 3.0.0), knitr, rmarkdown,
+        pkgdown, ggplot2, scales
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://antrologos.github.io/PNADCperiods/,
+        https://github.com/antrologos/PNADCperiods
+BugReports: https://github.com/antrologos/PNADCperiods/issues
+NeedsCompilation: no
+Packaged: 2026-04-27 23:46:10 UTC; antro
+Author: Rogerio Barbosa [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6796-4547>, contribution: R package,
+    dashboard, and website),
+  Marcos Hecksher [aut] (ORCID: <https://orcid.org/0000-0003-2992-1252>,
+    contribution: Mensalization methodology)
+Maintainer: Rogerio Barbosa <rogerio.barbosa@iesp.uerj.br>
+Repository: CRAN
+Date/Publication: 2026-04-28 08:00:02 UTC

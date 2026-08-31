@@ -1,0 +1,28 @@
+Package: acsmoe
+Title: Propagate Uncertainty for ACS Tabular Estimates
+Version: 0.1.0
+Authors@R: 
+    person("Dmitry", "Shkolnik", email = "shkolnikd@gmail.com", role = c("aut", "cre"))
+Description: Utilities for propagating uncertainty in American Community
+    Survey tabular workflows that use published estimates and margins of error,
+    following U.S. Census Bureau derived-estimate guidance and complementing
+    'tidycensus' margin-of-error workflows. Includes covariance-aware derived
+    estimates, simulation helpers, geographic aggregation, confidence-interval
+    conversion, and reliability diagnostics.
+License: MIT + file LICENSE
+URL: https://dshkol.github.io/acsmoe/, https://github.com/dshkol/acsmoe
+BugReports: https://github.com/dshkol/acsmoe/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Imports: stats
+Suggests: dplyr, ggplot2, knitr, rmarkdown, scales, sf, testthat (>=
+        3.0.0), tidycensus
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-26 02:01:42 UTC; dmitryshkolnik
+Author: Dmitry Shkolnik [aut, cre]
+Maintainer: Dmitry Shkolnik <shkolnikd@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-29 10:40:07 UTC

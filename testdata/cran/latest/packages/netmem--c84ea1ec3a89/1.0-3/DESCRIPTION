@@ -1,0 +1,38 @@
+Package: netmem
+Version: 1.0-3
+Date: 2026-04-01
+Depends: R (>= 4.0.0)
+Imports: igraph, Matrix, stats
+Suggests: knitr, rmarkdown, covr, testthat, usethis, styler
+Title: Social Network Measures using Matrices
+Authors@R: 
+  c(
+    person(given = "Alejandro", family = "Espinosa-Rada", role = c("cre", "aut"),
+    email = "anespinosa@uc.cl", comment = c(ORCID = "0000-0003-4177-1912"))
+  )
+Maintainer: Alejandro Espinosa-Rada <anespinosa@uc.cl>
+Description: Provides measures to describe and manipulate one-mode, two-mode,
+    multiplex, and multilevel networks using matrix algebra. Implements
+    functions for network centrality, cohesive subgroups, structural holes,
+    similarity measures, path distances, signed networks, and random network
+    generation. Supports ego-centric and whole-network analyses, including
+    dyadic and triadic census, structural balance, and bipartite projections.
+    Key references: Bonacich (1972) <doi:10.1080/0022250X.1972.9989806>,
+    Breiger (1974) <doi:10.2307/2576011>,
+    Kivelä et al. (2014) <doi:10.1093/comnet/cnu016>,
+    Espinosa-Rada et al. (2024) <doi:10.1016/j.socnet.2023.11.008>.
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+URL: https://github.com/anespinosa/netmem,
+        https://anespinosa.github.io/netmem/
+BugReports: https://github.com/anespinosa/netmem/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-04-11 14:50:28 UTC; alejandroespinosa
+Author: Alejandro Espinosa-Rada [cre, aut] (ORCID:
+    <https://orcid.org/0000-0003-4177-1912>)
+Repository: CRAN
+Date/Publication: 2026-04-16 18:20:11 UTC

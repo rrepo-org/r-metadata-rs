@@ -1,0 +1,34 @@
+Package: falsifyr
+Title: Adversarial Robustness Attacks for Statistical Claims
+Version: 1.0.0
+Authors@R: 
+    person("Markuss", "Saule", , "markusstomas@gmail.com", role = c("aut", "cre", "cph"))
+Description: Attacks fitted R model claims by searching for small plausible
+    perturbations that make a target result disappear. The package focuses on
+    claim-level fragility, smallest-kill reporting, and reproducible caveated
+    robustness checks for ordinary fitted model objects. The methods draw on
+    the fragility-index concept of Walsh et al. (2014)
+    <doi:10.1016/j.jclinepi.2013.10.019>, multiverse analysis of Steegen et al.
+    (2016) <doi:10.1177/1745691616658637>, specification-curve analysis of
+    Simonsohn et al. (2020) <doi:10.1038/s41562-020-0912-z>, and robust
+    covariance estimation of Zeileis (2004) <doi:10.18637/jss.v011.i10>.
+License: MIT + file LICENSE
+URL: https://github.com/msaule/falsifyr,
+        https://msaule.github.io/falsifyr/
+BugReports: https://github.com/msaule/falsifyr/issues
+Language: en-US
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1)
+Imports: cli, ggplot2, parallel, rlang, stats, tibble, vctrs
+Suggests: broom, knitr, lme4, lmtest, rmarkdown, rstudioapi, sandwich,
+        shiny, survival, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-31 02:40:11 UTC; saule
+Author: Markuss Saule [aut, cre, cph]
+Maintainer: Markuss Saule <markusstomas@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 20:20:02 UTC

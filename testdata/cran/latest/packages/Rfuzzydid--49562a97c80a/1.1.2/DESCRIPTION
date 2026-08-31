@@ -1,0 +1,28 @@
+Package: Rfuzzydid
+Type: Package
+Title: Fuzzy Difference in Differences
+Description: Differences in differences is a methodology to measure the impact of a treatment by comparing a control group, which remains untreated at two different time periods, with a treatment group, which receives the treatment at the later date. In many cases, this approach is used in situations where the intervention doesn't fully apply the treatment to the entire treatment group but rather increases the treatment rate. In response to such fuzzy scenarios, de Chaisemartin and D'Haultfoeuille (2018) <doi:10.1093/restud/rdx049> introduce estimands capable of identifying local average and quantile treatment effects under various assumptions. This R package computes the estimators they are proposing.
+Version: 1.1.2
+Authors@R: 
+    person(given = c("Kevin", "Michael"),
+           family = "Frick",
+           role = c("aut", "cre"),
+           email = "kmfrick@proton.me")
+Author: Kevin Michael Frick [aut, cre]
+Maintainer: Kevin Michael Frick <kmfrick@proton.me>
+License: AGPL-3
+Depends: R (>= 3.6.0)
+Encoding: UTF-8
+Imports: generics, knitr, rmarkdown
+Suggests: broom, foreign, haven, modelsummary, pkgload, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://kmfrick.github.io/Rfuzzydid/,
+        https://github.com/kmfrick/Rfuzzydid
+BugReports: https://github.com/kmfrick/Rfuzzydid/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-16 14:15:34 UTC; kmfrick
+Repository: CRAN
+Date/Publication: 2026-06-22 14:50:02 UTC

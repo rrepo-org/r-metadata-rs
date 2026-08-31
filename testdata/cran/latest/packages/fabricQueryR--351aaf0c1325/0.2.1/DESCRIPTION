@@ -1,0 +1,35 @@
+Package: fabricQueryR
+Title: Query Data in 'Microsoft Fabric'
+Version: 0.2.1
+Authors@R: 
+    c(person(given = "Luka",
+             family = "Koning",
+             role = c("aut", "cre", "cph"),
+             email = "koningluka@gmail.com"),
+      person(given = "Kennispunt Twente",
+             role = "fnd",
+             email = "info@kennispunttwente.nl"))
+Description: 
+    Query data hosted in 'Microsoft Fabric'. Provides helpers to open 'DBI'
+    connections to 'SQL' endpoints of 'Lakehouse' and 'Data Warehouse' items; submit
+    'Data Analysis Expressions' ('DAX') queries to semantic model datasets in 'Microsoft
+    Fabric' and 'Power BI'; read 'Delta Lake' tables stored in 'OneLake'
+    ('Azure Data Lake Storage Gen2'); and execute 'Spark' code via the 'Livy API'. 
+License: MIT + file LICENSE
+Suggests: AzureStor, DBI, odbc, readr, fs, arrow, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: AzureAuth, httr2, dplyr, tibble, purrr, stringr, jsonlite,
+        cli, rlang, utils
+URL: https://github.com/kennispunttwente/fabricQueryR,
+        https://kennispunttwente.github.io/fabricQueryR/
+BugReports: https://github.com/kennispunttwente/fabricQueryR/issues
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-04-03 17:11:16 UTC; dhrko
+Author: Luka Koning [aut, cre, cph],
+  Kennispunt Twente [fnd]
+Maintainer: Luka Koning <koningluka@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-03 21:50:20 UTC

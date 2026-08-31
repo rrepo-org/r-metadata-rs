@@ -1,0 +1,33 @@
+Package: seqmagick
+Title: Sequence Manipulation Utilities
+Version: 0.1.9
+Authors@R: c(
+    person("Guangchuang", "Yu",     email = "guangchuangyu@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6485-8781"))
+    )
+Description: Tools for reading and writing biological sequences in multiple
+    formats, including 'FASTA', 'PHYLIP', 'CLUSTAL', 'STOCKHOLM', 'MEGA' and
+    'GenBank'. Supports interleaved and sequential layouts where applicable,
+    and reads or writes gzip, bzip2 and xz compressed files transparently.
+    Converts between formats, renames sequences via a two-column mapping,
+    summarizes sequence counts, lengths, GC content and ambiguous characters,
+    and manipulates sequence sets (e.g., filtering by patterns and computing
+    consensus sequences from alignments). Also includes functions to download
+    nucleotide records from NCBI by accession.
+Depends: R (>= 4.1.0)
+Imports: Biostrings, stats, utils, yulab.utils (>= 0.2.5)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), GenomicAlignments,
+        GenomicRanges, IRanges, muscle, Rsamtools, prettydoc
+VignetteBuilder: knitr
+ByteCompile: true
+URL: https://github.com/YuLab-SMU/seqmagick
+BugReports: https://github.com/YuLab-SMU/seqmagick/issues
+License: Artistic-2.0
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-30 06:12:08 UTC; wang
+Author: Guangchuang Yu [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6485-8781>)
+Maintainer: Guangchuang Yu <guangchuangyu@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-30 06:30:02 UTC

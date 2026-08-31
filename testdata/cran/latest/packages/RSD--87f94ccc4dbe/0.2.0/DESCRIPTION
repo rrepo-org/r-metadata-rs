@@ -1,0 +1,37 @@
+Package: RSD
+Type: Package
+Title: Compares Random Distributions using Stochastic Dominance
+Version: 0.2.0
+Authors@R: c(person(given = "Shayan",
+                      family = "Tohidi",
+                      role = c("aut", "cre"),
+                      email = "shayant@iastate.edu"),
+               person(given = "Sigurdur",
+                      family = "Olafsson",
+                      role = "aut",
+                      email = "olafsson@iastate.edu"))
+Maintainer: Shayan Tohidi <shayant@iastate.edu>
+Description: The Stochastic Dominance (SD) is the classical way of comparing two
+    random prospects, using their distribution functions. Almost Stochastic
+    Dominance (ASD) has also been developed to cover the SD failures due to 
+    the extreme utility functions. This package focuses on classical and heuristic methods
+    for testing the first and second SD and ASD methods given the probability mass
+    function (PMF) of the random prospects. The goal is to apply these methods
+    easily, efficiently, and effectively on real-world datasets. For more
+    details see Hanoch and Levy (1969) <doi:10.2307/2296431>, Leshno and Levy
+    (2002) <doi:10.1287/mnsc.48.8.1074.169>, and Tzeng et al. (2012)
+    <doi:10.1287/mnsc.1120.1616>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/ShayanTohidi/RSD
+BugReports: https://github.com/ShayanTohidi/RSD/issues
+RoxygenNote: 7.3.2
+Imports: dplyr, tidyr, ggplot2, magrittr, methods
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2025-06-21 03:24:44 UTC; shayantohidi
+Author: Shayan Tohidi [aut, cre],
+  Sigurdur Olafsson [aut]
+Repository: CRAN
+Date/Publication: 2025-06-21 14:30:02 UTC

@@ -1,0 +1,28 @@
+Package: metamorphr
+Title: Tidy and Streamlined Metabolomics Data Workflows
+Version: 0.4.1
+Authors@R: 
+    person("Yannik", "Schermer", , "yannik.schermer@chem.rptu.de", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-5201-057X"))
+Description: Facilitate tasks typically encountered during metabolomics data analysis including data import, filtering, missing value imputation (Stacklies et al. (2007) <doi:10.1093/bioinformatics/btm069>, Stekhoven et al. (2012) <doi:10.1093/bioinformatics/btr597>, Tibshirani et al. (2017) <doi:10.18129/B9.BIOC.IMPUTE>, Troyanskaya et al. (2001) <doi:10.1093/bioinformatics/17.6.520>), normalization (Bolstad et al. (2003) <doi:10.1093/bioinformatics/19.2.185>, Dieterle et al. (2006) <doi:10.1021/ac051632c>, Zhao et al. (2020) <doi:10.1038/s41598-020-72664-6>) transformation, centering and scaling (Van Den Berg et al. (2006) <doi:10.1186/1471-2164-7-142>) as well as statistical tests and plotting. 'metamorphr' introduces a tidy (Wickham et al. (2019) <doi:10.21105/joss.01686>) format for metabolomics data and is designed to make it easier to build elaborate analysis workflows and to integrate them with 'tidyverse' packages including 'dplyr' and 'ggplot2'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: broom, crayon, dplyr, ggplot2, impute, lifecycle, magrittr,
+        missForest, pcaMethods, purrr, readr, rlang, stats, stringi,
+        tibble, tidyr, utils, vctrs, withr
+Depends: R (>= 3.5)
+LazyData: true
+Suggests: knitr, qsmooth, rmarkdown, stringr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/yasche/metamorphr,
+        https://yasche.github.io/metamorphr/
+BugReports: https://github.com/yasche/metamorphr/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-10 12:08:06 UTC; Administrator
+Author: Yannik Schermer [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-5201-057X>)
+Maintainer: Yannik Schermer <yannik.schermer@chem.rptu.de>
+Repository: CRAN
+Date/Publication: 2026-06-10 12:40:08 UTC

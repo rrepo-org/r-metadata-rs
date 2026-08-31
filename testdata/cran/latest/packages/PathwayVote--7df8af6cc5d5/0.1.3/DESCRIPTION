@@ -1,0 +1,22 @@
+Package: PathwayVote
+Title: Robust Pathway Enrichment for DNA Methylation Studies Using
+        Ensemble Voting
+Version: 0.1.3
+Authors@R: c(person("Yinan", "Zheng",
+                    email = "y-zheng@northwestern.edu",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-2006-7320")))
+Description: Performs pathway enrichment analysis using a voting-based framework that integrates CpG–gene regulatory information from expression quantitative trait methylation (eQTM) data. For a grid of top-ranked CpGs and filtering thresholds, gene sets are generated and refined using an entropy-based pruning strategy that balances information richness, stability, and probe bias correction. In particular, gene lists dominated by genes with disproportionately high numbers of CpG mappings are penalized to mitigate active probe bias—a common artifact in methylation data analysis. Enrichment results across parameter combinations are then aggregated using a voting scheme, prioritizing pathways that are consistently recovered under diverse settings and robust to parameter perturbations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: harmonicmeanp, AnnotationDbi, clusterProfiler, future, furrr,
+        methods, parallelly
+Suggests: GO.db, org.Hs.eg.db, reactome.db, openxlsx
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-01-17 20:32:23 UTC; y-zhe
+Author: Yinan Zheng [aut, cre] (ORCID: <https://orcid.org/0000-0002-2006-7320>)
+Maintainer: Yinan Zheng <y-zheng@northwestern.edu>
+Repository: CRAN
+Date/Publication: 2026-01-17 21:00:02 UTC

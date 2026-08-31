@@ -1,0 +1,35 @@
+Package: rcdf
+Type: Package
+Title: A Comprehensive Toolkit for Working with Encrypted Parquet Files
+Version: 0.1.6
+Description: Utilities for reading, writing, and managing RCDF files, including encryption and decryption support. It offers a flexible interface for handling data stored in encrypted Parquet format, along with metadata extraction, key management, and secure operations using AES and RSA encryptions.
+Authors@R: c(
+    person(
+      "Bhas", 
+      "Abdulsamad", 
+      email = "aeabdulsamad@gmail.com",
+      comment = c(ORCID = "0009-0002-5891-8124"),
+      role = c("aut", "cre", "cph")
+    )
+  )
+Author: Bhas Abdulsamad [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-5891-8124>)
+Maintainer: Bhas Abdulsamad <aeabdulsamad@gmail.com>
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: duckdb, haven, zip, utils (>= 4.0.0), openssl (>= 2.1.1),
+        dplyr (>= 1.1.0), jsonlite (>= 1.8.0), DBI (>= 1.1.0), tools,
+        stats
+Suggests: arrow, dbplyr (>= 2.4.0), openxlsx, RSQLite (>= 2.2.0),
+        lifecycle, testthat, cli, devtools, knitr, rmarkdown, rlang (>=
+        1.0.2), tibble, withr, gt (>= 0.10.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+URL: https://yng-me.github.io/rcdf/, https://github.com/yng-me/rcdf
+BugReports: https://github.com/yng-me/rcdf/issues
+NeedsCompilation: no
+Packaged: 2026-05-30 08:01:41 UTC; bhasabdulsamad
+Repository: CRAN
+Date/Publication: 2026-05-30 08:10:02 UTC

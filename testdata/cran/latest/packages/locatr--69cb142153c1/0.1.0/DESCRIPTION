@@ -1,0 +1,38 @@
+Package: locatr
+Title: Audit-Ready Geocoding and Local Geography for Messy Location
+        Data
+Version: 0.1.0
+Authors@R: 
+    person("George", "Arthur", , "prigasgenthian48@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-1975-1459"))
+Description: Cleans, geocodes, validates, reviews, and exports messy
+    location address data supplied by the user. The package sits on top of
+    'tidygeocoder': it calls geocoding services, rejects implausible
+    coordinates with configurable region guards, applies fallback
+    name/address matching, joins points to optional local geography with
+    'sf', and records an audit trail showing how each coordinate was
+    produced. Outputs are designed for manual review, dashboards, and
+    reusable location crosswalks.
+License: MIT + file LICENSE
+URL: https://prigasg.github.io/locatr/,
+        https://github.com/PrigasG/locatr
+BugReports: https://github.com/PrigasG/locatr/issues
+Depends: R (>= 4.1.0)
+Imports: datasets, dplyr (>= 1.1.0), magrittr, readr, rlang (>= 1.1.0),
+        sf, stats, stringr, tibble, tidygeocoder, utils
+Suggests: arrow, bslib, DT, httr, jsonlite, knitr, leaflet, pkgdown,
+        readxl, rmarkdown, shiny, spelling, testthat (>= 3.1.7),
+        tigris, writexl
+VignetteBuilder: knitr
+Config/Needs/website: pkgdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-07-16 16:27:58 UTC; priga
+Author: George Arthur [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1975-1459>)
+Maintainer: George Arthur <prigasgenthian48@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-23 14:20:08 UTC

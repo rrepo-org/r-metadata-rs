@@ -1,0 +1,36 @@
+Package: engager
+Type: Package
+Title: Analyze Student Engagement from 'WebVTT' Transcripts
+Version: 0.1.0
+Authors@R: person(given = "Conor",
+                  family = "Healy",
+                  role = c("aut", "cre"),
+                  email = "conorhealy@berkeley.edu")
+Description: Analyzes participation in course-session transcripts stored in
+    the 'WebVTT' format <https://www.w3.org/TR/webvtt1/>, including transcripts
+    exported by 'Zoom' and similar videoconferencing platforms. Provides tools
+    to load and process transcripts, calculate speaker-level engagement metrics,
+    create privacy-supporting plots and exports, and perform reviewable exact
+    name matching against course rosters. Structured-field masking and technical
+    privacy-review helpers support local review but do not determine legal or
+    institutional compliance.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: digest, dplyr, ggplot2, hms, openssl, jsonlite, lubridate,
+        magrittr, tidyr, readr, rlang, stringi, stringr, tibble
+Suggests: testthat (>= 3.0.0), withr, covr, knitr, rmarkdown, purrr,
+        microbenchmark, gridExtra
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/revgizmo/engager,
+        https://revgizmo.github.io/engager/
+BugReports: https://github.com/revgizmo/engager/issues
+NeedsCompilation: no
+Packaged: 2026-07-21 22:38:36 UTC; piper
+Author: Conor Healy [aut, cre]
+Maintainer: Conor Healy <conorhealy@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2026-07-30 17:20:16 UTC

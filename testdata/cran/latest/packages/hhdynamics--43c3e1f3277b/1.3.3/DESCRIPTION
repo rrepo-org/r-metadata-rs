@@ -1,0 +1,31 @@
+Package: hhdynamics
+Type: Package
+Title: Fitting Household Transmission Model to Estimate Household
+        Transmission Dynamics of Influenza
+Version: 1.3.3
+Authors@R: 
+    c(person(given = "Tim",
+             family = "Tsang",
+             role = c("aut", "cre"),
+             email = "timkltsang@gmail.com",
+             comment = c(ORCID = "0000-0001-5037-6776")))
+Maintainer: Tim Tsang <timkltsang@gmail.com>
+Description: A Bayesian household transmission model to estimate household transmission dynamics, with accounting for infection from community and tertiary cases.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: TRUE
+URL: https://github.com/timktsang/hhdynamics
+BugReports: https://github.com/timktsang/hhdynamics/issues
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.9), RcppParallel
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+SystemRequirements: GNU make
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-04-08 15:55:28 UTC; timtsang
+Author: Tim Tsang [aut, cre] (ORCID: <https://orcid.org/0000-0001-5037-6776>)
+Repository: CRAN
+Date/Publication: 2026-04-08 23:40:02 UTC

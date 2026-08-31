@@ -1,0 +1,30 @@
+Package: ZIHINAR1
+Type: Package
+Title: Zero-Inflated and Hurdle INAR(1) Models
+Version: 0.2.1
+Maintainer: Fusheng Yang <fusheng.yang@uconn.edu>
+Description: Provides tools for estimating Zero-Inflated INAR(1) 
+    (ZI-INAR(1)) and Hurdle INAR(1) (H-INAR(1)) models using 'Stan'. 
+    It allows users to simulate time series data for these models, 
+    estimate parameters, and evaluate model fit using various criteria. 
+    Functions include model estimation, simulation, and likelihood-based metrics.
+License: GPL-3
+Encoding: UTF-8
+Authors@R: c(person(given = "Fusheng",
+                    family = "Yang",
+                    role = c("aut", "cre"),
+                    email = "fusheng.yang@uconn.edu"),
+             person(given = c("Victor", "Hugo"),
+                    family =  "Lachos Davila",
+                    role = "aut"))
+Imports: rstan, VGAM, actuar, matrixStats, coda, ggplot2, gridExtra,
+        stats, knitr, utils, HMMpa
+Suggests: testthat (>= 3.0.0), rmarkdown
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+NeedsCompilation: no
+Packaged: 2026-02-12 02:39:51 UTC; ivyyang
+Author: Fusheng Yang [aut, cre],
+  Victor Hugo Lachos Davila [aut]
+Repository: CRAN
+Date/Publication: 2026-02-12 06:50:02 UTC

@@ -1,0 +1,48 @@
+Package: fqardl
+Type: Package
+Title: Fourier ARDL Methods: Quantile, Nonlinear, Multi-Threshold &
+        Unit Root Tests
+Version: 1.0.4
+Date: 2026-08-08
+Maintainer: Muhammad Alkhalaf <muhammedalkhalaf@gmail.com>
+Authors@R: c(
+    person("Muhammad", "Alkhalaf", 
+           email = "muhammedalkhalaf@gmail.com", 
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-2677-9246")),
+    person("Merwan", "Roudane", 
+           email = "merwanroudane920@gmail.com", 
+           role = c("ctb"),
+           comment = "Original Stata/Python implementation"))
+Description: Comprehensive implementation of advanced ARDL methodologies for 
+    cointegration analysis with structural breaks and asymmetric effects.
+    Includes: (1) Fourier Quantile ARDL (FQARDL) - quantile regression with 
+    Fourier approximation for analyzing relationships across the conditional 
+    distribution; (2) Fourier Nonlinear ARDL (FNARDL) - asymmetric cointegration 
+    with partial sum decomposition following Shin, Yu & Greenwood-Nimmo (2014) 
+    <doi:10.1007/978-1-4899-8008-3_9>; (3) Multi-Threshold NARDL (MTNARDL) - 
+    multiple regime asymmetry analysis; (4) Fourier Unit Root Tests - ADF and 
+    KPSS tests with Fourier terms following Enders & Lee (2012) 
+    <doi:10.1016/j.econlet.2012.05.019> and Becker, Enders & Lee (2006) 
+    <doi:10.1111/j.1467-9892.2006.00490.x>. Features automatic lag and frequency 
+    selection, PSS bounds testing following Pesaran, Shin & Smith (2001) 
+    <doi:10.1002/jae.616>, bootstrap cointegration tests, Wald tests for 
+    asymmetry, dynamic multiplier computation, and publication-ready 
+    visualizations. Ported from Stata/Python by Dr. Merwan Roudane.
+License: GPL-3
+URL: https://github.com/muhammedalkhalaf/fqardl
+BugReports: https://github.com/muhammedalkhalaf/fqardl/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: quantreg (>= 5.0), ggplot2 (>= 3.0.0), tidyr, gridExtra, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, plotly, covr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-16 17:58:33 UTC; Acadh
+Author: Muhammad Alkhalaf [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-2677-9246>),
+  Merwan Roudane [ctb] (Original Stata/Python implementation)
+Repository: CRAN
+Date/Publication: 2026-08-23 03:40:02 UTC

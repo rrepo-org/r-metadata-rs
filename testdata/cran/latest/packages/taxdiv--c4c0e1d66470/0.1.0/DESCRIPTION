@@ -1,0 +1,41 @@
+Package: taxdiv
+Title: Taxonomic Diversity Indices Using Deng Entropy
+Version: 0.1.0
+Authors@R: c(
+    person("Muhammet Murat", "Gorgoz", , "muratgorgoz350@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6398-0005")),
+    person("Kursad", "Ozkan", role = "aut",
+           comment = c(ORCID = "0000-0002-8526-7243")),
+    person("Mehmet Guvenc", "Negiz", role = "aut",
+           comment = c(ORCID = "0009-0008-1507-8712"))
+    )
+Description: Calculates taxonomic diversity indices for ecological community
+    data using Deng entropy framework and classical approaches (Shannon,
+    Simpson, Clarke & Warwick). Provides functions for computing taxonomic
+    distinctness, average taxonomic distinctness (AvTD/Delta+), variation in
+    taxonomic distinctness (VarTD/Lambda+), and Deng entropy-based measures
+    that incorporate taxonomic hierarchy information. Includes tools for
+    constructing taxonomic trees and computing pairwise taxonomic distances.
+Imports: stats, rlang
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, ggplot2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/mgorgoz/taxonomic-diversity-r,
+        https://mgorgoz.github.io/taxonomic-diversity-r/
+BugReports: https://github.com/mgorgoz/taxonomic-diversity-r/issues
+NeedsCompilation: no
+Packaged: 2026-03-28 21:33:27 UTC; muratgorgoz
+Author: Muhammet Murat Gorgoz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6398-0005>),
+  Kursad Ozkan [aut] (ORCID: <https://orcid.org/0000-0002-8526-7243>),
+  Mehmet Guvenc Negiz [aut] (ORCID:
+    <https://orcid.org/0009-0008-1507-8712>)
+Maintainer: Muhammet Murat Gorgoz <muratgorgoz350@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-01 08:50:02 UTC

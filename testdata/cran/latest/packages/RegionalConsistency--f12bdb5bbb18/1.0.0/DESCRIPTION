@@ -1,0 +1,27 @@
+Package: RegionalConsistency
+Title: Calculate Regional Consistency Probabilities for Multi-Regional
+        Clinical Trials
+Version: 1.0.0
+Authors@R: person(given = "Gosuke",
+                  family = "Homma",
+                  role = c("aut", "cre"),
+                  email = "my.name.is.gosuke@gmail.com")
+Description: Provides methods to calculate approximate regional
+    consistency probabilities using Method 1 and Method 2 proposed by the Japanese
+    Ministry of Health, Labor and Welfare (2007) <https://www.pmda.go.jp/files/000153265.pdf>. These methods
+    are useful for assessing regional consistency in multi-regional
+    clinical trials.  The package can calculate unconditional, joint, and
+    conditional regional consistency probabilities.  For technical
+    details, please see Homma (2024) <doi:10.1002/pst.2358>.
+License: MIT + file LICENSE
+Imports: mvtnorm, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-05-13 12:27:59 UTC; i_lik
+Author: Gosuke Homma [aut, cre]
+Maintainer: Gosuke Homma <my.name.is.gosuke@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-15 14:00:06 UTC

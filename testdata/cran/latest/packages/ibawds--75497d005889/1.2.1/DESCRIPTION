@@ -1,0 +1,32 @@
+Package: ibawds
+Type: Package
+Title: Functions and Datasets for the Data Science Course at IBAW
+Version: 1.2.1
+Authors@R: person(given = "Stefan",
+                  family = "Lanz",
+                  role = c("aut", "cre"),
+                  email = "slanz1137@gmail.com")
+Description: A collection of useful functions and datasets for the Data Science
+  Course at IBAW.
+License: MIT + file LICENSE
+URL: https://stibu81.github.io/ibawds/,
+        https://github.com/stibu81/ibawds
+BugReports: https://github.com/stibu81/ibawds/issues
+Encoding: UTF-8
+LazyData: true
+Language: en-GB
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0), dslabs
+Imports: stats, tools, grDevices, rlang, rstudioapi, remotes, ggplot2,
+        deldir, tidyr, readr, scales, dplyr (>= 1.1.0), stringr, purrr,
+        magrittr, cli, memuse
+Suggests: knitr, rmarkdown, kableExtra, rvest, lubridate, nanoparquet,
+        usethis, vdiffr, testthat (>= 3.0.0), httr2, covr, spelling,
+        withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-17 18:44:13 UTC; slanz
+Author: Stefan Lanz [aut, cre]
+Maintainer: Stefan Lanz <slanz1137@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-18 08:30:20 UTC

@@ -1,0 +1,27 @@
+Package: LLSR
+Type: Package
+Title: Data Analysis of Liquid-Liquid Systems using R
+Version: 0.0.4
+Date: 2026-03-09
+Authors@R: c(person(given = c("Diego", "F"), family = "Coelho", role = c("aut", "cre"), email = "diegofcoelho@gmail.com"), person(given = c("Pedro", "Vitor", "Oliveira"), family = "Menezes", role = "dtc", email = "pedrod841@hotmail.com"), person(given = c("Carla", "Corina", "dos", "Santos"), family = "Porto", role = "dtc", email = "carlacorina@hotmail.com.br"), person(given = c("Jon", "George"), family = "Huddleston", role = "rev", email = "Jonathan.Huddleston@brunel.ac.uk"), person(given = c("Elias", "Basile"), family = "Tambourgi", role = "rev", email = "eliastam@feq.unicamp.br"))
+Maintainer: Diego F Coelho <diegofcoelho@gmail.com>
+Description: Originally design to characterise Aqueous Two Phase Systems, LLSR provide a simple way to analyse experimental data and obtain phase diagram parameters, among other properties, systematically. The package will include (every other update) new functions in order to comprise useful tools in liquid-liquid extraction research.
+License: GPL-3
+Encoding: UTF-8
+LazyData: TRUE
+Depends: R (>= 3.5)
+Imports: rootSolve, openxlsx, digest, svDialogs, minpack.lm, ggplot2,
+        dplyr, nleqslv, crayon
+URL: https://CRAN.R-project.org/package=LLSR
+BugReports: https://github.com/diegofcoelho/LLSR/issues
+Suggests: testthat
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2026-03-10 21:45:21 UTC; diegofcoelho
+Author: Diego F Coelho [aut, cre],
+  Pedro Vitor Oliveira Menezes [dtc],
+  Carla Corina dos Santos Porto [dtc],
+  Jon George Huddleston [rev],
+  Elias Basile Tambourgi [rev]
+Repository: CRAN
+Date/Publication: 2026-03-10 22:10:10 UTC

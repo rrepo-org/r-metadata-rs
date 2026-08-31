@@ -1,0 +1,39 @@
+Package: power.nb
+Title: Power and Sample Size Calculation for Differential Abundance
+        Microbiome Studies
+Version: 0.1.0
+Authors@R: 
+   c(person("Michael", "Agronah", 
+           email =  "michaelagronah@gmail.com", role = c("aut","cre"),
+           comment = c(ORCID = "0009-0007-2655-4094")),
+   person("Ben","Bolker", role="aut", 
+     email =  "bolker@mcmaster.ca",
+   comment=c(ORCID="0000-0002-2127-0443"))
+   )
+Description: Provides functions for estimating statistical power and required sample sizes 
+    in differential abundance microbiome studies using negative binomial models. 
+    The methods are based on Agronah and Bolker (2025) <doi:10.1371/journal.pone.0318820>.
+    The package includes tools for simulation-based power analysis and sample size 
+    estimation using generalized additive models (GAMs), and visualization utilities for exploring 
+    the relationship between power, effect size, abundance, and sample size.
+License: MIT + file LICENSE
+URL: https://michaelagronah.com/power.nb/
+BugReports: https://github.com/magronah/power.nb/issues
+Encoding: UTF-8
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+Imports: DESeq2, fitdistrplus, rlang, minpack.lm,foreach,tibble, purrr,
+        mixtools, scam, ggplot2, ggrastr, metR, DEoptim, latex2exp,
+        parallel,stats,doParallel
+Suggests: rmarkdown, knitr, kableExtra, tidyverse, patchwork, dplyr,
+        rlist
+biocViews:
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-07 01:18:19 UTC; michaelagronah
+Author: Michael Agronah [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-2655-4094>),
+  Ben Bolker [aut] (ORCID: <https://orcid.org/0000-0002-2127-0443>)
+Maintainer: Michael Agronah <michaelagronah@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-15 11:50:07 UTC

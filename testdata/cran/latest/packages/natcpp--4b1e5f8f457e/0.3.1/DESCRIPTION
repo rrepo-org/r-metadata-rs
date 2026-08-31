@@ -1,0 +1,34 @@
+Type: Package
+Package: natcpp
+Title: Fast C++ Primitives for the 'NeuroAnatomy Toolbox'
+Version: 0.3.1
+Authors@R: 
+    person(given = "Gregory",
+           family = "Jefferis",
+           role = c("aut", "cre"),
+           email = "jefferis@gmail.com",
+           comment = c(ORCID = "0000-0002-0587-9355"))
+Description: Fast functions implemented in C++ via 'Rcpp' to support the
+    'NeuroAnatomy Toolbox' ('nat') ecosystem. These functions provide large
+    speed-ups for basic manipulation of neuronal skeletons over pure R
+    functions found in the 'nat' package. The expectation is that end
+    users will not use this package directly, but instead the 'nat'
+    package will automatically use routines from this package when it is
+    available to enable large performance gains.
+License: GPL (>= 3)
+URL: https://github.com/natverse/natcpp, https://natverse.org/natcpp/
+BugReports: https://github.com/natverse/natcpp/issues
+Imports: Matrix, methods, Rcpp (>= 1.0.6)
+Suggests: spelling, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppThread
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-20 13:56:19 UTC; jefferis
+Author: Gregory Jefferis [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0587-9355>)
+Maintainer: Gregory Jefferis <jefferis@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-20 17:10:13 UTC

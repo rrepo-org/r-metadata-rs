@@ -1,0 +1,29 @@
+Package: colorr
+Type: Package
+Title: Color Palettes for Soccer, MLB, NBA, WNBA, NHL, and NFL Teams
+Version: 1.1.0
+Authors@R: person("Charles", "Crabtree", role = c("aut", "cre"),
+                     email = "charles.crabtree@monash.edu")
+Description: Current-season color palettes for soccer clubs in the English Premier
+    League ('EPL'), 'LaLiga', 'Serie A', the 'Bundesliga', 'Ligue 1' and Major League
+    Soccer ('MLS'), and for Major League Baseball ('MLB'), National Basketball
+    Association ('NBA'), Women's National Basketball Association ('WNBA'), National
+    Hockey League ('NHL') and National Football League ('NFL') teams. Palettes are
+    returned as named character vectors of hex colors, and as 'ggplot2' colour and
+    fill scales. The palettes shipped in earlier versions of the package remain
+    available so that older figures stay reproducible.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: ggplot2 (>= 3.5.0), grDevices
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+URL: https://github.com/lobsterbush/colorr
+BugReports: https://github.com/lobsterbush/colorr/issues
+NeedsCompilation: no
+Packaged: 2026-08-22 12:10:20 UTC; f00421k
+Author: Charles Crabtree [aut, cre]
+Maintainer: Charles Crabtree <charles.crabtree@monash.edu>
+Repository: CRAN
+Date/Publication: 2026-08-22 15:10:39 UTC

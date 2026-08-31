@@ -1,0 +1,28 @@
+Package: r4subcore
+Title: Core Data Contracts, Parsers, and Scoring Primitives for
+        Clinical Submission Readiness
+Version: 0.1.0
+Authors@R: 
+    person("Pawan Rama", "Mali", email = "prm@outlook.in",
+           role = c("aut", "cre", "cph"))
+Description: Foundational package in the R4SUB (R for Regulatory Submission)
+    ecosystem. Defines the core evidence table schema, parsers, indicator
+    abstractions, and scoring primitives needed to quantify clinical submission
+    readiness. Provides a standardized contract for ingesting heterogeneous
+    sources (validation outputs, metadata, traceability) into a single
+    evidence framework.
+License: MIT + file LICENSE
+URL: https://github.com/R4SUB/r4subcore
+BugReports: https://github.com/R4SUB/r4subcore/issues
+Depends: R (>= 4.2)
+Imports: cli, jsonlite, rlang, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-18 17:29:11 UTC; aeroe
+Author: Pawan Rama Mali [aut, cre, cph]
+Maintainer: Pawan Rama Mali <prm@outlook.in>
+Repository: CRAN
+Date/Publication: 2026-02-20 11:40:07 UTC

@@ -1,0 +1,42 @@
+Package: fastlpr
+Title: Fast Local Polynomial Regression and Kernel Density Estimation
+Version: 1.0.1
+Authors@R: c(
+    person("Ying", "Wang", email = "yingwangrigel@gmail.com", role = c("aut", "cre")),
+    person("Min", "Li", email = "minli.231314@gmail.com", role = "aut")
+    )
+Description: Non-Uniform Fast Fourier Transform ('NUFFT')-accelerated local polynomial
+    regression and kernel density estimation for large, scattered, or
+    complex-valued datasets. Provides automatic bandwidth selection via
+    Generalized Cross-Validation (GCV) for regression and Likelihood
+    Cross-Validation (LCV) for density estimation. This is the 'R' port of the
+    'fastLPR' 'MATLAB'/'Python' toolbox, achieving O(N + M log M) computational
+    complexity through custom 'NUFFT' implementation with Gaussian gridding.
+    Supports 1D/2D/3D data, complex-valued responses, heteroscedastic variance
+    estimation, and confidence interval computation. Performance optimized with
+    vectorized 'R' code and compiled helpers via 'Rcpp'/'RcppArmadillo'.
+    Extends the 'FKreg' toolbox of Wang et al. (2022)
+    <doi:10.48550/arXiv.2204.07716> with 'Python' and 'R' ports. Applied in
+    Li et al. (2022) <doi:10.1016/j.neuroimage.2022.119190>. Uses 'NUFFT'
+    methods based on Greengard and Lee (2004) <doi:10.1137/S003614450343200X>,
+    binning-accelerated kernel estimation of Wand (1994)
+    <doi:10.1080/10618600.1994.10474656>, and local polynomial regression
+    framework of Fan and Gijbels (1996, ISBN:978-0412983214).
+License: GPL-3
+Encoding: UTF-8
+ByteCompile: false
+Depends: R (>= 4.2.0)
+Imports: stats, utils, grDevices, graphics, compiler, Rcpp (>= 1.0.0)
+Suggests: testthat (>= 3.0.0), akima, rgl, R.matlab
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: GNU make
+URL: https://github.com/rigelfalcon/fastLPR
+BugReports: https://github.com/rigelfalcon/fastLPR/issues
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2026-04-14 01:51:00 UTC; PC
+Author: Ying Wang [aut, cre],
+  Min Li [aut]
+Maintainer: Ying Wang <yingwangrigel@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 08:20:02 UTC

@@ -1,0 +1,50 @@
+Package: roperators
+Title: Additional Operators to Help You Write Cleaner R Code
+Version: 1.4.0
+Authors@R: 
+    c(person("Ben", "Wiseman",
+             role  = c("cre", "aut", "ccp"),
+             email = "benjamin.h.wiseman@gmail.com"),
+      person("Steven", "Nydick",
+             role    = c("aut", "ccp"),
+             email   = "steven.nydick@kornferry.com",
+             comment = c(ORCID = "0000-0002-2908-1188")),
+      person("Jeff", "Jones",
+             role  = c("aut", "led"),
+             email = "jeff.jones@kornferry.com"))
+Description: A set of additional operators and helper functions to make R code
+  easier to read, write, and maintain. Includes string arithmetic (such as
+  'foo' + 'bar'), in-place reassignment operators (such as x += 1), logical
+  operators that handle missing values, floating-point and strict
+  ('JavaScript'-style) equality tests, 'between' operators, and 'SQL'-style
+  pattern matching. Also provides convenience helpers for type conversion,
+  operating-system checks, complete-cases statistics, and string manipulation,
+  such as Oxford-comma pasting and extracting the first, last, n-th, or most
+  common element of a vector or word in a string. The goal is to give R users,
+  particularly those coming from other languages such as 'Python', a friendlier
+  and more consistent syntax.
+License: MIT + file LICENSE
+Copyright: Korn Ferry International
+URL: https://benwiseman.github.io/roperators/,
+        https://github.com/BenWiseman/roperators
+BugReports: https://github.com/BenWiseman/roperators/issues
+Depends: R (>= 3.0.0)
+Imports: stats, tools
+Suggests: magrittr, knitr, markdown, rmarkdown, prettydoc, rvest,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: 'complete_cases.R' 'content_checks.R' 'file_checks.R'
+        'ip_checks.R' 'type_checks.R' 'operators.R' 'os_checks.R'
+        'paste_functions.R' 'shorthand.R' 'sugar.R' 'utils.R'
+NeedsCompilation: no
+Packaged: 2026-06-03 09:10:36 UTC; benwiseman
+Author: Ben Wiseman [cre, aut, ccp],
+  Steven Nydick [aut, ccp] (ORCID:
+    <https://orcid.org/0000-0002-2908-1188>),
+  Jeff Jones [aut, led]
+Maintainer: Ben Wiseman <benjamin.h.wiseman@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-03 11:20:02 UTC

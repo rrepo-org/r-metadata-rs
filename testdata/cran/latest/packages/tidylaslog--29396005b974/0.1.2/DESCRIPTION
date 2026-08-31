@@ -1,0 +1,37 @@
+Package: tidylaslog
+Type: Package
+Title: Tidy Import, Indexing, and Export of LAS Well Log Data
+Version: 0.1.2
+Authors@R: 
+    person(given = c("Hope", "E."),
+           family = "Omodolor",
+           email = "hopeomodolor@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0005-7842-406X"))
+Description: 
+    Provides tools for reading, parsing, indexing, and exporting LAS (Log ASCII
+    Standard) well log files into tidy, analysis-ready tabular formats. The
+    package separates LAS header information and log data into structured
+    components, builds a searchable index across collections of LAS files,
+    and enables reproducible subsetting of wells based on metadata or curve
+    availability. Output tables can be written to CSV or Parquet formats to
+    support large-scale statistical, machine learning, and earth science
+    workflows. The tidy data structure follows Wickham (2014) <doi:10.18637/jss.v059.i10>.
+    The LAS file structure follows the Canadian Well Logging Society LAS standard
+    <https://www.cwls.org/wp-content/uploads/2017/02/Las2_Update_Jan2017.pdf>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr, tibble, tidyr
+Suggests: arrow, jsonlite, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/Omodolor/tidylaslog
+BugReports: https://github.com/Omodolor/tidylaslog/issues
+NeedsCompilation: no
+Packaged: 2026-02-10 04:26:05 UTC; hxo76
+Author: Hope E. Omodolor [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-7842-406X>)
+Maintainer: Hope E. Omodolor <hopeomodolor@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-12 08:20:02 UTC

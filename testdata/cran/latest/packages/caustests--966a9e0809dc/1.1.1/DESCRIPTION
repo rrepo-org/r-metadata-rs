@@ -1,0 +1,42 @@
+Package: caustests
+Type: Package
+Title: Multiple Granger Causality Tests for Time Series and Panel Data
+Version: 1.1.1
+Authors@R: c(
+    person("Muhammad", "Alkhalaf", 
+           email = "muhammedalkhalaf@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-2677-9246")))
+Description: Comprehensive suite of Granger causality tests for time series
+    and panel data. For time series: Toda-Yamamoto (1995)
+    <doi:10.1016/0304-4076(94)01616-8>, Fourier-based tests with single
+    frequency (Enders and Jones, 2016) <doi:10.1515/snde-2014-0101> and
+    cumulative frequencies (Nazlioglu et al., 2019)
+    <doi:10.1080/1540496X.2018.1434072>, quantile causality tests (Cai et al.,
+    2023) <doi:10.1016/j.frl.2023.104327>, and Bootstrap Fourier Granger
+    Causality in Quantiles (Cheng et al., 2021)
+    <doi:10.1007/s12076-020-00263-0>. For panel data: Panel Fourier
+    Toda-Yamamoto (Yilanci and Gorus, 2020)
+    <doi:10.1007/s11356-020-10092-9> and Panel Quantile Causality tests
+    (Wang and Nguyen, 2022) <doi:10.1080/1331677X.2021.1952089>, as well as
+    Group-Mean and Pooled Fully Modified OLS estimators for panel
+    cointegrating polynomial regressions (Wagner and Reichold, 2023)
+    <doi:10.1080/07474938.2023.2178141>. All tests include bootstrap
+    inference for robust p-values.
+License: GPL-3
+URL: https://github.com/muhammedalkhalaf/caustests
+BugReports: https://github.com/muhammedalkhalaf/caustests/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: stats, quantreg
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-04 14:51:37 UTC; SYSTEM
+Author: Muhammad Alkhalaf [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-2677-9246>)
+Maintainer: Muhammad Alkhalaf <muhammedalkhalaf@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-05 06:50:06 UTC

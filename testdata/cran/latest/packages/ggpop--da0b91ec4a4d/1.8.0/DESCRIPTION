@@ -1,0 +1,56 @@
+Type: Package
+Package: ggpop
+Title: Icon-Based Population Charts and Plots for 'ggplot2'
+Version: 1.8.0
+Date: 2026-08-23
+Authors@R: c(
+    person(given = "Jorge A.",
+             family = "Roa-Contreras",
+             role = c("aut", "cre"),
+             email = "jorgeroa@stanford.edu",
+             comment = c(ORCID = "0000-0002-3972-9793")),
+    person(given = "Ralitza",
+           family = "Soultanova",
+           role = c("aut"),
+           email = "Ralitza.soultanova@gmail.com",
+           comment = c(ORCID = "0009-0000-9324-5653")),
+    person(given = "Fernando",
+             family = "Alarid-Escudero",
+             role = c("aut"),
+             email = "falarid@stanford.edu",
+             comment = c(ORCID = "0000-0001-5076-1172")),
+     person(given = "Carlos",
+             family = "Pineda-Antunez",
+             role = c("aut"),
+             email = "cpinedaa@uw.edu",
+             comment = c(ORCID = "0000-0002-8352-7080")))
+Description: Create engaging population charts and point plots in R. 'ggpop' allows users to represent population data and points proportionally using customizable icons, facilitating the creation of circular representative population charts as well as any point-plots.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, cowplot, ggforce,
+        gganimate, ggrepel, ggtext, scales, reactable, patchwork
+Config/Needs/website: sf, geofacet, ggtext, quarto,
+        kcuilla/reactablefmtr
+Config/testthat/edition: 3
+Depends: R (>= 4.0.5)
+Imports: ggplot2, dplyr, ggimage, magick, rlang, tidyr, purrr,
+        fontawesome, rsvg, cli, tibble, grid, grDevices, stats, tools,
+        utils
+VignetteBuilder: knitr
+ByteCompile: true
+BugReports: https://github.com/jurjoroa/ggpop/issues
+URL: https://jurjoroa.github.io/ggpop/
+NeedsCompilation: no
+Packaged: 2026-08-23 19:15:33 UTC; jorgeroa
+Author: Jorge A. Roa-Contreras [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3972-9793>),
+  Ralitza Soultanova [aut] (ORCID:
+    <https://orcid.org/0009-0000-9324-5653>),
+  Fernando Alarid-Escudero [aut] (ORCID:
+    <https://orcid.org/0000-0001-5076-1172>),
+  Carlos Pineda-Antunez [aut] (ORCID:
+    <https://orcid.org/0000-0002-8352-7080>)
+Maintainer: Jorge A. Roa-Contreras <jorgeroa@stanford.edu>
+Repository: CRAN
+Date/Publication: 2026-08-23 20:10:11 UTC

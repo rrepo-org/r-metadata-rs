@@ -1,0 +1,40 @@
+Package: fChange
+Title: Functional Change Point Detection and Analysis
+Version: 2.1.0
+Authors@R: c(
+    person("Jeremy", "VanderDoes", , "jeremy.vanderdoes@gmail.com", 
+    role = c("aut", "cre","cph"),
+           comment = c(ORCID = "0009-0001-9885-3073")),
+    person("Gregory", "Rice", role = "aut"),
+    person("Martin", "Wendler", role = "aut") )
+Description: Analyze functional data and its change points. Includes 
+    functionality to store and process data, summarize and validate assumptions, 
+    characterize and perform inference of change points, and provide 
+    visualizations. Data is stored as discretely collected observations without
+    requiring the selection of basis functions. For more details see chapter 8 
+    of Horvath and Rice (2024) <doi:10.1007/978-3-031-51609-2>. Additional papers
+    are forthcoming. Focused works are also included in the documentation of 
+    corresponding functions.
+Encoding: UTF-8
+Imports: dplyr, fastmatrix, fda, ftsa, ggplot2, ggpubr, graphics,
+        grDevices, MASS, methods, plot3D, plotly, rainbow,
+        RColorBrewer, Rcpp, RcppArmadillo, Rfast, sandwich, scales,
+        stats, tensorA, tidyr, vars
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Suggests: CompQuadForm, fda.usc, forecast, funData, jmuOutlier, knitr,
+        lattice, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 2.10)
+LazyData: true
+URL: https://jrvanderdoes.github.io/fChange/
+Config/testthat/edition: 3
+License: GPL (>= 3)
+NeedsCompilation: yes
+Packaged: 2025-06-21 03:07:28 UTC; jerem
+Author: Jeremy VanderDoes [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0001-9885-3073>),
+  Gregory Rice [aut],
+  Martin Wendler [aut]
+Maintainer: Jeremy VanderDoes <jeremy.vanderdoes@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-21 03:30:02 UTC

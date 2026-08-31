@@ -1,0 +1,39 @@
+Package: DepDoubleTruncKS
+Type: Package
+Title: Kolmogorov-Smirnov Test for Dependently Double-Truncated
+        Durations
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut")
+  )
+Description: Performs the Kolmogorov-Smirnov-type goodness-of-fit test for
+    exponential duration models under independent or dependently double-truncated
+    sampling scheme using Farlie-Gumbel-Morgenstern ('FGM') copulas, as proposed
+    by Toparkus and Weissbach (2026) <doi:10.1007/s10985-026-09722-0>. Provides
+    functions for profile maximum likelihood estimation / score equation solving,
+    computation of the two-dimensional Kolmogorov-Smirnov test statistic over
+    the double-truncation parallelogram, simulation of the asymptotic Gaussian
+    process limit distribution for critical values and p-value calculation,
+    and synthetic dataset generation.
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://doi.org/10.1007/s10985-026-09722-0
+NeedsCompilation: no
+Packaged: 2026-07-31 04:03:55 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 20:10:03 UTC

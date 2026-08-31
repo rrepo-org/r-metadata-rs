@@ -1,0 +1,36 @@
+Package: rbiodatacr
+Type: Package
+Title: R Client for the BIODATACR Biodiversity Data Platform of Costa
+        Rica
+Version: 0.1.2
+Authors@R: person(
+    "Manuel", "Spinola",
+    email = "mspinola10@gmail.com",
+    role  = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-7839-1908"))
+Description: Provides functions to query occurrence records, species
+    information, and datasets from BIODATACR
+    <https://biodiversidad.go.cr>, the national biodiversity information
+    platform of Costa Rica managed by the Technical Office of CONAGEBIO.
+    Built on the Atlas of Living Australia (ALA) API infrastructure.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/ManuelSpinola/rbiodatacr,
+        https://manuelspinola.github.io/rbiodatacr/
+BugReports: https://github.com/ManuelSpinola/rbiodatacr/issues
+Suggests: CoordinateCleaner, ggplot2, knitr, rmarkdown, sf, testthat
+        (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: cli, dplyr, httr, jsonlite, purrr
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+LazyData: true
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-22 14:09:32 UTC; manuel_nuevo
+Author: Manuel Spinola [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7839-1908>)
+Maintainer: Manuel Spinola <mspinola10@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-22 15:50:02 UTC

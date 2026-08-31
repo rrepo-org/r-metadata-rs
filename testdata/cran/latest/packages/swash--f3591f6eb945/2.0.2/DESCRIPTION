@@ -1,0 +1,20 @@
+Package: swash
+Type: Package
+Title: Health Geography Toolbox for Model-Based Analysis of Infections
+        Panel Data
+Version: 2.0.2
+Date: 2026-08-30
+Authors@R: person("Thomas", "Wieland", role = c("aut", "cre"),
+                     email = "geowieland@googlemail.com",
+                     comment = c(ORCID = "0000-0001-5168-9846"))
+Author: Thomas Wieland [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5168-9846>)
+Maintainer: Thomas Wieland <geowieland@googlemail.com>
+Depends: R (>= 3.5.0), lubridate, sf, spdep, zoo, strucchange
+Description: Within epidemic outbreaks, infections grow and decline differently between regions, and the velocity of spatial spread differs between countries. The swash library offers a set of model-based analyses for these topics. Spread velocity may be analysed with the Swash-Backwash Model for the Single Epidemic Wave and corresponding functions for bootstrap confidence intervals, country comparison, and visualization of results. Differences in epidemic growth between regions may be analysed using logistic growth models, exponential growth models, Hawkes processes and breakpoint analyses. All functionalities are accessed by the class "infpan" for infections panel data defined in this package, which is built from a data.frame provided by the user.
+License: GPL (>= 2)
+Imports: methods
+NeedsCompilation: no
+Packaged: 2026-08-30 09:19:55 UTC; thoma
+Repository: CRAN
+Date/Publication: 2026-08-30 09:40:02 UTC

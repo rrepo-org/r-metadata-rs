@@ -1,0 +1,39 @@
+Package: pctax
+Type: Package
+Title: Professional Comprehensive Omics Data Analysis
+Version: 0.1.7
+Authors@R: person("Chen", "Peng", email ="bfzede@gmail.com", role = c("aut", "cre"), comment =
+           c(ORCID = "0000-0002-9449-7606"))
+Description: Provides a comprehensive suite of tools for analyzing omics data. It includes
+           functionalities for alpha diversity analysis, beta diversity analysis, differential
+           abundance analysis, community assembly analysis, visualization of phylogenetic tree, and
+           functional enrichment analysis. With a progressive approach, the package offers a range of
+           analysis methods to explore and understand the complex communities. It is designed to
+           support researchers and practitioners in conducting in-depth and professional omics data
+           analysis.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2.0)
+LazyData: true
+Imports: pcutils (>= 0.2.5), dplyr, readr, ggplot2 (>= 3.2.0), vegan,
+        magrittr, grDevices, RColorBrewer, ggrepel, reshape2, stats,
+        tibble, utils, ggpubr, patchwork, ggnewscale, ade4, scales
+Suggests: picante, httr, NST, permute, aplot, ggfun, pheatmap, MASS,
+        Rtsne, mixOmics, geosphere, phyloseq, phyloseqGraphTest,
+        plotly, umap, Hmisc, minpack.lm, bbmle, snow, foreach, doSNOW,
+        tidytree, ggtree, ggtreeExtra, vctrs, zoo, ape, DESeq2, limma,
+        ALDEx2, Mfuzz, edgeR, methods, randomForest, knitr, rmarkdown,
+        MetaNet, showtext, jsonlite, prettydoc, readxl, stringr,
+        ggExtra, clipr, zetadiv, ggforce, gggenes, mediation
+VignetteBuilder: knitr
+BugReports: https://github.com/Asa12138/pctax/issues
+URL: https://github.com/Asa12138/pctax
+ByteCompile: true
+biocViews: Microbiome, Software, Visualization
+NeedsCompilation: no
+Packaged: 2026-02-09 07:45:40 UTC; asa
+Author: Chen Peng [aut, cre] (ORCID: <https://orcid.org/0000-0002-9449-7606>)
+Maintainer: Chen Peng <bfzede@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-09 08:20:08 UTC

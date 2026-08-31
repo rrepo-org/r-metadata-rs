@@ -1,0 +1,40 @@
+Package: IBclust
+Type: Package
+Title: Information Bottleneck Methods for Clustering Mixed-Type Data
+Version: 1.5
+Authors@R: c(person(given = "Angelos",
+                    family = "Markos",
+                    role = c("aut", "cre"),
+                    email = "amarkos@gmail.com"),
+             person(given = "Efthymios",
+                    family = "Costa",
+                    role = "aut"),
+             person(given = "Ioanna",
+                    family = "Papatsouma",
+                    role = "aut"))
+Description: Implements multiple variants of the Information Bottleneck ('IB') method 
+    for clustering datasets containing continuous, categorical (nominal/ordinal) and mixed-type variables.
+    The package provides deterministic, agglomerative, generalised, 
+    sequential, and standard IB clustering algorithms that preserve relevant information while 
+    forming interpretable clusters. The Deterministic Information Bottleneck is described in 
+    Costa et al. (2026) <doi:10.1016/j.patcog.2026.113580>. The standard IB method 
+    originates from Tishby et al. (2000) <doi:10.48550/arXiv.physics/0004057>, 
+    the agglomerative variant from Slonim and Tishby (1999) <https://papers.nips.cc/paper/1651-agglomerative-information-bottleneck>, 
+    the generalised IB from Strouse and Schwab (2017) <doi:10.1162/NECO_a_00961>,
+    and the sequential IB from Slonim et al. (2002) <doi:10.1145/564376.564401>. Diagnostic and plotting functions are provided to summarise, visualise, and predict from the resulting clusterings.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Rcpp, stats, utils, np, rje, Rdpack
+Suggests: mclust
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen
+RoxygenNote: 7.3.3
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2026-08-28 05:43:19 UTC; amarkos
+Author: Angelos Markos [aut, cre],
+  Efthymios Costa [aut],
+  Ioanna Papatsouma [aut]
+Maintainer: Angelos Markos <amarkos@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 07:01:50 UTC

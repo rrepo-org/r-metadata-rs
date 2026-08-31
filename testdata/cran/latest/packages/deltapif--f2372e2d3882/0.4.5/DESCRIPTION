@@ -1,0 +1,27 @@
+Package: deltapif
+Title: Estimate Potential Impact and Population Attributable Fractions
+        with Aggregated Data
+Version: 0.4.5
+Authors@R: 
+    person("Rodrigo", "Zepeda-Tello", , "rzepeda17@gmail.com", role = c("aut", "cre"))
+Description: Uses the delta-method to estimate the Potential Impact Fraction (PIF) 
+  and the Population Attributable Fraction (PAF) from summary data. It creates 
+  point-estimates, confidence intervals, and estimates of the variance. Provides
+  an extension to the aggregated data method in Chan, Zepeda-Tello et al (2025) <doi:10.1002/sim.70214>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: cli, Deriv, S7, scales
+URL: https://rodrigozepeda.github.io/deltapif/
+Suggests: EValue, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+NeedsCompilation: no
+Packaged: 2026-03-04 04:29:23 UTC; rodzepeda
+Author: Rodrigo Zepeda-Tello [aut, cre]
+Maintainer: Rodrigo Zepeda-Tello <rzepeda17@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-08 10:40:07 UTC

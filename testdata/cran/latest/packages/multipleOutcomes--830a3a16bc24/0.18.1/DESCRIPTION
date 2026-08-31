@@ -1,0 +1,34 @@
+Package: multipleOutcomes
+Title: Joint Covariance and Treatment-Effect Tests for Multiple
+        Outcomes
+Version: 0.18.1
+Authors@R: 
+    person("Han", "Zhang", , "zhangh.ustc@gmail.com", role = c("aut", "cre"))
+Description: Fits generalized linear models, Cox proportional-hazards
+    models, log-rank tests, generalized estimating equations, mixed models
+    with repeated measures, Kaplan-Meier curves, quantile differences, and
+    hierarchical net-benefit (win-difference) and log win-ratio statistics
+    jointly across multiple endpoints, and returns the full asymptotic
+    covariance matrix linking them. Implements PATED (Prognostic Assisted
+    Treatment Effect Detection), a randomized-trial method that exploits
+    balanced prognostic covariates to tighten standard errors and increase
+    statistical power without introducing bias.
+URL: https://github.com/zhangh12/multipleOutcomes,
+        https://zhangh12.github.io/multipleOutcomes/
+BugReports: https://github.com/zhangh12/multipleOutcomes/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: dplyr, ggplot2, ggpubr, mmrm (>= 0.3.15), mvtnorm, rlang,
+        sandwich, stringr, survival, tidyr, tidyselect
+Suggests: asaur, coin, iBST, invGauss, JM, knitr, momentfit, numDeriv,
+        pec, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 3.5)
+LazyData: true
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-06-15 07:11:49 UTC; zhhan
+Author: Han Zhang [aut, cre]
+Maintainer: Han Zhang <zhangh.ustc@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-15 07:40:02 UTC

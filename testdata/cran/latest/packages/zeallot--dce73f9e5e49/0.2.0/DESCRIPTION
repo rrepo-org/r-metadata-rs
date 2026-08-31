@@ -1,0 +1,29 @@
+Package: zeallot
+Type: Package
+Title: Multiple, Unpacking, and Destructuring Assignment
+Version: 0.2.0
+Authors@R: c(
+    person("Nathan", "Teetor", email = "nate@haufin.ch",
+           role = c("aut", "cre")),
+    person("Paul", "Teetor",
+           role = "ctb"))
+Description: Provides a %<-% operator to perform multiple,
+    unpacking, and destructuring assignment in R. The
+    operator unpacks the right-hand side of an assignment
+    into multiple values and assigns these values to
+    variables on the left-hand side of the assignment.
+URL: https://github.com/r-lib/zeallot
+BugReports: https://github.com/r-lib/zeallot/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Depends: R (>= 3.2)
+Suggests: codetools, testthat, knitr, rmarkdown, purrr
+NeedsCompilation: no
+Packaged: 2025-05-22 07:55:46 UTC; nteetor
+Author: Nathan Teetor [aut, cre],
+  Paul Teetor [ctb]
+Maintainer: Nathan Teetor <nate@haufin.ch>
+Repository: CRAN
+Date/Publication: 2025-05-27 10:00:02 UTC

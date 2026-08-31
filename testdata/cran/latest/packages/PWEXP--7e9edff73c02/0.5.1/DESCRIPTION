@@ -1,0 +1,24 @@
+Package: PWEXP
+Type: Package
+Title: Piecewise Exponential Distribution Prediction Model
+Imports: graphics, grDevices, stats, methods, utils, segmented,
+        foreach, doSNOW, parallel, fastmatch
+Depends: survival
+Suggests: knitr, RColorBrewer, rmarkdown
+Version: 0.5.1
+Authors@R: c(
+    person("Tianchen", "Xu", email = "zjph602xutianchen@gmail.com", role = c("aut","cre"), comment=c(ORCID="0000-0002-0102-7630")),
+    person("Wen", "Zhang", role = c("aut")))
+Description: Build piecewise exponential survival model for study design (planning) and event/timeline prediction. 
+URL: https://github.com/zjph602xtc/PWEXP
+BugReports: https://github.com/zjph602xtc/PWEXP/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+VignetteBuilder: knitr
+Repository: CRAN
+Packaged: 2026-05-09 21:02:28 UTC; xut13
+Date/Publication: 2026-05-09 21:20:12 UTC
+NeedsCompilation: no
+Author: Tianchen Xu [aut, cre] (ORCID: <https://orcid.org/0000-0002-0102-7630>),
+  Wen Zhang [aut]
+Maintainer: Tianchen Xu <zjph602xutianchen@gmail.com>

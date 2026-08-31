@@ -1,0 +1,25 @@
+Package: multipleNCC
+Type: Package
+Title: Weighted Cox-Regression for Nested Case-Control Data
+Version: 1.2-5
+Date: 2025-09-01
+Authors@R: c(person(given = c("Nathalie", "C."),
+			family = "Stoer",
+			role = c("aut", "cre"),
+			email = "nast@fhi.no"),
+		person(given = c("Sven", "Ove"),
+			family = "Samuelsen",
+			role = "aut"))
+Maintainer: Nathalie C. Stoer <nast@fhi.no>
+Description: Fit Cox proportional hazard models with a weighted 
+  partial likelihood. It handles one or multiple endpoints, additional matching 
+  and makes it possible to reuse controls for other endpoints 
+  Stoer NC and Samuelsen SO (2016) <doi:10.32614/rj-2016-030>.
+Depends: survival, mgcv
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2025-09-01 14:12:44 UTC; nacst
+Author: Nathalie C. Stoer [aut, cre],
+  Sven Ove Samuelsen [aut]
+Repository: CRAN
+Date/Publication: 2025-09-01 15:50:02 UTC

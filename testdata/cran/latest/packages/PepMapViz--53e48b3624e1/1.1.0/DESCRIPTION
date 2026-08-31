@@ -1,0 +1,44 @@
+Package: PepMapViz
+Title: A Versatile Toolkit for Peptide Mapping, Visualization, and
+        Comparative Exploration
+Version: 1.1.0
+Authors@R: c(
+    person(given = "Zhenru", family = "Zhou", email = "zhou.zhenru@gene.com", role = c("aut", "cre")),
+    person(given = "Qui", family = "Phung", email = "phung.qui@gene.com", role = c("aut")),
+    person(given = "Corey", family = "Bakalarski", email = "bakalarski.corey@gene.com", role = c("aut")))
+Description: A versatile R visualization package that empowers 
+    researchers with comprehensive visualization tools for seamlessly mapping peptides 
+    to protein sequences, identifying distinct domains and regions of interest, 
+    accentuating mutations, and highlighting post-translational modifications, 
+    all while enabling comparisons across diverse experimental conditions. 
+    Potential applications of 'PepMapViz' include the visualization of cross-software 
+    mass spectrometry results at the peptide level for specific protein and domain 
+    details in a linearized format and post-translational modification coverage 
+    across different experimental conditions; unraveling insights into disease 
+    mechanisms. It also enables visualization of Major histocompatibility 
+    complex-presented peptide clusters in different antibody regions predicting 
+    immunogenicity in antibody drug development.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: shiny, ggplot2, stringr, ggforce, ggh4x, ggnewscale,
+        data.table, rlang, DT
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), mzID, MSnbase
+Note: The package 'MSnbase' is used for parsing and processing mzTab
+        files. While its non-portability limits usage on some
+        platforms, it is essential for enabling analysis and
+        integration of mzTab data in 'PepMapViz'. However, if the input
+        file is not in mzTab format, 'MSnbase' is not required, and the
+        package can function without it.
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+biocViews: Immunogenicity, MassSpectrometry, Proteomics, Peptidomics,
+        Software, Visualization
+NeedsCompilation: no
+Packaged: 2025-06-25 16:28:43 UTC; zhouz45
+Author: Zhenru Zhou [aut, cre],
+  Qui Phung [aut],
+  Corey Bakalarski [aut]
+Maintainer: Zhenru Zhou <zhou.zhenru@gene.com>
+Repository: CRAN
+Date/Publication: 2025-06-25 17:10:06 UTC

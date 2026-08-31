@@ -1,0 +1,42 @@
+Package: QuickExplore
+Type: Package
+Title: Interactive Dataset Explorer for 'R' and 'SAS' and Other Data
+        Formats
+Version: 0.1.0
+Authors@R: 
+    c(
+      person(given = "Ram", 
+             family = "Gaduputi", 
+             role = c("aut", "cre"), 
+             email = "ramsas88@gmail.com"),
+      person(given = "Jagadish", 
+             family = "Katam", 
+             role = "aut",
+             email = "Jagadish.katam@gmail.com")
+    )
+Description: A 'Shiny' application that provides nice interface for
+    browsing, exploring, summarising, and converting datasets stored in 'SAS'
+    (.sas7bdat, .xpt), CSV (.csv), and 'R' (.rds) formats.  Users can register
+    multiple directory-based libraries, interactively filter data using 'dplyr'
+    expressions, inspect per-variable statistics, and export datasets to Excel,
+    JSON, CSV, 'R' data, or 'SAS' transport formats.
+License: MIT + file LICENSE
+URL: https://github.com/ramsas88/QuickExplore
+BugReports: https://github.com/ramsas88/QuickExplore/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: shiny (>= 1.7.0), bslib (>= 0.5.0), DT (>= 0.28), dplyr (>=
+        1.1.0), haven (>= 2.5.0), readr (>= 2.1.0), jsonlite (>=
+        1.8.0), writexl (>= 1.4.0), rlang (>= 1.1.0), digest (>=
+        0.6.0), tools, stats, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-20 12:47:36 UTC; ramanjaneyulugaduputi
+Author: Ram Gaduputi [aut, cre],
+  Jagadish Katam [aut]
+Maintainer: Ram Gaduputi <ramsas88@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 20:12:20 UTC

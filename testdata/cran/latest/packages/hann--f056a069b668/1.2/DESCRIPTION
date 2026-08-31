@@ -1,0 +1,18 @@
+Package: hann
+Version: 1.2
+Date: 2026-01-26
+Title: Hopfield Artificial Neural Networks
+Authors@R: c(person("Emmanuel", "Paradis", role = c("aut", "cre", "cph"), email = "Emmanuel.Paradis@ird.fr", comment = c(ORCID = "0000-0003-3092-2199")))
+Description: Builds and optimizes Hopfield artificial neural networks (Hopfield, 1982, <doi:10.1073/pnas.79.8.2554>). One-layer and three-layer models are implemented. The energy of the Hopfield network is minimized with formula from Krotov and Hopfield (2016, <doi:10.48550/ARXIV.1606.01164>). Optimization (supervised learning) is done through a gradient-based method. Classification is done with S3 methods predict(). Parallelization with 'OpenMP' is used if available during compilation.
+Suggests: lattice
+Imports: graphics, stats
+URL: https://github.com/emmanuelparadis/hann
+BugReports: https://github.com/emmanuelparadis/hann/issues
+License: GPL-3
+NeedsCompilation: yes
+Packaged: 2026-01-26 15:29:16 UTC; paradis
+Author: Emmanuel Paradis [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3092-2199>)
+Maintainer: Emmanuel Paradis <Emmanuel.Paradis@ird.fr>
+Repository: CRAN
+Date/Publication: 2026-01-26 16:20:32 UTC

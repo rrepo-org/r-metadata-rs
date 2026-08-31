@@ -1,0 +1,37 @@
+Type: Package
+Package: actiread
+Title: Baseline Package for Reading Actigraphy and Activity Data
+Version: 0.5.0
+Authors@R: c(
+    person(given = "John",
+           family = "Muschelli",
+           role = c("aut", "cre"),
+           email = "muschellij2@gmail.com",
+           comment = c(ORCID = "0000-0001-6469-1750"))
+    )
+Description: Provides baseline functions for reading actigraphy and activity
+    data, relying on baseline functions from 'actibase'.  Reads data from 
+    'Axivity' 'CWA' <https://axivity.com/> , 
+    ActiGraph 'GT3X' <https://ametris.com/actigraph-wgt3x-bt>, 
+    'SensorLog' <https://sensorlog.berndthomas.net/>, and 
+    'SensorLogger' <https://www.tszheichoi.com/sensorlogger> zipped CSV files.
+License: GPL-3
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0), utils, covr, knitr, rmarkdown,
+        reticulate, arrow
+Encoding: UTF-8
+VignetteBuilder: knitr
+Imports: actibase, GGIRread, read.gt3x (>= 0.2.0), R.utils, magrittr,
+        dplyr, lubridate, assertthat, cli, tibble, janitor, purrr,
+        readr, methods
+URL: https://jhuwit.github.io/actiread/
+BugReports: https://github.com/jhuwit/actiread/issues
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-21 18:12:40 UTC; johnmuschelli
+Author: John Muschelli [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6469-1750>)
+Maintainer: John Muschelli <muschellij2@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 20:40:02 UTC

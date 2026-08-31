@@ -1,0 +1,36 @@
+Package: inequality
+Title: Inequality Measurement, Decomposition, and Poverty Analysis
+Version: 0.1.0
+Authors@R: 
+    person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
+Description: Tools for measuring income and wealth inequality. Computes the
+    Gini coefficient with bootstrap or asymptotic confidence intervals
+    following Davidson (2009) <doi:10.1016/j.jeconom.2008.09.011>, the
+    extended S-Gini family, Theil T and L indices (generalised entropy
+    family), the Atkinson index, the Kolm absolute inequality index, Palma
+    ratio, Hoover index, percentile ratios, and Lorenz curves. Supports
+    between-within group decomposition following Bourguignon (1979)
+    <doi:10.2307/1914138>, income share tabulation, concentration indices
+    for health inequality with Erreygers (2009) correction, Kakwani tax
+    progressivity and Reynolds-Smolensky redistribution indices,
+    Foster-Greer-Thorbecke poverty measures including the Sen index, growth
+    incidence curves following Ravallion and Chen (2003)
+    <doi:10.1016/S0165-1765(02)00205-7>, and Wolfson polarisation. All
+    functions accept optional survey weights and work with data from any
+    source.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: cli (>= 3.6.0), grDevices, graphics, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/charlescoverdale/inequality
+BugReports: https://github.com/charlescoverdale/inequality/issues
+NeedsCompilation: no
+Packaged: 2026-04-14 06:21:07 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-20 18:50:02 UTC

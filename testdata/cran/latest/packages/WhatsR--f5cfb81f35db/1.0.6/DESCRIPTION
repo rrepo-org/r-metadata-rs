@@ -1,0 +1,32 @@
+Package: WhatsR
+Type: Package
+Title: Parsing, Anonymizing and Visualizing Exported 'WhatsApp' Chat
+        Logs
+Version: 1.0.6
+Date: 2025-07-14
+Authors@R: person("Julian", "Kohne", email = "julian.kohne@gesis.org",
+                  role = c("aut", "cre"))
+Description: Imports 'WhatsApp' chat logs and parses them into
+    a usable dataframe object. The parser works on chats exported 
+    from Android or iOS phones and on Linux, macOS and Windows. The parser has  multiple options for extracting smileys and emojis
+    from the messages, extracting URLs and domains from the messages, extracting names and types of sent 
+    media files from the messages, extracting timestamps from messages, extracting and anonymizing author 
+    names from messages. Can be used to create anonymized versions of data.
+License: GPL-3
+Imports: stringi, qdapRegex, readr, tokenizers, data.table, ggplot2,
+        anytime, mgsub, stats, qdap, ggwordcloud, dplyr, ragg,
+        checkmate, visNetwork, lubridate, methods, leaflet
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: extrafont, tm, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://gesiscss.github.io/WhatsR/,
+        https://github.com/gesiscss/WhatsR
+BugReports: https://github.com/gesiscss/WhatsR/issues
+NeedsCompilation: no
+Packaged: 2025-07-14 14:15:27 UTC; juko
+Author: Julian Kohne [aut, cre]
+Maintainer: Julian Kohne <julian.kohne@gesis.org>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2025-07-14 14:40:02 UTC

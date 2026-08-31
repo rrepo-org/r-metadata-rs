@@ -1,0 +1,36 @@
+Package: tdPRC
+Type: Package
+Title: Time-Dependent Precision-Recall Curve Estimation for
+        Right-Censored Data
+Version: 1.0.0
+Authors@R: c(
+          person(given = "Kassu Mehari",
+           family = "Beyene",
+           role = c("aut", "cre"),
+           email = "m2kassu@gmail.com"),
+          person(given = "Ding-Geng",
+           family = "Chen",
+           role = "ctb"),
+          person(given = "Yehenew Getachew",
+           family = "Kifle",
+           role = "ctb")
+           )
+Description: This contains functions that can be used to estimate the time-dependent 
+              precision-recall curve (PRC) and the corresponding area under the PRC 
+              for right-censored survival data. It also compute time-dependent 
+              ROC curve and its corresponding area under the ROC curve (AUC). See
+              Beyene, Chen and Kifle (2024) <doi:10.1002/bimj.202300135>.
+License: GPL (>= 2)
+Depends: R(>= 4.0)
+Imports: survidm, graphics, stats
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-10 14:19:59 UTC; m2kas
+Author: Kassu Mehari Beyene [aut, cre],
+  Ding-Geng Chen [ctb],
+  Yehenew Getachew Kifle [ctb]
+Maintainer: Kassu Mehari Beyene <m2kassu@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-15 09:00:02 UTC

@@ -1,0 +1,25 @@
+Package: BTIME
+Title: Bayesian Hierarchical Models for Single-Cell Protein Data
+Version: 1.0.1
+Authors@R: 
+        c(person(given = "Chase", family = "Sakitis", role = c("aut", "cre"),
+              email =  "cjsakitis@cmh.edu"),
+          person(given = "Brooke", family = "Fridley", role = "aut",
+              email =  "blfridley@cmh.edu"))
+Description: Bayesian Hierarchical beta-binomial models for modeling cell population to predictors/exposures.
+              This package utilizes 'runjags' to run Gibbs sampling, parallelizing the chains.
+              Options for different covariances/relationship structures between parameters of interest.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: coda, runjags, VGAM, matlib
+Depends: rjags
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-24 19:34:02 UTC; cjsakitis
+Author: Chase Sakitis [aut, cre],
+  Brooke Fridley [aut]
+Maintainer: Chase Sakitis <cjsakitis@cmh.edu>
+Repository: CRAN
+Date/Publication: 2026-02-24 22:30:08 UTC

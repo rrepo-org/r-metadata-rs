@@ -1,0 +1,59 @@
+Type: Package
+Package: multiDoE
+Title: Multi-Criteria Design of Experiments for Optimal Design
+Version: 0.9.4
+Authors@R: 
+    c(
+        person(
+            given = "Francesca",
+            family = "Cucchi",
+            role = c("aut")
+        ),
+        person(
+            given = "Andrea",
+            family = "Melloncelli",
+            role = c("aut", "cre"),
+            email = "andrea.melloncelli@vanlog.it"
+        ),
+        person(
+            given = "Francesco",
+            family = "Sambo",
+            role = c("aut")
+        ),
+        person(
+            given = "Kalliopi",
+            family = "Mylona",
+            role = c("aut")
+        ),
+        person(
+            given = "Matteo",
+            family = "Borrotti",
+            role = c("aut")
+        )
+    )
+Maintainer: Andrea Melloncelli <andrea.melloncelli@vanlog.it>
+Description: Multi-criteria design of experiments algorithm that
+    simultaneously optimizes up to six different criteria ('I', 'Id', 'D', 'Ds', 'A'
+    and 'As'). The algorithm finds the optimal Pareto front and, if
+    requested, selects a possible symmetrical design on it. The
+    symmetrical design is selected based on two techniques: minimum
+    distance with the Utopia point or the 'TOPSIS' approach.
+License: CC BY 4.0
+URL: https://github.com/andreamelloncelli/multiDoE
+Depends: R (>= 3.5.0)
+Imports: ggplot2, magrittr, plotly, pracma
+Suggests: devtools, here, knitr, logr, markdown, rgl, rmarkdown,
+        testthat (>= 3.0.0), usethis
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-04-02 17:06:07 UTC; mello
+Author: Francesca Cucchi [aut],
+  Andrea Melloncelli [aut, cre],
+  Francesco Sambo [aut],
+  Kalliopi Mylona [aut],
+  Matteo Borrotti [aut]
+Repository: CRAN
+Date/Publication: 2025-04-02 21:50:06 UTC

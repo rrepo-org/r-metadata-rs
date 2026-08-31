@@ -1,0 +1,40 @@
+Package: lumbermark
+Type: Package
+Title: Resistant Clustering via Chopping Up Mutual Reachability Minimum
+        Spanning Trees
+Version: 0.9.0
+Date: 2026-03-09
+Authors@R: 
+    person("Marek", "Gagolewski",
+        role = c("aut", "cre", "cph"),
+        email = "marek@gagolewski.com",
+        comment = c(ORCID = "0000-0003-0637-6028")
+    )
+Description: 
+    Implements a fast and resistant divisive clustering algorithm which
+    identifies a specified number of clusters:  'lumbermark' iteratively
+    chops off sizeable limbs that are joined by protruding segments
+    of a dataset's mutual reachability minimum spanning tree;
+    see Gagolewski (2026) <https://lumbermark.gagolewski.com/>.
+    The use of a mutual reachability distance pulls peripheral points farther
+    away from each other.  When combined with the 'deadwood' package, it can
+    act as an outlier detector.  The 'Python' version of 'lumbermark' is
+    available via 'PyPI'.
+BugReports: https://github.com/gagolews/lumbermark/issues
+URL: https://lumbermark.gagolewski.com/,
+        https://clustering-benchmarks.gagolewski.com/,
+        https://github.com/gagolews/lumbermark
+License: AGPL-3
+Imports: Rcpp, deadwood
+Suggests: datasets,
+LinkingTo: Rcpp
+Encoding: UTF-8
+SystemRequirements: OpenMP
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-03-10 09:48:46 UTC; gagolews
+Author: Marek Gagolewski [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-0637-6028>)
+Maintainer: Marek Gagolewski <marek@gagolewski.com>
+Repository: CRAN
+Date/Publication: 2026-03-16 19:10:02 UTC

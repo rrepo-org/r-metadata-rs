@@ -1,0 +1,28 @@
+Package: kissmig
+Type: Package
+Title: a Keep It Simple Species Migration Model
+Version: 2.0-1
+Date: 2025-10-23
+Depends: R (>= 3.5.0), Rcpp, terra
+Authors@R: c(
+    person(given = "Michael P.", family = "Nobis", email = "michael.nobis@wsl.ch", comment = c(ORCID = "0000-0003-3285-1590"), role = c("cre", "aut")),
+    person(given = "Signe", family = "Normand", comment = c(ORCID = "0000-0002-8782-4154"), role = "ctb"),
+    person(given = "Dominik F.", family = "Landolt", role = "ctb")
+  )
+Description: Simulating species migration and range dynamics under stable or changing environmental conditions based on a simple, raster-based, deterministic or stochastic migration model. KISSMig runs on binary or quantitative suitability maps, which are pre-calculated with niche-based habitat suitability models (also called ecological niche models (ENMs) or species distribution models (SDMs)). Nobis & Normand (2014), <doi:10.1111/ecog.00930>.
+License: GPL (>= 3)
+URL: https://purl.oclc.org/wsl/kissmig
+Encoding: UTF-8
+LazyData: true
+Imports: methods, stats
+LinkingTo: Rcpp
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-10-23 10:49:32 UTC; nobis
+Author: Michael P. Nobis [cre, aut] (ORCID:
+    <https://orcid.org/0000-0003-3285-1590>),
+  Signe Normand [ctb] (ORCID: <https://orcid.org/0000-0002-8782-4154>),
+  Dominik F. Landolt [ctb]
+Maintainer: Michael P. Nobis <michael.nobis@wsl.ch>
+Repository: CRAN
+Date/Publication: 2025-10-23 11:40:08 UTC

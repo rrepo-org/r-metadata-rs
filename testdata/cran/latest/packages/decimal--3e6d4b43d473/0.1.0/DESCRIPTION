@@ -1,0 +1,43 @@
+Package: decimal
+Title: Exact Arbitrary-Precision Decimal Vectors
+Version: 0.1.0
+Authors@R: 
+    c(
+      person(
+        "Pedro", "Baltazar",
+        email = "pedrobtz@gmail.com",
+        role = c("aut", "cre", "cph")
+      ),
+      person(
+        "Stefan", "Krah",
+        role = c("ctb", "cph"),
+        comment = "Vendored 'mpdecimal' library in src/mpdecimal; see inst/COPYRIGHTS."
+      )
+    )
+Description: Arbitrary-precision vectors with an exact decimal representation,
+    avoiding the rounding surprises of binary floating point. Built on the
+    'mpdecimal' C library, arithmetic is governed by an explicit decimal
+    context controlling precision, rounding, and signalling, and vectors
+    integrate with 'vctrs' for use in data frames, 'tibble' objects, summaries,
+    and common numeric workflows. Missing values, signed zeros, infinities, and
+    not-a-number values are supported throughout. The arithmetic model follows
+    Cowlishaw (2009) "General Decimal Arithmetic"
+    <https://speleotrove.com/decimal/decarith.html>.
+License: MIT + file LICENSE
+Language: en-US
+Depends: R (>= 4.2.0)
+Imports: methods, rlang, vctrs, withr
+Suggests: covr, knitr, pillar, rmarkdown, tibble, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/documentation: roxygen2
+Encoding: UTF-8
+NeedsCompilation: yes
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-20 11:31:30 UTC; pbtz
+Author: Pedro Baltazar [aut, cre, cph],
+  Stefan Krah [ctb, cph] (Vendored 'mpdecimal' library in src/mpdecimal;
+    see inst/COPYRIGHTS.)
+Maintainer: Pedro Baltazar <pedrobtz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 12:40:09 UTC

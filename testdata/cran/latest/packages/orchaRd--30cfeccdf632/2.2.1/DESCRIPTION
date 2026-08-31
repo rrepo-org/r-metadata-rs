@@ -1,0 +1,36 @@
+Package: orchaRd
+Title: Visualizing Meta-Analyses with Orchard Plots and Prediction
+        Intervals
+Version: 2.2.1
+Authors@R: c(
+    person(given = "Daniel", family = "Noble",
+           role = c("aut", "cre"),
+           email = "daniel.noble@anu.edu.au"),
+    person(given = "Shinichi", family = "Nakagawa",
+           role = "aut",
+           email = "s.nakagawa@unsw.edu.au"))
+Description: Generates prediction intervals and orchard plots for
+    meta-analytic and meta-regression models fitted with the 'metafor'
+    package. Orchard plots augment classic forest plots by displaying
+    individual effect sizes together with group means and their confidence
+    and prediction intervals, providing an enhanced visualization of
+    meta-analytic data for ecology, evolution, and beyond. Methods are
+    described in Nakagawa et al. (2023) <doi:10.1111/2041-210X.14152>.
+Depends: R (>= 4.2)
+URL: https://daniel1noble.github.io/orchaRd/
+BugReports: https://github.com/daniel1noble/orchaRd/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: ape, dplyr, emmeans, ggbeeswarm, ggplot2, latex2exp, magrittr,
+        MASS, metafor, progress, rWishart, stats, tester, utils
+Suggests: broom, glmmTMB, gt, knitr, lme4, metadat, moments, patchwork,
+        PearsonDS, purrr, R.rsp, rmarkdown, testthat, tibble
+NeedsCompilation: no
+Packaged: 2026-07-15 06:02:42 UTC; noble
+Author: Daniel Noble [aut, cre],
+  Shinichi Nakagawa [aut]
+Maintainer: Daniel Noble <daniel.noble@anu.edu.au>
+Repository: CRAN
+Date/Publication: 2026-07-23 12:40:15 UTC

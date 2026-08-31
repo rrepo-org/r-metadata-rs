@@ -1,0 +1,45 @@
+Package: gkwreg
+Title: Generalized Kumaraswamy Regression Models for Bounded Data
+Version: 2.1.18
+Authors@R: c(person(given = "José Evandeilton",
+                    family = "Lopes",
+                    role = c("aut", "cre"),
+                    email = "evandeilton@gmail.com",
+                    comment = c(ORCID = "0009-0007-5887-4084")),
+             person(given = "Wagner Hugo",
+                    family = "Bonat",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-0349-7054")))
+Description: Implements regression models for bounded continuous data in the
+    open interval (0,1) using the five-parameter Generalized 'Kumaraswamy'
+    distribution. Supports modeling all distribution parameters (alpha, beta,
+    gamma, delta, lambda) as functions of predictors through various link
+    functions. Provides efficient maximum likelihood estimation via Template
+    Model Builder ('TMB'), offering comprehensive diagnostics, model comparison
+    tools, and simulation methods. Particularly useful for analyzing
+    proportions, rates, indices, and other bounded response data with complex
+    distributional features not adequately captured by simpler models. Methods
+    are described in Lopes and Bonat (2026) <doi:10.21105/joss.08991>.
+License: MIT + file LICENSE
+URL: https://github.com/evandeilton/gkwreg,
+        https://evandeilton.github.io/gkwreg/
+BugReports: https://github.com/evandeilton/gkwreg/issues
+Depends: R (>= 3.5)
+Imports: Formula, ggplot2, ggpubr, gkwdist, graphics, grDevices,
+        gridExtra, magrittr, numDeriv, Rcpp, stats, TMB, utils
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen, TMB
+Suggests: betareg, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+Packaged: 2026-08-23 18:23:26 UTC; evandeilton
+Author: José Evandeilton Lopes [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-5887-4084>),
+  Wagner Hugo Bonat [aut] (ORCID:
+    <https://orcid.org/0000-0002-0349-7054>)
+Maintainer: José Evandeilton Lopes <evandeilton@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 07:40:10 UTC

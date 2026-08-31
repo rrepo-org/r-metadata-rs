@@ -1,0 +1,25 @@
+Package: depcoeff
+Title: Dependency Coefficients
+Type: Package
+Version: 1.0.1
+Date: 2026-06-13
+Authors@R: 
+    person(given = "Eckhard",
+           family = "Liebscher",
+           role = c("aut", "cre"),
+           email = "eckhard.liebscher@hs-merseburg.de")
+Author: Eckhard Liebscher [aut, cre]
+Maintainer: Eckhard Liebscher <eckhard.liebscher@hs-merseburg.de>
+Description: Functions to compute coefficients measuring the dependence of two or more than two variables. The functions can be deployed to gain information about functional dependencies of the variables with emphasis on monotone functions. The statistics describe how well one response variable can be approximated by a monotone function of other variables. In regression analysis the variable selection is an important issue. In this framework the functions could be useful tools in modeling the regression function. Detailed explanations on the subject can be found in papers Liebscher (2014) <doi:10.2478/demo-2014-0004>; Liebscher (2017) <doi:10.1515/demo-2017-0012>; Liebscher (2021): <https://arfjournals.com/image/catalog/Journals%20Papers/AJSS/No%202%20(2021)/4-AJSS_123-150.pdf>; Liebscher (2021): Kendall regression coefficient. Computational Statistics and Data Analysis 157. 107140.
+Depends: R (>= 3.5.0)
+Suggests: MASS, faraway, testthat (>= 3.0.0)
+License: GPL-2
+Encoding: UTF-8
+LinkingTo: Rcpp
+Imports: Rcpp, copula
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Config/testthat/edition: 3
+Packaged: 2026-06-16 13:31:34 UTC; eclie
+Repository: CRAN
+Date/Publication: 2026-06-16 15:10:06 UTC

@@ -1,0 +1,26 @@
+Package: GISSB
+Type: Package
+Title: Network Analysis on the Norwegian Road Network
+Version: 1.1.1
+Authors@R: person("Sindre Mikael", "Haugen", email = "sindre.haugen@ssb.no", role = c("aut", "cre"))
+Description: A collection of GIS (Geographic Information System) functions in R, created for use in Statistics Norway. The functions are primarily related to network analysis on the Norwegian road network. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: cppRouting, dplyr, here, httr, igraph, jsonlite, leaflet,
+        magrittr, nabor, purrr, RCurl, reshape2, rlang, sf, stringr,
+        tibble, tidygraph, tidyselect
+VignetteBuilder: knitr
+URL: https://statisticsnorway.github.io/GISSB/,
+        https://github.com/statisticsnorway/GISSB
+BugReports: https://github.com/statisticsnorway/GISSB/issues
+Depends: R (>= 3.5.0)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-10 09:28:15 UTC; onyxia
+Author: Sindre Mikael Haugen [aut, cre]
+Maintainer: Sindre Mikael Haugen <sindre.haugen@ssb.no>
+Repository: CRAN
+Date/Publication: 2026-07-10 10:20:02 UTC

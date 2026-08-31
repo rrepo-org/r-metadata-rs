@@ -1,0 +1,46 @@
+Package: viewscape
+Type: Package
+Title: Viewscape Analysis
+Version: 3.0.0
+Authors@R: c(person("Xiaohao", "Yang", role = c("aut", "cre", "cph"), email = "xiaohaoy111@gmail.com"),
+           person("Nathan", "Fox", role = c("aut")),
+           person("Derek", "Van Berkel", role = c("aut")),
+           person("Mark", "Lindquist", role = c("aut")))
+Description: Provides tools for viewscape analysis from one or multiple viewpoints
+    using a digital surface or elevation model. Core functionality includes computing
+    viewsheds, quantifying visual magnitude, calculating a suite of viewscape
+    configuration metrics (extent, depth, relief, Sky View Factor, skyline variation,
+    and patch-based landscape structure), Shannon Diversity Index and land cover feature
+    proportions within the visible area, pairwise intervisibility networks, panoramic
+    view generation, and visualizing results as rasters or polygons. Viewscape
+    configuration metrics follow the methods of Tabrizian et al. (2020)
+    <doi:10.1016/j.landurbplan.2019.103704>. The viewshed algorithm is based on
+    Franklin & Ray (1994) <https://api.semanticscholar.org/CorpusID:10680920>
+    and Wang et al. (2000) <https://api.semanticscholar.org/CorpusID:131687018>.
+    Visual magnitude is derived from Chamberlain & Meitner (2013)
+    <doi:10.1016/j.landurbplan.2013.01.003>.
+    Sky View Factor is computed following Oke (1981)
+    <doi:10.1002/joc.3370010304> as implemented in the 'shadow' package
+    (Dorman et al. 2019) <doi:10.32614/RJ-2019-024>.
+URL: https://github.com/billbillbilly/viewscape
+BugReports: https://github.com/billbillbilly/viewscape/issues
+Depends: R (>= 4.2)
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, greenSD, dsmSearch
+Config/testthat/edition: 3
+VignetteBuilder: knitr, rmarkdown
+biocViews:
+Imports: Rcpp, rlang, methods, dplyr, sf, sp, terra, ForestTools (>=
+        1.0.1), parallel, pbmcapply
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-06-26 15:41:37 UTC; xiaohaoyang
+Author: Xiaohao Yang [aut, cre, cph],
+  Nathan Fox [aut],
+  Derek Van Berkel [aut],
+  Mark Lindquist [aut]
+Maintainer: Xiaohao Yang <xiaohaoy111@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-27 09:30:02 UTC

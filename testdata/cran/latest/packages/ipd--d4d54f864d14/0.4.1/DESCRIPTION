@@ -1,0 +1,59 @@
+Package: ipd
+Title: Inference on Predicted Data
+Version: 0.4.1
+Authors@R: c(
+      person(given = "Stephen", family = "Salerno",
+        email = "ssalerno@fredhutch.org", role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0000-0003-2763-0494")),
+      person(given = "Jiacheng", family = "Miao",
+        email = "jmiao24@wisc.edu", role = c("aut")),
+      person(given = "Awan", family = "Afiaz",
+        email = "aafiaz@uw.edu", role = c("aut")),
+      person(given = "Kentaro", family = "Hoffman",
+        email = "khoffm3@uw.edu", role = c("aut")),
+      person(given = "Jesse", family = "Gronsbell",
+        email = "j.gronsbell@utoronto.ca", role = c("aut")),
+      person(given = "Jianhui", family = "Gao",
+        email = "jianhui.gao@mail.utoronto.ca", role = c("aut")),
+      person(given = "David", family = "Cheng",
+        email = "dcheng@mgh.harvard.edu", role = c("aut")),
+      person(given = "Anna", family = "Neufeld",
+        email = "acn2@williams.edu", role = c("aut")),
+      person(given = "Qiongshi", family = "Lu",
+        email = "qlu@biostat.wisc.edu", role = c("aut")),
+      person(given = "Tyler H", family = "McCormick",
+        email = "tylermc@uw.edu", role = c("aut")),
+      person(given = "Jeffrey T", family = "Leek",
+        email = "jtleek@fredhutch.org", role = c("aut")))
+Description: Performs valid statistical inference on predicted data (IPD) using recent methods, where for a subset of the data, the outcomes have been predicted by an algorithm. Provides a wrapper function with specified defaults for the type of model and method to be used for estimation and inference. Further provides methods for tidying and summarizing results. Salerno et al., (2025) <doi:10.1093/bioinformatics/btaf055>.
+License: MIT + file LICENSE
+URL: https://github.com/ipd-tools/ipd, https://ipd-tools.github.io/ipd/
+BugReports: https://github.com/ipd-tools/ipd/issues
+Depends: R (>= 4.4.0)
+Imports: methods, generics, caret, gam, ranger, splines, stats, MASS,
+        randomForest, tibble
+Suggests: knitr, patchwork, rmarkdown, spelling, testthat (>= 3.0.0),
+        tidyverse, xfun (>= 0.51), BiocStyle, BiocManager
+VignetteBuilder: knitr
+biocViews: Software, StatisticalMethod
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-03-11 03:23:19 UTC; ssalerno
+Author: Stephen Salerno [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2763-0494>),
+  Jiacheng Miao [aut],
+  Awan Afiaz [aut],
+  Kentaro Hoffman [aut],
+  Jesse Gronsbell [aut],
+  Jianhui Gao [aut],
+  David Cheng [aut],
+  Anna Neufeld [aut],
+  Qiongshi Lu [aut],
+  Tyler H McCormick [aut],
+  Jeffrey T Leek [aut]
+Maintainer: Stephen Salerno <ssalerno@fredhutch.org>
+Repository: CRAN
+Date/Publication: 2026-03-11 15:00:09 UTC

@@ -1,0 +1,31 @@
+Package: ukhousing
+Title: Access UK Housing Data from Land Registry, EPC, and Planning
+Version: 0.1.0
+Authors@R: 
+    person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
+Description: Fetch UK housing data from official sources. Access the UK House
+    Price Index and Price Paid Data from 'HM Land Registry'
+    <https://landregistry.data.gov.uk/>, domestic and non-domestic Energy
+    Performance Certificates from the 'MHCLG' Open Data service
+    <https://epc.opendatacommunities.org/>, and planning application, brownfield
+    land, and local plan data from 'planning.data.gov.uk'
+    <https://www.planning.data.gov.uk/>. Data covers all 441 UK local
+    authorities from 1995 to the present. Functions accept flexible filters
+    (postcode, local authority, property type, date range) and return tidy
+    data frames. Downloaded data is cached locally for subsequent calls.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: cli (>= 3.6.0), httr2 (>= 1.0.0), jsonlite, tools, utils
+Suggests: sf, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/charlescoverdale/ukhousing
+BugReports: https://github.com/charlescoverdale/ukhousing/issues
+NeedsCompilation: no
+Packaged: 2026-04-15 13:01:56 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:10:02 UTC

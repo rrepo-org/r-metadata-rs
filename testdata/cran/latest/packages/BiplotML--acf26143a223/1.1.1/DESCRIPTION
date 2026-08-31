@@ -1,0 +1,42 @@
+Package: BiplotML
+Title: Logistic Biplot Estimation Using Machine Learning Algorithms
+Version: 1.1.1
+Date: 2026-04-30
+Authors@R: 
+    person(given = "Jose Giovany",
+           family = "Babativa-Marquez",
+           role = c("cre", "aut"),
+           email = "jgbabativam@unal.edu.co",
+           comment = c(ORCID = "0000-0002-4989-7459"))
+Description: Implements methods for fitting logistic biplot models to
+    multivariate binary data. The logistic biplot represents individuals
+    as points and binary variables as directed vectors in a low-dimensional
+    subspace; the orthogonal projection of each individual onto a variable
+    vector approximates the expected probability that the corresponding
+    characteristic is present. Available fitting methods include conjugate
+    gradient algorithms, a coordinate descent Majorization-Minimization
+    (MM) algorithm, and a block coordinate descent algorithm based on data
+    projection that supports matrices with missing values and allows new
+    individuals to be projected as supplementary rows without refitting
+    the model. A cross-validation procedure is provided to select the
+    number of latent dimensions k.
+    References: Babativa-Marquez and Vicente-Villardon (2021)
+    <doi:10.3390/math9162015>;
+    Vicente-Villardon and Galindo (2006, ISBN:9780470973196).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: optimx, RSpectra
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, dplyr (>= 1.0.0),
+        tidyr (>= 1.1.0), ggplot2 (>= 3.3.2), ggrepel, pracma, mvtnorm
+URL: https://github.com/jgbabativam/BiplotML
+BugReports: https://github.com/jgbabativam/BiplotML/issues
+NeedsCompilation: no
+Packaged: 2026-05-03 14:09:14 UTC; giova
+Author: Jose Giovany Babativa-Marquez [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-4989-7459>)
+Maintainer: Jose Giovany Babativa-Marquez <jgbabativam@unal.edu.co>
+Repository: CRAN
+Date/Publication: 2026-05-08 15:42:17 UTC

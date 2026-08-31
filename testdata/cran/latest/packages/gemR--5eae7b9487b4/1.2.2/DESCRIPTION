@@ -1,0 +1,27 @@
+Encoding: UTF-8
+Package: gemR
+Type: Package
+Title: General Effect Modelling
+Version: 1.2.2
+Date: 2025-09-04
+Authors@R: c(person("Kristian Hovde", "Liland", role = c("aut", "cre"),
+                     email = "kristian.liland@nmbu.no"),
+              person("Ellen Færgestad", "Mosleth", role = "ctb"))
+Description: Two-step modeling with separation of sources of variation through analysis of variance and subsequent multivariate
+   modeling through a range of unsupervised and supervised statistical methods. Separation can focus on removal of interfering 
+   effects or isolation of effects of interest. EF Mosleth et al. (2021) <doi:10.1038/s41598-021-82388-w> and EF Mosleth et al. 
+   (2020) <doi:10.1016/B978-0-12-409547-2.14882-6>.
+Depends: R (>= 3.5.0)
+Imports: ggplot2, scales, gridExtra, mixlm, pls, plsVarSel, HDANOVA (>=
+        0.8.4), lme4, pracma
+Suggests: glmnet, neuralnet
+License: GPL
+LazyData: TRUE
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-04 19:45:15 UTC; kristian
+Author: Kristian Hovde Liland [aut, cre],
+  Ellen Færgestad Mosleth [ctb]
+Maintainer: Kristian Hovde Liland <kristian.liland@nmbu.no>
+Repository: CRAN
+Date/Publication: 2025-09-04 20:00:02 UTC

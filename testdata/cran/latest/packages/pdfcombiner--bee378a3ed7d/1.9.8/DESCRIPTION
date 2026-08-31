@@ -1,0 +1,26 @@
+Package: pdfcombiner
+Title: Graphical User Interface for Manipulating PDF and Image Files
+Version: 1.9.8
+Authors@R: 
+    person("Steve", "Choy", , "steve.choy@outlook.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-5385-4096"))
+Maintainer: Steve Choy <steve.choy@outlook.com>
+Description: A 'shiny' app that supports merging of PDF and/or image files with page selection, removal, or rotation options.
+    It is a fast, free, and secure alternative to commercial software or various online websites which require users to sign-up, and it avoids any potential risks associated with uploading files elsewhere.
+License: MIT + file LICENSE
+URL: https://github.com/stevechoy/pdfcombiner,
+        https://lagom.shinyapps.io/pdfcombiner/
+BugReports: https://github.com/stevechoy/pdfcombiner/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: shiny, pdftools, qpdf,
+Suggests: bslib, rJava, staplr, testthat (>= 3.0.0), magick, officer,
+        openxlsx, shinythemes
+Depends: R (>= 3.5.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-04 05:21:25 UTC; choysiuf
+Author: Steve Choy [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-5385-4096>)
+Repository: CRAN
+Date/Publication: 2025-09-09 14:00:08 UTC

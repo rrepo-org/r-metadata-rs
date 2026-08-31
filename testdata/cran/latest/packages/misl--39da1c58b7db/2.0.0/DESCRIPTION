@@ -1,0 +1,48 @@
+Package: misl
+Title: Multiple Imputation by Super Learning
+Version: 2.0.0
+Authors@R: c(
+    person(
+      given   = "Justin",
+      family  = "Manjourides",
+      email   = "j.manjourides@northeastern.edu",
+      role    = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-2454-4489")
+    ),
+    person(
+      given   = "Thomas",
+      family  = "Carpenito",
+      role    = "aut",
+      comment = c(ORCID = "0000-0003-3591-0680")
+    )
+  )
+Description: Performs multiple imputation of missing data using an ensemble
+    super learner built with the tidymodels framework. For each incomplete
+    column, a stacked ensemble of candidate learners is trained on a bootstrap
+    sample of the observed data and used to generate imputations via predictive
+    mean matching (continuous), probability draws (binary), or cumulative
+    probability draws (categorical). Supports parallelism across imputed
+    datasets via the future framework.
+License: MIT + file LICENSE
+URL: https://github.com/JustinManjourides/misl
+BugReports: https://github.com/JustinManjourides/misl/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.1.0), future.apply (>= 1.11.0), parsnip (>=
+        1.2.0), recipes (>= 1.0.0), rsample (>= 1.2.0), stacks (>=
+        1.0.0), stats, tibble (>= 3.2.0), tidyr (>= 1.3.0), tune (>=
+        1.2.0), utils, workflows (>= 1.1.0)
+Suggests: earth (>= 5.3.0), future (>= 1.33.0), ggforce, ggplot2,
+        knitr, MASS, ranger (>= 0.16.0), rmarkdown, scales, testthat
+        (>= 3.0.0), xgboost (>= 1.7.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-08 00:02:45 UTC; j.manjourides
+Author: Justin Manjourides [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2454-4489>),
+  Thomas Carpenito [aut] (ORCID: <https://orcid.org/0000-0003-3591-0680>)
+Maintainer: Justin Manjourides <j.manjourides@northeastern.edu>
+Repository: CRAN
+Date/Publication: 2026-04-08 05:00:02 UTC

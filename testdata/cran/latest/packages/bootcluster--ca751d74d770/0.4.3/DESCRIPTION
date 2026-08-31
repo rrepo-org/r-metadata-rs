@@ -1,0 +1,35 @@
+Package: bootcluster
+Type: Package
+Title: Bootstrapping Estimates of Clustering Stability
+Version: 0.4.3
+Authors@R: 
+    c(person(given = "Han",
+             family = "Yu",
+             role = "aut"),
+             person(given = "Mingmei",
+             family = "Tian",
+             role = "aut"),
+             person(given = "Tianmou",
+             family = "Liu",
+             role = c("aut","cre"),
+             email = "tianmouliu@outlook.com",
+             comment = c(ORCID = "0000-0003-3584-0483"))
+             )
+Description: Implementation of the bootstrapping approach for the estimation of clustering stability and its application in estimating the number of clusters, as introduced by Yu et al (2016)<doi:10.1142/9789814749411_0007>. Implementation of the non-parametric bootstrap approach to assessing the stability of module detection in a graph, the extension for the selection of a parameter set that defines a graph from data in a way that optimizes stability and the corresponding visualization functions, as introduced by Tian et al (2021) <doi:10.1002/sam.11495>. Implemented out-of-bag stability estimation function and k-select Smin-based k-selection function as introduced by Liu et al (2022) <doi:10.1002/sam.11593>. Implemented ensemble clustering method based-on k-means clustering method, spectral clustering method and hierarchical clustering method.
+Depends: R (>= 3.5.1)
+Imports: cluster, mclust (>= 5.0.0), flexclust, fpc, dplyr, doParallel,
+        foreach, igraph (>= 1.2.0), compiler, stats, parallel, grid,
+        grDevices, ggplot2, gridExtra, intergraph, GGally, network,
+        kernlab, sna, progress
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-12-12 11:21:43 UTC; tianm
+Author: Han Yu [aut],
+  Mingmei Tian [aut],
+  Tianmou Liu [aut, cre] (ORCID: <https://orcid.org/0000-0003-3584-0483>)
+Maintainer: Tianmou Liu <tianmouliu@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-12-12 12:00:02 UTC

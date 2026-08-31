@@ -1,0 +1,46 @@
+Package: geodl
+Type: Package
+Title: Geospatial Semantic Segmentation with Torch and Terra
+Version: 0.3.1
+Date: 2032-11-08
+Authors@R: c(
+  person(family="Maxwell", given="Aaron", email="Aaron.Maxwell@mail.wvu.edu", role=c("aut", "cre", "cph")),
+  person(family="Farhadpour", given="Sarah", email="sf00039@mix.wvu.edu", role=c("aut")),
+  person(family="Das", given="Srinjoy", email="srinjoy.das@mail.wvu.edu", role=c("aut")),
+  person(family="Yang", given="Yalin", email="yalin.yang@mail.wvu.edu", role=c("aut")))
+Maintainer: Aaron Maxwell <Aaron.Maxwell@mail.wvu.edu>
+Description: Provides tools for semantic segmentation of geospatial data using convolutional neural 
+  network-based deep learning. Utility functions allow for creating masks, image chips, data frames listing image 
+  chips in a directory, and DataSets for use within DataLoaders. Additional functions are provided to serve as checks 
+  during the data preparation and training process. A UNet architecture can be defined with 4 blocks in the encoder, a 
+  bottleneck block, and 4 blocks in the decoder. The UNet can accept a variable number of input channels, and the user 
+  can define the number of feature maps produced in each encoder and decoder block and the bottleneck. Users can also 
+  choose to (1) replace all rectified linear unit (ReLU) activation functions with leaky ReLU or swish, (2) implement attention gates along the 
+  skip connections, (3) implement squeeze and excitation modules within the encoder blocks, (4) add residual connections 
+  within all blocks, (5) replace the bottleneck with a modified atrous spatial pyramid pooling (ASPP) module, and/or 
+  (6) implement deep supervision using predictions generated at each stage in the decoder. A unified focal loss framework is implemented after
+  Yeung et al. (2022) <doi:10.1016/j.compmedimag.2021.102026>. We have also implemented 
+  assessment metrics using the 'luz' package including F1-score, recall, and precision. Trained models can be used to predict to spatial 
+  data without the need to generate chips from larger spatial extents. Functions are available for performing accuracy assessment. The package 
+  relies on 'torch' for implementing deep learning, which does not require the installation of a 'Python' environment. Raster geospatial 
+  data are handled with 'terra'. Models can be trained using a Compute Unified Device Architecture (CUDA)-enabled graphics processing unit (GPU); 
+  however, multi-GPU training is not supported by 'torch' in 'R'. 
+Depends: R (>= 4.2)
+Imports: torch, luz, torchvision, dplyr, terra, MultiscaleDTM, psych,
+        coro, R6, readr, rlang, sf
+License: GPL (>= 3)
+URL: https://github.com/maxwell-geospatial/geodl,
+        https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0315127,
+        https://wvview.org/gslr/index.html
+BugReports: https://github.com/maxwell-geospatial/geodl/issues
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown
+Packaged: 2025-12-02 15:32:41 UTC; vidcg
+Author: Aaron Maxwell [aut, cre, cph],
+  Sarah Farhadpour [aut],
+  Srinjoy Das [aut],
+  Yalin Yang [aut]
+Repository: CRAN
+Date/Publication: 2025-12-02 16:00:02 UTC

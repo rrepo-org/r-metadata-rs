@@ -1,0 +1,39 @@
+Package: skytrackr
+Type: Package
+Title: A Sky Illuminance Location Tracker
+Version: 2.0
+Authors@R: c(person(
+               family = "Hufkens",
+               given = "Koen",
+               email = "koen.hufkens@gmail.com",
+               role = c("aut", "cre"),
+               comment = c(ORCID = "0000-0002-5070-8109")),
+             person(given = "BlueGreen Labs",
+              role = c("cph", "fnd"))
+               )
+Maintainer: Koen Hufkens <koen.hufkens@gmail.com>
+Description: Calculate geolocations by light using template matching. 
+ The routine uses a calibration free optimization of a sky illuminance model to 
+ determine locations robustly using a template matching approach,
+ as described by Ekstrom (2004) <https://nipr.repo.nii.ac.jp/records/2496>,
+ and behaviourly informed constraints (step-selection).
+URL: https://github.com/bluegreen-labs/skytrackr
+BugReports: https://github.com/bluegreen-labs/skytrackr/issues
+Depends: R (>= 4.2)
+License: AGPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+RoxygenNote: 7.3.2
+Imports: skylight, circular, BayesianTools, cli, utils, zoo, stats,
+        rlang, sf, terra, sfdep, tidyterra, geosphere, tidyr, dplyr,
+        ggplot2, plotly, patchwork, mapview
+Suggests: knitr, rmarkdown, bookdown, covr, testthat, multidplyr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-02 10:11:06 UTC; khufkens
+Author: Koen Hufkens [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5070-8109>),
+  BlueGreen Labs [cph, fnd]
+Repository: CRAN
+Date/Publication: 2025-12-02 10:30:02 UTC

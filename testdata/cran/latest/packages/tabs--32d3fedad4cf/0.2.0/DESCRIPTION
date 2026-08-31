@@ -1,0 +1,53 @@
+Package: tabs
+Title: Temporal Altitudinal Biogeographic Shifts
+Version: 0.2.0
+Authors@R: c(
+     person(given = "Johannes",
+           family = "De Groeve",
+           role = c("aut", "cre"),
+           email = "j.degroeve@uva.nl",
+           comment = c(ORCID = "0000-0002-1274-3237")),
+     person(given = "Sietze", 
+            family = "Norder", 
+            role = "aut",
+            email = "s.j.norder@uu.nl",
+            comment = c(ORCID = "0000-0003-4692-4543")),
+     person(given = "Eline Sterre", 
+            family = "Rentier", 
+            role = "aut",
+            email = "Eline.Rentier@uib.no",
+            comment = c(ORCID = "0000-0001-6234-1300")),
+     person(given = "Suzette", 
+            family = "Flantua", 
+            role = "ctb",
+            email = "Suzette.Flantua@uib.no",
+            comment = c(ORCID = "0000-0001-6526-3037")),            
+      person(given = "Kenneth", 
+            family = "Rijsdijk", 
+            role = "ctb",
+            email = "K.F.Rijsdijk@uva.nl",
+            comment = c(ORCID = "0000-0002-0943-2577")))
+Description: A standardized workflow to reconstruct spatial configurations of altitude-bounded biogeographic systems over time. For example, 'tabs' can model how island archipelagos expand or contract with changing sea levels or how alpine biomes shift in response to tree line movements. It provides functionality to account for various geophysical processes such as crustal deformation and other tectonic changes, allowing for a more accurate representation of biogeographic system dynamics. For more information see De Groeve et al. (2025) <doi:10.21425/fob.18.151677>.
+License: GPL (>= 3)
+URL: https://uva_ibed_piac.gitlab.io/tabs/
+BugReports: https://gitlab.com/uva_ibed_piac/tabs/-/issues
+Depends: R (>= 2.10)
+Imports: ape, dplyr, htmltools, htmlwidgets, httr, jsonlite, geojsonio,
+        leaflet, leaftime, mapedit, qs2, rlang, sf, stats, stringi,
+        terra, gpkg, RSQLite
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-02-25 11:25:45 UTC; jedgroev
+Author: Johannes De Groeve [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1274-3237>),
+  Sietze Norder [aut] (ORCID: <https://orcid.org/0000-0003-4692-4543>),
+  Eline Sterre Rentier [aut] (ORCID:
+    <https://orcid.org/0000-0001-6234-1300>),
+  Suzette Flantua [ctb] (ORCID: <https://orcid.org/0000-0001-6526-3037>),
+  Kenneth Rijsdijk [ctb] (ORCID: <https://orcid.org/0000-0002-0943-2577>)
+Maintainer: Johannes De Groeve <j.degroeve@uva.nl>
+Repository: CRAN
+Date/Publication: 2026-02-25 21:20:02 UTC

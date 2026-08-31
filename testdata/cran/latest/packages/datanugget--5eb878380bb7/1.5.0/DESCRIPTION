@@ -1,0 +1,49 @@
+Package: datanugget
+Type: Package
+Title: Create, Optimize, and Refine Data Nuggets
+Version: 1.5.0
+Date: 2026-08-12
+Authors@R: c(
+    person("Rituparna", "Dey", email = "rituparnadey525@gmail.com", role = c("aut", "cre")),
+    person("Yajie", "Duan", email = "yajieritaduan@gmail.com", role = "aut"),
+    person("Traymon", "Beavers", email = "tray.beavers@gmail.com", role = "aut"),
+    person("Javier", "Cabrera", email = "xavier.cabrera@gmail.com", role = "aut"),
+    person("Ge", "Cheng", email = "ge.cheng@outlook.com", role = "aut"),
+    person("Kunting", "Qi", email = "qik@miamioh.edu", role = "aut") ,
+    person("Mariusz", "Lubomirski", email = "mariusz_lubomirski@yahoo.com", role = "aut")
+    )
+Author: Rituparna Dey [aut, cre],
+  Yajie Duan [aut],
+  Traymon Beavers [aut],
+  Javier Cabrera [aut],
+  Ge Cheng [aut],
+  Kunting Qi [aut],
+  Mariusz Lubomirski [aut]
+Maintainer: Rituparna Dey <rituparnadey525@gmail.com>
+Description: Creating, optimizing and refining data nuggets. 
+    Data nuggets reduce a large dataset into a small collection of nuggets of 
+    data, each containing a center (location), weight (importance), and scale 
+    (variability) parameter. Data nugget centers are selected based on a 
+    space-filling maximum-entropy scheme. Data nugget weights are created by 
+    counting the number observations closest to a given data nugget center. 
+    We then say the data nugget 'contains' these observations and the data 
+    nugget center is recalculated as the mean of these observations. Data nugget 
+    scales are created by calculating the trace of the covariance matrix of the 
+    observations contained within a data nugget divided by the dimension of the 
+    dataset. The optimal number of data nuggets is determined data-driven based 
+    on the relative second-order differences of propensity score indices. Data 
+    nuggets are refined by 'splitting' data nuggets which have high scales or 
+    elongated shapes (defined as the ratio of the two largest eigenvalues of the 
+    covariance matrix of the observations contained within the data nugget). 
+Depends: R (>= 4.0), doSNOW (>= 1.0.16), doParallel(>= 1.0.17), foreach
+        (>= 1.5.1), parallel (>= 4.0.5), Rfast(>= 2.0.7), mgcv(>=
+        1.9-4), ggplot2(>= 4.0.2)
+License: GPL-2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-08-12 14:58:43 UTC; rituparnadey
+Repository: CRAN
+Date/Publication: 2026-08-21 06:50:08 UTC
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0

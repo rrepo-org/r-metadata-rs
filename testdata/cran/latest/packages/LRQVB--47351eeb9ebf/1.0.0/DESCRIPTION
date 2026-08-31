@@ -1,0 +1,34 @@
+Package: LRQVB
+Title: Low Rank Correction Quantile Variational Bayesian Algorithm for
+        Multi-Source Heterogeneous Models
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Lu",
+             family = "Luo", 
+             email = "luolu@stu.ynu.edu.cn",
+             role = c("aut", "cre")),
+      person(given = "Huiqiong",
+             family = "Li",
+             role = "aut"))
+Description: A Low Rank Correction Variational Bayesian algorithm for high-dimensional multi-source 
+    heterogeneous quantile linear models. More details have been written up in a paper 
+    submitted to the journal Statistics in Medicine, and the details of variational
+    Bayesian methods can be found in Ray and Szabo (2021) <doi:10.1080/01621459.2020.1847121>.
+    It simultaneously performs parameter estimation and variable selection. The 
+    algorithm supports two model settings: (1) local models, where variable selection
+    is only applied to homogeneous coefficients, and (2) global models, where variable
+    selection is also performed on heterogeneous coefficients. Two forms of parameter 
+    estimation are output: one is the standard variational Bayesian estimation, 
+    and the other is the variational Bayesian estimation corrected with low-rank adjustment.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: Rcpp (>= 1.0.0), glmnet, lava, stats, MASS
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+Packaged: 2025-10-21 01:52:59 UTC; 11877
+Author: Lu Luo [aut, cre],
+  Huiqiong Li [aut]
+Maintainer: Lu Luo <luolu@stu.ynu.edu.cn>
+Repository: CRAN
+Date/Publication: 2025-10-25 12:00:07 UTC

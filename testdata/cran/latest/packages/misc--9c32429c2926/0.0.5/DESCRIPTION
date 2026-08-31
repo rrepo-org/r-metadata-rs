@@ -1,0 +1,35 @@
+Package: misc
+Title: Miscellaneous Functions for Data and Geospatial Work
+Version: 0.0.5
+Authors@R: 
+    person(given = "Karlo",
+           family = "Guidoni Martins",
+           role = c("aut", "cre"),
+           email = "kguidonimartins@gmail.com",
+           comment = c(ORCID = "0000-0002-8458-8467"))
+Description: Helpers for common data analysis tasks including missing-value
+    summaries and filters, simple reporting and plotting utilities, 'Excel'
+    import and export workflows, and reading geospatial formats (for example
+    shapefiles in zip archives, file geodatabases, KMZ, and KML) via 'sf' and
+    related packages. Also includes small project utilities such as creating
+    directories, gitignore scaffolding, combined package loading, and optional
+    'lintr' setup.
+Depends: R (>= 4.1.0)
+Imports: data.table, dplyr, fs, ggplot2, glue, here, magrittr, purrr,
+        tidyr, tools, usethis, readr, mapview, sf, rlang, jsonlite,
+        writexl, zip
+Suggests: clipr, conflicted, covr, janitor, lexicon, magick, naniar,
+        readxl, rnaturalearth, skimr, stringr, testthat, textclean,
+        tidyselect, lintr
+License: MIT + file LICENSE
+URL: https://github.com/kguidonimartins/misc
+BugReports: https://github.com/kguidonimartins/misc/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-03-31 19:47:34 UTC; karloguidoni
+Author: Karlo Guidoni Martins [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8458-8467>)
+Maintainer: Karlo Guidoni Martins <kguidonimartins@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-04 09:10:07 UTC

@@ -1,0 +1,37 @@
+Package: strollur
+Type: Package
+Title: Store and Transfer Amplicon Sequence Data
+Version: 0.1.3
+Date: 2026-06-29
+Authors@R: c(
+    person("Sarah", "Westcott", role = c("aut"),
+        email = "swestcot@umich.edu",
+        comment = c(ORCID = "0009-0001-1529-8247")),
+    person("Gregory", "Johnson", , "grejoh@umich.edu", role = c("aut"),
+        comment = c(ORCID = "0009-0008-3890-0297")),
+    person("Pat", "Schloss", , "pschloss@umich.edu",
+        role = c("cph", "cre"), comment = c(ORCID = "0000-0002-6935-4275")))
+Maintainer: Pat Schloss <pschloss@umich.edu>
+Description: Stores the data associated with your amplicon sequence analysis. This includes nucleotide sequences, abundance, sample and treatment assignments, taxonomic classifications, asv, otu and phylotype clusters, metadata, trees and various reports. It is designed to facilitate data analysis across multiple R packages with utility functions to read / write from 'mothur', 'qiime2', 'dada2', and 'phyloseq'.
+URL: https://github.com/mothur/strollur, https://mothur.org/strollur/
+BugReports: https://github.com/mothur/strollur/issues
+License: GPL (>= 3)
+biocViews:
+Imports: Rcpp, cli, methods, microseq, R.utils, R6, waldo, readr, ape,
+        dplyr, tidyr, yaml, rbiom (>= 3.1.0), stats, utils
+LinkingTo: Rcpp, cli, Rcereal
+Depends: R (>= 4.5.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), xml2, phyloseq,
+        ggplot2, phylotypr, rhdf5, h5lite, pak
+Config/testthat/edition: 3
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-30 13:09:35 UTC; swestcot
+Author: Sarah Westcott [aut] (ORCID: <https://orcid.org/0009-0001-1529-8247>),
+  Gregory Johnson [aut] (ORCID: <https://orcid.org/0009-0008-3890-0297>),
+  Pat Schloss [cph, cre] (ORCID: <https://orcid.org/0000-0002-6935-4275>)
+Repository: CRAN
+Date/Publication: 2026-07-02 04:00:03 UTC

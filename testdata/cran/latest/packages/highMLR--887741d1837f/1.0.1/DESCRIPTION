@@ -1,0 +1,48 @@
+Package: highMLR
+Title: Machine Learning Feature Selection for High Dimensional Survival
+        Data
+Version: 1.0.1
+Date: 2026-05-23
+Authors@R: 
+    person("Atanu", "Bhattacharjee", email = "atanustat@gmail.com",
+           role = c("aut", "cre"))
+Description: A unified, flexible framework for high dimensional feature
+    selection in the presence of a survival outcome. Provides multiple
+    machine learning approaches (Cox elastic net, random survival forest,
+    accelerated oblique random survival forest, gradient-boosted Cox,
+    stability selection, classical univariate Cox screening, pseudo-
+    observation bridging to arbitrary regression learners, and Fine-Gray
+    competing risks selection) under a single interface. Adds causal
+    survival forest estimation of heterogeneous treatment effects on
+    survival (experimental), conformal survival prediction with finite-
+    sample coverage guarantees, and time-dependent 'SHAP' explanations via
+    'SurvSHAP(t)'. Methodology is based on regularised Cox regression
+    (2011) <doi:10.18637/jss.v039.i05>, random survival forests (2008)
+    <doi:10.1214/08-AOAS169>, oblique random survival forests (2024)
+    <doi:10.1080/10618600.2023.2231048>, stability selection (2010)
+    <doi:10.1111/j.1467-9868.2010.00740.x>, causal survival forests (2023)
+    <doi:10.1111/rssb.12538>, time-dependent survival explanations (2023)
+    <doi:10.1016/j.knosys.2022.110234>, conformal survival prediction (2023)
+    <doi:10.1093/biomet/asad043>, the Fine-Gray model for competing
+    risks (1999) <doi:10.1080/01621459.1999.10474144>,
+    and pseudo-observation regression (2010)
+    <doi:10.1177/0962280209105020>.
+Depends: R (>= 4.1.0)
+Imports: survival, glmnet, ranger, aorsf, xgboost, stabs, survex, grf,
+        prodlim, cmprsk, future, future.apply, tibble, ggplot2, rlang,
+        stats, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), mice, riskRegression
+License: GPL-3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Author: Atanu Bhattacharjee [aut, cre]
+Maintainer: Atanu Bhattacharjee <atanustat@gmail.com>
+Packaged: 2026-05-23 12:14:26 UTC; atanu
+Repository: CRAN
+Date/Publication: 2026-05-23 12:30:02 UTC

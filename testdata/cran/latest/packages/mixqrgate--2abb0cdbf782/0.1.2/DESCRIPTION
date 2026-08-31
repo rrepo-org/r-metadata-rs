@@ -1,0 +1,33 @@
+Package: mixqrgate
+Type: Package
+Title: Location-Varying Gating for Mixtures of Quantile Regressions
+Version: 0.1.2
+Authors@R: person("Kailas", "Venkitasubramanian", email = "kailasv@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: Extends finite mixtures of quantile regressions (the 'mixqr' package)
+    with a concomitant-covariate, quantile-indexed mixing gate. The mixing
+    probabilities follow a multinomial-logit model whose coefficients may depend
+    on a separate set of gating covariates and on the quantile level, so that
+    latent-class membership can change across the conditional distribution. This
+    turns the location-varying mixing idea of Furno (2025) into a likelihood and
+    EM object with proper standard errors on the gate. Estimation reuses the
+    'mixqr' component and error-density machinery; the gate is fit by a weighted
+    multinomial-logistic M-step and reduces exactly to a constant gate when the
+    gating model is an intercept only.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: mixqr (>= 0.1.1), stats, graphics
+Suggests: nnet, ggplot2, testthat (>= 3.0.0), knitr, rmarkdown
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+VignetteBuilder: knitr
+URL: https://github.com/kvenkita/mixqrgate
+BugReports: https://github.com/kvenkita/mixqrgate/issues
+NeedsCompilation: no
+Packaged: 2026-07-07 16:00:26 UTC; kyle
+Author: Kailas Venkitasubramanian [aut, cre, cph]
+Maintainer: Kailas Venkitasubramanian <kailasv@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-16 13:20:07 UTC

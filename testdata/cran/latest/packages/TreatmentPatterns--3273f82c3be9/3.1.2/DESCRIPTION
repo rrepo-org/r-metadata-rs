@@ -1,0 +1,44 @@
+Package: TreatmentPatterns
+Type: Package
+Title: Analyzes Real-World Treatment Patterns of a Study Population of
+        Interest
+Version: 3.1.2
+Authors@R: 
+    c(person("Aniek", "Markus", , role = c("aut"), comment = c(ORCID = "0000-0001-5779-4794")),
+      person("Maarten", "van Kessel", email = "m.l.vankessel@erasmusmc.nl", role = c("cre"), comment = c(ORCID = "0009-0006-8832-6030")))
+Maintainer: Maarten van Kessel <m.l.vankessel@erasmusmc.nl>
+Description: 
+    Computes treatment patterns within a given cohort using the Observational
+    Medical Outcomes Partnership (OMOP) common data model (CDM). As described
+    in Markus, Verhamme, Kors, and Rijnbeek (2022) <doi:10.1016/j.cmpb.2022.107081>.
+URL: https://github.com/darwin-eu/TreatmentPatterns,
+        https://darwin-eu-dev.github.io/TreatmentPatterns/
+BugReports: https://github.com/darwin-eu/TreatmentPatterns/issues
+Language: en-US
+Depends: R (>= 4.2)
+Imports: utils, stats, R6, stringi, jsonlite, checkmate, dplyr, tidyr,
+        dbplyr, Andromeda, CDMConnector (>= 2.2.0)
+Suggests: knitr, rmarkdown, tibble, testthat (>= 3.0.0), usethis,
+        Eunomia, DatabaseConnector (>= 7.0.0), SqlRender,
+        CohortGenerator, ResultModelManager, webshot2, CirceR, duckdb,
+        DBI, withr, plotly, sunburstR, networkD3, ggplot2, htmlwidgets,
+        visOmopResults, PaRe
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Collate: 'CDMInterface.R' 'TreatmentPatterns-package.R'
+        'TreatmentPatternsResults.R' 'attrition.R' 'computePathways.R'
+        'constructPathways.R' 'createSankeyDiagram.R'
+        'createSunburstPlot.R' 'executeTreatmentPatterns.R' 'export.R'
+        'exportPatientLevel.R' 'getResultsDataModelSpecification.R'
+        'ggSunburst.R' 'plotEventDuration.R' 'utils.R'
+NeedsCompilation: no
+Packaged: 2026-02-10 16:04:52 UTC; mvankessel
+Author: Aniek Markus [aut] (ORCID: <https://orcid.org/0000-0001-5779-4794>),
+  Maarten van Kessel [cre] (ORCID:
+    <https://orcid.org/0009-0006-8832-6030>)
+Repository: CRAN
+Date/Publication: 2026-02-10 16:30:02 UTC

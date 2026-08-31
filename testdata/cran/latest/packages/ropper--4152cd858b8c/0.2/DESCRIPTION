@@ -1,0 +1,26 @@
+Package: ropper
+Type: Package
+Title: Ranking-Optimized Population Posterior Expected Percentiles
+Version: 0.2
+Date: 2026-07-11
+Authors@R: c(person("Nicholas", "Henderson", email = "nchender@umich.edu", 
+             role = c("cre", "aut")), person("Nicholas", "Hartman", 
+             email = "nhar@umich.edu", role = "aut"))
+Maintainer: Nicholas Henderson <nchender@umich.edu>
+Imports: stats, utils
+Description: Implements the empirical Bayes ranking method described in 
+    Henderson and Hartman (2025) <doi:10.48550/arXiv.2511.16530>. The data 
+    structure of interest is a collection of cluster-specific effect size 
+    estimates, associated standard errors for these estimates, and cluster-level 
+    covariates. Estimates of the rankings of the cluster-specific effect 
+    sizes after adjusting for cluster-level covariates are generated.
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-11 05:25:28 UTC; nchender
+Author: Nicholas Henderson [cre, aut],
+  Nicholas Hartman [aut]
+Repository: CRAN
+Date/Publication: 2026-07-21 10:30:09 UTC

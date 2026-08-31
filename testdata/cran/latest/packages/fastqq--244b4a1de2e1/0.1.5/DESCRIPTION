@@ -1,0 +1,28 @@
+Package: fastqq
+Type: Package
+Title: Faster Generation of Quantile Quantile Plots with Large Samples
+Version: 0.1.5
+Authors@R: c(person("Gudmundur", "Einarsson", email = "gudmundur.einarsson.phd@gmail.com",
+  role = c("aut", "cre")),
+  person("Hafsteinn", "Einarsson", email = "hafsteinne@hi.is",
+  role = c("aut")))
+Maintainer: Gudmundur Einarsson <gudmundur.einarsson.phd@gmail.com>
+Description: New and faster implementations for quantile quantile plots. 
+    The package also includes a function to prune data for quantile quantile 
+    plots. This can drastically reduce the running time for large samples, 
+    for 100 million samples, you can expect a factor 80X speedup.
+URL: https://github.com/gumeo/fastqq
+BugReports: https://github.com/gumeo/fastqq/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: Rcpp
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-03-17 13:24:52 UTC; gudmundureinarsson
+Author: Gudmundur Einarsson [aut, cre],
+  Hafsteinn Einarsson [aut]
+Repository: CRAN
+Date/Publication: 2026-03-17 14:10:02 UTC

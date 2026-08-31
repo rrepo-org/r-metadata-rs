@@ -1,0 +1,84 @@
+Package: vcdExtra
+Type: Package
+Title: 'vcd' Extensions and Additions
+Version: 0.9.8
+Date: 2026-08-21
+Language: en-US
+Authors@R: c(
+            person(given = "Michael", family = "Friendly", 
+                   role=c("aut", "cre"), 
+                   email="friendly@yorku.ca",
+                   comment = c(ORCID = "0000-0002-3237-0941")),
+            person(given = "David", family = "Meyer", 
+                   role="ctb",
+                   email = "david.meyer@wu.ac.at"),
+            person(given = "Achim", family = "Zeileis", 
+                   role="ctb",
+                   email = "Achim.Zeileis@uibk.ac.at",
+                   comment = c(ORCID = "0000-0003-0918-3766")),
+            person(given = "Duncan", 
+                   family = "Murdoch",
+                   email = "murdoch.duncan@gmail.com",
+                   role="ctb"),
+            person(given = "Heather", family = "Turner", 
+                   role="ctb",
+                   email = "h.turner.1@warwick.ac.uk",
+                   comment = c(ORCID = "0000-0002-1256-3375")),
+            person(given = "David", family = "Firth", 
+                   role="ctb",
+                   email = "d.firth@warwick.ac.uk"),
+            person(given = "Daniel", family = "Sabanes Bove",
+                   role="ctb",
+                   email = "daniel@rconis.com",
+                   comment = c(ORCID = "0000-0002-0176-9239")),
+            person(given = "Matt", family = "Kumar", role="ctb"),
+            person(given = "Shuguang", family = "Sun", role="ctb"),
+            person(given = "Gavin", family = "Klorfine", 
+                   role = "aut",
+                   email = "gklorfin@yorku.ca",
+                   comment = c(ORCID = "0009-0003-0395-4512"))
+            )
+Maintainer: Michael Friendly <friendly@yorku.ca>
+Depends: R (>= 4.1.0), vcd, gnm (>= 1.0-3)
+Suggests: gmodels, Fahrmeir, effects, VGAM, plyr, lmtest, nnet,
+        Sleuth2, car, lattice, stats4, AER, coin, Hmisc, rmarkdown,
+        seriation, testthat (>= 3.0.0), tibble, glue, here, purrr,
+        readxl, stringr, tidyr (>= 1.3.0), factoextra, rgl
+Imports: MASS, grDevices, grid, stats, utils, dplyr, ca, igraph,
+        colorspace, gt, scales, methods, knitr, htmlwidgets, webshot2,
+        forcats, rlang, ggplot2 (>= 3.4.0)
+Description: Provides additional data sets, methods and documentation to complement the 'vcd' package for Visualizing Categorical Data
+    and the 'gnm' package for Generalized Nonlinear Models.
+	In particular, 'vcdExtra' extends mosaic, assoc and sieve plots from 'vcd' to handle 'glm()' and 'gnm()' models and
+	adds a 3D version in 'mosaic3d'.  Additionally, methods are provided for comparing and visualizing lists of
+	'glm' and 'loglm' objects. This package is now a support package for the book Friendly, M. and Meyer, D.
+  (2016, ISBN:978-1-4987-2583-5) 'Discrete Data Analysis with R: Visualization and Modeling Techniques for
+  Categorical and Count Data'. Recent work adds colorized tables of frequencies to highlight patterns of association,
+  association graphs to visualize conditional independence and a variety of new or improved statistical tests for
+  categorical data analysis.
+License: GPL (>= 2)
+URL: https://friendly.github.io/vcdExtra/,
+        https://github.com/friendly/vcdExtra
+BugReports: https://github.com/friendly/vcdExtra/issues
+VignetteBuilder: knitr, rmarkdown
+LazyLoad: yes
+LazyData: yes
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-21 17:54:41 UTC; friendly
+Author: Michael Friendly [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3237-0941>),
+  David Meyer [ctb],
+  Achim Zeileis [ctb] (ORCID: <https://orcid.org/0000-0003-0918-3766>),
+  Duncan Murdoch [ctb],
+  Heather Turner [ctb] (ORCID: <https://orcid.org/0000-0002-1256-3375>),
+  David Firth [ctb],
+  Daniel Sabanes Bove [ctb] (ORCID:
+    <https://orcid.org/0000-0002-0176-9239>),
+  Matt Kumar [ctb],
+  Shuguang Sun [ctb],
+  Gavin Klorfine [aut] (ORCID: <https://orcid.org/0009-0003-0395-4512>)
+Repository: CRAN
+Date/Publication: 2026-08-21 22:00:03 UTC

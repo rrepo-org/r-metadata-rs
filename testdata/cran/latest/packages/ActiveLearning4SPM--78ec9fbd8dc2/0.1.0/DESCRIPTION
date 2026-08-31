@@ -1,0 +1,33 @@
+Package: ActiveLearning4SPM
+Type: Package
+Title: Active Learning for Process Monitoring
+Version: 0.1.0
+Authors@R: c(
+    person("Christian", "Capezza", role = c("aut", "cre"),
+           email = "christian.capezza@unina.it"),
+    person("Antonio", "Lepore", role = "aut"),
+    person("Kamran", "Paynabar", role = "aut"))
+Description: Implements the methodology introduced in Capezza, Lepore, and Paynabar (2025) 
+    <doi:10.1080/00401706.2025.2561744> for process monitoring with limited labeling resources. 
+    The package provides functions to (i) simulate data streams with true latent states and 
+    multivariate Gaussian observations as done in the paper, (ii) fit partially hidden Markov models (pHMMs) 
+    using a constrained Baum-Welch algorithm with partial labels, and (iii) perform stream-based 
+    active learning that balances exploration and exploitation to decide whether to request labels 
+    in real time. The methodology is particularly suited for statistical process monitoring 
+    in industrial applications where labeling is costly.
+Depends: R (>= 4.2)
+Imports: Rcpp, Rfast, mvnfast, rrcov, caTools, abind, pROC, stats
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: covr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-09-30 12:31:47 UTC; christian.capezza
+Author: Christian Capezza [aut, cre],
+  Antonio Lepore [aut],
+  Kamran Paynabar [aut]
+Maintainer: Christian Capezza <christian.capezza@unina.it>
+Repository: CRAN
+Date/Publication: 2025-10-07 18:30:21 UTC

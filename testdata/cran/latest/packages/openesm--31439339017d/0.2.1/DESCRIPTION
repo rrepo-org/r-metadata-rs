@@ -1,0 +1,33 @@
+Package: openesm
+Title: Access the Open Experience Sampling Method Database
+Version: 0.2.1
+Authors@R: 
+    c(person("Björn S.", "Siepe", 
+    email = "bjoernsiepe@gmail.com", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0002-9558-4648")),
+    person("Matthias", "Kloft",
+    email = "kloft.dev@gmail.com",
+    role = c("aut"),
+    comment = c(ORCID = "0000-0003-1845-6957")))
+Description: Provides programmatic access to the Open Experience Sampling Method ('openESM') database (<https://openesmdata.org>), 
+    a collection of harmonized experience sampling datasets. The package enables researchers to discover, download, 
+    and work with the datasets while ensuring proper citation and license compliance.  
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: cli (>= 3.6.0), fs, httr2, jsonlite, readr, purrr, dplyr,
+        tibble
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/openesm-project/openesm-r
+BugReports: https://github.com/openesm-project/openesm-r/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-02 12:14:05 UTC; Bjoern
+Author: Björn S. Siepe [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-9558-4648>),
+  Matthias Kloft [aut] (ORCID: <https://orcid.org/0000-0003-1845-6957>)
+Maintainer: Björn S. Siepe <bjoernsiepe@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-02 12:40:02 UTC

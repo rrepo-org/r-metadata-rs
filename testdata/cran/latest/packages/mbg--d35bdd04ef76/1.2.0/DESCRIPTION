@@ -1,0 +1,42 @@
+Package: mbg
+Title: Model-Based Geostatistics
+Version: 1.2.0
+Authors@R: c(
+    person("Nathaniel", "Henry", email = "nat@henryspatialanalysis.com",
+        role = c("aut", "cre"), comment = c(ORCID = "0000-0001-8150-4988")),
+    person("Benjamin", "Mayala", role = c("aut")),
+    person("Roy", "Burstein", role = c("ctb"), comment = c(ORCID = "0000-0001-8991-4762")),
+    person("Nafis", "Sadat", role = c("ctb")),
+    person("Michael", "Richards", role = c("ctb")),
+    person("Michael", "Collison", role = c("ctb")),
+    person("Michael", "Cork", role = c("ctb")))
+Description: 
+    Modern model-based geostatistics for point-referenced data. This package provides a
+    simple interface to run spatial machine learning models and geostatistical models
+    that estimate a continuous (raster) surface from point-referenced outcomes and,
+    optionally, a set of raster covariates. The package also includes functions to
+    summarize raster outcomes by (polygon) region while preserving uncertainty.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: assertthat, caret, data.table, glue, Matrix, matrixStats,
+        purrr, R6, sf, terra (>= 1.9.1), tictoc
+Suggests: INLA, knitr, rmarkdown, ggplot2, scales
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+URL: https://henryspatialanalysis.github.io/mbg/
+BugReports: https://github.com/henryspatialanalysis/mbg/issues
+NeedsCompilation: no
+Packaged: 2026-03-31 21:45:50 UTC; nathenry
+Author: Nathaniel Henry [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8150-4988>),
+  Benjamin Mayala [aut],
+  Roy Burstein [ctb] (ORCID: <https://orcid.org/0000-0001-8991-4762>),
+  Nafis Sadat [ctb],
+  Michael Richards [ctb],
+  Michael Collison [ctb],
+  Michael Cork [ctb]
+Maintainer: Nathaniel Henry <nat@henryspatialanalysis.com>
+Repository: CRAN
+Date/Publication: 2026-03-31 22:10:02 UTC

@@ -1,0 +1,40 @@
+Package: rtmpinvi
+Type: Package
+Title: Interactive Tabular Matrix Problems via Pseudoinverse Estimation
+Version: 2.0.0
+Authors@R: 
+    c(
+        person("Ilya", "Bolotov", email = "ilya.bolotov@vse.cz",
+               role = c("aut", "cre"),
+               comment = c(ORCID = "0000-0003-1148-7144"))
+    )
+Description: Provides an interactive wrapper for the 'tmpinv()' function from
+    the 'rtmpinv' package with options extending its functionality to pre-
+    and post-estimation processing and streamlined incorporation of prior cell
+    information. The Tabular Matrix Problems via Pseudoinverse Estimation
+    (TMPinv) is a two-stage estimation method that reformulates structured
+    table-based systems - such as allocation problems, transaction matrices,
+    and input-output tables - as structured least-squares problems. Based
+    on the Convex Least Squares Programming (CLSP) framework, TMPinv solves
+    systems with row and column constraints, block structure, and optionally
+    reduced dimensionality by (1) constructing a canonical constraint form
+    and applying a pseudoinverse-based projection, followed by (2) a
+    convex-programming refinement stage to improve fit, coherence, and
+    regularization (e.g., via Lasso, Ridge, or Elastic Net).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.3)
+Imports: rtmpinv (>= 2.0.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/econcz/rtmpinvi
+BugReports: https://github.com/econcz/rtmpinvi/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-11 13:55:07 UTC; ilyabolotov
+Author: Ilya Bolotov [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1148-7144>)
+Maintainer: Ilya Bolotov <ilya.bolotov@vse.cz>
+Repository: CRAN
+Date/Publication: 2026-06-11 14:30:02 UTC

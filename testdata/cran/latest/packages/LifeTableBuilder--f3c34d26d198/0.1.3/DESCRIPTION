@@ -1,0 +1,28 @@
+Package: LifeTableBuilder
+Type: Package
+Title: Interactive 'shiny' Application for Constructing Life Tables
+Version: 0.1.3
+Authors@R: c(
+  person("Víctor Manuel", "Almaraz Valle", role = c("aut","cre"),
+         email = "almarazkrae@gmail.com"),
+  person("J. Concepción", "Rodríguez Maciel", role = "aut"),
+  person("Gustavo", "Ramírez Valverde", role = "aut"),
+  person("Carlos Eduardo", "Aguilar Castillo", role = "aut"),
+  person("Alejandro", "Pérez Panduro", role = "aut"))
+Description: Provides an interactive 'shiny' application to construct stage-structured life tables from tabular input data. The application includes input validation, demographic calculations, visualization tools, and export of tables and figures to support reproducible workflows in ecological and entomological studies. Methods for life table construction follow classical demographic approaches described in Martinez (2015) <doi:10.13140/RG.2.2.21333.65760>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: shiny, DT, ggplot2, readxl, gridExtra
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-01 07:09:11 UTC; rosy_
+Author: Víctor Manuel Almaraz Valle [aut, cre],
+  J. Concepción Rodríguez Maciel [aut],
+  Gustavo Ramírez Valverde [aut],
+  Carlos Eduardo Aguilar Castillo [aut],
+  Alejandro Pérez Panduro [aut]
+Maintainer: Víctor Manuel Almaraz Valle <almarazkrae@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-02 04:20:02 UTC

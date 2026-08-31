@@ -1,0 +1,56 @@
+Package: carcass
+Type: Package
+Title: Estimation of the Number of Fatalities from Carcass Searches
+Version: 1.9
+Date: 2025-08-22
+Authors@R: c(person(given = "Fraenzi",
+                        family = "Korner-Nievergelt",
+                        role = c("aut", "cre"),
+                        email = "fraenzi.korner@oikostat.ch"),
+                 person(given = "Ivo",
+                        family = "Niermann",
+                        role = "aut"),
+                 person(given = "Oliver",
+                        family = "Behr",
+                        role = "aut"),
+                 person(given = c("Matthew", "A."),
+                        family = "Etterson",
+                        role = "aut"),
+                 person(given = "Robert",
+                        family = "Brinkmann",
+                        role = "aut"),
+                 person(given = "Pius",
+                        family = "Korner",
+                        role = "aut"),
+                 person(given = "Barbara",
+                        family = "Hellriegel",
+                        role = "aut"),
+                 person(given = "Tobias",
+                        family = "Roth",
+                        role = "aut"),
+                 person(given = c("Manuela", "M.", "P."),
+                        family = "Huso",
+                        role = "aut"),
+                 person(given = "Dan",
+                        family = "Dalthorp",
+                        role = "aut"))
+Depends: R (>= 3.1.0), stats, lme4, survival
+Imports: expm, arm, MASS
+Description: The number of bird or bat fatalities from collisions with buildings, towers or wind energy turbines can be estimated based on carcass searches and experimentally assessed carcass persistence times and searcher efficiency. Functions for estimating the probability that a bird or bat that died is found by a searcher are provided. Further functions calculate the posterior distribution of the number of fatalities based on the number of carcasses found and the estimated detection probability.
+License: GPL-2
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2025-08-22 05:50:17 UTC; fk
+Author: Fraenzi Korner-Nievergelt [aut, cre],
+  Ivo Niermann [aut],
+  Oliver Behr [aut],
+  Matthew A. Etterson [aut],
+  Robert Brinkmann [aut],
+  Pius Korner [aut],
+  Barbara Hellriegel [aut],
+  Tobias Roth [aut],
+  Manuela M. P. Huso [aut],
+  Dan Dalthorp [aut]
+Maintainer: Fraenzi Korner-Nievergelt <fraenzi.korner@oikostat.ch>
+Repository: CRAN
+Date/Publication: 2025-08-22 08:00:02 UTC

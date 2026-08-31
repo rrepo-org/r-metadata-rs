@@ -1,0 +1,30 @@
+Package: bacenR
+Title: Access Data from Brazilian Central Bank: IFdata, Active
+        Institutions, Balance Sheets and Normative Acts
+Version: 0.4.4
+Authors@R: 
+    person("Ricardo", "Theodoro", , "rtheodoro@usp.br", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6741-5153"))
+Description: Provides functions to query, retrieve, and tidy economic and
+    financial data from Brazilian Central Bank web services for use in R
+    analyses and workflows. Active institutions information, balance sheets and normative acts.
+License: GPL (>= 3)
+URL: https://github.com/rtheodoro/bacenR
+BugReports: https://github.com/rtheodoro/bacenR/issues
+Depends: R (>= 4.1.0)
+Imports: data.table, dplyr, fs, glue, httr, janitor, jsonlite,
+        lifecycle, purrr, readr, readxl, rlang, stringr, tibble, tidyr,
+        tools, utils, xml2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+SystemRequirements: qpdf
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-03 12:31:50 UTC; charizard
+Author: Ricardo Theodoro [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6741-5153>)
+Maintainer: Ricardo Theodoro <rtheodoro@usp.br>
+Repository: CRAN
+Date/Publication: 2026-07-03 12:50:02 UTC

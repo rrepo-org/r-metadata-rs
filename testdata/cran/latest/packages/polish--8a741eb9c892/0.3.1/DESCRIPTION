@@ -1,0 +1,34 @@
+Package: polish
+Title: Polishing Content for 'Word' and 'PowerPoint'
+Version: 0.3.1
+Authors@R: c(
+      person("Romain", "François", email = "romain@tada.science", role = "aut"), 
+      person("Ellis", "Hughes", email = "ellis.h.hughes@gsk.com", role = c("aut", "cre")), 
+      person("Shannon", "Haughton", email = "shannon.l.haughton@gsk.com", role = "aut"),
+      person("GlaxoSmithKline Research & Development Limited", role = c("cph", "fnd"))
+    )
+Description: Set of functions to polish content for Microsoft 'Word' and 'PowerPoint' 
+    into 'OOXML'. Polishing is the conversion of the R object into an 'OOXML'
+    representation of the object that can then be added to 'Word' or 'PowerPoint' 
+    files.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://gsk-biostatistics.github.io/polish/,
+        https://github.com/GSK-Biostatistics/polish/
+BugReports: https://github.com/GSK-Biostatistics/polish/issues/
+Depends: R (>= 4.1.0)
+Imports: cli, commonmark, dplyr, flextable, ggplot2, glue, gt,
+        htmltools, magick, officer (>= 0.6.9), purrr, rlang, rmarkdown,
+        sloop, tibble, webshot2, xml2
+Suggests: testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-30 17:40:34 UTC; ehh82309
+Author: Romain François [aut],
+  Ellis Hughes [aut, cre],
+  Shannon Haughton [aut],
+  GlaxoSmithKline Research & Development Limited [cph, fnd]
+Maintainer: Ellis Hughes <ellis.h.hughes@gsk.com>
+Repository: CRAN
+Date/Publication: 2026-06-03 14:10:12 UTC

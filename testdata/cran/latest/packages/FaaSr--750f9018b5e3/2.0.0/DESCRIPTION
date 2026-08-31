@@ -1,0 +1,54 @@
+Type: Package
+Package: FaaSr
+Title: 'FaaSr' Local Test Development Package
+Version: 2.0.0
+Authors@R: c(person("Figueiredo", "Renato", role = c("aut", "cre", "ths", "cph"),
+                    email = "renato.figueiredo@oregonstate.edu",
+                    comment = c(ORCID = "0000-0001-9841-6060")),
+             person("Park", "Sungjae", role = "aut", comment = c(ORCID = "0009-0000-5357-804X")),
+             person("Mu", "Nan", role = "ctb"),
+             person("Ku", "Yun-Jung", role = "ctb"),
+             person("Daneshmand", "Vahid", role = "ctb"),
+             person("Thomas", "R. Quinn", role = "aut"),
+             person("Carey", "Cayelan", role = "ctb"),
+             person("Tran", "Hoang", role = "aut"),
+             person("Ramrakhiani", "Ashish Tulso", role = "aut")
+	     )
+Maintainer: Figueiredo Renato <renato.figueiredo@oregonstate.edu>
+Description: Provides a local execution environment for testing and developing the 'FaaSr' workflows
+    without requiring cloud infrastructure. The 'FaaSr' package enables R developers to
+    validate and test workflows locally before deploying to Function-as-a-Service (FaaS) platforms.
+    Key features include:
+    1) Parsing and validating JSON workflow configurations compliant with the 'FaaSr' schema
+    2) Simulated S3 storage operations using local file system with local logging
+    3) Support for conditional branching
+    4) Support for parallel rank functions execution
+    5) Workflow cycle detection and validation
+    6) No cloud credentials or infrastructure required for testing
+    This package is designed for development and testing purposes. For production deployment
+    to cloud FaaS platforms, use the main 'FaaSr' package available at
+    <https://faasr.io/>.
+License: MIT + file LICENSE
+URL: https://github.com/FaaSr/FaaSr-package-v2
+BugReports: https://github.com/FaaSr/FaaSr-package-v2/issues
+Depends: R (>= 3.5.0)
+Imports: jsonlite, cli, jsonvalidate, uuid
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-19 16:36:10 UTC; figueren
+Author: Figueiredo Renato [aut, cre, ths, cph] (ORCID:
+    <https://orcid.org/0000-0001-9841-6060>),
+  Park Sungjae [aut] (ORCID: <https://orcid.org/0009-0000-5357-804X>),
+  Mu Nan [ctb],
+  Ku Yun-Jung [ctb],
+  Daneshmand Vahid [ctb],
+  Thomas R. Quinn [aut],
+  Carey Cayelan [ctb],
+  Tran Hoang [aut],
+  Ramrakhiani Ashish Tulso [aut]
+Repository: CRAN
+Date/Publication: 2026-03-19 16:50:02 UTC

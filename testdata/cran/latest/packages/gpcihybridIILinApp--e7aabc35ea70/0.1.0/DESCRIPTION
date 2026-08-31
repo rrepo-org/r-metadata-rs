@@ -1,0 +1,64 @@
+Package: gpcihybridIILinApp
+Type: Package
+Title: Lindley Approximation for Capability Indices under Hybrid
+        Censoring
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi",
+           email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Sumit", "Kumar",
+           email = "stats.sumitbhal@gmail.com",
+           role = "aut"),
+    person("Arvind", "Pandey",
+           email = "arvindmzu@gmail.com",
+           role = "aut"),
+    person("Bhupendra", "Singh",
+           email = "bhupendra.rana@gmail.com",
+           role = "aut"),
+    person("Vrijesh", "Tripathi",
+           email = "vrijesh.tripathi@uwi.edu",
+           role = "aut")
+    )
+Description: Provides a comprehensive framework for estimating Generalized Process 
+    Capability Indices (GPCIs) under Hybrid Type-II censored lifetime data using 
+    Lindley's 3rd-order approximation method (Lindley, 1980 <doi:10.2307/2345271>). 
+    Supports user-supplied probability density/mass functions (PDF/PMF), cumulative 
+    distribution functions (CDF), survival functions (SF), and quantile functions. 
+    Computes Maximum Likelihood Estimates (MLE) using the 'MleCensoR' package 
+    (Childs et al., 2003 <doi:10.1007/BF02517803>; Balakrishnan & Kundu, 2013 
+    <doi:10.1002/nav.21545>) and Bayesian posterior expectations for classical and 
+    non-normal capability indices, including Cpy (Maiti et al., 2010 
+    <doi:10.1080/16843703.2010.11673233>), Spmk (Dey & Saha, 2019 
+    <doi:10.1007/s41872-019-00081-4>), CpTk (Saha et al., 2019), Cpc (Saha et al., 2022 
+    <doi:10.1080/02664763.2021.1971632>), CNpmc (Alotaibi et al., 2022 
+    <doi:10.1155/2022/3135264>), CNpmkc (Saha et al., 2024 <doi:10.1142/S021853932450013X>), 
+    CNpk (Saha et al., 2018 <doi:10.1080/21681015.2018.1437793>), and Vannman's Cp(u,v) 
+    family. Generates posterior parameter and GPCI chains via sampling with burn-in 
+    and thinning, calculating Bias, Mean Squared Error (MSE), Bayes Risk (SEL and Linex), 
+    Highest Posterior Density (HPD) credible intervals at 90%, 95%, and 99% levels, 
+    and Heidelberger and Welch's MCMC Convergence Diagnostics (Heidelberger & Welch, 
+    1983 <doi:10.1287/opre.31.6.1109>) with convergence probabilities. Evaluates 
+    parametric and non-parametric bootstrap confidence intervals (Percentile, Normal, 
+    Basic, BCp, BCa) at 90%, 95%, and 99% levels of significance. Integrates 
+    goodness-of-fit testing for Hybrid Type-II censored data via the 'gofPHCS' package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, numDeriv, MleCensoR, gofPHCS
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-16 23:25:40 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Sumit Kumar [aut],
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 13:00:20 UTC

@@ -1,0 +1,26 @@
+Package: srlars
+Type: Package
+Title: Fast and Scalable Cellwise-Robust Ensemble
+Version: 3.0.1
+Date: 2026-07-01
+Authors@R: c(person("Anthony", "Christidis", role=c("aut", "cre"), email = "anthony.christidis@stat.ubc.ca"),
+             person("Gabriela", "Cohen-Freue", role=c("aut"), email = "gcohen@stat.ubc.ca"))
+Maintainer: Anthony Christidis <anthony.christidis@stat.ubc.ca>
+Description: Functions to perform robust variable selection and regression using the Fast and Scalable 
+             Cellwise-Robust Ensemble (FSCRE) algorithm. The approach establishes a robust foundation 
+             using the Detect Deviating Cells (DDC) algorithm and robust correlation estimates. It then 
+             employs a competitive ensemble architecture where a robust Least Angle Regression (LARS) 
+             engine proposes candidate variables and cross-validation arbitrates their assignment. A final 
+             robust MM-estimator is applied to the selected predictors.
+License: GPL (>= 2)
+Encoding: UTF-8
+Biarch: true
+Imports: cellWise, robustbase, mvnfast
+Suggests: testthat
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-13 17:08:38 UTC; anthony
+Author: Anthony Christidis [aut, cre],
+  Gabriela Cohen-Freue [aut]
+Repository: CRAN
+Date/Publication: 2026-07-02 02:30:02 UTC

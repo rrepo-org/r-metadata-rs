@@ -1,0 +1,34 @@
+Package: sportsfeatures
+Type: Package
+Title: Longitudinal Sports Analytics Asset and Workload Feature
+        Processing
+Version: 0.1.0
+Authors@R: person(
+    given = "Mohammad",
+    family = "Abbas",
+    role = c("aut", "cre"),
+    email = "ma.abbas3107@gmail.com"
+  )
+Description: A synthetic, longitudinal athletic dataset generated through a
+    transparent, rule-based simulation engine. Captures individual activity
+    sessions across multiple athletes, environmental conditions, and physiological
+    responses. Specifically designed as an alternative to legacy teaching
+    datasets by introducing realistic hierarchical repeated measures, complex
+    two-way covariate interactions, and a deliberate Missing Not At Random
+    (MNAR) tracking mechanism suitable for advanced imputation workflows. Methodologies
+    implemented are based on van Buuren (2018) <doi:10.1201/9780429492259> 
+    and Bates et al. (2015) <doi:10.18637/jss.v067.i01>.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: tibble, mice, modelsummary, lme4
+Suggests: tidyverse
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.0.0
+Config/Needs/editorial: MNAR Buuren et al
+NeedsCompilation: no
+Packaged: 2026-06-24 19:39:55 UTC; abbasxma
+Author: Mohammad Abbas [aut, cre]
+Maintainer: Mohammad Abbas <ma.abbas3107@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 20:00:02 UTC

@@ -1,0 +1,71 @@
+Package: tidysynthesis
+Title: A Common API for Synthesizing Data
+Version: 0.1.3
+Authors@R: 
+    c(person(given = "Aaron R.", 
+             family = "Williams", 
+             email = "awilliams@urban.org", 
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-5564-1938")),
+      person(given = "Kyle", 
+             family = "Ueyama", 
+             email = "kueyama@urban.org", 
+             role = "aut"), 
+      person(given = "Gabe", 
+             family = "Morrison", 
+             email = "gmorrison@urban.org", 
+             role = "aut",
+             comment = c(ORCID = "0009-0008-1815-5920")),  
+      person(given = "Jeremy",
+             family = "Seeman", 
+             email = "jseeman@urban.org",
+             role = "aut",
+             comment = c(ORCID = "0000-0003-3526-3209")),
+      person(given = "Elyse", 
+             family = "McFalls", 
+             role = "ctb"),               
+      person(given = "Claire", 
+             family = "Morton", 
+             role = "ctb"),              
+      person(given = "Livia", 
+             family = "Mucciolo", 
+             role = "ctb"),             
+      person(given = "Madeline", 
+             family = "Pickens", 
+             role = "ctb"),             
+      person(given = "Noah", 
+             family = "Zwiefel", 
+             role = "ctb"),
+      person(given = "The Urban Institute", role = c("cph")))
+Maintainer: Aaron R. Williams <awilliams@urban.org>
+Description: A system built on 'tidymodels' for generating synthetic tabular
+    data. We provide tools for ordering a sequential synthesis, feature and 
+    target engineering, sampling, hyperparameter tuning, enforcing constraints, 
+    and adding extra noise during a synthesis.
+URL: https://ui-research.github.io/tidysynthesis-documentation/
+BugReports: https://github.com/UrbanInstitute/tidysynthesis/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, forcats, parsnip, pillar, purrr, progressr, recipes,
+        rlang, rsample, stringr, tibble, tidyr (>= 1.0.0), tune, vctrs,
+        workflows, yardstick, ExtDist, dapper
+Suggests: hardhat, palmerpenguins, poissonreg, randomForest, ranger,
+        rpart, rpart.LAD (>= 0.1.2), testthat (>= 2.1.0), usethis, VGAM
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-03-16 17:59:54 UTC; aaronwilliams
+Author: Aaron R. Williams [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5564-1938>),
+  Kyle Ueyama [aut],
+  Gabe Morrison [aut] (ORCID: <https://orcid.org/0009-0008-1815-5920>),
+  Jeremy Seeman [aut] (ORCID: <https://orcid.org/0000-0003-3526-3209>),
+  Elyse McFalls [ctb],
+  Claire Morton [ctb],
+  Livia Mucciolo [ctb],
+  Madeline Pickens [ctb],
+  Noah Zwiefel [ctb],
+  The Urban Institute [cph]
+Repository: CRAN
+Date/Publication: 2026-03-16 20:50:02 UTC

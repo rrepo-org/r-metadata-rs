@@ -1,0 +1,29 @@
+Package: ILORA
+Title: Indian Alien Flora Information Database Retrieval
+Version: 0.1.2
+Authors@R: 
+    c(
+      person("Ruqaiya", "Shaikh", email = "ruqaiyashaikh41@gmail.com", role = c("aut", "cre")),
+      person("Achyut Kumar", "Banerjee", email = "banerjeeachyut31@outlook.com", role = "aut"),
+      person("Abhishek", "Mukherjee", email = "abhi.mukh@yahoo.com", role = "aut"),
+      person("Amiya Ranjan", "Bhowmick", email = "amiyaiitb@gmail.com", role = "aut")
+    )
+Description: The Indian Alien Flora Information (ILORA) database contains 14 invasion-relevant variables for 1388 alien plant species in India. The package enables exploration of the database using user-defined criteria. Using this package, users can retrieve variable-specific and species-level data from the database. The package also supports exploratory data analysis and visualization to give users an idea of the variables of interest. Further details about the database are available at <https://iloradb.wixsite.com/alienflora>.
+License: MIT + file LICENSE
+Depends: R (>= 4.0.0)
+Imports: DBI, RColorBrewer, units, RPostgres, dplyr, ggplot2, plotly,
+        glue, rnaturalearth, rnaturalearthdata, sf, viridis, tidyr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-12 09:21:08 UTC; fossee
+Author: Ruqaiya Shaikh [aut, cre],
+  Achyut Kumar Banerjee [aut],
+  Abhishek Mukherjee [aut],
+  Amiya Ranjan Bhowmick [aut]
+Maintainer: Ruqaiya Shaikh <ruqaiyashaikh41@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-12 10:30:15 UTC

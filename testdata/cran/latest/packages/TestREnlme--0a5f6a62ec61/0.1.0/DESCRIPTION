@@ -1,0 +1,49 @@
+Package: TestREnlme
+Type: Package
+Title: Nonparametric Tests for Random Effects in Linear and Nonlinear
+        Mixed-Effects Models
+Version: 0.1.0
+Authors@R: c(
+    person("Germaine", "Uwimpuhwe",
+           email = "germaine.uwimpuhwe@durham.ac.uk",
+           role = c("aut", "cre")),
+    person("Reza", "Drikvandi",
+           email = "reza.drikvandi@durham.ac.uk",
+           role = "aut"),
+    person("Shelley A.", "Blozis",
+           email = "sablozis@ucdavis.edu",
+           role = "aut"))
+Description: Provides nonparametric permutation tests for testing all or
+    any subset of random effects in linear and nonlinear mixed-effects
+    models, without requiring normality or other distributional
+    assumptions on random effects or errors. Three distribution-free
+    variance-component estimators are implemented: Variance Least
+    Squares ('VLS'), Method of Moments ('MM'), and Method of Moments
+    with First-Order Approximation ('MMF'). A permutation procedure is
+    used to obtain finite-sample p-values. Plotting functions support
+    data exploration, model evaluation, and communication of results.
+    Methods are described in Uwimpuhwe, Drikvandi, and Blozis (2026)
+    <doi:10.1002/sim.70605>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 8.0.0
+Depends: R (>= 4.1.0)
+Imports: nlme (>= 3.1-150), Matrix (>= 1.3-0), MASS (>= 7.3-54), mgsub
+        (>= 1.7.3), matrixcalc (>= 1.0-5), nls.multstart (>= 2.0.0),
+        ggplot2 (>= 3.3.5), expm (>= 0.999-6), withr (>= 3.0.2), stats,
+        utils, rlang
+Suggests: knitr, rmarkdown, ggpubr (>= 0.4.0), testthat (>= 3.0.0),
+        reshape2 (>= 1.4.4)
+VignetteBuilder: knitr
+URL: https://github.com/germaine86/TestREnlme
+BugReports: https://github.com/germaine86/TestREnlme/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-27 13:24:25 UTC; germu
+Author: Germaine Uwimpuhwe [aut, cre],
+  Reza Drikvandi [aut],
+  Shelley A. Blozis [aut]
+Maintainer: Germaine Uwimpuhwe <germaine.uwimpuhwe@durham.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-07-03 12:00:15 UTC

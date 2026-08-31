@@ -1,0 +1,42 @@
+Package: cmtkr
+Type: Package
+Title: Wrapper for the Computational Morphometry Toolkit ('CMTK')
+        Library
+Version: 0.2.3
+Date: 2026-03-03
+Authors@R: c(
+    person("Gregory", "Jefferis", email = "jefferis@gmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0587-9355")),
+    person("Torsten", "Rohlfing", role = "aut",
+           comment = "CMTK library author (included source)"),
+    person("SRI International", role = "cph",
+           comment = "Copyright holder for CMTK library"),
+    person("Google, Inc.", role = "cph",
+           comment = "Copyright holder for CMTK library contributions"))
+Description: Provides R bindings for selected components of the
+    Computational Morphometry Toolkit ('CMTK') for image registration and
+    point transformation. A subset of the 'C++' source code required for point
+    transforms is bundled with 'cmtkr'. This allows direct calls into the 'CMTK'
+    library, avoiding command-line invocations and providing
+    order-of-magnitude speed improvements. Additional 'CMTK' functionality may
+    be wrapped in future releases. 'CMTK' is described in Rohlfing T and
+    Maurer CR (2003) <doi:10.1109/titb.2003.808506>.
+License: GPL-3
+Imports: Rcpp (>= 0.11.2)
+LinkingTo: Rcpp
+Suggests: testthat, nat
+SystemRequirements: zlib
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/jefferis/cmtkr
+BugReports: https://github.com/jefferis/cmtkr/issues
+NeedsCompilation: yes
+Packaged: 2026-03-12 11:09:41 UTC; jefferis
+Author: Gregory Jefferis [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0587-9355>),
+  Torsten Rohlfing [aut] (CMTK library author (included source)),
+  SRI International [cph] (Copyright holder for CMTK library),
+  Google, Inc. [cph] (Copyright holder for CMTK library contributions)
+Maintainer: Gregory Jefferis <jefferis@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-12 13:30:03 UTC

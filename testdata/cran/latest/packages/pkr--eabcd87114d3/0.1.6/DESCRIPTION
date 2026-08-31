@@ -1,0 +1,28 @@
+Package: pkr
+Version: 0.1.6
+Date: 2026-07-30
+Title: Pharmacokinetics in R
+Description: Conduct a noncompartmental analysis as closely as possible to the most widely used commercial software.
+             The core noncompartmental computations are delegated to the 'NonCompart' package so that the two share a single, maintained engine.
+             Some features are
+             1) CDISC SDTM terms
+             2) Automatic slope selection with the same criterion of WinNonlin(R), restricted by default to samples after the end of an infusion
+             3) Supporting both 'linear-up linear-down' and 'linear-up log-down' method
+             4) Interval(partial) AUCs with 'linear' or 'log' interpolation method
+             * Reference: Gabrielsson J, Weiner D. Pharmacokinetic and Pharmacodynamic Data Analysis - Concepts and Applications. 5th ed. 2016. (ISBN:9198299107).
+Depends: R (>= 3.6.0)
+Imports: NonCompart (>= 0.8.2), foreign, grDevices, graphics, grid,
+        stats, utils
+Suggests: binr, forestplot, rtf
+Authors@R: c(person(given = "Kyun-Seop", family = "Bae", role = c("aut", "cre"), email = "k@acr.kr"),
+             person(given = c("Jee", "Eun"), family = "Lee", role = "aut"))
+Copyright: 2017-, Kyun-Seop Bae, Jee Eun Lee
+License: GPL-3
+NeedsCompilation: no
+URL: https://cran.r-project.org/package=pkr
+Packaged: 2026-07-30 01:06:04 UTC; Kyun-SeopBae
+Author: Kyun-Seop Bae [aut, cre],
+  Jee Eun Lee [aut]
+Maintainer: Kyun-Seop Bae <k@acr.kr>
+Repository: CRAN
+Date/Publication: 2026-07-30 11:30:08 UTC

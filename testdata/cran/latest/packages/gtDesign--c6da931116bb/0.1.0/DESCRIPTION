@@ -1,0 +1,37 @@
+Package: gtDesign
+Type: Package
+Title: Convex Optimal Designs for Group Testing Experiments
+Version: 0.1.0
+Authors@R: c(
+      person(given = "Chi-Kuang", family = "Yeh",
+             role = c("aut", "cre"),
+             email = "cyeh@gsu.edu",
+             comment = c(ORCID = "0000-0001-7057-2096")),
+      person(given = "Julie", family = "Zhou",
+             role = c("aut")),
+      person(given = "Weng Kee", family = "Wong",
+             role = c("ctb"))
+             )
+Description: Finite candidate-set approximate optimal designs for group   
+  testing and related experiments, using convex optimization and equivalence
+  checks. Implements the information matrix and cost structure for the
+  prevalence / sensitivity / specificity model used in Huang and colleagues
+    (2020), as in Chi-Kuang Yeh, Weng Kee Wong, and Julie Zhou (<doi:10.48550/arXiv.2508.08445>).
+URL: https://github.com/chikuang/gtDesign,
+        https://arxiv.org/abs/2508.08445
+License: GPL-3
+BugReports: https://github.com/chikuang/gtDesign/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: CVXR (>= 1.8.1), tibble, MASS
+Suggests: testthat (>= 3.0.0), dplyr, knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-03 17:13:36 UTC; chikuang
+Author: Chi-Kuang Yeh [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7057-2096>),
+  Julie Zhou [aut],
+  Weng Kee Wong [ctb]
+Maintainer: Chi-Kuang Yeh <cyeh@gsu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-09 15:40:08 UTC

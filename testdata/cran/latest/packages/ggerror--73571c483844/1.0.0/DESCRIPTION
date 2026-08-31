@@ -1,0 +1,26 @@
+Package: ggerror
+Title: Extended Error Geoms for 'ggplot2'
+Version: 1.0.0
+Authors@R: 
+    person("Yann", "Cohen", , "yannco5@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0009-0509-3609"))
+Description: Extends the 'ggplot2' error geoms.
+    geom_error() accepts an error aesthetic with auto-inference of the orientation.
+    It also supports `error_neg` and `error_pos` for asymmetric cases, with full control over aesthetics per side, such as color, width etc...
+License: MIT + file LICENSE
+Encoding: UTF-8
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Imports: cli, ggplot2 (>= 3.4.0), lifecycle, rlang
+Suggests: knitr, purrr, rmarkdown, svglite, testthat (>= 3.0.0), vdiffr
+        (>= 1.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://iamyannc.github.io/ggerror/
+BugReports: https://github.com/iamYannC/ggerror/issues
+NeedsCompilation: no
+Packaged: 2026-05-11 22:46:27 UTC; 97253
+Author: Yann Cohen [aut, cre] (ORCID: <https://orcid.org/0009-0009-0509-3609>)
+Maintainer: Yann Cohen <yannco5@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-12 18:40:36 UTC

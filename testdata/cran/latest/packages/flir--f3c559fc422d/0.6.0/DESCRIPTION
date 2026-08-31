@@ -1,0 +1,41 @@
+Package: flir
+Type: Package
+Title: Find and Fix Lints in R Code
+Version: 0.6.0
+Authors@R: 
+    c(person(given = "Etienne",
+             family = "Bacher",
+             role = c("aut", "cre", "cph"),
+             email = "etienne.bacher@protonmail.com"),
+      person("lintr authors", role = "aut"),
+      person("Trevor L.", "Davis", role = c("ctb"),
+             comment = c(ORCID = "0000-0001-6341-4639")))
+Description: Lints are code patterns that are not optimal because they are
+    inefficient, forget corner cases, or are less readable. 'flir' provides a
+    small set of functions to detect those lints and automatically fix them.
+    It builds on 'astgrepr', which itself uses the 'Rust' crate 'ast-grep' to
+    parse and navigate R code.
+Depends: R (>= 4.2)
+Imports: astgrepr (>= 0.1.0), cli, crayon, data.table, digest, fs,
+        git2r, rprojroot, yaml
+Suggests: diffviewer, glue, knitr, patrick, rlang, rmarkdown,
+        rstudioapi, shiny, spelling, testthat (>= 3.0.0), tibble,
+        usethis, utils, withr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://flir.etiennebacher.com,
+        https://github.com/etiennebacher/flir
+BugReports: https://github.com/etiennebacher/flir/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/testthat/parallel: true
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-12-14 21:04:12 UTC; etienne
+Author: Etienne Bacher [aut, cre, cph],
+  lintr authors [aut],
+  Trevor L. Davis [ctb] (ORCID: <https://orcid.org/0000-0001-6341-4639>)
+Maintainer: Etienne Bacher <etienne.bacher@protonmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-14 21:20:02 UTC

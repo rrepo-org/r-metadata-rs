@@ -1,0 +1,46 @@
+Package: rDeckgl
+Type: Package
+Title: R Bindings to 'Deck.gl'
+Version: 0.1.0
+Authors@R: c(
+    person("Timur", "Rizvanov", email = "timurr@bu.edu",
+           role = c("aut", "cre")),
+    person("Edward C.", "Ruiz", email = "ecr7407@gmail.com",
+           role = c("aut")),
+    person("Ruben", "Dries", email = "rubendries@gmail.com",
+           role = c("aut", "rev")),
+    person(given = "Dries Lab", role = "fnd",
+           comment = "Host laboratory and funding source"),
+    person(given = "Boston University", role = "fnd",
+           comment = "Undergraduate Research Opportunities Program (UROP)")
+  )
+Description: Provides R bindings for 'deck.gl', a 'WebGL' framework for
+    rendering large interactive spatial and tabular visualizations. The package
+    supplies 'htmlwidgets' and 'shiny' bindings, supports 'DuckDB'-backed data
+    hydration, and bundles the JavaScript assets needed to render 'deck.gl'
+    specifications from R.
+License: MIT + file LICENSE
+URL: https://github.com/TiRizvanov/rDeckgl
+BugReports: https://github.com/TiRizvanov/rDeckgl/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: htmlwidgets (>= 1.5.4), shiny (>= 1.7.0), jsonlite (>= 1.8.0),
+        yaml (>= 2.3.0), DBI (>= 1.1.0), duckdb (>= 1.4.0), arrow (>=
+        12.0.0), base64enc (>= 0.1.3), stats
+Suggests: adbcdrivermanager, nanoarrow, knitr, rmarkdown, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-28 17:02:22 UTC; timurrizvanov
+Author: Timur Rizvanov [aut, cre],
+  Edward C. Ruiz [aut],
+  Ruben Dries [aut, rev],
+  Dries Lab [fnd] (Host laboratory and funding source),
+  Boston University [fnd] (Undergraduate Research Opportunities Program
+    (UROP))
+Maintainer: Timur Rizvanov <timurr@bu.edu>
+Repository: CRAN
+Date/Publication: 2026-06-01 13:40:02 UTC

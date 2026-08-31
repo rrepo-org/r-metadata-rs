@@ -1,0 +1,26 @@
+Package: rCoreGage
+Title: Data Quality Check Framework for Clinical and Analytical Data
+Version: 1.1.0
+Authors@R: c(
+    person("Ganesh Babu G", email = "ganeshbabu346@gmail.com",
+           role = c("aut", "cre")))
+Description: A configuration-driven framework for running domain-level data quality checks and consolidating findings into structured Excel reports with role-based feedback routing.
+    It supports trial-level and study-level checks across multiple data domains.
+    Reports are routed to separate feedback channels for Data Management (DM), Medical Writing (MW), Study Data Tabulation Model (SDTM) programmers, and Analysis Data Model (ADaM) programmers, as well as other relevant data roles.
+    Reviewer responses are incorporated automatically on re-run.
+Depends: R (>= 4.1.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: readxl (>= 1.4.0), openxlsx (>= 4.2.5), dplyr (>= 1.1.0),
+Suggests: haven (>= 2.5.0), testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/ganeshbabuNN/rCoreGage
+BugReports: https://github.com/ganeshbabuNN/rCoreGage/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-04-24 12:35:18 UTC; ganes
+Author: Ganesh Babu G [aut, cre]
+Maintainer: Ganesh Babu G <ganeshbabu346@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-25 10:00:02 UTC

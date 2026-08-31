@@ -1,0 +1,45 @@
+Package: vasicekreg
+Type: Package
+Title: Regression Modeling Using Vasicek Distribution
+Version: 1.1.0
+Date: 2026-08-09
+Authors@R: 
+    c(person(given = "Josmar",
+             family = "Mazucheli",
+             role = c("aut", "cre"),
+             email = "jmazucheli@gmail.com"),
+      person(given = "Bruna",
+             family = "Alves",
+             role = "ctb",
+             email = "pg402900@uem.br"))
+Description: Provides density, cumulative distribution, quantile, and
+    random generation functions for Vasicek distributions with standard
+    normal and standard logistic kernels. The normal-kernel distribution is
+    parameterized by either its mean or a fixed quantile, whereas the
+    logistic-kernel distribution uses a fixed-quantile parameterization.
+    Zero-adjusted, one-adjusted, and zero-and-one-adjusted extensions of the
+    normal-kernel mean parameterization are also provided for responses that
+    include boundary values. The corresponding 'NVASIM', 'NVASIQ', 'LVASIQ',
+    'ZANVASIM', 'OANVASIM', and 'ZOANVASIM' families are available for fitting
+    Generalized Additive Models for Location, Scale and Shape,
+    as introduced by Rigby and Stasinopoulos (2005,
+    <doi:10.1111/j.1467-9876.2005.00510.x>). Some functions are written in
+    'C++' using 'Rcpp', developed by Eddelbuettel and Francois (2011,
+    <doi:10.18637/jss.v040.i08>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+ByteCompile: yes
+LazyData: true
+Depends: R (>= 3.6)
+Imports: Rcpp, stats, gamlss, gamlss.dist, mvtnorm
+LinkingTo: Rcpp
+Suggests: betareg, testthat (>= 3.0.0)
+NeedsCompilation: yes
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-08-19 22:18:24 UTC; jmazucheli
+Author: Josmar Mazucheli [aut, cre],
+  Bruna Alves [ctb]
+Maintainer: Josmar Mazucheli <jmazucheli@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 06:50:02 UTC

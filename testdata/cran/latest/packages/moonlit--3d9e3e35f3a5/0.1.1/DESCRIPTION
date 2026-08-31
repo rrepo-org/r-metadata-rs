@@ -1,0 +1,31 @@
+Package: moonlit
+Type: Package
+Title: Predicting Moonlight Intensity for a Given Time and Location
+Version: 0.1.1
+Authors@R: 
+    person("Michal", "Smielak",
+           email = "michalsmielak@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3585-9945"))
+Description: Tools for predicting moonlight intensity on the ground based on
+    the position of the moon, atmospheric conditions, and other factors.
+    Provides functions to calculate moonlight intensity and related statistics
+    for ecological and behavioral research, offering more accurate estimates
+    than simple moon phase calculations. The underlying model is described in
+    Smielak (2023) <doi:10.1007/s00265-022-03287-2>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: suncalc, lubridate
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/msmielak/moonlit
+BugReports: https://github.com/msmielak/moonlit/issues
+NeedsCompilation: no
+Packaged: 2026-03-02 19:59:47 UTC; admin
+Author: Michal Smielak [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3585-9945>)
+Maintainer: Michal Smielak <michalsmielak@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-06 13:50:02 UTC

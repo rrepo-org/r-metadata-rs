@@ -1,0 +1,46 @@
+Package: OptimalBinningWoE
+Type: Package
+Title: Optimal Binning and Weight of Evidence Framework for Modeling
+Version: 1.13.4
+Date: 2026-08-25
+Authors@R: 
+    person(given = "José Evandeilton",
+           family = "Lopes",
+           role = c("aut", "cre", "cph"),
+           email = "evandeilton@gmail.com",
+           comment = c(ORCID = "0009-0007-5887-4084"))
+Description: High-performance implementation of 37 optimal binning algorithms 
+    (16 categorical, 21 numerical) for Weight of Evidence ('WoE') transformation, 
+    credit scoring, and risk modeling. Includes advanced methods such as Mixed 
+    Integer Linear Programming ('MILP'), Genetic Algorithms, Simulated Annealing, 
+    and Monotonic Regression. Features automatic method selection based on 
+    Information Value ('IV') maximization, strict monotonicity enforcement, and 
+    efficient handling of large datasets via 'Rcpp'. Provides automated variable 
+    screening by Information Value strength and bin ordering, and generation of 
+    the equivalent 'SQL' 'CASE' expressions for in-database scoring. Fully 
+    integrated with the 'tidymodels' ecosystem for building robust machine 
+    learning pipelines. 
+    Based on methods described in Siddiqi (2006) <doi:10.1002/9781119201731> 
+    and Navas-Palencia (2020) <doi:10.48550/arXiv.2001.08025>.
+License: MIT + file LICENSE
+URL: https://github.com/evandeilton/OptimalBinningWoE,
+        https://evandeilton.github.io/OptimalBinningWoE/
+BugReports: https://github.com/evandeilton/OptimalBinningWoE/issues
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+Language: en-US
+Imports: Rcpp, recipes, rlang, tibble, dials, stats, utils, graphics
+LinkingTo: Rcpp, RcppEigen, RcppNumerical
+Suggests: testthat (>= 3.0.0), data.table, openxlsx, glmnet, generics,
+        knitr, rmarkdown, tidymodels, workflows, parsnip, tune
+Config/testthat/edition: 3
+SystemRequirements: C++17
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-26 00:32:49 UTC; evandeilton
+Author: José Evandeilton Lopes [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0007-5887-4084>)
+Maintainer: José Evandeilton Lopes <evandeilton@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-26 21:10:31 UTC

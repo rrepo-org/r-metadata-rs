@@ -1,0 +1,45 @@
+Package: vazul
+Title: Analysis Blinding Tools
+Version: 1.1.0
+Authors@R: c(
+    person(given = "Tamás",   
+           family = "Nagy", 
+           email = "nagytamas.hungary@gmail.com", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5244-0356")),
+    person(given = "Alexandra", 
+           family = "Sarafoglou", 
+           email = "alexandra.sarafoglou@gmail.com", 
+           role = c("aut", "dtc"),
+           comment = c(ORCID = "0000-0003-0031-685X")),
+    person(given = "Márton", 
+           family = "Kovács", 
+           email = "marton.balazs.kovacs@gmail.com", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-8142-8492"))
+           )
+Description: Provides tools for analysis blinding in confirmatory research contexts
+  by masking and scrambling test-relevant aspects of data. Vector-, data frame-, and
+  row-wise operations support blinding for hierarchical and repeated-measures designs.
+  For more details see MacCoun and Perlmutter (2015) <doi:10.1038/526187a> and
+  Dutilh, Sarafoglou, and Wagenmakers (2019) <doi:10.1007/s11229-019-02456-7>.
+License: MIT + file LICENSE
+URL: https://nthun.github.io/vazul/
+BugReports: https://github.com/nthun/vazul/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, lifecycle, rlang, tidyselect, stats
+Suggests: testthat, covr, knitr, quarto
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-06 17:49:54 UTC; t
+Author: Tamás Nagy [aut, cre] (ORCID: <https://orcid.org/0000-0001-5244-0356>),
+  Alexandra Sarafoglou [aut, dtc] (ORCID:
+    <https://orcid.org/0000-0003-0031-685X>),
+  Márton Kovács [aut] (ORCID: <https://orcid.org/0000-0002-8142-8492>)
+Maintainer: Tamás Nagy <nagytamas.hungary@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-07 07:50:02 UTC

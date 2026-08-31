@@ -1,0 +1,38 @@
+Package: ggseg.meshes
+Title: Additional Brain Surface Meshes for the 'ggsegverse' Ecosystem
+Version: 0.0.1
+Authors@R: c(
+    person("Athanasia Mo", "Mowinckel", , "a.m.mowinckel@psykologi.uio.no", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5756-0223")),
+    person("Center for Lifespan Changes in Brain and Cognition (LCBC), University of Oslo",
+           role = "cph")
+  )
+Description: Provides additional brain surface meshes for cortical and
+    cerebellar visualisation in the 'ggsegverse' ecosystem. Cortical surfaces
+    include pial, white, midthickness, semi-inflated, sphere, smoothwm, and
+    orig at fsaverage5 resolution. Cerebellar surfaces include the Spatially
+    Unbiased Infratentorial Template (SUIT) flatmap. All meshes follow the
+    same vertices/faces data frame format used by 'ggseg.formats' and
+    'ggseg3d'.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: cli
+Suggests: freesurfer, freesurferformats, gifti, ggseg.formats, knitr,
+        rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: ggsegverse/ggseg.docs
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/ggsegverse/ggseg.meshes,
+        https://ggsegverse.github.io/ggseg.meshes/
+BugReports: https://github.com/ggsegverse/ggseg.meshes/issues
+NeedsCompilation: no
+Packaged: 2026-04-03 17:34:44 UTC; athanasm
+Author: Athanasia Mo Mowinckel [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5756-0223>),
+  Center for Lifespan Changes in Brain and Cognition (LCBC), University
+    of Oslo [cph]
+Maintainer: Athanasia Mo Mowinckel <a.m.mowinckel@psykologi.uio.no>
+Repository: CRAN
+Date/Publication: 2026-04-09 08:50:08 UTC

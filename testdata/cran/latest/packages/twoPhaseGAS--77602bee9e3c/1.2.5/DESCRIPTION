@@ -1,0 +1,50 @@
+Package: twoPhaseGAS
+Type: Package
+Title: Two-Phase Genetic Association Study Design and Analysis with
+        Missing Covariates by Design
+Version: 1.2.5
+Authors@R: c(
+    person("Osvaldo", "Espin-Garcia",
+           email = "oespinga@uwo.ca",
+           role = c("aut", "cre")),
+    person("Apostolos", "Dimitromanolakis",
+           email = "apostolis@live.ca",
+           role = "aut"),
+    person("Radu V", "Craiu",
+           email = "radu.craiu@utoronto.ca",
+           role = "ths"),
+    person("Shelley B", "Bull",
+           email = "bull@lunenfeld.ca",
+           role = "ths"))
+Description: Provides functionality for designing and analysing two-phase 
+    genetic association studies. Phase 1 data usually come from
+    genome-wide association study (GWAS) results and we assume phase 2  data 
+    will be part of a targeted genome sequencing or fine-mapping study. 
+    At design stage, the package assists in selecting a subset of individuals 
+    that will be sequenced for phase 2 via alternative approaches, including a 
+    flexible genetic algorithm (GA) for near-optimal designs. Once phase 2 data 
+    have been collected, the package implements methods to analyse phase 1 and 
+    phase 2 data together using semi-parametric regression models via the 
+    expectation-maximization (EM) algorithm. For more details see 
+    Espin-Garcia, Craiu and Bull (2018) <doi:10.1002/gepi.22099> and 
+    Espin-Garcia, Craiu and Bull (2021) <doi:10.1002/sim.9211>.
+License: GPL (>= 2)
+URL: https://github.com/egosv/twoPhaseGAS
+BugReports: https://github.com/egosv/twoPhaseGAS/issues
+Depends: R (>= 3.5.0)
+Imports: data.table, dfoptim, enrichwith, kofnGA (>= 1.2), MASS,
+        Matrix, nloptr, parallel, stats, utils
+Suggests: gplots, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-19 16:07:48 UTC; osvespinga
+Author: Osvaldo Espin-Garcia [aut, cre],
+  Apostolos Dimitromanolakis [aut],
+  Radu V Craiu [ths],
+  Shelley B Bull [ths]
+Maintainer: Osvaldo Espin-Garcia <oespinga@uwo.ca>
+Repository: CRAN
+Date/Publication: 2026-05-27 10:00:02 UTC

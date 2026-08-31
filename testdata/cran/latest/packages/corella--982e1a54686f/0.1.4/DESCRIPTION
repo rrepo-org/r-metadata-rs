@@ -1,0 +1,45 @@
+Package: corella
+Title: Prepare, Manipulate and Check Data to Comply with Darwin Core
+        Standard
+Version: 0.1.4
+Authors@R: 
+    c(person(given = "Dax",
+             family = "Kellie",
+             email = "dax.kellie@csiro.au",
+             role = c("aut", "cre")),
+      person(given = "Shandiya",
+             family = "Balasubramanium",
+             email = "shandiya.balasubramanium@csiro.au",
+             role = c("aut")),
+      person(given = "Martin",
+             family = "Westgate",
+             email = "martin.westgate@csiro.au",
+             role = c("aut")))
+Description: Helps users standardise data to the Darwin Core Standard, a global 
+             data standard to store, document, and share biodiversity data like 
+             species occurrence records. The package provides tools to 
+             manipulate data to conform with, and check validity against, the 
+             Darwin Core Standard. Using 'corella' allows users to verify that 
+             their data can be used to build 'Darwin Core Archives' using the 
+             'galaxias' package.
+Depends: R (>= 4.3.0)
+Imports: cli, dplyr, glue, hms, lubridate, purrr, rlang, sf, stringr,
+        tibble, tidyr, uuid
+Suggests: gt, knitr, nanoparquet, ozmaps, readr, rmarkdown, testthat
+        (>= 3.0.0), withr
+License: GPL-3
+URL: https://corella.ala.org.au
+BugReports: https://github.com/AtlasOfLivingAustralia/corella/issues
+Maintainer: Dax Kellie <dax.kellie@csiro.au>
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-03-24 02:03:35 UTC; kel329
+Author: Dax Kellie [aut, cre],
+  Shandiya Balasubramanium [aut],
+  Martin Westgate [aut]
+Repository: CRAN
+Date/Publication: 2025-03-24 15:10:06 UTC

@@ -1,0 +1,37 @@
+Package: dtrSurv
+Type: Package
+Title: Dynamic Treatment Regimes for Survival Analysis
+Version: 1.5
+Date: 2025-05-04
+Author: Shannon T. Holloway [aut, cre],
+  Hunyong Cho [aut]
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Authors@R: c(person(given = c("Shannon", "T."),
+                        family = "Holloway",
+                        role = c("aut", "cre"),
+                        email = "shannon.t.holloway@gmail.com"),
+                 person(given = "Hunyong",
+                        family = "Cho",
+                        role = "aut"))
+Description: Provides methods for estimating multi-stage optimal 
+    dynamic treatment regimes for survival outcomes with dependent censoring.
+    Cho, H., Holloway, S. T., and Kosorok, M. R. (2022) <doi:10.1093/biomet/asac047>.
+License: GPL-2
+NeedsCompilation: yes
+Repository: CRAN
+Encoding: UTF-8
+Depends: methods, stats, survival
+RoxygenNote: 7.1.2
+Collate: 'VerifyCriticalValue.R' 'VerifyData.R' 'VerifyERT.R'
+        'VerifyModels.R' 'VerifyRandomSplit.R' 'VerifyReplace.R'
+        'VerifySampleSize.R' 'VerifySplitRule.R' 'VerifySurvivalTime.R'
+        'VerifyTieMethod.R' 'VerifyTimePoints.R' 'VerifyTxName.R'
+        'VerifyUniformSplit.R' 'VerifyUsePrevTime.R'
+        'class_CriticalValue.R' 'class_CriticalValueMean.R'
+        'class_CriticalValueSurvival.R' 'class_TreeConditions.R'
+        'class_TreeType.R' 'criticalValue.R' 'class_TimeInfo.R'
+        'class_Parameters.R' 'predictSurvTree.R' 'class_SurvRF.R'
+        'survRF.R' 'shiftMat.R' 'class_Optimal.R' 'class_DTRSurvStep.R'
+        'class_DTRSurv.R' 'dtrSurv.R'
+Packaged: 2025-05-04 17:12:33 UTC; sth45
+Date/Publication: 2025-05-04 17:30:05 UTC

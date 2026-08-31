@@ -1,0 +1,36 @@
+Package: mcgf
+Title: Markov Chain Gaussian Fields Simulation and Parameter Estimation
+Version: 1.2.0
+Authors@R: 
+    person("Tianxia", "Jia", , "tylarjia@outlook.com", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0001-5430-5019"))
+Description: Simulating and estimating (regime-switching) Markov chain Gaussian
+    fields with spatio-temporal covariance functions of the Gneiting class
+    (Gneiting 2002) <doi:10.1198/016214502760047113>, including the
+    regime-switching framework of Jia and Sezer (2025)
+    <doi:10.1063/5.0285012>. It supports parameter estimation by weighted
+    least squares and approximate conditional maximum likelihood methods,
+    and produces Kriging forecasts and intervals for existing and new
+    locations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: testthat (>= 3.0.0), doParallel (>= 1.0.17), foreach (>=
+        1.5.2), parallel (>= 4.3.1), knitr, rmarkdown, lubridate,
+        dplyr, Rsolnp
+Config/testthat/edition: 3
+Imports: MASS, sp
+Depends: R (>= 4.0.0)
+LazyData: true
+URL: https://github.com/tianxia-jia/mcgf,
+        https://tianxia-jia.github.io/mcgf/
+BugReports: https://github.com/tianxia-jia/mcgf/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-21 18:33:50 UTC; tylar
+Author: Tianxia Jia [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5430-5019>)
+Maintainer: Tianxia Jia <tylarjia@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 21:00:16 UTC

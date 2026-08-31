@@ -1,0 +1,35 @@
+Package: CLDedgelister
+Type: Package
+Title: Import System-Dynamics Models and Convert Them to Edge Lists
+Version: 1.0.3
+Authors@R: c(
+    person("Taddias Prince", "Mpofu", email = "princetaddy@gmail.com",
+           role = c("aut", "cre", "cph")),
+    person("Mawuko Bonoukpoe Joel", "Sokame", role = "aut"),
+    person("Frank", "Chidawanyika", role = "aut"),
+    person("Joel Cornelius", "Runyu", role = "aut"),
+    person("Marc", "Marin Agbodjan", role = "aut"))
+Description: Imports causal and system-dynamics models from 'Vensim',
+    'Stella' / 'iThink' and 'Powersim Studio' ('XMILE'), 'AnyLogic' and
+    'GoldSim' (exported 'XML'), and converts them into a two-column edge
+    list of cause-to-effect links. 'Vensim' models are read from their
+    native diagram files; 'Powersim Studio' and 'GoldSim' are also now 
+    read from their native diagram files in addition to exported 'XMILE' or 'XML'. 
+    Provides an 'RStudio' add-in with a simple point-and-click interface, together with 
+    command-line functions that return a data frame or write it to 'CSV' or 'Excel'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: xml2, tools, utils, stats
+Suggests: shiny, miniUI, rstudioapi, writexl, DT, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-19 19:30:46 UTC; princ
+Author: Taddias Prince Mpofu [aut, cre, cph],
+  Mawuko Bonoukpoe Joel Sokame [aut],
+  Frank Chidawanyika [aut],
+  Joel Cornelius Runyu [aut],
+  Marc Marin Agbodjan [aut]
+Maintainer: Taddias Prince Mpofu <princetaddy@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 02:10:02 UTC

@@ -1,0 +1,34 @@
+Package: tactile
+Title: New and Extended Plots, Methods, and Panel Functions for
+        'lattice'
+Version: 0.2.2
+Authors@R: c(person("Johan", "Larsson", email = "johanlarsson@outlook.com",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-4029-5945")),
+             person("Deepayan", "Sarkar", role = c("ctb", "cph"),
+                    comment = "lattice"),
+             person("Brian", "Ripley", role = c("ctb"),
+                    comment = "stats::plot.acf"))
+Description: Extensions to 'lattice', providing new high-level
+    functions, methods for existing functions, panel functions, and a theme.
+Depends: R (>= 3.4.0), lattice
+Imports: grDevices, grid, gridExtra, latticeExtra, MASS, RColorBrewer,
+        stats, utils
+Suggests: covr, forecast, knitr, rmarkdown, spelling, testthat, zoo
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL: https://github.com/jolars/tactile
+BugReports: https://github.com/jolars/tactile/issues
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-07-27 21:04:49 UTC; jola
+Author: Johan Larsson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4029-5945>),
+  Deepayan Sarkar [ctb, cph] (lattice),
+  Brian Ripley [ctb] (stats::plot.acf)
+Maintainer: Johan Larsson <johanlarsson@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-07-27 21:20:02 UTC

@@ -1,0 +1,29 @@
+Package: OtsuSeg
+Type: Package
+Title: Raster Thresholding Using Otsu´s Algorithm
+Version: 0.1.0
+Authors@R: c(person("Hammadi, Achour", email = "hammadi.achour@gmail.com", role = c("aut")),
+    person("Olga", "Viedma", email = "olga.viedma@uclm.es", role = c("ctb", "cre")),
+    person("Zina", "Soltani", email = "zina12soltani@gmail.com", role = "ctb"),
+    person("Imene", "Habibi", email = "imene.habibi@cuniv-naama.dz", role = "ctb"),
+    person("Wahbi", "Jaouadi", email = "jaouadiwahbi@gmail.com", role = "ctb"))
+Description: Provides tools to process raster data and apply Otsu-based thresholding for burned area mapping and other image segmentation tasks. Implements the method described by Otsu (1979) <doi:10.1109/TSMC.1979.4310076>, a data-driven technique that determines an optimal threshold by maximizing the inter-class variance of pixel intensities. It includes validation functions to assess segmentation accuracy against reference data using standard accuracy metrics such as precision, recall, and F1-score.
+URL: https://github.com/olgaviedma/OtsuSeg
+Encoding: UTF-8
+License: GPL-3
+Depends: R (>= 3.0.0)
+Imports: raster, zoo, sf
+Suggests: testthat (>= 3.0.0), curl
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-05-08 16:42:05 UTC; Olga.Viedma
+Maintainer: Olga Viedma <olga.viedma@uclm.es>
+BugReports: https://github.com/olgaviedma/OtsuSeg/issues
+Config/testthat/edition: 3
+Author: Hammadi, Achour [aut],
+  Olga Viedma [ctb, cre],
+  Zina Soltani [ctb],
+  Imene Habibi [ctb],
+  Wahbi Jaouadi [ctb]
+Repository: CRAN
+Date/Publication: 2025-05-12 08:20:13 UTC

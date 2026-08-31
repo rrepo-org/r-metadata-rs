@@ -1,0 +1,45 @@
+Package: phytoclass
+Title: Estimate Chla Concentrations of Phytoplankton Groups
+Version: 2.3.1
+Authors@R: c(person(
+    "Alexander", "Hayward", role = c("aut", "cre", "cph"), email = "phytoclass@outlook.com"
+  ), person(
+    given="Tylar", family="Murray", role = c("aut")
+  ), person(
+    given="Sebastian", family="Di Geronimo", role = c("aut")
+  ), person(
+    given = "Mohd Aasim Maqsood", family = "Khan", role = c("aut")
+  ), person(
+    given="Andy", family="McKenzie", role = c("aut")
+  ))
+Description: Determine the chlorophyll a (Chl a) concentrations of different 
+    phytoplankton groups based on their pigment biomarkers. The method uses
+    non-negative matrix factorisation and simulated annealing to minimise error
+    between the observed and estimated values of pigment concentrations
+    (Hayward et al. (2023) <doi:10.1002/lom3.10541>).
+    The approach is similar to the widely used 'CHEMTAX' program
+    (Mackey et al. 1996) <doi:10.3354/meps144265>, but is more straightforward,
+    accurate, and not reliant on initial guesses for the pigment to Chl a
+    ratios for phytoplankton groups.
+Imports: bestNormalize, dynamicTreeCut, ggplot2, RcppML, stats, tidyr,
+        progress
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.8)
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), quarto, here
+VignetteBuilder: knitr
+URL: https://github.com/phytoclass/phytoclass/
+BugReports: https://github.com/phytoclass/phytoclass/issues/
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-30 14:44:01 UTC; tylar
+Author: Alexander Hayward [aut, cre, cph],
+  Tylar Murray [aut],
+  Sebastian Di Geronimo [aut],
+  Mohd Aasim Maqsood Khan [aut],
+  Andy McKenzie [aut]
+Maintainer: Alexander Hayward <phytoclass@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-01-30 15:20:03 UTC

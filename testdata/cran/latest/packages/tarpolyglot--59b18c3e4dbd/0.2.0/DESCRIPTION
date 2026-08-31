@@ -1,0 +1,49 @@
+Package: tarpolyglot
+Type: Package
+Title: Run Python, Julia, and Rust Inside 'targets' Pipeline Steps
+Version: 0.2.0
+Authors@R: c(
+    person(
+      given = "Pierre",
+      family = "Solomon",
+      email = "pierre.solomon@laposte.net",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-7187-2664")
+    )
+  )
+Description: Adds target constructors that make it easy to use Python, Julia, and
+    Rust inside a 'targets' pipeline using 'reticulate', 'JuliaCall', and 'rextendr'.
+    Provides tar_target_py(), tar_target_jl(), and tar_target_rs() (with matching
+    _raw() variants), each mirroring 'targets::tar_target()' and
+    'targets::tar_target_raw()'. Python and Julia steps run a script via a live
+    interpreter with optional R pre- and post-scripts; Rust steps compile
+    '#[extendr]' functions and call them from an R post-script. Results are
+    returned either as converted R objects or as files written to disk
+    (format = "file"). Dynamic branching, environment/version selection, a
+    'crew' controller for isolation, and the full set of tar_target_raw()
+    arguments are supported.
+License: MIT + file LICENSE
+URL: https://github.com/Pierre9344/tarpolyglot,
+        https://pierre9344.github.io/tarpolyglot/
+BugReports: https://github.com/Pierre9344/tarpolyglot/issues
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Imports: targets, reticulate, JuliaCall, crew, rextendr
+Suggests: knitr, rmarkdown, tarchetypes, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+SystemRequirements: The external language toolchains are optional and
+        each is only required by its matching targets constructor: a
+        Python installation for tar_target_py(), a Julia installation
+        for tar_target_jl(), and a Rust toolchain with Cargo for
+        tar_target_rs() (on Windows, the GNU toolchain, to match R's
+        ABI). A pipeline that uses a single language needs only that
+        language's toolchain, and a pipeline that uses none of these
+        constructors needs no external toolchain at all.
+NeedsCompilation: no
+Packaged: 2026-07-31 12:45:18 UTC; pierre
+Author: Pierre Solomon [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7187-2664>)
+Maintainer: Pierre Solomon <pierre.solomon@laposte.net>
+Repository: CRAN
+Date/Publication: 2026-08-08 10:50:02 UTC

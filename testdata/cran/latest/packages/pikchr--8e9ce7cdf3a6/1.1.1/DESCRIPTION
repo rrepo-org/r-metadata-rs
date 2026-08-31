@@ -1,0 +1,40 @@
+Type: Package
+Package: pikchr
+Title: R Wrapper for 'pikchr' (PIC) Diagram Language
+Version: 1.1.1
+Date: 2026-06-14
+Authors@R: c(
+            person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+            person("Hugo", "Vaconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+            person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"),
+            person("Marcos", "Wasilew", email = "marcos.wasilew@gmail.com", role = "aut"),
+            person("Carlos", "Amorin", email = "carlos.agaf@ufpe.br", role = "aut"),
+            person("Richard", "Hipp", email = "drh@sqlite.org", role = "ctb"),
+            person("Brian", "Kernighan", role = "ctb"))
+Description: An 'R' interface to 'pikchr' (<https://pikchr.org>, pronounced "picture"), a 'PIC'-like markup language for creating diagrams within technical documentation. Originally developed by Brian Kernighan, 'PIC' has been adapted into 'pikchr' by D. Richard Hipp, the creator of 'SQLite'. 'pikchr' is designed to be embedded in fenced code blocks of Markdown or other documentation markup languages, making it ideal for generating diagrams in text-based formats. This package allows R users to seamlessly integrate the descriptive syntax of 'pikchr' for diagram creation directly within the 'R' environment.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Imports: cli, knitr, brio, htmltools, stringr, rsvg
+Suggests: kableExtra, rmarkdown
+URL: https://strategicprojects.github.io/pikchr/,
+        https://github.com/StrategicProjects/pikchr
+BugReports: https://github.com/StrategicProjects/pikchr/issues
+Note: This package makes use of the 'pikchr' source code created by
+        Richard Hipp (<https://pikchr.org>).
+Depends: R (>= 4.0)
+LazyData: true
+Config/Needs/website: tidyverse/tidytemplate, rmarkdown
+NeedsCompilation: yes
+Packaged: 2026-06-14 18:26:54 UTC; leite
+Author: Andre Leite [aut, cre],
+  Hugo Vaconcelos [aut],
+  Diogo Bezerra [aut],
+  Marcos Wasilew [aut],
+  Carlos Amorin [aut],
+  Richard Hipp [ctb],
+  Brian Kernighan [ctb]
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-06-14 19:20:02 UTC

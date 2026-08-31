@@ -1,0 +1,33 @@
+Package: metrosp
+Type: Package
+Title: 'São Paulo' Metro Passenger Demand Data
+Version: 1.0.0
+Authors@R: c(
+    person(
+      "Vinicius", "Oike",
+      email = "viniciusoike@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Provides passenger demand data for the 'São Paulo' metro system,
+    covering 2012 to 2025. Datasets include monthly passenger entries and
+    transported counts by line, average weekday station entries, daily station entries, and spatial geometries for metro and commuter train lines and stations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Depends: R (>= 3.5.0)
+Suggests: dplyr, ggplot2, knitr, quarto, rmarkdown, sf, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+URL: https://github.com/viniciusoike/metrosp,
+        https://viniciusoike.github.io/metrosp/
+BugReports: https://github.com/viniciusoike/metrosp/issues
+VignetteBuilder: quarto
+NeedsCompilation: no
+Packaged: 2026-05-03 01:36:22 UTC; viniciusreginatto
+Author: Vinicius Oike [aut, cre]
+Maintainer: Vinicius Oike <viniciusoike@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-05 19:00:02 UTC

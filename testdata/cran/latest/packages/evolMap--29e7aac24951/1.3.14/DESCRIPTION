@@ -1,0 +1,31 @@
+Package: evolMap
+Type: Package
+Version: 1.3.14
+Date: 2025-06-27
+Title: Dynamic and Interactive Maps
+Description: Dynamic and Interactive Maps with R, powered by 'leaflet' <https://leafletjs.com>. 'evolMap' generates a web page with interactive and dynamic maps to which you can add geometric entities (points, lines or colored geographic areas), and/or markers with optional links between them. The dynamic ability of these maps allows their components to evolve over a continuous period of time or by periods.
+License: BSD_2_clause + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: jsonlite, curl, sf
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Authors@R: c( 
+    person("Modesto", "Escobar", email = "modesto@usal.es", role = c("cre", "aut", "cph"), comment = c(ORCID = "0000-0003-2072-6071")),
+    person("Carlos", "Prieto", email = "cprietos@usal.es", role = "aut", comment = c(ORCID = "0000-0001-8178-9768")),
+    person("David", "Barrios", email = "metal@usal.es", role = "aut")
+    )
+Maintainer: Modesto Escobar <modesto@usal.es>
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Acknowledgments: Grants CSO2013-49278-EXP, PGC2018-093755-B100,
+        PDC2022-133355-100, PID2023-147358NB-100 funded by
+        MICIU/AEI/10.13039/501100011033 and by “European Union
+        NextGenerationEU/PRTR”.
+Packaged: 2025-07-01 17:25:21 UTC; modes
+Author: Modesto Escobar [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0003-2072-6071>),
+  Carlos Prieto [aut] (ORCID: <https://orcid.org/0000-0001-8178-9768>),
+  David Barrios [aut]
+Repository: CRAN
+Date/Publication: 2025-07-01 17:50:02 UTC

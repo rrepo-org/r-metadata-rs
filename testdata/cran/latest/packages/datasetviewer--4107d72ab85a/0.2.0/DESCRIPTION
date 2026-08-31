@@ -1,0 +1,30 @@
+Package: datasetviewer
+Title: 'SAS Studio'-Style Interactive Dataset Viewer
+Version: 0.2.0
+Authors@R: 
+    person("Vignesh", "Thanikachalam", , "about.vignesh@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: An interactive dataset viewer that renders a fast, scrollable
+    grid with a column-selection panel, per-column property metadata, and
+    a names-versus-labels header toggle, modelled on the 'SAS Studio' table
+    viewer. Runs from one codebase in interactive 'Shiny' apps and in static
+    HTML documents, with a free-text row filter, header sort, and CSV
+    export, and handles large datasets without row sampling by querying
+    them in the browser with 'DuckDB-WASM'.
+License: MIT + file LICENSE
+URL: https://github.com/vthanik/datasetviewer,
+        https://vthanik.github.io/datasetviewer/
+BugReports: https://github.com/vthanik/datasetviewer/issues
+Encoding: UTF-8
+Imports: cli, htmltools, htmlwidgets, jsonlite, nanoparquet, rlang
+Suggests: artoo, dplyr, hms, knitr, quarto, shiny, testthat (>= 3.0.0),
+        tibble, withr
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-22 20:07:53 UTC; vignesh
+Author: Vignesh Thanikachalam [aut, cre, cph]
+Maintainer: Vignesh Thanikachalam <about.vignesh@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-22 20:30:02 UTC

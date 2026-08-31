@@ -1,0 +1,35 @@
+Package: casimir
+Title: Comparing Automated Subject Indexing Methods in R
+Version: 0.3.3
+Authors@R: c(
+    person("Maximilian", "Kähler", , "m.kaehler@dnb.de", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4695-0565")),
+    person("Markus", "Schumacher", , "m.schumacher@dnb.de", role = c("aut")),
+    person("Deutsche Nationalbibliothek", , role = c("cph"))
+  )
+Description: Perform evaluation of automatic subject 
+  indexing methods. The main focus of the package is to enable efficient 
+  computation of set retrieval and ranked retrieval metrics across multiple
+  dimensions of a dataset, e.g. document strata or subsets of the label set. 
+  The package also provides the possibility of computing bootstrap confidence
+  intervals for all major metrics, with seamless integration of parallel
+  computation and propensity scored variants of standard metrics. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: dplyr (>= 1.1.1), furrr, purrr, rsample, tidyr, rlang,
+        collapse (>= 2.1.0), stringr, options, withr
+Suggests: testthat (>= 3.0.0), tibble, tidyverse, ggplot2, future
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LazyData: true
+URL: https://deutsche-nationalbibliothek.github.io/casimir/
+NeedsCompilation: no
+Packaged: 2025-11-13 07:50:18 UTC; maximilian
+Author: Maximilian Kähler [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4695-0565>),
+  Markus Schumacher [aut],
+  Deutsche Nationalbibliothek [cph]
+Maintainer: Maximilian Kähler <m.kaehler@dnb.de>
+Repository: CRAN
+Date/Publication: 2025-11-17 21:30:07 UTC

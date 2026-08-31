@@ -1,0 +1,52 @@
+Package: BSCB
+Title: Bayesian Simultaneous Credible Bands for Polynomial Regression
+Version: 1.0.2
+Authors@R: c(
+    person("Fei", "Yang", email = "fei.yang@manchester.ac.uk", 
+    role = c("aut", "cre","cph"),
+    comment = c(ORCID = "0000-0002-3253-976X")),
+    person("Yang", "Han", email = "yang.han@manchester.ac.uk",
+    role = c("aut","cph"),
+    comment = c(ORCID = "0000-0002-4143-7765")),
+    person("Wei", "Liu", email = "w.liu@soton.ac.uk",
+    role = c("aut","cph"),
+    comment = c(ORCID = "0000-0002-4719-0345")),
+    person("Ian", "Hall", email = "ian.hall@manchester.ac.uk",
+    role = c("aut","cph"),
+    comment = c(ORCID = "0000-0002-3033-2335")))
+Description: Provides functions to construct two-sided Bayesian simultaneous
+    credible bands (BSCBs) for the regression curve in univariate polynomial
+    regression over a finite covariate interval. Six methods are implemented,
+    including Normal-Gamma conjugate priors (with empirical Bayes, 
+    unit-information, and g-prior hyperparameter specifications), non-conjugate 
+    priors fitted via Hamiltonian Monte Carlo (HMC) using 'cmdstanr', and 
+    a non-informative independent Jeffreys prior approach. Also includes 
+    functions for computing the empirical simultaneous coverage rate (ESCR) and 
+    posterior simultaneous coverage probability (PSCP), enabling performance 
+    comparison across methods. The methodology is described in: 
+    Yang et al. (2026). "Bayesian simultaneous credible bands for polynomial 
+    regression" <doi:10.48550/arXiv.2606.28015>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: DEoptim, testthat (>= 3.0.0), cmdstanr, knitr, rmarkdown,
+        ggplot2
+VignetteBuilder: knitr
+Additional_repositories: https://stan-dev.r-universe.dev
+Imports: mvtnorm, MASS, OptimalDesign, instantiate, posterior
+Config/testthat/edition: 3
+Depends: R (>= 4.0)
+Date: 2026-07-23
+URL: https://github.com/fannyyang73/BSCB
+Config/instantiate/stan-dir: src/stan
+BugReports: https://github.com/fannyyang73/BSCB/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-23 15:57:25 UTC; fei
+Author: Fei Yang [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3253-976X>),
+  Yang Han [aut, cph] (ORCID: <https://orcid.org/0000-0002-4143-7765>),
+  Wei Liu [aut, cph] (ORCID: <https://orcid.org/0000-0002-4719-0345>),
+  Ian Hall [aut, cph] (ORCID: <https://orcid.org/0000-0002-3033-2335>)
+Maintainer: Fei Yang <fei.yang@manchester.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-07-23 16:50:25 UTC

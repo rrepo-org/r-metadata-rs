@@ -1,0 +1,27 @@
+Package: textrar
+Title: Interface to 'TexTra' from R
+Version: 0.9.0
+Authors@R: 
+    person("Toshikazu", "Matsumura", , 
+           "matutosi@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2306-6355"))
+Description: A wrapper for the 'TexTra' API <https://mt-auto-minhon-mlt.ucri.jgn-x.jp/>, 
+    a web service for translating texts between different languages. 
+    'TexTra' API account is required to use the service.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/matutosi/textrar,
+        https://matutosi.github.io/textrar/
+Imports: jsonlite, httr
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.2.0), withr
+Language: en-US
+Depends: R (>= 3.6)
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-28 19:37:15 UTC; matutosi
+Author: Toshikazu Matsumura [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2306-6355>)
+Maintainer: Toshikazu Matsumura <matutosi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 20:20:02 UTC

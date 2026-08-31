@@ -1,0 +1,41 @@
+Package: clhs
+Type: Package
+Title: Conditioned Latin Hypercube Sampling
+Version: 0.9.2
+Date: 2025-10-20
+Authors@R: c(
+    person("Pierre", "Roudier", email = "roudierp@landcareresearch.co.nz", role = c("aut", "cre")),
+    person("Colby", "Brugnard", email = "cbrung@ad.nmsu.edu", role = "ctb"),
+    person("Dylan", "Beaudette", email = "dylan.beaudette@ca.usda.gov", role = "ctb"),
+    person("Benjamin", "Louis", email = "contact@benjaminlouis-stat.fr", role = "ctb"),
+    person("Kiri", "Daust", email = "Kiri.Daust@gov.bc.ca", role = "ctb"),
+    person("David", "Clifford", email = "david.clifford@gmail.com", role = "ctb"),
+    person("Andrew", "Brown", email = "andrew.g.brown@usda.gov", role = "ctb", comment = c(ORCID="0000-0002-4565-533X")))
+Maintainer: Pierre Roudier <roudierp@landcareresearch.co.nz>
+URL: https://github.com/pierreroudier/clhs/
+BugReports: https://github.com/pierreroudier/clhs/issues
+Description: Conditioned Latin hypercube sampling, as published by Minasny and McBratney (2006) <DOI:10.1016/j.cageo.2005.12.009>. This method proposes to stratify sampling in presence of ancillary data. An extension of this method, which propose to associate a cost to each individual and take it into account during the optimisation process, is also proposed (Roudier et al., 2012, <DOI:10.1201/b12728>).
+Depends: R (>= 2.14.0)
+Imports: utils, methods, grid, ggplot2, sf, raster, reshape2, plyr,
+        cluster, Rcpp
+LinkingTo: RcppArmadillo, Rcpp
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyLoad: yes
+Suggests: terra, sp, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Collate: 'RcppExports.R' 'clhs-internal.R' 'clhs-data.frame.R'
+        'clhs-package.R' 'clhs-raster.R' 'utils.R' 'clhs.R' 'clhs-sf.R'
+        'clhs-sp.R' 'clhs-terra.R' 'plot.R' 'similarity.R'
+NeedsCompilation: yes
+Packaged: 2025-10-19 22:19:23 UTC; pierreroudier
+Author: Pierre Roudier [aut, cre],
+  Colby Brugnard [ctb],
+  Dylan Beaudette [ctb],
+  Benjamin Louis [ctb],
+  Kiri Daust [ctb],
+  David Clifford [ctb],
+  Andrew Brown [ctb] (ORCID: <https://orcid.org/0000-0002-4565-533X>)
+Repository: CRAN
+Date/Publication: 2025-10-20 05:10:35 UTC

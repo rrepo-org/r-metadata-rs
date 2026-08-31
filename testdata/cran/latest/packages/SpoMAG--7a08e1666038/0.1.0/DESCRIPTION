@@ -1,0 +1,29 @@
+Package: SpoMAG
+Type: Package
+Title: Probability of Sporulation Potential in MAGs
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Douglas", family = "Terra Machado", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6580-7628"), email = "dougterra@gmail.com"),
+    person(given = "Otávio José", family = "Bernardes Brustolini", role = "ctb", comment = c(ORCID = "0000-0001-8132-9753")),
+    person(given = "Ellen", family = "dos Santos Corrêa", role = c("ctb")),
+    person(given = "Ana Tereza", family = "Ribeiro Vasconcelos", role = "ctb", comment = c(ORCID = "0000-0002-4632-2086")))
+Description: Implements an ensemble machine learning approach to predict the sporulation potential of metagenome-assembled genomes (MAGs) from uncultivated Firmicutes based on the presence/absence of sporulation-associated genes.
+License: Artistic-2.0
+Encoding: UTF-8
+Imports: dplyr, tidyr, tibble, stats
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), caret, kernlab, randomForest, readr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-05-27 12:19:32 UTC; douglas
+Author: Douglas Terra Machado [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6580-7628>),
+  Otávio José Bernardes Brustolini [ctb] (ORCID:
+    <https://orcid.org/0000-0001-8132-9753>),
+  Ellen dos Santos Corrêa [ctb],
+  Ana Tereza Ribeiro Vasconcelos [ctb] (ORCID:
+    <https://orcid.org/0000-0002-4632-2086>)
+Maintainer: Douglas Terra Machado <dougterra@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-05-29 18:20:09 UTC

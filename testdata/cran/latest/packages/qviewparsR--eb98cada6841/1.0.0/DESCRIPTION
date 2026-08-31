@@ -1,0 +1,42 @@
+Package: qviewparsR
+Title: Read .Q-View Multiplex ELISA Project Files
+Version: 1.0.0
+Authors@R: c(
+    person("R.", "Heller",
+           email = "raban.heller@uni-ulm.de",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8006-9742")),
+    person("M.", "Mannes",
+           role = c("aut", "cph"),
+           comment = c(ORCID = "0009-0003-4875-8275")))
+Description: Pure-R parser for the binary '.Q-View' project file format
+    used in chemiluminescent multiplex ELISA plate imaging and
+    quantification. Reads the embedded H2 database container and CSV
+    report, and returns project metadata, the analyte panel with units
+    and detection limits, sample well-group assignments, per-well
+    pixel-intensity replicates, summary statistics, optional
+    back-calculated concentrations, and a plate layout, all as tidy
+    tibbles. No Java runtime or H2 database driver is required.
+License: MIT + file LICENSE
+URL: https://github.com/CTTIR/qviewparsR,
+        https://cttir.github.io/qviewparsR/
+BugReports: https://github.com/CTTIR/qviewparsR/issues
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, lifecycle, openxlsx2, readr, rlang, stats, tibble,
+        tidyr, tools, utils
+Suggests: bslib, chromote, DT, ggplot2, knitr, patchwork, rmarkdown,
+        shiny, shinytest2, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+Config/roxygen2/version: 8.0.0
+Config/Needs/website: CTTIR/themakR
+NeedsCompilation: no
+Packaged: 2026-07-16 11:49:44 UTC; rh
+Author: R. Heller [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8006-9742>),
+  M. Mannes [aut, cph] (ORCID: <https://orcid.org/0009-0003-4875-8275>)
+Maintainer: R. Heller <raban.heller@uni-ulm.de>
+Repository: CRAN
+Date/Publication: 2026-07-23 13:50:08 UTC

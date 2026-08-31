@@ -1,0 +1,35 @@
+Package: CardiacDP
+Title: Automated Cardiac Data Processing via ACF, GA & Tracking Index
+Version: 0.4.2
+Authors@R: c(
+  person(given = "Sarah",
+         family = "Lau",
+         role = c("aut", "ctb"),
+         email = "sarahlauly@gmail.com",
+         comment = c(ORCID = "0000-0003-1742-0821")),
+  person(given = "Adrian",
+         family = "Wong",
+         role = c("aut", "ctb"),
+         email = "wong_tszchun@yahoo.com.hk"),
+  person(given = "Yi-Fei",
+         family = "Gu",
+         role = c("aut", "cre"),
+         email = "guyf0601@connect.hku.hk",
+         comment = c(ORCID = "0000-0003-1741-638X")))
+Maintainer: Yi-Fei Gu <guyf0601@connect.hku.hk>
+Description: An algorithm developed to efficiently and accurately process complex and variable cardiac data with three key features: 1. employing autocorrelation to identify recurrent heartbeats and use their periods to compute heart rates; 2. incorporating a genetic algorithm framework to minimize data loss due to noise interference and accommodate within-sequence variations; and 3. introducing a tracking index as a moving reference to reduce errors. Lau, Wong, & Gu (2026) <https://ssrn.com/abstract=5153081>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.3.0)
+Imports: data.table, doParallel, dplyr, foreach, ggplot2, purrr,
+        RColorBrewer, stringr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-10 09:37:37 UTC; yg
+Author: Sarah Lau [aut, ctb] (ORCID: <https://orcid.org/0000-0003-1742-0821>),
+  Adrian Wong [aut, ctb],
+  Yi-Fei Gu [aut, cre] (ORCID: <https://orcid.org/0000-0003-1741-638X>)
+Repository: CRAN
+Date/Publication: 2026-02-12 20:30:08 UTC

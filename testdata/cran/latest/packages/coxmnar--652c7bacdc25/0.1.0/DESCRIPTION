@@ -1,0 +1,48 @@
+Package: coxmnar
+Title: Cox Regression with Missing not at Random Failure Indicators
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut")
+  )
+Description: Implements estimation for the Cox (1972, 1975)
+    <doi:10.1111/j.2517-6161.1972.tb00899.x> <doi:10.1093/biomet/62.2.269>
+    proportional hazards model when the failure indicator (cause of failure) is
+    missing not at random (MNAR), following the two adjusted imputation-based
+    estimating equations of Liu and Liu (2026) <doi:10.1007/s11222-026-10857-1>.
+    Also provided for comparison are the full-data partial-likelihood estimator of
+    Andersen and Gill (1982) <doi:10.1214/aos/1176345976>, the complete-case
+    estimator, and the missing-at-random imputation estimator of Liu and Wang
+    (2010, Statistica Sinica, 20, 1125-1142). The probability models for the
+    failure indicator and for the missingness mechanism are estimated jointly by
+    maximum likelihood following Sun, Xie, and Liang (2013)
+    <doi:10.1007/s11425-012-4492-x>, and a Nadaraya-Watson kernel-smoothed
+    estimator of the missingness propensity is constructed following Qiu, Chen,
+    and Zhou (2015) <doi:10.1016/j.spl.2014.12.006>. Both an asymptotic
+    (sandwich-type) variance estimator and a nonparametric bootstrap variance
+    estimator are provided. When failure indicators are fully observed the
+    estimators reduce algebraically to the classical Cox partial-likelihood
+    estimator.
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: survival (>= 3.5-0), stats, Rdpack
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+RdMacros: Rdpack
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-22 23:23:20 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-31 15:10:02 UTC

@@ -1,0 +1,40 @@
+Package: intervalpsych
+Title: Analyzing Interval Data in Psychometrics
+Version: 0.1.0
+Maintainer: Matthias Kloft <kloft.dev+intervalpsych@gmail.com>
+Authors@R: 
+    c(person("Matthias", "Kloft",
+  email = "kloft.dev+intervalpsych@gmail.com",
+  role = c("aut", "cre", "cph"),
+  comment = c(ORCID = "0000-0003-1845-6957")),
+  person("Björn S.", "Siepe",
+  email = "bjoernsiepe@gmail.com",
+  role = c("aut"),
+  comment = c(ORCID = "0000-0002-9558-4648")))
+Description: Implements the Interval Consensus Model (ICM) for analyzing continuous bounded interval-valued responses in psychometrics using 'Stan' for 'Bayesian' estimation. Provides functions for transforming interval data to simplex representations, fitting item response theory (IRT) models with isometric log-ratio (ILR) and sum log-ratio (SLR) link functions, and visualizing results. The package enables aggregation and analysis of interval-valued response data commonly found in psychological measurement and related disciplines. Based on Kloft et al. (2024) <doi:10.31234/osf.io/dzvw2>.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://matthiaskloft.github.io/intervalpsych/,
+        https://github.com/matthiaskloft/intervalpsych
+BugReports: https://github.com/matthiaskloft/intervalpsych/issues
+RoxygenNote: 7.3.2
+Biarch: true
+Depends: R (>= 4.1)
+Imports: dplyr, ggdist, ggokabeito, ggplot2, methods, posterior, purrr,
+        Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>= 2.18.1),
+        rstantools (>= 2.4)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+LazyData: true
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/Needs/website: rmarkdown
+NeedsCompilation: yes
+Packaged: 2025-07-04 00:13:43 UTC; Matze
+Author: Matthias Kloft [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-1845-6957>),
+  Björn S. Siepe [aut] (ORCID: <https://orcid.org/0000-0002-9558-4648>)
+Repository: CRAN
+Date/Publication: 2025-07-08 09:20:02 UTC

@@ -1,0 +1,27 @@
+Package: ggbond
+Title: Interactive Layout Editor for 'R' Plots
+Version: 0.0.5
+Authors@R: 
+    person(
+        given = "BeiHao",
+        family = "Li",
+        role = c("aut", "cre", "cph"),
+        email = "szright2000@gmail.com"
+    )
+Description: Provides a 'shiny'-based layout editor for arranging 'R' plot
+    objects on a fixed-size canvas. It supports 'ggplot2' plots, 'graphics'
+    functions and recorded plots, 'pheatmap' objects, 'ComplexHeatmap' objects,
+    'grid' grobs, 'gtable' objects, and local raster images, with live preview
+    and PDF or PNG export.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: ggplot2, graphics, grDevices, grid, gridGraphics, jpeg,
+        jsonlite, png, shiny, stats, tiff, tools, utils
+Suggests: ComplexHeatmap, pheatmap
+NeedsCompilation: no
+Packaged: 2026-06-21 15:43:49 UTC; libeihao
+Author: BeiHao Li [aut, cre, cph]
+Maintainer: BeiHao Li <szright2000@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-25 11:50:07 UTC

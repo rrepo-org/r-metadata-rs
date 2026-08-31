@@ -1,0 +1,38 @@
+Package: tourr
+Title: Tour Methods for Multivariate Data Visualisation
+Version: 1.2.8
+Authors@R: c(
+    person("Hadley", "Wickham", email = "h.wickham@gmail.com", role = c("aut", "ctb"), comment = c(ORCID = "0000-0003-4757-117X")),
+    person("Dianne", "Cook", email = "dicook@monash.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3813-7155")),
+    person("Nick", "Spyrison", email = "nicholas.spyrison@monash.edu", role = "ctb", comment = c(ORCID = "0000-0002-8417-0212")),
+    person("Ursula", "Laa", email = "ursula.laa@boku.ac.at", role = "ctb", comment = c(ORCID = "0000-0002-0249-6439")), 
+    person("H. Sherry","Zhang", email = "huizezhangsh@gmail.com", role = "ctb", comment = c(ORCID = "0000-0002-7122-1463")),
+    person("Stuart", "Lee", email = "stuart.lee1@monash.edu", role = "ctb", comment = c(ORCID = "0000-0003-1179-8436")))
+Description: Implements geodesic interpolation and basis
+    generation functions that allow you to create new tour
+    methods from R.
+Depends: R (>= 4.1.0)
+Imports: MASS, tibble, dplyr, stats, utils, grDevices, ash, energy,
+        mgcv, geozoo, cassowaryr, minerva
+Suggests: aplpack, testthat (>= 3.0.0), colorspace, ggplot2, gifski,
+        knitr, rmarkdown, tidyr, covr, plotly
+License: MIT + file LICENSE
+LazyData: true
+URL: https://ggobi.github.io/tourr/
+BugReports: https://github.com/ggobi/tourr/issues
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-05 15:38:49 UTC; cookd
+Author: Hadley Wickham [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0003-4757-117X>),
+  Dianne Cook [aut, cre] (ORCID: <https://orcid.org/0000-0002-3813-7155>),
+  Nick Spyrison [ctb] (ORCID: <https://orcid.org/0000-0002-8417-0212>),
+  Ursula Laa [ctb] (ORCID: <https://orcid.org/0000-0002-0249-6439>),
+  H. Sherry Zhang [ctb] (ORCID: <https://orcid.org/0000-0002-7122-1463>),
+  Stuart Lee [ctb] (ORCID: <https://orcid.org/0000-0003-1179-8436>)
+Maintainer: Dianne Cook <dicook@monash.edu>
+Repository: CRAN
+Date/Publication: 2026-07-05 16:10:03 UTC

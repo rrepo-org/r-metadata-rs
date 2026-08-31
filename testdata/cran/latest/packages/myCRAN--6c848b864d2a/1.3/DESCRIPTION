@@ -1,0 +1,26 @@
+Package: myCRAN
+Version: 1.3
+Date: 2025-10-13
+Title: Graph of Daily and Cumulative Downloads of your Packages
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Author: Barry Zeeberg [aut, cre]
+Depends: R (>= 4.2.0)
+Imports: cranlogs, grDevices, graphics, pkgsearch, plotrix, lubridate,
+        stats
+Description: Plot the daily and cumulative number of downloads of your packages.
+    It is designed to be slightly more convenient than the several similar programs. If you want to run this each morning,
+    you do not need to keep typing in the names of your packages. Also, this combines the daily and cumulative counts in one
+    run, you do not need to run separate programs to get both types of information.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-14 18:45:16 UTC; barryzeeberg
+Repository: CRAN
+Date/Publication: 2025-10-14 19:10:02 UTC

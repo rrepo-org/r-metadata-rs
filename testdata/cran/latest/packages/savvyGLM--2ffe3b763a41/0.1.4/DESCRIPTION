@@ -1,0 +1,43 @@
+Package: savvyGLM
+Type: Package
+Title: Generalized Linear Models with Slab and Shrinkage Estimators
+Version: 0.1.4
+Authors@R: 
+    c(person(given = "Ziwei", family = "Chen", role = c("aut", "cre"),
+             email = "Ziwei.Chen.3@citystgeorges.ac.uk",
+             comment = c(ORCID = "0009-0009-6376-3850")),
+      person(given = "Vali", family = "Asimit", role = "aut",
+             email = "asimit@citystgeorges.ac.uk",
+             comment = c(ORCID = "0000-0002-7706-0066")),
+      person(given = "Claudio", family = "Senatore", role = "aut",
+             email = "Claudio.Senatore@sas.com"))
+Description: Provides a flexible framework for fitting generalized linear models (GLMs)
+    with slab and shrinkage estimators. Methods include the Stein estimator (St),
+    Diagonal Shrinkage (DSh), Simple Slab Regression (SR), Generalized Slab Regression (GSR),
+    Ledoit-Wolf Linear Shrinkage (LW), Quadratic-Inverse Shrinkage (QIS),
+    and Shrinkage (Sh), all integrated into the iteratively reweighted least squares (IRLS)
+    algorithm. This approach enhances estimation accuracy, convergence, and robustness
+    in the presence of multicollinearity. The best-fitting model is selected based on
+    the Akaike Information Criterion (AIC). Methods are related to methods described in
+    Marschner (2011) <doi:10.32614/RJ-2011-012>,
+    Asimit et al. (2025) <https://openaccess.city.ac.uk/id/eprint/35005/>,
+    Ledoit and Wolf (2004) <doi:10.1016/S0047-259X(03)00096-4>, and
+    Ledoit and Wolf (2022) <doi:10.3150/20-BEJ1315>.
+License: GPL (>= 3)
+URL: https://Ziwei-ChenChen.github.io/savvyGLM/
+BugReports: https://github.com/ziwei-chenchen/savvyGLM/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.6.0)
+Imports: stats, MASS, glmnet, expm, parallel, glm2, utils, Matrix, CVXR
+Suggests: devtools, testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-07 12:35:49 UTC; 11605
+Author: Ziwei Chen [aut, cre] (ORCID: <https://orcid.org/0009-0009-6376-3850>),
+  Vali Asimit [aut] (ORCID: <https://orcid.org/0000-0002-7706-0066>),
+  Claudio Senatore [aut]
+Maintainer: Ziwei Chen <Ziwei.Chen.3@citystgeorges.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-05-08 07:31:47 UTC

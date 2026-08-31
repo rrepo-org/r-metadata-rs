@@ -1,0 +1,57 @@
+Package: AbSolution
+Title: Interactive Feature-Based Analysis of AIRR-Seq Data
+Version: 1.0.1
+Authors@R: c(
+    person("Rodrigo", "García-Valiente", , "r.garciavaliente@amsterdamumc.nl", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0003-0444-5587", email2 = "rodrigo.garcia.valiente+absolution@email.com")),
+    person("Charisios", "Triantafyllou", , "charisios.triantafyllou@genyo.es", role = "aut",
+           comment = c(ORCID = "0000-0002-0283-141X")),
+    person("Antoine", "van Kampen", , "a.h.c.vankampen@amsterdamumc.nl", role = c("aut", "ths"),
+           comment = c(ORCID = "0000-0003-1025-7232"))
+  )
+Description: An interactive framework for the exploration and analysis of
+    adaptive immune receptor repertoire sequencing (AIRR-seq) data. It
+    enables large-scale computation and integrated analysis of
+    sequence-derived features, including physicochemical properties, amino
+    acid descriptor sets, sequence motifs, compositional patterns, and
+    somatic hypermutation metrics. The application supports multiscale
+    analysis across sequences, clones, and repertoires, with interactive
+    visualizations and statistical feature selection. 'AbSolution' also
+    facilitates reproducible research by enabling structured export of
+    data, code, parameters, and computational environments.  See
+    <https://github.com/EDS-Bioinformatics-Laboratory/AbSolution> for more
+    details.
+License: GPL (>= 3)
+URL: https://github.com/EDS-Bioinformatics-Laboratory/AbSolution,
+        https://eds-bioinformatics-laboratory.github.io/AbSolution/
+BugReports: https://github.com/EDS-Bioinformatics-Laboratory/AbSolution/issues
+Depends: R (>= 4.4.0)
+Imports: alakazam, attachment, benchmarkme, bigassertr, bigparallelr,
+        bigstatsr, Biostrings, bs4Dash, callr, colourpicker, config (>=
+        0.3.2), dashboardthemes, data.table, dockerfiler, doParallel,
+        dplyr, DT, foreach, fresh, fs, ggplot2, golem (>= 0.4.1),
+        grDevices, htmlwidgets, IRanges, iterors, knitr, parallel,
+        Peptides, plotly, pwalign, reactable, rlang, rmarkdown, seqinr,
+        shiny (>= 1.7.4), shinycssloaders, shinyFiles, shinyjs,
+        shinymanager, shinymeta, shinythemes, shinyWidgets, sortable,
+        stats, stringdist, stringr, sunburstR, tools, umap, upsetjs,
+        utils, viridis, xfun
+Additional_repositories: https://bioconductor.org/packages/release/bioc
+Suggests: testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-26 10:46:27 UTC; rgarcia
+Author: Rodrigo García-Valiente [cre, aut] (ORCID:
+    <https://orcid.org/0000-0003-0444-5587>, email2:
+    rodrigo.garcia.valiente+absolution@email.com),
+  Charisios Triantafyllou [aut] (ORCID:
+    <https://orcid.org/0000-0002-0283-141X>),
+  Antoine van Kampen [aut, ths] (ORCID:
+    <https://orcid.org/0000-0003-1025-7232>)
+Maintainer: Rodrigo García-Valiente <r.garciavaliente@amsterdamumc.nl>
+Repository: CRAN
+Date/Publication: 2026-04-27 08:50:09 UTC

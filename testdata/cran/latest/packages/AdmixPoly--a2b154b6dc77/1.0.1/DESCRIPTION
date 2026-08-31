@@ -1,0 +1,35 @@
+Package: AdmixPoly
+Type: Package
+Title: Global and Local Admixture Inference in Polyploids
+Version: 1.0.1
+Authors@R: c(
+    person("Simon", "Rio", , "simon.rio@cirad.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7014-8789")),
+    person("Tristan", "Mary-Huard", , "tristan.mary-huard@agroparistech.fr", role = "aut",
+           comment = c(ORCID = "0000-0002-3839-9067")),
+    person("Franck", "Gauthier", , "franck.gauthier@inrae.fr", role = "aut",
+           comment = c(ORCID = "0000-0003-0574-065X"))      
+  )
+Description: Provides functions to perform global (genome-wide) and local admixture inference 
+  from bi- and multi-allelic marker dosages (discrete or continuous) in polyploid species.
+License: GPL (>= 3)
+Encoding: UTF-8
+NeedsCompilation: yes
+Imports: Rcpp, purrr, utils, dplyr (>= 1.1.0), tidyr, tibble, ggplot2,
+        magrittr, Matrix, data.table
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Depends: R (>= 3.6.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Language: en-US
+SystemRequirements: A system with a C++ compiler supporting OpenMP
+Config/testthat/edition: 3
+Packaged: 2026-06-17 14:36:20 UTC; rio
+Author: Simon Rio [aut, cre] (ORCID: <https://orcid.org/0000-0001-7014-8789>),
+  Tristan Mary-Huard [aut] (ORCID:
+    <https://orcid.org/0000-0002-3839-9067>),
+  Franck Gauthier [aut] (ORCID: <https://orcid.org/0000-0003-0574-065X>)
+Maintainer: Simon Rio <simon.rio@cirad.fr>
+Repository: CRAN
+Date/Publication: 2026-06-17 21:40:14 UTC

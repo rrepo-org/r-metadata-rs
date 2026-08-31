@@ -1,0 +1,60 @@
+Package: kuenm2
+Type: Package
+Title: Detailed Development of Ecological Niche Models
+Version: 0.1.3
+Authors@R: c(
+    person("Weverton C. F.", "Trindade", email = "wevertonf1993@gmail.com", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-2045-4555")),
+    person("Luis F.", "Arias-Giraldo", email = "lfarias.giraldo@gmail.com",
+    role = "aut", comment = c(ORCID = "0000-0003-4861-8064")),
+    person("Luis", "Osorio-Olvera", email = "luismurao@gmail.com", role = "aut",
+    comment = c(ORCID = "0000-0003-0701-5398")),
+    person("A. Townsend", "Peterson", email = "town@ku.edu", role = "aut",
+    comment = c(ORCID = "0000-0003-0243-2379")),
+    person("Marlon E.", "Cobos", email = "manubio13@gmail.com", role = c("aut"),
+    comment = c(ORCID = "0000-0002-2611-1767")))
+Maintainer: Weverton C. F. Trindade <wevertonf1993@gmail.com>
+BugReports: https://github.com/marlonecobos/kuenm2/issues
+Date: 2026-04-20
+Description: A new set of tools to help with the development of detailed ecological 
+    niche models using multiple algorithms. Pre-modeling analyses and 
+    explorations can be done to prepare data. Model calibration (model selection)
+    can be done by creating and testing models with several parameter combinations.  
+    Handy options for producing final models with transfers are included. Other tools to 
+    assess extrapolation risks and variability in model transfers are also 
+    available. Methodological and theoretical basis for the methods implemented 
+    here can be found in:
+    Peterson et al. (2011) <https://www.degruyter.com/princetonup/view/title/506966>,
+    Radosavljevic and Anderson (2014) <doi:10.1111/jbi.12227>, 
+    Peterson et al. (2018) <doi:10.1111/nyas.13873>,
+    Cobos et al. (2019) <doi:10.7717/peerj.6281>,
+    Alkishe et al. (2020) <doi:10.1016/j.pecon.2020.03.002>,
+    Machado-Stredel et al. (2021) <doi:10.21425/F5FBG48814>,
+    Arias-Giraldo and Cobos (2024) <doi:10.17161/bi.v18i.21742>,
+    Cobos et al. (2024) <doi:10.17161/bi.v18i.21742>.
+Imports: doSNOW, enmpa (>= 0.2.1), foreach (>= 1.5), fpROC (>= 0.1.0),
+        glmnet (>= 4.1), grDevices, graphics, mgcv (>= 1.9), mop (>=
+        0.1.3), parallel, stats, terra (>= 1.6), utils
+SystemRequirements: GDAL (>= 2.2.3), GEOS (>= 3.4.0), PROJ (>= 4.9.3)
+Depends: R (>= 3.5)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, spelling
+VignetteBuilder: knitr
+URL: https://marlonecobos.github.io/kuenm2/
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-04-20 22:34:20 UTC; wever
+Author: Weverton C. F. Trindade [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2045-4555>),
+  Luis F. Arias-Giraldo [aut] (ORCID:
+    <https://orcid.org/0000-0003-4861-8064>),
+  Luis Osorio-Olvera [aut] (ORCID:
+    <https://orcid.org/0000-0003-0701-5398>),
+  A. Townsend Peterson [aut] (ORCID:
+    <https://orcid.org/0000-0003-0243-2379>),
+  Marlon E. Cobos [aut] (ORCID: <https://orcid.org/0000-0002-2611-1767>)
+Repository: CRAN
+Date/Publication: 2026-04-20 23:00:03 UTC

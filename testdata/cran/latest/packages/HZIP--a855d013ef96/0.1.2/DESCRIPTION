@@ -1,0 +1,29 @@
+Package: HZIP
+Type: Package
+Title: Likelihood-Based Inference for Joint Modeling of Correlated
+        Count and Binary Outcomes with Extra Variability and Zeros
+Version: 0.1.2
+Authors@R: c(person("Lizandra C.", "Fabio", email = "lizandra.fabio@ufba.br", role = "aut"),
+  person("Jalmar M. F.", "Carrasco", email = "carrasco.jalmar@ufba.br", role = c("aut", "cre")),
+  person("Victor H.", "Lachos", email = "hlachos@uconn.edu", role = "aut"),
+  person("Ming-Hui", "Chen", email = "ming-hui.chen@uconn.edu", role = "aut"))
+Author: Lizandra C. Fabio [aut],
+  Jalmar M. F. Carrasco [aut, cre],
+  Victor H. Lachos [aut],
+  Ming-Hui Chen [aut]
+Maintainer: Jalmar M. F. Carrasco <carrasco.jalmar@ufba.br>
+Description: Inference approach for jointly modeling correlated count and binary outcomes. This formulation allows simultaneous modeling of zero inflation via the Bernoulli component while providing a more accurate assessment of the Hierarchical Zero-Inflated Poisson's parsimony (Lizandra C. Fabio, Jalmar M. F. Carrasco, Victor H. Lachos and Ming-Hui Chen, Likelihood-based inference for joint modeling of correlated count and binary outcomes with extra variability and zeros, 2026, under submission).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp, RcppParallel, RcppArmadillo
+Imports: Rcpp, Formula, pscl, stats, tibble, dplyr, statmod,
+        RcppParallel, ggplot2, numDeriv, rlang
+Depends: R (>= 3.5)
+URL: https://github.com/carrascojalmar/HZIP
+BugReports: https://github.com/carrascojalmar/HZIP/issues
+NeedsCompilation: yes
+Packaged: 2026-06-02 19:55:43 UTC; jalmarcarrasco
+Repository: CRAN
+Date/Publication: 2026-06-02 20:20:02 UTC

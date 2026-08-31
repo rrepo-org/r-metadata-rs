@@ -1,0 +1,40 @@
+Package: AlgeriAPIs
+Type: Package
+Title: Access Algerian Data via Public APIs
+Version: 0.1.0
+Maintainer: Renzo Caceres Rossi <arenzocaceresrossi@gmail.com>
+Description: Provides functions to access data from public RESTful APIs including 
+    'World Bank API' and 'REST Countries API', retrieving real-time or historical 
+    information related to Algeria. The package enables users to query economic 
+    indicators and international demographic and geopolitical statistics in a 
+    reproducible way. It is designed for researchers, analysts, and developers who 
+    require reliable and programmatic access to Algerian data through established APIs. 
+    For more information on the APIs, see: 
+    'World Bank API' <https://datahelpdesk.worldbank.org/knowledgebase/articles/889392> 
+    and 'REST Countries API' <https://restcountries.com/>.
+License: MIT + file LICENSE
+Language: en
+URL: https://github.com/lightbluetitan/algeriapis,
+        https://lightbluetitan.github.io/algeriapis/
+BugReports: https://github.com/lightbluetitan/algeriapis/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: utils, httr, jsonlite, dplyr, scales, tibble
+Suggests: ggplot2, testthat (>= 3.0.0), knitr, rmarkdown
+Authors@R: 
+    person(
+        given = "Renzo",
+        family = "Caceres Rossi",
+        role = c("aut", "cre"),
+        email = "arenzocaceresrossi@gmail.com",
+        comment = c(ORCID = "0009-0005-0744-854X")
+    )
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-09-30 16:13:11 UTC; Renzo
+Author: Renzo Caceres Rossi [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-0744-854X>)
+Repository: CRAN
+Date/Publication: 2025-10-06 08:40:15 UTC

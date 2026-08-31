@@ -1,0 +1,43 @@
+Package: sobol
+Type: Package
+Title: Quasi-Monte Carlo Sobol Sequence Generator
+Version: 1.0.0
+Authors@R: c(
+    person("Angel", "Robles", email = "a.l.robles.fernandez@gmail.com", role = c("aut", "cre")),
+    person("Ilya M.", "Sobol", role = "ctb", comment = "Original Sobol sequence algorithm"),
+    person("Paul", "Bratley", role = "ctb", comment = "Algorithm implementation reference"),
+    person("Bennett L.", "Fox", role = "ctb", comment = "Algorithm implementation reference"),
+    person("Stephen", "Joe", role = "ctb", comment = "Direction numbers and primitive polynomials"),
+    person("Frances Y.", "Kuo", role = "ctb", comment = "Direction numbers and primitive polynomials")
+    )
+Description: Provides a fast and efficient implementation of Sobol sequences
+    for quasi-Monte Carlo methods. The Sobol sequence is a low-discrepancy
+    sequence with the property that for all values of N, its subsequence
+    x1, ..., xN has a low discrepancy. It can be used to generate
+    quasi-random numbers for use in Monte Carlo integration and other
+    simulation methods. This implementation is based on the algorithms
+    described by Bratley and Fox (1988) <doi:10.1145/42288.214372> and
+    uses direction numbers from Joe and Kuo (2008) <doi:10.1145/1358628.1358630>.
+    The package includes both batch and incremental interfaces with support
+    for arbitrary starting indices and reproducible sequences. It uses 'Rcpp'
+    for efficient 'C++' integration.
+URL: https://alrobles.github.io/sobol/
+BugReports: https://github.com/alrobles/sobol/issues
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.1.0), methods, checkmate
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0), ggplot2, microbenchmark
+RoxygenNote: 7.3.3
+License: GPL (>= 3)
+NeedsCompilation: yes
+Packaged: 2026-05-13 04:35:08 UTC; alrob
+Author: Angel Robles [aut, cre],
+  Ilya M. Sobol [ctb] (Original Sobol sequence algorithm),
+  Paul Bratley [ctb] (Algorithm implementation reference),
+  Bennett L. Fox [ctb] (Algorithm implementation reference),
+  Stephen Joe [ctb] (Direction numbers and primitive polynomials),
+  Frances Y. Kuo [ctb] (Direction numbers and primitive polynomials)
+Maintainer: Angel Robles <a.l.robles.fernandez@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-18 18:30:02 UTC

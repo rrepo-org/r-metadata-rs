@@ -1,0 +1,27 @@
+Package: porter
+Title: Generate Port Files for C Libraries
+Version: 0.1.0
+Authors@R: 
+    person("Hongyuan", "Jia", , "hongyuanjia@cqust.edu.cn", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0075-8183"))
+Description: Generate port files for foreign function interfaces to C
+    libraries by parsing C-family header files with 'CastXML'.
+License: MIT + file LICENSE
+URL: https://github.com/hongyuanjia/porter
+BugReports: https://github.com/hongyuanjia/porter/issues
+SystemRequirements: CastXML
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.6.0)
+Imports: xml2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Collate: 'utils.R' 'cache.R' 'castxml.R' 'check.R' 'field.R' 'port.R'
+        'porter-package.R' 'signature.R' 'write.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2026-06-23 18:40:32 UTC; hongyuanjia
+Author: Hongyuan Jia [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0075-8183>)
+Maintainer: Hongyuan Jia <hongyuanjia@cqust.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-06-30 10:30:08 UTC

@@ -1,0 +1,31 @@
+Package: zentraR
+Title: R Client for the ZENTRA Cloud V5 API
+Version: 0.1.3
+Authors@R: c(
+    person("Travis", "Bates", email = "travis@metergroup.com",
+           role = c("aut", "cre")),
+    person("METER Group, Inc.", role = c("cph", "fnd")))
+Description: Downloads environmental sensor data from the ZENTRA Cloud V5 API
+    (<https://api.zentracloud.io>) into tidy data frames. Provides device
+    discovery, reading retrieval with automatic pagination and rate-limit
+    handling, tidy long output with a wide-format helper, and an incremental
+    'sync' engine with pluggable local storage (RDS files, CSV files, or
+    return-only) so that new readings can be fetched on a schedule and
+    appended to a growing local record.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: cli, httr2 (>= 1.0.0), rlang (>= 1.0.0), tibble, tidyr, vctrs
+Suggests: jsonlite, knitr, rmarkdown, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://gitlab.com/meter-group-inc/pubpackages/zentraR
+BugReports: https://gitlab.com/meter-group-inc/pubpackages/zentraR/-/work_items
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-30 18:31:17 UTC; travis
+Author: Travis Bates [aut, cre],
+  METER Group, Inc. [cph, fnd]
+Maintainer: Travis Bates <travis@metergroup.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 17:20:02 UTC

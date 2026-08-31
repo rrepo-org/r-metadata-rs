@@ -1,0 +1,24 @@
+Package: fmriqa
+Type: Package
+Title: Functional MRI Quality Assurance Routines
+Version: 0.5.0
+Date: 2026-02-20
+Authors@R: person("Martin", "Wilson", email = "martin.wilson111@gmail.com",
+                   role = c("cre","aut"))
+Description: Methods for performing fMRI quality assurance (QA) measurements of
+  test objects. Heavily  based on the fBIRN procedures detailed by Friedman and 
+  Glover (2006) <doi:10.1002/jmri.20583>.
+BugReports: https://github.com/martin3141/fmriqa/issues
+License: GPL-3
+RoxygenNote: 7.3.3
+Imports: viridisLite, RNifti, ggplot2, reshape2, gridExtra, grid,
+        tidyr, optparse, tcltk, RcppEigen, imager, pracma
+Encoding: UTF-8
+Suggests: testthat, covr, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-20 15:19:08 UTC; martin
+Author: Martin Wilson [cre, aut]
+Maintainer: Martin Wilson <martin.wilson111@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-20 15:40:02 UTC

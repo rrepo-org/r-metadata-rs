@@ -1,0 +1,29 @@
+Package: easytable
+Type: Package
+Title: Create Multi-Format Regression Tables
+Version: 2.1.1
+Authors@R: person("Alfredo", "Hernandez Sanchez",
+    email = "alhdzsz@gmail.com",
+    role = c("aut", "cre"))
+Description: Create publication-ready regression tables in multiple
+    formats, including 'Word', 'HTML', 'LaTeX', and 'PDF', from
+    statistical models. Supports lm() and glm() models. Includes options for
+    marginal effects, control variable grouping, and robust standard errors
+    using methods described in Zeileis (2004)
+    <doi:10.18637/jss.v011.i10>. Tables can be exported to 'Word' via
+    'flextable' or to 'LaTeX' for 'PDF' output.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, flextable, magrittr, stats
+Suggests: knitr, kableExtra, lmtest, sandwich, margins, rmarkdown,
+        testthat (>= 3.0.0), palmerpenguins
+VignetteBuilder: knitr
+URL: https://github.com/alfredo-hs/easytable
+BugReports: https://github.com/alfredo-hs/easytable/issues
+NeedsCompilation: no
+Packaged: 2026-05-06 20:36:28 UTC; alhdzsz
+Author: Alfredo Hernandez Sanchez [aut, cre]
+Maintainer: Alfredo Hernandez Sanchez <alhdzsz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-12 19:00:07 UTC

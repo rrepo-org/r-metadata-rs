@@ -1,0 +1,32 @@
+Package: summarytabl
+Type: Package
+Title: Generate Summary Tables for Categorical, Ordinal, and Continuous
+        Data
+Version: 0.2.1
+Authors@R: c(
+    person(given = "Ama", family = "Nyame-Mensah", 
+    email = "ama@anyamemensah.com", role = c("aut", "cre")))
+Maintainer: Ama Nyame-Mensah <ama@anyamemensah.com>
+URL: https://anyamemensah.github.io/summarytabl/,
+        https://github.com/anyamemensah/summarytabl
+BugReports: https://github.com/anyamemensah/summarytabl/issues
+Description: Provides functions for tabulating and summarizing 
+    categorical, multiple response, ordinal, and continuous 
+    variables in R data frames. Makes it easy to create clear, 
+    structured summary tables, so you spend less time wrangling 
+    data and more time interpreting it.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: cli, dplyr (>= 1.1.4), purrr (>= 1.1.0), rlang, stats, tibble,
+        tidyr,
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2025-11-06 10:14:57 UTC; AmaNM
+Author: Ama Nyame-Mensah [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-11-06 11:20:02 UTC

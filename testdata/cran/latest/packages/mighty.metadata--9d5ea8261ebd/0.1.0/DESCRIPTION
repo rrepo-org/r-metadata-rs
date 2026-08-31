@@ -1,0 +1,38 @@
+Package: mighty.metadata
+Title: Manage 'CDISC' 'ADaM' Dataset Specifications in 'YAML' Format
+Version: 0.1.0
+Authors@R: c(
+    person("Aksel", "Thomsen", , "oath@novonordisk.com", role = c("aut", "cre")),
+    person("Ari", "Siggaard Knoph", , "aikp@novonordisk.com", role = "aut"),
+    person("Matthew", "Phelps", , "mewp@novonordisk.com", role = "aut"),
+    person("Giulia", "Pais", , "egzp@novonordisk.com", role = "aut"),
+    person("Novo Nordisk A/S", role = "cph")
+  )
+Description: Load, validate, and manipulate Clinical Data Interchange
+    Standards Consortium ('CDISC') Analysis Data Model ('ADaM') dataset
+    metadata stored as 'YAML' files. Metadata files are validated against
+    a JSON schema. Provides functions to inspect and modify columns,
+    parameters, and row-level operations within and across 'ADaM' domains.
+    Designed for use with the 'mighty' framework.
+License: Apache License (>= 2)
+URL: https://novonordisk-opensource.github.io/mighty.metadata/,
+        https://github.com/NovoNordisk-OpenSource/mighty.metadata
+BugReports: https://github.com/NovoNordisk-OpenSource/mighty.metadata/issues
+Depends: R (>= 4.1)
+Imports: cli, dplyr, glue, purrr, rlang, S7, S7schema (>= 0.1.1),
+        stats, tibble, yaml, zephyr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tidyr, withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-11 16:16:55 UTC; oath
+Author: Aksel Thomsen [aut, cre],
+  Ari Siggaard Knoph [aut],
+  Matthew Phelps [aut],
+  Giulia Pais [aut],
+  Novo Nordisk A/S [cph]
+Maintainer: Aksel Thomsen <oath@novonordisk.com>
+Repository: CRAN
+Date/Publication: 2026-05-15 20:10:07 UTC

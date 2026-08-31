@@ -1,0 +1,29 @@
+Package: unitrootests
+Type: Package
+Title: Comprehensive Unit Root and Stationarity Tests
+Version: 1.1.0
+Authors@R: person("Muhammad Abdullah", "Alkhalaf", email = "muhammedalkhalaf@gmail.com",
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0009-0002-2677-9246"))
+Description: A unified framework for unit root and stationarity testing
+    including quantile ADF tests (Koenker and Xiao, 2004)
+    <doi:10.1198/016214504000001114>, GARCH-based unit root tests with
+    endogenous structural breaks (Narayan and Liu, 2015)
+    <doi:10.1016/j.eneco.2014.11.021>, and comprehensive Dickey-Fuller,
+    Phillips-Perron, KPSS, ERS/DF-GLS, Zivot-Andrews, and
+    Kobayashi-McAleer tests with an Elder-Kennedy decision strategy
+    (Elder and Kennedy, 2001) <doi:10.1080/00220480109595179>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: stats, quantreg, tseries, urca, strucchange
+Suggests: testthat (>= 3.0.0), zoo
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-02 14:53:53 UTC; SYSTEM
+Author: Muhammad Abdullah Alkhalaf [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-2677-9246>)
+Maintainer: Muhammad Abdullah Alkhalaf <muhammedalkhalaf@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-03 02:30:02 UTC

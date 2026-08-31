@@ -1,0 +1,33 @@
+Package: LSJM
+Title: Estimate Location-Scale Joint Models
+Version: 0.1.0
+Authors@R: 
+    c(person("Léonie", "Courcoul", email ="courcoul.leonie498@gmail.com", role = c("aut", "cre")),
+    person("Antoine", "Barbieri", ,email = "antoine.barbieri@u-bordeaux.fr", role = c("aut")),
+    person("Hélène", "Jacqmin-Gadda", email = "helene.jacqmin-gadda@u-bordeaux.fr", role = c("aut"))
+    )
+Description: Estimation of mixed models including a subject-specific variance 
+    that can be time- and covariate-dependent or defined for within- and 
+    between-visit variability. In the joint modeling framework, the package 
+    handles left truncation, interval censoring, and multistate models, and 
+    allows a flexible dependence structure between competing events and the 
+    longitudinal marker. Estimation is performed in a frequentist framework 
+    using the Marquardt-Levenberg algorithm. Methods are described in 
+    Courcoul et al. (2025) <doi:10.1002/sim.70244> and in Courcoul et al. (2026) 
+    <doi:10.1002/bimj.70123>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, marqLevAlg, survival, flexsurv, ggplot2, splines,
+        spacefillr, survminer, foreach, doParallel, SmoothHazard,
+        parallel, mvtnorm, dplyr
+Depends: R (>= 3.5.0)
+NeedsCompilation: yes
+Packaged: 2026-07-24 17:27:14 UTC; courc
+Author: Léonie Courcoul [aut, cre],
+  Antoine Barbieri [aut],
+  Hélène Jacqmin-Gadda [aut]
+Maintainer: Léonie Courcoul <courcoul.leonie498@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 13:10:23 UTC

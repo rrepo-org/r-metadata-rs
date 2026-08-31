@@ -1,0 +1,51 @@
+Package: SampleSizeR
+Type: Package
+Title: Sample Size Calculations for Epidemiological, Clinical, and
+        Diagnostic Studies
+Version: 0.1.0
+Authors@R: 
+    c(
+      person(
+        given = "Vinodh Kumar",
+        family = "Obli Rajendran",
+        email = "vinodhkumar.rajendran@gmail.com",
+        role = c("aut", "cre")
+      ),
+      person(
+        given = "Keerthi",
+        family = "Aaradhana",
+        email = "vkeerthi1817@gmail.com",
+        role = "aut"
+      )
+    )
+Description: Provides comprehensive methods for sample size determination
+    for epidemiological studies, clinical trials, diagnostic accuracy
+    studies, and diagnostic agreement studies. The package supports
+    prevalence surveys, cluster prevalence studies, unmatched
+    case-control studies, cohort studies, superiority,
+    non-inferiority, and equivalence clinical trials, diagnostic
+    sensitivity, diagnostic specificity, receiver operating
+    characteristic (ROC) area under the curve (AUC), and diagnostic
+    agreement studies. Functions include optional adjustments for
+    finite population correction, design effect, unequal allocation,
+    anticipated response rate, and dropout. Results are returned as
+    standardized 'SampleSizeR' objects with print, summary, plot,
+    and data frame methods.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Imports: stats, ggplot2, rlang
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/vinodhpmd/SampleSizeR
+BugReports: https://github.com/vinodhpmd/SampleSizeR/issues
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-25 16:22:33 UTC; m
+Author: Vinodh Kumar Obli Rajendran [aut, cre],
+  Keerthi Aaradhana [aut]
+Maintainer: Vinodh Kumar Obli Rajendran <vinodhkumar.rajendran@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 06:20:03 UTC

@@ -1,0 +1,27 @@
+Package: networkR
+Type: Package
+Title: Network Analysis and Visualization
+Version: 0.1.5
+Date: 2025-09-22
+Authors@R: c(person(given="Claus Thorn", family="Ekstrøm", email="ekstrom@sund.ku.dk", role=c("aut", "cre")),
+             person(given="Bendix", family="Carstensen", email="b@bxc.dk", role="ctb"))
+Maintainer: Claus Thorn Ekstrøm <ekstrom@sund.ku.dk>
+Description: Collection of functions for fast manipulation, handling, and analysis of large-scale
+    networks based on family and social data. Functions are utility functions used to manipulate data
+    in three "formats": sparse adjacency matrices, pedigree trio family data, and pedigree family data.
+    When possible, the functions should be able to handle millions of data points quickly for use in combination
+    with data from large public national registers and databases.
+    Kenneth Lange (2003, ISBN:978-8181281135).
+Imports: Rcpp, data.table, fastmatch, Matrix
+Suggests: testthat
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL (>= 2)
+Encoding: UTF-8
+ByteCompile: true
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-09-22 21:09:54 UTC; ekstrom
+Author: Claus Thorn Ekstrøm [aut, cre],
+  Bendix Carstensen [ctb]
+Repository: CRAN
+Date/Publication: 2025-09-23 06:40:16 UTC

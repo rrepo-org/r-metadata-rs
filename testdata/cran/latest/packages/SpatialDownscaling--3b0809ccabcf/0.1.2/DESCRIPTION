@@ -1,0 +1,30 @@
+Package: SpatialDownscaling
+Type: Package
+Title: Methods for Spatial Downscaling Using Deep Learning
+Version: 0.1.2
+Date: 2026-01-21
+Authors@R: c(person(given = "Mika", family = "Sipilä", role = c("aut", "cre", "cph"), email = "mika.e.sipila@jyu.fi", comment=c(ORCID = "0000-0002-5912-840X")),
+             person(given = "Claudia", family = "Cappello", role = c("aut"), email = "claudia.cappello@unisalento.it", comment=c(ORCID = "0000-0002-7905-5068")),
+             person(given = "Sandra", family = "De Iaco", role = c("aut"), email = "sandra.deiaco@unisalento.it", comment=c(ORCID = "0000-0003-1820-2068")),
+             person(given = "Klaus", family = "Nordhausen", role = c("aut"), email = "klaus.nordhausen@helsinki.fi", comment=c(ORCID = "0000-0002-3758-8501")),
+             person(given = "Sara", family = "Taskinen", role = c("aut"), email = "sara.l.taskinen@jyu.fi", comment=c(ORCID = "0000-0001-9470-7258")))
+Imports: stats, tensorflow, keras3, magrittr, Rdpack, raster, abind
+Description: The aim of the spatial downscaling is to increase the spatial resolution of the gridded geospatial input data. This package contains two deep learning based spatial downscaling methods, super-resolution deep residual network (SRDRN) (Wang et al., 2021 <doi:10.1029/2020WR029308>) and UNet (Ronneberger et al., 2015 <doi:10.1007/978-3-319-24574-4_28>), along with a statistical baseline method bias correction and spatial disaggregation (Wood et al., 2004 <doi:10.1023/B:CLIM.0000013685.99609.9e>). The SRDRN and UNet methods are implemented to optionally account for cyclical temporal patterns in case of spatio-temporal data. For more details of the methods, see Sipilä et al. (2025) <doi:10.48550/arXiv.2512.13753>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RdMacros: Rdpack
+RoxygenNote: 7.3.2
+SystemRequirements: Python (>= 3.8), TensorFlow, Keras
+Depends: R (>= 4.4.0)
+NeedsCompilation: no
+Packaged: 2026-01-21 12:18:06 UTC; mikasipila
+Author: Mika Sipilä [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-5912-840X>),
+  Claudia Cappello [aut] (ORCID: <https://orcid.org/0000-0002-7905-5068>),
+  Sandra De Iaco [aut] (ORCID: <https://orcid.org/0000-0003-1820-2068>),
+  Klaus Nordhausen [aut] (ORCID: <https://orcid.org/0000-0002-3758-8501>),
+  Sara Taskinen [aut] (ORCID: <https://orcid.org/0000-0001-9470-7258>)
+Maintainer: Mika Sipilä <mika.e.sipila@jyu.fi>
+Repository: CRAN
+Date/Publication: 2026-01-26 16:20:38 UTC

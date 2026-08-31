@@ -1,0 +1,34 @@
+Package: pkmapr
+Title: Pakistan Spatial Data Toolkit
+Version: 1.4.0
+Depends: R (>= 4.1.0)
+Authors@R: 
+    person("Abdullah Umer", email = "abdullahumer1101@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0008-4082-8394"))
+Description: Provides a tidy interface to Pakistan's official administrative
+    boundary data from the United Nations Office for the Coordination of
+    Humanitarian Affairs (OCHA). Spatial data at country, province, district,
+    and tehsil levels are embedded in the package as 'sf' objects compatible
+    with the 'tidyverse' and geospatial ecosystem. Includes utilities for
+    geographic dictionary lookup, coordinate reference system selection,
+    spatial measurement, and neighbour structure construction for use with
+    'spdep', 'ggplot2', 'leaflet', and related packages.
+License: GPL-3
+Encoding: UTF-8
+Imports: sf, dplyr, rlang, cli, spdep, leaflet, jsonlite
+Suggests: ggplot2, rmapshaper, httptest2, testthat (>= 3.0.0), tmap,
+        knitr, readr, rmarkdown, spelling, PakPC2023
+VignetteBuilder: knitr
+URL: https://cran.r-project.org/package=pkmapr,
+        https://abdullahumer1101.github.io/pkmapr/,
+        https://github.com/abdullahumer1101/pkmapr/
+BugReports: https://github.com/abdullahumer1101/pkmapr/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-30 13:19:36 UTC; abdullah
+Author: Abdullah Umer [aut, cre] (ORCID:
+    <https://orcid.org/0009-0008-4082-8394>)
+Maintainer: Abdullah Umer <abdullahumer1101@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-19 06:10:02 UTC

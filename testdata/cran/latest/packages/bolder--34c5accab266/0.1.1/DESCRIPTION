@@ -1,0 +1,24 @@
+Package: bolder
+Title: 'RStudio' Add-Ins for Formatted Section Titles
+Version: 0.1.1
+Authors@R: person("Gabriel", "Curti", role = c("aut", "cre"), email = "freitascurti@usp.br")
+Description: Provides 'RStudio' add-ins and helper functions for converting the
+    current editor line, or a supplied character string, into formatted section
+    titles for 'R' scripts. When used as an add-in, it uses 'rstudioapi' to read
+    the active document context and replace only the selected line, so users can
+    bind the add-ins to keyboard shortcuts. The formatter trims common comment
+    and heading markers, converts the label to uppercase, and renders three
+    styles: a five-line boxed title, a framed subtitle, and a simple inline
+    header. Generated titles are padded or centered to a configurable width,
+    using the package-specific width option when set and the session display
+    width otherwise, which helps keep analysis scripts visually consistent and
+    easier to navigate.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: rstudioapi
+NeedsCompilation: no
+Packaged: 2026-05-13 11:15:28 UTC; User
+Author: Gabriel Curti [aut, cre]
+Maintainer: Gabriel Curti <freitascurti@usp.br>
+Repository: CRAN
+Date/Publication: 2026-05-18 18:40:22 UTC

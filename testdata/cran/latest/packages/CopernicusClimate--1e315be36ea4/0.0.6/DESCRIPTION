@@ -1,0 +1,38 @@
+Package: CopernicusClimate
+Title: Search Download and Handle Data from Copernicus Climate Data
+        Service
+Version: 0.0.6
+Authors@R: 
+    c(
+      person("Pepijn", "de Vries", role = c("aut", "cre"),
+             email = "pepijn.devries@outlook.com",
+             comment = c(ORCID = "0000-0002-7961-6646"))
+    )
+Description: Subset and download data from EU Copernicus Climate Data Service:
+    <https://cds.climate.copernicus.eu/>. Import information about the Earth's
+    past, present and future climate from Copernicus into R without the need of
+    external software.
+Depends: R (>= 4.1.0)
+Imports: dplyr, httr2, jsonlite, methods, purrr, rlang, stringr,
+        tibble, tidyr
+Suggests: clipr, ggplot2, knitr, RefManageR, rmarkdown, sf, stars,
+        testthat (>= 3.0.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+Collate: 'CopernicusClimate-package.R' 'helpers.R' 'catalogue.R'
+        'cite.R' 'jobs.R' 'licenses.R' 'python.R' 'retrieve.R'
+        'stars.R' 'token.R'
+Config/testthat/edition: 3
+Language: en-GB
+URL: https://pepijn-devries.github.io/CopernicusClimate/,
+        https://github.com/pepijn-devries/CopernicusClimate/
+BugReports: https://github.com/pepijn-devries/CopernicusClimate/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-20 00:18:49 UTC; vries171
+Author: Pepijn de Vries [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7961-6646>)
+Maintainer: Pepijn de Vries <pepijn.devries@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-07-20 12:20:51 UTC

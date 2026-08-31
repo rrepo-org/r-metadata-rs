@@ -1,0 +1,28 @@
+Package: SplitReg
+Type: Package
+Title: Split Regularized Regression
+Version: 1.0.3
+Date: 2025-03-30
+Authors@R: c(person("Anthony", "Christidis", role=c("aut", "cre"), email = "anthony.christidis@stat.ubc.ca"),
+	     person("Ezequiel", "Smucler", role=c("aut"), email = "ezequiels.90@gmail.com"),
+	     person("Ruben", "Zamar", role=c("aut"), email = "ruben@stat.ubc.ca"))
+Maintainer: Anthony Christidis <anthony.christidis@stat.ubc.ca>
+Description: Functions for computing split regularized estimators defined in Christidis, Lakshmanan, 
+             Smucler and Zamar (2019) <doi:10.48550/arXiv.1712.03561>. The approach fits linear regression models that
+             split the set of covariates into groups. The optimal split of the variables into groups and the 
+             regularized estimation of the regression coefficients are performed by minimizing  an objective 
+             function that encourages sparsity within each group and diversity among them. 
+             The estimated coefficients are then pooled together to form the final fit.
+License: GPL (>= 2)
+Biarch: true
+Imports: Rcpp (>= 0.12.12)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, glmnet, MASS
+NeedsCompilation: yes
+RoxygenNote: 7.3.2
+Packaged: 2025-03-30 18:13:40 UTC; anthony
+Author: Anthony Christidis [aut, cre],
+  Ezequiel Smucler [aut],
+  Ruben Zamar [aut]
+Repository: CRAN
+Date/Publication: 2025-03-30 18:40:01 UTC

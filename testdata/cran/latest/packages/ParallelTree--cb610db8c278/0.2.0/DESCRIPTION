@@ -1,0 +1,24 @@
+Package: ParallelTree
+Type: Package
+Title: Visualizing Multilevel Data with Parallel Tree Plots
+Version: 0.2.0
+Authors@R: person("Patrick", "O'Keefe", role = c("aut", "cre"),
+    email = "pgok15@gmail.com")
+Description: Provides two functions: Group_function() and Parallel_Tree().
+    Group_function() applies a given function (e.g., mean()) to input
+    variable(s) by group across levels of a multilevel data structure, with
+    additional data management options. Parallel_Tree() uses 'ggplot2' to
+    create parallel coordinate plots (technically a facsimile of parallel
+    coordinate plots in a Cartesian coordinate system). Used in combination,
+    these functions can create parallel tree plots, a variant of parallel
+    coordinate plots useful for visualizing multilevel data.
+License: GPL-3
+Encoding: UTF-8
+Imports: stats, ggplot2
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-29 15:24:17 UTC; pgok1
+Author: Patrick O'Keefe [aut, cre]
+Maintainer: Patrick O'Keefe <pgok15@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-03 14:10:18 UTC

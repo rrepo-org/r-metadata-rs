@@ -1,0 +1,24 @@
+Package: anovapowersim
+Title: Simple Power Simulations for ANOVAs
+Version: 1.1.0
+Authors@R: 
+    person("Shaheed", "Azaad", email = "sazaad@uni-muenster.de", role = c("aut", "cre"))
+Description: A-priori power simulations and power-calculations for within, between and mixed ANOVAs based on target (partial) eta-squared values. Supports complex designs with more than two factors and their interactions with a single function call.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: car, dplyr, future, future.apply, ggplot2, MASS, purrr, rlang,
+        stats, tibble, tidyr
+Suggests: knitr, pkgdown, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://shaheedazaad.github.io/anovapowersim/,
+        https://github.com/shaheedazaad/anovapowersim
+BugReports: https://github.com/shaheedazaad/anovapowersim/issues
+NeedsCompilation: no
+Packaged: 2026-05-28 16:46:24 UTC; shaheedazaad
+Author: Shaheed Azaad [aut, cre]
+Maintainer: Shaheed Azaad <sazaad@uni-muenster.de>
+Repository: CRAN
+Date/Publication: 2026-05-31 15:00:38 UTC

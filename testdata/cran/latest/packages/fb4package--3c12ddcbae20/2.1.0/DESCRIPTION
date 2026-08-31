@@ -1,0 +1,44 @@
+Package: fb4package
+Type: Package
+Title: 'Fish Bioenergetics 4.0' Model Implementation with
+        High-Performance 'TMB' Backend
+Version: 2.1.0
+Authors@R: c(
+   person(
+     "Hans", "Ttito",
+     email = "kvttitos@gmail.com",
+     role = c("aut", "cre")
+   )
+ )
+Description: An implementation of the 'Fish Bioenergetics 4.0' framework
+    described in Deslauriers et al. (2017)
+    <doi:10.1080/03632415.2017.1377558>. Provides automated parameter
+    optimization, multi-prey diet modeling, and comprehensive energy budget
+    simulations for fisheries research and aquaculture applications. An
+    optional 'TMB' (Template Model Builder) backend delivers 10-50x speedup
+    in maximum likelihood estimation while maintaining full backward
+    compatibility. Includes species-specific parameter databases and tools
+    for modeling fish growth, consumption, and metabolism under varying
+    environmental conditions.
+URL: https://CRAN.R-project.org/package=fb4package,
+        https://hansttito.github.io/fb4package/,
+        https://github.com/HansTtito/fb4package
+BugReports: https://github.com/HansTtito/fb4package/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0)
+Imports: graphics, grDevices, stats, tools, utils, Rcpp, TMB (>= 1.7.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, pkgdown,
+        microbenchmark, future, furrr, spelling
+LinkingTo: TMB, RcppEigen
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-06-09 07:34:41 UTC; hkev2
+Author: Hans Ttito [aut, cre]
+Maintainer: Hans Ttito <kvttitos@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-09 09:10:02 UTC

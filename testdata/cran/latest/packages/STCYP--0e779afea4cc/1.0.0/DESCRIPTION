@@ -1,0 +1,32 @@
+Package: STCYP
+Title: Spatio-Temporal Crop Yield Prediction
+Version: 1.0.0
+Authors@R: 
+    c(
+    person("Marie", "Michaelides", email= "M.Michaelides@hw.ac.uk", role = c("aut")),
+    person("Mélina", "Mailhot", email= "melina.mailhot@concordia.ca", role = c("aut")),
+    person("Yongkun", "Li", email= "yongkun.li@concordia.ca", role = c("aut", "cre"))
+    )
+Description: Provides crop yield and meteorological data for Ontario, Canada. 
+  Includes functions for fitting and predicting data using spatio-temporal models, as well as
+  tools for visualizing the results. The package builds upon existing R packages, including
+  'copula' (Hofert et al., 2025) <doi:10.32614/CRAN.package.copula>, and
+  'bsts' (Scott, 2024) <doi:10.32614/CRAN.package.bsts>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: bsts, copula, ggplot2, grDevices, rootSolve, stats
+Depends: R (>= 4.0.0)
+LazyData: true
+LazyDataCompression: xz
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0),
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-04 20:18:48 UTC; liyongkun
+Author: Marie Michaelides [aut],
+  Mélina Mailhot [aut],
+  Yongkun Li [aut, cre]
+Maintainer: Yongkun Li <yongkun.li@concordia.ca>
+Repository: CRAN
+Date/Publication: 2025-09-09 14:40:23 UTC

@@ -1,0 +1,53 @@
+Package: sumExtras
+Title: Extra Functions for 'gtsummary' Table Styling
+Version: 1.0.0
+Authors@R: 
+    c(
+        person(
+            "Kyle",
+            "Grealis",
+            email = "kyleGrealis@proton.me",
+            role = c("aut", "cre"),
+            comment = c(ORCID = "0000-0002-9223-8854")
+        ),
+        person(
+            given = "Raymond",
+            family = "Balise",
+            role = c("ctb"),
+            email = "balise@miami.edu",
+            comment = c(ORCID = "0000-0002-9856-5901")
+        ),
+        person(
+            "Daniel",
+            "Maya",
+            email = "dheal.maya@gmail.com",
+            role = 'ctb',
+            comment = c(ORCID = "0000-0002-0164-7768")
+        )
+    )
+Description: Provides additional convenience functions for 'gtsummary' 
+    (Sjoberg et al. (2021) <doi:10.32614/RJ-2021-053>) & 'gt' tables, 
+    including automatic variable labeling from dictionaries, standardized 
+    missing value display, and consistent formatting helpers for streamlined 
+    table styling workflows.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Suggests: broom (>= 1.0.5), broom.helpers (>= 1.20.0), knitr, labelled,
+        survey, testthat (>= 3.0.0), tibble
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Imports: dplyr, gt (>= 0.9.0), gtsummary (>= 1.7.0), rlang
+URL: https://github.com/kyleGrealis/sumExtras,
+        https://www.kyleGrealis.com/sumExtras/
+BugReports: https://github.com/kyleGrealis/sumExtras/issues
+NeedsCompilation: no
+Packaged: 2026-02-11 22:24:35 UTC; kyle
+Author: Kyle Grealis [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9223-8854>),
+  Raymond Balise [ctb] (ORCID: <https://orcid.org/0000-0002-9856-5901>),
+  Daniel Maya [ctb] (ORCID: <https://orcid.org/0000-0002-0164-7768>)
+Maintainer: Kyle Grealis <kyleGrealis@proton.me>
+Repository: CRAN
+Date/Publication: 2026-02-11 22:50:02 UTC

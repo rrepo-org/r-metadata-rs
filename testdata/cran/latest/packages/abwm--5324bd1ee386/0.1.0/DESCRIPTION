@@ -1,0 +1,23 @@
+Package: abwm
+Title: Ansari-Bradley Test with Arbitrarily Missing Data
+Version: 0.1.0
+Authors@R: 
+    person("Yijin", "Zeng", , "yijinzeng98@gmail.com", role = c("aut", "cre"))
+Description: Performs the two-sample Ansari–Bradley test (Ansari & Bradley, 1960 
+    <https://www.jstor.org/stable/2237814>) for univariate, distinct data in the 
+    presence of missing values, as described in Zeng et al. (2025) 
+    <doi:10.48550/arXiv.2509.20332>. This method does not make any assumptions about 
+    the missingness mechanisms and controls the Type I error regardless of the missing 
+    values by taking all possible missing values into account.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: gtools, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: stats
+NeedsCompilation: no
+Packaged: 2025-10-26 10:27:32 UTC; yijin
+Author: Yijin Zeng [aut, cre]
+Maintainer: Yijin Zeng <yijinzeng98@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-04 19:20:02 UTC

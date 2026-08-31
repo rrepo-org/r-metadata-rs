@@ -1,0 +1,32 @@
+Package: LogisticEnsembles
+Type: Package
+Title: Automatically Runs 18 Logistic Models-14 Individual Logistic
+        Models and 4 Ensembles of Models
+Version: 1.0.2
+Authors@R: 
+    person("Russ", "Conte", , "russconte@mac.com", role = c("aut", "cre", "cph"))
+Description: Automatically returns results from 18 logistic models including 14 individual logistic models and 4 logistic ensembles of models. The package also returns 25 plots, 5 tables, and a summary report. The package automatically
+    builds all 18 models, reports all results, and provides graphics to show how the models performed. This can be used for a wide range of data, such as sports or medical data. The package includes medical data (the Pima Indians data set), and
+    information about the performance of Lebron James. The package can be used to analyze many other examples, such as stock market data. The package automatically returns many values for each model, such as
+    True Positive Rate, True Negative Rate, False Positive Rate, False Negative Rate, Positive Predictive Value, Negative Predictive Value, F1 Score, Area Under the Curve. The package also returns 36 Receiver
+    Operating Characteristic (ROC) curves for each of the 18 models.
+License: MIT + file LICENSE
+Depends: adabag, arm, brnn, C50, car, caret, corrplot, Cubist,
+        doParallel, dplyr, e1071, gam, gbm, ggplot2, ggplotify, glmnet,
+        graphics, gridExtra, gt, htmltools, htmlwidgets, ipred, klaR,
+        MachineShop, magrittr, MASS, mda, parallel, pls, pROC, purrr, R
+        (>= 4.1.0), randomForest, ranger, reactable, readr, rpart,
+        scales, stats, tidyr, tree, utils, xgboost
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/InfiniteCuriosity/LogisticEnsembles
+BugReports: https://github.com/InfiniteCuriosity/LogisticEnsembles/issues
+NeedsCompilation: no
+Packaged: 2026-02-26 21:32:50 UTC; russellconte
+Author: Russ Conte [aut, cre, cph]
+Maintainer: Russ Conte <russconte@mac.com>
+Repository: CRAN
+Date/Publication: 2026-02-26 21:50:24 UTC

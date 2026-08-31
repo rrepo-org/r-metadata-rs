@@ -1,0 +1,20 @@
+Package: boostmtree
+Version: 2.0.0
+Date: 2026-04-08
+Title: Boosted Multivariate Trees for Longitudinal Data
+Authors@R: c(person("Hemant", "Ishwaran", email = "hemant.ishwaran@gmail.com", role = "aut"),
+    person("Amol", "Pande", email = "amoljpande@gmail.com", role = c("aut")),
+    person("Udaya B.", "Kogalur", email = "ubk@kogalur.com", role = c("aut", "cre")))
+Author: Hemant Ishwaran [aut],
+  Amol Pande [aut],
+  Udaya B. Kogalur [aut, cre]
+Maintainer: Udaya B. Kogalur <ubk@kogalur.com>
+Depends: R (>= 4.3.0)
+Imports: randomForestSRC (>= 3.5.0), parallel, splines, nlme
+Description: Implements Friedman's gradient descent boosting algorithm for modeling longitudinal response using multivariate tree base learners. Longitudinal response could be continuous, binary, nominal or ordinal.  A time-covariate interaction effect is modeled using penalized B-splines (P-splines) with estimated adaptive smoothing parameter. Although the package is design for longitudinal data, it can handle cross-sectional data as well. Implementation details are provided in Pande et al. (2017), Mach Learn <DOI:10.1007/s10994-016-5597-1>. 
+License: GPL (>= 3)
+URL: https://ishwaran.org/
+NeedsCompilation: no
+Packaged: 2026-04-08 13:59:03 UTC; kogalur
+Repository: CRAN
+Date/Publication: 2026-04-10 08:00:27 UTC

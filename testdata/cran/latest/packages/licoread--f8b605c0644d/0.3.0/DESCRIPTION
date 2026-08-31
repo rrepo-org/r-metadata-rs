@@ -1,0 +1,25 @@
+Package: licoread
+Title: Reads Raw Files from Li-COR Gas Analyzers
+Version: 0.3.0
+Date: 2025-08-05
+Authors@R: 
+    person(given = "Joseph", family = "Gaudard", , "joseph.gaudard@pm.me", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6989-7624"))
+Description: Reads raw files from Li-COR gas analyzers and produces a dataframe that can directly be used with 'fluxible' <https://cran.r-project.org/package=fluxible>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: dplyr, jsonlite, lubridate, purrr, readr, rlang, stringr,
+        tibble, tidyr, yaml
+Depends: R (>= 4.1)
+URL: https://jogaudard.github.io/licoread/
+BugReports: https://github.com/jogaudard/licoread/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-08-18 08:05:56 UTC; jga051
+Author: Joseph Gaudard [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6989-7624>)
+Maintainer: Joseph Gaudard <joseph.gaudard@pm.me>
+Repository: CRAN
+Date/Publication: 2025-08-18 09:50:02 UTC

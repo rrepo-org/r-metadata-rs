@@ -1,0 +1,27 @@
+Package: robslopes
+Type: Package
+Title: Fast Algorithms for Robust Slopes
+Version: 1.1.4
+Date: 2025-12-19
+Authors@R: 
+  c(person(given = "Jakob",
+             family = "Raymaekers",
+             email = "jakob.raymaekers@uantwerpen.be",
+             role = c("aut", "cre")))
+Description: Fast algorithms for the Theil-Sen estimator,
+  Siegel's repeated median slope estimator, and Passing-Bablok regression.
+  The implementation is based on algorithms by
+  Dillencourt et. al (1992) <doi:10.1142/S0218195992000020> and Matousek et. al (1998)  <doi:10.1007/PL00009190>.
+  The implementations are detailed in 
+  Raymaekers (2023) <doi:10.32614/RJ-2023-012> and 
+  Raymaekers J., Dufey F. (2022) <doi:10.48550/arXiv.2202.08060>.
+  All algorithms run in quasilinear time.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.5)
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2025-12-19 14:37:36 UTC; Jakob Raymaekers
+Author: Jakob Raymaekers [aut, cre]
+Maintainer: Jakob Raymaekers <jakob.raymaekers@uantwerpen.be>
+Repository: CRAN
+Date/Publication: 2025-12-19 15:20:08 UTC

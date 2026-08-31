@@ -1,0 +1,22 @@
+Package: QuantileModels
+Title: Estimation of Different Quantile Related Models
+Version: 1.0.0
+Authors@R: 
+    person("Christian", "Jorge Carreiro", , "christianjorge59@gmail.com", role = c("aut", "cre", "cph"))
+Description: Estimation of different quantile models, at the moment only Conditional autoregressive value at risk (CAViaR) proposed by Engle & Manganelli (2004) <doi:10.1198/073500104000000370> with also the specification proposed in Huang et al. (2009) <doi:10.1016/j.eneco.2008.12.006> and it's multivariate extension, Multi-variate multi-quantile CAViaR (MVMQ-CAViaR) proposed by White et al. (2015) <doi:10.1016/j.jeconom.2015.02.004> are available, however, in further updates, other models and extensions will be included.
+License: GPL (>= 3)
+Encoding: UTF-8
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, nloptr, quantreg, numDeriv, xts, zoo, ufRisk, GenSA
+Suggests: knitr, rmarkdown,
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+Config/roxygen2/version: 8.0.0
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-06-21 10:21:56 UTC; Christian
+Author: Christian Jorge Carreiro [aut, cre, cph]
+Maintainer: Christian Jorge Carreiro <christianjorge59@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-25 11:30:07 UTC

@@ -1,0 +1,25 @@
+Type: Package
+Package: CanonicalFamilyExtra
+Title: Extra Canonical Link Family Objects for Generalized Linear
+        Models
+Version: 1.0.0
+Authors@R: 
+    person("Hongxiang", "Qiu", , "david940408@gmail.com", role = c("aut", "cre"))
+Description: Extra family objects in "weird" scenarios, particularly
+    logistic or log-linear model with unbounded or non-binary/non-integer
+    outcomes. Provides binomial_extra() and poisson_extra() as
+    generalizations of binomial() and poisson(). The use of canonical link
+    with the corresponding working likelihood in glm() ensures convexity,
+    making model fitting reliable and independent of starting value.
+    Robert WM Wedderburn (1974) <doi:10.1093/biomet/61.3.439> and Peter McCullagh (1983) <doi:10.1214/aos/1176346056> justified this method to fit generalized linear (mean) models with quasi-/working likelihood.
+License: GPL (>= 2)
+Imports: stats
+Suggests: gee, geepack, SuperLearner, ipred, glmnet
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-04 13:33:04 UTC; qiuhongx
+Author: Hongxiang Qiu [aut, cre]
+Maintainer: Hongxiang Qiu <david940408@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-06 20:30:17 UTC

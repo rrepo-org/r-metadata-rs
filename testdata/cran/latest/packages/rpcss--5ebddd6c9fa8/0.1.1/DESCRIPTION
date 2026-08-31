@@ -1,0 +1,47 @@
+Package: rpcss
+Title: Constitution of Core Collections by Principal Component Scoring
+        Strategy
+Version: 0.1.1
+Authors@R: c(
+    person(given = "J.", family = "Aravind",
+           email = "j.aravind@icar.org.in",
+           role = c("aut", "cre"),
+		       comment = c(ORCID = "0000-0002-4791-442X")),
+    person(given = c("Anju", "Mahendru"), family = "Singh",
+           email = "anju.singh@icar.org.in",
+		       role = "aut",
+		       comment = c(ORCID = "0000-0001-6958-1630")),
+    person("ICAR-NBGPR",
+           role = c("cph"),
+		       comment = c(ROR = "https://ror.org/00scbd467",
+		                   url = "https://nbpgr.org.in/")))
+Description: Generate a Core Collection with Principal Component Scoring 
+    Strategy (PCSS) using qualitative and/or quantitative trait data according 
+    to Hamon and Noirot (1990) <https://www.documentation.ird.fr/hor/fdi:36506>, 
+    Noirot et al. (1996) <doi:10.2307/2527837> and Noirot et al. (2003) 
+    <https://www.documentation.ird.fr/hor/fdi:010031886>.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.3
+BuildManual: TRUE
+Imports: dplyr, FactoMineR, ggplot2, ggrepel, gslnls, mathjaxr,
+        methods, Rdpack, stats, tidyr, utils
+Suggests: EvaluateCore, factoextra, knitr, rmarkdown, pander
+RdMacros: mathjaxr, Rdpack
+Copyright: 2024-2026, ICAR-NBPGR
+URL: https://github.com/aravind-j/rpcss
+        https://cran.r-project.org/package=rpcss
+        https://aravind-j.github.io/rpcss/
+        https://doi.org/10.5281/zenodo.14889174
+BugReports: https://github.com/aravind-j/rpcss/issues
+NeedsCompilation: no
+Packaged: 2026-04-17 09:08:45 UTC; Aravind-DGC
+Author: J. Aravind [aut, cre] (ORCID: <https://orcid.org/0000-0002-4791-442X>),
+  Anju Mahendru Singh [aut] (ORCID:
+    <https://orcid.org/0000-0001-6958-1630>),
+  ICAR-NBGPR [cph] (ROR: <https://ror.org/00scbd467>, url:
+    https://nbpgr.org.in/)
+Maintainer: J. Aravind <j.aravind@icar.org.in>
+Repository: CRAN
+Date/Publication: 2026-04-29 11:50:02 UTC

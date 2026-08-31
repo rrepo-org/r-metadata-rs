@@ -1,0 +1,40 @@
+Package: libipldr
+Title: R Bindings to the 'Rust' 'IPLD' Library
+Version: 0.1.1
+Authors@R: c(
+    person(given = "Johannes B.",
+           family = "Gruber",
+           email = "JohannesB.Gruber@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9177-1772")),
+    person(given = "Ilya",
+           family = "Siamionau",
+           role = "ctb",
+           comment = "Author of the original python-libipld Rust implementation"))
+Description: Provides R bindings to decode DAG-CBOR (Directed Acyclic Graph
+    Concise Binary Object Representation) encoded data, CIDs (Content Identifiers),
+    and CAR (Content Addressable aRchive) files using the 'Rust' 'IPLD'
+    (InterPlanetary Linked Data) library <https://github.com/ipld/libipld>.
+    This is especially useful for working with data from 'IPFS'
+    (InterPlanetary File System) and 'AtProto' (Bluesky) applications.
+License: MIT + file LICENSE
+URL: https://github.com/JBGruber/libipldr
+BugReports: https://github.com/JBGruber/libipldr/issues
+Encoding: UTF-8
+Config/rextendr/version: 0.4.2
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.65
+Suggests: testthat (>= 3.0.0), rextendr (>= 0.2.0), httr2, jsonlite,
+        spelling
+Config/testthat/edition: 3
+Depends: R (>= 4.2)
+Config/roxygen2/version: 8.0.0
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-05-20 11:44:19 UTC; johannes
+Author: Johannes B. Gruber [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9177-1772>),
+  Ilya Siamionau [ctb] (Author of the original python-libipld Rust
+    implementation)
+Maintainer: Johannes B. Gruber <JohannesB.Gruber@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-27 19:40:02 UTC

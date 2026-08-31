@@ -1,0 +1,30 @@
+Package: discSurv
+Version: 2.5.1
+Title: Discrete Time Survival Analysis
+Date: 2026-04-28
+Authors@R: c(person(given = "Thomas", family = "Welchowski", role = c("aut", "cre"), email = "t.welchowski@psychologie.uzh.ch"), 
+    person(given = "Moritz", family = "Berger", role = "aut", email = "moritz.berger@zi-mannheim.de"), 
+    person(given = "David", family = "Koehler", role = "aut", email = "koehler@imbie.uni-bonn.de"), 
+    person(given = "Matthias", family = "Schmid", role = "aut", email = "matthias.schmid@imbie.uni-bonn.de"))
+Description: Provides data transformations, estimation utilities,
+    predictive evaluation measures and simulation functions for discrete time
+    survival analysis.
+Depends: R (>= 3.5.0), treeClust
+Imports: mvtnorm, mgcv, data.table, Rdpack, VGAM, gee, rpart, ranger,
+        mvnfast, utils, rpart.plot, moments, lmtest, lme4, car, gbutils
+RdMacros: Rdpack
+Suggests: Matrix, matrixcalc, numDeriv, caret, Ecdat, pec, survival,
+        nnet, Hmisc
+Encoding: UTF-8
+License: GPL-3
+LazyLoad: yes
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-04-28 16:39:43 UTC; peter
+Author: Thomas Welchowski [aut, cre],
+  Moritz Berger [aut],
+  David Koehler [aut],
+  Matthias Schmid [aut]
+Maintainer: Thomas Welchowski <t.welchowski@psychologie.uzh.ch>
+Repository: CRAN
+Date/Publication: 2026-04-29 09:00:09 UTC

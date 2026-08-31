@@ -1,0 +1,27 @@
+Package: rocvb
+Type: Package
+Title: ROC-Based Inference for Diagnostic Accuracy Under Verification
+        Bias
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Shirui", "Wang",
+      email = "wangshirui1021@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Maintainer: Shirui Wang <wangshirui1021@gmail.com>
+Description: Provides point estimates and confidence intervals for receiver operating characteristic (ROC)–based diagnostic accuracy metrics for tests and biomarkers subject to verification bias. Supported metrics include the Area Under the ROC Curve (AUC), the Youden index, and the sensitivity at a user‑specified specificity level for two‑class continuous tests under missing‑at‑random (MAR) disease verification. Point estimation follows Alonzo and Pepe (2005) <doi:10.1111/j.1467-9876.2005.00477.x>. Multiple types of confidence intervals are implemented and compared, including bootstrap‑based, Method of Variance Estimates Recovery (MOVER)–based, and empirical likelihood (EL)–based intervals; see Wang et al. (2025) <doi:10.1177/09622802251322989> and <https://github.com/swang1021/rocvb>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: emplik, ggplot2, grid, MASS, pROC, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/swang1021/rocvb
+BugReports: https://github.com/swang1021/rocvb/issues
+NeedsCompilation: no
+Packaged: 2026-05-01 09:22:20 UTC; Ray
+Author: Shirui Wang [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-05-05 15:06:10 UTC

@@ -1,0 +1,66 @@
+Package: bayesqm
+Type: Package
+Title: Bayesian Q Methodology: Exact Rank-Order Likelihood for Forced Q
+        Sorts
+Version: 0.2.0
+Date: 2026-08-19
+Authors@R: c(
+    person(given = "Raymond Dacosta", family = "Azadda",
+           email = "rdazadda@alaska.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-4384-4556")),
+    person("Henry Ofoe", "Agbi-Kaiser", role = "aut",
+           comment = c(ORCID = "0009-0008-6127-9136")),
+    person("Hannah D.", "Robinson", role = "aut",
+           comment = c(ORCID = "0009-0000-5159-1363")),
+    person(family = "AK-ACE Team", role = "aut"),
+    person("Karsten", "Hueffer", role = "aut"),
+    person("Taa'aii", "Peter", role = "aut"),
+    person("Stacy", "Rasmus", role = "aut"))
+Description: A Bayesian analysis for Q methodology, alongside the classical
+    one. Models the forced Q sort as an ordered partition of the statements
+    through an exact rank-order likelihood (the design quotas fix the
+    partition margins, so the likelihood of the observed sorting event is
+    exact), fits it by a parameter-expanded Gibbs sampler in R with no
+    compiled code and a
+    convergence gate on rotation-invariant functionals, resolves
+    rotational ambiguity via the MatchAlign post-processing of Poworoznek
+    et al. (2025) <doi:10.1214/25-BA1544>, and returns the familiar Q
+    tables as posterior summaries: credible intervals for bounded
+    participant loadings, flag probabilities with an explicit unclassified
+    state, quota-respecting factor arrays, distinguishing and consensus
+    statements judged against a posterior critical difference and a
+    grid-width equivalence region, one posterior false-discovery rule for
+    all published claims, and a two-signal posterior-predictive workflow
+    for the number of factors.
+License: GPL (>= 3)
+URL: https://github.com/rdazadda/bayesqm,
+        https://rdazadda.github.io/bayesqm/
+BugReports: https://github.com/rdazadda/bayesqm/issues
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+Imports: stats, utils, tools, clue, posterior (>= 1.5.0)
+Suggests: loo (>= 2.7.0), readxl (>= 1.4.0), jsonlite (>= 1.8.0),
+        ggplot2 (>= 3.4.0), knitr (>= 1.40), rmarkdown (>= 2.20),
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/Needs/website: qmethod
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-20 01:22:44 UTC; rdazadda
+Author: Raymond Dacosta Azadda [aut, cre] (ORCID:
+    <https://orcid.org/0009-0002-4384-4556>),
+  Henry Ofoe Agbi-Kaiser [aut] (ORCID:
+    <https://orcid.org/0009-0008-6127-9136>),
+  Hannah D. Robinson [aut] (ORCID:
+    <https://orcid.org/0009-0000-5159-1363>),
+  AK-ACE Team [aut],
+  Karsten Hueffer [aut],
+  Taa'aii Peter [aut],
+  Stacy Rasmus [aut]
+Maintainer: Raymond Dacosta Azadda <rdazadda@alaska.edu>
+Repository: CRAN
+Date/Publication: 2026-08-20 10:52:15 UTC

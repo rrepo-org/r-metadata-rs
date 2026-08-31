@@ -1,0 +1,27 @@
+Package: pepdiff
+Type: Package
+Title: Differential Abundance Analysis for Phosphoproteomics Data
+Version: 1.0.0
+Author: Dan MacLean [aut, cre]
+Description: Provides tools for analyzing differential abundance in proteomics experiments. Implements S3
+    classes for data management and supports Generalized Linear Models (GLM; Nelder and Wedderburn (1972) <doi:10.2307/2344614>), Aligned Rank Transform (ART; Wobbrock et al. (2011) <doi:10.1145/1978942.1978963>), and pairwise test
+    methods for statistical analysis. Includes visualization functions for
+    Principal Component Analysis (PCA), volcano plots, and heatmaps.
+Authors@R: person(given = "Dan", family = "MacLean", role = c("aut", "cre"), email = "dan.maclean@tsl.ac.uk")
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+biocViews:
+Imports: dplyr, tidyr, tibble, rlang, readr, ggplot2, cowplot, emmeans,
+        ARTool, stats, magrittr, stringr, forcats, grid
+Suggests: ComplexHeatmap, UpSetR, RColorBrewer, viridis, circlize,
+        factoextra, RankProd, MKinfer, testthat (>= 3.0.0), knitr,
+        rmarkdown
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-30 12:23:29 UTC; macleand
+Maintainer: Dan MacLean <dan.maclean@tsl.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-04-02 20:00:02 UTC

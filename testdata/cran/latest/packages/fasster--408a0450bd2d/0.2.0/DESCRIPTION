@@ -1,0 +1,39 @@
+Package: fasster
+Version: 0.2.0
+Title: Fast Additive Switching of Seasonality, Trend, and Exogenous
+        Regressors
+Description: Implementation of the FASSTER (Forecasting with Additive Switching 
+    of Seasonality, Trend, and Exogenous Regressors) model for forecasting time 
+    series with multiple seasonal patterns. The model combines state space 
+    methodology with a switching component in the observation equation to allow 
+    flexible modeling of complex seasonal patterns, including time-varying 
+    effects and multiple seasonalities.
+Depends: R (>= 4.1.0), fabletools (>= 0.2.0)
+Imports: dlm, tsibble (>= 0.9.0), purrr, rlang, stats, dplyr (>=
+        1.0.0), distributional, vctrs
+Suggests: tsibbledata (>= 0.2.0), lubridate, knitr, rmarkdown,
+        testthat, spelling, covr
+Authors@R: 
+    c(person(given = "Mitchell",
+             family = "O'Hara-Wild",
+             email = "mail@mitchelloharawild.com",
+             role = c("aut", "cre")),
+      person(given = "Rob",
+             family = "Hyndman",
+             role = c("aut", "ths")))
+URL: https://github.com/tidyverts/fasster,
+        https://fasster.tidyverts.org/
+BugReports: https://github.com/tidyverts/fasster/issues
+License: GPL-3
+Encoding: UTF-8
+ByteCompile: true
+RoxygenNote: 7.3.3
+Language: en-GB
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-27 10:30:28 UTC; mitchell
+Author: Mitchell O'Hara-Wild [aut, cre],
+  Rob Hyndman [aut, ths]
+Maintainer: Mitchell O'Hara-Wild <mail@mitchelloharawild.com>
+Repository: CRAN
+Date/Publication: 2026-01-31 18:50:17 UTC

@@ -1,0 +1,21 @@
+Package: tost.suite
+Version: 3.1.9
+Date: 2026-1-28
+Title: Two One-Sided Tests for Equivalence
+Authors@R: c(person(given = "Alexis", family ="Dinno", role = c("aut", "cre", "cph"), email = "alexis.dinno@pdx.edu", comment = c(ORCID = "0000-0003-2560-310X")))
+Imports: combinat, Hmisc, index0, lm.beta, mathjaxr, rlang, stringr,
+        webuse
+Depends: R (>= 3.5.0)
+RdMacros: mathjaxr
+BuildManual: TRUE
+Description: Ports the 'Stata' ado package 'tost' which provides a suite of commands to perform two one-sided tests for equivalence following the approach by Schuirman (1987) <doi:10.1007/BF01068419>. Commands are provided for t tests on means, z tests on proportions, McNemar's test (1947) <doi:10.1007/BF02295996> on proportions and related tests, tests on the regression coefficients from OLS linear regression (not yet implementing all of the current regression options from the 'Stata' 'tostregress' command, e.g., survey regression options, estimation options, etc.), Wilcoxon's (1945) <doi:10.2307/3001968> signed rank tests, Wilcoxon-Mann-Whitney (1947) <doi:10.1214/aoms/1177730491> rank sum tests, supporting inference about equivalence for a number of paired and unpaired, parametric and nonparametric study designs and data types. Each command tests a null hypothesis that samples were drawn from populations different by at least plus or minus some researcher-defined level of tolerance, which can be defined in terms of units of the data or rank units (Delta), or in units of the test statistic's distribution (epsilon) except for tost.rrp() and tost.rrpi().  Enough evidence rejects this null hypothesis in favor of equivalence within the tolerance.  Equivalence intervals for all tests may be defined symmetrically or asymmetrically.
+License: GPL-2
+LazyData: no
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-02-06 20:32:33 UTC; alexis
+Author: Alexis Dinno [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2560-310X>)
+Maintainer: Alexis Dinno <alexis.dinno@pdx.edu>
+Repository: CRAN
+Date/Publication: 2026-02-09 20:10:02 UTC

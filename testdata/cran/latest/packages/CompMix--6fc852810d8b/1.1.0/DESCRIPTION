@@ -1,0 +1,17 @@
+Package: CompMix
+Type: Package
+Title: A Comprehensive Toolkit for Environmental Mixtures Analysis
+Version: 1.1.0
+Authors@R: c(person("Wei","Hao",email="weihao@umich.edu", role = c("aut","cre")))
+Description: Quantitative characterization of the health impacts associated with exposure to chemical mixtures has received considerable attention in current environmental and epidemiological studies. 'CompMix' package allows practitioners to estimate the health impacts from exposure to chemical mixtures data through various statistical approaches, including Lasso, Elastic net, Bayesian kernel machine regression (BKMR), hierNet, Quantile g-computation, Weighted quantile sum (WQS) and Random forest. Methods and recommendations are described in Hao et al. (2025) <doi:10.1289/EHP15305>.
+License: GPL-3
+Imports: Matrix, mvtnorm, hierNet, glmnet, SuperLearner, bkmr, qgcomp,
+        gWQS, pROC, randomForest
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-12 16:03:54 UTC; hwhao
+Author: Wei Hao [aut, cre]
+Maintainer: Wei Hao <weihao@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-07-13 07:10:20 UTC

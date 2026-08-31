@@ -1,0 +1,43 @@
+Package: sdbuildR
+Title: An Accessible Interface for Stock-and-Flow Modelling
+Version: 2.2.3
+Authors@R: c(
+    person("Kyra Caitlin", "Evers", , "kyra.c.evers@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-6890-3482")),
+    person("STIX Fonts Project Authors", role = c("ctb", "cph"),
+           comment = "Bundled STIX Two Text font (inst/fonts/), SIL Open Font License 1.1"))
+Description: Stock-and-flow models are a computational method from the
+    field of system dynamics. They represent how systems change over time
+    and are mathematically equivalent to ordinary differential equations.
+    'sdbuildR' (system dynamics builder) provides an intuitive interface
+    for constructing stock-and-flow models without requiring extensive
+    domain knowledge. Models can quickly be simulated and revised,
+    supporting iterative development.  'sdbuildR' simulates models in 'R'
+    and 'Julia', and supports computationally intensive ensemble
+    simulations. Additionally, 'sdbuildR' can import models created in
+    'Insight Maker' (<https://insightmaker.com/>).
+License: GPL (>= 3)
+URL: https://kcevers.github.io/sdbuildR/,
+        https://github.com/KCEvers/sdbuildR
+BugReports: https://github.com/KCEvers/sdbuildR/issues
+Depends: R (>= 4.2.0)
+Imports: cli, data.table, deSolve, DiagrammeR, future, future.apply,
+        htmltools, htmlwidgets, igraph, jsonlite, JuliaConnectoR,
+        plotly, progressr, rlang, stringi, stringr, textutils, tools,
+        utils, withr, xml2
+Suggests: callr, gt, DiagrammeRsvg, kableExtra, knitr, qgraph, rsvg,
+        testthat (>= 3.0.0), this.path, webshot2, bslib
+Config/Needs/website: rmarkdown, lavaan, shiny
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-22 21:21:40 UTC; kevers1
+Author: Kyra Caitlin Evers [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-6890-3482>),
+  STIX Fonts Project Authors [ctb, cph] (Bundled STIX Two Text font
+    (inst/fonts/), SIL Open Font License 1.1)
+Maintainer: Kyra Caitlin Evers <kyra.c.evers@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-23 11:30:02 UTC

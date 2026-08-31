@@ -1,0 +1,25 @@
+Package: cpgfR
+Title: Consolidates Information from the Federal Government Payment
+        Card
+Version: 0.0.1.0
+Authors@R: c( 
+    person("Dalson", "Figueiredo", email = "dalson.figueiredofo@ufpe.br", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-6982-2262")),
+    person("Denisson", "Silva", email = "denissoncsol@gmail.com", role = "aut", 
+           comment = c(ORCID = "0000-0003-2771-8146")))
+Maintainer: Dalson Figueiredo <dalson.figueiredofo@ufpe.br>
+Description: Provides access to consolidated information from the Brazilian Federal Government Payment Card. Includes functions to retrieve, clean, and organize data directly from the Transparency Portal <https://portaldatransparencia.gov.br/download-de-dados/cpgf/> and a curated dataset hosted on the Open Science Framework <https://osf.io/z2mxc/>.
+    Useful for public spending analysis, transparency research, and reproducible workflows in auditing or investigative journalism.
+License: GPL-3
+Encoding: UTF-8
+BugReports: https://github.com/datafobia/cpgf/issues
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+Imports: data.table, stringr, osfr, lubridate, deflateBR, curl
+NeedsCompilation: no
+Packaged: 2025-06-17 15:18:42 UTC; denis
+Author: Dalson Figueiredo [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6982-2262>),
+  Denisson Silva [aut] (ORCID: <https://orcid.org/0000-0003-2771-8146>)
+Repository: CRAN
+Date/Publication: 2025-06-18 12:00:02 UTC

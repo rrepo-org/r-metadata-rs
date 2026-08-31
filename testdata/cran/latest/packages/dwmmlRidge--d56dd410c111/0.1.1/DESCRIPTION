@@ -1,0 +1,45 @@
+Package: dwmmlRidge
+Type: Package
+Title: Dynamically Weighted Modified Maximum Likelihood (DWMML) Ridge
+        Regression
+Version: 0.1.1
+Authors@R: c(
+    person("Filiz", "Karadag", email = "filiz.karadag@ege.edu.tr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0116-7772")),
+    person("Hakan Savas", "Sazak", email = "hakan.savas.sazak@ege.edu.tr", role = "aut",
+           comment = c(ORCID = "0000-0001-6123-1214")),
+    person("Olgun", "Aydin", email = "olgun.aydin@pg.edu.pl", role = "aut",
+           comment = c(ORCID = "0000-0002-7090-0931")))
+Description: Implements the dynamically weighted modified maximum likelihood
+ ridge (DWMMLR) regression estimator, a robust and multicollinearity-aware
+ linear regression estimator that combines the DWMML3 weighting procedure of
+ Sazak (2019) <doi:10.1080/00949655.2019.1571060> with ridge penalization to
+ address both outlier sensitivity and variance inflation due to
+ multicollinearity. The ridge parameter is selected automatically using the
+ approach implemented in the 'ridgregextra' package (Karadag, Sazak, and
+ Aydin, 2023) <https://CRAN.R-project.org/package=ridgregextra>, described
+ further in Karadag, Sazak, and Aydin (2026)
+ <doi:10.1080/02664763.2026.2655681>, which targets a variance inflation
+ factor (VIF) close to but not below 1, removing the need for manual tuning.
+ Returns comprehensive outputs (coefficients, fitted values, residuals, mean
+ squared error (MSE), standard errors, R-squared, and adjusted R-squared)
+ through a simple x/y interface.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: MASS, stats, Styperidge.reg
+Suggests: isdals, mctest
+Enhances: ridgregextra
+URL: https://github.com/filizkrdg/dwmmlRidge
+BugReports: https://github.com/filizkrdg/dwmmlRidge/issues
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-06-22 18:02:59 UTC; pc
+Author: Filiz Karadag [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0116-7772>),
+  Hakan Savas Sazak [aut] (ORCID:
+    <https://orcid.org/0000-0001-6123-1214>),
+  Olgun Aydin [aut] (ORCID: <https://orcid.org/0000-0002-7090-0931>)
+Maintainer: Filiz Karadag <filiz.karadag@ege.edu.tr>
+Repository: CRAN
+Date/Publication: 2026-06-26 10:10:02 UTC

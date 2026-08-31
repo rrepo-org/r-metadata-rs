@@ -1,0 +1,34 @@
+Package: simOutrank
+Title: Outranking-Based Trace Clustering
+Version: 0.3.0
+Authors@R: 
+    person("Pavlos", "Delias", , "pavlos.delias@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3722-2307"))
+Description: Implements outranking-based trace clustering for process
+    mining. Pairwise similarity between traces is assessed on multiple,
+    problem-specific criteria using ELECTRE-III-style partial concordance
+    and discordance indices with indifference, similarity and veto
+    thresholds. The aggregated credibility matrix is then clustered using
+    normalized spectral clustering or hierarchical clustering. Also
+    includes outlier trimming, must-link/cannot-link adjustments,
+    validation indices and diagnostic plots.
+License: GPL-3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 8.0.0
+Imports: graphics, lpSolve, stats, stringdist
+Suggests: bupaR, clValid, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://github.com/pdelias/simOutrank,
+        https://pdelias.github.io/simOutrank/
+BugReports: https://github.com/pdelias/simOutrank/issues
+NeedsCompilation: no
+Packaged: 2026-07-10 13:48:26 UTC; pavlos
+Author: Pavlos Delias [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3722-2307>)
+Maintainer: Pavlos Delias <pavlos.delias@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-19 13:00:02 UTC

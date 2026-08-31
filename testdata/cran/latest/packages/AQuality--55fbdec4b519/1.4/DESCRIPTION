@@ -1,0 +1,22 @@
+Package: AQuality
+Type: Package
+Title: Water and Measurements Quality
+Version: 1.4
+Date: 2025-04-13
+Authors@R: c(person("Maela", "Lupo", role = c("aut","cre"),
+                    email = "maela.lupo@gmail.com"),
+             person("Andrea", "Porpatto", role = "aut"),
+             person("Rosa", "Marzullo", role = "aut"),
+             person("Alfredo", "Rigalli", role = "aut"))
+Author: Maela Lupo [aut, cre],
+  Andrea Porpatto [aut],
+  Rosa Marzullo [aut],
+  Alfredo Rigalli [aut]
+Maintainer: Maela Lupo <maela.lupo@gmail.com>
+Description: The functions proposed in this package allows to evaluate the process of measurement of the chemical components of water numerically or graphically. TSSS(), ICHS and datacheck() functions are useful to control the quality of measurements of chemical components of a sample of water. If one or more measurements include an error, the generated graph will indicate it with a position of the point that represents the sample outside the confidence interval. The function CI() allows to evaluate the possibility of contamination of a water sample after being obtained. Validation() is a function that allows to calculate the quality parameters of a technique for the measurement of a chemical component.
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2025-04-13 11:48:24 UTC; tresalamos
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-04-13 12:30:01 UTC

@@ -1,0 +1,32 @@
+Package: SeroTrackR
+Type: Package
+Title: Serology-Based Data Analysis and Visualization
+Version: 1.1.1
+Authors@R: c(
+    person(
+      "Dionne", "Argyropoulos",
+      email = "argyropoulos.d@wehi.edu.au",
+      role = c("aut", "cre")
+    )
+  )
+Description: Data wrangling and cleaning, quality control checks and 
+  implementation of machine learning classification algorithm. 
+License: CC BY 4.0
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, drc, forcats, ggplot2, here, janitor, kableExtra,
+        knitr, magrittr, openxlsx, parsnip, purrr, ranger, readxl,
+        rmarkdown, stats, stringr, tidyr, tidyselect, utils, workflows
+URL: https://github.com/dionnecargy/SeroTrackR,
+        https://dionnecargy.github.io/SeroTrackR/
+BugReports: https://github.com/dionnecargy/SeroTrackR/issues
+Suggests: glue, htmltools, httr, jsonlite, readr, rsconnect,
+        shiny.fluent, tidyverse, zoo
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-26 09:30:35 UTC; argyropoulos.d
+Author: Dionne Argyropoulos [aut, cre]
+Maintainer: Dionne Argyropoulos <argyropoulos.d@wehi.edu.au>
+Repository: CRAN
+Date/Publication: 2026-05-27 07:20:16 UTC

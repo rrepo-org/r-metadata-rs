@@ -1,0 +1,75 @@
+Package: babebi
+Type: Package
+Title: Bayesian Estimation and Validation for Small-N Designs with
+        Rater Bias
+Version: 0.1.0
+Authors@R: c(
+    person(
+      given = "Irene",
+      family = "Gianeselli",
+      email = "irene.gianeselli@unibz.it",
+      role = c("aut", "cre"),
+      comment = c(
+        ORCID = "0000-0002-8689-3035",
+        affiliation = "Free University of Bozen-Bolzano"
+      )
+    ),
+    person(
+      given = "Andrea",
+      family = "Bosco",
+      role = "aut",
+      comment = c(
+        ORCID = "0000-0002-9458-3993",
+        affiliation = "University of Bari Aldo Moro"
+      )
+    ),
+    person(
+      given = "Demis",
+      family = "Basso",
+      role = "aut",
+      comment = c(
+        ORCID = "0000-0002-4595-3513",
+        affiliation = "Free University of Bozen-Bolzano"
+      )
+    )
+  )
+Description: Approximate Bayesian inference and Monte Carlo validation for
+    small-N repeated-measures designs with two time points and two raters.
+    The package is intended for applications in which sample size is limited
+    and the observed outcome may be affected by rater-specific bias.
+    User-supplied data are standardised into a common long-format structure.
+    Pre-post effects are analysed using difference scores in a linear model
+    with a rater indicator as covariate. Posterior summaries for the
+    regression coefficients are obtained from a large-sample normal
+    approximation centred at the least-squares estimate with plug-in
+    covariance under a flat improper prior. Evidence for a non-zero
+    pre-post effect, adjusted for rater differences, is summarised using a
+    BIC-based approximation to the Bayes factor for comparison between
+    models with and without the pre-post effect. Monte Carlo validation uses
+    design quantities estimated from the observed data, including sample
+    size, mean pre-post change, and second-rater additive discrepancy, and
+    summarises inferential performance in terms of bias, root mean squared
+    error, credible interval coverage, posterior tail probabilities, and
+    mean Bayes factor values. For background on the BIC approximation and
+    Bayes factors, see Schwarz (1978)
+    <doi:10.1214/aos/1176344136> and Kass and Raftery (1995)
+    <doi:10.1080/01621459.1995.10476572>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-22 12:33:34 UTC; irene
+Author: Irene Gianeselli [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8689-3035>, affiliation: Free
+    University of Bozen-Bolzano),
+  Andrea Bosco [aut] (ORCID: <https://orcid.org/0000-0002-9458-3993>,
+    affiliation: University of Bari Aldo Moro),
+  Demis Basso [aut] (ORCID: <https://orcid.org/0000-0002-4595-3513>,
+    affiliation: Free University of Bozen-Bolzano)
+Maintainer: Irene Gianeselli <irene.gianeselli@unibz.it>
+Repository: CRAN
+Date/Publication: 2026-04-23 20:10:09 UTC

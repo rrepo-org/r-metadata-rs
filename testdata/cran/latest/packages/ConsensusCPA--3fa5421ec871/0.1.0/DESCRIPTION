@@ -1,0 +1,31 @@
+Package: ConsensusCPA
+Type: Package
+Title: Consensus-Based Change-Point Analysis Using Multiple Statistical
+        Tests
+Version: 0.1.0
+Authors@R: c(person(given = "S. Vishnu", family = "Shankar", email = "S.vishnushankar55@gmail.com", role = c("aut", "cre")), person(given = "Santosha", family = "Rathod", role = "aut"), person(given = "Mrinmoy", family = "Ray", role = "aut"), person(given = "Anil", family = "Kumar", role = "aut"), person(given = "V.", family = "Lavanya", role = "aut"), person(given = "Prabhat", family = "Kumar", role = "aut"))
+Maintainer: S. Vishnu Shankar <S.vishnushankar55@gmail.com>
+Description: Provides a unified framework for detecting change points in
+    univariate time series using multiple statistical methods, including
+    Pettitt's test, Buishand Range test, Buishand U test, and the Standard
+    Normal Homogeneity Test (SNHT). The package summarizes individual test
+    results, determines a consensus change point using majority, median,
+    or weighted agreement approaches, exports results with
+    graphical comparisons of observations for before and after
+    the detected change point. The methodology is further described in
+    Laasya et al. (2026) <doi:10.1007/s11069-025-07783-2>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, rlang, trend, openxlsx, zoo
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-17 15:25:51 UTC; JARVIS
+Author: S. Vishnu Shankar [aut, cre],
+  Santosha Rathod [aut],
+  Mrinmoy Ray [aut],
+  Anil Kumar [aut],
+  V. Lavanya [aut],
+  Prabhat Kumar [aut]
+Repository: CRAN
+Date/Publication: 2026-08-24 14:50:13 UTC

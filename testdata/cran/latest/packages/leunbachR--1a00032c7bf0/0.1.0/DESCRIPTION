@@ -1,0 +1,31 @@
+Package: leunbachR
+Title: Leunbach Test Equating
+Version: 0.1.0
+URL: https://github.com/pgmj/leunbachR,
+        https://pgmj.github.io/leunbachR/
+BugReports: https://github.com/pgmj/leunbachR/issues
+Authors@R: 
+    person("Magnus", "Johansson", , "pgmj@pm.me", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1669-592X"))
+Description: Implements the Leunbach test equating method, following the
+    'DIGRAM' software written by Svend Kreiner. Both direct and indirect
+    equating are available, with parametric bootstrap standard errors and
+    diagnostic statistics including the Goodman-Kruskal gamma test and
+    orbit analysis for person fit. See Adroher et al. (2019)
+    <doi:10.1186/s12874-019-0768-y> for details of the method.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, mirai, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/Needs/website: rmarkdown, dplyr, tidyr, ggplot2, knitr, mirt,
+        equate, SNSequate, kequate, brglm2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-29 10:40:43 UTC; magnus.johansson.3
+Author: Magnus Johansson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1669-592X>)
+Maintainer: Magnus Johansson <pgmj@pm.me>
+Repository: CRAN
+Date/Publication: 2026-06-02 08:20:02 UTC

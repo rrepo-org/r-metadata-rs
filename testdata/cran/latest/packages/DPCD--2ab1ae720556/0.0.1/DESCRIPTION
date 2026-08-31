@@ -1,0 +1,24 @@
+Package: DPCD
+Title: Dirichlet Process Clustering with Dissimilarities
+Version: 0.0.1
+Authors@R: 
+    person("Sam", "Morrissette", email = "samuel.morrissette01@gmail.com", role = c("cph", "aut", "cre"))
+Description: A Bayesian hierarchical model for clustering dissimilarity data using the Dirichlet process. The latent configuration of objects and the number of clusters are automatically inferred during the fitting process. The package supports multiple models which are available to detect clusters of various shapes and sizes using different covariance structures. Additional functions are included to ensure adequate model fits through prior and posterior predictive checks. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: ggplot2, bayesplot, mcclust, cluster, truncnorm
+Suggests: spelling,
+Config/testthat/edition: 3
+Depends: nimble, R (>= 3.5)
+URL: https://github.com/SamMorrissette/DPCD
+BugReports: https://github.com/SamMorrissette/DPCD/issues
+Language: en-US
+LazyData: true
+LazyDataCompression: xz
+NeedsCompilation: no
+Packaged: 2025-12-14 02:22:35 UTC; samue
+Author: Sam Morrissette [cph, aut, cre]
+Maintainer: Sam Morrissette <samuel.morrissette01@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-19 14:00:02 UTC

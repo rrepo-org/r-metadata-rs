@@ -1,0 +1,30 @@
+Package: readoecd
+Title: Download and Tidy Data from the 'OECD'
+Version: 0.3.3
+Authors@R: person("Charles", "Coverdale", email = "charlesfcoverdale@gmail.com",
+    role = c("aut", "cre"))
+Description: Provides clean, tidy access to key economic indicators published
+    by the 'Organisation for Economic Co-operation and Development' ('OECD'),
+    covering GDP, CPI inflation, unemployment, tax revenue, government deficit,
+    health expenditure, education expenditure, income inequality, labour
+    productivity, and current account balance across all
+    38 'OECD' member countries. Data is downloaded from the 'OECD Data Explorer'
+    API <https://data-explorer.oecd.org> on first use and cached locally for
+    subsequent calls. Returns tidy long-format data frames ready for analysis
+    and visualisation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+URL: https://github.com/charlescoverdale/readoecd
+BugReports: https://github.com/charlescoverdale/readoecd/issues
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: httr2, cli
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-17 18:23:47 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-18 08:30:02 UTC

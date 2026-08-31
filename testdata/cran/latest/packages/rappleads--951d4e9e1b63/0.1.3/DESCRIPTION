@@ -1,0 +1,30 @@
+Package: rappleads
+Title: Get Data from 'Apple Ads Campaign Management API'
+Version: 0.1.3
+Authors@R: 
+    c(person(given  = "Alexey",
+             family = "Seleznev",
+             role   = c("aut", "cre"),
+             email  = "selesnow@gmail.com",
+             comment = c(ORCID = "0000-0003-0410-7385")),
+      person(given = "Netpeak",
+             role = c("cph")))
+Description: Provides functions to load and manage data from Apple Ads 
+    accounts using the 'Apple Ads Campaign Management API' 
+    <https://developer.apple.com/documentation/apple_ads>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: cli, dplyr, httr2, openssl, pbapply, purrr, rappdirs, retry,
+        snakecase, stringr, tidyr, yaml
+Depends: R (>= 4.1.0)
+URL: https://github.com/selesnow/rappleads
+BugReports: https://github.com/selesnow/rappleads/issues
+NeedsCompilation: no
+Packaged: 2025-08-22 07:23:52 UTC; User
+Author: Alexey Seleznev [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0410-7385>),
+  Netpeak [cph]
+Maintainer: Alexey Seleznev <selesnow@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-08-27 16:30:12 UTC

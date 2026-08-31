@@ -1,0 +1,26 @@
+Package: rob
+Title: Run Orders with Assignment-Expansion Method
+Version: 0.1.0
+Authors@R: 
+    c(person("Romario", "Conto", email ="racontol@unal.edu.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9944-137X")),
+    person("Alexander", "Correa", email = "alcorrea@unal.edu.co", role = "ctb"),
+    person("Olga", "Usuga", email ="olga.usuga@udea.edu.co", role = "ctb"),
+    person("Pablo", "Maya", email = "pablo.maya@udea.edu.co", role = "ctb")
+    )
+Maintainer: Romario Conto <racontol@unal.edu.co>
+Description: It enables the identification of sequentialexperimentation orders for factorial designs that jointly reduce bias and the number of level changes. The method used is that presented by Conto et al. (2025), known as the Assignment-Expansion method, which consists of adapting the linear programming assignment problem to generate balanced experimentation orders. The properties identified are then generalized to designs with a larger number of factors and levels using the expansion method proposed by Correa et al. (2009) and later generalized by Bhowmik et al. (2017). For more details see Conto et al. (2025) <doi:10.1016/j.cie.2024.110844>, Correa et al. (2009) <doi:10.1080/02664760802499337> and Bhowmik et al. (2017) <doi:10.1080/03610926.2016.1152490>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/RomarioContoL/rob
+BugReports: https://github.com/RomarioContoL/rob/issues
+Imports: FMC, minimalRSD
+NeedsCompilation: no
+Packaged: 2025-04-18 04:16:48 UTC; pc
+Author: Romario Conto [aut, cre] (<https://orcid.org/0000-0002-9944-137X>),
+  Alexander Correa [ctb],
+  Olga Usuga [ctb],
+  Pablo Maya [ctb]
+Repository: CRAN
+Date/Publication: 2025-04-22 13:50:02 UTC

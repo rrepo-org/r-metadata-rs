@@ -1,0 +1,33 @@
+Package: ipw
+Version: 1.3.0
+Title: Estimate Inverse Probability Weights
+Authors@R: c(
+    person(c("Hung", "Thai"), "Tran", role = c("aut", "cre"), email = "hungtt@oucru.org"),
+    person(c("Willem", "M."), "van der Wal", role = "aut",
+           email = "willem@vanderwalresearch.com"),
+    person(c("Ronald", "B."), "Geskus", role = "aut",
+           email = "rgeskus@oucru.org",
+           comment = "maintainer 2011-2022"))
+Author: Hung Thai Tran [aut, cre],
+  Willem M. van der Wal [aut],
+  Ronald B. Geskus [aut] (maintainer 2011-2022)
+Maintainer: Hung Thai Tran <hungtt@oucru.org>
+Depends: R (>= 3.2.0)
+Imports: MASS, nnet, survival, geepack, graphics, methods, stats
+Suggests: nlme, survey, boot, testthat (>= 3.0.0)
+Description: Functions to estimate the probability to receive the observed treatment, based on
+    individual characteristics. The inverse of these probabilities can be used as weights when
+	estimating causal effects from observational data via marginal structural models. Both point
+	treatment situations and longitudinal studies can be analysed. The same functions can be used to
+	correct for informative censoring.	
+Encoding: UTF-8
+License: MIT + file LICENSE
+NeedsCompilation: no
+RoxygenNote: 7.3.3.9000
+LazyData: true
+Config/testthat/edition: 3
+URL: https://github.com/TranHung93/ipw
+BugReports: https://github.com/TranHung93/ipw/issues
+Packaged: 2026-01-27 06:54:49 UTC; hungtt
+Repository: CRAN
+Date/Publication: 2026-01-27 07:10:02 UTC

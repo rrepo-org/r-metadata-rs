@@ -1,0 +1,49 @@
+Package: ArvindSt
+Title: Five Novel Stochastic Regression Models with Arvind-Distributed
+        Errors and Effects
+Version: 1.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi",
+           email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey",
+           email = "arvindmzu@gmail.com",
+           role = "aut")
+    )
+Description: Implements the 'Arvind' distribution and five novel stochastic
+    regression models that replace the traditional Gaussian error assumption
+    with 'Arvind'-distributed errors. The 'Arvind' distribution is a flexible
+    single-parameter continuous distribution on the positive real line
+    characterised by a polynomial numerator with Gaussian-type decay. The
+    package provides complete distribution functions (darvind(), parvind(),
+    qarvind(), rarvind()), maximum likelihood estimation via
+    fit_arvind_mle(), and five model-fitting routines: Random Walk on
+    Coefficients via fit_rw1(), Time-Varying Coefficient Linear Model via
+    fit_tvlm(), Simulation-Extrapolation via fit_simex(), Mixed-Effects
+    Regression via fit_mixed(), and Regime-Switching Hidden Markov Model via
+    fit_hmm(). Additionally provides Monte Carlo forecasting with prediction
+    intervals via forecast_arvind(), comprehensive goodness-of-fit
+    diagnostics (21 metrics and 25 plots) via diagnostics_arvind() and
+    plot_arvind(), k-fold and rolling-window cross-validation via
+    cv_arvind(), and unified model comparison via summary_arvind().
+    For more details see Pandey, Singh, Tyagi, and Tyagi (2024),
+    "Modelling climate, COVID-19, and reliability data: A new continuous
+    lifetime model under different methods of estimation",
+    'Statistics and Applications', 22(2).
+License: MIT + file LICENSE
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices, utils, ggplot2, forecast, tvReg,
+        lme4, reshape2, rlang
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-06 14:02:12 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-06 14:30:19 UTC

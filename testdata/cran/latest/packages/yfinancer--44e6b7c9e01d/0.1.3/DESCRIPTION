@@ -1,0 +1,23 @@
+Package: yfinancer
+Title: 'Yahoo Finance' API Wrapper
+Version: 0.1.3
+Authors@R: 
+    person("Giovanni", "Colitti", email = "g.a.colitti@gmail.com", role = c("aut", "cre", "cph"))
+Description: Download financial market data, company information, financial statements, options data, and more from the unofficial 'Yahoo Finance' API.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/gacolitti/yfinancer
+BugReports: https://github.com/gacolitti/yfinancer/issues
+Suggests: devtools, mockery, testthat, usethis, withr
+Config/testthat/edition: 3
+Imports: httr2, jsonlite, purrr, dplyr, lubridate, rlang, stringr,
+        tidyr, glue, utils
+Depends: R (>= 4.1.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-04-15 21:23:34 UTC; gacolitti
+Author: Giovanni Colitti [aut, cre, cph]
+Maintainer: Giovanni Colitti <g.a.colitti@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-17 21:30:02 UTC

@@ -1,0 +1,47 @@
+Package: fscontext
+Title: File System Contextualisation and Record Set Reconstruction
+Version: 0.2.1
+Language: en-GB
+Authors@R: 
+    person(given = "Daniel", 
+           family = "Antal", 
+           email = "daniel.antal@dataobservatory.eu", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7513-6760"))
+Description: 
+    Provides a provenance-aware framework for contextual reconstruction from
+    file systems and related digital resource collections. The package creates
+    reproducible snapshots of file-level metadata, paths, repository context,
+    and optional content signatures. It supports contextual grouping, structural
+    abstraction, temporal analysis, semantic stabilization, duplicate and reuse
+    detection, and lightweight workflow reconstruction from file system
+    observations. The framework deliberately separates observational evidence,
+    contextual abstraction, semantic interpretation, and analytical
+    reconstruction, enabling reproducible workflows that can be inspected by
+    reviewers. It is designed to support future alignment with archival and
+    contextual knowledge representation models, including the World Wide Web
+    Consortium Provenance Ontology (PROV-O): Lebo et al. (2013)
+    <https://www.w3.org/TR/prov-o/>
+    and Records in Contexts developed by the International Council on Archives
+    Expert Group on Archival Description (EGAD)
+    <https://www.ica.org/ica-network/expert-groups/egad/records-in-contexts-ric/>.
+License: GPL (>= 3)
+URL: https://fscontext.dataobservatory.eu/
+BugReports: https://github.com/dataobservatory-eu/fscontext/issues
+Encoding: UTF-8
+Imports: digest, fs, progress, dplyr, utils, rlang, purrr, dataset,
+        stats, tools, glue, tibble, tidyr, magrittr, stringr, labelled,
+        jsonlite
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-31 09:09:39 UTC; DanielAntal
+Author: Daniel Antal [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7513-6760>)
+Maintainer: Daniel Antal <daniel.antal@dataobservatory.eu>
+Repository: CRAN
+Date/Publication: 2026-07-31 10:50:02 UTC

@@ -1,0 +1,38 @@
+Package: Romeb
+Type: Package
+Title: Robust Median-Based Bayesian Growth Curve Modeling
+Version: 0.2.0
+Date: 2026-07-01
+Authors@R: c(
+    person("Dandan", "Tang", email = "tangdd20@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0007-3453-9660")),
+    person("Xin", "Tong", role = "aut")
+  )
+Description: Implements robust median-based Bayesian linear growth curve models
+    for complete data and for data with Missing Completely at Random (MCAR),
+    Missing At Random (MAR), or Missing Not At Random (MNAR) mechanisms.
+    Models are fitted using 'rjags' through 'JAGS' and posterior summaries are
+    computed with 'coda'. The main function allows users to specify outcome
+    variables, auxiliary variables for MNAR missingness models, prior
+    hyperparameters, and initial values directly through function arguments.
+License: GPL-3
+URL: https://github.com/DandanTang0/Romeb
+BugReports: https://github.com/DandanTang0/Romeb/issues
+Depends: R (>= 4.2.0)
+Imports: coda, rjags, stats, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+SystemRequirements: JAGS
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-03 02:22:13 UTC; lynn
+Author: Dandan Tang [aut, cre] (ORCID: <https://orcid.org/0009-0007-3453-9660>),
+  Xin Tong [aut]
+Maintainer: Dandan Tang <tangdd20@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-11 20:40:02 UTC

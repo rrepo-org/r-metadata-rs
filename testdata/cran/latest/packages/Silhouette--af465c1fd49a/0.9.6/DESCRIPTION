@@ -1,0 +1,36 @@
+Package: Silhouette
+Type: Package
+Title: Proximity Measure Based Diagnostics for Standard, Soft, and
+        Multi-Way Clustering
+Version: 0.9.6
+Depends: R (>= 4.2.0)
+Language: en-US
+Authors@R: c(person(given = "Shrikrishna",
+           family = "Bhat K",
+           role = c("aut", "cre", "cph"),
+           email = "skbhat.in@gmail.com",
+           comment = c(ORCID = "0009-0000-6180-5783")),
+    person(given = "Kiruthika",
+           family = "C",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-9655-702X")))
+Maintainer: Shrikrishna Bhat K <skbhat.in@gmail.com>
+Description: Quantifies clustering quality by measuring both cohesion within clusters and separation between clusters. Implements advanced silhouette width computations for diverse clustering structures, including: simplified silhouette (Van der Laan et al., 2003) <doi:10.1080/0094965031000136012>, Probability of Alternative Cluster normalization methods (Raymaekers & Rousseeuw, 2022) <doi:10.1080/10618600.2022.2050249>, fuzzy clustering and silhouette diagnostics using membership probabilities (Campello & Hruschka, 2006; Menardi, 2011; Bhat & Kiruthika, 2024) <doi:10.1016/j.fss.2006.07.006>, <doi:10.1007/s11222-010-9169-0>, <doi:10.1080/23737484.2024.2408534>, and multi-way clustering extensions such as block and tensor clustering (Schepers et al., 2008; Bhat & Kiruthika, 2025) <doi:10.1007/s00357-008-9005-9>, <doi:10.21203/rs.3.rs-6973596/v1>. Provides tools for computation and visualization (Rousseeuw, 1987) <doi:10.1016/0377-0427(87)90125-7> to support robust and reproducible cluster diagnostics across standard, soft, and multi-way clustering settings.
+License: GPL-2
+URL: https://kskbhat.github.io/Silhouette/
+BugReports: https://github.com/kskbhat/Silhouette/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, ggplot2, ggpubr, lifecycle, methods, stats
+Suggests: proxy, ppclust, blockcluster, cluster, factoextra, drclust,
+        tidyr, knitr, rmarkdown, testthat (>= 3.0.0)
+RdMacros: lifecycle
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-15 06:37:05 UTC; Gubbi
+Author: Shrikrishna Bhat K [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0000-6180-5783>),
+  Kiruthika C [aut] (ORCID: <https://orcid.org/0000-0001-9655-702X>)
+Repository: CRAN
+Date/Publication: 2025-10-15 08:10:09 UTC

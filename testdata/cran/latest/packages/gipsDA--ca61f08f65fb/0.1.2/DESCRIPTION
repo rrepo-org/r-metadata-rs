@@ -1,0 +1,39 @@
+Package: gipsDA
+Title: Training DA Models Utilizing 'gips'
+Version: 0.1.2
+Authors@R: c(
+    person(c("Antoni", "Zbigniew"), "Kingston", , "qqtrol@gmail.com", role = "aut"),
+    person(c("Norbert", "Maksymilian"), "Frydrysiak", , "norbert.frydrysiak@proton.me", role = c("aut", "cre")),
+    person(c("Adam", "Przemysław"), "Chojecki", , "adam.prze.choj@gmail.com", role = "ctb",
+           comment = c(ORCID = "0009-0008-2902-4096"))
+  )
+URL: https://AntoniKingston.github.io/gipsDA/,
+        https://github.com/AntoniKingston/gipsDA
+BugReports: https://github.com/AntoniKingston/gipsDA/issues
+Description: Extends classical linear and quadratic discriminant analysis
+    by incorporating permutation group symmetries into covariance matrix
+    estimation. The package leverages methodology from the 'gips'
+    framework to identify and impose permutation structures that act as a
+    form of regularization, improving stability and interpretability in
+    settings with symmetric or exchangeable features. Several discriminant
+    analysis variants are provided, including pooled and class-specific
+    covariance models, as well as multi-class extensions with shared or
+    independent symmetry structures. For more details about 'gips' methodology see
+    and Graczyk et al. (2022) <doi:10.1214/22-AOS2174> and Chojecki, Morgen,
+    Kołodziejek (2025, <doi:10.18637/jss.v112.i07>).
+License: GPL-3
+Imports: dplyr, ggplot2, gips, jsonlite, lattice, patchwork,
+        permutations, rlang, tibble, tidyr, MASS, numbers, stringi
+Suggests: mockery, testthat, roxygen2
+Depends: R (>= 2.10)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-30 12:01:38 UTC; antek
+Author: Antoni Zbigniew Kingston [aut],
+  Norbert Maksymilian Frydrysiak [aut, cre],
+  Adam Przemysław Chojecki [ctb] (ORCID:
+    <https://orcid.org/0009-0008-2902-4096>)
+Maintainer: Norbert Maksymilian Frydrysiak <norbert.frydrysiak@proton.me>
+Repository: CRAN
+Date/Publication: 2026-02-03 13:30:02 UTC

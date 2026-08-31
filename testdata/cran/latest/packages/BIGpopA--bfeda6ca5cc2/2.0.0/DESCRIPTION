@@ -1,0 +1,42 @@
+Package: BIGpopA
+Title: Pedigree Validation Genetic Composition of Diploids & Polyploids
+Version: 2.0.0
+Authors@R: c(person(given='Josue',
+                    family='Chinchilla-Vargas',
+                    email='josue.chinchilla@ufl.edu',
+                    role=c('cre','aut')),
+             person(given='Alexander',
+                    family='Sandercock',
+                    role=c('aut')),
+             person('University', "of Florida",
+                    role=c('cph'),
+                    comment = "Breeding Insight"))
+Maintainer: Josue Chinchilla-Vargas <josue.chinchilla@ufl.edu>
+Description: Tools for pedigree quality control and genomic breed/line
+    composition estimation in diploid and polyploid breeding populations.
+    'BIGpopA' provides functions to check and correct common pedigree
+    errors, assign parentage from SNP genotype data using Mendelian error
+    rates, validate parent-offspring trios, and estimate genome-wide
+    breed or line composition using quadratic programming. Pedigree
+    validation and parentage assignment support any ploidy, using a
+    polysomic Mendelian test for even ploidy and a homozygosity-based
+    check for odd ploidy. For more details about the included 'breedTools'
+    functions, see Funkhouser et al. (2017) <doi:10.2527/tas2016.0003>.
+License: Apache License (>= 2)
+URL: https://CRAN.R-project.org/package=BIGpopA,
+        https://github.com/Breeding-Insight/BIGpopA
+BugReports: https://github.com/Breeding-Insight/BIGpopA/issues
+Encoding: UTF-8
+Depends: R (>= 4.4.0)
+Imports: dplyr, janitor, quadprog, data.table, ggplot2
+Suggests: covr, knitr (>= 1.10), rmarkdown, scales, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-21 13:20:47 UTC; josue.chinchilla
+Author: Josue Chinchilla-Vargas [cre, aut],
+  Alexander Sandercock [aut],
+  University of Florida [cph] (Breeding Insight)
+Repository: CRAN
+Date/Publication: 2026-08-21 21:50:57 UTC

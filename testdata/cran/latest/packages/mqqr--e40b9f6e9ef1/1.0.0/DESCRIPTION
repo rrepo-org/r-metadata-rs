@@ -1,0 +1,46 @@
+Package: mqqr
+Type: Package
+Title: Multivariate Quantile-on-Quantile Regression
+Version: 1.0.0
+Authors@R: c(
+    person("Merwan", "Roudane",
+           email = "merwanroudane920@gmail.com",
+           role = c("aut", "cre", "cph")),
+    person("Avik", "Sinha", role = "ctb",
+           comment = "Original m-QQR methodology"),
+    person("Nicholas", "Sim", role = "ctb",
+           comment = "Original QQ regression methodology"),
+    person("Hongtao", "Zhou", role = "ctb",
+           comment = "Original QQ regression methodology"))
+Description: Implements Multivariate Quantile-on-Quantile Regression
+    (m-QQR) of Sinha, Ghosh, Hussain, Nguyen and Das (2023)
+    <doi:10.1016/j.eneco.2023.107021>, extending the bivariate
+    Quantile-on-Quantile regression of Sim and Zhou (2015)
+    <doi:10.1016/j.jbankfin.2015.01.013> to include exogenous moderators
+    and controls with optional interaction terms. For each pair of
+    quantile levels (theta of the response and tau of the regressor) the
+    package fits a locally-weighted quantile regression of y on the
+    principal regressor x, a lagged dependent variable, moderators Z and
+    the x*Z interaction terms, using Gaussian kernel weights on the
+    empirical cumulative distribution function (CDF) distance. Bootstrap
+    standard errors and Koenker-Machado pseudo R-squared are reported.
+    Visualisations include 'MATLAB'-style 'Parula' and 'Jet' 3D
+    surfaces, heatmaps and contour plots through 'plotly'.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+Imports: quantreg (>= 5.0), plotly (>= 4.0.0), stats, utils, grDevices
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://github.com/merwanroudane/multiqqr
+BugReports: https://github.com/merwanroudane/multiqqr/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-28 12:54:19 UTC; HP
+Author: Merwan Roudane [aut, cre, cph],
+  Avik Sinha [ctb] (Original m-QQR methodology),
+  Nicholas Sim [ctb] (Original QQ regression methodology),
+  Hongtao Zhou [ctb] (Original QQ regression methodology)
+Maintainer: Merwan Roudane <merwanroudane920@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-01 09:00:26 UTC

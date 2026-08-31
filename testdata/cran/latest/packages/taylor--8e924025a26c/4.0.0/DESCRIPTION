@@ -1,0 +1,35 @@
+Package: taylor
+Title: Lyrics and Song Data for Taylor Swift's Discography
+Version: 4.0.0
+Authors@R: 
+    person("W. Jake", "Thompson", , "wjakethompson@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-7339-0300"))
+Description: A comprehensive resource for data on Taylor Swift songs. Data
+    is included for all officially released studio albums, extended plays
+    (EPs), and individual singles are included. Data comes from 'Genius'
+    (lyrics) and 'SoundStat' (song characteristics). Additional functions
+    are included for easily creating data visualizations with color
+    palettes inspired by Taylor Swift's album covers.
+License: MIT + file LICENSE
+URL: https://taylor.wjakethompson.com,
+        https://github.com/wjakethompson/taylor
+BugReports: https://github.com/wjakethompson/taylor/issues
+Depends: R (>= 4.1.0)
+Imports: askpass, cli, dplyr, ggplot2, glue, httr2, lifecycle, methods,
+        rlang, scales, spotifyr, tibble, tidyr, vctrs
+Suggests: bookdown, knitr, patchwork, rmarkdown, spelling, testthat (>=
+        3.0.0), vdiffr (>= 1.0.2), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: bookdown
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-10 15:24:45 UTC; jakethompson
+Author: W. Jake Thompson [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7339-0300>)
+Maintainer: W. Jake Thompson <wjakethompson@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-10 15:40:02 UTC

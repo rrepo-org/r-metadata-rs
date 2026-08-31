@@ -1,0 +1,45 @@
+Package: NetSurvProx
+Type: Package
+Title: 'NetSurvProx': Network-Based Survival Analysis via Proximal
+        Methods
+Version: 1.0.0
+Authors@R: c(
+  person("Maura", "Mecchi", , "maura.mecchi@unibas.it", c("aut", "cre")),
+  person("Antonella", "Iuliano", , "antonella.iuliano@unibas.it", c("aut")))
+Maintainer: Maura Mecchi <maura.mecchi@unibas.it>
+Description: Introduces a novel network-constrained survival
+    analysis framework for variable selection and parameter estimation in
+    penalized survival models with convex penalties. The package extends two
+    classical survival models, the Cox Proportional Hazards (PH) model and the
+    Accelerated Failure Time (AFT) model, by incorporating prior biological
+    knowledge from curated interaction networks (e.g., KEGG) into a
+    double-penalty framework. The first penalty enforces variable selection
+    through a LASSO penalty, while the second preserves gene-gene correlations
+    by incorporating Laplacian-based constraints, ensuring that biologically
+    relevant network structures are maintained. Using censored survival data,
+    the method enables the identification of predictive biomarkers and pathways
+    with potential relevance for target therapies. Model estimation is
+    performed via proximal optimization algorithms combined with
+    cross-validation for reliable tuning. To enhance interpretability,
+    dedicated utility functions are implemented to consolidate results,
+    yielding biologically coherent insights that can support personalized
+    medicine and contribute to improved patient outcomes.
+Depends: R (>= 4.3)
+Imports: AnnotationDbi, curl, cvTools, dplyr, flexsurv, foreach,
+        ggplot2, ggpubr, glmnet, grDevices, Hmisc, httr, igraph, magic,
+        openxlsx, RColorBrewer, rmarkdown, survAUC, survival,
+        survminer,
+Suggests: knitr, org.Hs.eg.db, plotly, scales, sessioninfo, stringr,
+        visNetwork
+VignetteBuilder: knitr
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LazyData: true
+LazyDataCompression: bzip2
+NeedsCompilation: no
+Packaged: 2026-06-03 12:02:58 UTC; maura
+Author: Maura Mecchi [aut, cre],
+  Antonella Iuliano [aut]
+Repository: CRAN
+Date/Publication: 2026-06-09 06:50:02 UTC

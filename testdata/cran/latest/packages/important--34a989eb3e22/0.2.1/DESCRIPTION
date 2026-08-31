@@ -1,0 +1,37 @@
+Package: important
+Title: Supervised Feature Selection
+Version: 0.2.1
+Authors@R: c(
+    person("Max", "Kuhn", , "max@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2402-136X")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: Interfaces for choosing important predictors in supervised
+    regression, classification, and censored regression models. Permuted
+    importance scores (Biecek and Burzykowski (2021)
+    <doi:10.1201/9780429027192>) can be computed for 'tidymodels' model
+    fits.
+License: MIT + file LICENSE
+URL: https://important.tidymodels.org/,
+        https://github.com/tidymodels/important
+BugReports: https://github.com/tidymodels/important/issues
+Depends: R (>= 4.1.0), recipes (>= 1.1.0)
+Imports: cli, desirability2 (>= 0.2.0), dplyr, filtro (>= 0.2.0),
+        generics, ggplot2, hardhat (>= 1.4.1), purrr, rlang (>= 1.1.0),
+        S7, tibble, tidyr, tune, vctrs, withr, workflows
+Suggests: censored, future, future.apply, mirai, modeldata, parsnip,
+        ranger, spelling, survival, testthat (>= 3.0.0), yardstick
+Config/Needs/website: tidyverse/tidytemplate, tidymodels
+Config/testthat/edition: 3
+Config/usethis/last-upkeep: 2025-06-09
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-10-06 16:27:16 UTC; max
+Author: Max Kuhn [aut, cre] (ORCID: <https://orcid.org/0000-0003-2402-136X>),
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
+Maintainer: Max Kuhn <max@posit.co>
+Repository: CRAN
+Date/Publication: 2025-10-06 18:40:02 UTC

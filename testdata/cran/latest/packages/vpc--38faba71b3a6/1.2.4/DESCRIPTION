@@ -1,0 +1,27 @@
+Package: vpc
+Title: Create Visual Predictive Checks
+Version: 1.2.4
+Date: 2026-02-10
+Authors@R: 
+  c(
+    person("Ron", "Keizer", email="ron@insight-rx.com", role=c("aut", "cre")),
+    person("Bill", "Denney", email="wdenney@humanpredictions.com", role="aut", comment=c(ORCID="0000-0002-5759-428X"))
+  )
+Maintainer: Ron Keizer <ron@insight-rx.com>
+Description: Visual predictive checks are a commonly used diagnostic plot in pharmacometrics, showing how certain statistics (percentiles) for observed data compare to those same statistics for data simulated from a model. The package can generate VPCs for continuous, categorical, censored, and (repeated) time-to-event data.
+Depends: R (>= 3.1.0)
+Imports: classInt, dplyr, ggplot2, MASS, readr, rlang, stringr,
+        survival, tidyr
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/ronkeizer/vpc
+Suggests: covr, knitr, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-13 02:45:41 UTC; ronkeizer
+Author: Ron Keizer [aut, cre],
+  Bill Denney [aut] (ORCID: <https://orcid.org/0000-0002-5759-428X>)
+Repository: CRAN
+Date/Publication: 2026-02-17 07:20:02 UTC

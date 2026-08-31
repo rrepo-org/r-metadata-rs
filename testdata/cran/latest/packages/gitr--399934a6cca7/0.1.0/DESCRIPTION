@@ -1,0 +1,38 @@
+Package: gitr
+Title: A Lightweight API for 'Git'
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Stu",
+           family = "Field",
+           role = c("aut", "cre", "cph"),
+           email = "stu.g.field@gmail.com",
+           comment = c(ORCID = "0000-0002-1024-5859"))
+    )
+Description: A light-weight, dependency-free, application programming interface
+    (API) to access system-level 'Git' <https://git-scm.com/downloads> commands
+    from within 'R'. Contains wrappers and defaults for common data science
+    workflows as well as 'Zsh' <https://github.com/ohmyzsh/ohmyzsh> plugin aliases.
+    A generalized API syntax is also available.
+License: MIT + file LICENSE
+URL: https://stufield.github.io/gitr/
+BugReports: https://github.com/stufield/gitr/issues
+Depends: R (>= 4.1.0)
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyLoad: true
+Copyright: Stu Field 2025
+Config/testthat/edition: 3
+Config/Needs/website: tidyverse/tidytemplate
+RoxygenNote: 7.3.1
+Language: en-US
+Collate: 'gitr-params.R' 'gitr-package.R' 'gitr.R' 'gitr-branch.R'
+        'gitr-checkout.R' 'gitr-commit.R' 'gitr-lint-commit.R'
+        'gitr-pr.R' 'gitr-sitrep.R' 'gitr-tag.R' 'gitr-trim-sha.R'
+        'gitr-utils.R' 'zsh.R'
+NeedsCompilation: no
+Packaged: 2025-04-20 18:00:08 UTC; jack
+Author: Stu Field [aut, cre, cph] (<https://orcid.org/0000-0002-1024-5859>)
+Maintainer: Stu Field <stu.g.field@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-21 07:00:02 UTC

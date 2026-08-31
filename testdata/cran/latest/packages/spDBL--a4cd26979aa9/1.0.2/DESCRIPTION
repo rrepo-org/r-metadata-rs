@@ -1,0 +1,30 @@
+Package: spDBL
+Title: Dynamic Bayesian Learning for Spatiotemporal Mechanistic Models
+Version: 1.0.2
+Authors@R: c(
+    person("Xiang", "Chen", email = "xiangchen@ucla.edu", role = c("aut", "cre")),
+    person("Sudipto", "Banerjee", email = "sudipto@ucla.edu", role = c("aut"))
+  )
+Description: Provides tools for Bayesian learning of spatiotemporal dynamical mechanistic models.
+    Includes methods for parameter estimation, simulation, and inference using hierarchical and
+    state-space modeling approaches, following Banerjee, Chen, Frankenburg and Zhou (2025)
+    <https://jmlr.org/papers/v26/22-0896.html>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0)
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp, RcppEigen
+Imports: Rcpp, matrixsampling, invgamma, deSolve, ReacTran,
+        LaplacesDemon, matrixcalc, mniw, utils, stats, ggpubr, ggplot2,
+        readr, magrittr, rlang, scales
+Suggests: testthat (>= 3.0.0), here, knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-06-04 01:55:41 UTC; xiangchen
+Author: Xiang Chen [aut, cre],
+  Sudipto Banerjee [aut]
+Maintainer: Xiang Chen <xiangchen@ucla.edu>
+Repository: CRAN
+Date/Publication: 2026-06-09 07:20:02 UTC

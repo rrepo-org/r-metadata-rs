@@ -1,0 +1,31 @@
+Package: svytest
+Type: Package
+Title: Survey Weight Diagnostic Tests
+Version: 1.1.0
+Authors@R: c(
+    person(
+      "Corbin", "Lubianski",
+      email = "cnlubianski@yahoo.com",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0009-0009-0547-3249")
+    )
+  )
+Description: Provides diagnostic tests for assessing the informativeness of survey weights in regression models. Implements difference-in-coefficients tests (Hausman 1978 <doi:10.2307/1913827>; Pfeffermann 1993 <doi:10.2307/1403631>), weight-association tests (DuMouchel and Duncan 1983 <doi:10.2307/2288185>; Pfeffermann and Sverchkov 1999 <https://www.jstor.org/stable/25051118>; Pfeffermann and Sverchkov 2003 <ISBN:9780470845672>; Wu and Fuller 2005 <https://www.jstor.org/stable/27590461>), estimating equations tests (Pfeffermann and Sverchkov 2003 <ISBN:9780470845672>), and non-parametric permutation tests. Includes simulation utilities replicating Wang et al. (2023 <doi:10.1111/insr.12509>) and extensions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: Rcpp, survey
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, MASS, rmarkdown, sampling, dplyr, tidyr, tibble,
+        future.apply, broom, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-10-27 14:57:19 UTC; cnlub
+Author: Corbin Lubianski [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0009-0547-3249>)
+Maintainer: Corbin Lubianski <cnlubianski@yahoo.com>
+Repository: CRAN
+Date/Publication: 2025-10-30 20:20:02 UTC

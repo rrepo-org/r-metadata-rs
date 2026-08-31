@@ -1,0 +1,46 @@
+Package: socialSim
+Type: Package
+Title: Simulate and Analyse Social Interaction Data
+Version: 0.1.9
+Authors@R: 
+    person(
+      given = "Rori Efrain",
+      family = "Wijnhorst",
+      email = "roriwijnhorst@proton.me",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-8902-592X")
+    )
+Description: 
+    Provides tools to simulate and analyse datasets of social interactions 
+    between individuals using hierarchical Bayesian models implemented in Stan. 
+    Model fitting is performed via the 'rstan' package. Users can generate 
+    realistic interaction data where individual phenotypes influence and respond 
+    to those of their partners, with control over sampling design parameters such 
+    as the number of individuals, partners, and repeated dyads. The simulation 
+    framework allows flexible control over variation and correlation in mean trait 
+    values, social responsiveness, and social impact, making it suitable for 
+    research on interacting phenotypes and on direct and indirect genetic effects 
+    ('DGEs' and 'IGEs'). The package also includes functions to fit and compare 
+    alternative models of social effects, including impact–responsiveness, 
+    variance–partitioning, and trait-based models, and to summarise model 
+    performance in terms of bias and dispersion. For a more detailed description 
+    of the available models and impact–responsiveness, see the accompanying 
+    article Wijnhorst et al. (2026) <doi:10.1093/jeb/voag013>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+Depends: R (>= 4.2)
+Imports: MASS, stats, future, future.apply,
+Suggests: rstan, devtools, testthat, rmarkdown, knitr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/RoriWijnhorst/socialSim
+BugReports: https://github.com/RoriWijnhorst/socialSim/issues
+NeedsCompilation: no
+Packaged: 2026-03-31 15:06:14 UTC; Wijnhorst
+Author: Rori Efrain Wijnhorst [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8902-592X>)
+Maintainer: Rori Efrain Wijnhorst <roriwijnhorst@proton.me>
+Repository: CRAN
+Date/Publication: 2026-03-31 22:40:02 UTC

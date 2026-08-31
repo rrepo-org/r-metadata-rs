@@ -1,0 +1,32 @@
+Package: bclogit
+Title: Conditional Logistic Regression
+Version: 1.1
+Authors@R: c(
+    person("Adam", "Kapelner", email = "kapelner@qc.cuny.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5985-6792")),
+    person("Jacob", "Tennenbaum", email = "Jacob.Tennenbaum51@qmail.cuny.edu", role = c("aut"), comment = c(ORCID = "0009-0006-1408-5035"))
+    )
+Author: Adam Kapelner [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5985-6792>),
+  Jacob Tennenbaum [aut] (ORCID: <https://orcid.org/0009-0006-1408-5035>)
+Maintainer: Adam Kapelner <kapelner@qc.cuny.edu>
+Description: Performs inference for Bayesian conditional logistic regression with informative priors built from the concordant pair data. We include many options to build the priors. And we include many options during the inference step for estimation, testing and confidence set creation. For details, see Kapelner and Tennenbaum (2026) "Improved Conditional Logistic Regression using Information in Concordant Pairs with Software" <doi:10.48550/arXiv.2602.08212>.
+SystemRequirements: GNU make
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0), Rcpp (>= 1.0.14)
+Imports: checkmate, coda, fastLogisticRegressionWrap, geepack, glmmTMB,
+        methods, RcppParallel (>= 5.0.1), rstan (>= 2.18.1), rstantools
+        (>= 2.6.0)
+Suggests: testthat (>= 3.0.0), survival, ggdist, data.table
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+URL: https://github.com/Tennenbaum-J/bclogit_package_and_paper_repo
+BugReports: https://github.com/Tennenbaum-J/bclogit_package_and_paper_repo/issues
+RoxygenNote: 7.3.3
+Biarch: true
+NeedsCompilation: yes
+Packaged: 2026-03-01 06:59:38 UTC; kapelner
+Repository: CRAN
+Date/Publication: 2026-03-01 10:00:08 UTC

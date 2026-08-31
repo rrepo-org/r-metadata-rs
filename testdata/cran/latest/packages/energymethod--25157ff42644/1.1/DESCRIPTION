@@ -1,0 +1,20 @@
+Package: energymethod
+Type: Package
+Title: Two-Sample Test of many Functional Means using the Energy Method
+Version: 1.1
+Date: 2025-04-09
+Authors@R: person(given = c("David", "Colin"),
+                    family = "Decker",
+                    role = c("aut", "cre"),
+                    email = "d.colin.decker@gmail.com")
+Maintainer: David Colin Decker <d.colin.decker@gmail.com>
+Description: Given two samples of size n_1 and n_2 from a data set where each sample consists of K functional observations (channels), each recorded on T grid points,  the function energy method implements a hypothesis test of equality of channel-wise mean at each channel using the bootstrapped distribution of maximum energy to control family wise error. The function energy_method_complex accomodates complex valued functional observations.  
+License: GPL-3
+Imports: Rcpp (>= 1.0.14)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-04-19 22:25:48 UTC; David
+Author: David Colin Decker [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-04-20 01:22:10 UTC

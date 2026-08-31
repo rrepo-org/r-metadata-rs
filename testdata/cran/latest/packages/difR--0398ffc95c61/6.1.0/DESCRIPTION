@@ -1,0 +1,53 @@
+Package: difR
+Type: Package
+Title: Collection of Methods to Detect Dichotomous, Polytomous, and
+        Continuous Differential Item Functioning (DIF)
+Version: 6.1.0
+Date: 2025-11-28
+Authors@R: c(
+    person("David", "Magis", role = "aut",
+           comment = "IQVIA Belux"),
+    person("Sebastien", "Beland", role = c("aut", "cre"),
+           email = "sebastien.beland@umontreal.ca",
+           comment = "Universite de Montreal"),
+    person("Carl F.", "Falk", role = "aut",
+           comment = "McGill University"),
+    person("Gilles", "Raiche", role = "aut",
+           comment = "UQAM"),
+    person("Adela", "Hladka", role = "aut",
+           comment = "Institute of Computer Science of the Czech Academy of Sciences (nee Drabinova)"),
+    person("Josh", "Gilbert", role = "aut",
+           email = "josh.b.gilbert@gmail.com",
+           comment = "Harvard Graduate School of Education-Harvard University")
+  )
+Maintainer: Sebastien Beland <sebastien.beland@umontreal.ca>
+Depends: R (>= 3.0.0)
+Imports: mirt, ltm, lme4, deltaPlotR, DescTools, VGAM, glmnet, dplyr,
+        tidyr, tibble, ggplot2
+Description: Methods to detect differential item functioning (DIF) in dichotomous, polytomous, 
+    and continuous items, using both classical and modern approaches. These include
+    Mantel-Haenszel procedures, logistic regression (including ordinal models), and
+    regularization-based methods such as LASSO. Uniform and non-uniform DIF effects
+    can be detected, and some methods support multiple focal groups. The package
+    also provides tools for anchor purification, rest score matching, effect size
+    estimation, and DIF simulation. See Magis, Beland, Tuerlinckx, and De Boeck
+    (2010, Behavior Research Methods, 42, 847–862, <doi:10.3758/BRM.42.3.847>) for
+    a general overview.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL: https://github.com/343Babou/difR
+BugReports: https://github.com/343Babou/difR/issues
+NeedsCompilation: no
+Packaged: 2025-11-29 00:56:26 UTC; sebastien
+Author: David Magis [aut] (IQVIA Belux),
+  Sebastien Beland [aut, cre] (Universite de Montreal),
+  Carl F. Falk [aut] (McGill University),
+  Gilles Raiche [aut] (UQAM),
+  Adela Hladka [aut] (Institute of Computer Science of the Czech Academy
+    of Sciences (nee Drabinova)),
+  Josh Gilbert [aut] (Harvard Graduate School of Education-Harvard
+    University)
+Repository: CRAN
+Date/Publication: 2025-11-29 06:10:41 UTC

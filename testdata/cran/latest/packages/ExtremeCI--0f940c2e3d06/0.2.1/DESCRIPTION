@@ -1,0 +1,32 @@
+Package: ExtremeCI
+Type: Package
+Title: Realistic Confidence Intervals for Non-Stationary Extreme Value
+        Statistics
+Version: 0.2.1
+Authors@R: c(person(c("Olivier", "C."), "Pasche", 
+                    email = "olivier_pasche@alumni.epfl.ch", role = c("aut", "cre", "cph"),
+                    comment = c(ORCID = "0000-0002-1202-9199"))
+             )
+Description: This framework provides versatile algorithms to efficiently infer confidence intervals for
+  extreme value statistics, such as extreme quantiles and return levels, that are representative
+  of the asymmetric uncertainty spread, using extreme value theory extrapolation and the profile likelihood
+  (see e.g., Coles (2001) <doi:10.1007/978-1-4471-3675-0>).
+  Unlike existing algorithms, the CI endpoints are found without the need for a strict prespecified range,
+  can be covariate-dependent, and can be based on weighted samples.
+  This package is motivated by Zeder et al. (2023) <doi:10.1029/2023GL104090> and by
+  Pasche et al. (2026) <doi:10.1007/s10687-026-00536-9>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: doFuture, dplyr, evd, foreach, future, ggplot2, magrittr,
+        rlang, stats, tibble, tidyr, tidyselect
+URL: https://github.com/opasche/ExtremeCI,
+        https://opasche.github.io/ExtremeCI/
+BugReports: https://github.com/opasche/ExtremeCI/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-07 15:21:49 UTC; pascheo
+Author: Olivier C. Pasche [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1202-9199>)
+Maintainer: Olivier C. Pasche <olivier_pasche@alumni.epfl.ch>
+Repository: CRAN
+Date/Publication: 2026-05-12 19:10:02 UTC

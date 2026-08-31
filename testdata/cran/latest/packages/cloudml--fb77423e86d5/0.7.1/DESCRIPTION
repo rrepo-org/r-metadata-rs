@@ -1,0 +1,37 @@
+Package: cloudml
+Title: Interface to the Google Cloud Machine Learning Platform
+Version: 0.7.1
+Authors@R: c(
+    person("Tomasz", "Kalinowski", email = "tomasz@posit.co", role = c("cre")),
+    person("Daniel", "Falbel", email = "daniel@rstudio.com", role = c("aut")),
+    person("Javier", "Luraschi", role = c("aut")),
+    person("JJ", "Allaire", role = c("aut")),
+    person("Kevin", "Ushey", role = c("aut")),
+    person(family = "RStudio", role = c("cph"))
+    )
+Description: Interface to the Google Cloud Machine Learning Platform
+  <https://cloud.google.com/vertex-ai>, which provides cloud tools for training machine
+  learning models.
+Depends: R (>= 3.3.0), tfruns (>= 1.3)
+Imports: config, jsonlite, packrat, processx, rprojroot, rstudioapi,
+        tools, utils, withr, yaml
+Suggests: tensorflow (>= 1.4.2), keras (>= 2.1.2), knitr, rmarkdown,
+        testthat
+License: Apache License 2.0
+SystemRequirements: Python (>= 2.7.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+URL: https://github.com/rstudio/cloudml
+BugReports: https://github.com/rstudio/cloudml/issues
+NeedsCompilation: no
+Packaged: 2025-08-18 22:43:04 UTC; tomasz
+Author: Tomasz Kalinowski [cre],
+  Daniel Falbel [aut],
+  Javier Luraschi [aut],
+  JJ Allaire [aut],
+  Kevin Ushey [aut],
+  RStudio [cph]
+Maintainer: Tomasz Kalinowski <tomasz@posit.co>
+Repository: CRAN
+Date/Publication: 2025-08-18 23:50:51 UTC

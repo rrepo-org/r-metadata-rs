@@ -1,0 +1,48 @@
+Package: phutil
+Title: Persistence Homology Utilities
+Version: 0.0.2
+Authors@R: c(
+    person("Aymeric", "Stamm", , "aymeric.stamm@cnrs.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8725-3654")),
+    person("Jason Cory", "Brunson", , "cornelioid@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-3126-9494")),
+    person("Michael", "Kerber", role = "ctb", comment = "HERA C++ code"),
+    person("Dmitriy", "Morozov", role = "ctb", comment = "HERA C++ code"),
+    person("Arnur", "Nigmetov", role = "ctb", comment = "HERA C++ code")
+  )
+Description: A low-level package for hosting persistence data. It is part of the
+    'TDAverse' suite of packages, which is designed to provide a collection of
+    packages for enabling machine learning and data science tasks using
+    persistent homology. Implements a class for hosting persistence data, a
+    number of coercers from and to already existing and used data structures
+    from other packages and functions to compute distances between persistence
+    diagrams. A formal definition and study of bottleneck and Wasserstein
+    distances can be found in Bubenik, Scott and Stanley (2023)
+    <doi:10.1007/s41468-022-00103-8>. Their implementation in 'phutil' relies on
+    the 'C++' Hera library developed by Kerber, Morozov and Nigmetov (2017)
+    <doi:10.1145/3064175>.
+License: MIT + file LICENSE
+URL: https://github.com/tdaverse/phutil,
+        https://tdaverse.github.io/phutil/
+BugReports: https://github.com/tdaverse/phutil/issues
+Depends: R (>= 3.5)
+Imports: cli, rlang
+Suggests: knitr, microbenchmark, quarto, TDA, tdaunif, tinysnapshot,
+        tinytest
+LinkingTo: BH, cpp11
+VignetteBuilder: quarto
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-04-14 17:14:22 UTC; stamm-a
+Author: Aymeric Stamm [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8725-3654>),
+  Jason Cory Brunson [aut] (ORCID:
+    <https://orcid.org/0000-0003-3126-9494>),
+  Michael Kerber [ctb] (HERA C++ code),
+  Dmitriy Morozov [ctb] (HERA C++ code),
+  Arnur Nigmetov [ctb] (HERA C++ code)
+Maintainer: Aymeric Stamm <aymeric.stamm@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2026-04-17 08:10:02 UTC

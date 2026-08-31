@@ -1,0 +1,36 @@
+Package: inedemogR
+Title: Tidy Access to Spanish INE Demographic Data
+Version: 0.1.0
+Authors@R: 
+    person("J. R.", "Caro-Barrera", , "jrcaro@uco.es", role = c("aut", "cre", "cph"))
+Description: Provides tidy, harmonized access to demographic data from the
+    Spanish National Statistics Institute (INE) fenomenos demograficos
+    domain, including population, births, and deaths, retrieved live via
+    the official 'ineapir' API wrapper, with optional spatial integration at
+    municipality and province level via 'mapSpain'. Mortality indicators
+    follow the Human Mortality Database Methods Protocol, including the
+    average age at death in infancy method of Andreev and Kingkade (2015)
+    <doi:10.4054/DemRes.2015.33.13>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, ggplot2, httr2, ineapir, mapSpain, purrr, readr, rlang,
+        scales, sf, stringi, stringr, tibble, tidyr
+Suggests: mockery, R.rsp, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LazyData: true
+Collate: 'helpers.R' 'death_rates.R' 'life_tables.R'
+        'abridged_life_tables.R' 'births.R' 'data.R' 'deaths.R'
+        'decomposition.R' 'download_ine_data.R' 'exposure.R'
+        'get_ine_demog.R' 'get_ine_geo.R' 'hmd_write.R' 'indicators.R'
+        'inedemogR-package.R' 'lexis.R' 'list_ine_indicators.R'
+        'plot_demog.R' 'plot_ine_map.R' 'population.R'
+        'update_ine_data.R'
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2026-08-20 06:34:41 UTC; josecaro
+Author: J. R. Caro-Barrera [aut, cre, cph]
+Maintainer: J. R. Caro-Barrera <jrcaro@uco.es>
+Repository: CRAN
+Date/Publication: 2026-08-23 10:30:08 UTC

@@ -1,0 +1,37 @@
+Package: fda.vi
+Title: Functional Data Analysis using Variational Inference
+Version: 1.0.0
+Authors@R: c(
+    person("Camila", "de Souza", ,"camila.souza@uwo.ca", role = "cre"),
+    person("Stephen", "Kinsey", role = "aut"),
+    person("Ana Carolina", "da Cruz", role = "aut"),
+    person("Pedro Henrique", "Toledo Oliveira Sousa", role = "aut"))
+Maintainer: Camila de Souza <camila.souza@uwo.ca>
+Description: Implements a variational Expectation-Maximization (VEM) algorithm
+    for smoothing one or multiple functional observations via basis function
+    selection. The algorithm estimates all model parameters simultaneously and
+    automatically, while accounting for within-curve correlation. The approach
+    provides a flexible and computationally efficient framework for smoothing
+    correlated functional data. The algorithm is described in da Cruz, A. C., 
+    de Souza, C. P., and Sousa, P. H. (2024). 'Fast Bayesian basis selection for
+    functional data representation with correlated errors.'
+    <doi:10.48550/arXiv.2405.20758>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: stats, graphics, fda, MASS, scales
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+LazyData: true
+VignetteBuilder: knitr
+URL: https://github.com/desouzalab/fda.vi
+BugReports: https://github.com/desouzalab/fda.vi/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-26 15:06:52 UTC; carol
+Author: Camila de Souza [cre],
+  Stephen Kinsey [aut],
+  Ana Carolina da Cruz [aut],
+  Pedro Henrique Toledo Oliveira Sousa [aut]
+Repository: CRAN
+Date/Publication: 2026-06-20 14:10:14 UTC

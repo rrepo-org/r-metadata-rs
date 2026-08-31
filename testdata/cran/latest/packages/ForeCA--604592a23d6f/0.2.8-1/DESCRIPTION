@@ -1,0 +1,34 @@
+Package: ForeCA
+Type: Package
+Title: Forecastable Component Analysis
+Version: 0.2.8-1
+Date: 2026-08-22
+Authors@R: 
+    person(given = "Georg M.",
+           family = "Goerg",
+           role = c("aut", "cre"),
+           email = "im@gmge.org")
+URL: https://github.com/gmgeorg/ForeCA
+BugReports: https://github.com/gmgeorg/ForeCA/issues
+Description: Implementation of Forecastable Component Analysis ('ForeCA'),
+    including main algorithms and auxiliary function (summary, plotting, etc.) to
+    apply 'ForeCA' to multivariate time series data. 'ForeCA' is a novel dimension
+    reduction (DR) technique for temporally dependent signals. Contrary to other
+    popular DR methods, such as 'PCA' or 'ICA', 'ForeCA' takes time dependency
+    explicitly into account and searches for the most ''forecastable'' signal.
+    The measure of forecastability is based on the Shannon entropy of the spectral
+    density of the transformed signal.
+Depends: R (>= 3.5.0)
+License: GPL-2
+Imports: astsa (>= 1.10), MASS, graphics, utils
+Suggests: psd, knitr, markdown, mgcv, testthat (>= 2.0.0), rSFA
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/testthat/edition: 2
+NeedsCompilation: no
+Packaged: 2026-08-23 00:49:24 UTC; georg
+Author: Georg M. Goerg [aut, cre]
+Maintainer: Georg M. Goerg <im@gmge.org>
+Repository: CRAN
+Date/Publication: 2026-08-23 05:00:02 UTC

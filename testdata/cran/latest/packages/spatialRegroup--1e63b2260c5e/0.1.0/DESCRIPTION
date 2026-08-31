@@ -1,0 +1,32 @@
+Package: spatialRegroup
+Title: Iterative Spatial Regrouping of Administrative Units by
+        Attributive Affinity
+Version: 0.1.0
+Authors@R: 
+    person("Nicolas", "Ausello", , "nicolasausello@yahoo.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3843-0463"))
+Description: Evaluates the statistical coherence of existing administrative
+    partitions (e.g. inter-municipal groupings, districts) by identifying
+    spatial units whose attributive profile is more similar to a neighbouring
+    group than to their own. Border units are iteratively reassigned to the
+    group they are most affine with, based on Euclidean or Mahalanobis
+    distance computed on user-supplied numeric variables, with optional
+    per-variable weighting and standardisation. Spatial contiguity is
+    enforced throughout: isolated candidates are reintegrated into their
+    original group, disconnected fragments are resolved, and empty groups
+    are restored. Convergence is monitored via an eta-squared cohesion
+    criterion. The resulting partition can be compared to the original
+    administrative delineation using multilevel models, providing a
+    quantitative measure of boundary inefficiency.
+License: GPL-3
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: dplyr, sf, spdep, igraph, rlang
+NeedsCompilation: no
+Packaged: 2026-05-06 08:49:27 UTC; User
+Author: Nicolas Ausello [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3843-0463>)
+Maintainer: Nicolas Ausello <nicolasausello@yahoo.fr>
+Repository: CRAN
+Date/Publication: 2026-05-11 19:10:09 UTC

@@ -1,0 +1,42 @@
+Package: pandemonium
+Title: High Dimensional Analysis in Linked Spaces
+Version: 1.0.0
+Authors@R: c(
+    person("Gabriel", "McCoy",  role = c("aut", "cre"),
+           email = "gabe.mccoy02@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0009-0008-3570-0361")),
+    person("Ursula", "Laa", role = "aut",
+           comment = c(ORCID = "https://orcid.org/0000-0002-0249-6439")),
+    person("German", "Valencia", role = "aut",
+           comment = c(ORCID = "https://orcid.org/0000-0001-6600-1290"))
+  )
+Description: A 'shiny' GUI that performs high dimensional cluster analysis. 
+  This tool performs data preparation, clustering and visualisation within a dynamic GUI. 
+  With interactive methods allowing the user to change settings all without having to to leave the GUI. 
+  An earlier version of this package was described in Laa and Valencia (2022) <doi:10.1140/epjp/s13360-021-02310-1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+Imports: tourr (>= 1.2.6), stats, tibble (>= 3.3.1), ggplot2 (>=
+        4.0.0), RColorBrewer, dplyr, dendextend (>= 1.19.1), fpc, shiny
+        (>= 1.13.0), shinythemes (>= 1.2.0), shinyFeedback (>= 0.4.0),
+        DT (>= 0.34.0), tidyr (>= 1.3.2), tidyselect (>= 1.2.1),
+        magrittr (>= 2.0.4), detourr (>= 0.2.0), crosstalk (>= 1.2.2),
+        Rtsne (>= 0.17), plotly (>= 4.12.0), alphahull (>= 2.5), uwot
+        (>= 0.2.4), ggpcp (>= 0.2.0), rlang (>= 1.1.7), viridis (>=
+        0.6.5)
+LazyData: true
+Suggests: knitr, readr, rmarkdown, testthat (>= 3.0.0), VIM
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://gabrielmccoy.github.io/pandemonium/
+NeedsCompilation: no
+Packaged: 2026-05-21 04:03:27 UTC; gabrielmccoy
+Author: Gabriel McCoy [aut, cre] (ORCID:
+    <https://orcid.org/0009-0008-3570-0361>),
+  Ursula Laa [aut] (ORCID: <https://orcid.org/0000-0002-0249-6439>),
+  German Valencia [aut] (ORCID: <https://orcid.org/0000-0001-6600-1290>)
+Maintainer: Gabriel McCoy <gabe.mccoy02@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-21 04:20:02 UTC

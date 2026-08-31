@@ -1,0 +1,40 @@
+Package: NonlinearDiD
+Type: Package
+Title: Staggered Difference-in-Differences with Nonlinear Outcomes
+Version: 0.2.0
+Description: Supports staggered difference-in-differences designs with
+    nonlinear outcomes for both panel and repeated cross-section data.
+    Implements estimators for staggered treatment adoption with binary,
+    count, and other nonlinear outcomes, extending Callaway and Sant'Anna
+    (2021) <doi:10.1016/j.jeconom.2020.12.001> to settings with nonlinear
+    outcome models such as logit, probit, and Poisson. For panel data,
+    units are followed over time and 'idname' identifies repeated
+    observations. For repeated cross-section data, observations are
+    independent within each time period; 'idname' is optional and may
+    identify survey records or households, but the estimator does not
+    require the same units to appear across periods. Repeated cross-section
+    estimation includes pooled quasi-maximum likelihood approaches motivated
+    by Wooldridge (2023) <doi:10.1093/ectj/utad016>, with optional weighting
+    and clustered inference. Methods also draw on Roth and Sant'Anna (2023)
+    <doi:10.3982/ECTA19402> and Sant'Anna and Zhao (2020)
+    <doi:10.1016/j.jeconom.2020.06.003>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, utils, MASS, sandwich, lmtest, ggplot2
+Suggests: did, dplyr, knitr, rmarkdown, testthat (>= 3.0.0), covr
+Config/testthat/edition: 3
+URL: https://github.com/causalfragility-lab/NonlinearDiD
+BugReports: https://github.com/causalfragility-lab/NonlinearDiD/issues
+NeedsCompilation: no
+Authors@R: person(given = "Subir",
+                  family = "Hait",
+                  role = c("aut", "cre"),
+                  email = "haitsubi@msu.edu",
+                  comment = c(ORCID = "0009-0004-9871-9677"))
+Packaged: 2026-05-20 14:10:49 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-05-20 14:40:14 UTC

@@ -1,0 +1,34 @@
+Package: mets
+Type: Package
+Title: Analysis of Multivariate Event Times
+Version: 1.3.12
+Authors@R: c(person("Klaus K.", "Holst", email="klaus@holst.it", role=c("aut", "cre")),
+             person("Thomas Scheike", role=c("aut")))
+Author: Klaus K. Holst [aut, cre],
+  Thomas Scheike [aut]
+Maintainer: Klaus K. Holst <klaus@holst.it>
+Description: Implementation of various statistical models for multivariate
+    event history data <doi:10.1007/s10985-013-9244-x>. Including multivariate
+    cumulative incidence models <doi:10.1002/sim.6016>, and  bivariate random
+    effects probit models (Liability models) <doi:10.1016/j.csda.2015.01.014>.
+    Modern methods for survival analysis, including regression modelling (Cox, Fine-Gray, 
+    Ghosh-Lin, Binomial regression) with fast computation of influence functions.
+License: Apache License (== 2.0)
+LazyLoad: yes
+URL: https://kkholst.github.io/mets/, https://github.com/kkholst/mets
+BugReports: https://github.com/kkholst/mets/issues
+Depends: R (>= 3.5)
+Imports: Rcpp, RcppArmadillo (>= 0.12.8.0), lava (>= 1.9.2), methods,
+        mvtnorm, numDeriv, splines, survival (>= 2.43-1), timereg (>=
+        1.9.4)
+Suggests: cmprsk, icenReg, KernSmooth, knitr, optimx, prodlim,
+        riskRegression, rmarkdown, tinytest (>= 1.4.1), ucminf
+VignetteBuilder: knitr
+ByteCompile: yes
+LinkingTo: Rcpp, RcppArmadillo (>= 0.12.8.0), mvtnorm
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-29 09:35:47 UTC; kkzh
+Repository: CRAN
+Date/Publication: 2026-07-30 05:20:07 UTC

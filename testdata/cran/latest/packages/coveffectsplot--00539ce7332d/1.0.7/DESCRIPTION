@@ -1,0 +1,38 @@
+Package: coveffectsplot
+Title: Produce Forest Plots to Visualize Covariate Effects
+Version: 1.0.7
+Authors@R: c(
+    person("Samer", "Mouksassi", email = "samermouksassi@gmail.com",
+      role = c("aut", "cre"),comment = c(ORCID = "https://orcid.org/0000-0002-7152-6654")),
+    person("Benjamin", "Rich", email = "mail@benjaminrich.net",
+      role = c("aut")),
+    person("Dean", "Attali", email = "daattali@gmail.com",
+      role = c("ctb"))
+    )
+Description: Produce forest plots to visualize covariate effects using either
+    the command line or an interactive 'Shiny' application.
+URL: https://smouksassi.github.io/coveffectsplot/,
+        https://github.com/smouksassi/coveffectsplot
+BugReports: https://github.com/smouksassi/coveffectsplot/issues
+Depends: R (>= 4.0.0)
+Imports: colourpicker, data.table (>= 1.9.8), egg, grid, ggplot2 (>=
+        4.0.0), shiny, stats, utils
+Suggests: markdown, dplyr, tidyr, shinyjs, shinymeta, table1, clipr,
+        formatR, MASS, knitr, rmarkdown, mrgsolve, GGally, ggridges,
+        ggrepel, ggstance, patchwork, plotly, scales, shinyAce, Rcpp,
+        gamlss.dist, ggdist, ggh4x, ggpmisc, quantreg
+License: MIT + file LICENSE
+SystemRequirements: pandoc with https support
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-09-15 23:38:17 UTC; smouksassi
+Author: Samer Mouksassi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7152-6654>),
+  Benjamin Rich [aut],
+  Dean Attali [ctb]
+Maintainer: Samer Mouksassi <samermouksassi@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-16 00:00:02 UTC

@@ -1,0 +1,41 @@
+Package: semlrtp
+Title: Likelihood Ratio Test P-Values for Structural Equation Models
+Version: 0.1.2
+Authors@R: c(
+    person(given = "Shu Fai",
+           family = "Cheung",
+           role = c("aut", "cre"),
+           email = "shufai.cheung@gmail.com",
+           comment = c(ORCID = "0000-0002-9871-9448")),
+    person(given = "Mark Hok Chio",
+           family = "Lai",
+           role = c("aut"),
+           email = "marklhc@gmail.com ",
+           comment = c(ORCID = "0000-0002-9196-7406"))
+           )
+Description: Computes likelihood ratio test (LRT) p-values
+  for free parameters in a structural equation model.
+  Currently supports models fitted by the 'lavaan' package by
+  Rosseel (2012) <doi:10.18637/jss.v048.i02>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Imports: lavaan (>= 0.6-18), utils, parallel, pbapply
+VignetteBuilder: knitr
+URL: https://sfcheung.github.io/semlrtp/
+BugReports: https://github.com/sfcheung/semlrtp/issues
+Config/Needs/website: rmarkdown
+Depends: R (>= 4.0.0)
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-19 02:50:43 UTC; shufa
+Author: Shu Fai Cheung [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9871-9448>),
+  Mark Hok Chio Lai [aut] (ORCID:
+    <https://orcid.org/0000-0002-9196-7406>)
+Maintainer: Shu Fai Cheung <shufai.cheung@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-19 11:00:02 UTC

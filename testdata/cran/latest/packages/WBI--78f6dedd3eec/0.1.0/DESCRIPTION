@@ -1,0 +1,31 @@
+Package: WBI
+Type: Package
+Title: Wasserstein Bipolarization Index
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Hane", "Lee",
+      email = "hl3333@columbia.edu",
+      role = c("aut", "cre")
+    )
+  )
+Description: Computation of the Wasserstein Bipolarization Index as 
+    described in Lee and Sobel (Forthcoming) 
+    <doi:10.48550/arXiv.2408.03331>. Provides both 
+    asymptotic (Sommerfeld, 2017 
+    <https://ediss.uni-goettingen.de/bitstream/handle/11858/00-1735-0000-0023-3FA1-C/DissertationSommerfeldRev.pdf?sequence=1>) 
+    and bootstrap methods (Efron and Narasimhan, 2020 
+    <doi:10.1080/10618600.2020.1714633>) for calculating 
+    confidence intervals.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: transport, dplyr, bcaboot
+RoxygenNote: 7.3.3
+Suggests: spelling
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-03-06 16:32:31 UTC; hanelee
+Author: Hane Lee [aut, cre]
+Maintainer: Hane Lee <hl3333@columbia.edu>
+Repository: CRAN
+Date/Publication: 2026-03-11 16:40:11 UTC

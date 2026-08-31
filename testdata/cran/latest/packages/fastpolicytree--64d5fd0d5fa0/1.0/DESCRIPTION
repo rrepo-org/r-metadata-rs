@@ -1,0 +1,36 @@
+Package: fastpolicytree
+Type: Package
+Title: Constructs Policy Trees from Covariate and Reward Data
+Version: 1.0
+Authors@R: c(
+    person("James", "Cussens", role = c("aut", "cre"),
+    email = "james.cussens@bristol.ac.uk",
+    comment = c(ORCID = "0000-0002-1363-2336")),
+    person("Julia", "Hatamyar", role = "ctb", email = "julia.hatamyar@york.ac.uk"),
+    person("Vishalie", "Shah", role = "ctb", email = "vishalieshah@gmail.com"),		
+    person("University of Bristol", role = "cph"),
+    person("MRC", role = "fnd")
+    )
+Description: Constructs optimal policy trees which provide a rule-based treatment prescription policy.
+ Input is covariate and reward data, where, typically, the rewards will be doubly robust reward estimates.
+ This package aims to construct optimal policy trees more quickly than the existing 'policytree' package and
+ is intended to be used alongside that package.
+ For more details see Cussens, Hatamyar, Shah and Kreif (2025) <doi:10.48550/arXiv.2506.15435>.
+URL: https://github.com/jcussens/tailoring
+Suggests: policytree
+Imports: Rcpp (>= 1.0.7)
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+License: GPL (>= 3)
+NeedsCompilation: yes
+Packaged: 2025-06-20 11:36:28 UTC; uw20605
+Author: James Cussens [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1363-2336>),
+  Julia Hatamyar [ctb],
+  Vishalie Shah [ctb],
+  University of Bristol [cph],
+  MRC [fnd]
+Maintainer: James Cussens <james.cussens@bristol.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-06-24 08:50:06 UTC

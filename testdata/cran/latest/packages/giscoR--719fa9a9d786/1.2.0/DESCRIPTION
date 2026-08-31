@@ -1,0 +1,53 @@
+Type: Package
+Package: giscoR
+Title: Download 'Eurostat' 'GISCO' Spatial Data
+Version: 1.2.0
+Authors@R: c(
+    person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8457-4658")),
+    person("Eurostat", role = "cph",
+           comment = c(ROR = "033d3q980")),
+    person("EuroGeographics", role = "cph")
+  )
+Description: Tools to download global and European spatial data from the
+    'Eurostat' 'GISCO' (Geographic Information System of the Commission)
+    data distribution <https://ec.europa.eu/eurostat/web/gisco>. The
+    package provides helpers for country boundaries, 'NUTS' regions,
+    administrative units, statistical units, transport networks, basic
+    service locations and other 'GISCO' datasets. This package is not
+    officially related to or endorsed by 'Eurostat'.
+License: GPL-3
+URL: https://ropengov.github.io/giscoR/,
+        https://github.com/rOpenGov/giscoR
+BugReports: https://github.com/rOpenGov/giscoR/issues
+Depends: R (>= 4.1)
+Imports: cli, countrycode (>= 1.2.0), httr2 (>= 1.2.0), jsonlite,
+        lifecycle, rappdirs (>= 0.3.0), sf (>= 1.0.0), tibble, tools,
+        utils
+Suggests: dplyr, eurostat, ggplot2 (>= 3.5.0), knitr, quarto, stats,
+        testthat (>= 3.0.0), withr
+VignetteBuilder: quarto
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Copyright: The general copyright notice and license policy from
+        Eurostat applies (see file COPYRIGHTS). Some datasets have
+        additional download and usage provisions. See
+        <https://ec.europa.eu/eurostat/web/gisco/geodata>.
+Encoding: UTF-8
+LazyData: true
+X-schema.org-applicationCategory: cartography
+X-schema.org-isPartOf: https://ropengov.org/
+X-schema.org-keywords: ropengov, r, spatial, api-wrapper, rstats,
+        r-package, eurostat, gisco, thematic-maps, eurostat-data, cran,
+        ggplot2, gis, cran-r
+NeedsCompilation: no
+Packaged: 2026-08-27 08:23:11 UTC; diego
+Author: Diego Hernangómez [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8457-4658>),
+  Eurostat [cph] (ROR: <https://ror.org/033d3q980>),
+  EuroGeographics [cph]
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-27 09:00:02 UTC

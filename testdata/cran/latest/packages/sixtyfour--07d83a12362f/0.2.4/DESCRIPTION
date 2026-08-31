@@ -1,0 +1,43 @@
+Package: sixtyfour
+Title: Humane Interface to Amazon Web Services
+Version: 0.2.4
+Authors@R: c(
+    person("Sean", "Kross", role = "aut"),
+    person("Scott", "Chamberlain", , "sachamber@fredhutch.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1444-9135")),
+    person("Fred Hutchinson Cancer Center", , , "wilds@fredhutch.org", role = "fnd",
+           comment = c(ROR = "007ps6h72"))
+  )
+Description: An opinionated interface to Amazon Web Services <https://aws.amazon.com>,
+    with functions for interacting with 'IAM' (Identity and Access Management),
+    'S3' (Simple Storage Service), 'RDS' (Relational Data Service), Redshift, and Billing.
+    Lower level functions ('aws_' prefix) are for do it yourself workflows, while
+    higher level functions ('six_' prefix) automate common tasks.
+URL: https://github.com/getwilds/sixtyfour,
+        https://getwilds.org/sixtyfour/
+BugReports: https://github.com/getwilds/sixtyfour/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: dplyr, paws.common (>= 0.8.1), paws.security.identity,
+        paws.storage, paws.compute, paws.database,
+        paws.cost.management, purrr, rlang, tibble, fs, s3fs (>=
+        0.1.5), cli, glue, memoise, uuid, jsonlite, curl, tidyr
+Suggests: knitr, withr, rmarkdown, roxyglobals, DBI, RPostgres,
+        RMariaDB, ggplot2, lubridate, testthat (>= 3.0.0), vcr (>=
+        0.6.0), webmockr, clipr, ipaddress
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-27 18:39:09 UTC; schambe3
+Author: Sean Kross [aut],
+  Scott Chamberlain [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1444-9135>),
+  Fred Hutchinson Cancer Center [fnd] (ROR: <https://ror.org/007ps6h72>)
+Maintainer: Scott Chamberlain <sachamber@fredhutch.org>
+Repository: CRAN
+Date/Publication: 2026-08-28 07:00:17 UTC

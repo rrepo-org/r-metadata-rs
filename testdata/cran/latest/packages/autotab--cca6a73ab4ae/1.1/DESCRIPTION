@@ -1,0 +1,29 @@
+Package: autotab
+Title: Variational Autoencoders for Heterogeneous Tabular Data
+Version: 1.1
+Authors@R: 
+    person("Sarah", "Milligan", email = "slm1999@bu.edu", role = c("aut", "cre"))
+Description: Build and train a variational autoencoder (VAE) for mixed-type
+    tabular data (continuous, binary, categorical).
+    Models are implemented using 'TensorFlow' and 'Keras' via the 'reticulate' 
+    interface, enabling reproducible VAE training for heterogeneous tabular 
+    datasets.
+License: MIT + file LICENSE
+URL: https://github.com/SarahMilligan-hub/AutoTab
+BugReports: https://github.com/SarahMilligan-hub/AutoTab/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: keras, magrittr, R6, reticulate, tensorflow
+Suggests: dplyr, caret, knitr, rmarkdown, testthat (>= 3.0.0)
+SystemRequirements: Python (>= 3.11); TensorFlow (>= 2.11, < 2.14);
+        Keras; TensorFlow Addons
+LazyData: true
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-30 21:13:02 UTC; smill
+Author: Sarah Milligan [aut, cre]
+Maintainer: Sarah Milligan <slm1999@bu.edu>
+Repository: CRAN
+Date/Publication: 2026-07-30 21:30:02 UTC

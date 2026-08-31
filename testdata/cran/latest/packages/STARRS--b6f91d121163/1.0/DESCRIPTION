@@ -1,0 +1,42 @@
+Package: STARRS
+Type: Package
+Title: Stochastic Robust Multivariate Statistics
+Version: 1.0
+Date: 2026-06-26
+Authors@R: c(
+    person('Antoine','Godichon-Baggioni', role = c('aut', 'cph'),
+      email = 'antoine.godichon_baggioni@upmc.fr'),
+    person('Stéphane','Robin', role = 'aut'),
+    person('Daphné', 'Giorgi', role = c('aut','cre'), 
+      email = 'daphne.giorgi@sorbonne-universite.fr')
+    )
+Description: Algorithms for robust multivariate statistics (STochAstic Robust multivaRiate Statistics) 
+  including geometric median and geometric median covariance computation, 
+  k-medians clustering and robust median Principal Compenents Analysis (PCA), 
+  robust estimation of parameters for Gaussian, Student, or Laplace mixture models.
+  'STARRS' provides an independent, clean, consolidated and cohesive framework,
+  while drawing inspiration from the approaches implemented in packages 'Gmedian', 'Kmedians', 'RGMM', 'RobRegression'.
+  Methods used in the package refer to 
+  H. Robbins, S. Monro (1951) <doi:10.1214/aoms/1177729586>;
+  D. Kraus, V. M. Panaretos (2012) <doi:10.1093/biomet/ass037>;
+  H. Cardot, A. Godichon-Baggioni (2015) <doi:10.48550/arXiv.1504.02852>;
+  A. Godichon-Baggioni, S. Robin (2024) <doi:10.1007/s11222-023-10362-9>.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.13), foreach, mvtnorm, mclust, LaplacesDemon,
+        genieclust, robustbase, RSpectra, ggplot2, reshape2, DescTools,
+        checkmate, doFuture, future, parallel, capushe, bookdown, knitr
+LinkingTo: Rcpp, RcppArmadillo
+LazyData: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+Suggests: rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-20 12:41:39 UTC; giorgi
+Author: Antoine Godichon-Baggioni [aut, cph],
+  Stéphane Robin [aut],
+  Daphné Giorgi [aut, cre]
+Maintainer: Daphné Giorgi <daphne.giorgi@sorbonne-universite.fr>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-07-29 17:00:19 UTC

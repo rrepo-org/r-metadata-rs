@@ -1,0 +1,33 @@
+Package: trendseries
+Type: Package
+Title: Extract Trends from Time Series
+Version: 1.4.0
+Description: Provides a unified interface to extract trends, cycles, and
+    seasonal components from monthly and quarterly time series using
+    established econometric filters and smoothing methods, with
+    frequency-aware defaults for common economic frequencies.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+URL: https://github.com/viniciusoike/trendseries,
+        https://viniciusoike.github.io/trendseries/
+BugReports: https://github.com/viniciusoike/trendseries/issues
+Imports: cli, dlm, hpfilter, lubridate, mFilter, RcppRoll, rlang,
+        stats, tibble, tsbox
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.3
+Suggests: dplyr, ggplot2 (>= 4.0.0), knitr, rmarkdown, scales,
+        seasonal, testthat (>= 3.0.0), tidyr, xts
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Authors@R: 
+    person("Vinicius", "Oike", , "viniciusoike@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0005-8015-9189"))
+NeedsCompilation: no
+Packaged: 2026-07-14 01:00:53 UTC; viniciusreginatto
+Author: Vinicius Oike [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0005-8015-9189>)
+Maintainer: Vinicius Oike <viniciusoike@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-14 02:20:02 UTC

@@ -1,0 +1,43 @@
+Package: blockedFF
+Type: Package
+Title: Generation of Blocked Fractional Factorial Designs (Two-Level
+        and Three-Level)
+Version: 0.1.0
+Authors@R: c(
+    person(
+        given = "Sunil Kumar",
+        family = "Yadav",
+        role = "aut"
+    ),
+    person(
+        given = "Sukanta",
+        family = "Dash",
+        role = c("aut", "cre"),
+        email = "sukanta.iasri@gmail.com"
+    ),
+    person(
+        given = "Anil",
+        family = "Kumar",
+        role = "aut"
+    ))
+Description: Provides computational tools to generate efficient blocked and unblocked
+    fractional factorial designs for two-level and three-level factors using the
+    generalized Minimum Aberration (MA) criterion and related optimization algorithms.
+    Methodological foundations include the general theory of minimum aberration as
+    described by Cheng and Tang (2005) <doi:10.1214/009053604000001228>, and the 
+    catalogue of three-level regular fractional factorial designs developed by Xu 
+    (2005) <doi:10.1007/s00184-005-0408-x>. The main functions dol2() and dol3() generate
+    blocked two-level and three-level fractional factorial designs, respectively, using
+    beam search, optimization-based ranking, confounding assessment, and structured 
+    output suitable for complete factorial situations.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-11-30 03:54:24 UTC; B.N Mandal
+Author: Sunil Kumar Yadav [aut],
+  Sukanta Dash [aut, cre],
+  Anil Kumar [aut]
+Maintainer: Sukanta Dash <sukanta.iasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-04 15:00:14 UTC

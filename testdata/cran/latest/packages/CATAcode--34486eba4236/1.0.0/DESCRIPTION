@@ -1,0 +1,31 @@
+Package: CATAcode
+Title: Explore and Code Responses to Check-All-that-Apply Survey Items
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Kyle", family = "Nickodem", email = "kyle.nickodem@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4976-3378")),
+    person(given = "Gabriel J.", family = "Merrin", email = "gjmerrin@syr.edu", role = "aut")
+           )
+Description: Analyzing responses to check-all-that-apply survey items often requires 
+    data transformations and subjective decisions for combining categories. 'CATAcode'
+    contains tools for exploring response patterns, facilitating data transformations, 
+    applying a set of decision rules for coding responses, and summarizing response frequencies.
+License: GPL (>= 3)
+URL: https://github.com/knickodem/CATAcode
+BugReports: https://github.com/knickodem/CATAcode/issues
+Depends: R (>= 3.6)
+Imports: rlang, dplyr (>= 1.1.0), tidyr, ggplot2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-08-20 20:40:00 UTC; nicko013
+Author: Kyle Nickodem [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4976-3378>),
+  Gabriel J. Merrin [aut]
+Maintainer: Kyle Nickodem <kyle.nickodem@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-08-26 14:20:17 UTC

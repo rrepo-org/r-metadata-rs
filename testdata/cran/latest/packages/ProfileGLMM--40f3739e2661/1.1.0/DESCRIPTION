@@ -1,0 +1,43 @@
+Package: ProfileGLMM
+Type: Package
+Title: Bayesian Profile Regression using Generalised Linear Mixed
+        Models
+Version: 1.1.0
+Authors@R: c(
+    person(
+      "Matteo", "Amestoy",
+      email = "m.amestoy@amsterdamumc.nl",
+      role = c("aut", "cre", "cph")
+    ),
+    person(
+      "Mark", "van de Wiel",
+      email = "mark.vdwiel@amsterdamumc.nl",
+      role = c("ths")
+    ),
+    person(
+      "Wessel", "van Wieringen",
+      email = "w.vanwieringen@amsterdamumc.nl",
+      role = c("ths")
+    )
+  )
+Description: Implements a Bayesian profile regression using a generalized linear mixed model as output model. The package allows for binary (probit mixed model) and continuous (linear mixed model) outcomes and both continuous and categorical clustering variables. The package utilizes 'RcppArmadillo' and 'RcppDist' for high-performance statistical computing in C++. For more details see Amestoy & al. (2025) <doi:10.48550/arXiv.2510.08304>.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp, RcppArmadillo, RcppDist
+Imports: Rcpp, LaplacesDemon, MCMCpack, Matrix, Spectrum, mvtnorm
+Depends: R (>= 3.5)
+URL: https://github.com/MatteoAmestoy/ProfileGLMM-package
+BugReports: https://github.com/MatteoAmestoy/ProfileGLMM-package/issues
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-02-03 11:11:23 UTC; VNOB-0731
+Author: Matteo Amestoy [aut, cre, cph],
+  Mark van de Wiel [ths],
+  Wessel van Wieringen [ths]
+Maintainer: Matteo Amestoy <m.amestoy@amsterdamumc.nl>
+Repository: CRAN
+Date/Publication: 2026-02-03 12:00:17 UTC

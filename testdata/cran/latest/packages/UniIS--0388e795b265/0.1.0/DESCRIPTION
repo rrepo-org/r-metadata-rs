@@ -1,0 +1,51 @@
+Package: UniIS
+Type: Package
+Title: Importance Sampling Inference for Censored Univariate Data
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut"))
+Description: Distribution-independent framework for importance-sampling
+    inference with univariate observations subject to censoring or truncation.
+    Users provide probability functions and a proposal over model parameters.
+    Constructs observed-data likelihood contributions, computes numerically
+    stable importance weights, and supplies posterior, likelihood, predictive,
+    diagnostic, and model-comparison summaries. Covers complete, right, left,
+    interval, Type-I, Type-II, progressive Type-II, first-failure, progressive
+    first-failure, doubly Type-II, middle-censored, and left/right-truncated data.
+    Methods for importance sampling and censoring schemes are described in
+    Geweke (1989) <doi:10.2307/2290062>, Hesterberg (1995) <doi:10.1080/00031305.1995.10476138>,
+    Robert and Casella (2004, ISBN:978-0-387-21617-1), Kundu and Joarder (2006)
+    <doi:10.1016/j.csda.2005.05.002>, Banerjee and Kundu (2008) <doi:10.1109/TR.2008.916890>,
+    Iyer, Jammalamadaka, and Kundu (2008) <doi:10.1016/j.jspi.2007.03.062>, Wu and
+    Kus (2009) <doi:10.1016/j.csda.2009.03.010>, Prajapati, Mitra, and Kundu (2019)
+    <doi:10.1007/s13571-018-0167-0>, Mondal and Kundu (2020) <doi:10.1080/03610926.2018.1554128>,
+    Balakrishnan and Aggarwala (2000, ISBN:980-1-4612-1334-5), Ding and Gui (2023)
+    <doi:10.3390/math11092003>, Nagar, Kumar, and Krishna (2026) <doi:10.59467/IJASS.2026.22.1>,
+    Goel and Krishna (2026) <doi:10.1007/s13198-026-03208-w>, Yadav, Jaiswal, and
+    Yadav (2026) <doi:10.1007/s11135-026-02647-8>, and Goel, Kumar, and Krishna
+    (2026, "Estimation in power Lindley distributions using balanced joint
+    progressively Type-II censored data").
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-28 16:14:41 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-06 10:10:02 UTC

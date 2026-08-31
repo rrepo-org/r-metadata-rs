@@ -1,0 +1,30 @@
+Package: adsoRptionCMF
+Type: Package
+Title: Classical Model Fitting of Adsorption Isotherms
+Version: 0.1.1
+Author: Paul Angelo C. Manlapaz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1203-2064>)
+Maintainer: Paul Angelo C. Manlapaz <pacmanlapaz@gmail.com>
+Description: 
+  Provides tools for classical parameter estimation of adsorption isotherm models, including both 
+  linear and nonlinear forms of the Freundlich, Langmuir, and Temkin isotherms. This package allows 
+  users to fit these models to experimental data, providing parameter estimates along with fit statistics 
+  such as Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC). Error metrics are 
+  computed to evaluate model performance, and the package produces model fit plots with bootstrapped 95% 
+  confidence intervals. Additionally, it generates residual plots for diagnostic assessment of the models. 
+  Researchers and engineers in material science, environmental engineering, and chemical engineering can 
+  rigorously analyze adsorption behavior in their systems using this straightforward, non-Bayesian approach. 
+  For more details, see Harding (1907) <doi:10.2307/2987516>.
+License: GPL-3
+Encoding: UTF-8
+Imports: nls2, stats, Metrics, ggplot2, boot
+Suggests: testthat
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Authors@R: c(
+  person(given = "Paul Angelo C.", family = "Manlapaz", role = c("aut", "cre"), 
+         email = "pacmanlapaz@gmail.com", comment = c(ORCID = "0000-0002-1203-2064")))
+NeedsCompilation: no
+Packaged: 2025-06-28 08:20:28 UTC; PTRI
+Repository: CRAN
+Date/Publication: 2025-06-28 08:40:02 UTC

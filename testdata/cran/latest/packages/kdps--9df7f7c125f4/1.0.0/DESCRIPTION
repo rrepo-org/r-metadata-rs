@@ -1,0 +1,23 @@
+Package: kdps
+Type: Package
+Title: Kinship Decouple and Phenotype Selection (KDPS)
+Version: 1.0.0
+Authors@R: 
+    person("Wanjun", "Gu", , "wanjun.gu@ucsf.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7342-7000"))
+Description: A phenotype-aware algorithm for resolving cryptic relatedness in genetic studies. It removes related individuals based on kinship or identity-by-descent (IBD) scores while prioritizing subjects with phenotypes of interest. This approach helps maximize the retention of informative subjects, particularly for rare or valuable traits, and improves statistical power in genetic and epidemiological studies. KDPS supports both categorical and quantitative phenotypes, composite scoring, and customizable pruning strategies using a fuzziness parameter. Benchmark results show improved phenotype retention and high computational efficiency on large-scale datasets like the UK Biobank. Methods used include Manichaikul et al. (2010) <doi:10.1093/bioinformatics/btq559> for kinship estimation, Purcell et al. (2007) <doi:10.1086/519795> for IBD estimation, and Bycroft et al. (2018) <doi:10.1038/s41586-018-0579-z> for UK Biobank data reference.
+URL: https://github.com/UCSD-Salem-Lab/kdps
+BugReports: https://github.com/UCSD-Salem-Lab/kdps/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: data.table, dplyr, progress, tibble
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.2
+Suggests: devtools, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-07-20 03:22:40 UTC; wgu
+Author: Wanjun Gu [aut, cre] (ORCID: <https://orcid.org/0000-0002-7342-7000>)
+Maintainer: Wanjun Gu <wanjun.gu@ucsf.edu>
+Repository: CRAN
+Date/Publication: 2025-07-22 10:30:27 UTC

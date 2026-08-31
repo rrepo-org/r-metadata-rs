@@ -1,0 +1,34 @@
+Package: command
+Type: Package
+Title: Process Command Line Arguments
+Version: 0.2.0
+Authors@R: c(
+    person(given = "John",
+           family = "Bryant",
+	   email = "john@bayesiandemography.com",
+	   role = c("aut", "cre")),
+    person("Bayesian Demography Limited",
+            role = "cph"))
+Description: Process command line arguments, allowing scripts to
+    behave like functions, with well-defined inputs and outputs.
+    Helps make data analysis workflows more modular,
+    and therefore more transparent, flexible, and reliable.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: cli, methods, tools
+Suggests: covr, dplyr, ggplot2, knitr, littler, quarto, readr,
+        rmarkdown, testthat (>= 3.0.0), tidyr, withr
+Config/testthat/edition: 3
+URL: https://bayesiandemography.github.io/command/,
+        https://github.com/bayesiandemography/command
+Config/Needs/website: quarto, rmarkdown, fs
+BugReports: https://github.com/bayesiandemography/command/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-23 01:03:29 UTC; johnbryant
+Author: John Bryant [aut, cre],
+  Bayesian Demography Limited [cph]
+Maintainer: John Bryant <john@bayesiandemography.com>
+Repository: CRAN
+Date/Publication: 2026-07-23 02:40:02 UTC

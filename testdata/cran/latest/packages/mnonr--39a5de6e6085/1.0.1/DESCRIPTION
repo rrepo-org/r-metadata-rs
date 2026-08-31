@@ -1,0 +1,24 @@
+Package: mnonr
+Type: Package
+Title: A Generator of Multivariate Non-Normal Random Numbers
+Version: 1.0.1
+Date: 2026-05-18
+Authors@R: c(
+    person(given = "Wen", family = "Qu", role = c("aut", "cre"),
+           email = "mnonr.rpackage@gmail.com"),
+    person(given = "Zhiyong", family = "Zhang", role = "aut"))
+Description: A data generator of multivariate non-normal data in R. It combines two different methods to generate non-normal data, one with user-specified multivariate skewness and kurtosis (more details can be found in the paper: Qu, Liu, & Zhang, 2019 <doi:10.3758/s13428-019-01291-5>), and the other with the given marginal skewness and kurtosis. The latter one is the widely-used Vale and Maurelli's method. It also contains a function to calculate univariate and multivariate (Mardia's Test) skew and kurtosis.
+Depends: R (>= 3.1.0)
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+Imports: stats
+Suggests: MASS, knitr, rmarkdown, semTools
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-05-18 09:33:42 UTC; QW
+Author: Wen Qu [aut, cre],
+  Zhiyong Zhang [aut]
+Maintainer: Wen Qu <mnonr.rpackage@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-18 10:30:02 UTC

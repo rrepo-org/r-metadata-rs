@@ -1,0 +1,28 @@
+Package: BRRAT
+Title: Bayesian Regression Robustness Assessment Test
+Version: 0.0.2
+Authors@R: 
+    person("Matt", "Gibbs", email = "matt.gibbs@csiro.au",
+    role = c("aut", "cre"))
+URL: https://github.com/csiro/hydro_BRRAT_Package
+BugReports: https://github.com/csiro/hydro_BRRAT_Package/issues
+Description: Tests for a linear relationship in the log ratio between an observed and simulated series and an independent variable. Typically this the error in modelled streamflow at an annual time scale, and a rainfall input. The approach allows for multiple sites as random factors and for multiple replicates of the simulated values. The approach is outlined in Gibbs et al. (2026) in review.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Biarch: true
+Depends: R (>= 4.1.0)
+Imports: methods, Rcpp (>= 1.1.0), RcppParallel (>= 5.0.1), rstan (>=
+        2.18.1), rstantools (>= 2.5.0), MASS, ggplot2, dplyr
+Suggests: covr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 1.1.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2026-04-23 04:45:59 UTC; gib417
+Author: Matt Gibbs [aut, cre]
+Maintainer: Matt Gibbs <matt.gibbs@csiro.au>
+Repository: CRAN
+Date/Publication: 2026-04-24 20:30:11 UTC

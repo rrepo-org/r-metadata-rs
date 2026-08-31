@@ -1,0 +1,41 @@
+Package: tidyGenR
+Title: Tidy Multilocus Amplicon Genotypes
+Version: 0.1.7
+Authors@R: c(
+    person("Miguel", "Camacho", , "miguelcamachosanchez@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-6385-7963")),
+    person("Jennifer", "Leonard", role = "fnd")
+  )
+Description: Variant determination and genotyping from high throughput sequences
+    from multilocus amplicon libraries, typically sequenced in Illumina MiSeq or similar.
+    It provides a set of core functions for the central steps: demultiplex by locus,
+    truncate reads, variant calling, and genotype calling. Additionally, it provides a set of functions
+    for diagnosis and estimation of best running parameters and multiple extensions for
+    genotype/variants manipulation and reformatting. Output variants and genotypes are 
+    output in 'tidy' format, thus facilitating reformatting, manipulation and potential
+    connection to other R packages.
+License: GPL (>= 3)
+URL: https://github.com/csmiguel/tidyGenR
+BugReports: https://github.com/csmiguel/tidyGenR/issues
+Depends: R (>= 4.1.0)
+Imports: Biostrings, dada2 (>= 1.16), digest, dplyr (>= 1.0.0),
+        ggplot2, glue, methods, plyr, readr, ShortRead (>= 1.32.0),
+        stats, stringr, tibble, tidyr (>= 1.1.0), tidyselect, DECIPHER,
+        patchwork, writexl
+Suggests: ape, knitr, rmarkdown, testthat (>= 3.0.0), tools, BiocStyle
+biocViews: Software, Sequencing, Classification, Phylogenetics
+Encoding: UTF-8
+LazyData: false
+NeedsCompilation: no
+Packaged: 2026-02-13 11:33:59 UTC; Miguel
+RoxygenNote: 7.3.3
+SystemRequirements: cutadapt >=2.0
+        (https://cutadapt.readthedocs.io/en/stable/)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Author: Miguel Camacho [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6385-7963>),
+  Jennifer Leonard [fnd]
+Maintainer: Miguel Camacho <miguelcamachosanchez@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-17 22:10:02 UTC

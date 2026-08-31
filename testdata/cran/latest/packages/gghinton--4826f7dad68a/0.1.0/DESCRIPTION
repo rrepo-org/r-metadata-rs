@@ -1,0 +1,32 @@
+Package: gghinton
+Type: Package
+Title: Hinton Diagrams for 'ggplot2'
+Version: 0.1.0
+Authors@R: person("Robin", "Foster", email = "gghinton@proton.me",
+    role = c("aut", "cre", "cph"))
+Description: Provides a 'ggplot2' extension for drawing Hinton diagrams,
+    a visualisation technique for numerical matrices in which the area of
+    each square is proportional to the magnitude of the corresponding entry.
+    For signed data, white squares indicate positive values and black squares
+    indicate negative values on a grey background. Hinton diagrams are
+    especially useful for visualising PCA weight matrices, correlation matrices, 
+    and transition matrices.
+License: MIT + file LICENSE
+URL: https://github.com/robin-foster-rf/gghinton
+BugReports: https://github.com/robin-foster-rf/gghinton/issues
+Language: en-GB
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.4.0), ggplot2 (>= 3.4.0), rlang (>= 1.1.0)
+Suggests: knitr, Matrix, patchwork, grid, scales (>= 1.3.0), rmarkdown,
+        testthat (>= 3.0.0), tibble, vdiffr
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-03-29 12:34:18 UTC; robin
+Author: Robin Foster [aut, cre, cph]
+Maintainer: Robin Foster <gghinton@proton.me>
+Repository: CRAN
+Date/Publication: 2026-04-01 19:50:02 UTC

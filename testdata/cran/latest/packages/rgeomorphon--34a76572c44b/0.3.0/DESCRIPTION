@@ -1,0 +1,31 @@
+Package: rgeomorphon
+Type: Package
+Title: A Lightweight Implementation of the 'Geomorphon' Algorithm
+Version: 0.3.0
+Authors@R: person(given = "Andrew", family = "Brown", role = c("aut", "cre"), email = "brown.andrewg@gmail.com", comment = c(ORCID="0000-0002-4565-533X"))
+Maintainer: Andrew Brown <brown.andrewg@gmail.com>
+Description: A lightweight implementation of the geomorphon terrain
+  form classification algorithm of Jasiewicz and Stepinski (2013)
+  <doi:10.1016/j.geomorph.2012.11.005> based largely on the 
+  'GRASS GIS' 'r.geomorphon' module. This implementation employs 
+  a novel algorithm written in C++ and 'RcppParallel'.
+License: GPL (>= 3)
+Depends: R (>= 3.6.2)
+Imports: Rcpp, RcppParallel
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+Suggests: terra, future.apply, litedown, tinytest
+Enhances: future, parallel
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+URL: https://github.com/brownag/rgeomorphon/,
+        https://humus.rocks/rgeomorphon/
+BugReports: https://github.com/brownag/rgeomorphon/issues
+LazyData: true
+VignetteBuilder: litedown
+NeedsCompilation: yes
+Packaged: 2025-09-11 14:04:19 UTC; andrew
+Author: Andrew Brown [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4565-533X>)
+Repository: CRAN
+Date/Publication: 2025-09-16 07:20:02 UTC

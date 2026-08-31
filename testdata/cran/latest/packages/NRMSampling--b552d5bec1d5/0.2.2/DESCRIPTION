@@ -1,0 +1,45 @@
+Package: NRMSampling
+Type: Package
+Title: Sampling Design and Estimation Methods for Natural Resource
+        Management
+Version: 0.2.2
+Authors@R: 
+    person(given = "Sadikul",
+           family = "Islam",
+           email = "sadikul.islamiasri@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2924-7122"))
+Description: Provides functions for probability and non-probability sampling
+    design, sample selection, and population estimation tailored to natural
+    resource management. Probability methods include simple random sampling,
+    stratified sampling, systematic sampling, cluster sampling, and
+    probability-proportional-to-size sampling. Non-probability methods
+    include convenience, judgement-based, and quota sampling. Estimation
+    functions cover means, totals, ratio estimators, regression estimators,
+    and the unequal-probability estimator of Horvitz and Thompson (1952,
+    <doi:10.2307/2280784>) for unequal-probability designs. Utilities support
+    biomass, soil-loss, and carbon-stock estimation from field plots. Spatial
+    extensions provide random, systematic, stratified, and raster-weighted
+    sampling within geographic polygons using the 'sf' and 'terra' packages,
+    with extraction of remote-sensing covariates at sample locations.
+    Applications include forest inventory, soil erosion monitoring, watershed
+    studies, and ecological field surveys.
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: stats, utils
+Suggests: sf (>= 1.0.0), terra (>= 1.7.0), ggplot2 (>= 3.4.0), dplyr
+        (>= 1.1.0), testthat (>= 3.0.0), knitr (>= 1.40), rmarkdown (>=
+        2.18), covr, spelling
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-04-22 04:35:17 UTC; acer
+Author: Sadikul Islam [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2924-7122>)
+Maintainer: Sadikul Islam <sadikul.islamiasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-22 13:10:14 UTC

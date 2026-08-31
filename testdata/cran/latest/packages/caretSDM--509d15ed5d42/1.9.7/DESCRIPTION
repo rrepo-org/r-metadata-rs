@@ -1,0 +1,57 @@
+Type: Package
+Package: caretSDM
+Title: Build Species Distribution Modeling using 'caret'
+Version: 1.9.7
+Authors@R: c(
+    person("Luíz Fernando", "Esser", , "luizesser@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-2982-7223")),
+    person("Reginaldo", "Ré", role = "aut",
+           comment = c(ORCID = "0000-0001-6452-3466")),
+    person("Marcos", "R. Lima", role = "aut",
+           comment = c(ORCID = "0000-0002-5901-0911")),
+    person("Edivando", "Couto", role = "aut",
+           comment = c(ORCID = "0000-0003-4264-8449")),
+    person("José", "Hilário Delconte Ferreira", role = "aut",
+           comment = c(ORCID = "0000-0002-7116-2600")),
+    person("Valéria", "Batista", role = "aut",
+           comment = c(ORCID = "0000-0002-6574-7338")),
+    person("Dayani", "Bailly", role = "aut",
+           comment = c(ORCID = "0000-0002-6954-9902"))
+    )
+Maintainer: Luíz Fernando Esser <luizesser@gmail.com>
+Description: Use machine learning algorithms and advanced geographic information system tools to
+    build Species Distribution Modeling in a extensible and modern fashion. 
+License: MIT + file LICENSE
+BugReports: https://github.com/luizesser/caretSDM/issues
+Imports: caret, checkCLI, checkmate, cli, CoordinateCleaner,
+        data.table, dismo, dplyr, ECDFniche, ecospat, fs, ggplot2,
+        ggspatial, glue, gtools, lwgeom, maxnet, methods, pROC, purrr,
+        raster, sf, stars, stats, stringdist, stringr, terra, tidyr,
+        utils
+Encoding: UTF-8
+LazyData: true
+Suggests: bench, biomod2, blockCV, gbm, cito, covr, e1071, earth,
+        furrr, future, gam, here, httr2, kknn, knitr, mapview, mda,
+        naivebayes, nnet, parallelly, pdp, progressr, R.utils,
+        randomForest, rgbif, rmarkdown, roxyglobals, rpart, RSNNS,
+        Rtsne, sdm, tibble, usdm, withr, xgboost, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.2.0)
+URL: https://luizesser.github.io/caretSDM/
+Config/Needs/website: rmarkdown
+Config/roxyglobals/filename: generated-globals.R
+Config/roxyglobals/unique: FALSE
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-16 10:19:15 UTC; luizesser
+Author: Luíz Fernando Esser [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2982-7223>),
+  Reginaldo Ré [aut] (ORCID: <https://orcid.org/0000-0001-6452-3466>),
+  Marcos R. Lima [aut] (ORCID: <https://orcid.org/0000-0002-5901-0911>),
+  Edivando Couto [aut] (ORCID: <https://orcid.org/0000-0003-4264-8449>),
+  José Hilário Delconte Ferreira [aut] (ORCID:
+    <https://orcid.org/0000-0002-7116-2600>),
+  Valéria Batista [aut] (ORCID: <https://orcid.org/0000-0002-6574-7338>),
+  Dayani Bailly [aut] (ORCID: <https://orcid.org/0000-0002-6954-9902>)
+Repository: CRAN
+Date/Publication: 2026-07-16 10:50:02 UTC

@@ -1,0 +1,44 @@
+Package: datazoom.social
+Title: Simplify Access to Brazilian Social Data
+Version: 0.1.1
+Authors@R: c(
+    person("Laura", "Tavares Regadas", , "lauratregadas@gmail.com", role = c("aut", "cre")),
+    person("DataZoom (PUC-Rio)", , , "datazoom@econ.puc-rio.br", role = "fnd"),
+    person("Igor", "Rigolon Veiga", , "igor.rilave@hotmail.com", role = "aut"),
+    person("Arthur", "Lins de Vasconcellos", , "tuca1211@gmail.com", role = "aut"),
+    person("Giulia", "Toscano Imbuzeiro", , "giuliatoscano.imbuzeiro@gmail.com", role = "aut"),
+    person("Guilherme", "Jardim", , "gnjardim1@gmail.com", role = "aut"),
+    person("Pablo", "Chaves", , "pablochavescastro@gmail.com", role = "aut"),
+    person("Breno", "Avidos", , "breno.avidos@gmail.com", role = "aut"),
+    person("Bernardo", "Sieira", , "bernardo.sieira@gmail.com", role = "aut")
+  )
+Description: Provides tools for downloading and processing microdata from 
+    the PNAD Contínua (PNADC, Continuous National Household Sample Survey), 
+    a rotating panel survey published quarterly by IBGE (Brazilian Institute 
+    of Geography and Statistics). Includes panel identification algorithms 
+    for linking individuals across survey waves.
+License: MIT + file LICENSE
+URL: https://datazoom.com.br/en/
+Imports: arrow, dplyr, igraph, magrittr, PNADcIBGE, purrr, rlang,
+        stringr, tidyr
+Encoding: UTF-8
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+BugReports: https://github.com/datazoompuc/datazoom.social/issues
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-06 04:16:10 UTC; luanalaport
+Author: Laura Tavares Regadas [aut, cre],
+  DataZoom (PUC-Rio) [fnd],
+  Igor Rigolon Veiga [aut],
+  Arthur Lins de Vasconcellos [aut],
+  Giulia Toscano Imbuzeiro [aut],
+  Guilherme Jardim [aut],
+  Pablo Chaves [aut],
+  Breno Avidos [aut],
+  Bernardo Sieira [aut]
+Maintainer: Laura Tavares Regadas <lauratregadas@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-06 15:40:02 UTC

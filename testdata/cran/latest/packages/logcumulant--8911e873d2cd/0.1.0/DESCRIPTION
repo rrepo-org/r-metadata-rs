@@ -1,0 +1,37 @@
+Package: logcumulant
+Type: Package
+Title: Goodness-of-Fit Tests and Diagrams Based on Mellin Log-Cumulants
+Version: 0.1.0
+Authors@R: person("Raydonal", "Ospina", role = c("aut", "cre"),
+                  email = "raydonal@de.ufpe.br",
+                  comment = c(ORCID = "0000-0002-9884-9090"))
+Description: A family of three complementary goodness-of-fit tests based on an
+    adaptation of Hotelling's T-squared statistic applied to vectors of sample
+    log-cumulants (Mellin statistics) for positive-support reliability data.
+    The package provides the asymptotic chi-squared reference and parametric
+    bootstrap p-values for reliable finite-sample inference, covering the
+    Weibull, Frechet, Gamma, Inverse-Gamma, Log-Normal, and Log-Logistic
+    families. It also provides three diagnostic diagrams (log-cumulant,
+    kurtosis-skewness, and coefficient-of-variation) with bootstrap
+    concentration ellipses, in the spirit of moment-ratio diagrams. Methods are
+    described in Santos, Ospina, Espinheira and Oliveira (2025).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0)
+Imports: Rcpp, MASS, VGAM, actuar, numDeriv, goftest, ggplot2,
+        gridExtra
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/raydonal/logcumulant,
+        https://raydonal.github.io/logcumulant/
+BugReports: https://github.com/raydonal/logcumulant/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-06 15:29:11 UTC; raydonal
+Author: Raydonal Ospina [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9884-9090>)
+Maintainer: Raydonal Ospina <raydonal@de.ufpe.br>
+Repository: CRAN
+Date/Publication: 2026-06-12 11:20:08 UTC

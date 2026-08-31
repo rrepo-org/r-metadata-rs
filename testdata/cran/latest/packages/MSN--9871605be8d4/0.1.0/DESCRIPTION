@@ -1,0 +1,19 @@
+Package: MSN
+Type: Package
+Title: Multivariate Survival Data with Network Structures
+Version: 0.1.0
+Authors@R: person(given = "Li-Pang",
+                  family = "Chen",
+                  role = c("aut", "cre"),
+                  email = "lchen723@nccu.edu.tw")
+Description: Implements a semi-parametric estimation framework combined with a boosting algorithm to marginally estimate the conditional cumulative distribution function of survival times given informative covariates. It then utilizes the graphical lasso method to reconstruct network structures among multivariate time-to-event variables, accommodating both multivariate outcomes measured within a single dataset and survival times integrated from heterogeneous (multi-source) datasets..
+License: GPL-3
+Encoding: UTF-8
+Imports: MASS, glasso, survival, stats
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-05-31 15:38:31 UTC; Li-Pang Chen
+Author: Li-Pang Chen [aut, cre]
+Maintainer: Li-Pang Chen <lchen723@nccu.edu.tw>
+Repository: CRAN
+Date/Publication: 2026-06-04 12:10:09 UTC

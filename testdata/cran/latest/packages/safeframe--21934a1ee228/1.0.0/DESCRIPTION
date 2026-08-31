@@ -1,0 +1,35 @@
+Package: safeframe
+Title: Generic Data Tagging and Validation Tool
+Version: 1.0.0
+Authors@R: c(
+    person("Chris", "Hartgerink", , "chris@data.org", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0003-1050-6809")),
+    person("Hugo", "Gruson", , "hugo@data.org", role = "rev",
+           comment = c(ORCID = "0000-0002-4094-1476")),
+    person("data.org", role = "cph")
+  )
+Description: Provides tools to help tag and validate data according to user-specified rules. The 'safeframe' class adds variable level attributes to 'data.frame' columns. Once tagged, these variables can be seamlessly used in downstream analyses, making data pipelines clearer, more robust, and more reliable.
+License: MIT + file LICENSE
+URL: https://epiverse-trace.github.io/safeframe/,
+        https://github.com/epiverse-trace/safeframe
+BugReports: https://github.com/epiverse-trace/safeframe/issues
+Depends: R (>= 4.1.0)
+Imports: checkmate, lifecycle, rlang, tidyselect
+Suggests: callr, dplyr, knitr, magrittr, rmarkdown, spelling, testthat,
+        tibble
+Config/Needs/website: r-lib/pkgdown, epiverse-trace/epiversetheme
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-06-24 08:18:01 UTC; chartgerink
+Author: Chris Hartgerink [cre, aut] (ORCID:
+    <https://orcid.org/0000-0003-1050-6809>),
+  Hugo Gruson [rev] (ORCID: <https://orcid.org/0000-0002-4094-1476>),
+  data.org [cph]
+Maintainer: Chris Hartgerink <chris@data.org>
+Repository: CRAN
+Date/Publication: 2025-06-27 13:00:02 UTC

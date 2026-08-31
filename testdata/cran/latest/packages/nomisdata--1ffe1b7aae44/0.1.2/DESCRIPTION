@@ -1,0 +1,32 @@
+Package: nomisdata
+Type: Package
+Title: Access 'Nomis' UK Labour Market Data and Statistics
+Version: 0.1.2
+Authors@R: person(given = c("Cheryl", "Isabella"), family = "Lim", role = c("aut", "cre"), email = "cheryl.academic@gmail.com", comment = c(ORCID = "0009-0004-5766-1392"))
+Description: Interface to the 'Nomis' database (<https://www.nomisweb.co.uk>), maintained by Durham University on behalf of the Office for National Statistics (ONS). Provides access to UK labour market statistics including census data, benefit claimant counts, and employment surveys. Supports automatic pagination, optional disk caching, spatial data via 'sf', and tidy data output. Independent implementation unaffiliated with ONS or Durham University.
+License: MIT + file LICENSE
+URL: https://github.com/cherylisabella/nomisdata
+BugReports: https://github.com/cherylisabella/nomisdata/issues
+Imports: cli (>= 3.6.0), dplyr (>= 1.1.0), httr2 (>= 1.0.0), jsonlite
+        (>= 1.8.0), rlang (>= 1.1.0), tibble (>= 3.2.0), utils, digest,
+        methods
+Suggests: cachem (>= 1.0.0), ggplot2 (>= 3.4.0), janitor (>= 2.2.0),
+        knitr (>= 1.42), memoise (>= 2.0.0), rappdirs (>= 0.3.0), readr
+        (>= 2.1.0), rmarkdown (>= 2.20), rsdmx (>= 0.6.0), scales (>=
+        1.2.0), sf (>= 1.0.0), testthat (>= 3.1.0), withr (>= 2.5.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/Needs/website: tidyverse/tidytemplate
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-02-10 14:32:18 UTC; Isabella
+Author: Cheryl Isabella Lim [aut, cre] (ORCID:
+    <https://orcid.org/0009-0004-5766-1392>)
+Maintainer: Cheryl Isabella Lim <cheryl.academic@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-10 14:40:02 UTC

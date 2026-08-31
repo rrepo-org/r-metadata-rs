@@ -1,0 +1,58 @@
+Package: metamedian
+Type: Package
+Title: Meta-Analysis of Medians
+Version: 1.2.2
+Authors@R: c(person("Sean", "McGrath", role = c("aut", "cre"), 
+                     email = "sean.mcgrath514@gmail.com",
+                     comment = c(ORCID = "0000-0002-7281-3516")),
+              person("XiaoFei", "Zhao", role = c("aut"),
+                      email = "xiaofei.zhao@mail.mcgill.ca"),
+              person("Stephan", "Katzenschlager", role = c("aut"),
+                      email = "Stephan.Katzenschlager@med.uni-heidelberg.de"),
+              person("Omer", "Ozturk", role = c("aut"), 
+                      email = "ozturk.4@osu.edu"),
+              person("Renata", "Iskander", role = c("ctb")),
+              person("Russell", "Steele", role = c("aut"),
+                      email = "russell.steele@mcgill.ca"),
+              person("Andrea", "Benedetti", role = c("aut"), 
+                      email = "andrea.benedetti@mcgill.ca",
+                      comment = c(ORCID = "0000-0002-8314-9497")))
+Maintainer: Sean McGrath <sean.mcgrath514@gmail.com>
+Description: Implements several methods to meta-analyze studies that report the 
+    sample median of the outcome. The methods described by 
+    McGrath et al. (2019) <doi:10.1002/sim.8013>, 
+    Ozturk and Balakrishnan (2020) <doi:10.1002/sim.8738>, and 
+    McGrath et al. (2020a) <doi:10.1002/bimj.201900036> can be 
+    applied to directly meta-analyze the median or difference of medians between 
+    groups. Additionally, a number of methods (e.g., McGrath et al. (2020b) 
+    <doi:10.1177/0962280219889080>, Cai et al. (2021) 
+    <doi:10.1177/09622802211047348>, and McGrath et al. (2023) 
+    <doi:10.1177/09622802221139233>) are implemented to estimate 
+    study-specific (difference of) means and their standard errors in order to 
+    estimate the pooled (difference of) means. Methods for meta-analyzing median 
+    survival times (McGrath et al. (2026) <doi:10.1002/sim.70533>) are 
+    also implemented. See McGrath et al. (2024) <doi:10.1002/jrsm.1686> for a 
+    detailed guide on using the package.
+Imports: estmeansd, Hmisc, metaBLUE, metafor, stats
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+URL: https://github.com/stmcg/metamedian,
+        https://doi.org/10.1002/jrsm.1686
+BugReports: https://github.com/stmcg/metamedian/issues
+Depends: R (>= 2.10)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-18 21:32:31 UTC; Sean
+Author: Sean McGrath [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7281-3516>),
+  XiaoFei Zhao [aut],
+  Stephan Katzenschlager [aut],
+  Omer Ozturk [aut],
+  Renata Iskander [ctb],
+  Russell Steele [aut],
+  Andrea Benedetti [aut] (ORCID: <https://orcid.org/0000-0002-8314-9497>)
+Repository: CRAN
+Date/Publication: 2026-04-18 21:50:02 UTC

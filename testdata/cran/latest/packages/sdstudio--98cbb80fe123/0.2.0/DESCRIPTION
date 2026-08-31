@@ -1,0 +1,32 @@
+Package: sdstudio
+Title: Companion Application for the 'surveydown' Survey Platform
+Version: 0.2.0
+Authors@R: c(
+    person("Pingfan", "Hu", , "pingfan0727@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0001-4877-4844")),
+    person("John Paul", "Helveston", , "john.helveston@gmail.com", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0002-2657-9191")),
+    person("Bogdan", "Bunea", , "buneabt@yahoo.com", role = c("aut", "cph"),
+           comment = c(ORCID = "0009-0006-2942-0588"))
+  )
+Author: Pingfan Hu [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0001-4877-4844>),
+  John Paul Helveston [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-2657-9191>),
+  Bogdan Bunea [aut, cph] (ORCID:
+    <https://orcid.org/0009-0006-2942-0588>)
+Maintainer: Pingfan Hu <pingfan0727@gmail.com>
+Description: Companion package that supports the 'surveydown' survey platform (<https://surveydown.org>). The default method for working with a 'surveydown' survey is to edit the plain text 'survey.qmd' and 'app.R' files. With 'sdstudio', you can create, preview and manage surveys with a 'shiny' application as a graphical user interface.
+License: MIT + file LICENSE
+URL: https://sdstudio.surveydown.org
+BugReports: https://github.com/surveydown-dev/sdstudio/issues
+Depends: R (>= 4.1.0)
+Imports: bslib, DBI, dotenv, DT, htmltools, later, pool, RPostgres,
+        shiny, shinyAce, surveydown
+Suggests: testthat
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-02 21:45:44 UTC; pingfan
+Repository: CRAN
+Date/Publication: 2026-02-02 22:00:02 UTC

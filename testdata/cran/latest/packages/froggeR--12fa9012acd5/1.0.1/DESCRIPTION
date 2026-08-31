@@ -1,0 +1,32 @@
+Package: froggeR
+Type: Package
+Title: Project Scaffolding for R and 'Quarto'
+Version: 1.0.1
+Authors@R: 
+    person(
+        "Kyle",
+        "Grealis",
+        email = "kyleGrealis@proton.me",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-9223-8854")
+    )
+Description: Creates structured R and 'Quarto' projects with a consistent directory layout: scripts in R/, analysis documents in analysis/, and web assets in www/. The primary entry point, init(), downloads the latest template from a companion 'GitHub' repository so that project structure evolves independently of package releases. Supports persistent author metadata and 'Quarto' brand configuration that carry across projects automatically.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: cli (>= 3.0.0), fs, here (>= 1.0.1), rappdirs, rlang,
+        rstudioapi, usethis (>= 2.2.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr, yaml
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://www.kyleGrealis.com/froggeR/,
+        https://github.com/kyleGrealis/froggeR
+BugReports: https://github.com/kyleGrealis/froggeR/issues
+NeedsCompilation: no
+Packaged: 2026-03-16 20:45:56 UTC; kyle
+Author: Kyle Grealis [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9223-8854>)
+Maintainer: Kyle Grealis <kyleGrealis@proton.me>
+Repository: CRAN
+Date/Publication: 2026-03-17 08:10:08 UTC

@@ -1,0 +1,40 @@
+Package: FoCo2
+Type: Package
+Title: Coherent Forecast Combination for Linearly Constrained Multiple
+        Time Series
+Version: 0.1.4
+Authors@R: 
+    c(person(given = "Daniele",
+             family = "Girolimetto",
+             role = c("aut", "cre"),
+             email = "daniele.girolimetto@unipd.it",
+             comment = c(ORCID = "0000-0001-9387-1232")),
+      person(given = "Tommaso",
+             family = "Di Fonzo",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0003-3388-7827")))
+Description: Methods and tools designed to improve the forecast accuracy for a linearly 
+    constrained multiple time series, while fulfilling the linear/aggregation relationships 
+    linking the components (Girolimetto and Di Fonzo, 2024 <doi:10.48550/arXiv.2412.03429>). 
+    'FoCo2' offers multi-task forecast combination and reconciliation 
+    approaches leveraging input from multiple forecasting models or experts and ensuring 
+    that the resulting forecasts satisfy specified linear constraints. In addition, linear 
+    inequality constraints (e.g., non-negativity of the forecasts) can be imposed, if needed.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.4), Matrix, FoReco
+Imports: stats, cli, methods, quadprog, osqp
+RoxygenNote: 7.3.3
+URL: https://github.com/danigiro/FoCo2,
+        https://danigiro.github.io/FoCo2/
+BugReports: https://github.com/danigiro/FoCo2/issues
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-23 08:06:14 UTC; daniele
+Author: Daniele Girolimetto [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9387-1232>),
+  Tommaso Di Fonzo [aut] (ORCID: <https://orcid.org/0000-0003-3388-7827>)
+Maintainer: Daniele Girolimetto <daniele.girolimetto@unipd.it>
+Repository: CRAN
+Date/Publication: 2026-06-23 08:20:02 UTC

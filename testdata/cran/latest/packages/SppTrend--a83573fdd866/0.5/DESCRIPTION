@@ -1,0 +1,41 @@
+Package: SppTrend
+Title: Analyzing Linear Trends in Species Occurrence Data
+Version: 0.5
+Authors@R: c(
+    person(given = "Mario",
+            family = "Mingarro",
+            comment = c(ORCID = "0000-0003-3977-7944"),
+            email = "mario_mingarro@mncn.csic.es",
+            role = c("aut", "cre")),
+    person(given = "Emilio",
+            family = "García-Roselló",
+            comment = c(ORCID = "0000-0003-0305-770X"),
+            role = "aut"),
+    person(given = "Jorge M.",
+            family = "Lobo",
+            comment = c(ORCID = "0000-0002-3152-4769"),
+            role = "aut"))
+Description: Provides a comparative framework to detect species-specific spatial and
+    thermal responses to climate change using opportunistic occurrence data. Species
+    temporal trends in geographic position (via Earth-Centred Earth-Fixed vector
+    analysis) and environmental variables (temperature and elevation) are contrasted
+    against the overall trend of the complete dataset, allowing classification of
+    species into ecologically interpretable response categories. Approach described
+    in Lobo et al. (2023) <doi:10.1002/ece3.10674>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), devtools
+Imports: data.table, dplyr, ggplot2, patchwork, sf, stats, stringr,
+        terra
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-29 11:14:14 UTC; mario
+Author: Mario Mingarro [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3977-7944>),
+  Emilio García-Roselló [aut] (ORCID:
+    <https://orcid.org/0000-0003-0305-770X>),
+  Jorge M. Lobo [aut] (ORCID: <https://orcid.org/0000-0002-3152-4769>)
+Maintainer: Mario Mingarro <mario_mingarro@mncn.csic.es>
+Repository: CRAN
+Date/Publication: 2026-06-29 11:50:07 UTC

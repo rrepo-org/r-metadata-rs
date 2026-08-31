@@ -1,0 +1,30 @@
+Package: bmabart
+Type: Package
+Title: Bayesian Mediation Analysis Using BART
+Version: 2.0
+Date: 2025-06-26
+Authors@R: c(person(given = "Qingzhao",
+                      family = "Yu",
+                      role = c("aut", "cre"),
+                      email = "qyu@lsuhsc.edu"),
+               person(given = "Bin",
+                      family = "Li",
+                      role = "aut"))
+Depends: R (>= 2.14.1), BART, survival, gplots
+Imports: lattice, methods
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Description: Used for Bayesian mediation analysis based on Bayesian additive Regression Trees (BART).
+	The analysis method is described in Yu and Li (2025) "Mediation Analysis with Bayesian Additive Regression Trees", submitted for publication.  
+License: GPL (>= 2)
+URL: https://www.r-project.org,
+        https://publichealth.lsuhsc.edu/Faculty_pages/qyu/index.html
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-06-26 18:28:44 UTC; qyu
+Author: Qingzhao Yu [aut, cre],
+  Bin Li [aut]
+Maintainer: Qingzhao Yu <qyu@lsuhsc.edu>
+Repository: CRAN
+Date/Publication: 2025-06-26 18:50:02 UTC

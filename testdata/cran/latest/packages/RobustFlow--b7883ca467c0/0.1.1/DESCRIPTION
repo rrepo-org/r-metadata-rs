@@ -1,0 +1,44 @@
+Package: RobustFlow
+Title: Robustness and Drift Auditing for Longitudinal Decision Systems
+Version: 0.1.1
+Authors@R: person("Subir", "Hait",
+    email = "haitsubi@msu.edu",
+    role  = c("aut", "cre"),
+    comment = c(ORCID = "0009-0004-9871-9677"))
+Description: Provides tools for constructing longitudinal decision paths,
+    quantifying temporal drift, tracking subgroup disparity trajectories,
+    and stress-testing longitudinal conclusions under hidden bias.
+    Implements three signature metrics: the Drift Intensity Index (DII),
+    which measures structural instability in transition dynamics using the
+    Frobenius norm of consecutive transition matrix differences; the Bias
+    Amplification Index (BAI), which quantifies whether group disparities
+    widen or converge over time; and the Temporal Fragility Index (TFI),
+    which estimates the minimum hidden-bias perturbation required to nullify
+    a longitudinal trend conclusion. An interactive 'shiny' application
+    supports exploratory analysis, visualization, and reproducible reporting.
+    Methods are motivated by applications in educational and social science
+    research, including the Early Childhood Longitudinal Study (ECLS).
+    The DII is based on the Frobenius norm as described in Golub and Van Loan
+    (2013, ISBN:9781421407944). The TFI extends the hidden-bias sensitivity
+    framework of Rosenbaum (2002, ISBN:9781441912633). The BAI draws on
+    disparity-trajectory methods discussed in Duncan and Murnane
+    (2011, ISBN:9780871542731).
+Depends: R (>= 4.2.0)
+Imports: shiny (>= 1.7.0), golem (>= 0.4.0), bslib (>= 0.5.0), ggplot2
+        (>= 3.4.0), DT (>= 0.27), plotly (>= 4.10.0), scales (>=
+        1.2.0), htmltools (>= 0.5.0), rmarkdown (>= 2.20), stats,
+        tools, utils
+Suggests: testthat (>= 3.0.0), knitr, covr, withr
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/causalfragility-lab/RobustFlow
+BugReports: https://github.com/causalfragility-lab/RobustFlow/issues
+NeedsCompilation: no
+Packaged: 2026-04-22 12:44:24 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-22 14:00:13 UTC

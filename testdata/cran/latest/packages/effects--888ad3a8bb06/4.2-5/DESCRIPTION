@@ -1,0 +1,39 @@
+Package: effects
+Version: 4.2-5
+Date: 2026-01-28
+Title: Effect Displays for Linear, Generalized Linear, and Other Models
+Authors@R: c(person("John", "Fox", role = "aut", email = "jfox@mcmaster.ca"),
+	person("Sanford", "Weisberg", role = "aut", email = "sandy@umn.edu"),
+		person("Brad", "Price", role = c("aut", "cre"), email = "brad.price@mail.wvu.edu"),
+    person("Michael", "Friendly", role = "aut", email = "friendly@yorku.ca"),
+    person("Jangman", "Hong", role = "aut"),
+    person("Robert", "Andersen", role = "ctb"),
+    person("David", "Firth", role = "ctb"),
+    person("Steve", "Taylor", role = "ctb"),
+    person("R Core Team", role="ctb"))
+Depends: R (>= 3.5.0), carData, datasets
+Suggests: pbkrtest (>= 0.4-4), nlme, MASS, poLCA, heplots, splines,
+        ordinal, car, knitr, betareg, alr4, robustlmm
+Imports: lme4, nnet, lattice, grid, colorspace, graphics, grDevices,
+        stats, survey, utils, estimability (>= 1.4.1), insight
+Description: Graphical and tabular effect displays, e.g., of interactions, for 
+  various statistical models with linear predictors.
+License: GPL (>= 2)
+URL: https://cran.r-project.org/package=effects,
+        https://www.john-fox.ca/,
+        https://github.com/bprice2652/effects_repo
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-13 16:06:40 UTC; user
+Author: John Fox [aut],
+  Sanford Weisberg [aut],
+  Brad Price [aut, cre],
+  Michael Friendly [aut],
+  Jangman Hong [aut],
+  Robert Andersen [ctb],
+  David Firth [ctb],
+  Steve Taylor [ctb],
+  R Core Team [ctb]
+Maintainer: Brad Price <brad.price@mail.wvu.edu>
+Repository: CRAN
+Date/Publication: 2026-02-17 06:10:59 UTC

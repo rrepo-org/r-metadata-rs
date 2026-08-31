@@ -1,0 +1,34 @@
+Type: Package
+Package: simlandr
+Title: Simulation-Based Landscape Construction for Dynamical Systems
+Version: 0.4.1
+Authors@R: 
+    person("Jingmeng", "Cui", , "jingmeng.cui@outlook.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3421-8457"))
+Description: A toolbox for constructing potential landscapes for dynamical
+    systems using Monte Carlo simulation.  The method is based on the
+    potential landscape definition by Wang et al. (2008)
+    <doi:10.1073/pnas.0800579105> (also see Zhou & Li, 2016
+    <doi:10.1063/1.4943096> for further mathematical discussions) and can
+    be used for a large variety of models.
+License: GPL (>= 3)
+URL: https://sciurus365.github.io/simlandr/,
+        https://github.com/Sciurus365/simlandr
+BugReports: https://github.com/Sciurus365/simlandr/issues
+Depends: R (>= 4.1.0)
+Imports: bigmemory, cli, coda, digest, dplyr, forcats, furrr, ggplot2,
+        grDevices, htmlwidgets, ks, lifecycle, magrittr, MASS, methods,
+        plotly, progress, purrr, rlang, Sim.DiffProc, tibble, tidyr
+LinkingTo: Rcpp
+Suggests: gganimate, knitr, rmarkdown, testthat (>= 3.0.0), webshot
+Config/testthat/edition: 3
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-22 11:34:20 UTC; u0184683
+Author: Jingmeng Cui [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3421-8457>)
+Maintainer: Jingmeng Cui <jingmeng.cui@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-06-22 12:50:02 UTC

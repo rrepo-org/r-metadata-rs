@@ -1,0 +1,29 @@
+Package: LeaveOutKSS
+Type: Package
+Title: Leave-Out Variance Component Estimation for Two-Way Fixed
+        Effects Models
+Version: 0.1.0
+Authors@R: 
+    person("Vahid", "Moghani", email = "contact@vahid-moghani.com", role = c("aut", "cre"))
+Author: Vahid Moghani [aut, cre]
+Maintainer: Vahid Moghani <contact@vahid-moghani.com>
+Description: Implements leave-out estimation of variance components in
+    two-way fixed effects models as an 'R' translation of the original
+    'MATLAB' package of Kline, Saggio, and Solvsten (2020)
+    <doi:10.3982/ECTA16410>. The package includes graph-based connected-set
+    pruning, leave-out bias correction, leverage computation by exact and
+    randomized algorithms, fixed effect estimation helpers, and companion
+    model-fit summaries for matched worker-firm panels in the spirit of
+    Abowd, Kramarz, and Margolis (1999) <doi:10.1111/1468-0262.00020>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: data.table, Matrix, igraph, sanic, parallel, utils,
+        doParallel, foreach
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-16 19:08:57 UTC; cryst
+Repository: CRAN
+Date/Publication: 2026-04-21 19:02:34 UTC

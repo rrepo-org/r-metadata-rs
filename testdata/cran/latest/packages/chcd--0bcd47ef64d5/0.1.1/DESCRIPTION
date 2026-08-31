@@ -1,0 +1,24 @@
+Package: chcd
+Title: Access Canadian Historical Climate Data
+Version: 0.1.1
+Authors@R: 
+    person("Dan", "Prisk", , "dan@prisk.ca", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-3377-6978"))
+Description: Provides easy access to historical climate data in Canada from R.
+	     Search for weather stations and download raw hourly, daily or
+	     monthly weather data across Canada from 1840 to present. Implements
+	     public API access as detailed at <https://climate.weather.gc.ca>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: magrittr, readr, dplyr, tibble, stringr, rlang, progress
+Depends: R (>= 3.5)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-07-23 17:59:08 UTC; dan
+Author: Dan Prisk [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3377-6978>)
+Maintainer: Dan Prisk <dan@prisk.ca>
+Repository: CRAN
+Date/Publication: 2025-07-25 10:10:09 UTC

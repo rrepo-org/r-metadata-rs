@@ -1,0 +1,29 @@
+Package: wrictools
+Title: Analyze Whole Room Indirect Calorimetry (WRIC) Data
+Version: 1.0.1
+Authors@R: c(
+    person("Nina", "Ziegenbein", , "nina.ziegenbein@web.de", role = c("aut", "cre", "cph"), comment = c(ORCID = "0009-0005-4913-8910")),
+    person("Anders", "Isaksen", , "andaas@rm.dk", role = "rev", comment = c(ORCID = "0000-0001-8457-5466")))
+Description: Provides functions, tutorials, and examples to preprocess, 
+    analyze, and visualize data from whole room indirect calorimeters (WRIC) by 
+    Maastricht Instruments, using the 'OmniCal' software. Some functions may also 
+    work with WRICs from other manufacturers, though full functionality has only 
+    been validated for Maastricht Instruments devices.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: dplyr, ggplot2, magrittr, RCurl, readr, rlang, tidyr, readxl
+URL: https://github.com/NinaZiegenbein/wrictools,
+        https://ninaziegenbein.github.io/wrictools/
+BugReports: https://github.com/NinaZiegenbein/wrictools/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-05 10:37:37 UTC; au698484
+Author: Nina Ziegenbein [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0005-4913-8910>),
+  Anders Isaksen [rev] (ORCID: <https://orcid.org/0000-0001-8457-5466>)
+Maintainer: Nina Ziegenbein <nina.ziegenbein@web.de>
+Repository: CRAN
+Date/Publication: 2026-05-07 20:30:44 UTC

@@ -1,0 +1,29 @@
+Package: pkgndep
+Type: Package
+Title: Analyze Dependency Heaviness of R Packages
+Version: 2.0.0
+Date: 2026-04-08
+Authors@R: person("Zuguang", "Gu", email = "guzuguang@suat-sz.edu.cn", role = c("aut", "cre"),
+                  comment = c('ORCID'="0000-0002-7395-8709"))
+Depends: R (>= 4.0.0)
+Imports: ComplexHeatmap (>= 2.6.0), GetoptLong, GlobalOptions, utils,
+        grid, hash, methods, brew
+Suggests: knitr, rmarkdown, svglite, base64, testthat
+Description: A new metric named 'dependency heaviness' is proposed that measures the number 
+    of additional dependency packages that a parent package brings to its child package 
+    and are unique to the dependency packages imported by all other parents.  
+    The dependency heaviness analysis is visualized by a customized heatmap. 
+    The package is described in <doi:10.1093/bioinformatics/btac449>. 
+    We have also performed the dependency heaviness analysis on the CRAN/Bioconductor 
+    package ecosystem, described in <doi:10.1016/j.jss.2023.111610>. 
+URL: https://github.com/jokergoo/pkgndep
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2026-04-08 08:36:17 UTC; guz
+Author: Zuguang Gu [aut, cre] (ORCID: <https://orcid.org/0000-0002-7395-8709>)
+Maintainer: Zuguang Gu <guzuguang@suat-sz.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-04-08 09:40:08 UTC

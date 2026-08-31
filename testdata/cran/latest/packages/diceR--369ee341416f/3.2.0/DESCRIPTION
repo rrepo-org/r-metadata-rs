@@ -1,0 +1,43 @@
+Type: Package
+Package: diceR
+Title: Diverse Cluster Ensemble in R
+Version: 3.2.0
+Authors@R: c(
+    person("Derek", "Chiu", , "dchiu@bccrc.ca", role = c("aut", "cre")),
+    person("Aline", "Talhouk", , "a.talhouk@ubc.ca", role = "aut"),
+    person("Johnson", "Liu", , "gliu@bccrc.ca", role = c("ctb", "com"))
+  )
+Description: Performs cluster analysis using an ensemble clustering
+    framework, Chiu & Talhouk (2018) <doi:10.1186/s12859-017-1996-y>.
+    Results from a diverse set of algorithms are pooled together using
+    methods such as majority voting, K-Modes, LinkCluE, and CSPA. There
+    are options to compare cluster assignments across algorithms using
+    internal and external indices, visualizations such as heatmaps, and
+    significance testing for the existence of clusters.
+License: MIT + file LICENSE
+URL: https://alinetalhouk.github.io/diceR/,
+        https://github.com/AlineTalhouk/diceR
+BugReports: https://github.com/AlineTalhouk/diceR/issues
+Depends: R (>= 4.1)
+Imports: abind, assertthat, class, clue, clusterCrit, clValid, dplyr
+        (>= 0.7.5), ggplot2, grDevices, infotheo, klaR, magrittr,
+        mclust, methods, pheatmap, purrr (>= 0.2.3), RankAggreg, Rcpp,
+        stringr, tidyr, yardstick
+Suggests: apcluster, cluster, covr, dbscan, e1071, kernlab, knitr,
+        kohonen, mixedClust, NMF, pander, poLCA, progress,
+        RColorBrewer, rlang, rmarkdown, Rtsne, sigclust, testthat (>=
+        3.0.0)
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-08-24 20:02:26 UTC; derekchiu
+Author: Derek Chiu [aut, cre],
+  Aline Talhouk [aut],
+  Johnson Liu [ctb, com]
+Maintainer: Derek Chiu <dchiu@bccrc.ca>
+Repository: CRAN
+Date/Publication: 2026-08-25 05:20:47 UTC

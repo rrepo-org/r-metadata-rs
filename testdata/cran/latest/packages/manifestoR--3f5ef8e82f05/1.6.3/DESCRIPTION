@@ -1,0 +1,57 @@
+Encoding: UTF-8
+Package: manifestoR
+Title: Access and Process Data and Documents of the Manifesto Project
+Date: 2026-05-15
+Version: 1.6.3
+Authors@R: c(person("Jirka", "Lewandowski",
+                    role = c("aut"),
+                    email = "jirka.lewandowski@wzb.eu"),
+             person("Nicolas", "Merz",
+                    role = c("aut"),
+                    email = "nicolas.merz@wzb.eu"),
+             person("Sven", "Regel",
+                    role = c("aut"),
+                    email = "sven.regel@wzb.eu"),
+             person("Pola", "Lehmann",
+                    role = c("cre", "ctb"),
+                    email = "pola.lehmann@wzb.eu"),
+             person("Paul", "Muscat",
+                    role = c("ctb"),
+                    email = "paul.muscat@wzb.eu"))
+Description: Provides access to coded election programmes from the Manifesto
+    Corpus and to the Manifesto Project's Main Dataset and routines to analyse this
+    data. The Manifesto Project <https://manifesto-project.wzb.eu> collects and
+    analyses election programmes across time and space to measure the political
+    preferences of parties. The Manifesto Corpus contains the collected and
+    annotated election programmes in the Corpus format of the package 'tm' to enable
+    easy use of text processing and text mining functionality. Specific functions
+    for scaling of coded political texts are included.
+Depends: R (>= 3.1.0)
+Imports: NLP (>= 0.2-0), tm (>= 0.7-12), utils, stats, methods,
+        magrittr, httr (>= 1.0.0), jsonlite (>= 0.9.12), base64enc,
+        purrr (>= 0.2.4), readr (>= 1.2.0), dplyr (>= 0.7.5),
+        tidyselect (>= 1.0.0), tibble (>= 2.0.0)
+Suggests: knitr, rmarkdown, testthat (>= 1.0.2), R.rsp, haven (>=
+        1.0.0), readxl (>= 1.0.0), psych, zoo (>= 1.7-11), htmlwidgets
+        (>= 0.6), DT (>= 0.2), htmltools, devtools (>= 1.7.0), formatR,
+        highr
+VignetteBuilder: R.rsp
+Collate: manifestoR-package.r manifestoR-defunct.R reexport-NLP.R
+        reexport-tm.R reexport-tibble.R globals.R pipe_helpers.R
+        cache.R db_api.R corpus.R manifesto.R codes.R scaling_general.R
+        scaling_rile.R scaling_functions.R issue_attention.R
+        nicheness.R clarity.R scaling_bootstrap.R dataset.R codebook.R
+        parties.R dedication.R
+License: GPL (>= 3)
+URL: https://manifesto-project.wzb.eu/manifestoR
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2026-05-15 19:33:41 UTC; gitlab-runner
+Author: Jirka Lewandowski [aut],
+  Nicolas Merz [aut],
+  Sven Regel [aut],
+  Pola Lehmann [cre, ctb],
+  Paul Muscat [ctb]
+Maintainer: Pola Lehmann <pola.lehmann@wzb.eu>
+Repository: CRAN
+Date/Publication: 2026-05-15 22:10:07 UTC

@@ -1,0 +1,30 @@
+Package: rurality
+Title: Classification and Scoring of U.S. County and ZIP Code Rurality
+Version: 0.1.1
+Authors@R: 
+    person("Cameron", "Wimpy", , "cwimpy@astate.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2049-5229"))
+Description: Provides USDA Rural-Urban Continuum Codes (RUCC 2023),
+    Rural-Urban Commuting Area codes (RUCA 2020), and a composite rurality
+    score for all U.S. counties. Functions enable lookup by FIPS code,
+    ZIP code, or county name, and easy merging with existing datasets.
+    Data sources include the USDA Economic Research Service, U.S. Census
+    Bureau American Community Survey, and Census TIGER/Line shapefiles.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr, rlang, stringr
+Suggests: ggplot2, knitr, rmarkdown, sf, tigris, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+URL: https://github.com/cwimpy/rurality, https://rurality.app
+BugReports: https://github.com/cwimpy/rurality/issues
+NeedsCompilation: no
+Packaged: 2026-04-14 14:50:52 UTC; cwimpy
+Author: Cameron Wimpy [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2049-5229>)
+Maintainer: Cameron Wimpy <cwimpy@astate.edu>
+Repository: CRAN
+Date/Publication: 2026-04-15 07:10:02 UTC

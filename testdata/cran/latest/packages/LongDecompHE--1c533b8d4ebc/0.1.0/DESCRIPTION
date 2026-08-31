@@ -1,0 +1,34 @@
+Package: LongDecompHE
+Type: Package
+Title: Longitudinal Decomposition of Health Expectancy by Age and Cause
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Huiping", family = "Zheng", role = c("aut", "cre"),
+         email = "zhenghuiping@ruc.edu.cn"),
+  person(given = "Tao", family = "Sun", role = "aut"),
+  person(given = "Xiaojun", family = "Wang", role = "aut"))
+Description: Provides tools to decompose differences in cohort health expectancy (HE)
+    by age and cause using longitudinal data. The package implements a novel
+    longitudinal attribution method based on a semiparametric additive hazards
+    model with time-dependent covariates, specifically designed to address interval
+    censoring and semi-competing risks via a copula framework. The resulting
+    age-cause-specific contributions to disability prevalence and death probability
+    can be used to quantify and decompose differences in cohort HE between groups.
+    The package supports stepwise replacement decomposition algorithms and is
+    applicable to cohort-based health disparity research across diverse populations.
+    Related methods include
+    Sun et al. (2023) <doi:10.1177/09622802221133552>.
+License: GPL (>= 3)
+Imports: copula, corpcor, stats, ggplot2, patchwork, grDevices, tidyr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-06-28 14:56:14 UTC; zhenghuiping
+Author: Huiping Zheng [aut, cre],
+  Tao Sun [aut],
+  Xiaojun Wang [aut]
+Maintainer: Huiping Zheng <zhenghuiping@ruc.edu.cn>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-07-03 15:20:02 UTC

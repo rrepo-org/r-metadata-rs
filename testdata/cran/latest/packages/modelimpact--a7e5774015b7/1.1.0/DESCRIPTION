@@ -1,0 +1,30 @@
+Package: modelimpact
+Type: Package
+Title: Functions to Assess the Business Impact of Churn Prediction
+        Models
+Version: 1.1.0
+Authors@R: 
+    person("Peer", "Christensen", email = "hr.pchristensen@gmail.com",
+           role = c("aut", "cre"))
+Description: Calculate and visualise the financial impact of using a
+    classification model, such as a churn model, to target customers. Provides
+    cost, revenue, profit and return-on-investment curves as a function of the
+    share of customers targeted, cumulative gains and lift, marginal profit per
+    bin, and confusion-matrix based payoff across probability thresholds. Also
+    includes 'ggplot2' 'autoplot()' methods and an interactive 'shiny'
+    application for exploring the results.
+License: MIT + file LICENSE
+URL: https://github.com/PeerChristensen/modelimpact
+BugReports: https://github.com/PeerChristensen/modelimpact/issues
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, magrittr, utils
+Suggests: ggplot2, scales, shiny, testthat (>= 3.0.0)
+Depends: R (>= 2.10)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-08 20:09:57 UTC; peerchristensen
+Author: Peer Christensen [aut, cre]
+Maintainer: Peer Christensen <hr.pchristensen@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-08 21:30:17 UTC

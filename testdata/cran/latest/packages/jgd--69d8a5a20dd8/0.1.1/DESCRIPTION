@@ -1,0 +1,37 @@
+Package: jgd
+Title: JSON Graphics Device
+Version: 0.1.1
+Authors@R: c(
+        person("Grant", "McDermott", role = c("aut", "cre"),
+            email = "contact@grantmcdermott.com"),
+        person("Tatsuya", "Shima", role = "aut",
+            email = "ts1s1andn@gmail.com"),
+        person("Dave", "Gamble", role = "cph",
+            comment = "cJSON library in src/cjson/"),
+        person("cJSON contributors", role = "cph",
+            comment = "cJSON library in src/cjson/")
+    )
+Description: A graphics device that translates R plotting operations into JSON
+    and streams them over a local connection to an external display
+    application. The device acts as a pure recorder with no rendering
+    dependencies; all rendering occurs in that application (e.g. a 'VS Code'
+    extension or a web browser). Official display applications are available
+    from the project homepage.
+License: MIT + file LICENSE
+Copyright: file inst/COPYRIGHTS
+Encoding: UTF-8
+NeedsCompilation: yes
+Suggests: callr, ggplot2, jsonlite, processx, testthat (>= 3.0.0),
+        withr
+URL: https://github.com/grantmcdermott/jgd
+BugReports: https://github.com/grantmcdermott/jgd/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-30 21:36:51 UTC; gmcd
+Author: Grant McDermott [aut, cre],
+  Tatsuya Shima [aut],
+  Dave Gamble [cph] (cJSON library in src/cjson/),
+  cJSON contributors [cph] (cJSON library in src/cjson/)
+Maintainer: Grant McDermott <contact@grantmcdermott.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 23:40:02 UTC

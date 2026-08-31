@@ -1,0 +1,52 @@
+Type: Package
+Package: rjd3qr
+Title: 'JDemetra+' Quality Report Generator
+Version: 0.4.2
+Authors@R: c(
+    person(given = "Tanguy", 
+           family = "Barthelemy", 
+           role = c("aut", "art"),
+           email ="tanguy.barthelemy@insee.fr"),
+    person(given = "Eulalie", 
+           family = "Delaune", 
+           role = c("aut", "cre"),
+           email ="timeserieswithjdemetraandr@gmail.com"),
+    person(given = "Alain",
+           family = "Quartier-la-Tente",
+           role = "aut",
+           email = "alain.quartier@yahoo.fr",
+           comment = c(ORCID = "0000-0001-7890-3857")),
+    person(given = NULL, 
+           family = "Institut national de la statistique et des études économiques",
+           role = "cph",
+           comment = "https://www.insee.fr/"),
+    person(given = "Anna", 
+           family = "Smyk", role = "aut",
+           email ="anna.smyk@insee.fr"))
+Description: Tool for generating quality reports from cruncher outputs
+    (and calculating series scores). The latest version of the cruncher
+    can be downloaded here:
+    <https://github.com/jdemetra/jwsacruncher/releases>.
+License: EUPL
+URL: https://github.com/InseeFr/rjd3qr,
+        https://inseefr.github.io/rjd3qr/
+BugReports: https://github.com/InseeFr/rjd3qr/issues
+Depends: R (>= 4.1)
+Imports: openxlsx, stats, tools, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-29 15:22:22 UTC; SHT3RT
+Author: Tanguy Barthelemy [aut, art],
+  Eulalie Delaune [aut, cre],
+  Alain Quartier-la-Tente [aut] (ORCID:
+    <https://orcid.org/0000-0001-7890-3857>),
+  Institut national de la statistique et des études économiques [cph]
+    (https://www.insee.fr/),
+  Anna Smyk [aut]
+Maintainer: Eulalie Delaune <timeserieswithjdemetraandr@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 15:40:02 UTC

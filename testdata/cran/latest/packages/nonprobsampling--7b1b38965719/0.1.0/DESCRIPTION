@@ -1,0 +1,57 @@
+Package: nonprobsampling
+Type: Package
+Title: Inference for Nonprobability Samples Using Multiple Reference
+        Surveys
+Version: 0.1.0
+Authors@R: 
+    c(
+      person(given = "Jiakun",
+             family = "Lin",
+             email = "jiak.lin@alumni.utoronto.ca",
+             role = c("aut", "cre")),
+      person(given = "Victoria",
+             family = "Landsman",
+             role = "aut"),
+      person(given = "Aya A.",
+             family = "Mitani",
+             role = "aut")
+    )
+Description: Provides pseudo-weighted estimates of means and
+    prevalences for finite population inference from nonprobability
+    samples using auxiliary information from one or multiple probability
+    reference surveys. The package supports estimation with multiple
+    reference surveys, allowing auxiliary information to be combined
+    when no single survey contains all variables relevant to
+    participation. Optional cumulative precalibration can be applied to
+    align weighted totals of shared variables across surveys. Methods
+    are based on the generalized estimating equations framework of
+    Landsman et al. (2026) <doi:10.1002/sim.70403> for correcting
+    participation bias. For a single reference survey, the package
+    implements the raking ratio calibration method and includes the
+    adjusted logistic propensity (ALP) method of Wang, Valliant, and Li
+    (2021) <doi:10.1002/sim.9122>, as well as the Chen-Li-Wu (CLW)
+    method of Chen, Li, and Wu (2020) <doi:10.1080/01621459.2019.1677241>.
+    Analytic variance estimation uses Taylor linearization and accounts
+    for complex sampling designs in the reference surveys via integration
+    with the 'survey' package.
+Depends: R (>= 4.0.0)
+Imports: stats, survey, nleqslv, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Language: en-US
+URL: https://github.com/Jiakun0611/nonprobsampling,
+        https://jiakun0611.github.io/nonprobsampling/
+BugReports: https://github.com/Jiakun0611/nonprobsampling/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-02 03:20:06 UTC; Kevin
+Author: Jiakun Lin [aut, cre],
+  Victoria Landsman [aut],
+  Aya A. Mitani [aut]
+Maintainer: Jiakun Lin <jiak.lin@alumni.utoronto.ca>
+Repository: CRAN
+Date/Publication: 2026-07-07 10:00:02 UTC

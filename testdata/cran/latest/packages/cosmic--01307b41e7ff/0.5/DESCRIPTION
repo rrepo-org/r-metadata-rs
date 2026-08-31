@@ -1,0 +1,24 @@
+Package: cosmic
+Title: Conditional Ordinal Stereotype Model for Incident-Level
+        Comparison
+Version: 0.5
+Authors@R: 
+    person("Greg", "Ridgeway", , "gridge@upenn.edu", role = c("aut", "cre"))
+Description: Implements the Conditional Ordinal Stereotype Model for Incident-Level Comparison (COSMIC), a method for analyzing ordinal outcomes observed across multiple actors within shared events. The model uses a conditional likelihood to remove event-level confounding and estimate actor-specific propensities relative to their peers. Efficient computation is achieved via a dynamic programming algorithm for the Poisson-multinomial normalization term, enabling scalable estimation with Markov chain Monte Carlo. The package provides tools for data preparation, model fitting using Stan, and extraction of posterior summaries for comparative inference. Estimation of police officer propensity to escalate force is the primary motivation for the model. For more details see Ridgeway (2026) "A Conditional Ordinal Stereotype Model to Estimate Police Officers’ Propensity to Escalate Force" <doi:10.1080/01621459.2025.2597050>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Suggests: arrangements, cmdstanr (>= 0.9.0), future, future.apply,
+        ggplot2, kableExtra, knitr, MASS, progressr, rmarkdown,
+        testthat (>= 3.0.0), xtable
+Additional_repositories: https://stan-dev.r-universe.dev
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Imports: dplyr, posterior, stats
+NeedsCompilation: no
+Packaged: 2026-04-30 01:13:44 UTC; greg_
+Author: Greg Ridgeway [aut, cre]
+Maintainer: Greg Ridgeway <gridge@upenn.edu>
+Repository: CRAN
+Date/Publication: 2026-05-04 19:00:08 UTC

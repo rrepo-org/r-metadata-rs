@@ -1,0 +1,32 @@
+Package: hipecR
+Type: Package
+Title: Tools for Analysing HIPEC Patient Data
+Version: 2.0.0
+Authors@R: c(
+    person(given = "Tarkan", family = "Jaeger",
+           role = c("aut", "cre"),
+           email = "tarkan.jaeger@gmail.com")
+ )
+Maintainer: Tarkan Jaeger <tarkan.jaeger@gmail.com>
+Description: Provides helper functions for analysing patient data in
+    hyperthermic intraperitoneal chemotherapy (HIPEC) workflows.
+    Includes functions to estimate peritoneal surface area (PSA),
+    summarise registry data, and produce reporting graphics.
+    Body surface area calculations are based on Du Bois and Du Bois
+    (1916) <doi:10.1001/archinte.1916.00080130010002>.
+License: MIT + file LICENSE
+URL: https://github.com/TarJae/hipecR
+BugReports: https://github.com/TarJae/hipecR/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Suggests: DiagrammeR, gifski, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: dplyr, tibble, shiny, shinyWidgets, formatR, dlookr, ggpubr,
+        stringr, ggplot2, forcats, survminer, survival, labelled,
+        gganimate, magick, tidyr, rlang, curl, htmltools, webshot2
+NeedsCompilation: no
+Packaged: 2026-02-15 20:05:39 UTC; tarka
+Author: Tarkan Jaeger [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-02-18 19:30:02 UTC

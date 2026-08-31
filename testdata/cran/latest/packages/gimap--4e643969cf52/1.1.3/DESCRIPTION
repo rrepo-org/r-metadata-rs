@@ -1,0 +1,48 @@
+Type: Package
+Package: gimap
+Title: Calculate Genetic Interactions for Paired CRISPR Targets
+Version: 1.1.3
+Authors@R: c(
+  person("Candace", "Savonen",
+         email = c("cansav09@gmail.com","csavonen@fredhutch.org"),
+         role = c("aut", "cre"),
+         comment = c(ORCID = "0000-0001-6331-7070")),
+  person("Phoebe C.R.", "Parrish",
+         email = "pcrparrish@gmail.com", role = c("aut"),
+         comment = c(ORCID = "0000-0002-3530-0105")),
+  person("Kathryn J.", "Isaac",
+         email = "kisaac@fredhutch.org", role = c("aut"),
+         comment = c(ORCID = "0000-0001-8701-4197")),
+  person("Daniel", "Groso", role = c("aut")),
+  person("Marissa", "Fujimoto", role = c("aut")),
+  person("Siobhan", "O'Brien", role = c("aut"),
+         comment = c(ORCID = "0000-0003-4958-1080")),
+  person("Alice H.", "Berger", role = c("aut"),
+         comment = c(ORCID = "0000-0002-6538-2658")))
+Description: Helps find meaningful patterns in complex genetic experiments. First gimap takes data from paired CRISPR (Clustered regularly interspaced short palindromic repeats) screens that has been pre-processed to counts table of paired gRNA (guide Ribonucleic Acid) reads. The input data will have cell counts for how well cells grow (or don't grow) when different genes or pairs of genes are disabled. The output of the 'gimap' package is genetic interaction scores which are  the distance between the observed CRISPR score and the expected CRISPR score. The expected CRISPR scores are what we expect for the CRISPR values to be for two unrelated genes. The further away an observed CRISPR score is from its expected score the more we suspect genetic interaction. The work in this package is based off of original research from the Alice Berger lab at Fred Hutchinson Cancer Center (2021) <doi:10.1016/j.celrep.2021.109597>.
+License: BSD_3_clause + file LICENSE
+URL: https://github.com/FredHutch/gimap
+BugReports: https://github.com/FredHutch/gimap/issues
+Depends: R (>= 3.5.0)
+Imports: readr, dplyr, tidyr, rmarkdown, vroom, ggplot2, magrittr,
+        pheatmap, purrr, janitor, utils, stats, stringr, httr,
+        jsonlite, openssl
+Suggests: testthat (>= 3.0.0), roxygen2, kableExtra, knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-09 16:14:01 UTC; candace
+Author: Candace Savonen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6331-7070>),
+  Phoebe C.R. Parrish [aut] (ORCID:
+    <https://orcid.org/0000-0002-3530-0105>),
+  Kathryn J. Isaac [aut] (ORCID: <https://orcid.org/0000-0001-8701-4197>),
+  Daniel Groso [aut],
+  Marissa Fujimoto [aut],
+  Siobhan O'Brien [aut] (ORCID: <https://orcid.org/0000-0003-4958-1080>),
+  Alice H. Berger [aut] (ORCID: <https://orcid.org/0000-0002-6538-2658>)
+Maintainer: Candace Savonen <cansav09@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-09 22:10:02 UTC

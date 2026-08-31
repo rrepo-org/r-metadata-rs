@@ -1,0 +1,44 @@
+Package: tabular
+Title: Render Tables, Listings, and Figures for Clinical Submissions
+Version: 0.3.2
+Authors@R: 
+    person("Vignesh", "Thanikachalam", email = "about.vignesh@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: Render clinical submission tables, listings, and figures to
+    'RTF', 'LaTeX', 'Typst', 'HTML', 'PDF', and 'DOCX' from pre-summarised
+    data frames, with no external 'Java' or 'SAS' dependency. Features include
+    decimal alignment via font metrics, multi-level column headers with
+    passthrough leaves, predicate-targeted cell styling, footnotes,
+    group-aware pagination, and figures that wrap a plot or image in the
+    same page chrome as a table. Built for Clinical Data Interchange Standards
+    Consortium (CDISC) Analysis Data Model (ADaM) workflows and
+    regulatory submissions to agencies such as the Food and Drug
+    Administration (FDA), European Medicines Agency (EMA), and
+    Pharmaceuticals and Medical Devices Agency (PMDA).
+License: MIT + file LICENSE
+URL: https://vthanik.github.io/tabular/,
+        https://github.com/vthanik/tabular
+BugReports: https://github.com/vthanik/tabular/issues
+Encoding: UTF-8
+Depends: R (>= 4.3.0)
+Imports: S7, cli, commonmark, rlang, xml2
+Suggests: testthat (>= 3.0.0), withr, digest, ggplot2, htmltools,
+        knitr, quarto, pkgdown, rstudioapi, systemfonts, tibble,
+        tinytex, yaml
+VignetteBuilder: quarto
+SystemRequirements: Quarto command line tool
+        (<https://github.com/quarto-dev/quarto-cli>), needed only to
+        build the package vignettes. Optional for PDF output: a TeX
+        distribution (e.g. TinyTeX) or Typst
+        (<https://github.com/typst/typst>, standalone or the copy
+        bundled with Quarto); see check_latex() and check_typst().
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-23 15:03:48 UTC; vignesh
+Author: Vignesh Thanikachalam [aut, cre, cph]
+Maintainer: Vignesh Thanikachalam <about.vignesh@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-23 16:50:08 UTC

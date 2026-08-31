@@ -1,0 +1,23 @@
+Package: vegdata
+Title: Access Vegetation Databases and Treat Taxonomy
+Version: 1.9.18
+Authors@R: person("Florian", "Jansen", role = c("aut", "cre"), email = "florian.jansen@uni-rostock.de")
+Description: Handling of vegetation data from different sources but especially Turboveg 2.0. Taxonomic harmonization (given appropriate taxonomic lists, e.g. GermanSL and EuroSL (Euro+Med extended) see <https://eurosl.infinitenature.org>).
+License: GPL (>= 2)
+URL: https://git.loe.auf.uni-rostock.de/jansen/vegdata.git
+Depends: foreign, R (>= 4.1.0)
+Imports: curl (>= 2.4), DBI (>= 0.6-1), hoardr (>= 0.1.0), data.table,
+        tibble, forcats, magrittr (>= 1.5), plyr, RSQLite (>= 1.1.2),
+        stringr, utils, xml2
+Suggests: dplyr, indicspecies, interp, knitr, labdsv, rmarkdown, uuid,
+        vegan
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: Yes
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-07 13:53:32 UTC; jansen
+Author: Florian Jansen [aut, cre]
+Maintainer: Florian Jansen <florian.jansen@uni-rostock.de>
+Repository: CRAN
+Date/Publication: 2026-07-07 20:00:02 UTC

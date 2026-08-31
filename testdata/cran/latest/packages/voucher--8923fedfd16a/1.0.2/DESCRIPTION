@@ -1,0 +1,29 @@
+Package: voucher
+Title: 'Trustdown' Interface for R
+Version: 1.0.2
+Authors@R: 
+    person("Visruth", "Srimath Kandali", , "public@visruth.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0005-9097-0688"))
+Description: A R interface to the 'vouch' project
+    (<https://github.com/mitchellh/vouch>), which bills itself as "a
+    community trust management system based on explicit vouches to
+    participate". 'vouch' is a 'Nushell' module, so 'voucher' provides a R
+    application programming interface (API) to modify the 'VOUCHED.td'
+    database without 'Nushell'. 'voucher' does not depend on 'vouch' or
+    'Nushell'.
+License: GPL (>= 3)
+URL: https://github.com/VisruthSK/voucher, https://voucher.visruth.com/
+Depends: R (>= 4.1.0)
+Imports: cli, fs
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-09 05:54:33 UTC; visru
+Author: Visruth Srimath Kandali [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0005-9097-0688>)
+Maintainer: Visruth Srimath Kandali <public@visruth.com>
+Repository: CRAN
+Date/Publication: 2026-03-12 19:40:02 UTC

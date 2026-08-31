@@ -1,0 +1,33 @@
+Package: griddy
+Title: Geospatial Distribution Dynamics for Simple Features
+Version: 0.1.0
+Authors@R: 
+    person("Dmitry", "Shkolnik", email = "shkolnikd@gmail.com", role = c("aut", "cre"))
+Description: Tools for exploratory geospatial distribution dynamics with
+    'sf' objects and tidy data. Provides pooled and time-specific
+    classification of longitudinal spatial values, classic discrete Markov
+    transition matrices, spatial Markov matrices conditioned on spatial-lag
+    classes, endpoint and adjacent rank mobility summaries, and 'ggplot2'
+    visualizations. Methods follow Rey (2001)
+    <doi:10.1111/j.1538-4632.2001.tb00444.x> and Rey et al. (2016)
+    <doi:10.1007/s10109-016-0234-x>; design is inspired by the Python
+    'PySAL' 'giddy' package <https://pysal.org/giddy/>.
+URL: https://github.com/dshkol/griddy, https://dshkol.github.io/griddy/
+BugReports: https://github.com/dshkol/griddy/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2)
+Imports: dplyr, ggplot2, rlang, scales, sf, spdep, tibble, tidyr
+Suggests: cancensus, knitr, microbenchmark, pkgdown, rmarkdown, sfdep,
+        spData, testthat (>= 3.0.0), tidycensus
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-05-27 16:36:40 UTC; dmitryshkolnik
+Author: Dmitry Shkolnik [aut, cre]
+Maintainer: Dmitry Shkolnik <shkolnikd@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-30 13:30:02 UTC

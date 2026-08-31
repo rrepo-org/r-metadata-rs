@@ -1,0 +1,33 @@
+Package: multichainr
+Title: R Interface to the 'MultiChain' Blockchain RPC API
+Version: 0.1.0
+Authors@R: 
+    person("Aliaksandr", "Martsinkevich", , "alex@capsula.by", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3655-4489"))
+Description: Provides a comprehensive R interface to the 'MultiChain'
+    blockchain JSON-RPC API
+    <https://www.multichain.com/developers/json-rpc-api/>.  Allows users
+    to manage blockchain nodes, create and subscribe to data streams,
+    issue assets, and manage network permissions directly from the R
+    console. Supports both local node management and remote server
+    interaction.
+License: MIT + file LICENSE
+URL: https://github.com/datascienceadvice/multichainr,
+        https://datascienceadvice.github.io/multichainr/
+BugReports: https://github.com/datascienceadvice/multichainr/issues
+Depends: R (>= 3.6.0)
+Imports: httr2, jsonlite, magrittr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+SystemRequirements: MultiChain (>= 2.0)
+        <https://www.multichain.com/download-install/>
+NeedsCompilation: no
+Packaged: 2026-07-30 13:56:15 UTC; Angel
+Author: Aliaksandr Martsinkevich [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3655-4489>)
+Maintainer: Aliaksandr Martsinkevich <alex@capsula.by>
+Repository: CRAN
+Date/Publication: 2026-08-07 17:00:02 UTC

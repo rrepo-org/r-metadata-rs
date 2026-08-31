@@ -1,0 +1,37 @@
+Package: rbreak
+Title: Restricted Structural Change Models
+Version: 1.0.7
+Authors@R: c(
+    person("Zhongjun", "Qu", , "qu@bu.edu", role = c("aut", "cre")),
+    person("Cheolju", "Kim", , "cheolju@bu.edu", role = "aut")
+  )
+Maintainer: Zhongjun Qu <qu@bu.edu>
+Description: Methods for detecting structural breaks and estimating break
+    locations for linear multiple regression models under general linear
+    restrictions on the coefficient vector. Restrictions can be within
+    regimes, across regimes, or both, and are supported in two forms: an
+    affine parameterization (Form A: delta = S*theta + s) and explicit
+    linear constraints (Form B: R*delta = r). Provides break date
+    estimation with confidence intervals, a restricted sup-F test for the
+    null of no structural change, simulation of critical values by Monte
+    Carlo, and a bootstrap restart procedure to reduce the risk of
+    convergence to spurious local optima. Also implements a generalized
+    regression tree (linear model tree) procedure where each leaf contains
+    a linear regression model rather than a local average. Reference:
+    Perron, P., and Qu, Z. (2006). 'Estimating Restricted Structural
+    Change Models.' Journal of Econometrics, 134(2), 373-399.
+    <doi:10.1016/j.jeconom.2005.06.030>.
+License: GPL (>= 3)
+Depends: R (>= 4.3.0)
+Suggests: knitr, parallel, pbapply, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.3.2
+Imports: MASS, stats
+LazyData: true
+Packaged: 2026-03-23 21:28:45 UTC; qu
+Author: Zhongjun Qu [aut, cre],
+  Cheolju Kim [aut]
+Repository: CRAN
+Date/Publication: 2026-03-27 10:20:03 UTC

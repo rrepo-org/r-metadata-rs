@@ -1,0 +1,28 @@
+Package: TesiproV
+Type: Package
+Title: Reliability Analysis Methods for Structural Engineering
+Version: 0.9.6
+Date: 2026-04-22
+Authors@R: c(person("Konstantin", "Nille-Hauf", role = "aut",email = "konstantin.nillehauf@googlemail.com"),
+            person("Tânia", "Feiri", role = "aut",email="tania.feiri@tu-dortmund.de"),
+            person("Marcus","Ricker",role="aut",email="marcus.ricker@tu-dortmund.de"),
+            person("Til","Lux",role= c("aut", "cre"),email="til.lux@tu-dortmund.de")
+            )
+Maintainer: Til Lux <til.lux@tu-dortmund.de>
+Description: Calculate the failure probability of civil engineering problems with Level I up to Level III Methods. Have fun and enjoy. References: Spaethe (1991, ISBN:3-211-82348-4) "Die Sicherheit tragender Baukonstruktionen", AU,BECK (2001) "Estimation of small failure probabilities in high dimensions by subset simulation." <doi:10.1016/S0266-8920(01)00019-4>, Breitung (1989) "Asymptotic approximations for probability integrals." <doi:10.1016/0266-8920(89)90024-6>.
+URL: https://mvb.ab.tu-dortmund.de/
+Encoding: UTF-8
+License: MIT + file LICENSE
+RoxygenNote: 7.3.3
+Imports: stats, future, future.apply, digest, nloptr, methods, ggplot2,
+        gridExtra, pracma
+Suggests: testthat, knitr, rmarkdown, evd, brms
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-22 12:57:15 UTC; smtiluxx
+Author: Konstantin Nille-Hauf [aut],
+  Tânia Feiri [aut],
+  Marcus Ricker [aut],
+  Til Lux [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-04-22 13:20:21 UTC

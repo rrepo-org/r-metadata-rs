@@ -1,0 +1,32 @@
+Package: ort
+Type: Package
+Title: Create a Data Frame Representation of an Image
+Version: 0.1.0
+Authors@R: c(
+    person(
+      given = "Falling", family = "Pineapples", 
+      role = c("aut"),
+      comment = "Original author"
+    ),
+    person(
+      given = "Ethan C.", family = "Brown",
+      email = "ethancbrown@gmail.com",
+      role = c("cre"),
+      comment = "Maintainer")
+  )
+Description: Takes images, imported via 'imager', and converts them into a data
+  frame that can be plotted to look like the imported image.  This can be used 
+  for creating data that looks like a specific image. Additionally, images with
+  color and alpha channels can be converted to grayscale in preparation for 
+  converting to the data frame format.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: magrittr, imager
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-19 02:26:01 UTC; EthanBrown
+Author: Falling Pineapples [aut] (Original author),
+  Ethan C. Brown [cre] (Maintainer)
+Maintainer: Ethan C. Brown <ethancbrown@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-23 09:50:02 UTC

@@ -1,0 +1,21 @@
+Package: baserater
+Title: Base-Rate Item Evaluation and Typicality Scoring Using Large
+        Language Models
+Version: 0.1.2
+Authors@R: 
+    person("Jeremie", "Beucler", email = "jeremie.beucler@gmail.com", role = c("aut", "cre"))
+Description: Download typicality rating datasets, generate new stereotype-based typicality ratings using large language models via the Inference Providers API (<https://huggingface.co/docs/inference-providers>), and evaluate them against human-annotated validation data. Also includes functions to extract stereotype strength and base-rate items from typicality matrices. For more details see Beucler et al. (2025) <doi:10.31234/osf.io/eqrfu_v1>.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, dplyr, glue, readr, tibble, tidyr, httr2
+Suggests: devtools, knitr, rmarkdown, tidyverse
+VignetteBuilder: knitr
+URL: https://jeremie-beucler.github.io/baserater/
+NeedsCompilation: no
+Packaged: 2025-11-18 15:55:51 UTC; lapsyde_user
+Author: Jeremie Beucler [aut, cre]
+Maintainer: Jeremie Beucler <jeremie.beucler@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-18 16:30:02 UTC

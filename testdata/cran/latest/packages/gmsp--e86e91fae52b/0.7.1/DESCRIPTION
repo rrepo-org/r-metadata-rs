@@ -1,0 +1,53 @@
+Package: gmsp
+Title: Ground Motion Signal Processing
+Version: 0.7.1
+Authors@R: 
+    person("Alejandro", "Verri Kozlowski", , "averri@fi.uba.ar",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-8535-1170"))
+Description: Implements short-time Fourier transform (STFT) based
+    processing of strong-motion time series: time-grid regularisation,
+    STFT-window and anti-alias-resampling strategy selection, edge
+    tapering, and frequency-domain integration and differentiation,
+    mapping a single input (acceleration, velocity, or displacement) to
+    a consistent triplet under a chosen analysis bandwidth. Also
+    provides intrinsic-mode-function decomposition via empirical mode
+    decomposition (EMD), ensemble EMD (EEMD), and variational mode
+    decomposition (VMD) with optional band-rule filtering; elastic
+    single-degree-of-freedom (SDOF) domain-normalised acceleration,
+    velocity, and displacement response spectra from their corresponding
+    time-series domains by exact state-space integration; intensity measures
+    including peak, root-mean-square
+    (RMS), Arias intensity, significant-duration, cumulative absolute
+    velocity, mean period, and the derived indices earthquake
+    destructiveness potential (EPI) and power-of-input (PDI); and
+    D50 and D100 horizontal response spectra.
+    Methods: Huang et al. (1998) <doi:10.1098/rspa.1998.0193>,
+    Wu and Huang (2009) <doi:10.1142/S1793536909000047>,
+    Dragomiretskiy and Zosso (2014) <doi:10.1109/TSP.2013.2288675>,
+    Boore (2010) <doi:10.1785/0120090179>. An optional
+    indexing layer parses provider files in formats including 'PEER'
+    'NGA-West2' 'AT2', 'CESMD' 'V2'/'V2c', 'NWZ' 'V2A', Geological
+    Survey of Canada 'TR', 'IGP'/'UCR' 'AC' variants, and generic
+    two-column ASCII text, normalises components, writes per-record
+    CSV (comma-separated values) and JSON (JavaScript Object Notation)
+    pairs, and computes per-record intensity tables.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+URL: https://averriK.github.io/gmsp/
+Depends: R (>= 4.1.0)
+Imports: data.table, digest, EMD, expm, hht, jsonlite, openssl, pracma,
+        purrr, seewave, signal, spectral, stats, stringr, utils,
+        VMDecomp
+Suggests: knitr, Matrix, osqp, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-18 15:29:20 UTC; averrik
+Author: Alejandro Verri Kozlowski [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8535-1170>)
+Maintainer: Alejandro Verri Kozlowski <averri@fi.uba.ar>
+Repository: CRAN
+Date/Publication: 2026-07-18 16:40:02 UTC

@@ -1,0 +1,36 @@
+Package: delarr
+Type: Package
+Title: Lazy Delayed Arrays with Fused Execution
+Version: 0.1.0
+Authors@R: 
+    person(given = "Bradley", family = "Buchsbaum",
+           role = c("aut", "cre", "cph"),
+           email = "brad.buchsbaum@gmail.com",
+           comment = c(ORCID = "0000-0002-1108-4866"))
+Description: Provides a lightweight delayed array abstraction for lazy,
+    fused evaluation of multi-dimensional numeric data. Compared with
+    Bioconductor's 'DelayedArray', it offers a small S3 API with tidy-friendly
+    verbs, chunked materialisation, and optional backends for HDF5, memory
+    mapping, and shared-memory parallelism. Expression trees are optimised
+    before streaming evaluation, and results can be written directly to disk
+    without fully materialising arrays in memory.
+URL: https://bbuchsbaum.github.io/delarr/,
+        https://github.com/bbuchsbaum/delarr
+BugReports: https://github.com/bbuchsbaum/delarr/issues
+License: MIT + file LICENSE
+Depends: R (>= 4.1)
+Imports: rlang
+Suggests: hdf5r, mmap, matrixStats, shard, testthat (>= 3.1.0), knitr,
+        rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-06-24 18:22:09 UTC; bbuchsbaum
+Author: Bradley Buchsbaum [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1108-4866>)
+Maintainer: Bradley Buchsbaum <brad.buchsbaum@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 18:40:02 UTC

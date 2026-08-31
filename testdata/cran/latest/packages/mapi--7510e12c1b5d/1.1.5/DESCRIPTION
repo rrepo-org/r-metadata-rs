@@ -1,0 +1,37 @@
+Package: mapi
+Title: Mapping Averaged Pairwise Information
+Version: 1.1.5
+Authors@R: c(
+    person("Sylvain", "Piry", , "sylvain.piry@inrae.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7717-7555")),
+    person("Thomas", "Campolunghi", role = "aut"),
+    person("Florent", "Cestier", role = "aut"),
+    person("Karine", "Berthier", , "karine.berthier@inrae.fr", role = "aut",
+           comment = c(ORCID = "0000-0002-2260-7968"))
+  )
+Description: Mapping Averaged Pairwise Information (MAPI) is an
+    exploratory method providing graphical representations summarizing the
+    spatial variation of pairwise metrics (eg. distance, similarity
+    coefficient, ...) computed between georeferenced samples.
+License: GPL (>= 3)
+URL: https://www1.montpellier.inrae.fr/CBGP/software/MAPI/
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+LinkingTo: Rcpp
+Imports: data.table, doParallel, fmesher, foreach, Rcpp, s2, sf
+Suggests: dggridR, ggplot2, latticeExtra, progress, sp, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-06-22 15:05:23 UTC; piry
+Author: Sylvain Piry [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7717-7555>),
+  Thomas Campolunghi [aut],
+  Florent Cestier [aut],
+  Karine Berthier [aut] (ORCID: <https://orcid.org/0000-0002-2260-7968>)
+Maintainer: Sylvain Piry <sylvain.piry@inrae.fr>
+Repository: CRAN
+Date/Publication: 2026-06-22 16:00:09 UTC

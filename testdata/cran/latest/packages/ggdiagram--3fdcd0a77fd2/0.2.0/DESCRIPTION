@@ -1,0 +1,45 @@
+Package: ggdiagram
+Title: Object-Oriented Diagram Plots with 'ggplot2'
+Version: 0.2.0
+Authors@R: 
+    person("W. Joel", "Schneider", , "w.joel.schneider@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8393-5316"))
+Description: Creates diagrams with an object-oriented approach. Geometric
+    objects have computed properties with information about themselves
+    (e.g., their area) or about their relationships with other objects
+    (e.g, the distance between their edges). The objects have methods to
+    convert them to geoms that can be plotted in 'ggplot2'.
+License: CC0
+URL: https://github.com/wjschne/ggdiagram,
+        https://wjschne.github.io/ggdiagram/
+BugReports: https://github.com/wjschne/ggdiagram/issues
+Depends: R (>= 4.1.0)
+Imports: arrowheadr, bezier, cli, dplyr, farver, geomtextpath, ggarrow,
+        ggforce (>= 0.5.0), ggplot2 (>= 4.0.0), ggtext, grDevices,
+        grid, janitor, lavaan, magick, magrittr, pdftools, purrr,
+        rlang, S7, scales, signs, stringr, tibble, tidyr, tinter,
+        tinytex, utils, vctrs
+Suggests: knitr, marquee, methods, quarto, rmarkdown, simstandard,
+        spelling, svglite, testthat (>= 3.0.0), tidyverse, viridis,
+        withr
+VignetteBuilder: knitr, quarto
+Config/Needs/website: quarto
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 8.0.0
+Collate: 'ggdiagram-package.R' 'utils-pipe.R' 'a_early.R' 'str.R'
+        'colors.R' 'angles.R' 'style.R' 'points.R' 'labels.R' 'lines.R'
+        'segments.R' 'paths.R' 'circles.R' 'ellipses.R' 'arcs.R'
+        'bezier.R' 'rectangles.R' 'polygons.R' 'equations.R'
+        'distances.R' 'intersections.R' 'inside.R' 'rotate.R'
+        'rescale.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2026-05-23 12:44:31 UTC; tuh42402
+Author: W. Joel Schneider [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8393-5316>)
+Maintainer: W. Joel Schneider <w.joel.schneider@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-23 13:20:02 UTC

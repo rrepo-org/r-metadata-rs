@@ -1,0 +1,29 @@
+Package: acmgscaler
+Title: Variant Effect Calibration to ACMG/AMP Evidence Strength
+Version: 1.0.0
+Authors@R: 
+    person("Mihaly", "Badonyi", , "mihaly.badonyi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8305-5618"))
+Description: Provides a function to calibrate variant effect scores against
+    evidence strength categories defined by the American College of Medical
+    Genetics and Genomics (ACMG) and the Association for Molecular Pathology
+    (AMP) guidelines. The method computes likelihood ratios of pathogenicity
+    via kernel density estimation of pathogenic and benign score distributions,
+    and derives score intervals corresponding to ACMG/AMP evidence levels. This
+    enables researchers and clinical geneticists to interpret functional and
+    computational variant scores in a reproducible and standardised manner. For
+    details, see Badonyi and Marsh (2025) <doi:10.1093/bioinformatics/btaf503>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en
+Depends: R (>= 3.5.0)
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-18 18:25:42 UTC; mbadonyi
+Author: Mihaly Badonyi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8305-5618>)
+Maintainer: Mihaly Badonyi <mihaly.badonyi@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-23 10:50:08 UTC

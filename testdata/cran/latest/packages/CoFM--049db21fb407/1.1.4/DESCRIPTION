@@ -1,0 +1,30 @@
+Package: CoFM
+Type: Package
+Title: Copula Factor Models
+Version: 1.1.4
+Authors@R: c(person(given = "Guangbao", family = "Guo", role = c("aut", "cre"), email = "ggb11111111@163.com"),
+    person(given = "Xin", family = "Gao", role = "aut"))
+Author: Guangbao Guo [aut, cre],
+  Xin Gao [aut]
+Maintainer: Guangbao Guo <ggb11111111@163.com>
+Description: Provides tools for factor analysis in high-dimensional settings under
+    copula-based factor models. It includes functions to simulate factor-model data
+    with copula-distributed idiosyncratic errors (e.g., Clayton, Gumbel, Frank,
+    Student t and Gaussian copulas) and to perform diagnostic tests such as the
+    Kaiser-Meyer-Olkin measure and Bartlett's test of sphericity. Estimation routines
+    include principal component based factor analysis, projected principal component
+    analysis, and principal orthogonal complement thresholding for large covariance
+    matrix estimation. The philosophy of the package is described in Guo G. (2023)
+    <doi:10.1007/s00180-022-01270-z>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Suggests: testthat (>= 3.0.0), spelling
+NeedsCompilation: no
+Imports: MASS, psych, copula, matrixcalc, stats
+Language: en-US
+Packaged: 2026-01-22 13:15:54 UTC; admin
+Repository: CRAN
+Date/Publication: 2026-01-27 20:50:07 UTC

@@ -1,0 +1,45 @@
+Package: sftpR
+Type: Package
+Title: Robust SFTP Interface Using 'curl'
+Version: 0.2.0
+Authors@R: c(
+    person(
+        "Michael", 
+        "Kuo", , 
+        "michael.kuo@bccdc.ca", 
+        role = c("aut", "cre")
+    )
+  )
+Description: Provides a high-level, object-oriented interface for Secure 
+    File Transfer Protocol (SFTP) operations built upon the 'curl' 
+    package. The package implements an 'R6' class to manage persistent 
+    connections and provides 'tidyverse'-style functions for common file 
+    system tasks. Key features include recursive directory creation with 
+    idempotency support, "smart" local path resolution that distinguishes 
+    between files and directories, and the ability to download remote 
+    resources directly into memory as raw vectors for seamless 
+    integration into data processing pipelines. It is designed to handle 
+    common SFTP edge cases gracefully, providing informative error 
+    messages and robust path sanitization to ensure compatibility across 
+    different server configurations.
+License: MIT + file LICENSE
+URL: https://mikuo0628.github.io/sftpR/,
+        https://github.com/mikuo0628/sftpR
+BugReports: https://github.com/mikuo0628/sftpR/issues
+Encoding: UTF-8
+SystemRequirements: libcurl: libcurl (with libssh2 support)
+Depends: R (>= 4.1.0)
+Imports: curl (>= 7.0.0), R6 (>= 2.6.1)
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Collate: 'sftp_connect.R' 'sftp_delete.R' 'sftp_download.R'
+        'sftp_list.R' 'sftp_mkdir.R' 'sftp_rename.R' 'sftp_upload.R'
+        'utils.R' 'shared_docs.R'
+NeedsCompilation: no
+Packaged: 2026-04-03 17:10:35 UTC; rstudio
+Author: Michael Kuo [aut, cre]
+Maintainer: Michael Kuo <michael.kuo@bccdc.ca>
+Repository: CRAN
+Date/Publication: 2026-04-09 15:40:02 UTC

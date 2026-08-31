@@ -1,0 +1,60 @@
+Package: specmine
+Type: Package
+Title: Metabolomics and Spectral Data Analysis and Mining
+Version: 3.1.8
+Authors@R: c(
+    person(given = "Christopher", family = "Costa",
+           email = "chrisbcl@hotmail.com", role = "aut"),
+    person(given = "Marcelo", family = "Maraschin",
+           email = "mtocsy@gmail.com", role = "aut"),
+    person(given = "Miguel", family = "Rocha",
+           email = "mrocha@di.uminho.pt", role = "aut"),
+    person(given = "Sara", family = "Cardoso",
+           email = "saracardoso501@gmail.com", role = "aut"),
+    person(given = "Telma", family = "Afonso",
+           email = "telma.afonso94@gmail.com", role = "aut"),
+    person(given = "Bruno", family = "Pereira",
+           email = "pereirinha_bp@hotmail.com", role = "aut"),
+    person(given = "Pedro", family = "Fontão",
+           email = "pedrofontao812004@gmail.com", role = c("aut", "cre")),
+    person(given = "C.", family = "Beleites", role = "cph"),
+    person(given = "Jie", family = "Hao", role = "cph"))
+Depends: R (>= 4.0.0)
+Imports: baseline, caret, compare, ellipse, genefilter, GGally,
+        ggplot2, grDevices, graphics, impute, imputeTS, MASS, methods,
+        Metrics, narray, pcaPP, plotly, pls, RColorBrewer, readJDX,
+        stats, utils
+Suggests: clusterCrit, curl, dbscan, fastICA, ggdendro, KEGGgraph,
+        KEGGREST, knitr, MAIT, mclust, pins, qdap, qpdf, RCurl,
+        cyjShiny, reticulate, rgl, Rtsne, rmarkdown, scatterplot3d,
+        specmine.datasets, uwot, randomForest, xcms
+VignetteBuilder: knitr
+Description: Provides methods for metabolomics and spectral data analysis,
+    including data import, preprocessing, visualization, univariate and
+    multivariate analysis, machine learning, feature selection, and pathway
+    analysis. The package supports analytical workflows for different data
+    types used in metabolomics and spectroscopy. Some optional functionality
+    uses the suggested packages 'cyjShiny' and 'specmine.datasets'. The package
+    'specmine.datasets' is maintained separately at
+    <https://github.com/PedroFontao/specmine.datasets>.
+License: GPL (>= 2)
+URL: https://github.com/PedroFontao/specmine
+BugReports: https://github.com/PedroFontao/specmine/issues
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: Python (>= 3.5.2), Python module 'nmrglue'
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 15:33:22 UTC; pedrofontao
+Author: Christopher Costa [aut],
+  Marcelo Maraschin [aut],
+  Miguel Rocha [aut],
+  Sara Cardoso [aut],
+  Telma Afonso [aut],
+  Bruno Pereira [aut],
+  Pedro Fontão [aut, cre],
+  C. Beleites [cph],
+  Jie Hao [cph]
+Maintainer: Pedro Fontão <pedrofontao812004@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 09:20:02 UTC

@@ -1,0 +1,24 @@
+Package: micvar
+Type: Package
+Title: Order Selection in Vector Autoregression by Mean Square
+        Information Criteria
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Michael", "Hellstern",
+      email = "mikeh1@uw.edu",
+      role = c("aut", "cre")
+    )
+  )
+Description: Implements order selection for Vector Autoregressive (VAR) models using the Mean Square Information Criterion (MIC). Unlike standard methods such as AIC and BIC, MIC is likelihood-free. This method consistently estimates VAR order and has robust performance under model misspecification. For more details, see Hellstern and Shojaie (2025) <doi:10.48550/arXiv.2511.19761>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: MASS, matrixcalc, Rdpack, stats
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2025-12-01 18:08:18 UTC; mike
+Author: Michael Hellstern [aut, cre]
+Maintainer: Michael Hellstern <mikeh1@uw.edu>
+Repository: CRAN
+Date/Publication: 2025-12-08 08:10:10 UTC

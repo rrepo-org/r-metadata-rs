@@ -1,0 +1,35 @@
+Package: phylter
+Title: Detect and Remove Outliers in Phylogenomics Datasets
+Version: 0.9.12
+Imports: ape, ggplot2, reshape2, Rfast, RSpectra, stats, utils
+Suggests: knitr, rmarkdown
+LinkingTo: RcppEigen (>= 0.3.2.9.0), Rcpp (>= 0.12.6), RcppArmadillo
+        (>= 0.7.600.1.0)
+Authors@R: c(
+    person("Damien M.", "de Vienne", role = "aut", email = "damien.de-vienne@univ-lyon1.fr", comment = c(ORCID = "0000-0001-9532-5251")),
+    person("Stéphane", "Dray", role = "aut", email = "stephane.dray@univ-lyon1.fr", comment = c(ORCID = "0000-0003-0153-1105")),
+    person("Théo", "Tricou", role = "aut", email = "treecou.theo@gmail.com", comment = c(ORCID = "0000-0002-4432-2680")),
+    person("Aurélie", "Siberchicot", role = c("ctb", "cre"), email = "aurelie.siberchicot@univ-lyon1.fr", comment = c(ORCID = "0000-0002-7638-8318"))
+    )
+License: GPL (>= 2)
+Description: Analyzis and filtering of phylogenomics datasets. 
+	It takes an input either a collection of gene trees (then transformed to matrices) or directly a collection of gene matrices and performs an iterative process to identify
+	what species in what genes are outliers, and whose elimination significantly improves the concordance between the input matrices. The methods builds upon the Distatis approach (Abdi et al. (2005) <doi:10.1101/2021.09.08.459421>), a generalization of classical multidimensional scaling to multiple distance matrices.
+LazyData: true
+Depends: R (>= 4.0)
+BugReports: https://github.com/damiendevienne/phylter/issues
+URL: https://github.com/damiendevienne/phylter
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-07-29 13:30:16 UTC; siberchicot
+Author: Damien M. de Vienne [aut] (ORCID:
+    <https://orcid.org/0000-0001-9532-5251>),
+  Stéphane Dray [aut] (ORCID: <https://orcid.org/0000-0003-0153-1105>),
+  Théo Tricou [aut] (ORCID: <https://orcid.org/0000-0002-4432-2680>),
+  Aurélie Siberchicot [ctb, cre] (ORCID:
+    <https://orcid.org/0000-0002-7638-8318>)
+Maintainer: Aurélie Siberchicot <aurelie.siberchicot@univ-lyon1.fr>
+Repository: CRAN
+Date/Publication: 2025-07-29 19:20:09 UTC

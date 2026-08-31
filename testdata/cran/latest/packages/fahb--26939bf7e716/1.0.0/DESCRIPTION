@@ -1,0 +1,28 @@
+Package: fahb
+Title: Design and Analysis of Pilot Trials Assessing Recruitment
+        Feasibility
+Version: 1.0.0
+Authors@R: 
+    person("Duncan", "Wilson", , "d.t.wilson@leeds.ac.uk", 
+    role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-7949-8718"))
+Description: Find optimal decisions rules for guiding progression decisions
+    following a pilot trial, assuming a hierarchical recruitment model. Estimate
+    the time until the main trial recruits to target, given the recruitment data
+    observed in the pilot.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: BH, knitr, patchwork, RcppEigen, rmarkdown, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+Imports: brms, ggplot2, mco, mgcv, posterior, rlang
+VignetteBuilder: knitr
+URL: https://dtwilson.github.io/fahb/, https://github.com/DTWilson/fahb
+BugReports: https://github.com/DTWilson/fahb/issues
+NeedsCompilation: no
+Packaged: 2026-04-28 15:01:50 UTC; meddwilb
+Author: Duncan Wilson [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7949-8718>)
+Maintainer: Duncan Wilson <d.t.wilson@leeds.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-04-29 08:00:02 UTC

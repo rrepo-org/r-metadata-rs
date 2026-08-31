@@ -1,0 +1,31 @@
+Package: CAFT
+Type: Package
+Title: Rank-Based Compositional Analysis using Log-Linear Models for
+        Microbiome Data with Zero Cells
+Version: 0.1.0
+Date: 2026-06-09
+Authors@R: c(person("Glen A.", "Satten", email="gsatten@emory.edu", role=c("aut", "ctb", "cph")),
+             person("Mo", "Li", email="mo.li@louisiana.edu", role=c("aut", "ctb", "cre", "cph")),
+	           person("Ni", "Zhao", role=c("aut", "ctb", "cph")))
+Description: Provides rank-based compositional differential abundance analysis for microbiome count data with zero cells using the compositional accelerated failure time model of Satten, Li and Zhao (2025) "CAFT: A Compositional Log-Linear Model for Microbiome Data with Zero Cells" <doi:10.1101/2025.11.26.690468>. Zero counts are treated as censored observations below sample-specific detection limits, avoiding the use of pseudocounts. The package implements estimation and hypothesis testing procedures for assessing associations between microbial taxa and covariates while accounting for the compositional structure of sequencing count data. It supports taxon-level differential abundance analysis, estimation of regression effects under censoring induced by detection limits, and inference based on rank-based methods that remain applicable in the presence of excess zeros. Functions are provided for model fitting, significance testing, extraction of effect estimates, and summarization of results across taxa. The package also provides optional bootstrap calibration of taxon-level p-values for sensitivity analysis in small-taxon settings.
+Imports: doParallel, doRNG, expm, foreach, ggplot2, ggtext, ICSNP,
+        MASS, stats
+License: LGPL (>= 2)
+Depends: R (>= 4.3.0)
+URL: https://github.com/mli171/CAFT
+BugReports: https://github.com/mli171/CAFT/issues
+Suggests: graphics, knitr, rmarkdown, testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: bzip2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-21 06:31:16 UTC; mli171
+Author: Glen A. Satten [aut, ctb, cph],
+  Mo Li [aut, ctb, cre, cph],
+  Ni Zhao [aut, ctb, cph]
+Maintainer: Mo Li <mo.li@louisiana.edu>
+Repository: CRAN
+Date/Publication: 2026-06-25 11:20:14 UTC

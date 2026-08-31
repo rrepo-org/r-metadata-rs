@@ -1,0 +1,51 @@
+Package: GammaFrailtySPC
+Type: Package
+Title: Statistical Process Control Based on Gamma-Frailty AFT Models
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi",
+        email = "shikhar1093tyagi@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey",
+        email = "arvindmzu@gmail.com",
+        role = "aut"),
+    person("Bhupendra", "Singh",
+        email = "bhupendra.rana@gmail.com",
+        role = "aut"),
+    person("Vrijesh", "Tripathi",
+        email = "vrijesh.tripathi@uwi.edu",
+        role = "aut"))
+Description: Implements statistical process control ('SPC') monitoring schemes
+    for heterogeneous reliability observations using Accelerated Failure Time
+    ('AFT') models integrated with continuous gamma frailty. It accommodates both
+    uncensored and right-censored reliability observations in the presence of
+    observed and unobserved covariates. Provides Phase I maximum likelihood
+    estimation of Weibull 'AFT' gamma frailty model parameters, and Phase II
+    monitoring procedures including probability-limits-based control charts,
+    exponentially weighted moving average ('EWMA') charts with conditional
+    expected values, and likelihood-ratio cumulative sum ('CUSUM') control
+    charts. Competing 'CUSUM' schemes (ignoring unobserved frailty or both
+    covariates) and Average Run Length ('ARL') simulation utilities are also
+    provided. The statistical methodology is based on Asadzadeh (2022)
+    <doi:10.1080/00949655.2021.1959582>.
+License: GPL-3
+Depends: R (>= 4.0.0)
+Imports: maxLik, survival, stats, graphics, grDevices, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-03 20:59:39 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-08 13:50:16 UTC

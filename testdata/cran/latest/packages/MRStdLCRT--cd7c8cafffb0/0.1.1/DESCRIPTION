@@ -1,0 +1,37 @@
+Package: MRStdLCRT
+Type: Package
+Title: Model-Robust Standardization for Longitudinal Cluster-Randomized
+        Trials
+Version: 0.1.1
+Authors@R: c(
+    person("Xi", "Fang", email = "x.fang@yale.edu", role = c("aut", "cre")),
+    person("Fan", "Li", email = "fan.f.li@yale.edu", role = "aut")
+  )
+Description: Provides estimation and leave-one-cluster-out jackknife standard errors
+    for four longitudinal cluster-randomized trial estimands: horizontal individual
+    average treatment effect (h-iATE), horizontal cluster average treatment effect
+    (h-cATE), vertical individual average treatment effect (v-iATE), and vertical
+    cluster-period average treatment effect (v-cATE), using unadjusted and augmented
+    (model-robust standardization) estimators. The working model may be fit using
+    linear mixed models for continuous outcomes or generalized estimating equations
+    and generalized linear mixed models for binary outcomes. Period inclusion for
+    aggregation is determined automatically: only periods with both treated and
+    control clusters are included in the construction of the marginal means and
+    treatment effect contrasts. See Fang et al. (2025) <doi:10.48550/arXiv.2507.17190>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: reformulas, dplyr (>= 1.1.0), tidyr (>= 1.3.0), rlang (>=
+        1.1.0), tidyselect, gee, lme4 (>= 1.1-30), ggplot2 (>= 3.4.0),
+        stats, utils, MASS
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-01 15:00:59 UTC; xf97
+Author: Xi Fang [aut, cre],
+  Fan Li [aut]
+Maintainer: Xi Fang <x.fang@yale.edu>
+Repository: CRAN
+Date/Publication: 2026-03-01 15:20:02 UTC

@@ -1,0 +1,53 @@
+Package: scimetr
+Type: Package
+Title: Analysis of Scientific Publication Data with R
+Version: 1.2.0
+Date: 2026-03-01
+Authors@R: c(
+    person("Ruben", "Fernandez-Casal", role = c("aut", "cre"), 
+    email = "rubenfcasal@gmail.com", comment = c(ORCID = "0000-0002-5785-3739")),
+    person("Borja", "Lafuente-Rego", role = c("aut"), 
+    email = "borjalrego@gmail.com", comment = c(ORCID = "0000-0002-2443-3084")),
+    person("Maria Jose", "Lombardia", role = c("aut"),
+    email = "maria.jose.lombardia@udc.es", comment = c(ORCID = "0000-0001-9452-9818")),    
+    person("Javier", "Tarrio-Saavedra", role = c("aut"),
+    email = "javier.tarrio@udc.es", comment = c(ORCID = "0000-0002-9584-127X")),
+    person("Julian", "Costa-Bouzas", role = c("aut"),
+    email = "julian.costa.bouzas@udc.es", comment = c(ORCID = "0000-0001-9760-9581")),
+    person("Yesica", "Fernandez-Ramos", role = c("ctb"),
+    email = "yesica.ramos@udc.es"),
+    person("Guillermo", "Lopez-Taboada", role = c("ctb"),
+    email = "guillermo.lopez.taboada@udc.es"))
+Description: Tools for quantitative research in scientometrics and bibliometrics.
+    This package provides routines for importing bibliographic data from
+    Clarivate Web of Science (<https://www.webofscience.com/wos/>) and
+    performing bibliometric analysis.
+Depends: R (>= 4.1.0), graphics
+Imports: dplyr, tidyr, stringr, stringi, scales, ggplot2, rlang,
+        openxlsx
+Suggests: DT, rmarkdown, knitr
+License: GPL (>= 2)
+URL: https://rubenfcasal.github.io/scimetr/,
+        https://github.com/rubenfcasal/scimetr/
+BugReports: https://github.com/rubenfcasal/scimetr/issues/
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-03-11 19:22:35 UTC; ruben
+Author: Ruben Fernandez-Casal [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5785-3739>),
+  Borja Lafuente-Rego [aut] (ORCID:
+    <https://orcid.org/0000-0002-2443-3084>),
+  Maria Jose Lombardia [aut] (ORCID:
+    <https://orcid.org/0000-0001-9452-9818>),
+  Javier Tarrio-Saavedra [aut] (ORCID:
+    <https://orcid.org/0000-0002-9584-127X>),
+  Julian Costa-Bouzas [aut] (ORCID:
+    <https://orcid.org/0000-0001-9760-9581>),
+  Yesica Fernandez-Ramos [ctb],
+  Guillermo Lopez-Taboada [ctb]
+Maintainer: Ruben Fernandez-Casal <rubenfcasal@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-16 20:00:02 UTC

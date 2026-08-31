@@ -1,0 +1,30 @@
+Package: CauMedi
+Type: Package
+Title: Cell Type-Specific Causal Mediation Models for Single-Cell Data
+Version: 0.1.1
+Authors@R: c(
+    person("Seungjun", "Ahn", email = "seungjun.ahn@mountsinai.org",
+           role = "aut"),
+    person("Donald", "Porchia", email = "donald.porchia@ufl.edu",
+           role = "aut"), 
+    person("Weijia", "Fu", email = "weijia.fu@mountsinai.org", 
+           role = c("cre", "aut"), comment = c(ORCID = "0000-0002-4816-8924")),
+    person("Zhigang", "Li", email = "zhigang.li@ufl.edu", 
+           role = "ctb"))
+Description: A causal mediation framework for cell type-specific single-cell data based on joint mediator multilevel models. The framework jointly models overdispersed counts and zero inflation for the mediators.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: glmnet
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-24 18:25:25 UTC; fuw01
+Author: Seungjun Ahn [aut],
+  Donald Porchia [aut],
+  Weijia Fu [cre, aut] (ORCID: <https://orcid.org/0000-0002-4816-8924>),
+  Zhigang Li [ctb]
+Maintainer: Weijia Fu <weijia.fu@mountsinai.org>
+Repository: CRAN
+Date/Publication: 2026-08-04 13:50:12 UTC

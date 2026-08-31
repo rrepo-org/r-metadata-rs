@@ -1,0 +1,35 @@
+Package: scR
+Title: Empirical Sample Complexity Bounds
+Version: 0.7.0
+Authors@R: c(
+    person("Perry", "Carter", email = "pjc504@nyu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4684-6533")),
+    person("Dahyun", "Choi", email = "dahyunc@princeton.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-2628-1467"))
+  )
+Description: Provides tools for estimating empirical sample complexity
+    bounds for supervised learning tasks. The package supports simulation-based
+    estimates of generalization curves, parametric extrapolation of empirical
+    sample complexity bounds, theoretical bounds based on Vapnik-Chervonenkis
+    dimension, and optional monotone Gaussian process extrapolation for users who
+    install the external 'cmdstanr' workflow. For more details, see Carter and
+    Choi (2024) <doi:10.31219/osf.io/evrcj>.
+License: MIT + file LICENSE
+URL: https://github.com/pjesscarter/scR
+BugReports: https://github.com/pjesscarter/scR/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, furrr, future, ggplot2, Matrix, minpack.lm, parallel,
+        parallelly, pbapply, plotly, progressr, stats, tidyr
+Suggests: cmdstanr, posterior, rmarkdown, testthat (>= 3.0.0)
+Additional_repositories: https://stan-dev.r-universe.dev
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-23 08:08:35 UTC; pcaca
+Author: Perry Carter [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4684-6533>),
+  Dahyun Choi [aut] (ORCID: <https://orcid.org/0000-0002-2628-1467>)
+Maintainer: Perry Carter <pjc504@nyu.edu>
+Repository: CRAN
+Date/Publication: 2026-06-23 08:30:02 UTC

@@ -1,0 +1,34 @@
+Package: dynamicpv
+Title: Evaluates Present Values and Health Economic Models with Dynamic
+        Pricing and Uptake
+Version: 0.4.2
+Authors@R: c(
+    person("Dominic", "Muston", , "dom.muston@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4876-7940")),
+    person("John", "Blischak", role = c("ctb"),
+           comment = c(ORCID = "0000-0003-2634-9879")),
+    person("Merck & Co., Inc., Rahway, NJ, USA and its affiliates", role = c("cph", "fnd"))
+    )
+Description: The goal of 'dynamicpv' is to provide a simple way to calculate (net) present values and outputs from health economic models (especially cost-effectiveness and budget impact) in discrete time that reflect dynamic pricing and dynamic uptake. Dynamic pricing is also known as life cycle pricing; dynamic uptake is also known as multiple or stacked cohorts, or dynamic disease prevalence. Shafrin (2024) <doi:10.1515/fhep-2024-0014> provides an explanation of dynamic value elements, in the context of Generalized Cost Effectiveness Analysis, and Puls (2024) <doi:10.1016/j.jval.2024.03.006> reviews challenges of incorporating such dynamic value elements. This package aims to reduce those challenges.
+License: GPL (>= 3)
+URL: https://MSDLLCpapers.github.io/dynamicpv/,
+        https://github.com/MSDLLCpapers/dynamicpv
+BugReports: https://github.com/MSDLLCpapers/dynamicpv/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr, heemod, readr, rlang, tidyr
+Suggests: flexsurv, ggplot2, knitr, lubridate, purrr, rmarkdown,
+        scales, testthat (>= 3.0.0), usethis
+Config/testthat/edition: 3
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-29 21:53:42 UTC; dom
+Author: Dominic Muston [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4876-7940>),
+  John Blischak [ctb] (ORCID: <https://orcid.org/0000-0003-2634-9879>),
+  Merck & Co., Inc., Rahway, NJ, USA and its affiliates [cph, fnd]
+Maintainer: Dominic Muston <dom.muston@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-30 08:30:31 UTC

@@ -1,0 +1,33 @@
+Package: BioMoR
+Type: Package
+Title: Bioinformatics Modeling with Recursion and Autoencoder-Based
+        Ensemble
+Version: 0.1.1
+Authors@R: 
+    person(given = "MD.",
+           family = "Arshad",
+           email = "arshad10867c@gmail.com",
+           role = c("aut", "cre"))
+Author: MD. Arshad [aut, cre]
+Maintainer: MD. Arshad <arshad10867c@gmail.com>
+Description: Tools for bioinformatics modeling using recursive transformer-inspired 
+    architectures, autoencoders, random forests, XGBoost, and stacked ensemble models. 
+    Includes utilities for cross-validation, calibration, benchmarking, and threshold 
+    optimization in predictive modeling workflows. The methodology builds on ensemble 
+    learning (Breiman 2001 <doi:10.1023/A:1010933404324>), gradient boosting (Chen and 
+    Guestrin 2016 <doi:10.1145/2939672.2939785>), autoencoders (Hinton and Salakhutdinov 
+    2006 <doi:10.1126/science.1127647>), and recursive transformer efficiency approaches 
+    such as Mixture-of-Recursions (Bae et al. 2025 <doi:10.48550/arXiv.2507.10524>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.2.0)
+Imports: caret, recipes, themis, xgboost, magrittr, dplyr, pROC
+Suggests: randomForest, testthat (>= 3.0.0), PRROC, ggplot2, purrr,
+        tibble, yardstick, knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-10 23:12:20 UTC; sulky
+Repository: CRAN
+Date/Publication: 2025-12-10 23:50:02 UTC

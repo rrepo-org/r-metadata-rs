@@ -1,0 +1,21 @@
+Package: lognGPD
+Title: Estimation of a Lognormal - Generalized Pareto Mixture
+Version: 0.1.0
+Authors@R: 
+    person("Marco", "Bee", , "marco.bee@unitn.it", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9579-3650"))
+Description: Estimation of a lognormal - Generalized Pareto mixture via the Expectation-Maximization algorithm. Computation of bootstrap standard errors is supported and performed via parallel computing. Functions for random number simulation and density evaluation are also available. For more details see Bee and Santi (2025) <doi:10.48550/arXiv.2505.22507>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0.0)
+RdMacros: Rdpack
+Imports: evd, Rdpack, parallel, LNPar, EnvStats
+URL: https://github.com/marco-bee/lognGPD
+BugReports: https://github.com/marco-bee/lognGPD/issues
+NeedsCompilation: no
+Packaged: 2025-05-29 08:05:33 UTC; marco.bee
+Author: Marco Bee [aut, cre] (ORCID: <https://orcid.org/0000-0002-9579-3650>)
+Maintainer: Marco Bee <marco.bee@unitn.it>
+Repository: CRAN
+Date/Publication: 2025-06-02 08:50:05 UTC

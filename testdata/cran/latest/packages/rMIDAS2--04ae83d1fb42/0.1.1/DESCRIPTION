@@ -1,0 +1,36 @@
+Package: rMIDAS2
+Title: Multiple Imputation with 'MIDAS2' Denoising Autoencoders
+Version: 0.1.1
+Authors@R: c(
+    person("Thomas", "Robinson", email = "t.robinson7@lse.ac.uk",
+           role = c("aut", "cre")),
+    person("Ranjit", "Lall", email = "ranjit.lall@politics.ox.ac.uk",
+           role = "aut")
+    )
+Description: Fits 'MIDAS' denoising autoencoder models for multiple
+    imputation of missing data, generates multiply-imputed datasets,
+    computes imputation means, and runs Rubin's rules regression analysis.
+    Wraps the 'MIDAS2' 'Python' engine via a local 'FastAPI' server over
+    'HTTP', so no 'reticulate' dependency is needed at runtime. Methods are
+    described in Lall and Robinson (2022) <doi:10.1017/pan.2020.49> and
+    Lall and Robinson (2023) <doi:10.18637/jss.v107.i09>.
+License: MIT + file LICENSE
+URL: https://github.com/MIDASverse/MIDAS2
+BugReports: https://github.com/MIDASverse/MIDAS2/issues
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: Python (>= 3.9) with the 'midasverse-midas-api'
+        package
+Imports: curl, httr2 (>= 1.0.0), processx (>= 3.8.0), rlang (>= 1.1.0)
+Suggests: arrow, jsonlite, reticulate, testthat (>= 3.0.0), knitr,
+        rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-08 10:22:49 UTC; t.robinson7
+Author: Thomas Robinson [aut, cre],
+  Ranjit Lall [aut]
+Maintainer: Thomas Robinson <t.robinson7@lse.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-03-12 08:30:08 UTC

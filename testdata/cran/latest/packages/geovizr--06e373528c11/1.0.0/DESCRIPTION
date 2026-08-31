@@ -1,0 +1,40 @@
+Package: geovizr
+Type: Package
+Title: Interactive Cartography
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Nicolas", 
+             family = "Lambert", 
+             email = "nicolas.lambert@cnrs.fr", 
+             role = c("aut", "cre"), 
+             comment = c(ORCID = "0000-0003-4976-6560")), 
+      person(given = "Timothée",
+             family = "Giraud",
+             email = "timothee.giraud@cnrs.fr",
+             role = c("ctb"),
+             comment = c(ORCID = "0000-0002-1932-3323")))
+Description: Create a wide range of interactive, zoomable vector maps. This
+    package is an 'R' binding for the 'geoviz' 'JavaScript' library
+    <https://github.com/riatelab/geoviz/>, itself based on the 'd3.js'
+    ecosystem <doi:10.1109/TVCG.2011.185>. Like the original 'JavaScript'
+    library, the package takes advantage of the many features provided
+    by 'd3.js': proportional symbols, pictograms, typologies, choropleth maps,
+    spikes, tiles, Dorling cartograms, and more. It can also be used to
+    create pretty static vectorial maps in 'svg' format, suitable for
+    editorial cartography.
+License: GPL (>= 3)
+URL: https://riatelab.github.io/geovizr/
+BugReports: https://github.com/riatelab/geovizr/issues/
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: htmlwidgets, geojsonsf, jsonlite, sf
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-18 14:19:51 UTC; nlambert
+Author: Nicolas Lambert [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4976-6560>),
+  Timothée Giraud [ctb] (ORCID: <https://orcid.org/0000-0002-1932-3323>)
+Maintainer: Nicolas Lambert <nicolas.lambert@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2026-06-24 07:40:37 UTC

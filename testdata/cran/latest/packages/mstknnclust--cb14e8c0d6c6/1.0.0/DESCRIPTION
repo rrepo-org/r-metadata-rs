@@ -1,0 +1,46 @@
+Package: mstknnclust
+Type: Package
+Title: MST-kNN Clustering Algorithm
+Version: 1.0.0
+Authors@R: c(
+    person("Jorge", "Parraga-Alava",
+           email = "jorge.parraga@utm.edu.ec",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8558-9122")),
+    person("Pablo", "Moscato",
+           email = "pablo.moscato@newcastle.edu.au",
+           role = "aut"),
+    person("Mario", "Inostroza-Ponta",
+           email = "mario.inostroza@usach.cl",
+           role = "aut"))
+Description: Implements the MST-kNN clustering algorithm proposed by
+    Inostroza-Ponta (2008) <https://trove.nla.gov.au/work/28729389>.
+    The algorithm determines the number of clusters automatically by
+    recursively intersecting the Minimum Spanning Tree (MST) and the
+    k-Nearest Neighbor (kNN) proximity graphs constructed from a pairwise
+    distance matrix.  The value of k is selected via a connectivity
+    criterion (the smallest k such that the kNN graph is connected,
+    bounded by floor(log(n))).  The package requires only a distance
+    matrix as input and returns cluster assignments, an 'igraph' network,
+    and partition metadata.
+License: GPL-2
+URL: https://github.com/jorgeklz/package-mstknnclust,
+        https://jorgeklz.github.io/package-mstknnclust/
+BugReports: https://github.com/jorgeklz/package-mstknnclust/issues
+Depends: R (>= 3.5.0)
+Imports: igraph
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-13 01:35:28 UTC; jorge
+Author: Jorge Parraga-Alava [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8558-9122>),
+  Pablo Moscato [aut],
+  Mario Inostroza-Ponta [aut]
+Maintainer: Jorge Parraga-Alava <jorge.parraga@utm.edu.ec>
+Repository: CRAN
+Date/Publication: 2026-05-13 07:10:02 UTC

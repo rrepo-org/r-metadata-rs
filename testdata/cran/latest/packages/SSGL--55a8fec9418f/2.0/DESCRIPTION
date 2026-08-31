@@ -1,0 +1,20 @@
+Package: SSGL
+Type: Package
+Title: Spike-and-Slab Group Lasso for Group-Regularized Generalized
+        Linear Models
+Version: 2.0
+Authors@R: person(given = "Ray",
+                  family = "Bai",
+                  role = c("aut", "cre"),
+                  email = "raybaistat@gmail.com")
+Author: Ray Bai [aut, cre]
+Maintainer: Ray Bai <raybaistat@gmail.com>
+Description: Fits group-regularized generalized linear models (GLMs) using the spike-and-slab group lasso (SSGL) prior of Bai et al. (2022) <doi:10.1080/01621459.2020.1765784> and extended to GLMs by Bai (2023) <doi:10.48550/arXiv.2007.07021>. This package supports fitting the SSGL model for the following GLMs with group sparsity: Gaussian linear regression, binary logistic regression, and Poisson regression.
+License: GPL-3
+Depends: R (>= 3.6.0)
+Imports: grpreg, stats, caret, parallel, doParallel, doRNG, foreach,
+        MASS, Matrix, GIGrvg, BayesLogit
+NeedsCompilation: yes
+Packaged: 2025-03-24 20:58:23 UTC; Ray Bai
+Repository: CRAN
+Date/Publication: 2025-03-24 21:10:02 UTC

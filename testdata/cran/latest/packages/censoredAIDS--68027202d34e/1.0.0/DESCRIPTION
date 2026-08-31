@@ -1,0 +1,22 @@
+Title: Estimation of Censored AI/QUAI Demand System via Maximum
+        Likelihood Estimation (MLE)
+Package: censoredAIDS
+Type: Package
+Version: 1.0.0
+Description: Tools for estimating censored Almost Ideal (AI) and Quadratic Almost Ideal (QUAI) demand systems using Maximum Likelihood Estimation (MLE). It includes functions for calculating demand share equations and the truncated log-likelihood function for a system of equations, incorporating demographic variables. The package is designed to handle censored data, where some observations may be zero due to non-purchase of certain goods. Package also contains a procedure to approximate demand elasticities numerically and estimate standard errors via Delta Method. It is particularly useful for applied researchers analyzing household consumption data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+Imports: Matrix, mnormt, mvtnorm, stats, matrixcalc
+Authors@R: 
+    person("Noé J", "Nava", , "noejnava2@gmail.com", role = c("aut", "cre"))
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-18 12:14:49 UTC; Noe.Nava
+Author: Noé J Nava [aut, cre]
+Maintainer: Noé J Nava <noejnava2@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-18 13:00:09 UTC

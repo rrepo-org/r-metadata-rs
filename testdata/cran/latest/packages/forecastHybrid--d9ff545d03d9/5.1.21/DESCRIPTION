@@ -1,0 +1,33 @@
+Package: forecastHybrid
+Title: Convenient Functions for Ensemble Time Series Forecasts
+Version: 5.1.21
+Date: 2026-01-14
+Authors@R: c(
+   person("David", "Shaub", email = "davidshaub@alumni.harvard.edu", role = c("aut", "cre")),
+   person("Peter", "Ellis", email = "peter.ellis2013nz@gmail.com", role = c("aut"))
+   )
+Description: Convenient functions for ensemble forecasts in R combining
+    approaches from the 'forecast' package. Forecasts generated from auto.arima(), ets(),
+    thetaf(), nnetar(), stlm(), tbats(), snaive() and arfima() can be combined with equal weights, weights
+    based on in-sample errors (introduced by Bates & Granger (1969) <doi:10.1057/jors.1969.103>),
+    or cross-validated weights. Cross validation for time series data with user-supplied models
+    and forecasting functions is also supported to evaluate model accuracy.
+Depends: R (>= 4.0.4), forecast (>= 8.16), thief
+Imports: doParallel (>= 1.0.16), foreach (>= 1.5.1), ggplot2 (>=
+        3.3.6), purrr (>= 0.3.5), zoo (>= 1.8)
+Suggests: GMDH, knitr, rmarkdown, roxygen2, testthat
+VignetteBuilder: knitr
+License: GPL-3
+URL: https://gitlab.com/dashaub/forecastHybrid,
+        https://github.com/ellisp/forecastHybrid
+BugReports: https://github.com/ellisp/forecastHybrid/issues
+RoxygenNote: 7.3.3
+ByteCompile: true
+NeedsCompilation: no
+Encoding: UTF-8
+Packaged: 2026-01-14 18:43:59 UTC; felix
+Author: David Shaub [aut, cre],
+  Peter Ellis [aut]
+Maintainer: David Shaub <davidshaub@alumni.harvard.edu>
+Repository: CRAN
+Date/Publication: 2026-01-15 06:10:31 UTC

@@ -1,0 +1,43 @@
+Package: retraction
+Title: Detect Retracted References in Documents and Bibliographies
+Version: 0.1.0
+Authors@R: 
+    person("Ahmad", "Sofi-Mahmudi", email = "a.sofimahmudi@gmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6829-0823"))
+Description: Scans manuscripts, bibliographies, and reference lists for
+    citations to retracted publications so that authors can avoid citing
+    retracted work. 'retraction' reads bibliographic formats (BibTeX,
+    BibLaTeX, CSL-JSON, RIS, EndNote XML) and document formats (R Markdown,
+    Quarto, 'LaTeX', Markdown, HTML, JATS XML, Word, and PDF), extracts and
+    normalizes identifiers, and checks them against retraction data. The
+    default data source is the Retraction Watch database served through the
+    'XeraRetractionTracker' API; 'Crossref', 'OpenAlex', 'Europe PMC', 'PubMed',
+    'DataCite', and a preprint source ('arXiv' and 'bioRxiv' withdrawals) are
+    available as additional sources ('OpenAlex' retraction data is itself derived
+    from Retraction Watch). Within each source, matching proceeds from exact
+    Digital Object Identifier (DOI) and 'PubMed' identifier lookups to fuzzy
+    title matching, and results are returned as a tidy table with a match-quality
+    score and an optional self-contained HTML report.
+License: GPL-3
+URL: https://github.com/choxos/retraction,
+        https://choxos.github.io/retraction/
+BugReports: https://github.com/choxos/retraction/issues
+Depends: R (>= 4.0)
+Imports: cli (>= 3.0.0), httr2, jsonlite, stringdist, tibble, tools,
+        utils, xml2
+Suggests: arrow, covr, DBI, DT, furrr, future, httptest2, knitr,
+        pdftools, rmarkdown, RSQLite, rstudioapi, shiny, stringi (>=
+        1.5.3), testthat (>= 3.0.0), withr, writexl
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+Config/roxygen2/version: 8.0.0
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-03 13:24:43 UTC; choxos
+Author: Ahmad Sofi-Mahmudi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6829-0823>)
+Maintainer: Ahmad Sofi-Mahmudi <a.sofimahmudi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-10 20:20:08 UTC

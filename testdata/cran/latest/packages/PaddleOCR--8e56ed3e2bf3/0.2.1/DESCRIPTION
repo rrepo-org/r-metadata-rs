@@ -1,0 +1,25 @@
+Package: PaddleOCR
+Title: R Client for the 'PaddleOCR' Cloud API
+Version: 0.2.1
+Authors@R: person("Chaoyang", "Luo", email = "xiaoluolorn@gmail.com", role = c("aut", "cre"))
+Description: An R client for the 'PaddleOCR' cloud service API
+    <https://www.paddleocr.ai/latest/en/version3.x/inference_deployment/serving/paddleocr_official_api/overview.html>.
+    Submit images, PDFs, or URLs for OCR processing using models like
+    'PaddleOCR-VL-1.6'.
+    Supports job submission, polling, result retrieval, automatic image download,
+    and streaming PDF-to-markdown conversion with batch processing.
+License: MIT + file LICENSE
+URL: https://github.com/xiaoluolorn/PaddleOCR
+BugReports: https://github.com/xiaoluolorn/PaddleOCR/issues
+Depends: R (>= 4.0.0)
+Imports: httr (>= 1.4.0), jsonlite (>= 1.7.0), tools, utils
+Suggests: pdftools (>= 3.0.0), testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-19 09:01:58 UTC; Lenovo
+Author: Chaoyang Luo [aut, cre]
+Maintainer: Chaoyang Luo <xiaoluolorn@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-30 09:50:02 UTC

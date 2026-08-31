@@ -1,0 +1,33 @@
+Package: VectrixDB
+Type: Package
+Title: Lightweight Vector Database with Embedded Machine Learning
+        Models
+Version: 1.1.2
+Authors@R: person(given = "Kwadwo Daddy Nyame",
+                  family = "Owusu Boakye",
+                  email = "kwadwo.owusuboakye@outlook.com",
+                  role = c("aut", "cre"))
+Author: Kwadwo Daddy Nyame Owusu Boakye [aut, cre]
+Maintainer: Kwadwo Daddy Nyame Owusu Boakye <kwadwo.owusuboakye@outlook.com>
+Description: A lightweight vector database for text retrieval in R with embedded
+    machine learning models and no external API (Application Programming
+    Interface) keys. Supports dense and hybrid search, optional HNSW
+    (Hierarchical Navigable Small World) approximate nearest-neighbor indexing,
+    faceted filters with ACL (Access Control List) metadata, command-line
+    tools, and a local dashboard built with 'shiny'. The HNSW method is
+    described by Malkov and Yashunin (2018) <doi:10.1109/TPAMI.2018.2889473>.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: R6, jsonlite, digest, Matrix, text2vec (>= 0.6.0), stopwords,
+        tools, utils, stats, RSQLite, DBI
+Suggests: testthat (>= 3.0.0), shiny, plumber, pkgdown, RcppAnnoy,
+        reticulate, rappdirs
+Config/testthat/edition: 3
+URL: https://knowusuboaky.github.io/vectrixdb-r/,
+        https://github.com/knowusuboaky/vectrixdb-r
+BugReports: https://github.com/knowusuboaky/vectrixdb-r/issues
+NeedsCompilation: no
+Packaged: 2026-02-18 19:10:48 UTC; kwadw
+Repository: CRAN
+Date/Publication: 2026-02-20 11:40:19 UTC

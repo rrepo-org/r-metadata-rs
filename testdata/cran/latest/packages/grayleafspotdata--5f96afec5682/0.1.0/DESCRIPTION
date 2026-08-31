@@ -1,0 +1,38 @@
+Package: grayleafspotdata
+Type: Package
+Title: File Manifest for the S-BSST3199 Magnaporthe Colony Image
+        Dataset
+Version: 0.1.0
+Date: 2026-08-19
+Description: Provides a machine-readable file and image manifest for the
+    research data deposited in EMBL-EBI BioStudies under accession
+    S-BSST3199 (a time-series petri-dish image dataset of Magnaporthe
+    colonies from twelve plates, with associated morphometric analysis
+    outputs produced by metrics-petri 3.0.0). The original research
+    files are not bundled in this R package; they remain hosted by
+    BioStudies. The manifest can be used in image-analysis and
+    plant-pathology workflows, including workflows based on the
+    'grayleafspotr' software. Related research outputs are documented
+    using their persistent identifiers.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Authors@R: c(
+    person(given = "Rohan",
+           family = "R",
+           role = c("aut", "cre"),
+           email = "phonics-tiffs1i@icloud.com",
+           comment = c(ORCID = "0009-0005-9225-1775")))
+Maintainer: Rohan R <phonics-tiffs1i@icloud.com>
+URL: https://github.com/rotsl/grayleafspotdata,
+        https://www.ebi.ac.uk/biostudies/studies/S-BSST3199,
+        https://rotsl.r-universe.dev/
+BugReports: https://github.com/rotsl/grayleafspotdata/issues
+Depends: R (>= 3.5.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-20 03:10:26 UTC; tslwork
+Author: Rohan R [aut, cre] (ORCID: <https://orcid.org/0009-0005-9225-1775>)
+Repository: CRAN
+Date/Publication: 2026-08-21 15:30:09 UTC

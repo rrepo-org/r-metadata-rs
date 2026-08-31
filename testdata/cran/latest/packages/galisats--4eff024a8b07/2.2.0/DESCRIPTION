@@ -1,0 +1,37 @@
+Package: galisats
+Title: Configuration of Jupiter's Four Largest Satellites
+Version: 2.2.0
+Authors@R: person(
+                 "Lech", "Jaszowski",
+                 email = "lech.jaszowski@interia.pl",
+                 role = c("aut", "cre", "cph"),
+                 comment = c(ORCID = "0009-0001-4748-9603")
+                 )
+Description: Calculate, plot and animate the configuration of Jupiter's four
+    largest satellites (known as Galilean satellites) for a given date and time
+    (UTC - Coordinated Universal Time).
+    The galsat() function returns numerical values of the satellites’ positions.
+    x – the apparent rectangular coordinate of the satellite with respect to the
+    center of Jupiter’s disk in the equatorial plane in the units of Jupiter’s
+    equatorial radius; X is positive toward the west,
+    y – the apparent rectangular coordinate of the satellite with respect to the
+    center of Jupiter’s disk from the equatorial plane in the units of Jupiter’s
+    equatorial radius; Y is positive toward the north.
+    For more details see Meeus (1988, ISBN 0-943396-22-0) "Astronomical Formulae
+    for Calculators".
+    The galsat_animate() function creates an animation of the Galilean
+    satellites' positions. You provide the starting time, duration, the time
+    step between frames, and the pause between frames.
+    The function delta_t() returns the value of delta-T in units of seconds.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: graphics, png
+URL: https://lechjaszowski.github.io/galilean_satellites/
+NeedsCompilation: no
+Packaged: 2025-09-27 07:42:03 UTC; lechj
+Author: Lech Jaszowski [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0001-4748-9603>)
+Maintainer: Lech Jaszowski <lech.jaszowski@interia.pl>
+Repository: CRAN
+Date/Publication: 2025-09-27 08:00:02 UTC

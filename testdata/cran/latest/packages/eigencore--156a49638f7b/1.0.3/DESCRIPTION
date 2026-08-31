@@ -1,0 +1,35 @@
+Package: eigencore
+Title: Certified Partial Eigenvalue and Singular Value Computation
+Version: 1.0.3
+Authors@R: c(
+    person("Bradley", "Buchsbaum", role = c("aut", "cre", "cph"), email = "brad.buchsbaum@gmail.com")
+  )
+Author: Bradley Buchsbaum [aut, cre, cph]
+Maintainer: Bradley Buchsbaum <brad.buchsbaum@gmail.com>
+Description: Computes the top-k singular triplets or eigenpairs of large
+    sparse and structured matrices: the computation behind principal component
+    analysis on big sparse data, spectral embeddings, and low-rank
+    approximation. Every result carries a numerical certificate with
+    residuals, a backward-error bound, orthogonality loss, and a pass/fail
+    flag, and bounds that can only be estimated are reported as such rather
+    than passed. Centered, scaled, and composed operators are solved through
+    native 'C++' kernels without forming dense matrices. Drop-in replacements
+    for the 'RSpectra' interface are included.
+URL: https://bbuchsbaum.github.io/eigencore/,
+        https://github.com/bbuchsbaum/eigencore
+BugReports: https://github.com/bbuchsbaum/eigencore/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: Matrix, methods
+Suggests: bench, knitr, rmarkdown, RSpectra, irlba, rsvd, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+SystemRequirements: C++17
+Config/Needs/website: albersdown
+NeedsCompilation: yes
+Packaged: 2026-08-26 13:36:50 UTC; bbuchsbaum
+Repository: CRAN
+Date/Publication: 2026-08-26 21:10:18 UTC

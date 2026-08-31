@@ -1,0 +1,55 @@
+Package: ravepipeline
+Type: Package
+Title: Reproducible Pipeline Infrastructure for Neuroscience
+Version: 0.2.0
+Language: en-US
+Authors@R: c(
+    person("Zhengjia", "Wang", email = "dipterix.wang@gmail.com", role = c("aut", "cre", "cph")),
+    person("John", "Magnotti", email = "John.Magnotti@Pennmedicine.upenn.edu", role = c("ctb", "res")),
+    person("Xiang", "Zhang", email = "xiang.zhang@pennmedicine.upenn.edu", role = c("ctb", "res")),
+    person("Michael", "Beauchamp", email = "Michael.Beauchamp@Pennmedicine.upenn.edu", role = c("ctb", "res")),
+    person("Trustees of University of Pennsylvania", comment = "Copyright Holder", role = c("cph"))
+    )
+Description: Defines the underlying pipeline structure for reproducible 
+    neuroscience, adopted by 'RAVE' (reproducible analysis and visualization 
+    of intracranial electroencephalography); provides high-level class 
+    definition to build, compile, set, execute, and share analysis pipelines. 
+    Both R and 'Python' are supported, with 'Markdown' and 'shiny' dashboard 
+    templates for extending and building customized pipelines. See the full 
+    documentations at <https://rave.wiki>; to cite us, 
+    check out our paper by Magnotti, Wang, and Beauchamp (2020, 
+    <doi:10.1016/j.neuroimage.2020.117341>), or run 
+    citation("ravepipeline") for details.
+Copyright: Trustees of University of Pennsylvania owns the copyright of
+        the package unless otherwise stated. Zhengjia Wang owns the
+        copyright of all the low-level functions included in
+        'R/common.R', 'R/fastmap2', 'R/fastqueue2.R', 'R/filesys.R',
+        'R/fst.R', 'R/json.R', 'R/os_info.R', 'R/parallel.R',
+        'R/progress.R', 'R/simplelocker.R', 'R/yaml.R', and all the
+        template files under 'inst/rave-pipelines' and
+        'inst/rave-modules', these files are licensed under 'MIT'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://dipterix.org/ravepipeline/, https://rave.wiki,
+        https://github.com/dipterix/ravepipeline
+BugReports: https://github.com/dipterix/ravepipeline/issues
+Imports: grDevices, graphics, stats, tools, utils, base64enc, callr,
+        cli, digest, fastmap, future, fst (>= 0.9.8), glue, jsonlite,
+        knitr, promises, R6, remotes, rlang, targets, uuid, yaml,
+        logger
+Suggests: ellmer (>= 0.4.0), dipsaus, filearray, future.apply, globals,
+        ieegio, pkgsearch, rpymat, rmarkdown, rstudioapi, shidashi,
+        threeBrain, testthat (>= 3.0.0), visNetwork, later, shiny,
+        mirai
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-22 00:58:58 UTC; dipterix
+Author: Zhengjia Wang [aut, cre, cph],
+  John Magnotti [ctb, res],
+  Xiang Zhang [ctb, res],
+  Michael Beauchamp [ctb, res],
+  Trustees of University of Pennsylvania [cph] (Copyright Holder)
+Maintainer: Zhengjia Wang <dipterix.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-22 03:30:03 UTC

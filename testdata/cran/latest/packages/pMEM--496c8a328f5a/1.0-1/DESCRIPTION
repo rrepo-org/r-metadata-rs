@@ -1,0 +1,46 @@
+Package: pMEM
+Type: Package
+Title: Predictive Moran's Eigenvector Maps
+Version: 1.0-1
+Date: 2026-03-06
+Encoding: UTF-8
+Authors@R: c(
+    person(
+      given = "Guillaume",
+      family = "Guénard",
+      role = c("aut","cre"),
+      email = "guillaume.guenard@gmail.com",
+      comment = c(ORCID = "0000-0003-0761-3072")),
+    person(
+      given = "Pierre",
+      family = "Legendre",
+      role = "ctb",
+      email = "pierre.legendre@umontreal.ca",
+      comment = c(ORCID = "0000-0002-3838-3305")
+    )
+  )
+Description: Calculate Predictive Moran's Eigenvector Maps (pMEM) for
+  spatially-explicit prediction of environmental variables, as defined by
+  Guénard and Legendre (2024) <doi:10.1111/2041-210X.14413>. pMEM extends
+  classical MEM by enabling interpolation and prediction at unsampled locations
+  using spatial weighting functions parameterized by range (and optionally
+  shape). The package implements multiple pMEM types (e.g., exponential,
+  Gaussian, linear) and features a modular architecture that allows programmers
+  to define custom weighting functions. Designed for ecologists, geographers,
+  and spatial analysts working with spatially-structured data.
+Depends: R (>= 4.1.0), sf
+Suggests: glmnet, knitr, magrittr, rmarkdown, xfun
+Imports: Rcpp (>= 1.0.11)
+License: GPL-3
+LazyLoad: yes
+NeedsCompilation: yes
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Repository: CRAN
+RoxygenNote: 7.3.3
+Packaged: 2026-03-06 19:01:26 UTC; guenardg
+Author: Guillaume Guénard [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0761-3072>),
+  Pierre Legendre [ctb] (ORCID: <https://orcid.org/0000-0002-3838-3305>)
+Maintainer: Guillaume Guénard <guillaume.guenard@gmail.com>
+Date/Publication: 2026-03-08 23:00:02 UTC

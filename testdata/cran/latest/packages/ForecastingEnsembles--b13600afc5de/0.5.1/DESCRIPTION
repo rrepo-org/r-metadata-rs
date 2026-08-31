@@ -1,0 +1,27 @@
+Package: ForecastingEnsembles
+Type: Package
+Title: Time Series Forecasting Using 23 Individual Models
+Version: 0.5.1
+Authors@R: 
+    person("Russ", "Conte", , "russconte@mac.com", role = c("aut", "cre", "cph"))
+Description: Runs multiple individual time series models, and combines them into an ensembles of time series models. This is mainly used to predict the results of the monthly labor market report from the 
+    United States Bureau of Labor Statistics for virtually any part of the economy reported by the Bureau of Labor Statistics, but it can be easily modified to work with other types of time series data.
+    For example, the package was used to predict the winning men's and women's time for the 2024 London Marathon.
+License: MIT + file LICENSE
+Depends: distributional, doParallel, dplyr, fable, fabletools,
+        fable.prophet, feasts, fracdiff, ggplot2, gt, lubridate,
+        magrittr, parallel, readr, scales, stats, tibble, tidyr,
+        tsibble, urca, utils, R (>= 2.10)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/InfiniteCuriosity/ForecastingEnsembles
+BugReports: https://github.com/InfiniteCuriosity/ForecastingEnsembles/issues
+NeedsCompilation: no
+Packaged: 2025-10-12 22:32:23 UTC; russellconte
+Author: Russ Conte [aut, cre, cph]
+Maintainer: Russ Conte <russconte@mac.com>
+Repository: CRAN
+Date/Publication: 2025-10-12 23:10:02 UTC

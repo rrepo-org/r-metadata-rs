@@ -1,0 +1,35 @@
+Package: DemogAnr
+Title: Demographic Analysis
+Version: 0.2.0
+Authors@R: 
+    person("Edward", "Owusu Manu", email = "edward.manu@statsghana.gov.gh",
+           role = c("aut", "cre"))
+Description: Tool for demographic modeling and analysis, combining stochastic
+    simulation-based projections with classic demographic methods. Provides
+    utilities for disaggregating population data using Karup-King interpolation,
+    fitting Brass relational logit models, calculating fertility and mortality
+    metrics, building complete and abridged life tables with model-based
+    separation factors, estimating child mortality indirectly from children
+    ever born and surviving (Brass-Trussell method), decomposing and
+    standardizing rates, and performing hierarchical subnational population
+    projections. Relational life table estimation and interpolation
+    methods are described in Brass (1975) "Methods for Estimating Fertility and
+    Mortality from Limited and Defective Data", Preston et al. (2001,
+    ISBN:978-0631226161) "Demography: Measuring and Modeling Population
+    Processes", Siegel and Swanson (2004, ISBN:978-0126419559) "The Methods and
+    Materials of Demography", and Raftery et al. (2012) "Bayesian probabilistic
+    population projections for all countries" <doi:10.1073/pnas.1211452109>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: dplyr, ggplot2, stats, tidyr
+Suggests: testthat (>= 3.0.0)
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-25 00:23:28 UTC; manue
+Author: Edward Owusu Manu [aut, cre]
+Maintainer: Edward Owusu Manu <edward.manu@statsghana.gov.gh>
+Repository: CRAN
+Date/Publication: 2026-07-26 15:40:02 UTC

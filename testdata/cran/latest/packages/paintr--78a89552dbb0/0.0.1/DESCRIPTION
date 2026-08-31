@@ -1,0 +1,36 @@
+Package: paintr
+Title: Create Graphics of 'R' Data Structures
+Version: 0.0.1
+Authors@R: c(
+             person("James Joseph", "Balamuta",
+                    email = "james.balamuta@gmail.com",
+                    role = c("aut", "cre", "cph"),
+                    comment = c(ORCID = "0000-0003-2826-8458")
+                   )
+            )
+Description: Draws teaching diagrams of the contents of common 'R' data
+    structures (vectors, matrices, data frames, lists, and arrays) so their
+    shape and values can be read at a glance. Two backends render the same
+    picture, with base 'R' graphics through the paint_*() functions and
+    'ggplot2' through the gpaint_*() functions. The label under each cell is
+    the expression you would type to reach that cell, so every diagram doubles
+    as a lesson in how to subset and index the object it draws.
+URL: https://github.com/coatless-rpkg/paintr,
+        https://r-pkg.thecoatlessprofessor.com/paintr/
+BugReports: https://github.com/coatless-rpkg/paintr/issues
+Depends: R (>= 4.2.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: graphics, grDevices, grid
+Suggests: downlit, evaluate, ggplot2, knitr, quarto, svglite, testthat
+        (>= 3.0.0), withr
+Config/testthat/edition: 3
+VignetteBuilder: quarto
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-28 17:50:25 UTC; ronin
+Author: James Joseph Balamuta [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2826-8458>)
+Maintainer: James Joseph Balamuta <james.balamuta@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-06 13:10:14 UTC

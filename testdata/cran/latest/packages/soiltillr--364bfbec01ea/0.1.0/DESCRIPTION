@@ -1,0 +1,40 @@
+Package: soiltillr
+Type: Package
+Title: Analyse Soil Tillage Depth and Erosion Over Time
+Version: 0.1.0
+Authors@R: 
+    person(
+        given = "Sadikul",
+        family = "Islam",
+        email = "sadikul.islamiasri@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-2924-7122")
+    )
+Description: Provides tools to record, validate, and analyse soil tillage
+    depth and erosion across years and field treatments. Includes functions
+    for year-wise tillage operation summaries, erosion depth tracking,
+    compaction detection, soil loss estimation, and visualisation of
+    temporal changes in tillage and erosion profiles. Methods follow
+    Lal (2001) <doi:10.1201/9780203739280> and
+    Renard et al. (1997) "Predicting Soil Erosion by Water: A Guide to
+    Conservation Planning with the Revised Universal Soil Loss Equation
+    (RUSLE)"
+    <https://ntrl.ntis.gov/NTRL/dashboard/searchResults/titleDetail/PB97153704.xhtml>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyDataCompression: bzip2
+Depends: R (>= 3.5.0)
+Imports: dplyr (>= 1.1.0), ggplot2 (>= 3.4.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-19 08:44:10 UTC; acer
+Author: Sadikul Islam [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2924-7122>)
+Maintainer: Sadikul Islam <sadikul.islamiasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-23 17:30:02 UTC

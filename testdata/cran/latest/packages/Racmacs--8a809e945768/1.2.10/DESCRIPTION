@@ -1,0 +1,42 @@
+Package: Racmacs
+Type: Package
+Title: Antigenic Cartography Macros
+Version: 1.2.10
+Date: 2026-07-07
+Authors@R: 
+  c(person(given = "Sam",
+           family = "Wilks",
+           role = c("aut", "cre"),
+           email = "sam.wilks@unimelb.edu.au",
+           comment = "University of Melbourne, Melbourne, Australia"))
+Description: A toolkit for making antigenic maps from immunological assay data,
+    in order to quantify and visualize antigenic differences between different
+    pathogen strains as described in
+    Smith et al. (2004) <doi:10.1126/science.1097211> and used in the World
+    Health Organization influenza vaccine strain selection process. Additional
+    functions allow for the diagnostic evaluation of antigenic maps and an
+    interactive viewer is provided to explore antigenic relationships amongst
+    several strains and incorporate the visualization of associated genetic
+    information.
+Depends: R (>= 4.0)
+Imports: Rcpp, jsonlite, ks, brotli, shiny, shinyFiles, shinyjs,
+        htmlwidgets, ggplot2 (>= 3.0.0), htmltools, rmarchingcubes,
+        shape, MASS, magrittr, igraph, dplyr, vctrs, rlang (>= 1.0.0)
+Suggests: testthat, r3js, knitr, rmarkdown, rstudioapi, plotly,
+        geometry, readxl, stringr, tibble, tidyr, base64enc, lifecycle,
+        MCMCpack, spelling
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress, RcppEnsmallen, rapidjsonr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+URL: https://acorg.github.io/Racmacs/,
+        https://github.com/acorg/Racmacs/
+BugReports: https://github.com/acorg/Racmacs/issues
+License: AGPL-3
+Language: en-GB
+NeedsCompilation: yes
+Packaged: 2026-07-08 04:51:12 UTC; melb
+Author: Sam Wilks [aut, cre] (University of Melbourne, Melbourne, Australia)
+Maintainer: Sam Wilks <sam.wilks@unimelb.edu.au>
+Repository: CRAN
+Date/Publication: 2026-07-08 09:00:14 UTC

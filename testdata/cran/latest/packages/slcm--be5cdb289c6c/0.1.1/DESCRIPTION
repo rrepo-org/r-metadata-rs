@@ -1,0 +1,37 @@
+Package: slcm
+Title: Sparse Latent Class Model for Cognitive Diagnosis
+Version: 0.1.1
+Authors@R: c(
+      person("James Joseph", "Balamuta",
+             email = "balamut2@illinois.edu", 
+             role = c("aut", "cre", "cph"), 
+             comment = c(ORCID = "0000-0003-2826-8458")
+      ),
+    person("Steven Andrew", "Culpepper",
+           email = "sculpepp@illinois.edu", 
+           role = c("aut", "cph"), 
+           comment = c(ORCID = "0000-0003-4226-6176")
+           )
+    )
+Description: Perform a Bayesian estimation of the exploratory 
+    Sparse Latent Class Model for Binary Data 
+    described by Chen, Y., Culpepper, S. A., and Liang, F. (2020) 
+    <doi:10.1007/s11336-019-09693-2>.
+License: GPL (>= 2)
+URL: https://tmsalab.github.io/slcm/, https://github.com/tmsalab/slcm
+BugReports: https://github.com/tmsalab/slcm/issues
+Depends: R (>= 4.3.0)
+Imports: Rcpp (>= 1.1.0), edmdata
+LinkingTo: Rcpp, RcppArmadillo (>= 15.0.2-2)
+Suggests: altdoc
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-09-26 16:58:03 UTC; ronin
+Author: James Joseph Balamuta [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2826-8458>),
+  Steven Andrew Culpepper [aut, cph] (ORCID:
+    <https://orcid.org/0000-0003-4226-6176>)
+Maintainer: James Joseph Balamuta <balamut2@illinois.edu>
+Repository: CRAN
+Date/Publication: 2025-09-28 12:20:02 UTC

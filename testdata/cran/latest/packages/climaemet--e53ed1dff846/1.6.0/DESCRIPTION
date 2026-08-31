@@ -1,0 +1,59 @@
+Type: Package
+Package: climaemet
+Title: Tools for AEMET Climate Data
+Version: 1.6.0
+Authors@R: c(
+    person("Manuel", "Pizarro", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0002-6981-0154")),
+    person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8457-4658")),
+    person("Gema", "Fernández-Avilés", role = "aut",
+           comment = c(ORCID = "0000-0001-5934-1916")),
+    person("AEMET", role = "cph",
+           comment = c(ROR = "04kxf1r09"))
+  )
+Description: Download meteorological and climate data from the Spanish
+    Meteorological Agency (AEMET) directly in R using the AEMET API.
+    Create scientific visualizations, including climate charts, climate
+    time series trend analyses, temperature and precipitation anomaly
+    maps, warming stripes and climatograms.
+License: GPL-3
+URL: https://ropenspain.github.io/climaemet/,
+        https://github.com/rOpenSpain/climaemet
+BugReports: https://github.com/rOpenSpain/climaemet/issues
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.0.0), dplyr (>= 1.0.0), ggplot2 (>= 3.5.0), httr2
+        (>= 1.0.0), jsonlite (>= 1.7.0), rappdirs (>= 0.3.3), readr (>=
+        1.4.0), rlang (>= 0.4.6), tibble (>= 3.0.3), tidyr (>= 1.1.0),
+        tools, xml2
+Suggests: climatol (>= 3.1.2), gganimate (>= 1.0.5), jpeg (>= 0.1.8),
+        knitr, lifecycle, lubridate, mapSpain, quarto, scales, sf (>=
+        1.0.0), terra (>= 1.8-10), testthat (>= 3.2.0), withr (>=
+        3.0.0)
+VignetteBuilder: quarto
+Config/Needs/website: cpp11, crosstalk, devtools, geoR, gifski, gstat,
+        leaflet, reactable, scales, tidyterra, tidyverse, usethis,
+        styler
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Copyright: © AEMET. See file COPYRIGHTS
+Encoding: UTF-8
+LazyData: true
+X-schema.org-applicationCategory: Meteorology
+X-schema.org-isPartOf: https://ropenspain.es/
+X-schema.org-keywords: aemet, climate, cran, data, forecast-api, r,
+        r-package, ropenspain, rstats, science, spain, weather-api
+NeedsCompilation: no
+Packaged: 2026-06-03 13:43:26 UTC; diego
+Author: Manuel Pizarro [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-6981-0154>),
+  Diego Hernangómez [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8457-4658>),
+  Gema Fernández-Avilés [aut] (ORCID:
+    <https://orcid.org/0000-0001-5934-1916>),
+  AEMET [cph] (ROR: <https://ror.org/04kxf1r09>)
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-03 14:20:07 UTC

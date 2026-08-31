@@ -1,0 +1,38 @@
+Package: lssdoc
+Title: Render Multilingual Questionnaires from 'LimeSurvey' '.lss'
+        Files
+Version: 0.1.1
+Authors@R: 
+    person("Amal", "Tawfik", , "amal.tawfik@hesav.ch", role = c("aut", "cre", "cph"), comment = c(ORCID = "0009-0006-2422-1555", ROR = "04j47fz63"))
+Description: Render 'LimeSurvey' '.lss' survey exports as multilingual
+    questionnaire documents in Word ('.docx') or PDF, displaying up to
+    four languages side by side with localized chrome in English, French,
+    German, Spanish and Italian. Includes a rule-based automated audit
+    that flags missing translations, forward filter references, duplicate
+    codes, array-scale inconsistencies and orphan structural references.
+    Designed for anyone working with a 'LimeSurvey' survey: researchers,
+    methodologists, ethics committees, translators and reviewers.
+    Processing is fully
+    local: the source file is the only input and no questionnaire content
+    is uploaded to a third-party service.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1)
+Imports: cli, rlang, xml2
+Suggests: flextable, knitr, officer, rmarkdown, testthat (>= 3.0.0),
+        zip
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://amaltawfik.github.io/lssdoc/,
+        https://github.com/amaltawfik/lssdoc
+BugReports: https://github.com/amaltawfik/lssdoc/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-18 20:12:16 UTC; at
+Author: Amal Tawfik [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0006-2422-1555>, ROR:
+    <https://ror.org/04j47fz63>)
+Maintainer: Amal Tawfik <amal.tawfik@hesav.ch>
+Repository: CRAN
+Date/Publication: 2026-06-18 22:10:02 UTC

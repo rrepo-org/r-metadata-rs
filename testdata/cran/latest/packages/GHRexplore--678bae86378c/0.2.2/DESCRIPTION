@@ -1,0 +1,42 @@
+Package: GHRexplore
+Title: Exploratory Analysis of Temporal and Spatio-Temporal Health Data
+Version: 0.2.2
+Authors@R: c(
+    person("Carles", "Milà", , "carles.milagarcia@bsc.es", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0470-0760")),
+    person("Giovenale", "Moirano", role = "aut",
+           comment = c(ORCID = "0000-0001-8748-3321")),
+    person("Anna B.", "Kawiecki", role = "aut",
+           comment = c(ORCID = "0000-0002-0499-2612")),
+    person("Rachel", "Lowe", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0003-3939-7343"))
+  )
+Description: A collection of commonly used visualizations of temporal and
+    spatio-temporal health data including case counts, incidence rates, and
+    covariates. The available plot types include time series, heatmaps,
+    seasonality plots, maps and more. The package supports standard data
+    transformations such as temporal and spatial aggregations, while
+    offering extensive customization options for the resulting figures.
+License: GPL (>= 2)
+URL: https://gitlab.earth.bsc.es/ghr/ghrexplore,
+        https://bsc-es.github.io/GHRtools/docs/GHRexplore/GHRexplore
+BugReports: https://gitlab.earth.bsc.es/ghr/ghrexplore/-/issues
+Depends: R (>= 4.1.0)
+Imports: colorspace, cowplot, dplyr, ggplot2 (>= 3.5.0), grDevices,
+        RColorBrewer, rlang, stats, tidyr, lubridate
+Suggests: knitr, rmarkdown, sf, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-12 08:17:35 UTC; cmilagar
+Author: Carles Milà [aut, cre] (ORCID: <https://orcid.org/0000-0003-0470-0760>),
+  Giovenale Moirano [aut] (ORCID:
+    <https://orcid.org/0000-0001-8748-3321>),
+  Anna B. Kawiecki [aut] (ORCID: <https://orcid.org/0000-0002-0499-2612>),
+  Rachel Lowe [aut, cph] (ORCID: <https://orcid.org/0000-0003-3939-7343>)
+Maintainer: Carles Milà <carles.milagarcia@bsc.es>
+Repository: CRAN
+Date/Publication: 2026-02-12 08:50:07 UTC

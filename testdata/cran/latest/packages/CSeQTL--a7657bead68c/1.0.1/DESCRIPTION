@@ -1,0 +1,26 @@
+Package: CSeQTL
+Type: Package
+Title: Cell Type-Specific Expression Quantitative Trait Loci Mapping
+Version: 1.0.1
+Date: 2026-04-20
+Authors@R: 
+	person("Paul","Little",
+		email = "pllittle321@gmail.com",
+		role = c("aut","cre"))
+Description: Perform bulk and cell type-specific expression quantitative trait loci mapping with our novel method (Little et al. (2023) <doi:10.1038/s41467-023-38795-w>).
+Encoding: UTF-8
+Imports: Rcpp, smarter, ggplot2, multcomp, emdbook, MatrixEQTL,
+        data.table, HelpersMG, R.utils, methods
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.3
+License: GPL (>= 3)
+URL: https://github.com/pllittle/cseqtl
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+Repository: CRAN
+NeedsCompilation: yes
+Packaged: 2026-04-23 02:29:35 UTC; Admin
+Author: Paul Little [aut, cre]
+Maintainer: Paul Little <pllittle321@gmail.com>
+Depends: R (>= 3.5.0)
+Date/Publication: 2026-04-24 06:50:09 UTC

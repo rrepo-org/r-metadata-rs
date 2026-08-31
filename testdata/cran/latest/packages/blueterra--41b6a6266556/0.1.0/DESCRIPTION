@@ -1,0 +1,38 @@
+Package: blueterra
+Title: Process-Oriented Geomorphometry for Submerged Terrain
+Version: 0.1.0
+Authors@R: c(
+    person("Elvin", "Cordero",
+           email = "elvin.cordero@seamountgeo.com",
+           role = c("aut", "cre")),
+    person("SeaMount Geospatial Labs", role = "cph")
+  )
+Description: Derives, organizes, summarizes, and visualizes terrain metrics
+    from bathymetric and elevation rasters for submerged-landscape
+    geomorphometry. Tools support terra-based raster preparation, slope and
+    aspect decomposition, terrain position, rugosity, curvature, depth-band
+    summaries, transect extraction, isobath-corridor analysis, and model-ready
+    summaries for seafloor classification, habitat mapping, shelf-margin
+    analysis, and spatial modeling. Methodological context for geomorphometric
+    terrain analysis is provided by Lindsay (2016)
+    <doi:10.1016/j.cageo.2016.07.003>.
+License: MIT + file LICENSE
+URL: https://el-cordero.github.io/blueterra/,
+        https://github.com/el-cordero/blueterra
+BugReports: https://github.com/el-cordero/blueterra/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: cli, dplyr, rlang, stats, terra, tibble, utils
+Suggests: exactextractr, ggplot2, knitr, lintr, pkgdown, rmarkdown, sf,
+        testthat (>= 3.0.0), units, xml2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-10 14:52:07 UTC; ec
+Author: Elvin Cordero [aut, cre],
+  SeaMount Geospatial Labs [cph]
+Maintainer: Elvin Cordero <elvin.cordero@seamountgeo.com>
+Repository: CRAN
+Date/Publication: 2026-07-19 13:00:07 UTC

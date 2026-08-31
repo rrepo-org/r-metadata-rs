@@ -1,0 +1,28 @@
+Package: AugBalWeight
+Title: Augmented Balancing Weights as Linear Regression
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut")
+  )
+Description: Implements augmented balancing weights for causal inference and linear functional estimation based on David Bruns-Smith, Oliver Dukes, Avi Feller, and Elizabeth L. Ogburn (2026) <doi:10.1093/jrsssb/qkaf019>. Establishes numerical equivalence between augmented balancing weight estimators and single linear models with weighted regression coefficients. Provides flexible routines for double ridge (l2 balancing), double lasso (l-infinity balancing), and generalized augmented linear outcome models. Features cross-validation procedures for tuning outcome penalty parameters, covariate balance, and Riesz loss. Supports robust influence-function-based standard errors, bootstrap confidence intervals, balance diagnostic tools, and counterfactual prediction for treatment effects such as average treatment effect (ATE) and average treatment effect on the treated (ATT), expanding upon the doubly robust estimation framework established by Robins, Rotnitzky, and Zhao (1994) <doi:10.1080/01621459.1994.10476818> and Chernozhukov, Chetverikov, Demirer, Duflo, Hansen, Newey, and Robins (2018) <doi:10.1111/ectj.12097>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-07 23:02:57 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 12:41:17 UTC

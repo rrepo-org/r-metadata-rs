@@ -1,0 +1,40 @@
+Package: mortar
+Type: Package
+Title: Standardize Data Science Workflows
+Version: 0.4.0
+Authors@R: 
+    c(
+    person("Joseph","Zemmels",email="jzemmels@usgs.gov",role = c("aut"),comment = c(ORCID = "0009-0008-1463-6313")),
+    person("Anthony","Martinez",email="ajmartinez@usgs.gov",role = c("aut","cre"),comment = c(ORCID = "0000-0002-4295-0261")),
+    person("Jesse","Ross",role = c("ctb"),comment = c(ORCID = "0000-0002-5422-8284"))
+    )
+Maintainer: Anthony Martinez <ajmartinez@usgs.gov>
+Description: Helper functions to standardizes common workflows in the USGS Data
+    Science Community of Practice to produce more robust, reproducible
+    pipelines. It contains helper functions to standardize (1) the organization
+    of project repositories and (2) the creation ofpipelines from the 'targets'
+    R Package (Landau et al. (2026) <doi:10.5281/zenodo.18555866>), using the DS
+    CoP best practices. We draw upon community developed best practices as well
+    as certain USGS-specific requirements. See 
+    Shrycock et al. (2023) <doi:10.3133/tm7B2> for examples of these USGS
+    requirements.
+License: CC0
+BugReports: https://github.com/DOI-USGS/mortar/issues
+URL: https://doi-usgs.github.io/mortar/,
+        https://github.com/DOI-USGS/mortar,
+        https://code.usgs.gov/water/computational-tools/mortar
+Encoding: UTF-8
+Imports: cli, gert, glue, purrr, R.utils, rlang, usethis
+RoxygenNote: 7.3.2
+Suggests: knitr, renv, rmarkdown, stringr, tarchetypes, targets,
+        testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-24 14:17:59 UTC; ajmartinez
+Author: Joseph Zemmels [aut] (ORCID: <https://orcid.org/0009-0008-1463-6313>),
+  Anthony Martinez [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4295-0261>),
+  Jesse Ross [ctb] (ORCID: <https://orcid.org/0000-0002-5422-8284>)
+Repository: CRAN
+Date/Publication: 2026-04-28 19:00:15 UTC

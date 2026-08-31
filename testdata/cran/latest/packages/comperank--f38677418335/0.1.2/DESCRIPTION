@@ -1,0 +1,33 @@
+Package: comperank
+Title: Ranking Methods for Competition Results
+Version: 0.1.2
+Authors@R: 
+    person(given = "Evgeni",
+           family = "Chasnovski",
+           role = c("aut", "cre"),
+           email = "evgeni.chasnovski@gmail.com",
+           comment = c(ORCID = "0000-0002-1617-4019"))
+Description: Compute ranking and rating based on competition
+    results. Methods of different nature are implemented: with fixed
+    Head-to-Head structure, with variable Head-to-Head structure and with
+    iterative nature. All algorithms are taken from the book 'Who’s #1?:
+    The science of rating and ranking' by Amy N. Langville and Carl D.
+    Meyer (2012, ISBN:978-0-691-15422-0).
+License: MIT + file LICENSE
+URL: https://github.com/echasnovski/comperank
+BugReports: https://github.com/echasnovski/comperank/issues
+Depends: comperes (>= 0.1.0), R (>= 3.4.0)
+Imports: dplyr (>= 0.6.0), Rcpp, rlang (>= 0.2.0), tibble
+Suggests: covr, knitr, rmarkdown, testthat
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-21 17:22:03 UTC; evgeni
+Author: Evgeni Chasnovski [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1617-4019>)
+Maintainer: Evgeni Chasnovski <evgeni.chasnovski@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 22:30:02 UTC

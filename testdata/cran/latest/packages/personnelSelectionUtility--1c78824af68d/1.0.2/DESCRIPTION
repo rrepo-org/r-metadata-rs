@@ -1,0 +1,41 @@
+Package: personnelSelectionUtility
+Title: Utility Analysis Methods for Personnel Selection
+Version: 1.0.2
+Authors@R: 
+    person(given = "René", family = "Gempp", email = "rene.gempp@udp.cl",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0427-6894"))
+Description: Implements classical and contemporary utility-analysis methods 
+    for personnel selection, organised by criterion scale (classification or
+    continuous/monetary) and selection structure (compensatory or 
+    multiple-hurdle). Methods include Taylor-Russell classification 
+    (Taylor and Russell, 1939, <doi:10.1037/h0057079>), 
+    Brogden-Cronbach-Gleser monetary utility (Brogden, 1949, 
+    <doi:10.1111/j.1744-6570.1949.tb01397.x>), Schmidt-Hunter-Pearlman 
+    intervention utility (Schmidt and others, 1979, 
+    <doi:10.1037/0021-9010.64.6.609>), Sturman comprehensive cascade 
+    (Sturman, 2001, <doi:10.1108/eb029072>), Thomas-Owen-Gunst 
+    multivariate classification (Thomas and others, 1977, 
+    <doi:10.3102/10769986002001055>), compensatory versus multiple-hurdle 
+    simulation (Ock and Oswald, 2018, <doi:10.1027/1866-5888/a000205>), 
+    AUC-to-effect-size conversions (Salgado, 2018, 
+    <doi:10.5093/ejpalc2018a5>), Pareto frontiers for validity-diversity 
+    trade-offs, and Monte Carlo uncertainty propagation.
+License: MIT + file LICENSE
+URL: https://github.com/rgempp/personnelSelectionUtility,
+        https://gempp.cl/personnelSelectionUtility/
+BugReports: https://github.com/rgempp/personnelSelectionUtility/issues
+Depends: R (>= 4.1.0)
+Imports: mvtnorm, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-16 00:24:02 UTC; rene.gempp
+Author: René Gempp [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0427-6894>)
+Maintainer: René Gempp <rene.gempp@udp.cl>
+Repository: CRAN
+Date/Publication: 2026-05-20 08:50:02 UTC

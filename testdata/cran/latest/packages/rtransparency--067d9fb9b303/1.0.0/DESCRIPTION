@@ -1,0 +1,38 @@
+Package: rtransparency
+Type: Package
+Title: Identifies Indicators of Transparency
+Version: 1.0.0
+Authors@R: c(
+    person("Stylianos", "Serghiou", role = "aut",
+           email = "stelios.serghiou@gmail.com"),
+    person("Ahmad", "Sofi-Mahmudi", role = c("cre", "aut"),
+           email = "a.sofimahmudi@gmail.com",
+           comment = c(ORCID = "0000-0001-6829-0823")))
+Description: Use this package to identify indicators of transparency within the
+    published literature. It can identify and extract text related to
+    indicators of transparency from specifically formatted TXT files and from
+    PMC XML files (i.e. XML files downloaded from the PubMed Central). It builds
+    on the original 'rtransparent' tool of Serghiou et al. (2021)
+    <doi:10.1371/journal.pbio.3001107>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/choxos/rtransparency,
+        https://choxos.github.io/rtransparency/
+BugReports: https://github.com/choxos/rtransparency/issues
+Depends: R (>= 3.5.0)
+Imports: dplyr, magrittr, purrr, readr, rlang, stringr, tibble,
+        tidyselect, utf8, xml2
+Suggests: furrr, future, ggplot2, knitr, readxl, rmarkdown, testthat
+        (>= 3.0.0)
+Config/Needs/benchmark: readxl
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-25 11:35:18 UTC; choxos
+Author: Stylianos Serghiou [aut],
+  Ahmad Sofi-Mahmudi [cre, aut] (ORCID:
+    <https://orcid.org/0000-0001-6829-0823>)
+Maintainer: Ahmad Sofi-Mahmudi <a.sofimahmudi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-01 09:00:02 UTC

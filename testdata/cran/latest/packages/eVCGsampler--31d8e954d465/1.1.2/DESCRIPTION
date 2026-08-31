@@ -1,0 +1,29 @@
+Package: eVCGsampler
+Type: Package
+Title: VCG Sampling using Energy-Based Covariate Balancing
+Version: 1.1.2
+Authors@R: c(
+    person(
+      "Andreas", "Schulz",
+      email = "andreas.schulz2@sanofi.com",
+      role = c("aut", "cre"),
+      comment = "Created in 2025"
+    ),
+    person("Sanofi", role = c("cph", "fnd"))
+  )
+Description: Provides a principled framework for sampling Virtual Control Group (VCG) using energy distance-based covariate balancing. The package offers visualization tools to assess covariate balance and includes a permutation test to evaluate the statistical significance of observed deviations.
+License: MIT + file LICENSE
+URL: https://github.com/Sanofi-Public/eVCGsampler
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: ggplot2
+Imports: ggforce, osqp, patchwork, shiny
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-22 11:46:21 UTC; I0559285
+Author: Andreas Schulz [aut, cre] (Created in 2025),
+  Sanofi [cph, fnd]
+Maintainer: Andreas Schulz <andreas.schulz2@sanofi.com>
+Repository: CRAN
+Date/Publication: 2026-07-22 12:20:02 UTC

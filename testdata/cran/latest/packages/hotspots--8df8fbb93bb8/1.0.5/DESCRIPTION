@@ -1,0 +1,19 @@
+Package: hotspots
+Type: Package
+Title: Hot Spots
+Version: 1.0.5
+Date: 2025-03-25
+Authors@R: person(given = "Anthony",
+                  family = "Darrouzet-Nardi",
+                  role = c("aut", "cre"),
+                  email = "anthony@darrouzet-nardi.net")
+Description: The hotspots package is designed to look within a set of measured values of a variable and identify values that are disproportionately high based on both the deviance of any given value from a statistical distribution and its similarity to other values. Because this relative magnitude of each value is taken into account, a value that is a statistical outlier may not always be a hot spot if other values are similarly large.
+Depends: lattice, ineq
+License: GPL-2
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2025-03-25 21:05:58 UTC; ajdarrouzetnardi
+Author: Anthony Darrouzet-Nardi [aut, cre]
+Maintainer: Anthony Darrouzet-Nardi <anthony@darrouzet-nardi.net>
+Repository: CRAN
+Date/Publication: 2025-03-25 21:20:08 UTC

@@ -1,0 +1,33 @@
+Package: CbKST
+Type: Package
+Title: Competence-Based Knowledge Space Theory
+Date: 2026-07-16
+Version: 0.1-1
+Authors@R: c(
+    person(
+      "Cord", "Hockemeyer",
+      email = "cord.hockemeyer@uni-graz.at",
+      role = c("aut", "cre")
+    )
+  )
+Description: Competence-based knowledge space theory (CbKST) is
+  an extension of knowledge space theory (KST) modeling the latent 
+  skills and competencies underlying the observable response 
+  behaviour as described by Heller & Stefanutti (2024) 
+  <doi:10.1142/9789811280481_0001>. The package focuses on the mappings
+  between competence and performance level (skill (multi) map, 
+  problem function etc.).
+License: GPL-3
+Depends: R (>= 4.5.0)
+Imports: readODS, openxlsx, tools, kstMatrix (>= 2.3-4)
+Suggests: litedown
+Repository: CRAN
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: litedown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-16 05:27:01 UTC; cord
+Author: Cord Hockemeyer [aut, cre]
+Maintainer: Cord Hockemeyer <cord.hockemeyer@uni-graz.at>
+Date/Publication: 2026-07-16 06:50:02 UTC

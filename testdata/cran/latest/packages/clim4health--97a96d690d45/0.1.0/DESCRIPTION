@@ -1,0 +1,58 @@
+Package: clim4health
+Title: Post-Processing of Climate Data for Health Applications
+Version: 0.1.0
+Authors@R: c(
+    person("Emily", "Ball", , "emily.ball@bsc.es", role = c("aut"),
+           comment = c(ORCID = "0000-0002-3002-4068")),
+    person("Carles", "Milà", , "carles.milagarcia@bsc.es", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0470-0760")),
+    person("Alba", "Llabrés", role = c("aut"),
+           comment = c(ORCID = "0000-0003-2144-675X")),
+    person("Raul", "Capellan", role = "aut"),
+    person("Rebeca", "Nunes", role = "aut",
+           comment = c(ORCID = "0009-0009-8738-0985")),
+    person("Daniela", "Lührsen", role = "aut",
+           comment = c(ORCID = "0009-0002-6340-5964")),
+    person("Anna B.", "Kawiecki", role = "aut",
+           comment = c(ORCID = "0000-0002-0499-2612")),
+    person("Rachel", "Lowe", role = c("aut"),
+           comment = c(ORCID = "0000-0003-3939-7343"))
+    )
+Description: Obtain, transform and export climate data including reanalyses,
+    (seasonal) forecasts and hindcasts, and weather stations for their use
+    in epidemiological analyses. It is organised in three sequential blocks,
+    input (download and load data), transform (downscaling, verification,
+    spatiotemporal aggregation and threshold-based indicators) and output
+    (visualising and exporting data). Downscaling methods include those
+    described in Duzenli et al. (2026) <doi:10.1038/s41598-026-45067-2>
+    and verification methods are based on those in Manubens et al. (2018) 
+    <doi:10.1016/j.envsoft.2018.01.018>.
+License: AGPL (>= 3)
+URL: https://gitlab.earth.bsc.es/ghr/clim4health,
+        https://bsc-es.github.io/GHRtools/docs/clim4health/clim4health
+BugReports: https://gitlab.earth.bsc.es/ghr/clim4health/-/issues
+Encoding: UTF-8
+Imports: CSTools, ecmwfr, ggplot2, GHRexplore, lubridate, s2dv, sf,
+        stars, terra, data.table, units, CSDownscale, ncdf4, ggpattern,
+        startR, rlang
+Suggests: testthat (>= 3.0.0), spData, cubelyr, knitr, withr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+SystemRequirements: CDO (Climate Data Operators,
+        https://code.mpimet.mpg.de/projects/cdo), NCO (NetCDF
+        Operators, https://nco.sourceforge.net/)
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-25 12:27:01 UTC; cmilagar
+Author: Emily Ball [aut] (ORCID: <https://orcid.org/0000-0002-3002-4068>),
+  Carles Milà [aut, cre] (ORCID: <https://orcid.org/0000-0003-0470-0760>),
+  Alba Llabrés [aut] (ORCID: <https://orcid.org/0000-0003-2144-675X>),
+  Raul Capellan [aut],
+  Rebeca Nunes [aut] (ORCID: <https://orcid.org/0009-0009-8738-0985>),
+  Daniela Lührsen [aut] (ORCID: <https://orcid.org/0009-0002-6340-5964>),
+  Anna B. Kawiecki [aut] (ORCID: <https://orcid.org/0000-0002-0499-2612>),
+  Rachel Lowe [aut] (ORCID: <https://orcid.org/0000-0003-3939-7343>)
+Maintainer: Carles Milà <carles.milagarcia@bsc.es>
+Repository: CRAN
+Date/Publication: 2026-06-30 20:00:11 UTC

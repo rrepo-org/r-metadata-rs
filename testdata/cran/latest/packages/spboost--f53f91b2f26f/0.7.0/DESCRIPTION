@@ -1,0 +1,36 @@
+Package: spboost
+Type: Package
+Title: Gradient Boosting for Nonlinear Spatial Autoregressive Models
+Version: 0.7.0
+Authors@R: person(given = "Ghislain",
+                  family = "Geniaux",
+                  role = c("aut", "cre"),
+                  email = "ghislain.geniaux@inrae.fr")
+Description: Flexible nonlinear extension of spatial autoregressive (SAR),
+    spatial error (SEM), and spatial autoregressive with autoregressive
+    disturbances (SARAR) models with multiple regression engines
+    (generalized additive models ('mgcv'), gradient boosting ('mboost'),
+    multivariate adaptive regression splines ('earth'), and 'xgboost')
+    and two families of spatial-parameter estimators: maximum likelihood
+    and the determinant-free Closed-Form Estimator of Smirnov (2020)
+    <doi:10.1111/gean.12268>. See Geniaux G. (2026). "Flexible nonlinear
+    spatial autoregressive models: a gradient boosting approach with
+    closed-form estimation." Presented at Spatial Econometrics World
+    Congress (SEA/SEW 2026, Paris), unpublished.
+License: GPL (>= 2)
+Depends: Matrix, mboost, mgcv, methods, mgwrsar
+Imports: Rcpp, sf, MASS, data.table, xgboost, caret, doParallel,
+        foreach, nabor, earth
+Suggests: blockCV, knitr, rmarkdown, RSpectra, spatialreg, spdep,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LinkingTo: RcppEigen, Rcpp
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Encoding: UTF-8
+Packaged: 2026-06-02 13:54:02 UTC; geniaux
+Author: Ghislain Geniaux [aut, cre]
+Maintainer: Ghislain Geniaux <ghislain.geniaux@inrae.fr>
+Repository: CRAN
+Date/Publication: 2026-06-08 18:00:02 UTC

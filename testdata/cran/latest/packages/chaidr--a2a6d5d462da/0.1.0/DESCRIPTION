@@ -1,0 +1,36 @@
+Package: chaidr
+Title: CHAID and Exhaustive CHAID Decision Trees
+Version: 0.1.0
+Authors@R: 
+    person("Osamu", "Morimoto", email = "galactic.supermarket@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: An implementation in base 'R' of the CHAID (Chi-squared
+    Automatic Interaction Detection) decision tree algorithm of Kass (1980)
+    <doi:10.2307/2986296> and the Exhaustive CHAID variant of Biggs, de Ville,
+    and Suen (1991) <doi:10.1080/02664769100000005>, as specified in the 'IBM
+    SPSS' Statistics Algorithms documentation. Supports nominal, ordinal (with
+    floating missing category), and continuous predictors, and nominal,
+    ordinal, and continuous response variables using Pearson chi-squared,
+    Goodman row-effects, and one-way ANOVA F tests respectively. Includes
+    prediction, rule extraction, gains and lift analysis, validation on
+    holdout data, and visualization via base graphics, 'Graphviz' DOT,
+    'plotly', and conversion to 'partykit' objects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 4.5)
+Imports: graphics, grDevices, stats, utils
+Suggests: DiagrammeR, ggparty, ggplot2, htmlwidgets, knitr, partykit,
+        plotly, rmarkdown, rpart, spelling, testthat (>= 3.2.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+URL: https://github.com/morimotoosamu/chaidr,
+        https://morimotoosamu.github.io/chaidr/
+BugReports: https://github.com/morimotoosamu/chaidr/issues
+NeedsCompilation: no
+Packaged: 2026-08-03 02:17:22 UTC; morimoto.osamu
+Author: Osamu Morimoto [aut, cre, cph]
+Maintainer: Osamu Morimoto <galactic.supermarket@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-08 12:30:12 UTC

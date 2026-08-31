@@ -1,0 +1,30 @@
+Package: saeHB.TF.beta
+Title: SAE using HB Twofold Subarea Model under Beta Distribution
+Version: 0.2.0
+Authors@R: c( person("Nasya Zahira", "Putri", email = "nasyazp28@gmail.com",role = c("aut", "cre")), person("Cucu", "Sumarni", email = "cucu@stis.ac.id",role = c("aut")), person("Rizal Fauziarochman", "Yudasena", email = "rfauziarochmanyudasena@gmail.com",role = c("aut")))
+Maintainer: Nasya Zahira Putri <nasyazp28@gmail.com>
+Description: Estimates area and subarea level proportions using the Small Area Estimation (SAE) Twofold Subarea Model with a hierarchical Bayesian (HB) approach under Beta distribution. A number of simulated datasets generated for illustration purposes are also included. The 'rstan' package is employed to estimate parameters via the Hamiltonian Monte Carlo and No U-Turn Sampler algorithm. The  model-based estimators include the HB mean, the variation of the mean, and quantiles. For references, see Rao and Molina (2015) <doi:10.1002/9781118735855>, Torabi and Rao (2014) <doi:10.1016/j.jmva.2014.02.001>, Leyla Mohadjer et al.(2007) <http://www.asasrms.org/Proceedings/y2007/Files/JSM2007-000559.pdf>, Erciulescu et al.(2019) <doi:10.1111/rssa.12390>, and Yudasena (2024).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Biarch: true
+Depends: R (>= 3.5)
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>=
+        2.18.1), rstantools (>= 2.4.0), bayesplot, stringr
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+URL: https://github.com/Nasyazahira/saeHB.TF.beta
+BugReports: https://github.com/Nasyazahira/saeHB.TF.beta/issues
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), ggplot2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-09-03 06:00:19 UTC; User
+Author: Nasya Zahira Putri [aut, cre],
+  Cucu Sumarni [aut],
+  Rizal Fauziarochman Yudasena [aut]
+Repository: CRAN
+Date/Publication: 2025-09-03 06:50:02 UTC

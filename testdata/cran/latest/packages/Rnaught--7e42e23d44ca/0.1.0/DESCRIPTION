@@ -1,0 +1,43 @@
+Package: Rnaught
+Type: Package
+Title: Estimate the Basic Reproduction Number (R0)
+Version: 0.1.0
+Authors@R: c(
+    person("Naeem", "Model", role=c("aut", "cph", "cre"), email="me@nmode.ca"),
+    person("Sawitree", "Boonpatcharanon", role=c("aut", "cph")),
+    person("Jane", "Heffernan", role=c("aut", "cph")),
+    person("Hanna", "Jankowski", role=c("aut", "cph")),
+    person("Tatiana", "Krikella", role=c("aut", "cph")),
+    person("Kseniia", "Lipikhin", role=c("ctb", "cph")))
+Description: A collection of methods for estimating the basic reproduction
+    number (R0) of infectious diseases. Features a web application to interface
+    with the estimators. Uses the models from:
+        Fisman et al. (2013) <DOI:10.1371/journal.pone.0083622>,
+        Bettencourt and Ribeiro (2008) <DOI:10.1371/journal.pone.0002185>, and
+        White and Pagano (2008) <DOI:10.1002/sim.3136>.
+    Includes datasets for Canadian national and provincial COVID-19 case counts
+    provided by Berry et al. (2021) <DOI:10.1038/s41597-021-00955-2>.
+License: AGPL (>= 3)
+URL: https://mi2yorku.github.io/Rnaught/,
+        https://github.com/MI2YorkU/Rnaught
+BugReports: https://github.com/MI2YorkU/Rnaught/issues
+Imports: stats, utils
+Suggests: knitr, rmarkdown, shiny, bslib, DT, plotly, testthat (>=
+        3.0.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-08-28 09:30:30 UTC; nmode
+Author: Naeem Model [aut, cph, cre],
+  Sawitree Boonpatcharanon [aut, cph],
+  Jane Heffernan [aut, cph],
+  Hanna Jankowski [aut, cph],
+  Tatiana Krikella [aut, cph],
+  Kseniia Lipikhin [ctb, cph]
+Maintainer: Naeem Model <me@nmode.ca>
+Repository: CRAN
+Date/Publication: 2025-09-02 21:00:07 UTC

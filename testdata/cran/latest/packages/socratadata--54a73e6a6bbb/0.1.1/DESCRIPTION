@@ -1,0 +1,26 @@
+Package: socratadata
+Title: Explore Socrata Data with Ease
+Version: 0.1.1
+Authors@R: 
+    person("Ryan", "Zomorrodi", , "rzomor2@uic.edu", role = c("aut", "cre"))
+Description: Provides an interface to search, read, query, and retrieve metadata for 
+    datasets hosted on 'Socrata' open data portals. Supports all 'Socrata' data types, 
+    including spatial data returned as 'sf' objects. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/rextendr/version: 0.4.2
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.65.0, xz
+Depends: R (>= 4.2)
+Imports: cli, httr2, rlang (>= 1.1.0), sf, tibble
+Suggests: glue, httptest2, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://ryanzomorrodi.github.io/socratadata/,
+        https://github.com/ryanzomorrodi/socratadata
+BugReports: https://github.com/ryanzomorrodi/socratadata/issues
+NeedsCompilation: yes
+Packaged: 2025-10-06 16:23:41 UTC; user
+Author: Ryan Zomorrodi [aut, cre]
+Maintainer: Ryan Zomorrodi <rzomor2@uic.edu>
+Repository: CRAN
+Date/Publication: 2025-10-06 16:50:02 UTC

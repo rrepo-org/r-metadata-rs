@@ -1,0 +1,49 @@
+Package: CompRiskRel
+Type: Package
+Title: Reliability and Competing Risks Analysis under Hybrid Censoring
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Shikhar",
+           family = "Tyagi",
+           role = c("aut", "cre"),
+           email = "shikhar1093tyagi@gmail.com",
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person(given = "Arvind",
+           family = "Pandey",
+           role = "aut",
+           email = "arvindmzu@gmail.com"),
+    person(given = "Bhupendra",
+           family = "Singh",
+           role = "aut",
+           email = "bhupendra.rana@gmail.com"),
+    person(given = "Vrijesh",
+           family = "Tripathi",
+           role = "aut",
+           email = "vrijesh.tripathi@uwi.edu"))
+Description: Generalized computational algorithms for competing risks analysis,
+    stress-strength reliability modeling, optimal designs, and reliability
+    acceptance sampling plans under various hybrid censoring schemes. Includes
+    data generation routines, Maximum Likelihood Estimation (MLE) with seven
+    optimization algorithms ('Newton-Raphson', 'BFGS', 'BFGSR', 'BHHH', 'SANN',
+    'CG', and 'Nelder-Mead'), Bayesian inference via Gibbs sampling and
+    Metropolis-Hastings MCMC, Importance Sampling, and 'Lindley' asymptotic
+    approximation. Visualization functions generate histograms, dot plots,
+    and autocorrelation plots for model validation. Methodology and design
+    principles are based on 'Balakrishnan', 'Cramer', and 'Kundu' (2023,
+    "Hybrid Censoring Know-How: Designs and Implementations", Academic Press,
+    ISBN:978-0-12-398387-9).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-07-25 17:29:46 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 06:30:11 UTC

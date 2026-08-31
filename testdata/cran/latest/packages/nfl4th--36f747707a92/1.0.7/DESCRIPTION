@@ -1,0 +1,31 @@
+Package: nfl4th
+Title: Functions to Calculate Optimal Fourth Down Decisions in the
+        National Football League
+Version: 1.0.7
+Authors@R: c(
+    person("Ben", "Baldwin", , "bbaldwin206@gmail.com", role = c("aut", "cre", "cph")),
+    person("Sebastian", "Carl", , "mrcaseb@gmail.com", role = "ctb")
+  )
+Description: A set of functions to estimate outcomes of fourth down plays
+    in the National Football League and obtain fourth down plays from
+    <https://www.nfl.com/> and <https://www.espn.com/>.
+License: MIT + file LICENSE
+URL: https://www.nfl4th.com/, https://github.com/nflverse/nfl4th/,
+        https://github.com/nflverse/nfl4th
+BugReports: https://github.com/nflverse/nfl4th/issues
+Depends: R (>= 4.1)
+Imports: cli, curl, data.table, dplyr, janitor, jsonlite, mgcv,
+        nflfastR (>= 5.2.0), nflreadr, purrr, rlang, stringr, tibble,
+        tidyr, xgboost
+Suggests: future, gt, knitr, nflplotR, rmarkdown, testthat (>= 2.0.0),
+        tictoc, withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-04 10:28:01 UTC; S.Carl
+Author: Ben Baldwin [aut, cre, cph],
+  Sebastian Carl [ctb]
+Maintainer: Ben Baldwin <bbaldwin206@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-04 17:10:02 UTC

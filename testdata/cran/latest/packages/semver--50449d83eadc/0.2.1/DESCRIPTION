@@ -1,0 +1,34 @@
+Package: semver
+Type: Package
+Title: 'Semantic Versioning V2.0.0' Parser
+Version: 0.2.1
+Authors@R: c(
+    person("John", "Harrison", , "johndharrison0@gmail.com",
+      role = c("aut"), comment = "R package semantic"),
+    person("Thomas", "Piernicke", , email = "thomasp@gfz.de", 
+      role = c("ctb", "cre")),
+    person("Marko", "Živanović", role = c("aut", "cph"),
+      comment = "semver cpp library, https://github.com/zmarko/semver"))
+Description: Tools and functions for parsing, rendering and operating on
+    semantic version strings. Semantic versioning is a simple set of rules
+    and requirements that dictate how version numbers are assigned and
+    incremented as outlined at <https://semver.org>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: Rcpp (>= 0.12.8), assertthat, utils
+LinkingTo: Rcpp
+URL: https://github.com/johndharrison/semver
+URLNote: https://github.com/johndharrison/semver
+BugReports: https://github.com/johndharrison/semver/issues
+Suggests: testthat, covr, knitr, rmarkdown
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-01-26 14:56:37 UTC; asinus
+Author: John Harrison [aut] (R package semantic),
+  Thomas Piernicke [ctb, cre],
+  Marko Živanović [aut, cph] (semver cpp library,
+    https://github.com/zmarko/semver)
+Maintainer: Thomas Piernicke <thomasp@gfz.de>
+Repository: CRAN
+Date/Publication: 2026-01-27 12:00:02 UTC

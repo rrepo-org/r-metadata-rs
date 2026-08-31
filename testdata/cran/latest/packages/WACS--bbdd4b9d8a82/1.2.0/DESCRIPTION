@@ -1,0 +1,34 @@
+Package: WACS
+Type: Package
+Title: Multivariate Weather-State Approach Conditionally Skew-Normal
+        Generator
+Version: 1.2.0
+Date: 2026-05-20
+Authors@R: 
+    c(person("Denis", "Allard", , "denis.allard@inrae.fr", 
+             role = "aut", comment = c(ORCID = "0000-0001-7944-1906")),
+      person("Ronan", "Trépos", , "ronan.trepos@inrae.fr", 
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-3338-9337")))
+Maintainer: Ronan Trépos <ronan.trepos@inrae.fr>
+Description: A multivariate weather generator for daily climate variables based 
+    on weather-states (Flecher et al. (2010) <doi:10.1029/2009WR008098>). 
+    It uses a Markov chain for modeling the succession of weather states. 
+    Conditionally to the weather states, the multivariate variables are modeled 
+    using the family of Complete Skew-Normal distributions. Parameters are 
+    estimated on measured series. Must include the variable 'Rain' and can 
+    accept as many other variables as desired.
+License: GPL (>= 2.0)
+URL: https://forge.inrae.fr/rtrepos/weathergen
+BugReports: https://forge.inrae.fr/rtrepos/weathergen/-/issues
+Imports: mclust, mnormt, tmvtnorm, mvtnorm
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-29 07:34:26 UTC; rtrepos
+Author: Denis Allard [aut] (ORCID: <https://orcid.org/0000-0001-7944-1906>),
+  Ronan Trépos [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3338-9337>)
+Repository: CRAN
+Date/Publication: 2026-05-29 08:20:02 UTC

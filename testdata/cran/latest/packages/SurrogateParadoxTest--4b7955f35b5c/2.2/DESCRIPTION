@@ -1,0 +1,19 @@
+Package: SurrogateParadoxTest
+Type: Package
+Title: Empirical Testing of Surrogate Paradox Assumptions
+Version: 2.2
+Date: 2026-04-11
+Authors@R: c(person(given = "Emily", family = "Hsiao", role = c("aut")), person("Layla", "Parast", email = "parast@austin.utexas.edu", role = c("aut", "cre")))
+Description: Provides functions to nonparametrically assess assumptions sufficient to prevent the surrogate paradox through hypothesis tests of stochastic dominance, monotonicity of conditional mean functions, and non-negative residual treatment effect. Details are described in: Hsiao E, Tian L, and Parast L (2026). "Avoiding the surrogate paradox: an empirical framework for assessing assumptions." Journal of Nonparametric Statistics <doi:10.1080/10485252.2025.2498609>. There are also functions to assess resilience to the surrogate paradox via calculation of the resilience probability, the resilience bound, and the resilience set. Details will be available in Hsiao E, Tian L, and Parast L, "Resilience Measures for the Surrogate Paradox" (Under Review). Lastly, there is a function to assess resilience to the surrogate paradox in the met-analytic setting, described in Hsiao E and Parast L, "A Functional-Class Meta-Analytic Framework for Quantifying Surrogate Resilience" (Under Review).  A tutorial for this package can be found at <https://www.laylaparast.com/surrogateparadoxtest>.
+License: GPL
+Imports: stats, MonotonicityTest, MASS, ggplot2, Rcpp, splines,
+        parallel, numDeriv, Matrix
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2026-04-12 10:24:25 UTC; parastlm
+Author: Emily Hsiao [aut],
+  Layla Parast [aut, cre]
+Maintainer: Layla Parast <parast@austin.utexas.edu>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-04-12 15:50:02 UTC

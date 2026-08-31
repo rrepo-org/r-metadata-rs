@@ -1,0 +1,31 @@
+Package: cmpp
+Type: Package
+Title: Direct Parametric Inference for the Cumulative Incidence
+        Function in Competing Risks
+Version: 0.0.2
+Date: 2025-04-16
+Authors@R: person(given = "Habib",
+                 family = "Ezzatabadipour",
+                 email = "habibezati@outlook.com",
+                 role = c("aut", "cre"))
+Description: Implements parametric (Direct) regression methods for modeling cumulative incidence functions (CIFs) in 
+                the presence of competing risks. Methods include the direct Gompertz-based approach 
+                and generalized regression models as described in Jeong and Fine (2006) <doi:10.1111/j.1467-9876.2006.00532.x> 
+                and Jeong and Fine (2007) <doi:10.1093/biostatistics/kxj040>.
+                The package facilitates maximum likelihood estimation, variance computation, 
+                with applications to clinical trials and survival analysis.
+License: GPL (>= 2)
+Imports: ggplot2, dplyr, tidyr, numDeriv, cmprsk, tidyselect, stats,
+        Rcpp
+LinkingTo: Rcpp, RcppEigen
+Depends: R (>= 4.1.2)
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: roxygen2
+NeedsCompilation: yes
+Packaged: 2025-05-02 18:22:34 UTC; habib
+Author: Habib Ezzatabadipour [aut, cre]
+Maintainer: Habib Ezzatabadipour <habibezati@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-05-02 22:00:10 UTC

@@ -1,0 +1,43 @@
+Package: baytaAAR
+Type: Package
+Title: Bayesian Transition Analysis with Markov Chain Monte Carlo
+Version: 1.0.3
+Authors@R: c(person(given = "Nils", family = "Müller-Scheeßel",
+                      email = "nils.mueller-scheessel@ufg.uni-kiel.de",
+                      role = c("aut", "cre", "cph"),
+                      comment = c(ORCID = "0000-0001-7992-8722")),
+                      person(given = "Christoph", family = "Rinne", 
+                      email = "crinne@ufg.uni-kiel.de", 
+                      role = c("aut"),
+                      comment = c(ORCID = "0000-0002-9829-6182")))
+Maintainer: Nils Müller-Scheeßel <nils.mueller-scheessel@ufg.uni-kiel.de>
+Description: Provides Bayesian age estimation for bioarchaeological skeletal 
+    data using ordinal probit regression models implemented in 'JAGS' and 'NIMBLE'. 
+    The package is designed to handle multiple ordinal traits of adult individuals
+    and incorporates a Gompertz prior on age to reflect population-level mortality. 
+    It accounts for estimation uncertainties and supports full customization of 
+    model parameters and Markov Chain Monte Carlo settings. For more details
+    see Müller-Scheeßel et al. (2026) <doi:10.1002/ajpa.70289>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: tidyr, Rdpack, dplyr, scoringRules, ggpubr, flexsurv, coda,
+        checkmate, stats
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), withr, knitr, rmarkdown, ggplot2,
+        gridExtra, bayesplot, tidybayes, rjags, runjags, ggridges
+Depends: R (>= 4.1.0), nimble
+RdMacros: Rdpack
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/ISAAKiel/baytaAAR,
+        https://isaakiel.github.io/baytaAAR/
+BugReports: https://github.com/ISAAKiel/baytaAAR/issues
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2026-06-08 07:40:40 UTC; Nils
+Author: Nils Müller-Scheeßel [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7992-8722>),
+  Christoph Rinne [aut] (ORCID: <https://orcid.org/0000-0002-9829-6182>)
+Repository: CRAN
+Date/Publication: 2026-06-15 13:40:15 UTC

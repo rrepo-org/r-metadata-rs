@@ -1,0 +1,22 @@
+Package: surveySimR
+Type: Package
+Title: Estimation of Population Total under Complex Sampling Design
+Version: 0.1.0
+Authors@R: c( person("Nobin Chandra", "Paul", role = c("aut", "cre", "cph"), email = "ncp375@gmail.com"), person("Santosha", "Rathod", role = c("aut", "cph")), person("Navyasree", "Ponnaganti", role = c("aut", "cph")))
+Depends: R(>= 2.10)
+Suggests: roxygen2, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Description: Sample surveys use scientific methods to draw inferences about population parameters by observing a representative part of the population, called sample. The SRSWOR (Simple Random Sampling Without Replacement) is one of the most widely used probability sampling designs, wherein every unit has an equal chance of being selected and units are not repeated.This function draws multiple SRSWOR samples from a finite population and estimates the population parameter i.e. total of HT, Ratio, and Regression estimators. Repeated simulations (e.g., 500 times) are used to assess and compare estimators using metrics such as percent relative bias (%RB), percent relative root means square error (%RRMSE).For details on sampling methodology,
+             see, Cochran (1977) "Sampling Techniques" <https://archive.org/details/samplingtechniqu0000coch_t4x6>.
+License: GPL (>= 2.0)
+Encoding: UTF-8
+Imports: shiny, moments, stats
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-05-27 12:50:53 UTC; Asus
+Author: Nobin Chandra Paul [aut, cre, cph],
+  Santosha Rathod [aut, cph],
+  Navyasree Ponnaganti [aut, cph]
+Maintainer: Nobin Chandra Paul <ncp375@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-29 19:30:01 UTC

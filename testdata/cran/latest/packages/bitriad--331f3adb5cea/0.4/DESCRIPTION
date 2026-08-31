@@ -1,0 +1,32 @@
+Package: bitriad
+Type: Package
+Title: Triadic Analysis of Affiliation Networks
+Version: 0.4
+Authors@R: person('Jason Cory', 'Brunson', email = 'cornelioid@gmail.com',
+    role = c('aut', 'cre'))
+Maintainer: Jason Cory Brunson <cornelioid@gmail.com>
+Description: Two principal tools are provided for the triadic analysis of
+    affiliation networks: triad census and triadic closure.
+    These include several variations on both classical tools
+    tailored to affiliation network structure; see
+    Opsahl (2013) <doi:10.1016/j.socnet.2011.07.001>,
+    Liebig and Rao (2014) <doi:10.1109/SITIS.2014.15>, and
+    Brunson (2015) <doi:10.1017/nws.2015.38>.
+    Additional functions support manipulation of affiliation networks.
+    Built on 'igraph' with new C++ calculations exposed via 'Rcpp'.
+Depends: R (>= 3.5.0), igraph (>= 1.1.2)
+Imports: MASS, Rcpp (>= 0.12.13)
+LinkingTo: Rcpp
+Suggests: knitr, testthat
+License: GPL-2
+Encoding: UTF-8
+VignetteBuilder: knitr
+Classification/MSC: 05C82, 91D30
+Config/roxygen2/version: 8.0.0
+Config/roxygen2/markdown: TRUE
+URL: http://corybrunson.github.io/bitriad/
+NeedsCompilation: yes
+Packaged: 2026-06-24 22:07:27 UTC; jasoncorybrunson
+Author: Jason Cory Brunson [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-06-30 19:10:07 UTC

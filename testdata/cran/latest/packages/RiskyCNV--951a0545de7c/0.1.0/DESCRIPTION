@@ -1,0 +1,45 @@
+Package: RiskyCNV
+Title: Risk Analysis of Genomic Copy Number Variation
+Version: 0.1.0
+Authors@R: c(
+    person("Ashok", "Palaniappan", email = "apalania@scbt.sastra.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2841-9527")),
+    person("Priyanka", "Ramesh",
+           role = "aut"),
+    person("Ida", "Titus",
+           role = "aut"),
+    person("Sangeetha", "Muthamilselvan",
+           role = "aut"))
+Description: Provides a complete seven-step workflow for copy number variation
+    (CNV) analysis applicable to any disease or condition where samples with genomic copy
+    number data is available. Supports built-in grading and risk stratification
+    presets for seven major cancers (viz. prostate, breast, colorectal, lung,
+    cervical, lymphoma, melanoma) based on clinically validated systems including
+    ISUP Grade Groups, Nottingham Grading System, Dukes staging, IASLC TNM,
+    FIGO, Ann Arbor/Lugano classification, and Breslow depth. Generalizable to other disease types. An automatic mode
+    derives a normalised Risk Score from the data using min-max normalisation
+    and adaptive binning. Custom user-defined thresholds are supported for
+    any other disease type. Downstream functions for CNV aberration detection,
+    recurrence analysis, gene annotation, CNV matrix generation, and CNV-RNA
+    expression correlation are disease-type agnostic.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, GenomicRanges, rlang, S4Vectors, stats, tidyr, tools,
+        utils
+Suggests: BiocManager, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+biocViews: CopyNumberVariation, GenomicVariation, RNASeq
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-14 08:37:47 UTC; ida_titus
+Author: Ashok Palaniappan [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2841-9527>),
+  Priyanka Ramesh [aut],
+  Ida Titus [aut],
+  Sangeetha Muthamilselvan [aut]
+Maintainer: Ashok Palaniappan <apalania@scbt.sastra.edu>
+Repository: CRAN
+Date/Publication: 2026-06-05 15:00:17 UTC

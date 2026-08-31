@@ -1,0 +1,28 @@
+Package: fmi
+Title: Hierarchical Permutation Tests for Functional Measurement
+        Invariance
+Description: Provides a suite of functions to test for Functional
+    Measurement Invariance (FMI) between two groups. Implements
+    hierarchical permutation tests for configural, metric, and scalar
+    invariance, adapting concepts from Multi-Group Confirmatory
+    Factor Analysis (MGCFA) to functional data.
+    Methods are based on concepts from: 
+    Meredith, W. (1993) <doi:10.1007/BF02294825>,5
+    Yao, F., Müller, H. G., & Wang, J. L. (2005) <doi:10.1198/016214504000001745>,
+    and Lee, K. Y., & Li, L. (2022) <doi:10.1111/rssb.12471>.
+Version: 0.1.7
+Authors@R: person("Hyeri", "Kim", email = "gpfl3616@naver.com", role = c("aut", "cre"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, ggplot2, knitr, magrittr, methods, purrr, refund,
+        stats, tibble, tidyr, utils
+Suggests: fda, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-11-13 02:14:30 UTC; user
+Author: Hyeri Kim [aut, cre]
+Maintainer: Hyeri Kim <gpfl3616@naver.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2025-11-17 21:20:07 UTC

@@ -1,0 +1,54 @@
+Package: motmot
+Title: Models of Trait Macroevolution on Trees
+Version: 2.1.4
+Depends: R (>= 2.10.0), ape (>= 3.0-7)
+Description: Functions for fitting models of trait evolution
+        on phylogenies for continuous traits. The majority of functions are
+        described in Thomas and Freckleton (2012)
+        <doi:10.1111/j.2041-210X.2011.00132.x> and allow tests of variation 
+        in the rates of trait evolution.
+Authors@R: c(
+    person(given = "Mark", family = "Puttick",
+            role = c("aut", "cph"),
+            comment = c(ORCID = "0000-0002-1011-3442"),
+            email = "marknputtick@gmail.com"),
+    person(given = "Gavin", family = "Thomas",
+            role = c("aut", "cph")),
+    person(given = "Rob", family = "Freckleton",
+            role = c("aut", "cph")),
+    person(given = "Magnus", family = "Clarke",
+            role = "ctb"),
+    person(given = "Travis", family = "Ingram",
+            role = "ctb"),
+    person(given = "David", family = "Orme",
+            role = "ctb"),
+    person(given = "Emmanuel", family = "Paradis",
+            role = "ctb"),
+    person("Martin R.", "Smith", role = c("ctb", "cre"),
+            email = "martin.smith@durham.ac.uk",
+            comment = c(ORCID = "0000-0001-5660-1727"))
+  )
+License: GPL (>= 2)
+URL: https://puttickbiology.wordpress.com/motmot/
+BugReports: https://github.com/ms609/motmot/issues
+LinkingTo: Rcpp
+Imports: Rcpp, coda, ks, mvtnorm, caper, methods
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2026-04-15 15:51:36 UTC; pjjg18
+Author: Mark Puttick [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-1011-3442>),
+  Gavin Thomas [aut, cph],
+  Rob Freckleton [aut, cph],
+  Magnus Clarke [ctb],
+  Travis Ingram [ctb],
+  David Orme [ctb],
+  Emmanuel Paradis [ctb],
+  Martin R. Smith [ctb, cre] (ORCID:
+    <https://orcid.org/0000-0001-5660-1727>)
+Maintainer: Martin R. Smith <martin.smith@durham.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-04-16 07:00:20 UTC

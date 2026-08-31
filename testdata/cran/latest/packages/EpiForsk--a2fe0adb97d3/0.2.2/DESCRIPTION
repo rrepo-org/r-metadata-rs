@@ -1,0 +1,54 @@
+Package: EpiForsk
+Title: Code Sharing at the Department of Epidemiology Research at
+        Statens Serum Institut
+Version: 0.2.2
+Authors@R: 
+    c(person("Anders", "Husby", , "andh@ssi.dk", role = c("aut"),
+             comment = c(ORCID = "0000-0002-7634-8455")),
+      person("Anna", "Laksafoss", , "adls@ssi.dk", role = c("aut"),
+             comment = c(ORCID = "0000-0002-9898-2924")),
+      person("Emilia Myrup", "Thiesson", , "emth@ssi.dk", role = c("aut"),
+             comment = c(ORCID = "0000-0001-6258-4177")),
+      person("Kim Daniel", "Jakobsen", , "kija@ssi.dk", role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0003-0086-9980")),
+      person("Mikael", "Andersson", , "aso@ssi.dk", role = c("aut"),
+             comment = c(ORCID = "0000-0002-0114-2057")),
+      person("Klaus", "Rostgaard", , "klp@ssi.dk", role = c("aut"),
+             comment = c(ORCID = "0000-0001-6220-9414")))
+Description: This is a collection of assorted functions and examples collected 
+    from various projects. Currently we have functionalities for simplifying 
+    overlapping time intervals, Charlson comorbidity score constructors for 
+    Danish data, getting frequency for multiple variables, getting standardized
+    output from logistic and log-linear regressions, sibling design linear 
+    regression functionalities a method for calculating the confidence intervals 
+    for functions of parameters from a GLM, Bayes equivalent for hypothesis 
+    testing with asymptotic Bayes factor, and several help functions for 
+    generalized random forest analysis using 'grf'. 
+URL: https://github.com/Laksafoss/EpiForsk
+BugReports: https://github.com/Laksafoss/EpiForsk/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: broom, cowplot, data.table, dplyr, forcats, ggplot2, glue,
+        grf, gridExtra, Hmisc, MatchIt, methods, nnet, patchwork,
+        policytree, progressr, purrr, rlang, stringr, survey, survival,
+        svyVGAM, tidyr, VGAM
+Depends: R (>= 4.2)
+LazyData: true
+Suggests: cli, CVXR, furrr, future, ggsci, knitr, parallel, rmarkdown,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-30 08:11:44 UTC; b246294
+Author: Anders Husby [aut] (ORCID: <https://orcid.org/0000-0002-7634-8455>),
+  Anna Laksafoss [aut] (ORCID: <https://orcid.org/0000-0002-9898-2924>),
+  Emilia Myrup Thiesson [aut] (ORCID:
+    <https://orcid.org/0000-0001-6258-4177>),
+  Kim Daniel Jakobsen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0086-9980>),
+  Mikael Andersson [aut] (ORCID: <https://orcid.org/0000-0002-0114-2057>),
+  Klaus Rostgaard [aut] (ORCID: <https://orcid.org/0000-0001-6220-9414>)
+Maintainer: Kim Daniel Jakobsen <kija@ssi.dk>
+Repository: CRAN
+Date/Publication: 2026-03-30 09:30:37 UTC

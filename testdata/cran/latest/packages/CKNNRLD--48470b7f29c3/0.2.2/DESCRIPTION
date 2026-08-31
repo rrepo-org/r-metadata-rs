@@ -1,0 +1,39 @@
+Package: CKNNRLD
+Title: Clustering-Based K-Nearest Neighbor Regression for Longitudinal
+        Data
+Version: 0.2.2
+Authors@R: c(
+    person(given = "Mohammad Sadegh", family = "Loeloe", email = "mslbiostat@gmail.com", role = c("aut", "cre")),
+    person(given = "Seyyed Mohammad", family = "Tabatabaei", role = "aut"),
+    person(given = "Reyhane", family = "Sefidkar", role = "aut"),
+    person(given = "Amir Houshang", family = "Mehrparvar", role = "aut"),
+    person(given = "Sara", family = "Jambarsang", role = c("aut", "ths"))
+  )
+Description: Implements the 'CKNNRLD' algorithm (Clustering-Based K-Nearest
+    Neighbor Regression for Longitudinal Data) for improving K-Nearest
+    Neighbor ('KNN') regression on longitudinal data through cluster-based
+    partitioning and localized prediction. Offers enhanced computational
+    efficiency and accuracy for high-volume longitudinal datasets. The
+    acronym 'KNN' stands for K-Nearest Neighbor. References: Loeloe MS,
+    Tabatabaei SM, Sefidkar R, Mehrparvar AH, Jambarsang S (2025).
+    "Boosting K-nearest neighbor regression performance for longitudinal
+    data through a novel learning approach." BMC Bioinformatics, 26, 232.
+    <doi:10.1186/s12859-025-06205-1>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Imports: Directional, graphics, grDevices, Rfast, stats
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Language: en-US
+Suggests: knitr, rmarkdown, testthat
+LazyData: true
+Packaged: 2026-07-12 06:02:17 UTC; lolo
+Author: Mohammad Sadegh Loeloe [aut, cre],
+  Seyyed Mohammad Tabatabaei [aut],
+  Reyhane Sefidkar [aut],
+  Amir Houshang Mehrparvar [aut],
+  Sara Jambarsang [aut, ths]
+Maintainer: Mohammad Sadegh Loeloe <mslbiostat@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-13 07:20:08 UTC

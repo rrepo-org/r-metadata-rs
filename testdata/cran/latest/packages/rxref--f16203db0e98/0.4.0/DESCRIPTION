@@ -1,0 +1,35 @@
+Package: rxref
+Title: Tidy Utilities for RxNorm and NDC Resolution
+Version: 0.4.0
+Authors@R: 
+	c(person(
+	given = "Steven", 
+	family = "Smith", 
+	email = "ssmith@cop.ufl.edu", 
+	role = c("aut", "cre")))
+Description: Provides a tidy, vectorized interface to the 'RxNorm' / 'RxNav'
+    API for resolving drug names, RxCUIs, National Drug Codes (NDCs), and 
+    related drug concept metadata. The package supports workflows for mapping 
+    between drug names, RxCUIs, NDCs, ingredients, products, drug classes, and 
+    related concepts using data from the National Library of Medicine's 'RxNav' 
+    services <https://lhncbc.nlm.nih.gov/RxNav/APIs/> and 'RxNorm'
+    <https://www.nlm.nih.gov/research/umls/rxnorm/>.
+License: MIT + file LICENSE
+URL: https://github.com/ssmithm/rxref,
+        https://www.stevenmsmith.org/rxref/
+BugReports: https://github.com/ssmithm/rxref/issues
+Depends: R (>= 4.1)
+Imports: cachem, cli, digest, dplyr, httr2 (>= 1.0.0), jsonlite,
+        lifecycle, memoise, purrr, rlang, stringr, tibble, tidyr, vctrs
+Suggests: curl, knitr, rmarkdown, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-19 05:18:07 UTC; ssmithm
+Author: Steven Smith [aut, cre]
+Maintainer: Steven Smith <ssmith@cop.ufl.edu>
+Repository: CRAN
+Date/Publication: 2026-05-27 08:50:02 UTC

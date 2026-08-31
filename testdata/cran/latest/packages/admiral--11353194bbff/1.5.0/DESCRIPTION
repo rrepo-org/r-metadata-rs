@@ -1,0 +1,71 @@
+Type: Package
+Package: admiral
+Title: ADaM in R Asset Library
+Version: 1.5.0
+Authors@R: c(
+    person("Edoardo", "Mancini", , "edoardo.mancini@roche.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-4899-8641")),
+    person("Stefan", "Bundfuss", role = "aut",
+           comment = c(ORCID = "0009-0005-0027-1198")),
+    person("Arianna", "Cascone", role = "aut",
+           comment = c(ORCID = "0000-0001-5948-2831")),
+    person("Kristin", "Dahnert", role = "aut"),
+    person("Jeffrey", "Dickinson", role = "aut"),
+    person("Ross", "Farrugia", role = "aut"),
+    person("Fanny", "Gautier", role = "aut",
+           comment = c(ORCID = "0009-0004-3581-0131")),
+    person("Liam", "Hobby", , "liam.f.hobby@gsk.com", role = "aut"),
+    person("Gordon", "Miller", role = "aut"),
+    person("Lina", "Patil", role = "aut"),
+    person("Ben", "Straub", role = "aut"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
+    person("GlaxoSmithKline LLC", role = c("cph", "fnd"))
+  )
+Description: A toolbox for programming Clinical Data Interchange Standards
+    Consortium (CDISC) compliant Analysis Data Model (ADaM) datasets in R.
+    ADaM datasets are a mandatory part of any New Drug or Biologics
+    License Application submitted to the United States Food and Drug
+    Administration (FDA). Analysis derivations are implemented in
+    accordance with the "Analysis Data Model Implementation Guide" (CDISC
+    Analysis Data Model Team, 2021,
+    <https://www.cdisc.org/standards/foundational/adam>).
+License: Apache License (>= 2)
+URL: https://pharmaverse.github.io/admiral/,
+        https://github.com/pharmaverse/admiral
+BugReports: https://github.com/pharmaverse/admiral/issues
+Depends: R (>= 4.1)
+Imports: admiraldev (>= 1.5.0), cli (>= 3.6.2), dplyr (>= 1.1.1), hms
+        (>= 0.5.3), lifecycle (>= 0.1.0), lubridate (>= 1.7.4),
+        magrittr (>= 1.5), purrr (>= 0.3.3), rlang (>= 0.4.4), stringr
+        (>= 1.4.0), tidyr (>= 1.0.2), tidyselect (>= 1.1.0)
+Suggests: diffdf, DT, ggnewscale, ggplot2, here, htmltools, knitr,
+        methods, pharmaversesdtm (>= 1.0.0), reactable, readxl,
+        rmarkdown, testthat (>= 3.0.0), tibble, withr
+VignetteBuilder: knitr
+Config/Needs/website: gert, rmarkdown
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/roclets: collate, namespace, admiraldev::rdx_roclet
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-12 09:07:17 UTC; mancinie
+Author: Edoardo Mancini [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-4899-8641>),
+  Stefan Bundfuss [aut] (ORCID: <https://orcid.org/0009-0005-0027-1198>),
+  Arianna Cascone [aut] (ORCID: <https://orcid.org/0000-0001-5948-2831>),
+  Kristin Dahnert [aut],
+  Jeffrey Dickinson [aut],
+  Ross Farrugia [aut],
+  Fanny Gautier [aut] (ORCID: <https://orcid.org/0009-0004-3581-0131>),
+  Liam Hobby [aut],
+  Gordon Miller [aut],
+  Lina Patil [aut],
+  Ben Straub [aut],
+  F. Hoffmann-La Roche AG [cph, fnd],
+  GlaxoSmithKline LLC [cph, fnd]
+Maintainer: Edoardo Mancini <edoardo.mancini@roche.com>
+Repository: CRAN
+Date/Publication: 2026-06-12 13:20:02 UTC

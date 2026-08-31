@@ -1,0 +1,29 @@
+Package: nQuack
+Title: Predicting Ploidal Level from Sequence Data
+Description: Predicts ploidal level from sequence data using site-based heterozygosity and a mixture models approach. See Gaynor et al. (2024) <doi:10.1002/aps3.11606>.
+Version: 1.0.4
+Authors@R: c(
+    person(given = "Michelle L.", family = "Gaynor",  email= "shellyleegaynor@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-3912-6079")))
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, dplyr, kableExtra, rmarkdown
+Imports: Rcpp (>= 1.0.11), RcppArmadillo (>= 14.0.2-1), truncdist,
+        data.table, foreach, future, parallel, doParallel, extraDistr,
+        RcppProgress, httr2, magrittr
+LinkingTo: Rcpp, RcppArmadillo, extraDistr, RcppProgress
+SystemRequirements: C++17 samtools (>= 1.10)
+Depends: R (>= 4.1.0)
+LazyData: true
+License: GPL (>= 2)
+VignetteBuilder: knitr
+Maintainer: Michelle L. Gaynor <shellyleegaynor@gmail.com>
+URL: http://mlgaynor.com/nQuack/, https://github.com/mgaynor1/nQuack/
+BugReports: https://github.com/mgaynor1/nQuack/issues
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-07 13:46:08 UTC; shellygaynor
+Author: Michelle L. Gaynor [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3912-6079>)
+Repository: CRAN
+Date/Publication: 2026-07-16 12:50:19 UTC

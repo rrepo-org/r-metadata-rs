@@ -1,0 +1,24 @@
+Package: fastrc
+Title: Fast Reverse Complement of DNA and RNA Sequences
+Version: 0.0.2
+Authors@R: 
+    person("Steven G.", "Rozen", , "steverozen@pm.me", role = c("aut", "cre"))
+Description: Fast reverse complement of DNA and RNA sequences using a 'C++'
+    lookup table for O(1) per-base complement mapping. Supports full IUPAC
+    ambiguity codes, DNA and RNA modes, case preservation, and NA handling.
+    Much faster than other packages for computing reverse complements of
+    many short sequences such as primers, probes, and, k-mers.
+License: GPL (>= 3)
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LinkingTo: Rcpp
+Imports: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-02-24 20:48:02 UTC; steve
+Author: Steven G. Rozen [aut, cre]
+Maintainer: Steven G. Rozen <steverozen@pm.me>
+Repository: CRAN
+Date/Publication: 2026-03-03 10:10:07 UTC

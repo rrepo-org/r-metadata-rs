@@ -1,0 +1,30 @@
+Package: ImmuneSigR
+Title: Immune Cell Signature Retrieval and Single-Cell Scoring
+Version: 0.1.1
+Authors@R: c(
+    person("Yingyan", "Liang", , "liangyingyan0625@163.com", role = c("aut", "cre")),
+    person("Peng", "Luo", email = "luopeng@smu.edu.cn", role = "aut")
+  )
+Description: Provides a literature-derived database of immune cell markers
+    formatted as Gene Matrix Transposed (GMT) files. Users can search immune
+    cell signatures, retrieve marker lists, export GMT files, create custom
+    marker sets, and score gene-by-cell expression matrices with dependency-free
+    rank-based or mean-expression methods. Cell subpopulations are distinguished 
+    by their source PMIDs. For the core curation of the lung cell atlas, 
+    see Travaglini et al. (2020) <doi:10.1038/s41586-020-2922-4>. For the 
+    pan-cancer B cell signatures, see Fitzsimons et al. (2024) 
+    <doi:10.1016/j.ccell.2024.09.011>.
+License: GPL-3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/YingYanLaing/ImmuneSigR
+BugReports: https://github.com/YingYanLaing/ImmuneSigR/issues
+Packaged: 2026-07-18 06:05:48 UTC; 梁颖妍
+Author: Yingyan Liang [aut, cre],
+  Peng Luo [aut]
+Maintainer: Yingyan Liang <liangyingyan0625@163.com>
+Repository: CRAN
+Date/Publication: 2026-07-18 06:30:02 UTC

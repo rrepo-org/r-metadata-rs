@@ -1,0 +1,53 @@
+Package: sondage
+Type: Package
+Title: Survey Sampling Algorithms
+Version: 0.9.1
+Authors@R: c(person(given = "Ahmadou",
+                    family = "Dicko",
+	            email = "mail@ahmadoudicko.com",
+		    comment = c(ORCID ="0000-0002-9654-7582"),
+                    role = c("aut", "cre")),
+             person(given = "Thomas",
+                    family = "Lumley",
+	            email = "t.lumley@auckland.ac.nz",
+                    role = "ctb"),
+             person(given = "Wilmer",
+                    family = "Prentius",
+                    role = c("ctb", "cph"),
+                    comment = "Author of the BalancedSampling 2.0.6 (GPL >= 2) cube implementation from which src/cube.c was ported"))
+Description: Fast implementations of survey sampling algorithms for
+    single-stage probability sampling from finite populations,
+    written in C.
+    Provides equal probability methods (simple random sampling,
+    systematic, Bernoulli), unequal probability methods (conditional
+    Poisson / maximum entropy, Sampford, Brewer, systematic PPS, Pareto,
+    sequential Poisson, Poisson, Chromy's minimum replacement,
+    multinomial), balanced sampling via the cube method, and
+    spatially balanced sampling via the local pivotal method and
+    spatially correlated Poisson sampling.
+    All sampling functions return design objects carrying sample
+    indices, inclusion probabilities, and design metadata. Generics
+    compute joint inclusion probabilities, pairwise expectations, and
+    sampling covariances for variance estimation. Mostly based on
+    algorithms from Tillé (2006, <doi:10.1007/0-387-34240-0>).
+Depends: R (>= 4.1.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+Language: en-US
+URL: https://dickoa.gitlab.io/sondage,
+        https://gitlab.com/dickoa/sondage
+BugReports: https://gitlab.com/dickoa/sondage/-/work_items
+NeedsCompilation: yes
+Suggests: knitr, rmarkdown, sampling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-04 19:16:34 UTC; ahmadou
+Author: Ahmadou Dicko [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9654-7582>),
+  Thomas Lumley [ctb],
+  Wilmer Prentius [ctb, cph] (Author of the BalancedSampling 2.0.6 (GPL
+    >= 2) cube implementation from which src/cube.c was ported)
+Maintainer: Ahmadou Dicko <mail@ahmadoudicko.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 23:20:02 UTC

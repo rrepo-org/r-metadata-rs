@@ -1,0 +1,30 @@
+Package: rphylo
+Type: Package
+Title: Phylogenetic Analysis with Dependent Discrete Models
+Version: 0.1.1
+Authors@R: c(
+  person(given="Vivian G.",family="Li", 
+         role = c("aut", "cre"),
+         email="liguo.vivian@gmail.com"),
+  person( given="Andrew",family="Meade",
+         role = "ctb",
+         comment = "Original 'BayesTraits' implementation"),
+  person( given="Mark",family="Pagel",
+         role = "ctb",
+         comment = "Original 'BayesTraits' implementation")
+  )
+Description: Implementation of dependent discrete models (with reversible jump MCMC) derived from 'BayesTraits' V5.0.3 <https://github.com/AndrewPMeade/BayesTraits-Release/tree/Release>. Original software copyright Andrew Meade and contributors, distributed under GPL-3. Modifications for this package by Vivian G. Li <liguo.vivian@gmail.com>. The following articles should be referenced when using this package: Pagel, M., A. Meade and D. Barker (2004) "Bayesian estimation of ancestral character states on phylogenies" <doi:10.1080/10635150490522232>; Pagel, M. (1994) "Detecting correlated evolution on phylogenies: a general method for the comparative analysis of discrete characters" <doi:10.1098/rspb.1994.0006>; Pagel, M. and A. Meade (2006) "Bayesian analysis of correlated evolution of discrete characters by reversible-jump Markov chain Monte Carlo" <doi:10.1086/503444>.
+License: GPL-3
+Encoding: UTF-8
+Imports: ape, phangorn, expm, stats
+LazyData: true
+Config/roxygen2/version: 8.0.0
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-06-18 03:16:46 UTC; v
+Author: Vivian G. Li [aut, cre],
+  Andrew Meade [ctb] (Original 'BayesTraits' implementation),
+  Mark Pagel [ctb] (Original 'BayesTraits' implementation)
+Maintainer: Vivian G. Li <liguo.vivian@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-23 13:30:02 UTC

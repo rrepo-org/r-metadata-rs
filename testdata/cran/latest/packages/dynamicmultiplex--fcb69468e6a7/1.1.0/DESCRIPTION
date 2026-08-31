@@ -1,0 +1,25 @@
+Package: dynamicmultiplex
+Title: Community Detection for Evolving Multiplex Networks
+Version: 1.1.0
+Authors@R: 
+    person(given = "Jared",
+           family = "Edgerton",
+           role = c("aut", "cre"),
+           email = "jared.edgerton@gmail.com")
+Description: Multiplex temporal community detection with customizable interlayer coupling. Runs Louvain or Leiden community detection on each network layer and constructs interlayer ties using Jaccard similarity, overlap coefficient, node-strength weighted variants, or direct node identity links, and also provides a two-stage snapshot-and-match tracker that aligns independently detected per-layer communities across time with the Hungarian assignment algorithm. Supports user-specified layer connectivity via the layer_links argument, enabling adjacent-only temporal coupling that avoids the long-range pooling problem in standard multislice approaches.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: clue, igraph (>= 2.0.0), rlang
+Suggests: testthat (>= 3.0.0), ggplot2, gganimate, gifski, ggalluvial,
+        RColorBrewer, dplyr, tidyr, peacesciencer
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://github.com/jfedgerton/dynamic_multiplex
+BugReports: https://github.com/jfedgerton/dynamic_multiplex/issues
+NeedsCompilation: no
+Packaged: 2026-07-29 18:19:41 UTC; root
+Author: Jared Edgerton [aut, cre]
+Maintainer: Jared Edgerton <jared.edgerton@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 16:00:08 UTC

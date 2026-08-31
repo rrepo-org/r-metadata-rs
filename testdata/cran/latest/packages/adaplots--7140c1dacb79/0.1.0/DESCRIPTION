@@ -1,0 +1,33 @@
+Package: adaplots
+Type: Package
+Title: Ada-Plot and Uda-Plot for Assessing Distributional Attributes
+        and Normality
+Version: 0.1.0
+Authors@R: person(given = c("Uditha", "Amarananda"),
+                      family = "Wijesuriya",
+                      role = c("aut", "cre"),
+                      email = "u.wijesuriya@usi.edu") 
+Maintainer: Uditha Amarananda Wijesuriya <u.wijesuriya@usi.edu>
+Description: The centralized empirical cumulative average deviation function is utilized to develop
+             both Ada-plot and Uda-plot as alternatives to Ad-plot and Ud-plot introduced by the author.
+             Analogous to Ad-plot, Ada-plot can identify symmetry, skewness, and outliers of the data
+             distribution. The Uda-plot is as exceptional as Ud-plot in assessing normality. The d-value 
+             that quantifies the degree of proximity between the Uda-plot and the graph of the estimated 
+             normal density function helps guide to make decisions on confirmation of normality. Extreme 
+             values in the data can be eliminated using the 1.5IQR rule to create its robust version if user
+             demands. Full description of the methodology can be found in the article by Wijesuriya (2025a)
+             <doi:10.1080/03610926.2025.2558108>. Further, the development of Ad-plot and Ud-plot is 
+             contained in both article and the 'adplots' R package by Wijesuriya (2025b & 2025c) 
+             <doi:10.1080/03610926.2024.2440583> and <doi:10.32614/CRAN.package.adplots>.
+License: GPL-3
+Encoding: UTF-8
+Imports: ggplot2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-29 13:16:20 UTC; uwijesuriy
+Author: Uditha Amarananda Wijesuriya [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-10-06 08:00:14 UTC

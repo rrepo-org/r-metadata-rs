@@ -1,0 +1,53 @@
+Type: Package
+Package: anndata
+Title: 'anndata' for R
+Version: 0.8.0
+Authors@R: 
+    c(person(given = "Philipp",
+             family = "Angerer",
+             role = "ccp",
+             email = "phil.angerer@gmail.com",
+             comment = c(ORCID = "0000-0002-0369-2888")),
+      person(given = "Alex",
+             family = "Wolf",
+             role = "ccp",
+             email = "f.alex.wolf@gmx.de",
+             comment = c(ORCID = "0000-0002-8760-7838")),
+      person(given = "Isaac",
+             family = "Virshup",
+             role = "ccp",
+             comment = c(ORCID = "0000-0002-1710-8945")),
+      person(given = "Sergei",
+             family = "Rybakov",
+             role = "ccp",
+             comment = c(ORCID = "0000-0002-4944-6586")),
+      person(given = "Robrecht",
+             family = "Cannoodt",
+             role = c("aut", "cre", "cph"),
+             email = "rcannood@gmail.com",
+             comment = c(ORCID = "0000-0003-3641-729X")))
+Description: A 'reticulate' wrapper for the Python package 'anndata'.
+    Provides a scalable way of keeping track of data and learned
+    annotations.  Used to read from and write to the h5ad file format.
+License: MIT + file LICENSE
+URL: https://anndata.dynverse.org, https://github.com/dynverse/anndata
+BugReports: https://github.com/dynverse/anndata/issues
+Depends: R (>= 3.5.0)
+Imports: assertthat, cli, lifecycle, Matrix, methods, R6, reticulate
+        (>= 1.41)
+Suggests: stats, testthat, knitr, rmarkdown
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/reticulate: list( packages = list( list(package = "anndata") ) )
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-05-27 14:03:22 UTC; rcannood
+Author: Philipp Angerer [ccp] (ORCID: <https://orcid.org/0000-0002-0369-2888>),
+  Alex Wolf [ccp] (ORCID: <https://orcid.org/0000-0002-8760-7838>),
+  Isaac Virshup [ccp] (ORCID: <https://orcid.org/0000-0002-1710-8945>),
+  Sergei Rybakov [ccp] (ORCID: <https://orcid.org/0000-0002-4944-6586>),
+  Robrecht Cannoodt [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3641-729X>)
+Maintainer: Robrecht Cannoodt <rcannood@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-27 14:30:02 UTC

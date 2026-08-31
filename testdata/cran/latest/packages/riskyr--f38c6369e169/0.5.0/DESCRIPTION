@@ -1,0 +1,44 @@
+Package: riskyr
+Type: Package
+Title: Rendering Risk Literacy more Transparent
+Version: 0.5.0
+Date: 2025-09-15
+Authors@R: c(person("Hansjoerg", "Neth", role = c("aut", "cre"),
+                     email = "h.neth@uni.kn", comment = c(ORCID = "0000-0001-5427-3141")), 
+             person("Felix", "Gaisbauer", role = "aut", comment = c(ORCID = "0000-0002-1285-1246")), 
+             person("Nico", "Gradwohl", role = "aut", comment = c(ORCID = "0000-0002-8703-905X")),  
+             person("Wolfgang", "Gaissmaier", role = "aut", comment = c(ORCID = "0000-0001-6273-178X"))) 
+Maintainer: Hansjoerg Neth <h.neth@uni.kn>
+Description: Risk-related information (like the prevalence of conditions, the sensitivity and specificity of diagnostic tests, or the effectiveness of interventions or treatments) can be expressed in terms of frequencies or probabilities. By providing a toolbox of corresponding metrics and representations, 'riskyr' computes, translates, and visualizes risk-related information in a variety of ways. Adopting multiple complementary perspectives provides insights into the interplay between key parameters and renders teaching and training programs on risk literacy more transparent (see <doi:10.3389/fpsyg.2020.567817>, for details).  
+Depends: R (>= 3.4.0)
+Imports: utils (>= 3.4.0)
+Suggests: knitr, rmarkdown, spelling
+Collate: 'comp_util.R' 'init_txt.R' 'init_pal.R' 'init_prob.R'
+        'comp_prob_prob.R' 'init_freq.R' 'comp_min_N.R' 'init_num.R'
+        'init_prob_num.R' 'init_freq_num.R' 'comp_freq_freq.R'
+        'comp_prob_freq.R' 'comp_xxxx_prob.R' 'comp_popu.R'
+        'comp_accu.R' 'plot_util.R' 'plot_area.R' 'plot_tab.R'
+        'plot_prism.R' 'plot_fnet.R' 'plot_bar.R' 'plot_icons.R'
+        'plot_curve.R' 'plot_crisk.R' 'plot_plane.R' 'plot_tree.R'
+        'plot_mosaic.R' 'data.R' 'read_data.R' 'riskyr_class.R'
+        'riskyr_sims.R' 'FFTrees_riskyr.R' 'start_riskyr.R'
+Encoding: UTF-8
+LazyData: true
+License: GPL-2 | GPL-3
+URL: https://riskyr.org/, https://CRAN.R-project.org/package=riskyr,
+        https://github.com/hneth/riskyr/,
+        https://hneth.github.io/riskyr/
+BugReports: https://github.com/hneth/riskyr/issues/
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-09-15 06:06:19 UTC; hneth
+Author: Hansjoerg Neth [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5427-3141>),
+  Felix Gaisbauer [aut] (ORCID: <https://orcid.org/0000-0002-1285-1246>),
+  Nico Gradwohl [aut] (ORCID: <https://orcid.org/0000-0002-8703-905X>),
+  Wolfgang Gaissmaier [aut] (ORCID:
+    <https://orcid.org/0000-0001-6273-178X>)
+Repository: CRAN
+Date/Publication: 2025-09-15 06:30:02 UTC

@@ -1,0 +1,31 @@
+Package: maxlike
+Type: Package
+Title: Model Species Distributions by Estimating the Probability of
+        Occurrence Using Presence-Only Data
+Version: 0.1-12
+Date: 2025-7-29
+Depends: R (>= 2.10.0), raster
+Suggests: dismo
+Author: Richard Chandler [aut],
+  Andy Royle [aut],
+  Roeland Kindt [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-7672-0712>)
+Authors@R: c(person(given = "Richard",
+                        family = "Chandler",
+                        role = "aut"),
+            person(given = "Andy",
+                        family = "Royle",
+                        role = "aut"),
+            person(given = "Roeland",
+                        family = "Kindt",
+                        role = c("cre","aut"), 
+                        email = "RoelandCEKindt@gmail.com",
+                        comment = c(ORCID = "0000-0002-7672-0712")))
+Maintainer: Roeland Kindt <RoelandCEKindt@gmail.com>
+Description: Provides a likelihood-based approach to modeling species distributions using presence-only data. In contrast to the popular software program MAXENT, this approach yields estimates of the probability of occurrence, which is a natural descriptor of a species' distribution.
+License: GPL (>= 3)
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2025-08-01 13:37:10 UTC; RKINDT
+Repository: CRAN
+Date/Publication: 2025-08-18 10:10:02 UTC

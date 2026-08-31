@@ -1,0 +1,36 @@
+Package: FlowScreen
+Title: Daily Streamflow Trend and Change Point Screening
+Version: 2.1
+Authors@R: c(person("Jennifer", "Dierauer", 
+  role = c("aut", "cre"), email="jen.r.brand@gmail.com"),
+  person("Paul", "Whitfield", role = "aut", 
+  email = "paul.h.whitfield@gmail.com"))
+Description: Screens daily streamflow time series for temporal trends and
+    change-points. This package has been primarily developed for assessing the
+    quality of daily streamflow time series. It also contains tools for plotting
+    and calculating many different streamflow metrics. The package can be used to
+    produce summary screening plots showing change-points and significant temporal
+    trends for high flow, low flow, and/or baseflow statistics, or it can be used
+    to perform more detailed hydrological time series analyses. The package was
+    designed for screening daily streamflow time series from Water Survey Canada
+    and the United States Geological Survey but will also work with streamflow time
+    series from many other agencies.  
+    Package update to version 2.0 made updates to read.flows function to allow 
+    loading of GRDC and ROBIN streamflow record formats.
+    This package uses the `changepoint` package for change point detection.
+    For more information on change point methods, see the changepoint 
+    package at <https://cran.r-project.org/package=changepoint>.
+Depends: R (>= 3.5.0)
+Imports: zyp, changepoint, evir, graphics, grDevices, stats, utils,
+        tools
+License: GPL (>= 2)
+LazyData: true
+RoxygenNote: 7.2.2
+Encoding: UTF-8
+Packaged: 2025-07-05 18:11:08 UTC; NS94HFF
+Maintainer: Jennifer Dierauer <jen.r.brand@gmail.com>
+NeedsCompilation: no
+Author: Jennifer Dierauer [aut, cre],
+  Paul Whitfield [aut]
+Repository: CRAN
+Date/Publication: 2025-07-05 18:20:02 UTC

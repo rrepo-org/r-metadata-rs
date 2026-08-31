@@ -1,0 +1,56 @@
+Package: eq5dsuite
+Type: Package
+Title: Handling and Analysing EQ-5d Data
+Version: 2.0.0
+Authors@R: 
+  c(person(given = "Kim",
+           family = "Rand",
+           role = c("aut", "cre"),
+           email = "krand@mathsinhealth.com",
+           comment = c(ORCID = "0000-0001-7692-4099")),
+    person(given = "Oliver",
+           family = "Rivero-Arias",
+           role = "aut",
+           comment = c(ORCID = "0000-0003-2233-6544")),
+    person(given = "Iryna",
+           family = "Schlackow",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-4154-1431")),
+    person(given = "Anabel",
+           family = "Estévez-Carrillo",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-8778-5055")))
+Maintainer: Kim Rand <krand@mathsinhealth.com>
+Description: The EQ-5D is a widely-used standarized instrument for measuring Health Related Quality Of Life (HRQOL), 
+    developed by the EuroQol group <https://euroqol.org/>. It assesses five dimensions; mobility, self-care, 
+    usual activities, pain/discomfort, and anxiety/depression, using either a three-level (EQ-5D-3L) or five-level (EQ-5D-5L) scale.
+    Scores from these dimensions are commonly converted into a single utility index using country-specific value sets, 
+    which are critical in clinical and economic evaluations of healthcare and in population health surveys. 
+    The eq5dsuite package enables users to calculate utility index values for the EQ-5D instruments, 
+    including crosswalk utilities using the original crosswalk developed by van Hout et al. (2012) <doi:10.1016/j.jval.2012.02.008> 
+    (mapping EQ-5D-5L responses to EQ-5D-3L index values), or the recently developed reverse crosswalk 
+    by van Hout et al. (2021) <doi:10.1016/j.jval.2021.03.009> (mapping EQ-5D-3L responses
+    to EQ-5D-5L index values). Users are allowed to add and/or remove user-defined value sets. 
+    Additionally, the package provides tools to analyze EQ-5D data according to the recommended 
+    guidelines outlined in "Methods for Analyzing and Reporting EQ-5D data" by Devlin et al. (2020) <doi:10.1007/978-3-030-47622-9>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 8.0.0
+Depends: R (>= 3.5)
+Imports: curl, ggplot2, moments, RColorBrewer, rlang, scales, rappdirs
+Suggests: shiny, DT, bslib, readxl, spelling, testthat (>= 3.0.0),
+        withr, knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-05-14 08:22:36 UTC; aeste
+Author: Kim Rand [aut, cre] (ORCID: <https://orcid.org/0000-0001-7692-4099>),
+  Oliver Rivero-Arias [aut] (ORCID:
+    <https://orcid.org/0000-0003-2233-6544>),
+  Iryna Schlackow [aut] (ORCID: <https://orcid.org/0000-0002-4154-1431>),
+  Anabel Estévez-Carrillo [aut] (ORCID:
+    <https://orcid.org/0000-0001-8778-5055>)
+Repository: CRAN
+Date/Publication: 2026-05-14 10:30:02 UTC

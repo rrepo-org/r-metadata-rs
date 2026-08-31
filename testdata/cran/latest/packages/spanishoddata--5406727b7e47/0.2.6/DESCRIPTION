@@ -1,0 +1,52 @@
+Package: spanishoddata
+Title: Get Spanish Origin-Destination Data
+Version: 0.2.6
+Authors@R: c(
+    person("Egor", "Kotov", , "kotov.egor@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6690-5345")),
+    person("Robin", "Lovelace", , "rob00x@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-5679-6536")),
+    person("Eugeni", "Vidal-Tortosa", role = "ctb",
+           comment = c(ORCID = "0000-0001-5199-4103"))
+  )
+Description: Gain seamless access to origin-destination (OD) data from the
+    Spanish Ministry of Transport, hosted at
+    <https://www.transportes.gob.es/ministerio/proyectos-singulares/estudios-de-movilidad-con-big-data/opendata-movilidad>.
+    This package simplifies the management of these large datasets by
+    providing tools to download zone boundaries, handle associated
+    origin-destination data, and process it efficiently with the 'duckdb'
+    database interface.  Local caching minimizes repeated downloads,
+    streamlining workflows for researchers and analysts.  Methods
+    described in Kotov et al. (2026) <doi:10.1177/23998083251415040>.
+    Extensive documentation is available at
+    <https://ropenspain.github.io/spanishoddata/index.html>, offering
+    guides on creating static and dynamic mobility flow visualizations and
+    transforming large datasets into analysis-ready formats.
+License: MIT + file LICENSE
+URL: https://rOpenSpain.github.io/spanishoddata/,
+        https://github.com/rOpenSpain/spanishoddata,
+        https://doi.org/10.1177/23998083251415040
+BugReports: https://github.com/rOpenSpain/spanishoddata/issues
+Depends: R (>= 4.1.0)
+Imports: checkmate, DBI, digest, dplyr, duckdb (>= 0.5.0), fs, glue,
+        httr2, jsonlite, lifecycle, lubridate, memoise, openssl,
+        parallelly, paws.storage (>= 0.4.0), purrr, Rdpack, readr,
+        rlang, sf, stats, stringr, tibble, xml2
+Suggests: cli, flowmapblue, flowmapper (>= 0.1.2), furrr, future,
+        future.mirai, ggiraph, hexSticker, htmlwidgets, mapSpain,
+        quarto, remotes, scales, testthat (>= 3.0.0), tidyverse, withr
+VignetteBuilder: quarto
+RdMacros: Rdpack
+Config/Needs/website: rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-06 20:49:48 UTC; ek
+Author: Egor Kotov [aut, cre] (ORCID: <https://orcid.org/0000-0001-6690-5345>),
+  Robin Lovelace [aut] (ORCID: <https://orcid.org/0000-0001-5679-6536>),
+  Eugeni Vidal-Tortosa [ctb] (ORCID:
+    <https://orcid.org/0000-0001-5199-4103>)
+Maintainer: Egor Kotov <kotov.egor@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-07 06:30:02 UTC

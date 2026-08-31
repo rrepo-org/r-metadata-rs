@@ -1,0 +1,53 @@
+Type: Package
+Package: superb
+Title: Summary Plots with Adjusted Error Bars
+Version: 1.0.1
+Date: 2025-11-30
+Authors@R: c(
+             person("Denis", "Cousineau", email = "denis.cousineau@uottawa.ca",
+                    role = c("aut", "cre")),
+             person("Bradley", "Harding", email = "bradley.harding@umoncton.ca",
+                    role = c("ctb")),
+             person("Marc-Andre", "Goulet", email = "magoulet101@gmail.com",
+                    role = c("ctb")),
+             person("Jesika", "Walker", email = "jwalk050@uottawa.ca",
+                    role = c("art","pre"))
+           )
+Author: Denis Cousineau [aut, cre],
+  Bradley Harding [ctb],
+  Marc-Andre Goulet [ctb],
+  Jesika Walker [art, pre]
+Maintainer: Denis Cousineau <denis.cousineau@uottawa.ca>
+BugReports: https://github.com/dcousin3/superb/issues/
+URL: https://github.com/dcousin3/superb/,
+        https://CRAN.R-project.org/package=superb,
+        https://dcousin3.github.io/superb/
+Description: 
+        Computes standard error and confidence interval of various descriptive statistics under 
+        various designs and sampling schemes. The main function, superb(), return a plot. It can 
+        also be used to obtain a dataframe with the statistics and their precision intervals 
+        so that other plotting environments (e.g., Excel)
+        can be used. See Cousineau and colleagues (2021) <doi:10.1177/25152459211035109> 
+        or Cousineau (2017) <doi:10.5709/acp-0214-z> for a review as well as Cousineau (2005)
+        <doi:10.20982/tqmp.01.1.p042>, Morey (2008) <doi:10.20982/tqmp.04.2.p061>, Baguley (2012)
+        <doi:10.3758/s13428-011-0123-7>, Cousineau & Laurencelle (2016) <doi:10.1037/met0000055>,
+        Cousineau & O'Brien (2014) <doi:10.3758/s13428-013-0441-z>, Calderini & Harding 
+        <doi:10.20982/tqmp.15.1.p001> for specific references.
+        The documentation is available at <https://dcousin3.github.io/superb/> .
+License: GPL-3
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: Rdpack (>= 0.7), methods, utils, stats, MASS, lsr (>= 0.5),
+        plyr (>= 1.8.4), ggplot2 (>= 3.5.0), stringr, foreign,
+        reshape2, shiny, shinyBS, rrapply
+Suggests: psych, rlang, dplyr, gridExtra, emojifont, fMultivar, grid,
+        knitr, lattice, boot, png, rmarkdown, rstatix, RColorBrewer,
+        sadists, scales, testthat, tibble
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2025-12-04 16:20:20 UTC; Utlisateur
+Repository: CRAN
+Date/Publication: 2025-12-04 16:50:02 UTC

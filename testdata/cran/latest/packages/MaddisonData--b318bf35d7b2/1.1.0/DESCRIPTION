@@ -1,0 +1,37 @@
+Package: MaddisonData
+Title: Maddison Project Data
+Version: 1.1.0
+Date: 2026-01-09
+Authors@R: 
+    person("Spencer", "Graves", , "spencer.graves@effectivedefense.org", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0005-5387-729X"))
+Description: Relatively easy access is provided to 2023 version of the Maddison 
+      project data downloaded 2025-08-28. This project collates all the 
+      credible data on population and GDP for 169 countries, with some dating 
+      back to the year 1 of the current era. One function makes it easy to find 
+      the leaders for each year, allowing users to delete countries like OPEC 
+      with narrow economies to focus on technology leaders. Another function 
+      makes it easy to plot data for only selected countries or years. Another 
+      function makes it relatively easy to obtain references to the original 
+      sources, which must be cited per the copyright rules of the Maddison 
+      Project for different uses of their data. 
+License: MIT + file LICENSE
+URL: https://github.com/sbgraves237/MaddisonData
+BugReports: https://github.com/sbgraves237/MaddisonData/issues
+Depends: R (>= 4.1)
+Language: en-US
+Suggests: ggplot2, ipumsr, KFAS, knitr, lubridate, readxl, rmarkdown,
+        testthat (>= 3.0.0), tibble, usethis
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-09 14:44:44 UTC; sg
+Author: Spencer Graves [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-5387-729X>)
+Maintainer: Spencer Graves <spencer.graves@effectivedefense.org>
+Repository: CRAN
+Date/Publication: 2026-01-10 01:00:02 UTC

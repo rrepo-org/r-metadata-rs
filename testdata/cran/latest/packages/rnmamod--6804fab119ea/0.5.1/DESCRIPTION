@@ -1,0 +1,67 @@
+Type: Package
+Package: rnmamod
+Title: Bayesian Network Meta-Analysis with Missing Participants
+Version: 0.5.1
+Date: 2026-07-12
+Authors@R: c(
+    person("Loukia", "Spineli", email = "Spineli.Loukia@mh-hannover.de", 
+    role = c("aut", "cre")),
+    person("Chrysostomos", "Kalyvas", role = "ctb"),
+    person("Katerina", "Papadimitropoulou", role = "ctb")
+  )
+Maintainer: Loukia Spineli <Spineli.Loukia@mh-hannover.de>
+Description: A comprehensive suite of functions to perform and visualise 
+    pairwise and network meta-analysis with aggregate binary or continuous
+    missing participant outcome data. The package covers core Bayesian one-stage
+    models implemented in a systematic review with multiple interventions, 
+    including fixed-effect and random-effects network meta-analysis, 
+    meta-regression, and evaluation of the consistency assumption via the 
+    node-splitting approach and the unrelated mean effects model (original and
+    revised model proposed by Spineli, (2021) <doi:10.1177/0272989X211068005>). 
+    Missing participant outcome data are addressed in all models of the package 
+    (see Spineli, (2019) <doi:10.1186/s12874-019-0731-y>, Spineli et al., (2019) 
+    <doi:10.1002/sim.8207>, Spineli, (2019) <doi:10.1016/j.jclinepi.2018.09.002>, 
+    and Spineli et al., (2021) <doi:10.1177/0962280220983544>). 
+    The robustness to primary analysis results can also be investigated using a 
+    novel intuitive index (see Spineli et al., (2021) <doi:10.1002/jrsm.1478> and 
+    Spineli et al., (2021) <doi:10.1186/s12916-021-02195-y>). 
+    Methods to evaluate the transitivity assumption using trial dissimilarities
+    and hierarchical clustering are provided 
+    (see Spineli, (2024) <doi:10.1186/s12874-024-02436-7>, and 
+    Spineli et al., (2025) <doi:10.1002/sim.70068>). A novel index to 
+    facilitate interpretation of local inconsistency is also available 
+    (see Spineli, (2024) <doi:10.1186/s13643-024-02680-4> and 
+    Spineli, (2025) <doi:10.1186/s13643-025-02984-z>).
+    The package also offers a rich, user-friendly visualisation toolkit that aids 
+    in appraising and interpreting the results thoroughly and preparing the 
+    manuscript for journal submission. The visualisation tools comprise the 
+    network plot, forest plots, panel of diagnostic plots, heatmaps on the extent 
+    of missing participant outcome data in the network, league heatmaps on 
+    estimation and prediction, rankograms, Bland-Altman plot, leverage plot, 
+    deviance scatterplot, heatmap of robustness, barplot of Kullback-Leibler 
+    divergence, heatmap of comparison dissimilarities and dendrogram of comparison 
+    clustering. The package also allows the user to export the results to an Excel 
+    file at the working directory.
+License: GPL (>= 3)
+URL: https://CRAN.R-project.org/package=rnmamod,
+        https://github.com/LoukiaSpin/rnmamod,
+        https://loukiaspin.github.io/rnmamod/
+BugReports: https://github.com/LoukiaSpin/rnmamod/issues
+Depends: R (>= 4.0.0)
+Imports: cluster, coda (>= 0.13), dendextend, gemtc, ggfittext,
+        ggplot2, ggpubr, ggrepel, heatmaply, igraph, knitr, MASS,
+        Matrix, R2jags, reshape2, scales, stringr, writexl
+Suggests: metafor, netmeta, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-12 09:21:28 UTC; spine
+Author: Loukia Spineli [aut, cre],
+  Chrysostomos Kalyvas [ctb],
+  Katerina Papadimitropoulou [ctb]
+Repository: CRAN
+Date/Publication: 2026-07-13 07:10:02 UTC

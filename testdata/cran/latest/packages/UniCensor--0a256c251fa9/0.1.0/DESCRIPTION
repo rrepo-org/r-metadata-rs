@@ -1,0 +1,51 @@
+Package: UniCensor
+Type: Package
+Title: Reproducible Random Samples Under Univariate Censoring Schemes
+Version: 0.1.0
+Authors@R: person("Shikhar", "Tyagi",
+                  email = "shikhar1093tyagi@gmail.com",
+                  role  = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0003-1606-0844"))
+Description: Generates reproducible random samples from any user-specified
+    univariate distribution under a comprehensive suite of censoring and
+    truncation schemes.
+    Users supply the probability density function (PDF),
+    cumulative distribution function (CDF), survival function, support bounds,
+    and parameters; the same seed and inputs yield identical samples across
+    sessions.  Supported schemes include right and left truncation, random,
+    right, left, interval, and middle censoring, block random censoring,
+    balanced joint progressive Type-II (BJPT-II), progressive first failure,
+    joint Type-I, Type-I, Type-II, progressive Type-II, Type-II progressively
+    hybrid, joint Type-II, hybrid, hybrid Type-I, doubly Type-II, Type-I
+    hybrid, and hybrid Type-II censoring.  Diagnostic histogram, dot plot, and
+    autocorrelation plots are provided for each scheme to verify distributional
+    behaviour.
+    Methods are described in
+    Nagar, Kumar, and Krishna (2026) <doi:10.59467/IJASS.2026.22.1>,
+    Goel, Kumar, and Krishna (2026, "Estimation in power Lindley distributions
+    using balanced joint progressively Type-II censored data"),
+    Wu and Kus (2009) <doi:10.1016/j.csda.2009.03.010>,
+    Goel and Krishna (2026) <doi:10.1007/s13198-026-03208-w>,
+    Balakrishnan and Aggarwala (2000, ISBN:978-1-4612-1334-5),
+    Mondal and Kundu (2020) <doi:10.1080/03610926.2018.1554128>,
+    Ding and Gui (2023) <doi:10.3390/math11092003>,
+    Prajapati, Mitra, and Kundu (2019) <doi:10.1007/s13571-018-0167-0>,
+    Yadav, Jaiswal, and Yadav (2026) <doi:10.1007/s11135-026-02647-8>,
+    Iyer, Jammalamadaka, and Kundu (2008) <doi:10.1016/j.jspi.2007.03.062>,
+    Banerjee and Kundu (2008) <doi:10.1109/TR.2008.916890>,
+    and Kundu and Joarder (2006) <doi:10.1016/j.csda.2005.05.002>.
+License: GPL-3
+Depends: R (>= 4.0.0)
+Imports: graphics, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-08 23:26:00 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>)
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-17 13:40:08 UTC

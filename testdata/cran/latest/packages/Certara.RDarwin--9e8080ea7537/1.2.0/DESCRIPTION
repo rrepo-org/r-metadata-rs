@@ -1,0 +1,29 @@
+Package: Certara.RDarwin
+Title: Interface for 'pyDarwin' Machine Learning Pharmacometric Model
+        Development
+Version: 1.2.0
+Authors@R: c(
+      person("Michael", "Tomashevskiy", email = "michael.tomashevskiy@certara.com", role = c("aut")),
+      person("James", "Craig", email = "james.craig@certara.com", role = c("aut", "cre")),
+      person("Certara USA, Inc", role = c("cph","fnd"))
+      )
+Description: Utilities that support the usage of 'pyDarwin' (<https://certara.github.io/pyDarwin/>) for ease of setup 
+    and execution of a machine learning based pharmacometric model search with Certara's Non-Linear Mixed Effects (NLME) 
+    modeling engine.
+Depends: R (>= 3.6)
+License: LGPL-3
+URL: https://certara.github.io/R-Darwin/
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: methods, magrittr, jsonlite, ssh
+Suggests: testthat (>= 3.0.0), dplyr, tidyr, tibble, knitr, rmarkdown,
+        Certara.DarwinReporter, Certara.RsNLME, geometry
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-01 00:14:40 UTC; jcraig
+Author: Michael Tomashevskiy [aut],
+  James Craig [aut, cre],
+  Certara USA, Inc [cph, fnd]
+Maintainer: James Craig <james.craig@certara.com>
+Repository: CRAN
+Date/Publication: 2025-12-01 00:30:02 UTC

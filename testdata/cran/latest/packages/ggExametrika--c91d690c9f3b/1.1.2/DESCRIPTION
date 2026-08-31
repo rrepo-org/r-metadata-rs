@@ -1,0 +1,31 @@
+Package: ggExametrika
+Type: Package
+Title: Visualization of 'exametrika' Output Using 'ggplot2'
+Version: 1.1.2
+Authors@R: c(
+    person(given = "Koji", family = "Kosugi", role = c("aut", "cre"), email = "kosugitti@gmail.com", comment = c(ORCID = "0000-0001-5816-0099")),
+    person(given = "Daichi", family = "Kamimura", role = c("aut")))
+Description: Provides 'ggplot2'-based visualization functions for output objects
+    from the 'exametrika' package, which implements test data engineering methods
+    described in Shojima (2022, ISBN:978-981-16-9547-1). Supports a wide range of
+    psychometric models including Item Response Theory, Latent Class Analysis,
+    Latent Rank Analysis, Biclustering (binary, ordinal, and nominal),
+    Bayesian Network Models, and related network models. All plot functions
+    return 'ggplot2' objects that can be further customized by the user.
+URL: https://kosugitti.github.io/ggExametrika/,
+        https://github.com/kosugitti/ggExametrika
+BugReports: https://github.com/kosugitti/ggExametrika/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0), ggplot2
+Imports: ggraph, ggrepel, gridExtra, igraph, tidyr
+Suggests: exametrika (>= 1.11.0), testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-20 11:16:25 UTC; newton
+Author: Koji Kosugi [aut, cre] (ORCID: <https://orcid.org/0000-0001-5816-0099>),
+  Daichi Kamimura [aut]
+Maintainer: Koji Kosugi <kosugitti@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:43:38 UTC

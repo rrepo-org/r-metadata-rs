@@ -1,0 +1,49 @@
+Package: rixpress
+Title: Build Reproducible Analytical Pipelines with 'Nix'
+Version: 0.12.3
+Authors@R: c(
+  person(given = "Bruno", family = "Rodrigues", email = "bruno@brodrigues.co", role = c("aut", "cre"),
+         comment = c(ORCID = "0000-0002-3211-3689")),
+  person(given = c("William", "Michael"), family = "Landau", email = "will.landau.oss@gmail.com", role = "rev",
+         comment = c("William reviewed the package (v. 0.2.0) for rOpenSci,
+                      see <https://github.com/ropensci/software-review/issues/706>")),
+  person(given = "Anthony", family = "Martinez", email = "ajmartinez@usgs.gov", role = "rev",
+         comment = c(ORCID = "0000-0002-4295-0261", "Anthony reviewed the
+                     package (v. 0.2.0) for rOpenSci,
+                     see <https://github.com/ropensci/software-review/issues/625>"))
+  )
+Description: Streamlines the creation of reproducible analytical pipelines using
+  'default.nix' expressions generated via the 'rix' package for reproducibility. Define
+  derivations in 'R', 'Python' or 'Julia', chain them into a composition of pure
+  functions and build the resulting pipeline using 'Nix' as the underlying
+  end-to-end build tool. Functions to plot the pipeline as a directed acyclic
+  graph are included, as well as functions to load and inspect intermediary results
+  for interactive analysis. User experience heavily inspired by the 'targets' package.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/ropensci/rixpress/,
+        https://docs.ropensci.org/rixpress/
+BugReports: https://github.com/ropensci/rixpress/issues/
+Depends: R (>= 4.1.0)
+Imports: cli, igraph, jsonlite, processx
+RoxygenNote: 7.3.3
+SystemRequirements: Nix
+Language: en-GB
+Suggests: chronicler, dplyr, ggdag, ggplot2, knitr, maybe, mockery,
+        reticulate, rix, rmarkdown, testthat (>= 3.0.0), usethis,
+        visNetwork
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-19 06:51:21 UTC; brodrigues
+Author: Bruno Rodrigues [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3211-3689>),
+  William Michael Landau [rev] (William reviewed the package (v. 0.2.0)
+    for rOpenSci, see
+    <https://github.com/ropensci/software-review/issues/706>),
+  Anthony Martinez [rev] (ORCID: <https://orcid.org/0000-0002-4295-0261>,
+    Anthony reviewed the package (v. 0.2.0) for rOpenSci, see
+    <https://github.com/ropensci/software-review/issues/625>)
+Maintainer: Bruno Rodrigues <bruno@brodrigues.co>
+Repository: CRAN
+Date/Publication: 2026-05-19 07:30:07 UTC

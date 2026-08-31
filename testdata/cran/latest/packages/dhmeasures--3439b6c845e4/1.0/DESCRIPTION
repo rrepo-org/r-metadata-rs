@@ -1,0 +1,26 @@
+Package: dhmeasures
+Title: Digital History Measures
+Version: 1.0
+Authors@R: c(
+  person("Ryan", "Schaefer", email = "rschaefer1@me.com", role = c("aut"),
+	       comment = c(ORCID = "0000-0001-7694-3994")),
+	person("Steph", "Buongiorno", email = "steph.buon@gmail.com", role = c("aut", "cre"),
+               comment = c(ORCID = "0000-0002-6965-0787")))
+Maintainer: Steph Buongiorno <steph.buon@gmail.com>
+Description: Provides statistical functions to aid in the analysis of contemporary and historical corpora. These transparent functions may be useful to anyone, and were designed with the social sciences and humanities in mind. JSD (Jensen-Shannon Divergence) is a measure of the distance between two probability distributions. The JSD and Original JSD functions expand on existing functions, by calculating the JSD for distributions of words in text groups for all pairwise groups provided (Drost (2018) <doi:10.21105/joss.00765>). The Log Likelihood function is inspired by the work of digital historian Jo Guldi (Guldi (2022) <https://github.com/joguldi/digital-history>). Also includes helper functions that can count word frequency in each text grouping, and remove stop words. 
+URL: https://github.com/stephbuon/dhmeasures
+BugReports: https://github.com/stephbuon/dhmeasures/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.9), dplyr, tidytext
+LinkingTo: Rcpp
+RoxygenNote: 7.3.3
+LazyData: true
+Depends: R (>= 3.5.0)
+NeedsCompilation: yes
+Packaged: 2026-03-18 14:17:34 UTC; stephbuongiorno
+Author: Ryan Schaefer [aut] (ORCID: <https://orcid.org/0000-0001-7694-3994>),
+  Steph Buongiorno [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6965-0787>)
+Repository: CRAN
+Date/Publication: 2026-03-23 09:50:02 UTC

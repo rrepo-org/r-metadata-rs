@@ -1,0 +1,25 @@
+Package: MAPCtools
+Title: Multivariate Age-Period-Cohort (MAPC) Modeling for Health Data
+Version: 0.1.0
+Authors@R: 
+    person(given = "Lars", family = "Vatten", email= "lavatt99@gmail.com", role = c("aut", "cre"))
+Description: Bayesian multivariate age-period-cohort (MAPC) models for analyzing health data, with support for model fitting, visualization, stratification, and model comparison. Inference focuses on identifiable cross-strata differences, as described by Riebler and Held (2010) <doi:10.1093/biostatistics/kxp037>. Methods for handling complex survey data via the 'survey' package are included, as described in Mercer et al. (2014) <doi:10.1016/j.spasta.2013.12.001>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Imports: dplyr, tidyselect, fastDummies, stringr, rlang, tidyr,
+        ggplot2, viridis, scales, purrr, grid, gridExtra, ggpubr,
+        tibble, survey
+URL: https://github.com/LarsVatten/MAPCtools
+BugReports: https://github.com/LarsVatten/MAPCtools/issues
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, INLA
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2025-06-23 15:06:36 UTC; lavat
+Author: Lars Vatten [aut, cre]
+Maintainer: Lars Vatten <lavatt99@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-25 15:40:02 UTC

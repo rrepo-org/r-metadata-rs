@@ -1,0 +1,44 @@
+Package: GLBFP
+Type: Package
+Title: General Linear Blend Frequency Polygon Density Estimation
+Version: 0.5.2
+Authors@R: c(
+    person(given = "Aurélien",
+           family = "Nicosia",
+           role = c("aut", "cre"),
+           email = "aurelien.nicosia@mat.ulaval.ca"),
+    person(given = "Thierry",
+           family = "Duchesne",
+           role = "aut"),
+    person(given = "Michel",
+           family = "Carbon",
+           role = "aut")
+    )
+Description: Implements nonparametric density estimation with Averaged Shifted
+    Histogram (ASH), Linear Blend Frequency Polygon (LBFP), and General Linear
+    Blend Frequency Polygon (GLBFP) estimators. The package provides pointwise
+    and grid-based estimation workflows, sparse-prefix grid-count computation,
+    plotting helpers, and plug-in bandwidth selection. Methodological
+    background follows Scott (1992) <doi:10.1002/9780470316849>, Terrell and
+    Scott (1985) <doi:10.1080/01621459.1985.10477163>, and Carbon and
+    Duchesne (2024) <doi:10.1007/s10463-023-00883-5>.
+License: GPL (>= 3)
+URL: https://aureliennicosiaulaval.github.io/GLBFP/,
+        https://github.com/AurelienNicosiaULaval/GLBFP
+BugReports: https://github.com/AurelienNicosiaULaval/GLBFP/issues
+Depends: R (>= 4.1.0)
+Imports: ggplot2, plotly
+Suggests: knitr, MASS, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-17 14:54:46 UTC; aureliennicosia
+Author: Aurélien Nicosia [aut, cre],
+  Thierry Duchesne [aut],
+  Michel Carbon [aut]
+Maintainer: Aurélien Nicosia <aurelien.nicosia@mat.ulaval.ca>
+Repository: CRAN
+Date/Publication: 2026-06-17 21:50:17 UTC

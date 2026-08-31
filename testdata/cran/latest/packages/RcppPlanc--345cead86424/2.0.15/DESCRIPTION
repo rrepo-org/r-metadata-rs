@@ -1,0 +1,50 @@
+Package: RcppPlanc
+Type: Package
+Title: Parallel Low-Rank Approximation with Nonnegativity Constraints
+Version: 2.0.15
+Date: 2026-02-25
+Authors@R: c(
+  person(given = 'Andrew', family = 'Robbins', email = 'robbiand@umich.edu', role = c('aut', 'cre'), comment = c(ORCID = "0009-0001-7961-7489")),
+  person(given = 'Yichen', family = 'Wang', email = 'wayichen@umich.edu', role = c('aut')),
+  person(given = 'Joshua', family = 'Welch', role = c('cph'), comment = c(ORCID = "0000-0002-5869-2391")),
+  person(given = 'Ramakrishnan', family = 'Kannan', role = c('cph'), comment = c(ORCID = "0000-0002-5852-4806")),
+  person("Conrad", "Sanderson", role = "cph", comment = c(ORCID = "0000-0002-0049-4501")),
+  person("Blue Brain Project/EPFL", role = "cph", comment = "HighFive Headers"),
+  person("UT-Batelle", role = c('cph'), comment = "The original PLANC code"))
+Description: 'Rcpp' bindings for 'PLANC', a highly parallel
+             and extensible NMF/NTF  (Non-negative Matrix/Tensor Factorization) library.
+             Wraps algorithms described in
+             Kannan et. al (2018) <doi:10.1109/TKDE.2017.2767592> and
+             Eswar et. al (2021) <doi:10.1145/3432185>.
+             Implements algorithms described in
+             Welch et al. (2019) <doi:10.1016/j.cell.2019.05.006>,
+             Gao et al. (2021) <doi:10.1038/s41587-021-00867-x>, and
+             Kriebel & Welch (2022) <doi:10.1038/s41467-022-28431-4>.
+Encoding: UTF-8
+Imports: methods, Rcpp, Matrix, hdf5r.Extra
+Suggests: knitr, withr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress, HighFive
+License: GPL (>= 2)
+URL: https://github.com/welch-lab/RcppPlanc/
+BugReports: https://github.com/welch-lab/RcppPlanc/issues/
+RoxygenNote: 7.3.2
+SystemRequirements: C++17, cmake >= 3.24.0, hdf5, git, patch, gnumake,
+        hwloc, GNU make
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-02-25 06:42:23 UTC; andrew
+Author: Andrew Robbins [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-7961-7489>),
+  Yichen Wang [aut],
+  Joshua Welch [cph] (ORCID: <https://orcid.org/0000-0002-5869-2391>),
+  Ramakrishnan Kannan [cph] (ORCID:
+    <https://orcid.org/0000-0002-5852-4806>),
+  Conrad Sanderson [cph] (ORCID: <https://orcid.org/0000-0002-0049-4501>),
+  Blue Brain Project/EPFL [cph] (HighFive Headers),
+  UT-Batelle [cph] (The original PLANC code)
+Maintainer: Andrew Robbins <robbiand@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-02-26 10:40:02 UTC

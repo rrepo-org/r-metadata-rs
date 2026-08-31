@@ -1,0 +1,36 @@
+Package: exams.forge
+Type: Package
+Title: Support for Compiling Examination Tasks using the 'exams'
+        Package
+Version: 1.0.13
+Date: 2026-03-04
+Authors@R: c(
+ person(given="Sigbert", family="Klinke", email="sigbert@hu-berlin.de", 
+  role=c("aut","cre"), comment=c(ORCID="0000-0003-3337-1863")),
+ person(given="Kleio", family="Chrysopoulou Tseva", email="kleio.chrysopoulou.tseva@hu-berlin.de",
+  role="ctb"))
+Description: The main aim is to further facilitate the creation of exercises based on the package 'exams' 
+    by Grün, B., and Zeileis, A. (2009) <doi:10.18637/jss.v029.i10>. Creating effective student exercises 
+    involves challenges such as creating appropriate data sets and ensuring access to intermediate values 
+    for accurate explanation of solutions. The functionality includes the generation of univariate and 
+    bivariate data including simple time series, functions for theoretical distributions and their approximation, 
+    statistical and mathematical calculations for tasks in basic statistics courses as well as general tasks 
+    such as string manipulation, LaTeX/HTML formatting and the editing of XML task files for 'Moodle'.
+License: GPL-3
+LazyData: true
+Depends: R (>= 3.5.0), tools, polynom
+Imports: base64enc, httr, knitr, MASS, methods, magrittr, rjson,
+        rstudioapi, spelling, stringdist, stringr, stranslate, tinytex,
+        utils, xml2, xtable, yaml
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: rmarkdown, exams, extraDistr, hunspell
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-05 09:23:51 UTC; sigbert
+Author: Sigbert Klinke [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3337-1863>),
+  Kleio Chrysopoulou Tseva [ctb]
+Maintainer: Sigbert Klinke <sigbert@hu-berlin.de>
+Repository: CRAN
+Date/Publication: 2026-03-05 10:50:02 UTC

@@ -1,0 +1,35 @@
+Package: landgraph
+Type: Package
+Title: Graphs and Covariance for Landscape Genetics
+Version: 0.0.1
+Date: 2026-06-11
+Authors@R: c(
+  person(given = "Bill", family = "Peterman", role = c("aut", "cre", "cph"),
+         email = "peterman.73@osu.edu"),
+  person(given = c("Nathaniel", "S."), family = "Pope", role = c("aut", "cph"),
+         email = "nspope@utexas.edu"))
+Description: Shared, dependency-light primitives for landscape-genetic network
+  methods: a lightweight deme/landscape graph (vertex coordinates and an undirected
+  edge list) with constructors from coordinates; genetic covariance and distance
+  from biallelic or multiallelic data (the Yang-style normalized-dosage covariance
+  and the Dyer-style multivariate covariance); and antisymmetric per-edge
+  directional covariate builders (the gradient of a scalar potential, and the
+  projection of a vector flow field). Used by 'terradish' (symmetric resistance)
+  and 'dragonflow' (asymmetric gene flow). No compiled code.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats
+Suggests: terra, deldir, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/wpeterman/landgraph
+BugReports: https://github.com/wpeterman/landgraph/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-30 18:24:49 UTC; peterman.73
+Author: Bill Peterman [aut, cre, cph],
+  Nathaniel S. Pope [aut, cph]
+Maintainer: Bill Peterman <peterman.73@osu.edu>
+Repository: CRAN
+Date/Publication: 2026-07-06 13:50:11 UTC

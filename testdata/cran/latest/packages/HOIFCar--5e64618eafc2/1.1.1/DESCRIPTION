@@ -1,0 +1,26 @@
+Package: HOIFCar
+Type: Package
+Title: Covariate Adjustment in RCT by Higher-Order Influence Functions
+Version: 1.1.1
+Authors@R: c( 
+    person("Sihui", "Zhao", email = "shzhao0115@sjtu.edu.cn", role = "aut"),
+    person("Xinbo", "Wang", email = "cinbo_w@sjtu.edu.cn", role = c("cre", "aut")),
+    person("Yujia", "Gu", email = "guyj@mail.tsinghua.edu.cn", role = "aut"),
+    person("Wei", "Ma", email = "mawei@ruc.edu.cn", role = "ctb"),
+    person("Liu", "Liu", email = "linliu@sjtu.edu.cn", role = "ctb"))
+Maintainer: Xinbo Wang <cinbo_w@sjtu.edu.cn>
+Description: Estimates treatment effects  using covariate adjustment methods in Randomized Clinical Trials (RCT) motivated by higher-order influence functions (HOIF). Provides point estimates, oracle bias, variance, and approximate variance for HOIF-adjusted estimators. For methodology details, see Zhao et al. (2024) <doi:10.48550/arXiv.2411.08491> and Gu et al. (2025) <doi:10.48550/arXiv.2512.20046>.
+License: MIT + file LICENSE
+Suggests: mvtnorm
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Imports: brglm2, BB, parallel, doParallel, foreach, glmnet, stats, MASS
+Packaged: 2026-02-02 01:25:59 UTC; xinbowang
+Author: Sihui Zhao [aut],
+  Xinbo Wang [cre, aut],
+  Yujia Gu [aut],
+  Wei Ma [ctb],
+  Liu Liu [ctb]
+Repository: CRAN
+Date/Publication: 2026-02-02 14:40:19 UTC

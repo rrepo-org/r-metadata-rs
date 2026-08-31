@@ -1,0 +1,32 @@
+Package: CausalImpact
+Title: Inferring Causal Effects using Bayesian Structural Time-Series
+        Models
+Date: 2025-09-24
+Authors@R: c(person(given = c("Kay", "H."),
+                    family = "Brodersen",
+                    role = "aut",
+                    email = "kbrodersen@google.com"),
+             person(given = "Alain",
+                    family = "Hauser",
+                    role = c("aut", "cre"),
+                    email = "alhauser@google.com"))
+Maintainer: Alain Hauser <alhauser@google.com>
+URL: https://google.github.io/CausalImpact/
+Description: Implements a Bayesian approach to causal impact estimation in time
+  series, as described in Brodersen et al. (2015) <DOI:10.1214/14-AOAS788>.
+  See the package documentation on GitHub
+  <https://google.github.io/CausalImpact/> to get started.
+Copyright: Copyright (C) 2014-2025 Google, Inc.
+Version: 1.4.1
+VignetteBuilder: knitr
+License: Apache License 2.0 | file LICENSE
+Imports: assertthat (>= 0.2.0), Boom, ggplot2, zoo
+Depends: bsts (>= 0.9.0)
+Config/testthat/edition: 3
+Suggests: covr, knitr, rmarkdown, testthat, vdiffr
+NeedsCompilation: no
+Packaged: 2025-09-26 12:04:55 UTC; husi
+Author: Kay H. Brodersen [aut],
+  Alain Hauser [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-09-26 23:30:19 UTC

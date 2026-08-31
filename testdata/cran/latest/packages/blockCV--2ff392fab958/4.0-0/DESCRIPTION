@@ -1,0 +1,49 @@
+Package: blockCV
+Type: Package
+Title: Spatial and Environmental Blocking for Cross-Validation
+Version: 4.0-0
+Date: 2026-08-15
+Authors@R: c(person("Roozbeh", "Valavi", role = c("aut", "cre"),
+                    email = "valavi.r@gmail.com", comment = c(ORCID = "0000-0003-2495-5277")),
+             person("Jane", "Elith", role = "aut",
+                    email = "j.elith@unimelb.edu.au"),
+             person("José", "Lahoz-Monfort", role = "aut",
+                    email = "jose.lahoz@unimelb.edu.au"),
+             person("Ian", "Flint", role = "aut",
+                    email = "ian.flint@unimelb.edu.au"),
+             person("Gurutzeta", "Guillera-Arroita", role = "aut",
+                    email = "gurutzeta.guillera@unimelb.edu.au"))
+URL: https://github.com/rvalavi/blockCV
+BugReports: https://github.com/rvalavi/blockCV/issues
+Maintainer: Roozbeh Valavi <valavi.r@gmail.com>
+Description: Creates spatially or environmentally separated, or
+    group-preserving, training and testing folds for k-fold,
+    leave-group-out, and leave-one-out cross-validation. Provides spatial
+    blocking, clustering, buffering, and nearest-neighbour distance-matching
+    methods, together with tools to visualise folds, summarise fold sizes and class balance, 
+    and assess train–test separation and environmental novelty. Also estimates spatial
+    autocorrelation ranges in point samples and continuous raster covariates
+    to provide an initial distance scale for designing spatial folds. Methods
+    are described in Valavi, R. et al. (2019)
+    <doi:10.1111/2041-210X.13107>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: sf (>= 1.0), terra (>= 1.6-41), ggplot2 (>= 3.3.6), cowplot,
+        automap (>= 1.1-20), Rcpp (>= 1.0.2)
+Suggests: shiny (>= 1.7), tmap (>= 2.0), biomod2, gstat, methods,
+        knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LinkingTo: Rcpp
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-15 10:10:55 UTC; val085
+Author: Roozbeh Valavi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2495-5277>),
+  Jane Elith [aut],
+  José Lahoz-Monfort [aut],
+  Ian Flint [aut],
+  Gurutzeta Guillera-Arroita [aut]
+Repository: CRAN
+Date/Publication: 2026-08-20 11:12:25 UTC

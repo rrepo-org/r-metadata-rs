@@ -1,0 +1,33 @@
+Package: filearray
+Type: Package
+Title: File-Backed Array for Out-of-Memory Computation
+Version: 0.2.3
+Language: en-US
+Encoding: UTF-8
+License: LGPL-3
+URL: https://dipterix.org/filearray/,
+        https://github.com/dipterix/filearray
+BugReports: https://github.com/dipterix/filearray/issues
+Authors@R: c(
+    person(
+        "Zhengjia", "Wang", role = c("aut", "cre", "cph"),
+        email = "dipterix.wang@gmail.com", 
+        comment = c(ORCID = "0000-0001-5629-1116")
+    ))
+Description: Stores large arrays in files to avoid occupying large
+    memories. Implemented with super fast gigabyte-level multi-threaded 
+    reading/writing via 'OpenMP'. Supports multiple non-character data 
+    types (double, float, complex, integer, logical, and raw).
+Imports: digest, fastmap (>= 1.1.1), methods, Rcpp, uuid (>= 1.1.0)
+Suggests: bit64, knitr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: BH, Rcpp
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-20 16:43:08 UTC; dipterix
+Author: Zhengjia Wang [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5629-1116>)
+Maintainer: Zhengjia Wang <dipterix.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 11:00:02 UTC

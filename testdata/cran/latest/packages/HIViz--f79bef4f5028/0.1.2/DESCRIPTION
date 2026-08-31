@@ -1,0 +1,36 @@
+Package: HIViz
+Type: Package
+Title: Interactive Dashboard for 'HIV' Data Visualization
+Version: 0.1.2
+Authors@R: c(
+    person("Atefeh", "Rashidi Pour", 
+           email = "rashidiatefeh98@gmail.com", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-3834-3183")),
+    person("Marzieh", "Rashidipour", 
+           email = "marzyeh.rashidi@gmail.com", 
+           role = "aut",
+           comment = c(ORCID = "0000-0003-4024-765X")))
+Description: An interactive 'Shiny' dashboard for visualizing and exploring key metrics related to HIV/AIDS, including prevalence, incidence, mortality, and treatment coverage. The dashboard is designed to work with a dataset containing specific columns with standardized names. These columns must be present in the input data for the app to function properly: year: Numeric year of the data (e.g. 2010, 2021); sex: Gender classification (e.g. Male, Female); age_group: Age bracket (e.g. 15–24, 25–34); hiv_prevalence: Estimated HIV prevalence percentage; hiv_incidence: Number of new HIV cases per year; aids_deaths: Total AIDS-related deaths; plhiv: Estimated number of people living with HIV; art_coverage: Percentage receiving antiretroviral therapy (ART); testing_coverage: HIV testing services coverage; causes: Description of likely HIV transmission cause (e.g. unprotected sex, drug use). The dataset structure must strictly follow this column naming convention for the dashboard to render correctly.
+Depends: R(>= 3.5.0)
+VignetteBuilder: knitr
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: shiny (>= 1.7.0), shinydashboard, readxl, haven, dplyr, DT,
+        ggplot2, plotly, tidyr,wordcloud, ggrepel, paletteer,
+        shinyWidgets, tools
+RoxygenNote: 7.3.2
+URL: https://github.com/Atefehrashidi/HIViz
+BugReports: https://github.com/Atefehrashidi/HIViz/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-07-22 20:23:45 UTC; Administrator
+Author: Atefeh Rashidi Pour [aut, cre] (ORCID:
+    <https://orcid.org/0009-0002-3834-3183>),
+  Marzieh Rashidipour [aut] (ORCID:
+    <https://orcid.org/0000-0003-4024-765X>)
+Maintainer: Atefeh Rashidi Pour <rashidiatefeh98@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-23 19:20:08 UTC

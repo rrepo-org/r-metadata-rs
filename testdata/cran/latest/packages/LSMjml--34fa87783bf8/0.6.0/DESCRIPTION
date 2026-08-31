@@ -1,0 +1,22 @@
+Package: LSMjml
+Type: Package
+Title: Fitting Latent Space Item Response Models using Joint Maximum
+        Likelihood Estimation
+Version: 0.6.0
+Authors@R: person("Dylan", "Molenaar", role=c("aut", "cre"),email="d.molenaar@uva.nl")
+Author: Dylan Molenaar [aut, cre]
+Maintainer: Dylan Molenaar <d.molenaar@uva.nl>
+Description: In Latent Space Item Response Models, subjects and items are embedded in a multidimensional Euclidean latent space. 
+	As such, interactions among persons, items, and person-item combinations can be revealed that are unmodelled in 
+	more conventional item response theory models. This package implements the methods from Molenaar & Jeon (in press) and can be used to fit Latent Space Item Response Models 
+	to data using joint maximum likelihood estimation. The package can handle binary data, ordinal data, and data with mixed scales. 
+	The package incorporates facilities for data simulation, rotation of the latent space, and K-fold cross-validation to select the 
+	number of dimensions of the latent space.
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.12), lavaan, pROC, psych
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2025-12-15 14:34:34 UTC; dmolena1
+Repository: CRAN
+Date/Publication: 2025-12-19 15:10:08 UTC

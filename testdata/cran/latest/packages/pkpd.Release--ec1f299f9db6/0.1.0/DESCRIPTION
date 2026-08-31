@@ -1,0 +1,41 @@
+Package: pkpd.Release
+Type: Package
+Title: Model Fitting and Simulation for Drug Release Kinetics and PK/PD
+Version: 0.1.0
+Author: Paul Angelo C. Manlapaz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1203-2064>)
+Maintainer: Paul Angelo C. Manlapaz <pacmanlapaz@gmail.com>
+Description: Provides a comprehensive framework for model fitting and simulation
+    of drug release kinetics, pharmacokinetics (PK), and pharmacodynamics (PD).
+    The package implements widely used mechanistic and empirical models for in
+    vitro drug release, including zero-order, first-order, Higuchi,
+    Korsmeyer-Peppas, Hixson-Crowell, and Weibull models. Pharmacokinetic
+    functionality includes linear and nonlinear functions for one- and
+    two-compartment models for intravenous bolus and oral administration,
+    Michaelis-Menten kinetics, and non-compartmental analysis (NCA).
+    Pharmacodynamic and dose-response modeling is supported through Emax-based
+    models, including stimulatory (sigmoid Emax) and inhibitory (sigmoid Imax)
+    Hill models, four- and five-parameter logistic models, as well as median
+    toxic dose (TD50) and lethal dose (LD50) models. The package is intended to
+    support parameter estimation, simulation, and model comparison in
+    pharmaceutical research, drug development, and pharmacometrics education.
+    For more details, see Gabrielsson & Weiner (2000) <ISBN:9186274929>,
+    Holford & Sheiner (1981) <doi:10.2165/00003088-198106060-00002>, and
+    Manlapaz (2025) <doi:10.32614/CRAN.package.adsoRptionCMF>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats, ggplot2, minpack.lm, gridExtra, scales
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Authors@R: 
+    c(person(given = "Paul Angelo C.",
+             family = "Manlapaz",
+             role = c("aut", "cre"),
+             email = "pacmanlapaz@gmail.com",
+             comment = c(ORCID = "0000-0002-1203-2064")))
+NeedsCompilation: no
+Packaged: 2026-01-22 09:48:28 UTC; PTRI
+Repository: CRAN
+Date/Publication: 2026-01-27 08:40:02 UTC

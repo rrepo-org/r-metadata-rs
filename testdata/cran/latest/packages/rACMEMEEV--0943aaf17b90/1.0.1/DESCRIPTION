@@ -1,0 +1,23 @@
+Package: rACMEMEEV
+Title: Multi-Variate Measurement Error Adjustment
+Version: 1.0.1
+Authors@R: 
+    person("Alexander", "Lee", , "westford14@gmail.com", role = c("aut", "cre", "cph"))
+Description: A methodology to perform multivariate measurement error adjustment using external validation data. Allows users to remove the attenuating effect of measurement error by incorporating a distribution of external validation data, and allows for plotting of all resultant adjustments. Sensitivity analyses can also be run through this package to test how different ranges of validity coefficients can impact the effect of the measurement error adjustment. The methods implemented in this package are based on the work by Muoka, A., Agogo, G., Ngesa, O., Mwambi, H. (2020): <doi:10.12688/f1000research.27892.1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), BH, glmnet
+Config/testthat/edition: 3
+Imports: rjags, MCMCpack, ggplot2, reshape2, rstan, stats, utils,
+        ggpubr, patchwork, bayesplot, doSNOW, foreach, snow,
+        parallelly, dplyr
+VignetteBuilder: knitr
+URL: https://github.com/westford14/rACME-MEEV
+BugReports: https://github.com/westford14/rACME-MEEV/issues
+NeedsCompilation: no
+Packaged: 2025-12-13 08:43:29 UTC; westford14
+Author: Alexander Lee [aut, cre, cph]
+Maintainer: Alexander Lee <westford14@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-13 11:00:02 UTC

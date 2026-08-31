@@ -1,0 +1,25 @@
+Package: compareCstat
+Title: Compare C-Statistics (Concordance) Between Survival Models
+Version: 0.1.0
+Authors@R: c(person("Hairong", "Liu", email = "hliu146@jh.edu", role = c("aut")), person("Ning", "Meng", email = "nmeng2@jh.edu", role = c("aut", "cre")))
+Description: Compare C-statistics (concordance statistics)
+    between two survival models, using either bootstrap resampling (Harrell's C)
+    or Uno's C with perturbation-resampling (from the survC1 package). Returns
+    confidence intervals and a p-value for the difference in C-statistics.
+    Useful for evaluating and comparing predictive performance of survival models.
+    Methods implemented for Uno's C are described in Uno et al. (2011) <doi:10.1002/sim.4154>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: boot
+Suggests: survival, survC1
+RoxygenNote: 7.3.2
+URL: https://github.com/Lemonade0924/compareCstat
+BugReports: https://github.com/Lemonade0924/compareCstat/issues
+NeedsCompilation: no
+Packaged: 2025-06-05 04:41:56 UTC; Ning
+Author: Hairong Liu [aut],
+  Ning Meng [aut, cre]
+Maintainer: Ning Meng <nmeng2@jh.edu>
+Repository: CRAN
+Date/Publication: 2025-06-06 13:30:01 UTC

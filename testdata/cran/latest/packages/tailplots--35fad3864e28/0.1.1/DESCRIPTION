@@ -1,0 +1,26 @@
+Package: tailplots
+Title: Estimators and Plots for Gamma and Pareto Tail Detection
+Version: 0.1.1
+Authors@R: c(
+    person("Bernhard", "Klar ", , "Bernhard.Klar@kit.edu", role = c("aut", "cre")),
+    person("Lucas", "Iglesias", , "Lucas.Iglesias@student.kit.edu", role = c("aut"))
+    )
+Author: Bernhard Klar [aut, cre],
+  Lucas Iglesias [aut]
+Maintainer: Bernhard Klar <Bernhard.Klar@kit.edu>
+Description: Estimators for two functionals used to detect Gamma, Pareto or Lognormal distributions, as well as distributions exhibiting similar tail behavior, as introduced by Iwashita and Klar (2023) <doi:10.1111/stan.12316> and 
+            Klar (2024) <doi:10.1080/00031305.2024.2413081>. 
+            One of these functionals, g, originally proposed by Asmussen and Lehtomaa (2017) <doi:10.3390/risks5010010>, distinguishes between log-convex and log-concave tail behavior. 
+            Furthermore the characterization of the lognormal distribution is based on the work of Mosimann (1970) <doi:10.2307/2284599>.
+            The package also includes methods for visualizing these estimators and their associated confidence intervals across various threshold values.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: Rcpp
+LinkingTo: Rcpp
+Suggests: actuar
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-09-08 12:57:37 UTC; Klar
+Repository: CRAN
+Date/Publication: 2025-09-08 14:00:03 UTC

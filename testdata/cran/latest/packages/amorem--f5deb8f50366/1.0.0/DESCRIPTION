@@ -1,0 +1,35 @@
+Package: amorem
+Title: Augmented Modelling of Relational Events
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Francisco", family = "Richter", email = "richtf@usi.ch", role = c("aut", "cre")),
+    person(given = "Martina", family = "Boschi", role = "aut"),
+    person(given = "Ernst C.", family = "Wit", role = "aut"),
+    person(given = "Melania", family = "Lembo", role = "aut"))
+Description: Utilities for simulating and prototyping relational event models,
+    including helpers to generate dynamic event sequences and covariate
+    processes for sender and receiver sets. The endogenous-effect and
+    case-control estimation machinery follows Juozaitiene and Wit (2024)
+    <doi:10.1093/jrsssa/qnae132>.
+License: MIT + file LICENSE
+Depends: R (>= 4.2.0)
+URL: https://franciscorichter.github.io/amorem/,
+        https://github.com/franciscorichter/amorem
+Imports: splines, stats, Rcpp, survival, withr
+LinkingTo: Rcpp
+Suggests: torch, testthat (>= 3.1.0), mgcv, coxme, roxygen2 (>= 7.3.0),
+        pkgdown (>= 2.0.0), knitr, rmarkdown
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-06-22 19:25:02 UTC; pancho
+Author: Francisco Richter [aut, cre],
+  Martina Boschi [aut],
+  Ernst C. Wit [aut],
+  Melania Lembo [aut]
+Maintainer: Francisco Richter <richtf@usi.ch>
+Repository: CRAN
+Date/Publication: 2026-06-29 13:50:12 UTC

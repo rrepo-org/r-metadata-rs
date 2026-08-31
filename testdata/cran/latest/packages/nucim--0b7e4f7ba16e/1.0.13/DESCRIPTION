@@ -1,0 +1,27 @@
+Package: nucim
+Title: Nucleome Imaging Toolbox
+Version: 1.0.13
+Date: 2026-01-12
+Authors@R: c(person("Volker", "Schmid", role = c("aut", "cre"),
+		     email = "volker.schmid@lmu.de"))
+biocViews:
+Depends: R (>= 3.0.0), EBImage, bioimagetools (>= 1.1.4)
+Imports: fields, parallel, stringr
+SystemRequirements: tiff fftw libcurl openssl
+Description: 
+    Tools for 4D nucleome imaging. 
+    Quantitative analysis of the 3D nuclear landscape recorded with super-resolved fluorescence microscopy. 
+    See Volker J. Schmid, Marion Cremer, Thomas Cremer (2017) <doi:10.1016/j.ymeth.2017.03.013>.
+License: GPL-3
+URL: https://bioimaginggroup.github.io/nucim/
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, R.rsp
+VignetteBuilder: knitr, R.rsp
+BugReports: https://github.com/bioimaginggroup/nucim/issues
+NeedsCompilation: no
+Packaged: 2026-01-12 14:35:57 UTC; volkerschmid
+Author: Volker Schmid [aut, cre]
+Maintainer: Volker Schmid <volker.schmid@lmu.de>
+Repository: CRAN
+Date/Publication: 2026-01-12 15:00:02 UTC

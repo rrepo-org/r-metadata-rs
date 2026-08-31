@@ -1,0 +1,37 @@
+Type: Package
+Package: postcard
+Title: Estimating Marginal Effects with Prognostic Covariate Adjustment
+Version: 1.1.0
+Authors@R: c(
+    person("Mathias Lerbech", "Jeppesen", ,
+           "mathiasljeppesen@outlook.com", role = c("aut", "cre")),
+    person("Emilie", "Hojbjerre-Frandsen", ,
+           "ehfd@novonordisk.com", role = "aut"),
+    person("Novo Nordisk A/S", role = "cph")
+  )
+Description: Conduct power analyses and inference of marginal effects. 
+    Uses plug-in estimation and influence functions to perform robust inference,
+    optionally leveraging historical data to increase precision with
+    prognostic covariate adjustment. The methods are described in
+    Højbjerre-Frandsen et al. (2025) <doi:10.48550/arXiv.2503.22284>.
+License: MIT + file LICENSE
+URL: https://novonordisk-opensource.github.io/postcard/,
+        https://github.com/NovoNordisk-OpenSource/postcard
+BugReports: https://github.com/NovoNordisk-OpenSource/postcard/issues
+Imports: cli, Deriv, dplyr, earth, generics, gggrid, ggplot2, options,
+        parsnip, rlang, rsample, scales, stats, stringr, tune, utils,
+        workflowsets, xgboost, yardstick
+Suggests: knitr, LiblineaR, MASS, ranger, rmarkdown, testthat (>=
+        3.0.0), vdiffr, withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-09-17 12:22:14 UTC; Mathias
+Author: Mathias Lerbech Jeppesen [aut, cre],
+  Emilie Hojbjerre-Frandsen [aut],
+  Novo Nordisk A/S [cph]
+Maintainer: Mathias Lerbech Jeppesen <mathiasljeppesen@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-09-17 12:50:02 UTC

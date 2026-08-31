@@ -1,0 +1,28 @@
+Package: rddensity
+Type: Package
+Title: Manipulation Testing Based on Density Discontinuity
+Date: 2026-05-21
+Version: 3.0
+Authors@R: c(
+    person("Matias D.", "Cattaneo", email = "matias.d.cattaneo@gmail.com", role = c("aut", "cre")),
+    person("Michael", "Jansson", email = "michael.jansson.berkeley@gmail.com", role = "aut"),
+    person("Xinwei", "Ma", email = "xinweima.pku@gmail.com", role = "aut"))
+Author: Matias D. Cattaneo [aut, cre],
+  Michael Jansson [aut],
+  Xinwei Ma [aut]
+Maintainer: Matias D. Cattaneo <matias.d.cattaneo@gmail.com>
+Description: Density discontinuity testing (a.k.a. manipulation testing) is commonly employed in regression discontinuity designs and other program evaluation settings to detect perfect self-selection (manipulation) around a cutoff where treatment/policy assignment changes. This package implements manipulation testing procedures using local polynomial density estimators: rddensity() constructs test statistics and p-values given a prespecified cutoff, rdbwdensity() performs data-driven bandwidth selection, and rdplotdensity() constructs density plots.
+URL: https://rdpackages.github.io/,
+        https://github.com/rdpackages/rddensity
+BugReports: https://github.com/rdpackages/rddensity/issues
+Depends: R (>= 3.1.0)
+License: GPL-3
+Encoding: UTF-8
+Imports: ggplot2, lpdensity (>= 2.2)
+Suggests: testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-21 19:17:07 UTC; CodexSandboxOffline
+Repository: CRAN
+Date/Publication: 2026-05-21 21:00:02 UTC

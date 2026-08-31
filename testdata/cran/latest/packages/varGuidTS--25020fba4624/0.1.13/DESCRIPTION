@@ -1,0 +1,35 @@
+Package: varGuidTS
+Version: 0.1.13
+Date: 2026-05-20
+Title: Variance-Guided Time-Series Modeling for Temporal Risk Detection
+Authors@R: c(person("Zihao", "Wang", role = "aut"),
+  person("Min", "Lu", email = "luminwin@gmail.com", role = c("aut", "cre")))
+Author: Zihao Wang [aut],
+  Min Lu [aut, cre]
+Maintainer: Min Lu <luminwin@gmail.com>
+BugReports: https://github.com/zionwzz/variance-guided-risk-demo/issues
+Depends: R (>= 4.1.0)
+Imports: stats, glmnet
+Suggests: testthat (>= 3.0.0)
+Description: Fits balanced-panel autoregressive models with conditional
+  heteroscedasticity for temporal risk detection. The main estimator combines
+  autoregressive exogenous mean modeling with GARCH-X variance modeling,
+  subject-specific baseline terms, shared population coefficients, and L1
+  penalization for high-dimensional covariates. The package returns
+  conditional mean and variance estimates, coefficient summaries, simulations,
+  and exceedance-based risk scores defined as estimated conditional
+  threshold-exceedance probabilities. The implementation builds on the lasso
+  of Tibshirani (1996) <doi:10.1111/j.2517-6161.1996.tb02080.x>,
+  generalized autoregressive conditional heteroscedasticity of Bollerslev
+  (1986) <doi:10.1016/0304-4076(86)90063-1>, and L1-regularized
+  high-dimensional time-series modeling of Medeiros and Mendes (2016)
+  <doi:10.1016/j.jeconom.2015.10.011>.
+License: MIT + file LICENSE
+URL: https://github.com/zionwzz/variance-guided-risk-demo
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-20 18:10:00 UTC; minlu
+Repository: CRAN
+Date/Publication: 2026-05-28 11:10:02 UTC

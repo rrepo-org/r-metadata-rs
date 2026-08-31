@@ -1,0 +1,30 @@
+Package: oecdoda
+Title: Seamless Access to OECD Official Development Assistance (ODA)
+        Data
+Version: 0.1.0
+Authors@R: c(
+    person("Christoph", "Scheuch", , "christoph@tidy-intelligence.com", 
+            role = c("aut", "cre", "cph"),
+            comment = c(ORCID = "0009-0004-0423-6819"))
+    )
+Description: Access and Analyze Official Development Assistance (ODA) data using 
+    the OECD API <https://gitlab.algobank.oecd.org/public-documentation/dotstat-migration/-/raw/main/OECD_Data_API_documentation.pdf>.
+    ODA data includes sovereign-level aid data such as key aggregates (DAC1), geographical
+    distributions (DAC2A), project-level data (CRS), and multilateral contributions (Multisystem).
+License: MIT + file LICENSE
+Depends: R (>= 4.1)
+Imports: cli (>= 3.0.0), httr2 (>= 1.0.0), tibble
+Suggests: curl, testthat (>= 3.0.0)
+URL: https://github.com/tidy-intelligence/r-oecdoda,
+        https://tidy-intelligence.github.io/r-oecdoda/
+BugReports: https://github.com/tidy-intelligence/r-oecdoda/issues
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-07-24 12:42:08 UTC; krise
+Author: Christoph Scheuch [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0004-0423-6819>)
+Maintainer: Christoph Scheuch <christoph@tidy-intelligence.com>
+Repository: CRAN
+Date/Publication: 2025-07-25 16:20:02 UTC

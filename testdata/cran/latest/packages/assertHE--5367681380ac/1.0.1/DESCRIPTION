@@ -1,0 +1,42 @@
+Package: assertHE
+Title: Visualisation and Verification of Health Economic Decision
+        Models
+Version: 1.0.1
+Authors@R: c(
+    person("Robert", "Smith", , "rsmith@darkpeakanalytics.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-0245-3217")),
+    person("Wael", "Mohammed", , "wmohammed@darkpeakanalytics.com", role = c("aut"),
+           comment = c(ORCID = "0000-0003-0370-4903")),
+    person("Jack", "Smith", , "", role = c("aut")),
+    person("Oliver", "Dolin", , "odolin@darkpeakanalytics.com", role = c("aut"),
+           comment = c(ORCID = "0000-0003-0766-1277")),
+    person("Dark Peak Analytics Ltd", role = c("cph", "fnd"))
+  )
+Description: Designed to help health economic modellers when building and reviewing models. 
+    The visualisation functions allow users to more easily review the network of functions 
+    in a project, and get lay summaries of them. The asserts included are intended to check for common errors,
+    thereby freeing up time for modellers to focus on tests specific to the individual model in development or review.
+    For more details see Smith and colleagues (2024)<doi:10.12688/wellcomeopenres.23180.1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), colourpicker, clipr, jsonlite
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+Imports: assertthat, ggplot2, dplyr, utils, visNetwork, covr,
+        htmltools, officer, flextable, knitr, shiny, shinyjs,
+        rstudioapi, roxygen2, methods, waiter, igraph, httr
+URL: https://dark-peak-analytics.github.io/assertHE/,
+        https://github.com/dark-peak-analytics/assertHE
+BugReports: https://github.com/dark-peak-analytics/assertHE/issues
+NeedsCompilation: no
+Packaged: 2026-02-20 11:04:00 UTC; wael
+Author: Robert Smith [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-0245-3217>),
+  Wael Mohammed [aut] (ORCID: <https://orcid.org/0000-0003-0370-4903>),
+  Jack Smith [aut],
+  Oliver Dolin [aut] (ORCID: <https://orcid.org/0000-0003-0766-1277>),
+  Dark Peak Analytics Ltd [cph, fnd]
+Maintainer: Robert Smith <rsmith@darkpeakanalytics.com>
+Repository: CRAN
+Date/Publication: 2026-02-20 11:40:13 UTC

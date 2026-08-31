@@ -1,0 +1,30 @@
+Package: didintrjl
+Title: Intersection Difference-in-Differences
+Version: 0.2.6
+Authors@R: 
+    person("Eric", "Jamieson", email = "ericbrucejamieson@gmail.com", role = c("aut", "cre", "cph"))
+Description: A wrapper for the Julia package 'DiDInt.jl' <https://ebjamieson97.github.io/DiDInt.jl/stable/>
+ which implements intersection difference-in-differences (DID-INT), a method
+ developed by Karim & Webb (2025) <doi:10.48550/arXiv.2412.14447>. Allows for
+ unbiased estimation of the average effect of treatment on the treated (ATT) in
+ cases when the common causal covariates assumption is violated. Also computes
+ p-values for the ATT via the randomization inference procedure described in
+ MacKinnon and Webb (2020) <doi:10.1016/j.jeconom.2020.04.024>.
+License: MIT + file LICENSE
+Depends: R (>= 3.4.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+SystemRequirements: Julia (>= 1.10), DiDInt.jl
+BugReports: https://github.com/ebjamieson97/didintrjl/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://ebjamieson97.github.io/didintrjl/,
+        https://github.com/ebjamieson97/undidR
+Config/testthat/edition: 3
+Imports: JuliaConnectoR, ggplot2, rlang
+NeedsCompilation: no
+Packaged: 2026-07-02 00:39:26 UTC; Eric Bruce Jamieson
+Author: Eric Jamieson [aut, cre, cph]
+Maintainer: Eric Jamieson <ericbrucejamieson@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-07 09:50:02 UTC

@@ -1,0 +1,30 @@
+Package: ramsvm
+Type: Package
+Title: Reinforced Angle-Based Multicategory Support Vector Machines
+Version: 2.4
+Date: 2025-05-04
+Author: Chong Zhang [aut],
+  Yufeng Liu [aut],
+  Shannon T. Holloway [aut, cre]
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Authors@R: c(person(given = "Chong",
+                        family = "Zhang",
+                        role = "aut"),
+                 person(given = "Yufeng",
+                        family = "Liu",
+                        role = "aut"),
+                 person(given = c("Shannon", "T."),
+                        family = "Holloway",
+                        role = c("aut", "cre"),
+                        email = "shannon.t.holloway@gmail.com"))
+Depends: foreach, doParallel, methods, parallel, stats
+Description: Provides a solution path for Reinforced Angle-based Multicategory 
+    Support Vector Machines, with linear learning, polynomial learning, and 
+    Gaussian kernel learning. C. Zhang, Y. Liu, J. Wang and H. Zhu. (2016) 
+    <doi:10.1080/10618600.2015.1043010>.
+License: GPL-2
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2025-05-04 17:16:46 UTC; sth45
+Repository: CRAN
+Date/Publication: 2025-05-04 17:30:02 UTC

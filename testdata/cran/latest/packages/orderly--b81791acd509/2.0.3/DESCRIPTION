@@ -1,0 +1,51 @@
+Package: orderly
+Title: Lightweight Reproducible Reporting
+Version: 2.0.3
+Authors@R: c(person("Rich", "FitzJohn", role = c("aut", "cre"),
+                    email = "rich.fitzjohn@gmail.com"),
+             person("Robert", "Ashton", role = "aut"),
+             person("Martin", "Eden", role = "aut"),
+             person("Alex", "Hill", role = "aut"),
+             person("Wes", "Hinsley", role = "aut"),
+             person("Mantra", "Kusumgar", role = "aut"),
+             person("Paul", "Liétar", role = "aut"),
+             person("James", "Thompson", role = "aut"),
+             person("Katy", "Gaythorpe", role = "aut"),
+             person("Imperial College of Science, Technology and Medicine",
+                    role = "cph"))
+Description: Distributed reproducible computing framework, adopting
+    ideas from git, docker and other software.  By defining a
+    lightweight interface around the inputs and outputs of an
+    analysis, a lot of the repetitive work for reproducible research
+    can be automated.  We define a simple format for organising and
+    describing work that facilitates collaborative reproducible
+    research and acknowledges that all analyses are run multiple times
+    over their lifespans.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/mrc-ide/orderly
+BugReports: https://github.com/mrc-ide/orderly/issues
+Imports: R6, cli, diffobj, fs, gert (>= 1.9.3), httr2 (>= 1.2.1),
+        jsonlite, openssl, pkgload, rlang, rstudioapi, vctrs, withr,
+        yaml
+Suggests: DBI, RSQLite, callr, jsonvalidate (>= 1.4.0), knitr, mockery,
+        processx, rmarkdown, testthat (>= 3.0.0), webfakes
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2026-01-19 22:29:28 UTC; rich
+Author: Rich FitzJohn [aut, cre],
+  Robert Ashton [aut],
+  Martin Eden [aut],
+  Alex Hill [aut],
+  Wes Hinsley [aut],
+  Mantra Kusumgar [aut],
+  Paul Liétar [aut],
+  James Thompson [aut],
+  Katy Gaythorpe [aut],
+  Imperial College of Science, Technology and Medicine [cph]
+Maintainer: Rich FitzJohn <rich.fitzjohn@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-23 22:30:02 UTC

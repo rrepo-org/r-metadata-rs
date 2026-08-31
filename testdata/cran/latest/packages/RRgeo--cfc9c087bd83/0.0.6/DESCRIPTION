@@ -1,0 +1,53 @@
+Package: RRgeo
+Type: Package
+Title: Species Distribution Modelling for Rare Species
+Version: 0.0.6
+Authors@R: c(person(given = "Alessandro",
+                      family = "Mondanaro",
+                      role = "aut"),
+               person(given = c("Mirko", "Di"),
+                      family = "Febbraro",
+                      role = "aut"),
+               person(given = "Silvia",
+                      family = "Castiglione",
+                      role = c("aut","cre"),
+                      email = "silvia.castiglione@unina.it"),
+               person(given = "Carmela",
+                      family = "Serio",
+                      role = "aut"),
+               person(given = "Marina",
+                      family = "Melchionna",
+                      role = "aut"),
+               person(given = "Giorgia",
+                      family = "Girardi",
+                      role = "aut"),
+               person(given = "Pasquale",
+                      family = "Raia",
+                      role = "aut"))
+Description: Performs species distribution modeling for rare species with unprecedented accuracy (Mondanaro et al., 2023 <doi:10.1111/2041-210X.14066>) and finds the area of origin of species and past contact between them taking climatic variability in full consideration (Mondanaro et al., 2025 <doi:10.1111/2041-210X.14478>).
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: ape, methods,pbapply,Rphylopars,RRphylo,dismo (>= 1.3),gtools,
+        terra, adehabitatMA, ecospat (>= 3.2.1), foreach, doParallel,
+        PresenceAbsence, parallel, ade4, sp, sf,scales, ks,
+        leastcostpath, doSNOW, biomod2 (>= 4.2),utils
+Suggests: ggplot2, cowplot, openxlsx, Bchron, curl, rnaturalearth (>=
+        1.0.1), rnaturalearthhires, spatstat.geom, spatstat.explore,
+        knitr, httr, jsonlite, adehabitatHS
+Config/Needs/check: ropensci/rnaturalearthhires
+Additional_repositories: https://ropensci.r-universe.dev
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-07 12:19:09 UTC; Silvia
+Author: Alessandro Mondanaro [aut],
+  Mirko Di Febbraro [aut],
+  Silvia Castiglione [aut, cre],
+  Carmela Serio [aut],
+  Marina Melchionna [aut],
+  Giorgia Girardi [aut],
+  Pasquale Raia [aut]
+Maintainer: Silvia Castiglione <silvia.castiglione@unina.it>
+Repository: CRAN
+Date/Publication: 2026-01-07 21:40:02 UTC

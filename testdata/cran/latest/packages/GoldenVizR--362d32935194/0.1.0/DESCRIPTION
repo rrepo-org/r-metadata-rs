@@ -1,0 +1,35 @@
+Package: GoldenVizR
+Type: Package
+Title: Rule-Based Quality Checks for 'ggplot2' Visualizations Based on
+        the 25 Golden Rules of Data Visualization
+Version: 0.1.0
+Authors@R: c(
+    person("Wajdi", "Ben Saad", role = c("aut", "cre"),
+           email = "wajdi@goldenviz.org",
+           comment = c(ORCID = "0000-0002-0939-016X"))
+  )
+Description: Quality-checking tools for reviewing R data visualizations built with the
+    'ggplot2' library against the 25 GoldenViz rules described at
+    <https://goldenviz.org/>. The package provides a visual QA and teaching
+    layer that helps users identify common chart clarity, readability, and
+    integrity issues.
+License: AGPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1)
+Imports: ggplot2, htmltools
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, roxygen2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/WajdiBenSaad/GoldenViz_R
+BugReports: https://github.com/WajdiBenSaad/GoldenViz_R/issues
+Config/Needs/website: pkgdown
+Config/Needs/development: lintr, styler
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-21 12:24:45 UTC; dix
+Author: Wajdi Ben Saad [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0939-016X>)
+Maintainer: Wajdi Ben Saad <wajdi@goldenviz.org>
+Repository: CRAN
+Date/Publication: 2026-07-30 16:40:08 UTC

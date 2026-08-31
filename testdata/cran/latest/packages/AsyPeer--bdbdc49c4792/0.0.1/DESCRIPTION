@@ -1,0 +1,38 @@
+Package: AsyPeer
+Type: Package
+Title: Estimating Asymmetric Peer Effects
+Version: 0.0.1
+Date: 2026-08-21
+Authors@R: c(person("Aristide", "Houndetoungan",  role = c("aut"), email =  "ahoundetoungan@ecn.ulaval.ca", comment = c(ORCID = "0009-0003-2733-9362")), person("Mathieu", "Lambotte",  role = c("cre","aut"), email =  "mathieu.lambotte@univ-rennes.fr",comment = c(ORCID = "0000-0002-7806-7286")))
+Description: 
+    Simulating and estimating asymmetric peer-effect models
+    (Houndetoungan and Lambotte, 2026 <doi:10.48550/arXiv.2608.09219>). 
+    The model nests the widely used linear-in-means model 
+    (Manski, 1993 <doi:10.2307/2298123>; 
+    Bramoulle et al., 2009 <doi:10.1016/j.jeconom.2008.12.021>) 
+    and allows agents to be influenced differently by friends who exert more 
+    or less effort than themselves.
+SystemRequirements: Requires the OpenMP library for parallel computing.
+        If the OpenMP library is not available, the code is executed
+        sequentially, and a warning is printed.
+License: GPL-3
+Language: en-US
+Encoding: UTF-8
+BugReports: https://github.com/MathieuLambotte/AsyPeer/issues
+URL: https://github.com/MathieuLambotte/AsyPeer
+Depends: R (>= 4.1.0)
+Imports: Rcpp (>= 1.0.0), ranger, glmnet, xgboost, formula.tools,
+        doParallel, parallel, foreach, doRNG
+LinkingTo: Rcpp, RcppEigen, RcppProgress
+Suggests: PartialNetwork
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-08-21 15:10:33 UTC; haache
+Author: Aristide Houndetoungan [aut] (ORCID:
+    <https://orcid.org/0009-0003-2733-9362>),
+  Mathieu Lambotte [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-7806-7286>)
+Maintainer: Mathieu Lambotte <mathieu.lambotte@univ-rennes.fr>
+Repository: CRAN
+Date/Publication: 2026-08-31 13:50:02 UTC

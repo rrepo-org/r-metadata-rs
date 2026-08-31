@@ -1,0 +1,45 @@
+Package: islandcodes
+Title: Reference Data and Helpers for Small Island States and
+        Territories
+Version: 0.2.0
+Authors@R: c(
+    person("Rendell", "de Kort",
+           email = "rendell.dekort@ua.aw",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-5402-0500")),
+    person(family = "University of Aruba",
+           role = c("cph", "fnd"),
+           comment = "Digital Competence Dutch Caribbean (DCDC) Network")
+    )
+Description: A curated reference list of countries and territories with
+    classifications for Small Island Developing States (SIDS),
+    sub-national island jurisdictions (SNIJ), World Bank region and
+    income group, and political association. Sub-sovereign cases such
+    as Aruba, Curacao, Bonaire, Sint Maarten, the French overseas
+    territories, and Aaland Islands are represented with disambiguating
+    codes that standard country-code packages often collapse or omit.
+    Provides predicate helpers and a tidy joiner intended to extend
+    rather than replace 'countrycode'. Source data is maintained at
+    <https://github.com/University-of-Aruba/island-research-reference-data>
+    and licensed CC BY 4.0.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 4.1.0)
+Imports: countrycode (>= 1.5.0)
+Suggests: dplyr, tibble, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/University-of-Aruba/islandcodes,
+        https://university-of-aruba.github.io/islandcodes/
+BugReports: https://github.com/University-of-Aruba/islandcodes/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-06 13:36:42 UTC; Rendell CE
+Author: Rendell de Kort [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-5402-0500>),
+  University of Aruba [cph, fnd] (Digital Competence Dutch Caribbean
+    (DCDC) Network)
+Maintainer: Rendell de Kort <rendell.dekort@ua.aw>
+Repository: CRAN
+Date/Publication: 2026-07-06 14:20:13 UTC

@@ -1,0 +1,48 @@
+Package: idionomics
+Title: Conduct Idionomic Analyses for Time Series Modeling
+Version: 0.1.0
+Authors@R: 
+   c(
+    person("Cristóbal", "Hernández", email = "cristobal.ehc@gmail.com", role = c("cre","aut")),
+    person("Joseph", "Ciarrochi", email = "ciarrochij@gmail.com", role = "aut"),
+    person("Steven", "Hayes", email = "stevenchayes@gmail.com", role = "aut"),
+    person("Baljinder", "Sahdra", email = "baljinder.sahdra@acu.edu.au", role = "aut"))
+Description: A toolkit for idionomic science, a research philosophy that places
+    the unit of the ensemble (individual/couple/group) at the center of analysis.
+    Rather than assuming a common distribution, a similar enough process for each
+    unit, and fitting a single model to the whole ensemble, idionomic methods model
+    each unit separately, then aggregate upward if sensible. The group-level picture
+    emerges from individual results, not the other way around, while explicitly
+    evaluating whether aggregation is reasonable given the measured level of
+    heterogeneity of effects. The package is built around intensive longitudinal
+    data where each participant contributes a time series. It provides a pipeline
+    from preprocessing through modeling to group-level summaries. Current functions:
+    data quality screening (i_screener()), within-person standardization
+    (pmstandardize()), linear detrending (i_detrender()), per-subject
+    ARIMAX (AutoRegressive Integrated Moving Average with eXogenous inputs)
+    modeling and meta-analysis (iarimax()), individual p-values (i_pval()),
+    Sign Divergence and Equisyncratic Null tests (sden_test()), and directed
+    loop detection (looping_machine()). Methods are described in
+    Hernandez et al. (2024) <doi:10.1007/978-3-030-77644-2_136-1>,
+    Ciarrochi et al. (2024) <doi:10.1007/s10608-024-10486-w>, and
+    Sahdra et al. (2024) <doi:10.1016/j.jcbs.2024.100728>.
+URL: https://github.com/cristobalehc/idionomics
+BugReports: https://github.com/cristobalehc/idionomics/issues
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: broom, dplyr, forcats, forecast, ggplot2, metafor, rlang,
+        stats, tibble, tidyr
+Suggests: knitr, rmarkdown, testthat (>= 3.2.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-16 13:29:05 UTC; cristobalhernandez
+Author: Cristóbal Hernández [cre, aut],
+  Joseph Ciarrochi [aut],
+  Steven Hayes [aut],
+  Baljinder Sahdra [aut]
+Maintainer: Cristóbal Hernández <cristobal.ehc@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:42:18 UTC

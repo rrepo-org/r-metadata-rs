@@ -1,0 +1,26 @@
+Package: rxode2mrgsolvebridge
+Type: Package
+Title: Convert Models Between 'rxode2' and 'mrgsolve'
+Version: 0.1.0
+Authors@R: c(
+    person("Firas", "Hammami", role = c("aut", "cre"), email = "fiha@genmab.com")
+  )
+Description: Provides an intermediate representation and file-oriented helpers
+    for converting pharmacometric model code between 'rxode2' and 'mrgsolve'.
+    The conversion uses a package-specific intermediate representation described
+    by Hammami F (2026) "rxode2-mrgsolve-bridge"
+    <https://gitlab.com/fiha1/rxode2-mrgsolve-bridge>.
+URL: https://gitlab.com/fiha1/rxode2-mrgsolve-bridge
+BugReports: https://gitlab.com/fiha1/rxode2-mrgsolve-bridge/-/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: stats
+Suggests: mrgsolve, rxode2, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-13 07:30:36 UTC; fiha
+Author: Firas Hammami [aut, cre]
+Maintainer: Firas Hammami <fiha@genmab.com>
+Repository: CRAN
+Date/Publication: 2026-05-18 18:40:07 UTC

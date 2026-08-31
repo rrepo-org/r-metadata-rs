@@ -1,0 +1,36 @@
+Package: hdcuremodels
+Title: High-Dimensional Cure Models
+Version: 0.0.8
+Date: 2026-05-17
+Authors@R: 
+    c(person("Han", "Fu", role = "aut"), person(c("Kellie J."), "Archer", email=
+    "archer.43@osu.edu", role = c("aut","cre"), comment = c(ORCID="0000-0003-1555-5781")), 
+    person("Tung Lam", "Nguyen", email = "nguyenlamtung10@gmail.com", role = "rev", comment = "Reviewed the package for ROpenSci"),
+    person("Panagiotis", "Papastamoulis", email = "papapast@yahoo.gr", role = "rev", comment = "Reviewed the package for ROpenSci"))
+Description: Provides functions for fitting various penalized parametric and semi-parametric mixture cure models with different penalty functions, testing for a significant cure fraction, and testing for sufficient follow-up as described in Fu et al (2022)<doi:10.1002/sim.9513> and Archer et al (2024)<doi:10.1186/s13045-024-01553-6>. False discovery rate controlled variable selection is provided using model-X knock-offs. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Imports: doParallel, flexsurv, flexsurvcure, foreach, ggplot2, ggpubr,
+        glmnet, knockoff, mvnfast, parallel, plyr, methods, survival,
+        withr
+Config/Roxygen: list(markdown = TRUE, roclets = c("namespace", "rd",
+        "srr::srr_stats_roclet"))
+Config/Remotes: ropensci-review-tools/srr
+Suggests: knitr, Rdsdp, rmarkdown, roxygen2, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+LazyData: true
+URL: https://github.com/ropensci/hdcuremodels
+BugReports: https://github.com/ropensci/hdcuremodels/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-18 00:05:49 UTC; archer.43
+Author: Han Fu [aut],
+  Kellie J. Archer [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1555-5781>),
+  Tung Lam Nguyen [rev] (Reviewed the package for ROpenSci),
+  Panagiotis Papastamoulis [rev] (Reviewed the package for ROpenSci)
+Maintainer: Kellie J. Archer <archer.43@osu.edu>
+Repository: CRAN
+Date/Publication: 2026-05-18 07:00:15 UTC

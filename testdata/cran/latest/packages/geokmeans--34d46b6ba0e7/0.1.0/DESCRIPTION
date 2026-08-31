@@ -1,0 +1,35 @@
+Package: geokmeans
+Type: Package
+Title: A Collection of Fast, Exact and Eco-Friendly k-Means Clustering
+        Algorithms
+Version: 0.1.0
+Authors@R: c(
+    person("Parichit", "Sharma", email = "parishar@iu.edu", role = c("aut", "cre", "cph")),
+    person("Hasan", "Kurban", role = "aut"))
+Description: A collection of fast k-means clustering algorithms under a single,
+    uniform interface. The core method is Geometric-k-means, a bound-free
+    algorithm of Sharma et al. (2026) <doi:10.1007/s10994-025-06891-1> that uses
+    geometry to restrict computation to the data points able to change clusters,
+    substantially reducing distance computations and runtime while returning the
+    same result as standard k-means. Also included are Lloyd's algorithm, Elkan,
+    Hamerly, Annulus, Exponion, and Ball k-means. All algorithms are implemented
+    in 'C++' via 'Rcpp' and 'RcppEigen' and return the final centroids, optional
+    per-point cluster assignments, and computational statistics.
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp
+LinkingTo: Rcpp, RcppEigen
+SystemRequirements: C++17
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/parichit/Geometric-k-means
+BugReports: https://github.com/parichit/Geometric-k-means/issues
+NeedsCompilation: yes
+Packaged: 2026-06-17 16:23:38 UTC; parichit
+Author: Parichit Sharma [aut, cre, cph],
+  Hasan Kurban [aut]
+Maintainer: Parichit Sharma <parishar@iu.edu>
+Config/roxygen2/version: 8.0.0
+Repository: CRAN
+Date/Publication: 2026-06-22 16:10:02 UTC

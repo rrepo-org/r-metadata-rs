@@ -1,0 +1,25 @@
+Package: featdelta
+Type: Package
+Title: Incremental Feature Engineering with Database Persistence
+Version: 0.1.0
+Authors@R: person(given = "Rudolfs", family = "Kregers", role = c("aut", "cre"),
+    email = "rudolfs.kregers@gmail.com")
+Author: Rudolfs Kregers [aut, cre]
+Maintainer: Rudolfs Kregers <rudolfs.kregers@gmail.com>
+Description: Define feature logic, compute only new or unprocessed
+    rows, and persist the resulting flat feature table in a database.
+    The package provides an explicit incremental pipeline for fetching
+    source rows, computing feature definitions, and writing computed
+    features to a database table.
+License: GPL-3
+BugReports: https://github.com/LordRudolf/featdelta/issues
+Encoding: UTF-8
+Imports: DBI, rlang
+Suggests: RSQLite, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-08 18:21:14 UTC; Rudolfs
+Repository: CRAN
+Date/Publication: 2026-05-13 08:00:02 UTC

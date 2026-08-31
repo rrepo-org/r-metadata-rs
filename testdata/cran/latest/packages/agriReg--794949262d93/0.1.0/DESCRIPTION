@@ -1,0 +1,40 @@
+Package: agriReg
+Title: Linear and Nonlinear Regression for Agricultural Data
+Version: 0.1.0
+Authors@R: 
+    person(
+        given = "Sadikul",
+        family = "Islam",
+        email = "sadikul.islamiasri@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-2924-7122")
+    )
+Description: Fit, compare, and visualise linear and nonlinear regression
+    models tailored to field-trial and dose-response agricultural data.
+    Provides S3 classes for mixed-effects models (via 'lme4'), nonlinear
+    growth curves (logistic, 'Gompertz', asymptotic, linear-plateau,
+    quadratic), and four/five-parameter log-logistic dose-response models
+    (via 'drc'). Includes automated starting-value heuristics,
+    goodness-of-fit statistics, residual diagnostics, and 'ggplot2'-based
+    visualisation. Methods are based on Bates and Watts (1988,
+    ISBN:9780471816430), Ritz and others (2015) <doi:10.1371/journal.pone.0146021>,
+    and Bates and others (2015) <doi:10.18637/jss.v067.i01>.
+Depends: R (>= 4.1.0)
+Imports: lme4 (>= 1.1-35), drc (>= 3.0-1), ggplot2 (>= 3.4.0),
+        patchwork (>= 1.1.0), stats, utils
+Suggests: broom (>= 1.0.0), broom.mixed (>= 0.2.9), emmeans (>= 1.8.0),
+        nlme (>= 3.1-0), methods, testthat (>= 3.0.0), knitr,
+        rmarkdown, lmerTest, car, multcomp
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-27 06:10:56 UTC; acer
+Author: Sadikul Islam [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2924-7122>)
+Maintainer: Sadikul Islam <sadikul.islamiasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-31 15:00:23 UTC

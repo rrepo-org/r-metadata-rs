@@ -1,0 +1,46 @@
+Package: hubUtils
+Version: 1.2.1
+Title: Core 'hubverse' Utilities
+Authors@R: c(
+    person("Anna", "Krystalli", , "annakrystalli@googlemail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2378-4915")),
+    person("Li", "Shandross", , "lshandross@umass.edu", role = "aut"),
+    person("Nicholas G.", "Reich", , "nick@umass.edu", role = "ctb",
+           comment = c(ORCID = "0000-0003-3503-9899")),
+    person("Evan L.", "Ray", , "elray@umass.edu", role = "ctb"),
+    person("Zhian N.", "Kamvar", , "zkamvar@gmail.com", role = c("ctb"), 
+           comment = c(ORCID = "0000-0003-1458-7108")),
+    person("Consortium of Infectious Disease Modeling Hubs", role = "cph")
+  )
+Description: Core set of low-level utilities common across the 
+  'hubverse'. Used to interact with 'hubverse' schema, Hub configuration files 
+  and model outputs and designed to be primarily used internally by other 
+  'hubverse' packages. See Reich et al. (2022) <doi:10.2105/AJPH.2022.306831> 
+  for an overview of Collaborative Hubs.
+License: MIT + file LICENSE
+URL: https://github.com/hubverse-org/hubUtils,
+        https://hubverse-org.github.io/hubUtils/
+BugReports: https://github.com/hubverse-org/hubUtils/issues
+Depends: R (>= 4.1.0)
+Imports: checkmate, cli, curl, fs, gh, glue, jsonlite, lifecycle,
+        magrittr, memoise, purrr, rlang, stats, stringr, tibble, utils
+Suggests: arrow (>= 17.0.0), dplyr, knitr, rmarkdown, testthat (>=
+        3.2.0)
+Config/Needs/website: hubverse-org/hubStyle
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-06-29 10:19:34 UTC; Anna
+Author: Anna Krystalli [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2378-4915>),
+  Li Shandross [aut],
+  Nicholas G. Reich [ctb] (ORCID:
+    <https://orcid.org/0000-0003-3503-9899>),
+  Evan L. Ray [ctb],
+  Zhian N. Kamvar [ctb] (ORCID: <https://orcid.org/0000-0003-1458-7108>),
+  Consortium of Infectious Disease Modeling Hubs [cph]
+Maintainer: Anna Krystalli <annakrystalli@googlemail.com>
+Repository: CRAN
+Date/Publication: 2026-07-15 08:10:15 UTC

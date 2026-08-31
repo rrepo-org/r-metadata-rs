@@ -1,0 +1,34 @@
+Package: eiIT
+Title: Ecological Inference via Information Theory
+Version: 0.0.2-1
+Authors@R: 
+    person(given = "Jose M.",
+           family = "Pavía",
+           role = c("aut", "cre"),
+           email = "jose.m.pavia@uv.es",
+           comment = c(ORCID = "0000-0002-0129-726X"))
+Description: Estimates RxC transfer matrices from aggregated marginal data using
+             a two-stage (GME+IPF; Generalized Maximum Entropy and Iterative Proportional Fitting) 
+             information-theoretic approach within a two-step 
+             (global+local) estimation procedure. The resulting matrices are consistent 
+             with observed row and column marginals across collections of subtables 
+             (e.g. precincts, polling stations, or districts).
+   References:
+   Golan, A., Judge, G., & Miller, D. (1996). Maximum Entropy Econometrics: Robust Estimation with Limited Data. Wiley.
+   Judge, G., Miller, D.J., & Cho, W.K.T. (2004). "An information theoretic approach to ecological estimation and inference". In G. King, O. Rosen, & M. A. Tanner (Eds.), Ecological Inference: New Methodological Strategies (pp. 162–187). Cambridge University Press.
+   Mittelhammer, R., Judge, G., & Miller, D. (2000). Econometric Foundations. Cambridge University Press.
+   Pavia, J.M. (2023) <doi:10.1007/s43545-023-00658-y>
+   Acknowledgements: The author wish to thank Conselleria de Economia, Hacienda y Administracion Publica (grant CIACIO/2023/031) for supporting this research.
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: stats, utils, nloptr
+Suggests: ggplot2, scales, testthat (>= 3.0.0)
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-22 15:36:14 UTC; mariaamparo
+Author: Jose M. Pavía [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0129-726X>)
+Maintainer: Jose M. Pavía <jose.m.pavia@uv.es>
+Repository: CRAN
+Date/Publication: 2026-08-22 16:00:12 UTC

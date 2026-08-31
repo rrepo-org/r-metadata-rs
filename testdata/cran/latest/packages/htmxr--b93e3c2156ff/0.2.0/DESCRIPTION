@@ -1,0 +1,27 @@
+Package: htmxr
+Title: Build Modern Web Applications with 'htmx' and 'plumber2'
+Version: 0.2.0
+Authors@R: 
+    person("Arthur", "Bréant", , "arthur@thinkr.fr", role = c("aut", "cre"))
+Description: A lightweight framework for building server-driven web
+    applications in 'R'. 'htmxr' combines the simplicity of 'htmx' for
+    partial page updates with the power of 'plumber2' for non-blocking
+    HTTP endpoints. Build interactive dashboards and data applications
+    without writing 'JavaScript', using familiar 'R' patterns inspired by
+    'Shiny'. For more information on 'htmx', see <https://htmx.org>.
+License: MIT + file LICENSE
+URL: https://hyperverse-r.github.io/htmxr/,
+        https://github.com/hyperverse-r/htmxr
+BugReports: https://github.com/hyperverse-r/htmxr/issues
+Depends: R (>= 4.1.0)
+Imports: htmltools, plumber2
+Suggests: dplyr, ggplot2, purrr, svglite, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-06 00:12:34 UTC; arthur
+Author: Arthur Bréant [aut, cre]
+Maintainer: Arthur Bréant <arthur@thinkr.fr>
+Repository: CRAN
+Date/Publication: 2026-03-06 08:10:19 UTC

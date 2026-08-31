@@ -1,0 +1,29 @@
+Package: OpEnCAMeO
+Type: Package
+Title: Optimized Ensemble Predictor for 'C' and 'A' Methylation in
+        Organism
+Version: 0.1.1
+Authors@R: c(person("Abhik", "Sarkar", role = c("aut","cre"), email = "abhik.iasri@gmail.com"),
+             person("Dipro", "Sinha", role = c("aut")),
+             person("Sneha","Murmu", role=c("aut")),
+             person("Md", "Yeasin", role = c("aut")),
+             person("Dwijesh Chandra","Mishra", role = c("aut")),
+             person("Sunil", "Archak", role = c("aut")))
+Author: Abhik Sarkar [aut, cre],
+  Dipro Sinha [aut],
+  Sneha Murmu [aut],
+  Md Yeasin [aut],
+  Dwijesh Chandra Mishra [aut],
+  Sunil Archak [aut]
+Maintainer: Abhik Sarkar <abhik.iasri@gmail.com>
+Description: DNA methylation is an important epigenetic process that regulates gene activity through chemical modifications of DNA without changing its sequence. 'OpEnCAMeO' is a organism based ensemble model for prediction of 4mC, 6mA and No methylation sites directly from DNA sequences. It combines multiple machine learning algorithms trained on Bacteria (Escherichia coli), Fungi (Saccharomyces cerevisiae) and Nematode (Caenorhabditis elegans) as reference models to deliver accurate predictions. This methodology is being inspired by the ensemble algorithm for methylation prediction developed by Sinha et al. (2025) <doi:10.1101/2025.11.10.687509>.
+Imports: Biostrings, seqinr, stringr, tibble, entropy, ftrCOOL, stats,
+        elmNNRcpp
+Suggests: caret, kernlab, ranger, xgboost, gbm
+Encoding: UTF-8
+License: GPL-3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-22 09:37:45 UTC; Abhik
+Repository: CRAN
+Date/Publication: 2026-07-30 17:40:22 UTC

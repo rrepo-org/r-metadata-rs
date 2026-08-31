@@ -1,0 +1,30 @@
+Package: rsatscan
+Type: Package
+Title: Tools for Running the External 'SaTScan' Software using R
+        Classes and Methods
+Version: 1.0.10
+Authors@R: c(person("Ken", "Kleinman", role=c("aut"), email= "ken.kleinman@gmail.com"),
+	     person("Scott", "Hostovich", role=c("cre"), email= "HostovichS@imsweb.com"),
+	     person("Amer", "Moosa", role=c("ctb"), email= "MoosaA@imsweb.com"))
+Description: The 'SaTScan'(TM) <https://www.satscan.org> software uses spatial and 
+	space-time scan statistics to detect and evaluate spatial and space-time clusters. 
+	With the 'rsatscan' package, you can run the external 'SaTScan' software from 
+	within R using R data formats. To successfully select appropriate parameter 
+	settings within 'rsatscan', you must first learn 'SaTScan'. 
+URL: https://www.satscan.org
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+Depends: R (>= 3.0.2)
+Imports: utils, foreign
+Suggests: knitr, rmarkdown, sf
+NeedsCompilation: no
+Repository: CRAN
+RoxygenNote: 7.3.2
+Packaged: 2026-01-26 14:26:08 UTC; moosaa
+Author: Ken Kleinman [aut],
+  Scott Hostovich [cre],
+  Amer Moosa [ctb]
+Maintainer: Scott Hostovich <HostovichS@imsweb.com>
+Date/Publication: 2026-01-26 15:00:08 UTC

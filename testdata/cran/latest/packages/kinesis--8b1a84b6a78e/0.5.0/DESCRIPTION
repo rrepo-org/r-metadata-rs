@@ -1,0 +1,49 @@
+Package: kinesis
+Title: 'shiny' Applications for the 'tesselle' Packages
+Version: 0.5.0
+Authors@R: c(
+    person("Nicolas", "Frerebeau", , "nicolas.frerebeau@u-bordeaux-montaigne.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5759-4944")),
+    person("Brice", "Lebrun", role = "art",
+           comment = c(ORCID = "0000-0001-7503-8685", "Logo designer")),
+    person("Université Bordeaux Montaigne", role = "fnd",
+           comment = c(ROR = "03pbgwk21")),
+    person("CNRS", role = "fnd",
+           comment = c(ROR = "02feahw73"))
+  )
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Description: A collection of 'shiny' applications for the 'tesselle'
+    packages <https://www.tesselle.org/>. This package provides
+    applications for archaeological data analysis and visualization. These
+    mainly, but not exclusively, include applications for chronological
+    modelling (e.g. matrix seriation, aoristic analysis) and count data
+    analysis (e.g. diversity measures, compositional data analysis).
+License: GPL (>= 3)
+URL: https://codeberg.org/tesselle/kinesis,
+        https://packages.tesselle.org/kinesis/,
+        https://tesselle.r-universe.dev/kinesis
+BugReports: https://codeberg.org/tesselle/kinesis/issues
+Depends: R (>= 4.2)
+Imports: aion (>= 1.7.1), ananke (>= 0.3.0), arkhe (>= 1.11.0), bslib
+        (>= 0.11.0), config (>= 0.3.2), dimensio (>= 0.14.2),
+        grDevices, gt (>= 1.3.0), isopleuros (>= 1.4.0), kairos (>=
+        2.3.0), khroma (>= 1.17.0), mirai (>= 2.7.1), nexus (>= 0.6.1),
+        sass (>= 0.4.10), shiny (>= 1.14.0), stats, tabula (>= 3.3.2),
+        utils
+Suggests: tinytest
+Encoding: UTF-8
+X-schema.org-applicationCategory: Archaeological Science
+X-schema.org-isPartOf: https://www.tesselle.org
+X-schema.org-keywords: archaeology, archaeological-science,
+        archaeometry, shiny-apps, r-package
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-30 10:28:46 UTC; nfrerebeau
+Author: Nicolas Frerebeau [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5759-4944>),
+  Brice Lebrun [art] (ORCID: <https://orcid.org/0000-0001-7503-8685>,
+    Logo designer),
+  Université Bordeaux Montaigne [fnd] (ROR: <https://ror.org/03pbgwk21>),
+  CNRS [fnd] (ROR: <https://ror.org/02feahw73>)
+Repository: CRAN
+Date/Publication: 2026-06-30 10:50:12 UTC

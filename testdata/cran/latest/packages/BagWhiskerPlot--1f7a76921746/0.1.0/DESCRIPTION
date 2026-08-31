@@ -1,0 +1,24 @@
+Package: BagWhiskerPlot
+Type: Package
+Title: Bag-and-Whisker Plot
+Version: 0.1.0
+Depends: MASS
+Description: Implementation of the Bag-and-Whisker Plot for bivariate data. Provides a single user-facing function bag_whisker() that wraps the computation and plotting helpers in this package. For more details, please refer to the paper "The Bag-and-Whisker Plot: A New Bagplot for Bivariate Data" by Qin, Gang, Tong and Cui (2025) <doi:10.48550/arXiv.2512.06314>.
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: ggplot2, parallel
+Authors@R: 
+    c(person(given = "Shenghao",
+             family = "Qin",
+             email = "seanqin31@outlook.com",
+             role = c("aut", "cre")))
+License: GPL-3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-10 01:52:22 UTC; sean
+Author: Shenghao Qin [aut, cre]
+Maintainer: Shenghao Qin <seanqin31@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-05-13 20:00:15 UTC

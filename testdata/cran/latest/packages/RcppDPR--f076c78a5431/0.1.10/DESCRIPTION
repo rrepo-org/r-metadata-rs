@@ -1,0 +1,25 @@
+Package: RcppDPR
+Type: Package
+Title: 'Rcpp' Implementation of Dirichlet Process Regression
+Version: 0.1.10
+Description: 'Rcpp' reimplementation of the the Bayesian non-parametric Dirichlet Process Regression model for penalized regression first published in Zeng and Zhou (2017) <doi:10.1038/s41467-017-00470-2>. A full Bayesian version is implemented with Gibbs sampling, as well as a faster but less accurate variational Bayes approximation.
+Authors@R: c(
+    person("Mohammad", "Abu Gazala", , "abugazalamohammad@gmail.com", role = c("cre", "aut")),
+    person("Daniel", "Nachun", , "dnachun@stanford.edu", role = "ctb"),
+    person("Ping", "Zeng", , "zpstat@xzhmu.edu.cn", role = "ctb")
+  )
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.13)
+LinkingTo: Rcpp, RcppArmadillo, RcppGSL
+Suggests: testthat (>= 3.0.0), snpStats
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-03-19 04:02:14 UTC; moe
+Author: Mohammad Abu Gazala [cre, aut],
+  Daniel Nachun [ctb],
+  Ping Zeng [ctb]
+Maintainer: Mohammad Abu Gazala <abugazalamohammad@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-19 15:00:08 UTC

@@ -1,0 +1,41 @@
+Package: selecta
+Type: Package
+Title: Declarative EQUATOR-Style Flow Diagrams for Clinical Studies
+Version: 0.6.1
+Authors@R: c(
+    person(
+        given = c("Paul", "Hsin-ti"), 
+        family = "McClelland", 
+        role = c("aut", "cre", "cph"), 
+        email = "PaulHMcClelland@protonmail.com",
+        comment = c(ORCID = "0000-0002-3119-6531")
+    ))
+Description: Build EQUATOR-style flowcharts for clinical studies by sequentially
+    defining inclusion and exclusion criteria, study arms, and endpoints. The
+    pipe-friendly API supports CONSORT (randomized trials), STROBE
+    (observational cohorts), STARD (diagnostic accuracy), PRISMA (systematic
+    reviews), and MOOSE (observational meta-analysis) diagram layouts, as well
+    as multi-source convergence, split-and-recombine, factorial, and hybrid
+    topologies. Diagrams are rendered via 'grid' graphics in both data-driven
+    (automatic counting) and manual-count modes, with optional
+    'DiagrammeR'/'Graphviz' output.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://phmcc.codeberg.page/selecta,
+        https://codeberg.org/phmcc/selecta,
+        https://github.com/phmcc/selecta
+BugReports: https://github.com/phmcc/selecta/issues
+Depends: R (>= 4.1.0)
+Imports: data.table, grDevices, grid, stats, tools, utils
+Suggests: DiagrammeR, knitr, ragg, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-22 18:27:47 UTC; paul
+Author: Paul Hsin-ti McClelland [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3119-6531>)
+Maintainer: Paul Hsin-ti McClelland <PaulHMcClelland@protonmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-22 18:40:02 UTC

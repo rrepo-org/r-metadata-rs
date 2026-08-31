@@ -1,0 +1,42 @@
+Type: Package
+Package: acR
+Title: Content Analysis in R: Integrated Qualitative (LLMs) and
+        Quantitative Pipeline
+Version: 0.3.3
+Authors@R: person("Anderson Henrique", email = "anderson.henrique@usp.br",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-1842-2725"))
+Description: Provides an integrated pipeline for content analysis
+    combining qualitative coding assisted by large language models (LLMs)
+    with classical quantitative text analysis. Includes modules for
+    pre-processing (tokenization, stopwords for Brazilian Portuguese),
+    descriptive statistics, keyness, co-occurrence networks, word clouds
+    (including comparative and X-ray variants), sentiment analysis via
+    OpLexicon, Latent Dirichlet Allocation (LDA), inter-coder
+    reliability metrics (Krippendorff, Gwet), and modern visualizations
+    based on ggplot2. Special focus on Brazilian corpora and
+    political-institutional codebooks. Inspired by Maerz and Benoit (2025)
+    <https://quallmer.github.io/quallmer/>.
+License: MIT + file LICENSE
+URL: https://github.com/andersonheri/acR, https://ahenriquecp.com/acR/
+BugReports: https://github.com/andersonheri/acR/issues
+Depends: R (>= 4.1)
+Imports: cli, dplyr, httr2, irr, jsonlite, purrr, rlang, stringr,
+        tibble, tidyr, tidyselect, withr, yaml
+Suggests: callr, cluster, covr, ellmer, ggplot2, ggraph, ggwordcloud,
+        igraph, ipeaplot, knitr, shiny, openxlsx, pkgdown, quanteda,
+        readtext, rmarkdown, scales, senatebR, spelling, stopwords,
+        stringi, tesseract, testthat, tidytext, topicmodels, wordcloud,
+        writexl
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-08-19 19:05:28 UTC; anderson_henrique
+Author: Anderson Henrique [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1842-2725>)
+Maintainer: Anderson Henrique <anderson.henrique@usp.br>
+Repository: CRAN
+Date/Publication: 2026-08-20 08:42:18 UTC

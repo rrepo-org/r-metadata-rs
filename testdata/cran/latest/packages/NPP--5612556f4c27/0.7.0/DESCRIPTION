@@ -1,0 +1,42 @@
+Package: NPP
+Type: Package
+Title: Normalized Power Prior Bayesian Analysis
+Version: 0.7.0
+Authors@R: c(person(given = "Zifei",
+                    family = "Han",
+                    role = c("aut", "cre"),
+                    email = "hanzifei1@gmail.com"),
+             person(given = "Qiang",
+                    family = "Zhang",
+                    role = "aut"),
+             person(given = "Tianyu",
+                    family = "Bai",
+                    role = "aut"),
+             person(given = "Yuyan",
+                    family = "Duan",
+                    role = "aut"),
+             person(given = "Keying",
+                    family = "Ye",
+                    role = "aut"))
+Maintainer: Zifei Han <hanzifei1@gmail.com>
+Description: Posterior sampling in several commonly used distributions using
+    normalized power prior as described in 
+    Duan, Ye and Smith (2006) <doi:10.1002/env.752> and 
+    Ibrahim et.al. (2015) <doi:10.1002/sim.6728>. 
+    Sampling of the power parameter is achieved via 
+    either independence Metropolis-Hastings or random walk Metropolis-Hastings 
+    based on transformation. 
+Imports: MASS, mvtnorm, KernSmooth
+License: GPL (>= 2)
+LazyData: true
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-08-20 13:08:10 UTC; Administrator
+Repository: CRAN
+Date/Publication: 2025-08-20 21:50:08 UTC
+Author: Zifei Han [aut, cre],
+  Qiang Zhang [aut],
+  Tianyu Bai [aut],
+  Yuyan Duan [aut],
+  Keying Ye [aut]

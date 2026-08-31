@@ -1,0 +1,47 @@
+Package: redlistr
+Title: Tools for the IUCN Red List of Ecosystems and Species
+Version: 2.1.0
+Authors@R: c(
+    person("Calvin", "Lee", , "calvinkflee@gmail.com", role = c("aut"),
+           comment = c("Original functions and examples", ORCID = "0000-0001-8277-8614")),
+    person("Nicholas", "Murray", , "murr.nick@gmail.com", role = "aut",
+           comment = c("Original functions and examples", ORCID = "0000-0002-4008-3053")),
+    person("Aniko", "Toth", , "anikobtoth@gmail.com", role = c("cre", "aut"),
+           comment = c("Updated functions, classes and methods", ORCID = "0000-0002-3063-1917")),
+    person("José R.", "Ferrer-Paris", , "jr.ferrer.paris@gmail.com", role = c("aut"),
+           comment = c("Documentation, contributions to classes and methods", ORCID = "0000-0002-9554-3395"))
+  )
+Description: A toolbox created by members of the International Union for
+    Conservation of Nature (IUCN) Red List of Ecosystems Committee for
+    Scientific Standards. Primarily, it is a set of tools suitable for
+    calculating the metrics required for making assessments of species and
+    ecosystems against the IUCN Red List of Threatened Species and the
+    IUCN Red List of Ecosystems categories and criteria. See the IUCN
+    website for detailed guidelines, the criteria, publications and other
+    information.
+License: GPL (>= 3) | file LICENSE
+URL: https://github.com/red-list-ecosystem/redlistr,
+        http://red-list-ecosystem.github.io/redlistr/
+BugReports: https://github.com/red-list-ecosystem/redlistr/issues
+Depends: R (>= 4.1.0)
+Imports: terra (>= 1.8-54), sf (>= 1.0-21), dplyr, methods, ggplot2,
+        rlang, units, stringr, mgcv
+Suggests: devtools, knitr, rmarkdown, testthat, leaflet
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/Needs/website: rmarkdown
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-09 23:38:24 UTC; z3531221
+Author: Calvin Lee [aut] (Original functions and examples, ORCID:
+    <https://orcid.org/0000-0001-8277-8614>),
+  Nicholas Murray [aut] (Original functions and examples, ORCID:
+    <https://orcid.org/0000-0002-4008-3053>),
+  Aniko Toth [cre, aut] (Updated functions, classes and methods, ORCID:
+    <https://orcid.org/0000-0002-3063-1917>),
+  José R. Ferrer-Paris [aut] (Documentation, contributions to classes and
+    methods, ORCID: <https://orcid.org/0000-0002-9554-3395>)
+Maintainer: Aniko Toth <anikobtoth@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-14 07:30:02 UTC

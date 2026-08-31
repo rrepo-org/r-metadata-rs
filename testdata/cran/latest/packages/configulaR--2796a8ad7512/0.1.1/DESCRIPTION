@@ -1,0 +1,26 @@
+Package: configulaR
+Title: Manage Application Settings via '.env' or '.ini' Files
+Version: 0.1.1
+Authors@R: 
+    person("Morgan", "Durand", , "morgan@dataupsurge.com", role = c("aut", "cre", "cph"))
+Description: Provides a simple way to manage application settings by
+    loading configuration values from '.env' or '.ini' files. It supports
+    default values, type casting, and environment variable overrides,
+    enabling a clean separation of configuration from code.  Ideal for
+    managing credentials, API keys, and deployment-specific settings.
+License: MIT + file LICENSE
+URL: https://dataupsurge.github.io/configulaR/,
+        https://github.com/dataupsurge/configulaR
+BugReports: https://github.com/dataupsurge/configulaR/issues
+Imports: assertthat, here, magrittr, stringr
+Suggests: covr (>= 3.6.4), docopt (>= 0.7.1), git2r (>= 0.35.0), lintr
+        (>= 3.1.2), precommit (>= 0.4.3), roxygen2 (>= 7.3.2), styler
+        (>= 1.10.3), testthat (>= 3.0.0), withr (>= 2.1.2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-04-18 08:50:43 UTC; morgan
+Author: Morgan Durand [aut, cre, cph]
+Maintainer: Morgan Durand <morgan@dataupsurge.com>
+Repository: CRAN
+Date/Publication: 2025-04-25 12:10:02 UTC

@@ -1,0 +1,35 @@
+Package: compositional.mle
+Type: Package
+Title: Compositional Maximum Likelihood Estimation
+Version: 2.0.0
+Authors@R: 
+    person("Alexander", "Towell", , "queelius@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6443-9897"))
+Description: Provides composable optimization strategies for maximum likelihood
+    estimation (MLE). Solvers are first-class functions that combine via
+    sequential chaining, parallel racing, and random restarts. Implements
+    gradient ascent, Newton-Raphson, quasi-Newton (BFGS), and derivative-free
+    methods with support for constrained optimization and tracing. Returns
+    'mle' objects compatible with 'algebraic.mle' for downstream analysis.
+    Methods based on Nocedal J, Wright SJ (2006) "Numerical Optimization"
+    <doi:10.1007/978-0-387-40065-5>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+ByteCompile: true
+Depends: R (>= 3.5.0), algebraic.mle (>= 2.0.0)
+Imports: MASS, numDeriv
+Suggests: rmarkdown, dplyr, knitr, ggplot2, tibble, testthat (>=
+        3.0.0), cli, future, hypothesize, likelihood.model
+URL: https://github.com/queelius/compositional.mle,
+        https://queelius.github.io/compositional.mle/
+BugReports: https://github.com/queelius/compositional.mle/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-17 18:03:23 UTC; spinoza
+Author: Alexander Towell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6443-9897>)
+Maintainer: Alexander Towell <queelius@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-19 05:00:16 UTC

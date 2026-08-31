@@ -1,0 +1,31 @@
+Package: multid
+Title: Multivariate Difference Between Two Groups
+Version: 1.0.2
+Authors@R: 
+    person(given = "Ville-Juhani",
+           family = "Ilmarinen",
+           role = c("aut", "cre"),
+           email = "vj.ilmarinen@gmail.com",
+           comment = c(ORCID = "0000-0001-9493-379X"))
+Description: Estimation of multivariate differences between two groups (e.g., multivariate sex differences) with regularized regression methods and predictive approach. See Ilmarinen et al. (2023) <doi:10.1177/08902070221088155>. Deconstructing difference score correlations (e.g., gender-equality paradox), see Ilmarinen & Lönnqvist (2024) <doi:10.1037/pspp0000508>.
+    Includes also tools that help in understanding difference score reliability, conditional intra-class correlations, tail-dependency, and heterogeneity of variance estimates. Package development was supported by the Academy of Finland research grant 338891.
+License: GPL-3
+Encoding: UTF-8
+BugReports: https://github.com/vjilmari/multid/issues
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: dplyr (>= 1.0.7), glmnet (>= 4.1.2), stats (>= 4.0.2), pROC
+        (>= 1.18.0), lavaan (>= 0.6.9), emmeans (>= 1.6.3), lme4 (>=
+        1.1.27.1), quantreg (>= 5.88), lmerTest (>= 3.1.3), ggpubr (>=
+        0.6.0), ggplot2 (>= 3.4.4), rlang (>= 1.1.6)
+Suggests: knitr (>= 1.39), rmarkdown (>= 2.14), overlapping (>= 1.7),
+        rio (>= 0.5.29)
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2025-09-23 07:47:20 UTC; vjilm
+Author: Ville-Juhani Ilmarinen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9493-379X>)
+Maintainer: Ville-Juhani Ilmarinen <vj.ilmarinen@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-23 08:10:02 UTC

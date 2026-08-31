@@ -1,0 +1,30 @@
+Package: xdvir
+Type: Package
+Title: Render 'LaTeX' in Plots
+Version: 0.2-0
+Authors@R: person("Paul", "Murrell", email = "paul@stat.auckland.ac.nz",
+                  comment = c(ORCID = "0000-0002-3224-8858"), 
+                  role = c("aut", "cre"))
+Maintainer: Paul Murrell <paul@stat.auckland.ac.nz>
+Description: High-level functions to render 'LaTeX' fragments in plots, 
+             including as labels and data symbols in 'ggplot2' plots, plus
+             low-level functions to 
+             author 'LaTeX' fragments (to produce 'LaTeX' documents), 
+             typeset 'LaTeX' documents (to produce 'DVI' files), 
+             read 'DVI' files (to produce "DVI" objects), 
+             and render "DVI" objects.
+SystemRequirements: freetype2
+Imports: grDevices, grid, hexView (>= 0.3-4), tinytex, rlang,
+        systemfonts (>= 1.1.0)
+Suggests: gridBezier, knitr, rmarkdown, lattice, gridGraphics, gggrid,
+        ggplot2, cli
+VignetteBuilder: knitr
+URL:
+        https://stattech.wordpress.fos.auckland.ac.nz/2025/03/06/2025-01-latex-typesetting-in-r/
+License: GPL-3
+NeedsCompilation: yes
+Packaged: 2026-01-21 21:48:24 UTC; pmur002
+Author: Paul Murrell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3224-8858>)
+Repository: CRAN
+Date/Publication: 2026-01-23 03:40:02 UTC

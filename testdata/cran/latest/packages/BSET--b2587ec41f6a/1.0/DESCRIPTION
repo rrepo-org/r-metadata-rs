@@ -1,0 +1,40 @@
+Package: BSET
+Type: Package
+Title: A Bayesian Surrogate Evaluation Test
+Version: 1.0
+Date: 2026-05-15
+Authors@R: c(
+    person("Pietro", "Carlotti", role = c("aut", "cre"),
+           email = "pietro.carlotti@utexas.edu"),
+    person("Layla", "Parast", role = "aut",
+           email = "parast@austin.utexas.edu"))
+Description: An implementation of the Bayesian Surrogate Evaluation Test
+    (BSET) for assessing the validity of surrogate markers in clinical
+    trials. Provides hypothesis testing tools to evaluate whether a
+    surrogate can reliably estimate the causal effect of a treatment on a
+    primary outcome. Implements the imputation-based Bayesian methodology
+    of Carlotti and Parast (2026) <doi:10.48550/arXiv.2603.14381>,
+    extending the frequentist rank-based approach of Parast et al. (2024)
+    <doi:10.1093/biomtc/ujad035>. Addresses key limitations of the
+    frequentist method, including the lack of causal interpretability and
+    the inability to adjust for covariates in the estimation process.
+License: GPL-3
+URL: https://pietrocarlotti.github.io/BSET/,
+        https://github.com/PietroCarlotti/BSET
+BugReports: https://github.com/PietroCarlotti/BSET/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: rstan, ggplot2, future, parallel, mvtnorm, dplyr,
+        SurrogateRank, Rdpack, rlang
+RdMacros: Rdpack
+Suggests: knitr, rmarkdown, bookdown,
+VignetteBuilder: knitr, bookdown
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-05-18 18:13:14 UTC; pc29642
+Author: Pietro Carlotti [aut, cre],
+  Layla Parast [aut]
+Maintainer: Pietro Carlotti <pietro.carlotti@utexas.edu>
+Repository: CRAN
+Date/Publication: 2026-05-22 09:32:08 UTC

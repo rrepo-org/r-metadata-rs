@@ -1,0 +1,35 @@
+Package: mapdeck
+Type: Package
+Title: Interactive Maps Using 'Mapbox GL JS' and 'Deck.gl'
+Version: 0.3.6
+Date: 2025-11-29
+Authors@R: c(
+    person("David", "Cooley", ,"dcooley@symbolix.com.au", role = c("aut", "cre"))
+    )
+Description: Provides a mechanism to plot an interactive map using 'Mapbox GL' 
+		(<https://docs.mapbox.com/mapbox-gl-js/api/>), a javascript library for interactive maps,
+		and 'Deck.gl' (<https://deck.gl/>), a javascript library which uses 'WebGL' for 
+		visualising large data sets.
+License: GPL-3
+URL: https://symbolixau.github.io/mapdeck/articles/mapdeck.html
+BugReports: https://github.com/SymbolixAU/mapdeck/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: colourvalues (>= 0.3.11), googlePolylines (>= 0.8.7),
+        geojsonsf (>= 2.0.5), htmlwidgets, jsonify (>= 1.2.3),
+        magrittr, Rcpp (>= 1.1.0), shiny, sfheaders (>= 0.4.5)
+RoxygenNote: 7.3.3
+LinkingTo: BH, colourvalues (>= 0.3.11), geojsonsf (>= 2.0.5),
+        geometries (>= 0.2.5), interleave (>= 0.1.2), jsonify (>=
+        1.2.3), rapidjsonr, Rcpp (>= 1.1.0), sfheaders (>= 0.4.5),
+        spatialwidget (>= 0.2.6)
+Suggests: covr, googleway, jsonlite, knitr, rmarkdown, spatialwidget,
+        testthat
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-11-29 08:53:20 UTC; david
+Author: David Cooley [aut, cre]
+Maintainer: David Cooley <dcooley@symbolix.com.au>
+Repository: CRAN
+Date/Publication: 2025-11-29 09:20:02 UTC

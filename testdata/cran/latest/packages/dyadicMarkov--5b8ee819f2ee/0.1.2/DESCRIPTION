@@ -1,0 +1,37 @@
+Package: dyadicMarkov
+Type: Package
+Title: Pattern Estimation and Identification for Dyadic Sequences Using
+        Transition Matrices in R
+Version: 0.1.2
+Authors@R: c(
+  person("Mattia", "Böllenrücher", email = "mboellenruec@student.ethz.ch", role = c("aut", "cre", "cph"),
+         comment = c(ORCID = "0009-0004-4149-4745")),
+  person("Mégane", "Bollenrücher", role = "aut",
+         comment = c(ORCID = "0000-0002-9035-8799")),
+  person("Jean-Philippe", "Antonietti", role = "aut",
+         comment = c(ORCID = "0000-0003-0117-4769")))
+Description: Provides methods for analyzing categorical dyadic sequences using transition matrices within the Longitudinal Actor-Partner Interdependence Model and Markov-chain framework. The package supports empirical transition counts, maximum likelihood estimation of transition probabilities, and identification of univariate and bivariate patterns of interaction in dyadic sequences.
+License: MIT + file LICENSE
+URL: https://github.com/BoellenruecherM/dyadicMarkov-public,
+        https://boellenruecherm.github.io/dyadicMarkov-public/
+BugReports: https://github.com/BoellenruecherM/dyadicMarkov-public/issues
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, srr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-21 05:34:19 UTC; bolle
+Author: Mattia Böllenrücher [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0004-4149-4745>),
+  Mégane Bollenrücher [aut] (ORCID:
+    <https://orcid.org/0000-0002-9035-8799>),
+  Jean-Philippe Antonietti [aut] (ORCID:
+    <https://orcid.org/0000-0003-0117-4769>)
+Maintainer: Mattia Böllenrücher <mboellenruec@student.ethz.ch>
+Repository: CRAN
+Date/Publication: 2026-08-21 08:30:02 UTC

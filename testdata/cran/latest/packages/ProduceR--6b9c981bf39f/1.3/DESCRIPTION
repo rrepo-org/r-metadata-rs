@@ -1,0 +1,25 @@
+Package: ProduceR
+Title: Concise and Efficient Tools for Everyday Statistical Production
+Version: 1.3
+Authors@R: c(person("Vincent", "Reduron", email = "vincent.reduron@laposte.net", role = c("cre", "aut")))
+Description: A set of concise and efficient tools for statistical production. Can also be used for data management.
+    In statistical production, you deal with complex data and need to control your process at each step of your work.
+    Concise functions are very helpful, because you do not hesitate to use them.
+    The following functions are included in the package.
+    'dup'  checks duplicates.
+    'miss' checks missing values.
+    'tac' computes contingency table of all columns.
+    'toc' compares two tables, spotting significant deviations.
+    'chi2_find' compares columns within a data.frame, spotting related categories of (a more complex function).
+Encoding: UTF-8
+Imports: dplyr, rlang, tibble
+RoxygenNote: 7.3.2
+License: MIT + file LICENSE
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-18 07:53:57 UTC; vincent.reduron
+Author: Vincent Reduron [cre, aut]
+Maintainer: Vincent Reduron <vincent.reduron@laposte.net>
+Repository: CRAN
+Date/Publication: 2026-06-18 09:10:02 UTC

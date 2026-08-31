@@ -1,0 +1,41 @@
+Package: rmedsem
+Title: Statistical Mediation Analysis for SEMs
+Version: 1.0.0
+Authors@R: c(
+    person("Mehmet", "Mehmetoglu", email="mehmet.mehmetoglu@ntnu.no", role = c("aut"),
+           comment = c(ORCID = "0000-0002-6092-8551")),
+    person("Matthias", "Mittner", email="matthias.mittner@uit.no", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0205-7353")),
+    person("Kjell", "Slupphaug", email="slupphaugkjell@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0009-0005-8324-2834"))
+           )
+Description: Conducts mediation analysis for structural equation models (SEM)
+    estimated with 'lavaan', 'blavaan', 'cSEM', or 'modsem'. Implements
+    the Baron and Kenny (1986) <doi:10.1037/0022-3514.51.6.1173> and
+    Zhao, Lynch & Chen (2010) <doi:10.1086/651257>
+    approaches to determine the presence and type of mediation. Supports
+    covariance-based SEM, partial least squares SEM, Bayesian SEM, and
+    moderated mediation models. Reports indirect effects with standard
+    errors from Sobel, Delta, Monte-Carlo, and bootstrap methods, along
+    with effect size measures (RIT, RID).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: lavaan, mvtnorm, ggplot2, dplyr, purrr, stats
+URL: https://github.com/ihrke/rmedsem, https://ihrke.github.io/rmedsem/
+BugReports: https://github.com/ihrke/rmedsem/issues
+Depends: R (>= 4.1.0)
+LazyData: true
+Suggests: blavaan, boot, cSEM, HDInterval, modsem, semPlot, rmarkdown,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-10 21:13:16 UTC; mmi041
+Author: Mehmet Mehmetoglu [aut] (ORCID:
+    <https://orcid.org/0000-0002-6092-8551>),
+  Matthias Mittner [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0205-7353>),
+  Kjell Slupphaug [aut] (ORCID: <https://orcid.org/0009-0005-8324-2834>)
+Maintainer: Matthias Mittner <matthias.mittner@uit.no>
+Repository: CRAN
+Date/Publication: 2026-03-16 16:50:02 UTC

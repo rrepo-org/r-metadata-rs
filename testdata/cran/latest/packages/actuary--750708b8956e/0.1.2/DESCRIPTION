@@ -1,0 +1,34 @@
+Type: Package
+Package: actuary
+Title: Actuarial Functions and Utilities
+Version: 0.1.2
+Authors@R: 
+    person("Andrew", "Wilson", , "andrewm.wilson@gmail.com", role = c("aut", "cre", "cph"))
+Description: Provides actuarial modeling tools for Monte Carlo loss
+    simulations, loss reserving, and reinsurance layer loss calculations.
+    It enables users to generate stochastic loss datasets with
+    customisable frequency and severity distributions, fit development
+    patterns to claim triangles, and calculate reinsurance losses for
+    occurrence and aggregate layers with user-defined retentions, limits,
+    and reinstatements. For development pattern selection, the package
+    includes a machine learning approach that evaluates multiple reserving
+    models using holdout validation to identify the best-fitting pattern
+    based on predictive accuracy, this is based on the algorithm described
+    in Richman, R and Balona, C (2020)<https://www.ssrn.com/abstract=3697256>.
+License: MIT + file LICENSE
+BugReports: https://github.com/andrewwilson201/actuary/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, dtplyr, forcats, furrr, future, gamlss.dist, ggplot2,
+        ggtext, grDevices, MASS, pracma, progress, purrr, rlang,
+        scales, stats, tidyr, yardstick
+Suggests: spelling
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-02-27 20:55:18 UTC; andre
+Author: Andrew Wilson [aut, cre, cph]
+Maintainer: Andrew Wilson <andrewm.wilson@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-04 10:30:07 UTC

@@ -1,0 +1,42 @@
+Package: puff
+Title: Simulate and Visualize the Gaussian Puff Forward Atmospheric
+        Model
+Version: 0.1.1
+Authors@R: 
+    c(
+    person("Teagan", "Ward", email = "teaganward@mines.edu", role = "aut"),
+    person("Philip", "Waggoner", email = "philip.waggoner@mines.edu", role = c("aut")),
+    person("Will", "Daniels", email = "wdaniels@mines.edu", role = c("aut")),
+    person("Meng", "Jia", email = "mjia@mines.edu", role = c("aut")),
+    person("Dorit", "Hammerling", email = "hammerling@mines.edu", role = c("aut", "ths")),
+    person("Callan", "Okenberg", email = "cal_okenberg@mines.edu", role = c("cre"))
+    )
+Description: Simulate and run the Gaussian puff forward atmospheric
+    model in sensor (specific sensor coordinates) or grid (across the
+    grid of a full oil and gas operations site) modes, following Jia, M., 
+    Fish, R., Daniels, W., Sprinkle, B. and Hammerling, D. (2024) 
+    <doi:10.26434/chemrxiv-2023-hc95q-v3>. Numerous visualization options, 
+    including static and animated, 2D and 3D, and a site map generator 
+    based on sensor and source coordinates.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/Hammerling-Research-Group/puff
+BugReports: https://github.com/Hammerling-Research-Group/puff/issues
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: ggplot2, dplyr, tidyr, magrittr, htmlwidgets, patchwork,
+        plotly, scales, tidyselect
+Suggests: knitr, rmarkdown, devtools, akima, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-21 16:16:19 UTC; danie
+Author: Teagan Ward [aut],
+  Philip Waggoner [aut],
+  Will Daniels [aut],
+  Meng Jia [aut],
+  Dorit Hammerling [aut, ths],
+  Callan Okenberg [cre]
+Maintainer: Callan Okenberg <cal_okenberg@mines.edu>
+Repository: CRAN
+Date/Publication: 2026-07-21 22:10:10 UTC

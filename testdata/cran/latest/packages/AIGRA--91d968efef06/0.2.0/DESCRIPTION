@@ -1,0 +1,31 @@
+Package: AIGRA
+Title: Agentic Item Generation, Review, and Analysis
+Version: 0.2.0
+Authors@R: 
+    person(
+        given = "Moses O.",
+        family = "Omopekunola",
+        email = "omopekunola.m@hse.ru",
+        role = c("aut", "cre")
+    )
+Author: Moses O. Omopekunola [aut, cre]
+Maintainer: Moses O. Omopekunola <omopekunola.m@hse.ru>
+Description: Provides tools for validating, generating, reviewing, reporting,
+    and visualising assessment item generation workflows. The package supports
+    tabular item-bank templates, item-bank validation, 'Python'-backed agentic
+    generation workflows, multimodal diagram generation, quality summaries, and
+    'HTML' reporting. External artificial intelligence services and related
+    'API' calls require user-supplied credentials and are not called during
+    package checks. The workflow is informed by automatic item generation
+    methods described by Gierl and Haladyna (2013, ISBN:9780415897518) and
+    evidence-centered assessment design described by Mislevy et al. (2003)
+    <doi:10.1002/j.2333-8504.2003.tb01908.x>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: graphics, grid, reticulate, utils, grDevices,
+Suggests: base64enc, png, readxl, rmarkdown, writexl
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-10 11:23:30 UTC; OMOPEKUNOLA
+Repository: CRAN
+Date/Publication: 2026-07-10 11:50:02 UTC

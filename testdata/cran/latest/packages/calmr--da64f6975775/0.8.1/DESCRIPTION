@@ -1,0 +1,44 @@
+Package: calmr
+Title: Canonical Associative Learning Models and their Representations
+Version: 0.8.1
+Authors@R: 
+    person("Victor", "Navarro", , "navarrov@cardiff.ac.uk", role = c("aut", "cre", "cph"))
+Description: Implementations of canonical associative learning models,
+    with tools to run experiment simulations, estimate model parameters,
+    and compare model representations. Experiments and results are
+    represented using S4 classes and methods.
+License: GPL (>= 3)
+URL: https://github.com/victor-navarro/calmr,
+        https://victornavarro.org/calmr/
+BugReports: https://github.com/victor-navarro/calmr/issues
+Depends: R (>= 3.5)
+Imports: data.table, future, future.apply, GA, ggnetwork, ggplot2,
+        grid, lifecycle, methods, network, patchwork, progressr, rlang,
+        stats, tools, utils
+Suggests: DiagrammeR, knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+Collate: 'anccr_helpers.R' 'assertions.R' 'calmr_verbosity.R'
+        'compare_models.R' 'data.R' 'fit_helpers.R' 'fit_model.R'
+        'get_parameters.R' 'get_timings.R' 'get_design.R'
+        'heidi_helpers.R' 'information_functions.R' 'make_experiment.R'
+        'model_graphs.R' 'model_parsers.R' 'model_support_functions.R'
+        'parallel_helpers.R' 'parse_design.R' 'phase_parser.R'
+        'plotting_functions.R' 'plotting_options.R' 'rsa_functions.R'
+        'run_experiment.R' 'set_calmr_palette.R' 'td_helpers.R'
+        'class_design.R' 'class_experiment.R' 'class_fit.R'
+        'class_rsa.R' 'class_model.R' 'class_model_ANCCR.R'
+        'class_model_HDI2020.R' 'class_model_HD2022.R'
+        'class_model_MAC1975.R' 'class_model_PKH1982.R'
+        'class_model_RAND.R' 'class_model_RW1972.R'
+        'class_model_SM2007.R' 'class_model_TD.R' 'calmr-package.R'
+NeedsCompilation: no
+Packaged: 2025-09-08 13:19:03 UTC; sapvn2
+Author: Victor Navarro [aut, cre, cph]
+Maintainer: Victor Navarro <navarrov@cardiff.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-09-08 14:50:08 UTC

@@ -1,0 +1,24 @@
+Package: simDNAmixtures
+Title: Simulate Forensic DNA Mixtures
+Version: 1.1.2
+Authors@R: 
+    person("Maarten", "Kruijver", , "maarten.kruijver@esr.cri.nz", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6890-7632"))
+Description: Mixed DNA profiles can be sampled according to models for probabilistic genotyping. Peak height variability is modelled using a log normal distribution or a gamma distribution. Sample contributors may be related according to a pedigree.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, naturalsort, pedprobr, xml2
+Suggests: rmarkdown, knitr, pedtools, testthat (>= 3.0.0), readr,
+        readxl, withr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://mkruijver.github.io/simDNAmixtures/
+NeedsCompilation: no
+Packaged: 2025-04-14 13:56:20 UTC; mkruijver
+Author: Maarten Kruijver [aut, cre] (<https://orcid.org/0000-0002-6890-7632>)
+Maintainer: Maarten Kruijver <maarten.kruijver@esr.cri.nz>
+Repository: CRAN
+Date/Publication: 2025-04-14 14:10:01 UTC

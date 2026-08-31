@@ -1,0 +1,71 @@
+Package: pacta.loanbook
+Title: Easily Install and Load PACTA for Banks Packages
+Version: 0.1.1
+Authors@R: 
+    c(
+      person(
+        given = "Jacob",
+        family = "Kastl",
+        role = c("aut", "cre", "ctr"),
+        email = "jacob.kastl@gmail.com",
+        comment = c(ORCID = "0009-0000-8281-8129")
+      ),
+      person(
+        given = "Jackson",
+        family = "Hoffart",
+        role = c("aut", "ctr"),
+        email = "jackson.hoffart@gmail.com",
+        comment = c(ORCID = "0000-0002-8600-5042")
+      ),
+      person(
+        given = "CJ",
+        family = "Yetman",
+        role = c("aut", "ctr"),
+        email = "cj@cjyetman.com",
+        comment = c(ORCID = "0000-0001-5099-9500")
+      ),
+      person(
+        given = "RMI",
+        role = c("cph", "fnd"),
+        email = "PACTA4banks@rmi.org",
+        comment = c(ROR = "03anfar33")
+      )
+    )
+Description: PACTA (Paris Agreement Capital Transition Assessment) for Banks is
+  a tool that allows banks to calculate the climate alignment of their corporate
+  lending portfolios. This package is designed to make it easy to install and
+  load multiple PACTA for Banks packages in a single step. It also provides
+  thorough documentation - the PACTA for Banks cookbook at
+  <https://rmi-pacta.github.io/pacta.loanbook/articles/cookbook_overview.html> -
+  on how to run a PACTA for Banks analysis. This covers prerequisites for the
+  analysis, the separate steps of running the analysis, the interpretation of
+  PACTA for Banks results, and advanced use cases.
+License: MIT + file LICENSE
+URL: https://rmi-pacta.github.io/pacta.loanbook/,
+        https://github.com/RMI-PACTA/pacta.loanbook
+BugReports: https://github.com/RMI-PACTA/pacta.loanbook/issues
+Depends: R (>= 4.1)
+Imports: cli, dplyr, ggrepel, magrittr, purrr, r2dii.analysis (>=
+        0.5.1), r2dii.data (>= 0.6.0), r2dii.match (>= 0.4.1),
+        r2dii.plot (>= 0.5.2), rlang, rstudioapi, scales, tibble,
+        tidyselect
+Suggests: covr, DiagrammeR, ggplot2, gt (>= 0.11.0), knitr (>= 1.42),
+        readr, readxl, rmarkdown (>= 2.19), roxygen2 (>= 4.1.0),
+        spelling, testthat (>= 3.2.2), tidyr, writexl
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Config/Needs/website: rmi-pacta/pacta.pkgdown.rmitemplate, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-06-23 12:01:00 UTC; cjrmi
+Author: Jacob Kastl [aut, cre, ctr] (ORCID:
+    <https://orcid.org/0009-0000-8281-8129>),
+  Jackson Hoffart [aut, ctr] (ORCID:
+    <https://orcid.org/0000-0002-8600-5042>),
+  CJ Yetman [aut, ctr] (ORCID: <https://orcid.org/0000-0001-5099-9500>),
+  RMI [cph, fnd] (ROR: <https://ror.org/03anfar33>)
+Maintainer: Jacob Kastl <jacob.kastl@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-24 09:50:02 UTC

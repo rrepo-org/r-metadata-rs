@@ -1,0 +1,65 @@
+Package: bruno
+Title: Predicting User-Defined Event Recurrence under Exchangeability
+Version: 0.1.0
+Authors@R: 
+    person(
+        given = "Irene",
+        family = "Gianeselli",
+        role = c("aut", "cre"),
+        email = "irene.gianeselli@unibz.it",
+        comment = c(
+            ORCID = "0000-0002-8689-3035"
+        )
+    )
+Description: Implements analytical prediction of recurrence for user-defined
+    binary events; 'bruno' abbreviates Beta-Bernoulli Recurrence for
+    Unobserved Next Outcomes. The procedure applies when the observed and
+    future event indicators are judged exchangeable for the intended
+    prediction. For an indefinitely extendible exchangeable binary sequence,
+    de Finetti's representation theorem expresses the assigned joint
+    probabilities as a mixture of Bernoulli laws over a mixing distribution
+    on the unit interval (de Finetti, 1931)
+    <doi:10.4064/fm-17-1-298-329>. The package adopts a beta distribution as
+    an additional parametric specification of this mixing distribution.
+    Users specify an initial probability mu0 assigned to the event and a
+    positive concentration parameter tau, giving beta parameters
+    a = mu0 * tau and b = (1 - mu0) * tau. If the declared event occurs s
+    times among n observed cases, conditioning gives
+    Beta(a + s, b + n - s). From this conditional assessment, the package
+    computes analytically the probability assigned to occurrence of the same
+    event in the next exchangeable case and, for a prespecified future sample
+    size, the exact beta-binomial predictive distribution of the number of
+    future event occurrences. Events may be supplied directly as logical or
+    binary indicators or defined from paired pre-post measurements through a
+    user-specified logical expression. Prediction may be performed for a
+    single predictive class or separately across user-defined predictive
+    classes, using common or class-specific initial probabilities and
+    concentration parameters. Cases for which event status cannot be
+    determined, and cases with missing predictive-class membership in grouped
+    analyses, are excluded without imputation; case-level classification and
+    inclusion information are retained for audit purposes. Summary methods
+    provide central probability intervals for the conditional beta assessment
+    and, for future samples larger than one case, predictive intervals for the
+    future recurrence count. The package is intended for psychological,
+    educational, pilot-study, and research decision-making applications in
+    which recurrence of an explicitly defined event is the predictive target
+    and the predictive relevance of observed cases for future cases can be
+    substantively justified. The resulting probabilities concern recurrence
+    of the declared event within the stated predictive class and do not
+    independently establish latent change, intervention efficacy, causal
+    effects, measurement validity, or a research decision.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-08-19 21:13:49 UTC; irene
+Author: Irene Gianeselli [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8689-3035>)
+Maintainer: Irene Gianeselli <irene.gianeselli@unibz.it>
+Repository: CRAN
+Date/Publication: 2026-08-21 13:30:38 UTC

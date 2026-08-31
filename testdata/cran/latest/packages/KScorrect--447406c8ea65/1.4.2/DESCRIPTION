@@ -1,0 +1,31 @@
+Package: KScorrect
+Type: Package
+Title: Lilliefors-Corrected Kolmogorov-Smirnov Goodness-of-Fit Tests
+Version: 1.4.2
+Depends: R (>= 4.5.0)
+Imports: MASS (>= 7.3.0), doParallel (>= 1.0.14), foreach (>= 1.4.4),
+        iterators (>= 1.0.10), parallel (>= 3.6.0), mclust (>= 5.4)
+Date: 2026-07-21
+Authors@R: c(person(given = "Phil", family = "Novack-Gottshall", 
+             role = c("aut", "cre"), email = "pnovack-gottshall@ben.edu"),
+             person(given = c("Steve", "C."), family = "Wang", role = "aut"))
+Description: Implements the Lilliefors-corrected Kolmogorov-Smirnov test for use
+    in goodness-of-fit tests, suitable when population parameters are unknown and
+    must be estimated by sample statistics. P-values are estimated by simulation.
+    Can be used with a variety of continuous distributions, including normal,
+    lognormal, univariate mixtures of normals, uniform, loguniform, exponential,
+    gamma, and Weibull distributions. Functions to generate random numbers and
+    calculate density, distribution, and quantile functions are provided for use
+    with the log uniform and mixture distributions.
+License: CC0
+URL: https://github.com/pnovack-gottshall/KScorrect
+BugReports: https://github.com/pnovack-gottshall/KScorrect/issues
+RoxygenNote: 8.0.0
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-07-23 15:19:08 UTC; pnovack-gottshall
+Author: Phil Novack-Gottshall [aut, cre],
+  Steve C. Wang [aut]
+Maintainer: Phil Novack-Gottshall <pnovack-gottshall@ben.edu>
+Repository: CRAN
+Date/Publication: 2026-07-23 16:00:02 UTC

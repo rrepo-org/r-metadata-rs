@@ -1,0 +1,43 @@
+Package: pb210dating
+Type: Package
+Title: Pb-210 Dating of Sediment Cores
+Version: 1.0.1
+Date: 2026-08-01
+Encoding: UTF-8
+Authors@R: c(
+    person(given="Joan-Albert", family="Sanchez-Cabeza",
+           email = "jasanchez@cmarl.unam.mx",
+           role = c("aut", "cre", "cph"),
+           comment = "Universidad Nacional Autonoma de Mexico"),
+    person(given="Ana Carolina", family="Ruiz-Fernandez",
+           role = "aut",
+           comment = "Universidad Nacional Autonoma de Mexico"),
+    person(given="David", family="Morina Soler",
+           role = "aut",
+           comment = "Universitat Autònoma de Barcelona")
+  )
+Description: Dates sediment cores from lead-210 (Pb-210) activity profiles
+    measured by alpha or gamma spectrometry, following the unified
+    formulation and nomenclature of Sanchez-Cabeza and Ruiz-Fernandez (2012)
+    <doi:10.1016/j.gca.2010.12.024>. Implements the Constant Flux (CF) and
+    Constant Flux Constant Sedimentation (CFCS) dating models, together with
+    supporting tools for data input, decay correction, missing inventory
+    estimation, calculation of sediment and mass accumulation rates, and
+    Monte Carlo propagation of dating uncertainties as described in
+    Sanchez-Cabeza et al. (2014) <doi:10.1016/j.quageo.2014.06.002>. Also
+    provides functions to visualize activity profiles and resulting age
+    models.
+Depends: R (>= 4.3)
+Imports: lubridate
+License: GPL (>= 2)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-19 20:46:14 UTC; jasc2
+Author: Joan-Albert Sanchez-Cabeza [aut, cre, cph] (Universidad Nacional
+    Autonoma de Mexico),
+  Ana Carolina Ruiz-Fernandez [aut] (Universidad Nacional Autonoma de
+    Mexico),
+  David Morina Soler [aut] (Universitat Autònoma de Barcelona)
+Maintainer: Joan-Albert Sanchez-Cabeza <jasanchez@cmarl.unam.mx>
+Repository: CRAN
+Date/Publication: 2026-08-21 13:30:02 UTC

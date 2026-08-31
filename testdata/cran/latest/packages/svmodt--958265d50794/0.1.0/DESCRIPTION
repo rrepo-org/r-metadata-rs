@@ -1,0 +1,47 @@
+Package: svmodt
+Type: Package
+Title: Linear SVM-Based Recursive Decision Trees
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Aneesh", "Agarwal",
+      email = "aaga0022@student.monash.edu",
+      role = c("aut", "cre", "cph")
+    ),
+    person(
+      "Jack", "Jewson",
+      email = "Jack.Jewson@monash.edu",
+      role = c("aut", "ths")
+    ),
+    person(
+      "Erik", "Sverdrup",
+      email = "Erik.Sverdrup@monash.edu",
+      role = c("aut", "ths")
+    )
+  )
+Description: Implements Support Vector Machine Oblique Decision Trees (SVMODT).
+    Recursively builds classification trees using linear Support Vector Machines (SVM) hyperplanes at each
+    node instead of axis-parallel splits, creating oblique decision boundaries.
+    Features include multiple feature selection methods, dynamic feature subset 
+    strategies, class weight support for imbalanced datasets, pruning and 
+    feature penalization.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, rmarkdown, bookdown, testthat (>= 3.0.0), rpart,
+        rsample, gridExtra, tidyr, kableExtra, palmerpenguins, dplyr
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+Imports: rlang, e1071, FSelectorRcpp, ggplot2
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://github.com/AneeshAgarwala/svmodt
+BugReports: https://github.com/AneeshAgarwala/svmodt/issues
+NeedsCompilation: no
+Packaged: 2026-06-24 09:10:26 UTC; AneeshAG
+Author: Aneesh Agarwal [aut, cre, cph],
+  Jack Jewson [aut, ths],
+  Erik Sverdrup [aut, ths]
+Maintainer: Aneesh Agarwal <aaga0022@student.monash.edu>
+Repository: CRAN
+Date/Publication: 2026-06-30 11:10:02 UTC

@@ -1,0 +1,30 @@
+Package: gmeans
+Title: G-means Clustering
+Version: 0.1.0
+Authors@R: 
+    person("Maximilian", "Mücke", , "muecke.maximilian@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-9432-9795"))
+Description: Gaussian-means (G-means) clustering is a clustering algorithm
+    that extends the k-means algorithm by automatically determining the
+    number of clusters.
+License: MIT + file LICENSE
+URL: https://m-muecke.github.io/gmeans/,
+        https://github.com/m-muecke/gmeans
+BugReports: https://github.com/m-muecke/gmeans/issues
+Depends: R (>= 4.1.0)
+Imports: stats
+Suggests: clue, data.table (>= 1.15.0), GGally, ggfortify, ggplot2,
+        knitr, mlr3cluster, mlr3misc, mlr3viz, paradox (>= 0.6.0), R6,
+        rmarkdown, testthat (>= 3.3.0), withr (>= 2.4.0)
+VignetteBuilder: knitr
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-07-25 17:58:44 UTC; mmuecke
+Author: Maximilian Mücke [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-9432-9795>)
+Maintainer: Maximilian Mücke <muecke.maximilian@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 06:40:08 UTC

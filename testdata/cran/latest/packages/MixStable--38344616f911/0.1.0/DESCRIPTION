@@ -1,0 +1,34 @@
+Package: MixStable
+Type: Package
+Title: Parameter Estimation for Stable Distributions and Their Mixtures
+Version: 0.1.0
+Authors@R: c(
+    person("Solym", "Manou-Abi", email = "solym.manou.abi@univ-poitiers.fr", role = c("aut", "cre")),
+    person("Adam", "Najib", email = "najibadam145@gmail.com", role = "aut"),
+    person("Yousri", "Slaoui", email = "Yousri.Slaoui@math.univ-poitiers.fr", role = "aut"))
+Description: Provides various functions for parameter estimation of one-dimensional
+    stable distributions and their mixtures. It implements a diverse set of
+    estimation methods, including quantile-based approaches, regression methods
+    based on the empirical characteristic function (empirical, kernel, and
+    recursive), and maximum likelihood estimation. For mixture models, it provides
+    stochastic expectation–maximization (SEM) algorithms and Bayesian estimation
+    methods using sampling and importance sampling to overcome the long burn-in
+    period of Markov Chain Monte Carlo (MCMC) strategies. The package also includes
+    tools and statistical tests for analyzing whether a dataset follows a stable
+    distribution. Some of the implemented methods are described in
+    Hajjaji, O., Manou-Abi, S. M., and Slaoui, Y. (2024) <doi:10.1080/02664763.2024.2434627>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: stabledist, mixtools, nortest, openxlsx, e1071, jsonlite,
+        libstable4u, stats, graphics, MASS, utils
+Suggests: ggplot2, grDevices, moments, readxl, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-30 00:19:17 UTC; FX506
+Author: Solym Manou-Abi [aut, cre],
+  Adam Najib [aut],
+  Yousri Slaoui [aut]
+Maintainer: Solym Manou-Abi <solym.manou.abi@univ-poitiers.fr>
+Repository: CRAN
+Date/Publication: 2025-11-03 19:20:18 UTC

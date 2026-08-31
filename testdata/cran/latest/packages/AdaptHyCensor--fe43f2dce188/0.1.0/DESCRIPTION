@@ -1,0 +1,27 @@
+Package: AdaptHyCensor
+Type: Package
+Title: Generalized Inference and Data Generation for Adaptive
+        Progressive Hybrid Censoring Schemes
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut"))
+Description: Comprehensive computational tools for data generation, statistical inference, and visual diagnostics under Adaptive Type-I and Adaptive Type-II Progressive Hybrid Censoring Schemes. Users can supply custom probability density functions (PDF), cumulative distribution functions (CDF), survival functions, parameter ranges, and progressive schemes for any univariate lifetime distribution. Parameter estimation methods include Maximum Likelihood Estimation (MLE) using multiple optimization algorithms (Newton-Raphson (NR), Broyden-Fletcher-Goldfarb-Shanno (BFGS), BFGS in R (BFGSR), Berndt-Hall-Hall-Hausman (BHHH), Simulated Annealing (SANN), Conjugate Gradients (CG), and Nelder-Mead (NM)), Bayesian estimation via Gibbs and Metropolis-Hastings (M-H) MCMC sampling, Importance Sampling (IS), and Lindley's approximation. Diagnostic tools provide histograms, dot plots, and autocorrelation function (ACF) plots for model validation. Methods are based on Balakrishnan, Cramer, and Kundu (2023, ISBN:978-0-12-398387-9), Ng, Kundu, and Chan (2009, IEEE Transactions on Reliability, 58, 634-642), Lin and Huang (2012, Journal of Statistical Computation and Simulation, 82, 1005-1018), Lindley (1980, Journal of the Royal Statistical Society, Series B, 42, 223-237), and Berndt, Hall, Hall, and Hausman (1974, Annals of Economic and Social Measurement, 3, 653-665).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-07-25 04:31:32 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 14:10:45 UTC

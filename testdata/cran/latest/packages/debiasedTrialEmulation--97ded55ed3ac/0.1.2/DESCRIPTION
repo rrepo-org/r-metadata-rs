@@ -1,0 +1,33 @@
+Package: debiasedTrialEmulation
+Type: Package
+Title: Pipeline for Debiased Target Trial Emulation
+Version: 0.1.2
+Authors@R: c(person("Bingyu", "Zhang", role = c("aut","cre"), email = "bingyuz7@sas.upenn.edu"),
+            person("Yiwen", "Lu", role = "aut"),
+            person("Huilin", "Tang", role = "aut"),
+            person("Dazheng","Zhang", role = "aut"),
+            person("Yuqing", "Lei", role = "aut"),
+            person("Tingyin", "Wang", role = "aut"),
+            person("Siqi", "Chen", role = "aut"),
+            person("Yong","Chen",role = "aut",email = "ychen123@pennmedicine.upenn.edu"))
+Description: Supports propensity score-based methods—including matching, stratification, and weighting—for estimating causal treatment effects. It also implements calibration using negative control outcomes to enhance robustness. 'debiasedTrialEmulation' facilitates effect estimation for both binary and time-to-event outcomes, supporting risk ratio (RR), odds ratio (OR), and hazard ratio (HR) as effect measures. It integrates statistical modeling and visualization tools to assess covariate balance, equipoise, and bias calibration. Additional methods—including approaches to address immortal time bias, information bias, selection bias, and informative censoring—are under development. Users interested in these extended features are encouraged to contact the package authors.
+Imports:
+        dplyr,janitor,cobalt,MatchIt,geex,glmnet,survival,ggplot2,ParallelLogger,EmpiricalCalibration,purrr
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Author: Bingyu Zhang [aut, cre],
+  Yiwen Lu [aut],
+  Huilin Tang [aut],
+  Dazheng Zhang [aut],
+  Yuqing Lei [aut],
+  Tingyin Wang [aut],
+  Siqi Chen [aut],
+  Yong Chen [aut]
+Maintainer: Bingyu Zhang <bingyuz7@sas.upenn.edu>
+Packaged: 2026-03-20 00:11:18 UTC; yiwenlu
+Repository: CRAN
+Date/Publication: 2026-03-20 00:30:03 UTC

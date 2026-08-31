@@ -1,0 +1,76 @@
+Package: hdf5lib
+Type: Package
+Title: Headers and Static Libraries for 'HDF5'
+Version: 2.1.1.2
+Authors@R: c(
+    person(
+      "Daniel P.", "Smith",
+      email   = "dansmith01@gmail.com",
+      role    = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-2479-2044")),
+    person("Alkek Center for Metagenomics and Microbiome Research", role = c("cph", "fnd")),
+    person("The HDF Group", role = c("ctb", "cph"), comment = "HDF5 library"),
+    person("The Board of Trustees of the University of Illinois", role = "cph", comment = "NCSA HDF5"),
+    person("Jean-loup", "Gailly", role = c("ctb", "cph"), comment = "zlib-ng library"),
+    person("Mark", "Adler", role = c("ctb", "cph"), comment = "zlib-ng library"),
+    person("Kiyoshi", "Masui", role = c("ctb", "cph"), comment = "bitshuffle library"),
+    person("Julian R", "Seward", role = c("ctb", "cph"), comment = "bzip2 library"),
+    person("Francesc", "Alted", role = c("ctb", "cph"), comment = "blosc and blosc2 libraries"),
+    person("Blosc Development Team", role = "cph", comment = "blosc and blosc2 libraries"),
+    person("Zeev", "Tarento", role = c("ctb", "cph"), comment = "csnappy library"),
+    person("Google Inc.", role = "cph", comment = "csnappy library"),
+    person("Mathis", "Rosenhauer", role = c("ctb", "cph"), comment = "libaec library"),
+    person("Moritz", "Hanke", role = "ctb", comment = "libaec library"),
+    person("Joerg", "Behrens", role = "ctb", comment = "libaec library"),
+    person("Luis", "Kornblueh", role = "ctb", comment = "libaec library"),
+    person("Marc Alexander", "Lehmann", role = c("ctb", "cph"), comment = "liblzf library"),
+    person("Yann", "Collet", role = c("ctb", "cph"), comment = "lz4 and zstd libraries"),
+    person("Lawrence Livermore National Security, LLC", role = "cph", comment = "zfp library"),
+    person("Meta Platforms, Inc. and affiliates", role = "cph", comment = "zstd library"),
+    person("Yuta", "Mori", role = "ctb", comment = "zstd library") )
+Description: Provides a self-contained, static build of the 'HDF5'
+    (Hierarchical Data Format 5) 'C' library (release 2.1.1) for R
+    package developers. Designed for use in the 'LinkingTo' field,
+    it enables zero-dependency integration by building the library
+    entirely from source during installation. Additionally, it compiles
+    and internally links a comprehensive suite of advanced compression
+    filters and their 'HDF5' plugins (Zstd, LZ4, Blosc/Blosc2, Snappy,
+    ZFP, Bzip2, LZF, Bitshuffle, szip, and gzip). These plugins are
+    integrated out-of-the-box, allowing downstream packages to utilize
+    high-performance compression directly through the standard 'HDF5'
+    API while keeping the underlying third-party headers fully
+    encapsulated. 'HDF5' is developed by The HDF Group
+    <https://www.hdfgroup.org/>.
+URL: https://github.com/cmmr/hdf5lib, https://cmmr.github.io/hdf5lib/
+BugReports: https://github.com/cmmr/hdf5lib/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+Packaged: 2026-07-21 21:06:29 UTC; Daniel
+Author: Daniel P. Smith [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2479-2044>),
+  Alkek Center for Metagenomics and Microbiome Research [cph, fnd],
+  The HDF Group [ctb, cph] (HDF5 library),
+  The Board of Trustees of the University of Illinois [cph] (NCSA HDF5),
+  Jean-loup Gailly [ctb, cph] (zlib-ng library),
+  Mark Adler [ctb, cph] (zlib-ng library),
+  Kiyoshi Masui [ctb, cph] (bitshuffle library),
+  Julian R Seward [ctb, cph] (bzip2 library),
+  Francesc Alted [ctb, cph] (blosc and blosc2 libraries),
+  Blosc Development Team [cph] (blosc and blosc2 libraries),
+  Zeev Tarento [ctb, cph] (csnappy library),
+  Google Inc. [cph] (csnappy library),
+  Mathis Rosenhauer [ctb, cph] (libaec library),
+  Moritz Hanke [ctb] (libaec library),
+  Joerg Behrens [ctb] (libaec library),
+  Luis Kornblueh [ctb] (libaec library),
+  Marc Alexander Lehmann [ctb, cph] (liblzf library),
+  Yann Collet [ctb, cph] (lz4 and zstd libraries),
+  Lawrence Livermore National Security, LLC [cph] (zfp library),
+  Meta Platforms, Inc. and affiliates [cph] (zstd library),
+  Yuta Mori [ctb] (zstd library)
+Maintainer: Daniel P. Smith <dansmith01@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 22:10:15 UTC

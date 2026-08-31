@@ -1,0 +1,37 @@
+Package: mllrnrs
+Title: R6-Based ML Learners for 'mlexperiments'
+Version: 0.0.9
+Authors@R: 
+    person("Lorenz A.", "Kapsner", , "lorenz.kapsner@gmail.com", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0003-1866-860X"))
+Description: Enhances 'mlexperiments'
+    <https://CRAN.R-project.org/package=mlexperiments> with additional
+    machine learning ('ML') learners. The package provides R6-based
+    learners for the following algorithms: 'glmnet'
+    <https://CRAN.R-project.org/package=glmnet>, 'ranger'
+    <https://CRAN.R-project.org/package=ranger>, 'xgboost'
+    <https://CRAN.R-project.org/package=xgboost>, and 'lightgbm'
+    <https://CRAN.R-project.org/package=lightgbm>. These can be used
+    directly with the 'mlexperiments' R package.
+License: GPL (>= 3)
+URL: https://github.com/kapsner/mllrnrs
+BugReports: https://github.com/kapsner/mllrnrs/issues
+Depends: R (>= 4.1.0)
+Imports: data.table, kdry, mlexperiments (>= 1.0.0), R6, stats
+Suggests: glmnet, lightgbm (>= 4.0.0), lintr, measures, mlbench,
+        parallel, quarto, ranger, rBayesianOptimization, splitTools,
+        testthat (>= 3.0.1), xgboost (>= 3.1.2.1)
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Date/Publication: 2026-07-27 17:40:02 UTC
+Encoding: UTF-8
+SystemRequirements: Quarto command line tools
+        (https://github.com/quarto-dev/quarto-cli).
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 16:51:26 UTC; user
+Author: Lorenz A. Kapsner [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0003-1866-860X>)
+Maintainer: Lorenz A. Kapsner <lorenz.kapsner@gmail.com>
+Repository: CRAN

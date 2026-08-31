@@ -1,0 +1,28 @@
+Package: charlesschwabapi
+Type: Package
+Title: Wrapper Functions Around 'Charles Schwab Individual Trader API'
+Version: 1.0.5
+Authors@R: 
+    c(person(given = "Nick",
+             family = "Bultman",
+             role = c("aut", "cre", "cph"),
+             email = "njbultman74@gmail.com"),
+      person(given = "Todd",
+             family = "Sykes",
+             role = c("ctb"),
+             email = "toddsykes@gmail.com"))
+Description: For those wishing to interact with the 'Charles Schwab Individual Trader API' (<https://developer.schwab.com/products/trader-api--individual>) with R in a simplified manner, this package offers wrapper functions around authentication and the available API calls to streamline the process.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: httr, lubridate, stringr, purrr, tidyr, anytime, dplyr,
+        openssl, tibble
+Suggests: testthat (>= 3.0.0), covr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-11-10 00:58:14 UTC; njbul
+Author: Nick Bultman [aut, cre, cph],
+  Todd Sykes [ctb]
+Maintainer: Nick Bultman <njbultman74@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-26 17:40:02 UTC

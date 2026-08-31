@@ -1,0 +1,50 @@
+Package: ivreg2r
+Title: Extended Instrumental Variables Estimation with Diagnostics
+Version: 0.1.0
+Authors@R: c(
+    person("Francis", "DiTraglia", , email = "francis.ditraglia@economics.ox.ac.uk", role = c("aut", "cre")),
+    person("Christopher F.", "Baum", role = c("ctb", "cph"),
+           comment = "Author of the Stata ivreg2 program from which ivreg2r is adapted"),
+    person("Mark E.", "Schaffer", role = c("ctb", "cph"),
+           comment = "Author of the Stata ivreg2 program from which ivreg2r is adapted"),
+    person("Steven", "Stillman", role = c("ctb", "cph"),
+           comment = "Author of the Stata ivreg2 program from which ivreg2r is adapted"))
+Description: Comprehensive instrumental variables and GMM estimation with
+    automatic diagnostics, inspired by the 'Stata' command 'ivreg2' of Baum,
+    Schaffer, and Stillman (2003) <doi:10.1177/1536867X0300300101> and Baum,
+    Schaffer, and Stillman (2007) <doi:10.1177/1536867X0800700402>. Supports
+    2SLS, LIML, Fuller, k-class, two-step efficient GMM,
+    and continuously-updated (CUE) estimators. Provides classical, robust,
+    cluster-robust, HAC, and Driscoll-Kraay standard errors. Reports weak
+    identification, underidentification, overidentification, and endogeneity
+    tests at estimation time. All outputs are verified against 'Stata' within
+    tight numerical tolerances.
+License: GPL-3
+Copyright: Adapted from the Stata package 'ivreg2' by Christopher F
+        Baum, Mark E Schaffer, and Steven Stillman, distributed under
+        GPL-3. Component-level provenance for the adapted code and the
+        bundled datasets is in inst/COPYRIGHTS.
+URL: https://restatr.com/ivreg2r/, https://github.com/restatr/ivreg2r
+BugReports: https://github.com/restatr/ivreg2r/issues
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.4.0)
+Imports: Formula, generics, stats, tibble
+Suggests: dplyr, ivreg, knitr, modelsummary, rmarkdown, sandwich,
+        testthat (>= 3.1.5), tidyr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-12 16:42:00 UTC; francisditraglia
+Author: Francis DiTraglia [aut, cre],
+  Christopher F. Baum [ctb, cph] (Author of the Stata ivreg2 program from
+    which ivreg2r is adapted),
+  Mark E. Schaffer [ctb, cph] (Author of the Stata ivreg2 program from
+    which ivreg2r is adapted),
+  Steven Stillman [ctb, cph] (Author of the Stata ivreg2 program from
+    which ivreg2r is adapted)
+Maintainer: Francis DiTraglia <francis.ditraglia@economics.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-07-21 11:00:02 UTC

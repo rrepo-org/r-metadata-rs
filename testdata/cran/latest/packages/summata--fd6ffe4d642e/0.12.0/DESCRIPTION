@@ -1,0 +1,48 @@
+Package: summata
+Type: Package
+Title: Publication-Ready Summary Tables and Forest Plots
+Version: 0.12.0
+Authors@R: c(
+    person(
+        given = c("Paul", "Hsin-ti"), 
+        family = "McClelland", 
+        role = c("aut", "cre", "cph"), 
+        email = "PaulHMcClelland@protonmail.com",
+        comment = c(ORCID = "0000-0002-3119-6531")
+    ))
+Description: A comprehensive framework for descriptive statistics and regression
+    analysis that produces publication-ready tables and forest plots. Provides a
+    unified interface from descriptive statistics through multivariable modeling,
+    with support for linear models, generalized linear models, Cox proportional
+    hazards, and mixed-effects models. Also includes univariable screening, 
+    multivariate regression, model comparison, and export to multiple formats
+    including PDF, DOCX, PPTX, 'LaTeX', HTML, and RTF. Built on 'data.table'
+    for computational efficiency.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://phmcc.codeberg.page/summata/,
+        https://codeberg.org/phmcc/summata,
+        https://github.com/phmcc/summata
+BugReports: https://github.com/phmcc/summata/issues
+Depends: R (>= 4.2.0)
+Imports: data.table, survival, ggplot2, stats, grDevices, parallel,
+        tools, utils
+Suggests: MASS, coxme, flextable, grid, knitr, lme4, MuMIn, officer,
+        pROC, ragg, ResourceSelection, reformulas, rmarkdown, stringr,
+        systemfonts, testthat, tinytex, withr, xtable
+SystemRequirements: All optional. A 'LaTeX' distribution providing
+        pdflatex or xelatex, and kpsewhich, for PDF output from
+        table2pdf(); pdfcrop for auto-sized PDF output; Ghostscript for
+        the optional font embedding in forestsave(). Each feature
+        reports the absence of its tool and the remainder of the
+        package is unaffected.
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-21 00:23:17 UTC; paul
+Author: Paul Hsin-ti McClelland [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3119-6531>)
+Maintainer: Paul Hsin-ti McClelland <PaulHMcClelland@protonmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 06:00:02 UTC

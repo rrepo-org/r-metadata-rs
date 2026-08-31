@@ -1,0 +1,21 @@
+Package: survivalsurrogate
+Type: Package
+Title: Evaluate a Longitudinal Surrogate with a Censored Outcome
+Version: 1.1
+Date: 2025-06-05
+Depends: R (>= 4.1.0)
+Authors@R: c(person("Denis", "Agniel", email = "dagniel@rand.org", role = c("aut")), person("Layla", "Parast", email = "parast@austin.utexas.edu", role = c("aut", "cre")))
+Description: Provides influence function-based methods to evaluate a longitudinal surrogate marker in a censored time-to-event outcome setting, with plug-in and targeted maximum likelihood estimation options. Details are described in: Agniel D and Parast L (2025). "Robust Evaluation of Longitudinal Surrogate Markers with Censored Data." Journal of the Royal Statistical Society: Series B <doi:10.1093/jrsssb/qkae119>. A tutorial for this package can be found at <https://www.laylaparast.com/survivalsurrogate> and a Shiny App 
+  implementing the package can be found at 
+  <https://parastlab.shinyapps.io/survivalsurrogateApp/>.
+License: GPL
+Imports: stats, dplyr, magrittr, glue, mlr3, purrr, SparseM, rBeta2009,
+        data.table, utils, rpart
+Suggests: mlr3learners
+NeedsCompilation: no
+Packaged: 2025-06-05 19:20:21 UTC; parastlm
+Author: Denis Agniel [aut],
+  Layla Parast [aut, cre]
+Maintainer: Layla Parast <parast@austin.utexas.edu>
+Repository: CRAN
+Date/Publication: 2025-06-05 20:20:01 UTC

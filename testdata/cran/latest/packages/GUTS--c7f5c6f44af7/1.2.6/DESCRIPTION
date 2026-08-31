@@ -1,0 +1,48 @@
+Package: GUTS
+Type: Package
+Title: Fast Calculation of the Likelihood of a Stochastic Survival
+        Model
+Authors@R: c(person(given = "Carlo",
+                      family = "Albert",
+                      role = "aut",
+                      email = "carlo.albert@eawag.ch"),
+               person(given = "Sören",
+                      family = "Vogel",
+                      role = "aut",
+                      email = "soeren.vogel@posteo.ch"),
+               person(given = "Oliver",
+                      family = "Jakoby",
+                      role = c("aut", "cre"),
+                      email = "oliver.jakoby@rifcon.de"),
+               person(given = "Alexander",
+                      family = "Singer",
+                      role = "aut",
+                      email = "alexander.singer@rifcon.de"),
+               person(given = "Dirk",
+                      family = "Nickisch",
+                      role = "aut",
+                      email = "dirk.nickisch@rifcon.de"))
+Version: 1.2.6
+Date: 2025-08-04
+Description: Given exposure and survival time series as well as parameter values, GUTS allows for the fast calculation of the survival probabilities as well as the logarithm of the corresponding likelihood (see Albert, C., Vogel, S. and Ashauer, R. (2016) <doi:10.1371/journal.pcbi.1004978>).
+License: GPL (>= 2)
+Depends: R (>= 3.5.0), methods, Rcpp (>= 0.12.16)
+LinkingTo: Rcpp
+LazyLoad: yes
+LazyData: no
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, adaptMCMC, xlsx, drc, testthat, withr
+VignetteBuilder: knitr
+Author: Carlo Albert [aut],
+  Sören Vogel [aut],
+  Oliver Jakoby [aut, cre],
+  Alexander Singer [aut],
+  Dirk Nickisch [aut]
+Maintainer: Oliver Jakoby <oliver.jakoby@rifcon.de>
+Repository: CRAN
+Repository/R-Forge/Project: guts
+Repository/R-Forge/Revision: 92
+Repository/R-Forge/DateTimeStamp: 2025-08-04 09:56:06
+Date/Publication: 2025-09-02 11:50:02 UTC
+NeedsCompilation: yes
+Packaged: 2025-08-04 10:04:39 UTC; rforge

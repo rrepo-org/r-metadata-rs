@@ -1,0 +1,30 @@
+Package: BOP2FE
+Type: Package
+Title: Bayesian Optimal Phase II Design with Futility and Efficacy
+        Stopping Boundaries
+Version: 1.0.3
+Authors@R: c(
+    person("Belay Birlie", "Yimer", email = "belayabyimer@gmail.com", role =  c("aut", "cre")),
+    person("Xinling", "Xu", role = "aut"),
+    person("Atsuki", "Hashimoto", role = "aut"),
+    person("Gosuke", "Homma", role = "aut"),
+    person("Kentaro", "Takeda", role = "aut"))
+Description: Bayesian optimal design with futility and efficacy stopping boundaries (BOP2-FE) is a novel statistical framework for single-arm Phase II clinical trials. It enables early termination for efficacy when interim data are promising, while explicitly controlling Type I and Type II error rates. The design supports a variety of endpoint structures, including single binary endpoints, nested endpoints, co-primary endpoints, and joint monitoring of efficacy and toxicity. The package provides tools for enumerating stopping boundaries prior to trial initiation and for conducting simulation studies to evaluate the design’s operating characteristics. Users can flexibly specify design parameters to suit their specific applications. For methodological details, refer to Xu et al. (2025) <doi:10.1080/10543406.2025.2558142>.
+BugReports: https://github.com/belayb/BOP2FE/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: gridExtra, patchwork, ggplot2, stats, utils
+Suggests: spelling
+Language: en-US
+URL: https://github.com/belayb/BOP2FE
+NeedsCompilation: no
+Packaged: 2025-09-22 09:45:47 UTC; A4044038
+Author: Belay Birlie Yimer [aut, cre],
+  Xinling Xu [aut],
+  Atsuki Hashimoto [aut],
+  Gosuke Homma [aut],
+  Kentaro Takeda [aut]
+Maintainer: Belay Birlie Yimer <belayabyimer@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-29 16:40:07 UTC

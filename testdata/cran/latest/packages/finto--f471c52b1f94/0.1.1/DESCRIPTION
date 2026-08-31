@@ -1,0 +1,28 @@
+Package: finto
+Title: Access the 'Finto' API
+Version: 0.1.1
+Date: 2025-10-29
+Authors@R: c(
+    person("Akewak", "Jeba", , "akjeba@utu.fi", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0007-1347-7552")),
+    person("Leo", "Lahti", , "leo.lahti@iki.fi", role = "aut",
+           comment = c(ORCID = "0000-0001-5537-637X"))
+  )
+Maintainer: Akewak Jeba <akjeba@utu.fi>
+Description: Access and retrieve vocabulary data 'Finto' API <https://api.finto.fi/>, which is a centralized service for interoperable thesauri, ontology and classification schemes for different subject areas.
+License: BSD_2_clause + file LICENSE
+Encoding: UTF-8
+Imports: tibble, httr, dplyr, jsonlite, tidyr, stringr, purrr
+Suggests: testthat (>= 3.0.0), rmarkdown, knitr
+URL: https://fennicahub.github.io/finto/
+BugReports: https://github.com/fennicahub/finto/issues
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2025-11-19 15:14:17 UTC; akasia
+Author: Akewak Jeba [aut, cre] (ORCID: <https://orcid.org/0009-0007-1347-7552>),
+  Leo Lahti [aut] (ORCID: <https://orcid.org/0000-0001-5537-637X>)
+Repository: CRAN
+Date/Publication: 2025-11-24 09:30:17 UTC

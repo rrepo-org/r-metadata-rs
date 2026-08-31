@@ -1,0 +1,38 @@
+Package: MacroFilters
+Title: Robust Trend-Cycle Decomposition for Macroeconomic Time Series
+Version: 0.2.1
+Authors@R: 
+    person("Michal", "Kinel", , "michal.kinel@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0007-3295-7199"))
+Description: Provides high-performance tools for macroeconomic trend
+    extraction and filtering, specifically designed to solve the end-point
+    problem in real-time. Implements the MacroBoost Hybrid (MBH) filter
+    using penalized P-splines and gradient boosting. Unlike the standard
+    Hodrick-Prescott filter, 'MacroFilters' utilizes component-wise
+    L2-boosting with robust loss functions (Huber) to handle extreme
+    transient shocks (e.g., COVID-19) without inducing spurious trend
+    shifts. The algorithm includes an automated two-layer diagnostic stage
+    for unit roots and structural breaks, optimized via corrected AICc for
+    computational efficiency. Methodology detailed in Kinel (2026)
+    <doi:10.2139/ssrn.6371138>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+URL: https://github.com/michal0091/MacroFilters,
+        https://michal0091.github.io/MacroFilters/
+BugReports: https://github.com/michal0091/MacroFilters/issues
+Imports: data.table, ggplot2, Matrix, mboost, tseries
+Suggests: knitr, rmarkdown, scales, strucchange, testthat (>= 3.0.0),
+        usethis, xts, zoo
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-11 20:35:41 UTC; miki
+Author: Michal Kinel [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-3295-7199>)
+Maintainer: Michal Kinel <michal.kinel@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-11 21:00:02 UTC

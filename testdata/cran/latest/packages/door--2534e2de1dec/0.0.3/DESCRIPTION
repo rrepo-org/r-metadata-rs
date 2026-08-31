@@ -1,0 +1,31 @@
+Package: door
+Type: Package
+Title: Analysis of Clinical Trials with the Desirability of Outcome
+        Ranking Methodology
+Version: 0.0.3
+Authors@R: c(
+    person("Yijie", "He", email = "yih148@gwu.edu", role = c("aut", "cre")),
+    person("Qihang", "Wu", email = "qihang.wu@gwu.edu", role = c("ctb")),
+    person("Toshimitsu", "Hamasaki", role = c("ctb")) )
+Description: Statistical methods and related graphical representations for the Desirability of Outcome Ranking (DOOR) methodology. The DOOR is a paradigm for the design, analysis, interpretation of clinical trials and other research studies based on the patient centric benefit risk evaluation. The package provides functions for generating summary statistics from individual level/summary level datasets, conduct DOOR probability-based inference, and visualization of the results. For more details of DOOR methodology, see Hamasaki and Evans (2025) <doi:10.1201/9781003390855>. For more explanation of the statistical methods and the graphics, see the technical document and user manual of the DOOR 'Shiny' apps at <https://methods.bsc.gwu.edu>. 
+Imports: dplyr, tidyr, ggplot2, forestplot, scales, methods, labeling
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Collate: 'DOOR.R' 'door_summary.R' 'calc_doorprob.R' 'check.HLP.R'
+        'check.homog.R' 'create.U.R' 'create.Z.ZF.R' 'data.R'
+        'door_barplot.R' 'var_pi.R' 'door_ci.R' 'door_test.R'
+        'forest_plot.R' 'mph.fit.R' 'mph.summary.R' 'num.deriv.fct.R'
+        'partial_credit_analysis.R' 'partial_credit_plots.R'
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2025-08-23 01:18:18 UTC; yijie
+Author: Yijie He [aut, cre],
+  Qihang Wu [ctb],
+  Toshimitsu Hamasaki [ctb]
+Maintainer: Yijie He <yih148@gwu.edu>
+Repository: CRAN
+Date/Publication: 2025-08-23 02:30:02 UTC

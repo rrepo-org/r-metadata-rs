@@ -1,6 +1,18 @@
 [package]
 name = "r-packages"
-version = "0.1.0"
-edition = "2024"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Lossless, failure-tolerant R PACKAGES metadata"
 
 [dependencies]
+r-dcf-syntax = { path = "../r-dcf-syntax" }
+r-metadata = { path = "../r-metadata" }
+thiserror.workspace = true
+
+[dev-dependencies]
+static_assertions.workspace = true
+
+[lints]
+workspace = true

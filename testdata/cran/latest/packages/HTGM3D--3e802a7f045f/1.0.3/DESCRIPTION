@@ -1,0 +1,31 @@
+Package: HTGM3D
+Version: 1.0.3
+Date: 2026-04-26
+Title: Three Dimensional High Throughput 'GoMiner'
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Author: Barry Zeeberg [aut, cre]
+Depends: R (>= 4.2.0)
+Imports: minimalistGODB, GoMiner, HTGM, HTGM2D, grDevices, stats,
+        R2HTML, rgl, vprint, randomGODB, stringr, salesforcer
+LazyData: true
+LazyDataCompression: xz
+Description: The Gene Ontology (GO) Consortium <https://geneontology.org/> organizes genes
+  into hierarchical categories based on biological process (BP), molecular function (MF) and
+  cellular component (CC, i.e., subcellular localization). Tools such as 'GoMiner' (see Zeeberg, B.R.,
+  Feng, W., Wang, G. et al. (2003) <doi:10.1186/gb-2003-4-4-r28>) can leverage GO to perform
+  ontological analysis of microarray and proteomics studies, typically generating a list of
+  significant functional categories. To capture the benefit of all three ontologies,
+  I developed 'HTGM3D', a three-dimensional version of 'GoMiner'.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-26 17:45:48 UTC; barryzeeberg
+Repository: CRAN
+Date/Publication: 2026-04-26 18:10:02 UTC

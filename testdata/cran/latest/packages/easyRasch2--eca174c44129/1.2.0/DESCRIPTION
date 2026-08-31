@@ -1,0 +1,67 @@
+Package: easyRasch2
+Title: Psychometric Analysis with Rasch Measurement Theory
+Version: 1.2.0
+Authors@R: c(
+    person("Magnus", "Johansson",
+           role = c("aut", "cre"),
+           email = "pgmj@pm.me",
+           comment = c(ORCID = "0000-0003-1669-592X")),
+    person("Nicklas", "Korsell",
+           role = "ctb",
+           comment = "PCM simulation code"),
+    person("Mirka", "Henninger",
+           role = "ctb",
+           comment = c(ORCID = "0000-0003-4676-2361",
+           "MH / partial-gamma effect-size and ETS-classification algorithms in dif_tree.R, adapted under MIT licence from the raschtreeMH and effecttree packages")),
+    person("Jan", "Radek",
+           role = "ctb",
+           comment = c(ORCID = "0009-0003-8842-9206",
+           "partial-gamma effect-size and ETS-classification algorithms in dif_tree.R, adapted under MIT licence from the effecttree package")))
+Description: Streamlines reproducible Rasch measurement theory analyses
+    for ordinal item-response data, combining estimation routines from
+    'eRm', 'psychotools', 'mirt', 'iarm', and 'lavaan' with consistent
+    diagnostic, plotting, and reporting layers. Covers the four basic
+    psychometric criteria summarised by Christensen et al. (2021)
+    <doi:10.1111/sms.13908> -- unidimensionality, local independence,
+    ordered response category thresholds, and invariance across
+    subgroups -- together with item fit, targeting, reliability,
+    category functioning, and descriptive item-response plots. A
+    distinguishing feature is the use of simulation-based critical
+    values to replace rule-of-thumb cutoffs for conditional infit mean-square,
+    Yen's Q3 local-dependence statistic, the largest residual-PCA eigenvalue,
+    ordinal CFA fit indices, and partial-gamma DIF and local-dependence
+    coefficients, optionally augmented with multiplicity-corrected bootstrap
+    p-values. Outputs are knitr::kable() tables and
+    'ggplot2' figures suitable for direct inclusion in 'Quarto' and 'R Markdown'
+    reports.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/pgmj/easyRasch2,
+        https://pgmj.github.io/easyRasch2/
+BugReports: https://github.com/pgmj/easyRasch2/issues
+Depends: R (>= 4.1.0)
+Imports: graphics, knitr, mirt, psychotools (>= 0.7-3), stats, utils,
+        rlang
+Suggests: difR, eRm, geomtextpath, ggdist, ggtext, iarm, mirai, ggplot2
+        (>= 3.4.0), partykit, psychotree, stablelearner, testthat (>=
+        3.0.0), rmarkdown, patchwork, scales, mice, ggrepel, lavaan,
+        withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-23 08:13:15 UTC; magnus.johansson.3
+Author: Magnus Johansson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1669-592X>),
+  Nicklas Korsell [ctb] (PCM simulation code),
+  Mirka Henninger [ctb] (ORCID: <https://orcid.org/0000-0003-4676-2361>,
+    MH / partial-gamma effect-size and ETS-classification algorithms in
+    dif_tree.R, adapted under MIT licence from the raschtreeMH and
+    effecttree packages),
+  Jan Radek [ctb] (ORCID: <https://orcid.org/0009-0003-8842-9206>,
+    partial-gamma effect-size and ETS-classification algorithms in
+    dif_tree.R, adapted under MIT licence from the effecttree package)
+Maintainer: Magnus Johansson <pgmj@pm.me>
+Repository: CRAN
+Date/Publication: 2026-08-23 08:30:02 UTC

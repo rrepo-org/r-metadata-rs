@@ -1,0 +1,48 @@
+Type: Package
+Package: ggtwotone
+Title: Dual-Tone and Contrast-Aware 'ggplot2' Geoms
+Version: 0.1.0
+Authors@R: c(
+    person(
+    "Beenu", "Sareena", 
+    email = "79365709@nebraska.edu", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0009-0002-7611-5499")
+    ),
+    person(
+    "Heike", "Hofmann", 
+    email = "hhofmann4@unl.edu", 
+    role = "aut",
+    comment = c(ORCID = "0000-0001-6216-5183")
+    )
+    )
+Description: Provides dual-stroke and contrast-aware extensions to
+    'ggplot2', designed for improved visibility and accessibility in
+    complex visualizations. Includes geoms for dual-stroke segments,
+    regression lines, curved annotations, function plots, paths, and
+    adaptive text. Also includes utility functions for computing
+    contrast-aware color pairs and perceptually distinct highlight
+    palettes using Web Content Accessibility Guidelines (WCAG)-based 
+    contrast logic.
+License: MIT + file LICENSE
+URL: https://github.com/bwanniarachchige2/ggtwotone
+BugReports: https://github.com/bwanniarachchige2/ggtwotone/issues
+Depends: R (>= 4.1.0), ggplot2 (>= 4.0.3)
+Imports: colorspace (>= 2.1.2), farver (>= 2.1.2), grDevices (>=
+        4.5.2), grid (>= 4.5.2), methods (>= 4.5.2), rlang (>= 1.1.7),
+        stats (>= 4.5.2), tidyr (>= 1.3.2), utils (>= 4.5.2)
+Suggests: dplyr, knitr, rmarkdown, scales, spelling, testthat (>=
+        3.0.0), vdiffr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-07-10 21:29:22 UTC; beenusareena
+Author: Beenu Sareena [aut, cre] (ORCID:
+    <https://orcid.org/0009-0002-7611-5499>),
+  Heike Hofmann [aut] (ORCID: <https://orcid.org/0000-0001-6216-5183>)
+Maintainer: Beenu Sareena <79365709@nebraska.edu>
+Repository: CRAN
+Date/Publication: 2026-07-19 13:10:18 UTC

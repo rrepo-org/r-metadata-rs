@@ -1,0 +1,47 @@
+Package: treestructure
+Type: Package
+Title: Detect Population Structure Within Phylogenetic Trees
+Version: 1.0.1
+Date: 2026-07-03
+Authors@R: c(person(given = "Erik",
+             family = "Volz",
+             role = c("aut", "cre"),
+             email = "erik.volz@gmail.com",
+             comment = c(ORCID = "0000-0001-6268-8937")),
+      person(given = "Fabricia",
+             family = "F. Nascimento",
+             email = "thednainus@yahoo.com",
+             role = "ctb",
+             comment = c(ORCID = "0000-0001-9426-6835")),
+      person(given = "Vinicius",
+             family = "B. Franceschi",
+             email = "vinibfranc@gmail.com",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-0006-9337")))
+Description: Algorithms for detecting population structure from the history of 
+    coalescent events recorded in phylogenetic trees. This method classifies each 
+    tip and internal node of a tree into disjoint sets characterized by similar 
+    coalescent patterns.
+License: GPL (>= 2)
+Suggests: ggtree, ggplot2, knitr, rmarkdown, getopt, phangorn, treeio,
+        testthat (>= 3.0.0)
+Depends: R (>= 4.1.0)
+Imports: ape (>= 5.0), rlang
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+URL: https://emvolz-phylodynamics.github.io/treestructure/,
+        https://github.com/emvolz-phylodynamics/treestructure
+BugReports: https://github.com/emvolz-phylodynamics/treestructure/issues
+NeedsCompilation: yes
+Packaged: 2026-07-05 10:31:20 UTC; erik
+Author: Erik Volz [aut, cre] (ORCID: <https://orcid.org/0000-0001-6268-8937>),
+  Fabricia F. Nascimento [ctb] (ORCID:
+    <https://orcid.org/0000-0001-9426-6835>),
+  Vinicius B. Franceschi [ctb] (ORCID:
+    <https://orcid.org/0000-0002-0006-9337>)
+Maintainer: Erik Volz <erik.volz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-05 10:50:03 UTC

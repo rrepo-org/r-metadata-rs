@@ -1,0 +1,27 @@
+Package: plotbb
+Title: Grammar of Graphics for 'base' Plot
+Version: 0.1.2
+Authors@R: c(
+	   person("Guangchuang", "Yu",     email = "guangchuangyu@gmail.com", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-6485-8781"))
+     )
+Description: A grammar of graphics framework built on 'base' graphics. It
+  provides a 'bbplot' object and a '+' operator to incrementally compose plots
+  from data, aesthetic mappings and layers, then render them using the base
+  plotting system. The package includes common geometric layers (points, lines,
+  segments, bars, histograms, boxplots and tiles), scales for color and other
+  aesthetics, legends, faceting, themes, and significance annotations.
+Imports: graphics, magrittr, rlang, scales, methods, utils
+Suggests: stats, ape, aplot (>= 0.0.8), dplyr, ggplotify (>= 0.1.0),
+        quarto, knitr, testthat
+VignetteBuilder: quarto
+ByteCompile: true
+License: Artistic-2.0
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-21 04:50:56 UTC; HUAWEI
+Author: Guangchuang Yu [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6485-8781>)
+Maintainer: Guangchuang Yu <guangchuangyu@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-21 05:00:02 UTC

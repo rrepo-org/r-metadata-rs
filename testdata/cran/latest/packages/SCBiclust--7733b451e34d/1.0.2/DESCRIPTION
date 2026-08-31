@@ -1,0 +1,36 @@
+Package: SCBiclust
+Title: Identifies Mean, Variance, and Hierarchically Clustered
+        Biclusters
+Version: 1.0.2
+Authors@R: 
+    c(person(given = c("Erika", "S."),
+                        family = "Helgeson",
+                        role = c("aut", "cre"),
+                        email = "helge@umn.edu"),
+                 person(given = "Qian",
+                        family = "Liu",
+                        role = "aut"),
+                 person(given = "Guanhua",
+                        family = "Chen",
+                        role = "aut"),
+                 person(given = c("Michael", "R."),
+                        family = "Kosorok",
+                        role = "aut"),
+                 person(given = "Eric",
+                        family = "Bair",
+                        role = "aut"))
+Description: Identifies a bicluster, a submatrix of the data such that the features and observations within the submatrix differ from those not contained in submatrix, using a two-step method. In the first step, observations in the bicluster are  identified to maximize the sum of weighted between cluster feature differences. The method is described in Helgeson et al. (2020) <doi:10.1111/biom.13136>. 'SCBiclust' can be used to identify biclusters which differ based on feature means, feature variances, or more general differences.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: sigclust, sparcl
+NeedsCompilation: no
+Packaged: 2025-08-20 21:46:35 UTC; Erika
+Author: Erika S. Helgeson [aut, cre],
+  Qian Liu [aut],
+  Guanhua Chen [aut],
+  Michael R. Kosorok [aut],
+  Eric Bair [aut]
+Maintainer: Erika S. Helgeson <helge@umn.edu>
+Repository: CRAN
+Date/Publication: 2025-08-20 22:00:02 UTC

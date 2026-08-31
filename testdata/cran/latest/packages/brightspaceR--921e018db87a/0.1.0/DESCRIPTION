@@ -1,0 +1,30 @@
+Package: brightspaceR
+Title: Access D2L 'Brightspace' Data Sets via the 'BDS' API
+Version: 0.1.0
+Authors@R: 
+    person("Peeyoosh", "Chandra", role = c("aut", "cre"),
+           email = "pc@strategyandops.co")
+Description: Connect to the D2L 'Brightspace' Data Sets ('BDS') API via
+    'OAuth2', download all available datasets as tidy data frames with proper
+    types, join them using convenience functions that know the foreign key
+    relationships, and analyse student engagement, performance, and retention
+    with ready-made analytics functions.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+URL: https://pcstrategyandopsco.github.io/brightspaceR/,
+        https://github.com/pcstrategyandopsco/brightspaceR
+BugReports: https://github.com/pcstrategyandopsco/brightspaceR/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, config, curl, dplyr, httr2, lubridate, openssl, purrr,
+        readr, rlang, stringr, tibble, tools, utils
+Suggests: httptest2, knitr, pkgdown, rmarkdown, rstudioapi, testthat
+        (>= 3.0.0), withr, yaml
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-09 09:39:02 UTC; peeyooshchandra
+Author: Peeyoosh Chandra [aut, cre]
+Maintainer: Peeyoosh Chandra <pc@strategyandops.co>
+Repository: CRAN
+Date/Publication: 2026-03-12 19:50:13 UTC

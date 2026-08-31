@@ -1,0 +1,32 @@
+Package: mvboxcox
+Title: Bivariate Logistic Box-Cox Regression
+Version: 0.1.4
+Authors@R: 
+    c(
+      person(given = "Shiyu", family = "Xu",
+             email = "xushiyu98@outlook.com", role = "aut"),
+      person(given = "Xuekui", family = "Zhang",
+             email = "ubcxzhang@gmail.com", role = c("aut", "cre"))
+    )
+Description: Fits bivariate logistic Box-Cox regression models for binary
+    outcomes and positive continuous predictors. Transformation parameters are
+    selected by cross-validated grid search with adaptive refinement and
+    thin-plate spline smoothing. The package also provides prediction,
+    empirical and sampling-weighted median effects, simulation tools, and
+    sampling-weighted model fitting. The methodology extends the logistic
+    Box-Cox approach of Xing et al. (2021) <doi:10.1002/cjs.11587>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: methods, stats, parallel, fields
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-20 20:50:38 UTC; xushiyu
+Author: Shiyu Xu [aut],
+  Xuekui Zhang [aut, cre]
+Maintainer: Xuekui Zhang <ubcxzhang@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-26 20:10:02 UTC

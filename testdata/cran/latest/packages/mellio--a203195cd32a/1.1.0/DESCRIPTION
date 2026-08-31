@@ -1,0 +1,40 @@
+Package: mellio
+Title: Polished, Editable Tables and Statistical Results
+Version: 1.1.0
+Authors@R: person("Melih", "Sahin", role = c("aut", "cre"),
+                  email = "nicomelpro@pm.me")
+Description: Sends supported 'R' objects to the 'Mellio' web app and creates
+    polished, editable statistical tables in 'R'. The 'mellio_open' interface
+    handles common hypothesis tests, model objects, model comparisons,
+    descriptive summaries, tabular data, plots, and image files. The
+    'melliotab' interface formats data frames, model summaries, correlation
+    matrices, and side-by-side comparison tables with APA-style numeric
+    formatting, confidence intervals, table notes, and optional significance
+    markers. Manual table helpers can copy or save 'melliotab' output as
+    'HTML', 'LaTeX', or 'Markdown' when file-based handoff is needed.
+    Payloads include package-version metadata to support reproducible
+    reporting and software citation.
+License: MIT + file LICENSE
+URL: https://www.mellioapp.com, https://github.com/NicoMel1907/mellio-r
+BugReports: https://github.com/NicoMel1907/mellio-r/issues
+Depends: R (>= 4.1.0)
+Imports: gt (>= 0.10.0), jsonlite, methods, broom (>= 1.0.0), rlang (>=
+        1.0.0), cli (>= 3.6.0)
+Suggests: ggplot2 (>= 3.4.0), lattice, htmlwidgets, webshot2, ggExtra,
+        plotly, psych, afex, effectsize, emmeans, multcomp, ordinal,
+        MASS, forecast, geepack, randomForest, brms, rstanarm, car,
+        mediation, interactions, lavaan (>= 0.6.0), lmerTest,
+        broom.mixed (>= 0.2.9), lme4, mgcv, nnet, nlme, performance,
+        rstatix, survival, rstudioapi (>= 0.14), digest (>= 0.6.0),
+        knitr (>= 1.40), rmarkdown (>= 2.20), testthat (>= 3.0.0),
+        withr (>= 2.5.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-29 19:48:51 UTC; melihcan
+Author: Melih Sahin [aut, cre]
+Maintainer: Melih Sahin <nicomelpro@pm.me>
+Repository: CRAN
+Date/Publication: 2026-08-29 20:40:02 UTC

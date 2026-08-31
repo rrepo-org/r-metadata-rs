@@ -1,0 +1,33 @@
+Package: sparsecommunity
+Title: Spectral Community Detection for Sparse Networks
+Version: 0.1.1
+Authors@R: person("Neil", "Hwang", role = c("aut", "cre"),
+    email = "neil.hwang@bcc.cuny.edu",
+    comment = c(ORCID = "0000-0002-5175-9397"))
+Description: Implements spectral clustering algorithms for community detection
+    in sparse networks under the stochastic block model ('SBM') and
+    degree-corrected stochastic block model ('DCSBM'), following the methods of
+    Lei and Rinaldo (2015) <doi:10.1214/14-AOS1274>. Provides a regularized
+    normalized Laplacian embedding, spherical k-median clustering for 'DCSBM',
+    standard k-means for 'SBM', simulation utilities for both models, and a
+    misclustering rate evaluation metric. Also includes the 'NCAA' college
+    football network of Girvan and Newman (2002) <doi:10.1073/pnas.122653799>
+    as a benchmark dataset, and the Bethe-Hessian community number estimator
+    of Hwang (2023) <doi:10.1080/01621459.2023.2223793>.
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 4.0.0)
+Imports: graphics, Matrix, methods, RSpectra, stats
+Suggests: irlba, clue, igraph, igraphdata, testthat (>= 3.0.0), knitr,
+        rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-02 10:58:16 UTC; neilh
+Author: Neil Hwang [aut, cre] (ORCID: <https://orcid.org/0000-0002-5175-9397>)
+Maintainer: Neil Hwang <neil.hwang@bcc.cuny.edu>
+Repository: CRAN
+Date/Publication: 2026-04-08 14:10:02 UTC

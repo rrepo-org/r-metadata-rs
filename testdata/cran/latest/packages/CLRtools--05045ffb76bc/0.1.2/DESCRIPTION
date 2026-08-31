@@ -1,0 +1,41 @@
+Package: CLRtools
+Title: Diagnostic Tools for Logistic and Conditional Logistic
+        Regression
+Version: 0.1.2
+Authors@R: 
+    c(
+      person("Brenda", "Contla Hernández",
+             email = "B.Hernandez@massey.ac.nz",
+             role = c("aut", "cre")),
+      person("Matthieu", "Vignes",
+             role = "ctb",
+             comment = "Provided statistical guidance, conceptual feedback, and supervision"),
+      person("Chris", "Compton",
+             role = "ctb",
+             comment = "Provided statistical guidance, conceptual feedback, and supervision")
+    )
+Description: Provides tools for fitting, assessing, and comparing logistic
+  and conditional logistic regression models. Includes residual diagnostics
+  and goodness of fit measures for model development and evaluation in
+  matched case control studies.
+License: GPL-3
+Encoding: UTF-8
+Imports: bayesplot, caret, dplyr, ggplot2, ggpubr, lmtest, loo,
+        patchwork, RColorBrewer, rlang, rstan, survival, tidyr
+Suggests: dagitty, ggdag, knitr, rmarkdown, rstanarm
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+URL: https://github.com/brendacontla/CLRtools
+BugReports: https://github.com/brendacontla/CLRtools/issues
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-20 23:00:48 UTC; bhernand
+Author: Brenda Contla Hernández [aut, cre],
+  Matthieu Vignes [ctb] (Provided statistical guidance, conceptual
+    feedback, and supervision),
+  Chris Compton [ctb] (Provided statistical guidance, conceptual
+    feedback, and supervision)
+Maintainer: Brenda Contla Hernández <B.Hernandez@massey.ac.nz>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:47:01 UTC

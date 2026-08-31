@@ -1,0 +1,42 @@
+Package: janusplot
+Type: Package
+Title: Asymmetric Smoothed-Association Matrices via GAM Fits
+Version: 0.1.1
+Authors@R: c(
+    person("Max", "Moldovan", , "max.moldovan@adelaide.edu.au",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-9680-8474"))
+  )
+Description: Render a pairwise, asymmetric smoothed-association matrix
+    of continuous variables. Each cell shows the fitted spline from an
+    'mgcv' generalised additive model, with the upper triangle
+    displaying 'gam(x_j ~ s(x_i))' and the lower triangle
+    'gam(x_i ~ s(x_j))'. Unlike Pearson's correlation matrix, the
+    visualisation is intentionally asymmetric, revealing
+    heteroscedasticity, leverage, and directional non-linearity that
+    a single scalar correlation hides. An asymmetry index and a
+    24-category shape taxonomy quantify the directional difference
+    and qualitative form of each fitted smooth.
+License: GPL (>= 3)
+URL: https://github.com/max578/janusplot,
+        https://max578.github.io/janusplot/
+BugReports: https://github.com/max578/janusplot/issues
+Encoding: UTF-8
+Language: en-AU
+Depends: R (>= 4.3.0)
+Imports: mgcv (>= 1.9.0), ggplot2 (>= 3.5.0), patchwork (>= 1.1.0),
+        grid, stats, cli (>= 3.6.0), lifecycle, rlang (>= 1.1.0)
+Suggests: agridat, future, future.apply, knitr, MASS, palmerpenguins,
+        rmarkdown, testthat (>= 3.0.0), vdiffr (>= 1.0.0), withr
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-01 07:28:17 UTC; a1222812
+Author: Max Moldovan [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-9680-8474>)
+Maintainer: Max Moldovan <max.moldovan@adelaide.edu.au>
+Repository: CRAN
+Date/Publication: 2026-07-02 07:00:29 UTC

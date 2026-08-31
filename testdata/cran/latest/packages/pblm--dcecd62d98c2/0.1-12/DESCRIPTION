@@ -1,0 +1,34 @@
+Package: pblm
+Type: Package
+Title: Bivariate Additive Marginal Regression for Categorical Responses
+Version: 0.1-12
+Date: 2025-06-18
+Authors@R: c(person("Marco", "Enea",
+                      email="marco.enea@unipa.it",
+	              role=c("aut", "cre", "cph")),
+             person("Mikis", "Stasinopoulos", role=c("ctb")),
+             person("Robert", "Rigby", role=c("ctb")))
+Author: Marco Enea [aut, cre, cph],
+  Mikis Stasinopoulos [ctb],
+  Robert Rigby [ctb]
+Maintainer: Marco Enea <marco.enea@unipa.it>
+Depends: R (>= 4.4.0), Matrix, lattice, splines, MASS
+Imports: methods
+Description: Bivariate additive categorical regression via penalized maximum likelihood. 
+             Under a multinomial framework, the method fits bivariate models where both 
+             responses are nominal, ordinal, or a mix of the two. Partial proportional 
+             odds models are supported, with flexible (non-)uniform association structures. 
+             Various logit types and parametrizations can be specified for both marginals 
+             and the association, including Dale’s model. The association structure can 
+             be regularized using polynomial-type penalty terms. Additive effects are 
+             modeled using P-splines. Standard methods such as summary(), residuals(), 
+             and predict() are available.   
+License: GPL (>= 2)
+LazyData: TRUE
+Encoding: UTF-8
+NeedsCompilation: no
+URL: https://github.com/MarcoEnea/pblm
+BugReports: https://github.com/MarcoEnea/pblm/issues
+Packaged: 2025-06-18 13:54:07 UTC; marcoenea
+Repository: CRAN
+Date/Publication: 2025-06-19 15:20:06 UTC

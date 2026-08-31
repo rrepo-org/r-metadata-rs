@@ -1,0 +1,50 @@
+Package: Familia
+Title: 'shiny' Application for Population Structure and Ancestry
+        Assessments
+Version: 2.0.0
+Authors@R: 
+    c(
+              person("Josue", "Chinchilla-Vargas",
+                    role = c("aut","cre"),
+                    email = "josue.chinchilla@ufl.edu"),
+              person(c("Alexander", "M."), "Sandercock",
+                    role = "aut"),
+              person("Breeding Insight Team",
+                    role = "aut"))
+Description: Provides a 'shiny' web application developed by the Breeding Insight team
+            to support pedigree validation and ancestry assessment of plant and animal
+            populations. The app integrates Mendelian error analysis, parentage assignment
+            and genetic composition/ancestry methods to help researchers evaluate genomic
+            relationships through an accessible, web-based interface without requiring
+            command-line tools. Pedigree validation, Mendelian error analysis and
+            parentage assignment build on the 'BIGpopA' package
+            (<https://CRAN.R-project.org/package=BIGpopA>) and support diploid and
+            polyploid data. Ancestry estimation uses
+            the sparse non-negative matrix
+            factorization method of Frichot et al. (2014) <doi:10.1534/genetics.113.160572>
+            as implemented in the 'LEA' package by Frichot and Francois (2015)
+            <doi:10.1111/2041-210X.12382>. Line and breed composition are
+            estimated using the breed composition regression method of Funkhouser
+            et al. (2017) <doi:10.2527/tas2016.0003>, extended to polyploid species
+            by Sandercock et al. (2025) <doi:10.1002/tpg2.70067>.
+License: Apache License (>= 2)
+URL: https://github.com/Breeding-Insight/Familia
+BugReports: https://github.com/Breeding-Insight/Familia/issues
+Encoding: UTF-8
+Depends: R (>= 4.4.0)
+biocViews:
+Imports: BIGpopA (>= 2.0.0), bs4Dash, config, curl, data.table, dplyr,
+        DT, ggplot2, golem, httr, openxlsx, RColorBrewer, scales,
+        shiny, shinydisconnect, shinyjs, shinyWidgets, tibble, tidyr,
+        vcfR (>= 1.15.0), withr, zip
+Suggests: LEA, spelling, testthat
+Language: en-US
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-24 13:29:37 UTC; josue.chinchilla
+Author: Josue Chinchilla-Vargas [aut, cre],
+  Alexander M. Sandercock [aut],
+  Breeding Insight Team [aut]
+Maintainer: Josue Chinchilla-Vargas <josue.chinchilla@ufl.edu>
+Repository: CRAN
+Date/Publication: 2026-08-24 15:50:11 UTC

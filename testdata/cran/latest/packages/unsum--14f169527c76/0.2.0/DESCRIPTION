@@ -1,0 +1,33 @@
+Package: unsum
+Title: Reconstruct Raw Data from Summary Statistics
+Version: 0.2.0
+Authors@R: c(
+    person("Lukas", "Jung", , "jung-lukas@gmx.net", role = c("aut", "cre")),
+    person("Nathanael", "Larigaldie", role = "ctb")
+  )
+Description: Reconstructs all possible raw data that could have led to reported
+    summary statistics. Provides a wrapper for the 'Rust' implementation of the
+    'CLOSURE' algorithm.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2.0)
+Imports: cli, ggplot2, nanoparquet, readr, rlang, roundwork, scales,
+        tibble, utils
+Collate: 'utils.R' 'count.R' 'extendr-wrappers.R' 'performance.R'
+        'horns.R' 'generate.R' 'horns-analyze.R' 'plot.R'
+        'read-write.R'
+Config/rextendr/version: 0.4.0.9000
+SystemRequirements: Cargo (Rust's package manager), rustc
+URL: https://github.com/lhdjung/unsum, https://lhdjung.github.io/unsum/
+BugReports: https://github.com/lhdjung/unsum/issues
+Suggests: devtools, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-06-09 18:07:04 UTC; lukas
+Author: Lukas Jung [aut, cre],
+  Nathanael Larigaldie [ctb]
+Maintainer: Lukas Jung <jung-lukas@gmx.net>
+Repository: CRAN
+Date/Publication: 2025-06-19 19:20:02 UTC

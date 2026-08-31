@@ -1,0 +1,45 @@
+Package: pkgdiff
+Type: Package
+Title: Identifies Package Differences
+Version: 1.0.4
+Maintainer: David Bosak <dbosak01@gmail.com>
+Authors@R: c(
+    person(
+      "David", "Bosak",
+      email = "dbosak01@gmail.com",
+      role = c("aut", "cre")
+    ),
+    person(
+      "Brian", "Varney",
+      email = "brian.varney@experis.com",
+      role = c("ctb")
+    ),
+    person(
+      "Kevin", "Putschko",
+      email = "kevin.putschko@experis.com",
+      role = c("ctb")
+    )
+  )
+Description: Identifies differences between
+    versions of a package.  Specifically, the functions help
+    determine if there are breaking changes from one package version
+    to the next.  The package also includes a stability assessment,
+    to help you determine the overall stability of a package, or even
+    an entire repository.
+License: CC0
+Encoding: UTF-8
+URL: https://pkgdiff.r-sassy.org, https://github.com/dbosak01/pkgdiff
+BugReports: https://github.com/dbosak01/pkgdiff/issues
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: rvest, common, crayon, utils, cranlogs, grDevices, graphics
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-14 14:26:34 UTC; dbosa
+Author: David Bosak [aut, cre],
+  Brian Varney [ctb],
+  Kevin Putschko [ctb]
+Repository: CRAN
+Date/Publication: 2026-07-14 16:00:11 UTC

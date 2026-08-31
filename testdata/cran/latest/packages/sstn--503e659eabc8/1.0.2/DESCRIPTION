@@ -1,0 +1,27 @@
+Package: sstn
+Title: Self-Similarity Test for Normality
+Version: 1.0.2
+Authors@R: 
+    person("Akin", "Anarat", , "akin.anarat@hhu.de", role = c("aut", "cre"))
+Description: Implements the Self-Similarity Test for Normality (SSTN), a new 
+    statistical test designed to assess whether a given sample originates from 
+    a normal distribution. The method exploits the self-similarity property of
+    the normal characteristic function by iteratively transforming and comparing
+    standardized empirical characteristic functions. The null distribution of
+    the test statistic is obtained via Monte Carlo simulation. Details of the 
+    methodology are described in Anarat and Schwender (2026), 
+    "A test for normality based on self-similarity", <doi:10.48550/arXiv.2604.03810>.
+Imports: MASS
+License: GPL-3
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-08-29 12:41:58 UTC; Akin
+Author: Akin Anarat [aut, cre]
+Maintainer: Akin Anarat <akin.anarat@hhu.de>
+Repository: CRAN
+Date/Publication: 2026-08-29 17:10:03 UTC

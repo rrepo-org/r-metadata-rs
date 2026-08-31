@@ -1,0 +1,23 @@
+Package: mvfmr
+Type: Package
+Title: Functional Multivariable Mendelian Randomization
+Version: 0.2.0
+Authors@R: c(person("Nicole", "Fontana", email = "nicole.fontana@polimi.it", role = c("aut", "cre")), person("Francesca", "Ieva", role = c("aut", "ths")), person("Piercesare", "Secchi", role = c("aut", "ths")))
+Description: Implements Multivariable Functional Mendelian Randomization (MV-FMR) to estimate time-varying causal effects of multiple longitudinal exposures on health outcomes. Extends univariable functional Mendelian Randomisation (MR) (Tian et al., 2024 <doi:10.1002/sim.10222>) to the multivariable setting, enabling joint estimation of multiple time-varying exposures with pleiotropy and mediation scenarios. Key features include: (1) data-driven cross-validation for basis component selection, (2) handling of mediation pathways between exposures, (3) support for both continuous and binary outcomes using Generalized Method of Moments (GMM) and control function approaches, (4) one-sample and two-sample MR designs, (5) bootstrap inference and instrument diagnostics including Q-statistics for overidentification testing. Methods are described in Fontana et al. (2025) <doi:10.48550/arXiv.2512.19064>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: fdapace, ggplot2 (>= 3.0.0), parallel, doParallel, foreach,
+        pROC, progress, glmnet, gridExtra, stats
+Suggests: dplyr, tidyr, testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-14 06:19:49 UTC; nicole.fontana
+Author: Nicole Fontana [aut, cre],
+  Francesca Ieva [aut, ths],
+  Piercesare Secchi [aut, ths]
+Maintainer: Nicole Fontana <nicole.fontana@polimi.it>
+Repository: CRAN
+Date/Publication: 2026-07-14 07:10:02 UTC

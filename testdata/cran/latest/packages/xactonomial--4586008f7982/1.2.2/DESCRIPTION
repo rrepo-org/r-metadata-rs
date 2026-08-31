@@ -1,0 +1,37 @@
+Package: xactonomial
+Type: Package
+Title: Inference for Functions of Multinomial Parameters
+Version: 1.2.2
+Date: 2026-07-31
+Authors@R: 
+    c(person(given = "Michael C",
+             family = "Sachs",
+             role = c("aut", "cre"),
+             email = "sachsmc@gmail.com"),
+      person(given = "Michael P", 
+             family = "Fay", role = c("aut")), 
+      person(given = "Erin E", 
+             family = "Gabriel", role = c("aut")), 
+      person(given = "David B", 
+              family = "Dahl", role = "ctb", comment = "(rbindings.rs)"))
+URL: https://sachsmc.github.io/xactonomial/
+BugReports: https://github.com/sachsmc/xactonomial/issues/
+Description: We consider the problem where we observe k vectors (possibly of different lengths), each representing an independent multinomial random vector. For a given function that takes in the concatenated vector of multinomial probabilities and outputs a real number, this is a Monte Carlo estimation procedure of an exact p-value and confidence interval. The resulting inference is valid even in small samples, when the parameter is on the boundary, and when the function is not differentiable at the parameter value, all situations where asymptotic methods and the bootstrap would fail. For more details see Sachs, Fay, and Gabriel (2025) <doi:10.48550/arXiv.2406.19141>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.71
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/rextendr/version: 0.4.2
+Config/testthat/edition: 3
+Depends: R (>= 4.2)
+NeedsCompilation: yes
+Packaged: 2026-07-31 11:16:52 UTC; micsac
+Author: Michael C Sachs [aut, cre],
+  Michael P Fay [aut],
+  Erin E Gabriel [aut],
+  David B Dahl [ctb] ((rbindings.rs))
+Maintainer: Michael C Sachs <sachsmc@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 16:00:02 UTC

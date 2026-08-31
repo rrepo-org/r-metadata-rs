@@ -1,0 +1,32 @@
+Package: fracture
+Title: Convert Decimals to Fractions
+Version: 0.2.2
+Authors@R: 
+    person("Alexander", "Rossell Hayes", , "alexander@rossellhayes.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-9412-0457"))
+Description: Provides functions for converting decimals to a matrix of
+    numerators and denominators or a character vector of fractions.
+    Supports mixed or improper fractions, finding common denominators for
+    vectors of fractions, limiting denominators to powers of ten, and
+    limiting denominators to a maximum value.  Also includes helper
+    functions for finding the least common multiple and greatest common
+    divisor for a vector of integers.  Implemented using C++ for maximum
+    speed.
+License: MIT + file LICENSE
+URL: https://fracture.rossellhayes.com/,
+        https://github.com/rossellhayes/fracture
+BugReports: https://github.com/rossellhayes/fracture/issues
+Depends: R (>= 2.10)
+Imports: Rcpp
+Suggests: covr, testthat (>= 3.0.0), withr
+LinkingTo: Rcpp
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-12-01 01:44:15 UTC; alex
+Author: Alexander Rossell Hayes [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-9412-0457>)
+Maintainer: Alexander Rossell Hayes <alexander@rossellhayes.com>
+Repository: CRAN
+Date/Publication: 2025-12-01 06:10:46 UTC

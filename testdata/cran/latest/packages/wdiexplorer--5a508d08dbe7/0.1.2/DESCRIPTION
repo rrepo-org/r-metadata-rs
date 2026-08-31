@@ -1,0 +1,42 @@
+Package: wdiexplorer
+Type: Package
+Title: Explore World Development Indicators Data
+Version: 0.1.2
+Authors@R: c(
+    person(
+      "Oluwayomi", "Akinfenwa",
+      email = "oluwayomiakinfenwa@gmail.com",
+      role = c("aut", "cre")
+    ),
+    person(
+      "Niamh", "Cahill",
+      email = "niamh.cahill@mu.ie",
+      role = c("aut","ths")
+    ),
+   person(
+      "Catherine", "Hurley",
+      email = "catherine.hurley@mu.ie",
+      role = c("aut","ths")
+    )
+  )
+Description: Provides a workflow for exploring World Development Indicators (WDI) country-level panel data. It downloads WDI data using the 'WDI' package and computes diagnostic indices that capture the temporal behaviour of the data by incorporating the grouping structure of the data. The set of diagnostic indices implemented includes variation features, trend and shape features, and sequential temporal features. This method is described in Akinfenwa, Cahill, and Hurley (2025) "'wdiexplorer': An R package Designed for Exploratory Analysis of World Development Indicators (WDI) Data" <doi:10.48550/arXiv.2511.07027>. We adapt the clustering diagnostics and visualisation methodology described in Rousseeuw (1987) <doi:10.1016/0377-0427(87)90125-7> and selected time series features from Hyndman and Athanasopoulos (2021) "Forecasting: Principles and Practice" <https://otexts.com/fpp3/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: dplyr, tidyr, tidyselect, tibble, tsibble, rlang, WDI,
+        cluster, fabletools, feasts, forcats, ggplot2, ggiraph, ggtext,
+        ggdist, scales, patchwork, ggnewscale
+Suggests: knitr, rmarkdown, naniar, testthat
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.2
+LazyData: true
+URL: https://github.com/Oluwayomi-Olaitan/wdiexplorer
+BugReports: https://github.com/Oluwayomi-Olaitan/wdiexplorer/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-20 18:43:20 UTC; yombless
+Author: Oluwayomi Akinfenwa [aut, cre],
+  Niamh Cahill [aut, ths],
+  Catherine Hurley [aut, ths]
+Maintainer: Oluwayomi Akinfenwa <oluwayomiakinfenwa@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 20:40:02 UTC

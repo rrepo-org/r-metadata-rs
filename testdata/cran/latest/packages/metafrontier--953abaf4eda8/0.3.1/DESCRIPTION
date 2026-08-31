@@ -1,0 +1,47 @@
+Package: metafrontier
+Type: Package
+Title: Analysis of Metafrontier Models for Efficiency and Productivity
+Version: 0.3.1
+Authors@R: c(
+    person("Erik", "Enstad", email = "erik.enstad@nhh.no",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-1053-3849")))
+Description: Implements metafrontier production function models for
+    estimating technical efficiencies and technology gaps for groups of
+    firms that face different restrictions of a common underlying
+    metatechnology (group-specific technologies in the sense of Battese,
+    Rao, and O'Donnell, 2004). Supports both stochastic frontier
+    analysis (SFA) and data envelopment analysis (DEA) based
+    metafrontiers. Includes the deterministic metafrontier of Battese,
+    Rao, and O'Donnell (2004) <doi:10.1023/B:PROD.0000012454.06094.29>,
+    the stochastic metafrontier of Huang, Huang, and Liu (2014)
+    <doi:10.1007/s11123-014-0402-2>, and the metafrontier Malmquist
+    productivity index of O'Donnell, Rao, and Battese (2008)
+    <doi:10.1007/s00181-007-0119-4>. The deterministic metafrontier can
+    be identified by either the minimum sum of absolute deviations (LP)
+    or the minimum sum of squared deviations (QP) criterion. Additional
+    features include panel SFA with time-varying inefficiency, bootstrap
+    confidence intervals for technology gap ratios, a DEA poolability
+    permutation test, latent class metafrontier estimation via the EM
+    algorithm, Murphy-Topel corrected standard errors, convergence
+    diagnostics, import of pre-fitted models from external estimation
+    engines ('sfaR', 'frontier', 'Benchmarking'), and 'ggplot2'
+    visualisation methods.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices, Formula, numDeriv, lpSolveAPI,
+        methods
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, sfaR, frontier,
+        Benchmarking, quadprog, plm, ggplot2, parallel
+VignetteBuilder: knitr
+URL: https://github.com/iik1/metafrontier
+BugReports: https://github.com/iik1/metafrontier/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-10 08:36:04 UTC; s14454
+Author: Erik Enstad [aut, cre] (ORCID: <https://orcid.org/0009-0006-1053-3849>)
+Maintainer: Erik Enstad <erik.enstad@nhh.no>
+Repository: CRAN
+Date/Publication: 2026-08-19 11:40:02 UTC

@@ -1,0 +1,60 @@
+Package: dcce
+Title: Dynamic Common Correlated Effects Estimation for Panel Data
+Version: 0.4.2
+Authors@R: person("Mustapha", "Wasseja", role = c("aut", "cre"),
+           email = "muswaseja@gmail.com")
+Description: Estimates heterogeneous coefficient models for large panels
+    with cross-sectional dependence. Implements the Mean Group (MG)
+    estimator of Pesaran and Smith (1995)
+    <doi:10.1016/0304-4076(94)01644-F>, the Common Correlated Effects
+    (CCE) and Dynamic CCE (DCCE) estimators of Pesaran (2006)
+    <doi:10.1111/j.1468-0262.2006.00692.x> and Chudik and Pesaran
+    (2015) <doi:10.1016/j.jeconom.2015.03.007>, the regularized CCE
+    of Juodis (2022), the Augmented Mean Group (AMG) of Eberhardt and
+    Teal (2010), the Interactive Fixed Effects (IFE) estimator of Bai
+    (2009) <doi:10.3982/ECTA6135>, and long-run estimators including
+    Cross-Sectionally augmented Distributed Lag (CS-DL),
+    Cross-Sectionally augmented Autoregressive Distributed Lag
+    (CS-ARDL), and Pooled Mean Group (PMG) (Chudik et al. 2016; Shin
+    et al. 1999). Also provides rolling-window estimation,
+    high-dimensional fixed effect absorption, spatial CCE via
+    user-supplied weight matrices, and structural break tests (Chow
+    and sup-Wald) following Andrews (1993), Bai and Perron (1998),
+    and Ditzen, Karavias and Westerlund (2024). Supplies a
+    comprehensive cross-sectional dependence (CD) test suite including
+    the Pesaran (2015) CD test <doi:10.1080/07474938.2014.956623>,
+    the Juodis and Reese (2022) randomized weighted CD (CDw) test,
+    the Baltagi et al. (2012) bias-adjusted weighted CD (CDw+) test,
+    the Fan et al. (2015) Power Enhancement Approach (PEA) test, and
+    the Pesaran and Xie (2021) bias-corrected CD (CD*) test. Further
+    diagnostics include the Pesaran (2007) Cross-sectionally
+    Augmented IPS (CIPS) panel unit root test
+    <doi:10.1002/jae.951>, the Westerlund (2007) panel cointegration
+    tests, the Dumitrescu and Hurlin (2012) panel Granger causality
+    test, the Im-Pesaran-Shin (IPS) and Levin-Lin-Chu (LLC) panel
+    unit root tests, the Pedroni (2004) and Kao (1999) residual
+    cointegration tests, the Swamy (1970) and Pesaran and Yamagata
+    (2008) slope homogeneity tests, a Hausman-type test for MG versus
+    pooled, the exponent of cross-sectional dependence from Bailey et
+    al. (2016) <doi:10.1002/jae.2490>, information criteria for
+    Cross-Sectional Average (CSA) selection, the rank condition
+    classifier, impulse response functions, cross-section and wild
+    bootstrap inference, and 'broom'-compatible methods.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: stats, Matrix, collapse (>= 2.0.0), sandwich, generics, rlang
+        (>= 1.1.0), cli (>= 3.0.0), tibble, Rcpp (>= 1.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: broom, ggplot2, lifecycle, plm, testthat (>= 3.0.0), knitr,
+        rmarkdown, marginaleffects, parallel
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-05-02 12:00:44 UTC; musta
+Author: Mustapha Wasseja [aut, cre]
+Maintainer: Mustapha Wasseja <muswaseja@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-05 18:20:18 UTC

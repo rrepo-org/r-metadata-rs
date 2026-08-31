@@ -1,0 +1,32 @@
+Type: Package
+Package: splinetrials
+Title: Facilitate Clinical Trials Analysis Using Natural Cubic Splines
+Version: 0.1.1
+Authors@R: c(
+    person("Nik", "Krieger", , "nikkrieger@gmail.com", role = c("aut", "cre")),
+    person("Daniel", "Sabanes Bove", , "daniel@rconis.com", role = "ctb"),
+    person("Eli Lilly and Company", role = "cph")
+  )
+Description: Create mixed models with repeated measures using natural
+    cubic splines applied to an observed continuous time variable, as
+    described by Donohue et al. (2023) <doi:10.1002/pst.2285>. Iterate
+    through multiple covariance structure types until one converges.
+    Categorize observed time according to scheduled visits. Perform
+    subgroup analyses.
+License: Apache License (>= 2)
+URL: https://github.com/NikKrieger/splinetrials,
+        https://nikkrieger.github.io/splinetrials/
+BugReports: https://github.com/NikKrieger/splinetrials/issues
+Imports: car, cli, dplyr, emmeans, mmrm (>= 0.3.16), rlang, splines
+Suggests: ggplot2, survival, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-19 13:00:00 UTC; nik
+Author: Nik Krieger [aut, cre],
+  Daniel Sabanes Bove [ctb],
+  Eli Lilly and Company [cph]
+Maintainer: Nik Krieger <nikkrieger@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-19 13:20:09 UTC

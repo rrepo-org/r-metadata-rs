@@ -1,0 +1,25 @@
+Package: metaquant
+Type: Package
+Title: Meta-Analysis of Quantiles and Functions of Quantiles
+Version: 0.1.3
+Authors@R: c(
+	person("Udara","Kumaranathunga",role = c("aut","cre"),email="U.Kumaranathunga@latrobe.edu.au"),
+	person("Alysha","De Livera",role="aut",email="a.delivera@latrobe.edu.au"),
+	person("Luke","Prendergast",role="aut",email="luke.prendergast@latrobe.edu.au"))
+Maintainer: Udara Kumaranathunga <U.Kumaranathunga@latrobe.edu.au>
+Author: Udara Kumaranathunga [aut, cre],
+  Alysha De Livera [aut],
+  Luke Prendergast [aut]
+Description: Implements a novel density-based approach for estimating unknown parameters, distribution visualisations and meta-analyses of quantiles and ther functions. 
+	A detailed vignettes with example datasets and code to prepare data and analyses is available at <https://bookdown.org/a2delivera/metaquant/>.
+	The methods are described in the pre-print by De Livera, Prendergast and Kumaranathunga (2024, <doi:10.48550/arXiv.2411.10971>).
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.2
+Imports: gld, sld, stats, ggplot2, plotly, magrittr, dplyr, estmeansd,
+        metafor
+NeedsCompilation: no
+Packaged: 2025-11-09 06:37:53 UTC; 22102238
+Repository: CRAN
+Date/Publication: 2025-11-09 10:10:02 UTC

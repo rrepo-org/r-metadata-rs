@@ -1,0 +1,26 @@
+Package: bfboinet
+Type: Package
+Title: Backfill Bayesian Optimal Interval Design Using Efficacy and
+        Toxicity
+Version: 1.1.0
+Authors@R: c(
+    person("Jing", "Zhu", email = "zhujing716@gmail.com", role = c("cre","aut")),
+    person("Kentaro", "Takeda", email = "kentaro.takeda.statistics@gmail.com", role = "aut"),
+    person("Belay Birlie", "Yimer", role = "aut"))
+Description: Implements the Backfill Bayesian Optimal Interval Design (BF-BOIN-ET), 
+             a novel clinical trial methodology for dose optimization that simultaneously consider both efficacy 
+             and toxicity outcome as described in (Takeda et al  (2025) <doi:10.1002/pst.2470>).
+             The package has been extended to include a seamless two-stage phase I/II trial design with backfill 
+             and joint efficacy and toxicity monitoring as described in (Takeda et al (2026) <doi:10.1002/pst.70092>).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: Iso, copula, dplyr, tidyselect, magrittr, BOP2FE, boinet, BOIN
+NeedsCompilation: no
+Packaged: 2026-04-29 05:56:47 UTC; A4021579
+Author: Jing Zhu [cre, aut],
+  Kentaro Takeda [aut],
+  Belay Birlie Yimer [aut]
+Maintainer: Jing Zhu <zhujing716@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-29 06:20:02 UTC

@@ -1,0 +1,37 @@
+Package: ec50estimator
+Type: Package
+Title: An Automated Way to Estimate EC50 for Stratified Datasets
+Version: 1.0.0
+Date: 2026-05-24
+Authors@R: c(
+    person(given = "Kaique dos S.",
+           family = "Alves", 
+           role = c("aut", "cre"),
+           email = "kaiquedsalves@gmail.com",
+           comment = c(ORCID = "0000-0001-9187-0252")
+           )) 
+Maintainer: Kaique dos S. Alves <kaiquedsalves@gmail.com>
+Description: Estimates effective concentrations that reduce growth by 50 percent
+    (EC50) in multi-isolate and stratified dose-response experiments. The package
+    wraps model fitting from drc, returns data-frame outputs, and provides helper
+    functions for data checks, model selection, fitted-curve plotting, prediction,
+    diagnostics, and reporting. Information about drc is available in Ritz C,
+    Baty F, Streibig JC, Gerhard D (2015) <doi:10.1371/journal.pone.0146021>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: drc, ggplot2
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://alvesks.github.io/ec50estimator/,
+        https://github.com/AlvesKS/ec50estimator
+BugReports: https://github.com/AlvesKS/ec50estimator/issues
+NeedsCompilation: no
+Packaged: 2026-05-25 02:52:36 UTC; kai-q
+Author: Kaique dos S. Alves [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9187-0252>)
+Repository: CRAN
+Date/Publication: 2026-05-25 03:10:02 UTC

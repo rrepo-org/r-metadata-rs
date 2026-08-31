@@ -1,0 +1,38 @@
+Package: cdlogit
+Title: Context-Dependent Discrete Choice Models
+Version: 1.0.0
+Authors@R: c(
+    person("Yuan", "Xi", , "yuan.xi@kuleuven.be", role = c("aut", "cre")),
+    person("Michel", "Meulders", , "michel.meulders@kuleuven.be", role = "ctb"),
+    person("Martina", "Vandebroek", , "martina.vandebroek@kuleuven.be", role = "ctb")
+  )
+Description: Implements a class of context-dependent discrete choice models,
+    including the standard random utility maximization (RUM) model, classical
+    and generalized random regret minimization (RRM) models, the random
+    advantage maximization (RAM) model, as well as the Emergent Value (EV)
+    model and the contextual random utility maximization (CRUM) model, which
+    explicitly incorporate measures of context dependence. In addition,
+    pairwise normalization (PN) and range normalization (RN) models are
+    supported. Both fixed-parameter and random-parameter specifications can
+    be estimated, the latter allowing for preference heterogeneity. All models are
+    formulated within a logit framework under the assumption of independently
+    and identically distributed (i.i.d.) Gumbel error terms. The implemented 
+    methods are based on Tversky and Simonson (1993) <doi:10.1287/mnsc.39.10.1179>, 
+    Chorus et al. (2014) <doi:10.1016/j.jbusres.2014.02.010>, Rooderkerk et al. (2011)
+    <doi:10.1509/jmkr.48.4.767>, Guevara and Fukushi (2016) <doi:10.1016/j.trb.2016.07.012>, 
+    Landry and Webb (2021) <doi:10.1016/j.jet.2021.105221>, and Daviet and Webb (2023)
+    <doi:10.1016/j.jmp.2022.102741>.
+Author: Yuan Xi [aut, cre],
+  Michel Meulders [ctb],
+  Martina Vandebroek [ctb]
+Maintainer: Yuan Xi <yuan.xi@kuleuven.be>
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: randtoolbox
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-19 14:27:58 UTC; u0150119
+Repository: CRAN
+Date/Publication: 2026-07-28 16:30:15 UTC

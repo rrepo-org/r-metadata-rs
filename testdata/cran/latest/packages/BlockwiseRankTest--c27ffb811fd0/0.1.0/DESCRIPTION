@@ -1,0 +1,39 @@
+Package: BlockwiseRankTest
+Type: Package
+Title: Block-Wise Rank in Similarity Graph Edge-Count Two-Sample Test
+        (BRISE)
+Version: 0.1.0
+Maintainer: Kejian Zhang <kejianzhang@u.nus.edu>
+Authors@R: 
+    c(
+      person(given = "Kejian",
+             family = "Zhang",
+             role = c("aut", "cre"),
+             email = "kejianzhang@u.nus.edu"),
+      person(given = "Doudou",
+             family = "Zhou",
+             role = "aut",
+             email = "ddzhou@nus.edu.sg",
+             comment = c(ORCID = "0000-0002-0830-2287"))
+    )
+Description: Implements the Block-wise Rank in Similarity Graph Edge-count 
+    test (BRISE), a rank-based two-sample test designed for block-wise 
+    missing data. The method constructs (pattern) pair-wise similarity graphs 
+    and derives quadratic test statistics with asymptotic chi-square 
+    distribution or permutation-based p-values. It provides both 
+    vectorized and congregated versions for flexible inference. 
+    The methodology is described in Zhang, Liang, Maile, and 
+    Zhou (2025) <doi:10.48550/arXiv.2508.17411>.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-24 10:54:58 UTC; keenov
+Author: Kejian Zhang [aut, cre],
+  Doudou Zhou [aut] (ORCID: <https://orcid.org/0000-0002-0830-2287>)
+Repository: CRAN
+Date/Publication: 2025-10-01 07:00:26 UTC

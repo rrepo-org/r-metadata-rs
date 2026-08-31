@@ -1,0 +1,39 @@
+Package: DataCraftR
+Type: Package
+Title: Create Datasets Interactively Using 'shiny'
+Version: 0.3.2
+Authors@R: c(
+    person(
+      "Carlos", "Rivera",
+      email = "riveramo.carlos@gmail.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-3402-7725")
+    ),
+    person(
+      "Heidi", "Renninger",
+      email = "hr427@msstate.edu",
+      role = c("fnd"),
+      comment = c(ORCID = "0000-0002-2485-9835")
+    )
+  )
+Description: Set of 'shiny'-based 'RStudio' add-ins for interactively creating datasets through
+  graphical interfaces. Users can adjust graphical elements to define data
+  generation parameters, and the resulting datasets can be saved to temporary
+  RDS files for further analysis or visualization. Methods are described in:
+  Chang et al. (2024) <https://CRAN.R-project.org/package=shiny>;
+  Bostock et al. (2011) <doi:10.1109/TVCG.2011.185>.
+License: GPL (>= 3)
+URL: https://github.com/CarlosRivera1212/DataCraftR
+BugReports: https://github.com/CarlosRivera1212/DataCraftR/issues
+Encoding: UTF-8
+Imports: bsicons, bslib, RcppColors, rstudioapi, shiny, shinyWidgets
+Suggests: testthat (>= 3.0.0)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-21 16:09:56 UTC; carlos
+Author: Carlos Rivera [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3402-7725>),
+  Heidi Renninger [fnd] (ORCID: <https://orcid.org/0000-0002-2485-9835>)
+Maintainer: Carlos Rivera <riveramo.carlos@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-25 15:10:07 UTC

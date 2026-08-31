@@ -1,0 +1,30 @@
+Package: ALDEx3
+Title: Linear Models for Sequence Count Data
+Version: 1.3.1
+Authors@R: 
+    c(person("Justin", "Silverman", email = "JustinSilverman@psu.edu", role = c("aut", "cre")),
+      person("Greg", "Gloor", email = "ggloor@uwo.ca", role = c("aut")),
+      person("Kyle", "McGovern", email = "kvm6065@psu.edu", role = c("aut", "ctb")))
+Description: Provides scalable generalized linear and mixed effects models tailored for sequence count data analysis (e.g., analysis of 16S or RNA-seq data). Uses Dirichlet-multinomial sampling to quantify uncertainty in relative abundance or relative expression conditioned on observed count data. 
+    Implements scale models as a generalization of normalizations which account for uncertainty in scale (e.g., total abundances) as described in Nixon et al. (2025) <doi:10.1186/s13059-025-03609-3> and McGovern et al. (2025) <doi:10.1101/2025.08.05.668734>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: rBeta2009, testthat (>= 3.0.0), lmtest, sandwich, knitr,
+        rmarkdown
+Config/testthat/edition: 3
+Imports: purrr, lme4, lmerTest, reformulas, parallel, MASS, nlme,
+        abind, matrixStats, methods, stats, TMB
+LinkingTo: TMB, RcppEigen, Matrix
+Depends: R (>= 3.5)
+LazyData: true
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2026-08-26 14:46:56 UTC; jds6696
+Author: Justin Silverman [aut, cre],
+  Greg Gloor [aut],
+  Kyle McGovern [aut, ctb]
+Maintainer: Justin Silverman <JustinSilverman@psu.edu>
+Repository: CRAN
+Date/Publication: 2026-08-26 15:40:02 UTC

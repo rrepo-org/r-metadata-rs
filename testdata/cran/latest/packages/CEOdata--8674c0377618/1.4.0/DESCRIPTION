@@ -1,0 +1,35 @@
+Package: CEOdata
+Title: Datasets of the CEO (Centre d'Estudis d'Opinio) for Opinion
+        Polls in Catalonia
+Version: 1.4.0
+Authors@R: c(
+    person("Xavier", "Fernández-i-Marín", , "xavier.fim@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-9522-8870")),
+    person("Joel", "Ardiaca", email = "joelardiacaarnau@gencat.cat", 
+           role = c("aut", "cre"), 
+           comment = c(ORCID = "0009-0004-4937-8941")))
+Description: Easy and convenient access to the datasets of the
+  "Centre d'Estudis d'Opinio", the Catalan institution for polling and public
+  opinion. The package retrieves microdata directly from the open data platform
+  of the Generalitat de Catalunya and returns it in a tidy format.
+Depends: R (>= 4.1.0)
+Imports: tibble, haven, dplyr (>= 1.0.0), urltools, stringr, jsonlite,
+        lubridate
+Suggests: knitr, ggplot2, tidyr (> 1.1.1), curl, rmarkdown, vtable,
+        compareGroups
+License: GPL-3
+URL: https://ceo.gencat.cat/ca/inici/,
+        https://github.com/ceopinio/CEOdata/
+BugReports: https://github.com/ceopinio/CEOdata/issues/
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-27 13:24:42 UTC; jardiaca
+Author: Xavier Fernández-i-Marín [aut] (ORCID:
+    <https://orcid.org/0000-0002-9522-8870>),
+  Joel Ardiaca [aut, cre] (ORCID:
+    <https://orcid.org/0009-0004-4937-8941>)
+Maintainer: Joel Ardiaca <joelardiacaarnau@gencat.cat>
+Repository: CRAN
+Date/Publication: 2026-03-27 18:30:09 UTC

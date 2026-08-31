@@ -1,0 +1,37 @@
+Package: blisa
+Type: Package
+Title: Infer Cell-Cell Communication from Spatial Transcriptomics
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Yunshun", family = "Chen",
+           role = c("aut", "cre"),
+           email = "yuchen@wehi.edu.au"),
+    person(given = "Lei", family = "Qin",
+           role = "aut",
+           email = "qin.l@wehi.edu.au"),
+    person(given = "Lizhong", family = "Chen",
+           role = "aut"))
+Description: Identifies cell-cell communication hotspots in spatial
+    transcriptomics data using bivariate Local Moran's I statistics
+    on hexagonally binned cells. Provides functions for spatial
+    weighting, ligand-receptor pair filtering, hotspot detection,
+    and visualisation of sender-receiver cell-type interactions.
+License: GPL (>= 3)
+URL: https://github.com/ChenLaboratory/blisa,
+        https://chenlaboratory.github.io/blisa/
+BugReports: https://github.com/ChenLaboratory/blisa/issues
+Encoding: UTF-8
+Imports: sf, spdep, fastLISA, Matrix, SpatialExperiment,
+        SummarizedExperiment, ComplexHeatmap, ggplot2, viridisLite,
+        grid
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2026-07-10 00:29:21 UTC; yuchen
+Author: Yunshun Chen [aut, cre],
+  Lei Qin [aut],
+  Lizhong Chen [aut]
+Maintainer: Yunshun Chen <yuchen@wehi.edu.au>
+Repository: CRAN
+Date/Publication: 2026-07-10 05:40:02 UTC

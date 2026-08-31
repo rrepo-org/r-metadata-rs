@@ -1,0 +1,41 @@
+Package: momst
+Type: Package
+Title: Multi-Objective Minimum Spanning Tree via NSGA-II with Local
+        Search
+Version: 0.1.1
+Authors@R: c(
+    person(given  = "Jorge A.",
+           family = "Parraga-Alava",
+           email  = "jorge.parraga@utm.edu.ec",
+           role   = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8558-9122")))
+Description: Solves the Multi-Criteria Minimum Spanning Tree (mc-MST) problem
+    on complete weighted graphs by combining the Non-dominated Sorting Genetic
+    Algorithm II (NSGA-II) with optional Pareto local search operators.
+    Chromosomes are represented as Prufer sequences so that every random
+    individual decodes to a valid spanning tree (Cayley's theorem), avoiding
+    repair operators. Four solver variants are provided: pure NSGA-II ("base"),
+    Path Relinking ("PR"), Pareto Local Search ("PLS"), and Tabu Search ("TS").
+    The package supports 2 and 3 objective formulations and provides
+    convenience functions to plot Pareto fronts and best-compromise spanning
+    trees. This package is the reference implementation of the method
+    described in Parraga-Alava, Inostroza-Ponta and Dorn (2017)
+    <doi:10.1109/CEC.2017.7969432>.
+License: GPL (>= 3)
+URL: https://github.com/jorgeklz/momst,
+        https://jorgeklz.github.io/momst/
+BugReports: https://github.com/jorgeklz/momst/issues
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: stats, utils, graphics
+Suggests: igraph, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-16 23:17:12 UTC; jorge
+Author: Jorge A. Parraga-Alava [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8558-9122>)
+Maintainer: Jorge A. Parraga-Alava <jorge.parraga@utm.edu.ec>
+Repository: CRAN
+Date/Publication: 2026-06-22 14:40:15 UTC

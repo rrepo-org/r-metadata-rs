@@ -1,0 +1,34 @@
+Package: rpc
+Type: Package
+Title: Ridge Partial Correlation
+Version: 2.0.3
+Date: 2025-03-20
+Authors@R: c(
+  person(given="Somak", family="Dutta", role=c("aut", "cre", "cph"),
+         email="somakd@iastate.edu"),
+  person(given="An", family="Nguyen", role=c("aut","ctb")),
+  person(given="Run", family="Wang", role="ctb"),
+  person(given="Vivekananda", family="Roy", role="ctb")
+  )
+Encoding: UTF-8
+Maintainer: Somak Dutta <somakd@iastate.edu>
+Description: Computes the ridge partial correlation
+    coefficients in a high or ultra-high dimensional linear regression
+    problem. An extended Bayesian information criterion is also
+    implemented for variable selection. Users provide the matrix
+    of covariates as a usual dense matrix or a sparse matrix
+    stored in a compressed sparse column format. Detail of the method
+    is given in the manual.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.11), Matrix
+Suggests: MatrixExtra
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-03-20 15:42:25 UTC; somakd
+Author: Somak Dutta [aut, cre, cph],
+  An Nguyen [aut, ctb],
+  Run Wang [ctb],
+  Vivekananda Roy [ctb]
+Repository: CRAN
+Date/Publication: 2025-03-22 12:10:02 UTC

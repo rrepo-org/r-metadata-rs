@@ -1,0 +1,34 @@
+Package: HausdorffGoF
+Type: Package
+Version: 0.3.1
+Title: One- And Two-Sample Hausdorff Goodness-of-Fit Test
+Authors@R: c(
+    person("Dimitrina S.", "Dimitrova",
+           email = "D.Dimitrova@citystgeorges.ac.uk", role = c("aut")),
+    person("Yun", "Jia",
+           email = "yunjia2019@gmail.com",   role = c("aut", "cre")),
+    person("Vladimir K.", "Kaishev",
+           email = "Vladimir.Kaishev.1@citystgeorges.ac.uk", role = c("aut")))
+Description: Computes the test statistic and p-values of the one-sample and two-sample Hausdorff (H) goodness-of-fit tests. The H statistic measures the Hausdorff distance under the Chebyshev (l-infinity) metric, between the two cumulative distribution functions (cdfs) underlying the corresponding one-sample and two-sample null hypothesis. It coincides to the side length of the largest axis-aligned square (hypercube) that can be inscribed between the two cdfs. The following cases are covered: (i) one-sample, univariate; (ii) two-sample univariate; and (iii) two-sample bivariate.  Exact one-sample p-values are computed in O(n^2 log n) time via the 'Exact-KS-FFT' method of Dimitrova, Kaishev, and Tan (2020) <doi:10.18637/jss.v095.i10>; two-sample p-values are obtained by permutation. A key advantage of the H test is that its sensitivity can be directed towards the left tail, body, or right tail of the distribution by tuning a scale parameter sigma, and therefore maximizing its power which as shown numerically is significantly higher than the power of the classical tests such as the Kolmogorov-Smirnov,  Cramer-von Mises, and Anderson-Darling test, especially when the right tail of the distribution is targeted. The sensitivity of the test (left tail, body, or right tail) is governed by two parameters psi1 and psi2, whose values needs to be input. Then the optimal value of the scale parameter sigma is automatically computed.
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 0.12.12), KSgeneral (>= 2.1.0), stats, utils
+LinkingTo: Rcpp, RcppEigen
+License: GPL (>= 3)
+URL: https://github.com/fakecloudsjy/HausdorffGoF
+Encoding: UTF-8
+Copyright: Dimitrina S. Dimitrova, Yun Jia, and Vladimir K. Kaishev own
+        the copyright of the original R and C++ code in this package.
+        Portions of the C++ source code (src/fastCDF.cpp,
+        src/fastCDF.h, src/fastCDFOnSample.cpp, src/fastCDFOnSample.h,
+        src/nDDominanceAlone.cpp) are derived from the StOpt library
+        and are Copyright (C) 2020 EDF - Electricite de France,
+        published under the GNU Lesser General Public License (LGPL-3).
+        See the file inst/COPYRIGHTS for full details.
+NeedsCompilation: yes
+Packaged: 2026-08-24 06:38:40 UTC; Yun
+Author: Dimitrina S. Dimitrova [aut],
+  Yun Jia [aut, cre],
+  Vladimir K. Kaishev [aut]
+Maintainer: Yun Jia <yunjia2019@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 09:20:20 UTC

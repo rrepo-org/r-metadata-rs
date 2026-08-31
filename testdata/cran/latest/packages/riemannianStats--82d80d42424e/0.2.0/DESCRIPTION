@@ -1,0 +1,43 @@
+Package: riemannianStats
+Type: Package
+Title: Riemannian Methods for Principal Component Analysis, Regression
+        and Visualization
+Version: 0.2.0
+Authors@R: c(
+    person(
+        given = "Oldemar",
+        family = "Rodríguez Rojas",
+        email = "oldemar.rodriguez@ucr.ac.cr",
+        role = c("aut", "cre")
+    ),
+    person(
+        given = "Jennifer",
+        family = "Lobo Vásquez",
+        email = "jennifer.lobo@promidat.com",
+        role = c("aut")
+    )
+  )
+Description: Provides tools for statistical analysis on Riemannian
+    manifolds using local geometry derived from Uniform Manifold Approximation
+    and Projection (UMAP), Isometric Mapping (Isomap), and Density-Based
+    Spatial Clustering of Applications with Noise (DBSCAN). The package
+    supports dimensionality reduction, visualization, Riemannian principal
+    component analysis, and Riemannian linear regression for multivariate data
+    analysis. Methods based on Uniform Manifold Approximation and Projection
+    follow McInnes et al. (2018) <doi:10.21105/joss.00861>.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1)
+Imports: rlang, ggplot2, ggrepel, grid, uwot, vegan, dbscan
+Suggests: scatterplot3d, plotly, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr, rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-22 15:20:32 UTC; r3291508
+Author: Oldemar Rodríguez Rojas [aut, cre],
+  Jennifer Lobo Vásquez [aut]
+Maintainer: Oldemar Rodríguez Rojas <oldemar.rodriguez@ucr.ac.cr>
+Repository: CRAN
+Date/Publication: 2026-07-23 15:50:09 UTC

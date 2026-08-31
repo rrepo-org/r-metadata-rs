@@ -1,0 +1,69 @@
+Package: trialSizing
+Type: Package
+Title: Tools for Experimental Design Sizing
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Willyan", "Bandeira",
+      email = "bandeira.wjab@gmail.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-9430-3664")
+    ),
+    person(
+      "Leonardo", "Pradebon",
+      email = "leonardopradebon@gmail.com",
+      role = "aut",
+      comment = c(ORCID = "0000-0001-7827-6312")
+    ),
+    person(
+      "Ivan", "Carvalho",
+      email = "carvalho.irc@gmail.com",
+      role = "aut",
+      comment = c(ORCID = "0000-0001-7947-4900")
+    ),
+    person(
+      "Murilo", "Loro",
+      email = "muriloloro@gmail.com",
+      role = "aut",
+      comment = c(ORCID = "0000-0003-0241-4226")
+    )
+  )
+Description: Sizes field experiments from uniformity-trial data, following
+    the relationship between the coefficient of variation and plot size.
+    Checks a trial for the spatial structure the sizing methods assume
+    (semivariogram, Moran's I, kriged field map), summarises the
+    coefficient of variation over every plot shape the grid admits, and
+    estimates the optimal plot size by the modified maximum curvature
+    method of Meier and Lessman (1971), by the linear response plateau
+    (LRP) and quadratic response plateau (QRP) models, and by the closed
+    form of Paranaiba, Ferreira and Morais (2009), which can be compared
+    side by side. From the coefficient of variation at the optimum it
+    derives the number of replications needed to detect a given
+    difference between treatment means, as in Cargnelutti Filho and
+    others (2014). Every method returns standardised diagnostic
+    statistics, optional bootstrap uncertainty for the breakpoint, and
+    publication-style plots.
+License: GPL (>= 3)
+URL: https://willyanjnr.github.io/trialSizing/,
+        https://github.com/willyanjnr/trialSizing
+BugReports: https://github.com/willyanjnr/trialSizing/issues
+Encoding: UTF-8
+Language: en
+LazyData: true
+Depends: R (>= 3.5)
+Imports: ggplot2, stats, utils
+Suggests: knitr, rmarkdown, patchwork, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-27 18:04:14 UTC; Bandeira
+Author: Willyan Bandeira [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9430-3664>),
+  Leonardo Pradebon [aut] (ORCID:
+    <https://orcid.org/0000-0001-7827-6312>),
+  Ivan Carvalho [aut] (ORCID: <https://orcid.org/0000-0001-7947-4900>),
+  Murilo Loro [aut] (ORCID: <https://orcid.org/0000-0003-0241-4226>)
+Maintainer: Willyan Bandeira <bandeira.wjab@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 09:30:02 UTC

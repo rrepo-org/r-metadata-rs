@@ -1,0 +1,32 @@
+Package: LSAMBA
+Type: Package
+Title: Lasso-SAMBA Algorithm
+Version: 2024.1.1
+Authors@R: c(person(given = "Auriane",
+                      family = "Gabaut",
+                      role = c("aut", "cre"),
+                      email = "aurianegabaut@gmail.com"),
+               person(given = "Mélanie",
+                      family = "Prague",
+                      role = "aut"),
+               person(given = "Marc",
+                      family = "Lavielle",
+                      role = "aut",
+                      comment = "for former code of Rsmlx and connectors"))
+Maintainer: Auriane Gabaut <aurianegabaut@gmail.com>
+Description: Provides a lasso-based method for building mechanistic models using the SAMBA algorithm (Stochastic Approximation for Model Building Algorithm) (M Prague, M  Lavielle (2022) <doi:10.1002/psp4.12742>). The package extends the 'Rsmlx' package (version 2024.1.0) to better handle high-dimensional data. It relies on the 'Monolix' software (version 2024R1; see (<https://monolixsuite.slp-software.com/monolix/2024R1/>), which must be installed beforehand.
+SystemRequirements: 'Monolix'
+        (<https://monolixsuite.slp-software.com/monolix/2024R1/>)
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: doParallel, dplyr, ggplot2, grDevices, latex2exp, MASS,
+        parallel, sharp, stringr
+Depends: R (>= 2.10), Rsmlx (>= 2024.1.0), foreach
+NeedsCompilation: no
+Packaged: 2026-01-19 15:04:05 UTC; auria
+Author: Auriane Gabaut [aut, cre],
+  Mélanie Prague [aut],
+  Marc Lavielle [aut] (for former code of Rsmlx and connectors)
+Repository: CRAN
+Date/Publication: 2026-01-19 15:30:09 UTC

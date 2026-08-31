@@ -1,0 +1,35 @@
+Package: explodemap
+Title: Hierarchical Exploded-View Cartography
+Version: 0.2.0
+Authors@R: 
+    person("George", "Arthur", , "prigasgenthian48@gmail.com", role = c("aut", "cre"))
+Description: Tools for generating hierarchical exploded-view maps from
+    dense administrative boundary data. The package applies rigid-body
+    translations to polygon geometries using a centroid-driven vector
+    field, preserving the internal geometry of each feature while separating
+    units within and across regions. Parameters can be derived
+    analytically from dataset geometry using closed-form models for
+    regional separation and local expansion. The package also includes
+    grouped layouts, optional bounded collision refinement, and an
+    interactive focus-map widget for selected-area inspection in
+    'htmlwidgets' and 'Shiny'. It implements the methodology described in
+    George Arthur (2026) <https://github.com/PrigasG/explodemap> "A
+    Hierarchical Vector-Based Framework for Multi-Scale Exploded-View
+    Cartography".
+License: MIT + file LICENSE
+URL: https://prigasg.github.io/explodemap/,
+        https://github.com/PrigasG/explodemap
+BugReports: https://github.com/PrigasG/explodemap/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, htmlwidgets, purrr, rlang, sf, utils
+Suggests: knitr, rmarkdown, shiny, testthat (>= 3.0.0), tigris
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-20 20:17:52 UTC; priga
+Author: George Arthur [aut, cre]
+Maintainer: George Arthur <prigasgenthian48@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-27 20:10:29 UTC

@@ -1,0 +1,33 @@
+Package: clifford
+Type: Package
+Title: Arbitrary Dimensional Clifford Algebras
+Version: 1.2-0-2
+Depends: R (>= 4.1.0)
+Authors@R: person(given=c("Robin", "K.", "S."), family="Hankin", role = c("aut","cre"), email="hankin.robin@gmail.com", comment = c(ORCID = "0000-0001-5982-0415"))
+Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
+Description: A suite of routines for Clifford algebras, using the
+   'Map' class of the Standard Template Library.  Canonical
+   reference: Hestenes (1987, ISBN 90-277-1673-0, "Clifford algebra
+   to geometric calculus").  Special cases including Lorentz transforms,
+   quaternion multiplication, and Grassmann algebra, are discussed.
+   Vignettes presenting conformal geometric algebra, quaternions and
+   split quaternions, dual numbers, and Lorentz transforms are
+   included.  The package follows 'disordR' discipline.
+License: GPL (>= 2)
+LazyData: yes
+Suggests: knitr, rmarkdown, testthat, onion (>= 1.5-3), lorentz (>=
+        1.1-1), emulator (>= 1.2-24), jordan (>= 1.0-5), permutations
+        (>= 1.1-5), covr, quadform
+VignetteBuilder: knitr
+Imports: Rcpp (>= 0.12.5), disordR (>= 0.9-8-4), magrittr, methods,
+        partitions (>= 1.10-4), freealg (>= 1.0-4)
+LinkingTo: Rcpp,BH
+URL: https://github.com/RobinHankin/clifford,
+        https://robinhankin.github.io/clifford/
+BugReports: https://github.com/RobinHankin/clifford/issues
+NeedsCompilation: yes
+Packaged: 2026-07-24 11:48:43 UTC; rhankin
+Author: Robin K. S. Hankin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5982-0415>)
+Repository: CRAN
+Date/Publication: 2026-07-24 14:50:08 UTC

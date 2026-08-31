@@ -1,0 +1,48 @@
+Package: RBaM
+Type: Package
+Title: Bayesian Modeling: Estimate a Computer Model and Make Uncertain
+        Predictions
+Version: 1.1.2
+Authors@R: c(
+    person("Benjamin", "Renard", email = "benjamin.renard@inrae.fr",role = c("aut", "cre","cph"),comment = c(ORCID = "0000-0001-8447-5430")),
+    person("INRAE", role = c("fnd")),
+    person("Ministère de la Transition Ecologique - SCHAPI", role = c("fnd")))
+Description: An interface to the 'BaM' (Bayesian Modeling) engine, 
+    a 'Fortran'-based executable aimed at estimating a model 
+    with a Bayesian approach and using it for prediction,
+    with a particular focus on uncertainty quantification.
+    Classes are defined for the various building blocks of 
+    'BaM' inference (model, data, error models, Markov Chain Monte Carlo (MCMC) samplers, predictions).
+    The typical usage is as follows:
+    (1) specify the model to be estimated; 
+    (2) specify the inference setting (dataset, parameters, error models...);
+    (3) perform Bayesian-MCMC inference;
+    (4) read, analyse and use MCMC samples;
+    (5) perform prediction experiments.
+    Technical details are available (in French) in 
+    Renard (2017) <https://hal.science/hal-02606929v1>.
+    Examples of applications include 
+    Mansanarez et al. (2019) <doi:10.1029/2018WR023389>,
+    Le Coz et al. (2021) <doi:10.1002/hyp.14169>,
+    Perret et al. (2021) <doi:10.1029/2020WR027745>,
+    Darienzo et al. (2021) <doi:10.1029/2020WR028607> and
+    Perret et al. (2023) <doi:10.1061/JHEND8.HYENG-13101>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/BaM-tools/RBaM
+BugReports: https://github.com/BaM-tools/RBaM/issues
+Depends: R (>= 4.0.0)
+Imports: ggplot2, gridExtra, R.utils, utils, grDevices, stats, rjson,
+        rlang, tools, tidyr, mvtnorm, progress
+Suggests: rmarkdown
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-01-08 08:50:12 UTC; brenard
+Author: Benjamin Renard [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8447-5430>),
+  INRAE [fnd],
+  Ministère de la Transition Ecologique - SCHAPI [fnd]
+Maintainer: Benjamin Renard <benjamin.renard@inrae.fr>
+Repository: CRAN
+Date/Publication: 2026-01-08 13:40:02 UTC

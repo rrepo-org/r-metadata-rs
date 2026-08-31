@@ -1,0 +1,26 @@
+Package: speechmatics
+Title: Client for the 'Speechmatics' Speech-to-Text API
+Version: 0.1.0
+Authors@R: 
+    person("Nic", "Crane", , "thisisnic@gmail.com", role = c("aut", "cre", "cph"))
+Description: Transcribe audio files using the 'Speechmatics'
+    speech-to-text API <https://www.speechmatics.com/>. Supports custom
+    vocabulary, speaker diarization, punctuation control, and audio
+    filtering.
+URL: https://github.com/thisisnic/speechmatics,
+        https://thisisnic.github.io/speechmatics/
+BugReports: https://github.com/thisisnic/speechmatics/issues
+License: MIT + file LICENSE
+Imports: cli, curl, httr2 (>= 1.2.0), jsonlite, rlang
+Depends: R (>= 4.2.0)
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), vcr (>= 2.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-06 18:46:50 UTC; nic
+Author: Nic Crane [aut, cre, cph]
+Maintainer: Nic Crane <thisisnic@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-12 11:30:02 UTC

@@ -1,0 +1,36 @@
+Package: rCISSVAE
+Title: Clustering-Informed Shared-Structure VAE for Imputation
+Version: 0.0.5
+Authors@R: 
+    c(  person(given = "Yasin", family = "Khadem Charvadeh", email = "khademy@mskcc.org", role = c("aut")),
+        person(given = "Kenneth", family = "Seier", role = c("aut")),
+        person( given = c("Katherine", "S."), family = "Panageas", role = c("aut")),
+        person(given = "Danielle", family = "Vaithilingam", email = "vaithid1@mskcc.org", role = c("aut", "cre")),
+        person(given = "Mithat", family = "Gönen", role = c("aut")),
+        person(given = "Yuan", family = "Chen", email = "cheny19@mskcc.org", role = c("aut"))
+        )
+Maintainer: Danielle Vaithilingam <vaithid1@mskcc.org>
+Description: Implements the Clustering-Informed Shared-Structure Variational Autoencoder ('CISS-VAE'), a deep learning framework for missing data imputation introduced in Khadem Charvadeh et al. (2025) <doi:10.1002/sim.70335>. The model accommodates all three types of missing data mechanisms: Missing Completely At Random (MCAR), Missing At Random (MAR), and Missing Not At Random (MNAR). While it is particularly well-suited to MNAR scenarios, where missingness patterns carry informative signals, 'CISS-VAE' also functions effectively under MAR assumptions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Imports: reticulate, purrr, gtsummary, rlang, ComplexHeatmap, stats
+Suggests: testthat (>= 3.0.0), dplyr, knitr, rmarkdown, tidyverse,
+        kableExtra, MASS, fastDummies, palmerpenguins, glue, withr,
+        ggplot2
+URL: https://ciss-vae.github.io/rCISS-VAE/
+BugReports: https://github.com/CISS-VAE/rCISS-VAE/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-03-03 14:51:00 UTC; vaithid1
+Author: Yasin Khadem Charvadeh [aut],
+  Kenneth Seier [aut],
+  Katherine S. Panageas [aut],
+  Danielle Vaithilingam [aut, cre],
+  Mithat Gönen [aut],
+  Yuan Chen [aut]
+Repository: CRAN
+Date/Publication: 2026-03-03 16:10:02 UTC

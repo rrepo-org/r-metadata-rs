@@ -1,0 +1,20 @@
+Package: mvout
+Type: Package
+Title: Robust Multivariate Outlier Detection
+Version: 1.2
+Date: 2025-05-28
+Authors@R: c(person(c("Jesus", "E."), "Delgado", email = "delga220@umn.edu", role = "aut"),
+	     person(c("Jed", "T."), "Elison", email = "jtelison@umn.edu", role = "ctb"),
+	     person(c("Nathaniel", "E."), "Helwig", email = "helwig@umn.edu", role = c("aut", "cre")))
+Description: Detection of multivariate outliers using robust estimates of location and scale. The Minimum Covariance Determinant (MCD) estimator is used to calculate robust estimates of the mean vector and covariance matrix. Outliers are determined based on robust Mahalanobis distances using either an unstructured covariance matrix, a principal components structured covariance matrix, or a factor analysis structured covariance matrix. Includes options for specifying the direction of interest for outlier detection for each variable.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5.0), robustbase
+NeedsCompilation: no
+Packaged: 2025-05-28 14:04:23 UTC; nate
+Author: Jesus E. Delgado [aut],
+  Jed T. Elison [ctb],
+  Nathaniel E. Helwig [aut, cre]
+Maintainer: Nathaniel E. Helwig <helwig@umn.edu>
+Repository: CRAN
+Date/Publication: 2025-05-30 09:20:05 UTC

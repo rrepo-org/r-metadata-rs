@@ -1,0 +1,35 @@
+Package: mvBayes
+Type: Package
+Title: Multivariate Bayesian Regression
+Version: 1.2.2
+Authors@R: c(
+    person(given = "Gavin", 
+           family = "Collins", 
+           role = c("aut", "ctb"), 
+           email = "gqcolli@sandia.gov"),
+    person(given = "J. Derek",
+           family = "Tucker",
+           role = c("ctb", "cre"),
+           email = "jdtuck@sandia.gov",
+           comment = c(ORCID = "0000-0001-8844-2169")),
+    person("Sandia National Laboratories", role = c("cph", "fnd")))
+Description: Fit, plot, and predict a multivariate response, using an arbitrary 
+  univariate Bayesian regression model to independently fit basis components 
+  (e.g., principal components) of the response (Francom et al., 2025 <DOI:10.1137/24M1644092>).
+License: MIT + file LICENSE
+Imports: MASS, methods, BASS, latex2exp, cli, splines
+Suggests: fdasrvf, BayesPPR, knitr, rmarkdown
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+URL: https://github.com/sandialabs/mvBayesR
+BugReports: https://github.com/sandialabs/mvBayesR/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-30 17:58:33 UTC; jdtuck
+Author: Gavin Collins [aut, ctb],
+  J. Derek Tucker [ctb, cre] (ORCID:
+    <https://orcid.org/0000-0001-8844-2169>),
+  Sandia National Laboratories [cph, fnd]
+Maintainer: J. Derek Tucker <jdtuck@sandia.gov>
+Repository: CRAN
+Date/Publication: 2026-07-30 18:30:02 UTC

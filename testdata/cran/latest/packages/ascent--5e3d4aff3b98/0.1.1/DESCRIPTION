@@ -1,0 +1,31 @@
+Package: ascent
+Title: Multi-Layer Decomposition of Functional Community Restructuring
+Version: 0.1.1
+Authors@R: c(
+    person("Rogelio R.", "Muñoz-Li", email = "munozrogelio16@gmail.com", role = c("aut", "cre")),
+    person("Flavia", "Alvarez-Denis", role = "aut")
+    )
+Description: Implements the 'ASC-CFD' (Assemblage Shift Characterization -
+    Community Functional Dynamics) framework for decomposing functional community
+    restructuring into positional (centroid displacement), dispersive
+    (functional dispersion), and boundary (convex hull volume) components.
+    Provides hierarchical null models (structural, quantitative, identity)
+    to evaluate statistical significance and species-level leverage analysis
+    to identify taxa driving functional shifts. Supports both temporal
+    (paired) and spatial (pairwise) comparisons.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cluster, ggplot2, stats, utils, vegan, geometry
+Suggests: knitr, patchwork, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/V3ndetta96/ascent
+BugReports: https://github.com/V3ndetta96/ascent/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-21 17:16:32 UTC; Usuario
+Author: Rogelio R. Muñoz-Li [aut, cre],
+  Flavia Alvarez-Denis [aut]
+Maintainer: Rogelio R. Muñoz-Li <munozrogelio16@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-30 17:10:36 UTC

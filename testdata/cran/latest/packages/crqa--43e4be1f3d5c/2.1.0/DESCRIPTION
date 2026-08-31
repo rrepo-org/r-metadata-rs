@@ -1,0 +1,67 @@
+Package: crqa
+Type: Package
+Title: Unidimensional and Multidimensional Methods for Recurrence
+        Quantification Analysis
+Version: 2.1.0
+Date: 2026-05-13
+URL: https://github.com/morenococo/crqa
+BugReports: https://github.com/morenococo/crqa/issues
+Authors@R: c(
+    person("Moreno  I.", "Coco", role = c("cre","aut"), 
+    email="moreno.cocoi@gmail.com"),
+    person("Dan"," Mønster", role = "aut", 
+    email = "danm@econ.au.dk"),
+    person("Giuseppe","Leonardi", role = "aut", 
+    email = "g.leonardi@vizja.pl"), 
+    person("Rick"," Dale", role = "aut", 
+    email = "rdale@ucla.edu"), 
+    person("Sebastian","Wallot", role = "aut", 
+    email = "sebastian.wallot@ae.mpg.de"), 
+    person("James D.","Dixon", role = "ctb", 
+    email = "james.dixon@uconn.edu"), 
+    person("John  C.","Nash", role = "ctb",
+    email = "nashjc@uottawa.ca"),
+    person("Alexandra","Paxton", role = "ctb",
+    email = "alexandra.paxton@uconn.edu"),
+    person("Polyphony", "Bruna", role = "ctb",
+    email = "pbruna@ucmerced.edu") 
+    )
+Maintainer: Moreno I. Coco <moreno.cocoi@gmail.com>
+Description: 
+    Auto, Cross and Multi-dimensional recurrence quantification analysis. 
+    Different methods for computing recurrence, cross vs. multidimensional
+    or profile iti.e., only looking at the diagonal recurrent points, 
+    as well as functions for optimization and plotting are proposed.
+    in-depth measures of the whole cross-recurrence plot,
+    Please refer to Coco and others (2021) <doi:10.32614/RJ-2021-062>,
+    Coco and Dale (2014) <doi:10.3389/fpsyg.2014.00510> 
+    and Wallot (2018) <doi: 10.1080/00273171.2018.1512846>
+    for further details about the method.
+Depends: R (>= 3.5.0)
+Imports: methods, Matrix, pracma, rdist, tseriesChaos, gplots, dplyr,
+        ggplot2, future, furrr, Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+SystemRequirements: GNU make
+License: GPL (>= 3)
+Collate: 'RcppExports.R' 'aRQA.R' 'crqa.R' 'crqa_helpers.R'
+        'drpfromts.R' 'lorenzattractor.R' 'mdDelay.R' 'mdFnn.R'
+        'optimizeParam.R' 'piecewiseRQA.R' 'plot_rp.R'
+        'rosslerattractor.R' 'simts.R' 'spdiags.R' 'wincrqa.R'
+        'windowdrp.R'
+LazyData: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+Suggests: knitr, rmarkdown
+NeedsCompilation: yes
+Packaged: 2026-05-26 07:12:52 UTC; moreno
+Author: Moreno I. Coco [cre, aut],
+  Dan Mønster [aut],
+  Giuseppe Leonardi [aut],
+  Rick Dale [aut],
+  Sebastian Wallot [aut],
+  James D. Dixon [ctb],
+  John C. Nash [ctb],
+  Alexandra Paxton [ctb],
+  Polyphony Bruna [ctb]
+Repository: CRAN
+Date/Publication: 2026-05-26 08:10:02 UTC

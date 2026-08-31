@@ -1,0 +1,26 @@
+Package: functionals
+Type: Package
+Title: Functional Programming with Parallelism and Progress Tracking
+Version: 0.5.1
+Authors@R: 
+    person("Imad", "El Badisy", email = "elbadisyimad@gmail.com", role = c("aut", "cre"))
+Maintainer: Imad El Badisy <elbadisyimad@gmail.com>
+Description: Provides functional tools such as fmap(), fwalk(), and fapply() 
+    to iterate over vectors, data frames, or grouped data with optional parallelism 
+    and real-time progress tracking. Progress updates now reflect completed tasks
+    across sequential, multicore, and cluster-backed execution. Designed for
+    readable and reproducible workflows, including support for Monte Carlo
+    simulations and benchmarking.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: parallel
+Suggests: testthat (>= 3.0.0), bench, rsample
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+URL: https://CRAN.R-project.org/package=functionals
+BugReports: https://github.com/ielbadisy/functionals/issues
+NeedsCompilation: no
+Packaged: 2026-08-21 09:10:07 UTC; imad-el-badisy
+Author: Imad El Badisy [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-08-22 02:10:02 UTC

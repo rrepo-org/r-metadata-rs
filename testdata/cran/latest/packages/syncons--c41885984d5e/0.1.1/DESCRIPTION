@@ -1,0 +1,27 @@
+Package: syncons
+Title: Efficient and Low-Cost Construction of Synthetic Communities
+Version: 0.1.1
+Authors@R: person("Chun-Hui","Gao", email="gaospecial@gmail.com",
+  role=c("aut","cre"), comment=c(ORCID = "0000-0002-1445-7939"))
+Description: Provides functions and a Shiny application to design plate
+    layouts for constructing synthetic communities (SynComs) from a pool
+    of strains using 24-, 96- and 384-well microplates. The method
+    generates all possible strain combinations in a scalable, low-cost
+    workflow suitable for high-throughput experiments.
+    Reference: Tian et al. (2024) <doi:10.21769/BioProtoc.2405576>.
+URL: https://github.com/gaospecial/syncons,
+        https://doi.org/10.21769/BioProtoc.2405576,
+        https://bio-spring.shinyapps.io/SynComsConstructor/
+BugReports: https://github.com/gaospecial/syncons/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, DT, glue, purrr, shiny, stringr, tibble, tidyr, utils
+NeedsCompilation: no
+Packaged: 2026-07-28 00:22:32 UTC; gaoch
+Author: Chun-Hui Gao [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1445-7939>)
+Maintainer: Chun-Hui Gao <gaospecial@gmail.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-08-05 17:30:02 UTC

@@ -1,0 +1,41 @@
+Package: onnxr
+Type: Package
+Title: Bindings to 'ONNX' Runtime
+Version: 0.1.2
+Authors@R: c(
+    person("Cory", "McCartan", email = "mccartan@psu.edu", role = c("aut", "cre", "cph")),
+    person("Caleb", "Carr", email = "calebmcarr1@gmail.com", role = "cph", 
+        comment = "Author of 'nativeORT' package that is the basis for this package"),
+    person("Microsoft Corporation", role = "cph", 
+        comment = "Copyright holder of src/onnxruntime headers")
+  )
+Description: Provides native access to the 'Open Neural Network Exchange' (ONNX) 
+    Runtime <https://onnxruntime.ai/>, which is a performant engine for running
+    machine learning models that are saved to a standardized format. Rather than
+    interfacing with 'ONNX' via 'Python', as in the official 'onnx' package, 
+    'onnxr' directly interfaces with the runtime's 'C++' API via 'cpp11'. Models
+    saved to '.onnx' files can be loaded and run on various backends, including
+    CPUs and Apple's 'CoreML' library.
+License: MIT + file LICENSE
+LinkingTo: cpp11
+Suggests: jpeg, knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://corymccartan.com/onnxr/,
+        https://github.com/CoryMcCartan/onnxr
+BugReports: https://github.com/CoryMcCartan/onnxr/issues
+Language: en-US
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/roxygen2/markdown: TRUE
+Config/testthat/edition: 3
+Config/build/compilation-database: true
+NeedsCompilation: yes
+Packaged: 2026-06-03 17:23:23 UTC; cmccartan
+Author: Cory McCartan [aut, cre, cph],
+  Caleb Carr [cph] (Author of 'nativeORT' package that is the basis for
+    this package),
+  Microsoft Corporation [cph] (Copyright holder of src/onnxruntime
+    headers)
+Maintainer: Cory McCartan <mccartan@psu.edu>
+Repository: CRAN
+Date/Publication: 2026-06-08 20:00:10 UTC

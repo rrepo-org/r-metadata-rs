@@ -1,0 +1,47 @@
+Package: gsDesignNB
+Version: 0.3.2
+Title: Sample Size and Simulation for Negative Binomial Outcomes
+Authors@R: c(
+    person("Keaven", "Anderson", email = "keaven_anderson@merck.com", role = c("aut", "cre")),
+    person("Hongtao", "Zhang", role = "aut"),
+    person("Andrea", "Maes", role = "aut"),
+    person("Nan", "Xiao", role = "ctb"),
+    person("Merck & Co., Inc., Rahway, NJ, USA and its affiliates", role = "cph",
+           comment = c(ROR = "02891sr49"))
+    )
+Description: Provides tools for planning and simulating recurrent event trials
+    with overdispersed count endpoints analyzed using negative binomial (or
+    Poisson) rate models. Implements sample size and power calculations for
+    fixed designs with variable accrual, dropout, maximum follow-up, and event
+    gaps, including methods of Zhu and Lakkis (2014) <doi:10.1002/sim.5947> and
+    Friede and Schmidli (2010) <doi:10.3414/ME09-02-0060> as well as
+    extensions for score-test sizing and gaps between events. Supports group
+    sequential monitoring by building on the 'gsDesign' package.
+    Includes recurrent-event simulation utilities (including seasonal rates),
+    interim data truncation, Wald and score-test inference for rate ratios,
+    and information estimation and sample size re-estimation with or without
+    treatment-group labels.
+License: GPL (>= 3)
+URL: https://keaven.github.io/gsDesignNB/,
+        https://github.com/keaven/gsDesignNB
+BugReports: https://github.com/keaven/gsDesignNB/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: data.table, gsDesign (>= 3.10.0), simtrial, stats, MASS
+Suggests: glmmTMB, httpuv, testthat (>= 3.0.0), knitr, rmarkdown,
+        ggplot2, dplyr, gt, scales, shiny, foreach, doFuture, future,
+        future.apply, gridExtra
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-06 19:32:18 UTC; Anderkea
+Author: Keaven Anderson [aut, cre],
+  Hongtao Zhang [aut],
+  Andrea Maes [aut],
+  Nan Xiao [ctb],
+  Merck & Co., Inc., Rahway, NJ, USA and its affiliates [cph] (ROR:
+    <https://ror.org/02891sr49>)
+Maintainer: Keaven Anderson <keaven_anderson@merck.com>
+Repository: CRAN
+Date/Publication: 2026-07-06 20:00:02 UTC

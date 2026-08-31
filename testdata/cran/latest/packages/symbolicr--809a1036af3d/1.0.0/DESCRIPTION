@@ -1,0 +1,26 @@
+Package: symbolicr
+Title: Symbolic Regression Framework
+Description: Find non-linear formulas that fits your input data. You can systematically explore and memorize the possible formulas and it's cross-validation performance, in an incremental fashion. Three main interoperable search functions are available: 1) random.search() performs a random exploration, 2) genetic.search() employs a genetic optimization algorithm, 3) comb.search() combines best results of the first two. For more details see Tomasoni et al. (2026) <doi:10.1208/s12248-026-01232-z>.
+Version: 1.0.0
+Authors@R: c(
+    person("Danilo", "Tomasoni", , "tomasoni@cosbi.eu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8427-4230")),
+    person("Fondazione The Microsoft Research - University of Trento Centre for Computational and Systems Biology", "COSBI", , "info@cosbi.eu", role = c("cph", "fnd"))
+    )
+URL: https://github.com/cosbi-research/symbolicr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: data.table, GA, gtools, RcppAlgos, stats, stringr
+Suggests: knitr, rmarkdown, ggplot2
+VignetteBuilder: knitr
+License: AGPL (>= 3)
+BugReports: https://github.com/cosbi-research/symbolicr/issues
+NeedsCompilation: no
+Packaged: 2026-04-21 09:39:01 UTC; tomasoni
+Author: Danilo Tomasoni [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8427-4230>),
+  Fondazione The Microsoft Research - University of Trento Centre for
+    Computational and Systems Biology COSBI [cph, fnd]
+Maintainer: Danilo Tomasoni <tomasoni@cosbi.eu>
+Repository: CRAN
+Date/Publication: 2026-04-21 21:00:02 UTC

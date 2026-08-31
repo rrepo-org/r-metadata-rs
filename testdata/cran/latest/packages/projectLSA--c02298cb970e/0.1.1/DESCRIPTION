@@ -1,0 +1,57 @@
+Package: projectLSA
+Title: Shiny Application for Latent Structure Analysis with a Graphical
+        User Interface
+Version: 0.1.1
+Authors@R: 
+    c(
+      person(
+        given = "Hasan",
+        family = "Djidu",
+        email = "hasandjidu@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-1110-6815")
+      ),
+      person(
+        given = "Heri",
+        family = "Retnawati",
+        role = "ctb",
+        comment = c(ORCID = "0000-0002-1792-5873")
+      ),
+      person(
+        given = "Samsul",
+        family = "Hadi",
+        role = "ctb",
+        comment = c(ORCID = "0000-0003-3437-2542")
+      ),
+      person(
+        given = "Haryanto",
+        family = "",
+        role = "ctb",
+        comment = c(ORCID = "0000-0003-3322-904X")
+      )
+    )
+Description: Provides an interactive Shiny-based toolkit for conducting latent structure analyses, including Latent Profile Analysis (LPA), Latent Class Analysis (LCA), Latent Trait Analysis (LTA/IRT), Exploratory Factor Analysis (EFA), Confirmatory Factor Analysis (CFA), and Structural Equation Modeling (SEM). The implementation is grounded in established methodological frameworks: LPA is supported through 'tidyLPA' (Rosenberg et al., 2018) <doi:10.21105/joss.00978>, LCA through 'poLCA' (Linzer & Lewis, 2011) <doi:10.32614/CRAN.package.poLCA> & 'glca' (Kim & Kim, 2024) <doi:10.32614/CRAN.package.glca>, LTA/IRT via 'mirt' (Chalmers, 2012) <doi:10.18637/jss.v048.i06>, and EFA via 'psych' (Revelle, 2025). SEM and CFA functionalities build upon the 'lavaan' framework (Rosseel, 2012) <doi:10.18637/jss.v048.i02>. The CFA/SEM module additionally supports multi-group invariance testing, latent growth modelling, modification indices, and path diagram visualisation. Every module can save and restore an analysis session, export an 'R Markdown' HTML report, and consult an optional AI assistant that interprets the current results through a user-supplied large language model API key. Users can upload datasets or use built-in examples, fit models, compare fit indices, visualize results, and export outputs without programming.
+License: MIT + file LICENSE
+Depends: R (>= 4.0.0)
+Encoding: UTF-8
+Imports: shinyBS, colourpicker, data.table, dplyr, DT, flextable,
+        ggiraph, ggplot2, glca, haven, httr, jsonlite, kableExtra,
+        knitr, lavaan, magick, mclust, mirt, officer, plotly, poLCA,
+        psych, purrr, readr, readxl, rlang, rmarkdown, scales, semPlot,
+        semptools, shiny, shinycssloaders, shinyWidgets, stats,
+        stringr, tibble, tidyr, tidyLPA, viridisLite, writexl
+Suggests: pdftools, pkgdown, semTools, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/hdmeasure/projectLSA
+BugReports: https://github.com/hdmeasure/projectLSA/issues
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-22 08:47:01 UTC; hasandjidu
+Author: Hasan Djidu [aut, cre] (ORCID: <https://orcid.org/0000-0003-1110-6815>),
+  Heri Retnawati [ctb] (ORCID: <https://orcid.org/0000-0002-1792-5873>),
+  Samsul Hadi [ctb] (ORCID: <https://orcid.org/0000-0003-3437-2542>),
+  Haryanto [ctb] (ORCID: <https://orcid.org/0000-0003-3322-904X>)
+Maintainer: Hasan Djidu <hasandjidu@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-22 09:20:08 UTC

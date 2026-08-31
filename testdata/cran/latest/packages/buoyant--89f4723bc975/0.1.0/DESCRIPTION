@@ -1,0 +1,36 @@
+Type: Package
+Package: buoyant
+Title: Deploy '_server.yml' Compliant Applications to 'DigitalOcean'
+Version: 0.1.0
+Authors@R: c(
+    person("Barret", "Schloerke", , "barret@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9986-114X")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: Provides tools to deploy R web server applications that
+    follow the '_server.yml' standard. This standard allows different R
+    server frameworks ('plumber2', 'fiery', etc.) to be deployed using a
+    common interface.  The package supports deployment to 'DigitalOcean'
+    and includes validation tools to ensure '_server.yml' files are
+    correctly formatted.
+License: MIT + file LICENSE
+URL: https://posit-dev.github.io/buoyant/,
+        https://github.com/posit-dev/buoyant
+BugReports: https://github.com/posit-dev/buoyant/issues
+Depends: R (>= 4.1.0)
+Imports: analogsea (>= 0.9.4), jsonlite, renv, ssh, withr, yaml
+Suggests: knitr, quarto, spelling, testthat (>= 3.1.0)
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-01-14 14:58:18 UTC; barret
+Author: Barret Schloerke [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9986-114X>),
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
+Maintainer: Barret Schloerke <barret@posit.co>
+Repository: CRAN
+Date/Publication: 2026-01-19 18:50:06 UTC

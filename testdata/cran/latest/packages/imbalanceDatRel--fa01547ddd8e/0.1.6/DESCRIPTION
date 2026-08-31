@@ -1,0 +1,26 @@
+Package: imbalanceDatRel
+Type: Package
+Title: Relocated Data Oversampling for Imbalanced Data Classification
+Version: 0.1.6
+Authors@R: 
+    c(person("Fatih", "Saglam", email = "saglamf89@gmail.com", 
+    role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0002-2084-2008")))
+Description: Relocates oversampled data from a specific oversampling method to
+    cover area determined by pure and proper class cover catch digraphs (PCCCD). 
+    It prevents any data to be generated in class overlapping area.
+    For more details, see the corresponding publication: 
+    F. Sağlam (2025) <doi:10.1007/s10994-025-06755-8>.
+Depends: R (>= 4.2), rcccd
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: RANN, Rfast, SMOTEWB
+URL: https://doi.org/10.1007/s10994-025-06755-8
+NeedsCompilation: no
+Packaged: 2025-05-08 10:16:27 UTC; sagla
+Author: Fatih Saglam [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2084-2008>)
+Maintainer: Fatih Saglam <saglamf89@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-08 11:20:01 UTC

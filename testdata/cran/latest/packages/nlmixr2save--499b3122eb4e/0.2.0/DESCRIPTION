@@ -1,0 +1,33 @@
+Package: nlmixr2save
+Title: Save 'nlmixr2' Fits in a Format Readable Outside 'nlmixr2'
+Version: 0.2.0
+Authors@R: 
+    person("Matthew", "Fidler", email="matthew.fidler@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8538-6691"))
+Description: Provides tools to save 'nlmixr2' fitted models in a portable format
+    readable outside of 'nlmixr2' and independent of the package version.
+    'nlmixr2' fits and compares nonlinear mixed-effects models in differential
+    equations with flexible dosing information commonly seen in pharmacokinetics
+    and pharmacodynamics (Almquist, Leander, and Jirstrand 2015
+    <doi:10.1007/s10928-015-9409-1>). Differential equation solving uses compiled
+    C code from the 'rxode2' package (Wang, Hallow, and James 2015
+    <doi:10.1002/psp4.12052>).
+License: MIT + file LICENSE
+URL: https://nlmixr2.github.io/nlmixr2save/,
+        https://github.com/nlmixr2/nlmixr2save/
+BugReports: https://github.com/nlmixr2/nlmixr2save/issues/
+Encoding: UTF-8
+Imports: checkmate, cli, digest, Rcpp, rxode2 (> 5.0.1), zip
+Suggests: babelmixr2, dplyr, knitr, nlmixr2data, nlmixr2est (>= 5.0.2),
+        PopED, rmarkdown, testthat (>= 3.0.0), tidyvpc, withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LinkingTo: Rcpp
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-04 23:53:13 UTC; matt-fidler
+Author: Matthew Fidler [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8538-6691>)
+Maintainer: Matthew Fidler <matthew.fidler@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 00:20:02 UTC

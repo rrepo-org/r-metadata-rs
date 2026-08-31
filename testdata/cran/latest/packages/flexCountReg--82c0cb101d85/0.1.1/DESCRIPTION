@@ -1,0 +1,60 @@
+Package: flexCountReg
+Type: Package
+Title: Estimation of a Variety of Count Regression Models
+Version: 0.1.1
+Authors@R: c(person("Jonathan", "Wood", role = c("aut", "cre"),
+                  email = "jwood2@iastate.edu", 
+                  comment = c(ORCID = "0000-0003-0131-6384")),
+           person("Guillermo", "Basulto-Elias", role = c("aut"),
+                  email = "basulto@iastate.edu", 
+                  comment = c(ORCID = "0000-0002-5205-2190")))
+Maintainer: Jonathan Wood <jwood2@iastate.edu>
+Description: An implementation of multiple regression models for 
+    count data. These include various forms of the negative binomial (NB-1, 
+    NB-2, NB-P, generalized negative binomial, etc.), Poisson-Lognormal, other
+    compound Poisson distributions, the Generalized Waring model, etc.
+    Information on the different forms of the negative binomial are
+    described by Greene (2008) <doi:10.1016/j.econlet.2007.10.015>. For
+    treatises on count models, see Cameron and Trivedi (2013) 
+    <doi:10.1017/CBO9781139013567> and Hilbe (2012)
+    <doi:10.1017/CBO9780511973420>. For the implementation of
+    under-reporting in count models, see Wood et al. (2016)
+    <doi:10.1016/j.aap.2016.06.013>. For prediction methods in random
+    parameter models, see Wood and Gayah (2025)
+    <doi:10.1016/j.aap.2025.108147>. For estimating random parameters using
+    maximum simulated likelihood, see Greene and Hill (2010)
+    <doi:10.1108/S0731-9053(2010)26>; Gourieroux and Monfort (1996)
+    <doi:10.1093/0198774753.001.0001>; or Hensher et al. (2015)
+    <doi:10.1017/CBO9781316136232>.
+Imports: broom, cureplots, gsl, gt, knitr, MASS, maxLik, methods,
+        modelr, purrr, randtoolbox, Rcpp (>= 1.0.12), rlang, sandwich,
+        stats, dplyr, stringr, tibble, tidyr, truncnorm, utils
+Depends: R (>= 4.1.0)
+LinkingTo: Rcpp
+SystemRequirements: GNU make
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Collate: 'Generalized-Waring.R' 'Lindley.R' 'RcppExports.R' 'cor2cov.R'
+        'corr_haltons.R' 'helpers.R' 'plind.R' 'ppoisGE.R' 'psichel.R'
+        'plindGamma.R' 'plindLnorm.R' 'ppoislogn.R' 'pinvgamma.R'
+        'pinvgaus.R' 'countreg.R' 'createFlexCountReg.R' 'tri.R'
+        'countregrp.R' 'cureplot.R' 'data.R' 'flexCountReg-Package.R'
+        'flexCountRegClass.R' 'genexp.R' 'globals.R' 'halton_dists.R'
+        'invgamma.R' 'metrics.R' 'mgf_lognormal.R' 'pcom.R'
+        'poisLind.re.R' 'poisWeib.R' 'predict_flexCountReg.R'
+        'regCompTest.R' 'regCompTable.R' 'renbLL.R' 'renb.R'
+        'summary_flexCountReg.R'
+Suggests: spelling, lamW, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+URL: https://jwood-iastate.github.io/flexCountReg/
+NeedsCompilation: yes
+Packaged: 2026-01-13 21:55:27 UTC; profwood
+Author: Jonathan Wood [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0131-6384>),
+  Guillermo Basulto-Elias [aut] (ORCID:
+    <https://orcid.org/0000-0002-5205-2190>)
+Repository: CRAN
+Date/Publication: 2026-01-19 18:20:20 UTC

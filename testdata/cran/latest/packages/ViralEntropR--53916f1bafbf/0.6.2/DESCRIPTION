@@ -1,0 +1,67 @@
+Package: ViralEntropR
+Title: A Computational Pipeline for Entropy-Informed Detection of
+        Emerging Viral Variants
+Version: 0.6.2
+Authors@R: c(
+              person("Vadim", "Tyuryaev", ,"vadim.tyuryaev@gmail.com", 
+                      role = c("aut", "cre"), 
+                      comment = c(ORCID = "0009-0008-1361-6265")),
+              person("Jane", "Heffernan", , "jmheffer@yorku.ca", 
+                      role = c("aut")),
+              person("Hanna", "Jankowski", , "hkj@yorku.ca", 
+                      role = c("aut"))
+             )
+Description: Implements an entropy-informed pipeline for detecting
+    emerging variants in viral amino acid sequence data, extending
+    prior clustering-based approaches including hemagglutinin
+    clustering methods (Li et al., 2015)
+    <doi:10.1142/9789814667944_0018>. Provides a fully vectorized
+    FASTA preprocessing toolkit covering header parsing, two-pass
+    date and country extraction, ambiguous-residue filtering, and
+    integer encoding under a 25-symbol amino acid alphabet. Computes
+    per-site Shannon entropy across user-defined cumulative,
+    sliding, or disjoint temporal partitions and clusters per-site
+    entropy values using Gaussian mixture models via 'mclust'
+    (Scrucca et al., 2016) <doi:10.32614/RJ-2016-021>. Quantifies
+    temporal distributional shifts between partitions using the
+    Hellinger distance (van der Vaart, 1998)
+    <doi:10.1017/CBO9780511802256>, and detects temporal change
+    points non-parametrically using energy statistics (Matteson and
+    James, 2014) <doi:10.1080/01621459.2013.849605> via 'ecp' or
+    wild binary segmentation (Fryzlewicz, 2014)
+    <doi:10.1214/14-AOS1245> via 'HDcpDetect'. Per-site amino-acid 
+    frequency tables and entropy trajectory plots characterize sequence 
+    composition and evolutionary dynamics across time. A configurable 
+    multi-variant simulation engine generates synthetic sequence 
+    time series with known ground truth for benchmarking detection pipelines. 
+    A curated dataset of SARS-CoV-2 Variants of Concern and Variants of
+    Interest with associated lineage and surveillance metadata is
+    included, along with a bundled National Center for Biotechnology
+    Information (NCBI) Spike protein sample and vignettes
+    demonstrating the full workflow.
+License: MIT + file LICENSE
+Language: en-GB
+Date: 2026-05-07
+URL: https://github.com/vadimtyuryaev/ViralEntropR,
+        https://doi.org/10.5281/zenodo.19040165,
+        https://vadimtyuryaev.github.io/ViralEntropR/
+BugReports: https://github.com/vadimtyuryaev/ViralEntropR/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: ggplot2 (>= 3.4.0), grDevices, HDcpDetect, ecp, kableExtra,
+        lubridate, magrittr, mclust, rlang, stats, stringr, utils, zoo
+Suggests: Biostrings, DT, dplyr, here, knitr, readxl, rmarkdown, R.rsp,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr, R.rsp
+NeedsCompilation: no
+Packaged: 2026-05-27 18:20:05 UTC; vadim
+Author: Vadim Tyuryaev [aut, cre] (ORCID:
+    <https://orcid.org/0009-0008-1361-6265>),
+  Jane Heffernan [aut],
+  Hanna Jankowski [aut]
+Maintainer: Vadim Tyuryaev <vadim.tyuryaev@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-05-30 13:40:21 UTC

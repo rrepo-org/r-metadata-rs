@@ -1,0 +1,19 @@
+Package: Rdrw
+Version: 1.0.4
+Date: 2026-08-20
+Title: Univariate and Multivariate Damped Random Walk Processes
+Authors@R: c(person(given = "Zhirui", family = "Hu", role = "aut"),
+             person(given = "Hyungsuk", family = "Tak", role = c("aut", "cre"),
+                    email = "hyungsuk.tak@gmail.com"))
+Author: Zhirui Hu [aut],
+  Hyungsuk Tak [aut, cre]
+Maintainer: Hyungsuk Tak <hyungsuk.tak@gmail.com>
+Depends: R (>= 3.5.0)
+Imports: MASS
+Description: Provides tools for fitting and simulating univariate and multivariate damped random walk processes, also known as Ornstein-Uhlenbeck processes or first-order continuous-time autoregressive models, CAR(1) or CARMA(1, 0). The package supports irregularly spaced observation times, heteroscedastic measurement errors, missing measurements across multivariate time series, and polynomial mean trends in normalized time. The current implementation models up to ten time series jointly. Kalman filtering is used to evaluate the likelihood efficiently. Polynomial mean coefficients are handled conditionally within the Kalman recursion, reducing the dimension of numerical maximum likelihood optimization and permitting exact Gaussian conditional updates during Bayesian posterior sampling. Maximum likelihood estimation is computationally efficient and suitable for large-scale data analysis, while Bayesian posterior sampling is better suited to small-scale analyses requiring more careful uncertainty quantification. Users should preserve sufficient numerical precision when loading astronomical observation times; see the manual for details. Also see Hu and Tak (2020) <doi:10.3847/1538-3881/abc1e2>.
+License: GPL-2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-08-19 23:45:22 UTC; hyungsuktak
+Repository: CRAN
+Date/Publication: 2026-08-20 10:32:10 UTC

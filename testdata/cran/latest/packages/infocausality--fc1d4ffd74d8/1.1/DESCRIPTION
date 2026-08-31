@@ -1,0 +1,28 @@
+Package: infocausality
+Title: Information-Theoretic Measure of Causality
+Version: 1.1
+Authors@R: 
+    person(given = "Wenbo", family = "Lyu",
+           email = "lyu.geosocial@gmail.com", 
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-6003-3800"))
+Description: Methods for quantifying temporal and spatial causality through information flow, and decomposing it into unique, redundant, and synergistic components, following the framework described in Martinez-Sanchez et al. (2024) <doi:10.1038/s41467-024-53373-4>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://stscl.github.io/infocausality/,
+        https://github.com/stscl/infocausality
+BugReports: https://github.com/stscl/infocausality/issues
+Depends: R (>= 4.1.0)
+LinkingTo: Rcpp
+Imports: methods, reticulate (>= 1.41.0), sdsfun, sf, terra
+Suggests: gdverse, ggplot2, infoxtr, knitr, Rcpp, rmarkdown, spEDM,
+        tEDM
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-03-20 13:09:48 UTC; dell
+Author: Wenbo Lyu [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-6003-3800>)
+Maintainer: Wenbo Lyu <lyu.geosocial@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-20 13:30:08 UTC

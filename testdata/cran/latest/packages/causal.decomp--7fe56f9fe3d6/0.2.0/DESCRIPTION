@@ -1,0 +1,32 @@
+Package: causal.decomp
+Title: Causal Decomposition Analysis
+Version: 0.2.0
+Authors@R: 
+    c(
+      person("Suyeon", "Kang", role = c("aut", "cre"),
+             email = "suyeon.kang@ucf.edu"),
+      person("Soojin", "Park", role = "aut",
+             email = "soojinp@ucr.edu"),
+      person("Karen", "Xu", role = "ctb",
+             email = "karenxu@ucr.edu")
+    )
+Depends: R (>= 3.5)
+Imports: stats, parallel, MASS, nnet, SuppDists, PSweight, utils,
+        rlang, DynTxRegime, distr, rpart, dplyr, modelObj, magrittr,
+        knitr
+Suggests: rmarkdown, rpart.plot, spelling, CBPS, pbmcapply
+VignetteBuilder: knitr
+Description: We implement causal decomposition analysis using methods proposed by Park, Lee, and Qin (2022) and Park, Kang, and Lee (2023), which provide researchers with multiple-mediator imputation, single-mediator imputation, and product-of-coefficients regression approaches to estimate the initial disparity, disparity reduction, and disparity remaining (<doi:10.1177/00491241211067516>; <doi:10.1177/00811750231183711>). We also implement sensitivity analysis for causal decomposition using R-squared values as sensitivity parameters (Park, Kang, Lee, and Ma, 2023 <doi:10.1515/jci-2022-0031>). Finally, we include individualized causal decomposition and sensitivity analyses proposed by Park, Kang, and Lee (2025+) <doi:10.48550/arXiv.2506.19010>.
+License: GPL-2
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+LazyData: true
+NeedsCompilation: no
+Author: Suyeon Kang [aut, cre],
+  Soojin Park [aut],
+  Karen Xu [ctb]
+Maintainer: Suyeon Kang <suyeon.kang@ucf.edu>
+Packaged: 2025-08-27 15:09:48 UTC; suyeonkang
+Repository: CRAN
+Date/Publication: 2025-08-27 16:20:22 UTC

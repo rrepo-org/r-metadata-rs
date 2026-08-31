@@ -1,0 +1,57 @@
+Package: SSN2
+Title: Spatial Modeling on Stream Networks
+Version: 0.4.0
+Authors@R: c(
+    person(given = "Michael",
+           family = "Dumelle",
+           role = c("aut", "cre"),
+           email = "Dumelle.Michael@epa.gov",
+           comment = c(ORCID = "0000-0002-3393-5529")),
+    person(given = "Jay M.",
+       family = "Ver Hoef",
+       role = "aut",
+       email = "jay.verhoef@noaa.gov"),
+    person(given = "Erin",
+           family = "Peterson",
+           role = "aut"),
+    person(given = "Alan",
+           family = "Pearse",
+           role = "ctb"),
+    person(given = "Dan",
+           family = "Isaak",
+           role = "ctb"),
+    person(given = "Ryan A.",
+           family = "Hill",
+           role = "ctb"),
+    person(given = "Marc",
+           family = "Weber",
+           role = "ctb")
+    )
+Description: Spatial statistical modeling and prediction for data on stream networks, including models based on in-stream distance (Ver Hoef, J.M. and Peterson, E.E., (2010) <DOI:10.1198/jasa.2009.ap08248>.) Models are created using moving average constructions. Spatial linear models, including explanatory variables, can be fit with (restricted) maximum likelihood.  Mapping and other graphical functions are included. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+Imports: stats, sf, Matrix, generics, tibble, graphics, spmodel (>=
+        0.7.0), RSQLite, utils, withr, doParallel, filematrix, foreach,
+        parallel, itertools, iterators
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), ggplot2, sp, statmod,
+        pROC, emmeans (>= 1.4), estimability
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://usepa.github.io/SSN2/
+BugReports: https://github.com/USEPA/SSN2/issues
+NeedsCompilation: yes
+Packaged: 2025-10-20 18:23:11 UTC; MDUMELLE
+Author: Michael Dumelle [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3393-5529>),
+  Jay M. Ver Hoef [aut],
+  Erin Peterson [aut],
+  Alan Pearse [ctb],
+  Dan Isaak [ctb],
+  Ryan A. Hill [ctb],
+  Marc Weber [ctb]
+Maintainer: Michael Dumelle <Dumelle.Michael@epa.gov>
+Repository: CRAN
+Date/Publication: 2025-10-21 05:10:29 UTC

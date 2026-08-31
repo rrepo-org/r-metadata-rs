@@ -1,0 +1,48 @@
+Type: Package
+Package: rmapshaper
+Title: Client for 'mapshaper' for 'Geospatial' Operations
+Version: 0.6.1
+Authors@R: 
+    c(person(given = "Andy",
+             family = "Teucher",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-7840-692X"),
+             email = "andy.teucher@gmail.com"),
+      person(given = "Kenton",
+             family = "Russell",
+             role = "aut",
+             email = "kent.russell@timelyportfolio.com",
+             comment = "JavaScript support"),
+      person(given = "Matthew",
+             family = "Bloch",
+             role = "cph",
+             comment = "mapshaper Javascript library"))
+Description: Edit and simplify 'geojson', 'Spatial', and 'sf'
+    objects.  This is wrapper around the 'mapshaper' 'JavaScript' library
+    by Matthew Bloch <https://github.com/mbloch/mapshaper/> to perform
+    topologically-aware polygon simplification, as well as other
+    operations such as clipping, erasing, dissolving, and converting
+    'multi-part' to 'single-part' geometries.
+License: MIT + file LICENSE
+URL: https://github.com/ateucher/rmapshaper,
+        http://andyteucher.ca/rmapshaper/
+BugReports: https://github.com/ateucher/rmapshaper/issues
+Depends: R (>= 4.1.0)
+Imports: methods, geojsonsf (>= 2.0.5), jsonify (>= 1.2.3), readr (>=
+        2.1.0), sf (>= 1.0.0), sp (>= 1.4-0), V8 (>= 6.0.0)
+Suggests: knitr, magrittr, rmarkdown, testthat (>= 3.0.0), jsonlite,
+        covr, units, withr
+VignetteBuilder: knitr
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/testthat/parallel: TRUE
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-06 23:55:37 UTC; andy
+Author: Andy Teucher [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7840-692X>),
+  Kenton Russell [aut] (JavaScript support),
+  Matthew Bloch [cph] (mapshaper Javascript library)
+Maintainer: Andy Teucher <andy.teucher@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-09 14:41:08 UTC

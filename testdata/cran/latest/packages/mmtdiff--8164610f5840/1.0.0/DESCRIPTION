@@ -1,0 +1,32 @@
+Package: mmtdiff
+Version: 1.0.0
+Title: Moment-Matching Approximation for t-Distribution Differences
+Authors@R: c(
+    person(given  = "Yusuke",
+           family = "Yamaguchi",
+           role   = c("aut","cre"),
+           email  = "yamagubed@gmail.com"))
+Description: Implements the moment-matching approximation for differences
+    of non-standardized t-distributed random variables in both univariate and 
+    multivariate settings. The package provides density, distribution function,
+    quantile function, and random generation for the approximated distributions
+    of t-differences. The methodology establishes the univariate approximated
+    distributions through the systematic matching of the first, second, and
+    fourth moments, and extends it to multivariate cases, considering both
+    scenarios of independent components and the more general multivariate
+    t-distributions with arbitrary dependence structures. Methods build
+    on the classical moment-matching approximation method (e.g., Casella and
+    Berger (2024) <doi:10.1201/9781003456285>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: stats, mvtnorm
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-23 17:36:41 UTC; API18340
+Author: Yusuke Yamaguchi [aut, cre]
+Maintainer: Yusuke Yamaguchi <yamagubed@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-27 21:30:17 UTC

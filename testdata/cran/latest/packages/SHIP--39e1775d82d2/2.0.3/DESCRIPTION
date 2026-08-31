@@ -1,0 +1,30 @@
+Package: SHIP
+Type: Package
+Title: Shrinkage Covariance Incorporating Prior Knowledge
+Version: 2.0.3
+Authors@R: c(
+    person(given = "Vincent", family = "Guillemot",
+           email = "vincent.guillemot@pasteur.fr",
+           role = c("aut", "cre")),
+    person(given = "Monika", family = "Jelizarow",
+           role = "aut")
+  )
+Description: Implements estimation methods for shrinkage covariance matrices
+    using user-specified covariance targets. The covariance target is a structured
+    matrix towards which the unbiased sample covariance is shrunk, optionally
+    incorporating prior knowledge. Shrinkage intensity is computed analytically.
+    The method is described and applied to microarray gene expression data in
+    Jelizarow et al. (2010) <doi:10.1093/bioinformatics/btq323>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: stats
+URL: https://github.com/vguillemot/SHIP
+BugReports: https://github.com/vguillemot/SHIP/issues
+NeedsCompilation: no
+Packaged: 2025-03-20 12:53:13 UTC; vguillem
+Author: Vincent Guillemot [aut, cre],
+  Monika Jelizarow [aut]
+Maintainer: Vincent Guillemot <vincent.guillemot@pasteur.fr>
+Repository: CRAN
+Date/Publication: 2025-03-22 11:50:11 UTC

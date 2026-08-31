@@ -1,0 +1,104 @@
+Type: Package
+Package: magclass
+Title: Data Class and Tools for Handling Spatial-Temporal Data
+Version: 7.5.0
+Date: 2026-06-25
+Authors@R: c(
+    person("Jan Philipp", "Dietrich", , "dietrich@pik-potsdam.de", role = c("aut", "cre"),
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research", ORCID = "0000-0002-4309-6431")),
+    person("Benjamin Leon", "Bodirsky", , "bodirsky@pik-potsdam.de", role = "aut",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research")),
+    person("Markus", "Bonsch", role = "aut"),
+    person("Florian", "Humpenoeder", , "humpenoeder@pik-potsdam.de", role = "aut",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research")),
+    person("Stephen", "Bi", role = "aut"),
+    person("Kristine", "Karstens", , "karstens@pik-potsdam.de", role = "aut",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research")),
+    person("Debbora", "Leip", , "leip@pik-potsdam.de", role = "aut",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research")),
+    person("Pascal", "Sauer", , "pascal.sauer@pik-potsdam.de", role = "aut",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research", ORCID = "0000-0002-6856-8239")),
+    person("Lavinia", "Baumstark", , "lavinia@pik-potsdam.de", role = "ctb",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research")),
+    person("Christoph", "Bertram", , "bertram@pik-potsdam.de", role = "ctb"),
+    person("Anastasis", "Giannousakis", , "giannou@pik-potsdam.de", role = "ctb"),
+    person("David", "Klein", , "dklein@pik-potsdam.de", role = "ctb",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research")),
+    person("Ina", "Neher", role = "ctb"),
+    person("Michaja", "Pehl", , "pehl@pik-potsdam.de", role = "ctb",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research")),
+    person("Anselm", "Schultes", role = "ctb"),
+    person("Miodrag", "Stevanovic", , "miodrag@pik-potsdam.de", role = "ctb",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research")),
+    person("Xiaoxi", "Wang", , "wang@pik-potsdam.de", role = "ctb"),
+    person("Felicitas", "Beier", , "beier@pik-potsdam.de", role = "ctb",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research")),
+    person("Mika", "Pflüger", role = "ctb"),
+    person("Oliver", "Richters", role = "ctb",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research")),
+    person("Patrick", "Rein", , "patrick.rein@pik-potsdam.de", role = "aut",
+           comment = c(affiliation = "Potsdam Institute for Climate Impact Research", ORCID = "0000-0001-9454-8381"))
+  )
+Description: Data class for increased interoperability working with
+    spatial-temporal data together with corresponding functions and
+    methods (conversions, basic calculations and basic data manipulation).
+    The class distinguishes between spatial, temporal and other dimensions
+    to facilitate the development and interoperability of tools build for
+    it. Additional features are name-based addressing of data and internal
+    consistency checks (e.g. checking for the right data order in
+    calculations).
+License: LGPL-3 | file LICENSE
+URL: https://github.com/pik-piam/magclass,
+        https://doi.org/10.5281/zenodo.1158580
+BugReports: https://github.com/pik-piam/magclass/issues
+Depends: methods, R (>= 2.10.0)
+Imports: abind, data.table, rlang, stats
+Suggests: covr, ggplot2, knitr, lpjmlkit, ncdf4, pkgconfig, quitte,
+        raster, rmarkdown, terra, testthat (>= 3.1.5), tibble, withr
+VignetteBuilder: knitr
+Additional_repositories: https://pik-piam.r-universe.dev
+Config/Keywords: tool
+Encoding: UTF-8
+LazyData: true
+Config/Needs/website: tidyverse/tidytemplate
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-29 07:56:03 UTC; patrickr
+Author: Jan Philipp Dietrich [aut, cre] (affiliation: Potsdam Institute for
+    Climate Impact Research, ORCID:
+    <https://orcid.org/0000-0002-4309-6431>),
+  Benjamin Leon Bodirsky [aut] (affiliation: Potsdam Institute for
+    Climate Impact Research),
+  Markus Bonsch [aut],
+  Florian Humpenoeder [aut] (affiliation: Potsdam Institute for Climate
+    Impact Research),
+  Stephen Bi [aut],
+  Kristine Karstens [aut] (affiliation: Potsdam Institute for Climate
+    Impact Research),
+  Debbora Leip [aut] (affiliation: Potsdam Institute for Climate Impact
+    Research),
+  Pascal Sauer [aut] (affiliation: Potsdam Institute for Climate Impact
+    Research, ORCID: <https://orcid.org/0000-0002-6856-8239>),
+  Lavinia Baumstark [ctb] (affiliation: Potsdam Institute for Climate
+    Impact Research),
+  Christoph Bertram [ctb],
+  Anastasis Giannousakis [ctb],
+  David Klein [ctb] (affiliation: Potsdam Institute for Climate Impact
+    Research),
+  Ina Neher [ctb],
+  Michaja Pehl [ctb] (affiliation: Potsdam Institute for Climate Impact
+    Research),
+  Anselm Schultes [ctb],
+  Miodrag Stevanovic [ctb] (affiliation: Potsdam Institute for Climate
+    Impact Research),
+  Xiaoxi Wang [ctb],
+  Felicitas Beier [ctb] (affiliation: Potsdam Institute for Climate
+    Impact Research),
+  Mika Pflüger [ctb],
+  Oliver Richters [ctb] (affiliation: Potsdam Institute for Climate
+    Impact Research),
+  Patrick Rein [aut] (affiliation: Potsdam Institute for Climate Impact
+    Research, ORCID: <https://orcid.org/0000-0001-9454-8381>)
+Maintainer: Jan Philipp Dietrich <dietrich@pik-potsdam.de>
+Repository: CRAN
+Date/Publication: 2026-06-29 09:50:03 UTC

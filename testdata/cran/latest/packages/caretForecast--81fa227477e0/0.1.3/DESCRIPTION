@@ -1,0 +1,30 @@
+Package: caretForecast
+Title: Conformal Time Series Forecasting Using State of Art Machine
+        Learning Algorithms
+Version: 0.1.3
+Authors@R: 
+    person(given = "Resul",
+           family = "Akay",
+           role = c("aut", "cre"),
+           email = "resul.akay@taf-society.org")
+Description: Conformal time series forecasting using the caret infrastructure. 
+  It provides access to state-of-the-art machine learning models for forecasting
+  applications. The hyperparameter of each model is selected based on time 
+  series cross-validation, and forecasting is done recursively.
+License: GPL (>= 3)
+URL: https://taf-society.github.io/caretForecast/,
+        https://github.com/taf-society/caretForecast
+BugReports: https://github.com/taf-society/caretForecast/issues
+Depends: R (>= 3.6)
+Imports: forecast (>= 8.15), caret (>= 6.0.88), magrittr (>= 2.0.1),
+        methods (>= 4.1.1), dplyr (>= 1.0.9), generics (>= 0.1.3)
+Suggests: Cubist (>= 0.3.0), knitr (>= 1.29), testthat (>= 2.3.2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-01-31 14:50:44 UTC; akayr
+Author: Resul Akay [aut, cre]
+Maintainer: Resul Akay <resul.akay@taf-society.org>
+Repository: CRAN
+Date/Publication: 2026-02-01 06:10:26 UTC

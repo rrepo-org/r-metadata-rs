@@ -1,0 +1,28 @@
+Package: RSO
+Title: Ridge Selection Operator for Sparse Linear Regression
+Version: 1.0.0
+Authors@R: 
+        c(person(given = "Murat", family = "Genc", role = c("aut", "cre"), email = "mgenc@cu.edu.tr"),
+      person(given = "Adewale", family = "Lukman", role = "aut", email = "adewale.lukman@und.edu"))
+Description: Implements the Ridge Selection Operator (RSO)
+    for variable selection in linear regression as proposed by
+    Wu (2021) <doi:10.1080/00401706.2020.1791254>.
+    The RSO method extends classical ridge regression by using individually
+    penalized ridge parameters, inducing sparsity through reciprocal penalty parameters.
+    This package provides a fast C++ implementation ('RSOFast')
+    using 'Armadillo' linear algebra routines.
+    The fast implementation precomputes matrix products, uses Cholesky
+    factorization with primal/dual switching, and performs golden-section
+    search for coordinate optimization.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-06-30 11:07:05 UTC; murat
+Author: Murat Genc [aut, cre],
+  Adewale Lukman [aut]
+Maintainer: Murat Genc <mgenc@cu.edu.tr>
+Repository: CRAN
+Date/Publication: 2026-07-06 11:50:14 UTC

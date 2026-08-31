@@ -1,0 +1,33 @@
+Package: gamclass
+Type: Package
+Title: Functions and Data for a Course on Modern Regression and
+        Classification
+Version: 0.62.7
+Date: 2025-07-24
+Authors@R: person(given = "John",
+                      family = "Maindonald",
+                      role = c("aut", "cre"),
+                      email = "john@statsresearch.co.nz")
+Maintainer: John Maindonald <john@statsresearch.co.nz>
+LazyData: true
+Depends: R (>= 3.5.0)
+Suggests: sp, kernlab, mlbench, car, mgcv, DAAG, MASS,
+        knitr,prettydoc,rmarkdown,bookdown
+Imports: rpart, randomForest, lattice, latticeExtra, methods
+URL: https://github.com/jhmaindonald/gamclass
+VignetteBuilder: knitr,rmarkdown,bookdown
+Description: Functions and data are provided that support a course
+        that emphasizes statistical issues of inference and generalizability.  
+        The functions are designed to make it straightforward to illustrate
+        the use of cross-validation, the training/test approach, simulation, 
+        and model-based estimates of accuracy.  Methods considered are
+        Generalized Additive Modeling, Linear and Quadratic Discriminant
+        Analysis, Tree-based methods, and Random Forests. 
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2025-07-29 03:48:04 UTC; johnm1
+Author: John Maindonald [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-07-29 04:40:02 UTC

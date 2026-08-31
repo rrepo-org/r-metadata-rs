@@ -1,0 +1,49 @@
+Package: GofCens
+Type: Package
+Title: Goodness-of-Fit Methods for Right-Censored Data
+Version: 1.5
+Date: 2025-05-29
+Authors@R: c(person("Klaus", "Langohr", role = c("aut", "cre"),
+                    email = "klaus.langohr@upc.edu",
+                    comment = c(ORCID = '0000-0001-7075-9192')),
+            person("Mireia", "Besalú", role = "aut",
+                   comment = c(ORCID = '0000-0003-0473-2404')),
+            person("Matilde", "Francisco", role = "aut",
+                   comment = c(ORCID = '0009-0009-1982-0547')),
+            person("Arnau", "Garcia", role = "aut",
+                   comment = c(ORCID = '0009-0009-7370-6980')),
+            person("Guadalupe", "Gómez", role = "aut",
+                   comment = c(ORCID = '0000-0003-4252-4884')))
+Description: Graphical tools and goodness-of-fit tests for right-censored data:
+             1. Kolmogorov-Smirnov, Cramér-von Mises, and Anderson-Darling tests,
+                which use the empirical distribution function for complete data 
+                and are extended for right-censored data.
+             2. Generalized chi-squared-type test, which is based on the squared 
+                differences between observed and expected counts using random 
+                cells with right-censored data.
+             3. A series of graphical tools such as probability or cumulative hazard 
+                plots to guide the decision about the most suitable parametric model 
+                for the data.
+                These functions share several features as they can handle both 
+                complete and right-censored data, and they provide parameter 
+                estimates for the distributions under study. 
+License: GPL (>= 2)
+URL: https://arnaugarciagrbio.github.io/GofCens/,
+        https://github.com/ArnauGarciaGRBIO/GofCens
+Encoding: UTF-8
+Depends: R (>= 3.5.0), survival, actuar
+Imports: fitdistrplus, grid, ggplot2, gridExtra, boot, methods
+NeedsCompilation: no
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, rms
+Packaged: 2025-05-29 18:06:47 UTC; klangohr
+Repository: CRAN
+Date/Publication: 2025-05-29 20:20:02 UTC
+Author: Klaus Langohr [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7075-9192>),
+  Mireia Besalú [aut] (ORCID: <https://orcid.org/0000-0003-0473-2404>),
+  Matilde Francisco [aut] (ORCID:
+    <https://orcid.org/0009-0009-1982-0547>),
+  Arnau Garcia [aut] (ORCID: <https://orcid.org/0009-0009-7370-6980>),
+  Guadalupe Gómez [aut] (ORCID: <https://orcid.org/0000-0003-4252-4884>)
+Maintainer: Klaus Langohr <klaus.langohr@upc.edu>

@@ -1,0 +1,45 @@
+Package: Rduckhts
+Title: 'DuckDB' High Throughput Sequencing File Formats Reader
+        Extension
+Version: 1.5.1-0.1.3
+Authors@R: c(
+    person(given = "Sounkou Mahamane", family = "Toure",
+    email = "sounkoutoure@gmail.com",
+    role = c("aut", "cre")),
+    person(given = "James K Bonfield, John Marshall,Petr Danecek ,Heng Li , Valeriu Ohan, Andrew Whitwham,Thomas Keane , Robert M Davies", role = "ctb", comment = "Htslib Authors"),
+    person(given = "Brent", family = "Pedersen", role = "cph", comment = "Mosdepth Original Author"),
+    person(given = "Giulio", family = "Genovese", email = "giulio.genovese@gmail.com", role = "cph", comment = "Author of BCFTools munge,score,liftover plugins"),
+    person(given = "Nicola", family = "Asuni", role = "cph", comment = "Author of the VariantKey and RegionKey C API"),
+    person(given = "Devon", family = "Ryan", role = "cph", comment = "Author of libBigWig"),
+    person(given = "DuckDB C Extension API Authors", role = "ctb")
+    )
+Description: Bundles the 'duckhts' 'DuckDB' extension for reading High Throughput
+    Sequencing file formats with 'DuckDB'. The 'DuckDB' C extension API
+    <https://duckdb.org/docs/stable/clients/c/api> and its 'htslib' dependency are
+    compiled from vendored sources during package installation. James K Bonfield and co-authors (2021) <doi:10.1093/gigascience/giab007>. VariantKey / RegionKey support follows Nicola Asuni (2018) <doi:10.1101/473744>.
+License: GPL-3
+Copyright: See inst/COPYRIGHT
+Encoding: UTF-8
+SystemRequirements: GNU make, cmake, zlib, libbz2, liblzma, libcurl,
+        openssl (development headers)
+Depends: R (>= 4.4.0)
+Imports: DBI, duckdb, methods, utils
+Suggests: Rtinycc, tinytest
+URL: https://github.com/RGenomicsETL/duckhts,
+        https://rgenomicsetl.r-universe.dev/Rduckhts
+BugReports: https://github.com/RGenomicsETL/duckhts/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 23:02:59 UTC; sounkoutoure
+Author: Sounkou Mahamane Toure [aut, cre],
+  James K Bonfield, John Marshall,Petr Danecek ,Heng Li , Valeriu Ohan,
+    Andrew Whitwham,Thomas Keane , Robert M Davies [ctb] (Htslib
+    Authors),
+  Brent Pedersen [cph] (Mosdepth Original Author),
+  Giulio Genovese [cph] (Author of BCFTools munge,score,liftover plugins),
+  Nicola Asuni [cph] (Author of the VariantKey and RegionKey C API),
+  Devon Ryan [cph] (Author of libBigWig),
+  DuckDB C Extension API Authors [ctb]
+Maintainer: Sounkou Mahamane Toure <sounkoutoure@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-28 08:10:15 UTC

@@ -1,0 +1,40 @@
+Package: BayesVolcano
+Title: Creating Volcano Plots from Bayesian Model Posteriors
+Version: 1.0.1
+Authors@R: 
+  c(person(given="Katja",family= "Danielzik", email="katja.danielzik@uni-due.de", 
+           role = c("aut", "cre","cph"),
+           comment=c(ORCID="0009-0007-5021-6212")),
+    person(given="Simo",family="Kitanovski",role=c("aut","ctb"),
+           comment=c(ORCID="0000-0003-2909-5376")),
+    person(given="Daniel",family="Hoffmann",role="aut",
+           comment=c(ORCID="0000-0003-2973-7869")))
+URL: https://github.com/KatjaDanielzik/BayesVolcano
+BugReports: https://github.com/KatjaDanielzik/BayesVolcano/issues
+Description: Bayesian models are used to estimate effect sizes (e.g., gene expression changes,
+    protein abundance differences, drug response effects) while accounting for uncertainty, 
+    small sample sizes, and complex experimental designs.
+    However, Bayesian posteriors of models with many parameters are often difficult to interpret at a glance.
+    One way to quickly identify important biological changes based on frequentist analysis 
+    are volcano plots (using fold-changes and p-values).
+    Bayesian volcano plots bring together the explicit treatment of uncertainty in 
+    Bayesian models and the familiar visualization of volcano plots.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.5)
+Imports: ggplot2, HDInterval, purrr, dplyr, magrittr, tidyr
+Suggests: brms, rstan, knitr, rmarkdown, testthat (>= 3.0.0)
+LazyData: true
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-26 14:08:41 UTC; katja
+Author: Katja Danielzik [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0007-5021-6212>),
+  Simo Kitanovski [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0003-2909-5376>),
+  Daniel Hoffmann [aut] (ORCID: <https://orcid.org/0000-0003-2973-7869>)
+Maintainer: Katja Danielzik <katja.danielzik@uni-due.de>
+Repository: CRAN
+Date/Publication: 2026-03-31 09:50:15 UTC

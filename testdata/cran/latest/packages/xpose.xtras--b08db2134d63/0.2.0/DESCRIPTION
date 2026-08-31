@@ -1,0 +1,40 @@
+Package: xpose.xtras
+Title: Extra Functionality for the 'xpose' Package
+Version: 0.2.0
+Authors@R: 
+    person("John", "Prybylski", , "jprybylski@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-5802-0539"))
+Description: Adding some at-present missing functionality, or functions 
+    unlikely to be added to the base 'xpose' package.  This includes some 
+    diagnostic plots that have been missing in translation from 'xpose4', 
+    but also some useful features that truly extend the capabilities of what 
+    can be done with 'xpose'. These extensions include the concept of a set of
+    'xpose' objects, and diagnostics for likelihood-based models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: checkmate, cli, colorspace, conflicted, dplyr (>= 1.1.2),
+        forcats (>= 1.0.0), GGally, ggplot2 (>= 3.4.2), glue,
+        grDevices, grid, lifecycle, magrittr, pmxcv, purrr (>= 1.0.1),
+        readr (>= 2.1.4), rlang, stats, stringr (>= 1.5.0), tibble (>=
+        3.2.1), tidyr (>= 1.3.0), tidyselect, utils, vctrs, xpose
+Suggests: bbr, callr, DiagrammeR, knitr, nlmixr2, nlmixr2data,
+        nlmixr2est, pkgload, rmarkdown, rxode2, spelling, testthat (>=
+        3.0.0), vdiffr, xpose.nlmixr2
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://jprybylski.github.io/xpose.xtras/,
+        https://github.com/jprybylski/xpose.xtras
+Language: en-US
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0
+Additional_repositories:
+        https://mpn.metworx.com/snapshots/stable/2026-06-25
+NeedsCompilation: no
+Packaged: 2026-07-26 17:50:17 UTC; jprybylski
+Author: John Prybylski [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5802-0539>)
+Maintainer: John Prybylski <jprybylski@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-26 18:30:02 UTC

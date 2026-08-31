@@ -1,0 +1,40 @@
+Package: rainerosr
+Type: Package
+Title: Calculate Rainfall Intensity and Erosivity Indices
+Version: 0.1.1
+Authors@R: 
+    person(
+        given = "Sadikul",
+        family = "Islam",
+        email = "sadikul.islamiasri@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-2924-7122")
+    )
+Description: Calculates I30 (maximum 30-minute rainfall intensity) and EI30
+    (erosivity index) from rainfall breakpoint data. Supports multiple
+    storm events, rainfall validation, and visualization for soil erosion
+    modeling and hydrological analysis. Methods are based on
+    Brown and Foster (1987) <doi:10.13031/2013.30422>,
+    Wischmeier and Smith (1978) "Predicting Rainfall Erosion Losses:
+    A Guide to Conservation Planning" <doi:10.22004/ag.econ.171903>,
+    and Renard et al. (1997) "Predicting Soil Erosion by Water: A Guide to
+    Conservation Planning with the Revised Universal Soil Loss Equation
+    (RUSLE)" (USDA Agriculture Handbook No. 703).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyDataCompression: bzip2
+Depends: R (>= 3.5.0)
+Imports: dplyr (>= 1.1.0), ggplot2 (>= 3.4.0), lubridate (>= 1.9.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-16 09:21:55 UTC; acer
+Author: Sadikul Islam [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2924-7122>)
+Maintainer: Sadikul Islam <sadikul.islamiasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-19 14:50:10 UTC

@@ -1,0 +1,35 @@
+Package: HOME
+Title: Harmonized Orphanhood Mortality Estimation
+Version: 0.1.1
+Authors@R: 
+    person("Tamara", "Vaz",
+           email = "tamaravaz.m@gmail.com",
+           role = c("aut", "cre"))
+Description: Implements indirect demographic methods for estimating adult
+    mortality from orphanhood data. The package includes the standard
+    Brass and Hill (1973) method
+    <https://scholar.google.com/scholar_lookup?&title=Estimating%20Adult%20Mortality%20from%20Orphanhood&pages=111-23&publication_year=1973&author=Brass%2CW.&author=Hill.%2CK.>,
+    the regression-based approach developed by Timaeus (1992)
+    <https://pubmed.ncbi.nlm.nih.gov/12317481/>, and the adjustments
+    proposed by Luy (2012) <doi:10.1007/s13524-012-0101-4> for
+    low-mortality populations. A relational model is used to harmonize
+    estimates into comparable adult mortality indicators. The package
+    also provides diagnostic tools to assess the sensitivity of results
+    to assumptions about the mean age of childbearing and the choice of
+    model life table family.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: ggplot2, gridExtra
+Suggests: shiny, bslib, plotly, DT, readxl, writexl, scales, testthat
+        (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/tamaravaz/HOME
+BugReports: https://github.com/tamaravaz/HOME/issues
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-17 10:47:04 UTC; tvaz
+Author: Tamara Vaz [aut, cre]
+Maintainer: Tamara Vaz <tamaravaz.m@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-17 11:00:02 UTC

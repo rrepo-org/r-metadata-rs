@@ -1,0 +1,28 @@
+Package: inatpick
+Title: Download Photos and Metadata from 'iNaturalist'
+Version: 0.2.2
+Authors@R: 
+    person("Andrés", "Romero-Bravo", email = "aromerobravo@gmail.com", role = c("aut", "cre"))
+Description: A lightweight interface to the 'iNaturalist' API
+    (<https://www.inaturalist.org/pages/api+reference>) for downloading
+    observation photos and exporting metadata to CSV. Supports filtering by
+    taxon, place, user, and annotation. Note that downloaded photos retain
+    their original licenses as set by 'iNaturalist' observers; users are
+    responsible for respecting these licenses.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: httr, jsonlite, dplyr, tidyr, purrr, rlang, stats, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), httptest2
+Config/testthat/edition: 3
+URL: https://github.com/andresarb/inatpick,
+        https://andresarb.github.io/inatpick/
+BugReports: https://github.com/andresarb/inatpick/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-18 18:23:19 UTC; ar696
+Author: Andrés Romero-Bravo [aut, cre]
+Maintainer: Andrés Romero-Bravo <aromerobravo@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-24 08:20:02 UTC

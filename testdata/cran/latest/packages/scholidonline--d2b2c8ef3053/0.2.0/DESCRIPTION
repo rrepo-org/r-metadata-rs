@@ -1,0 +1,34 @@
+Package: scholidonline
+Type: Package
+Title: Resolution, Conversion, Linking and Metadata for Scholarly
+        Identifiers
+Version: 0.2.0
+Language: en-US
+Authors@R: 
+    person("Thomas", "Rauter",
+           email = "rauterthomas0@gmail.com",
+           role = c("aut", "cre", "fnd"),
+           comment = c(ORCID = "0009-0004-5578-3628"))
+Description: Enables querying of scholarly identifier services to
+    verify identifier existence, convert identifiers across systems,
+    retrieve bibliographic metadata, and discover linked identifiers.
+    Supports identifier types including DOI, PMID, PMCID, arXiv,
+    ORCID, OpenAlex, ROR, UniProt, and selected NCBI accessions
+    (GEO, BioProject, RefSeq, SRA, and genome assembly).
+License: MIT + file LICENSE
+URL: https://thomas-rauter.github.io/scholidonline/
+BugReports: https://github.com/Thomas-Rauter/scholidonline/issues
+Depends: R (>= 4.0.0)
+Imports: scholid (>= 0.2.0), httr2, rlang
+Suggests: testthat (>= 3.0.0), knitr (>= 1.30), rmarkdown
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-14 17:10:33 UTC; thomasrauter
+Author: Thomas Rauter [aut, cre, fnd] (ORCID:
+    <https://orcid.org/0009-0004-5578-3628>)
+Maintainer: Thomas Rauter <rauterthomas0@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-14 17:50:02 UTC

@@ -1,0 +1,37 @@
+Package: schemate
+Title: Schema Inference, Editing, and Validation with 'checkmate'
+Version: 0.1.0
+Authors@R: c(
+    person(
+        given = "Hongyuan",
+        family = "Jia",
+        role = c("aut", "cre", "cph"),
+        email = "hongyuanjia@cqust.edu.cn",
+        comment = c(ORCID = "0000-0002-0075-8183")
+    )
+    )
+Author: Hongyuan Jia [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0075-8183>)
+Maintainer: Hongyuan Jia <hongyuanjia@cqust.edu.cn>
+Description: 
+    Provides a compact schema domain-specific language for inferring,
+    editing, and validating R data structures with 'checkmate' checks.
+    Schemas can be serialized to and restored from JSON for storage and
+    review. A generated standalone bundle supports vendoring the schema
+    tools into other R packages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://hongyuanjia.github.io/schemate/
+BugReports: https://github.com/hongyuanjia/schemate/issues
+RoxygenNote: 7.3.3
+Imports: checkmate (>= 2.0.0), S7
+Suggests: jsonlite, testthat (>= 3.0.0)
+Collate: 'schema-utils.R' 'schema-spec.R' 'schema-doc.R'
+        'schema-compact.R' 'schema-edit.R' 'schema-flat.R'
+        'schema-infer.R' 'schema-json.R' 'schema-query.R'
+        'schema-validate.R' 'schemate-package.R' 'zzz.R'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-06 04:35:11 UTC; hongyuanjia
+Repository: CRAN
+Date/Publication: 2026-06-12 10:00:02 UTC

@@ -1,0 +1,28 @@
+Package: sksr
+Type: Package
+Title: Labels for Danish SKS Codes
+Version: 0.1.0
+Authors@R: c(
+    person("Lars", "Boerty", email = "lars.borty@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3715-8528")))
+Description: The public available Danish SKS (Sundhedsvæsenets Klassifikationssystem) and 
+    SNOMED (Systematized Nomenclature of Medicine) codes with labels. The labels are useful
+    to sort and make sense of microdata in closed computing environments.
+    Current as of april 2026 (SNOMED) and june 2026 (SKS).
+    SNOMED <https://www.patobank.dk/snomed/> and 
+    SKS <https://filer.sundhedsdata.dk/sks/data/skscomplete/>.
+License: MIT + file LICENSE
+URL: https://github.com/LarsHernandez/sksr
+BugReports: https://github.com/LarsHernandez/sksr/issues
+Encoding: UTF-8
+Suggests: rmarkdown
+Imports: Rdpack
+Depends: R (>= 3.5.0)
+RdMacros: Rdpack
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-30 11:24:04 UTC; BP11MK
+Author: Lars Boerty [aut, cre] (ORCID: <https://orcid.org/0000-0002-3715-8528>)
+Maintainer: Lars Boerty <lars.borty@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-06 11:50:02 UTC

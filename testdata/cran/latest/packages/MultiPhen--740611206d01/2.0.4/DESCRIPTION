@@ -1,0 +1,39 @@
+Package: MultiPhen
+Type: Package
+Title: A Package to Test for Multi-Trait Association
+Version: 2.0.4
+Date: 2026-03-17
+Author: Lachlan Coin [aut, cre],
+  Paul O'Reilly [aut],
+  Yotsawat Pompyen [aut],
+  Clive Hoggart [aut],
+  Federico Calboli [aut]
+Authors@R: c(person(given = "Lachlan",
+                      family = "Coin",
+                      role = c("aut", "cre"),
+                      email = "l.coin@imb.uq.edu.au"),
+               person(given = "Paul",
+                      family = "O'Reilly",
+                      role = "aut"),
+               person(given = "Yotsawat",
+                      family = "Pompyen",
+                      role = "aut"),
+               person(given = "Clive",
+                      family = "Hoggart",
+                      role = "aut"),
+               person(given = "Federico",
+                      family = "Calboli",
+                      role = "aut"))
+Depends: MASS, abind, epitools
+Imports: RColorBrewer, meta
+Maintainer: Lachlan Coin <l.coin@imb.uq.edu.au>
+Description: Performs genetic association tests between SNPs
+        (one-at-a-time) and multiple phenotypes (separately or in joint
+        model).
+License: GPL-2
+LazyLoad: yes
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2026-03-17 00:25:51 UTC; lcoin
+Date/Publication: 2026-03-17 06:50:02 UTC
+RoxygenNote: 7.3.3

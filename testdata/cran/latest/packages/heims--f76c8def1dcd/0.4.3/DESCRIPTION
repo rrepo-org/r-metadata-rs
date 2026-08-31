@@ -1,0 +1,21 @@
+Package: heims
+Title: Decode and Validate HEIMS Data from Department of Education,
+        Australia
+Version: 0.4.3
+Date: 2026-08-22
+Authors@R: person("Hugh", "Parsonage", email = "hugh.parsonage@gmail.com", role = c("aut", "cre"))
+Description: Decode elements of the Australian Higher Education Information Management System (HEIMS) data for clarity and performance. HEIMS is the record system of the Department of Education, Australia to record enrolments and completions in Australia's higher education system, as well as a range of relevant information. For more information, including the source of the data dictionary, see <https://web.archive.org/web/20180210074903/http://heimshelp.education.gov.au/sites/heimshelp/dictionary/pages/data-element-dictionary>. That collection has since been superseded by the Tertiary Collection of Student Information, whose data element dictionary is at <https://www.tcsisupport.gov.au/element>.
+Depends: R (>= 3.4.0)
+Imports: data.table, hutils, magrittr, fastmatch, bit64, lubridate
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat, fst, codetools
+Config/roxygen2/version: 8.1.0
+URL: https://github.com/HughParsonage/heims
+NeedsCompilation: no
+Packaged: 2026-08-22 07:21:58 UTC; hughp
+Author: Hugh Parsonage [aut, cre]
+Maintainer: Hugh Parsonage <hugh.parsonage@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-22 15:10:19 UTC

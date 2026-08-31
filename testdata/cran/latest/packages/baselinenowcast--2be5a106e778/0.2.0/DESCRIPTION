@@ -1,0 +1,80 @@
+Package: baselinenowcast
+Title: Baseline Nowcasting for Right-Truncated Epidemiological Data
+Version: 0.2.0
+Authors@R: 
+  c(person(given = "Kaitlyn",
+           family = "Johnson",
+           role = c("aut", "cre", "cph"),
+           email = "kaitlyn.johnson@lshtm.ac.uk",
+           comment = c(ORCID = "0000-0001-8011-0012")),
+    person(given = "Emily",
+           family = "Tyszka",
+           email = "etsyzka@umass.edu",
+            role = c("aut"),
+           comment = c(ORCID = "0009-0005-6088-4017")),
+    person(given = "Johannes",
+           family = "Bracher",
+           role = c("aut"),
+           email = "johannes.bracher@kit.edu",
+           comment = c(ORCID = "0000-0002-3777-1410")),
+    person(given = "Sebastian",
+           family = "Funk",
+           role = c("aut"),
+           email = "sebastian.funk@lshtm.ac.uk",
+           comment = c(ORCID = "0000-0002-2842-3406")),
+      person(given = "Sam",
+           family = "Abbott",
+           role = c("aut"),
+           email = "contact@samabbott.co.uk",
+           comment = c(ORCID = "0000-0001-8057-8037")),
+    person(given   = "Tim",
+           family  = "Taylor",
+           role    = "ctb",
+           email   = "tim.taylor@hiddenelephants.co.uk",
+           comment = c(ORCID = "0000-0002-8587-7113")))
+Description: Nowcasting right-truncated epidemiological data is critical
+  for timely public health decision-making, as reporting delays can create
+  misleading impressions of declining trends in recent data. This package
+  provides nowcasting methods based on using empirical
+  delay distributions and uncertainty from past performance. It is also designed
+  to be used as a baseline method for developers of new nowcasting methods.
+  For more details on the performance of the method(s) in this package applied
+  to case studies of COVID-19 and norovirus, see our recent paper at
+  <https://wellcomeopenresearch.org/articles/10-614>. The package supports
+  standard data frame inputs with reference date, report date, and
+  count columns, as well as the direct use of reporting triangles, and is
+  compatible with 'epinowcast' objects. Alongside
+  an opinionated default workflow, it has a low-level pipe-friendly modular
+  interface, allowing context-specific workflows. It can accommodate a wide
+  spectrum of reporting schedules, including mixed patterns of reference and
+  reporting (daily-weekly, weekly-daily). It also supports sharing delay
+  distributions and uncertainty estimates between strata,
+  as well as custom uncertainty models and delay estimation methods.
+License: MIT + file LICENSE
+URL: https://github.com/epinowcast/baselinenowcast,
+        https://baselinenowcast.epinowcast.org
+BugReports: https://github.com/epinowcast/baselinenowcast/issues
+Depends: R (>= 4.1.0)
+Imports: cli, checkmate, stats, utils, rlang, purrr
+Suggests: bookdown, ChainLadder, dplyr, tidyr, stringr, lubridate,
+        readr, ggplot2, spelling, rmarkdown, testthat (>= 3.1.9),
+        usethis, withr, knitr, zoo, glue
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/Needs/hexsticker: hexSticker, sysfonts, ggplot2
+Config/Needs/website: r-lib/pkgdown, epinowcast/enwtheme
+NeedsCompilation: no
+Packaged: 2026-01-29 14:19:15 UTC; lshkj18
+Author: Kaitlyn Johnson [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8011-0012>),
+  Emily Tyszka [aut] (ORCID: <https://orcid.org/0009-0005-6088-4017>),
+  Johannes Bracher [aut] (ORCID: <https://orcid.org/0000-0002-3777-1410>),
+  Sebastian Funk [aut] (ORCID: <https://orcid.org/0000-0002-2842-3406>),
+  Sam Abbott [aut] (ORCID: <https://orcid.org/0000-0001-8057-8037>),
+  Tim Taylor [ctb] (ORCID: <https://orcid.org/0000-0002-8587-7113>)
+Maintainer: Kaitlyn Johnson <kaitlyn.johnson@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-02-03 11:10:07 UTC

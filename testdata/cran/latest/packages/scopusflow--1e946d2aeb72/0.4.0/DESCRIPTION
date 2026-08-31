@@ -1,0 +1,43 @@
+Package: scopusflow
+Title: A Reproducible Workflow Layer for 'Scopus' Bibliographic
+        Searches
+Version: 0.4.0
+Authors@R: 
+    person("Pablo", "Bernabeu", , "pcbernabeu@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1083-2460"))
+Description: A coherent, quota-aware workflow layer over the Elsevier
+    'Scopus' Search 'API' <https://dev.elsevier.com/sc_apis.html>. It builds
+    reproducible search plans, retrieves records with rate-limit handling,
+    retry with back-off and optional resumable caching, normalises results to a
+    stable tidy schema, extracts and tracks changes in Digital Object
+    Identifiers (DOIs), sizes sets of concepts and their intersections,
+    compares publication trends across topics, writes the search up as a
+    reproducible record for a methods section following the 'PRISMA-S'
+    reporting standard (Rethlefsen and others, 2021)
+    <doi:10.1186/s13643-020-01542-z> and exports to formats
+    compatible with downstream bibliometric tools. Network and 'API'
+    errors are surfaced as typed conditions so that callers can respond to them
+    programmatically. 'Scopus' is a trademark of Elsevier. This package is an
+    independent client and is not affiliated with or endorsed by Elsevier.
+License: MIT + file LICENSE
+URL: https://github.com/pablobernabeu/scopusflow,
+        https://pablobernabeu.github.io/scopusflow/
+BugReports: https://github.com/pablobernabeu/scopusflow/issues
+Depends: R (>= 4.1.0)
+Imports: cli, httr2 (>= 1.0.0), jsonlite, rlang (>= 1.1.0), stats,
+        tibble, tools, utils
+Suggests: bslib, callr, fansi, ggplot2, grid, knitr, rmarkdown, shiny,
+        spelling, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Language: en-GB
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-21 13:53:40 UTC; PabloB
+Author: Pablo Bernabeu [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1083-2460>)
+Maintainer: Pablo Bernabeu <pcbernabeu@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 21:00:08 UTC

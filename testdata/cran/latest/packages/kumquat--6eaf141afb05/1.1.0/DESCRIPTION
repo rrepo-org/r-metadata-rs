@@ -1,0 +1,25 @@
+Package: kumquat
+Title: A Smaller Version of LIME
+Version: 1.1.0
+Authors@R: 
+    person("Janith", "Wanniarachchi", , "janithcwanni@gmail.com", role = c("aut", "cre", "cph"))
+Description: The existing implementation of 'lime' can be quite limiting in understanding the underlying components that make Local Local interpretable model-agnostic explanations (LIME) work. 'kumquat' is a simpler implementation of 'lime' that is easier to understand and is more transparent on the pieces that come together to make LIME work. For more details on LIME, see Ribeiro, Singh, and Guestrin (2016) <doi:10.1145/2939672.2939778>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: colorspace, knitr, patchwork, randomForest, RColorBrewer,
+        rmarkdown, testthat (>= 3.0.0), tidyverse
+Config/testthat/edition: 3
+Imports: bundle, dplyr, ggplot2, glmnet, glue, logger, rlang, tidyr
+Depends: R (>= 4.1.0)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://janithwanni.github.io/kumquat/,
+        https://github.com/janithwanni/kumquat
+Config/roxygen2/version: 8.0.0
+BugReports: https://github.com/janithwanni/kumquat/issues
+NeedsCompilation: no
+Packaged: 2026-06-16 04:22:34 UTC; jwan0443
+Author: Janith Wanniarachchi [aut, cre, cph]
+Maintainer: Janith Wanniarachchi <janithcwanni@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-22 14:40:20 UTC

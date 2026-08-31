@@ -1,0 +1,32 @@
+Package: MD2sample
+Title: Various Methods for the Two Sample Problem in D>1 Dimensions
+Version: 1.3.0
+Authors@R: 
+    person("Wolfgang", "Rolke", , "wolfgang.rolke@upr.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3514-726X"))
+Description: The routine twosample_test() in this package runs the
+    two-sample test using various test statistic for multivariate data. 
+    The user can also run several tests and then find a p value adjusted for simultaneous inference.
+    The p values are found via permutation or via the parametric bootstrap. 
+    The routine twosample_power() allows the estimation of the power of the tests. 
+    The routine run.studies() allows a user to quickly study the power of a new method and 
+    how it compares to those included in the package.
+    For details of the methods and references see the included vignettes.
+License: GPL (>= 2)
+Encoding: UTF-8
+LinkingTo: Rcpp
+Imports: Rcpp, parallel, stats, FNN, copula, ade4, gTests, igraph, lsa,
+        microbenchmark, mvtnorm, Ball
+Suggests: rmarkdown, knitr, ggplot2, egg, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-02 13:05:54 UTC; Wolfgang
+Author: Wolfgang Rolke [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3514-726X>)
+Maintainer: Wolfgang Rolke <wolfgang.rolke@upr.edu>
+Repository: CRAN
+Date/Publication: 2026-08-04 10:30:40 UTC

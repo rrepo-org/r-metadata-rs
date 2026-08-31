@@ -1,0 +1,28 @@
+Package: toporanga
+Type: Package
+Title: Topological Sort-Based Hierarchy Inference
+Version: 1.0.0
+Depends: R (>= 3.5.0)
+Authors@R: c(
+  person(
+   c("Miron","B."),"Kursa",
+   role=c("aut","cre"),
+   email="m@mbq.me",
+   comment=c(ORCID="0000-0001-7672-648X")
+  )
+ )
+License: GPL-3
+Description: Deciphering hierarchy of agents exhibiting observable dominance events is a crucial problem in several disciplines, in particular in behavioural analysis of social animals, but also in social sciences and game theory. This package implements an inference approach based on graph theory, namely to extract the optimal acyclic subset of a weighted graph of dominance; this allows for hierarchy estimation through topological sorting. The package also contains infrastructure to investigate partially defined hierarchies and hierarchy dynamics.
+BugReports: https://gitlab.com/mbq/toporanga/-/issues
+URL: https://gitlab.com/mbq/toporanga
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-07-13 18:06:43 UTC; mbq
+Author: Miron B. Kursa [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7672-648X>)
+Maintainer: Miron B. Kursa <m@mbq.me>
+Repository: CRAN
+Date/Publication: 2025-07-16 17:20:02 UTC

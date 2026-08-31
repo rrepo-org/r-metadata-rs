@@ -1,0 +1,46 @@
+Package: whep
+Title: Processing Agro-Environmental Data
+Version: 0.3.0
+Authors@R: c(
+    person("Catalin", "Covaci", , "catalin.covaci@csic.es", role = c("aut", "cre"), comment = c(ORCID = "0009-0005-2186-5972")),
+    person("Eduardo", "Aguilera", , "eduardo.aguilera@csic.es", role = c("aut", "cph"), comment = c(ORCID = "0000-0003-4382-124X")),
+    person("Alice", "Beckmann", , "alice.beckmann@cchs.csic.es", role = c("aut"), comment = c(ORCID = "0009-0009-6840-0258")),
+    person("Juan", "Infante", , "jinfama@ugr.es", role = c("aut"), comment = c(ORCID = "0000-0003-1446-7181")),
+    person("Justin", "Morgan", , "justin.morgan@cchs.csic.es", role = c("aut"), comment = c(ORCID = "0009-0003-7022-4288")),
+    person("João", "Serra", , "jserra@agro.au.dk", role = c("ctb"), comment = c(ORCID = "0000-0002-3561-5350")),
+    person("European Research Council", role = c("fnd"))
+  )
+Description: A set of tools for processing and analyzing data developed in the
+    context of the "Who Has Eaten the Planet" (WHEP) project, funded by the
+    European Research Council (ERC). For more details on multi-regional
+    input–output model "Food and Agriculture Biomass Input–Output" (FABIO) see 
+    Bruckner et al. (2019) <doi:10.1021/acs.est.9b03554>.
+License: MIT + file LICENSE
+Imports: cli, dplyr, fs, FAOSTAT, httr, nanoparquet, pins, purrr,
+        rappdirs, readr, rlang, stringr, tibble, tidyr, withr, yaml,
+        zoo
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: ggplot2, googlesheets4, here, knitr, pointblank, rmarkdown,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://eduaguilera.github.io/whep/,
+        https://github.com/eduaguilera/whep
+BugReports: https://github.com/eduaguilera/whep/issues
+Depends: R (>= 4.1.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-03-03 16:54:21 UTC; usuario
+Author: Catalin Covaci [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-2186-5972>),
+  Eduardo Aguilera [aut, cph] (ORCID:
+    <https://orcid.org/0000-0003-4382-124X>),
+  Alice Beckmann [aut] (ORCID: <https://orcid.org/0009-0009-6840-0258>),
+  Juan Infante [aut] (ORCID: <https://orcid.org/0000-0003-1446-7181>),
+  Justin Morgan [aut] (ORCID: <https://orcid.org/0009-0003-7022-4288>),
+  João Serra [ctb] (ORCID: <https://orcid.org/0000-0002-3561-5350>),
+  European Research Council [fnd]
+Maintainer: Catalin Covaci <catalin.covaci@csic.es>
+Repository: CRAN
+Date/Publication: 2026-03-03 21:20:03 UTC

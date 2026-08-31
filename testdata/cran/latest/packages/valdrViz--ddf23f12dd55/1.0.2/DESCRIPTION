@@ -1,0 +1,28 @@
+Package: valdrViz
+Title: Visualise and Report 'VALD ForceDecks' Test Results
+Version: 1.0.2
+Authors@R: c(
+    person("Kieran", "Harrison", email = "k.harrison@vald.com", role = c("aut", "cre")), 
+    person(given = "VALD Support", email = "support@vald.com", role = "ctb"),
+    person("VALD", role = "cph", comment = "Copyright holder"))
+Description: Provides a 'shiny' dashboard and plotting utilities to explore and
+    report 'VALD ForceDecks' testing data. Includes interactive modules for
+    metric exploration, radar charts, longitudinal comparisons, quadrant plots,
+    and athlete reports. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Imports: shiny, bslib, readr, dplyr, ggplot2, tibble, tidyr, zoo, DT,
+        plotly, magrittr, lubridate, RColorBrewer, pagedown, webshot2,
+        shinycssloaders, rlang
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-07 05:46:25 UTC; KieranHarrison
+Author: Kieran Harrison [aut, cre],
+  VALD Support [ctb],
+  VALD [cph] (Copyright holder)
+Maintainer: Kieran Harrison <k.harrison@vald.com>
+Repository: CRAN
+Date/Publication: 2026-07-07 06:10:02 UTC

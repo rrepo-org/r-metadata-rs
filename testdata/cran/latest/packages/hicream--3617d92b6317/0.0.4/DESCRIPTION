@@ -1,0 +1,53 @@
+Package: hicream
+Title: HIC diffeREntial Analysis Method
+Version: 0.0.4
+Date: 2026-01-30
+Maintainer: Elise Jorge <elise.jorge@inrae.fr>
+Authors@R: c(
+    person("Elise", "Jorge", , "elise.jorge@inrae.fr", role = c("aut", "cre")),
+    person("Sylvain", "Foissac", , "sylvain.foissac@inrae.fr", role = "aut",
+           comment = c(ORCID = "0000-0002-2631-5356")),
+    person("Toby", "Hocking", , "toby.hocking@r-project.org", role = "aut",
+           comment = c(ORCID = "0000-0002-3146-0865")),
+    person("Pierre", "Neuvial", , "pierre.neuvial@math.univ-toulouse.fr", 
+           role = "aut", comment = c(ORCID = "0000-0003-3584-9998")),
+    person("Nathalie", "Vialaneix", , "nathalie.vialaneix@inrae.fr", 
+           role = "aut", comment = c(ORCID = "0000-0003-1156-0639")),
+    person("Gilles", "Blanchard", role = "ctb"), 
+    person("Guillermo", "Durand", role= "ctb", 
+           comment = c(ORCID = "0000-0003-4056-5631")),
+    person("Nicolas", "Enjalbert-Courrech", role = "ctb"),
+    person("Etienne", "Roquain", role = "ctb")
+  )
+Description: Perform Hi-C data differential analysis based on pixel-level
+    differential analysis and a post hoc inference strategy to quantify
+    signal in clusters of pixels. Clusters of pixels are obtained through
+    a connectivity-constrained two-dimensional hierarchical clustering.
+License: GPL (>= 3)
+URL: https://scales.pages-forge.inrae.fr/hicream/,
+        https://forge.inrae.fr/scales/hicream
+BugReports: https://forge.inrae.fr/scales/hicream/-/issues
+Depends: R (>= 4.0.0), reticulate
+SystemRequirements: Python (>= 3.9)
+Imports: adjclust, auk, BiocGenerics, csaw, diffHic, dplyr, edgeR,
+        GenomeInfoDb, GenomicRanges, InteractionSet, limma, Matrix,
+        methods, reshape2, rlang, S4Vectors, stats,
+        SummarizedExperiment, utils, viridis
+Suggests: knitr, rmarkdown
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-30 15:01:53 UTC; nathalie
+Author: Elise Jorge [aut, cre],
+  Sylvain Foissac [aut] (ORCID: <https://orcid.org/0000-0002-2631-5356>),
+  Toby Hocking [aut] (ORCID: <https://orcid.org/0000-0002-3146-0865>),
+  Pierre Neuvial [aut] (ORCID: <https://orcid.org/0000-0003-3584-9998>),
+  Nathalie Vialaneix [aut] (ORCID:
+    <https://orcid.org/0000-0003-1156-0639>),
+  Gilles Blanchard [ctb],
+  Guillermo Durand [ctb] (ORCID: <https://orcid.org/0000-0003-4056-5631>),
+  Nicolas Enjalbert-Courrech [ctb],
+  Etienne Roquain [ctb]
+Repository: CRAN
+Date/Publication: 2026-01-30 15:50:02 UTC

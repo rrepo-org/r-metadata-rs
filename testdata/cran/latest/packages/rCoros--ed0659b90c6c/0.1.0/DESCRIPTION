@@ -1,0 +1,37 @@
+Package: rCoros
+Title: Access COROS Training Hub Fitness Data
+Version: 0.1.0
+Date: 2026-06-07
+Authors@R: 
+    person(
+        given   = "Matt",
+        family  = "O'Reilly",
+        email   = "fermoymatt@gmail.com",
+        role    = c("aut", "cre")
+    )
+Description: Provides a tidy interface to the 'COROS' Training Hub API
+    (<https://coros.com/traininghub>), the web platform that accompanies 'COROS'
+    GPS sports watches. Retrieves activities, daily wellness metrics
+    (heart rate variability, resting heart rate, VO2 max and training
+    load), workout programmes and training calendars. All results are
+    returned as tibbles, ready for analysis with 'dplyr' and 'ggplot2'.
+    Both the US and EU regional endpoints are supported.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: digest (>= 0.6.30), dplyr (>= 1.1.0), httr2 (>= 1.0.0), purrr
+        (>= 1.0.0), tibble (>= 3.2.0)
+Suggests: ggplot2 (>= 3.4.0), knitr (>= 1.40), rmarkdown (>= 2.20),
+        testthat (>= 3.0.0), withr (>= 2.5.0)
+VignetteBuilder: knitr
+URL: https://github.com/mattyoreilly/rCoros,
+        https://mattyoreilly.github.io/rCoros/
+BugReports: https://github.com/mattyoreilly/rCoros/issues
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-08 07:03:30 UTC; mattoreilly
+Author: Matt O'Reilly [aut, cre]
+Maintainer: Matt O'Reilly <fermoymatt@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-24 08:00:02 UTC

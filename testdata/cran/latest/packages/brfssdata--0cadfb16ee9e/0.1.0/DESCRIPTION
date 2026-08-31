@@ -1,0 +1,30 @@
+Package: brfssdata
+Title: Access CDC Behavioral Risk Factor Surveillance System Data
+Version: 0.1.0
+Authors@R: 
+    person("Muntasir", "Masum", , "muntasir.1124@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-4210-2844"))
+Description: Download, cache, and analyze annual microdata from the United States Centers for Disease Control and Prevention Behavioral Risk Factor Surveillance System (BRFSS) <https://www.cdc.gov/brfss/>. Each requested survey year is downloaded once as a compact file hosted on public releases, verified against a published checksum, and cached locally; queries then run through 'DuckDB' (via the 'duckdb' package), so column selection and repeat analyses never re-transfer data. Survey-design helpers construct 'srvyr' design objects with year-appropriate weights, strata, and primary sampling units, including explicit handling of the 2011 weighting methodology change and of the codes CDC uses for missing-type answers.
+License: MIT + file LICENSE
+Depends: R (>= 4.2)
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Suggests: curl, dplyr, knitr, rmarkdown, spelling, survey, testthat,
+        withr
+Config/testthat/edition: 3
+LazyData: true
+Config/Needs/website: ggplot2, haven
+Imports: cli, DBI, duckdb (>= 1.5.5), jsonlite, rlang, srvyr (>=
+        1.0.0), tibble, tools, utils
+URL: https://muntasirmasum.github.io/brfssdata/,
+        https://github.com/muntasirmasum/brfssdata
+VignetteBuilder: knitr
+BugReports: https://github.com/muntasirmasum/brfssdata/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-08-17 15:42:24 UTC; mm992584
+Author: Muntasir Masum [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-4210-2844>)
+Maintainer: Muntasir Masum <muntasir.1124@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 13:10:31 UTC

@@ -1,0 +1,43 @@
+Package: BayesPocket
+Type: Package
+Title: Bayesian Causal Inference for Periodontal Diseases in
+        Longitudinal Studies
+Version: 0.1.0
+Authors@R: c(
+    person("Qingyang", "Liu", email = "rh8liuqy@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3265-6330")),
+    person("Debdeep", "Pati", email = "dpati2@wisc.edu", role = c("aut")),
+    person("Yang", "Ni", email = "yang.ni@austin.utexas.edu", role = c("aut")),
+    person("Dipankar", "Bandyopadhyay", email = "dbandyop@vcu.edu", role = "aut")
+  )
+Description: Implements the Mixed Treatment-State Causal Model (MTSCM), a Bayesian 
+    framework for estimating causal effects of clinical interventions on bounded 
+    continuous outcomes in longitudinal observational studies with irregular visits. 
+    The methodology is specifically designed for periodontal disease research, where 
+    discrete treatments and continuous disease states (e.g., proportion of periodontal 
+    pockets exceeding 3 mm) reciprocally influence one another under dynamic feedback. 
+    The package integrates a double-censored Tobit likelihood to handle boundary mass 
+    at zero and one, subject-specific random effects to capture within-subject 
+    correlation, and flexible tree-based ensemble priors (standard BART and Soft BART) 
+    to model complex nonlinear interactions without parametric restrictions. Causal 
+    identification is established under the potential outcomes framework via the 
+    G-computation formula, with key estimands including the Mixed Average Potential 
+    Outcome (MAPO) and the Mixed Probability of Disease Resolution (MPDR). The 
+    package provides functions for model fitting, posterior inference, and causal estimand 
+    estimation.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: stats (>= 4.4.2), GIGrvg(>= 0.8), truncnorm(>= 1.0-9),
+        progress(>= 1.2.3), stochtree(>= 0.1.1), SoftBart(>= 1.0.3),
+        parallel(>= 4.4.2), pbmcapply(>= 1.5.1)
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-05-08 20:31:34 UTC; kevin_liu
+Author: Qingyang Liu [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3265-6330>),
+  Debdeep Pati [aut],
+  Yang Ni [aut],
+  Dipankar Bandyopadhyay [aut]
+Maintainer: Qingyang Liu <rh8liuqy@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-13 08:10:22 UTC

@@ -1,0 +1,42 @@
+Package: SelectBoost.FDA
+Title: SelectBoost-Style Variable Selection for Functional Data
+        Analysis
+Date: 2026-04-02
+Version: 0.5.0
+Authors@R: c(
+	person(given = "Frederic", family= "Bertrand", role = c("cre", "aut"), 
+	email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281")))
+Author: Frederic Bertrand [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-0837-8281>)
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
+Description: Implements 'SelectBoost'-style variable selection workflows for
+    functional data analysis. The package provides FDA-native design and
+    preprocessing objects for raw curves, spline-basis expansions, Functional 
+    principal component analysis scores, and scalar covariates; grouped 
+    stability-selection routines based on repeated subject-level subsampling; 
+    multiple selector backends including lasso, group lasso, and sparse-group 
+    lasso; FDA-aware grouping functions and calibration helpers for 'SelectBoost';
+    method-comparison utilities; a formula interface; simulation,
+    benchmarking, and validation helpers with mapped ground truth;
+    targeted sensitivity-study utilities and shipped benchmark summaries
+    for mean 'F1' comparisons between FDA-aware and plain 'SelectBoost'
+    workflows; small example datasets; and an optional adapter to the
+    native stability-selection interface from the 'FDboost' package.
+LazyData: true
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 2.10)
+Imports: SelectBoost, stats
+Suggests: FDboost, glmnet, grpreg, knitr, pkgdown, rmarkdown, SGL,
+        stabs, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+URL: https://fbertran.github.io/SelectBoost.FDA/,
+        https://github.com/fbertran/SelectBoost.FDA
+BugReports: https://github.com/fbertran/SelectBoost.FDA/issues
+NeedsCompilation: no
+Packaged: 2026-04-02 23:01:50 UTC; bertran7
+Repository: CRAN
+Date/Publication: 2026-04-10 13:30:09 UTC

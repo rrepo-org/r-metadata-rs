@@ -1,0 +1,54 @@
+Package: data.sketches
+Title: Probabilistic Streaming Data Sketches
+Version: 0.1.0
+Authors@R: c(
+    person("Pedro", "Baltazar", email = "pedrobtz@gmail.com",
+           role = c("aut", "cre", "cph")),
+    person("The Apache Software Foundation", role = "ctb",
+           comment = "Author of bundled Apache DataSketches C++ code"),
+    person("Stephan", "Brumme", role = "ctb",
+           comment = "Author of bundled xxhash64.h code"),
+    person("Austin", "Appleby", role = "ctb",
+           comment = "Author of bundled public-domain MurmurHash3 code"),
+    person(c("Sean", "Eron"), "Anderson", role = "ctb",
+           comment = "Author of bundled public-domain bit-hack code used in ceiling_power_of_2.hpp")
+  )
+Description: Provides an interface to the 'Apache DataSketches'
+    (<https://datasketches.apache.org/>) library of streaming algorithms for
+    approximate analytics on data too large to hold or process exactly.
+    Sketches are compact, mergeable summaries built in a single pass over a
+    stream that answer queries such as approximate distinct counts, quantiles
+    and ranks, frequent items and point-frequency estimates, weighted sampling,
+    and set membership with mathematically proven error bounds. Implements
+    Karnin-Lang-Liberty (KLL), Relative Error
+    Quantiles (REQ), t-Digest, HyperLogLog (HLL), Compressed Probabilistic
+    Counting (CPC), Theta, Frequent Items, Count-Min, Array of Doubles,
+    Variance Optimal (VarOpt), Exact and Bounded Probabilistic
+    Proportional-to-Size (EBPPS), and Bloom filter sketches, with native
+    serialization for interoperability with other 'Apache DataSketches'
+    implementations.
+License: MIT + file LICENSE
+Copyright: file inst/COPYRIGHTS
+URL: https://github.com/pedrobtz/data.sketches,
+        https://pedrobtz.github.io/data.sketches/
+BugReports: https://github.com/pedrobtz/data.sketches/issues
+Depends: R (>= 4.1.0)
+Imports: R6, rlang
+Suggests: testthat (>= 3.0.0)
+LinkingTo: cpp11
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2026-06-23 11:07:34 UTC; pbtz
+Author: Pedro Baltazar [aut, cre, cph],
+  The Apache Software Foundation [ctb] (Author of bundled Apache
+    DataSketches C++ code),
+  Stephan Brumme [ctb] (Author of bundled xxhash64.h code),
+  Austin Appleby [ctb] (Author of bundled public-domain MurmurHash3 code),
+  Sean Eron Anderson [ctb] (Author of bundled public-domain bit-hack code
+    used in ceiling_power_of_2.hpp)
+Maintainer: Pedro Baltazar <pedrobtz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-09 09:00:02 UTC

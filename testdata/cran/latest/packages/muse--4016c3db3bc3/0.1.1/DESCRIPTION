@@ -1,0 +1,46 @@
+Package: muse
+Type: Package
+Title: Multiple Unobserved Sources of Error State Space Models
+Version: 0.1.1
+Date: 2026-07-27
+Authors@R: c(person("Diego J.", "Pedregal", role = c("aut", "ctb"),
+                     email = "Diego.Pedregal@uclm.es",
+                     comment = c(ORCID = "0000-0003-4958-0969")),
+           person("Ivan", "Svetunkov", email = "ivan@svetunkov.com", role = c("aut", "cre"),
+                  comment = c("Senior Lecturer at Centre for Marketing Analytics and Forecasting, Lancaster University, UK",
+                              ORCID = "0000-0001-7826-0281")))
+URL: https://github.com/openforecast-org/muse
+BugReports: https://github.com/openforecast-org/muse/issues
+Language: en-GB
+Description: Implements the Power / Trend / Seasonal (PTS) model, a unified
+    state-space framework based on the Multiple Source of Error (MSOE) model. It brings
+    the trend, seasonal and irregular component models of Harvey (1989)
+    <doi:10.1017/CBO9781107049994>, Durbin and Koopman (2012)
+    <doi:10.1093/acprof:oso/9780199641178.001.0001>, Proietti (2000)
+    <doi:10.1016/S0169-2070(00)00037-6>, Sbrana and Silvestrini (2023)
+    <doi:10.1016/j.ijforecast.2022.03.003> and others together under a single
+    estimation, selection and forecasting interface, with an optional Box-Cox power
+    transformation. Models are estimated by maximum likelihood through the
+    Kalman filter and smoother, with automatic component selection by
+    information criteria.
+License: LGPL-2.1
+Depends: R (>= 3.0.2), greybox, smooth
+Imports: Rcpp (>= 0.12.3), generics (>= 0.1.2), zoo
+LinkingTo: Rcpp, RcppArmadillo (>= 0.8.100.0.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+ByteCompile: true
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-30 12:35:19 UTC; config
+Author: Diego J. Pedregal [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0003-4958-0969>),
+  Ivan Svetunkov [aut, cre] (Senior Lecturer at Centre for Marketing
+    Analytics and Forecasting, Lancaster University, UK, ORCID:
+    <https://orcid.org/0000-0001-7826-0281>)
+Maintainer: Ivan Svetunkov <ivan@svetunkov.com>
+Repository: CRAN
+Date/Publication: 2026-07-30 23:20:02 UTC

@@ -1,0 +1,27 @@
+Encoding: UTF-8
+Package: repo
+Type: Package
+Title: A Data-Centered Data Flow Manager
+Version: 2.1.7
+Date: 2026-08-04
+Authors@R: person(given = "Francesco",
+                  family = "Napolitano",
+                  role = c("aut", "cre"),
+                  email = "franapoli@gmail.com")
+Description: A data manager meant to avoid manual storage/retrieval of
+    data to/from the file system. It builds one (or more) centralized
+    repository where R objects are stored with rich annotations,
+    including corresponding code chunks, and easily searched and
+    retrieved. See Napolitano (2017) <doi:10.1186/s12859-017-1510-6> for further
+    information.
+License: GPL-3
+Imports: digest, tools
+Suggests: igraph, knitr, shiny, testthat, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-04 21:56:47 UTC; francesco
+Author: Francesco Napolitano [aut, cre]
+Maintainer: Francesco Napolitano <franapoli@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 23:00:21 UTC

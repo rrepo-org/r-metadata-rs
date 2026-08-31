@@ -1,0 +1,50 @@
+Package: chromConverter
+Title: Chromatographic File Converter
+Version: 0.9.0
+Authors@R: c(
+    person(given = "Ethan", family = "Bass", email = "ethanbass@gmail.com",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0002-6175-6739")),
+    person(given = "James", family = "Dillon", role = c("ctb", "cph"),
+    comment = c("Author and copyright holder of source code adapted from the
+    'Chromatography Toolbox' for parsing 'Agilent' FID files.")),
+    person(given = "Evan", family = "Shi", role = c("ctb", "cph"),
+    comment = c("Author and copyright holder of source code adapted from 'rainbow'
+    for parsing 'Agilent' UV files."))
+    )
+Maintainer: Ethan Bass <ethanbass@gmail.com>
+Description: Reads chromatograms from binary formats into R objects. Currently supports 
+    conversion of 'Agilent ChemStation', 'Agilent MassHunter', 'Agilent OpenLab', 
+    'Shimadzu LabSolutions', 'ThermoRaw', 'Varian Workstation', and 'Waters 
+    Empower'  files as well as various other formats.  In addition to its 
+    internal parsers, chromConverter contains bindings to parsers in
+    external libraries, such as 'Aston' <https://github.com/bovee/aston>, 
+    'Entab' <https://github.com/bovee/entab>, 'rainbow' <https://rainbow-api.readthedocs.io/>,
+    and 'ThermoRawFileParser' <https://github.com/compomics/ThermoRawFileParser>.
+License: GPL (>= 3)
+URL: https://ethanbass.github.io/chromConverter/,
+        https://github.com/ethanbass/chromConverter/
+BugReports: https://github.com/ethanbass/chromConverter/issues/
+Depends: R (>= 4.1.0)
+Imports: bitops, fs, purrr, readxl, reticulate (>= 1.41.0), stringr,
+        tidyr, utils, RaMS, tibble, xml2, bit64, data.table, base64enc,
+        jsonlite, digest
+Suggests: entab, ncdf4, pbapply, testthat (>= 3.0.0), mzR,
+        chromConverterExtraTests
+Encoding: UTF-8
+Language: en-US
+Additional_repositories: https://ethanbass.github.io/drat/,
+        https://ethanbass.r-universe.dev/
+Config/testthat/edition: 3
+Config/Needs/website: rmarkdown, ggplot2, dplyr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-30 20:52:17 UTC; ethanbass
+Author: Ethan Bass [aut, cre] (ORCID: <https://orcid.org/0000-0002-6175-6739>),
+  James Dillon [ctb, cph] (Author and copyright holder of source code
+    adapted from the 'Chromatography Toolbox' for parsing 'Agilent' FID
+    files.),
+  Evan Shi [ctb, cph] (Author and copyright holder of source code adapted
+    from 'rainbow' for parsing 'Agilent' UV files.)
+Repository: CRAN
+Date/Publication: 2026-05-31 15:00:31 UTC

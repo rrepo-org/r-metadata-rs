@@ -1,0 +1,22 @@
+Package: chapensk
+Type: Package
+Title: Estimation of Gas Properties from the Lennard-Jones Potential
+Version: 0.5
+Date: 2026-06-04
+Authors@R: c(person("Stefan", "Langenberg", role = c("aut", "cre"),
+        email = "langenberg@uni-bonn.de",
+        comment = c(ORCID = "0000-0001-5817-5469")))
+Depends: R (>= 2.12.0), methods, Bessel
+Description: Calculation of gas transport properties (viscosity, diffusion, thermal conductivity) using Chapman-Enskok theory (Chapman 1918, <doi:10.1098/rsta.1918.0005>) and of the second virial coefficient (Vargas et al. 2001, <doi:10.1016/s0378-4371(00)00362-9>) using the Lennard-Jones (12-6) potential. Up to the third order correction is taken into account for viscosity and thermal conductivity. It is also possible to calculate the binary diffusion coefficients of polar and non-polar gases in non-polar bath gases (Brown et al. 2011, <doi:10.1016/j.pecs.2010.12.001>). 16 collision integrals are calculated with four digit accuracy over the reduced temperature range [0.3, 400] using an interpolation function of Kim and Monroe (2014, <doi:10.1016/j.jcp.2014.05.018>).  
+License: GPL-3
+URL: https://doi.org/10.32614/CRAN.package.chapensk
+        https://github.com/langenbergstefan/chapensk
+BugReports: https://github.com/langenbergstefan/chapensk/issues
+NeedsCompilation: no
+LazyData: true
+Packaged: 2026-06-04 08:39:27 UTC; stefan
+Author: Stefan Langenberg [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5817-5469>)
+Maintainer: Stefan Langenberg <langenberg@uni-bonn.de>
+Repository: CRAN
+Date/Publication: 2026-06-04 09:30:02 UTC

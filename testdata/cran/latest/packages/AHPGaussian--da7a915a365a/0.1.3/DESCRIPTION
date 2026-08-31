@@ -1,0 +1,40 @@
+Package: AHPGaussian
+Type: Package
+Title: New Multicriteria Method: AHPGaussian
+Version: 0.1.3
+Date: 2025-09-15
+Authors@R: c(
+    person(given = "Cid Edson",
+           family = "Povoas",
+           role = c("aut", "cre"),
+           email = "cidedson@gmail.com",
+           comment = c(ORCID = "0000-0002-0774-1421")),
+    person(given = "Marcos",
+           family = "dos Santos",
+           role = "aut",
+           email = "marcosdossantos@ime.eb.br",
+           comment = c(ORCID = "0000-0003-1533-5535")))
+Maintainer: Cid Edson Povoas <cidedson@gmail.com>
+URL: https://cidedson.github.io/ahpgaussian/
+BugReports: https://github.com/cidedson/ahpgaussian/issues
+Depends: R (>= 4.0.0)
+Imports: dplyr, tidyr, ggplot2, magrittr
+Description: Implements the Analytic Hierarchy Process (AHP) method using Gaussian normalization (AHPGaussian) 
+    to derive the relative weights of the criteria and alternatives. It also includes functions for visualizing 
+    the results and generating graphical outputs. Method as described in: 
+    dos Santos, Marcos (2021) <doi:10.13033/ijahp.v13i1.833>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: spelling, testthat (>= 3.0.0)
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-15 17:02:43 UTC; rzo819
+Author: Cid Edson Povoas [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0774-1421>),
+  Marcos dos Santos [aut] (ORCID:
+    <https://orcid.org/0000-0003-1533-5535>)
+Repository: CRAN
+Date/Publication: 2025-09-15 17:20:02 UTC

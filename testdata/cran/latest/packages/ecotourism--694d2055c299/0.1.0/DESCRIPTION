@@ -1,0 +1,39 @@
+Package: ecotourism
+Type: Package
+Title: Collection of Data on Wildlife Sightings, Tourism Counts, and
+        Weather from Australia
+Version: 0.1.0
+Authors@R: 
+    c(
+    person("Dianne", "Cook", email="visnut@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-3813-7155")),
+    person("Lyn", "Cook", email="l.cook@uq.edu.au", role = c("aut"),
+           comment = c(ORCID = "0000-0002-3172-4920")),           
+    person("Javad", "Vahdat Atashgah", email="vahdatjavad@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-5845-2584"))           
+    )
+Description: This is a collection of data files for 
+  exploring sightings of wild things, relative to weather 
+  and tourism patterns in Australia.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Suggests: dplyr, ggplot2, ggthemes, ggbeeswarm, sf, knitr, lubridate,
+        quarto, testthat (>= 3.0.0), tidyr
+VignetteBuilder: quarto
+SystemRequirements: Quarto
+Depends: R (>= 3.5)
+URL: https://github.com/vahdatjavad/ecotourism
+BugReports: https://github.com/vahdatjavad/ecotourism/issues
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-11 06:01:31 UTC; jvah0003
+Author: Dianne Cook [aut] (ORCID: <https://orcid.org/0000-0002-3813-7155>),
+  Lyn Cook [aut] (ORCID: <https://orcid.org/0000-0002-3172-4920>),
+  Javad Vahdat Atashgah [aut, cre] (ORCID:
+    <https://orcid.org/0009-0004-5845-2584>)
+Maintainer: Javad Vahdat Atashgah <vahdatjavad@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-16 06:00:11 UTC

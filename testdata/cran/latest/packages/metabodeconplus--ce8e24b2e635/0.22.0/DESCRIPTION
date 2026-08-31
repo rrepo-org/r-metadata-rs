@@ -1,0 +1,71 @@
+Package: metabodeconplus
+Title: Deconvolution, Alignment and Model Fitting of 1d NMR Spectra
+Version: 0.22.0
+Authors@R: c(
+    person(given = "Tobias",
+           family = "Schmidt",
+           role = c("aut", "cre", "cph"),
+           email = "tobias.schmidt331@gmail.com"),
+    person(given = "Martina",
+           family = "Haeckl",
+           role = c("aut", "cph"),
+           email = "martina.haeckl@stud.uni-regensburg.de"),
+    person(given = "Yanren Linda",
+           family = "Hu",
+           role = c("ctb"),
+           email = "yanren-linda.hu@klinik.uni-regensburg.de"),
+    person(given = "Wolfram",
+           family = "Gronwald",
+           role = c("aut", "cph"),
+           email = "wolfram.gronwald@klinik.uni-regensburg.de")
+    )
+Author: Tobias Schmidt [aut, cre, cph],
+  Martina Haeckl [aut, cph],
+  Yanren Linda Hu [ctb],
+  Wolfram Gronwald [aut, cph]
+Maintainer: Tobias Schmidt <tobias.schmidt331@gmail.com>
+Description: An integrated framework for deconvolution, alignment and
+    postprocessing of 1-dimensional (1d) nuclear magnetic resonance (NMR)
+    spectra, extended with end-to-end model fitting that turns the resulting
+    matrix of aligned signal integrals into classification models. The
+    deconvolution part uses the algorithm described in Koh et al. (2009)
+    <doi:10.1016/j.jmr.2009.09.003>. The alignment part is based on functions
+    from the 'speaq' package, described in Beirnaert et al. (2018)
+    <doi:10.1371/journal.pcbi.1006018> and Vu et al. (2011)
+    <doi:10.1186/1471-2105-12-405>. A detailed description and evaluation of an
+    early version of the package can be found in Haeckl
+    et al. (2021) <doi:10.3390/metabo11070452>. 'metabodeconplus' is the
+    actively developed successor to the 'metabodecon' package and introduces
+    backwards-incompatible API changes.
+License: GPL (>= 3)
+URL: https://github.com/spang-lab/metabodeconplus/,
+        https://spang-lab.github.io/metabodeconplus/
+BugReports: https://github.com/spang-lab/metabodeconplus/issues
+biocViews: NMR, Deconvolution
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: mathjaxr, ranger, readJDX, toscutil (>= 2.8.0), withr
+Suggests: BiocManager, cachem, covr, devtools, diffobj, digest,
+        doParallel, e1071, glmnet, glue, impute, inline, knitr,
+        lifecycle, MassSpecWavelet, mdrb, microbenchmark, multtest,
+        pkgbuild, pkgload, pROC, R.devices, rcmdcheck, remotes, rlang,
+        rmarkdown, rpart, speaq, styler, testthat (>= 3.0.0), usethis,
+        V8, vdiffr, waldo
+LazyData: true
+LazyDataCompression: xz
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: read_spectrum, download_example_datasets,
+        cache_example_datasets, align, mcmapply, datadir,
+        get_decon_params, generate_lorentz_curves, smooth_signals2,
+        speaq_align
+RdMacros: mathjaxr
+BuildManual: TRUE
+Language: en-US
+Additional_repositories: https://spang-lab.r-universe.dev
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-08-04 18:43:02 UTC; tschmidt
+Repository: CRAN
+Date/Publication: 2026-08-09 07:30:08 UTC

@@ -1,0 +1,38 @@
+Package: cellVolumeDist
+Type: Package
+Title: Functions to Fit Cell Volume Distributions and Thereby Estimate
+        Cell Growth Rates and Division Times
+Version: 1.5
+Authors@R: c(person(given = c("Katharine", "M."),
+                      family = "Mullen",
+                      role = c("aut", "cre"),
+                      email = "katharine.mullen@stat.ucla.edu"),
+               person(given = "Michael",
+                      family = "Halter",
+                      role = "aut"),
+               person(given = "John",
+                      family = "Lu",
+                      role = "aut"),
+               person(given = "Nathan",
+                      family = "Dodder",
+                      role = "aut"))
+Maintainer: Katharine M. Mullen <katharine.mullen@stat.ucla.edu>
+Depends: minpack.lm (>= 1.1-1), gplots
+Description: Implements a methodology for using cell volume
+        distributions to estimate cell growth rates and division times
+        that is described in the paper, "Cell Volume Distributions
+        Reveal Cell Growth Rates and Division Times", by Michael
+        Halter, John T. Elliott, Joseph B. Hubbard, Alessandro Tona
+        and Anne L. Plant, which appeared in the Journal of Theoretical
+        Biology. In order to reproduce the analysis used to obtain
+        Table 1 in the paper, execute the command
+        "example(fitVolDist)".
+License: GPL (>= 2)
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2026-01-21 06:59:26 UTC; kmm
+Author: Katharine M. Mullen [aut, cre],
+  Michael Halter [aut],
+  John Lu [aut],
+  Nathan Dodder [aut]
+Date/Publication: 2026-01-21 07:20:02 UTC

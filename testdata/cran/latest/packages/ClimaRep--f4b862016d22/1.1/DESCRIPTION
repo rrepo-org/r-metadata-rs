@@ -1,0 +1,34 @@
+Package: ClimaRep
+Title: Estimating Climate Analogue Areas
+Version: 1.1
+Authors@R: c(
+    person(given = "Mario", 
+            family = "Mingarro", 
+            comment = c(ORCID = "0000-0003-3977-7944"),
+            email = "mario_mingarro@mncn.csic.es", 
+            role = c("aut", "cre")),
+    person(given = "Gabriel", 
+            family = "del Barrio", 
+            comment = c(ORCID = "0000-0001-6146-9433"),
+            role = "aut"),
+    person(given = "Jorge M.", 
+            family = "Lobo", 
+            comment = c(ORCID = "0000-0002-3152-4769"),
+            role = "aut"))
+Description: Offers tools to identify the climate analogues of reference polygons and quantifies their transformation under future climate change scenarios. Approaches described in Mingarro and Lobo (2018) <doi:10.32800/abc.2018.41.0333> and Mingarro and Lobo (2022) <doi:10.1017/S037689292100014X>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Imports: ggplot2, terra, utils, stats, sf, tidyterra
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-22 11:32:38 UTC; mario
+Author: Mario Mingarro [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3977-7944>),
+  Gabriel del Barrio [aut] (ORCID:
+    <https://orcid.org/0000-0001-6146-9433>),
+  Jorge M. Lobo [aut] (ORCID: <https://orcid.org/0000-0002-3152-4769>)
+Maintainer: Mario Mingarro <mario_mingarro@mncn.csic.es>
+Repository: CRAN
+Date/Publication: 2026-06-22 18:40:02 UTC

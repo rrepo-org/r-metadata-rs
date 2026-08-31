@@ -1,0 +1,48 @@
+Package: mfrmr
+Type: Package
+Title: Estimation and Diagnostics for Many-Facet Measurement Models
+Version: 0.2.3.1
+Date: 2026-08-25
+Config/mfrmr/release-status: candidate
+Config/mfrmr/public-version: 0.2.3
+Authors@R: 
+    person(given = "Ryuya", family = "Komuro", role = c("aut", "cre", "cph"),
+           email = "ryuya.komuro.c4@tohoku.ac.jp",
+           comment = c(ORCID = "0000-0001-9205-0926"))
+Description: Native R implementation of many-facet ordered-response
+    measurement models with arbitrary facet counts, rating-scale and
+    partial-credit parameterizations, a bounded generalized partial-credit
+    extension, and both marginal and joint maximum likelihood estimation.
+    The package provides a fit / diagnose / report pipeline covering
+    anchoring, linking, bias and differential-functioning screening, and
+    publication-oriented reporting summaries, with reproducibility manifests
+    for replay. See 'Andrich'
+    (1978) <doi:10.1007/BF02293814>, 'Masters' (1982)
+    <doi:10.1007/BF02296272>, and 'Muraki' (1992)
+    <doi:10.1177/014662169201600206> for the underlying ordered-response
+    models.
+URL: https://ryuya-dot-com.github.io/mfrmr/,
+        https://github.com/Ryuya-dot-com/mfrmr
+BugReports: https://github.com/Ryuya-dot-com/mfrmr/issues
+License: MIT + file LICENSE
+Language: en
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1)
+Imports: cli, dplyr, Matrix, grDevices, graphics, tidyr, tibble, purrr,
+        stringr, psych, lifecycle, rlang, methods, stats, utils
+LinkingTo: cpp11
+Suggests: testthat (>= 3.0.0), covr, knitr, rmarkdown, igraph, lme4,
+        kableExtra, flextable, future.apply, shiny, ggplot2 (>= 3.4.0),
+        mirt, TAM, eRm, lpSolve
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: yes
+Packaged: 2026-08-25 02:07:18 UTC; tohokusla
+Author: Ryuya Komuro [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-9205-0926>)
+Maintainer: Ryuya Komuro <ryuya.komuro.c4@tohoku.ac.jp>
+Repository: CRAN
+Date/Publication: 2026-08-25 12:40:02 UTC

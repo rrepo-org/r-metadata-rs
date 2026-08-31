@@ -1,0 +1,25 @@
+Package: metaplus
+Type: Package
+Title: Robust Meta-Analysis and Meta-Regression
+Version: 1.0-8
+Date: 2026-02-12
+Authors@R: c(person("Ken","Beath",email="ken@kjbeath.id.au", role=c("aut","cre")),
+  person("Ben","Bolker",email="bolker@mcmaster.ca",role="ctb"),
+  person("R Development Core Team",role="ctb"))
+Maintainer: Ken Beath <ken@kjbeath.id.au>
+Contact: Ken Beath <ken@kjbeath.id.au>
+Author: Ken Beath [aut, cre],
+  Ben Bolker [ctb],
+  R Development Core Team [ctb]
+Description: Performs meta-analysis and meta-regression using standard and robust methods with confidence intervals based on the profile likelihood. Robust methods are based on alternative distributions for the random effect, either the t-distribution (Lee and Thompson, 2008 <doi:10.1002/sim.2897> or Baker and Jackson, 2008 <doi:10.1007/s10729-007-9041-8>) or mixtures of normals (Beath, 2014 <doi:10.1002/jrsm.1114>).
+Depends: R(>= 3.2.0)
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Imports: bbmle, metafor, boot, methods, numDeriv, MASS, graphics,
+        stats, fastGHQuad, lme4, Rfast, parallel
+LazyData: yes
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2026-02-14 21:30:48 UTC; kenbeath
+Repository: CRAN
+Date/Publication: 2026-02-14 21:50:02 UTC

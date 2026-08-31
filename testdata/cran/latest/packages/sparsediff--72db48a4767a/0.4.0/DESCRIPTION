@@ -1,0 +1,40 @@
+Package: sparsediff
+Type: Package
+Title: R Interface to the 'SparseDiffEngine' Sparse Differentiation
+        Backend
+Version: 0.4.0
+Authors@R: c(
+    person("Balasubramanian", "Narasimhan", role = c("aut", "cre"),
+           email = "naras@stanford.edu"),
+    person("Daniel", "Cederberg", role = c("aut", "cph"),
+           comment = "Author of the bundled SparseDiffEngine C library"),
+    person("William Zijie", "Zhang", role = c("aut", "cph"),
+           comment = "Author of the bundled SparseDiffEngine C library"))
+Description: Bindings for the 'SparseDiffEngine' C library, the sparse
+    Jacobian and Hessian differentiation backend used by 'CVXPY' for its
+    Disciplined Nonlinear Programming (DNLP) extension. Provides low-level
+    routines for building nonlinear expression graphs and evaluating sparse
+    derivatives, intended as a backend for higher-level modeling layers such
+    as 'CVXR'. This is the R analog of the 'sparsediffpy' Python
+    package and wraps the same C library.
+License: Apache License (== 2.0)
+Copyright: file inst/COPYRIGHTS
+URL: https://bnaras.github.io/sparsediff/,
+        https://github.com/bnaras/sparsediff
+BugReports: https://github.com/bnaras/sparsediff/issues
+Encoding: UTF-8
+SystemRequirements: GNU make
+LinkingTo: cpp11
+Suggests: cpp11, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+Packaged: 2026-06-03 04:46:07 UTC; naras
+Author: Balasubramanian Narasimhan [aut, cre],
+  Daniel Cederberg [aut, cph] (Author of the bundled SparseDiffEngine C
+    library),
+  William Zijie Zhang [aut, cph] (Author of the bundled SparseDiffEngine
+    C library)
+Maintainer: Balasubramanian Narasimhan <naras@stanford.edu>
+Repository: CRAN
+Date/Publication: 2026-06-08 19:30:08 UTC

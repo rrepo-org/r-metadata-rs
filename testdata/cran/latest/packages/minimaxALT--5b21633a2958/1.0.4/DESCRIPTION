@@ -1,0 +1,36 @@
+Package: minimaxALT
+Type: Package
+Title: Generate Optimal Designs of Accelerated Life Test using
+        PSO-Based Algorithm
+Version: 1.0.4
+Encoding: UTF-8
+License: GPL (>= 3)
+Authors@R: c(
+  person("Hoai-Linh", "Hoang", email = "hoailinh.hoang17@gmail.com", role = c("aut", "cre")),
+  person("I-Chen", "Lee", role = "aut"),
+  person("Ping-Yang", "Chen", role = "aut"),
+  person("Ray-Bing", "Chen", role = "aut"),
+  person("Weng Kee", "Wong", role = "aut"))
+Description: A computationally efficient solution for generating optimal experimental designs in Accelerated Life Testing (ALT). Leveraging a Particle Swarm Optimization (PSO)-based hybrid algorithm, the package identifies optimal test plans that minimize estimation variance under specified failure models and stress profiles. For more detailed, see Lee et al. (2025), Optimal Robust Strategies for Accelerated Life Tests and Fatigue Testing of Polymer Composite Materials <doi:10.1214/25-AOAS2075>.
+SystemRequirements: GNU Scientific Library (GSL), OpenMP
+Imports: Rcpp (>= 1.0.11), ggplot2 (>= 3.0.0), parallel (>= 4.0.0),
+        stats, graphics
+Depends: R (>= 4.0.0)
+LinkingTo: Rcpp (>= 1.0.11), RcppArmadillo (>= 14.0.0.1), RcppGSL (>=
+        0.3.13)
+RoxygenNote: 7.3.2
+URL: https://github.com/hoanglinh171/minimaxALT
+BugReports: https://github.com/hoanglinh171/minimaxALT/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-08-31 14:59:24 UTC; lu
+Author: Hoai-Linh Hoang [aut, cre],
+  I-Chen Lee [aut],
+  Ping-Yang Chen [aut],
+  Ray-Bing Chen [aut],
+  Weng Kee Wong [aut]
+Maintainer: Hoai-Linh Hoang <hoailinh.hoang17@gmail.com>
+VignetteBuilder: knitr
+Repository: CRAN
+Date/Publication: 2026-08-31 19:50:07 UTC

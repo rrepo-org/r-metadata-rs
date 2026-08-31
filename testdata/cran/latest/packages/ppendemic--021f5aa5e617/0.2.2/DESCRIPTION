@@ -1,0 +1,36 @@
+Package: ppendemic
+Title: A Glimpse at the Diversity of Peru's Endemic Plants
+Version: 0.2.2
+Authors@R: 
+      c(person(given = "Paul E.",
+                 family = "Santos Andrade",
+                 role = c("aut", "cre"),
+                 email = "paulefrens@gmail.com",
+                 comment = c(ORCID = "0000-0002-6635-0375")),
+          person(given = "Lucely L.",
+                 family = "Vilca Bustamante",
+                 role = "aut",
+                 email = "vilca.lu01@gmail.com",
+                 comment = c(ORCID = "0000-0002-5559-1296"))) 
+Description: Provides an updated database of accepted endemic plant taxa from Peru. The current collection contains over 8,000 taxonomic records at species and infraspecific ranks. Data are derived from Govaerts, R., Nic Lughadha, E., Black, N. et al., 'The World Checklist of Vascular Plants: A continuously updated resource for exploring global plant diversity', published in Sci Data 8, 215 (2021) <doi:10.1038/s41597-021-00997-6>.
+License: MIT + file LICENSE
+URL: https://github.com/PaulESantos/ppendemic/
+BugReports: https://github.com/PaulESantos/ppendemic/issues/
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0),
+Config/testthat/edition: 3
+Maintainer: Paul E. Santos Andrade <paulefrens@gmail.com>
+Imports: assertthat, cli, dplyr, fuzzyjoin, memoise, progress, purrr,
+        readr, stringr, tibble, tidyr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-15 03:18:08 UTC; PC
+Author: Paul E. Santos Andrade [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6635-0375>),
+  Lucely L. Vilca Bustamante [aut] (ORCID:
+    <https://orcid.org/0000-0002-5559-1296>)
+Repository: CRAN
+Date/Publication: 2026-06-15 07:50:02 UTC

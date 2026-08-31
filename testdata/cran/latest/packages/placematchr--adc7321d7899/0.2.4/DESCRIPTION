@@ -1,0 +1,19 @@
+Package: placematchr
+Title: Normalize and Match City Names to NUTS Regions
+Version: 0.2.4
+Date: 2026-03-06
+Authors@R: person("Giulian", "Etingin-Frati", email = "etingin-frati@kof.ethz.ch", role = c("aut", "cre"))
+Description: Normalizes city names for EEA countries and matches them to NUTS 3 regions using provided crosswalks. Features include comprehensive normalization rules, cascading matching logic (Exact NUTS -> Exact LAU -> Fuzzy), and single-source data synthesis. The package implements the NUTS classification as described in the NUTS methodology (Eurostat (2021) <https://ec.europa.eu/eurostat/web/nuts>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, stringr, stringdist, data.table, tidyr, rlang
+Suggests: testthat, readxl
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-06 10:03:20 UTC; getingin
+Author: Giulian Etingin-Frati [aut, cre]
+Maintainer: Giulian Etingin-Frati <etingin-frati@kof.ethz.ch>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-03-06 10:30:02 UTC

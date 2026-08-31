@@ -1,0 +1,22 @@
+Package: sparselink
+Version: 1.0.0
+Title: Sparse Regression for Related Problems
+Description: Estimates sparse regression models (i.e., with few non-zero coefficients) in high-dimensional multi-task learning and transfer learning settings, as proposed by Rauschenberger et al. (2025) <https://orbilu.uni.lu/handle/10993/63425>.
+Depends: R (>= 3.0.0)
+Imports: glmnet, pROC, stats, mvtnorm, spls, xrnet
+Suggests: knitr, testthat, remotes, glmtrans, rmarkdown
+Authors@R: person(given="Armin",family="Rauschenberger",email="armin.rauschenberger@lih.lu",role=c("aut","cre"),comment=c(ORCID="0000-0001-6498-4801"))
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+URL: https://github.com/rauschenberger/sparselink,
+        https://rauschenberger.github.io/sparselink/
+BugReports: https://github.com/rauschenberger/sparselink/issues
+License: MIT + file LICENSE
+NeedsCompilation: no
+Packaged: 2025-05-30 08:47:19 UTC; arauschenberger
+Author: Armin Rauschenberger [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6498-4801>)
+Maintainer: Armin Rauschenberger <armin.rauschenberger@lih.lu>
+Repository: CRAN
+Date/Publication: 2025-06-03 09:30:05 UTC

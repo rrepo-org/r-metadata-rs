@@ -1,0 +1,40 @@
+Package: mixqr
+Type: Package
+Title: Extensible Finite Mixtures of Quantile and Expectile Regressions
+Version: 0.2.0
+Authors@R: person("Kailas", "Venkitasubramanian", email = "kailasv@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: An extensible expectation-maximization (EM) framework for finite
+    mixtures of quantile regressions (clusterwise / mixture-of-experts quantile
+    regression). A single EM substrate with an engine/extension contract carries
+    a family of capabilities: the core free-weight mixture of Wu and Yao (2016)
+    <doi:10.1016/j.csda.2014.04.014> -- a fast asymmetric-Laplace path and the
+    nonparametric kernel-density EM with components constrained to have their
+    tau-quantile equal to zero (Hall and Presnell 1999 device); expectile and
+    M-quantile component-loss families (Newey and Powell 1987; Breckling and
+    Chambers 1988); component-specific penalized variable selection (SCAD /
+    adaptive-LASSO, the quantile analogue of Khalili and Chen 2007); and joint
+    multi-quantile estimation with a shared latent classification and
+    non-crossing component curves. Provides classification-aware standard errors
+    (sparsity and stochastic-EM multiple imputation), multi-start estimation,
+    component-count selection, and prediction. The companion package 'mixqrgate'
+    adds location-varying gating.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1)
+Imports: quantreg, stats, graphics, utils
+Suggests: ggplot2, rqPen, testthat (>= 3.0.0), knitr, rmarkdown
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+VignetteBuilder: knitr
+URL: https://github.com/kvenkita/mixqr,
+        https://kvenkita.github.io/mixqr/
+BugReports: https://github.com/kvenkita/mixqr/issues
+NeedsCompilation: no
+Packaged: 2026-06-22 11:18:57 UTC; kyle
+Author: Kailas Venkitasubramanian [aut, cre, cph]
+Maintainer: Kailas Venkitasubramanian <kailasv@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-25 16:10:02 UTC

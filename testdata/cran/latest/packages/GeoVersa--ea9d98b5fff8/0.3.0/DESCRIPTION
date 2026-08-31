@@ -1,0 +1,25 @@
+Package: GeoVersa
+Title: Design-Based Residual-Correction Forests for Digital Soil
+        Mapping
+Version: 0.3.0
+Authors@R: person("Hugo", "Rodrigues", role = c("aut", "cre"),
+                  email = "rodrigues.machado.hugo@gmail.com")
+Description: Implements DB-TARF (Design-Based Targeted Adaptive Residual
+    Forest) for large-scale digital soil and ecological mapping evaluated
+    under the design-based paradigm of Wadoux et al. (2021)
+    <doi:10.1016/j.ecolmodel.2021.109692>. A random forest is augmented by a
+    cross-fitted, out-of-fold-selected residual correction (residual forests,
+    ordinary kriging, recalibration), together with design-based conformal
+    prediction intervals.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: ranger, caret, stats, withr
+Suggests: Cubist, gstat, sp, nnet, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-30 03:56:03 UTC; rodrigues.h
+Author: Hugo Rodrigues [aut, cre]
+Maintainer: Hugo Rodrigues <rodrigues.machado.hugo@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-06 12:30:14 UTC

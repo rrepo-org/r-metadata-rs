@@ -1,0 +1,21 @@
+Package: corrRF
+Type: Package
+Title: Clustered Random Forests for Optimal Prediction and Inference of
+        Clustered Data
+Version: 1.1.0
+Authors@R: person(given = c("Elliot", "H."), family = "Young", role = c("aut", "cre"), email = "ey244@cam.ac.uk")
+Maintainer: Elliot H. Young <ey244@cam.ac.uk>
+Description: A clustered random forest algorithm for fitting random forests for data of independent clusters, that exhibit within cluster dependence. 
+    Details of the method can be found in Young and Buehlmann (2025) <doi:10.48550/arXiv.2503.12634>. 
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LinkingTo: Rcpp
+Imports: Rcpp, rpart
+Depends: R (>= 4.2.0)
+Suggests: knitr, rmarkdown, testthat
+NeedsCompilation: yes
+Packaged: 2025-03-18 17:40:09 UTC; elliotyoung
+Author: Elliot H. Young [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-03-20 09:20:06 UTC

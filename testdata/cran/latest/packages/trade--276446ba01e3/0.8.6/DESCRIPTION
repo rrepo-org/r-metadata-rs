@@ -1,0 +1,33 @@
+Package: trade
+Type: Package
+Title: Tools for Trade Practitioners
+Version: 0.8.6
+Date: 2026-08-25
+Authors@R: c(person("Charles", "Taragin", email = "ctaragin+trader@gmail.com",
+                  role = c("aut", "cre"))
+                  )
+Author: Charles Taragin [aut, cre]
+Maintainer: Charles Taragin <ctaragin+trader@gmail.com>
+URL: https://github.com/luciu5/trade
+Imports: antitrust (>= 0.99.32), methods, stats
+Suggests: MASS, BB, competitiontoolbox, rmarkdown, bookdown, knitr,
+        testthat
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Description: A collection of tools for trade practitioners, including the ability to calibrate different consumer demand systems and simulate the effects of tariffs and quotas under different competitive regimes. These tools are derived from Anderson et al. (2001) <doi:10.1016/S0047-2727(00)00085-2> and Froeb et al. (2003) <doi:10.1016/S0304-4076(02)00166-5>.
+License: CC0
+Encoding: UTF-8
+LazyLoad: yes
+Collate: 'TariffClasses.R' 'ps-methods.R' 'HypoMonMethods.R'
+        'QuotaClasses.R' 'summary-methods.R' 'bargaining_tariff.R'
+        'SimFunctions.R' 'TariffCournot-methods.R'
+        'TariffMonComRUM-methods.R' 'auction2nd_tariff.R'
+        'bertrand_quota.R' 'bertrand_tariff.R' 'cournot_tariff.R'
+        'initialize-methods.R' 'logit_cournot_tariff.R'
+        'monopolistic_competition_tariff.R' 'reexports.R'
+        'trade-deprecated.R' 'trade-utils.R' 'trade_shiny.R'
+NeedsCompilation: no
+Packaged: 2026-08-26 04:19:40 UTC; ctaragin
+Repository: CRAN
+Date/Publication: 2026-08-26 12:20:02 UTC
+Config/roxygen2/version: 8.0.0

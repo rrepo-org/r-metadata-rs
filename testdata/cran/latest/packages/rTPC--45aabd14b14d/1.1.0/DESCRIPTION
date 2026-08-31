@@ -1,0 +1,40 @@
+Type: Package
+Package: rTPC
+Title: Fitting and Analysing Thermal Performance Curves
+Version: 1.1.0
+Authors@R: 
+    c(person(given = "Daniel",
+             family = "Padfield",
+             role = c("aut", "cre"),
+             email = "d.padfield@exeter.ac.uk"),
+      person(given = "Hannah",
+             family = "O'Sullivan",
+             role = "aut",
+             email = "hjosullivan123@gmail.com"),
+      person(given = "Francis",
+             family = "Windram",
+             role = "aut",
+             email = "francis.windram17@imperial.ac.uk"))
+Maintainer: Daniel Padfield <d.padfield@exeter.ac.uk>
+Description: Helps to fit thermal performance curves (TPCs). 'rTPC' contains 49 model formulations previously used to fit TPCs and has helper functions to set sensible start parameters, upper and lower parameter limits and estimate parameters useful in downstream analyses, such as cardinal temperatures, maximum rate and optimum temperature. See Padfield et al. (2021) <doi:10.1111/2041-210X.13585>.
+License: GPL (>= 3)
+URL: https://github.com/padpadpadpad/rTPC,
+        https://padpadpadpad.github.io/rTPC/
+BugReports: https://github.com/padpadpadpad/rTPC/issues
+Depends: R (>= 4.1)
+Imports: cli, glue, rlang, stats
+Suggests: boot, broom, car, carrier, dplyr, forcats, ggplot2, ggrepel,
+        knitr, lubridate, minpack.lm, mirai, MuMIn, nls.multstart,
+        nlstools, patchwork, progress, purrr, RColorBrewer, rmarkdown,
+        stringr, testthat, tibble, tidyr, tidyverse
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-10 10:06:41 UTC; dp415
+Author: Daniel Padfield [aut, cre],
+  Hannah O'Sullivan [aut],
+  Francis Windram [aut]
+Repository: CRAN
+Date/Publication: 2026-04-10 11:00:13 UTC

@@ -1,0 +1,42 @@
+Package: blockwise
+Type: Package
+Title: Reduced Modeling for Tabular Data with Blockwise Missingness
+Version: 0.1.2
+Authors@R: c(
+    person("Karthik", "Srinivasan", email = "karthiks@ku.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1608-6190")),
+    person("Faiz",  "Currim", role = "aut"),
+    person("Sudha", "Ram",    role = "aut"))
+Description: Supervised learning on tabular data with blockwise missing
+    patterns, using the Blockwise Reduced Modeling (BRM) method of
+    Srinivasan, Currim, and Ram (2025) <doi:10.1287/ijds.2022.9016>.
+    BRM partitions the training data into overlapping subsets based on
+    per-row feature-missing patterns, fits one user-supplied learner per
+    subset with minimal imputation, and at prediction time routes each
+    test instance to the best-matching subset model. The interface is
+    learner-agnostic: any fit-and-predict pair can be plugged in, and
+    convenience specifications are provided for linear models, tree
+    models, random forests, and gradient boosting.
+License: GPL-3
+Language: en-US
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.6.0)
+Imports: stats, VIM, withr
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, rpart, ranger, gbm,
+        ggplot2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/KarAnalytics/blockwise
+BugReports: https://github.com/KarAnalytics/blockwise/issues
+NeedsCompilation: no
+Packaged: 2026-06-18 16:03:18 UTC; k639s258
+Author: Karthik Srinivasan [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1608-6190>),
+  Faiz Currim [aut],
+  Sudha Ram [aut]
+Maintainer: Karthik Srinivasan <karthiks@ku.edu>
+Repository: CRAN
+Date/Publication: 2026-06-24 08:00:27 UTC

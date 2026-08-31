@@ -1,0 +1,35 @@
+Package: treasury
+Title: Client for US Treasury XML Feed and Published Data
+Version: 0.7.0
+Authors@R: 
+    person("Maximilian", "Mücke", , "muecke.maximilian@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-9432-9795"))
+Description: Download daily interest rates from the US Treasury XML feed.
+    Leveraging
+    <https://home.treasury.gov/treasury-daily-interest-rate-xml-feed>,
+    this package serves as a wrapper, facilitating the retrieval of daily
+    treasury rates across various categories, including par yield curves,
+    treasury bills, long-term rates, and real yield curves.  In addition,
+    it provides access to the monthly published yield curve datasets,
+    including the High Quality Market (HQM) corporate bond yield curve and
+    the Treasury nominal and real coupon-issue (TNC, TRC) and breakeven
+    inflation (TBI) curves.
+License: MIT + file LICENSE
+URL: https://m-muecke.github.io/treasury/,
+        https://github.com/m-muecke/treasury
+BugReports: https://github.com/m-muecke/treasury/issues
+Depends: R (>= 4.1.0)
+Imports: curl, data.table (>= 1.16.0), httr2 (>= 1.0.0), xml2
+Suggests: ggplot2, knitr, readxl, scales, testthat (>= 3.0.0)
+Config/Needs/website: knitr, rmarkdown
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-08-22 12:49:14 UTC; mmuecke
+Author: Maximilian Mücke [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-9432-9795>)
+Maintainer: Maximilian Mücke <muecke.maximilian@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-22 15:10:02 UTC

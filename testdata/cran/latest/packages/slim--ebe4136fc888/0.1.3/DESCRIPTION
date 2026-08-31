@@ -1,0 +1,26 @@
+Package: slim
+Title: Singular Linear Models for Longitudinal Data
+Version: 0.1.3
+Authors@R: person("Daniel", "Farewell",
+    email = "farewelld@cardiff.ac.uk", role = c("aut", "cre"))
+Description: Fits singular linear models to longitudinal data. Singular linear
+    models are useful when the number, or timing, of longitudinal observations
+    may be informative about the observations themselves. They are described
+    in Farewell (2010) <doi:10.1093/biomet/asp068>, and are extensions of the
+    linear increments model <doi:10.1111/j.1467-9876.2007.00590.x> to general
+    longitudinal data.   
+Depends: R (>= 3.2.0)
+Imports: data.table (>= 1.9.6), stats, MASS (>= 7.3)
+Suggests: lme4 (>= 1.1), jmcm (>= 0.1.6.0), gee (>= 4.13-19), ggplot2
+        (>= 2.1.0), testthat (>= 1.0.2), knitr, rmarkdown
+License: GPL-3
+LazyData: true
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-08-24 12:48:59 UTC; daniel
+Author: Daniel Farewell [aut, cre]
+Maintainer: Daniel Farewell <farewelld@cardiff.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-08-24 13:50:02 UTC

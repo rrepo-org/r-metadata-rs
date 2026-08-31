@@ -1,0 +1,39 @@
+Package: devianLM
+Type: Package
+Title: Detecting Extremal Values in a Normal Linear Model
+Version: 1.1.0
+Date: 2026-04-21
+Authors@R: c(
+    person("Guillaume", "Sauliere", 
+           role = "aut", 
+           email = "guillaumesauliere@hotmail.com",
+           comment = c(ORCID = "0000-0001-8263-6456")),
+    person("Geoffroy", "Berthelot", 
+           role = c("aut", "cre"), 
+           email = "geoffroy.berthelot@insep.fr",
+           comment = c(ORCID = "0000-0003-4036-6114")),
+    person("Jérôme", "Dedecker", 
+           role = "aut", 
+           email = "jerome.dedecker@u-paris.fr",
+           comment = c(ORCID = "0000-0002-8838-0356")))
+Description: Provides a method to detect values poorly explained by a Gaussian linear model. The procedure is based on the maximum of the absolute value of the studentized residuals, which is a parameter-free statistic. This approach generalizes several procedures used to detect abnormal values during longitudinal monitoring of biological markers. For methodological details, see: Berthelot G., Saulière G., Dedecker J. (2025). "DEViaN-LM An R Package for Detecting Abnormal Values in the Gaussian Linear Model". HAL Id: hal-05230549. <https://hal.science/hal-05230549>. 
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Depends: R (>= 2.10)
+LazyData: true
+SystemRequirements: OpenMP (optional, for parallel execution)
+NeedsCompilation: yes
+Packaged: 2026-04-30 08:50:39 UTC; root
+Repository: CRAN
+Date/Publication: 2026-04-30 09:40:02 UTC
+Author: Guillaume Sauliere [aut] (ORCID:
+    <https://orcid.org/0000-0001-8263-6456>),
+  Geoffroy Berthelot [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4036-6114>),
+  Jérôme Dedecker [aut] (ORCID: <https://orcid.org/0000-0002-8838-0356>)
+Maintainer: Geoffroy Berthelot <geoffroy.berthelot@insep.fr>

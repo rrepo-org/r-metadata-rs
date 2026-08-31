@@ -1,0 +1,27 @@
+Package: mantar
+Title: Missingness Alleviation for Network Analysis
+Version: 0.3.1
+Authors@R: 
+    person("Kai Jannik", "Nehler", , "nehler@psych.uni-frankfurt.de", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3764-761X"))
+Description: Provides functionality for estimating cross-sectional network structures representing partial correlations while accounting for missing data. Networks are estimated via neighborhood selection or regularization, with model selection guided by information criteria. Missing data can be handled primarily via multiple imputation or a maximum likelihood-based approach, as demonstrated by Nehler and Schultze (2025) <doi:10.1080/00273171.2025.2503833> and Nehler and Schultze (2026) <doi:10.1037/met0000828>. Deletion-based approaches are also available but play a secondary role.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: Rdpack, mathjaxr, stats, Matrix, glassoFast
+Suggests: numDeriv, mice, lavaan, qgraph, testthat (>= 3.0.0), knitr,
+        rmarkdown
+LazyData: true
+Encoding: UTF-8
+RdMacros: Rdpack, mathjaxr
+Config/testthat/edition: 3
+URL: https://github.com/kai-nehler/mantar
+BugReports: https://github.com/kai-nehler/mantar/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-08 12:52:08 UTC; nehler
+Author: Kai Jannik Nehler [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3764-761X>)
+Maintainer: Kai Jannik Nehler <nehler@psych.uni-frankfurt.de>
+Repository: CRAN
+Date/Publication: 2026-07-08 13:40:09 UTC

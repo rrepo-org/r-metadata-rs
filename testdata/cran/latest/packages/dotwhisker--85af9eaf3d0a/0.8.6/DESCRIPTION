@@ -1,0 +1,38 @@
+Package: dotwhisker
+Type: Package
+Title: Dot-and-Whisker Plots of Regression Results
+Version: 0.8.6
+Authors@R: 
+    c(person("Frederick", "Solt", role = c("aut"), email = "frederick-solt@uiowa.edu"),
+    person("Yue", "Hu", role = c("aut", "cre"), email = "yuehu@tsinghua.edu.cn"),
+    person("Ben", "Bolker", role = "ctb", email = "bolker@mcmaster.ca"),
+    person("Os", "Keyes", role = "ctb", email = "ironholds@gmail.com"),
+    person("Stefan", "Müller", role = "ctb", email = "stefan.mueller@ucd.ie"),
+    person("Thomas", "Leeper", role = "ctb", email = "thosjleeper@gmail.com"),
+    person("Chris", "Wallace", role = "ctb", email = "cew54@cam.ac.uk"),
+    person("Christopher", "Warshaw", role = "ctb", email = "warshaw@email.gwu.edu"))
+Maintainer: Yue Hu <yuehu@tsinghua.edu.cn>
+Description: Create quick and easy dot-and-whisker plots of regression results. It takes as input either (1) a coefficient table in standard form or (2) one (or a list of) fitted model objects (of any type that has methods implemented in the 'parameters' package). It returns 'ggplot' objects that can be further customized using tools from the 'ggplot2' package. The package also includes helper functions for tasks such as rescaling coefficients or relabeling predictor variables. See more methodological discussion of the visualization and data management methods used in this package in Kastellec and Leoni (2007) <doi:10.1017/S1537592707072209> and Gelman (2008) <doi:10.1002/sim.3107>.
+Encoding: UTF-8
+URL: https://fsolt.org/dotwhisker/
+BugReports: https://github.com/fsolt/dotwhisker/issues
+Depends: R (>= 4.2.0), ggplot2 (>= 2.2.1),
+Imports: grid, gtable, gridExtra, stats, parameters, performance,
+        patchwork, dplyr, stringr, rlang, purrr, marginaleffects
+Suggests: ordinal, tibble, knitr, rmarkdown, broom, testthat (>= 3.0.0)
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-24 00:26:47 UTC; yuehu
+Author: Frederick Solt [aut],
+  Yue Hu [aut, cre],
+  Ben Bolker [ctb],
+  Os Keyes [ctb],
+  Stefan Müller [ctb],
+  Thomas Leeper [ctb],
+  Chris Wallace [ctb],
+  Christopher Warshaw [ctb]
+Repository: CRAN
+Date/Publication: 2026-06-24 05:40:02 UTC

@@ -1,0 +1,29 @@
+Package: IntervalCensoredMultistateR2
+Type: Package
+Title: Regression Analysis in Interval-Censored Multistate Models
+Version: 1.0.0
+Date: 2026-07-28
+Authors@R: person("Lu", "You", email = "lu.you@epi.usf.edu",
+    role = c("aut", "cre"))
+Author: Lu You [aut, cre]
+Maintainer: Lu You <lu.you@epi.usf.edu>
+Description: Estimates regression coefficients in proportional hazards models
+    for interval-censored multistate data. Individuals may be observed at
+    irregular times and their states may be partially observed. Allowable
+    transitions and transition-specific covariate effects can be specified.
+    The numerical estimation is implemented in 'C++' using 'RcppArmadillo'. 
+    The method implemented in this package is described in You, Liu, and 
+    Krischer (2024) <doi:10.1002/sim.10079>.
+License: GPL-3
+Imports: Rcpp (>= 1.0.11)
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 3.6.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-07-28 17:53:24 UTC; youl
+Repository: CRAN
+Date/Publication: 2026-08-06 13:10:28 UTC

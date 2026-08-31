@@ -1,0 +1,48 @@
+Type: Package
+Package: duckplyr
+Title: A 'DuckDB'-Backed Version of 'dplyr'
+Version: 1.2.1
+Authors@R: c(
+    person("Hannes", "Mühleisen", role = "aut",
+           comment = c(ORCID = "0000-0001-8552-0029")),
+    person("Kirill", "Müller", , "kirill@cynkra.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1416-3412")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: A drop-in replacement for 'dplyr', powered by 'DuckDB' for
+    performance.  Offers convenient utilities for working with in-memory and
+    larger-than-memory data while retaining full 'dplyr' compatibility.
+License: MIT + file LICENSE
+URL: https://duckplyr.tidyverse.org,
+        https://github.com/tidyverse/duckplyr
+BugReports: https://github.com/tidyverse/duckplyr/issues
+Depends: R (>= 4.0.0), dplyr (>= 1.2.0)
+Imports: cli, collections, DBI, duckdb (>= 1.4.4), glue, jsonlite,
+        lifecycle, magrittr, memoise, pillar (>= 1.10.2), rlang (>=
+        1.0.6), tibble, tidyselect, utils, vctrs (>= 0.6.3)
+Suggests: arrow, brio, callr, conflicted, constructive (>= 1.0.0),
+        curl, dbplyr, hms, knitr, lobstr, lubridate, nycflights13,
+        palmerpenguins, prettycode, purrr, readr, rmarkdown, testthat
+        (>= 3.1.5), usethis, withr
+Enhances: qs2
+Config/Needs/check: anthonynorth/roxyglobals
+Config/Needs/development: devtools, qs2, reprex, r-lib/roxygen2,
+        roxyglobals, rstudioapi, tidyverse
+Config/Needs/website: dbplyr, rmarkdown, tidyverse/tidytemplate
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Config/testthat/start-first: rel_api, tpch, as_duckplyr_df,
+        dplyr-mutate, dplyr-filter, dplyr-count-tally
+Encoding: UTF-8
+RoxygenNote: 7.3.3.9000
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-09 19:38:47 UTC; kirill
+Author: Hannes Mühleisen [aut] (ORCID: <https://orcid.org/0000-0001-8552-0029>),
+  Kirill Müller [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1416-3412>),
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
+Maintainer: Kirill Müller <kirill@cynkra.com>
+Repository: CRAN
+Date/Publication: 2026-03-10 06:10:20 UTC

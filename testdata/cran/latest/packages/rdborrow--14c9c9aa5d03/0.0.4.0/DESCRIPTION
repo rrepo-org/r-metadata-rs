@@ -1,0 +1,86 @@
+Type: Package
+Package: rdborrow
+Title: External Control Borrowing for Rare Disease Trials
+Description: Implements causal inference methods for incorporating external
+    control data into randomized controlled trials (RCTs) with longitudinal
+    outcomes. Provides an analysis module supporting weighting-based methods
+    such as inverse probability weighting (IPW) and augmented inverse
+    probability weighting (AIPW), difference-in-differences (DID), and
+    synthetic control approaches for borrowing external control information,
+    as well as a simulation module for generating trial and external control
+    data, evaluating estimator performance via Monte Carlo studies, and
+    conducting power analyses for sample size determination. Methods are
+    based on Zhou et al. (2024) <doi:10.1093/biostatistics/kxae012> and
+    Zhou et al. (2024) <doi:10.1080/01621459.2024.2395586>.
+Version: 0.0.4.0
+License: Apache License (>= 2)
+Authors@R: c(
+    person(
+        given = "Lei",
+        family = "Shi",
+        role = "aut",
+        email = "leishi1998@gmail.com"
+    ),
+    person(
+        given = "Matt",
+        family = "Secrest",
+        role = c("cre", "aut"),
+        email = "secrmatt@gmail.com",
+        comment = c(ORCID = "0000-0002-0939-4902")
+    ),
+    person(
+        given = "Herbert",
+        family = "Pang",
+        role = "aut"
+    ),
+    person(
+        given = "Chen",
+        family = "Chen",
+        role = "aut"
+    ),
+    person(
+        given = "Jiawen",
+        family = "Zhu",
+        role = "aut"
+    ),
+    person(
+        given = "Genentech, Inc.",
+        role = "cph"
+    ))
+Depends: R (>= 4.1.0)
+Imports: checkmate, futile.logger, mvtnorm, dplyr, tidyr, boot, Matrix,
+        CVXR, copula, future.apply, progress, stats, utils, methods
+Suggests: covr, ECOSolveR, knitr, pkgdown, rmarkdown, lintr, spelling,
+        styler, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Collate: 'method_class.R' 'analysis_class.R' 'method_SCM_class.R'
+        'method_DID_class.R' 'analysis_OLE_class.R'
+        'method_weighting_class.R' 'analysis_primary_class.R' 'data.R'
+        'ec_ipw.R' 'did_ec_ipw.R' 'did_ec_aipw.R' 'did_ec_or.R'
+        'ec_aipw.R' 'legacy.R' 'package.R' 'rdborrow-package.R'
+        'run_analysis.R' 'run_simulation.R' 'scm.R'
+        'simulate_X_copula.R' 'simulate_X_dct_mvnorm.R'
+        'simulate_X_mixture.R' 'simulate_outcome_from_model.R'
+        'simulate_trial.R' 'simulate_trial_status.R'
+        'simulate_trt_assign.R' 'simulation_class.R'
+        'simulation_report_class.R'
+URL: https://genentech.github.io/rdborrow/,
+        https://github.com/Genentech/rdborrow
+BugReports: https://github.com/Genentech/rdborrow/issues
+VignetteBuilder: knitr
+LazyData: true
+Encoding: UTF-8
+Language: en-US
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-20 18:15:27 UTC; matts
+Author: Lei Shi [aut],
+  Matt Secrest [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-0939-4902>),
+  Herbert Pang [aut],
+  Chen Chen [aut],
+  Jiawen Zhu [aut],
+  Genentech, Inc. [cph]
+Maintainer: Matt Secrest <secrmatt@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-31 14:00:10 UTC

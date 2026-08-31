@@ -1,0 +1,40 @@
+Package: fishmechr
+Title: Computes Kinematic Parameters for Swimming
+Version: 1.0.3
+Authors@R: c(
+    person("Eric", "Tytell", , "eric.tytell@tufts.edu", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-6603-9448")),
+    person("Olivia", "Hawkins", , "olivia.hawkins@tufts.edu", role = c("ctb"),
+           comment = c(ORCID = "0000-0001-9373-5919")),
+    person("National Science Foundation", role = "fnd"))
+Description: Processes tracked points on a fish's body and uses them to estimate 
+    standard kinematic parameters such as tail beat amplitude and frequency, body 
+    wavelength and wavespeed. As part of this, it also estimates the location
+    of the center of mass and the principal swimming axis. The techniques are
+    described in detail in the main vignette and are published in the book
+    chapter Hawkins, O.H., Di Santo, V., Tytell, Eric.D., 2025. "Biomechanics and 
+    energetics of swimming", in: Higham, T.E., Lauder, G.V. (Eds.), Integrative 
+    Fish Biomechanics, Fish Physiology. Academic Press. 
+    <doi:10.1016/bs.fp.2025.06.003>.
+License: CC BY 4.0
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.4.0)
+LazyData: true
+Imports: assertthat, cli, dplyr, gsignal, pracma, rlang, tibble, tidyr,
+        tidyselect
+Suggests: ggplot2, knitr, patchwork, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://tytell.github.io/fishmechr/,
+        https://github.com/tytell/fishmechr
+BugReports: https://github.com/tytell/fishmechr/issues
+NeedsCompilation: no
+Packaged: 2026-03-24 17:41:04 UTC; etytel01
+Author: Eric Tytell [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6603-9448>),
+  Olivia Hawkins [ctb] (ORCID: <https://orcid.org/0000-0001-9373-5919>),
+  National Science Foundation [fnd]
+Maintainer: Eric Tytell <eric.tytell@tufts.edu>
+Repository: CRAN
+Date/Publication: 2026-03-29 15:40:02 UTC

@@ -1,0 +1,34 @@
+Package: docorator
+Title: Docorate (Decorate + Output) Displays
+Version: 0.7.0
+Authors@R: 
+    c(
+      person(given = "Shannon", family = "Haughton", email = "shannon.l.haughton@gsk.com", role = c("aut", "cre")),
+      person(given = "Becca", family = "Krouse", email = "becca.z.krouse@gsk.com", role = c("aut")),
+      person(given = "Seongbin", family = "Hong", email = "seongbin.x.hong@gsk.com", role = c("aut")),
+      person("Dragoș", "Moldovan-Grünfeld", , "dragos.v.moldovan-grunfeld@gsk.com", role = "aut"),
+      person("GlaxoSmithKline Research & Development Limited", role = c("cph", "fnd")))
+Description: A framework for creating production outputs. Users can frame a table, listing, or figure with headers and footers and save to an output file. Stores an intermediate 'docorator' object for reproducibility and rendering to multiple output types.
+License: Apache License 2.0
+Encoding: UTF-8
+Imports: gt (>= 1.2.0), rmarkdown, rlang, cli, dplyr, rstudioapi,
+        purrr, stringr, stringi, tidyr, lifecycle, png, knitr, withr,
+        quarto, officer, polish, xml2
+Suggests: rprojroot, testthat (>= 3.0.0), tfrmt, pdftools, ggplot2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://GSK-Biostatistics.github.io/docorator/,
+        https://github.com/GSK-Biostatistics/docorator
+BugReports: https://github.com/GSK-Biostatistics/docorator/issues
+Depends: R (>= 4.1.0)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-08 12:34:00 UTC; slh95484
+Author: Shannon Haughton [aut, cre],
+  Becca Krouse [aut],
+  Seongbin Hong [aut],
+  Dragoș Moldovan-Grünfeld [aut],
+  GlaxoSmithKline Research & Development Limited [cph, fnd]
+Maintainer: Shannon Haughton <shannon.l.haughton@gsk.com>
+Repository: CRAN
+Date/Publication: 2026-07-08 14:20:24 UTC

@@ -1,0 +1,33 @@
+Package: OLSengine
+Type: Package
+Title: Transparent and Assisted Linear Modeling Engine
+Version: 1.1.1
+Authors@R: 
+    person("Manuel", "Soto-Pérez", , "msoto@up.edu.mx",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2298-2047"))
+Description: Unified estimation, diagnostics, and reporting for ordinary least 
+    squares (OLS) regression, ANOVA/t-tests, logistic regression, panel data 
+    (fixed/random effects with Hausman test), instrumental variables (2SLS with 
+    weak instrument diagnostics), and difference-in-differences. Designed for 
+    applied researchers in social sciences with integrated "Methodological Customs" 
+    that audit assumptions and provide literature references. All methods 
+    implemented in pure base R without external dependencies beyond stats and 
+    graphics packages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats, graphics
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/msoto-perez/OLSengine
+BugReports: https://github.com/msoto-perez/OLSengine/issues
+RoxygenNote: 7.3.3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-31 15:36:46 UTC; msoto
+Author: Manuel Soto-Pérez [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2298-2047>)
+Maintainer: Manuel Soto-Pérez <msoto@up.edu.mx>
+Repository: CRAN
+Date/Publication: 2026-07-31 17:40:02 UTC

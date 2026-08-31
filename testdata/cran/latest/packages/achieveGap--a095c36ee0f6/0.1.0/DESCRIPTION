@@ -1,0 +1,45 @@
+Package: achieveGap
+Type: Package
+Title: Modeling Achievement Gap Trajectories with Hierarchical
+        Penalized Splines
+Version: 0.1.0
+Authors@R: 
+    person("Subir", "Hait",
+           email = "haitsubi@msu.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-9871-9677"))
+Description: 
+    Implements a hierarchical penalized spline framework for estimating
+    achievement gap trajectories in longitudinal educational data.
+    The achievement gap between two groups (e.g., low versus high
+    socioeconomic status) is modeled directly as a smooth function
+    of grade while the baseline trajectory is estimated simultaneously
+    within a mixed-effects model. Smoothing parameters are selected
+    using restricted maximum likelihood (REML), and simultaneous
+    confidence bands with correct joint coverage are constructed
+    using posterior simulation. The package also includes functions
+    for simulation-based benchmarking, visualization of gap
+    trajectories, and hypothesis testing for global and
+    grade-specific differences. The modeling framework builds on
+    penalized spline methods (Eilers and Marx, 1996,
+    <doi:10.1214/ss/1038425655>) and generalized additive modeling
+    approaches (Wood, 2017, <doi:10.1201/9781315370279>), with
+    uncertainty quantification following Marra and Wood (2012,
+    <doi:10.1111/j.1467-9469.2011.00760.x>).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: mgcv (>= 1.9-0), lme4 (>= 1.1-0), MASS (>= 7.3-0), ggplot2 (>=
+        3.4.0)
+Suggests: knitr (>= 1.36), rmarkdown (>= 2.11), testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/causalfragility-lab/achieveGap
+BugReports: https://github.com/causalfragility-lab/achieveGap/issues
+NeedsCompilation: no
+Packaged: 2026-03-14 05:05:13 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-03-19 14:10:02 UTC

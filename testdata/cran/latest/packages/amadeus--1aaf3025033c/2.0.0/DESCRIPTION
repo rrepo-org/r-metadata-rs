@@ -1,0 +1,45 @@
+Package: amadeus
+Title: Accessing and Analyzing Large-Scale Environmental Data
+Version: 2.0.0
+Authors@R: c(
+    person(given = "Mitchell", family = "Manware", role = c("aut", "ctb"), comment = c(ORCID = "0009-0003-6440-6106")),
+    person(given = "Insang", family = "Song", role = c("aut", "ctb"), comment = c(ORCID = "0000-0001-8732-3256")),
+    person(given = "Eva", family = "Marques", role = c("aut", "ctb"), comment = c(ORCID = "0000-0001-9817-6546")),
+    person(given = "Mariana", family = "Alifa Kassien", role = c("aut", "ctb"), comment = c(ORCID = "0000-0003-2295-406X")),
+    person(given = "Elizabeth", family = "Scholl", role = c("ctb"), comment = c(ORCID = "0000-0003-2727-1954")),
+    person(given = "Kyle", family = "Messier", role = c("aut", "cre"), email = "kyle.messier@nih.gov", comment = c(ORCID = "0000-0001-9508-9623")),
+    person("Spatiotemporal Exposures and Toxicology Group", role = c("cph"))
+    )
+Maintainer: Kyle Messier <kyle.messier@nih.gov>
+Description: Functions are designed to facilitate access to and utility with large scale, publicly available environmental data in R. The package contains functions for downloading raw data files from web URLs (download_data()), processing the raw data files into clean spatial objects (process_covariates()), and extracting values from the spatial data objects at point and polygon locations (calculate_covariates()). These functions call a series of source-specific functions which are tailored to each data sources/datasets particular URL structure, data format, and spatial/temporal resolution. The functions are tested, versioned, and open source and open access. For sum_edc() method details, see Messier, Akita, and Serre (2012) <doi:10.1021/es203152a>.
+Depends: R (>= 4.2.0)
+Imports: dplyr, sf, sftime, stats, terra (>= 1.8-50), methods,
+        data.table, httr2, exactextractr, utils, stringi, stars, tidyr,
+        rlang, archive, collapse, Rdpack
+Suggests: covr, devtools, doRNG, FNN, furrr, ggplot2, knitr, lwgeom,
+        maps, mirai, nhdplusTools, rmarkdown, spelling, stringr,
+        targets, testthat (>= 3.0.0), tigris, withr
+RdMacros: Rdpack
+Encoding: UTF-8
+VignetteBuilder: knitr, rmarkdown
+RoxygenNote: 7.3.3
+Config/Needs/website: tidyverse/tidytemplate
+Config/testhat/edition: 3
+License: MIT + file LICENSE
+URL: https://niehs.github.io/amadeus/
+BugReports: https://github.com/NIEHS/amadeus/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-05-21 19:17:53 UTC; messierkp
+Author: Mitchell Manware [aut, ctb] (ORCID:
+    <https://orcid.org/0009-0003-6440-6106>),
+  Insang Song [aut, ctb] (ORCID: <https://orcid.org/0000-0001-8732-3256>),
+  Eva Marques [aut, ctb] (ORCID: <https://orcid.org/0000-0001-9817-6546>),
+  Mariana Alifa Kassien [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0003-2295-406X>),
+  Elizabeth Scholl [ctb] (ORCID: <https://orcid.org/0000-0003-2727-1954>),
+  Kyle Messier [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9508-9623>),
+  Spatiotemporal Exposures and Toxicology Group [cph]
+Repository: CRAN
+Date/Publication: 2026-05-21 21:00:08 UTC

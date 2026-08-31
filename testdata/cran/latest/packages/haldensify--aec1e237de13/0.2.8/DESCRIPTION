@@ -1,0 +1,56 @@
+Package: haldensify
+Title: Highly Adaptive Lasso Conditional Density Estimation
+Version: 0.2.8
+Authors@R: c(
+    person("Nima", "Hejazi", email = "nh@nimahejazi.org",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-7127-2789")),
+    person("David", "Benkeser", email = "benkeser@emory.edu",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-1019-8343")),
+    person("Mark", "van der Laan", email = "laan@berkeley.edu",
+           role = c("aut", "ths"),
+           comment = c(ORCID = "0000-0003-1432-5511")),
+    person("Rachael", "Phillips", email = "rachaelvphillips@berkeley.edu",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-8474-591X"))
+  )
+Maintainer: Nima Hejazi <nh@nimahejazi.org>
+Description: An algorithm for flexible conditional density estimation based on
+    application of pooled hazard regression to an artificial repeated measures
+    dataset constructed by discretizing the support of the outcome variable. To
+    facilitate flexible estimation of the conditional density, the highly
+    adaptive lasso, a non-parametric regression function shown to estimate
+    cadlag (RCLL) functions at a suitably fast convergence rate, is used. The
+    use of pooled hazards regression for conditional density estimation as
+    implemented here was first described for by Díaz and van der Laan (2011)
+    <doi:10.2202/1557-4679.1356>. Building on the conditional density estimation
+    utilities, non-parametric inverse probability weighted (IPW) estimators of
+    the causal effects of additive modified treatment policies are implemented,
+    using conditional density estimation to estimate the generalized propensity
+    score. Non-parametric IPW estimators based on this can be coupled with
+    undersmoothing of the generalized propensity score estimator to attain the
+    semi-parametric efficiency bound (per Hejazi, Díaz, and van der Laan
+    <doi:10.48550/arXiv.2205.05777>).
+Depends: R (>= 3.2.0)
+Imports: stats, utils, dplyr, tibble, ggplot2, data.table, matrixStats,
+        future.apply, assertthat, hal9001 (>= 0.4.6), origami (>=
+        1.0.7), stringr, rlang, scales, Rdpack
+Suggests: testthat, knitr, rmarkdown, covr, future
+License: MIT + file LICENSE
+URL: https://codex.nimahejazi.org/haldensify/
+BugReports: https://github.com/nhejazi/haldensify/issues
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2025-09-01 19:24:13 UTC; nih914
+Author: Nima Hejazi [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-7127-2789>),
+  David Benkeser [aut] (ORCID: <https://orcid.org/0000-0002-1019-8343>),
+  Mark van der Laan [aut, ths] (ORCID:
+    <https://orcid.org/0000-0003-1432-5511>),
+  Rachael Phillips [ctb] (ORCID: <https://orcid.org/0000-0002-8474-591X>)
+Repository: CRAN
+Date/Publication: 2025-09-02 07:40:06 UTC

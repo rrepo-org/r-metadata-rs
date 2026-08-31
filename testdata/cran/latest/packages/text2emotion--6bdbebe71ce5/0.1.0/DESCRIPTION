@@ -1,0 +1,32 @@
+Package: text2emotion
+Type: Package
+Title: Emotion Analysis and Emoji Mapping for Text
+Version: 0.1.0
+Authors@R: 
+    c(
+      person("Yusong", "Zhao", email = "123090870@link.cuhk.edu.cn", role = "aut"),
+      person("Fangyi", "Wang", email = "123090550@link.cuhk.edu.cn", role = c("aut", "cre")),
+      person("Zisheng", "Qu", email = "123090470@link.cuhk.edu.cn", role = "aut")
+    )
+Description: Allows users to analyze text and classify emotions
+    such as happiness, sadness, anger, fear, and neutrality.
+    It combines text preprocessing, TF-IDF (Term Frequency-Inverse Document Frequency) 
+    feature extraction, and Random Forest classification to predict emotions
+    and map them to corresponding emojis for enhanced sentiment visualization.
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 4.4.0)
+Imports: stringr, textclean, magrittr, text2vec, ranger, caret,
+        parallel, stats, Matrix
+RoxygenNote: 7.3.2
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2025-05-08 16:51:01 UTC; wfy20
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Author: Yusong Zhao [aut],
+  Fangyi Wang [aut, cre],
+  Zisheng Qu [aut]
+Maintainer: Fangyi Wang <123090550@link.cuhk.edu.cn>
+Repository: CRAN
+Date/Publication: 2025-05-12 08:20:05 UTC

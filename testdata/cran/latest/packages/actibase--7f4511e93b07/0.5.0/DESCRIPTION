@@ -1,0 +1,34 @@
+Type: Package
+Package: actibase
+Title: Baseline Functions for Actigraphy and Activity Processing and
+        Analysis
+Version: 0.5.0
+Authors@R: c(
+    person(given = "John",
+           family = "Muschelli",
+           role = c("aut", "cre"),
+           email = "muschellij2@gmail.com",
+           comment = c(ORCID = "0000-0001-6469-1750"))
+    )
+Description: Provides baseline functions for actigraphy and activity data.
+    This package is intended to be extended by downstream overlays such as
+    'actiread', 'actimetrics', and  'stepcount'.
+License: GPL-3
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0), utils, covr, knitr, readr
+Encoding: UTF-8
+LazyData: true
+Imports: magrittr, dplyr, lubridate, hms, tidyr, janitor, assertthat,
+        vctrs
+URL: https://github.com/jhuwit/actibase,
+        https://jhuwit.github.io/actibase/
+BugReports: https://github.com/jhuwit/actibase/issues
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-20 21:03:16 UTC; johnmuschelli
+Author: John Muschelli [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6469-1750>)
+Maintainer: John Muschelli <muschellij2@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 12:41:00 UTC

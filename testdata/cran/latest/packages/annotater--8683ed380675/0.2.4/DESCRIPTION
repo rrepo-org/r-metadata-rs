@@ -1,0 +1,32 @@
+Package: annotater
+Title: Annotate Package Load Calls
+Version: 0.2.4
+Authors@R: c(
+    person(given = "Luis D.",
+           family = "Verde Arregoitia",
+           role = c("aut", "cre"),
+           email = "luis@liomys.mx",
+           comment = c(ORCID = "0000-0001-9520-6543")),
+    person("Juan","Cruz Rodriguez",role="ctb"),
+    person("Hadley","Wickham",role="ctb"))
+Description: Provides non-invasive annotation of package load calls 
+    such as \code{library()}, \code{p_load()}, and \code{require()} so that we can have an idea of what 
+    the packages we are loading are meant for.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, knitr, purrr, readr, rlang, rstudioapi, stringi,
+        stringr, tibble, tidyr
+URL: https://github.com/luisDVA/annotater, https://annotater.liomys.mx
+BugReports: https://github.com/luisDVA/annotater/issues
+Suggests: covr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-07-14 18:07:53 UTC; luisd
+Author: Luis D. Verde Arregoitia [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9520-6543>),
+  Juan Cruz Rodriguez [ctb],
+  Hadley Wickham [ctb]
+Maintainer: Luis D. Verde Arregoitia <luis@liomys.mx>
+Repository: CRAN
+Date/Publication: 2025-07-14 19:10:13 UTC

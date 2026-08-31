@@ -1,0 +1,37 @@
+Package: LongitudinalEvalue
+Type: Package
+Title: Sensitivity Analysis for Unmeasured Confounding in Longitudinal
+        Studies
+Version: 0.1.0
+Authors@R: c(
+    person("Andreas", "Kristian Pedersen", 
+           email = "andreaskpedersen@hotmail.com", 
+           role = c("aut", "cre")), person("Anna", "Mejldal", 
+           email = "anna.mejldal@rsyd.dk", 
+           role = "ctb"), person("Afsaneh M.", "Nejad", 
+           email = "afsane@imada.sdu.dk", 
+           role = "ctb"), person("Kristian", "Debrabant", 
+           email = "debrabant@imada.sdu.dk", 
+           role = "aut"), person("Sören", "Möller", 
+           email = "moeller@health.sdu.dk", 
+           role = "aut"))
+Maintainer: Andreas Kristian Pedersen <andreaskpedersen@hotmail.com>
+Description: Evaluates the sensitivity of a given association to unmeasured confounding. The package consists of three functions. The first starts a 'shiny' app which assesses how strong a time-invariant confounder needs to be associated with the exposure and outcome to explain away a proposed causal association. The second and third functions simulate a time-dependent confounder over time either using a fit from the qmle() function from the 'yuima' package or directly using the observed effect estimate. 
+URL: https://andreaskpedersen.shinyapps.io/LongitudinalEvalue/
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, yuima, methods, np, matrixStats, stats, rlang, zoo
+Suggests: knitr, rmarkdown, shiny, bookdown
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-23 16:43:38 UTC; afe2eg
+Author: Andreas Kristian Pedersen [aut, cre],
+  Anna Mejldal [ctb],
+  Afsaneh M. Nejad [ctb],
+  Kristian Debrabant [aut],
+  Sören Möller [aut]
+Repository: CRAN
+Date/Publication: 2026-08-03 18:00:30 UTC

@@ -1,0 +1,35 @@
+Package: AntsNet
+Title: Unified Simulation of Isomorphisms Between Ant Colony
+        Intelligence and Machine Learning
+Version: 1.0.0
+Authors@R: c(
+    person("Yuval", "Levental", email = "yhl3051@rit.edu", role = c("aut", "cre")),
+    person("Gregory", "Babbitt", email = "gabsbi@rit.edu", role = "aut"),
+    person("Ernest", "Fokoué", email = "epfeqa@rit.edu", role = "aut"))
+Description: Implements the full suite of simulation, visualization, and
+    analysis tools for exploring the mathematical isomorphisms between ant
+    colony decision-making and three major paradigms of machine learning:
+    random forests (Part I: variance reduction through decorrelation),
+    boosting (Part II: bias reduction through adaptive recruitment), and
+    neural networks (Part III: gradient-based generational learning).
+    Accompanies the trilogy "Isomorphic Functionalities between Ant Colony
+    and Ensemble Learning" (Fokoué, Babbitt, and Levental, 2026,
+    <doi:10.48550/arXiv.2603.20328>, <doi:10.48550/arXiv.2604.00038>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/ylevental/IsomorphismSim_Full
+BugReports: https://github.com/ylevental/IsomorphismSim_Full/issues
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, grDevices, ranger, ggplot2, dplyr, tidyr,
+        patchwork, viridis, ggpubr
+Suggests: shiny, cowplot, knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-16 19:24:21 UTC; ylevental
+Author: Yuval Levental [aut, cre],
+  Gregory Babbitt [aut],
+  Ernest Fokoué [aut]
+Maintainer: Yuval Levental <yhl3051@rit.edu>
+Repository: CRAN
+Date/Publication: 2026-04-21 19:02:41 UTC

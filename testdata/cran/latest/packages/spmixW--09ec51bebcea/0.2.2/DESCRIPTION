@@ -1,0 +1,31 @@
+Package: spmixW
+Title: Bayesian Spatial Panel Data Models with Convex Combinations of
+        Weight Matrices
+Version: 0.2.2
+Authors@R: c(
+    person("Mustapha Wasseja", "Mohammed",
+           email = "muswaseja@gmail.com",
+           role = c("aut", "cre")))
+Description: Bayesian Markov chain Monte Carlo (MCMC) estimation of spatial
+    panel data models including Spatial Autoregressive (SAR), Spatial Durbin
+    Model (SDM), Spatial Error Model (SEM), Spatial Durbin Error Model (SDEM),
+    and Spatial Lag of X (SLX) specifications with fixed effects. Supports
+    convex combinations of multiple spatial weight matrices and Bayesian Model
+    Averaging (BMA) over subsets of weight matrices. Implements the convex
+    combination spatial weight matrix methodology of Debarsy and LeSage (2021)
+    <doi:10.1080/07350015.2020.1840993> and the Bayesian spatial panel data
+    models of LeSage and Pace (2009, ISBN:9781420064247).
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: Matrix, MASS, coda
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, spdep, sf, ggplot2,
+        broom
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-09 18:17:38 UTC; musta
+Author: Mustapha Wasseja Mohammed [aut, cre]
+Maintainer: Mustapha Wasseja Mohammed <muswaseja@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-16 09:20:02 UTC

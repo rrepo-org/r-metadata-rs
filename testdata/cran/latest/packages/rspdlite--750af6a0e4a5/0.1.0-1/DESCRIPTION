@@ -1,0 +1,28 @@
+Package: rspdlite
+Type: Package
+Title: R and C++ Interfaces to 'spdlite' C++ Header Library for Logging
+Version: 0.1.0-1
+Date: 2026-06-08
+License: GPL (>= 2)
+Authors@R: c(person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
+                    comment = c(ORCID = "0000-0001-6419-907X")),
+             person("Gabi", "Melman", role = "aut", comment = "Author of spdlog"),
+             person("Victor", "Zverovic", role = "aut", comment = "Author of fmt"))
+Description: The lightweight header-only C++-20 logging library 'spdlite', a lighter version
+ of 'spdlog' and also written by Gabi Melman, provides most of the features of the larger
+ version, and also includes 'fmt' as a fallback if std::format() is not selected.
+URL: https://github.com/eddelbuettel/rspdlite
+BugReports: https://github.com/eddelbuettel/rspdlite/issues
+LinkingTo: Rcpp
+Imports: Rcpp
+Suggests: tinytest
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2026-06-08 15:00:57 UTC; edd
+Author: Dirk Eddelbuettel [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6419-907X>),
+  Gabi Melman [aut] (Author of spdlog),
+  Victor Zverovic [aut] (Author of fmt)
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Repository: CRAN
+Date/Publication: 2026-06-16 19:30:02 UTC

@@ -1,0 +1,30 @@
+Package: BayesSplineUR
+Type: Package
+Title: Bayesian Unit Root Test for AR(1) Model with Trend Approximated
+        by Linear Spline Function
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut")
+  )
+Description: Performs Bayesian unit root testing for autoregressive time series models with non-linear trend components approximated by linear spline functions, as proposed by Kumar et al. (2020) <doi:10.19139/soic-2310-5070-786>. The package 'BayesSplineUR' computes posterior odds ratios, Bayes factors, and posterior probabilities for the unit root hypothesis against trend-stationary alternatives in models with linear spline trends or maintained polynomial trends as developed by Chaturvedi and Kumar (2005) <doi:10.1016/j.spl.2005.04.044>. Includes automatic knot selection using information criteria (AIC/BIC) and theoretical foundations for Bayesian unit root testing under structural breaks and maintained trends drawing from Schotman and van Dijk (1991) <doi:10.1016/0304-4076(91)90038-F>, Phillips and Perron (1988) <doi:10.1093/biomet/75.2.335>, Ouliaris et al. (1988) <doi:10.1007/978-94-009-2953-1_10>, and Perron (1989) <doi:10.2307/1913683>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: stats, graphics
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-29 01:06:10 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-06 13:30:02 UTC

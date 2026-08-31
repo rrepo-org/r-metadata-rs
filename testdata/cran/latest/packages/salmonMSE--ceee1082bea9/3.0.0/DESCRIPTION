@@ -1,0 +1,31 @@
+Package: salmonMSE
+Title: Management Strategy Evaluation for Salmon Species
+Version: 3.0.0
+Authors@R: 
+    person("Quang", "Huynh", , "quang@bluematterscience.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7835-4376"))
+Date: 2026-08-18
+Maintainer: Quang Huynh <quang@bluematterscience.com>
+Description: Simulation tools to evaluate the long-term effects of salmon management strategies, including a combination of habitat, harvest, and
+  habitat actions. The stochastic age-structured operating model accommodates complex life histories, including freshwater survival across 
+  early life stages, juvenile survival and fishery exploitation in the marine life stage, partial maturity by age class, and fitness impacts of 
+  hatchery programs on natural spawning populations. 'salmonMSE' also provides an age-structured conditioning model to develop operating models 
+  fitted to data.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: abind, RTMB (>= 1.9), dplyr, ggplot2, grDevices, gsl, methods,
+        reshape2, rlang, rmarkdown, parallel, stats, utils
+Suggests: bookdown, EnvStats, ggrepel, knitr, rstan, scales, testthat
+        (>= 3.0.0), tmbstan
+Encoding: UTF-8
+LazyData: yes
+LazyLoad: yes
+RoxygenNote: 7.3.3
+URL: https://docs.salmonmse.com/,
+        https://github.com/Blue-Matter/salmonMSE
+BugReports: https://github.com/Blue-Matter/salmonMSE/issues
+NeedsCompilation: no
+Packaged: 2026-08-19 23:29:45 UTC; quang
+Author: Quang Huynh [aut, cre] (ORCID: <https://orcid.org/0000-0001-7835-4376>)
+Repository: CRAN
+Date/Publication: 2026-08-20 10:00:02 UTC

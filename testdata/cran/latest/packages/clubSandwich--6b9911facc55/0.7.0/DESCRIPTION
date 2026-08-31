@@ -1,0 +1,50 @@
+Package: clubSandwich
+Title: Cluster-Robust (Sandwich) Variance Estimators with Small-Sample
+        Corrections
+Version: 0.7.0
+Authors@R: c(
+  person(c("James","E."), "Pustejovsky", email = "jepusto@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0591-9465")),
+  person("Hazim", "Izani", email = "hazimizani@gmail.com", role = "ctb"),
+  person("Samuel", "Pekofsky", email = "sampekofsky@gmail.com", role = "ctb"),
+  person("Jingru", "Zhang", email = "jz26372022@hotmail.com", role = "ctb")
+  )
+Description: Provides several cluster-robust variance estimators (i.e.,
+    sandwich estimators) for ordinary and weighted least squares linear regression
+    models, including the bias-reduced linearization estimator introduced by Bell
+    and McCaffrey (2002) 
+    <https://www150.statcan.gc.ca/n1/pub/12-001-x/2002002/article/9058-eng.pdf> and 
+    developed further by Pustejovsky and Tipton (2017) 
+    <DOI:10.1080/07350015.2016.1247004>. The package includes functions for estimating
+    the variance- covariance matrix and for testing single- and multiple-
+    contrast hypotheses based on Wald test statistics. Tests of single regression
+    coefficients use Satterthwaite or saddle-point corrections. Tests of multiple-
+    contrast hypotheses use an approximation to Hotelling's T-squared distribution.
+    Methods are provided for a variety of fitted models, including lm() and mlm
+    objects; glm(); geeglm() (from package 'geepack'); lm_robust(), lm_lin(), and 
+    iv_robust() (from package 'estimatr'); ivreg() (from package 'AER'); ivreg() 
+    (from package 'ivreg' when estimated by ordinary least squares); plm() (from 
+    package 'plm'); gls() and lme() (from 'nlme'); lmer() (from `lme4`); robu() (from 
+    'robumeta'); rma.uni() and rma.mv() (from 'metafor'); and mmrm() (from 'mmrm').
+URL: http://jepusto.github.io/clubSandwich/
+BugReports: https://github.com/jepusto/clubSandwich/issues
+Depends: R (>= 3.0.0)
+License: GPL-3
+VignetteBuilder: knitr
+LazyData: true
+Imports: stats, sandwich, lifecycle
+Suggests: Formula, knitr, testthat, rmarkdown, covr, AER, carData,
+        estimatr, fixest, geepack, ivreg, Matrix, lme4, metafor,
+        metadat, mlmRev, mmrm, nlme, plm (>= 1.6-4), robumeta, zoo
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-05-01 14:23:22 UTC; jamespustejovsky
+Author: James E. Pustejovsky [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0591-9465>),
+  Hazim Izani [ctb],
+  Samuel Pekofsky [ctb],
+  Jingru Zhang [ctb]
+Maintainer: James E. Pustejovsky <jepusto@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-04 05:41:13 UTC

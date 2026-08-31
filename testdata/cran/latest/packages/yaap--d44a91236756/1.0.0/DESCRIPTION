@@ -1,0 +1,49 @@
+Package: yaap
+Title: A Toolkit for Archetypal Analysis Methods
+Version: 1.0.0
+Authors@R: c(
+    person("Teo", "Sakel",
+           email = "teo@intelligentbiodata.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-9946-9498")),
+    person("MCIU/AEI",
+           role = c("fnd"),
+           comment = c(ROR = "05r0vyz12", DOI = "10.13039/501100011033"))
+  )
+Description: Fits archetypal analysis models, including Euclidean,
+    probabilistic, kernel, and directional variants. Methods include classical
+    archetypal analysis from Cutler and Breiman (1994)
+    <doi:10.1080/00401706.1994.10485840>, PCHA and kernel variants from
+    Mørup and Hansen (2012) <doi:10.1016/j.neucom.2011.06.033>,
+    probabilistic archetypal analysis from Seth and Eugster (2016)
+    <doi:10.1007/s10994-015-5498-8>, directional archetypal analysis from
+    Olsen et al. (2022) <doi:10.3389/fnins.2022.911034>, AA++
+    initialization from Mair and Sjölund (2023)
+    <doi:10.48550/arXiv.2301.13748>, coreset-style initialization from
+    Mair and Brefeld (2019)
+    <https://proceedings.neurips.cc/paper_files/paper/2019/file/7f278ad602c7f47aa76d1bfc90f20263-Paper.pdf>,
+    and adapted AIC from Suleman (2017)
+    <doi:10.1109/FUZZ-IEEE.2017.8015385>. Provides initialization helpers,
+    model selection paths, plotting methods, 'broom' methods, and a
+    'tidymodels' recipe step.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: generics (>= 0.1.3), graphics, methods, Matrix, matrixStats,
+        nnls, rlang (>= 1.0.0), stats, tibble (>= 3.0.0), utils, vctrs
+Suggests: archetypes, bench, compositions, fda, geometry, ggplot2,
+        ggtern, irlba, knitr, MASS, quadprog, recipes (>= 1.0.0),
+        rmarkdown, RSpectra, testthat (>= 3.0.0), tune (>= 1.0.0),
+        withr (>= 2.5.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-01 09:51:56 UTC; teo
+Author: Teo Sakel [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-9946-9498>),
+  MCIU/AEI [fnd] (ROR: <https://ror.org/05r0vyz12>, DOI:
+    10.13039/501100011033)
+Maintainer: Teo Sakel <teo@intelligentbiodata.com>
+Repository: CRAN
+Date/Publication: 2026-06-07 18:40:02 UTC

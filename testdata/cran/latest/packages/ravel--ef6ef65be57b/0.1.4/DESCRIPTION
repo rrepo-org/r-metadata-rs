@@ -1,0 +1,32 @@
+Package: ravel
+Title: AI Copilot for R Analysis Workflows in 'RStudio'
+Version: 0.1.4
+Authors@R: 
+    person("Markuss", "Saule", , "markusstomas@gmail.com", role = c("aut", "cre", "cph"))
+Description: An AI copilot for R users in 'RStudio' and Posit workflows with
+    active-editor, workspace, object, console, plot, and git-aware context.
+    Provides statistical helpers for interpreting lm() and glm()
+    models, stages code and file actions before execution, drafts
+    reproducible 'Quarto' content, and connects to official provider
+    APIs or CLIs for 'OpenAI', 'GitHub Copilot', 'Gemini', and 'Anthropic'.
+License: MIT + file LICENSE
+URL: https://github.com/msaule/ravel, https://msaule.github.io/ravel/
+BugReports: https://github.com/msaule/ravel/issues
+Language: en-US
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Imports: cli, digest, httr2, jsonlite, miniUI, rstudioapi, shiny,
+        stats, tibble, tools, utils
+Suggests: keyring, knitr, lintr, pkgdown, rcmdcheck, rmarkdown,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+Config/Needs/release: devtools, rcmdcheck, roxygen2
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-03 02:18:57 UTC; saule
+Author: Markuss Saule [aut, cre, cph]
+Maintainer: Markuss Saule <markusstomas@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-03 02:40:02 UTC

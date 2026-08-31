@@ -1,0 +1,28 @@
+Package: DeSciDe
+Type: Package
+Title: Tool for Unbiased Literature Searching and Gene List Curation
+Version: 1.0.3
+Authors@R: 
+    person("Cameron", "Douglas", email = "camerondouglas@ufl.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-2334-1652"))
+Description: Designed for genomic and proteomic data analysis, enabling unbiased PubMed searching, protein interaction network visualization, and comprehensive data summarization. This package aims to help users identify novel targets within their data sets based on protein network interactions and publication precedence of target's association with research context based on literature precedence. Methods in this package are described in detail in: Douglas et al. (2025) <doi:10.1039/D5MO00160A>. Key functionalities of this package also leverage methodologies from previous works, such as:
+  - Szklarczyk et al. (2023) <doi:10.1093/nar/gkac1000>
+  - Winter (2017) <doi:10.32614/RJ-2017-066>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: rentrez, ComplexHeatmap, circlize, STRINGdb, data.table,
+        igraph, ggplot2, openxlsx, dplyr, tidyr, magrittr, tibble,
+        ggrepel
+RoxygenNote: 7.3.3
+URL: https://github.com/camdouglas/DeSciDe
+BugReports: https://github.com/camdouglas/DeSciDe/issues
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.0.0)
+NeedsCompilation: no
+Packaged: 2026-04-09 15:31:23 UTC; seathlab
+Author: Cameron Douglas [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2334-1652>)
+Maintainer: Cameron Douglas <camerondouglas@ufl.edu>
+Repository: CRAN
+Date/Publication: 2026-04-09 16:00:03 UTC

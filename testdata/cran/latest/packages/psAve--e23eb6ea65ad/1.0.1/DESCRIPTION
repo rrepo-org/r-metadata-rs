@@ -1,0 +1,34 @@
+Package: psAve
+Type: Package
+Title: Model-Averaged Propensity Scores Selected by Prognostic-Score
+        Balance
+Version: 1.0.1
+Authors@R: person("Daijiro", "Kabata", email = "daijiro.kabata@port.kobe-u.ac.jp",
+    role = c("aut", "cre", "cph"))
+Description: Constructs a model-averaged propensity score as a convex combination of
+    candidate propensity score models, with mixing weights selected on a simplex grid
+    to optimize covariate or prognostic-score balance, implementing the method of
+    Kabata, Stuart and Shintani (2024) <doi:10.1186/s12874-024-02350-y>. Prognostic
+    scores follow Hansen (2008) <doi:10.1093/biomet/asn004>: outcome models are fit on
+    untreated units only. The resulting score is designed to be supplied directly to
+    the matchit() function of 'MatchIt' as a distance measure or to the weightit()
+    function of 'WeightIt' as a propensity score, with balance assessment via
+    'cobalt'.
+Depends: R (>= 4.1)
+Imports: cobalt (>= 4.6.0), stats, utils, graphics
+Suggests: MatchIt, WeightIt, SuperLearner, rpart, ranger, xgboost,
+        survey, testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+License: GPL (>= 2)
+URL: https://kabajiro.github.io/psAve/,
+        https://github.com/kabajiro/psAve
+BugReports: https://github.com/kabajiro/psAve/issues
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-02 21:56:07 UTC; kabajiro
+Author: Daijiro Kabata [aut, cre, cph]
+Maintainer: Daijiro Kabata <daijiro.kabata@port.kobe-u.ac.jp>
+Repository: CRAN
+Date/Publication: 2026-07-10 19:10:02 UTC

@@ -1,0 +1,37 @@
+Type: Package
+Package: rvg
+Title: R Graphics Devices for 'Office' Vector Graphics Output
+Version: 0.4.2
+Authors@R: c(
+    person("David", "Gohel", , "david.gohel@ardata.fr", role = c("aut", "cre")),
+    person("ArData", role = "cph"),
+    person("Bob", "Rudis", role = "ctb",
+           comment = "the javascript code used by function set_attr"),
+    person("Francois", "Brunetti", , "francois.brunetti@lysis-consultants.fr", role = "ctb",
+           comment = "clipping algorithms")
+  )
+Description: Vector Graphics devices for 'Microsoft PowerPoint' and
+    'Microsoft Excel'. Functions extending package 'officer' are provided
+    to embed 'DrawingML' graphics into 'Microsoft PowerPoint'
+    presentations and 'Microsoft Excel' workbooks.
+License: GPL-3
+URL: https://ardata-fr.github.io/officeverse/,
+        https://davidgohel.github.io/rvg/
+BugReports: https://github.com/davidgohel/rvg/issues
+Depends: R (>= 3.0)
+Imports: gdtools (>= 0.5.0), grDevices, officer (>= 0.7.4), Rcpp (>=
+        0.12.12), rlang, systemfonts, xml2 (>= 1.0.0)
+Suggests: grid, testthat
+LinkingTo: Rcpp, systemfonts
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: libpng
+NeedsCompilation: yes
+Packaged: 2026-04-24 12:17:54 UTC; davidgohel
+Author: David Gohel [aut, cre],
+  ArData [cph],
+  Bob Rudis [ctb] (the javascript code used by function set_attr),
+  Francois Brunetti [ctb] (clipping algorithms)
+Maintainer: David Gohel <david.gohel@ardata.fr>
+Repository: CRAN
+Date/Publication: 2026-04-24 13:30:02 UTC

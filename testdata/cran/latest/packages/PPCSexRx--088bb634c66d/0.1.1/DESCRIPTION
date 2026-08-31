@@ -1,0 +1,33 @@
+Package: PPCSexRx
+Type: Package
+Title: Prescribe Sub-Symptom Exercise for Adolescent Concussion
+Version: 0.1.1
+Authors@R: person("Guang", "Li", email = "contact@guanglab.org", role = c("aut", "cre"),
+    comment = c(ORCID = "0009-0004-2807-9029", "Idaho State University"))
+Description: A clinical decision support system for sub-symptom threshold
+    aerobic exercise (SSTAE) prescription in adolescents with persistent
+    post-concussion symptoms (PPCS). Implements an evidence-based protocol
+    derived from a systematic review of seven studies (Li, 2026; <doi:10.17605/osf.io/kvuf6>),
+    encoding safety screening, Buffalo Concussion Treadmill Test (BCTT)-guided
+    heart rate prescription, session-level progress tracking, and evidence
+    disclosure using the Grading of Recommendations, Assessment, Development
+    and Evaluation (GRADE) framework into an open-source tool for athletic
+    trainers and clinicians. Designed to support implementation in
+    resource-limited settings where BCTT equipment may be unavailable.
+    GRADE certainty of evidence: LOW. For clinician use only; not a
+    substitute for clinical judgement.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Imports: graphics, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/guangl10/PPCSexRx, https://guanglab.org
+BugReports: https://github.com/guangl10/PPCSexRx/issues
+NeedsCompilation: no
+Packaged: 2026-06-15 05:24:18 UTC; liguang
+Author: Guang Li [aut, cre] (ORCID: <https://orcid.org/0009-0004-2807-9029>,
+    Idaho State University)
+Maintainer: Guang Li <contact@guanglab.org>
+Repository: CRAN
+Date/Publication: 2026-06-15 07:50:31 UTC

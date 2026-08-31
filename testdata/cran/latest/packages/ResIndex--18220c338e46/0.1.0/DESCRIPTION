@@ -1,0 +1,26 @@
+Package: ResIndex
+Type: Package
+Title: Generate Simple yet Effective Metric of Feature Importance for
+        Classification Problems
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Anand", "Jha",
+      email = "anandorjha18@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: An intuitive and explainable metric of Feature Importance for Classification Problems.
+    Resolution Index measures the extent to which a Feature clusters different classes when data is 
+    sorted on it. User provides a DataFrame, column name of the Class, sample size and number of 
+    iterations used for calculation. Resolution Index for each Feature is returned, which can be 
+    effectively used to rank Features and reduce Dimensionality of Training data. For more details
+    on Feature Selection see Theng and Bhoyar (2023) <doi:10.1007/s10115-023-02010-5>.
+License: LGPL-2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-03-17 08:13:17 UTC; 703254631
+Author: Anand Jha [aut, cre]
+Maintainer: Anand Jha <anandorjha18@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-18 15:10:15 UTC

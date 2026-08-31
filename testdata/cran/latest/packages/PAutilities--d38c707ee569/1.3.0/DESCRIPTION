@@ -1,0 +1,37 @@
+Package: PAutilities
+Type: Package
+Title: Streamline Physical Activity Research
+Version: 1.3.0
+Authors@R: c(
+    person(
+      c("Paul", "R."), "Hibbing", email = "paulhibbing@gmail.com",
+      role = c("aut","cre")),
+    person(
+      "Centers for Disease Control and Prevention", role = "ctb"))
+Depends: R (>= 3.5.0)
+Description: Functions that support a broad range of common tasks in physical
+    activity research, including but not limited to creation of Bland-Altman
+    plots (<doi:10.1136/bmj.313.7049.106>), metabolic calculations such as basal
+    metabolic rate predictions (<https://europepmc.org/article/med/4044297/reloa>),
+    demographic calculations such as age-for-body-mass-index percentile
+    (<https://www.cdc.gov/growthcharts/cdc_charts.htm>), and analysis of bout
+    detection algorithm performance (<https://pubmed.ncbi.nlm.nih.gov/34258524/>).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/paulhibbing/PAutilities
+BugReports: https://github.com/paulhibbing/PAutilities/issues
+RoxygenNote: 7.3.3
+Imports: dplyr (>= 0.7), equivalence, ggplot2 (>= 4.0), graphics,
+        lazyeval (>= 0.2), lubridate (>= 1.7.4), magrittr (>= 1.5),
+        methods, reshape2, rlang (>= 0.3.1), stats, utils, Rcpp
+Suggests: testthat, knitr, rmarkdown, matchingMarkets (>= 1.0.1)
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-03-14 17:43:31 UTC; phibbing
+Author: Paul R. Hibbing [aut, cre],
+  Centers for Disease Control and Prevention [ctb]
+Maintainer: Paul R. Hibbing <paulhibbing@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-15 06:10:56 UTC

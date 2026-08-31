@@ -1,0 +1,67 @@
+Package: ggdist
+Title: Visualizations of Distributions and Uncertainty
+Version: 3.3.3
+Date: 2025-04-20
+Authors@R: c(
+        person("Matthew", "Kay", role = c("aut", "cre"), email = "mjskay@northwestern.edu"),
+        person("Brenton M.", "Wiernik", role = "ctb", email = "brenton@wiernik.org")
+    )
+Maintainer: Matthew Kay <mjskay@northwestern.edu>
+Description: Provides primitives for visualizing distributions using 'ggplot2' that are particularly tuned for
+    visualizing uncertainty in either a frequentist or Bayesian mode. Both analytical distributions (such as 
+    frequentist confidence distributions or Bayesian priors) and distributions represented as samples (such as 
+    bootstrap distributions or Bayesian posterior samples) are easily visualized. Visualization primitives include
+    but are not limited to: points with multiple uncertainty intervals, 
+    eye plots (Spiegelhalter D., 1999) <https://ideas.repec.org/a/bla/jorssa/v162y1999i1p45-58.html>,
+    density plots, gradient plots, dot plots (Wilkinson L., 1999) <doi:10.1080/00031305.1999.10474474>,
+    quantile dot plots (Kay M., Kola T., Hullman J., Munson S., 2016) <doi:10.1145/2858036.2858558>,
+    complementary cumulative distribution function 
+    barplots (Fernandes M., Walls L., Munson S., Hullman J., Kay M., 2018) <doi:10.1145/3173574.3173718>,
+    and fit curves with multiple uncertainty ribbons.
+Depends: R (>= 4.0.0)
+Imports: grid, ggplot2 (>= 3.5.0), scales, rlang (>= 0.3.0), cli,
+        tibble, vctrs, withr, glue, gtable, distributional (>= 0.3.2),
+        numDeriv, quadprog, Rcpp
+Suggests: tidyselect, dplyr (>= 1.0.0), fda, posterior (>= 1.4.0),
+        beeswarm (>= 0.4.0), rmarkdown, knitr, testthat (>= 3.0.0),
+        vdiffr (>= 1.0.0), svglite (>= 2.1.0), fontquiver, sysfonts,
+        showtext, mvtnorm, covr, broom (>= 0.5.6), patchwork, tidyr (>=
+        1.0.0), ragg (>= 1.3.0), pkgdown
+License: GPL (>= 3)
+Language: en-US
+BugReports: https://github.com/mjskay/ggdist/issues
+URL: https://mjskay.github.io/ggdist/,
+        https://github.com/mjskay/ggdist/
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+LazyData: true
+Encoding: UTF-8
+Collate: "ggdist-package.R" "util.R" "compat.R" "rd.R" "RcppExports.R"
+        "abstract_geom.R" "abstract_stat.R"
+        "abstract_stat_slabinterval.R" "auto_partial.R"
+        "binning_methods.R" "bounder.R" "curve_interval.R"
+        "cut_cdf_qi.R" "data.R" "density.R" "distributions.R"
+        "draw_key_slabinterval.R" "geom.R" "geom_slabinterval.R"
+        "geom_dotsinterval.R" "geom_blur_dots.R" "geom_interval.R"
+        "geom_lineribbon.R" "geom_pointinterval.R" "geom_slab.R"
+        "geom_spike.R" "geom_swarm.R" "guide_rampbar.R"
+        "interval_widths.R" "lkjcorr_marginal.R" "parse_dist.R"
+        "partial_colour_ramp.R" "point_interval.R"
+        "position_dodgejust.R" "pr.R" "rd_density.R"
+        "rd_dotsinterval.R" "rd_slabinterval.R" "rd_spike.R"
+        "rd_lineribbon.R" "scale_colour_ramp.R" "scale_thickness.R"
+        "scale_side_mirrored.R" "scale_.R" "smooth.R" "stat.R"
+        "stat_slabinterval.R" "stat_dotsinterval.R" "stat_mcse_dots.R"
+        "stat_pointinterval.R" "stat_interval.R" "stat_lineribbon.R"
+        "stat_spike.R" "student_t.R" "subguide.R" "subscale.R"
+        "testthat.R" "theme_ggdist.R" "thickness.R"
+        "tidy_format_translators.R" "weighted_ecdf.R" "weighted_hist.R"
+        "weighted_quantile.R" "deprecated.R"
+Config/testthat/edition: 3
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2025-04-22 23:25:44 UTC; matth
+Author: Matthew Kay [aut, cre],
+  Brenton M. Wiernik [ctb]
+Repository: CRAN
+Date/Publication: 2025-04-23 00:20:02 UTC

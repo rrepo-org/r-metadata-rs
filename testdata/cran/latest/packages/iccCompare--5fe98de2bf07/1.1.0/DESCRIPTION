@@ -1,0 +1,26 @@
+Package: iccCompare
+Title: Comparison of Dependent Intraclass Correlation Coefficients
+Version: 1.1.0
+Authors@R: c(person(given = c("Josep", "Lluis"),
+                      family = "Carrasco",
+                      role = c("aut", "cre"),
+                      email = "jlcarrasco@ub.edu"),
+               person(given = c("Gonzalo", "Peon"),
+                      family = "Pena",
+                      role = "aut"))
+Maintainer: Josep Lluis Carrasco <jlcarrasco@ub.edu>
+Depends: R (>= 4.5)
+Imports: nlme, dplyr, Deriv, MASS, furrr, future, progressr,parallelly,
+        bbmle, mvtnorm
+Suggests: cccrm
+Description: Provides methods for testing the equality of dependent intraclass correlation coefficients (ICCs) estimated using linear mixed-effects models. Several of the implemented approaches are based on the work of Donner and Zou (2002) <doi:10.1111/1467-9884.00324>.
+License: GPL (>= 2)
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-10 12:15:12 UTC; jlcarrasco
+Author: Josep Lluis Carrasco [aut, cre],
+  Gonzalo Peon Pena [aut]
+Repository: CRAN
+Date/Publication: 2025-12-16 14:30:06 UTC

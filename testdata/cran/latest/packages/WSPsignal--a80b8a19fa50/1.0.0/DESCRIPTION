@@ -1,0 +1,33 @@
+Package: WSPsignal
+Title: Weibull Shape Parameter Tests for Signal Detection
+Version: 1.0.0
+Authors@R: 
+    c(
+    person("Julia", "Dyck", , "j.dyck@uni-bielefeld.de", role = "cre"),
+    person("Julia", "Dyck", role = "aut"),
+    person("Odile", "Sauzet", role = "aut")
+    )
+Description: Implementation of Bayesian and frequentist Weibull Shape Parameter (WSP) tests for signal detection in pharmacovigilance based on right-censored time-to-event data to flag associations between drugs and adverse events. The WSP test is based on the assumption of constant hazard reflected by a Weibull type distribution with shape parameters equal to one. Based on the shape parameter estimates (posterior distribution or point estimate), the WSP test method performs a hypothesis test on each shape parameter and combines them to a decision on the presence of a signal. Methods described in Sauzet and Cornelius (2022) <doi:10.3389/fphar.2022.889088>, Sauzet et al. (2024) <doi:10.1007/s40264-024-01460-2>, and Dyck and Sauzet (2025) <doi:10.48550/arXiv.2412.05463>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Biarch: true
+Depends: R (>= 3.5.0)
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>=
+        2.18.1), rstantools (>= 2.4.0), Rdpack, HDInterval, ROCR,
+        stats, graphics, magrittr, dplyr, tidyr, ggplot2, survival,
+        furrr
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+RdMacros: Rdpack
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-02 08:17:21 UTC; jdyck
+Author: Julia Dyck [cre],
+  Julia Dyck [aut],
+  Odile Sauzet [aut]
+Maintainer: Julia Dyck <j.dyck@uni-bielefeld.de>
+Repository: CRAN
+Date/Publication: 2026-07-09 07:30:08 UTC

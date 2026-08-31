@@ -1,0 +1,31 @@
+Package: tidyusmacro
+Title: Downloading and Cleaning U.S. Macroeconomic Data
+Version: 0.2.0
+Authors@R: 
+    person("Mike", "Konczal", email = "konczal@gmail.com", role = c("aut", "cre"))
+Description: Utilities to retrieve and tidy U.S. macroeconomic data series
+    from public government data providers. Functions streamline access to series
+    from the Federal Reserve Bank of St. Louis Federal Reserve Economic Data (FRED),
+    the Bureau of Labor Statistics flat files, and the Bureau of Economic
+    Analysis National Income and Product Accounts tables, then return
+    consistent, tidy data frames ready for modeling and graphics. The package includes
+    helpers for date alignment, log-linear projections, and common macro diagnostics,
+    along with convenience plot builders for quick publication-quality charts.
+License: MIT + file LICENSE
+URL: https://github.com/mtkonczal/tidyusmacro,
+        https://www.mikekonczal.com/tidyusmacro/
+BugReports: https://github.com/mtkonczal/tidyusmacro/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+LazyData: true
+Imports: dplyr, ggplot2, httr, magrittr, purrr, readr, rlang, stringi,
+        tidyr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-10 21:33:37 UTC; mtkonczal
+Author: Mike Konczal [aut, cre]
+Maintainer: Mike Konczal <konczal@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-12 07:00:02 UTC

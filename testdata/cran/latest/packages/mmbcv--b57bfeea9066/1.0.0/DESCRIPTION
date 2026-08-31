@@ -1,0 +1,26 @@
+Package: mmbcv
+Title: Multistate Model Bias-Corrected Robust Variance
+Version: 1.0.0
+Authors@R: c(
+    person("Can", "Meng", , "can.meng@yale.edu", role = c("aut", "cre")),
+    person("Denise", "Esserman", , "denise.esserman@yale.edu", role = "aut"),
+    person("Fan", "Li", , "fan.f.li@yale.edu", role = "aut"),
+    person("Erich", "Greene", , "erich.greene@yale.edu", role = "aut")
+  )
+Description: Computes robust and bias-corrected sandwich variance estimators for multi-state Cox models with clustered time-to-event data. Also provides Wald tests for heterogeneity, generalized least-squares linear trends, and order-restricted trends among transition-specific coefficients. The methodology extends the marginal Cox model bias-correction framework of Wang et al. (2023) <doi:10.1002/bimj.202200113> to the multi-state setting.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, survival, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Depends: R (>= 3.5.0)
+Packaged: 2026-07-22 00:44:22 UTC; cmeng
+Author: Can Meng [aut, cre],
+  Denise Esserman [aut],
+  Fan Li [aut],
+  Erich Greene [aut]
+Maintainer: Can Meng <can.meng@yale.edu>
+Repository: CRAN
+Date/Publication: 2026-07-22 05:50:02 UTC

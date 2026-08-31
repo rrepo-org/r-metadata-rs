@@ -1,0 +1,31 @@
+Package: LLMTranslate
+Title: 'shiny' App for TRAPD/ISPOR Survey Translation with LLMs
+Version: 0.4.0
+Authors@R: 
+    person(given = "Jonas R.", family = "Kunst",
+           email = "jonas.r.kunst@bi.no",
+           role = c("aut","cre"))
+Description: A 'shiny' application to automate forward and back survey translation
+    with optional reconciliation using large language models (LLMs). Supports
+    both item-by-item and batch translation modes for optimal performance and
+    context-aware translations. Handles multi-sheet Excel files and supports
+    OpenAI (GPT), Google Gemini, and Anthropic Claude models. Follows the
+    TRAPD (Translation, Review, Adjudication, Pretesting, Documentation)
+    framework and ISPOR (International Society for Pharmacoeconomics and
+    Outcomes Research) recommendations. See Harkness et al. (2010)
+    <doi:10.1002/9780470609927.ch7> and Wild et al. (2005)
+    <doi:10.1111/j.1524-4733.2005.04054.x>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: shiny
+Suggests: DT, readxl, writexl, openxlsx, httr2, jsonlite, glue, later,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-18 14:19:13 UTC; A2310316
+Author: Jonas R. Kunst [aut, cre]
+Maintainer: Jonas R. Kunst <jonas.r.kunst@bi.no>
+Repository: CRAN
+Date/Publication: 2026-06-18 14:40:02 UTC

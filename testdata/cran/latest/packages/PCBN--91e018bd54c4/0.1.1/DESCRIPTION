@@ -1,0 +1,30 @@
+Package: PCBN
+Title: Inference of Pair-Copula Bayesian Networks
+Version: 0.1.1
+Authors@R: c(
+    person("Alexis", "Derumigny", , email = "a.f.f.derumigny@tudelft.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6163-8097")),
+    person("Niels", "Horsman", , "niels.horsman@hotmail.nl", role = c("aut")),
+    person("Dorota", "Kurowicka", , "D.Kurowicka@tudelft.nl", role = c("aut"))
+    )
+Description: Creates, fits and samples Pair-Copula Bayesian networks (PCBN)
+    under some restrictions on the underlying Directed Acyclic Graph (DAG),
+    that is, no active cycles nor interfering v-structures, following 
+    Derumigny, Horsman and Kurowicka (2025) <doi:10.48550/arXiv.2510.03518>.
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: bnlearn, igraph, r2r, VineCopula
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), data.tree, Rgraphviz
+URL: https://github.com/AlexisDerumigny/PCBN
+BugReports: https://github.com/AlexisDerumigny/PCBN/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-11-12 16:20:32 UTC; aderumigny
+Author: Alexis Derumigny [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6163-8097>),
+  Niels Horsman [aut],
+  Dorota Kurowicka [aut]
+Maintainer: Alexis Derumigny <a.f.f.derumigny@tudelft.nl>
+Repository: CRAN
+Date/Publication: 2025-11-17 21:00:07 UTC

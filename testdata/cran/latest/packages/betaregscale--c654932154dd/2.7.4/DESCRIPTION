@@ -1,0 +1,48 @@
+Package: betaregscale
+Type: Package
+Title: Beta Regression for Interval-Censored Scale-Derived Outcomes
+Version: 2.7.4
+Authors@R: c(person(given = "José Evandeilton",
+                    family = "Lopes",
+                    role = c("aut", "cre"),
+                    email = "evandeilton@gmail.com",
+                    comment = c(ORCID = "0009-0007-5887-4084")),
+             person(given = "Wagner Hugo",
+                    family = "Bonat",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-0349-7054")))
+Maintainer: José Evandeilton Lopes <evandeilton@gmail.com>
+Description: Maximum-likelihood estimation of beta regression models for
+    responses derived from bounded rating scales. Observations are treated
+    as interval-censored on (0, 1) after a scale-to-unit transformation,
+    and the likelihood is built from the difference of the beta CDF at the
+    interval endpoints. The complete likelihood supports mixed censoring
+    types: uncensored, left-censored, right-censored, and
+    interval-censored observations. Both fixed- and
+    variable-dispersion submodels are supported, with flexible link
+    functions for the mean and precision components. A compiled C++ backend
+    (via 'Rcpp' and 'RcppArmadillo') provides numerically stable,
+    high-performance log-likelihood evaluation. Standard S3 methods
+    (print(), summary(), coef(), fitted(), residuals(), predict(),
+    plot(), confint(), vcov(), logLik(), AIC(), BIC()) are available
+    for fitted objects.
+License: MIT + file LICENSE
+URL: https://evandeilton.github.io/betaregscale/,
+        https://github.com/evandeilton/betaregscale
+BugReports: https://github.com/evandeilton/betaregscale/issues
+Depends: R (>= 4.1.0)
+Imports: Formula, ggplot2, numDeriv, Rcpp (>= 1.0.12), rlang, stats
+Suggests: gridExtra, knitr, MASS, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Packaged: 2026-08-23 17:25:49 UTC; evandeilton
+Author: José Evandeilton Lopes [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-5887-4084>),
+  Wagner Hugo Bonat [aut] (ORCID:
+    <https://orcid.org/0000-0002-0349-7054>)
+Repository: CRAN
+Date/Publication: 2026-08-23 18:00:02 UTC

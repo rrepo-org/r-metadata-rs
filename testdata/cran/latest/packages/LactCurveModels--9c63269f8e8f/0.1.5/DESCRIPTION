@@ -1,0 +1,67 @@
+Package: LactCurveModels
+Title: Lactation Curve Model Fitting for Dairy Animals
+Version: 0.1.5
+Suggests: knitr, rmarkdown, spelling
+VignetteBuilder: knitr
+Config/Needs/check: spelling
+Authors@R: c(
+    person(given = "Raja",
+           family = "TV",
+           role = c("aut", "cre"),
+           email = "venkatesanraja09@gmail.com"),
+    person(given = "Lalremruati",
+           family = "PC",
+           role = "aut",
+           email = "lalremruatichalthleng221@gmail.com"),
+    person(given = "Priyadharshini",
+           family = "P",
+           role = "aut",
+           email = "priyapandian733@gmail.com"),
+    person(given = "Nidhishree",
+           family = "NS",
+           role = "aut",
+           email = "nidhishreens9216@gmail.com"),
+    person(given = "Dheeraj",
+           family = "Gurjar",
+           role = "aut",
+           email = "dheeraj.gurjar.singh@gmail.com"),
+    person(given = "Rani",
+           family = "Alex",
+           role = "aut",
+           email = "ranialex01vet@gmail.com"),
+    person(given = "Vikas",
+           family = "Vohra",
+           role = "aut",
+           email = "vohravikas@gmail.com"))
+Description: Fits up to 20 nonlinear lactation curve models to dairy animal
+    milk yield data. Models fitted include exponential, polynomial, mixed
+    logarithmic, inverse polynomial, and sigmoid families published
+    between 1923 and 2000. Supports batch processing of multiple animals
+    from a single CSV file, with flexible selection of animals and models.
+    Produces per-animal parameter tables, goodness-of-fit metrics including
+    R-squared (R2), Root Mean Square Error (RMSE), Akaike Information
+    Criterion (AIC), Bayesian Information Criterion (BIC), and a serial
+    autocorrelation statistic, 15 diagnostic figures, and combined
+    cross-animal comparison outputs.
+    References: <doi:10.1085/jgp.5.4.441>, <doi:10.1038/216164a0>,
+    <doi:10.1016/0301-6226(87)90003-0>, <doi:10.4141/cjas87-067>,
+    <doi:10.3168/jds.S0022-0302(00)75136-8>.
+License: GPL-3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+Imports: stats, utils, grDevices, graphics
+URL: https://github.com/venkatesanraja/LactCurveModels
+BugReports: https://github.com/venkatesanraja/LactCurveModels/issues
+NeedsCompilation: no
+Packaged: 2026-03-25 03:39:51 UTC; hp
+Author: Raja TV [aut, cre],
+  Lalremruati PC [aut],
+  Priyadharshini P [aut],
+  Nidhishree NS [aut],
+  Dheeraj Gurjar [aut],
+  Rani Alex [aut],
+  Vikas Vohra [aut]
+Maintainer: Raja TV <venkatesanraja09@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-29 17:00:02 UTC

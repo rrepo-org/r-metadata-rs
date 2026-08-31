@@ -1,0 +1,47 @@
+Package: TSQCA
+Type: Package
+Title: DEPRECATED: Threshold Sweep Extensions for Qualitative
+        Comparative Analysis
+Version: 1.3.3
+Authors@R: c(
+    person("Yuki", "Toyoda", role = c("aut", "cre"),
+           email = "yuki.toyoda.ds@hosei.ac.jp"),
+    person("Japan Society for the Promotion of Science", role = "fnd",
+           comment = "KAKENHI Grant Number JP20K01998"))
+Description: DEPRECATED: This package has been superseded by 'ThSQCA'.
+    Please use install.packages('ThSQCA') instead. Provides threshold sweep methods for Qualitative Comparative 
+    Analysis (QCA). Implements Condition Threshold Sweep-Single (CTS-S), 
+    Condition Threshold Sweep-Multiple (CTS-M), Outcome Threshold Sweep (OTS), 
+    and Dual Threshold Sweep (DTS) for systematic exploration of threshold 
+    calibration effects on crisp-set QCA results. These methods extend 
+    traditional robustness approaches by treating threshold variation as an 
+    exploratory tool for discovering causal structures. Also provides Fiss 
+    (2011) <doi:10.5465/amj.2011.60263120> core/peripheral condition 
+    classification via compute_fiss_core() and generate_fiss_chart(), enabling 
+    four-symbol configuration charts that distinguish core conditions (present 
+    in both parsimonious and intermediate solutions) from peripheral conditions 
+    (intermediate only). Built on top of the 'QCA' package by Dusa (2019) 
+    <doi:10.1007/978-3-319-75668-4>, with function arguments following 'QCA' 
+    conventions. Based on set-theoretic methods by Ragin (2008) 
+    <doi:10.7208/chicago/9780226702797.001.0001> and established robustness 
+    protocols by Rubinson et al. (2019) <doi:10.1177/00491241211036158>.
+Depends: R (>= 4.0)
+Imports: QCA
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+URL: https://github.com/im-research-yt/ThSQCA,
+        https://doi.org/10.5281/zenodo.17899390
+BugReports: https://github.com/im-research-yt/ThSQCA/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-30 12:24:31 UTC; yukit
+Author: Yuki Toyoda [aut, cre],
+  Japan Society for the Promotion of Science [fnd] (KAKENHI Grant Number
+    JP20K01998)
+Maintainer: Yuki Toyoda <yuki.toyoda.ds@hosei.ac.jp>
+Repository: CRAN
+Date/Publication: 2026-05-30 14:50:02 UTC

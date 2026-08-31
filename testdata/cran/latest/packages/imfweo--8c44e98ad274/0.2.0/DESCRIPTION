@@ -1,0 +1,32 @@
+Package: imfweo
+Title: Seamless Access to IMF World Economic Outlook (WEO) Data
+Version: 0.2.0
+Authors@R: 
+    c(person("Teal", "Emery", , "lte@tealinsights.com", role = c("aut", "cre")),
+      person("Teal Insights", role = c("cph")),
+      person("Christoph", "Scheuch", , "christoph@tidy-intelligence.com",
+             role = c("aut"), comment = c(ORCID = "0009-0004-0423-6819")))
+Description: Provides tools to download, process, and analyze data from the
+    International Monetary Fund's World Economic Outlook (WEO) 
+    <https://www.imf.org/en/publications/weo>. 
+    Functions support downloading complete WEO releases, accessing specific 
+    economic indicators for selected countries, and listing available data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, httr2, readr, readxl, rlang, tibble, tidyr
+Suggests: curl, testthat, withr
+Config/testthat/edition: 3
+URL: https://teal-insights.github.io/r-imfweo/,
+        https://github.com/teal-insights/r-imfweo/
+BugReports: https://github.com/teal-insights/r-imfweo/issues
+NeedsCompilation: no
+Packaged: 2026-08-24 07:01:24 UTC; krise
+Author: Teal Emery [aut, cre],
+  Teal Insights [cph],
+  Christoph Scheuch [aut] (ORCID:
+    <https://orcid.org/0009-0004-0423-6819>)
+Maintainer: Teal Emery <lte@tealinsights.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 16:20:27 UTC

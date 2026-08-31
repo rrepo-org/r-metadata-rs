@@ -1,0 +1,31 @@
+Package: mqriskR
+Type: Package
+Title: Actuarial Risk Modeling and Life Contingencies
+Version: 0.1.1
+Authors@R: c(
+    person(
+      "Nii", "Okine",
+      email = "okinean@appstate.edu",
+      role = c("aut", "cre")
+    )
+  )
+Description: Provides functions for actuarial risk modeling, including survival models,
+    life annuities, multiple-decrement models, and mortality improvement projections.
+    The package is designed to align with standard actuarial notation and supports
+    teaching, exam preparation, and reproducible actuarial analysis. The methods are
+    based on standard actuarial references including Camilli, Duncan and London (2014,
+    ISBN:9781625423474) "Models for Quantifying Risk" and Dickson, Hardy and Waters
+    (2020, ISBN:9781108478083) "Actuarial Mathematics for Life Contingent Risks".
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: ggplot2, testthat (>= 3.0.0), expm, knitr, rmarkdown
+Config/testthat/edition: 3
+Imports: stats, utils
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 22:56:17 UTC; okinean
+Author: Nii Okine [aut, cre]
+Maintainer: Nii Okine <okinean@appstate.edu>
+Repository: CRAN
+Date/Publication: 2026-07-28 00:10:01 UTC

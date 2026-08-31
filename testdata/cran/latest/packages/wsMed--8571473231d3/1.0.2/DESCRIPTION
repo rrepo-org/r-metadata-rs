@@ -1,0 +1,40 @@
+Package: wsMed
+Title: Within-Subject Mediation Analysis Using Structural Equation
+        Modeling
+Version: 1.0.2
+Authors@R: 
+    c(person(given = "Wendie",
+             family ="Yang",
+             role = c("aut", "cre"),
+             email = "1581075494q@gmail.com",
+             comment = c(ORCID = "0009-0000-8388-6481")),
+      person(given = "Shu Fai",
+             family = "Cheung",
+             role = c("aut"),
+             email = "shufai.cheung@gmail.com",
+             comment = c(ORCID = "0000-0002-9871-9448")))
+Description: Within-subject mediation analysis using structural equation modeling.
+    Examine how changes in an outcome variable between two conditions are mediated 
+    through one or more variables. Supports within-subject mediation analysis using 
+    the 'lavaan' package by Rosseel (2012) <doi:10.18637/jss.v048.i02>, 
+    and extends Monte Carlo confidence interval estimation to missing data scenarios 
+    using the 'semmcci' package by Pesigan and Cheung (2023) <doi:10.3758/s13428-023-02114-4>.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: rmarkdown, devtools, testthat
+Config/testthat/edition: 3
+Imports: knitr, lavaan, semmcci, mice, semboottools, MASS, rlang,
+        dplyr, ggplot2, methods, stats
+VignetteBuilder: knitr
+LazyData: true
+URL: https://yangzhen1999.github.io/wsMed/
+BugReports: https://github.com/Yangzhen1999/wsMed/issues
+NeedsCompilation: no
+Packaged: 2025-12-06 12:34:07 UTC; Administrator
+Author: Wendie Yang [aut, cre] (ORCID: <https://orcid.org/0009-0000-8388-6481>),
+  Shu Fai Cheung [aut] (ORCID: <https://orcid.org/0000-0002-9871-9448>)
+Maintainer: Wendie Yang <1581075494q@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-11 13:30:02 UTC

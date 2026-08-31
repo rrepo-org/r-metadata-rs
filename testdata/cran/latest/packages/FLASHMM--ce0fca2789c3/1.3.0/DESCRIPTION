@@ -1,0 +1,29 @@
+Package: FLASHMM
+Title: Fast and Scalable Single Cell Differential Expression Analysis
+        using Mixed-Effects Models
+Version: 1.3.0
+Authors@R: c(
+  person("Changjiang", "Xu", email = "changjiang.xu@utoronto.ca", role = c("aut", "cre")),
+  person("Delaram", "Pouyabahar", email = "d.pouyabahar@mail.utoronto.ca", role = "ctb"),
+  person("Veronique", "Voisin", email = "veronique.voisin@gmail.com", role = "ctb"),
+  person("Gary", "Bader", email = "gary.bader@utoronto.ca", role = "ctb"))
+Description: A fast and scalable linear mixed-effects model (LMM) estimation algorithm 
+    for analysis of single-cell differential expression. The algorithm uses 
+    summary-level statistics and requires less computer memory to fit the LMM. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats, MASS, Matrix
+Suggests: knitr, rmarkdown, devtools
+VignetteBuilder: knitr
+URL: https://github.com/BaderLab/FLASHMM
+BugReports: https://github.com/BaderLab/FLASHMM/issues
+NeedsCompilation: no
+Packaged: 2026-04-07 17:28:41 UTC; changjiangxu
+Author: Changjiang Xu [aut, cre],
+  Delaram Pouyabahar [ctb],
+  Veronique Voisin [ctb],
+  Gary Bader [ctb]
+Maintainer: Changjiang Xu <changjiang.xu@utoronto.ca>
+Repository: CRAN
+Date/Publication: 2026-04-07 17:40:02 UTC

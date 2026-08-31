@@ -1,0 +1,25 @@
+Package: demofit
+Title: Parametric Mortality Curve Fitting and Mortality Forecasting
+        Tools
+Version: 0.1.5
+Authors@R: person("Jackie", "Li", , "jackieli@smu.edu.sg", role = c("aut", "cre", "cph"))
+Author: Jackie Li [aut, cre, cph]
+Maintainer: Jackie Li <jackieli@smu.edu.sg>
+Description: 
+    Provides tools for fitting parametric mortality curves. Implements multiple optimisation strategies to enhance robustness and stability of parameter estimation. Offers tools for forecasting mortality rates guided by mortality curves. 
+ For modelling details see: 
+ Tabeau (2001) <doi:10.1007/0-306-47562-6_1>, 
+ Renshaw and Haberman (2006) <doi:10.1016/j.insmatheco.2005.12.001>, 
+ Cairns et al. (2009) <doi:10.1080/10920277.2009.10597538>,
+ Li and Lee (2005) <doi: 10.1353/dem.2005.0021>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: forecast, minpack.lm, MortalityLaws, NlcOptim, stats, MASS,
+        graphics, grDevices
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-13 13:05:12 UTC; likak
+Repository: CRAN
+Date/Publication: 2026-08-19 22:20:23 UTC

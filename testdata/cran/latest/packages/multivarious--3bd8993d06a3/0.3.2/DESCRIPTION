@@ -1,0 +1,29 @@
+Package: multivarious
+Title: Extensible Data Structures for Multivariate Analysis
+Version: 0.3.2
+Authors@R: 
+    person(given = "Bradley",
+           family = "Buchsbaum",
+           role = c("aut", "cre"),
+           email = "brad.buchsbaum@gmail.com",
+           comment = c(ORCID = "0000-0002-1108-4866"))
+Description: Provides a set of basic and extensible data structures and functions for multivariate analysis, including dimensionality reduction techniques, projection methods, and preprocessing functions. The aim of this package is to offer a flexible and user-friendly framework for multivariate analysis that can be easily extended for custom requirements and specific data analysis tasks.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: rlang, chk, corpcor, Matrix, geigen, tibble, methods, cli,
+        lifecycle
+Suggests: assertthat, covr, crayon, dplyr, future, future.apply,
+        ggplot2, ggrepel, glmnet, GPArotation, irlba, knitr, lme4,
+        magrittr, MASS, matrixStats, pls, proxy, randomForest,
+        reformulas, rmarkdown, rsvd, RSpectra, svd, testthat, withr
+URL: https://bbuchsbaum.github.io/multivarious/
+VignetteBuilder: knitr
+Config/Needs/website: albersdown
+NeedsCompilation: no
+Packaged: 2026-06-05 18:01:38 UTC; bbuchsbaum
+Author: Bradley Buchsbaum [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1108-4866>)
+Maintainer: Bradley Buchsbaum <brad.buchsbaum@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-05 22:00:02 UTC

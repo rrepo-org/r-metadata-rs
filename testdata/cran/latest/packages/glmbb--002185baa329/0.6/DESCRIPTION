@@ -1,0 +1,23 @@
+Package: glmbb
+Version: 0.6
+Date: 2026-07-21
+Title: All Hierarchical or Graphical Generalized Linear Models
+Authors@R: person(given = c("Charles", "J."), family = "Geyer",
+    role = c("aut", "cre"), email = "geyer@umn.edu",
+    comment = c(ORCID = "0000-0003-1471-1703"))
+Depends: R (>= 4.2.0)
+Imports: stats, digest
+ByteCompile: TRUE
+Description: Find all hierarchical models of specified generalized linear
+    model with information criterion (AIC, BIC, or AICc) within specified
+    cutoff of minimum value.  Alternatively, find all such graphical models.
+    Use branch and bound algorithm so we do not have to fit all models.
+License: MIT + file LICENSE
+URL: https://github.com/cjgeyer/glmbb
+NeedsCompilation: no
+Packaged: 2026-07-21 19:14:04 UTC; geyer
+Author: Charles J. Geyer [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1471-1703>)
+Maintainer: Charles J. Geyer <geyer@umn.edu>
+Repository: CRAN
+Date/Publication: 2026-07-21 22:10:21 UTC

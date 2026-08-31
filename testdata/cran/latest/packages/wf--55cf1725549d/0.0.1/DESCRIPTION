@@ -1,0 +1,30 @@
+Package: wf
+Title: Artificial Intelligence Workflow Tools
+Version: 0.0.1
+Authors@R: 
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "cre"),
+           email = "ctkenny@proton.me",
+           comment = c(ORCID = "0000-0002-9386-6860"))
+Description: Manage skills for large language model coding agents. Supports
+    installing skills from 'GitHub' or local directories, tracking versions in
+    a lock file, and keeping installations current. Installations can be scoped
+    to a single project or shared globally across projects.
+URL: https://christophertkenny.com/wf/,
+        https://github.com/christopherkenny/wf
+BugReports: https://github.com/christopherkenny/wf/issues
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli (>= 3.6.0), fs, gh, jsonlite, rlang (>= 1.1.0), yaml
+Suggests: testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-15 22:39:56 UTC; chris
+Author: Christopher T. Kenny [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9386-6860>)
+Maintainer: Christopher T. Kenny <ctkenny@proton.me>
+Repository: CRAN
+Date/Publication: 2026-03-19 14:40:02 UTC

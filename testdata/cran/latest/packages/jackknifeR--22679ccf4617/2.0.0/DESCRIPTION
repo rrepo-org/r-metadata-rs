@@ -1,0 +1,24 @@
+Type: Package
+Package: jackknifeR
+Title: Delete-d Jackknife for Point and Interval Estimation
+Version: 2.0.0
+Authors@R: 
+    person("S.", "Mohanasundaram", , "s.mohanasundaram@outlook.com", role = c("aut", "cre"),
+           comment = "ORCID = 0000-0003-4639-9419")
+Description: Implements delete-d jackknife resampling for robust statistical estimation. 
+    The package provides both weighted (HC3-adjusted) and unweighted versions of 
+    jackknife estimation, with parallel computation support. Suitable for biomedical 
+    research and other fields requiring robust variance estimation.
+License: GPL (>= 3)
+BugReports: https://github.com/MohanasundaramS/jackknifeR/issues
+Imports: doFuture, foreach, future, future.apply, stats, utils
+Suggests: spelling
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-04-18 06:18:07 UTC; Mohan
+Author: S. Mohanasundaram [aut, cre] (ORCID = 0000-0003-4639-9419)
+Maintainer: S. Mohanasundaram <s.mohanasundaram@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-04-18 08:10:02 UTC

@@ -1,0 +1,29 @@
+Package: BayesPIM
+Title: Bayesian Prevalence-Incidence Mixture Model
+Version: 2.0
+Authors@R: 
+    person("Thomas", "Klausch", email = "t.klausch@amsterdamumc.nl", role = c("aut", "cre"))
+Description: Models time-to-event data from interval-censored
+    screening studies. It accounts for latent prevalence at baseline and
+    incorporates misclassification due to imperfect test sensitivity. For usage
+    details, see the package vignette "BayesPIM_intro". Further details can be
+    found in Klausch, Lissenberg-Witte and Coupé (2026)
+    <doi:10.1002/sim.70433>.
+License: MIT + file LICENSE
+URL: https://github.com/thomasklausch2/BayesPIM
+BugReports: https://github.com/thomasklausch2/BayesPIM/issues
+Encoding: UTF-8
+Language: en-US
+LinkingTo: Rcpp
+Imports: Rcpp, MASS, doParallel, foreach, parallel, actuar, posterior,
+        survival, flexsurv, graphics, grDevices, stats, utils
+Depends: R (>= 3.5.0), coda
+Suggests: knitr, rmarkdown, bookdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-21 11:10:10 UTC; thomasklausch
+Author: Thomas Klausch [aut, cre]
+Maintainer: Thomas Klausch <t.klausch@amsterdamumc.nl>
+Repository: CRAN
+Date/Publication: 2026-08-21 13:50:21 UTC

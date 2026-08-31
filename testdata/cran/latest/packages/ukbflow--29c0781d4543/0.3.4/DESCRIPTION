@@ -1,0 +1,33 @@
+Package: ukbflow
+Title: Streamlined Workflow for UK Biobank Data Extraction, Analysis,
+        and Visualization
+Version: 0.3.4
+Authors@R: 
+    person("Yibin", "Zhou", email = "evanzhou.bio@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0009-4600-8175"))
+Description: Provides a streamlined workflow for UK Biobank cloud-based
+    analysis on the Research Analysis Platform (RAP). Includes tools for
+    phenotype extraction and decoding, variable derivation, survival and
+    association analysis, genetic risk score computation, and
+    publication-quality visualization. For details on the UK Biobank
+    resource, see Bycroft et al. (2018) <doi:10.1038/s41586-018-0579-z>.
+License: MIT + file LICENSE
+URL: https://github.com/evanbio/ukbflow,
+        https://evanbio.github.io/ukbflow/
+BugReports: https://github.com/evanbio/ukbflow/issues
+Depends: R (>= 4.1)
+Imports: broom, cli, curl, data.table, dplyr, forestploter, gt,
+        gtsummary, jsonlite, processx, rlang, survival, tidyselect,
+        tools
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, pagedown, pROC, rmarkdown, testthat (>= 3.0.0),
+        mockery, webshot2, withr
+VignetteBuilder: knitr, rmarkdown
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-08 11:19:45 UTC; 84241
+Author: Yibin Zhou [aut, cre] (ORCID: <https://orcid.org/0009-0009-4600-8175>)
+Maintainer: Yibin Zhou <evanzhou.bio@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-08 19:10:02 UTC

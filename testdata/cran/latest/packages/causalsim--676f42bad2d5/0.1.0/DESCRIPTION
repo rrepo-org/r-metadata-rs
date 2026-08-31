@@ -1,0 +1,29 @@
+Package: causalsim
+Title: Simulation-Ready Causal Data Generating Processes
+Version: 0.1.0
+Authors@R: 
+    person("Chayce", "Reed", email = "Chayce.Reed.HSE@dartmouth.edu", role = c("aut", "cre"))
+Description: Construct, simulate, and evaluate causal data generating processes
+    (DGPs) with known ground truth. Designed for benchmarking causal estimators,
+    studying confounding and treatment-effect heterogeneity, and building
+    reproducible teaching examples. Covariate roles (confounder, effect modifier,
+    noise) and heterogeneous treatment effects are first-class concepts in the
+    API, and estimator performance is summarised with bias, root mean squared
+    error, confidence-interval coverage, and power.
+License: MIT + file LICENSE
+URL: https://chaycereed.github.io/causalsim/,
+        https://github.com/chaycereed/causalsim
+BugReports: https://github.com/chaycereed/causalsim/issues
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.3.3
+Suggests: knitr, pkgdown, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+NeedsCompilation: no
+Packaged: 2026-08-21 12:34:36 UTC; chayce
+Author: Chayce Reed [aut, cre]
+Maintainer: Chayce Reed <Chayce.Reed.HSE@dartmouth.edu>
+Repository: CRAN
+Date/Publication: 2026-08-30 10:00:15 UTC

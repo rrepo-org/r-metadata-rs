@@ -1,0 +1,54 @@
+Package: DTRreg
+Type: Package
+Title: DTR Estimation and Inference via G-Estimation, Dynamic WOLS,
+        Q-Learning, and Dynamic Weighted Survival Modeling (DWSurv)
+Version: 2.4
+Date: 2026-05-10
+Author: Michael Wallace [aut],
+  Erica E M Moodie [aut],
+  David A Stephens [aut],
+  Gabrielle Simoneau [aut],
+  Shannon T. Holloway [aut, cre],
+  Juliana Schulz [aut]
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Authors@R: c(person(given = "Michael",
+                      family = "Wallace",
+                      role = "aut"),
+               person(given = c("Erica", "E", "M"),
+                      family = "Moodie",
+                      role = "aut"),
+               person(given = c("David", "A"),
+                      family = "Stephens",
+                      role = "aut"),
+               person(given = "Gabrielle",
+                      family = "Simoneau",
+                      role = "aut"),
+               person(given = c("Shannon", "T."),
+                      family = "Holloway",
+                      role = c("aut", "cre"),
+                      email = "shannon.t.holloway@gmail.com"),
+               person(given = "Juliana",
+                      family = "Schulz",
+                      role = "aut"))
+Description: Dynamic treatment regime estimation and inference via G-estimation, 
+  dynamic weighted ordinary least squares (dWOLS) and Q-learning. Inference via 
+  bootstrap and recursive sandwich estimation. Estimation and 
+  inference for survival outcomes via Dynamic Weighted Survival Modeling (DWSurv). 
+  Extension to continuous treatment variables. Wallace et al. (2017) 
+  <DOI:10.18637/jss.v080.i02>; Simoneau et al. (2020) 
+  <DOI:10.1080/00949655.2020.1793341>.
+License: GPL-2
+Imports: ggplot2, ggplotify, graphics, nnet, R6, stats, utils
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Repository: CRAN
+Collate: 'treatmentClasses.R' 'Ahat.R' 'varest.R' 'sandwich.R'
+        'utils.R' 'weights.R' 'gest.R' 'dwols.R' 'dtrProcedure.R'
+        'bootstrapStep.R' 'variance.R' 'interactive.R'
+        'inputProcessing.R' 'DTRreg.R' 'DWsurv.R' 'chooseM.R'
+        'data_generate.R' 's3-methods.R'
+Depends: R (>= 4.1.0)
+Packaged: 2026-05-13 16:04:10 UTC; 19194
+Date/Publication: 2026-05-13 16:30:02 UTC

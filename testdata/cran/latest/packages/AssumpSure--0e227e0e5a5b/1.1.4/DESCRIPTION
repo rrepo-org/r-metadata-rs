@@ -1,0 +1,27 @@
+Package: AssumpSure
+Title: 'shiny' Application for Statistical Test Assumption Checking and
+        Guidance
+Version: 1.1.4
+Authors@R: 
+    person("Ahmed", "Bargheet", , "ahmed.bargheet@yahoo.com", role = c("aut", "cre"))
+Description: A 'shiny' application to assess statistical assumptions and guide users toward appropriate tests. The app is designed for researchers with minimal statistical training and provides diagnostics, plots, and test recommendations for a wide range of analyses. Many statistical assumptions are implemented using the package 'rstatix' (Kassambara, 2019) <doi:10.32614/CRAN.package.rstatix> and 'performance' (Lüdecke et al., 2021) <doi:10.21105/joss.03139>.
+License: GPL-3
+Imports: shiny, shinyjs, shinyBS, bslib, htmltools, shinyscreenshot,
+        fontawesome, tidyverse, rstatix, ggpubr, knitr, compositions,
+        car, correlation, MVN, performance, modelbased, patchwork, see,
+        bestNormalize, DHARMa, lmerTest, lme4, MASS, nnet, broom,
+        broom.mixed, DT, kableExtra, sjPlot, brglm2, glmmTMB,
+        effectsize, coin, dplyr
+Depends: R (>= 4.2.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/Ahmedbargheet/AssumpSure
+BugReports: https://github.com/Ahmedbargheet/AssumpSure/issues
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-11-25 10:59:36 UTC; ahmedbargheet
+Author: Ahmed Bargheet [aut, cre]
+Maintainer: Ahmed Bargheet <ahmed.bargheet@yahoo.com>
+Repository: CRAN
+Date/Publication: 2025-11-25 11:20:18 UTC

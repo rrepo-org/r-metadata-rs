@@ -1,0 +1,22 @@
+Package: kernreg
+Type: Package
+Title: Nadaraya-Watson Kernel Regression
+Version: 1.0
+Authors@R: c(person("Michail", "Tsagris", role = c("aut", "cre"), email = "mtsagris@uoc.gr"),
+            person("Christos", "Adam", role = "aut", email = "econp266@econ.soc.uoc.gr",
+             comment = c(ORCID = "0009-0003-3244-7034")))
+Maintainer: Michail Tsagris <mtsagris@uoc.gr>
+Depends: R (>= 4.0)
+Imports: Rcpp, RcppParallel, Rfast, Rfast2
+LinkingTo: Rcpp, RcppParallel
+Encoding: UTF-8
+SystemRequirements: GNU make
+Description: Fast implementation of Nadaraya-Watson kernel regression for either univariate or multivariate responses, with one or more bandwidths. K-fold cross-validation is also performed. 
+License: GPL (>= 2)
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-02-12 11:34:55 UTC; mtsag
+Author: Michail Tsagris [aut, cre],
+  Christos Adam [aut] (ORCID: <https://orcid.org/0009-0003-3244-7034>)
+Repository: CRAN
+Date/Publication: 2026-02-16 18:00:09 UTC

@@ -1,0 +1,25 @@
+Package: ElicitationWizard
+Title: LLM-Based Bayesian Prior Elicitation Wizard
+Version: 0.1.0
+Date: 2026-05-18
+Authors@R: person("Jeffery A. Kportufe", role = c("aut", "cre"), email = "ayitikpo@rptu.de")
+Description: 'Shiny' application for eliciting Bayesian prior distributions
+    using large language models (LLMs). Supports multiple LLM experts,
+    linear opinion pooling, and the Delphi method for iterative consensus.
+    For more details see J. R. Falconer et al. (2022) <doi:10.1287/deca.2022.0451>
+    and D. Selby et al. (2025) <doi:10.1002/sta4.70054>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/JefferyAyiti/Automated_Elicitation
+BugReports: https://github.com/JefferyAyiti/Automated_Elicitation/issues
+Imports: shiny, bslib, ellmer, future, promises, shinyjs, commonmark
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, pak
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-26 20:38:28 UTC; griff
+Author: Jeffery A. Kportufe [aut, cre]
+Maintainer: Jeffery A. Kportufe <ayitikpo@rptu.de>
+Repository: CRAN
+Date/Publication: 2026-05-29 12:30:08 UTC

@@ -1,0 +1,38 @@
+Package: fjoin
+Type: Package
+Title: Data Frame Joins Leveraging 'data.table'
+Version: 0.1.1
+Authors@R: c(
+    person(
+      "Toby", "Robertson",
+      email = "trobx@proton.me",
+      role = c("aut", "cre")
+    )
+  )
+Description: Extends 'data.table' join functionality, lets it work with any
+  data frame class, and provides a familiar 'x'/'y'-style interface, enabling
+  broad use across R. Offers NA-safe matching by default, on-the-fly column
+  selection, multiple match-handling on both sides, 'x' or 'y' row order, and a
+  row origin indicator. Performs inner, left, right, full, semi- and anti-joins
+  with equality and inequality conditions, plus cross joins. Specific support
+  for 'data.table', (grouped) tibble, and 'sf'/'sfc' objects and their
+  attributes; returns a plain data frame otherwise. Avoids data-copying of
+  inputs and outputs. Allows displaying the 'data.table' code instead of (or as
+  well as) executing it.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.3.0)
+Imports: data.table
+Suggests: dplyr (>= 1.1.0), sf, testthat (>= 3.0.0), knitr, rmarkdown,
+        quarto, bench, ggplot2
+URL: https://trobx.github.io/fjoin/
+BugReports: https://github.com/trobx/fjoin/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr, quarto
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-18 10:42:49 UTC; Toby
+Author: Toby Robertson [aut, cre]
+Maintainer: Toby Robertson <trobx@proton.me>
+Repository: CRAN
+Date/Publication: 2026-03-18 11:40:02 UTC

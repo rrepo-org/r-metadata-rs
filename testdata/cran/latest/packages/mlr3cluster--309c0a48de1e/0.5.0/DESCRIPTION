@@ -1,0 +1,67 @@
+Package: mlr3cluster
+Title: Cluster Extension for 'mlr3'
+Version: 0.5.0
+Authors@R: c(
+    person("Maximilian", "Mücke", , "muecke.maximilian@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-9432-9795")),
+    person("Damir", "Pulatov", , "damirpolat@protonmail.com", role = "aut"),
+    person("Michel", "Lang", , "michellang@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9754-0393")),
+    person("Marc", "Becker", , "marcbecker@posteo.de", role = "ctb",
+           comment = c(ORCID = "0000-0002-8115-0400"))
+  )
+Description: Extends the 'mlr3' package with cluster analysis.
+License: LGPL-3
+URL: https://mlr3cluster.mlr-org.com,
+        https://github.com/mlr-org/mlr3cluster
+BugReports: https://github.com/mlr-org/mlr3cluster/issues
+Depends: mlr3 (>= 1.5.0), R (>= 3.5.0)
+Imports: backports (>= 1.5.0), checkmate (>= 2.0.0), cluster,
+        data.table (>= 1.15.0), mlr3misc (>= 0.21.0), paradox (>=
+        1.0.1), R6 (>= 2.4.1), stats
+Suggests: apcluster, clue, clusterCrit, ClusterR (>= 1.3.1),
+        clustMixType (>= 0.4.0), dbscan (>= 1.2.1), e1071, flexclust,
+        flexmix, fpc, genieclust, gmeans, kernlab, klaR, kohonen (>=
+        3.0.0), LPCM, mclust, mirai (>= 2.4.1), mlbench, movMF,
+        mvtnorm, protoclust, rJava, RWeka, skmeans, stdbscan (>=
+        0.2.0), stream (>= 2.0.0), tclust (>= 2.0-3), testthat (>=
+        3.3.0), withr
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/r6: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Collate: 'LearnerClust.R' 'zzz.R' 'LearnerClustAffinityPropagation.R'
+        'LearnerClustAgnes.R' 'LearnerClustBICO.R'
+        'LearnerClustBIRCH.R' 'LearnerClustCLARA.R'
+        'LearnerClustCMeans.R' 'LearnerClustCobweb.R'
+        'LearnerClustDBSCAN.R' 'LearnerClustDBSCANfpc.R'
+        'LearnerClustDiana.R' 'LearnerClustEM.R' 'LearnerClustFanny.R'
+        'LearnerClustFarthestFirst.R' 'LearnerClustFeatureless.R'
+        'LearnerClustFlexmix.R' 'LearnerClustGMeans.R'
+        'LearnerClustGenie.R' 'LearnerClustHDBSCAN.R'
+        'LearnerClustHclust.R' 'LearnerClustKCCA.R'
+        'LearnerClustKKMeans.R' 'LearnerClustKMeans.R'
+        'LearnerClustKMeansRcpp.R' 'LearnerClustKModes.R'
+        'LearnerClustKProto.R' 'LearnerClustMclust.R'
+        'LearnerClustMeanShift.R' 'LearnerClustMiniBatchKMeans.R'
+        'LearnerClustMovMF.R' 'LearnerClustOPTICS.R'
+        'LearnerClustPAM.R' 'LearnerClustProtoclust.R'
+        'LearnerClustSKMeans.R' 'LearnerClustSOM.R'
+        'LearnerClustSTDBSCAN.R' 'LearnerClustSimpleKMeans.R'
+        'LearnerClustSpectral.R' 'LearnerClustTclust.R'
+        'LearnerClustXMeans.R' 'MeasureClust.R' 'measures.R'
+        'cluster_stats.R' 'MeasureClustSimple.R' 'PredictionClust.R'
+        'PredictionDataClust.R' 'TaskClust.R' 'TaskClust_ruspini.R'
+        'TaskClust_usarrest.R' 'as_prediction_clust.R'
+        'as_task_clust.R' 'bibentries.R' 'helper.R' 'helper_weka.R'
+NeedsCompilation: no
+Packaged: 2026-08-21 13:32:02 UTC; mmuecke
+Author: Maximilian Mücke [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-9432-9795>),
+  Damir Pulatov [aut],
+  Michel Lang [aut] (ORCID: <https://orcid.org/0000-0001-9754-0393>),
+  Marc Becker [ctb] (ORCID: <https://orcid.org/0000-0002-8115-0400>)
+Maintainer: Maximilian Mücke <muecke.maximilian@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 22:00:37 UTC

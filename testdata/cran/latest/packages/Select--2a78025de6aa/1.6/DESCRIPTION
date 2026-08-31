@@ -1,0 +1,38 @@
+Package: Select
+Title: Determines Species Probabilities Based on Functional Traits
+Version: 1.6
+Authors@R: c(
+    person("Daniel", "Laughlin", email = "danielclaughlin@gmail.com", role = c("cre","aut")),
+    person("Loic", "Chalmandrier", email = "lchalman@uwyo.edu", role = "aut"))
+Description: The objective of these functions is to derive a species assemblage
+    that satisfies a functional trait profile. Restoring resilient ecosystems
+    requires a flexible framework for selecting assemblages that are based on the
+    functional traits of species. However, current trait-based models have been
+    limited to algorithms that can only select species by optimising specific trait
+    values, and could not elegantly accommodate the common desire among restoration
+    ecologists to produce functionally diverse assemblages. We have solved this
+    problem by applying a non-linear optimisation algorithm that optimises Rao Q,
+    a closed-form functional trait diversity index that incorporates species
+    abundances, subject to other linear constraints. This framework generalises
+    previous models that only optimised the entropy of the community, and can
+    optimise both functional diversity and entropy simultaneously. This package
+    can also be used to generate experimental assemblages to test the effects
+    of community-level traits on community dynamics and ecosystem function. The
+    method is based on theory discussed in Laughlin (2014, Ecology Letters)
+    and Laughlin et al. (2018, Methods in Ecology and Evolution).
+Depends: R (>= 3.3.0)
+Imports: Rsolnp, latticeExtra, grDevices, stats, lattice, graphics,
+        ade4
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat, FD
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-23 19:45:38 UTC; danielclaughlin
+Author: Daniel Laughlin [cre, aut],
+  Loic Chalmandrier [aut]
+Maintainer: Daniel Laughlin <danielclaughlin@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-24 06:50:02 UTC

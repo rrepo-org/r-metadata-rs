@@ -1,0 +1,38 @@
+Package: mixgb
+Title: Multiple Imputation Through 'XGBoost'
+Version: 2.2.3
+Authors@R: c(
+    person(given = "Yongshi", family ="Deng", email = "agnes.yongshideng@gmail.com",
+           role = c("aut","cre"),comment =c(ORCID = "0000-0001-5845-859X")),
+    person(given = "Thomas", family = "Lumley", email = "t.lumley@auckland.ac.nz",
+           role = "ths")
+  ) 
+Description: Multiple imputation using 'XGBoost', subsampling, and predictive mean 
+    matching as described in Deng and Lumley (2024) 
+    <doi:10.1080/10618600.2023.2252501>.  The package supports various types of 
+    variables, offers flexible settings, and enables saving an imputation model to impute
+    new data. Data processing and memory usage have been optimised to speed up 
+    the imputation process.
+URL: https://github.com/agnesdeng/mixgb
+BugReports: https://github.com/agnesdeng/mixgb/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+Imports: cli, data.table, Matrix, mice, Rcpp, Rfast, stats, utils,
+        xgboost (>= 3.1.2.1)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 4.3.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+SystemRequirements: macOS: Accelerate framework
+Config/testthat/edition: 3
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2026-01-17 10:41:49 UTC; agnes
+Author: Yongshi Deng [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5845-859X>),
+  Thomas Lumley [ths]
+Maintainer: Yongshi Deng <agnes.yongshideng@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-17 11:00:02 UTC

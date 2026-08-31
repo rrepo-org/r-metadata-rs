@@ -1,0 +1,31 @@
+Package: digiNORM
+Type: Package
+Title: Data-Driven Digital PCR Normalization
+Version: 0.1.0
+Authors@R: person(
+  given="Grant C.",
+  family="O'Connell",
+  role = c("aut", "cre"),
+  email="goconnell.phd@gmail.com",
+  comment=c(ORCID = "0000-0002-2642-6670"))
+Description: Adopts the general least squares-based data-driven normalization strategy 
+  developed by Heckmann et al. (2011) <doi:10.1186/1471-2105-12-250> to
+  correct for technical variance in gene expression data generated via digital 
+  polymerase chain reaction (dPCR). Performs normalization of raw copy numbers
+  and also calculates relative variability metrics that can be used to assess the impact 
+  of normalization on variance. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: utils
+Suggests: testthat (>= 3.0.0)
+Author: Grant C. O'Connell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2642-6670>)
+Maintainer: Grant C. O'Connell <goconnell.phd@gmail.com>
+Repository: CRAN
+Depends: R (>= 3.5)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-12 21:37:04 UTC; gco6
+Date/Publication: 2026-04-16 19:40:13 UTC

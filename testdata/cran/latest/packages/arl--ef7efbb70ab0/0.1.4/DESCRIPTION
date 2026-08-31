@@ -1,0 +1,34 @@
+Package: arl
+Type: Package
+Title: Embedded Lisp Dialect
+Version: 0.1.4
+Authors@R: 
+    person("William", "Brannon", email = "will.brannon+cran@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-1435-8535"))
+Description: Provides a Scheme-inspired Lisp dialect embedded in R, with
+    macros, tail-call optimization, and seamless interoperability with R
+    functions and data structures. (The name 'arl' is short for 'An R Lisp.')
+    Implemented in pure R with no compiled code.
+License: MIT + file LICENSE
+Depends: R (>= 4.0)
+Imports: R6 (>= 2.5.0)
+Suggests: testthat (>= 3.0.0), covr (>= 3.6.0), lintr (>= 3.3.0), withr
+        (>= 2.5.0), profvis (>= 0.3.7), bench (>= 1.1.2), jsonlite (>=
+        2.0.0), knitr (>= 1.51), rmarkdown (>= 2.30), jinjar (>= 0.3.0)
+URL: https://github.com/wwbrannon/arl,
+        https://doi.org/10.5281/zenodo.18740487
+BugReports: https://github.com/wwbrannon/arl/issues
+Language: en-US
+Encoding: UTF-8
+ByteCompile: true
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Packaged: 2026-03-14 01:48:19 UTC; will
+Author: William Brannon [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1435-8535>)
+Maintainer: William Brannon <will.brannon+cran@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-19 14:00:09 UTC

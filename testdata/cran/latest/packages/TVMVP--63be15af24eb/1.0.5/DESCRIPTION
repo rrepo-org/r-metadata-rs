@@ -1,0 +1,34 @@
+Package: TVMVP
+Type: Package
+Title: Time-Varying Minimum Variance Portfolio
+Version: 1.0.5
+Date: 2025-06-27
+Authors@R: c(
+  person(given = "Erik", family = "Lillrank",
+         email = "erik.lillrank@gmail.com",
+         role = c("aut", "cre"),
+         comment = c(ORCID = "0009-0001-3345-7694")),
+  person(given = "Yukai", family = "Yang",
+         email = "yukai.yang@statistik.uu.se",
+         role = c("aut"),
+         comment = c(
+           ORCID = "0000-0002-2623-8549")))
+Description: Provides the estimation of a time-dependent covariance matrix of returns with the intended use for portfolio optimization. The package offers methods for determining the optimal number of factors to be used in the covariance estimation, a hypothesis test of time-varying covariance, and user-friendly functions for portfolio optimization and rolling window evaluation. The local PCA method, method for determining the number of factors, and associated hypothesis test are based on Su and Wang (2017) <doi:10.1016/j.jeconom.2016.12.004>. The approach to time-varying portfolio optimization follows Fan et al. (2024) <doi:10.1016/j.jeconom.2022.08.007>. The regularisation applied to the residual covariance matrix adopts the technique introduced by Chen et al. (2019) <doi:10.1016/j.jeconom.2019.04.025>.
+License: MIT + file LICENSE
+URL: https://github.com/erilill/TV-MVP
+BugReports: https://github.com/erilill/TV-MVP/issues
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: R6, cli, prettyunits, dplyr, ggplot2, tidyr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-06-27 15:24:41 UTC; erikl_xzy542i
+Author: Erik Lillrank [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-3345-7694>),
+  Yukai Yang [aut] (ORCID: <https://orcid.org/0000-0002-2623-8549>)
+Maintainer: Erik Lillrank <erik.lillrank@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-27 15:50:06 UTC

@@ -1,0 +1,38 @@
+Package: copulaSFM
+Type: Package
+Title: Copula-Based Stochastic Frontier Models
+Version: 0.2.0
+Authors@R: c(
+  person("Woraphon", "Yamaka",
+         email = "woraphon.econ@gmail.com",
+         role = c("aut", "cre")),
+  person("Paravee", "Maneejuk",
+         email = "mparavee@gmail.com",
+         role = "aut"),
+  person("Nuttaphong", "Kaewtathip",
+         email = "jetcnx@gmail.com",
+         role = "aut"))
+Description: Provides estimation procedures for copula-based stochastic frontier
+  models for cross-sectional data. The package implements maximum likelihood
+  estimation of stochastic frontier models allowing flexible dependence
+  structures between inefficiency and noise terms through various copula
+  families (e.g., Gaussian and Student-t). It enables estimation of technical
+  efficiency scores, log-likelihood values, and information criteria (AIC and
+  BIC). The implemented framework builds upon stochastic frontier analysis
+  introduced by Aigner, Lovell and Schmidt (1977) <doi:10.1016/0304-4076(77)90052-5>
+  and the copula theory described in Joe (2014, ISBN:9781466583221).
+  Empirical applications of copula-based stochastic frontier models can be
+  found in Wiboonpongse et al. (2015) <doi:10.1016/j.ijar.2015.06.001> and
+  Maneejuk et al. (2017, ISBN:9783319562176).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats, graphics, truncnorm, VineCopula, MASS
+NeedsCompilation: no
+Packaged: 2026-03-05 03:58:06 UTC; Acer
+Author: Woraphon Yamaka [aut, cre],
+  Paravee Maneejuk [aut],
+  Nuttaphong Kaewtathip [aut]
+Maintainer: Woraphon Yamaka <woraphon.econ@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-05 04:10:02 UTC

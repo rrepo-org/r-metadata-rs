@@ -1,0 +1,33 @@
+Package: vizClust
+Type: Package
+Title: Visualization and Exploration of Cluster Transitions
+Version: 0.1.0
+Authors@R: c(
+  person(
+    "Elsa", "Arribas",
+    email = "elsaarribasg@gmail.com",
+    role = c("aut", "cre")
+  ),
+  person(
+    "YingHong", "Chen",
+    role = "ctb"
+  ),
+  person(
+    "Ferran", "Reverter",
+    role = "ctb"
+  ))
+Description: Provides tools to explore and visualize transitions between clusters in multivariate data. The package generates pseudo-samples by interpolating between cluster medoids, enabling the study of gradual changes in feature space. It also computes k-nearest neighbors (KNN)-based statistics to relate pseudo-samples to real data and summarize variable behavior using mean, median, or standard deviation. Finally, the package offers interactive visualizations of variable trajectories along cluster transitions, including both direct trajectory plots and bootstrap-based interactive plots with confidence intervals to assess variability and uncertainty across the transition path.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: ggplot2, ggiraph, reshape2, FNN, dplyr, tibble
+Suggests: webshot, cluster, webshot2, phenomap
+NeedsCompilation: no
+Packaged: 2026-06-03 09:31:09 UTC; elsaa
+Author: Elsa Arribas [aut, cre],
+  YingHong Chen [ctb],
+  Ferran Reverter [ctb]
+Maintainer: Elsa Arribas <elsaarribasg@gmail.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-06-08 19:40:02 UTC

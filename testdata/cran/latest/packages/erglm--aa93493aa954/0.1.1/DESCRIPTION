@@ -1,0 +1,33 @@
+Package: erglm
+Title: Exposure-Response Tools for GLM-Based Models
+Version: 0.1.1
+Authors@R: 
+    person("Danielle", "Navarro", , "djnavarro@protonmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-7648-6578"))
+Description: 
+    Provides estimation tools for exposure-response models based on
+    glm(): model fitting and prediction, stepwise covariate modelling,
+    and simulation-based visual predictive checks. Tested
+    and supported for binomial, Poisson, Gaussian, and gamma families.
+    For a model-agnostic mini-language to visualise exposure-response
+    models (including those fitted with 'erglm'), see the companion
+    package 'erplots'.
+License: MIT + file LICENSE
+Language: en-GB
+Encoding: UTF-8
+Imports: dplyr, mvtnorm, rlang, stats, tibble, withr
+Suggests: erplots, ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://github.com/djnavarro/erglm, https://erglm.djnavarro.net/
+BugReports: https://github.com/djnavarro/erglm/issues
+Additional_repositories: https://djnavarro.r-universe.dev
+Depends: R (>= 4.1.0)
+LazyData: true
+Config/testthat/edition: 3
+Config/Needs/website: djnavarro/waeponwifestre, rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-30 15:18:22 UTC; danielle
+Author: Danielle Navarro [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7648-6578>)
+Maintainer: Danielle Navarro <djnavarro@protonmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-08 09:00:02 UTC

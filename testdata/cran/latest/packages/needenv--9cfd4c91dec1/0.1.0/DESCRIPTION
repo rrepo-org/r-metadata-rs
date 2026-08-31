@@ -1,0 +1,25 @@
+Package: needenv
+Title: Validate Required Environment Variables with Defaults
+Version: 0.1.0
+Authors@R: 
+    person("Cole", "Brokamp", email = "cole@colebrokamp.com",
+           role = c("aut", "cre"))
+Description: Validates that required environment variables are set and
+    non-empty before environment-dependent code runs. Variables may have
+    call-site defaults, and all unresolved variables are reported together.
+    Successful values are returned as a named list without reading environment
+    files or modifying the process environment.
+URL: https://github.com/cole-brokamp/needenv
+BugReports: https://github.com/cole-brokamp/needenv/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Depends: R (>= 4.0.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-27 17:42:38 UTC; cole
+Author: Cole Brokamp [aut, cre]
+Maintainer: Cole Brokamp <cole@colebrokamp.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 09:20:18 UTC

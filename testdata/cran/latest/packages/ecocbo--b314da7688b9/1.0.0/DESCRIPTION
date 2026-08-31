@@ -1,0 +1,44 @@
+Package: ecocbo
+Title: Calculating Optimum Sampling Effort in Community Ecology
+Version: 1.0.0
+Authors@R: c(
+    person("Edlin", "Guerra-Castro", , "edlinguerra@gmail.com", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0003-3529-4507")),
+    person("Arturo", "Sanchez-Porras", , "sp.arturo@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1691-286X"))
+  )
+Description: A system for calculating the optimal sampling effort, based on the ideas of 
+    "Ecological cost-benefit optimization" as developed by A. Underwood (1997, 
+    ISBN 0 521 55696 1). Data is obtained from simulated ecological communities with
+    prep_data() which formats and arranges the initial data, and then the 
+    optimization follows the following procedure of four functions: (1) prep_data()
+    takes the original dataset and creates simulated sets that can be used as a 
+    basis for estimating statistical power and type II error. (2) sim_beta() is used
+    to estimate the statistical power for the different sampling efforts specified
+    by the user. (3) sim_cbo() calculates then the optimal sampling effort, based
+    on the statistical power and the sampling costs. Additionally, (4) scompvar() 
+    calculates the variation components necessary for (5) Underwood_cbo() to calculate
+    the optimal combination of number of sites and samples depending on either 
+    an economic budget or on a desired statistical accuracy. Lastly, (6) plot_power() 
+    helps the user visualize the results of sim_beta().
+License: GPL (>= 3)
+URL: https://github.com/arturoSP/ecocbo
+BugReports: https://github.com/arturoSP/ecocbo/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: ggplot2, ggpubr, stats, rlang, tibble, dplyr, tidyr,
+        tidyselect, parabar, parallelly, vegan, SSP (>= 1.1.0), plotly
+Depends: R (>= 4.1.0)
+LazyData: true
+Suggests: knitr,rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-11-21 23:11:09 UTC; artu
+Author: Edlin Guerra-Castro [aut, cph] (ORCID:
+    <https://orcid.org/0000-0003-3529-4507>),
+  Arturo Sanchez-Porras [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1691-286X>)
+Maintainer: Arturo Sanchez-Porras <sp.arturo@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-21 23:30:02 UTC

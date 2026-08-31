@@ -1,0 +1,33 @@
+Package: DAAG
+Version: 1.25.7
+Title: Data Analysis and Graphics Data and Functions
+Authors@R: c(person(given = c("John", "H"),
+                      family = "Maindonald",
+                      role = "aut",
+                      email = "john@statsresearch.co.nz"),
+               person(given = c("W.", "John"),
+                      family = "Braun",
+                      role = c("aut", "cre"),
+                      email = "john.braun@ubc.ca"))
+Description: Functions and data sets used in examples and exercises in the
+        text Maindonald, J.H. and Braun, W.J. (2003, 2007, 2010) "Data
+        Analysis and Graphics Using R", and in an upcoming Maindonald,
+        Braun, and Andrews text that builds on this earlier text.
+LazyLoad: true
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: lattice, latticeExtra, methods, Rdpack
+RdMacros: Rdpack
+Suggests: leaps, oz, lme4, knitr, boot, rpart, randomForest, MASS,
+        survival, mgcv, rmarkdown, bookdown, statmod, qgam
+ZipData: yes
+License: GPL-3
+URL: https://gitlab.com/daagur/DAAG
+VignetteBuilder: knitr
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2025-10-08 23:16:51 UTC; johbraun
+Date/Publication: 2025-10-09 05:20:03 UTC
+Author: John H Maindonald [aut],
+  W. John Braun [aut, cre]
+Maintainer: W. John Braun <john.braun@ubc.ca>

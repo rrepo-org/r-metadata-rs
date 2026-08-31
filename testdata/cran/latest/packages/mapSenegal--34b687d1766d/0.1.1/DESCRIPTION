@@ -1,0 +1,47 @@
+Package: mapSenegal
+Type: Package
+Title: Administrative Boundaries of Senegal
+Version: 0.1.1
+Authors@R: 
+    c(person(given = "Timothée",
+             family = "Giraud",
+             email = "timothee.giraud@cnrs.fr",
+             role = c("cre","aut"),
+             comment = c(ORCID = "0000-0002-1932-3323")),
+      person(given = "Labaly",
+             family = "Touré",
+             role = "aut",
+             comment = c(ORCID = "0009-0008-0939-2019")), 
+      person(given = "Hugues",
+             family = "Pecout",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-0246-0954", "Logo")),
+      person(given = "Robert J.", 
+             family = "Hijmans", 
+             role = c("cph"), 
+			       comment = c(ORCID = "0000-0001-5872-2872", "GADM database")))
+Description: The administrative boundaries of Senegal are provided at several
+    levels, including regions, departments, arrondissements and communes.
+    The Global Administrative Areas database, or `GADM` <https://gadm.org/>, is
+    the primary source for these layers. The dataset is complemented by the
+    incorporation of additional geographic layers, such as localities,
+    universities, roads, or health facility locations.
+Depends: R (>= 3.5.0), sf
+URL: https://github.com/mapSenegal/mapSenegal
+BugReports: https://github.com/mapSenegal/mapSenegal/issues
+Suggests: mapsf
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-02 07:44:48 UTC; tim
+Author: Timothée Giraud [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-1932-3323>),
+  Labaly Touré [aut] (ORCID: <https://orcid.org/0009-0008-0939-2019>),
+  Hugues Pecout [ctb] (ORCID: <https://orcid.org/0000-0002-0246-0954>,
+    Logo),
+  Robert J. Hijmans [cph] (ORCID:
+    <https://orcid.org/0000-0001-5872-2872>, GADM database)
+Maintainer: Timothée Giraud <timothee.giraud@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2026-04-07 07:50:02 UTC

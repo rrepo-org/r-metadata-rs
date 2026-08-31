@@ -1,0 +1,41 @@
+Package: stepmetrics
+Type: Package
+Title: Calculate Step and Cadence Metrics from Wearable Data
+Version: 1.0.3
+Authors@R: c(
+    person("Jairo H", "Migueles", 
+           email = "jairo@jhmigueles.com", 
+           role = c("aut", "cre")),
+    person("Elroy J", "Aguiar", role = "fnd", 
+           comment = "Funding and data support"),
+    person("University of Alabama", "", role = "fnd"))
+Description: Provides functions to calculate step- and cadence-based metrics from 
+    timestamped accelerometer and wearable device data. Supports CSV and AGD files from 
+    'ActiGraph' devices, CSV files from 'Fitbit' devices, and step counts derived   
+    with R package 'GGIR' <https://github.com/wadpac/GGIR>, with automatic handling 
+    of epoch lengths from 1 to 60 seconds. Metrics include total steps, cadence 
+    peaks, minutes and steps in predefined cadence bands, and time and steps in 
+    moderate-to-vigorous physical activity (MVPA). Methods and thresholds are 
+    informed by the literature, e.g., 
+    Tudor-Locke and Rowe (2012) <doi:10.2165/11599170-000000000-00000>, 
+    Barreira et al. (2012) <doi:10.1249/MSS.0b013e318254f2a3>, 
+    and Tudor-Locke et al. (2018) <doi:10.1136/bjsports-2017-097628>. 
+    The package record is also available on Zenodo (2023) <doi:10.5281/zenodo.7858094>.
+License: AGPL (>= 3)
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: PhysicalActivity, tools, stats, utils
+Suggests: testthat (>= 3.0.0), RSQLite, spelling, withr
+Config/testthat/edition: 3
+URL: https://github.com/jhmigueles/stepmetrics
+BugReports: https://github.com/jhmigueles/stepmetrics/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-09-28 18:32:04 UTC; Jairo
+Author: Jairo H Migueles [aut, cre],
+  Elroy J Aguiar [fnd] (Funding and data support),
+  University of Alabama [fnd]
+Maintainer: Jairo H Migueles <jairo@jhmigueles.com>
+Repository: CRAN
+Date/Publication: 2025-10-01 07:50:02 UTC

@@ -1,0 +1,36 @@
+Package: stLMM
+Type: Package
+Title: Bayesian Spatial and Space-Time Linear Mixed Models
+Version: 0.0.3
+Authors@R: c(
+    person("Andrew O.", "Finley", role = c("aut", "cre"),
+           email = "finleya@msu.edu"),
+    person("Sudipto", "Banerjee", role = "ctb",
+           email = "abhidatta@jhu.edu"),
+    person("Abhirup", "Datta", role = "ctb",
+           email = "abhidatta@jhu.edu"),
+    person("Paul B.", "May", role = "ctb",
+           email = "Paul.May@sdsmt.edu"))
+Author: Andrew O. Finley [aut, cre],
+  Sudipto Banerjee [ctb],
+  Abhirup Datta [ctb],
+  Paul B. May [ctb]
+Maintainer: Andrew O. Finley <finleya@msu.edu>
+Description: Fits Bayesian linear mixed models for spatial and space-time data with fixed effects, independent and identically distributed (iid) grouped random effects, and structured latent processes. The formula interface supports first-order autoregressive (AR(1)) effects, dense Gaussian processes, nearest-neighbor Gaussian processes, proper and Leroux conditional autoregressive (CAR) effects, ordered directed acyclic graph autoregressive (DAGAR) effects, separable CAR-time and DAGAR-time effects, and spatially varying coefficients. The sampler uses sparse precision matrix calculations when available and includes post-fitting tools for latent process recovery, fitted values, prediction, pointwise log likelihoods, and posterior sample extraction. Method details include Datta et al. (2016) <doi:10.1080/01621459.2015.1044091>, Finley et al. (2019) <doi:10.1080/10618600.2018.1537924>, Datta et al. (2019) <doi:10.1214/19-BA1177>, and May and Finley (2025) <doi:10.1016/j.spasta.2025.100917>.
+URL: https://github.com/finleya/stLMM, https://finleya.github.io/stLMM/
+BugReports: https://github.com/finleya/stLMM/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.4.0)
+Imports: BayesLogit (>= 2.4), coda, Matrix (>= 1.7-0), stats
+LinkingTo: BayesLogit (>= 2.4), Matrix (>= 1.7-0)
+Suggests: ggplot2, knitr, loo, quarto, sf, testthat (>= 3.0.0)
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Config/Needs/website: dplyr, kableExtra, lme4, lwgeom, nimble,
+        patchwork, RhpcBLASctl, spdep, tidyr, tidyverse
+NeedsCompilation: yes
+Packaged: 2026-07-29 14:52:51 UTC; andy
+Repository: CRAN
+Date/Publication: 2026-07-29 22:10:02 UTC

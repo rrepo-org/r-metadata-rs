@@ -1,0 +1,26 @@
+Package: qryflow
+Title: Execute Multi-Step 'SQL' Workflows
+Version: 0.4.0
+Authors@R: person("Christian", "Million", , "christianmillion93@gmail.com", role = c("aut", "cre", "cph"))
+Description: Execute multi-step 'SQL' workflows by
+    leveraging specially formatted comments to define and control
+    execution. This enables users to mix queries, commands, and metadata
+    within a single script. Results are returned as named objects for use
+    in downstream workflows.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: DBI
+Suggests: knitr, rmarkdown, RSQLite, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://christian-million.github.io/qryflow/,
+        https://github.com/christian-million/qryflow/
+BugReports: https://github.com/christian-million/qryflow/issues
+NeedsCompilation: no
+Packaged: 2026-06-07 23:30:07 UTC; Christian Million
+Author: Christian Million [aut, cre, cph]
+Maintainer: Christian Million <christianmillion93@gmail.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-06-07 23:50:02 UTC

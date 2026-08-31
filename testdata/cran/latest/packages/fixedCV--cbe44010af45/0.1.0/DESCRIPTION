@@ -1,0 +1,29 @@
+Package: fixedCV
+Type: Package
+Title: Fixed-b Critical Values for Robust Inference with Time Series
+        Data
+Version: 0.1.0
+Authors@R: c(
+    person("Rebecca", "Kurtz-Garcia", email = "rkurtzgarcia@smith.edu", role = c("aut", "cre")),
+    person("Thomas", "Robacker", email = "trobacker@umass.edu", role = "aut")
+  )
+Maintainer: Rebecca Kurtz-Garcia  <rkurtzgarcia@smith.edu>
+Description: Provides functions for computing fixed-b critical values and
+    conducting robust inference procedures for time series data with unknown
+    correlation structures. Implements long-run variance estimators
+    using various kernel functions and lugsail transformations for improved
+    finite-sample properties as described by Kurtz-Garcia and Flegal (2026) 
+    <doi:10.48550/arXiv.2606.17369>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+Imports: Matrix
+Suggests: aTSA, tseries, dplyr, lubridate, lmtest
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-24 19:09:27 UTC; rkurtzgarcia
+Author: Rebecca Kurtz-Garcia [aut, cre],
+  Thomas Robacker [aut]
+Repository: CRAN
+Date/Publication: 2026-06-30 19:00:02 UTC

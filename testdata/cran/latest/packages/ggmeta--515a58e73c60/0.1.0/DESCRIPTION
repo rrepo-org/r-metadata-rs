@@ -1,0 +1,39 @@
+Package: ggmeta
+Title: Publication-Quality Forest and Funnel Plots with 'ggplot2'
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Hercules R.",
+           family = "Freitas",
+           role = c("aut", "cre", "cph"),
+           email = "hercules.freitas@uerj.br",
+           comment = c(ORCID = "0000-0003-1584-9157")))
+Description: A 'ggplot2' extension that creates publication-quality forest
+    and funnel plots from 'meta' package objects or tidy data frames. Provides
+    custom 'ggproto' geometries for study-level confidence intervals with
+    weight-proportional squares, summary effect diamonds, prediction
+    intervals, null-effect reference lines, and funnel-plot contours. Supports
+    subgroup analysis, back-transformation of summary measures, on-the-fly
+    effect pooling, effect and weight table columns, and journal-specific
+    layout presets (JAMA, BMJ, RevMan5).
+License: GPL (>= 3)
+URL: https://github.com/drhrf/ggmeta, https://drhrf.github.io/ggmeta/
+BugReports: https://github.com/drhrf/ggmeta/issues
+Depends: R (>= 4.0)
+Imports: cli (>= 3.6.0), ggplot2 (>= 3.4.0), grid, rlang (>= 1.0.0),
+        scales (>= 1.2.0)
+Suggests: covr (>= 3.6.0), knitr (>= 1.40), meta (>= 4.0), patchwork
+        (>= 1.1.0), pkgdown (>= 2.0.0), rmarkdown (>= 2.20), testthat
+        (>= 3.0.0), vdiffr (>= 1.0.0)
+Encoding: UTF-8
+Language: en-US
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-14 02:21:13 UTC; freitashr
+Author: Hercules R. Freitas [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-1584-9157>)
+Maintainer: Hercules R. Freitas <hercules.freitas@uerj.br>
+Repository: CRAN
+Date/Publication: 2026-07-22 08:30:14 UTC

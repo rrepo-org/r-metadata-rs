@@ -1,0 +1,31 @@
+Package: modernBoot
+Type: Package
+Title: Modern Resampling Methods: Bootstraps, Wild, Block, Permutation,
+        and Selection Guidance
+Version: 0.1.1
+Authors@R: person("Ibrahim Kholil","Rakib", email = "ikrakib1010@gmail.com", role = c("aut", "cre"))
+Description: Implements modern resampling and permutation methods for robust 
+    statistical inference without restrictive parametric assumptions. Provides 
+    bias-corrected and accelerated (BCa) bootstrap (Efron and Tibshirani (1993) 
+    <doi:10.1201/9780429246593>), wild bootstrap for heteroscedastic regression 
+    (Liu (1988) <doi:10.1214/aos/1176351062>, Davidson and Flachaire (2008) 
+    <doi:10.1016/j.jeconom.2008.08.003>), block bootstrap for time series 
+    (Politis and Romano (1994) <doi:10.1080/01621459.1994.10476870>), and 
+    permutation-based multiple testing correction (Westfall and Young (1993) 
+    <ISBN:0-471-55761-7>). Methods handle non-normal data, 
+    heteroscedasticity, time series correlation, and multiple comparisons.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: stats, boot, future, future.apply
+Suggests: testthat (>= 3.0.0), covr, pkgdown, rhub
+URL: https://github.com/ikrakib/modernBoot
+BugReports: https://github.com/ikrakib/modernBoot/issues
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-06 18:34:53 UTC; hello
+Author: Ibrahim Kholil Rakib [aut, cre]
+Maintainer: Ibrahim Kholil Rakib <ikrakib1010@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-11 13:50:13 UTC

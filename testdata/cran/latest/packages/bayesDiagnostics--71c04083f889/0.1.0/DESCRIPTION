@@ -1,0 +1,35 @@
+Package: bayesDiagnostics
+Type: Package
+Title: Comprehensive Bayesian Model Diagnostics and Comparison Tools
+Version: 0.1.0
+Authors@R: 
+    person("Ibrahim Kholil", "Rakib", , "ikrakib1010@gmail.com", role = c("aut", "cre"))
+Description: Provides comprehensive tools for Bayesian model diagnostics 
+    and comparison. Includes prior sensitivity analysis, posterior predictive 
+    checks (Gelman et al. (2013) <doi:10.1201/b16018>), advanced model 
+    comparison using Pareto-smoothed importance sampling leave-one-out 
+    cross-validation (Vehtari et al. (2017) <doi:10.1007/s11222-016-9696-4>), 
+    convergence diagnostics, and prior elicitation tools. Integrates with 
+    'brms' (Burkner (2017) <doi:10.18637/jss.v080.i01>), 'rstan', and 
+    'rstanarm' packages for comprehensive Bayesian workflow diagnostics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: brms (>= 2.18.0), checkmate (>= 2.1.0), ggplot2 (>= 3.4.0),
+        gridExtra, loo (>= 2.5.0), posterior (>= 1.0.0), matrixStats,
+        bridgesampling, rstan (>= 2.26.0), tidyr (>= 1.3.0)
+Suggests: bayesplot (>= 1.10.0), covr, knitr, magrittr (>= 2.0.0),
+        purrr (>= 1.0.0), rmarkdown, rstanarm (>= 2.21.0), scales (>=
+        1.2.0), spelling, testthat (>= 3.0.0), tibble (>= 3.2.0), lme4
+VignetteBuilder: knitr
+URL: https://github.com/ikrakib/bayesDiagnostics
+BugReports: https://github.com/ikrakib/bayesDiagnostics/issues
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-09 17:49:44 UTC; hello
+Author: Ibrahim Kholil Rakib [aut, cre]
+Maintainer: Ibrahim Kholil Rakib <ikrakib1010@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-14 09:10:19 UTC

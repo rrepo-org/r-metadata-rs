@@ -1,0 +1,41 @@
+Package: transittraj
+Title: Reconstruct and Visualize Transit Vehicle Trajectories
+Version: 1.0.0
+Date: 2026-08-11
+Authors@R: c(
+    person("Benjamin", "O'Brien",
+        email = "obrienbenjaminj@gmail.com",
+        role = c("aut", "cre", "cph")),
+    person("Lewis", "Lehe",
+        email = "lehe@illinois.edu",
+        role = "aut"))
+Description: Today's public transit vehicles produce a large amount of automatic
+    vehicle location (AVL) data. This data is very useful for planning and
+    performance studies, but can be noisy, error-prone, and sparse. This package
+    provides tools for cleaning AVL point data and turning it into continuous,
+    differentiable, monotonic, and invertible vehicle trajectory functions,
+    based on the work of Robbennolt et al. (2025)
+    <doi:10.48550/arXiv.2509.00119> and
+    Huang et al. (2023) <doi:10.1109/ITSC57777.2023.10422524>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://utel-uiuc.github.io/transittraj/
+BugReports: https://github.com/UTEL-UIUC/transittraj/issues
+Imports: data.table, dplyr, gganimate, ggnewscale, ggplot2, ggspatial,
+        hms, ivs, leaflet, magrittr, purrr, rlang, sf, slider, tidyr,
+        tidytransit, viridis
+Depends: R (>= 3.5)
+LazyData: true
+Suggests: knitr, prettymapr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/Needs/website: rmarkdown, vembedr
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-08-21 16:20:22 UTC; obrie
+Author: Benjamin O'Brien [aut, cre, cph],
+  Lewis Lehe [aut]
+Maintainer: Benjamin O'Brien <obrienbenjaminj@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-31 14:00:02 UTC

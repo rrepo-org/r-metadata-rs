@@ -1,0 +1,29 @@
+Package: circularEV
+Type: Package
+Title: Extreme Value Analysis for Circular Data
+Version: 0.1.2
+Date: 2026-06-16
+Depends: R (>= 4.1.0)
+Imports: parallel, foreach, doParallel, mgcv, circular, NPCirc,
+        ggplot2, utils, stats
+Authors@R: person(given = "Evandro", family = "Konzen", role = c("aut", "cre"), email = "circularev.r@gmail.com")
+Description: General functions for performing extreme value analysis on a circular 
+    domain as part of the statistical methodology in the paper by Konzen, E., 
+    Neves, C., and Jonathan, P. (2021). Modeling nonstationary extremes of storm 
+    severity: Comparing parametric and semiparametric inference. 
+    Environmetrics, 32(4), e2667 <doi:10.1002/env.2667>.
+Acknowledgements: This work was supported by the EPSRC UKRI Innovation
+        Fellowship (grant number EP/S001263/1)
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: plotly, formatR, testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/Words: Environmetrics Konzen Neves nonstationary
+NeedsCompilation: no
+Packaged: 2026-06-16 09:46:09 UTC; evandro
+Author: Evandro Konzen [aut, cre]
+Maintainer: Evandro Konzen <circularev.r@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-16 13:20:01 UTC

@@ -1,0 +1,25 @@
+Package: ttScreening
+Title: Genome-Wide DNA Methylation Sites Screening by Use of Training
+        and Testing Samples
+Version: 1.8
+Authors@R: 
+    c(person(given="Meredith", family="Ray", email="maray@memphis.edu", role = c("aut", "cre")),
+    person(given="Mohammad Nahian Ferdous", family="Abrar", email="abrar0708@gmail.com",role=c("aut")), person(given="Yu", family="Jiang", role = c("aut")),person(given="Xin", family="Tong", role = c("aut")), person(given="Hongmei", family="Zhang", role = c("aut")))
+Description: A screening process utilizing training and testing samples to filter out uninformative DNA methylation sites. Surrogate variables (SVs) of DNA methylation are included in the filtering process to explain unknown factor effects. This package also provides two screening functions for screening high-dimensional predictors when the events are rare. The firth method is called 'Rare-Screening' which employs a repeated random sampling with replacement and using linear modeling with Bayes adjustment. The Second method is called 'Firth-ttScreening' which uses 'ttScreening' method with additional Firth correction term in the maximum likelihood for the logistic regression model. These methods handle the high-dimensionality and low event rates.
+License: Artistic-2.0
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: matrixStats,sva,limma
+Imports: graphics,stats,corpcor,simsalapar,MASS,brglm2
+biocViews:
+Suggests: mvtnorm
+NeedsCompilation: no
+Packaged: 2026-01-30 17:32:17 UTC; maray
+Author: Meredith Ray [aut, cre],
+  Mohammad Nahian Ferdous Abrar [aut],
+  Yu Jiang [aut],
+  Xin Tong [aut],
+  Hongmei Zhang [aut]
+Maintainer: Meredith Ray <maray@memphis.edu>
+Repository: CRAN
+Date/Publication: 2026-01-30 17:50:02 UTC

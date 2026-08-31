@@ -1,0 +1,42 @@
+Package: wikitaxa
+Title: Taxonomic Information from 'Wikipedia'
+Description: 'Taxonomic' information from 'Wikipedia', 'Wikicommons',
+    'Wikispecies', and 'Wikidata'. Functions included for getting
+    taxonomic information from each of the sources just listed, as
+    well performing taxonomic search.
+Version: 0.5.0
+License: MIT + file LICENSE
+URL: https://docs.ropensci.org/wikitaxa/,
+        https://github.com/ropensci/wikitaxa
+BugReports: https://github.com/ropensci/wikitaxa/issues
+Authors@R: c(
+    person("Scott", "Chamberlain", role = "aut",
+      email = "myrmecocystus+r@gmail.com"),
+    person("Ethan", "Welty", role = "aut"),
+    person("Grzegorz", "Sapijaszko", role = "aut"),
+    person("Zachary", "Foster", role = c("aut", "cre"),
+      email = "zacharyfoster1989@gmail.com")
+  )
+LazyLoad: yes
+LazyData: yes
+Encoding: UTF-8
+Language: en-US
+VignetteBuilder: knitr
+Depends: R(>= 3.2.1)
+Imports: data.table, curl, crul (>= 0.3.4), tibble, jsonlite, xml2,
+        WikipediR, httr
+Suggests: testthat, knitr, rmarkdown, vcr
+RoxygenNote: 7.3.3
+X-schema.org-applicationCategory: Taxonomy
+X-schema.org-keywords: taxonomy, species, API, web-services, Wikipedia,
+        vernacular, Wikispecies, Wikicommons
+X-schema.org-isPartOf: https://ropensci.org
+NeedsCompilation: no
+Packaged: 2026-02-12 17:49:41 UTC; fosterz
+Author: Scott Chamberlain [aut],
+  Ethan Welty [aut],
+  Grzegorz Sapijaszko [aut],
+  Zachary Foster [aut, cre]
+Maintainer: Zachary Foster <zacharyfoster1989@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-13 09:40:03 UTC

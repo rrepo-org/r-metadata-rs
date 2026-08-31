@@ -1,0 +1,36 @@
+Package: GenerateIndexPedigree
+Type: Package
+Title: Generate Pedigrees for Index Case Based on US Census Data
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Katelyn", 
+		family = "Queen", 
+		email = "kqueen@mednet.ucla.edu", 
+		role = c("aut", "cre", "cph"),
+           	comment = c(ORCID = "0000-0002-8070-3042")),
+           	person(given = "Kevin", 
+		family = "Abuhanna", 
+		email = "kabuhanna@mednet.ucla.edu", 
+		role = c("aut"),
+           	comment = c(ORCID = "0000-0003-0994-7658")),
+      person(given = "Paul", 
+		family = "Spellman", , 
+		email = "pspellman@mednet.ucla.edu", 
+		role = c("aut","cph"),
+           	comment = c(ORCID = "0000-0002-4810-0022")))
+Maintainer: Katelyn Queen <kqueen@mednet.ucla.edu>
+Description: A series of functions to generate a pedigree around a given person with a known genetic mutation, based on US census data. Pedigree will also track mutation status of all members. Pedigree is built down to children, back to grandparents, and out to cousins. There is also a function to generate pedigrees without genetic mutations.
+License: MIT + file LICENSE
+URL: https://github.com/katelynqueen98/GenerateIndexPedigree
+Imports: dplyr, stats
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-08 18:17:04 UTC; kqueen
+Author: Katelyn Queen [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8070-3042>),
+  Kevin Abuhanna [aut] (ORCID: <https://orcid.org/0000-0003-0994-7658>),
+  Paul Spellman [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-4810-0022>)
+Repository: CRAN
+Date/Publication: 2026-06-16 19:50:13 UTC

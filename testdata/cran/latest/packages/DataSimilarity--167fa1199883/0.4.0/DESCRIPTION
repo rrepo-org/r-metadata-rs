@@ -1,0 +1,42 @@
+Package: DataSimilarity
+Type: Package
+Title: Quantifying Similarity of Datasets and Multivariate Two- And
+        k-Sample Testing
+Version: 0.4.0
+Date: 2026-05-15
+Authors@R: c(person(given = "Marieke", family = "Stolte", 
+       email = "marieke.stolte@ibe.med.uni-muenchen.de", role = c("aut", "cre", "cph"), 
+       comment = c(ORCID = "0009-0002-0711-6789")), 
+       person(given = "Luca", family = "Sauer", role = c("aut"), 
+       comment = c(ORCID = "0009-0000-1086-023X")), 
+       person(given = "David", family = "Alvarez-Melis", role = c("ctb"), 
+                comment = "Original python implementation of OTDD, <https://github.com/microsoft/otdd.git>"), 
+       person(given = "Nabarun", family = "Deb", role = c("ctb"), 
+                comment = "Original implementation of rank-based Energy test (DS), <https://github.com/NabarunD/MultiDistFree.git>"), 
+       person(given = "Bodhisattva", family = "Sen", role = c("ctb"), 
+                comment = "Original implementation of rank-based Energy test (DS), <https://github.com/NabarunD/MultiDistFree.git>"))
+Depends: R (>= 3.5.0)
+Imports: boot, stats
+Suggests: ade4, approxOT, Ball, caret, clue, cramer, crossmatch,
+        dbscan, densratio, DWDLargeR, e1071, Ecume, energy, expm, FNN,
+        GraphRankTest, gTests, gTestsMulti, HDLSSkST, hypoRF, kernlab,
+        kerTests, KMD, knitr, LPKsample, Matrix, mvtnorm, nbpMatching,
+        pROC, purrr, randtoolbox, rlemon, rpart, rpart.plot, testthat,
+        nnet, synthpop, igraph, cluster
+Description: A collection of methods for quantifying the similarity of two or more datasets, many of which can be used for two- or k-sample testing. It provides newly implemented methods as well as wrapper functions for existing methods that enable calling many different methods in a unified framework. The methods were selected from the review and comparison of Stolte et al. (2024) <doi:10.1214/24-SS149>. An empirical comparison of the methods was performed in Stolte et al. (2026) <doi:10.48550/arXiv.2604.11458> for categorical data and in Stolte et al. (2026) <doi:10.48550/arXiv.2604.12327> for numeric data.
+License: GPL (>= 3)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-05-15 06:06:44 UTC; marieke.stolte
+Author: Marieke Stolte [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-0711-6789>),
+  Luca Sauer [aut] (ORCID: <https://orcid.org/0009-0000-1086-023X>),
+  David Alvarez-Melis [ctb] (Original python implementation of OTDD,
+    <https://github.com/microsoft/otdd.git>),
+  Nabarun Deb [ctb] (Original implementation of rank-based Energy test
+    (DS), <https://github.com/NabarunD/MultiDistFree.git>),
+  Bodhisattva Sen [ctb] (Original implementation of rank-based Energy
+    test (DS), <https://github.com/NabarunD/MultiDistFree.git>)
+Maintainer: Marieke Stolte <marieke.stolte@ibe.med.uni-muenchen.de>
+Repository: CRAN
+Date/Publication: 2026-05-15 07:30:02 UTC

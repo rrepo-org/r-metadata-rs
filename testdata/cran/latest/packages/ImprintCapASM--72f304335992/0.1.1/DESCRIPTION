@@ -1,0 +1,37 @@
+Package: ImprintCapASM
+Type: Package
+Title: Allele-Specific Methylation Analysis for Imprinted DMR
+        Diagnostics
+Version: 0.1.1
+Authors@R: c(person(given = "Subham", family = "Saha",
+                   email = "saha_19@outlook.com",
+                   role = c("aut", "cre", "cph")),
+             person(given = "Francesco", family = "Cecere",
+                    email = "francesco.cecerengs@gmail.com",
+                    role = "aut"),
+             person(given = "Frederic", family = "Brioude",
+                    email = "frederic.brioude@aphp.fr",
+                    role = c("aut", "fnd")))
+Description: Provides functions for SNP-phased allele-specific methylation (ASM)
+    analysis across the 41 canonical human imprinted differentially methylated
+    regions (DMRs). Reads are assigned to REF or ALT alleles based on
+    bisulfite-aware SNP detection, enabling diagnosis of imprinting disorders
+    from whole-genome bisulfite sequencing data.
+    <https://github.com/19-saha/ImprintCapASM>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: data.table, readxl, writexl, vcfR, ggplot2, Rsamtools, tools
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+SystemRequirements: samtools (>= 1.10)
+VignetteBuilder: knitr
+URL: https://github.com/19-saha/ImprintCapASM
+BugReports: https://github.com/19-saha/ImprintCapASM/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-24 17:26:10 UTC; subham_saha
+Author: Subham Saha [aut, cre, cph],
+  Francesco Cecere [aut],
+  Frederic Brioude [aut, fnd]
+Maintainer: Subham Saha <saha_19@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 18:40:08 UTC

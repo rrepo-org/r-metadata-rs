@@ -1,0 +1,41 @@
+Package: ordered
+Title: 'parsnip' Engines and Wrappers for Ordinal Classification Models
+Version: 0.1.0
+Authors@R: c(
+    person("Max", "Kuhn", , "max@posit.co",
+           role = "aut",
+           comment = c(ORCID = "0000-0003-2402-136X")),
+    person("Jason Cory", "Brunson", , "cornelioid@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3126-9494")),
+    person("Posit Software PBC", role = "cph")
+  )
+Description: Bindings, methods, and tuners for using ordinal classification
+    models with the 'parsnip' and 'dials' packages. These include
+    the regularized elastic net ordinal regression
+    of Wurm, Hanlon, and Rathouz (2021) <doi:10.18637/jss.v099.i06>
+    in 'ordinalNet',
+    the ordinal classification trees
+    of Galimberti, Soffritti, and Di Maso (2012) <doi:10.18637/jss.v047.i10>
+    in 'rpartScore', and
+    the latent variable ordinal forests
+    of Hornung (2020) <doi:10.1007/s00357-018-9302-x>
+    in 'ordinalForest'.
+License: MIT + file LICENSE
+Depends: parsnip (>= 1.5)
+Imports: cli, dials (>= 1.4.3), purrr, rlang (>= 1.1.4), tibble, tidyr
+Suggests: dplyr, MASS, ordinalNet, VGAM, rpartScore, ordinalForest,
+        QSARdata, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-21 20:28:09 UTC; jasoncorybrunson
+Author: Max Kuhn [aut] (ORCID: <https://orcid.org/0000-0003-2402-136X>),
+  Jason Cory Brunson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3126-9494>),
+  Posit Software PBC [cph]
+Maintainer: Jason Cory Brunson <cornelioid@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 21:22:15 UTC

@@ -1,0 +1,31 @@
+Package: ipgeolocation
+Type: Package
+Title: Client for the 'IPGeolocation.io IP Location API'
+Version: 0.1.0
+Authors@R: 
+    c(
+        person("Anwar", "Ahmed", email = "anwar@jfreaks.com", role = c("aut", "cre")),
+        person("IPGeolocation", "IO", role = "cph")
+    )
+Description: Provides functions to query the
+    'IPGeolocation.io IP Location API'
+    (<https://ipgeolocation.io/documentation/ip-location-api.html>).
+    Supports retrieval of IP location, ASN, network, currency,
+    timezone, abuse, and security data. Response filtering is
+    supported using 'fields' and 'excludes' parameters (dot notation
+    supported), and optional objects can be requested via the
+    'include' parameter. Returns parsed API responses as R objects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: httr2
+Depends: R (>= 4.1.0)
+URL: https://github.com/devjfreaks/ipgeolocation-r
+BugReports: https://github.com/devjfreaks/ipgeolocation-r/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-01 11:06:08 UTC; anwar
+Author: Anwar Ahmed [aut, cre],
+  IPGeolocation IO [cph]
+Maintainer: Anwar Ahmed <anwar@jfreaks.com>
+Repository: CRAN
+Date/Publication: 2026-04-07 07:40:10 UTC

@@ -1,0 +1,31 @@
+Package: nfcore.utils
+Version: 0.0.4
+Date: 2026-06-17
+Title: Utilities for 'nf-core' Modules
+Authors@R: c(
+    person("nf-core", "Community", role="aut"),
+    person("Louis", "Le Nezet", email="louislenezet@gmail.com",
+        role=c("aut", "cre", "cph"), comment = c(ORCID = "0009-0000-0202-2703"))
+    )
+Depends: R (>= 4.4.0),
+Imports: utils
+Description: Provides utility functions to facilitate the use of R within nf-core modules. 
+    The package helps parse 'Nextflow' inputs and perform validation checks to ensure 
+    correct parameter handling and reproducible execution.
+    For more details see Ewels (2020) <doi:10.1038/s41587-020-0439-x>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Suggests: testthat (>= 3.0.0), rmarkdown, BiocStyle, knitr, withr, yaml
+Config/testthat/edition: 3
+BugReports: https://github.com/nf-core/r-nf-core-utils/issues
+URL: https://github.com/nf-core/r-nf-core-utils
+NeedsCompilation: no
+Packaged: 2026-06-17 10:25:41 UTC; llenezet
+Author: nf-core Community [aut],
+  Louis Le Nezet [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0000-0202-2703>)
+Maintainer: Louis Le Nezet <louislenezet@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-22 15:10:02 UTC

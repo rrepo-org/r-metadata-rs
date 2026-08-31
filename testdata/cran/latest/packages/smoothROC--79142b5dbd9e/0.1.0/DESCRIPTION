@@ -1,0 +1,32 @@
+Type: Package
+Package: smoothROC
+Title: Kernel-Smoothed ROC and AUC with Bandwidth Selection
+Version: 0.1.0
+Authors@R: c(
+    person("Ruhul Ali", "Khan", , "ruhulali.khan@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1173-8345")),
+    person("Musie", "Ghebremichael", , "musie_ghebremichael@dfci.harvard.edu", role = "aut",
+           comment = "Project PI")
+  )
+Author: Ruhul Ali Khan [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1173-8345>),
+  Musie Ghebremichael [aut] (Project PI)
+Maintainer: Ruhul Ali Khan <ruhulali.khan@gmail.com>
+Description: Computes kernel-smoothed receiver operating characteristic
+    (ROC) curves and area under the curve (AUC), including confidence
+    intervals, using several bandwidth selection methods. Also provides
+    the Youden index with confidence intervals, the Youden point, and
+    optimal diagnostic cutoff estimation. Supports Gaussian, Biweight, and
+    Epanechnikov kernels.
+License: MIT + file LICENSE
+Depends: R (>= 3.5)
+Imports: ggplot2 (>= 3.4.0), rlang, stats
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-30 17:29:49 UTC; ruhul
+Repository: CRAN
+Date/Publication: 2026-08-07 17:10:07 UTC

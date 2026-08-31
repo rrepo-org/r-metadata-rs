@@ -1,0 +1,32 @@
+Package: quickr
+Title: Compiler for R
+Version: 0.3.0
+Authors@R: c(
+    person("Tomasz", "Kalinowski", , "tomasz@posit.co", role = c("aut", "cre")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: Compile R functions annotated with type and shape
+    declarations for extremely fast performance and robust runtime
+    type checking. Supports both just-in-time (JIT) and ahead-of-time
+    (AOT) compilation. Compilation is performed by lowering R code to
+    Fortran.
+License: MIT + file LICENSE
+URL: https://github.com/t-kalinowski/quickr
+BugReports: https://github.com/t-kalinowski/quickr/issues
+Depends: R (>= 4.3.0)
+Imports: dotty, glue, S7
+Suggests: bench, cli, pkgload (>= 1.4.0), rlang, testthat (>= 3.0.0),
+        withr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: unary-intrinsics, loops
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-18 01:33:02 UTC; tomasz
+Author: Tomasz Kalinowski [aut, cre],
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
+Maintainer: Tomasz Kalinowski <tomasz@posit.co>
+Repository: CRAN
+Date/Publication: 2026-04-18 02:20:02 UTC

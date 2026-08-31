@@ -1,0 +1,40 @@
+Package: WFC
+Title: Workflow-Oriented Survey Weight Calibration
+Version: 2.0.1
+Authors@R: c(
+    person(given = "Kunxiang", family = "Ma", email = "makunxiang@weiandata.com", role = c("aut", "cre")),
+    person("WEIAN DATA TECH (Beijing) Co., Ltd.", role = c("cph", "fnd"),
+           email = "contact@weiandata.com"))
+Author: Kunxiang Ma [aut, cre],
+  WEIAN DATA TECH (Beijing) Co., Ltd. [cph, fnd]
+Maintainer: Kunxiang Ma <makunxiang@weiandata.com>
+Description: Provides a disciplined precheck, execution, and diagnostics workflow
+    for survey weighting and raking. Weight construction requires design-only data,
+    a verified external target, outcome-blind planning, and human approval before
+    weight locking, with bilingual reports for decision and statistical audiences.
+    Converts calibrated and replicate weights into standard survey designs,
+    provides optional broom-style result projections, and records serializable
+    production pipeline provenance. Supports fixed, predeclared soft calibration
+    tolerances and categorical entropy balancing from verified margins, plus panel
+    attrition weighting, high-influence unit diagnostics, Fay's balanced repeated
+    replication, and opt-in parallel execution for long runs.
+    Calibration methods follow Deville and Saerndal (1992)
+    <doi:10.1080/01621459.1992.10475217>, and entropy balancing follows
+    Hainmueller (2012) <doi:10.1093/pan/mpr025>.
+License: GPL (>= 2)
+Copyright: See file inst/COPYRIGHTS.
+URL: https://github.com/weiandata/WFC
+BugReports: https://github.com/weiandata/WFC/issues
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: digest, parallel, stats, utils
+LazyData: true
+Suggests: cli, covr, generics, knitr, openxlsx, rmarkdown, survey,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-28 21:39:56 UTC; makunxiang
+Repository: CRAN
+Date/Publication: 2026-08-06 13:50:06 UTC

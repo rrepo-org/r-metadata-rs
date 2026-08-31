@@ -1,0 +1,40 @@
+Type: Package
+Package: kfre
+Title: Kidney Failure Risk Equation (KFRE) Tools
+Version: 0.0.2
+Authors@R: 
+    c(person("Leonid", "Shpaner",
+             email = "lshpaner@ucla.edu",
+             role = c("aut","cre"),
+             comment = c(
+               ORCID = "0009-0007-5311-8095",
+               URL   = "https://www.leonshpaner.com"
+             )))
+Description: Implements the Kidney Failure Risk Equation
+  (KFRE; Tangri and colleagues (2011) <doi:10.1001/jama.2011.451>;
+  Tangri and colleagues (2016) <doi:10.1001/jama.2015.18202>) to compute
+  2- and 5-year kidney failure risk using 4-, 6-, and 8-variable models.
+  Includes helpers to append risk columns to data frames, classify
+  chronic kidney disease (CKD) stages and end-stage renal disease (ESRD)
+  outcomes, and evaluate and plot model performance.
+License: MIT + file LICENSE
+URL: https://github.com/lshpaner/kfre_r,
+        https://lshpaner.github.io/kfre_r/
+BugReports: https://github.com/lshpaner/kfre_r/issues
+Depends: R (>= 3.6)
+Imports: ggplot2, grDevices, R6
+Suggests: devtools, knitr, readxl, rmarkdown, rprojroot, spelling,
+        svglite, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-08-22 22:25:34 UTC; lshpaner
+Author: Leonid Shpaner [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-5311-8095>, URL:
+    https://www.leonshpaner.com)
+Maintainer: Leonid Shpaner <lshpaner@ucla.edu>
+Repository: CRAN
+Date/Publication: 2025-08-28 07:40:12 UTC

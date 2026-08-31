@@ -1,0 +1,28 @@
+Package: treesitter.c
+Title: 'R' Bindings to the 'C' Grammar for Tree-Sitter
+Version: 0.0.4.2
+Authors@R: c(
+    person(given = "Sounkou Mahamane", family = "Toure", email = "sounkoutoure@gmail.com", role = c("aut", "cre")),
+    person("Tree-sitter authors", role = "cph", comment = "Tree-sitter C grammar"),
+    person("Eli Bendersky and Co-authors", role = "cph", comment = "pycparser fake_libc headers"))
+Description: Provides bindings to a 'C' grammar for Tree-sitter, to be used
+    alongside the 'treesitter' package. Tree-sitter builds concrete syntax trees
+    for source files and can efficiently update them or generate code like producing 
+    R C API wrappers from C functions, structs and global definitions from header files.
+License: GPL-3
+Depends: R (>= 4.3.0)
+Imports: treesitter
+Suggests: tinytest
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://sounkou-bioinfo.github.io/treesitter.c/,
+        https://github.com/sounkou-bioinfo/treesitter.c
+BugReports: https://github.com/sounkou-bioinfo/treesitter.c/issues
+NeedsCompilation: yes
+Packaged: 2026-02-07 20:55:29 UTC; sounkoutoure
+Author: Sounkou Mahamane Toure [aut, cre],
+  Tree-sitter authors [cph] (Tree-sitter C grammar),
+  Eli Bendersky and Co-authors [cph] (pycparser fake_libc headers)
+Maintainer: Sounkou Mahamane Toure <sounkoutoure@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-08 10:50:02 UTC

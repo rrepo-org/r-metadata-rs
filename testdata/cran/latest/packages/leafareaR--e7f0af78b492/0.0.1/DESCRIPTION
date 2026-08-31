@@ -1,0 +1,52 @@
+Package: leafareaR
+Type: Package
+Title: Leaf Area Modeling, Evaluation, and Prediction
+Version: 0.0.1
+Authors@R: c(
+    person(
+      given = c("Joao", "Everthon"),
+      family = "da Silva Ribeiro",
+      email = "everthonribeiro10@gmail.com",
+      role = c("aut", "cre")
+    ),
+    person(
+      given = c("Ester", "dos", "Santos"),
+      family = "Coelho",
+      role = "aut"
+    ),
+    person(
+      given = c("Toshik", "Iarley"),
+      family = "da Silva",
+      role = "aut"
+    )
+  )
+Description: Tools for leaf area estimation based on leaf length, leaf width,
+    and observed leaf area. The package supports data validation, predictor
+    generation, descriptive statistics, exploratory graphics, scatterplot
+    matrices, linear models, nonlinear models, mixed models, model
+    evaluation, ranking, equation generation, prediction, export of results
+    and plots, and an interactive 'shiny' application. Methods implemented
+    in the package are aligned with non-destructive allometric workflows
+    described by Ribeiro et al. (2024) <doi:10.1016/j.sajb.2024.07.006>,
+    Ribeiro et al. (2023) <doi:10.1590/1807-1929/agriambi.v27n3p209-215>,
+    and Ribeiro et al. (2025) <doi:10.1590/0103-8478cr20230550>.
+License: GPL (>= 3)
+URL: https://github.com/agrobioestat/leafareaR
+BugReports: https://github.com/agrobioestat/leafareaR/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.4.0)
+Imports: graphics, ggplot2, lme4, lmerTest, MuMIn, reformulas, rlang,
+        shiny, stats, utils
+Suggests: knitr, readxl, rmarkdown, testthat (>= 3.0.0), writexl
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-30 22:12:47 UTC; Everthon
+Author: Joao Everthon da Silva Ribeiro [aut, cre],
+  Ester dos Santos Coelho [aut],
+  Toshik Iarley da Silva [aut]
+Maintainer: Joao Everthon da Silva Ribeiro <everthonribeiro10@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-06 14:10:19 UTC

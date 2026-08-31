@@ -1,0 +1,47 @@
+Package: causalDisco
+Title: Tools for Causal Discovery on Observational Data
+Version: 1.2.1
+Authors@R: c(
+    person(given = "Bjarke", family = "Hautop Kristensen", email = "bjarke.kristensen@sund.ku.dk", role = c("aut", "cre")),
+    person(given = "Frederik", family = "Fabricius-Bjerre", email = "frederik@fabriciusbjerre.dk", role = "aut"),
+    person(given = "Anne", family = "Helby Petersen", email = "ahpe@sund.ku.dk", role = "aut"),
+    person(given = "Claus", family = "Thorn Ekstrøm", email = "ekstrom@sund.ku.dk", role = "aut"),
+    person(given = "Tobias", family = "Ellegaard Larsen", email = "tobias.ellegaard@sund.ku.dk", role = "ctb")
+  )
+Description: Tools for causal structure learning from observational data, with emphasis on temporally
+    ordered variables. The package implements the Temporal Peter–Clark (TPC) algorithm
+    (Petersen, Osler & Ekstrøm, 2021; <doi:10.1093/aje/kwab087>), the Temporal Greedy
+    Equivalence Search (TGES) algorithm (Larsen, Ekstrøm & Petersen, 2025; <doi:10.48550/arXiv.2502.06232>)
+    and Temporal Fast Causal Inference (TFCI). It provides a unified framework for specifying background
+    knowledge, which can be incorporated into the implemented algorithms from the R packages 'bnlearn'
+    (Scutari, 2010; <doi:10.18637/jss.v035.i03>) and 'pcalg' (Kalish et al., 2012; <doi:10.18637/jss.v047.i11>),
+    as well as the Java library 'Tetrad' (Scheines et al., 1998; <doi:10.1207/s15327906mbr3301_3>).
+    The package further includes utilities for visualization, comparison, and evaluation of graph
+    structures, facilitating performance evaluation and methodological studies.
+License: GPL-2
+URL: https://github.com/disco-coders/causalDisco,
+        https://disco-coders.github.io/causalDisco/
+BugReports: https://github.com/disco-coders/causalDisco/issues
+Depends: R (>= 4.2.0)
+Imports: bnlearn, caugi (>= 1.0.0), checkmate, cli, digest, dplyr,
+        lifecycle, methods, pcalg, purrr, R6, rlang, S7, tibble, tidyr,
+        tidyselect
+Suggests: knitr, mockery, quarto, RhpcBLASctl, rJava, rmarkdown,
+        spelling, testthat (>= 3.0.0), withr, mice, micd
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Config/Needs/website: quarto
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-20 17:26:35 UTC; bjarke
+Author: Bjarke Hautop Kristensen [aut, cre],
+  Frederik Fabricius-Bjerre [aut],
+  Anne Helby Petersen [aut],
+  Claus Thorn Ekstrøm [aut],
+  Tobias Ellegaard Larsen [ctb]
+Maintainer: Bjarke Hautop Kristensen <bjarke.kristensen@sund.ku.dk>
+Repository: CRAN
+Date/Publication: 2026-07-20 18:00:02 UTC

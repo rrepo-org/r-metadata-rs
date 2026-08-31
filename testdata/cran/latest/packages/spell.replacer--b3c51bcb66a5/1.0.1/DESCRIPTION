@@ -1,0 +1,32 @@
+Package: spell.replacer
+Title: Probabilistic Spelling Correction in a Character Vector
+Version: 1.0.1
+Authors@R: 
+    person(given = "David",
+           family = "Brown",
+           role = c("aut", "cre"),
+           email = "dwb2@andrew.cmu.edu",
+           comment = c(ORCID = "0000-0001-7745-6354"))
+Description: Automatically replaces "misspelled" words in a character vector
+    based on their string distance from a list of words sorted by their frequency
+    in a corpus. The default word list provided in the package comes from 
+    the Corpus of Contemporary American English. Uses the Jaro-Winkler distance
+    metric for string similarity as implemented in van der Loo (2014) 
+    <doi:10.32614/RJ-2014-011>. The word frequency data is derived from 
+    Davies (2008-) "The Corpus of Contemporary American English (COCA)" 
+    <https://www.english-corpora.org/coca/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+Imports: hunspell, stringr, stringdist, textclean
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-08-29 19:11:59 UTC; runner
+Author: David Brown [aut, cre] (ORCID: <https://orcid.org/0000-0001-7745-6354>)
+Maintainer: David Brown <dwb2@andrew.cmu.edu>
+Repository: CRAN
+Date/Publication: 2025-09-03 21:10:02 UTC

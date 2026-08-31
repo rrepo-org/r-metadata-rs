@@ -1,0 +1,36 @@
+Package: photobiologySensors
+Type: Package
+Title: Response Data for Light Sensors
+Version: 0.5.3
+Date: 2026-03-12
+Authors@R: 
+   c(
+    person("Pedro J.", "Aphalo", email = "pedro.aphalo@helsinki.fi", role = c("aut", "cre"), comment = c(ORCID = "https://orcid.org/0000-0003-3385-972X"))
+    )
+Maintainer: Pedro J. Aphalo <pedro.aphalo@helsinki.fi>
+Description: Spectral response data for broadband ultraviolet and visible
+    radiation sensors. Angular response data for broadband ultraviolet and visible
+    radiation sensors and diffusers used as entrance optics. Data obtained from
+    multiple sources were used: author-supplied data from scientific research 
+    papers, sensor-manufacturer supplied data, and published sensor 
+    specifications. Part of the 'r4photobiology' suite Aphalo P. J. (2015) 
+    <doi:10.19232/uv4pb.2015.1.14>.
+License: GPL (>= 2)
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0), photobiology (>= 0.14.0)
+Suggests: knitr (>= 1.50), rmarkdown (>= 2.29), photobiologyWavebands
+        (>= 0.5.3), ggspectra (>= 0.3.16), ggplot2 (>= 3.5.1)
+LazyLoad: yes
+LazyData: yes
+ByteCompile: true
+Encoding: UTF-8
+URL: https://docs.r4photobiology.info/photobiologySensors/,
+        https://github.com/aphalo/photobiologysensors
+BugReports: https://github.com/aphalo/photobiologysensors/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-13 20:23:50 UTC; aphalo
+Author: Pedro J. Aphalo [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3385-972X>)
+Repository: CRAN
+Date/Publication: 2026-03-13 21:50:02 UTC

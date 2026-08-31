@@ -1,0 +1,29 @@
+Package: baskoptr
+Title: Utility-Based Optimization for Basket Trial Designs
+Version: 1.0.4
+Description: A unified framework for optimizing
+    basket trial designs. To this end, the package supplies several utility
+    functions and also a function for executing optimization algorithms on basket
+    trial designs. The considered utility functions are discussed in
+    Sauer et al. (2025) <doi:10.1371/journal.pone.0323097>.
+Authors@R: 
+    person("Lukas D", "Sauer", , "sauer@imbi.uni-heidelberg.de", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0002-1340-9994"))
+License: MIT + file LICENSE
+Imports: baskwrap (>= 1.0.1), future.apply
+Suggests: optimizr (>= 1.0.0), baskexact (>= 1.0.0), testthat (>=
+        3.0.0), progressr, basksim (>= 2.0.0)
+URL: https://github.com/LukasDSauer/baskoptr
+BugReports: https://github.com/LukasDSauer/baskoptr/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-20 10:04:09 UTC; or415
+Author: Lukas D Sauer [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1340-9994>)
+Maintainer: Lukas D Sauer <sauer@imbi.uni-heidelberg.de>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-04-02 20:00:09 UTC

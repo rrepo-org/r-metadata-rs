@@ -1,0 +1,38 @@
+Package: chmsflow
+Type: Package
+Title: Transforming and Harmonizing CHMS Variables
+Version: 0.1.0
+Authors@R: c(
+    person("Rafidul", "Islam", email = "raislam@ohri.ca", role = c("aut", "cre", "cph"), comment = c(ORCID = "0009-0008-3072-5623")),
+    person("Douglas", "Manuel", email = "dmanuel@ohri.ca", role = c("aut", "cph"), comment = c(ORCID = "0000-0003-0912-0845")),
+    person("Therese", "Chan", email = "TChan@bruyere.org", role = c("ctb"), comment = c(ORCID = "0009-0002-2291-7218")),
+    person("The Ottawa Hospital Research Institute", role = c("cph")))
+Description: Harmonizes variables from the Canadian Health Measures Survey (CHMS)
+    across cycles 1-6 (2007-2019), producing consistent, analysis-ready
+    variables for use with CHMS data. Recoding is data-driven through metadata
+    tables and applied with recodeflow::rec_with_table() from the 'recodeflow'
+    package. The recoding approach builds on sjmisc::rec() from the 'sjmisc'
+    package (Ludecke 2018) <doi:10.21105/joss.00754>.
+Depends: R (>= 4.1.0)
+Imports: dplyr, haven, purrr, recodeflow
+License: MIT + file LICENSE
+URL: https://github.com/Big-Life-Lab/chmsflow,
+        https://big-life-lab.github.io/chmsflow/
+BugReports: https://github.com/Big-Life-Lab/chmsflow/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: DT, kableExtra, knitr, quarto, readr, testthat (>= 3.0.0)
+VignetteBuilder: quarto
+Config/build/clean-inst-doc: FALSE
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-02 14:36:36 UTC; rafidulislam
+Author: Rafidul Islam [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0008-3072-5623>),
+  Douglas Manuel [aut, cph] (ORCID:
+    <https://orcid.org/0000-0003-0912-0845>),
+  Therese Chan [ctb] (ORCID: <https://orcid.org/0009-0002-2291-7218>),
+  The Ottawa Hospital Research Institute [cph]
+Maintainer: Rafidul Islam <raislam@ohri.ca>
+Repository: CRAN
+Date/Publication: 2026-06-08 18:00:08 UTC

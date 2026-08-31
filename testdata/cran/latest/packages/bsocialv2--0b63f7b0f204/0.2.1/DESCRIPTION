@@ -1,0 +1,42 @@
+Package: bsocialv2
+Title: Analysis of Microbial Social Behavior in Bacterial Consortia
+Version: 0.2.1
+Authors@R: c(
+    person("Maria", "Garcia Toledo", role = c("aut")),
+    person("Juan Emilio", "Martinez Manjon", role = c("aut", "cre"), email = "juanemartinez999@hotmail.com"),
+    person("Jessica", "Purswani", role = c("aut")),
+    person("Rocio", "Romero Zaliz", role = c("aut"))
+  )
+Description: Provides an S4 class and methods for analyzing microbial social
+    behavior in bacterial consortia. Includes growth parameter extraction,
+    social behavior classification (cooperators/cheaters/neutrals),
+    diversity effect analysis, consortium assembly path finding, and
+    stability analysis via coefficient of variation. Methods are described
+    in Purswani et al. (2017) <doi:10.3389/fmicb.2017.00919>.
+License: MIT + file LICENSE
+URL: https://github.com/Juane99/bsocialv2
+BugReports: https://github.com/Juane99/bsocialv2/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 4.0), methods
+Imports: dplyr, ggplot2, grDevices, growthcurver, igraph, magrittr,
+        reshape2, rlang, stats, tidyr, viridis
+Suggests: readr, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Collate: 'bsocial-package.R' 'bsocial-log.R' 'bsocial-class.R'
+        'transform-raw-data.R' 'transform-curated-data.R'
+        'calculate-growth-params.R' 'plot-processed-curves.R'
+        'plot-growth-scatter.R' 'analyze-growth.R'
+        'analyze-social-behavior.R' 'summarize-social-behavior.R'
+        'analyze-diversity.R' 'analyze-biofilm-sequence.R'
+        'analyze-stability.R'
+NeedsCompilation: no
+Packaged: 2026-04-28 17:27:51 UTC; juane
+Author: Maria Garcia Toledo [aut],
+  Juan Emilio Martinez Manjon [aut, cre],
+  Jessica Purswani [aut],
+  Rocio Romero Zaliz [aut]
+Maintainer: Juan Emilio Martinez Manjon <juanemartinez999@hotmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-28 17:40:02 UTC

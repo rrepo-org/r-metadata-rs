@@ -1,0 +1,36 @@
+Package: rfvimptest
+Type: Package
+Title: Sequential Permutation Testing of Random Forest Variable
+        Importance Measures
+Version: 0.1.4
+Date: 2025-05-08
+Authors@R: c(person("Alexander", "Hapfelmeier", role = c("aut"),
+                      email = "Alexander.Hapfelmeier@mri.tum.de"),
+             person("Roman", "Hornung", role = c("aut", "cre"), 
+                      email = "hornung@ibe.med.uni-muenchen.de"))
+Description: Sequential permutation testing for statistical
+  significance of predictors in random forests and other prediction methods. 
+  The main function of the package is rfvimptest(), which allows to test for 
+  the   statistical significance of predictors in random forests using 
+  different (sequential) permutation test strategies [1]. The advantage 
+  of sequential over conventional permutation tests is that they
+  are computationally considerably less intensive, as the sequential
+  procedure is stopped as soon as there is sufficient evidence
+  for either the null or the alternative hypothesis.
+  Reference:
+  [1] Hapfelmeier, A., Hornung, R. & Haller, B. (2023) Efficient permutation
+	  testing of variable importance measures by the example of random forests.
+	  Computational Statistics & Data Analysis 181:107689, <doi:10.1016/j.csda.2022.107689>.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: party, ranger, permimp
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-05-08 16:35:27 UTC; hornung
+Author: Alexander Hapfelmeier [aut],
+  Roman Hornung [aut, cre]
+Maintainer: Roman Hornung <hornung@ibe.med.uni-muenchen.de>
+Repository: CRAN
+Date/Publication: 2025-05-08 22:10:02 UTC

@@ -1,0 +1,42 @@
+Package: xtife
+Type: Package
+Title: Interactive Fixed Effects Estimator for Panel Data
+Version: 0.1.4
+Date: 2026-07-22
+Authors@R: person("Binzhi", "Chen",
+                  email = "Binzhi.Chen9@gmail.com",
+                  role  = c("aut", "cre"))
+Description: Implements the interactive fixed effects ('IFE') panel estimator of
+    Bai (2009) <doi:10.3982/ECTA6135> for balanced and unbalanced panels, with
+    optional additive unit and/or time fixed effects. Provides analytical
+    standard errors ('homoskedastic', 'HC1' heteroskedasticity-robust,
+    cluster-robust by unit, and heteroskedasticity- and autocorrelation-
+    consistent), together with asymptotic incidental-parameter bias correction
+    for large panels, including a dynamic extension for predetermined
+    (lagged-dependent) regressors following Moon and Weidner (2017)
+    <doi:10.1017/S0266466615000328>. The number of factors is chosen by
+    information criteria (Bai and Ng 2002 <doi:10.1111/1468-0262.00273>) or by
+    singular value thresholding. Unbalanced panels are handled by an
+    expectation-maximisation algorithm with nuclear-norm-regularised
+    initialisation, with estimation, analytical inference, and bias correction
+    following Su, Wang and Wang (2025) <doi:10.2139/ssrn.5177283> and building
+    on the matrix-completion and missing-data factor analysis of Bai and Ng
+    (2021) <doi:10.1080/01621459.2021.1967163>. All computations use base R
+    only, with no external dependencies.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/Rickchen0910/xtife
+BugReports: https://github.com/Rickchen0910/xtife/issues
+NeedsCompilation: no
+Packaged: 2026-07-22 17:16:17 UTC; apple
+Author: Binzhi Chen [aut, cre]
+Maintainer: Binzhi Chen <Binzhi.Chen9@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-22 18:40:02 UTC

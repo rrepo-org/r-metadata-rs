@@ -1,0 +1,51 @@
+Package: deliberr
+Type: Package
+Title: Methods for Deliberation Analysis
+Version: 0.1.3
+Authors@R: c(
+    person(
+      "Gustavo", "Kreia Umbelino",
+      email = "gustavo.kreiaumbelino@zda.uzh.ch",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-7754-9606")
+    ),
+    person(
+      "Francesco", "Veri",
+      email = "francesco.veri@zda.uzh.ch",
+      role = "aut",
+      comment = c(ORCID = "0000-0002-9295-6776")
+    ),
+    person(
+      "Swiss National Science Foundation (SNSF)",
+      role = "fnd"
+    )
+  )
+URL: https://github.com/gumbelino/deliberr,
+        https://gumbelin.shinyapps.io/deliberr
+BugReports: https://github.com/gumbelino/deliberr/issues
+Description: An implementation of deliberative reasoning index (DRI) and related 
+    tools for analysis of deliberation survey data. Calculation of DRI, plot of 
+    intersubjective correlations (IC), generation of large-language model (LLM) 
+    survey data, and permutation tests are supported. Example datasets and a 
+    graphical user interface (GUI) are also available to support analysis. For 
+    more information, see Niemeyer and Veri (2022)
+    <doi:10.1093/oso/9780192848925.003.0007>. For an alternative version of this
+    dataset, see Niemeyer et al. (2024) <doi:10.1017/S0003055423000023>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: stats, dplyr, shiny, tibble, ggplot2, rstatix, grid, psych,
+        tidyr, rlang, glue, httr, purrr, readr, jsonlite, lifecycle,
+        uuid,
+RoxygenNote: 7.3.3
+Suggests: DT, gridExtra, knitr, readxl, rmarkdown
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-06-16 17:57:31 UTC; gus
+Author: Gustavo Kreia Umbelino [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7754-9606>),
+  Francesco Veri [aut] (ORCID: <https://orcid.org/0000-0002-9295-6776>),
+  Swiss National Science Foundation (SNSF) [fnd]
+Maintainer: Gustavo Kreia Umbelino <gustavo.kreiaumbelino@zda.uzh.ch>
+Repository: CRAN
+Date/Publication: 2026-06-17 07:30:09 UTC

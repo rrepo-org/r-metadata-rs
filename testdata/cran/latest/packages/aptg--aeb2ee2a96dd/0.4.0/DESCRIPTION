@@ -1,0 +1,30 @@
+Package: aptg
+Type: Package
+Title: Automatic Phylogenetic Tree Generator
+Version: 0.4.0
+Authors@R: person("Christophe", "Benjamin",
+    email = "christophe.benjamin@protonmail.com",
+    role = c("aut", "cre"))
+Description: Generates phylogenetic trees and distance matrices from a list
+    of taxon names, or from a higher taxon expanded down to a chosen lower
+    rank. Trees are obtained as induced subtrees of the Open Tree of Life
+    synthetic tree using the 'rotl' package (Michonneau, Brown and Winter,
+    2016, <doi:10.1111/2041-210X.12593>). Expansion of a higher taxon to its
+    descendants uses 'taxize' (Chamberlain and Szocs, 2013,
+    <doi:10.12688/f1000research.2-191.v2>).
+Imports: ape, rotl, taxize, stats
+Suggests: fishtree, rgbif, geosphere, testthat (>= 3.0.0), knitr,
+        rmarkdown
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+NeedsCompilation: no
+Config/testthat/edition: 3
+URL: https://github.com/christophebenjamin/aptg
+BugReports: https://github.com/christophebenjamin/aptg/issues
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-18 17:13:24 UTC; chris
+Author: Christophe Benjamin [aut, cre]
+Maintainer: Christophe Benjamin <christophe.benjamin@protonmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-19 07:20:08 UTC

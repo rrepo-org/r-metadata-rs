@@ -1,0 +1,35 @@
+Package: theft
+Type: Package
+Title: Tools for Handling Extraction of Features from Time Series
+Version: 0.8.4
+Date: 2026-04-29
+Authors@R: c(
+  person("Trent", "Henderson", email = "then6675@uni.sydney.edu.au", role = c("cre", "aut")),
+  person("Annie", "Bryant", role = "ctb")
+  )
+Maintainer: Trent Henderson <then6675@uni.sydney.edu.au>
+Description: Consolidates and calculates different sets of time-series features from multiple
+    'R' and 'Python' packages including 'Rcatch22' Henderson, T. (2021) <doi:10.5281/zenodo.5546815>,
+    'feasts' O'Hara-Wild, M., Hyndman, R., and Wang, E. (2021) <https://CRAN.R-project.org/package=feasts>,
+    'tsfeatures' Hyndman, R., Kang, Y., Montero-Manso, P., Talagala, T., Wang, E., Yang, Y., and O'Hara-Wild, M. (2020)
+    <https://CRAN.R-project.org/package=tsfeatures>, 'tsfresh' Christ, M., Braun, N., Neuffer, J.,
+    and Kempa-Liehr A.W. (2018) <doi:10.1016/j.neucom.2018.03.067>, 'TSFEL' Barandas, M., et al. (2020)
+    <doi:10.1016/j.softx.2020.100456>, and 'Kats' Facebook Infrastructure Data Science (2021)
+    <https://facebookresearch.github.io/Kats/>.
+BugReports: https://github.com/hendersontrent/theft/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: utils, stats, rlang, dplyr, tidyr, purrr, tsibble, fabletools,
+        feasts, tsfeatures, Rcatch22, reticulate, R.matlab
+Suggests: lifecycle, cachem, bslib, knitr, rmarkdown, pkgdown, testthat
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+URL: https://hendersontrent.github.io/theft/
+NeedsCompilation: no
+Packaged: 2026-04-29 02:34:36 UTC; trenthenderson
+Author: Trent Henderson [cre, aut],
+  Annie Bryant [ctb]
+Repository: CRAN
+Date/Publication: 2026-04-29 06:40:07 UTC

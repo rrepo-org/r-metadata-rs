@@ -1,0 +1,41 @@
+Package: demovuln
+Type: Package
+Title: Demographic Vulnerability Metrics for Matrix Population Models
+Version: 0.1.0
+Authors@R: c(
+    person(
+        given = "Àlex",
+        family = "Giménez-Romero",
+        role = c("aut", "cre"),
+        email = "alex.gimenez@csic.es",
+        comment = c(ORCID = "0000-0003-2796-6801")),
+    person(
+        given = "Meritxell",
+        family = "Genovart",
+        role = "aut",
+        comment = c(ORCID = "0000-0003-2919-1288"))
+    )
+Description: Simulates temporally structured perturbations in matrix population
+    models and computes population reduction and integrated demographic
+    vulnerability across perturbation regimes. Perturbations can be applied to
+    adult survival, juvenile survival, fecundity, all demographic entries, or
+    user-defined matrix elements. The package provides tools to simulate
+    individual perturbation trajectories, evaluate perturbation grids, and
+    summarize demographic vulnerability in structured populations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/agimenezromero/demovuln-r
+BugReports: https://github.com/agimenezromero/demovuln-r/issues
+NeedsCompilation: no
+Packaged: 2026-05-22 11:12:33 UTC; alex
+Author: Àlex Giménez-Romero [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2796-6801>),
+  Meritxell Genovart [aut] (ORCID:
+    <https://orcid.org/0000-0003-2919-1288>)
+Maintainer: Àlex Giménez-Romero <alex.gimenez@csic.es>
+Repository: CRAN
+Date/Publication: 2026-05-28 13:40:07 UTC

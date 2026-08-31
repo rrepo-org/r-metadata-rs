@@ -1,0 +1,33 @@
+Package: areaOfEffect
+Title: Spatial Support at Scale
+Version: 0.2.4
+Authors@R: 
+    person("Gilles", "Colling", , "gilles.colling051@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-3070-6066"))
+Description: Formalizes spatial support at scale for ecological and geographical
+    analysis. Given points and support polygons, classifies points as "core"
+    (inside original support) or "halo" (inside scaled support but outside
+    original), pruning all others. The default scale produces equal core and
+    halo areas - a geometrically derived choice requiring no tuning. An optional
+    mask enforces hard boundaries such as coastlines. Political borders are
+    treated as soft boundaries with no ecological meaning.
+License: MIT + file LICENSE
+URL: https://gillescolling.com/areaOfEffect/,
+        https://github.com/gcol33/areaOfEffect
+BugReports: https://github.com/gcol33/areaOfEffect/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: methods, sf
+Suggests: lwgeom, testthat (>= 3.0.0), knitr, rmarkdown, svglite
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-02-03 20:41:48 UTC; Gilles Colling
+Author: Gilles Colling [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3070-6066>)
+Maintainer: Gilles Colling <gilles.colling051@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-06 19:40:14 UTC

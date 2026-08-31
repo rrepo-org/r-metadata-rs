@@ -1,0 +1,33 @@
+Package: Tivy
+Type: Package
+Title: Toolkit for Investigation and Visualization of Young Anchovies
+Version: 0.1.1
+Authors@R: person("Hans", "Ttito", 
+                  email = "kvttitos@gmail.com", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0003-3732-9419"))
+Description: Specialized toolkit for processing biological and fisheries data from Peru's anchovy (Engraulis ringens) fishery. Provides functions to analyze fishing logbooks, calculate biological indicators (length-weight relationships, juvenile percentages), generate spatial fishing indicators, and visualize regulatory measures from Peru's Ministry of Production. Features automated data processing from multiple file formats, coordinate validation, spatial analysis of fishing zones, and tools for analyzing fishing closure announcements and regulatory compliance. Includes built-in datasets of Peruvian coastal coordinates and parallel lines for analyzing fishing activities within regulatory zones.
+URL: https://github.com/HansTtito/Tivy
+BugReports: https://github.com/HansTtito/Tivy/issues
+Depends: R (>= 4.0.0)
+Imports: dplyr (>= 1.0.0), tidyr (>= 1.0.0), lubridate (>= 1.7.0),
+        stringr (>= 1.4.0), stringi (>= 1.4.0), ggplot2 (>= 3.3.0),
+        leaflet (>= 2.0.0), RColorBrewer (>= 1.1.0), rlang (>= 0.4.0),
+        httr (>= 1.4.0), rvest (>= 1.0.0), jsonlite (>= 1.6.0),
+        pdftools (>= 3.0.0), stats, utils, future (>= 1.21.0),
+        future.apply (>= 1.7.0), patchwork (>= 1.1.0), scales (>=
+        1.1.0)
+Suggests: rnaturalearth (>= 0.1.0), rnaturalearthdata, testthat (>=
+        3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-07-23 04:27:04 UTC; hkev2
+Author: Hans Ttito [aut, cre] (ORCID: <https://orcid.org/0000-0003-3732-9419>)
+Maintainer: Hans Ttito <kvttitos@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-23 08:00:08 UTC

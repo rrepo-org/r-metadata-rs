@@ -1,0 +1,41 @@
+Package: dsTidyverse
+Type: Package
+Title: 'DataSHIELD' 'Tidyverse' Server-Side Package
+Version: 1.2.1
+Authors@R: 
+    c(
+      person(given = "Tim",
+             family = "Cadman",
+             role = c("aut", "cre"),
+             email = "t.j.cadman@umcg.nl",
+             comment = c(ORCID = "0000-0002-7682-5645")), 
+     person(given = "Mariska",
+             family = "Slofstra",
+             role = c("aut"),
+             email = "m.k.slofstra@umcg.nl",
+             comment = c(ORCID = "0000-0002-0400-0468")),
+     person(given = "Stuart",
+            family = "Wheater",
+            role = c("aut")),
+     person(given = "Demetris",
+            family = "Avraam",
+            role = c("aut"))
+       )
+Maintainer: Tim Cadman <t.j.cadman@umcg.nl>
+Description: Implementation of selected 'Tidyverse' functions within 'DataSHIELD', an open-source federated analysis solution in R. Currently, DataSHIELD contains very limited tools for data manipulation, so the aim of this package is to improve the researcher experience by implementing essential functions for data manipulation, including subsetting, filtering, grouping, and renaming variables. This is the server-side package which should be installed on the server holding the data, and is used in conjunction with the client-side package 'dsTidyverseClient' which is installed in the local R environment of the analyst. For more information, see <https://tidyverse.org/> and <https://datashield.org/>.
+License: LGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: rlang, cli, dplyr
+Suggests: testthat (>= 3.0.0), tibble, DSLite, dsBaseClient, dsBase,
+        DSI, purrr, mockery, knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-27 12:24:24 UTC; tcadman
+Author: Tim Cadman [aut, cre] (ORCID: <https://orcid.org/0000-0002-7682-5645>),
+  Mariska Slofstra [aut] (ORCID: <https://orcid.org/0000-0002-0400-0468>),
+  Stuart Wheater [aut],
+  Demetris Avraam [aut]
+Repository: CRAN
+Date/Publication: 2026-04-27 12:40:09 UTC

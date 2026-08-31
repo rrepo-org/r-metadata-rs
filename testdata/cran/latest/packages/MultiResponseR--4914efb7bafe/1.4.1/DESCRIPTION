@@ -1,0 +1,18 @@
+Package: MultiResponseR
+Title: Analysis of Data from Multiple-Response Questionnaires
+Version: 1.4.1
+Authors@R: 
+    person(given = "Benjamin",family = "Mahieu",role = c("aut","cre"),email = "benjamin.mahieu@oniris-nantes.fr")
+Description: Provides a multiple-response chi-square framework for the analysis of contingency tables arising from multiple-response questionnaires, such as check-all-that-apply tasks, where response options are crossed with a known grouping factor. The framework accommodates within-block (e.g., within-subject) designs, as commonly encountered in sensory evaluation. It comprises a multiple-response chi-square test of homogeneity with an associated dimensionality test, a multiple-response Correspondence Analysis (CA), and per-cell multiple-response hypergeometric tests. These methods extend their classical counterparts by grounding inference in a null model that properly accounts for the multiple-response nature of the data, treating evaluations, rather than individual citations, as the experimental units, yielding more statistically valid conclusions than standard contingency table analyses. Details may be found in Mahieu, Schlich, Visalli, and Cardot (2021). <doi:10.1016/j.foodqual.2021.104256>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.3.3
+Depends: R (>= 4.5.0)
+Imports: flextable, officer, ggplot2, ggrepel, ellipse, stats, utils
+NeedsCompilation: no
+Packaged: 2026-03-18 13:46:29 UTC; benjamin.mahieu
+Author: Benjamin Mahieu [aut, cre]
+Maintainer: Benjamin Mahieu <benjamin.mahieu@oniris-nantes.fr>
+Repository: CRAN
+Date/Publication: 2026-03-23 09:40:12 UTC

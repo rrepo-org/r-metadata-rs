@@ -1,0 +1,31 @@
+Package: OmopOnSpark
+Title: Using a Common Data Model on 'Spark'
+Version: 0.1.0
+Authors@R: c(
+    person("Edward", "Burn", , "edward.burn@ndorms.ox.ac.uk", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9286-1128")),
+    person("Martí", "Català", , "marti.catalasabate@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0000-0003-3308-9905")))
+Description: Use health data in the Observational Medical Outcomes Partnership 
+    Common Data Model format in 'Spark'. Functionality includes creating all 
+    required tables and fields and creation of a single reference to the data. 
+    Native 'Spark' functionality is supported.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: cli, datasets, DBI, dbplyr, dplyr, glue, omopgenerics (>=
+        1.3.1), purrr, rlang, stringr
+Suggests: testthat (>= 3.0.0), omock, knitr, rmarkdown, CDMConnector,
+        OmopSketch, odbc, R6, crayon, sparklyr, DatabaseConnector
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+VignetteBuilder: knitr
+URL: https://OHDSI.github.io/OmopOnSpark/
+NeedsCompilation: no
+Packaged: 2025-10-19 18:42:36 UTC; orms0426
+Author: Edward Burn [aut, cre] (ORCID: <https://orcid.org/0000-0002-9286-1128>),
+  Martí Català [aut] (ORCID: <https://orcid.org/0000-0003-3308-9905>)
+Maintainer: Edward Burn <edward.burn@ndorms.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-10-22 19:20:02 UTC

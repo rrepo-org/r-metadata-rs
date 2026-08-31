@@ -1,0 +1,39 @@
+Package: wnpmle
+Title: Weighted NPMLE for Recurrent Events with a Competing Terminal
+        Event
+Version: 0.1.2
+Authors@R: 
+    person("Anna", "Bellach",
+           email = "abellach.biostat@gmail.com",
+           role = c("aut", "cre"))
+Description: Provides regression modeling and prediction for the marginal
+    mean of recurrent events in the presence of a competing terminal event
+    using the weighted nonparametric maximum likelihood estimator (wNPMLE)
+    of Bellach and Kosorok (2026)
+    <doi:10.48550/arXiv.2605.25934>. Two classes of transformation
+    models are implemented: Box-Cox transformation models and logarithmic
+    transformation models. These extend the proportional means model of
+    Ghosh and Lin (2002) <doi:10.17615/pt0g-y207> and the transformation
+    model framework of Zeng and Lin (2006)
+    <doi:10.1093/biomet/93.3.627>. Parameter estimation is performed using
+    automatic differentiation through the Template Model Builder (TMB)
+    framework. Standard errors are computed using sandwich variance
+    estimators that account for estimation of the inverse-probability
+    censoring weights following Bellach, Kosorok, Rüschendorf and Fine
+    (2019) <doi:10.1080/01621459.2017.1401540>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: TMB (>= 1.9.0), survival, methods, MASS, graphics, grDevices
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/abellach/wnpmle
+BugReports: https://github.com/abellach/wnpmle/issues
+NeedsCompilation: no
+Packaged: 2026-06-11 04:55:07 UTC; abell
+Author: Anna Bellach [aut, cre]
+Maintainer: Anna Bellach <abellach.biostat@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-18 17:10:02 UTC

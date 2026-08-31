@@ -1,0 +1,41 @@
+Package: fluorojip
+Type: Package
+Title: Analysis of Chlorophyll a Fluorescence Transient Parameters
+Version: 0.1.1
+Authors@R: c(
+    person(given = c("Joao", "Everthon"), family = "da Silva Ribeiro",
+           email = "everthonribeiro10@gmail.com",
+           role = c("aut", "cre")),
+    person(given = c("Toshik", "Iarley"), family = "da Silva",
+           role = "aut"),
+    person(given = c("Ronald", "Maldonado"), family = "Rodriguez",
+           role = "aut")
+  )
+Description: Computes chlorophyll a fluorescence transient
+    parameters from fluorescence summary data, including minimum and
+    maximum fluorescence, selected transient steps, and area. Provides
+    standard photosynthetic performance indices and fluxes per reaction
+    center and per cross section. Includes helpers to read exported
+    trace tables in supported 'csv' formats and validation workflows
+    based on bundled example files, as well as visualization tools and
+    an interactive 'shiny' interface. The implemented calculations are
+    based on Strasser et al. (2004) <doi:10.1007/978-1-4020-3218-9_12>
+    and Stirbet and Govindjee (2011)
+    <doi:10.1016/j.jphotobiol.2010.12.010>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: stats, utils, graphics, grDevices, readxl
+LazyData: true
+Suggests: knitr, rmarkdown, scatterplot3d, shiny, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-02 23:14:24 UTC; Everthon
+Author: Joao Everthon da Silva Ribeiro [aut, cre],
+  Toshik Iarley da Silva [aut],
+  Ronald Maldonado Rodriguez [aut]
+Maintainer: Joao Everthon da Silva Ribeiro <everthonribeiro10@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-09 08:50:14 UTC

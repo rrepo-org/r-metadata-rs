@@ -1,0 +1,41 @@
+Package: HawaSpatial
+Type: Package
+Title: Holistic and Areal Weighted Analysis for Global Development
+Version: 0.1.10
+Author: Abdisalam Hassan Muse [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4905-0044>)
+Maintainer: Abdisalam Hassan Muse <abdisalam.hassan@amoud.edu.so>
+Authors@R: person(given = "Abdisalam Hassan", family = "Muse", role = c("aut", "cre"), email =
+     "abdisalam.hassan@amoud.edu.so", comment = c(ORCID = "0000-0003-4905-0044"))
+Description: Provides a 'shiny'-based platform for sub-national monitoring of global development
+     indicators using large-scale household surveys. The package supports the Demographic and
+     Health Surveys, Multiple Indicator Cluster Surveys, Malaria Indicator Surveys, Integrated
+     Household Budget Surveys, Service Provision Assessment surveys, and Living Standards
+     Measurement Study surveys. It provides workflows for descriptive, diagnostic, predictive, and
+     prescriptive spatial analytics, including a spatial equalizer for survey-shapefile
+     integration, exploratory spatial data analysis, area-level small area estimation, spatial
+     autoregressive and spatial error models, hierarchical multilevel models, spatial inequality
+     metrics, spatial and temporal decomposition, and publication-ready reporting. The implemented
+     methods are described in <doi:10.1111/j.1538-4632.1995.tb00338.x>,
+     <doi:10.1007/s11749-018-0599-x>, and the reference identified by <isbn:9781118735787>. The
+     software has been cited in applied geographic and multilevel health studies, including studies
+     of arthritis resource allocation <doi:10.1016/j.jorep.2026.101000> and childhood stunting
+     priorities <doi:10.1016/j.nutos.2026.100660>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.2.0)
+Imports: shiny
+Suggests: biscale, broom, broom.mixed, bs4Dash, classInt, corrplot,
+        cowplot, dplyr, ggplot2, ggrepel, glmmTMB, gstat, haven, ineq,
+        knitr, lmtest, magrittr, performance, purrr, RColorBrewer,
+        readr, rmarkdown, sae, scales, sf, spatialreg, spdep, stringr,
+        survey, testthat (>= 3.0.0), tidyr, tidyselect, tidyverse,
+        viridis
+Config/testthat/edition: 3
+URL: https://github.com/Abdisalammuse/HawaSpatial
+BugReports: https://github.com/Abdisalammuse/HawaSpatial/issues
+NeedsCompilation: no
+Packaged: 2026-07-16 15:10:56 UTC; Admin
+Repository: CRAN
+Date/Publication: 2026-07-23 14:10:16 UTC

@@ -1,0 +1,27 @@
+Package: autoFlagR
+Type: Package
+Title: AI-Driven Anomaly Detection for Data Quality
+Version: 1.0.0
+Authors@R: person("Vikrant Dev", "Rathore", email = "rathore.vikrant@gmail.com", role = c("aut", "cre"))
+Description: Automated data quality auditing using unsupervised machine learning.
+    Provides AI-driven anomaly detection for data quality assessment, primarily
+    designed for Electronic Health Records (EHR) data, with benchmarking
+    capabilities for validation and publication. Methods based on: Liu et al.
+    (2008) <doi:10.1109/ICDM.2008.17>, Breunig et al. (2000)
+    <doi:10.1145/342009.335388>.
+License: MIT + file LICENSE
+URL: https://github.com/vikrant31/autoFlagR,
+        https://vikrant31.github.io/autoFlagR/
+BugReports: https://github.com/vikrant31/autoFlagR/issues
+Encoding: UTF-8
+Imports: isotree, dbscan, dplyr, ggplot2, pROC, PRROC, knitr, gt,
+        scales, rmarkdown (>= 2.0)
+Suggests: testthat, pkgdown, ggnewscale
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-10 07:44:26 UTC; vikrant31
+Author: Vikrant Dev Rathore [aut, cre]
+Maintainer: Vikrant Dev Rathore <rathore.vikrant@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-15 17:40:31 UTC

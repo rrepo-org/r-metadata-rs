@@ -1,0 +1,31 @@
+Package: fastLISA
+Type: Package
+Title: Fast Local Indicators of Spatial Association (LISA)
+Version: 1.0.1
+Authors@R: c(person("Lizhong", "Chen", role = c("aut", "cre"),
+             email = "chen.l@wehi.edu.au"))
+Description: Computes various Local Indicators of Spatial Association (LISA)
+    statistics, including univariate and bivariate local Moran's I,
+    Empirical Bayes local Moran's I, univariate and multivariate local
+    Geary's C, and Getis-Ord G and G* statistics. The methods follow
+    Anselin (1995), Getis and Ord (1992), and Anselin (2019). Leverages a
+    high-performance, plain-C backend with optional 'OpenMP' multi-core
+    support for fast permutation-based pseudo-p-value calculation. Accepts any
+    'spdep' listw spatial weight matrix, including custom and
+    non-contiguity weights. Uses sample standardisation (n-1) and
+    'rgeoda'-style permutation p-values. Output cluster codes match 'rgeoda'
+    conventions, including the Isolated category for observations without
+    neighbours.
+URL: https://github.com/lizhongc/fastLISA
+BugReports: https://github.com/lizhongc/fastLISA/issues
+License: GPL-3
+Encoding: UTF-8
+Imports: stats
+Suggests: spdep
+NeedsCompilation: yes
+SystemRequirements: C99, optional OpenMP
+Packaged: 2026-07-07 00:51:58 UTC; lizhongc
+Author: Lizhong Chen [aut, cre]
+Maintainer: Lizhong Chen <chen.l@wehi.edu.au>
+Repository: CRAN
+Date/Publication: 2026-07-07 11:20:02 UTC

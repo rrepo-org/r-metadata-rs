@@ -1,0 +1,32 @@
+Package: npfseir
+Title: Nested Particle Filter for Stochastic SEIR Epidemic Models
+Version: 0.2.1
+Date: 2026-04-22
+Authors@R: person("Weinan", "Wang",
+    email = "ww@ou.edu",
+    role  = c("aut", "cre"))
+Description: Implements the online Bayesian inference framework for joint
+    state and parameter estimation in a stochastic
+    Susceptible-Exposed-Infectious-Recovered (SEIR) epidemic model with a
+    time-varying transmission rate. The log-transmission rate is modelled as
+    a latent Ornstein-Uhlenbeck (OU) process with exact Gaussian discrete-time
+    transitions. Inference is performed via the nested particle filter (NPF) of
+    Crisan and Miguez (2018) <doi:10.3150/17-BEJ954>, which maintains an outer
+    particle layer over the OU hyperparameters and, for each outer particle, an
+    inner bootstrap filter over epidemic states. The Cori-style renewal-equation
+    estimator follows Cori et al. (2013) <doi:10.1093/aje/kwt133>. The package
+    also provides utilities for simulation, posterior summarisation, and
+    forecasting.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats, graphics, grDevices
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-22 15:30:05 UTC; weinanwang
+Author: Weinan Wang [aut, cre]
+Maintainer: Weinan Wang <ww@ou.edu>
+Repository: CRAN
+Date/Publication: 2026-04-24 18:40:07 UTC

@@ -1,0 +1,40 @@
+Type: Package
+Package: expowo
+Title: An R Package for Mining Global Plant Diversity and Distribution
+        Data
+Version: 3.1
+Authors@R: 
+    c(person(given = "Debora",
+             family = "Zuanny",
+             role = c("aut", "cre", "cph"),
+             email = "deborazuanny@gmail.com",
+             comment = c(ORCID = "0000-0001-6623-3788")),
+      person(given = "Domingos",
+             family = "Cardoso",
+             role = c("aut", "ths", "cph"),
+             email = "cardosobot@gmail.com",
+             comment = c(ORCID = "0000-0001-7072-2656")))
+Maintainer: Debora Zuanny <deborazuanny@gmail.com>
+Description: Produces diversity estimates and species lists with associated global distribution for any vascular plant family and genus from Plants of the World Online database, by interacting with the source code of each plant taxon page. It also creates global maps of species richness, graphics of species discoveries and name changes over time. For more details: 'Zuanny, D.C., B.Vilela, P.W.Moonlight, T.E.Särkinen, and D.Cardoso. 2024. expowo: An R package for mining global plant diversity and distribution data. Applications in Plant Sciences 12: e11609'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Imports: RColorBrewer, dplyr, magrittr, data.table, ggplot2,
+        rnaturalearth, sp, sf, utils, R.utils, flora, tibble, cowplot,
+        plyr, PupillometryR, scales, viridisLite
+Suggests: covr, knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://dboslab.github.io/expowo/,
+        https://github.com/dboslab/expowo
+BugReports: https://github.com/DBOSlab/expowo/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-24 17:11:14 UTC; debor
+Author: Debora Zuanny [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-6623-3788>),
+  Domingos Cardoso [aut, ths, cph] (ORCID:
+    <https://orcid.org/0000-0001-7072-2656>)
+Repository: CRAN
+Date/Publication: 2026-07-24 17:30:11 UTC

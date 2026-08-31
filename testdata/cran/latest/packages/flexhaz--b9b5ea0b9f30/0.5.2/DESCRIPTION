@@ -1,0 +1,32 @@
+Package: flexhaz
+Title: Dynamic Failure Rate Distributions for Survival Analysis
+Version: 0.5.2
+Authors@R: 
+    person("Alexander", "Towell", , "queelius@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6443-9897"))
+Description: Flexible framework for specifying survival distributions through
+    their hazard (failure rate) functions. Define arbitrary time-varying
+    hazard functions to model complex failure patterns including bathtub
+    curves, proportional hazards with covariates, and other non-standard
+    hazard behaviors. Provides automatic computation of survival, CDF, PDF,
+    quantiles, and sampling. Implements the likelihood model interface for
+    maximum likelihood estimation with right-censored and left-censored
+    survival data.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: stats, numDeriv, algebraic.dist, likelihood.model, generics
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+URL: https://github.com/queelius/flexhaz,
+        https://queelius.github.io/flexhaz/
+BugReports: https://github.com/queelius/flexhaz/issues
+NeedsCompilation: no
+Packaged: 2026-05-21 16:43:42 UTC; spinoza
+Author: Alexander Towell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6443-9897>)
+Maintainer: Alexander Towell <queelius@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-23 05:10:30 UTC

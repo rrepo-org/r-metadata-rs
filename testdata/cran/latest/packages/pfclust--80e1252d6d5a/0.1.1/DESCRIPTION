@@ -1,0 +1,38 @@
+Package: pfclust
+Type: Package
+Title: Power Fuzzy Clustering and Cluster-Wise Regression
+Version: 0.1.1
+Authors@R: 
+    c(person(given = "Phuc Thinh",
+             family = "Nguyen",
+             role = c("aut", "cre"),
+             email = "phucthinh010603@yahoo.com"),
+      person(given = "Cristina",
+             family = "Tortora",
+             role = c("aut", "ths", "dgs"),
+             email = "cristina.tortora@sjsu.edu"),
+      person(given = "Antonio",
+             family = "Punzo",
+             role = c("aut", "ths", "dgs"),
+             email = "antonio.punzo@unict.it"))
+Description: Implementations of Power Fuzzy Clustering (PFC) and Power Fuzzy
+    Cluster-wise Regression (PFCR) for multivariate data. The package supports
+    Minkowski distances, with the L1 case solved via iteratively re-weighted
+    least squares and the case p > 1 solved via coordinate-wise root finding,
+    as well as an adaptive, regularised Mahalanobis distance with per-cluster
+    covariance matrices. Both plain fuzzy clustering and cluster-wise linear
+    regression are provided. The corresponding paper can be found at Nguyen P.T., Tortora C., and Punzo A. (2026) <doi:10.1109/TFUZZ.2026.3683998>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats
+Suggests: flexCWM
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-13 21:04:38 UTC; cristina
+Author: Phuc Thinh Nguyen [aut, cre],
+  Cristina Tortora [aut, ths, dgs],
+  Antonio Punzo [aut, ths, dgs]
+Maintainer: Phuc Thinh Nguyen <phucthinh010603@yahoo.com>
+Repository: CRAN
+Date/Publication: 2026-07-13 21:50:02 UTC

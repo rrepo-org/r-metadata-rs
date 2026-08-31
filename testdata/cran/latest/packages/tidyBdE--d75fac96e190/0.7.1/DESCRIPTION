@@ -1,0 +1,51 @@
+Package: tidyBdE
+Title: Retrieve Time Series Data from 'Banco de España'
+Version: 0.7.1
+Authors@R: c(
+    person("Diego", "H. Herrero", , "dev.dieghernan@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8457-4658")),
+    person("Banco de España", role = "cph",
+           comment = c(ROR = "02f26yq04", "Data copyright holder"))
+  )
+Description: Tools for retrieving 'Banco de España' ('BdE') time series
+    data as 'tibble' objects from bulk CSV files and the 'Statistics web
+    service (API)'. Bulk CSV functions use stable 'BdE' sequential
+    numbers, while API functions use API series codes. Catalog functions
+    support discovery and local caching. Plotting helpers provide
+    'ggplot2' palettes, scales and themes. 'Banco de España' is the
+    national central bank and, within the framework of the Single
+    Supervisory Mechanism ('SSM'), the supervisor of the Spanish banking
+    system alongside the European Central Bank. This package is not
+    sponsored, endorsed or administered by 'Banco de España'.
+License: GPL (>= 3)
+URL: https://ropenspain.github.io/tidyBdE/,
+        https://github.com/rOpenSpain/tidyBdE
+BugReports: https://github.com/rOpenSpain/tidyBdE/issues
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr (>= 0.7.0), ggplot2 (>= 3.5.0), jsonlite,
+        lifecycle, readr (>= 1.0.0), scales (>= 1.1.0), tidyr, utils
+Suggests: knitr, quarto, testthat (>= 3.0.0), withr
+VignetteBuilder: quarto
+Config/Needs/coverage: covr
+Config/Needs/website: cpp11, devtools, progress, reactable, remotes,
+        styler, tidyverse, ropenspain/rostemplate
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Copyright: See file inst/COPYRIGHTS
+Encoding: UTF-8
+LazyData: true
+X-schema.org-applicationCategory: Macroeconomics
+X-schema.org-isPartOf: https://ropenspain.es/
+X-schema.org-keywords: api, bde, cran, ggplot2, macroeconomics, r,
+        r-package, ropenspain, rstats, series-data, spain
+NeedsCompilation: no
+Packaged: 2026-08-25 14:19:47 UTC; diego
+Author: Diego H. Herrero [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8457-4658>),
+  Banco de España [cph] (ROR: <https://ror.org/02f26yq04>, Data copyright
+    holder)
+Maintainer: Diego H. Herrero <dev.dieghernan@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 15:40:02 UTC

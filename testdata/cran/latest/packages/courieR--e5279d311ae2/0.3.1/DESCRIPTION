@@ -1,0 +1,47 @@
+Package: courieR
+Type: Package
+Title: Migrate Installed R Packages Between R Versions
+Version: 0.3.1
+Authors@R: 
+    c(person("Lennon", "Li", , "yeli@biostats.ai", role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-6338-7474")),
+      person("Claude Fable", role = "ctb",
+             comment = "AI co-author (Anthropic)"),
+      person("Claude Opus", role = "ctb",
+             comment = "AI co-author (Anthropic)"),
+      person("Claude Sonnet", role = "ctb",
+             comment = "AI co-author (Anthropic)"),
+      person("OpenAI Codex", role = "ctb",
+             comment = "AI co-author (OpenAI)"))
+Description: Detects all R installations on the current machine and migrates
+    installed R packages between them. Provides find_routes() to discover R
+    versions, manifest() to scan package libraries in a child R process, inventory()
+    to compare two libraries, and ship() to install packages into a target R
+    version using 'pak'. Includes a Shiny dashboard (open_hub()) for interactive
+    source-to-target migration.
+License: MIT + file LICENSE
+URL: https://lennon-li.github.io/courieR/,
+        https://github.com/lennon-li/courieR
+BugReports: https://github.com/lennon-li/courieR/issues
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Config/testthat/edition: 3
+Imports: processx (>= 3.8.0), callr (>= 3.7.0), pak (>= 0.7.0),
+        jsonlite (>= 1.8.0), desc (>= 1.4.0), fs (>= 1.6.0), cli (>=
+        3.6.0), data.table (>= 1.14.0), shiny (>= 1.8.0), shinyjs (>=
+        2.1.0), bslib (>= 0.7.0), bsicons (>= 0.1.2), DT (>= 0.31)
+Suggests: stringr (>= 1.5.0), testthat (>= 3.0.0), withr (>= 3.0.0),
+        mockery (>= 0.4.4), knitr (>= 1.45), rmarkdown (>= 2.26),
+        pkgdown (>= 2.0.0), shinytest2 (>= 0.3.0), chromote (>= 0.1.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-14 17:00:28 UTC; Lennon.Li
+Author: Lennon Li [aut, cre] (ORCID: <https://orcid.org/0000-0001-6338-7474>),
+  Claude Fable [ctb] (AI co-author (Anthropic)),
+  Claude Opus [ctb] (AI co-author (Anthropic)),
+  Claude Sonnet [ctb] (AI co-author (Anthropic)),
+  OpenAI Codex [ctb] (AI co-author (OpenAI))
+Maintainer: Lennon Li <yeli@biostats.ai>
+Repository: CRAN
+Date/Publication: 2026-06-14 18:00:15 UTC

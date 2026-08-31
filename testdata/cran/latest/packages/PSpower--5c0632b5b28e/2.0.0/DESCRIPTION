@@ -1,0 +1,39 @@
+Package: PSpower
+Type: Package
+Title: Sample Size and Power for Propensity Score Weighted Estimators
+Version: 2.0.0
+Authors@R: c(
+    person("Bo", "Liu", email = "bo.liu1997@gmail.com",
+           role = c("aut", "cre")),
+    person("Chengxin", "Yang", email = "chengxin.yang@duke.edu",
+           role = "aut"),
+    person("Fan", "Li", role = "aut"))
+Description: Computes sample size and power for causal inference studies that
+    use propensity score (PS) weighting. Supports continuous, binary, and
+    time-to-event (survival) outcomes under four estimands: average treatment
+    effect (ATE), average treatment effect on the treated (ATT), average
+    treatment effect on the controls (ATC), and average treatment effect on
+    the overlap population (ATO). For continuous and binary outcomes, the
+    asymptotic variance of the Hajek inverse probability weighting estimator
+    is derived under a logit-normal propensity score model, approximated by a
+    Beta distribution matched through the Bhattacharyya overlap coefficient.
+    For survival outcomes, the asymptotic variance of the propensity-score-
+    weighted partial likelihood estimator is used for randomized trials and
+    observational studies. The Schoenfeld formula is also available for
+    randomized trial settings.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.3
+Imports: stats
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-14 06:40:00 UTC; chengxin
+Author: Bo Liu [aut, cre],
+  Chengxin Yang [aut],
+  Fan Li [aut]
+Maintainer: Bo Liu <bo.liu1997@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-14 08:40:08 UTC

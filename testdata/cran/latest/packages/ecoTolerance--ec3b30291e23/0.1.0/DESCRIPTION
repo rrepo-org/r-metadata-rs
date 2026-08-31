@@ -1,0 +1,21 @@
+Package: ecoTolerance
+Type: Package
+Title: Ecological Tolerance Indices
+Version: 0.1.0
+Authors@R: c(person(given = c("Diego", "F."), family = "Miranda", role = c("aut", "cre"), email = "dfernandes115@gmail.com"),
+             person(given = c("Lucas", "R."), family = "Forti", role = "aut"))
+Description: Computes the Road Tolerance Index (RTI) and the Human Footprint Tolerance Index (HFTI) for species occurrence data. It automates data cleaning and integrates spatial data (roads and human footprint) to produce reproducible tolerance metrics for biodiversity and conservation research. The HFTI calculation is based on the global human footprint dataset by Mu et al. (2022) <doi:10.1038/s41597-022-01284-8>. This package is part of a PhD thesis focused on amphibian ecology in Brazil.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: sf, raster, dplyr, stats, ggplot2, magrittr, methods
+Suggests: terra, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-17 00:16:38 UTC; Diego
+Author: Diego F. Miranda [aut, cre],
+  Lucas R. Forti [aut]
+Maintainer: Diego F. Miranda <dfernandes115@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-19 20:40:02 UTC

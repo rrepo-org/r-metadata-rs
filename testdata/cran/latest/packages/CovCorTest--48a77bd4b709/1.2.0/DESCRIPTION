@@ -1,0 +1,48 @@
+Package: CovCorTest
+Title: Statistical Tests for Covariance and Correlation Matrices and
+        their Structures
+Version: 1.2.0
+Authors@R: c(
+    person("Paavo", "Sattler", , "paavo.sattler@tu-dortmund.de", role = "aut",
+           comment = c(ORCID = "0000-0001-8731-0893")),
+    person("Svenja", "Jedhoff", , "jedhoff@statistik.tu-dortmund.de", role = c("cre", "aut"),
+           comment = c(ORCID = "0009-0008-2939-9103")),
+    person("Markus", "Pauly", role = "ctb",
+           comment = c(ORCID = "0000-0002-0976-7190")),
+    person("Arne C", "Bathke", role = "ctb",
+           comment = c(ORCID = "0000-0002-6260-3726")),
+    person("Dennis", "Dobler", role = "ctb",
+           comment = c(ORCID = "0000-0002-9040-0854")))
+Maintainer: Svenja Jedhoff <jedhoff@statistik.tu-dortmund.de>
+Description: A compilation of tests for hypotheses regarding covariance
+    and correlation matrices for one or more groups. The hypothesis can
+    be specified through a corresponding hypothesis matrix and a vector or
+    by choosing one of the basic hypotheses, while for the structure test,
+    only the latter works. Thereby Monte-Carlo and Bootstrap-techniques
+    are used, and the respective method must be chosen, and the functions
+    provide p-values and mostly also estimators of calculated covariance
+    matrices of test statistics. For more details on the methodology, see 
+    Sattler et al. (2022) <doi:10.1016/j.jspi.2021.12.001>,
+    Sattler and Pauly (2024) <doi:10.1007/s11749-023-00906-6>,
+    Sattler and Dobler (2026) <doi:10.1016/j.jmva.2025.105517>, and
+    Sattler and Jedhoff (2025) <doi:10.48550/arXiv.2507.03406>.
+License: GPL (>= 3)
+Imports: MANOVA.RM, matrixcalc, Rdpack
+Suggests: testthat (>= 3.0.0)
+RdMacros: Rdpack
+Config/testthat/edition: 3
+Encoding: UTF-8
+URL: https://github.com/sjedhoff/CovCorTest
+BugReports: https://github.com/sjedhoff/CovCorTest/issues
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-30 07:49:55 UTC; jedhoff
+Author: Paavo Sattler [aut] (ORCID: <https://orcid.org/0000-0001-8731-0893>),
+  Svenja Jedhoff [cre, aut] (ORCID:
+    <https://orcid.org/0009-0008-2939-9103>),
+  Markus Pauly [ctb] (ORCID: <https://orcid.org/0000-0002-0976-7190>),
+  Arne C Bathke [ctb] (ORCID: <https://orcid.org/0000-0002-6260-3726>),
+  Dennis Dobler [ctb] (ORCID: <https://orcid.org/0000-0002-9040-0854>)
+Repository: CRAN
+Date/Publication: 2026-07-30 13:20:02 UTC

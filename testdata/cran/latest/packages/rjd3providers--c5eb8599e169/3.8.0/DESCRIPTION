@@ -1,0 +1,32 @@
+Type: Package
+Package: rjd3providers
+Title: Interface to 'JDemetra+' 3.x Time Series Analysis Software
+Version: 3.8.0
+Authors@R: c(
+    person("Jean", "Palate", , "jean.palate@nbb.be", role = "aut"),
+    person("Alessandro", "Piovani", , "alessandro.piovani@istat.it", role = c("aut", "cre")),
+    person("Tanguy", "Barthelemy", , "tanguy.barthelemy@insee.fr", role = c("ctb", "art"))
+  )
+Description: Interface to 'JDemetra+' 3.x (<https://github.com/jdemetra>)
+    time series analysis software. It offers full access to txt, csv, xml
+    and spreadsheets files which are meant to be read by 'JDemetra+'
+    Graphical User Interface.
+License: EUPL
+URL: https://github.com/rjdverse/rjd3providers,
+        https://rjdverse.github.io/rjd3providers/
+BugReports: https://github.com/rjdverse/rjd3providers/issues
+Depends: R (>= 4.1.0)
+Imports: rJava (>= 1.0-6), rjd3jars (>= 0.0.5), rjd3toolkit (>= 3.8.0)
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+SystemRequirements: Java (>= 21)
+Collate: 'providers.R' 'jd3spreadsheet.R' 'jd3txt.R' 'jd3xml.R'
+        'rjd3providers-package.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2026-07-12 16:59:32 UTC; UTENTE
+Author: Jean Palate [aut],
+  Alessandro Piovani [aut, cre],
+  Tanguy Barthelemy [ctb, art]
+Maintainer: Alessandro Piovani <alessandro.piovani@istat.it>
+Repository: CRAN
+Date/Publication: 2026-07-13 07:20:02 UTC

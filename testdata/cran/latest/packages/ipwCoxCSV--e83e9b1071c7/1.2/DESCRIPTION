@@ -1,0 +1,25 @@
+Package: ipwCoxCSV
+Type: Package
+Title: Corrected Sandwich Inference for Inverse Probability Weighted
+        Cox Models
+Version: 1.2
+Authors@R: c(person(given = "Di",
+                        family = "Shu",
+                        role = c("aut", "cre"),
+                        email = "shudi1991@gmail.com"),
+                 person(given = "Rui",
+                        family = "Wang",
+                        role = "aut",
+                        email = "rwang@hsph.harvard.edu"))
+Maintainer: Di Shu <shudi1991@gmail.com>
+Description: An implementation of the corrected sandwich variance (CSV)  method for inverse probability weighted (IPW) Cox models described in Shu et al. (2021) <doi:10.1111/biom.13332>. The method accounts for the uncertainty in estimating propensity score weights to improve variance and confidence interval estimation for adjusted marginal hazard ratios (HRs) in observational and randomized studies. The package supports estimation of the average treatment effect (ATE) using conventional and stabilized ATE weights, and the average treatment effect in the treated (ATT) using ATT weights, for both independent and clustered data. Propensity scores are estimated using logistic regression.
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: survival, stats
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-14 19:57:33 UTC; dishu
+Author: Di Shu [aut, cre],
+  Rui Wang [aut]
+Repository: CRAN
+Date/Publication: 2026-08-19 21:30:02 UTC

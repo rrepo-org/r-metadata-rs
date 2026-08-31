@@ -1,0 +1,34 @@
+Package: manifesto
+Title: Create Project Manifest Files
+Version: 0.0.2
+Authors@R: 
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "cre"),
+           email = "ctkenny@proton.me",
+           comment = c(ORCID = "0000-0002-9386-6860"))
+Description: Provides 'TOML' representations of packages
+    needed that must be installed to run a project. Includes
+    functions to specify detailed installation functions,
+    validate files, and to use a given file as the requirements
+    for a project. Handles package installations, when necessary,
+    via 'pak'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, jsonlite, pak, tomledit
+URL: https://github.com/christopherkenny/manifesto,
+        http://christophertkenny.com/manifesto/
+BugReports: https://github.com/christopherkenny/manifesto/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/Needs/website: christopherkenny/ctktemplate
+VignetteBuilder: knitr
+Depends: R (>= 4.2.0)
+NeedsCompilation: no
+Packaged: 2026-05-01 16:33:21 UTC; chris
+Author: Christopher T. Kenny [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9386-6860>)
+Maintainer: Christopher T. Kenny <ctkenny@proton.me>
+Repository: CRAN
+Date/Publication: 2026-05-05 18:10:02 UTC

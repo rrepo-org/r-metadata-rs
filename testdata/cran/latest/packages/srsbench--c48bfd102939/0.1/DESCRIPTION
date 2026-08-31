@@ -1,0 +1,26 @@
+Package: srsbench
+Type: Package
+Title: Evaluation Metrics for Spaced Repetition Schedulers
+Version: 0.1
+Authors@R: 
+    person("Christos", "Longros", email = "chris.longros@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-2717-0857"))
+Description: Calibration and discrimination metrics for spaced-repetition
+    memory models. Provides the sample-weighted binned root mean squared
+    error (RMSE(bins)) used to rank schedulers in the open spaced repetition
+    benchmark, together with log loss, the area under the ROC curve, and
+    calibration curves.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/chrislongros/srsbench
+BugReports: https://github.com/chrislongros/srsbench/issues
+Suggests: tinytest
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-09 17:53:47 UTC; chris
+Author: Christos Longros [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-2717-0857>)
+Maintainer: Christos Longros <chris.longros@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-19 12:20:02 UTC

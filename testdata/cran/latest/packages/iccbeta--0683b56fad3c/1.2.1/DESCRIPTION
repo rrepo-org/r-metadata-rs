@@ -1,0 +1,38 @@
+Package: iccbeta
+Type: Package
+Title: Multilevel Model Intraclass Correlation for Slope Heterogeneity
+Version: 1.2.1
+Authors@R: c(person("Steven Andrew", "Culpepper", 
+                    email = "sculpepp@illinois.edu",
+                    role = c("aut", "cph", "cre"),
+                    comment = c(ORCID = "0000-0003-4226-6176")
+                    ),
+             person("Herman", "Aguinis",
+                    email = "haguinis@gwu.edu",
+                    role = c("aut", "cph"),
+                    comment = c(ORCID = "0000-0002-3485-9484"))
+            )
+Description: A function and vignettes for computing an intraclass correlation
+    described in Aguinis & Culpepper (2015) <doi:10.1177/1094428114563618>.
+    This package quantifies the share of variance in a dependent variable that
+    is attributed to group heterogeneity in slopes.
+URL: https://tmsalab.github.io/iccbeta/,
+        https://github.com/tmsalab/iccbeta
+BugReports: https://github.com/tmsalab/iccbeta/issues
+License: GPL (>= 2)
+Depends: R (>= 4.3.0)
+Imports: Rcpp, lme4, stats, methods
+LinkingTo: Rcpp (>= 1.1.0), RcppArmadillo (>= 15.0.2-2)
+Suggests: RLRsim, testthat, covr
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-03-05 16:37:38 UTC; ronin
+Author: Steven Andrew Culpepper [aut, cph, cre] (ORCID:
+    <https://orcid.org/0000-0003-4226-6176>),
+  Herman Aguinis [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-3485-9484>)
+Maintainer: Steven Andrew Culpepper <sculpepp@illinois.edu>
+Repository: CRAN
+Date/Publication: 2026-03-06 08:00:09 UTC

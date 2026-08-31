@@ -1,0 +1,39 @@
+Package: DrivePlotR
+Title: Linked Plot Maps for Multivariate High-Resolution
+        Spatio-Temporal Data
+Version: 0.1.0
+Authors@R: c(person("Marie", "Hardt", email = "hardtme@iastate.edu", 
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0001-8548-9866")),
+           person("Heike", "Hofmann", email = "hhofmann4@unl.edu", 
+           role = "ctb",
+           comment = c(ORCID = "0000-0001-6216-5183")),
+           person("Guillermo", "Basulto-Elias", email = "basulto@iastate.edu", 
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-5205-2190")))
+Description: Create interactive, linked plot maps for multivariate 
+    high-resolution spatio-temporal data, such as vehicle trajectories. 
+    You can explore the spatial, temporal, and multivariate aspects 
+    of the data simultaneously.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: leaflet, plotly (>= 4.10.4), crosstalk, dplyr, ggplot2 (>=
+        3.5.2), htmltools, rlang (>= 1.1.6), viridisLite
+Depends: R (>= 4.1)
+LazyData: true
+URL: https://hardtme.github.io/DrivePlotR/,
+        https://github.com/hardtme/DrivePlotR
+Suggests: testthat (>= 3.0.0), sf
+Config/testthat/edition: 3
+BugReports: https://github.com/hardtme/DrivePlotR/issues
+NeedsCompilation: no
+Packaged: 2026-06-03 14:43:59 UTC; MarieHardt
+Author: Marie Hardt [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0001-8548-9866>),
+  Heike Hofmann [ctb] (ORCID: <https://orcid.org/0000-0001-6216-5183>),
+  Guillermo Basulto-Elias [ctb] (ORCID:
+    <https://orcid.org/0000-0002-5205-2190>)
+Maintainer: Marie Hardt <hardtme@iastate.edu>
+Repository: CRAN
+Date/Publication: 2026-06-08 19:50:10 UTC

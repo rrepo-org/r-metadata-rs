@@ -1,0 +1,36 @@
+Package: RaCE.NMA
+Title: Rank-Clustered Estimation for Network Meta-Analysis
+Version: 1.2.0
+Authors@R: c(
+    person("Michael", "Pearce", , "michaelpearce@reed.edu", role = c("aut", "cre","cph"),
+           comment = c(ORCID = "0000-0002-9313-271X")),
+    person("Shouhao", "Zhou", , "szhou1@pennstatehealth.psu.edu", role = c("aut"),
+            comment = c(ORCID = "0000-0002-8124-5047")))
+Description: An implementation of the RaCE-NMA (Rank-Clustered
+    Estimation for Network Meta-Analysis) model for post-hoc clustering
+    of treatments or interventions by rank in network  meta-analysis
+    data. Functions for model estimation, assessment, and displaying 
+    results are provided. For more details, see Pearce and Zhou (2025) 
+    <doi:10.1017/rsm.2025.10049>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LazyData: TRUE
+Imports: utils, magrittr, dplyr, invgamma, mvtnorm, coda, reshape2,
+        ggplot2, parallel
+Suggests: knitr, rmarkdown, devtools, cowplot, gridExtra, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+URL: https://pearce790.github.io/RaCE.NMA/,
+        https://github.com/pearce790/RaCE.NMA
+BugReports: https://github.com/pearce790/RaCE.NMA/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-04 23:00:28 UTC; michaelpearce
+Author: Michael Pearce [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-9313-271X>),
+  Shouhao Zhou [aut] (ORCID: <https://orcid.org/0000-0002-8124-5047>)
+Maintainer: Michael Pearce <michaelpearce@reed.edu>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-08-05 09:10:02 UTC

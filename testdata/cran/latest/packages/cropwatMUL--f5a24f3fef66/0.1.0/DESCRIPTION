@@ -1,0 +1,65 @@
+Package: cropwatMUL
+Title: Crop Water Requirement and Irrigation Scheduling Across Multiple
+        Locations
+Version: 0.1.0
+Authors@R: c(
+  person(
+    given = "Manish",
+    family = "Naskar",
+    email = "manishkumarnaskar@gmail.com",
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0003-1919-192X")
+  ),
+  person(
+    given = "Debasish",
+    family = "Chakraborty",
+    email = "debasishagri@gmail.com",
+    role = "aut",
+    comment = c(ORCID = "0000-0002-1799-6188")
+  ),
+  person(
+    given = "Koushik",
+    family = "Bag",
+    email = "amikoushikbag@gmail.com",
+    role = "aut",
+    comment = c(ORCID = "0009-0008-6433-951X")
+  ),
+  person(
+    given = "Shariti",
+    family = "Syiem",
+    email = "sharitisyiem85@gmail.com",
+    role = "aut",
+    comment = c(ORCID = "0009-0003-7377-6686")
+  ),
+  person(
+    given = "Akmaul",
+    family = "Hoque",
+    email = "akmaulhoque41@gmail.com",
+    role = "aut",
+    comment = c(ORCID = "0009-0002-4475-566X")
+  )
+  )
+Description: Estimates reference evapotranspiration, crop evapotranspiration, effective rainfall, crop water requirements, root-zone water balance, and irrigation schedules across multiple locations. The calculations use temperature-based procedures described in Food and Agriculture Organization Irrigation and Drainage Paper No. 56 and a workflow inspired by the 'CROPWAT' software for monthly-to-daily interpolation, aggregation into 10-day periods, and irrigation scheduling. Further details of the evapotranspiration calculations are provided by Allen, R.G., Pereira, L.S., Raes, D. and Smith, M. (1998, ISBN:92-5-104219-5) "Crop Evapotranspiration: Guidelines for Computing Crop Water Requirements" <https://www.fao.org/4/X0490E/X0490E00.htm>. The package is an independent implementation and is not affiliated with or endorsed by the Food and Agriculture Organization of the United Nations.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.2.0)
+Imports: dplyr, lubridate, openxlsx, purrr, readxl, stats, tibble,
+        tidyr, utils
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-08-20 13:35:11 UTC; win11
+Author: Manish Naskar [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-1919-192X>),
+  Debasish Chakraborty [aut] (ORCID:
+    <https://orcid.org/0000-0002-1799-6188>),
+  Koushik Bag [aut] (ORCID: <https://orcid.org/0009-0008-6433-951X>),
+  Shariti Syiem [aut] (ORCID: <https://orcid.org/0009-0003-7377-6686>),
+  Akmaul Hoque [aut] (ORCID: <https://orcid.org/0009-0002-4475-566X>)
+Maintainer: Manish Naskar <manishkumarnaskar@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 14:30:02 UTC

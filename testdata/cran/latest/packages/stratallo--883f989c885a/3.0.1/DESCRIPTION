@@ -1,0 +1,41 @@
+Package: stratallo
+Title: Optimum Sample Allocation in Stratified Sampling
+Version: 3.0.1
+Authors@R: c(
+    person("Wojciech", "Wójciak", , "wojciech.wojciak@gmail.com", role = c("aut", "cre")),
+    person("Jacek", "Wesołowski", , "jacek.wesolowski@pw.edu.pl", role = "sad"),
+    person("Robert", "Wieczorkowski", , "R.Wieczorkowski@stat.gov.pl", role = "ctb")
+  )
+Description: Provides exact analytical algorithms for computing optimum sample
+  allocations in stratified sampling.
+  Supports classical Neyman-Tschuprow allocation, minimum-cost allocation under
+  a variance constraint, and multi-domain allocation with controlled precision.
+  Handles lower and upper bounds, cost constraints, and multiple domains.
+  Includes helper functions for variance computation, allocation summaries,
+  rounding, and example datasets for testing and benchmarking.
+License: GPL-2
+URL: https://github.com/wwojciech/stratallo
+BugReports: https://github.com/wwojciech/stratallo/issues
+Depends: R (>= 3.5.0)
+Imports: checkmate, lifecycle, Rdpack
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RdMacros: Rdpack
+Config/testthat/edition: 3
+Copyright: Wojciech Wójciak
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+Collate: 'helpers_dca_rdca.R' 'utils.R' 'alg_dca.R'
+        'alg_other_authors.R' 'alg_rdca.R' 'alg_rna-sga-coma.R'
+        'alg_rnabox.R' 'alloc_summary.R' 'check_rdca.R' 'data.R'
+        'dopt.R' 'opt.R' 'rounding.R' 'stratallo-package.R' 'var.R'
+NeedsCompilation: no
+Packaged: 2026-03-12 12:15:31 UTC; wojtek
+Author: Wojciech Wójciak [aut, cre],
+  Jacek Wesołowski [sad],
+  Robert Wieczorkowski [ctb]
+Maintainer: Wojciech Wójciak <wojciech.wojciak@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-12 15:20:02 UTC

@@ -1,0 +1,26 @@
+Package: correctref
+Type: Package
+Title: Correct and Standardize References for Scientific Manuscripts
+Version: 0.0.2
+Authors@R: 
+    person("Umar", "Hussain", email = "drumarhussain@gmail.com", role = c("aut", "cre"))
+Description: Reads 'Word' documents containing incomplete bibliographic references and 
+    produces an updated file with standardized and complete references. The package 
+    provides functions to retrieve missing authors, titles, journal details, volume, 
+    issue, and page numbers. Digital object identifiers (DOIs) are retrieved using the 
+    'CrossRef' application programming interface (API) <https://api.crossref.org>, and 
+    references are formatted following DOI-based citation standards as described by 
+    Paskin (2010) <doi:10.1000/182> and the 'citation.doi.org' service 
+    <https://citation.doi.org>. The package is intended to simplify reference preparation 
+    for scientific journal submissions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: httr, jsonlite, stringr, officer
+NeedsCompilation: no
+Packaged: 2026-01-08 14:38:32 UTC; DR. Umar Hussain
+Author: Umar Hussain [aut, cre]
+Maintainer: Umar Hussain <drumarhussain@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-12 18:50:26 UTC

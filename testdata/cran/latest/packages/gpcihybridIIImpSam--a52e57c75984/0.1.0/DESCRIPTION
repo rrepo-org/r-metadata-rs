@@ -1,0 +1,48 @@
+Package: gpcihybridIIImpSam
+Type: Package
+Title: Process Capability Indices for Hybrid Type-II Data via
+        Importance Sampling
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi",
+           email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844"))
+  )
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Description: Evaluates Generalized Process Capability Indices (GPCIs) under
+    Hybrid Type-II censored lifetime data using Importance Sampling
+    (Sampling Importance Resampling, SIR). Implements Bayesian parameter
+    estimation and evaluates classical and generalized capability indices
+    including Cpy, Cp, Cpk, Cpu, Cpl, Cpm, Cpmk, Spmk, CpTk, Cpc, CNp,
+    CNpk, CNpm, CNpmk, CNpmc, CNpmkc, and Vannman's Cp(u,v) family.
+    Computes initial maximum likelihood estimates under Hybrid Type-II
+    censoring, parameter MCMC chains, GPCI posterior chains, posterior
+    point estimates, bias, mean squared error (MSE), Bayes risk, Highest
+    Posterior Density (HPD) credible intervals at 90%, 95%, and 99%
+    levels, Heidelberger and Welch's MCMC convergence diagnostics, and
+    convergence probabilities. Accommodates user-defined probability
+    density/mass functions, cumulative distribution functions, and
+    survival functions. Goodness-of-fit testing for Hybrid Type-II
+    censored data is supported via 'gofPHCS'. Methods are based on
+    Childs et al. (2003) <doi:10.1080/0266476032000053637>,
+    Kundu and Pradhan (2009) <doi:10.1016/j.spl.2008.09.006>,
+    Maiti et al. (2010) <doi:10.1080/16843703.2010.11673233>,
+    Dey and Saha (2019) <doi:10.1007/s41872-019-00081-4>,
+    Alotaibi et al. (2022) <doi:10.1155/2022/3135264>,
+    Saha et al. (2022) <doi:10.1080/02664763.2021.1971632>, and
+    Saha et al. (2024) <doi:10.1142/S021853932450013X>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: coda, stats, graphics
+Suggests: gofPHCS, testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-16 17:34:19 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>)
+Repository: CRAN
+Date/Publication: 2026-08-21 13:00:26 UTC

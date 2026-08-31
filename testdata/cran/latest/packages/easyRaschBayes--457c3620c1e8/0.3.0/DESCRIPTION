@@ -1,0 +1,52 @@
+Package: easyRaschBayes
+Title: Bayesian Rasch Analysis Using 'brms'
+Version: 0.3.0
+Authors@R: c(
+    person("Magnus", "Johansson",
+           role = c("aut", "cre"),
+           email = "pgmj@pm.me",
+           comment = c(ORCID = "0000-0003-1669-592X")),
+    person("Giacomo", "Bignardi",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-1153-0838",
+                       "RMU reliability code")),
+    person("Kristoffer", "Magnusson",
+           role = "ctb",
+           comment = c(ORCID = "0000-0003-0713-0556",
+                       "hurdle_acat custom brms family")))
+Description: Reproduces classic Rasch psychometric analysis features
+    using Bayesian item response theory models fitted with 'brms' following 
+    Bürkner (2021) <doi:10.18637/jss.v100.i05> and Bürkner (2020) <doi:10.3390/jintelligence8010005>.
+    Supports both dichotomous and polytomous Rasch models. 
+    Features include posterior predictive item fit, conditional infit, item-restscore
+    associations, person fit, differential item functioning, local dependence
+    assessment via Q3 residual correlations, dimensionality assessment with
+    residual principal components analysis, person-item targeting plots,
+    item category probability curves, and reliability using relative
+    measurement uncertainty following Bignardi et al. (2025) <doi:10.31234/osf.io/h54k8_v1>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: brms (>= 2.20.0), rlang (>= 1.0.0), dplyr (>= 1.1.0), tidyr
+        (>= 1.3.0), tibble (>= 3.0.0), ggdist, stats, grDevices,
+        ggplot2 (>= 3.4.0), forcats
+Suggests: ggrepel, patchwork, eRm, testthat (>= 3.0.0), knitr,
+        rmarkdown
+URL: https://github.com/pgmj/easyRaschBayes,
+        https://pgmj.github.io/easyRaschBayes/
+BugReports: https://github.com/pgmj/easyRaschBayes/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-18 09:30:27 UTC; magnus.johansson.3
+Author: Magnus Johansson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1669-592X>),
+  Giacomo Bignardi [ctb] (ORCID: <https://orcid.org/0000-0002-1153-0838>,
+    RMU reliability code),
+  Kristoffer Magnusson [ctb] (ORCID:
+    <https://orcid.org/0000-0003-0713-0556>, hurdle_acat custom brms
+    family)
+Maintainer: Magnus Johansson <pgmj@pm.me>
+Repository: CRAN
+Date/Publication: 2026-06-18 10:50:07 UTC

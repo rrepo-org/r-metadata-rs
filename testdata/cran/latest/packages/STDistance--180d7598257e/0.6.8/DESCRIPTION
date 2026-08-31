@@ -1,0 +1,32 @@
+Package: STDistance
+Title: Spatial Transcriptomics Distance Calculation and Visualization
+Version: 0.6.8
+Authors@R: 
+    c(person(given = "Zixiang", family = "Wang", 
+             email = "wangzixiang@sdu.edu.cn", 
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-5252-9764")),
+      person(given = "Lei", family = "Yang", 
+             email = "970214035yl@gmail.com", 
+             role = "aut"),
+      person(given = "Zhaojian", family = "Liu", 
+             email = "liujian9782@sdu.edu.cn", 
+             role = "aut"))                      
+Description: Analysis of spatial relationships between cell types in spatial transcriptomics data. Spatial proximity is a critical factor in cell-cell communication. The package calculates nearest neighbor distances between specified cell types and provides visualization tools to explore spatial patterns. Applications include studying cell-cell interactions, immune microenvironment characterization, and spatial organization of tissues.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0.0)
+Imports: dplyr, ggplot2, Hmisc, scales, stats, RColorBrewer, tidyr,
+Suggests: testthat, knitr, rmarkdown
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-21 14:18:21 UTC; X
+Author: Zixiang Wang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5252-9764>),
+  Lei Yang [aut],
+  Zhaojian Liu [aut]
+Maintainer: Zixiang Wang <wangzixiang@sdu.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-06-21 14:30:14 UTC

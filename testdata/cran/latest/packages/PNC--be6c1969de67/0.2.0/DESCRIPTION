@@ -1,0 +1,24 @@
+Package: PNC
+Type: Package
+Title: Evaluating Phylogeny as a Proxy for Ecological Similarity
+Version: 0.2.0
+Date: 2026-8-29
+Authors@R: c(person(given = "Yan", family = "He", email = "heyaneco@163.com", role = c("aut", "cre")),person(given = "Yu", family = "Xia", role = "aut"),person(given = "Rui", family = "Yang", role = "aut"),person(given = "Lingfeng", family = "Mao", role = "aut"))
+Maintainer: Yan He <heyaneco@163.com>
+Description: Provides a trait-based workflow for evaluating whether phylogenetic relatedness is informative about similarity in measured quantitative traits within focal species pools and across multiple communities. Functions support trait data integration, taxon-specific trait extraction, coverage assessment, optional principal component analysis, and estimation of phylogenetic signal using Pagel's lambda or Blomberg's K. Curated quantitative trait datasets are included for plants, birds, mammals, reptiles, amphibians, and fishes. Paired simulations assess how observed patterns of missing trait data affect Pagel's lambda estimates and significance classifications for individual traits. Methods for quantifying phylogenetic signal are based on Pagel (1999) <doi:10.1038/44766>, Blomberg et al. (2003) <doi:10.1111/j.0014-3820.2003.tb00285.x>, and Münkemüller et al. (2012) <doi:10.1111/j.2041-210X.2012.00196.x>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: ape, geiger, phytools, stats, utils
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-29 02:54:43 UTC; Administrator
+Author: Yan He [aut, cre],
+  Yu Xia [aut],
+  Rui Yang [aut],
+  Lingfeng Mao [aut]
+Repository: CRAN
+Date/Publication: 2026-08-29 10:40:02 UTC

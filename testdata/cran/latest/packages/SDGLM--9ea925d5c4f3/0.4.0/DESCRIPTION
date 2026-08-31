@@ -1,0 +1,25 @@
+Package: SDGLM
+Title: Scalable Bayesian Inference for Dynamic Generalized Linear
+        Models
+Version: 0.4.0
+Authors@R: 
+    c(person("Guangbao", "Guo", role = c("aut", "cre"),
+           email = "ggb11111111@163.com"),
+      person("X. Meggie", "Wen", role = "aut"),
+      person("Lixing", "Zhu", role = "aut"))
+Description: Implements scalable Markov chain Monte Carlo (Sca-MCMC) algorithms for Bayesian inference in dynamic generalized linear models (DGLMs). The package supports Pareto-type and Gamma-type DGLMs, which are suitable for modeling heavy-tailed phenomena such as wealth allocation and financial returns. It provides simulation tools for synthetic DGLM data, adaptive mutation-rate strategies (ScaI, ScaII, ScaIII), geometric temperature ladders for parallel tempering, and posterior predictive evaluation metrics (e.g., R2, RMSE). The methodology is based on the scalable MCMC framework described in Guo et al. (2025).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: stats, MASS, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Author: Guangbao Guo [aut, cre],
+  X. Meggie Wen [aut],
+  Lixing Zhu [aut]
+Maintainer: Guangbao Guo <ggb11111111@163.com>
+Repository: CRAN
+Date/Publication: 2026-01-20 10:50:11 UTC
+Packaged: 2026-01-12 12:00:51 UTC; 86188

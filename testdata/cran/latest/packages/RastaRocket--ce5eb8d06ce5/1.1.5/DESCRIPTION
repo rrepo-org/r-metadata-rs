@@ -1,0 +1,59 @@
+Package: RastaRocket
+Title: Rocket-Fast Clinical Research Reporting
+Version: 1.1.5
+Authors@R: 
+    c(person(given = "USMR",
+           family = "CHU de Bordeaux",
+           role = c("aut", "cre"),
+           email = "astreinte.usmr@chu-bordeaux.fr"),
+    person(given = "Valentine",
+           family = "Renaudeau",
+           role = c("aut"),
+           email = "astreinte.usmr@chu-bordeaux.fr"),
+    person(given = "Marion",
+           family = "Kret",
+           role = c("aut"),
+           email = "astreinte.usmr@chu-bordeaux.fr"),
+    person(given = "Matisse",
+           family = "Decilap",
+           role = c("aut"),
+           email = "astreinte.usmr@chu-bordeaux.fr"),
+    person(given = "Sahardid",
+           family = "Mohamed Houssein",
+           role = c("aut"),
+           email = "astreinte.usmr@chu-bordeaux.fr"),
+    person(given = "Mohamedou",
+           family = "Sow",
+           role = c("aut"),
+           email = "astreinte.usmr@chu-bordeaux.fr"),       
+    person(given = "Thomas",
+           family = "Ferté",
+           role = c("aut"),
+           email = "astreinte.usmr@chu-bordeaux.fr"))
+Description: Description of the tables, both grouped and not grouped, with some associated data management actions, 
+             such as sorting the terms of the variables and deleting terms with zero numbers.
+License: GPL (>= 3)
+URL: https://github.com/biostatusmr/RastaRocket,
+        https://biostatusmr.github.io/RastaRocket/,
+        https://github.com/BiostatUSMR/RastaRocket
+BugReports: https://github.com/BiostatUSMR/RastaRocket/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr, tidyr, labelled, rlang, gtsummary, forcats, gt, cardx,
+        glue, purrr, ggh4x, ggplot2, ggrepel, scales, viridis, here
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-18 13:24:54 UTC; sowmoh
+Author: USMR CHU de Bordeaux [aut, cre],
+  Valentine Renaudeau [aut],
+  Marion Kret [aut],
+  Matisse Decilap [aut],
+  Sahardid Mohamed Houssein [aut],
+  Mohamedou Sow [aut],
+  Thomas Ferté [aut]
+Maintainer: USMR CHU de Bordeaux <astreinte.usmr@chu-bordeaux.fr>
+Repository: CRAN
+Date/Publication: 2026-05-18 13:50:02 UTC

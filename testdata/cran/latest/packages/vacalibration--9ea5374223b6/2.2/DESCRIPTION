@@ -1,0 +1,39 @@
+Package: vacalibration
+Title: Calibration of Computer-Coded Verbal Autopsy Algorithm
+Version: 2.2
+Authors@R: c(person("Sandipan", "Pramanik", role = c("aut", "cre"),
+                    email = "sandy.pramanik@gmail.com",
+                    comment = c(ORCID = "0000-0002-7196-155X")),
+             person("Emily", "Wilson", role = "aut",
+                    email = "wilsonem@gmail.com"),
+             person("Jacob", "Fiksel", role = "aut",
+                    email = "jfiksel@gmail.com"),
+             person("Brian", "Gilbert", role = "aut",
+                    email = "bgilbert345@gmail.com"),
+             person("Abhirup", "Datta", role = "aut",
+                    email = "abhidatta@jhu.edu"))
+Maintainer: Sandipan Pramanik <sandy.pramanik@gmail.com>
+Description: Calibrates population-level cause-specific mortality fractions (CSMFs) that are derived using computer-coded verbal autopsy (CCVA) algorithms. Leveraging the data collected in the Child Health and Mortality Prevention Surveillance (CHAMPS;<https://champshealth.org/>) project, the package stores misclassification matrix estimates of three CCVA algorithms (EAVA, InSilicoVA, and InterVA) and two age groups (neonates aged 0-27 days, and children aged 1-59 months) across countries (specific estimates for Bangladesh, Ethiopia, Kenya, Mali, Mozambique, Sierra Leone, and South Africa, and a combined estimate for all other countries), enabling global calibration. These estimates are obtained using the framework proposed in Pramanik et al. (2025;<doi:10.1214/24-AOAS2006>) and are analyzed in Pramanik et al. (2026;<doi:10.1136/bmjgh-2025-021747>). Given VA-only data for an age group, CCVA algorithm, and country, the package utilizes the corresponding misclassification matrix estimate in the modular VA-Calibration framework (Pramanik et al.,2025;<doi:10.1214/24-AOAS2006>) and produces calibrated estimates of CSMFs. The package also supports ensemble calibration to accommodate multiple algorithms. More generally, this allows calibration of population-level prevalence derived from single-class predictions of discrete classifiers. For this, users need to provide fixed or uncertainty-quantified misclassification matrices. This work is supported by the Eunice Kennedy Shriver National Institute of Child Health K99 NIH Pathway to Independence Award (1K99HD114884-01A1), the Bill and Melinda Gates Foundation (INV-034842), and the Johns Hopkins Data Science and AI Institute.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: rstan, openVA, parallel, ggplot2, patchwork, reshape2,
+        LaplacesDemon, MASS
+Config/testthat/edition: 3
+Config/Needs/compile: yes
+Depends: R (>= 3.5)
+LazyData: true
+Suggests: knitr, rmarkdown,
+VignetteBuilder: knitr
+URL: https://github.com/sandy-pramanik/vacalibration
+BugReports: https://github.com/sandy-pramanik/vacalibration/issues
+NeedsCompilation: no
+Packaged: 2026-03-20 02:03:31 UTC; sandipanpramanik
+Author: Sandipan Pramanik [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7196-155X>),
+  Emily Wilson [aut],
+  Jacob Fiksel [aut],
+  Brian Gilbert [aut],
+  Abhirup Datta [aut]
+Repository: CRAN
+Date/Publication: 2026-03-20 12:50:02 UTC

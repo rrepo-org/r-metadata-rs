@@ -1,0 +1,30 @@
+Package: framework
+Type: Package
+Title: Structured Data Science Project Scaffolding
+Version: 1.0.2
+Authors@R: 
+    person("Erik", "Westlund", , "erik@table1.org", role = c("aut", "cre", "cph"))
+Maintainer: Erik Westlund <erik@table1.org>
+Description: Project scaffolding and workflow tools for reproducible data science.
+    Manages packages, tracks data integrity, handles database connections,
+    generates notebooks, and publishes to S3-compatible storage.
+    More information at <https://framework.table1.org>.
+License: MIT + file LICENSE
+URL: https://framework.table1.org, https://github.com/table1/framework
+BugReports: https://github.com/table1/framework/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: checkmate, DBI, RSQLite, yaml, fs, readr, dotenv, openssl,
+        lubridate, jsonlite, plumber
+Suggests: testthat (>= 3.0.0), arrow, aws.s3, aws.signature,
+        BiocManager, cli, cyclocomp, devtools, dplyr, DT, duckdb,
+        ggplot2, haven, htmltools, htmlwidgets, knitr, languageserver,
+        odbc, pool, prismjs, R.utils, readxl, remotes, renv, RMariaDB,
+        rmarkdown, RPostgres, tm, usethis, withr, writexl
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-02-12 17:17:41 UTC; erik
+Author: Erik Westlund [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2026-02-17 21:20:02 UTC

@@ -1,0 +1,45 @@
+Package: rspacer
+Type: Package
+Title: 'RSpace' API Wrapper
+Version: 0.3.1
+Authors@R: c(
+    person("Gerhard", "Burger",
+           email = "burger.ga@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1062-5576")),
+    person("Hanneke", "Leegwater",
+           email = "h.leegwater@lacdr.leidenuniv.nl",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0001-6003-1544")),
+    person("Leiden University", role = c("cph", "fnd"),
+           comment = c(ROR = "027bh9e22"))
+            )
+Description: Wrapper for the 'RSpace' Electronic Lab Notebook (<https://www.researchspace.com/>)
+    API. This packages provides convenience functions to browse, search, create,
+    and edit your 'RSpace' documents. In addition, it enables filling 'RSpace' templates
+    from R Markdown/Quarto templates or tabular data (e.g., 'Excel' files).
+    This R package is not developed or endorsed by 'Research Space'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: cli, curl, dplyr, fs, glue, httr2 (>= 1.1.0), purrr, readr,
+        readxl, rlang, rvest, stringr, tibble, tidyr, xml2, lubridate
+Suggests: quarto, knitr, rmarkdown, spelling, testthat (>= 3.0.0),
+        usethis
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Language: en-US
+URL: https://github.com/lacdr/rspacer, https://lacdr.github.io/rspacer/
+BugReports: https://github.com/lacdr/rspacer/issues
+Config/Needs/website: rmarkdown
+VignetteBuilder: quarto
+NeedsCompilation: no
+Packaged: 2025-12-04 20:07:37 UTC; gerhard
+Author: Gerhard Burger [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1062-5576>),
+  Hanneke Leegwater [aut] (ORCID:
+    <https://orcid.org/0000-0001-6003-1544>),
+  Leiden University [cph, fnd] (ROR: <https://ror.org/027bh9e22>)
+Maintainer: Gerhard Burger <burger.ga@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-04 20:20:02 UTC

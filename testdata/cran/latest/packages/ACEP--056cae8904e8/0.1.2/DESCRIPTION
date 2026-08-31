@@ -1,0 +1,38 @@
+Type: Package
+Package: ACEP
+Title: Análisis Computacional de Eventos de Protesta
+Version: 0.1.2
+Authors@R: 
+    person("Agustín", "Nieto", , "agustin.nieto77@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4467-873X"))
+Description: La librería 'ACEP' contiene funciones específicas para
+    desarrollar análisis computacional de eventos de protesta. Asimismo,
+    contiene bases de datos con colecciones de notas sobre protestas y
+    diccionarios de palabras conflictivas. La colección de diccionarios
+    reune diccionarios de diferentes orígenes. 
+    The 'ACEP' library contains specific functions to perform computational 
+    analysis of protest events. It also contains a database with collections 
+    of notes on protests and dictionaries of conflicting words. Collection 
+    of dictionaries that brings together dictionaries from different sources.
+License: MIT + file LICENSE
+URL: https://github.com/agusnieto77/ACEP,
+        https://agusnieto77.github.io/ACEP/
+BugReports: https://github.com/agusnieto77/ACEP/issues
+Depends: R (>= 3.5.0)
+Imports: graphics, grDevices, stats, httr, jsonlite, stringr, utils,
+        magrittr
+Suggests: furrr, ollamar, future, covr, knitr, rmarkdown, reticulate,
+        rsyntax, spacyr, tidygeocoder, udpipe, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: es
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-14 05:59:24 UTC; agusn
+Author: Agustín Nieto [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4467-873X>)
+Maintainer: Agustín Nieto <agustin.nieto77@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-14 06:30:09 UTC

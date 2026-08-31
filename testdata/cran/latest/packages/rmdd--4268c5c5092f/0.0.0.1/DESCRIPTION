@@ -1,0 +1,32 @@
+Package: rmdd
+Title: Resolve Mammal Names with the Mammal Diversity Database
+Version: 0.0.0.1
+Authors@R: 
+    person("Paul E.", "Santos Andrade", , "paulefrens@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: Download, inspect, reconcile, and summarize mammal taxonomic
+    names with the Mammal Diversity Database (MDD). Supports accepted
+    names, synonyms, original combinations, distribution summaries, and
+    mapped outputs derived from packaged MDD releases. Designed for
+    reproducible mammal name resolution workflows in 'R'.
+License: MIT + file LICENSE
+URL: https://github.com/PaulESantos/rmdd,
+        https://www.mammaldiversity.org/
+BugReports: https://github.com/PaulESantos/rmdd/issues
+Depends: R (>= 4.3.0)
+Imports: cli, dplyr, fs, ggplot2, fuzzyjoin, lifecycle, readr,
+        rnaturalearth, sf, rlang, stringr, tibble, tools, utils
+Suggests: covr, knitr, lintr, pkgdown, rmarkdown, rnaturalearthdata,
+        roxygen2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-19 03:36:30 UTC; PC
+Author: Paul E. Santos Andrade [aut, cre, cph]
+Maintainer: Paul E. Santos Andrade <paulefrens@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-23 17:20:07 UTC

@@ -1,0 +1,29 @@
+Package: openNCAI
+Type: Package
+Title: Calculates a Natural Capital Assets Index
+Version: 0.1.0
+Date: 2026-05-04
+Authors@R: person(given = "Kate",
+                      family = "O\'Hara",
+                      role = c("aut", "cre"),
+                      email = "k.a.ohara@stir.ac.uk")
+Description: Calculates a regional natural capital assets index (NCAI) following the methodology designed by NatureScot for Scotland as described in Albon, Balana, Brooker & Eastwood (2014) <https://www.nature.scot/sites/default/files/2025-06/naturescot-commissioned-report-751.pdf> and McKenna et al. (2019) <doi:10.1016/J.ECOLIND.2019.105645>. Processes habitat extent and condition data alongside metadata and weighting systems to produce a yearly single figure indexed relative to a base-year value of 100.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/oharakate/openNCAI
+BugReports: https://github.com/oharakate/openNCAI/issues
+Imports: dplyr, janitor, magrittr, openxlsx, readxl, rlang, slider,
+        stats, stringr, tidyr
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Suggests: ggplot2, knitr, rmarkdown, rprojroot, testthat (>= 3.0.0),
+        tibble
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-05-08 07:35:49 UTC; kateohara
+Author: Kate O'Hara [aut, cre]
+Maintainer: Kate O'Hara <k.a.ohara@stir.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-05-13 07:20:07 UTC

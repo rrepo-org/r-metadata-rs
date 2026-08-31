@@ -1,0 +1,35 @@
+Package: algebraic.dist
+Title: Algebra over Probability Distributions
+Version: 1.0.0
+Authors@R: 
+    person("Alexander", "Towell", , "lex@metafunctor.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6443-9897"))
+Description: Provides an algebra over probability distributions enabling
+    composition, sampling, and automatic simplification to closed forms.
+    Supports normal, exponential, gamma, Weibull, chi-squared, uniform,
+    beta, log-normal, Poisson, multivariate normal, empirical, and mixture
+    distributions with algebraic operators (addition, subtraction,
+    multiplication, division, power, exp, log, min, max) that automatically
+    simplify when mathematical identities apply. Includes closed-form MVN
+    conditioning (Schur complement), affine transformations, mixture
+    marginals/conditionals (Bayes rule), and limiting distribution builders
+    (CLT, LLN, delta method). Uses S3 classes for distributions and R6
+    for support objects.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: stats, mvtnorm, R6
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+URL: https://github.com/queelius/algebraic.dist,
+        https://queelius.github.io/algebraic.dist/
+BugReports: https://github.com/queelius/algebraic.dist/issues
+NeedsCompilation: no
+Packaged: 2026-03-17 17:48:01 UTC; spinoza
+Author: Alexander Towell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6443-9897>)
+Maintainer: Alexander Towell <lex@metafunctor.com>
+Repository: CRAN
+Date/Publication: 2026-03-18 06:13:20 UTC

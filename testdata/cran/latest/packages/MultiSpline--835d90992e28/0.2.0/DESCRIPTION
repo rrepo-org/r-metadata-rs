@@ -1,0 +1,38 @@
+Package: MultiSpline
+Type: Package
+Title: Spline-Based Nonlinear Modeling for Multilevel and Longitudinal
+        Data
+Version: 0.2.0
+Authors@R: person(given = "Subir",
+                  family = "Hait",
+                  email = "haitsubi@msu.edu",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0009-0004-9871-9677"))
+Description: Provides a unified framework for fitting, predicting, and
+    interpreting nonlinear relationships in single-level, multilevel, and
+    longitudinal regression models. Flexible functional forms are supported
+    using natural cubic splines ('splines'), B-splines ('splines'), and GAM
+    smooths ('mgcv'). Supports two-way and nested clustering via 'lme4',
+    automatic knot selection by AIC or BIC, multilevel R-squared
+    decomposition (Nakagawa-Schielzeth marginal and conditional R-squared
+    with level-specific variance partitioning), a postestimation suite
+    returning first and second derivatives with confidence bands, turning
+    points and inflection regions, and a model comparison workflow
+    contrasting linear, polynomial, and spline fits by AIC, BIC, and
+    likelihood-ratio tests. Cluster heterogeneity in nonlinear effects is
+    supported via random-slope spline terms.
+Depends: R (>= 4.2.0)
+Imports: stats, lme4, mgcv, dplyr, ggplot2, rlang, splines
+Suggests: lmerTest, knitr, rmarkdown, reformulas, numDeriv
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+URL: https://github.com/causalfragility-lab/MultiSpline
+BugReports: https://github.com/causalfragility-lab/MultiSpline/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-16 03:52:32 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-16 07:02:39 UTC

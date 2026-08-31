@@ -1,0 +1,30 @@
+Package: sqlm
+Type: Package
+Title: SQL-Backed Linear Regression
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Alejandro", "Hagan",
+      email = "alejandro.hagan@outlook.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Fits linear regression models on datasets residing in SQL
+    databases without pulling data into R memory. Computes sufficient
+    statistics inside the database engine via a single
+    aggregation query and solves the normal equations in R.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: dplyr, dbplyr, DBI, glue, purrr, S7, MASS, broom, tibble,
+        stats, utils
+Suggests: testthat (>= 3.0.0), duckdb, orbital, withr, knitr,
+        rmarkdown, quarto
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-01 02:19:59 UTC; hagan
+Author: Alejandro Hagan [aut, cre]
+Maintainer: Alejandro Hagan <alejandro.hagan@outlook.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-02-04 17:20:02 UTC

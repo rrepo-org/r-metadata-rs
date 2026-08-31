@@ -1,0 +1,40 @@
+Package: cancerradarr
+Title: Cancer RADAR Project Tool
+Version: 3.0.0
+Authors@R: c(
+    person("Nienke", "Alberts", , "c.j.alberts@amsterdamumc.nl", role = "aut"),
+    person("Damien", "Georges", , "georgesd@iarc.who.int", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2425-7591")),
+    person("Stefano", "Rosso", , "stefano.rosso@cpo.it", role = "aut"),
+    person("Iacopo", "Baussano", , "baussanoi@iarc.who.int", role = "aut",
+           comment = c(ORCID = "0000-0002-7322-1862"))
+  )
+Description: Cancer RADAR is a project which aim is to develop an
+    infrastructure that allows quantifying the risk of cancer by migration
+    background across Europe.  This package contains a set of functions
+    cancer registries partners should use to reshape 5 year-age group
+    cancer incidence data into a set of summary statistics (see Boyle &
+    Parkin (1991, ISBN:978-92-832-1195-2)) in lines with Cancer RADAR data
+    protections rules.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.1.0), epitools, gtools, magrittr, openxlsx (>=
+        4.2.7), plyr, purrr, rlang, rmarkdown, stats, stringr, tidyr,
+        utils
+Suggests: plotly, shiny, tidyverse, DT, testthat (>= 3.0.0), knitr,
+        quarto
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-16 13:42:04 UTC; georgesd
+Author: Nienke Alberts [aut],
+  Damien Georges [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2425-7591>),
+  Stefano Rosso [aut],
+  Iacopo Baussano [aut] (ORCID: <https://orcid.org/0000-0002-7322-1862>)
+Maintainer: Damien Georges <georgesd@iarc.who.int>
+Repository: CRAN
+Date/Publication: 2026-02-16 14:10:10 UTC

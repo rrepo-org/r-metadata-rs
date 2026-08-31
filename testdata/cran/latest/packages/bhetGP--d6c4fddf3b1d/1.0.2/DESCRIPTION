@@ -1,0 +1,31 @@
+Package: bhetGP
+Type: Package
+Title: Bayesian Heteroskedastic Gaussian Processes
+Version: 1.0.2
+Authors@R: person(given = c("Parul", "V."),
+                  family = "Patil",
+                  role = c("aut", "cre"),
+                  email = "parulvijay@vt.edu")
+Maintainer: Parul V. Patil <parulvijay@vt.edu>
+Description: Performs Bayesian posterior inference for heteroskedastic Gaussian processes.
+    Models are trained through MCMC including elliptical slice sampling (ESS) of 
+    latent noise processes and Metropolis-Hastings sampling of 
+    kernel hyperparameters. Replicates are handled efficientyly through a
+    Woodbury formulation of the joint likelihood for the mean and noise process 
+    (Binois, M., Gramacy, R., Ludkovski, M. (2018) <doi:10.1080/10618600.2018.1458625>)
+    For large data, Vecchia-approximation for faster 
+    computation is leveraged (Sauer, A., Cooper, A., and Gramacy, R.,
+    (2023), <doi:10.1080/10618600.2022.2129662>). Incorporates 'OpenMP' and 
+    SNOW parallelization and utilizes 'C'/'C++' under the hood.
+License: LGPL
+Encoding: UTF-8
+NeedsCompilation: yes
+Imports: grDevices, graphics, stats, doParallel, foreach, parallel,
+        GpGp, GPvecchia, Matrix, Rcpp, mvtnorm, FNN, hetGP, laGP
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: interp
+RoxygenNote: 7.3.2
+Packaged: 2026-02-09 01:46:08 UTC; parulvijay
+Author: Parul V. Patil [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-02-09 03:40:02 UTC

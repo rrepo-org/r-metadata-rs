@@ -1,0 +1,51 @@
+Package: ClimProjDiags
+Title: Set of Tools to Compute Various Climate Indices
+Version: 0.3.6
+Authors@R: c(
+    person("BSC-CNS", role = c("aut", "cph")),
+    person("Nuria", "Perez-Zanon", , "nuria.perez@bsc.es", role = c("aut"), comment = c(ORCID = "0000-0001-8568-3071")),
+    person("An-Chi", "Ho", , "an.ho@bsc.es", role = c("ctb")),
+    person("Victòria", "Agudetse", , "victoria.agudetse@bsc.es", role = c("cre")),
+    person("Nicolau", "Manubens", , "nicolau.manubens@bsc.es", role = "ctb"),
+    person("Alasdair", "Hunter", , "alasdair.hunter@bsc.es", role = "aut"),
+    person("Louis-Philippe", "Caron", , "louis-philippe.caron@bsc.es", role = "ctb"),
+    person("Eva", "Rifà", , "eva.rifarovira@bsc.es", role = "ctb"),
+    person("Ulrich", "Drepper", , , role = "ctb"),
+    person("David", "Bronaugh", , , role = "ctb"),
+    person("James", "Hiebert", , , role = "ctb"))
+Description: Set of tools to compute metrics and indices for climate analysis.
+    The package provides functions to compute extreme indices, evaluate the
+    agreement between models and combine theses models into an ensemble. Multi-model
+    time series of climate indices can be computed either after averaging the 2-D
+    fields from different models provided they share a common grid or by combining
+    time series computed on the model native grid. Indices can be assigned weights
+    and/or combined to construct new indices. The package makes use of some of the
+    methods described in:
+    N. Manubens et al. (2018) <doi:10.1016/j.envsoft.2018.01.018>.
+Depends: R (>= 3.2.0)
+Imports: graphics, methods, multiApply (>= 2.0.0), stats
+Suggests: knitr, testthat, markdown, rmarkdown
+License: GPL-3
+URL: https://gitlab.earth.bsc.es/es/ClimProjDiags
+BugReports: https://gitlab.earth.bsc.es/es/ClimProjDiags/-/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-29 10:04:08 UTC; vagudets
+Author: BSC-CNS [aut, cph],
+  Nuria Perez-Zanon [aut] (ORCID:
+    <https://orcid.org/0000-0001-8568-3071>),
+  An-Chi Ho [ctb],
+  Victòria Agudetse [cre],
+  Nicolau Manubens [ctb],
+  Alasdair Hunter [aut],
+  Louis-Philippe Caron [ctb],
+  Eva Rifà [ctb],
+  Ulrich Drepper [ctb],
+  David Bronaugh [ctb],
+  James Hiebert [ctb]
+Maintainer: Victòria Agudetse <victoria.agudetse@bsc.es>
+Repository: CRAN
+Date/Publication: 2026-07-30 05:10:27 UTC

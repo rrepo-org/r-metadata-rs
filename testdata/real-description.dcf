@@ -1,0 +1,26 @@
+Package: dplyr
+Type: Package
+Title: A Grammar of Data Manipulation
+Version: 1.1.4
+Authors@R: c(
+    person("Hadley", "Wickham", role = c("aut", "cre"),
+      email = "hadley@example.test"),
+    person("Romain", "Francois", role = "aut"))
+Description: A fast, consistent tool for working with data frame like
+    objects, both in memory and out of memory.
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: cli (>= 3.4.0), generics, glue (>= 1.3.2), lifecycle (>= 1.0.3),
+    magrittr (>= 1.5), methods, pillar (>= 1.9.0), R6, rlang (>= 1.1.0),
+    tibble (>= 3.2.0), tidyselect (>= 1.2.0), utils, vctrs (>= 0.6.4)
+Suggests: bench, broom, callr, covr, DBI, dbplyr, ggplot2, knitr,
+    Lahman, lobstr, microbenchmark, nycflights13, purrr, rmarkdown,
+    RMySQL, RPostgreSQL, RSQLite, stringi, testthat (>= 3.1.5), tidyr,
+    withr
+VignetteBuilder: knitr
+URL: https://dplyr.tidyverse.org, https://github.com/tidyverse/dplyr
+BugReports: https://github.com/tidyverse/dplyr/issues
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: yes
+RoxygenNote: 7.2.3

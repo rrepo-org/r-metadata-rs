@@ -1,0 +1,21 @@
+Package: groupcompare
+Type: Package
+Title: Comparing Two Groups Using Various Descriptive Statistics
+Version: 1.0.1
+Date: 2025-6-25
+Authors@R: c(person("Zeynel", "Cebeci", email = "zcebeci@cu.edu.tr", role = c("aut", "cre")), person("A. Firat", "Ozdemir", email = "firat.ozdemir@deu.edu.tr", role = c("aut")), person("Engin", "Yildiztepe", email = "engin.yildiztepe@deu.edu.tr", role = c("aut")))
+Author: Zeynel Cebeci [aut, cre],
+  A. Firat Ozdemir [aut],
+  Engin Yildiztepe [aut]
+Maintainer: Zeynel Cebeci <zcebeci@cu.edu.tr>
+Description: Comparing two independent or paired groups across a range of descriptive statistics, enabling the evaluation of potential differences in central tendency (mean, median), dispersion (variance, interquartile range), shape (skewness, kurtosis), and distributional characteristics (various quantiles). The analytical framework incorporates parametric t-tests, non-parametric Wilcoxon tests, permutation tests, and bootstrap resampling techniques to assess the statistical significance of observed differences.
+Depends: R (>= 4.5.0)
+License: GPL (>= 2)
+LazyData: true
+Imports: boot, vioplot
+Suggests: knitr, rmarkdown, prettydoc
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-06-25 19:16:19 UTC; user1
+Repository: CRAN
+Date/Publication: 2025-06-25 19:50:05 UTC

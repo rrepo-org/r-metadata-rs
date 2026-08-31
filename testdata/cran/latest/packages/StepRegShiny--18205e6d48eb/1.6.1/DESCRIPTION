@@ -1,0 +1,40 @@
+Package: StepRegShiny
+Version: 1.6.1
+Title: Graphical User Interface for 'StepReg'
+Authors@R: c(
+    person("Junhui", "Li", , "junhui.li11@umassmed.edu", role = c("cre"),
+           comment = c(ORCID = "0000-0003-3973-1700")),
+    person("Junhui", "Li", , "junhui.li11@umassmed.edu", role = c("aut")),
+    person("Kai", "Hu", , "kai.hu@umassmed.edu", role = c("aut")),
+    person("Xiaohuan", "Lu", , role = c("aut")),
+    person("Sushmita", "N Nayak", , role = c("ctb")),
+    person("Cesar", "Bautista Sotelo", , role = c("ctb")),
+    person("Michael", "A Lodato", , role = c("ctb")),
+    person("Wenxin", "Liu", , role = c("aut")),
+    person("Lihua", "Julie Zhu", , role = c("aut"))
+  )
+Date: 2025-10-22
+Description: A web-based 'shiny' interface for the 'StepReg' package enables stepwise regression analysis across linear, generalized linear (including logistic, Poisson, Gamma, and negative binomial), and Cox models. It supports forward, backward, bidirectional, and best-subset selection under a range of criteria. The package also supports stepwise regression to multivariate settings, allowing multiple dependent variables to be modeled simultaneously. Users can explore and combine multiple selection strategies and criteria to optimize model selection. For enhanced robustness, the package offers optional randomized forward selection to reduce overfitting, and a data-splitting workflow for more reliable post-selection inference. Additional features include logging and visualization of the selection process, as well as the ability to export results in common formats.
+License: MIT + file LICENSE
+BugReports: https://github.com/JunhuiLi1017/StepRegShiny/issues
+VignetteBuilder: knitr
+Suggests: knitr, testthat, BiocStyle, survival
+Imports: StepReg, shiny, DT, shinythemes, shinycssloaders, dplyr,
+        ggplot2, stringr, flextable, cowplot, ggcorrplot, tidyr,
+        summarytools, rmarkdown
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2025-10-30 05:21:27 UTC; lij11
+Author: Junhui Li [cre] (ORCID: <https://orcid.org/0000-0003-3973-1700>),
+  Junhui Li [aut],
+  Kai Hu [aut],
+  Xiaohuan Lu [aut],
+  Sushmita N Nayak [ctb],
+  Cesar Bautista Sotelo [ctb],
+  Michael A Lodato [ctb],
+  Wenxin Liu [aut],
+  Lihua Julie Zhu [aut]
+Maintainer: Junhui Li <junhui.li11@umassmed.edu>
+Date/Publication: 2025-11-03 19:10:08 UTC

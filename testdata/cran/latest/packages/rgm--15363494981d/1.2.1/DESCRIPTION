@@ -1,0 +1,27 @@
+Package: rgm
+Type: Package
+Title: Advanced Inference with Random Graphical Models
+Version: 1.2.1
+Authors@R: 
+    c(person("Francisco", "Richter", email = "richtf@usi.ch", role = c("aut", "cre")),
+      person("Veronica", "Vinciotti", email = "veronica.vinciotti@unitn.it", role = c("ctb")),
+      person("Ernst", "Wit", email = "ernst.jan.camiel.wit@usi.ch", role = c("ctb")))
+Description: Implements Random Graphical Models for multivariate data analysis across multiple environments, providing tools for exploring network interactions and structural relationships. Capabilities include joint inference across environments, integration of external covariates, and a Bayesian framework for uncertainty quantification. Applicable in various fields, including microbiome analysis. Methods based on Vinciotti, V., Wit, E. C., and Richter, F. (2026) "Random Graphical Model of Microbiome Interactions in Related Environments" <doi:10.1007/s13253-024-00638-6>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: truncnorm, BDgraph, MASS, mvtnorm, ggplot2, stats, pROC,
+        reshape2
+LinkingTo: Rcpp
+RoxygenNote: 7.3.3
+BugReports: https://github.com/franciscorichter/rgm/issues
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-05-04 13:30:03 UTC; pancho
+Author: Francisco Richter [aut, cre],
+  Veronica Vinciotti [ctb],
+  Ernst Wit [ctb]
+Maintainer: Francisco Richter <richtf@usi.ch>
+Repository: CRAN
+Date/Publication: 2026-05-04 14:50:02 UTC

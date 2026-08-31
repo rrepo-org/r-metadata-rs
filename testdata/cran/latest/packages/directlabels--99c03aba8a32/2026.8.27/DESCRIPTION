@@ -1,0 +1,37 @@
+Package: directlabels
+Maintainer: Toby Dylan Hocking <toby.hocking@r-project.org>
+Authors@R: person(
+ given = c("Toby", "Dylan"),
+ family = "Hocking",
+ role = c("aut", "cre"),
+ email = "toby.hocking@r-project.org",
+ comment = c(ORCID="0000-0002-3146-0865"))
+Version: 2026.8.27
+BugReports: https://github.com/tdhock/directlabels/issues
+License: GPL-3
+Title: Direct Labels for Multicolor Plots
+Description: An extensible framework
+ for automatically placing direct labels onto multicolor 'lattice' or
+ 'ggplot2' plots.
+ Label positions are described using Positioning Methods
+ which can be re-used across several different plots.
+ There are heuristics for examining "trellis" and "ggplot" objects
+ and inferring an appropriate Positioning Method.
+URL: https://github.com/tdhock/directlabels
+LazyData: true
+Suggests: MASS, knitr, markdown, inlinedocs, magick, broom,
+        RColorBrewer, reshape2, ggplot2 (>= 2.0), rlang, lattice,
+        alphahull, nlme, lars, latticeExtra, dplyr, ggthemes, testthat,
+        mlmRev
+Collate: utility.function.R compare.R dotplot.R lineplot.R
+        densityplot.R ggplot2.R positioning.functions.R doc.R lattice.R
+        scatterplot.R contourplot.R RcppExports.R isoreg_dp.R
+LinkingTo: Rcpp
+Imports: grid (>= 3.0.0), Rcpp, data.table
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-08-27 18:56:21 UTC; hoct2726
+Author: Toby Dylan Hocking [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3146-0865>)
+Repository: CRAN
+Date/Publication: 2026-08-28 08:20:02 UTC

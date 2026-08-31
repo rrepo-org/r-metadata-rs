@@ -1,0 +1,39 @@
+Package: egfr
+Type: Package
+Title: Estimated Glomerular Filtration Rate (eGFR) Calculators
+Version: 1.1.1
+Authors@R: 
+    person("Markus", "Hovd", email = "markus@hovd.io", role = c("aut", "cre", "cph"))
+Description: A comprehensive, vectorised toolkit for estimating glomerular
+    filtration rate (eGFR) and creatinine clearance from serum creatinine,
+    cystatin C, or both. Implements adult, paediatric, and
+    neonatal equations, including the Chronic Kidney Disease Epidemiology
+    Collaboration (CKD-EPI) equations (2009, 2012, 2021), the Modification
+    of Diet in Renal Disease (MDRD) Study equation, Cockcroft-Gault, the
+    European Kidney Function Consortium (EKFC) equations, the Full Age
+    Spectrum (FAS) equations, the Lund-Malmoe equations, the Berlin
+    Initiative Study (BIS) equations, the Schwartz bedside equation, the
+    Chronic Kidney Disease in Children Under 25 (CKiD U25) equations, the
+    Caucasian, Asian, Paediatric, and Adult (CAPA) cystatin C equation, and
+    a neonatal equation. Helpers for body surface area, chronic kidney
+    disease (CKD) staging following the Kidney Disease: Improving Global
+    Outcomes (KDIGO) guideline, and unit conversions are included.
+    Methods are described in Levey et al. (2009) <doi:10.7326/0003-4819-150-9-200905050-00006>,
+    Inker et al. (2021) <doi:10.1056/NEJMoa2102953>, and
+    Pottel et al. (2021) <doi:10.7326/M20-4366>.
+    Inspired by the 'kidney.epi' package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/mhovd/egfr, https://mhovd.github.io/egfr/
+BugReports: https://github.com/mhovd/egfr/issues
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-22 18:53:37 UTC; marku
+Author: Markus Hovd [aut, cre, cph]
+Maintainer: Markus Hovd <markus@hovd.io>
+Repository: CRAN
+Date/Publication: 2026-06-26 11:20:02 UTC

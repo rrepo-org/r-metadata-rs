@@ -1,0 +1,20 @@
+Package: EFM
+Version: 1.3.0
+Title: Elliptical Factor Models
+Authors@R: c(person(given = "Guangbao", family = "Guo", role = c("aut", "cre"), email = "ggb11111111@163.com"),
+    person(given = "Yuanyuan", family = "Zhou", role = "aut"))
+Description: The elliptical factor model, as an extension of the traditional factor model,  effectively overcomes the limitations of the traditional model when dealing with heavy-tailed characteristic data. This package implements sparse principal component methods (SPC) and bi-sparse online principal component estimation (SPOC) for parameter estimation. Includes functionality for calculating mean squared error, relative error, and loading matrix sparsity.The philosophy of the package is described in Guo G. (2023) <doi:10.1007/s00180-022-01270-z>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: MASS, stats, SOPC, matrixcalc
+Suggests: testthat (>= 3.0.0), ggplot2, pracma, psych, sn
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Language: en-US
+Maintainer: Guangbao Guo <ggb11111111@163.com>
+Packaged: 2025-11-11 09:40:35 UTC; 86187
+Author: Guangbao Guo [aut, cre],
+  Yuanyuan Zhou [aut]
+Repository: CRAN
+Date/Publication: 2025-11-14 00:00:02 UTC

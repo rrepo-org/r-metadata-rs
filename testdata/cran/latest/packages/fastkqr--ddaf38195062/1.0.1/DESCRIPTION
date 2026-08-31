@@ -1,0 +1,28 @@
+Package: fastkqr
+Type: Package
+Title: A Fast Algorithm for Kernel Quantile Regression
+Version: 1.0.1
+Date: 2026-06-30
+Authors@R: c(person(given = "Qian", family = "Tang", role = c("aut", "cre"), email = "qian-tang@uiowa.edu"),
+              person(given = "Yuwen", family = "Gu", role = "aut", email = "yuwen.gu@uconn.edu"),
+              person(given = "Boxiang", family = "Wang", role = "aut", email = "boxiang-wang@uiowa.edu"))
+Author: Qian Tang [aut, cre],
+  Yuwen Gu [aut],
+  Boxiang Wang [aut]
+Maintainer: Qian Tang <qian-tang@uiowa.edu>
+Description: Implements fast algorithms for kernel quantile regression and
+    related models, including non-crossing kernel quantile regression and
+    regularized linear quantile regression. The methods are described in
+    Tang, Gu and Wang (2026) <doi:10.1080/10618600.2025.2541004>.
+Depends: R (>= 3.5.0)
+Imports: stats, parallel
+License: GPL-2
+NeedsCompilation: yes
+Encoding: UTF-8
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.2.3
+Packaged: 2026-06-30 17:22:29 UTC; qtang7
+Repository: CRAN
+Date/Publication: 2026-07-01 22:30:22 UTC

@@ -1,0 +1,48 @@
+Package: udpipe
+Type: Package
+Title: Tokenization, Parts of Speech Tagging, Lemmatization and
+        Dependency Parsing with the 'UDPipe' 'NLP' Toolkit
+Version: 0.8.16
+Maintainer: Jan Wijffels <jwijffels@bnosac.be>
+Authors@R: c(
+    person('Jan', 'Wijffels', role = c('aut', 'cre', 'cph'), email = 'jwijffels@bnosac.be', comment = 'R wrapper'), 
+    person('BNOSAC', role = 'cph', comment = 'R wrapper'), 
+    person("Institute of Formal and Applied Linguistics, Faculty of Mathematics and Physics, Charles University in Prague, Czech Republic", role = 'cph', comment = "src/udpipe.cpp & src/udpipe.h"), 
+    person('Milan Straka', role = c('aut', 'cph'), email = 'straka@ufal.mff.cuni.cz', comment = "src/udpipe.cpp & src/udpipe.h"), 
+    person('Jana Straková', role = c('ctb', 'cph'), email = 'strakova@ufal.mff.cuni.cz', comment = "src/udpipe.cpp & src/udpipe.h"))
+Description: This natural language processing toolkit provides language-agnostic
+    'tokenization', 'parts of speech tagging', 'lemmatization' and 'dependency
+    parsing' of raw text. Next to text parsing, the package also allows you to train
+    annotation models based on data of 'treebanks' in 'CoNLL-U' format as provided
+    at <https://universaldependencies.org/format.html>. The techniques are explained
+    in detail in the paper: 'Tokenizing, POS Tagging, Lemmatizing and Parsing UD 2.0
+    with UDPipe', available at <doi:10.18653/v1/K17-3009>. 
+    The toolkit also contains functionalities for commonly used data manipulations on texts 
+    which are enriched with the output of the parser. Namely functionalities and algorithms 
+    for collocations, token co-occurrence, document term matrix handling, 
+    term frequency inverse document frequency calculations,
+    information retrieval metrics (Okapi BM25), handling of multi-word expressions,
+    keyword detection (Rapid Automatic Keyword Extraction, noun phrase extraction, syntactical patterns) 
+    sentiment scoring and semantic similarity analysis.
+License: MPL-2.0
+URL: https://bnosac.github.io/udpipe/en/index.html,
+        https://github.com/bnosac/udpipe
+Encoding: UTF-8
+Depends: R (>= 2.10)
+Imports: Rcpp (>= 0.11.5), data.table (>= 1.9.6), Matrix, methods,
+        stats
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, topicmodels, lattice, parallel
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-01-30 13:16:25 UTC; jwijffels
+Author: Jan Wijffels [aut, cre, cph] (R wrapper),
+  BNOSAC [cph] (R wrapper),
+  Institute of Formal and Applied Linguistics, Faculty of Mathematics and
+    Physics, Charles University in Prague, Czech Republic [cph]
+    (src/udpipe.cpp & src/udpipe.h),
+  Milan Straka [aut, cph] (src/udpipe.cpp & src/udpipe.h),
+  Jana Straková [ctb, cph] (src/udpipe.cpp & src/udpipe.h)
+Repository: CRAN
+Date/Publication: 2026-01-30 14:50:02 UTC

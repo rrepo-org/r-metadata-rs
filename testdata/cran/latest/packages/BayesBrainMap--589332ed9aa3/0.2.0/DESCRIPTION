@@ -1,0 +1,51 @@
+Package: BayesBrainMap
+Type: Package
+Title: Estimate Brain Networks and Connectivity with Population-Derived
+        Priors
+Version: 0.2.0
+Authors@R: c(
+    person(given = "Amanda",
+           family = "Mejia",
+           email = "mandy.mejia@gmail.com",
+           role = c("aut", "cre")),
+    person(given = "Damon",
+           family = "Pham",
+           email = "damondpham@gmail.com",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0001-7563-4727")),
+    person(given = "Nohelia",
+           family = "Da Silva",
+           email = "nohelia.dasilva@gmail.com",
+           role = c("ctb"))
+    )
+Maintainer: Amanda Mejia <mandy.mejia@gmail.com>
+Description: Implements Bayesian brain mapping with population-derived priors, 
+    including the original model described in Mejia et al. (2020) 
+    <doi:10.1080/01621459.2019.1679638>, the model with spatial priors described
+    in Mejia et al. (2022) <doi:10.1080/10618600.2022.2104289>, and the model 
+    with population-derived priors on functional connectivity described in Mejia
+    et al. (2025) <doi:10.1093/biostatistics/kxaf022>. Population-derived priors
+    are based on templates representing established brain network maps, for 
+    example derived from independent component analysis (ICA), parcellations, 
+    or other methods.  Model estimation is based on expectation-maximization or 
+    variational Bayes algorithms. Includes direct support for 'CIFTI', 'GIFTI', 
+    and 'NIFTI' neuroimaging file formats.
+Depends: R (>= 3.6.0)
+License: GPL-3
+Additional_repositories: https://inla.r-inla-download.org/R/testing
+Encoding: UTF-8
+Imports: abind, fMRItools (>= 0.7.1), fMRIscrub (>= 0.14.5), foreach,
+        Matrix, matrixStats, methods, pesel, SQUAREM, stats, utils
+Suggests: ciftiTools (>= 0.13.2), excursions, RNifti, oro.nifti, gifti,
+        ggplot2, parallel, doParallel, knitr, rmarkdown, INLA, testthat
+        (>= 3.0.0)
+RoxygenNote: 7.3.3
+URL: https://github.com/mandymejia/BayesBrainMap
+BugReports: https://github.com/mandymejia/BayesBrainMap/issues
+NeedsCompilation: no
+Packaged: 2026-02-02 05:04:23 UTC; ddpham
+Author: Amanda Mejia [aut, cre],
+  Damon Pham [aut] (ORCID: <https://orcid.org/0000-0001-7563-4727>),
+  Nohelia Da Silva [ctb]
+Repository: CRAN
+Date/Publication: 2026-02-03 09:00:14 UTC

@@ -1,0 +1,23 @@
+Package: zoteR
+Title: R Interface to 'Zotero' via Better BibTeX
+Version: 1.0.0
+Authors@R: person("Roshan", "Paladugu", email = "rpaladugu@sassyspace.xyz",
+    role = c("aut", "cre"))
+Description: Connects R to 'Zotero' through the 'Better BibTeX' for 'Zotero'
+    connector <https://retorque.re/zotero-better-bibtex/>. Provides
+    functions to insert in-text citations and bibliography entries
+    directly into documents, detect citations already present in
+    R Markdown and Quarto files, and synchronise bibliography files.
+    Includes an 'RStudio addin' for interactive use.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: httr2, jsonlite, rstudioapi, clipr, yaml, tools
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2026-04-19 15:12:47 UTC; roshan
+Author: Roshan Paladugu [aut, cre]
+Maintainer: Roshan Paladugu <rpaladugu@sassyspace.xyz>
+Repository: CRAN
+Date/Publication: 2026-04-21 20:10:02 UTC

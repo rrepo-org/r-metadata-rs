@@ -1,0 +1,25 @@
+Package: condTruncMVN
+Version: 0.0.3
+Type: Package
+Title: Conditional Truncated Multivariate Normal Distribution
+Authors@R: person("Paul M.", "Hargarten", 
+         email = "hargartenp@vcu.edu", 
+         role = c("aut", "cre"))
+Maintainer: Paul M. Hargarten <hargartenp@vcu.edu>
+Description: Computes the density and probability for the conditional truncated multivariate normal (Horrace (2005) p. 4, <doi:10.1016/j.jmva.2004.10.007>). Also draws random samples from this distribution.
+License: GPL-3
+Depends: R(>= 3.5.0), condMVNorm(>= 2020.1)
+Imports: matrixNormal(>= 0.1.0), tmvmixnorm(>= 1.0.2), tmvtnorm(>=
+        1.5), truncnorm(>= 1.0-8)
+Suggests: formatR, knitr, mvtnorm, rmarkdown, roxygen2, sessioninfo,
+        spelling, testthat
+Encoding: UTF-8
+Language: en-US
+BugReports: https://github.com/phargarten2/condTruncMVN/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-22 17:23:51 UTC; pablo
+Author: Paul M. Hargarten [aut, cre]
+RoxygenNote: 7.3.3
+Repository: CRAN
+Date/Publication: 2026-02-22 17:40:02 UTC

@@ -1,0 +1,53 @@
+Package: L0ggm
+Title: Smooth L0 Penalty Approximations for Gaussian Graphical Models
+Version: 0.1.2
+Date: 2026-08-26
+Authors@R: c(
+    person("Alexander", "Christensen", email = "alexpaulchristensen@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9798-7037")),
+    person("Jeongwon", "Choi", email = "jungwon799@gmail.com", role = "ctb", comment = c(ORCID = "0000-0001-6087-2124")),
+    person("John", "Fox", role = c("cph", "ctb"), comment = "Original implementation of polyserial correlations in auto_correlate.R"),
+    person("Yves", "Rosseel", role = c("cph", "ctb"), comment = "Original implementation of rmsea_ci in network_fit.R"),
+    person("Alan", "Genz", role = c("cph", "ctb"), comment = "Fortran implementation of the bivariate normal CDF (TVPACK MVBVU) in polychoric_matrix.c, translated via the pbivnorm R package"),
+    person("David", "Blackman", role = "ctb", comment = "Original xoshiro.c implementation"),
+    person("Sebastiano", "Vigna", role = "ctb", comment = "Original xoshiro.c implementation"),
+    person("John", "Burkardt", role = c("cph", "ctb"), comment = "Original ziggurat.c implementation")
+   )
+Description: Provides smooth approximations to the L0 norm penalty for
+    estimating sparse Gaussian graphical models (GGMs). Network estimation
+    is performed using the Local Linear Approximation (LLA) framework
+    (Fan & Li, 2001 <doi:10.1198/016214501753382273>;
+    Zou & Li, 2008 <doi:10.1214/009053607000000802>) with five penalty
+    functions: arctangent (Wang & Zhu, 2016 <doi:10.1155/2016/6495417>),
+    EXP (Wang, Fan, & Zhu, 2018 <doi:10.1007/s10463-016-0588-3>), Gumbel,
+    Log (Candes, Wakin, & Boyd, 2008 <doi:10.1007/s00041-008-9045-x>),
+    and Weibull. Adaptive penalty parameters for EXP, Gumbel, and Weibull
+    are estimated via maximum likelihood, and model selection uses
+    information criteria including AIC, BIC, and EBIC (Extended BIC).
+    Simulation functions generate multivariate normal data from GGMs with
+    stochastic block model or small-world (Watts-Strogatz) network structures.
+Depends: R (>= 3.5.0)
+License: AGPL (>= 3.0)
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Imports: igraph, glasso, glassoFast, Matrix, methods, psych, stats
+Copyright: See inst/COPYRIGHTS for details
+BugReports: https://github.com/AlexChristensen/L0ggm/issues
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-08-26 17:42:34 UTC; alextops
+Author: Alexander Christensen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9798-7037>),
+  Jeongwon Choi [ctb] (ORCID: <https://orcid.org/0000-0001-6087-2124>),
+  John Fox [cph, ctb] (Original implementation of polyserial correlations
+    in auto_correlate.R),
+  Yves Rosseel [cph, ctb] (Original implementation of rmsea_ci in
+    network_fit.R),
+  Alan Genz [cph, ctb] (Fortran implementation of the bivariate normal
+    CDF (TVPACK MVBVU) in polychoric_matrix.c, translated via the
+    pbivnorm R package),
+  David Blackman [ctb] (Original xoshiro.c implementation),
+  Sebastiano Vigna [ctb] (Original xoshiro.c implementation),
+  John Burkardt [cph, ctb] (Original ziggurat.c implementation)
+Maintainer: Alexander Christensen <alexpaulchristensen@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-26 18:10:02 UTC

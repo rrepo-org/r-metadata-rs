@@ -1,0 +1,45 @@
+Package: swcEcon
+Title: Economic Analysis of Soil and Water Conservation Measures in
+        Watersheds
+Version: 0.1.0
+Authors@R: 
+    person(
+        given = "Sadikul",
+        family = "Islam",
+        email = "sadikul.islamiasri@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-2924-7122")
+    )
+Description: Provides functions and benchmark datasets for the economic
+    appraisal of soil and water conservation (SWC) measures in watershed
+    development projects. Implements benefit-cost ratio (BCR), net present
+    value (NPV), internal rate of return (IRR) via the bisection method of
+    Brent (1973, ISBN:9780130223715), modified BCR, marginal rate of return
+    using the CIMMYT (1988, ISBN:9686127127) method, payback period,
+    soil loss economic valuation via the Universal Soil Loss Equation of
+    Wischmeier and Smith (1978, ISBN:0160016258), groundwater recharge
+    valuation, employment generation ratio, sensitivity analysis, switching
+    value analysis, and Monte Carlo simulation. Six datasets are included:
+    state-wise BCR benchmarks from NABARD (2019) watershed evaluations,
+    USLE erodibility parameters for Indian soil orders from NBSS and LUP,
+    rainfall erosivity for twenty Indian districts from IMD data, SWC unit
+    cost norms from PMKSY-WDC (GoI 2015), and two hypothetical datasets for
+    illustration. Methods follow Gittinger (1982, ISBN:9780801825439) and
+    Squire and van der Tak (1975, ISBN:9780801816697).
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, grDevices, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-13 05:18:42 UTC; acer
+Author: Sadikul Islam [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2924-7122>)
+Maintainer: Sadikul Islam <sadikul.islamiasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-16 20:10:02 UTC

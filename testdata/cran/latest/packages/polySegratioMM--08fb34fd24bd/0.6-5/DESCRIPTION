@@ -1,0 +1,26 @@
+Package: polySegratioMM
+Type: Package
+Title: Bayesian Mixture Models for Marker Dosage in Autopolyploids
+Version: 0.6-5
+Date: 2026-02-22
+Authors@R: c(
+    person(given = "Peter",
+           family = "Baker",
+           role = c("aut", "cre"),
+           email = "drpetebaker@gmail.com",
+           comment = c(ORCID = "0000-0002-1241-7263")))
+Depends: R (>= 2.10), polySegratio
+Imports: gtools, coda, lattice
+Suggests: knitr, rmarkdown, bookdown
+Description: Fits Bayesian mixture models to estimate marker dosage for dominant markers in autopolyploids using JAGS (1.0 or greater) as outlined in Baker et al "Bayesian estimation of marker dosage in sugarcane and other autopolyploids" (2010, <doi:10.1007/s00122-010-1283-z>). May be used in conjunction with polySegratio for simulation studies and comparison with standard methods.
+LazyData: true
+URL: https://github.com/petebaker/polysegratiomm
+BugReports: https://github.com/petebaker/polysegratiomm/issues
+License: GPL-3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-25 05:59:03 UTC; pete
+Author: Peter Baker [aut, cre] (ORCID: <https://orcid.org/0000-0002-1241-7263>)
+Maintainer: Peter Baker <drpetebaker@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-25 11:50:08 UTC

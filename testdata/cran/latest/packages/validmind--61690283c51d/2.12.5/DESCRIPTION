@@ -1,0 +1,23 @@
+Package: validmind
+Type: Package
+Title: Interface to the 'ValidMind' Platform
+Version: 2.12.5
+Authors@R: c(person("Andres", "Rodriguez", role = c("aut", "cre","cph"),
+                      email = "andres@validmind.ai"))
+Maintainer: Andres Rodriguez <andres@validmind.ai>
+Description: Deploy, execute, and analyze the results of models hosted on the
+  'ValidMind' Platform <https://validmind.ai>. This package interfaces with the
+  'Python' Library API in order to allow advanced diagnostics and insight
+  into trained models all from an 'R' environment.
+License: AGPL-3
+Encoding: UTF-8
+URL: https://github.com/validmind/validmind-library
+BugReports: https://github.com/validmind/validmind-library/issues
+RoxygenNote: 7.3.3
+Imports: glue, reticulate, dplyr, plotly, htmltools, rmarkdown, DT,
+        base64enc
+NeedsCompilation: no
+Packaged: 2026-03-25 22:49:05 UTC; andres
+Author: Andres Rodriguez [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2026-03-25 23:00:02 UTC

@@ -1,0 +1,32 @@
+Package: classifly
+Title: Explore Classification Models in High Dimensions
+Version: 0.4.3
+Authors@R: c(person(given = "Hadley",
+                      family = "Wickham",
+                      role = "aut",
+                      email = "h.wickham@gmail.com"),
+               person(given = "Dianne",
+                      family = "Cook",
+                      role = "cre",
+                      email = "visnut@gmail.com"))
+Description: Given $p$-dimensional training data containing $d$ groups
+    (the design space), a classification algorithm (classifier) predicts
+    which group new data belongs to.  Generally the input to these
+    algorithms is high dimensional, and the boundaries between groups will
+    be high dimensional and perhaps non-linear. This
+    package implements methods for understanding the division of space
+    between the groups.
+License: MIT + file LICENSE
+URL: http://had.co.nz/classifly
+Imports: class, plyr, stats
+Suggests: e1071, MASS, rpart
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-15 05:48:38 UTC; cookd
+Author: Hadley Wickham [aut],
+  Dianne Cook [cre]
+Maintainer: Dianne Cook <visnut@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-15 12:20:21 UTC

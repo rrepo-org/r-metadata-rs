@@ -1,0 +1,36 @@
+Package: h5lite
+Title: Simplified 'HDF5' Interface
+Version: 2.1.1.1
+Authors@R: c(
+    person(
+      "Daniel P.", "Smith",
+      email   = "dansmith01@gmail.com",
+      role    = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-2479-2044")),
+    person(
+      "Alkek Center for Metagenomics and Microbiome Research", 
+      role = c("cph", "fnd") ))
+Description: A user-friendly interface for the Hierarchical Data Format 5 
+    ('HDF5') library designed to "just work." It bundles the necessary 
+    system libraries to ensure easy installation on all platforms. Features 
+    smart defaults that automatically map R objects (vectors, matrices, 
+    data frames) to efficient 'HDF5' types, removing the need to manage 
+    low-level details like dataspaces or property lists. Uses the 'HDF5' 
+    library developed by The HDF Group <https://www.hdfgroup.org/>.
+URL: https://github.com/cmmr/h5lite, https://cmmr.github.io/h5lite/
+BugReports: https://github.com/cmmr/h5lite/issues
+Depends: R (>= 4.2.0)
+LinkingTo: hdf5lib (>= 2.1.1.0)
+Suggests: bit64, knitr, rmarkdown, tinytest
+NeedsCompilation: yes
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Packaged: 2026-05-18 21:46:14 UTC; Daniel
+Author: Daniel P. Smith [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2479-2044>),
+  Alkek Center for Metagenomics and Microbiome Research [cph, fnd]
+Maintainer: Daniel P. Smith <dansmith01@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-18 22:00:02 UTC

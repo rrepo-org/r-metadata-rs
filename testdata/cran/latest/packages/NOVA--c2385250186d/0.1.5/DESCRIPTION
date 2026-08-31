@@ -1,0 +1,32 @@
+Package: NOVA
+Type: Package
+Title: Neural Output Visualization and Analysis
+Version: 0.1.5
+Description: A comprehensive toolkit for analyzing and visualizing neural data 
+    outputs, including Principal Component Analysis (PCA) trajectory plotting, 
+    Multi-Electrode Array (MEA) heatmap generation, and variable importance 
+    analysis. Provides publication-ready visualizations with flexible 
+    customization options for neuroscience research applications.
+Authors@R: person(given = "Alex",
+                  family = "Tudoras", 
+                  role = c("aut", "cre"),
+                  email = "alex.tudorasmiravet@ucsf.edu")
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: readr, tibble, DT, knitr, scales, readxl, writexl, dplyr,
+        ggplot2, tidyr (>= 1.1.0), purrr (>= 0.3.0), rlang (>= 0.4.0),
+        stringr (>= 1.4.0), RColorBrewer (>= 1.1.0), viridis (>=
+        0.5.0), pheatmap (>= 1.0.0), gridExtra (>= 2.3.0), ggrepel (>=
+        0.9.0)
+Suggests: utils, testthat (>= 3.0.0), rmarkdown (>= 2.0)
+URL: https://github.com/atudoras/NOVA
+BugReports: https://github.com/atudoras/NOVA/issues
+NeedsCompilation: no
+Packaged: 2026-03-30 21:15:41 UTC; alextudoras
+Author: Alex Tudoras [aut, cre]
+Maintainer: Alex Tudoras <alex.tudorasmiravet@ucsf.edu>
+Repository: CRAN
+Date/Publication: 2026-03-30 21:50:02 UTC

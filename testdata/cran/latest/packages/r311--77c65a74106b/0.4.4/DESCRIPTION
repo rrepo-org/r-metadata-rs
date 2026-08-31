@@ -1,0 +1,35 @@
+Type: Package
+Package: r311
+Title: Interface to the 'open311' Standard
+Version: 0.4.4
+Authors@R: 
+    person("Jonas", "Lieth", , "jslth@outlook.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-3451-3176"))
+Maintainer: Jonas Lieth <jslth@outlook.com>
+Description: Access and handle APIs that use the international 'open311'
+    'GeoReport v2' standard for civic issue tracking
+    <https://wiki.open311.org/GeoReport_v2/>. Retrieve civic service types
+    and request data. Select and add available 'open311' endpoints and
+    jurisdictions. Implicitly supports custom queries and 'open311'
+    extensions.  Requires a minimal number of hard dependencies while
+    still allowing the integration in common R formats ('xml2', 'tibble',
+    'sf').
+License: MIT + file LICENSE
+URL: https://ropengov.github.io/r311/, https://github.com/rOpenGov/r311
+BugReports: https://github.com/rOpenGov/r311/issues
+Depends: R (>= 4.0.0)
+Imports: curl, jsonlite, tools, utils
+Suggests: httptest2, knitr, rmarkdown, sf, testthat (>= 3.0.0), tibble,
+        xml2, xmlconvert
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+X-schema.org-isPartOf: http://ropengov.org/
+X-schema.org-keywords: ropengov
+NeedsCompilation: no
+Packaged: 2026-01-30 20:04:27 UTC; PC
+Author: Jonas Lieth [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3451-3176>)
+Repository: CRAN
+Date/Publication: 2026-01-30 20:30:01 UTC

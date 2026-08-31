@@ -1,0 +1,40 @@
+Package: DPI
+Title: The Directed Prediction Index for Causal Direction Inference
+        from Observational Data
+Version: 2026.2
+Date: 2026-02-25
+Authors@R: 
+    c(person(given = "Han Wu Shuang",
+             family = "Bao",
+             role = c("aut", "cre"),
+             email = "baohws@foxmail.com",
+             comment = c(ORCID = "0000-0003-3043-710X")))
+Maintainer: Han Wu Shuang Bao <baohws@foxmail.com>
+Description: 
+    The Directed Prediction Index ('DPI') is a causal discovery method
+    for observational data designed to quantify the relative endogeneity
+    of outcome (Y) versus predictor (X) variables in regression models.
+    By comparing the coefficients of determination (R-squared)
+    between the Y-as-outcome and X-as-outcome models
+    while controlling for sufficient confounders and
+    simulating k random covariates, it can quantify relative endogeneity,
+    providing a necessary but insufficient condition for causal direction
+    from a less endogenous variable (X) to a more endogenous variable (Y).
+    Methodological details are provided at
+    <https://psychbruce.github.io/DPI/>.
+    This package also includes functions for data simulation and network
+    analysis (correlation, partial correlation, and Bayesian Networks).
+License: GPL-3
+Encoding: UTF-8
+URL: https://psychbruce.github.io/DPI/
+BugReports: https://github.com/psychbruce/DPI/issues
+Depends: R (>= 4.0.0)
+Imports: glue, crayon, cli, ggplot2, cowplot, qgraph, bnlearn, MASS
+Suggests: bruceR, aplot, bayestestR
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-26 07:39:57 UTC; baohw
+Author: Han Wu Shuang Bao [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3043-710X>)
+Repository: CRAN
+Date/Publication: 2026-02-26 07:50:03 UTC

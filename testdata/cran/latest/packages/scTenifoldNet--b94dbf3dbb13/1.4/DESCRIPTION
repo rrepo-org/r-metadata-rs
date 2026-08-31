@@ -1,0 +1,32 @@
+Package: scTenifoldNet
+Type: Package
+Title: Construct and Compare scGRN from Single-Cell Transcriptomic Data
+Version: 1.4
+Authors@R: c(person(given = "Daniel", family = "Osorio", email = "dcosorioh@gmail.com", role = c("aut","cre"), comment = c(ORCID = '0000-0003-4424-8422')),
+             person(given = "Yan", family = "Zhong", role = c("aut","ctb")),
+             person(given = "Guanxun", family = "Li", role = c("aut","ctb")),
+             person(given = "Jianhua", family = "Huang", role = c("aut","ctb")),
+             person(given = "James", family = "Cai", role = c("aut", "ctb", "ths"), comment = c(ORCID = '0000-0002-8081-6725'))
+             )
+Description: A workflow based on machine learning methods to construct and compare single-cell gene regulatory networks (scGRN) using single-cell RNA-seq (scRNA-seq) data collected from different conditions. Uses principal component regression, tensor decomposition, and manifold alignment, to accurately identify even subtly shifted gene expression programs. See <doi:10.1016/j.patter.2020.100139> for more details.
+URL: https://github.com/cailab-tamu/scTenifoldNet
+BugReports: https://github.com/cailab-tamu/scTenifoldNet/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: Rcpp, RSpectra, Matrix, methods, stats, utils, MASS, cli,
+        furrr, future, RhpcBLASctl
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 2.1.0)
+NeedsCompilation: yes
+Packaged: 2026-08-04 18:19:09 UTC; dcosorioh
+Author: Daniel Osorio [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4424-8422>),
+  Yan Zhong [aut, ctb],
+  Guanxun Li [aut, ctb],
+  Jianhua Huang [aut, ctb],
+  James Cai [aut, ctb, ths] (ORCID:
+    <https://orcid.org/0000-0002-8081-6725>)
+Maintainer: Daniel Osorio <dcosorioh@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 20:20:02 UTC

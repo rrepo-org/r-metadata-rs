@@ -1,0 +1,29 @@
+Package: sulcimap
+Title: Mapping Cortical Folding Patterns
+Version: 1.0.6
+Authors@R: 
+    c(
+      person(given = "Mahan",
+             family = "Shafie",
+             email = "mahan.shafie@unito.it",
+             role = c("aut", "cre")),
+      person(given = "Fabrizio",
+             family = "Pizzagalli",
+             role = "aut")
+    )
+Maintainer: Mahan Shafie <mahan.shafie@unito.it>
+Description: Visualizes sulcal morphometry data derived from 'BrainVisa' <https://brainvisa.info/> including width, depth, surface area, and length. The package enables mapping of statistical group results or subject-level values onto cortical surface maps, with options to focus on all sulci or only selected regions of interest. Users can display all four measures simultaneously or restrict plots to chosen measures, creating composite, publication-quality brain visualizations in R to support the analysis and interpretation of sulcal morphology.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0)
+Imports: utils, tools, magick, ggplot2, viridisLite, scales, patchwork,
+        cowplot, grid, grDevices
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-21 09:40:06 UTC; mahan
+Author: Mahan Shafie [aut, cre],
+  Fabrizio Pizzagalli [aut]
+Repository: CRAN
+Date/Publication: 2025-10-21 11:30:02 UTC

@@ -1,0 +1,66 @@
+Package: bayesplot
+Type: Package
+Title: Plotting for Bayesian Models
+Version: 1.16.0
+Date: 2026-08-24
+Authors@R: c(person("Jonah", "Gabry", role = c("aut", "cre"), email = "jgabry@gmail.com"),
+             person("Tristan", "Mahr", role = "aut", comment = c(ORCID = "0000-0002-8890-5116")),
+             person("Paul-Christian", "Bürkner", role = "ctb"),
+             person("Martin", "Modrák", role = "ctb"),
+             person("Malcolm", "Barrett", role = "ctb"),
+             person("Frank", "Weber", role = "ctb"),
+             person("Eduardo", "Coronado Sroka", role = "ctb"),
+             person("Teemu", "Sailynoja", role = "ctb"),
+             person("Aki", "Vehtari", role = "ctb"),
+             person("Behram", "Ulukır", role = "ctb"),
+             person("Visruth", "Srimath Kandali", role = "ctb"),
+             person("Mattan S.", "Ben-Shachar", role = "ctb"),
+             person("Ishaan", "Arora", role = "ctb"),
+             person("Utkarsh", "Pawade", role = "ctb"),
+             person("Florence", "Bockting", role = "ctb"))
+Maintainer: Jonah Gabry <jgabry@gmail.com>
+Description: Plotting functions for posterior analysis, MCMC diagnostics,
+    prior and posterior predictive checks, and other visualizations
+    to support the applied Bayesian workflow advocated in
+    Gabry, Simpson, Vehtari, Betancourt, and Gelman (2019) <doi:10.1111/rssa.12378>.
+    The package is designed not only to provide convenient functionality
+    for users, but also a common set of functions that can be easily used by
+    developers working on a variety of R packages for Bayesian modeling,
+    particularly (but not exclusively) packages interfacing with 'Stan'.
+License: GPL (>= 3)
+URL: https://mc-stan.org/bayesplot/
+BugReports: https://github.com/stan-dev/bayesplot/issues/
+SystemRequirements: pandoc (>= 1.12.3)
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.0.0), ggdist, ggplot2 (>= 3.5.0), ggridges (>=
+        0.5.5), glue, lifecycle, posterior (>= 1.7.0), reshape2, rlang
+        (>= 1.0.0), stats, tibble (>= 2.0.0), tidyr, tidyselect, utils
+Suggests: cmdstanr, ggfortify, gridExtra (>= 2.2.1), hexbin, knitr (>=
+        1.16), loo (>= 2.0.0), monotone, patchwork, RColorBrewer,
+        rmarkdown (>= 1.0.0), rstan (>= 2.17.1), rstanarm (>= 2.17.4),
+        rstantools (>= 2.0.0), scales, shinystan (>= 2.3.0), survival,
+        testthat (>= 3.0.0), vdiffr (>= 1.0.2)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Config/testthat/edition: 3
+Additional_repositories: https://stan-dev.r-universe.dev/
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-24 21:12:15 UTC; jgabry
+Author: Jonah Gabry [aut, cre],
+  Tristan Mahr [aut] (ORCID: <https://orcid.org/0000-0002-8890-5116>),
+  Paul-Christian Bürkner [ctb],
+  Martin Modrák [ctb],
+  Malcolm Barrett [ctb],
+  Frank Weber [ctb],
+  Eduardo Coronado Sroka [ctb],
+  Teemu Sailynoja [ctb],
+  Aki Vehtari [ctb],
+  Behram Ulukır [ctb],
+  Visruth Srimath Kandali [ctb],
+  Mattan S. Ben-Shachar [ctb],
+  Ishaan Arora [ctb],
+  Utkarsh Pawade [ctb],
+  Florence Bockting [ctb]
+Repository: CRAN
+Date/Publication: 2026-08-25 07:00:09 UTC

@@ -1,0 +1,17 @@
+Package: UnitMix
+Title: Detecting Measurement-Unit Errors via Gaussian Mixture Models
+Version: 0.0.1
+Authors@R: c(person("Cristina", "Faricelli", email = "cristina.faricelli@istat.it", role = c("aut", "cre")), person("Renato", "Magistro", role = "aut"))
+Description: Tools to detect and correct measurement-unit errors in multivariate numeric data using model-based clustering. Gaussian mixture models with user-defined translation vectors identify clusters of records that differ in scale or unit. Core functionality includes cluster assignment via the EM algorithm, error correction based on posterior probabilities and pairwise scatterplot visualizations. For more details see Di Zio, Guarnera and Luzi (2005) <https://www150.statcan.gc.ca/n1/en/pub/12-001-x/2005001/article/8087-eng.pdf>.
+License: GPL-3
+Encoding: UTF-8
+Imports: mvtnorm
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-03-10 08:22:53 UTC; UTENTE
+Author: Cristina Faricelli [aut, cre],
+  Renato Magistro [aut]
+Maintainer: Cristina Faricelli <cristina.faricelli@istat.it>
+Repository: CRAN
+Date/Publication: 2026-03-16 16:30:14 UTC

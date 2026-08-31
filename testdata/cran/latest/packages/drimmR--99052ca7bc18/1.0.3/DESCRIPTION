@@ -1,0 +1,58 @@
+Type: Package
+Package: drimmR
+Title: Estimation, Simulation and Reliability of Drifting Markov Models
+Version: 1.0.3
+Authors@R: c(person(given = "Nicolas",
+                    family = "Vergne",
+                    role = c("aut", "cre"),
+                    email = "nicolas.vergne@univ-rouen.fr",
+                    comment = "<nicolas.vergne@univ-rouen.fr>"),
+             person(given = "Corentin",
+                    family = "Lothodé",
+                    role = "aut",
+                    comment = "<corentin.lothode@univ-angers.fr>"),
+             person(given = "Alexandre",
+                    family = "Seiller",
+                    role = "aut"),
+             person(given = "Victor",
+                    family = "Mataigne",
+                    role = "ctb"),
+             person(given = "Arnaud",
+                    family = "Lefebvre",
+                    role = "ctb"),
+             person(given = "Annthomy",
+                    family = "Gilles",
+                    role = "ctb"),
+             person(given = c("Vlad", "Stefan"),
+                    family = "Barbu",
+                    role = "aut",
+                    comment = "<vladstefan.barbu@univ-rouen.fr>")) 
+Description: Performs the drifting Markov models (DMM) which are 
+    non-homogeneous Markov models designed for modeling the heterogeneities of
+    sequences in a more flexible way than homogeneous Markov chains or even 
+    hidden Markov models. In this context, we developed an R package dedicated to 
+    the estimation, simulation and the exact computation of associated reliability 
+    of drifting Markov models. The implemented methods are described in
+    Vergne, N. (2008), <doi:10.2202/1544-6115.1326> and
+    Barbu, V.S., Vergne, N. (2019) <doi:10.1007/s11009-018-9682-8> .
+License: GPL-3
+Depends: R (>= 2.10)
+Encoding: UTF-8
+LazyData: true
+Suggests: utils, knitr, rmarkdown
+Imports: seqinr, ggplot2, parallel, parallelly, doParallel, foreach,
+        dplyr, Rdpack, reshape2
+RdMacros: Rdpack
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-12 19:11:28 UTC; nvergne
+Author: Nicolas Vergne [aut, cre] (<nicolas.vergne@univ-rouen.fr>),
+  Corentin Lothodé [aut] (<corentin.lothode@univ-angers.fr>),
+  Alexandre Seiller [aut],
+  Victor Mataigne [ctb],
+  Arnaud Lefebvre [ctb],
+  Annthomy Gilles [ctb],
+  Vlad Stefan Barbu [aut] (<vladstefan.barbu@univ-rouen.fr>)
+Maintainer: Nicolas Vergne <nicolas.vergne@univ-rouen.fr>
+Repository: CRAN
+Date/Publication: 2026-02-12 22:00:02 UTC

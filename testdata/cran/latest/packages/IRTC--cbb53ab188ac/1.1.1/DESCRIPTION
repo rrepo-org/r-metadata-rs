@@ -1,0 +1,43 @@
+Package: IRTC
+Type: Package
+Title: Marginal Maximum Likelihood Estimation for Item Response Models
+Version: 1.1.1
+Date: 2026-07-17
+Authors@R: c(
+    person("Kunxiang", "Ma", role = c("aut", "cre"),
+           email = "makunxiang@weiandata.com"),
+    person("WEIAN DATA TECH (Beijing) Co., Ltd.",
+           role = c("cph", "fnd"), email = "contact@weiandata.com"))
+Description: Self-contained marginal maximum likelihood (MML) estimation for
+    unidimensional and multidimensional item response models, including the
+    Rasch / one-parameter logistic, partial credit, rating scale, two-parameter
+    logistic and generalised partial credit models, with latent regression,
+    multiple groups and case weights. A parallelised, dimension-factorised
+    streaming estimation engine supports large between-item (simple-structure)
+    multidimensional models with bounded memory and an opt-in controlled-accuracy
+    quadrature mode that reports a measured approximation error. A usability
+    layer serves non-specialists and automated pipelines: one-stop estimation
+    from common file formats ('Excel', delimited text, 'SPSS', 'Stata', 'SAS')
+    with automatic cleaning and answer-key scoring, pre-estimation data checks,
+    classical item statistics and item fit, plain-language quality ratings,
+    bilingual (English/Chinese) output, spreadsheet exports for item banking and
+    cross-year linking, audience-specific 'Word'/'HTML' reports, and
+    machine-readable results with structured error conditions. Methods follow
+    Adams, Wilson and Wang (1997) <doi:10.1177/0146621697211001>.
+License: GPL (>= 2)
+Copyright: See file inst/COPYRIGHTS.
+URL: https://github.com/weiandata/IRTC
+BugReports: https://github.com/weiandata/IRTC/issues
+Depends: R (>= 3.5.0)
+Imports: Rcpp, stats, utils, methods, MASS, tools, graphics, grDevices
+Suggests: testthat (>= 3.0.0), mvtnorm, sfsmisc, readxl, writexl,
+        haven, openxlsx, officer, jsonlite
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2026-07-17 09:53:17 UTC; makunxiang
+Author: Kunxiang Ma [aut, cre],
+  WEIAN DATA TECH (Beijing) Co., Ltd. [cph, fnd]
+Maintainer: Kunxiang Ma <makunxiang@weiandata.com>
+Repository: CRAN
+Date/Publication: 2026-07-24 10:30:22 UTC

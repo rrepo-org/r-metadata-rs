@@ -1,0 +1,33 @@
+Package: calcal
+Title: Calendrical Calculations
+Version: 1.0.4
+Authors@R: c(
+  person("Rob", "Hyndman", email="Rob.Hyndman@monash.edu", role=c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-2140-5352")),
+  person("Edward","Reingold", role = c("cph", "ctb"), comment = "Original Lisp code"),
+  person("Nachum","Dershowitz", role = c("cph", "ctb"), comment = "Original Lisp code")
+  )
+Description: An R implementation of the algorithms described in Reingold and
+    Dershowitz (4th ed., Cambridge University Press, 2018) <doi:10.1017/9781107415058>,
+    allowing conversion between many different calendar systems. Cultural and religious holidays
+    from several calendars can be calculated.
+License: Apache License (>= 2)
+ByteCompile: TRUE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: vctrs
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tibble
+Config/testthat/edition: 3
+URL: https://pkg.robjhyndman.com/calcal/,
+        https://github.com/robjhyndman/calcal
+VignetteBuilder: knitr
+BugReports: https://github.com/robjhyndman/calcal/issues
+NeedsCompilation: no
+Packaged: 2026-02-27 23:26:40 UTC; hyndman
+Author: Rob Hyndman [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-2140-5352>),
+  Edward Reingold [cph, ctb] (Original Lisp code),
+  Nachum Dershowitz [cph, ctb] (Original Lisp code)
+Maintainer: Rob Hyndman <Rob.Hyndman@monash.edu>
+Repository: CRAN
+Date/Publication: 2026-02-28 23:30:08 UTC

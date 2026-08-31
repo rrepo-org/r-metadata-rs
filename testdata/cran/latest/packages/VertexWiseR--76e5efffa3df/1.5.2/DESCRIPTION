@@ -1,0 +1,43 @@
+Package: VertexWiseR
+Title: Simplified Vertex-Wise Analyses of Whole-Brain and Subcortical
+        Surface
+Version: 1.5.2
+Date: 2026-06-25
+Authors@R: c(
+    person("Junhong", "Yu", , "junhong.yu@ntu.edu.sg", role = "aut",
+           comment = c(ORCID = "0000-0002-2563-9658")),
+    person("Charly", "Billaud", , "charly.billaud@ntu.edu.sg", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-3466-9963"))
+  )
+Maintainer: Charly Billaud <charly.billaud@ntu.edu.sg>
+Description: Provides functions to run statistical analyses on
+    surface-based neuroimaging data, computing measures including cortical
+    thickness and surface area of the whole-brain and of the hippocampi.
+    It can make use of 'FreeSurfer', 'fMRIprep', 'XCP-D', 'HCP' and 'CAT12' 
+    preprocessed datasets, 'HippUnfold' hippocampal outputs and 
+    'SubCortexMesh' subcortical outputs for a given sample by 
+    restructuring the data values into a single file. The single file can 
+    then be used by the package for analyses independently from its base
+    dataset and without need for its access.
+License: GPL-3
+URL: https://cogbrainhealthlab.github.io/VertexWiseR/
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+SystemRequirements: Miniconda3 (v24.9.2), Python (<= v3.12), BrainStat
+        (v0.4.2), vtk (v9.3.1), numpy (<= v1.26.4), nilearn (<=
+        v0.12.0), netneurotools (<= v0.2.5)
+Depends: R (>= 4.0.0)
+Imports: doParallel, doSNOW, foreach, freesurferformats, fs, gifti,
+        grDevices, grid, igraph, methods, parallel, plotly, png,
+        rappdirs, RColorBrewer, reticulate, stats, stringr, tools,
+        utils
+NeedsCompilation: no
+Packaged: 2026-06-25 02:35:38 UTC; charly.billaud
+Author: Junhong Yu [aut] (ORCID: <https://orcid.org/0000-0002-2563-9658>),
+  Charly Billaud [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-3466-9963>)
+Repository: CRAN
+Date/Publication: 2026-06-25 06:00:02 UTC

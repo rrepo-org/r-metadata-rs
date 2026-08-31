@@ -1,0 +1,44 @@
+Package: gtfsrealtime
+Title: Read GTFS-Realtime Files into Data Frames
+Version: 0.2.1
+Authors@R: c( 
+    person("Matthew", "Bhagat-Conway", , "mwbc@unc.edu", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-1210-2982")),
+    person(
+        given = "Matthew",
+        family = "Palm",
+        role = c("ctb", "cph"),
+        comment = c(ORCID = "0000-0002-8800-2777")
+    ),
+    person(
+        given = "The GTFS-realtime authors and the authors of bundled Rust crates",
+        role = c("ctb", "cph"),
+        comment = "See inst/AUTHORS.md for information on bundled dependencies and their licensing and copyright status."))
+Description: GTFS-realtime is a format transit agencies use to provide current vehicle positions, predicted
+    arrival times, and service alerts. This package provides efficient functions to read this format into
+    data frames. It can be used to retrieve current data or to process archived data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/rextendr/version: 0.4.2
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.88.0, xz
+Depends: R (>= 4.2)
+Imports: cli, sf
+Suggests: knitr, rmarkdown, ggplot2, data.table, purrr, gifski,
+        lubridate, dplyr, tidyr, testthat (>= 3.3.0), jsonlite,
+        tidyselect, tibble, stringr
+BugReports: https://github.com/mattwigway/gtfsrealtime-r/issues
+VignetteBuilder: knitr
+URL: http://projects.indicatrix.org/gtfsrealtime-r/
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-05-27 13:49:34 UTC; runner
+Author: Matthew Bhagat-Conway [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1210-2982>),
+  Matthew Palm [ctb, cph] (ORCID:
+    <https://orcid.org/0000-0002-8800-2777>),
+  The GTFS-realtime authors and the authors of bundled Rust crates [ctb,
+    cph] (See inst/AUTHORS.md for information on bundled dependencies
+    and their licensing and copyright status.)
+Maintainer: Matthew Bhagat-Conway <mwbc@unc.edu>
+Repository: CRAN
+Date/Publication: 2026-06-12 19:30:08 UTC

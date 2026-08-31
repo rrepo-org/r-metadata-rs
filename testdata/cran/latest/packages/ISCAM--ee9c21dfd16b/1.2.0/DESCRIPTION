@@ -1,0 +1,35 @@
+Package: ISCAM
+Title: Companion to the Book "Investigating Statistical Concepts,
+        Applications, and Methods"
+Version: 1.2.0
+Authors@R: c(
+    person("Beth", "Chance", , "bchance@calpoly.edu", role = c("cre", "aut", "cph")),
+    person("Visruth", "Srimath Kandali", , "public@visruth.com", role = "aut",
+           comment = c(ORCID = "0009-0005-9097-0688"))
+  )
+Description: Introductory statistics methods to accompany "Investigating
+    Statistical Concepts, Applications, and Methods" (ISCAM) by Beth
+    Chance & Allan Rossman (2024) <https://rossmanchance.com/iscam4/>.
+    Tools to introduce statistical concepts with a focus on simulation
+    approaches. Functions are verbose, designed to provide ample output
+    for students to understand what each function does. Additionally, most
+    functions are accompanied with plots. The package is designed to be
+    used in an educational setting alongside the ISCAM textbook.
+License: MIT + file LICENSE
+URL: https://iscam4.github.io/ISCAM/, https://github.com/ISCAM4/ISCAM
+BugReports: https://github.com/ISCAM4/ISCAM/issues
+Depends: R (>= 3.5)
+Imports: graphics, stats
+Suggests: testthat (>= 3.0.0), usethis, vdiffr (>= 1.0.8)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-11 21:27:01 UTC; visru
+Author: Beth Chance [cre, aut, cph],
+  Visruth Srimath Kandali [aut] (ORCID:
+    <https://orcid.org/0009-0005-9097-0688>)
+Maintainer: Beth Chance <bchance@calpoly.edu>
+Repository: CRAN
+Date/Publication: 2026-02-12 09:50:16 UTC

@@ -1,0 +1,34 @@
+Package: statcanR
+Type: Package
+Title: Client for Statistics Canada's Open Economic Data
+Version: 0.3.9
+Authors@R: c(
+    person("Thierry", "Warin", email = "thierry.warin@hec.ca",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5921-3428")))
+Description: Provides an R client for Statistics Canada's Web Data Service.
+    Users can describe the data they need in natural language, search the
+    official table catalogue, and download complete data tables in English or
+    French as data frames. Tables formerly known as CANSIM tables are
+    identified by Product IDs. Warin (2024)
+    <doi:10.5070/T5.1868>.
+Depends: R (>= 4.0.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Imports: data.table, jsonlite, DT, httr
+URL: https://warint.github.io/statcanR/,
+        https://github.com/warint/statcanR
+BugReports: https://github.com/warint/statcanR/issues
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-25 04:54:49 UTC; warint
+Author: Thierry Warin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5921-3428>)
+Maintainer: Thierry Warin <thierry.warin@hec.ca>
+Repository: CRAN
+Date/Publication: 2026-07-25 05:10:02 UTC

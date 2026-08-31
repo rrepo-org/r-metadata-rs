@@ -1,0 +1,59 @@
+Package: TemporalModelR
+Type: Package
+Title: Temporally Explicit Species Distribution Modelling
+Version: 0.3.0
+Authors@R: c(
+    person(
+      "Connor", "Hughes",
+      email = "connorhughes926@gmail.com",
+      role  = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-3720-0837")
+    ),
+    person(
+      "Mariana", "Castaneda-Guzman",
+      email = "mcguzman1997@gmail.com",
+      role  = c("aut"), 
+      comment = c(ORCID = "0000-0001-6106-4284")
+    ),
+    person(
+      "Luis", "E. Escobar",
+      role  = c("aut"),
+      comment = c(ORCID = "0000-0001-5735-2750")
+    )
+  )
+Description: Increases the ease of implementing a temporally-explicit modeling
+    methodology when building ecological niche and species distribution models.
+    Provides functions to assist with three major steps of temporally-explicit
+    models: (i) preprocessing species and environmental data and generating
+    suitable background or pseudoabsence data, (ii) building a niche model and
+    generating temporally-explicit predictions from that model, and (iii) model
+    postprocessing to explore spatiotemporal trends in model predictions.
+    Methodological and theoretical foundations are described in Ingenloff and
+    Peterson (2021) <doi:10.1111/2041-210X.13564>, Franklin (2010, ISBN:9780521700023), 
+    Peterson et al. (2011, ISBN:9780691136882), Blonder (2018) <doi:10.1111/ecog.03187>, 
+    Senay et al. (2013) <doi:10.1371/journal.pone.0071218>, and Li and Zhang (2024) <doi:10.48550/arXiv.2404.05933>.
+URL: https://github.com/CJHughes926/TemporalModelR,
+        https://cjhughes926.github.io/TemporalModelR/
+BugReports: https://github.com/CJHughes926/TemporalModelR/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1)
+Imports: deldir, graphics, grDevices, sf, stats, terra, tools, utils,
+        exactextractr
+Suggests: fastcpd, ggplot2, hypervolume, knitr, mgcv, randomForest,
+        RColorBrewer, rmarkdown, scatterpie
+VignetteBuilder: knitr
+Language: en-US
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-06-30 17:03:53 UTC; Conno
+Author: Connor Hughes [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3720-0837>),
+  Mariana Castaneda-Guzman [aut] (ORCID:
+    <https://orcid.org/0000-0001-6106-4284>),
+  Luis E. Escobar [aut] (ORCID: <https://orcid.org/0000-0001-5735-2750>)
+Maintainer: Connor Hughes <connorhughes926@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-02 07:20:24 UTC

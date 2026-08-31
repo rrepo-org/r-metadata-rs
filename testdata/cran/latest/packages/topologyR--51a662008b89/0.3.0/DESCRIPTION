@@ -1,0 +1,31 @@
+Package: topologyR
+Type: Package
+Title: Topological Connectivity Analysis for Numeric Data
+Version: 0.3.0
+Authors@R: 
+    person(given = "José Mauricio", family = "Gómez Julián",
+           email = "isadore.nabi@pm.me", role = c("aut", "cre"))
+Description: Topological data analysis methods based on graph-theoretic
+    approaches for discovering topological structures in data. Constructs
+    topological spaces from graphs following Nada et al. (2018)
+    <doi:10.1002/mma.4726>, with visibility graph construction for time
+    series following Lacasa et al. (2008) <doi:10.1073/pnas.0709247105>.
+    Supports directed visibility graphs for bitopological analysis of
+    temporal irreversibility (Kelly, 1963), and Alexandrov topology
+    construction from reachability preorders.
+License: MIT + file LICENSE
+URL: https://github.com/IsadoreNabi/topologyR
+BugReports: https://github.com/IsadoreNabi/topologyR/issues
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: ggplot2, Rcpp, stats, utils
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-19 17:16:27 UTC; josemgomezj
+Author: José Mauricio Gómez Julián [aut, cre]
+Maintainer: José Mauricio Gómez Julián <isadore.nabi@pm.me>
+Repository: CRAN
+Date/Publication: 2026-08-20 00:20:02 UTC

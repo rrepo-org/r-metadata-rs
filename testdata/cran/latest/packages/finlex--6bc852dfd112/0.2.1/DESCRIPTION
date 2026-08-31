@@ -1,0 +1,29 @@
+Package: finlex
+Title: Access Open Data from the Finnish 'Finlex' Legislative Database
+Version: 0.2.1
+Authors@R: 
+    person("Kristian", "Vepsäläinen", , "kristian.vepsalainen@proton.me", role = c("aut", "cre"))
+Description: Provides functions to retrieve and structure Finnish
+    legislative data made available through the 'Finlex' Open Data API
+    (<https://www.finlex.fi/en/open-data>). Functions cover retrieval of
+    statute catalogues, statute titles, structured statute metadata, and
+    cross-references between amending and amended statutes, returned as
+    tidy tibbles for further analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+URL: https://github.com/KristianVepsalainen/finlex,
+        http://kristianvepsalainen.com/finlex/
+BugReports: https://github.com/KristianVepsalainen/finlex/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, httr2, tibble, xml2
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.1.4), pkgdown
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-25 18:46:45 UTC; kristianvepsalainen
+Author: Kristian Vepsäläinen [aut, cre]
+Maintainer: Kristian Vepsäläinen <kristian.vepsalainen@proton.me>
+Repository: CRAN
+Date/Publication: 2026-08-25 22:10:07 UTC

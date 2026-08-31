@@ -1,0 +1,35 @@
+Package: fanc
+Type: Package
+Title: Penalized Likelihood Factor Analysis via Nonconvex Penalty
+Version: 2.4.0
+Date: 2026-07-26
+Authors@R: 
+    c(person(given = "Kei",
+             family = "Hirose",
+             role = c("aut", "cre"),
+             email = "mail@keihirose.com",
+             comment = c(ORCID = "0000-0001-9827-0356")),
+      person(given = "Michio",
+             family = "Yamamoto",
+             role = "aut",
+             email = "yamamoto.michio.hus@osaka-u.ac.jp"),
+      person(given = "Haruhisa",
+             family = "Nagata",
+             role = "aut"))
+Depends: Matrix
+Imports: grDevices, graphics, stats, utils
+Description: Computes the penalized maximum likelihood estimates of factor loadings and unique variances for various tuning parameters. The pathwise coordinate descent along with EM algorithm is used.  This package also includes a graphical tool which outputs path diagrams, heatmaps, goodness-of-fit indices and model selection criteria for each regularization parameter (Yamamoto, M., Hirose, K. and Nagata, H., 2017 <doi:10.1007/s41237-016-0007-3>). The user can change the regularization parameter interactively with a built-in self-contained HTML viewer (no additional packages required), which is helpful to find a suitable value of regularization parameter. As a penalty, we can choose either the minimax concave penalty (Hirose, K. and Yamamoto, M., 2015 <doi:10.1007/s11222-014-9458-0>; Hirose, K. and Yamamoto, M., 2014 <doi:10.1016/j.csda.2014.05.011>) or the product-based elastic net penalty (Hirose, K. and Terada, Y., 2023 <doi:10.1007/s11336-022-09868-4>).
+License: GPL (>= 2)
+URL: https://doi.org/10.1007/s11222-014-9458-0,
+        https://doi.org/10.1016/j.csda.2014.05.011,
+        https://doi.org/10.1007/s41237-016-0007-3,
+        https://doi.org/10.1007/s11336-022-09868-4,
+        https://keihirose.com
+NeedsCompilation: yes
+Packaged: 2026-07-26 06:40:46 UTC; hirosekei
+Author: Kei Hirose [aut, cre] (ORCID: <https://orcid.org/0000-0001-9827-0356>),
+  Michio Yamamoto [aut],
+  Haruhisa Nagata [aut]
+Maintainer: Kei Hirose <mail@keihirose.com>
+Repository: CRAN
+Date/Publication: 2026-07-26 07:10:02 UTC

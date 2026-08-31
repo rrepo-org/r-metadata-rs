@@ -1,0 +1,39 @@
+Package: modelSelection
+Type: Package
+Version: 1.0.7
+Date: 2026-05-16
+Title: High-Dimensional Model Selection
+Authors@R: c(person(given = "David", family = "Rossell", role = c("aut", "cre"), email = "rosselldavid@gmail.com"), person(given = c("John", "D."), family = "Cook", role = "ctb"), person(given = "Donatello", family = "Telesca", role = "aut"), person(given = "P.", family = "Roebuck", role = "ctb"), person(given = "Oriol", family = "Abril", role = "aut"), person(given = "Miquel", family = "Torrens", role = "aut"), person(given = "Peter", family = "Mueller", role = "ctb"), person(given = "William", family = "Hallahan", role = "ctb"))
+Maintainer: David Rossell <rosselldavid@gmail.com>
+Depends: R (>= 2.14.0), methods
+Suggests: parallel, testthat, patrick
+biocViews:
+Imports: Rcpp (>= 0.12.16), dplyr, glmnet, intervals, L0Learn, Matrix,
+        mclust, mgcv, mvtnorm, ncvreg, pracma, sparseMatrixStats,
+        survival
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen
+Description: Model selection and averaging for regression, generalized linear models, generalized additive models, graphical models and mixtures, focusing on Bayesian model selection and information criteria (Bayesian information criterion etc.). See Rossell (2025) <doi:10.5281/zenodo.17119597> (see the URL field below for its URL) for a hands-on book describing the methods, examples and suggested citations if you use the package.
+License: GPL (>= 2)
+URL: https://github.com/davidrusi/modelSelection,
+        https://github.com/davidrusi/modelSelection-book
+BugReports: https://github.com/davidrusi/modelSelection/issues
+LazyLoad: yes
+Collate: AllClasses.R AllGenerics.R alapl.R bms_ortho.R cil.R cox.R
+        derivatives_nlps.R distribs.R dmom.R eBayes.R gam.R ggm.R
+        greedyGLM.R infocriteria.R initParameters.R localnulltest.R
+        marginalLikelihood.R msPriorSpec.R modelsearch.R
+        modelSelection.R modelSelectionGLM.R mombf.R normaliwish.R
+        normmix.R postMode.R rmom.R RcppExports.R testfunction.R
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-05-16 06:00:53 UTC; u138097
+Author: David Rossell [aut, cre],
+  John D. Cook [ctb],
+  Donatello Telesca [aut],
+  P. Roebuck [ctb],
+  Oriol Abril [aut],
+  Miquel Torrens [aut],
+  Peter Mueller [ctb],
+  William Hallahan [ctb]
+Repository: CRAN
+Date/Publication: 2026-05-16 14:50:02 UTC

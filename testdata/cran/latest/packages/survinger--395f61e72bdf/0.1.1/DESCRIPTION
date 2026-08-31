@@ -1,0 +1,35 @@
+Package: survinger
+Title: Design-Adjusted Inference for Pathogen Lineage Surveillance
+Version: 0.1.1
+Authors@R: 
+    person("Cuiwei", "Gao", , "48gaocuiwei@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: Provides tools for optimizing sequencing resource allocation
+    and estimating pathogen lineage prevalence under real-world genomic
+    surveillance conditions. Implements constrained allocation optimization
+    for limited sequencing capacity across multiple regions and sample
+    sources. Includes Horvitz-Thompson and post-stratified estimators that
+    account for unequal sequencing rates, delay-adjusted nowcasting for
+    right-censored reporting data, and combined design-weighted
+    delay-corrected inference with uncertainty propagation.
+License: MIT + file LICENSE
+URL: https://github.com/CuiweiG/survinger
+BugReports: https://github.com/CuiweiG/survinger/issues
+Depends: R (>= 4.1.0)
+Imports: checkmate (>= 2.0.0), cli (>= 3.0.0), dplyr (>= 1.1.0),
+        generics, ggplot2 (>= 3.4.0), methods, purrr, rlang (>= 1.0.0),
+        stats, tibble
+Suggests: MASS, Matrix, nloptr (>= 2.0.0), survey, tidyr, vctrs, covr,
+        knitr, rmarkdown, scales, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-04 09:58:36 UTC; openclaw
+Author: Cuiwei Gao [aut, cre, cph]
+Maintainer: Cuiwei Gao <48gaocuiwei@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-05 11:10:02 UTC

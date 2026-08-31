@@ -1,0 +1,29 @@
+Package: snreg
+Type: Package
+Title: Regression with Skew-Normally Distributed Error Term
+Version: 1.2.0
+Date: 2026-01-31
+Authors@R: c(
+    person("Oleg", "Badunenko", email = "Oleg.Badunenko@brunel.ac.uk", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-7216-0861")
+    ),
+    person("John", "Burkardt", role = c("ctb", "cph"), 
+           comment = "Author of C code for Owen T function")
+  )
+Maintainer: Oleg Badunenko <Oleg.Badunenko@brunel.ac.uk>
+Description: Models with skew‑normally distributed and thus asymmetric error terms, implementing the methods developed in Badunenko and Henderson (2023) "Production analysis with asymmetric noise" <doi:10.1007/s11123-023-00680-5>. The package provides tools to estimate regression models with skew‑normal error terms, allowing both the variance and skewness parameters to be heteroskedastic. It also includes a stochastic frontier framework that accommodates both i.i.d. and heteroskedastic inefficiency terms.
+URL: https://olegbadunenko.github.io/snreg/
+Imports: Formula, npsf
+License: GPL-3
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-02-03 16:41:02 UTC; boo
+Author: Oleg Badunenko [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7216-0861>),
+  John Burkardt [ctb, cph] (Author of C code for Owen T function)
+Repository: CRAN
+Date/Publication: 2026-02-06 14:20:13 UTC

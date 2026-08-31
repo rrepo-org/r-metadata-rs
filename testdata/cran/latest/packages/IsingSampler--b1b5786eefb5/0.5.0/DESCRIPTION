@@ -1,0 +1,27 @@
+Package: IsingSampler
+Type: Package
+Title: Sampling Methods and Distribution Functions for the Ising Model
+Version: 0.5.0
+Authors@R: c(
+  person("Sacha", "Epskamp", email = "mail@sachaepskamp.com",role = c("aut", "cre")),
+  person("Jesse", "Boot", role = c("ctb")),
+  person("Adela Maria", "Isvoranu", email = "isvoranu.adela@gmail.com", role = c("ctb"))
+  )
+Maintainer: Sacha Epskamp <mail@sachaepskamp.com>
+Description: Sample states from the Ising model and compute the probability of
+    states. Sampling can be done for any number of nodes, but due to the
+    intractability of the Ising model the distribution can only be computed up
+    to roughly 10 nodes. The Blume-Capel model, an Ising model with an
+    additional on-site quadratic (crystal-field) term, is also supported.
+License: GPL-2
+Imports: Rcpp (>= 0.10.4), plyr, magrittr, nnet, dplyr
+Depends: R (>= 3.0.0)
+LinkingTo: Rcpp
+URL: https://github.com/SachaEpskamp/IsingSampler
+NeedsCompilation: yes
+Packaged: 2026-07-16 03:04:33 UTC; sachaepskamp
+Author: Sacha Epskamp [aut, cre],
+  Jesse Boot [ctb],
+  Adela Maria Isvoranu [ctb]
+Repository: CRAN
+Date/Publication: 2026-07-16 07:50:02 UTC

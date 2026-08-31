@@ -1,0 +1,34 @@
+Type: Package
+Package: estimateW
+Title: Estimation of Spatial Weight Matrices
+Version: 0.2.0
+Authors@R: c(
+    person("Tamas", "Krisztin", , "krisztin@iiasa.ac.at", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9241-8628")),
+    person("Philipp", "Piribauer", , "philipp.piribauer@wifo.ac.at", role = "aut",
+           comment = c(ORCID = "0000-0002-3414-3101"))
+  )
+Author: Tamas Krisztin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9241-8628>),
+  Philipp Piribauer [aut] (ORCID:
+    <https://orcid.org/0000-0002-3414-3101>)
+Maintainer: Tamas Krisztin <krisztin@iiasa.ac.at>
+Description: Bayesian estimation of spatial weight matrices in spatial
+    econometric panel models. Allows for estimation of spatial
+    autoregressive (SAR), spatial error (SEM), spatial Durbin (SDM),
+    spatial error Durbin (SDEM) and spatially lagged explanatory variable
+    (SLX) type specifications featuring an unknown spatial weight matrix.
+    Methodological details are given in Krisztin and Piribauer (2022)
+    <doi:10.1080/17421772.2022.2095426>.
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+Imports: graphics, Matrix, matrixcalc, plot.matrix, R6, stats, utils
+Encoding: UTF-8
+Language: EN-US
+Date: 2026-03-13
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-03-13 10:09:19 UTC; tamaskrisztin
+Repository: CRAN
+Date/Publication: 2026-03-13 10:20:02 UTC

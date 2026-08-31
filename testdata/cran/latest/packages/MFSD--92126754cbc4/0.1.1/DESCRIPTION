@@ -1,0 +1,47 @@
+Package: MFSD
+Type: Package
+Title: Multivariate Functional Spatial Data
+Version: 0.1.1
+Authors@R: 
+    c(
+      person("SI-AHMED","IDRIS",
+             role=c("aut","cre"),
+             email="i_siahmed@esi.dz"),
+      person("Thomas","Kuenzer",
+             role="ctb",
+             comment="Code adapted from the fsd package"),
+      person("Judith AGONKOUI","Christelle",
+             role="ctb",
+             email="christelle.agonkoui@imsp-uac.org"),
+      person("HAMDAD","Leila",
+             role="ctb",
+             email="l_hamdad@esi.dz"),
+      person("DABO-NIANG","Sophie",
+             role="ctb",
+             email="sophie.dabo@univ-lille.fr")
+    )
+Description: Analysis of multivariate functional spatial data, 
+             including spectral multivariate functional principal 
+             component analysis and related statistical procedures 
+             (Si-Ahmed, Idris, et al. "Principal component analysis of multivariate spatial functional data." Big Data Research 39 (2025) 100504).
+             (Kuenzer, T., Hörmann, S., & Kokoszka, P. (2021). "Principal component analysis of spatially indexed functions." Journal of the American Statistical Association, 116(535), 1444-1456.)
+             (Happ, C., & Greven, S. (2018). "Multivariate functional principal component analysis for data observed on different (dimensional) domains." Journal of the American Statistical Association, 113(522), 649-659.)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: fda, graphics, mvtnorm, Rcpp (>= 1.0.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2026-04-18 18:30:00 UTC; User
+Author: SI-AHMED IDRIS [aut, cre],
+  Thomas Kuenzer [ctb] (Code adapted from the fsd package),
+  Judith AGONKOUI Christelle [ctb],
+  HAMDAD Leila [ctb],
+  DABO-NIANG Sophie [ctb]
+Maintainer: SI-AHMED IDRIS <i_siahmed@esi.dz>
+Repository: CRAN
+Date/Publication: 2026-04-20 23:20:02 UTC

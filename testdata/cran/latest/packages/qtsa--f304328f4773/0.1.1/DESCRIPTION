@@ -1,0 +1,31 @@
+Package: qtsa
+Title: Quantum Time Series Analysis: Drift, Noise Spectroscopy and
+        Calibration Forecasting
+Version: 0.1.1
+Author: Leila Marvian Mashhad [aut, cre]
+Maintainer: Leila Marvian Mashhad <leila.marveian@gmail.com>
+Authors@R: person("Leila", "Marvian Mashhad", email = "leila.marveian@gmail.com", role = c("aut", "cre"))
+Description: Tools for exploratory statistical analysis of quantum-hardware
+    calibration time series. The package provides simulators for random
+    telegraph noise (RTN), power-law noise, and Ornstein-Uhlenbeck dephasing;
+    Welch and sine-multitaper power spectral density estimators; a lightweight
+    two-state hidden Markov model for switching signals; cumulative sum
+    (CUSUM) and binary-segmentation diagnostics for calibration drift;
+    residual-quantile interval forecasts; and filter-function calculations for
+    illustrative coherence curves. The package includes a reproducible
+    generator of simulated superconducting-qubit calibration records; it does
+    not retrieve authenticated live provider data. Methodological background
+    is provided by Welch (1967) <doi:10.1109/TAU.1967.1161901>, Thomson (1982)
+    <doi:10.1109/PROC.1982.12433>, Rabiner (1989) <doi:10.1109/5.18626>, Page
+    (1954) <doi:10.1093/biomet/41.1-2.100>, Paladino et al. (2014)
+    <doi:10.1103/RevModPhys.86.361>, and Cywinski et al. (2008)
+    <doi:10.1103/PhysRevB.77.174509>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, utils
+NeedsCompilation: no
+Packaged: 2026-07-28 17:03:42 UTC; user
+Repository: CRAN
+Date/Publication: 2026-08-06 13:10:09 UTC

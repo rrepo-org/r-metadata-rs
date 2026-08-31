@@ -1,0 +1,44 @@
+Package: TemporalForest
+Title: Network-Guided Temporal Forests for Feature Selection in
+        High-Dimensional Longitudinal Data
+Version: 0.1.4
+Authors@R: c(
+    person("Sisi", "Shao",
+           email = "sisishao@g.ucla.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-9783-9205")),
+    person("Jason H.", "Moore",
+           email = "Jason.Moore@csmc.edu",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-5015-1099")),
+    person("Christina M.", "Ramirez",
+           email = "cr@ucla.edu",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-8435-0416"))
+    )
+Description: Implements the Temporal Forest algorithm for feature selection in 
+    high-dimensional longitudinal data. The method combines time-aware network 
+    construction via weighted gene co-expression network analysis (WGCNA), module-based feature screening, and stability 
+    selection using tree-based models. This package provides tools for 
+    reproducible longitudinal analysis, closely following the methodology 
+    described in Shao, Moore, and Ramirez (2025) <https://github.com/SisiShao/TemporalForest>.
+License: MIT + file LICENSE
+URL: https://github.com/SisiShao/TemporalForest
+BugReports: https://github.com/SisiShao/TemporalForest/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: WGCNA, dynamicTreeCut, flashClust, glmertree, partykit, stats,
+        graphics, grDevices,
+Suggests: knitr, rmarkdown, igraph, Matrix, MASS
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-17 08:48:16 UTC; sisishao
+Author: Sisi Shao [aut, cre] (ORCID: <https://orcid.org/0009-0000-9783-9205>),
+  Jason H. Moore [aut] (ORCID: <https://orcid.org/0000-0002-5015-1099>),
+  Christina M. Ramirez [aut] (ORCID:
+    <https://orcid.org/0000-0002-8435-0416>)
+Maintainer: Sisi Shao <sisishao@g.ucla.edu>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-12-22 17:30:02 UTC

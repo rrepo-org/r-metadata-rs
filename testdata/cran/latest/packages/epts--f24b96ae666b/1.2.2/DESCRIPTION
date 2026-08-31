@@ -1,0 +1,29 @@
+Package: epts
+Type: Package
+Title: Educational Platform Trials Simulator
+Version: 1.2.2
+Authors@R: c(
+  person(given = "Mohammad", family = "Sayari", role = c("aut", "cre"),
+         email = "md.sayari13@gmail.com"),
+  person(given = "Akansha", family = "Singh", role = "aut"),
+  person(given = "Germaine", family = "Uwimpuhwe", role = "aut"),
+  person(given = "Jochen", family = "Einbeck", role = "aut"))
+Description: Simulating multi-arm cluster-randomized, multi-site, and simple randomized trials. Includes functions for conducting multilevel analyses using both Bayesian and Frequentist methods. Supports futility and superiority analyses through Bayesian approaches, along with visualization tools to aid interpretation and presentation of results.
+License: AGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 4.3.0)
+Imports: eefAnalytics, lme4, ggplot2, ggpubr, methods, graphics, stats,
+        mvtnorm, coda, MCMCvis, dplyr, magrittr, shiny
+NeedsCompilation: no
+Author: Mohammad Sayari [aut, cre],
+  Akansha Singh [aut],
+  Germaine Uwimpuhwe [aut],
+  Jochen Einbeck [aut]
+Maintainer: Mohammad Sayari <md.sayari13@gmail.com>
+Config/testthat/edition: 3
+Packaged: 2025-05-13 16:16:50 UTC; mdsay
+Repository: CRAN
+Date/Publication: 2025-05-20 08:00:02 UTC

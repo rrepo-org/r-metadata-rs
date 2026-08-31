@@ -1,0 +1,29 @@
+Package: arcopt
+Type: Package
+Title: Adaptive Regularization using Cubics for Optimization
+Version: 0.3.0
+Authors@R: c(
+    person("Marcus", "Waldman", email = "marcus.waldman@cuanschutz.edu",
+           role = c("aut", "cre")))
+Description: Implements cubic regularization methods (ARC) for local
+    optimization problems common in statistics and applied research. Provides
+    robust handling of ill-conditioned, nonconvex, and indefinite Hessian
+    problems with automatic saddle point escape. Supports box constraints;
+    linear equality constraints are planned for a future release.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/marcus-waldman/arcopt
+BugReports: https://github.com/marcus-waldman/arcopt/issues
+Depends: R (>= 4.1.0)
+Imports: Rcpp (>= 1.0.0), utils
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr, marqLevAlg,
+        trust
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-04-28 16:36:29 UTC; marcu
+Author: Marcus Waldman [aut, cre]
+Maintainer: Marcus Waldman <marcus.waldman@cuanschutz.edu>
+Repository: CRAN
+Date/Publication: 2026-04-29 08:10:10 UTC

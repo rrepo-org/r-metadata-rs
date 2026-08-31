@@ -1,0 +1,32 @@
+Package: blockstrap
+Title: Sample Dataframes by a Group
+Version: 1.0.0
+Authors@R: c(
+        person("Michael", "Lydeamore", , "michael.lydeamore@monash.edu", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-3980-268X")),
+        person("Cash", "Looi", , "cash.looi@monash.edu", role = c("aut"), comment = c("ORCID" = "0009-0002-7219-2753")),
+        person("Kenyon", "Ng", , "kenyon.ng@gmail.com", role = c("aut"), comment = c("ORCID" = "0000-0002-6315-9831")),
+        person("Mitchell", "O'Hara-Wild", , "mail@mitchelloharawild.com", role=c("aut"), comment=c(ORCID = "0000-0001-6729-7695"))
+        )
+Description: Sample dataframes by group, in the form of a 'block bootstrap'. Entire groups are returned allowing for a single 'observation' to span multiple rows of the dataframe.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Suggests: HospitalNetwork, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: dplyr, cli, rlang, vctrs
+VignetteBuilder: knitr
+URL: https://numbats.github.io/blockstrap/,
+        https://github.com/numbats/blockstrap
+BugReports: https://github.com/numbats/blockstrap/issues
+NeedsCompilation: no
+Packaged: 2026-01-28 03:08:13 UTC; mlyd0001
+Author: Michael Lydeamore [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3980-268X>),
+  Cash Looi [aut] (ORCID: <https://orcid.org/0009-0002-7219-2753>),
+  Kenyon Ng [aut] (ORCID: <https://orcid.org/0000-0002-6315-9831>),
+  Mitchell O'Hara-Wild [aut] (ORCID:
+    <https://orcid.org/0000-0001-6729-7695>)
+Maintainer: Michael Lydeamore <michael.lydeamore@monash.edu>
+Repository: CRAN
+Date/Publication: 2026-02-01 07:20:02 UTC

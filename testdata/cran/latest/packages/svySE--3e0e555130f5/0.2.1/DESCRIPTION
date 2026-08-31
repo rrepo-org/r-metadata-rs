@@ -1,0 +1,41 @@
+Package: svySE
+Type: Package
+Title: Sampling Error Estimation for Complex Surveys
+Version: 0.2.1
+Authors@R: 
+    person(
+        given = "Luis",
+        family = "Burgos",
+        email = "lburgoss1996@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(
+            ORCID = "0009-0008-8290-4228"
+        )
+    )
+Description: Estimates sampling errors and produces indicator tables for
+    complex survey data. Supports weighted totals, proportions, standard
+    errors, confidence intervals, coefficients of variation, design effects,
+    unweighted frequencies, grouped estimates, domain estimates, optional
+    stratification and clustering variables, and customizable exports to
+    '.xlsx' files. Survey estimation is based on design-based inference using
+    Taylor series linearization implemented in the 'survey' package (Lumley,
+    2004, <doi:10.18637/jss.v009.i08>; Lumley, 2010,
+    ISBN:9780470284308). The package provides a reproducible workflow for
+    official statistics, household surveys, and applied survey research.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.2.0)
+Imports: survey, openxlsx, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/lburgoss/svySE
+BugReports: https://github.com/lburgoss/svySE/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-31 16:55:14 UTC; encal154
+Author: Luis Burgos [aut, cre] (ORCID: <https://orcid.org/0009-0008-8290-4228>)
+Maintainer: Luis Burgos <lburgoss1996@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-31 18:20:02 UTC

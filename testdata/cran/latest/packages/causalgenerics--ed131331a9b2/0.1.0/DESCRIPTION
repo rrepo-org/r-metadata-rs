@@ -1,0 +1,36 @@
+Package: causalgenerics
+Title: Shared Generics for the 'r-causal' Ecosystem
+Version: 0.1.0
+Authors@R: 
+    person("Malcolm", "Barrett", , "malcolmbarrett@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-0299-5825"))
+Description: A home for the S3 generics shared across the 'r-causal'
+    ecosystem, including 'propensity', 'halfmoon', 'positively', and
+    'balancing'. Owning the generic definitions in one place lets those
+    packages register methods without masking one another when several are
+    attached at once. The generics cover inverse probability weighted
+    estimation, effective sample size, and the metadata carried by causal
+    weight vectors, and the package supplies the abstract causal weight
+    class and the result class those estimates are returned in, together
+    with the methods both classes carry, so that the ecosystem packages
+    inherit them rather than writing their own. The design follows that of
+    the 'generics' package, which provides commonly used S3 generics for
+    the same purpose: letting packages share a single definition instead
+    of each defining its own.
+License: MIT + file LICENSE
+URL: https://github.com/r-causal/causalgenerics,
+        https://r-causal.github.io/causalgenerics/
+BugReports: https://github.com/r-causal/causalgenerics/issues
+Depends: R (>= 4.1.0)
+Imports: stats, vctrs
+Suggests: testthat (>= 3.2.0), withr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-08-03 14:56:39 UTC; malcolmbarrett
+Author: Malcolm Barrett [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-0299-5825>)
+Maintainer: Malcolm Barrett <malcolmbarrett@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-08 12:20:07 UTC

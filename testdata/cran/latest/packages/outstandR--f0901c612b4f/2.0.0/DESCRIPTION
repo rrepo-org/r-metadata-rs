@@ -1,0 +1,45 @@
+Package: outstandR
+Title: Model-Based Standardisation for Indirect Treatment Comparison
+        with Limited Subject-Level Data
+Version: 2.0.0
+Authors@R: c(
+    person("Nathan", "Green", , "n.green@ucl.ac.uk", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-2745-1736", ROR = "02jx3x895")),
+    person("Chengyang", "Gao", , "chengyang.gao.15@ucl.ac.uk", role = "aut"),
+    person("Antonio", "Remiro-Azocar", , "antonio.remiro-azocar@bayer.com", role = "aut",
+           comment = c(ORCID = "0000-0002-7263-4251"))
+  )
+Description: 
+    For the problem of indirect treatment comparison with limited subject-level data, this 
+    package provides tools for model-based standardisation with several different computation approaches.
+        See Remiro‐Azócar A, Heath A, Baio G (2022) ``Parametric G‐computation for compatible
+        indirect treatment comparisons with limited individual patient data'',
+        Res. Synth. Methods, 1–31. ISSN 1759-2879, <doi:10.1002/jrsm.1565>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 4.1.0)
+Imports: boot, cli, copula, crayon, dplyr, ggplot2, glue, pillar,
+        purrr, rlang, rstanarm, stats, stringr, tibble, tidyr,
+        tidyselect, Rdpack (>= 0.7), lifecycle, withr
+Suggests: causaldata, covr, doSNOW, gridExtra, here, knitr, maicplus,
+        marginaleffects, MASS, parallel, reshape2, rmarkdown, stdReg2,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RdMacros: Rdpack
+URL: https://StatisticsHealthEconomics.github.io/outstandR/
+BugReports: https://github.com/StatisticsHealthEconomics/outstandR/issues/
+LazyData: false
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-10 06:59:18 UTC; Nathan
+Author: Nathan Green [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2745-1736>, ROR:
+    <https://ror.org/02jx3x895>),
+  Chengyang Gao [aut],
+  Antonio Remiro-Azocar [aut] (ORCID:
+    <https://orcid.org/0000-0002-7263-4251>)
+Maintainer: Nathan Green <n.green@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-06-10 08:40:08 UTC

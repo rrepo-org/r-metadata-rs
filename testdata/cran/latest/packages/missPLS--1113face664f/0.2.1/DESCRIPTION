@@ -1,0 +1,37 @@
+Package: missPLS
+Type: Package
+Title: Methods and Reproducible Workflows for Partial Least Squares
+        with Missing Data
+Version: 0.2.1
+Date: 2026-04-07
+Depends: R (>= 4.1.0)
+Imports: mice, plsRglm, stats, utils, VIM
+Suggests: bcv, knitr, mlbench, plsdof, rmarkdown, testthat (>= 3.0.0)
+Authors@R: c(
+    person("Titin Agustin", "Nengsih", role = "aut"),
+    person("Frederic", "Bertrand", role = c("aut", "cre"), email = "frederic.bertrand@lecnam.net"),
+    person("Myriam", "Maumy-Bertrand", role = "aut"))
+Author: Titin Agustin Nengsih [aut],
+  Frederic Bertrand [aut, cre],
+  Myriam Maumy-Bertrand [aut]
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
+Description: Methods-first tooling for reproducing and extending the
+    partial least squares regression studies on incomplete data described in
+    Nengsih et al. (2019) <doi:10.1515/sagmb-2018-0059>. The package
+    provides simulation helpers, missingness generators, imputation wrappers,
+    component-selection utilities, real-data diagnostics, and reproducible
+    study orchestration for Nonlinear Iterative Partial Least Squares (NIPALS)-Partial 
+    Least Squares (PLS) workflows.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+URL: https://fbertran.github.io/missPLS/,
+        https://github.com/fbertran/missPLS
+BugReports: https://github.com/fbertran/missPLS/issues
+NeedsCompilation: no
+Packaged: 2026-04-29 20:57:19 UTC; bertran7
+Repository: CRAN
+Date/Publication: 2026-04-30 07:50:09 UTC

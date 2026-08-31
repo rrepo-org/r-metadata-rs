@@ -1,0 +1,22 @@
+Package: igfetchr
+Type: Package
+Title: Access the 'IG Trading REST API'
+Version: 0.1.0
+Authors@R: person("Saw", "Simeon", email = "saw.s@ku.th", role = c("aut", "cre"))
+Maintainer: Saw Simeon <saw.s@ku.th>
+Description: Provides functions to fetch market data, search historical prices, execute trades, and get account details from the 'IG Trading REST API' <https://labs.ig.com>. Returns tidy tibbles for easy analysis. Trading contracts for difference (CFDs), options and spread bets carries a high risk of losing money. This package is not financial or trading advice.
+License: GPL-3
+Encoding: UTF-8
+Collate: 'igfetchr.R' 'igfetchr-package.R'
+Imports: httr, jsonlite, tibble, purrr
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, lubridate, httptest
+VignetteBuilder: knitr
+URL: https://github.com/sawsimeon/igfetchr,
+        https://sawsimeon.github.io/igfetchr/
+BugReports: https://github.com/sawsimeon/igfetchr/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-11-18 14:35:26 UTC; sawsimeon
+Author: Saw Simeon [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-11-21 15:00:08 UTC

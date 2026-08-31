@@ -1,0 +1,39 @@
+Package: xtbreakcoint
+Title: Panel Cointegration Tests with Structural Breaks
+Version: 1.0.4
+Date: 2026-03-09
+Authors@R: c(
+    person("Muhammad", "Alkhalaf", 
+           email = "muhammedalkhalaf@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-2677-9246")),
+    person("Anindya", "Banerjee", role = "ctb",
+           comment = "Original GAUSS code"),
+    person("Josep Lluis", "Carrion-i-Silvestre", role = "ctb",
+           comment = "Original GAUSS code"))
+Description: Implements panel cointegration tests allowing for structural breaks
+    and cross-section dependence following the methodology of Banerjee and
+    Carrion-i-Silvestre (2015) <doi:10.1002/jae.2348>. The package provides
+    iterative factor-break estimation, individual ADF tests on defactored
+    residuals, standardized panel test statistics, and the Bai and Ng (2004)
+    <doi:10.1111/j.1468-0262.2004.00528.x> MQ test for identifying common
+    stochastic trends. Supports five model specifications with varying
+    deterministic components and break structures.
+License: GPL-3
+URL: https://github.com/muhammedalkhalaf/xtbreakcoint
+BugReports: https://github.com/muhammedalkhalaf/xtbreakcoint/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-09 17:54:28 UTC; acad_
+Author: Muhammad Alkhalaf [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-2677-9246>),
+  Anindya Banerjee [ctb] (Original GAUSS code),
+  Josep Lluis Carrion-i-Silvestre [ctb] (Original GAUSS code)
+Maintainer: Muhammad Alkhalaf <muhammedalkhalaf@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-16 16:00:03 UTC

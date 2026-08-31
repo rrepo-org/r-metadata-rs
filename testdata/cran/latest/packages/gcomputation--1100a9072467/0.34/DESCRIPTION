@@ -1,0 +1,21 @@
+Package: gcomputation
+Type: Package
+Title: Causal Inference by using G-Computation
+Version: 0.34
+Depends: R (>= 4.0.0), survival, hdnom, glmnet, MASS, mice
+Imports: graphics, utils, methods, grDevices, stats
+Description: Several functions and S3 methods for G-computation and emulation of clinical trials. It allows for flexible estimation of the outcome model, especially  penalized regressions (Lasso, Ridge, or Elasticnet) for binary, continuous, counting, or right-censored time-to-event outcomes. Average treatment effect among the entire population (ATE) or among the treated population (ATT) can be estimated. The method for time-to-events is described by Chatton et al. (2020) <doi:10.1038/s41598-020-65917-x>.  For a binary outcome, details are available in the paper proposed by Chatton et al. (2022) <doi:10.1177/09622802211047345>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyLoad: yes
+NeedsCompilation: no
+Maintainer: Yohann Foucher <yohann.foucher@univ-poitiers.fr>
+BugReports: https://github.com/chupverse/gcomputation/issues
+Authors@R: c(person("Yohann", "Foucher", role = c("aut", "cre"), email = "yohann.foucher@univ-poitiers.fr", comment = c(ORCID = "0000-0003-0330-7457")), person("Joe", "De Keizer", role = "aut", email = "joe.de.keizer@univ-poitiers.fr", comment = c(ORCID = "0000-0003-0821-4540")) )
+RoxygenNote: 7.3.3
+Packaged: 2026-05-06 13:05:33 UTC; foucher-y
+Author: Yohann Foucher [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0330-7457>),
+  Joe De Keizer [aut] (ORCID: <https://orcid.org/0000-0003-0821-4540>)
+Repository: CRAN
+Date/Publication: 2026-05-11 19:20:02 UTC

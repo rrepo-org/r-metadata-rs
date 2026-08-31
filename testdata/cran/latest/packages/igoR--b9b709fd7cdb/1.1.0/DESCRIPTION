@@ -1,0 +1,44 @@
+Package: igoR
+Title: Access the Intergovernmental Organizations ('IGO') Database
+Version: 1.1.0
+Authors@R: c(
+    person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8457-4658")),
+    person("The Correlates of War Project", role = "cph",
+           comment = "for the data")
+  )
+Description: Provides tools for searching, extracting and recoding the
+    Intergovernmental Organizations ('IGO') Database (version 3),
+    distributed by the Correlates of War Project
+    <https://correlatesofwar.org/>. Includes 'IGO-year' and country-year
+    membership data, state system data and functions for deriving
+    'dyad-year' joint membership results. For a description of the data,
+    see Pevehouse, J. C. et al. (2020) <doi:10.1177/0022343319881175>.
+License: GPL (>= 3)
+URL: https://dieghernan.github.io/igoR/,
+        https://github.com/dieghernan/igoR
+BugReports: https://github.com/dieghernan/igoR/issues
+Depends: R (>= 4.1.0)
+Imports: stats
+Suggests: countrycode (>= 1.1.0), dplyr (>= 1.0.2), ggplot2, knitr,
+        quarto, testthat (>= 3.3.0)
+VignetteBuilder: quarto
+Config/Needs/website: dieghernan/gitdevr, reactable, giscoR, devtools,
+        remotes, cpp11, sessioninfo
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Copyright: © 2000-2021 by the Correlates of War. See file COPYRIGHTS.
+Encoding: UTF-8
+LazyData: true
+X-schema.org-keywords: r, igo, correlates-of-war,
+        intergovernmental-organisations, cran,
+        intergovernmental-organizations, r-package, rstats, cran-r
+NeedsCompilation: no
+Packaged: 2026-08-25 09:30:19 UTC; diego
+Author: Diego Hernangómez [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8457-4658>),
+  The Correlates of War Project [cph] (for the data)
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 09:50:12 UTC

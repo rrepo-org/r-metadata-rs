@@ -1,0 +1,40 @@
+Package: carts
+Type: Package
+Title: Simulation-Based Assessment of Covariate Adjustment in
+        Randomized Trials
+Version: 0.2.0
+Authors@R: c(person(given = "Benedikt",
+                    family = "Sommer",
+                    role = c("aut", "cre"),
+                    email = "benediktsommer92@gmail.com"),
+            person(given = "Klaus K.",
+                    family = "Holst",
+                    role = c("aut"),
+                    email = "klaus@holst.it"),
+             person(given = "Foroogh",
+                    family = "Shamsi",
+                    role = c("aut"),
+                    email = "foroogh.shamsi1@gmail.com"))
+Author: Benedikt Sommer [aut, cre],
+  Klaus K. Holst [aut],
+  Foroogh Shamsi [aut]
+Maintainer: Benedikt Sommer <benediktsommer92@gmail.com>
+Description: Monte Carlo simulation framework for different randomized clinical trial designs with a special emphasis on estimators based on covariate adjustment.
+License: MIT + file LICENSE
+Depends: R (>= 4.1), lava (>= 1.8.0)
+Imports: data.table (>= 1.14), logger (>= 0.2.2), methods, progressr,
+        R6 (>= 2.5.1), survival, targeted (>= 0.8), rlang
+LinkingTo: Rcpp (>= 1.0.11), RcppArmadillo
+Suggests: future, tinytest, MASS, geepack, covr, pdftools, knitr, mets
+        (>= 1.3.4), rmarkdown, magick, pwr, pwrss
+BugReports: https://github.com/NovoNordisk-OpenSource/carts/issues
+URL: https://novonordisk-opensource.github.io/carts/,
+        https://github.com/NovoNordisk-OpenSource/carts
+VignetteBuilder: knitr
+ByteCompile: yes
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-16 10:17:06 UTC; bkts
+Repository: CRAN
+Date/Publication: 2026-07-16 11:00:02 UTC

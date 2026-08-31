@@ -1,0 +1,25 @@
+Package: gpyramid
+Type: Package
+Title: Identify Efficient Crossing Schemes for Gene Pyramiding
+Version: 0.0.1
+Authors@R: c(
+  person("Shoji", "Taniguchi", email = "taniguchi.shoji938@naro.go.jp", role = c("aut", "cre")),
+  person("The National Agriculture and Food Research Organization (NARO)", role = "cph")
+  )
+Maintainer: Shoji Taniguchi <taniguchi.shoji938@naro.go.jp>
+Description: Calculates the cost of crossing in terms of the number of individuals and generations, which is theoretically 
+    formulated by Servin et al. (2004) <DOI:10.1534/genetics.103.023358>. This package has been designed for selecting 
+    appropriate parental genotypes and find the most efficient crossing scheme for gene pyramiding, especially for plant breeding.
+Imports: utils, dplyr, ape
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-08 05:22:35 UTC; taniguchis532
+Author: Shoji Taniguchi [aut, cre],
+  The National Agriculture and Food Research Organization (NARO) [cph]
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2025-12-12 21:10:02 UTC

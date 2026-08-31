@@ -1,0 +1,41 @@
+Package: fastbioclim
+Type: Package
+Title: Scalable and Flexible Derivation of Custom-Time Bioclimatic and
+        Environmental Summary Variables
+Version: 0.4.2
+Authors@R: c(person("Gonzalo E.", "Pinilla-Buitrago", 
+                    email = "gepinillab@gmail.com", 
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-0065-945X")),
+             person(given = "Luis", family = "Osorio-Olvera", 
+                    email = "luismurao@gmail.com", 
+                    role = c("aut"),
+                    comment = c(ORCID = "0000-0003-0701-5398")))
+Maintainer: Gonzalo E. Pinilla-Buitrago <gepinillab@gmail.com>
+Description: Provides an efficient tool for creating custom-time bioclimatic and derived environmental 
+    summary variables from user-supplied raster data for user-defined timeframes. The package overcomes 
+    computational bottlenecks by automatically switching between an in-memory framework using the 'terra' 
+    package to maximize speed for smaller datasets, and an on-disk tiling framework for rasters that exceed 
+    available RAM, leveraging 'exactextractr' and 'Rfast' to process data in chunks. The core functions, 
+    derive_bioclim() and derive_statistics(), offer a unified interface with flexibility for custom time 
+    periods beyond standard quarters and the use of fixed temporal indices, facilitating the creation of 
+    temporally-matched environmental variables for ecological and biogeographical modeling. Visit 
+    the package website <https://gepinillab.github.io/fastbioclim/> to find tutorials in English and Spanish.
+License: GPL (>= 3)
+URL: https://gepinillab.github.io/fastbioclim/
+BugReports: https://github.com/gepinillab/fastbioclim/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1)
+Imports: exactextractr, future.apply, glue, progressr, purrr, qs2,
+        Rfast, sf, terra (>= 1.7-0)
+Suggests: mockery, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-08 16:41:58 UTC; Gonzalo
+Author: Gonzalo E. Pinilla-Buitrago [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0065-945X>),
+  Luis Osorio-Olvera [aut] (ORCID:
+    <https://orcid.org/0000-0003-0701-5398>)
+Repository: CRAN
+Date/Publication: 2026-05-08 17:11:01 UTC

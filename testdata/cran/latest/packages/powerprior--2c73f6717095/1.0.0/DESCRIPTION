@@ -1,0 +1,33 @@
+Package: powerprior
+Version: 1.0.0
+Title: Conjugate Power Priors for Bayesian Analysis of Normal Data
+Authors@R: c(
+    person(given  = "Yusuke",
+           family = "Yamaguchi",
+           role   = c("aut","cre"),
+           email  = "yamagubed@gmail.com"),
+    person(given  = "Yifei",
+           family = "Huang",
+           role   = c("aut")))
+Description: Implements conjugate power priors for efficient Bayesian analysis 
+    of normal data. Power priors allow principled incorporation of historical 
+    information while controlling the degree of borrowing through a discounting 
+    parameter (Ibrahim and Chen (2000) <doi:10.1214/ss/1009212519>). This 
+    package provides closed-form conjugate representations for both univariate 
+    and multivariate normal data using Normal-Inverse-Chi-squared and 
+    Normal-Inverse-Wishart distributions, eliminating the need for MCMC sampling. 
+    The conjugate framework builds upon standard Bayesian methods described in 
+    Gelman et al. (2013, ISBN:978-1439840955).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats, MASS, LaplacesDemon, ggplot2, shiny, shinydashboard,
+        shinyjs, DT, dplyr, tidyr, rlang
+Suggests: testthat (>= 3.0.0), rmarkdown
+NeedsCompilation: no
+Packaged: 2025-11-06 20:48:42 UTC; API18340
+Author: Yusuke Yamaguchi [aut, cre],
+  Yifei Huang [aut]
+Maintainer: Yusuke Yamaguchi <yamagubed@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-11 21:40:13 UTC

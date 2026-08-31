@@ -1,0 +1,26 @@
+Package: synopR
+Title: Fast Decoding of SYNOP (Surface Synoptic Observations)
+        Meteorological Messages
+Version: 1.0.0
+Authors@R: 
+    person("Ezequiel", "Elias", , "elezeru15@gmail.com", role = c("aut", "cre"))
+Description: Decode raw SYNOP (surface synoptic observations) messages into 
+    data frames, extracting data from Sections 0, 1, and 3, including temperature, 
+    dew point, pressure, wind, clouds, and precipitation. Available functions to 
+    download SYNOP messages from Ogimet <https://www.ogimet.com/> if needed. 
+    The decoding logic follows the specifications defined in the World Meteorological 
+    Organization (2019) "Manual on Codes, Volume I.1 (WMO-No. 306)".
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Suggests: tibble, knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://ezequiel1593.github.io/synopR/
+BugReports: https://github.com/ezequiel1593/synopR/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-03 21:32:32 UTC; eleze
+Author: Ezequiel Elias [aut, cre]
+Maintainer: Ezequiel Elias <elezeru15@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-03 21:50:02 UTC

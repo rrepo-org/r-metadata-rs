@@ -1,0 +1,29 @@
+Package: TFORGE
+Title: Tests for Geophysical Eigenvalues
+Version: 0.1.17
+Authors@R: 
+    c(person(given = "Kassel Liam", family = "Hingee", email = "kassel.hingee@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9894-2407")),
+    person("Art B.", "Owen", role = c("cph"), comment = "./R/scel.R only"),
+    person("Board of Trustees", "Leland Stanford Junior University", role = c("cph"), comment = "./R/scel.R only")
+    )
+Description: The eigenvalues of observed symmetric matrices are often of intense scientific interest. This package offers single sample tests for the eigenvalues of the population mean or the eigenvalue-multiplicity of the population mean. For k-samples, this package offers tests for equal eigenvalues between samples. Included is support for matrices with constraints common to geophysical tensors (constant trace, sum of squared eigenvalues, or both) and eigenvectors are usually considered nuisance parameters. Pivotal bootstrap methods enable these tests to have good performance for small samples (n=15 for 3x3 matrices). These methods were developed and studied by Hingee, Scealy and Wood (2026, <doi:10.1080/01621459.2025.2606381>). Also available is a 2-sample test using a Gaussian orthogonal ensemble approximation and an eigenvalue-multiplicity test that assumes orthogonally-invariant covariance. 
+URL: https://github.com/kasselhingee/TFORGE
+Imports: mvtnorm, purrr, Rdpack
+Suggests: knitr, rmarkdown, testthat
+RdMacros: Rdpack
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-26 05:13:36 UTC; kassel
+Author: Kassel Liam Hingee [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9894-2407>),
+  Art B. Owen [cph] (./R/scel.R only),
+  Board of Trustees Leland Stanford Junior University [cph] (./R/scel.R
+    only)
+Maintainer: Kassel Liam Hingee <kassel.hingee@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-26 08:20:07 UTC

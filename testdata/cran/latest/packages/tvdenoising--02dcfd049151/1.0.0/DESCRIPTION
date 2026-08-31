@@ -1,0 +1,33 @@
+Package: tvdenoising
+Title: Univariate Total Variation Denoising
+Version: 1.0.0
+Authors@R: c(
+    person("Addison", "Hu", role = "ctb"),
+    person("Daniel", "McDonald", role = "ctb"),
+    person("Ryan", "Tibshirani", , "ryantibs@gmail.com", 
+        role = c("aut", "cre", "cph"))
+  )
+Description: Total variation denoising can be used to approximate a given
+    sequence of noisy observations by a piecewise constant sequence, with 
+    adaptively-chosen break points. An efficient linear-time algorithm for 
+    total variation denoising is provided here, based on Johnson (2013)
+    <doi:10.1080/10618600.2012.681238>.
+License: MIT + file LICENSE
+URL: https://github.com/glmgen/tvdenoising,
+        https://glmgen.github.io/tvdenoising/
+BugReports: https://github.com/glmgen/tvdenoising/issues
+Imports: Rcpp, rlang
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-06-10 15:06:12 UTC; ryantibshirani
+Author: Addison Hu [ctb],
+  Daniel McDonald [ctb],
+  Ryan Tibshirani [aut, cre, cph]
+Maintainer: Ryan Tibshirani <ryantibs@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-06-13 04:30:02 UTC

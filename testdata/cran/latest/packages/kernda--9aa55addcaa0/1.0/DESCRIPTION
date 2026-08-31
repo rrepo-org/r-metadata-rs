@@ -1,0 +1,20 @@
+Package: kernda
+Type: Package
+Title: Kernel Discriminant Analysis
+Version: 1.0
+Date: 2026-06-29
+Authors@R: c( person("Michail", "Tsagris", role = c("aut", "cre"), email = "mtsagris@uoc.gr"), 
+              person( "Nikolaos", "Kontemeniotis", role = "aut", email = "kontemeniotisn@gmail.com" ) )
+Author: Michail Tsagris [aut, cre],
+  Nikolaos Kontemeniotis [aut]
+Maintainer: Michail Tsagris <mtsagris@uoc.gr>
+Depends: R (>= 4.0)
+Imports: Compositional, Rfast, Rcpp, kernreg
+LinkingTo: Rcpp
+Description: Functions to perform discriminant analysis using kernel density estimation. For the case of binary classification the package relies on the Nadaraya-Watson estimator. References: Wand M.P. and Jones M.C. (1995). "Kernel smoothing". CRC Press. <ISBN: 0412552701>.  
+License: GPL (>= 2)
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-06-29 11:40:13 UTC; mtsag
+Repository: CRAN
+Date/Publication: 2026-07-04 08:40:13 UTC

@@ -1,0 +1,36 @@
+Package: ecolRxC
+Type: Package
+Title: Ecological Inference of RxC Tables by Latent Structure
+        Approaches
+Version: 0.1.1-16
+Authors@R: 
+    c(person(given = "Jose M.",
+           family = "Pavía",
+           role = c("aut", "cre"),
+           email = "jose.m.pavia@uv.es",
+           comment = c(ORCID = "0000-0002-0129-726X")),
+       person(given = "Søren Risbjerg",
+           family = "Thomsen",
+           role = "aut",
+           email = "SRT@ps.au.dk"))
+Description: Estimates RxC (R by C) vote transfer matrices (ecological contingency tables) from aggregate data building on Thomsen (1987) and Park (2008) approaches.
+   References:
+   Park, W.-H. (2008). ''Ecological Inference and Aggregate Analysis of Election''. PhD Dissertation. University of Michigan. <https://deepblue.lib.umich.edu/bitstream/handle/2027.42/58525/wpark_1.pdf>
+   Pavía, J.M. and Thomsen, S.R. (2025) ''ecolRxC: Ecological inference estimation of RxC tables using latent structure approaches''. Political Science Research and Methods, 13(4), 943-961. <doi:10.1017/psrm.2024.57>
+   Thomsen, S.R. (1987, ISBN:87-7335-037-2). ''Danish Elections 1920 79: a Logit Approach to Ecological Analysis and Inference''. Politica, Aarhus, Denmark.
+   Acknowledgements:
+   The authors wish to thank Generalitat Valenciana (Conselleria de Educacion, Cultura y Universidades), grant CIACIO/2023/031, and Ministerio de Economia e Innovacion, grant PID2021-128228NB-I00, for supporting this research.
+License: GPL (>= 2)
+Encoding: UTF-8
+LinkingTo: Rcpp, RcppArmadillo
+Imports: stats, mvtnorm, Rcpp
+Suggests: ggplot2, scales
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-05-08 21:49:51 UTC; pavia
+Author: Jose M. Pavía [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0129-726X>),
+  Søren Risbjerg Thomsen [aut]
+Maintainer: Jose M. Pavía <jose.m.pavia@uv.es>
+Repository: CRAN
+Date/Publication: 2026-05-09 16:30:13 UTC

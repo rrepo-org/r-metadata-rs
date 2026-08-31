@@ -1,0 +1,49 @@
+Type: Package
+Package: smmR
+Title: Simulation, Estimation and Reliability of Semi-Markov Models
+Version: 1.0.5
+Date: 2025-10-20
+Authors@R: c(person("Vlad Stefan", "Barbu", role = c("aut"),
+    comment = c(ORCID = "0000-0002-0840-016X")),
+    person("Florian", "Lecocq", role = c("aut")),
+    person("Corentin", "Lothode", role = c("aut"),
+    comment = c(ORCID = "0000-0002-8209-317X")),
+    person("Nicolas", "Vergne", role = c("aut", "cre"),
+    email = "nicolas.vergne@univ-rouen.fr"))
+Description: Performs parametric and non-parametric estimation and simulation 
+    for multi-state discrete-time semi-Markov processes. For the parametric 
+    estimation, several discrete distributions are considered for the sojourn 
+    times: Uniform, Geometric, Poisson, Discrete Weibull and Negative Binomial.
+    The non-parametric estimation concerns the sojourn time distributions, 
+    where no assumptions are done on the shape of distributions. Moreover, the 
+    estimation can be done on the basis of one or several sample paths, with or
+    without censoring at the beginning or/and at the end of the sample paths. 
+    Reliability indicators such as reliability, maintainability, availability, 
+    BMP-failure rate, RG-failure rate, mean time to failure and mean time to 
+    repair are available as well. The implemented methods are described in 
+    Barbu, V.S., Limnios, N. (2008) <doi:10.1007/978-0-387-73173-5>, 
+    Barbu, V.S., Limnios, N. (2008) <doi:10.1080/10485250701261913> and 
+    Trevezas, S., Limnios, N. (2011) <doi:10.1080/10485252.2011.555543>.
+    Estimation and simulation of discrete-time k-th order Markov chains are 
+    also considered.
+URL: https://plmlab.math.cnrs.fr/lmrs/statistique/smmR,
+        https://lmrs.pages.math.cnrs.fr/statistique/smmR
+BugReports: https://github.com/corentin-dev/smmR/issues
+License: GPL-3
+Imports: DiscreteWeibull, Rcpp, seqinr
+Suggests: utils, knitr, rmarkdown, testthat (>= 3.0.0), roxytest
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-11-07 07:55:43 UTC; corentin
+Author: Vlad Stefan Barbu [aut] (ORCID:
+    <https://orcid.org/0000-0002-0840-016X>),
+  Florian Lecocq [aut],
+  Corentin Lothode [aut] (ORCID: <https://orcid.org/0000-0002-8209-317X>),
+  Nicolas Vergne [aut, cre]
+Maintainer: Nicolas Vergne <nicolas.vergne@univ-rouen.fr>
+Repository: CRAN
+Date/Publication: 2025-11-07 11:40:02 UTC

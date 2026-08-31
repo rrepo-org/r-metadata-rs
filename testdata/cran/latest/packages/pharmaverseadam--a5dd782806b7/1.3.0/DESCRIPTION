@@ -1,0 +1,58 @@
+Type: Package
+Package: pharmaverseadam
+Title: ADaM Test Data for the 'Pharmaverse' Family of Packages
+Version: 1.3.0
+Authors@R: c(
+    person("Fanny", "Gautier", , "fanny.gautier@cytel.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-3581-0131")),
+    person("Stefan", "Bundfuss", role = "aut",
+           comment = c(ORCID = "0009-0005-0027-1198")),
+    person("Edoardo", "Mancini", , "edoardo.mancini@roche.com", role = "aut",
+           comment = c(ORCID = "0009-0006-4899-8641")),
+    person("Lina", "Patil", , "lina.patil@cytel.com", role = "aut"),
+    person("Gerardo Jose", "Rodriguez", , "gerardo.jrac@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-1413-0060")),
+    person("Vladyslav", "Shuliar", role = "aut",
+           comment = c(ORCID = "0009-0008-2354-8999")),
+    person("Cytel Inc.", role = c("cph", "fnd")),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
+    person("GlaxoSmithKline LLC", role = c("cph", "fnd"))
+  )
+Description: A set of Analysis Data Model (ADaM) datasets constructed
+    using the Study Data Tabulation Model (SDTM) datasets contained in the
+    'pharmaversesdtm' package and the template scripts from the 'admiral'
+    family of packages. ADaM dataset specifications are described in the
+    CDISC ADaM implementation guide, accessible by creating a free account
+    on <https://www.cdisc.org/>.
+License: Apache License (>= 2)
+URL: https://pharmaverse.github.io/pharmaverseadam/,
+        https://github.com/pharmaverse/pharmaverseadam/
+Depends: R (>= 3.5)
+Imports: tibble
+Suggests: admiraldev (>= 1.4.0), cli, covr, devtools, diffdf, DT,
+        jsonlite, knitr, lintr, metacore, metatools, methods, miniUI,
+        pkgdown, readxl, rmarkdown, roxygen2, spelling, testthat (>=
+        3.0.0), usethis
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyDataCompression: bzip2
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-20 08:57:07 UTC; fanny.gautier
+Author: Fanny Gautier [aut, cre] (ORCID:
+    <https://orcid.org/0009-0004-3581-0131>),
+  Stefan Bundfuss [aut] (ORCID: <https://orcid.org/0009-0005-0027-1198>),
+  Edoardo Mancini [aut] (ORCID: <https://orcid.org/0009-0006-4899-8641>),
+  Lina Patil [aut],
+  Gerardo Jose Rodriguez [aut] (ORCID:
+    <https://orcid.org/0000-0003-1413-0060>),
+  Vladyslav Shuliar [aut] (ORCID:
+    <https://orcid.org/0009-0008-2354-8999>),
+  Cytel Inc. [cph, fnd],
+  F. Hoffmann-La Roche AG [cph, fnd],
+  GlaxoSmithKline LLC [cph, fnd]
+Maintainer: Fanny Gautier <fanny.gautier@cytel.com>
+Repository: CRAN
+Date/Publication: 2026-02-20 12:10:02 UTC

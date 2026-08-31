@@ -1,0 +1,43 @@
+Package: qqkrls
+Type: Package
+Title: Quantile-on-Quantile Kernel Regularized Least Squares
+Version: 1.0.0
+Authors@R: c(
+    person("Merwan", "Roudane",
+           email = "merwanroudane920@gmail.com",
+           role = c("aut", "cre", "cph")),
+    person("Tomiwa Sunday", "Adebayo", role = "ctb",
+           comment = "Original QQKRLS methodology"),
+    person("Jens", "Hainmueller", role = "ctb",
+           comment = "Original KRLS methodology"),
+    person("Chad", "Hazlett", role = "ctb",
+           comment = "Original KRLS methodology"))
+Description: Implements Quantile-on-Quantile Kernel-Based Regularized
+    Least Squares (QQKRLS) as in Adebayo, Ozkan and Eweade (2024)
+    <doi:10.1016/j.jclepro.2024.140832>. Combines Kernel-Based
+    Regularized Least Squares (KRLS) of Hainmueller and Hazlett (2014)
+    <doi:10.1093/pan/mpt019> with the Quantile-on-Quantile regression
+    of Sim and Zhou (2015) <doi:10.1016/j.jbankfin.2015.01.013>: for
+    each quantile theta of the independent variable the response is fit
+    by KRLS on the corresponding sub-sample and the tau-quantile of the
+    resulting pointwise marginal effects yields beta(theta, tau).
+    Standard errors come from a paired bootstrap. Visualisations use
+    the 'MATLAB' 'Parula' colour map by default.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+Imports: KRLS (>= 1.0-0), plotly (>= 4.0.0), stats, utils, grDevices
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://github.com/merwanroudane/qqkrlsr
+BugReports: https://github.com/merwanroudane/qqkrlsr/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-28 12:45:49 UTC; HP
+Author: Merwan Roudane [aut, cre, cph],
+  Tomiwa Sunday Adebayo [ctb] (Original QQKRLS methodology),
+  Jens Hainmueller [ctb] (Original KRLS methodology),
+  Chad Hazlett [ctb] (Original KRLS methodology)
+Maintainer: Merwan Roudane <merwanroudane920@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-01 09:00:14 UTC

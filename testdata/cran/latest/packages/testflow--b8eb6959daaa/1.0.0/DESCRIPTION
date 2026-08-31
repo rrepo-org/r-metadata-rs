@@ -1,0 +1,41 @@
+Package: testflow
+Title: A Workflow for Statistical Testing and Interpretation
+Version: 1.0.0
+Authors@R: c(
+    person(
+      given = "Imad",
+      family = "El Badisy",
+      role = c("aut", "cre"),
+      email = "elbadisyimad@gmail.com"
+    )
+  )
+Author: Imad El Badisy [aut, cre]
+Maintainer: Imad El Badisy <elbadisyimad@gmail.com>
+Description: Provides a unified workflow for choosing, running, and
+  interpreting common statistical tests, from group comparisons and
+  analysis of variance to regression, survival analysis, and diagnostic and
+  agreement statistics. The package combines assumption checks, test
+  selection, effect sizes, formatted results, plain-language interpretation,
+  and a sample-size planning module covering continuous, binary, survival,
+  ordinal, bioequivalence, and precision-based designs. Implemented methods
+  follow standard references
+  including Casella and Berger (2002, ISBN:9780534243128), Hollander et al.
+  (2013, ISBN:9781118553299), Agresti (2013, ISBN:9780470463635), Cohen
+  (1988, ISBN:9780805802832), Hosmer, Lemeshow and Sturdivant (2013,
+  ISBN:9780470582473), and Julious (2010, ISBN:9781584887393).
+URL: https://CRAN.R-project.org/package=testflow
+BugReports: https://github.com/ielbadisy/testflow/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.3
+Imports: stats, cli, rlang, dplyr, tidyr, tidyselect, tibble, purrr,
+        broom, ggplot2, survival, car
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, effectsize, patchwork,
+        PowerTOST, irr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-21 09:23:13 UTC; imad-el-badisy
+Repository: CRAN
+Date/Publication: 2026-08-22 00:50:02 UTC

@@ -1,0 +1,33 @@
+Package: extrafont
+Type: Package
+Title: Tools for Using Fonts
+Version: 0.20
+Date: 2025-09-24
+Depends: R (>= 2.15)
+Imports: extrafontdb, grDevices, utils, Rttf2pt1
+Suggests: fontcm, testthat, withr (>= 2.5.0)
+Authors@R: c(
+	person(given = "Winston", family= "Chang", role = c("aut")),
+	person(given = "Frederic", family= "Bertrand", role = c("cre"), email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281"))
+	)
+Author: Winston Chang [aut],
+  Frederic Bertrand [cre] (ORCID:
+    <https://orcid.org/0000-0002-0837-8281>)
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
+Description: Tools to using fonts other than the standard PostScript fonts.
+    This package makes it easy to use system TrueType fonts and with PDF or
+    PostScript output files, and with bitmap output files in Windows. extrafont
+    can also be used with fonts packaged specifically to be used with, such as
+    the fontcm package, which has Computer Modern PostScript fonts with math
+    symbols.
+License: GPL-2
+LazyLoad: yes
+NeedsCompilation: no
+URL: https://github.com/fbertran/extrafont
+BugReports: https://github.com/fbertran/extrafont/issues
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+Config/testthat/edition: 3
+Packaged: 2025-09-24 09:56:16 UTC; bertran7
+Repository: CRAN
+Date/Publication: 2025-09-24 10:50:02 UTC

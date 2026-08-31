@@ -1,0 +1,22 @@
+Package: PAGE
+Type: Package
+Title: Predictor-Assisted Graphical Models under Error-in-Variables
+Version: 0.4.0
+Authors@R: c(
+    person("Wan-Yi", "Chang", role=c("aut", "cre"), email="jessica306a@gmail.com"),
+    person("Li-Pang", "Chen", role=c("aut"), email="lchen723@nccu.edu.tw")
+    )
+Description: We consider the network structure detection for variables Y with auxiliary variables X accommodated, which are possibly subject to measurement error. The following three functions are designed to address various structures by different methods : one is NP_Graph() that is used for handling the nonlinear relationship between the responses and the covariates,  another is Joint_Gaussian() that is used for correction in linear regression models via the Gaussian maximum likelihood, and the other Cond_Gaussian() is for linear regression models via conditional likelihood function.
+License: GPL-3
+Encoding: UTF-8
+Imports: glasso, lars, network, GGally, caret, randomForest, metrica,
+        MASS, stats, RSQLite
+Suggests: sna
+RoxygenNote: 7.3.2
+Author: Wan-Yi Chang [aut, cre],
+  Li-Pang Chen [aut]
+Maintainer: Wan-Yi Chang <jessica306a@gmail.com>
+NeedsCompilation: yes
+Packaged: 2025-08-07 12:22:06 UTC; user
+Repository: CRAN
+Date/Publication: 2025-08-19 13:20:02 UTC

@@ -1,0 +1,31 @@
+Package: snazzieR
+Type: Package
+Title: Chic and Sleek Functions for Beautiful Statisticians
+Version: 0.1.2
+Authors@R: person(given = c("Aidan", "J."),
+                  family = "Wagner",
+                  email = "JesusButForGayPeople@proton.me",
+                  role = c("aut", "cre"))
+Maintainer: Aidan J. Wagner <JesusButForGayPeople@proton.me>
+Description: Because your linear models deserve better than console output.
+  A sleek color palette and kable styling to make your regression results look sharper than they are.
+  Includes support for Partial Least Squares (PLS) regression via both the SVD and NIPALS algorithms,
+  along with a unified interface for model fitting and fabulous LaTeX and console output formatting.
+  See the package website at 
+  <https://finitesample.space/snazzier>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Imports: ggplot2, knitr, kableExtra, dplyr, stats
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Suggests: rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://detectivefierce.github.io/snazzieR/
+NeedsCompilation: no
+Packaged: 2025-12-16 22:32:07 UTC; shared-psychosis
+Author: Aidan J. Wagner [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-12-16 22:50:02 UTC

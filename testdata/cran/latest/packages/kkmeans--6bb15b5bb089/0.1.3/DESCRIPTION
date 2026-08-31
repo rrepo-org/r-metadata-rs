@@ -1,0 +1,24 @@
+Package: kkmeans
+Title: Fast Implementations of Kernel K-Means
+Version: 0.1.3
+Authors@R: 
+    person(given = "Josh",
+           family = "Berlinski",
+           role = c("aut", "cre"),
+           email = "jdberlinski@gmail.com")
+Description: Implementations several algorithms for kernel k-means. The default
+  'OTQT' algorithm is a fast alternative to standard implementations of kernel
+  k-means, particularly in cases with many clusters. For a small number of
+  clusters, the implemented 'MacQueen' method typically performs the fastest. For
+  more details and performance evaluations, see Berlinski and Maitra (2025) <doi:10.1002/sam.70032>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp
+Imports: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-02-01 15:36:32 UTC; josh
+Author: Josh Berlinski [aut, cre]
+Maintainer: Josh Berlinski <jdberlinski@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-01 16:20:02 UTC

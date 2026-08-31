@@ -1,0 +1,46 @@
+Type: Package
+Package: secretbase
+Title: Cryptographic Hash Functions and Data Encoding
+Version: 1.3.0
+Authors@R: c(
+    person("Charlie", "Gao", , "charlie.gao@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0750-061X")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49")),
+    person("Hibiki AI Limited", role = "cph"),
+    person("The Mbed TLS Contributors", role = "cph",
+           comment = "SHA-3, SHA-256 and base64 code from Mbed TLS"),
+    person("Red Hat, Inc.", role = "cph",
+           comment = "SipHash code from c-siphash"),
+    person("Luke", "Dashjr", role = "cph",
+           comment = "Base58 code from libbase58")
+  )
+Description: Fast and memory-efficient streaming hash functions,
+    binary/text encoding and serialization. Hashes strings and raw vectors
+    directly.  Stream hashes files which can be larger than memory, as
+    well as in-memory objects through R's serialization mechanism.
+    Implements the SHA-256, SHA-3 and 'Keccak' cryptographic hash
+    functions, SHAKE256 extendable-output function (XOF), 'SipHash'
+    pseudo-random function, base64 (including the URL-safe variant) and
+    base58 encoding, 'CBOR' and 'JSON' serialization.
+License: MIT + file LICENSE
+URL: https://shikokuchuo.net/secretbase/,
+        https://github.com/shikokuchuo/secretbase/
+BugReports: https://github.com/shikokuchuo/secretbase/issues
+Depends: R (>= 3.5)
+Config/build/compilation-database: true
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2026-06-12 07:37:52 UTC; cg334
+Author: Charlie Gao [aut, cre] (ORCID: <https://orcid.org/0000-0002-0750-061X>),
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>),
+  Hibiki AI Limited [cph],
+  The Mbed TLS Contributors [cph] (SHA-3, SHA-256 and base64 code from
+    Mbed TLS),
+  Red Hat, Inc. [cph] (SipHash code from c-siphash),
+  Luke Dashjr [cph] (Base58 code from libbase58)
+Maintainer: Charlie Gao <charlie.gao@posit.co>
+Repository: CRAN
+Date/Publication: 2026-06-12 08:20:02 UTC

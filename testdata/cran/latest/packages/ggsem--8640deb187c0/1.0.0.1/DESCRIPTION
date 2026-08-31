@@ -1,0 +1,31 @@
+Package: ggsem
+Type: Package
+Title: Interactive Structural Equation Modeling (SEM) and Multi-Group
+        Path Diagrams
+Version: 1.0.0.1
+Authors@R: person(
+      given = "Seung Hyun",
+      family = "Min",
+      role = c("aut", "cre"),
+      email = "seung.min@mail.mcgill.ca"
+    )
+Maintainer: Seung Hyun Min <seung.min@mail.mcgill.ca>
+Description: Provides an interactive workflow for visualizing structural equation modeling (SEM), multi-group path diagrams, and network diagrams in R. Users can directly manipulate nodes and edges to create publication-quality figures while maintaining statistical model integrity. Supports integration with 'lavaan', 'OpenMx', 'tidySEM', and 'blavaan' etc. Features include parameter-based aesthetic mapping, generative AI assistance, and complete reproducibility by exporting metadata for script-based workflows. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: blavaan, DiagrammeRsvg, dplyr, ggplot2 (>= 4.0.0), grDevices,
+        igraph, lavaan (>= 0.6.21), methods, network, purrr, qgraph,
+        RColorBrewer, rlang, Rtsne, semPlot (>= 1.1.7), smplot2,
+        stringr, tidyr, tidySEM, umap, xml2
+Suggests: colourpicker, DT, DiagrammeR, grid, memoise, shiny, shinyjs,
+        svglite
+URL: https://smin95.github.io/ggsem/
+BugReports: https://github.com/smin95/ggsem/issues/
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2026-06-02 01:09:16 UTC; sammi
+Author: Seung Hyun Min [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-06-02 02:30:02 UTC

@@ -1,0 +1,25 @@
+Package: drf
+Title: Distributional Random Forests
+Version: 1.3.1
+Authors@R: c(
+  person(given = "Jeffrey", family = "Naf", email = "jeffrey.naf@unige.ch", role = "cre"),
+  person(given = "Loris", family = "Michel", role = "aut"),
+  person(given = "Domagoj", family = "Cevid", role = "aut"))
+BugReports: https://github.com/lorismichel/drf/issues
+Description: An implementation of distributional random forests as introduced in Cevid & Michel & Naf & Meinshausen & Buhlmann (2022) <doi:10.48550/arXiv.2005.14458>.
+License: GPL-3
+LinkingTo: Rcpp, RcppEigen
+Depends: R (>= 3.4.4)
+Imports: stats, fastDummies, Matrix, methods, Rcpp (>= 0.12.15)
+RoxygenNote: 7.3.3
+Suggests: DiagrammeR
+SystemRequirements: GNU make
+URL: https://github.com/lorismichel/drf
+NeedsCompilation: yes
+Packaged: 2026-02-02 22:06:28 UTC; rstudio
+Author: Jeffrey Naf [cre],
+  Loris Michel [aut],
+  Domagoj Cevid [aut]
+Maintainer: Jeffrey Naf <jeffrey.naf@unige.ch>
+Repository: CRAN
+Date/Publication: 2026-02-03 08:30:02 UTC

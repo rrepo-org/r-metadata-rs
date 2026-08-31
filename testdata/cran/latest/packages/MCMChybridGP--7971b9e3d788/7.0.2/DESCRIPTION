@@ -1,0 +1,27 @@
+Package: MCMChybridGP
+Version: 7.0.2
+Title: Hybrid Markov Chain Monte Carlo Using Gaussian Processes
+Description: Hybrid Markov chain Monte Carlo (MCMC) for sampling from 
+    multimodal target distributions when derivatives are unavailable. 
+    A Gaussian process approximation is used to emulate derivatives, 
+    enabling efficient exploration with parallel tempering. The method 
+    is described in Fielding, Nott and Liong (2011) 
+    <doi:10.1198/TECH.2010.09195>. The research was carried out as part 
+    of the Singapore-Delft Water Alliance Multi-Objective Multi-Reservoir 
+    Management programme (R-264-001-272).
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Imports: MASS, Rcpp
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Authors@R: person(given = c("Mark", "J."),
+                  family = "Fielding",
+                  role = c("aut", "cre"),
+                  email = "mark.fielding@gmx.com")
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-25 01:57:36 UTC; MarkJ
+Author: Mark J. Fielding [aut, cre]
+Maintainer: Mark J. Fielding <mark.fielding@gmx.com>
+Repository: CRAN
+Date/Publication: 2026-06-26 16:40:02 UTC

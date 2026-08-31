@@ -1,0 +1,51 @@
+Package: bhmbasket
+Title: Bayesian Hierarchical Models for Basket Trials
+Version: 1.1.0
+Authors@R: 
+  c(
+    person(given = 'Stephan',
+           family = 'Wojciekowski',
+           role = c('aut', 'cre'),
+           email = 'stephan.wojciekowski@boehringer-ingelheim.com'),
+    person(given = 'Tathagata',
+           family = 'Chattopadhyay',
+           role = 'aut',
+           email = 'tchattopadhyay6@gmail.com'))
+Description: Provides functions for the evaluation of basket
+    trial designs with binary endpoints. Operating characteristics of a
+    basket trial design are assessed by simulating trial data according to
+    scenarios, analyzing the data with Bayesian hierarchical models (BHMs), and
+    assessing decision probabilities on stratum and trial-level based on Go / No-go decision making.
+    The package is build for high flexibility regarding decision rules,
+    number of interim analyses, number of strata, and recruitment.
+    The BHMs proposed by
+    Berry et al. (2013) <doi:10.1177/1740774513497539>
+    and Neuenschwander et al. (2016) <doi:10.1002/pst.1730>,
+    as well as a model that combines both approaches are implemented.
+    Functions are provided to implement Bayesian decision rules as for example
+    proposed by Fisch et al. (2015) <doi:10.1177/2168479014533970>.
+    In addition, posterior point estimates (mean/median) and credible intervals
+    for response rates and some model parameters can be calculated.
+    For simulated trial data, bias and mean squared errors of posterior
+    point estimates for response rates can be provided.
+License: GPL-3
+URL: https://CRAN.R-project.org/package=bhmbasket,
+        https://github.com/Boehringer-Ingelheim/bhmbasket
+BugReports: https://github.com/Boehringer-Ingelheim/bhmbasket/issues
+Depends: R (>= 3.6.0)
+Imports: foreach, doRNG, rjags, checkmate
+Suggests: doFuture, future, knitr, rmarkdown, RBesT, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Language: en-US
+SystemRequirements: JAGS 4.x.y (http://mcmc-jags.sourceforge.net)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-14 11:51:27 UTC; wojcie
+Author: Stephan Wojciekowski [aut, cre],
+  Tathagata Chattopadhyay [aut]
+Maintainer: Stephan Wojciekowski <stephan.wojciekowski@boehringer-ingelheim.com>
+Repository: CRAN
+Date/Publication: 2026-04-15 07:20:02 UTC

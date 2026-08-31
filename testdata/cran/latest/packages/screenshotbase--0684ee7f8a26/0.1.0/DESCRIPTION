@@ -1,0 +1,25 @@
+Package: screenshotbase
+Type: Package
+Title: Client for the 'Screenshotbase' API
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Dominik", family = "Kukacka", email = "dominik@everapi.com", role = c("aut", "cre")),
+    person(given = "EverAPI", family = "Team", role = c("cph")))
+Description: Minimal R client for the 'Screenshotbase' API to render website screenshots
+    and query account status. Provides functions to set the API key, call the
+    status endpoint, and take a screenshot as a raw image response.
+License: MIT + file LICENSE
+URL: https://screenshotbase.com, https://github.com/everapihq
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+Imports: httr2 (>= 1.0.0)
+Suggests: testthat (>= 3.1.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-16 08:40:30 UTC; andreasaltheimer
+Author: Dominik Kukacka [aut, cre],
+  EverAPI Team [cph]
+Maintainer: Dominik Kukacka <dominik@everapi.com>
+Repository: CRAN
+Date/Publication: 2025-09-22 07:50:03 UTC

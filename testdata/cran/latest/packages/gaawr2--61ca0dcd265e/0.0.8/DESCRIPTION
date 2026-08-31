@@ -1,0 +1,44 @@
+Package: gaawr2
+Title: Genetic Association Analysis
+Version: 0.0.8
+Date: 2026-6-17
+Authors@R: c(person("Jing Hua", "Zhao", , role = c("aut", "cre"),
+                  email = "jinghuazhao@hotmail.com",
+                  comment = c(ORCID = "https://orcid.org/0000-0002-1463-5870", ORCID = "0000-0003-4930-3582")),
+           person("Benjamin", "Altmann", role = "ctb"),
+           person("Brian", "Ripley", role = "ctb")
+           )
+Maintainer: Jing Hua Zhao <jinghuazhao@hotmail.com>
+Description: This is a companion to Henry-Stewart talk by Zhao (2026, <doi:10.69645/FRFQ9519>),
+ which gathers information, metadata and scripts to showcase modern genetic analysis -- ranging from testing
+ of polymorphic variant(s) for Hardy-Weinberg equilibrium, association with traits using genetic and statistical
+ models, Bayesian implementation, power calculation in study design, and genetic annotation. It also covers
+ R integration with the Linux environment, GitHub, package creation and web applications. The earlier version
+ by Zhao (2009, <doi:10.69645/DCRY5578>) provides a brief introduction to these topics.
+License: MIT + file LICENSE
+URL: https://jinghuazhao.github.io/gaawr2/,
+        https://github.com/jinghuazhao/gaawr2
+BugReports: https://github.com/jinghuazhao/gaawr2/issues
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: dplyr, gap, gap.datasets, ggplot2, survival, Rdpack
+RdMacros: Rdpack
+VignetteBuilder: knitr
+LazyData: Yes
+LazyLoad: Yes
+LazyDataCompression: xz
+Suggests: BLR, BGLR, biomaRt, bookdown, Cairo, EnsDb.Hsapiens.v75,
+        ensembldb, GMMAT, HardyWeinberg, haplo.stats, htmltools, httr,
+        httpuv, jsonlite, kableExtra, knitr, MCMCglmm, plumber,
+        powerEQTL, R2jags, regress, Rsamtools, SNPassoc, testthat,
+        tidyr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-17 17:10:58 UTC; jhz22
+Author: Jing Hua Zhao [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1463-5870>, ORCID:
+    <https://orcid.org/0000-0003-4930-3582>),
+  Benjamin Altmann [ctb],
+  Brian Ripley [ctb]
+Repository: CRAN
+Date/Publication: 2026-06-17 18:00:11 UTC

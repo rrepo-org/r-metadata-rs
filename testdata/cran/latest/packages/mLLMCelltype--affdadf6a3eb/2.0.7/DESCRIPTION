@@ -1,0 +1,28 @@
+Package: mLLMCelltype
+Type: Package
+Title: Cell Type Annotation Using Large Language Models
+Version: 2.0.7
+Author: Chen Yang [aut, cre, cph]
+Maintainer: Chen Yang <cafferychen777@tamu.edu>
+Authors@R: 
+    person("Chen", "Yang", email = "cafferychen777@tamu.edu",
+           role = c("aut", "cre", "cph"))
+Description: Automated cell type annotation for single-cell RNA sequencing data 
+    using consensus predictions from multiple large language models. Integrates 
+    with Seurat objects and provides uncertainty quantification for annotations.
+    Supports various LLM providers including OpenAI, Anthropic, and Google.
+    For details see Yang et al. (2026) <doi:10.1038/s42003-026-10420-8>.
+License: MIT + file LICENSE
+BugReports: https://github.com/cafferychen777/mLLMCelltype/issues
+URL: https://cafferyang.com/mLLMCelltype/
+Encoding: UTF-8
+Imports: httr (>= 1.4.0), jsonlite (>= 1.7.0), R6 (>= 2.5.0), digest
+        (>= 0.6.25), stats, tools, utils
+Suggests: knitr, rmarkdown, Seurat, testthat
+RoxygenNote: 7.3.3
+Config/build/clean-inst-doc: TRUE
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-21 01:36:59 UTC; apple
+Repository: CRAN
+Date/Publication: 2026-07-21 08:20:09 UTC

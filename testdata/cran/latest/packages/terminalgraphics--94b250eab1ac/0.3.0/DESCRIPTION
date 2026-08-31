@@ -1,0 +1,47 @@
+Package: terminalgraphics
+Type: Package
+Title: Graphical Output in Terminals
+Version: 0.3.0
+Authors@R: 
+    c(
+      person(
+        given = "Jan",
+        family = "van der Laan",
+        role = c("aut", "cre"),
+        email = "r@eoos.dds.nl",
+        comment = c(ORCID = "0000-0002-0693-1514")
+      ),
+      person(
+        given = "Doug",
+        family = "Kelkhoff",
+        role = c("ctb"),
+        email = "doug.kelkhoff@gmail.com",
+        comment = c(ORCID = "0009-0003-7845-4061")
+      )
+    )
+Description: Defines a graphics device and functions for graphical output in
+    terminal emulators that support graphical output. Currently terminals that
+    support the Terminal Graphics Protocol
+    (<https://sw.kovidgoyal.net/kitty/graphics-protocol/>) and terminal supporting Sixel 
+    (<https://en.wikipedia.org/wiki/Sixel>) are supported.
+BugReports: https://codeberg.org/djvanderlaan/terminalgraphics/issues
+URL: https://codeberg.org/djvanderlaan/terminalgraphics
+Depends: R (>= 4.1.0)
+Imports: Rcpp, utils, methods, graphics, grDevices, ragg, base64enc
+Suggests: magick
+LinkingTo: Rcpp
+License: GPL-3
+SystemRequirements: C++20, A terminal emulator supporting the Terminal
+        Graphics Protocol
+        (<https://sw.kovidgoyal.net/kitty/graphics-protocol/>) or
+        Sixel.
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-05-01 13:53:39 UTC; eoos
+Author: Jan van der Laan [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0693-1514>),
+  Doug Kelkhoff [ctb] (ORCID: <https://orcid.org/0009-0003-7845-4061>)
+Maintainer: Jan van der Laan <r@eoos.dds.nl>
+Repository: CRAN
+Date/Publication: 2026-05-01 14:10:02 UTC

@@ -1,0 +1,24 @@
+Package: istat
+Title: Download and Manipulate Data from Istat
+Version: 1.1.2
+Authors@R: 
+    c(person("Elena", "Gradi", email="elenaagradi@gmail.com", role=c("aut","cre")),
+    person("Alissa", "Lelli", email="alissalelli3@gmail.com", role="aut"),
+    person("Daniela", "Ichim", email="ichim@istat.it", role = "aut"))
+Maintainer: Elena Gradi <elenaagradi@gmail.com>
+Description: Download data from ISTAT (Italian Institute of Statistics) database, both old and new provider (respectively, <http://dati.istat.it/> and <https://esploradati.istat.it/databrowser/>). Additional functions for manipulating data are provided. Moreover, a 'shiny' application called 'shinyIstat' can be used to search, download and filter datasets more easily.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: curl, datamods, digest, DT, dplyr, ggplot2, htmltools, httr,
+        magrittr, openxlsx, reactable, readxl, rsdmx, shiny, shinyBS,
+        shinydashboard, shinyhelper, shinyjs, shinyWidgets, writexl
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-12 12:43:52 UTC; elenagradi
+Author: Elena Gradi [aut, cre],
+  Alissa Lelli [aut],
+  Daniela Ichim [aut]
+Repository: CRAN
+Date/Publication: 2026-01-12 13:30:02 UTC

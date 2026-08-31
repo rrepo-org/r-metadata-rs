@@ -1,0 +1,32 @@
+Package: rformat
+Type: Package
+Title: Base R Code Formatter
+Version: 0.2.0
+Date: 2026-06-24
+Authors@R: c(person("Troy", "Hernandez", role = c("aut", "cre"),
+                    email = "troy@cornball.ai",
+                    comment = c(ORCID = "0009-0005-4248-604X")),
+             person("Dirk", "Eddelbuettel", role = "ctb",
+                    comment = c(ORCID = "0000-0001-6419-907X")),
+             person("cornball.ai", role = "cph"))
+Description: A minimal R code formatter following base R style conventions.
+    Formats R code with consistent spacing, indentation, and structure.
+License: GPL-3
+URL: https://github.com/cornball-ai/rformat
+BugReports: https://github.com/cornball-ai/rformat/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: Rcpp
+LinkingTo: Rcpp
+Suggests: tinytest, simplermarkdown
+VignetteBuilder: simplermarkdown
+NeedsCompilation: yes
+Packaged: 2026-06-24 18:21:25 UTC; troy
+Author: Troy Hernandez [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-4248-604X>),
+  Dirk Eddelbuettel [ctb] (ORCID:
+    <https://orcid.org/0000-0001-6419-907X>),
+  cornball.ai [cph]
+Maintainer: Troy Hernandez <troy@cornball.ai>
+Repository: CRAN
+Date/Publication: 2026-06-24 19:30:02 UTC

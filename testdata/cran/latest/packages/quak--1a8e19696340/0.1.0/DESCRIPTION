@@ -1,0 +1,31 @@
+Package: quak
+Title: Query 'Azure Data Lake Storage Gen2' with 'DuckDB'
+Version: 0.1.0
+Authors@R: 
+    person("Pedro", "Baltazar", email = "pedrobtz@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: Provides convenience utilities for using 'DuckDB' directly over
+    datasets stored in 'Azure Data Lake Storage Gen2' (ADLS Gen2,
+    'abfss://'). Opens connections configured for Azure-backed 'Delta Lake'
+    and 'Parquet' data, registers Azure credentials as 'DuckDB' secrets, and
+    supports optional repository mirrors for restricted networks. Integrates
+    well with 'DBI' for SQL workflows and with 'dplyr' and 'dbplyr' for lazy
+    table queries.
+URL: https://github.com/pedrobtz/quak
+BugReports: https://github.com/pedrobtz/quak/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, curl, DBI, duckdb, fs, glue, rlang, tools, utils
+Suggests: azr (>= 0.3.4), dbplyr, dplyr, testthat (>= 3.0.0), tibble,
+        withr
+Config/testthat/edition: 3
+Collate: 'options.R' 'conditions.R' 'connection.R' 'cache.R'
+        'repositories.R' 'extensions.R' 'azure.R' 'datasets.R'
+        'tables.R' 'lake.R' 'delta.R' 'quak-package.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2026-06-04 20:51:19 UTC; pbtz
+Author: Pedro Baltazar [aut, cre, cph]
+Maintainer: Pedro Baltazar <pedrobtz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-09 15:50:02 UTC

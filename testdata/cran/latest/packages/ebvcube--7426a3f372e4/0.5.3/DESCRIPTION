@@ -1,0 +1,67 @@
+Package: ebvcube
+Title: Working with netCDF for Essential Biodiversity Variables
+Version: 0.5.3
+Date: 2026-05-26
+Authors@R: 
+    c(person(given = "Emmanuel",
+           family = "Oceguera Conchas",
+           role = c("aut", "cre"),
+           email = "e.oceguera@idiv.de",
+           comment = c(ORCID = "0009-0008-0107-9298")),
+    person(given = "Luise",
+           family = "Quoss",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-9910-1252")),
+    person(given = "Nestor",
+           family = "Fernandez",
+           role = c("aut"),
+           email = "nestor.fernandez@idiv.de",
+           comment = c(ORCID = "0000-0002-9645-8571")),
+    person(given = "Christian", 
+           family = "Langer",
+           role = c("aut"),
+           email= "christian.langer@idiv.de",
+           comment = c(ORCID = "0000-0003-1446-3527")),
+    person(given = "Jose", 
+           family = "Valdez",
+           role = c("aut"),
+           email="jose.valdez@idiv.de",
+           comment = c(ORCID = "0000-0003-2690-9952")),
+    person(given = "Henrique Miguel",
+           family = "Pereira",
+           role = c("aut"),
+           email = "henrique.pereira@idiv.de",
+           comment = c(ORCID = "0000-0003-1043-1675"))
+           )
+Author: Emmanuel Oceguera Conchas [aut, cre] (ORCID:
+    <https://orcid.org/0009-0008-0107-9298>),
+  Luise Quoss [aut] (ORCID: <https://orcid.org/0000-0002-9910-1252>),
+  Nestor Fernandez [aut] (ORCID: <https://orcid.org/0000-0002-9645-8571>),
+  Christian Langer [aut] (ORCID: <https://orcid.org/0000-0003-1446-3527>),
+  Jose Valdez [aut] (ORCID: <https://orcid.org/0000-0003-2690-9952>),
+  Henrique Miguel Pereira [aut] (ORCID:
+    <https://orcid.org/0000-0003-1043-1675>)
+Maintainer: Emmanuel Oceguera Conchas <e.oceguera@idiv.de>
+Description: The concept of Essential Biodiversity Variables (EBV, <https://geobon.org/ebvs/what-are-ebvs/>) 
+    comes with a data structure based on the Network Common Data Form (netCDF). 
+    The 'ebvcube' 'R' package provides functionality to easily create, access and 
+    visualise this data. The EBV netCDFs can be downloaded from the EBV Data 
+    Portal: Christian Langer/ iDiv (2020) <https://portal.geobon.org/>. 
+URL: https://github.com/EBVCube/ebvcube
+BugReports: https://github.com/EBVcube/ebvcube/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+biocViews:
+Imports: checkmate, curl, DelayedArray, ggplot2, HDF5Array, httr,
+        jsonlite, memuse, methods, ncdf4, ncmeta, reshape2, rhdf5,
+        stringr, terra, tidyterra, withr
+Suggests: knitr, lintr, rmarkdown, testthat (>= 3.0.0)
+SystemRequirements: GDAL binaries
+Depends: R (>= 4.2.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-27 11:00:06 UTC; no67wuwu
+Repository: CRAN
+Date/Publication: 2026-05-30 08:40:02 UTC

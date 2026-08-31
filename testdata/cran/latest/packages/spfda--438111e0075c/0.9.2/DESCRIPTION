@@ -1,0 +1,29 @@
+Package: spfda
+Type: Package
+Title: Function-on-Scalar Regression with Group-Bridge Penalty
+Version: 0.9.2
+License: MIT + file LICENSE
+Authors@R: c(
+    person("Zhengjia", "Wang", email = "dipterix.wang@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5629-1116")),
+    person("Meng", "Li", email = "meng@rice.edu", role = c("aut"), comment = c(ORCID = "0000-0003-2123-2444"))
+    )
+Description: Implements a group-bridge penalized function-on-scalar regression
+    model proposed by Wang et al. (2023) <doi:10.1111/biom.13684>, to simultaneously
+    estimate functional coefficient and recover the local sparsity.
+URL: https://github.com/dipterix/spfda, https://dipterix.org/spfda/
+BugReports: https://github.com/dipterix/spfda/issues
+Imports: stats, splines, graphics, mathjaxr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+RdMacros: mathjaxr
+BuildManual: TRUE
+Language: en-US
+Suggests: grpreg, refund
+NeedsCompilation: no
+Packaged: 2025-05-07 21:25:19 UTC; dipterix
+Author: Zhengjia Wang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5629-1116>),
+  Meng Li [aut] (ORCID: <https://orcid.org/0000-0003-2123-2444>)
+Maintainer: Zhengjia Wang <dipterix.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-07 21:40:02 UTC

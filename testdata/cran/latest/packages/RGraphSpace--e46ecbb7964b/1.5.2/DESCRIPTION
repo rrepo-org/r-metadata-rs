@@ -1,0 +1,57 @@
+Package: RGraphSpace
+Type: Package
+Version: 1.5.2
+Title: A Lightweight Interface Between 'igraph' and 'ggplot2' Graphics
+Description: An interface for rendering 'igraph' objects as 'ggplot2' graphics 
+    within a normalized coordinate space. 'RGraphSpace' implements new 
+    geometries that treat a graph as a single coherent object, synchronizing 
+    node and edge layers under standard aesthetic mappings. Node features are 
+    resolved on demand, supporting high-dimensional data without expanding 
+    node tables. Spatial alignment is available at the pixel level, 
+    with node coordinates anchored to pixel centers through a half-pixel 
+    offset, enabling precise node positioning over external reference frames 
+    such as images and maps.
+Authors@R: 
+    c(person("Sysbiolab Team", role = "aut"),
+      person("Flávio", "Kessler", role = "ctb"),
+      person("Jonathan", "Back", role = "ctb"),
+      person("Lana", "Querne", role = "ctb"),
+      person("Victor", "Apolonio", role = c("ctb")),
+      person("Vinicius", "Chagas", role = "ctb"),
+      person("Mauro", "Castro", role = c("cre"),
+              email = "mauro.a.castro@gmail.com",
+              comment = c(ORCID = "0000-0003-4942-8131")))
+Depends: R(>= 4.5), methods, ggplot2 (>= 4.0)
+Imports: grDevices, grid, igraph, tidygraph, scales, rlang, ggrastr,
+        Matrix, sf, stats, lifecycle
+Suggests: knitr, rmarkdown, testthat, ggraph, ggnewscale, patchwork,
+        Seurat, SeuratObject, SummarizedExperiment, SpatialExperiment
+Enhances: RedeR
+License: Artistic-2.0
+VignetteBuilder: knitr
+URL: https://github.com/sysbiolab/RGraphSpace,
+        https://sysbiolab.github.io/RGraphSpace/
+BugReports: https://github.com/sysbiolab/RGraphSpace/issues
+Collate: 'geom-edgespace.R' 'geom-graphspace.R' 'geom-nodespace.R'
+        'gspace-checks.R' 'gspace-classes.R' 'gspace-constructor.R'
+        'gspace-generics.R' 'gspace-methods.R' 'gspace-accessors.R'
+        'gspace-misc.R' 'gspace-subset.R' 'gspace-addition.R'
+        'gspace-subscript.R' 'gspace-normalize.R' 'gspace-transform.R'
+        'gspace-geometry.R' 'gspace-themes.R' 'gspace-validation.R'
+        'gspace-ggplot-constructor.R' 'annotation-gspace.R'
+        'gspace-coercion.R' 'gspace-features.R'
+Encoding: UTF-8
+RdMacros: lifecycle
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-23 21:37:30 UTC; maac
+Author: Sysbiolab Team [aut],
+  Flávio Kessler [ctb],
+  Jonathan Back [ctb],
+  Lana Querne [ctb],
+  Victor Apolonio [ctb],
+  Vinicius Chagas [ctb],
+  Mauro Castro [cre] (ORCID: <https://orcid.org/0000-0003-4942-8131>)
+Maintainer: Mauro Castro <mauro.a.castro@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 05:20:40 UTC

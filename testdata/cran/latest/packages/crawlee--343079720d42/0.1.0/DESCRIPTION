@@ -1,0 +1,40 @@
+Package: crawlee
+Title: Tidy Interface for Reproducible Web Crawling
+Version: 0.1.0
+Authors@R: c(
+    person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+    person("Marcos", "Wasilew", email = "marcos.wasilew@gmail.com", role = "aut"),
+    person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+    person("Carlos", "Amorin", email = "carlos.agaf@ufpe.br", role = "aut"),
+    person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"))
+Description: A tidy, pipe-friendly toolkit for reproducible web crawling
+    and structured data collection, inspired by the architecture of the
+    'Crawlee' library. Provides a unified crawler with a deduplicating,
+    resumable request queue, content-type aware handlers, structured
+    storage backends and rich console logging via 'cli'. Supports crawling
+    HTML pages, sitemaps, RSS and Atom feeds and PDF documents, with optional
+    headless-browser rendering and helpers for retrieval-augmented generation.
+License: MIT + file LICENSE
+URL: https://github.com/StrategicProjects/crawlee,
+        https://strategicprojects.github.io/crawlee/
+BugReports: https://github.com/StrategicProjects/crawlee/issues
+Depends: R (>= 4.1.0)
+Imports: cli, httr2, R6, rlang, rvest, tibble, vctrs, xml2
+Suggests: arrow, chromote, DBI, dplyr, duckdb, httptest2, jsonlite,
+        knitr, later, nanoparquet, pdftools, polite, promises,
+        rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-27 19:45:27 UTC; leite
+Author: Andre Leite [aut, cre],
+  Marcos Wasilew [aut],
+  Hugo Vasconcelos [aut],
+  Carlos Amorin [aut],
+  Diogo Bezerra [aut]
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-07-03 12:10:02 UTC

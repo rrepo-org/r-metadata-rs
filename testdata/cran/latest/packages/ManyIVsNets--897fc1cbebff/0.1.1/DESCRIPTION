@@ -1,0 +1,39 @@
+Package: ManyIVsNets
+Type: Package
+Title: Environmental Phillips Curve Analysis with Multiple Instrumental
+        Variables and Networks
+Version: 0.1.1
+Date: 2025-06-07
+Authors@R: person("Avishek", "Bhandari", 
+                  email = "bavisek@gmail.com", 
+                  role = c("aut", "cre", "cph"))
+Description: Comprehensive toolkit for Environmental Phillips Curve analysis 
+    featuring multidimensional instrumental variable creation, transfer entropy 
+    causal discovery, network analysis, and state-of-the-art econometric methods.
+    Implements geographic, technological, migration, geopolitical, financial, 
+    and natural risk instruments with robust diagnostics and visualization.
+    Provides 24 different instrumental variable approaches with empirical validation.
+    Methods based on Phillips (1958) <doi:10.1111/j.1468-0335.1958.tb00003.x>,
+    transfer entropy by Schreiber (2000) <doi:10.1103/PhysRevLett.85.461>, and 
+    weak instrument tests by Stock and Yogo (2005) <doi:10.1017/CBO9780511614491.006>.
+License: MIT + file LICENSE
+URL: https://github.com/avishekb9/ManyIVsNets,
+        https://avishekb9.github.io/ManyIVsNets/
+BugReports: https://github.com/avishekb9/ManyIVsNets/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0.0)
+Imports: dplyr, readr, igraph, ggplot2, ggraph, AER, lmtest, sandwich,
+        magrittr
+Suggests: testthat (>= 3.0.0), rmarkdown, pkgdown, knitr,
+        RTransferEntropy, tidyr, viridis, countrycode, spelling
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-06-19 18:07:52 UTC; avisek
+Author: Avishek Bhandari [aut, cre, cph]
+Maintainer: Avishek Bhandari <bavisek@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-23 11:20:02 UTC

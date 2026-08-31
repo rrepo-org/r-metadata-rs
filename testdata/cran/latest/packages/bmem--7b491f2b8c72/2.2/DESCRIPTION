@@ -1,0 +1,25 @@
+Package: bmem
+Type: Package
+Title: Mediation Analysis with Missing Data Using Bootstrap
+Version: 2.2
+Date: 2025-09-02
+Authors@R: c(person(given = "Zhiyong",
+                      family = "Zhang",
+                      role = c("aut", "cre"),
+                      email = "zhiyongzhang@nd.edu"),
+               person(given = "Lijuan",
+                      family = "Wang",
+                      role = "aut"))
+Maintainer: Zhiyong Zhang <zhiyongzhang@nd.edu>
+Depends: R (>= 1.7), Amelia, MASS, snowfall
+Imports: lavaan, sem
+Description: Four methods for mediation analysis with missing data: Listwise deletion, Pairwise deletion, Multiple imputation, and Two Stage Maximum Likelihood algorithm. For MI and TS-ML, auxiliary variables can be included. Bootstrap confidence intervals for mediation effects are obtained. The robust method is also implemented for TS-ML. Since version 1.4, bmem adds the capability to conduct power analysis for mediation models. Details about the methods used can be found in these articles. Zhang and Wang (2003) <doi:10.1007/s11336-012-9301-5>. Zhang (2014) <doi:10.3758/s13428-013-0424-0>.
+License: GPL-2
+LazyLoad: yes
+URL: https://bigdatalab.nd.edu
+NeedsCompilation: no
+Packaged: 2025-09-03 19:11:09 UTC; zzhang4
+Author: Zhiyong Zhang [aut, cre],
+  Lijuan Wang [aut]
+Repository: CRAN
+Date/Publication: 2025-09-03 19:40:02 UTC

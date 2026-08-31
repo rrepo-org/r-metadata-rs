@@ -1,0 +1,41 @@
+Package: BKBreed
+Type: Package
+Title: Colourful Biometrical Analysis for Plant Breeding and Genetics
+Version: 0.3.2
+Authors@R: person(given = "Praveen Kumar",
+                   family = "B. K.",
+                   role = c("aut", "cre"),
+                   email = "bkpraveenars@gmail.com")
+Description: A compact, colour-first toolkit for the analysis of plant
+    breeding and genetics field experiments. It provides analysis of variance
+    for the randomised block design (RBD) and factorial RBD, a check-anchored
+    intra-block analysis for augmented alpha-lattice designs, and the core
+    biometrical-genetics workflow used in crop improvement: estimation of
+    genetic variability (genotypic and phenotypic coefficients of variation,
+    broad-sense heritability, expected genetic advance), genotypic and
+    phenotypic correlation, path-coefficient analysis, line x tester and
+    Griffing diallel combining-ability analysis (general combining ability
+    and specific combining ability), Mahalanobis D-square genetic-divergence
+    analysis with Tocher and hierarchical clustering, and
+    genotype-by-environment stability analysis (Eberhart-Russell regression
+    and the additive main effects and multiplicative interaction (AMMI)
+    model). Methods follow Griffing (1956) <doi:10.1071/BI9560463> and
+    Eberhart and Russell (1966)
+    <doi:10.2135/cropsci1966.0011183X000600010011x>. Every analysis returns a
+    tidy result object and a publication-ready 'ggplot2' figure using a
+    bespoke high-contrast colour system.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats, utils, grDevices, ggplot2
+Suggests: ggrepel, patchwork, knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+URL: https://github.com/bkpraveenars-del/BKBreed
+BugReports: https://github.com/bkpraveenars-del/BKBreed/issues
+NeedsCompilation: no
+Packaged: 2026-07-21 11:32:41 UTC; ASUS
+Author: Praveen Kumar B. K. [aut, cre]
+Maintainer: Praveen Kumar B. K. <bkpraveenars@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-30 16:40:14 UTC

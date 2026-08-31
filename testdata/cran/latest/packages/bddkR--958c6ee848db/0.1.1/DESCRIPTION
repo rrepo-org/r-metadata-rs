@@ -1,0 +1,24 @@
+Package: bddkR
+Type: Package
+Title: Gathering Monthly Banking Sector Data from BDDK of Turkey
+Version: 0.1.1
+Authors@R: person(given = "Ozancan",
+                  family = "Ozdemir",
+                  role = c("aut", "cre"),
+                  email = "ozancanozdemir@gmail.com")
+Maintainer: Ozancan Ozdemir <ozancanozdemir@gmail.com>
+Description: Fetches monthly financial tables and banking sector data published on the official website of the Banking Regulation and Supervision Agency of Turkey and also enables you to save it as an Excel file. It is a R implementation of the Python package <https://pypi.org/project/bddkdata/>.    
+License: MIT + file LICENSE
+URL: https://github.com/ozancanozdemir/bddkR
+BugReports: https://github.com/ozancanozdemir/bddkR/issues
+Depends: R (>= 4.0)
+Imports: httr, jsonlite, dplyr, writexl, lubridate
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-09 20:47:36 UTC; ozancanozdemir
+Author: Ozancan Ozdemir [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-09-14 16:30:02 UTC

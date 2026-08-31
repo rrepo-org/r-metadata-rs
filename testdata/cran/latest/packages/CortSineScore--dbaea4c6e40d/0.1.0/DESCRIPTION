@@ -1,0 +1,27 @@
+Package: CortSineScore
+Title: Compute Cortisol Sine Score (CSS) for Diurnal Cortisol Analysis
+Version: 0.1.0
+Description: Computes a single scalar metric for diurnal cortisol cycle analysis,
+    the Cortisol Sine Score (CSS). The score is calculated as the sum over time
+    points of concentration multiplied by sin(2 * pi * time / 24), giving positive
+    weights to morning time points and negative weights to evening ones. The method
+    is model-free, robust, and suitable for regression, classification, clustering,
+    and biomarker research.
+Authors@R: 
+    c(person(given = "Simone", family = "Anzà", role = c("aut", "cre"),
+      email = "simoneanza@gmail.com"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: purrr, magrittr, dplyr
+Suggests: tibble
+URL: https://github.com/simone-anza/CortSineScore
+BugReports: https://github.com/simone-anza/CortSineScore/issues
+NeedsCompilation: no
+Packaged: 2025-10-15 20:33:06 UTC; simon
+Author: Simone Anzà [aut, cre]
+Maintainer: Simone Anzà <simoneanza@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-20 19:40:14 UTC

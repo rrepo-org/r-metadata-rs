@@ -1,0 +1,33 @@
+Package: aedl
+Type: Package
+Title: Almost-Exact Inference for the DerSimonian-Laird Test Statistic
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Keisuke", "Hanada",
+      email = "keisuke.hanada.87@gmail.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-1444-0280")
+    )
+  )
+Description: Implements almost-exact inference for the DerSimonian-Laird
+    test statistic in the normal-normal random-effects meta-analysis model,
+    as described in Hanada and Sugimoto (2023) <doi:10.1007/s10463-022-00844-4>.
+    The method approximates the distribution of the DerSimonian-Laird test
+    statistic by combining the distribution of the untruncated
+    DerSimonian-Laird estimator of the between-study variance with a
+    conditional normal approximation. Methods based on a plug-in
+    between-study variance and a corrected heterogeneity measure are provided.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats, withr
+Suggests: testthat (>= 3.0.0), metadat
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-19 00:07:18 UTC; keisu
+Author: Keisuke Hanada [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1444-0280>)
+Maintainer: Keisuke Hanada <keisuke.hanada.87@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-27 08:40:02 UTC

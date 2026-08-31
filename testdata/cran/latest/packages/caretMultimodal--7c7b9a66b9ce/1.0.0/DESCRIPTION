@@ -1,0 +1,33 @@
+Package: caretMultimodal
+Title: Multimodal Late Fusion with 'caret'
+Version: 1.0.0
+Authors@R: 
+    c(
+        person("Josh", "Dyce", , "jpdyce@gmail.com", role = c("aut", "cre")),
+        person("Amrit", "Singh", role = c("aut"))
+    )
+Description: Extends the 'caret' framework to support late fusion workflows,
+    enabling users to train models independently across multiple data modalities and combine their
+    predictions into a single meta-model. Designed for developers, data scientists, and 
+    biomedical researchers alike, 'caretMultimodal' aims to make late fusion ensemble modelling
+    as accessible and flexible as single-dataset workflows in 'caret'. Late fusion methods are based on Wolpert (1992) 
+    <doi:10.1016/S0893-6080(05)80023-1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), randomForest, doParallel
+Imports: caret, data.table, ggplot2, pROC, foreach, viridis,
+        MultiAssayExperiment, glmnet
+Config/testthat/edition: 3
+URL: https://github.com/CompBio-Lab/caretMultimodal,
+        https://compbio-lab.github.io/caretMultimodal/
+BugReports: https://github.com/CompBio-Lab/caretMultimodal/issues
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-24 16:21:44 UTC; jpdyc
+Author: Josh Dyce [aut, cre],
+  Amrit Singh [aut]
+Maintainer: Josh Dyce <jpdyce@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 12:30:07 UTC

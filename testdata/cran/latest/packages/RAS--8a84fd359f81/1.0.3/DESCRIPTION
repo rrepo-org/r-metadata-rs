@@ -1,0 +1,31 @@
+Package: RAS
+Title: Regional Association Score for Genome-Wide Association Studies
+Version: 1.0.3
+Authors@R: c(
+    person("Yiran", "Jiang", email = "yiran.jiang@uky.edu", role = "aut"),
+    person("Jiahe", "Jin", email = "jiahe.jin@yale.edu", role = c("aut", "cre")),
+    person("Heping", "Zhang", email = "heping.zhang@yale.edu", role = "aut"))
+Description: Implements the Regional Association Score (RAS) method for
+    genome-wide association studies (GWAS). For each single nucleotide
+    polymorphism (SNP), RAS quantifies the strength of association within its
+    surrounding genomic region, arranges these regional scores along the
+    chromosome into a signal profile, and applies changepoint detection to
+    locate association regions, improving statistical power while controlling
+    the false positive rate. The method is described in Jiang and Zhang (2025)
+    <doi:10.1073/pnas.2419721122>.
+License: MIT + file LICENSE
+URL: https://github.com/hepingzhangyale/RAS
+BugReports: https://github.com/hepingzhangyale/RAS/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: grDevices, graphics, parallel, segmented, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-16 18:12:45 UTC; ianji
+Author: Yiran Jiang [aut],
+  Jiahe Jin [aut, cre],
+  Heping Zhang [aut]
+Maintainer: Jiahe Jin <jiahe.jin@yale.edu>
+Repository: CRAN
+Date/Publication: 2026-07-24 09:30:24 UTC

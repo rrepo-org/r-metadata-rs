@@ -1,0 +1,30 @@
+Package: activPAL
+Type: Package
+Title: Advanced Processing and Chart Generation from activPAL Events
+        Files
+Version: 0.1.4
+Authors@R: c(
+    person("Craig", "Speirs", email = "craig@paltechnologies.com", role = c("aut", "cre")),
+    person("Kate", "Lyden", email = "kate@paltechnologies.com", role = c("ctb")),
+    person("Douglas", "Maxwell", email = "douglas@paltechnologies.com", role = c("ctb")),
+    person("David", "Loudon", email = "david@paltechnologies.com", role = c("ctb")))
+Maintainer: Craig Speirs <craig@paltechnologies.com>
+Description: Contains functions to generate pre-defined summary statistics from activPAL
+    events files <https://www.palt.com/>.  The package also contains functions to produce informative 
+    graphics that visualise physical activity behaviour and trends.  This includes
+    generating graphs that align physical activity behaviour with additional time based 
+    observations described by other data sets, such as sleep diaries and continuous glucose 
+    monitoring data.
+License: GPL-3
+Encoding: UTF-8
+Imports: dplyr, ggplot2, tidyr, lubridate, magrittr, methods, devtools
+RoxygenNote: 6.1.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2025-09-17 13:31:00 UTC; CraigSpeirs
+Author: Craig Speirs [aut, cre],
+  Kate Lyden [ctb],
+  Douglas Maxwell [ctb],
+  David Loudon [ctb]
+Repository: CRAN
+Date/Publication: 2025-09-17 14:20:02 UTC

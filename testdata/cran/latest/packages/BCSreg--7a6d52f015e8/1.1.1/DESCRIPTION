@@ -1,0 +1,38 @@
+Package: BCSreg
+Type: Package
+Title: Box-Cox Symmetric Regression for Non-Negative Data
+Version: 1.1.1
+Authors@R: c(
+  person("Felipe", "Queiroz",
+          email = "ffelipeq@outlook.com", 
+          role = "aut",
+          comment = c(ORCID = "0000-0001-8368-0707")),
+  person("Rodrigo", "Medeiros",
+          email = "rodrigo.matheus@ufrn.br",
+          role = c("aut", "cre", "cph"),
+          comment = c(ORCID = "0000-0001-8101-3038"))
+          )
+Description: A collection of tools for regression analysis of non-negative data,
+    including strictly positive and zero-inflated observations, based on the class of the Box-Cox
+    symmetric (BCS) distributions and its zero-adjusted extension. The BCS distributions are a 
+    class of flexible probability models capable of describing different levels of skewness and 
+    tail-heaviness. The package offers a comprehensive regression modeling framework, including 
+    estimation and tools for evaluating goodness-of-fit.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL: https://github.com/ffqueiroz/BCSreg
+BugReports: https://github.com/ffqueiroz/BCSreg/issues
+Imports: distr, EnvStats, Formula, gamlss.dist, GeneralizedHyperbolic
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-02-09 15:33:23 UTC; rodri
+Author: Felipe Queiroz [aut] (ORCID: <https://orcid.org/0000-0001-8368-0707>),
+  Rodrigo Medeiros [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8101-3038>)
+Maintainer: Rodrigo Medeiros <rodrigo.matheus@ufrn.br>
+Repository: CRAN
+Date/Publication: 2026-02-09 16:00:02 UTC

@@ -1,0 +1,66 @@
+Package: prepR4pcm
+Title: Prepare Data and Trees for Phylogenetic Comparative Methods
+Version: 1.0.2
+Authors@R: c(
+    person("Shinichi", "Nakagawa",
+           email = "itchyshin@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-7765-5182")),
+    person("Santiago", "Ortega",
+           role = "aut"),
+    person("Ayumi", "Mizuno",
+           role = "aut"),
+    person("Eduardo S.A.", "Santos",
+           role = "aut"),
+    person("Malgorzata", "Lagisz",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-3993-6127")),
+    person("Bhavya", "Jain",
+           role = "aut"),
+    person("Jimuel Jr", "Celeste",
+           role = "aut"),
+    person("Sergio", "Poo Hernandez",
+           email = "pooherna@ualberta.ca",
+           role = "aut")
+  )
+Description: Reconcile species names across datasets and phylogenetic trees
+    for comparative biology workflows. Identifies mismatches due to formatting
+    differences, taxonomic synonymy, and spelling errors. Produces detailed
+    reports documenting how each name was resolved, which taxonomic authority
+    was used, and what remains unresolved. Supports exact matching, name
+    normalisation, synonym resolution via local taxonomic databases, and
+    fuzzy matching for likely typos. Detects taxonomic splits and lumps. For
+    methodological context, see Nakagawa et al. (2026)
+    <doi:10.32942/X2468Z>.
+License: MIT + file LICENSE
+URL: https://github.com/itchyshin/prepR4pcm,
+        https://itchyshin.github.io/prepR4pcm/
+BugReports: https://github.com/itchyshin/prepR4pcm/issues
+Date: 2026-08-07
+Language: en-GB
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: ape, cli, rlang, tibble
+Suggests: caper, clootl, digest, dplyr, fishtree, httr2, knitr,
+        MCMCglmm, phytools, piggyback, pkgdown, readr, rgnparser,
+        rmarkdown, rotl, rtrees, spelling, stringr, taxadb, testthat
+        (>= 3.0.0)
+LazyData: true
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-07 22:36:30 UTC; z3437171
+Author: Shinichi Nakagawa [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-7765-5182>),
+  Santiago Ortega [aut],
+  Ayumi Mizuno [aut],
+  Eduardo S.A. Santos [aut],
+  Malgorzata Lagisz [aut] (ORCID:
+    <https://orcid.org/0000-0002-3993-6127>),
+  Bhavya Jain [aut],
+  Jimuel Jr Celeste [aut],
+  Sergio Poo Hernandez [aut]
+Maintainer: Shinichi Nakagawa <itchyshin@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 13:10:02 UTC

@@ -1,0 +1,46 @@
+Package: ECMLE
+Type: Package
+Title: Approximating Evidence via Bounded Harmonic Means
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Dana",
+           family = "Naderi",
+           email = "naderi@ceremade.dauphine.fr",
+           role = c("aut", "cre")),
+    person(given = c("Christian", "P."),
+           family = "Robert",
+           role = "aut"),
+    person(given = "Kaniav",
+           family = "Kamary",
+           role = "aut"),
+    person(given = "Darren",
+           family = "Wraith",
+           role = "aut")
+  )
+Description: Implements the Elliptical Covering Marginal Likelihood Estimator
+    (ECMLE), a geometric method for approximating marginal likelihood from
+    posterior draws and log-posterior evaluations. The method constructs a
+    collection of non-overlapping ellipsoids in a high-posterior-density
+    region, computes the covered volume, and combines this with posterior
+    sample coverage to estimate model evidence. It is designed to stabilize
+    harmonic-mean-based evidence approximation and can be applied in
+    multimodal settings. The methodology is described in Naderi et al. (2025)
+    <doi:10.48550/arXiv.2510.20617>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: IDPmisc, graphics, stats, withr
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/da-na-deri/ECMLE
+BugReports: https://github.com/da-na-deri/ECMLE/issues
+NeedsCompilation: no
+Packaged: 2026-03-23 11:15:51 UTC; naderi
+Author: Dana Naderi [aut, cre],
+  Christian P. Robert [aut],
+  Kaniav Kamary [aut],
+  Darren Wraith [aut]
+Maintainer: Dana Naderi <naderi@ceremade.dauphine.fr>
+Repository: CRAN
+Date/Publication: 2026-03-26 10:10:12 UTC

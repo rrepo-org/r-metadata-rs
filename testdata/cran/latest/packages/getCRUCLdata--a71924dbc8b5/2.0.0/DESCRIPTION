@@ -1,0 +1,49 @@
+Type: Package
+Package: getCRUCLdata
+Title: 'CRU' 'CL' v. 2.0 Climatology Client
+Version: 2.0.0
+Authors@R: 
+    person("Adam H.", "Sparks", , "adamhsparks@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0061-8359"))
+Description: Provides functions that automate downloading and importing
+    University of East Anglia Climate Research Unit ('CRU') 'CL' v. 2.0
+    climatology data, facilitates the calculation of minimum temperature
+    and maximum temperature and formats the data into a data.table object
+    or a 'terra' 'SpatRaster' object.  'CRU' 'CL' v. 2.0 data are a
+    gridded climatology of 1961-1990 monthly means released in 2002 and
+    cover all land areas (excluding Antarctica) at 10 arc minutes
+    (0.1666667 degree) resolution.  For more information see the
+    description of the data provided by the University of East Anglia
+    Climate Research Unit,
+    <https://crudata.uea.ac.uk/cru/data/hrg/tmc/readme.txt>.
+License: MIT + file LICENSE
+URL: https://codeberg.org/ropensci/getCRUCLdata,
+        https://docs.ropensci.org/getCRUCLdata/
+BugReports: https://codeberg.org/ropensci/getCRUCLdata/issues
+Depends: R (>= 4.1.0)
+Imports: brio, cli, data.table, fs, httr2, rlang, terra
+Suggests: knitr, R.utils, rmarkdown, roxygen2, roxyglobals, spelling,
+        testthat, withr
+VignetteBuilder: knitr
+ByteCompile: TRUE
+Config/Needs/build: moodymudskipper/devtag
+Config/roxygen2/version: 8.0.0
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+Config/roxylint: list(linters = roxylint::tidy)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+Language: en-US
+X-schema.org-applicationCategory: Tools
+X-schema.org-isPartOf: https://ropensci.org
+X-schema.org-keywords: anglia-cru, climate-data, cru-cl2, temperature,
+        rainfall, elevation, data-access, wind, relative-humidity,
+        solar-radiation, diurnal-temperature, frost
+NeedsCompilation: no
+Packaged: 2026-05-16 11:48:48 UTC; adamsparks
+Author: Adam H. Sparks [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0061-8359>)
+Maintainer: Adam H. Sparks <adamhsparks@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-20 09:10:02 UTC

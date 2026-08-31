@@ -1,0 +1,54 @@
+Package: redatam
+Type: Package
+Title: Import 'REDATAM' Files
+Version: 2.3.1
+Authors@R: c(
+    person(
+        given = "Mauricio",
+        family = "Vargas Sepulveda",
+        role = c("aut", "cre"),
+        email = "m.vargas.sepulveda@gmail.com",
+        comment = c(ORCID = "0000-0003-1017-7574")),
+    person(
+        given = "Lital",
+        family = "Barkai",
+        role = "aut"),
+    person(
+        given = "Ivan",
+        family = "Krylov",
+        role = "ctb"),
+    person(
+        given = "Arseny",
+        family = "Kapoulkine",
+        role = "ctb",
+        comment = "'pugixml' C++ library"),
+    person(
+        family = "Oriental Republic of Uruguay",
+        role = "dtc",
+        comment = "Aggregated census data from 2011")
+    )
+Imports: data.table, janitor, stringi, stringr, tibble
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Depends: R(>= 3.5.0)
+Description: Import 'REDATAM' formats into R via the 'Open REDATAM' C++ library.
+    The full context of this project and details about the implementation are
+    available in <doi:10.1017/dap.2025.4> (Open Access).
+License: Apache License (>= 2)
+URL: https://github.com/litalbarkai/open-redatam
+BugReports: https://github.com/litalbarkai/open-redatam/issues
+Encoding: UTF-8
+NeedsCompilation: yes
+VignetteBuilder: knitr
+LinkingTo: cpp4r
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-05-27 16:35:28 UTC; pacha
+Author: Mauricio Vargas Sepulveda [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1017-7574>),
+  Lital Barkai [aut],
+  Ivan Krylov [ctb],
+  Arseny Kapoulkine [ctb] ('pugixml' C++ library),
+  Oriental Republic of Uruguay [dtc] (Aggregated census data from 2011)
+Maintainer: Mauricio Vargas Sepulveda <m.vargas.sepulveda@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-27 17:20:02 UTC

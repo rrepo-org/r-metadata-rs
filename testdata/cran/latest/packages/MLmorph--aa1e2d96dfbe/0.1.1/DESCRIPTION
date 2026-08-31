@@ -1,0 +1,37 @@
+Package: MLmorph
+Type: Package
+Title: Integrating Morphological Modeling and Machine Learning for
+        Decision Support
+Version: 0.1.1
+Authors@R: 
+    person(given = "Oskar", family = "Kosch", email = "contact@oskarkosch.com",
+    role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0003-2697-1393"))
+Description: Integrating morphological modeling with machine learning to support
+   structured decision-making (e.g., in management and consulting). The package
+   enumerates a morphospace of feasible configurations and uses random forests
+   to estimate class probabilities over that space, bridging deductive model
+   exploration with empirical validation. It includes utilities for factorizing
+   inputs, model training, morphospace construction, and an interactive 'shiny'
+   app for scenario exploration.
+License: MIT + file LICENSE
+URL: https://github.com/theogrost/MLmorph
+BugReports: https://github.com/theogrost/MLmorph/issues
+Encoding: UTF-8
+Depends: R (>= 4.3.0)
+Imports: bslib (>= 0.9.0), caret (>= 6.0.94), dplyr (>= 1.1.4), ggplot2
+        (>= 3.5.1), htmltools (>= 0.5.8.1), jsonlite (>= 1.8.8),
+        magrittr, openxlsx (>= 4.2.5.2), plotly (>= 4.10.4),
+        randomForest (>= 4.7.1.1), reactable (>= 0.4.4), shiny (>=
+        1.10.0), shinyFiles (>= 0.9.3), shinyjs (>= 2.1.0), stats (>=
+        4.3.0), tidyr (>= 1.3.1), utils (>= 4.3.0)
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-11-05 20:29:21 UTC; theog
+Author: Oskar Kosch [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2697-1393>)
+Maintainer: Oskar Kosch <contact@oskarkosch.com>
+Repository: CRAN
+Date/Publication: 2025-11-05 20:40:02 UTC

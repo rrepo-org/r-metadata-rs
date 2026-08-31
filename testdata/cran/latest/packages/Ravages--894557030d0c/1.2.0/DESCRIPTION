@@ -1,0 +1,35 @@
+Package: Ravages
+Type: Package
+Title: Rare Variant Analysis and Genetic Simulations
+Version: 1.2.0
+Date: 2026-02-27
+Encoding: UTF-8
+Authors@R: c(person(given = "Ozvan",
+                        family = "Bocher",
+                        role = c("aut", "cre"),
+                        email = "ozvan.bocher@univ-brest.fr"),
+                 person(given = "Hervé",
+                        family = "Perdry",
+                        role = "aut"),
+                 person(given = "Gaelle",
+                        family = "Marenne",
+                        role = "aut"))
+Description: Rare variant association tests: burden tests (Bocher et al. 2019 <doi:10.1002/gepi.22210>) and the Sequence Kernel Association Test (Bocher et al. 2021 <doi:10.1038/s41431-020-00792-8>) in the whole genome using the RAVA-FIRST approach (Bocher et al. 2022 <doi:10.1371/journal.pgen.1009923>). Ravages also enables to perform genetic simulations (Bocher et al. 2023 <doi:10.1002/gepi.22529>).
+License: GPL-3
+LinkingTo: Rcpp, RcppParallel, RcppEigen, gaston, BH
+Depends: R (>= 3.5.0), Rcpp, RcppParallel, methods, gaston, mlogit (>=
+        1.1-0)
+Imports: Formula, dfidx, parallel, bedr, curl, data.table
+NeedsCompilation: yes
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+LazyLoad: yes
+LazyData: yes
+LazyDataCompression: xz
+Packaged: 2026-02-27 14:21:22 UTC; obocher
+Author: Ozvan Bocher [aut, cre],
+  Hervé Perdry [aut],
+  Gaelle Marenne [aut]
+Maintainer: Ozvan Bocher <ozvan.bocher@univ-brest.fr>
+Repository: CRAN
+Date/Publication: 2026-02-27 15:42:16 UTC

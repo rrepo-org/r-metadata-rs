@@ -1,0 +1,41 @@
+Package: mpathr
+Title: Easily Handling Data from the ‘m-Path’ Platform
+Version: 1.0.4
+Authors@R: c(
+    person("Merijn", "Mestdagh", , "merijn.mestdagh@m-path.io", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5077-861X")),
+    person("Lara", "Navarrete", , "larann901@gmail.com", role = "aut"),
+    person("Koen", "Niemeijer", , "koen.niemeijer@kuleuven.be", role = "aut",
+           comment = c(ORCID = "0000-0002-0816-534X")),
+    person("m-Path Software", role = "cph")
+  )
+Description: Provides tools for importing and cleaning Experience Sampling
+    Method (ESM) data collected via the 'm-Path' platform. The goal is
+    to provide with a few utility functions to be able to read and perform
+    some common operations in ESM data collected through the 'm-Path'
+    platform (<https://m-path.io/landing/>). Functions include raw data
+    handling, format standardization, and basic data checks, as well as to
+    calculate the response rate in data from ESM studies.
+License: GPL (>= 3)
+URL: https://m-path.io, https://github.com/m-path-io/mpathr
+BugReports: https://github.com/m-path-io/mpathr/issues
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, ggplot2, jsonlite, lifecycle, lubridate, readr,
+        rlang, tidyr
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-05 10:58:55 UTC; u0134047
+Author: Merijn Mestdagh [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5077-861X>),
+  Lara Navarrete [aut],
+  Koen Niemeijer [aut] (ORCID: <https://orcid.org/0000-0002-0816-534X>),
+  m-Path Software [cph]
+Maintainer: Merijn Mestdagh <merijn.mestdagh@m-path.io>
+Repository: CRAN
+Date/Publication: 2026-02-05 11:40:02 UTC

@@ -1,0 +1,39 @@
+Package: arete
+Title: Automated REtrieval from TExt
+Version: 0.2
+Date: 2026-05-11
+Author: Vasco V. Branco [cre, aut] (ORCID:
+    <https://orcid.org/0000-0001-7797-3183>),
+  Vaughn Shirey [ctb] (ORCID: <https://orcid.org/0000-0002-3589-9699>),
+  Thomas Merrien [ctb] (ORCID: <https://orcid.org/0000-0002-0339-5656>),
+  Pedro Cardoso [aut] (ORCID: <https://orcid.org/0000-0001-8119-9960>)
+Authors@R: c(
+      person("Vasco V.", "Branco", role = c("cre","aut"),  
+			email = "vasco.branco@helsinki.fi", 
+			comment = c(ORCID = "0000-0001-7797-3183")),
+			person("Vaughn", "Shirey", role = c("ctb"),  
+			email = "vms55@georgetown.edu", 
+			comment = c(ORCID = "0000-0002-3589-9699")),
+			person("Thomas", "Merrien", role = c("ctb"),  
+			email = "thomas.merrien@helsinki.fi", 
+			comment = c(ORCID = "0000-0002-0339-5656")),
+			person("Pedro", "Cardoso", role = c("aut"),  
+			email = "pedro.cardoso@helsinki.fi", 
+			comment = c(ORCID = "0000-0001-8119-9960"))
+			)
+Maintainer: Vasco V. Branco <vasco.branco@helsinki.fi>
+Description: A Python based pipeline for extraction of species occurrence data through the usage of large language models. Includes validation tools designed to handle model hallucinations for a scientific, rigorous use of LLM. Currently supports usage of GPT with more planned, including local and non-proprietary models. For more details on the methodology used please consult the references listed under each function, such as Kent, A. et al. (1995) <doi:10.1002/asi.5090060209>, van Rijsbergen, C.J. (1979, ISBN:978-0408709293, Levenshtein, V.I. (1966) <https://nymity.ch/sybilhunting/pdf/Levenshtein1966a.pdf> and Klaus Krippendorff (2011) <https://repository.upenn.edu/handle/20.500.14332/2089>.
+Depends: R (>= 4.3.0)
+Imports: terra, cld2, stringr, reticulate, pdftools, fedmatch,
+        kableExtra, dplyr, gecko, methods, ggplot2, jsonlite,
+        googledrive, irr, rmarkdown
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-05-11 16:02:05 UTC; sauron
+Repository: CRAN
+Config/Needs/website: rmarkdown
+Suggests: knitr
+VignetteBuilder: knitr
+Date/Publication: 2026-05-11 18:50:26 UTC

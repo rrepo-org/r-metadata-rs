@@ -1,0 +1,28 @@
+Package: dtsmartr
+Title: Interactive Virtualized Data Explorer Grid Widget
+Version: 0.4.1
+Authors@R: 
+    person("Nikhil", "Wagh", , "nmw1986@gmail.com", role = c("aut", "cre"))
+Description: Provides an interactive, virtualized data explorer widget for 'R'.
+    Built on 'React' (via 'reactR') and 'htmlwidgets', it offers column-type
+    detection, multi-value checkbox filtering, sorting, column visibility
+    toggling, virtual scrolling for large datasets, and a full-viewport modal.
+    Includes 'dtsmartr_launch()' with an interactive, zero-code file upload wizard
+    using 'datamods'. Widgets can be embedded in 'R Markdown' / 'Quarto' documents,
+    'Shiny' applications, or exported as standalone HTML files via 'save_dtsmartr()'.
+License: MIT + file LICENSE
+URL: https://github.com/wagh-nikhil/dtsmartr
+BugReports: https://github.com/wagh-nikhil/dtsmartr/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: arrow, base64enc, datamods, htmltools, htmlwidgets, jsonlite,
+        reactR, shiny, tools, utils
+Suggests: bslib, knitr, pharmaverseadam, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-16 15:54:36 UTC; hp
+Author: Nikhil Wagh [aut, cre]
+Maintainer: Nikhil Wagh <nmw1986@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-16 16:40:02 UTC

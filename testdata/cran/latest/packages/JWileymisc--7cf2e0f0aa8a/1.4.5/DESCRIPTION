@@ -1,0 +1,38 @@
+Package: JWileymisc
+Title: Miscellaneous Utilities and Functions
+Version: 1.4.5
+Authors@R: 
+    person(given = "Joshua F.",
+           family = "Wiley",
+           role = c("aut", "cre"),
+           email = "jwiley.psych@gmail.com",
+           comment = c(ORCID = "0000-0002-0271-6702"))
+URL: https://joshuawiley.com/JWileymisc/,
+        https://github.com/JWiley/JWileymisc
+BugReports: https://github.com/JWiley/JWileymisc/issues
+Description: Miscellaneous tools and functions,
+    including: generate descriptive statistics tables,
+    format output, visualize relations among variables or check
+    distributions, and generic functions for residual and
+    model diagnostics. 
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: stats, utils, MASS, multcompView, emmeans, data.table (>=
+        1.18.0), graphics, grid, ggplot2 (>= 4.0.0), scales, ggpubr,
+        mgcv, mice, methods, psych, robustbase, gamlss, lavaan (>=
+        0.6-21), VGAM (>= 1.1-14), lme4, extraoperators (>= 0.1.1),
+        digest, fst, rlang
+Suggests: foreach, testthat (>= 3.3.0), covr, withr, knitr, rmarkdown,
+        pander, GPArotation, rms
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-18 03:12:10 UTC; jwile
+Author: Joshua F. Wiley [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0271-6702>)
+Maintainer: Joshua F. Wiley <jwiley.psych@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-18 05:10:19 UTC

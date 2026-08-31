@@ -1,0 +1,26 @@
+Package: r5rgui
+Title: Graphical User Interface for 'r5r' Router
+Version: 0.2.0
+Authors@R: 
+    person("Egor", "Kotov", , "kotov.egor@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-6690-5345"))
+Description: Interactively build and explore public transit routes with
+    'r5r' package via a graphical user interface in a 'shiny' app. The
+    underlying routing methods are described in Pereira et al. (2021)
+    <doi:10.32866/001c.21262>.
+License: MIT + file LICENSE
+URL: https://github.com/e-kotov/r5rgui, https://www.ekotov.pro/r5rgui/
+BugReports: https://github.com/e-kotov/r5rgui/issues
+Imports: DT, mapgl, r5r, sf, shiny
+Suggests: mockery, quarto, rlang, shinytest2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-11 23:33:38 UTC; ek
+Author: Egor Kotov [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-6690-5345>)
+Maintainer: Egor Kotov <kotov.egor@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-12 00:10:02 UTC

@@ -1,0 +1,35 @@
+Package: DamageDetective
+Type: Package
+Title: Detecting Damaged Cells in Single-Cell RNA Sequencing Data
+Version: 1.0.0
+Authors@R: 
+    person("Alicen", "Henning", email = "alicen.jhb@gmail.com",
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0009-0004-0535-1624"))
+Description: Detects and filters damaged cells in single-cell RNA sequencing
+    (scRNA-seq) data using a novel approach inspired by 'DoubletFinder'. Damage
+    is detected by measuring the extent to which cells deviate from
+    artificially damaged profiles of themselves, simulated through the
+    probabilistic escape of cytoplasmic RNA. As output, a damage score
+    ranging from 0 to 1 is given for each cell providing an intuitive scale for 
+    filtering that is standardised across cell types, samples, and experiments.
+License: AGPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+LazyData: false
+RoxygenNote: 7.3.2
+Depends: R (>= 4.4.0)
+Imports: cowplot, dplyr, ggplot2, ggpubr, Matrix, patchwork, scales,
+        RcppHNSW, rlang, tidyr, withr
+Suggests: Seurat, knitr, rmarkdown, spelling
+VignetteBuilder: knitr
+URL: https://alicenjoyhenning.github.io/DamageDetective/,
+        https://github.com/alicenjoyhenning/DamageDetective
+BugReports: https://github.com/alicenjoyhenning/DamageDetective/issues
+NeedsCompilation: no
+Packaged: 2025-04-03 10:53:38 UTC; alicen
+Author: Alicen Henning [aut, cre, cph]
+    (<https://orcid.org/0009-0004-0535-1624>)
+Maintainer: Alicen Henning <alicen.jhb@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-03 16:20:02 UTC

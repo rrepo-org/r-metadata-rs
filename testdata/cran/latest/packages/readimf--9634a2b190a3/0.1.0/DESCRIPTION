@@ -1,0 +1,28 @@
+Package: readimf
+Title: Access International Monetary Fund Data via the 'SDMX' 3.0 API
+Version: 0.1.0
+Authors@R: 
+    person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
+Description: Download macroeconomic and financial statistics from the
+    International Monetary Fund data portal (<https://data.imf.org>), served
+    through an 'SDMX' 3.0 REST API. Provides a tidy interface to the Fund's
+    flagship databases, beginning with the World Economic Outlook, and reads
+    the compact 'SDMX-CSV' representation of each query for fast,
+    dependency-light parsing.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 4.1.0)
+Imports: cli, httr2, jsonlite, utils
+Suggests: httptest2, knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://github.com/charlescoverdale/readimf
+BugReports: https://github.com/charlescoverdale/readimf/issues
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-07 14:09:37 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-15 13:10:02 UTC

@@ -1,0 +1,47 @@
+Package: tepr
+Title: Transcription Elongation Profiling
+Version: 1.1.17
+Authors@R: c(
+    person("Nicolas", "Descostes", email = "nicolas.descostes@gmail.com", role = "cre"),
+    person("Victor", "Billon", email = "victor.billon@etu.univ-cotedazur.fr", role = "aut"),
+    person("Gael", "Cristofari", email = "gael.cristofari@cnrs.fr", role = "aut"))
+Description: 
+    The general principle relies on calculating the cumulative signal of nascent
+    RNA sequencing over the gene body of any given gene or transcription unit.
+    'tepr' can identify transcription attenuation sites by comparing profile to
+    a null model which assumes uniform read density over the entirety of the
+    transcription unit. It can also identify increased or diminished
+    transcription attenuation by comparing two conditions. Besides rigorous
+    statistical testing and high sensitivity, a major feature of 'tepr' is its
+    ability to provide the elongation pattern of each individual gene, including
+    the position of the main attenuation point when such a phenomenon occurs.
+    Using 'tepr', users can visualize and refine genome-wide aggregated analyses
+    of elongation patterns to robustly identify effects specific to subsets of
+    genes. These metrics are suitable for internal comparisons (between genes in
+    each condition) and for studying elongation of the same gene in different
+    conditions or comparing it to a perfect theoretical uniform elongation. 
+Depends: R (>= 4.4)
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat
+Imports: dplyr, parallel, tidyr, tidyselect, ggplot2, pracma, stats,
+        ggrepel, matrixStats, rlang, magrittr, purrr, rtracklayer,
+        GenomicRanges, GenomeInfoDb, valr, tibble, utils, methods, MASS
+Collate: 'allauc.R' 'attenuation.R' 'averageandfilterexprs.R'
+        'countna.R' 'genesECDF.R' 'kneeid.R' 'meandifference.R'
+        'plotauc.R' 'plotecdf.R' 'plothistoknee.R' 'plotmetagenes.R'
+        'plotmulti.R' 'preprocessing-blacklisthighmap-utils.R'
+        'preprocessing-blacklisthighmap.R'
+        'preprocessing-createtablescores.R'
+        'preprocessing-makewindows.R' 'preprocessing-retrieveanno.R'
+        'preprocessing.R' 'tepr.R' 'universegroup.R' 'utils.R'
+NeedsCompilation: no
+Packaged: 2026-07-08 16:39:43 UTC; nxd1024
+Author: Nicolas Descostes [cre],
+  Victor Billon [aut],
+  Gael Cristofari [aut]
+Maintainer: Nicolas Descostes <nicolas.descostes@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-08 17:40:02 UTC

@@ -1,0 +1,58 @@
+Package: imuGAP
+Title: Immunity: Geographic and Age-Based Projection
+Version: 0.1.0
+Authors@R: 
+    c(person("Carl", "Pearson", email = "carl.ab.pearson@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0701-7860")),
+      person("Claire Perrin", "Smith", role = "aut",
+           comment = c(ORCID = "0000-0003-1069-9460")),
+      person("Kelly", "Zhen", email = "zhen717605@gmail.com", role = "ctb"),
+      person("Weston", "Voglesonger", email = "westonvogle@gmail.com", role = "ctb"),
+      person("Joshua", "Chen", email = "joshuazchen1@gmail.com", role = "ctb"),
+      person("Minjae", "Kung", email = "minjaekung@gmail.com", role = "ctb"))
+Description: Fits Bayesian hierarchical models of vaccine
+    coverage by location, birth cohort, and age. Observations 
+    of vaccination status (which may span cohorts, ages, and doses) are
+    used to fit a latent survival-style process model that decomposes
+    coverage into a lifetime propensity to vaccinate and a
+    time-varying force of vaccination. Hierarchical spatial structure 
+    (e.g., state, county, school) supports partial pooling via random
+    effects. Models are implemented in 'Stan' and fit via 'rstan'.
+    Provides helpers to validate user-supplied input data, and to predict 
+    coverage from fitted models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Biarch: true
+Depends: R (>= 4.1.0)
+Imports: data.table, methods, Rcpp (>= 0.12.0), RcppParallel (>=
+        5.0.1), rstan (>= 2.18.1), rstantools (>= 2.5.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), roxygen2, roxyglobals,
+        lintr, spelling, bayesplot, ggplot2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://accidda.github.io/imuGAP/,
+        https://github.com/ACCIDDA/imuGAP
+BugReports: https://github.com/ACCIDDA/imuGAP/issues
+LazyData: true
+LazyDataCompression: xz
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-16 20:36:29 UTC; runner
+Author: Carl Pearson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0701-7860>),
+  Claire Perrin Smith [aut] (ORCID:
+    <https://orcid.org/0000-0003-1069-9460>),
+  Kelly Zhen [ctb],
+  Weston Voglesonger [ctb],
+  Joshua Chen [ctb],
+  Minjae Kung [ctb]
+Maintainer: Carl Pearson <carl.ab.pearson@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-22 14:40:26 UTC

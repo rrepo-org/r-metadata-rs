@@ -1,0 +1,38 @@
+Package: quaqcr
+Title: Quick ATAC-Seq QC
+Version: 1.0.4
+Authors@R: 
+    person(c("Benjamin", "Jean-Marie"), "Tremblay", role = c("aut", "cre"),
+      email = "benjmtremblay@gmail.com",
+      comment = c(ORCID = "0000-0002-7441-2951"))
+Description: A wrapper around the 'quaqc' program described in Tremblay and
+    Questa (2024) <doi:10.1093/bioinformatics/btae649>. 'quaqc' allows for
+    assay for transposase-accessible chromatin using sequencing (ATAC-seq)
+    specific quality control and read filtering of next-generation sequencing
+    (NGS) data with minimal processing time and extremely low memory overhead.
+    Any number of samples can be processed, using multiple threads if desired.
+    'quaqc' outputs a comprehensive set of aligned read metrics, including
+    alignment size, fragment size, percent duplicates, mapq scores, read depth,
+    GC content, and others. Although designed for ATAC-seq data, 'quaqc' can
+    also be used for other unspliced DNA sequencing experiments (such as
+    chromatin immunoprecipitation sequencing, or ChIP-seq) as many of the
+    metrics are related to general sequencing quality. This R package also
+    provides additional utilities for custom analyses and plotting of 'quaqc'
+    results.
+URL: https://github.com/bjmt/quaqcr
+BugReports: https://github.com/bjmt/quaqcr/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: methods, utils, jsonlite
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+SystemRequirements: quaqc (https://github.com/bjmt/quaqc)
+NeedsCompilation: no
+Packaged: 2026-05-15 10:04:43 UTC; gok24jef
+Author: Benjamin Jean-Marie Tremblay [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7441-2951>)
+Maintainer: Benjamin Jean-Marie Tremblay <benjmtremblay@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-19 09:30:02 UTC

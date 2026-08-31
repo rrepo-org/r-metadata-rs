@@ -1,0 +1,40 @@
+Package: possum
+Type: Package
+Title: Surgical Risk Prediction with the POSSUM Score Family
+Version: 0.1.0
+Authors@R: c(
+    person("Christos", "Longros", email = "chris.longros@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-2717-0857")),
+    person("Daniel Enrique", "Chourio Barboza", role = "aut"))
+Description: Computes the Physiological and Operative Severity Score for the
+    enUmeration of Mortality and morbidity (POSSUM), its Portsmouth
+    modification (P-POSSUM), and the colorectal (CR-POSSUM), vascular
+    (V-POSSUM) and ruptured aortic aneurysm (RAAA-POSSUM) variants,
+    risk-adjustment systems used in surgical audit. Functions map
+    physiological and operative variables to their
+    component scores and return the predicted probabilities of morbidity and
+    mortality from the published logistic equations. The coefficients follow
+    Copeland and others (1991) <doi:10.1002/bjs.1800780327> for POSSUM,
+    Prytherch and others (1998) <doi:10.1046/j.1365-2168.1998.00840.x> for
+    P-POSSUM, Tekkis and others (2004) <doi:10.1002/bjs.4430> for the
+    colorectal variant (CR-POSSUM), and Neary and others (2003)
+    <doi:10.1002/bjs.4041> for the vascular variant (V-POSSUM). The
+    package is intended for audit and research; it is not a
+    validated medical device and must not be used as the sole basis for
+    clinical decisions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/chrislongros/possum
+BugReports: https://github.com/chrislongros/possum/issues
+Imports: stats
+Suggests: tinytest
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-18 10:23:31 UTC; chris
+Author: Christos Longros [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-2717-0857>),
+  Daniel Enrique Chourio Barboza [aut]
+Maintainer: Christos Longros <chris.longros@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-28 14:30:07 UTC

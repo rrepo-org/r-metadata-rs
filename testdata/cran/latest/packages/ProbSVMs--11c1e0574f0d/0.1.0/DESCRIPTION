@@ -1,0 +1,17 @@
+Package: ProbSVMs
+Type: Package
+Title: Probabilistic Support Vector Machines
+Version: 0.1.0
+Authors@R: person(given = c("A. Pedro"), family = c("Duarte Silva"), role = c("aut", "cre"), email = "psilva@ucp.pt")
+Author: A. Pedro Duarte Silva [aut, cre]
+Maintainer: A. Pedro Duarte Silva <psilva@ucp.pt>
+Description: Implements kernel-based classification Support Vector Machines with reliable estimated probabilities of class membership. Theoretical support for the functions in this package can be found in Duarte Silva (2025) <doi:10.1016/j.cor.2025.107203>. 
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 3.5.0), Rcpp (>= 1.0.4.6)
+LinkingTo: Rcpp, RcppArmadillo (>= 15.2.6-1)
+Imports: lpSolveAPI, kernlab, ggplot2, MASS, stats, reshape2
+NeedsCompilation: yes
+Packaged: 2026-06-22 09:13:01 UTC; antonio
+Repository: CRAN
+Date/Publication: 2026-06-25 16:00:20 UTC

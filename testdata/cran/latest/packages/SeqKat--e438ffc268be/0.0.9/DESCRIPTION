@@ -1,0 +1,33 @@
+Package: SeqKat
+Type: Package
+Title: Detection of Kataegis
+Version: 0.0.9
+Authors@R: c(
+    person("Fouad", "Yousif", role = "aut"),
+    person("Xihui", "Lin", role = "aut"),
+    person("Fan", "Fan", role = "aut"),
+    person("Christopher", "Lalansingh", role = "aut"),
+    person("John", "Macdonald", role = "aut"),
+    person("Paul", "C. Boutros", role = "cre", email = "pboutros@sbpdiscovery.org")
+  )
+URL: https://github.com/TheBoutrosLab/package-SeqKat
+BugReports: https://github.com/TheBoutrosLab/package-SeqKat/issues
+Description: Kataegis is a localized hypermutation occurring when a region is enriched in somatic SNVs. Kataegis can result from multiple cytosine deaminations catalyzed by the AID/APOBEC family of proteins. This package contains functions to detect kataegis from SNVs in BED format. This package reports two scores per kataegic event, a hypermutation score and an APOBEC mediated kataegic score. Yousif, F. et al.; The Origins and Consequences of Localized and Global Somatic Hypermutation; Biorxiv 2018 <doi:10.1101/287839>.
+Depends: R (>= 2.15.1), foreach, doParallel
+Imports: Rcpp (>= 0.11.0)
+LinkingTo: Rcpp
+Suggests: testthat, doMC, rmarkdown, knitr
+License: GPL (>= 2)
+RoxygenNote: 6.0.1
+VignetteBuilder: rmarkdown, knitr
+NeedsCompilation: yes
+Packaged: 2026-01-23 23:33:50 UTC; rhughwhite
+Author: Fouad Yousif [aut],
+  Xihui Lin [aut],
+  Fan Fan [aut],
+  Christopher Lalansingh [aut],
+  John Macdonald [aut],
+  Paul C. Boutros [cre]
+Maintainer: Paul C. Boutros <pboutros@sbpdiscovery.org>
+Repository: CRAN
+Date/Publication: 2026-01-24 00:20:01 UTC

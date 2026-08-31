@@ -1,0 +1,31 @@
+Package: QQreflimits
+Version: 1.0.3
+Title: Reference Limits using QQ Methodology
+Authors@R: c(person("Douglas M.", "Hawkins", role = "aut"),
+              person("Jessica J.", "Kraker", role = c("aut", "cre"),
+                     email = "krakerjj@uwec.edu"))
+Author: Douglas M. Hawkins [aut],
+  Jessica J. Kraker [aut, cre]
+Maintainer: Jessica J. Kraker <krakerjj@uwec.edu>
+Depends: R (>= 3.6.0)
+Suggests: testthat (>= 3.0.0)
+Imports: stats
+Description: A collection of routines for finding reference limits using, where 
+    appropriate, QQ methodology.  All use a data vector X of cases from the 
+    reference population. The default is to get the central 95% reference range 
+    of the population, namely the 2.5 and 97.5 percentile, with optional 
+    adjustment of the range.  Along with the reference limits, we want 
+    confidence intervals which, for historical reasons, are typically at 90% 
+    confidence.  A full analysis provides six numbers:
+      – the upper and the lower reference limits, and 
+      - each of their confidence intervals.
+    For application details, see Hawkins and Esquivel (2024) 
+    <doi:10.1093/jalm/jfad109>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-08-27 00:22:31 UTC; jjkra
+Repository: CRAN
+Date/Publication: 2025-09-01 16:50:07 UTC

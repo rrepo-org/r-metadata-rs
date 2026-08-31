@@ -1,0 +1,31 @@
+Package: FMradio
+Type: Package
+Title: Factor Modeling for Radiomics Data
+Version: 1.1.2
+Maintainer: Carel F.W. Peeters <carel.peeters@wur.nl>
+Authors@R: c(person(given = c("Carel", "F.W."),
+                    family = "Peeters",
+                    role = c("cre", "aut"),
+                    email = "carel.peeters@wur.nl"),
+              person(given = "Caroline",
+                    family = "Ubelhor",
+                    role = "ctb"),
+              person(given = "Kevin",
+                    family = "Kunzmann",
+                    role = "ctb"))
+Description: Functions that support stable prediction and classification with radiomics data through factor-analytic modeling. For details, see Peeters et al. (2019) <doi:10.48550/arXiv.1903.11696>.
+Depends: R (>= 2.15.1)
+biocViews:
+Imports: stats, ggplot2, reshape, Biobase, graphics, expm, MASS
+ByteCompile: true
+KeepSource: yes
+License: GPL (>= 2)
+BuildManual: yes
+URL: https://github.com/CFWP/FMradio
+NeedsCompilation: no
+Packaged: 2025-08-28 13:49:38 UTC; cfwpe
+Author: Carel F.W. Peeters [cre, aut],
+  Caroline Ubelhor [ctb],
+  Kevin Kunzmann [ctb]
+Repository: CRAN
+Date/Publication: 2025-08-29 05:10:02 UTC

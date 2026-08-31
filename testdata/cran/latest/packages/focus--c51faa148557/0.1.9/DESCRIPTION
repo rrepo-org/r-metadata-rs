@@ -1,0 +1,60 @@
+Package: focus
+Type: Package
+Title: Online Changepoint Detection in Univariate and Multivariate Data
+        Streams
+Version: 0.1.9
+Date: 2026-07-23
+Authors@R: c(
+    person("Gaetano", "Romano", 
+           email = "g.romano@lancaster.ac.uk",
+           role = c("aut", "cre", "trl")),
+    person("Kes", "Ward", 
+           email = "k.ward4@lancaster.ac.uk",
+           role = "aut"),
+    person("Yuntang", "Fan", 
+           email = "y.yuntang@lancaster.ac.uk",
+           role = "aut"),
+    person("Guillem", "Rigaill", 
+           email = "guillem.rigaill@inrae.fr",
+           role = c("aut")),
+    person("Vincent", "Runge", 
+           email = "vincent.runge@univ-evry.fr",
+           role = c("aut")),
+    person("Idris A.", "Eckley", 
+           email = "i.eckley@lancaster.ac.uk",
+           role = c("aut")),           
+    person("Paul", "Fearnhead", 
+           email = "p.fearnhead@lancaster.ac.uk",
+           role = c("aut")),
+    person("C. B.", "Barber",
+           role = c("ctb", "cph"),
+           comment = "Author and copyright holder of bundled 'Qhull' library"),
+    person("The Geometry Center",
+           role = c("cph"),
+           comment = "Copyright holder of bundled 'Qhull' library"))
+Maintainer: Gaetano Romano <g.romano@lancaster.ac.uk>
+Description: Provides high-performance online changepoint detection in univariate and multivariate data
+             streams. Implements efficient 'C++' backends for the 'focus', 'md-focus' and 'np-focus'
+             algorithms, with an 'R' interface for real-time monitoring and offline analysis.
+             The package bundles code from 'Qhull' <http://www.qhull.org/>, by C. B. Barber and
+             The Geometry Center. See 'inst/COPYRIGHTS' for details.
+License: GPL (>= 3)
+Imports: Rcpp (>= 1.1.0)
+LinkingTo: Rcpp
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: yes
+Packaged: 2026-07-23 08:34:49 UTC; romano
+Author: Gaetano Romano [aut, cre, trl],
+  Kes Ward [aut],
+  Yuntang Fan [aut],
+  Guillem Rigaill [aut],
+  Vincent Runge [aut],
+  Idris A. Eckley [aut],
+  Paul Fearnhead [aut],
+  C. B. Barber [ctb, cph] (Author and copyright holder of bundled 'Qhull'
+    library),
+  The Geometry Center [cph] (Copyright holder of bundled 'Qhull' library)
+Repository: CRAN
+Date/Publication: 2026-07-23 09:00:02 UTC

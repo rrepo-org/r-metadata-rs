@@ -1,0 +1,23 @@
+Package: Bayenet
+Type: Package
+Title: Robust Bayesian Elastic Net
+Version: 0.3
+Date: 2025-03-19
+Authors@R: c( person("Xi", "Lu", role = c("aut", "cre"),
+                      email = "xilu@ksu.edu"),
+              person("Cen", "Wu", role = "aut"))
+Description: As heavy-tailed error distribution and outliers in the response variable widely exist, models which are robust to data contamination are highly demanded. Here, we develop a novel robust Bayesian variable selection method with elastic net penalty. In particular, the spike-and-slab priors have been incorporated to impose sparsity. An efficient Gibbs sampler has been developed to facilitate computation.The core modules of the package have been developed in 'C++' and R.
+Depends: R (>= 3.5.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, stats, MCMCpack, base, gsl, VGAM, MASS, hbmem, SuppDists
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Repository: CRAN
+Packaged: 2025-03-19 20:45:58 UTC; xilu0
+Author: Xi Lu [aut, cre],
+  Cen Wu [aut]
+Maintainer: Xi Lu <xilu@ksu.edu>
+Date/Publication: 2025-03-19 21:00:01 UTC

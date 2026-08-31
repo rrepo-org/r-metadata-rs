@@ -1,0 +1,20 @@
+Package: asymmetry
+Type: Package
+Title: Multidimensional Scaling of Asymmetric Proximities
+Version: 2.0.6
+Date: 2026-03-05
+Authors@R: person(given = "Berrie",
+                      family = "Zielman",
+                      role = c("aut", "cre"),
+                      email = "berrie.zielman@gmail.com")
+Author: Berrie Zielman [aut, cre]
+Maintainer: Berrie Zielman <berrie.zielman@gmail.com>
+Description: Multidimensional scaling models and methods for the visualization and analysis of asymmetric proximity data. An asymmetric data matrix has the same number of rows and columns, and these rows and columns refer to the same set of objects. At least some elements in the upper-triangle are different from the corresponding elements in the lower triangle. An example of an asymmetric matrix is a  student migration table, where the rows correspond to the countries of origin of the students and the columns to the destination countries. This package provides algorithms for three multidimensional scaling models, the slide-vector model, a scaling model with unique dimensions and the asymscal model. Furthermore, some other procedures, such as a heat map for skew-symmetric data, and the decomposition of asymmetry are also provided for the exploratory analysis of asymmetric tables.
+License: GPL (>= 3)
+Imports: stats, methods, smacof
+Suggests: knitr, rmarkdown, RColorBrewer
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-05 13:58:50 UTC; berriez
+Repository: CRAN
+Date/Publication: 2026-03-05 15:50:02 UTC

@@ -1,0 +1,35 @@
+Package: proxyC
+Type: Package
+Title: Computes Proximity in Large Sparse Matrices
+Version: 0.5.2
+Authors@R: c(
+    person("Kohei", "Watanabe", email = "watanabe.kohei@gmail.com", role = c("cre", "aut", "cph"), 
+           comment = c(ORCID = "0000-0001-6519-5265")),
+    person("Robrecht", "Cannoodt", email = "rcannood@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0003-3641-729X"))
+    )
+Description: 
+    Computes proximity between rows or columns of large matrices efficiently in C++.
+    Functions are optimised for large sparse matrices using the Armadillo and Intel TBB libraries.
+    Among various built-in similarity/distance measures, computation of correlation,
+    cosine similarity, Dice coefficient and Euclidean distance is particularly fast.
+URL: https://github.com/koheiw/proxyC, https://koheiw.github.io/proxyC/
+BugReports: https://github.com/koheiw/proxyC/issues
+License: GPL-3
+Depends: R (>= 3.1.0), methods
+Imports: Matrix (>= 1.2), Rcpp (>= 0.12.12)
+Suggests: testthat, entropy, proxy, knitr, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo (>= 0.7.600.1.0)
+NeedsCompilation: yes
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/Needs/website: coop, Rfast, parallelDist, distances, proxy,
+        microbenchmark, ggplot2
+Packaged: 2025-04-25 10:25:52 UTC; watan
+Author: Kohei Watanabe [cre, aut, cph]
+    (<https://orcid.org/0000-0001-6519-5265>),
+  Robrecht Cannoodt [aut] (<https://orcid.org/0000-0003-3641-729X>)
+Maintainer: Kohei Watanabe <watanabe.kohei@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-25 12:40:06 UTC

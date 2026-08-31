@@ -1,0 +1,55 @@
+Package: bifrost
+Title: Branch-Level Inference Framework for Recognizing Optimal Shifts
+        in Traits
+Version: 0.1.4
+Authors@R: c(
+    person(given = c("Jacob", "S."), family = "Berv", email = "jacob.berv@gmail.com", role = c("aut", "cre", "cph", "fnd"), comment = c(ORCID = "0000-0002-5962-0621")),
+    person(given = "Nathan", family = "Fox", role = "aut", comment = c(ORCID = "0000-0002-2816-9751")),
+    person(given = c("Matt", "J."), family = "Thorstensen", role = "aut", comment = c(ORCID = "0000-0002-7870-3369")),
+    person(given = "Henry", family = "Lloyd-Laney", role = "aut", comment = c(ORCID = "0000-0003-4650-8937")),
+    person(given = c("Emily", "M."), family = "Troyer", role = "aut", comment = c(ORCID = "0000-0001-7478-2306")),
+    person(given = c("Rafael", "A."), family = "Rivero-Vega", role = "aut", comment = c(ORCID = "0000-0001-5937-6377")),
+    person(given = c("Stephen", "A."), family = "Smith", role = c("aut", "fnd"), comment = c(ORCID = "0000-0003-2035-9531")),
+    person(given = "Matt", family = "Friedman", role = c("aut", "fnd"), comment = c(ORCID = "0000-0002-0114-7384")),
+    person(given = c("David", "F."), family = "Fouhey", role = c("aut", "fnd"), comment = c(ORCID = "0000-0001-5028-5161")),
+    person(given = c("Brian", "C."), family = "Weeks", role = c("aut", "fnd"), comment = c(ORCID = "0000-0003-2967-2970")))
+Description: Methods for detecting and visualizing cladogenic shifts in multivariate trait data on phylogenies. Implements penalized-likelihood multivariate generalized least squares models, enabling analyses of high-dimensional trait datasets and large trees via searchOptimalConfiguration(). Includes a greedy step-wise shift-search algorithm following approaches developed in Smith et al. (2023) <doi:10.1111/nph.19099> and Berv et al. (2024) <doi:10.1126/sciadv.adp0114>. Methods build on multivariate GLS approaches described in Clavel et al. (2019) <doi:10.1093/sysbio/syy045> and implemented in the mvgls() function from the 'mvMORPH' package. Documentation and vignettes are available at <https://jakeberv.com/bifrost/>, including worked examples for the jaw-shape dataset.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://jakeberv.com/bifrost/, https://github.com/jakeberv/bifrost
+BugReports: https://github.com/jakeberv/bifrost/issues
+Depends: R (>= 4.1)
+Imports: ape, future, future.apply, phytools, grDevices, stats,
+        mvMORPH, viridis, txtplot
+Suggests: HDInterval, RColorBrewer, boot, classInt, evd, fitdistrplus,
+        knitr, palaeoverse, parallel, patchwork, pbmcapply, phylolm,
+        plotly, readxl, rmarkdown, scales, scatterplot3d, testthat (>=
+        3.0.0), univariateML, spelling, htmltools
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-04-17 03:07:48 UTC; cotinga
+Author: Jacob S. Berv [aut, cre, cph, fnd] (ORCID:
+    <https://orcid.org/0000-0002-5962-0621>),
+  Nathan Fox [aut] (ORCID: <https://orcid.org/0000-0002-2816-9751>),
+  Matt J. Thorstensen [aut] (ORCID:
+    <https://orcid.org/0000-0002-7870-3369>),
+  Henry Lloyd-Laney [aut] (ORCID:
+    <https://orcid.org/0000-0003-4650-8937>),
+  Emily M. Troyer [aut] (ORCID: <https://orcid.org/0000-0001-7478-2306>),
+  Rafael A. Rivero-Vega [aut] (ORCID:
+    <https://orcid.org/0000-0001-5937-6377>),
+  Stephen A. Smith [aut, fnd] (ORCID:
+    <https://orcid.org/0000-0003-2035-9531>),
+  Matt Friedman [aut, fnd] (ORCID:
+    <https://orcid.org/0000-0002-0114-7384>),
+  David F. Fouhey [aut, fnd] (ORCID:
+    <https://orcid.org/0000-0001-5028-5161>),
+  Brian C. Weeks [aut, fnd] (ORCID:
+    <https://orcid.org/0000-0003-2967-2970>)
+Maintainer: Jacob S. Berv <jacob.berv@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-17 04:00:03 UTC

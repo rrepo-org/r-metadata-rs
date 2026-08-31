@@ -1,0 +1,86 @@
+Package: mizer
+Title: Dynamic Multi-Species Size Spectrum Modelling
+Date: 2026-08-31
+Type: Package
+Description: A set of classes and methods to set up and run multi-species, trait
+    based and community size spectrum ecological models, focused on the marine
+    environment.
+Maintainer: Gustav Delius <gustav.delius@york.ac.uk>
+Authors@R: c(person("Gustav", "Delius", email="gustav.delius@york.ac.uk",
+                    role=c("cre", "aut", "cph"),
+                    comment = c(ORCID = "0000-0003-4092-8228")),
+             person("Finlay", "Scott", email="drfinlayscott@gmail.com", 
+                    role=c("aut", "cph")),
+             person("Julia", "Blanchard", email="julia.blanchard@utas.edu.au",
+                    role=c("aut", "cph"),
+                    comment = c(ORCID = "0000-0003-0532-4824")),
+             person("Ken", "Andersen", email="kha@aqua.dtu.dk",
+                    role=c("aut", "cph"),
+                    comment = c(ORCID = "0000-0002-8478-3430")),
+             person("Richard", "Southwell", email="richard.southwell@york.ac.uk",
+                    role=c("ctb", "cph")))
+Version: 3.4.0
+License: GPL-3
+Imports: assertthat, deSolve, dplyr, ggplot2 (>= 3.4.0), ggrepel, grid,
+        lubridate, methods, nleqslv, plotly, plyr, progress, Rcpp,
+        reshape2, rlang, lifecycle, pak
+LinkingTo: Rcpp
+Depends: R (>= 3.5)
+Suggests: testthat (>= 3.0.0), withr, vdiffr, diffviewer, roxygen2,
+        knitr, rmarkdown, quarto, pkgdown, covr, spelling
+Collate: 'age_mat.R' 'helpers.R' 'info_signals.R' 'MizerParams-class.R'
+        'MizerSim-class.R' 'registerExtensions.R'
+        'ArraySpeciesBySize-class.R' 'ArrayTimeBySpecies-class.R'
+        'ArrayTimeBySpeciesBySize-class.R'
+        'ArrayResourceBySize-class.R' 'MizerScan-class.R'
+        'generic_methods.R' 'background.R' 'reproduction.R'
+        'saveParams.R' 'species_params.R' 'getRequiredRDD.R'
+        'setColours.R' 'setInteraction.R' 'setPredKernel.R'
+        'setSearchVolume.R' 'setMaxIntakeRate.R' 'setMetabolicRate.R'
+        'setMetadata.R' 'setExtMort.R' 'setExtEncounter.R'
+        'diffusion.R' 'second_order_w.R' 'setExtDiffusion.R'
+        'setReproduction.R' 'setResource.R' 'setFishing.R'
+        'setInitialValues.R' 'setBevertonHolt.R' 'upgrade.R'
+        'selectivity_funcs.R' 'pred_kernel_funcs.R'
+        'resource_dynamics.R' 'resource_semichemostat.R'
+        'resource_logistic.R' 'numerical_methods.R' 'transport.R'
+        'project_n.R' 'project.R' 'mizer-package.R' 'project_methods.R'
+        'rate_functions.R' 'sim_rates.R' 'sizeIntegral.R'
+        'summary_methods.R' 'indicator_functions.R' 'plots.R'
+        'plotBiomassObservedVsModel.R' 'plotYieldObservedVsModel.R'
+        'animateSpectra.R' 'newMultispeciesParams.R'
+        'wrapper_functions.R' 'newSingleSpeciesParams.R' 'steady.R'
+        'steadyState.R' 'scanModel.R' 'scan_setters.R' 'plotYieldVsF.R'
+        'extension.R' 'data.R' 'RcppExports.R' 'deprecated.R'
+        'get_initial_n.R' 'compareParams.R' 'customFunction.R'
+        'manipulate_species.R' 'observations.R' 'calibrate.R'
+        'scaleRates.R' 'match.R' 'matchGrowth.R'
+        'steadySingleSpecies.R' 'steadyNewton.R' 'getSteadyResidual.R'
+        'getOscillationModeSim.R' 'defaults_edition.R'
+        'validSpeciesParams.R' 'zzz.R'
+Encoding: UTF-8
+LazyData: true
+URL: https://sizespectrum.org/mizer/,
+        https://github.com/sizespectrum/mizer
+BugReports: https://github.com/sizespectrum/mizer/issues
+Language: en-GB
+RdMacros: lifecycle
+VignetteBuilder: knitr, quarto
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: steadyState, steadyNewton,
+        getOscillationModeSim, rate_functions, steady, plots,
+        manipulate_species
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: yes
+Packaged: 2026-08-31 02:38:00 UTC; gustav
+Author: Gustav Delius [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0003-4092-8228>),
+  Finlay Scott [aut, cph],
+  Julia Blanchard [aut, cph] (ORCID:
+    <https://orcid.org/0000-0003-0532-4824>),
+  Ken Andersen [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-8478-3430>),
+  Richard Southwell [ctb, cph]
+Repository: CRAN
+Date/Publication: 2026-08-31 16:00:03 UTC

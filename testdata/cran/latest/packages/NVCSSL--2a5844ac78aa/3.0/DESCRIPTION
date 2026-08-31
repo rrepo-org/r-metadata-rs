@@ -1,0 +1,20 @@
+Package: NVCSSL
+Type: Package
+Title: Nonparametric Varying Coefficient Spike-and-Slab Lasso
+Version: 3.0
+Authors@R: person(given = "Ray",
+                  family = "Bai",
+                  role = c("aut", "cre"),
+                  email = "raybaistat@gmail.com")
+Author: Ray Bai [aut, cre]
+Maintainer: Ray Bai <raybaistat@gmail.com>
+Description: Fits Bayesian regularized varying coefficient models with the Nonparametric Varying Coefficient Spike-and-Slab Lasso (NVC-SSL) introduced by Bai et al. (2023) <https://jmlr.org/papers/volume24/20-1437/20-1437.pdf>. Functions to fit frequentist penalized varying coefficients are also provided, with the option of employing the group lasso penalty of Yuan and Lin (2006) <doi:10.1111/j.1467-9868.2005.00532.x>, the group minimax concave penalty (MCP) of Breheny and Huang <doi:10.1007/s11222-013-9424-2>, or the group smoothly clipped absolute deviation (SCAD) penalty of Breheny and Huang (2015) <doi:10.1007/s11222-013-9424-2>.
+License: GPL-3
+LazyData: true
+Depends: R (>= 3.6.0)
+Imports: stats, splines, dae, plyr, Matrix, GIGrvg, MASS, MCMCpack,
+        grpreg, mvtnorm
+NeedsCompilation: no
+Packaged: 2025-07-19 20:16:58 UTC; Ray Bai
+Repository: CRAN
+Date/Publication: 2025-07-19 20:40:02 UTC

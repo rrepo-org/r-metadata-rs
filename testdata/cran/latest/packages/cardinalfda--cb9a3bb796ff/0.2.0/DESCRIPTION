@@ -1,0 +1,74 @@
+Type: Package
+Package: cardinalfda
+Title: FDA Safety Tables and Figures
+Version: 0.2.0
+Date: 2026-07-09
+Authors@R: c(
+    person("Pawel", "Rucki", , "pawel.rucki@roche.com", role = "ctb"),
+    person("Abinaya", "Yogasekaram", , "ayogasek@gmail.com", role = "aut",
+           comment = c(ORCID = "0009-0005-2083-1105")),
+    person("Joe", "Zhu", , "joe.zhu@roche.com", role = "cre",
+           comment = c(ORCID = "0000-0001-7566-2787")),
+    person("Daniel D.", "Sjoberg", , "danield.sjoberg@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0003-0862-2018")),
+    person("Emily", "de la Rua", , "emilydelarua@gmail.com", role = "aut",
+           comment = c(ORCID = "0009-0000-8738-5561")),
+    person("Vincent", "Shen", role = "aut"),
+    person("Benoit", "Falquet", , "benoit.falquet@roche.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-4434-3799")),
+    person("Lluís", "Revilla Sancho", , "lluis.revilla_sancho@roche.com", role = "ctb",
+           comment = c(ORCID = "0000-0001-9747-2570")),
+    person("Huan", "Lu", , "huan.lu@sanofi.com", role = "ctb"),
+    person("Alex", "Assuied", role = "ctb"),
+    person("Yoshito", "Koujin", role = "ctb"),
+    person("Korbinian", "Matthias", role = "ctb"),
+    person("Jessica", "Knizia", role = "ctb"),
+    person("Freeman", "Wang", role = "ctb")
+  )
+Description: Provides implementations of safety tables and figures recommended
+    by the FDA (U.S. Food and Drug Administration) for clinical trial reporting.
+    Functions generate standard outputs for adverse events, laboratory
+    abnormalities, vital signs, exposure, and other safety domains following
+    the FDA's Safety Reporting guidelines. Outputs are built on the 'gtsummary',
+    'cards', and 'cardx' frameworks, enabling reproducible and submission-ready
+    clinical trial safety summaries.
+License: Apache License (>= 2)
+URL: https://github.com/pharmaverse/cardinal/,
+        https://pharmaverse.github.io/cardinal/
+BugReports: https://github.com/pharmaverse/cardinal/issues
+Depends: R (>= 4.2), cards (>= 0.8.1), cardx (>= 0.3.4), gtsummary (>=
+        2.5.1)
+Imports: dplyr (>= 1.2.1)
+Suggests: cowplot (>= 1.2.0), crane (>= 0.3.1), forcats (>= 1.0.1),
+        ggplot2 (>= 4.0), ggsurvfit (>= 1.2.0), gt (>= 1.3.0), knitr
+        (>= 1.50), labelled (>= 2.16.0), lubridate (>= 1.9),
+        pharmaverseadam (>= 1.3.0), purrr (>= 1.2), random.cdisc.data
+        (>= 0.3.16), rlang (>= 1.1.7), rtables (>= 0.6.11), tern (>=
+        0.9.8), svglite (>= 2.2.2), testthat (>= 3.3.1), tidyr (>=
+        1.3.1), withr (>= 3.0.2)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-24 08:50:51 UTC; zhus31
+Author: Pawel Rucki [ctb],
+  Abinaya Yogasekaram [aut] (ORCID:
+    <https://orcid.org/0009-0005-2083-1105>),
+  Joe Zhu [cre] (ORCID: <https://orcid.org/0000-0001-7566-2787>),
+  Daniel D. Sjoberg [ctb] (ORCID:
+    <https://orcid.org/0000-0003-0862-2018>),
+  Emily de la Rua [aut] (ORCID: <https://orcid.org/0009-0000-8738-5561>),
+  Vincent Shen [aut],
+  Benoit Falquet [ctb] (ORCID: <https://orcid.org/0000-0002-4434-3799>),
+  Lluís Revilla Sancho [ctb] (ORCID:
+    <https://orcid.org/0000-0001-9747-2570>),
+  Huan Lu [ctb],
+  Alex Assuied [ctb],
+  Yoshito Koujin [ctb],
+  Korbinian Matthias [ctb],
+  Jessica Knizia [ctb],
+  Freeman Wang [ctb]
+Maintainer: Joe Zhu <joe.zhu@roche.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 09:50:02 UTC

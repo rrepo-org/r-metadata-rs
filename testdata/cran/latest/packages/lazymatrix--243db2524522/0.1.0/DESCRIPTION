@@ -1,0 +1,31 @@
+Package: lazymatrix
+Title: Perform Complex Matrix Operations Symbolically on Sparse
+        Matrices
+Version: 0.1.0
+Authors@R: 
+    person("Viktor", "Segersall", , "viktor.segersall@proton.me", role = c("aut", "cre", "cph"))
+Description: Provides a framework for lazy computation on large sparse matrices.
+    Enables lazy evaluation of normalized data matrices, preserving sparsity
+    throughout operations without materializing dense intermediate objects.
+    Implements statistical algorithms including LSQR for sparse least squares
+    as described in Paige and Saunders (1982)
+    <doi:10.1145/355984.355989> and partial singular value
+    decomposition via the augmented implicitly restarted Lanczos
+    bidiagonalization algorithm of Baglama and Reichel (2005)
+    <doi:10.1137/04060593X>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: bench, dplyr, ggplot2, knitr, rmarkdown, scales, testthat (>=
+        3.0.0), tidyr
+Config/testthat/edition: 3
+Imports: Matrix, methods, stats, irlba, Rcpp
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://vsegersall.github.io/lazymatrix/
+NeedsCompilation: yes
+Packaged: 2026-07-06 01:06:49 UTC; jola
+Author: Viktor Segersall [aut, cre, cph]
+Maintainer: Viktor Segersall <viktor.segersall@proton.me>
+Repository: CRAN
+Date/Publication: 2026-07-14 16:40:07 UTC

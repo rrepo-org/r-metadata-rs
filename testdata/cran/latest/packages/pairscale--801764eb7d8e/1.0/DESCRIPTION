@@ -1,0 +1,30 @@
+Package: pairscale
+Type: Package
+Title: Pairwise Rescaling of Numeric Matrices
+Version: 1.0
+Authors@R: 
+    person(given = "Frank",
+           family = "Koopmans",
+           role = c("aut", "cre"),
+           email = "ftwkoopmans@gmail.com",
+           comment = c(ORCID = "0000-0002-4973-5732"))
+Description: 
+    Normalization of numerical matrices by minimizing the mean/median/mode difference between all column pairs.
+URL: https://github.com/ftwkoopmans/pairscale/
+License: AGPL (>= 3)
+Encoding: UTF-8
+SystemRequirements: C++20
+Depends: R (>= 4.1.0)
+Imports: Rcpp (>= 1.0.5)
+Suggests: testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo (>= 14.7)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-05-13 14:12:22 UTC; frank
+Author: Frank Koopmans [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4973-5732>)
+Maintainer: Frank Koopmans <ftwkoopmans@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-19 07:10:02 UTC

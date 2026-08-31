@@ -1,0 +1,22 @@
+Package: ClustBlock
+Title: Clustering of Datasets
+Version: 6.0.0
+Authors@R: c(person("Fabien", "Llobell", email = "fabienllobellresearch@gmail.com", role = c("aut","cre"), comment="Oniris/XLSTAT"), person("Evelyne", "Vigneau", email = "evelyne.vigneau@oniris-nantes.fr", role = "ctb", comment="Oniris"),  person("Veronique", "Cariou", email = "veronique.cariou@oniris-nantes.fr", role = "ctb", comment="Oniris"), person("El Mostafa", "Qannari", email = "elmostafa.qannari@oniris-nantes.fr", role = "ctb", comment="Oniris"))
+Maintainer: Fabien Llobell <fabienllobellresearch@gmail.com>
+Description: Hierarchical and partitioning algorithms to cluster blocks of variables. The partitioning algorithm includes an option called noise cluster to set aside atypical blocks of variables. Different thresholds per cluster can be sets. The CLUSTATIS method (for quantitative blocks) (Llobell, Cariou, Vigneau, Labenne & Qannari (2020) <doi:10.1016/j.foodqual.2018.05.013>, Llobell, Vigneau & Qannari (2019) <doi:10.1016/j.foodqual.2019.02.017>)  and the CLUSCATA method (for Check-All-That-Apply data) (Llobell, Cariou, Vigneau, Labenne & Qannari (2019) <doi:10.1016/j.foodqual.2018.09.006>, Llobell, Giacalone, Labenne & Qannari (2019) <doi:10.1016/j.foodqual.2019.05.017>) are the core of this package. The CATATIS methods allows to compute some indices and tests to control the quality of CATA data (Llobell, Bonnet & Giacalone (2024) <doi:10.1111/joss.12941>) . Multivariate analysis and clustering of subjects for quantitative multiblock data, CATA, RATA, Free Sorting and JAR experiments are available. Clustering of observations (products in sensory analysis) in multi-block context (notably with ClusMB strategy) is also included (Llobell & Giacalone (2025) <doi:10.1111/joss.70024>).Performing clustering based on CATA and liking at the same time is possible thanks to cluscata_liking function (Vigneau, Cariou, Giacalone, Berget & Llobell (2022) <doi:10.1016/j.foodqual.2021.104358>). Clustering of variables (quantitative, qualitative or mixed) can be done thanks to the MixCluStatis() function.
+Depends: R (>= 3.5)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: FactoMineR
+Suggests: ClustVarLV
+Date: 2026-06-04
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-04 16:19:42 UTC; fabie
+Author: Fabien Llobell [aut, cre] (Oniris/XLSTAT),
+  Evelyne Vigneau [ctb] (Oniris),
+  Veronique Cariou [ctb] (Oniris),
+  El Mostafa Qannari [ctb] (Oniris)
+Repository: CRAN
+Date/Publication: 2026-06-04 17:00:07 UTC

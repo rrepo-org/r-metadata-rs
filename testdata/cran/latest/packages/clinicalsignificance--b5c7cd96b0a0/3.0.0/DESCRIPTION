@@ -1,0 +1,33 @@
+Package: clinicalsignificance
+Type: Package
+Title: A Toolbox for Clinical Significance Analyses in Intervention
+        Studies
+Version: 3.0.0
+Authors@R: 
+    person("Benedikt", "Claus", , "benediktclaus@outlook.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9501-0954"))
+Description: A clinical significance analysis can be used to determine if an 
+    intervention has a meaningful or practical effect for patients. You provide 
+    a tidy data set plus a few more metrics and this package will take care of 
+    it to make your results publication ready. Accompanying package to 
+    Claus et al. <doi:10.18637/jss.v111.i01>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.2.0)
+RoxygenNote: 7.3.3
+Imports: BayesFactor, bayestestR, cli, dplyr, ggplot2, insight, lme4,
+        purrr, rlang, snakecase, tibble, tidyr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tidyverse, vdiffr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://benediktclaus.github.io/clinicalsignificance/,
+        https://github.com/benediktclaus/clinicalsignificance
+BugReports: https://github.com/benediktclaus/clinicalsignificance/issues
+NeedsCompilation: no
+Packaged: 2025-11-26 20:01:03 UTC; bened
+Author: Benedikt Claus [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9501-0954>)
+Maintainer: Benedikt Claus <benediktclaus@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-11-27 09:10:02 UTC

@@ -1,0 +1,44 @@
+Package: formr
+Title: Companion R Package for the 'formr' Survey Framework
+Description: Serves as a companion toolkit for the 'formr' survey
+    framework (<https://rforms.org>). The package acts as a bridge
+    between a 'formr' server and a local R environment. Key features
+    include an API client for fetching, type-casting, and automatically
+    scoring data; a project management workflow for syncing study
+    assets (surveys, CSS) for local editing; and functions for use
+    within 'formr' runs to generate dynamic, personalized feedback
+    plots and to simplify survey logic.
+Version: 1.1.0
+Authors@R: c(
+    person("Ruben", "Arslan",
+        email = "rubenarslan@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-6670-5658")),
+    person("Tim B", "Seidel",
+        email = "tim.seidel@outlook.com",
+        role = c("aut", "ctb"))
+    )
+Depends: R (>= 4.1.0)
+Imports: stats, methods, tools, utils, dplyr, ggplot2, scales, haven,
+        stringr, tidyr, knitr, httr, curl, jsonlite, lubridate,
+        rmarkdown, otp, keyring, purrr, readr, rlang
+Suggests: testthat (>= 3.0.0), vcr, mockery, withr, rstudioapi, plotly,
+        commonmark
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://rubenarslan.github.io/formr/,
+        https://github.com/rubenarslan/formr
+BugReports: https://github.com/rubenarslan/formr/issues
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-08 20:38:00 UTC; rubenarslan
+Author: Ruben Arslan [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6670-5658>),
+  Tim B Seidel [aut, ctb]
+Maintainer: Ruben Arslan <rubenarslan@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-16 20:10:13 UTC

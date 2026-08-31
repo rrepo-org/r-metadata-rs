@@ -1,0 +1,26 @@
+Package: retentionflow
+Title: Retention Flow Tables and Sankey Diagrams
+Version: 0.1.25
+Authors@R: c(
+    person("Alexander", "Nanni", email = "alexander.nanni@gmail.com", role = c("aut", "cre"))
+  )
+Author: Alexander Nanni [aut, cre]
+Maintainer: Alexander Nanni <alexander.nanni@gmail.com>
+Description: Creates transition tables, summaries, and interactive Sankey
+    diagrams from longitudinal person-term-state data. Sankey diagrams
+    visualize flows between states with link widths proportional to flow
+    counts; see Kennedy and Sankey (1898) "The Thermal Efficiency of Steam
+    Engines" <doi:10.1680/imotp.1898.19100> and Schmidt (2008) "The
+    Sankey Diagram in Energy and Material Flow Management: Part I: History"
+    <doi:10.1111/j.1530-9290.2008.00004.x>. The minimum input schema is one
+    row per person per term with an identifier, term, and categorical state.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Suggests: htmlwidgets, plotly, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-08 01:08:18 UTC; alexandernanni
+Repository: CRAN
+Date/Publication: 2026-07-16 13:40:02 UTC

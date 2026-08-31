@@ -1,0 +1,37 @@
+Package: envsetup
+Title: Support the Setup of the R Environment for Clinical Trial
+        Programming Workflows
+Version: 0.3.0
+Authors@R: c(
+    person("Nicholas", "Masel", email = "nmasel@its.jnj.com", role = c("aut", "cre")),
+    person("Mike", "Stackhouse", email = "mike.stackhouse@atorusresearch.com", role = c("aut"), comment = c(ORCID = "0000-0001-6030-723X")),
+    person("Aidan", "Ceney", email = "aidan.ceney@atorusresearch.com", role = "aut"),
+    person("Johnson & Johnson Innovative Medicine", role = c("cph", "fnd")),
+    person("Atorus Research, Inc.", role = "cph")
+  )
+Description: The purpose of this package is to support the setup the R environment.  
+    The two main features are 'autos', to automatically source files and/or 
+    directories into your environment, and 'paths' to consistently set path objects 
+    across projects for input and output. Both are implemented using a configuration 
+    file to allow easy, custom configurations that can be used for multiple 
+    or all projects.
+License: Apache License 2.0
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: config, fs, purrr, rlang, usethis, envnames, utils
+Suggests: rmarkdown, testthat, knitr, kableExtra, magrittr, devtools,
+        readr, tidyr, withr, lintr, styler, renv, covr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/pharmaverse/envsetup
+BugReports: https://github.com/pharmaverse/envsetup/issues
+NeedsCompilation: no
+Packaged: 2025-10-09 19:14:04 UTC; nmasel
+Author: Nicholas Masel [aut, cre],
+  Mike Stackhouse [aut] (ORCID: <https://orcid.org/0000-0001-6030-723X>),
+  Aidan Ceney [aut],
+  Johnson & Johnson Innovative Medicine [cph, fnd],
+  Atorus Research, Inc. [cph]
+Maintainer: Nicholas Masel <nmasel@its.jnj.com>
+Repository: CRAN
+Date/Publication: 2025-10-16 11:50:02 UTC

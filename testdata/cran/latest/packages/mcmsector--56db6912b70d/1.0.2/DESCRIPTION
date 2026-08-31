@@ -1,0 +1,41 @@
+Package: mcmsector
+Type: Package
+Title: Estimating Subnational Public and Private Contraceptive Supply
+        Shares Over Time
+Version: 1.0.2
+Author: Hannah Comiskey [aut, cre],
+  David Fraizer [aut],
+  Ole Maneesoonthorn [aut]
+Maintainer: Hannah Comiskey <hannahcomiskey68@gmail.com>
+Authors@R: c(person(given = "Hannah",
+                      family = "Comiskey",
+                      role = c("aut", "cre"),
+                      email = "hannahcomiskey68@gmail.com"),
+             person(given = "David",
+                      family = "Fraizer",
+                      role = "aut"),
+             person(given = "Ole",
+                      family = "Maneesoonthorn",
+                      role = "aut"))
+Description: Engaging the private sector in contraceptive method supply is
+    critical for equitable, sustainable, and accessible healthcare systems.
+    This package implements Bayesian hierarchical models to estimate public
+    and private contraceptive supply shares over time at national and
+    subnational levels, using Demographic and Health Survey (DHS) data.
+    Penalized splines are used to track supply shares over time, and spatial
+    correlation structures link national and subnational estimates in data-
+    sparse settings. For more details see Comiskey (2025) 
+    <doi:10.48550/arXiv.2510.25153>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0)
+LazyData: true
+Suggests: knitr, R2jags, rmarkdown, testthat (>= 3.0.0), mcmsupply
+Config/testthat/edition: 3
+Imports: haven, survey, stats, openxlsx, magrittr, rlang, dplyr, plyr,
+        stringr, labelled, tibble, tidyr
+NeedsCompilation: no
+Packaged: 2026-04-09 05:11:37 UTC; hcom0005
+Repository: CRAN
+Date/Publication: 2026-04-15 13:10:02 UTC

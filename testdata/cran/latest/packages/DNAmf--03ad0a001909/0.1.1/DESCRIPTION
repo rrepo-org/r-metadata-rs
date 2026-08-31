@@ -1,0 +1,21 @@
+Package: DNAmf
+Type: Package
+Title: Diffusion Non-Additive Model with Tunable Precision
+Version: 0.1.1
+Authors@R: c(
+	person(given="Junoh", family="Heo", role=c("aut", "cre"), email="heojunoh@msu.edu"), 	     	person(given="Romain", family="Boutelet", role="aut", email="boutelet@msu.edu"), 	     	person(given="Chih-Li", family="Sung", role="aut", email="sungchih@msu.edu")
+	)
+Maintainer: Junoh Heo <heojunoh@msu.edu>
+Description: Performs Diffusion Non-Additive (DNA) model proposed by Heo, Boutelet, and Sung (2025+) <doi:10.48550/arXiv.2506.08328> for multi-fidelity computer experiments with tuning parameters. The DNA model captures nonlinear dependencies across fidelity levels using Gaussian process priors and is particularly effective when simulations at different fidelity levels are nonlinearly correlated. The DNA model targets not only interpolation across given fidelity levels but also extrapolation to smaller tuning parameters including the exact solution corresponding to a zero-valued tuning parameter, leveraging a nonseparable covariance kernel structure that models interactions between the tuning parameter and input variables. Closed-form expressions for the predictive mean and variance enable efficient inference and uncertainty quantification. Hyperparameters in the model are estimated via maximum likelihood estimation. 
+License: GPL-3
+Encoding: UTF-8
+Imports: plgp, stats, methods, lhs, fields, mvtnorm
+Suggests: RNAmf
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-23 05:12:59 UTC; junoh
+Author: Junoh Heo [aut, cre],
+  Romain Boutelet [aut],
+  Chih-Li Sung [aut]
+Repository: CRAN
+Date/Publication: 2026-01-29 20:40:13 UTC

@@ -1,0 +1,22 @@
+Package: redquack
+Title: Transfer 'REDCap' Data to Database
+Version: 0.3.0
+Authors@R: person("Dylan", "Pieper", , "dylanpieper@gmail.com", role = c("aut", "cre"))
+Description: Transfer 'REDCap' (Research Electronic Data Capture) data to a database,
+    specifically optimized for 'DuckDB'. 
+    Processes data in chunks to handle large datasets without exceeding available memory. 
+    Features include data labeling, coded value conversion, and hearing a "quack" sound on success.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: audio, cli, DBI, dplyr, dbplyr, duckdb, httr2, labelled,
+        readr, rlang
+Suggests: arrow, keyring, pak, RSQLite, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2025-10-09 15:33:23 UTC; dylanpieper
+Author: Dylan Pieper [aut, cre]
+Maintainer: Dylan Pieper <dylanpieper@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-09 16:10:02 UTC

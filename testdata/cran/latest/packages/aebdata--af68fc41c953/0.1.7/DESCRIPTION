@@ -1,0 +1,26 @@
+Package: aebdata
+Title: Access Data from the Atlas do Estado Brasileiro
+Version: 0.1.7
+Authors@R: 
+    person("Hugo", "Macedo", , "aebdata@hhmace.do",
+           role = c("aut", "cre", "cph"))
+Description: Facilitates access to the data from the Atlas do Estado Brasileiro
+    (<https://www.ipea.gov.br/atlasestado/>), maintained by the Instituto de
+    Pesquisa Econômica Aplicada (Ipea). It allows users to search for specific
+    series, list series or themes, and download data when available.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Suggests: curl, knitr, rmarkdown, stringi, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/ipea/aebdata
+BugReports: https://github.com/ipea/aebdata/issues
+Imports: cli, httr2, readr, rvest
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-04 02:32:11 UTC; Macedo
+Author: Hugo Macedo [aut, cre, cph]
+Maintainer: Hugo Macedo <aebdata@hhmace.do>
+Repository: CRAN
+Date/Publication: 2026-07-04 03:30:02 UTC

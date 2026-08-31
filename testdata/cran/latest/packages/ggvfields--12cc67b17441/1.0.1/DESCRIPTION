@@ -1,0 +1,41 @@
+Package: ggvfields
+Type: Package
+Title: Vector Field Visualizations with 'ggplot2'
+Version: 1.0.1
+Authors@R: 
+    c(person(given = "Dusty",
+           family = "Turner",
+           role = c("aut", "cre"),
+           email = "dusty.s.turner@gmail.com"),
+      person(given = "David",
+           family = "Kahle",
+           role = c("aut"),
+           email = "david_kahle@baylor.edu"),
+      person(given = "Rodney X.",
+           family = "Sturdivant",
+           role = c("aut"),
+           email = "rodney_sturdivant@baylor.edu"))
+Maintainer: Dusty Turner <dusty.s.turner@gmail.com>
+Description: A 'ggplot2' extension for visualizing vector fields in two-dimensional 
+           space. Provides flexible tools for creating vector and stream field layers, 
+           visualizing gradients and potential fields, and smoothing vector and 
+           scalar data to estimate underlying patterns. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0), ggplot2 (>= 3.3.0)
+Imports: farver, tibble, numDeriv, deSolve, grid, utils, scales, sp,
+        gstat, cli, mgcv
+URL: https://github.com/dusty-turner/ggvfields
+BugReports: https://github.com/dusty-turner/ggvfields/issues
+Suggests: ggdensity, knitr, rmarkdown, testthat (>= 3.0.0)
+Date: 2026-06-17
+Config/testthat/edition: 3
+BuildVignettes: true
+NeedsCompilation: no
+Packaged: 2026-06-18 13:45:45 UTC; dusty.turner
+Author: Dusty Turner [aut, cre],
+  David Kahle [aut],
+  Rodney X. Sturdivant [aut]
+Repository: CRAN
+Date/Publication: 2026-06-18 14:20:07 UTC

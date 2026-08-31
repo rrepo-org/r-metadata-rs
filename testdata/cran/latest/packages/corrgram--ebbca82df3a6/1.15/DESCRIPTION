@@ -1,0 +1,29 @@
+Type: Package
+Package: corrgram
+Title: Plot a Correlogram
+Version: 1.15
+Date: 2026-05-18
+Authors@R: 
+    person("Kevin", "Wright", , "kw.stat@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0617-8673"))
+Description: Calculates correlation of variables and displays the results
+    graphically. Included panel functions can display points, shading,
+    ellipses, and correlation values with confidence intervals. See
+    Friendly (2002) <doi:10.1198/000313002533>.
+License: MIT + file LICENSE
+URL: https://kwstat.github.io/corrgram/
+BugReports: https://github.com/kwstat/corrgram/issues/
+Imports: ellipse, graphics, grDevices, grid, lattice, stats
+Suggests: gridBase, hexbin, knitr, MASS, Matrix, psych, rmarkdown,
+        seriation, sfsmisc, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-18 17:29:13 UTC; wrightkevi
+Author: Kevin Wright [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0617-8673>)
+Maintainer: Kevin Wright <kw.stat@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-18 19:10:02 UTC

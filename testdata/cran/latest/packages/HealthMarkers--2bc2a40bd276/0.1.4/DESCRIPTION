@@ -1,0 +1,37 @@
+Package: HealthMarkers
+Type: Package
+Title: Clinical and Metabolic Biomarker Calculation Toolkit
+Version: 0.1.4
+Authors@R: 
+    person(given = "Sufyan", family = "Suleman",
+           email = "sufyansuleman@hotmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6612-6915"))
+Description: Computes specialist biomarker indices and risk scores for metabolic,
+    cardiovascular, renal, hepatic, inflammatory, frailty, and psychiatric
+    health assessment. Includes fasting and OGTT insulin sensitivity/resistance
+    indices, ASCVD/QRISK3/KFRE risk equations, liver and kidney markers,
+    frailty and comorbidity indices, biofluid marker panels, and utilities for
+    column mapping, normalization, imputation, and combined marker dispatch.
+License: MIT + file LICENSE
+URL: https://sufyansuleman.github.io/HealthMarkers/,
+        https://github.com/sufyansuleman/HealthMarkers
+BugReports: https://github.com/sufyansuleman/HealthMarkers/issues
+Depends: R (>= 4.0)
+Imports: dplyr (>= 1.0.0), rlang (>= 1.0.0), stats, tibble (>= 3.0.0),
+        utils, vctrs, Rdpack
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), pkgload, CVrisk, di,
+        rspiro, PooledCohort, QRISK3, RiskScorescvd, usethis, withr,
+        mice, missForest
+RdMacros: Rdpack
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-16 21:20:10 UTC; au773972
+Author: Sufyan Suleman [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6612-6915>)
+Maintainer: Sufyan Suleman <sufyansuleman@hotmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-17 07:20:20 UTC

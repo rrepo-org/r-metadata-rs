@@ -1,0 +1,25 @@
+Package: robustGarch
+Type: Package
+Title: Robust Garch(1,1) Model
+Version: 0.4.2
+Authors@R: c(
+    person("Echo", "Liu", email = "yuhong.echo.liu@gmail.com", role = c("aut", "cre")),
+    person("Daniel", "Xia", email = "dxia94@gmail.com", role = "aut"),
+    person("R. Douglas", "Martin", email = "dougPCRA@gmail.com", role = "aut"))
+Description: A method for modeling robust generalized autoregressive conditional heteroskedasticity (Garch) (1,1) processes, providing robustness toward additive outliers instead of innovation outliers. This work is based on the methodology described by Muler and Yohai (2008) <doi:10.1016/j.jspi.2007.11.003>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/EchoRLiu/robustGarch
+BugReports: https://github.com/EchoRLiu/robustGarch/issues
+RoxygenNote: 7.3.2
+Suggests: rmarkdown, testthat, PCRA
+Imports: Rsolnp, nloptr, rugarch, zoo, xts
+Depends: R (>= 4.3.0)
+NeedsCompilation: no
+Packaged: 2025-04-27 18:12:42 UTC; yuhongliu
+Author: Echo Liu [aut, cre],
+  Daniel Xia [aut],
+  R. Douglas Martin [aut]
+Maintainer: Echo Liu <yuhong.echo.liu@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-28 18:50:02 UTC

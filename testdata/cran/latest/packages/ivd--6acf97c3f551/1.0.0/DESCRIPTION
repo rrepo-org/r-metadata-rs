@@ -1,0 +1,35 @@
+Package: ivd
+Type: Package
+Title: Individual Variance Detection
+Version: 1.0.0
+Authors@R: 
+	c(
+	person(given = "Philippe",
+	family = "Rast",
+	role = c("aut", "cre", "cph"),
+	email = "rast.ph@gmail.com",
+	comment = c(ORCID = "0000-0003-3630-6629")),
+	person(given = "Marwin",
+	family = "Carmo",
+	role = "aut",
+	email = "mmcarmo@ucdavis.edu")
+	)
+Maintainer: Philippe Rast <rast.ph@gmail.com>
+Description: Fit mixed-effects location scale models with spike-and-slab priors on the location random effects to identify units with unusual residual variances. The method is described in detail in Carmo, Williams and Rast (2025) <https://osf.io/sh6ne>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: nimble (>= 1.1.0), coda (>= 0.19.4), ggplot2, patchwork,
+        future, future.apply, utils, rstan, ggrepel
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+BugReports: https://github.com/consistentlyBetter/ivd/issues
+Depends: R (>= 3.0)
+NeedsCompilation: no
+Packaged: 2025-12-05 01:17:46 UTC; philippe
+Author: Philippe Rast [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3630-6629>),
+  Marwin Carmo [aut]
+Repository: CRAN
+Date/Publication: 2025-12-10 21:30:06 UTC

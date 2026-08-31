@@ -1,0 +1,46 @@
+Package: mlr3summary
+Title: Model and Learner Summaries for 'mlr3'
+Version: 0.1.2
+Authors@R: c(
+    person("Susanne", "Dandl", , "dandls.datascience@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4324-4163")),
+    person("Marc", "Becker", , "marcbecker@posteo.de", role = "aut",
+           comment = c(ORCID = "0000-0002-8115-0400")),
+    person("Bernd", "Bischl", , "bernd_bischl@gmx.net", role = "aut",
+           comment = c(ORCID = "0000-0001-6002-6980")),
+    person("Giuseppe", "Casalicchio", , "giuseppe.casalicchio@stat.uni-muenchen.de", role = "aut",
+           comment = c(ORCID = "0000-0001-5324-5966")),
+    person("Ludwig", "Bothmann", , "ludwig.bothmann@stat.uni-muenchen.de", role = "aut",
+           comment = c(ORCID = "0000-0002-1471-6582"))
+  )
+Description: Concise and interpretable summaries for machine learning
+    models and learners of the 'mlr3' ecosystem.  The package takes
+    inspiration from the summary function for (generalized) linear models
+    but extends it to non-parametric machine learning models, based on
+    generalization performance, model complexity, feature importances and
+    effects, and fairness metrics.
+License: LGPL-3
+Depends: R (>= 3.5.0)
+Imports: backports, checkmate (>= 2.0.0), cli, data.table, future.apply
+        (>= 1.5.0), mlr3 (>= 0.12.0), mlr3misc
+Suggests: fastshap, iml, mlr3fairness, mlr3learners, mlr3pipelines,
+        mlr3tuning, future, ranger, rpart, testthat (>= 3.1.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+URL: https://github.com/mlr-org/mlr3summary
+BugReports: https://github.com/mlr-org/mlr3summary/issues
+Packaged: 2026-02-18 09:11:05 UTC; marc
+Author: Susanne Dandl [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4324-4163>),
+  Marc Becker [aut] (ORCID: <https://orcid.org/0000-0002-8115-0400>),
+  Bernd Bischl [aut] (ORCID: <https://orcid.org/0000-0001-6002-6980>),
+  Giuseppe Casalicchio [aut] (ORCID:
+    <https://orcid.org/0000-0001-5324-5966>),
+  Ludwig Bothmann [aut] (ORCID: <https://orcid.org/0000-0002-1471-6582>)
+Maintainer: Susanne Dandl <dandls.datascience@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-18 23:30:02 UTC

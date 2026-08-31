@@ -1,0 +1,31 @@
+Package: APRScenario
+Title: Structural Scenario Analysis for Bayesian Structural Vector
+        Autoregression Models
+Version: 0.0.4.2
+Author: Giovanni Lombardo [aut, cre],
+  Tito Quadri [aut]
+Maintainer: Giovanni Lombardo <giannilmbd@gmail.com>
+Authors@R: c(
+    person("Giovanni", "Lombardo", email = "giannilmbd@gmail.com", role = c("aut", "cre")),
+    person("Tito", "Quadri", email = "quadritito@gmail.com", role = "aut"))
+Description: Implements the scenario analysis proposed by Antolin-Diaz, 
+    Petrella and Rubio-Ramirez (2021) 
+    "Structural scenario analysis with SVARs" <doi:10.1016/j.jmoneco.2020.06.001>.
+License: GPL (>= 3)
+URL: https://github.com/giannilmbd/APRScenario
+BugReports: https://github.com/giannilmbd/APRScenario/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, lubridate, parallel, MASS, tidyr, abind,
+        psych, Rcpp (>= 1.0.12), RcppProgress
+Suggests: bsvars, bsvarSIGNs, devtools, ggfortify, gridExtra, zoo,
+        knitr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+SystemRequirements: LAPACK
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-08-26 06:59:39 UTC; gianni
+Repository: CRAN
+Date/Publication: 2026-08-26 08:50:17 UTC

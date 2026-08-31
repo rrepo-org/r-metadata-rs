@@ -1,0 +1,34 @@
+Package: ggInterval
+Type: Package
+Title: Visualizing Interval-Valued Data Using 'ggplot2'
+Version: 0.2.5
+Date: 2026-04-28
+Authors@R: c(
+    person("Bo-Syue", "Jiang", email = "lukajiang1998@gmail.com", role = "aut"),
+    person("Han-Ming", "Wu", email = "wuhm@g.nccu.edu.tw", role = "cre"))
+Author: Bo-Syue Jiang [aut],
+  Han-Ming Wu [cre]
+Maintainer: Han-Ming Wu <wuhm@g.nccu.edu.tw>
+Description: Extends 'ggplot2' for visualizing interval-valued data with
+    scatter plots, histograms, index plots, boxplots, radar plots, PCA
+    displays, and correlation heatmaps. The package also converts
+    classical data tables into interval-valued data using clustering
+    algorithms or user-defined groupings.
+Depends: ggplot2, R (>= 4.4.0), tidyverse, RSDA
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, data.table,
+        HistDAWass, MAINT.Data, TTR
+Imports: rlang, R6, dplyr, tidyr, gridExtra, gtools, stringr, prodlim,
+        ggforce, ggpubr, ggthemes, tibble, magrittr, vctrs
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/hanmingwu1103/ggInterval,
+        https://CRAN.R-project.org/package=ggInterval
+BugReports: https://github.com/hanmingwu1103/ggInterval/issues
+NeedsCompilation: no
+Packaged: 2026-04-28 11:19:27 UTC; CodexSandboxOffline
+Repository: CRAN
+Date/Publication: 2026-04-28 12:30:02 UTC

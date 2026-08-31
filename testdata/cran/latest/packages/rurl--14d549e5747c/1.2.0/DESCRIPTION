@@ -1,0 +1,29 @@
+Package: rurl
+Type: Package
+Title: Parse, Clean, and Normalize URLs
+Version: 1.2.0
+Language: en-US
+Authors@R: 
+    person("Bart", "Turczynski", email = "bartek+rurl@turczynski.pl", role = c("aut", "cre"))
+Description: A lightweight toolkit for extracting structured information from URLs.
+    Includes functions for parsing, normalizing protocols, extracting domains, and constructing clean URLs.
+    The package includes a processed copy of the Public Suffix List from
+    <https://publicsuffix.org> for domain extraction.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Collate: 'utils.R' 'domain.R' 'path-query.R' 'parse-phases.R' 'parse.R'
+        'accessors.R' 'canonical_join.R' 'zzz.R'
+Imports: utils, curl, stringi, punycoder (>= 1.0.0)
+URL: https://github.com/bart-turczynski/rurl
+BugReports: https://github.com/bart-turczynski/rurl/issues
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, withr
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-13 10:02:53 UTC; bartturczynski
+Author: Bart Turczynski [aut, cre]
+Maintainer: Bart Turczynski <bartek+rurl@turczynski.pl>
+Repository: CRAN
+Date/Publication: 2026-06-19 15:50:02 UTC

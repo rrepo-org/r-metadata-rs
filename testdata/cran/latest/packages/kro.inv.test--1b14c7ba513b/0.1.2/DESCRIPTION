@@ -1,0 +1,19 @@
+Package: kro.inv.test
+Title: Kronecker-Invariant Tests for High-Dimensional Separability
+        Testing
+Version: 0.1.2
+Description: Kronecker-invariant tests for high-dimensional separability testing of matrix-variate data, focusing on Gaussian populations as benchmark cases. Tests whether the population covariance matrix is represented as a Kronecker product of row and column covariance matrices. Implements the tests based on the eigenvalues of the sample core whose test statistics are invariant to the separable component of the population covariance matrix, referred to as Kronecker-invariance. Tests constructed using the largest eigenvalue and the separable expansion of the sample core and applying the extended likelihood ratio test for sphericity testing to the sample core. For details, see Sung and Hoff (2025) <doi:10.48550/arXiv.2506.17463>.
+Authors@R: person("Bongjung","Sung",email = "bongjung.sung@duke.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-2464-9977")) 
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Imports: RMTstat, RSpectra, covKCD, pracma, stats
+URL: https://github.com/Seungbongjung/kro.inv.test
+BugReports: https://github.com/Seungbongjung/kro.inv.test/issues
+NeedsCompilation: no
+Packaged: 2026-07-30 16:46:02 UTC; bs403
+Author: Bongjung Sung [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2464-9977>)
+Maintainer: Bongjung Sung <bongjung.sung@duke.edu>
+Repository: CRAN
+Date/Publication: 2026-07-30 17:30:02 UTC

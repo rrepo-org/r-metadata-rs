@@ -1,0 +1,24 @@
+Package: logtree
+Title: Tree-Style Console Logger for Nested Processes
+Version: 0.1.0
+Authors@R: 
+    person("Ivan", "Sortino", , "ivan.sortino97@gmail.com", role = c("aut", "cre", "cph"))
+Description: Render nested process execution as a live, colored tree in the console, with tree connectors, status glyphs, and elapsed time per step. Nesting depth is tracked via frame exit handlers so it never desynchronizes, even when a step errors. Builds on the 'cli' package for console rendering.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Depends: R (>= 4.0)
+Imports: cli, rlang, withr
+Suggests: covr, jsonlite, knitr, logger, pkgdown, rmarkdown, testthat
+        (>= 3.1.4)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/IvanSortino/logtree,
+        https://ivansortino.github.io/logtree/
+BugReports: https://github.com/IvanSortino/logtree/issues
+NeedsCompilation: no
+Packaged: 2026-07-28 22:10:36 UTC; sortino
+Author: Ivan Sortino [aut, cre, cph]
+Maintainer: Ivan Sortino <ivan.sortino97@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-06 13:40:08 UTC

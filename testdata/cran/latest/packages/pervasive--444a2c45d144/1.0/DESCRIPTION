@@ -1,0 +1,19 @@
+Package: pervasive
+Title: Pervasiveness Functions for Correlational Data
+Version: 1.0
+Authors@R: 
+    person("Denis", "Lajoie", , "denis.lajoie@umoncton.ca", role = c("aut", "cre"))
+Description: Analysis of pervasiveness of effects in correlational data. The Observed Proportion (or Percentage) of Concordant Pairs (OPCP) is Kendall's Tau expressed on a 0 to 1 metric instead of the traditional -1 to 1 metric to facilitate interpretation. As its name implies, it represents the proportion of concordant pairs in a sample (with an adjustment for ties). Pairs are concordant when a participant who has a larger value on a variable than another participant also has a larger value on a second variable. The OPCP is therefore an easily interpretable indicator of monotonicity. The pervasive functions are essentially wrappers for the 'arules' package by Hahsler et al. (2025)<doi:10.32614/CRAN.package.arules> and serve to count individuals who actually display the pattern(s) suggested by a regression. For more details, see the paper "Considering approaches to pervasiveness in the context of personality psychology" now accepted at the journal Personality Science.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: arules, dplyr, tibble, psych, methods, stats
+Suggests: knitr, rmarkdown, psychTools
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-10-31 19:07:41 UTC; pdl8039
+Author: Denis Lajoie [aut, cre]
+Maintainer: Denis Lajoie <denis.lajoie@umoncton.ca>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2025-11-04 19:00:02 UTC

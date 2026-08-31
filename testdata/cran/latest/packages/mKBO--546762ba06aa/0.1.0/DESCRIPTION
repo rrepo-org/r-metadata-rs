@@ -1,0 +1,23 @@
+Package: mKBO
+Type: Package
+Title: Multi-Group Kitagawa-Blinder-Oaxaca Decomposition
+Version: 0.1.0
+Authors@R: c(
+    person("Rense", "Nieuwenhuis", email = "rense.nieuwenhuis@sofi.su.se", role = c("cre", "aut"), comment = c(ORCID = "0000-0001-6138-0463")),
+    person("Max", "Thaning", email = "max.thaning@sofi.su.se", role = "aut", comment = c(ORCID = "0000-0002-1859-4703")))
+Description: Provides multigroup Kitagawa-Blinder-Oaxaca ('mKBO') decompositions, that allow for more than two groups. Each group is compared to the sample average. For more details see Thaning and Nieuwenhuis (2025) <doi:10.31235/osf.io/6twvj_v1>.  
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: dplyr, tidyr, purrr, stats, tibble, tidyselect, stringr,
+        rlang, broom, utils
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-10-28 09:33:14 UTC; rniee
+Author: Rense Nieuwenhuis [cre, aut] (ORCID:
+    <https://orcid.org/0000-0001-6138-0463>),
+  Max Thaning [aut] (ORCID: <https://orcid.org/0000-0002-1859-4703>)
+Maintainer: Rense Nieuwenhuis <rense.nieuwenhuis@sofi.su.se>
+Repository: CRAN
+Date/Publication: 2025-10-31 18:20:13 UTC

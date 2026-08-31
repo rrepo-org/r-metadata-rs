@@ -1,0 +1,39 @@
+Package: ecorest
+Title: Conducts Analyses Informing Ecosystem Restoration Decisions
+Version: 2.0.3
+Authors@R: 
+    c(person(given = "S. Kyle", family = "McKay",
+           role = c("aut", "cre"),
+           email = "skmckay@gmail.com",
+           comment = c(ORCID = "0000-0003-2703-3841")),
+      person(given = "Darixa D.", family = "Hernandez-Abrams",
+           role = c("aut"),
+           email = "darixa.d.hernandez-abrams@erdc.dren.mil"),
+      person(given = "Kiara C.", family = "Cushway",
+           role = c("aut"),
+           email = "kiara.c.cushway@usace.army.mil"))
+Description: Three sets of data and functions for informing ecosystem restoration
+    decisions, particularly in the context of the U.S. Army Corps of Engineers.
+    First, model parameters are compiled as a data set and associated metadata 
+    for over 300 habitat suitability models developed by the U.S. Fish and 
+    Wildlife Service (USFWS 1980, <https://www.fws.gov/policy-library/870fw1>).
+    Second, functions for conducting habitat suitability analyses both for the 
+    models described above as well as generic user-specified model parameterizations. 
+    Third, a suite of decision support tools for conducting cost-effectiveness and 
+    incremental cost analyses (Robinson et al. 1995, IWR Report 95-R-1, U.S. 
+    Army Corps of Engineers).
+Depends: R (>= 3.5.0)
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports: viridis, stats, graphics, grDevices
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-28 14:44:06 UTC; RDEL1KCC
+Author: S. Kyle McKay [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2703-3841>),
+  Darixa D. Hernandez-Abrams [aut],
+  Kiara C. Cushway [aut]
+Maintainer: S. Kyle McKay <skmckay@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-21 14:30:02 UTC

@@ -1,0 +1,31 @@
+Package: selection.index
+Type: Package
+Title: Analysis of Selection Index in Plant Breeding
+Version: 2.0.1
+Date: 2026-03-06
+Authors@R: 
+  c(person(given = "Zankrut",
+           family = "Goyani",
+           role = c("aut", "cre", "cph"),
+           email = "zankrut20@gmail.com"))
+Description: Provides tools for the simultaneous improvement of multiple traits in plant breeding. Building upon the classical selection index (Smith 1937 <doi:10.1111/j.1469-1809.1936.tb02143.x>) and modern quantitative genetics (Kang 2020 <doi:10.1007/978-3-319-91223-3>), this package calculates classical phenotypic, genomic, marker-assisted, restricted/constrained, and eigen selection indices. It also incorporates multi-stage selection evaluation and stochastic simulations to estimate genetic advance based on economic weights, heritability, and genetic correlations.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Language: en-US
+Depends: R (>= 3.5.0)
+Imports: MASS, Rcpp, stats, utils
+LinkingTo: Rcpp, RcppEigen
+URL: https://github.com/zankrut20/selection.index,
+        https://zankrut20.github.io/selection.index/
+BugReports: https://github.com/zankrut20/selection.index/issues
+Suggests: rmarkdown, markdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-03-07 20:35:52 UTC; zankrut
+Author: Zankrut Goyani [aut, cre, cph]
+Maintainer: Zankrut Goyani <zankrut20@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-08 17:10:24 UTC

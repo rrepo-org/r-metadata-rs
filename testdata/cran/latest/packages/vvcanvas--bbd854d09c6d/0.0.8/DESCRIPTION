@@ -1,0 +1,45 @@
+Package: vvcanvas
+Title: 'Canvas' LMS API Integration
+Version: 0.0.8
+Authors@R: 
+  c(person(given = "Hajo", 
+           family = "Bons", 
+           role = c("aut", "cre"), 
+           email = "h.b.bons@vu.nl"
+           ),
+    person(given = "Tomer", 
+           family = "Iwan", 
+           role = "aut", 
+           email = "t.iwan@vu.nl"
+           ),
+    person(given = "Niels",
+           family = "Smits",
+           role = "ctb",
+           email = "n.smits@uva.nl",
+           comment = c(ORCID = "0000-0003-3669-9266")
+           ),
+    person(given = "VU Analytics",
+           role = "cph"
+           ))
+Description: Allow R users to interact with the 'Canvas' Learning Management System (LMS) API (see
+    <https://canvas.instructure.com/doc/api/all_resources.html> for details).
+    It provides a set of functions to access and manipulate course data, assignments, grades, users, 
+    and other resources available through the 'Canvas' API.
+URL: https://github.com/vusaverse/vvcanvas,
+        https://vusaverse.github.io/vvcanvas/
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, htm2txt, httr, jsonlite, magrittr, mime, purrr, rlang,
+        stringr, tidyr, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-19 12:57:10 UTC; esr316
+Author: Hajo Bons [aut, cre],
+  Tomer Iwan [aut],
+  Niels Smits [ctb] (ORCID: <https://orcid.org/0000-0003-3669-9266>),
+  VU Analytics [cph]
+Maintainer: Hajo Bons <h.b.bons@vu.nl>
+Repository: CRAN
+Date/Publication: 2026-01-19 13:20:02 UTC

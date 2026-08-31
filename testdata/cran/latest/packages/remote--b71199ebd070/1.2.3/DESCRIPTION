@@ -1,0 +1,41 @@
+Package: remote
+Title: Empirical Orthogonal Teleconnections in R
+Version: 1.2.3
+Authors@R: 
+    c(person(given = "Tim",
+             family = "Appelhans",
+             role = c("cre", "aut"),
+             email = "tim.appelhans@gmail.com"),
+      person(given = "Florian",
+             family = "Detsch",
+             role = "aut",
+             email = "fdetsch@web.de"),
+      person(given = "Thomas",
+             family = "Nauss",
+             role = "ctb"))
+Maintainer: Tim Appelhans <tim.appelhans@gmail.com>
+Description: Empirical orthogonal teleconnections in R.
+    'remote' is short for 'R(-based) EMpirical Orthogonal TEleconnections'.
+    It implements a collection of functions to facilitate empirical
+    orthogonal teleconnection analysis. Empirical Orthogonal Teleconnections
+    (EOTs) denote a regression based approach to decompose spatio-temporal
+    fields into a set of independent orthogonal patterns. They are quite
+    similar to Empirical Orthogonal Functions (EOFs) with EOTs producing
+    less abstract results. In contrast to EOFs, which are orthogonal in both
+    space and time, EOT analysis produces patterns that are orthogonal in
+    either space or time.
+License: GPL (>= 3) | file LICENSE
+Depends: R (>= 2.10), Rcpp (>= 0.10.3), raster, methods
+Imports: grDevices, gridExtra, latticeExtra, mapdata, scales, stats,
+        utils
+Suggests: maps, lattice, grid, sp
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2025-04-12 11:56:22 UTC; tim
+Author: Tim Appelhans [cre, aut],
+  Florian Detsch [aut],
+  Thomas Nauss [ctb]
+Repository: CRAN
+Date/Publication: 2025-04-12 13:00:02 UTC

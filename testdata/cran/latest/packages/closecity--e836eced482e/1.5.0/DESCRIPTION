@@ -1,0 +1,33 @@
+Package: closecity
+Title: Client for the 'Close' API
+Version: 1.5.0
+Authors@R: c(
+    person("Nathaniel", "Henry", role = c("aut", "cre"),
+           email = "nat@henryspatialanalysis.com"),
+    person("Henry Spatial Analysis", role = c("aut", "cph", "fnd")))
+Description: Access travel times from every US census block to nearby points of
+    interest, by walking, biking, and public transit, over the 'Close' API. Wraps
+    the metered, read-only public endpoints with keyset pagination, ETag/304
+    conditional requests, token accounting, typed RFC 9457 error handling, and
+    tabular output by default ('sf' where geometry applies, a data frame
+    otherwise).
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://henryspatialanalysis.github.io/closecity-r/,
+        https://github.com/henryspatialanalysis/closecity-r
+BugReports: https://github.com/henryspatialanalysis/closecity-r/issues
+Depends: R (>= 4.1)
+Imports: httr2 (>= 1.0.0), jsonlite, R6, rlang, sf
+Suggests: testthat (>= 3.0.0), withr, tigris, plotly, geojsonsf, knitr,
+        rmarkdown
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+RoxygenNote: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-23 09:57:55 UTC; nathenry
+Author: Nathaniel Henry [aut, cre],
+  Henry Spatial Analysis [aut, cph, fnd]
+Maintainer: Nathaniel Henry <nat@henryspatialanalysis.com>
+Repository: CRAN
+Date/Publication: 2026-08-02 16:30:07 UTC

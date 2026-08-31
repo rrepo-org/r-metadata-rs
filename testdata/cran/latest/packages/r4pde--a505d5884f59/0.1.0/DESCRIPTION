@@ -1,0 +1,32 @@
+Package: r4pde
+Type: Package
+Title: Companion to R for Plant Disease Epidemiology Book
+Version: 0.1.0
+Authors@R: 
+    person(given = "Emerson", family = "Del Ponte", email = "delponte@ufv.br", 
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4398-409X"))
+Description: Datasets and utility functions to support the book
+    "R for Plant Disease Epidemiology" (R4PDE). It includes functions for quantifying disease,
+    assessing spatial patterns, and modeling plant disease epidemics based on weather predictors.
+    These tools are intended for teaching and research in plant disease epidemiology. Several functions
+    are based on classical and contemporary methods, including those discussed in Laurence V. Madden,
+    Gareth Hughes, and Frank van den Bosch (2007) <doi:10.1094/9780890545058>.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: boot, car, cowplot, dplyr, ggplot2, igraph, interval,
+        lubridate, nasapower, progress, purrr, rlang, stats, survival,
+        tidyr
+Suggests: testthat, knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL: https://github.com/emdelponte/r4pde
+BugReports: https://github.com/emdelponte/r4pde/issues
+NeedsCompilation: no
+Packaged: 2025-06-27 18:58:21 UTC; emersondelponte
+Author: Emerson Del Ponte [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4398-409X>)
+Maintainer: Emerson Del Ponte <delponte@ufv.br>
+Repository: CRAN
+Date/Publication: 2025-07-02 15:30:01 UTC

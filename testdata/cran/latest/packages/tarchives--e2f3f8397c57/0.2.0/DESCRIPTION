@@ -1,0 +1,29 @@
+Package: tarchives
+Title: Make Your 'targets' Pipelines into a Package
+Version: 0.2.0
+Authors@R: c(
+    person("Mizuki", "Uchida", , "uchidamizuki@vivaldi.net", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0003-6534-6942"))
+ )
+Description: Runs 'targets' pipelines bundled inside a package and caches
+    the results in the R user cache directory, so that users of the package
+    do not need to rerun the pipeline themselves. Package authors can update
+    the cached results at any time by releasing a new package version.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: callr, cli, fs, rlang (>= 1.1.0), targets, withr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.0.0)
+URL: https://github.com/UchidaMizuki/tarchives,
+        https://uchidamizuki.github.io/tarchives/
+BugReports: https://github.com/UchidaMizuki/tarchives/issues
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-07-12 07:35:22 UTC; uchid
+Author: Mizuki Uchida [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0003-6534-6942>)
+Maintainer: Mizuki Uchida <uchidamizuki@vivaldi.net>
+Repository: CRAN
+Date/Publication: 2026-07-12 08:40:02 UTC

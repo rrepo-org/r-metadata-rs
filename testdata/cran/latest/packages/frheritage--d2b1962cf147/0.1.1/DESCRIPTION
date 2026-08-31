@@ -1,0 +1,28 @@
+Package: frheritage
+Title: R Interface to Get French Heritage Data
+Version: 0.1.1
+Authors@R: 
+    person("Matthieu", "Chevereau", , "matthieu.chevereau@hotmail.fr", role = c("aut", "cre"))
+Description: Get spatial vector data from the Atlas du Patrimoine 
+    (<http://atlas.patrimoines.culture.fr/atlas/trunk/>), 
+    the official national platform of the French Ministry of Culture, 
+    and facilitate its use within R geospatial workflows. 
+    The package provides functions to list available heritage datasets, 
+    query and retrieve heritage data using spatial queries based 
+    on user-provided sf objects, perform spatial filtering operations, 
+    and return results as sf objects suitable for spatial analysis, mapping, 
+    and integration into heritage management and landscape studies.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: jsonlite, happign, httr2, sf, xml2
+Depends: R (>= 4.1.0)
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.1.7), httptest2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-17 16:46:21 UTC; matth
+Author: Matthieu Chevereau [aut, cre]
+Maintainer: Matthieu Chevereau <matthieu.chevereau@hotmail.fr>
+Repository: CRAN
+Date/Publication: 2026-04-17 17:00:02 UTC

@@ -1,0 +1,42 @@
+Package: guideR
+Type: Package
+Title: Miscellaneous Statistical Functions Used in 'guide-R'
+Version: 0.12.0
+Authors@R: c(
+    person(
+      "Joseph", "Larmarange", ,
+      "joseph@larmarange.net",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-7097-700X")
+    )
+  )
+Description: Companion package for the manual
+  'guide-R : Guide pour l’analyse de données d’enquêtes avec R' available at
+  <https://larmarange.github.io/guide-R/>. 'guideR' implements miscellaneous
+  functions introduced in 'guide-R' to facilitate statistical analysis and
+  manipulation of survey data.
+License: GPL (>= 3)
+URL: https://larmarange.github.io/guideR/,
+        https://github.com/larmarange/guideR
+BugReports: https://github.com/larmarange/guideR/issues
+Depends: R (>= 4.2)
+Imports: broom.helpers, cli, dplyr (>= 1.1.0), forcats, ggplot2,
+        labelled, lifecycle, pak, patchwork, purrr, renv, rlang,
+        rstudioapi, scales, srvyr, stats, stringr, tibble, tidyr,
+        tidyselect, utils
+Encoding: UTF-8
+Suggests: broom, broom.mixed, car, cardx, dominanceanalysis, DT,
+        FactoMineR, ggupset, ggstats, gt, gtsummary (>= 2.5.0),
+        htmltools, htmlwidgets, khroma, MAIHDA (>= 0.2.1), MASS, nnet,
+        parameters, performance, spelling, survey, survival, testthat
+        (>= 3.0.0), TraMineR, vdiffr, WeMix
+Config/testthat/edition: 3
+Language: en-US
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-20 07:39:14 UTC; josep
+Author: Joseph Larmarange [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7097-700X>)
+Maintainer: Joseph Larmarange <joseph@larmarange.net>
+Repository: CRAN
+Date/Publication: 2026-08-20 14:10:15 UTC

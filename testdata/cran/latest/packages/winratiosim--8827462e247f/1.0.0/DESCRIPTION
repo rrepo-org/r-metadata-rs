@@ -1,0 +1,29 @@
+Package: winratiosim
+Type: Package
+Title: Simulate Power for Hierarchical Win Ratio Endpoints
+Version: 1.0.0
+Authors@R: 
+    person(given = c("Se", "Yoon"),
+           family = "Lee",
+           email = "seyoonlee.stat.math@gmail.com",
+           role = c("aut", "cre"))
+Author: Se Yoon Lee [aut, cre]
+Maintainer: Se Yoon Lee <seyoonlee.stat.math@gmail.com>
+Description: Provides simulation tools for power analysis in two-arm
+    clinical trials with hierarchical win ratio endpoints. The package
+    simulates time-to-event, recurrent event, and continuous outcomes,
+    applies prioritized pairwise win/loss scoring, and summarizes win
+    ratio and Finkelstein-Schoenfeld test operating characteristics.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: parallel
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/yain22/winratiosim
+BugReports: https://github.com/yain22/winratiosim/issues
+Depends: R (>= 4.0.0)
+NeedsCompilation: no
+Packaged: 2026-06-30 01:25:44 UTC; CodexSandboxOffline
+Repository: CRAN
+Date/Publication: 2026-07-06 14:10:02 UTC

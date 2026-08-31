@@ -1,0 +1,49 @@
+Package: shidashi
+Type: Package
+Title: A Shiny Dashboard Template Modular System with Chat Bot Support
+Version: 0.2.0
+Language: en-US
+URL: https://dipterix.org/shidashi/,
+        https://github.com/dipterix/shidashi
+BugReports: https://github.com/dipterix/shidashi/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Authors@R: c(
+    person("Zhengjia", "Wang", email="dipterix.wang@gmail.com", 
+            role = c("cph", "aut", "cre"), comment = c(ORCID = "0000-0001-5629-1116")),
+    person(family = "ColorlibHQ", role = c("cph"), comment = "AdminLTE - Bootstrap 4 Admin Dashboard"),
+    person(family = "Bootstrap contributors", role = "ctb", comment = "Bootstrap library"),
+    person(family = "Twitter, Inc", role = "cph", comment = "Bootstrap library"),
+    person("Ivan", "Sagalaev", role = c("ctb", "cph"), comment = "highlight.js library"),
+    person("Rene", "Haas", role = c("ctb", "cph"), comment = "OverlayScrollbars library"),
+    person("Zeno", "Rocha", role = c("ctb", "cph"), comment = "Clipboard.js library")
+    )
+Description: A template dashboard system with AI agent integrated. 
+    Comes with default themes that can be customized. 
+    Developers can upload modified templates on 'Github', and users can 
+    easily download templates with 'RStudio' project wizard.
+    The key features of the default template include light and dark theme 
+    switcher, resizing graphs, synchronizing inputs across sessions, 
+    new notification system, fancy progress bars, and card-like flip 
+    panels with back sides, as well as various of 'HTML' tool widgets.
+Imports: utils, tools, bslib, digest (>= 0.6.27), ellmer (>= 0.4.0),
+        fastmap (>= 1.1.0), formatR (>= 1.11), httr2, S7, shiny (>=
+        1.7.0), shinychat, yaml, jsonlite, htmlwidgets
+Suggests: cli, coro, logger (>= 0.2.1), processx, promises, later,
+        rstudioapi (>= 0.13), htmltools, httpuv, ggplot2, ggExtra,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-10 16:20:02 UTC; dipterix
+Author: Zhengjia Wang [cph, aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5629-1116>),
+  ColorlibHQ [cph] (AdminLTE - Bootstrap 4 Admin Dashboard),
+  Bootstrap contributors [ctb] (Bootstrap library),
+  Twitter, Inc [cph] (Bootstrap library),
+  Ivan Sagalaev [ctb, cph] (highlight.js library),
+  Rene Haas [ctb, cph] (OverlayScrollbars library),
+  Zeno Rocha [ctb, cph] (Clipboard.js library)
+Maintainer: Zhengjia Wang <dipterix.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-10 17:00:02 UTC

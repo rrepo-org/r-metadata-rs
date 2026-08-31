@@ -1,0 +1,27 @@
+Package: FRCI
+Type: Package
+Title: Fuzzy & Randomized Confidence Intervals
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Carlos Henrique", "Trigo Nasser Felix",
+      email = "c214344@dac.unicamp.br",
+      role = c("aut", "cre")
+    ),
+    person("Nancy","Garcia",email="nancyg@unicamp.br",role=c("aut")),
+    person("Alex","Sousa",email="asousa@unicamp.br",role=c("aut")))
+Description: Contains the methods proposed by Geyer and Meeden (2005)<doi:10.1214/088342305000000340> and Trigo et al. (2025) <doi:10.47749/T/UNICAMP.2025.1500297> to construct fuzzy confidence intervals. Compute and plot the fuzzy membership functions of the methods, and the expected length compared with the infimum.
+License: GPL-3
+Imports: DescTools, calculus, ump, zipfR, graphics, stats
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-07 01:45:50 UTC; caetn
+Author: Carlos Henrique Trigo Nasser Felix [aut, cre],
+  Nancy Garcia [aut],
+  Alex Sousa [aut]
+Maintainer: Carlos Henrique Trigo Nasser Felix <c214344@dac.unicamp.br>
+Repository: CRAN
+Date/Publication: 2025-12-11 14:10:02 UTC

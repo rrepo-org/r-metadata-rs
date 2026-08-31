@@ -1,0 +1,25 @@
+Package: ggskewboxplots
+Title: Skew Boxplot Geoms for 'ggplot2'
+Version: 1.0.0
+Authors@R: 
+    person("Mustafa", "Cavus", , "mustafacavus@eskisehir.edu.tr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6172-5449"))
+Description: Provides 'ggplot2' extensions for creating skewed boxplots
+    using several statistical methods (Kimber, 1990 <doi:10.2307/2347808>; Hubert and Vandervieren, 2008 <doi:10.1016/j.csda.2007.11.008>; Adil et al., 2015 <doi:10.18187/pjsor.v11i1.500>; Babura et al., 2017 <doi:10.1063/1.4982872>; Walker et al., 2018 <doi:10.1080/00031305.2018.1448891>). The package implements custom
+    statistical transformations and geometries to visualize data
+    distributions with an emphasis on skewness.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, ggplot2, rlang, stats, tidyr
+Suggests: knitr, rmarkdown, gridExtra, waldo, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-01-08 19:23:34 UTC; mustafacavus
+Author: Mustafa Cavus [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6172-5449>)
+Maintainer: Mustafa Cavus <mustafacavus@eskisehir.edu.tr>
+Repository: CRAN
+Date/Publication: 2026-01-12 19:30:02 UTC

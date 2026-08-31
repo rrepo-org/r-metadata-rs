@@ -1,0 +1,50 @@
+Package: ustats
+Type: Package
+Title: R Interface to Python Tools for Computing Higher-Order
+        U-Statistics
+Version: 0.1.5
+Authors@R: c(
+    person("Xingyu", "Chen",
+           email = "xingyuchen0714@sjtu.edu.cn",
+           role = c("aut", "cre")),
+    person("Ruiqi", "Zhang",
+           email = "zrq1706@outlook.com",
+           role = "aut"),
+    person("Lin", "Liu",
+           email = "linliu@sjtu.edu.cn",
+           role = "aut")
+  )
+Description: Provides an R interface to the Python package 'u-stats'
+    <https://pypi.org/project/u-stats/> for efficient computation of
+    higher-order U-statistics using Einstein summation notation,
+    implementing the methods of Chen, Zhang, and Liu (2025)
+    <doi:10.48550/arXiv.2508.12627>. The
+    package automatically converts R objects to 'NumPy' or 'PyTorch'
+    tensors via 'reticulate' and supports GPU acceleration when 'PyTorch'
+    with 'CUDA' is available. Python dependencies are declared via
+    'reticulate' and can be installed automatically on first use.
+    Designed for large-scale statistical estimation where numerical
+    stability and performance are critical.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: reticulate (>= 1.41)
+SystemRequirements: Python (>= 3.11); Python packages: u-stats, numpy,
+        torch (installed automatically on first use, or via
+        setup_ustats())
+Config/reticulate: packages: - u-stats - numpy - torch
+Suggests: knitr, rmarkdown, rstudioapi, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://github.com/cxy0714/U-Statistics-R,
+        https://pypi.org/project/u-stats/
+BugReports: https://github.com/cxy0714/U-Statistics-R/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-11 10:19:29 UTC; thinkbook-cxy
+Author: Xingyu Chen [aut, cre],
+  Ruiqi Zhang [aut],
+  Lin Liu [aut]
+Maintainer: Xingyu Chen <xingyuchen0714@sjtu.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-06-18 14:10:02 UTC

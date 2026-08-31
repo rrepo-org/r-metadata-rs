@@ -1,0 +1,26 @@
+Package: excerptr
+Title: Excerpt Structuring Comments from Your Code File and Set a Table
+        of Contents
+Version: 2.1.0
+Authors@R: person(given = c("Andreas", "Dominik"), family = "Cullmann",
+    email = "fvafrcu@mailbox.org", role = c("aut","cre"))
+Description: Ever read or wrote source files containing sectioning comments? 
+    If these comments are markdown style section comments,
+    you can excerpt them and set a table of contents using the
+    'python' package 'excerpts' (<https://pypi.org/project/excerpts/>).
+URL: https://gitlab.com/fvafrcu/excerptr
+Depends: R (>= 3.3.0)
+Imports: checkmate, reticulate
+License: BSD_2_clause + file LICENSE
+SystemRequirements: Python (>= 3.0.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat, knitr, rmarkdown, devtools, RUnit, pkgload,
+        fritools, rprojroot
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-10-22 15:35:42 UTC; qwer
+Author: Andreas Dominik Cullmann [aut, cre]
+Maintainer: Andreas Dominik Cullmann <fvafrcu@mailbox.org>
+Repository: CRAN
+Date/Publication: 2025-10-26 20:30:02 UTC

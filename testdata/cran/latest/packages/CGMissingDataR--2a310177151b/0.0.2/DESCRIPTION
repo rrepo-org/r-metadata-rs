@@ -1,0 +1,47 @@
+Package: CGMissingDataR
+Title: Impute Missing Glucose Values in CGM Data
+Version: 0.0.2
+Authors@R: c(
+    person("Shubh", "Saraswat", email = "shubh.saraswat00@gmail.com", role = c("cre", "aut", "cph"),
+    comment = c(ORCID = "0009-0009-2359-1484")),
+    person("Hasin Shahed Shad", email = "hasin.shad@uky.edu", role = "aut"),
+    person("Xiaohua Douglas", "Zhang", email = "douglas.zhang@uky.edu", role = "aut",
+    comment = c(ORCID = "0000-0002-2486-7931")))
+Description: Imputes missing glucose values in repeated-measures continuous
+    glucose monitoring (CGM) data. Workflows create time-series features from
+    raw timestamps, support model selection, and return the user's original
+    columns plus an imputed glucose column. Methods include multiple imputation
+    by chained equations (MICE; Azur et al. (2011) <doi:10.1002/mpr.329>),
+    Random Forest regression (Breiman (2001) <doi:10.1023/A:1010933404324>),
+    k-nearest-neighbor regression (Zhang (2016) <doi:10.21037/atm.2016.03.37>),
+    XGBoost (Chen and Guestrin (2016) <doi:10.1145/2939672.2939785>),
+    LightGBM (Ke et al. (2017)
+    <https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision>),
+    and ARIMA forecasting with the forecast framework (Hyndman and Khandakar
+    (2008) <doi:10.18637/jss.v027.i03>). A Python-compatible backend uses
+    'reticulate' to call 'pandas', 'scikit-learn', 'statsmodels', Python
+    'xgboost', and optional Python 'lightgbm'.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 4.3)
+RoxygenNote: 7.3.3
+Imports: mice, FNN, ranger, data.table, xgboost, lightgbm, forecast,
+        CGManalyzer, lifecycle, reticulate, shiny
+Suggests: testthat (>= 3.0.0), spelling, knitr, rmarkdown
+Config/testthat/edition: 3
+NeedsCompilation: no
+Language: en-US
+URL: https://zhanglabuky.github.io/CGMmissingDataR/,
+        https://github.com/ZhangLabUKY/CGMmissingDataR
+BugReports: https://github.com/ZhangLabUKY/CGMmissingDataR/issues
+LazyData: true
+VignetteBuilder: knitr
+Packaged: 2026-05-29 22:10:01 UTC; ssa390
+Author: Shubh Saraswat [cre, aut, cph] (ORCID:
+    <https://orcid.org/0009-0009-2359-1484>),
+  Hasin Shahed Shad [aut],
+  Xiaohua Douglas Zhang [aut] (ORCID:
+    <https://orcid.org/0000-0002-2486-7931>)
+Maintainer: Shubh Saraswat <shubh.saraswat00@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-30 15:10:23 UTC

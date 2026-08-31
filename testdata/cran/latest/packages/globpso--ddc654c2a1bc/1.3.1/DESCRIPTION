@@ -1,0 +1,54 @@
+Package: globpso
+Type: Package
+Title: Swarm Intelligence Optimization
+Version: 1.3.1
+Date: 2025-09-23
+Authors@R: c(
+  person("Ping-Yang", "Chen", email = "pychen.ping@gmail.com", role = c("aut", "cre")),
+  person("Ray-Bing", "Chen", email = "", role = c("aut")),
+  person("Russell", "Eberhart", email = "", role = c("ctb")),
+  person("Kennedy", "Kennedy", email = "", role = c("ctb")),
+  person("Jun", "Sun", email = "", role = c("ctb")),
+  person("Bin", "Feng", email = "", role = c("ctb")),
+  person("Wenbo", "Xu", email = "", role = c("ctb")),
+  person("Mohammad Reza", "Bonyadi", email = "", role = c("ctb")),
+  person("Zbigniew", "Michalewicz", email = "", role = c("ctb")),
+  person("Ran", "Cheng", email = "", role = c("ctb")),
+  person("Yaochu", "Jin", email = "", role = c("ctb")),
+  person("Milan", "Stehlík", email = "", role = c("ctb")),
+  person("Weng Kee", "Wong", email = "", role = c("ctb")),
+  person("Jozef", "Kiseľák", email = "", role = c("ctb")),
+  person("Rainer", "Storn", email = "", role = c("ctb")),
+  person("Kenneth", "Price", email = "", role = c("ctb")),
+  person("Okazaki", "Naoaki", email = "", role = c("cph")))
+Author: Ping-Yang Chen [aut, cre],
+  Ray-Bing Chen [aut],
+  Russell Eberhart [ctb],
+  Kennedy Kennedy [ctb],
+  Jun Sun [ctb],
+  Bin Feng [ctb],
+  Wenbo Xu [ctb],
+  Mohammad Reza Bonyadi [ctb],
+  Zbigniew Michalewicz [ctb],
+  Ran Cheng [ctb],
+  Yaochu Jin [ctb],
+  Milan Stehlík [ctb],
+  Weng Kee Wong [ctb],
+  Jozef Kiseľák [ctb],
+  Rainer Storn [ctb],
+  Kenneth Price [ctb],
+  Okazaki Naoaki [cph]
+Maintainer: Ping-Yang Chen <pychen.ping@gmail.com>
+Description: A fast and flexible general-purpose implementation of Particle Swarm Optimization (PSO) and Differential Evolution (DE) for solving global minimization problems is provided. It is designed to handle complex optimization tasks with nonlinear, non-differentiable, and multi-modal objective functions defined by users. There are five types of PSO variants: Particle Swarm Optimization (PSO, Eberhart & Kennedy, 1995) <doi:10.1109/MHS.1995.494215>, Quantum-behaved particle Swarm Optimization (QPSO, Sun et al., 2004) <doi:10.1109/CEC.2004.1330875>, Locally convergent rotationally invariant particle swarm optimization (LcRiPSO, Bonyadi & Michalewicz, 2014) <doi:10.1007/s11721-014-0095-1>, Competitive Swarm Optimizer (CSO, Cheng & Jin, 2015) <doi:10.1109/TCYB.2014.2322602> and Double exponential particle swarm optimization (DExPSO, Stehlik et al., 2024) <doi:10.1016/j.asoc.2024.111913>. For the DE algorithm, six types in Storn, R. & Price, K. (1997) <doi:10.1023/A:1008202821328> are included: DE/rand/1, DE/rand/2, DE/best/1, DE/best/2, DE/rand_to-best/1 and DE/rand_to-best/2.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.3.0)
+Imports: Rcpp (>= 1.0.12), RcppArmadillo (>= 0.12.6.6.1), methods,
+        utils
+LinkingTo: Rcpp, RcppArmadillo,
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown
+NeedsCompilation: yes
+Packaged: 2025-09-23 11:57:17 UTC; user
+Repository: CRAN
+Date/Publication: 2025-09-23 12:20:08 UTC

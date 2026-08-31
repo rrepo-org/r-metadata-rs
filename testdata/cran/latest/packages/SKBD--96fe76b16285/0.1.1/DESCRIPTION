@@ -1,0 +1,31 @@
+Package: SKBD
+Title: Shared Keyboard Designs for Phase I Dose-Finding Trials
+Version: 0.1.1
+Authors@R: c(
+    person(given = "Jiangyan", family = "Zhao", email = "zhaojy2017@126.com", role = c("cre", "aut")),
+    person(given = "Xian", family = "Shi", email = "shi_xian_sandai@163.com", role = "aut"),
+    person(given = "Jin", family = "Xu", email = "jxu@stat.ecnu.edu.cn", role = "aut")
+  )
+Maintainer: Jiangyan Zhao <zhaojy2017@126.com>
+Description: Implements the shared keyboard design (SKBD) for model-assisted
+ phase I dose-finding, including decision-boundary construction,
+ operating-characteristic simulation, and extensions for dose insertion and
+ time-to-event settings. The package also provides an interactive Shiny
+ interface for trial-planning workflows.
+ For more details, see Zhao, Shi, and Xu (2026) <doi:10.48550/arXiv.2605.25043>.
+License: GPL (>= 3)
+URL: https://github.com/Jiangyan-Zhao/SKBD
+BugReports: https://github.com/Jiangyan-Zhao/SKBD/issues
+Encoding: UTF-8
+NeedsCompilation: no
+Depends: R (>= 3.5.0)
+Imports: shiny
+Suggests: DT, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-01 12:04:51 UTC; JYZHAO
+Author: Jiangyan Zhao [cre, aut],
+  Xian Shi [aut],
+  Jin Xu [aut]
+Repository: CRAN
+Date/Publication: 2026-06-07 18:50:09 UTC

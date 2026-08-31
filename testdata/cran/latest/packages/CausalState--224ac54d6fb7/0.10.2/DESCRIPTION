@@ -1,0 +1,41 @@
+Package: CausalState
+Type: Package
+Title: Causal Inference in a Longitudinal Transitioning State
+        Environment
+Version: 0.10.2
+Authors@R: person(given = "Sebastiaan",
+    family = "Blank",
+    role = c("aut", "cre", "cph"),
+    email = "sebastiaan.blank@mail.com",
+    comment = c(ORCID = "0000-0001-9115-2138"))
+Description: Implements Sequential Doubly Robust (SDR) and infinite-dimensional
+    Targeted Maximum Likelihood (iTMLE) estimators for longitudinal modified treatment
+    policies in settings with transitioning states, such as ICU, ward, or
+    emergency department care episodes. Treatment is permitted in active states
+    and becomes structurally inapplicable after a state transition (e.g.
+    discharge or death). Supports asymmetric g- and Q-model regularisation,
+    k-fold cross-fitting, and pluggable SuperLearner ensembles. Includes
+    specialised SuperLearner wrappers (SL.tgt.* and SL.tmle_* families) for
+    the iTMLE targeting step, which pass the logit offset as a covariate column
+    to preserve correct subsetting during SuperLearner cross-validation. Methods
+    based on Diaz et al. (2021) <doi:10.1080/01621459.2021.1955691> and
+    Luedtke et al. (2017) <doi:10.48550/arXiv.1705.02459>.
+URL: https://github.com/sebastiaan-blank/CausalState
+BugReports: https://github.com/sebastiaan-blank/CausalState/issues
+License: AGPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: data.table (>= 1.14.0), SuperLearner, origami, glmnet,
+        xgboost, dplyr, tidyr, rlang, magrittr, parallel, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, ggplot2, scales,
+        stringr, hal9001, dbarts, mgcv, earth, nnls
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-20 08:04:00 UTC; bas
+Author: Sebastiaan Blank [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-9115-2138>)
+Maintainer: Sebastiaan Blank <sebastiaan.blank@mail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 09:10:08 UTC

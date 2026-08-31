@@ -1,0 +1,28 @@
+Package: TopicTestlet
+Title: A Topic Testlet Model for Calibrating Testlet Constructed
+        Responses
+Version: 0.1.0
+Authors@R: c(
+    person("Jiawei", "Xiong", email = "jiawei.xiong@uga.edu", role = c("aut", "cre")),
+    person("Cheng", "Tang", role = "ctb"),
+    person("Qidi", "Liu", role = "ctb")
+  )
+Description: Implements the Topic Testlet Model (TTM) as described by Xiong et al. (2025) <doi:10.1111/jedm.70001>. 
+    The package integrates Latent Dirichlet Allocation (LDA) with the Partial Credit Model to 
+    account for local item dependence in testlets using latent topics from student 
+    textual responses.
+Depends: R (>= 4.0.0)
+Imports: topicmodels, tm, stats
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-11-25 03:35:49 UTC; jx
+Author: Jiawei Xiong [aut, cre],
+  Cheng Tang [ctb],
+  Qidi Liu [ctb]
+Maintainer: Jiawei Xiong <jiawei.xiong@uga.edu>
+Repository: CRAN
+Date/Publication: 2025-12-01 14:00:02 UTC

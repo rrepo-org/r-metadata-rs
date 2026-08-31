@@ -1,0 +1,42 @@
+Package: NutrienTrackeR
+Type: Package
+Title: Food Composition Information and Dietary Assessment
+Version: 1.4.0
+Date: 2025-11-02
+Authors@R: c(
+    person("Andrea", "Rodriguez-Martinez", email = "andrea.rodriguez-martinez13@imperial.ac.uk", role = "aut"),
+    person("Rafael", "Ayala", email = "rafaelayalahernandez@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9332-4623")),
+    person("Mark", "Balchunas", role = "aut"),
+    person("Pablo", "Hernandez", role = "aut", comment = c(ORCID = "0009-0000-9279-6744")),
+    person("Lara", "Sellés Vidal", role = "aut", comment = c(ORCID="0000-0003-2537-6824"))
+    )
+Maintainer: Rafael Ayala <rafaelayalahernandez@gmail.com>
+Contact: Andrea Rodriguez-Martinez
+        <andrea.rodriguez-martinez13@imperial.ac.uk>, Rafael Ayala
+        <rrafaelayalahernandez@gmail.com>
+Description: Provides a tool set for food information and dietary assessment. It 
+    uses food composition data from several reference databases, including: 'USDA' (United States), 
+    'CIQUAL' (France), 'BEDCA' (Spain), 'CNF' (Canada) and 'STFCJ' (Japan). 'NutrienTrackeR' calculates 
+    the intake levels for both macronutrient and micronutrients, and compares them with the recommended 
+    dietary allowances (RDA). It includes a number of visualization tools, such as time series 
+    plots of nutrient intake, and pie-charts showing the main foods contributing to the intake 
+    level of a given nutrient. A shiny app exposing the main functionalities of the package is also 
+    provided.
+License: GPL-3
+Depends: R(>= 3.5)
+Suggests: RUnit, knitr, rmarkdown
+VignetteBuilder: knitr
+Imports: ggplot2, shiny
+NeedsCompilation: no
+LazyData: true
+Encoding: UTF-8
+Repository: CRAN
+Packaged: 2025-12-01 08:01:47 UTC; rafael
+Author: Andrea Rodriguez-Martinez [aut],
+  Rafael Ayala [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9332-4623>),
+  Mark Balchunas [aut],
+  Pablo Hernandez [aut] (ORCID: <https://orcid.org/0009-0000-9279-6744>),
+  Lara Sellés Vidal [aut] (ORCID:
+    <https://orcid.org/0000-0003-2537-6824>)
+Date/Publication: 2025-12-01 08:50:02 UTC

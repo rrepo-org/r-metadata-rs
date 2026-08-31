@@ -1,0 +1,46 @@
+Package: pkgstats
+Title: Metrics of R Packages
+Version: 0.2.4
+Authors@R: 
+    c(person("Mark", "Padgham", , "mark.padgham@email.com", role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0003-2172-5265")),
+      person("Michael", "Sumner", role = c("ctb"), 
+             comment = c(ORCID = "0000-0002-2471-7511")),       
+      person("Jeffrey", "Hollister", role = c("ctb"), 
+             comment = c(ORCID = "0000-0002-9254-9740")),
+      person("Egor", "Kotov", role = c("ctb"), 
+             comment = c(ORCID = "0000-0001-6690-5345")))
+Description: Static code analyses for R packages using the external code-tagging
+    libraries 'ctags' and 'gtags'. Static analyses enable packages to be
+    analysed very quickly, generally a couple of seconds at most. The package
+    also provides access to a database generating by applying the main function
+    to the full 'CRAN' archive, enabling the statistical properties of any package
+    to be compared with all other 'CRAN' packages.
+License: GPL-3
+URL: https://docs.ropensci.org/pkgstats/,
+        https://github.com/ropensci-review-tools/pkgstats
+BugReports: https://github.com/ropensci-review-tools/pkgstats/issues
+Imports: brio, checkmate, dplyr, fs, igraph, memoise, methods, readr,
+        roxygen2, rprojroot, sys, withr
+Suggests: callr, curl, hms, httr2, jsonlite, knitr, parallel,
+        piggyback, pkgbuild, Rcpp, rmarkdown, testthat (>= 3.0.0),
+        tibble, toml
+LinkingTo: cpp11
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/ropensci/maintainer: staff
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: yes
+SystemRequirements: ctags, global
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-21 11:53:46 UTC; smexus
+Author: Mark Padgham [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2172-5265>),
+  Michael Sumner [ctb] (ORCID: <https://orcid.org/0000-0002-2471-7511>),
+  Jeffrey Hollister [ctb] (ORCID:
+    <https://orcid.org/0000-0002-9254-9740>),
+  Egor Kotov [ctb] (ORCID: <https://orcid.org/0000-0001-6690-5345>)
+Maintainer: Mark Padgham <mark.padgham@email.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 13:50:02 UTC

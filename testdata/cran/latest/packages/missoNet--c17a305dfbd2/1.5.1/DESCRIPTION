@@ -1,0 +1,42 @@
+Type: Package
+Package: missoNet
+Title: Joint Sparse Regression & Network Learning with Missing Data
+Version: 1.5.1
+Date: 2025-09-01
+Authors@R: c(
+    person("Yixiao", "Zeng", , "yixiao.zeng@mail.mcgill.ca", role = c("aut", "cre", "cph")),
+    person("Celia", "Greenwood", , "celia.greenwood@mcgill.ca", role = c("ths", "aut"))
+  )
+Maintainer: Yixiao Zeng <yixiao.zeng@mail.mcgill.ca>
+Description: Simultaneously estimates sparse regression coefficients and
+    response network structure in multivariate models with missing data.
+    Unlike traditional approaches requiring imputation, handles
+    missingness natively through unbiased estimating equations (MCAR/MAR
+    compatible). Employs dual L1 regularization with automated selection
+    via cross-validation or information criteria. Includes parallel
+    computation, warm starts, adaptive grids, publication-ready
+    visualizations, and prediction methods.  Ideal for genomics,
+    neuroimaging, and multi-trait studies with incomplete high-dimensional
+    outcomes. See Zeng et al. (2025) <doi:10.48550/arXiv.2507.05990>.
+License: GPL-2
+URL: https://github.com/yixiao-zeng/missoNet,
+        https://arxiv.org/abs/2507.05990
+BugReports: https://github.com/yixiao-zeng/missoNet/issues
+Depends: R (>= 3.6.0)
+Imports: circlize (>= 0.4.15), ComplexHeatmap, glassoFast (>= 1.0.1),
+        graphics, grid, mvtnorm (>= 1.2.3), pbapply (>= 1.7.2), Rcpp
+        (>= 1.0.9), scatterplot3d (>= 0.3.44), stats, utils
+Suggests: ggplot2, glasso, gridExtra, igraph, knitr, parallel,
+        RColorBrewer, reshape2, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+biocViews:
+ByteCompile: true
+Encoding: UTF-8
+NeedsCompilation: yes
+RoxygenNote: 7.3.2
+Packaged: 2025-09-02 20:23:05 UTC; yixiao
+Author: Yixiao Zeng [aut, cre, cph],
+  Celia Greenwood [ths, aut]
+Repository: CRAN
+Date/Publication: 2025-09-02 20:50:07 UTC

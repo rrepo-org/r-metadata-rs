@@ -1,0 +1,27 @@
+Version: 0.2.1
+Package: nowcastr
+Title: Nowcasting with Chain-Ladder Method
+Description: Nowcasting using the Chain-Ladder method. Supports both non-cumulative delay-based estimation and model-based completeness fitting (e.g., using logistic or Gompertz curves) to predict final counts from partially reported data.
+Authors@R: 
+    c(person("Mathias", "Leroy", , "mathias.leroy.rpkg@gmail.com", role = c("aut", "cre")),
+      person("Finlay", "Campbell", role = "aut"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LazyData: true
+Imports: S7, rlang, magrittr, dplyr, tidyr, stats, purrr, ggplot2,
+        scales, cli
+Depends: R (>= 4.1.0)
+Suggests: ISOweek, testthat (>= 3.0.0), quarto, shiny, bslib, DT
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+URL: https://github.com/whocov/nowcastr,
+        https://whocov.github.io/nowcastr/
+BugReports: https://github.com/whocov/nowcastr/issues
+NeedsCompilation: no
+Packaged: 2026-07-07 14:01:04 UTC; mleroy
+Author: Mathias Leroy [aut, cre],
+  Finlay Campbell [aut]
+Maintainer: Mathias Leroy <mathias.leroy.rpkg@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-07 14:40:03 UTC

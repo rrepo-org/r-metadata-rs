@@ -1,0 +1,28 @@
+Package: apathe
+Title: American Psychological Association Thesis Templates for R
+        Markdown
+Version: 0.1.0
+Date: 2025-09-26
+Authors@R: 
+    person("Frederik", "Aust", email = "frederik.aust@uni-koeln.de", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4900-788X"))
+Description: Facilitates writing computationally reproducible student theses in PDF format that conform to the American Psychological Association (APA) manuscript guidelines (6th Edition). The package currently provides two R Markdown templates for homework and theses at the Psychology Department of the University of Cologne. The package builds on the package 'papaja' but is tailored to the requirements of student theses and omits features for simplicity.
+URL: https://github.com/crsh/apathe
+BugReports: https://github.com/crsh/apathe/issues
+Imports: papaja (>= 0.1.3), bookdown, rmdfiltr (>= 0.1.5), rmarkdown,
+        assertthat
+Suggests: stringr, bibtex (>= 0.5.1), testthat (>= 3.0.0)
+SystemRequirements: Rendering the document template requires pandoc (>=
+        2.0; https://pandoc.org) and for PDFs a TeX distribution, such
+        as TinyTeX (>= 0.12; https://yihui.org/tinytex/)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-07 09:00:33 UTC; frederikaust
+Author: Frederik Aust [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4900-788X>)
+Maintainer: Frederik Aust <frederik.aust@uni-koeln.de>
+Repository: CRAN
+Date/Publication: 2025-10-10 19:40:02 UTC

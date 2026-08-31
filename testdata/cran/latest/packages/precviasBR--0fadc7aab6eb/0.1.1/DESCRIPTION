@@ -1,0 +1,32 @@
+Package: precviasBR
+Title: Spatial Data of Road Precariousness in Brazil
+Version: 0.1.1
+Date: 2026-06-01
+Authors@R: 
+    person("Iara", "Passos", , "isteps.data@protonmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2374-8663"))
+Description: Fornece acesso eficiente à malha espacial de precariedade
+    viária brasileira. O pacote realiza o download em cache e a
+    leitura otimizada (via Apache Arrow) de arquivos Parquet
+    particionados, contendo o cruzamento de variáveis de
+    infraestrutura do Entorno do Censo Demográfico 2022 (IBGE)
+    com a malha viária aberta do Overture Maps.
+    [English] Provides efficient access to the spatial network of
+    road precariousness in Brazil. The package performs cached
+    downloads and optimized reading (via Apache Arrow) of partitioned
+    Parquet files. These files contain the intersection of infrastructure
+    variables from the 2022 Demographic Census (IBGE) with the open
+    street network from Overture Maps. Methodology and datasets are
+    detailed in Passos (2026) <doi:10.5281/zenodo.19711448>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: arrow, dplyr, rlang
+Suggests: sf
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-06-01 18:55:41 UTC; ipassos
+Author: Iara Passos [aut, cre] (ORCID: <https://orcid.org/0000-0003-2374-8663>)
+Maintainer: Iara Passos <isteps.data@protonmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-07 05:50:07 UTC

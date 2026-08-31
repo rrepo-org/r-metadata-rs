@@ -1,0 +1,34 @@
+Package: matsindf
+Type: Package
+Title: Matrices in Data Frames
+Version: 0.4.11
+Date: 2025-11-16
+Authors@R: c(person("Matthew", "Heun", role = c("aut", "cre"),
+                     comment = c(ORCID = "0000-0002-7438-214X"),
+                     email = "matthew.heun@me.com"))
+Description: Provides functions to collapse a tidy data frame into matrices in a data frame
+    and expand a data frame of matrices into a tidy data frame.
+License: MIT + file LICENSE
+Language: en-US
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: excel, matsindf_apply, utilities, collapse
+Imports: assertthat, dplyr, lifecycle, magrittr, matsbyname, openxlsx2,
+        purrr, rlang, tibble, tidyr
+Suggests: covr, ggplot2, Hmisc, knitr, Matrix, RCLabels, rmarkdown,
+        spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/MatthewHeun/matsindf,
+        https://matthewheun.github.io/matsindf/
+BugReports: https://github.com/MatthewHeun/matsindf/issues
+NeedsCompilation: no
+Packaged: 2025-11-16 18:52:08 UTC; mkh2
+Author: Matthew Heun [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7438-214X>)
+Maintainer: Matthew Heun <matthew.heun@me.com>
+Repository: CRAN
+Date/Publication: 2025-11-17 21:50:59 UTC

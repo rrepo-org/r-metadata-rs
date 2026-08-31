@@ -1,0 +1,30 @@
+Package: metagroup
+Type: Package
+Title: Meaningful Grouping of Studies in Meta-Analysis
+Version: 1.0.2
+Date: 2025-08-31
+Authors@R: person(
+      "Ahmed", "Abdelmageed",
+      email = "ahmedelsaeedmassad@gmail.com",
+      role = c("cre", "aut"), comment = c(ORCID = "0009-0002-7902-690X"))
+Author: Ahmed Abdelmageed [cre, aut] (ORCID:
+    <https://orcid.org/0009-0002-7902-690X>)
+Maintainer: Ahmed Abdelmageed <ahmedelsaeedmassad@gmail.com>
+URL: https://github.com/asmpro7/metagroup/
+Description: Performs meaningful subgrouping in a
+    meta-analysis. This is a two-step process; first, use the iterative
+    grouping functions (e.g., mgbin(), mgcont() ) to partition studies
+    into statistically homogeneous clusters based on their effect size
+    data. Second, use the meaning() function to analyze these new
+    subgroups and understand their composition based on study-level
+    characteristics (e.g., country, setting). This approach helps to
+    uncover hidden structures in meta-analytic data and provide a deeper
+    interpretation of heterogeneity.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: dplyr, ggplot2, magrittr, meta, rlang
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-05 13:15:53 UTC; ASM PRO
+Repository: CRAN
+Date/Publication: 2025-09-10 08:00:13 UTC

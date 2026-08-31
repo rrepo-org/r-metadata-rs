@@ -1,0 +1,26 @@
+Package: SemiparMF
+Title: Semiparametric Spatiotemporal Model with Mixed Frequencies
+Version: 1.0.0
+Authors@R: 
+    person("Jezzu Morrisen", "Quimosing", , "mail@j3z.dev", role = c("aut", "cre", "cph"), comment = c(ORCID = "0009-0001-4302-7946"))
+Description: Fits a semiparametric spatiotemporal model for data with mixed frequencies,
+    specifically where the response variable is observed at a lower frequency than some covariates.
+    The estimation uses an iterative backfitting algorithm that combines a non-parametric smoothing spline
+    for high-frequency data, parametric estimation for low-frequency and spatial neighborhood effects,
+    and an autoregressive error structure. Methodology based on Malabanan, Lansangan, and Barrios (2022)
+    <https://scienggj.org/2022/SciEnggJ%202022-vol15-no02-p90-107-Malabanan%20et%20al.pdf>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: graphics, sf, spdep, stats, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/jzeuzs/SemiparMF, https://semiparmf.j3z.dev
+BugReports: https://github.com/jzeuzs/SemiparMF/issues
+NeedsCompilation: no
+Packaged: 2026-01-30 10:27:55 UTC; jez
+Author: Jezzu Morrisen Quimosing [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0001-4302-7946>)
+Maintainer: Jezzu Morrisen Quimosing <mail@j3z.dev>
+Repository: CRAN
+Date/Publication: 2026-02-03 13:20:06 UTC

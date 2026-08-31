@@ -1,0 +1,37 @@
+Package: gtrendshealth
+Type: Package
+Title: Query the 'Google Trends for Health' API
+Version: 1.0.1
+Authors@R: c(
+    person(
+      given = "Oscar",
+      family = "de Leon",
+      email = "odeleon@alumni.emory.edu",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-1344-4412")
+      ),
+    person(
+      "US Centers for Disease Control and Prevention",
+      role = c("cph")
+    )
+  )
+Maintainer: Oscar de Leon <odeleon@alumni.emory.edu>
+Description: Connects to the 'Google Trends for Health' API hosted at
+    <https://trends.google.com/trends/>, allowing projects authorized to use the
+    health research data to query 'Google Trends'.
+License: MIT + file LICENSE
+URL: https://github.com/CDCgov/gtrendshealth
+Imports: utils, jsonlite, httr
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+BugReports: https://github.com/CDCgov/gtrendshealth/issues
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-19 14:32:57 UTC; OFdeLeon
+Author: Oscar de Leon [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1344-4412>),
+  US Centers for Disease Control and Prevention [cph]
+Repository: CRAN
+Date/Publication: 2026-08-19 22:00:09 UTC

@@ -1,0 +1,31 @@
+Type: Package
+Package: sshist
+Title: Optimal Density Estimation via Shimazaki-Shinomoto Method
+Version: 0.2.4
+Authors@R: person("Daniil", "Popov", , "popov.daniil@gmail.com", role = c("aut", "cre"))
+Description: Implements the Shimazaki-Shinomoto method for optimizing the
+    bin width of histograms and the bandwidth of kernel density estimators.
+    The framework minimizes the expected Mean Integrated Squared Error (MISE)
+    and supports both 1D and 2D distributions, fixed and locally adaptive
+    estimators, bootstrap confidence intervals, and 'OpenMP'-accelerated 'C++' 'backends'. Ideally suited for time-dependent rate estimation and
+    identifying intrinsic data structures. For more details see Shimazaki and
+    Shinomoto (2007) <doi:10.1162/neco.2007.19.6.1503> and Shimazaki and
+    Shinomoto (2010) <doi:10.1007/s10827-009-0180-4>.
+License: GPL (>= 3)
+URL: https://github.com/celebithil/sshist,
+        https://www.neuralengine.org/res/histogram.html
+BugReports: https://github.com/celebithil/sshist/issues
+Imports: graphics, grDevices, Rcpp, stats
+Suggests: boot, ggplot2, knitr, patchwork, rmarkdown, testthat
+LinkingTo: Rcpp
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: yes
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+Language: en-US
+Packaged: 2026-07-17 10:00:29 UTC; celebithil
+Author: Daniil Popov [aut, cre]
+Maintainer: Daniil Popov <popov.daniil@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-17 15:50:09 UTC

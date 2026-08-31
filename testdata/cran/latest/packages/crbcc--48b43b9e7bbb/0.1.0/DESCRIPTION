@@ -1,0 +1,25 @@
+Package: crbcc
+Title: C R Bytecode Compiler
+Version: 0.1.0
+Authors@R: c(
+    person("Josef", "Malý", email = "malyjos4@fit.cvut.cz", role = c("aut", "cre")),
+    person("Filip", "Křikava", role = "ths")
+  )
+Description: Implements a bytecode compiler for 'R' in 'C', targeting functional
+    parity with the base 'compiler' package, while focusing on better performance.
+    The architecture mostly mirrors the original 'GNU-R' compiler as described in
+    <https://homepage.cs.uiowa.edu/~luke/R/compiler/compiler.pdf>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Depends: R (>= 4.5.0)
+Suggests: compiler
+URL: https://github.com/PRL-PRG/crbcc
+BugReports: https://github.com/PRL-PRG/crbcc/issues
+NeedsCompilation: yes
+Packaged: 2026-07-24 02:29:30 UTC; root
+Author: Josef Malý [aut, cre],
+  Filip Křikava [ths]
+Maintainer: Josef Malý <malyjos4@fit.cvut.cz>
+Repository: CRAN
+Date/Publication: 2026-08-04 09:40:20 UTC

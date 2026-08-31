@@ -1,0 +1,37 @@
+Type: Package
+Package: missalpha
+Title: Find Range of Cronbach Alpha with a Dataset Including Missing
+        Data
+Version: 0.2.0
+Authors@R: c(
+    person("Feng", "Ji", email = "f.ji@utoronto.ca", role = c("aut")),
+    person("Biying", "Zhou", email = "biying.zhou@psu.edu", role = c("aut","cre")))
+Maintainer: Biying Zhou <biying.zhou@psu.edu>
+Description: Provides functions to calculate the minimum and maximum possible 
+    values of Cronbach's alpha when item-level missing data are present. 
+    Cronbach's alpha (Cronbach, 1951 <doi:10.1007/BF02310555>) is one of the most widely used 
+    measures of internal consistency in the social, behavioral, and medical sciences 
+    (Bland & Altman, 1997 <doi:10.1136/bmj.314.7080.572>; Tavakol & Dennick, 2011 
+    <doi:10.5116/ijme.4dfb.8dfd>). However, conventional implementations assume 
+    complete data, and listwise deletion is often applied when missingness occurs, 
+    which can lead to biased or overly optimistic reliability estimates (Enders, 2003 
+    <doi:10.1037/1082-989X.8.3.322>). This package implements computational strategies 
+    including enumeration, Monte Carlo sampling, and optimization algorithms 
+    (e.g., Genetic Algorithm, Differential Evolution, Sequential Least Squares 
+    Programming) to obtain sharp lower and upper bounds of Cronbach's alpha under 
+    arbitrary missing data patterns. The approach is motivated by Manski's partial 
+    identification framework and pessimistic bounding ideas from optimization literature.
+License: MIT + file LICENSE
+Depends: R (>= 3.1.0),
+Imports: GA, DEoptim, nloptr, stats,
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-10-29 14:45:50 UTC; zby15
+Author: Feng Ji [aut],
+  Biying Zhou [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-10-29 15:10:02 UTC

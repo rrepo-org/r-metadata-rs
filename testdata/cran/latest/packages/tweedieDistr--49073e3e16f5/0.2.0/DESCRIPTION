@@ -1,0 +1,28 @@
+Package: tweedieDistr
+Title: Tweedie Distribution
+Version: 0.2.0
+Authors@R: 
+    person("Stefano", "Damato", , "stefanodamato128@gmail.com", role = c("aut", "cre"))
+Description: Provides density, distribution function, quantile function, and random
+    generation for the Tweedie distribution under the compound Poisson-Gamma
+    parameterisation with power parameter in (1, 2). The density is evaluated
+    using the series expansion of Dunn and Smyth (2005) <doi:10.1007/s11222-005-4070-y>,
+    implemented in C++ via 'Rcpp' and 'RcppArmadillo' for performance. A constructor
+    compatible with the 'distributional' package is also provided for use in tidy
+    modelling workflows.
+License: LGPL (>= 3)
+URL: https://github.com/StefanoDamato/tweedieDistr
+BugReports: https://github.com/StefanoDamato/tweedieDistr/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: distributional, Rcpp, rlang, stats
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: covr, ggdist, ggplot2, testthat (>= 3.0.0), tibble, tweedie
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-08-19 16:17:20 UTC; stefano.damato
+Author: Stefano Damato [aut, cre]
+Maintainer: Stefano Damato <stefanodamato128@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 05:20:15 UTC

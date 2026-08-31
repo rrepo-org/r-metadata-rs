@@ -1,0 +1,40 @@
+Package: medfit
+Type: Package
+Title: Infrastructure for Mediation Model Fitting and Extraction
+Version: 0.3.2
+Date: 2026-07-20
+Authors@R: person("Davood", "Tofighi",
+    email = "dtofighi@gmail.com",
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0001-8523-7776"))
+Description: Provides S7-based infrastructure for fitting mediation models,
+    extracting path coefficients, and performing bootstrap inference. Designed
+    as a foundation package for the mediation analysis ecosystem, supporting
+    'probmed', 'RMediation', and 'medrobust' packages. Implements unified interfaces
+    for model fitting across different engines (currently generalized linear models,
+    with future support for mixed models and Bayesian methods), standardized
+    extraction of mediation paths from various model types, and robust bootstrap
+    inference methods. Mediation methods are described in MacKinnon, Lockwood and
+    Williams (2004) <doi:10.1207/s15327906mbr3901_4>, Preacher and Hayes (2008)
+    <doi:10.3758/brm.40.3.879>, Tofighi and MacKinnon (2011)
+    <doi:10.3758/s13428-011-0076-x>, and VanderWeele (2014)
+    <doi:10.1097/EDE.0000000000000121>.
+License: GPL (>= 3)
+URL: https://data-wise.github.io/medfit/,
+        https://github.com/data-wise/medfit
+BugReports: https://github.com/data-wise/medfit/issues
+Depends: R (>= 4.1.0)
+Imports: S7 (>= 0.1.0), stats, methods, checkmate, generics, MASS
+Suggests: lavaan (>= 0.6-0), sandwich, testthat (>= 3.0.0), tibble
+Encoding: UTF-8
+Language: en-US
+Config/testthat/edition: 3
+Config/Needs/website: knitr, rmarkdown, quarto
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-23 16:49:54 UTC; dt
+Author: Davood Tofighi [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8523-7776>)
+Maintainer: Davood Tofighi <dtofighi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-23 17:00:02 UTC

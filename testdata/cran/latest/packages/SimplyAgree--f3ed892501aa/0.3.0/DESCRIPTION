@@ -1,0 +1,26 @@
+Package: SimplyAgree
+Type: Package
+Title: Flexible and Robust Agreement and Reliability Analyses
+Version: 0.3.0
+Authors@R: person("Aaron", "Caldwell", email = "arcaldwell49@gmail.com",
+                  role = c("aut", "cre"))
+Maintainer: Aaron Caldwell <arcaldwell49@gmail.com>
+Description: Reliability and agreement analyses often have limited software support. Therefore, this package was created to make agreement and reliability analyses easier for the average researcher. The functions within this package include simple tests of agreement, agreement analysis for nested and replicate data, and provide robust analyses of reliability. In addition, this package contains a set of functions to help when planning studies looking to assess measurement agreement. 
+URL: https://aaroncaldwell.us/SimplyAgree/
+BugReports: https://github.com/arcaldwell49/SimplyAgree/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: ggplot2, emmeans, lme4, boot, stats, dplyr, magrittr,
+        tidyselect, tidyr, stringr, jmvcore, quantreg, patchwork,
+        insight, nlme, purrr, Matrix, MASS, lifecycle, scales
+Suggests: knitr, rmarkdown, testthat, readr, covr, mgcv, ggeffects,
+        deming, pbkrtest
+VignetteBuilder: knitr
+Depends: R (>= 3.6)
+NeedsCompilation: no
+Packaged: 2026-01-21 19:41:05 UTC; CaldwellAaron
+Author: Aaron Caldwell [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-01-21 20:10:20 UTC

@@ -1,0 +1,34 @@
+Package: edr4r
+Title: Client for OGC API - Environmental Data Retrieval (EDR)
+Version: 0.1.1
+Authors@R: 
+    person("Kyle", "Onda", role = c("aut", "cre", "cph"),
+           email = "konda@lincolninst.edu")
+Description: A tidy R client for services implementing the OGC API -
+    Environmental Data Retrieval ('EDR') standard with JSON discovery and
+    'GeoJSON' or 'CoverageJSON' query responses. General purpose, but most
+    of its real-world use is against in-situ monitoring networks
+    (stream gauges, weather stations, snow and reservoir telemetry)
+    that expose their stations and time series as EDR collections.
+    Known working endpoints include the USGS waterdata OGC API and the
+    Western Water Datahub. Provides discovery, query, and parsing
+    helpers for the locations, items, position, area, cube, radius,
+    trajectory, and corridor query types. Returns 'CoverageJSON' as
+    tidy 'tibble' rows and 'GeoJSON' as 'sf' objects.
+License: MIT + file LICENSE
+URL: https://github.com/ksonda/edr4r
+BugReports: https://github.com/ksonda/edr4r/issues
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: cli, httr2 (>= 1.1.0), jsonlite, purrr, rlang, tibble, vctrs
+Suggests: base64enc, ggplot2, htmlwidgets, knitr, leaflet, rmarkdown,
+        sf, svglite, testthat (>= 3.0.0), webfakes
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-10 01:53:14 UTC; konda
+Author: Kyle Onda [aut, cre, cph]
+Maintainer: Kyle Onda <konda@lincolninst.edu>
+Repository: CRAN
+Date/Publication: 2026-07-10 07:30:30 UTC

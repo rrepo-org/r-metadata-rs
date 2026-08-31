@@ -1,0 +1,70 @@
+Package: DedooseR
+Title: Monitoring and Analyzing Dedoose Qualitative Data Exports
+Version: 2.0.0.2
+Authors@R: 
+    c(
+      person(
+        given  = "Abiraahmi",
+        family = "Shankar", 
+        email  = "abiraahmi.shankar@nyu.edu", 
+        role   = c("aut", "cre"),
+        comment = c(ORCID = "0000-0001-8354-5353")
+      ), 
+      person(
+        given  = "Catalina",
+        family = "Cañizares", 
+        email  = "cc9082@nyu.edu", 
+        role   = c("aut"),
+        comment = c(ORCID = "0000-0002-6854-5205")
+      ), 
+      person(
+        given  = "Francisco",
+        family = "Cardozo", 
+        email  = "foc9@miami.edu", 
+        role   = c("aut"),
+        comment = c(ORCID = "0000-0002-1925-4954")
+      ),
+      person(
+        given  = "Sabrina",
+        family = "Stockmans", 
+        email  = "sls9864@nyu.edu", 
+        role   = c("aut")
+      ),
+      person(
+        given  = "Pamela",
+        family = "Morris-Perez", 
+        email  = "pam7@nyu.edu", 
+        role   = c("aut"),
+        comment = c(ORCID = "0000-0003-3375-3458")
+      )
+    )
+Description: Streamlines analysis of qualitative data exported from 'Dedoose' <https://www.dedoose.com>.
+  Supports monitoring thematic saturation, calculating code frequencies,
+  organizing excerpts, generating dynamic codebooks, and producing code network maps
+  within 'R'.
+License: Apache License (>= 2)
+URL: https://abiraahmi.github.io/DedooseR/
+        https://github.com/abiraahmi/DedooseR
+BugReports: https://github.com/abiraahmi/DedooseR/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, tidyr, ggplot2, knitr, DT, tibble, labelled,
+        kableExtra, ggraph, igraph, wordcloud2, tidytext, purrr, haven,
+        openxlsx
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Suggests: rmarkdown, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-01-08 16:31:32 UTC; abishankar
+Author: Abiraahmi Shankar [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8354-5353>),
+  Catalina Cañizares [aut] (ORCID:
+    <https://orcid.org/0000-0002-6854-5205>),
+  Francisco Cardozo [aut] (ORCID:
+    <https://orcid.org/0000-0002-1925-4954>),
+  Sabrina Stockmans [aut],
+  Pamela Morris-Perez [aut] (ORCID:
+    <https://orcid.org/0000-0003-3375-3458>)
+Maintainer: Abiraahmi Shankar <abiraahmi.shankar@nyu.edu>
+Repository: CRAN
+Date/Publication: 2026-01-09 00:20:07 UTC

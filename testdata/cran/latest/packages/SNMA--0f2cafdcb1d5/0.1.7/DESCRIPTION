@@ -1,0 +1,33 @@
+Package: SNMA
+Type: Package
+Title: Stream Network Movement Analyses
+Version: 0.1.7
+Authors@R: person(
+    given = c("Donald", "T."),
+    family = "McKnight",
+    role = c("aut", "cre"),
+    email = "donald.mcknight@my.jcu.edu.au",
+    comment = c(affiliation = "Savanna Field Station"))
+Date: 2026-08-26
+Maintainer: Donald T. McKnight <donald.mcknight@my.jcu.edu.au>
+Description: Calculating home ranges and movements of animals in complex stream environments
+    is often challenging, and standard home range estimators do not apply. This
+    package provides a series of tools for assessing movements in a stream
+    network, such as calculating the total length of stream used, distances
+    between points, and movement patterns over time. See Vignette for additional
+    details. This package was originally released on 'GitHub' under the name 'SNM'.
+    SNMA was developed for analyses in McKnight et al. (2025) <doi:10.3354/esr01442>
+    which contains additional examples and information.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: sf,geosphere,igraph
+Suggests: ggplot2, ggnewscale, knitr,rmarkdown
+Depends: R (>= 3.5)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-26 20:06:33 UTC; Donald McKnight
+Author: Donald T. McKnight [aut, cre] (affiliation: Savanna Field Station)
+Repository: CRAN
+Date/Publication: 2026-08-26 20:30:02 UTC

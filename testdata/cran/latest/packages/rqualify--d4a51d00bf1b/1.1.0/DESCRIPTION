@@ -1,0 +1,55 @@
+Package: rqualify
+Type: Package
+Title: Qualification of R Software Installations
+Version: 1.1.0
+Authors@R: c(
+    person("Donnie", "Musgrove",
+      email = "donniemusgrove@gmail.com",
+      role = c("aut", "cre")
+    ),
+    person("Graeme L.", "Hickey",
+           email = "graemeleehickey@gmail.com",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-4989-0054")
+    ),
+    person("Marc", "Schwartz", 
+      email = "Marc@MSBiostats.com",
+      role = "aut",
+      comment = "For initial validation code."
+    ),
+    person("Alan", "Haynes", 
+      email = "alan.haynes@unibe.ch",
+      role = "ctb"
+    ),
+    person("Bryan", "Martin", 
+      email = "bryandmartin1@gmail.com",
+      role = "ctb"
+    ),
+    person("Medtronic Inc.", role = "cph")
+  )
+Description: Qualify R software installations using R Markdown as the foundation 
+  for the Installation Qualification (IQ) and Operational Qualification (OQ) when
+  used in environments (such as regulated clinical trials) where such 
+  processes may be required.
+License: GPL-2
+URL: https://github.com/Medtronic-Biostatistics/rqualify,
+        https://medtronic-biostatistics.github.io/rqualify/
+BugReports: https://github.com/Medtronic-Biostatistics/rqualify/issues
+Depends: R (>= 4.4.0)
+Imports: pandoc, quarto, rmarkdown, tinytex
+Suggests: knitr, testthat (>= 3.0.0), withr
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-28 19:26:14 UTC; musgrd1
+Author: Donnie Musgrove [aut, cre],
+  Graeme L. Hickey [aut] (ORCID: <https://orcid.org/0000-0002-4989-0054>),
+  Marc Schwartz [aut] (For initial validation code.),
+  Alan Haynes [ctb],
+  Bryan Martin [ctb],
+  Medtronic Inc. [cph]
+Maintainer: Donnie Musgrove <donniemusgrove@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 20:00:02 UTC

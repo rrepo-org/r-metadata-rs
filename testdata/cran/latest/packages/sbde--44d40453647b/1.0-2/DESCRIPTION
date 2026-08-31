@@ -1,0 +1,24 @@
+Package: sbde
+Version: 1.0-2
+Date: 2025-09-24
+Title: Semiparametric Bayesian Density Estimation
+Authors@R: person(given = "Surya",
+                      family = "Tokdar",
+                      role = c("aut", "cre"),
+                      email = "surya.tokdar@duke.edu")
+Depends: R (>= 2.6)
+Imports: coda, extremefit
+Description: Offers Bayesian semiparametric density estimation 
+             and tail-index estimation for heavy tailed data, by
+             using a parametric, tail-respecting transformation
+             of the data to the unit interval and then modeling
+             the transformed data with a purely nonparametric
+             logistic Gaussian process density prior. Based on 
+             Tokdar et al. (2022) <doi:10.1080/01621459.2022.2104727>.
+License: GPL-2
+NeedsCompilation: yes
+Packaged: 2025-09-24 19:37:30 UTC; stokdar
+Author: Surya Tokdar [aut, cre]
+Maintainer: Surya Tokdar <surya.tokdar@duke.edu>
+Repository: CRAN
+Date/Publication: 2025-09-24 20:20:02 UTC

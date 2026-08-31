@@ -1,0 +1,26 @@
+Package: thamesblock
+Type: Package
+Title: Truncated Harmonic Mean Estimator of the Marginal Likelihood for
+        Block Models
+Version: 0.1.0
+Authors@R: c(person(given = "Martin",
+    family = "Metodiev",
+    role = c("aut","cre","cph"),
+    email = "m.metodiev@tutanota.com",
+    comment = c(ORCID = "0009-0000-9432-3756")))
+Description: Implements the truncated harmonic mean estimator (THAMES) and other
+    estimators of the reciprocal marginal likelihood for block models.
+    This is done  via reciprocal importance sampling, using posterior samples 
+    and unnormalized log posterior values. For further information see
+    Metodiev, Perrot-Dockès, Fouetilou, Latouche & Raftery (2026).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: mclust, stats, combinat, withr, Matrix, label.switching
+NeedsCompilation: no
+Packaged: 2026-06-29 11:51:06 UTC; metodiev
+Author: Martin Metodiev [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0000-9432-3756>)
+Maintainer: Martin Metodiev <m.metodiev@tutanota.com>
+Repository: CRAN
+Date/Publication: 2026-07-04 08:40:08 UTC

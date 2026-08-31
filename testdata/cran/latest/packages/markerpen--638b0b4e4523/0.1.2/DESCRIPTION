@@ -1,0 +1,35 @@
+Package: markerpen
+Type: Package
+Title: Marker Gene Detection via Penalized Principal Component Analysis
+Version: 0.1.2
+Date: 2025-12-14
+Authors@R: c(
+    person("Yixuan", "Qiu",
+           email = "yixuan.qiu@cos.name",
+           role = c("aut", "cre")),
+    person("Jiebiao", "Wang", role = "aut"),
+    person("Jing", "Lei", role = "aut"),
+    person("Kathryn", "Roeder", role = "aut"))
+Description: Implementation of the 'MarkerPen' algorithm, short for marker gene detection
+    via penalized principal component analysis, described in the paper by Qiu, Wang, Lei,
+    and Roeder (2021, <doi:10.1093/bioinformatics/btab257>). 'MarkerPen' is a semi-supervised
+    algorithm for detecting marker genes by combining prior marker information with bulk
+    transcriptome data.
+License: GPL
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.3.0)
+Imports: Rcpp (>= 1.0.1), RSpectra, stats
+LinkingTo: Rcpp, RcppEigen, RSpectra
+Suggests: knitr, rmarkdown, prettydoc, scales
+VignetteBuilder: knitr, rmarkdown
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-12-14 12:34:17 UTC; qyx
+Author: Yixuan Qiu [aut, cre],
+  Jiebiao Wang [aut],
+  Jing Lei [aut],
+  Kathryn Roeder [aut]
+Maintainer: Yixuan Qiu <yixuan.qiu@cos.name>
+Repository: CRAN
+Date/Publication: 2025-12-14 13:30:02 UTC

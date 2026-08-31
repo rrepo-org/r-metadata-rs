@@ -1,0 +1,27 @@
+Package: xtvfreg
+Type: Package
+Title: Variance Function Panel Regression
+Version: 1.1.0
+Authors@R: 
+    person("Tim F.", "Liao", email = "tfliao@illinois.edu", 
+           role = c("aut", "cre"))
+Description: Implements an iterative mean-variance panel regression estimator
+    that allows both the mean and variance of the dependent variable to be 
+    functions of covariates. The method alternates between estimating a mean 
+    equation (using generalized linear models with Gaussian family) and a 
+    variance equation (using generalized linear models with Gamma family on 
+    squared within-group residuals) until convergence. Based on the methodology 
+    in Mooi-Reci and Liao (2025) <doi:10.1093/esr/jcae052>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+Imports: stats, rlang
+Suggests: haven, ggplot2, knitr, gt, modelsummary
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-11-22 14:56:52 UTC; tfliao
+Author: Tim F. Liao [aut, cre]
+Maintainer: Tim F. Liao <tfliao@illinois.edu>
+Repository: CRAN
+Date/Publication: 2025-11-26 20:40:02 UTC

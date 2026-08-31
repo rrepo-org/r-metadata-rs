@@ -1,0 +1,35 @@
+Package: dormancy
+Type: Package
+Title: Detection and Analysis of Dormant Patterns in Data
+Version: 0.1.0
+Authors@R: 
+    person("Dany", "Mukesha", , "danymukesha@gmail.com", 
+            role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-9514-751X"))
+Description: A novel framework for detecting, quantifying, and analyzing dormant 
+    patterns in multivariate data. Dormant patterns are statistical relationships 
+    that exist in data but remain inactive until specific trigger conditions emerge. 
+    This concept, inspired by biological dormancy (seeds, pathogens) and geological 
+    phenomena (dormant faults), provides tools to identify latent risks, hidden 
+    correlations, and potential phase transitions in complex systems. The package 
+    introduces methods for quantifying dormancy depth, trigger sensitivity, and 
+    awakening risk - enabling analysts to discover patterns that conventional 
+    methods miss because they focus only on currently active relationships.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, utils, grDevices, graphics, Rcpp (>= 1.0.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, ggplot2, covr
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+URL: https://github.com/danymukesha/dormancy/,
+        https://danymukesha.github.io/dormancy/
+BugReports: https://github.com/danymukesha/dormancy/issues/
+NeedsCompilation: yes
+Packaged: 2026-03-09 20:30:00 UTC; dany.mukesha
+Author: Dany Mukesha [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-9514-751X>)
+Maintainer: Dany Mukesha <danymukesha@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-16 16:00:33 UTC

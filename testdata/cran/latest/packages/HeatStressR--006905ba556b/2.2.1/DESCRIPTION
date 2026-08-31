@@ -1,0 +1,33 @@
+Package: HeatStressR
+Type: Package
+Title: Calculate Heat Stress Indices
+Version: 2.2.1
+Date: 2026-07-31
+Authors@R: c(
+    person("Yifei", "Zheng", email = "zyf0717@gmail.com", role = c("aut", "cre"),
+           comment = "Maintainer of this fork"),
+    person("Ana", "Casanueva", role = "aut", comment = "Original package author")
+    )
+Description: Calculates heat-stress indices from meteorological observations,
+    including the physically based wet-bulb globe temperature model described
+    by Liljegren et al. (2008) <doi:10.1080/15459620802310770>. The package
+    provides an independently maintained R implementation with row-level
+    diagnostics, configurable physical controls, and batch processing for the
+    Liljegren method; it is not a bitwise-compatible port of the original
+    program, and cross-implementation differences are expected.
+License: GPL-3
+URL: https://github.com/zyf0717/HeatStressR
+BugReports: https://github.com/zyf0717/HeatStressR/issues
+RoxygenNote: 8.0.0
+Depends: R (>= 3.4.0)
+Suggests: pkgload, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: stats, assertthat, parallel, foreach, doParallel
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-07-31 04:30:29 UTC; yifei
+Author: Yifei Zheng [aut, cre] (Maintainer of this fork),
+  Ana Casanueva [aut] (Original package author)
+Maintainer: Yifei Zheng <zyf0717@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 22:00:15 UTC

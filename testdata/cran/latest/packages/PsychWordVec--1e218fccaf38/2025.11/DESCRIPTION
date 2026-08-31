@@ -1,0 +1,41 @@
+Package: PsychWordVec
+Title: Word Embedding Research Framework for Psychological Science
+Version: 2025.11
+Date: 2025-11-30
+Authors@R: 
+    c(person(given = "Han Wu Shuang",
+             family = "Bao",
+             role = c("aut", "cre"),
+             email = "baohws@foxmail.com",
+             comment = c(ORCID = "0000-0003-3043-710X")))
+Maintainer: Han Wu Shuang Bao <baohws@foxmail.com>
+Description: 
+    An integrative toolbox of word embedding research that provides:
+    (1) a collection of 'pre-trained' static word vectors in the '.RData'
+    compressed format <https://psychbruce.github.io/WordVector_RData.pdf>;
+    (2) a group of functions to process, analyze, and visualize word vectors;
+    (3) a range of tests to examine conceptual associations, including
+    the Word Embedding Association Test <doi:10.1126/science.aal4230>
+    and the Relative Norm Distance <doi:10.1073/pnas.1720347115>,
+    with permutation test of significance; and
+    (4) a set of training methods to locally train (static) word vectors
+    from text corpora, including 'Word2Vec' <doi:10.48550/arXiv.1301.3781>,
+    'GloVe' <doi:10.3115/v1/D14-1162>, and 'FastText' <doi:10.48550/arXiv.1607.04606>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+URL: https://psychbruce.github.io/PsychWordVec/
+BugReports: https://github.com/psychbruce/PsychWordVec/issues
+Depends: R (>= 4.0.0)
+Imports: bruceR, dplyr, stringr, data.table, purrr, vroom, cli,
+        ggplot2, ggrepel, corrplot, psych, Rtsne, rgl, qgraph
+Suggests: text, text2vec, word2vec, rsparse, fastTextR, wordsalad,
+        sweater, glue
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-11-30 13:26:27 UTC; baohw
+Author: Han Wu Shuang Bao [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3043-710X>)
+Repository: CRAN
+Date/Publication: 2025-11-30 13:40:03 UTC

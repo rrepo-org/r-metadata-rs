@@ -1,0 +1,22 @@
+Package: rankPlayedInference
+Version: 1.0
+Date: 2026-05-05
+Title: Conditional Probability Distributions in Hearts Card Game
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Depends: R (>= 4.2.0)
+Imports: grDevices, graphics
+Description: For a given suit, if you add up the number of cards that you hold, plus the number that has been played so far, you can easily determine the number that remains in the combined hands of your three opponents. You can also determine the ("special") card of highest rank of the remaining cards for that suit. At some point, you notice that a certain opponent discards that special card. What can you infer about his holding in that suit? A series of simulation studies are reported here that allows a quantitative inference based on the conditional probability, given that the opponent has the special card. The same procedure is also used for the conditional probability, given that the opponent does not have the special card.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-05 21:11:44 UTC; barryzeeberg
+Author: Barry Zeeberg [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-05-11 18:50:02 UTC

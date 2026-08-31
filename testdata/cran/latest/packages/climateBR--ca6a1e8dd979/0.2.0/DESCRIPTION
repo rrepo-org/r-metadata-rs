@@ -1,0 +1,35 @@
+Package: climateBR
+Type: Package
+Title: Download Rainfall, Temperature, and Wind Data from Brazil
+Version: 0.2.0
+Authors@R: c(
+    person(
+      "Kaio", 
+      "Bárbara", 
+      email = "kaio.rbarbara@ufpe.br", 
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0009-0003-4884-7980")
+    )
+  )
+Description: Provides functions to download and import meteorological
+     data from Brazil's National Institute of Meteorology (INMET)
+     <https://portal.inmet.gov.br>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+Imports: glue, arrow, dplyr, tidyr, janitor, data.table, pracma, purrr,
+        tibble
+Suggests: knitr, rmarkdown, ggplot2, patchwork, geobr
+Depends: R (>= 4.1.0), rlang, sf, gstat
+VignetteBuilder: knitr
+URL: https://github.com/kaiorb52/climateBR
+BugReports: https://github.com/kaiorb52/climateBR/issues
+NeedsCompilation: no
+Packaged: 2026-08-19 11:03:01 UTC; kaio
+Author: Kaio Bárbara [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0003-4884-7980>)
+Maintainer: Kaio Bárbara <kaio.rbarbara@ufpe.br>
+Repository: CRAN
+Date/Publication: 2026-08-19 13:40:09 UTC

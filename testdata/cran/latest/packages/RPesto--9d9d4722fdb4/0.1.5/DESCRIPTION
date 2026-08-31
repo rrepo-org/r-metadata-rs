@@ -1,0 +1,21 @@
+Package: RPesto
+Title: Phylogenetic Estimation of Shifts in the Tempo of Origination
+Version: 0.1.5
+Authors@R: 
+    c(person("Bj\u00F8rn Tore", "Kopperud", role = c("aut", "cre"), email = "kopperud@protonmail.com"),
+      person("Sebastian", "H\u00F6hna", role = c("aut")))
+Description: Implements diversification analyses using the phylogenetic birth-death-shift model. It leverages belief propagation techniques to calculate branch-specific diversification rates, see Kopperud & Hoehna (2025) <doi:10.1093/sysbio/syaf041>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: tidytree, treeio, ape
+Config/rextendr/version: 0.4.2
+SystemRequirements: Cargo (Rust's package manager), rustc
+Depends: R (>= 4.2)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-03 12:15:22 UTC; bjorntko
+Author: Bjørn Tore Kopperud [aut, cre],
+  Sebastian Höhna [aut]
+Maintainer: Bjørn Tore Kopperud <kopperud@protonmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 00:10:02 UTC

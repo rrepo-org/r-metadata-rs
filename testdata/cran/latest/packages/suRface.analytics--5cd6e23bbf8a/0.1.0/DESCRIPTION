@@ -1,0 +1,24 @@
+Package: suRface.analytics
+Type: Package
+Title: Statistical Analysis and Visualization of Surface-Engineered
+        Material Properties
+Version: 0.1.0
+Author: Paul Angelo C. Manlapaz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1203-2064>)
+Maintainer: Paul Angelo C. Manlapaz <pacmanlapaz@gmail.com>
+Description: A collection of functions for statistical and multivariate analysis of surface-related data, with a focus on antimicrobial activity and omniphobicity. Designed to support materials scientists and researchers in exploring structure–function relationships in surface-engineered materials through reproducible and interpretable workflows. For more details, see Li et al. (2021) <doi:10.1002/advs.202100368>, and Kwon et al. (2020) <doi:10.3390/polym12081826>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, effectsize, stats, FactoMineR, factoextra,
+        randomForest, multcompView, grid
+Suggests: testthat, scales
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Authors@R: c(
+  person(given = "Paul Angelo C.", family = "Manlapaz", role = c("aut", "cre"), 
+         email = "pacmanlapaz@gmail.com", comment = c(ORCID = "0000-0002-1203-2064")))
+NeedsCompilation: no
+Packaged: 2025-07-29 15:18:31 UTC; PTRI
+Repository: CRAN
+Date/Publication: 2025-07-31 10:20:02 UTC

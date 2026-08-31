@@ -1,0 +1,31 @@
+Package: RPWNSC
+Type: Package
+Title: Run Purity Weighted Nearest Shrunken Centroid Feature Selection
+Version: 0.1.0
+Authors@R: c(
+    person("Amjad", "Ali", email = "amjadali@uaeu.ac.ae", role = c("aut", "cre")),
+    person("Zardad", "Khan", email = "zaar@uaeu.ac.ae", role = "aut"),
+    person("Saeed", "Aldahmani", email = "saldahmani@uaeu.ac.ae", role = "aut")
+    )
+Author: Amjad Ali [aut, cre],
+  Zardad Khan [aut],
+  Saeed Aldahmani [aut]
+Maintainer: Amjad Ali <amjadali@uaeu.ac.ae>
+Description: Provides a classifier independent filter method for high-dimensional
+    gene-expression feature selection. The Run Purity Weighted Nearest Shrunken
+    Centroid ('RPWNSC') score ranks genes by multiplying a run based purity score,
+    which measures the compactness of class labels after sorting samples by each
+    feature, by a scaled nearest shrunken centroid score, which measures
+    standardized class centroid separation relative to within class variation.
+    The top ranked features can then be used with downstream classifiers without
+    wrapper search, feature clustering, or classifier dependent training. 
+    'Amjad Ali, Zardad Khan, Saeed Aldahmani' (2026) <doi:10.1016/j.mlwa.2026.100947>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: false
+Depends: R (>= 3.5.0)
+Imports: stats
+NeedsCompilation: no
+Packaged: 2026-07-11 13:18:22 UTC; Amjad Ali
+Repository: CRAN
+Date/Publication: 2026-07-21 09:50:11 UTC

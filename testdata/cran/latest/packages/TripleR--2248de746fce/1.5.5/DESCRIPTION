@@ -1,0 +1,41 @@
+Encoding: UTF-8
+Package: TripleR
+Type: Package
+Title: Social Relation Model (SRM) Analyses for Single or Multiple
+        Groups
+Version: 1.5.5
+Date: 2026-01-09
+Authors@R: c(person(given = c("Felix", "D."),
+                      family = "Schönbrodt",
+                      role = c("cre", "aut"),
+                      email = "felix.schoenbrodt@psy.lmu.de"),
+               person(given = c("Mitja", "D."),
+                      family = "Back",
+                      role = "aut"),
+               person(given = c("Stefan", "C."),
+                      family = "Schmukle",
+                      role = "aut")
+               )
+Maintainer: Felix D. Schönbrodt <felix.schoenbrodt@psy.lmu.de>
+Depends: ggplot2 (>= 0.9.3)
+Imports: reshape2, plyr
+Suggests: lme4, R.rsp
+VignetteBuilder: R.rsp
+Description: Social Relation Model (SRM) analyses for single or multiple
+    round-robin groups are performed. These analyses are either based on one
+    manifest variable, one latent construct measured by two manifest variables,
+    two manifest variables and their bivariate relations, or two latent
+    constructs each measured by two manifest variables. Within-group t-tests
+    for variance components and covariances are provided for single groups.
+    For multiple groups two types of significance tests are provided:
+    between-groups t-tests (as in SOREMO) and enhanced standard errors based on
+    Lashley and Bond (1997) <DOI:10.1037/1082-989X.2.3.278>. Handling for missing values is provided.
+License: GPL (>= 2)
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2026-01-14 15:15:48 UTC; felix
+Author: Felix D. Schönbrodt [cre, aut],
+  Mitja D. Back [aut],
+  Stefan C. Schmukle [aut]
+Repository: CRAN
+Date/Publication: 2026-01-14 16:20:02 UTC

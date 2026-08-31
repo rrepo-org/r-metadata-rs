@@ -1,0 +1,69 @@
+Package: shinytest2
+Title: Testing for Shiny Applications
+Version: 0.5.1
+Authors@R: c(
+    person("Barret", "Schloerke", , "barret@posit.co", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0001-9986-114X")),
+    person(, "Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49")),
+    person("Winston", "Chang", , "winston@posit.co", role = "ctb",
+           comment = "Original author to rstudio/shinytest"),
+    person("Gábor", "Csárdi", , "gabor@posit.co", role = "ctb",
+           comment = "Original author to rstudio/shinytest"),
+    person("Hadley", "Wickham", , "hadley@posit.co", role = "ctb",
+           comment = "Original author to rstudio/shinytest"),
+    person(, "Mango Solutions", role = c("cph", "ccp"),
+           comment = "Original author to rstudio/shinytest")
+  )
+Description: Automated unit testing of Shiny applications through a
+    headless 'Chromium' browser.
+License: MIT + file LICENSE
+URL: https://rstudio.github.io/shinytest2/,
+        https://github.com/rstudio/shinytest2
+BugReports: https://github.com/rstudio/shinytest2/issues
+Depends: testthat (>= 3.3.1)
+Imports: callr, checkmate (>= 2.0.0), chromote (>= 0.5.0), cli, fs,
+        globals (>= 0.14.0), httr2, jsonlite, lifecycle (>= 1.0.3),
+        pingr, pkgload, R6 (>= 2.4.0), rlang (>= 1.0.0), rmarkdown,
+        shiny, withr
+Suggests: box, deSolve, diffobj, ggplot2, golem, knitr, plotly, png,
+        rhino, rstudioapi, shinytest (>= 1.5.1), shinyvalidate (>=
+        0.1.2), shinyWidgets, showimage, spelling, usethis, vdiffr (>=
+        1.0.0)
+LinkingTo: cpp11
+VignetteBuilder: knitr
+Config/Needs/check: rstudio/shiny, bslib
+Config/Needs/shinytest2-testing: decor
+Config/Needs/website: pkgdown, tidyverse/tidytemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Collate: 'R6-helper.R' 'app-driver-chromote.R' 'app-driver-dir.R'
+        'app-driver-expect-download.R' 'app-driver-expect-js.R'
+        'app-driver-expect-screenshot.R'
+        'app-driver-expect-unique-names.R' 'app-driver-expect-values.R'
+        'app-driver-get-log.R' 'app-driver-initialize.R'
+        'app-driver-log-message.R' 'app-driver-message.R'
+        'app-driver-node.R' 'app-driver-set-inputs.R'
+        'app-driver-start.R' 'app-driver-stop.R' 'app-driver-timeout.R'
+        'app-driver-upload-file.R' 'app-driver-variant.R'
+        'app-driver-wait.R' 'app-driver-window.R' 'app-driver.R'
+        'chromote-methods.R' 'compare-screenshot-threshold.R' 'cpp11.R'
+        'expect-snapshot.R' 'expr-recurse.R' 'httr2.R' 'migrate.R'
+        'missing-value.R' 'pkg.R' 'utils.R' 'platform.R'
+        'record-test-unique-name.R' 'record-test.R' 'rstudio.R'
+        'save-app.R' 'shiny-browser.R' 'shinytest2-logs.R'
+        'shinytest2-package.R' 'test-app.R' 'use.R'
+NeedsCompilation: yes
+Packaged: 2026-02-25 19:22:18 UTC; elizabethnelson
+Author: Barret Schloerke [cre, aut] (ORCID:
+    <https://orcid.org/0000-0001-9986-114X>),
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>),
+  Winston Chang [ctb] (Original author to rstudio/shinytest),
+  Gábor Csárdi [ctb] (Original author to rstudio/shinytest),
+  Hadley Wickham [ctb] (Original author to rstudio/shinytest),
+  Mango Solutions [cph, ccp] (Original author to rstudio/shinytest)
+Maintainer: Barret Schloerke <barret@posit.co>
+Repository: CRAN
+Date/Publication: 2026-02-25 19:40:02 UTC

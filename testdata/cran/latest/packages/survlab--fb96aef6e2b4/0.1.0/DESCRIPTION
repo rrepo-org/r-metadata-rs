@@ -1,0 +1,42 @@
+Package: survlab
+Type: Package
+Title: Survival Model-Based Imputation for Laboratory Non-Detect Data
+Version: 0.1.0
+Authors@R: c(
+    person("Luís", "Pereira", , "d57177@alunos.uevora.pt", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0628-4847")),
+    person("Paulo", "Infante", role = "aut",
+           comment = c(ORCID = "0000-0002-1644-9502")),
+    person("Teresa", "Ferreira", role = "ths",
+           comment = c(ORCID = "0000-0002-3900-1460")),
+    person("Paulo", "Quaresma", role = "ths",
+           comment = c(ORCID = "0000-0002-5086-059X"))
+  )
+Description: Implements survival-model-based imputation for censored
+    laboratory measurements, including Tobit-type models with several
+    distribution options. Suitable for data with values below detection
+    or quantification limits, the package identifies the best-fitting
+    distribution and produces realistic imputations that respect the
+    censoring thresholds.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: data.table (>= 1.17.0), stats, survival (>= 3.0.0), truncnorm
+        (>= 1.0.0)
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+URL: https://lpereira-ue.github.io/survlab/,
+        https://github.com/lpereira-ue/survlab
+NeedsCompilation: no
+Packaged: 2025-12-06 16:28:23 UTC; lpereira
+Author: Luís Pereira [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0628-4847>),
+  Paulo Infante [aut] (ORCID: <https://orcid.org/0000-0002-1644-9502>),
+  Teresa Ferreira [ths] (ORCID: <https://orcid.org/0000-0002-3900-1460>),
+  Paulo Quaresma [ths] (ORCID: <https://orcid.org/0000-0002-5086-059X>)
+Maintainer: Luís Pereira <d57177@alunos.uevora.pt>
+Repository: CRAN
+Date/Publication: 2025-12-11 13:40:02 UTC

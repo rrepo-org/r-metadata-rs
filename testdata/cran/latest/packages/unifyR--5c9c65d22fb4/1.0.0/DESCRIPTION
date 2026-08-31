@@ -1,0 +1,32 @@
+Package: unifyR
+Type: Package
+Title: Unified Scores, Reliabilities and Validities from Multiple Tests
+Version: 1.0.0
+Authors@R: 
+    c(
+      person(given = "Dominik", family = "Weber", role = c("aut", "cre"), email = "dominik.weber@uni-saarland.de"),
+      person(given = "Marco", family = "Koch", role = "aut"),
+      person(given = "Frank M.", family = "Spinath", role = "aut"),
+        person(given = "Nicolas", family = "Becker", role = "aut")
+    )
+Maintainer: Dominik Weber <dominik.weber@uni-saarland.de>
+Description: In diagnostic contexts, individuals are often assessed using multiple
+ tests that measure the same latent variable (e.g., intelligence). These test scores
+ are typically not exactly identical. Simple averaging neglects the correlation
+ between tests and the reduced variance of their combination. The 'unifyR' package
+ provides functions to compute statistically accurate unified scores, reliabilities
+ and validities of multiple tests. The underlying algorithms build on and extend the
+ method proposed by Evans (1996, <DOI:10.3758/BF03204767>) and have been validated
+ through simulations.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2.0)
+NeedsCompilation: no
+Packaged: 2025-06-27 14:58:26 UTC; Dominik
+Author: Dominik Weber [aut, cre],
+  Marco Koch [aut],
+  Frank M. Spinath [aut],
+  Nicolas Becker [aut]
+Repository: CRAN
+Date/Publication: 2025-07-02 15:20:02 UTC

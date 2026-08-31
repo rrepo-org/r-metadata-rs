@@ -1,0 +1,32 @@
+Package: CNSigs
+Type: Package
+Title: Analysis of Copy Number Signatures
+Version: 0.1.1
+Authors@R: c(
+    person("David", "Tallman", email = "tallman.52@osu.edu", role = "aut"),
+    person("Shawn", "Striker", email = "striker.35@osu.edu", role = c("cre","ctb")),
+    person("Daniel", "Stover", email = "stover.61@osu.edu", role = "cph"))
+Maintainer: Shawn Striker <striker.35@osu.edu>
+Description: A workflow to generate and analyze signatures based on copy number
+     data using non-negative matrix factorization (NMF) in an approach similar 
+     to that used in mutational signatures. It can be used to extract features 
+     from Copy number segment data and use that to find a subset of copy number
+     signatures which can be further used to correlate with other relevant data.
+     For more on 'NMF' see Gaujoux (2013) <doi:10.1186/1471-2105-11-367>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10), NMF
+Imports: methods, doParallel, foreach, flexmix, lsei, ggplot2, snow,
+        cowplot, pheatmap, RColorBrewer, viridisLite, colorspace,
+        stats, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-23 18:02:05 UTC; str236
+Author: David Tallman [aut],
+  Shawn Striker [cre, ctb],
+  Daniel Stover [cph]
+Config/roxygen2/version: 8.0.0
+Repository: CRAN
+Date/Publication: 2026-06-23 19:10:02 UTC

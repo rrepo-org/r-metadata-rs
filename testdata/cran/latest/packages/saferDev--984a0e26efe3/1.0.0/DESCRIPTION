@@ -1,0 +1,30 @@
+Package: saferDev
+Type: Package
+Title: Function and Pipeline Development
+Version: 1.0.0
+Date: 2026-06-02
+Authors@R: c(
+    person(given = "Haiding", family = "Wang", role = "ctb"),
+    person(given = "Yushi", family = "Han", role = "ctb"),
+    person(given = "Mia", family = "Legras", role = "ctb"),
+    person(given = "Gael", family = "Millot",  email = "gael.millot@pasteur.fr", role = c("cre", "aut", "ctb"), comment = c(ORCID = "0000-0002-0591-3509"))
+  )
+Encoding: UTF-8
+Maintainer: Gael Millot <gael.millot@pasteur.fr>
+Description: Set of functions that perform checks according to the safer-r project recommendations for R function development (see <https://github.com/safer-r>). This includes checking argument values, ensuring correct specification of all mandatory arguments for embedded functions, as well as their explicit package namespace qualification, among other things.
+URL: <https://github.com/safer-r/saferDev>,
+        <https://safer-r.github.io/saferDev/>
+License: GPL-3
+RoxygenNote: 7.3.3
+Imports: ggplot2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-02 16:14:25 UTC; gmillot
+Author: Haiding Wang [ctb],
+  Yushi Han [ctb],
+  Mia Legras [ctb],
+  Gael Millot [cre, aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-0591-3509>)
+Repository: CRAN
+Date/Publication: 2026-06-08 18:10:03 UTC

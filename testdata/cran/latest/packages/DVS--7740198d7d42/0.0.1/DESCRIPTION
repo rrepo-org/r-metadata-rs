@@ -1,0 +1,32 @@
+Package: DVS
+Type: Package
+Title: Stability Selection with Lasso after Variable Decorrelation
+Version: 0.0.1
+Authors@R: 
+    c(
+      person("Mahdi", "Nouraie", email = "mahdinouraie20@gmail.com",
+             role = c("aut", "cre")),
+      person("Connor", "Smith", role = "aut"),
+      person("Samuel", "Muller", role = "aut")
+    )
+Description: Implements stability selection with Lasso after variable
+    decorrelation for identifying relevant variables in high-dimensional data.
+    The method applies Air-HOLP screening and Gram-Schmidt orthogonalization
+    before Lasso-based stability selection.
+License: MIT + file LICENSE
+Imports: glmnet, cmna
+Encoding: UTF-8
+URL: https://github.com/MahdiNouraie/DVS,
+        https://doi.org/10.1007/s11222-026-10916-7
+BugReports: https://github.com/MahdiNouraie/DVS/issues
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-22 04:18:35 UTC; 48099783
+Author: Mahdi Nouraie [aut, cre],
+  Connor Smith [aut],
+  Samuel Muller [aut]
+Maintainer: Mahdi Nouraie <mahdinouraie20@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-30 17:20:41 UTC

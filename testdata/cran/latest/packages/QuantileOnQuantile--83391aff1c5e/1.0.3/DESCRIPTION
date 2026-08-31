@@ -1,0 +1,32 @@
+Package: QuantileOnQuantile
+Type: Package
+Title: Quantile-on-Quantile Regression Analysis
+Version: 1.0.3
+Authors@R: c(
+    person("Merwan", "Roudane", 
+           email = "merwanroudane920@gmail.com", 
+           role = c("aut", "cre", "cph")),
+    person("Nicholas", "Sim", role = "ctb",
+           comment = "Original methodology developer"),
+    person("Hongtao", "Zhou", role = "ctb",
+           comment = "Original methodology developer")
+    )
+Description: Implements the Quantile-on-Quantile (QQ) regression methodology developed by Sim and Zhou (2015) <doi:10.1016/j.jbankfin.2015.01.013>. QQ regression estimates the effect that quantiles of one variable have on quantiles of another, capturing the dependence between distributions. The package provides functions for QQ regression estimation, 3D surface visualization with 'MATLAB'-style color schemes ('Jet', 'Viridis', 'Plasma'), heatmaps, contour plots, and quantile correlation analysis. Uses 'quantreg' for quantile regression and 'plotly' for interactive visualizations. Particularly useful for examining relationships between financial variables, oil prices, and stock returns under different market conditions.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+Author: Merwan Roudane [aut, cre, cph],
+  Nicholas Sim [ctb] (Original methodology developer),
+  Hongtao Zhou [ctb] (Original methodology developer)
+Maintainer: Merwan Roudane <merwanroudane920@gmail.com>
+Imports: quantreg (>= 5.0), plotly (>= 4.0.0), stats, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), htmlwidgets
+VignetteBuilder: knitr
+URL: https://github.com/merwanroudane/qq
+BugReports: https://github.com/merwanroudane/qq/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-04 18:40:54 UTC; merwan
+Repository: CRAN
+Date/Publication: 2026-02-08 16:40:02 UTC

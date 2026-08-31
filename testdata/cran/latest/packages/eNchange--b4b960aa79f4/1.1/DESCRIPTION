@@ -1,0 +1,20 @@
+Package: eNchange
+Type: Package
+Title: Ensemble Methods for Multiple Change-Point Detection
+Version: 1.1
+Date: 2025-06-22
+Authors@R: person(given = c("Karolos", "K."), family = "Korkas",  role = c("aut", "cre"), email = "kkorkas@yahoo.co.uk")
+Maintainer: Karolos K. Korkas <kkorkas@yahoo.co.uk>
+Description: Implements a segmentation algorithm for multiple change-point detection in univariate time series using the Ensemble Binary Segmentation of Korkas (2022) <Journal of the Korean Statistical Society, 51(1), pp.65-86.>.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.12), foreach, iterators, doParallel, methods,
+        hawkes, ACDm
+Suggests: MASS
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2025-06-24 21:55:22 UTC; kkork
+Repository: CRAN
+Date/Publication: 2025-06-24 23:50:02 UTC
+Author: Karolos K. Korkas [aut, cre]

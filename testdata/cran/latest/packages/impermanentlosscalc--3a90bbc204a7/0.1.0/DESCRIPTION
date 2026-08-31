@@ -1,0 +1,22 @@
+Package: impermanentlosscalc
+Title: Calculate Impermanent Loss in Automated Market Maker (AMM)
+        Liquidity Pools
+Version: 0.1.0
+Authors@R: 
+    person("Amber", "Krause", , "amber32k@gmail.com", role = c("aut", "cre"),
+            comment = c(ORCID = "0000-0002-7493-3909"))
+Description: Computes the key metrics for assessing the performance of a liquidity provider (LP) position in a weighted multi-asset Automated Market Maker (AMM) pool. Calculates the nominal and percentage impermanent loss (IL) by comparing the portfolio value inside the pool (based on the weighted geometric mean of price ratios) against the value of simply holding the assets outside the pool (based on the weighted arithmetic mean). The primary function, `impermanent_loss()`, incorporates the effect of earned trading fees to provide the LP's net profit and loss relative to a holding strategy, using a methodology derived from Tiruviluamala, N., Port, A., and Lewis, E. (2022) <doi:10.48550/arXiv.2203.11352>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: ggplot2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-06 16:06:01 UTC; amber
+Author: Amber Krause [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7493-3909>)
+Maintainer: Amber Krause <amber32k@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-11 13:40:11 UTC

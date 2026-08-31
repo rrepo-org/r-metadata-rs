@@ -1,0 +1,27 @@
+Package: tabbitR
+Title: Weighted Cross-Tabulations Exported to 'Excel'
+Version: 0.1.3
+Authors@R: 
+    person("Siobhan", "McAndrew", email="siobhan.mcandrew@gmail.com", role = c("aut", "cre"))
+Description: Produces weighted cross-tabulation tables for one or more outcome 
+    variables across one or more breakdown variables, and exports them directly 
+    to 'Excel'. For each outcome-by-breakdown combination, the package creates a 
+    weighted percentage table and a corresponding unweighted count table, with 
+    transparent handling of missing values and light, readable formatting. 
+    Designed to support social survey analysis workflows that require large sets of 
+    consistent, publication-ready tables.
+Language: en-GB
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: haven, openxlsx, stats
+RoxygenNote: 7.3.3
+URL: https://github.com/smmcandrew/tabbitR
+BugReports: https://github.com/smmcandrew/tabbitR/issues
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-05 21:46:01 UTC; siobh
+Author: Siobhan McAndrew [aut, cre]
+Maintainer: Siobhan McAndrew <siobhan.mcandrew@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-09 13:50:02 UTC

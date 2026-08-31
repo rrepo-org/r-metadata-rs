@@ -1,0 +1,63 @@
+Package: PEAXAI
+Title: Probabilistic Efficiency Analysis Using Explainable Artificial
+        Intelligence
+Version: 1.0.3
+Authors@R: 
+  c(
+    person(given = "Ricardo",
+           family = "González Moyano",
+           role = c("cre", "aut"),
+           email = "ricardo.gonzalezm@umh.es",
+           comment = c(ORCID = "0009-0002-8608-5545")),
+    person(given = "Juan",
+           family = "Aparicio",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-0867-0004")),
+    person(given = "José Luis",
+           family = "Zofío",
+           role = "aut",
+           comment = c(ORCID = "0000-0003-1170-9501")),
+    person(given = "Víctor",
+           family = "España",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-1807-6180"))
+  )
+Description: Provides a probabilistic framework that integrates Data Envelopment
+  Analysis (DEA) (Banker et al., 1984) <doi:10.1287/mnsc.30.9.1078> with machine
+  learning classifiers (Kuhn, 2008) <doi:10.18637/jss.v028.i05> to estimate both the
+  (in)efficiency status and the probability of efficiency for decision-making
+  units. The approach trains predictive models on DEA-derived efficiency labels
+  (Charnes et al., 1985) <doi:10.1016/0304-4076(85)90133-2>, enabling explainable
+  artificial intelligence (XAI) workflows with global and local interpretability
+  tools, including permutation importance (Molnar et al., 2018) <doi:10.21105/joss.00786>,
+  Shapley value explanations (Strumbelj & Kononenko, 2014) <doi:10.1007/s10115-013-0679-x>,
+  and sensitivity analysis (Cortez, 2011) <https://CRAN.R-project.org/package=rminer>.
+  The framework also supports probability-threshold peer selection and counterfactual
+  improvement recommendations for benchmarking and policy evaluation. The probabilistic
+  efficiency framework is detailed in González-Moyano et al. (2025)
+  "Probability-based Technical Efficiency Analysis through Machine Learning",
+  in review for publication.
+License: GPL-3
+URL: https://github.com/rgonzalezmoyano/PEAXAI
+BugReports: https://github.com/rgonzalezmoyano/PEAXAI/issues
+Encoding: UTF-8
+Language: en
+RoxygenNote: 7.3.2
+Depends: R (>= 4.4.0)
+Imports: Benchmarking, caret, deaR, dplyr, kernelshap, iml, lime, np,
+        PRROC, pROC, rminer, rms, stats, peakRAM
+Suggests: ggplot2, knitr, rmarkdown
+VignetteBuilder: knitr
+LazyData: false
+ByteCompile: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-23 10:08:15 UTC; Ricardo
+Author: Ricardo González Moyano [cre, aut] (ORCID:
+    <https://orcid.org/0009-0002-8608-5545>),
+  Juan Aparicio [aut] (ORCID: <https://orcid.org/0000-0002-0867-0004>),
+  José Luis Zofío [aut] (ORCID: <https://orcid.org/0000-0003-1170-9501>),
+  Víctor España [aut] (ORCID: <https://orcid.org/0000-0002-1807-6180>)
+Maintainer: Ricardo González Moyano <ricardo.gonzalezm@umh.es>
+Repository: CRAN
+Date/Publication: 2026-08-23 10:41:14 UTC

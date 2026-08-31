@@ -1,0 +1,25 @@
+Package: aiEvalR
+Type: Package
+Title: Statistical and Psychometric Evaluation of AI Systems
+Version: 0.1.0
+Authors@R: person("Subir", "Hait", email = "haitsubi@msu.edu",
+    role = c("aut", "cre"), comment = c(ORCID = "0009-0004-9871-9677"))
+Description: Evaluates artificial intelligence (AI) systems as measurement instruments using psychometric methods. Provides multi-facet generalizability theory (G-study and D-study) via 'lme4', reliability via the intraclass correlation coefficient (ICC), calibration via the expected calibration error (ECE) and Brier score, robustness stress testing, and group disparity diagnostics. Item-level differential item functioning (DIF) based on item response theory (IRT) is delegated to the 'aiDIF' package. Methods follow Cronbach, Gleser, Nanda and Rajaratnam (1972, <ISBN:9780471188506>) and Brennan (2001) <doi:10.1007/978-1-4757-3456-0>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: stats, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr, boot, lme4,
+        dplyr, ggplot2, aiDIF, spelling
+Config/testthat/edition: 3
+URL: https://github.com/causalfragility-lab/aiEvalR
+BugReports: https://github.com/causalfragility-lab/aiEvalR/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-21 12:55:28 UTC; subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Config/roxygen2/version: 8.0.0
+Repository: CRAN
+Date/Publication: 2026-08-30 09:10:27 UTC

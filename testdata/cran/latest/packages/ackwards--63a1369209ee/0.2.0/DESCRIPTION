@@ -1,0 +1,43 @@
+Package: ackwards
+Title: Bass-Ackwards Hierarchical Structural Analysis
+Version: 0.2.0
+Authors@R: c(
+    person("Jeffrey M.", "Girard", , "me@jmgirard.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7359-3746")),
+    person("Miriam K.", "Forbes", role = "cph",
+           comment = "Author of the bundled AMH correlation matrix (data/forbes2023.rda), CC-BY 4.0"))
+Description: Implements Goldberg's (2006) <doi:10.1016/j.jrp.2006.01.001>
+    bass-ackwards method and modern descendants for hierarchical structural
+    analysis. Extracts solutions from 1 to k factors using principal
+    component analysis (PCA), exploratory factor analysis (EFA), or
+    exploratory structural equation modeling (ESEM) engines, then
+    characterizes the hierarchy via between-level factor-score
+    correlations computed via exact linear algebra (Waller, 2007,
+    <doi:10.1016/j.jrp.2006.08.005>) or materialized scores. Includes the
+    Forbes (2023) <doi:10.1037/met0000546> extension for redundancy pruning
+    and all-levels cross-correlations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: cli, generics, psych, rlang, stats, utils
+Suggests: covr, EFAtools, future, future.apply, ggplot2, gt, knitr,
+        lavaan (>= 0.6-13), rmarkdown, testthat (>= 3.0.0)
+LazyData: true
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: suggest_k, boot_edges, esem, layout,
+        missing, vignette-m24
+VignetteBuilder: knitr
+URL: https://jmgirard.github.io/ackwards/,
+        https://github.com/jmgirard/ackwards
+BugReports: https://github.com/jmgirard/ackwards/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 18:05:34 UTC; jmgirard
+Author: Jeffrey M. Girard [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7359-3746>),
+  Miriam K. Forbes [cph] (Author of the bundled AMH correlation matrix
+    (data/forbes2023.rda), CC-BY 4.0)
+Maintainer: Jeffrey M. Girard <me@jmgirard.com>
+Repository: CRAN
+Date/Publication: 2026-07-27 19:30:22 UTC

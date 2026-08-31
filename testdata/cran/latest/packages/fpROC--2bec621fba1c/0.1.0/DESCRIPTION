@@ -1,0 +1,46 @@
+Package: fpROC
+Type: Package
+Title: Fast Partial Receiver Operating Characteristic (ROC) Test for
+        Ecological Niche Modeling
+Version: 0.1.0
+Authors@R: c(
+              person("Luis", "Osorio-Olvera", 
+                     email = "luismurao@gmail.com",
+                     role = c("aut", "cre"),
+                     comment = c(ORCID = "0000-0003-0701-5398")),
+              person("Marlon E.", "Cobos", email = "manubio13@gmail.com", role = c("aut"),
+                     comment = c(ORCID = "0000-0002-2611-1767")),
+              person("Rusby G.", "Contreras-Díaz", 
+                    email = "rusby.contreras.diaz@gmail.com", 
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-0569-8984")),
+              person("Weverton", "Trindade", email = "wevertonf1993@gmail.com", role = "ctb",
+                     comment = c(ORCID = "0000-0003-2045-4555")),
+              person("Luis F.", "Arias-Giraldo", email = "lfarias.giraldo@gmail.com",
+                      role = "ctb", comment = c(ORCID = "0000-0003-4861-8064"))
+  )
+Maintainer: Luis Osorio-Olvera <luismurao@gmail.com>
+Description: Provides optimized 'C++' code for computing the partial Receiver Operating Characteristic (ROC) test used in niche and species distribution modeling. The implementation follows Peterson et al. (2008) <doi:10.1016/j.ecolmodel.2007.11.008>. Parallelization via 'OpenMP' was implemented with assistance from the 'DeepSeek' Artificial Intelligence Assistant (<https://www.deepseek.com/>).
+License: GPL-3
+Encoding: UTF-8
+NeedsCompilation: yes
+SystemRequirements: GNU make, OpenMP, TBB
+URL: https://luismurao.github.io/fpROC/
+BugReports: https://github.com/luismurao/fpROC/issues
+Imports: Rcpp (>= 1.0.7), stats, terra
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Packaged: 2025-07-11 18:16:20 UTC; luis
+Author: Luis Osorio-Olvera [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0701-5398>),
+  Marlon E. Cobos [aut] (ORCID: <https://orcid.org/0000-0002-2611-1767>),
+  Rusby G. Contreras-Díaz [aut] (ORCID:
+    <https://orcid.org/0000-0002-0569-8984>),
+  Weverton Trindade [ctb] (ORCID:
+    <https://orcid.org/0000-0003-2045-4555>),
+  Luis F. Arias-Giraldo [ctb] (ORCID:
+    <https://orcid.org/0000-0003-4861-8064>)
+Repository: CRAN
+Date/Publication: 2025-07-16 15:20:07 UTC

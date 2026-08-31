@@ -1,0 +1,26 @@
+Type: Package
+Package: ocrRBBR
+Title: Explain Gene Expression with Boolean Rules of Chromatin States
+Version: 0.1.0
+Authors@R: 
+    person("Seyed Amir", "Malekpour", , "a.malekpour@ipm.ir", role = c("aut", "cre"))
+Description: Infers Boolean rules among cis-regulatory regions using
+    paired chromatin accessibility and gene expression data at bulk and
+    single-cell levels.  Links regulatory regions to target genes,
+    providing insights into gene regulation mechanisms.
+License: GPL-3
+URL: https://github.com/CompBioIPM/ocrRBBR
+Depends: R (>= 4.4)
+Imports: doParallel, dplyr, foreach, GenomeInfoDb, GenomicRanges,
+        glmnet, Matrix, parallel, rtracklayer, S4Vectors, stats, utils
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-05 18:55:34 UTC; seyed_000
+Author: Seyed Amir Malekpour [aut, cre]
+Maintainer: Seyed Amir Malekpour <a.malekpour@ipm.ir>
+Repository: CRAN
+Date/Publication: 2026-02-09 13:50:07 UTC

@@ -1,0 +1,25 @@
+Package: lmomPi
+License: GPL (>= 3)
+Title: (Precipitation) Frequency Analysis and Variability with
+        L-Moments from 'lmom'
+Type: Package
+Authors@R: c(person(given="Emanuele",family="Cordano",role = c("aut","cre"),email = "emanuele.cordano@gmail.com",comment = c(ORCID=  "0000-0002-3508-5898")))
+Description: It is an extension of 'lmom' R package: 'pel...()','cdf...()',qua...()' function
+    families are lumped and called from one function per each family respectively in order to
+    create robust automatic tools to fit data  with different probability
+    distributions and then to estimate probability values and return periods.  The implemented functions are able to manage time series with constant and/or missing values without stopping
+    the execution with error messages. The package also contains tools to  calculate several  indices based on variability (e.g. 'SPI' , Standardized
+    Precipitation Index, see <https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-index-spi> and <http://spei.csic.es/>) for multiple time series or spatially gridded values. 
+Version: 0.6.7
+Date: 2025-08-01
+Repository: CRAN
+Depends: R(>= 3.0.1),lmom,stringr
+Suggests: SPEI
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-08-25 06:54:09 UTC; ecor
+Date/Publication: 2025-08-25 07:50:08 UTC
+Author: Emanuele Cordano [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3508-5898>)
+Maintainer: Emanuele Cordano <emanuele.cordano@gmail.com>

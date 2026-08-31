@@ -1,0 +1,23 @@
+Package: FKmL
+Title: Fréchet Distance-Based K-Means and Extensions for Longitudinal
+        Data
+Version: 0.1.1
+Authors@R: c(
+    person("Ji Hyun", "Park", , "jhn1105@gmail.com", role = c("aut", "cre")),
+    person("Soon-Sun", "Kwon", , "qrio1010@ajou.ac.kr", role = "aut"),
+    person("Ilsuk", "Kang", , "isk1218@chungbuk.ac.kr", role = c("aut", "ctb"))
+  )
+Description: Implements shape-based clustering algorithms for multidimensional longitudinal data based on the Fréchet distance. It implements two main methods: MFKmL (Multidimensional Fréchet distance-based K-means for Longitudinal data), an extension of the K-means algorithm using the Fréchet distance originally developed in the 'kmlShape' package, adapted for multidimensional trajectories; and SFKmL (Sparse multidimensional Fréchet distance-based K-medoids for Longitudinal data), a K-medoids-based clustering algorithm that incorporates variable selection. These tools are designed to enhance clustering performance in high-dimensional longitudinal data settings, particularly those with time delays, variations in trajectory speed, irregular sampling intervals, and noise. This package implements methods derived from Kang et al. (2023) <doi:10.1007/s11222-023-10237-z>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, ggplot2, proxy, abind
+Depends: R (>= 4.3)
+NeedsCompilation: no
+Packaged: 2025-06-16 07:13:23 UTC; user
+Author: Ji Hyun Park [aut, cre],
+  Soon-Sun Kwon [aut],
+  Ilsuk Kang [aut, ctb]
+Maintainer: Ji Hyun Park <jhn1105@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-02 15:00:03 UTC

@@ -1,0 +1,36 @@
+Package: MAIHDA
+Type: Package
+Title: Multilevel Analysis of Individual Heterogeneity and
+        Discriminatory Accuracy
+Version: 0.2.1
+Authors@R: c(
+    person("Hamid", "Bulut", email = "me@hamidbulut.com", role = c("aut", "cre"))
+    )
+Description: Tools for Multilevel Analysis of Individual Heterogeneity and
+    Discriminatory Accuracy (MAIHDA) for intersectional inequality research.
+    Methods are described in Merlo (2018) <doi:10.1016/j.socscimed.2017.12.026>
+    and Evans et al. (2018) <doi:10.1016/j.socscimed.2017.11.011>. The package
+    creates intersectional strata, fits multilevel MAIHDA models, estimates
+    variance partition coefficients, proportional change in variance, stratum
+    effects, and discriminatory-accuracy summaries, and provides diagnostic and
+    presentation plots.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: lme4 (>= 1.1-27), reformulas, cli, ggplot2 (>= 3.4.0), dplyr
+        (>= 1.0.0), tidyr (>= 1.1.0), generics, stats, rlang (>=
+        0.4.0), patchwork, ggrepel, tidyselect, tibble
+Suggests: shiny, bslib (>= 0.7.0), DT, future, promises, plotly, haven,
+        shinyjs, shinycssloaders, brms (>= 2.15.0), WeMix (>= 4.0.0),
+        ordinal, testthat (>= 3.0.0), knitr, MASS, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/hdbt/MAIHDA, https://hdbt.github.io/MAIHDA/
+BugReports: https://github.com/hdbt/MAIHDA/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-09 20:01:17 UTC; hamid
+Author: Hamid Bulut [aut, cre]
+Maintainer: Hamid Bulut <me@hamidbulut.com>
+Repository: CRAN
+Date/Publication: 2026-07-09 21:00:08 UTC

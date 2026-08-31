@@ -1,0 +1,38 @@
+Package: tidyprf
+Title: Tidy Access to Brazilian Federal Highway Police ('PRF') Data
+Version: 0.1.1
+Authors@R: c(
+    person("João Paulo", "Assis Bonifácio", , "jpab.27@hotmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0009-0009-2335-8391")),
+    person("Geraldo Magela", "da Cruz Pereira", role = "aut",
+           comment = c(ORCID = "0000-0001-6280-4870")),
+    person("Pedro", "Mambelli Fernandes", role = "aut"))
+Description: Download and read Brazilian Federal Highway Police ('PRF')
+    open data on traffic accidents by person, by occurrence, and traffic
+    violations
+    <https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-da-prf>.
+    Data are retrieved on demand as 'Parquet' files distributed via 'GitHub'
+    releases and cached locally for reuse.
+License: MIT + file LICENSE
+URL: https://github.com/bonijoao/tidyprf,
+        https://bonijoao.github.io/tidyprf/
+BugReports: https://github.com/bonijoao/tidyprf/issues
+Depends: R (>= 4.1)
+Imports: arrow, cli, dplyr, fs, httr2, purrr, rlang, tibble
+Suggests: httptest2, knitr, rmarkdown, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-23 14:33:44 UTC; jpab2
+Author: João Paulo Assis Bonifácio [aut, cre] (ORCID:
+    <https://orcid.org/0009-0009-2335-8391>),
+  Geraldo Magela da Cruz Pereira [aut] (ORCID:
+    <https://orcid.org/0000-0001-6280-4870>),
+  Pedro Mambelli Fernandes [aut]
+Maintainer: João Paulo Assis Bonifácio <jpab.27@hotmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-03 17:50:02 UTC

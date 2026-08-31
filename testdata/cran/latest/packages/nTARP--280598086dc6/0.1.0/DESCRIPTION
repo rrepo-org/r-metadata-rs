@@ -1,0 +1,23 @@
+Package: nTARP
+Type: Package
+Title: Cluster Analysis Using Thresholding After Random Projections
+        (n-TARP)
+Version: 0.1.0
+Authors@R: c(person("David", "Reeping", email = "reepindp@ucmail.uc.edu", role = c("aut", "cre")),
+    person("Yunmeng", "Han", email = "hany@ucmail.uc.edu", role = "aut"),
+    person("Nahal", "Rashedi", email = "rashednl@mail.uc.edu", role = "rev"))
+Description: Implements the high-dimensional clustering technique Thresholding After Random Projections (n-TARP). Provides functionality to iteratively decompose larger datasets using contextual variables or within-cluster sum of squares. See Tarun & Boutin (2018) <doi:10.48550/arXiv.1806.05297> and Tarun & Boutin (2018) <doi:10.4231/R74B2ZJV> for the original method and applications.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats
+Suggests: knitr, rmarkdown, HDclassif
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-17 15:50:24 UTC; reepi
+Author: David Reeping [aut, cre],
+  Yunmeng Han [aut],
+  Nahal Rashedi [rev]
+Maintainer: David Reeping <reepindp@ucmail.uc.edu>
+Repository: CRAN
+Date/Publication: 2026-03-20 12:40:02 UTC

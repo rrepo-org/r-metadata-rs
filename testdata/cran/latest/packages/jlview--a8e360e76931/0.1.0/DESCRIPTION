@@ -1,0 +1,32 @@
+Package: jlview
+Title: Zero-Copy Julia to R Array Bridge via ALTREP
+Version: 0.1.0
+Authors@R: c(
+    person("Aviezer", "Lifshitz", , "aviezer.lifshitz@weizmann.ac.il", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8458-9507")),    
+    person("Weizmann Institute of Science", role = "cph")
+  )
+Description: Provides zero-copy R views of Julia-owned arrays by
+    implementing ALTREP (Alternative Representations) classes that return
+    pointers directly into Julia's memory. The package integrates with 'JuliaCall'
+    and uses C-level finalizers for safe cross-runtime garbage collection.
+License: MIT + file LICENSE
+URL: https://github.com/tanaylab/jlview
+BugReports: https://github.com/tanaylab/jlview/issues
+Depends: R (>= 4.0.0)
+SystemRequirements: Julia (>= 1.6, https://julialang.org/downloads/)
+Imports: JuliaCall, Matrix, methods
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-03-19 12:45:24 UTC; aviezerl
+Author: Aviezer Lifshitz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8458-9507>),
+  Weizmann Institute of Science [cph]
+Maintainer: Aviezer Lifshitz <aviezer.lifshitz@weizmann.ac.il>
+Repository: CRAN
+Date/Publication: 2026-03-23 17:40:08 UTC

@@ -1,0 +1,32 @@
+Package: rootWishartHD
+Type: Package
+Title: Exact and Log-Scale Tail Probabilities for Roy's Largest Root
+Version: 0.95.2
+Authors@R: c(
+  person("Stepan", "Grinek", role = c("aut","cre"),
+         email = "stepan.grinek@jax.org"),
+  person("Maxime", "Turgeon", role = "ctb",
+         comment = "Original rootWishart package codebase")
+ )
+Description: Provides distribution functions and log-scale tail probabilities for Roy's largest root
+  in single and double Wishart (Jacobi ensemble) settings. This package is derived from the
+  'rootWishart' package by Maxime Turgeon and extends it with numerically robust log-CDF/log-survival
+  evaluation, tail-aware adaptive precision, and high-dimensional validation utilities, based on
+  Chiani (2014) <DOI:10.1016/j.jmva.2014.04.002> and Chiani (2016) <DOI:10.1016/j.jmva.2015.10.007>.
+Depends: R (>= 4.0.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: yes
+LinkingTo: Rcpp, RcppEigen, BH
+Imports: Rcpp
+Suggests: tinytest, knitr, rmarkdown, rWishart, corpcor
+VignetteBuilder: knitr
+URL: https://github.com/stepanv1/rootWishartHD
+BugReports: https://github.com/stepanv1/rootWishartHD/issues
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-07 03:04:50 UTC; sgrinek
+Author: Stepan Grinek [aut, cre],
+  Maxime Turgeon [ctb] (Original rootWishart package codebase)
+Maintainer: Stepan Grinek <stepan.grinek@jax.org>
+Repository: CRAN
+Date/Publication: 2026-07-16 12:40:02 UTC

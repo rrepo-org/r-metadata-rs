@@ -1,0 +1,33 @@
+Package: DESNP
+Type: Package
+Title: Differentially Expressed Single Nucleotide Polymorphism
+Version: 0.1.0
+Authors@R: 
+  c(
+    person("Sayanti", "Guha Majumdar", role = c("aut", "cre"), email = "sayanti23gm@gmail.com"),
+    person("Saima", "Bano", role = "aut", email = "saimabano291019@gmail.com"),
+	person("Nandita", "Banerjee", role = "aut", email = "nanditapatra@gmail.com"),
+	person("Rahul Kumar", "Tiwari", role = "aut", email = "rahultiwari226@gmail.com"),
+	person("Dipro", "Sinha", role = "aut", email = "diprosinha@gmail.com"),
+	person("Subham", "Ghosh", role = "aut", email = "search4aghosh@gmail.com"),
+	person("Sanjeev", "Kumar", role = "aut", email = "sanjeeviivr@gmail.com")
+  )
+Maintainer: Sayanti Guha Majumdar <sayanti23gm@gmail.com>
+Description: Provides a framework for the identification and analysis of Differentially Expressed Single Nucleotide Polymorphisms (deSNPs) using high-throughput sequencing data. It enables users to import SNP count data from variant files, perform allele-specific read count extraction, and statistically detect SNPs showing significant differences in allele expression between biological conditions or sample groups. This package contains tools for calculating SNP-index and Delta SNP-index from VCF-derived allele depth data with statistical testing and filtering, including sliding-window analysis of genomic regions.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: vcfR, dplyr, tidyr, magrittr, tidyselect, VGAM, stats, utils,
+        GenomicRanges, IRanges, S4Vectors, GenomeInfoDb, tools, ggplot2
+NeedsCompilation: no
+Packaged: 2026-03-16 11:54:30 UTC; HP
+RoxygenNote: 7.3.3
+Author: Sayanti Guha Majumdar [aut, cre],
+  Saima Bano [aut],
+  Nandita Banerjee [aut],
+  Rahul Kumar Tiwari [aut],
+  Dipro Sinha [aut],
+  Subham Ghosh [aut],
+  Sanjeev Kumar [aut]
+Repository: CRAN
+Date/Publication: 2026-03-19 15:00:22 UTC

@@ -1,0 +1,35 @@
+Package: panelTool
+Type: Package
+Title: Build Regularly Spaced Panels from Irregularly Spaced
+        Longitudinal Data
+Version: 0.1.0
+Date: 2026-07-17
+Authors@R: c(
+    person(given="Xiaoran", family="Tong", role=c("aut", "cre"),
+    email="xiaoran.tong.cn@gmail.com",
+    comment = c(ORCID = "0000-0002-4648-3330")))
+Description: Aligns irregularly timed longitudinal observations to regular panel
+    schedules. Each observation on a subject serves as a potential baseline, and
+    all later observations are aligned to the nearest panel with minimal delay.
+    The package provides tools to: (1) build a panel book documenting alignments
+    and delays, (2) organize variables in longitudinal data to wide-format panel
+    matrices, (3) summarize alignment quality and panel coverage. Ideal for
+    cross-lagged panel analysis, clinical trials with variable visit schedules,
+    and Electronic Health Record harmonization.
+License: GPL (>= 3)
+URL: https://github.com/xiaoran831213/panelTool
+BugReports: https://github.com/xiaoran831213/panelTool/issues
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+Collate: 'pkg.R' 'dat.R' 'utl.R' 'tls.R'
+Config/roxygen2/version: 8.0.0
+LazyData: true
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-23 11:17:55 UTC; xt
+Author: Xiaoran Tong [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4648-3330>)
+Maintainer: Xiaoran Tong <xiaoran.tong.cn@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-03 17:50:06 UTC

@@ -1,0 +1,26 @@
+Package: supabaseR
+Title: 'CRUD' Utils in 'R' for 'Supabase'
+Version: 1.0.0
+Authors@R: c(
+    person("Deepansh", "Khurana", , "deepanshkhurana@outlook.com", role = c("aut", "cre")),
+    person("Maciej", "Banas", , "banasmaciek@gmail.com", role = "aut")
+  )
+Description: An dual-paradigm interface to 'Supabase' (<https://supabase.com/>), an open-source backend-as-a-service platform. Provides comprehensive database operations including Create, Read, Update, Delete ('CRUD') functionality through both REST API endpoints and direct 'PostgreSQL' database connections. Simplifies authentication, data management, and schema operations for 'Supabase' projects.
+License: MIT + file LICENSE
+URL: https://deepanshkhurana.github.io/supabaseR/,
+        https://github.com/DeepanshKhurana/supabaseR
+BugReports: https://github.com/DeepanshKhurana/supabaseR/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: checkmate, cli, DBI, dplyr, glue, httr2, RPostgres
+Suggests: jsonlite, mockery, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-15 10:45:17 UTC; deepanshkhurana
+Author: Deepansh Khurana [aut, cre],
+  Maciej Banas [aut]
+Maintainer: Deepansh Khurana <deepanshkhurana@outlook.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-04-21 18:10:09 UTC

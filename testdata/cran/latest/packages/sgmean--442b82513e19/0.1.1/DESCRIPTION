@@ -1,0 +1,32 @@
+Package: sgmean
+Type: Package
+Title: Proportional Trimmed Mean
+Version: 0.1.1
+Date: 2026-07-27
+Authors@R: person("Juan C.", "Gaviria-Chaverra",
+    email = "jcarlos.gaviria@udea.edu.co",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0009-0008-9403-416X"))
+Description: Computes a proportional trimmed mean that resolves the
+    integer truncation problem of base R's mean(..., trim). When
+    k = trim * n is non-integer, a fractional discount (1 - delta) is
+    applied to boundary observations, where delta = k - floor(k).
+    The resulting estimator is continuous in alpha for any fixed n,
+    syntactically identical to mean(..., trim), and compatible with
+    the 'Statgraphics' implementation. See Gaviria Chaverra (2026)
+    <doi:10.32614/CRAN.package.sgmean>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/jcarlosgaviria/sgmean
+BugReports: https://github.com/jcarlosgaviria/sgmean/issues
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-29 17:23:13 UTC; Personal
+Author: Juan C. Gaviria-Chaverra [aut, cre] (ORCID:
+    <https://orcid.org/0009-0008-9403-416X>)
+Maintainer: Juan C. Gaviria-Chaverra <jcarlos.gaviria@udea.edu.co>
+Repository: CRAN
+Date/Publication: 2026-07-29 22:20:09 UTC

@@ -1,0 +1,38 @@
+Package: OnAge
+Title: Test of Between-Group Differences in the Onset of Senescence
+Version: 1.0.2
+Authors@R: c(
+   person("Laurent", "Jacob", role = "aut"),
+   person("Frédéric", "Douhard", role = "aut", comment = c(ORCID = "0000-0002-8503-1089")),
+   person("Jean-François", "Lemaître", role = "aut"),
+   person("Jean-Michel", "Gaillard", role = "aut", comment = c(ORCID = "0000-0003-0174-8451")),
+   person("Aurélie", "Siberchicot", role = c("ctb", "cre"), email = "aurelie.siberchicot@univ-lyon1.fr", comment = c(ORCID = "0000-0002-7638-8318"))
+	)
+Description: Implementation of a likelihood ratio test of differential
+    onset of senescence between two groups. Given two groups with
+    measures of age and of an individual trait likely to be subjected to
+    senescence (e.g. body mass), 'OnAge' provides an asymptotic p-value
+    for the null hypothesis that senescence starts at the same age in
+    both groups. The package implements the procedure used in 
+    Douhard et al. (2017) <doi:10.1111/oik.04421>.
+URL: https://lbbe.univ-lyon1.fr/fr/onage
+BugReports: https://gitlab.in2p3.fr/lbbe/onage/-/issues
+License: GPL-3
+LazyLoad: yes
+Imports: stats
+Suggests: lme4
+Depends: R (>= 3.0.0)
+NeedsCompilation: no
+BuildVignettes: true
+Encoding: UTF-8
+Packaged: 2025-09-02 08:15:30 UTC; siberchicot
+Author: Laurent Jacob [aut],
+  Frédéric Douhard [aut] (ORCID: <https://orcid.org/0000-0002-8503-1089>),
+  Jean-François Lemaître [aut],
+  Jean-Michel Gaillard [aut] (ORCID:
+    <https://orcid.org/0000-0003-0174-8451>),
+  Aurélie Siberchicot [ctb, cre] (ORCID:
+    <https://orcid.org/0000-0002-7638-8318>)
+Maintainer: Aurélie Siberchicot <aurelie.siberchicot@univ-lyon1.fr>
+Repository: CRAN
+Date/Publication: 2025-09-02 08:50:16 UTC

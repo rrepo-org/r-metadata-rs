@@ -1,0 +1,44 @@
+Package: MineSDG
+Title: Mining Industry SDG Impact Calculator
+Version: 0.4.0
+Authors@R: 
+    person("Manoj", "Kumar", email = "ekumarmanoj@gmail.com", role = c("aut", "cre"))
+Description: Provides tools to calculate quantitative scores for the United Nations
+    Sustainable Development Goals (SDGs) for the mining, minerals and metals
+    sector. Retrieves official indicator data from the 'United Nations SDG API',
+    runs trend, stability, benchmarking and convergence diagnostics, maps
+    indicators to mining-sector materiality domains via a bundled ontology,
+    computes site-level Key Performance Indicators (KPIs) aligned with Global
+    Reporting Initiative (GRI) 11, International Council on Mining and Metals
+    (ICMM) Mining Principles and Sustainability Accounting Standards Board
+    (SASB) EM-MM conventions, scores sites on a 0-100 SDG scorecard, and
+    ships an interactive 'shiny' dashboard with demonstration datasets. An
+    Environmental, Social and Governance (ESG) reporting layer generates
+    Global Reporting Initiative (GRI), International Council on Mining and
+    Metals (ICMM) and Business Responsibility and Sustainability Reporting
+    (BRSR) reports from a disclosure bundle interface, with framework
+    mappings shipped as data and rendering to 'HTML', 'PDF', 'Word' and
+    'Excel' via 'Quarto' and 'openxlsx2'. Official Sustainable Development
+    Goals information and indicator methodology are available from the
+    United Nations Sustainable Development Goals website <https://sdgs.un.org/goals>.
+URL: https://imanojkumar.github.io/MineSDG/
+BugReports: https://github.com/imanojkumar/MineSDG/issues/
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: httr2 (>= 1.0.0), data.table (>= 1.15.0), dplyr, ggplot2,
+        stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, shiny, DT, quarto,
+        openxlsx2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+SystemRequirements: Quarto CLI (>= 1.4) (optional, for report
+        rendering)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-30 19:57:14 UTC; aadhy
+Author: Manoj Kumar [aut, cre]
+Maintainer: Manoj Kumar <ekumarmanoj@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 17:20:21 UTC

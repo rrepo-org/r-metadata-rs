@@ -1,0 +1,42 @@
+Package: sealeveltools
+Type: Package
+Title: Sea Level Adjustment and Coastal Terrain Modeling
+Version: 0.3.0
+Date: 2026-07-03
+Imports: grDevices, terra
+Maintainer: Jovan Kovačević <jkovacevic@grf.bg.ac.rs>
+Authors@R: c(
+    person(
+      "Jovan", "Kovačević",
+      role = c("aut", "cre"),
+      email = "jkovacevic@grf.bg.ac.rs",
+      comment = c(ORCID="0000-0001-9980-5797")
+    ),
+    person(
+      "Christopher", "Nuttall",
+      role = c("aut"),
+      email = "chris.nuttall@sia.gr",
+      comment = c(ORCID="0000-0003-2679-9677"),
+    )
+  )
+Description: Simulates sea-level rise and fall from raster-based elevation models 
+    through functions for relative vertical datum transformation of Digital 
+    Terrain Models (DTMs) and integration with bathymetric data to produce 
+    continuous terrestrial–marine Digital Elevation Models (DEMs). Supports 
+    coastal exposure modeling, paleogeographic reconstruction, submerged landscape 
+    analysis, and climate change impact assessment. Optional gap-filling and 
+    threshold-based terrain filtering facilitate reconstruction of incomplete 
+    elevation surfaces and scenario-based landscape simulation. 
+    Applications span coastal engineering, geomorphology, archaeology, 
+    environmental modeling, and geospatial analysis.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-03 20:28:40 UTC; Administrator
+Author: Jovan Kovačević [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9980-5797>),
+  Christopher Nuttall [aut] (ORCID:
+    <https://orcid.org/0000-0003-2679-9677>)
+Repository: CRAN
+Date/Publication: 2026-07-10 20:50:12 UTC

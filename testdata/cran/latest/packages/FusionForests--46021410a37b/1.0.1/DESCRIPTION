@@ -1,0 +1,32 @@
+Package: FusionForests
+Type: Package
+Title: Bayesian Tree Ensembles for Data Fusion and Causal Inference
+Version: 1.0.1
+Date: 2026-08-01
+Authors@R: c(person("Tijn", "Jacobs", role = c("aut", "cre"), 
+                    email = "t.jacobs@vu.nl", 
+                    comment = c(ORCID = "0009-0003-6188-9296")))
+Maintainer: Tijn Jacobs <t.jacobs@vu.nl>
+Description: Bayesian tree ensemble models for data fusion and causal inference.
+  The main model FusionForest() combines data from a randomised controlled
+  trial and an observational study using separate tree forests, allowing for
+  unmeasured confounding in the observational data. Continuous and
+  (interval-)censored survival outcomes are supported. Posterior summaries of
+  treatment effect estimates and interpretable linear projections are
+  provided.
+URL: https://github.com/tijn-jacobs/FusionForests
+BugReports: https://github.com/tijn-jacobs/FusionForests/issues
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: Rcpp, ShrinkageTrees
+LinkingTo: Rcpp (>= 1.0.11)
+Suggests: survival, testthat (>= 3.0.0)
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-08-01 16:49:27 UTC; tijnjacobs
+Author: Tijn Jacobs [aut, cre] (ORCID: <https://orcid.org/0009-0003-6188-9296>)
+Repository: CRAN
+Date/Publication: 2026-08-09 06:40:10 UTC

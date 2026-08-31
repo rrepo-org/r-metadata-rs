@@ -1,0 +1,34 @@
+Package: showtext
+Type: Package
+Title: Using Fonts More Easily in R Graphs
+Version: 0.9-8
+Date: 2026-03-21
+Authors@R: c(
+    person("Yixuan", "Qiu", , "yixuan.qiu@cos.name", c("aut", "cre")),
+    person("Dave", "Raggett", , "dsr@w3.org", "ctb",
+           comment = "UTF-8 library. See the AUTHORS file for details")
+    )
+Description: Making it easy to use various types of fonts ('TrueType',
+    'OpenType', Type 1, web fonts, etc.) in R graphs, and supporting most output
+    formats of R graphics including PNG, PDF and SVG. Text glyphs will be converted
+    into polygons or raster images, hence after the plot has been created, it no
+    longer relies on the font files. No external software such as 'Ghostscript' is
+    needed to use this package.
+Depends: sysfonts (>= 0.7.1), showtextdb (>= 2.0)
+Imports: grDevices
+Suggests: knitr, rmarkdown, prettydoc, curl, jsonlite
+SystemRequirements: zlib, libpng, FreeType
+URL: https://github.com/yixuan/showtext
+BugReports: https://github.com/yixuan/showtext/issues
+License: Apache License (>= 2.0)
+Copyright: see file COPYRIGHTS
+VignetteBuilder: knitr, rmarkdown
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2026-03-21 05:34:29 UTC; qyx
+Author: Yixuan Qiu [aut, cre],
+  Dave Raggett [ctb] (UTF-8 library. See the AUTHORS file for details)
+Maintainer: Yixuan Qiu <yixuan.qiu@cos.name>
+Repository: CRAN
+Date/Publication: 2026-03-21 06:40:02 UTC

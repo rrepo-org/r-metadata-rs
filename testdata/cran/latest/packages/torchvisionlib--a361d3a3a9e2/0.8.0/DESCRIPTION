@@ -1,0 +1,29 @@
+Package: torchvisionlib
+Title: Additional Operators for Image Models
+Version: 0.8.0
+Authors@R: c(
+    person("Daniel", "Falbel", , "daniel@rstudio.com", role = "aut"),
+    person("Tomasz", "Kalinowski", , "tomasz@posit.co", role = c("ctb", "cre")),
+    person(family = "RStudio", role = "cph")
+    )
+Description: Implements additional operators for computer vision models, including
+    operators necessary for image segmentation and object detection deep learning
+    models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 3.6)
+LinkingTo: Rcpp, torch
+Imports: Rcpp, torch (>= 0.17.0), rlang, glue, withr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/mlverse/torchvisionlib
+BugReports: https://github.com/mlverse/torchvisionlib/issues
+NeedsCompilation: yes
+Packaged: 2026-04-14 16:56:19 UTC; dfalbel
+Author: Daniel Falbel [aut],
+  Tomasz Kalinowski [ctb, cre],
+  RStudio [cph]
+Maintainer: Tomasz Kalinowski <tomasz@posit.co>
+Repository: CRAN
+Date/Publication: 2026-04-15 07:00:02 UTC

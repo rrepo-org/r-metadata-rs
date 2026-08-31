@@ -1,0 +1,34 @@
+Package: WCRBayesDesign
+Type: Package
+Title: Bayesian Two-Stage Design with Window-Cohort and Controlled
+        Roll-on for Time-to-Event Estimand
+Version: 1.0.1
+Authors@R: c(
+      person("Zhongheng", "Cai", email = "zhonghengcai123@gmail.com", role = c("aut", "cre")),
+      person("Haitao", "Pan", email = "Haitao.Pan@STJUDE.ORG", role = "aut")
+    )
+Description: 
+    Calibrates Bayesian two-stage designs for single-arm phase II trials with
+    time-to-event endpoints using a window-cohort with controlled roll-on.
+    Interim monitoring is anchored to a locked interim cohort and a
+    pre-specified follow-up requirement, so analysis timing remains
+    predictable while preserving follow-up maturity. The package searches
+    feasible interim rules, optimizes final sample size and decision
+    thresholds, evaluates operating characteristics by Monte Carlo simulation,
+    and supports exponential, Weibull, log-normal, log-logistic, and
+    user-defined baseline survival models. Related published foundations
+    include Simon (1989) <doi:10.1016/0197-2456(89)90015-9> and Cotterill and
+    Whitehead (2015) <doi:10.1002/sim.6426>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.4.0)
+Imports: foreach, doParallel, stats, parallel
+Suggests: devtools, roxygen2, knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-04 20:28:18 UTC; zcai13
+Author: Zhongheng Cai [aut, cre],
+  Haitao Pan [aut]
+Maintainer: Zhongheng Cai <zhonghengcai123@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-10 10:00:08 UTC

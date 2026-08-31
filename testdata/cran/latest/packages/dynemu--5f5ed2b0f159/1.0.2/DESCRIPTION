@@ -1,0 +1,17 @@
+Package: dynemu
+Title: Emulation of Dynamic Simulators via One-Step-Ahead Approach
+Version: 1.0.2
+Authors@R: 
+    person(given="Junoh", family="Heo", role=c("aut", "cre"), email="heojunoh@msu.edu")
+Maintainer: Junoh Heo <heojunoh@msu.edu>
+Description: Performs emulation of dynamic simulators using Gaussian process via one-step ahead approach. The package implements a flexible framework for approximating time-dependent outputs from computationally expensive dynamic systems. It is specifically designed for nonlinear dynamic systems where full simulations may be costly. The underlying Gaussian process model accounts for temporal dependency through the one-step-ahead formulation, allowing for accurate emulation of complex dynamics. Hyperparameters are estimated via maximum likelihood. For methodological details, see Heo (2025, <doi:10.48550/arXiv.2503.20250>) for exact method, and Mohammadi, Challenor, and Goodfellow (2019, <doi:10.1016/j.csda.2019.05.006>) for Monte Carlo method. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: deSolve, plgp, stats, utils, MASS
+Suggests: lhs
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-08-11 06:45:03 UTC; junoh
+Author: Junoh Heo [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-08-18 19:40:02 UTC

@@ -1,0 +1,43 @@
+Package: LPStimeSeries
+Version: 1.1-0
+Date: 2026-04-12
+Title: Learned Pattern Similarity and Representation for Time Series
+Authors@R: c(
+    person(given = c("Mustafa", "Gokce"), family = "Baydogan",
+           role = c("aut", "cre"), email = "baydoganmustafa@gmail.com"),
+    person(given = "Leo", family = "Breiman", role = "ctb",
+           comment = "author of original Fortran code adapted in src/regTree.c"),
+    person(given = "Adele", family = "Cutler", role = "ctb",
+           comment = "co-author of original Fortran code"),
+    person(given = "Andy", family = "Liaw", role = "ctb",
+           comment = "author of 'randomForest' R port adapted here"),
+    person(given = "Matthew", family = "Wiener", role = "ctb",
+           comment = "co-author of 'randomForest' R port"),
+    person("Merck & Co., Inc.", role = "cph",
+           comment = "copyright holder of adapted 'randomForest' C code"))
+Depends: R (>= 3.5.0)
+Imports: stats, graphics, grDevices, RColorBrewer
+Description: Learned Pattern Similarity (LPS) for time series, as described
+    in Baydogan and Runger (2016) <doi:10.1007/s10618-015-0425-y>.
+    Implements an approach to model the dependency structure in time
+    series that generalizes the concept of autoregression to local
+    auto-patterns. Generates a pattern-based representation of time
+    series along with a similarity measure called Learned Pattern
+    Similarity (LPS). Introduces a generalized autoregressive kernel.
+    This package adapts C code from the 'randomForest' package by
+    Andy Liaw and Matthew Wiener, itself based on original Fortran
+    code by Leo Breiman and Adele Cutler.
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2026-04-16 22:24:23 UTC; baydogan
+Author: Mustafa Gokce Baydogan [aut, cre],
+  Leo Breiman [ctb] (author of original Fortran code adapted in
+    src/regTree.c),
+  Adele Cutler [ctb] (co-author of original Fortran code),
+  Andy Liaw [ctb] (author of 'randomForest' R port adapted here),
+  Matthew Wiener [ctb] (co-author of 'randomForest' R port),
+  Merck & Co., Inc. [cph] (copyright holder of adapted 'randomForest' C
+    code)
+Maintainer: Mustafa Gokce Baydogan <baydoganmustafa@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 19:12:23 UTC

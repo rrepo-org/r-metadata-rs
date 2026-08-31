@@ -1,0 +1,43 @@
+Package: statAfrikR
+Title: Statistical Tools for African National Statistics Institutes
+Version: 0.1.0
+Authors@R: person(
+    given   = "Dikers",
+    family  = "Amoko",
+    role    = c("aut", "cre"),
+    email   = "diamoko@gmail.com",
+    comment = c(ORCID = "")
+  )
+Description: A comprehensive statistical toolbox for National Statistics
+    Institutes (INS) in Africa. Provides functions for survey data import
+    ('KoboToolbox', 'ODK', 'CSPro', 'Excel', 'Stata', 'SPSS'), data
+    processing and validation, weighted statistical analysis (descriptive
+    statistics, cross-tabulations, regression, Human Development Index (HDI),
+    Multidimensional Poverty Index (MPI) following Alkire and Foster (2011)
+    <doi:10.1093/oep/gpr051>, inequalities), visualization (age pyramids,
+    thematic maps, official charts) and dissemination ('SDMX' export, 'DDI'
+    metadata, anonymization, Word/PDF reports). Designed to work in
+    resource-constrained environments, offline and in French.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Language: fr
+URL: https://github.com/damoko2004/statAfrikR
+BugReports: https://github.com/damoko2004/statAfrikR/issues
+Depends: R (>= 4.2.0)
+Imports: dplyr (>= 1.1.0), forcats (>= 1.0.0), ggplot2 (>= 3.4.0),
+        haven (>= 2.5.0), readr (>= 2.1.0), readxl (>= 1.4.0), rlang
+        (>= 1.1.0), scales (>= 1.2.0), stringr (>= 1.5.0), survey (>=
+        4.1.0), tibble (>= 3.1.0), tidyr (>= 1.3.0)
+Suggests: flextable (>= 0.9.0), httr2 (>= 0.2.0), jsonlite (>= 1.8.0),
+        officer (>= 0.6.0), openxlsx2 (>= 0.8.0), sf (>= 1.0.0), srvyr
+        (>= 1.1.0), testthat (>= 3.0.0), rmarkdown (>= 2.20), withr (>=
+        2.5.0), knitr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-30 20:25:08 UTC; dickersamoko
+Author: Dikers Amoko [aut, cre]
+Maintainer: Dikers Amoko <diamoko@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-03 08:20:08 UTC

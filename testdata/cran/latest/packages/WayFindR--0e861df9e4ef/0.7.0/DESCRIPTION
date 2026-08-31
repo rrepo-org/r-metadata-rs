@@ -1,0 +1,25 @@
+Package: WayFindR
+Version: 0.7.0
+Date: 2026-01-08
+Title: Computing Graph Structures on WikiPathways
+Authors@R: c(person("Kevin R.", "Coombes", role = c("aut", "cre"),
+                    email = "krc@silicovore.com"),
+             person("Polina", "Bombina", role = c("aut"),
+	            email = "pbombina@augusta.edu"))
+Description: Converts pathways from 'WikiPathways' GPML format or
+  'KEGG' KGML format into 'igraph' objects. Includes tools to find all
+  cycles in the resulting graphs and determine which ones involve
+  negative feedback (inhibition).
+Depends: R (>= 3.5)
+Imports: graphics, utils, XML, igraph, KEGGREST, DescTools, Rgraphviz
+Suggests: knitr, rmarkdown, Polychrome, AnnotationDbi, org.Hs.eg.db
+License: Artistic-2.0
+URL: http://oompa.r-forge.r-project.org/
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-08 19:01:23 UTC; KRC
+Author: Kevin R. Coombes [aut, cre],
+  Polina Bombina [aut]
+Maintainer: Kevin R. Coombes <krc@silicovore.com>
+Repository: CRAN
+Date/Publication: 2026-01-08 22:20:02 UTC

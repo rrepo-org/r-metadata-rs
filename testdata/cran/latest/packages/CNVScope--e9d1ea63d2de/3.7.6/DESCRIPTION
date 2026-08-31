@@ -1,0 +1,41 @@
+Package: CNVScope
+Type: Package
+Title: A Versatile Toolkit for Copy Number Variation Relationship Data
+        Analysis and Visualization
+Version: 3.7.6
+Date: 2026-07-04
+Authors@R: c(person(given = "James", family = "Dalgleish",
+                    role = c("aut", "cre"), email = "jamesdalg@gmail.com",
+                    comment = c("Alternate contact: james.dalgleish@keble.ox.ac.uk")),
+             person(given = "Yonghong", family = "Wang", role = "aut"),
+             person(given = "Jack", family = "Zhu", role = "aut"),
+             person(given = "Paul", family = "Meltzer", role = c("aut","sad") ))
+BugReports: https://github.com/jamesdalg/CNVScope/issues/
+Depends: R (>= 4.1.0),ggplot2
+Imports: tidyr,reshape2,magrittr, jointseg,shiny,RCurl,foreach,
+        Matrix,OpenImageR,matrixStats, plyr,data.table,dplyr,
+        doParallel,stringr,rtracklayer
+Suggests: knitr, remotes,pwr,ComplexHeatmap,rmarkdown,
+        igraph,visNetwork,circlize,plotly, biomaRt,GenomicInteractions,
+        InteractionSet,GenomicRanges,GenomicFeatures,IRanges,rslurm,
+        shinythemes,shinycssloaders,DT,logging,heatmaply,
+        S4Vectors,BiocManager,shinyjs,htmltools,htmlwidgets,
+        GenomeInfoDb,BSgenome.Hsapiens.UCSC.hg19,tibble,smoothie
+VignetteBuilder: knitr
+URL: https://github.com/jamesdalg/CNVScope/
+biocViews:
+Description: Provides the ability to create interaction maps, discover CNV map domains (edges), gene annotate interactions, and create interactive visualizations of these CNV interaction maps.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-04 07:53:44 UTC; jd
+Author: James Dalgleish [aut, cre] (Alternate contact:
+    james.dalgleish@keble.ox.ac.uk),
+  Yonghong Wang [aut],
+  Jack Zhu [aut],
+  Paul Meltzer [aut, sad]
+Maintainer: James Dalgleish <jamesdalg@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-04 10:10:26 UTC

@@ -1,0 +1,32 @@
+Package: fitnmr
+Version: 1.0
+Title: Multidimensional Nuclear Magnetic Resonance Peak Fitting and
+        Analysis
+Authors@R: c(person("Colin", "Smith", role=c("aut", "cre"),
+                    email = "colin.smith@wesleyan.edu"))
+Description: Tools for fitting and analyzing 1D-4D nuclear magnetic resonance
+    spectra with analytical models of peak shapes and peak groups. The
+    package reads spectra in 'NMRPipe' format, builds constrained
+    parameter structures for chemical shifts, line widths, scalar
+    couplings, volumes, and phases, and performs nonlinear
+    least-squares optimization for iterative peak discovery or
+    simultaneous fits across multiple spectra. It also provides methods
+    for visualization, preprocessing, and kinetic analysis of 1D
+    time-series data, including automated phase optimization, solvent
+    suppression, time-domain correction for frequency shifts and line
+    broadening, modeling spectra as linear combinations of two
+    component spectra, and exponential rate fitting.
+License: GPL-3
+URL: https://github.com/smith-group/fitnmr/,
+        https://smith-group.github.io/fitnmr/
+Imports: minpack.lm, abind, Matrix, methods
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, bookdown, gslnls
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-14 17:35:46 UTC; colin
+Author: Colin Smith [aut, cre]
+Maintainer: Colin Smith <colin.smith@wesleyan.edu>
+Repository: CRAN
+Date/Publication: 2026-03-19 14:50:29 UTC

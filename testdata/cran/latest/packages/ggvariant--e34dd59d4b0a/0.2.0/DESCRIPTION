@@ -1,0 +1,32 @@
+Package: ggvariant
+Title: Tidy, 'ggplot2'-Native Visualization for Genomic Variants
+Version: 0.2.0
+Authors@R: 
+    person("Joash Joshua", "Ayo", email = "joashjoshua789@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0007-1642-0172"))
+Description: A simple, opinionated toolkit for visualizing genomic variant
+    data using a 'ggplot2'-native grammar. Accepts VCF files or plain data
+    frames and produces lollipop plots, consequence summaries, mutational
+    spectrum charts, and cohort-level comparisons as standard 'ggplot2'
+    objects. Designed for both wet-lab biologists and experienced
+    bioinformaticians.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: ggplot2 (>= 3.4.0), cli (>= 3.6.0), scales (>= 1.3.0)
+Suggests: plotly (>= 4.10.0), testthat (>= 3.0.0), covr, knitr,
+        rmarkdown, vdiffr
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown, rmarkdown
+URL: https://github.com/josh45-source/ggvariant,
+        https://josh45-source.github.io/ggvariant/
+BugReports: https://github.com/josh45-source/ggvariant/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-20 11:21:56 UTC; Joshua
+Author: Joash Joshua Ayo [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-1642-0172>)
+Maintainer: Joash Joshua Ayo <joashjoshua789@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:43:32 UTC

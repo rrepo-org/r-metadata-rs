@@ -1,0 +1,32 @@
+Package: boe
+Title: Download Data from the 'Bank of England' Statistical Database
+Version: 0.4.0
+Authors@R: 
+    person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com",
+           role = c("aut", "cre"))
+Description: Provides functions to download and tidy statistical data
+    published by the 'Bank of England' <https://www.bankofengland.co.uk>.
+    Covers Bank Rate, 'SONIA', gilt yields, exchange rates, mortgage rates,
+    mortgage approvals, consumer credit, and money supply. Series are
+    fetched from the 'Bank of England Interactive Statistical Database'
+    using its CSV endpoint. Data is cached locally between sessions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+Imports: cli (>= 3.6.0), httr2 (>= 1.0.0), tools
+Suggests: testthat (>= 3.0.0), ggplot2, scales, readxl (>= 1.4.0),
+        knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://charlescoverdale.github.io/boe/,
+        https://github.com/charlescoverdale/boe
+BugReports: https://github.com/charlescoverdale/boe/issues
+Depends: R (>= 4.1.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-08-02 09:25:03 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-02 09:40:02 UTC

@@ -1,0 +1,28 @@
+Package: OSCARS
+Type: Package
+Title: Global Bounded Optimization by the OSCARS-II Algorithm
+Version: 0.1.2
+Maintainer: Chris Price <chrisj.price@canterbury.ac.nz>
+Authors@R: c(
+      person("Chris", "Price", email="chrisj.price@canterbury.ac.nz", role=c("aut", "cre"))
+    , person("Trent", "McDonald", role=c("aut","ctb"), email="trent@mcdonalddatasciences.com", comment="R packaging")
+    )
+Description: A collection of general optimization routines based on variants of 
+    the One Side Cut Accelerated Random Search (OSCARS-II) algorithm 
+    (Price et al., 2020, <doi:10.1007/s10898-020-00928-6>). The main function
+    , 'oscars()', performs black-box optimization of a general (including nonsmooth or 
+    discontinuous) function subject to simple bounds on the unknowns. If all bounds are 
+    finite, oscars searches globally. The main method implements a stochastic direct 
+    search method and is derivative free.   Testing shows the OSCARS-II algorithm 
+    usually finds extrema with fewer function evaluations than similar global 
+    derivative-free methods.
+License: Apache License (>= 2)
+Encoding: UTF-8
+Imports: stats
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-04 04:09:09 UTC; cjp64
+Author: Chris Price [aut, cre],
+  Trent McDonald [aut, ctb] (R packaging)
+Repository: CRAN
+Date/Publication: 2026-05-06 19:50:11 UTC

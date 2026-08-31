@@ -1,0 +1,49 @@
+Package: tidycensuskr
+Title: Easy Access for South Korea Census Data and Boundaries
+Version: 0.3.0
+Authors@R: c(
+    person(given = "Insang", 
+          family = "Song", 
+          role = c("aut", "cre"), 
+          email = "geoissong@snu.ac.kr", 
+          comment = c(ORCID = "0000-0001-8732-3256")),
+    person(given = "Sohyun", 
+          family = "Park", 
+          role = c("aut", "ctb"),
+          email = "wherewindstay@gmail.com",
+          comment = c(ORCID = "0000-0002-1231-5662")),
+    person(given = "Hyesop", 
+          family = "Shin", 
+          role = c("aut", "ctb"),
+          email = "hyesop.shin@auckland.ac.nz",
+          comment = c(ORCID = "0000-0003-2637-7933"))
+          )
+Description: 
+    Census and administrative data in South Korea are a basic source of
+    quantitative and mixed-methods research for social and urban scientists.
+    This package provides a 'sf' (Pebesma et al., 2024 <doi:10.32614/CRAN.package.sf>) 
+    based standardized workflow based on direct open API access to the major census and
+    administrative data sources and pre-generated files in South Korea.
+License: MIT + file LICENSE
+LazyData: true
+Depends: R (>= 4.2.0)
+Imports: sf, dplyr, tidyr, kosis, utils, rlang
+Suggests: knitr, withr, purrr, rmarkdown, janitor, geofacet, ggplot2,
+        biscale, cowplot, tmap, geodata, testthat (>= 3.0.0),
+        ggspatial, spdep
+Config/testthat/edition: 3
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://github.com/sigmafelix/tidycensuskr,
+        https://sigmafelix.github.io/tidycensuskr/,
+        https://sigmafelix.r-universe.dev/tidycensuskr/
+BugReports: https://github.com/sigmafelix/tidycensuskr/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-23 05:43:22 UTC; isong
+Author: Insang Song [aut, cre] (ORCID: <https://orcid.org/0000-0001-8732-3256>),
+  Sohyun Park [aut, ctb] (ORCID: <https://orcid.org/0000-0002-1231-5662>),
+  Hyesop Shin [aut, ctb] (ORCID: <https://orcid.org/0000-0003-2637-7933>)
+Maintainer: Insang Song <geoissong@snu.ac.kr>
+Repository: CRAN
+Date/Publication: 2026-07-23 06:20:02 UTC

@@ -1,0 +1,41 @@
+Package: terralink
+Title: Connectivity Corridor Optimization for Raster and Vector Data
+Version: 1.8.2
+Authors@R: 
+    c(
+      person(
+        given = "Benjamin",
+        family = "Bishop",
+        email = "benjamin.bishop@sorusconsultingllc.com",
+        role = c("aut", "cre")
+      ),
+      person(
+        given = "SORUS Consulting LLC",
+        role = c("fnd", "cph")
+      )
+    )
+Description: Standalone R implementation of habitat connectivity corridor
+    optimization for raster and vector workflows. Supports scenario-based
+    planning with budget-constrained optimization, optional impassable
+    areas, packaged parity fixtures, and comparative before-and-after
+    connectivity metrics. The package exposes structural,
+    movement-oriented, and species-oriented strategies in a reproducible
+    workflow aligned with a companion GIS plugin while avoiding a
+    desktop GIS dependency.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/sorus-tools/terralink-r
+BugReports: https://github.com/sorus-tools/terralink-r/issues
+Imports: cli, igraph, R6, sf, stars, terra
+Suggests: gdistance, ggplot2, knitr, lwgeom, raster, rmarkdown, sp,
+        shiny, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-22 00:24:14 UTC; benbishop
+Author: Benjamin Bishop [aut, cre],
+  SORUS Consulting LLC [fnd, cph]
+Maintainer: Benjamin Bishop <benjamin.bishop@sorusconsultingllc.com>
+Repository: CRAN
+Date/Publication: 2026-08-22 02:40:02 UTC

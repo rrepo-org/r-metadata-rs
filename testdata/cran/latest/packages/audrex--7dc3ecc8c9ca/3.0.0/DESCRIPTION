@@ -1,0 +1,22 @@
+Package: audrex
+Type: Package
+Title: Automatic Dynamic Regression using Extreme Gradient Boosting
+Version: 3.0.0
+Authors@R: c(person("Giancarlo", "Vercellino", role = c("aut", "cre", "cph"), email = "giancarlo.vercellino@gmail.com"))
+Maintainer: Giancarlo Vercellino <giancarlo.vercellino@gmail.com>
+Description: Dynamic regression for time series using Extreme Gradient Boosting with hyper-parameter tuning via Bayesian Optimization or Random Search.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: xgboost (>= 3.1.2.1), imputeTS (>= 3.4), graphics (>= 4.5.1),
+        grDevices (>= 4.5.1)
+URL: https://rpubs.com/giancarlo_vercellino/audrex
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-07 08:45:32 UTC; gianc
+Author: Giancarlo Vercellino [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2026-01-07 20:00:02 UTC

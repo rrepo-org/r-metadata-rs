@@ -1,0 +1,40 @@
+Package: RESI
+Type: Package
+Title: Robust Effect Size Index (RESI) Estimation
+Version: 1.5.1
+Authors@R: 
+  c(person('Megan', 'Jones', email='megan.n.taylor@vanderbilt.edu', role=c('aut')),
+  person('Kaidi', 'Kang', email = 'kaidi.kang@vanderbilt.edu', role = c('aut')),
+  person('Simon', 'Vandekar', email='simon.vandekar@vumc.org', role=c('aut', 'cre')),
+  person('Gina', 'Yu', email='gina.l.yu@vanderbilt.edu', role=c('ctb')),
+  person('Xinyu', 'Zhang', email='xinyu.zhang@vanderbilt.edu', role=c('ctb')))
+Description: Summarize model output using a robust effect size index. The index is introduced in Vandekar, Tao, & Blume (2020, <doi:10.1007/s11336-020-09698-2>). Software paper available at <doi:10.18637/jss.v112.i03>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Collate: 'internal_functions.R' 'summary.resi.R' 'resi.R' 'resi_pe.R'
+        'Anova.resi.R' 'data.R' 'chisq2S.R' 'f2S.R' 't2S.R' 'z2S.R'
+        'Rsq2S.R' 'S2Rsq.R' 'S2d.R' 'S2fsq.R' 'S2z.R' 'S2chisq.R'
+        'd2S.R' 'fsq2S.R' 'plot.R' 'ggplot.R' 'print.R' 'omnibus.R'
+        'simulations.R' 'resi_asymptotic.R'
+Imports: aod, boot, car, clubSandwich, CompQuadForm, ggplot2, lmtest,
+        nlme, parallel, sandwich, splines
+Suggests: gee, geepack, robustbase, glmmTMB, glmtoolbox, knitr, lme4,
+        pscl, R.rsp, regtools, rmarkdown, survival, tibble, testthat
+        (>= 3.0.0)
+RoxygenNote: 7.3.3
+Depends: R (>= 2.10)
+Config/testthat/edition: 3
+URL: https://statimagcoll.github.io/RESI/,
+        https://github.com/statimagcoll/RESI
+BugReports: https://github.com/statimagcoll/RESI/issues
+NeedsCompilation: no
+Packaged: 2026-08-20 19:08:27 UTC; simon
+Author: Megan Jones [aut],
+  Kaidi Kang [aut],
+  Simon Vandekar [aut, cre],
+  Gina Yu [ctb],
+  Xinyu Zhang [ctb]
+Maintainer: Simon Vandekar <simon.vandekar@vumc.org>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:45:56 UTC

@@ -1,0 +1,55 @@
+Package: wqrr
+Type: Package
+Title: Wavelet Quantile Regression Toolbox
+Version: 1.0.0
+Authors@R: c(
+    person("Merwan", "Roudane",
+           email = "merwanroudane920@gmail.com",
+           role  = c("aut", "cre", "cph")),
+    person("Nicholas", "Sim", role = "ctb",
+           comment = "Original Quantile-on-Quantile methodology"),
+    person("Hongtao", "Zhou", role = "ctb",
+           comment = "Original Quantile-on-Quantile methodology"),
+    person("Tomiwa Sunday", "Adebayo", role = "ctb",
+           comment = "Wavelet Quantile Regression methodology"),
+    person("Mehmet", "Balcilar", role = "ctb",
+           comment = "Nonparametric quantile causality methodology"))
+Description: A comprehensive toolbox for wavelet-domain quantile
+    analyses of bivariate and multivariate time series. Provides Wavelet
+    Quantile Regression and Multivariate Wavelet Quantile Regression
+    after Adebayo and Ozkan (2024)
+    <doi:10.1016/j.jclepro.2024.140832>, Wavelet
+    Quantile-on-Quantile regression with bootstrap p-values extending
+    Sim and Zhou (2015) <doi:10.1016/j.jbankfin.2015.01.013>, the
+    nonparametric Causality-in-Quantiles test of Balcilar, Gupta and
+    Pierdzioch (2016) <doi:10.1016/j.resourpol.2016.04.004> together
+    with its wavelet variant, Wavelet Quantile Mediation and
+    Moderation, Wavelet Quantile Correlation, and a wavelet-based
+    nonparametric Quantile Density estimator. The Maximal Overlap
+    Discrete Wavelet Transform (MODWT) decomposition is performed via
+    'waveslim' and Short / Medium / Long band aggregation is supported
+    throughout. For plain Quantile-on-Quantile regression see the
+    companion CRAN package 'QuantileOnQuantile'. All interactive 3D
+    surfaces, heatmaps and contour plots default to the 'MATLAB'
+    'Parula' colour map.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+Imports: quantreg (>= 5.0), waveslim (>= 1.8), plotly (>= 4.0.0),
+        stats, utils, grDevices
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/merwanroudane/wqrr
+BugReports: https://github.com/merwanroudane/wqrr/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-01 19:02:19 UTC; HP
+Author: Merwan Roudane [aut, cre, cph],
+  Nicholas Sim [ctb] (Original Quantile-on-Quantile methodology),
+  Hongtao Zhou [ctb] (Original Quantile-on-Quantile methodology),
+  Tomiwa Sunday Adebayo [ctb] (Wavelet Quantile Regression methodology),
+  Mehmet Balcilar [ctb] (Nonparametric quantile causality methodology)
+Maintainer: Merwan Roudane <merwanroudane920@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-08 15:00:02 UTC

@@ -1,0 +1,54 @@
+Type: Package
+Package: duckspatial
+Title: R Interface to 'DuckDB' Database with Spatial Extension
+Version: 1.2.1
+Authors@R: c(
+    person(
+        "Adrián", "Cidre González", 
+        email = "adrian.cidre@gmail.com", 
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-3310-3052")
+    ),
+    person(
+        "Egor", "Kotov", , 
+        "kotov.egor@gmail.com", 
+        role = "aut",
+        comment = c(ORCID = "0000-0001-6690-5345")
+    ),
+    person(
+        "Rafael H. M.", "Pereira", , 
+        "rafa.pereira.br@gmail.com", 
+        role = "aut",
+        comment = c(ORCID = "0000-0003-2125-7465")
+    ))
+Description: Fast and memory-efficient functions to analyze and manipulate large
+             spatial datasets. It leverages the fast analytical
+             capabilities of ‘DuckDB’ and its spatial extension (see
+             <https://duckdb.org/docs/stable/core_extensions/spatial/overview>)
+             while maintaining compatibility with R’s spatial data ecosystem to
+             work with spatial vector data.
+URL: https://cidree.github.io/duckspatial/,
+        https://github.com/Cidree/duckspatial
+BugReports: https://github.com/Cidree/duckspatial/issues
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: arrow, cli, DBI, dbplyr (>= 2.0.0), dplyr, duckdb (>=
+        1.5.4.2), geoarrow, glue, jsonlite, lifecycle, nanoarrow,
+        rlang, sf, tibble, tools, units, uuid, withr, wk
+Suggests: areal, bench, duckdbfs, geojsonsf, ggplot2 (>= 3.3.1), knitr,
+        lwgeom, patchwork, quadkeyr, quarto, rmarkdown, scales, terra,
+        testthat (>= 3.0.0)
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-04 06:53:44 UTC; cidre
+Author: Adrián Cidre González [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3310-3052>),
+  Egor Kotov [aut] (ORCID: <https://orcid.org/0000-0001-6690-5345>),
+  Rafael H. M. Pereira [aut] (ORCID:
+    <https://orcid.org/0000-0003-2125-7465>)
+Maintainer: Adrián Cidre González <adrian.cidre@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-04 10:20:02 UTC

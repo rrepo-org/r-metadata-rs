@@ -1,0 +1,39 @@
+Package: isoreader2
+Title: Read Stable Isotope Data Files
+Version: 0.7.0
+Authors@R: 
+    c(
+        person(
+        given = "Sebastian", family = "Kopf", 
+        email = "sebastian.kopf@colorado.edu", 
+        role = c("aut", "cre"), 
+        comment = c(ORCID = "0000-0002-2044-0201"))
+    )
+Description: Interface to the raw data and metadata stored in the file formats
+    commonly encountered in scientific disciplines that make use of
+    stable isotopes. Supports Isodat (.dxf, .cf, .did, .caf, .scn),
+    IonOS (.iarc), LyticOS (.larc), Callisto (.bch), and Qtegra
+    (.imexp) file formats. Provides a consistent data structure together
+    with tools to aggregate, convert signal units, filter, and visualize the
+    extracted data. The approach is described in Kopf et al. (2021)
+    <doi:10.21105/joss.02878>.
+License: AGPL (>= 3)
+Encoding: UTF-8
+URL: https://isoreader2.isoverse.org/,
+        https://github.com/isoverse/isoreader2
+BugReports: https://github.com/isoverse/isoreader2/issues
+Depends: R (>= 4.5.0)
+Imports: ggplot2, tools, utils, methods, stats, rlang (>= 1.1.0), cli
+        (>= 3.6.0), lifecycle, processx, readr, tibble, dplyr, tidyr,
+        tidyselect, purrr, withr, RcppSimdJson, scales, fansi, knitr
+Suggests: testthat (>= 3.0.0), vdiffr, arrow, openxlsx, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-23 18:26:31 UTC; seko0922
+Author: Sebastian Kopf [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2044-0201>)
+Maintainer: Sebastian Kopf <sebastian.kopf@colorado.edu>
+Repository: CRAN
+Date/Publication: 2026-08-24 05:20:15 UTC

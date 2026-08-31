@@ -1,0 +1,50 @@
+Package: Pv3Rs
+Title: Estimate the Cause of Recurrent Vivax Malaria using Genetic Data
+Version: 1.0.0
+Authors@R: c(
+    person("Aimee", "Taylor", email = "aimee.taylor@pasteur.fr", 
+    role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0002-2337-8992")),
+    person("Yong See", "Foo", role = "aut", 
+    comment = c(ORCID = "0000-0003-3010-9106")),
+    person("Tymoteusz", "Kwiecinski", role = "com", comment = "compiled included macros.Rd"), 
+    person("Duncan", "Murdoch", role = "ctb", comment = "author of included macros.Rd"),
+    person("Mans", "Magnusson", role = "ctb", comment = "author of included msg_progress_bar.R"),
+    person("Institut Pasteur", role = "cph"),
+    person("European Union, Project 101110393", role = "fnd")
+  )
+Description: Plot malaria parasite genetic data on two or more episodes. 
+    Compute per-person posterior probabilities that each
+    Plasmodium vivax (Pv) recurrence is a recrudescence, relapse,
+    or reinfection (3Rs) using per-person P. vivax genetic data on two or
+    more episodes and a statistical model described in 
+    Taylor, Foo and White (2022) <doi:10.1101/2022.11.23.22282669>. 
+    Plot per-recurrence posterior probabilities. 
+License: GPL (>= 3)
+URL: https://aimeertaylor.github.io/Pv3Rs/,
+        https://github.com/aimeertaylor/Pv3Rs
+BugReports: https://github.com/aimeertaylor/Pv3Rs/issues
+Depends: R (>= 3.5)
+Imports: dplyr, fields, grDevices, igraph, matrixStats, methods,
+        multicool, partitions, purrr, RColorBrewer
+Suggests: codetools, gtools, knitr, Matrix, plyr, R.rsp, rmarkdown,
+        testthat (>= 3.0.0), tictoc, utils
+VignetteBuilder: knitr
+Config/Needs/website: rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-11-20 12:57:44 UTC; ataylor
+Author: Aimee Taylor [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2337-8992>),
+  Yong See Foo [aut] (ORCID: <https://orcid.org/0000-0003-3010-9106>),
+  Tymoteusz Kwiecinski [com] (compiled included macros.Rd),
+  Duncan Murdoch [ctb] (author of included macros.Rd),
+  Mans Magnusson [ctb] (author of included msg_progress_bar.R),
+  Institut Pasteur [cph],
+  European Union, Project 101110393 [fnd]
+Maintainer: Aimee Taylor <aimee.taylor@pasteur.fr>
+Repository: CRAN
+Date/Publication: 2025-11-20 13:10:02 UTC

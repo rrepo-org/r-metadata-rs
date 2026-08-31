@@ -1,0 +1,33 @@
+Package: mx.api
+Type: Package
+Title: Minimal Matrix Client-Server API
+Version: 0.3.0
+Date: 2026-06-10
+Authors@R: c(
+    person("Troy", "Hernandez", role = c("aut", "cre"),
+           email = "troy@cornball.ai",
+           comment = c(ORCID = "0009-0005-4248-604X")),
+    person("cornball.ai", role = "cph"))
+Description: A minimal-dependency client for the 'Matrix' Client-Server
+    HTTP API <https://spec.matrix.org/>, suitable for talking to a
+    'Synapse' <https://element-hq.github.io/synapse/> or 'Conduit'
+    <https://conduit.rs/> homeserver. Covers login, room management,
+    message send and history, media upload or download, and the
+    transport endpoints needed to coordinate end-to-end encryption
+    (device-key and one-time-key publication, key query and claim,
+    to-device events). Encryption itself is out of scope;
+    pair with a separate crypto package.
+License: MIT + file LICENSE
+URL: https://github.com/cornball-ai/mx.api
+BugReports: https://github.com/cornball-ai/mx.api/issues
+Imports: curl, jsonlite
+Suggests: tinytest
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-06-10 17:50:22 UTC; troy
+Author: Troy Hernandez [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-4248-604X>),
+  cornball.ai [cph]
+Maintainer: Troy Hernandez <troy@cornball.ai>
+Repository: CRAN
+Date/Publication: 2026-06-10 18:00:02 UTC

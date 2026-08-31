@@ -1,0 +1,31 @@
+Package: wikiprofiler
+Type: Package
+Title: Data Integration and Visualization on 'WikiPathways' Graphics
+Version: 0.1.7
+Authors@R: c(
+       person("Guangchuang", "Yu", email = "guangchuangyu@gmail.com", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-6485-8781")),
+       person("Yihao", "Chen",     email = "olivercyh@foxmail.com",   role = "aut")
+       )
+Description: Retrieves pathway graphics from 'WikiPathways' and maps
+    user-supplied quantitative data, such as gene expression values, onto
+    pathway nodes. Provides a pipe-friendly grammar for building pathway
+    visualizations with layered fills, text highlighting, condition-wise
+    comparisons, data preparation helpers, and batch rendering utilities.
+Imports: ggplot2, ggplotify, grDevices, grid, gson, methods, rsvg,
+        yulab.utils (>= 0.1.7)
+Suggests: clusterProfiler, DOSE, knitr, org.Hs.eg.db, quarto, rmarkdown
+VignetteBuilder: quarto
+ByteCompile: true
+License: Artistic-2.0
+URL: https://yulab-smu.top/contribution-knowledge-mining/
+BugReports: https://github.com/YuLab-SMU/wikiprofiler/issues
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-25 11:29:42 UTC; HUAWEI
+Author: Guangchuang Yu [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6485-8781>),
+  Yihao Chen [aut]
+Maintainer: Guangchuang Yu <guangchuangyu@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 12:20:02 UTC

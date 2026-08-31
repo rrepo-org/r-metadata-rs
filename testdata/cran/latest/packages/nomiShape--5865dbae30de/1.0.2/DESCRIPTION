@@ -1,0 +1,22 @@
+Package: nomiShape
+Title: Visualization and Analysis of Nominal Variable Distributions
+Version: 1.0.2
+Authors@R: 
+    person("Norberto", "Asensio", , "norberto.asensio@ehu.eus", role = c("aut", "cre"),comment =c(ORCID ="0000-0003-4536-5073"))
+Description: Provides tools for visualizing and analyzing the shape of discrete nominal frequency distributions. The package introduces centered frequency plots, in which nominal categories are ordered from the most frequent category at the center toward less frequent categories on both sides, facilitating the detection of distributional patterns such as uniformity, dominance, symmetry, skewness, and long-tail behavior. In addition, the package supports Pareto charts for the study of dominance and cumulative frequency structure in nominal data. The package is designed for exploratory data analysis and statistical teaching, offering visualizations that emphasize distributional form rather than arbitrary category ordering.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+LazyData: true
+Imports: dplyr, ggplot2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-21 18:26:31 UTC; norberello
+Author: Norberto Asensio [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4536-5073>)
+Maintainer: Norberto Asensio <norberto.asensio@ehu.eus>
+Repository: CRAN
+Date/Publication: 2026-03-21 18:40:02 UTC

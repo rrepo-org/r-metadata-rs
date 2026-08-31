@@ -1,0 +1,38 @@
+Package: RootscanR
+Title: Stitching and Analyzing Root Scans
+Version: 0.0.1
+Authors@R: c(
+    person("Sophie", "Kersting", , "sophie.kersting@uni-greifswald.de", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-1038-9246")),
+    person("Linda", "Knüver", , "", 
+    role = "aut"),
+    person("Mareike", "Fischer", , "mareike.fischer@uni-greifswald.de", 
+    role = "aut", comment = c(ORCID = "0000-0002-9429-0859"))
+  )
+Author: Sophie Kersting [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1038-9246>),
+  Linda Knüver [aut],
+  Mareike Fischer [aut] (ORCID: <https://orcid.org/0000-0002-9429-0859>)
+Maintainer: Sophie Kersting <sophie.kersting@uni-greifswald.de>
+Description: Minirhizotrons are widely used to observe and explore roots and
+    their growth. This package provides the means to stitch images and 
+    divide them into depth layers.
+    Please note that this R package was developed alongside the following 
+    manuscript:
+    Stitching root scans and extracting depth layer information -- a workflow 
+    and practical examples, S. Kersting, L. Knüver, and M. Fischer.
+    The manuscript is currently in preparation and should be citet as soon as 
+    it is available.
+    This project was supported by the project ArtIGROW, which is a part of the
+    WIR!-Alliance ArtIFARM –  Artificial Intelligence in Farming funded by the
+    German Federal Ministry of Research, Technology and Space (No. 03WIR4805).
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+Imports: stringr, grid, png, abind, parallel
+Suggests:
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+Packaged: 2025-10-27 12:40:26 UTC; Maus
+Repository: CRAN
+Date/Publication: 2025-10-30 20:00:02 UTC

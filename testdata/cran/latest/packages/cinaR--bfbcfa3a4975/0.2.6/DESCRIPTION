@@ -1,0 +1,43 @@
+Package: cinaR
+Type: Package
+Title: A Computational Pipeline for Bulk 'ATAC-Seq' Profiles
+Version: 0.2.6
+Authors@R: 
+    c(person(given = "Onur",
+             family = "Karakaslar",
+             role = c("aut", "cre"),
+             email = "eonurkara@gmail.com",
+             comment = c(ORCID = "0000-0002-9182-910X")),
+      person(given = "Duygu",
+             family = "Ucar",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-9772-3066"))
+      )
+Author: Onur Karakaslar [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9182-910X>),
+  Duygu Ucar [aut] (ORCID: <https://orcid.org/0000-0002-9772-3066>)
+Maintainer: Onur Karakaslar <eonurkara@gmail.com>
+Description: Differential analyses and Enrichment pipeline for bulk 'ATAC-seq' data
+  analyses. This package combines different packages to have an ultimate package
+  for both data analyses and visualization of 'ATAC-seq' data. Methods are described in 
+  'Karakaslar et al.' (2021) <doi:10.1101/2021.03.05.434143>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/eonurk/cinaR/, https://eonurk.github.io/cinaR/
+BugReports: https://github.com/eonurk/cinaR/issues/
+biocViews:
+Depends: R (>= 4.0.0)
+Imports: BiocManager, DESeq2, dplyr, edgeR, fgsea, GenomicRanges,
+        ggplot2, ggrepel, grDevices, limma, methods, utils, pheatmap,
+        preprocessCore, RColorBrewer, sva, writexl
+RoxygenNote: 7.2.3
+Suggests: ChIPseeker, knitr, Matrix, Seurat, rmarkdown, markdown,
+        TxDb.Hsapiens.UCSC.hg38.knownGene,
+        TxDb.Hsapiens.UCSC.hg19.knownGene,
+        TxDb.Mmusculus.UCSC.mm10.knownGene
+VignetteBuilder: knitr, rmarkdown, markdown
+NeedsCompilation: no
+Packaged: 2026-02-04 14:02:40 UTC; onur-lumc
+Repository: CRAN
+Date/Publication: 2026-02-04 14:50:02 UTC

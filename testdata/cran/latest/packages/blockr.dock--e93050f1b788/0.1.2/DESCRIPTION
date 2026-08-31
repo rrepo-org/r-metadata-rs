@@ -1,0 +1,45 @@
+Package: blockr.dock
+Title: A Docking Layout Manager for 'blockr'
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Nicolas",
+             family = "Bennett",
+             role = c("aut", "cre"),
+             email = "nicolas@cynkra.com"),
+      person(given = "David",
+             family = "Granjon",
+             role = c("aut"),
+             email = "david@cynkra.com")
+    )
+Description: Building on the docking layout manager provided by 'dockViewR',
+    this provides a flexible front-end to 'blockr.core'. It provides an extension mechanism which allows for providing means to manipulate a board
+    object via panel-based user interface components.
+URL: https://bristolmyerssquibb.github.io/blockr.dock/
+BugReports: https://github.com/BristolMyersSquibb/blockr.dock/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: blockr.core (>= 0.1.3), bsicons, shiny, shinyjs, bslib, glue,
+        dockViewR (>= 0.2.1), htmltools, cli, shinyWidgets, jsonlite,
+        utils
+Suggests: testthat (>= 3.0.0), DT, colorspace, methods, withr,
+        shinytest2, chromote, xml2, knitr, rmarkdown
+Config/testthat/edition: 3
+Collate: 'action-class.R' 'action-block.R' 'action-link.R'
+        'action-stack.R' 'action-ui.R' 'action-utils.R' 'block-meta.R'
+        'block-ui.R' 'board-plugins.R' 'board-server.R' 'board-ui.R'
+        'dock-board.R' 'dock-grid.R' 'dock-layout.R' 'dock-stack.R'
+        'dock-view.R' 'ext-class.R' 'ext-delta.R' 'ext-edit.R'
+        'ext-ui.R' 'panel-id.R' 'panel-ops.R' 'panel-ref.R'
+        'plugin-block.R' 'plugin-serdes.R' 'sidebar-server.R'
+        'sidebar-block.R' 'sidebar-link.R' 'sidebar-stack.R'
+        'utils-dock.R' 'utils-misc.R' 'utils-pkg.R' 'utils-serdes.R'
+        'utils-serve.R' 'utils-ui.R'
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-13 11:29:38 UTC; coder
+Author: Nicolas Bennett [aut, cre],
+  David Granjon [aut]
+Maintainer: Nicolas Bennett <nicolas@cynkra.com>
+Repository: CRAN
+Date/Publication: 2026-07-13 12:40:02 UTC

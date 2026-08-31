@@ -1,0 +1,24 @@
+Package: privacyR
+Type: Package
+Title: Privacy-Preserving Data Anonymization
+Version: 1.0.1
+Authors@R: person("Vikrant Dev", "Rathore", email = "rathore.vikrant@gmail.com", role = c("aut", "cre"))
+Description: Tools for anonymizing sensitive patient and research data. Helps
+    protect privacy while keeping data useful for analysis. Anonymizes IDs,
+    names, dates, locations, and ages while maintaining referential integrity.
+    Methods based on: Sweeney (2002) <doi:10.1142/S0218488502001648>,
+    Dwork et al. (2006) <doi:10.1007/11681878_14>,
+    El Emam et al. (2011) <doi:10.1371/journal.pone.0028071>,
+    Fung et al. (2010) <doi:10.1145/1749603.1749605>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: lubridate, digest
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, data.table
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-11-22 23:55:36 UTC; vikrant31
+Author: Vikrant Dev Rathore [aut, cre]
+Maintainer: Vikrant Dev Rathore <rathore.vikrant@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-23 13:30:07 UTC

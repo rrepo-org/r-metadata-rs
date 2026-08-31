@@ -1,0 +1,30 @@
+Package: greenbook
+Title: HM Treasury Green Book Cost-Benefit Analysis Primitives
+Version: 0.1.1
+Authors@R: 
+    person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
+Description: Implements cost-benefit analysis primitives from HM
+    Treasury Green Book guidance (HM Treasury, 2022, 2026):
+    the kinked Social Time Preference Rate (STPR), discount factors,
+    net present value (NPV), equivalent annual cost, and real-terms
+    rebasing using the GDP deflator. Designed for UK central government
+    appraisal and evaluation. Bundled parameter tables carry vintage
+    metadata for reproducibility.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: cli (>= 3.6.0), stats, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, inflateR, openxlsx,
+        officer, flextable
+Config/testthat/edition: 3
+URL: https://github.com/charlescoverdale/greenbook
+BugReports: https://github.com/charlescoverdale/greenbook/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-23 18:28:50 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 07:30:28 UTC

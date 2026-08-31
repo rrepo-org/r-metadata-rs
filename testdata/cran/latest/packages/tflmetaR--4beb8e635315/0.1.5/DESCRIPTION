@@ -1,0 +1,35 @@
+Package: tflmetaR
+Title: Manage Annotation Metadata in Statistical Outputs
+Version: 0.1.5
+Authors@R: c(
+    person("Amber", "Wu", , "amber.wu2@ucb.com", role = "aut"),
+    person("Gary", "Cao", , "gary.cao@ucb.com", role = "aut"),
+    person("Lan", "Cheng", , "lan.cheng@ucb.com", role = "aut"),
+    person("Yao", "Lu", , "yao.lu@ucb.com", role = c("aut", "cre")),
+    person("UCB S.A., Belgium", role = c("cph", "fnd"))
+  )
+Description: Provides functions to retrieve headers, titles, and footnotes
+    from structured metadata sources (e.g., Excel or CSV files) for
+    annotating tables, listings, and figures in clinical study reports
+    (CSRs) or other formal deliverables. It supports separation of
+    metadata from analysis code in clinical reporting workflows.
+License: Apache License (>= 2.0)
+Depends: R (>= 4.1.0)
+Imports: jsonlite, readxl, writexl
+Suggests: dplyr, gridify, gt, haven, knitr, mockery (>= 0.3.0),
+        rmarkdown, survival, survminer, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-13 20:24:06 UTC; e643795
+Author: Amber Wu [aut],
+  Gary Cao [aut],
+  Lan Cheng [aut],
+  Yao Lu [aut, cre],
+  UCB S.A., Belgium [cph, fnd]
+Maintainer: Yao Lu <yao.lu@ucb.com>
+Repository: CRAN
+Date/Publication: 2026-03-23 17:50:02 UTC

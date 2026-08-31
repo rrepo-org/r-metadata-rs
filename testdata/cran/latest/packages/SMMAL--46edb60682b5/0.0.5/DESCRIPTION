@@ -1,0 +1,21 @@
+Package: SMMAL
+Title: Semi-Supervised Estimation of Average Treatment Effects
+Version: 0.0.5
+Authors@R: c(person(given = "Jue", family = "Hou", email = "hou00123@umn.edu", role = c("aut", "cre")),person(given = "Yuming", family = "Zhang", email = "yumingzhang@hsph.harvard.edu", role = "aut"),person(given = "Shuheng", family = "Kong", email = "kong0298@umn.edu", role = "aut"))
+Description: Provides a pipeline for estimating the average treatment effect via semi-supervised learning. Outcome regression is fit with cross-fitting using various machine learning method or user customized function. Doubly robust ATE estimation leverages both labeled and unlabeled data under a semi-supervised missing-data framework. For more details see Hou et al. (2021) <doi:10.48550/arxiv.2110.12336>. A detailed vignette is included.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: glmnet,randomForest,splines2,xgboost,stats,utils
+Suggests: knitr,rmarkdown,testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-07-31 16:01:38 UTC; 16102
+Author: Jue Hou [aut, cre],
+  Yuming Zhang [aut],
+  Shuheng Kong [aut]
+Maintainer: Jue Hou <hou00123@umn.edu>
+Repository: CRAN
+Date/Publication: 2025-08-28 07:30:07 UTC

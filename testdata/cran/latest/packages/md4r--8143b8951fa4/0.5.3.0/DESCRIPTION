@@ -1,0 +1,39 @@
+Package: md4r
+Title: Markdown Parser Implemented using the 'MD4C' Library
+Version: 0.5.3.0
+Authors@R: c(
+    person("Colin", "Rundel", , "rundel@gmail.com", role = c("aut", "cre")),
+    person("Martin", "Mitáš", role = "cph",
+           comment = "md4c author: md4c.c, md4c.h, specs/md4c/"),
+    person(, "RStudio, PBC", role = "cph",
+           comment = "httpuv_url_tools.cpp"),
+    person("John", "MacFarlane", role = "cph",
+           comment = "specs/gfm/spec.txt, specs/md4c/spec.txt")
+  )
+Description: Provides an R wrapper for the 'MD4C' (Markdown for 'C')
+    library.  Functions exist for parsing markdown ('CommonMark'
+    compliant) along with support for other common markdown extensions
+    (e.g. 'GitHub' flavored markdown, 'LaTeX' equation support, etc.). The
+    package also provides a number of higher level functions for exploring
+    and manipulating markdown abstract syntax trees as well as translating
+    and displaying the documents.
+License: MIT + file LICENSE
+URL: https://rundel.github.io/md4r/, https://github.com/rundel/md4r
+BugReports: https://github.com/rundel/md4r/issues
+Imports: checkmate, cli, glue, purrr, Rcpp, stringr, textutils, tibble
+Suggests: diffmatchpatch, rlang, styler, testthat (>= 3.0.0), withr
+LinkingTo: Rcpp
+Config/testthat/edition: 3
+Copyright: John MacFarlane, RStudio, PBC; Martin Mitáš, Colin Rundel
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-07 15:33:08 UTC; rundel
+Author: Colin Rundel [aut, cre],
+  Martin Mitáš [cph] (md4c author: md4c.c, md4c.h, specs/md4c/),
+  RStudio, PBC [cph] (httpuv_url_tools.cpp),
+  John MacFarlane [cph] (specs/gfm/spec.txt, specs/md4c/spec.txt)
+Maintainer: Colin Rundel <rundel@gmail.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-05-07 17:33:02 UTC

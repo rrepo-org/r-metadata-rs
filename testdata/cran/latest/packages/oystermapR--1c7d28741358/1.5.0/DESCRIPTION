@@ -1,0 +1,54 @@
+Package: oystermapR
+Title: Predict and Map Oyster Growth Suitability from Environmental
+        Data
+Version: 1.5.0
+Authors@R: 
+    person("T", "Tucker", email = "tristantucker48@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0008-5190-6423"))
+Description: Predicts spatial suitability for oyster growth from environmental
+    survey data using Analytic Hierarchy Process (AHP) weighted scoring.
+    Users supply sensor data from Acoustic Doppler Current Profilers (ADCP),
+    Conductivity-Temperature-Depth (CTD) sensors, bathymetric sonar, and
+    sidescan sonar, specify a target species, and receive per-location
+    suitability scores, a five-band 'GeoTIFF' heatmap for 'QGIS', contour
+    lines, and a formatted PDF or HTML report. Supports seventeen species across
+    global aquaculture regions, including Ostrea edulis, Magallana gigas,
+    Crassostrea virginica, Crassostrea hongkongensis, and thirteen further
+    species; see list_species(). Includes ocean acidification scoring via
+    in-house aragonite saturation state (Omega_arag) calculation using
+    Lueker et al. (2000) <doi:10.1016/S0304-4203(00)00022-0> and Mucci (1983)
+    <doi:10.1357/002224083788520153> equilibrium constants (no external
+    dependencies), variable impact diagnostics (variable_impact()), fine-scale
+    habitat area analysis for restoration reporting in m2 with contiguous patch
+    identification (area_summary()), tolerance curve visualisation
+    (plot_tolerance()), season-aware scoring, tidal height correction, Bayesian
+    tolerance parameter updating from field observations, spatial block
+    cross-validation (Roberts et al., 2017, <doi:10.1111/ecog.02881>),
+    permutation variable importance, wave exposure and sediment stability
+    modules, Harmful Algal Bloom (HAB) risk and anthropogenic disturbance
+    scoring with optional live International Council for the Exploration of the
+    Sea (ICES) data integration, hybrid larval dispersal connectivity scoring
+    (union-find Gaussian kernel plus optional 'OpenDrift' or Finite Volume
+    Community Ocean Model ('FVCOM') connectivity matrix), and batch
+    multi-species comparison.
+License: GPL (>= 3)
+URL: https://github.com/trissyboats/oystermapR
+BugReports: https://github.com/trissyboats/oystermapR/issues
+Encoding: UTF-8
+Language: en-US
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Imports: dplyr (>= 1.0.0), terra (>= 1.7.18), sf (>= 1.0.0), rlang (>=
+        1.0.0), cli (>= 3.0.0), stats, utils
+Suggests: ggplot2 (>= 3.4.0), testthat (>= 3.0.0), knitr, rmarkdown (>=
+        2.20), tinytex, httr (>= 1.4.0), jsonlite (>= 1.8.0), ncdf4 (>=
+        1.19), gstat (>= 2.1.0), sp (>= 1.6.0), lubridate (>= 1.9.0),
+        suncalc (>= 0.5.0), oce (>= 1.7.0)
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-08-31 13:43:45 UTC; home
+Author: T Tucker [aut, cre] (ORCID: <https://orcid.org/0009-0008-5190-6423>)
+Maintainer: T Tucker <tristantucker48@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-31 19:00:02 UTC

@@ -1,0 +1,34 @@
+Package: SlotLim
+Title: Catch Advice for Fisheries Managed by Harvest Slot Limits
+Version: 0.0.2
+Authors@R: 
+    person("C.J.", "Pritchard", 
+           email = "cj_pritchard@outlook.com", 
+           comment = c(ORCID = "0000-0001-7093-6785"), 
+           role = c("aut", "cre"))
+Description: Catch advice for data-limited vertebrate and invertebrate 
+    fisheries managed by harvest slot limits using the SlotLim harvest 
+    control rule. The package accompanies the manuscript "SlotLim: catch advice 
+    for data-limited vertebrate and invertebrate fisheries managed by harvest 
+    slot limits" (Pritchard et al., in prep). Minimum data requirements: at 
+    least two consecutive years of catch data, length–frequency distributions, 
+    and biomass or abundance indices (all from fishery-dependent sources); 
+    species-specific growth rate parameters (either von Bertalanffy, Gompertz, 
+    or Schnute); and either the natural mortality rate ('M') or the maximum 
+    observed age ('tmax'), from which M is estimated. The following functions 
+    have optional plotting capabilities that require 'ggplot2' installed: 
+    prop_target(), TBA(), SAM(), catch_advice(), catch_adjust(), and 
+    slotlim_once().
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: ggplot2, grid, stats, utils, patchwork
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-21 13:08:55 UTC; calumpritchard
+Author: C.J. Pritchard [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7093-6785>)
+Maintainer: C.J. Pritchard <cj_pritchard@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-10-25 12:30:02 UTC

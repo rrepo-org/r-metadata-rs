@@ -1,0 +1,44 @@
+Package: bigPLScox
+Type: Package
+Version: 0.8.1
+Date: 2025-11-15
+Depends: R (>= 4.0.0)
+biocViews:
+Imports: bigmemory, bigalgebra, bigSurvSGD, caret, doParallel, foreach,
+        kernlab, methods, Rcpp, risksetROC, rms, sgPLS, survAUC,
+        survcomp, survival
+LinkingTo: BH, Rcpp, RcppArmadillo, bigmemory
+Suggests: bench, knitr, plsRcox, mvtnorm, readr, rmarkdown, testthat
+        (>= 3.0.0)
+Title: Partial Least Squares for Cox Models with Big Matrices
+Authors@R: c(
+	person(given = "Frederic", family= "Bertrand", role = c("cre", "aut"), email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281")),
+	person(given = "Myriam", family= "Maumy-Bertrand", role = c("aut"), email = "myriam.maumy@ehesp.fr", comment = c(ORCID = "0000-0002-4615-1512")))
+Author: Frederic Bertrand [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-0837-8281>),
+  Myriam Maumy-Bertrand [aut] (ORCID:
+    <https://orcid.org/0000-0002-4615-1512>)
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
+Description: Provides Partial least squares Regression and various regular, sparse 
+    or kernel, techniques for fitting Cox models for big data. Provides a Partial 
+    Least Squares (PLS) algorithm adapted to Cox proportional hazards models that 
+    works with 'bigmemory' matrices without loading the entire dataset in memory. 
+    Also implements a gradient-descent based solver for Cox proportional hazards 
+    models that works directly on 'bigmemory' matrices.     
+    Bertrand and Maumy (2023) <https://hal.science/hal-05352069>, and 
+    <https://hal.science/hal-05352061> highlighted 
+    fitting and cross-validating PLS-based Cox models to censored big data.
+License: GPL-3
+Encoding: UTF-8
+URL: https://fbertran.github.io/bigPLScox/,
+        https://github.com/fbertran/bigPLScox
+BugReports: https://github.com/fbertran/bigPLScox/issues
+Classification/MSC: 62N01, 62N02, 62N03, 62N99
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2025-11-17 22:21:32 UTC; bertran7
+Repository: CRAN
+Date/Publication: 2025-11-18 14:40:06 UTC

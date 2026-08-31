@@ -1,0 +1,25 @@
+Package: chopper
+Type: Package
+Title: Changepoint-Aware Ensemble for Probabilistic Modeling
+Version: 1.0
+Authors@R: c(person("Giancarlo", "Vercellino", role = c("aut", "cre", "cph"), email = "giancarlo.vercellino@gmail.com"))
+Maintainer: Giancarlo Vercellino <giancarlo.vercellino@gmail.com>
+Description: Implements a changepoint-aware ensemble forecasting algorithm that combines Theta, TBATS (Trigonometric, Box-Cox transformation, ARMA errors, Trend, Seasonal components), and ARFIMA (AutoRegressive, Fractionally Integrated, Moving Average) using a product-of-experts approach for robust probabilistic prediction.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: normalp (>= 0.7.2), purrr (>= 1.0.1), ald (>= 1.3.1), evd (>=
+        2.3-6.1), GeneralizedHyperbolic (>= 0.8-6), fGarch (>=
+        4022.89), forecast (>= 8.21), imputeTS (>= 3.3), changepoint
+        (>= 2.3), lubridate (>= 1.9.2), ggplot2 (>= 3.5.1), scales (>=
+        1.3.0)
+URL: https://rpubs.com/giancarlo_vercellino/chopper
+Suggests: knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2025-05-22 07:01:57 UTC; gianc
+Author: Giancarlo Vercellino [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2025-05-27 08:00:06 UTC

@@ -1,0 +1,44 @@
+Package: clusteredMSM
+Type: Package
+Title: Nonparametric Analysis of Clustered Multistate Processes
+Version: 0.1.0
+Authors@R: 
+    person(given = "Giorgos",
+           family = "Bakoyannis",
+           role = c("aut", "cre"),
+           email = "gbakogia@iu.edu",
+           comment = c(ORCID = "0000-0002-2789-2497"))
+Description: Nonparametric estimation of population-averaged transition
+    probabilities, with cluster-bootstrap pointwise confidence intervals,
+    simultaneous confidence bands, and two-sample Kolmogorov-Smirnov-type
+    tests for clustered or independent multistate process data.
+    Estimation follows Bakoyannis (2021) <doi:10.1111/biom.13327>;
+    two-sample inference for the cluster-randomized and
+    independent-samples designs follows Bakoyannis and Bandyopadhyay
+    (2022) <doi:10.1007/s10463-021-00819-x>. Both methods use the
+    working-independence Aalen-Johansen estimator. The package supports
+    both progressive (acyclic) and non-monotone (e.g., illness-death
+    with recovery) multistate processes, right censoring, left
+    truncation, and informative cluster size. The user supplies data
+    in interval format (one row per mutually-exclusive time interval
+    per subject) and interacts with the package through a single
+    formula-based function, patp().
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: survival, stats, utils
+Suggests: mstate, testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/gbakoyannis/clusteredMSM
+BugReports: https://github.com/gbakoyannis/clusteredMSM/issues
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-20 02:07:01 UTC; giorgos
+Author: Giorgos Bakoyannis [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2789-2497>)
+Maintainer: Giorgos Bakoyannis <gbakogia@iu.edu>
+Repository: CRAN
+Date/Publication: 2026-05-27 19:20:08 UTC

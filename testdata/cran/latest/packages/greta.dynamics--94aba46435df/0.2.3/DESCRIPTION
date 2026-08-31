@@ -1,0 +1,52 @@
+Package: greta.dynamics
+Type: Package
+Title: Modelling Structured Dynamical Systems in 'greta'
+Version: 0.2.3
+Authors@R: c(
+    person(
+      given = "Nick", 
+      family = "Golding", 
+      email = "nick.golding.research@gmail.com", 
+      role = c("aut", "cph"),
+      comment = c(ORCID = "https://orcid.org/0000-0001-8916-5570")
+      ),
+    person(
+      given = "Nicholas", 
+      family = "Tierney",
+      email = "nicholas.tierney@gmail.com", 
+      role = c("aut", "cre"),
+      comment = c(ORCID = "https://orcid.org/0000-0003-1460-8722")
+      )
+  )
+Description: A 'greta' extension for analysing transition matrices and 
+  ordinary differential equations representing dynamical systems. Provides 
+  functions for analysing transition matrices by iteration, and solving 
+  ordinary differential equations. This is an extension to the 'greta' 
+  software, Golding (2019) <doi:10.21105/joss.01601>.
+License: Apache License (>= 2)
+URL: https://github.com/greta-dev/greta.dynamics,
+        https://greta-dev.github.io/greta.dynamics/
+BugReports: https://github.com/greta-dev/greta.dynamics/issues
+Imports: cli (>= 3.6.3), glue, rlang (>= 1.1.4), tensorflow (>= 1.14.0)
+Depends: greta (>= 0.6.0), R (>= 4.1.0)
+Suggests: covr, knitr, rmarkdown, spelling, testthat (>= 3.1.0),
+        deSolve, abind
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+SystemRequirements: Python (>= 3.7.0) with header files and shared
+        library; TensorFlow (>= v2.0.0; https://www.tensorflow.org/);
+        TensorFlow Probability (v0.8.0;
+        https://www.tensorflow.org/probability/)
+Config/Needs/website: greta-dev/greta.pkgdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-22 01:44:13 UTC; nick
+Author: Nick Golding [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-8916-5570>),
+  Nicholas Tierney [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1460-8722>)
+Maintainer: Nicholas Tierney <nicholas.tierney@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-22 08:40:07 UTC

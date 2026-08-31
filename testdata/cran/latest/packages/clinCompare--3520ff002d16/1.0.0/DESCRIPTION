@@ -1,0 +1,41 @@
+Package: clinCompare
+Type: Package
+Title: Dataset Comparison with 'CDISC' Validation for Clinical Trial
+        Data
+Version: 1.0.0
+Authors@R: c(
+    person("Siddharth", "Lokineni", email = "sidhu871@gmail.com", role = c("aut", "cre"))
+    )
+Description: A general-purpose toolkit for comparing any two data frames
+    with optional 'CDISC' (Clinical Data Interchange Standards Consortium)
+    validation for clinical trial data. Core comparison functions work on
+    arbitrary datasets: variable-level and observation-level comparison, data
+    type checking, metadata attribute analysis (types, labels, lengths,
+    formats), missing value handling, key-based row matching, tolerance-based
+    numeric comparisons, and group-wise comparisons. Optional z-score
+    outlier detection is available when enabled. When working with clinical
+    data, the package additionally
+    validates 'SDTM' (Study Data Tabulation Model) and 'ADaM' (Analysis Data
+    Model) datasets against CDISC standards (SDTM IG 3.3/3.4, ADaM IG
+    1.1/1.2/1.3), automatically detecting domains and flagging non-conformant
+    variables. Generates unified comparison reports in text or HTML format
+    with interactive dashboards. For CDISC standards, see
+    <https://www.cdisc.org/standards>.
+License: MIT + file LICENSE
+URL: https://github.com/siddharthlokineni/clinCompare
+BugReports: https://github.com/siddharthlokineni/clinCompare/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: dplyr (>= 1.0.0), haven (>= 2.0.0), rlang (>= 0.4.0), tidyr
+        (>= 1.0.0), methods, stats, tools, utils
+Suggests: ggplot2 (>= 3.0.0), openxlsx (>= 4.0.0), testthat (>= 3.0.0),
+        knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-15 01:22:16 UTC; siddharthlokineni
+Author: Siddharth Lokineni [aut, cre]
+Maintainer: Siddharth Lokineni <sidhu871@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-18 19:00:07 UTC

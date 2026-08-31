@@ -1,0 +1,28 @@
+Package: mortSOA
+Title: Obtain Data from the Society of Actuaries 'Mortality and Other
+        Rate Tables' Site
+Version: 0.1.0
+Authors@R: 
+    person("Matt", "Heaphy", email = "mattrmattrs@gmail.com", role = c("aut", "cre", "cph"))
+Maintainer: Matt Heaphy <mattrmattrs@gmail.com>
+Description: The Society of Actuaries (SOA) provides an extensive online 
+    database called 'Mortality and Other Rate Tables' ('MORT') at 
+    <https://mort.soa.org/>. This database contains mortality, lapse, and 
+    valuation tables that cover a variety of product types and nations. Users of
+    the database can download any tables in 'Excel', 'CSV', or 'XML' formats. 
+    This package provides convenience functions that read 'XML' formats from the 
+    database and return R objects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, dplyr, httr2, purrr, rlang, tidyr, xml2
+Depends: R (>= 4.1)
+LazyData: true
+URL: https://github.com/mattheaphy/mortSOA/,
+        https://mattheaphy.github.io/mortSOA/
+BugReports: https://github.com/mattheaphy/mortSOA/issues
+NeedsCompilation: no
+Packaged: 2026-02-03 13:41:50 UTC; Matt
+Author: Matt Heaphy [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2026-02-06 14:10:08 UTC

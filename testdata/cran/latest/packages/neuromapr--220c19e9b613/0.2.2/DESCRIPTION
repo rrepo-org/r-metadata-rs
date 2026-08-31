@@ -1,0 +1,41 @@
+Package: neuromapr
+Title: Spatial Null Models and Transforms for Brain Map Comparison
+Version: 0.2.2
+Authors@R: c(
+    person("Athanasia Mo", "Mowinckel", , "a.m.mowinckel@psykologi.uio.no",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-5756-0223"))
+    )
+Description: Implements spatial null models and coordinate-space
+    transformations for statistical comparison of brain maps, following the
+    framework described in Markello et al. (2022)
+    <doi:10.1038/s41592-022-01625-w>. Provides variogram-matching
+    surrogates (Burt et al. 2020), Moran spectral randomization (Wagner &
+    Dray 2015), and spin-based permutation tests (Alexander-Bloch et al.
+    2018). Includes an R interface to the 'neuromaps' annotation registry
+    for browsing, downloading, and comparing brain map annotations from the
+    Open Science Framework ('OSF').
+    Integrates with 'ciftiTools' for coordinate-space transforms.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Depends: R (>= 4.2.0)
+Imports: cli, dplyr, ggplot2, gifti, httr2, igraph, lifecycle, rlang,
+        stats, tibble, tools, withr
+Suggests: ciftiTools, clue, freesurferformats, jsonlite, knitr,
+        rmarkdown, RNifti, RSpectra, testthat (>= 3.0.0), vcr (>=
+        1.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/lcbc-uio/neuromapr,
+        https://lcbc-uio.github.io/neuromapr/,
+        https://doi.org/10.5281/zenodo.18648937
+BugReports: https://github.com/lcbc-uio/neuromapr/issues
+NeedsCompilation: no
+Packaged: 2026-04-29 17:55:05 UTC; athanasm
+Author: Athanasia Mo Mowinckel [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-5756-0223>)
+Maintainer: Athanasia Mo Mowinckel <a.m.mowinckel@psykologi.uio.no>
+Repository: CRAN
+Date/Publication: 2026-04-30 07:50:03 UTC

@@ -1,0 +1,49 @@
+Package: censosbo
+Type: Package
+Title: Access and Analysis of Bolivian Census Microdata
+Version: 2.0.0
+Authors@R: c(
+    person("Alex", "Ojeda Copa", email = "alex@labtecnosocial.org",
+           role = c("aut", "cre", "cph"),
+           comment = c(organization = "Lab TecnoSocial")),
+    person("Lab TecnoSocial", role = c("cph", "fnd")))
+Description: Programmatic access to the microdata of the Bolivian population
+    and housing censuses of 1976, 1992, 2001, 2012 and 2024, published by the
+    National Statistics Institute of Bolivia (INE,
+    <https://www.ine.gob.bo/>). Data files in Apache Parquet format are
+    downloaded on demand from a companion data repository, cached locally, and
+    can be filtered by department, province or municipality. Supports 'dplyr'
+    workflows through Apache Arrow and SQL queries through 'DuckDB'. Includes
+    variable dictionaries for every census year with a thematic taxonomy and
+    contextual metadata (reference population, questionnaire item number and
+    provenance of each variable), derived from the census questionnaires and
+    from the Data Documentation Initiative (DDI) files of the INE ANDA
+    catalogue; functions to harmonise variables across censuses for temporal
+    comparison; and choropleth maps at the department and municipality level.
+    Also includes the 2024 census aggregates for urban blocks and rural
+    communities, with their geometries. Documentation and messages are in
+    Spanish, the language of the source data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: es
+LazyData: true
+LazyDataCompression: xz
+URL: https://lab-tecnosocial.github.io/censosbo/,
+        https://github.com/lab-tecnosocial/censosbo
+BugReports: https://github.com/lab-tecnosocial/censosbo/issues
+Depends: R (>= 4.2)
+Imports: arrow (>= 14.0.0), curl, cli, fs, rlang, tools, stats, dplyr,
+        sf
+Suggests: duckdb (>= 0.9.0), DBI, ggplot2, DT, testthat (>= 3.0.0),
+        withr, knitr, rmarkdown, tidyr, scales
+Config/testthat/edition: 3
+Config/censosbo/data-version: 1.1.0
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-30 00:23:54 UTC; alexojeda
+Author: Alex Ojeda Copa [aut, cre, cph] (organization: Lab TecnoSocial),
+  Lab TecnoSocial [cph, fnd]
+Maintainer: Alex Ojeda Copa <alex@labtecnosocial.org>
+Repository: CRAN
+Date/Publication: 2026-08-07 16:30:12 UTC

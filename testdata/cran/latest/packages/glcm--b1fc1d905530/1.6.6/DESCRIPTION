@@ -1,0 +1,26 @@
+Package: glcm
+Version: 1.6.6
+Date: 2025-11-12
+Title: Calculate Textures from Grey-Level Co-Occurrence Matrices
+        (GLCMs)
+Authors@R: person("Alex", "Zvoleff", email="azvoleff@conservation.org",
+    role=c("aut", "cre"))
+Maintainer: Alex Zvoleff <azvoleff@conservation.org>
+Depends: R (>= 3.5.0),
+Imports: raster, Rcpp (>= 0.11.0)
+Suggests: testthat (>= 0.8.0)
+LinkingTo: Rcpp, RcppArmadillo
+Description: Enables calculation of image textures (Haralick 1973) 
+    <doi:10.1109/TSMC.1973.4309314> from grey-level co-occurrence matrices 
+    (GLCMs). Supports processing images that cannot fit in memory.
+License: GPL (>= 3)
+URL: https://github.com/azvoleff/glcm
+BugReports: https://github.com/azvoleff/glcm/issues
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-11-12 04:50:20 UTC; azvol
+Author: Alex Zvoleff [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-11-12 05:00:02 UTC

@@ -1,0 +1,27 @@
+Package: rwig
+Type: Package
+Title: Wasserstein Index Generation (WIG) Model
+Version: 0.1.0
+Authors@R: 
+    person("Fangzhou", "Xie", , "fangzhou.xie@rutgers.edu", role = c("aut", "cre", "cph"))
+Description: Efficient implementation of several Optimal Transport algorithms in Fangzhou Xie (2025) <doi:10.48550/arXiv.2504.08722> and the Wasserstein Index Generation (WIG) model in Fangzhou Xie (2020) <doi:10.1016/j.econlet.2019.108874>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+URL: https://github.com/fangzhou-xie/rwig,
+        https://fangzhou-xie.github.io/rwig/
+BugReports: https://github.com/fangzhou-xie/rwig/issues
+LinkingTo: Rcpp (>= 1.0.8), RcppArmadillo (>= 0.12.8.4.0)
+Imports: utils, stats, rlang, cli, lubridate, Rcpp, RhpcBLASctl,
+        word2vec, tokenizers, stopwords
+SystemRequirements: autoconf, CUDA (> 13.0, only for Linux)
+Suggests: knitr, rmarkdown, tinytest
+Depends: R (>= 4.2)
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-04-14 19:57:05 UTC; fangzhou
+Author: Fangzhou Xie [aut, cre, cph]
+Maintainer: Fangzhou Xie <fangzhou.xie@rutgers.edu>
+Repository: CRAN
+Date/Publication: 2026-04-21 09:22:14 UTC

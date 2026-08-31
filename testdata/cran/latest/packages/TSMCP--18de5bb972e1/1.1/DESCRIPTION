@@ -1,0 +1,25 @@
+Package: TSMCP
+Type: Package
+Title: Fast Two Stage Multiple Change Point Detection
+Version: 1.1
+Authors@R: c(
+    person(
+      "Yaguang", "Li",
+      email = "liyg@mail.ustc.edu.cn",
+      role = c("aut", "cre")
+    ),
+    person("Baisuo", "Jin", email = "jbs@ustc.edu.cn", role = "aut")
+  )
+Depends: R (>= 3.3.0), ncvreg, lars
+Suggests: MASS
+Description: A novel and fast two stage method for simultaneous multiple change point detection and variable selection for piecewise stationary autoregressive (PSAR) processes and linear regression model. It also simultaneously performs variable selection for each autoregressive model and hence the order selection.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-10-30 15:32:30 UTC; liyg
+Author: Yaguang Li [aut, cre],
+  Baisuo Jin [aut]
+Maintainer: Yaguang Li <liyg@mail.ustc.edu.cn>
+Repository: CRAN
+Date/Publication: 2025-11-03 19:20:13 UTC

@@ -1,0 +1,31 @@
+Package: skiftiTools
+Title: Tools and Operations for Reading, Writing, Viewing, and
+        Manipulating SKIFTI Files
+Version: 0.1.0
+Authors@R: 
+    c(person("Harri", "Merisaari", "", email = "harri.merisaaari@utu.fi", role = "aut",
+           comment = c(ORCID = "0000-0002-8515-5399")),
+      person("Ilkka", "Suuronen", "", email = "ilksuu@utu.fi", role = "cre",
+           comment = c(ORCID = "0009-0001-6516-4116")))
+Description: SKIFTI files contain brain imaging data in coordinates across Tract Based Spatial Statistics (TBSS) skeleton, which 
+    represent the brain white matter intensity values. 
+    'skiftiTools' provides a unified environment for reading, writing, 
+    visualizing and manipulating SKIFTI-format data. It supports the "subsetting", 
+    "concatenating", and using data as data.frame for R statistical functions. The SKIFTI data is structured for convenient access to the data and metadata,
+    and includes support for visualizations. For more information see Merisaari et al. (2024) <doi:10.57736/87d2-0608>.
+Depends: R (>= 4.2.0)
+License: GPL-3
+Encoding: UTF-8
+Imports: RNifti, stringr, R.utils, rmarchingcubes, Rvcg, png, rgl, oce,
+        abind, methods, s2dv
+RoxygenNote: 7.3.3
+URL: https://github.com/haanme/skiftiTools
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-10 11:13:51 UTC; root
+Author: Harri Merisaari [aut] (ORCID: <https://orcid.org/0000-0002-8515-5399>),
+  Ilkka Suuronen [cre] (ORCID: <https://orcid.org/0009-0001-6516-4116>)
+Maintainer: Ilkka Suuronen <ilksuu@utu.fi>
+Repository: CRAN
+Date/Publication: 2025-10-16 12:10:02 UTC

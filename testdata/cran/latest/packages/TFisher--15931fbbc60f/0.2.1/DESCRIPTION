@@ -1,0 +1,29 @@
+Package: TFisher
+Type: Package
+Title: Optimal Thresholding Fisher's P-Value Combination Method
+Version: 0.2.1
+Authors@R: c(
+    person("Hong", "Zhang", role = "aut"),
+    person("Zheyang", "Wu", email = "zheyangwu@wpi.edu", role = c("aut", "cre")))
+Description: We provide the cumulative distribution function (CDF),
+    quantile, and statistical power calculator for a collection of
+    thresholding Fisher's p-value combination methods, including Fisher's
+    p-value combination method, truncated product method and, in particular, soft-thresholding
+    Fisher's p-value combination method which is proven to be optimal in some
+    context of signal detection. The p-value calculator for the omnibus version
+    of these tests are also included. For reference, please see
+    Hong Zhang, Tong Tong, John Landers and Zheyang Wu (2020) "TFisher: A powerful truncation
+    and weighting procedure for combining p-values" <doi:10.1214/19-AOAS1302>.
+License: GPL-2
+URL: https://github.com/ZWuLab/TFisher
+BugReports: https://github.com/ZWuLab/TFisher/issues
+Imports: stats, sn, mvtnorm, Matrix
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2026-08-09 17:59:06 UTC; zheyangwu
+Author: Hong Zhang [aut],
+  Zheyang Wu [aut, cre]
+Maintainer: Zheyang Wu <zheyangwu@wpi.edu>
+Repository: CRAN
+Date/Publication: 2026-08-25 05:20:54 UTC

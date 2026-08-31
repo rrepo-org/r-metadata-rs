@@ -1,0 +1,31 @@
+Package: multiModTest
+Type: Package
+Title: Information Assessment for Individual Modalities in Multimodal
+        Regression Models
+Version: 1.1
+Authors@R: c(
+    person("Wanting", "Jin", email = "jinwanting5@gmail.com", role = c("aut", "cre")),
+    person("Quefeng", "Li", email = "quefeng@email.unc.edu", role = "aut")
+    )
+Description: Provides methods for quantifying the information gain contributed by individual 
+	modalities in multimodal regression models. Information gain is measured using Expected 
+	Relative Entropy (ERE) or pseudo-R² metrics, with corresponding confidence 
+	intervals. Currently supports linear regression, logistic regression, and the Cox proportional
+	hazards model. A robust Median-of-Means based estimator is also provided
+	for heavy-tailed responses under the Gaussian and Negative-Binomial families, with basic
+	bootstrap confidence intervals.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: MASS, SIS, glmnet, ncvreg, MBESS, survival, dplyr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.6.0)
+NeedsCompilation: no
+Packaged: 2026-08-01 01:11:49 UTC; 10518
+Author: Wanting Jin [aut, cre],
+  Quefeng Li [aut]
+Maintainer: Wanting Jin <jinwanting5@gmail.com>
+LazyData: true
+Repository: CRAN
+Date/Publication: 2026-08-01 02:50:02 UTC

@@ -1,0 +1,35 @@
+Package: wingen
+Title: Continuous Mapping of Genetic Diversity
+Version: 2.2.0
+Authors@R: c(
+            person("Anusha", "Bishop", , email = "anusha.bishop@berkeley.edu", role = c("aut", "cre"), 
+                   comment = c(ORCID = "0000-0003-1731-8683")),
+            person("Anne", "Chambers", , email = "eachambers@berkeley.edu", role ="aut", 
+                   comment = c(ORCID = "0000-0002-7369-0108")),
+            person("Ian", "Wang", , email = "ianwang@berkeley.edu", role = "aut",
+                   comment = c(ORCID = "0000-0003-2554-9414"))
+            )
+Description: Generate continuous maps of genetic diversity using moving windows with options for rarefaction, interpolation, and masking as described in Bishop et al. (2023) <doi:10.1111/2041-210X.14090>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: crayon, dplyr, furrr, gdistance, ggplot2, graphics, grDevices,
+        gstat, hierfstat, lifecycle, magrittr, pegas, purrr, raster,
+        rlang, sf, terra, tidyr, tidyselect, utils, vcfR, viridis
+Suggests: adegenet, automap, covr, devtools, future, knitr, MASS,
+        rmarkdown, stringr, SpatialKDE, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/AnushaPB/wingen
+BugReports: https://github.com/AnushaPB/wingen/issues
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2025-08-10 04:01:18 UTC; Anusha
+Author: Anusha Bishop [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1731-8683>),
+  Anne Chambers [aut] (ORCID: <https://orcid.org/0000-0002-7369-0108>),
+  Ian Wang [aut] (ORCID: <https://orcid.org/0000-0003-2554-9414>)
+Maintainer: Anusha Bishop <anusha.bishop@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2025-08-18 23:50:09 UTC

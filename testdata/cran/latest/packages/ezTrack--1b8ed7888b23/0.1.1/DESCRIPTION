@@ -1,0 +1,28 @@
+Type: Package
+Package: ezTrack
+Title: Tools for Exploring Animal Movement Data
+Version: 0.1.1
+Authors@R: 
+    person("Taylor", "Craft", , "taylor.craft.mail@gmail.com", role = c("aut", "cre"))
+Description: Provides tools for exploring animal tracking data, from raw
+    telemetry points to summaries, interactive maps, and home range
+    estimates. It is designed to be beginner-friendly and requires minimal
+    data wrangling.
+License: MIT + file LICENSE
+URL: https://github.com/taylorbcraft/ezTrack
+BugReports: https://github.com/taylorbcraft/ezTrack/issues
+Depends: R (>= 4.1.0)
+Imports: adehabitatHR, dplyr, geosphere, ggplot2, htmltools, leaflet,
+        magrittr, methods, readxl, sf, sp, stats, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), viridisLite
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-05 04:05:28 UTC; taylorcraft
+Author: Taylor Craft [aut, cre]
+Maintainer: Taylor Craft <taylor.craft.mail@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-05 07:20:08 UTC

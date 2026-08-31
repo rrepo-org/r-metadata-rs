@@ -1,0 +1,31 @@
+Type: Package
+Package: IssueTrackeR
+Title: List Things to Do
+Version: 1.5.0
+Authors@R: 
+    person("Tanguy", "Barthelemy", , "tanguy.barthelemy@insee.fr", role = c("aut", "cre", "art", "cph"))
+Description: Manage a 'GitHub' problem using R: wrangle issues, labels and
+    milestones. It includes functions for storing, prioritizing (sorting),
+    displaying, adding, deleting, and selecting (filtering) issues based
+    on qualitative and quantitative information. Issues (labels and
+    milestones) are written in lists and categorized into the S3 class to
+    be easily manipulated as datasets in R.
+License: MIT + file LICENSE
+URL: https://github.com/TanguyBarthelemy/IssueTrackeR,
+        https://tanguybarthelemy.github.io/IssueTrackeR/
+BugReports: https://github.com/TanguyBarthelemy/IssueTrackeR/issues
+Depends: R (>= 4.2.0)
+Imports: cli, crayon, gh (>= 1.5.0), yaml, tools, stats, utils,
+        graphics, grDevices, withr, checkmate, zoo
+Suggests: rlang, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+Config/roxygen2/version: 8.1.0
+Config/Needs/build: moodymudskipper/devtag
+NeedsCompilation: no
+Packaged: 2026-08-20 14:47:04 UTC; onyxia
+Author: Tanguy Barthelemy [aut, cre, art, cph]
+Maintainer: Tanguy Barthelemy <tanguy.barthelemy@insee.fr>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:46:20 UTC

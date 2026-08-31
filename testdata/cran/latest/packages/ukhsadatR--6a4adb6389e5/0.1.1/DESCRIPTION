@@ -1,0 +1,25 @@
+Package: ukhsadatR
+Title: R Interface to Access UKHSA Dashboard Data
+Version: 0.1.1
+Authors@R: c(
+    person("Ollie", "Lloyd", email = "o.lloyd@doctors.org.uk", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-9385-1634")),
+    person("Pouria", "Hadjibagheri", role = "ctb", comment = "Author of the original 'ukcovid19' package."))
+Description: Programmatic interface to access data from the UK Health Security Agency (UKHSA) Data Dashboard API. The package was originally based on the 'ukcovid19' package by Pouria Hadjibagheri and has been substantially rewritten and extended. For more information on the API, see <https://ukhsa-dashboard.data.gov.uk/access-our-data>.
+URL: https://github.com/silverfoxdoc/ukhsadatR
+BugReports: https://github.com/silverfoxdoc/ukhsadatR/issues
+License: MIT + file LICENSE
+Copyright: Ollie Lloyd
+Depends: R (>= 4.3)
+Imports: httr2, jsonlite, utils
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-06-18 05:57:08 UTC; ollie
+Author: Ollie Lloyd [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-9385-1634>),
+  Pouria Hadjibagheri [ctb] (Author of the original 'ukcovid19' package.)
+Maintainer: Ollie Lloyd <o.lloyd@doctors.org.uk>
+Repository: CRAN
+Date/Publication: 2025-06-18 07:50:02 UTC

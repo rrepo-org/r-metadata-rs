@@ -1,0 +1,27 @@
+Package: amp.sim
+Title: Flexible Simulation Utilities for Pharmacometric Modeling
+Version: 0.1.1
+Authors@R: c(person("Richard", "Hooijmaijers", email = "richardhooijmaijers@gmail.com", role = c("aut", "cre","cph")),
+             person("LAPP Consultants",email = "info@lapp.nl", role=c("fnd","cph")))
+Description: The goal of 'amp.sim' is to transform 'NONMEM' models into R syntax so they can be used for
+    simulations using the 'deSolve', 'nlmixr2' or 'mrgsolve' package. Additionally, functionality is included to aid simulations performed
+    directly in 'NONMEM' and to automatically create shiny apps for simulation models.
+URL: https://leidenadvancedpkpd.github.io/amp.sim/,
+        https://github.com/LeidenAdvancedPKPD/amp.sim
+BugReports: https://github.com/LeidenAdvancedPKPD/amp.sim/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: quarto
+Depends: R (>= 4.1.0)
+Imports: stats, utils, MASS, whisker, rlang, cli, lifecycle, NMdata (>=
+        0.2.3)
+Suggests: nonmem2rx, tidyr, shiny, shinyjs, bslib, rstudioapi, deSolve,
+        rxode2, mrgsolve, R3port, ggplot2, dplyr, testthat, quarto
+NeedsCompilation: no
+Packaged: 2026-05-11 07:32:12 UTC; r.hooijmaijers
+Author: Richard Hooijmaijers [aut, cre, cph],
+  LAPP Consultants [fnd, cph]
+Maintainer: Richard Hooijmaijers <richardhooijmaijers@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-11 08:20:07 UTC

@@ -1,0 +1,41 @@
+Package: PopComm
+Title: Population-Level Cell-Cell Communication Analysis Tools
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Zheng", family = "Gong", email = "gongzheng131@hotmail.com", role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0001-7285-2630")),
+    person(given = "Mengwei", family = "Li", email = "limengwei833@gmail.com", role = c("aut", "ctb"),
+    comment = c(ORCID = "0000-0001-6163-2827")))
+Description: Facilitates population-level analysis of ligand-receptor (LR) interactions 
+    using large-scale single-cell transcriptomic data. Identifies significant LR pairs 
+    and quantifies their interactions through correlation-based filtering and projection score 
+    computations. Designed for large-sample single-cell studies, the package employs 
+    statistical modeling, including linear regression, to investigate LR relationships 
+    between cell types. It provides a systematic framework for understanding cell-cell 
+    communication, uncovering regulatory interactions and signaling mechanisms. 
+    Offers tools for LR pair-level, sample-level, and differential interaction analyses, 
+    with comprehensive visualization support to aid biological interpretation. 
+    The methodology is described in a manuscript currently under review and will be 
+    referenced here once published or publicly available.
+URL: https://github.com/JusticeGO/PopComm
+BugReports: https://github.com/JusticeGO/PopComm/issues
+biocViews:
+Depends: R (>= 4.1.0)
+Imports: Seurat (>= 4.1.0), broom (>= 1.0.0), dplyr (>= 1.0.0), purrr
+        (>= 0.3.0), rlang, stringr (>= 1.4.0), tibble (>= 3.0.0), tidyr
+        (>= 1.0.0), tidyselect (>= 1.1.0), Matrix (>= 1.2-0), ggplot2
+        (>= 3.3.0), ggpubr (>= 0.6.0), pheatmap (>= 1.0.12),
+        RColorBrewer, reshape2 (>= 1.4.1), scales (>= 1.1.1), igraph
+        (>= 2.0.0), parallel, pbmcapply (>= 1.5.0), grDevices, cowplot
+        (>= 1.1.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-11-01 05:29:58 UTC; gongz
+Author: Zheng Gong [aut, cre] (ORCID: <https://orcid.org/0000-0001-7285-2630>),
+  Mengwei Li [aut, ctb] (ORCID: <https://orcid.org/0000-0001-6163-2827>)
+Maintainer: Zheng Gong <gongzheng131@hotmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-01 22:00:02 UTC

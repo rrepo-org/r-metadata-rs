@@ -1,0 +1,36 @@
+Package: OTRselect
+Type: Package
+Title: Variable Selection for Optimal Treatment Decision
+Version: 1.3
+Date: 2025-05-03
+Author: Wenbin Lu [aut],
+  Hao Helen Zhang [aut],
+  Donglin Zeng [aut],
+  Yuan Geng [aut],
+  Shannon T. Holloway [aut, cre]
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Authors@R: c(person(given = "Wenbin",
+                        family = "Lu",
+                        role = "aut"),
+                 person(given = c("Hao", "Helen"),
+                        family = "Zhang",
+                        role = "aut"),
+                 person(given = "Donglin",
+                        family = "Zeng",
+                        role = "aut"),
+                 person(given = "Yuan",
+                        family = "Geng",
+                        role = "aut"),
+                 person(given = c("Shannon", "T."),
+                        family = "Holloway",
+                        role = c("aut", "cre"),
+                        email = "shannon.t.holloway@gmail.com"))
+Description: A penalized regression framework that can simultaneously estimate 
+    the optimal treatment strategy and identify important variables. 
+    Appropriate for either censored or uncensored continuous response.
+License: GPL-2
+Depends: stats, lars, survival, methods
+NeedsCompilation: no
+Packaged: 2025-05-03 21:20:49 UTC; 19194
+Repository: CRAN
+Date/Publication: 2025-05-03 21:40:05 UTC

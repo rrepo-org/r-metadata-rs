@@ -1,0 +1,60 @@
+Package: evmr
+Type: Package
+Title: Extreme Value Modeling for r-Largest Order Statistics
+Version: 0.2.0
+Authors@R: c(
+      person(given = "Yire",
+             family = "Shin",
+             role = c("aut", "cre"),
+             email = "shinyire87@gmail.com",
+             comment = c(ORCID = "0000-0003-1297-5430")),
+      person(given = "Jeong-Soo",
+             family = "Park",
+             role = c("aut", "ths"),
+             email = "jspark@chonnam.ac.kr",
+             comment = c(ORCID = "0000-0002-8460-4869")))
+Description: Tools for extreme value modeling based on the r-largest 
+    order statistics framework. The package provides functions for 
+    parameter estimation via maximum likelihood, return level 
+    estimation with standard errors, profile likelihood-based 
+    confidence intervals, random sample generation, and entropy 
+    difference tests for selecting the number of order statistics r. 
+    Several r-largest order statistics models are implemented, 
+    including the four-parameter kappa (rK4D), generalized logistic 
+    (rGLO), generalized Gumbel (rGGD), logistic (rLD), and Gumbel 
+    (rGD) distributions. The rK4D methodology is described in 
+    Shin et al. (2022) <doi:10.1016/j.wace.2022.100533>, the rGLO 
+    model in Shin and Park (2024) <doi:10.1007/s00477-023-02642-7>, 
+    and the rGGD model in Shin and Park (2025) 
+    <doi:10.1038/s41598-024-83273-y>. The underlying distributions 
+    are related to the kappa distribution of Hosking (1994) 
+    <doi:10.1017/CBO9780511529443>, the generalized logistic 
+    distribution discussed by Ahmad et al. (1988) 
+    <doi:10.1016/0022-1694(88)90015-7>, and the generalized Gumbel 
+    distribution of Jeong et al. (2014) 
+    <doi:10.1007/s00477-014-0865-8>. Penalized likelihood approaches 
+    for extreme value estimation follow Martins and Stedinger (2000) 
+    <doi:10.1029/1999WR900330> and Coles and Dixon (1999) 
+    <doi:10.1023/A:1009905222644>. Selection of r is supported using 
+    methods discussed in Bader et al. (2017) 
+    <doi:10.1007/s11222-016-9697-3>. The package is intended for 
+    hydrological, climatological, and environmental extreme value 
+    analysis.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: eva, graphics, lmomco, numDeriv, Rsolnp, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+URL: https://github.com/yire-shin/evmr
+BugReports: https://github.com/yire-shin/evmr/issues
+NeedsCompilation: no
+Packaged: 2026-07-05 13:01:42 UTC; yire
+Author: Yire Shin [aut, cre] (ORCID: <https://orcid.org/0000-0003-1297-5430>),
+  Jeong-Soo Park [aut, ths] (ORCID:
+    <https://orcid.org/0000-0002-8460-4869>)
+Maintainer: Yire Shin <shinyire87@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-05 13:10:02 UTC

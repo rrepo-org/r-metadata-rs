@@ -1,0 +1,22 @@
+Package: SigBridgeRUtils
+Title: Some Utilities & Base Supports for 'SigBridgeR'
+Version: 0.2.6
+Authors@R: 
+    person("Yuxi", "Yang", email = "15364051195@163.com", role = c("cre","aut"),  comment = c(ORCID = "0009-0006-1329-1224"))
+Description: Provides fundamental function support for 'SigBridgeR' and its single-cell phenotypic screening algorithm, including optional functions.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Suggests: furrr, future, MASS, Matrix, matrixStats, microbenchmark,
+        preprocessCore, Rfast, SeuratObject, sparseMatrixStats,
+        testthat
+Imports: chk, cli, data.table, processx, purrr, reticulate, rlang
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-09 07:33:45 UTC; yyx
+Author: Yuxi Yang [cre, aut] (ORCID: <https://orcid.org/0009-0006-1329-1224>)
+Maintainer: Yuxi Yang <15364051195@163.com>
+Repository: CRAN
+Date/Publication: 2026-03-12 19:40:07 UTC

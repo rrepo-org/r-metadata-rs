@@ -1,0 +1,25 @@
+Package: optrefine
+Title: Optimally Refine Strata
+Version: 1.1.1
+Authors@R: 
+    person("Katherine", "Brumberg", , "kbrum@umich.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5193-6250"))
+Description: Splits initial strata into refined strata that optimize covariate balance. For more information, please see Brumberg, Small, and Rosenbaum (2024) <doi:10.1093/biomtc/ujae061>. To solve the linear program, the 'Gurobi' commercial optimization software is recommended, but not required. The 'gurobi' R package can be installed following the instructions at <https://docs.gurobi.com/projects/optimizer/en/current/reference/r/setup.html> after claiming your free academic license at <https://www.gurobi.com/academia/academic-program-and-licenses/>.
+URL: https://github.com/kkbrum/optrefine,
+        https://kkbrum.github.io/optrefine/
+BugReports: https://github.com/kkbrum/optrefine/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10), MASS, Rglpk, sampling, ggplot2
+Suggests: covr, gurobi, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-02-03 19:14:03 UTC; katherine
+Author: Katherine Brumberg [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5193-6250>)
+Maintainer: Katherine Brumberg <kbrum@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-02-03 23:00:15 UTC

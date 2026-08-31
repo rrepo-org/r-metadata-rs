@@ -1,0 +1,25 @@
+Package: MAVE
+Type: Package
+Title: Methods for Dimension Reduction
+Version: 1.3.12
+Date: 2025-07-26
+Authors@R: c(
+  person("Yingcun",  "Xia", role = "aut", email = "staxyc@nus.edu.sg"),
+  person("Weiqiang", "Hang", role = c("aut", "cre"), email = "weiqiang.hang@outlook.com"))
+Description: Functions for dimension reduction, using MAVE (Minimum Average Variance Estimation), OPG (Outer Product of Gradient) and KSIR (sliced inverse regression of kernel version). Methods for selecting the best dimension are also included. Xia (2002) <doi:10.1111/1467-9868.03411>; Xia (2007) <doi:10.1214/009053607000000352>; Wang (2008) <doi:10.1198/016214508000000418>.
+License: GPL (>= 2)
+LazyData: yes
+Imports: Rcpp (>= 0.11.0),stats,graphics,mda
+Depends: R (>= 3.1.0)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Suggests: knitr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Repository: CRAN
+Encoding: UTF-8
+Packaged: 2025-07-27 08:47:34 UTC; zhangwei
+Author: Yingcun Xia [aut],
+  Weiqiang Hang [aut, cre]
+Maintainer: Weiqiang Hang <weiqiang.hang@outlook.com>
+Date/Publication: 2025-07-27 21:50:15 UTC

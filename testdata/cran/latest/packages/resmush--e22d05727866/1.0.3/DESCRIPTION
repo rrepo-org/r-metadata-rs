@@ -1,0 +1,35 @@
+Package: resmush
+Title: Optimize and Compress Image Files with 'reSmush.it'
+Version: 1.0.3
+Authors@R: 
+    person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8457-4658"))
+Description: Optimize and compress local and online image files with the
+    'reSmush.it' 'API' <https://resmush.it/api/>. Process individual files
+    or entire directories. The 'API' is free for personal use, accepts
+    files smaller than 5 'MB' and supports 'PNG', 'JPEG', 'GIF', 'BMP' and
+    'TIFF' files.
+License: MIT + file LICENSE
+URL: https://dieghernan.github.io/resmush/,
+        https://github.com/dieghernan/resmush
+BugReports: https://github.com/dieghernan/resmush/issues
+Depends: R (>= 4.1.0)
+Imports: cli, curl, httr2 (>= 1.0.0), tools, utils
+Suggests: grid, knitr, png, quarto, testthat (>= 3.3.0), withr
+VignetteBuilder: quarto
+Config/Needs/website: dieghernan/gitdevr, xfun, dplyr, tibble,
+        devtools, remotes, pak
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+X-schema.org-keywords: r, compress-images, optimize-images, resmushit,
+        api, r-package, cran, cran-r
+NeedsCompilation: no
+Packaged: 2026-08-25 10:52:52 UTC; diego
+Author: Diego Hernangómez [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8457-4658>)
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 11:20:02 UTC

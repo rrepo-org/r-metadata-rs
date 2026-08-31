@@ -1,0 +1,30 @@
+Package: ForLion
+Type: Package
+Title: 'ForLion' Algorithm to Find D-Optimal Designs for Experiments
+Version: 0.4.0
+Authors@R: c(person(given = "Yifei",
+                      family = "Huang",
+                      role = "aut"),
+               person(given = "Siting",
+                      family = "Lin",
+                      role = c("aut", "cre"),
+                      email = "slin95@uic.edu"),
+               person(given = "Jie",
+                      family = "Yang",
+                      role = "aut"))
+Maintainer: Siting Lin <slin95@uic.edu>
+Description: Designing experimental plans that involve both discrete and continuous factors with general parametric statistical models using the 'ForLion' algorithm and 'EW ForLion' algorithm. The algorithms searches for locally optimal designs and EW optimal designs under the D-criterion. See Huang, Y., Li, K., Mandal, A., & Yang, J., (2024) <doi:10.1007/s11222-024-10465-x> and Lin, S., Huang, Y., & Yang, J. (2025) <doi:10.48550/arXiv.2505.00629>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: psych, stats, cubature
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-15 17:04:36 UTC; sitin
+Author: Yifei Huang [aut],
+  Siting Lin [aut, cre],
+  Jie Yang [aut]
+Repository: CRAN
+Date/Publication: 2026-02-15 17:40:03 UTC

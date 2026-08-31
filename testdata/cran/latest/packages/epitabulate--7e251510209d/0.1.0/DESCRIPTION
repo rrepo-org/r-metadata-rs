@@ -1,0 +1,42 @@
+Package: epitabulate
+Title: Tables for Epidemiological Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Alexander", "Spina", , "aspina@appliedepi.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8425-1867")),
+    person("Zhian N.", "Kamvar", , "zkamvar@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-1458-7108")),
+    person("Amy", "Gimma", role = "aut"),
+    person("Kate", "Doyle", role = "ctb"),
+    person("Applied Epi Incorporated", role = "cph"),
+    person("Medecins Sans Frontieres Operational Centre Amsterdam", role = "fnd")
+  )
+Description: Produces tables for descriptive epidemiological analysis.
+    These tables include attack rates, case fatality ratios, and mortality
+    rates (with appropriate confidence intervals), with additional
+    functionality to calculate Mantel-Haenszel odds, risk, and incidence
+    rate ratios. The methods implemented follow standard epidemiological
+    approaches described in Rothman et al. (2008, ISBN:978-0-19-513554-2).
+    This package is part of the 'R4EPIs' project <https://R4EPI.github.io/sitrep/>.
+License: GPL-3
+URL: https://R4EPI.github.io/epitabulate/,
+        https://github.com/R4EPI/epitabulate/
+BugReports: https://github.com/R4EPI/epitabulate/issues
+Imports: binom, dplyr (>= 1.0.2), epikit (>= 0.1.2), forcats, glue,
+        gtsummary, MASS, purrr, rlang (>= 0.4.0), scales, stats, tibble
+        (>= 3.0.0), tidyr (>= 1.0.0), tidyselect (>= 1.0.0)
+Suggests: broom.helpers, cardx, covr, matchmaker (>= 0.1.0), testthat
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-11-10 09:59:54 UTC; spina
+Author: Alexander Spina [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8425-1867>),
+  Zhian N. Kamvar [aut] (ORCID: <https://orcid.org/0000-0003-1458-7108>),
+  Amy Gimma [aut],
+  Kate Doyle [ctb],
+  Applied Epi Incorporated [cph],
+  Medecins Sans Frontieres Operational Centre Amsterdam [fnd]
+Maintainer: Alexander Spina <aspina@appliedepi.org>
+Repository: CRAN
+Date/Publication: 2025-11-13 18:50:02 UTC

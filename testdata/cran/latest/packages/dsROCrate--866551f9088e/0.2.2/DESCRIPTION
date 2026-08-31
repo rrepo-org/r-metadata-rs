@@ -1,0 +1,52 @@
+Package: dsROCrate
+Title: 'DataSHIELD' RO-Crate Governance Functions
+Version: 0.2.2
+Authors@R: c(
+    person(given = "Roberto",
+           family = "Villegas-Diaz",
+           role = c("aut", "cre"),
+           email = "r.villegas-diaz@outlook.com",
+           comment = c(ORCID = "0000-0001-5036-8661")),
+    person(given = "Becca",
+           family = "Wilson",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-2294-593X")),
+    person(given = "Olly",
+           family = "Butters",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-0354-8461")),
+    person(given = "Stuart",
+           family = "Wheater",
+           role = c("aut"),
+           comment = c(ORCID = "0009-0003-2419-1964")),
+    person("University of Liverpool", role = c("cph")))
+Description: Tools for wrapping 'DataSHIELD' analyses into RO-Crate 
+    (Research Object Crate) objects. Provides functions to create structured
+    metadata for federated data analysis projects, enabling governance 
+    tracking of data access, project membership, analysis execution and 
+    output validation across distributed data sources.
+License: MIT + file LICENSE
+Suggests: dsBaseClient, DSI, DSOpal, fs, knitr, MolgenisArmadillo,
+        testthat (>= 3.1.4), withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+Imports: digest, dplyr, DSMolgenisArmadillo, jsonlite, opalr (>=
+        3.6.1), purrr, RcppTOML, rmarkdown, rocrateR (>= 0.1.0),
+        tibble, uuid, vtree, xptr, yaml
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+URL: https://github.com/FederatedMethods/dsROCrate
+BugReports: https://github.com/FederatedMethods/dsROCrate/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-21 13:38:08 UTC; robertovillegas-diaz
+Author: Roberto Villegas-Diaz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5036-8661>),
+  Becca Wilson [aut] (ORCID: <https://orcid.org/0000-0003-2294-593X>),
+  Olly Butters [aut] (ORCID: <https://orcid.org/0000-0003-0354-8461>),
+  Stuart Wheater [aut] (ORCID: <https://orcid.org/0009-0003-2419-1964>),
+  University of Liverpool [cph]
+Maintainer: Roberto Villegas-Diaz <r.villegas-diaz@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 15:40:02 UTC

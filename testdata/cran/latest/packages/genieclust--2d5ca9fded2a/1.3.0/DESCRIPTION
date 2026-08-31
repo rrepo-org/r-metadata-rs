@@ -1,0 +1,49 @@
+Package: genieclust
+Type: Package
+Title: Genie: Fast and Robust Hierarchical Clustering
+Version: 1.3.0
+Date: 2026-02-23
+Authors@R: c(
+    person("Marek", "Gagolewski",
+        role = c("aut", "cre", "cph"),
+        email = "marek@gagolewski.com",
+        comment = c(ORCID = "0000-0003-0637-6028")),
+    person("Maciej", "Bartoszuk", role = c("ctb")),
+    person("Anna", "Cena", role = c("ctb")),
+    person("Peter M.", "Larsen", role = c("ctb"))
+    )
+Description: Genie is a robust hierarchical clustering algorithm
+    (Gagolewski, Bartoszuk, Cena, 2016 <DOI:10.1016/j.ins.2016.05.003>).
+    'genieclust' is its faster, more capable implementation
+    (Gagolewski, 2021 <DOI:10.1016/j.softx.2021.100722>).  It enables
+    clustering with respect to mutual reachability distances, allowing it to
+    act as an alternative to 'HDBSCAN*' that can identify any number of clusters
+    or their entire hierarchy.  When combined with the 'deadwood' package,
+    it can act as an outlier detector.  Additional package features include
+    the Gini and Bonferroni inequality indices, external cluster validity
+    measures (e.g., the normalised clustering accuracy, the adjusted Rand index,
+    the Fowlkes-Mallows index, and normalised mutual information), and internal
+    cluster validity indices (e.g., the Calinski-Harabasz, Davies-Bouldin,
+    Ball-Hall, Silhouette, and generalised Dunn indices).
+    The 'Python' version of 'genieclust' is available via 'PyPI'.
+BugReports: https://github.com/gagolews/genieclust/issues
+URL: https://genieclust.gagolewski.com/,
+        https://clustering-benchmarks.gagolewski.com/,
+        https://github.com/gagolews/genieclust
+License: AGPL-3
+Imports: Rcpp, stats, utils, deadwood
+Suggests: datasets,
+LinkingTo: Rcpp
+Encoding: UTF-8
+SystemRequirements: OpenMP
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-02-23 14:30:05 UTC; gagolews
+Author: Marek Gagolewski [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-0637-6028>),
+  Maciej Bartoszuk [ctb],
+  Anna Cena [ctb],
+  Peter M. Larsen [ctb]
+Maintainer: Marek Gagolewski <marek@gagolewski.com>
+Repository: CRAN
+Date/Publication: 2026-02-23 17:00:20 UTC

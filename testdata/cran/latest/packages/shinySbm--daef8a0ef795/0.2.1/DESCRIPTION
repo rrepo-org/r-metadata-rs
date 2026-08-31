@@ -1,0 +1,49 @@
+Package: shinySbm
+Title: 'shiny' Application to Use the Stochastic Block Model
+Version: 0.2.1
+Authors@R: c(
+    person("Theodore", "Vanrenterghem", , "shiny.sbm.dev@gmail.com", role = "aut"),
+    person("Julie", "Aubert", , "julie.aubert@inrae.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5203-5748")),
+    person("Saint-Clair", "Chabert-Liddell", role = "aut",
+           comment = c(ORCID = "0000-0001-5604-7308")),
+    person("großBM team", role = "ctb"),
+    person("INRAE", role = "cph",
+           comment = c(ROR = "003vg9w96"))
+  )
+Description: A 'shiny' interface for a simpler use of the 'sbm' R package.
+    It also contains useful functions to easily explore the 'sbm' package
+    results.  With this package you should be able to use the stochastic
+    block model without any knowledge in R, get automatic reports and nice
+    visuals, as well as learning the basic functions of 'sbm'.
+License: MIT + file LICENSE
+URL:
+        https://shinysbm-theodore-vanrenterghem-b12616c23cfbfb3f0fe520178bcb95a.pages-forge.inrae.fr/,
+        https://cran.r-project.org/package=shinySbm
+BugReports: https://github.com/Jo-Theo/shinySbm/issues
+Depends: R (>= 3.5.0), sbm
+Imports: colourpicker, config (>= 0.3.1), data.table, dplyr, DT,
+        flextable, fresh, ggplot2, golem (>= 0.3.5), grDevices,
+        magrittr, parallel, patchwork, purrr, rmarkdown, shiny (>=
+        1.7.2), shinyalert, shinydashboard, stats, stringr, utils,
+        visNetwork
+Suggests: htmltools, knitr, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+NeedsCompilation: no
+RoxygenNote: 8.0.0
+Packaged: 2026-07-17 09:50:56 UTC; juaubert
+Author: Theodore Vanrenterghem [aut],
+  Julie Aubert [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5203-5748>),
+  Saint-Clair Chabert-Liddell [aut] (ORCID:
+    <https://orcid.org/0000-0001-5604-7308>),
+  großBM team [ctb],
+  INRAE [cph] (ROR: <https://ror.org/003vg9w96>)
+Maintainer: Julie Aubert <julie.aubert@inrae.fr>
+Repository: CRAN
+Date/Publication: 2026-07-17 08:30:02 UTC

@@ -1,0 +1,23 @@
+Package: causalnet
+Title: Directed Causal Network Enumeration and Simulation
+Version: 0.1.0
+Authors@R: 
+    person(given = "Kyuri", family = "Park", email = "kyurheep@gmail.com", role = c("aut", "cre"))
+Description: Enumerate orientation-consistent directed networks from an undirected
+    or partially directed skeleton, detect feedback loops, summarize topology,
+    and simulate node dynamics via stochastic differential equations.
+License: GPL-3
+URL: https://github.com/KyuriP/causalnet
+BugReports: https://github.com/KyuriP/causalnet/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Imports: stats, ggplot2, tidyr, scales, cowplot
+Suggests: testthat (>= 3.0.0), dplyr, knitr, rmarkdown
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-01 16:03:58 UTC; Kyuri1
+Author: Kyuri Park [aut, cre]
+Maintainer: Kyuri Park <kyurheep@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-05 21:00:10 UTC

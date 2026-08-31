@@ -1,0 +1,96 @@
+Package: openfhe.R
+Title: R Interface to the 'OpenFHE' Fully Homomorphic Encryption
+        Library
+Version: 1.5.1.1
+Authors@R: c(
+    person("Balasubramanian", "Narasimhan", email = "naras@stanford.edu",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-5852-7639")),
+    person("New Jersey Institute of Technology", role = "cph",
+           comment = "OpenFHE C++ library, inst/openfhe/src"),
+    person("Duality Technologies, Inc.", role = c("ctb", "cph"),
+           comment = "OpenFHE C++ library, inst/openfhe/src"),
+    person("Samuel", "Neves", role = c("ctb", "cph"),
+           comment = "BLAKE2 reference implementation, inst/openfhe/src/core"),
+    person("Jean-Philippe", "Aumasson", role = c("ctb", "cph"),
+           comment = "BLAKE2X reference implementation, inst/openfhe/src/core"),
+    person("Randolph", "Voorhies", role = c("ctb", "cph"),
+           comment = "cereal serialization library, inst/openfhe/cereal"),
+    person("Shane", "Grant", role = c("ctb", "cph"),
+           comment = "cereal serialization library, inst/openfhe/cereal"),
+    person("Juan Pedro", "Bolivar Puente", role = c("ctb", "cph"),
+           comment = "cereal std::optional and std::variant support"),
+    person("THL A29 Limited, a Tencent company", role = "cph",
+           comment = "RapidJSON, bundled in inst/openfhe/cereal"),
+    person("Milo", "Yip", role = c("ctb", "cph"),
+           comment = "RapidJSON, bundled in inst/openfhe/cereal"),
+    person("Alexander", "Chemeris", role = c("ctb", "cph"),
+           comment = "msinttypes, bundled in inst/openfhe/cereal"),
+    person("Marcin", "Kalicinski", role = c("ctb", "cph"),
+           comment = "RapidXml, bundled in inst/openfhe/cereal"),
+    person("Rene", "Nyffenegger", role = c("ctb", "cph"),
+           comment = "base64 encoder/decoder, bundled in inst/openfhe/cereal")
+  )
+Description: Provides an R interface to 'OpenFHE', the open-source C++
+    library for fully homomorphic encryption (Al Badawi and others, 2022)
+    <https://eprint.iacr.org/2022/915>, which allows computation directly
+    on encrypted data without access to the secret key. Supports the
+    Brakerski-Fan-Vercauteren (BFV, 2012) <https://eprint.iacr.org/2012/144>,
+    Brakerski-Gentry-Vaikuntanathan (BGV, 2014) <doi:10.1145/2633600>, and
+    Cheon-Kim-Kim-Song (CKKS, 2017) <https://eprint.iacr.org/2016/421>
+    schemes for arithmetic on encrypted numbers, together with the
+    Ducas-Micciancio (FHEW, 2015) <https://eprint.iacr.org/2014/816> and
+    Chillotti-Gama-Georgieva-Izabachene (TFHE, 2020)
+    <https://eprint.iacr.org/2018/421> schemes for evaluating arbitrary
+    functions on encrypted bits.
+License: BSD_2_clause + file LICENSE
+Copyright: file inst/COPYRIGHTS
+URL: https://openfheorg.github.io/openfhe.R/,
+        https://github.com/openfheorg/openfhe.R
+BugReports: https://github.com/openfheorg/openfhe.R/issues
+Depends: R (>= 4.3.0)
+Imports: S7, cli, methods
+Suggests: tinytest, knitr, rmarkdown
+VignetteBuilder: knitr
+LinkingTo: cpp11 (>= 0.4.2)
+SystemRequirements: cmake (>= 3.16), GNU make, C++17
+Collate: 'openfhe-package.R' 'cpp11.R' 'openfhe-object.R' 'enums.R'
+        'generics.R' 'element-params.R' 'crypto-parameters.R'
+        'encoding-params.R' 'params.R' 'params-getters.R' 'context.R'
+        'cryptocontext-getters.R' 'keys.R' 'plaintext.R'
+        'plaintext-accessors.R' 'ciphertext.R' 'ciphertext-accessors.R'
+        'methods-encrypt.R' 'methods-eval.R' 'methods-eval-extra.R'
+        'methods-ckks.R' 'multiparty.R' 'eval-key-map.R'
+        'secret-sharing.R' 'interactive-bootstrap.R' 'binfhe.R'
+        'serialization.R' 'operators.R' 'tolerance.R' 'utils.R' 'zzz.R'
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-22 21:12:34 UTC; naras
+Author: Balasubramanian Narasimhan [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5852-7639>),
+  New Jersey Institute of Technology [cph] (OpenFHE C++ library,
+    inst/openfhe/src),
+  Duality Technologies, Inc. [ctb, cph] (OpenFHE C++ library,
+    inst/openfhe/src),
+  Samuel Neves [ctb, cph] (BLAKE2 reference implementation,
+    inst/openfhe/src/core),
+  Jean-Philippe Aumasson [ctb, cph] (BLAKE2X reference implementation,
+    inst/openfhe/src/core),
+  Randolph Voorhies [ctb, cph] (cereal serialization library,
+    inst/openfhe/cereal),
+  Shane Grant [ctb, cph] (cereal serialization library,
+    inst/openfhe/cereal),
+  Juan Pedro Bolivar Puente [ctb, cph] (cereal std::optional and
+    std::variant support),
+  THL A29 Limited, a Tencent company [cph] (RapidJSON, bundled in
+    inst/openfhe/cereal),
+  Milo Yip [ctb, cph] (RapidJSON, bundled in inst/openfhe/cereal),
+  Alexander Chemeris [ctb, cph] (msinttypes, bundled in
+    inst/openfhe/cereal),
+  Marcin Kalicinski [ctb, cph] (RapidXml, bundled in inst/openfhe/cereal),
+  Rene Nyffenegger [ctb, cph] (base64 encoder/decoder, bundled in
+    inst/openfhe/cereal)
+Maintainer: Balasubramanian Narasimhan <naras@stanford.edu>
+Repository: CRAN
+Date/Publication: 2026-08-23 15:50:15 UTC

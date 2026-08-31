@@ -1,0 +1,34 @@
+Package: textAnnotatoR
+Type: Package
+Title: Interactive Text Annotation Tool with 'shiny' GUI
+Version: 1.0.1
+Date: 2025-8-29
+Authors@R: person("Chao Liu", email = "chaoliu@cedarville.edu", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-9979-8272"))
+Description: A lightweight and focused text annotation tool built with 'shiny'. Provides an 
+    interactive graphical user interface for coding text documents,
+    managing code hierarchies, creating memos, and analyzing coding patterns.
+    Features include code co-occurrence analysis, visualization of coding patterns,
+    comparison of multiple coding sets, and export capabilities. Supports
+    collaborative qualitative research through standardized annotation formats
+    and analysis tools.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: shiny (>= 1.7.0), shinydashboard, shinyjs, shinyFiles,
+        data.tree, jsonlite, DT, readtext, magrittr
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr, mockery, dplyr,
+        ggplot2, ggraph, igraph, plotly, quanteda, quanteda.textstats,
+        tidytext
+URL: https://github.com/chaoliu-cl/textAnnotatoR,
+        http://liu-chao.site/textAnnotatoR/
+BugReports: https://github.com/chaoliu-cl/textAnnotatoR/issues
+Config/testthat/edition: 3
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-08-29 17:47:38 UTC; chaoliu
+Author: Chao Liu [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-9979-8272>)
+Maintainer: Chao Liu <chaoliu@cedarville.edu>
+Repository: CRAN
+Date/Publication: 2025-08-29 18:10:02 UTC

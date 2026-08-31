@@ -1,0 +1,30 @@
+Package: readNSx
+Title: Read 'Blackrock-Microsystems' Files ('NEV', 'NSx')
+Version: 0.0.7
+Authors@R: 
+    c(
+    person(given = "Zhengjia", family = "Wang", 
+        email = "dipterix.wang@gmail.com", role = c("aut", "cre"))
+    )
+Description: Loads 'Blackrock' <https://blackrockneurotech.com> neural signal 
+    data files into the memory, provides utility tools to extract the data into 
+    common formats such as plain-text 'tsv' and 'HDF5'.
+License: MPL-2.0 | file LICENSE
+Language: en-US
+Encoding: UTF-8
+Imports: data.table, fastmap, hdf5r, jsonlite, R6
+LinkingTo: cpp11
+Suggests: bit64, tools, testthat (>= 3.0.0), knitr, rmarkdown, spelling
+SystemRequirements: HDF5 (>= 1.8.13), little-endian platform
+NeedsCompilation: yes
+Copyright: For the readNSx package: Zhengjia Wang.
+URL: http://dipterix.org/readNSx/, https://github.com/dipterix/readNSx
+BugReports: https://github.com/dipterix/readNSx/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-05-22 19:47:21 UTC; dipterix
+Author: Zhengjia Wang [aut, cre]
+Maintainer: Zhengjia Wang <dipterix.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-23 05:10:09 UTC

@@ -1,0 +1,40 @@
+Type: Package
+Package: Familias
+Title: Probabilities for Pedigrees Given DNA Data
+Version: 2.6.4
+Authors@R: c(
+    person(given = "Petter",
+           family = "Mostad",
+           role = "aut",
+           email = "mostad@chalmers.se"),
+    person(given = "Thore",
+           family = "Egeland",
+           role = "aut",
+           email = "Thore.Egeland@nmbu.no"),
+    person(given = "Franco",
+           family = "Marsico",
+           role = c("aut", "cre"),
+           email = "franco.lmarsico@gmail.com"),
+    person(given = "Ivar",
+           family = "Simonsson",
+           role = "aut",
+           email = "simonssi@chalmers.se")
+           )
+Description: An interface to the core 'Familias' functions which are
+    programmed in C++. The implementation is described in Egeland, Mostad and Olaisen
+    (1997) <doi:10.1016/S1355-0306(97)72202-0> and Simonsson and Mostad
+    (2016) <doi:10.1016/j.fsigen.2016.04.005>.
+License: GPL-3
+URL: https://www.familias.name/openfamilias.html
+Depends: kinship2, R (>= 3.4.0), Rsolnp
+Encoding: UTF-8
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2026-02-07 21:35:51 UTC; franco
+Author: Petter Mostad [aut],
+  Thore Egeland [aut],
+  Franco Marsico [aut, cre],
+  Ivar Simonsson [aut]
+Maintainer: Franco Marsico <franco.lmarsico@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-09 08:30:02 UTC

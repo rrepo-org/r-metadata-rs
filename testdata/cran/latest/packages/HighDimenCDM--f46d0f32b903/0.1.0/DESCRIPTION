@@ -1,0 +1,32 @@
+Package: HighDimenCDM
+Type: Package
+Title: Stochastic EM Algorithm for High-Dimensional Cognitive Diagnosis
+        Models
+Version: 0.1.0
+Authors@R: c(person(given = "Yuxuan", family = "Mei", role = c("aut", "cre"),
+    email = "mei00060@umn.edu"),
+    person(given = "Wenchao", family = "Ma", role = c("aut"),
+    email = "wma@umn.edu"),
+    person(given = "Kevin", family = "Wang", role = c("aut"),
+    email = "kaiyuanw@umich.edu"),
+    person(given = "Gongjun", family = "Xu", role = c("aut"),
+    email = "gongjun@umich.edu"))
+Author: Yuxuan Mei [aut, cre],
+  Wenchao Ma [aut],
+  Kevin Wang [aut],
+  Gongjun Xu [aut]
+Maintainer: Yuxuan Mei <mei00060@umn.edu>
+Description: Provides stochastic expectation-maximization (stEM) algorithms for estimating high-dimensional cognitive diagnosis models. The package implements stochastic EM algorithms for cognitive diagnosis models with a large number of attributes. It includes estimation functions and example datasets for model fitting and analysis. The methods are described in Ma, W., Wang, K., and Xu, G. (Accepted). "Parameter estimation of cognitive diagnosis models with stochastic EM algorithm." Behaviometrika.
+License: GPL-3
+LazyData: TRUE
+Depends: R (>= 3.5)
+Imports: coda, GDINA, Rcpp (>= 0.12.1)
+Suggests:
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+NeedsCompilation: yes
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+Packaged: 2026-07-17 02:26:55 UTC; meiyuxuan
+Repository: CRAN
+Date/Publication: 2026-07-24 10:10:05 UTC

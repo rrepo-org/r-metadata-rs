@@ -1,0 +1,34 @@
+Package: sensortowerR
+Title: Interface to 'Sensor Tower' Mobile App Intelligence API
+Version: 1.0.1
+Description: Interface to the 'Sensor Tower' API <https://app.sensortower.com/api/docs/app_analysis>
+    for mobile app analytics and market intelligence. Provides a small, consistent
+    set of functions to retrieve app metadata, publisher information, download and
+    revenue estimates, active user metrics, category rankings, aggregate game
+    market denominators, and market trends.
+    Four core verbs ('st_metrics', 'st_rankings', 'st_app'/'st_apps', 'st_filter')
+    cover the common workflows with standardized parameters and tidyverse-friendly
+    output. Supports both iOS and Android app ecosystems with unified data structures
+    for cross-platform analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, glue, httr, httr2, jsonlite, lubridate, openssl, purrr,
+        rlang, stats, stringr, tibble, tidyr, utils
+Suggests: gt, gtExtras, knitr, pkgbuild, rcmdcheck, rmarkdown, rhub,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Authors@R: 
+    person("Phillip", "Black",
+           email = "pblack@gameeconomistconsulting.com",
+           role = c("aut", "cre"))
+Author: Phillip Black [aut, cre]
+Maintainer: Phillip Black <pblack@gameeconomistconsulting.com>
+URL: https://github.com/econosopher/sensortowerR
+BugReports: https://github.com/econosopher/sensortowerR/issues
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-05-14 10:00:06 UTC; phillip
+Repository: CRAN
+Date/Publication: 2026-05-14 10:20:02 UTC

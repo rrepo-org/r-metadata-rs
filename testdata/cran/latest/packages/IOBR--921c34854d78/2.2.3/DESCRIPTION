@@ -1,0 +1,69 @@
+Package: IOBR
+Title: Immune Oncology Biological Research
+Version: 2.2.3
+Authors@R: c(
+    person("Dongqiang", "Zeng", , "interlaken@smu.edu.cn", role = "aut"),
+    person("Yiran", "Fang", , "fyr_nate@163.com", role = "aut"),
+    person("Shixiang", "Wang", , "w_shixiang@163.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9855-7357")),
+    person("Qingcong", "Luo", , "qingcongl@163.com", role = "aut"),
+    person("Hongqian", "Qian", , "536769786@qq.com", role = "aut")
+  )
+Description: Provides six modules for tumor microenvironment (TME)
+    analysis based on multi-omics data. These modules cover data
+    preprocessing, TME estimation, TME infiltrating patterns, cellular
+    interactions, genome and TME interaction, and visualization for TME
+    relevant features, as well as modelling based on key features. It
+    integrates multiple microenvironmental analysis algorithms and
+    signature estimation methods, simplifying the analysis and downstream
+    visualization of the TME. In addition to providing a quick and easy
+    way to construct gene signatures from single-cell RNA-seq data, it
+    also provides a way to construct a reference matrix for TME
+    deconvolution from single-cell RNA-seq data. The analysis pipeline and
+    feature visualization are user-friendly and provide a comprehensive
+    description of the complex TME, offering insights into tumour-immune
+    interactions (Zeng D, et al. (2024)
+    <doi:10.1016/j.crmeth.2024.100910>.  Fang Y, et al. (2025)
+    <doi:10.1002/mdr2.70001>).
+License: GPL-3
+URL: https://doi.org/10.3389/fimmu.2021.687975 (paper),
+        https://iobr.github.io/book/ (docs),
+        https://iobr.github.io/IOBR/
+BugReports: https://github.com/IOBR/IOBR/issues
+Depends: R (>= 3.6.0)
+Imports: cli, dplyr, ggplot2, glmnet, GSVA, methods, purrr, rlang,
+        stringr, survival, survminer, tibble, tidyr
+Suggests: BiocManager, BiocParallel, biomaRt, circlize,
+        clusterProfiler, ComplexHeatmap, corrplot, DESeq2, doParallel,
+        DOSE, e1071, easier, enrichplot, factoextra, FactoMineR,
+        foreach, ggdensity, ggpp, ggpubr, ggsci, gridExtra, Hmisc,
+        knitr, limma, limSolve, maftools, MASS, Matrix, msigdbr,
+        NbClust, org.Hs.eg.db, org.Mm.eg.db, patchwork, PMCMRplus,
+        pracma, preprocessCore, prettydoc, pROC, psych, RColorBrewer,
+        reshape2, rmarkdown, ROCR, sampling, scales, Seurat,
+        SeuratObject, sva, testthat (>= 3.0.0), tidyHeatmap, timeROC,
+        webr, WGCNA
+VignetteBuilder: knitr
+Additional_repositories: https://bioconductor.org/packages/3.22/bioc,
+        https://bioconductor.org/packages/3.22/data/annotation,
+        https://bioconductor.org/packages/3.22/data/experiment,
+        https://bioconductor.org/packages/3.23/bioc,
+        https://bioconductor.org/packages/3.23/data/annotation,
+        https://bioconductor.org/packages/3.23/data/experiment
+biocViews: GeneExpression, DifferentialExpression, ImmunoOncology,
+        Transcriptomics, Clustering, Survival, Visualization
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: FALSE
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-30 14:20:59 UTC; wsx
+Author: Dongqiang Zeng [aut],
+  Yiran Fang [aut],
+  Shixiang Wang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9855-7357>),
+  Qingcong Luo [aut],
+  Hongqian Qian [aut]
+Maintainer: Shixiang Wang <w_shixiang@163.com>
+Repository: CRAN
+Date/Publication: 2026-05-30 15:30:02 UTC

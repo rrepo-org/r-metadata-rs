@@ -1,0 +1,26 @@
+Package: sfReapportion
+Type: Package
+Title: Reapportion Data from One Geography to Another
+Version: 0.2.0
+Authors@R: c(
+  person("François", "Briatte", email = "f.briatte@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6494-9774")),
+  person("Joël", "Gombin", role = c("aut"), comment = c(ORCID = "0000-0002-9459-4473"))
+  )
+Maintainer: François Briatte <f.briatte@gmail.com>
+Description: A port of the 'spReapportion' package, using Simple Features in order to lose the dependencies to the retired 'maptools' and 'rgeos' packages.
+License: GPL-3
+LazyData: TRUE
+URL: https://github.com/briatte/sfReapportion
+BugReports: https://github.com/briatte/sfReapportion/issues
+Depends: R (>= 4.1)
+Imports: dplyr, sf, sp (>= 2.0-0)
+Suggests: areal, populR, testthat
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-04-20 15:21:33 UTC; fr
+Author: François Briatte [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6494-9774>),
+  Joël Gombin [aut] (ORCID: <https://orcid.org/0000-0002-9459-4473>)
+Repository: CRAN
+Date/Publication: 2026-04-21 20:32:10 UTC

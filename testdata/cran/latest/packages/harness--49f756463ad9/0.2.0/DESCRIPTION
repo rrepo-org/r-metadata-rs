@@ -1,0 +1,32 @@
+Package: harness
+Title: Curated Agentic Harnesses for R Professional Roles
+Version: 0.2.0
+Authors@R: 
+    person("Pedro", "Carvalho Brom", , "pcbrom@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-1288-7695"))
+Description: A bootstrapper that launches a command-line coding agent of the
+    user's choice in a terminal tab pre-configured for a professional R role.
+    Each role is described by a curated harness: a subset of community skills,
+    a system prompt, a folder layout, and quality gates. The package does not
+    run an agent loop and does not call a language model; it discovers the
+    chosen coder binary, generates its configuration, links the curated skills,
+    and opens the terminal. Code written by the agent is run manually by the
+    user, by design, so that every generated script passes through a human
+    audit gate before execution.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Depends: R (>= 4.2)
+Imports: jsonlite, yaml
+Suggests: rstudioapi, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+URL: https://github.com/pcbrom/harness
+BugReports: https://github.com/pcbrom/harness/issues
+NeedsCompilation: no
+Packaged: 2026-08-24 14:25:16 UTC; pcbrom
+Author: Pedro Carvalho Brom [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1288-7695>)
+Maintainer: Pedro Carvalho Brom <pcbrom@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 16:30:09 UTC

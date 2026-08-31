@@ -1,0 +1,36 @@
+Package: SportMiner
+Type: Package
+Title: Text Mining and Topic Modeling for Sport Science Literature
+Version: 0.1.0
+Authors@R: c(
+    person("Praveen D", "Chougale", email = "praveenmaths89@gmail.com", role = c("aut", "cre")),
+    person("Usha", "Ananthakumar", email = "usha@som.iitb.ac.in", role = "aut")
+    )
+Description: A comprehensive toolkit for mining, analyzing, and visualizing
+    scientific literature in sport science domains. Provides functions for
+    retrieving abstracts from 'Scopus', preprocessing text data, performing
+    advanced topic modeling using Latent Dirichlet Allocation ('LDA'),
+    Structural Topic Models ('STM'), and Correlated Topic Models ('CTM'),
+    and creating publication-ready visualizations including keyword
+    co-occurrence networks and topic trends. For methodological details see
+    Blei et al. (2003) <doi:10.1162/jmlr.2003.3.4-5.993> for 'LDA',
+    Roberts et al. (2014) <doi:10.1111/ajps.12103> for 'STM', and
+    Blei and Lafferty (2007) <doi:10.1214/07-AOAS114> for 'CTM'.
+License: MIT + file LICENSE
+URL: https://github.com/praveenmaths89/SportMiner
+BugReports: https://github.com/praveenmaths89/SportMiner/issues
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: rscopus, dplyr, tidytext, topicmodels, stm, ggplot2, rlang,
+        SnowballC, scales, textmineR, Matrix, tidyr, ggraph, igraph,
+        widyr, magrittr, slam
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, withr
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-12 08:51:13 UTC; apple
+Author: Praveen D Chougale [aut, cre],
+  Usha Ananthakumar [aut]
+Maintainer: Praveen D Chougale <praveenmaths89@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-17 11:40:02 UTC

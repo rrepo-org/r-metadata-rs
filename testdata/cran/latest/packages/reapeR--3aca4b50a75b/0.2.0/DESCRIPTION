@@ -1,0 +1,28 @@
+Package: reapeR
+Type: Package
+Title: Interface to the 'REAPER' Library
+Version: 0.2.0
+Authors@R: c(
+  person("Rasmus", "Puggaard-Rode",
+    email = "rasmus.puggaard-rode@ling-phil.ox.ac.uk",
+    role = c("aut", "cre")),
+  person("David", "Talkin", role = "ctb"),
+  person("Google Inc.", role = "cph"))
+Description: Wrapper for David Talkin's 'Robust Epoch and Pitch EstimatoR' (REAPER) software for estimating pitch and glottal closure instants from recordings of speech. For more information about the procedure, see <https://github.com/google/REAPER/tree/master>.
+Encoding: UTF-8
+Depends: R (>= 3.1.0)
+Imports: dplyr (>= 1.1.4), emuR (>= 2.5.2), readr (>= 2.1.5), stats (>=
+        4.5.1), tuneR (>= 1.4.7), wrassp (>= 1.0.5), Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+RoxygenNote: 7.3.3
+License: Apache License (>= 2)
+URL: https://github.com/rpuggaardrode/reapeR
+BugReports: https://github.com/rpuggaardrode/reapeR/issues
+NeedsCompilation: yes
+Packaged: 2026-08-20 08:50:11 UTC; cpgl0183
+Author: Rasmus Puggaard-Rode [aut, cre],
+  David Talkin [ctb],
+  Google Inc. [cph]
+Maintainer: Rasmus Puggaard-Rode <rasmus.puggaard-rode@ling-phil.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-08-24 10:10:02 UTC

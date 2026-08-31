@@ -1,0 +1,28 @@
+Package: textpress
+Type: Package
+Title: A Lightweight and Versatile NLP Toolkit
+Version: 1.1.1
+Authors@R: c(person("Jason", "Timm", role = c("aut", "cre"), email = "JaTimm@salud.unm.edu"))
+Maintainer: Jason Timm <JaTimm@salud.unm.edu>
+Description: A toolkit for web scraping, modular NLP pipelines, and text
+    preparation for large language models. Organized around four core
+    actions: fetching, reading, processing, and searching. Covers the full
+    pipeline from raw web data acquisition to structural text processing and
+    BM25 indexing. Supports multiple retrieval strategies including regex,
+    dictionary matching, and ranked keyword search. Pipe-friendly with no
+    heavy dependencies; all outputs are plain data frames or data.tables.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5)
+Imports: data.table, httr, Matrix, rvest, stringi, stringr, xml2,
+        pbapply, jsonlite, lubridate
+Suggests: SnowballC (>= 0.7.0), DT, dplyr
+RoxygenNote: 7.3.3
+URL: https://github.com/jaytimm/textpress,
+        https://jaytimm.github.io/textpress/
+BugReports: https://github.com/jaytimm/textpress/issues
+NeedsCompilation: no
+Packaged: 2026-03-17 21:59:49 UTC; jtimm
+Author: Jason Timm [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-03-17 22:40:02 UTC

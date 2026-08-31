@@ -1,0 +1,32 @@
+Package: R2camtrapdp
+Type: Package
+Title: Convert Camera Trap Dataset to 'Camtrap DP'
+Version: 2.0.0
+Authors@R: c(
+    person("Kana", "Terayama", role = c("aut", "cre"),
+           email = "terayama.kana@nies.go.jp", comment = "@KanaTerayama"),
+    person("Keita", "Fukasawa", role = "aut", comment = "@kfukasawa37"))
+Description: Builds Camera Trap Data Packages ('Camtrap DP') from arbitrary spreadsheets in a schema-driven way: table structure, types, constraints and relations are read from the 'Frictionless' table schemas of the requested 'Camtrap DP' version, so any version and custom columns are handled automatically. Provides validation against the schemas and an optional bridge to the 'frictionless' 'Python' framework. The 'Camtrap DP' standard is described in Bubnicki et al. (2023) <doi:10.1002/rse2.374>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: R6, jsonlite, tibble, magrittr, lubridate, dplyr, tidyr,
+        purrr, readr, httr, taxadb, stats, utils
+Suggests: camtrapdp, knitr, rmarkdown, testthat (>= 3.0.0),
+        jsonvalidate, spelling
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+Config/roxygen2/version: 8.0.0
+SystemRequirements: Python (>= 3.8) with the 'frictionless' package
+        (optional; only for validate_frictionless())
+        Config/testthat/edition: 3
+URL: https://github.com/kfukasawa37/R2camtrapdp
+BugReports: https://github.com/kfukasawa37/R2camtrapdp/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-23 02:23:45 UTC; Kana Terayama
+Author: Kana Terayama [aut, cre] (@KanaTerayama),
+  Keita Fukasawa [aut] (@kfukasawa37)
+Maintainer: Kana Terayama <terayama.kana@nies.go.jp>
+Repository: CRAN
+Date/Publication: 2026-06-29 13:00:48 UTC

@@ -1,0 +1,35 @@
+Package: ggDNAvis
+Title: 'ggplot2'-Based Tools for Visualising DNA Sequences and
+        Modifications
+Version: 1.0.1
+Authors@R: 
+    person(
+        "Evelyn", "Jade", 
+        email = "evelynjade42@gmail.com", 
+        role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0009-0003-7761-5425")
+    )
+Description: Uses 'ggplot2' to visualise either (a) a single DNA/RNA sequence split across multiple lines, (b) multiple DNA/RNA sequences, each occupying a whole line, or (c) base modifications such as DNA methylation called by modified bases models in Dorado or Guppy. Functions starting with visualise_<>() are the main plotting functions, and functions starting with extract_and_sort_<>() are key helper functions for reading files and reformatting data. Source code is available at <https://github.com/ejade42/ggDNAvis>, a full non-expert user guide is available at <https://ejade42.github.io/ggDNAvis/>, and an interactive web-app version of the software is available at <https://ejade42.github.io/ggDNAvis/articles/interactive_app.html>.
+Imports: cli, dplyr, ggnewscale, ggplot2 (>= 4.0.0), grid, png, ragg,
+        rlang, stats, stringr, tidyr, utils
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: bslib, colourpicker, jsonlite, knitr, magick, markdown,
+        rmarkdown, shiny, shinyjs, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+Language: en-GB
+URL: https://ejade42.github.io/ggDNAvis/,
+        https://github.com/ejade42/ggDNAvis,
+        https://doi.org/10.64898/2026.03.02.708895
+BugReports: https://github.com/ejade42/ggDNAvis/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-23 03:35:10 UTC; ejad042
+Author: Evelyn Jade [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0003-7761-5425>)
+Maintainer: Evelyn Jade <evelynjade42@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-23 04:00:02 UTC

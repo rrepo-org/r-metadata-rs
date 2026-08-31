@@ -1,0 +1,55 @@
+Package: RDesk
+Title: Native Desktop App Framework for 'R'
+Version: 1.0.5
+Authors@R: c(
+    person("Janakiraman", "G",
+           email = "janakiraman.bt@gmail.com",
+           role  = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6050-2318")),
+    person("Serge", "Zaitsev",
+           role  = "cph",
+           comment = "Author of webview library (src/webview/webview.h)"),
+    person(given   = "Niels",
+           family  = "Lohmann",
+           role    = "cph",
+           comment = "Author of nlohmann/json (inst/include/nlohmann/json.hpp)"),
+    person(given   = "Microsoft Corporation",
+           role    = "cph",
+           comment = "WebView2 SDK (src/webview2_sdk/)")
+  )
+Description: Build native Windows desktop applications using 'R' and 
+    'WebView2'. Provides a robust 'R6'-based event loop, asynchronous 
+    background task management via 'mirai' and 'callr', and a native 
+    'Win32' message bridge for seamless 'R'-to-user-interface 
+    communication without listening ports or network overhead. Allows 'R' 
+    developers to create professional, standalone desktop tools with modern 
+    web-based user interfaces while maintaining a pure 'R' backend.
+OS_type: windows
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+URL: https://github.com/Janakiraman-311/RDesk,
+        https://janakiraman-311.github.io/RDesk/
+BugReports: https://github.com/Janakiraman-311/RDesk/issues
+SystemRequirements: Windows 10 or later, 'Rtools44' or later
+        (https://cran.r-project.org/bin/windows/Rtools/), Microsoft
+        'WebView2' Runtime
+        (https://developer.microsoft.com/microsoft-edge/webview2/)
+RoxygenNote: 7.3.3
+Imports: R6, jsonlite, digest, processx, callr, mirai (>= 1.0.0),
+        base64enc, zip, stats, utils, parallel
+Suggests: testthat (>= 3.0.0), withr, fs, knitr, rmarkdown, devtools,
+        renv, broom, ggplot2, dplyr, rstudioapi, pkgdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-04-22 09:34:40 UTC; Janak
+Author: Janakiraman G [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6050-2318>),
+  Serge Zaitsev [cph] (Author of webview library (src/webview/webview.h)),
+  Niels Lohmann [cph] (Author of nlohmann/json
+    (inst/include/nlohmann/json.hpp)),
+  Microsoft Corporation [cph] (WebView2 SDK (src/webview2_sdk/))
+Maintainer: Janakiraman G <janakiraman.bt@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-22 13:00:02 UTC

@@ -1,0 +1,24 @@
+Package: planr
+Title: Tools for Supply Chain Management, Demand and Supply Planning
+Version: 0.6.5
+Authors@R: 
+    person("Nicolas", "Nguyen", email = "nikonguyen@yahoo.fr", role = c("aut", "cre"))
+Description: Perform flexible and quick calculations for Demand and Supply Planning, such as projected inventories and coverages, as well as replenishment plan. For any time bucket, daily, weekly or monthly, and any granularity level, product or group of products.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, tidyr, lubridate, magrittr, RcppRoll
+URL: https://github.com/nguyennico/planr
+BugReports: https://github.com/nguyennico/planr/issues
+Depends: R (>= 4.1.0)
+LazyData: true
+Suggests: highcharter, knitr, reactable, rmarkdown, shiny, tidyverse,
+        sparkline, DT, networkD3, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-23 08:47:15 UTC; nicolas
+Author: Nicolas Nguyen [aut, cre]
+Maintainer: Nicolas Nguyen <nikonguyen@yahoo.fr>
+Repository: CRAN
+Date/Publication: 2026-08-23 09:30:08 UTC

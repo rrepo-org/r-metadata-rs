@@ -1,0 +1,36 @@
+Package: havel
+Type: Package
+Title: Visualize and Tabulate 'R' Package Dependencies
+Version: 0.1.2
+Authors@R: c(
+    person("Andrew", "Ghazi", role = c("aut", "cre", "cph"), 
+           email = "andrew_ghazi@hms.harvard.edu"),
+    person("David", "Schoch", email = "david@schochastics.net", role = c("cph"),
+           comment = "Original author of 'graphlayouts' code adapted in src/stress.cpp")
+    )
+Description: Plot an 'R' package's recursive dependency graph and tabulate the 
+    number of unique downstream dependencies added by top-level dependencies. 
+    This helps 'R' package developers identify which of their declared 
+    dependencies add the most downstream dependencies in order to prioritize
+    them for removal if needed. Uses graph stress minimization adapted from 
+    Schoch (2023) <doi:10.21105/joss.05238> and originally reported in Gansner 
+    et al. (2004) <doi:10.1007/978-3-540-31843-9_25>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: cli, collapse, cppRouting, data.table, graphics, grDevices,
+        grid, methods, pak, Rcpp, rlang, stats, tools, utils
+Suggests: ggplot2, ggraph, igraph, pals, tinytest
+LazyData: true
+URL: https://github.com/andrewGhazi/havel
+BugReports: https://github.com/andrewGhazi/havel/issues
+NeedsCompilation: yes
+Packaged: 2025-12-12 15:50:18 UTC; ghazi
+Author: Andrew Ghazi [aut, cre, cph],
+  David Schoch [cph] (Original author of 'graphlayouts' code adapted in
+    src/stress.cpp)
+Maintainer: Andrew Ghazi <andrew_ghazi@hms.harvard.edu>
+Repository: CRAN
+Date/Publication: 2025-12-18 14:10:02 UTC

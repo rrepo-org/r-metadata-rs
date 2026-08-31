@@ -1,0 +1,48 @@
+Package: DeepLearningCausal
+Type: Package
+Title: Causal Inference with Super Learner and Deep Neural Networks
+Version: 0.0.107
+Authors@R: c(
+    person(given = "Nguyen K.",
+           family = "Huynh",
+           email = "khoinguyen.huynh@r.hit-u.ac.jp",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6234-7232")),   
+    person(given = "Bumba",
+           family = "Mukherjee", 
+           email = "bumba.mukherjee@psu.edu",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-3453-601X")),  
+    person(given = "Yang",
+           family = "Yang", 
+           email = "yky5272@psu.edu",
+           role = c("aut"),
+           comment = c(ORCID = "0009-0004-6135-4555")))
+Maintainer: Nguyen K. Huynh <khoinguyen.huynh@r.hit-u.ac.jp>
+Description: Functions for deep learning estimation of Conditional Average Treatment Effects (CATEs) 
+    from meta-learner models and Population Average Treatment Effects on the Treated (PATT) in settings with 
+    treatment noncompliance using reticulate, TensorFlow and Keras3. Functions in the package also implements
+    the conformal prediction framework that enables computation and illustration of conformal prediction (CP) 
+    intervals for estimated individual treatment effects (ITEs) from meta-learner models. Additional
+    functions in the package permit users to estimate the meta-learner CATEs and the PATT in settings with
+    treatment noncompliance using weighted ensemble learning via the super learner approach and R neural networks.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: ROCR, caret, neuralnet, SuperLearner, ggplot2, tidyr,
+        magrittr, reticulate, keras3, Hmisc
+Suggests: testthat (>= 3.0.0), dplyr, class, xgboost, randomForest,
+        glmnet, ranger, gam, e1071, gbm, tensorflow
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+URL: https://github.com/hknd23/DeepLearningCausal
+BugReports: https://github.com/hknd23/DeepLearningCausal/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-30 07:58:32 UTC; nguye
+Author: Nguyen K. Huynh [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6234-7232>),
+  Bumba Mukherjee [aut] (ORCID: <https://orcid.org/0000-0002-3453-601X>),
+  Yang Yang [aut] (ORCID: <https://orcid.org/0009-0004-6135-4555>)
+Repository: CRAN
+Date/Publication: 2025-10-30 10:30:02 UTC

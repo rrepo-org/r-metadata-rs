@@ -1,0 +1,38 @@
+Package: OptOTrials
+Type: Package
+Title: Optimal Two-Stage Designs for Ordered Categorical Outcomes
+Version: 1.0.3
+Date: 2026-08-26
+Authors@R: c(
+    person(given = "Yeonhee", family = "Park",
+           email = "yeonheepark@skku.edu",
+           role = c("aut","cre")),
+    person(given = "Yudi", family = "Wang", role = "aut"),
+    person(given = "Zhanpeng", family = "Xu", role = "aut"))
+Description: Functions to design and simulate optimal two-stage randomized
+    controlled trials (RCTs) with ordered categorical outcomes, supporting
+    rank-based tests and group-sequential decision rules. Methods build on
+    classical and modern rank tests and two-stage/Group-Sequential designs,
+    e.g., Park (2025) <doi: 10.1371/journal.pone.0318211>. The functions
+    'rule()', 'op()' and 'design_table()' provide a single entry point for
+    constructing designs, evaluating their operating characteristics, and
+    tabulating several designs at once. The earlier functions, one for each
+    combination of test statistic and stopping rule, are retained and still
+    return the same values, but they are deprecated: each warns and names its
+    replacement, and they will be removed in the next version. Please see the
+    package reference manual and the vignette for details.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: stats
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Author: Yeonhee Park [aut, cre],
+  Yudi Wang [aut],
+  Zhanpeng Xu [aut]
+Maintainer: Yeonhee Park <yeonheepark@skku.edu>
+Packaged: 2026-08-31 02:32:03 UTC; ypark56
+Repository: CRAN
+Date/Publication: 2026-08-31 18:20:02 UTC

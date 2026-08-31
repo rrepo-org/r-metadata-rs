@@ -1,0 +1,43 @@
+Package: NBDCtools
+Title: National Institutes of Health Brain Development Cohorts Data Hub
+        Tools
+Description: A suite of functions to work with data from the National Institutes 
+  of Health Brain Development Cohorts Data Hub. The package provides tools to 
+  create, clean, process, and filter datasets and associated metadata. These 
+  utilities are intended to simplify reproducible data-preparation for 
+  future research.
+URL: https://software.nbdc-datahub.org/NBDCtools/
+Version: 1.1.0
+Authors@R: c(
+    person(given = "Le",
+       family = "Zhang",
+       email = "dairc.service@gmail.com",
+       role = c("aut", "cre"),
+       comment = c(ORCID = "0009-0008-0205-2150")),
+    person(given = "Janosch",
+       family = "Linkersdoerfer",
+       email = "linkersdoerfer@gmail.com",
+       role = c("aut"),
+       comment = c(ORCID = "0000-0002-1577-1233")))
+Additional_repositories: https://nbdc-datahub.r-universe.dev
+Depends: R (>= 4.3.0)
+Imports: arrow, chk, cli, dplyr, glue, magrittr, purrr, readr, stringr,
+        sjlabelled, jsonlite, hms, tidyr, rlang, utils, tibble, stats,
+        sjmisc, haven, crayon, utils
+Suggests: testthat (>= 3.0.0), usethis, knitr, rmarkdown, naniar,
+        NBDCtoolsData
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Config/Needs/website: rmarkdown
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-23 23:11:21 UTC; lz
+Author: Le Zhang [aut, cre] (ORCID: <https://orcid.org/0009-0008-0205-2150>),
+  Janosch Linkersdoerfer [aut] (ORCID:
+    <https://orcid.org/0000-0002-1577-1233>)
+Maintainer: Le Zhang <dairc.service@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-23 23:30:02 UTC

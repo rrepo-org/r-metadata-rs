@@ -1,0 +1,49 @@
+Package: textclean
+Title: Text Cleaning Tools
+Version: 0.9.7
+Authors@R: c( 
+        person("Tyler", "Rinker", email = "tyler.rinker@gmail.com", role = c("aut", "cre")), 
+        person("ctwheels", "StackOverflow", role = "ctb"), 
+        person("Surin", "Space", role = "ctb")  
+    )
+Maintainer: Tyler Rinker <tyler.rinker@gmail.com>
+Description: Tools to clean and process text.  Tools are geared at checking for substrings that
+          are not optimal for analysis and replacing or removing them (normalizing) with more
+          analysis friendly substrings (see Sproat, Black, Chen, Kumar, Ostendorf, & Richards
+          (2001) <doi:10.1006/csla.2001.0169>) or extracting them into new variables. For
+          example, emoticons are often used in text but not always easily handled by analysis
+          algorithms.  The replace_emoticon() function replaces emoticons with word
+          equivalents.
+Depends: R (>= 3.4.0)
+Imports: data.table, english(>= 1.0-2), glue (>= 1.3.0), lexicon (>=
+        1.0.0), mgsub (>= 1.5.0), qdapRegex, stringi, textshape(>=
+        1.0.1), utils
+Suggests: hunspell, testthat
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+URL: https://github.com/trinker/textclean
+BugReports: https://github.com/trinker/textclean/issues
+Collate: 'add_comma_space.R' 'add_missing_endmark.R' 'utils.R'
+        'replace_html.R' 'check_text_logicals.R' 'check_text.R'
+        'drop_element.R' 'drop_row.R' 'fgsub.R' 'fix_mdyyyy.R'
+        'glue-reexports.R' 'has_endmark.R' 'like.R' 'make_plural.R'
+        'match_tokens.R' 'mgsub.R' 'replace_contraction.R'
+        'replace_date.R' 'replace_email.R' 'replace_emoji.R'
+        'replace_emoticon.R' 'replace_grade.R' 'replace_hash.R'
+        'replace_incomplete.R' 'replace_internet_slang.R'
+        'replace_kerning.R' 'replace_misspelling.R' 'replace_money.R'
+        'replace_names.R' 'replace_non_ascii.R' 'replace_number.R'
+        'replace_ordinal.R' 'replace_rating.R' 'replace_symbol.R'
+        'replace_tag.R' 'replace_time.R' 'replace_to.R'
+        'replace_tokens.R' 'replace_url.R' 'replace_white.R'
+        'replace_word_elongation.R' 'strip.R' 'sub_holder.R' 'swap.R'
+        'textclean-package.R'
+NeedsCompilation: no
+Packaged: 2026-03-05 04:09:41 UTC; tylerrinker
+Author: Tyler Rinker [aut, cre],
+  ctwheels StackOverflow [ctb],
+  Surin Space [ctb]
+Repository: CRAN
+Date/Publication: 2026-03-05 06:10:02 UTC

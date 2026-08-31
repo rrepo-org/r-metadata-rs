@@ -1,0 +1,26 @@
+Package: MBRM
+Type: Package
+Title: Mixed Regression Models with Generalized Log-Gamma Random
+        Effects
+Version: 0.1.1
+Authors@R: c(person("Lizandra C.", "Fabio", email = "lizandra.fabio@ufba.br", role = "aut"),
+  person("Vanessa", "Barros", email = "vbarrosoliveira@gmail.com", role = "aut"),
+  person("Cristian", "Lobos", email = "clobos@usp.br ", role = "aut"),
+  person("Jalmar M. F.", "Carrasco", email = "carrasco.jalmar@ufba.br", role = c("aut", "cre")))
+Author: Lizandra C. Fabio [aut],
+  Vanessa Barros [aut],
+  Cristian Lobos [aut],
+  Jalmar M. F. Carrasco [aut, cre]
+Maintainer: Jalmar M. F. Carrasco <carrasco.jalmar@ufba.br>
+Description: Multivariate distribution derived from a Bernoulli mixed model under a marginal approach, incorporating a non-normal random intercept whose distribution is assumed to follow a generalized log-gamma (GLG) specification under a particular parameter setting. Estimation is performed by maximizing the log-likelihood using numerical optimization techniques (Lizandra C. Fabio, Vanessa Barros, Cristian Lobos, Jalmar M. F. Carrasco, Marginal multivariate approach: A novel strategy for handling correlated binary outcomes, 2025, under submission).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp
+Imports: Rcpp, stats, Formula, tibble, dplyr, ggplot2
+Depends: R (>= 3.5)
+NeedsCompilation: yes
+Packaged: 2025-12-18 12:42:04 UTC; carra
+Repository: CRAN
+Date/Publication: 2025-12-22 19:50:07 UTC

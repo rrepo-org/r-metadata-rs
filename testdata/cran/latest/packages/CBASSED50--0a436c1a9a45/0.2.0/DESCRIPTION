@@ -1,0 +1,33 @@
+Type: Package
+Package: CBASSED50
+Title: Process CBASS-Derived PAM Data
+Version: 0.2.0
+Authors@R: c(
+    person(given = "Yulia", family = "Iakovleva",
+            role = c("aut"),
+            comment = c(ORCID = "0000-0002-0202-7245")),
+    person(given = "Luigi", family = "Colin",
+            email = "reefgenomics@gmail.com", role = c("aut", "cre"),
+            comment = c(ORCID = "0000-0002-6966-2817")),
+    person(given = "Christian Robert", family = "Voolstra",
+            role = c("aut"),
+            comment = c(ORCID = "0000-0003-4555-3795")))
+Maintainer: Luigi Colin <reefgenomics@gmail.com>
+Description: Tools to process CBASS-derived PAM data efficiently. Minimal requirements are PAM-based photosynthetic efficiency data (or data from any other continuous variable that changes with temperature, e.g. relative bleaching scores) from 4 coral samples (nubbins) subjected to 4 temperature profiles of at least 2 colonies from 1 coral species from 1 site. Please refer to the following CBASS (Coral Bleaching Automated Stress System) papers for in-depth information regarding CBASS acute thermal stress assays, experimental design considerations, and ED5/ED50/ED95 thermal parameters: Nicolas R. Evensen et al. (2023) <doi:10.1002/lom3.10555> Christian R. Voolstra et al. (2020) <doi:10.1111/gcb.15148> Christian R. Voolstra et al. (2025) <doi:10.1146/annurev-marine-032223-024511>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: drc, rlog, stats, utils, dplyr, ggplot2, readxl, glue
+Depends: R (>= 3.5.0)
+Date: 2025-05-28
+NeedsCompilation: no
+Packaged: 2025-06-04 10:40:29 UTC; colinl
+Author: Yulia Iakovleva [aut] (ORCID: <https://orcid.org/0000-0002-0202-7245>),
+  Luigi Colin [aut, cre] (ORCID: <https://orcid.org/0000-0002-6966-2817>),
+  Christian Robert Voolstra [aut] (ORCID:
+    <https://orcid.org/0000-0003-4555-3795>)
+Repository: CRAN
+Date/Publication: 2025-06-06 12:50:08 UTC

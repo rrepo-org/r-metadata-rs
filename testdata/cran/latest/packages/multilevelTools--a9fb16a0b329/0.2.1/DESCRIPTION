@@ -1,0 +1,33 @@
+Package: multilevelTools
+Title: Multilevel and Mixed Effects Model Diagnostics and Effect Sizes
+Version: 0.2.1
+Authors@R: 
+    person(given = "Joshua F.",
+           family = "Wiley",
+           role = c("aut", "cre"),
+           email = "jwiley.psych@gmail.com",
+           comment = c(ORCID = "0000-0002-0271-6702"))	   
+URL: https://joshuawiley.com/multilevelTools/,
+        https://github.com/JWiley/multilevelTools
+BugReports: https://github.com/JWiley/multilevelTools/issues
+Description: Effect sizes, diagnostics and performance metrics for
+  multilevel and mixed effects models.
+  Includes marginal and conditional 'R2' estimates for linear mixed effects models
+  based on Johnson (2014) <doi:10.1111/2041-210X.12225>.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: lme4, lmerTest, data.table (>= 1.14.6), nlme, extraoperators
+        (>= 0.2.0), JWileymisc (>= 1.4.2), ggplot2, ggpubr, scales,
+        lavaan, zoo, brms, testthat (>= 3.1.0), reformulas
+Suggests: covr, knitr, rmarkdown
+Encoding: UTF-8
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-07 13:18:41 UTC; jwile
+Author: Joshua F. Wiley [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0271-6702>)
+Maintainer: Joshua F. Wiley <jwiley.psych@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-07 22:00:23 UTC

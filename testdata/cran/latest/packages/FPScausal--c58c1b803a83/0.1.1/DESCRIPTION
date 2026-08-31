@@ -1,0 +1,31 @@
+Package: FPScausal
+Type: Package
+Title: Functional Propensity Score for Causal Inference
+Version: 0.1.1
+Authors@R: c(
+    person("Nicole", "Fontana", email = "nicole.fontana@polimi.it",
+           role = c("aut", "cre")),
+    person("Simone", "Ciardulli", email = "simone.ciardulli@mail.polimi.it",
+           role = "aut"),
+    person("Simone", "Vantini", role = "ths"),
+    person("Francesca", "Ieva", role = "ths"))
+Description: Implements functional propensity score (FPS) weighting for causal inference with functional treatments. The method estimates weights that balance observed confounders by removing their dependence on the functional treatment and uses a dual formulation of the weighting problem for efficient unconstrained optimization. The framework supports scalar, binary, and functional outcomes, as well as functional covariates, and can be used to estimate marginal causal effects in settings with time-varying exposures. The methodology follows Ciardulli, S., Fontana, N., Vantini, S., and Ieva, F. (2026) "Generalized propensity score weighting for functional causal inference framework" <doi:10.48550/arXiv.2608.03200>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: fda (>= 6.0.0), ggplot2 (>= 3.4.0), tidyr (>= 1.2.0), MASS (>=
+        7.3-0), wCorr, patchwork (>= 1.1.0), progress (>= 1.2.0),
+        stats, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-20 14:36:53 UTC; nicole.fontana
+Author: Nicole Fontana [aut, cre],
+  Simone Ciardulli [aut],
+  Simone Vantini [ths],
+  Francesca Ieva [ths]
+Maintainer: Nicole Fontana <nicole.fontana@polimi.it>
+Repository: CRAN
+Date/Publication: 2026-08-23 10:20:02 UTC

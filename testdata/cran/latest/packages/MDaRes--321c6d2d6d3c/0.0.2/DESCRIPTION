@@ -1,0 +1,47 @@
+Package: MDaRes
+Title: MD Analysis of Residue Properties Using Structural Alphabets
+Version: 0.0.2
+Authors@R: 
+    c(
+      person(given = "Nancy",
+             family = "D'Arminio",
+             role = c("aut"),
+             email = "nancydarminio67@gmail.com",
+             comment = c(ORCID = "0000-0002-8065-2142")),
+      person(given = "Anna",
+             family = "Marabotti",
+             role = "aut",
+             email = "amarabotti@unisa.it",
+             comment = c(ORCID = "0000-0002-9510-5205")),
+      person(given = "Alessandro",
+             family = "Pandini",
+             role = c("aut", "cph", "cre"),
+             email = "alessandro.pandini@gmail.com",
+             comment = c(ORCID = "0000-0002-4158-233X"))
+    )
+Description: Analyze molecular dynamics (MD) simulation data using structural
+    alphabets. Protein local conformations from molecular simulations are
+    encoded in a compressed string representation. Residue-level UniProt
+    annotations can be directly retrieved. Comparative analysis tools are
+    available to investigate conformational variability, coordinated motions,
+    and differences between systems (e.g. wild-type vs mutant; bound vs unbound).
+    Methodological details for the structural alphabet analysis can be found in
+    Pandini et al. (2013) <doi:10.1093/bioinformatics/btt326>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: bio3d, DescTools, SOMMD, tools, dplyr, tidyr, stringr,
+        UniprotR, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: httr, future, future.apply, curl, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-08-20 18:15:17 UTC; apandini
+Author: Nancy D'Arminio [aut] (ORCID: <https://orcid.org/0000-0002-8065-2142>),
+  Anna Marabotti [aut] (ORCID: <https://orcid.org/0000-0002-9510-5205>),
+  Alessandro Pandini [aut, cph, cre] (ORCID:
+    <https://orcid.org/0000-0002-4158-233X>)
+Maintainer: Alessandro Pandini <alessandro.pandini@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 15:10:09 UTC

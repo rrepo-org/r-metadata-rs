@@ -1,0 +1,45 @@
+Package: gp3bayes
+Title: Contract-First Bayesian Workflows for Hierarchical Behavioural
+        Data
+Version: 0.5.0
+Authors@R: 
+    person(
+      given = "Stefanos",
+      family = "Balaskas",
+      email = "s.balaskas@ac.upatras.gr",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0003-2444-9796")
+    )
+Description: Provides transparent, contract-first infrastructure for Bayesian
+    analysis of repeated-measures and hierarchical behavioural data. It
+    supports approved Bernoulli-logit, positive lognormal duration, and
+    governed Gaussian dynamic-pupillometry workflows with strict readiness
+    auditing, deterministic simulation, explicit preparation and
+    transformation replay, inspectable scale-aware priors, prior and posterior
+    predictive checks, restricted optional fitting through 'brms' with either
+    'rstan' or 'cmdstanr', sampling and temporal diagnostics, explicit
+    posterior estimands, sensitivity analysis, target-specific predictive
+    validation, simulation-based calibration, and conservative reporting.
+    Core contracts and validation remain backend-independent.
+    Version 0.5 adds governed robust and distributional dynamic pupillometry, bounded ARMA residual structures, Gaussian-process trajectories, explicit measurement uncertainty and missing-data models, joint binocular analysis, predictive model comparison, functional posterior estimands, and experimental nonlinear response-shape models while preserving explicit scientific and computational governance boundaries.
+License: MIT + file LICENSE
+URL: https://stefanosbalaskas.github.io/gp3bayes/,
+        https://github.com/stefanosbalaskas/gp3bayes
+BugReports: https://github.com/stefanosbalaskas/gp3bayes/issues
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Imports: withr, stats
+Suggests: ggplot2, SBC, bayesplot, brms, cmdstanr, detectseparation,
+        knitr, loo, posterior, priorsense, rmarkdown, rstan, testthat
+        (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Additional_repositories: https://stan-dev.r-universe.dev,
+        https://r-multiverse.r-universe.dev
+NeedsCompilation: no
+Packaged: 2026-08-18 09:10:21 UTC; Stefanos-PC
+Author: Stefanos Balaskas [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2444-9796>)
+Maintainer: Stefanos Balaskas <s.balaskas@ac.upatras.gr>
+Repository: CRAN
+Date/Publication: 2026-08-23 10:40:44 UTC

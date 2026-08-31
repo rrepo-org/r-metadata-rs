@@ -1,0 +1,26 @@
+Package: pickmax
+Type: Package
+Title: Split and Coalesce Duplicated Records
+Version: 0.1.0
+Authors@R: c(person("Sbonelo", "Chamane", email = "SChamane@hsrc.ac.za", role = c("aut", "cre"), comment = "ORCID: 0000-0001-5350-5203"),
+  person("Musawenkosi", "Mabaso", role = "aut"),
+  person("Ronel", "Sewpaul", role = "aut"),
+  person("Sean", "Jooste", role = "aut"),
+  person("Kutloano", "Skhosana", role = "aut"),
+  person("Khangelani", "Zuma", role = "aut"))
+Maintainer: Sbonelo Chamane <SChamane@hsrc.ac.za>
+Description: Deduplicates datasets by retaining the most complete and informative records. Identifies duplicated entries based on a specified key column, calculates completeness scores for each row, and compares values within groups. When differences between duplicates exceed a user-defined threshold, records are split into unique IDs; otherwise, they are coalesced into a single, most complete entry. Returns a list containing the original duplicates, the split entries, and the final coalesced dataset. Useful for cleaning survey or administrative data where duplicated IDs may reflect minor data entry inconsistencies.
+License: GPL-3
+Encoding: UTF-8
+Imports: dplyr, rlang, magrittr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-07-10 13:43:34 UTC; SChamane
+Author: Sbonelo Chamane [aut, cre] (ORCID: 0000-0001-5350-5203),
+  Musawenkosi Mabaso [aut],
+  Ronel Sewpaul [aut],
+  Sean Jooste [aut],
+  Kutloano Skhosana [aut],
+  Khangelani Zuma [aut]
+Repository: CRAN
+Date/Publication: 2025-07-15 11:40:05 UTC

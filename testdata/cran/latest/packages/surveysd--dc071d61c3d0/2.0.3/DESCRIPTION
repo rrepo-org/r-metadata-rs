@@ -1,0 +1,36 @@
+Package: surveysd
+Type: Package
+Title: Survey Standard Error Estimation for Cumulated Estimates and
+        their Differences in Complex Panel Designs
+Version: 2.0.3
+Authors@R: c(person("Johannes", "Gussenbauer", role = c("aut", "cre"),
+                     email = "Johannes.Gussenbauer@statistik.gv.at"),
+              person("Alexander", "Kowarik", role = "aut",
+                     email = "Alexander.Kowarik@statistik.gv.at", comment=c(ORCID="0000-0001-8598-4130")),
+              person("Eileen", "Vattheuer", role = "aut",
+                     email = "Eileen.Vattheuer@statistik.gv.at"),
+              person("Gregor", "de Cillia", role = "aut",
+                     email = "Gregor.deCillia@statistik.gv.at"),
+              person("Matthias", "Till", role = "ctb",
+                     email = "Matthias.Till@statistik.gv.at"))
+Maintainer: Johannes Gussenbauer <Johannes.Gussenbauer@statistik.gv.at>
+Description: Calculate point estimates and their standard errors in complex household surveys using bootstrap replicates. Bootstrapping considers survey design with a rotating panel. A comprehensive description of the methodology can be found under <https://statistikat.github.io/surveysd/articles/methodology.html>.
+Encoding: UTF-8
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.12),data.table,ggplot2,laeken,methods
+LinkingTo: Rcpp
+URL: https://github.com/statistikat/surveysd
+BugReports: https://github.com/statistikat/surveysd/issues
+RoxygenNote: 7.3.3
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-06-10 12:47:32 UTC; gussen
+Author: Johannes Gussenbauer [aut, cre],
+  Alexander Kowarik [aut] (ORCID:
+    <https://orcid.org/0000-0001-8598-4130>),
+  Eileen Vattheuer [aut],
+  Gregor de Cillia [aut],
+  Matthias Till [ctb]
+Repository: CRAN
+Date/Publication: 2026-06-11 20:50:02 UTC

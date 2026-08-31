@@ -1,0 +1,27 @@
+Package: sensitivity
+Version: 1.31.0
+Title: Global Sensitivity Analysis of Model Outputs and Importance
+        Measures
+Authors@R: c(person(given = "Bertrand", family = "Iooss", role = c("aut", "cre"), email = "biooss@yahoo.fr"),
+  person(given = c("Sebastien"), family = "Da Veiga", role = "aut"),
+  person(given = "Alexandre", family = "Janon", role = "aut"),
+  person(given = "Gilles", family = "Pujol", role = "aut"))
+Maintainer: Bertrand Iooss <biooss@yahoo.fr>
+Depends: R (>= 3.0.0)
+Imports: boot, numbers, methods, ggplot2, Rcpp, foreach, dtwclust
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: car, condMVNorm, DiceDesign, DiceKriging, doParallel, evd,
+        ggExtra, grid, gplots, gtools, igraph, IncDTW, ks, lattice,
+        MASS, mc2d, mvtnorm, parallel, plotrix, pracma, proxy,
+        randtoolbox, RANN, reshape2, rgl, stringr, triangle, TSP,
+        viridisLite, whitening
+Description: A collection of functions for sensitivity analysis of model outputs (factor screening, global sensitivity analysis and robustness analysis), for variable importance measures of data, as well as for interpretability of machine learning models. Most of the functions have to be applied on scalar output, but several functions support multi-dimensional outputs.
+License: GPL-2
+NeedsCompilation: yes
+Repository: CRAN
+Packaged: 2026-02-27 16:02:12 UTC; F80570
+Author: Bertrand Iooss [aut, cre],
+  Sebastien Da Veiga [aut],
+  Alexandre Janon [aut],
+  Gilles Pujol [aut]
+Date/Publication: 2026-02-27 18:00:02 UTC

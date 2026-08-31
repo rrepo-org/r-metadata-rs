@@ -1,0 +1,33 @@
+Package: factree
+Type: Package
+Title: Factor-Augmented Clustering Tree
+Date: 2025-11-10
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Jiaqi", family = "Hu", email = "hujiaqi@mail.ustc.edu.cn", role = c("cre", "aut")),
+  person(given = "Ting", family = "Li", email = "tingeric.li@polyu.edu.hk", role = c("ctb"), comment = "Assisted with methodology"),
+  person(given = "Zidan", family = "Luo", email = "zluo@fas.harvard.edu", role = c("ctb"), comment = "Assisted with methodology"),
+  person(given = "Xueqin", family = "Wang", email = "wangxq20@ustc.edu.cn", role = c("ctb"), comment = "Assisted with methodology"))
+Description: Implements the Factor-Augmented Clustering Tree (FACT) algorithm
+    for clustering time series data. The method constructs a classification 
+    tree where splits are determined by covariates, and the splitting criterion
+    is based on a group factor model representation of the time series within 
+    each node. Both threshold-based and permutation-based tests are supported 
+    for splitting decisions, with an option for parallel computation.
+    For methodological details, see Hu, Li, Luo, and Wang (2025, in preparation), 
+    Factor-Augmented Clustering Tree for Time Series.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.3
+Imports: irlba, foreach, doParallel, parallel, doRNG, mvtnorm
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2025-12-05 03:53:21 UTC; hujiaqi
+Author: Jiaqi Hu [cre, aut],
+  Ting Li [ctb] (Assisted with methodology),
+  Zidan Luo [ctb] (Assisted with methodology),
+  Xueqin Wang [ctb] (Assisted with methodology)
+Maintainer: Jiaqi Hu <hujiaqi@mail.ustc.edu.cn>
+Repository: CRAN
+Date/Publication: 2025-12-10 21:30:12 UTC

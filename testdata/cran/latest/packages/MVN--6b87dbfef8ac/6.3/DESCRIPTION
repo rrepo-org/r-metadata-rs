@@ -1,0 +1,49 @@
+Package: MVN
+Type: Package
+Title: Multivariate Normality Tests
+Version: 6.3
+Authors@R: 
+    c(
+      person(given = "Selcuk", family = "Korkmaz", role = c("aut", "cre"),
+             email = "selcukorkmaz@gmail.com", comment = c(ORCID = "0000-0003-4632-6850")),
+      person(given = "Dincer", family = "Goksuluk", role = "aut",
+             email = "dincer.goksuluk@gmail.com"),
+      person(given = "Gokmen", family = "Zararsiz", role = "aut",
+             email = "gokmenzararsiz@hotmail.com")
+    )
+Maintainer: Selcuk Korkmaz <selcukorkmaz@gmail.com>
+Imports: methods, nortest, moments, MASS, boot, car, dplyr, tidyr,
+        purrr, stringr, tibble, ggplot2, viridis, cli, energy, plotly,
+        mice
+Suggests: DT, bslib, future, haven, jsonlite, readxl, shiny, yaml,
+        promises, testthat (>= 3.0.0), zip
+Config/testthat/edition: 3
+Collate: 'mvn.R' 'mardia.R' 'hz.R' 'hw.R' 'royston.R'
+        'doornik_hansen.R' 'energy.R' 'descriptives.R'
+        'test_univariate_normality.R' 'multivariate_diagnostic_plot.R'
+        'mv_outlier.R' 'univariate_diagnostic_plot.R'
+        'power_transform.R' 'arw_adjustment.R' 'plot.mvn.R'
+        'summary.mvn.R' 'impute_missing.R' 'run_mvn_app.R'
+Description: 
+    A comprehensive suite for assessing multivariate normality using six statistical tests 
+    (Mardia, Henze–Zirkler, Henze–Wagner, Royston, Doornik–Hansen, Energy). 
+    Also includes univariate diagnostics, bivariate density visualization, robust outlier 
+    detection, power transformations (e.g., Box–Cox, Yeo–Johnson), and imputation strategies 
+    ("mean", "median", "mice") for handling missing data. Bootstrap resampling is supported 
+    for selected tests to improve p-value accuracy in small samples.
+    Diagnostic plots are available via both 'ggplot2' and interactive 'plotly' visualizations. See Korkmaz et al. (2014) <https://journal.r-project.org/articles/RJ-2014-031/RJ-2014-031.pdf>.
+Encoding: UTF-8
+License: MIT + file LICENSE
+URL: https://biosoft.shinyapps.io/mvn-shiny-app/,
+        https://selcukorkmaz.github.io/mvn-tutorial/,
+        https://github.com/selcukorkmaz/MVN
+BugReports: https://github.com/selcukorkmaz/MVN/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-12 22:36:42 UTC; selcuk
+Author: Selcuk Korkmaz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4632-6850>),
+  Dincer Goksuluk [aut],
+  Gokmen Zararsiz [aut]
+Repository: CRAN
+Date/Publication: 2026-01-13 06:10:41 UTC

@@ -1,0 +1,57 @@
+Package: metainsight
+Version: 7.1.0
+Title: A 'shiny' Application for Network Meta-Analysis
+Description: Conduct network meta-analyses through a graphical user interface using 'bnma',
+    'gemtc' and 'netmeta' with additional analysis provided by 'meta' and 'metafor'.
+    Frequentist, Bayesian, meta-regression and baseline risk meta-regression analyses
+    can all be conducted using a consistent data structure and terminology. Many options are
+    provided for downloading publication-ready outputs and analyses can be reproduced
+    outside of the application by downloading a 'quarto' file. The interface was generated
+    using 'shinyscholar'. The initial version of the app was described by Owen et al. (2018)
+    <doi:10.1002/jrsm.1373>, Bayesian ranking visualisations were described by Nevill et al.
+    (2023) <doi:10.1016/j.jclinepi.2023.02.016> and metaregression was described by Morris
+    et al. (2025) <doi:10.1016/j.jclinepi.2025.111839>.
+Authors@R: 
+    c(person("Alex", "Sutton", email = "ajs22@leicester.ac.uk", role = c("aut","cre")),
+      person("Naomi", "Bradbury", role = c("aut")),
+      person("Ryan", "Field", role = c("aut")),
+      person("Tom", "Morris", role = c("aut")),
+      person("Clareece", "Nevill", role = c("aut")),
+      person("Janion", "Nevill", role = c("aut")),
+      person("Rhiannon", "Owen", role = c("aut")),
+      person("Simon E. H.", "Smart", role = c("aut")),
+      person("Yiqiao", "Xin", role = c("aut")),
+      person("Nicola", "Cooper", role = c("ctb")),
+      person("Suzanne", "Freeman", role = c("ctb"))
+      )
+Depends: R (>= 4.1.0)
+Imports: bayesplot, bnma (>= 1.4.0), bslib, coda, cookies, DT (>= 0.5),
+        dplyr, gargoyle, gemtc (>= 1.1.1), ggiraphExtra, ggplot2,
+        ggrepel, glue, gt, igraph, jsonlite, knitcitations, knitr,
+        MCMCvis, magick, meta (>= 8.1.0), metafor, mirai (>= 2.0.0),
+        netmeta (>= 3.1.0), patchwork, plotly, quarto, R6, rio,
+        rintrojs, rmarkdown, rsvg, shiny (>= 1.8.1), shinyalert,
+        shinybusy, shinyjs, stringr, shinyWidgets (>= 0.6.0), svglite,
+        tidyr, xml2
+Suggests: jsonvalidate, mockery, pdftools, shinytest2, testthat
+License: GPL-3
+URL:
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: quarto
+NeedsCompilation: no
+Packaged: 2026-06-07 10:37:35 UTC; simon
+Author: Alex Sutton [aut, cre],
+  Naomi Bradbury [aut],
+  Ryan Field [aut],
+  Tom Morris [aut],
+  Clareece Nevill [aut],
+  Janion Nevill [aut],
+  Rhiannon Owen [aut],
+  Simon E. H. Smart [aut],
+  Yiqiao Xin [aut],
+  Nicola Cooper [ctb],
+  Suzanne Freeman [ctb]
+Maintainer: Alex Sutton <ajs22@leicester.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-06-15 13:10:07 UTC

@@ -1,0 +1,26 @@
+Package: marcox
+Type: Package
+Title: Marginal Hazard Ratio Estimation in Clustered Failure Time Data
+Version: 1.0.0
+Authors@R: c(
+    person("Junyi","Chen", role = c("aut","cre"),email="2655088079@qq.com"),
+    person("Siqi","Zhou",role = c("ctb"),email="564121231@qq.com"),
+    person("Shida","Li",role = c("ctb"),email="3039371588@qq.com"),
+    person("Yi","Niu",role = c("aut"),email="niuyi@dlut.edu.cn"))
+Description: Estimation of marginal hazard ratios in clustered failure time data. It implements the weighted generalized estimating equation approach based on a semiparametric marginal proportional hazards model (See Niu, Y. Peng, Y.(2015). "A new estimating equation approach for marginal hazard ratio estimation"), accounting for within-cluster correlations. 5 different correlation structures are supported. The package is designed for researchers in biostatistics and epidemiology who require accurate and efficient estimation methods for survival analysis in clustered data settings.
+Depends: R (>= 4.4.0), Matrix
+Imports: Rcpp, RcppEigen, survival, ggplot2, stats
+LinkingTo: Rcpp, RcppEigen
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+Maintainer: Junyi Chen <2655088079@qq.com>
+License: GPL-3
+NeedsCompilation: yes
+Packaged: 2025-04-09 09:55:26 UTC; NTLDR
+Author: Junyi Chen [aut, cre],
+  Siqi Zhou [ctb],
+  Shida Li [ctb],
+  Yi Niu [aut]
+Repository: CRAN
+Date/Publication: 2025-04-10 14:20:02 UTC

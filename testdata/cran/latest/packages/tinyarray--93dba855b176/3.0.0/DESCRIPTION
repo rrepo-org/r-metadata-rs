@@ -1,0 +1,24 @@
+Package: tinyarray
+Type: Package
+Title: Expression Data Analysis and Visualization
+Version: 3.0.0
+Authors@R: person("Xiaojie", "Sun", email = "18763899370@163.com", role = c("aut", "cre"))
+Maintainer: Xiaojie Sun <18763899370@163.com>
+Description: A toolkit for microarray and RNA-seq data analysis, including annotation conversion, differential expression, enrichment, survival analysis, and visualization.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: Hmisc, dplyr, ggplot2, limma, patchwork, pheatmap, stringr,
+        curl, httr2, survival, survminer, tibble
+Suggests: testthat, AnnoProbe, GEOquery, Biobase, VennDiagram,
+        FactoMineR, factoextra, knitr, rmarkdown, cowplot, ggpubr,
+        ggplotify, tidyr, labeling, Rtsne, scatterplot3d,
+        ComplexHeatmap, circlize, AnnotationDbi, BiocManager,
+        clusterProfiler, org.Rn.eg.db,org.Mm.eg.db,org.Hs.eg.db
+Depends: R (>= 4.3.0)
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-02 06:04:21 UTC; 18763
+Author: Xiaojie Sun [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-08-02 06:20:02 UTC

@@ -1,0 +1,29 @@
+Package: REFT
+Type: Package
+Title: Root Exudate Feature Toolkit
+Version: 0.1.4
+Authors@R: 
+    person(given = "Guozhen", family = "Gao", role = c("aut", "cre"),
+           email = "gaoguozhen889@gmail.com")
+Description: Provides tools for molecule-oriented and reaction-centred
+    analysis of root exudate datasets. It supports structural matching based
+    on 'PubChem', calculation of molecular descriptors, and inference of
+    candidate microbe-associated metabolic reactions using Kyoto Encyclopedia
+    of Genes and Genomes ('KEGG') identifiers and Enzyme Commission ('EC')
+    numbers. For background on these databases, see Kanehisa et al. (2023)
+    <doi:10.1093/nar/gkac963> and Kim et al. (2023)
+    <doi:10.1093/nar/gkac956>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: readxl, dplyr, purrr, stringr, tibble, writexl, webchem, rlang
+Suggests: rcdk, rcdklibs
+Depends: R (>= 4.1.0)
+URL: https://github.com/gaoguozhen1/REFT
+BugReports: https://github.com/gaoguozhen1/REFT/issues
+NeedsCompilation: no
+Packaged: 2026-05-15 06:22:29 UTC; Administrator
+Author: Guozhen Gao [aut, cre]
+Maintainer: Guozhen Gao <gaoguozhen889@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-19 09:30:24 UTC

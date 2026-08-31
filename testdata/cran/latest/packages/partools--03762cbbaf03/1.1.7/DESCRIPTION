@@ -1,0 +1,55 @@
+Package: partools
+Version: 1.1.7
+Authors@R: c(person(given = "Norm",
+                     family = "Matloff",
+                     role = c("cre", "aut"),
+                     email = "normmatloff@gmail.com"),
+              person(given = "Clark",
+                     family = "Fitzgerald",
+                     role = "aut",
+                     email = "clarkfitzg@gmail.com"),
+              person(given = "Reed",
+                     family = "Davis",
+                     role = "aut",
+                     email = "rdavis2468@gmail.com"),
+              person(given = "Robin",
+                     family = "Yancey",
+                     role = "aut",
+                     email = "reyancey@formerstudents.ucdavis.edu"),
+              person(given = "Shunxu",
+                     family = "Huang",
+                     role = "aut",
+                     email = "shunxuhuang@gmail.com"),
+              person(given = "Alex",
+                     family = "Rumbaugh",
+                     role = "aut",
+                     email = "alexrumbaugh@gmail.com"),
+              person(given = "Hadley",
+                     family = "Wickham",
+                     role = "aut",
+                     email = "h.wickham@gmail.com"))
+Maintainer: Norm Matloff <normmatloff@gmail.com>
+Title: Tools for the 'Parallel' Package
+Description: Miscellaneous utilities for parallelizing large
+   computations.  Alternative to MapReduce.
+   File splitting and distributed operations such as sort and aggregate.
+   "Software Alchemy" method for parallelizing most statistical methods,
+   presented in N. Matloff, Parallel Computation for Data Science,
+   Chapman and Hall, 2015.  Includes a debugging aid.
+Depends: regtools,parallel,stats,utils,data.table,pdist,methods
+Suggests: rpart,e1071,testthat
+ByteCompile: yes
+NeedsCompilation: no
+License: GPL (>= 2)
+URL: https://github.com/matloff/partools
+BugReports: https://github.com/matloff/partools/issues
+Packaged: 2026-02-05 21:33:14 UTC; normanmatloff
+Repository: CRAN
+Date/Publication: 2026-02-06 06:40:17 UTC
+Author: Norm Matloff [cre, aut],
+  Clark Fitzgerald [aut],
+  Reed Davis [aut],
+  Robin Yancey [aut],
+  Shunxu Huang [aut],
+  Alex Rumbaugh [aut],
+  Hadley Wickham [aut]

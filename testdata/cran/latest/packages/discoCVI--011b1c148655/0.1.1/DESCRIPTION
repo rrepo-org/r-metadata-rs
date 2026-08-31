@@ -1,0 +1,54 @@
+Package: discoCVI
+Type: Package
+Title: Implementation of the DISCO Metric for Internal Clustering
+        Evaluation
+Version: 0.1.1
+Authors@R: c(
+    person("Amin", "Entezari",
+           email   = "amin_entezari@outlook.com",
+           role    = c("aut", "cre"),
+           comment = c(ORCID = "0009-0005-4733-6032")),
+    person("Davide", "Chicco",
+           email   = "davidechicco@davidechicco.it",
+           role    = "ctb",
+           comment = c(ORCID = "0000-0001-9655-7142",
+                       "Supervision and guidance")),
+    person("Anna", "Beer",
+           role    = "aut",
+           comment = "Original Python implementation (arXiv:2503.00127)"),
+    person("Lena", "Krieger",
+           role    = "aut",
+           comment = "Original Python implementation (arXiv:2503.00127)"),
+    person("Pascal", "Weber",
+           role    = "aut",
+           comment = "Original Python implementation (arXiv:2503.00127)"))
+Description: Implementation of the DISCO (Density-based Internal Score for
+    Clusterings with nOise) metric, a cluster validity index for evaluating
+    density-based clustering results without ground truth labels. DISCO is the
+    first index to explicitly assess the quality of noise point assignments in
+    addition to cluster quality. It uses density-connectivity distance derived
+    from a minimum spanning tree of the mutual-reachability graph, providing
+    interpretable, bounded scores in [-1, 1]. Higher scores indicate better
+    clustering. Based on Beer et al. (2025)
+    <doi:10.48550/arXiv.2503.00127>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 3.6.0)
+Imports: FNN, stats
+Suggests: dbscan, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+URL: https://github.com/aminentezari/discoCVI
+BugReports: https://github.com/aminentezari/discoCVI/issues
+NeedsCompilation: no
+Packaged: 2026-05-02 08:55:19 UTC; aminentezari
+Author: Amin Entezari [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-4733-6032>),
+  Davide Chicco [ctb] (ORCID: <https://orcid.org/0000-0001-9655-7142>,
+    Supervision and guidance),
+  Anna Beer [aut] (Original Python implementation (arXiv:2503.00127)),
+  Lena Krieger [aut] (Original Python implementation (arXiv:2503.00127)),
+  Pascal Weber [aut] (Original Python implementation (arXiv:2503.00127))
+Maintainer: Amin Entezari <amin_entezari@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-05-05 18:20:13 UTC

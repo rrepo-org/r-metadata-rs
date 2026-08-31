@@ -1,0 +1,22 @@
+Package: fastqrs
+Title: Fast Algorithms for Quantile Regression with Selection
+Version: 1.0.0
+Authors@R: 
+    person("Santiago", "Pereda-Fernandez", , "santiagopereda@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0319-1629"))
+Description: Fast estimation algorithms to implement the Quantile Regression with Selection estimator and the multiplicative Bootstrap for inference. This estimator can be used to estimate models that feature sample selection and heterogeneous effects in cross-sectional data. For more details, see Arellano and Bonhomme (2017) <doi:10.3982/ECTA14030> and Pereda-Fernández (2024) <doi:10.48550/arXiv.2402.16693>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: quantreg, copula, stats
+Suggests: knitr, rmarkdown, sampleSelection, ggplot2
+Depends: R (>= 2.10)
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-04-14 05:48:35 UTC; santi
+Author: Santiago Pereda-Fernandez [aut, cre]
+    (<https://orcid.org/0000-0002-0319-1629>)
+Maintainer: Santiago Pereda-Fernandez <santiagopereda@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-16 20:10:02 UTC

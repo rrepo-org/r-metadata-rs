@@ -1,0 +1,33 @@
+Package: storr
+Title: Simple Key Value Stores
+Version: 1.2.6
+Description: Creates and manages simple key-value stores.  These can
+    use a variety of approaches for storing the data.  This package
+    implements the base methods and support for file system, in-memory
+    and DBI-based database stores.
+Depends: R (>= 3.3.0)
+License: MIT + file LICENSE
+Authors@R: c(person("Rich", "FitzJohn", role = c("aut", "cre"),
+    email = "rich.fitzjohn@gmail.com"),
+    person(c("William", "Michael"), "Landau",
+      email = "will.landau@gmail.com",
+      role = "ctb",
+      comment = c(ORCID = "0000-0003-1878-3253")
+    ))
+URL: https://richfitz.github.io/storr/,
+        https://github.com/richfitz/storr
+BugReports: https://github.com/richfitz/storr/issues
+Imports: R6 (>= 2.1.0), digest
+Suggests: DBI (>= 0.6), RSQLite (>= 1.1-2), RPostgres, knitr, mockr,
+        parallel, progress, rbenchmark, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Language: en-GB
+NeedsCompilation: yes
+Packaged: 2025-04-15 07:34:48 UTC; rich
+Author: Rich FitzJohn [aut, cre],
+  William Michael Landau [ctb] (<https://orcid.org/0000-0003-1878-3253>)
+Maintainer: Rich FitzJohn <rich.fitzjohn@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-15 16:30:02 UTC

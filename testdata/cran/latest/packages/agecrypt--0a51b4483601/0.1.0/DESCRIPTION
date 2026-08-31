@@ -1,0 +1,30 @@
+Package: agecrypt
+Title: File Encryption with the 'age' Format
+Version: 0.1.0
+Authors@R: c(
+    person("Pedro", "Baltazar", , "pedrobtz@gmail.com", role = c("aut", "cre", "cph")),
+    person("agec authors", role = c("ctb", "cph"),
+           comment = "Authors of the vendored 'agec' C implementation, https://git.sr.ht/~min/agec")
+  )
+Description: An idiomatic R interface to the 'age' file encryption format
+    (<https://age-encryption.org/v1>), backed by a vendored copy of the
+    'agec' C implementation (<https://git.sr.ht/~min/agec>). Encrypt and
+    decrypt raw vectors, files, and strings for one or more X25519 recipients
+    or with a passphrase, with optional ASCII armor. Cryptography is vendored
+    and randomness is drawn from the operating system, so the package has no
+    external library dependencies.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Suggests: askpass, openssl, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+URL: https://github.com/pedrobtz/agecrypt
+BugReports: https://github.com/pedrobtz/agecrypt/issues
+NeedsCompilation: yes
+Packaged: 2026-07-26 20:34:55 UTC; pbtz
+Author: Pedro Baltazar [aut, cre, cph],
+  agec authors [ctb, cph] (Authors of the vendored 'agec' C
+    implementation, https://git.sr.ht/~min/agec)
+Maintainer: Pedro Baltazar <pedrobtz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 08:00:07 UTC

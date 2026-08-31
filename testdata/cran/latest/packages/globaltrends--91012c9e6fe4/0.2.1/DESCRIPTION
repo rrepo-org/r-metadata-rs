@@ -1,0 +1,45 @@
+Type: Package
+Package: globaltrends
+Title: Download and Measure Global Trends Through 'Google' Search
+        Volumes
+Version: 0.2.1
+Authors@R: c(
+    person("Harald", "Puhr", email = "harald.puhr@gmail.com", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-3308-9553")),
+    person("Jakob", "Muellner", role = "ccp", comment = c(ORCID = "0000-0002-3443-0469"))
+  )
+Description: 'Google' offers public access to global search volumes from its
+    search engine through the 'Google Trends' portal. The package downloads
+    these search volumes provided by 'Google Trends' and uses them to
+    measure and analyze the distribution of search scores across countries
+    or within countries. The package allows researchers and analysts to
+    use these search scores to investigate global trends based on patterns
+    within these scores. This offers insights such as degree of
+    internationalization of firms and organizations or dissemination of
+    political, social, or technological trends across the globe or within
+    single countries.  An outline of the package's methodological
+    foundations and potential applications is available as a working
+    paper: <doi:10.2139/ssrn.3969013>.
+License: MIT + file LICENSE
+URL: https://github.com/ha-pu/globaltrends/
+BugReports: https://github.com/ha-pu/globaltrends/issues/
+Depends: R (>= 4.1.0)
+Imports: data.table (>= 1.14.0), gtrendsR (>= 1.5.1), reticulate (>=
+        1.38), stats (>= 3.5.0), utils
+Suggests: hms (>= 1.1.0), knitr (>= 1.29), rmarkdown (>= 2.3), testthat
+        (>= 3.0.0), tibble (>= 3.0.0), withr (>= 2.5.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: computations, export, downloads
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-08 09:03:55 UTC; hpuhr
+Author: Harald Puhr [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3308-9553>),
+  Jakob Muellner [ccp] (ORCID: <https://orcid.org/0000-0002-3443-0469>)
+Maintainer: Harald Puhr <harald.puhr@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-08 09:30:07 UTC

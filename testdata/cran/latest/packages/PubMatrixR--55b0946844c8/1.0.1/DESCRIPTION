@@ -1,0 +1,39 @@
+Package: PubMatrixR
+Title: PubMed Pairwise Co-Occurrence Matrix Construction and
+        Visualization
+Version: 1.0.1
+Authors@R: c(
+    person(given = "Tyler", family = "Laird",
+      email = "tylerscottlaird@gmail.com", role = "aut"),
+    person(given = "Enrique", family = "Toledo",
+      email = "enriquetoledo@gmail.com", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-1460-4708"))
+  )
+Description: Queries the 'NCBI' (National Center for Biotechnology Information)
+    Entrez 'E-utilities' API to count pairwise co-occurrences between two sets
+    of terms in 'PubMed' or 'PubMed Central'. It returns a matrix-like data
+    frame of publication counts and can export hyperlink-enabled results in
+    CSV or ODS format. The package also provides heatmap helpers for
+    exploratory visualization of overlap patterns. Based on the method described
+    in Becker et al. (2003) "PubMatrix: a tool for multiplex literature mining"
+    <doi:10.1186/1471-2105-4-61>.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/ToledoEM/PubMatrixR-v2,
+        https://toledoem.github.io/pubmatrixr/
+BugReports: https://github.com/ToledoEM/PubMatrixR-v2/issues
+Imports: pbapply, pheatmap, readODS, xml2
+Suggests: covr, dplyr, ggplot2, kableExtra, knitr, rmarkdown, testthat
+        (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-20 12:01:28 UTC; enrique
+Author: Tyler Laird [aut],
+  Enrique Toledo [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1460-4708>)
+Maintainer: Enrique Toledo <enriquetoledo@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:46:09 UTC

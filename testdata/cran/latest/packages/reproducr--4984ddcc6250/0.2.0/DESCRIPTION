@@ -1,0 +1,34 @@
+Package: reproducr
+Title: Behavioural Reproducibility Auditing for R Projects
+Version: 0.2.0
+Authors@R: 
+    person("Ndoh", "Penn", email = "ndohpenn9@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0003-9054-465X"))
+Description: Audits R scripts for behavioural reproducibility risk. Scans
+    scripts for qualified package::function calls and checks them against a
+    curated database of known silent breaking changes across popular CRAN
+    packages. Flags stochastic calls lacking set.seed() and detects
+    locale-sensitive operations that may produce different results across
+    systems. Supports baseline certification of analytical outputs so that
+    silent numerical drift can be detected across package upgrades or platform
+    changes. Generates human-readable audit reports suitable for academic
+    submission or pharmaceutical QC workflows. For more details see
+    <https://github.com/repro-stats/reproducr>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: utils
+Suggests: digest (>= 0.6.0), jsonlite, commonmark, testthat (>= 3.0.0),
+        knitr, rmarkdown, covr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/repro-stats/reproducr
+BugReports: https://github.com/repro-stats/reproducr/issues
+NeedsCompilation: no
+Packaged: 2026-06-15 15:03:22 UTC; ndohpenn
+Author: Ndoh Penn [aut, cre] (ORCID: <https://orcid.org/0009-0003-9054-465X>)
+Maintainer: Ndoh Penn <ndohpenn9@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-20 14:10:02 UTC

@@ -1,0 +1,44 @@
+Package: smsncut
+Type: Package
+Title: Optimal Diagnostic Cutoff Selection under Scale Mixtures of
+        Skew-Normal Distributions
+Version: 0.1.0
+Authors@R: c(
+    person("Renato", "de Paula",
+           email = "rrpaula@ciencias.ulisboa.pt",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5835-5918")),
+    person("Helena", "Mouriño",
+           role = "aut"),
+    person("Tiago", "Dias Domingues",
+           role = "aut"))
+Description: Implements a parametric decision-theoretic framework for optimal
+    diagnostic cutoff selection under the family of scale mixtures of skew-normal
+    (SMSN) distributions, including the skew-normal (SN) and skew-t (ST) models
+    as special cases. The optimal cutoff is defined by minimising a weighted
+    misclassification risk that incorporates disease prevalence and asymmetric
+    costs, leading to a likelihood-ratio equation that generalises the Youden
+    criterion. Under a monotone likelihood ratio condition, existence, uniqueness,
+    and global optimality of the cutoff are established. Asymptotic normality and
+    a closed-form plug-in variance estimator are provided via the implicit function
+    theorem and the multivariate delta method. Tools for model fitting, cutoff
+    estimation, confidence intervals, the local identifiability diagnostic, and
+    Monte Carlo simulation are included. The methodology is described in
+    de Paula, Mouriño, and Dias Domingues (2026)
+    <doi:10.48550/arXiv.2605.07829>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: sn (>= 2.0.0), numDeriv (>= 2016.8-1)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-14 14:09:32 UTC; renato
+Author: Renato de Paula [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5835-5918>),
+  Helena Mouriño [aut],
+  Tiago Dias Domingues [aut]
+Maintainer: Renato de Paula <rrpaula@ciencias.ulisboa.pt>
+Config/roxygen2/version: 8.0.0
+Repository: CRAN
+Date/Publication: 2026-05-19 08:50:02 UTC

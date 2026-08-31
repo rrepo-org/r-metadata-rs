@@ -1,0 +1,56 @@
+Package: CANE
+Type: Package
+Title: Comprehensive Groups of Experiments Analysis for Numerous
+        Environments
+Version: 0.1.1
+Authors@R: c(
+    person(family = "Vinayaka",
+           role = c("aut", "cre"),
+           email = "vinayaka.b3vs@gmail.com",
+           comment = c(ORCID = "0000-0001-5004-0084")),
+    person(given = "T.",
+           family = "Lakshmi Pathy",
+           role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0001-8940-7971")),
+    person(given = "K.",
+           family = "Gopalareddy",
+           role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0002-8825-6363")),
+    person(given = "Shweta",
+           family = "Kumari",
+           role = c("aut", "ctb"),
+           comment = c(ORCID = "0009-0000-4377-2455")),
+    person(given = "P.",
+           family = "Murali",
+           role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0002-1149-7097")),
+    person(given = "P.",
+           family = "Govindaraj",
+           role = c("aut", "ctb")),
+    person(given = "P. Rama Chandra",
+           family = "Prasad",
+           role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0001-5285-9827")),
+    person(given = "L.N.",
+           family = "Vinaykumar",
+           role = c("aut", "ctb")))
+Maintainer: Vinayaka <vinayaka.b3vs@gmail.com>
+Description: In many cases, experiments must be repeated across multiple seasons or locations to ensure applicability of findings. A single experiment conducted in one location and season may yield limited conclusions, as results can vary under different environmental conditions. In agricultural research, treatment × location and treatment × season interactions play a crucial role. Analyzing a series of experiments across diverse conditions allows for more generalized and reliable recommendations. The 'CANE' package facilitates the pooled analysis of experiments conducted over multiple years, seasons, or locations. It is designed to assess treatment interactions with environmental factors (such as location and season) using various experimental designs. The package supports pooled analysis of variance (ANOVA) for the following designs: (1) 'PooledCRD()': completely randomized design; (2) 'PooledRBD()': randomized block design; (3) 'PooledLSD()': Latin square design; (4) 'PooledSPD()': split plot design; and (5) 'PooledStPD()': strip plot design. Each function provides the following outputs: (i) Individual ANOVA tables based on independent analysis for each location or year; (ii) Testing of homogeneity of error variances among distinct locations using Bartlett’s Chi-Square test; (iii) If Bartlett’s test is significant, 'Aitken’s' transformation, defined as the ratio of the response to the square root of the error mean square, is applied to the response variable; otherwise, the data is used as is; (iv) Combined analysis to obtain a pooled ANOVA table; (v) Multiple comparison tests, including Tukey's honestly significant difference (Tukey's HSD) test, Duncan’s multiple range test (DMRT), and the least significant difference (LSD) test, for treatment comparisons. The statistical theory and steps of analysis of these designs are available in Dean et al. (2017)<doi:10.1007/978-3-319-52250-0> and Ruíz et al. (2024)<doi:10.1007/978-3-031-65575-3>. By broadening the scope of experimental conclusions, 'CANE' enables researchers to derive robust, widely applicable recommendations. This package is particularly valuable in agricultural research, where accounting for treatment × location and treatment × season interactions is essential for ensuring the validity of findings across multiple settings.
+Imports: agricolae, dplyr, emmeans, stats
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-03-20 08:44:51 UTC; DELL
+Author: Vinayaka [aut, cre] (<https://orcid.org/0000-0001-5004-0084>),
+  T. Lakshmi Pathy [aut, ctb] (<https://orcid.org/0000-0001-8940-7971>),
+  K. Gopalareddy [aut, ctb] (<https://orcid.org/0000-0002-8825-6363>),
+  Shweta Kumari [aut, ctb] (<https://orcid.org/0009-0000-4377-2455>),
+  P. Murali [aut, ctb] (<https://orcid.org/0000-0002-1149-7097>),
+  P. Govindaraj [aut, ctb],
+  P. Rama Chandra Prasad [aut, ctb]
+    (<https://orcid.org/0000-0001-5285-9827>),
+  L.N. Vinaykumar [aut, ctb]
+Repository: CRAN
+Date/Publication: 2025-03-20 13:50:13 UTC

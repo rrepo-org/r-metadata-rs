@@ -1,0 +1,35 @@
+Package: staninside
+Title: Facilitating the Use of 'Stan' Within Packages
+Version: 0.0.4
+Authors@R: 
+    person(given = "Michael",
+           family = "DeWitt",
+           role = c("aut", "cre"),
+           email = "me.dewitt.jr@gmail.com",
+           comment = c(ORCID = "0000-0001-8940-1967"))
+Description: Infrastructure and functions that can be used for 
+    integrating 'Stan' (Carpenter et al. (2017) <doi:10.18637/jss.v076.i01>) code into 
+    stand alone R packages which in turn use the  'CmdStan' engine  which is often accessed through 
+    'CmdStanR'. Details given in Stan Development Team (2025) <https://mc-stan.org/cmdstanr/>. 
+    Using 'CmdStanR' and pre-written 'Stan' code can make package installation easy. Using 'staninside'
+    offers a way to cache user-compiled 'Stan' models in user-specified directories reducing the need
+    to recompile the same model multiple times.
+License: MIT + file LICENSE
+URL: https://github.com/medewitt/staninside,
+        https://medewitt.github.io/staninside/
+BugReports: https://github.com/medewitt/staninside/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.1)
+Suggests: knitr, covr, spelling, testthat (>= 3.0.0), rmarkdown
+Imports: cli, fs, rappdirs
+Language: en-US
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-07-28 14:54:18 UTC; michael
+Author: Michael DeWitt [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8940-1967>)
+Maintainer: Michael DeWitt <me.dewitt.jr@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-30 08:30:02 UTC

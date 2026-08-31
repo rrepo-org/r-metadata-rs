@@ -1,0 +1,37 @@
+Package: seroreconstruct
+Type: Package
+Title: Reconstructing Antibody Dynamics to Estimate the Risk of
+        Influenza Virus Infection
+Version: 1.1.5
+Authors@R: 
+    c(person(given = "Tim",
+             family = "Tsang",
+             role = c("aut", "cre"),
+             email = "timkltsang@gmail.com",
+             comment = c(ORCID = "0000-0001-5037-6776")))
+Maintainer: Tim Tsang <timkltsang@gmail.com>
+Description: A Bayesian framework for inferring influenza infection status from
+    serial antibody measurements. Jointly estimates season-specific infection
+    probabilities, antibody boosting and waning after infection, and baseline
+    hemagglutination inhibition (HAI) titer distributions via Markov chain
+    Monte Carlo (MCMC). Supports multi-season analysis and subgroup
+    comparisons via a group_by interface. See Tsang et al. (2022)
+    <doi:10.1038/s41467-022-29310-8> for methodological details.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: TRUE
+URL: https://github.com/timktsang/seroreconstruct
+BugReports: https://github.com/timktsang/seroreconstruct/issues
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.9), RcppParallel
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+SystemRequirements: TBB
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-03-30 14:58:37 UTC; timtsang
+Author: Tim Tsang [aut, cre] (ORCID: <https://orcid.org/0000-0001-5037-6776>)
+Repository: CRAN
+Date/Publication: 2026-04-03 08:50:03 UTC

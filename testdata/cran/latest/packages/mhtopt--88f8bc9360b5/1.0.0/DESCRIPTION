@@ -1,0 +1,39 @@
+Package: mhtopt
+Title: Optimal Multiple Hypothesis Testing Corrections
+Version: 1.0.0
+Authors@R: c(
+    person("Davide", "Viviano", role = "aut"),
+    person("Kaspar", "Wuthrich", role = "aut"),
+    person("Paul", "Niehaus", role = "aut"),
+    person("Erick", "Rosas Lopez", email = "erosaslpez@ucsd.edu", role = c("cre", "ctb"))
+    )
+Description: Implements the optimal multiple hypothesis testing correction from
+    Viviano, Wuthrich, and Niehaus (2026) <doi:10.48550/arXiv.2104.13367>. Derives the
+    optimal per-test significance level from the economic incentives of research
+    production, providing a correction that lies between Bonferroni (too
+    conservative) and unadjusted (too permissive). Supports two cost models: a
+    Linear one calibrated to United States Food and Drug Administration (FDA)
+    clinical-trial costs, and a Cobb-Douglas one calibrated to Abdul Latif
+    Jameel Poverty Action Lab (J-PAL) project costs. Reports optimal,
+    Bonferroni, Holm, Benjamini-Hochberg (BH), and unadjusted results side by
+    side.
+License: MIT + file LICENSE
+URL: https://github.com/dviviano/mhtopt
+BugReports: https://github.com/dviviano/mhtopt/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Imports: stats
+Suggests: testthat (>= 3.0.0), haven, fixest, estimatr, knitr,
+        rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-20 07:33:05 UTC; erick
+Author: Davide Viviano [aut],
+  Kaspar Wuthrich [aut],
+  Paul Niehaus [aut],
+  Erick Rosas Lopez [cre, ctb]
+Maintainer: Erick Rosas Lopez <erosaslpez@ucsd.edu>
+Repository: CRAN
+Date/Publication: 2026-07-29 16:40:03 UTC

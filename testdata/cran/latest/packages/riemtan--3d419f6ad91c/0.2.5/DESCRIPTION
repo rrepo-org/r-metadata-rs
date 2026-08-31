@@ -1,0 +1,38 @@
+Package: riemtan
+Title: Riemannian Metrics for Symmetric Positive Definite Matrices
+Version: 0.2.5
+Authors@R: c(
+    person(
+        given = "Nicolas",
+        family = "Escobar",
+        role = c("aut", "cre"),
+        email = "nescoba@iu.edu",
+        comment = c(ORCID = "0009-0006-0800-5692")
+    ),
+    person(
+        given = "Jaroslaw",
+        family = "Harezlak",
+        role = "ths"
+    ))
+Description: Implements various Riemannian metrics for symmetric positive definite matrices, including AIRM (Affine Invariant Riemannian Metric, <doi:10.1007/s11263-005-3222-z>), Log-Euclidean (<doi:10.1002/mrm.20965>), Euclidean, Log-Cholesky (<doi:10.1137/18M1221084>), and Bures-Wasserstein metrics (<doi:10.1016/j.exmath.2018.01.002>). Provides functions for computing logarithmic and exponential maps, vectorization, and statistical operations on the manifold of positive definite matrices.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp, RcppEigen
+Depends: R (>= 4.3.0)
+Imports: arrow, future, furrr, jsonlite, Matrix, methods, R6, purrr,
+        MASS, matrixStats, Rcpp (>= 1.0.0)
+Suggests: progressr, testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://nicoesve.github.io/riemtan/
+BugReports: https://github.com/nicoesve/riemtan/issues
+Config/testthat/edition: 3
+Maintainer: Nicolas Escobar <nescoba@iu.edu>
+NeedsCompilation: yes
+Packaged: 2025-11-10 20:46:26 UTC; new user
+Author: Nicolas Escobar [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-0800-5692>),
+  Jaroslaw Harezlak [ths]
+Repository: CRAN
+Date/Publication: 2025-11-10 21:20:02 UTC

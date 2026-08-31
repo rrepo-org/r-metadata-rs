@@ -1,0 +1,23 @@
+Package: autoEnsemble
+Type: Package
+Title: Automated Stacked Ensemble Classifier for Severe Class Imbalance
+Version: 0.3
+Authors@R: 
+    person("E. F. Haghish",
+           role = c("aut", "cre", "cph"),
+           email = "haghish@hotmail.com")
+Depends: R (>= 3.5.0),
+Description: A stacking solution for modeling imbalanced and severely skewed data. It automates the process of building homogeneous or heterogeneous stacked ensemble models by selecting "best" models according to different criteria. In doing so, it strategically searches for and selects diverse, high-performing base-learners to construct ensemble models optimized for skewed data. This package is particularly useful for addressing class imbalance in datasets, ensuring robust and effective model outcomes through advanced ensemble strategies which aim to stabilize the model, reduce its overfitting, and further improve its generalizability.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: h2o (>= 3.34.0.0), h2otools (>= 0.3), curl (>= 4.3.0)
+RoxygenNote: 7.3.2
+URL: https://github.com/haghish/autoEnsemble,
+        https://www.sv.uio.no/psi/english/people/academic/haghish/
+BugReports: https://github.com/haghish/autoEnsemble/issues
+NeedsCompilation: no
+Packaged: 2025-03-20 09:48:25 UTC; haghish
+Author: E. F. Haghish [aut, cre, cph]
+Maintainer: E. F. Haghish <haghish@hotmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-20 11:50:13 UTC

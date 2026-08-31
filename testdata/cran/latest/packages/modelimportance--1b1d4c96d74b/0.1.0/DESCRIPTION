@@ -1,0 +1,61 @@
+Package: modelimportance
+Type: Package
+Title: Measuring Contributions of Component Models to Ensemble Forecast
+        Accuracy
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Minsu", 
+           family = "Kim",
+           email = "minsu@umass.edu", 
+           role = c("aut", "cre", 'cph'),
+           comment = c(ORCID = "0009-0008-4637-3589")),
+    person(given = "Li",
+           family = "Shandross",
+           email = "lshandross@umass.edu",
+           comment = c(ORCID = "0009-0008-1348-1954"),
+           role = c("aut", "ctb")),
+    person(given = "Zhian",
+           family = "Kamvar",
+           email = "zkamvar@umass.edu",
+           comment = c(ORCID = "0000-0003-1458-7108"),
+           role = c("ctb")),
+    person(given = "Nicholas", 
+           family = "Reich",
+           email = "nick@umass.edu", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-3503-9899")),
+    person(given = "Evan", 
+           family = "Ray", 
+           email = "elray1@umass.edu", 
+           role = c("aut"))
+    )
+Description: Provides metrics for quantifying the contribution of individual component models to the predictive accuracy of ensemble forecasts. The package implements the Leave-One-Model-Out (LOMO) and Leave-All-Subset-of-One-Model-Out (LASOMO) model importance metrics, enabling users to assess the relative importance of component models and better understand the performance of ensemble forecasting systems. Methods are described in Kim et al. (2026) <doi:10.1016/j.ijforecast.2025.12.006>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: hubUtils (>= 0.4.0), dplyr (>= 1.1.4), hubEvals (>= 0.3.0),
+        hubEnsembles (>= 0.1.9), methods (>= 4.4.3), purrr (>= 1.0.4),
+        furrr (>= 0.3.1), future (>= 1.49.0), checkmate (>= 2.3.3),
+        rlang (>= 1.1.6), stats (>= 4.4.3)
+Depends: R (>= 4.1.0)
+Suggests: knitr, rmarkdown, tidyr (>= 1.3.1), kableExtra (>= 1.4.0),
+        ggplot2 (>= 4.0.1), scoringutils (>= 2.1.2), testthat (>=
+        3.0.0), progressr (>= 0.15.1)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/mkim425/modelimportance
+Config/Needs/website: rmarkdown
+BugReports: https://github.com/mkim425/modelimportance/issues
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-07 19:49:42 UTC; minsukim
+Author: Minsu Kim [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0008-4637-3589>),
+  Li Shandross [aut, ctb] (ORCID:
+    <https://orcid.org/0009-0008-1348-1954>),
+  Zhian Kamvar [ctb] (ORCID: <https://orcid.org/0000-0003-1458-7108>),
+  Nicholas Reich [aut] (ORCID: <https://orcid.org/0000-0003-3503-9899>),
+  Evan Ray [aut]
+Maintainer: Minsu Kim <minsu@umass.edu>
+Repository: CRAN
+Date/Publication: 2026-07-16 13:30:02 UTC

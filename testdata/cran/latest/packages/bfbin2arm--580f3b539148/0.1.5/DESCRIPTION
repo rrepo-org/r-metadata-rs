@@ -1,0 +1,35 @@
+Package: bfbin2arm
+Type: Package
+Title: Bayes Factor Design for Two-Arm Binomial Trials
+Version: 0.1.5
+Date: 2026-07-06
+Authors@R: 
+    c(person(given = "Riko", family = "Kelter", role = c("aut", "cre"),
+             email = "rkelter@uni-koeln.de"))
+Description: Design and analysis of one- and two-stage binomial
+    clinical phase II trials using Bayes factors. Implements Bayes factors
+    for point-null and directional hypotheses, predictive densities under
+    different hypotheses, and power and sample size calibration. Both one-arm
+    trials with only a single treatment arm and two-arm trials with treatment
+    and control arm are implemented for the one- and two-stage designs.
+Depends: R (>= 4.0.0)
+Imports: stats, VGAM, dplyr, parallel, utils, ggplot2, patchwork, rlang
+Suggests: knitr, rmarkdown, kableExtra, testthat (>= 3.0.0), purrr,
+        tidyr,
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+URL: https://rikokelter.github.io/bfbin2arm/,
+        https://github.com/rikokelter/bfbin2arm,
+        https://arxiv.org/abs/2511.23144,
+        https://arxiv.org/abs/2603.01715,
+        https://arxiv.org/abs/2502.02914,
+        https://arxiv.org/abs/2606.02410,
+        https://rikokelter.github.io/bfbin2arm/
+NeedsCompilation: no
+Packaged: 2026-07-06 12:26:56 UTC; riko
+Author: Riko Kelter [aut, cre]
+Maintainer: Riko Kelter <rkelter@uni-koeln.de>
+Repository: CRAN
+Date/Publication: 2026-07-06 12:50:02 UTC

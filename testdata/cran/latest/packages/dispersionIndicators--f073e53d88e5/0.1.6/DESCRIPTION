@@ -1,0 +1,39 @@
+Package: dispersionIndicators
+Title: Indicators for the Analysis of Dispersion of Datasets with
+        Batched and Ordered Samples
+Version: 0.1.6
+Authors@R: 
+    c(
+        person("Brice", "Mulot", email = "mulotbrice2@gmail.com", role = "aut"),
+        person("Elfried", "Salanon", email = "magneficat.salanon@gmail.com", role = "ctb"),
+        person("Etienne", "Jules", email = "etienne.jules@inrae.fr", role = c("aut", "cre")),
+        person("INRAE (Institut national de recherche pour l'agriculture, l'alimentation et l'environnement)", role = "cph")
+    )
+Depends: R (>= 4.1)
+Description: Provides methods for analyzing the dispersion of tabular datasets
+    with batched and ordered samples. Based on convex hull or integrated covariance
+    Mahalanobis, several indicators are implemented for inter and intra batch dispersion
+    analysis. It is designed to facilitate robust statistical assessment of data
+    variability, supporting applications in exploratory data analysis and quality
+    control, for such datasets as the one found in metabololomics studies.
+    For more details see Salanon (2024) <doi:10.1016/j.chemolab.2024.105148> and
+    Salanon (2025) <doi:10.1101/2025.08.01.668073>.
+URL:
+        https://unh-pfem-gitlab.ara.inrae.fr/packages/dispersion_indicators/
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: cli, pdftools, png, testthat (>= 3.0.0)
+Imports: corpcor, ggplot2 (>= 3.5.2), stats, utils
+Config/testthat/edition: 3
+Collate: convex_function.R icm_function.R
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-03 11:45:41 UTC; root
+Author: Brice Mulot [aut],
+  Elfried Salanon [ctb],
+  Etienne Jules [aut, cre],
+  INRAE (Institut national de recherche pour l'agriculture,
+    l'alimentation et l'environnement) [cph]
+Maintainer: Etienne Jules <etienne.jules@inrae.fr>
+Repository: CRAN
+Date/Publication: 2026-08-03 13:00:02 UTC

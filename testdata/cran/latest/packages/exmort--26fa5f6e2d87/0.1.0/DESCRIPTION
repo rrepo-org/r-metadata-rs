@@ -1,0 +1,45 @@
+Package: exmort
+Title: All-Cause and Excess Mortality Calculator
+Version: 0.1.0
+Authors@R: c(
+    person("Shanlong", "Ding", email = "dings@who.int",
+           role = c("aut", "cre")),
+    person("World Health Organization Regional Office for the Western Pacific",
+           role = c("cph", "fnd")))
+Description: An interactive 'shiny' application that estimates all-cause
+    mortality and excess mortality from country-level weekly or monthly death
+    counts. Users supply observed deaths and an event calendar (for example
+    COVID-19 waves or typhoons); the app fits one or more statistical
+    baseline models (historical average, negative binomial regression,
+    quasi-Poisson regression, zero-inflated Poisson regression, ARIMA
+    (autoregressive integrated moving average) and SARIMA (seasonal ARIMA)
+    models, GAM (generalized additive model) splines, and the model of
+    Karlinsky and Kobak (2021) <doi:10.7554/eLife.69336>) on a user-defined
+    baseline period, projects the expected deaths into the post-baseline
+    period, and reports excess deaths, P-scores (excess deaths as a
+    percentage of expected deaths) and confidence limits with tables, plots
+    and downloadable reports. Launch the application with run_app().
+License: GPL-3
+Encoding: UTF-8
+Language: en-GB
+Imports: base64enc, data.table, dplyr, DT, forecast, ggplot2, ggrepel,
+        htmltools, ISOweek, kableExtra, knitr, lubridate, mgcv,
+        openxlsx, parallel, plotly, reactable, readxl, RColorBrewer,
+        reshape2, rmarkdown, scales, shiny, shinyalert,
+        shinycssloaders, shinyjs, stringr, tibble, tidyr, zoo
+Suggests: officedown, testthat (>= 3.0.0), tinytex
+Config/testthat/edition: 3
+SystemRequirements: pandoc (>= 1.14) for report rendering; a LaTeX
+        installation (for example TinyTeX) is required only for PDF
+        reports.
+URL: https://github.com/shanlong-who/exmort
+BugReports: https://github.com/shanlong-who/exmort/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-21 11:13:54 UTC; User
+Author: Shanlong Ding [aut, cre],
+  World Health Organization Regional Office for the Western Pacific [cph,
+    fnd]
+Maintainer: Shanlong Ding <dings@who.int>
+Repository: CRAN
+Date/Publication: 2026-07-30 16:30:08 UTC

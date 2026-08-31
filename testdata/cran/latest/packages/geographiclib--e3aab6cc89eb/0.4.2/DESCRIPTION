@@ -1,0 +1,33 @@
+Package: geographiclib
+Title: Access to 'GeographicLib'
+Version: 0.4.2
+Authors@R: c(
+    person("Michael", "Sumner", , "mdsumner@gmail.com", role = c("cre", "aut")), 
+    person("Charles", "Karney", role = c("cph", "aut"), comment="GeographicLib author and maintainer"),
+    person("Mark", "Borgerding", role = "cph", comment = "kissfft library (BSD-3-Clause)")
+    )
+Description: Bindings to the 'GeographicLib' C++ library
+    <https://geographiclib.sourceforge.io/> for precise geodetic calculations
+    including geodesic computations (distance, bearing, paths, intersections),
+    map projections (UTM/UPS, Transverse Mercator, Lambert Conformal Conic,
+    and more), grid reference systems (MGRS, Geohash, GARS, Georef),
+    coordinate conversions (geocentric, local Cartesian), and polygon area
+    on the WGS84 ellipsoid. All functions are fully vectorized.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LinkingTo: cpp11
+URL: https://github.com/hypertidy/geographiclib
+BugReports: https://github.com/hypertidy/geographiclib/issues
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-03-03 14:03:33 UTC; mdsumner
+Author: Michael Sumner [cre, aut],
+  Charles Karney [cph, aut] (GeographicLib author and maintainer),
+  Mark Borgerding [cph] (kissfft library (BSD-3-Clause))
+Maintainer: Michael Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-04 06:30:53 UTC

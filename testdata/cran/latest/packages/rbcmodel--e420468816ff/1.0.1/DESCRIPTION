@@ -1,0 +1,32 @@
+Package: rbcmodel
+Title: Model Rubisco Carboxylation Rate Across Temperature, CO2, and O2
+Version: 1.0.1
+Authors@R: c(
+    person("Kaitlin", "Harrison", email = "k.harrison.sci@gmail.com", role = c("aut", "cre", "cph")),
+    person("Wing-Ho", "Ko", email = "wingho.ko@alum.mit.edu", role = "aut"))
+Description: Collects published kinetics of ribulose 1,5-bisphosphate
+    carboxylase/oxygenase (Rubisco) and uses these kinetics to model the
+    carboxylation rate across CO2 and O2 concentrations and different
+    temperatures. The carboxylation rate can be modeled as the gross rate or
+    the net rate, which takes into account the oxygenase activity of the
+    enzyme using one of the three known phosphoglycolate salvage pathways.
+    Custom enzymes and temperature dependences can be created with user
+    kinetics, or published kinetics can be accessed through a meta-analysis
+    contained within the package. An expansion of methods from Harrison et al.
+    (2025) <doi:10.1128/aem.00604-25>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: plot3D
+Depends: R (>= 3.5)
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-24 18:49:58 UTC; kehar
+Author: Kaitlin Harrison [aut, cre, cph],
+  Wing-Ho Ko [aut]
+Maintainer: Kaitlin Harrison <k.harrison.sci@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 13:50:02 UTC

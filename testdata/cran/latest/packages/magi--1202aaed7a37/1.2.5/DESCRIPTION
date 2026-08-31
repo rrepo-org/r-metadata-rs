@@ -1,0 +1,41 @@
+Package: magi
+Type: Package
+Title: MAnifold-Constrained Gaussian Process Inference
+Version: 1.2.5
+Date: 2025-10-22
+Authors@R: 
+  c(person(given = "Shihao",
+           family = "Yang",
+           role = c("aut", "cre"),
+           email = "shihao.yang@isye.gatech.edu",
+           comment = c(ORCID = "0000-0003-3910-4969")),
+    person(given = "Samuel W.K.",
+           family = "Wong",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-7325-7267")),
+    person(given = "S.C.",
+           family = "Kou",
+           role = c("ctb", "cph"),
+           comment = c(role = "Contributor of MAGI method development"))
+           )
+Encoding: UTF-8
+Description: Provides fast and accurate inference for the parameter estimation problem in Ordinary Differential
+    Equations, including the case when there are unobserved system components. Implements the MAGI method
+    (MAnifold-constrained Gaussian process Inference) of Yang, Wong, and Kou (2021) <doi:10.1073/pnas.2020397118>.
+    A user guide is provided by the accompanying software paper Wong, Yang, and Kou (2024) <doi:10.18637/jss.v109.i04>.
+URL: https://doi.org/10.18637/jss.v109.i04
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+Imports: Rcpp (>= 1.0.6), gridExtra, gridBase, grid, methods, deSolve
+LinkingTo: Rcpp, RcppArmadillo, BH, roptim
+RoxygenNote: 7.3.1
+Suggests: testthat, mvtnorm, covr, knitr, MASS, rmarkdown, markdown
+Depends: R (>= 3.6.0)
+NeedsCompilation: yes
+Maintainer: Shihao Yang <shihao.yang@isye.gatech.edu>
+Packaged: 2025-10-22 17:14:54 UTC; shihaoyang
+Author: Shihao Yang [aut, cre] (ORCID: <https://orcid.org/0000-0003-3910-4969>),
+  Samuel W.K. Wong [aut] (ORCID: <https://orcid.org/0000-0002-7325-7267>),
+  S.C. Kou [ctb, cph] (role: Contributor of MAGI method development)
+Repository: CRAN
+Date/Publication: 2025-10-22 17:40:02 UTC

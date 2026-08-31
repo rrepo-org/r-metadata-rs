@@ -1,0 +1,34 @@
+Package: mixediffusion
+Type: Package
+Title: Mixed-Effects Diffusion Models with General Drift
+Description: Provides tools for likelihood-based inference in one-dimensional stochastic differential equations with mixed effects using expectation–maximization (EM) algorithms. The package supports Wiener and Ornstein–Uhlenbeck diffusion processes with user-specified drift functions, allowing flexible parametric forms including polynomial, exponential, and trigonometric structures. Estimation is performed via Markov chain Monte Carlo EM.
+Version: 1.0.1
+Authors@R: c(person(given="Pedro Abraham", family="Montoya Calzada", role = c("aut", "cre", "cph"), 
+            comment = c(ORCID = "0009-0002-3497-210X"),email = "pedroabraham.montoya@gmail.com"),
+            person(given="Rogelio", family="Salinas Gutiérrez", role = c("aut","cph"),
+                     email = "rsalinas@correo.uaa.mx", comment = c(ORCID = "0000-0002-1669-4460")),
+            person(given="Silvia", family="Rodríguez-Narciso", role = c("aut","cph"),
+                    comment = c(ORCID = "0000-0001-5429-5914")),
+            person(given="Netzahualcóyotl", family="Castañeda-Leyva", role = c("aut","cph"),
+                    comment = c(ORCID = "0000-0001-9414-3923")))
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, adaptMCMC
+Maintainer: Pedro Abraham Montoya Calzada <pedroabraham.montoya@gmail.com>
+Depends: R (>= 4.5)
+LazyData: true
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-10 05:43:55 UTC; Abraham
+Author: Pedro Abraham Montoya Calzada [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-3497-210X>),
+  Rogelio Salinas Gutiérrez [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-1669-4460>),
+  Silvia Rodríguez-Narciso [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-5429-5914>),
+  Netzahualcóyotl Castañeda-Leyva [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-9414-3923>)
+Repository: CRAN
+Date/Publication: 2026-04-10 06:00:02 UTC

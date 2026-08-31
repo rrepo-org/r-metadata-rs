@@ -1,0 +1,27 @@
+Package: vfunc
+Type: Package
+Title: Manipulate Virtual Functions
+Authors@R: person(
+	   given=c("Robin", "K. S."),
+	   family="Hankin",
+	   role = c("aut","cre"),
+	   email="hankin.robin@gmail.com",
+	   comment = c(ORCID = "0000-0001-5982-0415"))
+Version: 1.0
+Depends: R (>= 4.2.0)
+Suggests: testthat, knitr, rmarkdown, onion
+Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
+Description: If f <- function(x){x^2} and g <- function(x){x+1} it is
+     a constant source of annoyance that "f+g" is not defined.
+     Package 'vfunc' allows you to do this, and we have (f+g)(2)
+     returning 5.  The other arithmetic operators are similarly
+     implemented.  A wide class of coding bugs is eliminated.
+License: GPL-2
+Imports: methods
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-07-25 10:18:52 UTC; rhankin
+Author: Robin K. S. Hankin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5982-0415>)
+Repository: CRAN
+Date/Publication: 2025-07-28 18:50:02 UTC

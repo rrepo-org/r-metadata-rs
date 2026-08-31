@@ -1,0 +1,27 @@
+Package: PlateVision
+Title: Automated qPCR Analysis and Visual Quality Control
+Version: 0.1.0
+Authors@R: 
+    person(given = "Shubham",
+           family = "Love",
+           role = c("aut", "cre"),
+           email = "shubhamlove2101@gmail.com")
+Description: Directly pipes raw quantitative PCR (qPCR) machine outputs into downstream 
+    analyses using the comparative Ct (Delta-Delta Ct) method described by Livak and 
+    Schmittgen (2001) <doi:10.1006/meth.2001.1262>. Streamlines the workflow from 'Excel' 
+    export to publication-ready plots. Integrates unique visual quality control by 
+    reconstructing 96-well plate heatmaps, allowing users to instantly detect pipetting 
+    errors, edge effects, and outliers. Key features include automated error propagation, 
+    laboratory master mix calculations, and generation of bar charts and volcano plots.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, readxl, ggplot2, stringr, plotly
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-17 10:46:00 UTC; shubhamlove
+Author: Shubham Love [aut, cre]
+Maintainer: Shubham Love <shubhamlove2101@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-22 17:50:07 UTC

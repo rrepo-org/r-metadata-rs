@@ -1,0 +1,40 @@
+Package: ppforest2
+Type: Package
+Title: Projection Pursuit Oblique Decision Trees and Random Forests
+Version: 0.1.2
+Date: 2026-07-20
+Authors@R: c(
+    person("Andrés", "Vidal", email = "andres@andresvidal.dev", role = c("aut", "cre", "cph")),
+    person("Natalia", "da Silva", role = "aut"))
+Description: Builds decision trees by splitting on linear combinations of
+    randomly chosen variables. Projection pursuit is used to choose a
+    projection of the variables that best separates the groups. Using linear
+    combinations of variables to separate groups takes the correlation between
+    variables into account, which allows the model to outperform a traditional
+    decision tree when the separation between groups occurs in combinations of
+    variables. Single trees can be assembled into random forests for improved
+    accuracy. Implements projection pursuit classification trees (Lee, Cook,
+    Park and Lee (2013) <doi:10.1214/13-EJS810>) and projection
+    pursuit forests (da Silva, Cook and Lee (2021)
+    <doi:10.1080/10618600.2020.1870480>), following the earlier 'PPforest'
+    package.
+License: MIT + file LICENSE
+Imports: Rcpp (>= 1.0.11)
+LinkingTo: Rcpp, RcppEigen
+Depends: R (>= 3.5.0)
+LazyData: true
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Suggests: ggplot2, jsonlite, knitr, parsnip, patchwork, rlang,
+        rmarkdown, rsample, testthat (>= 3.0.0), tibble, tune, vdiffr,
+        withr, workflows, yardstick
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+NeedsCompilation: yes
+Packaged: 2026-07-20 19:36:31 UTC; andres
+Author: Andrés Vidal [aut, cre, cph],
+  Natalia da Silva [aut]
+Maintainer: Andrés Vidal <andres@andresvidal.dev>
+Repository: CRAN
+Date/Publication: 2026-07-21 08:20:02 UTC

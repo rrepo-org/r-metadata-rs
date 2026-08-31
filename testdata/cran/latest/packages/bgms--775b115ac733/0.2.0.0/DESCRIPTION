@@ -1,0 +1,58 @@
+Package: bgms
+Type: Package
+Title: Bayesian Analysis of Graphical Models
+Version: 0.2.0.0
+Date: 2026-08-03
+Authors@R: c(
+    person("Maarten", "Marsman", , "m.marsman@uva.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5309-7502")),
+    person("Don", "van den Bergh", role = "aut",
+           comment = c(ORCID = "0000-0002-9838-7308")),
+    person("Nikola", "Sekulovski", role = "ctb",
+           comment = c(ORCID = "0000-0001-7032-1684")),
+    person("Giuseppe", "Arena", role = "ctb",
+           comment = c(ORCID = "0000-0001-5204-3326")),
+    person("Laura", "Groot", role = "ctb"),
+    person("Gali", "Geller", role = "ctb")
+  )
+Maintainer: Maarten Marsman <m.marsman@uva.nl>
+Description: Bayesian estimation and edge selection for graphical models of
+    mixed binary, ordinal, and continuous variables. The variable types determine
+    the model: an ordinal Markov random field for discrete data, a Gaussian
+    graphical model for continuous data, or a mixed Markov random field combining
+    both. Edge inclusion is determined through spike-and-slab priors, yielding
+    posterior inclusion probabilities for each edge. Supports multi-group
+    comparison via 'bgmCompare()', simulation, prediction, and missing data
+    imputation.
+Copyright: Includes datasets 'ADHD' and 'Boredom', which are licensed
+        under CC-BY 4. See individual data documentation for license
+        and citation.
+License: GPL (>= 2)
+URL: https://bayesian-graphical-modelling-lab.github.io/bgms/,
+        https://github.com/Bayesian-Graphical-Modelling-Lab/bgms
+BugReports: https://github.com/Bayesian-Graphical-Modelling-Lab/bgms/issues
+Imports: Rcpp (>= 1.0.7), RcppParallel, Rdpack, S7, methods, lifecycle,
+        graphics, grDevices, parallel, stats, utils
+RdMacros: Rdpack
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel, dqrng, BH
+Depends: R (>= 3.5)
+LazyData: true
+Encoding: UTF-8
+Suggests: coda, covr, knitr, MASS, qgraph, rmarkdown, testthat (>=
+        3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-03 23:01:34 UTC; maartenmarsman
+Author: Maarten Marsman [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5309-7502>),
+  Don van den Bergh [aut] (ORCID:
+    <https://orcid.org/0000-0002-9838-7308>),
+  Nikola Sekulovski [ctb] (ORCID:
+    <https://orcid.org/0000-0001-7032-1684>),
+  Giuseppe Arena [ctb] (ORCID: <https://orcid.org/0000-0001-5204-3326>),
+  Laura Groot [ctb],
+  Gali Geller [ctb]
+Repository: CRAN
+Date/Publication: 2026-08-04 03:00:02 UTC

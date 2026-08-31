@@ -1,0 +1,47 @@
+Package: pHMC
+Type: Package
+Title: Proximal Hamiltonian Monte Carlo for Non-Smooth Bayesian
+        Inference
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com",
+           role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com",
+           role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu",
+           role = "aut")
+    )
+Description: Implements the Proximal Hamiltonian Monte Carlo (p-HMC)
+    algorithm for Bayesian sampling and estimation from non-differentiable
+    target densities. The method decomposes a target potential into a smooth
+    component f(x) and a non-smooth convex component g(x), approximating
+    only g(x) via its Moreau-Yosida envelope while retaining exact gradient
+    information for f(x). This approach, based on the methodology described
+    in Shukla, Vats, and Chi (2025) <doi:10.48550/arXiv.2510.22252>,
+    yields improved Hamiltonian conservation over full-potential smoothing
+    approaches. The package provides generalized routines accepting
+    user-defined probability density functions, log-likelihoods, priors,
+    and proximal operators, together with automated hyperparameter tuning
+    for the Moreau-Yosida regularization parameter, Markov chain Monte
+    Carlo convergence diagnostics, effective sample size computation,
+    and model evaluation metrics including the Akaike information criterion
+    and Bayesian information criterion.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats, graphics, grDevices, utils, Matrix
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-05 11:36:31 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 12:40:09 UTC

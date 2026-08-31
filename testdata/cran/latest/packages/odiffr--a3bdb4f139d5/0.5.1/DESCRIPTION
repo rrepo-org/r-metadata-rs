@@ -1,0 +1,29 @@
+Package: odiffr
+Title: Fast Pixel-by-Pixel Image Comparison Using 'odiff'
+Version: 0.5.1
+Authors@R: 
+    person("Ben", "Wolstenholme", , "odiffr@benwolst.dev", role = c("aut", "cre"))
+Description: R bindings to 'odiff', a blazing-fast pixel-by-pixel image
+    comparison tool <https://github.com/dmtrKovalenko/odiff>. Supports PNG,
+    JPEG, WEBP, and TIFF with configurable thresholds, antialiasing detection,
+    and region ignoring. Requires system installation of 'odiff'. Ideal for
+    visual regression testing in automated workflows.
+SystemRequirements: odiff (>= 3.0.0) -
+        https://github.com/dmtrKovalenko/odiff
+License: MIT + file LICENSE
+URL: https://github.com/BenWolst/odiffr
+BugReports: https://github.com/BenWolst/odiffr/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: tools
+Suggests: knitr, magick, png, rmarkdown, testthat (>= 3.1.0), tibble,
+        withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-09 17:58:26 UTC; benwolstenholme
+Author: Ben Wolstenholme [aut, cre]
+Maintainer: Ben Wolstenholme <odiffr@benwolst.dev>
+Repository: CRAN
+Date/Publication: 2025-12-09 18:40:03 UTC

@@ -1,0 +1,33 @@
+Package: boxTest
+Type: Package
+Title: Boxplot and Significance Test for Two Groups
+Version: 0.1.0
+Authors@R: 
+    c(
+      person("Arkaprabha", "Sau", 
+             email = "arka.doctor@gmail.com", 
+             role = c("aut", "cre")),
+      person("Santanu", "Phadikar", 
+             email = "phadikar@gmail.com", 
+             role = "aut"),
+      person("Ishita", "Bhakta", 
+             email = "ishita.official@gmail.com", 
+             role = "aut")
+    )
+Description: Provides functions to create side-by-side boxplots for a continuous variable grouped by a two-level categorical variable, check normality assumptions using the Shapiro-Wilk test (Shapiro and Wilk (1965) <doi:10.2307/2333709>), and perform appropriate statistical tests such as the independent two-sample t-test (Student (1908) <doi:10.1093/biomet/6.1.1>) or the Mann–Whitney U test ( Mann–Whitney (1947) <doi:10.1214/aoms/1177730491>). Returns a publication-ready plot and test statistics including test statistic, degrees of freedom, and p-value.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: ggplot2, dplyr, stats, rlang
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-24 11:39:52 UTC; arka
+Author: Arkaprabha Sau [aut, cre],
+  Santanu Phadikar [aut],
+  Ishita Bhakta [aut]
+Maintainer: Arkaprabha Sau <arka.doctor@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-01 07:00:16 UTC

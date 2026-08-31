@@ -1,0 +1,33 @@
+Package: debtkit
+Title: Debt Sustainability Analysis and Fiscal Risk Assessment
+Version: 0.1.2
+Authors@R: 
+    person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
+Description: Analyses government debt sustainability using the standard debt
+    dynamics framework from Blanchard (1990) <doi:10.1787/budget-v2-art12-en>
+    and the IMF Debt Sustainability Analysis methodology (IMF, 2013) and the
+    Sovereign Risk and Debt Sustainability Framework (IMF, 2022). Projects
+    debt-to-GDP paths, decomposes historical debt changes into interest,
+    growth, and primary balance contributions, and estimates fiscal reaction
+    functions following Bohn (1998) <doi:10.1162/003355398555793>. Produces stochastic
+    fan charts via Monte Carlo simulation, standardised stress tests, and IMF-
+    style heat map risk assessments. Computes S1/S2 sustainability gap
+    indicators used by the European Commission. All methods are pure
+    computation with no external dependencies beyond base R; works with fiscal
+    data from any source.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: cli (>= 3.6.0), grDevices, graphics, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/charlescoverdale/debtkit
+BugReports: https://github.com/charlescoverdale/debtkit/issues
+NeedsCompilation: no
+Packaged: 2026-03-27 10:39:31 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-31 15:10:08 UTC

@@ -1,0 +1,36 @@
+Package: semaphore
+Type: Package
+Title: Shared Memory Atomic Operations
+Version: 1.2.0
+Date: 2025-03-28
+Authors@R: c(
+    person(
+      "Daniel P.", "Smith",
+      email   = "dansmith01@gmail.com",
+      role    = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-2479-2044")),
+    person(
+      "Alkek Center for Metagenomics and Microbiome Research", 
+      role = c("cph", "fnd") ))
+Description: Implements named semaphores from the 'boost' 'C++' library
+    <https://www.boost.org/> for interprocess communication. Multiple 'R' 
+    sessions on the same host can block (with optional timeout) on a semaphore
+    until it becomes positive, then atomically decrement it and unblock. Any
+    session can increment the semaphore.
+URL: https://cmmr.github.io/semaphore/,
+        https://github.com/cmmr/semaphore
+BugReports: https://github.com/cmmr/semaphore/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+LinkingTo: Rcpp, BH
+Imports: Rcpp
+Suggests: testthat
+NeedsCompilation: yes
+Packaged: 2025-03-28 19:19:40 UTC; Daniel
+Author: Daniel P. Smith [aut, cre] (<https://orcid.org/0000-0002-2479-2044>),
+  Alkek Center for Metagenomics and Microbiome Research [cph, fnd]
+Maintainer: Daniel P. Smith <dansmith01@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-29 00:30:02 UTC

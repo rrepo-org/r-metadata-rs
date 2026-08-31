@@ -1,0 +1,32 @@
+Package: triact
+Type: Package
+Title: Analyzing the Lying Behavior of Cows from Accelerometer Data
+Version: 0.3.1
+Authors@R: c(
+    person("Michael", "Simmler", email = "michael.simmler@agroscope.admin.ch", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4095-4111")),
+    person("Stijn Pieter", "Brouwers", email = "stijn.brouwers@agroscope.admin.ch", role = c("ctb"),
+           comment = c(ORCID = "0000-0002-7028-7823")))
+Description: Assists in analyzing the lying behavior of cows from raw data 
+    recorded with a triaxial accelerometer attached to the hind leg of a cow. Allows 
+    the determination of common measures for lying behavior including total lying duration, the 
+    number of lying bouts, and the mean duration of lying bouts. Further capabilities are the 
+    description of lying laterality and the calculation of proxies for the level of physical 
+    activity of the cow. Reference: Simmler M., Brouwers S. P. (2024) <doi:10.7717/peerj.17036>. 
+License: GPL (>= 3)
+URL: https://github.com/agroscope-ch/triact
+BugReports: https://github.com/agroscope-ch/triact/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.4)
+Imports: R6 (>= 2.5.1), data.table (>= 1.15.4), checkmate (>= 2.3.2),
+        lubridate (>= 1.9.3), parallel, methods, stats
+Suggests: signal (>= 1.8-1), tibble, rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-04-08 15:01:43 UTC; f80850181
+Author: Michael Simmler [aut, cre] (<https://orcid.org/0000-0002-4095-4111>),
+  Stijn Pieter Brouwers [ctb] (<https://orcid.org/0000-0002-7028-7823>)
+Maintainer: Michael Simmler <michael.simmler@agroscope.admin.ch>
+Repository: CRAN
+Date/Publication: 2025-04-08 17:00:02 UTC

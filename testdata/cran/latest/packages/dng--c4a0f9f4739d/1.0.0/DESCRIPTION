@@ -1,0 +1,29 @@
+Package: dng
+Type: Package
+Title: Distributions and Gradients
+Version: 1.0.0
+Authors@R: c(
+    person("Feng", "Li", email = "feng.li@gsm.pku.edu.cn", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4248-9778")),
+    person("Jiayue", "Zeng", email = "zengjiayue@126.com", role = "aut")
+    )
+Depends: R (>= 3.0.0)
+Description: Provides density, distribution function, quantile function and random
+             generation for the split normal and split-t distributions, and computes their
+             mean, variance, skewness and kurtosis for the two distributions (Li, F,
+             Villani, M. and Kohn, R. (2010) <doi:10.1016/j.jspi.2010.04.031>).
+License: GPL (>= 2)
+BugReports: https://github.com/feng-li/dng/issues
+URL: https://github.com/feng-li/dng/
+Encoding: UTF-8
+Imports: Rcpp (>= 0.12.9)
+LinkingTo: Rcpp
+Suggests: testthat
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2026-04-30 02:12:19 UTC; fli
+Author: Feng Li [aut, cre] (ORCID: <https://orcid.org/0000-0002-4248-9778>),
+  Jiayue Zeng [aut]
+Maintainer: Feng Li <feng.li@gsm.pku.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-05-03 06:30:11 UTC

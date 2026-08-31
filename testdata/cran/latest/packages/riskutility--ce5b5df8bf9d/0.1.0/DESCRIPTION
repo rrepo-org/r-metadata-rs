@@ -1,0 +1,44 @@
+Package: riskutility
+Title: Disclosure Risk and Data Utility Metrics for Synthetic and
+        Anonymized Data
+Version: 0.1.0
+Authors@R: c(
+    person("Matthias", "Templ", email = "matthias.templ@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8638-5276")),
+    person("Oscar", "Thees",
+           role = "ctb",
+           comment = c(ORCID = "0009-0001-9378-4988"))
+    )
+Description: Provides comprehensive methods to measure disclosure risk and data
+    utility for anonymized and synthetic data. Implements attribution-based risk
+    metrics including Correct Attribution Probability (CAP), Targeted CAP (TCAP),
+    Within Equivalence Class Attribution Probability (WEAP), and RAPID (Risk of
+    Attribute Prediction-Induced Disclosure). Also provides distance-based privacy
+    metrics such as Distance to Closest Record (DCR), Nearest Neighbor Distance
+    Ratio (NNDR), and Identical Match Share (IMS). Utility assessment includes
+    propensity score analysis, distribution comparisons, and various statistical
+    tests. Methods are based on Taub et al. (2018) <doi:10.1007/978-3-319-99771-1_9>
+    and related literature. Designed for integration with 'simPop' S4 classes.
+Depends: R (>= 4.1.0)
+Imports: ggplot2, data.table, MASS, VIM, randomForest, ranger,
+        reshape2, stats, graphics, utils
+Suggests: simPop, synthpop, caretEnsemble, kernelshap, uwot, Rtsne,
+        dbscan, vip, rpart, xgboost, partykit, testthat (>= 3.0.0),
+        torch, knitr, rmarkdown, plotly, misc3d, sdcMicro, caret,
+        robustbase, gridExtra, Hmisc, robCompositions, clue
+License: GPL-3
+URL: https://github.com/matthias-da/riskutility
+BugReports: https://github.com/matthias-da/riskutility/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-17 11:54:46 UTC; matthias
+Author: Matthias Templ [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8638-5276>),
+  Oscar Thees [ctb] (ORCID: <https://orcid.org/0009-0001-9378-4988>)
+Maintainer: Matthias Templ <matthias.templ@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-22 15:40:09 UTC

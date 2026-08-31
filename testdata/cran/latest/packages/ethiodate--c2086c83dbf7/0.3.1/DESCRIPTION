@@ -1,0 +1,36 @@
+Package: ethiodate
+Type: Package
+Title: Working with Ethiopian Dates
+Version: 0.3.1
+Date: 2026-01-21
+Authors@R: c(
+    person(
+      "Gutama Girja", "Urago",
+      email = "girjagutama@gmail.com",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0001-5588-2301")
+    )
+  )
+Description: A robust and efficient solution for working with Ethiopian dates. It can seamlessly convert to and from Gregorian dates. 
+    It is designed to be compatible with the 'tidyverse' data workflow, including plotting with 'ggplot2'.
+    It ensures lightning-fast computations by integrating high-performance 'C++' code through 'Rcpp' package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+LinkingTo: Rcpp
+Imports: cli, Rcpp, stringr, vctrs
+Suggests: dplyr, ggplot2, knitr, rmarkdown, scales, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://guturago.github.io/ethiodate/,
+        https://github.com/guturago/ethiodate
+BugReports: https://github.com/guturago/ethiodate/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-01-21 11:01:25 UTC; Gute
+Author: Gutama Girja Urago [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5588-2301>)
+Maintainer: Gutama Girja Urago <girjagutama@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-21 11:30:02 UTC

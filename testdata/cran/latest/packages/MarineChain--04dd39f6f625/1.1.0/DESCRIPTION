@@ -1,0 +1,34 @@
+Package: MarineChain
+Type: Package
+Title: Blockchain-Enabled Maritime Transportation System Simulator
+Version: 1.1.0
+Authors@R: c(
+    person("Isaac", "Osei", email = "ikemillar65@gmail.com", role = c("aut", "cre")),
+    person("Yamini", "Alakunta", email = "yamini_alakunta@srmap.edu.in", role = "aut")
+  )
+Maintainer: Isaac Osei <ikemillar65@gmail.com>
+Description: Simulates Blockchain-Enabled Maritime Transportation Systems 
+    (BMTS) by integrating asynchronous, great-circle vessel kinematics with 
+    decentralised edge-computing consensus layers. The package provides a fully 
+    self-contained cyber-range running completely offline, permitting the 
+    risk-free injection of spatial and telemetry threat vectors (e.g., geofence 
+    breaches, coordinate modification, and node impersonation). It includes an 
+    interactive workspace engine built using 'shinydashboard' and 'leaflet' map 
+    layers for monitoring vessel states and ledger updates. Implemented 
+    consensus structures are modeled on a lightweight Proof-of-Authentication 
+    framework optimized for resource-constrained distributed nodes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: shiny, shinydashboard, digest, leaflet, plotly
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://github.com/ikemillar/MarineChain
+BugReports: https://github.com/ikemillar/MarineChain/issues
+NeedsCompilation: no
+Packaged: 2026-07-06 17:47:14 UTC; isaacosei
+Author: Isaac Osei [aut, cre],
+  Yamini Alakunta [aut]
+Repository: CRAN
+Date/Publication: 2026-07-15 18:00:08 UTC

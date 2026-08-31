@@ -1,0 +1,44 @@
+Package: thamesmix
+Type: Package
+Title: Truncated Harmonic Mean Estimator of the Marginal Likelihood for
+        Mixtures
+Version: 0.1.3
+Authors@R: 
+    c(person(given = "Martin",
+    family = "Metodiev",
+    role = c("aut","cre","cph"),
+    email = "m.metodiev@tutanota.com",
+    comment = c(ORCID = "0009-0000-9432-3756")),
+    person(given = "Nicholas J.",
+    family = "Irons",
+    role = "aut",
+    email = "nicholasjonirons@gmail.com",
+    comment = c(ORCID = "0000-0002-9720-8259")),
+    person(given = "Marie",
+    family = "Perrot-Dockès",
+    role = "aut",
+    email = "marie.perrot-dockees@parisdescartes.fr"))
+Description: Implements the truncated harmonic mean estimator (THAMES) 
+    of the reciprocal marginal likelihood for uni- and multivariate mixture 
+    models using posterior samples and unnormalized log posterior values via 
+    reciprocal importance sampling.
+    Metodiev, Irons, Perrot-Dockès, Latouche & Raftery (2025)
+    <doi:10.48550/arXiv.2504.21812>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: stats, sparsediscrim, quadprog, igraph, gor, Rfast, mvtnorm,
+        combinat, withr
+VignetteBuilder: knitr
+Suggests: multimode, knitr, bayesmix, label.switching, LaplacesDemon,
+        markdown
+NeedsCompilation: no
+Packaged: 2025-07-14 18:25:32 UTC; metodiev
+Author: Martin Metodiev [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0000-9432-3756>),
+  Nicholas J. Irons [aut] (ORCID:
+    <https://orcid.org/0000-0002-9720-8259>),
+  Marie Perrot-Dockès [aut]
+Maintainer: Martin Metodiev <m.metodiev@tutanota.com>
+Repository: CRAN
+Date/Publication: 2025-07-14 18:40:02 UTC

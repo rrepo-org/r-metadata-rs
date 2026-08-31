@@ -1,0 +1,27 @@
+Package: rcppmlpackexamples
+Type: Package
+Title: Example Use of 'mlpack' from C++ via R
+Version: 0.0.1
+Date: 2025-09-14
+Authors@R: c(person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org"),
+             person(given="Authors of mlpack", role = "aut"),
+             person("Constantinos", "Giachalis", role = "ctb"))
+Description: A Minimal Example Package which demonstrates 'mlpack' use via C++ Code from R.
+URL: https://github.com/eddelbuettel/rcppmlpack-examples
+BugReports: https://github.com/eddelbuettel/rcppmlpack-examples/issues
+License: GPL (>= 2)
+Suggests: tinytest
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.1.0)
+LinkingTo: Rcpp, RcppArmadillo (>= 15.0.2-1), RcppEnsmallen, mlpack (>=
+        4.6.3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-09-14 23:36:11 UTC; edd
+Author: Dirk Eddelbuettel [aut, cre],
+  Authors of mlpack [aut],
+  Constantinos Giachalis [ctb]
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Repository: CRAN
+Date/Publication: 2025-09-21 13:30:02 UTC

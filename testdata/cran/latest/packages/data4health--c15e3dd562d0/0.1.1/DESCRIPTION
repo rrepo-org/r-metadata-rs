@@ -1,0 +1,43 @@
+Package: data4health
+Title: A Practical Workflow for Health Data Wrangling
+Version: 0.1.1
+Authors@R: 
+    c(person(given = "Daniela", family = "Lührsen", email = "daniela.luhrsen@bsc.es",
+             role = c("aut", "cre"), comment = c(ORCID = "0009-0002-6340-5964")),
+        person(given = "Carles", family = "Milà", email = "carles.milagarcia@bsc.es",
+               role = c("aut"), comment = c(ORCID = "0000-0003-0470-0760")),
+        person(given = "Raquel", family = "Lana", email = "raquel.lana@bsc.es",
+               role = c("aut"), comment = c(ORCID = "0000-0002-7573-1364")),
+        person(given = "Rachel", family = "Lowe", email = "rachel.lowe@bsc.es",
+               role = c("aut"), comment = c(ORCID = "0000-0003-3939-7343")),
+        person("Mark", "Adler", role = "cph", comment = "Author of src/blast.c"),
+        person("Daniela", "Petruzalek", role = "cph",
+                comment = "Author of src/dbc2dbf.c, see github.com/danicat/read.dbc"))
+Description: Provides a streamlined workflow for cleaning, transforming, filtering, aggregating, and exporting epidemiological line list data. The package is designed for public health surveillance and clinical datasets where each row represents an individual case. It supports common data-wrangling tasks and multi-format data import/export (e.g., 'csv', 'rds', 'xlsx', 'json', 'dbf'). The functions are designed to be combined into a clear and reproducible pipeline while remaining flexible enough for use in standalone data-processing steps. 'data4health' is part of the '4health' toolkit, which integrates health, climate, land-use, and socioeconomic data workflows. More information on the '4health' tools can be found on the HARMONIZE website <https://harmonize-tools.org/toolkits>.
+Imports: foreign, readxl, writexl, shiny, jsonlite, GHRexplore,
+        lubridate, plotly, shinyAce
+BugReports: https://gitlab.earth.bsc.es/ghr/data4health/-/issues
+License: AGPL (>= 3)
+Encoding: UTF-8
+URL:
+        https://bsc-es.github.io/GHRtools/docs/data4health/data4health.html
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), shinytest2, withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 4.2.0)
+LazyData: true
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-01 07:03:03 UTC; dluhrsen
+Author: Daniela Lührsen [aut, cre] (ORCID:
+    <https://orcid.org/0009-0002-6340-5964>),
+  Carles Milà [aut] (ORCID: <https://orcid.org/0000-0003-0470-0760>),
+  Raquel Lana [aut] (ORCID: <https://orcid.org/0000-0002-7573-1364>),
+  Rachel Lowe [aut] (ORCID: <https://orcid.org/0000-0003-3939-7343>),
+  Mark Adler [cph] (Author of src/blast.c),
+  Daniela Petruzalek [cph] (Author of src/dbc2dbf.c, see
+    github.com/danicat/read.dbc)
+Maintainer: Daniela Lührsen <daniela.luhrsen@bsc.es>
+Repository: CRAN
+Date/Publication: 2026-07-07 09:40:08 UTC

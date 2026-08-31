@@ -1,0 +1,30 @@
+Package: maxbootR
+Type: Package
+Title: Efficient Bootstrap Methods for Block Maxima
+Version: 1.0.0
+Authors@R: 
+        person("Torben", "Staud", email = "torben.staud@gmail.com", role = c("aut", "cre", "cph"))
+Description: Implements state-of-the-art block bootstrap methods for extreme value 
+  statistics based on block maxima. Includes disjoint blocks, sliding blocks, 
+  relying on a circular transformation of blocks. 
+  Fast C++ backends (via 'Rcpp') ensure scalability for large time series.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://torbenstaud.github.io/maxbootR/,
+        https://github.com/torbenstaud/maxbootR
+RoxygenNote: 7.3.1
+LinkingTo: Rcpp
+Imports: Rcpp, evd
+Suggests: testthat (>= 3.0.0), covr, knitr, rmarkdown, ggplot2, dplyr,
+        lubridate, tidyr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+BugReports: https://github.com/torbenstaud/maxbootR/issues
+NeedsCompilation: yes
+Packaged: 2025-04-16 05:00:24 UTC; Torben
+Author: Torben Staud [aut, cre, cph]
+Maintainer: Torben Staud <torben.staud@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-17 21:50:02 UTC

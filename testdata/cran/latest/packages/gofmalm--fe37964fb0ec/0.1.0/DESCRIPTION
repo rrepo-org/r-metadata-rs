@@ -1,0 +1,45 @@
+Package: gofmalm
+Type: Package
+Title: Goodness-of-Fit Tests for Type-II Censored Samples via the
+        Malmquist Transformation
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut"))
+Description: Goodness-of-fit tests for an arbitrary user-specified continuous
+    distribution under Type-II right- or left-censoring. Implements the
+    transformation-based method of Lin, Huang and Balakrishnan (2008)
+    <doi:10.1109/TR.2008.2005860>, which uses a property of order statistics
+    due to Malmquist (1950) to convert an r-out-of-n Type-II censored uniform
+    sample into a complete sample of size r, alongside the earlier
+    transformation of Michael and Schucany (1979)
+    <doi:10.1080/00401706.1979.10489813>. Also implements the direct
+    (untransformed) censored-sample statistics of Barr and Davidson (1973)
+    <doi:10.1080/00401706.1973.10489108> and Pettitt and Stephens (1976)
+    <doi:10.1093/biomet/63.2.291>, and the modified-statistic
+    maximum-likelihood procedure of Chen and Balakrishnan (1995) for testing
+    composite hypotheses. General background on empirical-distribution-function
+    goodness-of-fit methods follows D'Agostino and Stephens (1986,
+    ISBN:982-0-8247-7487-5).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-22 11:04:04 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-30 17:40:08 UTC

@@ -1,0 +1,44 @@
+Package: hespdiv
+Type: Package
+Title: Hierarchical Spatial Data Subdivision into Topologically
+        Contiguous Units
+Version: 1.2.10
+Authors@R: c(
+    person(given = "Liudas",
+           family = "Daumantas",
+           role = c("aut", "cre"),
+           email = "liudas.daumantas@chgf.vu.lt"),
+    person(given = "Andrej",
+           family = "Spiridonov",
+           role = "aut",
+           ),
+    person("Joseph", "O'Rourke",
+           role = c("ctb", "cph"),
+           comment = "Author and copyright holder of point-in-polygon code in src/pip.c"),
+    person("Min", "Xu",
+           role = "ctb",
+           comment = "Contributor to point-in-polygon code in src/pip.c"))
+Maintainer: Liudas  Daumantas <liudas.daumantas@chgf.vu.lt>
+Description: Implementation of the HespDiv framework for hierarchical spatial subdivision of geographical occurrence data. The main function hespdiv() performs iterative spatially constrained subdivision of a study area to identify topologically contiguous clusters in geographic space using user-defined or preset subdivision methods. Additional functions provide tools for analysing subdivision results, visualizing hierarchical spatial structures, and evaluating robustness through sensitivity analyses and statistical testing. Some examples use the optional HDData data package, which is available from GitHub at Liudas-Dau/hespdiv_data. The methodology is described in Daumantas and Spiridonov (2024) <doi:10.1111/pala.12702>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+OS_type: windows
+LazyData: true
+URL: https://doi.org/10.1111/pala.12702,
+        https://github.com/Liudas-Dau/hespdiv,
+        https://github.com/Liudas-Dau/hespdiv_data
+Imports: pracma, DescTools, ggplot2, viridis, ggrepel, grDevices,
+        RColorBrewer, rgl, scales, graphics, igraph, gridExtra, grid,
+        gridGraphics, stats, magick, future.apply, future, rlang
+Suggests: HDData
+Depends: R (>= 4.0)
+NeedsCompilation: yes
+Packaged: 2026-05-18 07:22:53 UTC; liuda
+Author: Liudas Daumantas [aut, cre],
+  Andrej Spiridonov [aut],
+  Joseph O'Rourke [ctb, cph] (Author and copyright holder of
+    point-in-polygon code in src/pip.c),
+  Min Xu [ctb] (Contributor to point-in-polygon code in src/pip.c)
+Repository: CRAN
+Date/Publication: 2026-05-21 13:10:02 UTC

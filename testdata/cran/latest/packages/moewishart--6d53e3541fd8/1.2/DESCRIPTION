@@ -1,0 +1,23 @@
+Package: moewishart
+Title: Mixture-of-Experts Wishart Models for Covariance Data
+Version: 1.2
+Description: Methods for maximum likelihood and Bayesian estimation for the Wishart mixture model and the mixture-of-experts Wishart (MoE-Wishart) model. The package provides four inference algorithms for these models, each implemented using the expectation–maximization (EM) algorithm for maximum likelihood estimation and a fully Bayesian approach via Gibbs-within-Metropolis–Hastings sampling.
+Authors@R: c(person("The Tien", "Mai", role=c("aut")),
+                person("Zhi", "Zhao", role=c("aut","cre"), email = "zhi.zhao@medisin.uio.no"))
+Maintainer: Zhi Zhao <zhi.zhao@medisin.uio.no>
+URL: https://github.com/zhizuio/moewishart
+BugReports: https://github.com/zhizuio/moewishart/issues
+License: GPL-3
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+Imports: loo, stats, utils, graphics
+Suggests: rmarkdown, knitr
+LazyData: true
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-04 22:08:26 UTC; zhiz
+Author: The Tien Mai [aut],
+  Zhi Zhao [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-06-05 06:20:18 UTC

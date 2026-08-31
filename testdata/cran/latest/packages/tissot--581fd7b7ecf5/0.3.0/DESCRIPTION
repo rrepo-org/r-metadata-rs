@@ -1,0 +1,36 @@
+Package: tissot
+Title: Tissot Indicatrix for Map Projection Distortion
+Version: 0.3.0
+Authors@R: c(
+    person("Michael", "Sumner", email = "mdsumner@gmail.com", role = c("aut", "cre", "cph"), 
+           comment = c(ORCID = "0000-0002-2471-7511")),
+    person("Bill", "Huber", role = "aut", 
+           comment = "original algorithm and calculations")
+  )
+Description: Compute and visualize the 'Tissot Indicatrix' for map projections. 
+    The indicatrix characterizes projection distortion by computing scale 
+    factors, angular deformation, areal distortion, and convergence at 
+    arbitrary points. Based on the calculations shared by Bill Huber on 
+    <https://gis.stackexchange.com/a/5075/482>. Uses 'PROJ' for coordinate 
+    transformation and distortion factor computation. 
+    Developed using the method published in Snyder, JP (1987) <doi:10.3133/pp1395>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+Imports: tibble, PROJ, graphics, grDevices, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, spelling
+Config/testthat/edition: 3
+URL: https://hypertidy.github.io/tissot/,
+        https://github.com/hypertidy/tissot
+BugReports: https://github.com/hypertidy/tissot/issues
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-12 15:38:00 UTC; mdsumner
+Author: Michael Sumner [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-2471-7511>),
+  Bill Huber [aut] (original algorithm and calculations)
+Maintainer: Michael Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-12 15:50:02 UTC

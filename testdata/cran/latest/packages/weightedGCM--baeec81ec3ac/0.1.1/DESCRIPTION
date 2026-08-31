@@ -1,0 +1,57 @@
+Type: Package
+Package: weightedGCM
+Title: Weighted Generalised Covariance Measure Conditional Independence
+        Test
+Version: 0.1.1
+Authors@R: 
+    c(person(given = "Cyrill",
+             family = "Scheidegger",
+             role = c("aut", "cre", "cph"),
+             email = "cyrill.scheidegger@stat.math.ethz.ch"),
+      person(given = "Julia",
+             family = "Hoerrmann",
+             role = "ths"),
+      person(given = "Peter",
+             family = "Buehlmann",
+             role = "ths"),
+      person(given = "Jonas",
+             family = "Peters",
+             role = c("ctb", "cph"),
+             comment = "Parts of the code are inspired by similar functions from the  R package
+             'GeneralisedCovarianceMeasure' by Jonas Peters and Rajen D. Shah"),
+      person(given = "Rajen D.",
+             family = "Shah",
+             role = c("ctb", "cph"),
+             comment = "Parts of the code are inspired by similar functions from the  R package
+             'GeneralisedCovarianceMeasure' by Jonas Peters and Rajen D. Shah"))
+Description: A conditional independence test that can be applied both to
+    univariate and multivariate random variables. The test is based on a
+    weighted form of the sample covariance of the residuals after a
+    nonlinear regression on the conditioning variables. Details are
+    described in Scheidegger, Hoerrmann and Buehlmann (2022) "The Weighted
+    Generalised Covariance Measure" <http://jmlr.org/papers/v23/21-1328.html>.
+    The test is a generalisation of the Generalised Covariance Measure (GCM)
+    implemented in the R package 'GeneralisedCovarianceMeasure' by Jonas Peters and
+    Rajen D. Shah based on Shah and Peters (2020) "The Hardness of
+    Conditional Independence Testing and the Generalised Covariance
+    Measure" <doi:10.1214/19-AOS1857>.
+License: GPL-2
+Imports: methods, mgcv, stats, xgboost (>= 3.1.2.1)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-12 10:34:02 UTC; scyrill
+Author: Cyrill Scheidegger [aut, cre, cph],
+  Julia Hoerrmann [ths],
+  Peter Buehlmann [ths],
+  Jonas Peters [ctb, cph] (Parts of the code are inspired by similar
+    functions from the R package 'GeneralisedCovarianceMeasure' by
+    Jonas Peters and Rajen D. Shah),
+  Rajen D. Shah [ctb, cph] (Parts of the code are inspired by similar
+    functions from the R package 'GeneralisedCovarianceMeasure' by
+    Jonas Peters and Rajen D. Shah)
+Maintainer: Cyrill Scheidegger <cyrill.scheidegger@stat.math.ethz.ch>
+Repository: CRAN
+Date/Publication: 2025-12-12 10:50:02 UTC

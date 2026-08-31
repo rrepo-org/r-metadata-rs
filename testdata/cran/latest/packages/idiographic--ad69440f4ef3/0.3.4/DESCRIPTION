@@ -1,0 +1,44 @@
+Package: idiographic
+Type: Package
+Title: Person-Specific (Idiographic) and Heterogeneous Complex Networks
+Version: 0.3.4
+Authors@R: c(
+    person("Mohammed", "Saqr", role = c("aut", "cre", "cph"),
+        email = "saqr@saqr.me"),
+    person("Sonsoles", "López-Pernas", role = "aut",
+        email = "sonsoles.lopez@uef.fi"))
+Author: Mohammed Saqr [aut, cre, cph],
+  Sonsoles López-Pernas [aut]
+Maintainer: Mohammed Saqr <saqr@saqr.me>
+Description: Person-specific and within-person network estimation from
+    intensive longitudinal and panel data. Estimators include ordinary
+    vector autoregression (VAR), graphical vector autoregression (graphical
+    VAR), multilevel vector autoregression (mlVAR), rolling ordinary and
+    graphical VAR, native Bayesian VAR and multilevel Bayesian VAR, unified
+    Structural Equation Modeling (uSEM), and Group Iterative Multiple Model
+    Estimation (GIMME). All estimators are native clean-room
+    implementations. All functions are validated against
+    authoritative literature. Also provides preprocessing audits,
+    edge-stability diagnostics, model-comparison reports, and rolling
+    forecast validation. Methods are described in
+    <doi:10.1007/978-3-031-95365-1_20> and
+    <doi:10.1080/00273171.2018.1454823>.
+License: GPL-3
+Encoding: UTF-8
+Language: en-GB
+LazyData: TRUE
+URL: https://pak.dynasite.org/idiographic/,
+        https://github.com/mohsaqr/idiographic
+BugReports: https://github.com/mohsaqr/idiographic/issues
+Depends: R (>= 4.1)
+Imports: stats, utils, parallel
+Suggests: testthat (>= 3.0.0), lme4, lavaan, cograph, mlVAR,
+        MplusAutomation, knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-23 17:24:35 UTC; mohammedsaqr
+Repository: CRAN
+Date/Publication: 2026-08-24 07:30:10 UTC

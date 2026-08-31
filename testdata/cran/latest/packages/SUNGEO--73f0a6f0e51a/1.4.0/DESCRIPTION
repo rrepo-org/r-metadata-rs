@@ -1,0 +1,38 @@
+Package: SUNGEO
+Type: Package
+Title: Sub-National Geospatial Data Archive: Geoprocessing Toolkit
+Version: 1.4.0
+Date: 2026-05-28
+Authors@R: c(person(given = c("Yuri", "M."),
+                    family = "Zhukov",
+                    role = c("aut", "cre"),
+                    email = "ymz2@georgetown.edu"),
+             person(given = "Jason",
+                    family = "Byers",
+                    role = "aut"),
+             person(given = "Marty",
+                    family = "Davidson",
+                    role = "aut"))
+Description: Integrates spatially-misaligned GIS datasets across incompatible
+    geographic units. Part of the Sub-National Geospatial Data Archive System.
+    For the underlying methods, see Zhukov, Byers, Davidson, and Kollman (2024)
+    "Integrating Data Across Misaligned Spatial Units," Political Analysis,
+    Volume 32, Number 1, pp. 17-33 
+    <doi:10.1017/pan.2023.5>.
+URL: https://www.sungeo.org/, https://github.com/zhukovyuri/SUNGEO
+License: GPL-2
+Encoding: UTF-8
+LazyData: TRUE
+Depends: R (>= 3.5.0)
+Imports:
+        sf,data.table,dplyr,jsonlite,terra,stringr,stats,methods,purrr,measurements,RANN,cartogram,packcircles,rmapshaper,spdep,Rcpp,httr,rlang,curl
+Suggests: lwgeom
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-28 17:39:34 UTC; zhukov
+Author: Yuri M. Zhukov [aut, cre],
+  Jason Byers [aut],
+  Marty Davidson [aut]
+Maintainer: Yuri M. Zhukov <ymz2@georgetown.edu>
+Repository: CRAN
+Date/Publication: 2026-06-01 13:50:07 UTC

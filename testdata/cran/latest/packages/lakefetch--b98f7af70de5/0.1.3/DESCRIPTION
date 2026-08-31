@@ -1,0 +1,36 @@
+Package: lakefetch
+Title: Calculate Fetch and Wave Exposure for Lake Sampling Points
+Version: 0.1.3
+Authors@R: 
+    person(given = "Jeremy",
+           family = "Lynch Farrell",
+           email = "farrej2@rpi.edu",
+           role = c("aut", "cre"))
+Description: Calculates fetch (open water distance) and wave exposure metrics
+    for lake sampling points. Downloads lake boundaries from 'OpenStreetMap',
+    calculates directional fetch using a ray-casting approach, and optionally
+    integrates National Hydrography Dataset ('NHD') data
+    <https://www.usgs.gov/national-hydrography> for hydrological context
+    including outlet and inlet locations. Can estimate lake depth from surface
+    area using empirical relationships, and integrate historical weather data
+    for cumulative wave energy calculations. Includes an optional interactive
+    'shiny' application for visualization.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.3
+Imports: sf (>= 1.0-0), osmdata (>= 0.2.0), ggplot2 (>= 3.0.0)
+Suggests: nhdplusTools, jsonlite, shiny, leaflet, base64enc, parallel,
+        knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/jeremylfarrell/lakefetch
+BugReports: https://github.com/jeremylfarrell/lakefetch/issues
+NeedsCompilation: no
+Packaged: 2026-03-17 14:48:10 UTC; FARREJ2
+Author: Jeremy Lynch Farrell [aut, cre]
+Maintainer: Jeremy Lynch Farrell <farrej2@rpi.edu>
+Repository: CRAN
+Date/Publication: 2026-03-20 12:30:02 UTC

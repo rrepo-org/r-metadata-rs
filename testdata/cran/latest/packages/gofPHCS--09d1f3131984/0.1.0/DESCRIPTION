@@ -1,0 +1,48 @@
+Package: gofPHCS
+Type: Package
+Title: Goodness-of-Fit Tests for Complete, Progressively Type-II,
+        Type-I Hybrid, and Type-II Hybrid Censored Data
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut"))
+Description: Provides goodness-of-fit tests for lifetime data collected under
+    complete sampling, progressive Type-II censoring, and Type-I/Type-II
+    hybrid censoring schemes. Users supply the observed (censored) data and
+    the assumed probability density/mass function, cumulative distribution
+    function, or survival function of the target model, and the package
+    returns the corresponding test statistic together with an asymptotic or
+    Monte Carlo p-value. Implements the spacings-based exponentiality test of
+    Balakrishnan, Ng and Kannan (2002, in "Goodness-of-Fit Tests and Model
+    Validity", Birkhauser, pp. 89-111) and its location-scale generalization
+    Balakrishnan, Ng and Kannan (2004) <doi:10.1109/TR.2004.833317>, the
+    power comparison and Kaplan-Meier based tests of Doering and Cramer
+    (2019) <doi:10.1080/00949655.2019.1648468>, the Kolmogorov-Smirnov type
+    tests for hybrid censored data of Banerjee and Pradhan (2018)
+    <doi:10.1080/03610926.2016.1205616>, and follows the unified treatment
+    of hybrid censoring schemes reviewed in Balakrishnan and Kundu (2013)
+    <doi:10.1016/j.csda.2012.03.025> and in Cramer and Balakrishnan (2023,
+    "Hybrid Censoring Know-How", Chapter 11) <doi:10.1016/B978-0-12-398387-9.00019-2>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: stats, withr
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, spelling, covr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-07-24 21:00:01 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 14:00:02 UTC

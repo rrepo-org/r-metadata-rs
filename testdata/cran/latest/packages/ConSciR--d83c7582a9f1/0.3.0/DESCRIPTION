@@ -1,0 +1,54 @@
+Package: ConSciR
+Type: Package
+Title: Tools for Conservation Science
+Version: 0.3.0
+Authors@R: c(
+    person("Bhavesh", "Shah", , "bhaveshshah01@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8673-0589")),
+    person("Annelies", "Cosaert", , "", role = c("aut"),
+           comment = c(ORCID = "0009-0004-1269-4465")), 
+    person("Vincent", "Beltran", , "", role = c("aut")), 
+    person("Emily R", "Long", , "", role = c("ctb"), 
+           comment = c(ORCID = "0000-0003-3162-4521")),
+    person("Marcin", "Zygmunt", , "", role = c("ctb"), 
+           comment = c(ORCID = "0000-0003-1304-8591")),
+    person("Hebe", "Halstead", , "", role = c("ctb")),   
+    person("Avery", "Bazemore", , "", role = c("ctb"), 
+           comment = c(ORCID = "0009-0007-9704-6759"))        
+  )
+Maintainer: Bhavesh Shah <bhaveshshah01@gmail.com>
+Description: Provides data science tools for conservation science, including
+    methods for environmental data analysis, humidity calculations,
+    sustainability metrics, engineering calculations, and data
+    visualisation. Supports conservators, scientists, and engineers
+    working with cultural heritage preventive conservation data.
+    The package is motivated by the framework outlined 
+    in Cosaert and Beltran et al. (2022) 
+    "Tools for the Analysis of Collection Environments" 
+    <https://www.getty.edu/conservation/publications_resources/pdf_publications/tools_for_the_analysis_of_collection_environments.html>.  
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+URL: https://bhavshah01.github.io/ConSciR/,
+        https://github.com/BhavShah01/ConSciR
+BugReports: https://github.com/BhavShah01/ConSciR/issues
+Config/testthat/edition: 3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), bslib, IAPWS95,
+        Ternary
+Imports: stats, tools, tidyr, readr, readxl, stringr, rlang, shiny,
+        ggplot2, dplyr, lubridate, padr, openair
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2025-09-22 14:39:22 UTC; bhave
+Author: Bhavesh Shah [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8673-0589>),
+  Annelies Cosaert [aut] (ORCID: <https://orcid.org/0009-0004-1269-4465>),
+  Vincent Beltran [aut],
+  Emily R Long [ctb] (ORCID: <https://orcid.org/0000-0003-3162-4521>),
+  Marcin Zygmunt [ctb] (ORCID: <https://orcid.org/0000-0003-1304-8591>),
+  Hebe Halstead [ctb],
+  Avery Bazemore [ctb] (ORCID: <https://orcid.org/0009-0007-9704-6759>)
+Repository: CRAN
+Date/Publication: 2025-09-22 15:10:02 UTC

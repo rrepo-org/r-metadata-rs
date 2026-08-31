@@ -1,0 +1,43 @@
+Package: INLAspacetime
+Type: Package
+Title: Spatial and Spatio-Temporal Models using 'INLA'
+Version: 0.1.14
+Authors@R: c(
+    person("Elias", "Teixeira Krainski", , "elias.krainski@kaust.edu.sa", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0002-7063-2615")),
+    person("Finn", "Lindgren", , "finn.lindgren@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-5833-2011")),
+    person("Haavard", "Rue’", role = "aut",
+           comment = c(ORCID = "0000-0002-0222-1881"))
+  )
+Description: Prepare objects to implement models over spatial and 
+  spacetime domains with the 'INLA' package (<https://www.r-inla.org>).
+  These objects contain data to for the 'cgeneric' interface in
+  'INLA', enabling fast parallel computations.
+  We implemented the spatial barrier model, see Bakka et. al. (2019) 
+  <doi:10.1016/j.spasta.2019.01.002>, and some of the spatio-temporal 
+  models proposed in Lindgren et. al. (2024) 
+  <https://raco.cat/index.php/SORT/article/view/428665>. 
+  Details are provided in the available vignettes and from the URL bellow.
+URL: https://github.com/eliaskrainski/INLAspacetime
+BugReports: https://github.com/eliaskrainski/INLAspacetime/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Depends: R (>= 4.3)
+Imports: graphics, grDevices, methods, stats, utils, Matrix, fmesher,
+        INLAtools (> 0.1.3), inlabru (>= 2.14)
+Suggests: sf, terra, knitr, ggplot2, rmarkdown, parallel, data.table,
+        rnaturalearth, rnaturalearthdata, ggpubr, DOYPAColors, s2,
+        lubridate, ggOceanMaps, sp, spdep
+VignetteBuilder: knitr
+BuildVignettes: true
+Packaged: 2026-05-06 05:35:42 UTC; eliask
+Author: Elias Teixeira Krainski [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-7063-2615>),
+  Finn Lindgren [aut] (ORCID: <https://orcid.org/0000-0002-5833-2011>),
+  Haavard Rue’ [aut] (ORCID: <https://orcid.org/0000-0002-0222-1881>)
+Maintainer: Elias Teixeira Krainski <elias.krainski@kaust.edu.sa>
+Repository: CRAN
+Date/Publication: 2026-05-06 07:20:50 UTC

@@ -1,0 +1,32 @@
+Package: WaterBalanceR
+Type: Package
+Title: Calculate High Resolution Water Balance of Starch Potatoes
+Version: 0.1.21
+Authors@R: 
+    person(
+      given = "Thomas",
+      family = "Piernicke",
+      email = "thomasp@gfz.de",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0009-0006-9760-5162")
+    )
+Description: Calculates the water balance of starch potatoes from Normalized Distance Vegetation Index (NDVI) images, German Weather Service (DWD) reference evapotranspiration, German Weather Service RADOLAN precipitation data and irrigation information. For more details see Piernicke et al. (2025) <doi:10.3390/rs17183227>.
+License: AGPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: raster, sf, janitor, zoo, lubridate, stars, ggplot2, tidyr,
+        rdwd, utils, terra, gridExtra, httr, RSelenium, stringr, rvest,
+        sp, geosphere, RCurl, grDevices, tidyselect, openeo, magrittr,
+        jsonlite, dplyr, readxl, scales, methods, rlang
+URL: https://doi.org/10.5281/zenodo.15046338,
+        https://github.com/thomasp-gfz/WaterBalanceR
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2026-03-12 19:19:58 UTC; asinus
+Author: Thomas Piernicke [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-9760-5162>)
+Maintainer: Thomas Piernicke <thomasp@gfz.de>
+Repository: CRAN
+Date/Publication: 2026-03-13 08:00:34 UTC

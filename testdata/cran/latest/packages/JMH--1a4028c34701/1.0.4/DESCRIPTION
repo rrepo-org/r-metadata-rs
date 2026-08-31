@@ -1,0 +1,31 @@
+Package: JMH
+Type: Package
+Title: Joint Model of Heterogeneous Repeated Measures and Survival Data
+Version: 1.0.4
+Date: 2026-03-29
+Authors@R: c(
+    person("Shanpeng", "Li", email = "lishanpeng0913@ucla.edu", 
+        role = c("aut", "cre")),
+    person("Gang", "Li", email = "vli@ucla.edu", 
+        role = "ctb")
+    )
+Maintainer: Shanpeng Li <lishanpeng0913@ucla.edu>
+Description: Maximum likelihood estimation for the semi-parametric joint modeling of competing risks and longitudinal data in the presence of heterogeneous within-subject variability, proposed by Li and colleagues (2023) <doi:10.48550/arXiv.2506.12741>.
+             The proposed method models the within-subject variability of the biomarker and associates it with the risk of the competing risks event. The time-to-event data is modeled using a (cause-specific) Cox proportional hazards regression model with time-fixed covariates. 
+             The longitudinal outcome is modeled using a mixed-effects location and scale model. The association is captured by shared random effects. The model 
+             is estimated using an Expectation Maximization algorithm. This is the final release of the 'JMH' package. Active development has been moved to the 'FastJM' package, which provides improved functionality and ongoing support. Users are strongly encouraged to transition to 'FastJM'.
+License: GPL (>= 3)
+NeedsCompilation: yes
+Imports: Rcpp (>= 1.0.7), parallel, dplyr, stats, caret, pec
+LinkingTo: Rcpp, RcppEigen
+Depends: R (>= 3.5.0), survival, nlme, utils, MASS, statmod, magrittr
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), spelling
+Language: en-US
+LazyData: true
+Encoding: UTF-8
+Packaged: 2026-04-02 05:23:12 UTC; shanpengli
+Author: Shanpeng Li [aut, cre],
+  Gang Li [ctb]
+Repository: CRAN
+Date/Publication: 2026-04-02 15:50:02 UTC

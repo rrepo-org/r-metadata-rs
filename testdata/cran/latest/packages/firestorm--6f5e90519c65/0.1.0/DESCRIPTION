@@ -1,0 +1,29 @@
+Package: firestorm
+Title: Reverse Proxy and Load Balancing for 'fiery'
+Version: 0.1.0
+Authors@R: c(
+    person("Thomas Lin", "Pedersen", , "thomas.pedersen@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5147-4711")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: Provides plugins for setting up 'fiery' apps as a reverse proxy.
+    This allows you to use a 'fiery' server as a front for multiple services or
+    even work as a load-balancer.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: cli, R6, rlang, websocket
+URL: https://github.com/thomasp85/firestorm
+BugReports: https://github.com/thomasp85/firestorm/issues
+Suggests: fiery (>= 1.3.0), httpuv, later, reqres (>= 1.0.0), testthat
+        (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-08-27 11:01:41 UTC; thomas
+Author: Thomas Lin Pedersen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5147-4711>),
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
+Maintainer: Thomas Lin Pedersen <thomas.pedersen@posit.co>
+Repository: CRAN
+Date/Publication: 2025-09-01 17:10:17 UTC

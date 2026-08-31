@@ -1,0 +1,38 @@
+Package: GOFclustering
+Type: Package
+Title: Goodness-of-Fit Testing for Model-Based Clustering
+Version: 1.0.4
+Authors@R: c(
+    person(given = "Salima", 
+           family = "El Kolei", 
+           role = "aut", 
+           email = "salima.el-kolei@ensai.fr"),
+    person(given = "Matthieu", 
+           family = "Marbac", 
+           role = c("aut", "cre"), 
+           email = "matthieu.marbac@univ-ubs.fr")
+    )
+Description: Performs goodness-of-fit tests for model-based clustering 
+    based on the methodology developed in  <doi:10.48550/arXiv.2511.04206>. 
+    It implements a test statistic 
+    derived from empirical likelihood to verify the distribution of 
+    clusters in multivariate Gaussian mixtures and other latent 
+    class models.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 4.4)
+Imports: Rcpp, parallel, VarSelLCM, mixtools, goftest, partitions,
+        randtoolbox, stats, mvtnorm
+LinkingTo: Rcpp, RcppArmadillo
+ByteCompile: true
+Collate: 'GOFclustering.R' 'Bernstein.R' 'fctspsi.R' 'fctsSampler.R'
+        'Indicator.R' 'RcppExports.R' 'toolsMixtools.R'
+        'toolsVarSelLCM.R'
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-03-17 16:08:39 UTC; matt
+Author: Salima El Kolei [aut],
+  Matthieu Marbac [aut, cre]
+Maintainer: Matthieu Marbac <matthieu.marbac@univ-ubs.fr>
+Repository: CRAN
+Date/Publication: 2026-03-21 09:40:02 UTC

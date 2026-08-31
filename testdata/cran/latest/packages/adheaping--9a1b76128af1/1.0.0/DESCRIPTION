@@ -1,0 +1,32 @@
+Package: adheaping
+Type: Package
+Title: Characteristic-Function De-Heaping Density Estimation
+Version: 1.0.0
+Authors@R: person("Mitchell A.", "Thornton", email = "mitchat@sbcglobal.net",
+    role = c("aut", "cre"))
+Description: Tuning-free kernel density estimation for heaped and rounded data
+    using a characteristic-function theory of heaping. Rounding to a grid is
+    convolution with a box followed by lattice sampling, so the density is
+    recovered by deconvolving the known box and tapering against a data-driven
+    noise floor. Provides a box-deconvolution de-heaping estimator, a
+    superposition variant, and a single combined estimator selected by a
+    band-capacity gate; blind grid, heaped-fraction, and mixed-grain readers;
+    and a spectral higher-order comb detector. Faithful base-R replicas of the
+    Heitjan-Rubin multiple-imputation and measurement-error deconvolution
+    methods are included for comparison, and the 'Kernelheaping' stochastic
+    expectation-maximization estimator is used when installed.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.6)
+Imports: stats
+Suggests: Kernelheaping, foreign, testthat (>= 3.0.0), knitr, rmarkdown
+URL: https://github.com/mitch-thornton/kde-ad-heaping
+BugReports: https://github.com/mitch-thornton/kde-ad-heaping/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2026-07-16 19:37:08 UTC; root
+Author: Mitchell A. Thornton [aut, cre]
+Maintainer: Mitchell A. Thornton <mitchat@sbcglobal.net>
+Repository: CRAN
+Date/Publication: 2026-07-24 09:30:19 UTC

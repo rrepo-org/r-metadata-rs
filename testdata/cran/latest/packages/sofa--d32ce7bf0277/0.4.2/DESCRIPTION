@@ -1,0 +1,45 @@
+Package: sofa
+Title: Connector to 'CouchDB'
+Description: Provides an interface to the 'NoSQL' database 'CouchDB'
+    (<https://couchdb.apache.org/>). Methods are provided for managing
+    databases within 'CouchDB', including creating/deleting/updating/transferring,
+    and managing documents within databases. One can connect with a local
+    'CouchDB' instance, or a remote 'CouchDB' database such as 'IBM Cloudant'. 
+    Documents can be inserted directly from vectors, lists, data.frames, 
+    and 'JSON'. Targeted at 'CouchDB' v2 or greater.
+Version: 0.4.2
+Authors@R: c(
+    person("Yaoxiang", "Li", role = c("aut", "cre"),
+        email = "liyaoxiang@outlook.com", 
+        comment = c(ORCID="0000-0001-9200-1016")),
+    person("Eduard", "Szöcs", role = "aut",
+        email = "eduardszoecs@gmail.com", 
+        comment = c(ORCID="0000-0001-5376-1194")),
+    person("Scott", "Chamberlain", role = "aut",
+        email = "myrmecocystus@gmail.com", 
+        comment = c(ORCID="0000-0003-1444-9135")),
+    person(given = "rOpenSci",
+        role = "fnd",
+        comment = c(ROR = "019jywm96"))
+    )
+License: MIT + file LICENSE
+URL: https://github.com/ropensci/sofa, https://docs.ropensci.org/sofa/
+BugReports: https://github.com/ropensci/sofa/issues
+Encoding: UTF-8
+VignetteBuilder: knitr
+Imports: crul (>= 0.4.0), jsonlite (>= 1.5), R6 (>= 2.2.2), mime
+Suggests: testthat, cli, knitr, rmarkdown
+RoxygenNote: 7.3.2
+X-schema.org-applicationCategory: Databases
+X-schema.org-keywords: CouchDB, database, NoSQL, documents
+X-schema.org-isPartOf: https://ropensci.org
+NeedsCompilation: no
+Packaged: 2026-07-21 17:47:40 UTC; Li
+Author: Yaoxiang Li [aut, cre] (ORCID: <https://orcid.org/0000-0001-9200-1016>),
+  Eduard Szöcs [aut] (ORCID: <https://orcid.org/0000-0001-5376-1194>),
+  Scott Chamberlain [aut] (ORCID:
+    <https://orcid.org/0000-0003-1444-9135>),
+  rOpenSci [fnd] (ROR: <https://ror.org/019jywm96>)
+Maintainer: Yaoxiang Li <liyaoxiang@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 22:10:02 UTC

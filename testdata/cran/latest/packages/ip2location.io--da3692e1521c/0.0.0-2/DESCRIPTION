@@ -1,0 +1,18 @@
+Package: ip2location.io
+Title: Batch IP Data Retrieval and Storage Using 'IP2Location.io'
+Version: 0.0.0-2
+Authors@R: 
+    person("Oriane", "Georgeac", email = "oriane.georgeac@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6531-0075"))
+Description: A system for submitting multiple IP information queries to 'IP2Location.io'’s IP Geolocation API and storing the resulting data in a dataframe. You provide a vector of IP addresses and your 'IP2Location.io' API key. The package returns a dataframe with one row per IP address and a column for each available data field (data fields not included in your API plan will contain NAs). This is the second submission of the package to CRAN.
+License: MIT + file LICENSE
+Imports: dplyr, httr, jsonlite, tidyselect
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), mockery
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-24 14:29:07 UTC; georgeac
+Author: Oriane Georgeac [aut, cre] (<https://orcid.org/0000-0001-6531-0075>)
+Maintainer: Oriane Georgeac <oriane.georgeac@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-25 09:10:02 UTC

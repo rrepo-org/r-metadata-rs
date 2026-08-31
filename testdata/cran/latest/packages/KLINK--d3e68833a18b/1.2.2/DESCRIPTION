@@ -1,0 +1,32 @@
+Package: KLINK
+Title: Kinship Analysis with Linked Markers
+Version: 1.2.2
+Authors@R: 
+    person("Magnus Dehli", "Vigeland", , "m.d.vigeland@medisin.uio.no", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9134-4962"))
+Description: A 'shiny' application for forensic kinship testing, based on
+    the 'pedsuite' R packages. 'KLINK' is closely aligned with the (non-R)
+    software 'Familias' and 'FamLink', but offers several unique features,
+    including visualisations and automated report generation. The
+    calculation of likelihood ratios supports pairs of linked markers, and
+    all common mutation models. The program is described in Vigeland and
+    Gilfillan (2026) <doi:10.1016/j.fsigen.2026.103578>.
+License: GPL (>= 3)
+URL: https://github.com/magnusdv/KLINK,
+        https://doi.org/10.1016/j.fsigen.2026.103578
+BugReports: https://github.com/magnusdv/KLINK/issues
+Depends: R (>= 4.2)
+Imports: forrel (>= 1.9.0), gt, norSTR, openxlsx, pedFamilias, pedmut,
+        pedprobr (>= 1.1.0), pedtools (>= 2.11.0), scales, shiny (>=
+        1.9.0), shinyBS, shinydashboard, shinyjs, verbalisr, xml2
+Config/roxygen2/version: 8.0.0
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-08-03 11:29:24 UTC; magnu
+Author: Magnus Dehli Vigeland [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9134-4962>)
+Maintainer: Magnus Dehli Vigeland <m.d.vigeland@medisin.uio.no>
+Repository: CRAN
+Date/Publication: 2026-08-03 16:10:02 UTC

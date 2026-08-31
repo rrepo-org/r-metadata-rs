@@ -1,0 +1,37 @@
+Package: complexr
+Title: 'Shiny' Interface for Complex Survey Data Analysis
+Version: 1.0.1
+Authors@R: 
+    person(
+      "Stalyn", "Guerrero Gómez",
+      email = "guerrerostalyn@gmail.com",
+      role = c("aut", "cre")
+    )
+Description: 
+    Provides a 'Shiny'-based interactive interface for the analysis of 
+    complex survey data. The package supports data import from multiple 
+    file formats, construction and diagnosis of complex survey designs
+    with stratification, clustering, and sampling weights, as well as
+    estimation of means, totals, proportions, associated standard errors,
+    confidence intervals, and design effects. The multilingual interface
+    facilitates the analysis and visualization of survey results without
+    requiring specialized programming knowledge.
+License: GPL (>= 3)
+URL: https://github.com/stalynGuerrero/complexr
+BugReports: https://github.com/stalynGuerrero/complexr/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, tibble, tidyr, readr, readxl, haven, rlang, purrr,
+        shiny, tools, stats, utils, srvyr, survey, magrittr, ggplot2,
+        jsonlite, writexl, DT, tidyselect
+Suggests: convey, knitr, rmarkdown, quarto, printr, testthat (>=
+        3.0.0), spelling
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-30 13:51:15 UTC; STALYN
+Author: Stalyn Guerrero Gómez [aut, cre]
+Maintainer: Stalyn Guerrero Gómez <guerrerostalyn@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-06 13:10:15 UTC

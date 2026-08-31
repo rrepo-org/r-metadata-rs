@@ -1,0 +1,27 @@
+Package: countyhealthR
+Type: Package
+Title: Programmatic Access to County Health Rankings & Roadmaps Data
+Version: 0.1.5
+Authors@R: 
+    person("Hannah", "Olson-Williams", 
+           email = "hannaheow@gmail.com", 
+           role = c("aut", "cre"))
+Maintainer: Hannah Olson-Williams <hannaheow@gmail.com>
+Description: Provides a simple interface to pull County Health Rankings & Roadmaps (CHR&R) county-level health data and metadata directly from 'Zenodo' <doi:10.5281/zenodo.18157681>. 
+  Users can retrieve data for CHR&R release years 2010 through 2025. 
+  CHR&R data support research and decision-making to promote health equity 
+  and policies that help all communities thrive.   
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/countyhealthrankings/countyhealthR
+BugReports: https://github.com/countyhealthrankings/countyhealthR/issues
+Imports: dplyr, magrittr, readr, httr, stringr, jsonlite, curl, rlang
+Suggests: testthat, knitr, rmarkdown, covr
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-03-10 21:47:29 UTC; holsonwillia
+Author: Hannah Olson-Williams [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-03-11 06:10:02 UTC

@@ -1,0 +1,32 @@
+Package: mwmapdata
+Title: Spatial Boundary Data for Malawi Administrative Levels
+Version: 1.0.0
+Authors@R: 
+    person("Chifundo", "Bita", , "bitac.analytics@gmail.com", role = c("aut", "cre"))
+Description: Provides official spatial boundary datasets for Malawi at multiple
+    administrative levels: country (level 0), regions (level 1), districts
+    (level 2), and traditional authorities (level 3). Also includes Lake
+    Malawi boundary data. Boundary data are the Common Operational Datasets (COD-AB)
+    sourced from the National Statistics Office of Malawi and distributed via
+    the OCHA Humanitarian Data Exchange (HDX), version 02
+    <https://data.humdata.org/dataset/cod-ab-mwi>. Intended for use with the
+    'mwmap' package or any spatial analysis workflow requiring Malawi
+    administrative boundaries.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+Imports: sf
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+LazyData: true
+LazyDataCompression: xz
+URL: https://github.com/bitacanalytics/mwmapdata,
+        https://github.com/bitacanalytics/mwmap
+BugReports: https://github.com/bitacanalytics/mwmapdata/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-02 20:09:36 UTC; bitac
+Author: Chifundo Bita [aut, cre]
+Maintainer: Chifundo Bita <bitac.analytics@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-06 11:20:02 UTC

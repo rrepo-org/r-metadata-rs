@@ -1,0 +1,35 @@
+Type: Package
+Package: MazamaLocationUtils
+Version: 0.4.5
+Title: Manage Spatial Metadata for Known Locations
+Authors@R: c(
+    person("Jonathan", "Callahan", email="jonathan.s.callahan@gmail.com", role=c("aut","cre")),
+    person("Eli", "Grosman", email="eligrosman1@gmail.com", role=c("ctb")),
+    person("Oliver", "Fogelin", email="oliverfogelin@gmail.com", role=c("ctb"))
+    )
+Maintainer: Jonathan Callahan <jonathan.s.callahan@gmail.com>
+Description: Utility functions for discovering and managing metadata 
+    associated with spatially unique "known locations". Applications include
+    all fields of environmental monitoring (e.g. air and water quality) where 
+    data are collected at stationary sites.
+License: GPL-3
+URL: https://github.com/MazamaScience/MazamaLocationUtils
+BugReports: https://github.com/MazamaScience/MazamaLocationUtils/issues
+Depends: R (>= 4.0)
+Imports: cluster, dplyr, geodist (>= 0.1.0), httr, jsonlite, leaflet,
+        lubridate, magrittr, methods, MazamaCoreUtils (>= 0.6.0),
+        MazamaSpatialUtils (>= 0.8.7), readr, rlang, stringr,
+        tidygeocoder
+Suggests: knitr, markdown, testthat (>= 2.1.0), rmarkdown, roxygen2
+Encoding: UTF-8
+Language: en-US
+Repository: CRAN
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-19 16:47:23 UTC; jonathancallahan
+Author: Jonathan Callahan [aut, cre],
+  Eli Grosman [ctb],
+  Oliver Fogelin [ctb]
+Date/Publication: 2026-04-19 21:30:02 UTC

@@ -1,0 +1,26 @@
+Package: lpda
+Type: Package
+Title: Linear Programming Discriminant Analysis
+Version: 1.2.3
+Authors@R: person(given = c("María", "José"),family = "Nueda",
+                    role = c("aut", "cre"),
+                    email = "mj.nueda@ua.es")
+Description: Classification method obtained through linear programming.
+    It is advantageous with respect to the classical developments when the distribution of the variables
+    involved is unknown or when the number of variables is much greater than the number of individuals.
+    Mathematical details behind the method are published in Nueda, et al. (2022) "LPDA: A new classification method based on linear programming".
+    <doi:10.1371/journal.pone.0270403>.
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: Rglpk, multiway
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-12 16:01:56 UTC; USUARIO
+Author: María José Nueda [aut, cre]
+Maintainer: María José Nueda <mj.nueda@ua.es>
+Repository: CRAN
+Date/Publication: 2026-03-12 16:40:03 UTC

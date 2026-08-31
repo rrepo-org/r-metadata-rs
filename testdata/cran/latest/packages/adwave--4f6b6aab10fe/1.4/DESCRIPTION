@@ -1,0 +1,25 @@
+Package: adwave
+Type: Package
+Title: Wavelet Analysis of Genomic Data from Admixed Populations
+Version: 1.4
+Date: 2025-06-22
+Depends: waveslim
+Authors@R: 
+		c(person(given = "Jean",
+				family = "Sanderson",
+				role = "aut"),
+		person(given = "Murray",
+				family = "Cox",
+				role = c("aut", "cre"),
+				email = "murray.p.cox@gmail.com")
+		)
+Description: Implements wavelet-based approaches for describing population admixture. Principal Components Analysis (PCA) is used to define the population structure and produce a localized admixture signal for each individual. Wavelet summaries of the PCA output describe variation present in the data and can be related to population-level demographic processes. For more details, see J Sanderson, H Sudoyo, TM Karafet, MF Hammer and MP Cox. 2015. Reconstructing past admixture processes from local genomic ancestry using wavelet transformation. Genetics 200:469-481 <doi:10.1534/genetics.115.176842>.
+URL: https://doi.org/10.1534/genetics.115.176842
+License: GPL (>= 2)
+Packaged: 2025-06-21 21:25:08 UTC; mpc
+NeedsCompilation: no
+Author: Jean Sanderson [aut],
+  Murray Cox [aut, cre]
+Maintainer: Murray Cox <murray.p.cox@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-21 22:00:07 UTC

@@ -1,0 +1,33 @@
+Package: ROBOSRMSMOTE
+Type: Package
+Title: Robust Oversampling with RM-SMOTE for Imbalanced Classification
+Version: 1.0.0
+Date: 2026-03-04
+Authors@R: c(
+    person("Emre", "Dunder", role = "aut"),
+    person("Mehmet Ali", "Cengiz", role = "aut"),
+    person("Zainab Subhi Mahmood", "Hawrami", 
+           email = "zaianbsubhi@gmail.com", role = c("aut", "cre")),
+    person("Abdulmohsen", "Alharthi", role = "aut"))
+Description: Provides the ROBOSRMSMOTE (Robust Oversampling with RM-SMOTE) framework for imbalanced 
+    classification tasks. This package extends Mahalanobis distance-based 
+    oversampling techniques by integrating robust covariance estimators to 
+    better handle outliers and complex data distributions. The implemented 
+    methodology builds upon and significantly expands the RM-SMOTE algorithm 
+    originally proposed by Taban et al. (2025) <doi:10.1007/s10260-025-00819-8>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: rrcov (>= 1.7.0), meanShiftR (>= 0.56), stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-04 17:25:24 UTC; root
+Author: Emre Dunder [aut],
+  Mehmet Ali Cengiz [aut],
+  Zainab Subhi Mahmood Hawrami [aut, cre],
+  Abdulmohsen Alharthi [aut]
+Maintainer: Zainab Subhi Mahmood Hawrami <zaianbsubhi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-09 11:20:08 UTC

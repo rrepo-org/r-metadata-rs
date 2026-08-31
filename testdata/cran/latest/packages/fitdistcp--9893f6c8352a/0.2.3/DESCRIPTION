@@ -1,0 +1,48 @@
+Package: fitdistcp
+Type: Package
+Title: Distribution Fitting with Calibrating Priors for Commonly Used
+        Distributions
+Version: 0.2.3
+Authors@R: 
+  person(given = "Stephen",
+           family = "Jewson",
+           role = c("aut", "cre"),
+           email = "stephen.jewson@gmail.com",
+           comment = c(ORCID = "0000-0002-6011-6262"))
+Maintainer: Stephen Jewson <stephen.jewson@gmail.com>
+Imports: stats, mev, extraDistr, gnorm, fdrtool, pracma, rust, actuar,
+        fExtremes
+Depends: R (>= 3.5.0)
+Description: Generates predictive distributions based on calibrating priors
+    for various commonly used statistical models, including models with 
+    predictors. Routines for densities, probabilities, quantiles, random
+    deviates and the parameter posterior are provided. The predictions are
+    generated from the Bayesian prediction integral, with priors chosen to
+    give good reliability (also known as calibration). For homogeneous models,
+    the prior is set to the right Haar prior, giving predictions which are
+    exactly reliable. As a result, in repeated testing, the frequencies of
+    out-of-sample outcomes and the probabilities from the predictions agree.
+    For other models, the prior is chosen to give good reliability. Where
+    possible, the Bayesian prediction integral is solved exactly. Where exact
+    solutions are not possible, the Bayesian prediction integral is solved
+    using the Datta-Mukerjee-Ghosh-Sweeting (DMGS) asymptotic expansion.
+    Optionally, the prediction integral can also be solved using posterior
+    samples generated using Paul Northrop's ratio of uniforms sampling package
+    ('rust'). Results are also generated based on maximum likelihood, for
+    comparison purposes. Various model selection diagnostics and testing
+    routines are included. Based on "Reducing reliability bias in assessments
+    of extreme weather risk using calibrating priors", Jewson, S., Sweeting, T.
+    and Jewson, L. (2024); <doi:10.5194/ascmo-11-1-2025>.
+License: MIT + file LICENSE
+BugReports: https://github.com/stephenjewson/fitdistcp/issues
+URL: https://www.fitdistcp.info
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2025-11-24 07:17:25 UTC; steph
+Author: Stephen Jewson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6011-6262>)
+Repository: CRAN
+Date/Publication: 2025-11-24 07:40:02 UTC

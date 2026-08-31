@@ -1,0 +1,26 @@
+Package: ringSeg
+Type: Package
+Title: Asymptotic Distribution-Free Change-Point Detection via a New
+        Ranking Scheme (RING)
+Version: 0.1.0
+Authors@R: c(
+    person("Doudou", "Zhou", role = "aut"),
+    person("Hao", "Chen", role = c("aut", "cre"), email = "hxchen@ucdavis.edu"))
+Description: Rank-based, asymptotic distribution-free change-point detection for
+    modern (high-dimensional, non-Euclidean) data, based on the graph-induced
+    ranking scheme of Zhou and Chen (2025) <doi:10.1109/TIT.2025.3575858>.
+    Given a rank matrix built from a pairwise similarity, the method scans for a single
+    change-point or a changed interval using three statistics (weighted 'WR',
+    max-type 'MR', and generalized 'TR') and returns analytic distribution-free
+    p-value approximations (with an optional skewness correction) as well as
+    optional permutation p-values.
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: stats
+NeedsCompilation: no
+Packaged: 2026-06-21 08:53:55 UTC; hao
+Author: Doudou Zhou [aut],
+  Hao Chen [aut, cre]
+Maintainer: Hao Chen <hxchen@ucdavis.edu>
+Repository: CRAN
+Date/Publication: 2026-06-25 11:30:02 UTC

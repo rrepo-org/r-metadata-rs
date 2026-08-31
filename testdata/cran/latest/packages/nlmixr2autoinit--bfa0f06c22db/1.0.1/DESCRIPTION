@@ -1,0 +1,37 @@
+Type: Package
+Package: nlmixr2autoinit
+Title: Automatic Generation of Initial Estimates for Population
+        Pharmacokinetic Modeling
+Version: 1.0.1
+Authors@R: c(person("Zhonghui","Huang", role = c("aut", "cre"), email = "huangzhonghui22@gmail.com"),
+   person("Joseph", "Standing", role = "ctb", email = "j.standing@ucl.ac.uk"),
+   person("Matthew", "Fidler", role = "ctb", email = "matthew.fidler@gmail.com"),
+   person("Frank", "Kloprogge", role = "ctb", email = "f.kloprogge@ucl.ac.uk"))
+Description: Provides automated methods for generating initial parameter estimates 
+    in population pharmacokinetic modeling. The pipeline integrates adaptive single-point 
+    methods, naive pooled graphic approaches, noncompartmental analysis methods, and parameter 
+    sweeping across pharmacokinetic models. It estimates residual unexplained variability 
+    using either data-driven or fixed-fraction approaches and assigns pragmatic initial values 
+    for inter-individual variability. These strategies are designed to improve model 
+    robustness and convergence in 'nlmixr2' workflows. For more details see 
+    Huang Z, Fidler M, Lan M, Cheng IL, Kloprogge F, Standing JF (2025) 
+    <doi:10.1007/s10928-025-10000-z>.
+License: GPL (>= 3)
+URL: https://ucl-pharmacometrics.github.io/nlmixr2autoinit/,
+        https://github.com/ucl-pharmacometrics/nlmixr2autoinit
+BugReports: https://github.com/ucl-pharmacometrics/nlmixr2autoinit/issues
+Depends: nlmixr2data, R (>= 4.0)
+Imports: nlmixr2, nlmixr2est, rxode2, dplyr, tidyr, crayon, purrr,
+        knitr, magrittr, progressr, tibble, vpc
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-08 18:37:55 UTC; huang
+Author: Zhonghui Huang [aut, cre],
+  Joseph Standing [ctb],
+  Matthew Fidler [ctb],
+  Frank Kloprogge [ctb]
+Maintainer: Zhonghui Huang <huangzhonghui22@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-08 20:10:11 UTC

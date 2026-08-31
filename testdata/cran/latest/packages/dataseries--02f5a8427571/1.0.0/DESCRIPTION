@@ -1,0 +1,29 @@
+Package: dataseries
+Type: Package
+Title: Switzerland's Data Series in One Place
+Version: 1.0.0
+Authors@R: c(
+    person("Christoph", "Sax", email = "christoph.sax@gmail.com",
+           role = c("aut", "cre")),
+    person("Jannes", "Muenchow", email = "malnamalja@gmx.de",
+           role = "ctb"))
+Description: Download and import open Swiss economic time series from
+    'dataseries.org' <https://dataseries.org>, a comprehensive and
+    up-to-date collection of public data from Switzerland. Series are
+    retrieved through the public 'dataseries.org' API and imported as a
+    'data.frame' or 'ts' object.
+License: GPL-3
+URL: https://dataseries.org, https://github.com/cynkra/dataseries
+BugReports: https://github.com/cynkra/dataseries/issues
+Imports: jsonlite, stats, utils
+Suggests: curl, testthat (>= 3.0.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-13 19:58:45 UTC; dev
+Author: Christoph Sax [aut, cre],
+  Jannes Muenchow [ctb]
+Maintainer: Christoph Sax <christoph.sax@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-13 20:30:02 UTC

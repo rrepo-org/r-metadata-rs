@@ -1,0 +1,30 @@
+Package: rLifting
+Title: High-Performance Wavelet Lifting Transforms
+Version: 1.0.0
+Date: 2026-06-11
+Authors@R: 
+    person(given = "Moises", family = "da Silva", email = "moisesdff8@gmail.com", role = c("aut", "cre"))
+Description: Performs Wavelet Lifting Transforms focusing on signal denoising 
+    and functional data analysis (FDA). Implements a hybrid architecture with 
+    a zero-allocation 'C++' core for high-performance processing. Features include 
+    unified offline (batch) denoising, causal (real-time) filtering using a 
+    ring buffer engine, and adaptive recursive thresholding.
+License: MIT + file LICENSE
+URL: https://github.com/mkyou/rLifting
+BugReports: https://github.com/mkyou/rLifting/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+Imports: Rcpp
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, dplyr, tidyr, ggplot2,
+        microbenchmark, wavethresh
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: yes
+Packaged: 2026-06-11 14:19:27 UTC; augusto
+Author: Moises da Silva [aut, cre]
+Maintainer: Moises da Silva <moisesdff8@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-19 17:40:02 UTC

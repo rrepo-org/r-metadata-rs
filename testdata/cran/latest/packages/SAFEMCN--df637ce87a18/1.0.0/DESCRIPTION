@@ -1,0 +1,29 @@
+Package: SAFEMCN
+Type: Package
+Title: Network Topology Parameter Analysis with Rarefaction
+Version: 1.0.0
+Authors@R: c(
+    person("Xiaotong", "Xu", email = "xxt19992014@163.com", role = c("aut", "cre")),
+    person("Yue", "Zheng", role = "cph")
+  )
+Description: Calculate network topology parameters from Operational Taxonomic Unit
+    (OTU) tables with customizable correlation thresholds, parallel processing
+    options, and visualization capabilities including trend fitting, prediction
+    of future sample sizes, and lag-1 autocorrelation (AR1) analysis.
+    Methods are based on co-occurrence network construction via correlation
+    thresholds and graph-theoretic metrics computed with 'igraph'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: igraph, Hmisc, parallel, ggplot2, grDevices, graphics, rlang,
+        stats, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-22 01:53:31 UTC; 童小徐
+Author: Xiaotong Xu [aut, cre],
+  Yue Zheng [cph]
+Maintainer: Xiaotong Xu <xxt19992014@163.com>
+Repository: CRAN
+Date/Publication: 2026-05-28 13:00:05 UTC

@@ -1,0 +1,38 @@
+Package: tipitaka.critical
+Type: Package
+Title: Lemmatized Critical Edition of the Pali Canon
+Version: 1.0.0
+Authors@R: 
+    person(given = "Dan",
+           family = "Zigmond",
+           role = c("aut", "cre"),
+           email = "djz@shmonk.com")
+Description: A lemmatized critical edition of the complete Pali Canon
+    (Tipitaka), the canonical scripture of Theravadin Buddhism. Based
+    on a five-witness collation of the Pali Text Society (PTS) edition
+    (via 'GRETIL'), 'SuttaCentral', the Vipassana Research Institute
+    (VRI) Chattha Sangayana edition, the Buddha Jayanti Tipitaka (BJT),
+    and the Thai Royal Edition. All text is lemmatized using the
+    'Digital Pali Dictionary', grouping inflected forms by dictionary
+    headword. Covers all three pitakas (Sutta, Vinaya, Abhidhamma)
+    with 5,777 individual text units. The companion package 'tipitaka'
+    provides the original VRI edition data and Pali text tools.
+    For background on the collation method, see Zigmond (2026)
+    <https://github.com/dangerzig/tipitaka.critical>.
+URL: https://github.com/dangerzig/tipitaka.critical
+BugReports: https://github.com/dangerzig/tipitaka.critical/issues
+License: CC0
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5), Matrix
+Suggests: dplyr, knitr, rmarkdown, testthat (>= 3.0.0), tidyr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-02-17 22:38:01 UTC; danzigmond
+Author: Dan Zigmond [aut, cre]
+Maintainer: Dan Zigmond <djz@shmonk.com>
+Repository: CRAN
+Date/Publication: 2026-02-20 10:20:02 UTC

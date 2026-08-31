@@ -1,0 +1,29 @@
+Package: DendroFlux
+Type: Package
+Date: 2026-07-26
+Title: Processing and Analyzing Dendrometer and Sap Flux Data
+Version: 1.0.3
+Authors@R: c(
+	person("Shuo", "Wen", email = "shuowen@caf.ac.cn", role = c("aut", "cre")),
+	person("Xiaoyan", "Shang", email = "xyshang1027@163.com", role = "ctb"),
+	person("Wenjian", "Zhou", email = "a820936422@126.com", role = "ctb"),
+	person("Zhongjie", "Shi", email = "shizj@caf.ac.cn", role = "ths"),
+        person("Xiao", "Zhang", email = "zhangxiao978@caf.ac.cn", role = "ths"))
+Author: Shuo Wen [aut, cre],
+  Xiaoyan Shang [ctb],
+  Wenjian Zhou [ctb],
+  Zhongjie Shi [ths],
+  Xiao Zhang [ths]
+Maintainer: Shuo Wen <shuowen@caf.ac.cn>
+Description: Data management and cleaning for dendrometer and sap flux data, including gap detection, NA identification, missing value interpolation, and date conversion. The package also calculates multiple growth metrics of tree radial change data, including the cumulative growth over the entire observation period, daily cumulative growth, and growth changes between adjacent time intervals. Various approaches can be applied to calculate the  night delta-Tmax required for sap flow (Peters et al., 2018, <doi: 10.1111/nph.15241>) and subsequently estimate sap flow density (Granier, 1987, <doi: 10.1093/treephys/3.4.309>). In addition, it supports the creation of simple time‑series point plots to visually display the dynamic changes in tree growth status or sap flow density during that period. 
+License: GPL-3
+Language: en-US
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: readxl, ggplot2, zoo, forecast, rlang
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-26 03:38:11 UTC; shuow
+Repository: CRAN
+Date/Publication: 2026-08-05 06:50:02 UTC

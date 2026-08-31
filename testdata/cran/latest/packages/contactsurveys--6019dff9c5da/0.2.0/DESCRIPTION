@@ -1,0 +1,61 @@
+Package: contactsurveys
+Title: Download Contact Surveys for Use in Infectious Disease Modelling
+Version: 0.2.0
+Authors@R: c(
+    person(
+      given = "Sebastian",
+      family = "Funk",
+      email = "sebastian.funk@lshtm.ac.uk",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-2842-3406")
+      ),
+    person(
+      given = "Nicholas",
+      family = "Tierney",
+      email = "nicholas.tierney@gmail.com",
+      role = "aut",
+      comment = c(ORCID = "0000-0003-1460-8722")
+      ),
+    person(
+      given = "Hugo",
+      family = "Gruson",
+      role = "ctb",
+      comment = c(ORCID = "0000-0002-4094-1476")
+      )
+  )
+Description: Download, cache, and manage social contact survey data from
+  the social contact data community on Zenodo
+  (<https://zenodo.org/communities/social_contact_data>) for use in
+  infectious disease modelling. Provides functions to list available
+  surveys, download survey files with automatic caching, and retrieve
+  citations. Contact survey data describe who contacts whom in a population
+  and are used to parameterise age-structured transmission models, for
+  example via the 'socialmixr' package. The surveys available include those
+  from the POLYMOD study (Mossong et al. (2008)
+  <doi:10.1371/journal.pmed.0050074>) and other social contact data shared
+  on Zenodo.
+License: MIT + file LICENSE
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.6.0), data.table, oai, purrr, rlang (>= 1.0.0),
+        stats, yesno, zen4R (>= 0.10.3), jsonlite
+Suggests: socialmixr (>= 0.5.0), knitr, rmarkdown, roxyglobals,
+        testthat (>= 3.0.0), withr, vcr (>= 2.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+URL: https://github.com/epiforecasts/contactsurveys,
+        http://epiforecasts.io/contactsurveys/
+BugReports: https://github.com/epiforecasts/contactsurveys/issues
+Config/testthat/edition: 3
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-08-21 15:59:11 UTC; sebfunk
+Author: Sebastian Funk [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-2842-3406>),
+  Nicholas Tierney [aut] (ORCID: <https://orcid.org/0000-0003-1460-8722>),
+  Hugo Gruson [ctb] (ORCID: <https://orcid.org/0000-0002-4094-1476>)
+Maintainer: Sebastian Funk <sebastian.funk@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-08-21 18:30:02 UTC

@@ -1,0 +1,37 @@
+Package: gglyph
+Title: Network-Style Visualization of Directed Pairwise Relationships
+Version: 0.2.0
+Authors@R: c(
+    person("Valentin", "Velev", , "valentin.velev@uni-konstanz.de", role = c("cre", "aut")),
+    person("Andreas", "Spitz", , "andreas.spitz@uni-konstanz.de", role = "ctb")
+  )
+Description: Create network-style visualizations of pairwise relationships
+    using custom edge glyphs built on top of 'ggplot2'. The package
+    supports both statistical and non-statistical data and allows users to
+    represent directed relationships. This enables clear,
+    publication-ready graphics for exploring and communicating relational
+    structures in a wide range of domains. The method was first used in
+    Abu-Akel et al. (2021) <doi:10.1371/journal.pone.0245100>. Code is
+    released under the MIT License; included datasets are licensed under
+    the Creative Commons Attribution 4.0 International (CC BY 4.0).
+License: MIT + file LICENSE
+URL: https://valentinsvelev.github.io/gglyph/
+BugReports: https://github.com/valentinsvelev/gglyph/issues/
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, ggtext, grid, magrittr, rlang, stats, tibble,
+        tidyr, utils
+Suggests: ggthemes, haven, kableExtra, knitr, patchwork, psych, purrr,
+        readr, rmarkdown, rstatix, spelling, svglite, testthat (>=
+        3.0.0), tidyverse, viridis, viridisLite
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-19 10:05:26 UTC; valentinvelev
+Author: Valentin Velev [cre, aut],
+  Andreas Spitz [ctb]
+Maintainer: Valentin Velev <valentin.velev@uni-konstanz.de>
+Repository: CRAN
+Date/Publication: 2025-09-24 08:20:02 UTC

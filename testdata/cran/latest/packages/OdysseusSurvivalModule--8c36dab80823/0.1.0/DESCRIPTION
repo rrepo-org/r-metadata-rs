@@ -1,0 +1,22 @@
+Package: OdysseusSurvivalModule
+Title: Cohort-Based Single-Event Survival Utilities
+Version: 0.1.0
+Authors@R: 
+    person("Alexander", "Alexeyuk", , "AlexanderAlexeyuk@gmail.com", role = c("aut", "cre"))
+Description: Tools to build single-event survival datasets from "OMOP CDM"
+    cohorts and estimate survival outcomes. The package supports Kaplan-Meier,
+    Cox proportional hazards, and parametric accelerated-failure-time models,
+    with optional stratification by gender and age groups.
+License: Apache License (== 2.0)
+Imports: DatabaseConnector, ggsurvfit, SqlRender, survival
+Suggests: Eunomia, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-03-31 09:53:41 UTC; AlexanderAleksiayuk
+Author: Alexander Alexeyuk [aut, cre]
+Maintainer: Alexander Alexeyuk <AlexanderAlexeyuk@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-03 15:30:17 UTC

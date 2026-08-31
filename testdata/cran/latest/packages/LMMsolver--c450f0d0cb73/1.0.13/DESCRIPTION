@@ -1,0 +1,39 @@
+Package: LMMsolver
+Type: Package
+Title: Linear Mixed Models with Sparse Matrix Methods and Smoothing
+Description: Provides tools for fitting linear mixed models using sparse matrix 
+    methods and variance component estimation. Applications include spline-based 
+    modeling of spatial and temporal trends using penalized splines (Boer, 2023) 
+    <doi:10.1177/1471082X231178591>.
+Version: 1.0.13
+Date: 2026-05-18
+Authors@R: c(person(given = "Martin", 
+                    family = "Boer", 
+                    email = "martin.boer@wur.nl", 
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-1879-4588")),
+            person(given = "Bart-Jan", 
+                   family = "van Rossum", 
+                   email = "bart-jan.vanrossum@wur.nl", 
+                   role = c("aut", "cre"),
+                   comment = c(ORCID = "0000-0002-8673-2514")))
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6)
+Imports: Matrix, methods, Rcpp (>= 0.10.4), spam, splines
+LinkingTo: Rcpp
+Suggests: rmarkdown, knitr, tinytest, tidyr, ggplot2, maps, sf
+VignetteBuilder: knitr
+URL: https://biometris.github.io/LMMsolver/index.html,
+        https://github.com/Biometris/LMMsolver/
+BugReports: https://github.com/Biometris/LMMsolver/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-20 08:16:24 UTC; rossu027
+Author: Martin Boer [aut] (ORCID: <https://orcid.org/0000-0002-1879-4588>),
+  Bart-Jan van Rossum [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8673-2514>)
+Maintainer: Bart-Jan van Rossum <bart-jan.vanrossum@wur.nl>
+Repository: CRAN
+Date/Publication: 2026-05-29 10:00:08 UTC

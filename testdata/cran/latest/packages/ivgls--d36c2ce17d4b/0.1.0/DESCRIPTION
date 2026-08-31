@@ -1,0 +1,39 @@
+Package: ivgls
+Type: Package
+Title: Network-Aware IV Regression with Graph-Fused Lasso
+Version: 0.1.0
+Authors@R: c(
+    person("Dhrubajyoti", "Ghosh", email = "dghosh3@kennesaw.edu",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3360-3786")),
+    person("Samhita", "Pal", email = "samhita.pal@vumc.org",
+           role = "aut", comment = c(ORCID = "0009-0001-4930-916X")))
+Description: Implements network-aware instrumental variable regression
+    for causal node discovery in high-dimensional settings with
+    graph-structured exposures. Provides IVGL and IVGL-S estimators
+    combining graph-Laplacian penalization with IV-based identification,
+    including correction for invalid instruments via a sisVIVE-style
+    update. Methods are described in Pal and Ghosh (2026)
+    <doi:10.48550/arXiv.2604.24969>. The 'glmgraph' package, required
+    for the main estimators, is available at the additional repository
+    <https://djghosh1123.r-universe.dev>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: glmnet, MASS, igraph
+Suggests: knitr, glmgraph, rmarkdown, testthat (>= 3.0.0), ggplot2,
+        spelling
+Additional_repositories: https://djghosh1123.r-universe.dev
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+URL: https://github.com/djghosh1123/ivgls
+BugReports: https://github.com/djghosh1123/ivgls/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-20 02:10:10 UTC; dghosh3
+Author: Dhrubajyoti Ghosh [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3360-3786>),
+  Samhita Pal [aut] (ORCID: <https://orcid.org/0009-0001-4930-916X>)
+Maintainer: Dhrubajyoti Ghosh <dghosh3@kennesaw.edu>
+Repository: CRAN
+Date/Publication: 2026-06-24 09:30:02 UTC

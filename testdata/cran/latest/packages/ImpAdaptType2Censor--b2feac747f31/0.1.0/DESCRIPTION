@@ -1,0 +1,27 @@
+Package: ImpAdaptType2Censor
+Type: Package
+Title: Data Generation and Statistical Inference for Improved Adaptive
+        Type-II Progressive Censoring Schemes
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut"))
+Description: Comprehensive computational routines for random data generation, Maximum Likelihood Estimation (MLE), Maximum Product of Spacings Estimation (MPSE), and MCMC Bayesian estimation under the Improved Adaptive Type-II Progressive Censoring Scheme (IAT-II PCS). Users can supply custom probability density functions (PDF), cumulative distribution functions (CDF), survival functions, parameter ranges, and progressive censoring plans for any continuous univariate lifetime distribution, or rely on built-in parametric models (e.g., Generalized Exponential). Point estimation methods include MLE via optimization algorithms (Broyden-Fletcher-Goldfarb-Shanno (BFGS), Newton-Raphson (NR), Nelder-Mead (NM), Conjugate Gradients (CG), L-BFGS-B, Simulated Annealing (SANN), and Berndt-Hall-Hall-Hausman (BHHH)) and MPSE. Bayesian inference utilizes Metropolis-Hastings within Gibbs sampling under Squared Error Loss (SEL) and LINEX Loss (LL) functions to compute point estimates and Highest Posterior Density (HPD) credible intervals. Asymptotic confidence intervals for parameters, reliability, and hazard rate functions are constructed using asymptotic normality and delta method. Methods are based on Dev and Chacko (2026, Journal of the Iranian Statistical Society, 25, 1-29), Yan, Zhang, and Dong (2021, Journal of Computational and Applied Mathematics, 381, 113022, <doi:10.1016/j.cam.2020.113022>), Ng, Kundu, and Chan (2004, Naval Research Logistics, 51, 1145-1168, <doi:10.1002/nav.20045>), Cheng and Amin (1983, Journal of the Royal Statistical Society Series B, 45, 394-403, <doi:10.1111/j.2517-6161.1983.tb01268.x>), Kundu and Gupta (1999, Australian & New Zealand Journal of Statistics, 41, 173-188, <doi:10.1111/1467-842X.00072>), and Berndt, Hall, Hall, and Hausman (1974, Annals of Economic and Social Measurement, 3, 653-665).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-07-29 16:04:53 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 15:30:02 UTC

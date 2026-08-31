@@ -1,0 +1,36 @@
+Package: priorityelasticnet
+Type: Package
+Title: Comprehensive Analysis of Multi-Omics Data Using an Offset-Based
+        Method
+Version: 1.2.1
+Authors@R: c(
+    person(given = "Laila Qadir", family = "Musib", role = c("aut"), 
+           email = "statleila98@gmail.com"),
+    person(given = "Helena", family = "Mouriño", role = c("aut"), 
+           email = "mhnunes@ciencias.ulisboa.pt"),
+    person(given = "Eunice", family = "Carrasquinha", role = c("aut", "cre"), 
+           email = "eitrigueirao@ciencias.ulisboa.pt")
+    )
+Description: Priority-ElasticNet extends the Priority-LASSO method (Klau et al. (2018) <doi:10.1186/s12859-018-2344-6>) by incorporating the ElasticNet penalty, allowing for both L1 and L2 regularization. 
+    This approach fits successive ElasticNet models for several blocks of (omics) data with different priorities, using the predicted values from each block as an offset for the subsequent block. 
+    It also offers robust options to handle block-wise missingness in multi-omics data, improving the flexibility and applicability of the model in the presence of incomplete datasets.
+Note: conceptual foundation and significant code structure inherited
+        from the 'prioritylasso' package.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: survival, glmnet (>= 2.0-13), utils, checkmate, shiny, tidyr,
+        dplyr, caret, pROC, PRROC, plotrix, ggplot2, magrittr, tibble,
+        broom, cvms, glmSparseNet
+Suggests: ipflasso, rlang, knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-11 10:57:42 UTC; eunicecarrasquinha
+Author: Laila Qadir Musib [aut],
+  Helena Mouriño [aut],
+  Eunice Carrasquinha [aut, cre]
+Maintainer: Eunice Carrasquinha <eitrigueirao@ciencias.ulisboa.pt>
+Repository: CRAN
+Date/Publication: 2026-02-19 09:30:02 UTC

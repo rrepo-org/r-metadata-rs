@@ -1,0 +1,43 @@
+Package: LRErdd
+Type: Package
+Title: Regression Discontinuity Designs as Local Randomized Experiments
+Version: 0.1.0
+Authors@R: c(person("Ibon", "Tamayo", email = "itamuria@gmail.com", role = c("aut", "cre")),
+             person("Alessandra", "Mattei", email = "alessandra.mattei@unifi.it", role = c("aut")),
+             person("Fabrizia", "Mealli", email = "fabrizia.mealli@unifi.it", role = c("aut")),
+             person("Marie-Abele", "Bind", email = "ma.bind@mail.harvard.edu", role = c("aut")))
+Description: A set of functions for the design and analysis of Regression
+    Discontinuity Designs as local randomized experiments within the potential
+    outcome approach as formalized in Li, Mattei and Mealli (2015)
+    <doi:10.1214/15-AOAS809>. A subset of functions implements the design phase
+    of the study, where the focus is on the selection of suitable subpopulations
+    for which valid causal inference can be drawn. These functions provide
+    summary statistics of pre- and post-treatment variables by treatment status
+    and select suitable subpopulations around the threshold where pre-treatment
+    variables are well balanced between treatment groups, using
+    randomization-based tests with adjustment for multiplicities. Functions for
+    a visual inspection of the results are also provided. Finally, the package
+    includes a set of functions for drawing inference on causal effects for the
+    selected subpopulations using randomization-based modes of inference.
+    Specifically, the Fisher Exact p-value and Neyman approaches are implemented
+    for the analysis of both sharp and fuzzy Regression Discontinuity designs.
+    The approach is illustrated in a study concerning the effects of university
+    grants on student dropout.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5)
+Imports: ggplot2, cowplot, gtools, R6, shiny, stats
+Suggests: knitr, rmarkdown, bslib, shinycssloaders, DT, openxlsx,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-19 18:13:46 UTC; root
+Author: Ibon Tamayo [aut, cre],
+  Alessandra Mattei [aut],
+  Fabrizia Mealli [aut],
+  Marie-Abele Bind [aut]
+Maintainer: Ibon Tamayo <itamuria@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-06 10:20:08 UTC

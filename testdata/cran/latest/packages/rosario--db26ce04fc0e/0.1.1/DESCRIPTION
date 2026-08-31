@@ -1,0 +1,29 @@
+Package: rosario
+Title: A Null Model Algorithm to Analyze Cyclical Data in Ecology
+Version: 0.1.1
+Authors@R: c(
+    person("Ángel L.", "Robles-Fernández", , "a.l.robles.fernandez@gmail.com", role = c("aut")),
+    person("Maria A.", "Hurtado-Materon", , "maria.h.m_1995@tamu.edu", role = c("aut")),
+    person("Tatiana", "Velásquez-Roa", , "yxh11@txstate.edu", role = c("cre", "aut")),
+    person("Iván", "Castro-Arellano", , "ic13@txstate.edu", role = c("ths")))
+Description: Implements a null model analysis to quantify concurrent temporal niche overlap (i.e., activity or phenology) among biological identities (e.g., individuals, populations, species) using the Rosario randomization algorithm (Castro-Arellano et al. 2010) <doi:10.1111/j.2041-210X.2010.00031.x>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: broom, magrittr, purrr, furrr, future, rlang,
+URL: https://alrobles.github.io/rosario/
+Suggests: rmarkdown, ggplot2, spelling, knitr, lubridate, dplyr
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+LazyData: true
+Language: en-US
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2026-02-20 23:13:17 UTC; maria.h.m_1995
+Author: Ángel L. Robles-Fernández [aut],
+  Maria A. Hurtado-Materon [aut],
+  Tatiana Velásquez-Roa [cre, aut],
+  Iván Castro-Arellano [ths]
+Maintainer: Tatiana Velásquez-Roa <yxh11@txstate.edu>
+Repository: CRAN
+Date/Publication: 2026-02-21 22:40:02 UTC

@@ -1,0 +1,33 @@
+Package: emln
+Type: Package
+Title: Organize, Handle, and Explore Ecological Multilayer Networks
+Version: 1.2.0
+Date: 2026-05-13
+Authors@R: c(
+    person("Noa", "Frydman", role = "aut"),
+    person("Shai", "Pilosof", role = c("aut", "fnd"), email = "pilos@bgu.ac.il"),
+    person("Shirly", "Freilikhman", role = "aut"),
+    person("Geut", "Galai", role = "cre", email = "geutg@post.bgu.ac.il")
+    )
+URL: https://emln.ecomplab.com/
+BugReports: https://github.com/Ecological-Complexity-Lab/emln/issues
+Description: Data and analysis of ecological multilayer networks, including standardization of data structures and functions to convert between them. Includes an interactive multilayer network visualizer (beta, paper forthcoming), and a collection of 78 empirical ecological multilayer network datasets. This work was supported by research grant ISF (Israel Science Foundation) 1281/20 to Shai Pilosof. Noa Frydman (2023) <doi:10.1111/2041-210X.14225>. 
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Depends: R (>= 4.1.0)
+Imports: magrittr, stringr, igraph, tibble, dplyr, purrr, tidyr,
+        Matrix, DT, hablar, rlang
+Suggests: bipartite, httpuv, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-13 09:16:40 UTC; geutgalai
+Author: Noa Frydman [aut],
+  Shai Pilosof [aut, fnd],
+  Shirly Freilikhman [aut],
+  Geut Galai [cre]
+Maintainer: Geut Galai <geutg@post.bgu.ac.il>
+Repository: CRAN
+Date/Publication: 2026-05-13 11:00:02 UTC

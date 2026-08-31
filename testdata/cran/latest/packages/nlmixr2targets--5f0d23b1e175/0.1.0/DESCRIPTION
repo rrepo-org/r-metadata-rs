@@ -1,0 +1,29 @@
+Package: nlmixr2targets
+Title: Targets for 'nlmixr2' Pipelines
+Version: 0.1.0
+Authors@R: 
+    person("Bill", "Denney", , "wdenney@humanpredictions.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5759-428X"))
+Description: 'nlmixr2' often has long runtimes.  A pipeline toolkit
+    tailored to 'nlmixr2' workflows leverages 'targets' and 'nlmixr2' to
+    ease reproducible workflows.  'nlmixr2targets' ensures minimal rework
+    in model development with 'nlmixr2' and 'targets' by simplifying and
+    standardizing models and datasets.
+License: GPL (>= 2)
+URL: https://nlmixr2.github.io/nlmixr2targets/
+BugReports: https://github.com/nlmixr2/nlmixr2targets/issues
+Depends: R (>= 4.1)
+Imports: checkmate, digest, nlmixr2est, rxode2 (>= 2.0.14), targets
+Suggests: covr, knitr, nlmixr2data, rmarkdown, spelling, tarchetypes,
+        testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-05-31 20:45:01 UTC; bill
+Author: Bill Denney [aut, cre] (ORCID: <https://orcid.org/0000-0002-5759-428X>)
+Maintainer: Bill Denney <wdenney@humanpredictions.com>
+Repository: CRAN
+Date/Publication: 2026-06-05 14:40:11 UTC

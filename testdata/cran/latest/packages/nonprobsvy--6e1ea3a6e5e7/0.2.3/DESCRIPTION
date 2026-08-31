@@ -1,0 +1,43 @@
+Package: nonprobsvy
+Type: Package
+Title: Inference Based on Non-Probability Samples
+Version: 0.2.3
+Authors@R: 
+    c(person(given = "Łukasz",
+             family = "Chrostowski",
+             role = c("aut", "ctb"),
+             email = "lukaszchrostowski6@gmail.com"),
+      person(given = "Maciej",
+             family = "Beręsewicz",
+             role = c("aut", "cre"),
+             email = "maciej.beresewicz@ue.poznan.pl",
+             comment = c(ORCID = "0000-0002-8281-4301")),
+      person(given = "Piotr",
+             family = "Chlebicki",
+             role = c("aut", "ctb"),
+             email = "piotrek.pecet@gmail.com",
+             comment = c(ORCID = "0009-0006-4867-7434")))
+Description: Statistical inference with non-probability samples when auxiliary information from external sources such as probability samples or population totals or means is available. The package implements various methods such as inverse probability (propensity score) weighting, mass imputation and doubly robust approach. Details can be found in: Chen et al. (2020) <doi:10.1080/01621459.2019.1677241>, Yang et al. (2020) <doi:10.1111/rssb.12354>, Kim et al. (2021) <doi:10.1111/rssa.12696>, Yang et al. (2021) <https://www150.statcan.gc.ca/n1/pub/12-001-x/2021001/article/00004-eng.htm> and Wu (2022) <https://www150.statcan.gc.ca/n1/pub/12-001-x/2022002/article/00002-eng.htm>. For details on the package and its functionalities see <doi:10.48550/arXiv.2504.04255>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL: https://github.com/ncn-foreigners/nonprobsvy,
+        https://ncn-foreigners.ue.poznan.pl/nonprobsvy/
+BugReports: https://github.com/ncn-foreigners/nonprobsvy/issues
+Depends: R (>= 4.0.0), survey
+Imports: maxLik, stats, Matrix, MASS, ncvreg, RANN, Rcpp (>= 1.0.12),
+        nleqslv, doParallel, foreach, parallel, formula.tools
+Suggests: tinytest, covr, spelling
+LinkingTo: Rcpp, RcppArmadillo
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2025-08-20 06:23:18 UTC; berenz
+Author: Łukasz Chrostowski [aut, ctb],
+  Maciej Beręsewicz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8281-4301>),
+  Piotr Chlebicki [aut, ctb] (ORCID:
+    <https://orcid.org/0009-0006-4867-7434>)
+Maintainer: Maciej Beręsewicz <maciej.beresewicz@ue.poznan.pl>
+Repository: CRAN
+Date/Publication: 2025-08-20 07:20:02 UTC

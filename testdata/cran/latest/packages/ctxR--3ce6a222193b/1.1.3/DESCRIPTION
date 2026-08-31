@@ -1,0 +1,46 @@
+Type: Package
+Package: ctxR
+Title: Utilities for Interacting with the 'CTX' APIs
+Version: 1.1.3
+Authors@R: c(
+              person(given = "Paul", family = "Kruse", role = c("aut"), comment = c(ORCID = "0000-0001-5516-9717")),
+    	      person(given = "Caroline", family =  "Ring", email = "ring.caroline@epa.gov", role = c("aut"), comment = c(ORCID = "0000-0002-0463-1251")),
+	      person(given = "Madison", family = "Feshuk", role = c("ctb","cre"), email = "feshuk.madison@epa.gov", comment = c(ORCID = "0000-0002-1390-6405")),
+	      person(given = "Brianna",family = "Dirks", role = "ctb", comment = c(ORCID = "0009-0003-3691-1543")),
+	      person(given = "Carter", family = "Thunes", role = "ctb"),
+    	      person(given = "Jason", family = "Brown", role = "ctb",  comment = c(ORCID = "0009-0000-2294-641X")))
+Description: Access chemical, hazard, bioactivity, and exposure data from the 
+   Computational Toxicology and Exposure ('CTX') APIs 
+   <https://www.epa.gov/comptox-tools/computational-toxicology-and-exposure-apis>. 
+   'ctxR' was developed to streamline the process of accessing the information 
+   available through the 'CTX' APIs without requiring prior knowledge of how to 
+   use APIs. Most data is also available on the CompTox Chemical Dashboard 
+   ('CCD') <https://comptox.epa.gov/dashboard/> and other resources found at the 
+   EPA Computational Toxicology and Exposure Online Resources 
+   <https://www.epa.gov/comptox-tools>. 
+License: GPL (>= 3)
+Imports: cli, data.table, httr, jsonlite, purrr, rlang, stringr, tidyr,
+        tibble, urltools, lifecycle
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: countcolors, devtools, DT, ggplot2, gridExtra, htmlTable,
+        httptest, kableExtra, knitr, prettydoc, rmarkdown, rmdformats,
+        testthat (>= 3.0.0), XML
+URL: https://github.com/USEPA/ctxR, https://usepa.github.io/ctxR/
+BugReports: https://github.com/USEPA/ctxR/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2025-10-08 14:13:40 UTC; MFeshuk
+Author: Paul Kruse [aut] (ORCID: <https://orcid.org/0000-0001-5516-9717>),
+  Caroline Ring [aut] (ORCID: <https://orcid.org/0000-0002-0463-1251>),
+  Madison Feshuk [ctb, cre] (ORCID:
+    <https://orcid.org/0000-0002-1390-6405>),
+  Brianna Dirks [ctb] (ORCID: <https://orcid.org/0009-0003-3691-1543>),
+  Carter Thunes [ctb],
+  Jason Brown [ctb] (ORCID: <https://orcid.org/0009-0000-2294-641X>)
+Maintainer: Madison Feshuk <feshuk.madison@epa.gov>
+Repository: CRAN
+Date/Publication: 2025-10-08 15:00:08 UTC

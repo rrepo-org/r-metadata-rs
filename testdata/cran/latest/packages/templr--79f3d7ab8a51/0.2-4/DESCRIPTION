@@ -1,0 +1,29 @@
+Package: templr
+Type: Package
+Title: MASCOTNUM / RT-UQ Algorithms Template Tools
+Version: 0.2-4
+Date: 2026-08-26
+Author: Yann Richet [aut, cre] (ORCID: <https://orcid.org/0000-0002-5677-8458>)
+Maintainer: Yann Richet <yann.richet@asnr.fr>
+Authors@R: 
+     c(person(given = "Yann",
+             family = "Richet",
+             role = c("aut", "cre"),
+             email = "yann.richet@asnr.fr",
+             comment = c(ORCID = "0000-0002-5677-8458")))
+Description: Helper functions for MASCOTNUM / RT-UQ <https://uq.math.cnrs.fr/> algorithm template, for design of numerical experiments practice:
+    algorithm template parser to support MASCOTNUM specification <https://github.com/MASCOTNUM/algorithms>,
+    'ask & tell' decoupling injection (inspired by <https://search.r-project.org/CRAN/refmans/sensitivity/html/decoupling.html>)
+    to use "crimped" algorithms (like uniroot(), optim(), ...) from outside R,
+    basic template examples: Brent algorithm for 1 dim root finding and L-BFGS-B from base optim().
+License: Apache License (>= 2)
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: utils, stats, remotes, xml2, jsonlite
+Suggests: testthat, future, mco, praise
+URL: https://github.com/MASCOTNUM/templr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-26 12:07:02 UTC; richet
+Repository: CRAN
+Date/Publication: 2026-08-26 12:30:02 UTC

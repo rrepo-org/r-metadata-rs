@@ -1,0 +1,37 @@
+Package: DTEAssurance
+Type: Package
+Title: Assurance Methods for Clinical Trials with a Delayed Treatment
+        Effect
+Version: 1.1.0
+Authors@R: 
+    person("James", "Salsbury", email = "jsalsbury1@sheffield.ac.uk",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2584-3640"))
+Description: Provides functions for planning clinical trials subject to a delayed
+    treatment effect using assurance-based methods. Includes two 'shiny'
+    applications for interactive exploration, simulation, and visualisation of
+    trial designs and outcomes. The methodology is described in:
+    Salsbury JA, Oakley JE, Julious SA, Hampson LV (2024)
+    "Assurance methods for designing a clinical trial with a delayed treatment
+    effect" <doi:10.1002/sim.10136>,
+    Salsbury JA, Oakley JE, Julious SA, Hampson LV (2024)
+    "Adaptive clinical trial design with delayed treatment effects using
+    elicited prior distributions" <doi:10.48550/arXiv.2509.07602>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: SHELF, shiny, stats, survival, nleqslv, nph, nphRCT, dplyr,
+        rjags, rpact, magrittr, rlang, future.apply
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+Date: 2025-12-02
+URL: https://jamesalsbury.github.io/DTEAssurance/
+NeedsCompilation: no
+Packaged: 2025-12-02 11:55:18 UTC; smp21js
+Author: James Salsbury [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2584-3640>)
+Maintainer: James Salsbury <jsalsbury1@sheffield.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-12-02 12:20:02 UTC

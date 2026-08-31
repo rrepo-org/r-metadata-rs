@@ -1,0 +1,25 @@
+Package: Pinference
+Title: Probability Inference for Propositional Logic
+Version: 0.2.6
+Authors@R: c(
+  person("PierGianLuca", "Porta Mana", ,
+  "pgl@portamana.org", role = c("aut", "cre", "cph"),
+  comment = c(ORCID = "0000-0002-6070-0784"))
+  )
+Description: Implementation of T. Hailperin's procedure to calculate lower and upper bounds of the probability for a propositional-logic expression, given equality and inequality constraints on the probabilities for other expressions. Truth-valuation is included as a special case. Applications range from decision-making and probabilistic reasoning, to pedagogical for probability and logic courses. For more details see T. Hailperin (1965) <doi:10.1080/00029890.1965.11970533>, T. Hailperin (1996) "Sentential Probability Logic" ISBN:0-934223-45-9, and package documentation. Requires the 'lpSolve' package.
+License: AGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: lpSolve
+VignetteBuilder: knitr
+URL: https://pglpm.github.io/Pinference/,
+        https://github.com/pglpm/Pinference/
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2025-11-15 06:56:24 UTC; pglpm
+Author: PierGianLuca Porta Mana [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6070-0784>)
+Maintainer: PierGianLuca Porta Mana <pgl@portamana.org>
+Repository: CRAN
+Date/Publication: 2025-11-30 16:40:26 UTC

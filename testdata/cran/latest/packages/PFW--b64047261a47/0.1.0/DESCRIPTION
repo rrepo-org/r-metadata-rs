@@ -1,0 +1,32 @@
+Package: PFW
+Title: Filtering and Processing Data from Project FeederWatch
+Version: 0.1.0
+Authors@R: 
+    c(person(c("Mason", "W."), "Maron", , "mwmaron2@illinois.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-7170-9373")),
+    person(given = "Sunny",family = "Tseng", role = c("rev")),
+    person(given = "Paul",family = "Carteron", role = c("rev")))
+Description: Provides tools to import, clean, filter, and prepare Project
+    FeederWatch data for analysis. Includes functions for taxonomic
+    rollup, easy filtering, zerofilling, merging in site metadata, and more.
+    Project FeederWatch data comes from 
+    <https://feederwatch.org/explore/raw-dataset-requests/>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, lubridate, httr2, xml2, stats, utils, curl, stringdist
+Suggests: testthat (>= 3.0.0), purrr, withr, knitr, rmarkdown
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+URL: https://github.com/ropensci/PFW, https://ropensci.github.io/PFW/
+BugReports: https://github.com/ropensci/PFW/issues
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-07-04 22:58:39 UTC; mmaro
+Author: Mason W. Maron [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7170-9373>),
+  Sunny Tseng [rev],
+  Paul Carteron [rev]
+Maintainer: Mason W. Maron <mwmaron2@illinois.edu>
+Repository: CRAN
+Date/Publication: 2025-07-09 10:30:20 UTC

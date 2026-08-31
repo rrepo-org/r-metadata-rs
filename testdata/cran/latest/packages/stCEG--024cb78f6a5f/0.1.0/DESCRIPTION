@@ -1,0 +1,31 @@
+Package: stCEG
+Title: Fully Customizable Chain Event Graphs over Spatial Areas
+Version: 0.1.0
+Authors@R: c(
+  person("Hollie", "Calley", email = "hc629@exeter.ac.uk", role = c("aut", "cre"),
+         comment = c(ORCID = "0009-0002-1814-8428")),
+  person("Daniel", "Williamson", role = "ctb",
+         comment = c(ORCID = "0000-0001-8917-3300")))
+Description: Enables the creation of Chain Event Graphs over spatial areas, with an optional 'Shiny' user interface. Allows users to fully customise both the structure and underlying model of the Chain Event Graph, offering a high degree of flexibility for tailored analyses. For more details on Chain Event Graphs, see Freeman, G., & Smith, J. Q. (2011) <doi:10.1016/j.jmva.2011.03.008>, Collazo R. A., Görgen C. and Smith J. Q. (2018, ISBN:9781498729604) and Barclay, L. M., Hutton, J. L., & Smith, J. Q. (2014) <doi:10.1214/13-BA843>.
+URL: https://github.com/holliecalley/stCEG
+BugReports: https://github.com/holliecalley/stCEG/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: DT, RColorBrewer, colorspace, crayon, dplyr, gtools,
+        htmltools, htmlwidgets, hwep, igraph, leaflet, purrr, scales,
+        sf, shiny, shinyWidgets, shinycssloaders, shinyjqui, shinyjs,
+        sortable, spData, stringr, tidyr, tidyverse, viridis,
+        visNetwork, zoo
+Suggests: randomcoloR, colourpicker
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-07-03 15:08:22 UTC; holliecalley
+Author: Hollie Calley [aut, cre] (ORCID:
+    <https://orcid.org/0009-0002-1814-8428>),
+  Daniel Williamson [ctb] (ORCID:
+    <https://orcid.org/0000-0001-8917-3300>)
+Maintainer: Hollie Calley <hc629@exeter.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-07-07 13:00:02 UTC

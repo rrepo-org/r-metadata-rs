@@ -1,0 +1,42 @@
+Package: CytoSimplex
+Type: Package
+Title: Simplex Visualization of Cell Fate Similarity in Single-Cell
+        Data
+Version: 0.2.0
+Date: 2025-04-22
+Authors@R: c(
+    person(given = 'Yichen', family = 'Wang', email = 'wayichen@umich.edu', 
+           role = c('aut', 'cre'), comment = c(ORCID = "0000-0003-4347-5199")),
+    person(given = 'Jialin', family = 'Liu', email = 'alanliu@umich.edu', 
+           role = c('aut'), comment = c(ORCID = "0000-0002-9984-7695")),
+    person(given = 'Joshua', family = 'Welch', email = 'welchjd@umich.edu', 
+           role = c('cph'))
+  )
+Maintainer: Yichen Wang <wayichen@umich.edu>
+Description: Create simplex plots to visualize the similarity between 
+    single-cells and selected clusters in a 1-/2-/3-simplex space.
+    Velocity information can be added as an additional layer. 
+    See Liu J, Wang Y et al (2023) <doi:10.1093/bioinformatics/btaf119> for more details.
+URL: https://welch-lab.github.io/CytoSimplex/,
+        https://github.com/welch-lab/CytoSimplex
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: stats, methods, grDevices, R (>= 3.6)
+LinkingTo: Rcpp, RcppArmadillo
+biocViews:
+Imports: cli, ggplot2, Matrix, plot3D, plotly, RColorBrewer, Rcpp,
+        rlang, viridis
+Suggests: hdf5r, knitr, magick, patchwork, rmarkdown, Seurat,
+        SeuratObject, SingleCellExperiment, SummarizedExperiment,
+        testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-04-23 14:07:08 UTC; wangych
+Author: Yichen Wang [aut, cre] (<https://orcid.org/0000-0003-4347-5199>),
+  Jialin Liu [aut] (<https://orcid.org/0000-0002-9984-7695>),
+  Joshua Welch [cph]
+Repository: CRAN
+Date/Publication: 2025-04-23 14:30:02 UTC

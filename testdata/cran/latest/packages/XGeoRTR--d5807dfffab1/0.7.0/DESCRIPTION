@@ -1,0 +1,34 @@
+Package: XGeoRTR
+Title: Backend-Neutral Explainable Geometry State and Operators
+Date: 2026-04-25
+Version: 0.7.0
+Authors@R: c(
+    person(given = "Frederic", family = "Bertrand", role = c("cre", "aut"),
+      email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281"))
+    )
+Author: Frederic Bertrand [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-0837-8281>)
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
+Description: Provides the platform layer for explanation geometry in R.
+    The package standardizes generic explanation tables into a normalized
+    backend state object, computes embeddings, diagnostics, and multiscale
+    level-of-detail summaries, and serializes backend-neutral state for
+    reproducible workflows. It also exposes selected long-table and regular-grid
+    views for downstream use-case packages. Rendering and viewport
+    orchestration are delegated to downstream frontends such as 'ggWebGL'.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: cli, jsonlite
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), uwot
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+URL: https://fbertran.github.io/XGeoRTR/,
+        https://github.com/fbertran/XGeoRTR
+BugReports: https://github.com/fbertran/XGeoRTR/issues
+NeedsCompilation: no
+Packaged: 2026-05-05 14:54:49 UTC; bertran7
+Repository: CRAN
+Date/Publication: 2026-05-08 15:40:09 UTC

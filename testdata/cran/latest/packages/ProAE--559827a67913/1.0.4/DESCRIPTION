@@ -1,0 +1,43 @@
+Package: ProAE
+Type: Package
+Title: PRO-CTCAE Scoring, Analysis, and Graphical Tools
+Version: 1.0.4
+Authors@R: c(person(given = "Blake",
+                    family = "Langlais",
+                    role = "aut"),
+               person(given = "Brie",
+                      family = "Noble",
+                      role = c("ctb","cre"),
+                      email = "noble.brie@mayo.edu"),
+               person(given = "Mia",
+                      family = "Truman",
+                      role = "ctb"),
+               person(given = "Molly",
+                      family = "Voss",
+                      role = "ctb"),
+               person(given = "Amylou",
+                      family = "Dueck",
+                      role = "aut"))
+Description: A collection of tools to facilitate standardized analysis 
+    and graphical procedures when using the National Cancer Institute’s 
+    Patient-Reported Outcomes version of the Common Terminology Criteria for 
+    Adverse Events (PRO-CTCAE) and other PRO measurements.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, ggnewscale, ggtext, dplyr, Hmisc, magrittr,
+        ggpattern, DescTools, gridExtra, kableExtra
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2026-01-08 19:43:54 UTC; m272752
+Author: Blake Langlais [aut],
+  Brie Noble [ctb, cre],
+  Mia Truman [ctb],
+  Molly Voss [ctb],
+  Amylou Dueck [aut]
+Maintainer: Brie Noble <noble.brie@mayo.edu>
+Repository: CRAN
+Date/Publication: 2026-01-08 23:10:02 UTC

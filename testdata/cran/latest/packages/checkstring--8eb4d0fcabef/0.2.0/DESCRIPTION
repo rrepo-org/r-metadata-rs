@@ -1,0 +1,28 @@
+Package: checkstring
+Title: Common String Format Validation
+Version: 0.2.0
+Authors@R: 
+    person("Maximilian", "Mücke", , "muecke.maximilian@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-9432-9795"))
+Description: Validates common string formats including financial
+    identifiers (ISIN, CUSIP, SEDOL, FIGI, IBAN, LEI), publication
+    identifiers (ISBN, ISSN, DOI, ORCID), and general formats (email,
+    UUID, URL, semver), with check digit verification where applicable.
+License: MIT + file LICENSE
+URL: https://m-muecke.github.io/checkstring/,
+        https://github.com/m-muecke/checkstring
+BugReports: https://github.com/m-muecke/checkstring/issues
+Depends: R (>= 4.1.0)
+Suggests: curl, testthat (>= 3.0.0)
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-29 09:16:12 UTC; mmuecke
+Author: Maximilian Mücke [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-9432-9795>)
+Maintainer: Maximilian Mücke <muecke.maximilian@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-29 09:30:02 UTC

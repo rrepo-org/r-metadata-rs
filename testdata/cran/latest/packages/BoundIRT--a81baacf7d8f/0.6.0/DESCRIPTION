@@ -1,0 +1,39 @@
+Package: BoundIRT
+Title: Fit Bounded Continuous Item Response Theory Models to Data
+Version: 0.6.0
+Authors@R: 
+    person("Dylan", "Molenaar", , "d.molenaar@uva.nl", role = c("aut", "cre"))
+Description: Bounded continuous data are encountered in many areas of test application. 
+ Examples include visual analogue scales used in the measurement of personality, mood, 
+ depression, and quality of life; item response times from tests with item deadlines; 
+ confidence ratings; and pain intensity ratings. Using this package, item response theory (IRT) 
+ models suitable for bounded continuous item scores can be fitted to data within a Bayesian framework. 
+ The package draws on posterior sampling facilities provided by R-package 'rstan' (Stan Development Team, 2025)<https://mc-stan.org/>. 
+ Available models include the Beta IRT model by Noel and Dauvier (2007)<doi:10.1177/0146621605287691>, the continuous response 
+ model by Samejima (1973)<doi:10.1007/BF03372160>, the unbounded normal model by Mellenbergh (1994)<doi:10.1207/s15327906mbr2903_2>, 
+ and the Simplex IRT model by Flores et al. (2020)<doi:10.1007/978-3-030-43469-4_8>. All models can be 
+ fitted with or without zero-one inflation (Molenaar et al., 2022)<doi:10.3102/10769986221108455>. 
+ Model fit comparisons can be conducted using the Watanabe-Akaike information criterion (WAIC), leave-one-out 
+ cross-validation information citerion (LOOIC) and the fully marginalized likelihood (i.e., Bayes factors).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Biarch: true
+Depends: R (>= 3.5)
+Imports: methods, mvtnorm, MASS, statmod, Rcpp (>= 0.12.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), rstantools (>=
+        2.6.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+LazyData: true
+LazyDataCompression: xz
+Suggests: bayesplot, loo, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-08-20 13:43:35 UTC; dmolena1
+Author: Dylan Molenaar [aut, cre]
+Maintainer: Dylan Molenaar <d.molenaar@uva.nl>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:47:08 UTC

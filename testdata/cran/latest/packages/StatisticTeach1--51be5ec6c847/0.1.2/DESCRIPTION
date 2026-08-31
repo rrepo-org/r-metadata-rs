@@ -1,0 +1,43 @@
+Type: Package
+Package: StatisticTeach1
+Title: Interactive Tool for Statistics and Probability
+Version: 0.1.2
+Depends: R (>= 4.1.0)
+Authors@R: c(
+    person("Javier", "De La Hoz Maestre",
+           email = "jdelahoz@unimagdalena.edu.co",
+           role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0001-7779-0803")),
+    person("Humberto", "Llinas Solano",
+           email = "hllinas@uninorte.edu.co",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-5530-6416"),
+           ),
+    person("Alexander", "Rangel Vizcaino",
+           email = "Alexanderrangel@uninorte.edu.co",
+           role = "aut")
+  )
+Description: A Shiny application designed to support the learning of basic
+    concepts in statistics and probability. The tool provides an interactive
+    interface that allows students to explore and visualize different
+    statistical concepts intuitively, including descriptive statistics for
+    continuous and qualitative variables, and probability distributions.
+License: GPL-3
+Imports: descriptr, DescTools, dplyr, ggplot2, magrittr, mixdist,
+        RColorBrewer, readxl, rlang, shiny, shinyBS, shinydashboard,
+        shinyjs, shinyWidgets, tibble, tidyr, colourpicker, DT, stats
+Suggests: testthat (>= 3.0.0)
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-08 20:37:28 UTC; Javier_de_la_Hoz
+Author: Javier De La Hoz Maestre [cre, aut] (ORCID:
+    <https://orcid.org/0000-0001-7779-0803>),
+  Humberto Llinas Solano [aut] (ORCID:
+    <https://orcid.org/0000-0002-5530-6416>),
+  Alexander Rangel Vizcaino [aut]
+Maintainer: Javier De La Hoz Maestre <jdelahoz@unimagdalena.edu.co>
+Repository: CRAN
+Date/Publication: 2026-06-08 21:00:02 UTC

@@ -1,0 +1,27 @@
+Package: bayesianETAS
+Title: Bayesian Estimation of the Temporal and Spatio-Temporal ETAS
+        Models for Earthquake Occurrences
+Version: 2.0.1
+Depends: R (>= 2.15.0)
+Imports: MASS
+Suggests: testthat (>= 3.0.0)
+Authors@R: person("Gordon J.", "Ross",
+                  email = "gordon@gordonjross.co.uk",
+                  role = c("aut", "cre"))
+Description: The Epidemic Type Aftershock Sequence (ETAS) model is widely
+    used for modelling and forecasting earthquake occurrences. This package
+    implements Bayesian estimation routines for both the temporal and spatial ETAS
+    model, allowing samples to be drawn from the full posterior distribution
+    of the model parameters given an earthquake catalogue. The methods are
+    described in Ross (2021) "Bayesian Estimation of the ETAS Model for
+    Earthquake Occurrences" <doi:10.1785/0120200198>.
+URL: https://doi.org/10.1785/0120200198
+License: GPL-3
+RoxygenNote: 5.0.1
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-05-25 15:58:11 UTC; rosss
+Author: Gordon J. Ross [aut, cre]
+Maintainer: Gordon J. Ross <gordon@gordonjross.co.uk>
+Repository: CRAN
+Date/Publication: 2026-05-25 22:10:02 UTC

@@ -1,0 +1,47 @@
+Type: Package
+Package: duckh3
+Title: H3 Extension of 'DuckDB'
+Version: 0.1.0
+Authors@R: c(
+    person(
+        "Adrián", "Cidre González", 
+        email = "adrian.cidre@gmail.com", 
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-3310-3052")
+    ),
+    person(
+        "Egor", "Kotov", , 
+        "kotov.egor@gmail.com", 
+        role = "aut",
+        comment = c(ORCID = "0000-0001-6690-5345")
+    ),
+    person(
+        "Rafael H. M.", "Pereira", , 
+        "rafa.pereira.br@gmail.com", 
+        role = "aut",
+        comment = c(ORCID = "0000-0003-2125-7465")
+    ))
+Description: Fast & memory-efficient functions to analyze and manipulate large 
+            data sets. It leverages the fast analytical 
+            capabilities of 'DuckDB' and its spatial extension (see <https://duckdb.org/community_extensions/extensions/h3>) 
+            while maintaining compatibility with R’s spatial data ecosystem to 
+            work with spatial vector data.
+URL: https://cidree.github.io/duckh3/, https://github.com/Cidree/duckh3
+BugReports: https://github.com/Cidree/duckh3/issues
+Encoding: UTF-8
+License: GPL (>= 3)
+Imports: cli, DBI, dbplyr, dplyr, duckdb, duckspatial (>= 1.0.0), glue
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Suggests: sf, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-04-22 18:10:08 UTC; Cidre
+Author: Adrián Cidre González [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3310-3052>),
+  Egor Kotov [aut] (ORCID: <https://orcid.org/0000-0001-6690-5345>),
+  Rafael H. M. Pereira [aut] (ORCID:
+    <https://orcid.org/0000-0003-2125-7465>)
+Maintainer: Adrián Cidre González <adrian.cidre@gmail.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-04-24 20:10:10 UTC

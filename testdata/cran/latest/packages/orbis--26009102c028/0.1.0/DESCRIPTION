@@ -1,0 +1,43 @@
+Package: orbis
+Title: Interactive and High-Resolution Layered Graphics with Built-in
+        World Maps
+Version: 0.1.0
+Authors@R: 
+    person("Muhammad", "Farooqi", email = "mqfarooqi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4918-9791"))
+Description: A layered grammar of graphics that compiles plots to a
+    resolution-independent scene description and renders it through two
+    back-ends: a self-contained SVG writer with embedded 'JavaScript' for
+    interactive figures (tooltips, hover highlighting, zoom, pan and legend
+    toggling) and R's own graphics devices for publication-quality output at
+    any resolution. Geographic layers are first class: a simplified world
+    polygon dataset ships with the package and can be drawn with several map
+    projections, including Robinson, Equal Earth and an orthographic globe.
+    The layered grammar follows Wickham (2010) <doi:10.1198/jcgs.2009.07098>;
+    projections follow Snyder (1987) <doi:10.3133/pp1395> and, for Equal Earth,
+    Savric, Patterson and Jenny (2019) <doi:10.1080/13658816.2018.1504949>;
+    line simplification uses Douglas and Peucker (1973)
+    <doi:10.3138/FM57-6770-U75U-7727>; the default colour scales follow the
+    guidance on perceptually uniform palettes of Crameri, Shephard and Heron
+    (2020) <doi:10.1038/s41467-020-19160-7>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 4.1.0)
+Imports: grDevices, grid, stats, utils, htmltools
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, spelling
+VignetteBuilder: knitr
+URL: https://github.com/mqfarooqi1/orbis,
+        https://mqfarooqi1.github.io/orbis/
+BugReports: https://github.com/mqfarooqi1/orbis/issues
+Config/testthat/edition: 3
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-26 11:26:22 UTC; faroo
+Author: Muhammad Farooqi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4918-9791>)
+Maintainer: Muhammad Farooqi <mqfarooqi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 07:40:02 UTC

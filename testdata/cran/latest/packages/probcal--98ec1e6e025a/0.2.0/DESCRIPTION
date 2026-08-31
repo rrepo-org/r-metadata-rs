@@ -1,0 +1,43 @@
+Package: probcal
+Title: Calibration of Binary and Multiclass Probabilities
+Version: 0.2.0
+Authors@R: 
+    person("Pedro Rafael", "Diniz Marinho",
+           email = "pedro.rafael.marinho@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-1591-8300"))
+Description: Provides S3 calibrators, metrics, and diagnostics for binary and
+    multiclass probability calibration. Binary methods include Platt
+    scaling, temperature scaling, beta calibration, histogram binning, and
+    isotonic regression. Multiclass methods include temperature scaling, vector
+    scaling, Dirichlet calibration, and a one-vs-rest wrapper for the binary
+    calibrators. A calibration-inference layer adds debiased calibration errors,
+    bootstrap confidence intervals, and a kernel calibration hypothesis test for
+    binary and multiclass predictions, including the strong (canonical)
+    multiclass case. Methods follow Platt (1999, ISBN:9780262194488), Zadrozny
+    and Elkan (2002) <doi:10.1145/775047.775151>, Guo et al. (2017)
+    <https://proceedings.mlr.press/v70/guo17a.html>, Kull et al. (2017)
+    <doi:10.1214/17-EJS1338SI>, Kull et al. (2019)
+    <doi:10.48550/arXiv.1910.12656>, Widmann et al. (2019)
+    <doi:10.48550/arXiv.1910.11385>, and Kumar et al. (2019)
+    <doi:10.48550/arXiv.1909.10155>.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+Language: en-US
+Imports: cli, ggplot2, stats, withr
+Suggests: betacal, dplyr, knitr, pkgdown, reticulate, rmarkdown,
+        roxygen2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://prdm0.github.io/probcal/,
+        https://github.com/prdm0/probcal/
+BugReports: https://github.com/prdm0/probcal/issues/
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-02 14:42:21 UTC; prdm0
+Author: Pedro Rafael Diniz Marinho [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-1591-8300>)
+Maintainer: Pedro Rafael Diniz Marinho <pedro.rafael.marinho@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-09 09:20:02 UTC

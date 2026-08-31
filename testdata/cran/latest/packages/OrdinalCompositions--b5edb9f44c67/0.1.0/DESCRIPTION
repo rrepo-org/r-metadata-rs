@@ -1,0 +1,28 @@
+Package: OrdinalCompositions
+Type: Package
+Title: Wasserstein-Based Regression for Ordinal Compositional Data
+Version: 0.1.0
+Date: 2026-06-05
+Authors@R: c(person("Nicola", "Piras", role = c("aut", "cre"),
+                     email = "nicola.piras97@unica.it"),
+              person("Monica", "Musio", role = c("aut"),
+                     email = "monica.musio@unica.it"),
+              person("Beniamino", "Cappelletti-Montano", role = c("aut"),
+                     email = "beniamino.cappellettimontano@unica.it"))
+Maintainer: Nicola Piras <nicola.piras97@unica.it>
+Description: Tools analyzing regression models for ordinal compositional data using Wasserstein-based distances. The package includes linear programming solvers under simplex constraints, tensor product constructions and performance metrics.
+Depends: R (>= 3.5.0)
+Imports: lpSolveAPI, stats, extraDistr
+Suggests: codalm, knitr, rmarkdown
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2026-06-13 09:40:49 UTC; nicol
+Author: Nicola Piras [aut, cre],
+  Monica Musio [aut],
+  Beniamino Cappelletti-Montano [aut]
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+LazyData: true
+Repository: CRAN
+Date/Publication: 2026-06-19 15:50:18 UTC

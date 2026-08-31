@@ -1,0 +1,43 @@
+Package: REDCapSync
+Title: Encapsulated 'REDCap' Projects for Synchronized Data Pipelines
+Version: 0.1.1
+Authors@R: c(
+    person("Brandon", "Rose", , "thecodingdocs@gmail.com", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0009-0009-7813-1960")),
+    person("Natalie", "Goulett", role = "ctb")
+  )
+Description: Wraps dozens of 'REDCap' API endpoints into a standardized R6
+    object.  Research Electronic Data Capture ('REDCap') is a survey and
+    database web application software maintained by Vanderbilt University.
+    It has a robust application programming interface (API) utilized by
+    several R packages. 'REDCapSync' uses 'redcapAPI' and 'REDCapR'
+    behind-the-scenes to retrieve all metadata, data, and log details for
+    a project. To minimize unnecessary server calls, the interim 'REDCap'
+    log is analyzed and used to only update necessary records.
+    Furthermore, the user can define custom datasets that save to a
+    directory. Those datasets continue to refresh when projects are
+    synced.  Having a secure, standardized, API-efficient,
+    project-agnostic R object for 'REDCap' projects, streamlines
+    downstream use in scripts, functions, and shiny applications.
+License: GPL (>= 3)
+URL: https://github.com/thecodingdocs/REDCapSync,
+        https://thecodingdocs.github.io/REDCapSync/
+BugReports: https://github.com/thecodingdocs/REDCapSync/issues
+Depends: R (>= 4.1)
+Imports: checkmate, cli, dplyr, hoardr, lubridate, openxlsx2, R6,
+        readxl, redcapAPI, REDCapR, skimr, stats, stringr, tools, utils
+Suggests: keyring, knitr, listviewer, rmarkdown, spelling, testthat (>=
+        3.3.0), withr
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-09 00:31:14 UTC; brandonrose
+Author: Brandon Rose [cre, aut, cph] (ORCID:
+    <https://orcid.org/0009-0009-7813-1960>),
+  Natalie Goulett [ctb]
+Maintainer: Brandon Rose <thecodingdocs@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-09 14:10:02 UTC

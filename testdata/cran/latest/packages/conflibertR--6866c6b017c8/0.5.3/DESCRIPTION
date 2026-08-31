@@ -1,0 +1,35 @@
+Package: conflibertR
+Title: Inference and Fine-Tuning with 'ConfliBERT' Conflict Text Models
+Version: 0.5.3
+Authors@R: person("Shreyas", "Meher", email = "shreyasmeher@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9656-4374"))
+Description: An interface to 'ConfliBERT', a pretrained language model for
+    analyzing text about conflict and political violence (Hu et al. (2022)
+    <doi:10.18653/v1/2022.naacl-main.400>). Provides functions for named
+    entity recognition, binary and multilabel classification, and question
+    answering, plus tools to fine-tune custom classifiers, compare several
+    base model architectures, and run an interactive active-learning loop
+    for efficiently labeling new data. Models are downloaded from
+    'Hugging Face' and run through the 'transformers' library for 'Python'
+    via the 'reticulate' package.
+License: MIT + file LICENSE
+URL: https://github.com/shreyasmeher/conflibertR
+BugReports: https://github.com/shreyasmeher/conflibertR/issues
+Encoding: UTF-8
+Language: en
+RoxygenNote: 7.3.2
+SystemRequirements: Python (>= 3.8); the Python modules 'torch',
+        'transformers' (>= 4.40), 'accelerate', 'peft', 'scikit-learn'
+        and 'numpy', installable via conflibert_install()
+Imports: cli, reticulate (>= 1.34), tibble
+Suggests: ggplot2, knitr, miniUI, rmarkdown, rstudioapi, shiny,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-03 19:19:22 UTC; apple
+Author: Shreyas Meher [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9656-4374>)
+Maintainer: Shreyas Meher <shreyasmeher@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-10 20:40:09 UTC

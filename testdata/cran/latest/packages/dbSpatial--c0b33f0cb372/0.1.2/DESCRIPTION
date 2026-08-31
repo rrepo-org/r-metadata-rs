@@ -1,0 +1,47 @@
+Package: dbSpatial
+Title: Spatial Data Operations for Database-Backed Geometries
+Version: 0.1.2
+Authors@R: 
+    c(person("Edward", "C. Ruiz", , "ecr7407@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9174-5387")),
+    person("Jiaji", "George Chen", email = "jiajic@bu.edu", role = c("aut")),
+    person("Ruben", "Dries", email = "rubendries@gmail.com",role = c("aut", "rev")))
+Description: Provides database-backed spatial geometry classes and methods for
+    working with vector spatial data in 'DuckDB'. The package supports loading,
+    converting, querying, joining, and measuring spatial geometries through
+    familiar 'sf'-style interfaces while keeping geometry columns lazy inside
+    the database. It integrates with 'dbProject' to preserve database paths,
+    live connections, and spatial table metadata across interactive sessions.
+    The package follows the Simple Features framework described by Pebesma
+    (2018) <doi:10.32614/RJ-2018-009> and uses DuckDB's spatial extension
+    <https://duckdb.org/docs/stable/core_extensions/spatial/overview.html>.
+License: GPL-3 | MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: methods, tools, DBI, duckdb (>= 1.4.0), dplyr, dbplyr, terra,
+        sf, e1071, lifecycle, crayon, checkmate, cli, rlang, glue,
+        tidyselect, dbProject
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/dbverse-org/dbspatial-r,
+        https://dbverse-org.github.io/dbspatial-r/
+BugReports: https://github.com/dbverse-org/dbspatial-r/issues
+Config/testthat/edition: 3
+Collate: 'utils.R' 'generics.R' 'classes.R' 'accessors.R'
+        'as_dbSpatial.R' 'coerce.R' 'constructors.R' 'dbSpatial.R'
+        'extract.R' 'geometry_ops.R' 'global.R' 'imports.R'
+        'input_validation.R' 'loadSpatial.R' 'measurements.R' 'show.R'
+        'sim_dbSpatial.R' 'sql_gen.R' 'st_as_sf.R' 'st_bbox.R'
+        'st_geometry_type.R' 'st_geometrytype.R' 'st_is_valid.R'
+        'st_spatial_join.R' 'st_join.R' 'st_read.R' 'st_translate.R'
+        'st_xmax.R' 'st_ymax.R' 'vect.R'
+NeedsCompilation: no
+Packaged: 2026-06-23 15:23:35 UTC; user
+Author: Edward C. Ruiz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9174-5387>),
+  Jiaji George Chen [aut],
+  Ruben Dries [aut, rev]
+Maintainer: Edward C. Ruiz <ecr7407@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-23 16:00:08 UTC

@@ -1,0 +1,61 @@
+Package: MAARTS
+Type: Package
+Title: Merger and Acquisition Autoregressive Time-Series Models
+Version: 1.0.0
+Authors@R: c(
+    person("Shikhar", "Tyagi",
+        email = "shikhar1093tyagi@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Mohd", "Mudassir",
+        email = "mudassir94stats@gmail.com",
+        role = "aut"),
+    person("Vrijesh", "Tripathi",
+        email = "vrijesh.tripathi@uwi.edu",
+        role = "aut"))
+Description: Implements comprehensive Merger and Acquisition ('M&A')
+    Autoregressive ('AR') time-series models with full statistical analysis
+    capabilities. The package provides parameter estimation, forecasting
+    with confidence intervals (80%, 90%, 95%, 99%), descriptive statistics,
+    stationarity tests (Augmented Dickey-Fuller ('ADF'), Phillips-Perron,
+    Kwiatkowski-Phillips-Schmidt-Shin ('KPSS'),
+    Dickey-Fuller Generalized Least Squares ('DF-GLS')), autocorrelation
+    analysis (Autocorrelation Function ('ACF'),
+    Partial Autocorrelation Function ('PACF')), model diagnostics
+    (Ljung-Box, Box-Pierce), accuracy measures
+    (Mean Squared Error ('MSE'), Mean Absolute Error ('MAE'),
+    Mean Absolute Scaled Error ('MASE'),
+    Root Mean Squared Error ('RMSE'),
+    Symmetric Mean Absolute Percentage Error ('SMAPE'), F-statistic),
+    residual diagnostics (normality tests, heteroscedasticity tests),
+    model stability analysis, impulse response, information criteria
+    (Akaike Information Criterion ('AIC'),
+    Bayesian Information Criterion ('BIC'),
+    Hannan-Quinn Information Criterion ('HQIC')),
+    structural break analysis, spectral analysis, and Monte Carlo simulation.
+    Models are based on:
+    Kumar, Mudassir, and Agiwal (2024)
+    <https://ph02.tci-thaijo.org/index.php/thaistat/article/view/253436>,
+    Kumar, Mudassir, and Srivastava (2025) <doi:10.1007/s44199-025-00104-3>,
+    Kumar and Mudassir (2025) <doi:10.19139/soic-2310-5070-2029>.
+License: GPL-3
+Depends: R (>= 4.0.0)
+Imports: forecast, tseries, urca, stats, graphics, grDevices, utils,
+        lmtest, sandwich, nortest, moments, strucchange, ggplot2,
+        gridExtra, MASS, numDeriv
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-17 15:09:00 UTC; 30017827
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Mohd Mudassir [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-26 11:00:02 UTC

@@ -1,0 +1,29 @@
+Package: MVSKmod
+Type: Package
+Title: Matrix-Variate Skew Linear Regression Models
+Version: 0.1.0
+Authors@R: 
+    c(person("Samuel", "Soon", , "samksoon2@gmail.com", role = c("aut", "cre"),
+           comment = c()),
+           person("Dipankar", "Bandyopadhyay", , "dbandyop@vcu.edu", role = c("aut"),
+           comment = c()),
+           person("Qingyang", "Liu", , "qliu432@wisc.edu", role = c("aut"),
+           comment = c()))           
+Maintainer: Samuel Soon <samksoon2@gmail.com>
+Description: An implementation of the alternating expectation conditional maximization (AECM) algorithm for matrix-variate variance gamma (MVVG) and normal-inverse Gaussian (MVNIG) linear models. These models are designed for settings of multivariate analysis with clustered non-uniform observations and correlated responses. The package includes fitting and prediction functions for both models, and an example dataset from a periodontal on Gullah-speaking African Americans, with responses in gaad_res, and covariates in gaad_cov. For more details on the matrix-variate distributions used, see Gallaugher & McNicholas (2019) <doi:10.1016/j.spl.2018.08.012>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports: Bessel, clusterGeneration, DistributionUtils, matlib, maxLik,
+        truncnorm, pracma
+URL: https://github.com/soonsk-vcu/MVSKmod
+BugReports: https://github.com/soonsk-vcu/MVSKmod/issues
+NeedsCompilation: no
+Packaged: 2025-05-07 19:56:27 UTC; soonsk
+Author: Samuel Soon [aut, cre],
+  Dipankar Bandyopadhyay [aut],
+  Qingyang Liu [aut]
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-05-09 14:10:13 UTC

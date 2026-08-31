@@ -1,0 +1,47 @@
+Package: RJSONIO
+Version: 2.0.5
+Title: Serialize R Objects to JSON
+Description: Converts R objects to and from JavaScript Object Notation
+  (JSON). The package provides a stable interface for reading JSON from
+  strings, files, and connections, and for serializing common R objects,
+  including vectors, lists, data frames, arrays, environments, and S4
+  objects. It also exposes parser handlers, callbacks, and S4 methods for
+  applications that need customized JSON processing while preserving
+  established RJSONIO behavior.
+Note: See http://www.json.org/JSON_checker/test.zip for tests. We now
+        use code from the libjson project
+        (http://libjson.sourceforge.net).
+License: BSD_3_clause + file LICENSE
+URL: https://yaoxiangli.github.io/RJSONIO/,
+        https://github.com/YaoxiangLi/RJSONIO
+BugReports: https://github.com/YaoxiangLi/RJSONIO/issues
+Imports: methods
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Authors@R: c(person("Yaoxiang Li", role = c("aut", 'ctb', 'cre'),
+                    email = "liyaoxiang@outlook.com",
+                    comment = c(ORCID = "0000-0001-9200-1016")),
+             person("CRAN Team", role = "aut",
+                    email = "CRAN@r-project.org"),
+             person("Duncan", "Temple Lang", role = "aut",
+                    email = "duncan@r-project.org",
+	                  comment = c(ORCID = "0000-0003-0159-1546")),
+      	     person("Jonathan", "Wallace", role = "aut",
+      	            comment = "aka ninja9578, author of included libjson sources"))
+Collate: readJSON.R asVars.R isValid.R json.R simpleHandler.R stream.R
+Biarch: true
+NeedsCompilation: yes
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Packaged: 2026-05-15 00:56:18 UTC; Bach
+Author: Yaoxiang Li [aut, ctb, cre] (ORCID:
+    <https://orcid.org/0000-0001-9200-1016>),
+  CRAN Team [aut],
+  Duncan Temple Lang [aut] (ORCID:
+    <https://orcid.org/0000-0003-0159-1546>),
+  Jonathan Wallace [aut] (aka ninja9578, author of included libjson
+    sources)
+Maintainer: Yaoxiang Li <liyaoxiang@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-05-15 09:00:02 UTC

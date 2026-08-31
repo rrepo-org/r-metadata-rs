@@ -1,0 +1,23 @@
+Package: PoweREST
+Title: A Bootstrap-Based Power Estimation Tool for Spatial
+        Transcriptomics
+Version: 0.1.2
+Imports: scam, dplyr, resample, xgboost, magrittr, ggplot2
+Suggests: patchwork, boot, fields, rayrender, tidyr, plotly, rayshader,
+        Seurat, knitr, rmarkdown
+Author: Lan Shui [aut, cre] (ORCID: <https://orcid.org/0000-0002-2719-842X>)
+Maintainer: Lan Shui <Lan.Shui@uth.tmc.edu>
+Authors@R: 
+    person("Lan", "Shui", , "Lan.Shui@uth.tmc.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2719-842X"))
+Description: Power estimation and sample size calculation for 10X Visium Spatial Transcriptomics data to detect differential expressed genes between two conditions based on bootstrap resampling. See Shui et al. (2025) <doi:10.1371/journal.pcbi.1013293> for method details.
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-12-07 03:12:22 UTC; shuilan
+Repository: CRAN
+Date/Publication: 2025-12-09 12:00:07 UTC

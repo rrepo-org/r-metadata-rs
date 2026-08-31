@@ -1,0 +1,26 @@
+Package: ncdfgeom
+Type: Package
+Title: 'NetCDF' Geometry and Time Series
+Version: 1.2.2
+Authors@R: c(person("David", "Blodgett", role = c("aut", "cre"), 
+                    email = "dblodgett@usgs.gov"),
+             person("Luke", "Winslow", role = "ctb"))
+Description: Tools to create time series and geometry 'NetCDF' files.
+URL: https://code.usgs.gov/water/ncdfgeom
+BugReports: https://github.com/DOI-USGS/ncdfgeom/issues
+Imports: RNetCDF, ncmeta, sf, dplyr, methods, stars, areal
+Depends: R (>= 3.5)
+Suggests: testthat, knitr, rmarkdown, pkgdown, jsonlite, zip, ncdf4,
+        nhdplusTools
+License: CC0
+Encoding: UTF-8
+Language: en-US
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-21 15:06:49 UTC; dblodgett
+Author: David Blodgett [aut, cre],
+  Luke Winslow [ctb]
+Maintainer: David Blodgett <dblodgett@usgs.gov>
+Repository: CRAN
+Date/Publication: 2026-04-22 05:50:02 UTC

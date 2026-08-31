@@ -1,0 +1,28 @@
+Package: jirar
+Title: Modern R Client for the Jira REST API
+Version: 0.1.0
+Authors@R: 
+    person("Jan-Hendrik", "Weinert", , "janhendrikweinert@gmail.com", role = c("aut", "cre"))
+Description: A modern, tidy interface to the Jira REST API for both Jira
+    Cloud and Jira Server / Data Center. Authenticate once, query issues
+    with the Jira Query Language (JQL), and retrieve projects, fields,
+    dashboards and more as tibbles. Built on 'httr2' with automatic
+    pagination, informative errors and support for API tokens and personal
+    access tokens.
+License: MIT + file LICENSE
+URL: https://github.com/JanWein/jirar
+BugReports: https://github.com/JanWein/jirar/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 8.0.0
+Suggests: dplyr, jsonlite, knitr, rmarkdown, spelling, testthat (>=
+        3.0.0), withr
+Config/testthat/edition: 3
+Imports: cli, httr2 (>= 1.0.0), rlang, tibble, vctrs
+Depends: R (>= 4.1)
+NeedsCompilation: no
+Packaged: 2026-06-17 08:37:04 UTC; 1003177
+Author: Jan-Hendrik Weinert [aut, cre]
+Maintainer: Jan-Hendrik Weinert <janhendrikweinert@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-22 15:00:17 UTC

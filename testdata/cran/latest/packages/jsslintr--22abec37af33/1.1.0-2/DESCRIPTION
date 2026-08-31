@@ -1,0 +1,36 @@
+Package: jsslintr
+Type: Package
+Title: JSS 'LaTeX'/'BibTeX' Style Checker
+Version: 1.1.0-2
+Authors@R: c(
+    person("Manuel", "Koller", role = c("aut", "cre"), email = "kollerma@proton.me",
+        comment = c(ORCID = "0000-0002-4159-922X")),
+    person("The authors of the vendored 'Rust' crates", role = "cph",
+        comment = "see inst/AUTHORS for details"))
+Description: Lints 'LaTeX'/'BibTeX' manuscripts against the Journal of Statistical
+    Software (JSS) style guide. Wraps the same 'Rust' rule engine used by the
+    standalone 'jsslint' binary, the browser/'WASM' build, and the 'Python'
+    binding, exposed to R via 'extendr'.
+License: MIT + file LICENSE
+Copyright: See the file inst/AUTHORS for the authors and copyright
+        holders of the vendored 'Rust' dependency crates.
+Encoding: UTF-8
+URL: https://github.com/kollerma/jss-style-checker,
+        https://kollerma.github.io/jss-style-checker/
+BugReports: https://github.com/kollerma/jss-style-checker/issues
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.85
+Depends: R (>= 4.2)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/rextendr/version: 0.3.1
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-29 15:18:27 UTC; kollerma
+Author: Manuel Koller [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4159-922X>),
+  The authors of the vendored 'Rust' crates [cph] (see inst/AUTHORS for
+    details)
+Maintainer: Manuel Koller <kollerma@proton.me>
+Repository: CRAN
+Date/Publication: 2026-07-29 22:00:02 UTC

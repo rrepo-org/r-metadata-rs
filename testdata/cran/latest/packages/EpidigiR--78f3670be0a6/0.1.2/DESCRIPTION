@@ -1,0 +1,27 @@
+Package: EpidigiR
+Type: Package
+Title: Digital Epidemiological Analysis and Visualization Tools
+Version: 0.1.2
+Authors@R: 
+    person(given = "Esther Atsabina",
+           family = "Wanjala",
+           email = "digitalepidemiologist23@gmail.com",
+           role = c("aut", "cre"))
+Description: Integrates methods for epidemiological analysis, modeling, and visualization, including functions for summary statistics, SIR (Susceptible-Infectious-Recovered) modeling, DALY (Disability-Adjusted Life Years) estimation, age standardization, diagnostic test evaluation, NLP (Natural Language Processing) keyword extraction, clinical trial power analysis, survival analysis, SNP (Single Nucleotide Polymorphism) association, and machine learning methods such as logistic regression, k-means clustering, Random Forest, and Support Vector Machine (SVM). Includes datasets for prevalence estimation, SIR modeling, genomic analysis, clinical trials, DALY, diagnostic tests, and survival analysis. Methods are based on Gelman et al. (2013) <doi:10.1201/b16018> and Wickham et al. (2019, ISBN:9781492052040>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0.0)
+Imports: deSolve, sp, tm, glmnet, caret, survival
+Suggests: kernlab, randomForest, stats, knitr, rmarkdown, quarto,
+        usethis, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Author: Esther Atsabina Wanjala [aut, cre]
+Maintainer: Esther Atsabina Wanjala <digitalepidemiologist23@gmail.com>
+Packaged: 2025-11-03 07:06:11 UTC; atsab
+Repository: CRAN
+Date/Publication: 2025-11-05 20:30:13 UTC

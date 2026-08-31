@@ -1,0 +1,22 @@
+Package: ppweibull
+Type: Package
+Title: Piecewise Lifetime Models
+Version: 1.0
+Date: 2026-02-02
+Authors@R: c(person("Diego", "Gallardo", role = c("aut","cre"), email = "dgallardo@ubiobio.cl"),
+	person("Yolanda","Gomez", role=c("aut"), email="ygomez@ubiobio.cl"),
+	person("Hector","Gomez", role=c("aut"), email="hgomez@uantof.cl"),
+	person("Barry","Arnold", role=c("aut"), email="barnold@ucr.edu"))
+Maintainer: Diego Gallardo <dgallardo@ubiobio.cl>
+Description: Provides functions for estimation and data generation for several piecewise lifetime  distributions. The package implements the power piecewise Weibull model, which includes the piecewise Rayleigh and piecewise exponential models as special cases. See Feigl and Zelen (1965) <doi:10.2307/2528247> for methodological details.
+Depends: R (>= 4.0.0), stats
+Imports: survival, pracma, segmented, msm, nloptr
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2026-02-02 03:12:31 UTC; Diego
+Author: Diego Gallardo [aut, cre],
+  Yolanda Gomez [aut],
+  Hector Gomez [aut],
+  Barry Arnold [aut]
+Repository: CRAN
+Date/Publication: 2026-02-04 18:10:02 UTC

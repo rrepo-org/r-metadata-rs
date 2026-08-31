@@ -1,0 +1,31 @@
+Package: fastFMM
+Type: Package
+Title: Fast Functional Mixed Models using Fast Univariate Inference
+Version: 1.0.1
+Date: 2026-05-17
+Authors@R: c(
+    person("Erjia", "Cui", role = c("aut"), email = "ecui@umn.edu"),
+    person("Gabriel", "Loewinger", role = "aut", email = "gloewinger@gmail.com"),
+    person("Al", "Xin", role = c("aut", "cre"), email = "axin@andrew.cmu.edu"))
+Description: Implementation of the fast univariate inference approach (Cui et al. (2022) <doi:10.1080/10618600.2021.1950006>, Loewinger et al. (2024) <doi:10.7554/eLife.95802.2>, Xin et al. (2025) <doi:10.7554/eLife.109428.1>) for fitting functional mixed models. User guides and Python package information can be found at <https://github.com/gloewing/photometry_FLMM>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Repository: CRAN
+Imports: dplyr, lme4, parallel, cAIC4, magrittr, mgcv, MASS, lsei,
+        refund, stringr, Matrix, mvtnorm, progress, ggplot2, gridExtra,
+        Rfast, lmeresampler, stats, methods
+URL: https://github.com/awqx/fastFMM
+BugReports: https://github.com/awqx/fastFMM/issues
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, spelling
+Language: en-US
+Depends: R (>= 3.5)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-18 02:03:19 UTC; axin
+Author: Erjia Cui [aut],
+  Gabriel Loewinger [aut],
+  Al Xin [aut, cre]
+Maintainer: Al Xin <axin@andrew.cmu.edu>
+Date/Publication: 2026-05-18 08:20:07 UTC

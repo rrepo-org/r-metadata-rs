@@ -1,0 +1,36 @@
+Package: ANN2
+Type: Package
+Title: Artificial Neural Networks for Anomaly Detection
+Version: 2.4.0
+Date: 2025-10-09
+Authors@R: person(given = "Bart",
+                  family = "Lammers",
+                  role = c("aut", "cre"),
+                  email = "bart.f.lammers@gmail.com")
+Maintainer: Bart Lammers <bart.f.lammers@gmail.com>
+Description: Training of neural networks for classification and regression tasks
+    using mini-batch gradient descent. Special features include a function for 
+    training autoencoders, which can be used to detect anomalies, and some 
+    related plotting functions. Multiple activation functions are supported, 
+    including tanh, relu, step and ramp. For the use of the step and ramp 
+    activation functions in detecting anomalies using autoencoders, see 
+    Hawkins et al. (2002) <doi:10.1007/3-540-46145-0_17>. Furthermore, 
+    several loss functions are supported, including robust ones such as Huber 
+    and pseudo-Huber loss, as well as L1 and L2 regularization. The possible 
+    options for optimization algorithms are RMSprop, Adam and SGD with momentum.
+    The package contains a vectorized C++ implementation that facilitates 
+    fast training through mini-batch learning.
+License: GPL (>= 3) | file LICENSE
+URL: https://github.com/bflammers/ANN2
+Encoding: UTF-8
+SystemRequirements: C++17
+Imports: Rcpp (>= 1.1.0), reshape2 (>= 1.4.4), ggplot2 (>= 4.0.0),
+        viridisLite (>= 0.4.2), methods, rlang
+LinkingTo: Rcpp, RcppArmadillo, testthat
+Suggests: testthat
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-10-09 19:05:32 UTC; bartlammers
+Author: Bart Lammers [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-10-09 23:10:06 UTC

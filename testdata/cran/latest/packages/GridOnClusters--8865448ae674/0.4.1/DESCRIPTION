@@ -1,0 +1,44 @@
+Package: GridOnClusters
+Type: Package
+Title: Cluster-Preserving Multivariate Joint Grid Discretization
+Version: 0.4.1
+Date: 2026-07-18
+Depends: R (>= 3.5.0)
+Authors@R: 
+    c(person(given = "Jiandong",
+             family = "Wang",
+             role = "aut",
+             email = "wangjd24@nmsu.edu",
+             comment = c(ORCID = "0009-0006-2040-7870")),
+      person(given = "Sajal",
+             family = "Kumar",
+             role = "aut",
+             email = "sajal49@nmsu.edu",
+             comment = c(ORCID = "0000-0003-0930-1582")),
+      person(given = "Joe",
+             family = "Song",
+             role = c("aut", "cre"),
+             email = "joemsong@nmsu.edu",
+             comment = c(ORCID = "0000-0002-6883-6547")))
+Author: Jiandong Wang [aut] (ORCID: <https://orcid.org/0009-0006-2040-7870>),
+  Sajal Kumar [aut] (ORCID: <https://orcid.org/0000-0003-0930-1582>),
+  Joe Song [aut, cre] (ORCID: <https://orcid.org/0000-0002-6883-6547>)
+Maintainer: Joe Song <joemsong@nmsu.edu>
+Description: Discretize multivariate continuous data using a grid to capture the 
+ joint distribution that preserves clusters in original data (Wang et al 2020) 
+ <doi:10.1145/3388440.3412415>. It can handle both labeled or unlabeled data. 
+ Joint grid discretization can prepare data for model-free inference of 
+ association, function, or causality.
+Imports: Rcpp, Ckmeans.1d.dp, cluster, fossil, dqrng, mclust, Rdpack,
+        plotrix
+Suggests: FunChisq, knitr, testthat (>= 2.1.0), rmarkdown
+RdMacros: Rdpack
+License: LGPL (>= 3)
+Encoding: UTF-8
+LinkingTo: BH, Rcpp, RcppArmadillo
+NeedsCompilation: yes
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-18 12:05:55 UTC; joesong
+Repository: CRAN
+Date/Publication: 2026-07-18 12:40:02 UTC

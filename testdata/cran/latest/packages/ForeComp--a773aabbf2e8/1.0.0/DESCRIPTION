@@ -1,0 +1,45 @@
+Package: ForeComp
+Type: Package
+Title: Size-Power Tradeoff Visualization for Equal Predictive Ability
+        of Two Forecasts
+Version: 1.0.0
+Author: Nathan Schor [aut],
+  Minchul Shin [aut, cre, cph]
+Maintainer: Minchul Shin <visiblehand@gmail.com>
+Authors@R: c(
+    person("Nathan", "Schor", role = "aut"),
+    person("Minchul", "Shin",
+           email = "visiblehand@gmail.com",
+           role = c("aut", "cre", "cph"))
+    )
+Description: Offers tools for visualizing and analyzing size and power properties
+    of tests for equal predictive accuracy, including Diebold-Mariano and
+    related procedures. Provides multiple Diebold-Mariano test implementations
+    based on fixed-smoothing approaches, including fixed-b methods such as
+    Kiefer and Vogelsang (2005) <doi:10.1017/S0266466605050565>, and
+    applications to tests for equal predictive accuracy as in Coroneo and
+    Iacone (2020) <doi:10.1002/jae.2756>, alongside conventional large-sample
+    approximations. HAR inference involves
+    nonparametric estimation of the long-run variance, and a key tuning
+    parameter (the truncation parameter) trades off size and power. Lazarus,
+    Lewis, and Stock (2021) <doi:10.3982/ECTA15404> theoretically characterize
+    the size-power frontier for the Gaussian multivariate location model.
+    'ForeComp' computes and visualizes the finite-sample size-power frontier of
+    the Diebold-Mariano test based on fixed-b asymptotics together with the
+    Bartlett kernel. To compute finite-sample size and power, it fits a best
+    approximating ARMA process to the input data and reports how the truncation
+    parameter performs and how robust testing outcomes are to its choice.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/mcmcs/ForeComp
+BugReports: https://github.com/mcmcs/ForeComp/issues
+LazyData: true
+Depends: R (>= 3.5.0), stats
+Imports: forecast, astsa, ggplot2, rlang
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-20 15:14:00 UTC; mcs
+Repository: CRAN
+Date/Publication: 2026-02-20 15:40:07 UTC

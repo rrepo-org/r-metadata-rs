@@ -1,0 +1,34 @@
+Package: ICSShiny
+Type: Package
+Title: ICS via a Shiny Application
+Version: 0.6
+Date: 2025-03-26
+Author: Aurore Archimbaud [aut] (<https://orcid.org/0000-0002-6511-9091>),
+  Joris May [aut],
+  Klaus Nordhausen [aut, cre] (<https://orcid.org/0000-0002-3758-8501>),
+  Anne Ruiz-Gazen [aut] (<https://orcid.org/0000-0001-8970-8061>)
+Authors@R: 
+    c(person("Aurore", "Archimbaud", 
+             email = "aurore.archimbaud@live.fr", 
+             role = "aut",
+             comment = c(ORCID = "0000-0002-6511-9091")),
+      person("Joris", "May", 
+             role = "aut"),
+      person("Klaus", "Nordhausen", 
+             email = "klausnordhausenR@gmail.com",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-3758-8501")),
+      person("Anne", "Ruiz-Gazen", 
+             email = "anne.ruiz-gazen@tse-fr.eu",
+             role = "aut", 
+             comment = c(ORCID = "0000-0001-8970-8061")))
+Maintainer: Klaus Nordhausen <klausnordhausenR@gmail.com>
+Description: Performs Invariant Coordinate Selection (ICS) (Tyler, Critchley, Duembgen and Oja (2009) <doi:10.1111/j.1467-9868.2009.00706.x>) and especially ICS for multivariate outlier detection with application to quality control (Archimbaud, Nordhausen, Ruiz-Gazen (2018) <doi:10.1016/j.csda.2018.06.011>) using a shiny app.
+License: GPL (>= 2)
+Depends: ICS, ICSOutlier, shiny
+Imports: ICSNP, rrcov, simsalapar, DT
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-03-26 20:42:17 UTC; nordklau
+Repository: CRAN
+Date/Publication: 2025-03-27 11:40:10 UTC

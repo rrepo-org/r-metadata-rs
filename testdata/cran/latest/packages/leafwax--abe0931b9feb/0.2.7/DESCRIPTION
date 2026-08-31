@@ -1,0 +1,37 @@
+Package: leafwax
+Title: Bayesian Inversion of Leaf Wax Hydrogen Isotopes to
+        Precipitation
+Version: 0.2.7
+Authors@R: 
+    person("Alex", "Bradley", , "abradley@wustl.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4044-2802"))
+Description: Bayesian inversion of leaf wax hydrogen isotopes to reconstruct
+    precipitation isotopes using hierarchical spatial models. Provides
+    fourteen Bayesian models that vary in their use of spatial Gaussian
+    processes and ancillary covariates (precipitation amount, plant functional
+    type, C4 fraction). Models are pre-computed using 'Stan' and stored as
+    posterior distributions, so prediction does not require 'Stan' to be
+    installed. A 100-draw fixture ships with the package; full 1000-draw
+    posteriors are downloaded from a versioned 'Zenodo' deposit on first use;
+    see Bradley (2026) <doi:10.5281/zenodo.20085465>.
+License: MIT + file LICENSE
+URL: https://github.com/bradleylab/leafwax,
+        https://bradleylab.github.io/leafwax/
+BugReports: https://github.com/bradleylab/leafwax/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: jsonlite, stats, utils
+Suggests: rappdirs, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+LazyData: true
+LazyDataCompression: xz
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-01 17:49:57 UTC; abradley
+Author: Alex Bradley [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4044-2802>)
+Maintainer: Alex Bradley <abradley@wustl.edu>
+Repository: CRAN
+Date/Publication: 2026-06-15 13:40:02 UTC

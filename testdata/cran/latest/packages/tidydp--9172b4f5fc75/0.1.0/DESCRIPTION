@@ -1,0 +1,26 @@
+Package: tidydp
+Type: Package
+Title: Tidy Differential Privacy
+Version: 0.1.0
+Authors@R: person("Thomas", "Tarler", email = "ttarler@gmail.com",
+                  role = c("aut", "cre"))
+Description: A tidy-style interface for applying differential privacy to data frames.
+    Provides pipe-friendly functions to add calibrated noise, compute private statistics,
+    and track privacy budgets using the epsilon-delta differential privacy framework.
+    Implements the Laplace mechanism (Dwork et al. 2006 <doi:10.1007/11681878_14>) and
+    the Gaussian mechanism for achieving differential privacy as described in Dwork and
+    Roth (2014) <doi:10.1561/0400000042>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: magrittr, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/ttarler/tidydp
+BugReports: https://github.com/ttarler/tidydp/issues
+NeedsCompilation: no
+Packaged: 2025-11-23 17:20:57 UTC; ttarler
+Author: Thomas Tarler [aut, cre]
+Maintainer: Thomas Tarler <ttarler@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-27 19:00:02 UTC

@@ -1,0 +1,29 @@
+Package: CoxBoost
+Title: Cox Models by Likelihood Based Boosting for a Single Survival
+        Endpoint or Competing Risks
+Version: 1.5.1
+Authors@R: c(
+    person("John", "Zobolas", , "bblodfon@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-3609-8674")),
+    person("Harald", "Binder", , "harald.binder@uniklinik-freiburg.de", role = "aut",
+           comment = c(ORCID = "0000-0002-5666-8662"))
+  )
+Description: Provides routines for fitting Cox models by likelihood based
+    boosting for single event survival data with right censoring or in the
+    presence of competing risks. The methodology is described in Binder
+    and Schumacher (2008) <doi:10.1186/1471-2105-9-14> and Binder et al.
+    (2009) <doi:10.1093/bioinformatics/btp088>.
+License: MIT + file LICENSE
+Depends: R (>= 3.6.0)
+Imports: Matrix, survival
+Suggests: parallel, prodlim, snowfall
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-12-06 01:25:35 UTC; john
+Author: John Zobolas [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-3609-8674>),
+  Harald Binder [aut] (ORCID: <https://orcid.org/0000-0002-5666-8662>)
+Maintainer: John Zobolas <bblodfon@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-11 13:30:24 UTC

@@ -1,0 +1,33 @@
+Package: future.batchtools
+Version: 0.22.0
+Depends: R (>= 3.2.0), future (>= 1.58.0)
+Imports: parallelly, batchtools (>= 0.9.17), utils, checkmate, stringi
+Suggests: globals, future.apply, listenv, markdown, R.rsp
+VignetteBuilder: R.rsp
+Title: A Future API for Parallel and Distributed Processing using
+        'batchtools'
+Authors@R: c(person("Henrik", "Bengtsson",
+                    role = c("aut", "cre", "cph"),
+                    email = "henrikb@braju.com",
+                    comment = c(ORCID = "0000-0002-7579-5165")))
+Description: Implementation of the Future API <doi:10.32614/RJ-2021-048> on top of the 'batchtools' package.
+    This allows you to process futures, as defined by the 'future' package,
+    in parallel out of the box, not only on your local machine or ad-hoc
+    cluster of machines, but also via high-performance compute ('HPC') job
+    schedulers such as 'LSF', 'OpenLava', 'Slurm', 'SGE', and 'TORQUE' / 'PBS',
+    e.g. 'y <- future.apply::future_lapply(files, FUN = process)'.
+License: LGPL (>= 2.1)
+LazyLoad: TRUE
+URL: https://future.batchtools.futureverse.org,
+        https://github.com/futureverse/future.batchtools
+BugReports: https://github.com/futureverse/future.batchtools/issues
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-24 21:21:01 UTC; hb
+Author: Henrik Bengtsson [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-7579-5165>)
+Maintainer: Henrik Bengtsson <henrikb@braju.com>
+Repository: CRAN
+Date/Publication: 2026-04-24 23:00:02 UTC

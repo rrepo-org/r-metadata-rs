@@ -1,0 +1,35 @@
+Package: cdnbcr
+Type: Package
+Title: Correlated Destructive Negative Binomial Cure Rate Model
+Version: 1.1.1
+Authors@R: c(person("Rodrigo", " M. R. de Medeiros",
+          email = "rodrigo.matheus@ufrn.br",
+          role = c("aut", "cre", "cph"),
+          comment = c(ORCID = "0000-0001-8101-3038")),
+              person("Diego", "Gallardo",
+                      email = "diego.gallardo.mateluna@gmail.com",
+                      role = c("aut"),
+              comment = c(ORCID = "0000-0001-8184-7403")))
+Maintainer: Rodrigo M. R. de Medeiros <rodrigo.matheus@ufrn.br>
+Description: Provides tools for modeling time-to-event data with a cure fraction under correlated
+    destructive negative binomial cure rate models. The models assume multiple latent competing 
+    causes with possible dependence and allow for elimination (inactivation) of some initial causes.
+    Estimation is performed via an Expectation-Maximization algorithm, and diagnostic tools based 
+    on Cox-Snell residuals are provided.
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/rdmatheus/cdnbcr
+BugReports: https://github.com/rdmatheus/cdnbcr/issues
+Suggests: survival, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Imports: Formula (>= 1.2.4), pracma (>= 2.3.3)
+Depends: R (>= 3.5)
+License: GPL (>= 3)
+NeedsCompilation: no
+Packaged: 2026-03-04 13:19:07 UTC; rodri
+Author: Rodrigo M. R. de Medeiros [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8101-3038>),
+  Diego Gallardo [aut] (ORCID: <https://orcid.org/0000-0001-8184-7403>)
+Repository: CRAN
+Date/Publication: 2026-03-09 11:10:02 UTC

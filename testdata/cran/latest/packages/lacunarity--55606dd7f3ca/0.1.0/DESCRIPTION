@@ -1,0 +1,32 @@
+Package: lacunarity
+Type: Package
+Title: Standard and Generalized Lacunarity for Binary Time Series
+Version: 0.1.0
+Authors@R: 
+    person(given = "Ikaro",
+           family = "Barreto",
+           role = c("aut", "cre"),
+           email = "daniel.carvalho.ib@gmail.com")
+Depends: R (>= 3.0.1)
+Description: Estimates lacunarity and generalized lacunarity for
+    unidimensional binary time series. The lacunarity index summarizes the
+    similarity of parts from different regions of a series at a given scale
+    by averaging the behavior of variable size structures of zeros and ones.
+    The generalized lacunarity concept provides an enhanced measure of the
+    organization of the gaps over all measured scales and over the different
+    arrangements of smaller and larger gaps in the series.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: zoo, plyr, stats
+URL: https://github.com/Ikarobarreto/lacunarity
+BugReports: https://github.com/Ikarobarreto/lacunarity/issues
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-30 15:06:56 UTC; ikaro.barreto
+Author: Ikaro Barreto [aut, cre]
+Maintainer: Ikaro Barreto <daniel.carvalho.ib@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-03 13:50:14 UTC

@@ -1,0 +1,25 @@
+Package: hours2lessons
+Title: Alocă Pe Ore Lecțiile Zilei
+Version: 0.1.4
+Authors@R: 
+    person("Vlad", "Bazon", email = "vlad.bazon@gmail.com", role = c("aut", "cre"))
+Description: Lecțiile prof/cls trebuie completate cu un câmp "ora", astfel ca
+    oricare două lecții prof/cls/ora să nu se suprapună într-o aceeași oră.
+    The prof/cls lessons must be completed with a "hour" field ('ora), so that
+    any two prof/cls/ora lessons do not overlap in the same hour.
+    <https://vlad.bazon.net/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: ro
+RoxygenNote: 7.3.2
+Imports: dplyr, igraph, magrittr, purrr, rlang, stats, tidyr
+Depends: R (>= 3.5.0)
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-05-21 14:50:55 UTC; vb
+Author: Vlad Bazon [aut, cre]
+Maintainer: Vlad Bazon <vlad.bazon@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-21 15:20:02 UTC

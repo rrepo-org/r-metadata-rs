@@ -1,0 +1,72 @@
+Package: UniCensorEM
+Type: Package
+Title: EM Algorithm for Parameter Estimation Under Censoring Schemes
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi",
+           email = "shikhar1093tyagi@gmail.com",
+           role  = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey",
+           email = "arvindmzu@gmail.com",
+           role  = "aut"),
+    person("Bhupendra", "Singh",
+           email = "bhupendra.rana@gmail.com",
+           role  = "aut"),
+    person("Vrijesh", "Tripathi",
+           email = "vrijesh.tripathi@uwi.edu",
+           role  = "aut"))
+Description: Performs parameter estimation using the Expectation-Maximization
+    (EM) algorithm of Dempster, Laird, and Rubin (1977)
+    <doi:10.1111/j.2517-6161.1977.tb01600.x> for arbitrary univariate
+    probability distributions under numerous censoring and truncation schemes.
+    Users supply the probability density function (PDF), cumulative distribution
+    function (CDF), survival function, initial parameter vector, support bounds,
+    and observed data; the package automatically estimates parameters using the
+    EM algorithm under the specified censoring scheme. Supported schemes include
+    complete data, right censoring, left censoring, interval censoring, random
+    censoring, block random censoring, Type-I censoring, Type-II censoring,
+    progressive Type-II censoring (Balakrishnan and Aggarwala (2000,
+    ISBN:978-1-4612-1334-5)), progressive first failure censoring, joint Type-I
+    censoring, joint Type-II censoring, balanced joint progressive Type-II
+    censoring, hybrid censoring, hybrid Type-I censoring, hybrid Type-II
+    censoring, Type-I hybrid censoring, Type-II progressively hybrid censoring,
+    doubly Type-II censoring, middle censoring, right truncation, and left
+    truncation. Standard errors are computed via the observed information matrix
+    (numerical Hessian), the Louis (1982)
+    <doi:10.1111/j.2517-6161.1982.tb01203.x> method, and the supplemented EM
+    (SEM) algorithm of Meng and Rubin (1991)
+    <doi:10.1080/01621459.1991.10475130>. The package also provides confidence
+    intervals, model selection criteria (AIC, BIC, AICc, HQIC), goodness-of-fit
+    statistics (Kolmogorov-Smirnov, Cramer-von Mises, Anderson-Darling),
+    residual analysis (randomized quantile residuals, generalized residuals),
+    parametric bootstrap methods, Aitken acceleration for convergence
+    improvement, and comprehensive visualization tools. References: Wu and Kus
+    (2009) <doi:10.1016/j.csda.2009.03.010>, Kundu and Joarder (2006)
+    <doi:10.1016/j.csda.2005.05.002>, Iyer, Jammalamadaka, and Kundu (2008)
+    <doi:10.1016/j.jspi.2007.03.062>, Banerjee and Kundu (2008)
+    <doi:10.1109/TR.2008.916890>, Prajapati, Mitra, and Kundu (2019)
+    <doi:10.1007/s13571-018-0167-0>, Mondal and Kundu (2020)
+    <doi:10.1080/03610926.2018.1554128>, Ding and Gui (2023)
+    <doi:10.3390/math11092003>.
+License: GPL-3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices, utils, methods, numDeriv
+Suggests: testthat (>= 3.0.0), maxLik, bbmle, survival, boot, future,
+        furrr, parallel, foreach, doParallel, ggplot2, cubature,
+        pracma, knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-19 23:17:39 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-28 16:50:16 UTC

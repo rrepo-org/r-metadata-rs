@@ -1,0 +1,31 @@
+Package: midnight
+Type: Package
+Title: A 'tidymodels' Engine and Other Extensions for the 'midr'
+        Package
+Version: 0.2.0
+Authors@R: c(
+    person("Ryoichi", "Asashiba",
+           email = "ryoichi.asashiba@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-9532-7000"))
+  )
+Description: 
+  Provides a 'parsnip' engine for the 'midr' package, enabling users to fit, tune, and evaluate Maximum Interpretation Decomposition (MID) models within the 'tidymodels' framework. Developed through research by the Moonlight Seminar 2025, a study group of actuaries from the Institute of Actuaries of Japan, to enhance practical applications of interpretable modeling. Detailed methodology is available in Asashiba et al. (2025) <doi:10.48550/arXiv.2506.08338>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: graphics, midr (>= 0.6.0), rlang, Rcpp, stats, utils
+Suggests: colormap, DALEX, ggbeeswarm, ggforce, ggplot2, MetBrewer,
+        parsnip
+RoxygenNote: 7.3.2
+URL: https://github.com/ryo-asashi/midnight,
+        https://ryo-asashi.github.io/midnight/
+BugReports: https://github.com/ryo-asashi/midnight/issues
+LinkingTo: Rcpp, RcppEigen
+Config/Needs/website: rmarkdown
+NeedsCompilation: yes
+Packaged: 2026-04-02 21:20:21 UTC; daysb
+Author: Ryoichi Asashiba [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-9532-7000>)
+Maintainer: Ryoichi Asashiba <ryoichi.asashiba@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-09 08:50:02 UTC

@@ -1,0 +1,35 @@
+Package: edgarfundamentals
+Title: Retrieve Fundamental Financial Data from SEC 'EDGAR'
+Version: 0.1.2
+Authors@R: person(
+    given   = "Robert P",
+    family  = "Schumaker",
+    role    = c("aut", "cre"),
+    email   = "rob.schumaker@gmail.com",
+    comment = c(ORCID = "0000-0003-2977-1856"))
+Description: Provides a simple, ticker-based interface for retrieving fundamental
+    financial data from the United States Securities and Exchange Commission's
+    'EDGAR' 'XBRL' API <https://www.sec.gov/edgar/sec-api-documentation>. Functions
+    return key financial ratios including earnings per share, return on equity,
+    return on assets, debt-to-equity, current ratio, gross margin, operating
+    margin, net margin, price-to-earnings, price-to-book, and dividend yield
+    for any publicly traded U.S. company. Data is sourced directly from company
+    10-K annual filings, requiring no API key or paid subscription. Designed for
+    use in quantitative finance courses and research workflows.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr (>= 1.1.0), httr (>= 1.4.0), jsonlite (>= 1.8.0),
+        rlang, tidyquant (>= 1.0.0)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/robschumaker/edgarfundamentals
+BugReports: https://github.com/robschumaker/edgarfundamentals/issues
+NeedsCompilation: no
+Packaged: 2026-03-26 17:37:17 UTC; rschumaker
+Author: Robert P Schumaker [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2977-1856>)
+Maintainer: Robert P Schumaker <rob.schumaker@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-27 20:10:02 UTC

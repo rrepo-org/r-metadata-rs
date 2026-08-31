@@ -1,0 +1,46 @@
+Package: FAOSTAT
+Type: Package
+Title: Download Data from the FAOSTAT Database
+Version: 2.4.2
+Date: 2026-04-01
+Authors@R: c(person(given = c("Michael", "C."),
+                    family = "J.",
+                    role = "aut"),
+             person(given = "Markus",
+                    family = "Gesmann",
+                    role = "aut"),
+             person(given = "Filippo",
+                    family = "Gheri",
+                    role = "aut"),
+             person(given = "Paul",
+                    family = "Rougieux",
+                    role = c("aut", "cre"),
+                    email = "paul.rougieux@gmail.com"),
+             person(given = "Sebastian",
+                    family = "Campbell",
+                    role = "aut"))
+Maintainer: Paul Rougieux <paul.rougieux@gmail.com>
+Description: Download Data from the FAOSTAT Database of the Food and Agricultural Organization (FAO) of the United Nations.
+    A list of functions to download statistics from FAOSTAT (database of the FAO <https://www.fao.org/faostat/>) 
+    and WDI (database of the World Bank <https://data.worldbank.org/>), and to perform some harmonization operations.
+URL: https://gitlab.com/paulrougieux/faostatpackage
+BugReports: https://gitlab.com/paulrougieux/faostatpackage/-/issues
+Imports: RJSONIO (>= 0.96-0), plyr (>= 1.7.1), data.table (>= 1.8.2),
+        MASS (>= 7.3-22), classInt (>= 0.1-19), labeling (>= 0.1), httr
+        (>= 1.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: yes
+ZipData: no
+VignetteBuilder: knitr
+Suggests: knitr, testthat, rstudioapi
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-01 09:35:24 UTC; paul
+Author: Michael C. J. [aut],
+  Markus Gesmann [aut],
+  Filippo Gheri [aut],
+  Paul Rougieux [aut, cre],
+  Sebastian Campbell [aut]
+Repository: CRAN
+Date/Publication: 2026-04-01 10:40:09 UTC

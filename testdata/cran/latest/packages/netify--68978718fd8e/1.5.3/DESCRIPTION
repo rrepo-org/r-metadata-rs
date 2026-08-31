@@ -1,0 +1,43 @@
+Package: netify
+Title: Tools for Network Data Workflows
+Version: 1.5.3
+Authors@R: c(
+  person("Ha Eun", "Choi", email = "choiha3@msu.edu", role = c("ctb")),
+  person("Cassy", "Dorff", email = "cassy.dorff@vanderbilt.edu", role = c("aut")),
+  person("Colin", "Henry", email = "colin.henry@vanderbilt.edu", role = c("ctb")),
+  person("Shahryar", "Minhas", email = "minhassh@msu.edu", role = c("aut", "cre")),
+  person("Tosin", "Salau", email = "tosin.salau@msu.edu", role = c("ctb"))
+  )
+Description: Builds, validates, analyzes, and visualizes network data from
+    dyadic, event, matrix, 'igraph', and 'network' inputs. Supports
+    cross-sectional, longitudinal, bipartite, and multi-layer networks, with
+    conversion helpers for common modeling workflows and plotting utilities
+    for exploratory analysis. Network methods are described in Wasserman and
+    Faust (1994, ISBN:9780521387071), Cranmer et al. (2021)
+    <doi:10.1017/9781316662915>, and Minhas et al. (2022)
+    <doi:10.1017/psrm.2021.56>.
+Depends: R (>= 3.5.0)
+Imports: Rcpp, stats, methods, rlang, cli, checkmate, igraph, ggplot2
+        (>= 3.0.0), ggnewscale, ggrepel, withr
+LinkingTo: Rcpp, RcppEigen
+Suggests: knitr, rmarkdown, abind, tidyr, network, testthat (>= 3.0.0),
+        dplyr, peacesciencer, amen, ergm, latentnet, RSiena,
+        countrycode, scales, ggridges, ggbeeswarm, patchwork,
+        RColorBrewer, tibble, broom, gganimate, generics, Matrix
+VignetteBuilder: knitr
+License: GPL-3
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.3.3
+URL: https://netify-dev.github.io/netify/
+BugReports: https://github.com/netify-dev/netify/issues
+NeedsCompilation: yes
+Packaged: 2026-06-25 13:33:12 UTC; s7m
+Author: Ha Eun Choi [ctb],
+  Cassy Dorff [aut],
+  Colin Henry [ctb],
+  Shahryar Minhas [aut, cre],
+  Tosin Salau [ctb]
+Maintainer: Shahryar Minhas <minhassh@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-06-30 20:20:09 UTC

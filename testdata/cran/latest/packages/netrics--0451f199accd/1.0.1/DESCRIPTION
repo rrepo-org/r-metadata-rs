@@ -1,0 +1,39 @@
+Package: netrics
+Title: Many Marks, Measures, Memberships, and Motifs for Networks
+Version: 1.0.1
+Description: Many tools for calculating network, node, or tie
+   marks, measures, motifs and memberships of many different types of networks.
+   Marks identify structural positions, measures quantify network properties,
+   memberships classify nodes into groups, and motifs tabulate substructure participation.
+   All functions operate with all classes of network data covered in 'manynet',
+   and on directed, undirected, multiplex, multimodal, signed, and other networks.
+URL: https://stocnet.github.io/netrics/
+BugReports: https://github.com/stocnet/netrics/issues
+License: MIT + file LICENSE
+Language: en-GB
+Encoding: UTF-8
+Depends: R (>= 4.1.0), manynet (>= 2.2.3)
+Imports: dplyr, igraph (>= 2.1.0)
+Suggests: autograph, sna, testthat (>= 3.0.0)
+Authors@R: 
+    c(person(given = "James",
+             family = "Hollway",
+             role = c("cre", "aut", "ctb"),
+             email = "james.hollway@graduateinstitute.ch",
+             comment = c("IHEID", ORCID = "0000-0002-8361-9647"))
+    )
+Config/Needs/build: roxygen2, devtools
+Config/Needs/check: covr, lintr, spelling
+Config/Needs/website: pkgdown, learnr
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+Config/testthat/start-first: tutorials_netrics, measure_net,
+        member_nodes, measure_nodes
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-29 06:06:45 UTC; hollway
+Author: James Hollway [cre, aut, ctb] (IHEID, ORCID:
+    <https://orcid.org/0000-0002-8361-9647>)
+Maintainer: James Hollway <james.hollway@graduateinstitute.ch>
+Repository: CRAN
+Date/Publication: 2026-08-31 19:30:41 UTC

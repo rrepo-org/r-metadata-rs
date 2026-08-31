@@ -1,0 +1,33 @@
+Package: tanner
+Type: Package
+Title: Puberty Stage Line Diagrams and SDS for Tanner Pubertal Stages
+Version: 1.8.0
+Date: 2026-07-18
+Authors@R: c(
+    person("Stef", "van Buuren", , "stef.vanbuuren@tno.nl", role = c("aut", "cre")),
+    person("Jeroen", "Ooms", role = "aut"))
+Description: Plots Tanner pubertal stage measurements (genital, pubic hair,
+    testicular volume, breast, menarche) against Dutch 1997 growth-study
+    references as stage line diagrams, and converts observed stages to
+    age-conditional standard deviation scores (SDS). Testicular volume can
+    be entered as a raw orchidometer reading in ml. Implements the method
+    of van Buuren and Ooms (2009) <doi:10.1002/sim.3567>.
+License: MIT + file LICENSE
+URL: https://github.com/growthcharts/tanner,
+        https://growthcharts.org/tanner/
+BugReports: https://github.com/growthcharts/tanner/issues
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: haven
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-28 20:39:47 UTC; buurensv
+Author: Stef van Buuren [aut, cre],
+  Jeroen Ooms [aut]
+Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
+Repository: CRAN
+Date/Publication: 2026-08-06 13:10:02 UTC

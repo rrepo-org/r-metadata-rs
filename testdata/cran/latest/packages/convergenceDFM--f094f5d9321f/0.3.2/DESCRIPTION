@@ -1,0 +1,45 @@
+Package: convergenceDFM
+Type: Package
+Title: Convergence and Dynamic Factor Models
+Version: 0.3.2
+Authors@R: person("José Mauricio", "Gómez Julián", email = "isadore.nabi@pm.me", role = c("aut", "cre"), comment = c(ORCID = "0009-0000-2412-3150"))
+Description: Tests convergence in macro-financial panels combining
+    Dynamic Factor Models (DFM) and mean-reverting, discrete-time
+    Ornstein-Uhlenbeck/AR(1) factor processes. Provides: (i) static factor
+    extraction with VAR stability checks, Portmanteau tests and rolling
+    out-of-sample R^2, in the spirit of Stock and Watson (2002)
+    <doi:10.1198/073500102317351921> and the Generalized Dynamic Factor Model of
+    Forni, Hallin, Lippi and Reichlin (2000) <doi:10.1162/003465300559037>;
+    (ii) cointegration analysis a la Johansen (1988)
+    <doi:10.1016/0165-1889(88)90041-3>; (iii) Bayesian factor-OU/AR(1) estimation
+    with convergence and half-life summaries grounded in Uhlenbeck and Ornstein
+    (1930) <doi:10.1103/PhysRev.36.823> and Vasicek (1977)
+    <doi:10.1016/0304-405X(77)90016-2>, with full Markov chain Monte Carlo
+    convergence diagnostics; (iv) heteroskedasticity-consistent (HC) and, when
+    the suggested 'sandwich' (Zeileis (2004) <doi:10.18637/jss.v011.i10>) and
+    'lmtest' packages are available, heteroskedasticity- and autocorrelation-
+    consistent (HAC) robust inference, with a self-contained HC fallback;
+    (v) coupling significance tests based on time-shift / block-bootstrap nulls
+    that preserve marginal dynamics while breaking cross-series dependence; and
+    (vi) optional PLS-based factor preselection (Mevik and Wehrens (2007)
+    <doi:10.18637/jss.v018.i02>). Functions emphasize reproducibility (explicit
+    seeds throughout) and clear, publication-ready summaries.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: stats, methods, parallel, pls, vars, urca, readxl, dplyr,
+        tidyr, stringr, magrittr, zoo, BayesianDisaggregation (>=
+        0.2.1)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, cmdstanr, posterior,
+        rstan, sandwich, lmtest
+Additional_repositories: https://mc-stan.org/r-packages/
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-21 16:05:54 UTC; josemgomezj
+Author: José Mauricio Gómez Julián [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-2412-3150>)
+Maintainer: José Mauricio Gómez Julián <isadore.nabi@pm.me>
+Repository: CRAN
+Date/Publication: 2026-06-26 08:00:13 UTC

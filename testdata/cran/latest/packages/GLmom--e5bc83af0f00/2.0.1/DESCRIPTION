@@ -1,0 +1,66 @@
+Package: GLmom
+Type: Package
+Title: Generalized L-Moments Estimation for Extreme Value Distributions
+Version: 2.0.1
+Authors@R: c(
+      person(given = "Yonggwan",
+             family = "Shin",
+             role = c("aut", "cre"),
+             email = "syg.stat@etri.re.kr",
+             comment = c(ORCID = "0000-0001-6966-6511")),
+      person(given = "Seokkap",
+             family = "Ko",
+             role = c("aut", "ctb"),
+             email = "softgear@etri.re.kr",
+             comment = c(ORCID = "0000-0001-9218-7236")),
+       person(given = "Jihong",
+             family = "Park",
+             role = "ctb",
+             email="jihong8090@gmail.com",
+             comment = c(ORCID = "0009-0003-3191-9968")),
+      person(given = "Yire",
+             family = "Shin",
+             role = c("aut", "dtc"),
+             email = "shinyire87@gmail.com",
+             comment = c(ORCID = "0000-0003-1297-5430")),
+      person(given = "Jeong-Soo",
+             family = "Park",
+             role = c("aut", "ths"),
+             email = "jspark@chonnam.ac.kr",
+             comment = c(ORCID = "0000-0002-8460-4869")))
+Description: Provides generalized L-moments estimation methods for the
+    generalized extreme value ('GEV') distribution. Implements both stationary
+    'GEV' and non-stationary 'GEV11' models where location and scale parameters
+    vary with time. Includes various penalty functions (Martins-Stedinger,
+    Park, Cannon, Coles-Dixon) for shape parameter regularization.
+    Also provides model averaging estimation ('ma.gev') that combines MLE and
+    L-moment methods with multiple weighting schemes for robust high quantile
+    estimation. The 'GLME' methodology is described in Shin et al. (2025a)
+    <doi:10.48550/arXiv.2512.20385>. The non-stationary L-moment method
+    is based on Shin et al. (2025b) <doi:10.1007/s42952-025-00325-3>.
+    The model averaging method is described in Shin et al. (2026)
+    <doi:10.1007/s00477-025-03167-x>.
+    See also Hosking (1990) <doi:10.1111/j.2517-6161.1990.tb01775.x> for
+    L-moments theory and Martins and Stedinger (2000)
+    <doi:10.1029/1999WR900330> for penalized likelihood methods.
+License: GPL (>= 3)
+URL: https://github.com/sygstat/GLmom
+BugReports: https://github.com/sygstat/GLmom/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: lmomco, nleqslv, stats, methods, robustbase, ismev, Rsolnp,
+        zoo, graphics
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2026-07-24 21:45:49 UTC; yg
+Author: Yonggwan Shin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6966-6511>),
+  Seokkap Ko [aut, ctb] (ORCID: <https://orcid.org/0000-0001-9218-7236>),
+  Jihong Park [ctb] (ORCID: <https://orcid.org/0009-0003-3191-9968>),
+  Yire Shin [aut, dtc] (ORCID: <https://orcid.org/0000-0003-1297-5430>),
+  Jeong-Soo Park [aut, ths] (ORCID:
+    <https://orcid.org/0000-0002-8460-4869>)
+Maintainer: Yonggwan Shin <syg.stat@etri.re.kr>
+Repository: CRAN
+Date/Publication: 2026-07-25 22:30:02 UTC

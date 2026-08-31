@@ -1,0 +1,32 @@
+Package: adapt3
+Type: Package
+Title: Adaptive Dynamics and Community Matrix Model Projections
+Version: 2.0.9
+Date: 2026-06-07
+Authors@R: c(person(given = "Richard P.", family = "Shefferson",
+             email = "cdorm@g.ecc.u-tokyo.ac.jp", role = c("aut", "cre"),
+             comment=c(ORCID="0000-0002-5234-3131")))
+Description: Runs projections of groups of matrix projection models (MPMs),
+             allowing density dependence mechanisms to work across MPMs. This
+             package was developed to run both adaptive dynamics simulations
+             such as pairwise and multiple invasibility analyses, and community
+             projections in which species are represented by MPMs. All forms of
+             MPMs are allowed, including integral projection models (IPMs).
+Encoding: UTF-8
+License: GPL (>= 2)
+URL: https://github.com/dormancy1/adapt3
+Imports: Rcpp (>= 1.0.12), lefko3, methods, rlang, grDevices, stats
+LinkingTo: Rcpp, RcppArmadillo, BH, lefko3
+LazyData: true
+BugReports: https://github.com/dormancy1/adapt3/issues
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: yes
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-07 02:19:36 UTC; richpshefferson
+Author: Richard P. Shefferson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5234-3131>)
+Maintainer: Richard P. Shefferson <cdorm@g.ecc.u-tokyo.ac.jp>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-06-07 08:00:02 UTC

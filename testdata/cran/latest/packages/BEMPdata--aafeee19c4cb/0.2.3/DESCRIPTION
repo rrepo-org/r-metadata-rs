@@ -1,0 +1,34 @@
+Package: BEMPdata
+Title: Access the Bangladesh Environmental Mobility Panel Dataset
+Version: 0.2.3
+Authors@R: 
+    person("Jan", "Freihardt", role = c("aut", "cre"),
+           email = "fjan@ethz.ch")
+Description: Provides functions to download and work with the Bangladesh
+    Environmental Mobility Panel (BEMP), a household panel survey tracing
+    the impacts of riverbank erosion and flooding on (im)mobility,
+    socio-economic outcomes, and political attitudes along the Jamuna River
+    in Bangladesh (2021-2024). Wave datasets (20 files across 14 survey
+    rounds) are hosted on Zenodo
+    (<doi:10.5281/zenodo.18229497>) and downloaded on demand with
+    local caching. Bundled data include a merged cross-wave codebook and
+    wave metadata.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: utils, tools, readr, haven, shiny
+Suggests: bslib, DT, ggplot2, dplyr, testthat (>= 3.0.0), knitr,
+        rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/janfreihardt/BEMPdata,
+        https://CRAN.R-project.org/package=BEMPdata
+BugReports: https://github.com/janfreihardt/BEMPdata/issues
+NeedsCompilation: no
+Packaged: 2026-03-31 07:40:17 UTC; fjan
+Author: Jan Freihardt [aut, cre]
+Maintainer: Jan Freihardt <fjan@ethz.ch>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-03-31 08:10:09 UTC

@@ -1,0 +1,43 @@
+Package: grmtree
+Title: Recursive Partitioning for Graded Response Models
+Version: 0.2.2
+Date: 2026-08-22
+Authors@R: c(person(given = "Olayinka I.", family = "Arimoro", role = c("aut", "cre"), email = "olayinka.arimoro@ucalgary.ca", comment = c(ORCID = "0009-0009-9464-589X")),
+             person(given = "Tolulope T.", family = "Sajobi", role = "aut", email = "ttsajobi@ucalgary.ca"),
+             person(given = "Lisa M.", family = "Lix", role = "aut", email = "Lisa.Lix@umanitoba.ca"),
+             person(given = "Matthew T.", family = "James", role = "ctb", email = "mjames@ucalgary.ca"),
+             person(given = "Maria", family = "Santana", role = "ctb", email = "mjsantan@ucalgary.ca"),
+             person(given = "Emmanuel", family = "Ugochukwu", role = "ctb", email = "favour879@gmail.com"))
+Maintainer: Olayinka I. Arimoro <olayinka.arimoro@ucalgary.ca>
+Description: Provides methods for recursive partitioning based on the 
+  'Graded Response Model' ('GRM'), extending the 'MOB' algorithm from the 
+  'partykit' package. The package allows for fitting
+  'GRM' trees that partition the population into homogeneous 
+  subgroups based on item response patterns and covariates. 
+  Includes specialized plotting functions for visualizing 'GRM' trees
+  with different terminal node displays (threshold regions, 
+  parameter profiles, and factor score distributions). The package also implements the Longitudinal GRMTree for detecting response shift in PROMs measured at two time points, embedding a constrained two-factor longitudinal GRM within recursive partitioning, with post-hoc characterization of recalibration and reprioritization.
+  For more details on the methods, see Samejima (1969) <doi:10.1002/J.2333-8504.1968.TB00153.X>, Komboz et al. (2018) <doi:10.1177/0013164416664394> and Arimoro et al. (2025) <doi:10.1007/s11136-025-04018-6>.
+License: GPL-3
+Depends: R (>= 4.1.0), partykit (>= 1.2-9), mirt (>= 1.46.1)
+Imports: stats, graphics, grid, ggplot2, rlang, strucchange, parallel
+Suggests: hlt, dplyr, magrittr, testthat (>= 3.0.0), knitr, rmarkdown,
+        psychotools, psychotree, psych
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/Predicare1/grmtree
+BugReports: https://github.com/Predicare1/grmtree/issues
+Repository: CRAN
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-08-22 23:25:45 UTC; Olayinka A
+Author: Olayinka I. Arimoro [aut, cre] (ORCID:
+    <https://orcid.org/0009-0009-9464-589X>),
+  Tolulope T. Sajobi [aut],
+  Lisa M. Lix [aut],
+  Matthew T. James [ctb],
+  Maria Santana [ctb],
+  Emmanuel Ugochukwu [ctb]
+Date/Publication: 2026-08-23 00:50:02 UTC

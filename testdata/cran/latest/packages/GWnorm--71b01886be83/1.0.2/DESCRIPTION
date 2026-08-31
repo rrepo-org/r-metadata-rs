@@ -1,0 +1,27 @@
+Package: GWnorm
+Type: Package
+Title: G-Wishart Normalising Constants for Gaussian Graphical Models
+Version: 1.0.2
+Date: 2026-07-07
+Authors@R: c(person(given = "Ching",
+                      family = "Wong",
+                      role = c("aut")),
+               person(given = "Jack",
+                      family = "Kuipers",
+                      role = c("aut", "cre"),
+                      email = "jack.kuipers@bsse.ethz.ch"))
+Author: Ching Wong [aut],
+  Jack Kuipers [aut, cre]
+Maintainer: Jack Kuipers <jack.kuipers@bsse.ethz.ch>
+Description: Computes G-Wishart normalising constants through a Fourier approach. Either exact analytical results, numerical integration or Monte Carlo estimation are employed. Details at C. Wong, G. Moffa and J. Kuipers (2024), <doi:10.48550/arXiv.2404.06803>. Also includes approximations of the ratio of normalising constants, see details at C. Wong, G. Moffa and J. Kuipers (2025), <doi:10.48550/arXiv.2503.13046>. 
+License: GPL (>= 2)
+Depends: R (>= 4.0.0)
+Imports: igraph, BDgraph, CholWishart, MASS, mvtnorm, hypergeo, gsl,
+        Rcpp (>= 1.1.1)
+LinkingTo: Rcpp, RcppEigen
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-07 15:56:12 UTC; jkuipers
+Repository: CRAN
+Date/Publication: 2026-07-07 16:30:02 UTC

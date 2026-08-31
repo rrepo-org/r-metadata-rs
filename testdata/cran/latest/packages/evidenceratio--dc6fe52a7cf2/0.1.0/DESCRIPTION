@@ -1,0 +1,36 @@
+Package: evidenceratio
+Type: Package
+Title: Likelihood-Based Evidence Ratios for Classical Statistical Tests
+Version: 0.1.0
+License: MIT + file LICENSE
+Language: en-GB
+Authors@R: 
+    person(
+        given = "Dylan",
+        family = "Lawless",
+        email = "admin@switzerlandomics.ch",
+        role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0000-0001-8496-3725")
+    )
+Description: Implements likelihood-based evidence ratios for unified reporting
+    in classical statistical testing. The package reports effect estimates,
+    uncertainty intervals, and likelihood ratios on the log 10 scale derived
+    from a single statistical model. It applies to standard normal mean tests,
+    contingency tables, and regression coefficients, and provides a direct
+    evidential measure while retaining classical error guarantees. 
+    For the Evidence Ratio Reporting Standard see Lawless (2026) 
+    <doi:10.5281/zenodo.18261076>.
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: stats
+Suggests: testthat (>= 3.1.0), waldo (>= 0.5.0), knitr, rmarkdown,
+        ggplot2
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-01-16 12:33:45 UTC; akira
+Author: Dylan Lawless [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8496-3725>)
+Maintainer: Dylan Lawless <admin@switzerlandomics.ch>
+Repository: CRAN
+Date/Publication: 2026-01-21 20:00:08 UTC

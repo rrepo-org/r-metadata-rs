@@ -1,0 +1,50 @@
+Type: Package
+Package: CimpleG
+Title: A Method to Identify Single CpG Sites for Classification and
+        Deconvolution
+Version: 1.0.1
+Date: 2025-11-21
+Authors@R: 
+    person("Tiago", "F.V. Maié", , "tiagomaie@hotmail.com", role = c("aut", "cre"))
+Maintainer: Tiago F.V. Maié <tiagomaie@hotmail.com>
+Description: DNA methylation signatures are usually based on multivariate
+    approaches that require hundreds of sites for predictions.  'CimpleG'
+    is a method for the detection of small CpG methylation signatures used
+    for cell-type classification and deconvolution.  'CimpleG' is time
+    efficient and performs as well as top performing methods for cell-type
+    classification of blood cells and other somatic cells, while basing
+    its prediction on a single DNA methylation site per cell type (but
+    users can also select more sites if they so wish).  Users can train
+    cell type classifiers ('CimpleG' based, and others) and directly apply
+    these in a deconvolution of cell mixes context.  Altogether, 'CimpleG'
+    provides a complete computational framework for the delineation of
+    DNAm signatures and cellular deconvolution.  For more details see Maié
+    et al. (2023) <doi:10.1186/s13059-023-03000-0>.
+License: GPL (>= 3)
+URL: https://github.com/CostaLab/CimpleG,
+        https://costalab.github.io/CimpleG/
+BugReports: https://github.com/CostaLab/CimpleG/issues
+Depends: R (>= 4.1.0)
+Imports: archive, assertthat, broom, butcher, caret, data.table, dplyr,
+        forcats, ggExtra, ggplot2, ggrepel, ggsci, grDevices, gtools,
+        magrittr, matrixStats, methods, nnls, OneR, parsnip, patchwork,
+        purrr, recipes, rlang, rsample, scales, stats, tibble, tictoc,
+        tidyr, tidyselect, tsutils, tune, utils, vroom, workflows,
+        yardstick
+Suggests: Biobase, biomaRt, C50, circlize, EpiDISH, furrr, future,
+        future.apply, GEOquery, ggbeeswarm, ggsignif, glmnet, knitr,
+        minfi, mltools, NMF, nnet, plyr, ranger, RColorBrewer,
+        reshape2, Rfast, rmarkdown, spelling, stringr,
+        SummarizedExperiment, testthat (>= 3.0.0), withr, xgboost
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-12-05 17:19:43 UTC; tmaie
+Author: Tiago F.V. Maié [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-12-07 00:50:19 UTC

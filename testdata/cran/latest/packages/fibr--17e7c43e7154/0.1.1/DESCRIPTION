@@ -1,0 +1,45 @@
+Package: fibr
+Type: Package
+Title: Prior-Fraction Diagnostics for Hierarchical Models
+Version: 0.1.1
+Authors@R: 
+    person("Aidan D", "Bindoff",
+           email   = "aidan.bindoff@utas.edu.au",
+           role    = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0943-2702"))
+Description: Computes the prior fraction, the per-group pooling or shrinkage
+    factor, for hierarchical models, including directly from 'brms' fits. For
+    each group-level coefficient the prior fraction is the share of the
+    posterior precision contributed by the shrinkage prior relative to the
+    likelihood; values near one indicate a coefficient that is prior-dominated
+    (the centring/non-centring funnel regime), values near zero indicate a
+    likelihood-dominated coefficient that is well identified from the data.
+    These quantities are invisible to standard convergence diagnostics such as
+    R-hat and effective sample size, and they indicate where a non-centred
+    reparameterisation is likely to help. A companion advisor reports the same
+    decomposition for changepoint random effects fitted with 'smoothbp'. The
+    underlying geometry (the Fisher-metric connection on the base-fiber split,
+    for which this connection is flat so the obstruction is statistical rather
+    than geometric) is described in Bindoff (2026)
+    <doi:10.5281/zenodo.20724550>; code reproducing the paper is in the
+    package's source repository.
+License: MIT + file LICENSE
+URL: https://github.com/ABindoff/fibr,
+        https://doi.org/10.5281/zenodo.20724550
+BugReports: https://github.com/ABindoff/fibr/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: posterior (>= 1.4.0), ggplot2
+Suggests: brms, smoothbp, cmdstanr, testthat (>= 3.0.0)
+Additional_repositories: https://stan-dev.r-universe.dev
+Config/testthat/edition: 3
+Config/rextendr/version: 0.5.0
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.65.0, xz
+NeedsCompilation: no
+Packaged: 2026-06-22 22:44:16 UTC; bindoffa
+Author: Aidan D Bindoff [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0943-2702>)
+Maintainer: Aidan D Bindoff <aidan.bindoff@utas.edu.au>
+Repository: CRAN
+Date/Publication: 2026-06-29 12:50:19 UTC

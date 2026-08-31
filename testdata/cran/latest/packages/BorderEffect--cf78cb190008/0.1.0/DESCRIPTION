@@ -1,0 +1,45 @@
+Package: BorderEffect
+Title: Detection of Edge Effects in Field Trials via Besag-Kempton
+        Competition
+Version: 0.1.0
+Authors@R: c(
+    person("Sergio", "Gamboa", email = "segamboam@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = "Author of the R package"),
+    person("Aquiles Enrique", "Darghan Contreras", role = c("aut", "cph"),
+           comment = "Author of the method and original code"),
+    person("Carlos Armando", "Rivera Moreno", role = c("aut", "cph"),
+           comment = "Author of the method and original code"),
+    person("Nair Jose", "Gonzalez Sotomayor", role = c("aut", "cph"),
+           comment = "Author of the method"),
+    person("Jose Luis", "Castellanos Coronel", role = c("aut", "cph"),
+           comment = "Author of the method"))
+Description: Estimates and evaluates the intraspecific competition coefficient
+    associated with the edge (border) effect in agricultural field trials, using
+    the Besag-Kempton autoregressive model and a least-squares estimator following
+    Darghan, Rivera, Gonzalez and Castellanos (2022)
+    <doi:10.47280/RevFacAgron(LUZ).v39.n1.18>. Provides field-layout generation,
+    spatial weight matrices, a formula interface for arbitrary two-way designs, a
+    simulation-based decision procedure for presence or absence of the edge effect,
+    Moran's I diagnostics, and a 'shiny' application.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, grDevices
+Suggests: shiny, ape, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-25 20:28:53 UTC; serch
+Author: Sergio Gamboa [aut, cre, cph] (Author of the R package),
+  Aquiles Enrique Darghan Contreras [aut, cph] (Author of the method and
+    original code),
+  Carlos Armando Rivera Moreno [aut, cph] (Author of the method and
+    original code),
+  Nair Jose Gonzalez Sotomayor [aut, cph] (Author of the method),
+  Jose Luis Castellanos Coronel [aut, cph] (Author of the method)
+Maintainer: Sergio Gamboa <segamboam@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 06:30:16 UTC

@@ -1,0 +1,31 @@
+Package: starburst
+Type: Package
+Title: Seamless AWS Cloud Bursting for Parallel R Workloads
+Version: 0.3.9
+Authors@R: c(
+    person("Scott", "Friedman", email = "help@starburst.ing", role = c("aut", "cre"))
+    )
+Description: A 'future' backend that enables seamless execution of parallel R
+    workloads on 'Amazon Web Services' ('AWS', <https://aws.amazon.com>),
+    including 'EC2' and 'Fargate'. 'staRburst' handles environment
+    synchronization, data transfer, quota management, and worker orchestration
+    automatically, allowing users to scale from local execution to 100+ cloud
+    workers with a single line of code change.
+License: Apache License 2.0
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: future (>= 1.33.0), globals, paws.compute, paws.storage,
+        paws.management, paws.cost.management, paws.security.identity,
+        qs2, uuid, renv, jsonlite, crayon, digest, base64enc, processx
+Suggests: future.apply, testthat (>= 3.0.0), knitr, rmarkdown, withr,
+        mockery
+VignetteBuilder: knitr
+URL: https://starburst.ing, https://github.com/scttfrdmn/starburst
+BugReports: https://github.com/scttfrdmn/starburst/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-22 16:56:23 UTC; scttfrdmn
+Author: Scott Friedman [aut, cre]
+Maintainer: Scott Friedman <help@starburst.ing>
+Repository: CRAN
+Date/Publication: 2026-07-22 17:50:02 UTC

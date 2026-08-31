@@ -1,0 +1,25 @@
+Package: readmit
+Title: Tools for Working with Hospital Readmissions Data
+Version: 0.0.1
+Authors@R: 
+    person("Alex", "Zajichek", , "alex@centralstatz.com", role = c("aut", "cre", "cph"))
+Description: Contains tools for working with and analyzing hospital readmissions data. The package provides utilities for components of the Hospital Readmissions Reduction Program (HRRP), including program timeline functions, Hospital-Specific Report (HSR) helpers, and general importing tools for the Provider Data Catalog (PDC).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, httr, readr, readxl, rlang, stringr, tibble, tidyr
+Suggests: ggplot2, knitr, purrr, reactable, rmarkdown, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+URL: https://centralstatz.github.io/readmit/,
+        https://github.com/centralstatz/readmit
+Depends: R (>= 4.1.0)
+LazyData: true
+Config/Needs/website: rmarkdown
+BugReports: https://github.com/centralstatz/readmit/issues
+NeedsCompilation: no
+Packaged: 2025-12-16 22:54:06 UTC; alexzajichek
+Author: Alex Zajichek [aut, cre, cph]
+Maintainer: Alex Zajichek <alex@centralstatz.com>
+Repository: CRAN
+Date/Publication: 2025-12-19 21:00:02 UTC

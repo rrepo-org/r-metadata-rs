@@ -1,0 +1,25 @@
+Package: irpfR
+Title: Access to the Great Numbers of Brazilian Individual Income Tax
+        (IRPF)
+Version: 0.1.1
+Authors@R: 
+    person("Luã", "Braga de Oliveira", , "luabragadeoliveira@gmail.com", role = c("aut", "cre"))
+Description: Provides functions to download, clean, and structure open data from the Brazilian Federal Revenue (Receita Federal do Brasil - RFB) regarding Personal Income Tax (IRPF) statements. Includes a data dictionary and categorized metadata for several sections such as assets, rights, debts, and income brackets. More information about the data source can be found at <https://dados.gov.br/dados/conjuntos-dados/grandes-nmeros-do-imposto-de-renda-da-pessoa-fsica>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, httr2, janitor, magrittr, readr, tidyr, rlang,
+        tidyselect, tibble
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+Language: en-US
+URL: https://github.com/luabragadeoliveira/irpfR
+BugReports: https://github.com/luabragadeoliveira/irpfR/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-25 18:57:51 UTC; luabr
+Author: Luã Braga de Oliveira [aut, cre]
+Maintainer: Luã Braga de Oliveira <luabragadeoliveira@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-28 19:20:08 UTC

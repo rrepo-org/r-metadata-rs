@@ -1,0 +1,36 @@
+Package: alsi
+Type: Package
+Title: Aggregated Latent Space Index for Binary, Ordinal, and
+        Continuous Data
+Version: 0.2.0
+Date: 2026-03-03
+Authors@R: person("Se-Kang", "Kim",
+    email = "se-kang.kim@bcm.edu",
+    role  = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-0928-3396"))
+Description: Provides three stability-validated pipelines for computing an
+    Aggregated Latent Space Index (ALSI): a binary MCA pipeline
+    (alsi_workflow()), an ordinal pipeline using homals alternating least
+    squares optimal scaling (alsi_workflow_ordinal()), and a continuous
+    ipsatized SVD pipeline (calsi_workflow()).  All three pipelines share
+    a common bootstrap dual-criterion stability framework (principal angles
+    and Tucker congruence phi) for determining the number of dimensions
+    to retain before index construction.  The package is designed to
+    complement Segmented Profile Analysis (SEPA) and is intended for
+    psychometric scale construction and dimensional reduction in survey
+    and clinical research.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: homals, stats, graphics, utils
+Suggests: paran, readxl, openxlsx, testthat (>= 3.0.0), knitr,
+        rmarkdown, spelling
+Depends: R (>= 4.1.0)
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-03-04 00:56:11 UTC; sekangkim
+Author: Se-Kang Kim [aut, cre] (ORCID: <https://orcid.org/0000-0003-0928-3396>)
+Maintainer: Se-Kang Kim <se-kang.kim@bcm.edu>
+Repository: CRAN
+Date/Publication: 2026-03-04 08:40:18 UTC

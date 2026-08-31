@@ -1,0 +1,46 @@
+Package: ppwdeming
+Version: 3.0.2
+Date: 2026-7-23
+Title: Precision Profile Weighted Deming Regression
+Authors@R: c(person("Douglas M.", "Hawkins", role = c("aut", "cph")),
+              person("Jessica J.", "Kraker", role = c("aut", "cre"),
+                     email = "krakerjj@uwec.edu"))
+Author: Douglas M. Hawkins [aut, cph],
+  Jessica J. Kraker [aut, cre]
+Maintainer: Jessica J. Kraker <krakerjj@uwec.edu>
+Depends: R (>= 3.6.0)
+Suggests: testthat (>= 3.0.0), lifecycle (>= 1.0.5)
+Imports: stats
+Description: Weighted Deming regression, also known as 'errors-in-variable' 
+    regression, is applied with suitable weights. Weights are modeled via a 
+    precision profile; thus the methods implemented here are referred to as  
+    precision profile weighted Deming (PWD) regression. The package covers 
+    two settings – one where the precision profiles are known either from
+    external studies or from adequate replication of the X and Y readings, 
+    and one in which there is a plausible functional form for the precision 
+    profiles but the exact (unknown) function must be estimated from the 
+    (generally singlicate) readings.
+    The function set includes tools for: estimated standard errors (via 
+    jackknifing); standardized-residual analysis function with regression 
+    diagnostic tools for normality, linearity and constant variance; and an 
+    outlier analysis identifying significant outliers for closer investigation. 
+    The following reference provides further information on mathematical 
+    derivations and applications. 
+    Hawkins, D.M., and J.J. Kraker (2026). 'Precision Profile Weighted
+    Deming Regression for Methods Comparison'. 
+    The Journal of Applied Laboratory Medicine 11, 379-392
+    <doi:10.1093/jalm/jfaf183>.
+    Weighted Deming regression is also now implemented for multiple 
+    instruments , as set out in Hawkins, D.M., and J.J. Kraker (2026).
+    'Multiple Instrument Methods Comparison by Precision weighted Deming 
+    Regression', on Arxiv <doi:10.48550/arXiv.2607.11776>.
+    The “multi” functions refer to the multiple instrument analysis, and 
+    the "PWD" functions refer to the two-instrument.
+License: GPL (>= 3)
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-23 13:12:38 UTC; jjkra
+Repository: CRAN
+Date/Publication: 2026-07-23 14:00:02 UTC

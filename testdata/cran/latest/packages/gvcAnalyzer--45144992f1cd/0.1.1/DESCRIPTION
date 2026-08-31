@@ -1,0 +1,44 @@
+Package: gvcAnalyzer
+Type: Package
+Title: Global Value Chain Decomposition for Value-Added Trade
+Version: 0.1.1
+Authors@R: c(
+    person("Lila Ballav", "Bhusal",
+      email = "krish.bhula@gmail.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-8934-8841")),
+    person("Alessandro", "Borin",
+      role = "ctb",
+      comment = "Methodology: Borin and Mancini (2023); Borin, Mancini and Taglioni (2025)"),
+    person("Michele", "Mancini",
+      role = "ctb",
+      comment = "Methodology: Borin and Mancini (2023); Borin, Mancini and Taglioni (2025)"),
+    person("Daria", "Taglioni",
+      role = "ctb",
+      comment = "Methodology: Borin, Mancini and Taglioni (2025)"))
+Description: Provides tools for decomposing Global Value Chain (GVC) participation 
+    and value-added trade. It implements the frameworks proposed by Borin and 
+    Mancini (2023) 10.1080/09535314.2022.2153221> for source-based and 
+    sink-based decompositions, and by Borin, Mancini, and Taglioni (2025) 
+    10.1093/wber/lhaf017> for tripartite and output-based GVC measures.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: Matrix, methods, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-02 09:36:15 UTC; ballavbabu
+Author: Lila Ballav Bhusal [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8934-8841>),
+  Alessandro Borin [ctb] (Methodology: Borin and Mancini (2023); Borin,
+    Mancini and Taglioni (2025)),
+  Michele Mancini [ctb] (Methodology: Borin and Mancini (2023); Borin,
+    Mancini and Taglioni (2025)),
+  Daria Taglioni [ctb] (Methodology: Borin, Mancini and Taglioni (2025))
+Maintainer: Lila Ballav Bhusal <krish.bhula@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-09 07:40:01 UTC

@@ -1,0 +1,26 @@
+Package: gasfluxes
+Type: Package
+Title: Greenhouse Gas Flux Calculation from Chamber Measurements
+Version: 0.7-2
+Authors@R: c(person("Roland", "Fuss", role = c("aut", "cre"),
+         email = "roland.fuss@thuenen.de", comment = c(ORCID = "0000-0002-0274-0809")),
+         person("Roman", "Hueppi", role = c("ctb"), comment = c(ORCID = "0000-0001-8815-7835")))
+Description: Functions for greenhouse gas flux calculation from chamber
+    measurements.
+URL: https://git-dmz.thuenen.de/fuss/gasfluxes
+License: GPL (>= 2)
+Depends: R (>= 4.3.0)
+Imports: sfsmisc, data.table (>= 1.14.8), MASS, stats, graphics,
+        grDevices
+Suggests: testthat, knitr, rmarkdown
+LazyData: true
+Encoding: UTF-8
+VignetteBuilder: knitr, rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 08:47:42 UTC; fuss
+Author: Roland Fuss [aut, cre] (ORCID: <https://orcid.org/0000-0002-0274-0809>),
+  Roman Hueppi [ctb] (ORCID: <https://orcid.org/0000-0001-8815-7835>)
+Maintainer: Roland Fuss <roland.fuss@thuenen.de>
+Repository: CRAN
+Date/Publication: 2026-07-27 09:20:02 UTC

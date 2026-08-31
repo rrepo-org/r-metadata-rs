@@ -1,0 +1,29 @@
+Package: rlmstudio
+Title: Access and Control LM Studio
+Version: 0.2.2
+Authors@R: 
+    person("Jeffrey", "Girard", , "me@jmgirard.com",
+           role = c("aut", "cph", "cre"),
+           comment = c(ORCID = "0000-0002-7359-3746"))
+Description: A community-maintained 'R' wrapper for the 'LM Studio' command line
+    interface and API. Provides functions to manage the local daemon and server,
+    download and load models, and interact with Large Language Models (LLMs).
+License: MIT + file LICENSE
+URL: https://jmgirard.github.io/rlmstudio/,
+        https://github.com/jmgirard/rlmstudio
+BugReports: https://github.com/jmgirard/rlmstudio/issues
+Depends: R (>= 4.1.0)
+Imports: cli, httr2, jsonlite, processx, utils
+Suggests: httptest2, knitr, mockery, rmarkdown, testthat (>= 3.0.0),
+        withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-02 18:24:44 UTC; jmgirard
+Author: Jeffrey Girard [aut, cph, cre] (ORCID:
+    <https://orcid.org/0000-0002-7359-3746>)
+Maintainer: Jeffrey Girard <me@jmgirard.com>
+Repository: CRAN
+Date/Publication: 2026-05-05 18:30:02 UTC

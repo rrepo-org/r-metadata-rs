@@ -1,0 +1,18 @@
+Package: DOIcreator
+Title: Append DOIs to References in Word Documents
+Version: 0.1.0
+Authors@R: 
+    person("Umar", "Hussain", email = "drumarhussain@gmail.com", role = c("aut", "cre"))
+Description: Read 'Word' documents containing bibliographic references, search for corresponding DOIs using the 'Crossref' API, and append the retrieved DOIs directly to the references. Supports parallel processing for faster retrieval and produces a new 'Word' document with numbered references including DOIs.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: httr, jsonlite, officer, dplyr
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-08 09:17:20 UTC; DR. Umar Hussain
+Author: Umar Hussain [aut, cre]
+Maintainer: Umar Hussain <drumarhussain@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-12 21:30:18 UTC

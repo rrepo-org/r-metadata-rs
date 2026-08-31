@@ -1,0 +1,37 @@
+Package: rclsp
+Type: Package
+Title: A Modular Two-Step Convex Optimization Estimator for Ill-Posed
+        Problems
+Version: 2.0.1
+Authors@R: 
+    c(
+        person("Ilya", "Bolotov", email = "ilya.bolotov@vse.cz",
+               role = c("aut", "cre"),
+               comment = c(ORCID = "0000-0003-1148-7144"))
+    )
+Description: Convex Least Squares Programming (CLSP) is a two-step estimator 
+    for solving underdetermined, ill-posed, or structurally constrained 
+    least-squares problems. It combines pseudoinverse-based estimation with 
+    convex-programming correction methods inspired by Lasso, Ridge, and 
+    Elastic Net to ensure numerical stability, constraint enforcement, and 
+    interpretability. The package also provides numerical stability analysis 
+    and CLSP-specific diagnostics, including partial R^2, normalized RMSE 
+    (NRMSE), Monte Carlo t-tests for mean NRMSE, and condition-number-based 
+    confidence bands.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.3)
+Imports: Matrix, stats, methods, CVXR (>= 1.8.1)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/econcz/rclsp
+BugReports: https://github.com/econcz/rclsp/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-11 12:00:13 UTC; ilyabolotov
+Author: Ilya Bolotov [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1148-7144>)
+Maintainer: Ilya Bolotov <ilya.bolotov@vse.cz>
+Repository: CRAN
+Date/Publication: 2026-06-11 14:00:07 UTC

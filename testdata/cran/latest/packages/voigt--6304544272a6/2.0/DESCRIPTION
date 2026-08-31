@@ -1,0 +1,23 @@
+Package: voigt
+Type: Package
+Title: The Voigt Distribution
+Version: 2.0
+Date: 2025-08-18
+Authors@R: c(person("Massimo", "Cannas", role = c("aut", "cre"),
+                     email = "massimo.cannas@unica.it"),
+              person("Nicola", "Piras", role = c("aut"),
+                     email = "nicola.piras97@unica.it"),
+              person("Daniele", "Chiriu", role = c("ctb"),
+                     email = "daniele.chiriu@dsf.unica.it"))
+Maintainer: Massimo Cannas <massimo.cannas@unica.it>
+Description: Random generation, density function and parameter estimation for the Voigt distribution. The main objective of this package is to provide R users with efficient estimation of Voigt parameters using classic iid data in a Bayesian framework. The estimating function allows flexible prior specification, specification of fixed parameters and several options for Markov Chain Monte Carlo posterior simulation. A basic version of the algorithm is described in: Cannas M. and Piras, N. (2025) <doi:10.1007/978-3-031-96303-2_53>.
+Depends: R (>= 3.5.0)
+Imports: invgamma, coda, pracma
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2025-08-18 15:06:09 UTC; massimo
+Author: Massimo Cannas [aut, cre],
+  Nicola Piras [aut],
+  Daniele Chiriu [ctb]
+Repository: CRAN
+Date/Publication: 2025-08-18 16:00:03 UTC

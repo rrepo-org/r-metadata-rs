@@ -1,0 +1,27 @@
+Package: LightFitR
+Type: Package
+Title: Design Complex Light Regimes
+Version: 1.0.0
+Authors@R: person('Gina', 'Vong', email='gywv500@york.ac.uk', role=c('aut', 'cre', 'cph'), comment=c(ORCID = "0000-0002-3913-7667"))
+Description: A system for accurately designing complex light regimes using LEDs.
+    Takes calibration data and user-defined target irradiances and it tells  you
+    what intensities to use.
+    For more details see Vong et al. (2025) <doi:10.1101/2025.06.06.658293>.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/ginavong/LightFitR/
+BugReports: https://github.com/ginavong/LightFitR/issues
+LazyData: true
+Depends: R (>= 3.5)
+Imports: utils, graphics, lubridate, nnls, stringr
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-07-24 15:27:11 UTC; Gina Vong
+Author: Gina Vong [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3913-7667>)
+Maintainer: Gina Vong <gywv500@york.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-07-25 16:30:14 UTC

@@ -1,0 +1,32 @@
+Package: RMCLab
+Type: Package
+Title: Lab for Matrix Completion and Imputation of Discrete Rating Data
+Version: 0.1.0
+Date: 2025-07-25
+Description: Collection of methods for rating matrix completion, which is a statistical framework for recommender systems. Another relevant application is the imputation of rating-scale survey data in the social and behavioral sciences. Note that matrix completion and imputation are synonymous terms used in different streams of the literature. The main functionality implements robust matrix completion for discrete rating-scale data with a low-rank constraint on a latent continuous matrix (Archimbaud, Alfons, and Wilms (2025) <doi:10.48550/arXiv.2412.20802>). In addition, the package provides wrapper functions for 'softImpute' (Mazumder, Hastie, and Tibshirani, 2010, <https://www.jmlr.org/papers/v11/mazumder10a.html>; Hastie, Mazumder, Lee, Zadeh, 2015, <https://www.jmlr.org/papers/v16/hastie15a.html>) for easy tuning of the regularization parameter, as well as benchmark methods such as median imputation and mode imputation.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Rcpp, softImpute
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://github.com/aalfons/RMCLab
+BugReports: https://github.com/aalfons/RMCLab/issues
+Authors@R: 
+    c(person("Andreas", "Alfons", 
+             email = "alfons@ese.eur.nl", 
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-2513-3788")),
+      person("Aurore", "Archimbaud", 
+             role = "aut",
+             comment = c(ORCID = "0000-0002-6511-9091")))
+Author: Andreas Alfons [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2513-3788>),
+  Aurore Archimbaud [aut] (ORCID:
+    <https://orcid.org/0000-0002-6511-9091>)
+Maintainer: Andreas Alfons <alfons@ese.eur.nl>
+RoxygenNote: 7.3.2
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2025-07-25 18:46:20 UTC; alfons
+Repository: CRAN
+Date/Publication: 2025-07-28 19:00:09 UTC

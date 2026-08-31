@@ -1,0 +1,36 @@
+Package: sps
+Title: Sequential Poisson Sampling
+Version: 0.7.0
+Authors@R: c(
+    person("Steve", "Martin",
+            role = c("aut", "cre", "cph"),
+            email = "marberts@protonmail.com",
+            comment = c(ORCID = "0000-0003-2544-9480")),
+    person("Justin", "Francis", role = "ctb")
+    )
+Description: Sequential Poisson sampling is a variation of Poisson sampling for
+    drawing probability-proportional-to-size samples with a given number of
+    units, and is commonly used for price-index surveys. This package gives
+    functions to draw stratified sequential Poisson samples according to the
+    method by Ohlsson (1998, ISSN:0282-423X), as well as other order sample
+    designs by Rosén (1997, <doi:10.1016/S0378-3758(96)00186-3>), and generate
+    approximate bootstrap replicate weights according to the generalized
+    bootstrap method by Beaumont and Patak
+    (2012, <doi:10.1111/j.1751-5823.2011.00166.x>).
+Depends: R (>= 4.2)
+Imports: stats
+Suggests: kit (>= 0.0.10), litedown, spelling, tinytest
+License: GPL (>= 3)
+Encoding: UTF-8
+BugReports: https://codeberg.org/marberts/sps/issues
+VignetteBuilder: litedown
+Config/roxygen2/version: 8.0.0
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-08-31 03:26:47 UTC; steve
+Author: Steve Martin [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2544-9480>),
+  Justin Francis [ctb]
+Maintainer: Steve Martin <marberts@protonmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-31 16:10:02 UTC

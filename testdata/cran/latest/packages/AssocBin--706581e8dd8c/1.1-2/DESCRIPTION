@@ -1,0 +1,22 @@
+Package: AssocBin
+Version: 1.1-2
+Encoding: UTF-8
+Title: Measuring Association with Recursive Binning
+Description: An iterative implementation of a recursive binary partitioning algorithm to measure pairwise dependence with a modular design that allows user specification of the splitting logic and stop criteria. Helper functions provide suggested versions of both and support visualization and the computation of summary statistics on final binnings. For a thorough discussion and demonstration of the algorithm, see Salahub and Oldford (2025) <doi:10.1002/sam.70042>.
+Authors@R: c(person(given = "Chris", family = "Salahub", role = c("aut", "cre"), email = "chris.salahub@uwaterloo.ca", comment = c(ORCID = "0000-0003-3770-6798")),
+             person(given = "Wayne", family = "Oldford", role = c("aut"), email = "rwoldford@uwaterloo.ca"))
+Maintainer: Chris Salahub <chris.salahub@uwaterloo.ca>
+Depends: R (>= 4.5.0)
+Imports:
+Suggests: knitr, rmarkdown
+Enhances:
+License: GPL (>= 3)
+NeedsCompilation: no
+Repository: CRAN
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Packaged: 2025-09-02 21:44:08 UTC; cdsal
+Author: Chris Salahub [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3770-6798>),
+  Wayne Oldford [aut]
+Date/Publication: 2025-09-02 22:30:13 UTC

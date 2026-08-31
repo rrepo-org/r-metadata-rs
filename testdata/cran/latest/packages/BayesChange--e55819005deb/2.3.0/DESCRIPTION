@@ -1,0 +1,30 @@
+Package: BayesChange
+Title: Bayesian Methods for Change Point Analysis
+Version: 2.3.0
+Authors@R: c(
+    person("Luca", "Danese", role = c("aut", "cre", "cph"), email = "l.danese1@campus.unimib.it", comment = c(ORCID = "0000-0001-8444-8563")), 
+    person("Riccardo", "Corradin", role = "aut"),
+    person("Andrea", "Ongaro", role = "aut"))
+Description: Performs change point detection on univariate and multivariate time series (Martínez & Mena, 2014, <doi:10.1214/14-BA878> ; Corradin, Danese & Ongaro, 2022, <doi:10.1016/j.ijar.2021.12.019>) and clusters time-dependent data with common change points (Corradin, Danese, KhudaBukhsh & Ongaro, 2026, <doi:10.1007/s11222-025-10756-x>).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp, RcppArmadillo, RcppGSL
+Imports: Rcpp, salso, dplyr, tidyr, ggplot2, ggpubr, coda, rlang,
+        reshape2
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/lucadanese/BayesChange
+BugReports: https://github.com/lucadanese/BayesChange/issues
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-03-06 15:47:22 UTC; lucadanese
+Author: Luca Danese [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8444-8563>),
+  Riccardo Corradin [aut],
+  Andrea Ongaro [aut]
+Maintainer: Luca Danese <l.danese1@campus.unimib.it>
+Repository: CRAN
+Date/Publication: 2026-03-06 16:50:14 UTC

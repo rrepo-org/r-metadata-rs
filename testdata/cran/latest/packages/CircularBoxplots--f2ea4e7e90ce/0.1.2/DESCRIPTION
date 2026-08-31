@@ -1,0 +1,25 @@
+Package: CircularBoxplots
+Title: Grouped Boxplots for Circular Data
+Version: 0.1.2
+Authors@R: 
+    c(person("Josh", "Berlinski", email = "jdberlinski@gmail.com", role = c("aut", "cre")),
+    person("Fan", "Dai", role = "aut", email = "fand@mtu.edu"))
+Description: Plotting functions to create circular boxplots for grouped data.
+  The primary 2-dimensional version creates concentric circular boxplots for
+  specified groups, scaling the width of each boxplot to adjust for human
+  perception. The 3-dimensional version maps these plots onto a torus which is suitable
+  for periodic circular data such as wind direction over the course of a year. An
+  example dataset of this type is provided for reference. For examples of circular
+  boxplots and additional implementation details, see Berlinski et al. (2026) <doi:10.48550/arXiv.2602.05335>.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: circular, plotrix, rgl, RColorBrewer, plot3D, grDevices
+NeedsCompilation: no
+Packaged: 2026-05-08 23:08:38 UTC; josh
+Author: Josh Berlinski [aut, cre],
+  Fan Dai [aut]
+Maintainer: Josh Berlinski <jdberlinski@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-05-13 08:10:17 UTC

@@ -1,0 +1,40 @@
+Package: starling
+Title: Record Linkage for Public Health Surveillance
+Version: 1.1.0
+Description: Record linkage for public health surveillance datasets using either
+    the Fellegi-Sunter probabilistic framework (via reclin2) or deterministic
+    exact-key matching. Provides pre-linkage data quality auditing (preflight()),
+    Medicare number checksum validation (check_medicare()), blocking variable
+    construction (flock()), and the murmuration() linkage engine. murmuration()
+    expresses linkage as a single cohort-to-event concept (linking a linelist of
+    people to a dated stream of vaccination, hospitalisation, or case events within
+    a before/during/after time window), with the historical four-code taxonomy
+    (case-to-hospitalisation, vaccination-to-case, vaccination-to-hospitalisation,
+    vaccination-to-event) retained as deprecated aliases. Also provides linkage
+    weight distribution visualisation (murmuration_plot()) and threshold sensitivity
+    analysis (perch()) with annotated AIHW, WA Data Linkage Unit, and PHRN reference
+    benchmarks. perch() can be called standalone or triggered automatically
+    mid-linkage via murmuration(perch_before_linking = TRUE). Includes synthetic
+    datasets (cases_notifiable, vax_air) and three vignettes demonstrating the
+    complete linkage workflow. Part of the aviary public health surveillance
+    ecosystem.
+Authors@R: person("Nicolas", "Smoll", email = "nicolas.smoll@health.qld.gov.au",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-6923-9701"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: reclin2, dplyr, stringr, lubridate, rlang, ggplot2
+Suggests: patchwork, plotly, phonics, mudnester, testthat (>= 3.0.0),
+        knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/nrsmoll/starling
+BugReports: https://github.com/nrsmoll/starling/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-10 05:32:13 UTC; smolln
+Author: Nicolas Smoll [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6923-9701>)
+Maintainer: Nicolas Smoll <nicolas.smoll@health.qld.gov.au>
+Repository: CRAN
+Date/Publication: 2026-07-10 07:30:02 UTC

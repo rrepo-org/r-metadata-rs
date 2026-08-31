@@ -1,0 +1,31 @@
+Package: MEsreg
+Type: Package
+Title: Generalized Maximum Entropy Estimation for Smooth Transition and
+        Kink Regression Models
+Version: 0.1.0
+Authors@R: c( person("Woraphon", "Yamaka", email = "woraphon.econ@gmail.com", role = c("aut", "cre")),
+  person("Paravee", "Maneejuk", role = "aut"),
+  person("Nuttaphong", "Kaewtathip", role = "aut"))
+Maintainer: Woraphon Yamaka <woraphon.econ@gmail.com>
+Description: 
+  Implements generalized maximum entropy estimation for linear regression,
+  kink regression, and smooth transition kink regression models. The approach
+  represents unknown parameters and disturbances as probability distributions
+  over discrete support spaces and estimates them by maximizing entropy subject
+  to model constraints. It is particularly suited to ill-posed problems and does
+  not require distributional assumptions on the error term. The methods have been
+  applied in empirical studies such as Tarkhamtham and Yamaka (2019)
+  <https://thaijmath.com/index.php/thaijmath/article/view/867/870> and Maneejuk, Yamaka, and Sriboonchitta (2022)
+  <doi:10.1080/03610918.2020.1836214>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: Rsolnp, stats
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-04-02 06:50:39 UTC; Acer
+Author: Woraphon Yamaka [aut, cre],
+  Paravee Maneejuk [aut],
+  Nuttaphong Kaewtathip [aut]
+Repository: CRAN
+Date/Publication: 2026-04-07 07:50:07 UTC

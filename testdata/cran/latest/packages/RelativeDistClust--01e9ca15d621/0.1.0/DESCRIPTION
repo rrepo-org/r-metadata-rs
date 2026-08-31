@@ -1,0 +1,23 @@
+Package: RelativeDistClust
+Type: Package
+Title: Clustering with a Novel Non Euclidean Relative Distance
+Version: 0.1.0
+Authors@R: person(given = "Irene",
+                    family = c("Creus", "Martí"),
+                    role = c("aut", "cre"),
+                    email = "ircrmar@mat.upv.es",
+                    comment=c(ORCID = "0000-0002-7962-4478"))
+Author: Irene Creus Martí [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7962-4478>)
+Maintainer: Irene Creus Martí <ircrmar@mat.upv.es>
+Description: Using the novel Relative Distance to cluster datasets. Implementation of a clustering approach based on the k-means algorithm that can be used with any distance. In addition, implementation of the Hartigan and Wong method to accommodate alternative distance metrics. Both methods can operate with any distance measure, provided a suitable method is available to compute cluster centers under the chosen metric. Additionally, the k-medoids algorithm is implemented, offering a robust alternative for clustering without the need of computing cluster centers under the chosen metric. All three methods are designed to support Relative distances, Euclidean distances, and any user-defined distance functions. The Hartigan and Wong method is described in Hartigan and Wong (1979) <doi:10.2307/2346830> and an explanation of the k-medoids algorithm can be found in Reynolds et al (2006) <doi:10.1007/s10852-005-9022-1>.
+License: GPL-3
+Encoding: UTF-8
+Imports: compositions, proxy, utils, ggpubr, factoextra, ggplot2
+Suggests: testthat (>= 3.0.0), clusterSim, fpc, gtools, cluster
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-17 13:57:44 UTC; IRENE
+Repository: CRAN
+Date/Publication: 2025-09-22 11:50:06 UTC

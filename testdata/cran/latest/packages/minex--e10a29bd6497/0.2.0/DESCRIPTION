@@ -1,0 +1,43 @@
+Package: minex
+Title: Automatically Reduce Failing R Scripts to a Minimal Reproducible
+        Example
+Version: 0.2.0
+Authors@R: c(
+    person("Sandeep", "Bodduluri", , "sbodduluri@uabmc.edu",
+           role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0001-8201-5262")),
+    person("Sumanth", "Chandrupatla", , "srchandr@uab.edu",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-9522-4020")))
+Description: Shrinks a failing R script to the smallest subset of statements
+    that still triggers the same error, using the delta debugging algorithm of
+    Zeller and Hildebrandt (2002) <doi:10.1109/32.988498>. Each candidate
+    reduction is evaluated in a separate R process, so dependencies between
+    statements and their side effects are respected. The result is a
+    one-minimal example, in which removing any remaining statement makes the
+    error disappear; this is the form most useful for bug reports and for
+    questions on community forums. When no statement can be removed, because
+    the failure is nested inside a function body, reduction continues within
+    the surviving statements. A general delta debugging routine and a
+    helper for reducing data frames to the rows that reproduce a failure are
+    also provided.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: callr, stats, utils
+Suggests: clipr, ellmer, knitr, rmarkdown, spelling, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+URL: https://github.com/DIGlabUAB/minex
+BugReports: https://github.com/DIGlabUAB/minex/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-29 01:25:39 UTC; sumanth
+Author: Sandeep Bodduluri [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-8201-5262>),
+  Sumanth Chandrupatla [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-9522-4020>)
+Maintainer: Sumanth Chandrupatla <srchandr@uab.edu>
+Repository: CRAN
+Date/Publication: 2026-08-29 22:40:02 UTC

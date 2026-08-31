@@ -1,0 +1,20 @@
+Package: baseverse
+Title: Modern Base-R Functions
+Version: 0.1.4
+Authors@R: 
+    person(given = 'Yea-Hung', family = 'Chen', 
+       email = 'yea-hung.chen@ucsf.edu', role = c('aut','cre'))
+Description: Includes modern base-R functions. Functions beginning with p_ are wrapper functions for existing base-R functions, supporting native piping. Other functions are wrapper functions for core base-R features, including bracket notation and dollar-sign notation. base_match() and base_when() mimic case_match() and case_when() from 'dplyr' but return a factor by default with levels ordered according to user input. et() mimics count() from 'dplyr'. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-28 21:04:46 UTC; yea-hung
+Author: Yea-Hung Chen [aut, cre]
+Maintainer: Yea-Hung Chen <yea-hung.chen@ucsf.edu>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-04-28 21:30:02 UTC

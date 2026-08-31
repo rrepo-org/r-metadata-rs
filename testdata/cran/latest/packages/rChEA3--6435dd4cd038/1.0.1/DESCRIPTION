@@ -1,0 +1,35 @@
+Package: rChEA3
+Title: R Client for the 'ChEA3' Transcription Factor Enrichment API
+Version: 1.0.1
+Authors@R: 
+    person("Christophe", "Tav",
+    email = "christophe.tav@gmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0001-8808-9617"))
+Description: Interface to the 'ChEA3' transcription factor enrichment API.
+    'ChEA3' integrates evidence from ChIP-seq, co-expression, and literature
+    resources to prioritize transcription factors regulating a given set
+    of genes. This package provides convenient R functions to query the API,
+    retrieve ranked results across collections (including integrated scores),
+    and standardize output for downstream analysis in R/Bioconductor workflows.
+    See <https://maayanlab.cloud/chea3/> or Keenan (2019) <doi:10.1093/nar/gkz446>
+    for further details.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+URL: https://github.com/ckntav/rChEA3, https://ckntav.github.io/rChEA3/
+BugReports: https://github.com/ckntav/rChEA3/issues
+Imports: cli, crayon, dplyr, ggplot2, httr, jsonlite, lubridate, rlang,
+        tidyselect, writexl
+Depends: R (>= 4.1.0)
+LazyData: true
+Suggests: knitr, readxl, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-28 04:32:53 UTC; chris
+Author: Christophe Tav [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8808-9617>)
+Maintainer: Christophe Tav <christophe.tav@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-28 04:50:03 UTC

@@ -1,0 +1,31 @@
+Package: dcorBSS
+Title: Distance-Correlation Based Methods for Blind Source Separation
+        and Dependence Analysis
+Version: 1.0-0
+Authors@R: 
+    c(person(given = "Sarah",
+             family = "Leyder",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0002-0828-0399")),
+      person(given = "Klaus",
+             family = "Nordhausen",
+             role = c("aut", "cre"),
+             email = "klausnordhausenR@gmail.com",
+             comment = c(ORCID = "0000-0002-3758-8501")))
+Description: Independent component analysis based on distance correlation, including a robust variant using the bowl transformation. The package provides user-facing implementations of distance covariance and distance correlation, including memory-efficient blockwise computations for large data sets. It includes a sequential ICA estimator based on minimizing distance correlation, as well as tools for analyzing serial dependence via distance autocorrelation, dependograms, and permutation-based tests. In addition, it provides functions for testing serial dependence based on distance correlation and the Hilbert–Schmidt independence criterion. The methodology is related to Matteson and Tsay (2017) <doi:10.1080/01621459.2016.1150851> and to the robust framework of Leyder et al. (2026) <doi:10.1007/s11634-026-00674-9>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LinkingTo: Rcpp
+Depends: R (>= 4.1.0)
+Imports: dccpp, dHSIC, minqa, nloptr, stats, utils, Rcpp
+Suggests: energy, JADE, robustbase, knitr, rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Author: Sarah Leyder [aut] (ORCID: <https://orcid.org/0000-0002-0828-0399>),
+  Klaus Nordhausen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3758-8501>)
+Maintainer: Klaus Nordhausen <klausnordhausenR@gmail.com>
+VignetteBuilder: knitr
+Packaged: 2026-06-04 18:45:44 UTC; nordklau
+Repository: CRAN
+Date/Publication: 2026-06-10 07:30:09 UTC

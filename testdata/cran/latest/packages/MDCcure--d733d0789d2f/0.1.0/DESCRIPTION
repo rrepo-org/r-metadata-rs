@@ -1,0 +1,33 @@
+Package: MDCcure
+Type: Package
+Title: Martingale Dependence Tools and Testing for Mixture Cure Models
+Version: 0.1.0
+Authors@R: c(
+    person("Blanca", "Monroy-Castillo", , "blancamonroy.96@gmail.com", role = c("aut", "cre")),
+    person("Amalia Jácome", role = "aut"),
+    person("Ricardo Cao", role = "aut"),
+    person("Ingrid Van Keilegom", role = "aut"),
+    person("Ursula Müller", role = "aut")
+  )
+Description: Computes martingale difference correlation (MDC), martingale difference divergence, and their partial extensions to assess conditional mean dependence. The methods are based on Shao and Zhang (2014) <doi:10.1080/01621459.2014.887012>. Additionally, introduces a novel hypothesis test for evaluating covariate effects on the cure rate in mixture cure models, using MDC-based statistics. The methodology is described in Monroy-Castillo et al. (2025, manuscript submitted).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, pinp
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+Imports: Rcpp, RcppParallel, ggplot2, ggtext, gridExtra, future,
+        future.apply, smcure, npcure, survival
+NeedsCompilation: yes
+SystemRequirements: GNU make, TBB
+URL: https://github.com/CastleMon/MDCcure
+BugReports: https://github.com/CastleMon/MDCcure/issues
+Packaged: 2025-07-22 12:05:39 UTC; estel
+Author: Blanca Monroy-Castillo [aut, cre],
+  Amalia Jácome [aut],
+  Ricardo Cao [aut],
+  Ingrid Van Keilegom [aut],
+  Ursula Müller [aut]
+Maintainer: Blanca Monroy-Castillo <blancamonroy.96@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-23 18:50:02 UTC

@@ -1,0 +1,33 @@
+Package: sequential.pops
+Type: Package
+Title: Sequential Analysis of Biological Population Sizes
+Version: 0.1.1
+Authors@R: c(person(given = "Diego F", family = "Rincon",
+       email = "diego.rincon@wsu.edu", role = c("aut", "cre", "cph"),
+       comment = c(ORCID = "0000-0001-6869-4430")),
+       person(given = "Izzy", family = "McCabe",
+       email = "israel.mcdonald@wsu.edu", role = c("aut"),
+       comment = c(ORCID = "0009-0004-5179-0345")), 
+       person(given = "David W", family = "Crowder",
+       email = "dcrowder@wsu.edu", role = c("aut"),
+       comment = c(ORCID = "0000-0002-3720-1581")))
+Description: In population management, data come at more or less regular intervals over time in sampling batches (bouts) and decisions should be made with the minimum number of samples and as quickly as possible. This package provides tools to implement, produce charts with stop lines, summarize results and assess sequential analyses that test hypotheses about population sizes. Two approaches are included: the sequential test of Bayesian posterior probabilities (Rincon, D.F. et al. 2025 <doi:10.1111/2041-210X.70053>), and the sequential probability ratio test (Wald, A. 1945 <http://www.jstor.org/stable/2235829>).
+Encoding: UTF-8
+Imports: methods, emdbook, truncdist, rlang
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+License: GPL (>= 3)
+URL: https://github.com/rincondf/sequential.pops,
+        https://rincondf.github.io/sequential.pops/
+BugReports: https://github.com/rincondf/sequential.pops/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-06-03 22:52:27 UTC; diego.rincon
+Author: Diego F Rincon [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-6869-4430>),
+  Izzy McCabe [aut] (ORCID: <https://orcid.org/0009-0004-5179-0345>),
+  David W Crowder [aut] (ORCID: <https://orcid.org/0000-0002-3720-1581>)
+Maintainer: Diego F Rincon <diego.rincon@wsu.edu>
+Repository: CRAN
+Date/Publication: 2025-06-05 11:20:02 UTC

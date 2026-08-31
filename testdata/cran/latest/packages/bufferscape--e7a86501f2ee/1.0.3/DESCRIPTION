@@ -1,0 +1,44 @@
+Package: bufferscape
+Title: Distance-Weighted Landscape Composition in Buffers Around Point
+        Locations
+Version: 1.0.3
+Authors@R: 
+    person("Michele", "Planta",
+           email = "micheleplanta@outlook.it",
+           role  = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-3353-5368"))
+Description: Characterises the environment surrounding point locations by
+    computing land-cover composition within circular buffers directly from
+    vector polygons, without conversion to a raster grid. For each site and each class it
+    returns the exact surface area inside the buffer and a distance-decay
+    weighted "effective" area in which the kernel is integrated over polygon
+    geometry rather than evaluated at the polygon centroid, avoiding the large
+    bias the centroid approximation introduces for elongated features passing
+    close to the site. Polygons may overlap, so class areas are not constrained
+    to sum to the buffer area. Intended for buffer-based exposure assessment
+    and fine-scale spatial epidemiology, where the relevant scale is tens of
+    metres and global land-cover products are too coarse: land-use regression
+    around air-quality monitors, green space around residential addresses,
+    vector-surveillance traps, and comparable designs. The classification
+    dictionary is user-supplied, and point features and distances to off-buffer
+    reference features are recorded alongside the areas.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1)
+Imports: sf (>= 1.0.0), dplyr, tidyr, stringr, purrr, tibble,
+        grDevices, stats, utils, tools
+Suggests: ggplot2, writexl, readxl, terra, maptiles, testthat (>=
+        3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+URL: https://github.com/mplanta-lab/bufferscape
+BugReports: https://github.com/mplanta-lab/bufferscape/issues
+NeedsCompilation: no
+Packaged: 2026-07-26 19:13:30 UTC; root
+Author: Michele Planta [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-3353-5368>)
+Maintainer: Michele Planta <micheleplanta@outlook.it>
+Repository: CRAN
+Date/Publication: 2026-08-05 08:10:02 UTC

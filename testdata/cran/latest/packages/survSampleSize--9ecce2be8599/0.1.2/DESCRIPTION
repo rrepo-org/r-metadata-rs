@@ -1,0 +1,30 @@
+Package: survSampleSize
+Title: Sample Size Calculator for Survival Endpoint Clinical Trials
+Version: 0.1.2
+Authors@R: 
+    person("Huai", "Jiang",
+           email = "13661928191@163.com",
+           role = c("aut", "cre"))
+Description: An interactive 'shiny' application for sample size and power
+    calculation under general conditions for clinical trials with survival
+    endpoints. Implements the weighted log-rank method of Lu (2021)
+    <doi:10.1002/pst.2069> via the 'lrstat' package, supporting
+    non-proportional hazards, delayed treatment effects, unequal allocation
+    and dropout, as well as the classic method of Freedman (1982)
+    <doi:10.1002/sim.4780010204> via the 'powerSurvEpi' package. Results are
+    presented interactively with survival curves and event-prediction
+    timelines.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: lrstat, powerSurvEpi, shiny, stats
+Suggests: bslib, DT, ggplot2, knitr, plotly, rmarkdown, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-21 09:20:05 UTC; lenovo
+Author: Huai Jiang [aut, cre]
+Maintainer: Huai Jiang <13661928191@163.com>
+Repository: CRAN
+Date/Publication: 2026-06-21 10:40:02 UTC

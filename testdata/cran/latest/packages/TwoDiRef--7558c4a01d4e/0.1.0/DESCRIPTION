@@ -1,0 +1,20 @@
+Package: TwoDiRef
+Type: Package
+Title: Robust Estimation of Conditional 2D Reference Regions
+Description: Provides tools for constructing conditional two-dimensional reference regions in continuous data, particularly suited for clinical, biological, or epidemiological studies requiring robust multivariate assessment. The implemented methodology combines directional quantiles with median‑based partial correlation models to produce reliable and interpretable reference regions even in the presence of outliers. Key features include robust conditional modeling for two responses conditioned on covariates, directional quantile regions, cross‑validation of coverage, visualization tools, and flexible formula‑based inputs.
+Version: 0.1.0
+Authors@R: c(person("Oscar", "Lado-Baleato", email = "ladooscar@uniovi.es", role = c("aut","cre")), person("Sara", "Rodriguez-Pastoriza", email = "sara.rodriguez.pastoriza@uvigo.es", role = c("aut")), person("Javier", "Roca-Pardinas", email = "roca@uvigo.gal", role = c("aut")))
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: qgam, mgcv, sp, ggplot2, scales, shiny
+Suggests: refreg
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-26 10:21:28 UTC; oscarladobaleato
+Author: Oscar Lado-Baleato [aut, cre],
+  Sara Rodriguez-Pastoriza [aut],
+  Javier Roca-Pardinas [aut]
+Maintainer: Oscar Lado-Baleato <ladooscar@uniovi.es>
+Repository: CRAN
+Date/Publication: 2026-03-30 18:40:03 UTC

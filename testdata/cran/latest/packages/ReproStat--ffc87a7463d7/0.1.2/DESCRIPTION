@@ -1,0 +1,37 @@
+Package: ReproStat
+Type: Package
+Title: Reproducibility Diagnostics for Statistical Modeling
+Version: 0.1.2
+Date: 2026-03-25
+Authors@R: person("Gideon", "Nti Boateng",
+    email = "gidiboateng200@gmail.com",
+    role = c("aut", "cre"))
+Description: Tools for diagnosing the reproducibility of statistical model
+    outputs under data perturbations. Implements bootstrap, subsampling, and
+    noise-based perturbation schemes and computes coefficient stability,
+    p-value stability, selection stability, prediction stability, and a
+    composite reproducibility index on a 0 to 100 scale. Includes
+    cross-validation ranking stability for model comparison and visualization
+    utilities. Optional 'backends' support robust M-estimation ('MASS') and
+    penalized regression ('glmnet'). Bootstrap perturbation follows
+    'Efron' and 'Tibshirani' (1993, ISBN:9780412042317); selection stability
+    follows 'Meinshausen' and 'Buhlmann' (2010) <doi:10.1111/j.1467-9868.2010.00740.x>;
+    reproducibility framework follows 'Peng' (2011)
+    <doi:10.1126/science.1213847>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, MASS (>= 7.3), glmnet
+        (>= 4.0), ggplot2 (>= 3.0)
+VignetteBuilder: knitr
+URL: https://ntigideon.github.io/ReproStat/,
+        https://github.com/ntiGideon/ReproStat
+BugReports: https://github.com/ntiGideon/ReproStat/issues
+NeedsCompilation: no
+Packaged: 2026-03-25 15:37:22 UTC; GideonNtiBoateng
+Author: Gideon Nti Boateng [aut, cre]
+Maintainer: Gideon Nti Boateng <gidiboateng200@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-30 17:10:02 UTC

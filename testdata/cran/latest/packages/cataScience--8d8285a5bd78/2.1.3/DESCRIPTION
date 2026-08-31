@@ -1,0 +1,35 @@
+Package: cataScience
+Title: Interactive Training App for Data Science and AI Skills
+Version: 2.1.3
+Authors@R: person(given = "Shanlong",
+                  family = "Ding",
+                  role = c("aut", "cre"),
+                  email = "dings@who.int",
+                  comment = c(ORCID = "0000-0001-9048-6670"))
+Description: An interactive 'shiny' training companion for people who are
+    new to data, developed for World Health Organization data trainings.
+    Bundles hands-on modules for importing data, missing values, outliers,
+    text cleaning, merging, visualization, and basic statistics, plus a set
+    of AI-skills pages (prompting levels, a prompt gallery, AI safety rules,
+    and a methodology case study) and an interactive quiz with per-session
+    topic filters. Launch the app with run_cata().
+License: MIT + file LICENSE
+Language: en-US
+URL: https://github.com/shanlong-who/cataScience
+BugReports: https://github.com/shanlong-who/cataScience/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: broom, bslib (>= 0.6.0), cowplot, dplyr (>= 1.1.0), DT,
+        forcats, ggplot2, markdown, mice, naniar, plotly, purrr, readr,
+        readxl, rio, scales, shiny (>= 1.8.1), skimr, stringr, tibble,
+        tidyr, VIM
+Suggests: testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-28 04:16:53 UTC; CodexSandboxOffline
+Author: Shanlong Ding [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9048-6670>)
+Maintainer: Shanlong Ding <dings@who.int>
+Repository: CRAN
+Date/Publication: 2026-08-28 07:01:32 UTC

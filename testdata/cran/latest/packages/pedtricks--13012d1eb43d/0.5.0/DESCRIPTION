@@ -1,0 +1,42 @@
+Package: pedtricks
+Title: Visualize, Summarize and Simulate Data from Pedigrees
+Version: 0.5.0
+Authors@R: c(
+    person("Julien", "Martin", , "julien.martin@uottawa.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7726-6809")),
+    person("Matthew", "Wolak", , "mew0099@auburn.edu", role = c("aut"),
+           comment = c(ORCID = "0000-0002-7962-0071")),
+    person("Susan", "Johnston", , "Susan.Johnston@ed.ac.uk", role = c("aut"),
+           comment = c(ORCID = "0000-0002-5623-8902")),
+    person("Joel", "Pick", , "joel.l.pick@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-6295-3742")),
+    person("Michael", "Morrissey", , "michael.morrissey@st-andrews.ac.uk",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0001-6209-0177"))
+           )
+Description: Sensitivity and power analysis,
+  for calculating statistics describing pedigrees from wild populations,
+  and for visualizing pedigrees. This is a reboot of the methods developed by Morrissey and Wilson (2010) <doi: 10.1111/j.1755-0998.2009.02817.x>.
+URL: https://juliengamartin.github.io/pedtricks/
+BugReports: https://github.com/JulienGAMartin/pedtricks/issues
+Language: en-US
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LazyData: true
+LazyLoad: yes
+Depends: R (>= 4.0)
+Imports: ggplot2, dplyr, kinship2, tidyr, Matrix, mvtnorm, MCMCglmm,
+        nadiv, genetics, methods, igraph
+NeedsCompilation: no
+Packaged: 2026-02-27 20:32:36 UTC; julien
+Author: Julien Martin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7726-6809>),
+  Matthew Wolak [aut] (ORCID: <https://orcid.org/0000-0002-7962-0071>),
+  Susan Johnston [aut] (ORCID: <https://orcid.org/0000-0002-5623-8902>),
+  Joel Pick [aut] (ORCID: <https://orcid.org/0000-0002-6295-3742>),
+  Michael Morrissey [aut] (ORCID:
+    <https://orcid.org/0000-0001-6209-0177>)
+Maintainer: Julien Martin <julien.martin@uottawa.ca>
+Repository: CRAN
+Date/Publication: 2026-02-28 23:30:02 UTC

@@ -1,0 +1,33 @@
+Package: wex
+Type: Package
+Title: Exact Observation Weights for the Kalman Filter and Smoother
+Version: 0.1.1
+Authors@R: c(
+    person(
+      "Tim", "Ginker",
+      email = "timginker@gmail.com",
+      role = c("aut", "cre","cph"),
+      comment = c(ORCID = "0000-0002-7138-5417")
+    )
+  )
+Maintainer: Tim Ginker <timginker@gmail.com>
+Description: Computes exact observation weights for the Kalman filter and smoother, following Koopman and Harvey (2003) <www.sciencedirect.com/science/article/pii/S0165188902000611>.
+    The package provides tools for analyzing linear Gaussian state-space models,
+    allowing users to quantify the contribution of individual observations to
+    filtered and smoothed state estimates. These weights can be used for
+    interpretation, decomposition, and diagnostic analysis in time series models,
+    including applications such as dynamic factor models. See the README for examples.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: FKF, KFAS
+LazyData: true
+URL: https://github.com/timginker/wex
+BugReports: https://github.com/timginker/wex/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-03 17:51:51 UTC; timgi
+Author: Tim Ginker [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-7138-5417>)
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-04-04 05:20:02 UTC

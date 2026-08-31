@@ -1,0 +1,27 @@
+Package: dashboardapi
+Title: Access Japan's Statistics Dashboard API
+Version: 0.1.0
+Authors@R: 
+    person("Kenji", "Miyazaki", email = "kenjimyzk@gmail.com",
+           role = c("aut", "cre"))
+Description: An unofficial, tidy, rate-conscious interface to the Statistics
+    Dashboard Web API provided by the Statistics Bureau of Japan. Search
+    indicators, regions, terms, social events, and statistical surveys, then
+    retrieve observations as normalized long or wide data frames. The API
+    requires no registration or API key.
+URL: https://github.com/kenjimyzk/dashboardapi
+BugReports: https://github.com/kenjimyzk/dashboardapi/issues
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: httr2 (>= 1.1.0), tibble
+Suggests: knitr, rmarkdown, testthat (>= 3.2.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-31 14:37:16 UTC; kenjimyzk
+Author: Kenji Miyazaki [aut, cre]
+Maintainer: Kenji Miyazaki <kenjimyzk@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-08 11:10:02 UTC

@@ -1,0 +1,23 @@
+Package: ggfootball
+Title: Plotting Football Matches Expected Goals (xG) Stats with
+        'Understat' Data
+Version: 0.3.0
+Authors@R: 
+    person("Aymen", "Nasri", , "aymennasrii@proton.me", role = c("aut", "cre", "cph"))
+Description: Scrapes football match shots data from 'Understat' <https://understat.com/> and visualizes it using interactive plots:
+    - A detailed shot map displaying the location, type, and xG value of shots taken by both teams.
+    - An xG timeline chart showing the cumulative xG for each team over time, annotated with the details of scored goals.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: base64enc, dplyr (>= 1.0.0), gdtools, gfonts, ggiraph,
+        ggplot2, ggsoccer, glue, highcharter, httr, jsonlite, tibble
+Depends: R (>= 4.1.0)
+URL: https://aymennasri.github.io/ggfootball/
+BugReports: https://github.com/aymennasri/ggfootball/issues
+NeedsCompilation: no
+Packaged: 2026-01-23 16:02:07 UTC; aymen
+Author: Aymen Nasri [aut, cre, cph]
+Maintainer: Aymen Nasri <aymennasrii@proton.me>
+Repository: CRAN
+Date/Publication: 2026-01-23 20:00:02 UTC

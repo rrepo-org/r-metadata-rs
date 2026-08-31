@@ -1,0 +1,33 @@
+Package: scanCP
+Type: Package
+Title: Deep Learning–Based Changepoint Detection with Local Neural
+        Models
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Arman", "Azizyan",
+      email = "arman.azizyan@gmail.com",
+      role = c("aut", "cre")),
+    person(
+      "Abolfazl", "Safikhani",
+      role = "aut"))
+Description: Implementation of deep learning–based changepoint detection 
+    algorithm designed for time series with smooth local fluctuations. 
+    The method fits localized feed‑forward neural networks to approximate the 
+    underlying smooth component and constructs a residual‑based detector that 
+    isolates abrupt structural changes. A fully data‑adaptive 
+    empirical cumulative distribution function (ECDF) based thresholding 
+    rule and refinement procedures yield accurate changepoint localization 
+    without parametric assumptions on noise or trend structure.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: plotly, RSNNS, foreach, doSNOW, parallel, pracma, stats,
+        magrittr, tidyr
+NeedsCompilation: no
+Packaged: 2026-05-27 18:21:15 UTC; arman
+Author: Arman Azizyan [aut, cre],
+  Abolfazl Safikhani [aut]
+Maintainer: Arman Azizyan <arman.azizyan@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-30 13:40:08 UTC

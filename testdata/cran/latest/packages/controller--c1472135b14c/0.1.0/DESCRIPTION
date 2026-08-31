@@ -1,0 +1,32 @@
+Package: controller
+Title: Controlled Vocabularies
+Version: 0.1.0
+Authors@R: 
+    person(given = "Joe",
+           family = "Roe",
+           role = c("aut", "cre", "cph"),
+           email = "joe@joeroe.io",
+           comment = c(ORCID = "0000-0002-1011-1244"))
+Description: Work with controlled vocabularies; a predefined set of terms 
+  intended to be used in in a specific context. This package introduces the 
+  'control' verb, which recodes values in a vector using a lookup table of 
+  preferred and variant terms (a 'thesaurus'). It also includes functions for 
+  reading controlled vocabularies from standard formats.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: curl, dplyr, fs, rlang, utils
+Depends: R (>= 4.1.0)
+URL: https://controller.joeroe.io, https://github.com/joeroe/controller
+BugReports: https://github.com/joeroe/controller/issues
+Suggests: covr, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-16 03:55:18 UTC; joeroe
+Author: Joe Roe [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1011-1244>)
+Maintainer: Joe Roe <joe@joeroe.io>
+Repository: CRAN
+Date/Publication: 2026-07-23 13:30:07 UTC

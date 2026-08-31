@@ -1,0 +1,63 @@
+Package: Rsubbotools
+Title: Fast Estimation of Subbottin and AEP Distributions (Generalized
+        Error Distribution)
+Version: 0.0.1
+Authors@R: 
+    c(
+      person(given = "Elias",
+           family = "Haddad",
+           role = c("aut", "cre"),
+           email = "eliasynetto@gmail.com",
+           comment = c(ORCID = "0000-0003-1863-1022")
+      )
+      ,person(given = "Giulio",
+           family = " Bottazzi",
+           role = c("aut"),
+           email = "bottazzi@sssup.it",
+           comment = c(ORCID = "0000-0003-2565-4732")
+      )
+      ,person(given = "Fernando J.",
+           family = " Von Zuben",
+           role = c("aut", "ths"),
+           comment = c(ORCID = "0000-0002-4128-5415")
+      )
+      ,person(given = "Jochen",
+           family = " Voss",
+           role = c("ctb"),
+      )
+      ,person(given = "J.D.",
+           family = " Lamb",
+           role = c("ctb"),
+           )
+      ,person(given = "Brian",
+           family = " Gough",
+           role = c("ctb"),
+           )
+     )
+Description: Create densities, probabilities, random numbers, quantiles, and maximum likelihood estimation for several 
+    distributions, mainly the symmetric and asymmetric power exponential (AEP), a.k.a. the Subbottin family of 
+    distributions, also known as the generalized error distribution.
+    Estimation is made using the design of Bottazzi (2004) <https://ideas.repec.org/p/ssa/lemwps/2004-14.html>, where 
+    the likelihood is maximized by several optimization procedures using the 'GNU Scientific Library (GSL)', translated to 'C++' 
+    code, which makes it both fast and accurate. The package also provides methods for the gamma, Laplace, and Asymmetric
+    Laplace distributions.
+License: GPL-3
+Encoding: UTF-8
+BugReports: https://github.com/nettoyoussef/Rsubbotools/issues
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 2.1.0), usethis, rmarkdown
+Imports: Rcpp
+LinkingTo: Rcpp, RcppGSL
+NeedsCompilation: yes
+Packaged: 2025-07-22 15:16:19 UTC; root
+Author: Elias Haddad [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1863-1022>),
+  Giulio Bottazzi [aut] (ORCID: <https://orcid.org/0000-0003-2565-4732>),
+  Fernando J. Von Zuben [aut, ths] (ORCID:
+    <https://orcid.org/0000-0002-4128-5415>),
+  Jochen Voss [ctb],
+  J.D. Lamb [ctb],
+  Brian Gough [ctb]
+Maintainer: Elias Haddad <eliasynetto@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-22 15:41:26 UTC

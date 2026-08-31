@@ -1,0 +1,25 @@
+Package: PND.heter.cluster
+Type: Package
+Title: Estimating the Cluster Specific Treatment Effects in Partially
+        Nested Designs
+Version: 0.1.0
+Authors@R: person(given = "Xiao",
+                  family = "Liu",
+                  role = c("aut", "cre"),
+                  email = "xiao.liu@austin.utexas.edu")
+Maintainer: Xiao Liu <xiao.liu@austin.utexas.edu>
+Description: Implements the methods for assessing heterogeneous cluster-specific treatment effects in partially nested designs as described in Liu (2024) <doi:10.1037/met0000723>. The estimation uses the multiply robust method, allowing for the use of machine learning methods in model estimation (e.g., random forest, neural network, and the super learner ensemble).  Partially nested designs (also known as partially clustered designs) are designs where individuals in the treatment arm are assigned to clusters (e.g., teachers, tutoring groups, therapists), whereas individuals in the control arm have no such clustering. 
+Depends: R (>= 4.0.0)
+Imports: stats, mvtnorm, SuperLearner, ranger, xgboost, nnet, origami,
+        boot, tidyverse, dplyr, purrr, magrittr, glue
+Suggests: testthat, knitr, rmarkdown
+URL: https://github.com/xliu12/PND.heter
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2025-06-03 13:39:44 UTC; xl9663
+Author: Xiao Liu [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-06-05 10:00:08 UTC

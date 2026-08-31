@@ -1,0 +1,41 @@
+Package: metaLong
+Title: Longitudinal Meta-Analysis with Robust Variance Estimation and
+        Sensitivity Analysis
+Version: 0.1.0
+Authors@R: 
+    person(
+      given   = "Subir",
+      family  = "Hait",
+      role    = c("aut", "cre"),
+      email   = "haitsubi@msu.edu",
+      comment = c(ORCID = "0009-0004-9871-9677")
+    )
+Description: Tools for longitudinal meta-analysis where studies contribute
+    effect sizes at multiple follow-up time points. Implements robust variance
+    estimation (RVE) with Tipton small-sample corrections following Hedges,
+    Tipton, and Johnson (2010) <doi:10.1002/jrsm.5> and Tipton (2015)
+    <doi:10.1037/met0000011>, time-varying sensitivity analysis via the
+    Impact Threshold for a Confounding Variable (ITCV) following Frank (2000)
+    <doi:10.1177/0049124100029002003>, benchmark calibration of the ITCV
+    threshold against observed study-level covariates, spline-based nonlinear
+    time-trend modeling with a nonlinearity test, and leave-k-out fragility
+    analysis across the follow-up trajectory. Designed for researchers
+    synthesising evidence from studies with repeated outcome measurement in
+    education, psychology, health, and the social sciences.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: metafor (>= 3.8-1), splines, stats, utils
+Suggests: clubSandwich (>= 0.5.10), testthat (>= 3.0.0), knitr,
+        rmarkdown, ggplot2, dplyr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/causalfragility-lab/metaLong
+BugReports: https://github.com/causalfragility-lab/metaLong/issues
+NeedsCompilation: no
+Packaged: 2026-03-25 21:49:15 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-03-30 17:30:02 UTC

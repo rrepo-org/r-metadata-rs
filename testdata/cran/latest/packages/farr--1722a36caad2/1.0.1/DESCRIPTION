@@ -1,0 +1,30 @@
+Package: farr
+Title: Data and Code for Empirical Research in Accounting
+Version: 1.0.1
+Authors@R: 
+    person(given = "Ian",
+           family = "Gow",
+           role = c("aut", "cre"),
+           email = "iandgow@gmail.com",
+           comment = c(ORCID = "0000-0002-6243-8409"))
+Description: Handy functions and data to support the course book 'Empirical Research in Accounting: Tools and Methods' (1st ed.). Chapman and Hall/CRC. <doi:10.1201/9781003456230> and <https://iangow.github.io/far_book/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+BugReports: https://github.com/iangow/farr/issues
+Imports: dbplyr (>= 2.2.0), dplyr, magrittr, rlang, tidyr, tibble,
+        readr, stringr, DBI, lubridate, rpart
+Depends: R (>= 3.5.0)
+Suggests: RPostgres, duckdb, knitr, rmarkdown, testthat (>= 3.0.0),
+        spelling
+Config/testthat/edition: 3
+Language: en-US
+URL: https://github.com/iangow/farr
+NeedsCompilation: no
+Packaged: 2026-04-19 10:39:53 UTC; iangow
+Author: Ian Gow [aut, cre] (ORCID: <https://orcid.org/0000-0002-6243-8409>)
+Maintainer: Ian Gow <iandgow@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 10:52:26 UTC

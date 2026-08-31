@@ -1,0 +1,31 @@
+Package: PDEnaiveBayes
+Type: Package
+Title: Plausible Naive Bayes Classifier Using PDE
+Version: 0.4.0
+Date: 2026-07-19
+Authors@R: c(person("Michael", "Thrun",role=c("aut","cph","cre"),email= "m.thrun@gmx.net", comment = c(ORCID = "0000-0001-9542-5543")),person("Quirin", "Stier", email= "Quirin_Stier@gmx.de",role=c("aut","rev"), comment = c(ORCID = "0000-0002-7896-4737")),person("Tim Robin", "Neldner",role=c("ctr","ctb")))
+Maintainer: Michael Thrun <m.thrun@gmx.net>
+Description: Provides a nonparametric, multicore-capable plausible naive Bayes classifier based on Pareto density estimation (PDE). It addresses low-evidence cases through a plausibility correction. To enhance the interpretability of the flexible naive Bayes classifier by revealing its posterior structure and feature-wise, class-specific evidence, posterior probabilities can be visualized as class-wise line plots for one-dimensional data or color-coded Voronoi diagrams for pairwise feature projections, and class-conditional PDE likelihoods as overlaid, mirrored density profiles resembling violin plots. Methodological details are provided by Stier, Q., Hoffmann, J. and Thrun, M. C. (2026) "Classifying with the Fine Structure of Distributions: Leveraging Distributional Information for Robust and Plausible Naive Bayes" <DOI:10.3390/make8010013>. For multicore computations, the implementation applies the general memory-sharing approach described by Thrun, M. C. and Märte, J. (2026) "memshare: Memory Sharing for Multicore Computation in R with an Application to Feature Selection by Mutual Information using PDE" <DOI:10.32614/RJ-2025-043>.
+LazyLoad: yes
+LazyData: TRUE
+NeedsCompilation: yes
+Imports: Rcpp (>= 1.0.8), RcppParallel (>= 5.1.4), pracma, plotly,
+        utils, grDevices, stats, graphics, methods, ggplot2,
+        DatabionicSwarm, memshare
+Suggests: FCPS(>= 1.3.5), ABCanalysis, modeest, deldir, ScatterDensity
+        (>= 0.1.1), gridExtra, parallelDist, parallel,
+        DataVisualizations (>= 1.1.5), knitr
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppParallel
+Depends: R (>= 2.10)
+License: GPL-3
+Encoding: UTF-8
+BugReports: https://github.com/Mthrun/PDEbayes/issues
+Packaged: 2026-07-19 10:54:04 UTC; MCT
+Author: Michael Thrun [aut, cph, cre] (ORCID:
+    <https://orcid.org/0000-0001-9542-5543>),
+  Quirin Stier [aut, rev] (ORCID:
+    <https://orcid.org/0000-0002-7896-4737>),
+  Tim Robin Neldner [ctr, ctb]
+Repository: CRAN
+Date/Publication: 2026-07-19 18:00:19 UTC

@@ -1,0 +1,42 @@
+Package: gkrreg
+Type: Package
+Title: Gaussian Kernel Robust Regression (GKRReg)
+Version: 0.4.0
+Authors@R: c(
+    person("Eufrásio",  "de Andrade Lima Neto",       role = "aut",
+           email = "eufrasio@de.ufpb.br"),
+    person("Marcelo",   "Rodrigo Portela Ferreira", role = c("aut", "cre"),
+           email = "marcelo@de.ufpb.br")
+  )
+Description: Implements the Gaussian Kernel Robust Regression (GKRReg / GKRR)
+    method proposed by De Carvalho, Lima Neto and Ferreira (2017)
+    <doi:10.1016/j.neucom.2016.12.035>. The method re-weights observations
+    iteratively using the Gaussian kernel so that poorly-fitted observations
+    (outliers, leverage points) receive small weights, yielding resistance to
+    Y-space outliers, X-space outliers and leverage points. Convergence is
+    guaranteed by Propositions 4.1 and 4.2 of the original paper. Three
+    estimators for the kernel width hyper-parameter are provided (S1: Caputo,
+    S2: pairwise median, S3: residual variance). Inference is provided via an
+    analytic sandwich variance estimator (default) or via bootstrap
+    (percentile, normal and BCa intervals with p-values) through gkrr_boot().
+    Six real datasets from the robust regression literature are included to
+    facilitate reproducible comparisons.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices, MASS, sm
+Suggests: robustbase, quantreg, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/marcelorpf/gkrreg
+BugReports: https://github.com/marcelorpf/gkrreg/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-07 13:43:30 UTC; marceloferreira
+Author: Eufrásio de Andrade Lima Neto [aut],
+  Marcelo Rodrigo Portela Ferreira [aut, cre]
+Maintainer: Marcelo Rodrigo Portela Ferreira <marcelo@de.ufpb.br>
+Repository: CRAN
+Date/Publication: 2026-06-17 13:40:02 UTC

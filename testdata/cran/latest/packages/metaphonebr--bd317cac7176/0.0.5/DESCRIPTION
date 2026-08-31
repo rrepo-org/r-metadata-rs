@@ -1,0 +1,37 @@
+Package: metaphonebr
+Title: Custom 'MetaphoneBR' Phonetic Encoding for Brazilian Names
+Version: 0.0.5
+Authors@R: c(
+    person(
+      "Rodrigo", "Borges",
+      email = "rodrigoesborges@gmail.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-2076-1424")
+      ),
+    person(
+      "Lucas","Mation", 
+      role = c("aut"),
+      comment = c(ORCID = "0000-0002-7461-932X")),
+    person("Ipea - Institue for Applied Economic Research", role = c("cph", "fnd"))
+  )
+Description: Simplifies Brazilian names phonetically using a custom 'metaphoneBR' algorithm that preserves ending vowels. 
+  Useful for name matching processing preserving gender information carried generally by ending vowels in Portuguese.
+  Mation (2025) <doi:10.6082/uchicago.15104>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: lifecycle, stringi
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/ipeadata-lab/metaphonebr,
+        https://ipeadata-lab.github.io/metaphonebr/
+BugReports: https://github.com/ipeadata-lab/metaphonebr/issues
+NeedsCompilation: no
+Packaged: 2025-09-18 19:30:13 UTC; B05497153712
+Author: Rodrigo Borges [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2076-1424>),
+  Lucas Mation [aut] (ORCID: <https://orcid.org/0000-0002-7461-932X>),
+  Ipea - Institue for Applied Economic Research [cph, fnd]
+Maintainer: Rodrigo Borges <rodrigoesborges@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-18 19:40:02 UTC

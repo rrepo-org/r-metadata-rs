@@ -1,0 +1,38 @@
+Package: fusedTree
+Title: Fused Partitioned Regression for Clinical and Omics Data
+Version: 1.1.0
+Authors@R: 
+    c(person(c("Jeroen", "M."), "Goedhart", , "jeroengoed@gmail.com", role = c("aut", "cre", "cph"),
+     comment = c(ORCID = "0000-0003-0134-1897")),
+     person(c("Wessel", "N."), "van Wieringen", role = "aut", comment = "Author of 'porridge' 'R' package, from which many functionalities have been adopted"),
+     person("Thomas", "Klausch", role = "ths"),
+     person(c("Mark","A."), "van de Wiel", role = "ths"),
+     person("Hanarth Fonds", role = "fnd"))
+Description: Fit (generalized) linear regression models in each leaf node of a tree.
+    The tree is constructed using clinical variables only. The linear regression
+    models are constructed using (high-dimensional) omics variables only. The
+    leaf-node-specific regression models are estimated using the penalized likelihood
+    including a standard ridge (L2) penalty and a fusion penalty that links the
+    leaf-node-specific regression models to one another. The intercepts of the
+    leaf nodes reflect the effects of the clinical variables and are left
+    unpenalized. The tree, fitted with the clinical variables only,
+    should be constructed outside of the package with the 'rpart' 'R' package.
+    See Goedhart and others (2024) <doi:10.48550/arXiv.2411.02396> for details
+    on the method.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: Matrix, splitTools, survival, treeClust, partykit
+Suggests: rpart
+NeedsCompilation: no
+Packaged: 2025-08-20 07:55:32 UTC; P072713
+Author: Jeroen M. Goedhart [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-0134-1897>),
+  Wessel N. van Wieringen [aut] (Author of 'porridge' 'R' package, from
+    which many functionalities have been adopted),
+  Thomas Klausch [ths],
+  Mark A. van de Wiel [ths],
+  Hanarth Fonds [fnd]
+Maintainer: Jeroen M. Goedhart <jeroengoed@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-08-20 08:10:02 UTC

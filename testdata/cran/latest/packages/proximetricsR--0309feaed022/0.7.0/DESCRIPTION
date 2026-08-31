@@ -1,0 +1,70 @@
+Package: proximetricsR
+Type: Package
+Title: Spectral Preprocessing and Chemometric Calibration of NIR
+        Sensors
+Version: 0.7.0
+Date: 2026-08-01
+Authors@R: c(
+    person(given = "Leonardo",
+           family = "Ramirez-Lopez",
+           role = c("aut", "cre"),
+           email = "ramirez-lopez.l@buchi.com",
+           comment = c(ORCID = "0000-0002-5369-5120")),
+    person(given = "Claudio",
+           family = "Orellano",
+           role = "aut", 
+           comment = c(ORCID = "0009-0005-7523-4236")),
+    person(given = "Nicolae",
+           family = "Cudlenco",
+           role = "aut", 
+           comment = c(ORCID = "0000-0001-6547-3659")),
+    person(given = "Mai",
+           family = "Said",
+           role = "aut", 
+           comment = c(ORCID = "0000-0001-6979-8725")),
+    person(given = "Mohamed",
+           family = "Abushosha",
+           role = "aut"), 
+    person(given = "Marcal",
+           family = "Plans",
+           role = "aut", 
+           comment = c(ORCID = "0000-0001-9894-2626"))
+    )
+Maintainer: Leonardo Ramirez-Lopez <ramirez-lopez.l@buchi.com>
+BugReports: https://github.com/buchi-labortechnik-ag/proximetricsr/issues
+Description: Provides tools to build quantitative chemometric models and
+    applications for near-infrared (NIR) sensors. Chemometric regression
+    models are based on partial least squares regression as described by
+    Wold (1975) <doi:10.1016/B978-0-12-103950-9.50017-4> and modified
+    partial least squares regression as described by Shenk and Westerhaus
+    (1991) <doi:10.2135/cropsci1991.0011183X003100020049x>, with further
+    discussion by Westerhaus (2014) <doi:10.1255/nirn.1492>.
+License: MIT + file LICENSE
+URL: https://proximetricsr.r.packages.buchi-nir.io/,
+        https://github.com/buchi-labortechnik-ag/proximetricsr/
+VignetteBuilder: quarto
+Depends: R (>= 4.2.0)
+Imports: callr, digest (>= 0.6), foreach, mathjaxr (>= 1.0), plotly (>=
+        4.0), prospectr (>= 0.2.10), quarto, uuid, withr, zip, readxl,
+        jsonlite, Rcpp, scales
+Suggests: knitr, testthat, covr, doParallel, parallel, pkgload
+LinkingTo: Rcpp, RcppArmadillo
+RdMacros: mathjaxr
+NeedsCompilation: yes
+LazyData: true
+LazyDataCompression: xz
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/VersionName: Matterhorn2
+Config/roxygen2/version: 8.0.0
+Config/roxygen2/markdown: TRUE
+Packaged: 2026-07-31 23:29:39 UTC; leo
+Author: Leonardo Ramirez-Lopez [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5369-5120>),
+  Claudio Orellano [aut] (ORCID: <https://orcid.org/0009-0005-7523-4236>),
+  Nicolae Cudlenco [aut] (ORCID: <https://orcid.org/0000-0001-6547-3659>),
+  Mai Said [aut] (ORCID: <https://orcid.org/0000-0001-6979-8725>),
+  Mohamed Abushosha [aut],
+  Marcal Plans [aut] (ORCID: <https://orcid.org/0000-0001-9894-2626>)
+Repository: CRAN
+Date/Publication: 2026-08-04 14:10:02 UTC

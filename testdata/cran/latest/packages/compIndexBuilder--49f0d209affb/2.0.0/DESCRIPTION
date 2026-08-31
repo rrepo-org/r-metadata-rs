@@ -1,0 +1,48 @@
+Package: compIndexBuilder
+Type: Package
+Title: Composite Index Builder & Analytics 'shiny' App
+Version: 2.0.0
+Authors@R: c(
+    person("Hossein", "Hassani", role = "aut",
+           email = "hassani.stat@gmail.com"),
+    person("Steve", "Macfeely", role = "aut",
+           email = "Steve.MACFEELY@oecd.org"),
+    person("Petra", "Kynclova", role = "aut",
+           email = "petra.kynclova@unctad.org"),
+    person("Nour", "Barnat", role = "aut",
+           email = "nour.barnat@unctad.org"),
+    person("Leila", "Marvian Mashhad", role = c("aut", "cre"),
+           email = "leila.marveian@gmail.com"),
+    person("Fernando", "CANTU BAZALDUA", role = "aut",
+           email = "f.cantu@unido.org")
+    )
+Author: Hossein Hassani [aut],
+  Steve Macfeely [aut],
+  Petra Kynclova [aut],
+  Nour Barnat [aut],
+  Leila Marvian Mashhad [aut, cre],
+  Fernando CANTU BAZALDUA [aut]
+Maintainer: Leila Marvian Mashhad <leila.marveian@gmail.com>
+Description: Provides an interactive 'shiny' application for constructing,
+    analysing, comparing, and visualising composite indices from tabular
+    multidimensional data. Supports multi-sheet 'Excel' workbooks with
+    active-sheet selection, refresh controls, per-sheet and workbook-wide
+    exports, missing-data processing, indicator direction and normalisation
+    controls, equal and custom weighting, entity-level ranking, time-series
+    analysis and forecasting, entity comparisons, pillar-based sub-indices
+    with equal, custom, correlation-based, or principal-component weights, and
+    diagnostic tools including internal-consistency reliability assessment,
+    coefficient of variation, principal component analysis, sensitivity analysis,
+    correlation heatmaps, and weighted flow visualizations.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: shiny, shinydashboard, DT, plotly, ggplot2, dplyr, readxl,
+        forecast, tidyr, networkD3, psych, corrplot, missForest, zoo,
+        jsonlite
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-19 16:43:21 UTC; marvian
+Repository: CRAN
+Date/Publication: 2026-08-19 22:00:22 UTC

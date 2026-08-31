@@ -1,0 +1,31 @@
+Package: TKApprox
+Title: A General Framework for Bayesian Estimation Using the
+        'Tierney'-'Kadane' Approximation
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut"))
+Description: Provides a distribution-independent framework for Bayesian estimation of arbitrary univariate probability models using the 'Tierney'-'Kadane' approximation ('Tierney' & 'Kadane', 1986 <doi:10.1080/01621459.1986.10478240>). Users specify the probability distribution, likelihood, prior distributions, and censoring mechanism, while the package automatically constructs the posterior distribution, computes posterior modes and Hessian matrices, approximates posterior expectations under several Bayesian loss functions, and returns Bayesian parameter estimates, posterior covariance matrices, credible intervals, diagnostic plots, and model comparison statistics. Supports complete, right-, left-, interval-, Type-I, Type-II, progressive Type-II, hybrid, and doubly censored data ('Lawless', 2003 <ISBN:978-0-471-37215-8>; 'Meeker' & 'Escobar', 1998 <ISBN:978-0-471-14328-4>; 'Balakrishnan' & 'Aggarwala', 2000 <ISBN:978-0-8176-4129-0>; 'Kundu' & 'Pradhan', 2009 <doi:10.1198/TECH.2009.0019>), making it a flexible tool for Bayesian reliability, survival, and lifetime data analysis.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: checkmate, numDeriv, maxLik, rlang, stats, graphics,
+        grDevices, utils, MASS
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, pkgdown, ggplot2,
+        gridExtra
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-30 23:21:30 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 20:00:02 UTC

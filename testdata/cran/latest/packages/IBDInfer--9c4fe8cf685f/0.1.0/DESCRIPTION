@@ -1,0 +1,26 @@
+Package: IBDInfer
+Type: Package
+Title: Design-Based Causal Inference Method for Incomplete Block
+        Designs
+Version: 0.1.0
+Authors@R: c(person(given = "Taehyeon",
+             family = "Koo",
+             email = "tk3077@cumc.columbia.edu", 
+             role = c("aut", "cre")),
+      person(given = "Nicole",
+             family = "Pashley",
+             email = "nicole.pashley@rutgers.edu", 
+             role = "ctb"))
+Description: This R package implements methods for estimation and inference under Incomplete Block Designs and Balanced Incomplete Block Designs within a design-based finite-population framework. Based on 'Koo and Pashley' (2026) <doi:10.1093/biomet/asag013>, it includes block-level estimators and extends to unit-level effects using 'Horvitz-Thompson' and 'Hájek' estimators. The package also provides asymptotic confidence intervals to support valid statistical inference.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: crossdes, dplyr, tidyr
+URL: https://github.com/taehyeonkoo/IBDInfer
+NeedsCompilation: no
+Packaged: 2026-04-01 04:14:18 UTC; taehyeon
+Author: Taehyeon Koo [aut, cre],
+  Nicole Pashley [ctb]
+Maintainer: Taehyeon Koo <tk3077@cumc.columbia.edu>
+Repository: CRAN
+Date/Publication: 2026-04-01 23:00:02 UTC

@@ -1,0 +1,47 @@
+Package: rarefun
+Type: Package
+Title: Functions for Rare Events Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Vyacheslav", "Lyubchich", 
+           email = "lyubchich@umces.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7936-4285")),
+    person("Geneviève", "Nesslage", 
+           role = "aut",
+           comment = c(ORCID = "0000-0003-1770-6803"))
+    )
+Description: Functions for detecting and analyzing rare events in data.
+    Implements isolation forest (Liu et al., 2008, <doi:10.1109/ICDM.2008.17>)
+    and clustering
+    for anomaly detection in time series residuals. Decomposes time series
+    using LOESS (Locally Estimated Scatterplot Smoothing) or STL 
+    (Seasonal-Trend decomposition using LOESS). Detects marine heatwaves 
+    and cold spells following Hobday et al. (2016) <doi:10.1016/j.pocean.2015.12.014>.
+    Provides goodness-of-fit tests for quantile regression (Haupt et al.,
+    2011, <doi:10.1080/02664763.2011.573542>), partial dependence with
+    quantile random forests, MCC (Matthews Correlation Coefficient)
+    computation and testing, knee-point detection via the Kneedle algorithm
+    (Satopaa et al., 2011, <doi:10.1109/ICDCSW.2011.20>), and spatial
+    point matching.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: RANN, boot, dbscan, geosphere, isotree, Rdpack, parallel, pdp,
+        stats
+Suggests: testthat (>= 3.0.0), dplyr, ggplot2, heatwaveR, patchwork,
+        quantmod, quantreg, ranger, viridis
+URL: https://github.com/vlyubchich/rarefun
+BugReports: https://github.com/vlyubchich/rarefun/issues
+RdMacros: Rdpack
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-29 16:09:36 UTC; vyach
+Author: Vyacheslav Lyubchich [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7936-4285>),
+  Geneviève Nesslage [aut] (ORCID:
+    <https://orcid.org/0000-0003-1770-6803>)
+Maintainer: Vyacheslav Lyubchich <lyubchich@umces.edu>
+Repository: CRAN
+Date/Publication: 2026-06-02 11:10:02 UTC

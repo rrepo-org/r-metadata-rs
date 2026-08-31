@@ -1,0 +1,39 @@
+Package: flexstanr
+Title: Portable Backend Layer for 'Stan' Models
+Version: 0.2.0
+Authors@R: 
+    c(person("Carl", "Pearson", email = "carl.ab.pearson@gmail.com", role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0003-0701-7860")),
+      person("Weston", "Voglesonger", email = "westonvogle@gmail.com", role = "aut"))
+Description: Gives a 'Stan'-based R package one interface for fitting its
+    models through either 'rstan' or 'cmdstanr', neither of which is required to
+    install this package (install whichever you use). Collects and
+    validates sampler options, guarding against mixing one backend's argument
+    vocabulary into the other, dispatches the fit to the chosen backend, and
+    exposes backend-agnostic accessors for reading posterior draws, extracting
+    parameters, and running generated quantities. The host package supplies its
+    own compiled models; flexstanr resolves them from the calling package at run
+    time, so the same code works whichever backend is installed.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: methods, parallelly, tools
+Suggests: cmdstanr, desc, knitr, pkgload, posterior, rmarkdown,
+        roxygen2, rstan (>= 2.18.1), spelling, testthat (>= 3.2.0),
+        withr
+VignetteBuilder: knitr
+Additional_repositories: https://stan-dev.r-universe.dev
+Config/testthat/edition: 3
+URL: https://accidda.github.io/flexstanr/,
+        https://github.com/ACCIDDA/flexstanr
+BugReports: https://github.com/ACCIDDA/flexstanr/issues
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-25 16:28:15 UTC; runner
+Author: Carl Pearson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0701-7860>),
+  Weston Voglesonger [aut]
+Maintainer: Carl Pearson <carl.ab.pearson@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 21:30:02 UTC

@@ -1,0 +1,25 @@
+Package: peeky
+Title: Download and Extract 'shinylive' Applications
+Version: 0.1.0
+Authors@R: 
+    person("James Joseph", "Balamuta", , "james.balamuta@gmail.com", role = c("aut", "cre"))
+Description: Peek into published 'shinylive' applications by retrieving their source code.
+    Supports downloading and extracting 'shiny' application source from 
+    'quarto' documents and standalone 'shinylive' applications.
+URL: https://r-pkg.thecoatlessprofessor.com/peeky/,
+        https://github.com/coatless-rpkg/peeky
+BugReports: https://github.com/coatless-rpkg/peeky/issues
+License: AGPL (>= 3)
+Imports: jsonlite, httr, rvest, fs, cli
+Suggests: knitr, rmarkdown, quarto, withr, testthat (>= 3.0.0)
+Encoding: UTF-8
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-26 21:10:04 UTC; ronin
+Author: James Joseph Balamuta [aut, cre]
+Maintainer: James Joseph Balamuta <james.balamuta@gmail.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-07-02 18:40:08 UTC

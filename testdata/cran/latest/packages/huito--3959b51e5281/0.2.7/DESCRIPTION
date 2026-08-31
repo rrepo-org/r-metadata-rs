@@ -1,0 +1,36 @@
+Package: huito
+Type: Package
+Version: 0.2.7
+Title: Reproducible and Flexible Label Design
+Description: An open-source R package to deploys reproducible and flexible labels using layers. 
+  The 'huito' package is part of the 'inkaverse' project for developing different procedures and
+  tools used in plant science and experimental designs. 
+  Learn more about the 'inkaverse' project at <https://inkaverse.com/>.
+Authors@R: c(
+    person("Flavio", "Lozano-Isla", email = "flozanoisla@gmail.com", role = c("aut", "cre")
+          , comment = c(ORCID = "0000-0002-0714-669X")),
+    person("Victor-Hugo", "Baldera-Chapoñan", email = "victorhugobalderachaponan@gmail.com", role ="aut"
+          , comment = c(ORCID = "0009-0003-4321-7103")),
+    person("Inkaverse", role = "cph")
+    )
+License: GPL-3 | file LICENSE
+URL: https://huito.inkaverse.com/, https://github.com/flavjack/huito
+BugReports: https://github.com/flavjack/huito/issues/
+Depends: magick, cowplot, ggplot2, dplyr, R (>= 2.10)
+Imports: tidyr, tibble, purrr, sysfonts, showtext, qrcode, pdftools
+Suggests: knitr, rmarkdown, quarto, gsheet, inti
+VignetteBuilder: knitr, quarto
+LazyData: true
+Encoding: UTF-8
+SystemRequirements: pandoc
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-20 18:16:28 UTC; LENOVO
+Author: Flavio Lozano-Isla [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0714-669X>),
+  Victor-Hugo Baldera-Chapoñan [aut] (ORCID:
+    <https://orcid.org/0009-0003-4321-7103>),
+  Inkaverse [cph]
+Maintainer: Flavio Lozano-Isla <flozanoisla@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:42:43 UTC

@@ -1,0 +1,28 @@
+Package: nimbleMacros
+Version: 0.1.3
+Date: 2026-08-19
+Title: Macros Generating 'nimble' Code
+Authors@R: c(person("Ken", "Kellner", email="contact@kenkellner.com", 
+                    role=c("cre","aut")),
+             person("Perry", "de Valpine", role = "aut"),
+             person("Christopher", "Paciorek", role = "aut"),
+             person("Daniel", "Turek", role = "aut"))
+Depends: R (>= 3.4.0), nimble
+Imports: reformulas
+Suggests: knitr, markdown, testthat
+Description: Macros to generate 'nimble' code from a concise syntax. Included are macros for generating linear modeling code using a formula-based syntax and for building for() loops. For more details review the 'nimble' manual: <https://r-nimble.org/manual/cha-user-defined.html#sec:user-macros>.
+License: BSD_3_clause + file LICENSE | GPL (>= 2)
+NeedsCompilation: no
+URL: https://r-nimble.org
+BugReports: https://github.com/nimble-dev/nimbleMacros/issues
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-08-19 22:38:39 UTC; ken
+Author: Ken Kellner [cre, aut],
+  Perry de Valpine [aut],
+  Christopher Paciorek [aut],
+  Daniel Turek [aut]
+Maintainer: Ken Kellner <contact@kenkellner.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 10:00:11 UTC

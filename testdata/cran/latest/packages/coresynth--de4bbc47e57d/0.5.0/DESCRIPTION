@@ -1,0 +1,37 @@
+Package: coresynth
+Title: Fast and Unified Synthetic Control Methods
+Version: 0.5.0
+Authors@R: 
+    person("Yosuke Abe", role = c("aut", "cre"),
+           email = "yosuke.abe0507@gmail.com")
+Description: A unified 'Formula' interface to the Synthetic Control Method
+    (SCM) and related panel-data causal inference estimators: Synthetic
+    Difference-in-Differences (SDID), Generalized Synthetic Control (GSC),
+    Matrix Completion (MC), Time-Aware Synthetic Control (TASC), and Synthetic
+    Interventions (SI), together with an experimental-design variant.
+    Computational bottlenecks (quadratic programming, singular value
+    decomposition, and Kalman filtering) are implemented in 'C++' via
+    'RcppArmadillo'. Methods are described in Abadie, Diamond and Hainmueller
+    (2010) <doi:10.1198/jasa.2009.ap08746>, Arkhangelsky, Athey, Hirshberg,
+    Imbens and Wager (2021) <doi:10.1257/aer.20190159>, Xu (2017)
+    <doi:10.1017/pan.2016.2>, Athey, Bayati, Doudchenko, Imbens and Khosravi
+    (2021) <doi:10.1080/01621459.2021.1891924>, and Agarwal, Shah and Shen
+    (2025) <doi:10.1287/opre.2025.1590>.
+License: MIT + file LICENSE
+URL: https://github.com/yo5uke/coresynth, https://yo5uke.com/coresynth/
+BugReports: https://github.com/yo5uke/coresynth/issues
+Encoding: UTF-8
+Config/roxygen2/markdown: TRUE
+Depends: R (>= 4.1.0)
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, Formula, ggplot2, broom, jsonlite
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: yes
+Packaged: 2026-08-25 10:56:21 UTC; yo5uk
+Author: Yosuke Abe [aut, cre]
+Maintainer: Yosuke Abe <yosuke.abe0507@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 11:40:02 UTC

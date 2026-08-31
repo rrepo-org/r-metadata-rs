@@ -1,0 +1,39 @@
+Package: aftables
+Title: Create Spreadsheet Publications Following Best Practice
+Version: 2.1.0
+Authors@R: c(
+    person("Matt", "Dray", , "mwdray@gmail.com", role = c("aut")),
+    person("Tim", "Taylor", role = "ctb"),
+    person("Matt", "Kerlogue", role = "ctb"),
+    person("Crown Copyright", role = c("cph")),
+    person("Olivia", "Box Power", , "Olivia.BoxPower@dhsc.gov.uk", role = c("cre", "ctb")),
+    person("Zachary", "Gleisner", , "Zachary.Gleisner@dhsc.gov.uk", role = "ctb")
+  )
+Description: Generate spreadsheet publications that follow best practice
+    guidance from the UK government's Analysis Function, available at 
+    <https://analysisfunction.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/>,
+    with a focus on accessibility. See also the 'Python' package 'gptables'.
+License: MIT + file LICENSE
+URL: https://best-practice-and-impact.github.io/aftables/,
+        https://github.com/best-practice-and-impact/aftables
+BugReports: https://github.com/best-practice-and-impact/aftables/issues
+Depends: R (>= 4.1.0)
+Imports: openxlsx2 (>= 1.27), pillar, purrr, dplyr, stringr,
+        tidyselect, tidyr, rlang, utils, yaml, tibble, stats
+Suggests: covr, knitr, rmarkdown, rstudioapi, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-24 08:21:44 UTC; OBoxPower
+Author: Matt Dray [aut],
+  Tim Taylor [ctb],
+  Matt Kerlogue [ctb],
+  Crown Copyright [cph],
+  Olivia Box Power [cre, ctb],
+  Zachary Gleisner [ctb]
+Maintainer: Olivia Box Power <Olivia.BoxPower@dhsc.gov.uk>
+Repository: CRAN
+Date/Publication: 2026-08-24 08:40:27 UTC

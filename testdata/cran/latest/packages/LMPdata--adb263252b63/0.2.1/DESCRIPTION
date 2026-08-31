@@ -1,0 +1,24 @@
+Package: LMPdata
+Type: Package
+Title: Easy Import of the EU Labour Market Policy Data
+Version: 0.2.1
+Author: Aleksander Rutkowski [aut, cre]
+Maintainer: Aleksander Rutkowski <alek.rutkowski@gmail.com>
+Authors@R: c(person("Aleksander", "Rutkowski", role = c("aut", "cre"),
+  email = "alek.rutkowski@gmail.com"))
+Description: European Commission's Labour Market Policy (LMP) database
+  (<https://webgate.ec.europa.eu/empl/redisstat/databrowser/explore/all/lmp?lang=en&display=card&sort=category>)
+  provides information on labour market interventions, which are government
+  actions to help and support the unemployed and other disadvantaged groups in
+  the transition from unemployment or inactivity to work. It covers the EU
+  countries and Norway. This package provides functions for downloading and
+  importing the LMP data and metadata (codelists).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: magrittr, data.table, curl, xml2
+URL: https://github.com/alekrutkowski/LMPdata
+NeedsCompilation: no
+Packaged: 2026-06-18 14:42:28 UTC; rutkoal
+Repository: CRAN
+Date/Publication: 2026-06-18 15:30:02 UTC

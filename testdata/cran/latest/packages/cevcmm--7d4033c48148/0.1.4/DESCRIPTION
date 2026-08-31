@@ -1,0 +1,37 @@
+Package: cevcmm
+Title: Communication-Efficient Varying Coefficient Mixed-Effects Models
+Version: 0.1.4
+Authors@R: c(
+    person("Lida", "Jalili",
+           email = "lchalangarjalilideh1@gsu.edu",
+           role = c("aut", "cre")),
+    person("Li-Hsiang", "Lin",
+           email = "lhlin@gsu.edu",
+           role = "aut"))
+Description: Scalable inference for Varying Coefficient Mixed-Effects
+    Models (VCMMs) with large, correlated random effects. Implements
+    sufficient-statistics, one-step communication-efficient surrogate
+    likelihood, and SVD-stabilized (Singular Value Decomposition)
+    estimators with Kronecker and separable covariance structures.
+    Implements the methodology of Jalili and Lin (2025)
+    <doi:10.48550/arXiv.2511.12732>.
+License: GPL (>= 3)
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://lidajalili.github.io/cevcmm/,
+        https://github.com/lidajalili/cevcmm
+BugReports: https://github.com/lidajalili/cevcmm/issues
+Depends: R (>= 4.0.0)
+Imports: splines, Rcpp (>= 1.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: devtools, microbenchmark, RSpectra, testthat (>= 3.0.0),
+        knitr, rmarkdown
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-27 14:42:48 UTC; lidajalili
+Author: Lida Jalili [aut, cre],
+  Li-Hsiang Lin [aut]
+Maintainer: Lida Jalili <lchalangarjalilideh1@gsu.edu>
+Repository: CRAN
+Date/Publication: 2026-07-27 18:10:02 UTC

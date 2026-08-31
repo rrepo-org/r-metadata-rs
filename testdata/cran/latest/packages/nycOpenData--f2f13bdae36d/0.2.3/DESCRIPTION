@@ -1,0 +1,75 @@
+Package: nycOpenData
+Type: Package
+Title: A Lightweight Interface to NYC Open Data APIs
+Version: 0.2.3
+Authors@R: 
+    c(
+      person("Christian", "Martinez", 
+             email = "c.martinez0@outlook.com", 
+             role = c("aut", "cre"),
+             comment = c(
+               GitHub = "martinezc1",
+               ORCID = "0009-0005-6026-6454"
+             )),
+      person("Crystal", "Adote",
+             role = "ctb",
+             comment = c(GitHub = "crystalna20")),
+      person("Jonah", "Dratfield", 
+             role = "ctb",
+             comment = c(GitHub = "jdratfield38")),
+      person("Joyce", "Escatel-Flores",
+             role = "ctb",
+             comment = c(GitHub = "JoyceEscatel")),
+      person("Rob", "Hutto", 
+             role = "ctb",
+             comment = c(GitHub = "robhutto")),
+      person("Isley", "Jean-Pierre",
+             role = "ctb",
+             comment = c(GitHub = "ijpier")),
+      person("Shannon", "Joyce",
+             role = "ctb",
+             comment = c(GitHub = "shannonjoyce")),
+      person("Laura", "Rose-Werner",
+             role = "ctb",
+             comment = c(GitHub = "laurarosewerner")),
+      person("Emma", "Tupone",
+             role = "ctb",
+             comment = c(GitHub = "emmatup0205")),
+      person("Xinru", "Wang",
+             role = "ctb",
+             comment = c(GitHub = "xrwangxr"))
+    )
+Description: Provides a unified set of helper functions to access datasets 
+    from the NYC Open Data platform <https://opendata.cityofnewyork.us/>. 
+    Functions return results as tidy tibbles and support optional filtering, 
+    sorting, and row limits via the Socrata API. The package includes endpoints 
+    for 311 service requests, DOB job applications, juvenile justice metrics, 
+    school safety, environmental data, event permitting, and additional citywide datasets.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: httr, jsonlite, tibble, janitor, curl, dplyr, rlang
+Suggests: ggplot2, knitr, rmarkdown, scales, testthat (>= 3.0.0),
+        tidyr, vcr (>= 0.6.0), webmockr
+URL: https://docs.ropensci.org/nycOpenData/,
+        https://github.com/ropensci/nycOpenData
+BugReports: https://github.com/ropensci/nycOpenData/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-07-21 14:22:37 UTC; christianmartinez
+Author: Christian Martinez [aut, cre] (GitHub: martinezc1, ORCID:
+    <https://orcid.org/0009-0005-6026-6454>),
+  Crystal Adote [ctb] (GitHub: crystalna20),
+  Jonah Dratfield [ctb] (GitHub: jdratfield38),
+  Joyce Escatel-Flores [ctb] (GitHub: JoyceEscatel),
+  Rob Hutto [ctb] (GitHub: robhutto),
+  Isley Jean-Pierre [ctb] (GitHub: ijpier),
+  Shannon Joyce [ctb] (GitHub: shannonjoyce),
+  Laura Rose-Werner [ctb] (GitHub: laurarosewerner),
+  Emma Tupone [ctb] (GitHub: emmatup0205),
+  Xinru Wang [ctb] (GitHub: xrwangxr)
+Maintainer: Christian Martinez <c.martinez0@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 15:00:02 UTC

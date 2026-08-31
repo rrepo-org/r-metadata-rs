@@ -1,0 +1,30 @@
+Package: orthanc
+Title: Programmatic Interface to 'Orthanc' DICOM Servers
+Version: 0.3.0
+Authors@R: 
+    person("Matthew T.", "Warkentin", , "matthew.warkentin@ucalgary.ca", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8730-3511"))
+Description: An R Interface to 'Orthanc' DICOM servers for medical imaging workflows.
+    'Orthanc' is a lightweight, open-source DICOM server that exposes a comprehensive
+    REST API for managing, querying, retrieving, and modifying DICOM resources 
+    (<https://www.orthanc-server.com>). The goal of this package is to provide 
+    comprehensive and user-friendly access to the 'Orthanc' REST API, designed to 
+    align with idiomatic R workflows while preserving the structure and semantics
+    of DICOM resources.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3.9000
+Depends: R (>= 4.1.0)
+Imports: carrier (>= 0.3.0), clock, digest, glue, fs, httr2, jsonlite,
+        mirai (>= 2.5.1), prettyunits, purrr (>= 1.1.0), R6, rlang
+Suggests: png, jpeg
+URL: https://github.com/mattwarkentin/orthanc,
+        https://mattwarkentin.github.io/orthanc/
+BugReports: https://github.com/mattwarkentin/orthanc/issues
+NeedsCompilation: no
+Packaged: 2026-07-01 03:13:05 UTC; matt
+Author: Matthew T. Warkentin [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8730-3511>)
+Maintainer: Matthew T. Warkentin <matthew.warkentin@ucalgary.ca>
+Repository: CRAN
+Date/Publication: 2026-07-01 23:20:02 UTC

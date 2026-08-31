@@ -1,0 +1,32 @@
+Package: softwareRisk
+Type: Package
+Title: Computation of Node and Path-Level Risk Scores in Scientific
+        Models
+Version: 0.3.0
+Date: 2026-07-14
+Authors@R: c(
+    person(
+      "Arnald", "Puy",
+      email = "arnald.puy@pm.me",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "https://orcid.org/0000-0001-9469-2156")
+    )
+  )
+Maintainer: Arnald Puy <arnald.puy@pm.me>
+Description: It leverages the network-like architecture of scientific models together with software quality metrics to identify chains of function calls that are more prone to generating and propagating errors. It operates on tbl_graph objects representing call dependencies between functions (callers and callees) and computes risk scores for individual functions and for paths (sequences of function calls) based on cyclomatic complexity, in-degree and betweenness centrality. The package supports variance-based uncertainty and sensitivity analyses after Puy et al. (2022) <doi:10.18637/jss.v102.i05> to assess how risk scores change under alternative risk definitions.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: codetools, dplyr, ggplot2 (>= 3.5.0), ggraph, igraph, ineq,
+        purrr, scales, tibble, tidygraph, grid, stats, utils, rlang,
+        sensobol
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-07-16 12:06:33 UTC; arnaldpuy
+Author: Arnald Puy [aut, cre] (ORCID: <https://orcid.org/0000-0001-9469-2156>)
+Repository: CRAN
+Date/Publication: 2026-07-16 12:30:02 UTC

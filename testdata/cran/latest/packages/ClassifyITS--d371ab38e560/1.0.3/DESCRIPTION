@@ -1,0 +1,17 @@
+Package: ClassifyITS
+Title: Fungal Assignment Pipeline
+Version: 1.0.3
+Authors@R: person("Quinn Moon", email = "qmoon@umich.edu", role = c("aut", "cre"))
+Description: Fungi are ubiquitous in Earth's wonderfully diverse ecosystems. The 'ClassifyITS' package aids in the taxonomic classification of internal transcribed spacer (ITS) fungal sequences. Unlike previous methods, it employs taxon-specific e-value and percent identity cutoffs at each taxonomic rank from kingdom to species. The package takes a conservative approach and outputs both graphics and user-friendly files to help users manually inspect fungal operational taxonomic units (OTUs) that fail classification at relevant levels (e.g., Phylum). 'ClassifyITS' is based on taxonomic cutoff criteria from "The Global Soil Mycobiome consortium dataset for boosting fungal diversity research" (Fungal Diversity, Tedersoo, 2021, <doi:10.1007/s13225-021-00493-7>) and "Best practices in metabarcoding of fungi: From experimental design to results" (Molecular Ecology, Tedersoo, 2022, <doi:10.1111/mec.16460>).
+License: GPL-3
+Encoding: UTF-8
+Imports: ggplot2, gridExtra, grid, reshape2, data.table, seqinr
+Suggests: formatR, knitr, rmarkdown
+VignetteBuilder: knitr, rmarkdown, formatR
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-25 20:48:06 UTC; quinnmoon
+Author: Quinn Moon [aut, cre]
+Maintainer: Quinn Moon <qmoon@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-08-25 23:20:09 UTC

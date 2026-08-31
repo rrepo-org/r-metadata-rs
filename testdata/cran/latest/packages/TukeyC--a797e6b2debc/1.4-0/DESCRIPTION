@@ -1,0 +1,39 @@
+Package: TukeyC
+Version: 1.4-0
+Date: 2026-05-23
+Title: Conventional Tukey Test
+Authors@R: c(person("J. C.", "Faria",
+                    role = "aut",
+                    email = "joseclaudio.faria@gmail.com"),
+             person("E. G.", "Jelihovschi",
+                    role = "aut",
+                    email = "eniojelihovs@gmail.com"),
+             person("I. B.", "Allaman",
+                    role = c("aut", "cre"),
+                    email = "ivanalaman@gmail.com"))
+Depends: R (>= 4.0.0)
+Imports: emmeans, xtable
+Suggests: pbkrtest (>= 0.4-6), lme4, knitr, rmarkdown, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Description: Performs multiple comparison analyses using Tukey's
+    Honestly Significant Difference (HSD) test, with intuitive letter
+    grouping of means for balanced and unbalanced designs. Accepts
+    input from 'formula', 'aov', 'lm', 'aovlist', and 'lmerMod' objects,
+    including straightforward handling of interactions. For more
+    details see Tukey (1949) <doi:10.2307/3001913>.
+License: GPL (>= 2)
+URL: https://github.com/jcfaria/TukeyC,
+        https://lec.pro.br/software/pac-r/tukeyc
+BugReports: https://github.com/jcfaria/TukeyC/issues
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-05-23 21:34:05 UTC; iballaman
+Author: J. C. Faria [aut],
+  E. G. Jelihovschi [aut],
+  I. B. Allaman [aut, cre]
+Maintainer: I. B. Allaman <ivanalaman@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-24 11:40:02 UTC

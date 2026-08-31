@@ -1,0 +1,24 @@
+Package: refitgaps
+Title: Reduce the Number of Holes in the School Timetable
+Version: 0.1.2
+Authors@R: 
+    person("Vlad", "Bazon", email = "vlad.bazon@gmail.com", role = c("aut", "cre"))
+Description: Reallocating the respective lessons by hours (respecting the 
+    constraints induced by the existence of coupled lessons) so that 
+    the total number of gaps is as small as possible.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: ro
+RoxygenNote: 7.3.2
+Imports: dplyr, magrittr, purrr, rlang, stats, stringr, tibble
+Depends: R (>= 3.5.0)
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-05-23 02:57:29 UTC; vb
+Author: Vlad Bazon [aut, cre]
+Maintainer: Vlad Bazon <vlad.bazon@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-23 03:20:02 UTC

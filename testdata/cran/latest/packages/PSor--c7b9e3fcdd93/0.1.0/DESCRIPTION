@@ -1,0 +1,36 @@
+Package: PSor
+Type: Package
+Title: Semiparametric Principal Stratification Analysis Beyond
+        Monotonicity
+Version: 0.1.0
+Authors@R: c(
+    person("Jiaqi", "Tong", email = "jiaqi.tong@yale.edu", role = c("aut", "cre"), comment = c(ORCID = "0009-0005-8922-3386")),
+    person("Brennan", "Kahan", role = "ctb"),
+    person("Michael O.", "Harhay", role = "ctb"),
+    person("Fan", "Li", role = "ctb")
+  )
+Description: Estimates principal causal effects under principal stratification
+    using a margin-free, conditional odds ratio sensitivity parameter. This
+    framework unifies the monotonicity assumption and the counterfactual
+    intermediate independence assumption, allowing for robust analysis when
+    monotonicity may not hold. Computes point estimates, standard errors, and
+    confidence intervals for conditionally doubly robust and debiased machine
+    learning estimators. The methodological details are described in Tong,
+    Kahan, Harhay, and Li (2025) <doi:10.48550/arXiv.2501.17514>.
+License: MIT + file LICENSE
+URL: https://github.com/deckardt98/PSor
+BugReports: https://github.com/deckardt98/PSor/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: stats, SuperLearner, caret, dplyr, geex, magrittr, numDeriv
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2026-04-22 21:38:37 UTC; deckard
+Author: Jiaqi Tong [aut, cre] (ORCID: <https://orcid.org/0009-0005-8922-3386>),
+  Brennan Kahan [ctb],
+  Michael O. Harhay [ctb],
+  Fan Li [ctb]
+Maintainer: Jiaqi Tong <jiaqi.tong@yale.edu>
+Repository: CRAN
+Date/Publication: 2026-04-24 20:20:21 UTC

@@ -1,0 +1,22 @@
+Package: cvmaPLFAM
+Type: Package
+Title: Cross-Validation Model Averaging for Partial Linear Functional
+        Additive Models
+Version: 0.1.1
+Authors@R: c(person(given = "Shishi", family = "Liu", 
+               role = c("aut", "cre"), email = "liushishi_644@163.com"),
+             person(given = "Jingxiao", family = "Zhang", 
+               role = "aut"))
+Imports: fda, quadprog, mgcv, MASS, stats, utils
+NeedsCompilation: no
+Author: Shishi Liu [aut, cre],
+  Jingxiao Zhang [aut]
+Maintainer: Shishi Liu <liushishi_644@163.com>
+Description: Produce an averaging estimate/prediction by combining all candidate models for partial linear functional additive models, using multi-fold cross-validation criterion. More details can be referred to arXiv e-Prints via <doi:10.48550/arXiv.2105.00966>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Packaged: 2025-04-28 01:47:15 UTC; liushishi
+Repository: CRAN
+Date/Publication: 2025-04-28 02:40:01 UTC

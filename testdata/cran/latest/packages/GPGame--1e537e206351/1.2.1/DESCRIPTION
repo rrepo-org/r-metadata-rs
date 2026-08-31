@@ -1,0 +1,29 @@
+Package: GPGame
+Type: Package
+Title: Solving Complex Game Problems using Gaussian Processes
+Version: 1.2.1
+Date: 2025-11-13
+Authors@R: 
+    c(person("Victor", "Picheny", role = "aut",
+           comment = c(ORCID = "0000-0002-4948-5542")),
+      person("Mickael", "Binois", role = c("aut", "cre"), email = "mickael.binois@inria.fr",
+      comment = c(ORCID = "0000-0002-7225-1680"))
+      )
+Description: Sequential strategies for finding a game equilibrium are proposed in a black-box setting (expensive pay-off evaluations, no derivatives). The algorithm handles noiseless or noisy evaluations. Two acquisition functions are available. Graphical outputs can be generated automatically. V. Picheny, M. Binois, A. Habbal (2018) <doi:10.1007/s10898-018-0688-0>. M. Binois, V. Picheny, P. Taillandier, A. Habbal (2020) <doi:10.48550/arXiv.1902.06565>.
+License: GPL-3
+Imports: Rcpp (>= 0.12.5), DiceKriging, GPareto, KrigInv, DiceDesign,
+        MASS, mnormt, mvtnorm, methods, matrixStats
+Suggests: DiceOptim, testthat
+LinkingTo: Rcpp
+URL: https://github.com/vpicheny/GPGame
+BugReports: https://github.com/vpicheny/GPGame/issues
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2025-11-14 07:31:12 UTC; mbinois
+Author: Victor Picheny [aut] (ORCID: <https://orcid.org/0000-0002-4948-5542>),
+  Mickael Binois [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7225-1680>)
+Maintainer: Mickael Binois <mickael.binois@inria.fr>
+Repository: CRAN
+Date/Publication: 2025-11-14 12:40:16 UTC

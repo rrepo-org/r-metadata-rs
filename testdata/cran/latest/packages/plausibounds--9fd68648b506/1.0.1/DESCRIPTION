@@ -1,0 +1,29 @@
+Package: plausibounds
+Title: Plausible Bounds for Treatment Path Estimates
+Version: 1.0.1
+Authors@R: c(
+    person("Simon", "Freyaldenhoven", , "simon.freyaldenhoven@phil.frb.org", role = c("aut", "cph")),
+    person("Christian", "Hansen", , "chansen1@chicagobooth.edu", role = c("aut", "cph")),
+    person("Ryan", "Kobler", , "kobleary@gmail.com", role = c("aut", "cre", "cph"))
+  )
+Description: Enhances dynamic effect plots as suggested in Freyaldenhoven and Hansen (2026) <https://simonfreyaldenhoven.github.io/papers/Plausible_bounds.pdf>. Data-driven smoothing delivers a smooth estimated path with potentially improved point estimation properties and confidence regions covering a surrogate that can be substantially tighter than conventional pointwise or uniform bands.
+License: MIT + file LICENSE
+Depends: R (>= 3.5)
+Imports: dplyr, ggplot2, Matrix, MASS, magrittr, cli
+Suggests: knitr, rmarkdown, doParallel, foreach, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+URL: https://github.com/SimonFreyaldenhoven/plausibounds
+BugReports: https://github.com/SimonFreyaldenhoven/plausibounds/issues
+VignetteBuilder: knitr
+Config/Needs/website: quarto, rmarkdown
+NeedsCompilation: no
+Packaged: 2026-01-14 17:19:36 UTC; C1RAK01
+Author: Simon Freyaldenhoven [aut, cph],
+  Christian Hansen [aut, cph],
+  Ryan Kobler [aut, cre, cph]
+Maintainer: Ryan Kobler <kobleary@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-20 10:30:02 UTC

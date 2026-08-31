@@ -1,0 +1,34 @@
+Package: Rsearch
+Type: Package
+Title: Processing and Analyzing Amplicon Sequence Data
+Version: 1.1.0
+Authors@R: c(
+    person("Cassandra", "Stamsaas", email = "cassandra.stamsaas@nmbu.no", role = c("cre", "aut")),
+    person("Lars", "Snipen", email = "lars.snipen@nmbu.no", role = "aut"),
+    person("Torbjørn", "Rognes", email = "torognes@ifi.uio.no", role = "aut"),
+    person("Hilde", "Vinje", email = "hilde.vinje@nmbu.no", role = "aut"))
+Maintainer: Cassandra Stamsaas <cassandra.stamsaas@nmbu.no>
+Description: Processing and analysis of targeted sequencing data. The package provides a user-friendly interface for core 'VSEARCH' (Rognes et al. (2016), <doi:10.7717/peerj.2584>) functions, in addition to tools for visualization and parameter tuning. 
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: ape (>= 5.8.1), cowplot (>= 1.1.3), dplyr, ggExtra (>=
+        0.10.1), ggplot2 (>= 3.5.1), microseq (>= 2.1.6), phyloseq (>=
+        1.50.0), RColorBrewer (>= 1.1.3), readr (>= 2.1.5), stats,
+        stringr (>= 1.5.1), tibble (>= 3.2.1), tidyr (>= 1.3.1),
+        tidyselect (>= 1.2.1)
+Suggests: rmarkdown, testthat (>= 3.0.0), withr (>= 3.0.2)
+Config/testthat/edition: 3
+URL: https://cassandrahjo.github.io/Rsearch/,
+        https://github.com/CassandraHjo/Rsearch/
+BugReports: https://github.com/CassandraHjo/Rsearch/issues/
+Depends: R (>= 4.1)
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-20 10:09:17 UTC; cassandrahjortdahl
+Author: Cassandra Stamsaas [cre, aut],
+  Lars Snipen [aut],
+  Torbjørn Rognes [aut],
+  Hilde Vinje [aut]
+Repository: CRAN
+Date/Publication: 2026-07-20 12:20:44 UTC

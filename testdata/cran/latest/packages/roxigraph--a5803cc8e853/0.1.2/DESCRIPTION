@@ -1,0 +1,40 @@
+Package: roxigraph
+Title: 'RDF' and 'SPARQL' for R using 'Oxigraph'
+Version: 0.1.2
+Authors@R: c(
+    person("Carl", "Boettiger", , "cboettig@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1642-628X")),
+    person("Oxigraph Contributors", role = "cph",
+           comment = "Oxigraph Rust library"),
+    person("Authors of the dependency Rust crates", role = "aut",
+           comment = "see inst/AUTHORS file")
+    )
+Description: Provides 'RDF' storage and 'SPARQL' 1.1 query capabilities by wrapping
+    the 'Oxigraph' graph database library <https://github.com/oxigraph/oxigraph>. 
+    Supports in-memory and persistent ('RocksDB') storage, multiple 'RDF' 
+    serialization formats ('Turtle', 'N-Triples', 'RDF-XML', 'N-Quads', 'TriG'), 
+    and full 'SPARQL' 1.1 Query and Update support. Built using the 'extendr' 
+    framework for 'Rust'-R bindings.
+License: MIT + file LICENSE
+URL: https://github.com/cboettig/roxigraph
+BugReports: https://github.com/cboettig/roxigraph/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/rextendr/version: 0.4.2
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.75.0,
+        libclang-dev (for RocksDB bindings), libsnappy-dev (for RocksDB
+        compression)
+Depends: R (>= 4.2)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, spelling
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-05-04 04:51:17 UTC; cboettig
+Author: Carl Boettiger [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1642-628X>),
+  Oxigraph Contributors [cph] (Oxigraph Rust library),
+  Authors of the dependency Rust crates [aut] (see inst/AUTHORS file)
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-04 16:20:02 UTC

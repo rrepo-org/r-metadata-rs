@@ -1,0 +1,31 @@
+Package: gleifr
+Title: Client for the 'GLEIF' API
+Version: 0.2.0
+Authors@R: 
+    person("Maximilian", "Mücke", , "muecke.maximilian@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-9432-9795"))
+Description: Download legal entity reference data from the 'Global Legal
+    Entity Identifier Foundation' ('GLEIF') API. Retrieve Legal Entity
+    Identifier ('LEI') records, their direct and ultimate parent and child
+    relationships, accredited issuers ('Local Operating Units'), and
+    mappings from 'LEI' codes to other identifiers such as 'ISIN', 'BIC',
+    and 'MIC'. See <https://www.gleif.org/en/lei-data/gleif-api> for
+    further details.
+License: MIT + file LICENSE
+URL: https://m-muecke.github.io/gleifr/,
+        https://github.com/m-muecke/gleifr
+BugReports: https://github.com/m-muecke/gleifr/issues
+Depends: R (>= 4.1.0)
+Imports: curl, httr2, stats, utils, xml2
+Suggests: testthat (>= 3.0.0)
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-07-18 14:58:28 UTC; mmuecke
+Author: Maximilian Mücke [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-9432-9795>)
+Maintainer: Maximilian Mücke <muecke.maximilian@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-18 15:50:08 UTC

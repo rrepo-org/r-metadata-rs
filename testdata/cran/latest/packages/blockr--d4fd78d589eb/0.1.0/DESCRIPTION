@@ -1,0 +1,51 @@
+Package: blockr
+Title: A Block-Based Framework for Data Manipulation and Visualization
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Nicolas",
+             family = "Bennett",
+             role = c("aut", "cre"),
+             email = "nicolas@cynkra.com"),
+      person(given = "David",
+             family = "Granjon",
+             role = c("aut"),
+             email = "david@cynkra.com"),
+      person(given = "Christoph",
+             family = "Sax",
+             role = c("aut"),
+             email = "christoph@cynkra.com",
+             comment = c(ORCID = "0000-0002-7192-7044")),
+      person(given = "John",
+             family = "Coene",
+             role = c("aut"),
+             email = "john@opifex.org"),
+      person(given = "Karma",
+             family = "Tarap",
+             role = c("ctb"),
+             email = "Karma.Tarap@bms.com"),
+      person(family = "Bristol Myers Squibb",
+           role = c("cph", "fnd"))
+    )
+Description: A framework for building interactive dashboards and document-based
+    reports. Underlying data manipulation and visualization is possible using a
+    web-based point and click user interface.
+URL: https://bristolmyerssquibb.github.io/blockr/
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Imports: blockr.core, blockr.dock, blockr.dag, blockr.dplyr,
+        blockr.ggplot, blockr.io, utils, cli, rlang
+Suggests: testthat (>= 3.0.0), quarto, knitr, shinytest2, withr
+VignetteBuilder: quarto
+NeedsCompilation: no
+Packaged: 2026-01-08 13:05:28 UTC; nbennett
+Author: Nicolas Bennett [aut, cre],
+  David Granjon [aut],
+  Christoph Sax [aut] (ORCID: <https://orcid.org/0000-0002-7192-7044>),
+  John Coene [aut],
+  Karma Tarap [ctb],
+  Bristol Myers Squibb [cph, fnd]
+Maintainer: Nicolas Bennett <nicolas@cynkra.com>
+Repository: CRAN
+Date/Publication: 2026-01-12 18:50:31 UTC

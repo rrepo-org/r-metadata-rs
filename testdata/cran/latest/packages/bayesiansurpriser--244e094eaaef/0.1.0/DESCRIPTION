@@ -1,0 +1,33 @@
+Package: bayesiansurpriser
+Title: Bayesian Surprise for De-Biasing Thematic Maps
+Version: 0.1.0
+Authors@R: 
+    person("Dmitry", "Shkolnik", , "shkolnikd@gmail.com", role = c("aut", "cre"))
+Author: Dmitry Shkolnik [aut, cre]
+Maintainer: Dmitry Shkolnik <shkolnikd@gmail.com>
+Description: Implements Bayesian Surprise methodology for data visualization,
+    based on Correll and Heer (2017) <doi:10.1109/TVCG.2016.2598839>
+    "Surprise! Bayesian Weighting for De-Biasing Thematic Maps". Provides
+    tools to weight event data relative to spatio-temporal models,
+    highlighting unexpected patterns while de-biasing against known factors
+    like population density or sampling variation. Integrates seamlessly with
+    'sf' for spatial data and 'ggplot2' for visualization. Supports
+    temporal/streaming data analysis.
+License: MIT + file LICENSE
+URL: https://dshkol.github.io/bayesiansurpriser/,
+        https://github.com/dshkol/bayesiansurpriser
+BugReports: https://github.com/dshkol/bayesiansurpriser/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: ggplot2 (>= 3.5.0), sf (>= 1.0.0), scales (>= 1.3.0), rlang
+        (>= 1.1.0), cli, stats, MASS, RColorBrewer
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, dplyr, tibble, vdiffr,
+        tidycensus, tigris, cancensus, ggrepel
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-04-21 06:44:08 UTC; dmitryshkolnik
+Repository: CRAN
+Date/Publication: 2026-04-21 20:52:29 UTC

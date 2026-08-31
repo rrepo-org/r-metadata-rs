@@ -1,0 +1,62 @@
+Package: hellometry
+Title: Biomass Estimation from Allometric Relationships
+Version: 1.0.1
+Authors@R: c(
+    person(given = "Pierre",
+           family = "Rogy",
+           role = c("aut", "cre"),
+           email = "pierre.rogy@gmail.com",
+           comment = c(ORCID = "0000-0002-3002-0059")),
+    person(given = "Olivier",
+           family = "Dézerald",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-9987-9865")),
+    person(given = "Gustavo Q.",
+           family = "Romero",
+           role = "ctb",
+           comment = c(ORCID = "0000-0003-3736-4759")),
+    person(given = "Fabiola",
+           family = "Ospina-Bautista",
+           role = "ctb",
+           comment = c(ORCID = "0000-0003-2498-1459")),
+    person(given = "Sarah",
+           family = "Abdelazim",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-6379-2733")),
+    person(given = "Nicholas A. C.",
+           family = "Marino",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-5702-5466")),
+    person(given = "Diane S.",
+           family = "Srivastava",
+           role = "ctb",
+           comment = c(ORCID = "0000-0003-4541-5595")))
+Description: Estimates body size and biomass of organisms from
+    allometric relationships. It works with any data that follow a few
+    column-naming conventions, using the measurements you supply to impute the
+    ones that are missing.
+License: GPL (>= 3)
+URL: https://github.com/pierrerogy/hellometry
+BugReports: https://github.com/pierrerogy/hellometry/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, magrittr, performance, progress, purrr, rlang, stats,
+        tibble, tidyr, tidyselect, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-20 16:21:00 UTC; pagro
+Author: Pierre Rogy [aut, cre] (ORCID: <https://orcid.org/0000-0002-3002-0059>),
+  Olivier Dézerald [ctb] (ORCID: <https://orcid.org/0000-0002-9987-9865>),
+  Gustavo Q. Romero [ctb] (ORCID:
+    <https://orcid.org/0000-0003-3736-4759>),
+  Fabiola Ospina-Bautista [ctb] (ORCID:
+    <https://orcid.org/0000-0003-2498-1459>),
+  Sarah Abdelazim [ctb] (ORCID: <https://orcid.org/0000-0002-6379-2733>),
+  Nicholas A. C. Marino [ctb] (ORCID:
+    <https://orcid.org/0000-0002-5702-5466>),
+  Diane S. Srivastava [ctb] (ORCID:
+    <https://orcid.org/0000-0003-4541-5595>)
+Maintainer: Pierre Rogy <pierre.rogy@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 14:50:02 UTC

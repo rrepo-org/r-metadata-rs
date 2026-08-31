@@ -1,0 +1,39 @@
+Package: nimbleExtra
+Type: Package
+Title: Interoperating with 'NIMBLE' for Generic Analysis of MCMC
+        Samples
+Version: 0.1.15
+Authors@R: c(
+    person(
+      "Brook", "Milligan",
+      email = "brook@biology.nmsu.edu",
+      role = c("aut", "cre", "cph")
+    )
+  )
+Description: 'NIMBLE' is a general purpose modeling framework that
+    facilitates the analysis of Markov Chain Monte Carlo (MCMC)
+    models.  However, it constructs a complex and variable data
+    structure, which is difficult to use in a general way.  The
+    'nimbleExtra' package provides a set of functions to insulate
+    users from the complexity and variability of 'NIMBLE' data
+    structures.  It also complements 'NIMBLE' and other MCMC analysis
+    packages by providing missing functionality to encourage generic
+    programming.  Together these features ease the burden of working
+    with MCMC data and encourage more systematic approaches to MCMC
+    analysis.
+License: BSD_3_clause + file LICENSE | GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: coda, dplyr, ggplot2, grDevices, nimble, posterior, purrr,
+        rlang, tidyselect, utils
+Suggests: ggmcmc, scales, testthat (>= 3.0.0), tidyr
+RoxygenNote: 7.3.3
+Config/build/clean-inst-doc: FALSE
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-07-31 19:30:44 UTC; brook
+Author: Brook Milligan [aut, cre, cph]
+Maintainer: Brook Milligan <brook@biology.nmsu.edu>
+Repository: CRAN
+Date/Publication: 2026-08-08 11:30:13 UTC

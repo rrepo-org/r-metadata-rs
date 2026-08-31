@@ -1,0 +1,40 @@
+Package: MLMES
+Type: Package
+Title: Model-Based Effect Sizes for Multilevel Models
+Version: 0.1.2
+Authors@R: c(
+    person("Yijun", "Cheng", email = "chengxb@uw.edu", role = c("aut", "cre")),
+    person("Elizabeth A.", "Sanders", role = "aut"),
+    person("Timothy R.", "Konold", role = "aut"),
+    person("Zhigang", "Zhang", role = "aut"),
+    person("Zixie", "Zheng", role = "aut")
+    )
+Description: Computes model-based effect sizes for fixed-effect coefficients
+    in multilevel (hierarchical) models. The coefficient effect sizes are
+    standardized mean differences from zero (d) and unique variance-explained
+    measures (squared semi-partial correlations, sr2). The package also reports
+    variance components and level-specific and total R-squared values. It
+    supports 2-level and 3-level linear and binary logistic models fitted with
+    'lme4' (Bates et al., 2015) <doi:10.18637/jss.v067.i01>, and 2-level
+    Gaussian and Bernoulli models fitted with 'brms' (Bürkner, 2017)
+    <doi:10.18637/jss.v080.i01>. Sanders, Konold, and Cheng (in press),
+    "Model-based effect sizes for multilevel linear regression coefficients,"
+    Methodology: European Journal of Research Methods for the Behavioral and
+    Social Sciences, describe the 2-level linear-model methods.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: lme4 (>= 1.1.34), Matrix (>= 1.6-5), dplyr, stats
+Suggests: brms, bayestestR, lmerTest (>= 3.1-0), testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-06 14:14:22 UTC; zigzag
+Author: Yijun Cheng [aut, cre],
+  Elizabeth A. Sanders [aut],
+  Timothy R. Konold [aut],
+  Zhigang Zhang [aut],
+  Zixie Zheng [aut]
+Maintainer: Yijun Cheng <chengxb@uw.edu>
+Repository: CRAN
+Date/Publication: 2026-08-20 15:52:04 UTC

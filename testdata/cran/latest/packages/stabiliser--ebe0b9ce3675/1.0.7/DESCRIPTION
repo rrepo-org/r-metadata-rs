@@ -1,0 +1,48 @@
+Package: stabiliser
+Title: Stabilising Variable Selection
+Version: 1.0.7
+Authors@R: 
+    c(
+    person(given = "Robert",
+           family = "Hyde",
+           role = c("aut", "cre"),
+           email = "robert.hyde4@nottingham.ac.uk",
+           comment = c(ORCID = "https://orcid.org/0000-0002-8705-9405")),
+    person(given = "Eliana",
+           family = "Lima",
+           role = c("aut"),
+           email = "eliana.lima1@nottingham.ac.uk"),
+    person(given = "Matthew",
+           family = "Barden",
+           role = c("aut"),
+           email = "matthew.barden@liverpool.ac.uk"),
+    person(given = "Kate",
+           family = "Lewis",
+           role = c("aut"),
+           email = "kate.lewis@nottingham.ac.uk"),
+    person(given = "Martin",
+           family = "Green",
+           role = c("aut"),
+           email = "martin.green@nottingham.ac.uk"))   
+Description: A stable approach to variable selection through stability selection and the use of a permutation-based objective stability threshold. Lima et al (2021) <doi:10.1038/s41598-020-79317-8>, Meinshausen and Buhlmann (2010) <doi:10.1111/j.1467-9868.2010.00740.x>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Depends: R (>= 3.0.0)
+Suggests: rmarkdown, testthat (>= 3.0.0), markdown, knitr
+Imports: glmnet, dplyr, bigstep, rsample, tibble, purrr, tidyr,
+        stringr, ggplot2, broom, caret, ncvreg, Hmisc, expss, lme4,
+        matrixStats, recipes, stats, lmerTest, furrr, future
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-09 10:01:09 UTC; svzrh2
+Author: Robert Hyde [aut, cre] (ORCID: <https://orcid.org/0000-0002-8705-9405>),
+  Eliana Lima [aut],
+  Matthew Barden [aut],
+  Kate Lewis [aut],
+  Martin Green [aut]
+Maintainer: Robert Hyde <robert.hyde4@nottingham.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-03-09 10:40:02 UTC

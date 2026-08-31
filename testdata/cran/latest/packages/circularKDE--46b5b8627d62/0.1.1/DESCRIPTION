@@ -1,0 +1,26 @@
+Package: circularKDE
+Title: Recent Methods for Kernel Density Estimation of Circular Data
+Version: 0.1.1
+Authors@R: 
+      c(person(given = "Stanislav", family = "Zamecnik", email = "zamecnik@math.muni.cz", role = c("aut", "cre")),
+      person(given = "Ivanka", family = "Hórová", email = "horova@math.muni.cz", role = c("aut")),
+      person(given = "Kamila", family = "Hasilová", email = "kamila.hasilova@unob.cz", role = c("aut")),
+      person(given = "Stanislav", family = "Katina", email = "katina@math.muni.cz", role = c("aut")))
+Description: Provides recent kernel density estimation methods for circular data, including adaptive and higher-order techniques. The implementation is based on recent advances in bandwidth selection and circular smoothing. Key methods include adaptive bandwidth selection methods by Zámečník et al. (2024) <doi:10.1007/s00180-023-01401-0>, complete cross-validation by Hasilová et al. (2024) <doi:10.59170/stattrans-2024-024>, Fourier-based plug-in rules by Tenreiro (2022) <doi:10.1080/10485252.2022.2057974>, and higher-order kernels by Tsuruta & Sagae (2017) <doi:10.1016/j.spl.2017.08.003>.
+Depends: R(>= 3.5.0), circular, cli
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+URL: https://github.com/stazam/circularKDE
+BugReports: https://github.com/stazam/circularKDE/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-22 10:42:58 UTC; A200083287
+Author: Stanislav Zamecnik [aut, cre],
+  Ivanka Hórová [aut],
+  Kamila Hasilová [aut],
+  Stanislav Katina [aut]
+Maintainer: Stanislav Zamecnik <zamecnik@math.muni.cz>
+Repository: CRAN
+Date/Publication: 2026-01-07 08:40:02 UTC

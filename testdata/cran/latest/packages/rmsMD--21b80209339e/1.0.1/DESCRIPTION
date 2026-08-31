@@ -1,0 +1,39 @@
+Package: rmsMD
+Type: Package
+Title: Output Results from 'rms' Models for Medical Journals
+Version: 1.0.1
+Date: 2025-11-09
+Description: Provides streamlined functions for summarising and visualising 
+  regression models fitted with the 'rms' package, in the preferred format for medical journals. 
+  The 'modelsummary_rms()' function produces concise summaries for linear, logistic, and 
+  Cox regression models, including automatic handling of models containing restricted 
+  cubic spline (RCS) terms. The resulting summary dataframe can be easily converted into 
+  publication-ready documents using the 'flextable' and 'officer' packages. The 'ggrmsMD()' 
+  function creates clear and customizable plots ('ggplot2' objects) to visualise RCS terms.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://rmsmd.github.io/rmsMD/
+BugReports: https://github.com/rmsMD/rmsMD/issues/
+RoxygenNote: 7.3.3
+Authors@R: c(
+    person(given = "Samuel", family = "Tingle", , email = "samjamestingle@gmail.com", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-5529-7815")
+    ),
+    person(given = "Georgios", family = "Kourounis", , email = "george.kourounis@gmail.com", role = "aut",
+      comment = c(ORCID = "0000-0002-1051-078X")
+    )
+  )
+Imports: rms, ggplot2, rlang, cowplot
+Suggests: knitr, rmarkdown, devtools, officer, flextable, dplyr,
+        testthat (>= 3.0.0), vdiffr, Hmisc
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-11-10 21:25:02 UTC; samueltingle
+Author: Samuel Tingle [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5529-7815>),
+  Georgios Kourounis [aut] (ORCID:
+    <https://orcid.org/0000-0002-1051-078X>)
+Maintainer: Samuel Tingle <samjamestingle@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-10 21:40:02 UTC

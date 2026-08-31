@@ -1,0 +1,37 @@
+Package: dataProfilerR
+Title: Automated Exploratory Data Analysis and Dataset Profiling
+Version: 0.2.1
+Authors@R: 
+    person("Muhammad", "Farooqi", email = "mqfarooqi@gmail.com",
+           role = c("aut", "cre"))
+Description: Profiles a data frame with minimal input: column type inference,
+    missing-value analysis, distributional summary statistics (including
+    skewness and kurtosis), normality tests, outlier detection, correlation and
+    categorical-association analysis, date-column profiling, grouped comparisons
+    and an overall data-quality score, alongside a set of 'ggplot2'
+    visualisations. A single entry point, profile_data(), returns a structured
+    S3 object holding metadata, statistics, diagnostics and plots, with
+    print(), summary() and plot() methods, and report() renders the whole
+    profile to a self-contained HTML file. Statistical methods include the
+    Shapiro-Wilk normality test as implemented by Royston (1995)
+    <doi:10.2307/2986146> and the Anderson-Darling test following Stephens
+    (1974) <doi:10.1080/01621459.1974.10480196>, with power comparisons of these
+    tests in Yap and Sim (2011) <doi:10.1080/00949655.2010.520163>, and the
+    categorical association measure of Cramer (1946, ISBN:9780691080048).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 4.1.0)
+Imports: ggplot2, stats, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, nortest, spelling
+VignetteBuilder: knitr
+URL: https://github.com/mqfarooqi1/dataProfilerR
+BugReports: https://github.com/mqfarooqi1/dataProfilerR/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-18 22:53:01 UTC; faroo
+Author: Muhammad Farooqi [aut, cre]
+Maintainer: Muhammad Farooqi <mqfarooqi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-24 08:20:18 UTC

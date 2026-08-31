@@ -1,0 +1,26 @@
+Package: tidyrstats
+Type: Package
+Depends: R (>= 4.1.0)
+Title: Tidy Common R Statistical Functions
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Brendan", "Ansell",
+      email = "ansell.b@wehi.edu.au",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-0297-897X"))
+    )
+Maintainer: Brendan Ansell <ansell.b@wehi.edu.au>
+Description: Provides functions to scale, log-transform and fit linear models within a 'tidyverse'-style R code framework.
+    Intended to smooth over inconsistencies in output of base R statistical functions, allowing ease of teaching, learning and daily use. Inspired by the tidy principles used in 'broom' Robinson (2017) <doi:10.21105/joss.00341>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: broom, glue, purrr, dplyr, rlang, stringr, stats
+Suggests: ggplot2, knitr, magrittr, rmarkdown
+NeedsCompilation: no
+Packaged: 2025-06-07 10:17:34 UTC; ansell.b
+Author: Brendan Ansell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0297-897X>)
+Repository: CRAN
+Date/Publication: 2025-06-11 13:00:02 UTC

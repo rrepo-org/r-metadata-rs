@@ -1,0 +1,42 @@
+Type: Package
+Package: watcher
+Title: Watch the File System for Changes
+Version: 0.2.0
+Authors@R: c(
+    person("Charlie", "Gao", , "charlie.gao@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0750-061X")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49")),
+    person("Enrico M.", "Crisostomo", role = "cph",
+           comment = "libfswatch library"),
+    person("Alan", "Dipert", role = "cph",
+           comment = "libfswatch library")
+  )
+Description: R binding for 'libfswatch', a file system monitoring library.
+    Watch files, or directories recursively, for changes in the
+    background.  Log activity, or call an R function, upon every change
+    event.
+License: MIT + file LICENSE
+URL: https://watcher.r-lib.org, https://github.com/r-lib/watcher
+BugReports: https://github.com/r-lib/watcher/issues
+Depends: R (>= 3.5)
+Imports: later, R6, rlang
+Suggests: testthat (>= 3.0.0)
+Biarch: true
+Config/Needs/website: tidyverse/tidytemplate
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Config/usethis/last-upkeep: 2025-04-23
+Encoding: UTF-8
+SystemRequirements: 'libfswatch' (optional, bundled copy compiled
+        otherwise)
+NeedsCompilation: yes
+Packaged: 2026-06-22 07:45:09 UTC; cg334
+Author: Charlie Gao [aut, cre] (ORCID: <https://orcid.org/0000-0002-0750-061X>),
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>),
+  Enrico M. Crisostomo [cph] (libfswatch library),
+  Alan Dipert [cph] (libfswatch library)
+Maintainer: Charlie Gao <charlie.gao@posit.co>
+Repository: CRAN
+Date/Publication: 2026-06-22 08:10:02 UTC

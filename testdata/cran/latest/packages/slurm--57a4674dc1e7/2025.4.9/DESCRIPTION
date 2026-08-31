@@ -1,0 +1,21 @@
+Package: slurm
+Authors@R: c(
+    person("Toby", "Hocking",
+     email="toby.hocking@r-project.org",
+     role=c("aut", "cre")))
+Version: 2025.4.9
+License: GPL-3
+Title: Running and Parsing Slurm Commands
+Description: User-friendly functions which parse output of
+ command line programs used to query Slurm.
+ Morris A. Jette and Tim Wickberg (2023)
+ <doi:10.1007/978-3-031-43943-8_1> describe Slurm in detail.
+Imports: data.table (>= 1.11.6), nc (>= 2019.11.22)
+SystemRequirements: Slurm command line programs (sacct, squeue)
+Suggests: testthat, ggplot2, R.utils
+NeedsCompilation: no
+Packaged: 2025-04-09 09:25:44 UTC; hoct2726
+Author: Toby Hocking [aut, cre]
+Maintainer: Toby Hocking <toby.hocking@r-project.org>
+Repository: CRAN
+Date/Publication: 2025-04-09 10:30:02 UTC

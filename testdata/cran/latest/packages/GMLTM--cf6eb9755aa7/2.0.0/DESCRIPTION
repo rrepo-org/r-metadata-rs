@@ -1,0 +1,47 @@
+Package: GMLTM
+Type: Package
+Title: Generalized Multicomponent Latent Trait Model for Diagnosis
+Version: 2.0.0
+Authors@R: c(
+    person("Eduar", "Ramirez", email = "edrami02@ucm.es", role = c("aut", "cre")),
+    person("Marcos", "Jimenez", email = "marcosjnezhquez@gmail.com", role = "aut"),
+    person("Vithor R.", "Franco", role = "aut"),
+    person("Jesus", "Alvarado", role = "aut")
+    )
+Description: Provides Bayesian estimation of Item Response Theory models
+    that decompose item difficulty into cognitive operations or rules.
+    Implements the Linear Logistic Test Model (LLTM; Fischer (1973)
+    <doi:10.1016/0001-6918(73)90003-6>), the Multicomponent Latent
+    Trait Model for Diagnosis (MLTM-D; Embretson and Yang (2013)
+    <doi:10.1007/s11336-012-9296-y>), and the Generalized Multicomponent
+    Latent Trait Model for Diagnosis (GMLTM-D; Ramirez et al. (2024)
+    <doi:10.3390/jintelligence12070067>), including a variant with
+    correlated latent components. All models are estimated via Hamiltonian
+    Monte Carlo using 'Stan' through the 'rstan' interface. Includes tools
+    for prior predictive checks (Gelman et al., 2020), model validation,
+    conditional reliability estimation, examinee mastery classification
+    following Embretson (2019) <doi:10.1007/978-3-030-05584-4_9>, and
+    individual diagnostic reports at the rule and component level.
+    Supports user-defined prior distributions for all model parameters.
+License: GPL (>= 3)
+URL: https://github.com/Eduar-Ramirez/GMLTM-D
+BugReports: https://github.com/Eduar-Ramirez/GMLTM-D/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: rstan (>= 2.21.0), ggplot2, gridExtra, grid, utils, parallel,
+        loo, RColorBrewer
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+SystemRequirements: C++17, GNU make
+VignetteBuilder: knitr
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-08-27 10:57:09 UTC; eduarramirezriveros
+Author: Eduar Ramirez [aut, cre],
+  Marcos Jimenez [aut],
+  Vithor R. Franco [aut],
+  Jesus Alvarado [aut]
+Maintainer: Eduar Ramirez <edrami02@ucm.es>
+Repository: CRAN
+Date/Publication: 2026-08-27 12:10:08 UTC

@@ -1,0 +1,34 @@
+Package: DonutMap
+Title: Donut Maps with 'sf', 'ggplot2', and 'leaflet'
+Version: 0.1.0
+Authors@R: 
+    person(
+        given = "Aurélien",
+        family = "Nicosia",
+        email = "aurelien.nicosia@mat.ulaval.ca",
+        role = c("aut", "cre")
+    )
+Description: Create donut charts positioned on maps from tidy data. The
+    package provides helpers to compute donut polygon geometries, optional
+    origin-destination flow lines, ready-to-use 'ggplot2' map layers, and
+    interactive 'leaflet' widgets.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, htmltools, leaflet, rlang, scales, sf, tibble
+Suggests: ragg, knitr, rmarkdown, rnaturalearth, rnaturalearthdata,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://aureliennicosiaulaval.github.io/DonutMap/,
+        https://github.com/AurelienNicosiaULaval/DonutMap
+BugReports: https://github.com/AurelienNicosiaULaval/DonutMap/issues
+Config/Needs/website: pkgdown
+NeedsCompilation: no
+Packaged: 2026-06-01 18:11:05 UTC; aureliennicosia
+Author: Aurélien Nicosia [aut, cre]
+Maintainer: Aurélien Nicosia <aurelien.nicosia@mat.ulaval.ca>
+Repository: CRAN
+Date/Publication: 2026-06-08 14:40:02 UTC

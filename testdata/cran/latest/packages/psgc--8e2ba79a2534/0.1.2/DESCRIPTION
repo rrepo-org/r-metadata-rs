@@ -1,0 +1,37 @@
+Package: psgc
+Type: Package
+Title: Philippine Standard Geographic Code
+Version: 0.1.2
+Description: Provides access to the Philippine Standard Geographic Code (PSGC),
+    an official classification system for geographic areas in the Philippines
+    published by the Philippine Statistics Authority (PSA). Includes area names,
+    geographic levels (Region, Province, City, Municipality, Sub-Municipality,
+    and Barangay), and census population figures across multiple PSA publication
+    releases. Offers utilities to look up individual codes, filter by geographic
+    level, track code changes across releases via a built-in crosswalk, and
+    retrieve population data in long or wide format.
+Authors@R: c(
+    person(
+      "Bhas",
+      "Abdulsamad",
+      email = "aeabdulsamad@gmail.com",
+      comment = c(ORCID = "0009-0002-5891-8124"),
+      role = c("aut", "cre", "cph")
+    )
+  )
+Maintainer: Bhas Abdulsamad <aeabdulsamad@gmail.com>
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: cli
+Suggests: jsonlite, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+RoxygenNote: 7.3.3
+URL: https://yng-me.github.io/psgc/
+NeedsCompilation: no
+Packaged: 2026-07-25 06:13:11 UTC; bhasabdulsamad
+Author: Bhas Abdulsamad [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-5891-8124>)
+Repository: CRAN
+Date/Publication: 2026-07-25 06:40:02 UTC

@@ -1,0 +1,29 @@
+Package: SimtablR
+Title: Easy Publication-Ready Tables and Regression Analysis
+Version: 1.2.0
+Authors@R: 
+    person(given = "Matheus", family = "Trabuco Gonzalez", email = "matheustrabucogonzalez@gmail.com", role = c("aut", "cre"))
+Description: Streamlines the creation of descriptive frequency tables ('Table 1'), 
+    diagnostic test accuracy evaluations (sensitivity, specificity, predictive values), 
+    and multi-outcome regression summaries. Features automatic tables, 
+    prevalence and odds ratio calculations, and seamless integration with 'flextable' 
+    for exporting results to 'Microsoft Word' and 'PowerPoint'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, dplyr, flextable, lmtest, openxlsx, sandwich, stats,
+        tidyr, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+LazyData: true
+URL: https://github.com/MatheusTG-14/SimtablR,
+        https://MatheusTG-14.github.io/SimtablR/
+BugReports: https://github.com/MatheusTG-14/SimtablR/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-20 22:30:58 UTC; mathe
+Author: Matheus Trabuco Gonzalez [aut, cre]
+Maintainer: Matheus Trabuco Gonzalez <matheustrabucogonzalez@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-21 22:40:07 UTC

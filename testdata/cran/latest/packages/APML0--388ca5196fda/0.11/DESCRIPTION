@@ -1,0 +1,38 @@
+Package: APML0
+Type: Package
+Title: Augmented and Penalized Minimization Method L0
+Version: 0.11
+Date: 2026-06-13
+Authors@R: c(
+    person("Xiang", "Li", email = "spiritcoke@gmail.com", role = c("aut", "cre")),
+    person("Shanghong", "Xie", role = "aut"),
+    person("Donglin", "Zeng", role = "aut"),
+    person("Yuanjia", "Wang", role = "aut"))
+Description: Fit linear, logistic and Cox models regularized with L0, lasso
+    (L1), elastic-net (L1 and L2), or net (L1 and Laplacian) penalty, and
+    their adaptive forms, such as adaptive lasso / elastic-net and net
+    adjusting for signs of linked coefficients. It solves the L0 penalty
+    problem by simultaneously selecting regularization parameters and
+    performing hard-thresholding or selecting the number of non-zeros. This
+    augmented and penalized minimization method provides an approximation
+    solution to the L0 penalty problem, but runs as fast as L1 regularization.
+    The package uses a one-step coordinate descent algorithm and runs extremely
+    fast by taking into account the sparsity structure of coefficients. It can
+    handle very high dimensional data and has superior selection performance.
+License: GPL (>= 2)
+Encoding: UTF-8
+Language: en-US
+URL: https://github.com/LeeSprite/APML0
+BugReports: https://github.com/LeeSprite/APML0/issues
+Imports: Rcpp (>= 0.12.12)
+LinkingTo: Rcpp, RcppEigen
+Depends: Matrix (>= 1.2-10)
+NeedsCompilation: yes
+Packaged: 2026-06-13 17:36:05 UTC; spiri
+Author: Xiang Li [aut, cre],
+  Shanghong Xie [aut],
+  Donglin Zeng [aut],
+  Yuanjia Wang [aut]
+Maintainer: Xiang Li <spiritcoke@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-19 16:00:07 UTC

@@ -1,0 +1,31 @@
+Package: tipitaka
+Type: Package
+Title: Data and Tools for Analyzing the Pali Canon
+Version: 1.0.0
+Authors@R: 
+    person(given = "Dan",
+           family = "Zigmond",
+           role = c("aut", "cre"),
+           email = "djz@shmonk.com")
+Description: Provides access to the complete Pali Canon, or
+    Tipitaka, the canonical scripture for Theravadin Buddhists
+    worldwide. Based on the Chattha Sangayana Tipitaka version
+    4 (Vipassana Research Institute, 1990). Includes word
+    frequency data and tools for Pali string sorting. For a
+    lemmatized critical edition with sutta-level granularity,
+    see the companion package 'tipitaka.critical'.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+Imports: stringr
+Suggests: dplyr, magrittr, stringi
+LinkingTo: cpp11
+NeedsCompilation: yes
+Packaged: 2026-02-12 23:21:46 UTC; danzigmond
+Author: Dan Zigmond [aut, cre]
+Maintainer: Dan Zigmond <djz@shmonk.com>
+Repository: CRAN
+Date/Publication: 2026-02-13 09:50:02 UTC

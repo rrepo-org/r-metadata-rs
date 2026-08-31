@@ -1,0 +1,57 @@
+Package: glcdp
+Title: Discover, Access, and Import Global Light Commons Data Packages
+Version: 1.0.0
+Authors@R: c(
+    person(
+      "Johannes", "Zauner",
+      email = "johannes.zauner@tum.de",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0003-2171-4566")
+    ),
+    person(
+      "Salma M.", "Thalji",
+      email = "salma.thalji@tum.de",
+      role = c("aut", "cph"),
+      comment = c(ORCID = "0009-0002-7320-9289")
+    ),
+    person(
+      "Manuel", "Spitschan",
+      email = "manuel.spitschan@tum.de",
+      role = c("aut", "cph"),
+      comment = c(ORCID = "0000-0002-8572-9268")
+    )
+  )
+Description: Discovers Global Light Commons data packages through their
+    registry, opens immutable passing revisions, and provides searchable
+    inventories of package metadata. Selected metadata and measurement files
+    can be downloaded or imported with metadata-defined columns, types, factor
+    levels, date-time values, and time zones. 'Git Large File Storage' objects
+    are resolved without requiring an external 'Git LFS' installation, and
+    imported file groups can be explicitly collected into data suitable for
+    personal light exposure analysis workflows. An included 'shiny' application
+    supports interactive discovery, inspection, selection, preview, and
+    reproducible handoff to 'R'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: cli, digest, dplyr, httr2, jsonlite, lubridate, readr, tibble
+Suggests: bslib (>= 0.6.0), knitr, rmarkdown, shiny (>= 1.7.2),
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://tscnlab.github.io/glc-dp-r/,
+        https://github.com/tscnlab/glc-dp-r
+BugReports: https://github.com/tscnlab/glc-dp-r/issues
+Config/Needs/website: pkgdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-28 18:47:37 UTC; zauner
+Author: Johannes Zauner [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2171-4566>),
+  Salma M. Thalji [aut, cph] (ORCID:
+    <https://orcid.org/0009-0002-7320-9289>),
+  Manuel Spitschan [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-8572-9268>)
+Maintainer: Johannes Zauner <johannes.zauner@tum.de>
+Repository: CRAN
+Date/Publication: 2026-08-06 13:00:02 UTC

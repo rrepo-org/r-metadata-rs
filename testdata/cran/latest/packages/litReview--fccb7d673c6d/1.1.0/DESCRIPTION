@@ -1,0 +1,41 @@
+Package: litReview
+Title: Summarizing Graphs for Literature Reviews
+Version: 1.1.0
+Authors@R: c(
+    person("Sonsoles", "López-Pernas", email = "sonsoles.lopez@uef.fi",
+           role = c("aut", "cre", "cph")),
+    person("Kamila", "Misiejuk", role = "aut"),
+    person("Mohammed", "Saqr", role = "aut")
+    )
+Description: Summarizes and visualizes categorical data extracted during
+    literature reviews and evidence syntheses, starting from a data frame with
+    one row per study. Generates publication-ready bar, stacked bar, histogram,
+    waffle, donut, treemap, alluvial, trend, co-occurrence, 'UpSet', tree, and
+    study-by-criteria matrix figures, together with world maps and formatted
+    summary tables. Plot functions return standard 'ggplot2' objects that can
+    be further customized, and an interactive 'Shiny' application is included
+    for building figures without writing code. Aims to help researchers report
+    study characteristics consistently across many publications.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/sonsoleslp/litReview,
+        https://sonsoles.me/litReview/
+BugReports: https://github.com/sonsoleslp/litReview/issues
+Imports: cli, dplyr, ggplot2, grDevices, grid, rlang, tidyr (>= 1.3.0)
+Suggests: bslib (>= 0.5.0), ggalluvial, ggupset, gt, RColorBrewer,
+        treemapify, maps, knitr, readxl, rmarkdown, shiny (>= 1.7.0),
+        testthat (>= 3.0.0)
+Config/Needs/website: ggalluvial, ggupset, treemapify, maps, gt
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-26 11:22:42 UTC; slopezpe
+Author: Sonsoles López-Pernas [aut, cre, cph],
+  Kamila Misiejuk [aut],
+  Mohammed Saqr [aut]
+Maintainer: Sonsoles López-Pernas <sonsoles.lopez@uef.fi>
+Repository: CRAN
+Date/Publication: 2026-08-26 11:50:02 UTC

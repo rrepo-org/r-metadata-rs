@@ -1,0 +1,31 @@
+Package: DESA
+Title: Detecting Epidemics using School Absenteeism
+Version: 1.0.0
+Date: 2025-05-01
+Authors@R: c(
+    person("Vinay", "Joshy", email = "joshy@uoguelph.ca", role = c("aut", "cre", "cph")),
+    person("Zeny", "Feng", email = "zfeng@uoguelph.ca", role = c("aut", "cph", "ths")),
+    person("Lorna", "Deeth", email = "ldeeth@uoguelph.ca", role = c("aut", "cph", "ths")),
+    person("Justin", "Slater", email = "jslate04@uoguelph.ca", role = c("aut", "cph", "ths")),
+    person("Kayla", "Vanderkruk", email = "kayla.vanderkruk@gmail.com", role = c("aut", "com", "ctb")))
+Description: Provides a comprehensive framework for early epidemic detection through school absenteeism surveillance. The package offers three core functionalities: (1) simulation of population structures, epidemic spread, and resulting school absenteeism patterns; (2) implementation of surveillance models that generate alerts for impending epidemics based on absenteeism data and (3) evaluation of alert timeliness and accuracy through alert time quality metrics to optimize model parameters. These tools enable public health officials and researchers to develop and assess early warning systems before implementation. Methods are based on research published in Vanderkruk et al. (2023) <doi:10.1186/s12889-023-15747-z> and Ward et al. (2019) <doi:10.1186/s12889-019-7521-7>.
+License: GPL (>= 3)
+URL: https://github.com/vjoshy/DESA
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, cli, fansi, farver, utf8, devtools,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: dplyr, purrr, zoo, ggplot2, gridExtra, rlang, scales
+Depends: R (>= 4.1.0)
+BugReports: https://github.com/vjoshy/DESA/issues
+NeedsCompilation: no
+Packaged: 2025-05-05 15:26:08 UTC; vjosh
+Author: Vinay Joshy [aut, cre, cph],
+  Zeny Feng [aut, cph, ths],
+  Lorna Deeth [aut, cph, ths],
+  Justin Slater [aut, cph, ths],
+  Kayla Vanderkruk [aut, com, ctb]
+Maintainer: Vinay Joshy <joshy@uoguelph.ca>
+Repository: CRAN
+Date/Publication: 2025-05-07 10:00:01 UTC

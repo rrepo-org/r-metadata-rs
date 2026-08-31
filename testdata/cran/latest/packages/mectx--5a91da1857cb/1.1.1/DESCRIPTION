@@ -1,0 +1,41 @@
+Package: mectx
+Type: Package
+Title: MEchanistic Clustering - Treatment eXposure Framework
+Version: 1.1.1
+Authors@R: 
+    c(person(given = "Dipankor",
+             family = "Dhrubo",
+             email = "dhrubo.2@osu.edu",
+             role = c("aut", "cre")),
+      person(given = "Daniel",
+             family = "Spakowicz",
+             role = c("aut"),
+             email = "daniel.spakowicz@osumc.edu",
+             comment = c(ORCID = "0000-0003-2314-6435")))
+Description: Implements the MEC-TX (MEchanistic Clustering - Treatment
+    eXposure) framework for encoding, clustering, and survival analysis of
+    real-world oncology treatment timelines. Provides functions for
+    normalising medication records, computing treatment intervals, performing
+    k-means clustering in PCA space, assigning line-of-therapy labels, and
+    comparing survival outcomes across treatment groups. Designed for use
+    with registry-based cohorts such as the ORIEN AVATAR dataset. Methods
+    follow the digital-twin framework described in Dhrubo and Spakowicz (2026)
+    <https://github.com/spakowiczlab/mec-tx>.
+    treatment timelines using the MEC-TX digital-twin framework.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.4.0)
+Imports: magrittr, broom, dplyr, forcats, ggnewscale, ggplot2,
+        patchwork, purrr, stats, stringr, survival, tibble, tidyr, umap
+Suggests: testthat (>= 3.0.0), devtools, roxygen2
+Config/testthat/edition: 3
+Date: 2026-04-27
+NeedsCompilation: no
+Packaged: 2026-05-05 19:59:19 UTC; dipankor99
+Author: Dipankor Dhrubo [aut, cre],
+  Daniel Spakowicz [aut] (ORCID: <https://orcid.org/0000-0003-2314-6435>)
+Maintainer: Dipankor Dhrubo <dhrubo.2@osu.edu>
+Repository: CRAN
+Date/Publication: 2026-05-11 18:40:08 UTC

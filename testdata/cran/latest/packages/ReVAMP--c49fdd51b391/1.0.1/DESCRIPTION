@@ -1,0 +1,44 @@
+Package: ReVAMP
+Type: Package
+Title: Interface to 'Vamp' Audio Analysis Plugins
+Version: 1.0.1
+Date: 2025-12-03
+Authors@R: 
+    c(person("Ed", "Baker", 
+           email = "ed@ebaker.me.uk",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5887-9543")),
+    person("Authors of ", "vamp-sdk",
+           role = "cph",
+           comment = "Authorship and copyright of included vamp-sdk as detailed in inst/COPYRIGHTS"),
+    person("Mark", "Borgerding",
+           role = "cph",
+           comment = "Authorship and copyright of included kiss_fft as detailed in inst/COPYRIGHTS"))
+Copyright: See the file COPYRIGHTS
+Description: Provides an interface to the 'Vamp' audio analysis plugin system
+    <https://www.vamp-plugins.org/> developed by Queen Mary University of London's 
+    Centre for Digital Music. Enables loading and running 'Vamp' plugins for various audio analysis
+    tasks including tempo detection, onset detection, spectral analysis, and
+    audio feature extraction. Supports mono and stereo audio with automatic
+    channel adaptation and domain conversion.
+License: GPL (>= 2)
+Imports: Rcpp
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0), tuneR, knitr, rmarkdown, spelling
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+URL: https://revamp.ebaker.me.uk/, https://github.com/edwbaker/ReVAMP
+BugReports: https://github.com/edwbaker/ReVAMP/issues
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2025-12-22 11:44:33 UTC; edwab
+Author: Ed Baker [aut, cre] (ORCID: <https://orcid.org/0000-0002-5887-9543>),
+  Authors of vamp-sdk [cph] (Authorship and copyright of included
+    vamp-sdk as detailed in inst/COPYRIGHTS),
+  Mark Borgerding [cph] (Authorship and copyright of included kiss_fft as
+    detailed in inst/COPYRIGHTS)
+Maintainer: Ed Baker <ed@ebaker.me.uk>
+Repository: CRAN
+Date/Publication: 2025-12-22 12:40:08 UTC

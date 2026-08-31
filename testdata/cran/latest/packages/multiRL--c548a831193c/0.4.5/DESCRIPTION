@@ -1,0 +1,55 @@
+Package: multiRL
+Version: 0.4.5
+Title: Reinforcement Learning Tools for Multi-Armed Bandit
+Description: 
+  A flexible general-purpose toolbox for implementing Rescorla-Wagner models 
+    in multi-armed bandit tasks. 
+  As the successor and functional extension of the 'binaryRL' package, 
+    'multiRL' modularizes the Markov Decision Process (MDP) into six core 
+    components. This framework enables users to construct custom models via 
+    intuitive if-else syntax and define latent learning rules for agents. 
+  For parameter estimation, it provides both likelihood-based 
+    inference (MLE and MAP) and simulation-based inference (ABC and 
+    RNN), with full support for parallel processing across subjects. 
+  The workflow is highly standardized, featuring four main functions 
+    that strictly follow the four-step protocol (and ten rules) 
+    proposed by Wilson & Collins (2019) <doi:10.7554/eLife.49547>. 
+  Beyond the three built-in models (TD, RSTD, and Utility), users 
+    can easily derive new variants by declaring which variables are 
+    treated as free parameters.
+Authors@R: 
+  c(
+    person(
+      given = "YuKi",
+      role = c("aut", "cre"),
+      email = "hmz1969a@gmail.com",
+      comment = c(ORCID = "0009-0000-1378-1318")
+    ),
+    person(
+      given = "Xinyu",
+      role = "aut",
+      email = "xinyu000328@gmail.com",
+      comment = c(ORCID = "0009-0004-4974-9191")
+    )
+  )
+Maintainer: YuKi <hmz1969a@gmail.com>
+URL: https://yuki-961004.github.io/multiRL/
+BugReports: https://github.com/yuki-961004/multiRL/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: TRUE
+ByteCompile: TRUE
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: methods, utils, Rcpp, compiler, future, doFuture, foreach,
+        doRNG, progressr, ggplot2, scales, grDevices
+LinkingTo: Rcpp
+Suggests: stats, GenSA, GA, DEoptim, pso, mlrMBO, mlr, ParamHelpers,
+        smoof, lhs, DiceKriging, rgenoud, cmaes, nloptr, abc, pls,
+        reticulate, keras, keras3
+NeedsCompilation: yes
+Packaged: 2026-05-30 12:27:17 UTC; hmz19
+Author: YuKi [aut, cre] (ORCID: <https://orcid.org/0009-0000-1378-1318>),
+  Xinyu [aut] (ORCID: <https://orcid.org/0009-0004-4974-9191>)
+Repository: CRAN
+Date/Publication: 2026-06-09 10:20:02 UTC

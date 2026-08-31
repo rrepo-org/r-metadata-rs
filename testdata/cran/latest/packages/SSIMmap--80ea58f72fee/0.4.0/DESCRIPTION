@@ -1,0 +1,29 @@
+Package: SSIMmap
+Title: The Structural Similarity Index Measure for Maps
+Version: 0.4.0
+Authors@R: c(
+  person(given="Hui Jeong (Hailyee)", family="Ha", email="hha24@uwo.ca", role = c("aut", "cre"),comment = c(ORCID = "0000-0002-5229-4528")), 
+  person(given="Jed", family="Long", email="jed.long@uwo.ca", role="aut", comment = c(ORCID = "0000-0003-3961-3085")))
+Description: Extends the classical SSIM method proposed by 'Wang', 'Bovik', 'Sheikh', and 'Simoncelli'(2004) <doi:10.1109/TIP.2003.819861>. 
+  for irregular lattice-based maps and raster images.
+  The geographical SSIM method incorporates well-developed 'geographically weighted summary statistics'('Brunsdon', 'Fotheringham' and 'Charlton' 2002) <doi:10.1016/S0198-9715(01)00009-6> 
+  with an adaptive bandwidth kernel function for irregular lattice-based maps.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: stats, scales, terra, ggplot2, sf, knitr, FNN
+Suggests: RColorBrewer, testthat (>= 3.0.0), rmarkdown, patchwork,
+        tidyterra
+URL: https://github.com/Hailyee-Ha/SSIMmap
+BugReports: https://github.com/Hailyee-Ha/SSIMmap/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-07 19:19:37 UTC; hailyeeha
+Author: Hui Jeong (Hailyee) Ha [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5229-4528>),
+  Jed Long [aut] (ORCID: <https://orcid.org/0000-0003-3961-3085>)
+Maintainer: Hui Jeong (Hailyee) Ha <hha24@uwo.ca>
+Repository: CRAN
+Date/Publication: 2026-05-07 19:40:02 UTC

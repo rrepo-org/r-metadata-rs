@@ -1,0 +1,49 @@
+Package: AirScreen
+Type: Package
+Title: Feature Screening via Adaptive Iterative Ridge (Air-HOLP and
+        Air-OLS)
+Version: 0.1.0
+Authors@R: c(
+    person(
+      given   = "Ibrahim", family  = "Joudah",
+      email   = "ibrahim.joudah@mq.edu.au",
+      role    = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-0397-6266")
+    ),
+    person(
+      given   = "Samuel", family  = "Muller",
+      email   = "samuel.muller@mq.edu.au",
+      role    = c("aut"),
+      comment = c(ORCID = "0000-0002-3087-8127")
+    ),
+    person(
+      given   = "Houying", family = "Zhu",
+      email   = "houying.zhu@mq.edu.au",
+      role    = c("aut"),
+      comment = c(ORCID = "0000-0002-2515-7413")
+    )
+    )
+Description: Implements two complementary high-dimensional feature screening
+    methods, Adaptive Iterative Ridge High-dimensional Ordinary Least-squares
+    Projection (Air-HOLP, suitable when the number of predictors p is greater
+    than or equal to the sample size n) and Adaptive Iterative Ridge Ordinary
+    Least Squares (Air-OLS, for n greater than p). Also  provides helper
+    functions to generate compound-symmetry and AR(1) correlated data, plus
+    a unified Air() front end and a summary method. For methodological details
+    see Joudah, Muller and Zhu (2025) <doi:10.1007/s11222-025-10599-6>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: stats
+RoxygenNote: 7.3.2
+URL: https://github.com/Logic314/Air-HOLP
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-07-29 03:46:17 UTC; ibrah
+Author: Ibrahim Joudah [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0397-6266>),
+  Samuel Muller [aut] (ORCID: <https://orcid.org/0000-0002-3087-8127>),
+  Houying Zhu [aut] (ORCID: <https://orcid.org/0000-0002-2515-7413>)
+Maintainer: Ibrahim Joudah <ibrahim.joudah@mq.edu.au>
+Repository: CRAN
+Date/Publication: 2025-07-31 10:00:43 UTC

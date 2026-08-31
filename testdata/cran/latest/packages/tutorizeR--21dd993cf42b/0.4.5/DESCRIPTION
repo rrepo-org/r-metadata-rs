@@ -1,0 +1,37 @@
+Package: tutorizeR
+Type: Package
+Title: Convert R Markdown or Quarto Content into Interactive Tutorials
+Version: 0.4.5
+Authors@R: person(
+    given  = "Aurélien",
+    family = "Nicosia",
+    email  = "aurelien.nicosia@mat.ulaval.ca",
+    role   = c("aut", "cre")
+  )
+Author: Aurélien Nicosia [aut, cre]
+Maintainer: Aurélien Nicosia <aurelien.nicosia@mat.ulaval.ca>
+Description: Helps teachers convert existing '.Rmd' and '.qmd' teaching
+    material into interactive tutorials for 'learnr' or 'quarto-live'.
+    Conversion preserves narrative text, setup chunks, and major chunk
+    options, supports teacher tags, and provides explicit validation and
+    conversion reports. Output conventions follow 'learnr' as described
+    by Aden-Buie et al. (2025) <doi:10.32614/CRAN.package.learnr>,
+    'quarto-live' as described by Stagg (2024)
+    <https://tidyverse.org/blog/2024/10/quarto-live-0-1-1/>,
+    and R Markdown as described by Xie, Allaire and Grolemund
+    (2018, ISBN:9781138359338).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0)
+Imports: cli, jsonlite, lifecycle, rlang, rmarkdown, rstudioapi, yaml
+Suggests: commonmark, covr, dplyr, ggplot2, knitr, learnr, lintr,
+        miniUI, readr, shiny, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/AurelienNicosiaULaval/tutorizeR
+BugReports: https://github.com/AurelienNicosiaULaval/tutorizeR/issues
+NeedsCompilation: no
+Packaged: 2026-06-05 15:26:09 UTC; aureliennicosia
+Repository: CRAN
+Date/Publication: 2026-06-11 11:40:02 UTC

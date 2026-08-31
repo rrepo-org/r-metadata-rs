@@ -1,0 +1,65 @@
+Package: dtlg
+Title: A Performance-Focused Package for Clinical Trial Tables
+Version: 0.1.0
+Authors@R: c(
+    person(
+      given = "Max", family = "Ebenezer-Brown",
+      email = "max.ebenezer-brown@acuityanalytics.com",
+      role = "aut"
+    ),
+    person(
+      given = "Max", family = "Norman",
+      role = "aut"
+    ),
+    person(
+      given = "Xinye", family = "Li",
+      email = "xinye.li@acuityanalytics.com",
+      role = "aut"
+    ),
+    person(
+      given = "Anja", family = "Peebles-Brown",
+      email = "anna.peebles-brown@acuityanalytics.com",
+      role = "aut"
+    ),
+    person(
+      given = "Ashley", family = "Baldry",
+      email = "ashley.baldry@acuityanalytics.com",
+      role = "aut"
+    ),    
+    person(
+      given = "Ramiro", family = "Magno",
+      email = "ramiro.morgado@acuityanalytics.com",
+      role = c("aut", "cre")
+    )
+    )
+Description: Create high-performance clinical reporting tables (TLGs) from
+    ADaM-like inputs. The package provides a consistent, programmatic API
+    to generate common tables such as demographics, adverse event incidence,
+    and laboratory summaries, using 'data.table' for fast aggregation over
+    large populations. Functions support flexible target-variable selection,
+    stratification by treatment, and customizable summary statistics, and
+    return tidy, machine-readable results ready to render with downstream
+    table/formatting packages in analysis pipelines.
+License: MIT + file LICENSE
+Imports: data.table (>= 1.18.0), vctrs
+Suggests: bench, dplyr, kableExtra, rmarkdown, random.cdisc.data,
+        rtables, tern, testthat (>= 3.0.0), tidyr, withr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Config/testthat/edition: 3
+Config/Needs/website: rmarkdown, ascentsoftware/ascentdown
+LazyData: true
+URL: https://AscentSoftware.github.io/dtlg/
+BugReports: https://github.com/AscentSoftware/dtlg/issues
+NeedsCompilation: no
+Packaged: 2026-04-28 11:28:54 UTC; rmagno
+Author: Max Ebenezer-Brown [aut],
+  Max Norman [aut],
+  Xinye Li [aut],
+  Anja Peebles-Brown [aut],
+  Ashley Baldry [aut],
+  Ramiro Magno [aut, cre]
+Maintainer: Ramiro Magno <ramiro.morgado@acuityanalytics.com>
+Repository: CRAN
+Date/Publication: 2026-04-29 09:10:07 UTC

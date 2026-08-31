@@ -1,0 +1,51 @@
+Package: naijR
+Title: Operations to Ease Data Analyses Specific to Nigeria
+Version: 0.7.0
+Depends: R (>= 3.6), grDevices, graphics, stats, utils
+Imports: RColorBrewer (>= 1.1.2), cli (>= 3.6.0), mapdata (>= 2.3.0),
+        maps (>= 3.3.0), rlang (>= 0.4.0), sf (>= 1.0-12), stringi (>=
+        1.7.6),
+Suggests: ISOcodes, covr, here, knitr, lifecycle, purrr, readr,
+        rmarkdown, testthat (>= 3.0.0), tibble, usethis
+Authors@R: 
+	c(person(given = "Victor", 
+	     family = "Ordu",
+       role = c("aut", "cre"),
+       email = "victorordu@outlook.com",
+       comment = c(ORCID = "0000-0003-3716-0668")),
+	  person(given = "Laura",
+			 family = "DeCicco",
+			 role = "ctb",
+			 email = "ldecicco@usgs.gov"),
+	  person(given = "Emily",
+	     family = "Riederer",
+			 role = "rev",
+			 email = "emilyriederer@gmail.com"),
+	  person(given = "Margaret",
+	     family = "Siple",
+			 role = "rev"),
+	  person(given = "Cagri",
+	     family = "Alican",
+			 role = "rev")
+	)
+Description: A set of convenience functions as well as geographical/political
+  data about Nigeria, aimed at simplifying work with data and information that
+  are specific to the country.
+License: GPL-3
+LazyData: TRUE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+URL: https://docs.ropensci.org/naijR/
+BugReports: https://github.com/ropensci/naijR/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-13 21:36:45 UTC; vordu
+Author: Victor Ordu [aut, cre] (ORCID: <https://orcid.org/0000-0003-3716-0668>),
+  Laura DeCicco [ctb],
+  Emily Riederer [rev],
+  Margaret Siple [rev],
+  Cagri Alican [rev]
+Maintainer: Victor Ordu <victorordu@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-03-13 23:30:02 UTC

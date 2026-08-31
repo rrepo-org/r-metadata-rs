@@ -1,0 +1,38 @@
+Package: swjm
+Title: Stagewise Variable Selection for Joint Models of Semi-Competing
+        Risks
+Version: 0.1.2
+Authors@R: c(
+    person(family="Huling", given="Jared D.", role = c("aut", "cre"),
+    email = "jaredhuling@gmail.com"),
+    person(family="Huo", given="Lingfeng", role = c("aut")),
+    person(family="Jiang", given="Ziren", role = "aut"),
+    person(family="Hou", given="Jue", role = "aut"),
+    person(given = "Sy Han (Steven)", family = "Chiou", role = "ctb"),
+    person(given = "Chiung-Yu", family = "Huang", role = "ctb"))
+Description: Implements stagewise regression for variable selection in joint
+    models of recurrent events and terminal events (semi-competing risks).
+    Supports two model frameworks: the joint frailty model (Cox-type) and the
+    joint scale-change model (AFT-type). Provides cooperative lasso, lasso, and
+    group lasso penalties with cross-validation for tuning parameter selection
+    via cross-fitted estimating equations.
+Depends: R (>= 3.5.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp (>= 1.0.14), RcppArmadillo
+Imports: Rcpp (>= 1.0.14), Matrix, stats, reReg
+Suggests: testthat (>= 3.0.0), survival, timeROC, knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-07-30 17:10:33 UTC; huling
+Author: Jared D. Huling [aut, cre],
+  Lingfeng Huo [aut],
+  Ziren Jiang [aut],
+  Jue Hou [aut],
+  Sy Han (Steven) Chiou [ctb],
+  Chiung-Yu Huang [ctb]
+Maintainer: Jared D. Huling <jaredhuling@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-30 18:10:02 UTC

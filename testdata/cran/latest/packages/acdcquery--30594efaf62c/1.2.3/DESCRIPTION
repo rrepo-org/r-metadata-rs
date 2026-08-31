@@ -1,0 +1,26 @@
+Package: acdcquery
+Title: Query the Attentional Control Data Collection or the Truth
+        Effect Database
+Version: 1.2.3
+Authors@R: c(
+    person(given = "Sven", family = "Lesche", email = "sven.lesche@psychologie.uni-heidelberg.de", role = c("aut", "cre", "cph")),
+    person(given = "Julia M.", family = "Haaf", email = "j.m.haaf@uva.nl", role = c("ctb", "ths")),
+    person(given = "Madlen", family = "Hoffstadt", email = "madlenfeehoffstadt@gmail.com", role = c("ctb"))
+    )
+Description: Interact with the Attentional Control Data Collection (ACDC) or the Truth Effect Database (TED).
+  Download the databases using download_acdc() or download_ted(), connect to the database via connect_to_db(), set filter arguments via add_argument()
+  and query the database via query_db().
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: DBI, RSQLite, httr, jsonlite, digest
+URL: https://github.com/SLesche/acdc-query
+BugReports: https://github.com/SLesche/acdc-query/issues
+NeedsCompilation: no
+Packaged: 2026-02-19 14:11:42 UTC; Sven
+Author: Sven Lesche [aut, cre, cph],
+  Julia M. Haaf [ctb, ths],
+  Madlen Hoffstadt [ctb]
+Maintainer: Sven Lesche <sven.lesche@psychologie.uni-heidelberg.de>
+Repository: CRAN
+Date/Publication: 2026-02-19 15:40:08 UTC

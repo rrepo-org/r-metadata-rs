@@ -1,0 +1,50 @@
+Package: MisRepARMA
+Type: Package
+Title: Misreported Time Series Analysis
+Version: 0.2.0
+Date: 2026-06-07
+Encoding: UTF-8
+Authors@R: c(
+    person(given = "David",
+           family = "Moriña Soler",
+           role = c("aut", "cre"),
+           email = "David.Morina@uab.cat",
+           comment = c(ORCID = "0000-0001-5949-7443")),
+    person(given = "Amanda",
+           family = "Fernández-Fontelo",
+           role = "aut",
+           email = "Amanda.Fernandez@uab.cat"),
+    person(given = "Alejandra",
+           family = "Cabaña",
+           role = "aut",
+           email = "AnaAlejandra.Cabana@uab.cat"),
+    person(given = "Pedro",
+           family = "Puig",
+           role = "aut",
+           email = "Pere.Puig@uab.cat"),
+    person(given = "Biel",
+           family = "Abarca Galván",
+           role = "aut"))
+Maintainer: David Moriña Soler <David.Morina@uab.cat>
+Description: Provides a simple and trustworthy methodology for the analysis of
+    misreported continuous time series using either a frequentist
+    (bootstrap-based EM algorithm) or a Bayesian (MCMC via JAGS) approach.
+    The frequentist method is described in Morina et al. (2021)
+    <doi:10.1038/s41598-021-02620-5>. The Bayesian extension fits the same
+    ARMA model with misreporting structure using a full posterior distribution,
+    providing credible intervals and DIC for model comparison, as described in 
+    Morina et al. (2024) <doi:10.1101/2024.02.26.24303373>.
+Depends: R (>= 3.5.0), mixtools, boot, tseries
+Imports: R2jags
+Suggests: coda
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2026-06-07 08:47:03 UTC; dmorina
+Author: David Moriña Soler [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5949-7443>),
+  Amanda Fernández-Fontelo [aut],
+  Alejandra Cabaña [aut],
+  Pedro Puig [aut],
+  Biel Abarca Galván [aut]
+Repository: CRAN
+Date/Publication: 2026-06-07 14:10:28 UTC

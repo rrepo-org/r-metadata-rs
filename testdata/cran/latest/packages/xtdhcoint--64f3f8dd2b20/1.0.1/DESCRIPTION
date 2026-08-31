@@ -1,0 +1,40 @@
+Package: xtdhcoint
+Type: Package
+Title: Durbin-Hausman Panel Cointegration Tests
+Version: 1.0.1
+Date: 2026-03-07
+Authors@R: c(
+    person("Muhammad", "Alkhalaf", 
+           email = "muhammedalkhalaf@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-2677-9246")),
+    person("Merwan", "Roudane",
+           role = "ctb",
+           comment = "Original Stata implementation"),
+    person("Joakim", "Westerlund",
+           role = "ctb",
+           comment = "Original GAUSS code author"))
+Description: Implements the Durbin-Hausman panel cointegration tests of 
+    Westerlund (2008) <doi:10.1002/jae.963>. The tests are robust to 
+    cross-sectional dependence through common factor extraction using 
+    principal components. Provides both group-mean (DHg) and panel (DHp) 
+    test statistics with automatic factor number selection via information 
+    criteria.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+RoxygenNote: 7.3.3
+URL: https://github.com/muhammedalkhalaf/xtdhcoint
+BugReports: https://github.com/muhammedalkhalaf/xtdhcoint/issues
+NeedsCompilation: no
+Packaged: 2026-03-08 10:16:40 UTC; acad_
+Author: Muhammad Alkhalaf [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-2677-9246>),
+  Merwan Roudane [ctb] (Original Stata implementation),
+  Joakim Westerlund [ctb] (Original GAUSS code author)
+Maintainer: Muhammad Alkhalaf <muhammedalkhalaf@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-12 08:30:02 UTC

@@ -1,0 +1,28 @@
+Package: araponga
+Title: Estimate 3D Orientations from 2D Landmarks
+Version: 1.1.0
+Authors@R: 
+    person("João C T", "Menezes", "", "jocateme@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-4156-2934"))
+Description: Estimates possible 3D orientations of an object from the 2D image coordinates 
+    of two landmarks and an approximate camera-object elevation angle. Because a projected 
+    2D angle can be compatible with multiple 3D pitch, yaw, and view-elevation angles, the 
+    package returns compatible sets of orientations rather than a single unconstrained 
+    estimate.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: arrow, dplyr, graphics, rlang
+Suggests: curl, httr, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+URL: https://github.com/jocateme/araponga
+BugReports: https://github.com/jocateme/araponga/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-07 14:22:52 UTC; jocateme
+Author: João C T Menezes [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-4156-2934>)
+Maintainer: João C T Menezes <jocateme@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-07 20:00:17 UTC

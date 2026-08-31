@@ -1,0 +1,31 @@
+Package: odbc.resourcer
+Type: Package
+Title: Open Database Connectivity Resource Resolver
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Yannick",
+             family = "Marcon",
+             role = c("aut", "cre"),
+             email = "yannick.marcon@obiba.org",
+             comment = c(ORCID = "0000-0003-0138-2023")),
+      person("OBiBa group",
+             role="cph",
+             email="info@obiba.org"))
+Description: A database resource that is accessible through the Open Database Connectivity ('ODBC') API. This package uses the Resource 
+  model, with URL "resolver" and "client", to dynamically discover and make accessible tables stored in a 'MS SQL Server' database.
+  For more details see Marcon (2021) <doi:10.1371/journal.pcbi.1008880>. 
+License: LGPL (>= 2.1)
+Depends: R6, httr, resourcer, odbc, DBI
+Suggests: testthat, knitr, rmarkdown
+BugReports: https://github.com/obiba/odbc.resourcer/issues
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-11-02 19:42:58 UTC; yannick
+Author: Yannick Marcon [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0138-2023>),
+  OBiBa group [cph]
+Maintainer: Yannick Marcon <yannick.marcon@obiba.org>
+Repository: CRAN
+Date/Publication: 2025-11-05 20:20:02 UTC

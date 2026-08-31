@@ -1,0 +1,38 @@
+Package: SporeLag
+Type: Package
+Title: Lagged and Moving-Average Exposure Features for Aeroallergen
+        Epidemiology
+Version: 0.1.1
+Authors@R: 
+    person("Félix E.", "Rivera-Mariani",
+           email = "felixrm@friveram.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6671-0174"))
+Description: Deterministic, group-safe utilities that transform daily
+    environmental exposure series (pollen and spore counts, with support for
+    other time-varying exposures such as ozone and particulate matter) into
+    analysis-ready lagged and moving-average exposure features. Functions
+    validate temporal regularity, assign ISO 8601 weeks and configurable
+    seasons, impute missing daily values transparently, and construct lagged
+    and windowed exposures suitable for environmental epidemiology and public
+    health analyses.
+URL: https://github.com/friveramariani/SporeLag
+BugReports: https://github.com/friveramariani/SporeLag/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: dplyr, knitr, lubridate, rmarkdown, spelling, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 8.0.0
+Imports: cli, rlang, stats
+Depends: R (>= 4.1.0)
+LazyData: true
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-07-24 00:02:53 UTC; felixrivera-mariani
+Author: Félix E. Rivera-Mariani [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6671-0174>)
+Maintainer: Félix E. Rivera-Mariani <felixrm@friveram.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 09:30:02 UTC
