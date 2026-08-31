@@ -1,17 +1,17 @@
 [package]
-name = "r-description"
+name = "r-dcf-syntax"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 repository.workspace = true
-description = "Lossless, failure-tolerant R DESCRIPTION metadata"
+description = "Lossless syntax trees for R DCF metadata"
 
 [dependencies]
-r-dcf-syntax = { path = "../r-dcf-syntax" }
-r-metadata = { path = "../r-metadata" }
+rowan.workspace = true
 thiserror.workspace = true
 
 [dev-dependencies]
+proptest.workspace = true
 static_assertions.workspace = true
 
 [lints]
