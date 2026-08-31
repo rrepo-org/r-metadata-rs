@@ -1,0 +1,36 @@
+Package: devkit
+Type: Package
+Title: Practical Utilities for Package Development and Session Auditing
+Version: 1.0.0
+Authors@R: 
+  c(person(given = "Zankrut",
+           family = "Goyani",
+           role = c("aut", "cre", "cph"),
+           email = "zankrut20@gmail.com"))
+Description: Provides a comprehensive collection of practical R utilities 
+    designed to streamline the full life cycle of package development, 
+    interactive data analysis, and session management. It offers tools for 
+    package management, development workflows, debugging, data processing, 
+    and system optimization. These utilities help R developers and data 
+    scientists automate release tasks, manage and scan dependencies, 
+    audit session states, optimize memory usage, and scramble sensitive 
+    Personally Identifiable Information ('PII').
+Encoding: UTF-8
+License: MIT + file LICENSE
+Language: en-US
+Depends: R (>= 3.5.0)
+Imports: tools
+Suggests: testthat, devtools, roxygen2, usethis, knitr, rmarkdown,
+        withr
+VignetteBuilder: knitr
+RoxygenNote: 8.0.0
+Config/roxygen2/version: 8.0.0
+URL: https://zankrut20.github.io/devkit/,
+        https://github.com/zankrut20/devkit
+BugReports: https://github.com/zankrut20/devkit/issues
+NeedsCompilation: no
+Packaged: 2026-06-12 03:18:23 UTC; zankrut
+Author: Zankrut Goyani [aut, cre, cph]
+Maintainer: Zankrut Goyani <zankrut20@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-19 11:30:02 UTC

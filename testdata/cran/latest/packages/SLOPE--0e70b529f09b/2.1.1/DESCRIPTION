@@ -1,0 +1,125 @@
+Package: SLOPE
+Title: Sorted L1 Penalized Estimation
+Version: 2.1.1
+Authors@R: 
+    c(
+      person(
+        "Johan",
+        "Larsson",
+        role = c("aut", "cre"),
+        email = "johan@jolars.co",
+        comment = c(ORCID = "0000-0002-4029-5945")
+      ),
+      person(
+        "Jonas",
+        "Wallin",
+        role = "aut",
+        email = "jonas.wallin@stat.lu.se",
+        comment = c(ORCID = "0000-0003-0381-6593")
+      ),
+      person(
+        "Malgorzata",
+        "Bogdan",
+        role = "aut",
+        comment = c(ORCID = "0000-0002-0657-4342")
+      ),
+      person("Ewout", "van den Berg", role = "aut"),
+      person("Chiara", "Sabatti", role = "aut"),
+      person("Emmanuel", "Candes", role = "aut"),
+      person("Evan", "Patterson", role = "aut"),
+      person("Weijie", "Su", role = "aut"),
+      person("Jakub", "Kała", role = "aut"),
+      person("Krystyna", "Grzesiak", role = "aut"),
+      person("Mathurin", "Massias", role = "aut"),
+      person("Quentin", "Klopfenstein", role = "aut"),
+      person(
+        "Michal",
+        "Burdukiewicz",
+        comment = c(ORCID = "0000-0001-8926-582X"),
+        role = "aut"
+      ),
+      person(
+        "Jerome",
+        "Friedman",
+        role = "ctb",
+        comment = "code adapted from 'glmnet'"
+      ),
+      person(
+        "Trevor",
+        "Hastie",
+        role = "ctb",
+        comment = "code adapted from 'glmnet'"
+      ),
+      person(
+        "Rob",
+        "Tibshirani",
+        role = "ctb",
+        comment = "code adapted from 'glmnet'"
+      ),
+      person(
+        "Balasubramanian",
+        "Narasimhan",
+        role = "ctb",
+        comment = "code adapted from 'glmnet'"
+      ),
+      person(
+        "Noah",
+        "Simon",
+        role = "ctb",
+        comment = "code adapted from 'glmnet'"
+      ),
+      person(
+        "Junyang",
+        "Qian",
+        role = "ctb",
+        comment = "code adapted from 'glmnet'"
+      )
+    )
+Description: Efficient implementations for Sorted L-One Penalized Estimation
+    (SLOPE): generalized linear models regularized with the sorted L1-norm
+    (Bogdan et al. 2015). Supported models include ordinary least-squares
+    regression, binomial regression, multinomial regression, and Poisson
+    regression. Both dense and sparse predictor matrices are supported. In
+    addition, the package features predictor screening rules that enable fast
+    and efficient solutions to high-dimensional problems.
+License: GPL-3
+URL: https://jolars.github.io/SLOPE/, https://github.com/jolars/SLOPE
+BugReports: https://github.com/jolars/SLOPE/issues
+Depends: R (>= 4.1.0)
+Imports: Matrix, methods, Rcpp
+Suggests: bigmemory, covr, knitr, rmarkdown, spelling, testthat (>=
+        2.1.0)
+LinkingTo: BH, bigmemory, Rcpp, RcppEigen (>= 0.3.4.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2026-08-28 13:34:56 UTC; jola
+Author: Johan Larsson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4029-5945>),
+  Jonas Wallin [aut] (ORCID: <https://orcid.org/0000-0003-0381-6593>),
+  Malgorzata Bogdan [aut] (ORCID:
+    <https://orcid.org/0000-0002-0657-4342>),
+  Ewout van den Berg [aut],
+  Chiara Sabatti [aut],
+  Emmanuel Candes [aut],
+  Evan Patterson [aut],
+  Weijie Su [aut],
+  Jakub Kała [aut],
+  Krystyna Grzesiak [aut],
+  Mathurin Massias [aut],
+  Quentin Klopfenstein [aut],
+  Michal Burdukiewicz [aut] (ORCID:
+    <https://orcid.org/0000-0001-8926-582X>),
+  Jerome Friedman [ctb] (code adapted from 'glmnet'),
+  Trevor Hastie [ctb] (code adapted from 'glmnet'),
+  Rob Tibshirani [ctb] (code adapted from 'glmnet'),
+  Balasubramanian Narasimhan [ctb] (code adapted from 'glmnet'),
+  Noah Simon [ctb] (code adapted from 'glmnet'),
+  Junyang Qian [ctb] (code adapted from 'glmnet')
+Maintainer: Johan Larsson <johan@jolars.co>
+Repository: CRAN
+Date/Publication: 2026-08-29 12:00:09 UTC

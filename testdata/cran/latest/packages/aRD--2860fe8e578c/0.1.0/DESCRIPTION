@@ -1,0 +1,37 @@
+Package: aRD
+Type: Package
+Title: Adjusted Risk Differences via Specifically Penalized Likelihood
+Version: 0.1.0
+Date: 2025-08-18
+Authors@R: 
+    c(
+      person("Thomas", "Wolf", role = c("aut", "cre"), email = "imbei@med-imbei.uni-saarland.de"),
+      person("Julius Johannes", "Weise", role = "aut"),
+      person("Stefan", "Wagenpfeil", role = "aut")
+    )
+Description: Fits a linear-binomial model using a modified Newton-type 
+    algorithm for solving the maximum likelihood 
+    estimation problem under linear box constraints. Similar methods are 
+    described in Wagenpfeil, Schöpe and Bekhit (2025, ISBN:9783111341972) 
+    "Estimation of adjusted relative risks in log-binomial regression 
+    using the BSW algorithm". In: Mau, Mukhin, Wang and Xu (Eds.), 
+    Biokybernetika. De Gruyter, Berlin, pp. 665–676.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/UdS-MF-IMBEI/aRD
+BugReports: https://github.com/UdS-MF-IMBEI/aRD/issues
+VignetteBuilder: knitr
+Depends: R (>= 4.0)
+Imports: Matrix, matrixStats, osqp, quadprog, methods, stats, boot,
+        checkmate
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-08-18 13:55:41 UTC; thomaswolf
+Author: Thomas Wolf [aut, cre],
+  Julius Johannes Weise [aut],
+  Stefan Wagenpfeil [aut]
+Maintainer: Thomas Wolf <imbei@med-imbei.uni-saarland.de>
+Repository: CRAN
+Date/Publication: 2025-08-22 18:20:12 UTC

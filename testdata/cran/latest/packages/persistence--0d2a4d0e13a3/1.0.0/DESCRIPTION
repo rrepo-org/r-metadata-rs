@@ -1,0 +1,44 @@
+Package: persistence
+Type: Package
+Title: Optimal Graph Partition using the Persistence
+Version: 1.0.0
+Authors@R: c(
+  person(
+      "Alessandro", "Avellone",
+      email = "alessandro.avellone@unimib.it",
+      role = c("aut", "cre")
+    ),
+    person(
+      "Paolo", "Bartesaghi",
+      email = "paolo.bartesaghi@unimi.it",
+      role = c("aut")
+    ),
+    person(
+      "Stefano", "Benati",
+      email = "stefano.benati@unitn.it",
+      role = c("aut")
+    ),
+    person(
+      "Rosanna", "Grassi",
+      email = "rosanna.grassi@unimib.it",
+      role = c("aut")
+    )
+  )
+Description: Calculate the optimal vertex partition of a graph using the persistence as objective function.
+  These subroutines have been used in Avellone et al. <doi:10.1007/s10288-023-00559-z>.
+License: GPL (>= 2)
+Encoding: UTF-8
+SystemRequirements: C++20
+Suggests: igraph
+NeedsCompilation: yes
+Collate: 'persistence-exports.R' 'cluster_milano.R'
+        'global_persistence.R' 'local_persistence.R'
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-05-11 08:16:23 UTC; ale
+Author: Alessandro Avellone [aut, cre],
+  Paolo Bartesaghi [aut],
+  Stefano Benati [aut],
+  Rosanna Grassi [aut]
+Maintainer: Alessandro Avellone <alessandro.avellone@unimib.it>
+Repository: CRAN
+Date/Publication: 2026-05-11 14:50:02 UTC

@@ -1,0 +1,39 @@
+Package: CamelRatiosIndex
+Title: Multivariate-Weighted Indexing of CAMEL Ratios for Bank
+        Performance
+Version: 1.0.0
+Authors@R: c(
+    person("John Coker", "Ayimah", , "jayimah@htu.edu.gh", role = c("aut", "cph", "cre")),
+    person("George Kyei", "Agyen", , "gkagyen@live.com", role = c("aut", "cph")),
+    person("Raymond", "Achiyaale", , "rachiyaale@htu.edu.gh", role = c("aut", "cph"))
+  )
+Description: Computes a composite year-on-year index for bank performance
+    assessment using the CAMEL framework (Capital Adequacy, Asset Quality,
+    Management Efficiency, Earnings, Liquidity). The multivariate
+    weighting scheme employs factor analysis with robust covariance
+    estimation to derive communality-based weights from the correlation
+    matrix of CAMEL ratios.  Provides functions for index computation,
+    visualization, and comparison across banks and time periods.The methodology is described in Ayimah et al. (2023a)
+    <doi:10.9734/bpi/mono/978-81-19315-32-1> and Ayimah et al. (2023b)
+    <https://ajtem.com/index.php/ajtem/article/view/53>.
+License: MIT + file LICENSE
+URL: https://github.com/JC-Ayimah/CamelRatiosIndex,
+        https://JC-Ayimah.github.io/CamelRatiosIndex/
+BugReports: https://github.com/JC-Ayimah/CamelRatiosIndex/issues
+Depends: R (>= 3.5)
+Imports: cli (>= 3.6.0), dplyr (>= 1.1.0), ggplot2 (>= 3.4.0),
+        robustfa, rrcov, stats, tibble (>= 3.2.0), utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), vdiffr
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-15 08:25:35 UTC; JC-AYIMAH
+Author: John Coker Ayimah [aut, cph, cre],
+  George Kyei Agyen [aut, cph],
+  Raymond Achiyaale [aut, cph]
+Maintainer: John Coker Ayimah <jayimah@htu.edu.gh>
+Repository: CRAN
+Date/Publication: 2026-06-20 13:50:08 UTC

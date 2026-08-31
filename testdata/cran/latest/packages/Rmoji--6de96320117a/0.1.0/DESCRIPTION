@@ -1,0 +1,28 @@
+Package: Rmoji
+Type: Package
+Title: Interactively Insert Emojis in 'R' Documents
+Version: 0.1.0
+Authors@R: person(
+    given = "Berhe Etsay",
+    family = "Tesfay",
+    role = c("aut", "cre"),
+    email = "berhe.etsay@gmail.com",
+    comment = c(ORCID = "0000-0002-4625-1265"))
+Maintainer: Berhe Etsay Tesfay <berhe.etsay@gmail.com>
+Description: Provides an intuitive and user-friendly interface for working with emojis in 'R'. It allows users to search, insert, and manage emojis by keyword, category, or through an interactive 'shiny'-based drop-down. The package enables integration of emojis into 'R' scripts, 'R Markdown', 'Quarto', 'shiny' apps, and 'ggplot2' plots. Also includes built-in mappings for commit messages, useful for version control. It builds on established emoji libraries and Unicode standards, adding expressiveness and visual cues to documentation, user interfaces, and reports. For more details see 'Emojipedia' (2024) <https://emojipedia.org> and GitHub Emoji Cheat Sheet <https://github.com/ikatyang/emoji-cheat-sheet/tree/master>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 4.4)
+Imports: rstudioapi, shiny, shinyjs
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), mockery, devtools
+URL: https://github.com/3p1d3m/Rmoji
+BugReports: https://github.com/3p1d3m/Rmoji/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-04-25 11:50:18 UTC; berhe
+Author: Berhe Etsay Tesfay [aut, cre] (<https://orcid.org/0000-0002-4625-1265>)
+Repository: CRAN
+Date/Publication: 2025-04-25 15:20:06 UTC

@@ -1,0 +1,53 @@
+Type: Package
+Package: teal.picks
+Title: Dataset and Variable Picker and Merge Module for 'teal'
+        Applications
+Version: 0.3.0
+Date: 2026-07-30
+Authors@R: c(
+    person("Dawid", "Kaledkowski", , "dawid.kaledkowski@roche.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9533-457X")),
+    person("Andre", "Verissimo", , "andre.verissimo@roche.com", role = "aut",
+           comment = c(ORCID = "0000-0002-2212-339X")),
+    person("Marcin", "Kosinski", , "marcin.kosinski.mk1@roche.com", role = "aut"),
+    person("Lluís", "Revilla Sancho", , "lluis.revilla_sancho@roche.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9747-2570")),
+    person("Oriol", "Senan", , "oriol.senan@external.roche.com", role = "aut",
+           comment = c(ORCID = "0000-0002-9621-3371")),
+    person("Dony", "Unardi", , "unardid@gene.com", role = c("rev", "cre")),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Allows users to interactively select datasets, variables, and
+    values within 'teal' applications using a 'tidyselect'-style
+    interface. Selected picks can be merged and transformed into
+    analysis-ready data within 'teal' modules.
+License: Apache License 2.0
+URL: https://github.com/insightsengineering/teal.picks/,
+        https://insightsengineering.github.io/teal.picks/
+BugReports: https://github.com/insightsengineering/teal.picks/issues
+Depends: R (>= 4.1)
+Imports: bsicons, checkmate, dplyr, htmltools, logger, methods, rlang,
+        shiny, shinyWidgets, teal, teal.code, teal.data, teal.logger,
+        tidyselect, yaml
+Suggests: jsonlite, knitr, rmarkdown, rvest, shinytest2,
+        teal.transform, testthat (>= 3.0), tibble, withr (>= 3.0.0)
+VignetteBuilder: knitr
+Config/Needs/website: insightsengineering/nesttemplate
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-07-30 17:47:41 UTC; unardid
+Author: Dawid Kaledkowski [aut] (ORCID:
+    <https://orcid.org/0000-0001-9533-457X>),
+  Andre Verissimo [aut] (ORCID: <https://orcid.org/0000-0002-2212-339X>),
+  Marcin Kosinski [aut],
+  Lluís Revilla Sancho [aut] (ORCID:
+    <https://orcid.org/0000-0001-9747-2570>),
+  Oriol Senan [aut] (ORCID: <https://orcid.org/0000-0002-9621-3371>),
+  Dony Unardi [rev, cre],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Dony Unardi <unardid@gene.com>
+Repository: CRAN
+Date/Publication: 2026-07-30 18:50:02 UTC

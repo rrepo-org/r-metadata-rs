@@ -1,0 +1,38 @@
+Package: leadeR
+Title: Profiling Leaders at a Distance
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Mitsuru", family = "Mukaigawara", 
+           email = "mitsuru_mukaigawara@g.harvard.edu", 
+           role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0001-6530-2083")),
+    person(given = "Joshua", family = "Kertzer", 
+           email = "jkertzer@gov.harvard.edu", 
+           role = "aut",
+           comment = c(ORCID = "0000-0002-7358-0638")))
+Description: Profiles political leaders at a distance from text data
+    such as speeches, interviews, press conferences, and other public
+    statements. Computes Leadership Trait Analysis scores for seven
+    personality traits -- including need for power, conceptual complexity,
+    and self-confidence -- and classifies leaders into one of eight
+    leadership styles. Also computes Operational Code Analysis scores
+    summarising a leader's beliefs about politics and the use of power.
+URL: https://github.com/mmukaigawara/leadeR
+License: MIT + file LICENSE
+LazyData: true
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: spacyr, dplyr, stringr, tidyr, stringi, data.table, tibble,
+        countries, countrycode, purrr
+Suggests: knitr, metafor, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-13 00:09:01 UTC; mitsurumukaigawara
+Author: Mitsuru Mukaigawara [cre, aut] (ORCID:
+    <https://orcid.org/0000-0001-6530-2083>),
+  Joshua Kertzer [aut] (ORCID: <https://orcid.org/0000-0002-7358-0638>)
+Maintainer: Mitsuru Mukaigawara <mitsuru_mukaigawara@g.harvard.edu>
+Repository: CRAN
+Date/Publication: 2026-05-18 18:20:02 UTC

@@ -1,0 +1,22 @@
+Package: organik
+Type: Package
+Title: Multi-Horizon Probabilistic Ensemble with Copulas for Time
+        Series Forecasting
+Version: 1.0.1
+Authors@R: c(person("Giancarlo", "Vercellino", role = c("aut", "cre", "cph"), email = "giancarlo.vercellino@gmail.com"))
+Maintainer: Giancarlo Vercellino <giancarlo.vercellino@gmail.com>
+Description: Trains per-horizon probabilistic ensembles from a univariate time series. It supports 'rpart', 'glmnet', and 'kNN' engines with flexible residual distributions and heteroscedastic scale models, weighting variants by calibration-aware scores. A Gaussian/t copula couples the marginals to simulate joint forecast paths, returning quantiles, means, and step increments across horizons.
+License: GPL-3
+RoxygenNote: 7.3.3
+Imports: rpart (>= 4.1.24), glmnet (>= 4.1-10), Matrix (>= 1.7-3), MASS
+        (>= 7.3-65), imputeTS (>= 3.4)
+Encoding: UTF-8
+URL: https://rpubs.com/giancarlo_vercellino/organik
+Suggests: knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2025-11-26 10:39:42 UTC; gianc
+Author: Giancarlo Vercellino [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2025-11-26 11:20:02 UTC

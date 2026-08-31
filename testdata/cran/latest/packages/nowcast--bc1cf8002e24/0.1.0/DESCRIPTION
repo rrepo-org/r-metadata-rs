@@ -1,0 +1,31 @@
+Package: nowcast
+Title: Economic Nowcasting with Bridge Equations and Real-Time
+        Evaluation
+Version: 0.1.0
+Authors@R: person("Charles", "Coverdale", email = "charlesfcoverdale@gmail.com",
+    role = c("aut", "cre", "cph"))
+Description: Provides bridge equations with optional autoregressive terms for
+    nowcasting low-frequency macroeconomic variables (e.g. quarterly GDP) from
+    higher-frequency indicators (e.g. monthly retail sales). Handles the
+    ragged-edge problem where different indicators have different publication
+    lags via mixed-frequency alignment. Includes pseudo-real-time evaluation
+    with expanding or rolling windows, and the Diebold-Mariano test for
+    comparing forecast accuracy following Harvey, Leybourne, and Newbold
+    (1997) <doi:10.1016/S0169-2070(96)00719-4>. No API calls; designed to
+    work with data from any source.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+URL: https://github.com/charlescoverdale/nowcast
+BugReports: https://github.com/charlescoverdale/nowcast/issues
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.6.0), grDevices, graphics, stats
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-21 09:51:26 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre, cph]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-25 21:00:03 UTC

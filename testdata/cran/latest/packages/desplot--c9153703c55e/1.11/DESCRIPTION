@@ -1,0 +1,30 @@
+Type: Package
+Package: desplot
+Title: Plotting Field Plans for Agricultural Experiments
+Version: 1.11
+Authors@R: c(
+    person("Kevin", "Wright", , "kw.stat@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0617-8673")),
+    person("Paul", "Schmidt", role = c("aut"))
+  )
+Description: A function for plotting maps of agricultural field
+    experiments that are laid out in grids.  See Ryder (1981)
+    <doi:10.1017/S0014479700011601>.
+License: MIT + file LICENSE
+URL: https://kwstat.github.io/desplot/,
+        http://kwstat.github.io/desplot/
+BugReports: https://github.com/kwstat/desplot/issues
+Imports: ggplot2, grid, lattice, reshape2, rlang
+Suggests: agridat, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-07 20:16:44 UTC; wrightkevi
+Author: Kevin Wright [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0617-8673>),
+  Paul Schmidt [aut]
+Maintainer: Kevin Wright <kw.stat@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 12:00:08 UTC

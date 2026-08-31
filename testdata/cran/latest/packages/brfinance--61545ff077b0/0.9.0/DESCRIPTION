@@ -1,0 +1,22 @@
+Package: brfinance
+Title: Access to Brazilian Macroeconomic and Financial Time Series
+Version: 0.9.0
+Authors@R: 
+    person(given = "João Paulo", family = "dos Santos Pereira Barbosa", email = "joao.31582129@gmail.com",role = c("aut", "cre"))
+Description: Provides simplified access to selected Brazilian macroeconomic and financial time series from official sources, primarily the Central Bank of Brazil through the SGS (Sistema Gerenciador de Séries Temporais) API. The package enables users to quickly retrieve and visualize indicators such as the unemployment rate and the Selic interest rate using a standardized data structure. It is designed for data access and visualization purposes, without performing forecasts or statistical modeling. For more information, see the official API: <https://dadosabertos.bcb.gov.br/dataset/>.
+License: MIT + file LICENSE
+URL: https://github.com/efram2/brfinance
+BugReports: https://github.com/efram2/brfinance/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, scales, httr2, lubridate, labelled, yfR
+Suggests: testthat (>= 3.0.0), rmarkdown, knitr, tidyr
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-25 17:34:22 UTC; Administrador
+Author: João Paulo dos Santos Pereira Barbosa [aut, cre]
+Maintainer: João Paulo dos Santos Pereira Barbosa <joao.31582129@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 21:50:02 UTC

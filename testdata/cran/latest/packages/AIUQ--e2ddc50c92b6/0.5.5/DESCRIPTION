@@ -1,0 +1,26 @@
+Package: AIUQ
+Type: Package
+Title: Ab Initio Uncertainty Quantification
+Version: 0.5.5
+Authors@R: 
+    c(person("Yue", "He", role = "aut"),
+	  person("Xubo", "Liu", role = "aut"),
+          person("Tong", "Lin", role = "aut"),
+	  person("Mengyang", "Gu", role=c("aut","cre"), email = "mengyang@pstat.ucsb.edu"))
+Author: Yue He [aut],
+  Xubo Liu [aut],
+  Tong Lin [aut],
+  Mengyang Gu [aut, cre]
+Maintainer: Mengyang Gu <mengyang@pstat.ucsb.edu>
+Description: Uncertainty quantification and inverse estimation by probabilistic generative models from the beginning of the data analysis. An example is a Fourier basis method for inverse estimation in scattering analysis of microscopy videos. It does not require specifying a certain range of Fourier bases and it substantially reduces computational cost via the generalized Schur algorithm. See the reference: Mengyang Gu, Yue He, Xubo Liu and Yimin Luo (2023), <doi:10.48550/arXiv.2309.02468>, and Tong Lin, Jinseok Lee, Matt Helgeson, Megan T Valentine, Yimin Luo, Mengyang Gu (2026), <doi:10.48550/arXiv.2605.29424>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: fftwtools (>= 0.9.11), SuperGauss (>= 2.0.3), methods, plot3D
+        (>= 1.4), RobustGaSP, geometry
+NeedsCompilation: no
+Packaged: 2026-06-10 05:51:28 UTC; mengyanggu
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Repository: CRAN
+Date/Publication: 2026-06-10 06:50:07 UTC

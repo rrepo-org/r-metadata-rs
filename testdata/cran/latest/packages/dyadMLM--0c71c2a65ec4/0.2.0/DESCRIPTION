@@ -1,0 +1,47 @@
+Package: dyadMLM
+Title: Tools for Dyadic Multilevel Models
+Version: 0.2.0
+Date: 2026-08-11
+Authors@R: 
+    person("Pascal", "Küng", , "kueng.pascal@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-7346-9414"))
+Description: Provides tools for dyadic multilevel modeling with linear and
+    generalized linear mixed-effects models. It validates and prepares
+    long-format cross-sectional and intensive longitudinal data, including
+    ecological momentary assessment designs, for distinguishable and
+    exchangeable dyads. It also supports datasets containing multiple observed
+    dyad compositions. It constructs composition-aware,
+    model-ready variables for Actor-Partner Interdependence Models (APIMs),
+    Dyadic Score Models (DSMs), and Dyad-Individual Models (DIMs). Prepared data
+    can be used with model engines such as 'glmmTMB' and 'brms' for Gaussian and
+    non-Gaussian outcomes, including counts, proportions, and skewed continuous
+    responses. Post-estimation tools compare compatible fitted models and
+    back-transform exchangeable sum-and-difference random-effect covariance
+    structures into member-level quantities. The APIM and DSM specifications
+    and their relationships follow Iida et al. (2018)
+    <doi:10.1177/0265407517725407>; the multilevel sum-and-difference
+    random-effects implementation for exchangeable dyads adapts del Rosario
+    and West (2025) <doi:10.1177/25152459251351286>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Suggests: brms, glmmTMB, htmltools, knitr, lavaan, marginaleffects,
+        rmarkdown, spelling, testthat (>= 3.1.7)
+Config/testthat/edition: 3
+Imports: dplyr (>= 1.1.0), pillar, rlang (>= 0.4.0), tidyselect, tibble
+        (>= 3.0.0)
+VignetteBuilder: knitr, rmarkdown
+Depends: R (>= 4.1)
+LazyData: true
+URL: https://pascal-kueng.github.io/dyadMLM/,
+        https://github.com/Pascal-Kueng/dyadMLM
+BugReports: https://github.com/Pascal-Kueng/dyadMLM/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-08-20 16:13:11 UTC; pascalkueng
+Author: Pascal Küng [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7346-9414>)
+Maintainer: Pascal Küng <kueng.pascal@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:43:58 UTC

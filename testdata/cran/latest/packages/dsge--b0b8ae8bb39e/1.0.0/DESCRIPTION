@@ -1,0 +1,32 @@
+Package: dsge
+Title: Dynamic Stochastic General Equilibrium Models
+Version: 1.0.0
+Authors@R: person(given = c("Mustapha", "Wasseja"), family = "Mohammed",
+    role = c("aut", "cre"), email = "muswaseja@gmail.com")
+Description: Specify, solve, and estimate dynamic stochastic general
+    equilibrium (DSGE) models by maximum likelihood and Bayesian methods.
+    Supports both linear models via an equation-based formula interface
+    and nonlinear models via string-based equations with first-order
+    perturbation (linearization around deterministic steady state).
+    Solution uses the method of undetermined coefficients (Klein, 2000
+    <doi:10.1016/S0165-1889(99)00045-7>). Likelihood evaluated via the
+    Kalman filter. Bayesian estimation uses adaptive Random-Walk
+    Metropolis-Hastings with prior specification. Additional tools include
+    Kalman smoothing, historical shock decomposition, local identification
+    diagnostics, parameter sensitivity analysis, second-order perturbation,
+    occasionally binding constraints, impulse-response functions,
+    forecasting, and robust standard errors.
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: grDevices, graphics, stats, numDeriv
+Suggests: coda, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-30 03:36:44 UTC; musta
+Author: Mustapha Wasseja Mohammed [aut, cre]
+Maintainer: Mustapha Wasseja Mohammed <muswaseja@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-02 07:50:10 UTC

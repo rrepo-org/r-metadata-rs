@@ -1,0 +1,27 @@
+Package: mistral
+Version: 2.2.4
+Title: Methods in Structural Reliability
+Authors@R: c(person(given = "Bertrand", family = "Iooss", role = c("aut", "cre"), email = "biooss@yahoo.fr"),
+  person(given = c("Clement"), family = "Walter", role = "aut"),
+  person(given = "Gilles", family = "defaux", role = "aut"),
+  person(given = "Vincent", family = "Moutoussamy", role = "aut"))
+Maintainer: Bertrand Iooss <biooss@yahoo.fr>
+Depends: R (>= 3.0.0)
+Imports: e1071, Matrix, mvtnorm, ggplot2, doParallel, foreach,
+        iterators, DiceKriging, quadprog, Rcpp
+Suggests: microbenchmark, deSolve, scatterplot3d, KrigInv, rgenoud,
+        kernlab, knitr, rmarkdown, markdown
+LinkingTo: Rcpp
+Description: Various reliability analysis methods for rare event inference (computing failure probability and quantile from model/function outputs).
+License: GPL-2
+NeedsCompilation: yes
+Repository: CRAN
+LazyData: true
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr, rmarkdown
+Packaged: 2025-08-29 15:28:45 UTC; F80570
+Author: Bertrand Iooss [aut, cre],
+  Clement Walter [aut],
+  Gilles defaux [aut],
+  Vincent Moutoussamy [aut]
+Date/Publication: 2025-08-29 16:20:02 UTC

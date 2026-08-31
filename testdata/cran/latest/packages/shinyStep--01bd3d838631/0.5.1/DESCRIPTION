@@ -1,0 +1,30 @@
+Package: shinyStep
+Type: Package
+Title: User-Editable R Functions in 'Shiny' Apps with a Step Debugger
+Version: 0.5.1
+Authors@R: person("Han", "Zhang", email = "zhangh.ustc@gmail.com", role = c("aut", "cre"))
+Description: A pair of 'Shiny' modules that let end users of a 'Shiny'
+    application author their own R functions directly in the browser. Host
+    apps can expose these modules as extension points where user-supplied
+    code augments or replaces built-in logic, without requiring users to
+    modify the app's source. Each module embeds an 'Ace' editor with a
+    structured argument table, an in-frame R console rooted in the paused
+    function's local environment, and a step debugger that handles for,
+    while, repeat, and if/else blocks at any nesting depth. Two
+    module flavours are provided: solo editors for testing a function in
+    isolation with literal argument values, and embedded editors for
+    pausing a function mid-execution inside a larger host program.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/zhangh12/shinyStep
+BugReports: https://github.com/zhangh12/shinyStep/issues
+Imports: shiny (>= 1.7.0), shinyAce (>= 0.4.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-23 04:07:15 UTC; zhhan
+Author: Han Zhang [aut, cre]
+Maintainer: Han Zhang <zhangh.ustc@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-29 09:30:07 UTC

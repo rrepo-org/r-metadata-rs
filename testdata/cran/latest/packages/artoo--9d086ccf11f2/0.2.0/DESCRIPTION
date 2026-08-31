@@ -1,0 +1,56 @@
+Package: artoo
+Title: Lossless CDISC-Native Input and Output for Clinical Datasets
+Version: 0.2.0
+Authors@R: c(
+    person("Vignesh", "Thanikachalam", , "about.vignesh@gmail.com", role = c("aut", "cre", "cph")),
+    person("Lex", "Jansen", role = "cph",
+           comment = "Author of the bundled CDISC Define-XML stylesheets"),
+    person(, "Clinical Data Interchange Standards Consortium (CDISC)", role = "cph",
+           comment = "Author of the bundled Define-XML, ODM and ARM schemas and example documents"),
+    person(, "World Wide Web Consortium", role = "cph",
+           comment = "Author of the bundled xml, xlink and xmldsig schemas")
+  )
+Description: Reads and writes clinical-trial datasets losslessly across
+    'SAS' XPORT (XPT), Clinical Data Interchange Standards Consortium
+    (CDISC) Dataset-JSON, and 'Apache Parquet', applying a specification
+    to produce submission-ready Study Data Tabulation Model (SDTM) and
+    Analysis Data Model (ADaM) datasets. A single canonical metadata model
+    carries labels, CDISC data types, lengths, 'SAS' display formats,
+    controlled-terminology references, and sort keys identically across
+    every format, so conversion between any two formats is lossless by
+    construction. Pure 'R' and lightweight, with no external 'SAS' or
+    'Java' runtime. Reads and writes CDISC Define-XML, the specification
+    document that accompanies a submission, and renders it as HTML through
+    the bundled Define-XML stylesheet. Implements the published format
+    specifications for CDISC Dataset-JSON
+    (<https://cdisc-org.github.io/DataExchange-DatasetJson/doc/dataset-json1-1.html>),
+    CDISC Define-XML
+    (<https://www.cdisc.org/standards/data-exchange/define-xml>), and
+    'SAS' XPORT
+    (<https://www.loc.gov/preservation/digital/formats/fdd/fdd000466.shtml>).
+License: MIT + file LICENSE
+URL: https://vthanik.github.io/artoo/, https://github.com/vthanik/artoo
+BugReports: https://github.com/vthanik/artoo/issues
+Depends: R (>= 4.2)
+Imports: cli, hms, jsonlite, nanoparquet (>= 0.3.0), rlang (>= 1.1.0),
+        S7, utf8
+Suggests: callr, digest, quarto, readxl, testthat (>= 3.0.0), tibble,
+        withr, writexl, xml2, xslt
+VignetteBuilder: quarto
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Copyright: file COPYRIGHTS
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-08-25 14:46:51 UTC; vignesh
+Author: Vignesh Thanikachalam [aut, cre, cph],
+  Lex Jansen [cph] (Author of the bundled CDISC Define-XML stylesheets),
+  Clinical Data Interchange Standards Consortium (CDISC) [cph] (Author of
+    the bundled Define-XML, ODM and ARM schemas and example documents),
+  World Wide Web Consortium [cph] (Author of the bundled xml, xlink and
+    xmldsig schemas)
+Maintainer: Vignesh Thanikachalam <about.vignesh@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 20:50:02 UTC

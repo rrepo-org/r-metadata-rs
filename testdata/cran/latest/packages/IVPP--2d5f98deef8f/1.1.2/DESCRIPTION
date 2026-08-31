@@ -1,0 +1,35 @@
+Package: IVPP
+Type: Package
+Title: Invariance Partial Pruning Test
+Version: 1.1.2
+Authors@R: 
+    person(
+      "Xinkai", "Du", , 
+      "xinkai.du.xd@gmail.com", 
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-4158-7878")
+      )
+Description: An implementation of the Invariance Partial Pruning (IVPP) approach 
+  described in Du, X., Johnson, S. U., Epskamp, S. (2025) The Invariance Partial 
+  Pruning Approach to The Network Comparison in Longitudinal Data. IVPP is a 
+  two-step method that first test for global network structural difference with 
+  invariance test and then inspect specific edge difference with partial pruning. 
+  The package also allows you to compute centrality measures and use radar chart to 
+  plot. Analysis of bridge centralities by community pairs is also possible (e.g.,
+  the bridge strength from depression to anxiety, and from depression to panic disorder). 
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.3.0)
+Imports: bootnet, clusterGeneration, dplyr, mvtnorm, psychonetrics,
+        graphicalVAR, lifecycle, future.apply, future, networktools,
+        qgraph, fmsb
+BugReports: https://github.com/xinkaidupsy/IVPP/issues
+URL: https://github.com/xinkaidupsy/IVPP
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-02-28 00:01:36 UTC; xinkaidu
+Author: Xinkai Du [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-4158-7878>)
+Maintainer: Xinkai Du <xinkai.du.xd@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-28 23:40:09 UTC

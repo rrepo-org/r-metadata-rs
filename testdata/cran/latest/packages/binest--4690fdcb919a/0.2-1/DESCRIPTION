@@ -1,0 +1,41 @@
+Package: binest
+Type: Package
+Title: Estimation of Group Means and SDs from Binned Count Data
+Version: 0.2-1
+Date: 2026-05-27
+Depends: R (>= 3.5.0), splines, stats
+Suggests: knitr, rmarkdown, R2jags
+Authors@R: c(
+    person("Paul T.", "von Hippel", role = c("aut", "cre"),
+           email = "ph3828@eid.utexas.edu"),
+    person("David J.", "Hunter", role = "aut"),
+    person("J.R.", "Lockwood", role = "aut",
+           comment = "Original HETOP package author"))
+Description: Estimates group-level means and standard deviations from
+    binned (coarsened) count data, where the within-bin scores are
+    unobserved.  The package implements three methods that share a
+    common output structure: bin_means() (a fast estimator that
+    assumes within-district normality and uses pooled bin proportions
+    to derive bin-conditional truncated-normal expectations),
+    mle_hetop() (maximum likelihood for the heteroskedastic ordered
+    probit model of Reardon, Shear, Castellano and Ho 2017
+    <doi:10.3102/1076998616666279>), and fh_hetop() (the Bayesian
+    Fay-Herriot variant of Lockwood, Castellano and Shear 2018
+    <doi:10.3102/1076998618795124>).  The mle_hetop() and fh_hetop()
+    functions are forked from the 'HETOP' package by J. R. Lockwood
+    ('CRAN', last released 2019).  mle_hetop() has been modified to
+    speed up the runtime via a vectorized inner loop and to remove
+    two user-facing arguments (fixedcuts and svals) that some users
+    found confusing; cutpoints and starting values are now derived
+    internally from the data.
+License: GPL (>= 2)
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-06-02 16:51:41 UTC; ph3828
+Author: Paul T. von Hippel [aut, cre],
+  David J. Hunter [aut],
+  J.R. Lockwood [aut] (Original HETOP package author)
+Maintainer: Paul T. von Hippel <ph3828@eid.utexas.edu>
+Repository: CRAN
+Date/Publication: 2026-06-08 18:20:08 UTC

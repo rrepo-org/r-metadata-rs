@@ -1,0 +1,58 @@
+Package: Open.Visualization.Academy
+Title: Content to Support Classes Taught Through the Open Visualization
+        Academy
+Version: 1.0.0
+Authors@R: 
+    c(
+      person(
+        given = "Raymond", 
+        family = "Balise",
+        email = "balise@miami.edu", 
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-9856-5901")
+      ),
+      person(
+        given = "Kyle",
+        family = "Grealis",
+        email = "kyleGrealis@proton.me",
+        role = "aut",
+        comment = c(ORCID = "0000-0002-9223-8854")
+      ),
+      person(
+        given = "Ricky",
+        family = "Lei",
+        email = "qxl387@miami.edu",
+        role = "ctb",
+        comment = c(ORCID = "0000-0003-1953-9236")
+      ),
+      person(
+        given = "Gabriel", 
+        family = "Odom",
+        email = "gabriel.j.odom@gmail.com",
+        role = "ctb",
+        comment = c(ORCID = "0000-0003-1341-4555")
+      )
+    )
+Description: This contains functions and data used by the Open Visualization Academy classes on data processing and visualization. The tutorial included with this package requires the 'gradethis' package which can be installed using "remotes::install_github('rstudio/gradethis')".
+License: AGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: dplyr, gradethis, gtsummary (>= 2.0.3), htmltools,
+        kableExtra, learnr, quarto, rmarkdown, roxygen2, sortable,
+        testthat (>= 3.0.0), tibble
+VignetteBuilder: quarto
+SystemRequirements: quarto
+Imports: cli, clipr, hms, knitr, rlang (>= 1.1.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-01-15 13:51:03 UTC; raymondbalise
+Author: Raymond Balise [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9856-5901>),
+  Kyle Grealis [aut] (ORCID: <https://orcid.org/0000-0002-9223-8854>),
+  Ricky Lei [ctb] (ORCID: <https://orcid.org/0000-0003-1953-9236>),
+  Gabriel Odom [ctb] (ORCID: <https://orcid.org/0000-0003-1341-4555>)
+Maintainer: Raymond Balise <balise@miami.edu>
+Repository: CRAN
+Date/Publication: 2026-01-21 19:00:09 UTC

@@ -1,0 +1,24 @@
+Package: pycno
+Type: Package
+Title: Pycnophylactic Interpolation
+Version: 1.4.1
+Date: 2025-09-01
+Authors@R: c(person(given = "Chris", family = "Brunsdon", role = "aut"), 
+             person(given = "Francesca", family = "Bitonti", email = "francesca.bitonti@unict.it", role = "cre"))
+Maintainer: Francesca Bitonti <francesca.bitonti@unict.it>
+Depends: R (>= 4.2)
+Imports: methods, sp, sf
+Description: Given a SpatialPolygonsDataFrame and a set of populations for each polygon,
+ compute a population density estimate based on Tobler's pycnophylactic interpolation
+ algorithm. The result is a SpatialGridDataFrame. 
+ Methods are described in Tobler Waldo R. (1979) <doi:10.1080/01621459.1979.10481647>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyLoad: yes
+Packaged: 2025-09-02 07:22:30 UTC; Fra
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2025-09-02 07:40:02 UTC
+RoxygenNote: 7.3.2
+Author: Chris Brunsdon [aut],
+  Francesca Bitonti [cre]

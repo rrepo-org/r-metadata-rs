@@ -1,0 +1,32 @@
+Package: staat1cho
+Title: Study Indicators Based on Dutch Higher Education Data (1CHO)
+Version: 0.1.0
+Authors@R: c(
+    person("Aslam", "Tanjung", email = "aslam.tanjung@surf.nl", role = c("aut", "cre")),
+    person("Veerle", "van Son", role = "aut"),
+    person("Damiëtte", "Bakx-van den Brink", role = "aut")
+  )
+Description: Calculates enrolment, graduation, dropout, and programme-switch
+    indicators from the Dutch higher education registration data (1CHO)
+    supplied by DUO. Includes an interactive 'Shiny' dashboard for exploring
+    results.
+License: MIT + file LICENSE
+URL: https://github.com/cedanl/staat-van-onderwijsinstelling
+BugReports: https://github.com/cedanl/staat-van-onderwijsinstelling/issues
+Encoding: UTF-8
+Language: nl
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, forcats, readr, rlang, shiny
+Suggests: bslib, DT, ggplot2, knitr, plotly, rmarkdown, scales,
+        testthat (>= 3.0.0), tibble, tidyr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-13 12:27:33 UTC; Aslam
+Author: Aslam Tanjung [aut, cre],
+  Veerle van Son [aut],
+  Damiëtte Bakx-van den Brink [aut]
+Maintainer: Aslam Tanjung <aslam.tanjung@surf.nl>
+Repository: CRAN
+Date/Publication: 2026-05-18 18:40:02 UTC

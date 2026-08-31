@@ -1,0 +1,32 @@
+Type: Package
+Package: ernm
+Title: Exponential-Family Random Network Models
+Version: 1.0.5
+Date: 2026-06-23
+Authors@R: c(person(given = "Ian",
+                    family = "Fellows",
+                    role = c("aut")),
+             person(given = "Duncan",
+                    family = "Clark",
+                    role = c("aut", "cre"),
+                    email = "dac6@williams.edu"))
+Description: Estimation of fully and partially observed Exponential-Family Random Network Models (ERNM). Exponential-family Random Graph Models (ERGM) and Gibbs Fields are special cases of ERNMs and can also be estimated with the package. Please cite Fellows and Handcock (2012), "Exponential-family Random Network Models" available at <doi:10.48550/arXiv.1208.0121>.
+License: LGPL-2.1
+Depends: R (>= 3.5.0), methods, network, Rcpp
+Imports: dplyr, ggplot2, graphics, moments, rlang, stats, tidyr, trust
+Suggests: spelling, testthat
+LinkingTo: BH, Rcpp
+Copyright: 2014-2025 Ian Fellows
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyLoad: yes
+RcppModules: ernm
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-06-23 16:20:14 UTC; dac6
+Author: Ian Fellows [aut],
+  Duncan Clark [aut, cre]
+Maintainer: Duncan Clark <dac6@williams.edu>
+Repository: CRAN
+Date/Publication: 2026-06-23 16:50:02 UTC

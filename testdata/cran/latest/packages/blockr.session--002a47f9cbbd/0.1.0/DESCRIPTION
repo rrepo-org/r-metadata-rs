@@ -1,0 +1,41 @@
+Package: blockr.session
+Title: Session Management for 'blockr'
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Nicolas",
+             family = "Bennett",
+             role = c("aut", "cre"),
+             email = "nicolas@cynkra.com"),
+      person(given = "Christoph",
+             family = "Sax",
+             role = "aut",
+             email = "christoph@cynkra.com"),
+      person(family = "Bristol Myers Squibb",
+             role = "fnd")
+    )
+Description: Persist, restore and manage 'blockr' boards from within a
+    running app. Provides a 'manage_project' plugin for 'blockr.core' that
+    replaces the built-in file upload and download interface with storage
+    backed by the 'pins' package. On 'Posit Connect' each visitor reads and
+    writes pins under their own account, with board sharing, visibility
+    controls and version history.
+License: GPL (>= 3)
+URL: https://bristolmyerssquibb.github.io/blockr.session/,
+        https://github.com/BristolMyersSquibb/blockr.session
+BugReports: https://github.com/BristolMyersSquibb/blockr.session/issues
+Encoding: UTF-8
+Imports: blockr.core (>= 0.1.3), shiny, pins (>= 1.4.0), jsonlite,
+        glue, rlang, bsicons, htmltools, httr2, utils, zip
+Suggests: testthat (>= 3.0.0), blockr.dock, connectapi, knitr,
+        rmarkdown, quarto, withr, xml2
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-25 06:46:31 UTC; coder
+Author: Nicolas Bennett [aut, cre],
+  Christoph Sax [aut],
+  Bristol Myers Squibb [fnd]
+Maintainer: Nicolas Bennett <nicolas@cynkra.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 14:10:18 UTC

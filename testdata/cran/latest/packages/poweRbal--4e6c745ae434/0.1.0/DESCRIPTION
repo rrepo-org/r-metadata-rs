@@ -1,0 +1,37 @@
+Package: poweRbal
+Title: Phylogenetic Tree Models and the Power of Tree Shape Statistics
+Version: 0.1.0
+Authors@R: c(
+    person("Sophie", "Kersting", , "sophie.kersting@uni-greifswald.de",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-1038-9246")),
+    person("Kristina", "Wicke", , "", 
+    role = "aut", comment = c(ORCID = "0000-0002-4275-5546")),
+    person("Mareike", "Fischer", , "email@mareikefischer.de", 
+    role = "aut", comment = c(ORCID = "0000-0002-9429-0859"))
+  )
+Maintainer: Sophie Kersting <sophie.kersting@uni-greifswald.de>
+Description: The first goal of this package is to provide a multitude of tree models,
+    i.e., functions that generate rooted binary trees with a given number of leaves.
+    Second, the package allows for an easy evaluation and comparison of tree shape
+    statistics by estimating their power to differentiate between different tree models.
+    Please note that this R package was developed alongside the manuscript
+    'Tree balance in phylogenetic models' by
+    S. J. Kersting, K. Wicke, and M. Fischer (2025) <doi:10.1098/rstb.2023.0303>,
+    which provides further background and the respective mathematical definitions.
+    This project was supported by the project ArtIGROW, which is a part of the
+    WIR!-Alliance ArtIFARM –  Artificial Intelligence in Farming funded by the
+    German Federal Ministry of Education and Research (No. 03WIR4805).
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+Imports: ape, scales, phytools, treebalance, R.utils, memoise
+Suggests: testthat (>= 3.0.0), diversitree
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+Packaged: 2026-04-14 17:33:07 UTC; AGFischer
+Author: Sophie Kersting [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1038-9246>),
+  Kristina Wicke [aut] (ORCID: <https://orcid.org/0000-0002-4275-5546>),
+  Mareike Fischer [aut] (ORCID: <https://orcid.org/0000-0002-9429-0859>)
+Repository: CRAN
+Date/Publication: 2026-04-15 08:40:07 UTC

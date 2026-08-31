@@ -1,0 +1,36 @@
+Package: MBGapp
+Type: Package
+Title: Interactive 'shiny' Application for Model-Based Geostatistics
+Version: 0.1.0
+Authors@R: c(
+    person("Olatunji", "Johnson", email = "olatunjijohnson21111@gmail.com",
+           role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-4080-0999")),
+    person("Claudio", "Fronterre", role = "aut"),
+    person("Emanuele", "Giorgi", role = "aut"))
+Description: Provides an interactive 'shiny' application for teaching and applied
+    analysis of geostatistical data. Users can explore spatial data, assess
+    spatial correlation through the empirical variogram, fit model-based
+    geostatistical models for continuous, prevalence and count outcomes, produce
+    spatial predictions, and download reports. The methodology follows the
+    model-based geostatistics framework of Diggle and Giorgi (2019, ISBN:9781138732353).
+License: MIT + file LICENSE
+URL: https://github.com/olatunjijohnson/MBGapp
+BugReports: https://github.com/olatunjijohnson/MBGapp/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: geoR, ggplot2, shiny, sf, dplyr, readr, tidyr, magrittr,
+        leaflet, leafem, tidyterra, stars, RiskMap, terra, grDevices,
+        shinyjs, splines, httr2, rmarkdown
+Suggests: INLA, covr, testthat (>= 3.0.0)
+Additional_repositories: https://inla.r-inla-download.org/R/stable
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-02 20:59:52 UTC; olatunji-johnson
+Author: Olatunji Johnson [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-4080-0999>),
+  Claudio Fronterre [aut],
+  Emanuele Giorgi [aut]
+Maintainer: Olatunji Johnson <olatunjijohnson21111@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-10 19:00:08 UTC

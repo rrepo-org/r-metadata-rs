@@ -1,0 +1,47 @@
+Package: exdqlm
+Title: Extended Dynamic Quantile Linear Models
+Version: 1.1.1
+Authors@R: 
+    c(person(given = "Raquel", family = "Barata",
+             role = c("aut", "cre"),
+             email = "raquel.a.barata@gmail.com"),
+      person(given = "Raquel", family = "Prado", role = "ths"),
+      person(given = "Bruno",  family = "Sanso", role = "ths"),
+      person(given = "Antonio", family = "Aguirre", role = "aut"))
+Author: Raquel Barata [aut, cre],
+  Raquel Prado [ths],
+  Bruno Sanso [ths],
+  Antonio Aguirre [aut]
+Maintainer: Raquel Barata <raquel.a.barata@gmail.com>
+Description: Bayesian quantile-regression routines for dynamic state-space
+    models and static regression under the extended asymmetric Laplace
+    (exAL) error distribution. The dynamic state-space models are extended
+    dynamic quantile linear models (exDQLMs). The package combines dynamic
+    exDQLM inference via Laplace-delta variational Bayes (LDVB), Markov
+    chain Monte Carlo (MCMC), and legacy importance-sampling variational Bayes
+    (ISVB) with static exAL regression via LDVB and MCMC, reduced asymmetric
+    Laplace/dynamic quantile linear model (AL/DQLM) paths through fixed
+    skewness, component builders for trend/seasonality/regression blocks,
+    static shrinkage priors including ridge, regularized horseshoe, and
+    'rhs_ns', evidence lower bound (ELBO) diagnostics, optional C++
+    accelerators, and posterior predictive synthesis across separately fitted
+    quantiles through 'quantileSynthesis()'. Dynamic exDQLM methods are
+    described in Barata et al. (2020) <doi:10.1214/21-AOAS1497>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+Imports: stats, methods, graphics, coda, tictoc, magic, crch,
+        truncnorm, LaplacesDemon, grDevices, Rcpp, matrixStats, nimble,
+        numDeriv
+Suggests: rmarkdown, testthat (>= 3.0.0), ggplot2, pkgload, MASS
+Config/testthat/edition: 3
+LinkingTo: BH, Rcpp, RcppArmadillo, RcppEigen
+SystemRequirements: C++17; OpenMP (optional)
+URL: https://github.com/AntonioAPDL/exdqlm
+BugReports: https://github.com/AntonioAPDL/exdqlm/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-26 21:25:25 UTC; raquel
+Repository: CRAN
+Date/Publication: 2026-08-28 19:00:02 UTC

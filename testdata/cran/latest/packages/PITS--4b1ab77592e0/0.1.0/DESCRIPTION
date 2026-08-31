@@ -1,0 +1,39 @@
+Package: PITS
+Title: Power of Interrupted Time Series (ITS) Studies
+Version: 0.1.0
+Authors@R: 
+    person("David", "de Lorenzo", email = "drdaviddelorenzo@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2042-0961",
+                       affiliation = "UCL Great Ormond Street Institute of Child Health, London, UK; Neotree, London, UK (https://neotree.org/)"))
+Description: Provides tools for estimating the statistical power of Interrupted
+    Time Series (ITS) designs, with a focus on healthcare applications. The
+    package supports prospective power calculations before a study begins, and
+    retrospective assessments of whether a completed study was adequately powered.
+    It includes functions to estimate nuisance parameters (baseline, residual
+    standard deviation, autocorrelation) from data observed before the
+    intervention, and to
+    estimate power via Monte Carlo simulation for single-site and multi-site
+    designs. Utility functions for design optimisation sweeps and publication-
+    ready plots are also provided.
+License: MIT + file LICENSE
+Language: en-GB
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: nlme, stats, graphics, grDevices, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+URL: https://github.com/drdaviddelorenzo/PITS
+BugReports: https://github.com/drdaviddelorenzo/PITS/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-23 16:20:24 UTC; daviddelorenzo
+Author: David de Lorenzo [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2042-0961>, affiliation: UCL Great
+    Ormond Street Institute of Child Health, London, UK; Neotree,
+    London, UK (https://neotree.org/))
+Maintainer: David de Lorenzo <drdaviddelorenzo@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 10:10:02 UTC

@@ -1,0 +1,28 @@
+Package: ORION
+Title: Ordinal Relations
+Version: 1.1.2
+Depends: R (>= 3.5.0), TunePareto
+Imports: e1071, foreach, plotrix, stringr
+Suggests: doParallel, igraph, knitr, randomForest, rmarkdown, testthat
+        (>= 3.1.0)
+Authors@R: c(person(given = "L", family = "Lausser", role = c("aut", "cre"), email = "ludwig.lausser@thi.de"),
+                 person(given = "LM", family = "Schaefer", role = "aut"),
+                 person(given = "R", family = "Szekely", role = "aut"),
+		 person(given = "A", family = "Stolnicu", role = "aut"),
+                 person(given = "HA", family = "Kestler", role = "aut"))
+Maintainer: L Lausser <ludwig.lausser@thi.de>
+Description: Functions to handle ordinal relations reflected within the feature space. Those function allow to search for ordinal relations in multi-class datasets. One can check whether proposed relations are reflected in a specific feature representation. Furthermore, it provides functions to filter, organize and further analyze those ordinal relations. 
+License: GPL-2
+Encoding: UTF-8
+LazyLoad: yes
+Packaged: 2026-08-24 12:04:51 UTC; lausser
+Author: L Lausser [aut, cre],
+  LM Schaefer [aut],
+  R Szekely [aut],
+  A Stolnicu [aut],
+  HA Kestler [aut]
+NeedsCompilation: yes
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Repository: CRAN
+Date/Publication: 2026-08-24 12:30:02 UTC

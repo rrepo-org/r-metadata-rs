@@ -1,0 +1,43 @@
+Package: roroph
+Title: Philippine Roll-on/Roll-Off (RoRo) Connectivity and Transport
+        Data
+Version: 0.1.1
+Authors@R: 
+    person("NJ", "Talingting", 
+           email = "ninotalingting77@gmail.com", 
+           role = c("aut", "cre"), 
+           comment = c(ORCID = "0009-0003-7245-874X"))
+Description: Provides the first standardized dataset of the Philippines' 
+    Roll-on/Roll-off (RoRo) shipping network, reflecting the 2024-2026 
+    operational state. It digitizes fragmented records from the Maritime 
+    Industry Authority (MARINA) and Philippine Ports Authority (PPA) 
+    into a unified framework for transport modeling. The package includes 
+    108 bidirectional provincial links across the Western, Central, and 
+    Eastern Nautical Highways, complete with GADM-standardized naming, 
+    geospatial coordinates, and metrics such as distance, travel time, 
+    and vessel frequency. Methodology follows Anselin (1988, 
+    ISBN:9024737354) and LeSage and Pace (2009) <doi:10.1201/9781420064254> 
+    for spatial weight construction. Data sources include "MARINA 
+    Inventory of RoRo Routes" <https://marina.gov.ph> and "PPA Port 
+    Statistics" <https://www.ppa.com.ph/ppa_statistics>. Designed to 
+    support research in economic geography and disaster-response 
+    logistics.
+License: MIT + file LICENSE
+URL: https://github.com/njtalingting/roroph
+BugReports: https://github.com/njtalingting/roroph/issues
+Depends: R (>= 3.5.0)
+Imports: ArchipelagoEngine, dplyr, ggplot2, sf, spdep
+Suggests: knitr, rmarkdown, rnaturalearth, rnaturalearthdata, ggrepel,
+        ggspatial
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Language: en-PH
+NeedsCompilation: no
+Packaged: 2026-04-09 17:16:41 UTC; Nino Jay Talingting
+Author: NJ Talingting [aut, cre] (ORCID:
+    <https://orcid.org/0009-0003-7245-874X>)
+Maintainer: NJ Talingting <ninotalingting77@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-16 18:20:02 UTC

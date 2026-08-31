@@ -1,0 +1,37 @@
+Package: SSLfmm
+Type: Package
+Title: Semi-Supervised Learning with Mixed Missingness in Finite
+        Mixture Models
+Version: 0.2.0
+Depends: R (>= 3.6.0)
+Authors@R: c(
+    person("Geoffrey J.", "McLachlan", role = "aut",
+           email = "g.mclachlan@uq.edu.au",
+           comment = c(ORCID = "0000-0002-5921-3145")),
+    person("Jinran", "Wu", role = c("aut", "cre"),
+           email = "jinran.wu@uq.edu.au",
+           comment = c(ORCID = "0000-0002-2388-3614"))
+    )
+Description: Semi-supervised Gaussian finite mixture models for partially labelled data
+    under complete-case, missing completely at random (MCAR), entropy-dependent missing
+    at random (MAR), and mixed MCAR/MAR label-missingness formulations. For the mixed
+    formulation, the source of a missing label may be observed or latent. The package
+    supports equal and component-specific covariance matrices, model fitting, simulation,
+    initialization, prediction, classification performance assessment, and entropy-based
+    diagnostics. A semi-synthetic Blood Transfusion data set is included to illustrate the
+    applied workflow.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: graphics, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-19 01:22:01 UTC; uqjwu15
+Author: Geoffrey J. McLachlan [aut] (ORCID:
+    <https://orcid.org/0000-0002-5921-3145>),
+  Jinran Wu [aut, cre] (ORCID: <https://orcid.org/0000-0002-2388-3614>)
+Maintainer: Jinran Wu <jinran.wu@uq.edu.au>
+Repository: CRAN
+Date/Publication: 2026-08-20 12:02:04 UTC

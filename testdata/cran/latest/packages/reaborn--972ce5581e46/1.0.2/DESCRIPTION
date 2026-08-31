@@ -1,0 +1,32 @@
+Package: reaborn
+Title: Statistical Data Visualization, the 'seaborn' Way
+Version: 1.0.2
+Date: 2026-07-30
+Authors@R: 
+    person(given = "Shawn", family = "Schwartz", role = c("aut", "cre"),
+           email = "shawn.t.schwartz@gmail.com",
+           comment = c(ORCID = "0000-0001-6444-8451"))
+Description: An 'R' port of the 'Python' 'seaborn' library. 'reaborn' mirrors the
+    'seaborn' public function API (identical function names, argument names, and
+    defaults) and renders visually indistinguishable plots using 'ggplot2'.
+    Because every 'reaborn' plot is a 'ggplot' object, it can be extended with the
+    full 'ggplot2' grammar of graphics.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 8.0.0
+Depends: R (>= 4.1)
+Imports: ggplot2 (>= 4.0.0), grDevices, grid, rlang, scales, stats
+Suggests: colorspace, ggbeeswarm, ggdendro, jsonlite, knitr, MASS,
+        patchwork, ragg, rmarkdown, testthat (>= 3.0.0), vdiffr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://reaborn.org, https://github.com/shawntz/reaborn
+BugReports: https://github.com/shawntz/reaborn/issues
+NeedsCompilation: no
+Packaged: 2026-07-31 04:47:33 UTC; shawnschwartz
+Author: Shawn Schwartz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6444-8451>)
+Maintainer: Shawn Schwartz <shawn.t.schwartz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-31 10:40:08 UTC

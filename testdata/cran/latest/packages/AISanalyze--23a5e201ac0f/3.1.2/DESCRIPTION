@@ -1,0 +1,32 @@
+Package: AISanalyze
+Title: Processing and Analyzing AIS Vessel Tracking Data
+Version: 3.1.2
+Authors@R: c(person("Rémi", "Pigeault", , "remi.pigeault@tiho-hannover.de", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-2714-5122")))
+Description: Processes Automatic Identification
+    System (AIS) vessel tracking data, including travel estimation,
+    trajectory correction, interpolation, extraction, and summarising 
+    vessel information. The package is designed to facilitate
+    reproducible analyses of maritime traffic in ecological,
+    environmental, and marine spatial planning applications.
+    For more details see <https://remip48.github.io/AISanalyze/>.
+License: MIT + file LICENSE
+Depends: R(>= 4.2.0)
+Imports: dplyr, sf, purrr, stats, stringr, doParallel, parallel,
+        foreach, assertthat, data.table, magrittr
+Suggests: knitr, units, lubridate, rmarkdown, testthat
+URL: https://github.com/remip48/AISanalyze,
+        https://remip48.github.io/AISanalyze/
+BugReports: https://github.com/remip48/AISanalyze/issues
+Encoding: UTF-8
+Config/testthat/edition: 3
+LazyData: true
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2026-08-20 21:25:59 UTC; 234028
+Author: Rémi Pigeault [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2714-5122>)
+Maintainer: Rémi Pigeault <remi.pigeault@tiho-hannover.de>
+Repository: CRAN
+Date/Publication: 2026-08-26 19:40:01 UTC

@@ -1,0 +1,21 @@
+Package: LJmp3converter
+Type: Package
+Title: Convert Video Files to 'mp3' Format, Merge or Trim Audio Files
+        using 'FFmpeg'
+Version: 1.0.7
+Authors@R: 
+    person("Lijin", "Arakkandathil Thekkathil", , "lijin5673@gmail.com", role = c("aut", "cre"))
+Description: Converts video files to 'mp3', merges multiple audio files and trims audio files using 'FFmpeg', which is dynamically downloaded to avoid bundling any third-party binaries. Users must ensure compliance with the license terms of 'FFmpeg' when using the package. See <https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip> for details.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: fs, tools, utils, rstudioapi, httr
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-24 16:10:35 UTC; lijin
+Author: Lijin Arakkandathil Thekkathil [aut, cre]
+Maintainer: Lijin Arakkandathil Thekkathil <lijin5673@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-24 16:30:06 UTC

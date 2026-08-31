@@ -1,0 +1,51 @@
+Package: climodr
+Type: Package
+Title: Climate Modeling with Point Data from Climate Stations
+Version: 1.0.0
+Authors@R: 
+    c(person("Alexander", "Klug",
+             email = "kluga@students.uni-marburg.de",
+             role = c("aut", "cre", "cph")),
+      person("Luise", "Wraase",
+             email = "luise.wraase@geo.uni-marburg.de",
+             role = c("aut")),
+      person("Seda", "Bekar",
+             email = "seda.bekar@students.uni-marburg.de",
+             role = c("ctb")),
+      person("Dirk", "Zeuss",
+             email = "dirk.zeuss@uni-marburg.de",
+             role = c("aut"))
+             )
+Author: Alexander Klug [aut, cre, cph],
+  Luise Wraase [aut],
+  Seda Bekar [ctb],
+  Dirk Zeuss [aut]
+Maintainer: Alexander Klug <kluga@students.uni-marburg.de>
+Description: An automated and streamlined workflow for predictive climate 
+             mapping using climate station data. Works within an environment 
+             the user provides a destined path to - otherwise it's tempdir().
+             Quick and relatively easy creation of resilient and reproducible 
+             climate models, predictions and climate maps, shortening the
+             usually long and complicated work of predictive modelling. 
+             For more information, please find the provided URL.
+             Many methods in this package are new, but the main method is based
+             on a workflow from 
+             Meyer (2019) <doi:10.1016/j.ecolmodel.2019.108815> 
+             and 
+             Meyer (2022) <doi:10.1038/s41467-022-29838-9> , however, it was generalized and adjusted in the context of this package.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: caret, CAST, corrplot, doParallel, dplyr, grDevices, lares,
+        magrittr, parallel, rlang, stats, stringr, terra, tidyr, utils
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), pls, randomForest, sp
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+URL: https://envima.github.io/climodr/
+BugReports: https://github.com/envima/climodr/issues
+NeedsCompilation: no
+Packaged: 2025-06-10 08:11:00 UTC; Alexander
+Repository: CRAN
+Date/Publication: 2025-06-12 14:20:06 UTC

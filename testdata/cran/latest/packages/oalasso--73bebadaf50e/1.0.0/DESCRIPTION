@@ -1,0 +1,34 @@
+Package: oalasso
+Type: Package
+Title: Outcome-Adaptive Lasso Propensity Scores
+Version: 1.0.0
+Authors@R: person("Daijiro", "Kabata", email = "daijiro.kabata@port.kobe-u.ac.jp",
+    role = c("aut", "cre", "cph"))
+Description: Estimates propensity scores by the outcome-adaptive lasso of
+    Shortreed and Ertefaie (2017) <doi:10.1111/biom.12679> and the generalized
+    outcome-adaptive lasso (GOAL) of Balde, Yang and Lefebvre (2023)
+    <doi:10.1111/biom.13683>, using 'glmnet' with an exact penalty-scale
+    correction so that the published objectives and tuning grids are
+    reproduced. Tuning is by the weighted absolute mean difference balance
+    criterion. The resulting score is designed to be supplied directly to the
+    matchit() function of 'MatchIt' as a distance measure, to the weightit()
+    function of 'WeightIt' as a propensity score, or to the psave() function
+    of 'psAve' as an appended candidate.
+Depends: R (>= 4.1)
+Imports: glmnet (>= 4.1-2), cobalt (>= 4.6.0), stats, utils, graphics
+Suggests: MatchIt, WeightIt, psAve, rpart, testthat (>= 3.0.0), knitr,
+        rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+License: GPL (>= 2)
+URL: https://kabajiro.github.io/oalasso/,
+        https://github.com/kabajiro/oalasso
+BugReports: https://github.com/kabajiro/oalasso/issues
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-12 02:00:17 UTC; daiji
+Author: Daijiro Kabata [aut, cre, cph]
+Maintainer: Daijiro Kabata <daijiro.kabata@port.kobe-u.ac.jp>
+Repository: CRAN
+Date/Publication: 2026-07-21 10:30:14 UTC

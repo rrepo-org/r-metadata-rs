@@ -1,0 +1,30 @@
+Package: alpmixBayes
+Type: Package
+Title: Bayesian Estimation for Alpha-Mixture Survival Models
+Version: 0.1.0
+Authors@R: c(person(given = "Feng", family = "Luan", email = "fluan1@niu.edu", role = c("aut","cre")),
+            person(given = "Zhexuan", family = "Yang", role = "aut"),
+            person(given = "Duchwan", family = "Ryu", role = "aut")
+            )
+Description: Implements Bayesian estimation and inference for alpha-mixture survival models,
+  including Weibull and Exponential based components, with tools for simulation and posterior 
+  summaries. The methods target applications in reliability and biomedical survival analysis.
+  The package implements Bayesian estimation for the alpha-mixture methodology introduced in 
+  Asadi et al. (2019) <doi:10.1017/jpr.2019.72>.
+Maintainer: Feng Luan <fluan1@niu.edu>
+Imports: MCMCpack, stats, utils, gtools
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LazyData: true
+LazyDataCompression: xz
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-17 19:22:24 UTC; feng
+Author: Feng Luan [aut, cre],
+  Zhexuan Yang [aut],
+  Duchwan Ryu [aut]
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-10-22 18:40:02 UTC

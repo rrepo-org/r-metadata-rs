@@ -1,0 +1,31 @@
+Package: org
+Title: Organising Projects
+Version: 2026.4.9
+Authors@R: c(
+  person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut", "cre"),comment = c(ORCID = "0000-0002-6747-1726"))
+  )
+Description: A framework for organizing R projects with a standardized structure. 
+    Most analyses consist of three main components: code, results, and data, 
+    each with different requirements such as version control, sharing, and encryption. 
+    This package provides tools to set up and manage project directories, handle
+    file paths consistently across operating systems, organize results using
+    date-based structures, source code from specified directories, and perform
+    file operations safely. 
+    It ensures consistency across projects while accommodating different 
+    requirements for various types of content.
+Depends: R (>= 3.3.0)
+License: MIT + file LICENSE
+URL: https://www.rwhite.no/org/, https://github.com/raubreywhite/org
+BugReports: https://github.com/raubreywhite/org/issues
+Encoding: UTF-8
+Imports: utils
+Suggests: testthat, knitr, rmarkdown, glue, pak
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Date/Publication: 2026-04-09 06:50:02 UTC
+NeedsCompilation: no
+Packaged: 2026-04-09 06:32:44 UTC; raw996
+Author: Richard Aubrey White [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6747-1726>)
+Maintainer: Richard Aubrey White <hello@rwhite.no>
+Repository: CRAN

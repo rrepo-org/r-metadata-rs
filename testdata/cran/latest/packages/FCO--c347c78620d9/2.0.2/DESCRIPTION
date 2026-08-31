@@ -1,0 +1,51 @@
+Package: FCO
+Title: Flexible Cutoffs for Model Fit Evaluation in Covariance-Based
+        Structural Models
+Version: 2.0.2
+Authors@R: c(
+    person("Thomas", "Niemand", , "thomas.niemand@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7677-1168")),
+    person("Robert", "Mai", , "robert.mai@grenoble-em.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-8364-9328")),
+    person("Nadine", "Schröder", , "nadine.schroeder1@hsbi.de", role = "ctb",
+           comment = c(ORCID = "0000-0001-6650-4656")),
+    person("Andreas", "Falke", , "andreas.falke@wiwi.uni-regensburg.de", role = "ctb",
+           comment = c(ORCID = "0000-0002-1519-0738"))
+  )
+Author: Thomas Niemand [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7677-1168>),
+  Robert Mai [ctb] (ORCID: <https://orcid.org/0000-0002-8364-9328>),
+  Nadine Schröder [ctb] (ORCID: <https://orcid.org/0000-0001-6650-4656>),
+  Andreas Falke [ctb] (ORCID: <https://orcid.org/0000-0002-1519-0738>)
+Maintainer: Thomas Niemand <thomas.niemand@gmail.com>
+Description: A toolbox to derive flexible cutoffs for fit indices in
+    'Covariance-based Structural Equation Modeling' based on the paper by
+    'Niemand & Mai (2018)' <doi:10.1007/s11747-018-0602-9>. Flexible
+    cutoffs are an alternative to fixed cutoffs - rules-of-thumb -
+    regarding an appropriate cutoff for fit indices such as 'CFI' or
+    'SRMR'. It has been demonstrated that these flexible cutoffs perform
+    better than fixed cutoffs in grey areas where misspecification is not
+    easy to detect. The package provides an alternative to the tool at
+    <https://flexiblecutoffs.org> as it allows to tailor flexible cutoffs
+    to a given dataset and model, which is so far not available in the
+    tool. The package simulates fit indices based on a given dataset and
+    model and then estimates the flexible cutoffs. Some useful functions,
+    e.g., to determine the 'GoF-' or 'BoF-nature' of a fit index, are
+    provided. So far, additional options for a relative use (is a model
+    better than another?) are provided in an exploratory manner.
+License: GPL (>= 3)
+URL: https://flexiblecutoffs.org, https://github.com/ThomasNiemand/FCO/
+Depends: R (>= 4.4.0)
+Imports: checkmate, cutpointr, data.table, doParallel, dplyr, foreach,
+        ggplot2, lavaan, overlapping, parallel, PoisBinOrdNor, psych,
+        rcompanion, simstandard, stringr, tidyr
+Suggests: knitr, MASS, rmarkdown, testthat
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-25 16:23:28 UTC; thomasniemand
+Repository: CRAN
+Date/Publication: 2026-02-26 06:10:48 UTC

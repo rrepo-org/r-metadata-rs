@@ -1,0 +1,80 @@
+Type: Package
+Package: TUGLab
+Title: A Laboratory for TU Games
+Version: 0.0.1
+Date: 2025-06-05
+Authors@R: c(
+    person("Álvaro", "de Prado Saborido", , "alvarodepradosaborido@gmail.com", role = c("aut", "cre"),
+           comment = "Departamento de Estatística e Investigación Operativa. Universidade de Vigo. Spain"),
+    person("Alejandro", "Bernárdez Ferradás", , "alejandro.bernardez@uvigo.gal", role = "ctb",
+           comment = c(ORCID = "0009-0006-0960-3555", "SiDOR. Departamento de Estatística e Investigación Operativa. Universidade de Vigo. CITMAga. Spain")),
+    person("Miguel Ángel", "Mirás Calvo", , "mmiras@uvigo.es", role = "aut",
+           comment = c(ORCID = "0000-0001-7247-1926", "RGEAF. Departamento de Matemáticas. Universidade de Vigo. Spain")),
+    person("Iago", "Núñez Lugilde", , "iago.nunez.lugilde@udc.es", role = "aut",
+           comment = c(ORCID = "0000-0003-3382-0737", "Departamento de Matemáticas. MODES. Universidade da Coruña. Spain")),
+    person("Carmen", "Quinteiro Sandomingo", , "quinteir@uvigo.gal", role = "aut",
+           comment = c(ORCID = "0000-0002-2711-1945", "Departamento de Matemáticas. Universidade de Vigo. Spain")),
+    person("Estela", "Sánchez Rodríguez", , "esanchez@uvigo.es", role = "aut",
+           comment = c(ORCID = "0000-0002-0933-6411", "SiDOR. Departamento de Estatística e Investigación Operativa. Universidade de Vigo. CITMAga. Spain")),
+    person("MCIN/AEI/10.13039/501100011033", role = "fnd",
+           comment = "Project PID2021-124030NB-C33. ERDF A way of making Europe/EU")
+  )
+Maintainer: Álvaro de Prado Saborido <alvarodepradosaborido@gmail.com>
+Description: Cooperative game theory models decision-making situations in
+    which a group of agents, called players, may achieve certain benefits
+    by cooperating to reach an optimal outcome. It has great potential in
+    different fields, since it offers a scenario to analyze and solve
+    problems in which cooperation is essential to achieve a common goal.
+    The 'TUGLab' (Transferable Utility Games Laboratory) R package
+    contains a set of scripts that could serve as a helpful complement to
+    the books and other materials used in courses on cooperative game
+    theory, and also as a practical tool for researchers working in this
+    field. The 'TUGLab' project was born in 2006 trying to highlight the
+    geometrical aspects of the theory of cooperative games for 3 and 4
+    players. 'TUGlabWeb' is an online platform on which the basic
+    functions of 'TUGLab' are implemented, and it is being used all over
+    the world as a resource in degree, master's and doctoral programs.
+    This package is an extension of the first versions and enables users
+    to work with games in general (computational restrictions aside). The
+    user can check properties of games, compute well-known games and
+    calculate several set-valued and single-valued solutions such as the
+    core, the Shapley value, the nucleolus or the core-center. The package
+    also illustrates how the Shapley value flexibly adapts to various
+    cooperative game settings, including weighted players and coalitions,
+    a priori unions, and restricted communication structures. In keeping
+    with the original philosophy of the first versions, special emphasis
+    is placed on the graphical representation of the solution concepts for
+    3 and 4 players.
+License: GPL-3
+URL: http://tuglabweb.uvigo.es/TUGlabWEB2/index.php,
+        https://mmiras.webs.uvigo.es/TUGlab/
+BugReports: https://github.com/esanchez-coder/TUGLab/issues
+Depends: R (>= 3.5)
+Imports: geometry, plotly, rcdd, stringr, volesti
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.3.2
+Packaged: 2025-06-05 19:56:13 UTC; Usuario
+Author: Álvaro de Prado Saborido [aut, cre] (Departamento de Estatística e
+    Investigación Operativa. Universidade de Vigo. Spain),
+  Alejandro Bernárdez Ferradás [ctb] (ORCID:
+    <https://orcid.org/0009-0006-0960-3555>, SiDOR. Departamento de
+    Estatística e Investigación Operativa. Universidade de Vigo.
+    CITMAga. Spain),
+  Miguel Ángel Mirás Calvo [aut] (ORCID:
+    <https://orcid.org/0000-0001-7247-1926>, RGEAF. Departamento de
+    Matemáticas. Universidade de Vigo. Spain),
+  Iago Núñez Lugilde [aut] (ORCID:
+    <https://orcid.org/0000-0003-3382-0737>, Departamento de
+    Matemáticas. MODES. Universidade da Coruña. Spain),
+  Carmen Quinteiro Sandomingo [aut] (ORCID:
+    <https://orcid.org/0000-0002-2711-1945>, Departamento de
+    Matemáticas. Universidade de Vigo. Spain),
+  Estela Sánchez Rodríguez [aut] (ORCID:
+    <https://orcid.org/0000-0002-0933-6411>, SiDOR. Departamento de
+    Estatística e Investigación Operativa. Universidade de Vigo.
+    CITMAga. Spain),
+  MCIN/AEI/10.13039/501100011033 [fnd] (Project PID2021-124030NB-C33.
+    ERDF A way of making Europe/EU)
+Repository: CRAN
+Date/Publication: 2025-06-10 09:30:05 UTC

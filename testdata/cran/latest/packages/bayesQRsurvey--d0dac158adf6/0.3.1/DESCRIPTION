@@ -1,0 +1,41 @@
+Package: bayesQRsurvey
+Title: Bayesian Quantile Regression Models for Complex Survey Data
+        Analysis
+Version: 0.3.1
+Authors@R: 
+    c(
+        person("Tomás", "Rodríguez Taborda", email = "torodriguezt@unal.edu.co", role = c("aut", "cre")),
+        person("Johnatan", "Cardona Jiménez", email = "jcardonj@unal.edu.co", role = "aut"),
+        person("Marcus L.", "Nascimento", email = "marcus.lavagnole@fgv.br", role = "aut"),
+        person("Kelly Cristina", "Mota Gonçalves", email = "kelly@dme.ufrj.br", role = "aut")
+    )
+Description: Provides Bayesian quantile regression models for complex survey data 
+    under informative sampling using survey-weighted estimators. Both single- and 
+    multiple-output models are supported. To accelerate computation, all algorithms 
+    are implemented in 'C++' using 'Rcpp', 'RcppArmadillo', and 'RcppEigen', and 
+    are called from 'R'. See Nascimento and Gonçalves (2024) <doi:10.1093/jssam/smae015>
+    and Nascimento and Gonçalves (2026) <doi:10.1093/jssam/smaf040>.
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+LazyData: true
+LazyDataCompression: gzip
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen
+Imports: Rcpp, stats, graphics, methods, pracma, ggplot2, rlang,
+        posterior
+Suggests: MASS, knitr, rmarkdown, grDevices, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+SystemRequirements: BLAS, LAPACK
+URL: https://github.com/torodriguezt/bayesQRsurvey
+BugReports: https://github.com/torodriguezt/bayesQRsurvey/issues
+NeedsCompilation: yes
+Packaged: 2026-08-20 23:11:30 UTC; torodriguezt
+Author: Tomás Rodríguez Taborda [aut, cre],
+  Johnatan Cardona Jiménez [aut],
+  Marcus L. Nascimento [aut],
+  Kelly Cristina Mota Gonçalves [aut]
+Maintainer: Tomás Rodríguez Taborda <torodriguezt@unal.edu.co>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:45:11 UTC

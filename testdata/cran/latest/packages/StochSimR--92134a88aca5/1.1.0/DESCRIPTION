@@ -1,0 +1,41 @@
+Package: StochSimR
+Type: Package
+Title: Stochastic Process Simulation Engine
+Version: 1.1.0
+Authors@R: 
+    person("Ayush", "Kundu", , "ayushkundu25@iitk.ac.in", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0009-8715-2624"))
+Description: A modular simulation engine for a wide range of stochastic
+    processes. Provides exact and approximate simulation methods for Poisson
+    processes (homogeneous and inhomogeneous), Brownian motion (standard,
+    drifted, and bridge), discrete- and continuous-time Markov chains,
+    birth-death processes, the Yule pure-birth process, infinitesimal
+    generator matrix utilities, Markovian queuing systems (M/M/1, M/M/c,
+    M/M/c/K) with exact steady-state statistics, Levy processes (gamma,
+    normal inverse Gaussian, variance-gamma, alpha-stable), Merton
+    jump-diffusion models, Hawkes self-exciting processes, geometric Brownian
+    motion, and Ornstein-Uhlenbeck mean-reverting diffusions. Includes
+    variance reduction techniques (antithetic variates, control variates,
+    importance sampling, stratified sampling), parallel simulation via the
+    'future' framework, rare-event simulation (cross-entropy and multilevel
+    splitting), path visualisation, and summary statistics. Methods are based
+    on Glasserman (2003) <doi:10.1007/978-0-387-21617-1>, Asmussen & Glynn
+    (2007) <doi:10.1007/978-0-387-69033-9>, Norris (1997)
+    <doi:10.1017/CBO9780511810633>, and Kleinrock (1975, ISBN:0471491101).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: ggplot2 (>= 3.4.0), rlang (>= 1.0.0), stats, parallel, future
+        (>= 1.25.0), future.apply (>= 1.10.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/Ayush291202/StochSimR
+BugReports: https://github.com/Ayush291202/StochSimR/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-28 09:44:50 UTC; ayushkundu
+Author: Ayush Kundu [aut, cre] (ORCID: <https://orcid.org/0009-0009-8715-2624>)
+Maintainer: Ayush Kundu <ayushkundu25@iitk.ac.in>
+Repository: CRAN
+Date/Publication: 2026-06-01 08:50:13 UTC

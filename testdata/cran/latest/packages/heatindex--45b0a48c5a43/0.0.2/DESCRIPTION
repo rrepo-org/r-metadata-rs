@@ -1,0 +1,24 @@
+Package: heatindex
+Title: Calculating Heat Stress
+Version: 0.0.2
+Description: Implements the simpler and faster heat index, which matches the values of the original 1979 heat index and its 2022 extension for air temperatures above 300 K (27 C, 80 F) and with only minor differences at lower temperatures. Also implements an algorithm for calculating the thermodynamic (and psychrometric) wet-bulb (and ice-bulb) temperature.
+URL: https://heatindex.org
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: Rcpp
+LinkingTo: Rcpp
+SystemRequirements: C++17
+Authors@R: c(
+    person(given="Yi-Chuan", family="Lu", email="yclu@berkeley.edu", role = c("aut"),
+           comment = c(ORCID = "0000-0003-3659-1474")),
+    person(given="David M.", family="Romps", email="romps@berkeley.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7649-5175")) )
+NeedsCompilation: yes
+Packaged: 2025-07-18 00:16:39 UTC; davidromps
+Author: Yi-Chuan Lu [aut] (ORCID: <https://orcid.org/0000-0003-3659-1474>),
+  David M. Romps [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7649-5175>)
+Maintainer: David M. Romps <romps@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2025-07-18 08:40:07 UTC

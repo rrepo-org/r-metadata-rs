@@ -1,0 +1,37 @@
+Package: morphErr
+Title: Measurement Error Models for Morphometric Data
+Version: 1.0.0
+Date: 2026-08-18
+Authors@R: 
+    c(
+    person("Ben C.", "Stevenson", email = "ben.stevenson@st-andrews.ac.uk", role = c("aut", "cre", "cph")),
+    person("Elizabeth", "Smit", email = "esmi468@aucklanduni.ac.nz", role = "aut")
+    )
+Description: Morphometric data collected on animal populations can be
+    subject to measurement error, which leads to biased estimators
+    using line-fitting techniques such as linear regression and
+    reduced major axis. The models implemented in this package were
+    described by Stevenson, Smit, and Setyawan (2026)
+    <DOI:10.1214/26-AOAS2164>. They explicitly accommodate measurement
+    error, allow for multivariate data, estimate relationships between
+    dimensions, allow missing data, and provide tests for isometric
+    relationships between dimensions. Morphometric data of the reef
+    manta ray, collected in Raja Ampat, Indonesia, are included.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: graphics, grDevices, lmeInfo, Matrix, msm, mvtnorm, nlme,
+        parallel, pbapply, stats, utils
+Depends: R (>= 3.5.0),
+Suggests: testthat (>= 3.0.0)
+LazyData: true
+URL: https://github.com/elismit01/morphErr
+BugReports: https://github.com/elismit01/morphErr/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-21 13:33:24 UTC; ben
+Author: Ben C. Stevenson [aut, cre, cph],
+  Elizabeth Smit [aut]
+Maintainer: Ben C. Stevenson <ben.stevenson@st-andrews.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-08-30 09:10:13 UTC

@@ -1,0 +1,21 @@
+Package: OrdFacReg
+Type: Package
+Title: Least Squares, Logistic, and Cox-Regression with Ordered
+        Predictors
+Version: 1.0.8
+Date: 2026-04-26
+Authors@R: 
+    person(given = "Kaspar", family = "Rufibach", role = c("aut", "cre"), email = "kaspar.rufibach@gmail.com", comment = c(ORCID = "0000-0002-2634-1167"))
+Maintainer: Kaspar Rufibach <kaspar.rufibach@gmail.com>
+Depends: survival, eha, MASS
+Imports: stats
+Description: In biomedical studies, researchers are often interested in assessing the association between one or more ordinal explanatory variables and an outcome variable, at the same time adjusting for covariates of any type. The outcome variable may be continuous, binary, or represent censored survival times. In the absence of a precise knowledge of the response function, using monotonicity constraints on the ordinal variables improves efficiency in estimating parameters, especially when sample sizes are small. This package implements an active set algorithm that efficiently computes such estimators.
+License: GPL (>= 2)
+LazyLoad: yes
+URL: http://www.kasparrufibach.ch
+NeedsCompilation: no
+Packaged: 2026-04-26 17:03:16 UTC; kaspa
+Author: Kaspar Rufibach [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2634-1167>)
+Repository: CRAN
+Date/Publication: 2026-04-26 17:20:02 UTC

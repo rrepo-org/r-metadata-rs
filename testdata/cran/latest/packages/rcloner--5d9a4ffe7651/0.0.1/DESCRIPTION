@@ -1,0 +1,31 @@
+Package: rcloner
+Title: Interface to 'rclone' Cloud Storage Utility
+Version: 0.0.1
+Authors@R: 
+    person("Carl", "Boettiger", , "cboettig@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1642-628X"))
+Description: Provides an R interface to 'rclone' <https://rclone.org>, a
+    command-line program for managing files on cloud storage. 'rclone' supports
+    over 40 cloud storage providers including 'S3'-compatible services
+    ('Amazon S3', 'MinIO', 'Ceph'), 'Google Cloud Storage', 'Azure Blob
+    Storage', and many others. This package downloads and manages the 'rclone'
+    binary automatically and wraps its commands as R functions, returning
+    results as data frames where appropriate.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: fs, jsonlite, processx, utils
+Suggests: covr, knitr, rmarkdown, spelling, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Language: en-US
+VignetteBuilder: knitr
+URL: https://boettiger-lab.github.io/rcloner/,
+        https://github.com/boettiger-lab/rcloner
+BugReports: https://github.com/boettiger-lab/rcloner/issues
+NeedsCompilation: no
+Packaged: 2026-03-22 20:57:50 UTC; cboettig
+Author: Carl Boettiger [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1642-628X>)
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-26 09:50:02 UTC

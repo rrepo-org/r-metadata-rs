@@ -1,0 +1,38 @@
+Package: EmpiricalDynamics
+Title: Empirical Discovery of Differential Equations from Time Series
+        Data
+Version: 0.1.9
+Authors@R: 
+    person("José Mauricio", "Gómez Julián", email = "isadore.nabi@pm.me", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-2412-3150"))
+Description: A comprehensive toolkit for discovering differential and difference
+    equations from empirical time series data using symbolic regression. The package
+    implements a complete workflow from data preprocessing (including Total Variation
+    Regularized differentiation for noisy economic data), visual exploration of
+    dynamical structure, and symbolic equation discovery via genetic algorithms.
+    It leverages a high-performance 'Julia' backend ('SymbolicRegression.jl') to provide
+    industrial-grade robustness, physics-informed constraints, and rigorous
+    out-of-sample validation. Designed for economists, physicists, and researchers
+    studying dynamical systems from observational data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+SystemRequirements: Julia (>= 1.6)
+Depends: R (>= 4.0.0)
+Imports: CVXR (>= 1.8), minpack.lm (>= 1.2), signal (>= 0.7), lmtest
+        (>= 0.9), tseries (>= 0.10), ggplot2 (>= 3.4.0), gridExtra (>=
+        2.3), stats, graphics, grDevices, utils, methods
+Suggests: JuliaConnectoR (>= 1.1), JuliaCall (>= 0.17), clarabel, scs,
+        osqp (>= 1.0), ECOSolveR (>= 0.5), testthat (>= 3.0.0), knitr
+        (>= 1.40), rmarkdown (>= 2.20), covr, mgcv
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/IsadoreNabi/EmpiricalDynamics
+BugReports: https://github.com/IsadoreNabi/EmpiricalDynamics/issues
+NeedsCompilation: no
+Packaged: 2026-08-19 16:51:39 UTC; josemgomezj
+Author: José Mauricio Gómez Julián [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-2412-3150>)
+Maintainer: José Mauricio Gómez Julián <isadore.nabi@pm.me>
+Config/roxygen2/version: 8.0.0
+Repository: CRAN
+Date/Publication: 2026-08-20 00:50:02 UTC

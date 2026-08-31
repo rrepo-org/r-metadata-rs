@@ -1,0 +1,42 @@
+Package: causalfrag
+Type: Package
+Title: Cross-Framework Causal Fragility Index
+Version: 0.1.1
+Date: 2026-05-30
+Authors@R: 
+    person("Subir", "Hait",
+           email = "haitsubi@msu.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-9871-9677"))
+Description: Provides a unified workflow for running, classifying, visualizing,
+    and interpreting sensitivity analyses for unmeasured confounding across
+    multiple causal frameworks. Introduces the Causal Fragility Index (CFI),
+    a single 0-100 composite score that integrates evidence from the partial
+    R-squared robustness value approach (Cinelli and Hazlett, 2020,
+    <doi:10.1111/rssb.12348>), E-value metrics (VanderWeele and Ding, 2017,
+    <doi:10.7326/M16-2607>), and the Impact Threshold for a Confounding
+    Variable (Frank, 2000, <doi:10.1177/0049124100029002001>) into one
+    interpretable measure of robustness. The package also provides
+    template-based plain-language narrative interpretation and
+    publication-ready reporting, with optional integration with the
+    'confoundvis' package for sensitivity plots.
+License: MIT + file LICENSE
+URL: https://github.com/causalfragility-lab/causalfrag
+BugReports: https://github.com/causalfragility-lab/causalfrag/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.4.0), rlang (>= 1.0.0), jsonlite (>= 1.8.0), glue
+        (>= 1.6.0)
+Suggests: httr2 (>= 1.0.0), confoundvis (>= 0.1.0), sensemakr (>=
+        0.1.4), EValue (>= 4.1.3), konfound (>= 0.4.0), rbounds (>=
+        2.1), rmarkdown (>= 2.14), knitr (>= 1.39), testthat (>=
+        3.0.0), withr (>= 2.5.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-06 23:32:15 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-06-15 11:50:13 UTC

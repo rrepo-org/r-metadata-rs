@@ -1,0 +1,33 @@
+Package: WAreg
+Type: Package
+Title: While-Alive Regression for Composite Endpoints with
+        Cluster-Robust Inference
+Version: 0.1.0
+Authors@R: 
+    c(
+      person("Xi", "Fang", role = c("aut", "cre"), email = "x.fang@yale.edu"),
+      person("Hajime", "Uno", role = "aut"),
+      person("Fan", "Li", role = "aut")
+    )
+Description: Provides estimation and inference for while-alive regression models targeting the while-alive loss rate for composite endpoints that include recurrent events and a terminal event. The implementation supports flexible time-varying covariate effects through user-selected time bases, including B-splines, natural splines, M-splines, step functions, truncated linear
+    bases, interval-local bases, and piecewise polynomials. Inference can be performed using cluster-robust variance estimators for cluster-randomized trials, with subject-level (IID) variance as a special case. The package includes prediction and plotting utilities and K-fold cross-validation for
+    selecting basis and tuning parameters. Methodology is based on Fang et al. (2025) <doi:10.1093/biostatistics/kxaf047>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: dplyr, tidyr, tibble, ggplot2, survival, nleqslv, splines,
+        MASS, magrittr, rlang
+Suggests: splines2, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+URL: https://github.com/fancy575/WAreg
+BugReports: https://github.com/fancy575/WAreg/issues
+RoxygenNote: 7.3.3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-03-02 21:19:15 UTC; xf97
+Author: Xi Fang [aut, cre],
+  Hajime Uno [aut],
+  Fan Li [aut]
+Maintainer: Xi Fang <x.fang@yale.edu>
+Repository: CRAN
+Date/Publication: 2026-03-06 13:50:07 UTC

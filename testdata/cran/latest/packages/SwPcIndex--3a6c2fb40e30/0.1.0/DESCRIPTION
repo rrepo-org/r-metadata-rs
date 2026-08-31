@@ -1,0 +1,22 @@
+Package: SwPcIndex
+Type: Package
+Title: Computation of Survey Weighted PC Based Composite Index
+Version: 0.1.0
+Authors@R: c(person("Pradip","Basak",role=c("aut","cph","cre"),email="pradip@ubkv.ac.in"),person("Deepak","Singh",role=c("aut","cph"),email="deepaksingh2112@gmail.com"),person("Raju","Kumar",role=c("aut","cph"),email="raju.iasri@gmail.com"),person("Tauqueer","Ahmad",role=c("aut","cph"),email=" tauqueer.khan01@gmail.com"))
+Depends: R(>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Description: An index is created using a mathematical model that transforms multi-dimensional variables into a single value. These variables are often correlated, and while PCA-based indices can address the issue of multicollinearity, they typically do not account for survey weights, which can lead to inaccurate rankings of survey units such as households, districts, or states. To resolve this, the current package facilitates the development of a principal component analysis-based composite index by incorporating survey weights for each sample observation. This ensures the generation of a survey-weighted principal component-based normalized composite index. Additionally, the package provides a normalized principal component-based composite index and ranks the sample observations based on the values of the composite indices.
+            For method details see, Skinner, C. J., Holmes, D. J. and Smith, T. M. F. (1986) <DOI:10.1080/01621459.1986.10478336>, Singh, D., Basak, P., Kumar, R. and Ahmad, T. (2023) <DOI:10.3389/fams.2023.1274530>.
+License: GPL (>= 2.0)
+Encoding: UTF-8
+Imports: stats
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Author: Pradip Basak [aut, cph, cre],
+  Deepak Singh [aut, cph],
+  Raju Kumar [aut, cph],
+  Tauqueer Ahmad [aut, cph]
+Maintainer: Pradip Basak <pradip@ubkv.ac.in>
+Packaged: 2025-04-01 18:04:36 UTC; Dr. Pradeep
+Repository: CRAN
+Date/Publication: 2025-04-02 17:40:12 UTC

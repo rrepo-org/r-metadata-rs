@@ -1,0 +1,28 @@
+Package: golfastr
+Type: Package
+Title: Efficiently Access Pro Golf Data
+Version: 0.2.0
+Authors@R: 
+    person("Ray", "Carpenter", email = "raymondcarpenter1@gmail.com", role = c("aut", "cre", "cph"))
+Description: Fetch Professional Golfers' Association (PGA) Tour tournament data
+    from ESPN <https://www.espn.com/golf/> including leaderboards and
+    hole-by-hole scoring. Data is returned in tidy tibble format ready for
+    analysis. Supports local storage via RDS or 'Apache Arrow' Parquet files
+    for fast repeated access. Designed for golf analytics, data journalism,
+    and fantasy sports research.
+License: MIT + file LICENSE
+Depends: R (>= 4.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: httr2, dplyr, tibble
+Suggests: testthat (>= 3.0.0), arrow, ggplot2
+Config/testthat/edition: 3
+URL: https://github.com/array-carpenter/golfastr
+BugReports: https://github.com/array-carpenter/golfastr/issues
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-02-17 23:48:47 UTC; raycarpenter
+Author: Ray Carpenter [aut, cre, cph]
+Maintainer: Ray Carpenter <raymondcarpenter1@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-18 14:10:02 UTC

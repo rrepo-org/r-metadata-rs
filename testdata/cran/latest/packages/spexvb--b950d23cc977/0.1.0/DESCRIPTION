@@ -1,0 +1,22 @@
+Package: spexvb
+Type: Package
+Title: Parameter Expanded Variational Bayes for High-Dimensional Linear
+        Regression
+Version: 0.1.0
+Authors@R: c(person('Peter', 'Olejua', email = 'polejua@email.sc.edu', role = c('aut', 'cre'), comment = c(ORCID = '0000-0002-2478-0908')), person('Alexander', 'McLain', email = 'mclaina@mailbox.sc.edu', role = 'aut'))
+Description: Implements a parameter expanded variational Bayes algorithm for linear regression models with high-dimensional variable selection. The methodology utilizes spike-and-slab priors to perform simultaneous estimation and selection. Details can be found in Olejua et al. (2024) <doi:10.21203/rs.3.rs-7208847/v1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: Rcpp, glmnet, caret, foreach
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0), roxygen2, knitr, rmarkdown, doParallel
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-02-13 04:43:53 UTC; peter
+Author: Peter Olejua [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2478-0908>),
+  Alexander McLain [aut]
+Maintainer: Peter Olejua <polejua@email.sc.edu>
+Repository: CRAN
+Date/Publication: 2026-02-17 21:40:02 UTC

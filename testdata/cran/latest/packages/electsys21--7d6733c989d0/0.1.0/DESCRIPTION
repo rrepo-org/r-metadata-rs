@@ -1,0 +1,28 @@
+Package: electsys21
+Type: Package
+Title: Voting Methods for Ranked, Rated and Approval Ballots
+Version: 0.1.0
+Authors@R: 
+    person("Ivan", "Iakimov", , "ivan.iakimov@ih21.org", role = c("aut", "cre"))
+Description: Implements a range of voting methods and electoral systems
+    for determining election winners, including the D21 method with and
+    without minus votes
+    (Janecek, <https://www.ih21.org/en/d21-janecek-method>),
+    first-past-the-post, two-round runoff, instant runoff, the Borda
+    count, approval voting, majority judgement and the Condorcet method.
+    The functions accept several ballot formats - ranking, cardinal
+    utilities, approvals and scores - with automatic detection of the
+    input type, configurable tie-breaking and tidy summaries of the
+    results.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/ivan-ih21/electsys21
+BugReports: https://github.com/ivan-ih21/electsys21/issues
+Imports: stats
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-13 11:59:35 UTC; Ivan
+Author: Ivan Iakimov [aut, cre]
+Maintainer: Ivan Iakimov <ivan.iakimov@ih21.org>
+Repository: CRAN
+Date/Publication: 2026-07-22 06:10:15 UTC

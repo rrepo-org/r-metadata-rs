@@ -1,0 +1,21 @@
+Package: BJM
+Title: Backward Joint Model for the Dynamic Prediction of Both
+        Time-to-Event and Longitudinal Outcomes
+Version: 0.1.0
+Authors@R: c(
+    person("Wenhao", "Li", email = "wenhaoli.jlu@gmail.com", role = c("aut", "cre")),
+    person("Liang", "Li", role = c('aut'),email = "LLi15@mdanderson.org"))
+Maintainer: Wenhao Li <wenhaoli.jlu@gmail.com>
+Description: Provides tools to fit joint models of multivariate longitudinal data and time-to-event data for dynamic prediction. It allows the joint prediction of both future time-to-event outcomes and future longitudinal outcomes conditional on survival. The models accommodate irregularly measured longitudinal data and competing risks outcomes. The use of the backward joint model enables fast and efficient computation, especially for applications with large sample sizes and many longitudinal variables.
+License: MIT + file LICENSE
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0), survival
+Imports: nlme, mvtnorm, ggplot2, Matrix
+Author: Wenhao Li [aut, cre],
+  Liang Li [aut]
+Repository: CRAN
+Date/Publication: 2026-07-04 07:50:02 UTC
+NeedsCompilation: no
+Packaged: 2026-06-28 23:49:55 UTC; wenhaoli

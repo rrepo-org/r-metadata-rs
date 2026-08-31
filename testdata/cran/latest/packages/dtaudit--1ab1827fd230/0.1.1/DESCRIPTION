@@ -1,0 +1,25 @@
+Package: dtaudit
+Title: Audit and Diagnostic Tools for 'data.table' Workflows
+Version: 0.1.1
+Authors@R: 
+    person("Fernando", "Cordeiro", , "fernandolpcordeiro@gmail.com", role = c("aut", "cre", "cph"))
+Description: Diagnostic tools for auditing data analysis workflows built on
+    'data.table'. Provides functions to validate join operations, compare
+    data.tables, filter with diagnostic output, summarize data quality, check
+    primary keys and variable relationships, and diagnose string columns.
+    Designed to help analysts understand and document data transformations.
+License: LGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: data.table, stringi
+URL: https://github.com/fpcordeiro/dtaudit
+BugReports: https://github.com/fpcordeiro/dtaudit/issues
+Suggests: knitr, pbapply, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-08 21:14:35 UTC; fernando
+Author: Fernando Cordeiro [aut, cre, cph]
+Maintainer: Fernando Cordeiro <fernandolpcordeiro@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-11 20:00:09 UTC

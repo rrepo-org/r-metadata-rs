@@ -1,0 +1,42 @@
+Package: tidyfun
+Title: Tidy Functional Data Wrangling and Visualization
+Version: 0.2.0
+Authors@R: c(
+    person("Fabian", "Scheipl", , "fabian.scheipl@googlemail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8172-3603")),
+    person("Jeff", "Goldsmith", role = "aut"),
+    person("Julia", "Wrobel", role = "aut",
+           comment = c(ORCID = "0000-0001-6783-1421")),
+    person("Maximilian", "Mücke", role = "ctb",
+           comment = c(ORCID = "0009-0000-9432-9795"))
+  )
+Description: Represent, visualize, describe and wrangle functional data
+    in tidy data frames, building on the 'tf' package. Provides data types
+    for functional observations that work as columns in data frames,
+    enabling manipulation with 'dplyr' verbs and visualization with
+    'ggplot2' geoms designed for functional data.
+License: MIT + file LICENSE
+URL: https://github.com/tidyfun/tidyfun,
+        https://tidyfun.github.io/tidyfun/
+BugReports: https://github.com/tidyfun/tidyfun/issues
+Depends: R (>= 4.1), tf (>= 0.5.0)
+Imports: cli, dplyr, GGally, ggplot2, grid, pillar, purrr, rlang,
+        tibble, tidyr (>= 1.0.0), tidyselect (>= 1.0.0)
+Suggests: covr, fda, fdasrvf, gridExtra, janitor, knitr, lme4, maps,
+        mgcv, refund, rmarkdown, scales, testthat (>= 3.0.0),
+        tidyverse, vctrs, viridisLite
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-16 10:30:43 UTC; fabians
+Author: Fabian Scheipl [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8172-3603>),
+  Jeff Goldsmith [aut],
+  Julia Wrobel [aut] (ORCID: <https://orcid.org/0000-0001-6783-1421>),
+  Maximilian Mücke [ctb] (ORCID: <https://orcid.org/0009-0000-9432-9795>)
+Maintainer: Fabian Scheipl <fabian.scheipl@googlemail.com>
+Repository: CRAN
+Date/Publication: 2026-07-16 11:10:02 UTC

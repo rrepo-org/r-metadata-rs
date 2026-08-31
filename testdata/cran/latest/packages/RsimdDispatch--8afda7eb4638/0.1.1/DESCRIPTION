@@ -1,0 +1,38 @@
+Package: RsimdDispatch
+Title: Runtime 'SIMD' Dispatch Templates for 'C' Code in 'R' Packages
+Version: 0.1.1
+Authors@R: c(
+    person(given = "Sounkou Mahamane", family = "Toure",
+      email = "sounkoutoure@gmail.com", role = c("aut", "cre")),
+    person(given = "Evan", family = "Nemerson", role = "cph",
+      comment = "SIMDe copyright holder"),
+    person(given = "SIMDe contributors", role = "ctb",
+      comment = "Contributors to the bundled SIMDe header library")
+  )
+Description: Provides templates and a working example for runtime Single
+    Instruction Multiple Data ('SIMD') dispatch in 'C' code used by 'R'
+    packages. Packages can stage scalar and architecture-specific kernel
+    objects during configuration, then select a compiled and CPU-supported
+    implementation at runtime through guarded function pointers. The package
+    also vendors the header-only 'SIMDe' library for downstream packages through
+    the 'LinkingTo' field.
+License: GPL (>= 2)
+Copyright: See inst/AUTHORS and inst/LICENCE.note for bundled SIMDe
+        authorship and licensing details.
+SystemRequirements: GNU make
+Suggests: bench, knitr, rmarkdown, tinytest
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/sounkou-bioinfo/RsimdDispatch,
+        https://sounkou-bioinfo.github.io/RsimdDispatch/
+BugReports: https://github.com/sounkou-bioinfo/RsimdDispatch/issues
+NeedsCompilation: yes
+Packaged: 2026-05-28 20:43:01 UTC; sounkoutoure
+Author: Sounkou Mahamane Toure [aut, cre],
+  Evan Nemerson [cph] (SIMDe copyright holder),
+  SIMDe contributors [ctb] (Contributors to the bundled SIMDe header
+    library)
+Maintainer: Sounkou Mahamane Toure <sounkoutoure@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-01 14:30:02 UTC

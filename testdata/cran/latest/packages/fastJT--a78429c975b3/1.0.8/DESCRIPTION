@@ -1,0 +1,35 @@
+Package: fastJT
+Type: Package
+Title: Efficient Jonckheere-Terpstra Test Statistics for Robust Machine
+        Learning and Genome-Wide Association Studies
+Version: 1.0.8
+Date: 2025-05-01
+Authors@R: c(person(given = "Jiaxing",
+                    family = "Lin",
+                    role = "aut"),
+             person(given = "Alexander",
+                    family = "Sibley",
+                    role = c("aut", "cre"),
+                    email = "dcibioinformatics@duke.edu"),
+             person(given = "Ivo",
+                    family = "Shterev",
+                    role = "aut"),
+             person(given = "Kouros",
+                    family = "Owzar",
+                    role = "aut"))
+Description: This 'Rcpp'-based package implements highly efficient functions for the calculation of the Jonckheere-Terpstra statistic. It can be used for a variety of applications, including feature selection in machine learning problems, or to conduct genome-wide association studies (GWAS) with multiple quantitative phenotypes. The code leverages 'OpenMP' directives for multi-core computing to reduce overall processing time. 
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.3)
+LinkingTo: Rcpp
+Suggests: knitr
+VignetteBuilder: knitr
+BuildVignettes: yes
+NeedsCompilation: yes
+Packaged: 2025-05-01 19:19:18 UTC; abs33
+Author: Jiaxing Lin [aut],
+  Alexander Sibley [aut, cre],
+  Ivo Shterev [aut],
+  Kouros Owzar [aut]
+Maintainer: Alexander Sibley <dcibioinformatics@duke.edu>
+Repository: CRAN
+Date/Publication: 2025-05-01 20:00:01 UTC

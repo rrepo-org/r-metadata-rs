@@ -1,0 +1,42 @@
+Package: HTDV
+Type: Package
+Title: Hypothesis Testing for Dependent Variables with Unbalanced Data
+Version: 0.2.0
+Authors@R: person(given = "Jose Mauricio", family = "Gomez Julian",
+    email = "isadorenabi@pm.me", role = c("aut", "cre"),
+    comment = c(ORCID = "0009-0000-2412-3150"))
+Description: Implements hierarchical Bayesian inference, robust frequentist
+    inference, and distribution-free inference for dependent and unbalanced
+    data under strong-mixing conditions. Supports triangular-array,
+    weighted-sum and mixingale convergence regimes with Whittle and composite
+    likelihoods, heteroskedasticity-and-autocorrelation-consistent variance
+    estimation, block bootstrap with automatic block length, fixed-bandwidth
+    HAR inference, adaptive conformal prediction, Bayesian decision under
+    Region of Practical Equivalence, bridge-sampling Bayes factors, and
+    predictive comparison via the Widely Applicable Information Criterion and
+    leave-future-out cross-validation. Methods follow Andrews (1991)
+    <doi:10.2307/2938229>, Kiefer and Vogelsang (2005)
+    <doi:10.1017/S0266466605050565>, Patton, Politis and White (2009)
+    <doi:10.1080/07474930802459016>, Vehtari, Gelman and Gabry (2017)
+    <doi:10.1007/s11222-016-9696-4>, Kruschke (2018)
+    <doi:10.1177/2515245918771304>, and Gibbs and Candes (2021)
+    <doi:10.48550/arXiv.2106.00170>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: rstan (>= 2.26.0), stats, parallel,
+Suggests: bayesplot, bridgesampling, knitr, loo, posterior, readxl,
+        rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+URL: https://github.com/IsadoreNabi/HTDV
+BugReports: https://github.com/IsadoreNabi/HTDV/issues
+NeedsCompilation: no
+Packaged: 2026-04-29 15:05:39 UTC; ROG
+Author: Jose Mauricio Gomez Julian [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-2412-3150>)
+Maintainer: Jose Mauricio Gomez Julian <isadorenabi@pm.me>
+Repository: CRAN
+Date/Publication: 2026-05-02 09:50:14 UTC

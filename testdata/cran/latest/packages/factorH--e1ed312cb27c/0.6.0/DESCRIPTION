@@ -1,0 +1,34 @@
+Package: factorH
+Type: Package
+Title: Multifactor Nonparametric Rank-Based ANOVA with Post Hoc Tests
+Version: 0.6.0
+Authors@R: 
+    c(
+      person("Tomasz", "Rak", email = "tomasz.rak@upjp2.edu.pl", role = c("aut","cre")),
+      person("Szymon", "Wrzesniowski", email = "szymon.wrzesniowski@upjp2.edu.pl", role = "aut")
+    )
+Description: Multifactor nonparametric analysis of variance based on ranks.
+    Builds on the Kruskal-Wallis H test and its 2x2 Scheirer-Ray-Hare
+    extension to handle any factorial designs. Provides effect sizes,
+    Dunn-Bonferroni pairwise-comparison matrices, and simple-effects
+    analyses. Tailored for psychology and the social sciences, with
+    beginner-friendly R syntax and outputs that can be dropped into
+    journal reports. Includes helpers to export tab-separated results and
+    compact tables of descriptive statistics (to APA-style reports).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1)
+Imports: rcompanion, FSA, car, stats, utils
+Suggests: MASS, ARTool, testthat (>= 3.0.0), knitr, rmarkdown, haven
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Contact: tomasz.rak@upjp2.edu.pl
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-04-08 19:58:07 UTC; PC
+Author: Tomasz Rak [aut, cre],
+  Szymon Wrzesniowski [aut]
+Maintainer: Tomasz Rak <tomasz.rak@upjp2.edu.pl>
+Repository: CRAN
+Date/Publication: 2026-04-09 10:10:08 UTC

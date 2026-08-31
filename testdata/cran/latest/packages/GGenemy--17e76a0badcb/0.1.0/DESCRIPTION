@@ -1,0 +1,31 @@
+Package: GGenemy
+Title: Audit 'ggplot2' Visualizations for Accessibility and Best
+        Practices
+Version: 0.1.0
+Authors@R: 
+    person("Andy Man Yeung", "Tai", , "andy.tai@stat.ubc.ca", role = c("aut", "cre"))
+Description: Audits 'ggplot2' visualizations for accessibility issues, misleading 
+    practices, and readability problems. Checks for color accessibility concerns 
+    including colorblind-unfriendly palettes, misleading scale manipulations such 
+    as truncated axes and dual y-axes, text readability issues like small fonts 
+    and overlapping labels, and general accessibility barriers. Provides 
+    comprehensive audit reports with actionable suggestions for improvement.
+    Color vision deficiency simulation uses methods from the 'colorspace' 
+    package Zeileis et al. (2020) <doi:10.18637/jss.v096.i01>. Contrast 
+    calculations follow WCAG 2.1 guidelines (W3C 2018 
+    <https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: ggplot2, colorspace, grDevices
+URL: https://github.com/andytai7/GGenemy
+BugReports: https://github.com/andytai7/GGenemy/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-10-29 22:38:35 UTC; andytai
+Author: Andy Man Yeung Tai [aut, cre]
+Maintainer: Andy Man Yeung Tai <andy.tai@stat.ubc.ca>
+Repository: CRAN
+Date/Publication: 2025-11-03 18:50:10 UTC

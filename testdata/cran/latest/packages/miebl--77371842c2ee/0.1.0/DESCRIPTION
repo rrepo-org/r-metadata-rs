@@ -1,0 +1,17 @@
+Package: miebl
+Title: Performance Criteria Modeler for Discrete Trial Training
+Version: 0.1.0
+Authors@R: 
+    person("Mark", "Ramos", role = c("aut", "cre","cph"), email = "mlr6219@psu.edu")
+Description: Provides a tool for computing probabilities and other quantities that are relevant in selecting performance criteria for discrete trial training. The main function, miebl(), computes Bayesian and frequentist probabilities and bounds for each of n possible performance criterion choices when attempting to determine a student's true mastery level by counting their number of successful attempts at displaying learning among n trials. The reporting function miebl_re() takes output from miebl() and prepares it into a brief report for a specific criterion. miebl_cp() combines 2 to 5 distributions of true mastery level given performance criterion in one plot for comparison. Ramos (2025) <doi:10.1007/s40617-025-01058-9>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 2.10)
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-04-25 02:51:16 UTC; markr
+Author: Mark Ramos [aut, cre, cph]
+Imports: graphics, stats
+Maintainer: Mark Ramos <mlr6219@psu.edu>
+Repository: CRAN
+Date/Publication: 2025-04-25 14:50:02 UTC

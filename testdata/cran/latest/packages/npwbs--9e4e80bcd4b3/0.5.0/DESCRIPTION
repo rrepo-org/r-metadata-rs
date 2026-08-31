@@ -1,0 +1,29 @@
+Package: npwbs
+Type: Package
+Title: Nonparametric Multiple Change Point Detection Using Wild Binary
+        Segmentation
+Version: 0.5.0
+Authors@R: person(given = c("Gordon", "J."),
+                  family = "Ross",
+                  role = c("aut", "cre"),
+                  email = "gordon.ross@ed.ac.uk")
+Author: Gordon J. Ross [aut, cre]
+Maintainer: Gordon J. Ross <gordon.ross@ed.ac.uk>
+Description: Implements nonparametric multiple change-point detection for
+    univariate sequences using Wild Binary Segmentation, as described in
+    Ross (2026) "Nonparametric Detection of Multiple Location-Scale Change
+    Points via Wild Binary Segmentation"
+    <doi:10.48550/arXiv.2107.01742>. The package provides Mann--Whitney,
+    Mood, Lepage, Cramér--von Mises, modified Baumgartner, and standardised
+    Zhang Z_C rank-based statistics, together with method-specific thresholds for controlling
+    the probability of incorrectly detecting a change point in a homogeneous
+    sequence.
+Depends: R (>= 4.0.0)
+Imports: digest, Rcpp
+LinkingTo: Rcpp
+License: GPL-3
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2026-08-01 01:57:53 UTC; rosss
+Repository: CRAN
+Date/Publication: 2026-08-04 08:50:07 UTC

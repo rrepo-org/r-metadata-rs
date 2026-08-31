@@ -1,0 +1,30 @@
+Package: survregVB
+Title: Variational Bayesian Analysis of Survival Data
+Version: 0.0.2
+Authors@R: 
+    c(
+        person("Alison", "Zhang", , "alisonxzhang@gmail.com", role = c("aut", "cre")),
+        person("Chengqian", "Xian", , "cxian3@uwo.ca", role = c("aut"))
+    )
+Description: Implements Bayesian inference in accelerated failure time (AFT) models for 
+    right-censored survival times assuming a log-logistic distribution. Details of the 
+    variational Bayes algorithms, with and without shared frailty, are described in 
+    Xian et al. (2024) <doi:10.1007/s11222-023-10365-6> and 
+    Xian et al. (2024) <doi:10.48550/arXiv.2408.00177>, respectively.
+URL: https://github.com/chengqianxian/survregVB
+License: MIT + file LICENSE | LGPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: stats, bayestestR, invgamma
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), survival
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-06-22 20:06:34 UTC; alisonzhang
+Author: Alison Zhang [aut, cre],
+  Chengqian Xian [aut]
+Maintainer: Alison Zhang <alisonxzhang@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-22 20:30:02 UTC

@@ -1,0 +1,28 @@
+Package: psreplicate
+Type: Package
+Title: Access the Political Science Replication Index from R
+Version: 0.1.1
+Authors@R: person(given = "Joseph", family = "Akowuah",
+    email = "siawjoe@gmail.com", role = c("aut", "cre", "cph"))
+Description: Search and browse the Political Science Replication Index
+    (<https://jsakowuah.github.io/polisci-replication/>), a searchable,
+    tagged index of replication packages crawled monthly from flagship
+    political science journals' Harvard Dataverse collections, without
+    leaving R. Provides functions to download and cache the index locally
+    and to search and filter it by journal, method, data type, and year.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: jsonlite, tibble, tools, utils
+Suggests: dataverse, knitr, rmarkdown, testthat (>= 3.1.4)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/jsakowuah/psreplicate,
+        https://jsakowuah.github.io/polisci-replication/
+BugReports: https://github.com/jsakowuah/psreplicate/issues
+NeedsCompilation: no
+Packaged: 2026-08-25 20:52:09 UTC; josep
+Author: Joseph Akowuah [aut, cre, cph]
+Maintainer: Joseph Akowuah <siawjoe@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-26 00:00:02 UTC

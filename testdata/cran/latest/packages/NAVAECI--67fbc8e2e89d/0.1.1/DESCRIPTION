@@ -1,0 +1,32 @@
+Package: NAVAECI
+Type: Package
+Title: Non-Asymptotically Valid and Asymptotically Exact (NAVAE)
+        Confidence Intervals
+Version: 0.1.1
+Authors@R: c(
+  person("Alexis", "Derumigny",, email = "a.f.f.derumigny@tudelft.nl", role = c("aut", "cre"),
+         comment = c(ORCID = "0000-0002-6163-8097")),
+  person("Lucas", "Girard",, email = "lucas.girard@ensae.fr", role = "aut"),
+  person("Yannick", "Guyonvarch",, email = "yannick.guyonvarch@inrae.fr", role = "aut")
+  )
+Description: Implements the non-asymptotically valid and asymptotically exact
+  confidence intervals in two cases:
+  estimation of the mean, and estimation of (a linear combination of)
+  the coefficients in a linear regression model,
+  following  (Derumigny, Girard and Guyonvarch, 2025)
+  <doi:10.48550/arXiv.2507.16776>.
+License: GPL-3
+Encoding: UTF-8
+Imports: BoundEdgeworth, expm
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-16 12:43:11 UTC; aderumigny
+Author: Alexis Derumigny [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6163-8097>),
+  Lucas Girard [aut],
+  Yannick Guyonvarch [aut]
+Maintainer: Alexis Derumigny <a.f.f.derumigny@tudelft.nl>
+Repository: CRAN
+Date/Publication: 2026-01-21 20:00:13 UTC

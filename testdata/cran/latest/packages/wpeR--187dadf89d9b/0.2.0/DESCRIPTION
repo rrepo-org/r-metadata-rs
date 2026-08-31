@@ -1,0 +1,40 @@
+Type: Package
+Package: wpeR
+Title: Streamlined Analysis of Wild Pedigree Data
+Version: 0.2.0
+Authors@R: c(
+    person("Tomaz", "Skrbinsek", role = "aut"),
+    person("Gregor", "Simcic", , "grega0simcic@gmail.com", role = c("aut", "cre"))
+  )
+Description: Analyzing pedigree data of wild
+    populations. While primarily designed to process outputs from the
+    'COLONY' (Jones & Wang (2010) <doi:10.1111/j.1755-0998.2009.02787.x>)
+    pedigree reconstruction software, it can also accommodate
+    data from other sources. By linking reconstructed pedigrees with
+    genetic sample metadata, 'wpeR' produces spatial and temporal
+    visualizations as well as tabular summaries that support
+    interpretation of family structures and dynamics. The main goal of the
+    package is to provide a solution for the analysis of
+    complex wild pedigree data and to help the user to gain insights
+    into genetic relationships within wild animal populations.
+License: GPL (>= 3)
+URL: https://gr3602.github.io/wpeR/
+BugReports: https://github.com/GR3602/wpeR/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, sf, stats, utils
+Suggests: basemaps, ggforce, ggrepel, gridExtra, kinship2, knitr,
+        leaflet, leaflet.providers, rmarkdown, spelling, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-11 13:44:21 UTC; gregor
+Author: Tomaz Skrbinsek [aut],
+  Gregor Simcic [aut, cre]
+Maintainer: Gregor Simcic <grega0simcic@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-11 14:20:02 UTC

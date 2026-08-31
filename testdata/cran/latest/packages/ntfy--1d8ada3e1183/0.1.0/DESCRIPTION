@@ -1,0 +1,44 @@
+Package: ntfy
+Title: Lightweight Wrapper to the 'ntfy.sh' Service
+Version: 0.1.0
+Authors@R: 
+    c(person("Jonathan", "Carroll", 
+             email = "rpkg@jcarroll.com.au", 
+             role = c("aut", "cre"), 
+             comment = c(ORCID = "0000-0002-1404-5264")),
+      person(given = "Andrew",
+             family = "Heiss",
+             role = "ctb",
+             email = "andrew@andrewheiss.com",
+             comment = c(ORCID = "0000-0002-3948-3914")),
+      person(given = "Hadley",
+             family = "Wickham",
+             role = "ctb",
+             email = "h.wickham@gmail.com",
+             comment = c(ORCID = "0000-0003-4757-117X"))
+    )
+Maintainer: Jonathan Carroll <rpkg@jcarroll.com.au>
+Description: The 'ntfy' (pronounce: notify) service is a simple HTTP-based pub-sub
+    notification service. It allows you to send notifications to your phone or 
+    desktop via scripts from any computer, entirely without signup, cost or 
+    setup. It's also open source if you want to run your own. 
+    Visit <https://ntfy.sh> for more details.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: httr2, jsonlite
+URL: https://github.com/jonocarroll/ntfy,
+        https://jonocarroll.github.io/ntfy/
+BugReports: https://github.com/jonocarroll/ntfy/issues
+Depends: R (>= 4.1)
+LazyData: true
+Suggests: ggplot2, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-25 12:04:14 UTC; jono
+Author: Jonathan Carroll [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1404-5264>),
+  Andrew Heiss [ctb] (ORCID: <https://orcid.org/0000-0002-3948-3914>),
+  Hadley Wickham [ctb] (ORCID: <https://orcid.org/0000-0003-4757-117X>)
+Repository: CRAN
+Date/Publication: 2025-10-26 18:20:02 UTC

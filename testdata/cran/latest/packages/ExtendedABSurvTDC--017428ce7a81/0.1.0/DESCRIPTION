@@ -1,0 +1,24 @@
+Package: ExtendedABSurvTDC
+Type: Package
+Title: Survival Analysis using Indicators under Time Dependent
+        Covariates
+Version: 0.1.0
+Authors@R: c(person("Dr. Himadri", "Ghosh", role = c("aut", "cre"), email = "hghosh@gmail.com"),
+    person("Mr. Saikath", "Das", role = "aut", email = "saikathdas007@gmail.com"),
+    person("Dr. Md", "Yeasin", role = "aut", email = "yeasin.iasri@gmail.com"),
+    person("Dr. Debopam", "Rakshit", role = "aut", email = "debopam.rakshit@icar.org.in"))
+Author: Dr. Himadri Ghosh [aut, cre],
+  Mr. Saikath Das [aut],
+  Dr. Md Yeasin [aut],
+  Dr. Debopam Rakshit [aut]
+Maintainer: Dr. Himadri Ghosh <hghosh@gmail.com>
+Description: Survival analysis is employed to model time-to-event data. This package examines the relationship between survival and one or more predictors, termed as covariates, which can include both treatment variables (e.g., season of birth, represented by indicator functions) and continuous variables. To this end, the Cox-proportional hazard (Cox-PH) model, introduced by Cox in 1972, is a widely applicable and commonly used method for survival analysis. This package enables the estimation of the effect of randomization for the treatment variable to account for potential confounders, providing adjustment when estimating the association with exposure. It accommodates both fixed and time-dependent covariates and computes survival probabilities for lactation periods in dairy animals. The package is built upon the algorithm developed by Klein and Moeschberger (2003) <DOI:10.1007/b97377>.
+License: GPL-3
+Encoding: UTF-8
+Imports: stats, survival, readxl
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2025-09-24 13:21:56 UTC; YEASIN
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-10-01 07:10:18 UTC

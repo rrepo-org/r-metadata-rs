@@ -1,0 +1,26 @@
+Package: PnT
+Type: Package
+Title: Peak Finder
+Version: 0.1.0
+Authors@R: person(given = "Peter",
+                  family = "Pitfield",
+                  role = c("aut", "cre"),
+                  email = "pitfieldp@gmail.com")
+Description: This program contains a function to find the peaks and troughs of 
+    a data set. It filters the set of peaks to remove noise based on the expected
+    height and expected slope of a peak. Peaks that are too short (caused by random 
+    noise), or too shallow (part of the background data) are filtered out.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: dplyr, magrittr, rlang
+RoxygenNote: 7.2.1
+Suggests: knitr, plotly, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-09-09 21:05:33 UTC; peterpitfield
+Author: Peter Pitfield [aut, cre]
+Maintainer: Peter Pitfield <pitfieldp@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-14 16:30:07 UTC

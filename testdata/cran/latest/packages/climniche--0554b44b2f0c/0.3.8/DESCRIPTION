@@ -1,0 +1,32 @@
+Package: climniche
+Type: Package
+Title: Climate Exposure Relative to a Species' Climatic Niche
+Version: 0.3.8
+Date: 2026-08-28
+Authors@R: c(
+    person("Bohao", "He", role = c("aut", "cre"), email = "bohao.he@polimi.it")
+    )
+Description: Quantifies projected climatic change relative to the climatic
+    niche represented by a species' current distribution. A weighted current
+    reference defines the niche centre and empirical radial boundary. Present
+    and projected conditions at each location give local climatic displacement,
+    signed change in niche distance, a derived non-radial reconfiguration term,
+    and exceedance beyond the niche boundary. Occurrence records, range maps,
+    and binary or continuous species distribution model outputs can define
+    reference weights. Matrix and spatial workflows return location-level
+    values, weighted summaries, maps and climatic-variable contributions.
+License: MIT + file LICENSE
+URL: https://github.com/Bohao0813/climniche,
+        https://bohao0813.github.io/climniche/
+BugReports: https://github.com/Bohao0813/climniche/issues
+Encoding: UTF-8
+Imports: grid, methods
+Suggests: ggplot2, knitr, patchwork, raster, rmarkdown, sf, terra
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-28 06:49:18 UTC; Bohao He
+Author: Bohao He [aut, cre]
+Maintainer: Bohao He <bohao.he@polimi.it>
+Repository: CRAN
+Date/Publication: 2026-08-28 08:40:02 UTC

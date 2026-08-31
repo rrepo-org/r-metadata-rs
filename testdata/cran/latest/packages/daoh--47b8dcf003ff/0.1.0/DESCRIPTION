@@ -1,0 +1,27 @@
+Package: daoh
+Type: Package
+Title: Days Alive and Out of Hospital (DAOH) Calculation
+Version: 0.1.0
+Authors@R: c(
+    person("David", "Cumin", email = "d.cumin@auckland.ac.nz", role = c("aut", "cre"))
+  )
+Description: Calculates Days Alive and Out of Hospital (DAOH) from administrative
+    admission/discharge/mortality data using three algorithms (nights, days, exact)
+    and three death-handling approaches (midday, midnight, zero).
+    Includes tools for comparing methods (Bland-Altman, ICC, reclassification), and plotting.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: ggplot2 (>= 3.4.0), scales
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, irr
+LazyData: true
+VignetteBuilder: knitr
+URL: https://github.com/davecumin/daoh
+BugReports: https://github.com/davecumin/daoh/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-12 19:44:10 UTC; dcum007
+Author: David Cumin [aut, cre]
+Maintainer: David Cumin <d.cumin@auckland.ac.nz>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-06-19 12:20:24 UTC

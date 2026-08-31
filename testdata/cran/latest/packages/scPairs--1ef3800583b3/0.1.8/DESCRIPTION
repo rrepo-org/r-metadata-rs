@@ -1,0 +1,30 @@
+Package: scPairs
+Version: 0.1.8
+Title: Identifying Synergistic Gene Pairs in Single-Cell and Spatial
+        Transcriptomics
+Description: Discovers synergistic gene pairs in single-cell RNA-seq and spatial transcriptomics data. Unlike conventional pairwise co-expression analyses that rely on a single correlation metric, scPairs integrates 14 complementary metrics across five orthogonal evidence layers to compute a composite synergy score with optional permutation-based significance testing. The five evidence layers span cell-level co-expression (Pearson, Spearman, biweight midcorrelation, mutual information, ratio consistency), neighbourhood-aware smoothing (KNN-smoothed correlation, neighbourhood co-expression, cluster pseudo-bulk, cross-cell-type, neighbourhood synergy), prior biological knowledge (GO/KEGG co-annotation Jaccard, pathway bridge score), trans-cellular interaction, and spatial co-variation (Lee's L, co-location quotient). This multi-scale design enables researchers to move beyond simple co-expression towards a comprehensive characterisation of cooperative gene regulation at transcriptomic and spatial resolution. For more information, see the package documentation at <https://github.com/zhaoqing-wang/scPairs>.
+Authors@R: 
+    person(given = "Zhaoqing", family = "Wang",
+           email = "zhaoqingwang@mail.sdu.edu.cn",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8348-7245"))
+License: MIT + file LICENSE
+URL: https://github.com/zhaoqing-wang/scPairs
+BugReports: https://github.com/zhaoqing-wang/scPairs/issues
+Depends: R (>= 4.1.0)
+Imports: data.table, ggplot2, ggraph, ggrepel, igraph, methods, Matrix,
+        patchwork, Seurat (>= 4.0), SeuratObject, stats, tidygraph,
+        tidyr
+Suggests: AnnotationDbi, org.Mm.eg.db, org.Hs.eg.db, crayon, ggExtra,
+        RANN, testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Date: 2026-02-28
+NeedsCompilation: no
+Packaged: 2026-02-28 10:16:08 UTC; Runaw
+Author: Zhaoqing Wang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8348-7245>)
+Maintainer: Zhaoqing Wang <zhaoqingwang@mail.sdu.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-03-05 10:30:02 UTC

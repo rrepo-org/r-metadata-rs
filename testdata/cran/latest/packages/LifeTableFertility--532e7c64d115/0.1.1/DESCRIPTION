@@ -1,0 +1,21 @@
+Package: LifeTableFertility
+Type: Package
+Title: 'shiny' Application for Life Table and Fertility Analysis
+Version: 0.1.1
+Authors@R: c(
+  person("Victor Manuel", "Almaraz Valle", email = "almarazkrae@gmail.com", role = c("aut", "cre"),
+         comment = c(ORCID = "0000-0002-3673-8002")))
+Description: Provides a 'shiny' application to construct age-specific life tables and fertility schedules from individual female daily egg records. The application computes age-specific survival and fertility functions and estimates key demographic parameters including the net reproductive rate, mean generation time, intrinsic rate of increase, finite rate of increase and doubling time. Optional confidence intervals can be obtained using percentile bootstrap or delete-1 jackknife resampling at the female level. Methods and definitions follow Stevens (2009) <doi:10.1007/978-0-387-89882-7> and Rossini et al. (2024) <doi:10.1371/journal.pone.0299598>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: shiny, stats, utils, DT, readxl
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-01 07:44:36 UTC; rosy_
+Author: Victor Manuel Almaraz Valle [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3673-8002>)
+Maintainer: Victor Manuel Almaraz Valle <almarazkrae@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-02 04:30:02 UTC

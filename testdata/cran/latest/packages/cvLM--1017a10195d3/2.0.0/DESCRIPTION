@@ -1,0 +1,20 @@
+Package: cvLM
+Type: Package
+Title: Cross-Validation for Linear and Ridge Regression Models
+Version: 2.0.0
+Date: 2026-02-01
+Authors@R: c(person("Philip", "Nye", email = "phipnye@proton.me", role = c("aut", "cre")))
+Description: Implements cross-validation methods for linear and ridge regression models. The package provides grid-based selection of the ridge penalty parameter using Singular Value Decomposition (SVD) and supports K-fold cross-validation, Leave-One-Out Cross-Validation (LOOCV), and Generalized Cross-Validation (GCV). Computations are implemented in C++ via 'RcppArmadillo' with optional parallelization using 'RcppParallel'. The methods are suitable for high-dimensional settings where the number of predictors exceeds the number of observations.
+License: MIT + file LICENSE
+Imports: stats, Rcpp (>= 1.0.13), RcppParallel (>= 5.1.8)
+Suggests: boot, RhpcBLASctl, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+SystemRequirements: GNU make, C++17
+URL: https://github.com/phipnye/CV-LM
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-02-02 05:39:57 UTC; philip
+Author: Philip Nye [aut, cre]
+Maintainer: Philip Nye <phipnye@proton.me>
+Repository: CRAN
+Date/Publication: 2026-02-03 09:20:23 UTC

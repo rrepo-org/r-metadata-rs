@@ -1,0 +1,32 @@
+Package: BayesPPR
+Title: Bayesian Projection Pursuit Regression
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Gavin", 
+           family = "Collins", 
+           role = c("aut", "ctb"), 
+           email = "gqcolli@sandia.gov"),
+    person(given = "J. Derek",
+           family = "Tucker",
+           role = c("ctb", "cre"),
+           email = "jdtuck@sandia.gov",
+           comment = c(ORCID = "0000-0001-8844-2169")))
+Description: Bayesian fitting of projection pursuit regression model. 
+  Built to handle continuous and categorical inputs and
+  scalar output (Collins et al., 2023 <DOI:10.1007/s11222-023-10334-z>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: methods
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+URL: https://github.com/gqcollins/BayesPPR
+BugReports: https://github.com/gqcollins/BayesPPR/issues
+NeedsCompilation: no
+Packaged: 2026-05-12 21:35:37 UTC; jdtuck
+Author: Gavin Collins [aut, ctb],
+  J. Derek Tucker [ctb, cre] (ORCID:
+    <https://orcid.org/0000-0001-8844-2169>)
+Maintainer: J. Derek Tucker <jdtuck@sandia.gov>
+Repository: CRAN
+Date/Publication: 2026-05-18 18:10:21 UTC

@@ -1,0 +1,27 @@
+Package: llmjoin
+Type: Package
+Title: LLM-Powered Fuzzy Join
+Version: 0.3.0
+Authors@R: c(
+    person(
+      "Yifan", "LIU",
+      email = "yifan.liu@smail.nju.edu.cn",
+      role = c("aut", "cre")
+    )
+  )
+Description: Resolves ambiguous links between data.frames using large language models (LLMs). Supports matching across spelling variations, translations, and differing levels of precision.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Config/testthat/edition: 3
+Imports: httr, jsonlite, config, readr
+Suggests: testthat (>= 3.0.0)
+Depends: R (>= 4.2.0)
+URL: https://github.com/evanliu3594/llmjoin
+BugReports: https://github.com/evanliu3594/llmjoin/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-08 18:22:33 UTC; Evan
+Author: Yifan LIU [aut, cre]
+Maintainer: Yifan LIU <yifan.liu@smail.nju.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-06-16 19:50:02 UTC

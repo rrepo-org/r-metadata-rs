@@ -1,0 +1,22 @@
+Package: pubchem.bio
+Title: Biologically Informed Metabolomic Libraries from 'PubChem'
+Version: 1.0.5
+Authors@R: 
+    person("Corey", "Broeckling", , "cbroeckl@colostate.edu", role = c("aut", "cre"))
+Description: All 'PubChem' compounds are downloaded to a local computer, but for each compound, only partial records are used.  The data are organized into small files referenced by 'PubChem' CID.  This package also contains functions to parse the biologically relevant compounds from all 'PubChem' compounds, using biological database sources, pathway presence, and taxonomic relationships. Taxonomy is used to generate a lowest common ancestor taxonomy ID (NCBI) for each biological metabolite, which then enables creation of taxonomically specific metabolome databases for any taxon.
+License: GPL-3
+Encoding: UTF-8
+Imports: foreach, doParallel, R.utils, data.table, dplyr, rcdk,
+        stringr, curl, MetaboCoreUtils, CHNOSZ, CompoundDb, RSQLite,
+        magrittr
+Depends: R (>= 3.5.0)
+LazyData: true
+Suggests: utils, knitr, rmarkdown, formatR
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-21 03:09:38 UTC; cbroeckl
+Author: Corey Broeckling [aut, cre]
+Maintainer: Corey Broeckling <cbroeckl@colostate.edu>
+Repository: CRAN
+Date/Publication: 2026-01-21 03:40:02 UTC

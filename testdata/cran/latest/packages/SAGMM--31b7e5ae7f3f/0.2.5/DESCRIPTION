@@ -1,0 +1,27 @@
+Package: SAGMM
+Type: Package
+Title: Clustering via Stochastic Approximation and Gaussian Mixture
+        Models
+Version: 0.2.5
+Date: 2025-09-20
+Authors@R: c(person(given = c("Andrew", "Thomas"),
+                      family = "Jones",
+                      role = c("aut", "cre"),
+                      email = "andrewthomasjones@gmail.com"),
+               person(given = c("Hien", "Duy"),
+                      family = "Nguyen",
+                      role = "aut"))
+Description: Computes clustering by fitting Gaussian mixture models (GMM) via stochastic approximation following the methods of Nguyen and Jones (2018) <doi:10.1201/9780429446177>. It also provides some test data generation and plotting functionality to assist with this process.
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp (>= 0.12.13), MixSim, mclust, stats, lowmemtkmeans
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.3
+Suggests: testthat, ggplot2
+NeedsCompilation: yes
+Packaged: 2025-09-20 08:54:11 UTC; uqajon14
+Author: Andrew Thomas Jones [aut, cre],
+  Hien Duy Nguyen [aut]
+Maintainer: Andrew Thomas Jones <andrewthomasjones@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-20 09:10:08 UTC

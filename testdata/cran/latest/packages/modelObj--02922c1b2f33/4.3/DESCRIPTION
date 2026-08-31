@@ -1,0 +1,26 @@
+Package: modelObj
+Type: Package
+Title: A Model Object Framework for Regression Analysis
+Version: 4.3
+Date: 2025-05-03
+Author: Shannon T. Holloway [aut, cre]
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Authors@R: person(given = c("Shannon", "T."),
+                      family = "Holloway",
+                      role = c("aut", "cre"),
+                      email = "shannon.t.holloway@gmail.com")
+Description: A utility library to facilitate the generalization of statistical methods built on a regression framework. Package developers can use 'modelObj' methods to initiate a regression analysis without concern for the details of the regression model and the method to be used to obtain parameter estimates. The specifics of the regression step are left to the user to define when calling the function. The user of a function developed within the 'modelObj' framework creates as input a 'modelObj' that contains the model and the R methods to be used to obtain parameter estimates and to obtain predictions.  In this way, a user can easily go from linear to non-linear models within the same package.  
+Depends: methods
+Suggests: stats, graphics, knitr, rmarkdown
+License: GPL-2
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: no
+RoxygenNote: 7.3.2
+Collate: 'methodObj.R' 'methodObjPredict.R' 'methodObjSolver.R'
+        'methodObjSolverFormula.R' 'modelObj.R' 'modelObjFormula.R'
+        'methodObjSolverXY.R' 'modelObjXY.R' 'buildModelObj.R'
+        'modelObjFit.R' 'warnMsg.R'
+Packaged: 2025-05-03 21:13:26 UTC; 19194
+Repository: CRAN
+Date/Publication: 2025-05-03 21:40:02 UTC

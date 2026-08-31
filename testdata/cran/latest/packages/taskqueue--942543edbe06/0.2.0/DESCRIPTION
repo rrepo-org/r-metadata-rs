@@ -1,0 +1,32 @@
+Package: taskqueue
+Type: Package
+Title: Task Queue for Parallel Computing Based on PostgreSQL
+Version: 0.2.0
+Authors@R: person("Bangyou", "Zheng", 
+               email = "bangyou.zheng@csiro.au", 
+               role = c("aut", "cre"))
+Description: Implements a task queue system for asynchronous parallel computing 
+    using 'PostgreSQL' <https://www.postgresql.org/> as a backend. Designed for 
+    embarrassingly parallel problems where tasks do not communicate with each other.
+    Dynamically distributes tasks to workers, handles uneven load balancing, and 
+    allows new workers to join at any time. Particularly useful for running large 
+    numbers of independent tasks on high-performance computing (HPC) clusters with 
+    'SLURM' <https://slurm.schedmd.com/> job schedulers.
+URL: https://taskqueue.bangyou.me/,
+        https://github.com/byzheng/taskqueue
+BugReports: https://github.com/byzheng/taskqueue/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Imports: settings, stats, stringr, RPostgres, ggplot2, whisker, rlang,
+        shiny, DBI, ssh
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-11-27 23:59:11 UTC; zhe00a
+Author: Bangyou Zheng [aut, cre]
+Maintainer: Bangyou Zheng <bangyou.zheng@csiro.au>
+Repository: CRAN
+Date/Publication: 2025-12-03 20:30:02 UTC

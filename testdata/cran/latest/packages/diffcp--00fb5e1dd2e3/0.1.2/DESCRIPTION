@@ -1,0 +1,41 @@
+Package: diffcp
+Type: Package
+Title: Differentiating Through Cone Programs
+Version: 0.1.2
+Authors@R: c(
+    person("Balasubramanian", "Narasimhan",
+           role = c("aut", "cre"),
+           email = "naras@stanford.edu"),
+    person("Akshay", "Agrawal", role = "aut"),
+    person("Shane", "Barratt",  role = "aut"),
+    person("Stephen", "Boyd",   role = "aut"),
+    person("Enzo", "Busseti",   role = "aut"),
+    person("Walaa", "Moursi",   role = "aut"))
+Description: A port of the 'python' 'diffcp' package. Computes the
+    derivative of the optimal solution map of a convex cone program,
+    treating the program as an implicit function of its data
+    (constraint matrix, offset, objective coefficients, and optionally
+    a quadratic), mirroring Agrawal et al. (2019)
+    <doi:10.48550/arXiv.1904.09043>.
+URL: https://bnaras.github.io/diffcp/
+BugReports: https://github.com/bnaras/diffcp/issues
+License: Apache License (>= 2)
+Encoding: UTF-8
+Imports: cli, clarabel, Matrix, methods, Rcpp
+LinkingTo: Rcpp, RcppEigen
+Suggests: knitr, pkgdown, rmarkdown, scs, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+SystemRequirements: C++17
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-08-22 20:42:06 UTC; naras
+Author: Balasubramanian Narasimhan [aut, cre],
+  Akshay Agrawal [aut],
+  Shane Barratt [aut],
+  Stephen Boyd [aut],
+  Enzo Busseti [aut],
+  Walaa Moursi [aut]
+Maintainer: Balasubramanian Narasimhan <naras@stanford.edu>
+Repository: CRAN
+Date/Publication: 2026-08-22 23:20:24 UTC

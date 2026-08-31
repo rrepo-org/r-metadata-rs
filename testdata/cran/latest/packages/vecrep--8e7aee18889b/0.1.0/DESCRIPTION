@@ -1,0 +1,41 @@
+Package: vecrep
+Title: Compact Vector Replication
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Mitchell",
+             family = "O'Hara-Wild",
+             email = "mail@mitchelloharawild.com",
+             role = c("aut", "cre", "cph"),
+             comment = c(ORCID = "0000-0001-6729-7695")),
+      person(given = "Gabriel",
+             family = "Becker",
+             role = "ctb",
+             comment = "For developing the example ALTREP package vectorwindow that was foundational to this package."))
+Description: Replicates vectors using ALTREP (Alternative Representations for R
+    Objects), avoiding unnecessary memory allocation. When a vector is repeated
+    many times, only a reference to the original data is stored rather than
+    copying the full expanded replicates into memory. The expanded data is only
+    materialised if it is modified, making repeated vectors cheap to create and
+    pass around. This is particularly useful when working with large repeated
+    sequences, such as replicated index vectors, simulation inputs, or repeated
+    reference values in data pipelines.
+Depends: R (>= 3.5)
+License: MIT + file LICENSE
+URL: https://pkg.mitchelloharawild.com/vecrep/,
+        https://github.com/mitchelloharawild/vecrep
+BugReports: https://github.com/mitchelloharawild/vecrep/issues
+Encoding: UTF-8
+Language: en-GB
+ByteCompile: yes
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-11 16:21:26 UTC; mitchell
+Author: Mitchell O'Hara-Wild [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-6729-7695>),
+  Gabriel Becker [ctb] (For developing the example ALTREP package
+    vectorwindow that was foundational to this package.)
+Maintainer: Mitchell O'Hara-Wild <mail@mitchelloharawild.com>
+Repository: CRAN
+Date/Publication: 2026-06-18 16:50:02 UTC

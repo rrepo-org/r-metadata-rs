@@ -1,0 +1,31 @@
+Package: Argentum
+Title: Access Argentine WFS and WMS Geospatial Web Services
+Version: 2.1.0
+Authors@R: 
+    person("Thomas", "Artopoulos", , "thomas.artopoulos@gmail.com",
+           role = c("aut", "cre"))
+Description: Discovers and reads geospatial layers published by Argentine
+    public organizations through the Open Geospatial Consortium standards
+    Web Feature Service (WFS) and Web Map Service (WMS). Provides a cached
+    catalogue of endpoints, capability parsing with version negotiation,
+    paginated vector downloads returned as 'sf' objects, and raster map
+    retrieval returned as 'terra' objects. For the underlying standards see
+    <https://www.ogc.org/standards/wfs/> and <https://www.ogc.org/standards/wms/>.
+License: MIT + file LICENSE
+URL: https://github.com/thomasartopoulos/argentum,
+        https://thomasartopoulos.github.io/argentum/
+BugReports: https://github.com/thomasartopoulos/argentum/issues
+Depends: R (>= 4.1)
+Imports: cli, httr2 (>= 1.0.0), rlang (>= 1.1.0), sf, terra, utils,
+        xml2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-08-20 03:04:19 UTC; tomia
+Author: Thomas Artopoulos [aut, cre]
+Maintainer: Thomas Artopoulos <thomas.artopoulos@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 23:12:20 UTC

@@ -1,0 +1,26 @@
+Package: NAPrior
+Title: Network Meta-Analytic Predictive Prior for Mid-Trial SoC Changes
+Version: 0.2.0
+Authors@R: 
+    person("Chunyi", "Zhang", , "czhang12@mdanderson.org", role = c("aut", "cre"))
+Description: Implements the Network meta-Analytic Predictive (NAP) prior framework to
+  accommodate changes in the standard of care (SoC) during ongoing randomized controlled
+  trials (RCTs). The method synthesizes pre- and post-change in-trial data by leveraging
+  external evidence, particularly head-to-head trials comparing the original and new
+  standards of care, to bridge the two evidence periods and enable principled borrowing.
+  The package provides utilities to construct NAP-based priors and perform Bayesian
+  inference for time-to-event endpoints using summarized trial evidence. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: stats, graphics, survival, R2jags, metafor, purrr, dplyr,
+        tibble
+Suggests: rjags, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-02-14 19:12:54 UTC; czhang12
+Author: Chunyi Zhang [aut, cre]
+Maintainer: Chunyi Zhang <czhang12@mdanderson.org>
+Repository: CRAN
+Date/Publication: 2026-02-14 19:30:02 UTC

@@ -1,0 +1,66 @@
+Package: osmnxr
+Title: Download, Model and Analyze 'OpenStreetMap' Street Networks
+Version: 0.1.1
+Authors@R: c(
+    person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+    person("Marcos", "Wasilew", email = "marcos.wasilew@gmail.com", role = "aut"),
+    person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+    person("Carlos", "Amorin", email = "carlos.agaf@ufpe.br", role = "aut"),
+    person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"),
+    person("StrategicProjects", role = c("cph", "fnd")),
+    person("The extendr authors", role = "cph",
+           comment = "Bundled Rust crates extendr-api, extendr-ffi, extendr-macros"),
+    person("David Tolnay", role = "cph",
+           comment = "Bundled Rust crates proc-macro2, quote, syn, paste, readonly, unicode-ident"),
+    person("Alex Crichton", role = "cph",
+           comment = "Bundled Rust crate proc-macro2"),
+    person("Marvin Loebel", role = "cph",
+           comment = "Bundled Rust crate lazy_static"),
+    person("Aleksey Kladov", role = "cph",
+           comment = "Bundled Rust crate once_cell"),
+    person("Unicode, Inc.", role = "cph",
+           comment = "Bundled Rust crate unicode-ident (Unicode-3.0 data tables)"))
+Description: A 'tidyverse'-friendly toolkit, inspired by the 'OSMnx' 'Python'
+    library, to download, model, simplify, analyze and visualize street networks
+    and other geospatial features from 'OpenStreetMap'. Build routable graphs
+    from a place name, address, point or bounding box; simplify topology;
+    compute shortest paths, isochrones and urban metrics (intersection density,
+    circuity, street-orientation entropy, centrality); and export to 'sf',
+    'sfnetworks' and 'MapLibre'. Heavy graph computation is performed by a
+    bundled 'Rust' core.
+Language: en-US
+License: MIT + file LICENSE
+URL: https://github.com/StrategicProjects/osmnxr,
+        https://strategicprojects.github.io/osmnxr/
+BugReports: https://github.com/StrategicProjects/osmnxr/issues
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+SystemRequirements: Cargo (Rust's package manager), rustc
+Depends: R (>= 4.2)
+Imports: cli, glue, httr2 (>= 1.0.0), purrr, rlang (>= 1.1.0), sf,
+        tibble
+Suggests: dodgr, ggplot2, jsonlite, knitr, rmarkdown, sfnetworks,
+        testthat (>= 3.0.0), tidygraph, units, xml2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/rextendr/version: 0.5.0
+NeedsCompilation: yes
+Packaged: 2026-06-28 17:57:25 UTC; leite
+Author: Andre Leite [aut, cre],
+  Marcos Wasilew [aut],
+  Hugo Vasconcelos [aut],
+  Carlos Amorin [aut],
+  Diogo Bezerra [aut],
+  StrategicProjects [cph, fnd],
+  The extendr authors [cph] (Bundled Rust crates extendr-api,
+    extendr-ffi, extendr-macros),
+  David Tolnay [cph] (Bundled Rust crates proc-macro2, quote, syn, paste,
+    readonly, unicode-ident),
+  Alex Crichton [cph] (Bundled Rust crate proc-macro2),
+  Marvin Loebel [cph] (Bundled Rust crate lazy_static),
+  Aleksey Kladov [cph] (Bundled Rust crate once_cell),
+  Unicode, Inc. [cph] (Bundled Rust crate unicode-ident (Unicode-3.0 data
+    tables))
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-07-05 20:30:02 UTC

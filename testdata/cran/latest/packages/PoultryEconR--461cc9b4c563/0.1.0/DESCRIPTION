@@ -1,0 +1,30 @@
+Package: PoultryEconR
+Type: Package
+Title: Poultry Economic Analysis Tools
+Version: 0.1.0
+Authors@R: c(
+    person("M. Petchi", "Praveen", email = "pravinmariappan7@gmail.com", role = c("aut", "cre")),
+    person("Niraj", "US", role = "aut"),
+    person("S. Vishnu", "Shankar", role = "aut"))
+Description: Provides tools for poultry production and economic analysis.
+    The package calculates feed conversion ratio (FCR), hen-day egg
+    production (HDEP), hen-housed egg production (HHEP), cost per egg,
+    profit per bird, mortality percentage, and an overall efficiency
+    score based on predefined performance benchmarks. The results can
+    optionally be exported to an Excel workbook and visualized using a
+    bar chart.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: writexl
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-30 15:36:20 UTC; JARVIS
+Author: M. Petchi Praveen [aut, cre],
+  Niraj US [aut],
+  S. Vishnu Shankar [aut]
+Maintainer: M. Petchi Praveen <pravinmariappan7@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 21:40:02 UTC

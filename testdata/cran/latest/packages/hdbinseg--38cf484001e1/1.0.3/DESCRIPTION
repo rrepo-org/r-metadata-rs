@@ -1,0 +1,24 @@
+Package: hdbinseg
+Type: Package
+Title: Change-Point Analysis of High-Dimensional Time Series via Binary
+        Segmentation
+Version: 1.0.3
+Date: 2025-09-09
+Authors@R: c(
+	person('Haeran', 'Cho', email = 'haeran.cho@bristol.ac.uk', role = c('aut', 'cre')),
+	person('Piotr', 'Fryzlewicz', email = 'p.fryzlewicz@lse.ac.uk', role = 'aut'))
+Description: Binary segmentation methods for detecting and estimating multiple change-points in the mean or second-order structure of high-dimensional time series as described in Cho and Fryzlewicz (2014) <doi:10.1111/rssb.12079> and Cho (2016) <doi:10.1214/16-EJS1155>.
+Depends: R (>= 4.5.0)
+License: GPL (>= 3)
+Suggests: RcppArmadillo
+Imports: Rcpp (>= 0.12.10), foreach, iterators, doParallel
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Author: Haeran Cho [aut, cre],
+  Piotr Fryzlewicz [aut]
+Maintainer: Haeran Cho <haeran.cho@bristol.ac.uk>
+Repository: CRAN
+Encoding: UTF-8
+Packaged: 2025-09-09 10:31:46 UTC; mahrc
+Date/Publication: 2025-09-09 12:50:06 UTC

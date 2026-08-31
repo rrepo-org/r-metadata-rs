@@ -1,0 +1,30 @@
+Package: quickSentiment
+Title: A Fast and Flexible Pipeline for Text Classification
+Version: 0.3.6
+Authors@R: 
+    person("Alabhya", "Dahal", email = "alabhya.dahal@gmail.com", role = c("aut", "cre"))
+Description: A high-level pipeline that simplifies text classification into three streamlined steps: 
+    preprocessing, model training, and standardized prediction. 
+    It unifies the interface for multiple algorithms (including 'glmnet', 'ranger', 
+    'xgboost', and 'naivebayes') and memory-efficient sparse matrix vectorization 
+    methods (Bag-of-Words, Term Frequency, TF-IDF, and Binary). Users can go from 
+    raw text to a fully evaluated sentiment model, complete with ROC-optimized 
+    thresholds, in just a few function calls. The resulting model artifact 
+    automatically aligns the vocabulary of new datasets during the prediction phase, 
+    safely appending predicted classes and probability matrices directly to the 
+    user's original dataframe to preserve metadata.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: doParallel, foreach, glmnet, magrittr, Matrix, methods,
+        naivebayes, quanteda, ranger, stopwords, stringr, textstem,
+        xgboost
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, spelling
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-08-28 21:11:53 UTC; meala
+Author: Alabhya Dahal [aut, cre]
+Maintainer: Alabhya Dahal <alabhya.dahal@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 21:30:09 UTC

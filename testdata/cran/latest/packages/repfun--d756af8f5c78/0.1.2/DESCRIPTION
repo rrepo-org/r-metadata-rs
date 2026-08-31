@@ -1,0 +1,33 @@
+Package: repfun
+Title: Create Tables, Listings and Figures using Functions Styled after
+        SAS™ Macros
+Version: 0.1.2
+Authors@R: 
+    c(person("Chris", "Rook", , "cr883296@gmail.com", role = c("aut", "cre")),
+      person("Yongwei", "Wang", , "yongwei.x.wang@viivhealthcare.com", role = c("aut")),
+      person("GlaxoSmithKline Research & Development Limited", role = c("cph", "fnd")))
+Description: Mimic the style of traditional reporting macros for clinical trials. The purpose is to generate tables, listings and figures that support clinical research. This package is well suited for firms or individuals who wish to incorporate R without changing their ways of working as it follows a traditional clinical research workflow. Invoke functions (instead of macros) to summarize data and produce formatted reports. This package differs from others in that it includes tools (wrappers) for both analyzing and reporting data.
+License: Apache License (== 2.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: arrow, data.table, glue, jsonlite, rlang, xportr, Hmisc,
+        r2rtf, haven, dplyr, tidyr, magrittr, stringr
+Depends: R (>= 3.5)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), rprojroot, DT,
+        kableExtra, admiral, tibble, lubridate, ggplot2 (>= 3.5.0),
+        devtools, spelling
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+URL: https://gsk-biostatistics.github.io/repfun/,
+        https://github.com/GSK-Biostatistics/repfun
+Language: en-US
+BugReports: https://github.com/GSK-Biostatistics/repfun/issues
+NeedsCompilation: no
+Packaged: 2026-01-21 14:14:56 UTC; cr715052
+Author: Chris Rook [aut, cre],
+  Yongwei Wang [aut],
+  GlaxoSmithKline Research & Development Limited [cph, fnd]
+Maintainer: Chris Rook <cr883296@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-26 16:40:02 UTC

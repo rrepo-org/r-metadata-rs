@@ -1,0 +1,82 @@
+Type: Package
+Package: geobr
+Title: Download Official Spatial Data Sets of Brazil
+Version: 2.0.1
+Authors@R: c(person(given="Rafael H. M.", family="Pereira", email="rafa.pereira.br@gmail.com", role=c("aut", "cre"), comment = c(ORCID = "0000-0003-2125-7465")),
+            person(given="Rogério Jerônimo", family="Barbosa", role=c("aut")),
+            person(given="Caio Nogueira", family="Goncalves", role=c("ctb")),
+            person(given="Cecilia do", family="Lago", role=c("ctb")),
+            person(given="Filipe", family="Cavalcanti", role=c("ctb")),
+            person(given="Arthur", family="Bazolli", role=c("ctb")),
+            person(given="Lucas", family="Gelape", role=c("ctb")),
+            person(given="Rafael", family="Lopes", role=c("ctb")),
+            person(given="Vinicius", family="Oike", role=c("ctb")),
+            person(given="Paulo Henrique Fernandes de", family="Araujo", role=c("ctb")),
+            person(given="Guilherme Duarte", family="Carvalho", role=c("ctb")),
+            person(given="Rodrigo Almeida de", family="Arruda", role=c("ctb")),
+            person(given="Igor", family="Nascimento", role="ctb"), 
+            person(given="Barbara Santiago Pedreira da ", family="Costa", role="ctb"), 
+            person(given="Welligtton Silva", family="Cavedo", role="ctb"),
+            person(given="Pedro R.", family="Andrade", role="ctb"),
+            person(given="Alan da", family="Silva", role="ctb"),
+	          person(given="Carlos Kauê Vieira", family="Braga", role="ctb"),   
+	          person(given="Carl", family="Schmertmann", role="ctb"),
+	          person(given="Alessandro", family="Samuel-Rosa", role="ctb"),
+	          person(given="Daniel", family="Ferreira", role="ctb"),
+	          person(given="Marcus", family="Saraiva", role="ctb"),
+	          person(given="Maken ", family="Rosa", role="ctb"),
+            person(given="Beatriz", family="Milz", , role = "ctb", comment = c(ORCID = "0000-0002-3064-4486")),
+            person("ITpS - Instituto Todos pela Saúde", role = "fnd"),
+            person("Ipea - Institue for Applied Economic Research", role = c("cph", "fnd"))
+            )
+URL: https://ipeagit.github.io/geobr/, https://github.com/ipeaGIT/geobr
+BugReports: https://github.com/ipeaGIT/geobr/issues
+Description: Easy access to official spatial data sets of Brazil. The package 
+             offers a wide range of spatial data sets available at various 
+             geographic scales and for various years with harmonized attributes, 
+             projection and fixed topology. All functions allow for seamless
+             integration sf, DuckDB and Arrow.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+Depends: R (>= 4.1.0)
+Imports: arrow (>= 20.0.0), checkmate, cli, curl (>= 5.0.0), dplyr (>=
+        0.8-3), DBI, duckdb, duckspatial(>= 1.1.0), fs, glue, httr2,
+        methods, nanoarrow, rlang, sf (>= 0.9-3), sfheaders, stringr,
+        utils
+Suggests: censobr (>= 0.3.2), covr, data.table, geoarrow (>= 0.4.2),
+        ggplot2 (>= 3.3.1), knitr, rmarkdown, scales, testthat
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-23 03:12:02 UTC; rafap
+Author: Rafael H. M. Pereira [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2125-7465>),
+  Rogério Jerônimo Barbosa [aut],
+  Caio Nogueira Goncalves [ctb],
+  Cecilia do Lago [ctb],
+  Filipe Cavalcanti [ctb],
+  Arthur Bazolli [ctb],
+  Lucas Gelape [ctb],
+  Rafael Lopes [ctb],
+  Vinicius Oike [ctb],
+  Paulo Henrique Fernandes de Araujo [ctb],
+  Guilherme Duarte Carvalho [ctb],
+  Rodrigo Almeida de Arruda [ctb],
+  Igor Nascimento [ctb],
+  Barbara Santiago Pedreira da Costa [ctb],
+  Welligtton Silva Cavedo [ctb],
+  Pedro R. Andrade [ctb],
+  Alan da Silva [ctb],
+  Carlos Kauê Vieira Braga [ctb],
+  Carl Schmertmann [ctb],
+  Alessandro Samuel-Rosa [ctb],
+  Daniel Ferreira [ctb],
+  Marcus Saraiva [ctb],
+  Maken Rosa [ctb],
+  Beatriz Milz [ctb] (ORCID: <https://orcid.org/0000-0002-3064-4486>),
+  ITpS - Instituto Todos pela Saúde [fnd],
+  Ipea - Institue for Applied Economic Research [cph, fnd]
+Maintainer: Rafael H. M. Pereira <rafa.pereira.br@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-23 10:00:29 UTC

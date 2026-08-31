@@ -1,0 +1,45 @@
+Package: highdir
+Title: Unified Data Visualization Framework for Dynamic and Static
+        Graphics
+Version: 0.6.0
+Authors@R: 
+  person(
+    given = "Yusman",
+    family = "Kamaleri",
+    email = "ybkamaleri@gmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0001-5014-3665")
+  )
+Description: 
+  Provides a unified API for creating data visualizations across
+  dynamic and static rendering modes. Visualizations are defined
+  once using a specification object and can be rendered with
+  'highcharter', 'ggplot2', or other supported packages without modifying
+  user code. The package supports declarative and layered workflows,
+  reusable themes and colour palettes, optional 'JavaScript'
+  enhancements, export tools, and interactive exploration through
+  'shiny' applications.
+URL: https://folkehelsestats.github.io/highdir/,
+        https://github.com/folkehelsestats/highdir
+BugReports: https://github.com/folkehelsestats/highdir/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: highcharter (>= 0.9.4), ggplot2 (>= 3.4.0), htmlwidgets (>=
+        1.6.0), jsonlite (>= 1.8.0), rlang (>= 1.1.0), viridis (>=
+        0.6.0), shiny (>= 1.7.0), tools, utils, stats, scales (>=
+        1.4.0), lifecycle (>= 1.0.5)
+Suggests: sf (>= 1.0.0), maps (>= 3.4.0), webshot2, bslib (>= 0.7.0),
+        testthat (>= 3.0.0), withr (>= 2.5.0), data.table, knitr,
+        eulerr, ggVennDiagram, rmarkdown, tibble
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-31 13:41:04 UTC; ykama
+Author: Yusman Kamaleri [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5014-3665>)
+Maintainer: Yusman Kamaleri <ybkamaleri@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-31 15:20:14 UTC

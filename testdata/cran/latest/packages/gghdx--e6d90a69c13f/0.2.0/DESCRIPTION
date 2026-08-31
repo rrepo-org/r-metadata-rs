@@ -1,0 +1,41 @@
+Package: gghdx
+Title: HDX Theme, Scales, and Other Conveniences for 'ggplot2'
+Version: 0.2.0
+Authors@R: c(
+    person(
+      given = "Giulia",
+      family = "Martini",
+      email = "giulia.martini@un.org",
+      role = c("aut", "cre")
+    ),
+    person(
+      given = "Seth",
+      family = "Caldwell",
+      email = "caldwellst@gmail.com",
+      role = c("aut", "cph")
+    )
+    )
+Description: A Humanitarian Data Exchange (HDX) theme, color palettes, and
+    scales for 'ggplot2' to allow users to easily follow the HDX visual design
+    guide, including convenience functions for for loading and using the
+    Roboto and Merriweather fonts.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, ggplot2, ggthemes, lifecycle, magrittr, purrr, rlang,
+        showtext, sysfonts, tibble
+Depends: R (>= 3.5)
+LazyData: true
+Suggests: covr, curl, here, knitr, rmarkdown, scales, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/OCHA-DAP/gghdx
+BugReports: https://github.com/OCHA-DAP/gghdx/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-30 07:38:37 UTC; marti
+Author: Giulia Martini [aut, cre],
+  Seth Caldwell [aut, cph]
+Maintainer: Giulia Martini <giulia.martini@un.org>
+Repository: CRAN
+Date/Publication: 2026-07-30 23:20:15 UTC

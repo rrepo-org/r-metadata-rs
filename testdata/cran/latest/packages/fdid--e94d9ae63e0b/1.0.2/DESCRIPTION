@@ -1,0 +1,29 @@
+Package: fdid
+Type: Package
+Title: Factorial Difference-in-Differences
+Version: 1.0.2
+Date: 2026-03-18
+Authors@R: 
+    c(person("Yiqing", "Xu", , "yiqingxu@stanford.edu", role = c("aut", "cre")),
+      person("Rivka", "Lipkovitz", email = "rivkal@mit.edu", role = c("aut")),
+      person("Enhan", "Liu", email = "enhan@uchicago.edu", role = c("aut")))
+Description: Implements the factorial difference-in-differences (FDID) framework for panel data settings where all units are exposed to a universal event but vary in a baseline factor G. Provides support for various estimators; supports robust, bootstrap, and jackknife variance; returns dynamic, pre/event/post aggregates and raw means; and includes helpers for data preparation and plotting. Methodology follows Xu, Zhao and Ding (2026) <doi:10.1080/01621459.2026.2628343>.
+URL: https://yiqingxu.org/packages/fdid/,
+        https://github.com/xuyiqing/fdid
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: estimatr, dplyr, tidyr, rlang, tidyselect, RColorBrewer,
+        foreach, doFuture, future, ebal, grf, car, sandwich
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 3.6.0)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-18 05:33:27 UTC; yiqingxu
+Author: Yiqing Xu [aut, cre],
+  Rivka Lipkovitz [aut],
+  Enhan Liu [aut]
+Maintainer: Yiqing Xu <yiqingxu@stanford.edu>
+Repository: CRAN
+Date/Publication: 2026-03-23 09:20:07 UTC

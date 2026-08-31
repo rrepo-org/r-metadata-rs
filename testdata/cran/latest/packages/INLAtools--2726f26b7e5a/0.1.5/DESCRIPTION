@@ -1,0 +1,48 @@
+Type: Package
+Package: INLAtools
+Title: Functionalities for the 'INLA' Package
+Version: 0.1.5
+Authors@R: c(
+    person("Elias", "Teixeira Krainski", , "elias.krainski@kaust.edu.sa", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0002-7063-2615")),
+    person("Finn", "Lindgren", , "finn.lindgren@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-5833-2011")),
+    person("Haavard", "Rue’", role = "aut",
+           comment = c(ORCID = "0000-0002-0222-1881"))
+  )
+Maintainer: Elias Teixeira Krainski <elias.krainski@kaust.edu.sa>
+Description: Contain code to work with a C struct, in short cgeneric, to
+    define a Gaussian Markov random (GMRF) model.  The cgeneric contain
+    code to specify GMRF elements such as the graph and the precision
+    matrix, and also the initial and prior for its parameters, useful for
+    model inference.  It can be accessed from a C program and is the
+    recommended way to implement new GMRF models in the 'INLA' package
+    (<https://www.r-inla.org>).  The 'INLAtools' implement functions to
+    evaluate each one of the model specifications from R.  The implemented
+    functionalities leverage the use of 'cgeneric' models and provide a
+    way to debug the code as well to work with the prior for the model
+    parameters and to sample from it.  The `generic0` can be used to
+    implement intrinsic models with the scaling as proposed in Sørbye &
+    Rue (2014) <doi:10.1016/j.spasta.2013.06.004>, and the required
+    constraints.  A very useful functionality is the Kronecker product
+    method that creates a new model from multiple cgeneric models.  It
+    also works with the rgeneric, the R version of the cgeneric intended
+    to easy try implementation of new GMRF models.  The Kronecker between
+    two cgeneric models where each one needs a constraint, such as
+    spatio-temporal intrinsic interaction models, the needed constraints
+    are automatically set.
+License: GPL (>= 2)
+URL: https://github.com/eliaskrainski/INLAtools
+BugReports: https://github.com/eliaskrainski/INLAtools/issues
+Depends: R (>= 4.3), Matrix
+Imports: methods, utils
+Encoding: UTF-8
+NeedsCompilation: yes
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-08-31 11:30:00 UTC; eliask
+Author: Elias Teixeira Krainski [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-7063-2615>),
+  Finn Lindgren [aut] (ORCID: <https://orcid.org/0000-0002-5833-2011>),
+  Haavard Rue’ [aut] (ORCID: <https://orcid.org/0000-0002-0222-1881>)
+Repository: CRAN
+Date/Publication: 2026-08-31 19:31:16 UTC

@@ -1,0 +1,31 @@
+Package: PMLE4SCR
+Type: Package
+Title: Pseudo Maximum Likelihood Estimation for Semi-Competing Risks
+        Data
+Version: 0.1.0
+Authors@R: c(
+    person("Qian M.", "Zhou",
+            email = "qz70@msstate.edu",
+            role = "aut"),
+    person("Md. Ismail", "Hossain",
+            email = "mr2618@msstate.edu",
+            role = c("aut", "cre")))
+Description: Implements two-stage pseudo maximum likelihood estimation (PMLE)
+    for copula-based regression models with semi-competing risks data. The
+    marginal distributions are modeled by semiparametric transformation
+    regression models, and the dependence between bivariate event times is
+    specified by a parametric copula function. See Arachchige, Chen and Zhou
+    (2025) <doi:10.1007/s10985-024-09640-z> for details.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: trust, dplyr, rlang, VineCopula
+Suggests: knitr, rmarkdown, kableExtra, SemiCompRisks
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-02 18:03:10 UTC; KHAN GADGET
+Author: Qian M. Zhou [aut],
+  Md. Ismail Hossain [aut, cre]
+Maintainer: Md. Ismail Hossain <mr2618@msstate.edu>
+Repository: CRAN
+Date/Publication: 2026-06-08 18:20:19 UTC

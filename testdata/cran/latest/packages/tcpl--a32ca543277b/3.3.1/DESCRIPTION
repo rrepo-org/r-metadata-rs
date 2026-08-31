@@ -1,0 +1,67 @@
+Package: tcpl
+Title: ToxCast Data Analysis Pipeline
+Version: 3.3.1
+Authors@R: c(
+    person("Dayne L", "Filer", role = "aut"),
+    person("Jason", "Brown", role = "ctb", comment = c(ORCID = "0009-0000-2294-641X")),
+    person("Madison","Feshuk",role = "cre",email = "feshuk.madison@epa.gov", comment = c(ORCID = "0000-0002-1390-6405")),
+    person("Carter", "Thunes", role = "ctb"),
+    person("Sarah E", "Davidson-Fritz", role = "ctb", email = "davidsonfritz.sarah@epa.gov", comment = c(ORCID = "0000-0002-2891-9380")),
+    person("Kelly", "Carstens", role = "ctb", email = "carstens.kelly@epa.gov", comment = c(ORCID = "0000-0002-1746-5379")),
+    person("Elizabeth", "Gilson", role = "ctb"),
+    person("Lindsay","Knupp", role="ctb"),
+    person("Lori","Kolaczkowski", role = "ctb"),
+    person("Ashley", "Ko", role = "ctb"),
+    person("Zhihui","Zhao", role="ctb"),
+    person("Kurt", "Dunham", role = "ctb"),
+    person("Todd", "Zurlinden", role="ctb", comment = c(ORCID = "0000-0003-1372-3913")),
+    person("Parth", "Kothiya", role = "ctb"),
+    person("Woodrow R", "Setzer", role = "ctb"),
+    person("Matthew T", "Martin", role = c("ctb", "ths")),
+    person("Richard S", "Judson",role = c("ctb","ths"), comment = c(ORCID = "0000-0002-2348-9633")),
+    person("Katie", "Paul Friedman", role=c("ctb"), comment = c(ORCID = "0000-0002-2710-1691"))
+    )
+Description: The ToxCast Data Analysis Pipeline ('tcpl') is an R package that manages, curve-fits, plots, and stores ToxCast data to populate its linked MySQL database, 'invitrodb'. The package was developed for the chemical screening data curated by the US EPA's Toxicity Forecaster (ToxCast) program, but 'tcpl' can be used to support diverse chemical screening efforts.
+URL: https://github.com/USEPA/CompTox-ToxCast-tcpl,
+        https://www.epa.gov/comptox-tools/toxicity-forecasting-toxcast
+Depends: R (>= 4.1.0)
+Imports: data.table (>= 1.15.0), DBI, RMariaDB, numDeriv, RColorBrewer,
+        utils, stats, methods, graphics, grDevices, sqldf, dplyr,
+        tidyr, plotly, tcplfit2, ggplot2 (>= 3.5.2), gridExtra,
+        stringr, rlang, ctxR (>= 1.1.3), viridis, gt
+Suggests: roxygen2, knitr, prettydoc, rmarkdown, htmlTable, testthat
+        (>= 3.0.0), reshape2, kableExtra, colorspace, magrittr, vdiffr,
+        httptest, rmdformats, gtable
+License: MIT + file LICENSE
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Encoding: UTF-8
+Config/testthat/edition: 3
+BugReports: https://github.com/USEPA/CompTox-ToxCast-tcpl/issues
+NeedsCompilation: no
+Packaged: 2025-10-16 18:56:05 UTC; MFeshuk
+Author: Dayne L Filer [aut],
+  Jason Brown [ctb] (ORCID: <https://orcid.org/0009-0000-2294-641X>),
+  Madison Feshuk [cre] (ORCID: <https://orcid.org/0000-0002-1390-6405>),
+  Carter Thunes [ctb],
+  Sarah E Davidson-Fritz [ctb] (ORCID:
+    <https://orcid.org/0000-0002-2891-9380>),
+  Kelly Carstens [ctb] (ORCID: <https://orcid.org/0000-0002-1746-5379>),
+  Elizabeth Gilson [ctb],
+  Lindsay Knupp [ctb],
+  Lori Kolaczkowski [ctb],
+  Ashley Ko [ctb],
+  Zhihui Zhao [ctb],
+  Kurt Dunham [ctb],
+  Todd Zurlinden [ctb] (ORCID: <https://orcid.org/0000-0003-1372-3913>),
+  Parth Kothiya [ctb],
+  Woodrow R Setzer [ctb],
+  Matthew T Martin [ctb, ths],
+  Richard S Judson [ctb, ths] (ORCID:
+    <https://orcid.org/0000-0002-2348-9633>),
+  Katie Paul Friedman [ctb] (ORCID:
+    <https://orcid.org/0000-0002-2710-1691>)
+Maintainer: Madison Feshuk <feshuk.madison@epa.gov>
+Repository: CRAN
+Date/Publication: 2025-10-17 11:20:03 UTC

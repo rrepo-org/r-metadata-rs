@@ -1,0 +1,36 @@
+Package: GowerSom
+Type: Package
+Title: Self-Organizing Maps for Mixed-Attribute Data Using Gower
+        Distance
+Version: 0.1.0
+Authors@R: c(
+    person("Patricio", "Salas",
+           role = c("aut", "cre"),
+           email = "patricioasalas@udec.cl",
+           comment = c(ORCID = "0000-0002-2201-4038")),
+    person("Patricio", "Sáez",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-0113-3644")))
+Description: Implements a variant of the Self-Organizing Map (SOM) algorithm
+    designed for mixed-attribute datasets. Similarity between observations is
+    computed using the Gower distance, and categorical prototypes are updated
+    via heuristic strategies (weighted mode and multinomial sampling).
+    Provides functions for model fitting, mapping, visualization
+    (U-Matrix and component planes), and evaluation, making SOM applicable
+    to heterogeneous real-world data. For methodological details see
+    Sáez and Salas (2026) <doi:10.1007/s41060-025-00941-6>.
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 4.3.0)
+Imports: StatMatch, dplyr, gower, ggplot2, cluster, reshape2, grid,
+        utils, stats,cli
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Maintainer: Patricio Salas <patricioasalas@udec.cl>
+Packaged: 2026-01-22 11:44:32 UTC; Patricio Salas
+Author: Patricio Salas [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2201-4038>),
+  Patricio Sáez [aut] (ORCID: <https://orcid.org/0000-0002-0113-3644>)
+Repository: CRAN
+Date/Publication: 2026-01-27 08:50:02 UTC

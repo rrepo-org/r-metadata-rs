@@ -1,0 +1,56 @@
+Package: SNPkit
+Title: S4 Tools for Reading and Organizing Genetic Data
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Vinícius",
+             family = "Junqueira",
+             role = c("aut", "cre"),
+             email = "junqueiravinicius@hotmail.com"),
+      person(given = "Roberto",
+             family = "Higa",
+             role = "aut",
+             email = "roberto.higa@embrapa.br"),
+      person(given = "Fernando Flores",
+             family = "Cardoso",
+             role = "aut",
+             email = "fernando.cardoso@embrapa.br"),
+      person(given = "Marcos Jun Iti",
+             family = "Yokoo",
+             role = "aut",
+             email = "marcos.yokoo@embrapa.br"))
+Description: Provides an integrated suite of tools for handling single
+    nucleotide polymorphism (SNP) genotype data in large-scale genetic
+    studies. Supports importing and merging genotype files, performing
+    quality control on SNP markers and samples, and preparing data for
+    downstream analyses using popular software such as 'FImpute' and
+    'PLINK'. Offers S4 classes and methods to efficiently encapsulate SNP
+    data, along with utilities for generating genotype summary statistics
+    and visualization. Additional functionalities include anticlustering
+    approaches for batch effect control, automated script generation for
+    external software, and streamlined workflows for large datasets
+    commonly encountered in animal and plant breeding programs. Designed
+    to facilitate reproducible and scalable SNP data analyses in
+    quantitative and statistical genetics.
+Depends: R (>= 4.1.0)
+Imports: methods, ggplot2, dplyr, data.table, Rcpp, stringi, anticlust,
+        grDevices, graphics, stats, utils, MASS, snpStats, magrittr,
+        reshape2
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown, RSpectra, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+License: GPL-3
+URL: https://viniciusjunqueira.github.io/SNPkit/,
+        https://github.com/viniciusjunqueira/SNPkit
+BugReports: https://github.com/viniciusjunqueira/SNPkit/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-07-14 22:10:51 UTC; viniciusjunqueira
+Author: Vinícius Junqueira [aut, cre],
+  Roberto Higa [aut],
+  Fernando Flores Cardoso [aut],
+  Marcos Jun Iti Yokoo [aut]
+Maintainer: Vinícius Junqueira <junqueiravinicius@hotmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-14 23:00:02 UTC

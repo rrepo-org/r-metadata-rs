@@ -1,0 +1,29 @@
+Package: telescope
+Version: 0.2-2
+Encoding: UTF-8
+Title: Bayesian Mixtures with an Unknown Number of Components
+Authors@R: c(person("Gertraud", "Malsiner-Walli", role = c("aut", "cre"),
+                    email = "Gertraud.Malsiner-Walli@wu.ac.at",
+		    comment = c(ORCID = "0000-0002-1213-4749")),
+             person("Bettina", "Grün", role = "aut",
+	            comment = c(ORCID = "0000-0001-7265-4773")),
+             person("Sylvia", "Frühwirth-Schnatter", role = "aut",
+	            comment = c(ORCID = "0000-0003-0516-5552")))
+Description: Fits Bayesian finite mixtures with an unknown number of components using the telescoping sampler and different component distributions. For more details see Frühwirth-Schnatter et al. (2021) <doi:10.1214/21-BA1294>, Malsiner-Walli et al. (in press) <doi:10.1007/s11634-025-00640-x> and Malsiner-Walli et al. (2026) <doi:10.48550/arXiv.2603.00277>.
+Depends: R (>= 4.0.0)
+Imports: abind, bayesm, DirichletReg, extraDistr, graphics, grDevices,
+        MCMCpack, methods, mvtnorm, stats
+VignetteBuilder: knitr, rmarkdown
+Suggests: invgamma, klaR, knitr, mclust, poLCA, rmarkdown
+License: GPL-2
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-09 11:26:25 UTC; bettina
+Author: Gertraud Malsiner-Walli [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1213-4749>),
+  Bettina Grün [aut] (ORCID: <https://orcid.org/0000-0001-7265-4773>),
+  Sylvia Frühwirth-Schnatter [aut] (ORCID:
+    <https://orcid.org/0000-0003-0516-5552>)
+Maintainer: Gertraud Malsiner-Walli <Gertraud.Malsiner-Walli@wu.ac.at>
+Repository: CRAN
+Date/Publication: 2026-04-10 08:30:02 UTC

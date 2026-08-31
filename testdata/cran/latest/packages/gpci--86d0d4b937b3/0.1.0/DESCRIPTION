@@ -1,0 +1,67 @@
+Package: gpci
+Type: Package
+Title: Generalized Process Capability Indices and Bootstrap Confidence
+        Intervals
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi",
+           email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Sumit", "Kumar",
+           email = "stats.sumitbhal@gmail.com",
+           role = "aut"),
+    person("Arvind", "Pandey",
+           email = "arvindmzu@gmail.com",
+           role = "aut"),
+    person("Bhupendra", "Singh",
+           email = "bhupendra.rana@gmail.com",
+           role = "aut"),
+    person("Vrijesh", "Tripathi",
+           email = "vrijesh.tripathi@uwi.edu",
+           role = "aut")
+    )
+Description: A comprehensive, generalized framework for computing, estimating, 
+    and validating Generalized Process Capability Indices (GPCIs). Supports 
+    user-supplied probability density functions (PDF/PMF), cumulative distribution 
+    functions (CDF), survival functions (SF), and quantile functions with uncensored 
+    data parameter estimation via Maximum Likelihood Estimation (MLE). Provides classical 
+    and non-normal capability indices, including Cpy (Maiti, Saha and Nanda, 2010) 
+    <doi:10.1080/16843703.2010.11673233>, Spmk (Dey and Saha, 2019) 
+    <doi:10.1007/s41872-019-00081-4>, CpTk (Saha, Dey and Maiti, 2019) 
+    <doi:10.1007/s13198-019-00789-7>, Cpc (Saha, Dey and Nadarajah, 2022) 
+    <doi:10.1080/02664763.2021.1971632>, CNpmc (Alotaibi, Dey and Saha, 2022) 
+    <doi:10.1155/2022/3135264>, CNpmkc (Saha, Tripathi and Dey, 2024) 
+    <doi:10.1142/S021853932450013X>, CNpk (Saha, Dey and Maiti, 2018) 
+    <doi:10.1080/21681015.2018.1437793>, and Vannman capability indices. Computes 
+    parametric and non-parametric bootstrap confidence intervals at 90%, 95%, and 99% 
+    confidence levels using percentile, normal, basic, BCa, BCp, and studentized 
+    bootstrap methods. Evaluates Highest Posterior Density (HPD) intervals and 
+    Heidelberger-Welch convergence diagnostics.
+    References:
+    Maiti, Saha and Nanda (2010) <doi:10.1080/16843703.2010.11673233>,
+    Saha, Dey and Maiti (2018) <doi:10.1080/21681015.2018.1437793>,
+    Dey and Saha (2019) <doi:10.1007/s41872-019-00081-4>,
+    Saha, Dey and Maiti (2019) <doi:10.1007/s13198-019-00789-7>,
+    Alotaibi, Dey and Saha (2022) <doi:10.1155/2022/3135264>,
+    Saha, Dey and Nadarajah (2022) <doi:10.1080/02664763.2021.1971632>,
+    Saha, Tripathi and Dey (2024) <doi:10.1142/S021853932450013X>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, ggplot2, numDeriv, boot
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-20 22:11:13 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Sumit Kumar [aut],
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-31 12:30:02 UTC

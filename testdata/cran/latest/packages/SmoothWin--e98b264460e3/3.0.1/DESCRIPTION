@@ -1,0 +1,25 @@
+Package: SmoothWin
+Type: Package
+Title: Soft Windowing for Linear and Non-Linear Models
+Version: 3.0.1
+Date: 2026-05-03
+Authors@R: c(
+    person(
+      "Hamed", "Haselimashhadi",
+      email = "hamedhaseli@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Fits symmetric soft windowing to linear and non-linear models by assigning exponential weights over time around specified modes; bandwidth and sharpness of the windows are chosen by a grid search and comparison diagnostics (Hamed Haselimashhadi et al (2019) <doi:10.1093/bioinformatics/btz744>).
+Maintainer: Hamed Haselimashhadi <hamedhaseli@gmail.com>
+License: LGPL (>= 2)
+Packaged: 2026-05-06 05:04:00 UTC; hamedhaseli
+URL: https://doi.org/10.1093/bioinformatics/btz744
+Encoding: UTF-8
+Repository: CRAN
+Date/Publication: 2026-05-11 19:10:30 UTC
+Depends: R (>= 3.5)
+Imports: nlme, Rfast
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+Author: Hamed Haselimashhadi [aut, cre]

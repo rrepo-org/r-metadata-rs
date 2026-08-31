@@ -1,0 +1,31 @@
+Package: valh
+Type: Package
+Title: Interface Between R and the OpenStreetMap-Based Routing Service
+        'Valhalla'
+Version: 0.2.0
+Authors@R: c(person("Timothée", "Giraud", email = "timothee.giraud@cnrs.fr",
+    role = c("cre","aut"),  comment = c(ORCID = "0000-0002-1932-3323")),
+    person("Matthieu", "Viry", role = c("aut"),
+    comment = c(ORCID = "0000-0002-0693-8556")))
+Description: An interface between R and the 'Valhalla' API. 'Valhalla' is a
+    routing service based on 'OpenStreetMap' data.
+    See <https://valhalla.github.io/valhalla/> for more information.
+    This package enables the computation of routes, trips, isochrones and
+    travel distances matrices (travel time and kilometer distance).
+License: GPL (>= 3)
+Imports: jsonlite, googlePolylines, curl, utils, sf
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, tinytest
+URL: https://github.com/riatelab/valh
+BugReports: https://github.com/riatelab/valh/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-12 14:05:15 UTC; tim
+Author: Timothée Giraud [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-1932-3323>),
+  Matthieu Viry [aut] (ORCID: <https://orcid.org/0000-0002-0693-8556>)
+Maintainer: Timothée Giraud <timothee.giraud@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2026-02-12 14:20:02 UTC

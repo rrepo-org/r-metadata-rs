@@ -1,0 +1,21 @@
+Package: snap
+Type: Package
+Title: Simple Neural Application
+Version: 2.0.0
+Authors@R: c(person("Giancarlo", "Vercellino", role = c("aut", "cre", "cph"), email = "giancarlo.vercellino@gmail.com"))
+Maintainer: Giancarlo Vercellino <giancarlo.vercellino@gmail.com>
+Description: A simple wrapper to easily design vanilla deep neural networks using a 'torch' backend for regression, classification and multi-label tasks, with some tweaks and tricks (skip shortcuts, embedding, feature selection and anomaly detection).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.6)
+Imports: torch, ggplot2 (>= 3.3.3), dbscan (>= 1.1-5)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://rpubs.com/giancarlo_vercellino/snap
+NeedsCompilation: no
+Packaged: 2026-07-15 13:55:52 UTC; gianc
+Author: Giancarlo Vercellino [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2026-07-15 14:50:02 UTC

@@ -1,0 +1,40 @@
+Package: EpiPvr
+Title: Estimating Plant Pathogen Epidemiology Parameters from
+        Laboratory Assays
+Version: 0.0.1
+Authors@R: person("Ruairi","Donnelly",email = "rd501@cam.ac.uk",
+      role = c("aut", "cre", "cph"),comment = c(ORCID = "0000-0001-7642-0317"))
+Description: Provides functions for estimating plant pathogen parameters from
+    access period (AP) experiments. Separate functions are implemented for
+    semi-persistently transmitted (SPT) and persistently transmitted (PT)
+    pathogens. The common AP experiment exposes insect cohorts to infected source
+    plants, healthy test plants, and intermediate plants (for PT pathogens). The
+    package allows estimation of acquisition and inoculation rates during feeding,
+    recovery rates, and latent progression rates (for PT pathogens). Additional
+    functions support inference of epidemic risk from pathogen and local
+    parameters, and also simulate AP experiment data. The functions implement
+    probability models for epidemiological analysis, as derived in Donnelly et
+    al. (2025), <doi:10.32942/X29K9P>. These models were originally
+    implemented in the 'EpiPv' 'GitHub' package.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Biarch: true
+Depends: R (>= 3.5)
+Imports: methods, stats, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1),
+        rstan (>= 2.18.1), rstantools (>= 2.5.0), posterior
+Suggests: bayesplot, knitr, rmarkdown, testthat (>= 3.0.0), ggplot2
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+VignetteBuilder: knitr
+URL: https://CRAN.R-project.org/package=EpiPvr
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2025-09-25 00:22:14 UTC; ruair
+Author: Ruairi Donnelly [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7642-0317>)
+Maintainer: Ruairi Donnelly <rd501@cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-10-01 07:30:14 UTC

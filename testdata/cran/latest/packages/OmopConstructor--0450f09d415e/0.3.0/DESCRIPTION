@@ -1,0 +1,43 @@
+Package: OmopConstructor
+Title: Build Tables in the OMOP Common Data Model
+Version: 0.3.0
+Authors@R: c(
+    person(
+        "Martí", "Català", email = "marti.catalasabate@ndorms.ox.ac.uk", 
+        role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3308-9905")
+    ),
+     person(
+        "Elin", "Rowlands", email = "elin.rowlands@ndorms.ox.ac.uk", 
+        role = c("ctb"), comment = c(ORCID = "0009-0005-5166-0417")
+    ),
+    person(
+        "Cecilia", "Campanile", email = "cecilia.campanile@ndorms.ox.ac.uk", 
+        role = c("ctb"), comment = c(ORCID = "0009-0007-6629-4661")
+    ))
+Description: Provides functionality to construct standardised tables from health
+    care data formatted according to the Observational Medical Outcomes 
+    Partnership (OMOP) Common Data Model. The package includes tools to build 
+    key tables such as observation period and drug era, among others.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, clock, dplyr, glue, omopgenerics, PatientProfiles, purrr,
+        rlang
+Depends: R (>= 4.1)
+Suggests: bookdown, CDMConnector, duckdb, ggplot2, gt, knitr, odbc,
+        omock, OmopSketch, rmarkdown, RPostgres, stringr, testthat (>=
+        3.0.0), tidyr, visOmopResults
+Config/testthat/edition: 3
+URL: https://ohdsi.github.io/OmopConstructor/
+BugReports: https://github.com/ohdsi/OmopConstructor/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-26 23:18:56 UTC; martics
+Author: Martí Català [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3308-9905>),
+  Elin Rowlands [ctb] (ORCID: <https://orcid.org/0009-0005-5166-0417>),
+  Cecilia Campanile [ctb] (ORCID:
+    <https://orcid.org/0009-0007-6629-4661>)
+Maintainer: Martí Català <marti.catalasabate@ndorms.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-03-27 00:20:02 UTC

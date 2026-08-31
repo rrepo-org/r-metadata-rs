@@ -1,0 +1,54 @@
+Package: FastSurvival
+Type: Package
+Title: Fast Survival Analysis and Simulation for Clinical Trials
+Version: 0.2.0
+Authors@R: person(
+    given  = "Gosuke",
+    family = "Homma",
+    role   = c("aut", "cre"),
+    email  = "my.name.is.gosuke@gmail.com"
+  )
+Description: Provides fast alternatives to standard survival analysis functions
+    in the 'survival' package, together with tools for time-to-event trial
+    simulation and sequential analysis. The estimation and testing functions
+    cover a single-time-point Kaplan-Meier estimator (survfit_fast()), log-rank
+    tests including weighted and stratified variants (survdiff_fast()), a
+    closed-form hazard ratio estimator based on the Pike-Halley Estimator method
+    (coxph_fast()), restricted mean survival time (rmst_fast()), window mean
+    survival time (wmst_fast()), milestone survival comparison
+    (milestone_fast()), median survival time (medsurv_fast()), the max-combo
+    test (maxcombo_fast()), the robust modestly-weighted log-rank test
+    (rmw_fast()), the weighted Kaplan-Meier (Pepe-Fleming) test (wkm_fast()),
+    the average hazard with survival weight (ahsw_fast()), and the
+    Kalbfleisch-Prentice average hazard ratio (ahr_fast()). The simulation
+    layer generates individual patient data (simdata_fast()), performs interim
+    or sequential analyses (analysis_fast()), and aggregates operating
+    characteristics (simsummary_fast()). A visualization layer assembles
+    design-stage scenarios (gen_scenario_fast()) and builds analysis-stage
+    Kaplan-Meier curves (kmcurve_fast()), each with plot and print methods.
+    All functions are designed for repeated
+    evaluation inside large simulation loops, such as adaptive sample-size
+    re-estimation, probability-of-success calculations, and regional consistency
+    evaluation in multi-regional trials. Core computations are implemented in
+    'C++' via 'Rcpp' for maximum performance. Methodological background is
+    described in Collett (2014, ISBN:9780429196294).
+License: MIT + file LICENSE
+URL: https://github.com/gosukehommaEX/FastSurvival,
+        https://gosukehommaEX.github.io/FastSurvival/
+BugReports: https://github.com/gosukehommaEX/FastSurvival/issues
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: graphics, grDevices, stats, dqrng, Rcpp, mvtnorm
+LinkingTo: Rcpp, dqrng
+Suggests: survival, survRM2, survAH, simtrial, gsDesign, rpact, nph,
+        nphRCT, microbenchmark, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-07-27 03:48:43 UTC; i_lik
+Author: Gosuke Homma [aut, cre]
+Maintainer: Gosuke Homma <my.name.is.gosuke@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-27 11:50:02 UTC

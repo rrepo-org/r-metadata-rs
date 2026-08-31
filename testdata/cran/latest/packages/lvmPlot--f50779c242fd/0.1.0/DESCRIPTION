@@ -1,0 +1,35 @@
+Package: lvmPlot
+Title: Publication-Quality Diagrams for Latent Variable Models
+Version: 0.1.0
+Authors@R: 
+    person("Feng", "Ji", email = "f.ji@utoronto.ca",
+           role = c("aut", "cre"))
+Description: Converts output from latent variable model tools into
+    publication-ready path diagrams and model schematics. 'lavaan' fit objects
+    and parameter tables are supported as a primary workflow, with graph
+    adapters for objects from 'blavaan', 'lavaan.mi', 'semPlot', 'mirt',
+    'eRm', 'OpenMx', 'psych', 'poLCA', 'mclust', 'flexmix', 'lcmm',
+    'tidyLPA', and 'MplusAutomation' workflows when those packages are
+    available. Supports structural equation and confirmatory factor analysis
+    diagrams, multilevel structural equation models, growth models,
+    higher-order factor models, latent class and profile models, item response
+    theory models, and common mixture outputs through a unified graph grammar
+    with model-aware defaults, geometry diagnostics, layout quality scoring,
+    automatic layout selection, customizable publication styles, 'RStudio'
+    preview, SVG/PDF/PNG export, 'TikZ' output, and reproducible publication
+    bundles.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: methods
+Suggests: eRm, htmltools, jsonlite, lavaan, mclust, mirt, OpenMx,
+        psych, ragg, rstudioapi, semPlot, shiny, svglite, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-06-24 20:11:40 UTC; jifeng3
+Author: Feng Ji [aut, cre]
+Maintainer: Feng Ji <f.ji@utoronto.ca>
+Repository: CRAN
+Date/Publication: 2026-06-30 19:10:02 UTC

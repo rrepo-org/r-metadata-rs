@@ -1,0 +1,40 @@
+Package: gwas2crispr
+Type: Package
+Title: GWAS-to-CRISPR Data Pipeline for High-Throughput SNP Target
+        Extraction
+Version: 0.1.5
+Authors@R: c(person(given = "Othman S. I.", family = "Mohammed", email = "admin@leopard.ly", role = c("aut", "cre")), person(given = "LEOPARD.LY LTD", role = "cph"))
+Description: Provides a reproducible pipeline to conduct genome-wide association studies
+    (GWAS) and extract single-nucleotide polymorphisms (SNPs) for a human trait or
+    disease. Given aggregated GWAS dataset(s) and a user-defined significance threshold,
+    the package retrieves significant SNPs from the GWAS Catalog using supported trait
+    identifiers, annotates their gene context, and can write a
+    harmonised metadata table in comma-separated values (CSV) format, genomic intervals in the Browser Extensible Data
+    (BED) format, and sequences in the FASTA (text-based sequence) format with user-defined flanking regions for clustered
+    regularly interspaced short palindromic repeats (CRISPR) guide design. The existing
+    efo_id argument is retained for backward compatibility. The package prepares
+    computational artifacts for downstream workflows; it does not perform biological
+    causality testing, clinical interpretation, therapeutic design, or wet-lab validation.
+    For details on the resources and methods see:
+    Buniello et al. (2019) <doi:10.1093/nar/gky1120>;
+    Sollis et al. (2023) <doi:10.1093/nar/gkac1010>;
+    Jinek et al. (2012) <doi:10.1126/science.1225829>.
+License: MIT + file LICENSE
+URL: https://github.com/leopard0ly/gwas2crispr
+BugReports: https://github.com/leopard0ly/gwas2crispr/issues
+Depends: R (>= 4.1)
+Imports: httr, dplyr, purrr, tibble, tidyr, readr, stringr, tidyselect
+Suggests: Biostrings, BSgenome.Hsapiens.UCSC.hg38, GenomeInfoDb,
+        optparse, testthat, knitr, rmarkdown
+VignetteBuilder: knitr, rmarkdown
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+biocViews: Software, Genetics, VariantAnnotation, SNP, DataImport
+NeedsCompilation: no
+Packaged: 2026-06-01 18:08:54 UTC; hp
+Author: Othman S. I. Mohammed [aut, cre],
+  LEOPARD.LY LTD [cph]
+Maintainer: Othman S. I. Mohammed <admin@leopard.ly>
+Repository: CRAN
+Date/Publication: 2026-06-02 06:50:07 UTC

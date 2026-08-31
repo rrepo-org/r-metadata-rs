@@ -1,0 +1,32 @@
+Package: DEmixR
+Type: Package
+Title: Fit Two-Component Normal and Lognormal Mixture Models
+Version: 0.2.0
+Authors@R: 
+    person("Farrokh", "Habibzadeh",
+           email = "farrokh.habibzadeh@gmail.com",
+           role  = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5360-2900"))
+Description: Fits, bootstraps, and evaluates two-component normal and lognormal
+    mixture models. Parameters are estimated by combining differential-evolution
+    global optimization, as implemented in the 'DEoptim' package (Mullen, Ardia,
+    Gil, Windover and Cline, 2011) <doi:10.18637/jss.v040.i06>, with a local
+    'L-BFGS-B' refinement step via optim(). Also provides preliminary diagnostic
+    plots, automatic normal-versus-lognormal model selection by information
+    criteria, and parametric or nonparametric bootstrap confidence intervals for
+    the fitted parameters.
+Imports: DEoptim (>= 2.0.0), pbapply (>= 1.0.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 3.1.7)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+Packaged: 2026-08-01 19:06:16 UTC; mac
+Author: Farrokh Habibzadeh [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5360-2900>)
+Maintainer: Farrokh Habibzadeh <farrokh.habibzadeh@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-02 18:30:14 UTC

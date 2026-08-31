@@ -1,0 +1,24 @@
+Package: sunburstShinyWidget
+Type: Package
+Title: Sunburst 'HTML' Widget Based on 'd3.js'
+Version: 0.5.0
+Authors@R: 
+    person("Kamil", "Foltyński", , "kamil@foltynski.com", role = c("aut", "cre"))
+Description: Provides a sunburst plot based on the 'd3.js' library as an HTML
+    'shiny' widget.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: shiny
+Imports: htmlwidgets, tidyr, bslib, glue, DT, tibble, dplyr, purrr,
+        scales, waiter
+Suggests: jsonlite, testthat (>= 3.0.0), covr, mockery, knitr,
+        rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-18 20:54:20 UTC; foltynsk
+Author: Kamil Foltyński [aut, cre]
+Maintainer: Kamil Foltyński <kamil@foltynski.com>
+Repository: CRAN
+Date/Publication: 2026-02-23 09:30:02 UTC

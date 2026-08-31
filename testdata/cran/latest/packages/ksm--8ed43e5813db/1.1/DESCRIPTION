@@ -1,0 +1,24 @@
+Package: ksm
+Type: Package
+Title: Kernel Density Estimation for Random Symmetric Positive Definite
+        Matrices
+Version: 1.1
+Authors@R: c(person(given="Leo", family="Belzile", role = c("aut", "cre"), email = "belzilel@gmail.com", comment = c(ORCID = "0000-0002-9135-014X")), person(given="Frederic", family="Ouimet", role = "aut", comment = c(ORCID = "0000-0001-7933-5265")))
+Description: Kernel smoothing for Wishart random matrices described in Daayeb, Khardani and Ouimet (2025) <doi:10.48550/arXiv.2506.08816>, Gaussian and log-Gaussian models using least square or likelihood cross validation criteria for optimal bandwidth selection.
+BugReports: https://github.com/lbelzile/ksm/issues
+Imports: Rcpp (>= 1.0.12)
+Suggests: cubature, rmarkdown, knitr, tinytest
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+LazyData: true
+Depends: R (>= 2.10)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-06 21:54:25 UTC; lbelzile
+Author: Leo Belzile [aut, cre] (ORCID: <https://orcid.org/0000-0002-9135-014X>),
+  Frederic Ouimet [aut] (ORCID: <https://orcid.org/0000-0001-7933-5265>)
+Maintainer: Leo Belzile <belzilel@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-07 06:40:02 UTC

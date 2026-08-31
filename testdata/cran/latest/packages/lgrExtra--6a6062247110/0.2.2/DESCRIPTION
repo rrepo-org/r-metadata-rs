@@ -1,0 +1,31 @@
+Type: Package
+Package: lgrExtra
+Title: Extra Appenders for 'lgr'
+Version: 0.2.2
+Authors@R: c(
+    person("Stefan", "Fleck", , "stefan.b.fleck@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3344-9851")),
+    person("Jimmy", "Briggs", , "jimmy.briggs@jimbrig.com", role = c("ctb", "rev"),
+           comment = c(ORCID = "0000-0002-7489-8787"))
+  )
+Description: Additional appenders for the logging package 'lgr' that
+    support logging to 'Elasticsearch', 'Dynatrace', 'AWSCloudWatchLog',
+    databases, 'syslog', email- and push notifications, and more.
+License: MIT + file LICENSE
+URL: https://s-fleck.github.io/lgrExtra/
+Imports: data.table, lgr (>= 0.5.0), R6
+Suggests: covr, DBI, elastic, gmailr, httr2, jsonlite, knitr,
+        paws.management (>= 0.4.0), pool, RMariaDB, rmarkdown,
+        RPostgres, RPushbullet, RSQLite, rsyslog, sendmailR, testthat,
+        utils
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-10-31 14:06:35 UTC; stefan.fleck
+Author: Stefan Fleck [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3344-9851>),
+  Jimmy Briggs [ctb, rev] (ORCID:
+    <https://orcid.org/0000-0002-7489-8787>)
+Maintainer: Stefan Fleck <stefan.b.fleck@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-31 14:30:02 UTC

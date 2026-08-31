@@ -1,0 +1,36 @@
+Package: libr
+Type: Package
+Title: Libraries, Data Dictionaries, and a Data Step for R
+Version: 1.4.2
+Maintainer: David Bosak <dbosak01@gmail.com>
+Authors@R: c( 
+    person("David", "Bosak", email = "dbosak01@gmail.com", role = c("aut", "cre")),
+    person("Brian", "Varney", email = "brian.varney@experis.com", role = "ctb"),
+    person("Archytas Clinical Solutions", role = "cph")
+    )
+Description: Contains a set of functions to create data libraries,
+    generate data dictionaries, and simulate a data step.
+    The libname() function will load a directory of data into 
+    a library in one line of code.  The dictionary() function
+    will generate data dictionaries for individual
+    data frames or an entire library.  And the datestep() function
+    will perform row-by-row data processing.
+License: CC0
+Encoding: UTF-8
+URL: https://libr.r-sassy.org, https://github.com/dbosak01/libr
+BugReports: https://github.com/dbosak01/libr/issues
+Depends: R (>= 4.1.0), common (>= 1.1.0)
+Suggests: testthat, knitr, rmarkdown, foreign, utils, logr, covr, fmtr,
+        nanoparquet
+Imports: readr, readxl, haven, openxlsx, crayon, dplyr, tibble, tools,
+        Rcpp, data.table
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-04 13:25:24 UTC; dbosa
+Author: David Bosak [aut, cre],
+  Brian Varney [ctb],
+  Archytas Clinical Solutions [cph]
+Repository: CRAN
+Date/Publication: 2026-08-04 16:40:02 UTC

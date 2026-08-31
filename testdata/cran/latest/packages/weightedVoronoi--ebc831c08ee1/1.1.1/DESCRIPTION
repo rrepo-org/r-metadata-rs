@@ -1,0 +1,31 @@
+Package: weightedVoronoi
+Title: Weighted Spatial Tessellations in Constrained Polygon Domains
+Version: 1.1.1
+Depends: R (>= 4.1.0)
+Authors@R: 
+    person("Harri", "Ravenscroft", , "harri.ravenscroft@hotmail.co.uk", role = c("aut", "cre"))
+Description: Provides tools for weighted spatial tessellation using
+    Euclidean and geodesic distances within constrained polygonal domains.
+    The package can generate complete and connected spatial partitions
+    that respect complex boundaries, heterogeneous point weights, and optional
+    resistance or terrain effects. The methods extend weighted Voronoi
+    tessellations to constrained domains and graph-based cost-distance
+    surfaces. For background see Aurenhammer (1991)
+    <doi:10.1145/116873.116880> and van Etten (2017)
+    <doi:10.18637/jss.v076.i13>.
+URL: https://HarriRaven.github.io/weightedVoronoi/,
+        https://github.com/HarriRaven/weightedVoronoi
+BugReports: https://github.com/HarriRaven/weightedVoronoi/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Imports: methods, sf, stats, terra, dplyr, gdistance, raster, Matrix
+NeedsCompilation: no
+Packaged: 2026-04-02 11:20:26 UTC; exet4339
+Author: Harri Ravenscroft [aut, cre]
+Maintainer: Harri Ravenscroft <harri.ravenscroft@hotmail.co.uk>
+Repository: CRAN
+Date/Publication: 2026-04-08 14:20:03 UTC

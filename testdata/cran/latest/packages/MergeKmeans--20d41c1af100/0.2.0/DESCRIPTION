@@ -1,0 +1,40 @@
+Package: MergeKmeans
+Type: Package
+Title: Clustering Large Datasets by Merging K-Means Solutions
+Version: 0.2.0
+Authors@R: c(
+    person("Aqi", "Dong", email = "donga2@erau.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-1676-3528")),
+    person("Volodymyr", "Melnykov", role = "aut"),
+    person("Yang-Li", "Liao", email = "yanglliao@fcu.edu.tw",
+           role = "aut"),
+    person("Peng", "Li", email = "peng.li@erau.edu", role = "aut"),
+    person("Xuejian", "Li", email = "lix16@erau.edu", role = "aut"))
+Description: Fast clustering of large datasets by hierarchically merging
+    components of a K-means solution based on the pairwise overlap between
+    the Gaussian mixture components implied by the K-means partition, as
+    proposed by Melnykov and Michael (2020) <doi:10.1007/s00357-019-09314-8>.
+    Implements the DEMP-K merging algorithm with single, Ward's, average,
+    and complete linkages, the overlap map display for selecting the number
+    of clusters, four K-means variants corresponding to Gaussian mixtures
+    with spherical or elliptical, homoscedastic or heteroscedastic
+    components, and a tool for selecting the number of K-means components.
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: stats, graphics, grDevices, utils, parallel
+Suggests: CompQuadForm, MixSim, mclust, broom, tibble, testthat (>=
+        3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-10 00:45:47 UTC; donga2
+Author: Aqi Dong [aut, cre] (ORCID: <https://orcid.org/0009-0004-1676-3528>),
+  Volodymyr Melnykov [aut],
+  Yang-Li Liao [aut],
+  Peng Li [aut],
+  Xuejian Li [aut]
+Maintainer: Aqi Dong <donga2@erau.edu>
+Repository: CRAN
+Date/Publication: 2026-07-19 13:20:07 UTC

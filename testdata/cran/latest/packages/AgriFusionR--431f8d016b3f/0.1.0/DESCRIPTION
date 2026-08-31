@@ -1,0 +1,40 @@
+Package: AgriFusionR
+Title: An Integration Framework for Agricultural Analytics
+Version: 0.1.0
+Authors@R: 
+    person("Muhammad", "Farooqi", email = "mqfarooqi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4918-9791"))
+Description: Assembles agricultural analyses around a single unit of
+    observation, the management unit within a season, and keeps climate,
+    soil and remote-sensing covariates aligned to it. Covariates are
+    aggregated over phenological windows derived from accumulated growing
+    degree days rather than calendar months, following McMaster and Wilhelm
+    (1997) <doi:10.1016/S0168-1923(97)00027-0>. Models are validated with
+    spatial resampling by default, since random cross-validation inflates
+    apparent skill when observations are spatially autocorrelated, as shown
+    by Roberts and others (2017) <doi:10.1111/ecog.02881>. Prediction
+    intervals use split conformal inference after Lei and others (2018)
+    <doi:10.1080/01621459.2017.1307116>. Data sources and learning
+    algorithms are supplied through registries so that new providers and
+    methods can be added without modifying the package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 4.1.0)
+Imports: graphics, grDevices, stats, utils
+Suggests: testthat (>= 3.0.0), ranger, xgboost, Cubist, glmnet,
+        kernlab, mgcv, treeshap, nasapower, chirps, daymetr, geodata,
+        terra, agridat, knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/mqfarooqi1/AgriFusionR
+BugReports: https://github.com/mqfarooqi1/AgriFusionR/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-20 23:18:42 UTC; faroo
+Author: Muhammad Farooqi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4918-9791>)
+Maintainer: Muhammad Farooqi <mqfarooqi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-26 20:20:08 UTC

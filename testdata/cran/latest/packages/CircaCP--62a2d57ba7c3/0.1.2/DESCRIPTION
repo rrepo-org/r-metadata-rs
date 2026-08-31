@@ -1,0 +1,30 @@
+Package: CircaCP
+Type: Package
+Title: Sleep and Circadian Metrics Estimation from Actigraphy Data
+Version: 0.1.2
+Authors@R: c(
+    person("Shanshan", "Chen", email = "schen3@vcu.edu", role = c("aut", "cre")),
+    person("Jonathon", "Jacobs", role = "ctb"))
+Maintainer: Shanshan Chen <schen3@vcu.edu>
+Description: A generic sleep–wake cycle detection algorithm for analyzing unlabeled actigraphy data. 
+    The algorithm has been validated against event markers using data from the Multi-Ethnic Study of Atherosclerosis (MESA) Sleep study, 
+    and its methodological details are described in Chen and Sun (2024) <doi:10.1098/rsos.231468>. 
+    The package provides functions to estimate sleep metrics (e.g., sleep and wake onset times) and circadian rhythm metrics 
+    (e.g., mesor, phasor, interdaily stability, intradaily variability), as well as tools for screening actigraphy quality, 
+    fitting cosinor models, and performing parametric change point detection. 
+    The workflow can also be used to segment long actigraphy sequences into regularized structures for physical activity research.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: data.table, pracma, stats, tibble
+Suggests: ggplot2, knitr, minpack.lm, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2025-11-08 20:12:09 UTC; schen3
+Author: Shanshan Chen [aut, cre],
+  Jonathon Jacobs [ctb]
+Repository: CRAN
+Date/Publication: 2025-11-12 11:10:02 UTC

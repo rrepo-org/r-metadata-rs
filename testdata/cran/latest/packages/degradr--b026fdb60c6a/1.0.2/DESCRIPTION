@@ -1,0 +1,35 @@
+Package: degradr
+Type: Package
+Title: Estimating Remaining Useful Life with Linear Mixed Effects
+        Models
+Description: Provides tools for estimating the Remaining Useful Life (RUL) of degrading systems using linear mixed-effects models and creating a health index. It supports both univariate and multivariate degradation signals. For multivariate inputs, the signals are merged into a univariate health index prior to modeling. Linear and exponential degradation trajectories are supported (the latter using a log transformation). Remaining Useful Life (RUL) distributions are estimated using Bayesian updating for new units, enabling on-site predictive maintenance. Based on the methodology of Liu and Huang (2016) <doi:10.1109/TASE.2014.2349733>.
+Version: 1.0.2
+Authors@R: c(person(given="Pedro Abraham", family="Montoya Calzada", role = c("aut", "cre", "cph"), 
+            comment = c(ORCID = "0009-0002-3497-210X"),email = "pedroabraham.montoya@gmail.com"),
+            person(given="Rogelio", family="Salinas Gutiérrez", role = c("aut","cph"),
+                     email = "rsalinas@correo.uaa.mx", comment = c(ORCID = "0000-0002-1669-4460")),
+            person(given="Silvia", family="Rodríguez-Narciso", role = c("aut","cph"),
+                    comment = c(ORCID = "0000-0001-5429-5914")),
+            person(given="Netzahualcóyotl", family="Castañeda-Leyva", role = c("aut","cph"),
+                    comment = c(ORCID = "0000-0001-9414-3923")))
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: dplyr, nlme, quadprog, ggplot2
+Maintainer: Pedro Abraham Montoya Calzada <pedroabraham.montoya@gmail.com>
+Depends: R (>= 4.5)
+LazyData: true
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-26 03:45:27 UTC; Abraham
+Author: Pedro Abraham Montoya Calzada [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-3497-210X>),
+  Rogelio Salinas Gutiérrez [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-1669-4460>),
+  Silvia Rodríguez-Narciso [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-5429-5914>),
+  Netzahualcóyotl Castañeda-Leyva [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-9414-3923>)
+Repository: CRAN
+Date/Publication: 2026-03-26 07:00:02 UTC

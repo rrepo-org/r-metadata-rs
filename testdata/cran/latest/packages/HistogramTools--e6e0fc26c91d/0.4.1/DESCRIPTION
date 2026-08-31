@@ -1,0 +1,43 @@
+Type: Package
+Package: HistogramTools
+Title: Utility Functions for R Histograms
+Version: 0.4.1
+Date: 2026-05-06
+Authors@R: c(
+    person("Murray", "Stokely", , "murray@stokely.org", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0008-3390-1338")),
+    person(, "Google, Inc.", role = "cph"),
+    person("Tim", "Hesterberg", , "rocket@google.com", role = "ctb")
+  )
+Maintainer: Murray Stokely <murray@stokely.org>
+Description: Provides a number of utility functions useful for
+    manipulating large histograms.  This includes methods to trim, subset,
+    merge buckets, merge histograms, convert to CDF, and calculate
+    information loss due to binning.  It also provides a protocol buffer
+    representation of R's native histogram class to allow histograms over
+    large data sets to be computed and combined in distributed analytical
+    pipelines.  Implements bin-by-bin histogram distance measures
+    described in Rubner, Tomasi and Guibas (2000)
+    <doi:10.1023/A:1026543900054>, Swain and Ballard (1991)
+    <doi:10.1007/BF00130487>, and Puzicha, Hofmann and Buhmann (1997)
+    <doi:10.1109/CVPR.1997.609331>, and average shifted histograms as
+    in Scott (2015, ISBN:9781118575536).
+License: Apache License 2.0
+URL: https://github.com/murraystokely/histogramtools
+BugReports: https://github.com/murraystokely/histogramtools/issues
+Imports: ash, Hmisc
+Suggests: emdist, gdata, testthat (>= 3.0.0)
+Enhances: RProtoBuf
+Classification/ACM: G.3
+Config/testthat/edition: 3
+Copyright: Copyright 2011-2015 Google, Inc. Copyright 2026 Murray
+        Stokely
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-05-06 18:16:42 UTC; murray
+Author: Murray Stokely [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0008-3390-1338>),
+  Google, Inc. [cph],
+  Tim Hesterberg [ctb]
+Repository: CRAN
+Date/Publication: 2026-05-12 17:50:08 UTC

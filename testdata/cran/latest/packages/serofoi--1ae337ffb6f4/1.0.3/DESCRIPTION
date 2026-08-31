@@ -1,0 +1,75 @@
+Package: serofoi
+Title: Bayesian Estimation of the Force of Infection from Serological
+        Data
+Type: Package
+Version: 1.0.3
+Authors@R: c(
+    person("Zulma M.", "Cucunubá", , "zulma.cucunuba@javeriana.edu.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8165-3198")),
+    person("Nicolás", "T. Domínguez", , "ex-ntorres@javeriana.edu.co", role = "aut",
+           comment = c(ORCID = "0009-0002-8484-1298")),
+    person("Ben", "Lambert", role = "aut"),
+    person("Pierre", "Nouvellet", role = "aut"),
+    person("Geraldine", "Gómez", role = "ctb",
+           comment = c(ORCID = "0009-0007-8701-0568")),
+    person("Jaime A.", "Pavlich-Mariscal", role = "ctb",
+           comment = c(ORCID = "0000-0002-3892-6680")),
+    person("Hugo", "Gruson", role = "ctb",
+           comment = c(ORCID = "0000-0002-4094-1476")),
+    person("David Santiago", "Quevedo", role = "ctb",
+           comment = c(ORCID = "0000-0003-1583-4262")),
+    person("Miguel", "Gámez", role = "ctb"),
+    person("Sumali", "Bajaj", role = "ctb"),
+    person("Everlyn", "Kamau", role = "ctb"),
+    person("Richard", "Creswell", role = "ctb"),
+    person("International Development Research Center (IDRC)", role = "fnd"),
+    person("Pontificia Universidad Javeriana", role = "cph")
+  )
+Description: Estimating the force of infection from time varying, age varying, or constant
+    serocatalytic models from population based seroprevalence studies using a Bayesian framework,
+    including data simulation functions enabling the generation of serological surveys based on this
+    models. This tool also provides a flexible prior specification syntax for the force of infection
+    and the seroreversion rate, as well as methods to assess model convergence and comparison
+    criteria along with useful visualisation functions.
+License: MIT + file LICENSE
+URL: https://github.com/epiverse-trace/serofoi,
+        https://epiverse-trace.github.io/serofoi/
+BugReports: https://github.com/epiverse-trace/serofoi/issues
+Depends: R (>= 4.1.0)
+Imports: bayesplot, checkmate, config, cowplot, dplyr, ggplot2, glue,
+        graphics, loo, expm, methods, purrr, Rcpp (>= 0.12.0), rstan
+        (>= 2.18.1), rstantools (>= 2.3.1), stats, tibble, tidyr
+Suggests: knitr, rlang, rmarkdown, scales, spelling, testthat (>=
+        3.0.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+VignetteBuilder: knitr
+Biarch: true
+Config/Needs/website: epiverse-trace/epiversetheme
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 7.3.2
+SystemRequirements: GNU make
+Packaged: 2025-03-27 14:51:29 UTC; torresn
+Author: Zulma M. Cucunubá [aut, cre] (<https://orcid.org/0000-0002-8165-3198>),
+  Nicolás T. Domínguez [aut] (<https://orcid.org/0009-0002-8484-1298>),
+  Ben Lambert [aut],
+  Pierre Nouvellet [aut],
+  Geraldine Gómez [ctb] (<https://orcid.org/0009-0007-8701-0568>),
+  Jaime A. Pavlich-Mariscal [ctb]
+    (<https://orcid.org/0000-0002-3892-6680>),
+  Hugo Gruson [ctb] (<https://orcid.org/0000-0002-4094-1476>),
+  David Santiago Quevedo [ctb] (<https://orcid.org/0000-0003-1583-4262>),
+  Miguel Gámez [ctb],
+  Sumali Bajaj [ctb],
+  Everlyn Kamau [ctb],
+  Richard Creswell [ctb],
+  International Development Research Center (IDRC) [fnd],
+  Pontificia Universidad Javeriana [cph]
+Maintainer: Zulma M. Cucunubá <zulma.cucunuba@javeriana.edu.co>
+Repository: CRAN
+Date/Publication: 2025-03-31 10:00:02 UTC

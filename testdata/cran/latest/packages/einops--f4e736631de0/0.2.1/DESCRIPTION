@@ -1,0 +1,36 @@
+Package: einops
+Title: Flexible, Powerful, and Readable Tensor Operations
+Version: 0.2.1
+Authors@R: c(
+    person(
+        "Qile",
+        "Yang",
+        email = "qile.yang@berkeley.edu",
+        role = c("cre","aut","cph"),
+        comment = c(ORCID = "0009-0005-0148-2499")
+    ))
+Maintainer: Qile Yang <qile.yang@berkeley.edu>
+Description: Perform tensor operations using a concise yet expressive syntax inspired by the Python library of the same name.
+    Reshape, rearrange, and combine multidimensional arrays for scientific computing, machine learning, and data analysis.
+    Einops simplifies complex manipulations, making code more maintainable and intuitive.
+    The original implementation is demonstrated in Rogozhnikov (2022) <https://openreview.net/forum?id=oapKSVM2bcj>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/Qile0317/einops,
+        https://qile0317.github.io/einops/
+BugReports: https://github.com/Qile0317/einops/issues
+Imports: assertthat, FastUtils, glue, magrittr, r2r, R6, roperators
+Suggests: abind, grid, imager, knitr, lifecycle, lintr, lobstr,
+        rmarkdown, spelling, testthat (>= 3.0.0), torch, zeallot
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-08-29 22:24:54 UTC; qile
+Author: Qile Yang [cre, aut, cph] (ORCID:
+    <https://orcid.org/0009-0005-0148-2499>)
+Repository: CRAN
+Date/Publication: 2025-09-03 21:40:08 UTC

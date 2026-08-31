@@ -1,0 +1,51 @@
+Package: cuda.ml
+Type: Package
+Title: R Interface for the RAPIDS cuML Suite of Libraries
+Version: 0.4.0
+Authors@R: 
+    c(person(given = "Yitao",
+           family = "Li",
+           role = c("aut", "cph"),
+           email = "yitaoli1990@gmail.com",
+           comment = c(ORCID = "0000-0002-1261-905X")),
+      person(given = "Tomasz",
+             family = "Kalinowski",
+             role = c("aut", "cre", "cph"),
+             email = "tomasz@posit.co"),
+      person(given = "Daniel",
+             family = "Falbel",
+             role = c("aut", "cph"),
+             email = "daniel@posit.co"),
+      person(given = "RStudio",
+           role = c("cph", "fnd")))
+Description: R interface for RAPIDS cuML (<https://github.com/NVIDIA/cuml>),
+    a suite of GPU-accelerated machine learning libraries powered by CUDA
+    (<https://en.wikipedia.org/wiki/CUDA>).
+License: MIT + file LICENSE
+Copyright: file inst/COPYRIGHTS
+URL: https://mlverse.github.io/cuda.ml/,
+        https://github.com/mlverse/cuda.ml
+BugReports: https://github.com/mlverse/cuda.ml/issues
+Depends: R (>= 4.1)
+Imports: bundle, digest, ellipsis, filelock, hardhat, jsonlite, Rcpp
+        (>= 1.0.6), rlang (>= 0.3.0)
+Suggests: callr, glmnet, knitr, MASS, modeldata, palmerpenguins,
+        parsnip, purrr, recipes, reticulate, rmarkdown, testthat (>=
+        3.1.7), workflows, xgboost
+VignetteBuilder: knitr
+Encoding: UTF-8
+OS_type: unix
+SystemRequirements: Native operations require Linux x86_64 with glibc
+        2.28 or newer. GPU-backed operations require a supported NVIDIA
+        GPU and driver 580 or newer.
+NeedsCompilation: no
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-08-20 18:47:15 UTC; tomasz
+Author: Yitao Li [aut, cph] (ORCID: <https://orcid.org/0000-0002-1261-905X>),
+  Tomasz Kalinowski [aut, cre, cph],
+  Daniel Falbel [aut, cph],
+  RStudio [cph, fnd]
+Maintainer: Tomasz Kalinowski <tomasz@posit.co>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:44:12 UTC

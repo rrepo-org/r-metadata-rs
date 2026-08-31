@@ -1,0 +1,36 @@
+Package: BAwiR
+Type: Package
+Title: Analysis of Basketball Data
+Version: 1.5.3
+Date: 2026-07-23
+Authors@R: person(given = "Guillermo", family = "Vinue", role = c("aut", "cre"), email = "guillermo.vinue@uv.es")
+Description: Collection of tools to work with European basketball data. Functions available are related to friendly 
+	web scraping, data management and visualization. Data were obtained from <https://www.euroleaguebasketball.net/euroleague/>, 
+	<https://www.euroleaguebasketball.net/eurocup/> and <https://www.acb.com/>, following the instructions 
+        of their respectives robots.txt files, when available. Box score data are available for the three leagues. 
+	Play-by-play and spatial shooting data are also available for the Spanish league. Methods for analysis include a 
+	population pyramid, 2D plots, circular plots of players' percentiles, plots of players' monthly/yearly stats, 
+	team heatmaps, team shooting plots, team four factors plots, cross-tables with the results of regular season games,
+	maps of nationalities, combinations of lineups, possessions-related variables, timeouts,
+	performance by periods, personal fouls, offensive rebounds and different types of shooting charts. 
+	Please see Vinue (2020) <doi:10.1089/big.2018.0124> and Vinue (2024) <doi:10.1089/big.2023.0177>. 
+License: GPL (>= 2)
+URL: https://www.uv.es/vivigui/basketball_platform.html,
+        https://www.uv.es/vivigui/, https://www.R-project.org
+Depends: R (>= 3.5.0)
+Imports: plyr, dplyr, ggplot2, ggpubr, grid, httr, janitor, jsonlite,
+        lubridate, magrittr, polite, purrr, reshape2, robotstxt, rvest,
+        stringi, stringr, tibble, tidyr, xml2
+Suggests: Anthropometry, cowplot, ggimage, ggrepel, ggtext, ggupset,
+        knitr, markdown, packageRank, png, qdapRegex, RCurl, readr,
+        rmarkdown, rworldmap, scales
+VignetteBuilder: knitr
+LazyData: true
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-23 10:55:57 UTC; guillermo
+Author: Guillermo Vinue [aut, cre]
+Maintainer: Guillermo Vinue <guillermo.vinue@uv.es>
+Repository: CRAN
+Date/Publication: 2026-07-23 11:30:02 UTC

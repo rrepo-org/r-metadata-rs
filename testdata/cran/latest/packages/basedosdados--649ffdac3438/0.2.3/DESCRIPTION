@@ -1,0 +1,40 @@
+Package: basedosdados
+Title: 'Base Dos Dados' R Client
+Version: 0.2.3
+Author: Pedro Cavalcante [aut, cre],
+  Daniel Herszenhut [aut] (ORCID:
+    <https://orcid.org/0000-0001-8066-1105>),
+  Rodrigo Dornelles [aut] (ORCID:
+    <https://orcid.org/0000-0003-3709-4760>)
+Maintainer: Pedro Cavalcante <pedrocolrj@gmail.com>
+Authors@R: 
+    c(person(given = "Pedro",
+             family = "Cavalcante",
+             role = c("aut", "cre"),
+             email = "pedrocolrj@gmail.com"),
+      person(given = "Daniel",
+             family = "Herszenhut",
+             role = c("aut"),
+             email = "dhersz@gmail.com",
+             comment = c(ORCID = "0000-0001-8066-1105")),
+      person(given = "Rodrigo",
+             family = "Dornelles",
+             role = c("aut"),
+             email = "rodornelles@gmail.com",
+             comment = c(ORCID = "0000-0003-3709-4760")))
+Description: An R interface to the 'Base dos Dados' API <https://basedosdados.org/docs/api_reference_python/>). Authenticate your project, query our tables, save data to disk and memory, all from R.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: purrr (>= 0.3.4), dplyr (>= 1.0.6), tibble (>= 3.1.1), httr
+        (>= 1.4.2), cli (>= 2.5.0), magrittr (>= 2.0.1), readr (>=
+        1.4.0), stringr (>= 1.4.0), dotenv (>= 1.0.2), bigrquery (>=
+        1.4.0), glue (>= 1.4.2), rlang (>= 0.4.0), writexl (>= 1.4.0),
+        fs (>= 1.5.0), dbplyr (>= 2.1.1), scales (>= 1.1.1), DBI (>=
+        1.1.1), methods
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-16 19:16:36 UTC; pedrocavalcante
+Repository: CRAN
+Date/Publication: 2025-09-16 19:30:02 UTC

@@ -1,0 +1,24 @@
+Package: toscca
+Title: Thresholded Ordered Sparse CCA
+Version: 1.0
+Authors@R: 
+    person("Nuria", "Senar", , "n.senarvilladeamigo@amsterdamumc.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1004-5785"))
+Description: Performs Thresholded Ordered Sparse Canonical Correlation Analysis (CCA). For more details see Senar, N. (2024) <doi:10.1093/bioadv/vbae021> and Senar, N. et al. (2025) <doi:10.48550/arXiv.2503.15140>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: ClusterR, RColorBrewer, cluster, knitr, rmarkdown, testthat
+        (>= 3.0.0)
+Imports: doParallel, foreach, parallel, forecast, ggplot2, lme4,
+        scales, graphics, stats, utils, grDevices, mcompanion,
+        EnvStats, MASS, utils
+Depends: R (>= 3.5)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-09 13:34:14 UTC; PC
+Author: Nuria Senar [aut, cre] (ORCID: <https://orcid.org/0000-0002-1004-5785>)
+Maintainer: Nuria Senar <n.senarvilladeamigo@amsterdamumc.nl>
+Repository: CRAN
+Date/Publication: 2026-04-09 13:50:02 UTC

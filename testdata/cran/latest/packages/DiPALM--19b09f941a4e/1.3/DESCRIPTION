@@ -1,0 +1,30 @@
+Package: DiPALM
+Type: Package
+Title: Differential Pattern Analysis via Linear Modeling
+Version: 1.3
+Date: 2026-05-21
+Authors@R: c(person(given = c("Ryan", "C."),
+                      family = "Sartor",
+                      role = c("aut", "cre"),
+                      email = "sartorry@gmail.com"),
+               person(given = "Kathleen",
+                      family = "Greenham",
+                      role = "aut",
+                      email = "greenham@umn.edu"),
+               person(given = "William",
+                      family = "Gustafson",
+                      role = "aut",
+                      email = "williamlgustafson@gmail.com"))
+Description: Individual gene expression patterns are encoded into a series of eigenvector patterns ('WGCNA' package). Using the framework of linear model-based differential expression comparisons ('limma' package), time-course expression patterns for genes in different conditions are compared and analyzed for significant pattern changes. For reference, see: Greenham K, Sartor RC, Zorich S, Lou P, Mockler TC and McClung CR. eLife. 2020 Sep 30;9(4). <doi:10.7554/eLife.58993>.
+License: GPL (>= 2)
+Imports: limma, WGCNA, ggplot2, pwalign, Biostrings, hashr
+Suggests: edgeR
+NeedsCompilation: no
+Packaged: 2026-05-28 19:04:36 UTC; ryan
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-05-29 09:40:02 UTC
+Author: Ryan C. Sartor [aut, cre],
+  Kathleen Greenham [aut],
+  William Gustafson [aut]
+Maintainer: Ryan C. Sartor <sartorry@gmail.com>

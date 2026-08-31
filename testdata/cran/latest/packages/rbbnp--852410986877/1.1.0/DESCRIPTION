@@ -1,0 +1,30 @@
+Package: rbbnp
+Type: Package
+Title: A Bias Bound Approach to Non-Parametric Inference
+Version: 1.1.0
+Authors@R: c(
+    person("Xinyu", "DAI", email = "xinyu_dai@brown.edu", role = c("aut", "cre")),
+    person("Susanne M", "Schennach", role = "aut"))
+Description: A novel bias-bound approach for non-parametric inference is introduced, 
+    focusing on both density and conditional expectation estimation. 
+    It constructs valid confidence intervals that account for the presence of 
+    a non-negligible bias and thus make it possible to perform inference with 
+    optimal mean squared error minimizing bandwidths. 
+    This package is based on Schennach (2020) <doi:10.1093/restud/rdz065>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://xinyudai.net/rbbnp-dev/
+Imports: dplyr, ggplot2 (>= 3.4.0), gridExtra, pracma, purrr, Rglpk,
+        tidyr
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-07 05:53:15 UTC; clawdbot
+Author: Xinyu DAI [aut, cre],
+  Susanne M Schennach [aut]
+Maintainer: Xinyu DAI <xinyu_dai@brown.edu>
+Repository: CRAN
+Date/Publication: 2026-06-09 02:30:02 UTC

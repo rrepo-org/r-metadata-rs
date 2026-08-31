@@ -1,0 +1,32 @@
+Package: hybridEHR
+Type: Package
+Title: Synthetic Hybrid Electronic Health Record Generation for
+        SARS-Related Research and CT Views
+Version: 0.2.0
+Authors@R: 
+    c(
+      person("Dennis Opoku", "Boadu", email = "doboadu@st.ug.edu.gh", role = c("aut", "cre")),
+      person("Isaac", "Osei", email = "ikemillar65@gmail.com", role = "aut"),
+      person("Justice Kwame", "Appati", email = "jkappati@ug.edu.gh", role = "aut")
+    )
+Description: Generates synthetic electronic health record data, including
+    patients, encounters, vitals, laboratory results, medications,
+    procedures, and allergies. The package supports optional SARS-focused
+    and computed tomography (CT) research views and export to CSV, SQLite,
+    and Excel formats for research and development workflows.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, tidyr, tibble, lubridate, magrittr, jsonlite, openxlsx,
+        DBI, RSQLite, rlang
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-06 10:51:14 UTC; dennisboadu
+Author: Dennis Opoku Boadu [aut, cre],
+  Isaac Osei [aut],
+  Justice Kwame Appati [aut]
+Maintainer: Dennis Opoku Boadu <doboadu@st.ug.edu.gh>
+Repository: CRAN
+Date/Publication: 2026-04-06 11:00:02 UTC

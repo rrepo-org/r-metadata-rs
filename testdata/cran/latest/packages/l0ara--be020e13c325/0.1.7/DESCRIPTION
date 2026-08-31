@@ -1,0 +1,29 @@
+Package: l0ara
+Type: Package
+Title: Sparse Generalized Linear Model with L0 Approximation for
+        Feature Selection
+Version: 0.1.7
+Date: 2026-04-25
+Authors@R: c(
+    person("Wenchuan", "Guo", email = "wguo1017@gmail.com", role = c("aut", "cre")),
+    person("Shujie", "Ma", role = "aut"),
+    person("Zhenqiu", "Liu", role = "aut")
+    )
+Description: Fits sparse generalized linear models using an adaptive ridge
+    approximation to an L0 penalty. Supported model families include
+    Gaussian, logistic, Poisson, gamma, and inverse Gaussian regression.
+    The package also provides cross-validation for selecting the penalty
+    parameter.
+License: GPL-2
+Imports: Rcpp (>= 0.12.6)
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-04-26 01:59:52 UTC; wguo
+Author: Wenchuan Guo [aut, cre],
+  Shujie Ma [aut],
+  Zhenqiu Liu [aut]
+Maintainer: Wenchuan Guo <wguo1017@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-27 07:20:02 UTC

@@ -1,0 +1,47 @@
+Package: muiDataGrid
+Type: Package
+Title: 'MUI X Data Grid' for 'shiny' Apps and 'Quarto'
+Version: 0.1.2
+Authors@R: 
+  c(person(given = "Felix",
+           family = "Luginbuhl",
+           role = c("aut", "cre", "cph"),
+           email = "felix.luginbuhl@protonmail.ch",
+           comment = c(ORCID = "0009-0008-6625-2899")),
+    person(family = "MUI",
+           role = "cph",
+           comment = "Copyright holder of the bundled '@mui/x-data-grid', '@mui/x-virtualizer', '@mui/x-internals', '@mui/private-theming' and '@mui/styled-engine' JavaScript libraries"),
+    person(family = "Meta Platforms, Inc. and affiliates",
+           role = "cph",
+           comment = "Copyright holder of the bundled 'react-is' JavaScript library; 'react' and 'react-dom' are declared as peer dependencies and provided at runtime by 'shiny.react'"))
+Maintainer: Felix Luginbuhl <felix.luginbuhl@protonmail.ch>
+Description: 
+  Provides access to 'MUI X Data Grid', a fast and extensible React
+  data table and React data grid, with filtering, sorting, pagination,
+  and more. Bundles the MIT-licensed community edition of the
+  '@mui/x-data-grid' JavaScript library (the commercial 'Pro' and
+  'Premium' tiers are not included).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 3.4)
+Imports: htmltools, shiny, shiny.react (>= 0.4.0), muiMaterial (>=
+        0.2.0), utils
+Suggests: knitr, rmarkdown, dplyr, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+URL: https://felixluginbuhl.com/muiDataGrid/
+BugReports: https://github.com/lgnbhl/muiDataGrid/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-14 10:48:41 UTC; felix
+Author: Felix Luginbuhl [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0008-6625-2899>),
+  MUI [cph] (Copyright holder of the bundled '@mui/x-data-grid',
+    '@mui/x-virtualizer', '@mui/x-internals', '@mui/private-theming'
+    and '@mui/styled-engine' JavaScript libraries),
+  Meta Platforms, Inc. and affiliates [cph] (Copyright holder of the
+    bundled 'react-is' JavaScript library; 'react' and 'react-dom' are
+    declared as peer dependencies and provided at runtime by
+    'shiny.react')
+Repository: CRAN
+Date/Publication: 2026-06-20 13:30:02 UTC

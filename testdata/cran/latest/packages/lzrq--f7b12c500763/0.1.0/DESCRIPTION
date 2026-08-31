@@ -1,0 +1,41 @@
+Package: lzrq
+Type: Package
+Title: Quantile Regression for Logarithmic Relationships with
+        Non-Positive Outcome Values
+Version: 0.1.0
+Authors@R: c(person(given = "David",
+                    family = "Valenta",
+                    role = "aut",
+                    email = "dvalenta@uottawa.ca"),
+             person(given = "Jack",
+                    family = "Fitzgerald",
+                    role = c("aut", "cre"),
+                    email = "jackfitzgeraldresearch@gmail.com"))
+Maintainer: Jack Fitzgerald <jackfitzgeraldresearch@gmail.com>
+Description: Provides the lzrq() function for estimating
+    logarithmic regression slopes in quantile regression models, permitting
+    the outcome variable to take on non-positive values. lzrq() conducts regression
+    after replacing non-positive values with a sufficiently negative value.
+    If the fitted values of a quantile regression on this transformed outcome are all 
+    greater than the negative value, then results are displayed. The resulting
+    coefficients can be meaningfully interpreted as logarithmic intensive-margin 
+    relationships between the outcome variable and the independent variables, even with 
+    non-positive values in the outcome variable. If the condition does not
+    hold for the specified quantile, then the command iteratively makes the value larger and
+    checks again. After ten iterations where the condition does not hold, the functions return
+    an error and suppress results. This is an automated adaptation of the algorithm described 
+    by Liu & Kaplan (2025) <https://drive.google.com/file/d/1F3dnhm8MrlO5aRrGt48rBWAEaBqdCBH-/view>
+    and implemented in the companion 'Stata' command 'lzqreg', described in
+    Fitzgerald et al. (2026)
+    <doi:10.31222/osf.io/juda7_v1>.
+License: CC BY 4.0
+Encoding: UTF-8
+URL: https://github.com/jack-fitzgerald/lzrq
+BugReports: https://github.com/jack-fitzgerald/lzrq/issues
+Imports: MASS, quantreg, stats
+NeedsCompilation: no
+Packaged: 2026-06-17 10:30:09 UTC; jackfitzgerald
+Author: David Valenta [aut],
+  Jack Fitzgerald [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-06-22 15:10:08 UTC

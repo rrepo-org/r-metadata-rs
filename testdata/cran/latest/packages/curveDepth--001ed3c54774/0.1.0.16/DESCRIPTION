@@ -1,0 +1,29 @@
+Package: curveDepth
+Version: 0.1.0.16
+Date: 2025-09-21
+Title: Tukey Curve Depth and Distance in the Space of Curves
+Authors@R: c(person("Pavlo", "Mozharovskyi", role = c("aut", "cre"), 
+                    email = "pavlo.mozharovskyi@telecom-paristech.fr"), 
+             person("Pierre", "Lafaye De Micheaux", role = "aut", 
+                    email = "lafaye@unsw.edu.au"), 
+             person("Myriam", "Vimond", role = "aut", 
+                    email = "myriam.vimond@ensai.fr"))
+Depends: Rcpp, ddalpha
+Description: Data recorded as paths or trajectories may be suitably described 
+  by curves, which are independent of their parametrization. For the space of 
+  such curves, the package provides functionalities for reading curves, sampling 
+  points on curves, calculating distance between curves and for computing Tukey
+  curve depth of a curve w.r.t. to a bundle of curves. For details see 
+  Lafaye De Micheaux, Mozharovskyi, and Vimond (2021) <doi:10.48550/arXiv.1901.00180>.
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-09-21 08:33:46 UTC; pavlomozharovskyi
+Author: Pavlo Mozharovskyi [aut, cre],
+  Pierre Lafaye De Micheaux [aut],
+  Myriam Vimond [aut]
+Maintainer: Pavlo Mozharovskyi <pavlo.mozharovskyi@telecom-paristech.fr>
+Repository: CRAN
+Date/Publication: 2025-09-21 08:50:02 UTC

@@ -1,0 +1,31 @@
+Package: cantrends
+Title: Fit Segmented Regression Models
+Version: 0.1.0
+Authors@R: c(
+    person("Matthew T.", "Warkentin", , "matthew.warkentin@ucalgary.ca", 
+           role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-8730-3511")),
+    person("John", "Hutchinson", , "john.hutchinson@ucalgary.ca", role = "ctb"),
+    person("Yibing", "Ruan", , "yibing.ruan@cancercarealberta.ca", role = "ctb")
+  )
+Description: Estimates piecewise linear spline models for assessing temporal
+    trends in cancer incidence and mortality rates. Provides tools for
+    identifying and reporting knot locations, annual percent changes (APCs), 
+    and average annual percent changes (AAPCs), facilitating the analysis and 
+    communication of changes in cancer rates over time.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3.9000
+Depends: R (>= 4.1)
+Imports: broom, carrier (>= 0.3.0), cli, dplyr, glue, lspline, mirai
+        (>= 2.5.1), purrr (>= 1.1.0), rlang, tibble
+URL: https://github.com/mattwarkentin/cantrends
+BugReports: https://github.com/mattwarkentin/cantrends/issues
+NeedsCompilation: no
+Packaged: 2026-08-20 23:00:05 UTC; matt
+Author: Matthew T. Warkentin [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8730-3511>),
+  John Hutchinson [ctb],
+  Yibing Ruan [ctb]
+Maintainer: Matthew T. Warkentin <matthew.warkentin@ucalgary.ca>
+Repository: CRAN
+Date/Publication: 2026-08-26 20:00:08 UTC

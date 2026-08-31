@@ -1,0 +1,26 @@
+Package: sdf.test
+Title: Nonparametric Two Sample Test for Equality of Spectral Densities
+Version: 0.0.1.0
+Authors@R: c(
+	person("Ilaria", "Nadin", email="ilaria.nadin@gmail.com", role = c("aut", "cre")), 
+	person("Tatyana", "Krivobokova",  role = c("aut")), 
+	person("Farida", "Enikeeva",  role = c("aut")), 
+	person("Karolina", "Klockmann", role = c("aut")))
+Description: Nonparametric method for testing the equality of the spectral densities of two time series of possibly different lengths. The time series are preprocessed with the discrete cosine transform and the variance stabilising transform to obtain an approximate Gaussian regression setting for the log-spectral density function. The test statistic is based on the squared L2 norm of the difference between the estimated log-spectral densities. The test returns the result, the statistic value, and the p-value. It also provides the estimated empirical quantile and null distribution under the hypothesis of equal spectral densities. An example using EEG data is included. For details see Nadin, Krivobokova, Enikeeva (2026), <doi:10.48550/arXiv.2602.10774>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: dtt, stats
+Suggests: doParallel, foreach, parallel, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-02-19 10:29:13 UTC; nadin
+Author: Ilaria Nadin [aut, cre],
+  Tatyana Krivobokova [aut],
+  Farida Enikeeva [aut],
+  Karolina Klockmann [aut]
+Maintainer: Ilaria Nadin <ilaria.nadin@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-23 17:00:02 UTC

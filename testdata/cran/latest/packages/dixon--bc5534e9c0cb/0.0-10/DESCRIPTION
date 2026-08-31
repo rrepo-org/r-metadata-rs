@@ -1,0 +1,27 @@
+Package: dixon
+Type: Package
+Title: Nearest Neighbour Contingency Table Analysis
+Version: 0.0-10
+Date: 2025-05-01
+Authors@R: c(person(given = "Marcelino",
+                        family = "de la Cruz Rot",
+                        role = c("aut", "cre"),
+                        email = "marcelino.delacruz@urjc.es",
+                        comment = c(ORCID ="0000-0002-9080-4525")),
+                        person(given ="Philip M.", 
+                        family = "Dixon",
+                        role = "aut"))
+Depends: splancs, spatstat.geom, spatstat (>= 2.0-0)
+Suggests: ecespa
+Description: Function to test spatial segregation and association based in contingency table analysis of nearest neighbour counts following Dixon (2002) <doi:10.1080/11956860.2002.11682700>. Some 'Fortran' code has been included to the original dixon2002() function of the 'ecespa' package to improve speed.
+License: GPL (>= 2)
+LazyLoad: yes
+LazyData: yes
+NeedsCompilation: yes
+Packaged: 2025-05-01 18:17:50 UTC; marcelino
+Author: Marcelino de la Cruz Rot [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9080-4525>),
+  Philip M. Dixon [aut]
+Maintainer: Marcelino de la Cruz Rot <marcelino.delacruz@urjc.es>
+Repository: CRAN
+Date/Publication: 2025-05-01 18:50:02 UTC

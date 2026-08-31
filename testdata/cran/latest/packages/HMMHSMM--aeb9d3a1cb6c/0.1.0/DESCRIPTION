@@ -1,0 +1,36 @@
+Package: HMMHSMM
+Type: Package
+Title: Inference and Estimation of Hidden Markov Models and Hidden
+        Semi-Markov Models
+Version: 0.1.0
+Authors@R: c(person("Aimee", "Cody", email = "codai942@student.otago.ac.nz", role = c("aut")), person("Ting", "Wang",email = "ting.wang@otago.ac.nz", role = c("cre", "ctb"), comment = "Research Supervisor"))
+Maintainer: Ting Wang <ting.wang@otago.ac.nz>
+Description: Provides flexible maximum likelihood estimation and inference for Hidden
+    Markov Models (HMMs) and Hidden Semi-Markov Models (HSMMs), as well as the
+    underlying systems in which they operate. The package supports a wide range
+    of observation and dwell-time distributions, offering a flexible modelling
+    framework suitable for diverse practical data. Efficient implementations of 
+    the forward-backward and Viterbi algorithms are provided via 'Rcpp' for enhanced 
+    computational performance. Additional functionality includes model simulation, 
+    residual analysis, non-initialised estimation, local and global decoding, 
+    calculation of diverse information criteria, computation of confidence intervals 
+    using parametric bootstrap methods, numerical covariance matrix estimation, and 
+    comprehensive visualisation functions for interpreting the data-generating 
+    processes inferred from the models. Methods follow standard approaches described 
+    by Guédon (2003) <doi:10.1198/1061860032030>, 
+    Zucchini and MacDonald (2009, ISBN:9781584885733), and 
+    O'Connell and Højsgaard (2011) <doi:10.18637/jss.v039.i04>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 1.0.0), evd, extRemes, stats, MASS, mnormt,
+        grDevices, graphics, utils
+LinkingTo: Rcpp
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-12-12 19:13:26 UTC; aimee
+Author: Aimee Cody [aut],
+  Ting Wang [cre, ctb] (Research Supervisor)
+Repository: CRAN
+Date/Publication: 2025-12-18 14:20:10 UTC

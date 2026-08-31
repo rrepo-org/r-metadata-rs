@@ -1,0 +1,44 @@
+Package: mpmaggregate
+Type: Package
+Title: Aggregate Matrix Population Models
+Version: 0.2.6
+Date: 2026-05-23
+Author: Richard A. Hinrichsen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0761-3005>),
+  Roberto Salguero-Gomez [aut] (ORCID:
+    <https://orcid.org/0000-0002-6085-4433>),
+  Hiroyuki Yokomizo [aut] (ORCID:
+    <https://orcid.org/0000-0001-9814-8465>)
+Maintainer: Richard A. Hinrichsen <r.hinrichsen.ecology@gmail.com>
+Authors@R: c(
+      person(c("Richard", "A."), "Hinrichsen", , "r.hinrichsen.ecology@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0761-3005")),
+      person("Roberto", "Salguero-Gomez", , "rob.salguero@zoo.ox.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0002-6085-4433")),
+      person("Hiroyuki", "Yokomizo", ,"hiroyuki.yokomizo@nies.go.jp", role="aut",
+           comment = c(ORCID = "0000-0001-9814-8465"))
+  )
+Description: Aggregates matrix population models (MPMs) in both the lambda (stable 
+    growth rate) and R0 (net reproductive rate) frameworks, including standard and 
+    elasticity-consistent aggregators. Standard aggregation in the lambda framework 
+    maintains consistent lambda and stable stage distribution, while standard aggregation 
+    in the R0 framework maintains consistent R0 and cohort stable stage distribution. 
+    Elasticity-consistent aggregators maintain these same consistencies with respect
+    to the chosen framework and additionally preserve consistent reproductive values in 
+    the lambda framework and cohort reproductive values in the R0 framework. Aggregation 
+    can take the form of general-to-general MPM (mpm_aggregate) or Leslie-to-Leslie
+    MPM (leslie_aggregate).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: expm
+Suggests: testthat (>= 3.0.0), roxygen2, knitr, rmarkdown, Rcompadre,
+        kableExtra, rphylopic, collidr, png
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-24 01:43:31 UTC; Rich
+Repository: CRAN
+Date/Publication: 2026-05-24 09:40:02 UTC

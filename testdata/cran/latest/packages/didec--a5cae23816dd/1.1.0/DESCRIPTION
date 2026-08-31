@@ -1,0 +1,33 @@
+Package: didec
+Type: Package
+Title: Directed Dependence Coefficient
+Version: 1.1.0
+Authors@R: c(person(given = "Yuping",family = "Wang",role = c("aut", "cre"),email = "yuping.wang@plus.ac.at"),
+             person(given = "Sebastian", family = "Fuchs", role = "aut", email = "sebastian.fuchs@plus.ac.at"),
+             person(given = "Jonathan", family = "Ansari", role = "aut", email = "jonathan.ansari@plus.ac.at"))
+Maintainer: Yuping Wang <yuping.wang@plus.ac.at>
+Description: Directed Dependence Coefficient (didec) is a measure of functional dependence. 
+    Multivariate Feature Ordering by Conditional Independence (MFOCI) is a variable selection 
+    algorithm based on didec. 
+    Hierarchical Variable Clustering (VarClustPartition) is a variable clustering method 
+    based on didec. 
+    For more information, see the paper by Ansari and Fuchs 
+    (2025, <doi:10.48550/arXiv.2212.01621>), and the paper by Fuchs and Wang 
+    (2024, <doi:10.1016/j.ijar.2024.109185>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: copBasic (>= 2.2.3), cowplot (>= 1.1.2), dendextend (>=
+        1.17.1), FOCI (>= 0.1.3), ggplot2 (>= 3.4.4), graphics (>=
+        4.3.0), grDevices (>= 0.5-1), gtools (>= 3.9.5), pcaPP (>=
+        2.0-5), phylogram (>= 2.1.0), RANN (>= 2.6.1), rlang (>=
+        1.1.4), stats (>= 4.3.0)
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-01-30 09:50:04 UTC; yupin
+Author: Yuping Wang [aut, cre],
+  Sebastian Fuchs [aut],
+  Jonathan Ansari [aut]
+Repository: CRAN
+Date/Publication: 2026-02-02 08:30:02 UTC

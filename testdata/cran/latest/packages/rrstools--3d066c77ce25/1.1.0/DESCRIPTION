@@ -1,0 +1,29 @@
+Package: rrstools
+Title: Analyzing RoboCupRescue Simulation Data
+Version: 1.1.0
+Authors@R: 
+    person("Keisuke", "Ando",
+           email   = "nononoexe@ymail.ne.jp",
+           role    = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-4085-2067"))
+Description: Tools for analyzing data from RoboCupRescue Simulation (RRS)
+    <https://rescuesim.robocup.org>, a disaster rescue simulation platform.
+    Supports reading virtual city map and disaster scenario files into
+    analyzable data structures and provides functions for their visualization.
+License: MIT + file LICENSE
+URL: https://nononoexe.github.io/rrstools/
+Depends: R (>= 3.5)
+Imports: graphics, jsonlite, sf, stats, utils, xml2
+Suggests: spelling, testthat (>= 3.3.0), withr
+LinkingTo: cpp11
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-06-03 05:18:54 UTC; ando
+Author: Keisuke Ando [aut, cre] (ORCID:
+    <https://orcid.org/0009-0002-4085-2067>)
+Maintainer: Keisuke Ando <nononoexe@ymail.ne.jp>
+Repository: CRAN
+Date/Publication: 2026-06-08 19:30:14 UTC

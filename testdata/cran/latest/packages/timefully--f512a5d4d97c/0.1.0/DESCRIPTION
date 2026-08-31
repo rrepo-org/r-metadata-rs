@@ -1,0 +1,30 @@
+Package: timefully
+Type: Package
+Title: Time-Series Management Made Easy
+Version: 0.1.0
+Authors@R: 
+    person(given = "Marc", family = "Cañigueral", role = c("aut", "cre"),
+           email = "marccanyigueral@gmail.com",
+           comment = c(ORCID = "0000-0001-9724-5829"))
+Description: Manage time-series data frames across time zones, resolutions, and date ranges, 
+    while filling gaps using weekday/hour patterns or simple fill helpers or plotting them interactively.
+    It is designed to work seamlessly with the tidyverse and dygraphs environments.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat (>= 3.0.0), rmarkdown
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr, lubridate, rlang, purrr, dygraphs
+URL: https://github.com/resourcefully-dev/timefully/,
+        https://resourcefully-dev.github.io/timefully/
+BugReports: https://github.com/resourcefully-dev/timefully/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-12-04 09:24:54 UTC; marc
+Author: Marc Cañigueral [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9724-5829>)
+Maintainer: Marc Cañigueral <marccanyigueral@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-10 20:40:02 UTC

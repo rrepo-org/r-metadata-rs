@@ -1,0 +1,24 @@
+Package: cdlsim
+Title: Simulation of Cropland Data Layer Products from the USDA
+Version: 0.1.0
+Authors@R: 
+    person("Haley", "Burger", , "A02425259@usu.edu", role = c("aut", "cre", "cph"))
+Description: Provides tools to simulate categorical raster data, including
+    objects from the 'terra' package. Functions focus on generating edge pixel
+    values from reclassified raster data derived from the United States
+    Department of Agriculture (USDA) Cropland Data Layer products.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, terra, landscapemetrics, readxl, utils, Rcpp
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-04-13 15:02:23 UTC; haleyburger
+Author: Haley Burger [aut, cre, cph]
+Maintainer: Haley Burger <A02425259@usu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-20 13:00:21 UTC

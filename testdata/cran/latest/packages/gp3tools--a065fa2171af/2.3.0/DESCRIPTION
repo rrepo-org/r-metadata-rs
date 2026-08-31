@@ -1,0 +1,45 @@
+Package: gp3tools
+Type: Package
+Title: Import, Inspect, Analyse, and Report Gazepoint GP3 Exports
+Version: 2.3.0
+Authors@R: c(
+    person(
+      given = "Stefanos",
+      family = "Balaskas",
+      email = "s.balaskas@ac.upatras.gr",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-2444-9796")
+    )
+  )
+Description: Tools for importing, inspecting, cleaning, summarising,
+    modelling, and reporting Gazepoint GP3 and Gazepoint Analysis CSV
+    exports. The package supports offline workflows for all-gaze,
+    fixation, pupil, area-of-interest, transition, time-course, quality-audit, and
+    manuscript-reporting analyses.
+    The package methodology is described in the peer-reviewed
+    software paper <doi:10.3390/jemr19040076>.
+License: MIT + file LICENSE
+LazyData: true
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, readr, rlang, stringr, tibble, tidyr
+Suggests: brms, cluster, DHARMa, emmeans, eyetools, glmmTMB, knitr,
+        lme4, magick, mgcv, png, pracma, rmarkdown, shiny, testthat (>=
+        3.0.0), TraMineR
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+URL: https://github.com/stefanosbalaskas/gp3tools,
+        https://stefanosbalaskas.github.io/gp3tools/,
+        https://doi.org/10.5281/zenodo.21292384,
+        https://doi.org/10.3390/jemr19040076
+BugReports: https://github.com/stefanosbalaskas/gp3tools/issues
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2026-08-16 23:22:35 UTC; Stefanos-PC
+Author: Stefanos Balaskas [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2444-9796>)
+Maintainer: Stefanos Balaskas <s.balaskas@ac.upatras.gr>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:43:15 UTC

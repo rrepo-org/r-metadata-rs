@@ -1,0 +1,29 @@
+Package: consolidatePacks
+Type: Package
+Title: Eliminate '@import' by Incorporating Dependencies Directly into
+        the Package
+Version: 1.0.0
+Date: 2026-06-03
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Depends: R (>= 4.2.0)
+Imports: vprint, stringr, utils, devtools
+Description: The purpose of this package is to remove the '@import' dependence of an external package
+  by consolidating the functions into your package. This may be necessary when the '@import'
+  package is decommissioned by CRAN, and you do not want your dependent package to also
+  be decommissioned. The functions in this package recursively retrieve dependencies in the
+  external package. It also performs the other needed bookkeeping, such as retrieving .Rd
+  files in the man subdirectory.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-03 23:13:53 UTC; barryzeeberg
+Author: Barry Zeeberg [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-06-09 07:10:07 UTC

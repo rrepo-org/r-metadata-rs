@@ -1,0 +1,42 @@
+Package: mos
+Type: Package
+Title: Simulation and Moment Computation for Order Statistics
+Version: 0.1.4
+Authors@R: c(
+    person(given = "Reyhaneh", 
+    family = "Arafeh", 
+    email = "reyhane.arafe@gmail.com", 
+    role = c("aut", "cre")),
+    person(given = "Mahdi", 
+    family = "Salehi", 
+    email = "salehi2sms@gmail.com", 
+    comment = c(ORCID = "0000-0002-0620-0340"),
+    role = "aut"))
+Description: Provides a comprehensive set of tools for working with order statistics,
+    including functions for simulating order statistics, censored samples (Type I and Type II),
+    and record values from various continuous distributions. Additionally, it offers functions 
+    to compute moments (mean, variance, skewness, kurtosis) of order statistics for several 
+    continuous distributions. These tools assist researchers and statisticians in understanding 
+    and analyzing the properties of order statistics and related data. The methods and algorithms 
+    implemented in this package are based on several published works, including 
+    Ahsanullah et al (2013, ISBN:9789491216831), 
+    Arnold and Balakrishnan (2012, ISBN:1461236444), 
+    Harter and Balakrishnan (1996, ISBN:9780849394522), 
+    Balakrishnan and Sandhu (1995) <doi:10.1080/00031305.1995.10476150>,
+    Genç (2012) <doi:10.1007/s00362-010-0320-y>, 
+    Makouei et al (2021) <doi:10.1016/j.cam.2021.113386> and
+    Nagaraja (2013) <doi:10.1016/j.spl.2013.06.028>.
+License: GPL-3
+Encoding: UTF-8
+Imports: stats, hypergeo2
+Suggests: knitr, rmarkdown, moments
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-15 14:22:16 UTC; silkroadnb
+Author: Reyhaneh Arafeh [aut, cre],
+  Mahdi Salehi [aut] (ORCID: <https://orcid.org/0000-0002-0620-0340>)
+Maintainer: Reyhaneh Arafeh <reyhane.arafe@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-15 15:10:10 UTC

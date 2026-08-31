@@ -1,0 +1,44 @@
+Package: simplexgof
+Type: Package
+Title: Bootstrap-Calibrated Goodness-of-Fit Test for Simplex Regression
+Version: 0.1.0
+Date: 2026-06-12
+Authors@R: 
+    person("Raydonal", "Ospina",
+           email = "raydonal@de.ufpe.br",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9884-9090"))
+Description: Implements the bootstrap-calibrated local-influence
+    goodness-of-fit test for simplex regression models with constant or
+    varying dispersion, following the local influence approach of
+    Zhu and Zhang (2004) <doi:10.1093/biomet/91.3.579> and the simplex
+    regression model of Barndorff-Nielsen and Jorgensen (1991)
+    <doi:10.1016/0047-259X(91)90008-P>. The test statistic aggregates
+    individual local-influence measures under case-weight perturbation.
+    Because the first-order asymptotic normal calibration is severely
+    liberal in finite samples, a parametric bootstrap calibration is
+    provided that restores accurate size control and delivers high power
+    against omitted covariates, neglected dispersion, and distributional
+    misspecification. Plotting functions reproduce the figures and tables
+    of the companion methodological paper. Computational kernels are
+    implemented in 'C++' via 'Rcpp' and 'RcppArmadillo' for speed, and two
+    real datasets are bundled.
+License: GPL-3
+URL: https://github.com/Raydonal/simplexgof,
+        https://raydonal.github.io/simplexgof/
+BugReports: https://github.com/Raydonal/simplexgof/issues
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.0), parallel, stats, graphics, grDevices
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-06-12 23:51:40 UTC; raydonal
+Author: Raydonal Ospina [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9884-9090>)
+Maintainer: Raydonal Ospina <raydonal@de.ufpe.br>
+Config/roxygen2/version: 8.0.0
+Repository: CRAN
+Date/Publication: 2026-06-19 12:20:02 UTC

@@ -1,0 +1,36 @@
+Package: gedi2
+Type: Package
+Title: Gene Expression Decomposition and Integration
+Version: 2.3.4
+Date: 2026-05-09
+Authors@R: c(
+    person("Arsham", "Mikaeili Namini", email = "arsham.mikaeilinamini@mail.mcgill.ca", role = c("aut", "cre")),
+    person("Hamed", "S.Najafabadi", email = "hamed.najafabadi@mcgill.ca", role = c("aut"))
+    )
+Description: A memory-efficient implementation for integrating gene expression data
+    from single-cell RNA sequencing experiments. Uses a C++ backend with
+    thin R wrappers to enable analysis of large-scale single-cell datasets. The
+    package supports multiple data modalities including count matrices, paired
+    data (splicing, RNA velocity, CITE-seq), and binary indicators. It implements
+    a latent variable model with block coordinate descent optimization for
+    dimensionality reduction and batch effect correction. Core algorithms are described in Madrigal et al. (2024) <doi:10.1038/s41467-024-50963-0>.
+License: MIT + file LICENSE
+URL: https://github.com/csglab/gedi2
+BugReports: https://github.com/csglab/gedi2/issues
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.0), R6 (>= 2.5.0), Matrix (>= 1.3.0), ggplot2,
+        scales, methods, stats, utils
+LinkingTo: Rcpp, RcppEigen
+Suggests: hdf5r, uwot, digest, glmnet, Seurat, SeuratObject,
+        SingleCellExperiment, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+SystemRequirements: GNU make
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-05-13 17:32:10 UTC; arsham79
+Author: Arsham Mikaeili Namini [aut, cre],
+  Hamed S.Najafabadi [aut]
+Maintainer: Arsham Mikaeili Namini <arsham.mikaeilinamini@mail.mcgill.ca>
+Repository: CRAN
+Date/Publication: 2026-05-19 07:30:21 UTC

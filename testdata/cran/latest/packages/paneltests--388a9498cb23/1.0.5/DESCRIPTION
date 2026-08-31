@@ -1,0 +1,38 @@
+Package: paneltests
+Type: Package
+Title: Panel Data Pre-Testing and Diagnostic Suite
+Version: 1.0.5
+Authors@R: person("Muhammad Abdullah", "Alkhalaf", email = "muhammedalkhalaf@gmail.com",
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0009-0002-2677-9246"))
+Description: Pre-testing and diagnostic tools for panel data analysis.
+    Researchers should run these tests before any panel regression to
+    verify modelling assumptions. The package implements: (1) the Hsiao
+    (2014, <ISBN:978-1-107-65763-2>) homogeneity F-tests (F1/F2/F3),
+    Swamy (1970) <doi:10.2307/1913012> parameter heterogeneity test, and
+    Pesaran (2004) <doi:10.2139/ssrn.572504> cross-sectional dependence
+    test via xtpretest(); (2) missing-data detection, mechanism testing,
+    and imputation for unbalanced panels via xtmispanel(); (3)
+    quantile-regression cross-sectional dependence tests (T_tau and
+    T-tilde_tau statistics) of Demetrescu, Hosseinkouchack and Rodrigues
+    (2023) <doi:10.1016/j.jeconom.2022.09.001> via xtcsdq(); and (4) the
+    panel quantile-regression slope homogeneity S-hat and D-hat
+    statistics of Galvao, Juhl, Montes-Rojas and Olmo (2017)
+    <doi:10.1080/07350015.2015.1054493> via xtqsh(). Together these
+    tests address three fundamental pre-testing questions: (i) are
+    slopes homogeneous? (ii) is there cross-sectional dependence? and
+    (iii) is the panel balanced and is missingness ignorable?
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: stats, utils
+Suggests: testthat (>= 3.0.0), plm, zoo, quantreg
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-29 17:22:26 UTC; acad_
+Author: Muhammad Abdullah Alkhalaf [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-2677-9246>)
+Maintainer: Muhammad Abdullah Alkhalaf <muhammedalkhalaf@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-04 11:30:03 UTC

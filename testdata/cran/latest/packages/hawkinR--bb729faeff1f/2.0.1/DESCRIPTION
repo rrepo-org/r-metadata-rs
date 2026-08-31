@@ -1,0 +1,37 @@
+Package: hawkinR
+Title: Interface to the 'Hawkin Dynamics' Force Platform API
+Version: 2.0.1
+Authors@R: 
+    person("Lauren", "Green", , "lauren@hawkindynamics.com", role = c("aut", "cre"))
+Description: Provides a secure and configurable interface to the 'Hawkin Dynamics' API for accessing athlete performance data, tests, and metadata.
+    The package supports profile-based authentication with secure credential storage via the operating system keychain, automatic access token refresh, and region-aware API routing.
+    Designed for reproducible analysis, data synchronization workflows, and production deployment.
+URL: https://connect.hawkindynamics.com/r,
+        https://github.com/HawkinDynamics/hawkinR,
+        https://hawkindynamics.github.io/hawkinR/
+BugReports: https://github.com/HawkinDynamics/hawkinR/issues
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: S7, dplyr (>= 0.7.4), jsonlite (>= 1.8.7), lubridate (>=
+        1.9.2), magrittr (>= 2.0.3), rlang (>= 1.1.1), keyring, janitor
+        (>= 2.2.0), stats, httr2 (>= 1.0.1), logger (>= 0.3.0), stringr
+        (>= 1.4.0), tidyselect (>= 1.2.1), progress
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), mockery, withr,
+        crayon, httpuv, arrow
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+Collate: 'MetricDictionary.R' 'utils.R' 'auth_system.R'
+        'create_athletes.R' 'get_athletes.R' 'get_cop.R'
+        'get_forcetime.R' 'get_tests.R' 'get_forcetime_bulk.R'
+        'get_groups.R' 'get_metrics.R' 'get_tags.R' 'get_teams.R'
+        'get_testTypes.R' 'logController.R' 'update_athletes.R'
+        'utils-pipe.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2026-07-21 06:27:25 UTC; LaurenGreen
+Author: Lauren Green [aut, cre]
+Maintainer: Lauren Green <lauren@hawkindynamics.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 07:20:07 UTC

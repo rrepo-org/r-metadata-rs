@@ -1,0 +1,42 @@
+Package: exametrika
+Type: Package
+Title: Test Data Engineering
+Version: 2.0.0
+Authors@R: 
+    person("Koji Kosugi", , , "kosugitti@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5816-0099"))
+Description: Implements comprehensive test data engineering methods as described in 
+    Shojima (2022, ISBN:978-9811699856). Provides statistical techniques for 
+    engineering and processing test data: Classical Test Theory (CTT) with 
+    reliability coefficients for continuous ability assessment; Item Response 
+    Theory (IRT) including Rasch, 2PL, and 3PL models with item/test information 
+    functions; Latent Class Analysis (LCA) for nominal clustering; Latent Rank 
+    Analysis (LRA) for ordinal clustering with automatic determination of cluster 
+    numbers; Biclustering methods including infinite relational models for 
+    simultaneous clustering of examinees and items without predefined cluster 
+    numbers; and Bayesian Network Models (BNM) for visualizing inter-item 
+    dependencies. Features local dependence analysis through LRA and biclustering, 
+    parameter estimation, dimensionality assessment, and network structure 
+    visualization for educational, psychological, and social science research.
+License: MIT + file LICENSE
+Language: en-US
+Encoding: UTF-8
+LazyData: true
+BuildVignettes: true
+URL: https://kosugitti.github.io/exametrika/,
+        https://github.com/kosugitti/exametrika
+BugReports: https://github.com/kosugitti/exametrika/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Depends: R (>= 4.1.0)
+Imports: mvtnorm, igraph, Rcpp (>= 1.0.7)
+LinkingTo: Rcpp
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-20 01:22:39 UTC; newton
+Author: Koji Kosugi [aut, cre] (ORCID: <https://orcid.org/0000-0001-5816-0099>)
+Maintainer: Koji Kosugi <kosugitti@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 10:50:02 UTC

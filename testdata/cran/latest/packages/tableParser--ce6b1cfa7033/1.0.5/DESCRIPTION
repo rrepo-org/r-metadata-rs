@@ -1,0 +1,22 @@
+Package: tableParser
+Title: Parse Tabled Content to Text Vector and Extract Statistical
+        Standard Results
+Date: 2026-04-09
+Version: 1.0.5
+Authors@R: c(person("Ingmar", "Böschen", email = "ingmar.boeschen@uni-hamburg.de", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1159-3991")))
+Maintainer: Ingmar Böschen <ingmar.boeschen@uni-hamburg.de>
+Description: Features include the ability to extract tabled content from NISO-JATS-coded XML, any native HTML or HML file, DOCX, and PDF documents, and then collapse it into a text format that is readable by humans by mimicking the actions of a screen reader. As tables within PDF documents are extracted with the 'tabulapdf' package, and the table captions and footnotes cannot be extracted, the results on tables within PDF documents have to be considered less precise. The function table2matrix() returns a list of the tables within a document as character matrices. table2text() collapses the matrix content into a list of character strings by imitating the behavior of a screen reader. The textual representation of characters and numbers can be unified with unifyMatrix() before parsing. The function table2stats() extracts the tabled statistical test results from the collapsed text with the function standardStats() from the 'JATSdecoder' package and, if activated, checks the reported and coded p-values for consistency. Due to the great variability and potential complexity of table structures, parsing accuracy may vary. A detailed description of how 'tableParser' works is provided here: <doi:10.48550/arXiv.2603.19756>.
+Depends: R (>= 4.1)
+Imports: utils, stats, JATSdecoder, tabulapdf
+License: GPL-3
+URL: https://github.com/ingmarboeschen/tableParser
+BugReports: https://github.com/ingmarboeschen/tableParser/issues
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-04-09 07:53:06 UTC; ingmar
+Author: Ingmar Böschen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1159-3991>)
+Repository: CRAN
+Date/Publication: 2026-04-09 08:10:02 UTC

@@ -1,0 +1,34 @@
+Package: datamuseum
+Title: Spatial and Taxonomic Data Utilities for Specimen Datasets
+Version: 0.1.0
+Depends: R (>= 4.1.0)
+Authors@R: c(
+    person("Bryson Y.", "Torgovitsky", email = "torgovitsky.yerik.bryson.q7@dc.tohoku.ac.jp", role = c("aut", "cre")),
+    person("Cheryl L.", "Ames", email = "ames.cheryl.lynn.a1@tohoku.ac.jp", role = "aut"))
+Description: A management tool for specimen data ranging from public museum
+    collections to private specimen repositories. The main types of data
+    addressed are spatial (coordinates, longitude and latitude) and taxonomic
+    data (ranking and nomenclature validity) with some additional options for
+    user-determined dataset refinement. Combined or individual calls to the
+    online repositories of the Global Biodiversity Information Facility (GBIF)
+    via 'rgbif' and the Integrated Taxonomic Information System (ITIS) via
+    'taxize' enable built-in taxonomic checks.
+URL: https://btorgovitsky00.github.io/datamuseum/
+BugReports: https://github.com/btorgovitsky00/datamuseum/issues/
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: dplyr, stringr, rgbif, taxize, memoise, cachem, rnaturalearth,
+        sf, furrr, future, tibble, tools, stats, utils, rlang
+Suggests: R.utils, ggplot2, knitr, rmarkdown, tidyr, lubridate,
+        googlesheets4, maps, rnaturalearthdata
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-21 10:36:40 UTC; burai
+Author: Bryson Y. Torgovitsky [aut, cre],
+  Cheryl L. Ames [aut]
+Maintainer: Bryson Y. Torgovitsky <torgovitsky.yerik.bryson.q7@dc.tohoku.ac.jp>
+Repository: CRAN
+Date/Publication: 2026-05-12 18:30:02 UTC

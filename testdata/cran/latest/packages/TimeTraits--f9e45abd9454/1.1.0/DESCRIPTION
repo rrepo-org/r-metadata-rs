@@ -1,0 +1,31 @@
+Package: TimeTraits
+Type: Package
+Title: Functional Data Analysis Pipeline, Extracting Functional Traits
+        from Biological Time-Series Data
+Version: 1.1.0
+Authors@R: 
+    person("Sarah", "Lock", 
+           email = "sarah.lock@york.ac.uk", 
+           role = c("aut", "cre"))
+Description: Provides a pipeline of tools for analysing circadian 
+    time-series data using functional data analysis (FDA). The package 
+    supports smoothing of rhythmic time series, functional principle 
+    component analysis (FPCA), and extraction of group-level traits from 
+    functional representations. Analyses can incorporate multiple curve 
+    derivatives and optional temporal segmentation, enabling comparative 
+    analysis of circadian dynamics across experimental groups and time 
+    windows.
+URL: https://github.com/scllock/TimeTraits
+BugReports: https://github.com/scllock/TimeTraits/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats, pracma, lomb, fda, fdaoutlier
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-02-18 06:02:16 UTC; sarahlock
+Author: Sarah Lock [aut, cre]
+Maintainer: Sarah Lock <sarah.lock@york.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-02-20 10:30:20 UTC

@@ -1,0 +1,19 @@
+Package: appraise
+Title: Bias-Aware Evidence Synthesis in Systematic Reviews
+Version: 0.1.1
+Authors@R: 
+    person("Conrad", "Kabali", email = "conrad.kabali@utoronto.ca", role = c("aut", "cre"))
+Description: Implements a bias-aware framework for evidence synthesis in systematic reviews and health technology assessments, as described in Kabali (2025) <doi:10.1111/jep.70272>. The package models study-level effect estimates by explicitly accounting for multiple sources of bias through prior distributions and propagates uncertainty using posterior simulation. Evidence across studies is combined using posterior mixture distributions rather than a single pooled likelihood, enabling probabilistic inference on clinically or policy-relevant thresholds. The methods are designed to support transparent decision-making when study relevance and bias vary across the evidence base.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats
+Suggests: sn, VGAM, cmdstanr, rmarkdown, knitr
+Additional_repositories: https://stan-dev.r-universe.dev/
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-06 19:07:35 UTC; 12896
+Author: Conrad Kabali [aut, cre]
+Maintainer: Conrad Kabali <conrad.kabali@utoronto.ca>
+Repository: CRAN
+Date/Publication: 2026-02-09 20:00:02 UTC

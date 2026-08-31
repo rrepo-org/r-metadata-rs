@@ -1,0 +1,34 @@
+Package: mongolstats
+Type: Package
+Title: Mongolian 'NSO' 'PXWeb' Data and Boundaries (Tidy Client)
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Temuulen",
+             family = "Enebish",
+             role = c("aut", "cre", "cph"),
+             email = "temuulen@gmail.com"))
+Description: A 'tidyverse'-friendly client for the National Statistics Office of Mongolia
+    'PXWeb' API <https://data.1212.mn/> with helpers to discover tables, variables, and fetch
+    statistical data. Also includes utilities to retrieve Mongolia administrative boundaries
+    (ADM0-ADM2) as 'sf' objects from open sources for mapping and spatial analysis.
+Depends: R (>= 4.1.0)
+Imports: httr2, jsonlite, tibble, dplyr, purrr, stringr, sf, stringi,
+        curl, cli, rlang
+Suggests: testthat (>= 3.1.7), knitr, rmarkdown, memoise, cachem,
+        rappdirs, pkgdown, roxygen2, pxweb, remotes, httptest2,
+        stringdist, covr, lintr, styler, future, future.apply, ggplot2,
+        scales, forcats, tidyr, lubridate
+VignetteBuilder: knitr
+Encoding: UTF-8
+Config/testthat/edition: 3
+URL: https://temuulene.github.io/mongolstats/,
+        https://data.1212.mn/pxweb/
+BugReports: https://github.com/temuulene/mongolstats/issues
+License: MIT + file LICENSE
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-09 05:05:52 UTC; Temuulen
+Author: Temuulen Enebish [aut, cre, cph]
+Maintainer: Temuulen Enebish <temuulen@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-09 10:30:02 UTC

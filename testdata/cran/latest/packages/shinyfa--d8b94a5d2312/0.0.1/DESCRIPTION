@@ -1,0 +1,27 @@
+Package: shinyfa
+Title: Analyze the File Contents of 'shiny' Directories
+Version: 0.0.1
+Authors@R: person("Jasmine", "Daly",  email = "jasmine.dumas@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8006-2428"))
+Description: Provides tools for analyzing and understanding the file contents of 
+    large 'shiny' application directories. The package extracts key information about 
+    render functions, reactive functions, and their inputs from app files, 
+    organizing them into structured data frames for easy reference. This streamlines 
+    the onboarding process for new contributors and helps identify areas for 
+    optimization in complex 'shiny' codebases with multiple files and sourcing chains.
+URL: https://github.com/dalyanalytics/shinyfa,
+        https://dalyanalytics.github.io/shinyfa/
+BugReports: https://github.com/dalyanalytics/shinyfa/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: stringr
+Suggests: dplyr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-11-05 15:49:33 UTC; jasminedaly
+Author: Jasmine Daly [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8006-2428>)
+Maintainer: Jasmine Daly <jasmine.dumas@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-09 16:30:08 UTC

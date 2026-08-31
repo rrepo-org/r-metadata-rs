@@ -1,0 +1,62 @@
+Package: CiteSource
+Title: Data-Driven Search Strategy Development and Evidence Synthesis
+        Reporting
+Version: 0.2.1
+Date: 2026-06-08
+Authors@R: c(
+    person("Trevor", "Riley", , "tnriley@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6834-9802")),
+    person("Kaitlyn", "Hair", , "kaitlyn.hair@ed.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0003-0180-7343")),
+    person("Lukas", "Wallrich", , "lukas.wallrich@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-2121-5177")),
+    person("Matthew", "Grainger", , "matthewjamesgrainger@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-8426-6495")),
+    person("Sarah", "Young", , "sarahy@andrew.cmu.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-8301-5106")),
+    person("Chris", "Pritchard", , "chris.pritchard@ntu.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0002-1143-9751")),
+    person("Neal", "Haddaway", , "nealhaddaway@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-3902-2234")),
+    person("Martin", "Westgate", role = "cph", comment = "Author of included synthesisr fragments"),
+    person("Eliza", "Grames", role = "cph", comment = "Author of included synthesisr fragments"),
+    person("Kaitlyn", "Hair", role = "cph", comment = "Author of included ASySD deduplication code"),
+    person("CAMARADES Group", role = "cph", comment = "Authors of ASySD (github.com/camaradesuk/ASySD)")
+  )
+Description: Deduplicates bibliographic citations from multiple sources while
+             preserving customizable metadata, supporting data-driven search
+             strategy development and evidence synthesis reporting. Search
+             results can be analyzed using plots and tables, and imported or
+             exported in 'RIS' and 'CSV' formats. An interactive 'shiny'
+             application is included for exploratory use.
+License: GPL (>= 3)
+URL: https://eshackathon.github.io/CiteSource/
+BugReports: https://github.com/ESHackathon/CiteSource/issues
+Imports: dplyr, DT, forcats, ggnewscale, ggplot2, glue, gt, igraph,
+        parallelly, purrr, RecordLinkage, rlang, scales, stringr,
+        tibble, tidyr, tidyselect, UpSetR, utf8
+Suggests: bslib, htmltools, jsonlite, knitr, plotly, progressr,
+        rmarkdown, shiny, shinyalert, shinybusy, shinyjs, shinyWidgets,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-08 17:44:15 UTC; tnril
+Author: Trevor Riley [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6834-9802>),
+  Kaitlyn Hair [aut] (ORCID: <https://orcid.org/0000-0003-0180-7343>),
+  Lukas Wallrich [aut] (ORCID: <https://orcid.org/0000-0003-2121-5177>),
+  Matthew Grainger [aut] (ORCID: <https://orcid.org/0000-0001-8426-6495>),
+  Sarah Young [aut] (ORCID: <https://orcid.org/0000-0002-8301-5106>),
+  Chris Pritchard [aut] (ORCID: <https://orcid.org/0000-0002-1143-9751>),
+  Neal Haddaway [aut] (ORCID: <https://orcid.org/0000-0003-3902-2234>),
+  Martin Westgate [cph] (Author of included synthesisr fragments),
+  Eliza Grames [cph] (Author of included synthesisr fragments),
+  Kaitlyn Hair [cph] (Author of included ASySD deduplication code),
+  CAMARADES Group [cph] (Authors of ASySD (github.com/camaradesuk/ASySD))
+Maintainer: Trevor Riley <tnriley@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-16 19:50:19 UTC

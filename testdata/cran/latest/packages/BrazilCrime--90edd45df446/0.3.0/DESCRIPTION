@@ -1,0 +1,30 @@
+Package: BrazilCrime
+Title: Accesses Brazilian Public Security Data from SINESP Since 2015
+Version: 0.3.0
+Authors@R: 
+    c(
+    person("Giovanni", "Vargette", , "g216978@dac.unicamp.br", role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0009-0006-8164-5274")),
+    person("Igor", "Laltuf", , "igorlaltuf@gmail.com", role = c("aut"),
+           comment = c(ORCID = "https://orcid.org/0000-0002-5614-4404")),
+    person("Marcelo", "Justus", , "mjustus@unicamp.br", role = c("aut"),
+           comment = c(ORCID = "https://orcid.org/0000-0001-8660-1779")))
+Maintainer: Giovanni Vargette <g216978@dac.unicamp.br>
+Description: Allows access to data from the Brazilian Public Security Information System (SINESP) by state and municipality. It should be emphasized that the package only extracts the data and facilitates its manipulation in R. Therefore, its sole purpose is to support empirical research. All data credits belong to SINESP, an integrated information platform developed and maintained by the National Secretariat of Public Security (SENASP) of the Ministry of Justice and Public Security. <https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/sinesp-1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Imports: dplyr, forecast, ggplot2
+Depends: R (>= 4.1.0)
+Suggests: knitr, rmarkdown, bookdown, kableExtra, tidyr, stringr,
+        ggcorrplot, formatR, lubridate, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-05 18:10:54 UTC; giova
+Author: Giovanni Vargette [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-8164-5274>),
+  Igor Laltuf [aut] (ORCID: <https://orcid.org/0000-0002-5614-4404>),
+  Marcelo Justus [aut] (ORCID: <https://orcid.org/0000-0001-8660-1779>)
+Repository: CRAN
+Date/Publication: 2025-09-05 22:10:08 UTC

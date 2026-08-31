@@ -1,0 +1,21 @@
+Package: wired
+Type: Package
+Title: Weighted Adaptive Prediction with Structured Dependence
+Version: 1.0.1
+Authors@R: c(person("Giancarlo", "Vercellino", role = c("aut", "cre", "cph"), email = "giancarlo.vercellino@gmail.com"))
+Maintainer: Giancarlo Vercellino <giancarlo.vercellino@gmail.com>
+Description: Builds a joint probabilistic forecast across series and horizons using adaptive copulas (Gaussian/t) with shrinkage-repaired correlations. At the low level it calls a probabilistic mixer per series and horizon, which backtests several simple predictors, predicts next-window Continuous Ranked Probability Score (CRPS), and converts those scores into softmax weights to form a calibrated mixture (r/q/p/dfun). The mixer blends eight simple predictors: a naive predictor that wraps the last move in a PERT distribution; an arima predictor using auto.arima for one-step forecasts; an Exponentially Weighted Moving Average (EWMA) gaussian predictor with mean/variance under a Gaussian; a historical bootstrap predictor that resamples past horizon-aligned moves; a drift residual bootstrap predictor combining linear trend with bootstrapped residuals; a volatility-scaled naive predictor centering on the last move and scaling by recent volatility; a robust median mad predictor using median/MAD with Laplace or Normal shape; and a shrunk quantile predictor that fits a few quantile regressions over time and interpolates to a full predictive. The function then couples the per-series mixtures on a common transform (additive/multiplicative/log-multiplicative), simulates coherent draws, and returns both transformed- and level-scale samplers and summaries.
+License: GPL-3
+RoxygenNote: 7.3.3
+Imports: mc2d (>= 0.2.1), forecast (>= 8.24.0), quantreg (>= 6.1), MASS
+        (>= 7.3-65), imputeTS (>= 3.4)
+Encoding: UTF-8
+URL: https://rpubs.com/giancarlo_vercellino/wired
+Suggests: knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-04-13 05:57:01 UTC; gianc
+Author: Giancarlo Vercellino [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2026-04-13 06:20:02 UTC

@@ -1,0 +1,675 @@
+Package: agridatasets
+Type: Package
+Title: A Comprehensive Collection of Agricultural and Agronomic
+        Datasets
+Version: 0.1.1
+Maintainer: Renzo Caceres Rossi <arenzocaceresrossi@gmail.com>
+Description: Offers a rich and diverse collection of datasets focused on agriculture, agronomy, animal science, 
+    and related fields. The package includes experimental, observational, and field-trial data on crops such as rice, 
+    wheat, corn, soybean, cotton, coffee, avocado, and orange, as well as forestry species including bamboo, eucalyptus, 
+    and timber. Datasets cover plant breeding and genetics, factorial and randomized block experiments, herbicide and 
+    insecticide efficacy trials, pest and disease infestation, soil characteristics and land suitability, plant growth 
+    regulators, seed germination, and crop yield modeling. Additional datasets address animal science topics such as 
+    cattle insemination and conception, pig and broiler growth, lamb births, and toxicology studies on aquatic and 
+    non-target species. Data sources include peer-reviewed agronomic studies, uniformity and Latin square field trials, 
+    glasshouse experiments, and international agricultural surveys.
+    Designed for agronomists, researchers, plant and animal scientists, data scientists, and students, this package 
+    facilitates exploratory data analysis, statistical modeling, and hypothesis testing in agricultural and biological sciences.
+    The package includes datasets originally distributed in other R packages. The original authors and contributors associated with these source packages and
+    datasets are acknowledged in Authors@R, and the original sources and applicable licensing terms are documented in
+    LICENSES_DETAILS.md.
+License: GPL (>= 2) | GPL-3
+Language: en
+URL: https://github.com/lightbluetitan/agridatasets,
+        https://lightbluetitan.github.io/agridatasets/
+BugReports: https://github.com/lightbluetitan/agridatasets/issues
+Encoding: UTF-8
+LazyData: true
+Suggests: ggplot2, testthat (>= 3.0.0), dplyr, knitr, rmarkdown
+Depends: R (>= 4.1.0)
+Imports: utils
+Authors@R: c(
+    person(
+        given = "Renzo",
+        family = "Caceres Rossi",
+        role = c("aut", "cre"),
+        email = "arenzocaceresrossi@gmail.com",
+        comment = c(ORCID = "0009-0005-0744-854X")
+    ),
+    person(
+        given = "Prabhanjan",
+        family = "Tattar",
+        role = "ctb",
+        email = "prabhanjannt@gmail.com",
+        comment = "Author and maintainer of the original gpk package; original datasets included in agridatasets."
+    ),
+    person(
+        given = "A.P.",
+        family = "Gore",
+        role = "ctb",
+        comment = "Original contributor associated with datasets included in the gpk package."
+    ),
+    person(
+        given = "S.A.",
+        family = "Paranjape",
+        role = "ctb",
+        comment = "Original contributor associated with datasets included in the gpk package."
+    ),
+    person(
+        given = "M.B.",
+        family = "Kulkarni",
+        role = "ctb",
+        comment = "Original contributor associated with datasets included in the gpk package."
+    ),
+    person(
+        given = "Gabriel Danilo",
+        family = "Shimizu",
+        role = "ctb",
+        email = "gabrield.shimizu@gmail.com",
+        comment = c(
+            ORCID = "0000-0001-8524-508X",
+            "Author and maintainer of the original AgroR package; original datasets included in agridatasets."
+        )
+    ),
+    person(
+        given = "Rodrigo Yudi Palhaci",
+        family = "Marubayashi",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0003-2778-8654",
+            "Author and contributor of the original AgroR package; original datasets included in agridatasets."
+        )
+    ),
+    person(
+        given = "Leandro Simoes Azeredo",
+        family = "Goncalves",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0001-9700-9375",
+            "Author and contributor of the original AgroR package; original datasets included in agridatasets."
+        )
+    ),
+    person(
+        given = "Al-Ahmadgaid B.",
+        family = "Asaad",
+        role = "ctb",
+        email = "alahmadgaid@gmail.com",
+        comment = c(
+            ORCID = "0000-0003-3784-8593",
+            "Author and maintainer of the original ALUES package; original datasets included in agridatasets."
+        )
+    ),
+    person(
+        given = "Arnold R.",
+        family = "Salvacion",
+        role = "ctb",
+        email = "arsalvacion@gmail.com",
+        comment = c(
+            ORCID = "0000-0001-8868-2226",
+            "Author of the original ALUES package; original datasets included in agridatasets."
+        )
+    ),
+    person(
+        given = "Bui",
+        family = "Tan Yen",
+        role = "ctb",
+        comment = "Author of the original ALUES package; original datasets included in agridatasets."
+    ),
+    person(
+        given = "Daniel",
+        family = "Gerhard",
+        role = "ctb",
+        email = "00gerhard@gmail.com",
+        comment = "Author and maintainer of the original mcprofile package; original dataset included in agridatasets."
+    ),
+    person(
+        given = "Yves",
+        family = "Croissant",
+        role = "ctb",
+        email = "yves.croissant@univ-reunion.fr",
+        comment = "Author of the original plm package; original dataset included in agridatasets."
+    ),
+    person(
+        given = "Giovanni",
+        family = "Millo",
+        role = "ctb",
+        email = "giovanni.millo@deams.units.it",
+        comment = "Author of the original plm package; original dataset included in agridatasets."
+    ),
+    person(
+        given = "Kevin",
+        family = "Tappe",
+        role = "ctb",
+        email = "kevin.tappe@bwi.uni-stuttgart.de",
+        comment = "Author and maintainer of the original plm package; original dataset included in agridatasets."
+    ),
+    person(
+        given = "Ott",
+        family = "Toomet",
+        role = "ctb",
+        email = "otoomet@gmail.com",
+        comment = "Contributor to the original plm package."
+    ),
+    person(
+        given = "Christian",
+        family = "Kleiber",
+        role = "ctb",
+        email = "Christian.Kleiber@unibas.ch",
+        comment = "Contributor to the original plm package."
+    ),
+    person(
+        given = "Achim",
+        family = "Zeileis",
+        role = "ctb",
+        email = "Achim.Zeileis@R-project.org",
+        comment = "Contributor to the original plm package."
+    ),
+    person(
+        given = "Arne",
+        family = "Henningsen",
+        role = "ctb",
+        email = "arne.henningsen@googlemail.com",
+        comment = "Contributor to the original plm package."
+    ),
+    person(
+        given = "Liviu",
+        family = "Andronic",
+        role = "ctb",
+        comment = "Contributor to the original plm package."
+    ),
+    person(
+        given = "Nina",
+        family = "Schoenfelder",
+        role = "ctb",
+        comment = "Contributor to the original plm package."
+    ),
+    person(
+        given = "Dylan",
+        family = "Beaudette",
+        role = "ctb",
+        email = "dylan.beaudette@usda.gov",
+        comment = c(
+            ORCID = "0009-0008-2780-4785",
+            "Author and maintainer of the original aqp package; original datasets included in agridatasets."
+        )
+    ),
+    person(
+        given = "Pierre",
+        family = "Roudier",
+        role = "ctb",
+        email = "roudierp@landcareresearch.co.nz",
+        comment = "Author and contributor of the original aqp package; original datasets included in agridatasets."
+    ),
+    person(
+        given = "Andrew",
+        family = "Brown",
+        role = "ctb",
+        email = "andrew.g.brown@usda.gov",
+        comment = "Author and contributor of the original aqp package; original datasets included in agridatasets."
+    ),
+    person(
+        given = "Stephen",
+        family = "Roecker",
+        role = "ctb",
+        comment = "Author and contributor of the original aqp package; original datasets included in agridatasets."
+    ),
+    person(
+        given = "David",
+        family = "Rossiter",
+        role = "ctb",
+        comment = "Contributor to the original aqp package."
+    ),
+    person(
+        given = "Mateusz",
+        family = "Staniak",
+        role = "ctb",
+        email = "mateusz.staniak@math.uni.wroc.pl",
+        comment = "Author and maintainer of the original live package; original dataset included in agridatasets."
+    ),
+    person(
+        given = "Przemyslaw",
+        family = "Biecek",
+        role = "ctb",
+        email = "przemyslaw.biecek@gmail.com",
+        comment = "Author of the original live package; original dataset included in agridatasets."
+    ),
+    person(
+        given = "Emi",
+        family = "Tanaka",
+        role = "ctb",
+        email = "dr.emi.tanaka@gmail.com",
+        comment = c(
+            ORCID = "0000-0002-1455-259X",
+            "Author and maintainer of the original smbdata package; original datasets included in agridatasets."
+        )
+    ),
+    person(
+        given = "Sue",
+        family = "Welham",
+        role = c("ctb", "cph"),
+        email = "stats4biol@gmail.com",
+        comment = "Contributor and copyright holder associated with the original smbdata package."
+    ),
+    person(
+        given = "Salvador",
+        family = "Gezan",
+        role = "ctb",
+        comment = "Contributor to the original smbdata package."
+    ),
+    person(
+        given = "Suzanne",
+        family = "Clark",
+        role = "ctb",
+        comment = "Contributor to the original smbdata package."
+    ),
+    person(
+        given = "Andrew",
+        family = "Mead",
+        role = "ctb",
+        comment = "Contributor to the original smbdata package."
+    ),
+    person(
+        given = "Angelo",
+        family = "Canty",
+        role = "ctb",
+        email = "cantya@mcmaster.ca",
+        comment = "Author of original code for S and author of the original boot package material."
+    ),
+    person(
+        given = "Brian",
+        family = "Ripley",
+        role = "ctb",
+        email = "Brian.Ripley@R-project.org",
+        comment = "Author and translator associated with the original boot package; conversion to R and parallel support."
+    ),
+    person(
+        given = "Alessandra R.",
+        family = "Brazzale",
+        role = "ctb",
+        email = "brazzale@stat.unipd.it",
+        comment = "Contributor and maintainer of the original boot package."
+    ),
+    person(
+        given = "Mark",
+        family = "Clements",
+        role = "ctb",
+        email = "mark.clements@ki.se",
+        comment = c(
+            ORCID = "0000-0003-4518-5670",
+            "Author and maintainer of the original collett package; original dataset included in agridatasets."
+        )
+    ),
+    person(
+        given = "Enoch Yi-Tung",
+        family = "Chen",
+        role = "ctb",
+        email = "enoch.yitung.chen@ki.se",
+        comment = c(
+            ORCID = "0000-0003-2448-708X",
+            "Contributor to the original collett package."
+        )
+    ),
+    person(
+         given = "Kevin",
+         family = "Wright",
+         role = c("ctb", "cph"),
+         email = "kw.stat@gmail.com",
+         comment = c(
+             ORCID = "0000-0002-0617-8673",
+             "Author, maintainer and copyright holder of the original agridat package; original datasets included in agridatasets."
+         )
+     ),
+    person(
+        given = "Christian",
+        family = "Salas-Eljatib",
+        role = "ctb",
+        email = "cseljatib@gmail.com",
+        comment = c(
+            ORCID = "0000-0002-8468-0829",
+            "Author and maintainer of the original biometrics package; original datasets included in agridatasets."
+        )
+    ),
+    person(
+        given = "Nicolas",
+        family = "Campos",
+        role = "ctb",
+        comment = c(
+            ORCID = "0009-0001-9534-9808",
+            "Contributor to the original biometrics package."
+        )
+    ),
+    person(
+        given = "Marcos",
+        family = "Marivil",
+        role = "ctb",
+        comment = "Contributor to the original biometrics package."
+    ),
+    person(
+        given = "F.L.",
+        family = "Ramsey",
+        role = "ctb",
+        comment = "Original author of datasets in the Sleuth3 package."
+    ),
+    person(
+        given = "D.W.",
+        family = "Schafer",
+        role = "ctb",
+        comment = "Original author of datasets in the Sleuth3 package."
+    ),
+    person(
+        given = "Daniel W.",
+        family = "Schafer",
+        role = "ctb",
+        comment = "Contributor/modifier of the original Sleuth3 package."
+    ),
+    person(
+        given = "Jeannie",
+        family = "Sifneos",
+        role = "ctb",
+        comment = "Contributor/modifier of the original Sleuth3 package."
+    ),
+    person(
+        given = "Berwin A.",
+        family = "Turlach",
+        role = "ctb",
+        email = "Berwin.Turlach@gmail.com",
+        comment = "Contributor, maintainer and modifier of the original Sleuth3 package."
+    ),
+    person(
+        given = "Nicholas",
+        family = "Horton",
+        role = "ctb",
+        comment = "Vignette contributor to the original Sleuth3 package."
+    ),
+    person(
+        given = "Linda",
+        family = "Loi",
+        role = "ctb",
+        comment = "Vignette contributor to the original Sleuth3 package."
+    ),
+    person(
+        given = "Kate",
+        family = "Aloisio",
+        role = "ctb",
+        comment = "Vignette contributor to the original Sleuth3 package."
+    ),
+    person(
+        given = "Ruobing",
+        family = "Zhang",
+        role = "ctb",
+        comment = "Vignette contributor to the original Sleuth3 package."
+    ),
+    person(
+        given = "Randall",
+        family = "Pruim",
+        role = "ctb",
+        comment = "Contributor providing corrections to the original Sleuth3 package."
+    ),
+    person(
+         given = "Sébastien",
+         family = "Lê",
+         role = "ctb",
+         email = "sebastien.le@institut-agro.fr",
+         comment = c(
+             ORCID = "0000-0001-8814-6714",
+            "Author and maintainer of the original EnTraineR package; original datasets included in agridatasets."
+         )
+     ),
+    person(
+        given = "Wang",
+        family = "Kunguang",
+        role = "ctb",
+        email = "whkygl@163.com",
+        comment = c(
+            ORCID = "0000-0001-7384-5002",
+            "Author and maintainer of the original easynem package; original dataset included in agridatasets."
+        )
+    ),
+    person(
+        given = "Nikhil",
+        family = "Agarwal",
+        role = "ctb",
+        email = "gitnik@niks.me",
+        comment = c(
+            ORCID = "0000-0003-1470-7472",
+            "Author and maintainer of the original avocado package; original dataset included in agridatasets."
+        )
+    ),
+    person(
+        given = "Peter K.",
+        family = "Dunn",
+        role = "ctb",
+        email = "pdunn2@usc.edu.au",
+        comment = "Author and maintainer of the original GLMsData package; original datasets included in agridatasets."
+    ),
+    person(
+        given = "Gordon K.",
+        family = "Smyth",
+        role = "ctb",
+        comment = "Author of the original GLMsData package; original datasets included in agridatasets."
+    ),
+    person(
+        given = "Roger",
+        family = "Bivand",
+        role = "ctb",
+        email = "Roger.Bivand@nhh.no",
+        comment = c(
+            ORCID = "0000-0003-2392-6140",
+            "Author of the original spData package."
+        )
+    ),
+    person(
+        given = "Jakub",
+        family = "Nowosad",
+        role = "ctb",
+        email = "nowosad.jakub@gmail.com",
+        comment = c(
+            ORCID = "0000-0002-1057-3721",
+            "Author and maintainer of the original spData package."
+        )
+    ),
+    person(
+        given = "Robin",
+        family = "Lovelace",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0001-5679-6536",
+            "Author of the original spData package."
+        )
+    ),
+    person(
+        given = "Angelos",
+        family = "Mimis",
+        role = "ctb",
+        comment = "Contributor to the original spData package."
+    ),
+    person(
+        given = "Mark",
+        family = "Monmonier",
+        role = "ctb",
+        comment = "Contributor and author of the state.vbm dataset in spData."
+    ),
+    person(
+        given = "Greg",
+        family = "Snow",
+        role = "ctb",
+        comment = "Contributor and author of the state.vbm dataset in spData."
+    ),
+    person(
+        given = "Keefe",
+        family = "Murphy",
+        role = "ctb",
+        email = "keefe.murphy@mu.ie",
+        comment = c(
+            ORCID = "0000-0002-7709-3159",
+            "Author and maintainer of the original IMIFA package; original dataset included in agridatasets."
+        )
+    ),
+    person(
+        given = "Cinzia",
+        family = "Viroli",
+        role = "ctb",
+        email = "cinzia.viroli@unibo.it",
+        comment = c(
+            ORCID = "0000-0002-3278-5266",
+            "Contributor to the original IMIFA package."
+        )
+    ),
+    person(
+        given = "Isobel Claire",
+        family = "Gormley",
+        role = "ctb",
+        email = "claire.gormley@ucd.ie",
+        comment = c(
+            ORCID = "0000-0001-7713-681X",
+            "Contributor to the original IMIFA package."
+        )
+    )
+    )
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-16 06:52:23 UTC; Renzo
+Author: Renzo Caceres Rossi [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-0744-854X>),
+  Prabhanjan Tattar [ctb] (Author and maintainer of the original gpk
+    package; original datasets included in agridatasets.),
+  A.P. Gore [ctb] (Original contributor associated with datasets included
+    in the gpk package.),
+  S.A. Paranjape [ctb] (Original contributor associated with datasets
+    included in the gpk package.),
+  M.B. Kulkarni [ctb] (Original contributor associated with datasets
+    included in the gpk package.),
+  Gabriel Danilo Shimizu [ctb] (ORCID:
+    <https://orcid.org/0000-0001-8524-508X>, Author and maintainer of
+    the original AgroR package; original datasets included in
+    agridatasets.),
+  Rodrigo Yudi Palhaci Marubayashi [ctb] (ORCID:
+    <https://orcid.org/0000-0003-2778-8654>, Author and contributor of
+    the original AgroR package; original datasets included in
+    agridatasets.),
+  Leandro Simoes Azeredo Goncalves [ctb] (ORCID:
+    <https://orcid.org/0000-0001-9700-9375>, Author and contributor of
+    the original AgroR package; original datasets included in
+    agridatasets.),
+  Al-Ahmadgaid B. Asaad [ctb] (ORCID:
+    <https://orcid.org/0000-0003-3784-8593>, Author and maintainer of
+    the original ALUES package; original datasets included in
+    agridatasets.),
+  Arnold R. Salvacion [ctb] (ORCID:
+    <https://orcid.org/0000-0001-8868-2226>, Author of the original
+    ALUES package; original datasets included in agridatasets.),
+  Bui Tan Yen [ctb] (Author of the original ALUES package; original
+    datasets included in agridatasets.),
+  Daniel Gerhard [ctb] (Author and maintainer of the original mcprofile
+    package; original dataset included in agridatasets.),
+  Yves Croissant [ctb] (Author of the original plm package; original
+    dataset included in agridatasets.),
+  Giovanni Millo [ctb] (Author of the original plm package; original
+    dataset included in agridatasets.),
+  Kevin Tappe [ctb] (Author and maintainer of the original plm package;
+    original dataset included in agridatasets.),
+  Ott Toomet [ctb] (Contributor to the original plm package.),
+  Christian Kleiber [ctb] (Contributor to the original plm package.),
+  Achim Zeileis [ctb] (Contributor to the original plm package.),
+  Arne Henningsen [ctb] (Contributor to the original plm package.),
+  Liviu Andronic [ctb] (Contributor to the original plm package.),
+  Nina Schoenfelder [ctb] (Contributor to the original plm package.),
+  Dylan Beaudette [ctb] (ORCID: <https://orcid.org/0009-0008-2780-4785>,
+    Author and maintainer of the original aqp package; original
+    datasets included in agridatasets.),
+  Pierre Roudier [ctb] (Author and contributor of the original aqp
+    package; original datasets included in agridatasets.),
+  Andrew Brown [ctb] (Author and contributor of the original aqp package;
+    original datasets included in agridatasets.),
+  Stephen Roecker [ctb] (Author and contributor of the original aqp
+    package; original datasets included in agridatasets.),
+  David Rossiter [ctb] (Contributor to the original aqp package.),
+  Mateusz Staniak [ctb] (Author and maintainer of the original live
+    package; original dataset included in agridatasets.),
+  Przemyslaw Biecek [ctb] (Author of the original live package; original
+    dataset included in agridatasets.),
+  Emi Tanaka [ctb] (ORCID: <https://orcid.org/0000-0002-1455-259X>,
+    Author and maintainer of the original smbdata package; original
+    datasets included in agridatasets.),
+  Sue Welham [ctb, cph] (Contributor and copyright holder associated with
+    the original smbdata package.),
+  Salvador Gezan [ctb] (Contributor to the original smbdata package.),
+  Suzanne Clark [ctb] (Contributor to the original smbdata package.),
+  Andrew Mead [ctb] (Contributor to the original smbdata package.),
+  Angelo Canty [ctb] (Author of original code for S and author of the
+    original boot package material.),
+  Brian Ripley [ctb] (Author and translator associated with the original
+    boot package; conversion to R and parallel support.),
+  Alessandra R. Brazzale [ctb] (Contributor and maintainer of the
+    original boot package.),
+  Mark Clements [ctb] (ORCID: <https://orcid.org/0000-0003-4518-5670>,
+    Author and maintainer of the original collett package; original
+    dataset included in agridatasets.),
+  Enoch Yi-Tung Chen [ctb] (ORCID:
+    <https://orcid.org/0000-0003-2448-708X>, Contributor to the
+    original collett package.),
+  Kevin Wright [ctb, cph] (ORCID:
+    <https://orcid.org/0000-0002-0617-8673>, Author, maintainer and
+    copyright holder of the original agridat package; original datasets
+    included in agridatasets.),
+  Christian Salas-Eljatib [ctb] (ORCID:
+    <https://orcid.org/0000-0002-8468-0829>, Author and maintainer of
+    the original biometrics package; original datasets included in
+    agridatasets.),
+  Nicolas Campos [ctb] (ORCID: <https://orcid.org/0009-0001-9534-9808>,
+    Contributor to the original biometrics package.),
+  Marcos Marivil [ctb] (Contributor to the original biometrics package.),
+  F.L. Ramsey [ctb] (Original author of datasets in the Sleuth3 package.),
+  D.W. Schafer [ctb] (Original author of datasets in the Sleuth3
+    package.),
+  Daniel W. Schafer [ctb] (Contributor/modifier of the original Sleuth3
+    package.),
+  Jeannie Sifneos [ctb] (Contributor/modifier of the original Sleuth3
+    package.),
+  Berwin A. Turlach [ctb] (Contributor, maintainer and modifier of the
+    original Sleuth3 package.),
+  Nicholas Horton [ctb] (Vignette contributor to the original Sleuth3
+    package.),
+  Linda Loi [ctb] (Vignette contributor to the original Sleuth3 package.),
+  Kate Aloisio [ctb] (Vignette contributor to the original Sleuth3
+    package.),
+  Ruobing Zhang [ctb] (Vignette contributor to the original Sleuth3
+    package.),
+  Randall Pruim [ctb] (Contributor providing corrections to the original
+    Sleuth3 package.),
+  Sébastien Lê [ctb] (ORCID: <https://orcid.org/0000-0001-8814-6714>,
+    Author and maintainer of the original EnTraineR package; original
+    datasets included in agridatasets.),
+  Wang Kunguang [ctb] (ORCID: <https://orcid.org/0000-0001-7384-5002>,
+    Author and maintainer of the original easynem package; original
+    dataset included in agridatasets.),
+  Nikhil Agarwal [ctb] (ORCID: <https://orcid.org/0000-0003-1470-7472>,
+    Author and maintainer of the original avocado package; original
+    dataset included in agridatasets.),
+  Peter K. Dunn [ctb] (Author and maintainer of the original GLMsData
+    package; original datasets included in agridatasets.),
+  Gordon K. Smyth [ctb] (Author of the original GLMsData package;
+    original datasets included in agridatasets.),
+  Roger Bivand [ctb] (ORCID: <https://orcid.org/0000-0003-2392-6140>,
+    Author of the original spData package.),
+  Jakub Nowosad [ctb] (ORCID: <https://orcid.org/0000-0002-1057-3721>,
+    Author and maintainer of the original spData package.),
+  Robin Lovelace [ctb] (ORCID: <https://orcid.org/0000-0001-5679-6536>,
+    Author of the original spData package.),
+  Angelos Mimis [ctb] (Contributor to the original spData package.),
+  Mark Monmonier [ctb] (Contributor and author of the state.vbm dataset
+    in spData.),
+  Greg Snow [ctb] (Contributor and author of the state.vbm dataset in
+    spData.),
+  Keefe Murphy [ctb] (ORCID: <https://orcid.org/0000-0002-7709-3159>,
+    Author and maintainer of the original IMIFA package; original
+    dataset included in agridatasets.),
+  Cinzia Viroli [ctb] (ORCID: <https://orcid.org/0000-0002-3278-5266>,
+    Contributor to the original IMIFA package.),
+  Isobel Claire Gormley [ctb] (ORCID:
+    <https://orcid.org/0000-0001-7713-681X>, Contributor to the
+    original IMIFA package.)
+Repository: CRAN
+Date/Publication: 2026-08-20 23:02:10 UTC

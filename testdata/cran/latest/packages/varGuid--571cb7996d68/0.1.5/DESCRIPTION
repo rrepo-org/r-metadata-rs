@@ -1,0 +1,33 @@
+Package: varGuid
+Type: Package
+Title: Variance-Guided Regression Improving Upon OLS and ANOVA
+Version: 0.1.5
+Date: 2026-06-18
+Authors@R: c(
+    person(given = "Sibei", family = "Liu", email = "sxl4188@miami.edu", role = "aut"),
+    person(given = "Min", family = "Lu", email = "luminwin@gmail.com", role = c("aut", "cre")))
+Author: Sibei Liu [aut],
+  Min Lu [aut, cre]
+Maintainer: Min Lu <luminwin@gmail.com>
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: glmnet, lmtest, sandwich
+Description: Fits variance-guided linear regression models that provide an
+    alternative to ordinary least squares (OLS) for general linear-model
+    design matrices, including ANOVA-style encodings. The methods use an
+    iteratively reweighted least squares estimator or an iteratively reweighted
+    lasso estimator and implement the global linear mean-variance model from
+    the associated 2026 Statistics in Medicine article <doi:10.1002/sim.70632>.
+    Under the assumptions in that
+    paper, the estimator matches the homoscedastic baseline in population
+    predictive quasi-risk when variance is constant and improves on it when the
+    variance depends on covariates. The grouping-based nonlinear prediction
+    extension from Section 3 is available in the development version on GitHub.
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/luminwin/varGuid
+BugReports: https://github.com/luminwin/varGuid/issues
+NeedsCompilation: no
+Packaged: 2026-06-18 12:00:00 UTC; minlu
+Repository: CRAN
+Date/Publication: 2026-06-18 22:40:02 UTC

@@ -1,0 +1,35 @@
+Type: Package
+Package: bayesmsm
+Title: Fitting Bayesian Marginal Structural Models for Longitudinal
+        Observational Data
+Version: 1.0.0
+Authors@R: c(
+    person("Kuan", "Liu", , "kuan.liu@utoronto.ca", role = c("aut", "cre","cph"),
+           comment = c(ORCID = "0000-0002-5017-1276")),
+    person("Xiao", "Yan", , "Clarence.YXA@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9712-1199")),
+    person("Martin", "Urner", , "martin.urner@uhn.ca", role = "aut",
+           comment = c(ORCID = "0000-0003-1133-4885"))
+  )
+Maintainer: Kuan Liu <kuan.liu@utoronto.ca>
+Description: Implements Bayesian marginal structural models for causal effect estimation with time-varying treatment and confounding.
+             It includes an extension to handle informative right censoring. The Bayesian importance sampling weights are estimated using JAGS. See Saarela (2015) <doi:10.1111/biom.12269> for methodological details. 
+License: MIT + file LICENSE
+URL: https://github.com/Kuan-Liu-Lab/bayesmsm
+BugReports: https://github.com/Kuan-Liu-Lab/bayesmsm/issues
+Depends: R (>= 4.2.0)
+Imports: coda (>= 0.19-4), doParallel, foreach, ggplot2, graphics,
+        grDevices, MCMCpack, parallel, R2jags, stats
+Suggests: devtools, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.3.2
+Packaged: 2025-06-13 22:12:39 UTC; kuan9
+Author: Kuan Liu [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-5017-1276>),
+  Xiao Yan [aut] (ORCID: <https://orcid.org/0000-0001-9712-1199>),
+  Martin Urner [aut] (ORCID: <https://orcid.org/0000-0003-1133-4885>)
+Repository: CRAN
+Date/Publication: 2025-06-17 06:00:02 UTC

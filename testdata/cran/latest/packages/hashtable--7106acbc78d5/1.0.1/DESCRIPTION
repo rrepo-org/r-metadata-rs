@@ -1,0 +1,27 @@
+Package: hashtable
+Type: Package
+Title: Hash Table and Hash Set
+Version: 1.0.1
+Date: 2026-8-8
+Authors@R: person("Zuguang", "Gu", email = "guzuguang@suat-sz.edu.cn", role = c("aut", "cre"),
+                  comment = c('ORCID'="0000-0002-7395-8709"))
+Depends: R (>= 4.0.0)
+Imports: methods, Rcpp, fastmatch
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown
+Description: It provides three implementations of hash tables and hash maps: 1. using 
+    'std::unordered_map' and 'std::unordered_set' C++ libraries, 2. wrapping around 
+    the 'fastmatch' package, 3. using R environment.
+URL: https://github.com/jokergoo/hashtable,
+        https://jokergoo.github.io/hashtable/
+VignetteBuilder: knitr
+BugReports: https://github.com/jokergoo/hashtable/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-08 08:40:51 UTC; guz
+Author: Zuguang Gu [aut, cre] (ORCID: <https://orcid.org/0000-0002-7395-8709>)
+Maintainer: Zuguang Gu <guzuguang@suat-sz.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-08-20 11:10:09 UTC

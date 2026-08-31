@@ -1,0 +1,42 @@
+Package: BKMutate
+Type: Package
+Title: Statistical Analysis of Induced Mutagenesis Experiments in Crop
+        Plants
+Version: 0.1.0
+Authors@R: person(given = "Praveen Kumar",
+                   family = "B. K.",
+                   role = c("aut", "cre"),
+                   email = "bkpraveenars@gmail.com")
+Description: A colour-first toolkit for the statistical analysis of induced
+    mutagenesis experiments in crop plants. It fits dose-response models to
+    physical and chemical mutagen data and estimates the median lethal and
+    growth-reduction doses (LD50, GR50) with confidence intervals obtained
+    from Fieller's theorem; quantifies first-generation biological damage
+    (lethality, injury and pollen sterility); and estimates mutagenic
+    effectiveness and mutagenic efficiency. Effectiveness and efficiency are
+    conventionally reported as point estimates only; this package treats
+    them as functions of binomial proportions and supplies interval estimates
+    by the delta method on the logarithmic scale and by the nonparametric
+    bootstrap. It further provides chlorophyll mutation spectrum analysis with
+    tests of homogeneity and diversity, generalised linear models for
+    second-generation mutant counts with formal assessment of overdispersion,
+    and formal comparison of mutagens including relative biological
+    effectiveness. Every analysis returns a tidy result object and a
+    publication-ready 'ggplot2' figure. Methods follow Konzak et al. (1965,
+    ISBN:9789201150653), Fieller (1954) <doi:10.1111/j.2517-6161.1954.tb00159.x>
+    and Katz et al. (1978) <doi:10.2307/2530610>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats, utils, grDevices, ggplot2
+Suggests: ggrepel, patchwork, knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+URL: https://github.com/bkpraveenars-del/BKMutate
+BugReports: https://github.com/bkpraveenars-del/BKMutate/issues
+NeedsCompilation: no
+Packaged: 2026-08-03 11:43:45 UTC; ASUS
+Author: Praveen Kumar B. K. [aut, cre]
+Maintainer: Praveen Kumar B. K. <bkpraveenars@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-08 12:10:07 UTC

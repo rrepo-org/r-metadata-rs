@@ -1,0 +1,26 @@
+Package: scenfire
+Type: Package
+Title: Post-Processing Algorithm for Integrating Wildfire Simulations
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Marcos", "Rodrigues",
+      email = "rmarcos@unizar.es",
+      role = c("aut", "cre")
+    )
+  )
+Description: A specialized selection algorithm designed to align simulated fire perimeters with specific fire size distribution scenarios. The foundation of this approach lies in generating a vast collection of plausible simulated fires across a wide range of conditions, assuming a random pattern of ignition. The algorithm then assembles individual fire perimeters based on their specific probabilities of occurrence, e.g., determined by (i) the likelihood of ignition and (ii) the probability of particular fire-weather scenarios, including wind speed and direction. Implements the method presented in Rodrigues (2025a) <doi:10.5194/egusphere-egu25-8974>. Demo data and code examples can be found in Rodrigues (2025b) <doi:10.5281/zenodo.15282605>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, ggplot2, foreach, methods, readr, sf, terra, tidyr,
+        rlang, stringr, doParallel, tidyselect
+Depends: R (>= 4.1.0)
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-30 08:36:10 UTC; lgimeno
+Author: Marcos Rodrigues [aut, cre]
+Maintainer: Marcos Rodrigues <rmarcos@unizar.es>
+Repository: CRAN
+Date/Publication: 2026-02-03 13:10:01 UTC

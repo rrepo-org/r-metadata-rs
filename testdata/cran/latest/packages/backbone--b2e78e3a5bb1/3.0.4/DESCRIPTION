@@ -1,0 +1,34 @@
+Package: backbone
+Type: Package
+Title: Extracts the Backbone from Networks
+Version: 3.0.4
+Authors@R: c(
+    person("Zachary", "Neal", email = "zpneal@msu.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3076-4995")),
+    person("Rachel", "Domagalski", role = "ctb"), 
+    person("Bruce", "Sagan", role = "ctb"),
+    person("Karl", "Godard", role = "ctb")) 
+Description: An implementation of methods for extracting a sparse unweighted network (i.e. a backbone)
+    from an unweighted network (e.g., Hamann et al., 2016 <doi:10.1007/s13278-016-0332-2>), a weighted network
+    (e.g., Serrano et al., 2009 <doi:10.1073/pnas.0808904106>), or a weighted projection (e.g., Neal et al., 2021
+    <doi:10.1038/s41598-021-03238-3>).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+Imports: graphics, igraph, Matrix, methods, stats, Rcpp, utils,
+Suggests: knitr, rmarkdown, tinytest
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+URL: https://rbackbone.net
+BugReports: https://github.com/zpneal/backbone/issues
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-05-20 19:09:39 UTC; zacharyneal
+Author: Zachary Neal [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3076-4995>),
+  Rachel Domagalski [ctb],
+  Bruce Sagan [ctb],
+  Karl Godard [ctb]
+Maintainer: Zachary Neal <zpneal@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-05-20 19:30:02 UTC

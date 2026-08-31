@@ -1,0 +1,37 @@
+Package: drMAIC
+Language: en-GB
+Title: Doubly Robust Matching-Adjusted Indirect Comparison for HTA
+Version: 0.1.0
+Authors@R: 
+    person("Anupama","Singh", email = "anupama.singh@pharmacoevidence.com", 
+           role = c("aut", "cre"))
+Description: Implements Doubly Robust Matching-Adjusted Indirect Comparison 
+    (DR-MAIC) for population-adjusted indirect treatment comparisons in health 
+    technology appraisal (HTA). The package provides: (1) standard MAIC via 
+    entropy balancing / exponential tilting; (2) augmented/doubly robust MAIC 
+    combining inverse probability weighting with outcome regression; (3) 
+    comprehensive covariate balance diagnostics including standardised mean 
+    differences, Love plots, and effective sample size; (4) sensitivity analyses 
+    including E-values, weight trimming, and variable exclusion analyses; (5) 
+    bootstrap confidence intervals; and (6) submission-ready outputs aligned with 
+    NICE Decision Support Unit Technical Support Document 18, Cochrane Handbook 
+    guidance on indirect comparisons, and ISPOR best practice guidelines.
+    Supports binary (risk difference, risk ratio, odds ratio) and time-to-event 
+    (hazard ratio) outcomes.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, survival, boot, ggplot2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+URL: https://github.com/Anupama-Singh01/drMAIC
+BugReports: https://github.com/Anupama-Singh01/drMAIC/issues
+NeedsCompilation: no
+Packaged: 2026-03-24 19:14:24 UTC; AnupamaSingh
+Author: Anupama Singh [aut, cre]
+Maintainer: Anupama Singh <anupama.singh@pharmacoevidence.com>
+Repository: CRAN
+Date/Publication: 2026-03-29 15:50:15 UTC

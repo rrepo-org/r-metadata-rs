@@ -1,0 +1,31 @@
+Package: speccurvieR
+Type: Package
+Title: Easy, Fast, and Pretty Specification Curve Analysis
+Version: 1.0.0
+Authors@R: person("Zayne", "Sember", email = "zayne@mit.edu",
+  role = c("aut", "cre", "cph"))
+Description: Making specification curve analysis easy, fast, and pretty. It 
+  improves upon existing offerings with additional features and 'tidyverse' 
+  integration. Users can easily visualize and evaluate how their models behave 
+  under different specifications with a high degree of customization. For a 
+  description and applications of specification curve analysis see Simonsohn, 
+  Simmons, and Nelson (2020) <doi:10.1038/s41562-020-0912-z>.
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: ggplot2, patchwork, magrittr, tidyr, dplyr, stringr, combinat,
+        fixest, pbapply, parallel, lmtest, sandwich, generics
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, gt, kableExtra,
+        flextable, modelsummary
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+License: MIT + file LICENSE
+URL: https://github.com/zaynesember/speccurvieR
+BugReports: https://github.com/zaynesember/speccurvieR/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-18 15:59:54 UTC; zaynesember
+Author: Zayne Sember [aut, cre, cph]
+Maintainer: Zayne Sember <zayne@mit.edu>
+Repository: CRAN
+Date/Publication: 2026-07-18 16:50:02 UTC

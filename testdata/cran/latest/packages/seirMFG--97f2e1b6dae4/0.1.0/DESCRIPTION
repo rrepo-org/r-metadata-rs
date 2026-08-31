@@ -1,0 +1,30 @@
+Package: seirMFG
+Type: Package
+Title: Mean-Field Game Equilibrium for SEIR Epidemics on Networks
+Version: 0.1.0
+Date: 2026-04-02
+Authors@R: person("Weinan", "Wang",
+    email = "ww@ou.edu",
+    role = c("aut", "cre"),
+    comment = c(ORCID = ""))
+Description: Implements the forward-backward sweep algorithm for computing
+    Nash equilibrium contact policies in SEIR epidemic mean-field games on
+    heterogeneous contact networks, as described in Wang (2026)
+    <doi:10.5281/zenodo.19381052>. Supports both heterogeneous networks with
+    arbitrary degree distributions (e.g., truncated Poisson) and homogeneous
+    networks. Computes equilibrium susceptible contact effort, value functions,
+    epidemic trajectories, and the effective reproduction number Rt.
+License: MIT + file LICENSE
+URL: https://doi.org/10.5281/zenodo.19381052
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats, graphics
+Suggests: ggplot2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2026-04-03 02:28:24 UTC; WWN
+Author: Weinan Wang [aut, cre]
+Maintainer: Weinan Wang <ww@ou.edu>
+Repository: CRAN
+Date/Publication: 2026-04-09 09:00:09 UTC

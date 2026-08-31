@@ -1,0 +1,25 @@
+Package: FuzzySpec
+Type: Package
+Title: Fuzzy Spectral Clustering with Variable-Weighted Adjacency
+        Matrices
+Version: 1.0.0
+Date: 2025-09-23
+Authors@R: c(person("Jesse S.","Ghashti", email="jesse.ghashti@ubc.ca", role = c("aut","cre")),
+	     person("John R.J.", "Thompson", email="john.thompson@ubc.ca", role = "aut"))
+Author: Jesse S. Ghashti [aut, cre],
+  John R.J. Thompson [aut]
+Maintainer: Jesse S. Ghashti <jesse.ghashti@ubc.ca>
+Description: Implementation of the FVIBES, the Fuzzy Variable-Importance Based Eigenspace Separation algorithm as described in the paper by Ghashti, J.S., Hare, W., and J.R.J. Thompson (2025). Variable-Weighted Adjacency Constructions for Fuzzy Spectral Clustering. Submitted.
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats, Thresher, fclust, mclust, mvtnorm, np, ggplot2,
+        viridisLite
+Suggests: knitr, MASS, rmarkdown, patchwork, devtools, spelling
+VignetteBuilder: knitr
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+Packaged: 2025-10-05 03:47:22 UTC; jesseghashti
+Language: en-US
+Repository: CRAN
+Date/Publication: 2025-10-08 20:00:03 UTC

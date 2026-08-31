@@ -1,0 +1,28 @@
+Package: NetworkChange
+Title: Bayesian Package for Network Changepoint Analysis
+Version: 1.1.0
+Date: 2026-04-07
+Authors@R: c(person(given = c("Jong", "Hee"),
+                    family = "Park",
+                    role = c("aut", "cre"),
+                    email = "jongheepark@snu.ac.kr"),
+             person(given = "Yunkyu",
+                    family = "Sohn",
+                    role = "aut"))
+Depends: R (>= 3.5.0), MCMCpack, ggplot2
+Imports: Rcpp (>= 1.0.0), Rmpfr, abind, mvtnorm, tidyr, igraph, qgraph,
+        network, stats, MASS, methods, RColorBrewer, ggrepel, rlang,
+        GGally, patchwork, viridis
+LinkingTo: Rcpp, RcppArmadillo
+Description: Network changepoint analysis for undirected network data. The package implements a hidden Markov network change point model (Park and Sohn (2020)). Functions for break number detection using the approximate marginal likelihood and WAIC are also provided. Version 1.1.0 includes high-performance C++ implementations via 'Rcpp'/'RcppArmadillo' for 5-15x faster MCMC sampling, along with modern 'ggplot2'-based visualizations with colorblind-friendly palettes.
+License: GPL-3
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+Suggests: sna, lifecycle
+Packaged: 2026-04-07 05:54:07 UTC; jongheepark
+Author: Jong Hee Park [aut, cre],
+  Yunkyu Sohn [aut]
+Maintainer: Jong Hee Park <jongheepark@snu.ac.kr>
+Repository: CRAN
+Date/Publication: 2026-04-07 06:20:02 UTC

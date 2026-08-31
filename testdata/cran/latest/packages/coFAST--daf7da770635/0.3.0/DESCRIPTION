@@ -1,0 +1,51 @@
+Package: coFAST
+Type: Package
+Title: Spatially-Aware Cell Clustering Algorithm with Cluster
+        Significant Assessment
+Version: 0.3.0
+Date: 2026-06-04
+Authors@R: 
+    c(person(given = "Wei",
+             family = "Liu",
+             role = c("aut", "cre"),
+             email = "liuweideng@gmail.com"),
+      person(given = "Xiao",
+             family = "Zhang",
+             role = c("aut")),
+      person(given = "Yi",
+             family = "Yang",
+             role = "aut"),
+      person(given = "Peng",
+             family = "Xie",
+             role = c("aut")),
+      person(given = "Chengqi",
+             family = "Lin",
+             role = "aut"),
+      person(given = "Jin",
+             family = "Liu",
+             role = "aut"))
+Author: Wei Liu [aut, cre],
+  Xiao Zhang [aut],
+  Yi Yang [aut],
+  Peng Xie [aut],
+  Chengqi Lin [aut],
+  Jin Liu [aut]
+Maintainer: Wei Liu <liuweideng@gmail.com>
+Description: A spatially-aware cell clustering algorithm is provided with cluster significance assessment. It comprises four key modules: spatially-aware cell-gene co-embedding, cell clustering, signature gene identification, and cluster significant assessment. More details can be referred to Peng Xie, et al. (2025) <doi:10.1016/j.cell.2025.05.035>.
+License: GPL-3
+Depends: R (>= 4.0.0),
+Imports: Rcpp (>= 1.0.10), furrr, purrr, future, ggplot2, irlba, DR.SC,
+        ProFAST, Matrix, ade4, progress, pbapply, dplyr, Seurat, stats,
+        utils
+LazyData: true
+URL: https://github.com/feiyoung/coFAST
+BugReports: https://github.com/feiyoung/coFAST/issues
+Suggests: knitr, rmarkdown, scater, PRECAST, ggrepel, RANN, grDevices
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-06-04 12:18:26 UTC; 10297
+Repository: CRAN
+Date/Publication: 2026-06-04 13:20:02 UTC

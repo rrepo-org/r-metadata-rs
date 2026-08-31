@@ -1,0 +1,36 @@
+Package: econid
+Title: Economic Entity Identifier Standardization
+Version: 0.0.3
+Authors@R: 
+    c(
+        person("L. Teal Emery", email = "lte@tealinsights.com", role = c("cre")),
+        person("Christopher C. Smith", email = "christopher.smith@promptlytechnologies.com", role = c("aut")),
+        person("Christoph Scheuch", email = "christoph@tidy-intelligence.com", role = c("ctb")),
+        person("Teal Insights", email = "lte@tealinsights.com", role = c("cph"))
+    )
+Description: Provides utility functions for standardizing economic entity 
+  (economy, aggregate, institution, etc.) name and id in economic datasets such 
+  as those published by the International Monetary Fund and World Bank. Aims to 
+  facilitate consistent data analysis, reporting, and joining across datasets. 
+  Used as a foundational building block in the 'EconDataverse' family of 
+  packages (<https://www.econdataverse.org>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, dplyr, purrr, rlang, stringr, tibble, tidyr
+Suggests: testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+URL: https://teal-insights.github.io/r-econid/,
+        https://github.com/Teal-Insights/r-econid
+BugReports: https://github.com/Teal-Insights/r-econid/issues
+Depends: R (>= 4.1.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-01-05 16:36:23 UTC; krise
+Author: L. Teal Emery [cre],
+  Christopher C. Smith [aut],
+  Christoph Scheuch [ctb],
+  Teal Insights [cph]
+Maintainer: L. Teal Emery <lte@tealinsights.com>
+Repository: CRAN
+Date/Publication: 2026-01-08 06:11:30 UTC

@@ -1,0 +1,43 @@
+Package: stringArt
+Title: Tools for Generating String Art Figures
+Version: 0.1.0
+Authors@R: 
+    c(
+        person(
+            given = "Fernando",
+            family = "de Souza Bastos",
+            email = "fernando.bastos@ufv.br",
+            role = c("aut", "cre")
+        ),
+        person(
+            given = "Ivo",
+            family = "Moreira Barbosa",
+            email = "ivo.barbosa@ufv.br",
+            role = "aut"
+        )
+    )
+Description: Provides tools to generate, visualize, and audit geometric
+    string art figures for mathematics teaching. The package includes functions
+    for circular, cardioid-like, elliptical, triangular, polygonal, star,
+    parabolic, net-based, radial, hexagonal, lotus-like, rose-like, spiral,
+    Lissajous, grid-based, decimal, and contour-based string art patterns.
+    Each function returns peg coordinates, connection tables, total string
+    length, audit information, and metadata, supporting educational
+    applications in geometry, analytic geometry, modular arithmetic,
+    trigonometry, rational numbers, and visual mathematics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/fsbmat-ufv/stringArt
+BugReports: https://github.com/fsbmat-ufv/stringArt/issues
+Depends: R (>= 4.1)
+Imports: graphics
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-20 22:19:16 UTC; fsbmat
+Author: Fernando de Souza Bastos [aut, cre],
+  Ivo Moreira Barbosa [aut]
+Maintainer: Fernando de Souza Bastos <fernando.bastos@ufv.br>
+Repository: CRAN
+Date/Publication: 2026-05-28 11:00:02 UTC

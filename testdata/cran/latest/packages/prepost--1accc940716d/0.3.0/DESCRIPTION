@@ -1,0 +1,53 @@
+Package: prepost
+Type: Package
+Title: Non-Parametric Bounds and Gibbs Sampler for Assessing Priming
+        and Post-Treatment Bias
+Version: 0.3.0
+Authors@R: 
+  c(person(given = "Matthew",
+           family = "Blackwell",
+           role = c("aut", "cre"),
+           email = "mblackwell@gmail.com"
+           ),
+    person(given = "Jacob",
+           family = "Brown",
+           role = c("aut"),
+           email = "jrbrown@g.harvard.edu"
+           ),
+    person(given = "Sophie",
+           family = "Hill",
+           role = c("aut"),
+           email = "sophie_hill@g.harvard.edu"
+           ),
+    person(given = "Kosuke",
+           family = "Imai",
+           role = c("aut"),
+           email = "imai@harvard.edu"
+           ),
+    person(given = "Teppei",
+           family = "Yamamoto",
+           role = c("aut"),
+           email = "tyamam@waseda.jp")
+           )
+URL: https://github.com/mattblackwell/prepost,
+        https://mattblackwell.github.io/prepost/
+Description: A set of tools to implement the non-parametric bounds and Bayesian methods for assessing post-treatment bias developed in Blackwell, Brown, Hill, Imai, and Yamamoto (2025) <doi:10.1017/pan.2025.3>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: gtools, BayesLogit, lpSolve, progress, Rglpk
+Suggests: testthat (>= 3.0.0), devtools, knitr, rmarkdown, lmtest,
+        sandwich, dplyr, ggplot2
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-07-03 14:09:09 UTC; mblackwell
+Author: Matthew Blackwell [aut, cre],
+  Jacob Brown [aut],
+  Sophie Hill [aut],
+  Kosuke Imai [aut],
+  Teppei Yamamoto [aut]
+Maintainer: Matthew Blackwell <mblackwell@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-07 12:50:02 UTC

@@ -1,0 +1,66 @@
+Type: Package
+Package: admiraldev
+Title: Utility Functions and Development Tools for the Admiral Package
+        Family
+Version: 1.5.0
+Authors@R: c(
+    person("Edoardo", "Mancini", , "edoardo.mancini@roche.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-4899-8641")),
+    person("Stefan", "Bundfuss", role = "aut",
+           comment = c(ORCID = "0009-0005-0027-1198")),
+    person("Arianna", "Cascone", role = "aut",
+           comment = c(ORCID = "0000-0001-5948-2831")),
+    person("Kristin", "Dahnert", role = "aut"),
+    person("Jeffrey", "Dickinson", role = "aut"),
+    person("Ross", "Farrugia", role = "aut"),
+    person("Fanny", "Gautier", role = "aut",
+           comment = c(ORCID = "0009-0004-3581-0131")),
+    person("Liam", "Hobby", , "liam.f.hobby@gsk.com", role = "aut"),
+    person("Gordon", "Miller", role = "aut"),
+    person("Lina", "Patil", role = "aut"),
+    person("Ben", "Straub", role = "aut"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
+    person("GlaxoSmithKline LLC", role = c("cph", "fnd"))
+  )
+Description: Utility functions to check data, variables and conditions for
+    functions used in 'admiral' and 'admiral' extension packages.
+    Additional utility helper functions to assist developers with
+    maintaining documentation, testing and general upkeep of 'admiral' and
+    'admiral' extension packages.
+License: Apache License (>= 2)
+URL: https://pharmaverse.github.io/admiraldev/,
+        https://github.com/pharmaverse/admiraldev/
+BugReports: https://github.com/pharmaverse/admiraldev/issues
+Depends: R (>= 4.1)
+Imports: cli (>= 3.6.2), dplyr (>= 1.1.1), glue (>= 1.6.0), lifecycle
+        (>= 0.1.0), lubridate (>= 1.7.4), purrr (>= 0.3.3), rlang (>=
+        0.4.4), roxygen2 (>= 8.0.0), stringr (>= 1.4.0), tidyr (>=
+        1.0.2), tidyselect (>= 1.1.0), withr
+Suggests: diffdf, DT, htmltools, knitr, methods, pkgdown, rmarkdown,
+        spelling, testthat (>= 3.2.0)
+VignetteBuilder: knitr
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/roclets: collate, namespace, admiraldev::rdx_roclet
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-10 08:36:27 UTC; mancinie
+Author: Edoardo Mancini [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-4899-8641>),
+  Stefan Bundfuss [aut] (ORCID: <https://orcid.org/0009-0005-0027-1198>),
+  Arianna Cascone [aut] (ORCID: <https://orcid.org/0000-0001-5948-2831>),
+  Kristin Dahnert [aut],
+  Jeffrey Dickinson [aut],
+  Ross Farrugia [aut],
+  Fanny Gautier [aut] (ORCID: <https://orcid.org/0009-0004-3581-0131>),
+  Liam Hobby [aut],
+  Gordon Miller [aut],
+  Lina Patil [aut],
+  Ben Straub [aut],
+  F. Hoffmann-La Roche AG [cph, fnd],
+  GlaxoSmithKline LLC [cph, fnd]
+Maintainer: Edoardo Mancini <edoardo.mancini@roche.com>
+Repository: CRAN
+Date/Publication: 2026-06-10 09:40:08 UTC

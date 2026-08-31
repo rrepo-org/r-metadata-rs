@@ -1,0 +1,43 @@
+Package: stoichUtilities
+Title: User Tools for Accessing the STOICH Project Database
+Version: 1.0.2
+Authors@R: c(
+      person("Chad", "Petersen", , "cpetersen4@unl.edu", role = c("aut", "cre")),
+      person("Jessica", "Corman", , "jcorman3@unl.edu", role = "ctb"),
+      person("Halvor", "Halvorson", , "hhalvorson@uca.edu", role = "ctb"),
+      person("Casey", "Brucker", , "cbrucker@uwyo.edu", role = "ctb"),
+      person("Eli", "Wess", , "ewess@uca.edu", role = "ctb"),
+      person("U.S. National Science Foundation", role = "fnd")
+    )
+Description: 
+    User tools for working with The STOICH (Stoichiometric Traits of Organisms 
+    in their Chemical Habitats) Project database <https://snr-stoich.unl.edu/>. 
+    This package is designed to aid in data discovery, filtering, pairing water 
+    samples with organism samples, and merging data tables to assist users in 
+    preparing data for analyses. For additional examples see "Additional Examples"
+    and the readme file at <https://github.com/STOICH-project/STOICH-utilities>.
+URL: https://github.com/STOICH-project/STOICH-utilities,
+        https://snr-stoich.unl.edu/,
+        https://stoichproject.wordpress.com/
+BugReports: https://github.com/STOICH-project/STOICH-utilities/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: tibble, tidyr, dplyr, readr, stringr, purrr, magrittr,
+        lubridate, sf, rlang, units, stats, jsonlite
+Suggests: tidyverse, maps, knitr, rmarkdown, gt, glue, gluedown,
+        kableExtra, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-11-24 19:28:30 UTC; Chad
+Author: Chad Petersen [aut, cre],
+  Jessica Corman [ctb],
+  Halvor Halvorson [ctb],
+  Casey Brucker [ctb],
+  Eli Wess [ctb],
+  U.S. National Science Foundation [fnd]
+Maintainer: Chad Petersen <cpetersen4@unl.edu>
+Repository: CRAN
+Date/Publication: 2025-12-01 13:40:02 UTC

@@ -1,0 +1,49 @@
+Package: simBKMRdata
+Title: Helper Functions for Bayesian Kernel Machine Regression
+Version: 0.2.1
+Authors@R: 
+    c(
+      person("Kazi Tanvir", "Hasan", , "khasa006@fiu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7723-4177")),
+      person("Ibrahimou", "Boubakari", , "bibrahim@fiu.edu", role = "aut",
+           comment = c(ORCID = "0000-0003-3173-4317")),
+      person("Guerini", "Cristian", , "cristian.guerini@unibs.it", role = "aut",
+      comment = c(ORCID = "0009-0004-4480-5182")),
+      person("Bursac", "Zoran", , "zbursac@fiu.edu", role = "aut",
+           comment = c(ORCID = "0000-0001-9306-0907")),
+      person("Roberto", "Lucchini", , "rlucchin@fiu.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-9723-0237")),
+      person("Gabriel", "Odom", , "gabriel.j.odom@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-1341-4555"))
+    )
+Description: Provides a suite of helper functions to support Bayesian Kernel 
+    Machine Regression (BKMR) analyses in environmental health research. It 
+    enables the simulation of realistic multivariate exposure data using 
+    Multivariate Skewed Gamma distributions, estimation of distributional 
+    parameters by subgroup, and application of adaptive, data-driven thresholds 
+    for feature selection via Posterior Inclusion Probabilities (PIPs). It is 
+    especially suited for handling skewed exposure data and enhancing the 
+    interpretability of BKMR results through principled variable selection. The
+    methodology is shown in Hasan et. al. (2025) <doi:10.1101/2025.04.14.25325822>.
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+License: GPL (>= 3)
+Imports: MASS, stats
+Suggests: bkmr, fields, gt, quarto, testthat (>= 3.0.0), tidyverse
+VignetteBuilder: quarto
+Depends: R (>= 3.5)
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-05-14 17:30:03 UTC; tanvirhasan
+Author: Kazi Tanvir Hasan [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7723-4177>),
+  Ibrahimou Boubakari [aut] (ORCID:
+    <https://orcid.org/0000-0003-3173-4317>),
+  Guerini Cristian [aut] (ORCID: <https://orcid.org/0009-0004-4480-5182>),
+  Bursac Zoran [aut] (ORCID: <https://orcid.org/0000-0001-9306-0907>),
+  Roberto Lucchini [aut] (ORCID: <https://orcid.org/0000-0002-9723-0237>),
+  Gabriel Odom [aut] (ORCID: <https://orcid.org/0000-0003-1341-4555>)
+Maintainer: Kazi Tanvir Hasan <khasa006@fiu.edu>
+Repository: CRAN
+Date/Publication: 2025-05-14 18:20:02 UTC

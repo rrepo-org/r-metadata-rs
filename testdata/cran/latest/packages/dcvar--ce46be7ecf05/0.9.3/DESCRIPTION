@@ -1,0 +1,38 @@
+Package: dcvar
+Title: Dynamic Copula VAR Models for Time-Varying Dependence
+Version: 0.9.3
+Authors@R: 
+    person("Benedikt", "Lugauer", , "benedikt.lugauer@uni-leipzig.de",
+           role = c("aut", "cre"))
+Description: Fits Bayesian copula vector autoregressive models for bivariate
+    time series with dynamic, regime-switching, and constant dependence
+    structures. The package includes simulation, data preparation,
+    estimation with 'Stan' through 'rstan' or 'cmdstanr', posterior
+    summaries, diagnostics, trajectory extraction, fitted and predictive
+    summaries, and approximate leave-one-out cross-validation model
+    comparison for supported fits. For Bayesian computation and model
+    comparison, see Carpenter et al. (2017)
+    <doi:10.18637/jss.v076.i01> and Vehtari, Gelman and Gabry (2017)
+    <doi:10.1007/s11222-016-9696-4>.
+License: GPL (>= 3)
+URL: https://github.com/benlug/dcvar
+BugReports: https://github.com/benlug/dcvar/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: rstan (>= 2.26.0), posterior (>= 1.5.0), loo (>= 2.7.0),
+        ggplot2 (>= 3.4.0), patchwork (>= 1.1.0), bayesplot (>=
+        1.10.0), rlang (>= 1.0.0), cli (>= 3.0.0), parallel, stats,
+        tools, utils
+Suggests: cmdstanr (>= 0.8.0), testthat (>= 3.0.0), knitr, rmarkdown,
+        tibble, sn
+Additional_repositories: https://stan-dev.r-universe.dev
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-05 18:37:03 UTC; benlug
+Author: Benedikt Lugauer [aut, cre]
+Maintainer: Benedikt Lugauer <benedikt.lugauer@uni-leipzig.de>
+Repository: CRAN
+Date/Publication: 2026-07-05 20:00:08 UTC

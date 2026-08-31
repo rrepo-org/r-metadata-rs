@@ -1,0 +1,27 @@
+Package: trunmnt
+Title: Moments of Truncated Multivariate Normal Distribution
+Version: 1.0.0
+Date: 2025-11-8
+Authors@R: person("Seung-Chun", "Lee", email = "seung@hs.ac.kr", 
+    role = c("aut", "cre"))
+Description: Computes the product moments of the truncated multivariate normal 
+    distribution, particularly for cases involving patterned 
+    variance-covariance matrices. It also has the capability to calculate these 
+    moments with arbitrary positive-definite matrices, although performance may 
+    degrade for high-dimensional variables.
+License: GPL-2
+Depends: R (>= 4.1.0)
+Imports: fastGHQuad, Rcpp, RcppArmadillo
+Suggests: MomTrunc (>= 6.1), truncnorm (>= 1.0.9), tmvtnorm (>= 1.7),
+        testthat, R.rsp
+LinkingTo: Rcpp, RcppArmadillo, fastGHQuad
+NeedsCompilation: yes
+VignetteBuilder: R.rsp
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Packaged: 2025-11-25 19:19:18 UTC; LeeSeung
+Author: Seung-Chun Lee [aut, cre]
+Maintainer: Seung-Chun Lee <seung@hs.ac.kr>
+Repository: CRAN
+Date/Publication: 2025-12-01 14:40:08 UTC

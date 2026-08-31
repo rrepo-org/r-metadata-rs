@@ -1,0 +1,35 @@
+Package: methFuse
+Title: Functional Segmentation of the Methylome
+Version: 1.1.0
+Authors@R: c(
+    person("Susanna", "Holmström", email = "susanna.k.holmstrom@helsinki.fi", role = c("aut", "cre"), comment = c(ORCID = "0009-0005-7542-5913")),
+    person("Antti", "Hakkinen", role = c("ctb", "cph")))
+Description: Implements FUSE (Functional Segmentation of DNA methylation data), a data-driven method 
+    for identifying spatially coherent DNA methylation segments from 
+    whole-genome bisulfite sequencing (WGBS) count data. The method performs 
+    hierarchical clustering of CpG sites based on methylated and unmethylated 
+    read counts across multiple samples and determines the optimal number of 
+    segments using an information criterion (AIC or BIC). Resulting segments 
+    represent regions with homogeneous methylation profiles across the input 
+    cohort while allowing sample-specific methylation levels. The package 
+    provides functions for clustering, model selection, tree cutting, 
+    segment-level summarization, and visualization. Input can be supplied as 
+    count matrices or extracted directly from 'BSseq' and 'methrix' objects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats, methods
+Suggests: bsseq, methrix, beachmat, GenomicRanges,
+        SummarizedExperiment, DelayedArray, testthat (>= 3.0.0), knitr,
+        rmarkdown, graphics
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://holmsusa.github.io/methFuse/
+NeedsCompilation: yes
+Packaged: 2026-02-27 14:39:28 UTC; holmsusa
+Author: Susanna Holmström [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-7542-5913>),
+  Antti Hakkinen [ctb, cph]
+Maintainer: Susanna Holmström <susanna.k.holmstrom@helsinki.fi>
+Repository: CRAN
+Date/Publication: 2026-03-04 10:10:02 UTC

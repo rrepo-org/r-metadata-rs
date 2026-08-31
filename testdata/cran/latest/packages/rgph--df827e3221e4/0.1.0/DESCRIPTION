@@ -1,0 +1,66 @@
+Package: rgph
+Type: Package
+Title: Pair Critical Points and Compute Persistent Homology of Reeb
+        Graphs
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Satyajit", "Mohanty",
+      email = "mohantysatyajit57@gmail.com",
+      role = c("aut")
+    ),
+    person(
+      "Shubham", "Singh",
+      email = "shubhamus16091998@example.com",
+      role = c("aut")
+    ),
+    person(
+      "Jason Cory", "Brunson",
+      email = "cornelioid@gmail.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-3126-9494")
+    ),
+    person(
+      "Paul", "Rosen",
+      email = "paul.rosen@utah.edu",
+      role = c("cph", "ctb"),
+      comment = c("ReebGraphPairing; GPL-3 license",
+                  ORCID = "0000-0002-0873-9518")
+    ),
+    person(
+      "Junyi", "Tu",
+      email = "JXTU@salisbury.edu",
+      role = c("cph", "ctb"),
+      comment = c("ReebGraphPairing; GPL-3 license",
+                  ORCID = "0000-0001-7026-7454")
+    )
+  )
+Description: Interface to the 'ReebGraphPairing' program to compute critical
+    points of Reeb graphs following Tu, Hajij, & Rosen (2019)
+    <doi:10.1007/978-3-030-33720-9_8> via the 'rJava' package.
+    Also store Reeb graphs in a minimal S3 class,
+    convert between other network data structures,
+    and post-process pairing data to obtain extended persistent homology
+    following Carrière & Oudot (2018) <doi:10.1007/s10208-017-9370-z>.
+Depends: R (>= 2.7.0), rJava (>= 0.5-0), phutil
+Suggests: rlang, tinytest, igraph (>= 0.6-0), network (>= 1.19.0),
+        knitr, rmarkdown, dplyr, tidyr, scales, ggplot2, bench
+SystemRequirements: Java (>= 5.0)
+License: GPL-3
+Repository: CRAN
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-19 17:32:39 UTC; jason.brunson
+Author: Satyajit Mohanty [aut],
+  Shubham Singh [aut],
+  Jason Cory Brunson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3126-9494>),
+  Paul Rosen [cph, ctb] (ReebGraphPairing; GPL-3 license, ORCID:
+    <https://orcid.org/0000-0002-0873-9518>),
+  Junyi Tu [cph, ctb] (ReebGraphPairing; GPL-3 license, ORCID:
+    <https://orcid.org/0000-0001-7026-7454>)
+Maintainer: Jason Cory Brunson <cornelioid@gmail.com>
+Date/Publication: 2026-02-24 19:30:02 UTC

@@ -1,0 +1,24 @@
+Package: GPCMlasso
+Type: Package
+Title: Differential Item Functioning in Generalized Partial Credit
+        Models
+Version: 0.1-9
+Date: 2026-05-11
+Authors@R: person(given = "Gunther",
+                      family = "Schauberger",
+                      role = c("aut", "cre"),
+                      email = "gunther.schauberger@tum.de")
+Maintainer: Gunther Schauberger <gunther.schauberger@tum.de>
+Description: Provides a framework to detect Differential Item Functioning (DIF) in Generalized Partial Credit Models (GPCM) and special cases of the GPCM as proposed by Schauberger and Mair (2019) <doi:10.3758/s13428-019-01224-2>. A joint model is set up where DIF is explicitly parametrized and penalized likelihood estimation is used for parameter selection. The big advantage of the method called GPCMlasso is that several variables can be treated simultaneously and that both continuous and categorical variables can be used to detect DIF.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.4), TeachingDemos, cubature, caret, statmod,
+        mvtnorm, mirt, methods
+Depends: ltm
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-11 05:04:34 UTC; ge29weh
+Author: Gunther Schauberger [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-05-11 06:00:02 UTC

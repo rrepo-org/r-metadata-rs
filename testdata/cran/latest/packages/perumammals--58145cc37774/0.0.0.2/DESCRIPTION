@@ -1,0 +1,45 @@
+Package: perumammals
+Title: Taxonomic Backbone and Name Validation Tools for Mammals of Peru
+Version: 0.0.0.2
+Authors@R: 
+    c(person(given = "Paul E.",
+             family = "Santos Andrade",
+             role = c("aut", "cre"),
+             email = "paulefrens@gmail.com",
+             comment = c(ORCID = "0000-0002-6635-0375")),
+      person(given = "Fiorella N.",
+             family = "Gonzales Guillen",
+             role = "ctb",
+             email = "fngonzales@uc.cl",
+             comment = c(ORCID = "0000-0001-5240-2464")))
+Maintainer: Paul E. Santos Andrade <paulefrens@gmail.com>
+Description: 
+    Provides a curated taxonomic backbone of mammal species recorded in Peru,
+    based on the checklist published by Pacheco and collaborators (2021)
+    <doi:10.15381/rpb.v28i4.21019>. The package includes standardized species
+    data, occurrence records by ecological regions, endemic status, and tools
+    for validating and matching scientific names through exact and approximate
+    string procedures. It is designed as a lightweight and reliable reference
+    for ecological, environmental, biogeographical, and conservation workflows
+    that require verified species information for Peruvian mammals.
+License: MIT + file LICENSE
+URL: https://github.com/PaulESantos/perumammals,
+        https://paulesantos.github.io/perumammals/
+BugReports: https://github.com/PaulESantos/perumammals/issues
+Depends: R (>= 4.1)
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Imports: assertthat, cli, dplyr, fuzzyjoin, progress, purrr, readr,
+        stringr, tibble, memoise
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0), tidyr, ggtext
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-24 02:55:38 UTC; PC
+Author: Paul E. Santos Andrade [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6635-0375>),
+  Fiorella N. Gonzales Guillen [ctb] (ORCID:
+    <https://orcid.org/0000-0001-5240-2464>)
+Repository: CRAN
+Date/Publication: 2026-02-24 09:30:14 UTC

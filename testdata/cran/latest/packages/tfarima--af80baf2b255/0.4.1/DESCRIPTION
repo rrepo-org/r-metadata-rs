@@ -1,0 +1,28 @@
+Package: tfarima
+Type: Package
+Title: Transfer Function and ARIMA Models
+Version: 0.4.1
+Authors@R: 
+    person("Jose L.", "Gallego", email = "jose.gallego@unican.es", 
+           role = c("aut", "cre"))
+Description: Build customized transfer function and ARIMA models with multiple operators 
+    and parameter restrictions. Provides tools for model identification, estimation 
+    using exact or conditional maximum likelihood, diagnostic checking, automatic outlier 
+    detection, calendar effects, forecasting, and seasonal adjustment. The new version 
+    also supports unobserved component ARIMA model specification and estimation 
+    for structural time series analysis.
+License: GPL (>= 2)
+URL: https://github.com/gallegoj/tfarima
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.0), stats, MASS, numDeriv, zoo, nnls, quadprog
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-11-03 19:18:01 UTC; jose
+Author: Jose L. Gallego [aut, cre]
+Maintainer: Jose L. Gallego <jose.gallego@unican.es>
+Repository: CRAN
+Date/Publication: 2025-11-03 19:40:02 UTC

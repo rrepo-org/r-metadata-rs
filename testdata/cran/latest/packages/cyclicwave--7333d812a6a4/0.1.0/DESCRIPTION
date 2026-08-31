@@ -1,0 +1,45 @@
+Package: cyclicwave
+Type: Package
+Title: Cyclic Wave Analysis for Time-Series Clustering
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Şule Şevval",
+           family = "Karakaya",
+           email = "sule.karakaya@metu.edu.tr",
+           role = c("aut", "cre")),
+    person(given = "Ahmet",
+           family = "Bursalı",
+           email = "ahmet.bursali@huawei.com",
+           role = "aut"),
+    person(given = "Vilda",
+           family = "Purutçuoğlu",
+           email = "vpurutucu@metu.edu.tr",
+           role = "aut")
+  )
+Description: A modular toolkit for feature extraction and density-based
+    clustering of time-series data. It provides classical statistical,
+    discrete wavelet, Hilbert-based phase, and circular statistical features.
+    The Hilbert-based phase representation can support the analysis of
+    periodic patterns, phase relationships, and circular behavior in
+    time-series data. The package supports DBSCAN and OPTICS clustering,
+    cluster evaluation, visualization, data preparation, and comparison of
+    multiple feature extraction and clustering combinations. Methods are described in Karakaya and
+    Purutcuoglu (2026) <doi:10.15672/hujms.1821412> and Karakaya et
+    al. (2026) <doi:10.1007/978-3-032-17020-0_27>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: stats, utils, dbscan, gsignal, waveslim, MASS, e1071, ggplot2
+Suggests: FNN, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-25 23:37:58 UTC; buaht
+Author: Şule Şevval Karakaya [aut, cre],
+  Ahmet Bursalı [aut],
+  Vilda Purutçuoğlu [aut]
+Maintainer: Şule Şevval Karakaya <sule.karakaya@metu.edu.tr>
+Repository: CRAN
+Date/Publication: 2026-07-03 12:00:08 UTC

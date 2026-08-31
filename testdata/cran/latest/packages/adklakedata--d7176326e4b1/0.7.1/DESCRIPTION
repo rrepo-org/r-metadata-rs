@@ -1,0 +1,27 @@
+Package: adklakedata
+Title: Adirondack Long-Term Lake Data
+Version: 0.7.1
+Maintainer: Jeremy Farrell <jeremyfarrell@gmail.com>
+Authors@R: c(
+    person("Jeremy", "Farrell", , "jeremyfarrell@gmail.com", role = c("aut", "cre")),
+    person("Luke", "Winslow", role = "aut"),
+    person("Taylor", "Leach", role = "aut"),
+    person("Tobi", "Hahn", role = "aut")
+  )
+Description: Package for the access and distribution of long-term lake datasets from 28 lakes in the Adirondack Park, northern New York state. Includes a wide variety of physical, chemical, and biological parameters originally described in Farrell et al. 2018 <doi:10.1038/sdata.2018.59>. Water chemistry and nutrient records are extended through 2024 using data from the USGS AQ Samples database, including new columns for surface temperature, UV-254 absorbance, and a program flag distinguishing AEAP integrated samples from ALTM surface grabs. The underlying figshare archive <doi:10.6084/m9.figshare.32305479> additionally contains chemistry records for 25 ALTM-only lakes; the package restricts to the 28 originals for consistency with the published dataset.
+License: MIT + file LICENSE
+URL: https://github.com/jeremylfarrell/adklakedata
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+BugReports: https://github.com/jeremylfarrell/adklakedata/issues
+Depends: R (>= 3.5.0)
+Imports: httr, rappdirs, tibble
+Suggests: sf, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-06-02 01:07:54 UTC; FARREJ2
+Author: Jeremy Farrell [aut, cre],
+  Luke Winslow [aut],
+  Taylor Leach [aut],
+  Tobi Hahn [aut]
+Repository: CRAN
+Date/Publication: 2026-06-02 06:40:32 UTC

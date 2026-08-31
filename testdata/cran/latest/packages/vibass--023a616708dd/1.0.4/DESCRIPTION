@@ -1,0 +1,75 @@
+Type: Package
+Package: vibass
+Title: Materials for Introductory Course on Bayesian Learning
+Version: 1.0.4
+Authors@R: 
+    c(person(given = "VIBASS Team",
+             role = c("aut", "cph")),
+      person(given = "Facundo",
+             family = "Muñoz",
+             role = c("ctb", "cre"),
+             email = "facundo.munoz@cirad.fr",
+             comment = c("Cirad, Package developer", ORCID = "0000-0002-5061-4241")),
+      person(given = "Carmen",
+             family = "Armero",
+             role = "ctb",
+             email = "carmen.armero@uv.es",
+             comment = "Universitat de València"),
+      person(given = "Anabel",
+             family = "Forte",
+             role = "ctb",
+             email = "anabel.forte@uv.es",
+             comment = "Universitat de València"),
+      person(given = "David",
+             family = "Conesa",
+             role = "ctb",
+             email = "David.V.Conesa@uv.es",
+             comment = "Universitat de València"),
+      person(given = "Mark",
+             family = "Brewer",
+             role = "ctb",
+             email = "mark.brewer@bioss.ac.uk",
+             comment = c("Biomathematics and Statistics Scotland (BioSS)",
+             ORCID = "0000-0001-7559-389X")),
+      person(given = "Virgilio",
+             family = "Gómez-Rubio",
+             role = "ctb",
+             email = "Virgilio.Gomez@uclm.es",
+             comment = c("Universidad Castilla-La Mancha",
+             ORCID = "0000-0002-4791-3072")))
+Description: Practicals, data sets, helper functions and interactive 'Shiny' apps
+    used in the introductory course on Bayesian inference at the
+    Valencia International Bayesian Summer School. Installing 'vibass' installs
+    all the other packages used during the course and downloads all necessary
+    materials for working off line.
+License: GPL-3
+Depends: R (>= 4.0)
+Imports: cli, dplyr, extraDistr, ggplot2, golem, knitr, lme4, magrittr,
+        R2BayesX, rlang, rstudioapi, shiny (>= 1.5), tibble, tidyr,
+Suggests: spelling, bayesrules, coda, colorspace, cowplot, faraway,
+        htmlwidgets, INLA, ISLR, LaplacesDemon, magick, MASS, MCMCpack,
+        plotly, rmarkdown, pacman, png, spData, stringi
+VignetteBuilder: knitr
+URL: https://vabar.github.io/vibass/, https://github.com/VABAR/vibass
+BugReports: https://github.com/VABAR/vibass/issues
+Encoding: UTF-8
+LazyData: true
+Additional_repositories: https://inla.r-inla-download.org/R/testing
+Language: en-GB
+KeepSource: no
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-17 07:56:38 UTC; facu
+Author: VIBASS Team [aut, cph],
+  Facundo Muñoz [ctb, cre] (Cirad, Package developer, ORCID:
+    <https://orcid.org/0000-0002-5061-4241>),
+  Carmen Armero [ctb] (Universitat de València),
+  Anabel Forte [ctb] (Universitat de València),
+  David Conesa [ctb] (Universitat de València),
+  Mark Brewer [ctb] (Biomathematics and Statistics Scotland (BioSS),
+    ORCID: <https://orcid.org/0000-0001-7559-389X>),
+  Virgilio Gómez-Rubio [ctb] (Universidad Castilla-La Mancha, ORCID:
+    <https://orcid.org/0000-0002-4791-3072>)
+Maintainer: Facundo Muñoz <facundo.munoz@cirad.fr>
+Repository: CRAN
+Date/Publication: 2026-06-17 08:30:02 UTC

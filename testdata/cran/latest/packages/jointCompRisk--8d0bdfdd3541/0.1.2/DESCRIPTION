@@ -1,0 +1,38 @@
+Package: jointCompRisk
+Type: Package
+Title: Joint Inference for Competing Risks Data Using Multiple
+        Endpoints
+Version: 0.1.2
+Date: 2026-08-16
+Authors@R: c(
+    person("Wenqing", "Zhang", email = "wzhan115@jhu.edu", role = c("aut", "cre")),
+    person("Jiyang", "Wen", role = "aut"),
+    person("Chen", "Hu", role = "aut"),
+    person("Meicheng", "Wang", role = "aut")
+  )
+Maintainer: Wenqing Zhang <wzhan115@jhu.edu>
+Description: Tools for competing risks trials that allow simultaneous inference on
+    recovery and mortality endpoints. Provides data preparation helpers, standard
+    cumulative incidence estimators (restricted mean time gained/lost), and severity
+    weighted extensions that integrate longitudinal ordinal outcomes to summarise
+    treatment benefit. Methods follow Wen, Hu, and Wang (2023) Biometrics 79(3):1635-1645
+    <doi:10.1111/biom.13752>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+Imports: dplyr, magrittr, stats, rlang, survival (>= 3.2-7)
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+Suggests: knitr, rmarkdown, readr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/cathyzzzhang/jointCompRisk
+BugReports: https://github.com/cathyzzzhang/jointCompRisk/issues
+NeedsCompilation: no
+Packaged: 2026-08-19 17:22:52 UTC; wzhang
+Author: Wenqing Zhang [aut, cre],
+  Jiyang Wen [aut],
+  Chen Hu [aut],
+  Meicheng Wang [aut]
+Repository: CRAN
+Date/Publication: 2026-08-19 23:10:02 UTC

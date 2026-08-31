@@ -1,0 +1,32 @@
+Package: codyna
+Title: Complex Dynamic Systems
+Version: 0.1.0
+Authors@R: c(
+    person("Santtu", "Tikka", email = "santtuth@gmail.com", role = c("aut", "cre")),
+    person("Mohammed", "Saqr", role = "aut")
+  )
+Description: Performs analysis of complex dynamic systems with a focus on the
+    temporal unfolding of patterns, changes, and state transitions in
+    behavioral data. Supports both time series and sequence data
+    and provides tools for the analysis and visualization of complexity,
+    pattern identification, trends, regimes, sequence typology as well as
+    early warning signals.
+License: MIT + file LICENSE
+URL: https://github.com/santikka/codyna/
+BugReports: https://github.com/santikka/codyna/issues/
+Depends: R (>= 4.1.0)
+Imports: checkmate, cli, dplyr, ggplot2, patchwork, rlang, stats,
+        tibble, tidyr, tidyselect
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-01-11 13:47:25 UTC; Santtu
+Author: Santtu Tikka [aut, cre],
+  Mohammed Saqr [aut]
+Maintainer: Santtu Tikka <santtuth@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-16 11:00:13 UTC

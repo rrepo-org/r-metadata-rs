@@ -1,0 +1,42 @@
+Package: inferstat
+Type: Package
+Title: Publication-Ready Inferential Statistics and Visualization
+Version: 0.1.1
+Authors@R: 
+    c(
+      person(
+        given = "Vinodh Kumar",
+        family = "Obli Rajendran",
+        email = "vinodhkumar.rajendran@gmail.com",
+        role = c("aut", "cre")
+      ),
+      person(
+        given = "Keerthi",
+        family = "Aaradhana",
+        email = "vkeerthi1817@gmail.com",
+        role = "aut"
+      )
+    )
+Description: Provides publication-ready tools for inferential statistical
+    analyses, assumption checking, effect size estimation, statistical
+    visualizations, and standardized reporting. Methods for assessing
+    normality follow Shapiro and Wilk (1965)
+    <doi:10.1093/biomet/52.3-4.591>, and guidance for standardized effect
+    sizes is informed by Cohen (1988)
+    <doi:10.4324/9780203771587>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Depends: R (>= 4.2.0)
+Imports: car, dplyr, ggplot2, rlang
+Suggests: covr, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+URL: https://github.com/vinodhpmd/inferstat
+BugReports: https://github.com/vinodhpmd/inferstat/issues
+NeedsCompilation: no
+Packaged: 2026-07-24 02:28:51 UTC; m
+Author: Vinodh Kumar Obli Rajendran [aut, cre],
+  Keerthi Aaradhana [aut]
+Maintainer: Vinodh Kumar Obli Rajendran <vinodhkumar.rajendran@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 09:40:14 UTC

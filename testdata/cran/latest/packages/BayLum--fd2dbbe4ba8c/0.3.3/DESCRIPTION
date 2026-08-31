@@ -1,0 +1,61 @@
+Package: BayLum
+Type: Package
+Title: Chronological Bayesian Models Integrating Optically Stimulated
+        Luminescence and Radiocarbon Age Dating
+Version: 0.3.3
+Date: 2025-09-19
+Authors@R: c(
+    person("Claire", "Christophe", role = "aut"),
+    person("Anne", "Philippe", , "anne.philippe@univ-nantes.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5331-5087")),
+    person("Sebastian", "Kreutzer", role = "aut",
+           comment = c(ORCID = "0000-0002-0734-2199")),
+    person("Guillaume", "Guérin", role = "aut",
+           comment = c(ORCID = "0000-0001-6298-5579")),
+    person("Frederik Harly", "Baumgarten", role = "aut",
+           comment = c(ORCID = "0000-0002-4374-5948")),
+    person("Nicolas", "Frerebeau", role = "aut",
+           comment = c(ORCID = "0000-0001-5759-4944")),
+    person("Université Bordeaux Montaigne", role = c("cph", "fnd")),
+    person("CNRS", role = "fnd"),
+    person("LabEx Sciences archéologiques de Bordeaux", role = "fnd")
+  )
+Maintainer: Anne Philippe <anne.philippe@univ-nantes.fr>
+Description: Bayesian analysis of luminescence data and C-14 age
+    estimates. Bayesian models are based on the following publications:
+    Combes, B. & Philippe, A. (2017) <doi:10.1016/j.quageo.2017.02.003>
+    and Combes et al. (2015) <doi:10.1016/j.quageo.2015.04.001>. This
+    includes, amongst others, data import, export, application of age
+    models and palaeodose model.
+License: GPL-3
+URL: https://CRAN.r-project.org/package=BayLum,
+        https://crp2a.github.io/BayLum/
+BugReports: https://github.com/crp2a/BayLum/issues
+Depends: coda (>= 0.19), R (>= 4.4), utils
+Imports: cli (>= 3.6.5), hexbin (>= 1.28.5), KernSmooth (>= 2.23),
+        Luminescence (>= 1.1.1), methods, rjags (>= 4-17), runjags (>=
+        2.2.2), yaml (>= 2.3.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.2.3)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+SystemRequirements: JAGS >= 4.3.2 (https://mcmc-jags.sourceforge.io/)
+Packaged: 2025-09-19 09:45:42 UTC; kreutzer
+Author: Claire Christophe [aut],
+  Anne Philippe [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5331-5087>),
+  Sebastian Kreutzer [aut] (ORCID:
+    <https://orcid.org/0000-0002-0734-2199>),
+  Guillaume Guérin [aut] (ORCID: <https://orcid.org/0000-0001-6298-5579>),
+  Frederik Harly Baumgarten [aut] (ORCID:
+    <https://orcid.org/0000-0002-4374-5948>),
+  Nicolas Frerebeau [aut] (ORCID:
+    <https://orcid.org/0000-0001-5759-4944>),
+  Université Bordeaux Montaigne [cph, fnd],
+  CNRS [fnd],
+  LabEx Sciences archéologiques de Bordeaux [fnd]
+Repository: CRAN
+Date/Publication: 2025-09-25 14:10:02 UTC

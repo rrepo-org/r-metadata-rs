@@ -1,0 +1,39 @@
+Package: mispitools
+Title: Missing Person Identification Tools
+Version: 2.0.1
+Authors@R: c(
+    person(given = "Franco", family = "Marsico", role = c("aut", "cre"),
+           email = "franco.lmarsico@gmail.com",
+           comment = c(ORCID = "0000-0002-0740-5516")),
+    person(given = "Suisei", family = "Nakagawa", role = "aut",
+           email = "suisei.nakagawa@uni.minerva.edu"))
+Description: A comprehensive toolkit for missing person identification combining
+    genetic and non-genetic evidence within a Bayesian framework. Computes
+    likelihood ratios (LRs) for DNA profiles, biological sex, age, hair color,
+    and birthdate evidence. Provides decision analysis tools including optimal
+    LR thresholds, error rate calculations, and ROC curve visualization.
+    Includes interactive Shiny applications for exploring evidence combinations.
+    For methodological details see Marsico et al. (2023) <doi:10.1016/j.fsigen.2023.102891>
+    and Marsico, Vigeland et al. (2021) <doi:10.1016/j.fsigen.2021.102519>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: pedtools, dplyr, tidyr, stats, reshape2, patchwork, graphics,
+        ggplot2, shiny, Rcpp, RcppArmadillo
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: forrel, Familias, pedprobr, pedmut, fbnet, DirichletReg,
+        shinythemes, knitr, rmarkdown, testthat (>= 3.0.0)
+SystemRequirements: GNU make, C++17
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+URL: https://github.com/MarsicoFL/mispitools
+BugReports: https://github.com/MarsicoFL/mispitools/issues
+NeedsCompilation: yes
+Packaged: 2026-08-26 13:22:04 UTC; franco
+Author: Franco Marsico [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0740-5516>),
+  Suisei Nakagawa [aut]
+Maintainer: Franco Marsico <franco.lmarsico@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-26 21:10:07 UTC

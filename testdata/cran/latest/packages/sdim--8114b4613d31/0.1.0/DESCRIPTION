@@ -1,0 +1,37 @@
+Package: sdim
+Type: Package
+Title: An R Package for Supervised Dimension Reduction
+Version: 0.1.0
+Authors@R: c(
+    person("Gabriel", "Cabrera",
+           email = "gabriel.cabrera.guz@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8803-2338"))
+  )
+Description: Implements five factor extraction methods for asset pricing and
+    macroeconomic forecasting: principal component analysis (PCA), partial
+    least squares (PLS), scaled PCA (sPCA) of Huang, Jiang, Li, Tong, and
+    Zhou (2022) <doi:10.1287/mnsc.2021.4020>, the reduced-rank approach
+    (RRA) of He, Huang, Li, and Zhou (2023) <doi:10.1287/mnsc.2022.4563>,
+    and Instrumented PCA (IPCA) of Kelly, Pruitt, and Su (2019)
+    <doi:10.1016/j.jfineco.2019.05.001>.
+URL: https://gabbocg.github.io/sdim/, https://github.com/gabbocg/sdim
+BugReports: https://github.com/gabbocg/sdim/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: frenchdata, knitr, readxl, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-04 14:44:15 UTC; gabbocg
+Author: Gabriel Cabrera [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8803-2338>)
+Maintainer: Gabriel Cabrera <gabriel.cabrera.guz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-11 08:30:02 UTC

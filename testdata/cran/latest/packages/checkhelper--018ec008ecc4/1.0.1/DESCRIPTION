@@ -1,0 +1,48 @@
+Package: checkhelper
+Title: Deal with Check Outputs
+Version: 1.0.1
+Authors@R: c(
+    person("Vincent", "Guyader", , "vincent@thinkr.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0671-9270")),
+    person("Sebastien", "Rochette", , "sebastien@thinkr.fr", role = "aut",
+           comment = c(ORCID = "0000-0002-1565-9313", "previous maintainer")),
+    person("Arthur", "Bréant", , "arthur@thinkr.fr", role = "aut",
+           comment = c(ORCID = "0000-0003-1668-0963")),
+    person("Murielle", "Delmotte", , "murielle@thinkr.fr", role = "aut",
+           comment = c(ORCID = "0000-0002-1339-2424")),
+    person("ThinkR", role = "cph")
+  )
+Description: Deal with packages 'check' outputs and reduce the risk of
+    rejection by 'CRAN' by following policies.
+License: MIT + file LICENSE
+URL: https://thinkr-open.github.io/checkhelper/,
+        https://github.com/ThinkR-open/checkhelper
+BugReports: https://github.com/ThinkR-open/checkhelper/issues
+Depends: R (>= 4.1)
+Imports: cli, covr, desc, devtools, dplyr, glue, knitr, lifecycle,
+        magrittr, pkgbuild, pkgload, purrr, rcmdcheck, roxygen2 (>=
+        7.3.0), stringi, stringr, tibble, tools, utils, whisker (>=
+        0.4), withr
+Suggests: attachment, callr, rmarkdown, testthat, usethis
+VignetteBuilder: knitr
+Config/Needs/website: ThinkR-open/thinkrtemplate
+Config/testthat/edition: 3
+Config/testthat/start-first: checkhelper, fix-globals*, audit-globals,
+        check_as_cran, check_clean_userspace*, check_n_covr,
+        audit-userspace
+Encoding: UTF-8
+Language: en-US
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-19 07:59:52 UTC; ubuntu
+Author: Vincent Guyader [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0671-9270>),
+  Sebastien Rochette [aut] (ORCID:
+    <https://orcid.org/0000-0002-1565-9313>, previous maintainer),
+  Arthur Bréant [aut] (ORCID: <https://orcid.org/0000-0003-1668-0963>),
+  Murielle Delmotte [aut] (ORCID:
+    <https://orcid.org/0000-0002-1339-2424>),
+  ThinkR [cph]
+Maintainer: Vincent Guyader <vincent@thinkr.fr>
+Repository: CRAN
+Date/Publication: 2026-08-19 19:10:02 UTC

@@ -1,0 +1,28 @@
+Package: FFdownload
+Type: Package
+Title: Download Data from Kenneth French's Website
+Version: 1.2.0
+Authors@R: c(person("Sebastian", "Stoeckl", email = "sebastian.stoeckl@uni.li", role = c("aut","cre"), comment = c(ORCID = "0000-0002-4196-6093", "Package commissioner and maintainer.")),
+            person("Annar", "Massimov", email = "", role = c("ctb"), comment = "Original developer of FFdownload."))
+Description: Downloads all the datasets (you can exclude the daily ones or specify a list of those you are targeting specifically) from Kenneth French's Website at <https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html>, process them and convert them to list of 'xts' (time series).
+Depends: R (>= 3.5.0), utils, stats, rvest, xts, xml2, zoo
+Imports: timetk
+License: MIT + file LICENSE
+URL: https://github.com/sstoeckl/ffdownload,
+        https://sstoeckl.github.io/ffdownload/
+BugReports: https://github.com/sstoeckl/ffdownload/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, dplyr, viridis, ggplot2, tidyr, tibble,
+        purrr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-25 22:30:39 UTC; sebastian.stoeckl
+Author: Sebastian Stoeckl [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4196-6093>, Package commissioner and
+    maintainer.),
+  Annar Massimov [ctb] (Original developer of FFdownload.)
+Maintainer: Sebastian Stoeckl <sebastian.stoeckl@uni.li>
+Repository: CRAN
+Date/Publication: 2026-02-25 22:50:02 UTC

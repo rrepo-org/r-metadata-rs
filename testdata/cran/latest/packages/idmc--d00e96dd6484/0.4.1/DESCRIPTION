@@ -1,0 +1,30 @@
+Package: idmc
+Title: Load and Wrangle IDMC Displacement Data
+Version: 0.4.1
+Authors@R: 
+    person(
+      given = "Giulia",
+      family = "Martini", 
+      email = "giulia.martini@un.org",
+      role = c("aut", "cre", "cph")
+    )
+Description: Utilities to work with data from the Internal Displacement
+    Monitoring Centre (IDMC) (<https://www.internal-displacement.org/>),
+    with convenient functions for loading events data from the IDMC API
+    and transforming events data to daily displacement estimates.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/ocha-dap/idmc
+BugReports: https://github.com/ocha-dap/idmc/issues
+Imports: dplyr, glue, httr, jsonlite, lifecycle, magrittr, stringr,
+        tidyr
+Suggests: knitr, rmarkdown, usethis
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-02-05 14:36:35 UTC; marti
+Author: Giulia Martini [aut, cre, cph]
+Maintainer: Giulia Martini <giulia.martini@un.org>
+Repository: CRAN
+Date/Publication: 2026-02-05 22:00:09 UTC

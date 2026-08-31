@@ -1,0 +1,21 @@
+Package: fgdiR
+Title: Functional Gait Deviation Index
+Version: 0.1.0
+Authors@R: c(person("Michelle", "Carey", email = "michelle.carey@ucd.ie", role = c("aut", "cre")), person("Sajal", "Kaur Minhas", email = "sajal.minhas@ucdconnect.ie", role = "aut"))
+Description: A typical gait analysis requires the examination of the motion of nine joint angles on the left-hand side and six joint angles on the right-hand side across multiple subjects. Due to the quantity and complexity of the data, it is useful to calculate the amount by which a subject’s gait deviates from an average normal profile and to represent this deviation as a single number. Such a measure can quantify the overall severity of a condition affecting walking, monitor progress, or evaluate the outcome of an intervention prescribed to improve the gait pattern. This R package provides tools for computing the Functional Gait Deviation Index, a novel index for quantifying gait pathology using multivariate functional principal component analysis. The package supports analysis at the level of both legs combined, individual legs, and individual joints/planes. It includes functions for functional data preprocessing, multivariate functional principal component decomposition, FGDI computation, and visualisation of gait abnormality scores. Further details can be found in Minhas, S. K., Sangeux, M., Polak, J., & Carey, M. (2025). The Functional Gait Deviation Index. Journal of Applied Statistics <doi:10.1080/02664763.2025.2514150>.
+Depends: R (>= 3.5.0)
+Imports: ggplot2, dplyr, tidyr, Matrix, magrittr, refund,
+Suggests: knitr, rmarkdown, ggpubr, gridExtra, forcats, knitr,
+        rmarkdown,
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-10 12:11:44 UTC; michellecarey
+Author: Michelle Carey [aut, cre],
+  Sajal Kaur Minhas [aut]
+Maintainer: Michelle Carey <michelle.carey@ucd.ie>
+Repository: CRAN
+Date/Publication: 2025-12-16 14:20:02 UTC

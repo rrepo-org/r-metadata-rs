@@ -1,0 +1,58 @@
+Type: Package
+Package: ringbp
+Title: Simulate and Evaluate Targeted Interventions in Infectious
+        Disease Outbreaks
+Version: 1.0.0
+Authors@R: c(
+    person("Joel", "Hellewell", , "Joel.Hellewell@lshtm.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0003-2683-0849")),
+    person("Sam", "Abbott", , "contact@samabbott.co.uk", role = "aut",
+           comment = c(ORCID = "0000-0001-8057-8037")),
+    person("Amy", "Gimma", , "amy.gimma@lshtm.ac.uk", role = "aut"),
+    person("Tim", "Lucas", , "tim.lucas@leicester.ac.uk", role = "aut"),
+    person("Sebastian", "Funk", , "sebastian.funk@lshtm.ac.uk", role = "aut"),
+    person("Adam", "Kucharski", , "adam.kucharski@lshtm.ac.uk", role = "aut"),
+    person("Hugo", "Gruson", , "hugo.gruson@data.org", role = "ctb",
+           comment = c(ORCID = "https://orcid.org/0000-0002-4094-1476")),
+    person("Carl A. B.", "Pearson", , "carl.ab.pearson@gmail.com", role = c("aut", "rev"),
+           comment = c(ORCID = "0000-0003-0701-7860")),
+    person("Joshua W.", "Lambert", , "joshua.lambert@lshtm.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5218-3046"))
+  )
+Description: Branching process simulation model of infectious disease
+    transmission with flexible parameterisation of epidemiology and
+    targeted interventions, including isolation, contact tracing and
+    quarantine, to reduce transmission, together with functions to
+    evaluate outbreak control.  Introduced in Hellewell et al. (2020)
+    <doi:10.1016/S2214-109X(20)30074-7>.
+License: MIT + file LICENSE
+URL: https://epiforecasts.io/ringbp/,
+        https://github.com/epiforecasts/ringbp
+BugReports: https://github.com/epiforecasts/ringbp/issues
+Depends: R (>= 4.4.0)
+Imports: checkmate, data.table, sn
+Suggests: future, future.apply, knitr, rmarkdown, roxyglobals (>=
+        1.0.0), spelling, testthat (>= 3.0.0), tinyplot
+VignetteBuilder: knitr
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-07 21:12:12 UTC; lshjl15
+Author: Joel Hellewell [aut] (ORCID: <https://orcid.org/0000-0003-2683-0849>),
+  Sam Abbott [aut] (ORCID: <https://orcid.org/0000-0001-8057-8037>),
+  Amy Gimma [aut],
+  Tim Lucas [aut],
+  Sebastian Funk [aut],
+  Adam Kucharski [aut],
+  Hugo Gruson [ctb] (ORCID: <https://orcid.org/0000-0002-4094-1476>),
+  Carl A. B. Pearson [aut, rev] (ORCID:
+    <https://orcid.org/0000-0003-0701-7860>),
+  Joshua W. Lambert [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5218-3046>)
+Maintainer: Joshua W. Lambert <joshua.lambert@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-06-15 13:30:02 UTC

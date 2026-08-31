@@ -1,0 +1,35 @@
+Package: RandomWalker
+Title: Generate Random Walks Compatible with the 'tidyverse'
+Version: 1.0.0
+Authors@R: c(
+    person("Steven","Sanderson", email = "spsanderson@gmail.com", role = c("aut","cre","cph"),
+      comment = c(ORCID = "0009-0006-7661-8247")
+      ),
+    person("Antti", "Rask", email = "anttilennartrask@gmail.com", role = c("aut", "cph")
+      )
+    )
+Description: 
+    Generates random walks of various types by providing a set of functions
+    that are compatible with the 'tidyverse'. The functions provided in the package
+    make it simple to create random walks with a variety of properties, such as
+    how many simulations to run, how many steps to take, and the distribution of
+    random walk itself.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2.9000
+URL: https://www.spsanderson.com/RandomWalker/,
+        https://github.com/spsanderson/RandomWalker
+BugReports: https://github.com/spsanderson/RandomWalker/issues
+Language: en
+Depends: R (>= 4.1.0)
+Imports: dplyr, tidyr, purrr, rlang, patchwork, NNS, ggiraph
+Suggests: knitr, rmarkdown, stats, ggplot2, tidyselect
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-08-18 22:15:50 UTC; steve
+Author: Steven Sanderson [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0006-7661-8247>),
+  Antti Rask [aut, cph]
+Maintainer: Steven Sanderson <spsanderson@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-08-18 23:50:57 UTC

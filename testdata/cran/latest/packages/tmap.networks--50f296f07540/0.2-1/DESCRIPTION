@@ -1,0 +1,32 @@
+Package: tmap.networks
+License: GPL-3
+Title: Extension to 'tmap' for Creating Network Visualizations
+Type: Package
+Authors@R: c(
+	person("Martijn", "Tennekes", email = "mtennekes@gmail.com", role = c("aut", "cre")),
+	person(given = "Andrea",
+             family = "Gilardi",
+             role = "aut",
+             email = "andrea.gilardi@unimib.it",
+             comment = c(ORCID = "0000-0002-9424-7439")),
+	person("Robin", "Lovelace", email = "rob00x@gmail.com", role = "ctb")
+	)
+Description: Provides functions for visualizing networks with 'tmap'. It supports 'sfnetworks' objects natively but is not limited to them. Useful for adding network layers such as edges and nodes to 'tmap' maps. More features may be added in future versions.
+Version: 0.2-1
+Encoding: UTF-8
+Depends: R (>= 4.0),
+Imports: tmap (>= 4.3), sf, sfnetworks, lwgeom, data.table, igraph
+Suggests: knitr
+Config/Needs/website: bookdown, rmarkdown, r-tmap/tmap
+URL: https://github.com/r-tmap/tmap.networks,
+        https://r-tmap.github.io/tmap.networks/
+BugReports: https://github.com/r-tmap/tmap.networks/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-15 09:49:25 UTC; mtes
+Author: Martijn Tennekes [aut, cre],
+  Andrea Gilardi [aut] (ORCID: <https://orcid.org/0000-0002-9424-7439>),
+  Robin Lovelace [ctb]
+Maintainer: Martijn Tennekes <mtennekes@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-15 11:10:02 UTC

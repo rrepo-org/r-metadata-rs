@@ -1,0 +1,58 @@
+Type: Package
+Package: mschart
+Title: Chart Generation for 'Microsoft Word', 'Microsoft Excel' and
+        'Microsoft PowerPoint' Documents
+Version: 0.5.1
+Authors@R: c(
+    person("David", "Gohel", , "david.gohel@ardata.fr", role = c("aut", "cre")),
+    person("ArData", role = "cph"),
+    person("YouGov", role = "fnd"),
+    person("Jan Marvin", "Garbuszus", role = "ctb",
+           comment = "support for openxlsx2 and combo charts"),
+    person("Stefan", "Moog", , "moogs@gmx.de", role = "ctb",
+           comment = "support to set chart and plot area color and border, fix for line style none"),
+    person("Eli", "Daniels", , "eli.daniels@ardata.fr", role = "ctb"),
+    person("Marlon", "Molina", role = "ctb",
+           comment = "added table feature"),
+    person("Rokas", "Klydzia", role = "ctb",
+           comment = "custom labels"),
+    person("David", "Camposeco", , "david.camposeco.paulsen@gmail.com", role = "ctb",
+           comment = "chart_data_smooth function"),
+    person("Dan", "Joplin", role = "ctb",
+           comment = "fix scatter plot data structure")
+  )
+Description: Create native charts for 'Microsoft PowerPoint', 'Microsoft
+    Excel' and 'Microsoft Word' documents. The resulting charts can then
+    be edited and annotated in the host application. It provides functions
+    to create charts and to modify their content and formatting. The
+    chart's underlying data is automatically saved within the 'Word',
+    'Excel' or 'PowerPoint' file. It extends the 'officer' package, which
+    does not provide native 'Microsoft' chart production.
+License: MIT + file LICENSE
+URL: https://ardata-fr.github.io/officeverse/,
+        https://ardata-fr.github.io/mschart/
+BugReports: https://github.com/ardata-fr/mschart/issues
+Depends: R (>= 3.5)
+Imports: cellranger, data.table, grDevices, htmltools, officer (>=
+        0.7.5), scales, stats, utils, writexl, xml2 (>= 1.1.0)
+Suggests: doconv (>= 0.4.0), testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-20 14:18:38 UTC; davidgohel
+Author: David Gohel [aut, cre],
+  ArData [cph],
+  YouGov [fnd],
+  Jan Marvin Garbuszus [ctb] (support for openxlsx2 and combo charts),
+  Stefan Moog [ctb] (support to set chart and plot area color and border,
+    fix for line style none),
+  Eli Daniels [ctb],
+  Marlon Molina [ctb] (added table feature),
+  Rokas Klydzia [ctb] (custom labels),
+  David Camposeco [ctb] (chart_data_smooth function),
+  Dan Joplin [ctb] (fix scatter plot data structure)
+Maintainer: David Gohel <david.gohel@ardata.fr>
+Repository: CRAN
+Date/Publication: 2026-07-20 14:50:02 UTC

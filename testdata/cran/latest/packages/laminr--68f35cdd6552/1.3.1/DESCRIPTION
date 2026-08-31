@@ -1,0 +1,38 @@
+Package: laminr
+Title: Client for 'LaminDB'
+Version: 1.3.1
+Authors@R: c(
+    person("Robrecht", "Cannoodt", , "robrecht@lamin.ai", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3641-729X")),
+    person("Luke", "Zappia", , "luke@data-intuitive.com", role = "aut",
+           comment = c(ORCID = "0000-0001-7744-8565")),
+    person("Data Intuitive", , , "info@data-intuitive.com", role = "aut"),
+    person("Lamin Labs", , , "open-source@lamin.ai", role = c("aut", "cph"))
+  )
+Description: Interact with 'LaminDB'. 'LaminDB' is an open-source data
+    framework for biology. This package allows you to query and download
+    data from 'LaminDB' instances.
+License: Apache License (>= 2)
+URL: https://laminr.lamin.ai, https://github.com/laminlabs/laminr
+BugReports: https://github.com/laminlabs/laminr/issues
+Depends: R (>= 4.1.0)
+Imports: callr, cli, lifecycle, pkgload, purrr, R.utils, R6, reticulate
+        (>= 1.41.0), rlang, sessioninfo, utils, withr
+Suggests: anndata, arrow, IRkernel, jsonlite, knitr, magick, readr,
+        rmarkdown, rstudioapi, rsvg, testthat (>= 3.0.0), yaml
+VignetteBuilder: knitr
+Encoding: UTF-8
+Config/Needs/website: rmarkdown, Seurat
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Config/roxygen2/markdown: TRUE
+NeedsCompilation: no
+Packaged: 2026-07-07 13:52:02 UTC; luke
+Author: Robrecht Cannoodt [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3641-729X>),
+  Luke Zappia [aut] (ORCID: <https://orcid.org/0000-0001-7744-8565>),
+  Data Intuitive [aut],
+  Lamin Labs [aut, cph]
+Maintainer: Robrecht Cannoodt <robrecht@lamin.ai>
+Repository: CRAN
+Date/Publication: 2026-07-07 14:20:02 UTC

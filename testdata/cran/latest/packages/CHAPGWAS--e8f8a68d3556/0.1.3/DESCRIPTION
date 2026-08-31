@@ -1,0 +1,32 @@
+Package: CHAPGWAS
+Type: Package
+Title: CHAP-GWAS: Leveraging Chromosomal Haplotypes to Improve
+        Genome-Wide Association Studies
+Version: 0.1.3
+Authors@R: c(
+    person("Shibo", "Wang", email = "shibow@ucr.edu", role = c("aut","cre")),
+    person("Qiong", "Jia", email = "qjia009@ucr.edu", role = "aut"),
+    person("Zhenyu", "Jia", email = "arthur.jia@ucr.edu", role = c("aut","ctb"))
+    )
+Description: CHAP-GWAS (Chromosomal Haplotype-Integrated Genome-Wide Association
+    Study) provides a dynamically adaptive framework for genome-wide association
+    studies (GWAS) that integrates chromosome-scale haplotypes with single
+    nucleotide polymorphism (SNP) analysis. The method identifies and extends
+    haplotype variants based on their phenotypic associations rather than
+    predefined linkage blocks, enabling high-resolution detection of quantitative
+    trait loci (QTL). By leveraging long-range phased haplotype information,
+    CHAP-GWAS improves statistical power and offers a more comprehensive view of
+    the genetic architecture underlying complex traits.
+Depends: R (>= 4.0.0)
+Imports: MASS, plyr
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-04 00:58:51 UTC; neau2
+Author: Shibo Wang [aut, cre],
+  Qiong Jia [aut],
+  Zhenyu Jia [aut, ctb]
+Maintainer: Shibo Wang <shibow@ucr.edu>
+Repository: CRAN
+Date/Publication: 2026-01-08 04:10:02 UTC

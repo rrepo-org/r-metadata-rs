@@ -1,0 +1,47 @@
+Package: CellWindX
+Title: Marker Gene Analysis and Visualization for Single-Cell Data
+Version: 1.0.0
+Authors@R: 
+    c(
+        person(
+            given = "Xiaofeng",
+            family = "Yang",
+            email = "Youngxf02@163.com",
+            role = c("aut", "cre"),
+            comment = c(affiliation = "Chongqing Medical University")
+        ),
+        person(
+            given = "Shan",
+            family = "Li",
+            email = "andylee24@foxmail.com",
+            role = "aut",
+            comment = c(affiliation = "Chongqing Medical University")
+        )
+     )
+Description: Provides a 'Seurat'-compatible toolkit for marker gene identification,
+    expression summarization, and visualization of annotated single-cell
+    transcriptomic data. 'CellWindX' identifies top cell-type-enriched markers,
+    calculates marker expression percentages and average expression values across
+    cell groups, and generates publication-oriented dimensional reduction plots,
+    marker heatmaps, and gene-level radar plots. The package includes built-in
+    aesthetic palettes and supports both exploratory analysis and downstream figure
+    preparation for single-cell atlas studies. The workflow is designed to
+    complement single-cell analysis frameworks such as 'Seurat' described by
+    Satija et al. (2015) <doi:10.1038/nbt.3192> and Hao et al. (2021)
+    <doi:10.1016/j.cell.2021.04.048>, as well as heatmap visualization methods
+    implemented in 'ComplexHeatmap' described by Gu et al. (2016)
+    <doi:10.1093/bioinformatics/btw313>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: circlize, ComplexHeatmap, dplyr, ggplot2, grDevices, grid,
+        Matrix, patchwork, Seurat, tidyr, stats
+Suggests: SeuratObject
+NeedsCompilation: no
+Packaged: 2026-05-20 13:36:35 UTC; young
+Author: Xiaofeng Yang [aut, cre] (affiliation: Chongqing Medical University),
+  Shan Li [aut] (affiliation: Chongqing Medical University)
+Maintainer: Xiaofeng Yang <Youngxf02@163.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-05-27 19:50:27 UTC

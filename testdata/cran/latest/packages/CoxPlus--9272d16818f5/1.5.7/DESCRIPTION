@@ -1,0 +1,23 @@
+Package: CoxPlus
+Type: Package
+Title: Cox Regression (Proportional Hazards Model) with Multiple Causes
+        and Mixed Effects
+Version: 1.5.7
+Date: 2025-11-19
+Authors@R: person(given = "Jing",
+                    family = "Peng",
+                    role = c("aut", "cre"),
+                    email = "jing.peng@uconn.edu")
+Maintainer: Jing Peng <jing.peng@uconn.edu>
+Description: Extends the Cox model to events with more than one causes. Also supports random and fixed effects, tied events, and time-varying variables. Model details are provided in Peng et al. (2018) <doi:10.1509/jmr.14.0643>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.1.0), Rcpp (>= 0.12.0)
+Imports: utils, methods, data.table
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+Packaged: 2025-11-19 12:49:34 UTC; pengj
+Author: Jing Peng [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-11-19 16:10:13 UTC

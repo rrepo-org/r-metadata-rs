@@ -1,0 +1,98 @@
+Package: Luminescence
+Type: Package
+Title: Comprehensive Luminescence Dating Data Analysis
+Version: 1.3.0
+Date: 2026-07-22
+Authors@R: c(
+    person("Sebastian", "Kreutzer", role = c("aut", "trl", "cre", "dtc"), email = "maintainer_luminescence@r-luminescence.org", comment = c(ORCID = "0000-0002-0734-2199")),
+    person("Christoph", "Burow", role = c("aut", "trl", "dtc"), comment = c(ORCID = "0000-0002-5023-4046")),
+    person("Michael", "Dietze", role = c("aut"), comment = c(ORCID = "0000-0001-6063-1726")),
+    person("Margret C.", "Fuchs", role = c("aut"), comment = c(ORCID = "0000-0001-7210-1132")),
+    person("Christoph", "Schmidt", role = c("aut"), comment = c(ORCID = "0000-0002-2309-3209")),
+    person("Manfred", "Fischer", role = c("aut", "trl")),
+    person("Johannes", "Friedrich", role = c("aut"), comment = c(ORCID = "0000-0002-0805-9547")),
+    person("Norbert", "Mercier", role = c("aut"), comment = c(ORCID = "0000-0002-6375-9108")),
+    person("Rachel K.", "Smedley", role = c("ctb"), comment = c(ORCID = "0000-0001-7773-5193")),
+    person("Claire", "Christophe", role = c("ctb")),
+    person("Antoine", "Zink", role = c("ctb"), comment = c(ORCID = "0000-0001-7146-1101")),
+    person("Julie", "Durcan", role = c("ctb"), comment = c(ORCID = "0000-0001-8724-8022")),
+    person("Georgina E.", "King", role = c("ctb", "dtc"), comment = c(ORCID = "0000-0003-1059-8192")),
+    person("Anne", "Philippe", role = c("aut"), comment = c(ORCID = "0000-0002-5331-5087")),
+    person("Guillaume", "Guérin", role = c("ctb"), comment = c(ORCID = "0000-0001-6298-5579")),
+    person("Svenja", "Riedesel", role = c("aut"), comment = c(ORCID = "0000-0003-2936-8776")),
+    person("Martin", "Autzen", role = c("aut"), comment = c(ORCID = "0000-0001-6249-426X")),
+    person("Pierre", "Guibert", role = c("ctb"), comment = c(ORCID = "0000-0001-8969-8684")),
+    person("Dirk", "Mittelstrass", role = c("aut"), comment = c(ORCID = "0000-0002-9567-8791")),
+    person("Harrison J.", "Gray", role = c("aut"), comment = c(ORCID = "0000-0002-4555-7473")),
+    person("Jean-Michel", "Galharret", role = c("aut"), comment = c(ORCID = "0000-0003-2219-8727")),
+    person("Marco", "Colombo", role = c("aut"), comment = c(ORCID = "0000-0001-6672-0623")),
+    person("Luc", "Steinbuch", role = c("aut"), comment = c(ORCID = "0000-0001-6484-0920")),
+    person("Anna-Maartje", "de Boer", role = c("aut"), comment = c(ORCID = "0000-0002-7359-6939")),
+    person("Andrzej", "Bluszcz", role = c("aut"), comment = c(ORCID = "0000-0002-8027-6941")),
+    person("Markus", "Fuchs", role = c("ths"), comment = c(ORCID = "0000-0003-4669-6528")))
+Maintainer: Sebastian Kreutzer <maintainer_luminescence@r-luminescence.org>
+Description: A collection of various R functions for the purpose of Luminescence
+    dating data analysis. This includes, amongst others, data import, export,
+    application of age models, curve deconvolution, sequence analysis and
+    plotting of equivalent dose distributions.
+Contact: Package Developers <developers@r-luminescence.org>
+License: GPL-3
+URL: https://r-lum.github.io/Luminescence/
+BugReports: https://github.com/R-Lum/Luminescence/issues
+Depends: R (>= 4.4), utils
+LinkingTo: Rcpp (>= 1.1.1)
+Imports: bbmle (>= 1.0.25.1), data.table (>= 1.18.2.1), DEoptim (>=
+        2.2-8), httr (>= 1.4.8), interp (>= 1.1-6), lamW (>= 2.2.7),
+        matrixStats (>= 1.5.0), methods, minpack.lm (>= 1.2-4), mclust
+        (>= 6.1.2), Rcpp (>= 1.1.1), shape (>= 1.4.6), parallel, XML
+        (>= 3.99-0.23),
+Suggests: spelling (>= 2.3.2), plotly (>= 4.12.0), rmarkdown (>= 2.31),
+        rstudioapi (>= 0.18.0), rjags (>= 4-17), coda (>= 0.19-4),
+        knitr, pander (>= 0.6.6), testthat (>= 3.3.2), vdiffr (>=
+        1.0.9), tiff (>= 0.1-12), devtools (>= 2.5.0), R.rsp (>=
+        0.46.0)
+VignetteBuilder: R.rsp, knitr
+Encoding: UTF-8
+Language: en-US
+Config/testthat/edition: 3
+Config/testthat/parallel: TRUE
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-22 13:19:11 UTC; marco
+Author: Sebastian Kreutzer [aut, trl, cre, dtc] (ORCID:
+    <https://orcid.org/0000-0002-0734-2199>),
+  Christoph Burow [aut, trl, dtc] (ORCID:
+    <https://orcid.org/0000-0002-5023-4046>),
+  Michael Dietze [aut] (ORCID: <https://orcid.org/0000-0001-6063-1726>),
+  Margret C. Fuchs [aut] (ORCID: <https://orcid.org/0000-0001-7210-1132>),
+  Christoph Schmidt [aut] (ORCID:
+    <https://orcid.org/0000-0002-2309-3209>),
+  Manfred Fischer [aut, trl],
+  Johannes Friedrich [aut] (ORCID:
+    <https://orcid.org/0000-0002-0805-9547>),
+  Norbert Mercier [aut] (ORCID: <https://orcid.org/0000-0002-6375-9108>),
+  Rachel K. Smedley [ctb] (ORCID:
+    <https://orcid.org/0000-0001-7773-5193>),
+  Claire Christophe [ctb],
+  Antoine Zink [ctb] (ORCID: <https://orcid.org/0000-0001-7146-1101>),
+  Julie Durcan [ctb] (ORCID: <https://orcid.org/0000-0001-8724-8022>),
+  Georgina E. King [ctb, dtc] (ORCID:
+    <https://orcid.org/0000-0003-1059-8192>),
+  Anne Philippe [aut] (ORCID: <https://orcid.org/0000-0002-5331-5087>),
+  Guillaume Guérin [ctb] (ORCID: <https://orcid.org/0000-0001-6298-5579>),
+  Svenja Riedesel [aut] (ORCID: <https://orcid.org/0000-0003-2936-8776>),
+  Martin Autzen [aut] (ORCID: <https://orcid.org/0000-0001-6249-426X>),
+  Pierre Guibert [ctb] (ORCID: <https://orcid.org/0000-0001-8969-8684>),
+  Dirk Mittelstrass [aut] (ORCID:
+    <https://orcid.org/0000-0002-9567-8791>),
+  Harrison J. Gray [aut] (ORCID: <https://orcid.org/0000-0002-4555-7473>),
+  Jean-Michel Galharret [aut] (ORCID:
+    <https://orcid.org/0000-0003-2219-8727>),
+  Marco Colombo [aut] (ORCID: <https://orcid.org/0000-0001-6672-0623>),
+  Luc Steinbuch [aut] (ORCID: <https://orcid.org/0000-0001-6484-0920>),
+  Anna-Maartje de Boer [aut] (ORCID:
+    <https://orcid.org/0000-0002-7359-6939>),
+  Andrzej Bluszcz [aut] (ORCID: <https://orcid.org/0000-0002-8027-6941>),
+  Markus Fuchs [ths] (ORCID: <https://orcid.org/0000-0003-4669-6528>)
+Repository: CRAN
+Date/Publication: 2026-07-22 15:40:13 UTC

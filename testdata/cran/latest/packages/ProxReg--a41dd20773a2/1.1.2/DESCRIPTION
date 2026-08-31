@@ -1,0 +1,25 @@
+Package: ProxReg
+Type: Package
+Title: Linear Models for Prediction and Classification using Proximal
+        Operators
+Version: 1.1.2
+Date: 2025-06-16
+Maintainer: YingHong Chen <yinghongchen1402@gmail.com>
+Authors@R: c(person("YingHong","Chen",role = c("aut", "cre"),email = "yinghongchen1402@gmail.com"),
+            person("Ferran","Reverter Comes",role=c("aut"),email = "freverter@ub.edu"),
+            person("Esteban", "Vegas Lozano",role=c("aut"),email="evegas@ub.edu"))
+Description: Implements optimization techniques for Lasso regression, R.Tibshirani(1996)<doi:10.1111/j.2517-6161.1996.tb02080.x> using Fast Iterative Shrinkage-Thresholding Algorithm (FISTA) and Iterative Shrinkage-Thresholding Algorithm (ISTA) based on proximal operators, A.Beck(2009)<doi:10.1137/080716542>. The package is useful for high-dimensional regression problems and includes cross-validation procedures to select optimal penalty parameters.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown,
+VignetteBuilder: knitr
+Imports: dplyr, EBImage, glmnet
+NeedsCompilation: no
+Packaged: 2025-06-16 15:44:40 UTC; yingh
+Author: YingHong Chen [aut, cre],
+  Ferran Reverter Comes [aut],
+  Esteban Vegas Lozano [aut]
+Repository: CRAN
+Date/Publication: 2025-06-17 09:00:12 UTC

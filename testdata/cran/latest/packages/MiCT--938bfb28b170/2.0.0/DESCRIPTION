@@ -1,0 +1,59 @@
+Package: MiCT
+Type: Package
+Title: Minimal Important Change and Threshold Estimation
+Version: 2.0.0
+Authors@R: c(
+    person(
+        given = "Iris",
+        family = "Eekhout",
+        role = "aut",
+        email = "iris.eekhout@tno.nl",
+        comment = "Original package author"
+    ),
+    person(
+        given = "Berend",
+        family = "Terluin",
+        role = "aut",
+        email = "berend@terluin.net"
+    ),
+    person(
+        given = "Yong-Hao",
+        family = "Pua",
+        role = c("aut", "cre"),
+        email = "gmspuyh@duke-nus.edu.sg"
+    )
+    )
+Description: Provides methods for estimating minimal important change (MIC)
+    and interpretation thresholds for multi-item questionnaires and single-item continuous or ordinal
+    measures. Methods include predictive modelling, adjusted predictive
+    modelling, improved adjusted predictive modelling using anchor reliability,
+    confirmatory factor analysis for anchor reliability, longitudinal
+    confirmatory factor analysis for MIC estimation, longitudinal confirmatory
+    factor analysis-based MIC estimation for single-item measures, and
+    confirmatory factor analysis-based threshold estimation for single-item and
+    multi-item measures. Implemented methods include those developed by
+    Terluin et al. (2015) <doi:10.1016/j.jclinepi.2015.03.015>,
+    Terluin et al. (2017) <doi:10.1016/j.jclinepi.2016.12.015>,
+    Terluin et al. (2022) <doi:10.1016/j.jclinepi.2022.04.018>,
+    Terluin et al. (2023) <doi:10.1007/s11136-023-03355-8>,
+    Terluin et al. (2024) <doi:10.1007/s11136-023-03577-w>,
+    Terluin et al. (2024) <doi:10.1007/s11136-024-03763-4>, and
+    Terluin et al. (2026) <doi:10.1007/s11136-025-04134-3>.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: lavaan, MASS, mirt, pROC
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/yhpua/MiCT, https://yhpua.github.io/MiCT/
+BugReports: https://github.com/yhpua/MiCT/issues
+NeedsCompilation: no
+Packaged: 2026-08-04 22:25:38 UTC; PYH
+Author: Iris Eekhout [aut] (Original package author),
+  Berend Terluin [aut],
+  Yong-Hao Pua [aut, cre]
+Maintainer: Yong-Hao Pua <gmspuyh@duke-nus.edu.sg>
+Repository: CRAN
+Date/Publication: 2026-08-09 08:30:08 UTC

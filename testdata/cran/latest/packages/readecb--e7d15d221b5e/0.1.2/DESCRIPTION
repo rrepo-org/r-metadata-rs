@@ -1,0 +1,31 @@
+Package: readecb
+Title: Access 'European Central Bank' Data
+Version: 0.1.2
+Authors@R: person("Charles", "Coverdale", email = "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
+Description: Provides clean, tidy access to statistical data published by the
+    'European Central Bank' ('ECB') via the 'ECB Data Portal' API
+    <https://data.ecb.europa.eu>. Covers policy interest rates, 'EURIBOR',
+    euro exchange rates, harmonised consumer price inflation ('HICP'), euro area
+    yield curves, the euro short-term rate ('ESTR'), monetary aggregates (M1,
+    M2, M3), mortgage and lending rates, GDP, unemployment, and government
+    debt-to-GDP. Each dataset has a dedicated function that abstracts away the
+    underlying 'SDMX' key structure, so users do not need to know series codes.
+    A generic fetcher is also provided for direct access to any of the 'ECB'
+    100-plus dataflows. Data is downloaded on first use and cached locally for
+    subsequent calls.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+URL: https://github.com/charlescoverdale/readecb
+BugReports: https://github.com/charlescoverdale/readecb/issues
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.6.0), httr2 (>= 1.0.0), tools
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-16 18:12:12 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-19 15:10:02 UTC

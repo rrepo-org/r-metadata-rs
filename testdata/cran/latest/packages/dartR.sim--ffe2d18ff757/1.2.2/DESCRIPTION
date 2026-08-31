@@ -1,0 +1,39 @@
+Package: dartR.sim
+Type: Package
+Title: Computer Simulations of 'SNP' Data
+Version: 1.2.2
+Date: 2026-02-17
+Revision: Elastic Elapid
+Authors@R: c(
+            person("Jose L.", "Mijangos", email="luis.mijangos@gmail.com", role=c("aut","cre")),
+            person("Bernd", "Gruber", email="bernd.gruber@canberra.edu.au", role="aut"), 
+            person("Arthur", "Georges", email="georges@aerg.edu.au", role="aut"),
+            person("Carlo", "Pacioni",email="carlo.pacioni@delwp.vic.gov.au",role="aut"),
+            person("Diana", "Robledo-Ruiz", email="diana.robledoruiz1@monash.edu", role = "aut"),
+            person("Peter J.", "Unmack", email="peter.mail2@unmack.net", role="ctb"),
+            person("Oliver", "Berry", email="oliver.berry@csiro.au", role="ctb" )
+            )
+Description: Allows to simulate SNP data using genlight objects. For example, it is straight forward to simulate a simple drift scenario with exchange of individuals between two populations or create a new genlight object based on allele frequencies of an existing genlight object.
+Encoding: UTF-8
+Depends: R (>= 4.1.0), dartR.base, dartR.data, ggplot2, dartR.popgen
+Imports: adegenet (>= 2.0.0), shiny, fields, utils, methods, stringi,
+        stringr, data.table, Rcpp, shinyBS, shinyjs, shinythemes,
+        shinyWidgets, hierfstat, reshape2, foreach, ggrepel, dplyr,
+        doParallel
+License: GPL (>= 3)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-17 00:32:14 UTC; mijangos
+Author: Jose L. Mijangos [aut, cre],
+  Bernd Gruber [aut],
+  Arthur Georges [aut],
+  Carlo Pacioni [aut],
+  Diana Robledo-Ruiz [aut],
+  Peter J. Unmack [ctb],
+  Oliver Berry [ctb]
+URL: https://green-striped-gecko.github.io/dartR/,
+        https://github.com/green-striped-gecko/dartR.sim
+BugReports: https://github.com/green-striped-gecko/dartR.sim/issues
+Maintainer: Jose L. Mijangos <luis.mijangos@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-17 11:40:02 UTC

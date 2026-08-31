@@ -1,0 +1,28 @@
+Package: USE
+Title: Uniform Sampling of the Environmental Space
+Version: 0.1.6
+Authors@R: c(
+    person("Daniele", "Da Re", email = "dare.daniele@gmail.com",  comment=c(ORCID = "0000-0002-3398-9295"), role = c("aut","cre")),
+    person("Enrico", "Tordoni", email = "e.tordoni@gmail.com", comment=c(ORCID = "0000-0002-9722-6692"), role = "aut"), 
+    person("Manuele", "Bazzichetto", email = "manuele.bazzichetto@gmail.com", comment=c(ORCID= "0000-0002-9874-5064"),  role = "aut"))
+Description: Provides functions for uniform sampling of the environmental space, designed to assist species distribution modellers in gathering ecologically relevant pseudo-absence data. The method ensures balanced representation of environmental conditions and helps reduce sampling bias in model calibration. Based on the framework described by Da Re et al. (2023) <doi:10.1111/2041-210X.14209>.
+Depends: R (>= 3.6.0)
+Imports: sf, parallel, terra, ks, ggplot2, cowplot
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+URL: https://danddr.github.io/USE/, https://github.com/danddr/USE
+BugReports: https://github.com/danddr/USE/issues
+RoxygenNote: 7.3.2
+Suggests: rmarkdown, knitr, tidyterra
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-09-10 12:15:13 UTC; dared
+Author: Daniele Da Re [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3398-9295>),
+  Enrico Tordoni [aut] (ORCID: <https://orcid.org/0000-0002-9722-6692>),
+  Manuele Bazzichetto [aut] (ORCID:
+    <https://orcid.org/0000-0002-9874-5064>)
+Maintainer: Daniele Da Re <dare.daniele@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-15 08:10:02 UTC

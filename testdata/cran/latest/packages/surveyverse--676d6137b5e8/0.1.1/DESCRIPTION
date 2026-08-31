@@ -1,0 +1,27 @@
+Package: surveyverse
+Title: Easily Install and Load Survey Analysis Packages
+Version: 0.1.1
+Authors@R: c(
+    person("Ben", "Schneider", , "benjamin.julius.schneider@gmail.com", role = c("aut", "cre", "cph")),
+    person("Hadley", "Wickham", role = "ctb", comment = "Vendored code from the tidyverse package is used in surveyverse")
+  )
+Description: Makes it easy to install and load a collection of packages for survey analysis
+    that build upon the foundational 'survey' package of Lumley (2004) <doi:10.18637/jss.v009.i08>.
+    Schneider (2025) <https://isi-iass.org/home/wp-content/uploads/Survey_Statistician_2025_January_N91_06.pdf>
+    describes the three core packages in this collection.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Imports: cli, rlang, survey, srvyr, svrep, svyVGAM, svylme, stats
+Suggests: spelling
+Language: en-US
+URL: https://github.com/bschneidr/surveyverse
+BugReports: https://github.com/bschneidr/surveyverse/issues
+NeedsCompilation: no
+Packaged: 2026-07-12 14:50:33 UTC; benja
+Author: Ben Schneider [aut, cre, cph],
+  Hadley Wickham [ctb] (Vendored code from the tidyverse package is used
+    in surveyverse)
+Maintainer: Ben Schneider <benjamin.julius.schneider@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 10:50:02 UTC

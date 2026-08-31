@@ -1,0 +1,39 @@
+Package: odyssey
+Title: Interface to the HAL Open Archive API
+Version: 1.0.1
+Authors@R: c(
+    person("Nicolas", "Frerebeau", , "nicolas.frerebeau@u-bordeaux-montaigne.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5759-4944")),
+    person("Université Bordeaux Montaigne", role = "fnd",
+           comment = c(ROR = "03pbgwk21")),
+    person("CNRS", role = "fnd",
+           comment = c(ROR = "02feahw73"))
+  )
+Description: An interface to the search API of 'HAL'
+    <https://hal.science/>, the French open archive for scholarly
+    documents from all academic fields. This package provides programmatic
+    access to the API <https://api.archives-ouvertes.fr/docs> and allows
+    to search for records and download documents.
+License: GPL (>= 3)
+URL: https://codeberg.org/nfrerebeau/odyssey,
+        https://nfrerebeau.r-universe.dev/odyssey,
+        https://nfrerebeau.codeberg.page/odyssey/
+BugReports: https://codeberg.org/nfrerebeau/odyssey/issues
+Depends: R (>= 4.1)
+Imports: dplyr, httr2, rlang, utils
+Suggests: tinytest
+Encoding: UTF-8
+Collate: 'AllGenerics.R' 'hal_count.R' 'hal_download.R' 'hal_facet.R'
+        'hal_filter.R' 'hal_group.R' 'hal_parse.R' 'hal_query.R'
+        'hal_request.R' 'hal_search.R' 'hal_select.R' 'hal_sort.R'
+        'odyssey-package.R' 'operators.R' 'zzz.R'
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-15 13:29:21 UTC; nfrerebeau
+Author: Nicolas Frerebeau [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5759-4944>),
+  Université Bordeaux Montaigne [fnd] (ROR: <https://ror.org/03pbgwk21>),
+  CNRS [fnd] (ROR: <https://ror.org/02feahw73>)
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Repository: CRAN
+Date/Publication: 2026-06-15 14:20:09 UTC

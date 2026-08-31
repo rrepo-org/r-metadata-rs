@@ -1,0 +1,51 @@
+Package: nhscancerwaits
+Type: Package
+Title: NHS Cancer Waiting-Time Analysis, Benchmarking and Multilevel
+        Modelling
+Version: 1.0.2
+Authors@R: 
+    person(
+      given = "Muhammad",
+      family = "Zahir Khan",
+      email = "zahirstat007@gmail.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0009-0005-7645-8960")
+    )
+Description: Provides tools for importing, harmonising, cleaning, analysing,
+    benchmarking and visualising National Health Service (NHS) England
+    Cancer Waiting Times data. The package supports national performance
+    monitoring, provider-level benchmarking and cancer pathway comparisons
+    through key performance indicator summaries, provider filtering,
+    clustering analyses, mixed-effects regression models, variance
+    decomposition, intraclass correlation coefficient estimation, adjusted
+    provider performance estimation and sensitivity analyses. Functions are
+    included for exploratory analysis, publication-ready visualisations and
+    spreadsheet exports, supporting reproducible health services research,
+    cancer services evaluation, quality improvement and assessment of
+    waiting-time performance across healthcare organisations. Mixed-effects
+    modelling functionality is based on Bates et al. (2015)
+    <doi:10.18637/jss.v067.i01>. Multilevel modelling concepts and variance
+    decomposition follow Gelman and Hill (2007, ISBN:9780521686891).
+    Cancer Waiting Times definitions and reporting standards follow NHS
+    England
+    <https://www.england.nhs.uk/statistics/statistical-work-areas/cancer-waiting-times/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+Depends: R (>= 4.2.0)
+Imports: dplyr, tidyr, readr, readxl, stringr, lubridate, rlang,
+        ggplot2, scales, lme4, broom.mixed, performance, cluster,
+        stats, writexl
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, quarto, covr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/zerish12/nhscancerwaits
+BugReports: https://github.com/zerish12/nhscancerwaits/issues
+NeedsCompilation: no
+Packaged: 2026-06-12 13:55:47 UTC; muhammadzahirkhan
+Author: Muhammad Zahir Khan [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-7645-8960>)
+Maintainer: Muhammad Zahir Khan <zahirstat007@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-19 12:00:14 UTC

@@ -1,0 +1,24 @@
+Package: combreg
+Type: Package
+Title: Bayesian Regression for Combinatorial Response Data
+Version: 0.2.0
+Authors@R: person("Hugh", "Zheng", email = "hugh.stats@gmail.com",
+    role = c("aut", "cre", "cph"))
+Description: Bayesian regression whose response data are integer-valued vectors subject to combinatorial constraints in the form of Ay<=b. Implements the Metropolis-Hastings-within-Gibbs sampler of Zheng et al. (2026+) <doi:10.48550/arXiv.2504.11630>, an unconstrained probit baseline for comparison, benchmarking helpers, MCMC and regression diagnostics (effective sample sizes, split-Rhat, structured reports), plotting methods (trace, autocorrelation, violin, effective-sample-size, sampling-efficiency, residual heat map), and utilities for constraint validation (total unimodularity, feasibility) and data simulation.
+Depends: R (>= 4.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: Rcpp, coda, grDevices, graphics, stats, truncnorm, utils
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: lpSolve, posterior, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/YuZh98/combreg
+BugReports: https://github.com/YuZh98/combreg/issues
+NeedsCompilation: yes
+Packaged: 2026-07-20 20:36:13 UTC; zhengyu
+Author: Hugh Zheng [aut, cre, cph]
+Maintainer: Hugh Zheng <hugh.stats@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-29 18:40:07 UTC

@@ -1,0 +1,40 @@
+Package: confMeta
+Title: Confidence Curves and P-Value Functions for Meta-Analysis
+Version: 0.1.1
+Authors@R: c(
+    person("Saverio", "Fontana", email = "savefontana@gmail.com", role = c("aut", "cre"),
+            comment = c(ORCID = "0009-0001-9116-7812")),
+    person("Felix", "Hofmann", email = "felix@fshofmann.com",
+           role = c("aut"), comment = c(ORCID = "0000-0002-3891-6239")),
+    person("Leonhard", "Held", email = "leonhard.held@uzh.ch", role = c("aut"),
+           comment = c(ORCID = "0000-0002-8686-5325")),
+    person("Samuel", "Pawel", email = "samuel.pawel@uzh.ch", role = c("aut"),
+           comment = c(ORCID = "0000-0003-2779-320X"))
+    )
+Description: Provides tools for the combination of individual study results in
+    meta-analyses using 'p-value' functions. Implements various combination methods 
+    including those by Fisher, Stouffer, Tippett, Edgington along with 
+    weighted generalizations. Contains functionality for the visualization 
+    and calculation of confidence curves and drapery plots to summarize 
+    evidence across studies.
+License: GPL (>= 3)
+Language: en-US
+BugReports: https://github.com/SaveFonta/confMeta/issues
+URL: https://github.com/SaveFonta/confMeta
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: ggplot2, meta, metafor, patchwork, ReplicationSuccess, scales,
+        stats, rlang
+Suggests: knitr, rmarkdown, bayesmeta, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-09 21:20:26 UTC; Menelao
+Author: Saverio Fontana [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-9116-7812>),
+  Felix Hofmann [aut] (ORCID: <https://orcid.org/0000-0002-3891-6239>),
+  Leonhard Held [aut] (ORCID: <https://orcid.org/0000-0002-8686-5325>),
+  Samuel Pawel [aut] (ORCID: <https://orcid.org/0000-0003-2779-320X>)
+Maintainer: Saverio Fontana <savefontana@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-09 21:40:13 UTC

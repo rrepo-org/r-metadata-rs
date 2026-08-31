@@ -1,0 +1,48 @@
+Package: spCF
+Type: Package
+Title: Coarse-to-Fine Spatial and Spatio-Temporal Modeling
+Version: 0.2.1
+Authors@R: c(
+    person("Daisuke",  "Murakami",   email = "dmuraka@ism.ac.jp",
+           role = c("aut", "cre")) ,
+    person("Alexis",   "Comber",     role = "aut"),
+    person("Takahiro", "Yoshida",    role = "aut"),
+    person("Narumasa", "Tsutsumida", role = "aut"),
+    person("Chris",    "Brunsdon",   role = "aut"),
+    person("Tomoki",   "Nakaya",     role = "aut"),
+    person("Jose Luis", "Blanco-Claraco", role = c("ctb", "cph"),
+           comment = "Author of the bundled 'nanoflann' C++ library (src/nanoflann.h)"),
+    person("Marius", "Muja", role = "cph",
+           comment = "Copyright holder of the bundled 'nanoflann' C++ library"),
+    person(c("David", "G."), "Lowe", role = "cph",
+           comment = "Copyright holder of the bundled 'nanoflann' C++ library"))
+Depends: R (>= 4.1.0)
+Imports: FNN, fields, nloptr, dbscan, withr, Matrix, Rcpp
+LinkingTo: Rcpp
+Suggests: sp, sf, knitr, rmarkdown, CARBayesdata, ranger, lightgbm,
+        shiny, bslib, leaflet, terra, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Description: Provides functions for coarse-to-fine spatial and spatio-temporal modeling, enabling fast prediction, regression, and uncertainty quantification for moderate to large datasets. For methodological details, see Murakami et al. (2026) <doi:10.1111/gean.70034> and related work on generalized linear, downscaling, and dynamic spatio-temporal extensions.
+URL: https://github.com/dmuraka/spCF
+BugReports: https://github.com/dmuraka/spCF/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: yes
+Packaged: 2026-08-28 14:58:22 UTC; dmuraka
+Author: Daisuke Murakami [aut, cre],
+  Alexis Comber [aut],
+  Takahiro Yoshida [aut],
+  Narumasa Tsutsumida [aut],
+  Chris Brunsdon [aut],
+  Tomoki Nakaya [aut],
+  Jose Luis Blanco-Claraco [ctb, cph] (Author of the bundled 'nanoflann'
+    C++ library (src/nanoflann.h)),
+  Marius Muja [cph] (Copyright holder of the bundled 'nanoflann' C++
+    library),
+  David G. Lowe [cph] (Copyright holder of the bundled 'nanoflann' C++
+    library)
+Maintainer: Daisuke Murakami <dmuraka@ism.ac.jp>
+Repository: CRAN
+Date/Publication: 2026-08-28 17:40:02 UTC

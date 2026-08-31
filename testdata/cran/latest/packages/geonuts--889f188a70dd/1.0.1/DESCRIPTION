@@ -1,0 +1,32 @@
+Package: geonuts
+Type: Package
+Title: Identification and Visualisation of European NUTS Regions from
+        Geolocations
+Version: 1.0.1
+Authors@R: 
+    c(
+      person("Attila I.", "Katona", 
+             email = "katona.attila@gtk.uni-pannon.hu", 
+             role = c("aut", "cre")),
+      person("Marcell T.", "Kurbucz", 
+             email = "m.kurbucz@ucl.ac.uk", 
+             role = "aut")
+    )
+Description: Provides functions to identify European NUTS (Nomenclature of Territorial Units for Statistics) regions for geographic coordinates (latitude/longitude) using Eurostat geospatial boundaries. Includes map-based visualisation of the matched regions for validation and exploration. Designed for regional data analysis, reproducible workflows, and integration with common geospatial R packages.
+License: GPL (>= 3)
+URL: https://github.com/aikatona/geonuts
+BugReports: https://github.com/aikatona/geonuts/issues
+Depends: R (>= 4.1.0)
+Imports: eurostat, ggplot2, giscoR, units, grid, sf
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-18 17:24:06 UTC; mtkurbucz
+Author: Attila I. Katona [aut, cre],
+  Marcell T. Kurbucz [aut]
+Maintainer: Attila I. Katona <katona.attila@gtk.uni-pannon.hu>
+Repository: CRAN
+Date/Publication: 2026-03-18 18:00:02 UTC

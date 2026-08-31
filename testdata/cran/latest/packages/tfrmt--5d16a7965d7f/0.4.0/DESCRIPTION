@@ -1,0 +1,52 @@
+Package: tfrmt
+Title: Applies Display Metadata to Analysis Results Datasets
+Version: 0.4.0
+Authors@R: c(
+    person("Alanah", "Jonas", , "alanah.x.jonas@gsk.com", role = c("aut", "cre")),
+    person("Becca", "Krouse", , "becca.z.krouse@gsk.com", role = "aut"),
+    person("Christina", "Fillmore", , "christina.e.fillmore@gsk.com", role = "aut",
+           comment = c(ORCID = "0000-0003-0595-2302")),
+    person("Ellis", "Hughes", , "ellis.h.hughes@gsk.com", role = "aut",
+           comment = c(ORCID = "0000-0003-0637-4436")),
+    person("Karima", "Ahmad", , "karima.j.ahmad@gsk.com", role = "aut",
+           comment = c(ORCID = "0000-0002-8784-1712")),
+    person("Shannon", "Haughton", , "shannon.l.haughton@gsk.com", role = "aut"),
+    person("Dragoș", "Moldovan-Grünfeld", , "dragos.v.moldovan-grunfeld@gsk.com", role = "aut"),
+    person("GlaxoSmithKline Research & Development Limited", role = c("cph", "fnd")),
+    person("Atorus Research LLC", role = c("cph", "fnd"))
+  )
+Description: Creates a framework to store and apply display metadata to
+    Analysis Results Datasets (ARDs). The use of 'tfrmt' allows users to
+    define table format and styling without the data, and later apply the
+    format to the data.
+License: Apache License (>= 2)
+URL: https://GSK-Biostatistics.github.io/tfrmt/,
+        https://github.com/GSK-Biostatistics/tfrmt
+BugReports: https://github.com/GSK-Biostatistics/tfrmt/issues
+Depends: R (>= 4.2.0)
+Imports: cli, dplyr, forcats, ggplot2, glue, gt (>= 1.1.0), jsonlite,
+        magrittr, purrr, rlang, stringi, stringr, tibble, tidyr,
+        tidyselect
+Suggests: cards (>= 0.8.0), covr, ggfortify, knitr, patchwork,
+        pharmaverseadam, rmarkdown, survival, testthat (>= 3.0.0),
+        withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-10 08:50:58 UTC; aj641247
+Author: Alanah Jonas [aut, cre],
+  Becca Krouse [aut],
+  Christina Fillmore [aut] (ORCID:
+    <https://orcid.org/0000-0003-0595-2302>),
+  Ellis Hughes [aut] (ORCID: <https://orcid.org/0000-0003-0637-4436>),
+  Karima Ahmad [aut] (ORCID: <https://orcid.org/0000-0002-8784-1712>),
+  Shannon Haughton [aut],
+  Dragoș Moldovan-Grünfeld [aut],
+  GlaxoSmithKline Research & Development Limited [cph, fnd],
+  Atorus Research LLC [cph, fnd]
+Maintainer: Alanah Jonas <alanah.x.jonas@gsk.com>
+Repository: CRAN
+Date/Publication: 2026-07-10 09:30:02 UTC

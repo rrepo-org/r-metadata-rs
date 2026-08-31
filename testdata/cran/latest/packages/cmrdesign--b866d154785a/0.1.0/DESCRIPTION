@@ -1,0 +1,33 @@
+Package: cmrdesign
+Title: Conditional Minimax Regret Design Rules
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Juan C.", family = "Yamin", role = c("aut", "cre", "cph"), email = "juan_yamin_silva@brown.edu")
+  )
+Description: Implements Conditional Minimax Regret design rules for
+    pilot-informed experimental assignment, as proposed in Yamin (2026)
+    <doi:10.48550/arXiv.2607.16982>. Includes two-arm, unbounded two-arm,
+    multi-arm, stratified, multiple-outcome, proxy-outcome, and
+    pilot-planning tools. Variance bounds include Maurer and Pontil (2009)
+    <doi:10.48550/arXiv.0907.3740> empirical-Bernstein bounds and
+    exact Bernoulli confidence bounds.
+License: MIT + file LICENSE
+URL: https://juancyamin.github.io/cmrdesign/,
+        https://github.com/juancyamin/cmrdesign,
+        https://arxiv.org/abs/2607.16982
+BugReports: https://github.com/juancyamin/cmrdesign/issues
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Imports: stats
+Suggests: testthat (>= 3.0.0), jsonlite, knitr, rmarkdown
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+NeedsCompilation: no
+Packaged: 2026-07-25 17:10:27 UTC; juan
+Author: Juan C. Yamin [aut, cre, cph]
+Maintainer: Juan C. Yamin <juan_yamin_silva@brown.edu>
+Repository: CRAN
+Date/Publication: 2026-08-05 06:30:02 UTC

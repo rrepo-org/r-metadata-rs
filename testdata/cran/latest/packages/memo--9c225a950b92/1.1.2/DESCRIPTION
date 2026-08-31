@@ -1,0 +1,28 @@
+Package: memo
+Type: Package
+Title: Hashmaps and Memoization (in-Memory Caching of Repeated
+        Computations)
+Version: 1.1.2
+Date: 2025-12-10
+Authors@R: person(given = "Peter",
+                      family = "Meilstrup",
+                      role = c("aut", "cre"),
+                      email = "peter.meilstrup@gmail.com")
+Maintainer: Peter Meilstrup <peter.meilstrup@gmail.com>
+Description: A simple in-memory, LRU cache that can be wrapped
+    around any function to memoize it. The cache is keyed on a hash
+    of the input data (using 'digest') or on pointer equivalence.
+    Also includes a generic hashmap object that can key on any object type.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: digest
+Suggests: testthat (>= 0.2), knitr, rmarkdown
+Collate: 'lru.R' 'cache.R' 'getPointer.R' 'map.R' 'memo-description.r'
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-12-09 23:36:22 UTC; peter
+Author: Peter Meilstrup [aut, cre]
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-12-10 08:10:17 UTC

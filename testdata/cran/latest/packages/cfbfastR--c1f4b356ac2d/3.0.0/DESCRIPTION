@@ -1,0 +1,70 @@
+Package: cfbfastR
+Title: Access College Football Play by Play Data
+Version: 3.0.0
+Authors@R: c(
+    person("Saiem", "Gilani", , "saiem.gilani@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-7194-9067")),
+    person("Akshay", "Easwaran", , "akeaswaran@me.com", role = "aut"),
+    person("Jared", "Lee", , "13jaredlee@gmail.com", role = "aut"),
+    person("Eric", "Hess", , "eric.hess.13@gmail.com", role = "aut"),
+    person("Michael", "Egle", , "mjegle@iastate.edu", role = "ctb"),
+    person("Nate", "Manzo", , "natem67@gmail.com", role = "ctb"),
+    person("Jason", "DeLoach", , "jdeloach5@gmail.com", role = "ctb"),
+    person("Tej", "Seth", , "tejseth@umich.edu", role = "ctb"),
+    person("Conor", "McQuiston", , "mcqconor@umich.edu", role = "ctb"),
+    person("Tan", "Ho", , "tan@tanho.ca", role = "ctb"),
+    person("Keegan", "Abdoo", , "kabdoo@draft.ly", role = "ctb"),
+    person("Matt", "Spencer", , "maatspencer@gmail.com", role = "ctb"),
+    person("Sebastian", "Carl", , "mrcaseb@gmail.com", role = "ctb"),
+    person("John", "Edwards", , "edwards1860@gmail.com", role = "ctb"),
+    person("Brad", "Hill", , "bradhill119@gmail.com", role = "ctb"),
+    person("cfbfastR authors", role = "cph")
+  )
+Description: A utility to quickly obtain clean and tidy college football
+    data. Serves as a wrapper around the
+    <https://collegefootballdata.com/> API and provides functions to
+    access live play by play and box score data from ESPN
+    <https://www.espn.com> when available. It provides users the
+    capability to access a plethora of endpoints, and supplement that data
+    with additional information (Expected Points Added/Win Probability
+    added).
+License: MIT + file LICENSE
+URL: https://cfbfastR.sportsdataverse.org/,
+        https://github.com/sportsdataverse/cfbfastR
+BugReports: https://github.com/sportsdataverse/cfbfastR/issues
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.0.0), data.table (>= 1.15.0), dplyr (>= 1.1.1), glue
+        (>= 1.4.0), httr2 (>= 1.0.0), janitor, jsonlite, mgcv (>=
+        1.8-33), nnet, purrr (>= 0.3.0), Rcpp (>= 1.0.7), RcppParallel
+        (>= 5.1.4), rlang (>= 0.4.10), stringr (>= 1.4.0), tibble (>=
+        3.0), tidyr (>= 1.2.0)
+Suggests: arrow, bit64, cachem, crayon (>= 1.3.4), curl, DBI, ggplot2,
+        ggrepel, memoise, patrick, progressr (>= 0.6.0), rmarkdown,
+        RSQLite, stats, stringi, testthat, usethis (>= 1.6.0), withr,
+        xgboost (>= 1.1)
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-08-24 14:37:39 UTC; saiem
+Author: Saiem Gilani [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-7194-9067>),
+  Akshay Easwaran [aut],
+  Jared Lee [aut],
+  Eric Hess [aut],
+  Michael Egle [ctb],
+  Nate Manzo [ctb],
+  Jason DeLoach [ctb],
+  Tej Seth [ctb],
+  Conor McQuiston [ctb],
+  Tan Ho [ctb],
+  Keegan Abdoo [ctb],
+  Matt Spencer [ctb],
+  Sebastian Carl [ctb],
+  John Edwards [ctb],
+  Brad Hill [ctb],
+  cfbfastR authors [cph]
+Maintainer: Saiem Gilani <saiem.gilani@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 16:40:02 UTC

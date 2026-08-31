@@ -1,0 +1,24 @@
+Package: robflreg
+Type: Package
+Title: Robust Functional Linear Regression
+Version: 1.3
+Date: 2025-10-22
+Depends: R (>= 3.5.0), fda, MASS, robustbase
+Imports: expm, fda.usc, goffda, mvtnorm, pcaPP, fields, methods,
+        Matrix, cvTools, quantreg
+LazyLoad: yes
+ByteCompile: TRUE
+Authors@R: c(
+	person("Ufuk", "Beyaztas", email="ufukbeyaztas@gmail.com", role=c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-5208-4950")),
+	person("Han Lin", "Shang", role="aut", comment = c(ORCID = "0000-0003-1769-6430"))
+	)
+Maintainer: Ufuk Beyaztas <ufukbeyaztas@gmail.com>
+Description: Functions for implementing robust methods for functional linear regression. In the functional linear regression, we consider scalar-on-function linear regression and function-on-function linear regression.
+License: GPL-3
+NeedsCompilation: no
+Packaged: 2025-10-21 20:28:43 UTC; hanlinshang
+Author: Ufuk Beyaztas [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-5208-4950>),
+  Han Lin Shang [aut] (ORCID: <https://orcid.org/0000-0003-1769-6430>)
+Repository: CRAN
+Date/Publication: 2025-10-21 21:00:01 UTC

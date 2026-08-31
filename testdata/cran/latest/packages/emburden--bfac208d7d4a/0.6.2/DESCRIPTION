@@ -1,0 +1,31 @@
+Package: emburden
+Title: Energy Burden Analysis Using Net Energy Return Methodology
+Version: 0.6.2
+Authors@R: 
+    person("Eric", "Scheier", , "eric@scheier.org", role = c("aut", "cre", "cph"))
+Description: Calculate and analyze household energy burden using the Net Energy
+    Return aggregation methodology. Functions support weighted statistical
+    calculations across geographic and demographic cohorts, with utilities for
+    formatting results into publication-ready tables. Methods are based on
+    Scheier & Kittner (2022) <doi:10.1038/s41467-021-27673-y>.
+License: AGPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr, httr, rappdirs, readr, rlang, scales, spatstat.univar,
+        stats, stringr, tibble, tidyr
+Suggests: covr, DBI, httptest2, jsonlite, kableExtra, knitr, mockery,
+        rmarkdown, RSQLite, rticles, testthat (>= 3.0.0), tinytex,
+        withr
+VignetteBuilder: knitr
+LazyData: true
+URL: https://github.com/ericscheier/emburden,
+        https://ericscheier.info/emburden/
+BugReports: https://github.com/ericscheier/emburden/issues
+NeedsCompilation: no
+Packaged: 2026-05-18 19:59:08 UTC; runner
+Author: Eric Scheier [aut, cre, cph]
+Maintainer: Eric Scheier <eric@scheier.org>
+Repository: CRAN
+Date/Publication: 2026-05-18 20:40:02 UTC

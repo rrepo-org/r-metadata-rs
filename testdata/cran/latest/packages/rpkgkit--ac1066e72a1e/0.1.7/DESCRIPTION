@@ -1,0 +1,49 @@
+Package: rpkgkit
+Title: Create and Maintain R Packages
+Version: 0.1.7
+Authors@R: c(
+    person("Yuxi", "Yang", , "15364051195@163.com", role = c("aut", "cre")),
+    person("Jacob", "Scott", role = c("aut", "cph"),
+           comment = "Author of the included pedant code (https://github.com/wurli/pedant)"),
+    person("Christopher T.", "Kenny", role = c("ctb", "cph"),
+           comment = "Contributor to the included pedant code"),
+    person("Sebastian", "Lammers", role = c("ctb", "cph"),
+           comment = "Contributor to the included pedant code"),
+    person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cph"),
+           comment = "Author of the included pkgdev code (https://github.com/dieghernan/pkgdev)")
+  )
+Description: Utilities for R package development including NEWS.md
+    management, standalone file creation, and code formatting. Supports
+    popular development workflows and integrates with 'usethis' and
+    'RStudio'. Includes helper functions for renaming functions and
+    detecting common coding errors.
+License: MIT + file LICENSE
+URL: https://github.com/WangLabCSU/rpkgkit
+BugReports: https://github.com/WangLabCSU/rpkgkit/issues
+Depends: R (>= 4.1.0)
+Imports: cli, lifecycle, rlang (>= 1.0.0), rstudioapi
+Suggests: desc, devtools, dplyr, flir, gh, grDevices, httr2, pkgload,
+        rmarkdown, stats, testthat (>= 3.0.0), usethis, withr, yaml
+Config/testthat/edition: 3
+Config/usethis/last-upkeep: 2026-06-29
+Copyright: Jacob Scott, Christopher T. Kenny, and Sebastian Lammers
+        (for the pedant code included in R/vendor-pedant.R); Diego
+        Hernangómez (for the pkgdev code included in
+        R/vendor-pkgdev.R); and (for the pedant code included in
+        R/vendor-pedant.R); Diego Hernangómez (for the pkgdev code
+        included in R/vendor-pkgdev.R)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-11 05:17:43 UTC; yyx
+Author: Yuxi Yang [aut, cre],
+  Jacob Scott [aut, cph] (Author of the included pedant code
+    (https://github.com/wurli/pedant)),
+  Christopher T. Kenny [ctb, cph] (Contributor to the included pedant
+    code),
+  Sebastian Lammers [ctb, cph] (Contributor to the included pedant code),
+  Diego Hernangómez [aut, cph] (Author of the included pkgdev code
+    (https://github.com/dieghernan/pkgdev))
+Maintainer: Yuxi Yang <15364051195@163.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 09:40:02 UTC

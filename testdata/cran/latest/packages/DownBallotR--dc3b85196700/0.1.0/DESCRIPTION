@@ -1,0 +1,46 @@
+Package: DownBallotR
+Title: Access Federal, State, and Local Election Data
+Version: 0.1.0
+Authors@R: c(
+    person(
+        given = "Graham",
+        family = "Chickering",
+        email = "grahamchickering@gmail.com",
+        role = c("aut", "cre")
+    ),
+    person(
+        given = "Chris",
+        family = "Warshaw",
+        email = "chris.warshaw@georgetown.edu",
+        role = "ctb"
+    )
+  )
+Description: Provides an 'R' interface for downloading and standardizing
+    election data to support research workflows. Election results are
+    published by states through heterogeneous and often dynamic web
+    interfaces that are not consistently accessible through existing
+    'R' packages or APIs. To address this, the package wraps state-specific
+    'Python' web scrapers through the 'reticulate' package, enabling access
+    to dynamic content while exposing consistent 'R' functions for querying
+    election availability and results across jurisdictions. The package is intended
+    for responsible use and relies on publicly accessible election result pages.
+License: Apache License (>= 2.0)
+URL: https://gchickering21.github.io/DownBallotR/,
+        https://github.com/gchickering21/DownBallotR
+BugReports: https://github.com/gchickering21/DownBallotR/issues
+Encoding: UTF-8
+Language: en-US
+SystemRequirements: Python (>= 3.10), pip
+Depends: R (>= 4.1.0)
+Imports: purrr, reticulate, rlang
+Suggests: knitr, dplyr, pak, remotes, rmarkdown, testthat (>= 3.0.0),
+        withr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-22 15:39:09 UTC; grahamchickering
+Author: Graham Chickering [aut, cre],
+  Chris Warshaw [ctb]
+Maintainer: Graham Chickering <grahamchickering@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-23 20:30:07 UTC

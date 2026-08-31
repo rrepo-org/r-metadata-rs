@@ -1,0 +1,27 @@
+Package: unifiedml
+Type: Package
+Title: Unified Interface for Machine Learning Models
+Version: 0.3.0
+Date: 2026-05-05
+Authors@R: 
+    person("T.", "Moudiki", 
+           email = "thierry.moudiki@gmail.com",
+           role = c("aut", "cre"))
+Maintainer: T. Moudiki <thierry.moudiki@gmail.com>
+Description: Provides a unified R6-based interface for various machine learning models with automatic interface detection, consistent cross-validation, model interpretations via numerical derivatives, and visualization. Supports both regression and classification tasks with any model function that follows R's standard modeling conventions (formula or matrix interface).
+License: MIT + file LICENSE
+URL: https://github.com/Techtonique/unifiedml
+BugReports: https://github.com/Techtonique/unifiedml/issues
+Depends: R (>= 3.5.0), doParallel, R6, foreach
+Imports: Rcpp (>= 1.1.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, glmnet, randomForest,
+        e1071, covr, spelling, MASS, nnet, caret
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-05-05 06:54:30 UTC; t
+Author: T. Moudiki [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-05-05 07:10:02 UTC

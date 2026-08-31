@@ -1,0 +1,26 @@
+Package: vws
+Type: Package
+Title: Vertical Weighted Strips
+Version: 0.4.0
+Authors@R: person(given = c("Andrew", "M."),
+    family = "Raim",
+    role = c("aut", "cre"),
+    email = "andrew.raim@gmail.com")
+Maintainer: Andrew M. Raim <andrew.raim@gmail.com>
+Description: A reference implementation of the Vertical Weighted Strips method
+    explored by Raim, Livsey, and Irimata (2025) <doi:10.48550/arXiv.2401.09696>
+    for rejection sampling.
+URL: https://github.com/andrewraim/vws
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: Rcpp, fntl
+LinkingTo: Rcpp, fntl
+Suggests: knitr, rmarkdown, quarto, statmod, tidyverse
+VignetteBuilder: quarto
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-24 09:13:04 UTC; araim
+Author: Andrew M. Raim [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-07-24 11:20:02 UTC

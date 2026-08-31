@@ -1,0 +1,47 @@
+Package: mt.surv
+Type: Package
+Title: Multi-Threshold Survival Analysis
+Version: 1.1.1
+Authors@R: 
+    c(person(given = "Rebecca", 
+            family = "Hoyd",
+            role = c("aut"),
+           comment = c(ORCID = "0000-0003-1210-4491")),
+           person(given = "Alexander", 
+            family = "Loncar",
+            role = c("aut", "cre"),
+            email = "alexander.loncar@osumc.edu",
+           comment = c(ORCID = "0009-0000-8079-2092")),
+    person(given = "YunZhou",
+           family = "Liu",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-9892-2438")),
+    person(given = "Caroline",
+           family = "Wheeler",
+           role = c("aut")),
+    person(given = "Daniel",
+           family = "Spakowicz",
+           role = c("aut"),
+           email = "daniel.spakowicz@osumc.edu",
+           comment = c(ORCID = "0000-0003-2314-6435"))
+     )
+Description: Implements survival analyses across multiple abundance thresholds,
+    repeatedly partitioning samples into groups and evaluating survival
+    differences to assess taxonomic associations with outcomes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat, rmarkdown, survminer
+Imports: dplyr, survival, broom, forcats, purrr, tidyr, ggplot2,
+        magrittr
+NeedsCompilation: no
+Packaged: 2026-04-16 13:51:05 UTC; alexloncar
+Author: Rebecca Hoyd [aut] (ORCID: <https://orcid.org/0000-0003-1210-4491>),
+  Alexander Loncar [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-8079-2092>),
+  YunZhou Liu [aut] (ORCID: <https://orcid.org/0000-0002-9892-2438>),
+  Caroline Wheeler [aut],
+  Daniel Spakowicz [aut] (ORCID: <https://orcid.org/0000-0003-2314-6435>)
+Maintainer: Alexander Loncar <alexander.loncar@osumc.edu>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:42:13 UTC

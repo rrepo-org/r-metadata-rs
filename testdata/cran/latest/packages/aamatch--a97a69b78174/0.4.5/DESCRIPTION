@@ -1,0 +1,20 @@
+Package: aamatch
+Type: Package
+Title: Artless Automatic or Artful Multivariate Matching for
+        Observational Studies
+Version: 0.4.5
+Authors@R: person("Paul", "Rosenbaum", 
+                  email = "rosenbaum@wharton.upenn.edu",
+                  role = c("aut", "cre"))
+Maintainer: Paul Rosenbaum <rosenbaum@wharton.upenn.edu>
+Description: Implements a simple version of multivariate matching using a propensity score, near-exact matching, near-fine balance, and robust Mahalanobis distance matching (Rosenbaum 2020 <doi:10.1146/annurev-statistics-031219-041058>).  You specify the variables, and the program does everything else.
+License: GPL-2
+Encoding: UTF-8
+Imports: iTOS, stats
+Suggests: DOS2, sensitivity2x2xk, sensitivitymv, weightedRank, xtable
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2026-02-01 18:04:26 UTC; rosenbap
+Author: Paul Rosenbaum [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-02-01 20:00:02 UTC

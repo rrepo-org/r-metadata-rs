@@ -1,0 +1,32 @@
+Package: RegCalReliab
+Type: Package
+Title: Regression Calibration Using Reliability Studies
+Version: 0.2.0
+Authors@R: c(
+    person("Bowen", "Liu", email = "bowenliu@hsph.harvard.edu", 
+           role = c("aut", "cre", "cph")),
+    person("Yu", "Lu", role = "aut"),
+    person("Molin", "Wang", role = "aut")
+  )
+Maintainer: Bowen Liu <bowenliu@hsph.harvard.edu>
+Description: Implements regression calibration methods for correcting 
+    measurement error in regression models using external or internal 
+    reliability studies. Methods are described in Carroll, Ruppert, 
+    Stefanski, and Crainiceanu (2006) "Measurement Error in Nonlinear 
+    Models: A Modern Perspective" <doi:10.1201/9781420010138>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: stats, sandwich
+Suggests: mgcv, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+URL: https://lbw080526.github.io/RegCalReliab/,
+        https://github.com/lbw080526/RegCalReliab
+BugReports: https://github.com/lbw080526/RegCalReliab/issues
+NeedsCompilation: no
+Packaged: 2025-09-29 20:44:26 UTC; liubowen
+Author: Bowen Liu [aut, cre, cph],
+  Yu Lu [aut],
+  Molin Wang [aut]
+Repository: CRAN
+Date/Publication: 2025-10-06 08:00:19 UTC

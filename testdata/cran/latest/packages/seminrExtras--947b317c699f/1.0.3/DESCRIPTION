@@ -1,0 +1,33 @@
+Package: seminrExtras
+Type: Package
+Title: Conduct Additional Modeling and Analysis for 'seminr'
+Version: 1.0.3
+Date: 2026-08-18
+Authors@R: c(person("Soumya", "Ray", email = "soumya.ray@gmail.com", role = c("aut", "ths")),
+             person("Nicholas Patrick", "Danks", email = "seminrgroup@gmail.com", role = c("aut","cre"))
+            )
+Description: Supplementary tools for evaluating and validating partial least
+    squares structural equation models estimated with 'seminr'. Provides methods
+    for predictive model assessment, importance-performance analysis with
+    necessary condition testing, overfitting diagnostics, measurement model
+    verification, mediator contribution analysis, unobserved heterogeneity
+    detection via latent class and prediction-oriented segmentation, and
+    congruence coefficient testing. All functions accept estimated 'seminr'
+    model objects and return results with print, summary, and plot methods.
+Imports: seminr (>= 2.4.0), stats, graphics, grDevices, utils, rpart
+License: GPL-3
+Encoding: UTF-8
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, MASS, paran, psych,
+        learnr
+Config/testthat/edition: 3
+URL: https://github.com/sem-in-r/seminrExtras
+BugReports: https://github.com/sem-in-r/seminrExtras/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-19 16:52:20 UTC; nicholasdanks
+Author: Soumya Ray [aut, ths],
+  Nicholas Patrick Danks [aut, cre]
+Maintainer: Nicholas Patrick Danks <seminrgroup@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-19 22:50:03 UTC

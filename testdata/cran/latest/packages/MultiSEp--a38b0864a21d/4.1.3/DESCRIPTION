@@ -1,0 +1,29 @@
+Package: MultiSEp
+Type: Package
+Title: Predict Synthetic Lethality and Other Gene Dependency
+        Relationships from Multiomics Data
+Version: 4.1.3
+BuildVignettes: TRUE
+Authors@R: c(
+    person("Adeline", "McKie", role = "aut"),
+    person("Mark", "Wappett", role = "aut"),
+    person("Ian", "Overton", email = "i.overton@qub.ac.uk", role = c("aut", "cre")))
+Description: Predicts gene dependency relationships (GDRs) from functional genomics data. Regularised Gaussian mixture modelling may be applied for unsupervised clustering in addition to other data partitioning strategies. GDR analysis tools include discovery of synthetic lethal relationships and predicting population coverage for candidate drug targets from cancer patient mutational profiles. Functionality for visualisation is also available. 'MultiSEp' is applicable to data from a variety of sources including clinical cohorts, organoids and cell lines.
+License: LGPL-2.1
+Depends: R (>= 3.5.0)
+Imports: pracma, pbapply, pbmcapply, reshape2, ggplot2, gtools,
+        testthat, igraph, grid, patchwork, scales
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: bzip2
+NeedsCompilation: no
+VignetteBuilder: knitr, rmarkdown
+Suggests: rmarkdown, kableExtra, magrittr, knitr, dplyr
+Language: en-GB
+Packaged: 2026-08-20 23:43:29 UTC; ianover
+Author: Adeline McKie [aut],
+  Mark Wappett [aut],
+  Ian Overton [aut, cre]
+Maintainer: Ian Overton <i.overton@qub.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-08-27 10:30:02 UTC

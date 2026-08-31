@@ -1,0 +1,57 @@
+Package: FESta
+Type: Package
+Title: Fishing Effort Standardization
+Version: 1.0.2
+Authors@R: c(
+    person("Eldho", "Varghese",
+           email = "eldhoiasri@gmail.com",
+           role = c("aut", "cre")),
+    person("Jayasankar", "J",
+           email = "jjsankar@gmail.com",
+           role = "aut"),
+    person("Ashutosh", "Dalal",
+           email = "ashutosh.dalal97@gmail.com",
+           role = c("aut", "ctb")),
+    person("Sathianandan", "T V",
+           email = "tvsedpl@gmail.com",
+           role = "aut"),
+    person("Sreepriya", "V",
+           email = "sreemarch12@gmail.com",
+           role = c("aut", "ctb")),
+    person("Reshma", "Gills",
+           email = "reshma1818@gmail.com",
+           role = "ctb"),
+    person("Grinson", "George",
+           email = "grinsongeorge@gmail.com",
+           role = "ctb"))
+Description: Marine fisheries governance and management rely heavily on reliable
+    indicators of stock abundance and fishing pressure to ensure the sustainable
+    utilization of marine resources. Catch Per Unit Effort (CPUE) is widely used
+    as an index of relative abundance, but direct comparison of catch rates is
+    often affected by differences in fishing effort, vessel characteristics,
+    gear efficiency, and operational practices. The FESta package provides
+    methods for fishing effort and CPUE standardization, including vessel-based,
+    gear-based, relative effort, derived effort, generalized linear models,
+    generalized additive models, generalized linear mixed models, ordered
+    quantile transformation models, and multi-gear standardization techniques
+    for fisheries stock assessment and monitoring. 
+    To cite our package run this command, citation("FESta"). 
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: bestNormalize, dplyr, ggplot2, gridExtra, lme4, MASS, mgcv,
+        patchwork, rlang, scales, statmod, stats, tidyr, tweedie
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-19 05:18:00 UTC; hp
+Author: Eldho Varghese [aut, cre],
+  Jayasankar J [aut],
+  Ashutosh Dalal [aut, ctb],
+  Sathianandan T V [aut],
+  Sreepriya V [aut, ctb],
+  Reshma Gills [ctb],
+  Grinson George [ctb]
+Maintainer: Eldho Varghese <eldhoiasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 12:02:10 UTC

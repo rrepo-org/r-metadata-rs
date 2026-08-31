@@ -1,0 +1,39 @@
+Package: D4TAlink.light
+Type: Package
+Title: GDP - Workflow Management
+Version: 2.1.23
+Date: 2026-08-03
+Authors@R: c(
+  person(given = "Gregoire", family = "Thomas", 
+         role = c("aut", "cre", "cph"),
+         email = "gregoire.thomas@SQU4RE.com", 
+         comment = c(ORCID = "0000-0002-6247-9438")),
+  person("Metabolomic Diagnostics Ltd.",
+         role = c("fnd"))
+  )
+Maintainer: Gregoire Thomas <gregoire.thomas@SQU4RE.com>
+Description: Tools, methods and processes for the management 
+  of analysis workflows. These lightweight solutions facilitate 
+  structuring R&D activities. These solutions were developed to comply  
+  with Good Documentation Practice (GDP), 
+  with ALCOA+ principles as proposed by the U.S. FDA, and 
+  with FAIR principles as discussed by Jacobsen et al. (2017) <doi:10.1162/dint_r_00024>. 
+Depends: R (>= 4.1.0), rjson, DBI, RSQLite, openssl
+Imports: officedown, utils, rmarkdown, quarto, Biobase, openxlsx,
+        reticulate, feather, getPass
+Suggests: knitr, roxygen2 (>= 3.1.0), WriteXLS,XLConnect,xlsx, testthat
+License: GPL-3
+Encoding: UTF-8
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://bitbucket.org/SQ4/d4talink.light
+ByteCompile: true
+Repository: CRAN
+BugReports: https://bitbucket.org/SQ4/d4talink.light/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-04 10:21:10 UTC; GregoireThomas
+Author: Gregoire Thomas [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6247-9438>),
+  Metabolomic Diagnostics Ltd. [fnd]
+Date/Publication: 2026-08-04 10:40:09 UTC

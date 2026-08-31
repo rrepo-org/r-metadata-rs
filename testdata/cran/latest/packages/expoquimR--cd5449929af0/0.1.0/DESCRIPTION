@@ -1,0 +1,72 @@
+Package: expoquimR
+Title: Qualitative and Quantitative Assessment of Occupational Chemical
+        Exposure Risk
+Version: 0.1.0
+Authors@R: c(
+    person(
+        given = "Raúl",
+        family = "Aguilar Elena",
+        role = c("aut", "cre"),
+        email = "raguilar@universidadviu.com",
+        comment = c(ORCID = "0000-0001-8656-8155")
+    ),
+    person(
+        given = "Ana",
+        family = "Delgado-Garcia",
+        role = "aut",
+        email = "a.delgado@usal.es",
+        comment = c(ORCID = "0009-0003-7079-5507")
+    ),
+    person(
+        given = "Alejandro",
+        family = "Guillem-Riquelme",
+        role = "aut",
+        email = "aguillem@universidadviu.com",
+        comment = c(ORCID = "0000-0002-6373-5237")
+    )
+    )
+Description: Provides a unified toolkit for occupational chemical exposure
+    risk assessment, implementing three internationally recognised
+    methods end to end: the qualitative control-banding methods COSHH
+    Essentials (UK Health and Safety Executive) and the method of the
+    French National Research and Safety Institute (INRS), together
+    with the quantitative statistical procedure of the UNE-EN 689
+    standard for comparing measured exposure levels against
+    occupational exposure limits. Every step of each method, from
+    hazard banding and exposure scoring to lognormal or normal
+    distribution fitting, one-sided tolerance limits, and
+    monitoring-interval recommendations, is implemented as a small,
+    independently callable, and unit-tested function, so assessments
+    are reproducible and auditable without depending on any graphical
+    interface. Optional 'shiny' applications provide a guided,
+    interactive workflow for occupational hygienists and health and
+    safety practitioners who prefer not to write code.
+    References: UK Health and Safety Executive (2003)
+    <https://www.hse.gov.uk/coshh/essentials/index.htm>;
+    Mallet, Pilorget and Berne (2013, ISBN:978-2-7389-2166-2)
+    "Evaluation du risque chimique" INRS ED 6084;
+    European Committee for Standardisation (2018)
+    <https://www.en-standard.eu/bs-en-689-2018-workplace-exposure-measurement-of-exposure-by-inhalation-to-chemical-agents-strategy-for-testing-compliance-with-occupational-exposure-limit-values/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+URL: https://github.com/Aguilar-Elena/expoquimR
+BugReports: https://github.com/Aguilar-Elena/expoquimR/issues
+Depends: R (>= 4.1.0)
+Imports: stats
+Suggests: DT, ggplot2, kableExtra, knitr, readxl, rmarkdown, shiny,
+        shinyjs, testthat (>= 3.0.0), tibble, usethis
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-04 18:00:50 UTC; okashi
+Author: Raúl Aguilar Elena [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8656-8155>),
+  Ana Delgado-Garcia [aut] (ORCID:
+    <https://orcid.org/0009-0003-7079-5507>),
+  Alejandro Guillem-Riquelme [aut] (ORCID:
+    <https://orcid.org/0000-0002-6373-5237>)
+Maintainer: Raúl Aguilar Elena <raguilar@universidadviu.com>
+Repository: CRAN
+Date/Publication: 2026-08-09 07:10:07 UTC

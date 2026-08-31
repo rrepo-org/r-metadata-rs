@@ -1,0 +1,33 @@
+Package: jewel
+Title: Graphical Models Estimation from Multiple Sources
+Version: 2.0.3
+Authors@R: c(
+    person("Anna", "Plaksienko", 
+    email = "anna@plaxienko.com", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0001-9607-057X")),
+    person("Claudia", "Angelini", 
+    role = c("aut"),
+    comment = c(ORCID = "0000-0001-8350-8464")),
+    person("Daniela", "De Canditiis", 
+    role = c("aut"),
+    comment = c(ORCID = "0000-0002-3022-3411")))
+Description: Estimates networks of conditional dependencies (Gaussian graphical models) from multiple classes of data (similar but not exactly, i.e. measurements on different equipment, in different locations or for various sub-types). Package also allows to generate simulation data and evaluate the performance. Implementation of the method described in Angelini, De Canditiis and Plaksienko (2022) <doi:10.3390/math10213983>.
+Depends: R (>= 3.6.0)
+Imports: Matrix, matrixcalc, MASS, SMUT, igraph, parallel, purrr
+URL: https://github.com/annaplaksienko/jewel
+License: GPL-2
+Encoding: UTF-8
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-27 09:11:08 UTC; annapla
+Author: Anna Plaksienko [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9607-057X>),
+  Claudia Angelini [aut] (ORCID: <https://orcid.org/0000-0001-8350-8464>),
+  Daniela De Canditiis [aut] (ORCID:
+    <https://orcid.org/0000-0002-3022-3411>)
+Maintainer: Anna Plaksienko <anna@plaxienko.com>
+Repository: CRAN
+Date/Publication: 2026-05-27 11:20:02 UTC

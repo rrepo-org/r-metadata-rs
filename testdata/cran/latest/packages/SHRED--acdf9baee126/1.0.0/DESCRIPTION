@@ -1,0 +1,27 @@
+Package: SHRED
+Type: Package
+Title: Setwise Hierarchical Rate of Erroneous Discovery
+Version: 1.0.0
+Authors@R: c(person(given = "Sarah",
+                      family = "Organ",
+                      role = "aut"),
+               person(given = "Toby",
+                      family = "Kenney",
+                      role = "cre",
+                      email = "tkenney@mathstat.dal.ca"),
+		      person(given = "Hong",
+                      family = "Gu",
+                      role = "aut",
+                      email = "hgu@dal.ca"))
+Maintainer: Toby Kenney <tkenney@mathstat.dal.ca>
+Description: Setwise Hierarchical Rate of Erroneous Discovery (SHRED) methods for setwise variable selection with false discovery rate (FDR) control. Setwise variable selection means that sets of variables may be selected when the true variable cannot be identified. This allows us to maintain FDR control but increase power. Details of the SHRED methods are in Organ, Kenney & Gu (2026) <doi:10.48550/arXiv.2603.02160>. 
+License: GPL-3
+Encoding: UTF-8
+Imports: graphics, stats, ClustOfVar
+NeedsCompilation: no
+Packaged: 2026-03-07 12:42:44 UTC; tkenney
+Author: Sarah Organ [aut],
+  Toby Kenney [cre],
+  Hong Gu [aut]
+Repository: CRAN
+Date/Publication: 2026-03-11 20:00:03 UTC

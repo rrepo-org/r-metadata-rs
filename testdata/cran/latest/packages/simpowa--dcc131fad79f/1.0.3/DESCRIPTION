@@ -1,0 +1,67 @@
+Package: simpowa
+Type: Package
+Title: Power Analysis and Sample Size Calculation for Semi-Field Vector
+        Control Trials
+Version: 1.0.3
+Authors@R: c(
+    person(given = "Andrea M.",
+           family = "Kipingu",
+           email = "akipingu@ihi.or.tz",
+           role = c("aut", "cre"),
+           comment = c(
+               ORCID = "0000-0002-9063-8651",
+               affiliation = "Environmental Health & Ecological Sciences Department, Ifakara Health Institute, P.O. Box 78 373, Dar es Salaam, Tanzania"
+           )),
+    person(given = "Mafalda",
+           family = "Viana",
+           email = "mafalda.viana@glasgow.ac.uk",
+           role = c("aut"),
+           comment = c(
+               ORCID = "0000-0001-5975-6505",
+               affiliation = "School of Biodiversity, One Health and Veterinary Medicine, University of Glasgow, Graham Kerr Building, Glasgow, G12 8QQ, UK"
+           )),
+    person(given = "Paul C.D.",
+           family = "Johnson",
+           email = "paul.johnson@glasgow.ac.uk",
+           role = c("aut"),
+           comment = c(
+               ORCID = "0000-0001-6663-7520",
+               affiliation = "School of Biodiversity, One Health & Veterinary Medicine, University of Glasgow, Wolfson Link Building, Glasgow, G12 8QQ, UK"
+           )),
+    person(given = "Samson S.",
+           family = "Kiware",
+           email = "skiware@ihi.or.tz",
+           role = c("aut"),
+           comment = c(
+               ORCID = "0000-0001-7252-520X",
+               affiliation = "Environmental Health & Ecological Sciences Department, Ifakara Health Institute, P.O. Box 78 373, Dar es Salaam, Tanzania"
+           )))
+Maintainer: Andrea M. Kipingu <akipingu@ihi.or.tz>
+Description: Uses simulations from generalized linear mixed-effects models to incorporate random effects across multiple sources and levels of variation, and a dispersion parameter to account for overdispersion and capture unexplained variability. Covers design scenarios for both short-term and long-term trials evaluating the impact of single or combined vector control interventions. Methods build on Kipingu et al. (2025) <doi:10.1186/s12936-025-05454-y> and Johnson et al. (2015) <doi:10.1111/2041-210X.12306>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: lme4, parallel, dplyr, ggplot2, stats
+Suggests: rmarkdown, testthat (>= 3.0.0), waldo, devtools
+Config/testthat/edition: 3
+URL: https://github.com/akipingu/simpowa
+BugReports: https://github.com/akipingu/simpowa/issues
+NeedsCompilation: no
+Packaged: 2026-03-24 19:31:07 UTC; dr.kipingu
+Author: Andrea M. Kipingu [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9063-8651>, affiliation: Environmental
+    Health & Ecological Sciences Department, Ifakara Health Institute,
+    P.O. Box 78 373, Dar es Salaam, Tanzania),
+  Mafalda Viana [aut] (ORCID: <https://orcid.org/0000-0001-5975-6505>,
+    affiliation: School of Biodiversity, One Health and Veterinary
+    Medicine, University of Glasgow, Graham Kerr Building, Glasgow, G12
+    8QQ, UK),
+  Paul C.D. Johnson [aut] (ORCID:
+    <https://orcid.org/0000-0001-6663-7520>, affiliation: School of
+    Biodiversity, One Health & Veterinary Medicine, University of
+    Glasgow, Wolfson Link Building, Glasgow, G12 8QQ, UK),
+  Samson S. Kiware [aut] (ORCID: <https://orcid.org/0000-0001-7252-520X>,
+    affiliation: Environmental Health & Ecological Sciences Department,
+    Ifakara Health Institute, P.O. Box 78 373, Dar es Salaam, Tanzania)
+Repository: CRAN
+Date/Publication: 2026-03-29 16:00:02 UTC

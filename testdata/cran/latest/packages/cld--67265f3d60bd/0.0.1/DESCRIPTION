@@ -1,0 +1,35 @@
+Package: cld
+Title: Create Compact Letter Display (CLD) for Statistical Comparisons
+Version: 0.0.1
+Authors@R: 
+    person(given = "Vilmantas",
+           family = "Gegzna",
+           role = c("aut", "cre"),
+           email = "GegznaV@gmail.com",
+           comment = c(ORCID = "0000-0002-9500-5167"))
+Description: Creates compact letter displays (CLDs) for pairwise comparisons 
+    from statistical post-hoc tests. Groups sharing the same letter are not 
+    significantly different from each other. Supports multiple input formats 
+    including results from 'stats' pairwise tests, 'DescTools', 'PMCMRplus', 
+    'rstatix', symmetric matrices of p-values, and data frames. Provides a 
+    consistent interface for visualizing statistical groupings across different 
+    testing frameworks.
+License: GPL (>= 3)
+URL: https://gegznav.github.io/cld/
+BugReports: https://github.com/GegznaV/cld/issues
+Imports: checkmate, multcompView, rlang
+Suggests: DescTools, dplyr, ggplot2, knitr, PMCMR, PMCMRplus,
+        rcompanion, rmarkdown, rstatix, testthat (>= 3.0.0), tibble
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-11-10 19:26:21 UTC; ViG
+Author: Vilmantas Gegzna [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9500-5167>)
+Maintainer: Vilmantas Gegzna <GegznaV@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-13 19:10:07 UTC

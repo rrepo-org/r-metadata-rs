@@ -1,0 +1,37 @@
+Package: topolow
+Title: Force-Directed Euclidean Embedding of Dissimilarity Data
+Version: 2.0.1
+Authors@R: 
+    person("Omid", "Arhami", , "omid.arhami@uga.edu", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0005-2681-6598"))
+Maintainer: Omid Arhami <omid.arhami@uga.edu>
+Description: A robust implementation of Topolow algorithm. It embeds objects into a low-dimensional Euclidean space from a matrix of pairwise dissimilarities, even when the data do not satisfy metric or Euclidean axioms. The package is particularly well-suited for sparse, incomplete, and censored (thresholded) datasets such as antigenic relationships. The core is a physics-inspired, gradient-free optimization framework that models objects as particles in a physical system, where observed dissimilarities define spring rest lengths and unobserved pairs exert repulsive forces. The package also provides functions specific to antigenic mapping to transform cross-reactivity and binding affinity measurements into accurate spatial representations in a phenotype space.
+    Key features include:
+    * Robust Embedding from Sparse Data: Effectively creates complete and consistent maps (in optimal dimensions) even with high proportions of missing data (e.g., >95%).
+    * Physics-Inspired Optimization: Models objects (e.g., antigens, landmarks) as particles connected by springs (for measured dissimilarities) and subject to repulsive forces (for missing dissimilarities), and simulates the physical system using laws of mechanics, reducing the need for complex gradient computations.
+    * Automatic Dimensionality Detection: Employs a likelihood-based approach to determine the optimal number of dimensions for the embedding/map, avoiding distortions common in methods with fixed low dimensions.
+    * Noise and Bias Reduction: Naturally mitigates experimental noise and bias through its network-based, error-dampening mechanism.
+    * Antigenic Velocity Calculation (for antigenic data): Introduces and quantifies "antigenic velocity," a vector that describes the rate and direction of antigenic drift for each pathogen isolate. This can help identify cluster transitions and potential lineage replacements.
+    * Broad Applicability: Analyzes data from various objects that their dissimilarity may be of interest, ranging from complex biological measurements such as continuous and relational phenotypes, antibody-antigen interactions, and protein folding to abstract concepts, such as customer perception of different brands.
+    Methods are described in the context of bioinformatics applications in Arhami and Rohani (2025a) <doi:10.1093/bioinformatics/btaf372>, and mathematical proofs and Euclidean embedding details are in Arhami and Rohani (2025b) <doi:10.48550/arXiv.2508.01733>.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: future, lifecycle, ggplot2 (>= 3.4.0), dplyr (>= 1.1.0),
+        data.table (>= 1.14.0), reshape2 (>= 1.4.4), stats, utils,
+        parallel (>= 4.1.0), filelock, lhs, rlang,
+Suggests: coda (>= 0.19-4), Rtsne, ape, Racmacs (>= 1.1.2), vegan,
+        umap, igraph, rgl (>= 1.0.0), scales, ggrepel, plotly (>=
+        4.10.0), gridExtra, covr, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/omid-arhami/topolow
+BugReports: https://github.com/omid-arhami/topolow/issues
+LazyData: true
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-08-30 23:40:10 UTC; omidarhami
+Author: Omid Arhami [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0005-2681-6598>)
+Repository: CRAN
+Date/Publication: 2025-08-31 00:20:02 UTC

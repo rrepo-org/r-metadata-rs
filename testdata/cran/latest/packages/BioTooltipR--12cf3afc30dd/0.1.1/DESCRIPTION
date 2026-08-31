@@ -1,0 +1,29 @@
+Package: BioTooltipR
+Title: Add Bio Tooltips to HTML Reports
+Version: 0.1.1
+Authors@R: 
+    person("Matthew J.", "Meier", email = "matthew.meier@hc-sc.gc.ca", role = c("aut", "cre"))
+Description: Provides lightweight helpers for adding gene and chemical
+    tooltips to 'R Markdown', 'Quarto', 'shiny', 'pkgdown', and other HTML outputs.
+    The package emits small HTML spans with module-specific data attributes
+    and attaches the browser-side 'bio-tooltips' JavaScript and CSS assets
+    through 'htmltools'. Entity lookup and rendering are handled in the
+    browser by 'bio-tooltips'; this package does not query biological
+    databases from R during package checks.
+Language: en-US
+License: MIT + file LICENSE
+URL: https://github.com/mattjmeier/BioTooltipR
+BugReports: https://github.com/mattjmeier/BioTooltipR/issues
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: htmltools, jsonlite, knitr, utils
+Suggests: DT, htmlwidgets, plotly, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-20 00:16:16 UTC; matt
+Author: Matthew J. Meier [aut, cre]
+Maintainer: Matthew J. Meier <matthew.meier@hc-sc.gc.ca>
+Repository: CRAN
+Date/Publication: 2026-08-20 10:42:08 UTC

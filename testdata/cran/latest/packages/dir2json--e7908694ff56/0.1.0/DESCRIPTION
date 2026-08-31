@@ -1,0 +1,22 @@
+Package: dir2json
+Type: Package
+Title: Convert Directory to JSON
+Version: 0.1.0
+Description: Convert a directory structure into a JSON format. This package lets you recursively traverse a directory and convert its contents into a JSON object, making it easier to import code base from file systems into large language models.
+Authors@R: 
+    person("Sam", "Parmar", , "parmartsam@gmail.com", role = c("aut", "cre", "cph"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: base64enc, fs, jsonlite, rlang
+Suggests: knitr, rmarkdown
+URL: https://github.com/parmsam/dir2json-r,
+        https://parmsam.github.io/dir2json-r/
+BugReports: https://github.com/parmsam/dir2json-r/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-05-23 20:42:46 UTC; samparmar
+Author: Sam Parmar [aut, cre, cph]
+Maintainer: Sam Parmar <parmartsam@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-27 09:00:05 UTC

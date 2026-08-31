@@ -1,0 +1,31 @@
+Package: safetensors
+Title: Safetensors File Format
+Version: 0.3.0
+Authors@R: c(
+    person("Tomasz", "Kalinowski", , "tomasz@posit.co", role = c("ctb", "cre")),
+    person("Daniel", "Falbel", , "dfalbel@gmail.com", role = "aut"),
+    person("Sebastian", "Fischer", , "seb.fischer@tutamail.com", role = "ctb"),
+    person(family = "Posit", role = c("cph"))
+    )
+Description: A file format for storing tensors that is secure (doesn't allow for
+    code execution), fast and simple to implement. 'safetensors' also enables cross
+    language and cross frameworks compatibility making it an ideal format for
+    storing machine learning model weights.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), torch (>= 0.11.0)
+Config/testthat/edition: 3
+Imports: cli, jsonlite, R6, rlang
+URL: https://github.com/mlverse/safetensors,
+        https://mlverse.github.io/safetensors/
+BugReports: https://github.com/mlverse/safetensors/issues
+NeedsCompilation: no
+Packaged: 2026-08-21 19:32:53 UTC; tomasz
+Author: Tomasz Kalinowski [ctb, cre],
+  Daniel Falbel [aut],
+  Sebastian Fischer [ctb],
+  Posit [cph]
+Maintainer: Tomasz Kalinowski <tomasz@posit.co>
+Repository: CRAN
+Date/Publication: 2026-08-21 22:10:02 UTC

@@ -1,0 +1,38 @@
+Package: applicable
+Title: A Compilation of Applicability Domain Methods
+Version: 0.2.1
+Authors@R: c(
+    person("Marly", "Gotti", , "marlygotti@gmail.com", role = c("aut", "cre")),
+    person("Max", "Kuhn", , "max@posit.co", role = "aut"),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: A modeling package compiling applicability domain methods in
+    R. It combines different methods to measure the amount of
+    extrapolation new samples can have from the training set. See
+    <doi:10.4018/IJQSPR.2016010102> for an overview of applicability
+    domains.
+License: MIT + file LICENSE
+URL: https://github.com/tidymodels/applicable,
+        https://applicable.tidymodels.org
+BugReports: https://github.com/tidymodels/applicable/issues
+Depends: ggplot2 (>= 4.0.2), R (>= 4.1)
+Imports: dplyr, glue, hardhat (>= 1.3.1), Matrix, proxyC, purrr, rlang,
+        stats, tibble, tidyr, tidyselect, utils
+Suggests: covr, isotree (>= 0.6.1-1), knitr, modeldata, recipes (>=
+        1.0.10), rmarkdown, spelling, testthat (>= 3.0.0), xml2
+Config/Needs/website: tidyverse/tidytemplate, quarto
+Config/testthat/edition: 3
+Config/usethis/last-upkeep: 2026-02-19
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-23 23:49:47 UTC; marlygotti
+Author: Marly Gotti [aut, cre],
+  Max Kuhn [aut],
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
+Maintainer: Marly Gotti <marlygotti@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-24 09:30:21 UTC

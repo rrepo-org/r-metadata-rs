@@ -1,0 +1,30 @@
+Package: quantregForest
+Type: Package
+Title: Quantile Regression Forests
+Version: 1.4-0
+Date: 2026-07-02
+Authors@R: c(person(given = "Nicolai",
+                    family = "Meinshausen",
+                    role = c("aut", "cre"),
+                    email = "meinshausen@gmail.com"),
+             person(given = "Loris",
+                    family = "Michel",
+                    role = "aut",
+                    email = "michel@stat.math.ethz.ch"))
+Depends: randomForest
+Imports: stats, parallel
+Suggests: gss, knitr, rmarkdown
+Description: Quantile Regression Forests is a tree-based ensemble
+        method for estimation of conditional quantiles. It is
+        particularly well suited for high-dimensional data. Predictor
+        variables of mixed classes can be handled. The package is
+        dependent on the package 'randomForest', written by Andy Liaw.
+License: GPL
+NeedsCompilation: no
+RoxygenNote: 6.0.1
+Packaged: 2026-07-02 16:50:31 UTC; nicolai
+Author: Nicolai Meinshausen [aut, cre],
+  Loris Michel [aut]
+Maintainer: Nicolai Meinshausen <meinshausen@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-03 02:50:02 UTC

@@ -1,0 +1,32 @@
+Package: visa
+Type: Package
+Title: Vegetation Imaging Spectroscopy Analyzer
+Version: 1.0.0
+Authors@R: person("Kang", "Yu", email = "kang.yu@outlook.com",
+  role = c("aut", "cre"))
+Description: Provides easy-to-use tools for data analysis and visualization for hyperspectral remote sensing (also known as imaging spectroscopy), with 
+    a particular focus on vegetation hyperspectral data analysis. It consists of a set of functions, ranging from the organization of hyperspectral data 
+    in the proper data structure for spectral feature selection, calculation of vegetation index, multivariate analysis, as well as to the visualization 
+    of spectra and results of analysis in the 'ggplot2' style.
+License: GPL-3
+LazyData: true
+Encoding: UTF-8
+URL: https://github.com/kang-yu/visa
+BugReports: https://github.com/kang-yu/visa/issues
+Depends: R (>= 3.5.0)
+Imports: ggplot2, ggpmisc, methods, magrittr, Matrix, plot3D, plotly,
+        reshape2, RColorBrewer
+Suggests: devtools, testthat, knitr, rmarkdown, stringi
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Collate: 'visa.R' 'Spectra-class.R' 'cm.nsr.R' 'cm.rbd3.R' 'cm.sr.R'
+        'data-specdf.R' 'data-speclib.R' 'find.bestBands.R'
+        'ggplot-method.R' 'ggplot.cm.R' 'ggplot.lmfit.R'
+        'ggplot.spectra.R' 'ndvi2.R' 'nsr.R' 'plt.2dcm.R'
+        'plt.3dcm_best.R' 'spectra.R' 'sr.R' 'wavelength.R'
+NeedsCompilation: no
+Packaged: 2025-03-19 19:34:09 UTC; Yu
+Author: Kang Yu [aut, cre]
+Maintainer: Kang Yu <kang.yu@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-03-19 19:50:02 UTC

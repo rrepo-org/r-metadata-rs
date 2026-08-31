@@ -1,0 +1,40 @@
+Package: sdcLog
+Title: Tools for Statistical Disclosure Control in Research Data
+        Centers
+Version: 0.5.1
+Authors@R: c(
+    person("Matthias", "Gomolka", , "matthias.gomolka@posteo.de", role = c("aut", "cre")),
+    person("Tim", "Becker", role = "aut"),
+    person("Pantelis", "Karapanagiotis", , "pikappa.devel@gmail.com", role = "ctb")
+  )
+Description: Tools for researchers to explicitly show that their results
+    comply to rules for statistical disclosure control imposed by research
+    data centers. These tools help in checking descriptive statistics and
+    models and in calculating extreme values that are not individual data.
+    Also included is a simple function to create log files. The methods
+    used here are described in the "Guidelines for the checking of output
+    based on microdata research" by Bond, Brandt, and de Wolf (2015)
+    <https://cros.ec.europa.eu/system/files/2024-02/Output-checking-guidelines.pdf>.
+License: GPL-3
+URL: https://github.com/matthiasgomolka/sdcLog
+BugReports: https://github.com/matthiasgomolka/sdcLog/issues
+Depends: R (>= 3.5)
+Imports: broom (>= 0.5.5), checkmate (>= 2.0.0), cli, data.table (>=
+        1.12.8), mathjaxr, stats, utils
+Suggests: cffr, knitr, lfe, rmarkdown, skimr, spelling, testthat (>=
+        3.0.0), tibble
+VignetteBuilder: knitr
+RdMacros: mathjaxr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-05-03 08:46:49 UTC; matth
+Author: Matthias Gomolka [aut, cre],
+  Tim Becker [aut],
+  Pantelis Karapanagiotis [ctb]
+Maintainer: Matthias Gomolka <matthias.gomolka@posteo.de>
+Repository: CRAN
+Date/Publication: 2025-05-03 09:10:02 UTC

@@ -1,0 +1,49 @@
+Package: tulpaMesh
+Title: Constrained Delaunay Triangulation Meshes for Spatial 'SPDE'
+        Models
+Version: 0.1.3
+Authors@R: c(
+    person("Gilles", "Colling", email = "gilles.colling051@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-3070-6066")),
+    person("Artem", "Amirkhanov",
+           role = c("ctb", "cph"),
+           comment = "CDT library (src/cdt/, MPL-2.0)"),
+    person("William C.", "Lenthe",
+           role = c("ctb", "cph"),
+           comment = "Geometric predicates (src/cdt/predicates.h, BSD-3-Clause)")
+    )
+Description: Generate constrained Delaunay triangulation meshes for use with
+    stochastic partial differential equation (SPDE) spatial models
+    (Lindgren, Rue and Lindstroem 2011 <doi:10.1111/j.1467-9868.2011.00777.x>).
+    Provides automatic mesh generation from point coordinates with boundary
+    constraints, Ruppert refinement for mesh quality, finite element method
+    (FEM) matrix assembly (mass, stiffness, projection), barrier models,
+    spherical meshes via icosahedral subdivision, and metric graph meshes for
+    network geometries. Built on the 'CDT' header-only C++ library
+    (Amirkhanov 2024 <https://github.com/artem-ogre/CDT>). Designed as the
+    mesh backend for the 'tulpa' Bayesian hierarchical modelling engine but
+    usable standalone for any spatial triangulation task.
+License: MIT + file LICENSE
+Encoding: UTF-8
+SystemRequirements: C++17, GNU make
+Depends: R (>= 4.1.0)
+Imports: Rcpp (>= 1.0.12), Matrix (>= 1.5-0), RcppParallel
+Suggests: testthat (>= 3.0.0), sf, fmesher, ggplot2, svglite, knitr,
+        rmarkdown
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppParallel
+Config/testthat/edition: 3
+URL: https://github.com/gcol33/tulpaMesh
+BugReports: https://github.com/gcol33/tulpaMesh/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-15 14:33:49 UTC; Gilles Colling
+Author: Gilles Colling [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3070-6066>),
+  Artem Amirkhanov [ctb, cph] (CDT library (src/cdt/, MPL-2.0)),
+  William C. Lenthe [ctb, cph] (Geometric predicates
+    (src/cdt/predicates.h, BSD-3-Clause))
+Maintainer: Gilles Colling <gilles.colling051@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-15 19:00:02 UTC

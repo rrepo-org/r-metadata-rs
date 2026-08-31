@@ -1,0 +1,40 @@
+Type: Package
+Package: windAC
+Title: Area Correction Methods
+Version: 1.3.0
+Date: 2026-04-29
+Authors@R: c(
+    person("Paul", "Rabie", role = "aut"),
+    person("Daniel", "Riser-Espinoza", , "despinoza@west-inc.com", role = c("aut", "cre")),
+    person("Trent", "McDonald", role = "ctb"),
+    person("Western EcoSystems Technology, Inc.", role = c("cph", "fnd"))
+  )
+Description: Post-construction fatality monitoring studies at wind
+    facilities are based on data from searches for bird and bat carcasses
+    in plots beneath turbines. Bird and bat carcasses can fall outside of
+    the search plot. Bird and bat carcasses from wind turbines often fall
+    outside of the searched area. To compensate, area correction (AC)
+    estimations are calculated to estimate the percentage of fatalities
+    that fall within the searched area versus those that fall outside of
+    it. This package provides two likelihood based methods and one physics
+    based method (Hull and Muir (2010)
+    <doi:10.1080/14486563.2010.9725253>, Huso and Dalthorp (2014)
+    <doi:10.1002/jwmg.663>) to estimate the carcass fall distribution.
+    There are also functions for calculating the proportion of area
+    searched within one unit annuli, log logistic distribution functions,
+    and truncated distribution functions.
+License: GNU General Public License
+Depends: R (>= 3.6.0)
+Imports: dplyr, magrittr, mvtnorm, purrr, rlang, sf, tidyr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-29 21:21:13 UTC; cmurray
+Author: Paul Rabie [aut],
+  Daniel Riser-Espinoza [aut, cre],
+  Trent McDonald [ctb],
+  Western EcoSystems Technology, Inc. [cph, fnd]
+Maintainer: Daniel Riser-Espinoza <despinoza@west-inc.com>
+Repository: CRAN
+Date/Publication: 2026-05-02 18:40:03 UTC

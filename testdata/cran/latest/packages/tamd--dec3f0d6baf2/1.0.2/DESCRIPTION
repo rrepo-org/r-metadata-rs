@@ -1,0 +1,37 @@
+Package: tamd
+Type: Package
+Title: Transcendental Algorithm for Mixtures of Distributions
+Version: 1.0.2
+Date: 2026-05-31
+Authors@R: person(
+    given  = "Ernest",
+    family = "Fokoue",
+    role   = c("aut", "cre"),
+    email  = "epfeqa@rit.edu")
+Maintainer: Ernest Fokoue <epfeqa@rit.edu>
+Description: Implements the Transcendental Algorithm for Mixtures
+    of Distributions (TAMD), a penalized likelihood framework for
+    fitting finite Gaussian mixture models. TAMD augments the
+    Expectation-Maximization (EM) algorithm with analytic barrier
+    terms built from the Hellinger affinity that diverge on the
+    singular locus, actively preventing component coalescence and
+    weight degeneracy. Provides the core TAMD fitting function,
+    closed-form Hellinger affinity and gradient computations, the
+    Transcendental Affinity Criterion (TAC) for geometry-aware
+    model selection, the regularity index rho (a scalar diagnostic
+    for mixture fit quality), and reproduction scripts for all
+    simulation studies. Methods are described in Fokoue (2024)
+    <doi:10.48550/arXiv.2602.03889>.
+    See also Titterington, Smith and Makov (1985,
+    ISBN:0-471-90510-4) and Watanabe (2009,
+    ISBN:978-0-521-86408-7).
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats, utils, MASS, mvtnorm
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-05-31 06:55:26 UTC; epfeqa
+Author: Ernest Fokoue [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-06-04 11:50:02 UTC

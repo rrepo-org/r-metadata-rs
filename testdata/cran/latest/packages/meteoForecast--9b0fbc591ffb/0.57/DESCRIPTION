@@ -1,0 +1,19 @@
+Package: meteoForecast
+Type: Package
+Title: Numerical Weather Predictions
+Version: 0.57
+Authors@R: c(person("Oscar", "Perpinan Lamigueiro", email="oscar.perpinan@upm.es", role=c('cre', 'aut')), person("Marcelo", "Pinho Almeida", email= "marcelopa@iee.usp.br", role='ctb'))
+Description: Access to several Numerical Weather Prediction services both in raster format and as a time series for a location. Currently it works with GFS <https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast>, MeteoGalicia <https://www.meteogalicia.gal/web/modelos/threddsIndex.action>, NAM <https://www.ncei.noaa.gov/products/weather-climate-models/north-american-mesoscale>, and RAP <https://www.ncei.noaa.gov/products/weather-climate-models/rapid-refresh-update>.
+URL: https://codeberg.org/oscarperpinan/meteoForecast
+BugReports: https://codeberg.org/oscarperpinan/meteoForecast/issues
+License: GPL-3
+Depends: raster, sp, zoo, ncdf4
+Imports: methods, stats, utils, XML
+Suggests: sf, lattice, rasterVis
+NeedsCompilation: no
+Packaged: 2025-08-07 16:22:07 UTC; oscar
+Author: Oscar Perpinan Lamigueiro [cre, aut],
+  Marcelo Pinho Almeida [ctb]
+Maintainer: Oscar Perpinan Lamigueiro <oscar.perpinan@upm.es>
+Repository: CRAN
+Date/Publication: 2025-08-25 08:30:17 UTC

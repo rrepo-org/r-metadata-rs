@@ -1,0 +1,32 @@
+Type: Package
+Package: junctions
+Title: The Breakdown of Genomic Ancestry Blocks in Hybrid Lineages
+Version: 2.1.4
+Authors@R: 
+    person(given = "Thijs",
+           family = "Janzen",
+           role = c("aut", "cre"),
+           email = "thijsjanzen@gmail.com")
+Description: Individual based simulations of hybridizing populations,
+    where the accumulation of junctions is tracked. Furthermore,
+    mathematical equations are provided to verify simulation outcomes.
+    Both simulations and mathematical equations are based on Janzen
+    (2018, <doi:10.1101/058107>) and Janzen (2022,
+    <doi:10.1111/1755-0998.13519>).
+License: GPL (>= 2)
+URL: https://thijsjanzen.github.io/junctions/
+BugReports: https://github.com/thijsjanzen/junctions/issues
+Depends: RcppParallel (>= 5.0.0)
+Imports: nloptr, Rcpp, tibble
+Suggests: dplyr, ggplot2, knitr, magrittr, rmarkdown, testthat, tidyr
+LinkingTo: nloptr, Rcpp, RcppParallel
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2026-03-06 17:18:23 UTC; thijsjanzen
+Author: Thijs Janzen [aut, cre]
+Maintainer: Thijs Janzen <thijsjanzen@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-07 16:30:07 UTC

@@ -1,0 +1,24 @@
+Package: hdMTD
+Type: Package
+Title: Inference for High-Dimensional Mixture Transition Distribution
+        Models
+Version: 0.1.4
+Authors@R: c(person(given = "Maiara", family = "Gripp", email = "maiara@dme.ufrj.br", role = c("aut", "cre")), person(given = "Guilherme", family = "Ost", email = "guilhermeost@im.ufrj.br", role = "ths"), person(given = "Giulio", family = "Iacobelli", email = "giulio@im.ufrj.br", role = "ths"))
+Description: Estimates parameters in Mixture Transition Distribution (MTD) models, a class of high-order Markov chains. The set of relevant pasts (lags) is selected using either the Bayesian Information Criterion or the Forward Stepwise and Cut algorithms. Other model parameters (e.g. transition probabilities and oscillations) can be estimated via maximum likelihood estimation or the Expectation-Maximization algorithm. Additionally, 'hdMTD' includes a perfect sampling algorithm that generates samples of an MTD model from its invariant distribution. For theory, see Ost & Takahashi (2023) <http://jmlr.org/papers/v24/22-0266.html>.
+URL: https://github.com/MaiaraGripp/hdMTD
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: methods, dplyr, purrr, igraph
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-18 21:20:52 UTC; maiar
+Author: Maiara Gripp [aut, cre],
+  Guilherme Ost [ths],
+  Giulio Iacobelli [ths]
+Maintainer: Maiara Gripp <maiara@dme.ufrj.br>
+Repository: CRAN
+Date/Publication: 2025-12-18 22:00:02 UTC

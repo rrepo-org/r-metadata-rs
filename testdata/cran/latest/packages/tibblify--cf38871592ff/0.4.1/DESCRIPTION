@@ -1,0 +1,41 @@
+Package: tibblify
+Title: Rectangle Nested Lists
+Version: 0.4.1
+Authors@R: c(
+    person("Jon", "Harmon", , "jonthegeek@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4781-4346")),
+    person("Maximilian", "Girlich", , "maximilian.girlich@outlook.com", role = c("aut", "cph")),
+    person("Kirill", "Müller", role = "ctb")
+  )
+Description: A tool to rectangle a nested list, that is to convert it into
+    a 'tibble'. This is done automatically or according to a given
+    specification. A common use case is for nested lists coming from
+    parsing 'JSON' files, or the 'JSON' responses of 'REST' 'APIs'.
+    'Rectangling' uses the 'vctrs' package, and therefore offers a wide
+    support of vector types.
+License: MIT + file LICENSE
+URL: https://tibblify.wrangle.zone,
+        https://github.com/wranglezone/tibblify
+BugReports: https://github.com/wranglezone/tibblify/issues
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.6.2), glue, lifecycle, purrr (>= 1.0.2), rlang (>=
+        1.2.0), tibble (>= 3.2.1), tidyselect (>= 1.2.0), vctrs (>=
+        0.7.2), withr (>= 2.5.2)
+Suggests: covr (>= 3.6.1), jsonlite (>= 1.8.0), knitr (>= 1.40),
+        memoise (>= 2.0.1), repurrrsive, rmarkdown (>= 2.16), spelling
+        (>= 2.2), stbl, testthat (>= 3.1.4), tidyr, yaml (>= 2.3.6)
+LinkingTo: vctrs
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-05-11 16:27:59 UTC; jonth
+Author: Jon Harmon [aut, cre] (ORCID: <https://orcid.org/0000-0003-4781-4346>),
+  Maximilian Girlich [aut, cph],
+  Kirill Müller [ctb]
+Maintainer: Jon Harmon <jonthegeek@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-12 18:40:14 UTC

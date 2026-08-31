@@ -1,0 +1,28 @@
+Package: plavaan
+Title: Penalized Estimation for Latent Variable Models with 'lavaan'
+Version: 0.0.2
+Authors@R: 
+    person("Hok Chio (Mark)", "Lai", , "marklhc@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9196-7406"))
+Description: Extends the popular 'lavaan' package by adding penalized
+    estimation capabilities. It supports penalty on individual parameters
+    as well as the difference between parameters.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Imports: lavaan (>= 0.6-15), numDeriv
+URL: https://marklhc.github.io/plavaan/,
+        https://github.com/marklhc/plavaan
+BugReports: https://github.com/marklhc/plavaan/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-28 14:55:29 UTC; marklai
+Author: Hok Chio (Mark) Lai [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9196-7406>)
+Maintainer: Hok Chio (Mark) Lai <marklhc@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-07-28 15:30:07 UTC

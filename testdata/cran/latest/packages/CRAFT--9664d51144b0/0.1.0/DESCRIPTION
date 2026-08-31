@@ -1,0 +1,25 @@
+Package: CRAFT
+Type: Package
+Title: Conditional Regime Analog Forecasting with Trajectories
+Version: 0.1.0
+Authors@R: c(person("Giancarlo", "Vercellino", role = c("aut", "cre", "cph"), email = "giancarlo.vercellino@gmail.com"))
+Maintainer: Giancarlo Vercellino <giancarlo.vercellino@gmail.com>
+Description: Tools for Conditional Regime Analog Forecasting with Trajectories.
+    The package builds lag and lead trajectory embeddings, detects regimes
+    with singular value decomposition and changepoint analysis, estimates
+    transition probabilities between regimes, samples future-trajectory
+    analogues, and fits smooth empirical forecast distributions.
+License: GPL-3
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: changepoint, graphics, grDevices, parallel, stats, utils
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://rpubs.com/giancarlo_vercellino/craft
+NeedsCompilation: no
+Packaged: 2026-08-03 15:26:40 UTC; gianc
+Author: Giancarlo Vercellino [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2026-08-08 12:50:20 UTC

@@ -1,0 +1,39 @@
+Package: mcca
+Type: Package
+Title: Multi-Category Classification Accuracy
+Version: 0.8.2
+Authors@R: c(
+    person(given = "Ming", family = "Gao", role = "aut"),
+    person(given = "Jialiang", family = "Li",
+           role = c("aut", "cre"),
+           email = "stalj@nus.edu.sg"),
+    person(given = "Pan", family = "Liu", role = "aut"),
+    person(given = "Ben", family = "Van Calster", role = "aut")
+    )
+Maintainer: Jialiang Li <stalj@nus.edu.sg>
+Description: It contains six common multi-category classification accuracy evaluation measures.
+ All of these measures could be found in Li and Ming (2019) <doi:10.1002/sim.8103>. Specifically,
+ Hypervolume Under Manifold (HUM), described in
+ Li and Fine (2008) <doi:10.1093/biostatistics/kxm050>.
+ Correct Classification Percentage (CCP), Integrated Discrimination Improvement (IDI), Net Reclassification Improvement (NRI), R-Squared Value (RSQ), described in
+ Li, Jiang and Fine (2013) <doi:10.1093/biostatistics/kxs047>.
+ Polytomous Discrimination Index (PDI), described in
+ Van Calster et al. (2012) <doi:10.1007/s10654-012-9733-3>.
+ Li et al. (2018) <doi:10.1177/0962280217692830>.
+ PDI with variance estimation using Dover et al. (2021) <doi:10.1002/sim.9187>.
+ We described all these above measures and our mcca package in
+ Li, Gao and D'Agostino (2019) <doi:10.1002/sim.8103>.
+License: GPL
+Encoding: UTF-8
+Imports: nnet,rpart,e1071,MASS,stats,pROC,caret
+Suggests: rgl
+URL: https://github.com/gaoming96/mcca
+BugReports: https://github.com/gaoming96/mcca/issues
+NeedsCompilation: no
+Packaged: 2026-04-13 09:02:01 UTC; chrystalu
+Author: Ming Gao [aut],
+  Jialiang Li [aut, cre],
+  Pan Liu [aut],
+  Ben Van Calster [aut]
+Repository: CRAN
+Date/Publication: 2026-04-13 18:10:02 UTC

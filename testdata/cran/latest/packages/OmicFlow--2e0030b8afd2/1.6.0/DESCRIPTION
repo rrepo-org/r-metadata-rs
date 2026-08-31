@@ -1,0 +1,46 @@
+Package: OmicFlow
+Title: Fast and Efficient (Automated) Analysis of Sparse Omics Data
+Version: 1.6.0
+Date: 2026-05-19
+Authors@R: c(
+    person(
+        "Alem", "Gusinac",
+        email = "alem.gusinac@gmail.com", 
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0009-0006-1896-4176")),
+    person(
+        "Thomas", "Ederveen", 
+        role = "aut",
+        comment = c(ORCID = "0000-0003-0068-1275")),
+    person(
+        "Annemarie", "Boleij", 
+        role = c("aut", "fnd"),
+        comment = c(ORCID = "0000-0003-4495-5880"))
+  )
+Description: 
+    A generalised data structure for fast and efficient loading and data munching of sparse omics data. The 'OmicFlow' requires an up-front validated metadata template from the user,
+    which serves as a guide to connect all the pieces together by aligning them into a single object that is defined as an 'omics' class. 
+    Once this unified structure is established, users can perform manual subsetting, visualisation, and statistical analysis, or leverage the automated 'autoFlow' method to generate a comprehensive report.
+License: MIT + file LICENSE
+URL: https://github.com/agusinac/OmicFlow
+BugReports: https://github.com/agusinac/OmicFlow/issues
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.3.0), R6, data.table, Matrix
+Imports: ape, ggpubr, ggrepel, ggplot2, jsonlite, jsonvalidate,
+        magrittr, methods, patchwork, RColorBrewer, rhdf5, rstatix,
+        Rcpp (>= 0.12.6), RcppParallel (>= 4.3.20), stats, tools,
+        utils, vegan, yyjsonr, cli
+Suggests: DT, downloadthis, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppParallel, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2026-05-19 14:12:25 UTC; Z289224
+Author: Alem Gusinac [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-1896-4176>),
+  Thomas Ederveen [aut] (ORCID: <https://orcid.org/0000-0003-0068-1275>),
+  Annemarie Boleij [aut, fnd] (ORCID:
+    <https://orcid.org/0000-0003-4495-5880>)
+Maintainer: Alem Gusinac <alem.gusinac@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-19 14:40:02 UTC

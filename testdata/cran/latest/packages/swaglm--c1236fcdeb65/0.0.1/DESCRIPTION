@@ -1,0 +1,26 @@
+Package: swaglm
+Title: Fast Sparse Wrapper Algorithm for Generalized Linear Models and
+        Testing Procedures for Network of Highly Predictive Variables
+Version: 0.0.1
+Authors@R: c(
+    person("Lionel", "Voirol", email = "lionelvoirol@hotmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1696-1407")),
+    person("Yagmur", "Ozdemir", role = "aut")
+    )
+Description: Provides a fast implementation of the SWAG algorithm for Generalized Linear Models which allows to perform a meta-learning procedure that combines 
+    screening and wrapper methods to find a set of extremely low-dimensional attribute combinations. The package then performs test on the network of selected models to identify the variables that are highly predictive by using entropy-based network measures.
+License: AGPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, fastglm, stats, igraph, gdata, plyr, progress,
+        DescTools, scales, fields
+Suggests: knitr, MASS, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-09-14 08:03:00 UTC; lionel
+Author: Lionel Voirol [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1696-1407>),
+  Yagmur Ozdemir [aut]
+Maintainer: Lionel Voirol <lionelvoirol@hotmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-18 08:50:02 UTC

@@ -1,0 +1,75 @@
+Type: Package
+Package: BTSR
+Title: Bounded Time Series Regression
+Version: 1.1.0
+Date: 2026-07-24
+Authors@R: c(
+    person(c("Taiane", "Schaedler"), "Prass", , "taianeprass@gmail.com", role = c("aut", "cre", "com"),
+           comment = c(ORCID = "0000-0003-3136-909X")),
+    person("Guilherme", "Pumi", , "guilherme.pumi@ufrgs.br", role = c("ctb", "aut"),
+           comment = c(ORCID = "0000-0002-6256-3170")),
+    person(c("Fábio", "Mariano"), "Bayer", , "fabiobayer@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-1464-0805")),
+    person(c("Jack", "Joseph"), "Dongarra", role = "ctb",
+           comment = "LINPACK subroutines (dtrsl, dpofa, ddot)"),
+    person("Cleve", "Moler", role = "ctb",
+           comment = "LINPACK subroutines (dtrsl, dpofa, ddot)"),
+    person(c("Gilbert", "Wright"), "Stewart", role = "ctb",
+           comment = "LINPACK subroutines (dtrsl, dpofa, ddot)"),
+    person("Ciyou", "Zhu", role = "ctb",
+           comment = "L-BFGS-B algorithm subroutines"),
+    person(c("Richard", "H."), "Byrd", role = "ctb",
+           comment = "L-BFGS-B algorithm subroutines"),
+    person("Jorge", "Nocedal", role = "ctb",
+           comment = "L-BFGS-B algorithm subroutines"),
+    person(c("Jose", "Luis"), "Morales", role = "ctb",
+           comment = "L-BFGS-B algorithm subroutines"),
+    person("Peihuang", "Lu-Chen", role = "ctb",
+           comment = "L-BFGS-B algorithm subroutines"),
+    person("John", "Burkardt", role = "ctb",
+           comment = "Trigamma function (FORTRAN90 version)"),
+    person("Alan", "Miller", role = "ctb",
+           comment = "FORTRAN90 version of NSWC special function psi and amendments to minim subroutine"),
+    person("D.E.", "Shaw", role = "ctb",
+           comment = "Original minim subroutine"),
+    person(c("Robert", "W.M."), "Wedderburn", role = "ctb",
+           comment = "Amendments to minim subroutine")
+  )
+Maintainer: Taiane Schaedler Prass <taianeprass@gmail.com>
+Description: Simulate, estimate and forecast a wide range of regression
+    based dynamic models for bounded time series, covering the most
+    commonly applied models in the literature. The main calculations are
+    done in FORTRAN, which translates into very fast algorithms.
+License: GPL (>= 3)
+Depends: R (>= 4.0)
+Imports: Rdpack
+RdMacros: Rdpack
+Copyright: see file COPYRIGHTS
+Encoding: UTF-8
+NeedsCompilation: yes
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+URL: https://github.com/tsprass/BTSR
+BugReports: https://github.com/tsprass/BTSR/issues
+Packaged: 2026-07-24 16:47:25 UTC; Taiane
+Author: Taiane Schaedler Prass [aut, cre, com] (ORCID:
+    <https://orcid.org/0000-0003-3136-909X>),
+  Guilherme Pumi [ctb, aut] (ORCID:
+    <https://orcid.org/0000-0002-6256-3170>),
+  Fábio Mariano Bayer [ctb] (ORCID:
+    <https://orcid.org/0000-0002-1464-0805>),
+  Jack Joseph Dongarra [ctb] (LINPACK subroutines (dtrsl, dpofa, ddot)),
+  Cleve Moler [ctb] (LINPACK subroutines (dtrsl, dpofa, ddot)),
+  Gilbert Wright Stewart [ctb] (LINPACK subroutines (dtrsl, dpofa, ddot)),
+  Ciyou Zhu [ctb] (L-BFGS-B algorithm subroutines),
+  Richard H. Byrd [ctb] (L-BFGS-B algorithm subroutines),
+  Jorge Nocedal [ctb] (L-BFGS-B algorithm subroutines),
+  Jose Luis Morales [ctb] (L-BFGS-B algorithm subroutines),
+  Peihuang Lu-Chen [ctb] (L-BFGS-B algorithm subroutines),
+  John Burkardt [ctb] (Trigamma function (FORTRAN90 version)),
+  Alan Miller [ctb] (FORTRAN90 version of NSWC special function psi and
+    amendments to minim subroutine),
+  D.E. Shaw [ctb] (Original minim subroutine),
+  Robert W.M. Wedderburn [ctb] (Amendments to minim subroutine)
+Repository: CRAN
+Date/Publication: 2026-07-24 17:10:02 UTC

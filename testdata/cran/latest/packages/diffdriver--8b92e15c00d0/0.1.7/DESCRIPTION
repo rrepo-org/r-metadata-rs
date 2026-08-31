@@ -1,0 +1,41 @@
+Package: diffdriver
+Type: Package
+Title: Identify Differential Selection
+Version: 0.1.7
+Authors@R: c(
+    person("Siming", "Zhao", , "siming.zhao@dartmouth.edu", role = c("aut", "cre")),
+    person("Jie", "Zhou", role = "aut"),
+    person("Qirui", "Zhang", role = "aut")
+  )
+Maintainer: Siming Zhao <siming.zhao@dartmouth.edu>
+Description: Tests for context-dependent selection on cancer driver genes
+    using somatic mutation data. The package implements the DiffDriver
+    statistical framework to assess whether the strength of positive selection
+    on mutations in a driver gene is associated with tumor- or individual-level
+    context variables, such as clinical traits, genomic features, or immune
+    microenvironment subtypes. DiffDriver estimates individual- and
+    position-specific background mutation rates, models selection as a deviation
+    from the background rate using functional annotations, and tests context
+    effects through a latent-variable logistic model. It provides utilities for
+    preparing mutation and annotation data, fitting differential-selection
+    models, running gene-level association tests, summarizing candidate genes,
+    and visualizing mutation patterns. The method is described in Zhou et al.
+    (2026) "Detecting context-dependent selection on cancer driver genes with
+    DiffDriver" <doi:10.64898/2026.04.06.716771>.
+URL: https://szhaolab.github.io/diffdriver/,
+        https://github.com/szhaolab/diffdriver
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: Matrix, stats, data.table, brglm, fastTopics, SQUAREM
+Suggests: knitr, rmarkdown, logging, testthat (>= 3.0.0)
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-22 16:12:45 UTC; ld-zhangqr
+Author: Siming Zhao [aut, cre],
+  Jie Zhou [aut],
+  Qirui Zhang [aut]
+Repository: CRAN
+Date/Publication: 2026-06-26 09:50:10 UTC

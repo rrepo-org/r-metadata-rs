@@ -1,0 +1,44 @@
+Package: BayesQRCount
+Type: Package
+Title: Adaptive Bayesian Quantile Regression for Count Data
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut"))
+Description: Implements Bayesian quantile regression for count data using the
+    jittering technique for discrete data smoothing and an asymmetric Laplace
+    distribution likelihood. Supports adaptive variable selection via a
+    random-bridge penalty with a beta prior on the power parameter, as well as
+    fixed-bridge and Lasso penalties. Utilizes Markov chain Monte Carlo with
+    Gibbs sampling and adaptive Metropolis-Hastings algorithms for posterior
+    inference, provides Gelman-Rubin convergence diagnostics, and predicts
+    conditional quantiles for count responses. Methodology and applications are
+    based on the following key references: Luo, Zhou, Hu, and Li (2026, Journal of
+    Mathematics, 2026:1543166, <doi:10.1155/jom/1543166>), Koenker and Bassett
+    (1978, Econometrica, 46, 33-50, <doi:10.2307/1913643>), Machado and Santos Silva
+    (2005, Journal of the American Statistical Association, 100, 1226-1237,
+    <doi:10.1198/016214505000000330>), Yu and Moyeed (2001, Statistics and
+    Probability Letters, 54, 437-447, <doi:10.1016/S0167-7152(01)00124-9>), Polson,
+    Scott, and Windle (2014, Journal of the Royal Statistical Society Series B, 76,
+    713-733, <doi:10.1111/rssb.12042>), Park and Casella (2008, Journal of the
+    American Statistical Association, 103, 681-686, <doi:10.1198/016214508000000337>),
+    and Roberts and Rosenthal (2009, Journal of Computational and Graphical
+    Statistics, 18, 349-367, <doi:10.1198/jcgs.2009.06134>).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-07-27 18:42:36 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 09:30:08 UTC

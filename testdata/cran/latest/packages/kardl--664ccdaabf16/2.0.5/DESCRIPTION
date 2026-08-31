@@ -1,0 +1,46 @@
+Package: kardl
+Type: Package
+Title: Make Symmetric and Asymmetric ARDL Estimations
+Version: 2.0.5
+Authors@R: 
+  c(person(given = "Huseyin",
+           family = "karamelikli",
+           role = c("aut", "cre"),
+           email = "hakperest@gmail.com",
+           comment = c(ORCID = "0000-0001-7622-0972")),
+    person(given = "Huseyin Utku",
+           family = "Demir",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-9140-0362")) 
+           )
+Maintainer: Huseyin karamelikli <hakperest@gmail.com>
+Description: Implements estimation procedures for Autoregressive Distributed Lag (ARDL) 
+    and Nonlinear ARDL (NARDL) models, which allow researchers to investigate both 
+    short- and long-run relationships in time series data under mixed orders of integration. 
+    The package supports simultaneous modeling of symmetric and asymmetric regressors, 
+    flexible treatment of short-run and long-run asymmetries, and automated equation handling. 
+    It includes several cointegration testing approaches such as the Pesaran-Shin-Smith F 
+    and t bounds tests, and narayan test. 
+    Methodological foundations are provided in Pesaran, Shin, and Smith (2001) 
+    <doi:10.1016/S0304-4076(01)00049-5> and Shin, Yu, and Greenwood-Nimmo (2014, ISBN:9780123855079).
+License: GPL-3
+Encoding: UTF-8
+Imports: stats, msm, lmtest,lifecycle, nlWaldTest, car, ggplot2, utils
+Suggests: knitr, rmarkdown, magrittr, rlang, tidyr, dplyr, MASS,
+        sandwich, testthat (>= 3.0.0)
+NeedsCompilation: no
+VignetteBuilder: knitr
+Packaged: 2026-07-21 13:34:32 UTC; huseyin
+Author: Huseyin karamelikli [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7622-0972>),
+  Huseyin Utku Demir [aut] (ORCID:
+    <https://orcid.org/0000-0002-9140-0362>)
+Depends: R (>= 3.5.0)
+Config/testthat/edition: 3
+URL: https://karamelikli.github.io/kardl/,
+        https://github.com/karamelikli/kardl
+BugReports: https://github.com/karamelikli/kardl/issues
+RoxygenNote: 7.3.1
+Config/roxygen2/version: 8.0.0
+Repository: CRAN
+Date/Publication: 2026-07-22 09:10:02 UTC

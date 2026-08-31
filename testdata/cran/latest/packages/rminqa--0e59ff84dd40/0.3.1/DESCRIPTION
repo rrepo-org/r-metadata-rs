@@ -1,0 +1,30 @@
+Package: rminqa
+Type: Package
+Title: Derivative-Free Optimization in R using C++
+Version: 0.3.1
+Date: 2026-01-11
+Authors@R: c(person("Sam", "Watson", email = "S.I.Watson@bham.ac.uk",
+                  role = c("aut", "cre")),
+            person("Yi", "Pan", email = "ypan1988@gmail.com",
+                  role = c("aut")),
+            person("Éric", "Thiébaut", role = c("aut")),
+            person("Mike", "Powell", role = c("aut")))
+Description: Perform derivative-free optimization algorithms in R using C++.
+    A wrapper interface is provided to call C function of the 'bobyqa' implementation
+    (See <https://github.com/emmt/Algorithms/tree/master/bobyqa>).
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.7)
+LinkingTo: Rcpp (>= 1.0.7)
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.2
+Suggests: minqa
+NeedsCompilation: yes
+Packaged: 2026-01-11 15:47:25 UTC; samue
+Author: Sam Watson [aut, cre],
+  Yi Pan [aut],
+  Éric Thiébaut [aut],
+  Mike Powell [aut]
+Maintainer: Sam Watson <S.I.Watson@bham.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-01-12 06:10:21 UTC

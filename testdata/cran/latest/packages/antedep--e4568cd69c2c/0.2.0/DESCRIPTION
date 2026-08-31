@@ -1,0 +1,39 @@
+Package: antedep
+Title: Antedependence Models for Longitudinal Data
+Version: 0.2.0
+Authors@R: c(
+    person("Chenyang", "Li", email = "chenyang-li@uiowa.edu", 
+           role = c("aut", "cre")),
+    person("Dale", "Zimmerman", email = "dale-zimmerman@uiowa.edu", 
+           role = c("aut", "ctb"))
+    )
+Author: Chenyang Li [aut, cre],
+  Dale Zimmerman [aut, ctb]
+Maintainer: Chenyang Li <chenyang-li@uiowa.edu>
+Description: Fitting, simulation, and inference for antedependence models for
+    longitudinal data, as described in Zimmerman and Nunez-Anton (2009,
+    ISBN:9781420011074). Supports integer-valued antedependence (INAD) models
+    for count data with thinning operators (binomial, Poisson, negative binomial)
+    and flexible innovation distributions (Poisson, Bell, negative binomial),
+    categorical antedependence models for discrete-state longitudinal outcomes,
+    and Gaussian antedependence (AD) models for continuous data. Implements
+    maximum likelihood estimation via time-separable optimization and block
+    coordinate descent, with confidence intervals based on Louis' identity and
+    profile likelihood.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+URL: https://tanchyking.github.io/antedep/,
+        https://github.com/TanchyKing/antedep
+BugReports: https://github.com/TanchyKing/antedep/issues
+Imports: nloptr (>= 1.2.0), stats, ggplot2, MASS
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-09 05:30:44 UTC; Tanch
+Repository: CRAN
+Date/Publication: 2026-05-09 14:30:02 UTC

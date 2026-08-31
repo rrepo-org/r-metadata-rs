@@ -1,0 +1,41 @@
+Package: hlmLab
+Type: Package
+Title: Hierarchical Linear Modeling with Visualization and
+        Decomposition
+Version: 0.1.0
+Authors@R: 
+    person("Subir", "Hait", email = "haitsubi@msu.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-9871-9677"))
+Description: Provides functions for visualization and decomposition in
+    hierarchical linear models (HLM) for applications in education, psychology,
+    and the social sciences. Includes variance decomposition for two-level and
+    three-level data structures following Snijders and Bosker (2012,
+    ISBN:9781849202015), intraclass correlation (ICC) estimation and design
+    effect computation as described in Shrout and Fleiss (1979)
+    <doi:10.1037/0033-2909.86.2.420>, and contextual effect decomposition via
+    the Mundlak (1978) <doi:10.2307/1913646> specification distinguishing
+    within- and between-cluster components. Supports visualization of random
+    slopes and cross-level interactions following Hofmann and Gavin (1998)
+    <doi:10.1177/014920639802400504> and Hamaker and Muthen (2020)
+    <doi:10.1037/met0000239>. Multilevel models are estimated using 'lme4'
+    (Bates et al., 2015 <doi:10.18637/jss.v067.i01>). An optional 'Shiny'
+    application enables interactive exploration of model components and
+    parameter variation. The implementation follows the multilevel modeling
+    framework of Raudenbush and Bryk (2002, ISBN:9780761919049).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2 (>= 3.4.0), lme4, scales, stats
+Suggests: shiny, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+URL: https://github.com/causalfragility-lab/hlmLab
+BugReports: https://github.com/causalfragility-lab/hlmLab/issues
+NeedsCompilation: no
+Packaged: 2026-04-10 20:02:12 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-16 10:50:02 UTC

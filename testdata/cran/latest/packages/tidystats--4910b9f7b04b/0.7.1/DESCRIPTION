@@ -1,0 +1,28 @@
+Package: tidystats
+Type: Package
+Title: Save Output of Statistical Tests
+Version: 0.7.1
+Authors@R: person(given = "Willem",
+                  family = "Sleegers",
+                  role = c("aut", "cre"),
+                  email = "w.sleegers@me.com")
+Maintainer: Willem Sleegers <w.sleegers@me.com>
+Description: Save the output of statistical tests in an organized file that can 
+  be shared with others or used to report statistics in scientific papers.
+URL: https://willemsleegers.github.io/tidystats/
+BugReports: https://github.com/WillemSleegers/tidystats/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: jsonlite, methods, tools
+Suggests: BayesFactor, brms, knitr, lme4, lmerTest, rmarkdown,
+        effectsize, effsize, Hmisc, afex, emmeans, irr, psych,
+        testthat, lavaan, nlme
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-28 19:35:49 UTC; willem
+Author: Willem Sleegers [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-06-28 21:10:02 UTC

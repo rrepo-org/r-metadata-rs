@@ -1,0 +1,32 @@
+Package: reproj
+Type: Package
+Title: Coordinate System Transformations for Generic Map Data
+Version: 0.8.0
+Authors@R: person("Michael D.","Sumner", role = c("aut", "cre"), email =
+    "mdsumner@gmail.com", comment=c(ORCID = "0000-0002-2471-7511"))
+Description: Transform coordinates from a specified source to a specified 
+ target map projection. This uses the 'PROJ' library directly, via the 'PROJ' package. 
+ The 'reproj()'  function is generic, methods may be added to remove the need for an explicit 
+ source definition. This is for use primarily to 
+ transform generic data formats and direct leverage of the underlying
+ 'PROJ' library. (There are transformations that aren't possible with 'PROJ' and
+ that are provided by the 'GDAL' library, a limitation which users of this 
+ package should be aware of.) The 'PROJ' library is available at 
+ <https://proj.org/>.  
+License: GPL-3
+Depends: R (>= 3.2.5)
+Imports: crsmeta (>= 0.3.0), PROJ (>= 0.7.0), wk
+Suggests: testthat, covr
+Encoding: UTF-8
+SystemRequirements: PROJ (>= 6.3.1)
+BugReports: https://github.com/hypertidy/reproj/issues
+URL: https://github.com/hypertidy/reproj,
+        https://hypertidy.github.io/reproj/
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-10 08:05:55 UTC; mdsumner
+Author: Michael D. Sumner [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2471-7511>)
+Maintainer: Michael D. Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-10 12:00:02 UTC

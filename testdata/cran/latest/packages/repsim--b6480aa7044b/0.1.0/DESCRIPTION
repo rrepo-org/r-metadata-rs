@@ -1,0 +1,21 @@
+Package: repsim
+Type: Package
+Title: Measures of Representational Similarity Across Models
+Version: 0.1.0
+Authors@R: person("Kisung", "You",
+    role = c("aut", "cre"), email =
+    "kisung.you@outlook.com")
+Description: Provides a collection of methods for quantifying representational similarity between learned features or multivariate data. The package offers an efficient 'C++' backend, designed for applications in machine learning, computational neuroscience, and multivariate statistics. See Klabunde et al. (2025) <doi:10.1145/3728458> for a comprehensive overview of the topic.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: C++17
+Imports: Rcpp (>= 1.1.0), Rdpack
+LinkingTo: Rcpp, RcppEigen
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2025-11-04 19:45:56 UTC; kyou
+Author: Kisung You [aut, cre]
+Maintainer: Kisung You <kisung.you@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-11-07 14:00:14 UTC

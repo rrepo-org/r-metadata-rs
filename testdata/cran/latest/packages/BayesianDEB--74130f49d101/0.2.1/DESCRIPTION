@@ -1,0 +1,51 @@
+Package: BayesianDEB
+Title: Bayesian Dynamic Energy Budget Modelling
+Version: 0.2.1
+Date: 2026-06-17
+Authors@R: c(
+    person("Branimir K.", "Hackenberger",
+           email = "branimir@sciom.hr",
+           role = c("aut", "cre")),
+    person("Tamara", "Djerdj",
+           role = "aut"),
+    person("Domagoj K.", "Hackenberger",
+           role = "aut")
+    )
+Description: Provides a Bayesian framework for Dynamic Energy Budget (DEB)
+    modelling via 'Stan'. Implements the standard DEB model of Kooijman
+    (2010, <doi:10.1017/CBO9780511805400>) as a state-space model with
+    Hamiltonian Monte Carlo inference (Carpenter et al., 2017,
+    <doi:10.18637/jss.v076.i01>). Includes individual-level growth models,
+    growth-reproduction models, hierarchical multi-individual models with
+    partial pooling, and toxicokinetic-toxicodynamic (TKTD) models for
+    ecotoxicology following the DEBtox framework (Jager et al., 2006,
+    <doi:10.1007/s10646-006-0060-x>). Supports prior specification from
+    biological knowledge, convergence diagnostics (Vehtari et al., 2021,
+    <doi:10.1214/20-BA1221>), posterior predictive checks, derived quantity
+    estimation, and visualisation via 'ggplot2'.
+License: MIT + file LICENSE
+URL: https://github.com/sciom/BayesianDEB
+BugReports: https://github.com/sciom/BayesianDEB/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: CmdStan
+        (https://mc-stan.org/users/interfaces/cmdstan)
+Depends: R (>= 4.1.0)
+Imports: posterior (>= 1.5.0), rlang (>= 1.1.0), cli (>= 3.6.0),
+        ggplot2 (>= 3.4.0), bayesplot (>= 1.10.0), deSolve (>= 1.40),
+        stats, utils
+Suggests: cmdstanr (>= 0.8.0), testthat (>= 3.0.0), loo (>= 2.6.0),
+        digest, dplyr (>= 1.1.0), tidyr (>= 1.3.0), gridExtra, knitr,
+        rmarkdown, withr
+Additional_repositories: https://stan-dev.r-universe.dev
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-17 11:39:03 UTC; branimir
+Author: Branimir K. Hackenberger [aut, cre],
+  Tamara Djerdj [aut],
+  Domagoj K. Hackenberger [aut]
+Maintainer: Branimir K. Hackenberger <branimir@sciom.hr>
+Repository: CRAN
+Date/Publication: 2026-06-17 12:40:07 UTC

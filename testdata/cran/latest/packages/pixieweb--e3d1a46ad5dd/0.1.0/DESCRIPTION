@@ -1,0 +1,28 @@
+Package: pixieweb
+Title: Access PX-Web Statistical Data from R
+Version: 0.1.0
+Authors@R: 
+    person("Love", "Hansson", , email = "love.hansson@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: A pipe-friendly R client for PX-Web statistical APIs.
+    Provides a search-then-fetch workflow for discovering and downloading
+    data from national statistics agencies (SCB, SSB, Statistics Finland,
+    etc.) using a consistent tibble-based interface.
+License: AGPL (>= 3)
+URL: https://lchansson.github.io/pixieweb/,
+        https://github.com/lchansson/pixieweb
+BugReports: https://github.com/lchansson/pixieweb/issues
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, httr2, jsonlite, rlang (>= 1.1.0), tibble, tidyr
+Suggests: ggplot2, httptest2, knitr, pxweb, rmarkdown, testthat (>=
+        3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-23 15:12:26 UTC; tgslhn
+Author: Love Hansson [aut, cre, cph]
+Maintainer: Love Hansson <love.hansson@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-26 10:30:02 UTC

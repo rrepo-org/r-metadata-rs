@@ -1,0 +1,34 @@
+Package: BioThermR
+Type: Package
+Title: Standardized Processing and Analysis of Thermal Imaging Data in
+        Animal Studies
+Version: 0.1.1
+Authors@R: c(
+    person(
+      "BeiHao", "Li",
+      email = "szright2000@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: A modular framework for standardized analysis of thermal imaging data in
+    animal experimentation. The package integrates thermographic data import
+    (FLIR, raw, CSV), automated region of interest (ROI) segmentation based on
+    'EBImage' (Pau et al., 2010 <doi:10.1093/bioinformatics/btq046>), interactive
+    ROI refinement, and high-throughput batch processing.
+URL: https://github.com/RightSZ/BioThermR,
+        https://rightsz.github.io/BioThermR/
+BugReports: https://github.com/RightSZ/BioThermR/issues
+Depends: R (>= 4.1.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: EBImage, ggplot2, ggpubr, ggrepel, ggsci, plotly, shiny,
+        stats, Thermimage
+Suggests: knitr, rmarkdown, testthat, psych, lme4
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-19 08:50:44 UTC; libeihao
+Author: BeiHao Li [aut, cre]
+Maintainer: BeiHao Li <szright2000@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-19 09:20:02 UTC

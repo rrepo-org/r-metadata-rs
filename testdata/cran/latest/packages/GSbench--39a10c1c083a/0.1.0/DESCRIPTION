@@ -1,0 +1,36 @@
+Package: GSbench
+Title: Benchmarking Genomic Selection and Machine-Learning Prediction
+        Models
+Version: 0.1.0
+Authors@R: 
+    person("Muhammad", "Farooqi", email = "mqfarooqi@gmail.com",
+           role = c("aut", "cre"))
+Description: A unified interface to fit, cross-validate and benchmark genomic
+    prediction models from SNP marker data. It implements genomic best linear
+    unbiased prediction (GBLUP) and ridge-regression BLUP in base R, and offers
+    a common interface to machine-learning predictors (elastic net, random
+    forest and gradient boosting) through optional packages, together with a
+    stacked ensemble. Cross-validation uses breeding-relevant schemes and
+    reports prediction accuracy honestly, so models can be compared fairly. The
+    genomic relationship matrix follows VanRaden (2008)
+    <doi:10.3168/jds.2007-0980>; the mixed-model solver follows Endelman (2011)
+    <doi:10.3835/plantgenome2011.08.0024>; the genomic-selection framework
+    follows Meuwissen, Hayes and Goddard (2001) <doi:10.1093/genetics/157.4.1819>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 4.1.0)
+Imports: graphics, stats, withr
+Suggests: rrBLUP, glmnet, ranger, xgboost, testthat (>= 3.0.0), knitr,
+        rmarkdown, spelling
+VignetteBuilder: knitr
+URL: https://github.com/mqfarooqi1/GSbench
+BugReports: https://github.com/mqfarooqi1/GSbench/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-24 13:09:50 UTC; faroo
+Author: Muhammad Farooqi [aut, cre]
+Maintainer: Muhammad Farooqi <mqfarooqi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 11:40:02 UTC

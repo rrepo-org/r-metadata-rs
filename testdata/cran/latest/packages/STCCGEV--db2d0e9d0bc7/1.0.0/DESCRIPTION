@@ -1,0 +1,32 @@
+Package: STCCGEV
+Title: Conditional Copula Model for Crop Yield Forecasting
+Version: 1.0.0
+Authors@R: 
+    c(
+    person("Marie", "Michaelides", email= "marie.michaelides@concordia.ca", role = c("aut")),
+    person("Mélina", "Mailhot", email= "melina.mailhot@concordia.ca", role = c("aut")),
+    person("Yongkun", "Li", email= "yongkun.li@concordia.ca", role = c("aut", "cre"))
+    )
+Description: Provides functions to model and forecast crop yields using a spatial temporal conditional copula approach. 
+    The package incorporates extreme weather covariates and Bayesian Structural Time Series models to analyze crop 
+    yield dependencies across multiple regions. Includes tools for fitting, simulating, and visualizing results. 
+    This method build upon established R packages, including 'Hofert' 'et' 'al'. (2025) <doi:10.32614/CRAN.package.copula>, 
+    'Scott' (2024) <doi:10.32614/CRAN.package.bsts>, and 'Stephenson' 'et' 'al'. (2024) <doi:10.32614/CRAN.package.evd>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: bsts, copula, evd, ggplot2, grDevices, rootSolve, stats, utils
+Depends: R (>= 4.0.0)
+LazyData: true
+LazyDataCompression: xz
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0),
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-26 05:39:16 UTC; liyongkun
+Author: Marie Michaelides [aut],
+  Mélina Mailhot [aut],
+  Yongkun Li [aut, cre]
+Maintainer: Yongkun Li <yongkun.li@concordia.ca>
+Repository: CRAN
+Date/Publication: 2025-03-27 17:30:04 UTC

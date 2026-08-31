@@ -1,0 +1,59 @@
+Package: epiviz
+Title: Data Visualisation Functions for Epidemiological Data Science
+        Products
+Version: 0.1.2
+Authors@R: 
+    c(person(given="Harshana", family="Liyanage", email="harshana.liyanage@ukhsa.gov.uk", role = c("aut","cre"),
+           comment = c(ORCID = "0000-0001-9738-6349")),
+    person(given="James", family="Duke", email="james.duke@ukhsa.gov.uk", role = c("aut")),
+    person(given="Alex", family="Bhattacharya", email="alex.bhattacharya@ukhsa.gov.uk", role = c("aut"),
+           comment = c(ORCID = "0000-0003-3000-2771")),
+    person(given="Liam", family="Fitzpatrick", email="liam.fitzpatrick@ukhsa.gov.uk", role = c("aut")),
+    person(given="James", family="Leatherland", email="james.leatherland@ukhsa.gov.uk", role = c("aut")),
+    person(given="Jordan", family="Worth", email="jordan.worth@ukhsa.gov.uk", role = c("aut")),
+    person(given="Emma", family="Parker", email="emma.k.parker@ukhsa.gov.uk", role = c("aut")),
+    person(given="Jade", family="Talbot", email="Jade.Talbot@ukhsa.gov.uk", role = c("ctb"),
+           comment = c(ORCID = "0000-0001-6460-5170")),
+    person(given="Karen", family="Crawford", email="Karen.Crawford@ukhsa.gov.uk", role = c("ctb")),
+    person(given="Frederick", family="Sloots", email="Frederick.Sloots@ukhsa.gov.uk", role = c("ctb")),
+    person(given="Charlie", family="Turner", email="Charlie.Turner@ukhsa.gov.uk", role = c("ctb"))
+    )
+Description: Tools for making epidemiological reporting easier with consistent 
+    static and dynamic charts and maps. Builds on 'ggplot2' for static 
+    visualizations as described in Wickham (2016) <doi:10.1007/978-3-319-24277-4> 
+    and 'plotly' for interactive visualizations as described in 
+    Sievert (2020) <doi:10.1201/9780429447273>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LazyData: true
+LazyDataCompression: xz
+Suggests: testthat (>= 3.0.0), mockery, withr, yarrr, knitr, rmarkdown,
+        shiny
+Config/testthat/edition: 3
+Imports: grDevices, assertthat, classInt, dplyr, ggplot2, RColorBrewer,
+        plotly, sf, leaflet, htmltools, stringr, scales, tidyr,
+        lubridate, ISOweek, forcats, slider, rlang, ellmer, jsonlite,
+        lifecycle
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+URL: https://github.com/ukhsa-collaboration/epiviz
+BugReports: https://github.com/ukhsa-collaboration/epiviz/issues
+NeedsCompilation: no
+Packaged: 2026-02-28 18:35:19 UTC; Harshana.Liyanage
+Author: Harshana Liyanage [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9738-6349>),
+  James Duke [aut],
+  Alex Bhattacharya [aut] (ORCID:
+    <https://orcid.org/0000-0003-3000-2771>),
+  Liam Fitzpatrick [aut],
+  James Leatherland [aut],
+  Jordan Worth [aut],
+  Emma Parker [aut],
+  Jade Talbot [ctb] (ORCID: <https://orcid.org/0000-0001-6460-5170>),
+  Karen Crawford [ctb],
+  Frederick Sloots [ctb],
+  Charlie Turner [ctb]
+Maintainer: Harshana Liyanage <harshana.liyanage@ukhsa.gov.uk>
+Repository: CRAN
+Date/Publication: 2026-03-05 10:40:02 UTC

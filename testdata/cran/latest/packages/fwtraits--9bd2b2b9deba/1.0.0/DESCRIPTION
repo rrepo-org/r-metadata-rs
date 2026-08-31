@@ -1,0 +1,51 @@
+Package: fwtraits
+Title: Extract Species Ecological Parameters from
+        Www.freshwaterecology.info
+Version: 1.0.0
+Authors@R: c( 
+    person(given = "Anthony", family = "Basooma", email = "anthony.basooma@boku.ac.at", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-8994-9989")),
+    person("Florian", "Borgwardt", role = c("ctb","fnd"), comment = c(ORCID = "0000-0002-8974-7834")),
+    person("Thomas", "Hein", role = c("ctb", "fnd","ths"), comment = c(ORCID = "0000-0002-7767-4607")),
+    person("Sami", "Domisch", role = c("ctb")),
+    person("Merret", "Buurman", role = c("ctb")),
+    person("Vanessa", "Bremerich", role = c("ctb")),
+    person("Sonia Steffany Recinos", "Brizuela", role = c("ctb")),
+    person("Martin", "Tschikof", role = c("ctb")),
+    person("Astrid", "Schmidt-Kloiber", role = c("ctb", "fnd", "dtc"), comment = c(ORCID = "0000-0001-8839-5913"))
+           )
+Description: Support the extraction and seamless integration of species ecological traits or preferences from the www.freshwaterecology.info into several ecological model workflows. During data extraction, different taxonomic levels are acceptable, including species, genus, and family, based on the availability of data in the database. The data is cached after the first search and can be accessed during and after online interactions. Only scientific names are acceptable in the search; local or English names are not allowed. A user API key is required to start using the package.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/AnthonyBasooma/fwtraits,
+        https://anthonybasooma.github.io/fwtraits/,
+        https://github.com/AnthonyBasooma/fwtraits/releases/tag/V1.0.0
+BugReports: https://github.com/AnthonyBasooma/fwtraits/issues
+Depends: R (>= 4.1.0)
+Imports: curl, httr2, jsonlite, methods, utils, rstudioapi, R.cache
+Suggests: ggplot2, knitr (>= 1.48), rmarkdown (>= 2.28), sf, vcr,
+        dplyr, tidytext, testthat (>= 3.0.0), FD, tidyr, tibble, stats,
+        cluster
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-11-06 14:53:10 UTC; anthbasooma
+Author: Anthony Basooma [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8994-9989>),
+  Florian Borgwardt [ctb, fnd] (ORCID:
+    <https://orcid.org/0000-0002-8974-7834>),
+  Thomas Hein [ctb, fnd, ths] (ORCID:
+    <https://orcid.org/0000-0002-7767-4607>),
+  Sami Domisch [ctb],
+  Merret Buurman [ctb],
+  Vanessa Bremerich [ctb],
+  Sonia Steffany Recinos Brizuela [ctb],
+  Martin Tschikof [ctb],
+  Astrid Schmidt-Kloiber [ctb, fnd, dtc] (ORCID:
+    <https://orcid.org/0000-0001-8839-5913>)
+Maintainer: Anthony Basooma <anthony.basooma@boku.ac.at>
+Repository: CRAN
+Date/Publication: 2025-11-11 10:00:16 UTC

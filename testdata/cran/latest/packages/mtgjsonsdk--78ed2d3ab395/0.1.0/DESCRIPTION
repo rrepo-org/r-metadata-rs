@@ -1,0 +1,26 @@
+Package: mtgjsonsdk
+Title: 'DuckDB'-Backed Query Client for 'MTGJSON' Card Data
+Version: 0.1.0
+Authors@R: c(
+    person("Zachary", "Halpern", email = "zach@mtgjson.com", role = c("aut", "cre")),
+    person("Robert", "Pratt", email = "rprat@users.noreply.github.com", role = "aut")
+    )
+Description: Auto-downloads Parquet data from the 'MTGJSON' CDN and exposes the
+    full Magic: The Gathering dataset through R6-based query interfaces backed
+    by 'DuckDB'.
+URL: https://mtgjson.com
+BugReports: https://github.com/mtgjson/mtgjson-sdk-r/issues
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: R6, DBI, duckdb, httr2, jsonlite
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-10 03:02:26 UTC; zach
+Author: Zachary Halpern [aut, cre],
+  Robert Pratt [aut]
+Maintainer: Zachary Halpern <zach@mtgjson.com>
+Repository: CRAN
+Date/Publication: 2026-03-16 16:20:02 UTC

@@ -1,0 +1,38 @@
+Package: diario
+Type: Package
+Title: 'R' Interface to the 'Diariodeobras' Application
+Version: 0.1.2
+Date: 2026-06-25
+Authors@R: c(
+            person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+            person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+            person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"),
+            person("Marcos", "Wasilew", email = "marcos.wasilew@gmail.com", role = "aut"),
+            person("Carlos", "Amorim", email = "carlos.agaf@ufpe.br", role = "aut"),
+            person("Felipe", "Ferreira", email = "felipe.ferreira@semobi.pe.gov.br", role = "aut"),
+            person("Roger", "Azevedo", email = "roger.azevedo@tpfe.com.br", role = "aut")
+            )
+Description: Provides a set of functions for securely storing 'API' tokens and interacting with the <https://diariodeobras.net> system. Includes convenient wrappers around the 'httr2' package to perform authenticated requests, retrieve project details, tasks, reports, and more. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: cli, tibble, httr2, keyring
+Suggests: testthat (>= 3.0.0), httptest2, withr
+URL: https://github.com/StrategicProjects/diario,
+        https://strategicprojects.github.io/diario/
+BugReports: https://github.com/StrategicProjects/diario/issues
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-26 13:30:37 UTC; leite
+Author: Andre Leite [aut, cre],
+  Hugo Vasconcelos [aut],
+  Diogo Bezerra [aut],
+  Marcos Wasilew [aut],
+  Carlos Amorim [aut],
+  Felipe Ferreira [aut],
+  Roger Azevedo [aut]
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-06-26 13:50:02 UTC

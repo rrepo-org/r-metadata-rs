@@ -1,0 +1,35 @@
+Package: RougeLM
+Title: Data Accompanying the Book "The Rogue's Guide to Linear Models"
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Przemyslaw 'Prem'", family="Biecek", email = "przemyslaw.biecek@gmail.com",
+           role = c("aut", "cre")),
+    person("Bit", "Data", role = "aut"),
+    person("Beta", "Data", role = "aut"))
+Description: Datasets and utilities for teaching linear models in the context
+    of the BetaBit universe (StatPunk). The package provides
+    simulated datasets based on the fictional LifeCalc algorithmic scoring
+    system, illustrating concepts such as simple regression, ANOVA, ANCOVA,
+    hierarchical models, multicollinearity, model selection (AIC, BIC), and
+    regularisation (LASSO, Ridge). Each dataset is accompanied by a narrative
+    context connecting statistical methodology to questions of algorithmic
+    fairness and social consequence. 
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: ggplot2, patchwork
+Suggests: MASS, effectsize, segmented, glmnet, car, emmeans, lme4,
+        testthat (>= 3.0.0), knitr, rmarkdown, pkgdown
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+URL: https://github.com/BetaAndBit/RougeLM
+BugReports: https://github.com/BetaAndBit/RougeLM/issues
+NeedsCompilation: no
+Packaged: 2026-07-29 19:17:56 UTC; pbiecek
+Author: Przemyslaw 'Prem' Biecek [aut, cre],
+  Bit Data [aut],
+  Beta Data [aut]
+Maintainer: Przemyslaw 'Prem' Biecek <przemyslaw.biecek@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 16:10:17 UTC

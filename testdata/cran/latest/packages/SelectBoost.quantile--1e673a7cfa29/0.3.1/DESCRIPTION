@@ -1,0 +1,30 @@
+Package: SelectBoost.quantile
+Title: 'SelectBoost'-Style Variable Selection for Quantile Regression
+Date: 2026-04-07
+Version: 0.3.1
+Authors@R: c(
+	person(given = "Frederic", family= "Bertrand", role = c("cre", "aut"), 
+	email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281")))
+Author: Frederic Bertrand [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-0837-8281>)
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
+Description: A 'SelectBoost'-inspired workflow for sparse quantile
+    regression. The package builds correlation neighborhoods, perturbs
+    correlated predictors with a directional sampler inspired by the original
+    'SelectBoost' internals, refits penalized quantile regression models on the
+    perturbed designs, and aggregates variable-selection frequencies across a
+    path of correlation thresholds.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: graphics, movMF, quantreg, stats, utils, withr
+Suggests: knitr, pkgload, rmarkdown, testthat (>= 3.0.0)
+URL: https://fbertran.github.io/SelectBoost.quantile/,
+        https://github.com/fbertran/SelectBoost.quantile
+BugReports: https://github.com/fbertran/SelectBoost.quantile/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-07 10:36:30 UTC; bertran7
+Repository: CRAN
+Date/Publication: 2026-04-13 11:40:08 UTC

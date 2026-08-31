@@ -1,0 +1,38 @@
+Package: bdlnm
+Title: Bayesian Distributed Lag Non-Linear Models (B-DLNM)
+Version: 0.1.1
+Authors@R: c(
+    person(given = "Pau", family = "Satorra", email = "psatorra@igtp.cat", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8144-4089")),
+    person(given = "Marcos", family = "Quijal-Zamorano", email = "marcos.quijal@isglobal.org", role = c("aut")),
+    person(given = "Joan", family = "Ballester", email = "joan.ballester@isglobal.org", role = c("aut")),
+    person(given = "Cristian", family = "Tebé", email = "ctebe@igtp.cat", role = c("ctb")),
+    person(given = "Miguel A.", family = "Martínez-Beneito", email = "miguel.a.martinez@uv.es", role = c("aut", "ths")),
+    person(given = "Marc", family = "Marí-Dell'Olmo", email = "mmari@aspb.cat", role = c("aut", "ths"))
+  )
+Description: A Bayesian framework for estimating distributed lag linear and non-linear models. Model fitting is implemented using Integrated Nested Laplace Approximation (R package 'INLA'), together with prediction and visualization of exposure-lag-response associations. Additional functions allow estimation of optimal exposure values (e.g., minimum mortality temperature) and computation of attributable fractions and numbers. Models with 'crossbasis' or 'onebasis' terms are supported (R package 'dlnm').
+License: GPL (>= 3)
+Config/testthat/edition: 3
+Encoding: UTF-8
+URL: https://github.com/pasahe/bdlnm, https://pasahe.github.io/bdlnm/
+BugReports: https://github.com/pasahe/bdlnm/issues
+Depends: R (>= 4.4)
+LazyData: true
+VignetteBuilder: knitr
+Imports: dlnm, cli, tsModel, crs, graphics, grDevices, stats, utils
+Suggests: INLA (>= 23.4.24), knitr, rmarkdown, testthat (>= 3.0.0), sn,
+        splines, tidyr, lubridate, ggplot2
+Additional_repositories: https://inla.r-inla-download.org/R/stable
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-19 17:11:54 UTC; psatorra
+Author: Pau Satorra [aut, cre] (ORCID: <https://orcid.org/0000-0002-8144-4089>),
+  Marcos Quijal-Zamorano [aut],
+  Joan Ballester [aut],
+  Cristian Tebé [ctb],
+  Miguel A. Martínez-Beneito [aut, ths],
+  Marc Marí-Dell'Olmo [aut, ths]
+Maintainer: Pau Satorra <psatorra@igtp.cat>
+Repository: CRAN
+Date/Publication: 2026-06-19 17:20:02 UTC

@@ -1,0 +1,72 @@
+Package: gtregression
+Type: Package
+Title: Tools for Creating Publication-Ready Regression Tables
+Version: 1.1.0
+Authors@R: c(
+    person(given = "Rubeshkumar", family = "Polani",
+    email = "rubesh@thinkdenominator.com", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0418-7592")),
+    person(given = "Salin K", family = "Eliyas", 
+    email = "salins13@gmail.com", role = "aut", 
+    comment = c(ORCID = "0000-0002-8020-5860")),
+    person(given = "Manikandanesan", family = "Sakthivel", 
+    email = "nesanmbbs@gmail.com", role = "aut", 
+    comment = c(ORCID = "0000-0002-5438-3970")),
+    person(given = "Mogan", family = "Kaviprawin", 
+    email = "moganka1994@gmail.com", role = "aut", 
+    comment = c(ORCID = "0000-0002-1659-059X")),
+    person(given = "Yuvaraj", family = "Krishnamoorthy",
+    email = "yuvaraj@propulevidence.org", role = "aut",
+    comment = c(ORCID = "0000-0003-4688-510X")),
+    person(given = "Marie Gilbert", family = "Majella", 
+    email = "gilbert2691@gmail.com", role = "aut", 
+    comment = c(ORCID = "0000-0003-4036-5162"))
+  )
+Description: 
+  Simplifies regression modeling in R by integrating multiple modeling and summarization
+  tools into a cohesive, user-friendly interface. Designed to be accessible for researchers,
+  particularly those in Low- and Middle-Income Countries (LMIC). Built upon widely accepted 
+  statistical methods, including logistic regression (Hosmer et al. 2013, ISBN:9781118548429), 
+  log-binomial regression (Spiegelman and Hertzmark 2005 <doi:10.1093/aje/kwi188>), 
+  Firth penalized logistic regression (Firth 1993 <doi:10.1093/biomet/80.1.27>),
+  Poisson and robust Poisson regression (Zou 2004 <doi:10.1093/aje/kwh090>), 
+  negative binomial regression (Hilbe 2011, ISBN:9780521179515), Cox proportional
+  hazards regression, parametric survival regression, causal mediation analysis,
+  and linear regression
+  (Kutner et al. 2005, ISBN:9780071122214). Leverages multiple dependencies to ensure 
+  high-quality output and generate reproducible, publication-ready tables in alignment with
+  best practices in epidemiology and applied statistics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: dplyr, risks, purrr, MASS, rlang, stats, lmtest, patchwork,
+        ggplot2, utils, sandwich, tibble, broom, broom.helpers, gt,
+        officer, flextable, scales (>= 1.3.0), forestploter, logistf,
+        survival
+VignetteBuilder: knitr
+Suggests: haven, mlbench (>= 2.1-11), testthat (>= 3.1.5), knitr,
+        rmarkdown, car, forcats, pkgdown, ggtext, shiny, rstudioapi,
+        DT, readxl, rio
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+URL: https://gtregression.thinkdenominator.com/,
+        https://github.com/ThinkDenominator/gtregression
+BugReports: https://github.com/ThinkDenominator/gtregression/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-21 05:27:00 UTC; drrubesh
+Author: Rubeshkumar Polani [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0418-7592>),
+  Salin K Eliyas [aut] (ORCID: <https://orcid.org/0000-0002-8020-5860>),
+  Manikandanesan Sakthivel [aut] (ORCID:
+    <https://orcid.org/0000-0002-5438-3970>),
+  Mogan Kaviprawin [aut] (ORCID: <https://orcid.org/0000-0002-1659-059X>),
+  Yuvaraj Krishnamoorthy [aut] (ORCID:
+    <https://orcid.org/0000-0003-4688-510X>),
+  Marie Gilbert Majella [aut] (ORCID:
+    <https://orcid.org/0000-0003-4036-5162>)
+Maintainer: Rubeshkumar Polani <rubesh@thinkdenominator.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 07:30:02 UTC

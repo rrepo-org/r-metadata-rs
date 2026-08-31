@@ -1,0 +1,33 @@
+Package: ggkodom
+Title: Visualize Individual Longitudinal Trajectories
+Version: 1.0.3
+Authors@R: c(
+    person("Ayoushman", "Bhattacharya", role = "aut"),
+    person("Sayan", "Das", role = "aut"),
+    person("Subrata", "Pal", role = "aut"),
+    person("Subhrajyoty", "Roy", , "subhrajyotyroy@gmail.com", role = c("aut", "cre"))
+  )
+Description: A 'ggplot2'-based toolkit for visualizing individual-level
+    longitudinal trajectories. Creates linear kodom plots, circular kodom
+    plots, heatmaps, and state-ribbon charts for repeated-measures data.
+    Each subject gets its own visual lane with measurements colored by
+    value, revealing patterns across subjects and time. The circular
+    variant resembles the Kodom flower.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Imports: ggplot2 (>= 3.4.0), rlang, scales
+Suggests: testthat (>= 3.0.0), lme4, mgcv, refund, fdapace, patchwork,
+        knitr, rmarkdown, spelling
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-15 21:05:23 UTC; subroy13
+Author: Ayoushman Bhattacharya [aut],
+  Sayan Das [aut],
+  Subrata Pal [aut],
+  Subhrajyoty Roy [aut, cre]
+Maintainer: Subhrajyoty Roy <subhrajyotyroy@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-20 14:30:02 UTC

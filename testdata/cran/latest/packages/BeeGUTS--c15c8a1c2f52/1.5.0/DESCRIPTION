@@ -1,0 +1,62 @@
+Package: BeeGUTS
+Title: General Unified Threshold Model of Survival for Bees using
+        Bayesian Inference
+Version: 1.5.0
+Authors@R: 
+    c(
+    person(given = "Benoit",
+           family = "Goussen",
+           role = c("aut"),
+           email = "benoit.goussen@ibacon.com",
+           comment = c(ORCID = "0000-0001-7204-7981")),
+    person(given = "Liubov",
+           family = "Zakharova",
+           role = c("ctb"),
+           email = "liubov.zakharova@ibacon.com"),
+    person(given = "Carlo",
+           family = "Romoli",
+           role = c("aut", "cre"),
+           email = "carlo.romoli@ibacon.com"),
+    person("Bayer AG",
+           role = c("cph", "fnd")),
+    person("ibacon GmbH",
+           role = "cph")
+     )
+Description: Tools to calibrate, validate, and make predictions with the
+    General Unified Threshold model of Survival adapted for Bee species. The
+    model is presented in the publication from Baas, J., Goussen, B., Miles, M.,
+    Preuss, T.G., Roessing, I. (2022) <doi:10.1002/etc.5423> and 
+    Baas, J., Goussen, B., Taenzler, V., Roeben, V., Miles, M., Preuss, T.G., 
+    van den Berg, S., Roessink, I. (2024) <doi:10.1002/etc.5871>, and is based on the 
+    GUTS framework Jager, T., Albert, C., Preuss, T.G. and Ashauer, R. (2011) 
+    <doi:10.1021/es103092a>.
+    The authors are grateful to Bayer A.G. for its financial support.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.2.3
+Biarch: true
+NeedsCompilation: yes
+Depends: R (>= 3.5.0)
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>=
+        2.26.0), rstantools (>= 2.1.1), data.table, tidyr, ggplot2,
+        cowplot, dplyr, magrittr, utils, gridExtra, odeGUTS, parallel,
+        doParallel, foreach
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.26.0), StanHeaders (>=
+        2.26.0)
+SystemRequirements: GNU make
+URL: https://github.com/ibacon-GmbH-Modelling/BeeGUTS
+BugReports: https://github.com/ibacon-GmbH-Modelling/BeeGUTS/issues
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+Packaged: 2026-01-15 12:02:25 UTC; roc
+Author: Benoit Goussen [aut] (ORCID: <https://orcid.org/0000-0001-7204-7981>),
+  Liubov Zakharova [ctb],
+  Carlo Romoli [aut, cre],
+  Bayer AG [cph, fnd],
+  ibacon GmbH [cph]
+Maintainer: Carlo Romoli <carlo.romoli@ibacon.com>
+Repository: CRAN
+Date/Publication: 2026-01-15 17:40:35 UTC

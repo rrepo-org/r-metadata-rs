@@ -1,0 +1,41 @@
+Package: plotor
+Type: Package
+Title: Odds Ratio Tools for Logistic Regression
+Version: 1.1.0
+Authors@R: 
+  person(
+    'Craig', 'Parylo', 
+    email = 'craig.parylo2@nhs.net', 
+    role = c('aut', 'cre', 'cph'),
+    comment = c(ORCID = '0000-0003-4297-7808')
+  )
+Maintainer: Craig Parylo <craig.parylo2@nhs.net>
+Description: 
+    Produces odds ratio analyses with comprehensive reporting tools. Generates 
+    plots, summary tables, and diagnostic checks for logistic regression models 
+    fitted with 'glm()' using binomial family. Provides visualisation methods, 
+    formatted reporting tables via 'gt', and tools to assess logistic regression 
+    model assumptions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: broom, callr, car, cli, detectseparation, dplyr, forcats,
+        ggplot2 (>= 4.0.0), glue, gt, gtExtras (>= 0.6.1), janitor,
+        prettyunits, purrr, rlang, scales, stats, stringr, tibble,
+        tidyr, tidyselect
+RoxygenNote: 7.3.3
+Suggests: datasets, here, Hmisc, knitr, labelled, magrittr, MASS,
+        medicaldata, NHANES, quarto, R4HCR, rmarkdown, svglite,
+        testthat (>= 3.0.0), vdiffr, webshot2
+VignetteBuilder: knitr, quarto
+URL: https://github.com/craig-parylo/plotor,
+        https://craig-parylo.github.io/plotor/
+BugReports: https://github.com/craig-parylo/plotor/issues
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+Config/Needs/website: quarto
+NeedsCompilation: no
+Packaged: 2026-07-21 07:44:34 UTC; Craig.Parylo
+Author: Craig Parylo [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-4297-7808>)
+Repository: CRAN
+Date/Publication: 2026-07-21 08:30:08 UTC

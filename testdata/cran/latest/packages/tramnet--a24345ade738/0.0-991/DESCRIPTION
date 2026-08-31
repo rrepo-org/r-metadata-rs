@@ -1,0 +1,41 @@
+Package: tramnet
+Title: Penalized Transformation Models
+Version: 0.0-991
+URL: http://ctm.R-forge.R-project.org
+Authors@R: c(person("Lucas", "Kook", role = c("cre", "aut"),
+                    email = "lucasheinrich.kook@gmail.com"),
+             person("Balint", "Tamasi", role = "ctb"),
+             person("Sandra", "Siegfried", role = "ctb"),
+             person("Samuel", "Pawel", role = "ctb"),
+             person("Torsten", "Hothorn", role = "ctb",
+                    email = "Torsten.Hothorn@R-project.org",
+                    comment = c(ORCID = "0000-0001-8301-0471")))
+Description: Partially penalized versions of specific transformation models
+    implemented in package 'mlt'. Available models include a fully parametric version
+    of the Cox model, other parametric survival models (Weibull, etc.), models for
+    binary and ordered categorical variables, normal and transformed-normal (Box-Cox type)
+    linear models, and continuous outcome logistic regression. Hyperparameter tuning
+    is facilitated through model-based optimization functionalities from package 'mlrMBO'.
+    The accompanying vignette describes the methodology used in 'tramnet' in detail.
+    Transformation models and model-based optimization are described in
+    Hothorn et al. (2019) <doi:10.1111/sjos.12291> and
+    Bischl et al. (2016) <doi:10.48550/arXiv.1703.03373>, respectively.
+Depends: R (>= 3.5.0), tram (>= 1.4), CVXR (>= 1.8), mlrMBO (>= 1.1-2)
+Imports: mlt, basefun, sandwich, ParamHelpers, lhs, mlr, smoof, stats
+Suggests: penalized, TH.data, survival, knitr, mlbench, colorspace,
+        mvtnorm, glmnet, trtf, Matrix, lattice, kableExtra, coin, tbm,
+        DiceKriging
+VignetteBuilder: knitr
+Encoding: UTF-8
+License: GPL-2
+NeedsCompilation: no
+RoxygenNote: 7.3.1
+Packaged: 2026-03-10 08:26:20 UTC; lkook
+Author: Lucas Kook [cre, aut],
+  Balint Tamasi [ctb],
+  Sandra Siegfried [ctb],
+  Samuel Pawel [ctb],
+  Torsten Hothorn [ctb] (ORCID: <https://orcid.org/0000-0001-8301-0471>)
+Maintainer: Lucas Kook <lucasheinrich.kook@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-10 09:40:09 UTC

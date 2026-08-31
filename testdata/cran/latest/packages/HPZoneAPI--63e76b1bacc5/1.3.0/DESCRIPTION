@@ -1,0 +1,23 @@
+Package: HPZoneAPI
+Type: Package
+Title: 'HPZone' API Interface
+Version: 1.3.0
+Authors@R: person("Aart", "Dijkstra", email="a.dijkstra@ggdnog.nl", role=c("aut", "cre", "cph")) 
+Maintainer: Aart Dijkstra <a.dijkstra@ggdnog.nl>
+Description: Package that simplifies the use of the 'HPZone' API. Most of the annoying and labor-intensive parts of the interface are handled by wrapper functions. Note that the API and its details are not publicly available. Information can be found at <https://www.ggdghorkennisnet.nl/groep/726-platform-infectieziekte-epidemiologen/documenten/map/9609> for those with access. 
+URL: https://github.com/ggdatascience/HPZoneAPI
+BugReports: https://github.com/ggdatascience/HPZoneAPI/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: dplyr, httr2, jsonlite, keyring, lubridate, magrittr, readxl,
+        rstudioapi, safer, stringr
+Depends: R (>= 2.10)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-09 10:07:26 UTC; a.dijkstra
+Author: Aart Dijkstra [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2026-04-09 10:30:02 UTC

@@ -1,0 +1,47 @@
+Package: semTests
+Type: Package
+Title: Robust Test Statistics for Structural Equation Models
+Description: Computes robust p-values for overall fit and nested comparisons of
+    structural equation models fitted with 'lavaan'. Implements penalized
+    eigenvalue block averaging and penalized regression (Foldnes, Moss,
+    Grønneberg, 2025) <doi:10.1080/10705511.2024.2372028>, including their
+    extension to nested models (Foldnes, Grønneberg, Moss, 2026)
+    <doi:10.3758/s13428-026-02968-4>, alongside familiar corrections such as
+    Satorra-Bentler. Supported settings include complete-data ML, GLS, and ULS,
+    categorical DWLS and ULS, and full-information maximum likelihood with one
+    or several groups.
+Version: 1.0.0
+Authors@R: c(
+    person(given="Jonas", 
+           family="Moss",
+           email="jonas.moss.statistics@gmail.com", 
+           role=c("aut", "cre"), 
+           comment = c(ORCID = "0000-0002-6876-6964")), 
+    person(given="Njål", 
+           family="Foldnes", 
+           role = "ctb",
+           email="njalfoldnes@gmail.com",
+           comment = c(ORCID="0000-0001-6889-6067")),
+    person(given="Steffen",
+           family="Grønneberg", 
+           email="steffeng@gmail.com",
+           role = "ctb", 
+           comment = c(ORCID="0000-0003-2785-6530")))
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/JonasMoss/semTests
+Depends: R (>= 3.5.0)
+Imports: lavaan (>= 0.7-2), methods
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-19 11:49:01 UTC; jonas
+Author: Jonas Moss [aut, cre] (ORCID: <https://orcid.org/0000-0002-6876-6964>),
+  Njål Foldnes [ctb] (ORCID: <https://orcid.org/0000-0001-6889-6067>),
+  Steffen Grønneberg [ctb] (ORCID:
+    <https://orcid.org/0000-0003-2785-6530>)
+Maintainer: Jonas Moss <jonas.moss.statistics@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-19 15:40:02 UTC

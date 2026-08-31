@@ -1,0 +1,63 @@
+Package: mditools
+Type: Package
+Title: Microdata Infrastructure Tools for Firm-Level Microdata Research
+Version: 0.1.0
+License: GPL-3
+URL: https://github.com/Secretariat-CompNet/mditools
+BugReports: https://github.com/Secretariat-CompNet/mditools/issues
+Authors@R: c(
+    person("Daniele", "Aglio", role = "aut"),
+    person("Eric", "Bartelsman", role = "aut"),
+    person("Mirja", "Hälbig", role = "aut"),
+    person("Marco", "Miorandi", role = "aut"),
+    person("Johanna", "Weiss", role = c("aut", "cre"), email = "johanna.weiss@iwhesl.onmicrosoft.com"),
+    person("Alessandro", "Zona Mattioli", role = "aut"),
+    person("Julián", "Díaz-Acosta", role = "ctb"),
+    person("Alberto", "Ferreira", role = "ctb"),
+    person("Javier", "Miranda", role = "ctb"),
+    person("Marcelo Piemonte", "Ribeiro", role = "ctb"),
+    person("Reetuparna", "Vishwanath", role = "ctb"),
+    person("Chengzi", "Yi", role = "ctb")
+  )
+Description: Supports the full analysis pipeline for researchers working with
+    firm-level microdata. Provides data tools for panel preparation (import,
+    outlier detection, classification harmonization), analytical methods
+    (production function estimation, capital stock measurement, markups,
+    intensity measures, distributions, regression, clustering), and disclosure
+    tools for tagging outputs with dominance and observation counts before
+    aggregation and publication.
+    Production function estimation implements methods by Ackerberg, Caves and
+    Frazer (2015) <doi:10.3982/ECTA13408>, Levinsohn and Petrin (2003)
+    <doi:10.1111/1467-937X.00246>, Wooldridge (2009)
+    <doi:10.1016/j.econlet.2009.04.026>, Petrin, Poi and Levinsohn (2004)
+    <doi:10.1177/1536867X0400400202>, and Arellano and Bond (1991)
+    <doi:10.2307/2297968> with the "too many instruments" correction by
+    Roodman (2009) <doi:10.1111/j.1468-0084.2008.00542.x>. Markup estimation
+    follows De Loecker and Warzynski (2012) <doi:10.1257/aer.102.6.2437>.
+    Cost-share production function estimation follows Basu and Fernald (1997)
+    <doi:10.1086/262073>. Capital stock estimation via the Perpetual Inventory
+    Method follows OECD (2009) <doi:10.1787/9789264068476-en>.
+Encoding: UTF-8
+Imports: data.table, fixest, haven, readxl, Matrix, cluster, dbscan,
+        mclust, stats, utils, graphics, grDevices
+Suggests: testthat (>= 3.0.0), arrow
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-19 16:23:58 UTC; johanna
+Author: Daniele Aglio [aut],
+  Eric Bartelsman [aut],
+  Mirja Hälbig [aut],
+  Marco Miorandi [aut],
+  Johanna Weiss [aut, cre],
+  Alessandro Zona Mattioli [aut],
+  Julián Díaz-Acosta [ctb],
+  Alberto Ferreira [ctb],
+  Javier Miranda [ctb],
+  Marcelo Piemonte Ribeiro [ctb],
+  Reetuparna Vishwanath [ctb],
+  Chengzi Yi [ctb]
+Maintainer: Johanna Weiss <johanna.weiss@iwhesl.onmicrosoft.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 14:50:02 UTC

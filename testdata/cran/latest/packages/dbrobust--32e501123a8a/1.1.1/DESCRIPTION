@@ -1,0 +1,28 @@
+Package: dbrobust
+Type: Package
+Title: Robust Distance-Based Visualization and Analysis of Mixed-Type
+        Data
+Version: 1.1.1
+Date: 2026-07-28
+Authors@R: c(person("Marcos","Álvarez",email="marcoalv@pa.uc3m.es",role="aut"),person("Eva","Boj",email="evaboj@ub.edu",role=c("aut","cre")),person("Aurea","Grané",email="agrane@est-econ.uc3m.es",role="aut"))
+Author: Marcos Álvarez [aut],
+  Eva Boj [aut, cre],
+  Aurea Grané [aut]
+Maintainer: Eva Boj <evaboj@ub.edu>
+Description: Robust distance-based methods applied to matrices and data frames, producing distance matrices that can be used as input for various visualization techniques such as graphs, heatmaps, or multidimensional scaling configurations. See Boj and Grané (2024) <doi:10.1016/j.seps.2024.101992>, Boj et al. (2026) <doi:10.1007/s10260-026-00860-1>, and Grané et al. (2026) <doi:10.1007/s10182-026-00565-6>. 
+License: GPL-3
+Repository: CRAN
+Encoding: UTF-8
+Imports: MASS, proxy, ade4, Rdpack, dbstats, StatMatch, RColorBrewer,
+        pheatmap, qgraph, GGally, ggplot2, vegan, RSpectra, cluster,
+        Rcpp
+RdMacros: Rdpack
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-28 07:21:06 UTC; evaboj
+LinkingTo: Rcpp, RcppArmadillo
+Date/Publication: 2026-07-28 09:30:10 UTC

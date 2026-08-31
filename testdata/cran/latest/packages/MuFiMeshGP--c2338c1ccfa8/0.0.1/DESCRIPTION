@@ -1,0 +1,26 @@
+Package: MuFiMeshGP
+Type: Package
+Title: Multi-Fidelity Emulator for Computer Experiments with Tunable
+        Fidelity Levels
+Version: 0.0.1
+Date: 2025-08-11
+Authors@R: c(
+    person(family = "Boutelet", given = "Romain", email = "boutelet@msu.edu", role = c("aut", "cre")),
+    person(family = "Sung", given = "Chih-Li", email = "sungchih@msu.edu", role = "aut"))
+Description: Multi-Fidelity emulator for data from computer simulations of the
+    same underlying system but at different input locations and fidelity level,
+    where both the input locations and fidelity level can be continuous. Active
+    Learning can be performed with an implementation of the Integrated Mean Square 
+    Prediction Error (IMSPE) criterion developed by Boutelet and Sung (2025, <doi:10.48550/arXiv.2503.23158>).
+License: LGPL (>= 2)
+Encoding: UTF-8
+Imports: lhs, parallel, methods, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-08-26 15:22:26 UTC; rboutelet
+Author: Romain Boutelet [aut, cre],
+  Chih-Li Sung [aut]
+Maintainer: Romain Boutelet <boutelet@msu.edu>
+Repository: CRAN
+Date/Publication: 2025-09-01 09:50:16 UTC

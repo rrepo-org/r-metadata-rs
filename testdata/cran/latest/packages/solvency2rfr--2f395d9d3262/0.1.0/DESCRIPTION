@@ -1,0 +1,28 @@
+Package: solvency2rfr
+Title: 'EIOPA' Risk-Free Interest Rate Term Structures for Solvency II
+Version: 0.1.0
+Authors@R: person("Jan-Hendrik", "Weinert", email = "janhendrikweinert@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0009-0005-2071-6502"))
+Description: Downloads and parses the risk-free interest rate ('RFR') term
+    structures published monthly by the European Insurance and Occupational
+    Pensions Authority ('EIOPA') for Solvency II calculations. Provides a
+    tidy data frame interface to the data, accessed via the official 'EIOPA'
+    feed at <https://www.eiopa.europa.eu/feed/53/rss_en>.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 8.0.0
+URL: https://github.com/JanWein/solvency2rfr
+BugReports: https://github.com/JanWein/solvency2rfr/issues
+Imports: httr2 (>= 1.0.0), readxl (>= 1.4.0), tibble (>= 3.2.0), xml2
+        (>= 1.3.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-11 07:54:25 UTC; 1003177
+Author: Jan-Hendrik Weinert [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-2071-6502>)
+Maintainer: Jan-Hendrik Weinert <janhendrikweinert@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-14 09:50:06 UTC

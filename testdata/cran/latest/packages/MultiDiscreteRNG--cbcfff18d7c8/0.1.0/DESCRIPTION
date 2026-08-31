@@ -1,0 +1,31 @@
+Package: MultiDiscreteRNG
+Type: Package
+Title: Generate Multivariate Discrete Data
+Version: 0.1.0
+Authors@R: c(person(given = "Chak Kwong (Tommy)",
+                        family = "Cheng",
+                        email  = "ccheng46@uic.edu",
+                        role = c("aut", "cre", "cph"), 
+                        comment = c(ORCID = "0009-0009-9395-5474")), 
+            person(given = "Hakan",
+                        family = "Demirtas",
+                        email  = "demirtas@uic.edu",
+                        role = "aut", 
+                        comment = c(ORCID = "0000-0003-2482-703X")))
+Maintainer: Chak Kwong (Tommy) Cheng <ccheng46@uic.edu>
+Description: Generate multivariate discrete data with generalized Poisson, negative binomial and binomial marginal distributions using user-specified distribution parameters and a target correlation matrix. The method is described in Cheng and Demirtas (2026) <doi:10.48550/arXiv.2602.07707>.
+License: GPL-3
+Encoding: UTF-8
+Imports: GenOrd, Matrix, MultiOrd, matrixcalc, mvtnorm
+URL: https://github.com/ckchengtommy/MultiDiscreteRNG
+BugReports: https://github.com/ckchengtommy/MultiDiscreteRNG/issues
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-20 14:02:43 UTC; tommycheng
+Author: Chak Kwong (Tommy) Cheng [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0009-9395-5474>),
+  Hakan Demirtas [aut] (ORCID: <https://orcid.org/0000-0003-2482-703X>)
+Repository: CRAN
+Date/Publication: 2026-02-25 10:20:19 UTC

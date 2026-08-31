@@ -1,0 +1,38 @@
+Package: ROCnGO
+Title: Fast Analysis of ROC Curves
+Version: 0.1.0
+Authors@R: c(
+    person("Pablo", "Navarro", email = "pablo.navarrocarpio@gmail.com", role = c("aut", "cre", "cph")),
+    person("Juana-María", "Vivo", role = c("aut")),
+    person("Manuel", "Franco", role = c("aut")))
+Description: A toolkit for analyzing classifier performance by using receiver
+    operating characteristic (ROC) curves. Performance may be assessed on
+    a single classifier or multiple ones simultaneously, making it suitable for
+    comparisons. In addition, different metrics allow the evaluation of local
+    performance when working within restricted ranges of sensitivity and
+    specificity. For details on the different implementations, see
+    McClish D. K. (1989) <doi:10.1177/0272989X8900900307>,
+    Vivo J.-M., Franco M. and Vicari D. (2018) <doi:10.1007/S11634-017-0295-9>,
+    Jiang Y., et al (1996) <doi:10.1148/radiology.201.3.8939225>,
+    Franco M. and Vivo J.-M. (2021) <doi:10.3390/math9212826> and
+    Carrington, André M., et al (2020) <doi: 10.1186/s12911-019-1014-6>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: cli, dplyr, forcats, ggplot2, magrittr, purrr, rlang, stringr,
+        SummarizedExperiment, tibble, tidyr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://pablopnc.github.io/ROCnGO/,
+        https://github.com/pabloPNC/ROCnGO
+Depends: R (>= 4.1.0)
+BugReports: https://github.com/pabloPNC/ROCnGO/issues
+NeedsCompilation: no
+Packaged: 2025-07-14 16:59:55 UTC; infer
+Author: Pablo Navarro [aut, cre, cph],
+  Juana-María Vivo [aut],
+  Manuel Franco [aut]
+Maintainer: Pablo Navarro <pablo.navarrocarpio@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-17 20:30:18 UTC

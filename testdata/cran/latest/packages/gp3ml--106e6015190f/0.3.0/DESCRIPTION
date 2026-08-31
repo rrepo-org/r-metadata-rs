@@ -1,0 +1,48 @@
+Package: gp3ml
+Type: Package
+Title: Governance-First Predictive Modelling for 'Gazepoint' Research
+Version: 0.3.0
+Authors@R: person(
+    given = "Stefanos",
+    family = "Balaskas",
+    email = "s.balaskas@ac.upatras.gr",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-2444-9796")
+  )
+Description: Provides governance-first infrastructure for leakage-resistant
+    predictive modelling and validation using 'Gazepoint'-derived research
+    data. Supports explicit task and role declarations, feature-provenance
+    manifests, group-aware holdout splitting and repeated resampling,
+    repository-aware fold evaluation, explicit governed tuning, nested grouped
+    resampling, fold-local preprocessing, discrimination and calibration
+    metrics, target-aligned uncertainty, external-validation and
+    transportability reports, prediction-to-decision governance, target-aware
+    conformal prediction, dataset-shift auditing, locked analysis plans,
+    portable model artifacts, robustness diagnostics, environment provenance,
+    research-object export, model cards, and reproducibility evidence.
+    Intended only for explicitly observed, non-sensitive outcomes and declared
+    scientific purposes. Use is prohibited for person identification,
+    biometric authentication, health or protected-attribute inference, and
+    direct or indirect inference of emotion, stress, personality, deception,
+    cognition, comprehension, intent, or other mental states.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Suggests: bundle, callr, openssl, renv, jsonlite, keras3, knitr, nnet,
+        pkgdown, ranger, rmarkdown, testthat (>= 3.0.0), xgboost
+VignetteBuilder: knitr
+RoxygenNote: 8.0.0
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+URL: https://stefanosbalaskas.github.io/gp3ml/,
+        https://CRAN.R-project.org/package=gp3ml,
+        https://github.com/stefanosbalaskas/gp3ml
+BugReports: https://github.com/stefanosbalaskas/gp3ml/issues
+NeedsCompilation: no
+Packaged: 2026-08-09 21:06:41 UTC; Stefanos-PC
+Author: Stefanos Balaskas [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2444-9796>)
+Maintainer: Stefanos Balaskas <s.balaskas@ac.upatras.gr>
+Repository: CRAN
+Date/Publication: 2026-08-23 10:40:34 UTC

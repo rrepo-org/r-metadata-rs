@@ -1,0 +1,29 @@
+Package: geoprofiler
+Title: Perpendicular Line Transects for Geosciences
+Version: 0.0.4
+Authors@R: 
+    person("Tobias", "Stephan", , "tobias.stephan1@yahoo.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9290-014X"))
+Description: Toolset to create perpendicular profile graphs and swath
+    profiles. Method are based on coordinate rotation algorithm by
+    Schaeben et al. (2024) <doi:10.1002/mma.9823>.
+License: GPL (>= 3)
+URL: https://tobiste.github.io/geoprofiler/
+BugReports: https://github.com/tobiste/geoprofiler/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, lifecycle, sf, tectonicr, terra, units
+Suggests: ggplot2, knitr, rmarkdown, spelling, testthat (>= 3.0.0),
+        tidyterra
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-28 19:56:38 UTC; tstephan
+Author: Tobias Stephan [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9290-014X>)
+Maintainer: Tobias Stephan <tobias.stephan1@yahoo.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 20:40:02 UTC

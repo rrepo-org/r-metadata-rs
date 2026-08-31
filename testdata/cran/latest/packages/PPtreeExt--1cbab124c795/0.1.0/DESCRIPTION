@@ -1,0 +1,42 @@
+Package: PPtreeExt
+Type: Package
+Version: 0.1.0
+Title: Projection Pursuit Classification Tree Extensions
+Authors@R: 
+  c(person(given = "Natalia",
+           family = "da Silva",
+           role = c("aut", "cre"),
+           email = "natalia.dasilva@fcea.edu.uy",
+           comment = c(ORCID = "https://orcid.org/0000-0002-6031-7451")),
+            person(given = "Dianne",
+           family = "Cook",
+           role = "aut",
+           email = "dicook@monash.edu"
+           ),
+    person(given = "Eun-Kyung",
+           family = "Lee",
+           role = "aut",
+           email = "lee.eunk@gmail.com"
+           )
+   )
+Maintainer: Natalia da Silva <natalia.dasilva@fcea.edu.uy>
+Description: Implements extensions to the projection pursuit tree algorithm for supervised classification, see Lee, Y. (2013), <doi:10.1214/13-EJS810> and Lee, E-K. (2018) <doi:10.18637/jss.v083.i08>. The algorithm is changed in two ways: improving prediction boundaries by modifying the choice of split points-through class subsetting; and increasing flexibility by allowing multiple splits per group. 
+License: GPL (>= 2)
+URL: https://github.com/natydasilva/PPtreeExt
+LazyData: yes
+Depends: R (>= 4.3.0)
+Imports: Rcpp (>= 1.1.0), ggplot2, shiny, MASS, gridExtra, MixSim,
+        PPtreeViz
+Suggests: knitr, randomForest, rpart, GGally, RColorBrewer, roxygen2
+        (>= 7.3.0), rmarkdown, rsample
+Encoding: UTF-8
+LinkingTo: Rcpp,RcppArmadillo
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-02-03 16:44:46 UTC; nataliadasilva
+Author: Natalia da Silva [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6031-7451>),
+  Dianne Cook [aut],
+  Eun-Kyung Lee [aut]
+Repository: CRAN
+Date/Publication: 2026-02-06 14:20:18 UTC

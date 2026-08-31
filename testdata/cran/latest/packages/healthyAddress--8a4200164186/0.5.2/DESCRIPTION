@@ -1,0 +1,32 @@
+Package: healthyAddress
+Title: Convert Addresses to Standard Inputs
+Version: 0.5.2
+Authors@R: 
+    person(given = "Hugh",
+           family = "Parsonage",
+           role = c("aut", "cre"),
+           email = "hugh.parsonage@gmail.com")
+Description: Efficient tools for parsing and standardizing Australian 
+    addresses from textual data. It utilizes optimized algorithms to accurately identify and 
+    extract components of addresses, such as street names, types, and postcodes, especially  
+    for large batched data in contexts where sending addresses to internet services may be 
+    slow or inappropriate. The core functionality is built on fast string processing techniques 
+    to handle variations in address formats and abbreviations commonly found in Australian 
+    address data. Designed for data scientists, urban planners, and logistics analysts, the 
+    package facilitates the cleaning and normalization of address information, supporting 
+    better data integration and analysis in urban studies, geography, and related fields.
+License: GPL-2
+Encoding: UTF-8
+URL: https://github.com/HughParsonage/healthyAddress
+BugReports: https://github.com/HughParsonage/healthyAddress/issues
+Imports: data.table, fastmatch, fst, hutils, hutilscpp, magrittr, qs2,
+        utils
+Suggests: tinytest
+Depends: R (>= 4.1.0)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-20 13:18:49 UTC; hughp
+Author: Hugh Parsonage [aut, cre]
+Maintainer: Hugh Parsonage <hugh.parsonage@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 06:00:18 UTC

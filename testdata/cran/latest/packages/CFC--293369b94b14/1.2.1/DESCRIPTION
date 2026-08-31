@@ -1,0 +1,26 @@
+Package: CFC
+Type: Package
+Title: Cause-Specific Framework for Competing-Risk Analysis
+Version: 1.2.1
+Date: 2025-09-23
+Authors@R: c(person(given = c("Mansour", "T.A."),
+                        family = "Sharabiani",
+                        role = "aut"),
+                 person(given = c("Alireza", "S."),
+                        family = "Mahani",
+                        role = c("aut", "cre"),
+                        email = "alireza.s.mahani@gmail.com"))
+Description: Numerical integration of cause-specific survival curves to arrive at cause-specific cumulative incidence functions,
+    with three usage modes: 1) Convenient API for parametric survival regression followed by competing-risk analysis, 2) API for
+    CFC, accepting user-specified survival functions in R, and 3) Same as 2, but accepting survival functions in C++. For 
+    mathematical details and software tutorial, see Mahani and Sharabiani (2019) <DOI:10.18637/jss.v089.i09>. 
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.1), abind, survival, doParallel, foreach
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+NeedsCompilation: yes
+Packaged: 2025-09-24 04:31:26 UTC; root
+Author: Mansour T.A. Sharabiani [aut],
+  Alireza S. Mahani [aut, cre]
+Maintainer: Alireza S. Mahani <alireza.s.mahani@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-24 05:11:41 UTC

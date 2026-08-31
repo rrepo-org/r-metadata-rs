@@ -1,0 +1,30 @@
+Package: heartbeatr
+Type: Package
+Title: A Workflow to Process Data Collected with PULSE Systems
+Version: 1.0.0
+Authors@R: c(
+    person("Rui", "Seabra", , "ruisea@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0240-3992")),
+    person("Fernando", "Lima", , "fplima@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0001-9575-9834"))
+           )
+Description: Given one or multiple paths to files produced by a PULSE multi-channel or a PULSE one-channel system (<https://electricblue.eu/pulse>) from a single experiment: [1] check pulse files for inconsistencies and read/merge all data, [2] split across time windows, [3] interpolate and smooth to optimize the dataset, [4] compute the heart rate frequency for each channel/window, and [5] facilitate quality control, summarising and plotting.
+    Heart rate frequency is calculated using the Automatic Multi-scale Peak Detection algorithm proposed by Felix Scholkmann and team. For more details see Scholkmann et al (2012) <doi:10.3390/a5040588>. Check original code at <https://github.com/ig248/pyampd>.
+    ElectricBlue is a non-profit technology transfer startup creating research-oriented solutions for the scientific community (<https://electricblue.eu>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: av, cli, dplyr, ggplot2, lubridate, magrittr, purrr, readr,
+        stringr, tibble, tidyr, transformr
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-09-14 09:30:35 UTC; ruiseabra
+Author: Rui Seabra [aut, cre] (ORCID: <https://orcid.org/0000-0002-0240-3992>),
+  Fernando Lima [aut] (ORCID: <https://orcid.org/0000-0001-9575-9834>)
+Maintainer: Rui Seabra <ruisea@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-18 09:00:02 UTC

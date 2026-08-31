@@ -1,0 +1,22 @@
+Package: inteq
+Type: Package
+Title: Numerical Solution of Integral Equations
+Version: 1.1
+Authors@R: c(person("Mark", "Clements", role = c("aut", "cre"),
+		     email = "mark.clements@ki.se"),
+	     person("Aaron", "Jehle", role="aut"),
+	     person("Matthew", "Thomas", role="ctb", email="mthomas@ftc.gov"))
+Description: An R implementation of Matthew Thomas's 'Python' library 'inteq'. First, this solves Fredholm integral equations of the first kind ($f(s) = \int_a^b K(s, y) g(y) dy$) using methods described by Twomey (1963) <doi:10.1145/321150.321157>. Second, this solves Volterra integral equations of the first kind ($f(s) = \int_0^s K(s,y) g(t) dt$) using methods from Betto and Thomas (2021) <doi:10.48550/arXiv.2106.08496>. Third, this solves Voltera integral equations of the second kind ($g(s) = f(s) + \int_a^s K(s,y) g(y) dy$) using methods from Linz (1969) <doi:10.1137/0706034>.
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-04-25 13:40:04 UTC; marcle
+Author: Mark Clements [aut, cre],
+  Aaron Jehle [aut],
+  Matthew Thomas [ctb]
+Maintainer: Mark Clements <mark.clements@ki.se>
+Repository: CRAN
+Date/Publication: 2026-04-25 14:00:02 UTC

@@ -1,0 +1,34 @@
+Package: secrfunc
+Type: Package
+Title: Helper Functions for Package 'secr'
+Version: 1.1.4
+Date: 2026-08-02
+Description: Functions are provided for internal use by the spatial 
+  capture-recapture package 'secr' (from version 5.4.0). The idea is to speed up 
+  the installation of 'secr', and possibly reduce its size. Initially the functions 
+  are those for area and transect search that use numerical integration code from 
+  'RcppNumerical' and 'RcppEigen'. The functions are not intended to be user-friendly 
+  and require considerable preprocessing of data.
+Authors@R: c(person("Murray", "Efford", 
+    email = "murray.efford@otago.ac.nz", 
+    role = c("aut","cre"), 
+    comment = c(ORCID = "0000-0001-5231-5184")),
+    person("Philipp", "Jund", 
+    role = "ctb",
+    comment = "(faster transect search and spacing)"))
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 0.12.14), RcppNumerical, RcppParallel (>= 5.1.1)
+Suggests: knitr, rmarkdown, testthat
+LinkingTo: BH, Rcpp, RcppEigen, RcppNumerical, RcppParallel
+License: GPL (>= 2)
+SystemRequirements: GNU make
+URL: https://www.otago.ac.nz/density/
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2026-08-02 04:23:29 UTC; murra
+Author: Murray Efford [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5231-5184>),
+  Philipp Jund [ctb] ((faster transect search and spacing))
+Maintainer: Murray Efford <murray.efford@otago.ac.nz>
+Repository: CRAN
+Date/Publication: 2026-08-04 07:30:02 UTC

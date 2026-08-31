@@ -1,0 +1,42 @@
+Package: minimalistGODB
+Version: 1.1.0
+Date: 2025-05-04
+Title: Build a Minimalist Gene Ontology (GO) Database (GODB)
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Author: Barry Zeeberg [aut, cre]
+Depends: R (>= 4.2.0)
+LazyData: true
+LazyDataCompression: xz
+Description: Normally building a GODB is fairly complicated, involving downloading 
+ multiple database files and using these to build e.g. a 'mySQL' database. 
+ Accessing this database is also complicated, involving an intimate knowledge
+ of the database in order to construct reliable queries.
+ Here we have a more modest goal, generating GOGOA3, which is a stripped down
+ version of the GODB that 
+ was originally restricted to human genes as designated by the HUGO Gene Nomenclature
+ Committee (HGNC) (see <https://geneontology.org/>). I have now added about two dozen
+ additional species, namely all species represented on the Gene Ontology
+ download page <https://current.geneontology.org/products/pages/downloads.html>.
+ This covers most of the model organisms that are commonly used in bio-medical
+ and basic research (assuming that anyone still has a grant to do such research).
+ This can be built in a matter of seconds from 2 easily
+ downloaded files (see <https://current.geneontology.org/products/pages/downloads.html>
+ and <https://geneontology.org/docs/download-ontology/>), and it can be queried by e.g.
+ w<-which(GOGOA3[,"HGNC"] %in% hgncList) where GOGOA3
+ is a matrix representing the minimalist GODB and hgncList is a list of
+ gene identifiers. This database will be used in my upcoming package 'GoMiner'
+ which is based on my previous publication (see Zeeberg, B.R., Feng, W., Wang, G. et al. (2003)<doi:10.1186/gb-2003-4-4-r28>).
+ Relevant .RData files are available from GitHub (<https://github.com/barryzee/GO/tree/main/databases>).
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-05-04 13:35:56 UTC; barryzeeberg
+Repository: CRAN
+Date/Publication: 2025-05-04 14:00:02 UTC

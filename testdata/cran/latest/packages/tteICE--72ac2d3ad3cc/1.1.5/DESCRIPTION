@@ -1,0 +1,31 @@
+Package: tteICE
+Type: Package
+Title: Treatment Effect Estimation for Time-to-Event Data with
+        Intercurrent Events
+Version: 1.1.5
+Author: Yuhao Deng [aut],
+  Yi Zhou [cre]
+Maintainer: Yi Zhou <yzhou@pku.edu.cn>
+Authors@R: c(person(given = "Yuhao",
+                      family = "Deng",
+                      role = "aut",
+                      email = "dengyuhao@pku.edu.cn"),
+               person(given = "Yi",
+                      family = "Zhou",
+                      role = "cre",
+                      email = "yzhou@pku.edu.cn"))
+Description: Analysis of treatment effects in clinical trials with time-to-event outcomes is complicated by intercurrent events. This package implements methods for estimating and inferring the cumulative incidence functions for time-to-event (TTE) outcomes with intercurrent events (ICE) under the five strategies outlined in the ICH E9 (R1) addendum, see Deng (2025) <doi:10.1002/sim.70091>. This package can be used for analyzing data from both randomized controlled trials and observational studies. In general, the data involve a primary outcome event and, potentially, an intercurrent event. Two data structures are allowed: competing risks, where only the time to the first event is recorded, and semicompeting risks, where the times to both the primary outcome event and intercurrent event (or censoring) are recorded. For estimation methods, users can choose nonparametric estimation (which does not use covariates) and semiparametrically efficient estimation.
+URL: https://github.com/mephas/tteICE, https://mephas.github.io/tteICE/
+BugReports: https://github.com/mephas/tteICE/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: True
+Imports: cmprsk, MASS, shiny, shinythemes, shinyWidgets, DT, psych,
+        lifecycle
+Depends: R (>= 3.5), survival (>= 3.8-6)
+Suggests: knitr, rmarkdown
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-17 06:00:12 UTC; zhouy
+Repository: CRAN
+Date/Publication: 2026-08-20 09:50:02 UTC

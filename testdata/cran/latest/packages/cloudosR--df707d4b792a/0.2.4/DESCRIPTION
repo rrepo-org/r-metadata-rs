@@ -1,0 +1,24 @@
+Package: cloudosR
+Type: Package
+Title: 'Lifebit' Platform 'API' Client
+Version: 0.2.4
+Authors@R: person("Leila Mansouri", email = "leila.mansouri@lifebit.ai", role = c("aut", "cre"))
+Description: Interacts with the 'Lifebit' Platform Cohort Browser 'API'
+    <https://cloudos.lifebit.ai>. Enables schema discovery, table exploration,
+    and read-only 'SQL' query execution with policy-aware behavior and team-based
+    access control for cohort data analysis. Requires bastion-enabled workspaces
+    for 'API' access.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: httr2 (>= 1.1.0), jsonlite
+Suggests: testthat (>= 3.1.7), withr, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-28 08:29:05 UTC; leilamansouri
+Author: Leila Mansouri [aut, cre]
+Maintainer: Leila Mansouri <leila.mansouri@lifebit.ai>
+Repository: CRAN
+Date/Publication: 2026-08-28 09:00:02 UTC

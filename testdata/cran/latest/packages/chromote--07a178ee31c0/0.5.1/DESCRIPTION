@@ -1,0 +1,40 @@
+Package: chromote
+Title: Headless Chrome Web Browser Interface
+Version: 0.5.1
+Authors@R: c(
+    person("Garrick", "Aden-Buie", , "garrick@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7111-0077")),
+    person("Winston", "Chang", , "winston@posit.co", role = "aut"),
+    person("Barret", "Schloerke", , "barret@posit.co", role = "aut",
+           comment = c(ORCID = "0000-0001-9986-114X")),
+    person("Posit Software, PBC", role = c("cph", "fnd"), comment = c(ROR = "03wc8by49"))
+  )
+Description: An implementation of the 'Chrome DevTools Protocol', for
+    controlling a headless Chrome web browser.
+License: MIT + file LICENSE
+URL: https://rstudio.github.io/chromote/,
+        https://github.com/rstudio/chromote
+BugReports: https://github.com/rstudio/chromote/issues
+Imports: cli, curl, fastmap, jsonlite, later (>= 1.1.0), magrittr,
+        processx, promises (>= 1.1.1), R6, rlang (>= 1.1.0), utils,
+        websocket (>= 1.2.0), withr, zip
+Suggests: knitr, rmarkdown, showimage, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/Needs/website: r-lib/pkgdown, rstudio/bslib
+Config/testthat/edition: 3
+Config/testthat/parallel: FALSE
+Config/testthat/start-first: chromote_session
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+SystemRequirements: Google Chrome or other Chromium-based browser.
+        chromium: chromium (rpm) or chromium-browser (deb)
+NeedsCompilation: no
+Packaged: 2025-04-24 03:18:21 UTC; garrick
+Author: Garrick Aden-Buie [aut, cre] (<https://orcid.org/0000-0002-7111-0077>),
+  Winston Chang [aut],
+  Barret Schloerke [aut] (<https://orcid.org/0000-0001-9986-114X>),
+  Posit Software, PBC [cph, fnd] (03wc8by49)
+Maintainer: Garrick Aden-Buie <garrick@posit.co>
+Repository: CRAN
+Date/Publication: 2025-04-24 03:40:02 UTC

@@ -1,0 +1,43 @@
+Package: salem
+Type: Package
+Title: Provides Access to Salem Witchcraft Data
+Version: 1.0.1
+Authors@R: 
+    c(person(given = "Elin",
+             family = "Waring",
+             role = c("aut", "cre"),
+             email = "elin.waring@gmail.com"),
+      person(given = "Richard",
+             family = "Latner",
+             role = c("aut"),
+             email = "latner@tulane.edu")
+       )
+Description: Data related to the Salem Witch Trials
+    Datasets and tutorials documenting the witch accusations and trials 
+    centered around Salem, Massachusetts in 1692. Originally assembled by
+    Richard B. Latner of Tulane University for his website 
+    <https://www2.tulane.edu/~salem/index.html>. The data sets include information
+    on 152 accused witches, members of the Salem Village Committee, 
+    signatories of petitions related to the events, and tax data for 
+    Salem Village.
+License: CC BY-NC-SA 4.0
+Encoding: UTF-8
+LazyData: true
+URL: https://elinw.github.io/salem/, https://github.com/elinw/salem/
+BugReports: https://github.com/elinw/salem/issues
+Depends: R (>= 4.1.0)
+Imports:
+Suggests: dplyr (>= 1.0.0), ggplot2, knitr, rmarkdown, sf, stats, tidyr
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Collate: "accused_witches.R" "cent17th.R" "committee_list.R"
+        "compensation.R" "ergotism_symptoms.R" "forfeitures.R"
+        "long_doc_name.R" "salem_village.R" "tax_comparison.R"
+        "parris_social.R" "salem_region.R"
+NeedsCompilation: no
+Packaged: 2026-01-13 15:19:09 UTC; elinwaring
+Author: Elin Waring [aut, cre],
+  Richard Latner [aut]
+Maintainer: Elin Waring <elin.waring@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-14 08:00:09 UTC

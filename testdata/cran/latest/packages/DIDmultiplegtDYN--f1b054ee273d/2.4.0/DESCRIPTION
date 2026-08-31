@@ -1,0 +1,35 @@
+Package: DIDmultiplegtDYN
+Title: Estimation in Staggered First Switch Designs, where Groups
+        Experience their First Treatment Change at Different Points in
+        Time
+Version: 2.4.0
+Authors@R: 
+    c(person("Anzony", "Quispe", role = c("aut", "cre"), email = "anzony.quispe@gmail.com"),
+      person("Diego", "Ciccia", role = "aut", email = "diego.ciccia@kellogg.northwestern.edu"),
+      person("Felix", "Knau", role = "aut", email = "felix.knau@sciencespo.fr"),
+      person("Mélitine", "Malezieux", role = "aut", email = "melitine.malezieux@sciencespo.fr"),
+      person("Doulo", "Sow", role = "aut", email = "doulo.sow@ensae.fr"),
+      person("Clément", "de Chaisemartin", role = "aut", email = "clement.dechaisemartin@sciencespo.fr"))
+Maintainer: Anzony Quispe <anzony.quispe@gmail.com>
+Description: Estimation of heterogeneity-robust difference-in-differences estimators, with a binary, discrete, or continuous treatment, in designs where past treatments may affect the current outcome.
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/Credible-Answers/did_multiplegt_dyn
+Encoding: UTF-8
+Imports: data.table, MASS, fixest, dplyr, ggplot2, openxlsx, stats,
+        car, lmtest, sandwich, haven, cowplot, rnames, Rcpp
+Suggests: polars, callr, rlang
+LinkingTo: Rcpp
+Additional_repositories: https://rpolars.r-universe.dev
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-30 09:27:15 UTC; anzony.quisperojas
+Author: Anzony Quispe [aut, cre],
+  Diego Ciccia [aut],
+  Felix Knau [aut],
+  Mélitine Malezieux [aut],
+  Doulo Sow [aut],
+  Clément de Chaisemartin [aut]
+Repository: CRAN
+Date/Publication: 2026-06-30 10:50:19 UTC

@@ -1,0 +1,36 @@
+Package: tmfast
+Title: Fast Topic Models Using Varimax
+Version: 0.1.1
+Authors@R: 
+    person("D.", "Hicks", , "hicks.daniel.j@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-7945-4416"))
+Description: Fits topic models using varimax-rotated principal component
+    analysis (PCA), following the "vintage factor analysis" approach of
+    Rohe & Zheng (2020) <doi:10.48550/arXiv.2004.05387>. Leverages truncated PCA via 'irlba'
+    for sparse matrices, enabling fast model fitting on large corpora.
+    Includes an information-theoretic approach to vocabulary selection,
+    'broom'-compatible tidiers for extracting word-topic and topic-document
+    matrices into a tidy data workflow, and samplers for constructing
+    simulated corpora for benchmarking and method evaluation.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: assertthat, purrr, dplyr, tidyr, magrittr, rlang, stringr,
+        tibble, tidyselect, irlba, tidytext, glue, Matrix, generics,
+        psych, cli
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, ggbeeswarm, ggplot2,
+        Rtsne, umap, lpSolve, janeaustenr, stm, tictoc, furrr,
+        reshape2, tmfast.realbooks
+Additional_repositories: https://dhicks.github.io/drat/
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://dhicks.github.io/tmfast/, https://github.com/dhicks/tmfast
+BugReports: https://github.com/dhicks/tmfast/issues
+NeedsCompilation: no
+Packaged: 2026-05-27 18:09:22 UTC; danhicks
+Author: D. Hicks [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7945-4416>)
+Maintainer: D. Hicks <hicks.daniel.j@gmail.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-05-30 13:40:02 UTC

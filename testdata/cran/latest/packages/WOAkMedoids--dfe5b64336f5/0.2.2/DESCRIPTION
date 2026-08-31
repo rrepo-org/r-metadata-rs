@@ -1,0 +1,32 @@
+Package: WOAkMedoids
+Type: Package
+Depends: R (>= 3.5.0)
+Title: Whale Optimization Algorithm for K-Medoids Clustering
+Version: 0.2.2
+Date: 2026-02-08
+Encoding: UTF-8
+Authors@R: 
+    c(person(given = "Chenan",
+             family = "Huang",
+             role = c("aut", "cre"),
+             email = "hualianchan@gmail.com"),
+      person(given = "Narumasa",
+             family = "Tsutsumida",
+             role = c("aut"),
+             email = "rsnaru.jp@gmail.com",
+             comment = c(ORCID = "0000-0002-6333-0301")))
+Description: Implements the Whale Optimization Algorithm(WOA) for k-medoids clustering, providing tools for effective and efficient cluster analysis in various data sets. The methodology is based on "The Whale Optimization Algorithm" by Mirjalili and Lewis (2016) <doi:10.1016/j.advengsoft.2016.01.008>.
+License: GPL (>= 2)
+Imports: dtwclust, proxy, cluster, Rcpp (>= 1.0.11), RcppParallel
+LinkingTo: Rcpp, RcppParallel
+SystemRequirements: GNU make
+RoxygenNote: 7.3.3
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-02-18 13:56:36 UTC; huang
+Author: Chenan Huang [aut, cre],
+  Narumasa Tsutsumida [aut] (ORCID:
+    <https://orcid.org/0000-0002-6333-0301>)
+Maintainer: Chenan Huang <hualianchan@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-18 14:20:09 UTC

@@ -1,0 +1,30 @@
+Package: rPandas
+Title: Translating from R to Python's Pandas Package
+Version: 0.1.4
+Authors@R: 
+    c(
+        person("Akshat", "Maurya", email = "codingmaster902@gmail.com", role = c("aut", "cre")),
+        person("Rihaan", "Satia", role = "aut"),
+        person("David", "Shilane", email = "david.shilane@columbia.edu", role = "aut")
+    )
+Description: Provides an R interface to Python's 'pandas' library using non-standard
+    evaluation. Users can write R code (e.g., rp_filter(), rp_select(), rp_mutate())
+    that is translated into pandas commands and executed via 'reticulate'. Supports
+    chaining, grouping, and 'summarisation', and includes a 'table_name' parameter to
+    generate 'copy-pasteable' Python code. Ideal for leveraging pandas' speed and
+    flexibility within the R ecosystem.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: reticulate, rlang
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-27 15:55:05 UTC; akshat
+Author: Akshat Maurya [aut, cre],
+  Rihaan Satia [aut],
+  David Shilane [aut]
+Maintainer: Akshat Maurya <codingmaster902@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-28 20:30:09 UTC

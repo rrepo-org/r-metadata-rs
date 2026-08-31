@@ -1,0 +1,57 @@
+Package: dowser
+Type: Package
+Version: 2.5.1
+Date: 2026-08-19
+Authors@R: c(
+    person("Kenneth", "Hoehn", email = "kenneth.b.hoehn@dartmouth.edu", role = c("aut", "cre")),
+    person("Cole", "Jensen", email = "cole.jensen@yale.edu", role = "aut"),
+    person("Jessie", "Fielding", email = "jessie.jo.fielding@dartmouth.edu", role = "aut"),
+    person("Hunter", "Melton", email = "hunter.j.melton@dartmouth.edu", role = "aut"),
+    person("Susanna", "Marquez", email = "susanna.marquez@yale.edu", role = "ctb"),
+    person("Jason", "Vander Heiden", email = "jason.vanderheiden@gmail.com", role = "ctb"),
+    person("Erick", "Matsen", role = "ctb"),
+    person("Steven", "Kleinstein", email = "steven.kleinstein@yale.edu", role = c("aut", "cph"))
+  )
+Title: B Cell Receptor Phylogenetics Toolkit
+Description: Provides a set of functions for inferring, visualizing, and analyzing B cell phylogenetic trees.
+    Provides methods to 1) reconstruct unmutated ancestral sequences,
+    2) build B cell phylogenetic trees using multiple methods,
+    3) visualize trees with metadata at the tips,
+    4) reconstruct intermediate sequences,
+    5) detect biased ancestor-descendant relationships among metadata types
+    Workflow examples available at documentation site (see URL).
+    Citations:
+    Hoehn et al (2022) <doi:10.1371/journal.pcbi.1009885>,
+    Hoehn et al (2021) <doi:10.1101/2021.01.06.425648>.
+License: AGPL-3
+URL: https://dowser.readthedocs.io
+BugReports: https://github.com/immcantation/dowser/issues
+LazyData: true
+BuildVignettes: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+Depends: R (>= 4.4), ggplot2 (>= 3.4.0)
+biocViews:
+Imports: airr, alakazam (>= 1.1.0), ape (>= 5.6), coda, dplyr (>= 1.0),
+        ggtree, graphics, gridExtra, markdown, methods, phangorn (>=
+        2.7.1), phylotate, RColorBrewer, rlang, shazam (>= 1.1.1),
+        stats, stringr, tidyselect, tidyr, utils, pwalign, treeio,
+        jsonlite
+Suggests: knitr, rmarkdown, testthat, BiocManager
+Collate: 'IO.R' 'Data.R' 'Dowser.R' 'Clones.R' 'Classes.R' 'Plotting.R'
+        'Germlines.R' 'Statistics.R' 'TreeFunctions.R'
+        'TimeTreesFunctions.R' 'zzz.R'
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-20 02:48:51 UTC; kenneth
+Author: Kenneth Hoehn [aut, cre],
+  Cole Jensen [aut],
+  Jessie Fielding [aut],
+  Hunter Melton [aut],
+  Susanna Marquez [ctb],
+  Jason Vander Heiden [ctb],
+  Erick Matsen [ctb],
+  Steven Kleinstein [aut, cph]
+Maintainer: Kenneth Hoehn <kenneth.b.hoehn@dartmouth.edu>
+Repository: CRAN
+Date/Publication: 2026-08-20 11:20:10 UTC

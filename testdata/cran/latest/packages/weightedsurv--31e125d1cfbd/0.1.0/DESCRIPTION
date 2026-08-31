@@ -1,0 +1,28 @@
+Package: weightedsurv
+Title: Survival Analysis with Subject-Specific (Case Weights) and
+        Time-Dependent Weighting
+Version: 0.1.0
+Authors@R: person("Larry", "Leon", , "larry.leon.05@post.harvard.edu", role = c("aut", "cre"))
+Description: Provides survival analysis functions with support for time-dependent 
+    and subject-specific (e.g., propensity score) weighting. Implements weighted 
+    estimation for Cox models, Kaplan-Meier survival curves, and treatment 
+    differences with point-wise and simultaneous confidence bands. Includes 
+    restricted mean survival time (RMST) comparisons evaluated across all 
+    potential truncation times with both point-wise and simultaneous confidence 
+    bands. See Cole, S. R. & Hernán, M. A. (2004) 
+    <doi:10.1016/j.cmpb.2003.10.004> for methodological background.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: ggplot2, graphics, rlang, stats, survival, utils
+Suggests: adjustedCurves, data.table, DiagrammeR, dplyr, gt, knitr,
+        pammtools, rmarkdown
+URL: https://github.com/larry-leon/weightedsurv
+BugReports: https://github.com/larry-leon/weightedsurv/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-16 22:36:01 UTC; larryleon
+Author: Larry Leon [aut, cre]
+Maintainer: Larry Leon <larry.leon.05@post.harvard.edu>
+Repository: CRAN
+Date/Publication: 2025-12-22 17:10:02 UTC

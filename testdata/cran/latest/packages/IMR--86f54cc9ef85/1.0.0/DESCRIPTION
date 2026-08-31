@@ -1,0 +1,46 @@
+Type: Package
+Package: IMR
+Title: Incomplete Matrix Regression
+Version: 1.0.0
+Authors@R: c(
+    person("Khaled", "Fouda", , "khaled.fouda@hec.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-3688-8767")),
+    person("Aurélie", "Labbe", role = c("ths", "ctb")),
+    person("Karim", "Oualkacha", role = c("ths", "ctb")),
+    person("Korbinian", "Strimmer", role = c("cph", "ctb"),
+           comment = "Authored original fast.svd R implementation in the corpcor package")
+  )
+Description: A framework for matrix completion and regression on response
+    matrices with missing values. The model estimates missing entries
+    using any combination of intercepts, row and column covariates, and a
+    low-rank matrix approximation. It applies Lasso penalties on the
+    covariates and a nuclear norm penalty on the low-rank component. It
+    also adjusts for correlation within the rows and columns of the target
+    matrix using similarity matrices. The framework is described in Fouda,
+    Labbe and Oualkacha (2026) <doi:10.48550/arXiv.2606.26325>.
+License: GPL (>= 3)
+URL: https://github.com/khaledfouda/IMR
+BugReports: https://github.com/khaledfouda/IMR/issues
+Depends: R (>= 3.5)
+Imports: fields, irlba, MASS, Matrix, methods, parallel, Rcpp,
+        RSpectra, stats, utils
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2026-07-02 16:16:40 UTC; khaledfouda
+Author: Khaled Fouda [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-3688-8767>),
+  Aurélie Labbe [ths, ctb],
+  Karim Oualkacha [ths, ctb],
+  Korbinian Strimmer [cph, ctb] (Authored original fast.svd R
+    implementation in the corpcor package)
+Maintainer: Khaled Fouda <khaled.fouda@hec.ca>
+Repository: CRAN
+Date/Publication: 2026-07-10 18:20:02 UTC

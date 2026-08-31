@@ -1,0 +1,41 @@
+Package: magentabook
+Title: HM Treasury Magenta Book Policy Evaluation Primitives
+Version: 0.1.0
+Authors@R: 
+    person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
+Description: Implements policy evaluation primitives from HM Treasury
+    Magenta Book guidance (HM Treasury, 2020): theory of change and
+    log-frame construction, evaluation planning and stakeholder mapping,
+    power and minimum-detectable-effect calculations for randomised
+    designs (including cluster and stepped-wedge designs following
+    'Hussey' and 'Hughes' (2007) <doi:10.1016/j.cct.2006.05.007> and
+    'Hemming' et al. (2015) <doi:10.1136/bmj.h391>), Maryland Scientific
+    Methods Scale ratings, structured confidence ratings, light-weight
+    difference-in-differences and interrupted-time-series estimators
+    ('Bernal' et al. (2017) <doi:10.1093/ije/dyw098>) with cluster-robust
+    standard errors ('Cameron' and 'Miller' (2015) <doi:10.3368/jhr.50.2.317>),
+    pre-treatment balance checks ('Stuart' (2010) <doi:10.1214/09-STS313>),
+    and cost-effectiveness analysis (cost per outcome, incremental
+    cost-effectiveness ratio, acceptability curves, incremental net
+    benefit, quality-adjusted and disability-adjusted life years).
+    Designed as the evaluation companion to the appraisal package
+    'greenbook'. Bundled rubric and reference tables carry vintage
+    metadata for reproducibility.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: cli (>= 3.6.0), stats, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, openxlsx, officer,
+        flextable, pwr, sandwich, swCRTdesign, BCEA, cobalt
+Config/testthat/edition: 3
+URL: https://github.com/charlescoverdale/magentabook
+BugReports: https://github.com/charlescoverdale/magentabook/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-28 16:13:08 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-29 08:10:02 UTC

@@ -1,0 +1,27 @@
+Package: scMetaTraj
+Type: Package
+Title: Metabolic State Space and Trajectory Analysis for Single-Cell
+        Data
+Version: 0.1.1
+Authors@R: 
+    person("Jinwei", "Dai",
+           email = "greg0453@163.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0003-5983-1757"))
+Description: 
+    Provides a framework for modeling cellular metabolic states and continuous 
+    metabolic trajectories from single-cell RNA-seq data using pathway-level 
+    scoring. Enables lineage-restricted metabolic analysis, metabolic 
+    'pseudotime' inference, module-level trend analysis, and visualization of 
+    metabolic state transitions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats, igraph, ggplot2, uwot, RANN, Seurat, dplyr, tidyr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-24 07:38:31 UTC; 10578
+Author: Jinwei Dai [aut, cre] (ORCID: <https://orcid.org/0009-0003-5983-1757>)
+Maintainer: Jinwei Dai <greg0453@163.com>
+Repository: CRAN
+Date/Publication: 2026-01-27 21:30:07 UTC

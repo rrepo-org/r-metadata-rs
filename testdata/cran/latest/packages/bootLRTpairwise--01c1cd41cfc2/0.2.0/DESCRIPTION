@@ -1,0 +1,33 @@
+Package: bootLRTpairwise
+Type: Package
+Title: Bootstrap Hypothesis Tests for Treatment Effects in One-Way
+        ANOVA with Unequal Variances
+Version: 0.2.0
+Authors@R: c(
+  person(
+    "Sagar", "Salvi",
+    email = "sagarsalvi2713@gmail.com",
+    role = c("aut", "cre")
+  ),
+  person(
+    "Diya", "Somichan",
+    email = "diyasomichan1010@gmail.com",
+    role = "aut"
+  ),
+  person(
+    "Anjana", "Mondal",
+    email = "anjanam@iittp.ac.in",
+    role = "aut"
+  ))
+Maintainer: Sagar Salvi <sagarsalvi2713@gmail.com>
+Description: Implements three test procedures using bootstrap resampling techniques for assessing treatment effects in one-way ANOVA models with unequal variances (heteroscedasticity). It includes a parametric bootstrap likelihood ratio test (PB_LRT()), a pairwise parametric bootstrap mean test (PPBMT()), and a Rademacher wild pairwise non-parametric bootstrap test (RWPNPBT()). These methods provide robust alternatives to classical ANOVA and standard pairwise comparisons when the assumption of homogeneity of variances is violated.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2025-07-07 08:51:13 UTC; sagar
+Author: Sagar Salvi [aut, cre],
+  Diya Somichan [aut],
+  Anjana Mondal [aut]
+Repository: CRAN
+Date/Publication: 2025-07-10 14:40:02 UTC

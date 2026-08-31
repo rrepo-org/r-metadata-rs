@@ -1,0 +1,58 @@
+Type: Package
+Package: greta.gp
+Title: Gaussian Process Modelling in 'greta'
+Version: 0.2.3
+Authors@R: c(
+    person(
+      given = "Nick", 
+      family = "Golding", 
+      email = "nick.golding.research@gmail.com", 
+      role = c("aut", "cph"),
+      comment = c(ORCID = "0000-0001-8916-5570")
+      ),
+    person(
+      given = "Jian", 
+      family = "Yen", 
+      role = "ctb"
+      ),
+    person(
+      given = "Nicholas", 
+      family = "Tierney",
+      email = "nicholas.tierney@gmail.com", 
+      role = c("aut", "cre"),
+      comment = c(ORCID = "https://orcid.org/0000-0003-1460-8722")
+      )
+  )
+Description: Provides a syntax to create and combine Gaussian process kernels
+  in 'greta'. You can then use these kernels to define either full rank or
+  sparse Gaussian processes, and project a fitted process to new coordinates.
+  This lets you include Gaussian process components in the statistical models
+  you write with 'greta'. This is an extension to the 'greta' software, Golding
+  (2019) <doi:10.21105/joss.01601>.
+License: Apache License (>= 2)
+URL: https://github.com/greta-dev/greta.gp,
+        https://greta-dev.github.io/greta.gp/
+BugReports: https://github.com/greta-dev/greta.gp/issues
+Depends: greta (>= 0.6.0), R (>= 4.1.0)
+Imports: cli, glue, rlang (>= 1.1.4), tensorflow (>= 2.7.0)
+Suggests: covr, knitr, rmarkdown, spelling, testthat (>= 3.1.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: greta-dev/greta.pkgdown
+Encoding: UTF-8
+Language: en-GB
+SystemRequirements: Python (>= 3.7.0) with header files and shared
+        library; TensorFlow (>= v2.0.0; https://www.tensorflow.org/);
+        TensorFlow Probability (v0.8.0;
+        https://www.tensorflow.org/probability/)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-21 07:17:26 UTC; nick
+Author: Nick Golding [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-8916-5570>),
+  Jian Yen [ctb],
+  Nicholas Tierney [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1460-8722>)
+Maintainer: Nicholas Tierney <nicholas.tierney@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 08:20:17 UTC

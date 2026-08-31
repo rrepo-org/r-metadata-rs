@@ -1,0 +1,31 @@
+Package: kuzco
+Title: Computer Vision with Large Language Models
+Version: 0.1.0
+Authors@R: c(
+    person("Frank", "Hull", , "frankiethull@gmail.com", role = c("aut", "cre", "cph")),
+    person("Johannes", "Breuer", , "johannes.breuer@gesis.org", role = c("ctb"), comment = c(ORCID = "0000-0001-5906-7873")),
+    person("Jordi", "Rosell", , "jroselln@gmail.com", role = c("ctb"), comment = c(ORCID = "0000-0002-4349-1458"))
+    )
+Description: Make computer vision tasks approachable in R by leveraging Large Language Models. 
+    Providing fine-tuned prompts, boilerplate functions, and input/output helpers for common computer vision workflows, such as classifying and describing images.
+    Functions are designed to take images as input and return structured data, helping users build practical applications with minimal code.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: dplyr, ellmer, graphics, gt, gtExtras, imager, jsonlite,
+        magick, ollamar, rlang, stringr, tidyr, utils
+Suggests: knitr, quarto, shiny, bslib, rmarkdown, purrr, mirai, tibble,
+        tictoc, httr
+VignetteBuilder: quarto, knitr
+URL: https://frankiethull.github.io/kuzco/,
+        https://github.com/frankiethull/kuzco
+BugReports: https://github.com/frankiethull/kuzco/issues
+NeedsCompilation: no
+Packaged: 2026-01-21 20:55:30 UTC; frankiethull
+Author: Frank Hull [aut, cre, cph],
+  Johannes Breuer [ctb] (ORCID: <https://orcid.org/0000-0001-5906-7873>),
+  Jordi Rosell [ctb] (ORCID: <https://orcid.org/0000-0002-4349-1458>)
+Maintainer: Frank Hull <frankiethull@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-26 16:50:02 UTC

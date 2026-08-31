@@ -1,0 +1,62 @@
+Package: FIRM
+Type: Package
+Title: Flexible Integration of Single-Cell RNA-Seq Data
+Version: 0.1.2
+Authors@R: c(person(given = "Jingsi", family = "Ming", email = "jsming@fem.ecnu.edu.cn",
+                    role = c("aut", "cre", "cph"), 
+                    comment = c("R package development and method implementation", 
+                    "ORCID: 0000-0001-7059-4156")),
+             person(given = "Shuzhen", family = "Ding", email = "dszspur@xju.edu.cn",
+                    role = c("ctb"), comment = "R package development and maintenance"),
+             person(given = "Gad", family = "Abraham", role = c("ctb", "cph"), 
+                    comment = "Original 'flashpca' 'C++' code for fast randomized PCA"),
+             person(given = "Yixuan", family = "Qiu", role = c("ctb", "cph"), 
+                    comment = "'Spectra' library for large-scale eigenvalue and SVD computation"),
+             person(given = "Anna", family = "Araslanova", role = c("ctb", "cph"),  
+                    comment = "Author of 'LOBPCGSolver.h' in 'Spectra'"),
+             person(given = "Felipe", family = "Zapata", role = c("ctb", "cph"), 
+                    comment = "Author of 'DavidsonSymEigsSolver.h' and 'Orthogonalization.h' in 'Spectra' (Netherlands eScience Center)"),
+             person(given = "Nicolas", family = "Renaud", role = c("ctb", "cph"), 
+                    comment = "Author of 'RitzPairs.h' and 'SearchSpace.h' in 'Spectra' (Netherlands eScience Center)"),
+             person(given = "Jens", family = "Wehner", role = c("ctb", "cph"), 
+                    comment = "Author of 'JDSymEigsBase.h' in 'Spectra' (Netherlands eScience Center)"),
+             person(given = "Gael", family = "Guennebaud", role = c("ctb", "cph"), 
+                    comment = "'Eigen' library code for tridiagonal eigenvalue decomposition"),
+             person(given = "Jitse", family = "Niesen", role = c("ctb", "cph"), 
+                    comment = "'Eigen' library code for eigenvalue computation"))
+Maintainer: Jingsi Ming <jsming@fem.ecnu.edu.cn>
+Description: Provides functions for the flexible integration of heterogeneous scRNA-seq datasets across multiple tissue types, platforms, and experimental batches. Implements the method described in Ming (2022) <doi:10.1093/bib/bbac167>. The package incorporates modified 'C++' source code from the 'flashpca' library (Abraham, 2014-2016 <https://github.com/gabraham/flashpca>) for efficient principal component analysis, and the 'Spectra' library (Qiu, 2016-2025) for large-scale eigenvalue and singular value decomposition; see 'inst/COPYRIGHTS' for details on third-party code. 
+URL: https://github.com/mingjingsi/FIRM
+BugReports: https://github.com/mingjingsi/FIRM/issues
+License: GPL-3
+Encoding: UTF-8
+Copyright: See file 'inst/COPYRIGHTS' for details.
+LazyData: true
+LazyDataCompression: bzip2
+Imports: Seurat (>= 5.0.0), RANN
+Suggests: ggplot2
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Depends: R (>= 3.5.0)
+Packaged: 2026-02-16 03:46:03 UTC; dszspur
+Author: Jingsi Ming [aut, cre, cph] (R package development and method
+    implementation, ORCID: 0000-0001-7059-4156),
+  Shuzhen Ding [ctb] (R package development and maintenance),
+  Gad Abraham [ctb, cph] (Original 'flashpca' 'C++' code for fast
+    randomized PCA),
+  Yixuan Qiu [ctb, cph] ('Spectra' library for large-scale eigenvalue and
+    SVD computation),
+  Anna Araslanova [ctb, cph] (Author of 'LOBPCGSolver.h' in 'Spectra'),
+  Felipe Zapata [ctb, cph] (Author of 'DavidsonSymEigsSolver.h' and
+    'Orthogonalization.h' in 'Spectra' (Netherlands eScience Center)),
+  Nicolas Renaud [ctb, cph] (Author of 'RitzPairs.h' and 'SearchSpace.h'
+    in 'Spectra' (Netherlands eScience Center)),
+  Jens Wehner [ctb, cph] (Author of 'JDSymEigsBase.h' in 'Spectra'
+    (Netherlands eScience Center)),
+  Gael Guennebaud [ctb, cph] ('Eigen' library code for tridiagonal
+    eigenvalue decomposition),
+  Jitse Niesen [ctb, cph] ('Eigen' library code for eigenvalue
+    computation)
+Repository: CRAN
+Date/Publication: 2026-02-19 19:40:02 UTC

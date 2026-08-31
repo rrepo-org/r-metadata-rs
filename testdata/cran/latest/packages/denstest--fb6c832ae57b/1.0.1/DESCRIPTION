@@ -1,0 +1,27 @@
+Package: denstest
+Title: Density Equality Testing
+Version: 1.0.1
+Authors@R: 
+    person("Akin", "Anarat", , "akin.anarat@hhu.de", role = c("aut", "cre"))
+Description: Methods for testing the equality between groups of estimated
+    density functions. The package implements FDET (Fourier-based Density Equality
+    Testing) and MDET (Moment-based Density Equality Testing), two new approaches
+    introduced by the author. Both methods extend an earlier testing approach
+    by Delicado (2007), "Functional k-sample problem when data are density functions"
+    <doi:10.1007/s00180-007-0047-y>, which is referred to as DET (Density Equality
+    Testing) in this package for clarity. FDET compares groups of densities
+    based on their global shape using Fourier transforms, while MDET tests for
+    differences in distributional moments. All methods are described in Anarat,
+    Krutmann and Schwender (2025), "Testing for Differences in Extrinsic Skin Aging
+    Based on Density Functions" (Submitted).
+License: GPL-3
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-25 17:19:39 UTC; Akin
+Author: Akin Anarat [aut, cre]
+Maintainer: Akin Anarat <akin.anarat@hhu.de>
+Repository: CRAN
+Date/Publication: 2026-06-25 17:30:02 UTC

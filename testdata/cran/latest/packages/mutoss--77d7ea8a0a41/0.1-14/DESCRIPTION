@@ -1,0 +1,60 @@
+Package: mutoss
+Type: Package
+Title: Unified Multiple Testing Procedures
+Version: 0.1-14
+Authors@R: c(
+    person(given = c("MuToss", "Coding"),
+           family = "Team",
+           role = "aut",
+           comment = "Berlin 2010"),
+    person(given = "Gilles",
+           family = "Blanchard",
+           role = "aut"),
+    person(given = "Thorsten",
+           family = "Dickhaus",
+           role = "aut"),
+    person(given = "Niklas",
+           family = "Hack",
+           role = "aut"),
+    person(given = "Frank",
+           family = "Konietschke",
+           role = "aut"),
+    person(given = "Kornelius",
+           family = "Rohmeyer",
+           role = c("aut", "cre"),
+           email = "rohmeyer@small-projects.de"),
+    person(given = "Jonathan",
+           family = "Rosenblatt",
+           role = "aut"),
+    person(given = "Marsel",
+           family = "Scheer",
+           role = "aut"),
+    person(given = "Wiebke",
+           family = "Werft",
+           role = "aut")
+    )
+Description: Designed to ease the application and comparison of multiple
+    hypothesis testing procedures for FWER, gFWER, FDR and FDX. Methods are 
+    standardized and usable by the accompanying 'mutossGUI'.
+Depends: R (>= 2.10.0), mvtnorm
+Suggests: fdrtool, qvalue, testthat, lattice
+Imports: plotrix, multtest (>= 2.2.0), multcomp (>= 1.1-0), methods
+License: GPL
+LazyLoad: yes
+LazyData: true
+URL: https://github.com/kornl/mutoss/
+BugReports: https://github.com/kornl/mutoss/issues/
+NeedsCompilation: no
+Packaged: 2025-12-26 10:08:10 UTC; kornel
+Author: MuToss Coding Team [aut] (Berlin 2010),
+  Gilles Blanchard [aut],
+  Thorsten Dickhaus [aut],
+  Niklas Hack [aut],
+  Frank Konietschke [aut],
+  Kornelius Rohmeyer [aut, cre],
+  Jonathan Rosenblatt [aut],
+  Marsel Scheer [aut],
+  Wiebke Werft [aut]
+Maintainer: Kornelius Rohmeyer <rohmeyer@small-projects.de>
+Repository: CRAN
+Date/Publication: 2026-01-08 06:10:37 UTC

@@ -1,0 +1,18 @@
+Package: energyGOF
+Title: Goodness-of-Fit Tests for Univariate Data via Energy
+Version: 0.1
+Authors@R: person("John", "Haman", email = "mail@johnhaman.org", role = c("aut", "cre"))
+Description: Conduct one- and two-sample goodness-of-fit tests for univariate data. In the one-sample case, normal, uniform, exponential, Bernoulli, binomial, geometric, beta, Poisson, lognormal, Laplace, asymmetric Laplace, inverse Gaussian, half-normal, chi-squared, gamma, F, Weibull, Cauchy, and Pareto distributions are supported. egof.test() can also test goodness-of-fit to any distribution with a continuous distribution function. A subset of the available distributions can be tested for the composite goodness-of-fit hypothesis, that is, one can test for distribution fit with unknown parameters. P-values are calculated via parametric bootstrap.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: energy, gsl, boot, fitdistrplus, statmod
+URL: https://github.com/jthaman/energyGOF
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-11-25 19:44:35 UTC; john
+Author: John Haman [aut, cre]
+Maintainer: John Haman <mail@johnhaman.org>
+Repository: CRAN
+Date/Publication: 2025-12-01 14:40:15 UTC

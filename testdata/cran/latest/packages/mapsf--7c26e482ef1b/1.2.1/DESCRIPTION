@@ -1,0 +1,70 @@
+Package: mapsf
+Title: Thematic Cartography
+Version: 1.2.1
+Authors@R: 
+    c(person(given = "Timothée",
+             family = "Giraud",
+             email = "timothee.giraud@cnrs.fr",
+             role = c("cre","aut"),
+             comment = c(ORCID = "0000-0002-1932-3323")),
+      person(given = "Hugues",
+             family = "Pecout",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-0246-0954", "Logo")),
+      person(given = "Ronan",
+             family = "Ysebaert",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-7344-5911", "Cheat sheet")),
+      person(given = "Elina",
+             family = "Marveaux",
+             role = "ctb",
+             comment = c(ORCID = "0009-0000-8667-3019", "Themes")),
+      person(given = "Ian",
+             family = "Fellows",
+             role = "cph",
+             comment = "No overlap algorithm for labels, from wordcloud package"),
+      person(given = "Jim",
+             family = "Lemon",
+             role = "cph",
+             comment = "Arc drawing algorithm for annotations, from plotrix package"), 
+      person(given = "Danielle",
+             family = "Navarro",
+             role = "cph",
+             comment = c(ORCID = "0000-0001-7648-6578", "Bézier curve algorithm for text annotations")))
+Description: Create and integrate thematic maps in your workflow. This package
+    helps to design various cartographic representations such as proportional
+    symbols, choropleth or typology maps. It also offers several functions to
+    display layout elements that improve the graphic presentation of maps
+    (e.g. scale bar, north arrow, title, labels). 'mapsf' maps 'sf' objects on
+    'base' graphics.
+License: GPL (>= 3)
+URL: https://riatelab.github.io/mapsf/
+BugReports: https://github.com/riatelab/mapsf/issues/
+Depends: R (>= 3.6.0)
+Imports: classInt, graphics, maplegend (>= 0.6.3), s2, sf, stats,
+        utils, grDevices
+Suggests: terra, Ckmeans.1d.dp, png, jpeg, knitr, rmarkdown, svglite,
+        tinytest, covr
+Encoding: UTF-8
+VignetteBuilder: knitr
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-29 12:30:10 UTC; tim
+Author: Timothée Giraud [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-1932-3323>),
+  Hugues Pecout [ctb] (ORCID: <https://orcid.org/0000-0002-0246-0954>,
+    Logo),
+  Ronan Ysebaert [ctb] (ORCID: <https://orcid.org/0000-0002-7344-5911>,
+    Cheat sheet),
+  Elina Marveaux [ctb] (ORCID: <https://orcid.org/0009-0000-8667-3019>,
+    Themes),
+  Ian Fellows [cph] (No overlap algorithm for labels, from wordcloud
+    package),
+  Jim Lemon [cph] (Arc drawing algorithm for annotations, from plotrix
+    package),
+  Danielle Navarro [cph] (ORCID: <https://orcid.org/0000-0001-7648-6578>,
+    Bézier curve algorithm for text annotations)
+Maintainer: Timothée Giraud <timothee.giraud@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2026-05-29 17:00:02 UTC

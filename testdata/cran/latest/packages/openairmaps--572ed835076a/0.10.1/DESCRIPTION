@@ -1,0 +1,39 @@
+Type: Package
+Package: openairmaps
+Title: Create Maps of Air Pollution Data
+Version: 0.10.1
+Authors@R: c(
+    person("Jack", "Davison", , "jack.davison@wsp.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0003-2653-6615")),
+    person("David", "Carslaw", , "david.carslaw@york.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0003-0991-950X"))
+  )
+Description: Combine the air quality data analysis methods of 'openair'
+    with the JavaScript 'Leaflet' (<https://leafletjs.com/>) library.
+    Functionality includes plotting site maps, "directional analysis"
+    figures such as polar plots, and air mass trajectories.
+License: MIT + file LICENSE
+URL: https://openair-project.github.io/openairmaps/,
+        https://github.com/openair-project/openairmaps
+BugReports: https://github.com/openair-project/openairmaps/issues
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, ggplot2, leaflet (>= 2.2.0), lifecycle, lubridate,
+        openair (>= 3.1.0), purrr (>= 1.1.0), rlang, sf, stringr, tidyr
+Suggests: carrier, curl, ggspatial, ggtext, gstat, jsonlite, knitr,
+        mgcv, mirai, png, prettymapr, rmarkdown, shiny (>= 1.9.0),
+        stars, terra, testthat (>= 3.0.0), withr
+Config/Needs/website: openair-project/openairpkgdown, rnaturalearth,
+        rnaturalearthdata
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-05-20 11:59:58 UTC; JD38
+Author: Jack Davison [cre, aut] (ORCID:
+    <https://orcid.org/0000-0003-2653-6615>),
+  David Carslaw [aut] (ORCID: <https://orcid.org/0000-0003-0991-950X>)
+Maintainer: Jack Davison <jack.davison@wsp.com>
+Repository: CRAN
+Date/Publication: 2026-05-20 12:30:02 UTC

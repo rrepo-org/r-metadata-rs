@@ -1,0 +1,39 @@
+Package: ricci
+Title: Ricci Calculus
+Version: 0.1.1
+Authors@R: 
+    person("Lukas", "Schneiderbauer",
+      email = "lukas.schneiderbauer@gmail.com",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-0975-6803"))
+Description: Provides a compact 'R' interface for performing tensor calculations.
+    This is achieved by allowing (upper and lower) index labeling of arrays
+    and making use of Ricci calculus conventions to implicitly trigger
+    contractions and diagonal subsetting.
+    Explicit tensor operations, such as addition, subtraction and
+    multiplication of tensors via the standard operators, raising and lowering
+    indices, taking symmetric or antisymmetric tensor parts, as well as the
+    Kronecker product are available. Common tensors like the Kronecker delta,
+    Levi Civita epsilon, certain metric tensors, the Christoffel symbols,
+    the Riemann as well as Ricci tensors are provided.
+    The covariant derivative of tensor fields with respect to any metric
+    tensor can be evaluated. An effort was made to provide the user with
+    useful error messages.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, Ryacas, testthat (>= 3.0.0), waldo
+Config/testthat/edition: 3
+Imports: calculus, cli, rlang
+Depends: R (>= 4.1.0)
+URL: https://github.com/lschneiderbauer/ricci,
+        https://lschneiderbauer.github.io/ricci/
+BugReports: https://github.com/lschneiderbauer/ricci/issues
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2025-08-30 15:28:10 UTC; lukas
+Author: Lukas Schneiderbauer [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0975-6803>)
+Maintainer: Lukas Schneiderbauer <lukas.schneiderbauer@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-04 14:20:02 UTC

@@ -1,0 +1,23 @@
+Package: GMMinit
+Type: Package
+Title: Optimal Initial Value for Gaussian Mixture Model
+Date: 2026-01-20
+Authors@R: c(person("Jing", "Li", 
+             email = "jli178@crimson.ua.edu", role = c("aut", "cre")),
+            person("Yana", "Melnykov",
+             email = "ymelnykov@ua.edu", role = "aut"))
+Version: 1.0.0
+Maintainer: Jing Li <jli178@crimson.ua.edu>
+Author: Jing Li [aut, cre],
+  Yana Melnykov [aut]
+Description: Generating, evaluating, and selecting initialization strategies for Gaussian Mixture Models (GMMs), along with functions to run the Expectation-Maximization (EM) algorithm. Initialization methods are compared using log-likelihood, and the best-fitting model can be selected using BIC. Methods build on initialization strategies for finite mixture models described in Michael and Melnykov (2016) <doi:10.1007/s11634-016-0264-8> and Biernacki et al. (2003) <doi:10.1016/S0167-9473(02)00163-9>, and on the EM algorithm of Dempster et al. (1977) <doi:10.1111/j.2517-6161.1977.tb01600.x>. Background on model-based clustering includes Fraley and Raftery (2002) <doi:10.1198/016214502760047131> and McLachlan and Peel (2000, ISBN:9780471006268).
+License: GPL (>= 2)
+Encoding: UTF-8
+Repository: CRAN
+ByteCompile: true
+Imports: mvtnorm, mclust, mvnfast, stats
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2026-01-20 16:33:01 UTC; jingli
+Date/Publication: 2026-01-24 10:40:07 UTC

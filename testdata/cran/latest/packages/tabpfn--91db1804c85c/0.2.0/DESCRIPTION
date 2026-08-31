@@ -1,0 +1,35 @@
+Package: tabpfn
+Title: Prior-Data Fitted Network Foundational Model for Tabular Data
+Version: 0.2.0
+Authors@R: c(
+    person("Max", "Kuhn", , "max@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2402-136X")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: Provides a consistent API for classification and regression models 
+    based on the 'TabPFN' model of Hollmann et al. (2025), "Accurate predictions 
+    on small data with a tabular foundation model," Nature, 637(8045) 
+    <doi:10.1038/s41586-024-08328-6>. The calculations are served via 'Python' 
+    to train and predict the model. 
+License: Apache License (>= 2)
+URL: https://tabpfn.tidymodels.org,
+        https://github.com/tidymodels/tabpfn
+BugReports: https://github.com/tidymodels/tabpfn/issues
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, generics, hardhat, purrr, reticulate (>=
+        1.41.0.1), rlang (>= 1.1.0), tibble
+Suggests: covr, modeldata, recipes, spelling, testthat (>= 3.0.0),
+        withr
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-14 12:41:48 UTC; max
+Author: Max Kuhn [aut, cre] (ORCID: <https://orcid.org/0000-0003-2402-136X>),
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
+Maintainer: Max Kuhn <max@posit.co>
+Repository: CRAN
+Date/Publication: 2026-05-14 13:00:02 UTC

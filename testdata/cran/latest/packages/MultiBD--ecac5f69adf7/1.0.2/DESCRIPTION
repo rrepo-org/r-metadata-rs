@@ -1,0 +1,34 @@
+Package: MultiBD
+Type: Package
+Title: Multivariate Birth-Death Processes
+Version: 1.0.2
+Date: 2026-03-23
+Authors@R: c(person(given = c("Lam", "S.T."), family = "Ho", role = "aut"),
+             person(given = c("Marc", "A."), family = "Suchard", role = c("aut", "cre"), email = "msuchard@ucla.edu"),
+             person(given = c("Forrest", "W."), family = "Crawford", role = "aut"),
+             person(given = "Jason", family = "Xu", role = "ctb"),
+             person(given = c("Vladimir", "N."), family = "Minin", role = "ctb"))
+Maintainer: Marc A. Suchard <msuchard@ucla.edu>
+Description: Computationally efficient functions to provide direct likelihood-based
+    inference for partially-observed multivariate birth-death processes.  Such processes
+    range from a simple Yule model to the complex susceptible-infectious-removed model
+    in disease dynamics.  Efficient likelihood evaluation facilitates maximum likelihood
+    estimation and Bayesian inference.
+License: Apache License 2.0
+Depends: R (>= 3.1.0)
+Imports: Rcpp (>= 0.11.2), RcppParallel
+LinkingTo: Rcpp, BH, RcppParallel
+Suggests: testthat, knitr, rmarkdown, MCMCpack, ggplot2, matrixStats,
+        plotrix
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2026-03-24 15:55:12 UTC; msuchard
+Author: Lam S.T. Ho [aut],
+  Marc A. Suchard [aut, cre],
+  Forrest W. Crawford [aut],
+  Jason Xu [ctb],
+  Vladimir N. Minin [ctb]
+Repository: CRAN
+Date/Publication: 2026-03-24 16:40:03 UTC

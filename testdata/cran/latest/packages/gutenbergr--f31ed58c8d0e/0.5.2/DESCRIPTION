@@ -1,0 +1,47 @@
+Package: gutenbergr
+Title: Download and Process Public Domain Works from Project Gutenberg
+Version: 0.5.2
+Authors@R: c(
+    person("Jordan", "Bradford", , "jrdnbradford@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-8570-3474")),
+    person("Jon", "Harmon", , "jonthegeek@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-4781-4346")),
+    person("Myfanwy", "Johnston", , "mrowlan1@gmail.com", role = "aut"),
+    person("David", "Robinson", , "admiral.david@gmail.com", role = c("aut", "cph")),
+    person("rOpenSci", role = "fnd", comment = c(ROR = "019jywm96"))
+  )
+Description: Download and process public domain works in the Project
+    Gutenberg collection <https://www.gutenberg.org/>. Includes metadata
+    for all Project Gutenberg works, so that they can be searched and
+    retrieved.
+License: GPL-2
+URL: https://docs.ropensci.org/gutenbergr/,
+        https://ropensci.r-universe.dev/gutenbergr,
+        https://github.com/ropensci/gutenbergr
+BugReports: https://github.com/ropensci/gutenbergr/issues
+Depends: R (>= 4.1)
+Imports: cli, dplyr, glue, purrr, readMDTable (>= 0.4.0), readr, rlang,
+        stringr, tibble, urltools
+Suggests: curl, devtools (>= 2.4.5), fs (>= 1.6.6), ggplot2, here (>=
+        1.0.2), knitr, lubridate (>= 1.9.4), rmarkdown, testthat (>=
+        3.0.0), textdata, tidyr, tidytext, usethis (>= 3.2.1), withr,
+        xml2
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: TRUE
+LazyDataCompression: xz
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Config/roxygen2/markdown: TRUE
+NeedsCompilation: no
+Packaged: 2026-06-27 15:27:02 UTC; bradfojb
+Author: Jordan Bradford [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-8570-3474>),
+  Jon Harmon [aut] (ORCID: <https://orcid.org/0000-0003-4781-4346>),
+  Myfanwy Johnston [aut],
+  David Robinson [aut, cph],
+  rOpenSci [fnd] (ROR: <https://ror.org/019jywm96>)
+Maintainer: Jordan Bradford <jrdnbradford@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-27 16:00:02 UTC

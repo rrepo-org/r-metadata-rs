@@ -1,0 +1,40 @@
+Package: neo2R
+Type: Package
+Title: Neo4j to R
+Version: 3.1.1
+Authors@R: c(
+    person(
+        "Patrice", "Godard",
+        role = c("aut", "cre","cph"),
+        email = "patrice.godard@gmail.com",
+        comment = c(ORCID = "0000-0001-6257-9730")
+    ),
+    person(
+        "Eusebiu", "Marcu",
+        role = "ctb",
+        email = "marcueusebiu@gmail.com"
+    )
+    )
+Description: The aim of neo2R is to provide simple and low level connectors
+   for querying neo4j graph databases (<https://neo4j.com/>).
+   The objects returned by the query functions are either lists or data.frames
+   with very little post-processing.
+   It allows fast processing of queries returning many records.
+   And it let the users handle post-processing according to the data model
+   and their needs.
+URL: https://github.com/patzaw/neo2r
+BugReports: https://github.com/patzaw/neo2r/issues
+Depends: R (>= 4.1)
+Imports: jsonlite, httr2, utils
+SystemRequirements: neo4j (>=3) <https://neo4j.com/>
+License: GPL-3
+Encoding: UTF-8
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-05 06:57:05 UTC; pgodard
+Author: Patrice Godard [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-6257-9730>),
+  Eusebiu Marcu [ctb]
+Maintainer: Patrice Godard <patrice.godard@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 08:20:02 UTC

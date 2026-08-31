@@ -1,0 +1,34 @@
+Package: rEDM
+Type: Package
+Title: Empirical Dynamic Modeling ('EDM')
+Version: 2.0.2
+Date: 2026-08-21
+Authors@R: c( person("Joseph", "Park", role = c("aut", "cre"),
+                     email = "JosephPark@IEEE.org",
+                     comment = c(ORCID = "0000-0001-5411-1409")),
+              person("George", "Sugihara", role = c("aut", "ccp"), 
+                     comment = c(ORCID = "0000-0002-2863-6946")),
+              person("Ethan", "Deyle", role = c("aut"),
+                     comment = c(ORCID = "0000-0001-8704-8434")),
+              person("The Regents of the University of California",
+                     role = c("cph") ) )
+Maintainer: Joseph Park <JosephPark@IEEE.org>
+Description: An implementation of 'EDM' algorithms based on research software developed at the Sugihara Lab ('UCSD/SIO'). Primary methods include 'Simplex' projection from Sugihara & May (1990) <doi:10.1038/344734a0>, Sequential locally-weighted global linear maps 'S-map': Sugihara (1994) <doi:10.1098/rsta.1994.0106>, Convergent cross mapping described in Sugihara et al. (2012) <doi:10.1126/science.1227079>, and, 'Multiview embedding' from Ye & Sugihara (2016) <doi:10.1126/science.aag0863>.
+License: BSD_2_clause + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyLoad: yes
+Imports: stats, utils, graphics, parallel, RANN
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, formatR
+Config/testthat/edition: 3
+RoxygenNote: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-29 22:30:42 UTC; jpark
+Author: Joseph Park [aut, cre] (ORCID: <https://orcid.org/0000-0001-5411-1409>),
+  George Sugihara [aut, ccp] (ORCID:
+    <https://orcid.org/0000-0002-2863-6946>),
+  Ethan Deyle [aut] (ORCID: <https://orcid.org/0000-0001-8704-8434>),
+  The Regents of the University of California [cph]
+Repository: CRAN
+Date/Publication: 2026-08-30 05:10:18 UTC

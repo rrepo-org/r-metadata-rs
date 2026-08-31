@@ -1,0 +1,29 @@
+Package: r4subprofile
+Title: Regulatory Submission Profiles for Clinical Submission Readiness
+Version: 0.1.0
+Authors@R: 
+    person("Pawan Rama", "Mali", email = "prm@outlook.in",
+           role = c("aut", "cre", "cph"))
+Description: Defines submission profiles per regulatory authority with
+    authority-specific pillar weights, decision thresholds, indicator
+    requirements, and risk configuration. Supports the U.S. Food and Drug
+    Administration (FDA), European Medicines Agency (EMA), Pharmaceuticals and
+    Medical Devices Agency (PMDA), Health Canada, Therapeutic Goods
+    Administration (TGA), and Medicines and Healthcare products Regulatory
+    Agency (MHRA). Integrates with 'r4subscore' and 'r4subrisk' configuration
+    systems.
+License: MIT + file LICENSE
+URL: https://github.com/R4SUB/r4subprofile
+BugReports: https://github.com/R4SUB/r4subprofile/issues
+Depends: R (>= 4.2)
+Imports: cli, r4subcore, rlang, tibble
+Suggests: r4subscore, r4subrisk, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-25 15:09:00 UTC; aeroe
+Author: Pawan Rama Mali [aut, cre, cph]
+Maintainer: Pawan Rama Mali <prm@outlook.in>
+Repository: CRAN
+Date/Publication: 2026-03-03 21:20:32 UTC

@@ -1,0 +1,35 @@
+Package: autocodebook
+Title: Automatic Codebook and Tracking for 'Spark' and 'dplyr'
+        Pipelines
+Version: 0.1.0
+Authors@R: 
+    person("Patricia Fortes C. de", "Macedo",
+           email = "macedopatriciafortes@gmail.com",
+           role = c("aut", "cre"))
+Description: Wraps 'dplyr' verbs (mutate, summarise, filter) to automatically
+    capture variable metadata (type, source columns, categories, and source
+    code), producing a codebook and eligibility tracking table with zero
+    manual documentation. Works with both 'sparklyr' (tbl_spark) and local
+    data frames. Adds big-data optimizations (caching, assume-unique
+    counting, checkpointing) and a standardized report module with an
+    eligibility flowchart, editable codebook export (HTML, DOCX, XLSX), and
+    cross-sectional or longitudinal variable inspection. The eligibility
+    flowchart follows the CONSORT statement (Schulz, Altman and Moher (2010)
+    <doi:10.1136/bmj.c332>) and the reporting of observational cohort studies
+    follows the STROBE recommendations (von Elm and others (2007)
+    <doi:10.1371/journal.pmed.0040296>).
+License: MIT + file LICENSE
+URL: https://github.com/patriciafortesm/autocodebook
+BugReports: https://github.com/patriciafortesm/autocodebook/issues
+Encoding: UTF-8
+Imports: dplyr (>= 1.1.0), rlang (>= 1.0.0), tibble, gt, grid
+Suggests: sparklyr, dbplyr, testthat (>= 3.0.0), tidyplots, ggplot2,
+        patchwork, rmarkdown, knitr, officer, flextable, openxlsx,
+        scales, rvg, devEMF, svglite
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-02 14:13:06 UTC; maced
+Author: Patricia Fortes C. de Macedo [aut, cre]
+Maintainer: Patricia Fortes C. de Macedo <macedopatriciafortes@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-08 18:00:19 UTC

@@ -1,0 +1,42 @@
+Package: rmoriebricklayer
+Title: Reproducible Data Capsules with Provenance and Fallback
+Version: 0.3.7
+Authors@R: 
+    person("Vansh Singh", "Ruhela", email = "vsruhela@proton.me",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-1750-3592"))
+Description: Tools for building brick-proof, reproducible, self-contained
+    data capsules.
+    Resolves open-data sources through the Comprehensive Knowledge
+    Archive Network ('CKAN', <https://ckan.org/>) package_show and
+    package_search endpoints, records and verifies provenance with
+    Secure Hash Algorithm 256 ('SHA-256') digests and Internet Archive
+    'Wayback Machine' (<https://web.archive.org/>) snapshots, validates
+    downloaded data against a pinned schema, and falls back to
+    schema-driven synthetic data when the real source is unreachable.
+    Run records are captured in a manifest plus a plain-language summary
+    so any result can be traced back to its inputs. Also ships a small
+    compiled C core (fast summary statistics and a self-contained
+    'SHA-256') that sibling packages in the 'rmorie' ecosystem reach
+    through 'LinkingTo' for a single, shared numeric and
+    provenance-hashing backend.
+License: AGPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: digest, jsonlite, stats, utils
+Suggests: knitr, rmarkdown, stringi, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/rootcoder007/rmorie-bricklayer
+BugReports: https://github.com/rootcoder007/rmorie-bricklayer/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+SystemRequirements: libcurl (deb: libcurl4-openssl-dev, rpm:
+        libcurl-devel)
+NeedsCompilation: yes
+Packaged: 2026-07-25 20:33:01 UTC; rootcoder
+Author: Vansh Singh Ruhela [aut, cre] (ORCID:
+    <https://orcid.org/0009-0004-1750-3592>)
+Maintainer: Vansh Singh Ruhela <vsruhela@proton.me>
+Repository: CRAN
+Date/Publication: 2026-08-05 06:40:02 UTC

@@ -1,0 +1,43 @@
+Package: SSReliabilityClaytonMWD
+Title: Stress-Strength Reliability Model with MWD Marginals via Clayton
+        Copula
+Version: 1.0.2
+Description: Implements stress-strength reliability models under a dependent framework,
+ where both stress and strength variables follow modified Weibull distributions and their
+ dependence is modeled using a Clayton copula (Kizilaslan (2026) <doi:10.48550/arXiv.2604.12130>). 
+ The package provides several estimation procedures for
+ model parameters and the stress-strength reliability R, including two-step maximum likelihood
+ estimation (MLE), least squares estimation (LSE), weighted least squares estimation (WLSE),
+ and maximum product of spacings (MPS). It also provides interval estimation using asymptotic
+ confidence intervals based on MLE and bootstrap confidence intervals for all methods. 
+ In addition, functions are included for parameter estimation of the modified Weibull distribution
+ (Lai et al. (2003) <doi:10.1109/TR.2002.805788>) and the two-parameter Weibull distribution,
+ along with utilities to compute their probability density function, cumulative distribution
+ function, quantile function, and to generate random samples.
+Authors@R: 
+    person(given = "Fatih",
+           family = "Kizilaslan",
+           role = c("aut", "cre"),
+           email = "fkizilaslan@yahoo.com",
+           comment = c(ORCID = "0000-0001-6457-0967")
+           )
+Maintainer: Fatih Kizilaslan <fkizilaslan@yahoo.com>
+Copyright: 2026 Fatih Kizilaslan
+URL: https://github.com/fatihki/SSReliabilityClaytonMWD,
+        https://fatihki.github.io/SSReliabilityClaytonMWD/
+BugReports: https://github.com/fatihki/SSReliabilityClaytonMWD/issues
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+LazyData: true
+Imports: doRNG, knitr, stats
+Suggests: rmarkdown, numDeriv, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-22 11:42:16 UTC; fatihkizilaslan
+Author: Fatih Kizilaslan [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6457-0967>)
+Repository: CRAN
+Date/Publication: 2026-05-28 13:40:13 UTC

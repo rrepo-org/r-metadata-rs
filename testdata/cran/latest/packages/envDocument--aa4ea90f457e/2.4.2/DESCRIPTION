@@ -1,0 +1,25 @@
+Package: envDocument
+Type: Package
+Title: Document the R Working Environment
+Version: 2.4.2
+Date: 2025-09-09
+Authors@R: person("Donald", "Jackson", email = "djackson2641@gmail.com",
+                  role = c("aut", "cre"))
+Description: Prints out information about the R working environment
+    (system, R version,loaded and attached packages and versions) from a single
+    function "env_doc()".  Optionally adds information on git repository,
+    tags, commits and remotes (if available).
+License: GPL (>= 3.0)
+Repository: CRAN
+URL: https://github.com/dgJacks0n/envDocument
+Suggests: knitr(>= 1.13), git2r(>= 0.22.1), stringr(>= 1.2.0),
+        testthat(>= 1.0.2), rmarkdown
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+VignetteBuilder: knitr
+Imports: utils, renv(>= 1.1.4), here
+NeedsCompilation: no
+Packaged: 2025-09-10 18:42:23 UTC; i0455660
+Author: Donald Jackson [aut, cre]
+Maintainer: Donald Jackson <djackson2641@gmail.com>
+Date/Publication: 2025-09-11 05:50:02 UTC

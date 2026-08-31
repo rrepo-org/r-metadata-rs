@@ -1,0 +1,35 @@
+Package: DGEAR
+Type: Package
+Title: Differential Gene Expression Analysis with R
+Version: 0.2.1
+Authors@R: c(person("Koushik", "Bardhan", role = c("aut","cre","ctb"),
+               email = "koushikbardhan2000@gmail.com",
+               comment = c(ORCID = "0009-0002-8846-8347")),
+             person("Chiranjib", "Sarkar", role = c("aut","ths"),
+               email = "cschiranjib9@gmail.com",
+               comment = c(ORCID = "0000-0003-1536-7449")))
+Description: Analyses gene expression data derived from microarray experiments
+    to detect differentially expressed genes (DEGs) by employing majority voting
+    across five statistical models: Welch t-test, one-way ANOVA, Dunnett's test,
+    Half's modified t-test, and the Wilcoxon-Mann-Whitney U-test.  Combined
+    p-values are computed with Fisher's method.  Gene annotation is optional:
+    users may supply a GEO SOFT annotation table or rely on row names directly.
+    Boyer, R.S., Moore, J.S. (1991) <doi:10.1007/978-94-011-3488-0_5>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: DescTools, metapod
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Language: en-US
+Packaged: 2026-07-03 07:32:58 UTC; koush
+Author: Koushik Bardhan [aut, cre, ctb] (ORCID:
+    <https://orcid.org/0009-0002-8846-8347>),
+  Chiranjib Sarkar [aut, ths] (ORCID:
+    <https://orcid.org/0000-0003-1536-7449>)
+Maintainer: Koushik Bardhan <koushikbardhan2000@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-03 08:50:35 UTC

@@ -1,0 +1,43 @@
+Package: ernest
+Title: A Toolkit for Nested Sampling
+Version: 1.2.5
+Authors@R: c(
+    person("Kyle", "Dewsnap", , "kyle.dewsnap@ubc.ca", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-2132-8083")),
+    person("TJ", "Mahr", role = "rev"),
+    person("Robert", "Kubinec", role = "rev"),
+    person("Michael", "Hughes", role = "cph")
+  )
+Description: Bayesian evidence estimation and posterior inference with the
+    nested sampling algorithm, described in Skilling (2006)
+    <doi:10.1214/06-BA127> and Buchner (2023) <doi:10.1214/23-SS144>,
+    along with S3 methods for simulating uncertainty and creating
+    visualisations.
+License: GPL (>= 3)
+URL: https://github.com/ropensci/ernest,
+        https://docs.ropensci.org/ernest/
+BugReports: https://github.com/ropensci/ernest/issues
+Depends: R (>= 4.1.0)
+Imports: cli, generics, ggplot2, lifecycle, matrixStats, posterior,
+        rlang (>= 1.1.0), vctrs, withr
+Suggests: brms, distributional, extraDistr, ggdist, knitr, mvtnorm,
+        patchwork, rmarkdown, testthat (>= 3.0.0), tidyselect,
+        uniformly, vdiffr, xml2
+LinkingTo: cpp11, cpp11eigen, testthat
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: nested_sampling_impl, plot
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-07-06 15:48:07 UTC; ksnap
+Author: Kyle Dewsnap [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2132-8083>),
+  TJ Mahr [rev],
+  Robert Kubinec [rev],
+  Michael Hughes [cph]
+Maintainer: Kyle Dewsnap <kyle.dewsnap@ubc.ca>
+Repository: CRAN
+Date/Publication: 2026-07-06 20:40:02 UTC

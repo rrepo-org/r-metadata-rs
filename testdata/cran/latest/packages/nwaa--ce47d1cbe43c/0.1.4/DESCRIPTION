@@ -1,0 +1,27 @@
+Package: nwaa
+Type: Package
+Title: USGS NWAA Data Download
+Version: 0.1.4
+Authors@R: person("Laljeet", "Sangha", email = "lsanghah2o@gmail.com", role = c("aut", "cre"))
+Description: Download and parse model outputs from the U.S. Geological Survey
+    (USGS) National Water Availability Assessment (NWAA) Data Companion web
+    services. Provides typed, validated wrappers for the published NWAA models
+    across the Water Use, Water Quantity, and Integrated Water Availability
+    families, returning results at HUC12 spatial resolution.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: httr2, jsonlite, readr, rlang, tibble
+Suggests: httptest2, knitr, pkgdown, rmarkdown, sf, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+URL: https://laljeet.github.io/nwaa/, https://github.com/laljeet/nwaa
+BugReports: https://github.com/laljeet/nwaa/issues
+NeedsCompilation: no
+Packaged: 2026-08-19 16:10:13 UTC; laljeetsangha
+Author: Laljeet Sangha [aut, cre]
+Maintainer: Laljeet Sangha <lsanghah2o@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 14:40:02 UTC

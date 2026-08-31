@@ -1,0 +1,32 @@
+Package: dots
+Title: Dot Density Maps
+Version: 0.0.3
+Authors@R: 
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "cre"),
+           email = "ctkenny@proton.me",
+           comment = c(ORCID = "0000-0002-9386-6860"))
+Description: Generate point data for representing people within spatial data. This
+  collects a suite of tools for creating simple dot density maps. Several functions 
+  from different spatial packages are standardized to take the same arguments so
+  that they can be easily substituted for each other.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: ggplot2, rlang, rmapshaper, sf, terra, purrr, dplyr, sp
+URL: https://github.com/christopherkenny/dots,
+        http://christophertkenny.com/dots/
+BugReports: https://github.com/christopherkenny/dots/issues
+Depends: R (>= 4.1.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), wacolors
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-12 14:23:59 UTC; chris
+Author: Christopher T. Kenny [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9386-6860>)
+Maintainer: Christopher T. Kenny <ctkenny@proton.me>
+Repository: CRAN
+Date/Publication: 2025-09-12 14:50:02 UTC

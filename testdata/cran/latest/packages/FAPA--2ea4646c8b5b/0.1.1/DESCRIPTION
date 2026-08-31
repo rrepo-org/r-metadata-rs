@@ -1,0 +1,38 @@
+Package: FAPA
+Type: Package
+Title: Factor Analytic Profile Analysis of Ipsatized Data
+Version: 0.1.1
+Date: 2026-04-08
+Authors@R: person("Se-Kang", "Kim",
+    email = "se-kang.kim@bcm.edu",
+    role  = c("aut", "cre"))
+Description: Implements Factor Analytic Profile Analysis of Ipsatized Data
+    ('FAPA'), a metric inferential framework for pattern detection and
+    person-level reconstruction in multivariate profile data.  After
+    row-centering (ipsatization) to remove profile elevation, 'FAPA' applies
+    singular value decomposition ('SVD') to recover shared core profiles and
+    individual pattern weights.  Dimensionality is determined by a
+    variance-matched Horn's parallel analysis.  A three-stage bootstrap
+    verification framework assesses (1) dimensionality via parallel analysis,
+    (2) subspace stability via Procrustes principal angles, and (3) profile
+    replicability via Tucker's congruence coefficients.  BCa bootstrap
+    confidence intervals for core-profile coordinates are computed via the
+    canonical 'boot' package implementation of Davison and Hinkley (1997)
+    <doi:10.1017/CBO9780511802843>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: boot, graphics, stats, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://github.com/sekangakim/FAPA
+BugReports: https://github.com/sekangakim/FAPA/issues
+NeedsCompilation: no
+Packaged: 2026-04-08 16:21:33 UTC; sekangkim
+Author: Se-Kang Kim [aut, cre]
+Maintainer: Se-Kang Kim <se-kang.kim@bcm.edu>
+Repository: CRAN
+Date/Publication: 2026-04-15 12:50:02 UTC

@@ -1,0 +1,40 @@
+Package: RobustMediate
+Title: Causal Mediation Analysis with Diagnostics and Sensitivity
+        Analysis
+Version: 0.1.1
+Authors@R: 
+    person("Subir", "Hait", email = "haitsubi@msu.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-9871-9677"))
+Description: Provides tools for causal mediation analysis with continuous
+    treatments using inverse probability weighting (IPW). Estimates natural
+    direct and indirect effects over a user-defined treatment grid and supports
+    flexible dose-response mediation analysis. Includes diagnostic procedures
+    for assessing covariate balance in both treatment and mediator models using
+    standardized mean differences. Implements pathway-specific extensions of
+    the impact threshold for a confounding variable (ITCV; Frank, 2000
+    <doi:10.1177/0049124100029002001>) adapted to mediation settings. Provides
+    joint sensitivity analysis combining E-values (VanderWeele and Ding, 2017
+    <doi:10.7326/M16-2607>) and violations of sequential ignorability (Imai,
+    Keele, and Yamamoto, 2010 <doi:10.1214/10-STS321>). Additional utilities
+    include visualization of dose-response mediation functions, robustness
+    profiles, fragility summaries, and formatted outputs for applied research.
+    Supports clustered data structures and multiple outcome families.
+License: MIT + file LICENSE
+URL: https://github.com/causalfragility-lab/RobustMediate
+BugReports: https://github.com/causalfragility-lab/RobustMediate/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: cli, ggplot2 (>= 3.4.0), rlang, scales, stats, broom
+Suggests: covr, dplyr, knitr, lme4, pkgdown, rmarkdown, splines,
+        testthat (>= 3.0.0), tidyr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-09 16:50:37 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-16 09:12:11 UTC

@@ -1,0 +1,45 @@
+Package: scShardSplitRef
+Title: Build Custom Reference Genome for Single-Cell Multiome ATAC and
+        Gene Expression Data of Large-Genome Species
+Version: 0.1.0
+Authors@R: c(
+    person("Irina", "Kuznetsova", , "irina.kuznetsova@curtin.edu.au", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-5411-6063")),
+    person("Luke", "Pembleton", , "lpembleton@barenbrug.com.au", role = "aut",
+           comment = c(ORCID = "0000-0001-8131-8210")),
+    person("Luca", "Curci", , "pasqualeluca.curci@cnr.it", role = "aut",
+           comment = c(ORCID = "0000-0002-5780-3029")),
+    person("Adam H.", "Sparks", , "adamhsparks@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-0061-8359")),
+    person("Curtin University", role = c("fnd", "cph"),
+           comment = c(ROR = "02n415q13")),
+    person("Grains Research and Development Corporation", role = c("fnd", "cph"),
+           comment = c("GRDC Project CUR2210-005OPX (AAGI-CU)", ROR = "02xwr1996"))
+  )
+Description: Provides utilities that enable researchers to build custom
+    references for the Multiome ATAC Gene Expression sequencing data for
+    large-genome species without manual intervention.
+License: GPL (>= 3)
+Depends: R (>= 4.3.0)
+Imports: cli, rlang, stringi, utils, withr
+Suggests: knitr, rmarkdown, roxyglobals, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+Config/roxygen2/version: 8.0.0
+Config/Needs/build: moodymudskipper/devtag
+NeedsCompilation: no
+Packaged: 2026-07-15 03:01:12 UTC; ikrstudio
+Author: Irina Kuznetsova [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-5411-6063>),
+  Luke Pembleton [aut] (ORCID: <https://orcid.org/0000-0001-8131-8210>),
+  Luca Curci [aut] (ORCID: <https://orcid.org/0000-0002-5780-3029>),
+  Adam H. Sparks [aut] (ORCID: <https://orcid.org/0000-0002-0061-8359>),
+  Curtin University [fnd, cph] (ROR: <https://ror.org/02n415q13>),
+  Grains Research and Development Corporation [fnd, cph] (GRDC Project
+    CUR2210-005OPX (AAGI-CU), ROR: <https://ror.org/02xwr1996>)
+Maintainer: Irina Kuznetsova <irina.kuznetsova@curtin.edu.au>
+Repository: CRAN
+Date/Publication: 2026-07-23 12:30:02 UTC

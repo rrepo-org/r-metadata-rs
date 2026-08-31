@@ -1,0 +1,42 @@
+Package: actigraph.sleepr
+Type: Package
+Title: Detect Periods of Sleep and Non-Wear in 'ActiGraph' Data
+Version: 0.3.1
+Authors@R: c(person(given = "Desislava",
+                    family = "Petkova",
+                     email = "desislavka@gmail.com",
+                     role = c("aut", "cre")
+             ),
+           person(given = "John",
+                  family = "Muschelli",
+                  role = c("ctb"))
+           )
+Description: Reads *.agd files exported from 'ActiGraph' devices;
+  implements the Troiano (2008) <doi:10.1249/mss.0b013e31815a51b3> and
+  Choi (2011) <doi:10.1249/MSS.0b013e3181ed61a3> algorithms for
+  detecting periods on non-wear;
+  implements the Sadeh (1994) <doi:10.1093/sleep/17.3.201> and
+  Cole-Kripke (1992) <doi:10.1093/sleep/15.5.461> algorithms for
+  detecting asleep/awake state
+  and the Tudor-Locke (2014) <doi:10.1139/apnm-2013-0173> algorithm
+  to detect sleep periods from asleep/awake states.
+URL: https://github.com/dipetkov/actigraph.sleepr
+BugReports: https://github.com/dipetkov/actigraph.sleepr/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 8.0.0
+Depends: R (>= 3.2.4)
+Imports: DBI, RcppRoll, RSQLite, dplyr (>= 1.0.1), tidyr (>= 1.1.1),
+        assertthat, ggplot2, lubridate, purrr, rlang, zoo, magrittr,
+        tibble, tidyselect
+Suggests: covr, knitr, readr, rmarkdown, testthat, lintr
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-05-29 12:09:55 UTC; desislp
+Author: Desislava Petkova [aut, cre],
+  John Muschelli [ctb]
+Maintainer: Desislava Petkova <desislavka@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-02 08:30:20 UTC

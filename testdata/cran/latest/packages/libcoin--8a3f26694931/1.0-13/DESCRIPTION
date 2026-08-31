@@ -1,0 +1,27 @@
+Package: libcoin
+Title: Linear Test Statistics for Permutation Inference
+Date: 2026-06-03
+Version: 1.0-13
+Authors@R: c(person("Torsten", "Hothorn", role = c("aut", "cre"),
+                    email = "Torsten.Hothorn@R-project.org",
+                    comment = c(ORCID = "0000-0001-8301-0471")),
+             person("Henric", "Winell", role = "aut",
+                    comment = c(ORCID = "0000-0001-7995-3047")))
+Description: Basic infrastructure for linear test statistics and permutation
+  inference in the framework of Strasser and Weber (1999) <https://epub.wu.ac.at/102/>.
+  This package must not be used by end-users. CRAN package 'coin' implements all
+  user interfaces and is ready to be used by anyone.
+Depends: R (>= 3.4.0)
+Suggests: coin, bibtex
+Imports: stats, mvtnorm
+LinkingTo: mvtnorm
+NeedsCompilation: yes
+License: GPL-2
+URL: https://codeberg.org/thothorn/coin/
+Packaged: 2026-06-04 08:30:54 UTC; hothorn
+Author: Torsten Hothorn [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8301-0471>),
+  Henric Winell [aut] (ORCID: <https://orcid.org/0000-0001-7995-3047>)
+Maintainer: Torsten Hothorn <Torsten.Hothorn@R-project.org>
+Repository: CRAN
+Date/Publication: 2026-06-04 09:00:02 UTC

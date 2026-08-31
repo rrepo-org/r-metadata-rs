@@ -1,0 +1,25 @@
+Package: prettyPanelMatch
+Title: 'ggplot2'-Based Visualization for 'PanelMatch' (Imai, Kim, Wang
+        2023) Results
+Version: 0.2.0
+Authors@R: 
+    person("Jihye", "Park", , "Jihye.Park@unige.ch", role = c("aut", "cre"))
+Description: Provides 'ggplot2'-based plotting functions for 'PanelMatch'
+    (Imai, Kim, Wang (2023) <doi:10.1111/ajps.12685>) results.
+    Tidy-and-plot function pairs for three 'PanelMatch' outputs: treatment effect
+    estimates (PanelEstimate()), placebo test diagnostics (placebo_test()), and
+    covariate balance checks (get_covariate_balance()). Supports multiple models,
+    significance indicators, faceted balance grids, and full 'ggplot2' extensibility.
+License: MIT + file LICENSE
+URL: https://github.com/jacqpark/prettyPanelMatch
+BugReports: https://github.com/jacqpark/prettyPanelMatch/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: ggplot2 (>= 3.4.0), dplyr, rlang
+Suggests: PanelMatch, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-03-20 10:30:25 UTC; jacqpark
+Author: Jihye Park [aut, cre]
+Maintainer: Jihye Park <Jihye.Park@unige.ch>
+Repository: CRAN
+Date/Publication: 2026-03-24 10:10:10 UTC

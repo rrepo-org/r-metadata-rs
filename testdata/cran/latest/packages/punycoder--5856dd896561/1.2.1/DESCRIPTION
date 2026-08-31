@@ -1,0 +1,47 @@
+Package: punycoder
+Type: Package
+Title: Unicode and Punycode Domain Name Processing
+Version: 1.2.1
+Authors@R: person("Bart", "Turczynski", email = "bartek@turczynski.pl",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0002-8788-7980"))
+Description: High-performance Unicode and Punycode processing for
+    internationalized domain names. The 'puny_encode()' / 'puny_decode()'
+    helpers are a low-level, RFC 3492 compliant Punycode codec for domain
+    labels (the 'xn--' ASCII-Compatible Encoding of RFC 5890/5891); they
+    perform the raw transform plus letter-digit-hyphen checks and do not
+    apply Unicode IDNA normalization. 'host_normalize()' is the Unicode
+    Technical Standard #46 host-normalization entry point, mapping a host
+    name to a canonical lowercase ASCII comparison form (non-transitional
+    profile, pinned Unicode version). The 'url_encode()' / 'url_decode()' /
+    'parse_url()' helpers do best-effort host extraction and rewriting in
+    URL-shaped strings and are deliberately not RFC 3986 / WHATWG URL
+    parsers or canonicalizers; they are deprecated in favor of dedicated
+    URL packages. Aimed at host normalization and data analysis workflows.
+    Used as the Punycode and IDNA engine by the 'pslr' and 'rurl' packages.
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+SystemRequirements: GNU libidn2 (optional, for native punycode backend)
+License: MIT + file LICENSE
+URL: https://bart-turczynski.github.io/punycoder/,
+        https://github.com/bart-turczynski/punycoder,
+        https://bart-turczynski.r-universe.dev/punycoder,
+        https://CRAN.R-project.org/package=punycoder
+BugReports: https://github.com/bart-turczynski/punycoder/issues
+Encoding: UTF-8
+Language: en-US
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, oysteR, rosv
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+X-schema.org-keywords: punycode, punycode encode, punycode decode,
+        IDNA, IDN, internationalized domain names, UTS-46, RFC 3492,
+        Unicode, host normalization, hostname, domain names, TLD
+NeedsCompilation: yes
+Packaged: 2026-07-19 17:07:35 UTC; bartturczynski
+Author: Bart Turczynski [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8788-7980>)
+Maintainer: Bart Turczynski <bartek@turczynski.pl>
+Repository: CRAN
+Date/Publication: 2026-07-19 18:10:02 UTC

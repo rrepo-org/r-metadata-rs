@@ -1,0 +1,34 @@
+Package: mintyr
+Title: High-Performance Phenotypic Data Pipelines for Breeding
+Version: 0.1.3
+Authors@R: c(
+    person("Guo Meng", , , "tony2015116@163.com", role = c("aut", "cre")),
+    person("Guo Meng", role = "cph")
+  )
+Description: A streamlined toolkit specifically designed for genomic
+    selection and quantitative genetics in animal breeding. It provides
+    high-performance data manipulation backed by 'data.table', focusing on
+    multi-breed and multi-trait nested grouping operations. Features
+    include zero-copy data importing, automated cross-validation
+    splitting, and robust tools to generate and batch-export formatted
+    phenotypic files required by various breeding software (e.g.,
+    'ASReml-R', 'HIBLUP', 'DMU'), heavily optimizing iterative variance
+    component analysis and large-scale evaluation pipelines.
+License: MIT + file LICENSE
+URL: https://tony2015116.github.io/mintyr/,
+        https://github.com/tony2015116/mintyr
+BugReports: https://github.com/tony2015116/mintyr/issues
+Depends: R (>= 4.1.0)
+Imports: data.table, parallel, readxl, rsample, stats, utils, writexl
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Config/fusen/version: 0.6.0
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-06-20 06:32:39 UTC; Dell
+Author: Guo Meng [aut, cre],
+  Guo Meng [cph]
+Maintainer: Guo Meng <tony2015116@163.com>
+Repository: CRAN
+Date/Publication: 2026-06-20 07:00:02 UTC

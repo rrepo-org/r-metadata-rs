@@ -1,0 +1,40 @@
+Package: PGaovR
+Type: Package
+Title: Analysis of Experimental Data using ANOVA and Mean Comparison
+Version: 0.1.1
+Authors@R: c(
+  person("Santosh", "Patil",
+         email = "patil.sgstat@gmail.com",
+         role = c("aut", "cre"),
+         comment = c(ORCID = "0000-0002-5370-3522")),
+  person("Yogesh", "Garde",
+         email = "y.garde@yahoo.co.in",
+         role = "aut",
+         comment = c(ORCID = "0000-0002-0297-316X"))
+  )
+Description: Provides tools for designing and analyzing agricultural
+    experiments. It includes functions for generating randomized
+    treatment layouts for standard experimental designs such as
+    Completely Randomized Design (CRD), Randomized Block Design (RBD),
+    Latin Square Design (LSD), Factorial Randomized Block Design
+    (FRBD), split-plot design, and strip-plot design. The package
+    implements one-factor and two-factor analysis of variance (ANOVA)
+    and offers multiple comparison procedures, including Least
+    Significant Difference (lsd), Tukey, and Duncan tests, to compare
+    treatment means in single-factor and factorial experiments. The
+    methods follow classical experimental design principles described 
+    in Gomez and Gomez (1984, Statistical Procedures for Agricultural Research, John Wiley & Sons, New York). 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, grid, multcompView, stats, utils
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-05-07 19:10:58 UTC; intel
+Author: Santosh Patil [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5370-3522>),
+  Yogesh Garde [aut] (ORCID: <https://orcid.org/0000-0002-0297-316X>)
+Maintainer: Santosh Patil <patil.sgstat@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-08 08:00:20 UTC

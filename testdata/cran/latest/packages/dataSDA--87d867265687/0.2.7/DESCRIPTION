@@ -1,0 +1,27 @@
+Package: dataSDA
+Type: Package
+Title: Datasets and Basic Statistics for Symbolic Data Analysis
+Version: 0.2.7
+Date: 2026-08-09
+Authors@R: c(
+    person("Po-Wei", "Chen", email = "randy310162@gmail.com", role = "aut"),
+    person("Chun-houh", "Chen", email = "cchen@stat.sinica.edu.tw", role = "aut"),
+    person("Han-Ming", "Wu", email = "wuhm@g.nccu.edu.tw", role = "cre"))
+Description: Provides benchmark datasets and foundational tools for Symbolic Data Analysis (SDA). The package includes functions for constructing symbolic data objects from classical data, converting among different interval-valued data formats, managing interval-valued, histogram-valued, modal-valued, and multi-valued data, and performing basic descriptive statistics. It is designed to support teaching, methodological research, and the development of SDA techniques.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown, ggInterval, ggplot2,
+        MAINT.Data, e1071, symbolicDA
+VignetteBuilder: knitr
+Imports: magrittr, tidyr, dplyr, RSDA, HistDAWass, methods
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-09 03:40:40 UTC; CodexSandboxOffline
+Author: Po-Wei Chen [aut],
+  Chun-houh Chen [aut],
+  Han-Ming Wu [cre]
+Maintainer: Han-Ming Wu <wuhm@g.nccu.edu.tw>
+Repository: CRAN
+Date/Publication: 2026-08-20 11:10:13 UTC

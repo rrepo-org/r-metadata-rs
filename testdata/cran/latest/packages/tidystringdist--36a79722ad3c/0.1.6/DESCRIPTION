@@ -1,0 +1,31 @@
+Package: tidystringdist
+Title: String Distance Calculation with Tidy Data Principles
+Version: 0.1.6
+Authors@R: 
+    c(person(given = "Colin",
+             family = "Fay",
+             role = c("aut", "cre"),
+             email = "contact@colinfay.me",
+             comment = c(ORCID = "0000-0001-7343-1846")),
+      person(given = "Dmytro",
+             family = "Perepolkin",
+             role = "ctb",
+             email = "dperepolkin@gmail.com",
+             comment = c(ORCID = "0000-0001-8558-6183")))
+Description: Calculation of string distance following the tidy
+    data principles. Built on top of the 'stringdist' package.
+License: MIT + file LICENSE
+Imports: attempt, rlang, stringdist, tibble
+Suggests: dplyr, knitr, magrittr, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: 'globalVariables.R' 'tidycomb.R' 'utils.R' 'tidystringdist.R'
+NeedsCompilation: no
+Packaged: 2026-05-04 19:51:10 UTC; colinfay
+Author: Colin Fay [aut, cre] (ORCID: <https://orcid.org/0000-0001-7343-1846>),
+  Dmytro Perepolkin [ctb] (ORCID:
+    <https://orcid.org/0000-0001-8558-6183>)
+Maintainer: Colin Fay <contact@colinfay.me>
+Repository: CRAN
+Date/Publication: 2026-05-04 20:10:02 UTC

@@ -1,0 +1,41 @@
+Package: BORT
+Type: Package
+Title: Beyond Pareto: Bi-Objective and Multi-Objective Regression
+        Trees’
+Version: 0.1.0
+Authors@R: c(person(given = c("Erick", "G.G."),
+                      family = "de Paz",
+                      role = c("aut", "cre"),
+                      email = "erick.giles@cimat.mx",
+                      comment = c(ORCID = "0000-0001-7878-8238")),
+               person(given = "Arturo",
+                      family = "Hernández-Aguirre",
+                      role = "aut",
+                      comment = c(ORCID = "0000-0002-3744-9827")),
+               person(given = "Iván",
+                      family = "Cruz-Aceves",
+                      role = "aut",
+                      comment = c(ORCID = "0000-0002-5197-2059")))
+Author: Erick G.G. de Paz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7878-8238>),
+  Arturo Hernández-Aguirre [aut] (ORCID:
+    <https://orcid.org/0000-0002-3744-9827>),
+  Iván Cruz-Aceves [aut] (ORCID: <https://orcid.org/0000-0002-5197-2059>)
+Maintainer: Erick G.G. de Paz <erick.giles@cimat.mx>
+Description: Implements the Bi-objective Regression Tree (BORT) for efficiently 
+    learning vector-valued functions. Unlike traditional methods that rely on 
+    constructing multiple models or static scalarisation, BORT integrates the 
+    exploration of the Pareto front directly into a single tree's growth process. 
+    It provides high-efficiency, single-model approaches that can Pareto-dominate 
+    entire Pareto-consistent families of trees, supported by a C backend for 
+    fast computation. For more details see 
+    Paz (2026) <doi:10.1007/978-3-032-28393-1_2> and
+    Paz (2025) <doi:10.1007/978-3-031-78401-9_2>.
+License: GPL-2
+Encoding: UTF-8
+NeedsCompilation: yes
+Repository: CRAN
+Date: 2026-07-01
+Depends: R (>= 2.10.0)
+Packaged: 2026-07-01 23:27:53 UTC; erick
+Date/Publication: 2026-07-07 09:50:08 UTC

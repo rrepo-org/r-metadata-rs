@@ -1,0 +1,37 @@
+Type: Package
+Package: BayesSIM
+Title: Integrated Interface of Bayesian Single Index Models using
+        'nimble'
+Version: 1.0.4
+Authors@R: c(
+    person("Seowoo", "Jung", , "jsw1347@ewha.ac.kr", role = c("aut", "cre")),
+    person("Eun-kyung", "Lee", , "lee.eunk@ewha.ac.kr", role = "aut")
+  )
+Author: Seowoo Jung [aut, cre],
+  Eun-kyung Lee [aut]
+Maintainer: Seowoo Jung <jsw1347@ewha.ac.kr>
+Description: Provides tools for fitting Bayesian single index models with
+    flexible choices of priors for both the index and the link function.
+    The package implements model estimation and posterior inference using
+    efficient MCMC algorithms built on the 'nimble' framework, allowing
+    users to specify, extend, and simulate models in a unified and
+    reproducible manner. The following methods are implemented in the
+    package: Antoniadis et al. (2004)
+    <https://www.jstor.org/stable/24307224>, Wang (2009)
+    <doi:10.1016/j.csda.2008.12.010>, Choi et al. (2011)
+    <doi:10.1080/10485251003768019>, Dhara et al. (2019)
+    <doi:10.1214/19-BA1170>, McGee et al. (2023) <doi:10.1111/biom.13569>.
+License: GPL (>= 2)
+Depends: R (>= 4.1), nimble
+Imports: coda, magrittr, MASS, methods, mvtnorm, patchwork, tidyr,
+        ggplot2, dplyr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-05-11 09:01:43 UTC; Seowoo
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+Repository: CRAN
+Date/Publication: 2026-05-14 02:40:02 UTC

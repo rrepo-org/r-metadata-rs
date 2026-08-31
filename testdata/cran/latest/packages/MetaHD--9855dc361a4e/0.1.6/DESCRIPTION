@@ -1,0 +1,47 @@
+Package: MetaHD
+Type: Package
+Title: A Multivariate Meta-Analysis Model for High-Dimensional Data
+Version: 0.1.6
+Authors@R: c(
+  person("Jayamini", "Liyanage", role = c("aut", "cre"),
+         email = "j.liyanage@latrobe.edu.au"),
+  person("Alysha", "De Livera", role = "aut",
+         email = "a.delivera@latrobe.edu.au"),
+  person("Luke", "Prendergast", role = "aut",
+         email = "luke.prendergast@latrobe.edu.au"))
+Maintainer: Jayamini Liyanage <j.liyanage@latrobe.edu.au>
+Author: Jayamini Liyanage [aut, cre],
+  Alysha De Livera [aut],
+  Luke Prendergast [aut]
+Description: Performs multivariate meta-analysis for high-dimensional data
+    to integrate and collectively analyse individual-level data from multiple
+    studies, as well as to combine summary estimates. This approach accounts
+    for correlation between outcomes, incorporates within- and between-study
+    variability, handles missing values, and uses shrinkage estimation to
+    accommodate high dimensionality. The 'MetaHD' R package provides access 
+    to our multivariate meta-analysis approach, along with a comprehensive 
+    suite of existing meta-analysis methods, including fixed-effects and 
+    random-effects models, Fisher's method, Stouffer's method, the weighted 
+    Z method, Lancaster's method, the weighted Fisher's method, and vote-counting 
+    approach. Visualisation tools are provided for interpreting and comparing 
+    results across methods, including Venn diagrams, UpSet plots, and ROC curves, 
+    heatmaps of pooled effect sizes and correlations among outcomes. A detailed 
+    vignette with example datasets and code for data preparation and analysis is 
+    available at <https://alyshadelivera.github.io/MetaHD_vignette/>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.4.0)
+LazyData: true
+LazyDataCompression: xz
+Imports: dplyr, tidyr, metafor, corpcor, nloptr, Matrix, matrixcalc,
+        Rcpp (>= 1.0.0), dynamicTreeCut, cluster, future.apply,
+        metapro, metap, UpSetR, pROC, graphics, grDevices, tools,
+        ComplexHeatmap, circlize
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: gVenn, testthat (>= 3.0.0)
+biocViews:
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-09 00:55:12 UTC; 21460438
+Repository: CRAN
+Date/Publication: 2026-07-09 12:30:02 UTC

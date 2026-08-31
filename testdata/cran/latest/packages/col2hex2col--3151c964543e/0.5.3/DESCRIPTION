@@ -1,0 +1,30 @@
+Package: col2hex2col
+Type: Package
+Title: Convert Between Color Names and Hex Codes
+Version: 0.5.3
+Authors@R: c(
+    person("Antti", "Rask", email = "anttilennartrask@gmail.com",
+           role = c("aut", "cre", "cph")),
+    person("Yann", "Cohen", role = "ctb",
+           comment = "GitHub: iamYannC")
+    )
+Description: Provides simple functions to convert between color names and
+    hexadecimal color codes using an extensive database of over 32,000 colors.
+    Includes all 657 R built-in colors plus the comprehensive color-names database.
+    The package supports bidirectional conversion with backward compatibility,
+    prioritizing R colors when available.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), gt, farver, cli
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+URL: https://github.com/AnttiRask/col2hex2col
+BugReports: https://github.com/AnttiRask/col2hex2col/issues
+NeedsCompilation: no
+Packaged: 2026-02-17 23:54:00 UTC; antti
+Author: Antti Rask [aut, cre, cph],
+  Yann Cohen [ctb] (GitHub: iamYannC)
+Maintainer: Antti Rask <anttilennartrask@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-18 00:40:08 UTC

@@ -1,0 +1,33 @@
+Package: NeStage
+Type: Package
+Title: Effective Population Size from Stage-Structured Populations
+Version: 0.8.0
+Date: 2026-03-07
+Authors@R: person("Raymond L.", "Tremblay",
+           email = "raymond.tremblay@gmail.com",
+           role  = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8588-4372"))
+Author: Raymond L. Tremblay [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8588-4372>)
+Maintainer: Raymond L. Tremblay <raymond.tremblay@gmail.com>
+Description: Computes effective population size (Ne) and the Ne/N ratio for
+    stage-structured populations using the matrix population model framework
+    of Yonezawa (2000) <doi:10.1111/j.0014-3820.2000.tb01244.x>. Functions
+    are provided for sexually reproducing, clonally reproducing, and mixed
+    (sexual + clonal) populations. Includes sensitivity and elasticity
+    analyses for Ne/N with respect to vital rates.
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: ggplot2
+Suggests: dplyr, tidyr, purrr, expm, gt (>= 0.9.0), knitr, popbio,
+        popdemo, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/RaymondLTremblay/NeStage
+BugReports: https://github.com/RaymondLTremblay/NeStage/issues
+NeedsCompilation: no
+Packaged: 2026-03-12 14:34:38 UTC; raymondtremblay
+Repository: CRAN
+Date/Publication: 2026-03-17 18:20:15 UTC

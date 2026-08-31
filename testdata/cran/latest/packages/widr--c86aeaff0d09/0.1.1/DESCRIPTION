@@ -1,0 +1,22 @@
+Package: widr
+Title: Interface to the World Inequality Database (WID)
+Version: 0.1.1
+Authors@R: person("Cheryl Isabella", "Lim", email = "cheryl.academic@gmail.com", role = c("aut", "cre"))
+Description: Interface to the World Inequality Database (WID) API <https://wid.world>. Downloads distributional national accounts data with filters for country, year, percentile, age group, and population type. Includes code validation and reference tables. Independent implementation unaffiliated with the World Inequality Lab (WIL) or the Paris School of Economics.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: base64enc, jsonlite, digest, ggplot2, httr2, scales, tools,
+        utils
+Suggests: testthat (>= 3.0.0), covr, knitr, rmarkdown, withr
+VignetteBuilder: knitr
+URL: https://github.com/cherylisabella/widr
+BugReports: https://github.com/cherylisabella/widr/issues
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-04-20 20:02:05 UTC; Isabella
+Author: Cheryl Isabella Lim [aut, cre]
+Maintainer: Cheryl Isabella Lim <cheryl.academic@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-20 21:00:02 UTC

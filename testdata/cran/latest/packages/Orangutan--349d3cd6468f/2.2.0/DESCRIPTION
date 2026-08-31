@@ -1,0 +1,28 @@
+Package: Orangutan
+Title: Automated Analysis of Phenotypic Data
+Version: 2.2.0
+Authors@R: person(given = "Javier",
+                     family = "Torres",
+                     role = c("aut", "cre"),
+                     email = "metalofis@gmail.com")
+Description: Provides functions to analyze and visualize meristic, mensural, and categorical
+    phenotypic data in a comparative framework. The package implements an
+    automated pipeline that summarizes traits, identifies diagnostic variables
+    among groups, performs multivariate and univariate statistical analyses, and
+    produces publication-ready graphics. Earlier implementation are
+    described in Torres (2025) <doi:10.64898/2025.12.18.695244> (v1.0.0) 
+    and Torres (2026) <doi:10.1002/ece3.73111> (v2.0.0).
+URL: https://github.com/metalofis/Orangutan-R
+BugReports: https://github.com/metalofis/Orangutan-R/issues
+License: MIT + file LICENSE
+Repository: CRAN
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: adegenet, dplyr, dunn.test, ggplot2, multcompView,
+        RColorBrewer, rlang, scales, tidyr, vegan, withr
+Suggests: ragg
+NeedsCompilation: no
+Packaged: 2026-08-20 20:43:14 UTC; jtorreslopez2
+Author: Javier Torres [aut, cre]
+Maintainer: Javier Torres <metalofis@gmail.com>
+Date/Publication: 2026-08-21 05:46:15 UTC

@@ -1,0 +1,43 @@
+Package: oRaklE
+Title: Multi-Horizon Electricity Demand Forecasting in High Resolution
+Version: 1.0.2
+Authors@R: 
+    c(
+        person(given = "Johannes", family = "Schwenzer", email = "schwenzer@europa-uni.de", 
+               role = c("aut", "cre", "cph"), 
+               comment = c(ORCID = "0009-0006-9618-8889")),
+        person(given = "Simone", family = "Maxand", email = "maxand@europa-uni.de", 
+               role = c("aut"), 
+               comment = c(ORCID = "0000-0002-3153-7922")),
+        person(given = "Tatiana", family = "Gonzalez Grandón", email = "tatiana.c.g.grandon@ntnu.no", 
+               role = c("aut"), 
+               comment = c(ORCID = "0000-0001-6587-0144"))
+    )
+Description: Advanced forecasting algorithms for long-term energy demand at the 
+  national or regional level. The methodology is based on Grandón et al. (2024) 
+  <doi:10.1016/j.apenergy.2023.122249>; Zimmermann & Ziel (2024) 
+  <doi:10.1016/j.apenergy.2025.125444>. Real-time data, including power demand, weather conditions, and macroeconomic indicators, are provided through automated API integration with various institutions. The modular approach maintains transparency on the various model selection processes and encompasses the ability to be adapted to individual needs. 'oRaklE' tries to help facilitating robust decision-making in energy management and planning.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+LazyDataCompression: xz
+Imports: ggplot2, scales, MLmetrics, MuMIn, R.utils, caret, survival,
+        countrycode, doParallel, dplyr, ggthemes, glmnet, httr,
+        jsonlite, lubridate, mgcv, patchwork, purrr, xml2, zoo
+Depends: R (>= 3.5)
+Suggests: knitr, rmarkdown, roxygen2 (>= 7.2.3), spelling, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-11-21 14:51:21 UTC; Konstantin
+Author: Johannes Schwenzer [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0006-9618-8889>),
+  Simone Maxand [aut] (ORCID: <https://orcid.org/0000-0002-3153-7922>),
+  Tatiana Gonzalez Grandón [aut] (ORCID:
+    <https://orcid.org/0000-0001-6587-0144>)
+Maintainer: Johannes Schwenzer <schwenzer@europa-uni.de>
+Repository: CRAN
+Date/Publication: 2025-11-21 15:30:02 UTC

@@ -1,0 +1,36 @@
+Package: INCVCommunityDetection
+Type: Package
+Title: Inductive Node-Splitting Cross-Validation for Community
+        Detection
+Version: 0.1.0
+Authors@R: c(
+    person("Lin", "Zhang", email = "linzhang1126@gmail.com",
+           role = c("aut", "cre")),
+    person("Bokai", "Yang", role = "aut"))
+Description: Implements Inductive Node-Splitting Cross-Validation (INCV) for
+    selecting the number of communities in stochastic block models. Provides
+    f-fold and random-split node-level cross-validation, along with
+    competing methods including CROISSANT, Edge Cross-Validation (ECV), and
+    Node Cross-Validation (NCV). Supports both SBM and Degree-Corrected
+    Block Models (DCBM), with multiple loss functions (L2, binomial
+    deviance, AUC). Includes network simulation utilities for SBM, RDPG,
+    and latent space models.
+URL: https://github.com/ivylinzhang97/incv-community-detection
+BugReports: https://github.com/ivylinzhang97/incv-community-detection/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: methods, Matrix, RSpectra, ClusterR, irlba, parallel, cluster,
+        Rfast, data.table, IMIFA, stats
+Suggests: latentnet, network, rdist, igraph, testthat (>= 3.0.0),
+        knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-07 18:02:22 UTC; linzhang
+Author: Lin Zhang [aut, cre],
+  Bokai Yang [aut]
+Maintainer: Lin Zhang <linzhang1126@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-12 08:10:15 UTC

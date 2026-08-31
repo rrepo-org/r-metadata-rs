@@ -1,0 +1,58 @@
+Package: ForceChoice
+Title: Forced-Choice Modeling Based on Item Response Theory and
+        Cognitive Diagnostic Models
+Version: 1.0.0
+Authors@R: c(person(given = "Haijiang", 
+                    family = "Qin", 
+                    role = c("aut", "cre", "cph"), 
+                    email = "haijiang133@outlook.com", 
+                    comment = c(ORCID = "0009-0000-6721-5653")),
+             person(given = "Lei",
+                    family = "Guo", 
+                    role = c("aut", "cph"), 
+                    email = "happygl1229@swu.edu.cn", 
+                    comment = c(ORCID = "0000-0002-8273-3587")))
+Description: Fits, simulates, and evaluates forced-choice and traditional
+    item response theory (IRT) models for noncognitive assessment. Eight model
+    families are supported, spanning dominance (multidimensional IRT (MIRT)
+    1PL--4PL; multidimensional generalized partial credit model (MGPCM)),
+    ideal-point unfolding (multidimensional generalized graded unfolding
+    model (MGGUM)), and forced-choice designs (forced-choice multidimensional
+    IRT (FCMIRT), forced-choice generalized graded unfolding model (FCGGUM),
+    Thurstonian IRT (TIRT), forced-choice diagnostic classification model
+    (FCDCM), forced-choice generalized deterministic inputs, noisy "and" gate
+    model (FCGDINA)) that mitigate response biases such as acquiescence and
+    social desirability. Core estimation backends include full Bayesian
+    inference via Hamiltonian Monte Carlo (Stan) and a fast improved
+    stochastic expectation-maximization (iStEM) algorithm suitable for
+    large-scale data; FCGDINA also provides a deterministic
+    expectation-maximization (EM) estimator. Comprehensive model evaluation
+    uses the limited-information M2 family of goodness-of-fit statistics
+    (Maydeu-Olivares and Joe, 2005 <doi:10.1198/016214504000002069>; 2006
+    <doi:10.1007/s11336-005-1295-9>) together with root mean square error of
+    approximation (RMSEA), comparative fit index (CFI), Tucker-Lewis index
+    (TLI), and standardized root mean square residual (SRMSR).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Config/ForceChoice/skip-rstantools-config: true
+Biarch: true
+Depends: R (>= 4.1.0)
+Imports: coda, GPArotation, MASS, methods, numDeriv, parallel, Rcpp (>=
+        0.12.0), RcppParallel (>= 5.0.1), rstan (>= 2.18.1), rstantools
+        (>= 2.6.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppArmadillo, RcppEigen
+        (>= 0.3.3.3.0), RcppParallel (>= 5.0.1), rstan (>= 2.18.1),
+        StanHeaders (>= 2.18.0)
+SystemRequirements: GNU make
+Suggests: knitr, loo, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Packaged: 2026-07-22 03:06:49 UTC; Haijiang
+Author: Haijiang Qin [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0000-6721-5653>),
+  Lei Guo [aut, cph] (ORCID: <https://orcid.org/0000-0002-8273-3587>)
+Maintainer: Haijiang Qin <haijiang133@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-07-30 17:20:30 UTC

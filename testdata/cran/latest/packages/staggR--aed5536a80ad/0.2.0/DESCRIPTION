@@ -1,0 +1,36 @@
+Package: staggR
+Type: Package
+Title: Fit Difference-in-Differences Models with Staggered
+        Interventions
+Version: 0.2.0
+Authors@R: c(person("Kyle", "Hart",
+                    email = "hartky@ohsu.edu",
+                    role = c("aut", "cre", "cph"),
+                    comment = c(ORCID = "0000-0001-8964-204X")),
+             person("Stephan", "Lindner",
+                    role = c("aut")))
+Description: Fits linear difference-in-differences models in scenarios where
+    intervention roll-outs are staggered over time. The package implements a 
+    version of an approach proposed by Sun and Abraham (2021) 
+    <doi:10.1016/j.jeconom.2020.09.006> to estimate cohort- and 
+    time-since-treatment specific difference-in-differences parameters, and it 
+    provides convenience functions both for specifying the model and for 
+    flexibly aggregating coefficients to answer a variety of research questions. 
+URL: https://github.com/chse-ohsu/staggR
+BugReports: https://github.com/chse-ohsu/staggR/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1)
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, sandwich
+VignetteBuilder: knitr
+Imports: ggplot2 (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-04-02 13:33:57 UTC; hartky
+Author: Kyle Hart [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8964-204X>),
+  Stephan Lindner [aut]
+Maintainer: Kyle Hart <hartky@ohsu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-02 13:50:44 UTC

@@ -1,0 +1,22 @@
+Package: glmfitmiss
+Title: Fitting GLMs with Missing Data in Both Responses and Covariates
+Description: Fits generalized linear models (GLMs) when there is missing data in both the response and categorical covariates. The functions implement likelihood-based methods using the Expectation and Maximization (EM) algorithm and optionally apply Firth’s bias correction for improved inference. See Pradhan, Nychka, and Bandyopadhyay (2025) <https:>, Maiti and Pradhan (2009) <doi:10.1111/j.1541-0420.2008.01186.x>, Maity, Pradhan, and Das (2019) <doi:10.1080/00031305.2017.1407359> for further methodological details.
+Version: 2.1.0
+Authors@R: c(person(given = "Vivek", family = "Pradhan", role = c("aut", "cre"), email = "vpradhan2009@gmail.com"), person(given = "Douglas", family = "Nychka", role = "aut",email = "nychka@mines.edu"), person(given = "Soutir", family = "Bandyopadhyay", role = "aut", email = "bsoutir@gmail.com"))
+Depends: R (>= 4.0.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports: data.table (>= 1.12.8), dplyr (>= 1.0.0), abind (>= 1.4-5),
+        MASS (>= 7.3-53), brglm2 (>= 0.7.1)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-04-18 18:04:18 UTC; vivekpradhan
+Author: Vivek Pradhan [aut, cre],
+  Douglas Nychka [aut],
+  Soutir Bandyopadhyay [aut]
+Maintainer: Vivek Pradhan <vpradhan2009@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-22 14:10:02 UTC

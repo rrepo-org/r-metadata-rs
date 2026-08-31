@@ -1,0 +1,46 @@
+Package: HOIF
+Type: Package
+Title: Higher-Order Influence Function Estimators for the Average
+        Treatment Effect
+Version: 0.2.0
+Authors@R: c(person("Xingyu", "Chen",
+                  email = "xingyuchen0714@sjtu.edu.cn",
+                  role = c("aut", "cre")),
+          person("Lin", "Liu",
+           email = "linliu@sjtu.edu.cn",
+           role = "aut"))
+Description: Implements Higher-Order Influence Function (HOIF) estimators
+    of the Average Treatment Effect (ATE), following Robins et al. (2008)
+    <doi:10.1214/193940307000000527>, Liu et al. (2017)
+    <doi:10.48550/arXiv.1705.07577> and Liu and Li (2023)
+    <doi:10.48550/arXiv.2302.08097>. Estimators of any order are supported,
+    with optional covariate basis transformations (B-splines, Fourier) and
+    optional K-fold sample splitting (cross-fitting) for improved
+    finite-sample performance. The core higher-order U-statistics are
+    computed exactly via the 'ustats' package, an R interface to the
+    'Python' package 'u-stats'; the underlying algorithm and its
+    computational complexity are analyzed in Chen, Zhang and Liu (2025)
+    <doi:10.48550/arXiv.2508.12627>. A pure R implementation (up to order
+    6) is also provided as a fallback that does not require 'Python'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: splines, corpcor, SMUT, ustats (>= 0.1.5)
+Suggests: MASS, testthat (>= 3.0.0), reticulate, knitr, rmarkdown
+URL: https://cxy0714.github.io/HOIF/, https://github.com/cxy0714/HOIF
+BugReports: https://github.com/cxy0714/HOIF/issues
+SystemRequirements: For the default Python backend: Python (>= 3.11)
+        with the 'u-stats', 'numpy' and 'torch' packages (provisioned
+        automatically on first use via 'reticulate', or via
+        ustats::setup_ustats()). Not needed when pure_R_code = TRUE.
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-19 07:29:51 UTC; thinkbook-cxy
+Author: Xingyu Chen [aut, cre],
+  Lin Liu [aut]
+Maintainer: Xingyu Chen <xingyuchen0714@sjtu.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-06-24 08:40:10 UTC

@@ -1,0 +1,22 @@
+Package: rankhazard
+Version: 1.1.1
+Date: 2025-04-28
+Title: Rank-Hazard Plots
+Authors@R: c(person(given = "Juha",
+                      family = "Karvanen",
+                      role = "aut"),
+               person(given = "Nanni",
+                      family = "Ultima",
+                      role = c("aut", "cre"),
+                      email = "nanni.ultima@gmail.com"))
+Imports: survival
+Suggests: rms
+Description: Rank-hazard plots Karvanen and Harrell (2009) <DOI:10.1002/sim.3591> visualize the relative importance of covariates in a proportional hazards model. The key idea is to rank the covariate values and plot the relative hazard as a function of ranks scaled to interval [0,1]. The relative hazard is plotted in respect to the reference hazard, which can bee.g. the hazard related to the median of the covariate.
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2025-04-28 20:07:49 UTC; nanni
+Repository: CRAN
+Date/Publication: 2025-04-29 06:40:02 UTC
+Author: Juha Karvanen [aut],
+  Nanni Ultima [aut, cre]
+Maintainer: Nanni Ultima <nanni.ultima@gmail.com>

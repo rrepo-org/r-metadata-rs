@@ -1,0 +1,36 @@
+Package: oddsapiR
+Title: Access Live Sports Odds from the Odds API
+Version: 1.0.1
+Authors@R: 
+    person("Saiem", "Gilani", , "saiem.gilani@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-7194-9067"))
+Description: A utility to quickly obtain clean and tidy sports odds from
+    The Odds API <https://the-odds-api.com>. Provides wrappers for every
+    version 4 endpoint -- featured-market and single-event odds (including
+    player props and alternate lines), historical odds snapshots, scores,
+    events, participants, and usage-quota reporting -- returning tidy
+    tibbles ready for analysis.
+License: MIT + file LICENSE
+URL: https://oddsapiR.sportsdataverse.org/,
+        https://github.com/sportsdataverse/oddsapiR
+BugReports: https://github.com/sportsdataverse/oddsapiR/issues
+Depends: R (>= 4.0.0)
+Imports: cli (>= 3.4.1), data.table (>= 1.14.0), dplyr (>= 1.0.10),
+        glue, httr2 (>= 1.0.0), jsonlite, magrittr, rlang (>= 1.0.4),
+        rvest (>= 1.0.0), tibble (>= 3.0), tidyr (>= 1.0.0)
+Suggests: crayon (>= 1.3.4), curl, DBI, ggplot2, ggrepel, gt, knitr,
+        progressr (>= 0.6.0), Rcpp (>= 1.0.7), RcppParallel (>= 5.1.4),
+        rmarkdown, RSQLite, stats, stringi, stringr (>= 1.5.0),
+        testthat, tidyselect (>= 1.2.0), usethis (>= 1.6.0), xml2 (>=
+        1.3)
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: pandoc (>= 1.12.3), pandoc-citeproc
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-27 11:39:35 UTC; saiem
+Author: Saiem Gilani [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-7194-9067>)
+Maintainer: Saiem Gilani <saiem.gilani@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-27 23:20:02 UTC

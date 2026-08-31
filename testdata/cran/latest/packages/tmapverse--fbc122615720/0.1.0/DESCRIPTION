@@ -1,0 +1,21 @@
+Package: tmapverse
+Type: Package
+Title: Meta-Package for Thematic Mapping with 'tmap'
+Version: 0.1.0
+Authors@R: c(
+	person("Martijn", "Tennekes", , "mtennekes@gmail.com", role = c("aut", "cre")),
+	person("Robin", "Lovelace", , "rob00x@gmail.com", role = "ctb"))
+Description: Attaches a set of packages commonly used for spatial plotting with 'tmap'. It includes 'tmap' and its extensions ('tmap.glyphs', 'tmap.networks', 'tmap.cartogram', 'tmap.mapgl'), as well as supporting spatial data packages ('sf', 'stars', 'terra') and 'cols4all' for exploring color palettes. The collection is designed for thematic mapping workflows and does not include the full set of packages from the R-spatial ecosystem.
+Depends: R (>= 4.1)
+Imports: tmap (>= 4.2), tmap.glyphs, tmap.networks, tmap.cartogram,
+        tmap.mapgl, sf, stars, terra, cols4all, cli, crayon
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-10-09 15:24:09 UTC; mtes
+Author: Martijn Tennekes [aut, cre],
+  Robin Lovelace [ctb]
+Maintainer: Martijn Tennekes <mtennekes@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-16 11:40:02 UTC

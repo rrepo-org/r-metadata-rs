@@ -1,0 +1,22 @@
+Package: UVdose
+Title: Estimate Ambient UV Dose from Location and Date Info
+Version: 0.1.1
+Authors@R: c(person(given = "Rasha", family = "Shraim", email = "rshraim@tcd.ie", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3351-1179")), person(given = "Lina", family = "Zgaga", email = "zgagaL@tcd.ie", role = c("aut"), comment = c(ORCID = "0000-0003-4089-9703")))
+Description: Estimate ambient vitamin D-effective or erythemal dose using ultraviolet radiation (UV) data from the 'TEMIS' database, based on date and geographical location.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: dplyr, ncdf4, tidyr, reshape2, lubridate, magrittr, purrr,
+        rlang
+Depends: R (>= 3.5)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-09-30 14:53:19 UTC; rasha
+Author: Rasha Shraim [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3351-1179>),
+  Lina Zgaga [aut] (ORCID: <https://orcid.org/0000-0003-4089-9703>)
+Maintainer: Rasha Shraim <rshraim@tcd.ie>
+Repository: CRAN
+Date/Publication: 2025-10-06 08:40:09 UTC

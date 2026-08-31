@@ -1,0 +1,40 @@
+Package: SUMO
+Title: Generating Multi-Omics Datasets for Testing and Benchmarking
+Version: 1.2.3
+Authors@R: 
+    c(
+      person(given = "Bernard Isekah", family = "Osang'ir", email = "Bernard.Osangir@sckcen.be", role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-5557-3602")),
+      person("Ziv", "Shkedy", role = "ctb"),
+      person("Surya", "Gupta", role = "ctb"),
+      person("Jürgen", "Claesen", role = "ctb")
+    )
+Description: Provides tools to simulate multi-omics datasets with predefined signal structures. The generated data can be used for testing, validating, and benchmarking integrative analysis methods such as factor models and clustering approaches. This version includes enhanced signal customization, visualization tools (scatter, histogram, 3D), MOFA-based analysis pipelines, PowerPoint export, and statistical profiling of datasets. Designed for both method development and teaching, SUMO supports real and synthetic data pipelines with interpretable outputs. Tini, Giulia, et al (2019) <doi:10.1093/bib/bbx167>.
+License: CC BY 4.0
+Encoding: UTF-8
+Depends: R (>= 4.2)
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), MOFAdata, MOFA2, fabia, basilisk,
+        reticulate, flextable, rvg,
+Config/testthat/edition: 3
+Imports: ggplot2, gridExtra, rlang, grid, jsonlite, ragg, stats,
+        graphics, utils, dplyr, readr, readxl, stringr, data.table,
+        magrittr, tidyverse, systemfonts, officer
+Collate: 'SUMO.R' 'compute_means_vars.R'
+        'convert_legacy_to_current_std.R' 'demo_multiomics_analysis.R'
+        'divide_vector.R' 'divide_features_one.R'
+        'divide_features_two.R' 'divide_samples.R'
+        'divide_samples_alternative.R' 'feature_selection_one.R'
+        'feature_selection_two.R' 'globals.R' 'plot_factor.R'
+        'plot_simData.R' 'plot_weights.R' 'pretrained.R'
+        'simulateMultiOmics.R' 'simulate_twoOmicsData.R' 'sumo_py.R'
+NeedsCompilation: no
+Packaged: 2025-10-16 09:58:20 UTC; bosangir
+Author: Bernard Isekah Osang'ir [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5557-3602>),
+  Ziv Shkedy [ctb],
+  Surya Gupta [ctb],
+  Jürgen Claesen [ctb]
+Maintainer: Bernard Isekah Osang'ir <Bernard.Osangir@sckcen.be>
+Repository: CRAN
+Date/Publication: 2025-10-16 16:40:02 UTC

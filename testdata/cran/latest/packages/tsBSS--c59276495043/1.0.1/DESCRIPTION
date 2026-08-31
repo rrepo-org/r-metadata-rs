@@ -1,0 +1,36 @@
+Package: tsBSS
+Type: Package
+Title: Blind Source Separation and Supervised Dimension Reduction for
+        Time Series
+Version: 1.0.1
+Date: 2026-03-30
+Authors@R: 
+    c(person(given = "Markus", family = "Matilainen", role = c("cre","aut"),
+             email = "markus.matilainen@outlook.com", comment = c(ORCID = "0000-0002-5597-2670")),
+      person(given = "Christophe", family = "Croux", role = "aut"),
+      person(given = "Jari", family = "Miettinen", role = "aut", comment = c(ORCID = "0000-0002-3270-7014")),
+      person(given = "Klaus", family = "Nordhausen", role = c("aut"), comment = c(ORCID = "0000-0002-3758-8501")),
+      person(given = "Hannu", family = "Oja", role = "aut"),
+      person(given = "Sara", family = "Taskinen", role = "aut", comment = c(ORCID = "0000-0001-9470-7258")),
+	  person(given = "Joni", family = "Virta", role = "aut", comment = c(ORCID = "0000-0002-2150-2769")))		 
+Maintainer: Markus Matilainen <markus.matilainen@outlook.com>
+Depends: JADE (>= 2.0-2), ICtest (>= 0.3-7), BSSprep
+Imports: Rcpp (>= 0.11.0), ICS (>= 1.4-2), forecast, boot, parallel,
+        xts, zoo
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: stochvol, MTS, tsbox, dr
+Description: Different estimators are provided to solve the blind source separation problem for multivariate time series with stochastic volatility and supervised dimension reduction problem for multivariate time series. Different functions based on AMUSE and SOBI are also provided for estimating the dimension of the white noise subspace. The package is fully described in Nordhausen, Matilainen, Miettinen, Virta and Taskinen (2021) <doi:10.18637/jss.v098.i15>.
+License: GPL (>= 2)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-03-30 16:07:25 UTC; manmat
+Author: Markus Matilainen [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-5597-2670>),
+  Christophe Croux [aut],
+  Jari Miettinen [aut] (ORCID: <https://orcid.org/0000-0002-3270-7014>),
+  Klaus Nordhausen [aut] (ORCID: <https://orcid.org/0000-0002-3758-8501>),
+  Hannu Oja [aut],
+  Sara Taskinen [aut] (ORCID: <https://orcid.org/0000-0001-9470-7258>),
+  Joni Virta [aut] (ORCID: <https://orcid.org/0000-0002-2150-2769>)
+Repository: CRAN
+Date/Publication: 2026-04-02 10:10:02 UTC

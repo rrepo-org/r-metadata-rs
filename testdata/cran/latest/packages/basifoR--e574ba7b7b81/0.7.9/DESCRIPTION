@@ -1,0 +1,55 @@
+Package: basifoR
+Type: Package
+Title: Retrieval and Processing of the Spanish National Forest
+        Inventory
+Version: 0.7.9
+Authors@R: 
+    c(person(given = "Wilson",
+             family = "Lara",
+             role = c("aut", "cre"),
+             email = "wilarhen@gmail.com",
+	     comment = c(ORCID = "0000-0003-3527-1380")),
+      person(given = "Cristobal",
+             family = "Ordonez",
+             role = "aut",
+	     email = "angelcristobal.ordonez@uva.es",
+	     comment = c(ORCID = "0000-0001-5354-3760")),
+      person(given = "Aitor",
+             family = "Vázquez-Veloso",
+             role = "aut",
+	     email = "aitor.vazquez.veloso@uva.es",
+	     comment = c(ORCID = "0000-0003-0227-506X")),	     
+      person(given = "Felipe",
+             family = "Bravo",
+             role = "aut",
+	     email = "felipe.bravo@uva.es",
+	     comment = c(ORCID = "0000-0001-7348-6695")))
+Maintainer: Wilson Lara <wilarhen@gmail.com>
+Description: Fetches, harmonizes, and analyses data from the Spanish National
+    Forest Inventory for reproducible, design-aware forest inventory workflows.
+    Computes tree- and stand-level metrics, applies sampling-based expansion
+    factors, estimates volume, and supports extensible processing for external
+    inventory designs with custom sampling schemes and volume equations. Spatial
+    extensions can attach plot geometries, preserve geometry sidecars through
+    metric workflows, and return georeferenced sf outputs for mapping and
+    remote-sensing integration.
+URL:
+        https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional.html
+License: GPL-3
+Depends: R (>= 4.4.0)
+Suggests: odbc, ggplot2
+Imports: curl, foreign, Hmisc, httr, measurements, RODBC, rvest, sf,
+        stats, tools, utils
+SystemRequirements: Microsoft Access driver on Windows for Access
+        backends; mdbtools on Unix-like systems
+Encoding: UTF-8
+NeedsCompilation: no
+Author: Wilson Lara [aut, cre] (ORCID: <https://orcid.org/0000-0003-3527-1380>),
+  Cristobal Ordonez [aut] (ORCID:
+    <https://orcid.org/0000-0001-5354-3760>),
+  Aitor Vázquez-Veloso [aut] (ORCID:
+    <https://orcid.org/0000-0003-0227-506X>),
+  Felipe Bravo [aut] (ORCID: <https://orcid.org/0000-0001-7348-6695>)
+Packaged: 2026-08-26 07:16:31 UTC; wilar
+Repository: CRAN
+Date/Publication: 2026-08-26 08:50:02 UTC

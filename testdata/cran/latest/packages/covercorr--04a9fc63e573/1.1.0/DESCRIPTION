@@ -1,0 +1,37 @@
+Package: covercorr
+Title: Coverage Correlation Coefficient and Testing for Independence
+Version: 1.1.0
+Authors@R: c(
+    person(
+      "Tengyao", "Wang",
+      email = "t.wang59@lse.ac.uk",
+      role = c("aut", "cre")
+    ),
+    person(
+      "Mona", "Azadkia",
+      email = "monaazadkia@gmail.com",
+      role = c("aut", "ctb")
+    ),
+    person(
+      "Xuzhi", "Yang",
+      email = "yangxuzhi3@gmail.com",
+      role = c("aut", "ctb")
+    )
+  )
+Maintainer: Tengyao Wang <t.wang59@lse.ac.uk>
+Description: Computes the coverage correlation coefficient introduced in <doi:10.48550/arXiv.2508.06402> , a statistical measure that quantifies dependence between two random vectors by computing the union volume of data-centered hypercubes in a uniform space.
+License: GPL-3
+Imports: transport, MASS, fields, grDevices
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-02 13:27:52 UTC; monaazadkia
+Author: Tengyao Wang [aut, cre],
+  Mona Azadkia [aut, ctb],
+  Xuzhi Yang [aut, ctb]
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-07-02 16:20:02 UTC

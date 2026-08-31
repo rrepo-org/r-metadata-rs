@@ -1,0 +1,21 @@
+Package: GoodFibes
+Type: Package
+Title: Detection and Reconstruction of Muscle Fibers from diceCT Image
+        Data
+Version: 1.0.0
+Date: 2026-04-21
+Authors@R: person(given = "Jessica",
+                      family = "Arbour",
+                      role = c("aut", "cre"),
+                      email = "jessica.arbour@mtsu.edu")
+Maintainer: Jessica Arbour <jessica.arbour@mtsu.edu>
+Description: Reconstruction of muscle fibers from image stacks using textural analysis. Includes functions for tracking, smoothing, cleaning, plotting and exporting muscle fibers. Also calculates basic fiber properties (e.g., length, angle and curvature).
+License: GPL (>= 2)
+Depends: R(>= 3.5.0)
+Imports: rgl, stats, graphics, grDevices, concaveman, prodlim,
+        splines2, imager, matlib
+NeedsCompilation: no
+Packaged: 2026-04-21 22:44:03 UTC; fount
+Author: Jessica Arbour [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-04-23 15:00:02 UTC

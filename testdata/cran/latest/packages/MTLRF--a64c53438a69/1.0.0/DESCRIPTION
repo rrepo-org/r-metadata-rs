@@ -1,0 +1,28 @@
+Package: MTLRF
+Type: Package
+Title: Random Forest Regression with Modified Topp-Leone Error Model
+Version: 1.0.0
+Date: 2026-08-18
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Aruna", "Rajballie", email = "aruna.rajballie@utt.edu.tt", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut")
+  )
+Description: Implements Random Forest regression under the Modified Topp-Leone (MTL) distribution error model. Provides core distribution functions (density, cumulative distribution, exact closed-form quantile, random generation, hazard, and survival), parameter estimation via closed-form Expectation-Maximization/Maximum Likelihood (EM/MLE) and Bayesian Markov Chain Monte Carlo (MCMC), non-parametric bootstrap confidence intervals (at 90%, 95%, and 99% levels), Highest Posterior Density (HPD) intervals, Heidelberger and Welch MCMC convergence diagnostics, model evaluation metrics (estimated values, bias, mean squared error, risk value), homoscedastic prediction intervals, and goodness-of-fit diagnostic tests (Kolmogorov-Smirnov and Anderson-Darling tests, Akaike Information Criterion, and Bayesian Information Criterion). References: Breiman (2001) <doi:10.1023/A:1010933404324>; Singh, Tyagi, Singh, and Tyagi (2025) <https://statassoc.or.th>; Topp and Leone (1955) <doi:10.1080/01621459.1955.10501259>; Wright and Ziegler (2017) <doi:10.18637/jss.v077.i01>; Plummer, Best, Cowles, and Vines (2006) <https://CRAN.R-project.org/package=coda>; Heidelberger and Welch (1983) <doi:10.1287/opre.31.6.1109>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: ranger, coda, goftest, stats, graphics
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-08-17 23:01:40 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Aruna Rajballie [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 13:10:42 UTC

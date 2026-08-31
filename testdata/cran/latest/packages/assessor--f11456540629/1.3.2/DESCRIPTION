@@ -1,0 +1,30 @@
+Package: assessor
+Title: Assessment Tools for Regression Models with Discrete and
+        Semicontinuous Outcomes
+Version: 1.3.2
+Authors@R: c(
+    person("Lu", "Yang", email="luyang@umn.edu", role = "aut"),
+    person("Jeonghwan", "Lee", email="lee03938@umn.edu", role=c("cre", "aut")))
+Description: Provides assessment tools for regression models with discrete and
+    semicontinuous outcomes. The implemented methods are described in
+    Yang (2021) <doi:10.1080/10618600.2021.1910042>,
+    Yang (2024) <doi:10.1080/10618600.2024.2303336>,
+    Yang (2024) <doi:10.1093/biomtc/ujae007>, and
+    Yang (2026) <doi:10.1002/cjs.70046>. It calculates double probability integral transform (DPIT) residuals and constructs QQ plots, ordered curves, quasi-empirical residual distribution functions, and formal goodness-of-fit tests.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://jhlee1408.github.io/assessor/
+BugReports: https://github.com/jhlee1408/assessor/issues
+Imports: tweedie, MASS, VGAM, np, pscl
+Suggests: statmod, rmarkdown, knitr, AER, testthat (>= 3.0.0), mgcv
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-08-22 03:40:25 UTC; jeonghwanlee
+Author: Lu Yang [aut],
+  Jeonghwan Lee [cre, aut]
+Maintainer: Jeonghwan Lee <lee03938@umn.edu>
+Repository: CRAN
+Date/Publication: 2026-08-22 04:00:02 UTC

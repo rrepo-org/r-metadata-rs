@@ -1,0 +1,35 @@
+Package: adj
+Title: Lightweight Adjacency Lists
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "cre"),
+           email = "ctkenny@proton.me",
+           comment = c(ORCID = "0000-0002-9386-6860")),
+    person("Cory", "McCartan", , "mccartan@psu.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-6251-669X"))
+  )
+Description: Provides an S3 class to represent graph adjacency lists using 'vctrs'.
+    Allows for creation, subsetting, combining, and pretty printing of these lists.
+    Adjacency lists can be easily converted to zero-indexed lists, which allows
+    for easy passing of objects to low-level languages for processing.
+Depends: R (>= 3.5)
+Imports: rlang, cli, vctrs (>= 0.6.5)
+Suggests: methods, geos, Matrix, pillar, spelling, testthat (>= 3.0.0)
+License: MIT + file LICENSE
+RoxygenNote: 7.3.3
+LazyData: true
+Language: en-US
+Encoding: UTF-8
+Config/build/compilation-database: true
+Config/testthat/edition: 3
+URL: https://alarm-redist.org/adj/, https://github.com/alarm-redist/adj
+NeedsCompilation: yes
+Packaged: 2026-02-18 01:30:46 UTC; chris
+Author: Christopher T. Kenny [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9386-6860>),
+  Cory McCartan [aut] (ORCID: <https://orcid.org/0000-0002-6251-669X>)
+Maintainer: Christopher T. Kenny <ctkenny@proton.me>
+Repository: CRAN
+Date/Publication: 2026-02-20 10:30:15 UTC

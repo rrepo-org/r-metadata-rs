@@ -1,0 +1,48 @@
+Package: IndependenceTests
+Type: Package
+Title: Non-Parametric Tests of Independence Between Random Vectors
+Version: 0.8
+Date: 2026-07-16
+Authors@R: c(person("Pierre", "Lafaye De Micheaux", role = c("aut", "cre"),
+	             email = "lafaye@unsw.edu.au",
+	             comment = c(ORCID = "0000-0002-0247-5136")),
+             person("Martin", "Bilodeau", role = c("aut"),
+                    email = "bilodeau@dms.umontreal.ca"),
+             person("Yanan", "Fan", role = c("aut"),
+                    email = "y.fan@unsw.edu.au"),
+             person("Spiridon", "Penev", role = c("aut"),
+                    email = "s.penev@unsw.edu.au"),
+             person("Donna", "Salopek", role = c("aut"),
+                    email = "dm.salopek@unsw.edu.au"),
+	     person("Cleve", "Moler", role = "cph",
+	            comment = "LAPACK/BLAS routines in src"),
+	     person("Jack", "Dongarra", role = "cph",
+	            comment = "LAPACK/BLAS routines in src"),
+	     person("Richard", "Hanson", role = "cph",
+	            comment = "LAPACK/BLAS routines in src"),
+	     person("Sven", "Hammarling", role = "cph",
+	            comment = "LAPACK/BLAS routines in src"),
+	     person("Jeremy", "Du Croz", role = "cph",
+	            comment = "LAPACK/BLAS routines in src"))
+Maintainer: Pierre Lafaye De Micheaux <lafaye@unsw.edu.au>
+Description: Non-parametric tests of independence (mutual or serial) between some quantitative random vectors, as described in Bilodeau M. and Lafaye de Micheaux P. (2009) <doi:10.1016/j.jspi.2008.11.006>, in Beran R., Bilodeau M. and Lafaye de Micheaux P. (2007) <doi:10.1016/j.jmva.2007.01.009> and in Fan Y., Lafaye de Micheaux P., Penev S. and Salopek D. (2017) <doi:10.1016/j.jmva.2016.09.014>.
+License: GPL (>= 2)
+Depends: R (>= 2.6.0), xtable, CompQuadForm, MASS, Runuran, parallel
+Copyright: For LAPACK/BLAS routines in src (Univ. of Tennessee, Univ.
+        of California Berkeley, NAG Ltd., Courant Institute, Argonne
+        National Lab, and Rice University).
+NeedsCompilation: yes
+Author: Pierre Lafaye De Micheaux [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0247-5136>),
+  Martin Bilodeau [aut],
+  Yanan Fan [aut],
+  Spiridon Penev [aut],
+  Donna Salopek [aut],
+  Cleve Moler [cph] (LAPACK/BLAS routines in src),
+  Jack Dongarra [cph] (LAPACK/BLAS routines in src),
+  Richard Hanson [cph] (LAPACK/BLAS routines in src),
+  Sven Hammarling [cph] (LAPACK/BLAS routines in src),
+  Jeremy Du Croz [cph] (LAPACK/BLAS routines in src)
+Packaged: 2026-07-16 15:51:21 UTC; lafaye
+Repository: CRAN
+Date/Publication: 2026-07-17 06:30:02 UTC

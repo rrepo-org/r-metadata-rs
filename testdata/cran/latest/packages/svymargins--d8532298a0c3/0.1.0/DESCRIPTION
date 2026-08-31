@@ -1,0 +1,19 @@
+Package: svymargins
+Title: Predictive Margins for Survey Analyses
+Version: 0.1.0
+Authors@R: 
+    person("Tommi", "Härkänen", , "tommi.harkanen@thl.fi", role = c("aut", "cre"))
+Author: Tommi Härkänen [aut, cre]
+Maintainer: Tommi Härkänen <tommi.harkanen@thl.fi>
+Depends: R (>= 4.2.0)
+Description: Predictive margins like in the 'Stata' procedure 'margins'. This package is based on the survey::svypredmean() function. Supported regression analyses are based on survey::svyglm() and svyVGAM::svy_vglm() functions (for multinomial logistic regression models).
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: plyr, dplyr, stringr, survey, tidyselect, VGAM
+Suggests: knitr, rmarkdown, svyVGAM
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-01 11:27:55 UTC; thah
+Repository: CRAN
+Date/Publication: 2026-07-06 14:30:02 UTC

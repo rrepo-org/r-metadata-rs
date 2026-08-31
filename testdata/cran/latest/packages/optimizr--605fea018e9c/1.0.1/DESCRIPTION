@@ -1,0 +1,24 @@
+Package: optimizr
+Type: Package
+Title: Further Numerical Optimization Algorithms
+Version: 1.0.1
+Authors@R: 
+    person("Lukas D", "Sauer", , "sauer@imbi.uni-heidelberg.de", role = c("aut", "cre"))
+Description: A collection of numerical optimization algorithms. 
+    One is a simple implementation of
+    the primitive grid search algorithm, the other is an extension of the
+    simulated annealing algorithm that can take custom boundaries into
+    account. The methodology for this bounded simulated annealing
+    algorithm is due to Haario and Saksman (1991), <doi:10.2307/1427681>.
+Imports: stats, progressr, future.apply
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), doFuture
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-13 10:22:46 UTC; Lukas
+Author: Lukas D Sauer [aut, cre]
+Maintainer: Lukas D Sauer <sauer@imbi.uni-heidelberg.de>
+Repository: CRAN
+Date/Publication: 2026-03-19 13:20:02 UTC

@@ -1,0 +1,86 @@
+Package: myTAI
+Type: Package
+Title: Evolutionary Transcriptomics
+Version: 2.3.7
+Date: 2026-08-24
+Maintainer: Hajk-Georg Drost <hajk-georg.drost@tuebingen.mpg.de>
+Authors@R: c(person("Hajk-Georg", "Drost",
+                role = c("aut", "cre"),
+                email = "hajk-georg.drost@tuebingen.mpg.de",
+                comment = c(ORCID = "0000-0002-1567-306X")),
+              person(given = "Stefan",
+                family = "Manolache",
+                role = c("aut", "ctb"),
+                email = "2648894@dundee.ac.uk",
+                comment = c(ORCID = "0009-0006-3326-985X")),
+              person(given = "Jaruwatana Sodai", 
+                family = "Lotharukpong", 
+                role = c("aut", "ctb"), 
+                email = "jaruwatana.lotharukpong@tuebingen.mpg.de", 
+                comment = c(ORCID = "0000-0002-3475-0980")),
+              person(given = "Nikola", 
+                family = "Kalábová",
+                role = c("aut", "ctb"), 
+                email = "nikola@kalabova.eu", 
+                comment = c(ORCID = "0009-0007-6384-8809")),
+                person(given = "Filipa", 
+                family = "Martins Costa",
+                role = c("aut", "ctb"), 
+                email = "up202301003@edu.fc.up.pt"),
+              person(given = "Kristian K",
+                family = "Ullrich",
+                role = c("aut", "ctb"),
+                email = "ullrich@evolbio.mpg.de",
+                comment = c(ORCID = "0000-0003-4308-9626")))
+Description: Investigate the evolution of biological processes by capturing evolutionary signatures in transcriptomes (Drost et al. (2018) <doi:10.1093/bioinformatics/btx835>). This package aims to provide a transcriptome analysis environment to quantify the average evolutionary age of genes contributing to a transcriptome of interest. 
+NeedsCompilation: yes
+License: GPL-2
+Depends: R (>= 4.1)
+Imports: S7, patchwork, purrr, tidyr, Rcpp, memoise, fitdistrplus (>=
+        1.1-5), dplyr (>= 0.3.0), RColorBrewer (>= 1.1-2), ggplot2 (>=
+        1.0.1), ggforce, ggridges, readr (>= 0.2.2), tibble, ggplotify,
+        ggrepel, Matrix, pheatmap
+Suggests: knitr (>= 1.6), rmarkdown (>= 0.3.3), testthat (>= 0.9.1),
+        mgcv, Seurat, SeuratObject, uwot, decor, DESeq2, gganimate,
+        taxize
+LinkingTo: RcppArmadillo, RcppThread, Rcpp
+URL: https://drostlab.github.io/myTAI/
+BugReports: https://github.com/drostlab/myTAI/issues
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+VignetteBuilder: knitr
+Collate: 'globals.R' 'utils_S7.R' 'utils_math.R' 'phyloset_base.R'
+        'phyloset_bulk.R' 'phyloset_sc.R' 'stat_distributions.R'
+        'stat_test_result.R' 'RcppExports.R' 'age.apply.R' 'datasets.R'
+        'destroy_pattern.R' 'gatai_convergence_plots.R'
+        'genes_filter.R' 'genes_patterns.R' 'genes_transforms.R'
+        'myTAI-package.R' 'omit_matrix.R' 'plot_contribution.R'
+        'plot_distribution_expression.R' 'plot_distribution_pTAI.R'
+        'plot_distribution_strata.R' 'plot_gene_heatmap.R'
+        'plot_gene_profiles.R' 'plot_gene_space.R' 'plot_mean_var.R'
+        'plot_relative_expression.R' 'plot_sample_space.R'
+        'plot_signature.R' 'plot_signature_gene_quantiles.R'
+        'plot_signature_multiple.R' 'plot_signature_transformed.R'
+        'plot_strata_expression.R' 'plot_utils.R'
+        'stat_ci_estimation.R' 'stat_early_conservation_test.R'
+        'stat_flatline_test.R' 'stat_generic_conservation_test.R'
+        'stat_late_conservation_test.R' 'stat_null_conservation_txis.R'
+        'stat_pairwise_test.R' 'stat_reductive_hourglass_test.R'
+        'stat_reverse_hourglass_test.R' 'taxid.R' 'tf_PS.R'
+        'tf_stability.R' 'zzz.R'
+Packaged: 2026-08-24 14:27:36 UTC; 2648894
+Author: Hajk-Georg Drost [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1567-306X>),
+  Stefan Manolache [aut, ctb] (ORCID:
+    <https://orcid.org/0009-0006-3326-985X>),
+  Jaruwatana Sodai Lotharukpong [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-3475-0980>),
+  Nikola Kalábová [aut, ctb] (ORCID:
+    <https://orcid.org/0009-0007-6384-8809>),
+  Filipa Martins Costa [aut, ctb],
+  Kristian K Ullrich [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0003-4308-9626>)
+Repository: CRAN
+Date/Publication: 2026-08-24 16:50:02 UTC

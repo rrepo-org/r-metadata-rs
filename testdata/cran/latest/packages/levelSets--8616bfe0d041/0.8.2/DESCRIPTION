@@ -1,0 +1,35 @@
+Package: levelSets
+Version: 0.8.2
+Date: 2026-06-15
+Title: Ray-Based Mapping and Visualization of Level Sets (Excursion
+        Sets)
+Authors@R: c(person("Richard", "Raubertas", role=c("aut", "cre"), 
+                    email="rrprf@emvt.net"))
+Author: Richard Raubertas [aut, cre]
+Maintainer: Richard Raubertas <rrprf@emvt.net>
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+Imports: graphics, stats, tools, utils, proxy, withr
+Suggests: ggplot2, randomForest, palmerpenguins, knitr, rmarkdown
+Description: An (upper) level set of a function is the set of inputs for 
+  which the function value is at or above a specified threshold.  (Also 
+  called an excursion set).  Applications of level sets include confidence 
+  or credible regions for parameters of statistical models, where the function 
+  is the likelihood or posterior density; regions where classification rules 
+  assign high probability to a given class; and scientific or engineering 
+  models where one is interested in input regions for which model output 
+  is above a threshold.  This package maps out the boundary of a level 
+  set by finding its intersections with collections of 1-dimensional rays, 
+  generalizing a proposal by Kim and Lindsay (Statistica Sinica 21:923-948, 
+  2011).  Tools are provided to generate rays, find intersections, and 
+  visualize results.  The package makes few assumptions about the studied 
+  function:  it may be discontinuous, it may have a complicated feasible 
+  region, and the target level set may be non-convex or have multiple, 
+  disconnected parts.  Vignettes describe package usage and show examples 
+  with two to five input space dimensions.
+LazyData: yes
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2026-06-16 03:31:07 UTC; rfr
+Repository: CRAN
+Date/Publication: 2026-06-22 14:30:02 UTC

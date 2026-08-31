@@ -1,0 +1,38 @@
+Package: bqmm
+Title: Bayesian Multilevel Quantile Regression
+Version: 0.1.0
+Authors@R: 
+    person("Kailas", "Venkitasubramanian", email = "kailasv@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: Fits Bayesian mixed-effects (multilevel) quantile regression
+    models using the asymmetric Laplace working likelihood and Stan. Supports
+    an 'lme4'-style formula interface with nested and crossed random effects,
+    fitting one or several quantiles, post-hoc non-crossing rearrangement of
+    fitted quantiles, and the Yang, Wang and He (2016) posterior-variance
+    correction for valid frequentist inference from the (misspecified)
+    asymmetric Laplace posterior.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Biarch: true
+Depends: R (>= 4.0.0)
+Imports: methods, stats, graphics, grDevices, lme4, Matrix, Rcpp (>=
+        0.12.0), RcppParallel (>= 5.0.1), rstan (>= 2.26.0), rstantools
+        (>= 2.4.0), posterior
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.26.0), StanHeaders (>=
+        2.26.0)
+Suggests: bayesplot, ggplot2, lqmm, MASS, nlme, quantreg, testthat (>=
+        3.0.0), knitr, rmarkdown
+SystemRequirements: GNU make
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+VignetteBuilder: knitr
+URL: https://github.com/kvenkita/bqmm, https://kvenkita.github.io/bqmm/
+BugReports: https://github.com/kvenkita/bqmm/issues
+NeedsCompilation: yes
+Packaged: 2026-06-29 11:45:38 UTC; kyle
+Author: Kailas Venkitasubramanian [aut, cre, cph]
+Maintainer: Kailas Venkitasubramanian <kailasv@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-10 20:00:02 UTC

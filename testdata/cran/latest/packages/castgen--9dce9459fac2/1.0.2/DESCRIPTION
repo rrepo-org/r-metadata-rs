@@ -1,0 +1,31 @@
+Package: castgen
+Title: Estimate Sample Size for Population Genomic Studies
+Version: 1.0.2
+Authors@R: 
+    person("Alexander M.", "Sandercock", , "ams866@cornell.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0001-6897-1856"))
+Description: Estimate sample sizes needed to capture target levels of
+    genetic diversity from a population (multivariate allele frequencies)
+    for applications like germplasm conservation and breeding efforts.
+    Compares bootstrap samples to a full population using linear
+    regression, employing the R-squared value to represent the proportion
+    of diversity captured. Iteratively increases sample size until a
+    user-defined target R-squared is met. Offers a parallelized R
+    implementation of a previously developed 'python' method. All ploidy
+    levels are supported. For more details, see Sandercock et al. (2024) <doi:10.1073/pnas.2403505121>.
+License: Apache License (>= 2)
+URL: https://github.com/alex-sandercock/castgen
+BugReports: https://github.com/alex-sandercock/castgen/issues
+Imports: doParallel (>= 1.0.17), dplyr (>= 1.1.2), foreach (>= 1.5.2),
+        parallel (>= 4.0.0), Rdpack (>= 0.7), stats, utils, vcfR (>=
+        1.15.0)
+Suggests: testthat (>= 3.0.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-04-01 19:42:07 UTC; ams866
+Author: Alexander M. Sandercock [aut, cre]
+    (<https://orcid.org/0000-0001-6897-1856>)
+Maintainer: Alexander M. Sandercock <ams866@cornell.edu>
+Repository: CRAN
+Date/Publication: 2025-04-02 17:40:05 UTC

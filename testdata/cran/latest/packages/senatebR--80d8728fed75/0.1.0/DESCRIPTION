@@ -1,0 +1,29 @@
+Package: senatebR
+Type: Package
+Title: Collect Data from the Brazilian Federal Senate Open Data API
+Version: 0.1.0
+Authors@R: person("Vinicius", "Santos", email = "santos.vinicius18@gmail.com", role = c("aut", "cre"))
+Description: Provides functions to access and collect data from the Brazilian
+    Federal Senate open data API and website. Covers senators, legislative
+    materials, committees, voting records, speeches, provisional measures,
+    vetoes, and legislative agendas, returning results as tidy data frames
+    ready for analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: glue (>= 1.6.2), lubridate (>= 1.9.3), jsonlite (>= 1.8.8),
+        xml2 (>= 1.3.6), magrittr (>= 2.0.3), httr (>= 1.4.7), rvest
+        (>= 1.0.0), dplyr (>= 1.1.2), tidyr (>= 1.3.0), purrr (>=
+        1.0.2), stringr (>= 1.5.1)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr, ggplot2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+URL: https://github.com/vsntos/senatebR
+BugReports: https://github.com/vsntos/senatebR/issues
+NeedsCompilation: no
+Packaged: 2026-04-08 21:56:22 UTC; viniciussantos
+Author: Vinicius Santos [aut, cre]
+Maintainer: Vinicius Santos <santos.vinicius18@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-16 08:40:02 UTC

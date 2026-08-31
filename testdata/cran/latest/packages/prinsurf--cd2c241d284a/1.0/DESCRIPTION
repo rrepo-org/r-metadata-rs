@@ -1,0 +1,19 @@
+Package: prinsurf
+Title: Constructs Principal Surfaces
+Version: 1.0
+Authors@R: 
+    person("Raeesa", "Ganey", , "Raeesa.ganey@wits.ac.za", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0008-6973-0999"))
+Description: Construct a principal surface that are two-dimensional surfaces that pass through the middle of a p-dimensional data set. They minimise the distance from the data points, and provide a nonlinear summary of data. The surfaces are nonparametric and their shape is suggested by the data. The formation of a surface is found using an iterative procedure which starts with a linear summary, typically with a principal component plane. Each successive iteration is a local average of the p-dimensional points, where an average is based on a projection of a point onto the nonlinear surface of the previous iteration. For more information on principal surfaces, see Ganey, R. (2019, "https://open.uct.ac.za/items/4e655d7d-d10c-481b-9ccc-801903aebfc8").
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: rgl
+Suggests: stats, Matrix, akima, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-03-10 16:26:16 UTC; raeesaganey
+Author: Raeesa Ganey [aut, cre] (<https://orcid.org/0009-0008-6973-0999>)
+Maintainer: Raeesa Ganey <Raeesa.ganey@wits.ac.za>
+Repository: CRAN
+Date/Publication: 2025-03-12 17:30:12 UTC

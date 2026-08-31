@@ -1,0 +1,37 @@
+Package: db2pq
+Type: Package
+Title: Export Database Tables to 'Parquet'
+Version: 0.0.4
+Description: Tools for exporting 'PostgreSQL' tables to 'Parquet' files, with
+    support for chunked writes, column type overrides, and timezone-aware
+    timestamp handling. Includes functions for maintaining a local 'Parquet'
+    data library sourced from 'WRDS' (Wharton Research Data Services), with
+    update-checking based on table metadata, and archive management utilities
+    for versioning local data files. See Gow and Ding (2024)
+    "Empirical Research in Accounting: Tools and Methods"
+    <doi:10.1201/9781003456230>.
+URL: https://github.com/iangow/db2pqr, https://iangow.github.io/db2pqr/
+BugReports: https://github.com/iangow/db2pqr/issues
+Authors@R: c(
+    person(
+      "Ian D.", "Gow",
+      email = "iandgow@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Author: Ian D. Gow [aut, cre]
+Maintainer: Ian D. Gow <iandgow@gmail.com>
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: arrow, DBI, keyring, RPostgres, tibble, tools, wrds
+Suggests: adbcpostgresql, adbcdrivermanager, adbi, duckdb, dplyr,
+        dbplyr, ggplot2, knitr, nanoarrow, processx, quarto,
+        rstudioapi, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown, quarto
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-29 13:34:03 UTC; igow
+Repository: CRAN
+Date/Publication: 2026-06-02 09:50:02 UTC

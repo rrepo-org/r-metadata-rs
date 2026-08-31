@@ -1,0 +1,29 @@
+Package: simPDF
+Type: Package
+Title: Fast Multi-Page PDF Report Layout on the Graphics Device
+Version: 0.1.1
+Date: 2026-07-21
+Authors@R: person(given = "Kyun-Seop", family = "Bae",
+                  role = c("aut", "cre"), email = "k@acr.kr")
+Maintainer: Kyun-Seop Bae <k@acr.kr>
+Description: A lightweight, dependency-free engine to build multi-page PDF
+    reports quickly on top of R's built-in graphics device ('pdf'/'cairo_pdf').
+    Content is placed by a measured flow layout: every text block reports its
+    real width and height via 'strwidth'/'strheight', the vertical cursor
+    advances by measured height, and pages break automatically. This eliminates
+    the text-overlap of dead-reckoned coordinate reports (such as the 'nmw'
+    NONMEM diagnostic reports) and replaces slow '.Rmd'/'knitr'/'LaTeX'
+    pipelines for fixed report generation. Interactive AcroForm CRFs are out of
+    scope and handled by the sibling 'pdfCRF' package.
+Depends: R (>= 3.6.0)
+Imports: grDevices, graphics
+Suggests: tinytest, png, jpeg, knitr, rmarkdown
+VignetteBuilder: knitr
+License: GPL-3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-21 12:02:46 UTC; Kyun-SeopBae
+Author: Kyun-Seop Bae [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-07-30 16:50:02 UTC

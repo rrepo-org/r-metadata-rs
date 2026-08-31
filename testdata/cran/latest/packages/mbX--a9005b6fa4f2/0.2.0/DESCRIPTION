@@ -1,0 +1,32 @@
+Package: mbX
+Type: Package
+Title: A Comprehensive Microbiome Data Processing Pipeline
+Version: 0.2.0
+Depends: R (>= 4.1.0)
+Authors@R: 
+    person("Utsav", "Lamichhane",
+           email = "utsav.lamichhane@gmail.com",
+           role = c("aut", "cre"))
+Description: 
+    Provides tools for cleaning, processing, and preparing microbiome 
+    sequencing data (e.g., 16S rRNA) for downstream analysis. Supports CSV, 
+    TXT, and Excel file formats. The main function, ezclean(), automates 
+    microbiome data transformation, including format validation, 
+    transposition, numeric conversion, and metadata integration. It also 
+    handles taxonomic levels efficiently, resolves duplicated taxa entries, 
+    and outputs a well-structured, analysis-ready dataset. The companion 
+    functions ezstat() run statistical tests and summarize results, while 
+    ezviz() produces publication-ready visualizations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: tools, readxl, openxlsx, dplyr, tidyr, ggplot2, rstatix,
+        tibble, FSA, multcompView
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2025-07-23 22:43:52 UTC; ugalab4
+Maintainer: Utsav Lamichhane <utsav.lamichhane@gmail.com>
+Author: Utsav Lamichhane [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-07-23 23:00:02 UTC

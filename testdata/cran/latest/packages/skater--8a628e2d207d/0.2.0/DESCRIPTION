@@ -1,0 +1,46 @@
+Package: skater
+Title: Utilities for SNP-Based Kinship Analysis
+Description: Utilities for single nucleotide polymorphism (SNP) based kinship analysis
+    testing and evaluation. The 'skater' package contains functions for importing, parsing, 
+    and analyzing pedigree data, performing relationship degree inference, benchmarking 
+    relationship degree classification, and summarizing identity by descent (IBD) segment data.
+    Package functions and methods are described in Turner et al. (2021) "skater: An R package 
+    for SNP-based Kinship Analysis, Testing, and Evaluation" <doi:10.1101/2021.07.21.453083>.
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Stephen",
+             family = "Turner",
+             role = "aut",
+             email = "vustephen@gmail.com",
+             comment = c(ORCID = "0000-0001-9140-9028")),
+      person(given = "Matthew",
+             family = "Scholz",
+             role = "aut",
+             comment = c(ORCID = "0000-0003-3686-1227")),
+      person(given = "VP",
+             family = "Nagraj",
+             role = c("aut", "cre"),
+             email = "nagraj@nagraj.net",
+             comment = c(ORCID = "0000-0003-0060-566X")),
+      person("Signature Science, LLC.",
+             role = "cph"))
+License: MIT + file LICENSE
+URL: https://github.com/signaturescience/skater
+BugReports: https://github.com/signaturescience/skater/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.0.0)
+Imports: magrittr, dplyr, tidyr, readr, purrr, kinship2, corrr,
+        grDevices, tibble, rlang
+Suggests: rmarkdown, markdown, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-06 14:01:24 UTC; vpn
+Author: Stephen Turner [aut] (ORCID: <https://orcid.org/0000-0001-9140-9028>),
+  Matthew Scholz [aut] (ORCID: <https://orcid.org/0000-0003-3686-1227>),
+  VP Nagraj [aut, cre] (ORCID: <https://orcid.org/0000-0003-0060-566X>),
+  Signature Science, LLC. [cph]
+Maintainer: VP Nagraj <nagraj@nagraj.net>
+Repository: CRAN
+Date/Publication: 2026-03-07 16:30:02 UTC

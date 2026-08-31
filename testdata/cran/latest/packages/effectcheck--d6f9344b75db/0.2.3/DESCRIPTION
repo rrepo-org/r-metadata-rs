@@ -1,0 +1,40 @@
+Package: effectcheck
+Type: Package
+Title: Statistical Consistency Checker for Published Research Results
+Version: 0.2.3
+Authors@R: c(person(given = "Gilad", family = "Feldman", role = c("aut", "cre"),
+    email = "giladfel@gmail.com", comment = c(ORCID = "0000-0003-2812-6599")))
+Description: A conservative, assumption-aware statistical consistency checker for
+    published research results. Parses test statistics, effect sizes, and confidence
+    intervals from text, PDF, HTML, and Word documents across multiple citation styles
+    including American Psychological Association (APA), Harvard, Frontiers, PLOS ONE,
+    Scientific Reports, Nature Human Behaviour, PeerJ, eLife, PNAS, and others.
+    Recomputes effect sizes using all plausible variants when design is ambiguous, and
+    validates internal consistency. Supports t-tests, F-tests/ANOVA, correlations,
+    chi-square, z-tests, regression, and nonparametric tests. Provides
+    'statcheck'-compatible API functions for batch processing of files and directories.
+    Explicitly tracks all assumptions and uncertainty in output. Detects decision errors
+    (significance reversals) similar to 'statcheck'. Note: this package is under active
+    development and results should be independently verified. Use is at the sole
+    responsibility of the user. Contributions and verification reports are welcome.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/giladfeldman/escicheck
+BugReports: https://github.com/giladfeldman/escicheck/issues
+SystemRequirements: poppler-utils (pdftotext) for PDF text extraction
+Imports: stringr, stringi, dplyr, purrr, tibble, xml2, rvest, glue,
+        logger, graphics, stats, utils
+Suggests: shiny, shinythemes, DT, knitr, rmarkdown, testthat (>=
+        3.0.0), MBESS, effectsize, jsonlite, tesseract, magick, qpdf,
+        statcheck
+Depends: R (>= 4.1.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-20 16:41:04 UTC; filin
+Author: Gilad Feldman [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2812-6599>)
+Maintainer: Gilad Feldman <giladfel@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-25 10:50:02 UTC

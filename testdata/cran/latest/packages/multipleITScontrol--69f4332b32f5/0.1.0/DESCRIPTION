@@ -1,0 +1,26 @@
+Package: multipleITScontrol
+Type: Package
+Title: Interrupted Time Series with a Control and Multiple
+        Interventions
+Version: 0.1.0
+Authors@R: c(person("Victor", "Yu", email = "victor.yu@hertfordshire.gov.uk", role = c("cre","aut")), person("Emily", "Dickson", role = c("ctb")))
+Description: Provides tools to perform interrupted-time series through a generalised least squares (GLS) framework on linear outcomes. Allows for multiple interventions and a control with ARMA (autoregressive and moving-average) correction. For more details see Lopez Bernal, Cummins, and Gasparrini (2017) <doi:10.1093/ije/dyw098>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), ggpubr, DT, forcats,
+        lubridate, sjPlot, stringi, zoo, tidyr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+Imports: magrittr, dplyr, tibble, rlang, purrr, nlme, AICcmodavg,
+        ggplot2, scales, grid, stats, stringr
+URL: https://herts-phei.github.io/multipleITScontrol/
+NeedsCompilation: no
+Packaged: 2026-03-31 11:34:06 UTC; vyu
+Author: Victor Yu [cre, aut],
+  Emily Dickson [ctb]
+Maintainer: Victor Yu <victor.yu@hertfordshire.gov.uk>
+Repository: CRAN
+Date/Publication: 2026-04-03 20:10:02 UTC

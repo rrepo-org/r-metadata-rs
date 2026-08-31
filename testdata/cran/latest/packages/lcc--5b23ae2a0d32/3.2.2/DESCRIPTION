@@ -1,0 +1,47 @@
+Package: lcc
+Type: Package
+Title: Advanced Analysis of Longitudinal Data Using the Concordance
+        Correlation Coefficient
+Version: 3.2.2
+Date: 2025-11-23
+Authors@R: c(
+    person("Thiago", "de Paula Oliveira", role = c("aut", "cre"),
+           email   = "thiago.paula.oliveira@alumni.usp.br",
+           comment = c(ORCID = "0000-0002-4555-2584")),
+    person("Rafael", "de Andrade Moral", role = "aut",
+           comment = c(ORCID = "0000-0002-0875-3563")),
+    person("Silvio", "Sandoval Zocchi", role = "ctb",
+           comment = c(ORCID = "0000-0003-2535-908X")),
+    person("Clarice", "Garcia Borges Demetrio", role = "ctb",
+           comment = c(ORCID = "0000-0002-3609-178X")),
+    person("John", "Hinde", role = "aut",
+           comment = c(ORCID = "0000-0001-6507-5204")))
+Description: Methods for assessing agreement between repeated 
+    measurements obtained by two or more methods using the longitudinal 
+    concordance correlation coefficient (LCC). Polynomial mixed-effects 
+    models (via 'nlme') describe how concordance, Pearson correlation 
+    and accuracy evolve over time. Functions are provided for model 
+    fitting, diagnostic plots, extraction of summaries, and non-parametric 
+    bootstrap confidence intervals (including parallel computation), 
+    following Oliveira et al. (2018) <doi:10.1007/s13253-018-0321-1>.
+Depends: R (>= 3.2.3), nlme (>= 3.1-124), ggplot2 (>= 2.2.1)
+Imports: hnp, parallel, doSNOW, doRNG, foreach
+Suggests: roxygen2 (>= 3.0.0), covr, testthat, MASS
+License: GPL (>= 2)
+Encoding: UTF-8
+Repository: CRAN
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-11-23 11:31:23 UTC; ThiagoOliveira
+Author: Thiago de Paula Oliveira [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4555-2584>),
+  Rafael de Andrade Moral [aut] (ORCID:
+    <https://orcid.org/0000-0002-0875-3563>),
+  Silvio Sandoval Zocchi [ctb] (ORCID:
+    <https://orcid.org/0000-0003-2535-908X>),
+  Clarice Garcia Borges Demetrio [ctb] (ORCID:
+    <https://orcid.org/0000-0002-3609-178X>),
+  John Hinde [aut] (ORCID: <https://orcid.org/0000-0001-6507-5204>)
+Maintainer: Thiago de Paula Oliveira <thiago.paula.oliveira@alumni.usp.br>
+Date/Publication: 2025-11-23 13:30:11 UTC

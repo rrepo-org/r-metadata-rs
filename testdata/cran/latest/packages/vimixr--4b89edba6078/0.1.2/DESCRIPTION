@@ -1,0 +1,28 @@
+Package: vimixr
+Title: Collapsed Variational Inference for Dirichlet Process (DP)
+        Mixture Model
+Version: 0.1.2
+Authors@R: c( 
+    person("Annesh", "Pal", , "sistm.soft.maintain@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0003-2146-180X")),
+    person("Boris", "Hejblum", , "boris.hejblum@u-bordeaux.fr", role = c("aut"),
+           comment = c(ORCID = "0000-0003-0646-452X"))
+           )
+Description: Collapsed Variational Inference for a Dirichlet Process (DP) mixture model with unknown covariance matrix structure and DP concentration parameter. It enables efficient clustering of high-dimensional data with significantly improved computational speed than traditional MCMC methods. The package incorporates 8 parameterisations and corresponding prior choices for the unknown covariance matrix, from which the user can choose and apply accordingly.
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+License: MIT + file LICENSE
+Imports: ggplot2, patchwork, Rcpp, Rfast, rlang, parallel, stats
+Suggests: knitr, rmarkdown, pbapply, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/annesh07/vimixr
+BugReports: https://github.com/annesh07/vimixr/issues
+LinkingTo: Rcpp, RcppEigen
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-01-09 10:15:09 UTC; ap15
+Author: Annesh Pal [aut, cre] (ORCID: <https://orcid.org/0009-0003-2146-180X>),
+  Boris Hejblum [aut] (ORCID: <https://orcid.org/0000-0003-0646-452X>)
+Maintainer: Annesh Pal <sistm.soft.maintain@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-12 20:30:02 UTC

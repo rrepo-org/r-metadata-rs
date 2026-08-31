@@ -1,0 +1,40 @@
+Package: SpatialInference
+Title: Tools for Statistical Inference with Geo-Coded Data
+Version: 0.1.0
+Authors@R: 
+    person(given = "Alexander",
+           family = "Lehner",
+           role = c("aut", "cre"),
+           email = "alehner@worldbank.org",
+           comment = c(ORCID = "0000-0001-5885-5966"))
+Description: Fast computation of Conley (1999) <doi:10.1016/S0304-4076(98)00084-0>
+    spatial heteroskedasticity and autocorrelation consistent (HAC) standard
+    errors for linear regression models with geo-coded data, with a fast C++
+    implementation by Christensen, Hartman, and Samii (2021)
+    <doi:10.1017/S0020818321000187>. Performance-critical distance calculations,
+    kernel weighting, and variance component accumulation are implemented in C++
+    via 'Rcpp' and 'RcppArmadillo'. Includes tools for estimating the spatial
+    correlation range from covariograms and correlograms following the bandwidth
+    selection method proposed in Lehner (2026) <doi:10.48550/arXiv.2603.03997>,
+    and diagnostic visualizations for bandwidth selection.
+Depends: R (>= 4.1.0)
+License: GPL (>= 3)
+URL: https://github.com/axlehner/SpatialInference
+BugReports: https://github.com/axlehner/SpatialInference/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, sf, data.table, magrittr, stats, tibble
+Suggests: lfe, fixest, dplyr, stringr, spdep, ncf, gstat, sandwich,
+        ggplot2, modelsummary, knitr, rmarkdown, geosphere, testthat
+        (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-03-21 03:46:39 UTC; alexanderlehner
+Author: Alexander Lehner [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5885-5966>)
+Maintainer: Alexander Lehner <alehner@worldbank.org>
+Repository: CRAN
+Date/Publication: 2026-03-25 20:50:23 UTC

@@ -1,0 +1,26 @@
+Package: rapidcodeR
+Title: Optimized Data Analysis System for AI-Based Text Processing
+Version: 0.1.1
+Authors@R: c(
+    person("Gabriel", "Lönn", , "g.e.lonn@stv.uio.no", role = c("aut", "cre")),
+    person("Sebastian", "Schutte", , role = "ctb", comment = "Original code and package idea provided by.")
+    )
+Description: Extracts machine-readable variables from natural language text using
+    AI APIs. Optimized for speed and cost efficiency through parallel processing
+    and direct CSV-formatted responses from language models. Supports multiple AI
+    providers with robust error handling and automatic retry mechanisms for
+    failed extractions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: stringr, openai, groqR, dplyr, rlang, parallel, future,
+        future.apply
+Suggests: testthat (>= 3.0.0), irr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-08 12:14:21 UTC; gelon
+Author: Gabriel Lönn [aut, cre],
+  Sebastian Schutte [ctb] (Original code and package idea provided by.)
+Maintainer: Gabriel Lönn <g.e.lonn@stv.uio.no>
+Repository: CRAN
+Date/Publication: 2026-05-08 17:03:24 UTC

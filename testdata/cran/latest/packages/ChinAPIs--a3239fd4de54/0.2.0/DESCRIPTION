@@ -1,0 +1,43 @@
+Package: ChinAPIs
+Type: Package
+Title: Access Chinese Data via Public APIs and Curated Datasets
+Version: 0.2.0
+Maintainer: Renzo Caceres Rossi <arenzocaceresrossi@gmail.com>
+Description: Provides functions to access data from public RESTful APIs including 'Nager.Date' 
+    and 'World Bank API', retrieving real-time or historical data related to China, such 
+    as holidays and economic indicators. Additionally, the package includes one of the 
+    largest curated collections of open datasets focused on China and Hong Kong, covering 
+    topics such as air quality, demographics, input-output tables, epidemiology, political 
+    structure, names, and social indicators. The package supports reproducible research 
+    and teaching by integrating reliable international APIs and structured datasets from 
+    public, academic, and government sources.
+    For more information on the APIs, see: 
+    'Nager.Date' <https://date.nager.at/Api>, 
+    'World Bank API' <https://datahelpdesk.worldbank.org/knowledgebase/articles/889392>. 
+License: MIT + file LICENSE
+Language: en
+URL: https://github.com/lightbluetitan/chinapis,
+        https://lightbluetitan.github.io/chinapis/
+BugReports: https://github.com/lightbluetitan/chinapis/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: utils, httr, jsonlite, dplyr, scales, tibble
+Suggests: ggplot2, testthat (>= 3.0.0), knitr, rmarkdown
+Authors@R: 
+    person(
+        given = "Renzo",
+        family = "Caceres Rossi",
+        role = c("aut", "cre"),
+        email = "arenzocaceresrossi@gmail.com",
+        comment = c(ORCID = "0009-0005-0744-854X")
+    )
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-02 04:36:35 UTC; Renzo
+Author: Renzo Caceres Rossi [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-0744-854X>)
+Repository: CRAN
+Date/Publication: 2026-07-02 06:30:10 UTC

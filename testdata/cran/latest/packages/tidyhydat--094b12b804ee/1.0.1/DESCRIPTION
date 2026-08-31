@@ -1,0 +1,69 @@
+Package: tidyhydat
+Title: Extract and Tidy Canadian 'Hydrometric' Data
+Version: 1.0.1
+Authors@R: c(
+    person(
+      "Sam", "Albers",
+      role = c("aut", "cre", "cph"),
+      email = "sam.albers@gmail.com",
+      comment = c(ORCID = "0000-0002-9270-7884", "Copyright holder 2022-2025")
+    ),
+    person(
+      "Province of British Columbia",
+      role = "cph",
+      comment = "Copyright holder 2017-2022"
+    ),
+    person(
+      "Tula Foundation",
+      role = "cph",
+      comment = "Copyright holder 2025-present"
+    ),
+    person(
+      "David", "Hutchinson",
+      email = "david.hutchinson@canada.ca",
+      role = "ctb"
+    ),
+    person(
+      "Dewey", "Dunnington",
+      email = "dewey@fishandwhistle.net",
+      role = "ctb"
+    ),
+    person("Ryan", "Whaley", email = "rdgwhaley@gmail.com", role = "ctb"),
+    person("Government of Canada", role = "dtc"),
+    person("Luke", "Winslow", role = "rev", comment = "Reviewed for rOpenSci"),
+    person("Laura", "DeCicco", role = "rev", comment = "Reviewed for rOpenSci")
+    )
+Description: Provides functions to access historical and real-time national 'hydrometric'
+    data from Water Survey of Canada data sources and then applies tidy data principles.
+License: Apache License (== 2.0) | file LICENSE
+URL: https://docs.ropensci.org/tidyhydat/,
+        https://github.com/ropensci/tidyhydat/
+BugReports: https://github.com/ropensci/tidyhydat/issues/
+Depends: R (>= 4.2.0)
+Imports: cli (>= 1.0.0), crayon (>= 1.3.4), DBI (>= 0.7), dbplyr (>=
+        1.1.0), dplyr (>= 0.7.4), httr2 (>= 1.0.0), lubridate (>=
+        1.6.0), rappdirs (>= 0.3.1), readr (>= 1.1.1), rlang (>=
+        0.1.2), RSQLite (>= 2.0), tidyr (>= 0.7.1)
+Suggests: ggplot2, httptest2, knitr, rmarkdown, testthat (>= 3.0.0),
+        covr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-11 17:25:47 UTC; sam.albers
+Author: Sam Albers [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-9270-7884>, Copyright holder
+    2022-2025),
+  Province of British Columbia [cph] (Copyright holder 2017-2022),
+  Tula Foundation [cph] (Copyright holder 2025-present),
+  David Hutchinson [ctb],
+  Dewey Dunnington [ctb],
+  Ryan Whaley [ctb],
+  Government of Canada [dtc],
+  Luke Winslow [rev] (Reviewed for rOpenSci),
+  Laura DeCicco [rev] (Reviewed for rOpenSci)
+Maintainer: Sam Albers <sam.albers@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-11 18:00:02 UTC

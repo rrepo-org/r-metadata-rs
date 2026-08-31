@@ -1,0 +1,61 @@
+Package: contagionchannels
+Type: Package
+Title: Two-Stage Detection and Attribution of Cross-Border Financial
+        Contagion Channels
+Version: 0.1.3
+Date: 2026-04-30
+Authors@R: c(
+    person(given = "Avishek", family = "Bhandari", role = c("aut","cre"),
+           email = "avishekb@iitbbs.ac.in",
+           comment = "Indian Institute of Technology Bhubaneswar"),
+    person(given = "Ipsita", family = "Parida", role = "aut",
+           email = "a23hs09014@iitbbs.ac.in",
+           comment = "Indian Institute of Technology Bhubaneswar"),
+    person(given = "Hitesh Kumar", family = "Sahu", role = "aut",
+           email = "a23hs09012@iitbbs.ac.in",
+           comment = "Indian Institute of Technology Bhubaneswar"))
+Description: Implementation of a two-stage framework for the joint
+    detection-and-attribution of cross-border financial contagion. Stage
+    one detects directional information flows between equity markets via
+    Wavelet-Quantile Transfer Entropy, combining maximal-overlap discrete
+    wavelet decomposition (Percival and Walden, 2000, ISBN:9780521685085)
+    with the transfer-entropy estimator of Schreiber (2000)
+    <doi:10.1103/PhysRevLett.85.461> and quantile conditioning following
+    Han, Linton, Oka and Whang (2016) <doi:10.1016/j.jeconom.2016.03.001>.
+    Stage two attributes each significant directional link to one of five
+    mutually exclusive transmission channels (Trade, Financial,
+    Geopolitical, Behavioural, Monetary Policy) through a multi-method
+    structural identification architecture combining instrumental-variables
+    two-stage least squares with channel-specific external instruments
+    (Stock and Watson, 2018) <doi:10.1111/ecoj.12593>, LASSO-based
+    instrument selection (Belloni, Chernozhukov and Hansen, 2014)
+    <doi:10.1093/restud/rdt044>, local projections (Jorda, 2005)
+    <doi:10.1257/0002828053828518>, heteroskedasticity-based identification
+    (Rigobon, 2003) <doi:10.1162/003465303772815727>, and the
+    Cinelli-Hazlett (2020) <doi:10.1111/rssb.12348> robustness-value
+    sensitivity bound. Bundled datasets and replication scripts reproduce
+    the headline findings of Bhandari, Parida and Sahu (2026)
+    <doi:10.48550/arXiv.2604.26546>; the package is general-purpose and
+    accommodates user-supplied returns and channel proxies.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: xts, zoo, waveslim, quantreg, igraph, parallel, MASS, stats,
+        utils
+Suggests: hdm, glmnet, ggplot2, dplyr, tidyr, patchwork, RColorBrewer,
+        viridis, scales, readxl, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+URL: https://github.com/avishekb9/contagionchannels
+BugReports: https://github.com/avishekb9/contagionchannels/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-05 14:13:57 UTC; ecolex
+Author: Avishek Bhandari [aut, cre] (Indian Institute of Technology
+    Bhubaneswar),
+  Ipsita Parida [aut] (Indian Institute of Technology Bhubaneswar),
+  Hitesh Kumar Sahu [aut] (Indian Institute of Technology Bhubaneswar)
+Maintainer: Avishek Bhandari <avishekb@iitbbs.ac.in>
+Repository: CRAN
+Date/Publication: 2026-05-08 15:10:09 UTC

@@ -1,0 +1,17 @@
+Package: LCCkNN
+Title: Adaptive k-Nearest Neighbor Classifier Based on Local Curvature
+        Estimation
+Version: 0.1.0
+Authors@R: person("Gabriel", "Pereira", ,email = "gabrielfreitaspereira10@gmail.com", role = c("aut", "cre"))
+Description: Implements the kK-NN algorithm, an adaptive k-nearest neighbor classifier that adjusts the neighborhood size based on local data curvature. The method estimates local Gaussian curvature by approximating the shape operator of the data manifold. This approach aims to improve classification performance, particularly in datasets with limited samples.
+License: MIT + file LICENSE
+URL: https://github.com/Gabrielforest/LCCkNN
+Encoding: UTF-8
+Imports: FNN, caret, MLmetrics, stats, class
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-08-21 20:42:36 UTC; gabrielf
+Author: Gabriel Pereira [aut, cre]
+Maintainer: Gabriel Pereira <gabrielfreitaspereira10@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-08-27 12:10:02 UTC

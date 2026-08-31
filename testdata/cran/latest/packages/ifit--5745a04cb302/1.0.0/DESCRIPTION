@@ -1,0 +1,26 @@
+Package: ifit
+Type: Package
+Title: Simulation-Based Fitting of Parametric Models with Minimum Prior
+        Information
+Version: 1.0.0
+Authors@R: person(given = "Guido",
+                  family = "Masarotto",
+                  role = c("aut", "cre"),
+                  email = "guido.masarotto@unipd.it", 
+                  comment = c(ORCID = "0000-0003-4697-1606"))
+Description: Implements an algorithm for fitting a generative model with an intractable likelihood using only box constraints on the parameters.  The implemented algorithm consists of two phases. The first phase (global search) aims to identify the region containing the best solution, while the second phase (local search) refines this solution using a trust-region version of the Fisher scoring method to solve a quasi-likelihood equation. See Guido Masarotto (2025) <doi:10.48550/arXiv.2511.08180> for the details of the algorithm and supporting results.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LinkingTo: Rcpp
+Imports: Rcpp, lpSolve, parallel, splines, stats, graphics
+Suggests: lattice
+Depends: R (>= 3.5.0)
+LazyData: TRUE
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-11-17 09:35:48 UTC; guido
+Author: Guido Masarotto [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4697-1606>)
+Maintainer: Guido Masarotto <guido.masarotto@unipd.it>
+Repository: CRAN
+Date/Publication: 2025-11-20 15:30:02 UTC

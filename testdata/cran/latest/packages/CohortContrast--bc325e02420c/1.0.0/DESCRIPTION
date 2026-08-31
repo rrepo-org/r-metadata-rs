@@ -1,0 +1,46 @@
+Package: CohortContrast
+Type: Package
+Title: Enrichment Analysis of Clinically Relevant Concepts in Common
+        Data Model Cohort Data
+Version: 1.0.0
+Maintainer: Markus Haug <markus.haug@ut.ee>
+Authors@R: c(
+    person("Markus", "Haug", , "markus.haug@ut.ee", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0935-3307")),
+    person("Raivo", "Kolde", , "raivo.kolde@ut.ee", 
+    role = c("aut"), comment = c(ORCID = "0000-0003-2886-6298"))
+    )
+Description: Identifies clinically relevant concepts in Observational Medical
+    Outcomes Partnership Common Data Model cohorts using an
+    enrichment-based workflow. Defines target and control cohorts and extracts
+    medical interventions that are over-represented in the target cohort during
+    the observation period. Users can tune filtering and selection thresholds.
+    The workflow includes chi-squared tests for two proportions with Yates continuity
+    correction, logistic tests, and hierarchy and correlation mappings for
+    relevant concepts. The results can be optionally explored using the bundled
+    graphical user interface. For workflow details and examples, see
+    <https://healthinformaticsut.github.io/CohortContrast/>.
+License: Apache License 2.0
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: Python (>= 3.8)
+Imports: dplyr (>= 1.0.4), tibble, purrr, tidyr (>= 1.0.0), stringr,
+        stats, utils, CDMConnector (>= 2.0.0), CohortConstructor (>=
+        0.6.0), omopgenerics (>= 1.3.0), lubridate (>= 1.9.0),
+        doParallel, parallel, foreach, data.table (>= 1.14.0), cli,
+        jsonlite (>= 1.8.0), nanoparquet (>= 0.4.0)
+Suggests: testthat (>= 3.0.0), PatientProfiles (>= 1.1.0), duckdb, DBI
+        (>= 1.2.0), RPostgres, readr, knitr, rmarkdown, processx,
+        bit64, reshape2, igraph, Matrix, cluster, vegan, reticulate (>=
+        1.26)
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+URL: https://healthinformaticsut.github.io/CohortContrast/
+BugReports: https://github.com/HealthInformaticsUT/CohortContrast/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-09 14:28:29 UTC; markushaug
+Author: Markus Haug [aut, cre] (ORCID: <https://orcid.org/0000-0003-0935-3307>),
+  Raivo Kolde [aut] (ORCID: <https://orcid.org/0000-0003-2886-6298>)
+Repository: CRAN
+Date/Publication: 2026-04-16 09:12:17 UTC

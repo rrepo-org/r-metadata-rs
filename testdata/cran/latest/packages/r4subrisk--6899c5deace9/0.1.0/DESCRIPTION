@@ -1,0 +1,27 @@
+Package: r4subrisk
+Title: Risk Quantification Engine for Clinical Submission Readiness
+Version: 0.1.0
+Authors@R: 
+    person("Pawan Rama", "Mali", email = "prm@outlook.in",
+           role = c("aut", "cre", "cph"))
+Description: Quantifies submission risk using a Failure Modes and Effects
+    Analysis (FMEA)-inspired framework (probability, impact, detectability).
+    Builds risk registers from evidence, computes Risk Priority Numbers (RPN),
+    classifies risk levels, and emits standardized R4SUB (R for Regulatory
+    Submission) evidence table rows via 'r4subcore'. Supports risk mitigation
+    tracking and trend analysis across submission milestones.
+License: MIT + file LICENSE
+URL: https://github.com/R4SUB/r4subrisk
+BugReports: https://github.com/R4SUB/r4subrisk/issues
+Depends: R (>= 4.2)
+Imports: cli, dplyr, r4subcore, rlang, tibble
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-25 15:09:01 UTC; aeroe
+Author: Pawan Rama Mali [aut, cre, cph]
+Maintainer: Pawan Rama Mali <prm@outlook.in>
+Repository: CRAN
+Date/Publication: 2026-03-03 21:20:26 UTC

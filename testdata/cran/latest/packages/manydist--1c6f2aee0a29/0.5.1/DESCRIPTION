@@ -1,0 +1,63 @@
+Package: manydist
+Type: Package
+Title: Distance-Based Learning for Mixed-Type Data
+Version: 0.5.1
+Authors@R: c(
+    person(given = "Alfonso",
+           family = "Iodice D'Enza",
+           role = c("aut", "cre"),
+           email = "iodicede@unina.it"),
+    person(given = "Angelos",
+           family = "Markos",
+           role = "aut",
+           email = "amarkos@gmail.com"),
+    person(given = "Michel",
+           family = "van de Velden",
+           role = "aut"),
+    person(given = "Carlo",
+           family = "Cavicchia",
+           role = "aut"))
+Description: Provides tools for constructing, computing, and using distance
+    measures for numerical, categorical, and mixed-type data. The package
+    implements a flexible framework in which continuous and categorical
+    components can be combined under additive, commensurable, and
+    association-aware specifications. Supported methods include classical
+    distances such as Gower, Euclidean, Manhattan, and Mahalanobis-type
+    distances; categorical dissimilarities such as simple matching,
+    occurrence-frequency, and association-based measures; and mixed-type
+    presets designed to reduce biases due to variable type, scale,
+    distribution, redundancy, and number of categories. The package also
+    provides scaling options, supervised and unsupervised distance
+    constructions, leave-one-variable-out tools for distance-based variable
+    importance, and integration with distance-based learning workflows such
+    as nearest-neighbour prediction, partitioning around medoids, and
+    spectral clustering. Methods are motivated by van de Velden,
+    Iodice D'Enza, Markos, and Cavicchia (2026)
+    <doi:10.1080/10618600.2026.2680181> and related work on categorical
+    and mixed-type dissimilarities.
+URL: https://alfonsoiodicede.github.io/manydist_package/,
+        https://github.com/alfonsoIodiceDE/manydist_package/tree/main/manydist
+BugReports: https://github.com/alfonsoIodiceDE/manydist_package/issues
+Imports: aricode, cluster, clusterGeneration, data.table, dials,
+        distances, dplyr, entropy, fastDummies, forcats, fpc, generics,
+        ggplot2, kdml, magrittr, Matrix, parsnip, philentropy, purrr,
+        readr, recipes, Rfast, rlang, rsample, stats, tibble, tidyr,
+        tidyselect, tune
+Depends: R (>= 4.5.0)
+Suggests: arules, clustMixType, FD, klaR, mclust, palmerpenguins,
+        parallelDist, StatMatch, testthat (>= 3.0.0), workflows,
+        workflowsets
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Packaged: 2026-07-23 15:39:45 UTC; Alfo
+Author: Alfonso Iodice D'Enza [aut, cre],
+  Angelos Markos [aut],
+  Michel van de Velden [aut],
+  Carlo Cavicchia [aut]
+Maintainer: Alfonso Iodice D'Enza <iodicede@unina.it>
+Repository: CRAN
+Date/Publication: 2026-07-23 16:10:06 UTC

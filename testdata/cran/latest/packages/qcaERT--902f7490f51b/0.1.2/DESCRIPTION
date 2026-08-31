@@ -1,0 +1,32 @@
+Package: qcaERT
+Title: Enhanced Robustness Tests for Qualitative Comparative Analysis
+Version: 0.1.2
+Authors@R: 
+    person("Breno A. H.", "Marisguia", email = "marisguiabreno@gmail.com",
+           role = c("aut", "cre", "cph"))
+Description: Provides functions for assessing and visualizing robustness in
+    Qualitative Comparative Analysis (QCA) workflows built with the 'QCA'
+    package, including calibration thresholds, inclusion cutoffs, frequency
+    cutoffs, case influence, subsample stability, alternative analysis settings,
+    theory-specific condition sets, cluster-specific patterns, and solution
+    summaries. Methods build on Dusa (2019)
+    <doi:10.1007/978-3-319-75668-4> and Ragin (2014, ISBN:9780520280038).
+URL: https://CRAN.R-project.org/package=qcaERT,
+        https://github.com/marisguia/qcaERT,
+        https://marisguia.github.io/qcaERT/
+BugReports: https://github.com/marisguia/qcaERT/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr, rmarkdown
+Imports: methods, QCA, stats, utils
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-29 22:42:20 UTC; breno
+Author: Breno A. H. Marisguia [aut, cre, cph]
+Maintainer: Breno A. H. Marisguia <marisguiabreno@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-30 11:00:02 UTC

@@ -1,0 +1,31 @@
+Package: MixMashNet
+Title: Tools for Multilayer and Single Layer Network Modeling
+Version: 1.1.0
+Authors@R: c(person("Maria", "De Martino", email = "maria.demartino@uniud.it", role = c("aut","cre")),
+         person("Caterina", "Gregorio", email = "caterina.gregorio@ki.se", role = "aut"),
+         person("Adrien", "Perigord", email = "adrien.perigord@ki.se", role = "ctb"),
+         person("Hudson", "Golino", email = "hfg9s@virginia.edu", role = "ctb"),
+         person("Jonas", "Haslbeck", email = "jonashaslbeck@gmail.com", role = "ctb"))
+Maintainer: Maria De Martino <maria.demartino@uniud.it>
+Description: Estimation and bootstrap utilities for single layer and multilayer 
+    Mixed Graphical Models, including functions for centrality, bridge metrics,
+    membership stability, and plotting (De Martino et al. (2026) <doi:10.48550/arXiv.2602.05716>).
+License: AGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1)
+Imports: mgm, igraph, qgraph, colorspace, future.apply, stats, utils,
+        ggplot2, EGAnet, networktools, dplyr, magrittr, rlang, tibble,
+        tidyr, patchwork, progressr
+RoxygenNote: 7.3.3
+URL: https://arcbiostat.github.io/MixMashNet/
+BugReports: https://github.com/ARCbiostat/MixMashNet/issues
+NeedsCompilation: no
+Packaged: 2026-06-16 19:38:41 UTC; mariademartino
+Author: Maria De Martino [aut, cre],
+  Caterina Gregorio [aut],
+  Adrien Perigord [ctb],
+  Hudson Golino [ctb],
+  Jonas Haslbeck [ctb]
+Repository: CRAN
+Date/Publication: 2026-06-16 20:40:02 UTC

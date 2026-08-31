@@ -1,0 +1,35 @@
+Package: mooplot
+Type: Package
+Title: Graphical Visualizations for Multi-Objective Optimization
+Version: 0.1.1
+Authors@R: c(person("Manuel", "López-Ibáñez", role = c("aut", "cre"),
+                    email = "manuel.lopez-ibanez@manchester.ac.uk",
+                    comment = c(ORCID = "0000-0001-9974-1295")),
+             person("Carlos", "Fonseca", role = "ctb"),
+             person("Luís", "Paquete", role = "ctb"),
+             person("Mickaël", "Binois", role = "ctb"))
+Description: Visualization of multi-dimensional data arising in multi-objective optimization, including plots of the empirical attainment function (EAF), M. López-Ibáñez, L. Paquete, and T. Stützle (2010) <doi:10.1007/978-3-642-02538-9_9>, and symmetric Vorob'ev expectation and deviation, M. Binois, D. Ginsbourger, O. Roustant (2015) <doi:10.1016/j.ejor.2014.07.032>, among others.
+Depends: R (>= 4.0)
+Imports: Rdpack, collapse (>= 2.0.8), grDevices, graphics, matrixStats,
+        moocore (>= 0.1.5)
+Suggests: extrafont, viridisLite, spelling, testthat (>= 3.0.0), withr
+License: LGPL (>= 2)
+BugReports: https://github.com/multi-objective/mooplot/issues/
+URL: https://multi-objective.github.io/mooplot/r/,
+        https://github.com/multi-objective/mooplot/
+LazyLoad: true
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+RdMacros: Rdpack
+Config/testthat/edition: 3
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2025-05-11 15:12:52 UTC; manu
+Author: Manuel López-Ibáñez [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9974-1295>),
+  Carlos Fonseca [ctb],
+  Luís Paquete [ctb],
+  Mickaël Binois [ctb]
+Maintainer: Manuel López-Ibáñez <manuel.lopez-ibanez@manchester.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-05-12 10:20:02 UTC

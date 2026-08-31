@@ -1,0 +1,30 @@
+Package: ROI.format.cbf
+Type: Package
+Title: Conic Benchmark Format (CBF) Plugin for the R Optimization
+        Infrastructure
+Version: 0.1-0
+Date: 2026-03-19
+Authors@R: person("Benjamin", "Schwendinger", role = c("aut", "cre"),
+                  email = "benjaminschwe@gmail.com")
+Author: Benjamin Schwendinger [aut, cre]
+Maintainer: Benjamin Schwendinger <benjaminschwe@gmail.com>
+Description: Provides read and write support for the Conic Benchmark Format
+    (CBF, version 4) within the R Optimization Infrastructure ('ROI').
+    Supported cone types include the positive orthant, second-order (SOC),
+    rotated second-order (bridged automatically to standard SOC), exponential
+    (primal and dual), power (primal and dual), and semidefinite
+    (symmetric-vectorised) cones, as well as their mixed-integer variants.
+    The reader translates a .cbf file into an ROI 'OP' object, handling
+    coordinate-convention differences between CBF and ROI transparently;
+    the writer serialises an ROI 'OP' object back to CBF plain-text.
+License: GPL-3
+URL: https://gitlab.com/roigrp/tools/roi.format.cbf
+BugReports: https://gitlab.com/roigrp/tools/roi.format.cbf/-/issues
+Imports: ROI (>= 1.0-0), slam (>= 0.1-40)
+Suggests: tinytest, ROI.plugin.ecos, ROI.plugin.scs
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-04-18 14:48:05 UTC; ben
+Repository: CRAN
+Date/Publication: 2026-04-21 19:42:20 UTC

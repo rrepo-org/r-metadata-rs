@@ -1,0 +1,49 @@
+Package: baseballr
+Title: Acquiring and Analyzing Baseball Data
+Version: 2.0.0
+Authors@R: c(
+    person("Bill", "Petti", , "billpetti@gmail.com", role = "aut"),
+    person("Saiem", "Gilani", , "saiem.gilani@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7194-9067")),
+    person("Ben", "Baumer", , "ben.baumer@gmail.com", role = "ctb"),
+    person("Ben", "Dilday", , "ben.dilday.phd@gmail.com", role = "ctb"),
+    person("Robert", "Frey", , "rfrey22@gmail.com", role = "ctb"),
+    person("Camden", "Kay", , "camden.kay23@gmail.com", role = "ctb"),
+    person("baseballr authors", role = "cph")
+  )
+Description: Provides numerous utilities for acquiring and analyzing
+    baseball data from online sources such as 'Baseball Reference'
+    <https://www.baseball-reference.com/>, 'FanGraphs'
+    <https://www.fangraphs.com/>, and the 'MLB Stats' API
+    <https://www.mlb.com/>.
+License: MIT + file LICENSE
+URL: https://billpetti.github.io/baseballr/,
+        https://github.com/BillPetti/baseballr
+BugReports: https://github.com/BillPetti/baseballr/issues
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.4.1), data.table (>= 1.14.0), dplyr (>= 1.0.10),
+        ggplot2, glue, httr2 (>= 1.0.0), janitor, jsonlite, lubridate,
+        magrittr, purrr (>= 1.0.0), Rcpp, RcppParallel, rlang (>=
+        1.0.4), rvest (>= 1.0.0), stringr (>= 1.5.0), tibble (>= 3.0),
+        tidyr (>= 1.0.0)
+Suggests: chromote, crayon (>= 1.3.4), curl, DBI, furrr, future,
+        ggrepel, knitr, pak, progressr (>= 0.6.0), reshape2, rmarkdown,
+        RSQLite, scales, stats, stringi, testthat, usethis (>= 1.6.0),
+        xml2 (>= 1.3), zoo
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-08-26 21:23:56 UTC; saiem
+Author: Bill Petti [aut],
+  Saiem Gilani [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7194-9067>),
+  Ben Baumer [ctb],
+  Ben Dilday [ctb],
+  Robert Frey [ctb],
+  Camden Kay [ctb],
+  baseballr authors [cph]
+Maintainer: Saiem Gilani <saiem.gilani@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-26 21:50:02 UTC

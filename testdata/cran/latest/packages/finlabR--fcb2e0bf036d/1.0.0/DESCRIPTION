@@ -1,0 +1,31 @@
+Package: finlabR
+Type: Package
+Title: Portfolio Analytics and Simulation Toolkit
+Version: 1.0.0
+Authors@R: person("Suyash", "Jindal", role = c("aut", "cre"), email = "jindalsuyash7@gmail.com")
+Description: Tools for portfolio construction and risk analytics, including
+    mean-variance optimization, conditional value at risk (expected shortfall)
+    minimization, risk parity, regime clustering, correlation analysis,
+    Monte Carlo simulation, and option pricing. Includes utilities for
+    portfolio evaluation, clustering, and risk reporting. Methods are based
+    in part on Markowitz (1952) <doi:10.1111/j.1540-6261.1952.tb01525.x>,
+    Rockafellar and Uryasev (2000) <doi:10.21314/JOR.2000.038>, Maillard
+    et al. (2010) <doi:10.3905/jpm.2010.36.4.060>, Black and Scholes (1973)
+    <doi:10.1086/260062>, and Cox et al. (1979)
+    <doi:10.1016/0304-405X(79)90015-1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: stats, utils, quadprog, ggplot2, PerformanceAnalytics, zoo,
+        class, quantmod, reshape2, mclust, shiny
+Suggests: bslib, TTR, DT, xts, yfR, cryptoQuotes, tidyquant, Rtsne,
+        umap, testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-22 06:38:54 UTC; suyashjindal
+Author: Suyash Jindal [aut, cre]
+Maintainer: Suyash Jindal <jindalsuyash7@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-04-22 13:20:14 UTC

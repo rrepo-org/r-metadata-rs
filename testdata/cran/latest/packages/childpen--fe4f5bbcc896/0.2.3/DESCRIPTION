@@ -1,0 +1,28 @@
+Package: childpen
+Title: Identification and Estimation of Child Penalties
+Version: 0.2.3
+Authors@R: c(
+    person("Dor", "Leventer", 
+           email = "leventerdor@gmail.com", 
+           role = c("aut", "cre")))
+Description: Tools to simulate child-penalty data and estimate DID, TD, and NTD
+    identification frameworks from Leventer (2025), "Identification of Child
+    Penalties" <doi:10.48550/arXiv.2602.07486>.
+License: MIT + file LICENSE
+URL: https://github.com/dorleventer/childpen,
+        https://dorleventer.github.io/childpen/
+BugReports: https://github.com/dorleventer/childpen/issues
+Imports: data.table, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), purrr, scales, dplyr,
+        tidyr, ggplot2
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-05-29 20:21:48 UTC; dorleventer
+Author: Dor Leventer [aut, cre]
+Maintainer: Dor Leventer <leventerdor@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-02 11:20:07 UTC

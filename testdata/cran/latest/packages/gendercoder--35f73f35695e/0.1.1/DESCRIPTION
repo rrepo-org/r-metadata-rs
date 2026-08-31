@@ -1,0 +1,69 @@
+Package: gendercoder
+Title: Recodes Sex/Gender Descriptions into a Standard Set
+Version: 0.1.1
+Authors@R: c(
+  person("Yaoxiang", "Li", role = c("aut", "cre"),
+        email = "liyaoxiang@outlook.com", 
+        comment = c(ORCID = "0000-0001-9200-1016")),
+  person("Jennifer", "Beaudry", role = "aut",
+    email = "jbeaudry@swin.edu.au",
+    comment = c(ORCID = "0000-0003-1596-6708")),
+  person("Emily", "Kothe", role = "aut",
+    email = "emily.kothe@deakin.edu.au",
+    comment = c(ORCID = "0000-0003-1210-0554")),
+  person("Felix", "Singleton Thorn", role = "aut",
+    email = "fsingletonthorn@gmail.com", 
+    comment = c(ORCID = "0000-0002-0237-6146")),
+  person("Rhydwyn", "McGuire", role = "aut",
+    email = "rhydwyn@rhydwyn.net"),
+  person("Nicholas", "Tierney", 
+         role = "aut",
+         email = "nicholas.tierney@gmail.com", 
+         comment = c(ORCID = "0000-0003-1460-8722")),
+  person("Mathew", "Ling", 
+         role = "aut",
+         email = "mathewtyling@gmail.com", 
+         comment = c(ORCID = "0000-0002-0940-2538")),       
+  person("Julia", "Silge", 
+         role = "rev",
+    comment = "Julia reviewed the package (v. 0.0.0.9000) for rOpenSci, see <https://github.com/ropensci/software-review/issues/435>"),
+  person("Elin", "Waring", 
+         role = "rev",
+  comment = "Elin reviewed the package (v. 0.0.0.9000) for rOpenSci, see <https://github.com/ropensci/software-review/issues/435>")
+  )
+Description: Provides dictionary-based tools for recoding free-text gender
+    responses into consistent categories while preserving gender diversity where
+    possible. The package standardises spelling, capitalization, whitespace, and
+    common variants through curated named character-vector dictionaries, supports
+    either detailed or collapsed output categories, and can retain original
+    unmatched responses for manual review. It also includes helpers for creating
+    custom dictionaries from approximate string matches and a local interactive
+    application for recoding uploaded data files.
+Depends: R (>= 3.0.0)
+Maintainer: Yaoxiang Li <liyaoxiang@outlook.com>
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, bs4Dash, haven, shiny
+VignetteBuilder: knitr
+URL: https://github.com/ropensci/gendercoder
+BugReports: https://github.com/ropensci/gendercoder/issues
+NeedsCompilation: no
+Packaged: 2026-05-12 23:45:55 UTC; Bach
+Author: Yaoxiang Li [aut, cre] (ORCID: <https://orcid.org/0000-0001-9200-1016>),
+  Jennifer Beaudry [aut] (ORCID: <https://orcid.org/0000-0003-1596-6708>),
+  Emily Kothe [aut] (ORCID: <https://orcid.org/0000-0003-1210-0554>),
+  Felix Singleton Thorn [aut] (ORCID:
+    <https://orcid.org/0000-0002-0237-6146>),
+  Rhydwyn McGuire [aut],
+  Nicholas Tierney [aut] (ORCID: <https://orcid.org/0000-0003-1460-8722>),
+  Mathew Ling [aut] (ORCID: <https://orcid.org/0000-0002-0940-2538>),
+  Julia Silge [rev] (Julia reviewed the package (v. 0.0.0.9000) for
+    rOpenSci, see
+    <https://github.com/ropensci/software-review/issues/435>),
+  Elin Waring [rev] (Elin reviewed the package (v. 0.0.0.9000) for
+    rOpenSci, see
+    <https://github.com/ropensci/software-review/issues/435>)
+Repository: CRAN
+Date/Publication: 2026-05-18 18:10:16 UTC

@@ -1,0 +1,51 @@
+Package: OneShotEM
+Type: Package
+Title: Efficient eM-Algorithm for One-Shot Device Data Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi",
+           email = "shikhar1093tyagi@gmail.com",
+           role  = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey",
+           email = "arvindmzu@gmail.com",
+           role  = "aut"),
+    person("Bhupendra", "Singh",
+           email = "bhupendra.rana@gmail.com",
+           role  = "aut"),
+    person("Vrijesh", "Tripathi",
+           email = "vrijesh.tripathi@uwi.edu",
+           role  = "aut"))
+Description: Implements the simple and efficient Expectation-Maximization (eM)
+    algorithm proposed by Zhu, Li, Li, and Balakrishnan (2026)
+    <doi:10.1080/03610918.2025.2515193> for parameter estimation in one-shot
+    device accelerated life testing (ALT) data. Unlike traditional EM
+    algorithms that impute exact failure times, this method treats failure
+    counts between inspection intervals as missing data, resulting in faster
+    convergence and enhanced numerical stability. Supports Exponential, Weibull,
+    Lognormal, Gamma, and custom user-defined lifetime distributions under
+    log-linear stress models. Standard errors, confidence intervals, model
+    selection statistics (AIC, BIC, AICc, HQIC), residual diagnostics, and
+    visualization tools are provided. References: Balakrishnan and Ling (2012)
+    <doi:10.1016/j.csda.2011.09.010>, Fan, Balakrishnan, and Chang (2009)
+    <doi:10.1080/00949650802142592>.
+License: GPL (>= 3)
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices, utils, methods, numDeriv
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-07 23:14:09 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 12:41:11 UTC

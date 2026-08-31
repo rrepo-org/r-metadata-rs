@@ -1,0 +1,34 @@
+Package: bayesWatch
+Type: Package
+Title: Bayesian Change-Point Detection for Process Monitoring with
+        Fault Detection
+Version: 0.1.4
+Authors@R: c(
+    person("Alexander C.", "Murph",
+           email = "murph290@gmail.com",
+           role = c("aut", "cre")),
+    person("Reza", "Mohammadi",
+           role = c("ctb", "cph")),
+    person("Alex", "Lenkoski",
+           role = c("ctb", "cph")),
+    person("Andrew", "Johnson",
+           role = "ctb"))
+Maintainer: Alexander C. Murph <murph290@gmail.com>
+Description: Bayes Watch fits an array of Gaussian Graphical Mixture Models to groupings of homogeneous data in time, called regimes, which are modeled as the observed states of a Markov process with unknown transition probabilities.  In doing so, Bayes Watch defines a posterior distribution on a vector of regime assignments, which gives meaningful expressions on the probability of every possible change-point.  Bayes Watch also allows for an effective and efficient fault detection system that assesses what features in the data where the most responsible for a given change-point.  For further details, see: Alexander C. Murph et al. (2023) <doi:10.48550/arXiv.2310.02940>.
+Copyright: file COPYRIGHTS
+License: GPL-3
+Imports: Rcpp (>= 1.0.7), parallel (>= 3.6.2), Matrix, Hotelling,
+        CholWishart, ggplot2, gridExtra (>= 0.9.1), BDgraph, methods,
+        MASS, stats, ess
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen, Matrix, CholWishart, BH
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2025-08-30 20:04:31 UTC; root
+Repository: CRAN
+Date/Publication: 2025-08-30 20:20:02 UTC
+Author: Alexander C. Murph [aut, cre],
+  Reza Mohammadi [ctb, cph],
+  Alex Lenkoski [ctb, cph],
+  Andrew Johnson [ctb]

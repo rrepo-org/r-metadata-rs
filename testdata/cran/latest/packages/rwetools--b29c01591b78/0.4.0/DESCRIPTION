@@ -1,0 +1,42 @@
+Package: rwetools
+Title: Estimating Propensity Scores (PS), PS-Based Weights, and Effects
+Version: 0.4.0
+Authors@R: 
+  c(
+  person("Hanseul", "Cho", email="hanseul0618@gmail.com", role = c("aut", "cre")),
+  person("Georg", "Hahn", email="ghahn@bwh.harvard.edu", role="aut"),
+  person("Janinne", "Ortega-Montiel", email="jomontiel@bwh.harvard.edu", role="aut"),
+  person("Julie", "Paik", email="jmpaik@mednet.ucla.edu", role="aut"),
+  person("Elisabetta", "Patorno", email="epatorno@mednet.ucla.edu", role="aut")
+  )
+Description: Toolbox that provides a streamlined, end-to-end workflow for propensity
+    score analysis in generating real-world evidence from real-world data.
+    The package covers the full analytic pipeline - from estimating propensity scores
+    via logistic regression, to calculating weights or creating a matched cohort, 
+    to generating publication-ready Table 1s with standardized mean
+    differences and weighted balance diagnostics. It also estimates incidence rates,
+    hazard ratios, risk ratios, and risk differences with support for stratified and
+    direct-standardized analyses. All core functions produce formatted 'Excel' reports
+    with embedded 'README' documentation, making results immediately shareable with
+    collaborators and stakeholders. Methods are based on Rosenbaum and Rubin (1983)
+    <doi:10.1093/biomet/70.1.41>, Austin (2011) <doi:10.1080/00273171.2011.568786>,
+    and Desai et al. (2017) <doi:10.1097/EDE.0000000000000595>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: stats, utils, parallel, survival, survey
+Suggests: openxlsx, ggplot2, MatchIt, testthat (>= 3.0.0)
+URL: https://github.com/hanseul0618/rwetools
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-01 15:04:43 UTC; hanse
+Author: Hanseul Cho [aut, cre],
+  Georg Hahn [aut],
+  Janinne Ortega-Montiel [aut],
+  Julie Paik [aut],
+  Elisabetta Patorno [aut]
+Maintainer: Hanseul Cho <hanseul0618@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-01 16:50:02 UTC

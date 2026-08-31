@@ -1,0 +1,35 @@
+Type: Package
+Package: csranks
+Title: Statistical Tools for Ranks
+Version: 1.3.0
+Authors@R: c(
+    person("Daniel", "Wilhelm", , "d.wilhelm@lmu.de", role = c("aut", "cre")),
+    person("Pawel", "Morgen", , "seriousmorgen@protonmail.com", role = "aut")
+  )
+Description: Account for uncertainty when working with ranks.  Estimate
+    standard errors consistently in linear regression with ranked
+    variables.  Construct confidence sets of various kinds for positions
+    of populations in a ranking based on values of a certain feature and
+    their estimation errors.  Theory based on Mogstad, Romano, Shaikh, and
+    Wilhelm (2023)<doi:10.1093/restud/rdad006> and Chetverikov and Wilhelm
+    (2023) <doi:10.48550/arXiv.2310.15512>.
+License: GPL (>= 3)
+URL: https://github.com/danielwilhelm/R-CS-ranks,
+        https://danielwilhelm.github.io/R-CS-ranks/
+BugReports: https://github.com/danielwilhelm/R-CS-ranks/issues
+Depends: R (>= 3.5.0)
+Imports: cli, Formula, ggplot2, glue, ivreg, lifecycle, MASS, rlang,
+        scales, stats
+Suggests: grid, knitr, rmarkdown, spelling, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-20 11:58:57 UTC; mrdomani
+Author: Daniel Wilhelm [aut, cre],
+  Pawel Morgen [aut]
+Maintainer: Daniel Wilhelm <d.wilhelm@lmu.de>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:44:19 UTC

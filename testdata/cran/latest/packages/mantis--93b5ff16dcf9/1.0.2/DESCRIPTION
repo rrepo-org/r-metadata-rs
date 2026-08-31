@@ -1,0 +1,38 @@
+Package: mantis
+Type: Package
+Title: Multiple Time Series Scanner
+Version: 1.0.2
+Authors@R: c(
+    person(c("T.", "Phuong"), "Quan", email = "phuongquan567@outlook.com",
+        role = c("aut", "cre"), comment = c(ORCID = "0000-0001-8566-1817")),
+    person(family = "University of Oxford", role = "cph"),
+    person(family = "National Institute for Health Research (NIHR)", role = "fnd"),
+    person("Rodrigo", "Pires", role = "rev"),
+    person("Margaret", "Siple", role = "rev")
+    )
+Description: Generate interactive html reports that enable quick visual review of multiple related time series stored in a data frame. For static datasets, this can help to identify any temporal artefacts that may affect the validity of subsequent analyses. For live data feeds, regularly scheduled reports can help to pro-actively identify data feed problems or unexpected trends that may require action. The reports are self-contained and shareable without a web server. 
+URL: https://github.com/ropensci/mantis,
+        https://ropensci.github.io/mantis/
+BugReports: https://github.com/ropensci/mantis/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: rmarkdown, knitr, reactable, dplyr (>= 1.1.1), tidyr,
+        dygraphs, xts, ggplot2, scales, purrr, htmltools, lubridate
+Suggests: covr, testthat (>= 3.0.0), codemetar, vdiffr, shiny,
+        diffviewer, withr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-11 20:27:59 UTC; phuon
+Author: T. Phuong Quan [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8566-1817>),
+  University of Oxford [cph],
+  National Institute for Health Research (NIHR) [fnd],
+  Rodrigo Pires [rev],
+  Margaret Siple [rev]
+Maintainer: T. Phuong Quan <phuongquan567@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-02-11 20:40:03 UTC

@@ -1,0 +1,26 @@
+Package: IBGS
+Type: Package
+Title: Iterated Block Gibbs Sampler for Ultrahigh-Dimensional Variable
+        Selection and Model Averaging
+Version: 1.0.0
+Authors@R: 
+    person("Lizhong", "Chen", , "chen.l@wehi.edu.au",
+           role = c("aut", "cre"))
+Description: Variable selection for generalized linear models and the Cox
+    proportional-hazards model in ultrahigh dimensions via the iterated block
+    Gibbs sampler (IBGS). The sampler is implemented in C with parallel block
+    screening through 'OpenMP', and supports the gaussian, binomial and poisson
+    families (fitted by least squares or iteratively reweighted least squares)
+    as well as the Cox model for survival analysis (fitted by its Efron partial
+    likelihood), together with the AIC, BIC, AICc and extended BIC model
+    selection criteria.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: graphics, stats
+NeedsCompilation: yes
+Packaged: 2026-06-29 10:07:42 UTC; lizhongc
+Author: Lizhong Chen [aut, cre]
+Maintainer: Lizhong Chen <chen.l@wehi.edu.au>
+Repository: CRAN
+Date/Publication: 2026-07-04 08:30:06 UTC

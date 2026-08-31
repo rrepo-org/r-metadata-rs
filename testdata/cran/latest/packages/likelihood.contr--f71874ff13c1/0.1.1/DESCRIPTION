@@ -1,0 +1,31 @@
+Package: likelihood.contr
+Type: Package
+Title: Likelihood Contribution Models for Heterogeneous Observation
+        Types
+Version: 0.1.1
+Authors@R: 
+    person("Alexander", "Towell", , "lex@metafunctor.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6443-9897"))
+Depends: R (>= 3.5.0)
+Description: Constructs likelihood models from heterogeneous observation types
+    by composing named contributions. Each observation type (exact, left-censored,
+    right-censored, interval-censored, or custom) contributes independently to the
+    total log-likelihood, which is summed under an i.i.d. assumption. Provides
+    contr_name() for standard R distributions and contr_fn() for user-defined
+    contributions, composed via likelihood_contr() into objects compatible with
+    the likelihood.model inference framework.
+License: MIT + file LICENSE
+URL: https://github.com/queelius/likelihood.contr
+BugReports: https://github.com/queelius/likelihood.contr/issues
+Encoding: UTF-8
+Imports: likelihood.model, numDeriv
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-29 17:50:23 UTC; spinoza
+Author: Alexander Towell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6443-9897>)
+Maintainer: Alexander Towell <lex@metafunctor.com>
+Repository: CRAN
+Date/Publication: 2026-04-01 20:00:07 UTC

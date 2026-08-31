@@ -1,0 +1,42 @@
+Package: margEVT
+Type: Package
+Title: Regularized Point Processes and Stochastic Marginalization for
+        Extremes
+Version: 0.2.0
+Authors@R: c(
+    person("Rodrigo Fonseca", "Villa", email = "rodrigo03.villa@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0005-2938-2270")),
+    person("Flavio", "Ziegelmann", email = "flavioaz@mat.ufrgs.br",
+           role = c("aut", "ths"),
+           comment = c(ORCID = "0000-0001-8899-350X"))
+    )
+Description: Implements a non-stationary extreme value analysis framework
+    by coupling a covariate-driven Non-Homogeneous Poisson Process (NHPP)
+    with Elastic-Net regularization and exact analytical gradients. Provides
+    methodologies for estimating conditional return levels and unconditional
+    (marginalized) return levels via parametric stochastic integration over
+    Vector Autoregressive VAR(p) covariate trajectories, or non-parametric
+    annual-block resampling. Temporal resolution and active-set tolerances are
+    propagated consistently through fitting, marginalization, simulation, and
+    validation. Methodologies are based on Villa (2026)
+    <https://sabi.ufrgs.br/> "A Novel Regularized Point Process and Stochastic
+    Marginalization Framework for Return Level Inference under Covariate-Driven
+    Extremes" (Master's dissertation, Universidade Federal do Rio Grande do Sul).
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/rodrigosqrt3/margEVT
+BugReports: https://github.com/rodrigosqrt3/margEVT/issues
+RoxygenNote: 7.3.3
+Imports: stats, utils, vars
+Suggests: dplyr, tidyr, extRemes, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-26 11:42:11 UTC; rodri
+Author: Rodrigo Fonseca Villa [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-2938-2270>),
+  Flavio Ziegelmann [aut, ths] (ORCID:
+    <https://orcid.org/0000-0001-8899-350X>)
+Maintainer: Rodrigo Fonseca Villa <rodrigo03.villa@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-26 12:00:02 UTC

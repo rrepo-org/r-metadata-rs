@@ -1,0 +1,32 @@
+Package: a11yShiny
+Type: Package
+Title: Accessibility Enhancements to Popular R Shiny Functions
+Version: 0.1.4
+Authors@R: 
+    person("Jan", "Liebnitzky" , email = "datenlabor@bmftr.bund.de", role = c("aut", "cre"))
+Description: Accessible wrappers for popular 'shiny' UI components, enforcing
+    ARIA attributes and structural requirements in line with BITV 2.0
+    (Barrierefreie-Informationstechnik-Verordnung) and WCAG 2.1 AA.
+    Covers action buttons, text and select inputs, fluid page layouts with
+    HTML landmarks and skip links, 'DT' data tables, and bar and line
+    graphs from 'ggplot2'. Components validate label presence, expose
+    keyboard-accessible ARIA states, and provide a high-contrast toggle.
+    This package was developed by d-fine GmbH on behalf of the German
+    Federal Ministry of Research, Technology and Space (BMFTR).
+License: EUPL-1.2
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: shiny (>= 1.9.0), htmltools (>= 0.5.0), DT, ggplot2, rlang
+Suggests: devtools, covr, knitr, rmarkdown, bslib (>= 0.5.0), testthat
+        (>= 3.0.0)
+URL: https://gitlab.opencode.de/bmbf/datenlabor/barrierefrei-r
+BugReports: https://gitlab.opencode.de/bmbf/datenlabor/barrierefrei-r/-/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-27 07:19:18 UTC; kammererj
+Author: Jan Liebnitzky [aut, cre]
+Maintainer: Jan Liebnitzky <datenlabor@bmftr.bund.de>
+Repository: CRAN
+Date/Publication: 2026-05-27 07:50:09 UTC

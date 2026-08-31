@@ -1,0 +1,35 @@
+Package: bbk
+Title: Client for Central Bank APIs
+Version: 0.13.0
+Authors@R: 
+    person("Maximilian", "Mücke", , "muecke.maximilian@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-9432-9795"))
+Description: A client for retrieving data and metadata from central bank
+    APIs including 'Banco Central do Brasil' (BCB), 'Banco de España'
+    (BdE), 'Banco de México' (Banxico), 'Banco de Portugal' (BdP), 'Bank
+    for International Settlements' (BIS), 'Bank of Canada' (BoC), 'Bank of
+    England' (BoE), 'Bank of Israel' (BoI), 'Bank of Japan' (BoJ), 'Banque
+    de France' (BdF), 'Czech National Bank' (CNB), 'Deutsche Bundesbank'
+    (BBk), 'European Central Bank' (ECB), 'National Bank of Poland' (NBP),
+    'Norges Bank' (NoB), 'Oesterreichische Nationalbank' (OeNB), 'Sveriges
+    Riksbank' (SRb), and 'Swiss National Bank' (SNB).
+License: MIT + file LICENSE
+URL: https://m-muecke.github.io/bbk/, https://github.com/m-muecke/bbk
+BugReports: https://github.com/m-muecke/bbk/issues
+Depends: R (>= 4.1.0)
+Imports: checkmate, curl, data.table (>= 1.17.0), httr2 (>= 1.0.0),
+        jsonlite, stats, tools, utils, xml2
+Suggests: ggplot2, knitr, scales, testthat (>= 3.3.0)
+Config/Needs/website: knitr, rmarkdown
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-08-26 16:15:58 UTC; mmuecke
+Author: Maximilian Mücke [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-9432-9795>)
+Maintainer: Maximilian Mücke <muecke.maximilian@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 13:30:16 UTC

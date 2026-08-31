@@ -1,0 +1,29 @@
+Package: GENEAcore
+Title: Pre-Processing of 'GENEActiv' Data
+Version: 1.2.0
+Date: 2026-03-30
+Authors@R: c(
+    person("Joss", "Langford", email = "joss@activinsights.com", role = "aut"),
+    person("Ian", "Long", email = "ilong@stoatgroup.com", role = "aut"),
+    person("Jia Ying", "Chua", email = "jiayingc@activinsights.com", role = c("aut","cre")),
+    person("Activinsights Ltd", role = "cph", email = "info@activinsights.com"))
+Maintainer: Jia Ying Chua <jiayingc@activinsights.com>
+Description: Analytics to read in and segment raw 'GENEActiv' accelerometer data into epochs and events.
+    For more details on the 'GENEActiv' device, see <https://activinsights.com/resources/geneactiv-support-1-2/>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: changepoint, signal, methods, jsonlite
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), GENEAread (>= 2.0.10),
+        GENEAclassify
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Depends: R (>= 3.5.0)
+Packaged: 2026-04-02 13:11:35 UTC; JiaYingChua
+Author: Joss Langford [aut],
+  Ian Long [aut],
+  Jia Ying Chua [aut, cre],
+  Activinsights Ltd [cph]
+Repository: CRAN
+Date/Publication: 2026-04-02 13:40:02 UTC

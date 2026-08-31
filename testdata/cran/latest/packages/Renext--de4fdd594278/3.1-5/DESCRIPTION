@@ -1,0 +1,36 @@
+Package: Renext
+Type: Package
+Title: Renewal Method for Extreme Values Extrapolation
+Version: 3.1-5
+Date: 2025-08-27
+Authors@R: 
+    c(person(given = "Yves",
+             family = "Deville",
+             role = "aut",
+             email = "deville.yves@alpestat.com",
+	     comment = c(ORCID = "0000-0002-1233-488X")),
+      person(family = "Bardet",
+             role = "aut",
+             email = "lise.bardet@asnr.fr"),
+      person(given = "Nathan",
+             family = "Bengaouer",
+             role = "cre",
+             email = "nathan.bengaouer@asnr.fr"))
+URL: https://github.com/IRSN/Renext, https://irsn.github.io/Renext/
+Depends: R (>= 2.8.0), stats, graphics, evd
+Imports: numDeriv, splines, methods
+Suggests: MASS, ismev, XML
+Description: Peaks Over Threshold (POT) or 'methode du renouvellement'. The
+    distribution for the excesses can be chosen, and heterogeneous data
+    (including historical data or block data) can be used in a
+    Maximum-Likelihood framework. 
+License: GPL (>= 2)
+LazyData: yes
+NeedsCompilation: no
+Packaged: 2025-08-27 14:13:06 UTC; yves
+Author: Yves Deville [aut] (ORCID: <https://orcid.org/0000-0002-1233-488X>),
+  Bardet [aut],
+  Nathan Bengaouer [cre]
+Maintainer: Nathan Bengaouer <nathan.bengaouer@asnr.fr>
+Repository: CRAN
+Date/Publication: 2025-08-27 16:20:27 UTC

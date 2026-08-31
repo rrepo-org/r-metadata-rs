@@ -1,0 +1,23 @@
+Type: Package
+Package: markstat
+Version: 0.1.5
+Title: Mark Correlation Functions for Spatial Point Patterns
+Authors@R: c(person("Mehdi", "Moradi", role = c("aut", "cre"), email = "m2.moradi@yahoo.com", comment = c(ORCID = "0000-0003-3905-4498")),
+  person("Matthias", "Eckardt", role = c("aut")))
+Maintainer: Mehdi Moradi <m2.moradi@yahoo.com>
+Imports: spatstat.univar, spatstat.geom, spatstat.random,
+        spatstat.explore, spatstat.linnet, spatstat.utils, GET, stats,
+        dplyr, ggplot2, tidyr, patchwork
+Description: Provides a range of functions for computing both global and local mark correlation functions for spatial point patterns in either Euclidean spaces or on linear networks, with points carrying either real-valued or function-valued marks. For a review of mark correlation functions, see Eckardt and Moradi (2024) <doi:10.1007/s13253-024-00605-1>. 
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-12-09 20:07:38 UTC; memo0042
+Author: Mehdi Moradi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3905-4498>),
+  Matthias Eckardt [aut]
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-12-15 20:10:12 UTC

@@ -1,0 +1,58 @@
+Package: EAVA
+Type: Package
+Title: Deterministic Verbal Autopsy Coding with Expert Algorithm Verbal
+        Autopsy
+Version: 1.0.0
+Authors@R: c(
+    person(
+      given = "Emily", 
+      family = "Wilson",
+      email = "wilsonem@gmail.com",
+      role = c("aut", "cre")),
+    person(
+      given = "Henry", 
+      family = "Kalter",
+      email = "hkalter1@jhu.edu",
+      role = c("aut")),
+    person(
+      given = "Abhi",
+      family = "Datta",
+      email =  "abhidatta@jhu.edu",
+      role = c("aut")),
+    person(
+      given = "Sandipan",
+      family = "Pramanik",
+      email =  "spraman4@jhmi.edu",
+      role = c("aut")),
+    person(
+      given = "Robert",
+      family = "Black",
+      email =  "rblack1@jhu.edu",
+      role = c("aut")),
+    person(
+      given = "Gates",
+      family = "Foundation",
+      role = c("fnd"))
+  )
+Maintainer: Emily Wilson <wilsonem@gmail.com>
+Description: Expert Algorithm Verbal Autopsy assigns causes of death to 2016 WHO Verbal Autopsy Questionnaire data. odk2EAVA() converts data to a standard input format for cause of death determination building on the work of Thomas (2021) <https://cran.r-project.org/src/contrib/Archive/CrossVA/>. codEAVA() uses the presence and absence of signs and symptoms reported in the Verbal Autopsy interview to diagnose common causes of death. A deterministic algorithm assigns a single cause of death to each Verbal Autopsy interview record using a hierarchy of all common causes for neonates or children 1 to 59 months of age.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: stringi, stringr
+RoxygenNote: 7.3.2
+BugReports: https://github.com/emilybrownwilson/EAVA/issues
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-05-02 20:16:49 UTC; EWilson
+Author: Emily Wilson [aut, cre],
+  Henry Kalter [aut],
+  Abhi Datta [aut],
+  Sandipan Pramanik [aut],
+  Robert Black [aut],
+  Gates Foundation [fnd]
+Repository: CRAN
+Date/Publication: 2025-05-06 08:50:08 UTC

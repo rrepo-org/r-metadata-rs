@@ -1,0 +1,27 @@
+Package: RcppHMM
+Type: Package
+Title: Rcpp Hidden Markov Model
+Version: 1.2.2.1
+Date: 2025-09-17
+Authors@R: c(person(given = c("Roberto", "A."),
+                    family = "Cardenas-Ovando",
+                    role = c("aut", "cre"),
+                    email = "robalecarova@gmail.com"),
+            person(given = "Julieta",
+                    family = "Noguez",
+                    role = "aut"),
+            person(given = "Claudia",
+                    family = "Rangel-Escareno",
+                    role = "aut"))
+Maintainer: Roberto A. Cardenas-Ovando <robalecarova@gmail.com>
+Description: Collection of functions to evaluate sequences, decode hidden states and estimate parameters from a single or multiple sequences of a discrete time Hidden Markov Model. The observed values can be modeled by a multinomial distribution for categorical/labeled emissions, a mixture of Gaussians for continuous data and also a mixture of Poissons for discrete values. It includes functions for random initialization, simulation, backward or forward sequence evaluation, Viterbi or forward-backward decoding and parameter estimation using an Expectation-Maximization approach.
+License: GPL (>= 3)
+Imports: Rcpp (>= 1.1.0)
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2025-09-17 22:36:28 UTC; RCardenas1
+Author: Roberto A. Cardenas-Ovando [aut, cre],
+  Julieta Noguez [aut],
+  Claudia Rangel-Escareno [aut]
+Repository: CRAN
+Date/Publication: 2025-09-17 23:20:02 UTC

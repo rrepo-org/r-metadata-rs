@@ -1,0 +1,34 @@
+Package: mhn
+Type: Package
+Title: The Modified Half-Normal Distribution
+Version: 0.1.0
+Authors@R: person("Tomotaka", "Momozaki", role = c("aut", "cre"),
+    email = "momozaki.stat@gmail.com")
+Description: Provides density, distribution, quantile, and random generation
+    functions for the Modified Half-Normal (MHN) distribution, along with
+    moments, mode, and the Fox-Wright Psi function used as the normalizing
+    constant. The MHN distribution arises as a conditional posterior in
+    Bayesian MCMC and generalizes the half-normal, truncated normal, and
+    square-root gamma distributions. Implements efficient sampling via
+    the Sun, Kong & Pal (2023) <doi:10.1080/03610926.2021.1934700>
+    algorithms and the Gao & Wang (2025)
+    <doi:10.1080/03610918.2025.2524551> RTDR method.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, Rcpp (>= 1.0.7)
+LinkingTo: Rcpp, BH (>= 1.78.0-0)
+SystemRequirements: C++17
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, bench, Rmpfr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/t-momozaki/mhn,
+        https://t-momozaki.github.io/mhn/
+BugReports: https://github.com/t-momozaki/mhn/issues
+NeedsCompilation: yes
+Packaged: 2026-05-18 23:23:51 UTC; t_momozaki
+Author: Tomotaka Momozaki [aut, cre]
+Maintainer: Tomotaka Momozaki <momozaki.stat@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-27 08:30:02 UTC

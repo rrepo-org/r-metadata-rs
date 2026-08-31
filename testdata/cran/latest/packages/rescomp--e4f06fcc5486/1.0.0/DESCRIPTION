@@ -1,0 +1,42 @@
+Package: rescomp
+Title: Efficient Modelling of Resource Competition
+Version: 1.0.0
+Authors@R: 
+    c(person(given = c("Christopher", "R", "P"),
+           family = "Brown",
+           role = c("aut", "cre"),
+           email = "c.r.brown@uq.edu.au",
+           comment = c(ORCID = "0000-0002-0393-3477")),
+    person(given = "Jan",
+           family = "Engelstaedter",
+           role = c("aut"),
+           email = "j.engelstaedter@uq.edu.au",
+           comment = c(ORCID = "0000-0003-3340-918X")),
+    person(given = "Andrew",
+           family = "Letten",
+           role = c("aut"),
+           email = "a.letten@uq.edu.au",
+           comment = c(ORCID = "0000-0001-6436-7942")))
+URL: https://github.com/pyrrhicpachyderm/rescomp
+Description: Generate, simulate and visualise ODE models of consumer-resource 
+    interactions. At its core, 'rescomp' provides a resource competition 
+    modelling focused interface to 'deSolve', alongside flexible functions for 
+    visualising model properties and dynamics. More information, documentation 
+    and examples can be found on the package website.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: ggplot2, tidyr, deSolve, rlang, stats, cli, glue
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), vdiffr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-30 04:29:45 UTC; christopher
+Author: Christopher R P Brown [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0393-3477>),
+  Jan Engelstaedter [aut] (ORCID:
+    <https://orcid.org/0000-0003-3340-918X>),
+  Andrew Letten [aut] (ORCID: <https://orcid.org/0000-0001-6436-7942>)
+Maintainer: Christopher R P Brown <c.r.brown@uq.edu.au>
+Repository: CRAN
+Date/Publication: 2026-04-02 07:50:02 UTC

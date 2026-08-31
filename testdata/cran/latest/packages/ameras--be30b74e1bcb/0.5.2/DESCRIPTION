@@ -1,0 +1,52 @@
+Package: ameras
+Title: Analyze Multiple Exposure Realizations in Association Studies
+Version: 0.5.2
+Authors@R: c(person(given = "Sander",
+                      family = "Roberti",
+                      role =  c("aut", "cre"),
+                      email = "statspackages@sanderroberti.nl",
+                      comment = c(ORCID = "0000-0002-6275-7442")),
+              person(given = "William",
+                      family = "Wheeler",
+                      role = "aut",
+                      email = "WheelerB@imsweb.com"),
+               person(given = "Deukwoo",
+                      family = "Kwon",
+                      role = "aut",
+                      email = "DKwon@uams.edu",
+                      comment = c(ORCID = "0000-0001-5376-5320")),
+               person(given = "Ruth",
+                      family = "Pfeiffer",
+                      role = "ctb",
+                      email = "pfeiffer@mail.nih.gov",
+                      comment = c(ORCID = "0000-0001-7791-2698")),
+                person("NCI", role=c("cph","fnd")))
+Depends: R (>= 4.1.0), stats, nimble
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), future, future.apply,
+        ggplot2, dplyr, tidyr, scales, patchwork
+Description: Analyze association studies with multiple realizations of a noisy or uncertain exposure. These can be obtained from e.g. a two-dimensional Monte Carlo dosimetry system (Simon et al 2015 <doi:10.1667/RR13729.1>) to characterize exposure uncertainty.
+    The implemented methods are regression calibration (Carroll et al. 2006 <doi:10.1201/9781420010138>), extended 
+    regression calibration (Little et al. 2023 <doi:10.1038/s41598-023-42283-y>), Monte Carlo maximum 
+    likelihood (Stayner et al. 2007 <doi:10.1667/RR0677.1>), frequentist model averaging (Kwon et al. 2023 <doi:10.1371/journal.pone.0290498>), 
+    and Bayesian model averaging (Kwon et al. 2016 <doi:10.1002/sim.6635>). Supported model families are
+    Gaussian, binomial, multinomial, Poisson, proportional hazards, and conditional logistic.
+License: MIT + file LICENSE
+Imports: Rcpp (>= 1.0.10), RcppEigen, coda, numDeriv, mvtnorm, methods,
+        MCMCvis, tidyselect, lifecycle, graphics, grDevices
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Author: Sander Roberti [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6275-7442>),
+  William Wheeler [aut],
+  Deukwoo Kwon [aut] (ORCID: <https://orcid.org/0000-0001-5376-5320>),
+  Ruth Pfeiffer [ctb] (ORCID: <https://orcid.org/0000-0001-7791-2698>),
+  NCI [cph, fnd]
+Maintainer: Sander Roberti <statspackages@sanderroberti.nl>
+URL: https://ameras.sanderroberti.com,
+        https://github.com/sanderroberti/ameras
+BugReports: https://github.com/sanderroberti/ameras/issues
+Packaged: 2026-07-28 00:46:59 UTC; robertis2
+Repository: CRAN
+Date/Publication: 2026-07-28 08:10:08 UTC

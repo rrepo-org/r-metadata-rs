@@ -1,0 +1,34 @@
+Package: journalR
+Type: Package
+Title: Formatting Tools for Scientific Journal Writing
+Version: 0.6.0
+Authors@R: c(
+    person("Sam", "Byrne", email = "ssbyrne@uw.edu"
+    , role = c("aut", "cre", "cph")
+    , comment = c(ORCID = "0009-0008-1067-307X"))
+           )
+Maintainer: Sam Byrne <ssbyrne@uw.edu>
+Description: Scientific journal numeric formatting policies implemented in
+  code. Emphasis on formatting mean/upper/lower sets of values to pasteable
+  text for journal submission. For example  c(2e6, 1e6, 3e6) becomes
+  "2.00 million (1.00--3.00)".  Lancet and Nature have built-in
+  styles for rounding and punctuation marks.  Users may extend
+  journal styles arbitrarily. Four metrics are supported;
+  proportions, percentage points, counts and rates.  Magnitudes for
+  all metrics are discovered automatically.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Imports: checkmate, data.table, glue
+Suggests: devtools (>= 2.4.5), testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Acknowledgments:
+URL: https://github.com/epi-sam/journalR
+BugReports: https://github.com/epi-sam/journalR/issues
+NeedsCompilation: no
+Packaged: 2025-12-17 16:52:25 UTC; ssbyrne
+Author: Sam Byrne [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0008-1067-307X>)
+Repository: CRAN
+Date/Publication: 2025-12-19 09:50:11 UTC

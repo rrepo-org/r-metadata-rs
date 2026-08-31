@@ -1,0 +1,44 @@
+Package: CondCopulas
+Type: Package
+Title: Estimation and Inference for Conditional Copula Models
+Version: 0.2.0
+Authors@R: c(
+    person("Alexis", "Derumigny", , email = "a.f.f.derumigny@tudelft.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6163-8097")),
+    person("Jean-David", "Fermanian", , email = "Jean-David.Fermanian@ensae.fr", role = c("ctb","ths"), comment = c(ORCID = "0000-0001-5960-5555")),
+    person("Aleksey", "Min", , role = "ctb", comment = c(ORCID = "0000-0001-6928-4556")),
+    person("Rutger", "van der Spek", , role = "ctb")
+	)
+Description: 
+    Provides functions for the estimation of conditional copulas models,
+    various estimators of conditional Kendall's tau
+    (proposed in Derumigny and Fermanian (2019a, 2019b, 2020)
+    <doi:10.1515/demo-2019-0016>,
+    <doi:10.1016/j.csda.2019.01.013>,
+    <doi:10.1016/j.jmva.2020.104610>),
+    test procedures for the simplifying assumption
+    (proposed in Derumigny and Fermanian (2017) <doi:10.1515/demo-2017-0011>
+    and Derumigny, Fermanian and Min (2022) <doi:10.1002/cjs.11742>),
+    and measures of non-simplifyingness
+    (proposed in Derumigny (2025) <doi:10.48550/arXiv.2504.07704>).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: MASS, knitr, rmarkdown, DiagrammeR, ggplot2, mvtnorm,
+        testthat (>= 3.0.0)
+Imports: VineCopula, pbapply, glmnet, ordinalNet, tree, nnet,
+        data.tree, statmod, wdm
+VignetteBuilder: knitr
+BugReports: https://github.com/AlexisDerumigny/CondCopulas/issues
+URL: https://github.com/AlexisDerumigny/CondCopulas
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-11-24 13:34:38 UTC; aderumigny
+Author: Alexis Derumigny [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6163-8097>),
+  Jean-David Fermanian [ctb, ths] (ORCID:
+    <https://orcid.org/0000-0001-5960-5555>),
+  Aleksey Min [ctb] (ORCID: <https://orcid.org/0000-0001-6928-4556>),
+  Rutger van der Spek [ctb]
+Maintainer: Alexis Derumigny <a.f.f.derumigny@tudelft.nl>
+Repository: CRAN
+Date/Publication: 2025-11-24 15:50:01 UTC

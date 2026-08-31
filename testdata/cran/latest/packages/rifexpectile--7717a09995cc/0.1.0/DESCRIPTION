@@ -1,0 +1,38 @@
+Package: rifexpectile
+Title: Density-Free RIF Decompositions for Unconditional Expectiles
+Version: 0.1.0
+Authors@R: 
+    person("Abdoul Aziz", "Ndoye", email = "abdoulaziz1.ndoye@gmail.com",
+           role = c("aut", "cre"))
+Description: Implements a density-free recentered influence function (RIF)
+    regression framework for unconditional expectiles, and embeds it in a
+    two-sample Oaxaca-Blinder decomposition indexed continuously by the
+    expectile level. Unlike quantile-based RIF decompositions, which require
+    estimating an inverse density term at each quantile, the expectile RIF
+    depends only on primitive moments of the outcome distribution and
+    requires no density estimation, no bandwidth selection, and no kernel
+    smoothing. The package provides expectile estimation by iteratively
+    reweighted least squares, closed-form RIF construction, two-sample
+    composition/structure decomposition across a grid of expectile levels,
+    bootstrap-based inference, and plotting methods. The underlying
+    methodology is described in Ndoye (2025), "Semi-Nonparametric
+    Expectile RIF Regression for Distributional Decomposition," presented at
+    the 2025 World Congress of the Econometric Society, Seoul, Korea,
+    <https://www.econometricsociety.org/regional-activities/conference-papers/view/282/943>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, wooldridge
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/aandoye/rifexpectile
+BugReports: https://github.com/aandoye/rifexpectile/issues
+Config/roxygen2/version: 8.1.0
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-08-21 13:06:16 UTC; aziz
+Author: Abdoul Aziz Ndoye [aut, cre]
+Maintainer: Abdoul Aziz Ndoye <abdoulaziz1.ndoye@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-30 09:10:02 UTC

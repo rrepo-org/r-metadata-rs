@@ -1,0 +1,52 @@
+Package: mixedfact
+Type: Package
+Title: Generate and Analyze Mixed-Level Blocked Factorial Designs
+Version: 0.1.1
+Authors@R: c(
+    person(
+        given = "Archana",
+        family = "A",
+        role = "aut"
+    ),
+    person(
+        given = "Sukanta",
+        family = "Dash",
+        role = c("aut", "cre"),
+        email = "sukanta.iasri@gmail.com"
+    ),
+    person(
+        given = "Anil",
+        family = "Kumar",
+        role = "aut"
+    ),
+    person(
+        given = "Medram",
+        family = "Verma",
+        role = "aut"
+    ))
+Description: Generates blocked designs for mixed-level factorial experiments for a 
+    given block size. Internally, it uses finite-field based, collapsed, and heuristic 
+    methods to construct block structures that minimize confounding between block 
+    effects and factorial effects. The package creates the full treatment combination 
+    table, partitions runs into blocks, and computes detailed confounding diagnostics 
+    for main effects and two-factor interactions. It also checks orthogonal factorial 
+    structure (OFS) and computes efficiencies of factorial effects using the methods 
+    of Nair and Rao (1948) <doi:10.1111/j.2517-6161.1948.tb00005.x>. When OFS is not satisfied but 
+    the design has equal treatment replications and equal block sizes, a general method 
+    based on the C-matrix and custom contrast vectors is used to compute efficiencies. 
+    The output includes the generated design, finite-field metadata, confounding 
+    summaries, OFS diagnostics, and efficiency results.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-05 04:05:13 UTC; Sukanta
+Author: Archana A [aut],
+  Sukanta Dash [aut, cre],
+  Anil Kumar [aut],
+  Medram Verma [aut]
+Maintainer: Sukanta Dash <sukanta.iasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-10 21:30:02 UTC

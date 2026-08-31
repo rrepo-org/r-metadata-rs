@@ -1,0 +1,40 @@
+Package: flexCausal
+Title: Causal Effect Estimation via Doubly Robust One-Step Estimators
+        and TMLE in Graphical Models with Unmeasured Variables
+Version: 0.1.0
+Date: 2026-03-18
+Authors@R: 
+    c(person("Anna", "Guo", 
+         email = "guo.anna617@gmail.com",
+         role = c("aut", "cre"),
+         comment = c(GitHub = "https://github.com/annaguo-bios")),
+      person("Razieh", "Nabi",
+         email = "razieh.nabi@emory.edu",
+         role = "aut"))
+Description: Provides doubly robust one-step and targeted maximum likelihood
+    (TMLE) estimators for average causal effects in acyclic directed mixed
+    graphs (ADMGs) with unmeasured variables. Automatically determines whether
+    the treatment effect is identified via backdoor adjustment or the extended
+    front-door functional, and dispatches to the appropriate estimator.
+    Supports incorporation of machine learning algorithms via 'SuperLearner'
+    and cross-fitting for nuisance estimation. Methods are described in Guo and Nabi (2024) <doi:10.48550/arXiv.2409.03962>.
+License: GPL-3
+LazyData: true
+URL: https://github.com/annaguo-bios/flexCausal
+BugReports: https://github.com/annaguo-bios/flexCausal/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3.9000
+Imports: rlang, dplyr, SuperLearner, densratio, MASS, mvtnorm, stats,
+        utils
+Depends: R (>= 4.1)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), earth, ranger
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-24 14:58:47 UTC; apple
+Author: Anna Guo [aut, cre] (GitHub: https://github.com/annaguo-bios),
+  Razieh Nabi [aut]
+Maintainer: Anna Guo <guo.anna617@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-29 15:20:08 UTC

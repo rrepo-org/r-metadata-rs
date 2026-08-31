@@ -1,0 +1,38 @@
+Package: sigPCA
+Title: Statistical Significance Testing for Principal Components
+Version: 0.1.0
+Authors@R: c(
+    person(
+      given = "Guillermo",
+      family = "de Anda-Jáuregui",
+      email = "gdeanda@inmegen.edu.mx",
+      role = c("aut", "cre", "cph")
+    ),
+    person(
+      given = "Enrique",
+      family = "Hernández-Lemus",
+      role = c("aut", "cph")
+    )
+  )
+Description: Identifies principal components whose eigenvalues exceed those
+    expected under noise. Implements analytical thresholds derived from the
+    Marchenko-Pastur distribution (Marchenko and Pastur, 1967)
+    <doi:10.1070/SM1967v001n04ABEH001994> and empirical permutation tests, and provides
+    functions for visualizing observed and null eigenvalue spectra.
+License: MIT + file LICENSE
+URL: https://github.com/guillermodeandajauregui/sigPCA
+BugReports: https://github.com/guillermodeandajauregui/sigPCA/issues
+Encoding: UTF-8
+Imports: ggplot2, stats
+Suggests: knitr, palmerpenguins, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-23 19:37:41 UTC; x
+Author: Guillermo de Anda-Jáuregui [aut, cre, cph],
+  Enrique Hernández-Lemus [aut, cph]
+Maintainer: Guillermo de Anda-Jáuregui <gdeanda@inmegen.edu.mx>
+Repository: CRAN
+Date/Publication: 2026-08-03 18:10:02 UTC

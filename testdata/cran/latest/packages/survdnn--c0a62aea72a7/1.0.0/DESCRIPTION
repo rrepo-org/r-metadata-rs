@@ -1,0 +1,35 @@
+Package: survdnn
+Title: Deep Neural Networks for Survival Analysis with R 'torch'
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Imad",
+           family = "El Badisy",
+           email = "elbadisyimad@gmail.com",
+           role = c("aut", "cre")),
+    person(given = "Daniel",
+           family = "Falbel",
+           role = "ctb")
+    )
+Description: Provides deep learning models for right-censored survival data using the 'torch' backend. 
+    Supports multiple loss functions, including Cox partial likelihood, L2-penalized Cox, time-dependent Cox, 
+    and accelerated failure time (AFT) loss. Offers a formula-based interface, built-in support for cross-validation, 
+    hyperparameter tuning, survival curve plotting, and evaluation metrics such as the C-index, Brier score,
+    and integrated Brier score. For methodological details, see Kvamme et al. (2019) <https://www.jmlr.org/papers/v20/18-424.html>.
+    The package is described in El Badisy (2026) <doi:10.32614/RJ-2026-008>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: torch, survival, stats, utils, tibble, dplyr, purrr, tidyr,
+        ggplot2, methods, rsample, cli, glue
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+BugReports: https://github.com/ielbadisy/survdnn/issues
+URL: https://CRAN.R-project.org/package=survdnn
+NeedsCompilation: no
+Packaged: 2026-08-21 15:02:22 UTC; imad-el-badisy
+Author: Imad El Badisy [aut, cre],
+  Daniel Falbel [ctb]
+Maintainer: Imad El Badisy <elbadisyimad@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-22 15:50:07 UTC

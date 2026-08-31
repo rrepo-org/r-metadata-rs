@@ -1,0 +1,25 @@
+Package: jpmapdata
+Title: Boundary Data for Japan Maps
+Version: 0.1.0
+Authors@R: 
+    person("Yusaku", "Horiuchi", role = c("aut", "cre"),
+           email = "yusaku.horiuchi@gmail.com")
+URL: https://github.com/yhoriuchi/jpmapdata
+BugReports: https://github.com/yhoriuchi/jpmapdata/issues
+Description: Provides boundary 'GeoPackage' files used by the 'jpmap' package,
+    including Japan prefecture example boundaries and official MLIT N03
+    administrative area data converted for 'jpmap'. Keeping these data in a
+    separate package lets 'jpmap' update its functionality without repeatedly
+    redistributing large boundary files on CRAN mirrors.
+License: CC BY 4.0
+Copyright: See inst/COPYRIGHTS.
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Suggests: sf
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-07-03 13:48:32 UTC; yh25m
+Author: Yusaku Horiuchi [aut, cre]
+Maintainer: Yusaku Horiuchi <yusaku.horiuchi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-10 20:30:20 UTC

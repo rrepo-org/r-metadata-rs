@@ -1,0 +1,34 @@
+Package: CVrisk
+Title: Compute Risk Scores for Cardiovascular Diseases
+Version: 1.2.1
+Authors@R: 
+    person(given = "Victor",
+           family = "Castro",
+           role = c("aut", "cre"),
+           email = "vcastro@mgh.harvard.edu",
+           comment = c(ORCID = "https://orcid.org/0000-0001-7390-6354"))
+Description: Calculate various cardiovascular disease risk scores from the
+    Framingham Heart Study (FHS), the American College of Cardiology (ACC),
+    and the American Heart Association (AHA) as described in D’agostino, et al
+    (2008) <doi:10.1161/circulationaha.107.699579>, Goff, et al (2013)
+    <doi:10.1161/01.cir.0000437741.48606.98>, and Mclelland, et al (2015)
+    <doi:10.1016/j.jacc.2015.08.035>, and Khan, et al (2024)
+    <doi:10.1161/CIRCULATIONAHA.123.067626>.
+License: GPL-3
+Depends: R (>= 3.5)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+URL: https://vcastro.github.io/CVrisk/,
+        https://github.com/vcastro/CVrisk/
+BugReports: https://github.com/vcastro/CVrisk/issues
+Imports: utils, preventr
+Suggests: testthat (>= 2.1.0), covr, tibble, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-10 17:15:26 UTC; vcastro
+Author: Victor Castro [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7390-6354>)
+Maintainer: Victor Castro <vcastro@mgh.harvard.edu>
+Repository: CRAN
+Date/Publication: 2026-01-10 17:32:04 UTC

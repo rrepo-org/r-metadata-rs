@@ -1,0 +1,54 @@
+Type: Package
+Package: flexurba
+Title: Construct Flexible Urban Delineations
+Version: 0.2.3
+Authors@R: c(
+    person("Céline", "Van Migerode", , "celine.vanmigerode@kuleuven.be", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4023-7665")),
+    person("Ate", "Poorthuis", , "ate.poorthuis@kuleuven.be", role = "aut",
+           comment = c(ORCID = "0000-0002-3808-7493")),
+    person("Ben", "Derudder", , "ben.derudder@kuleuven.be", role = "aut",
+           comment = c(ORCID = "0000-0001-6195-8544")),
+    person("KU Leuven", role = "cph"),
+    person("FWO", role = "fnd")
+  )
+Description: Enables the construction of flexible urban delineations that
+    can be tailored to specific applications or research questions, see Van
+    Migerode et al. (2024) <DOI:10.1177/23998083241262545> and Van Migerode
+    et al. (2025) <DOI:10.5281/zenodo.15173220>.
+    Originally developed to flexibly reconstruct the Degree of
+    Urbanisation classification of cities,
+    towns and rural areas developed by Dijkstra et al. 
+    (2021) <DOI:10.1016/j.jue.2020.103312>. Now it also support a broader 
+    range of delineation approaches, using multiple datasets – including
+    population, built-up area, and night-time light grids – and different
+    thresholding methods.
+License: MIT + file LICENSE
+URL: https://github.com/cvmigero/flexurba,
+        https://gitlab.kuleuven.be/spatial-networks-lab/research-projects/flexurba,
+        https://flexurba-spatial-networks-lab-research-projects--e74426d1c66ecc.pages.gitlab.kuleuven.be
+BugReports: https://github.com/cvmigero/flexurba/issues
+Depends: R (>= 3.5)
+Imports: data.table, dplyr, exactextractr, fastmatch, geos, ggplot2,
+        ggspatial, grid, jsonlite, lifecycle, magrittr, nngeo, Rcpp,
+        sf, terra (>= 1.7-3), tidyterra, utils
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+LinkingTo: Rcpp
+VignetteBuilder: knitr, rmarkdown
+Config/Needs/website: rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-01-11 17:10:27 UTC; u0157090
+Author: Céline Van Migerode [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4023-7665>),
+  Ate Poorthuis [aut] (ORCID: <https://orcid.org/0000-0002-3808-7493>),
+  Ben Derudder [aut] (ORCID: <https://orcid.org/0000-0001-6195-8544>),
+  KU Leuven [cph],
+  FWO [fnd]
+Maintainer: Céline Van Migerode <celine.vanmigerode@kuleuven.be>
+Repository: CRAN
+Date/Publication: 2026-01-11 17:40:02 UTC

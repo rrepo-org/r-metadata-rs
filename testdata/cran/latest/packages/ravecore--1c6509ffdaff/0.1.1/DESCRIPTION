@@ -1,0 +1,51 @@
+Package: ravecore
+Title: Core File Structures and Workflows for 'RAVE'
+Version: 0.1.1
+Authors@R: c(
+    person("Zhengjia", "Wang", email = "dipterix.wang@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5629-1116")),
+    person("Xiang", "Zhang", email = "xiang.zhang@pennmedicine.upenn.edu", role = c("aut")),
+    person("John", "Magnotti", email = "john.magnotti@pennmedicine.upenn.edu", role = c("aut")),
+    person("Michael", "Beauchamp", email = "michael.beauchamp@pennmedicine.upenn.edu", role = c("aut")),
+    person("Trustees of the University of Pennsylvania", role = "cph",
+            comment = "All files in this package unless explicitly stated in the file")
+    )
+Description: Defines storage standard for Read, process, and analyze 
+    intracranial electroencephalography and deep-brain stimulation in 'RAVE', 
+    a reproducible framework for analysis and visualization of iEEG
+    by Magnotti, Wang, and Beauchamp, (2020, 
+    <doi:10.1016/j.neuroimage.2020.117341>). 
+    Supports brain imaging data structure (BIDS) 
+    <https://bids.neuroimaging.io> and native file structure to
+    ingest signals from 'Matlab' data files, hierarchical data format 5 (HDF5), 
+    European data format (EDF), BrainVision core data format (BVCDF), or 
+    BlackRock Microsystem (NEV/NSx); process images in 
+    Neuroimaging informatics technology initiative (NIfTI) and 
+    'FreeSurfer' formats, providing brain imaging normalization to template 
+    brain, facilitating 'threeBrain' package for comprehensive electrode 
+    localization via 'YAEL' (your advanced electrode localizer) by Wang, 
+    Magnotti, Zhang, and Beauchamp 
+    (2023, <doi:10.1523/ENEURO.0328-23.2023>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Language: en-US
+URL: https://rave.wiki, http://rave.wiki/ravecore/
+BugReports: https://github.com/rave-ieeg/ravecore/issues
+Imports: tools, utils, bidsr, data.table, filearray (>= 0.2.0), fs,
+        ieegio, jsonlite, methods, R6, ravepipeline (>= 0.0.2),
+        ravetools, S7, threeBrain
+Suggests: rpyANTs, rpymat, htmltools, httpuv, knitr, plotly, RNifti,
+        RNiftyReg, shiny, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-02 02:56:59 UTC; dipterix
+Author: Zhengjia Wang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5629-1116>),
+  Xiang Zhang [aut],
+  John Magnotti [aut],
+  Michael Beauchamp [aut],
+  Trustees of the University of Pennsylvania [cph] (All files in this
+    package unless explicitly stated in the file)
+Maintainer: Zhengjia Wang <dipterix.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-02 14:30:02 UTC

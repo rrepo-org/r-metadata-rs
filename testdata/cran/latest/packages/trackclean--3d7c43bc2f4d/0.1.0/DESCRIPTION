@@ -1,0 +1,26 @@
+Package: trackclean
+Title: Tools for Cleaning High-Frequency Real-Time Location Tracking
+        Data
+Version: 0.1.0
+Authors@R: 
+    person("Tomas", "Bilevicius", , "Tomas.Bilevicius@vub.be", role = c("aut", "cre"))
+Description: Provides data cleaning and preprocessing tools for high-frequency
+    positional data from real-time location tracking systems (UWB, RFID, and
+    similar technologies), with functions for ID mapping, time period marking,
+    data standardization, and two-phase conditional gap interpolation.
+    See Bilevicius (2026) <doi:10.5281/zenodo.20783488>.
+License: CC BY 4.0
+URL: https://github.com/tomasbil/trackclean
+BugReports: https://github.com/tomasbil/trackclean/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: dplyr, lubridate, magrittr, readr, rlang, tibble
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-26 08:09:33 UTC; tomas
+Author: Tomas Bilevicius [aut, cre]
+Maintainer: Tomas Bilevicius <Tomas.Bilevicius@vub.be>
+Repository: CRAN
+Date/Publication: 2026-07-01 09:40:02 UTC

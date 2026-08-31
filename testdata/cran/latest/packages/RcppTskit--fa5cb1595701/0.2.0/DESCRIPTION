@@ -1,0 +1,46 @@
+Type: Package
+Package: RcppTskit
+Title: 'R' Access to the 'tskit C' API
+Version: 0.2.0
+Date: 2026-01-27
+Authors@R: c(
+    person("Gregor", "Gorjanc", , "gregor.gorjanc@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8008-2787")),
+    person("Tskit Developers", role = "cph",
+           comment = "Authors of included tskit C library")
+  )
+Description: 'Tskit' enables efficient storage, manipulation, and analysis
+    of ancestral recombination graphs (ARGs) using succinct tree sequence
+    encoding. The tree sequence encoding of an ARG is described in Wong et
+    al. (2024) <doi:10.1093/genetics/iyae100>, while `tskit` project is
+    described in Jeffrey et al. (2026) <doi:10.48550/arXiv.2602.09649>.
+    See also <https://tskit.dev> for project news, documentation, and
+    tutorials. 'Tskit' provides 'Python', 'C', and 'Rust' application
+    programming interfaces (APIs). The 'Python' API can be called from 'R' via
+    the 'reticulate' package to load and analyse tree sequences as
+    described at <https://tskit.dev/tutorials/tskitr.html>. 'RcppTskit'
+    provides 'R' access to the 'tskit C' API for cases where the
+    'reticulate' option is not optimal; for example, high-performance or
+    low-level work with tree sequences. Currently, 'RcppTskit' provides a
+    limited set of 'R' functions because the 'Python' API and 'reticulate'
+    already covers most needs.
+License: MIT + file LICENSE
+URL: https://github.com/HighlanderLab/RcppTskit
+BugReports: https://github.com/HighlanderLab/RcppTskit/issues
+Depends: R (>= 4.0.0)
+Imports: methods, R6, Rcpp (>= 1.0.8), reticulate (>= 1.43.0)
+Suggests: covr, knitr, quarto, spelling, testthat (>= 3.0.0)
+LinkingTo: Rcpp (>= 0.12.10)
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-02-22 09:34:21 UTC; ggorjanc
+Author: Gregor Gorjanc [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8008-2787>),
+  Tskit Developers [cph] (Authors of included tskit C library)
+Maintainer: Gregor Gorjanc <gregor.gorjanc@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-27 16:02:24 UTC

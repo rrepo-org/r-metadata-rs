@@ -1,0 +1,55 @@
+Package: DUToolkit
+Title: Visualizing and Quantifying Decision Uncertainty
+Version: 1.0.2
+Authors@R: c(
+    person(given = "Megan", family = "Wiggins", email = "mwiggins@ihe.ca", 
+      role = c("aut", "cre"), comment = c(ORCID = "0009-0007-0290-4950")),
+    person(given = "Marie Betsy", family = "Varughese", role = c("aut"),
+      comment = c(ORCID = "0000-0002-8432-6539")),
+    person(given = "Ellen", family = "Rafferty", role = c("aut"),
+      comment = c(ORCID = "0000-0001-9974-8016")),
+    person(given = "Sasha", family = "van Katwyk", role = c("aut"),
+      comment = c(ORCID = "0000-0003-3026-2063")),
+    person(given = "Christopher", family = "McCabe", role = c("aut"),
+      comment = c(ORCID = "0000-0001-5728-4129")),
+    person(given = "Jeff", family = "Round", role = c("aut"),
+      comment = c(ORCID = "0000-0002-3103-6984")),
+    person(given = "Erin", family = "Kirwin", role = c("aut"),
+      comment = c(ORCID = "0000-0001-6957-7236")),
+    person(given = "Institute of Health Economics", role = c("cph", "aut")),
+    person(given = "Canadian Network for Modelling Infectious Diseases ", 
+      role = c("fnd"))
+    )
+Description: A suite of tools to help modelers and decision-makers effectively
+ interpret and communicate decision risk when evaluating multiple policy options.
+ It uses model outputs from uncertainty analysis for baseline scenarios and policy
+ alternatives to generate visual representations of uncertainty and quantitative
+ measures for assessing associated risks. For more details see 
+ Wiggins and colleagues (2025) <doi:10.1371/journal.pone.0332522> and <https://dut.ihe.ca/>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Suggests: DT, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+LazyData: true
+LazyDataCompression: xz
+Imports: ggdist, ggplot2, ggtext, rlang, scales, stats
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-06 16:19:05 UTC; mwiggins
+Author: Megan Wiggins [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-0290-4950>),
+  Marie Betsy Varughese [aut] (ORCID:
+    <https://orcid.org/0000-0002-8432-6539>),
+  Ellen Rafferty [aut] (ORCID: <https://orcid.org/0000-0001-9974-8016>),
+  Sasha van Katwyk [aut] (ORCID: <https://orcid.org/0000-0003-3026-2063>),
+  Christopher McCabe [aut] (ORCID:
+    <https://orcid.org/0000-0001-5728-4129>),
+  Jeff Round [aut] (ORCID: <https://orcid.org/0000-0002-3103-6984>),
+  Erin Kirwin [aut] (ORCID: <https://orcid.org/0000-0001-6957-7236>),
+  Institute of Health Economics [cph, aut],
+  Canadian Network for Modelling Infectious Diseases [fnd]
+Maintainer: Megan Wiggins <mwiggins@ihe.ca>
+Repository: CRAN
+Date/Publication: 2025-10-06 16:40:02 UTC

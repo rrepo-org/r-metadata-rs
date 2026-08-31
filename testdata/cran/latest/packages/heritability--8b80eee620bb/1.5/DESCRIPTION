@@ -1,0 +1,39 @@
+Package: heritability
+Type: Package
+Title: Marker-Based Estimation of Heritability Using Individual Plant
+        or Plot Data
+Description: Implements marker-based estimation of heritability when observations on genetically identical replicates are available. These can be either observations on individual plants or plot-level data in a field trial. Heritability can then be estimated using a mixed model for the individual plant or plot data. For comparison, also mixed-model based estimation using genotypic means and estimation of repeatability with ANOVA are implemented. For illustration the package contains several datasets for the model species Arabidopsis thaliana.
+Version: 1.5
+Date: 2026-06-11
+Authors@R: c(person(given = "Willem", 
+                    family = "Kruijer",
+                    role = "aut",
+                    email = "wkruijer@protonmail.com"),
+             person(given = "Ian",
+                    family = "White",
+                    role = "ctb",
+                    comment = "the internal pin function"),
+             person(given = "Padraic",
+                    family = "Flood",
+                    role = "dtc"),
+             person(given = "Rik",
+                    family = "Kooke",
+                    role = "dtc"),
+             person(given = "Bart-Jan", 
+                    family = "van Rossum",
+                    role = c("cre", "aut"),
+                    email = "bart-jan.vanrossum@wur.nl")
+             )
+Depends: R (>= 4.0), MASS (>= 3.1.20)
+Suggests: knitr, rmarkdown
+License: GPL-3
+NeedsCompilation: no
+Packaged: 2026-06-11 12:03:10 UTC; rossu027
+Author: Willem Kruijer [aut],
+  Ian White [ctb] (the internal pin function),
+  Padraic Flood [dtc],
+  Rik Kooke [dtc],
+  Bart-Jan van Rossum [cre, aut]
+Maintainer: Bart-Jan van Rossum <bart-jan.vanrossum@wur.nl>
+Repository: CRAN
+Date/Publication: 2026-06-12 07:00:14 UTC

@@ -1,0 +1,34 @@
+Package: symmoments
+Title: Symbolic Central and Noncentral Moments of the Multivariate
+        Normal Distribution
+Version: 1.2.2
+Authors@R: c(person(given = "Kem",
+                    family = "Phillips",
+                    role = c("aut"),
+                    email = "kemphillips@comcast.net"),
+             person(given = "Florian", family = "Schuberth",
+                    role  = c("aut", "cre"),
+                    email = "f.schuberth@utwente.nl",
+                    comment = c(ORCID = "0000-0002-2110-9086")))
+Maintainer: Florian Schuberth <f.schuberth@utwente.nl>
+Description: Symbolic central and non-central moments of the multivariate normal 
+  distribution. Computes a standard representation, LateX code, and values at 
+  specified mean and covariance matrices.
+Imports: Rdpack, mvtnorm, cubature, combinat, multipol, mpoly
+RdMacros: Rdpack
+RoxygenNote: 8.0.0
+Suggests: ape, knitr, rmarkdown
+License: GPL
+Encoding: UTF-8
+LazyLoad: yes
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+URL: https://github.com/FloSchuberth/symmoments
+BugReports: https://github.com/FloSchuberth/symmoments/issues
+Packaged: 2026-05-26 13:42:32 UTC; SchuberthF
+Author: Kem Phillips [aut],
+  Florian Schuberth [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2110-9086>)
+Repository: CRAN
+Date/Publication: 2026-05-27 06:20:03 UTC

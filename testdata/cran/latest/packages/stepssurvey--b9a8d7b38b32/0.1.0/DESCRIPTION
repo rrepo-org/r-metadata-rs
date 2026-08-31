@@ -1,0 +1,40 @@
+Package: stepssurvey
+Title: Analyse WHO STEPS Survey Data
+Version: 0.1.0
+Authors@R: c(
+    person("Abhijit", "Pakhare", email = "abhijit.cfm@aiimsbhopal.edu.in",
+           role = c("aut", "cre")),
+    person("Ankur", "Joshi", role = "aut"),
+    person("Lena", "Charlette", role = "aut"),
+    person("WHO STEPS R Pipeline Contributors", role = "ctb")
+  )
+Description: Provides a complete analysis pipeline for the WHO STEPwise
+    Approach to NCD Risk Factor Surveillance (STEPS) as described in
+    Riley et al. (2016) <doi:10.2105/AJPH.2015.302962>. Imports raw
+    survey data ('CSV', 'Excel', 'Stata', 'SPSS'), applies WHO-standard
+    cleaning and recoding, sets up complex survey designs, computes all
+    standard NCD indicators (tobacco, alcohol, diet, physical activity,
+    anthropometry, blood pressure, biochemical), and generates
+    publication-ready tables, visualisations, and 'Word'/'HTML' reports
+    (fact sheet, data book, country report).
+License: MIT + file LICENSE
+URL: https://github.com/drpakhare/stepssurvey
+BugReports: https://github.com/drpakhare/stepssurvey/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: bslib, dplyr, DT, flextable, ggplot2, glue, haven, janitor,
+        patchwork, purrr, readr, readxl, rmarkdown, shiny, survey,
+        tools
+Suggests: knitr, remotes, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-06 08:20:10 UTC; drpakhare
+Author: Abhijit Pakhare [aut, cre],
+  Ankur Joshi [aut],
+  Lena Charlette [aut],
+  WHO STEPS R Pipeline Contributors [ctb]
+Maintainer: Abhijit Pakhare <abhijit.cfm@aiimsbhopal.edu.in>
+Repository: CRAN
+Date/Publication: 2026-05-11 19:10:03 UTC

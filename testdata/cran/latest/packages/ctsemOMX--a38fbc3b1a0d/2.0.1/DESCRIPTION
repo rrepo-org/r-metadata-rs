@@ -1,0 +1,36 @@
+Package: ctsemOMX
+Type: Package
+Title: Continuous Time Structural Equation Modelling - Old
+        'OpenMx'-Based Version
+Version: 2.0.1
+Date: 2026-7-13
+Authors@R: c(person("Charles", "Driver", role =
+    c("aut","cre","cph"),email="charles.driver2@uzh.ch"),
+    person("Manuel", "Voelkle", role = c("aut","cph")),
+    person("Han", "Oud", role = c("aut","cph") ))
+Description: Original 'ctsem' (continuous time structural equation modelling)
+    functionality, based on the 'OpenMx' software, as described in 
+    Driver, Oud, Voelkle (2017) <doi:10.18637/jss.v077.i05>, with updated details in vignette. 
+    Combines stochastic differential equations representing latent processes with 
+    structural equation measurement models. This package is maintained for consistency with the 
+    original 'ctsem' paper, but for the much newer and more capable 'ctsem' package, see 
+    <https://cran.r-project.org/package=ctsem>.
+License: GPL-3
+Depends: R (>= 3.5.0), OpenMx (>= 2.9.0)
+URL: https://github.com/cdriveraus/ctsemOMX
+Imports: data.table, expm, graphics, grDevices, Matrix, methods, plyr,
+        stats, utils
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Suggests: knitr, testthat
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-13 07:04:26 UTC; Driver
+Author: Charles Driver [aut, cre, cph],
+  Manuel Voelkle [aut, cph],
+  Han Oud [aut, cph]
+Maintainer: Charles Driver <charles.driver2@uzh.ch>
+Repository: CRAN
+Date/Publication: 2026-07-13 09:40:02 UTC

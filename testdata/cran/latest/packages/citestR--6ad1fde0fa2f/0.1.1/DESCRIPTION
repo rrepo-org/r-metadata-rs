@@ -1,0 +1,36 @@
+Package: citestR
+Title: Conditional Independence of Missingness Test
+Version: 0.1.1
+Authors@R: c(
+    person("Thomas", "Robinson", email = "t.robinson7@lse.ac.uk",
+           role = c("aut", "cre")),
+    person("Ranjit", "Lall", email = "ranjit.lall@politics.ox.ac.uk",
+           role = "aut")
+    )
+Description: Tests whether missingness in explanatory variables is
+    conditionally independent of the outcome, given observed data. Uses
+    multiply-imputed datasets and cross-validated classifiers to produce a
+    test statistic and p-value, with a sensitivity parameter (kappa) for
+    calibrating interpretation. Wraps the 'citest' 'Python' engine via a
+    local 'FastAPI' server over 'HTTP', so no 'reticulate' dependency is
+    needed at runtime.
+License: MIT + file LICENSE
+URL: https://github.com/midasverse/citest
+BugReports: https://github.com/midasverse/citest/issues
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: Python (>= 3.9) with the 'midasverse-citest-api'
+        package
+Imports: curl, httr2 (>= 1.0.0), processx (>= 3.8.0), rlang (>= 1.1.0)
+Suggests: arrow, jsonlite, reticulate, testthat (>= 3.0.0), knitr,
+        rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-19 14:38:48 UTC; t.robinson7
+Author: Thomas Robinson [aut, cre],
+  Ranjit Lall [aut]
+Maintainer: Thomas Robinson <t.robinson7@lse.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-03-23 17:40:19 UTC

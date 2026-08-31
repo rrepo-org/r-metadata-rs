@@ -1,0 +1,37 @@
+Package: tsqr
+Title: Sequential Threshold-Spatial-Quantile Panel Estimation
+Version: 0.2.0
+Authors@R: person(given = "Prakash", family = "Vhankade", email = "prakash.vhankade@gipe.ac.in", role = c("aut", "cre"), comment = c(ORCID = "0009-0005-2436-0603"))
+Description: Implements a sequential panel estimation protocol for regional
+    economic panels that combines three estimation layers in a fixed order.
+    The first layer applies a two-way fixed effects baseline. The second
+    layer applies the panel threshold regression method of Hansen (1999)
+    <doi:10.1016/S0304-4076(99)00025-1> to identify structural breaks at an
+    unknown threshold of a moderating variable, with bootstrap inference
+    following Hansen (2000) <doi:10.1111/1468-0262.00124>. The third layer
+    applies a spatial Durbin model with an impact decomposition following
+    LeSage and Pace (2009, ISBN:978-1-4200-6424-7) to quantify direct and
+    indirect spillover effects. The fourth layer applies the two-step panel
+    quantile estimator of Canay (2011) <doi:10.1111/j.1368-423X.2011.00349.x>
+    to document distributional heterogeneity in the outcome. The threshold
+    identified in the second layer defines a subsample used as structured
+    input to the fourth layer, and a consistency check evaluates whether the
+    three sets of results are jointly compatible with a common underlying
+    structural relationship. An illustrative panel of 33 districts of the
+    state of Maharashtra, India, observed over 10 agricultural years, is
+    included with the package.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: plm (>= 2.6-0), spdep (>= 1.2-0), spatialreg (>= 1.2-0),
+        quantreg (>= 5.90), ggplot2 (>= 3.4.0), stats, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-06 09:56:56 UTC; nehadhanawade
+Author: Prakash Vhankade [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-2436-0603>)
+Maintainer: Prakash Vhankade <prakash.vhankade@gipe.ac.in>
+Repository: CRAN
+Date/Publication: 2026-07-06 13:50:02 UTC

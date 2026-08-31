@@ -1,0 +1,31 @@
+Package: multiflexscan
+Type: Package
+Title: Information Criterion and Scan Statistic Approach for Detecting
+        Multiple Disease Clusters
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Takahiro", family = "Otani",
+           email = "t.otani@aichi-cc.jp",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4007-7817")),
+    person(given = "Kunihiko", family = "Takahashi", role = "aut")
+  )
+Author: Takahiro Otani [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4007-7817>),
+  Kunihiko Takahashi [aut]
+Maintainer: Takahiro Otani <t.otani@aichi-cc.jp>
+Description: Detecting multiple disease clusters using the
+    information criterion and scan statistic approach developed by
+    Takahashi and Shimadzu (2020) <doi:10.1186/s12942-020-00228-y>.
+License: GPL-3
+URL: https://github.com/tkhrotn/multiflexscan
+BugReports: https://github.com/tkhrotn/multiflexscan/issues
+Depends: R (>= 4.0.0)
+Imports: doSNOW, foreach, igraph, parallel, rflexscan (>= 1.2.0), utils
+Suggests: sf, spdep
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-17 01:30:29 UTC; otani
+Repository: CRAN
+Date/Publication: 2026-07-24 10:00:08 UTC

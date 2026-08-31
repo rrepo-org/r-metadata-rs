@@ -1,0 +1,30 @@
+Package: beautils
+Type: Package
+Title: Field Planning and Biostatistics Utilities
+Version: 0.2.0
+Authors@R: 
+    person("Tiago", "Olivoto", , "tiagoolivoto@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0241-9636"))
+Maintainer: Tiago Olivoto <tiagoolivoto@gmail.com>
+Description: Provides a collection of utility functions for biostatistics,
+    agricultural trial planning, and experimental design. Key features include
+    generating experimental designs (like Latin Square, Alpha-Lattice by
+    Patterson and Williams (1976) <doi:10.2307/2335087>, and Factorial),
+    fieldbook creation, layout sketching, QR code-based label generation, and
+    descriptive statistical tools to easily handle most common descriptive
+    statistics for quantitative variables as described by Field, A., Miles, J.,
+    & Field, Z. (2012, ISBN:978-1-4462-0045-2).
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: cli, dplyr, FielDHub, ggplot2, glue, grid, purrr, qrencoder,
+        rlang, rstudioapi, tidyr, uuid
+NeedsCompilation: no
+Packaged: 2026-06-19 17:02:00 UTC; tiago
+Author: Tiago Olivoto [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0241-9636>)
+Repository: CRAN
+Date/Publication: 2026-06-24 09:10:03 UTC

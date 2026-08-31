@@ -1,0 +1,35 @@
+Package: IsletCalc
+Title: Calculators for Insulin and Glucagon Release Indices
+Version: 0.0.1
+Authors@R: person("Sufyan", "Suleman", email = "sufyansuleman@hotmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0001-6612-6915"))
+Description: Facilitates the calculation of validated pancreatic islet
+    hormone-release indices from fasting and oral glucose tolerance test
+    (OGTT) measurements. Provides beta-cell insulin release indices
+    (including HOMA-beta, corrected insulin response, Stumvoll first-phase
+    index, BIGTT-AIR, and disposition indices) as described in
+    Madsen (2024) <doi:10.1038/s42255-024-01140-6>, alongside alpha-cell
+    glucagon release and glucagon resistance indices derived from the
+    glucagon-suppression and liver-alpha-cell-axis literature. Enables
+    reproducible assessment of beta-cell and alpha-cell function for
+    metabolic and endocrine research.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+LazyData: true
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/sufyansuleman/IsletCalc,
+        https://sufyansuleman.github.io/IsletCalc/
+BugReports: https://github.com/sufyansuleman/IsletCalc/issues
+NeedsCompilation: no
+Packaged: 2026-07-07 08:18:06 UTC; au773972
+Author: Sufyan Suleman [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6612-6915>)
+Maintainer: Sufyan Suleman <sufyansuleman@hotmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-16 12:50:34 UTC

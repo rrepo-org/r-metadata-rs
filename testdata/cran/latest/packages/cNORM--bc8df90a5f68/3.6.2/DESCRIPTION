@@ -1,0 +1,64 @@
+Package: cNORM
+Title: Continuous Norming
+Version: 3.6.2
+Authors@R: c(
+    person("Alexandra", "Lenhard", 
+           email = "lenhard@psychometrica.de",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-8680-4381")), 
+    person("Wolfgang", "Lenhard", 
+           email = "wolfgang.lenhard@uni-wuerzburg.de",
+           role = c("cre", "aut"), 
+           comment = c(ORCID = "0000-0002-8184-6889")),
+    person("Sebastian", "Gary", 
+           role = "aut"),
+    person("WPS", "Publisher", 
+           role = "fnd",
+           comment = "https://www.wpspublish.com/"))
+Description: Generates continuous test norms in 
+     psychometrics and biometrics, and analyzing model fit. The package offers 
+     both distribution-free modeling using Taylor polynomials and parametric 
+     modeling using the beta-binomial and the 'Sinh-Arcsinh' distribution. 
+     Originally developed for achievement tests, it is applicable to a wide 
+     range of mental, physical, or other test scores dependent on continuous or 
+     discrete explanatory variables. The package provides several advantages: 
+     It minimizes deviations from representativeness in subsamples, interpolates 
+     between discrete levels of explanatory variables, and significantly reduces 
+     the required sample size compared to conventional norming per age group. 
+     cNORM enables graphical and analytical evaluation of model fit, 
+     accommodates a wide range of scales including those with negative and 
+     descending values, and as well supports conventional norming. It generates 
+     norm tables including confidence intervals. Methods for addressing 
+     representativeness issues are available through Iterative Proportional 
+     Fitting.  Based on Lenhard et al. (2016) 
+    <doi:10.1177/1073191116656437>, Lenhard et al. (2019) 
+    <doi:10.1371/journal.pone.0222279>, Lenhard and Lenhard (2021) 
+    <doi:10.1177/0013164420928457> and Gary et al. (2023) 
+    <doi:10.1007/s00181-023-02456-0>.
+License: AGPL-3
+URL: https://www.psychometrica.de/cNorm_en.html,
+        https://github.com/WLenhard/cNORM
+BugReports: https://github.com/WLenhard/cNORM/issues
+Depends: R (>= 4.0.0)
+Imports: ggplot2 (>= 3.5.0), leaps (>= 3.1), grDevices, parallel,
+        stats, utils
+Suggests: DT, haven, foreign, knitr, markdown, numDeriv, readxl,
+        rmarkdown, shiny, shinycssloaders, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyDataCompression: xz
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-20 11:10:14 UTC; gbpa005
+Author: Alexandra Lenhard [aut] (ORCID:
+    <https://orcid.org/0000-0001-8680-4381>),
+  Wolfgang Lenhard [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-8184-6889>),
+  Sebastian Gary [aut],
+  WPS Publisher [fnd] (https://www.wpspublish.com/)
+Maintainer: Wolfgang Lenhard <wolfgang.lenhard@uni-wuerzburg.de>
+Repository: CRAN
+Date/Publication: 2026-07-20 11:40:02 UTC

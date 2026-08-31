@@ -1,0 +1,30 @@
+Package: modelcardr
+Type: Package
+Title: Machine Learning Prediction Auditing and Model Card Reporting
+Version: 0.1.0
+Authors@R: person(given = "Georgios P.", family = "Georgiou", email = "georgiou.georg@unic.ac.cy", role = c("aut", "cre"))
+Description: Audits predictions from fitted machine learning models without
+    requiring retraining or access to the fitted model object. It supports
+    binary classification, multiclass classification, and regression,
+    providing performance metrics with bootstrap confidence intervals,
+    calibration and threshold analyses, residual diagnostics, subgroup
+    comparisons, user-defined acceptance criteria, risk warnings, and
+    self-contained reports. For binary-classification and regression models,
+    the package can also assemble and render structured model cards documenting
+    intended use, evaluation data, performance, subgroup results, assumptions,
+    and limitations. The model-card reporting approach is described by
+    Mitchell et al. (2019) "Model Cards for Model Reporting"
+    <doi:10.1145/3287560.3287596>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: graphics, stats, tools, utils, withr
+Suggests: testthat (>= 3.0.0), jsonlite
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-21 11:52:36 UTC; georg
+Author: Georgios P. Georgiou [aut, cre]
+Maintainer: Georgios P. Georgiou <georgiou.georg@unic.ac.cy>
+Repository: CRAN
+Date/Publication: 2026-07-30 16:40:02 UTC

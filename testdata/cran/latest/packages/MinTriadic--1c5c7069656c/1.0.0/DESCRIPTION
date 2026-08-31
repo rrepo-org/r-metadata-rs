@@ -1,0 +1,21 @@
+Package: MinTriadic
+Type: Package
+Title: Extension to the 'Lolog' Package for 'Triadic' Network
+        Statistics
+Version: 1.0.0
+Date: 2025-06-08
+Authors@R: person(given = "Lekshmy Hema", family = "Nair", role = c("aut", "cre"), email = "lekshmyrohit25@gmail.com")
+Description: Provides an extension to the 'lolog' package by introducing the minTriadicClosure() statistic to capture higher-order interactions among triplets of nodes. This function facilitates improved modelling of group formations and 'triadic' closure in networks. A smoothing parameter has been incorporated to avoid numerical errors.
+License: GPL (>= 3)
+Imports: Rcpp (>= 0.10.0), lolog
+Suggests: network, rmarkdown, knitr, sna, testthat
+LinkingTo: Rcpp, lolog, BH
+NeedsCompilation: yes
+Encoding: UTF-8
+Packaged: 2025-06-18 19:35:27 UTC; 22080824
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Author: Lekshmy Hema Nair [aut, cre]
+Maintainer: Lekshmy Hema Nair <lekshmyrohit25@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-23 10:30:05 UTC

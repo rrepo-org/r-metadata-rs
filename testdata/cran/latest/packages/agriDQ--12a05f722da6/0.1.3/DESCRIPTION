@@ -1,0 +1,47 @@
+Package: agriDQ
+Title: Data Quality Checks and Statistical Assumption Testing for
+        Agricultural Experiments
+Version: 0.1.3
+Authors@R: 
+    person(
+        given = "Sadikul",
+        family = "Islam",
+        email = "sadikul.islamiasri@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-2924-7122")
+    )
+Description: Provides a comprehensive pipeline for data quality checks and
+    statistical assumption diagnostics in agricultural experimental data.
+    Functions cover outlier detection using Interquartile Range (IQR) fence,
+    Z-score, modified Z-score (Hampel identifier), Grubbs test and Dixon
+    Q-test with consensus flagging; missing data pattern analysis and
+    mechanism classification (Missing Completely At Random/Missing At
+    Random/Missing Not At Random (MCAR/MAR/MNAR)) via Little's test;
+    normality testing using Shapiro-Wilk, Anderson-Darling,
+    Kolmogorov-Smirnov, Lilliefors, Pearson chi-square and Jarque-Bera tests;
+    homogeneity of variance via Bartlett, Levene and Fligner-Killeen tests;
+    independence of errors via Durbin-Watson, Breusch-Godfrey and
+    Wald-Wolfowitz runs tests; experimental design validation for Completely
+    Randomised Design (CRD), Randomised Complete Block Design (RCBD), Latin
+    Square Design (LSD) and factorial designs; qualitative variable consistency
+    checks; and automated HyperText Markup Language (HTML) report generation.
+    Designed to align with Findable, Accessible, Interoperable and Reusable
+    (FAIR) data principles. Methods follow Gomez and Gomez (1984,
+    ISBN:978-0471870920) and Montgomery (2017, ISBN:978-1119492443).
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, grDevices, utils, nortest, car, lmtest,
+        tseries, stringdist
+Suggests: testthat (>= 3.0.0), covr, MASS
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-16 10:14:50 UTC; acer
+Author: Sadikul Islam [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2924-7122>)
+Maintainer: Sadikul Islam <sadikul.islamiasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:02:25 UTC

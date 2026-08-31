@@ -1,0 +1,61 @@
+Package: CoxAalenCR
+Type: Package
+Title: Additive-Multiplicative Cox-Aalen Subdistribution Hazard Model
+        for Competing Risks
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Shikhar",
+           family = "Tyagi",
+           role = c("aut", "cre"),
+           email = "shikhar1093tyagi@gmail.com",
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person(given = "Arvind",
+           family = "Pandey",
+           role = "aut",
+           email = "arvindmzu@gmail.com"),
+    person(given = "Bhupendra",
+           family = "Singh",
+           role = "aut",
+           email = "bhupendra.rana@gmail.com"),
+    person(given = "Vrijesh",
+           family = "Tripathi",
+           role = "aut",
+           email = "vrijesh.tripathi@uwi.edu")
+  )
+Description: Implements the flexible additive-multiplicative Cox-Aalen
+    subdistribution hazard regression model for competing risks data as
+    proposed by Li and Long (2019) <doi:10.1007/s11424-019-7281-6>. The
+    framework accommodates both time-varying non-parametric additive covariate
+    effects through an Aalen (1980) additive model and constant multiplicative
+    effects via a Cox proportional hazards structure, generalizing Scheike and
+    Zhang (2002) <doi:10.1111/1467-9469.00065> and Martinussen and Scheike
+    (2002) <doi:10.1093/biomet/89.2.283>. Includes inverse probability of
+    censoring weighting (IPCW) with both Kaplan-Meier weights (Fine and Gray,
+    1999 <doi:10.1080/01621459.1999.10474144>) and covariate-dependent Cox
+    censoring weights (He et al., 2016 <doi:10.1111/sjos.12172>; Li and Long,
+    2019 <doi:10.1007/s11424-019-7281-6>). Provides simultaneous estimating
+    equations based on Huffer and McKeague (1991)
+    <doi:10.1080/01621459.1991.10475010>, asymptotic sandwich variance
+    estimation with censoring-weight martingale corrections, cumulative
+    incidence function (CIF) prediction with pointwise confidence intervals,
+    supremum-type goodness-of-fit tests for time-varying covariate effects, and
+    Monte Carlo competing risks data simulation.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices, utils, survival
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-20 03:20:11 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 15:20:02 UTC

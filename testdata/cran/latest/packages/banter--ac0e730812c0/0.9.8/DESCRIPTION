@@ -1,0 +1,28 @@
+Package: banter
+Type: Package
+Title: BioAcoustic eveNT classifiER
+Description: Create a hierarchical acoustic event species classifier out of  
+  multiple call type detectors as described in 
+  Rankin et al (2017) <doi:10.1111/mms.12381>.
+Version: 0.9.8
+Authors@R: c(
+  EA = person("Eric", "Archer", email = "eric.ivan.archer@gmail.com", role = c("aut", "cre")),
+  SR = person("Shannon", "Rankin", email = "shannon.rankin@noaa.gov", role = c("aut")))
+URL: https://github.com/SWFSC/banter
+BugReports: https://github.com/SWFSC/banter/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.0.6), ggplot2 (>= 3.3.3), gridExtra (>= 2.3),
+        methods, parallel, randomForest (>= 4.6), rfPermute (>= 2.5.1),
+        rlang, stats, swfscMisc (>= 1.5), tibble (>= 3.1.2), tidyr (>=
+        1.1.1)
+Suggests: testthat
+License: GNU General Public License
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-06-11 04:11:32 UTC; eric
+Author: Eric Archer [aut, cre],
+  Shannon Rankin [aut]
+Maintainer: Eric Archer <eric.ivan.archer@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-11 11:00:17 UTC

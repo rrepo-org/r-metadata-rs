@@ -1,0 +1,52 @@
+Package: S7schema
+Title: 'S7' Framework for Schema-Validated YAML Configuration
+Version: 0.1.2
+Authors@R: c(
+    person("Aksel", "Thomsen", , "oath@novonordisk.com", role = c("aut", "cre")),
+    person("Matthew", "Phelps", , "mewp@novonordisk.com", role = "aut"),
+    person("Novo Nordisk A/S", role = "cph"),
+    person("Evgeny", "Poberezkin", role = "cph",
+           comment = "Author of included ajv, fast-deep-equal, and json-schema-traverse libraries"),
+    person("Python Software Foundation", role = "cph",
+           comment = "Copyright holder of Python argparse (included argparse library is a JavaScript port)"),
+    person("Vladimir", "Zapparov", role = "cph",
+           comment = "Author of included js-yaml library"),
+    person("Vincent", "Le Goff", role = "cph",
+           comment = "Author of included fast-uri library"),
+    person("Vsevolod", "Strukchinsky", role = "cph",
+           comment = "Author of included require-from-string library")
+  )
+Description: Provides a generic framework for working with YAML (YAML
+    Ain't Markup Language) configuration files. Uses 'ajv' (Another JSON
+    Schema Validator) via 'V8' to validate configurations against JSON
+    Schema definitions. Configuration objects inherit from 'S7' classes
+    and base lists, supporting downstream extension through custom classes
+    and methods.
+License: Apache License (>= 2)
+URL: https://novonordisk-opensource.github.io/S7schema/,
+        https://github.com/NovoNordisk-OpenSource/S7schema
+BugReports: https://github.com/NovoNordisk-OpenSource/S7schema/issues
+Depends: R (>= 4.1)
+Imports: cli, rlang, S7, tools, V8, yaml (>= 2.3.8)
+Suggests: jsonlite, knitr, purrr, rmarkdown, testthat (>= 3.0.0),
+        tibble, tidyr, withr
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-08-21 09:20:57 UTC; oath
+Author: Aksel Thomsen [aut, cre],
+  Matthew Phelps [aut],
+  Novo Nordisk A/S [cph],
+  Evgeny Poberezkin [cph] (Author of included ajv, fast-deep-equal, and
+    json-schema-traverse libraries),
+  Python Software Foundation [cph] (Copyright holder of Python argparse
+    (included argparse library is a JavaScript port)),
+  Vladimir Zapparov [cph] (Author of included js-yaml library),
+  Vincent Le Goff [cph] (Author of included fast-uri library),
+  Vsevolod Strukchinsky [cph] (Author of included require-from-string
+    library)
+Maintainer: Aksel Thomsen <oath@novonordisk.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 22:01:19 UTC

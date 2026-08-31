@@ -1,0 +1,23 @@
+Package: TestNet
+Type: Package
+Title: A Method for Inferring Microbial Networks with FDR Control
+Version: 1.0
+Date: 2026-05-28
+Authors@R: 
+    person("Yi-Juan", "Hu", role = c("aut", "cre"), email = "yijuanhu@bicmr.pku.edu.cn")
+Description: A testing method for inferring microbial networks. It differs from existing microbial network analyses in that it provides calibrated results by controlling the false discovery rate. The method accounts for the complex features of taxa count data. It also accommodates both independent and clustered samples, offers separate linear and nonlinear tests for each pair of taxa, and includes an omnibus test that bypasses the need to specify the type of relationship for each pair of taxa. 
+License: GPL (>= 2)
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: permute, matrixStats, dcov, stats, utils
+Suggests: R.rsp, testthat
+URL: https://github.com/yijuanhu/TestNet
+BugReports: https://github.com/yijuanhu/TestNet/issues
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-05-29 12:29:27 UTC; yhu30
+Author: Yi-Juan Hu [aut, cre]
+Maintainer: Yi-Juan Hu <yijuanhu@bicmr.pku.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-06-02 09:40:02 UTC

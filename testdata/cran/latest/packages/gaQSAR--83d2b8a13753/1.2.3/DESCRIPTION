@@ -1,0 +1,34 @@
+Package: gaQSAR
+Type: Package
+Title: QSAR Modelling Using Genetic Algorithm Based Variable Selection
+Version: 1.2.3
+Authors@R: person("Jos", "Hageman", email = "jos.hageman@wur.nl", role = c("aut", "cre"))
+Description: Implements genetic algorithm-based variable selection for building 
+    quantitative structure-activity relationship (QSAR) models. The package provides 
+    a workflow for selecting optimal predictor subsets from large 
+    descriptor spaces using leave-one-out cross-validation (LOOCV) with Q2 as the 
+    fitness criterion. Features include automatic handling of multicollinearity via 
+    variance inflation factor (VIF) thresholding, customizable genetic algorithm 
+    operators, and diagnostic tools for model evaluation. Supports both training set 
+    optimization and external validation, plus nested (double) cross-validation for 
+    unbiased performance estimation and predictor stability diagnostics. Built-in 
+    visualization functions include Q2 curves and Williams plots to assess model 
+    applicability domain. The method is demonstrated in papers predicting 
+    antibacterial activity by Araya-Cloutier et al. (2018) 
+    <doi:10.1038/s41598-018-27545-4> and Kalli et al. (2021) 
+    <doi:10.1038/s41598-021-92964-9>.
+License: GPL-3
+Encoding: UTF-8
+Imports: GA, future, future.apply, ggplot2, ggrepel, stats, scales,
+        prospectr, reshape2
+Suggests: knitr, rmarkdown, QSARdata
+VignetteBuilder: knitr
+URL: https://github.com/joshageman/gaQSAR
+BugReports: https://github.com/joshageman/gaQSAR/issues
+NeedsCompilation: no
+Author: Jos Hageman [aut, cre]
+Maintainer: Jos Hageman <jos.hageman@wur.nl>
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-18 20:49:14 UTC; josha
+Repository: CRAN
+Date/Publication: 2026-06-24 08:20:07 UTC

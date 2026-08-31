@@ -1,0 +1,28 @@
+Package: bigMICE
+Type: Package
+Title: Multiple Imputation of Big Data
+Version: 1.0.0
+Authors@R: c(person(given = "Hugo",
+				  family = "Morvan",
+				  role = "aut",
+				  email = "hugmo82@liu.se"),
+		   person(given = "Oleg",
+				  family = "Sysoev",
+				  role = c("aut","cre"),
+				  email = "oleg.sysoev@liu.se"))
+Description: A computational toolbox designed for handling missing values in large datasets with the Multiple Imputation by Chained Equations (MICE) by using 'Apache Spark'. The methodology is described in Morvan et al. (2026) <doi:10.48550/arXiv.2601.21613>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+SystemRequirements: Spark: 3.x, or 4.x
+Imports: dplyr, tidyselect, rlang, sparklyr, data.table, Matrix
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-20 13:56:14 UTC; olesy12
+Author: Hugo Morvan [aut],
+  Oleg Sysoev [aut, cre]
+Maintainer: Oleg Sysoev <oleg.sysoev@liu.se>
+Repository: CRAN
+Date/Publication: 2026-02-25 10:20:14 UTC

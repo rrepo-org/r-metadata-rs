@@ -1,0 +1,42 @@
+Package: WarnEpi
+Type: Package
+Title: A Comprehensive Tool for Early Warning in Infectious Disease
+Version: 1.0.1
+Authors@R: c(
+    person(
+      "Xiaoli", "Wang",
+      role = c("aut")
+    ),
+    person(
+      "Mingyue", "Pan",
+      email = "panmyue18@163.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: 
+    Infectious disease surveillance requires early outbreak detection. This
+    package provides statistical tools for analyzing time-series monitoring 
+    data through three core methods: 
+    a) EWMA (Exponentially Weighted Moving Average)
+    b) Modified-CUSUM (Modified Cumulative Sum)
+    c) Adjusted-Serfling models
+    Methodologies are based on:
+    - Wang et al. (2010) <doi:10.1016/j.jbi.2009.08.003>
+    - Wang et al. (2015) <doi:10.1371/journal.pone.0119923>
+    Designed for epidemiologists and public health researchers working with
+    disease surveillance systems.
+Language: en
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+URL: https://github.com/pan-mingyue/WarnEpi
+BugReports: https://github.com/pan-mingyue/WarnEpi/issues
+NeedsCompilation: no
+Packaged: 2025-08-21 07:37:06 UTC; panmingyue
+Author: Xiaoli Wang [aut],
+  Mingyue Pan [aut, cre]
+Maintainer: Mingyue Pan <panmyue18@163.com>
+Repository: CRAN
+Date/Publication: 2025-08-26 19:50:07 UTC

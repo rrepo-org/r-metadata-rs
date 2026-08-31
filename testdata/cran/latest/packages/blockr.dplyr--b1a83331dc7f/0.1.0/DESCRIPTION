@@ -1,0 +1,53 @@
+Package: blockr.dplyr
+Title: Interactive 'dplyr' Data Transformation Blocks
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Christoph",
+             family = "Sax",
+             role = c("aut", "cre"),
+             email = "christoph@cynkra.com",
+             comment = c(ORCID = "0000-0002-7192-7044")),
+      person(given = "Nicolas",
+             family = "Bennett",
+             role = "aut",
+             email = "nicolas@cynkra.com"),
+      person(given = "David",
+             family = "Granjon",
+             role = "aut",
+             email = "david@cynkra.com"),
+      person(given = "Mike",
+             family = "Page",
+             role = "aut",
+             email = "mike@cynkra.com"),
+      person(family = "Bristol Myers Squibb",
+             role = "fnd")
+    )
+Description: Extends 'blockr.core' with interactive blocks for visual data
+    wrangling using 'dplyr' and 'tidyr' operations. Users can build data
+    transformation pipelines through a graphical interface without writing code
+    directly. Includes blocks for filtering, selecting, mutating, summarizing,
+    joining, and arranging data, with support for complex expressions, grouping
+    operations, and real-time validation.
+URL: https://bristolmyerssquibb.github.io/blockr.dplyr/
+BugReports: https://github.com/BristolMyersSquibb/blockr.dplyr/issues
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: shiny, blockr.core (>= 0.1.1), dplyr, tidyr, shinyAce, glue,
+        htmltools, bslib, jsonlite, shinyjs, utils, datasets
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, pkgdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+NeedsCompilation: no
+Packaged: 2025-12-13 09:53:07 UTC; christophsax
+Author: Christoph Sax [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7192-7044>),
+  Nicolas Bennett [aut],
+  David Granjon [aut],
+  Mike Page [aut],
+  Bristol Myers Squibb [fnd]
+Maintainer: Christoph Sax <christoph@cynkra.com>
+Repository: CRAN
+Date/Publication: 2025-12-18 14:30:18 UTC

@@ -1,0 +1,45 @@
+Package: LCPA
+Type: Package
+Title: A General Framework for Latent Classify and Profile Analysis
+Version: 1.0.2
+Date: 2026-04-10
+Author: Haijiang Qin [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0000-6721-5653>),
+  Lei Guo [aut, cph] (ORCID: <https://orcid.org/0000-0002-8273-3587>)
+Authors@R: c(person(given = "Haijiang", 
+                    family = "Qin", 
+                    role = c("aut", "cre", "cph"), 
+                    email = "haijiang133@outlook.com", 
+                    comment = c(ORCID = "0009-0000-6721-5653")),
+             person(given = "Lei", 
+                    family = "Guo", 
+                    role = c("aut", "cph"), 
+                    email = "happygl1229@swu.edu.cn", 
+                    comment = c(ORCID = "0000-0002-8273-3587")))
+Maintainer: Haijiang Qin <haijiang133@outlook.com>
+Description: A unified latent class modeling framework that encompasses both latent class analysis (LCA) and latent profile analysis (LPA), offering a one-stop solution for latent class modeling. It implements state-of-the-art parameter estimation methods, including the expectation–maximization (EM) algorithm, neural network estimation (NNE; requires users to have 'Python' and its dependent libraries installed on their computer), and integration with 'Mplus' (requires users to have 'Mplus' installed on their computer). In addition, it provides commonly used model fit indices such as the Akaike information criterion (AIC) and Bayesian information criterion (BIC), as well as classification accuracy measures such as entropy. The package also includes fully functional likelihood ratio tests (LRT) and bootstrap likelihood ratio tests (BLRT) to facilitate model comparison, along with bootstrap-based and observed information matrix-based standard error estimation. Furthermore, it supports the standard three-step approach for LCA, LPA, and latent transition analysis (LTA) with covariates, enabling detailed covariate analysis. Finally, it includes several user-friendly auxiliary functions to enhance interactive usability.
+License: GPL-3
+Depends: R (>= 4.1.0)
+Imports: reticulate, clue, ggplot2, tidyr, dplyr, mvtnorm, Matrix,
+        MASS, MplusAutomation, tidyselect, numDeriv, nloptr, patchwork,
+        Rcpp, reshape2, scales
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+NeedsCompilation: yes
+Collate: 'adjust.response.R' 'adjust.model.R' 'check.response.R'
+        'compare.model.R' 'EM.LCA.R' 'EM.LPA.R' 'get.AvePP.R'
+        'get.CEP.R' 'get.entropy.R' 'get.fit.index.R'
+        'get.Log.Lik.LCA.R' 'get.Log.Lik.LPA.R' 'get.Log.Lik.LTA.R'
+        'get.npar.LCA.R' 'get.npar.LPA.R' 'get.npar.LTA.R'
+        'get.P.Z.Xn.LCA.R' 'get.P.Z.Xn.LPA.R' 'get.SE.R'
+        'install_python_dependencies.R' 'Kmeans.LCA.R' 'LCA.R' 'LCPA.R'
+        'logit.R' 'LPA.R' 'LTA.R' 'LRT.test.R' 'LRT.test.Bootstrap.R'
+        'LRT.test.VLMR.R' 'Mplus.LCA.R' 'Mplus.LPA.R' 'normalize.R'
+        'plotResponse.R' 'RcppExports.R' 'rdirichlet.R' 'S3extract.R'
+        'S3plot.R' 'S3print.R' 'S3summary.R' 'S3update.R'
+        'sim.correlation.R' 'sim.LCA.R' 'sim.LPA.R' 'sim.LTA.R'
+        'tools.R' 'utils.R' 'logpdf_component.R' 'zzz.R'
+Repository: CRAN
+Packaged: 2026-04-10 02:16:14 UTC; Haijiang
+Date/Publication: 2026-04-10 05:10:37 UTC

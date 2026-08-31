@@ -1,0 +1,28 @@
+Package: scrutr
+Title: Scrutinizing Collections of Structured Datasets
+Version: 0.3.1
+Authors@R: 
+    person("Daniel", "Rakotomalala", , "rakdanielh@gmail.com", role = c("aut", "cre"))
+Description: Provides a coherent interface for exploring and transforming
+    multiple related data frames that share a common structure.
+    Complements single-dataset inspection tools by operating across an
+    entire collection at once. Also includes lightweight utilities for
+    related file and folder management tasks.
+License: MIT + file LICENSE
+URL: https://github.com/danielrak/scrutr
+BugReports: https://github.com/danielrak/scrutr/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, glue, lubridate, magrittr, purrr, rio, stats, stringr,
+        tibble, tools, utils, writexl
+Suggests: knitr, readxl, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-24 19:44:12 UTC; rheri
+Author: Daniel Rakotomalala [aut, cre]
+Maintainer: Daniel Rakotomalala <rakdanielh@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-25 09:40:08 UTC

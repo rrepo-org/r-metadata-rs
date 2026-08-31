@@ -1,0 +1,29 @@
+Package: idealstan
+Type: Package
+Title: Robust Measurement with 'Stan'
+Version: 1.0
+Date: 2026-04-21
+Authors@R: c(person("Robert","Kubinec", role = c("aut","cre"),
+                     email = "bobkubinec@gmail.com"))
+BugReports: https://github.com/saudiwin/idealstan/issues
+Description: Offers item-response theory (IRT) ideal-point measurement modeling for diverse distributions, missing data, and over-time variation. Full and approximate Bayesian sampling with 'Stan' (<https://mc-stan.org/>). 
+License: MIT + file LICENSE
+Depends: methods, R (>= 4.0.0)
+Imports: dplyr, svDialogs, tidyr, stringr, bayesplot, posterior,
+        gghighlight, ggrepel, ggplot2, tidybayes, lazyeval, rlang,
+        ggthemes, forcats, ordbetareg, scales, shiny, tibble
+Suggests: cmdstanr, quarto, knitr, rmarkdown, loo, lubridate, rstan,
+        shinystan, pscl, tinytable, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+SystemRequirements: GNU make
+Additional_repositories: https://stan-dev.r-universe.dev
+VignetteBuilder: quarto
+RoxygenNote: 7.3.2
+Packaged: 2026-05-07 02:02:19 UTC; r.kubinec
+Author: Robert Kubinec [aut, cre]
+Maintainer: Robert Kubinec <bobkubinec@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-12 19:20:18 UTC

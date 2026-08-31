@@ -1,0 +1,41 @@
+Package: QRM
+Version: 0.4-35
+Date: 2025-04-06
+Title: Provides R-Language Code to Examine Quantitative Risk Management
+        Concepts
+Maintainer: Bernhard Pfaff <bernhard@pfaffikus.de>
+Authors@R: c(person(given = "Bernhard",
+                      family = "Pfaff",
+                      role = c("aut", "cre"),
+                      email = "bernhard@pfaffikus.de"),
+               person(given = "Marius",
+                      family = "Hofert",
+                      role = "ctb"),
+               person(given = "Alexander",
+                      family = "McNeil)",
+                      role = "aut",
+                      comment = "QRMlib"),
+               person(given = "Scott",
+                      family = "Ulmann",
+                      role = "trl",
+                      comment = "First R port as package QRMlib"))
+Description: Provides functions/methods to accompany the book
+ Quantitative Risk Management: Concepts, Techniques and Tools by
+ Alexander J. McNeil, Ruediger Frey, and Paul Embrechts.
+Depends: R (>= 2.10.0), gsl, Matrix, mvtnorm, numDeriv, timeSeries
+Imports: Rcpp (>= 0.11.1), mgcv, methods, timeDate
+LinkingTo: Rcpp
+LazyData: Yes
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: yes
+Repository: CRAN
+Repository/R-Forge/Project: qrm
+Repository/R-Forge/Revision: 105
+Repository/R-Forge/DateTimeStamp: 2020-01-27 21:36:47
+Date/Publication: 2025-04-06 20:40:05 UTC
+Packaged: 2025-04-06 17:29:40 UTC; bp
+Author: Bernhard Pfaff [aut, cre],
+  Marius Hofert [ctb],
+  Alexander McNeil) [aut] (QRMlib),
+  Scott Ulmann [trl] (First R port as package QRMlib)

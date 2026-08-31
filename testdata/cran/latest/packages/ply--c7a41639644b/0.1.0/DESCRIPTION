@@ -1,0 +1,22 @@
+Package: ply
+Type: Package
+Title: Bitboard Chess Engine
+Version: 0.1.0
+Authors@R: person("Qusai", "Jouda", email = "jouda.qusai@gmail.com",
+    role = c("aut", "cre"))
+Author: Qusai Jouda [aut, cre]
+Maintainer: Qusai Jouda <jouda.qusai@gmail.com>
+Description: A fully legal chess move generator and game engine
+    implemented in C++17 via 'Rcpp'. Provides FEN (Forsyth-Edwards Notation)
+    parsing, PGN (Portable Game Notation) replay, position feature enrichment,
+    and a multi-game registry backed by a bitboard representation.
+License: MIT + file LICENSE
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-03-24 23:30:18 UTC; qusai
+Repository: CRAN
+Date/Publication: 2026-03-30 09:20:02 UTC

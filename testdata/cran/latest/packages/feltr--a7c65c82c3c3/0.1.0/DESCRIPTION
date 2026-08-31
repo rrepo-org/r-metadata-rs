@@ -1,0 +1,32 @@
+Package: feltr
+Title: Access the Felt API
+Version: 0.1.0
+Authors@R: 
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "cre"),
+           email = "ctkenny@proton.me",
+           comment = c(ORCID = "0000-0002-9386-6860"))
+Description: Upload, download, and edit internet maps with the Felt API 
+    (<https://developers.felt.com/rest-api/getting-started>). 
+    Allows users to create new maps, edit existing maps, and extract data.
+    Provides tools for working with layers, which represent geographic data, and elements,
+    which are interactive annotations. Spatial data accessed from the API is 
+    transformed to work with 'sf'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, curl, dplyr, fs, geojsonsf, httr2, jsonlite, purrr,
+        rlang, sf, stringr, tibble, tidyr
+URL: https://github.com/christopherkenny/feltr,
+        https://christophertkenny.com/feltr/
+Suggests: httptest2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2025-12-11 03:05:44 UTC; chris
+Author: Christopher T. Kenny [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9386-6860>)
+Maintainer: Christopher T. Kenny <ctkenny@proton.me>
+Repository: CRAN
+Date/Publication: 2025-12-11 16:20:02 UTC

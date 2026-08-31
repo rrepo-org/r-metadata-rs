@@ -1,0 +1,33 @@
+Package: educationdata
+Type: Package
+Title: Retrieve Records from the Urban Institute's Education Data
+        Portal API
+Version: 0.1.5
+Authors@R: c(
+    person("Erika", "Tyagi", email = "etyagi@urban.org", role = "cre"), 
+    person("Kyle", "Ueyama", email = "khueyama@gmail.com", role = "aut"),
+    person("Andrew", "Martin", email = "almartin@gmail.com", role="ctb", comment = c(ORCID = "0009-0005-5117-323X")),
+    person(given = "The Urban Institute", role = c("cph"))
+    )
+Date: 2025-10-28
+URL: https://urbaninstitute.github.io/education-data-package-r/
+BugReports: https://github.com/UrbanInstitute/education-data-package-r/issues
+Description: Allows R users to retrieve and parse data from the Urban 
+    Institute's Education Data API <https://educationdata.urban.org/> into a 
+    'data.frame' for analysis.
+Depends: R (>= 3.4.0)
+Imports: glue, httr, jsonlite, readr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: knitr, rmarkdown, testthat
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2025-10-28 17:59:04 UTC; etyagi
+Author: Erika Tyagi [cre],
+  Kyle Ueyama [aut],
+  Andrew Martin [ctb] (ORCID: <https://orcid.org/0009-0005-5117-323X>),
+  The Urban Institute [cph]
+Maintainer: Erika Tyagi <etyagi@urban.org>
+Repository: CRAN
+Date/Publication: 2025-10-29 06:10:36 UTC

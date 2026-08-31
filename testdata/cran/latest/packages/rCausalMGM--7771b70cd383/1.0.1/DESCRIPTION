@@ -1,0 +1,35 @@
+Package: rCausalMGM
+Type: Package
+Title: Scalable Causal Discovery and Model Selection on Mixed Datasets
+        with 'rCausalMGM'
+Version: 1.0.1
+Date: 2026-03-13
+Author: Tyler C Lovelace [aut],
+  Max Dudek [aut],
+  Jack Fiore [aut],
+  Panayiotis V Benos [aut, cre]
+Authors@R: c(person(given = c("Tyler", "C"),
+                    family = "Lovelace",
+                    role = "aut"),
+	     person(given = "Max",
+                    family = "Dudek",
+                    role = "aut"),
+	     person(given = "Jack",
+                    family = "Fiore",
+                    role = "aut"),
+             person(given = c("Panayiotis", "V"),
+                    family = "Benos",
+                    role = c("aut", "cre"),
+                    email = "pbenos@ufl.edu"))
+Maintainer: Panayiotis V Benos <pbenos@ufl.edu>
+Description: Scalable methods for learning causal graphical models from mixed data, including continuous, discrete, and censored variables. The package implements CausalMGM, which combines a convex, score-based approach for learning an initial moralized graph with a producer-consumer scheme that enables efficient parallel conditional independence testing in constraint-based causal discovery algorithms. The implementation supports high-dimensional datasets and provides individual access to core components of the workflow, including MGM and the PC-Stable and FCI-Stable causal discovery algorithms. To support practical applications, the package includes multiple model selection strategies, including information criteria based on likelihood and model complexity, cross-validation for out-of-sample likelihood estimation, and stability-based approaches that assess graph robustness across subsamples.
+License: GPL-3
+Imports: Rcpp (>= 1.0.3), survival
+LinkingTo: BH, Rcpp, RcppArmadillo, RcppThread
+Suggests: Rgraphviz, graph
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2026-03-13 16:17:19 UTC; tyler
+Repository: CRAN
+Date/Publication: 2026-03-13 19:00:02 UTC

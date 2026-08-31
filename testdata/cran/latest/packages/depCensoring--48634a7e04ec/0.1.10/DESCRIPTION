@@ -1,0 +1,47 @@
+Package: depCensoring
+Type: Package
+Title: Statistical Methods for Survival Data with Dependent Censoring
+Version: 0.1.10
+Authors@R: c(person("Ilias", "Willems", email = "ilias.willems@kuleuven.be", role = "aut", comment = c(ORCID = "0009-0001-9463-9942")),
+    person("Gilles", "Crommen", email = "gilles.crommen@kuleuven.be", role = "aut", comment = c(ORCID = "0000-0001-8380-1900")),
+    person("Negera Wakgari", "Deresa", email = "negera.deresa@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-1302-3725")),
+    person("Jie", "Ding", email = "biostat_jieding@outlook.com", role = c("aut"), comment = c(ORCID = "0000-0002-6083-7529")),
+    person("Claudia","Czado", email = "cczado@cit.tum.de", role = "aut", comment = c(ORCID = "0000-0002-6329-5438")),
+    person("Myrthe", "D'Haen", email = "myrthe.dhaen@kuleuven.be", role = "aut", comment = c(ORCID = "0000-0003-0223-0267")),
+    person("Ingrid", "Van Keilegom", email = "ingrid.vankeilegom@kuleuven.be", role = "aut", comment = c(ORCID = "0000-0001-8827-7642")))
+Maintainer: Negera Wakgari Deresa <negera.deresa@gmail.com>
+Description: Several statistical methods for analyzing survival data under various forms of dependent
+    censoring are implemented in the package. In addition to accounting for dependent censoring, it 
+    offers tools to adjust for unmeasured confounding factors. The implemented approaches allow 
+    users to estimate the dependency between survival time and dependent censoring time, based 
+    solely on observed survival data. For more details on the methods, refer to Deresa and Van 
+    Keilegom (2021) <doi:10.1093/biomet/asaa095>, Czado and Van Keilegom (2023)
+    <doi:10.1093/biomet/asac067>, Crommen et al. (2024) <doi:10.1007/s11749-023-00903-9>,
+    Deresa and Van Keilegom (2024) <doi:10.1080/01621459.2022.2161387>, Willems et al. (2025) 
+    <doi:10.48550/arXiv.2403.11860>, Ding and Van Keilegom (2025) and D'Haen et al. (2025)
+    <doi:10.1007/s10985-025-09647-0>.
+Imports: survival, foreach, parallel, doParallel, pbivnorm, stats,
+        MASS, nleqslv, methods, Matrix, EnvStats, mvtnorm, rafalib,
+        rvinecopulib, matrixcalc, nloptr, numDeriv, copula, R6,
+        lubridate, splines2
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), rkriging, orthopolynom, OpenMx, stringr,
+        LaplacesDemon
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-13 16:11:57 UTC; Negera Deresa
+Author: Ilias Willems [aut] (ORCID: <https://orcid.org/0009-0001-9463-9942>),
+  Gilles Crommen [aut] (ORCID: <https://orcid.org/0000-0001-8380-1900>),
+  Negera Wakgari Deresa [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1302-3725>),
+  Jie Ding [aut] (ORCID: <https://orcid.org/0000-0002-6083-7529>),
+  Claudia Czado [aut] (ORCID: <https://orcid.org/0000-0002-6329-5438>),
+  Myrthe D'Haen [aut] (ORCID: <https://orcid.org/0000-0003-0223-0267>),
+  Ingrid Van Keilegom [aut] (ORCID:
+    <https://orcid.org/0000-0001-8827-7642>)
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-04-13 18:10:08 UTC

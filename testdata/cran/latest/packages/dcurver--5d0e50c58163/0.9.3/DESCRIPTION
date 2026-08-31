@@ -1,0 +1,28 @@
+Package: dcurver
+Version: 0.9.3
+Date: 2025-10-24
+Title: Utility Functions for Davidian Curves
+Authors@R: person(given = "Ozan",
+                  family = "Öğreden",
+                  role = c("aut", "cre"),
+                  email = "oguzhanogreden@protonmail.com")
+Description: A Davidian curve defines a seminonparametric density, whose shape and flexibility can be tuned by
+  easy to estimate parameters. Since a special case of a Davidian curve is the standard normal density,
+  Davidian curves can be used for relaxing normality assumption in statistical applications (Zhang & Davidian, 2001)
+  <doi:10.1111/j.0006-341X.2001.00795.x>. This package provides the density function, the gradient of
+  the loglikelihood and a random generator for Davidian curves.
+License: GPL-3
+URL: https://github.com/oguzhanogreden/dcurver
+BugReports: https://github.com/oguzhanogreden/dcurver/issues
+Imports: Rcpp (>= 0.12.14)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Suggests: testthat
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2025-10-24 12:27:35 UTC; ozan
+Author: Ozan Öğreden [aut, cre]
+Maintainer: Ozan Öğreden <oguzhanogreden@protonmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-24 16:10:09 UTC

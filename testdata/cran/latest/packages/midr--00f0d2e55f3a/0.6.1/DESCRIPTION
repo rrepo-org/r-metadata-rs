@@ -1,0 +1,33 @@
+Package: midr
+Type: Package
+Title: Learning from Black-Box Models by Maximum Interpretation
+        Decomposition
+Version: 0.6.1
+Authors@R: c(
+    person("Ryoichi", "Asashiba", email = "ryoichi.asashiba@gmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0009-0001-9532-7000")),
+    person("Hirokazu", "Iwasawa", role = c("aut")),
+    person("Reiji", "Kozuma", role = c("ctb"))
+  )
+Description: 
+  The goal of 'midr' is to provide a model-agnostic method for interpreting and explaining black-box predictive models by creating a globally interpretable surrogate model. The package implements 'Maximum Interpretation Decomposition' (MID), a functional decomposition technique that finds an optimal additive approximation of the original model. This approximation is achieved by minimizing the squared error between the predictions of the black-box model and the surrogate model. The theoretical foundations of MID are described in Iwasawa & Matsumori (2025) [Forthcoming], and the package itself is detailed in Asashiba et al. (2025) <doi:10.48550/arXiv.2506.08338>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: graphics, grDevices, Rcpp, RcppEigen, rlang, stats, utils
+Suggests: datasets, ggplot2, khroma, knitr, RColorBrewer, rmarkdown,
+        scales, testthat, viridisLite
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+URL: https://github.com/ryo-asashi/midr,
+        https://ryo-asashi.github.io/midr/
+BugReports: https://github.com/ryo-asashi/midr/issues
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-04-30 14:53:28 UTC; daysb
+Author: Ryoichi Asashiba [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-9532-7000>),
+  Hirokazu Iwasawa [aut],
+  Reiji Kozuma [ctb]
+Maintainer: Ryoichi Asashiba <ryoichi.asashiba@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-01 05:10:14 UTC

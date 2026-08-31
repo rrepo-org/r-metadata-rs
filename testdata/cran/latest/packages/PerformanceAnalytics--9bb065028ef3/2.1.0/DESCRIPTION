@@ -1,0 +1,67 @@
+Package: PerformanceAnalytics
+Type: Package
+Title: Econometric Tools for Performance and Risk Analysis
+Authors@R: c(
+  person(given=c("Brian","G."),family="Peterson",role=c("cre","aut","cph"), email="brian@braverock.com")
+  , person(given="Peter",family="Carl",role=c("aut","cph"), email="peter@braverock.com")
+  , person(given="Kris",family="Boudt",role=c("ctb","cph"))
+  , person(given="Ross",family="Bennett",role="ctb")
+  , person(given="Joshua",family="Ulrich",role="ctb")
+  , person(given="Eric",family="Zivot",role="ctb")
+  , person(given="Dries",family="Cornilly",role="ctb")
+  , person(given="Eric",family="Hung",role="ctb")
+  , person(given="Matthieu",family="Lestel",role="ctb")
+  , person(given="Kyle",family="Balkissoon",role="ctb")
+  , person(given="Diethelm",family="Wuertz",role="ctb")
+  , person(given=c("Anthony","Alexander"),family="Christidis",role="ctb")
+  , person(given="R. Douglas",family="Martin",role="ctb")
+  , person(given=c("Zeheng", "Zenith"),family="Zhou",role="ctb")
+  , person(given=c("Justin", "M."),family="Shea",role="ctb")
+  , person(given="Dhairya",family="Jain",role="ctb")
+  , person(given="Talgat",family="Daniyarov",role="ctb")
+  )
+Version: 2.1.0
+Date: 2026-04-05
+Description: Collection of econometric functions for performance and risk
+    analysis. In addition to standard risk and performance metrics, this
+    package aims to aid practitioners and researchers in utilizing the latest
+    research in analysis of non-normal return streams.  In general, it is most
+    tested on return (rather than price) data on a regular scale, but most
+    functions will work with irregular return data as well, and increasing
+    numbers of functions will work with P&L or price data where possible.
+Imports: methods, quadprog, zoo
+Depends: R (>= 4.0.0), xts (>= 0.10.0)
+Suggests: dygraphs, Hmisc, MASS, quantmod, gamlss, gamlss.dist,
+        robustbase, quantreg, ggplot2, vdiffr, RColorBrewer, googleVis,
+        plotly, gridExtra, ggpubr, nloptr, rgenoud, RPESE, RobStatTM,
+        fit.models, R.rsp, testthat (>= 3.0.0), covr
+VignetteBuilder: R.rsp
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/braverock/PerformanceAnalytics
+Copyright: (c) 2004-2026
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-04-09 18:05:55 UTC; brian
+Author: Brian G. Peterson [cre, aut, cph],
+  Peter Carl [aut, cph],
+  Kris Boudt [ctb, cph],
+  Ross Bennett [ctb],
+  Joshua Ulrich [ctb],
+  Eric Zivot [ctb],
+  Dries Cornilly [ctb],
+  Eric Hung [ctb],
+  Matthieu Lestel [ctb],
+  Kyle Balkissoon [ctb],
+  Diethelm Wuertz [ctb],
+  Anthony Alexander Christidis [ctb],
+  R. Douglas Martin [ctb],
+  Zeheng Zenith Zhou [ctb],
+  Justin M. Shea [ctb],
+  Dhairya Jain [ctb],
+  Talgat Daniyarov [ctb]
+Maintainer: Brian G. Peterson <brian@braverock.com>
+Repository: CRAN
+Date/Publication: 2026-04-11 09:40:02 UTC

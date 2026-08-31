@@ -1,0 +1,33 @@
+Package: rush
+Title: Rapid Asynchronous and Distributed Computing
+Version: 1.2.1
+Authors@R: 
+    person("Marc", "Becker", , "marcbecker@posteo.de", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0002-8115-0400"))
+Description: Package to tackle large-scale problems asynchronously across
+    a distributed network. Employing a database centric model, rush
+    enables workers to communicate tasks and their results over a shared
+    'Redis' database. Key features include low task overhead, efficient
+    caching, and robust error handling. The package powers the
+    asynchronous optimization algorithms in the 'bbotk' and 'mlr3tuning'
+    packages.
+License: MIT + file LICENSE
+URL: https://rush.mlr-org.com, https://github.com/mlr-org/rush
+BugReports: https://github.com/mlr-org/rush/issues
+Depends: R (>= 3.6.0)
+Imports: checkmate, data.table, ids, jsonlite, lgr (>= 0.5.0), mirai
+        (>= 2.5.0), mlr3misc (>= 0.20.0), processx, R6, redux, uuid
+Suggests: callr, knitr, lhs, quarto, ranger, rmarkdown, testthat (>=
+        3.0.0), xgboost
+SystemRequirements: Redis (>= 7.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0.9000
+NeedsCompilation: no
+Packaged: 2026-07-24 11:36:06 UTC; marc
+Author: Marc Becker [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-8115-0400>)
+Maintainer: Marc Becker <marcbecker@posteo.de>
+Repository: CRAN
+Date/Publication: 2026-07-24 14:00:02 UTC

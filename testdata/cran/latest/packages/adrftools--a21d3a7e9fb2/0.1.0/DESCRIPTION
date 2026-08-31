@@ -1,0 +1,31 @@
+Package: adrftools
+Type: Package
+Title: Estimating, Visualizing, and Testing Average Dose-Response
+        Functions
+Version: 0.1.0
+Authors@R: person("Noah", "Greifer", role = c("aut", "cre"),
+                  email = "noah.greifer@gmail.com",
+	                comment = c(ORCID = "0000-0003-3067-7154"))
+Description: Facilitates estimating, visualizing, and testing average dose-response functions (ADRFs) for characterizing the causal effect of a continuous (i.e., non-discrete) treatment or exposure. Includes support for frequentist and Bayesian regression models, analytical and bootstrap inference, and characterization of subgroup effects.
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.6.5), collapse (>= 2.1.3), insight (>= 1.4.3),
+        ggplot2 (>= 4.0.0), marginaleffects (>= 0.19.0), mvtnorm (>=
+        1.3-3), rlang (>= 1.1.0), sandwich (>= 3.1-1), stats, utils
+Suggests: CompQuadForm (>= 1.4.4), fwb (>= 0.5.0), survey, splines,
+        WeightIt, MatchThem, mice, generics, dbarts, knitr, rmarkdown
+License: GPL (>= 2)
+Encoding: UTF-8
+URL: https://github.com/ngreifer/adrftools,
+        https://ngreifer.github.io/adrftools/
+BugReports: https://github.com/ngreifer/adrftools/issues
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-13 15:44:53 UTC; NoahGreifer
+Author: Noah Greifer [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3067-7154>)
+Maintainer: Noah Greifer <noah.greifer@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-17 22:20:02 UTC

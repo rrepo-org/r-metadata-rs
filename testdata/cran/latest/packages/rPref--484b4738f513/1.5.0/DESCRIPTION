@@ -1,0 +1,35 @@
+Package: rPref
+Version: 1.5.0
+Date: 2025-08-19
+Title: Database Preferences and Skyline Computation
+Encoding: UTF-8
+Authors@R: person(given = "Patrick",
+                  family = "Roocks",
+                  role = c("aut", "cre"),
+                  email = "mail@p-roocks.de")
+Description: Routines to select and visualize the maxima for a given strict
+    partial order. This especially includes the computation of the Pareto
+    frontier, also known as (Top-k) Skyline operator (see Börzsönyi, et al. 
+    (2001) <doi:10.1109/ICDE.2001.914855>), and some generalizations 
+    known as database preferences (see Kießling (2002) 
+    <doi:10.1016/B978-155860869-6/50035-4>).
+URL: https://www.p-roocks.de/rpref/
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.0), RcppParallel (>= 5.1.6), dplyr (>= 1.0.0),
+        igraph (>= 1.0.1), lazyeval (>= 0.2.1), methods, utils
+SystemRequirements: GNU make, Windows: cmd.exe and cscript.exe
+License: GPL (>= 2)
+LinkingTo: Rcpp, RcppParallel
+Suggests: testthat, graph, Rgraphviz (>= 2.16.0), knitr, ggplot2,
+        rmarkdown
+Collate: 'rPref.r' 'RcppExports.R' 'pref-classes.r' 'base-pref.r'
+        'base-pref-macros.r' 'complex-pref.r' 'general-pref.r'
+        'pref-eval.r' 'show-pref.r' 'visualize.r' 'pred-succ.r'
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-08-19 09:30:51 UTC; patrick
+Author: Patrick Roocks [aut, cre]
+Maintainer: Patrick Roocks <mail@p-roocks.de>
+Repository: CRAN
+Date/Publication: 2025-08-19 21:10:08 UTC

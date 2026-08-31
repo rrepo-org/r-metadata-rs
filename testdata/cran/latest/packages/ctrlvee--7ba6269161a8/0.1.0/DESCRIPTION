@@ -1,0 +1,24 @@
+Package: ctrlvee
+Title: Extract External 'R' Code and Insert Inline
+Version: 0.1.0
+Authors@R: 
+    person("VP", "Nagraj", email = "nagraj@nagraj.net", role = c("aut", "cre", "cph"))
+Description: An 'RStudio' and 'Positron' add-in that prompts the user for a web 'URL',
+    fetches the page content, extracts 'R' code chunks, and inserts those code chunks
+    into the active editor at the current cursor position. Supports extraction of raw 
+    'Markdown' or 'Quarto' source files, 'GitHub' Gist and rendered 'HTML' pages that have 
+    markup elements with 'R'-related classes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: rstudioapi, httr2, xml2, purrr, magrittr
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/vpnagraj/ctrlvee
+BugReports: https://github.com/vpnagraj/ctrlvee/issues
+NeedsCompilation: no
+Packaged: 2026-04-16 01:02:56 UTC; vpn
+Author: VP Nagraj [aut, cre, cph]
+Maintainer: VP Nagraj <nagraj@nagraj.net>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:02:14 UTC

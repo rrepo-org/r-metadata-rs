@@ -1,0 +1,27 @@
+Package: toxdrc
+Title: Pipeline for Dose-Response Curve Analysis
+Version: 2.0.0
+Authors@R: person("Jack", "Salole", , "salolej@mcmaster.ca", role = c("aut", "cre"))
+Description: Provides a variety of tools for assessing dose response curves, with an emphasis
+    on toxicity test data. The main feature of this package are modular functions which can
+    be combined through the namesake pipeline, 'runtoxdrc', to automate the analysis for large
+    and complex datasets. This includes optional data preprocessing steps, like outlier detection,
+    solvent effects, blank correction, averaging technical replicates, and much more.
+    Additionally, this pipeline is adaptable to any long form dataset, and does not require
+    specific column or group naming to work.
+Maintainer: Jack Salole <salolej@mcmaster.ca>
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/jsalole/toxdrc
+BugReports: https://github.com/jsalole/toxdrc/issues
+Imports: dplyr, magrittr, outliers, purrr, rlang, stats, drc
+Suggests: testthat (>= 3.1.5)
+Config/testthat/edition: 3
+Depends: R (>= 4.1)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-28 20:54:42 UTC; jack
+Author: Jack Salole [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-07-28 21:20:02 UTC

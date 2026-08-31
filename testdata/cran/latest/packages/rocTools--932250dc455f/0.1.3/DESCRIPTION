@@ -1,0 +1,31 @@
+Package: rocTools
+Type: Package
+Title: Tools for Distribution-Based ROC Smoothing Using 'pROC'
+Version: 0.1.3
+Authors@R: person(
+  given="Grant C.",
+  family="O'Connell",
+  role = c("aut", "cre"),
+  email="goconnell.phd@gmail.com",
+  comment=c(ORCID = "0000-0002-2642-6670"))
+Description: Extends the functionality of the 'pROC' package for conducting smoothed receiver
+  operating characteristic (ROC) curve analysis. Enables automated selection of the distribution
+  families to be fit when smoothing ROC curves via the population probability density function
+  estimation strategy described by Leeflang et al. (2008) <doi:10.1373/clinchem.2007.096032>,
+  as well as generation of diagnostic performance and cutoff estimates from the resultant
+  smoothed curves.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: MASS, pROC (>= 1.19.0)
+Suggests: testthat (>= 3.0.0)
+Author: Grant C. O'Connell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2642-6670>)
+Maintainer: Grant C. O'Connell <goconnell.phd@gmail.com>
+Repository: CRAN
+Depends: R (>= 3.5)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-04 15:00:56 UTC; gco6
+Date/Publication: 2026-05-07 16:10:13 UTC

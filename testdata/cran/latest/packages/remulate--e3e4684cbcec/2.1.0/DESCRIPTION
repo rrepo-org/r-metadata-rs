@@ -1,0 +1,70 @@
+Package: remulate
+Type: Package
+Title: Simulate Dynamic Networks from Relational Event Models
+Version: 2.1.0
+Date: 2025-03-25
+Authors@R: 
+    c(  person(
+            given = "Rumana",
+            family = "Lakdawala",
+            role = c("aut", "cre"),
+            email = "rumanalakdawala@gmail.com",
+            comment = c(ORCID = "0000-0002-9992-6035")),
+        person(
+            given = "Marlyne",
+            family = "Meijerink-Bosman",
+            role = "ctb",
+            email = "m.l.meijerink@tilburguniversity.edu"),
+        person(
+            given = "Giuseppe",
+            family = "Arena",
+            role = "ctb",
+            email = "g.arena@tilburguniversity.edu"),
+        person(
+            given = "Diana",
+            family = "Karimova",
+            role = "ctb",
+            email = "d.karimova@tilburguniversity.edu"),
+        person(
+            given = "Mahdi",
+            family = "Shafiee Kamalabad",
+            role = "ctb",
+            email = "m.shafiee@tilburguniversity.edu"),
+        person(
+            given = "Fabio",
+            family = "Generoso Vieira",
+            role = "ctb",
+            email = "f.v.generosovieira@tilburguniversity.edu"),
+        person(
+            given = "Roger",
+            family = "Leenders",
+            role = "ctb",
+            email = "r.t.a.j.leenders@tilburguniversity.edu"),
+        person(
+            given = "Joris",
+            family = "Mulder",
+            role = "ctb",
+            email = "j.mulder3@tilburguniversity.edu")
+    )
+Maintainer: Rumana Lakdawala <rumanalakdawala@gmail.com>
+Description: Model based simulation of dynamic networks under tie-oriented (Butts, C., 2008, <doi:10.1111/j.1467-9531.2008.00203.x>) and actor-oriented (Stadtfeld, C., & Block, P., 2017, <doi:10.15195/v4.a14>) relational event models. Supports simulation from a variety of relational event model extensions, including temporal variability in effects, heterogeneity through dyadic latent class relational event models (DLC-REM), random effects, blockmodels, and memory decay in relational event models (Lakdawala, R., 2024 <doi:10.48550/arXiv.2403.19329>). The development of this package was supported by a Vidi Grant (452-17-006) awarded by the Netherlands Organization for Scientific Research (NWO) Grant and an ERC Starting Grant  (758791).
+License: MIT + file LICENSE
+URL: https://github.com/TilburgNetworkGroup/remulate
+Depends: R (>= 4.0.0),
+Imports: Rcpp, stats
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: tinytest
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2025-04-11 07:54:55 UTC; rumana
+Author: Rumana Lakdawala [aut, cre] (<https://orcid.org/0000-0002-9992-6035>),
+  Marlyne Meijerink-Bosman [ctb],
+  Giuseppe Arena [ctb],
+  Diana Karimova [ctb],
+  Mahdi Shafiee Kamalabad [ctb],
+  Fabio Generoso Vieira [ctb],
+  Roger Leenders [ctb],
+  Joris Mulder [ctb]
+Repository: CRAN
+Date/Publication: 2025-04-16 13:40:03 UTC

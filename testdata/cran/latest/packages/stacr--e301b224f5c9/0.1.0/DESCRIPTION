@@ -1,0 +1,24 @@
+Package: stacr
+Title: Tidy 'STAC' Workflows for R
+Version: 0.1.0
+Authors@R: 
+    person("Chris", "Lyons", , "chrislyons@nullislandlabs.dev",
+           role = c("aut", "cre", "cph"))
+Description: Wraps the 'rstac' package with a pipe-friendly, tidy API. All results return 'tibbles' instead of nested lists. Ships with a catalog registry of known 'STAC' endpoints including Planetary Computer, Earth Search, and 'USGS', while supporting any 'STAC' API URL.
+License: MIT + file LICENSE
+URL: https://github.com/null-island-labs/stacr
+BugReports: https://github.com/null-island-labs/stacr/issues
+Depends: R (>= 4.1.0)
+Imports: rstac, tibble, cli
+Suggests: gdalcubes, jsonlite, leaflet, sf, testthat (>= 3.0.0), withr,
+        knitr, rmarkdown
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-08 18:32:11 UTC; chrislyons
+Author: Chris Lyons [aut, cre, cph]
+Maintainer: Chris Lyons <chrislyons@nullislandlabs.dev>
+Repository: CRAN
+Date/Publication: 2026-03-12 09:10:02 UTC

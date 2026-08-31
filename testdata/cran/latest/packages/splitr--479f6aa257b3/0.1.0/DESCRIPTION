@@ -1,0 +1,15 @@
+Package: splitr
+Title: Fast Utilities for Splitting Excel Sheets
+Version: 0.1.0
+Authors@R: person("Daniel", "Amah", email = "danielamahtoday@gmail.com", role = c("aut", "cre"))
+Description: Provides tools for splitting large Excel worksheets into multiple smaller sheets based on a specified number of rows per chunk. The package reads Excel files, partitions the data efficiently using the 'data.table' package, and writes the resulting subsets into a single workbook with multiple sheets using the 'openxlsx' package. This is useful for handling large datasets, preparing data for reporting, and exporting manageable Excel files for downstream analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: data.table, openxlsx
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-20 23:49:32 UTC; AfrologicInsect
+Author: Daniel Amah [aut, cre]
+Maintainer: Daniel Amah <danielamahtoday@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-25 20:50:02 UTC

@@ -1,0 +1,29 @@
+Package: metaSVR
+Type: Package
+Title: Support Vector Regression with Metaheuristic Algorithms
+        Optimization
+Version: 0.1.0
+Authors@R: c(
+    person(given = c("Rechtiana", "Putri"), family = "Arini", role = c("aut", "cre"), email = "rparini17@gmail.com"),
+    person(given = "Robert", family = "Kurniawan", role = "aut"),
+    person(given = c("I", "Nyoman"), family = "Setiawan", role = "aut"),
+    person(given = c("Zulhan", "Andika"), family = "Asyraf", role = "aut"))
+Description: Provides a hybrid modeling framework combining Support Vector Regression (SVR) with metaheuristic optimization algorithms, including the Archimedes Optimization Algorithm (AO) (Hashim et al. (2021) <doi:10.1007/s10489-020-01893-z>), Coot Bird Optimization (CBO) (Naruei & Keynia (2021) <doi:10.1016/j.eswa.2021.115352>), and their hybrid (AOCBO), as well as several others such as Harris Hawks Optimization (HHO) (Heidari et al. (2019) <doi:10.1016/j.future.2019.02.028>), Gray Wolf Optimizer (GWO) (Mirjalili et al. (2014) <doi:10.1016/j.advengsoft.2013.12.007>), Ant Lion Optimization (ALO) (Mirjalili (2015) <doi:10.1016/j.advengsoft.2015.01.010>), and Enhanced Harris Hawk Optimization with Coot Bird Optimization (EHHOCBO) (Cui et al. (2023) <doi:10.32604/cmes.2023.026019>). The package enables automatic tuning of SVR hyperparameters (cost, gamma, and epsilon) to enhance prediction performance. Suitable for regression tasks in domains such as renewable energy forecasting and hourly data prediction. For more details about implementation and parameter bounds see: Setiawan et al. (2021) <doi:10.1016/j.procs.2020.12.003> and Liu et al. (2018) <doi:10.1155/2018/6076475>.  
+Imports: e1071, stats, hms
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/rechtianaputri/metaSVR
+BugReports: https://github.com/rechtianaputri/metaSVR/issues
+RoxygenNote: 7.3.1
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2025-07-29 04:59:11 UTC; awinv
+Author: Rechtiana Putri Arini [aut, cre],
+  Robert Kurniawan [aut],
+  I Nyoman Setiawan [aut],
+  Zulhan Andika Asyraf [aut]
+Maintainer: Rechtiana Putri Arini <rparini17@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-08-19 15:10:13 UTC

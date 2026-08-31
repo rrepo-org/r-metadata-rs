@@ -1,0 +1,30 @@
+Package: ProfileLadder
+Type: Package
+Title: Functional-Based Chain Ladder for Claims Reserving
+Version: 0.2.2
+Authors@R: c( 
+    person(given = "Matúš", family = "Maciak", email = "maciak@karlin.mff.cuni.cz", role = c("aut", "cre")), 
+    person(given = "Rastislav", family = "Matúš", role = c("aut", "ctb")), 
+    person(given = "Ivan", family = "Mizera", role = c("aut")),
+    person(given = "Michal", family = "Pešta", role = c("aut")))
+Maintainer: Matúš Maciak <maciak@karlin.mff.cuni.cz>
+BugReports: https://github.com/42463863/ProfileLadder/issues
+URL: https://github.com/42463863/ProfileLadder
+Description: Functional claims reserving methods based on aggregated chain-ladder data, also known as a run-off triangle, implemented in three nonparametric algorithms (PARALLAX, REACT, and MACRAME) proposed in Maciak, Mizera, and Pešta (2022) <doi:10.1017/asb.2022.4>. Additional methods including permutation bootstrap for completed run-off triangles are also provided. 
+Depends: R (>= 4.0.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: ChainLadder (>= 0.2.12), raw (>= 0.1.8), crayon (>= 1.5.0)
+Suggests: pbapply (>= 1.7-4), testthat (>= 3.0.0), knitr, rmarkdown
+LazyData: true
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Packaged: 2026-01-10 13:59:01 UTC; maciak
+VignetteBuilder: knitr
+NeedsCompilation: no
+Author: Matúš Maciak [aut, cre],
+  Rastislav Matúš [aut, ctb],
+  Ivan Mizera [aut],
+  Michal Pešta [aut]
+Repository: CRAN
+Date/Publication: 2026-01-10 14:30:02 UTC

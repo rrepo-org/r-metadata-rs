@@ -1,0 +1,46 @@
+Package: MSMGOptimizer
+Type: Package
+Title: Mine Sustainability Modeling Group (MSMG) 'SimaPro' CSV
+        Optimizer
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Philip", "Duah",
+      email = "dpbxc@mst.edu",
+      role = c("aut", "cre")
+    ),
+    person(
+      "Kwame", "Awuah-Offei",
+      email = "kwamea@mst.edu",
+      role = "aut"
+    )
+  )
+Description: A 'Shiny' application for converting 'Excel'-based
+    Life Cycle Inventory (LCI) data into 'SimaPro' CSV
+    (Comma-Separated Values) format for use in Life Cycle
+    Assessment (LCA) modeling. Developed by the Mine Sustainability
+    Modeling Group (MSMG) at Missouri University of Science and
+    Technology under NSF (National Science Foundation) funding
+    (Award No. 2219086). See Pizzol (2022)
+    <https://github.com/massimopizzol/Simapro-CSV-converter>
+    for the original 'Python' implementation that inspired this tool.
+URL: https://github.com/Duah-Philip/MSMGOptimizer
+BugReports: https://github.com/Duah-Philip/MSMGOptimizer/issues
+Depends: R (>= 4.0.0)
+License: Apache License (>= 2)
+Encoding: UTF-8
+Imports: shiny (>= 1.10.0), shinydashboard (>= 0.7.3), readxl (>=
+        1.4.5), dplyr (>= 1.1.0), DT (>= 0.33), waiter (>= 0.2.5),
+        htmltools (>= 0.5.8.1), zip (>= 2.3.0)
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-03-10 09:25:23 UTC; dpbxc
+Author: Philip Duah [aut, cre],
+  Kwame Awuah-Offei [aut]
+Maintainer: Philip Duah <dpbxc@mst.edu>
+Repository: CRAN
+Date/Publication: 2026-03-16 16:30:19 UTC

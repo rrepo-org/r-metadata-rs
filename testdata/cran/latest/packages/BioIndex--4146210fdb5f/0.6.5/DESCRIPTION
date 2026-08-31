@@ -1,0 +1,44 @@
+Package: BioIndex
+Type: Package
+Title: Biological Indicators and Indices for MEDITS Survey Data
+Version: 0.6.5
+Date: 2026-07-23
+Authors@R: c(
+    person("Walter", "Zupa", email = "zupa@fondazionecoispa.org", role = c("aut", "cre")),
+    person("Loredana", "Casciaro", email = "casciaro@coispa.eu", role = "rev"),
+    person("Cosmidano", "Neglia", email = "neglia@coispa.eu", role = "rev"),
+    person("Isabella", "Bitetto", email = "bitetto@fondazionecoispa.org", role = "rev"),
+    person("Maria Teresa", "Spedicato", email = "spedicato@fondazionecoispa.org", role = "aut")
+  )
+Author: Walter Zupa [aut, cre],
+  Loredana Casciaro [rev],
+  Cosmidano Neglia [rev],
+  Isabella Bitetto [rev],
+  Maria Teresa Spedicato [aut]
+Maintainer: Walter Zupa <zupa@fondazionecoispa.org>
+Description: Supports the standardized analysis of Mediterranean 
+    International Bottom Trawl Survey (MEDITS) data and the calculation 
+    of biological indicators for selected species and population 
+    components. The package provides functions to estimate abundance 
+    and biomass indices, analyse size structure and length frequency 
+    distributions, derive sex ratio and maturity related metrics, 
+    explore spatial patterns, and assess temporal trends across 
+    surveys. Developed for integration within the Regional Database 
+    for Fisheries (RDBFIS) framework, it is intended to work on 
+    quality checked input data and to produce reproducible outputs 
+    that can support monitoring, comparative analyses among 
+    Geographical Sub-Areas (GSAs) and countries, and fishery management.
+License: GPL-3
+Encoding: UTF-8
+LazyData: TRUE
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: dplyr, ggplot2, gridExtra, hms, magrittr, marmap, methods,
+        mgcv, reshape2, shiny, shinyjs, stringr, terra, tidyterra, zip
+Suggests: knitr, mapproj, maps (>= 3.4.1), rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-23 09:27:20 UTC; Walter
+Repository: CRAN
+Date/Publication: 2026-07-23 10:00:02 UTC

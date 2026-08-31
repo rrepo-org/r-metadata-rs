@@ -1,0 +1,27 @@
+Package: ixsurface
+Title: Interactive 3D Surface Plots for Multi-Factor Interaction
+        Visualization
+Version: 0.1.0
+Authors@R: 
+    person("Chris", "Brantner", role = c("aut", "cre"), email = "cjbrantn@gmail.com")
+Description: Visualize interactions between multiple experimental factors using
+    interactive 3D surface plots powered by 'plotly'. Instead of examining
+    combinatorial pairwise interaction plots, map factor combinations to response
+    surfaces and use surface crossings as geometric indicators of interaction
+    effects. Supports continuous, categorical, and mixed factor designs with
+    automatic binning for continuous conditioning variables.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/cjbrant/ixsurface
+BugReports: https://github.com/cjbrant/ixsurface/issues
+Imports: plotly (>= 4.10.0), stats, utils, grDevices
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-21 19:06:11 UTC; christopherbrantner
+Author: Chris Brantner [aut, cre]
+Maintainer: Chris Brantner <cjbrantn@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-26 09:30:22 UTC

@@ -1,0 +1,17 @@
+Package: gazepath
+Type: Package
+Title: Parse Eye-Tracking Data into Fixations
+Version: 1.4
+Date: 2026-05-28
+Authors@R: c(person("Ingmar", "Visser", role = c("aut", "cre"), email = "i.visser@uva.nl"),
+             person("Daan", "van Renswoude", role = "aut", email = "D.R.vanRenswoude@uva.nl"))
+Description: Eye-tracking data must be transformed into fixations and saccades before it can be analyzed. This package provides a non-parametric speed-based approach to do this on a trial basis. The method is especially useful when there are large differences in data quality, as the thresholds are adjusted accordingly. The same pre-processing procedure can be applied to all participants, while accounting for individual differences in data quality. The method is described in van Renswoude et al. (2018) <doi:10.3758/s13428-017-0909-3>.
+License: GPL-2
+Imports: sp, jpeg, zoo, scales, shiny
+NeedsCompilation: no
+Packaged: 2026-06-10 08:43:08 UTC; ingmar
+Author: Ingmar Visser [aut, cre],
+  Daan van Renswoude [aut]
+Maintainer: Ingmar Visser <i.visser@uva.nl>
+Repository: CRAN
+Date/Publication: 2026-06-17 17:50:02 UTC

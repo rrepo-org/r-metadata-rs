@@ -1,0 +1,43 @@
+Package: AntClassify
+Type: Package
+Title: Functional Guilds, Invasion Status, Endemism, and Rarity of Ants
+Version: 0.2.2
+Date: 2026-06-17
+Authors@R: c(person(given = "Débora C. O.", family = "Gonçalves", role = c("aut", "cre"), email = "debora_cog@outlook.com"), person(given = "Nathalia S.", family = "Silva", role = "aut"), person(given = "Rony P. S.", family = "Almeida", role = "aut"), person(given = "Lívia P.", family = "Prado", role = "aut"), person(given = "Maria S. C.", family = "Morini", role = "aut"))
+Description: Provides functions for the analysis of ant communities, aiming to
+    standardize workflows in myrmecology. The package automates the assignment
+    of species to functional guilds based on trophic strategies, feeding
+    habits, and foraging behavior, using established classification frameworks
+    (Silva et al., 2015 <doi:10.7476/9788574554419>; Silvestre et al., 2003
+    <isbn:9588151236>; Delabie et al., 2000
+    <https://www.researchgate.net/publication/44961742_Sampling_Ground-Dwelling_Ants_Case_Studies_from_the_World%27s_Rain_Forests>),
+    and also includes a novel classification system implemented within the
+    package, developed from ant species occurring in urban environments.
+    It also includes routines to flag exotic species of Brazil (Vieira, 2025,
+    unpublished master's thesis), identify endemic species (Silva et al., 2025
+    <doi:10.37885/250920259>), and classify species rarity and rarity forms
+    of the Atlantic Forest (Silva et al., 2024 <doi:10.1016/j.biocon.2024.110640>).
+    The package reduces manual effort and improves reproducibility, supporting
+    research and biodiversity management of Neotropical ant communities.
+License: MIT + file LICENSE
+URL: https://github.com/cogdebora/AntClassify
+BugReports: https://github.com/cogdebora/AntClassify/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+Imports: dplyr, ggplot2, jsonlite, magrittr, rlang, scales, stats,
+        stringr, curl
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-17 20:26:31 UTC; 55119
+Author: Débora C. O. Gonçalves [aut, cre],
+  Nathalia S. Silva [aut],
+  Rony P. S. Almeida [aut],
+  Lívia P. Prado [aut],
+  Maria S. C. Morini [aut]
+Maintainer: Débora C. O. Gonçalves <debora_cog@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-06-17 20:50:02 UTC

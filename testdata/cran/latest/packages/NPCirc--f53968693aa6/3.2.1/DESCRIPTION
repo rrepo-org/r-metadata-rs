@@ -1,0 +1,46 @@
+Package: NPCirc
+Type: Package
+Title: Nonparametric Circular Methods
+Version: 3.2.1
+Date: 2026-02-19
+Authors@R: c(person(given = "Maria",
+                      family = "Alonso-Pena",
+                      role = c("aut", "cre"),
+                      email = "mariaalonso.pena@usc.es"),
+               person(given = "Maria",
+                      family = "Oliveira",
+                      role = "aut"),
+               person(given = "Jose",
+                      family = "Ameijeiras-Alonso",
+                      role = "aut"),
+               person(given = c("Rosa", "M."),
+                      family = "Crujeiras",
+                      role = "aut"),
+               person(given = "Irene",
+                      family = "Gijbels",
+                      role = "aut"),
+               person(given = "Alberto",
+                      family = "Rodriguez-Casal",
+                      role = "aut"),
+               person(given = "Felicita",
+                      family = "Scapini",
+                      role = "dtc"))
+Maintainer: Maria Alonso-Pena <mariaalonso.pena@usc.es>
+Description: Nonparametric smoothing methods for density and regression estimation and inference with circular data. The package provides kernel density estimation along with inferential tools such as circular SiZer for feature significance, mode estimation, and modal clustering. It includes multiple methods for selecting the smoothing parameter, allowing users to optimize the trade-off between bias and variance. Various plotting functions help visualize estimated densities, modes, clusters, and significance features. For regression, the package implements nonparametric estimation of the mean regression function as well as other conditional characteristics, including modal regression and generalized regression. Bandwidth selection is also supported in the regression context, and testing procedures are available to assess structural features or effects in circular regression models.
+Depends: R(>= 3.5.0), circular
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.8.3), misc3d, movMF, plotrix, rgl, shape,
+        Bolstad2
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://www.jstatsoft.org/v61/i09/
+NeedsCompilation: yes
+Packaged: 2026-02-19 16:39:58 UTC; littl
+Author: Maria Alonso-Pena [aut, cre],
+  Maria Oliveira [aut],
+  Jose Ameijeiras-Alonso [aut],
+  Rosa M. Crujeiras [aut],
+  Irene Gijbels [aut],
+  Alberto Rodriguez-Casal [aut],
+  Felicita Scapini [dtc]
+Repository: CRAN
+Date/Publication: 2026-02-20 06:40:22 UTC

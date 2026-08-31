@@ -1,0 +1,24 @@
+Package: oddsapiio
+Title: Client for the 'Odds-API.io' Sports Betting Odds API
+Version: 0.1.1
+Authors@R: 
+    person("Markus", "Bjermeland", email = "markus@odds-api.io", role = c("aut", "cre"))
+Description: Query live and upcoming sports betting odds from the
+    'Odds-API.io' REST API <https://docs.odds-api.io>. Covers sports,
+    bookmakers, leagues, events, per-event odds, value bets and arbitrage
+    bets across 265+ bookmakers, returned as tidy data frames. An API key
+    is required; a free tier is available.
+License: MIT + file LICENSE
+URL: https://odds-api.io, https://github.com/odds-api-io/odds-api-r
+BugReports: https://github.com/odds-api-io/odds-api-r/issues
+Encoding: UTF-8
+Imports: httr2 (>= 1.0.0), jsonlite
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 16:06:20 UTC; markusbjermeland
+Author: Markus Bjermeland [aut, cre]
+Maintainer: Markus Bjermeland <markus@odds-api.io>
+Repository: CRAN
+Date/Publication: 2026-08-05 09:20:13 UTC

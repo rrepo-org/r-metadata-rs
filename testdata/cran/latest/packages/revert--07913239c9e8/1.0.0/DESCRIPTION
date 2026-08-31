@@ -1,0 +1,30 @@
+Package: revert
+Type: Package
+Title: Reversion Mutation Detector for DNA Sequencing Data
+Version: 1.0.0
+Date: 2025-12-16
+Authors@R: c(
+	person("Hui", "Xiao", role = c("aut", "cre"), email = "hui.xiao@icr.ac.uk"),
+	person("Stephen", "Pettitt", role = "aut", email = "stephen.pettitt@icr.ac.uk"),
+	person("Syed", "Haider", role = c("aut"), email = "Syed.Haider@icr.ac.uk")
+  )
+Author: Hui Xiao [aut, cre],
+  Stephen Pettitt [aut],
+  Syed Haider [aut]
+Maintainer: Hui Xiao <hui.xiao@icr.ac.uk>
+Description: Reversion mutations are secondary mutations that reverse the deleterious effects of an original pathogenic mutation, partially or fully restoring the gene's function. The revert package detects reversion mutations for a specific pathogenic mutation from DNA-seq bam files. 
+Depends: R (>= 4.4.0)
+License: GPL-2
+Imports: BSgenome, BiocGenerics, Biostrings, GenomeInfoDb,
+        GenomicRanges, IRanges, Rsamtools, S4Vectors, ensembldb,
+        pwalign, stats, utils
+Suggests: knitr, rmarkdown, futile.logger, BSgenome.Hsapiens.UCSC.hg19,
+        EnsDb.Hsapiens.v75, BSgenome.Hsapiens.UCSC.hg38,
+        EnsDb.Hsapiens.v86
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-16 16:31:45 UTC; hxiao
+Repository: CRAN
+Date/Publication: 2025-12-17 23:30:02 UTC

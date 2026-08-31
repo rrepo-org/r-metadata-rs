@@ -1,0 +1,49 @@
+Package: pammtools
+Title: Piece-Wise Exponential Additive Mixed Modeling Tools for
+        Survival Analysis
+Version: 0.8.1
+Date: 2026-08-13
+Authors@R: c(
+    person("Andreas", "Bender", , "andreas.bender@stat.uni-muenchen.de", role = c("aut", "cre"), comment=c(ORCID = "0000-0001-5628-8611")),
+    person("Fabian", "Scheipl", , "fabian.scheipl@stat.uni-muenchen.de", role = c("aut"), comment = c(ORCID = "0000-0001-8172-3603")),
+    person("Johannes", "Piller", , "johannes.piller@lmu.de", role = c("aut"), comment = c(ORCID = "0009-0008-3010-9556")),
+    person("Philipp", "Kopper", , "philipp.kopper@stat.uni-muenchen.de", role = c("aut"), comment = c(ORCID="0000-0002-5037-7135")),
+    person("Lukas", "Burk", , "burk@leibniz-bips.de", role = c("ctb"), comment = c(ORCID="0000-0001-7528-3795")))
+Description: The Piece-wise exponential (Additive Mixed) Model
+    (PAMM; Bender and others (2018) <doi: 10.1177/1471082X17748083>) is a
+    powerful model class for the analysis of survival (or time-to-event) data,
+    based on Generalized Additive (Mixed) Models (GA(M)Ms).
+    It offers intuitive specification and robust estimation of complex survival
+    models with stratified baseline hazards, random effects, time-varying effects,
+    time-dependent covariates and cumulative effects (Bender and others (2019)),
+    as well as support for left-truncated data as well as competing risks,
+    recurrent events and multi-state settings.
+    pammtools provides tidy workflow for survival analysis with PAMMs,
+    including data simulation, transformation and other functions for data
+    preprocessing and model post-processing as well as visualization.
+Depends: R (>= 4.1.0)
+Imports: mgcv, survival (>= 2.39-5), checkmate, magrittr, rlang, tidyr
+        (>= 1.0.0), ggplot2 (>= 3.2.2), dplyr (>= 1.0.0), purrr (>=
+        0.2.3), tibble, lazyeval, Formula, mvtnorm, pec, vctrs (>=
+        0.3.0), scam
+Suggests: testthat, mstate, broom, etm, xgboost
+Config/Needs/website: carData, coxme, eha, etm, scam, msm, mvna, rjags,
+        brms, xgboost, TBFmultinomial
+License: MIT + file LICENSE
+LazyData: true
+URL: https://adibender.github.io/pammtools/
+BugReports: https://github.com/adibender/pammtools/issues
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-08-25 10:13:24 UTC; abender
+Author: Andreas Bender [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5628-8611>),
+  Fabian Scheipl [aut] (ORCID: <https://orcid.org/0000-0001-8172-3603>),
+  Johannes Piller [aut] (ORCID: <https://orcid.org/0009-0008-3010-9556>),
+  Philipp Kopper [aut] (ORCID: <https://orcid.org/0000-0002-5037-7135>),
+  Lukas Burk [ctb] (ORCID: <https://orcid.org/0000-0001-7528-3795>)
+Maintainer: Andreas Bender <andreas.bender@stat.uni-muenchen.de>
+Repository: CRAN
+Date/Publication: 2026-08-25 11:20:09 UTC

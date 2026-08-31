@@ -1,0 +1,30 @@
+Package: dentomedical
+Type: Package
+Title: Publication-Ready Descriptive, Bivariate, Regression,
+        Correlation and Diagnostic Accuracy Tools for Medical and
+        Dental Data
+Version: 0.2.0
+Authors@R: c(
+  person("Umar", "Hussain", email = "drumarhussain@gmail.com", role = c("aut", "cre")),
+  person("Nikolaos", "Pandis", email = "npandis@yahoo.com", role = "aut"))
+Description: The 'dentomedical' package provides a comprehensive suite of tools for
+ medical and dental research. It includes automated descriptive statistics,
+ bivariate analysis with intelligent test selection, logistic regression,
+ and diagnostic accuracy assessment. All functions generate publication-ready tables using 'flextable', ensuring reproducibility and
+ clarity suitable for manuscripts, reports, and clinical research workflows.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, stats, flextable, tibble, rlang, FSA, purrr, broom,
+        tidyr
+Depends: R (>= 4.0.0)
+URL: https://github.com/umarhussain-git/dentomedical1
+BugReports: https://github.com/umarhussain-git/dentomedical/issues
+NeedsCompilation: no
+Suggests: testthat, knitr, rmarkdown
+Packaged: 2026-01-21 05:33:40 UTC; DR. Umar Hussain
+Author: Umar Hussain [aut, cre],
+  Nikolaos Pandis [aut]
+Maintainer: Umar Hussain <drumarhussain@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-21 05:50:01 UTC

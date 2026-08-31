@@ -1,0 +1,29 @@
+Package: netcutter
+Type: Package
+Title: Identification and Analysis of Co-Occurrence Networks
+Version: 0.3.1
+Authors@R: c(
+    person("Heiko", "Müller", role = "aut"),
+    person("Francesco", "Mancuso", role = "aut"),
+    person("Federico", "Marotta", email = "federico.marotta@embl.de", role = "cre"))
+Maintainer: Federico Marotta <federico.marotta@embl.de>
+Description: Implementation of the NetCutter algorithm described in
+    Müller and Mancuso (2008) <doi:10.1371/journal.pone.0003178>. The package
+    identifies co-occurring terms in a list of containers. For example, it
+    may be used to detect genes that co-occur across genomes.
+URL: https://doi.org/10.1371/journal.pone.0003178
+BugReports: https://github.com/fmarotta/netcutter/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: PoissonBinomial, rlecuyer,
+Suggests: knitr, rmarkdown, qpdf, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-05-19 19:51:51 UTC; fmarotta
+Author: Heiko Müller [aut],
+  Francesco Mancuso [aut],
+  Federico Marotta [cre]
+Repository: CRAN
+Date/Publication: 2025-05-21 15:50:06 UTC

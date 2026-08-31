@@ -1,0 +1,29 @@
+Package: SveltePlots
+Type: Package
+Version: 0.1.0
+Title: A Wrapper for a Svelte Custom Web Component
+Authors@R: 
+  person("Pascal", "Schmidt", role = c("aut", "cre"), email = "pascal.sfu@gmail.com")
+Author: Pascal Schmidt [aut, cre]
+Maintainer: Pascal Schmidt <pascal.sfu@gmail.com>
+Description: An interactive charting library built on 'Svelte' and 'D3' to easily produce SVG charts in R.
+  Designed to simplify 'shiny' development by eliminating the need for renderUI(), insertUI(), removeUI(),
+  and 'shiny' proxy functions, using 'Svelte''s reactive state system instead. 
+URL: https://github.com/Pascal-Schmidt/SveltePlots,
+        https://pascal-schmidt.github.io/SveltePlots/
+BugReports: https://github.com/Pascal-Schmidt/SveltePlots/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), lubridate, rmarkdown, quarto, knitr,
+        covr, ggplot2
+Config/testthat/edition: 3
+Imports: data.table, htmlwidgets, magrittr, dplyr, rlang, RColorBrewer,
+        padr, purrr, stringr, tibble, tidyr
+Depends: R (>= 4.1.0)
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-05-23 21:46:17 UTC; pascalschmidt
+Repository: CRAN
+Date/Publication: 2025-06-10 09:30:10 UTC

@@ -1,0 +1,64 @@
+Package: ggmlR
+Type: Package
+Title: 'GGML' Tensor Operations for Machine Learning
+Version: 0.8.4
+Authors@R: c(
+    person("Yuri", "Baramykov",
+        email = "lbsbmsu@mail.ru",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0009-0000-7627-4217")),
+    person("Georgi", "Gerganov",
+        role = c("ctb", "cph"),
+        comment = "Author of the GGML library"),
+    person("Jeffrey", "Quesnelle",
+        role = c("ctb", "cph"),
+        comment = "Contributor to ops.cpp"),
+    person("Bowen", "Peng",
+        role = c("ctb", "cph"),
+        comment = "Contributor to ops.cpp"),
+    person("Mozilla Foundation",
+        role = c("ctb", "cph"),
+        comment = "Author of llamafile/sgemm.cpp")
+    )
+Description: Provides 'R' bindings to the 'GGML' tensor library for machine
+    learning, optimized for 'Vulkan' GPU acceleration with a transparent CPU
+    fallback. The package features a 'Keras'-like sequential API and a
+    'PyTorch'-style 'autograd' engine for building, training, and deploying
+    neural networks. Key capabilities include high-performance 5D tensor
+    operations, 'f16' precision, and efficient quantization. It supports
+    native 'ONNX' model import (50+ operators) and 'GGUF' weight loading
+    from the 'llama.cpp' and 'Hugging Face' ecosystems. Designed for
+    zero-overhead inference via dedicated weight buffering, it integrates
+    seamlessly as a 'parsnip' engine for 'tidymodels' and provides
+    first-class learners for the 'mlr3' framework.
+    See <https://github.com/ggml-org/ggml> for more information about the
+    underlying library.
+Depends: R (>= 4.1.0)
+Imports: generics, R6, methods, stats, utils
+License: MIT + file LICENSE
+URL: https://github.com/Zabis13/ggmlR
+BugReports: https://github.com/Zabis13/ggmlR/issues
+Encoding: UTF-8
+SystemRequirements: C++17, GNU make, libvulkan-dev, glslc (optional,
+        for GPU on Linux), 'Vulkan' 'SDK' (optional, for GPU on
+        Windows)
+Suggests: testthat (>= 3.0.0), mlr3 (>= 0.21.0), paradox, digest,
+        parsnip, tibble, rlang, dials, lgr, knitr, rmarkdown, Matrix,
+        Seurat, SeuratObject, RSpectra, irlba, uwot, FNN,
+        SingleCellExperiment, SummarizedExperiment, S4Vectors, withr,
+        hardhat, rsample, tune, workflows
+VignetteBuilder: knitr, rmarkdown
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Config/build/clean-inst-doc: false
+NeedsCompilation: yes
+Packaged: 2026-08-20 19:58:32 UTC; yuri
+Author: Yuri Baramykov [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-7627-4217>),
+  Georgi Gerganov [ctb, cph] (Author of the GGML library),
+  Jeffrey Quesnelle [ctb, cph] (Contributor to ops.cpp),
+  Bowen Peng [ctb, cph] (Contributor to ops.cpp),
+  Mozilla Foundation [ctb, cph] (Author of llamafile/sgemm.cpp)
+Maintainer: Yuri Baramykov <lbsbmsu@mail.ru>
+Repository: CRAN
+Date/Publication: 2026-08-21 12:40:21 UTC

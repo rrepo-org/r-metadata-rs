@@ -1,0 +1,39 @@
+Package: BayesRegDTR
+Type: Package
+Title: Bayesian Regression for Dynamic Treatment Regimes
+Version: 1.1.2
+Authors@R: c(
+    person(
+      "Jeremy", "Lim",
+      email = "jeremylim23@gmail.com",
+      role = c("aut")
+    ),
+    person(
+      "Weichang", "Yu",
+      email = "weichang.yu@unimelb.edu.au",
+      role = c("aut", "cre"), 
+      comment = c(ORCID = "0000-0002-0399-3779")
+    )
+  )
+Description: Methods to estimate optimal dynamic treatment regimes using Bayesian
+    likelihood-based regression approach as described in 
+    Yu, W., & Bondell, H. D. (2023) <doi:10.1093/jrsssb/qkad016>
+    Uses backward induction and dynamic programming theory for computing
+    expected values. Offers options for future parallel computing.
+License: GPL (>= 3)
+Imports: Rcpp (>= 1.0.13-1), mvtnorm, foreach, progressr, stats, future
+Depends: doRNG
+Suggests: cli, testthat (>= 3.0.0), doFuture
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/jlimrasc/BayesRegDTR
+BugReports: https://github.com/jlimrasc/BayesRegDTR/issues
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-11-25 01:22:15 UTC; jerem
+Author: Jeremy Lim [aut],
+  Weichang Yu [aut, cre] (ORCID: <https://orcid.org/0000-0002-0399-3779>)
+Maintainer: Weichang Yu <weichang.yu@unimelb.edu.au>
+Repository: CRAN
+Date/Publication: 2025-11-27 09:10:15 UTC

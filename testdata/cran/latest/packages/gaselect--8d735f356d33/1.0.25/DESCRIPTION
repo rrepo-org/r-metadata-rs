@@ -1,0 +1,36 @@
+Package: gaselect
+Type: Package
+Title: Genetic Algorithm (GA) for Variable Selection from
+        High-Dimensional Data
+Version: 1.0.25
+Date: 2026-01-07
+Authors@R: person(given = "David",
+                  family = "Kepplinger",
+                  role = c("aut", "cre"),
+                  email = "david.kepplinger@gmail.com")
+Description: Provides a genetic algorithm for finding variable
+    subsets in high dimensional data with high prediction performance. The
+    genetic algorithm can use ordinary least squares (OLS) regression models or
+    partial least squares (PLS) regression models to evaluate the prediction
+    power of variable subsets. By supporting different cross-validation
+    schemes, the user can fine-tune the tradeoff between speed and quality of
+    the solution.
+URL: https://github.com/dakep/gaselect
+BugReports: https://github.com/dakep/gaselect/issues
+License: GPL (>= 2)
+NeedsCompilation: yes
+Encoding: UTF-8
+Biarch: true
+Depends: R (>= 3.0.2), methods (>= 2.10.0)
+Imports: Rcpp (>= 0.10.5)
+LinkingTo: Rcpp (>= 0.10.5), RcppArmadillo (>= 0.9.800.4)
+Collate: 'Evaluator.R' 'GenAlgControl.R' 'formatSegmentation.R'
+        'evaluate.R' 'fitness.R' 'genAlg.R' 'getEvalFun.R' 'subsets.R'
+        'toCControlList.R' 'validData.R'
+Suggests: chemometrics
+RoxygenNote: 7.3.3
+Packaged: 2026-01-07 18:47:52 UTC; david
+Author: David Kepplinger [aut, cre]
+Maintainer: David Kepplinger <david.kepplinger@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-08 01:30:02 UTC

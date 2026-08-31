@@ -1,0 +1,42 @@
+Package: TopDom
+Version: 0.10.2
+Title: An Efficient and Deterministic Method for Identifying
+        Topological Domains in Genomes
+Depends: R (>= 3.3.0)
+Imports: matrixStats, graphics, grid, ggplot2, reshape2, stats, tibble,
+        utils
+Suggests: diffobj (>= 0.1.11)
+Authors@R: c(person("Henrik", "Bengtsson", role = c("aut", "cre", "cph"),
+                    email = "henrikb@braju.com",
+                    comment = c(ORCID = "0000-0002-7579-5165")),
+             person("Hanjun", "Shin", role = c("aut", "ctr", "cph"),
+                    email = "shanjun@usc.edu"),
+             person("Harris", "Lazaris", role = c("ctr", "cph"),
+                    comment = c("PhD Student, NYU",
+                                ORCID = "0000-0002-7345-8288")),
+             person("Gangqing", "Hu", role = c("ctr", "cph"),
+                    comment = c("Staff Scientist, NIH",
+                                ORCID = "0000-0001-5453-6888")),
+             person("Xianghong", "Zhou", role = c("ctr"),
+                    email = "XJZhou@mednet.ucla.edu"))
+Description: The 'TopDom' method identifies topological domains in genomes from Hi-C sequence data (Shin et al., 2016 <doi:10.1093/nar/gkv1505>).  The authors published an implementation of their method as an R script (two different versions; also available in this package).  This package originates from those original 'TopDom' R scripts and provides help pages adopted from the original 'TopDom' PDF documentation.  It also provides a small number of bug fixes to the original code.
+URL: https://github.com/HenrikBengtsson/TopDom
+BugReports: https://github.com/HenrikBengtsson/TopDom/issues
+License: GPL
+Language: en-US
+Encoding: UTF-8
+LazyLoad: TRUE
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-30 17:48:56 UTC; hb
+Author: Henrik Bengtsson [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-7579-5165>),
+  Hanjun Shin [aut, ctr, cph],
+  Harris Lazaris [ctr, cph] (PhD Student, NYU, ORCID:
+    <https://orcid.org/0000-0002-7345-8288>),
+  Gangqing Hu [ctr, cph] (Staff Scientist, NIH, ORCID:
+    <https://orcid.org/0000-0001-5453-6888>),
+  Xianghong Zhou [ctr]
+Maintainer: Henrik Bengtsson <henrikb@braju.com>
+Repository: CRAN
+Date/Publication: 2026-08-31 15:40:31 UTC

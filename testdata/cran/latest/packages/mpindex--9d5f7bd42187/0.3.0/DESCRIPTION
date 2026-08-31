@@ -1,0 +1,42 @@
+Package: mpindex
+Type: Package
+Title: Multidimensional Poverty Index (MPI) via the Alkire-Foster
+        Method
+Version: 0.3.0
+Authors@R: c(
+    person(
+      "Bhas", 
+      "Abdulsamad", 
+      email = "aeabdulsamad@gmail.com",
+      comment = c(ORCID = "0009-0002-5891-8124"),
+      role = c("aut", "cre", "cph")
+    )
+  )
+Author: Bhas Abdulsamad [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-5891-8124>)
+Maintainer: Bhas Abdulsamad <aeabdulsamad@gmail.com>
+Description: Estimate Multidimensional Poverty Index (MPI) measures from household
+    survey microdata using the Alkire-Foster dual-cutoff counting method (Alkire
+    and Foster, 2011). Load indicator
+    specifications from CSV, Excel, JSON, or plain-text files; compute the
+    headcount ratio (H), intensity (A), and MPI = H x A across any subgroup;
+    and export results to formatted Excel reports. Supports complex survey
+    designs — stratification, clustering, and probability weights — and
+    optionally appends design-based standard errors and confidence intervals.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, stringr, jsonlite, tibble, openxlsx, tsg, rlang,
+        lifecycle
+Suggests: tidyr, survey, testthat (>= 3.0.0), knitr, rmarkdown, gt
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+BugReports: https://github.com/yng-me/mpindex/issues
+URL: https://github.com/yng-me/mpindex,
+        https://yng-me.github.io/mpindex/
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-06-14 22:49:20 UTC; bhasabdulsamad
+Repository: CRAN
+Date/Publication: 2026-06-15 07:50:15 UTC

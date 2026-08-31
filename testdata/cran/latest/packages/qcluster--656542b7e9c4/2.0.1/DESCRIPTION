@@ -1,0 +1,25 @@
+Package: qcluster
+Version: 2.0.1
+Date: 2026-06-03
+Title: Clustering via Quadratic Scoring
+Description: Performs tuning of clustering models, methods and algorithms including the problem of determining an appropriate number of clusters. Validation of cluster analysis results is performed via quadratic scoring using resampling methods, as in Coraggio, L. and Coretto, P. (2023) <doi:10.1016/j.jmva.2023.105181>.
+Authors@R: c(
+    person("Luca", "Coraggio", role = c("cre", "aut"), email = "luca.coraggio@unina.it", comment = c(ORCID = "0000-0002-7898-2097")),
+    person("Pietro", "Coretto", role = "aut", email = "pcoretto@unisa.it", comment = c(ORCID = "0000-0002-6972-9671")))
+URL: https://luca-coraggio.com, https://pietro-coretto.github.io
+NeedsCompilation: yes
+License: GPL (>= 2)
+Imports: cluster, doParallel, foreach, grDevices, graphics, iterators,
+        methods, parallel, stats
+Suggests: RhpcBLASctl, testthat (>= 3.0.0)
+LazyData: TRUE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Packaged: 2026-06-05 10:40:02 UTC; lcorag
+Author: Luca Coraggio [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-7898-2097>),
+  Pietro Coretto [aut] (ORCID: <https://orcid.org/0000-0002-6972-9671>)
+Maintainer: Luca Coraggio <luca.coraggio@unina.it>
+Repository: CRAN
+Date/Publication: 2026-06-05 11:40:02 UTC

@@ -1,0 +1,28 @@
+Package: SurvGME
+Type: Package
+Title: Analysis of Survival Data under Graphical and Measurement Error
+        Models
+Version: 0.1.0
+Authors@R: c(person(given = "Li-Pang",
+                      family = "Chen",
+                      role = c("aut", "cre"),
+                      email = "lchen723@nccu.edu.tw"),
+               person(given = "Grace Y.",
+                      family = "Yi",
+                      role = "aut"))
+Description: The estimation method proposed by Chen and Yi (2021) 
+ <doi:10.1111/biom.13331> is extended to the analysis of survival data, 
+ accommodating  commonly used survival models while accounting for measurement
+ error and network structures among covariates.
+License: GPL-3
+Encoding: UTF-8
+Imports: MASS, ncvreg, glmnet, survival, ahaz, GGally, network, sna,
+        scales
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-09 18:50:00 UTC; Li-Pang Chen
+Author: Li-Pang Chen [aut, cre],
+  Grace Y. Yi [aut]
+Maintainer: Li-Pang Chen <lchen723@nccu.edu.tw>
+Repository: CRAN
+Date/Publication: 2025-09-14 16:20:14 UTC

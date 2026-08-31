@@ -1,0 +1,43 @@
+Type: Package
+Package: arcgislayers
+Title: Harness ArcGIS Data Services
+Version: 0.6.1
+Authors@R: c(
+    person("Josiah", "Parry", , "josiah.parry@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9910-865X")),
+    person("Eli", "Pousson", , "eli.pousson@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0001-8280-1706")),
+    person("Kenneth", "Vernon", , "kenneth.b.vernon@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0003-0098-5092")),
+    person("Martha", "Bass", role = "ctb",
+           comment = c(ORCID = "0009-0004-0268-5426")),
+    person("Antony", "Barja", role = "ctb",
+           comment = c(ORCID = "0000-0001-5921-2858"))
+  )
+Description: Enables users of 'ArcGIS Enterprise', 'ArcGIS Online', or
+    'ArcGIS Platform' to read, write, publish, or manage vector and raster
+    data via ArcGIS location services REST API endpoints
+    <https://developers.arcgis.com/rest/>.
+License: Apache License (>= 2)
+URL: https://developers.arcgis.com/r-bridge,
+        https://github.com/R-ArcGIS/arcgislayers
+BugReports: https://github.com/R-ArcGIS/arcgislayers/issues
+Depends: R (>= 4.2.0)
+Imports: arcgisutils (>= 0.4.0), arcpbf (>= 0.1.5), cli, httr2 (>=
+        1.0.5), jsonify, lifecycle, RcppSimdJson (>= 0.1.13), rlang,
+        sf, terra, utils, yyjsonr
+Suggests: testthat (>= 3.0.0), vctrs, curl, dplyr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-10 19:17:08 UTC; josiahparry
+Author: Josiah Parry [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9910-865X>),
+  Eli Pousson [ctb] (ORCID: <https://orcid.org/0000-0001-8280-1706>),
+  Kenneth Vernon [ctb] (ORCID: <https://orcid.org/0000-0003-0098-5092>),
+  Martha Bass [ctb] (ORCID: <https://orcid.org/0009-0004-0268-5426>),
+  Antony Barja [ctb] (ORCID: <https://orcid.org/0000-0001-5921-2858>)
+Maintainer: Josiah Parry <josiah.parry@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-10 20:10:16 UTC

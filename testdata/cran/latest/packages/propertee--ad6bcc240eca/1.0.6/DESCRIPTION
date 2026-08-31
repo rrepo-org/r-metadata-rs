@@ -1,0 +1,67 @@
+Package: propertee
+Version: 1.0.6
+Title: Standardization-Based Effect Estimation with Optional Prior
+        Covariance Adjustment
+Description: The Prognostic Regression Offsets with Propagation of
+    ERrors (for Treatment Effect Estimation) package facilitates
+    direct adjustment for experiments and observational studies that
+    is compatible with a range of study designs and covariance
+    adjustment strategies. It uses explicit specification of clusters,
+    blocks and treatment allocations to furnish probability of
+    assignment-based weights targeting any of several average
+    treatment effect parameters, and for standard error calculations
+    reflecting these design parameters. For covariance adjustment of
+    its Hajek and (one-way) fixed effects estimates, it enables
+    offsetting the outcome against predictions from a dedicated
+    covariance model, with standard error calculations propagating
+    error as appropriate from the covariance model.
+Authors@R: c(person("Josh", "Errickson", role = "aut",
+                    email = "jerrick@umich.edu"),
+             person("Josh", "Wasserman", role = c("cre", "aut"),
+                    email = "jwass@umich.edu"),
+             person("Mark", "Fredrickson", role = "ctb",
+                    email = "mark.m.fredrickson@gmail.com"),
+             person("Adam", "Sales", role = "ctb",
+                    email = "asales@wpi.edu"),
+             person("Xinhe", "Wang", role = "ctb",
+                    email = "xinhew@umich.edu"),
+             person("Ben", "Hansen", role = "aut",
+                    email = "ben.hansen@umich.edu"))
+License: MIT + file LICENSE
+License_is_FOSS: yes
+License_restricts_use: no
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), multcomp, MASS
+Config/testthat/edition: 3
+Imports: stats, methods, sandwich
+Enhances: robustbase
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+URL: https://github.com/benbhansen-stats/propertee
+BugReports: https://github.com/benbhansen-stats/propertee/issues
+Collate: 'StudySpecification.R' 'StudySpecificationAccessors.R'
+        'SandwichLayer.R' 'block_center_residuals.R'
+        'SandwichLayerVariance.R' 'StudySpecificationConverters.R'
+        'StudySpecificationStructure.R' 'StudySpecificationUtilities.R'
+        'WeightedStudySpecification.R' 'areg.center.R' 'confint_lm.R'
+        'teeMod.R' 'as.lmitt.R' 'as_data_frame.R' 'assigned.R'
+        'bread.R' 'c_weightedStudySpecification.R' 'cov_adj.R' 'data.R'
+        'dichotomy.R' 'expand.model.frame_tee.R' 'get_cov_adj.R'
+        'get_data_from_model.R' 'get_spec.R' 'glmrobMethods.R'
+        'lmitt.R' 'lmrob_methods.R' 'merge_preserve_order.R'
+        'propertee_package.R' 'specification_table.R'
+        'summary.StudySpecification.R' 'summary.teeMod.R' 'update_by.R'
+        'validWeights.R' 'weights_internal.R' 'weights_exported.R'
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-19 17:29:27 UTC; jwass
+Author: Josh Errickson [aut],
+  Josh Wasserman [cre, aut],
+  Mark Fredrickson [ctb],
+  Adam Sales [ctb],
+  Xinhe Wang [ctb],
+  Ben Hansen [aut]
+Maintainer: Josh Wasserman <jwass@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-07-20 12:20:09 UTC

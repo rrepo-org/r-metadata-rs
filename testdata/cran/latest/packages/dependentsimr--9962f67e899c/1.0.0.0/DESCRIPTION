@@ -1,0 +1,27 @@
+Package: dependentsimr
+Title: Simulate Omics-Scale Data with Dependency
+Version: 1.0.0.0
+Authors@R: 
+    person("Thomas", "Brooks", , "tgbrooks@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-6980-0079"))
+Description: Using a Gaussian copula approach, this package generates simulated data mimicking a target real dataset. It supports normal, Poisson, empirical, and 'DESeq2' (negative binomial with size factors) marginal distributions. It uses an low-rank plus diagonal covariance matrix to efficiently generate omics-scale data. Methods are described in: Yang, Grant, and Brooks (2025) <doi:10.1101/2025.01.31.634335>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: rlang (>= 1.0.0)
+Suggests: DESeq2 (>= 1.40.0), S4Vectors (>= 0.44.0),
+        SummarizedExperiment (>= 1.36.0), MASS (>= 7.3), corpcor (>=
+        1.6.0), testthat (>= 3.0.0), Matrix (>= 1.7), sparsesvd (>=
+        0.2), knitr (>= 1.50), rmarkdown, BiocManager, remotes,
+        tidyverse (>= 2.0.0)
+Depends: R (>= 4.2)
+LazyData: true
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-07-22 15:28:25 UTC; tgb
+Author: Thomas Brooks [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6980-0079>)
+Maintainer: Thomas Brooks <tgbrooks@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-23 19:00:16 UTC

@@ -1,0 +1,43 @@
+Package: sfclust
+Title: Bayesian Spatial Functional Clustering
+Version: 1.1.0
+Authors@R: c(
+    person(c("Erick", "A."), "Chacón-Montalván", ,"erick.chaconmontalvan@wur.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8068-1034")),
+    person("Ruiman", "Zhong", ,"ruiman.zhong@kaust.edu.sa", role = c("aut"),
+           comment = c(ORCID = "0000-0002-4681-9199")),
+    person("Paula", "Moraga", ,"paula.moraga@kaust.edu.sa", role = c("aut"),
+           comment = c(ORCID = "0000-0001-5266-0201"))
+           )
+Description: Bayesian clustering of spatial regions with similar functional shapes using
+    spanning trees and latent Gaussian models. The method enforces spatial contiguity
+    within clusters and supports a wide range of latent Gaussian models, including
+    non-Gaussian likelihoods, via the R-INLA framework. The algorithm is based on Zhong,
+    R., Chacón-Montalván, E. A., and Moraga, P. (2026) <doi:10.1002/sim.70597>,
+    extending the approach of Zhang, B., Sang, H., Luo, Z. T., and Huang, H. (2023)
+    <doi:10.1214/22-AOAS1643>. The package includes tools for model fitting, convergence
+    diagnostics, visualization, and summarization of clustering results.
+License: MIT + file LICENSE
+URL: https://erickchacon.github.io/sfclust/,
+        https://github.com/ErickChacon/sfclust
+BugReports: https://github.com/ErickChacon/sfclust/issues
+Encoding: UTF-8
+Imports: igraph, sf, SparseM, stars, dplyr, methods, Matrix, ggplot2,
+        patchwork
+Suggests: ggraph, here, INLA, knitr, rmarkdown, testthat (>= 3.0.0)
+Additional_repositories: https://inla.r-inla-download.org/R/stable
+Depends: R (>= 4.1.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+Config/Needs/website: rmarkdown, fda, maps
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-28 15:23:11 UTC; rstudio
+Author: Erick A. Chacón-Montalván [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8068-1034>),
+  Ruiman Zhong [aut] (ORCID: <https://orcid.org/0000-0002-4681-9199>),
+  Paula Moraga [aut] (ORCID: <https://orcid.org/0000-0001-5266-0201>)
+Maintainer: Erick A. Chacón-Montalván <erick.chaconmontalvan@wur.nl>
+Repository: CRAN
+Date/Publication: 2026-07-28 22:40:03 UTC

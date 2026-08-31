@@ -1,0 +1,28 @@
+Package: distfreereg
+Type: Package
+Title: Distribution-Free Goodness-of-Fit Testing for Regression
+Version: 1.2
+Depends: R (>= 4.4)
+Imports: calculus, clue, lme4, methods
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr, rmarkdown
+Date: 2026-05-05
+Authors@R: person(given = "Jesse",
+                    family = "Miller",
+                    role = c("aut", "cre"),
+                    email = "smallepsilon@proton.me",
+                    comment = c(ORCID = "0009-0005-9465-7461"))
+Maintainer: Jesse Miller <smallepsilon@proton.me>
+Description: Implements the distribution-free goodness-of-fit regression testing
+  procedure, introduced by Estate Khmaladze (2021, <doi:10.1007/s10463-021-00786-3>)
+  to test whether or not the mean structure of a parametric model belongs to a
+  specified model family. The test is implemented for general mean functions
+  with minimal distributional assumptions as well as common models (e.g., lm,
+  glm) with the usual model assumptions.
+License: GPL-3
+NeedsCompilation: no
+Packaged: 2026-05-06 20:33:47 UTC; j
+Author: Jesse Miller [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-9465-7461>)
+Repository: CRAN
+Date/Publication: 2026-05-08 08:00:13 UTC

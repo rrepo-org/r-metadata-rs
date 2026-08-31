@@ -1,0 +1,43 @@
+Package: rMosaic
+Type: Package
+Title: R Bindings to the 'Mosaic' Visualization Framework
+Version: 0.1.3
+Authors@R: c(
+    person("Timur", "Rizvanov", email = "timurr@bu.edu",
+           role = c("aut", "cre")),
+    person("Edward C.", "Ruiz", email = "ecr7407@gmail.com",
+           role = c("aut")),
+    person("Ruben", "Dries", email = "rubendries@gmail.com",
+           role = c("aut", "rev")),
+    person(given = "Dries Lab", role = "fnd",
+           comment = "Host laboratory and funding source"),
+    person(given = "Boston University", role = "fnd",
+           comment = "Undergraduate Research Opportunities Program (UROP)")
+  )
+Description: Provides R bindings for 'Mosaic', a declarative grammar for
+    linked, data-driven visualizations backed by 'DuckDB'. The package supplies
+    'htmlwidgets' and 'shiny' helpers for rendering 'Mosaic' specifications
+    from R, including optional browser-side 'DuckDB-WASM' execution and
+    selection export helpers for exploratory workflows.
+License: MIT + file LICENSE
+URL: https://github.com/TiRizvanov/rMosaic
+BugReports: https://github.com/TiRizvanov/rMosaic/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: htmlwidgets (>= 1.5.4), shiny (>= 1.7.0), jsonlite (>= 1.8.0),
+        yaml (>= 2.3.0), DBI (>= 1.1.0), duckdb (>= 1.4.0), stats
+Suggests: arrow (>= 12.0.0), knitr, rmarkdown, rstudioapi
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-09 14:00:38 UTC; timurrizvanov
+Author: Timur Rizvanov [aut, cre],
+  Edward C. Ruiz [aut],
+  Ruben Dries [aut, rev],
+  Dries Lab [fnd] (Host laboratory and funding source),
+  Boston University [fnd] (Undergraduate Research Opportunities Program
+    (UROP))
+Maintainer: Timur Rizvanov <timurr@bu.edu>
+Repository: CRAN
+Date/Publication: 2026-06-25 15:40:02 UTC

@@ -1,0 +1,30 @@
+Package: MixFrac
+Type: Package
+Title: Fractional Factorial Designs with Alias and Trend-Free Analysis
+Version: 1.0
+Authors@R: c(
+    person(
+      given = "Sukanta",
+      family = "Dash",
+      email = "sukanta.iasri@gmail.com",
+      role = c("aut", "cre")
+    ))
+Description: Constructs mixed-level and regular fractional factorial designs using coordinate-exchange optimization and automatic generator search. Design quality is evaluated with J2 and balance (H-hat) criteria, 
+    alias structures are computed via correlation-based chaining, and deterministic trend-free run orders can be produced following
+    Coster (1993) <doi:10.1214/aos/1176349410>. Mixed-level design construction follows the NONBPA approach of Pantoja-Pacheco et al. (2021) 
+    <doi:10.3390/math9131455>. Regular fraction identification follows Guo, Simpson and Pignatiello (2007) 
+    <doi:10.1080/00224065.2007.11917691>. Alias structure computation follows
+    Rios-Lira et al.(2021) <doi:10.3390/math9233053>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-08 06:58:46 UTC; Sukanta
+Author: Sukanta Dash [aut, cre]
+Maintainer: Sukanta Dash <sukanta.iasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-12 21:20:14 UTC

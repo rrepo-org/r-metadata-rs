@@ -1,0 +1,60 @@
+Package: aNCA
+Title: (Pre-)Clinical NCA in a Dynamic Shiny App
+Version: 0.1.0
+Authors@R: c(
+    person("Ercan", "Suekuer", email = "ercan.suekuer@roche.com", role = "aut",
+           comment = c(ORCID = "0009-0001-1626-1526")),
+    person("Gerardo Jose", "Rodriguez", email = "gerardo.jrac@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-1413-0060")),
+    person("Pascal", "Baertschi", email = "paesce.26@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-6533-0399")),
+    person("Jana", "Spinner", email = "spinnerjana@gmail.com", role = "aut",
+           comment = c(ORCID = "0009-0009-2197-9530")),
+    person("Mateusz", "Kolomanski", email = "mateusz.kolomanski@appsilon.com", role = "aut",
+           comment = c(ORCID = "0000-0001-7424-3919")),
+    person("Lucy", "Aspridis", email = "lucy.aspridis@gmail.com", role = "aut",
+           comment = c(ORCID = "0009-0003-1300-3622")),
+    person("Valentin", "Legras", email = "anca.pharmaverse@gmail.com", role = c("aut", "cre")),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: An interactive 'shiny' application for performing non-compartmental analysis (NCA) on
+  pre-clinical and clinical pharmacokinetic data. The package builds on 'PKNCA' for core estimators and provides interactive visualizations, CDISC
+  outputs ('ADNCA', 'PP', 'ADPP') and configurable TLGs (tables, listings, and graphs). Typical use cases include exploratory
+  analysis, validation, reporting or teaching/demonstration of NCA methods. Methods and core
+  estimators are described in Denney, Duvvuri, and Buckeridge (2015) "Simple, Automatic
+  Noncompartmental Analysis: The PKNCA R Package" <doi:10.1007/s10928-015-9432-2>.
+License: Apache License (>= 2)
+Imports: dplyr, formatters, flextable, ggplot2, magrittr, methods,
+        officer, PKNCA (>= 0.12.1), plotly, purrr, rlang, rlistings,
+        scales, stats, stringr, tern, tidyr, units, utils
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: arrow, covr, DT, ggh4x, glue, haven, htmltools, htmlwidgets,
+        jsonlite, knitr, lintr (>= 3.1.2), logger, markdown, mockery,
+        nestcolor, openxlsx2, pak, reactable, reactable.extras,
+        rmarkdown, sass, shiny, shinycssloaders, shinyjs, shinyjqui,
+        shinytest2, shinyWidgets, stringi, testthat (>= 3.0.0), tools,
+        quarto, vdiffr, withr, yaml
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+URL: https://pharmaverse.github.io/aNCA/,
+        https://github.com/pharmaverse/aNCA
+BugReports: https://github.com/pharmaverse/aNCA/issues
+Depends: R (>= 4.1)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-12-02 08:59:24 UTC; gerardo
+Author: Ercan Suekuer [aut] (ORCID: <https://orcid.org/0009-0001-1626-1526>),
+  Gerardo Jose Rodriguez [aut] (ORCID:
+    <https://orcid.org/0000-0003-1413-0060>),
+  Pascal Baertschi [aut] (ORCID: <https://orcid.org/0000-0002-6533-0399>),
+  Jana Spinner [aut] (ORCID: <https://orcid.org/0009-0009-2197-9530>),
+  Mateusz Kolomanski [aut] (ORCID:
+    <https://orcid.org/0000-0001-7424-3919>),
+  Lucy Aspridis [aut] (ORCID: <https://orcid.org/0009-0003-1300-3622>),
+  Valentin Legras [aut, cre],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Valentin Legras <anca.pharmaverse@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-09 07:40:12 UTC

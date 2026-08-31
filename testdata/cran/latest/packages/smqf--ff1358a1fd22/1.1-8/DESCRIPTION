@@ -1,0 +1,48 @@
+Package: smqf
+Title: Statistical Methods for Quantitative Finance
+Version: 1.1-8
+Authors@R: c(
+    person("David", "Ardia", role = c("aut", "cre", "cph", "fnd"),
+           email = "david.ardia.ch@gmail.com",
+           comment = c(ORCID = "0000-0003-2823-782X")),
+    person("Marius", "Hofert", role = c("ctb", "cph"),
+           comment = "Original author of qrmdata, from which 15 market datasets were ported under GPL-2 | GPL-3"),
+    person("Kurt", "Hornik", role = c("ctb", "cph"),
+           comment = "Original author of qrmdata, from which 15 market datasets were ported under GPL-2 | GPL-3"),
+    person("Alexander J.","McNeil", role = c("ctb", "cph"),
+           comment = "Original author of qrmdata, from which 15 market datasets were ported under GPL-2 | GPL-3"),
+    person("Dries", "Cornilly", role = c("ctb", "cph"),
+           comment = "Original author of mvskPortfolios, from which f_mvsk_portfolio() was ported under GPL-2 | GPL-3"),
+    person("Kris", "Boudt", role = c("ctb", "cph"),
+           comment = "Original author of mvskPortfolios, from which f_mvsk_portfolio() was ported under GPL-2 | GPL-3"))
+Description: Provides data and functions used in the book "Statistical Methods for Quantitative Finance"
+             by David Ardia (2026).
+License: GPL-3
+LazyData: true
+LazyDataCompression: xz
+Encoding: UTF-8
+Depends: R (>= 4.1.0), xts
+URL: https://github.com/ArdiaD/smqf-package
+BugReports: https://github.com/ArdiaD/smqf-package/issues
+Suggests: zoo, testthat (>= 3.0.0), PerformanceAnalytics, glmnet,
+        quadprog, copula, Matrix, readxl, MASS, mvtnorm
+Config/testthat/edition: 3
+Imports: graphics, stats, nloptr, pracma
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-30 00:33:09 UTC; ardiad
+Author: David Ardia [aut, cre, cph, fnd] (ORCID:
+    <https://orcid.org/0000-0003-2823-782X>),
+  Marius Hofert [ctb, cph] (Original author of qrmdata, from which 15
+    market datasets were ported under GPL-2 | GPL-3),
+  Kurt Hornik [ctb, cph] (Original author of qrmdata, from which 15
+    market datasets were ported under GPL-2 | GPL-3),
+  Alexander J. McNeil [ctb, cph] (Original author of qrmdata, from which
+    15 market datasets were ported under GPL-2 | GPL-3),
+  Dries Cornilly [ctb, cph] (Original author of mvskPortfolios, from
+    which f_mvsk_portfolio() was ported under GPL-2 | GPL-3),
+  Kris Boudt [ctb, cph] (Original author of mvskPortfolios, from which
+    f_mvsk_portfolio() was ported under GPL-2 | GPL-3)
+Maintainer: David Ardia <david.ardia.ch@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-30 14:10:02 UTC

@@ -1,0 +1,34 @@
+Package: detectXOR
+Title: XOR Pattern Detection and Visualization
+Version: 0.1.0
+Authors@R: c(person(given = "Jorn", family = "Lotsch",
+                    role = c("aut", "cre"),
+                    email = "j.lotsch@em.uni-frankfurt.de",
+                    comment = c(ORCID = "0000-0002-5818-6958")),
+             person(given = "Alfred", family = "Ultsch",
+                    role = "aut"))
+Description: Provides tools for detecting XOR-like patterns in variable pairs in 
+    two-class data sets. Includes visualizations for pattern exploration and reporting
+    capabilities with both text and HTML output formats.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr (>= 1.1.0), ggplot2 (>= 3.4.0), ggh4x (>= 0.2.3), tibble
+        (>= 3.1.8), reshape2 (>= 1.4.4), glue (>= 1.6.0), magrittr (>=
+        2.0.0), stats, ggthemes, DescTools (>= 0.99.50), utils,
+        methods, grDevices, knitr, kableExtra, htmltools, base64enc
+Suggests: testthat (>= 3.0.0), rmarkdown, doParallel, foreach, parallel
+        (>= 4.2.0), future (>= 1.28.0), future.apply (>= 1.10.0),
+        pbmcapply (>= 1.5.0)
+RoxygenNote: 7.2.3
+SystemRequirements: GNU make
+Depends: R (>= 3.5.0)
+URL: https://github.com/JornLotsch/detectXOR
+BugReports: https://github.com/JornLotsch/detectXOR/issues
+NeedsCompilation: no
+Packaged: 2025-06-24 05:54:01 UTC; joern
+Author: Jorn Lotsch [aut, cre] (ORCID: <https://orcid.org/0000-0002-5818-6958>),
+  Alfred Ultsch [aut]
+Maintainer: Jorn Lotsch <j.lotsch@em.uni-frankfurt.de>
+Repository: CRAN
+Date/Publication: 2025-06-27 13:00:06 UTC

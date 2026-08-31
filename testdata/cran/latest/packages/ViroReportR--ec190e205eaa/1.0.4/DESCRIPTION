@@ -1,0 +1,37 @@
+Package: ViroReportR
+Title: Respiratory Viral Infection Forecast Reporting
+Version: 1.0.4
+Authors@R: c(
+    person("Mike", "Irvine", , "mike.irvine@bccdc.ca", role = c("aut", "cre", "cph")),
+    person("Caesar", "Wong", role = "aut"),
+    person("Nirupama", "Tamvada", role = "aut"),
+    person("Rebeca", "Falcao", role = "aut"),
+    person("Nelson", "Tang", role = "aut")
+  )
+Description: Tools for reporting and forecasting viral respiratory infections,
+    using case surveillance data. Report generation tools for short-term forecasts,
+    and validation metrics for an arbitrary number of customizable respiratory viruses.
+    Estimation of the effective reproduction number is based on the 'EpiEstim' framework 
+    described in work by 'Cori' and colleagues. (2013) <doi:10.1093/aje/kwt133>.
+License: GPL (>= 3)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: data.table, dplyr, EpiEstim, ggplot2, incidence, lubridate,
+        projections, purrr, rlang, tibble, stats, utils, tidyr, glue,
+        mgcv, kableExtra, cowplot
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+URL: https://github.com/BCCDC-PHSA/ViroReportR
+BugReports: https://github.com/BCCDC-PHSA/ViroReportR/issues
+NeedsCompilation: no
+Packaged: 2026-02-17 21:44:58 UTC; rebeca.falcao
+Author: Mike Irvine [aut, cre, cph],
+  Caesar Wong [aut],
+  Nirupama Tamvada [aut],
+  Rebeca Falcao [aut],
+  Nelson Tang [aut]
+Maintainer: Mike Irvine <mike.irvine@bccdc.ca>
+Repository: CRAN
+Date/Publication: 2026-02-17 23:10:27 UTC

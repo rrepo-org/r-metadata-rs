@@ -1,0 +1,56 @@
+Package: tidychangepoint
+Title: A Tidy Framework for Changepoint Detection Analysis
+Version: 1.0.5
+Authors@R: c(
+    person("Benjamin S.", "Baumer", email = "ben.baumer@gmail.com", 
+      role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-3279-0516")
+    ),
+    person(
+      "Biviana Marcela", "Suárez Sierra", email = "bmsuarezs@eafit.edu.co", 
+      role = c("aut"), comment = c(ORCID = "0000-0003-2151-3537")
+    ),    
+    person(
+      "Arrigo", "Coen", role = c("aut"), 
+      comment = c(ORCID = "0000-0001-7798-7104")
+    ),
+    person(
+      "Carlos A.", "Taimal", role = c("aut"), 
+      comment = c(ORCID = "0000-0002-8716-1282")
+    ),
+    person(
+      "Xueheng", "Shi", role = c("ctb")
+    )
+  )
+Description: Changepoint detection algorithms for R are widespread but have
+    different interfaces and reporting conventions. 
+    This makes the comparative analysis of results difficult. 
+    We solve this problem by providing a tidy, unified interface for several 
+    different changepoint detection algorithms. 
+    We also provide consistent numerical and graphical reporting leveraging 
+    the 'broom' and 'ggplot2' packages. 
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: changepoint, changepointGA, cli, dplyr, GA, generics, ggplot2,
+        lifecycle, lubridate, memoise, methods, prettyunits, purrr,
+        rlang, scales, segmented, stringr, strucchange, tibble, tidyr,
+        tsibble, vctrs, wbs, xts, zoo
+Depends: R (>= 4.2)
+LazyData: true
+Suggests: bench, broom, knitr, here, multitaper, patchwork, readr,
+        rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://beanumber.github.io/tidychangepoint/
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-04 19:32:59 UTC; bbaumer
+Author: Benjamin S. Baumer [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3279-0516>),
+  Biviana Marcela Suárez Sierra [aut] (ORCID:
+    <https://orcid.org/0000-0003-2151-3537>),
+  Arrigo Coen [aut] (ORCID: <https://orcid.org/0000-0001-7798-7104>),
+  Carlos A. Taimal [aut] (ORCID: <https://orcid.org/0000-0002-8716-1282>),
+  Xueheng Shi [ctb]
+Maintainer: Benjamin S. Baumer <ben.baumer@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-05 11:20:02 UTC

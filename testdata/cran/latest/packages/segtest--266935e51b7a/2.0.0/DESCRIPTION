@@ -1,0 +1,60 @@
+Package: segtest
+Title: Tests for Segregation Distortion in Polyploids
+Version: 2.0.0
+Authors@R: 
+    c(person(given = "David", 
+             family = "Gerard",
+             email = "gerard.1787@gmail.com", 
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-9450-5023")),
+      person(given = "Mira", 
+             family = "Thakkar", 
+             email = "chrtmira@gmail.com", 
+             role = c("aut")),
+      person(given = "Guilherme da Silva",
+             family = "Pereira",
+             email = "g.pereira@ufv.br",
+             role = c("ctb"),
+             comment = c(ORCID = "0000-0002-7106-8630")),
+      person(given = "NSF DBI 2132247",
+             role = "fnd",
+             comment = "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2132247")
+     )
+Description: Provides tests for segregation distortion in F1 
+    polyploid populations under different assumptions of meiosis. 
+    These tests can account for double reduction, partial preferential pairing,
+    and genotype uncertainty through the use of genotype likelihoods. 
+    Parallelization support is provided. Details of these methods are 
+    described in Gerard et al. (2025a) <doi:10.1007/s00122-025-04816-z>
+    and Gerard et al. (2025b) <doi:10.1101/2025.06.23.661114>.
+    Part of this material is based upon work supported by the
+    National Science Foundation under Grant No. 2132247.  The
+    opinions, findings, and conclusions or recommendations expressed
+    are those of the author and do not necessarily reflect the views
+    of the National Science Foundation.
+License: GPL (>= 3)
+BugReports: https://github.com/dcgerard/segtest/issues
+URL: https://dcgerard.github.io/segtest/
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Biarch: true
+Depends: R (>= 3.5)
+Imports: doFuture, doRNG, foreach, future, iterators, minqa, nloptr,
+        Rcpp, updog
+Suggests: knitr, polymapR, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2025-06-30 13:45:58 UTC; dgerard
+Author: David Gerard [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9450-5023>),
+  Mira Thakkar [aut],
+  Guilherme da Silva Pereira [ctb] (ORCID:
+    <https://orcid.org/0000-0002-7106-8630>),
+  NSF DBI 2132247 [fnd]
+    (https://www.nsf.gov/awardsearch/showAward?AWD_ID=2132247)
+Maintainer: David Gerard <gerard.1787@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-30 18:40:02 UTC

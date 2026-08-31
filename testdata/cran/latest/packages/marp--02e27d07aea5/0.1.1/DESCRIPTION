@@ -1,0 +1,39 @@
+Package: marp
+Version: 0.1.1
+Type: Package
+Title: Model-Averaged Renewal Process
+Authors@R: c(person("Jie", "Kang", role = c("aut"),
+                    email = "7278212@gmail.com"),
+             person("Chris", "Scott", role = c("aut")),
+             person("Vanessa", "Huang", role = c("aut")),
+             person("Veronica", "Tsou", role = c("aut", "cre"),
+                    email = "wantungtsou@gmail.com"),
+             person("Albert", "Savary", role = c("ctb")))
+Maintainer: Veronica Tsou <wantungtsou@gmail.com>
+Description: To implement a model-averaging approach with different renewal
+    models, with a primary focus on forecasting large earthquakes. Based on
+    six renewal models (i.e., Poisson, Gamma, Log-Logistics, Weibull,
+    Log-Normal and BPT), model-averaged point estimates are calculated using
+    AIC weights. Additionally, both percentile and studentized
+    bootstrapped model-averaged confidence intervals are constructed. In
+    comparison, point and interval estimation from the individual or "best"
+    model (determined via model selection) can be retrieved. 
+URL: https://github.com/kanji709/marp
+BugReports: https://github.com/kanji709/marp/issues
+Depends: R (>= 2.15)
+Imports: stats, gtools, statmod, VGAM,
+Suggests: knitr, rmarkdown, devtools, roxygen2, testthat (>= 3.0.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-21 06:34:15 UTC; zwt
+Author: Jie Kang [aut],
+  Chris Scott [aut],
+  Vanessa Huang [aut],
+  Veronica Tsou [aut, cre],
+  Albert Savary [ctb]
+Repository: CRAN
+Date/Publication: 2026-08-21 08:10:08 UTC

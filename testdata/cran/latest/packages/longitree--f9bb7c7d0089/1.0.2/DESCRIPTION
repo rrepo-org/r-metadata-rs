@@ -1,0 +1,28 @@
+Package: longitree
+Title: Decision Tree Analysis for Longitudinal Measurement Data
+Version: 1.0.2
+Authors@R: c(
+    person("Ryoto", "Obata", email = "ryoto.obata@gmail.com", role = c("aut", "cre")),
+    person("Tomoyuki", "Sugimoto", role = "aut"))
+Maintainer: Ryoto Obata <ryoto.obata@gmail.com>
+Description: Implements tree-based methods for longitudinal data.
+    The package constructs decision trees that evaluate both the main
+    effect of a covariate and its interaction with time through a
+    weighted splitting criterion. It supports single-tree construction,
+    bootstrap-based multiple-tree selection, and tree visualisation.
+    For methodological details, see Obata and Sugimoto (2026)
+    <doi:10.1007/s11634-025-00665-2>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Imports: stats, graphics, partykit, ggparty, ggplot2, lme4, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Packaged: 2026-08-26 13:08:35 UTC; jovyan
+Author: Ryoto Obata [aut, cre],
+  Tomoyuki Sugimoto [aut]
+Repository: CRAN
+Date/Publication: 2026-08-26 14:40:03 UTC

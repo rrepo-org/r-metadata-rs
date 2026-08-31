@@ -1,0 +1,38 @@
+Package: huggingfaceR
+Type: Package
+Title: Access 'Hugging Face' Models and Datasets
+Version: 2.2.0
+Authors@R: c(
+  person("Alex", "Farach", email = "alexfarach@gmail.com", role = c("aut", "cre", "cph")),
+  person("Sam", "Terfa", email = "samterfa@gmail.com", role = c("aut", "cph")),
+  person("Jack", "Penzer", email = "jack.penzer@sharecreative.com", role = c("aut", "cph"))
+  )
+Author: Alex Farach [aut, cre, cph],
+  Sam Terfa [aut, cph],
+  Jack Penzer [aut, cph]
+Maintainer: Alex Farach <alexfarach@gmail.com>
+Description: Access models and datasets hosted on the 'Hugging Face' Hub
+    through its Inference Application Programming Interface (API). Run text
+    classification, embeddings, chat, translation, image, audio, and other
+    tasks from tidy 'R' workflows without installing 'Python' by default.
+    Results are returned as data frames or simple 'R' objects so they can be
+    composed with 'dplyr', 'tidyr', and related tooling. Helpers also support
+    Hub search, file download, provider discovery, and guarded uploads for
+    authenticated workflows.
+License: MIT + file LICENSE
+URL: https://farach.github.io/huggingfaceR/,
+        https://github.com/farach/huggingfaceR
+BugReports: https://github.com/farach/huggingfaceR/issues
+Encoding: UTF-8
+LazyData: true
+Imports: cli, dplyr, glue, httr2 (>= 1.0.0), jsonlite, magrittr, purrr,
+        rlang, stringr, tibble, tidyr, utils
+Suggests: arrow, generics, knitr, lsa, recipes, reticulate, rmarkdown,
+        testthat (>= 3.0.0), tidymodels, tidytext, uwot, withr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-29 13:31:51 UTC; alexf
+Repository: CRAN
+Date/Publication: 2026-08-29 18:10:02 UTC

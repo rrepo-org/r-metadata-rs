@@ -1,0 +1,36 @@
+Package: geer
+Type: Package
+Title: Bias-Reduced and Penalized Generalized Estimating Equations
+Version: 0.1.0
+Authors@R: 
+    person(given = "Anestis",
+           family = "Touloumis",
+           role = c("aut", "cre"),
+           email = "A.Touloumis@brighton.ac.uk",
+           comment = c(ORCID = "0000-0002-5965-1639"))
+Description: Fits marginal regression models for repeated or clustered
+    responses using generalized estimating equations (GEE). Provides ordinary
+    GEE estimators, bias-reduced and bias-corrected GEE estimators, and
+    Jeffreys-type penalized GEE estimators for binary, count and continuous
+    responses. Methods are described in Touloumis (2026a)
+    <doi:10.48550/arXiv.2606.16043> and Touloumis (2026b)
+    <doi:10.48550/arXiv.2606.16058>.
+License: GPL-3
+URL: https://github.com/AnestisTouloumis/geer
+BugReports: https://github.com/AnestisTouloumis/geer/issues
+Depends: R (>= 4.0.0)
+Imports: brglm2, generics, Rcpp (>= 1.0.9)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: covr, emmeans (>= 2.0.0), estimability, testthat (>= 3.0.0),
+        tibble
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-18 12:42:46 UTC; Anestis
+Author: Anestis Touloumis [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5965-1639>)
+Maintainer: Anestis Touloumis <A.Touloumis@brighton.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-06-23 14:50:02 UTC

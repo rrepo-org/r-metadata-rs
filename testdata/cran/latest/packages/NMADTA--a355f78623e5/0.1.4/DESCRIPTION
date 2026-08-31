@@ -1,0 +1,47 @@
+Package: NMADTA
+Type: Package
+Title: Network Meta-Analysis of Multiple Diagnostic Tests
+Version: 0.1.4
+Authors@R: 
+  c(person(given = "Xing", family = "Xing", 
+    role = c("aut", "cre"), email = "xxing@arizona.edu",
+    comment = c(ORCID = "0000-0001-9394-8957")),
+    person(given = "Boyang", family = "Lu", role = c("aut")), 
+    person(given = "Lifeng", family = "Lin", role = c("aut")), 
+    person(given = "Qinshu", family = "Lian", role = c("aut")), 
+    person(given = "James S.", family = "Hodges", role = c("aut")), 
+    person(given = "Yong", family = "Chen", role = c("aut")), 
+    person(given = "Haitao", family = "Chu", 
+    role = c("aut"), email = "chux0051@umn.edu",
+    comment = c(ORCID = "0000-0003-0932-598X")))
+Maintainer: Xing Xing <xxing@arizona.edu>
+Depends: R (>= 4.0.0)
+Imports: rjags (>= 4-6), coda, ggplot2, ks, reshape2, MCMCpack, MASS,
+        plotrix, graphics, stats, grDevices, Rdpack
+SystemRequirements: JAGS 4.x.y (http://mcmc-jags.sourceforge.net)
+Description: Provides statistical methods for network meta-analysis 
+    of diagnostic tests to simultaneously compare multiple tests within a 
+    missing data framework, including:
+    - Bayesian hierarchical model for network meta-analysis of multiple 
+      diagnostic tests 
+      (Ma, Lian, Chu, Ibrahim, and Chen (2018) <doi:10.1093/biostatistics/kxx025>)
+    - Bayesian Hierarchical Summary Receiver Operating Characteristic Model 
+      for Network Meta-Analysis of Diagnostic Tests 
+      (Lian, Hodges, and Chu (2019) <doi:10.1080/01621459.2018.1476239>).
+License: GPL (>= 2)
+RdMacros: Rdpack
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat
+NeedsCompilation: no
+LazyData: true
+Packaged: 2026-06-15 08:17:28 UTC; kevinxing
+Author: Xing Xing [aut, cre] (ORCID: <https://orcid.org/0000-0001-9394-8957>),
+  Boyang Lu [aut],
+  Lifeng Lin [aut],
+  Qinshu Lian [aut],
+  James S. Hodges [aut],
+  Yong Chen [aut],
+  Haitao Chu [aut] (ORCID: <https://orcid.org/0000-0003-0932-598X>)
+Repository: CRAN
+Date/Publication: 2026-06-15 12:30:07 UTC

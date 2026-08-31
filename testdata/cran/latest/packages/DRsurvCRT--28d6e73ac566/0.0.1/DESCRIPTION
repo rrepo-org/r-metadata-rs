@@ -1,0 +1,24 @@
+Package: DRsurvCRT
+Type: Package
+Title: Doubly-Robust Estimation for Survival Outcomes in
+        Cluster-Randomized Trials
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Xi", family = "Fang", role = c("aut","cre"),email = "x.fang@yale.edu"),
+    person(given = "Fan", family = "Li", role = c("aut"), email = "fan.li@example.edu")
+  )
+Description: Cluster-randomized trials (CRTs) assign treatment to groups rather than individuals, so valid analyses must distinguish cluster-level and individual-level effects and define estimands within a potential-outcomes framework. This package supports right-censored survival outcomes for both single-state (binary) and multi-state settings. For single-state outcomes, it provides estimands based on stage-specific survival contrasts (SPCE) and restricted mean survival time (RMST). For multi-state outcomes, it provides SPCE as well as a generalized win-based restricted mean time-in-favor estimand (RMT-IF). The package implements doubly robust estimators that accommodate covariate-dependent censoring and remain consistent if either the outcome model or the censoring model is correctly specified. Users can choose marginal Cox or gamma-frailty Cox working models for nuisance estimation, and inference is supported via leave-one-cluster-out jackknife variance and confidence interval estimation. Methods are described in Fang et al. (2025) "Estimands and doubly robust estimation for cluster-randomized trials with survival outcomes" <doi:10.48550/arXiv.2510.08438>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp, frailtyEM, survival, ggplot2, pracma, abind
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+NeedsCompilation: yes
+Packaged: 2025-12-19 03:14:10 UTC; fancy
+Author: Xi Fang [aut, cre],
+  Fan Li [aut]
+Maintainer: Xi Fang <x.fang@yale.edu>
+Repository: CRAN
+Date/Publication: 2025-12-30 19:00:06 UTC

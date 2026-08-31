@@ -1,0 +1,30 @@
+Package: binxr
+Type: Package
+Title: 'Binance' REST API Client
+Version: 0.1.2
+Authors@R: c(
+    person("Oliver", "Zhou", email = "oliver.yxzhou@gmail.com", role = c("aut", "cre")),
+    person("Lily", "Li", email = "lilyli.qc.hk@gmail.com", role = "aut")
+    )
+Author: Oliver Zhou [aut, cre],
+  Lily Li [aut]
+Maintainer: Oliver Zhou <oliver.yxzhou@gmail.com>
+Description: Client for the 'Binance' <https://www.binance.com/> Spot,
+    USD-M Futures, and Options REST APIs. Provides helper functions for signed
+    and unsigned requests, market data retrieval, account access, and order
+    management with 'data.table' output by default. COIN-M Futures, Portfolio
+    Margin, WebSocket, SBE, and FIX APIs are not included.
+License: MIT + file LICENSE
+URL: https://github.com/OliverLDS/binxr,
+        https://oliverlds.github.io/binxr/
+BugReports: https://github.com/OliverLDS/binxr/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: httr2, jsonlite, digest, data.table, rlang
+Suggests: testthat (>= 3.0.0), waldo
+Config/testthat/edition: 3
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2026-08-01 15:01:06 UTC; oliver
+Repository: CRAN
+Date/Publication: 2026-08-02 18:40:02 UTC

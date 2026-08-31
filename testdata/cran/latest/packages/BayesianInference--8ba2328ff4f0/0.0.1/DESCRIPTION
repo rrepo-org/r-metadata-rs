@@ -1,0 +1,26 @@
+Package: BayesianInference
+Type: Package
+Title: Bayesian Inference
+Version: 0.0.1
+Authors@R: c(
+    person(
+      "Sebastian", "Sosa",
+      email = "bi@s-sosa.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Beta version of 'Bayesian Inference' (BI) using 'python' and BI. It aims to unify the modeling experience by providing an intuitive model-building syntax together with the flexibility of low-level abstraction coding. It also includes pre-built functions for high-level abstraction and supports hardware-accelerated computation for improved scalability, including parallelization, vectorization, and execution on CPU, GPU, or TPU.
+Encoding: UTF-8
+Imports: reticulate
+SystemRequirements: Python (>= 3.6), 'BayesInference' python library.
+Depends: R (>= 3.5.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+License: GPL (>= 3)
+NeedsCompilation: no
+Packaged: 2026-01-09 14:28:53 UTC; Sosa
+Author: Sebastian Sosa [aut, cre]
+Maintainer: Sebastian Sosa <bi@s-sosa.com>
+Repository: CRAN
+Date/Publication: 2026-01-13 18:10:02 UTC

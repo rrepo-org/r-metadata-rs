@@ -1,0 +1,25 @@
+Package: poissonsuperlearner
+Title: Poisson Super Learner
+Version: 0.2.0
+Authors@R: 
+    c(person(given="Gabriele", family="Pittarello", email ="gabriele.pittarello@sund.ku.dk", role = c("aut", "cre")),
+    person(given="Helene", family="Rytgaard", email ="hely@sund.ku.dk", role = c("aut")),
+    person(given="Thomas", family="Gerds", email = "tag@biostat.ku.dk", role = c("aut")))
+Description: Provides tools for fitting piecewise-constant hazard models for survival and competing risks data, including ensemble hazard estimation via the Super Learner framework. The package supports estimation of survival functions and absolute risk predictions from fitted cause-specific hazard models. For the Super Learner framework see van der Laan, Polley and Hubbard (2007) <doi:10.2202/1544-6115.1309>.
+License: GPL (>= 2)
+LinkingTo: Rcpp
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: data.table, sampling, riskRegression
+Imports: Rcpp, methods, lava, Matrix, glmnet, mgcv
+Suggests: knitr, rmarkdown, survival, prodlim, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-05-18 16:11:00 UTC; pwt887
+Author: Gabriele Pittarello [aut, cre],
+  Helene Rytgaard [aut],
+  Thomas Gerds [aut]
+Maintainer: Gabriele Pittarello <gabriele.pittarello@sund.ku.dk>
+Repository: CRAN
+Date/Publication: 2026-05-18 16:30:02 UTC

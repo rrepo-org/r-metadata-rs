@@ -1,0 +1,23 @@
+Package: unfold
+Type: Package
+Title: Mapping Hidden Geometry into Future Sequences
+Version: 1.0.1
+Authors@R: c(person("Giancarlo", "Vercellino", role = c("aut", "cre", "cph"), email = "giancarlo.vercellino@gmail.com"))
+Maintainer: Giancarlo Vercellino <giancarlo.vercellino@gmail.com>
+Description: A variational mapping approach that reveals and expands future temporal dynamics from folded high-dimensional geometric distance spaces, unfold turns a set of time series into a 4D block of pairwise distances between reframed windows, learns a variational mapper that maps those distances to the next reframed window, and produces horizon-wise predictive functions for each input series. In short: it unfolds the future path of each series from a folded geometric distance representation.
+License: GPL-3
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: torch (>= 0.11.0), purrr (>= 1.0.1), imputeTS (>= 3.3),
+        lubridate (>= 1.9.2), ggplot2 (>= 3.5.1), scales (>= 1.3.0),
+        abind (>= 1.4-5), coro (>= 1.1.0)
+Encoding: UTF-8
+URL: https://rpubs.com/giancarlo_vercellino/unfold
+Suggests: knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-04-14 18:15:13 UTC; gianc
+Author: Giancarlo Vercellino [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2026-04-15 05:10:02 UTC

@@ -1,0 +1,47 @@
+Package: biostats
+Title: Biostatistics and Clinical Data Analysis
+Version: 1.1.2
+Authors@R: c(
+    person("Sebastian", "Quirarte-Justo", 
+           email = "sebastian.quirarte@sophia.com.mx", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-2730-4343")),
+    person("Angela Carolina", "Montano-Ruiz", 
+           email = "angela.montano@sophia.com.mx", 
+           role = "aut",
+           comment = c(ORCID = "0009-0009-1705-763X")),
+    person("Jose Maria", "Torres-Arellano", 
+           email = "jose.torres@sophia.com.mx", 
+           role = "aut",
+           comment = c(ORCID = "0000-0003-4632-2243")),
+    person("Laboratorios Sophia S.A. de C.V.", 
+           role = c("cph", "fnd")))
+Description: Biostatistical and clinical data analysis, including descriptive 
+    statistics, exploratory data analysis, sample size and power calculations, 
+    statistical inference, and data visualization. Normality tests are 
+    implemented following Mishra et al. (2019) <doi:10.4103/aca.ACA_157_18>, 
+    omnibus test procedures are based on Blanca et al. (2017) 
+    <doi:10.3758/s13428-017-0918-2> and Field et al. (2012, ISBN:9781446200469), 
+    while sample size and power calculation methods follow Chow et al. (2017) 
+    <doi:10.1201/9781315183084>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0), covr
+Config/testthat/edition: 3
+Imports: ggplot2, gridExtra, rlang, car, gt, nortest
+URL: https://github.com/sebasquirarte/biostats
+BugReports: https://github.com/sebasquirarte/biostats/issues
+NeedsCompilation: no
+Packaged: 2026-03-05 22:13:24 UTC; squirartej
+Author: Sebastian Quirarte-Justo [aut, cre] (ORCID:
+    <https://orcid.org/0009-0004-2730-4343>),
+  Angela Carolina Montano-Ruiz [aut] (ORCID:
+    <https://orcid.org/0009-0009-1705-763X>),
+  Jose Maria Torres-Arellano [aut] (ORCID:
+    <https://orcid.org/0000-0003-4632-2243>),
+  Laboratorios Sophia S.A. de C.V. [cph, fnd]
+Maintainer: Sebastian Quirarte-Justo <sebastian.quirarte@sophia.com.mx>
+Repository: CRAN
+Date/Publication: 2026-03-05 22:30:02 UTC

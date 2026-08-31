@@ -1,0 +1,54 @@
+Package: koma
+Title: Bayesian Simultaneous Equation Models for Forecasting
+Version: 0.3.1
+Authors@R: c(
+    person("Samad", "Sarferaz", , "sarferaz@kof.ethz.ch", role = c("aut", "cph"), comment = c(ORCID = "0000-0001-9283-3293")),
+    person("Laurent", "Florin", , "florin@kof.ethz.ch", role = c("aut")),
+    person("Merlin", "Scherer", , "scherer@kof.ethz.ch", role = c("aut", "cre", "cph"), comment = c(ORCID = "0009-0005-7479-168X")),
+    person("Andrew D.", "Martin", role = c("ctb", "cph"),
+      comment = "Adapted rwish/riwish code from MCMCpack"),
+    person("Kevin M.", "Quinn", role = c("ctb", "cph"),
+      comment = "Adapted rwish/riwish code from MCMCpack"),
+    person("Jong Hee", "Park", role = c("ctb", "cph"),
+      comment = "Adapted rwish/riwish code from MCMCpack"),
+    person("Bill", "Venables", role = c("ctb", "cph"),
+      comment = "Adapted multivariate_norm code from MASS::mvrnorm"),
+    person("Brian D.", "Ripley", role = c("ctb", "cph"),
+      comment = "Adapted multivariate_norm code from MASS::mvrnorm"))
+Description: Estimate and forecast Bayesian simultaneous equation models for macroeconomic time series. Provides tools to specify systems of behavioral equations and accounting identities, transform and manage time series, simulate from the posterior using a Metropolis-within-Gibbs sampler, and generate unconditional and conditional forecasts with user-defined priors and restrictions. Methods are described in Rathke A. and Sarferaz S. (forthcoming) "Bayesian Estimation of Simultaneous Equations Model".
+URL: https://timothymerlin.github.io/koma/,
+        https://github.com/TimothyMerlin/koma
+License: GPL (>= 3)
+Suggests: devtools (>= 2.4.5), ggplot2 (>= 3.5.0), usethis (>= 3.1.0),
+        pkgdown (>= 2.0.7), knitr (>= 1.43), rmarkdown (>= 2.24),
+        future (>= 1.33.0), parallelly (>= 1.36.0), withr (>= 3.0.0),
+        texreg (>= 1.39.4), testthat (>= 3.2.3), plotly (>= 4.11.0),
+        webshot2 (>= 0.1.2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Imports: cli (>= 3.6.3), doFuture (>= 1.0.0), foreach (>= 1.5.2), glue
+        (>= 1.8.0), Matrix (>= 1.5.4.1), methods, progressr (>=
+        0.15.0), purrr (>= 1.0.4), rlang (>= 1.1.6), stats (>= 4.0.2),
+        tempdisagg (>= 1.1), utils (>= 4.4.1)
+Depends: R (>= 4.1.0)
+LazyData: true
+VignetteBuilder: knitr
+BugReports: https://github.com/TimothyMerlin/koma/issues
+NeedsCompilation: no
+Packaged: 2026-07-20 11:58:06 UTC; tischere
+Author: Samad Sarferaz [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-9283-3293>),
+  Laurent Florin [aut],
+  Merlin Scherer [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0005-7479-168X>),
+  Andrew D. Martin [ctb, cph] (Adapted rwish/riwish code from MCMCpack),
+  Kevin M. Quinn [ctb, cph] (Adapted rwish/riwish code from MCMCpack),
+  Jong Hee Park [ctb, cph] (Adapted rwish/riwish code from MCMCpack),
+  Bill Venables [ctb, cph] (Adapted multivariate_norm code from
+    MASS::mvrnorm),
+  Brian D. Ripley [ctb, cph] (Adapted multivariate_norm code from
+    MASS::mvrnorm)
+Maintainer: Merlin Scherer <scherer@kof.ethz.ch>
+Repository: CRAN
+Date/Publication: 2026-07-29 17:00:02 UTC

@@ -1,0 +1,29 @@
+Package: gsMeanFreq
+Type: Package
+Title: Group Sequential Clinical Trial Designs for Composite Endpoints
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Qinghua", family = "Lian", email = "qlian@mcw.edu",
+      role = c("aut", "cre")),
+    person(given = "Kwang Woo", family = "Ahn", role = c("ctb")),  
+    person(given = "Soyoung", family = "Kim", role = c("ctb")), 
+    person(given = c("Michael" ,"J"), family = "Martens",
+      email = "mmartens@mcw.edu", role = c("aut")),
+    person(given = c("Brent", "R."),family = "Logan",role = "ctb")
+  )
+Maintainer: Qinghua Lian <qlian@mcw.edu>
+Description: Simulating composite endpoints with recurrent and terminal events under staggered entry, and for constructing one- and two-sample group sequential test statistics and monitoring boundaries based on the mean frequency function. Details will be available in an upcoming publication.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, tibble, pracma, mvtnorm, gsDesign, stats, bdsmatrix,
+        rlang, foreach, survival
+NeedsCompilation: no
+Packaged: 2026-02-12 04:01:35 UTC; qinghua
+Author: Qinghua Lian [aut, cre],
+  Kwang Woo Ahn [ctb],
+  Soyoung Kim [ctb],
+  Michael J Martens [aut],
+  Brent R. Logan [ctb]
+Repository: CRAN
+Date/Publication: 2026-02-16 17:50:02 UTC

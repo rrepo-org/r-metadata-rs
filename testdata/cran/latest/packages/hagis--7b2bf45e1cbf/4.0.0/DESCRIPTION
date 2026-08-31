@@ -1,0 +1,84 @@
+Package: hagis
+Title: Analysis of Plant Pathogen Pathotype Complexities, Distributions
+        and Diversity
+Version: 4.0.0
+Authors@R: c(
+    person("Austin G.", "McCoy", , "mccoyaus@msu.edu", role = c("aut", "ccp"),
+           comment = c(ORCID = "0000-0003-2483-4184")),
+    person("Zachary", "Noel", , "noelzach@msu.edu", role = c("aut", "ccp"),
+           comment = c(ORCID = "0000-0001-6375-8300")),
+    person("Adam H.", "Sparks", , "adamhsparks@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0061-8359")),
+    person("Martin", "Chilvers", , "chilvers@msu.edu", role = c("aut", "ths"),
+           comment = c(ORCID = "0000-0001-8832-1666")),
+    person("Jari", "Oksanen", , "jhoksane@gmail.com", role = "aut",
+           comment = "Contributed fix for the use of 'vegan' in betadiversity vignette."),
+    person("Zhian N.", "Kamvar", role = c("ctb", "rev"),
+           comment = c(ORCID = "0000-0003-1458-7108")),
+    person("Michigan Soybean Promotion Committee", role = c("fnd", "cph")),
+    person("Project GREEEN", role = c("fnd", "cph")),
+    person("North Central Soybean Research Program", role = c("fnd", "cph")),
+    person("Grains Research and Development Corporation", role = c("fnd", "cph"),
+           comment = c("GRDC Project DAQ00186 and GRDC Project CUR2210-005OPX\n           (AAGI-CU)", ROR = "02xwr1996")),
+    person("Michigan State University", role = c("fnd", "cph"),
+           comment = c("MSU AgBioResearch and MSU Extension", ROR = "05hs6h993")),
+    person("University of Southern Queensland", role = c("fnd", "cph"),
+           comment = c(ROR = "04sjbnx57")),
+    person("Curtin University", role = c("fnd", "cph"),
+           comment = c(ROR = "02n415q13"))
+  )
+Description: Analysis of plant pathogen pathotype survey data.  Functions
+    provided calculate distribution of susceptibilities, distribution of
+    complexities with statistics, pathotype frequency distribution, as
+    well as diversity indices for pathotypes.  This package is meant to be
+    a direct replacement for Herrmann, Löwer and Schachtel's (1999)
+    <doi:10.1046/j.1365-3059.1999.00325.x> Habgood-Gilmour Spreadsheet,
+    'HaGiS', previously used for pathotype analysis.
+License: MIT + file LICENSE
+URL: https://github.com/openplantpathology/hagis,
+        https://openplantpathology.github.io/hagis/
+BugReports: https://github.com/openplantpathology/hagis/issues
+Depends: R (>= 3.4.0)
+Imports: data.table, ggplot2, pander, stats, utils
+Suggests: ape, dplyr, knitr, rmarkdown, roxyglobals, testthat, vdiffr,
+        vegan
+VignetteBuilder: knitr
+Config/Needs/build: moodymudskipper/devtag
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2.9000
+X-schema.org-applicationCategory: Tools
+X-schema.org-isPartOf: https://openplantpathology.org
+X-schema.org-keywords: plant-pathology, pathotype, pathogen-survey,
+        virulence analysis, differential set, assessment scale
+NeedsCompilation: no
+Packaged: 2025-07-26 03:58:08 UTC; adamsparks
+Author: Austin G. McCoy [aut, ccp] (ORCID:
+    <https://orcid.org/0000-0003-2483-4184>),
+  Zachary Noel [aut, ccp] (ORCID:
+    <https://orcid.org/0000-0001-6375-8300>),
+  Adam H. Sparks [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0061-8359>),
+  Martin Chilvers [aut, ths] (ORCID:
+    <https://orcid.org/0000-0001-8832-1666>),
+  Jari Oksanen [aut] (Contributed fix for the use of 'vegan' in
+    betadiversity vignette.),
+  Zhian N. Kamvar [ctb, rev] (ORCID:
+    <https://orcid.org/0000-0003-1458-7108>),
+  Michigan Soybean Promotion Committee [fnd, cph],
+  Project GREEEN [fnd, cph],
+  North Central Soybean Research Program [fnd, cph],
+  Grains Research and Development Corporation [fnd, cph] (GRDC Project
+    DAQ00186 and GRDC Project CUR2210-005OPX (AAGI-CU), ROR:
+    <https://ror.org/02xwr1996>),
+  Michigan State University [fnd, cph] (MSU AgBioResearch and MSU
+    Extension, ROR: <https://ror.org/05hs6h993>),
+  University of Southern Queensland [fnd, cph] (ROR:
+    <https://ror.org/04sjbnx57>),
+  Curtin University [fnd, cph] (ROR: <https://ror.org/02n415q13>)
+Maintainer: Adam H. Sparks <adamhsparks@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-26 04:20:02 UTC

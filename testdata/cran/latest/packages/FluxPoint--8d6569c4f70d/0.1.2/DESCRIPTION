@@ -1,0 +1,36 @@
+Package: FluxPoint
+Type: Package
+Title: Change Point Detection for Non-Stationary and Cross-Correlated
+        Time Series
+Version: 0.1.2
+Authors@R: c(
+    person("Yuhan", "Tian",
+           email = "yuhan.tian@fau.de",
+           role = c("aut", "cre")),
+    person("Abolfazl", "Safikhani",
+           email = "asafikha@gmu.edu",
+           role = "aut")
+           )
+Maintainer: Yuhan Tian <yuhan.tian@fau.de>
+Description: Implements methods for multiple change point detection in multivariate
+    time series with non-stationary dynamics and cross-correlations. The methodology
+    is based on a model in which each component has a fluctuating mean represented by
+    a random walk with occasional abrupt shifts, combined with a stationary vector
+    autoregressive structure to capture temporal and cross-sectional dependence. The
+    framework is broadly applicable to correlated multivariate sequences in which
+    large, sudden shifts occur in all or subsets of components and are the primary
+    targets of interest, whereas small, smooth fluctuations are not. Although random
+    walks are used as a modeling device, they provide a flexible approximation for a
+    wide class of slowly varying or locally smooth dynamics, enabling robust
+    performance beyond the strict random walk setting.
+License: GPL-2
+Encoding: UTF-8
+Imports: blockmatrix, corpcor, doParallel, ggplot2, glmnet, MASS,
+        Matrix, nnls, pracma, SimDesign
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-10 11:58:37 UTC; AAA
+Author: Yuhan Tian [aut, cre],
+  Abolfazl Safikhani [aut]
+Repository: CRAN
+Date/Publication: 2026-01-10 14:40:20 UTC

@@ -1,0 +1,54 @@
+Package: CopernicusDataspace
+Title: Search Download and Handle Data from the Copernicus Data Space
+        Ecosystem
+Version: 0.0.5
+Authors@R: 
+    c(
+      person("Pepijn", "de Vries", role = c("aut", "cre"),
+             email = "pepijn.devries@outlook.com",
+             comment = c(ORCID = "0000-0002-7961-6646")),
+      person("Alicia", "Hamer", role = c("rtm"),
+             email = "alicia.hamer@wur.nl",
+             comment = c(ORCID = "0000-0001-6809-622X")),
+      person("LVVN (Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur)", , , , role = "fnd",
+             comment = c(ROR = "03b1hdw57")),
+      person("WMR (Wageningen Marine Research)", , , , role = "ctr",
+             comment = c(ROR = "013dzwk66"))
+    )
+Description: 
+    The Copernicus Data Space Ecosystem, is an open
+    ecosystem that provides free instant access to a wide range
+    of data and services from the Copernicus Sentinel missions and
+    more on our planet’s land, oceans and atmosphere. This package
+    provides entry points to several APIs allowing users to access
+    the data directly in R.
+Depends: R (>= 4.1.0)
+Imports: dplyr, httr2, jsonlite, lubridate, memoise, methods,
+        paws.storage, rlang, sf, stringr, tibble, tidyr, xml2
+Suggests: clipr, jose, knitr, lwgeom, rmarkdown, rstudioapi, stars,
+        testthat (>= 3.0.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-GB
+Collate: 'CopernicusDataspace-package.R' 'helpers.R' 'account.R'
+        'init.R' 'geometry.R' 'tidyverse.R' 'login.R' 's3.R'
+        'req_perform.R' 'odata_products.R' 'odata_bursts.R'
+        'sentinelhub.R' 'stac.R'
+Config/testthat/edition: 3
+URL: https://github.com/pepijn-devries/CopernicusDataspace,
+        https://pepijn-devries.github.io/CopernicusDataspace/
+BugReports: https://github.com/pepijn-devries/CopernicusDataspace/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-28 09:30:33 UTC; vries171
+Author: Pepijn de Vries [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7961-6646>),
+  Alicia Hamer [rtm] (ORCID: <https://orcid.org/0000-0001-6809-622X>),
+  LVVN (Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur)
+    [fnd] (ROR: <https://ror.org/03b1hdw57>),
+  WMR (Wageningen Marine Research) [ctr] (ROR:
+    <https://ror.org/013dzwk66>)
+Maintainer: Pepijn de Vries <pepijn.devries@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 10:20:02 UTC

@@ -1,0 +1,27 @@
+Package: mergersim
+Title: Merger Simulation and Calibration
+Version: 0.2.0
+Authors@R: 
+    person("Matthew T", "Panhans",
+  email = "mpanhans@gmail.com",
+  role = c("aut", "cre"),
+  comment = c(ORCID = "0000-0001-7874-6740"))
+Description: Analyze mergers between firms. Models of competition include 
+    differentiated Bertrand price-setting, Nash bargaining, and second score 
+    auctions, as implemented in Panhans and Taragin (2023) 
+    <doi:10.1016/j.ijindorg.2023.102986>. Calibrates demand systems including 
+    standard logit, nested logit, and generalized nested logit as 
+    implemented in Panhans and Wiemer (2026) <doi:10.1093/joclec/nhaf037>.
+License: CC0
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: BB, numDeriv, rootSolve, stats
+Suggests: antitrust, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-21 13:43:41 UTC; mattpanhans
+Author: Matthew T Panhans [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7874-6740>)
+Maintainer: Matthew T Panhans <mpanhans@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 14:10:02 UTC

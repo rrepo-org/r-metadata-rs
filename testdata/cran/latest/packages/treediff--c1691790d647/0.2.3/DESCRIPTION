@@ -1,0 +1,42 @@
+Package: treediff
+Title: Testing Differences Between Families of Trees
+Version: 0.2.3
+Date: 2026-06-08
+Authors@R: 
+    c(person("Nathalie", "Vialaneix", , "nathalie.vialaneix@inrae.fr", 
+             role = c("aut", "cre"), 
+             comment = c(ORCID = "0000-0003-1156-0639")),
+      person("Gwendaelle", "Cardenas", , , role = "aut"),
+      person("Marie", "Chavent", , "marie.chavent@u-bordeaux.fr", role = "aut", comment = c(ORCID = "0000-0001-6774-597X")),
+      person("Sylvain", "Foissac", , "sylvain.foissac@inrae.fr", role = "aut", comment = c(ORCID = "0000-0002-2631-5356")),
+      person("Elise", "Maigne", , "elise.maigne@inrae.fr", role = "aut"),
+      person("Pierre", "Neuvial", , "pierre.neuvial@math.univ-toulouse.fr", 
+             role = "aut", comment = c(ORCID = "0000-0003-3584-9998")),
+      person("Nathanael", "Randriamihamison", , , role = "aut"))
+Description: Perform test to detect differences in structure between families of
+             trees. The method is based on cophenetic distances and aggregated
+             Student's tests.
+Depends: R (>= 4.0.0)
+Imports: adjclust, BiocGenerics, csaw, data.table, dplyr,
+        InteractionSet, limma, methods, stats, SummarizedExperiment,
+        reshape2, testthat, rlang, HiCParser, purrr
+License: GPL (>= 3)
+Encoding: UTF-8
+Suggests: knitr, rmarkdown
+URL: https://scales.pages-forge.inrae.fr/treediff,
+        https://forge.inrae.fr/scales/treediff
+BugReports: https://forge.inrae.fr/scales/treediff/-/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-08 17:15:10 UTC; nathalie
+Author: Nathalie Vialaneix [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1156-0639>),
+  Gwendaelle Cardenas [aut],
+  Marie Chavent [aut] (ORCID: <https://orcid.org/0000-0001-6774-597X>),
+  Sylvain Foissac [aut] (ORCID: <https://orcid.org/0000-0002-2631-5356>),
+  Elise Maigne [aut],
+  Pierre Neuvial [aut] (ORCID: <https://orcid.org/0000-0003-3584-9998>),
+  Nathanael Randriamihamison [aut]
+Maintainer: Nathalie Vialaneix <nathalie.vialaneix@inrae.fr>
+Repository: CRAN
+Date/Publication: 2026-06-08 17:40:02 UTC

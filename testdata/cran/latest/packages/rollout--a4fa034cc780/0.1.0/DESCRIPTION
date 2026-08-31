@@ -1,0 +1,33 @@
+Package: rollout
+Title: Tools for Designing, Simulating, and Analyzing Implementation
+        Rollout Trials
+Version: 0.1.0
+Authors@R: c(
+    person("Ian", "Cero",
+           email = "ian_cero@urmc.rochester.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2862-0450")),
+    person("C. Hendricks", "Brown",
+           email = "hendricks.brown@northwestern.edu",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-0294-2419")))
+Description: Provides a unified framework for designing, simulating, and analyzing implementation rollout trials, including stepped wedge, sequential rollout, head-to-head, multi-condition, and rollout implementation optimization designs. The package enables users to flexibly specify rollout schedules, incorporate site-level and nested data structures, generate outcomes under rich hierarchical models, and evaluate analytic strategies through simulation-based power analysis. By separating data generation from model fitting, the tools support assessment of bias, Type I error, and robustness to model misspecification. The workflow integrates with standard mixed-effects modeling approaches and the tidyverse ecosystem, offering transparent and reproducible tools for implementation scientists and applied statisticians.
+License: MIT + file LICENSE
+URL: https://github.com/iancero/rollout,
+        https://iancero.github.io/rollout/
+BugReports: https://github.com/iancero/rollout/issues
+Imports: broom.mixed, dplyr, glue, lifecycle, parallel, pbapply, purrr,
+        rlang, stats, tidyr
+Suggests: lme4, lmerTest, testthat (>= 3.0.0), tibble
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.5.0)
+NeedsCompilation: no
+Packaged: 2026-01-09 14:55:24 UTC; icero
+Author: Ian Cero [aut, cre] (ORCID: <https://orcid.org/0000-0002-2862-0450>),
+  C. Hendricks Brown [aut] (ORCID:
+    <https://orcid.org/0000-0002-0294-2419>)
+Maintainer: Ian Cero <ian_cero@urmc.rochester.edu>
+Repository: CRAN
+Date/Publication: 2026-01-13 18:20:02 UTC

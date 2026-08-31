@@ -1,0 +1,29 @@
+Package: dual
+Type: Package
+Title: Automatic Differentiation with Dual Numbers
+Version: 0.0.6
+Date: 2025-05-27
+Authors@R: c(person("Luca", "Sartore",
+                    role = "aut",
+                    email = "drwolf85@gmail.com",
+		    comment = "ORCID = \"0000-0002-0446-1328\""), 
+	     person("Luca", "Sartore",
+                    role = "cre",
+                    email = "drwolf85@gmail.com",
+		    comment = "ORCID = \"0000-0002-0446-1328\""))
+Maintainer: Luca Sartore <drwolf85@gmail.com>
+Description: Automatic differentiation is achieved by using dual numbers without
+  providing hand-coded gradient functions. The output value of a mathematical 
+  function is returned with the values of its exact first derivative 
+  (or gradient). For more details see Baydin, Pearlmutter, Radul, and Siskind
+  (2018) <https://jmlr.org/papers/volume18/17-468/17-468.pdf>.
+License: GPL-3
+Depends: R (>= 3.2.0), base, stats, methods
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Packaged: 2025-05-28 03:14:45 UTC; sartore
+Author: Luca Sartore [aut] (ORCID = "0000-0002-0446-1328"),
+  Luca Sartore [cre] (ORCID = "0000-0002-0446-1328")
+Repository: CRAN
+Date/Publication: 2025-05-28 04:00:02 UTC

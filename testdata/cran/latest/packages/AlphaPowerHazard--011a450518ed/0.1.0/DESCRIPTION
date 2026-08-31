@@ -1,0 +1,54 @@
+Package: AlphaPowerHazard
+Type: Package
+Title: Alpha-Power Hazard Regression Models for Survival Data
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut"))
+Description: Implements the alpha-power hazard model and regression
+    frameworks for survival data based on the flexible hazard rate function
+    h(x; alpha, beta) = alpha^x + x^(beta-1) (Pal et al., 2026
+    <doi:10.1007/s41096-026-00297-5>). Provides standard distribution
+    functions (d, p, q, r, h, H, s) and distributional properties including
+    raw/central moments, variance, skewness, kurtosis, quantile statistics
+    (Bowley's skewness, Moors's kurtosis), Lambert W hazard rate function
+    minimum (Corless et al., 1996), order statistics, and stochastic ordering
+    (Shaked & Shanthikumar, 1994). Computes five classical estimation
+    methods for baseline parameters: Maximum Likelihood Estimation (Casella &
+    Berger, 2002), Least Squares Estimation (Swain et al., 1988), Weighted
+    Least Squares Estimation (Styan, 1973), Maximum Product of Spacings
+    Estimation (Cheng & Amin, 1983 <doi:10.1111/j.2517-6161.1983.tb01241.x>),
+    and Cramer-von Mises Estimation (Macdonald, 1971). Supports four
+    hazard regression models (M1-M4) within proportional hazards and
+    parametric frameworks across uncensored data, right censoring, left
+    censoring, interval censoring, and progressive Type-I and Type-II
+    censoring schemes (Lee & Wang, 2003; Lawless, 2011; Balakrishnan &
+    Aggarwala, 2000). Includes comprehensive model diagnostics, Cox-Snell,
+    martingale, deviance, standardized, and studentized residuals, leverage,
+    Cook's distance, DFFITS, DFBETAS, model comparisons (AIC, BIC, WAIC),
+    k-fold cross-validation, prediction suites, random data generators, and
+    an eight-panel diagnostic visualization suite.
+License: GPL-3
+Depends: R (>= 4.0.0)
+Imports: survival, maxLik, numDeriv, MASS, stats, graphics, grDevices,
+        utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-20 11:50:02 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-29 16:50:09 UTC

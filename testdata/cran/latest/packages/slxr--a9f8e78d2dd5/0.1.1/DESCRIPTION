@@ -1,0 +1,36 @@
+Package: slxr
+Type: Package
+Title: Spatial-X (SLX) Models for Applied Researchers
+Version: 0.1.1
+Authors@R: c(
+    person("Cameron", "Wimpy", email = "cwimpy@astate.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2049-5229"))
+    )
+Description: Tools for estimating, interpreting, and visualizing Spatial-X
+    (SLX) regression models. Provides a formula-based interface with
+    first-class support for variable-specific weights matrices, higher-order
+    spatial lags, temporally-lagged spatial variables (TSLS), and tidy
+    effects decomposition (direct, indirect, total). Designed to lower the
+    barrier to SLX modeling for applied researchers who already work with
+    'sf' and 'lm'-style formulas. Methods follow Wimpy, Whitten, and
+    Williams (2021) <doi:10.1086/710089>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: spdep, sf, Matrix, tibble, stats, generics, rlang
+Suggests: ggplot2, modelsummary, broom, knitr, rmarkdown, testthat (>=
+        3.0.0), dplyr, tidyr, haven
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/cwimpy/slxr
+BugReports: https://github.com/cwimpy/slxr/issues
+NeedsCompilation: no
+Packaged: 2026-04-20 21:41:04 UTC; cwimpy
+Author: Cameron Wimpy [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2049-5229>)
+Maintainer: Cameron Wimpy <cwimpy@astate.edu>
+Repository: CRAN
+Date/Publication: 2026-04-22 13:10:02 UTC

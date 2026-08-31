@@ -1,0 +1,37 @@
+Package: maq
+Title: Multi-Armed Qini
+Version: 0.6.1
+Authors@R: c(
+    person("Erik", "Sverdrup", email = "erik.sverdrup@gmail.com", role = c("aut", "cre")),
+    person("Han", "Wu", role = "aut"),
+    person("Susan", "Athey", role = "aut"),
+    person("Stefan", "Wager", role = "aut")
+    )
+Description: Fits generalized Qini curves for evaluating treatment allocation
+    policies with one or more mutually exclusive treatment arms. Given
+    estimated conditional treatment effects and treatment costs, 'maq'
+    computes the optimal treatment allocation over a range of budget levels
+    and estimates the resulting policy value using doubly robust or
+    inverse-propensity weighted scores. The underlying optimization exploits
+    the linear multiple-choice knapsack structure of the allocation problem
+    to compute the full solution path efficiently.
+    For details see Sverdrup, Wu, Athey, and Wager (2025) <doi:10.1080/10618600.2024.2418820>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp
+Imports: Rcpp
+Depends: R (>= 3.5.0)
+Suggests: grf (>= 2.3.0), ggplot2, testthat (>= 3.0.0)
+SystemRequirements: GNU make
+URL: https://github.com/grf-labs/maq
+BugReports: https://github.com/grf-labs/maq/issues
+NeedsCompilation: yes
+Packaged: 2026-08-02 10:48:56 UTC; erikcs
+Author: Erik Sverdrup [aut, cre],
+  Han Wu [aut],
+  Susan Athey [aut],
+  Stefan Wager [aut]
+Maintainer: Erik Sverdrup <erik.sverdrup@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 13:10:17 UTC

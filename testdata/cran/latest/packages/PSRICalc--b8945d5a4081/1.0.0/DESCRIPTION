@@ -1,0 +1,29 @@
+Package: PSRICalc
+Type: Package
+Title: Plant Stress Response Index Calculator
+Version: 1.0.0
+Authors@R: c(
+    person('Richard', 'Feiss',
+           email = 'feiss026@umn.edu',
+           role = c('aut', 'cre')),
+    person('University of Minnesota',
+           role = 'cph'))
+Description: Calculate Plant Stress Response Index (PSRI) from time-series
+    germination data with optional radicle vigor integration. Built on the
+    methodological foundation of the Osmotic Stress Response Index (OSRI)
+    framework developed by Walne et al. (2020) <doi:10.1002/agg2.20087>.
+    Provides clean, direct PSRI calculations suitable for agricultural research
+    and statistical analysis. Note: This package implements methodology
+    currently under peer review. Please contact the author before publication
+    using this approach.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+NeedsCompilation: no
+Packaged: 2025-11-10 17:43:17 UTC; feiss026
+Author: Richard Feiss [aut, cre],
+  University of Minnesota [cph]
+Maintainer: Richard Feiss <feiss026@umn.edu>
+Repository: CRAN
+Date/Publication: 2025-11-13 19:00:18 UTC

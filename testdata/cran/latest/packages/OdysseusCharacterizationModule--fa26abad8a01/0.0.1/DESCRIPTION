@@ -1,0 +1,30 @@
+Package: OdysseusCharacterizationModule
+Title: Handy and Minimalistic Common Data Model Characterization
+Version: 0.0.1
+Authors@R: 
+    person("Alexander", "Alexeyuk", , "alexanderAlexeyuk@gmail.com", role = c("aut", "cre"))
+Description: Extracts covariates from Observational Medical
+    Outcomes Partnership (OMOP) Common Data Model (CDM) domains using an
+    R-only pipeline. Supports configurable temporal windows,
+    domain-specific covariates for drug exposure, drug era (including
+    Anatomical Therapeutic Chemical (ATC) groupings), condition
+    occurrence, condition era, concept sets and cohorts. Methods are
+    based on the Observational Health Data Sciences and Informatics
+    (OHDSI) framework described in Hripcsak et al. (2015)
+    <doi:10.1038/sdata.2015.35> and "The Book of OHDSI"
+    OHDSI (2019, ISBN:978-1-7923-0589-8).
+License: Apache License (>= 2)
+Depends: R (>= 4.1.0)
+Imports: checkmate, DatabaseConnector, jsonlite, SqlRender, stats
+Suggests: Andromeda, Eunomia, FeatureExtraction, knitr, rmarkdown,
+        testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-22 07:31:59 UTC; AlexanderAleksiayuk
+Author: Alexander Alexeyuk [aut, cre]
+Maintainer: Alexander Alexeyuk <alexanderAlexeyuk@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-22 13:20:29 UTC

@@ -1,0 +1,47 @@
+Package: DET
+Type: Package
+Title: Representation of DET Curve with Confidence Intervals
+Version: 3.0.3
+Authors@R: c(
+  person("García-Ródenas, Álvaro",
+         role = c("aut"),
+         email = "alvaro.garcia9@um.es"),
+  person("Franco, Manuel",
+         role = c("aut"),
+         email = "mfranco@um.es"),
+  person("Vivo, Juana-María",
+         role = c("aut"),
+         email = "jmvivomo@um.es"),
+  person("Fernández-Breis, Jesualdo T.",
+         role = c("aut"),
+         email = "jfernand@um.es"),
+  person("Font, Roberto",
+         role = c("aut"),
+         email = "roberto.font@biometricvox.com"),
+  person("Curran, James",
+          role = c("cre"),
+          email = "j.curran@auckland.ac.nz"))
+Description: 
+    Builds both ROC (Receiver Operating Characteristic) and DET (Detection Error Tradeoff) curves from a set of predictors that are the
+    results of a binary classification system. The curves give a general view of classifier performance
+    and are useful for comparing different systems.
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: pROC, doParallel, parallel, methods
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+URL: https://github.com/jmcurran/DET
+BugReports: https://github.com/jmcurran/DET/issues
+Packaged: 2026-06-15 02:55:07 UTC; jcur002
+Author: García-Ródenas, Álvaro [aut],
+  Franco, Manuel [aut],
+  Vivo, Juana-María [aut],
+  Fernández-Breis, Jesualdo T. [aut],
+  Font, Roberto [aut],
+  Curran, James [cre]
+Maintainer: "Curran, James" <j.curran@auckland.ac.nz>
+Repository: CRAN
+Date/Publication: 2026-06-15 05:10:18 UTC

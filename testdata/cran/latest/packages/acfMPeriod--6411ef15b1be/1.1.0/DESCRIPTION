@@ -1,0 +1,36 @@
+Package: acfMPeriod
+Type: Package
+Title: Robust Estimation of the ACF from the M-Periodogram
+Version: 1.1.0
+Maintainer: Higor Cotta <cotta.higor@gmail.com>
+Authors@R: c(
+    person(given = "Higor",
+           family = "Cotta",
+           role = c("aut", "cre"),
+           email = "cotta.higor@gmail.com"),
+    person(given = "Valderio",
+           family = "Reisen",
+           role = "aut"),
+    person(given = "Pascal",
+           family = "Bondon",
+           role = "aut"),
+    person(given = "C\u00e9line",
+           family = "L\u00e9vy-Leduc",
+           role = "aut")
+    )
+Depends: R (>= 3.2.2), MASS
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Description: Non-robust and robust computations of the sample autocovariance (ACOVF) and sample autocorrelation functions (ACF) of univariate and multivariate processes. The methodology consists in reversing the diagonalization procedure involving the periodogram or the cross-periodogram and the Fourier transform vectors, and, thus, obtaining the ACOVF or the ACF as discussed in Fuller (1995) <doi:10.1002/9780470316917>. The robust version is obtained by fitting robust M-regressors to obtain the M-periodogram or M-cross-periodogram as discussed in Reisen et al. (2017) <doi:10.1016/j.jspi.2017.02.008>.
+License: GPL (>= 2)
+Encoding: UTF-8
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-17 19:29:01 UTC; rogih
+Author: Higor Cotta [aut, cre],
+  Valderio Reisen [aut],
+  Pascal Bondon [aut],
+  Céline Lévy-Leduc [aut]
+Repository: CRAN
+Date/Publication: 2026-03-17 21:00:02 UTC

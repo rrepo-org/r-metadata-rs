@@ -1,0 +1,31 @@
+Package: KRLS
+Type: Package
+Title: Kernel-Based Regularized Least Squares
+Version: 1.7-1
+Date: 2026-07-05
+Authors@R: c(
+    person("Jens", "Hainmueller", email = "jhain@stanford.edu", role = c("aut", "cre")),
+    person("Chad", "Hazlett", role = "aut"))
+Description: Implements Kernel-based Regularized Least Squares (KRLS), a
+    machine learning method to fit multidimensional functions y = f(x) for
+    regression and classification problems without relying on linearity or
+    additivity assumptions. KRLS finds the best fitting function by
+    minimizing the squared loss of a Tikhonov regularization problem,
+    using Gaussian kernels as radial basis functions. For further details
+    see Hainmueller and Hazlett (2014, <doi:10.1093/pan/mpt019>).
+License: GPL (>= 2)
+Imports: grDevices, graphics, stats
+Suggests: lattice, testthat (>= 3.0.0), knitr, rmarkdown, ggplot2,
+        generics
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://web.stanford.edu/~jhain/, https://github.com/j-hai/KRLS
+BugReports: https://github.com/j-hai/KRLS/issues
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-07-05 17:15:34 UTC; jhainmueller
+Author: Jens Hainmueller [aut, cre],
+  Chad Hazlett [aut]
+Maintainer: Jens Hainmueller <jhain@stanford.edu>
+Repository: CRAN
+Date/Publication: 2026-07-06 08:20:02 UTC

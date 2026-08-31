@@ -1,0 +1,22 @@
+Package: propagate
+Type: Package
+LazyLoad: no
+LazyData: no
+Title: Propagation of Uncertainty
+Version: 1.2-0
+Date: 2026-06-27
+Authors@R: person(given = "Andrej-Nikolai",
+                    family = "Spiess",
+                    role = c("aut", "cre"),
+                    email = "draspiess@gmail.com")   
+Maintainer: Andrej-Nikolai Spiess <draspiess@gmail.com>
+Description: Propagation of uncertainty using higher-order Taylor expansion and Monte Carlo simulation. Calculations of propagated uncertainties are based on matrix calculus including covariance structure according to Arras 1998 <doi:10.3929/ethz-a-010113668> (first order), Wang & Iyer 2005 <doi:10.1088/0026-1394/42/5/011> (second order) and BIPM Supplement 1 (Monte Carlo) <doi:10.59161/JCGM101-2008>. 
+License: GPL (>= 2)
+Depends: R (>= 4.0.0)
+Imports: Rcpp, minpack.lm, copula, hdf5r, crayon
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-06-29 04:42:05 UTC; User
+Repository: CRAN
+Date/Publication: 2026-07-27 10:00:02 UTC
+Author: Andrej-Nikolai Spiess [aut, cre]

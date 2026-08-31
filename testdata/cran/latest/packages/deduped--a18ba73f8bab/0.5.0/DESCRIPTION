@@ -1,0 +1,23 @@
+Package: deduped
+Type: Package
+Title: Making "Deduplicated" Functions
+Version: 0.5.0
+Authors@R: 
+    person("Or", "Gadish", email = "orgadish@gmail.com", role = c("aut", "cre", "cph"))
+Description: Contains one main function deduped() which speeds up slow,
+    vectorized functions by only performing computations on the unique values
+    of the input and expanding the results at the end.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: collapse,
+Suggests: testthat (>= 3.0.0), withr, fs
+Config/testthat/edition: 3
+URL: https://github.com/orgadish/deduped
+BugReports: https://github.com/orgadish/deduped/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-15 03:51:50 UTC; Or.Gadish
+Author: Or Gadish [aut, cre, cph]
+Maintainer: Or Gadish <orgadish@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-15 05:40:02 UTC

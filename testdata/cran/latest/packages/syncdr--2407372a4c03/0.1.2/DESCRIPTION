@@ -1,0 +1,45 @@
+Package: syncdr
+Title: Facilitate File Handling, Directory Comparison & Synchronization
+Version: 0.1.2
+Authors@R: 
+    c(
+      person(
+        given = "R.Andres", 
+        family = "Castaneda", 
+        email = "acastanedaa@worldbank.org",
+        role = "aut"
+      ),
+      person(
+        given = "Rossana",
+        family = "Tatulli",
+        email = "rtatulli@worldbank.org",
+        role = c("aut", "cre")
+      ),
+      person(
+        given = "Global Poverty and Inequality Data Team",
+        family = "World Bank",
+        role = "cph"
+    )
+    )
+Description: Compare directories flexibly (by date, content, or both) and synchronize files efficiently, with asymmetric and symmetric modes, helper tools, and visualization support for file management.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Imports: collapse, data.table, digest, secretbase, cli, DT, fs, joyn
+        (>= 0.3.0), stats, knitr, utils, rstudioapi
+Suggests: fst, withr, rmarkdown, mockery, testthat (>= 3.0.0)
+Depends: R (>= 4.1.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://rossanatat.github.io/syncdr/,
+        https://github.com/RossanaTat/syncdr
+BugReports: https://github.com/RossanaTat/syncdr/issues
+NeedsCompilation: no
+Packaged: 2026-04-13 21:21:51 UTC; wb621604
+Author: R.Andres Castaneda [aut],
+  Rossana Tatulli [aut, cre],
+  Global Poverty and Inequality Data Team World Bank [cph]
+Maintainer: Rossana Tatulli <rtatulli@worldbank.org>
+Repository: CRAN
+Date/Publication: 2026-04-14 00:40:02 UTC

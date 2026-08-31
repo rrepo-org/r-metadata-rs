@@ -1,0 +1,37 @@
+Package: PGM2
+Type: Package
+Title: Recursive Construction of Nested Resolvable Designs and
+        Associated Uniform Designs over GF(p)
+Version: 2.0.1
+Date: 2026-08-27
+Authors@R: c(
+  person(given = "Mohamed", family = "Laib", role = c("aut", "cre"), email = "laib.med@gmail.com"),
+  person(given = "Abla", family = "Boudraa", role = "aut"),
+  person(given = "Zebida", family = "Gheribi-Aoulmi", role = "aut"))
+Description: Recursive construction of balanced incomplete block designs
+    (BIBDs), their successive generations, resolvable BIBDs (RBIBDs) and
+    associated uniform designs (UDs), derived from finite projective
+    geometries PG(m, p) over a Galois field GF(p) of any prime order p.
+    Implements and generalises the method of Boudraa, Gheribi-Aoulmi and
+    Laib (2013, International Journal of Research and Reviews in Applied
+    Sciences, 17(2), 167-176), which was previously available only for
+    p = 2, and the uniform design constructions of Fang et al. (2004)
+    <doi:10.1016/S0012-365X(03)00100-6>. Designs of every recursion stage
+    can be extracted, and all constructions are validated against the
+    parameters published in the original paper.
+License: GPL-3
+Encoding: UTF-8
+URL: https://mlaib.net, https://github.com/mlaib/PGM2
+BugReports: https://github.com/mlaib/PGM2/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-27 07:37:15 UTC; laib@private.list.lu
+Author: Mohamed Laib [aut, cre],
+  Abla Boudraa [aut],
+  Zebida Gheribi-Aoulmi [aut]
+Maintainer: Mohamed Laib <laib.med@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-27 08:10:15 UTC

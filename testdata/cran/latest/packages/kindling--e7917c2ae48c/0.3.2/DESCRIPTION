@@ -1,0 +1,45 @@
+Package: kindling
+Type: Package
+Title: Higher-Level Interface of 'torch' Package to Auto-Train Neural
+        Networks
+Version: 0.3.2
+Authors@R: c(
+    person("Joshua", "Marie", 
+           email = "joshua.marie.k@gmail.com", 
+           role = c("aut", "cre")),
+    person("Antoine", "Soetewey", 
+           email = "antoine.soetewey@uclouvain.be", 
+           role = "aut",
+           comment = c(ORCID = "0000-0001-8159-0804"))
+  )
+Description: Provides a higher-level interface to the 'torch' package for defining,
+    training, and fine-tuning neural networks through code generation.
+    The package supports several architectures, including feedforward
+    (multi-layer perceptron) and recurrent neural networks (RNN, LSTM,
+    GRU), while reducing boilerplate 'torch' code. Model training
+    methods also bridge to machine learning frameworks in R,
+    particularly the 'tidymodels' ecosystem, including 'parsnip' model
+    specifications, workflows, recipes, and tuning tools.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: purrr, torch, rlang, cli, glue, vctrs, parsnip (>= 1.0.0),
+        tibble, tidyr, dplyr, stats, NeuralNetTools, ggplot2, tune,
+        dials, hardhat, lifecycle, coro
+Suggests: testthat (>= 3.0.0), magrittr, box, vip, recipes, workflows,
+        rsample, yardstick, mlbench, modeldata, knitr, rmarkdown,
+        DiceDesign, lhs, sfd, covr, fansi
+Additional_repositories: https://cran.r-universe.dev
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+URL: https://kindling.joshuamarie.com,
+        https://github.com/joshuamarie/kindling
+BugReports: https://github.com/joshuamarie/kindling/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-10 00:23:54 UTC; DESKTOP
+Author: Joshua Marie [aut, cre],
+  Antoine Soetewey [aut] (ORCID: <https://orcid.org/0000-0001-8159-0804>)
+Maintainer: Joshua Marie <joshua.marie.k@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-10 05:50:13 UTC

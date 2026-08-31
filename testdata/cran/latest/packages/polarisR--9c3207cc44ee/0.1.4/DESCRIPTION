@@ -1,0 +1,40 @@
+Package: polarisR
+Title: Non-Linear Dimensionality Reduction Visualization Tool
+Version: 0.1.4
+Authors@R: c(
+    person("Divendra", "Yadav", , "divendrasinghyadaviit@gmail.com", role = c("aut", "cre")),
+    person("Ursula", "Laa", , "ursula.laa@boku.ac.at", role = "aut",
+           comment = c(ORCID = "0000-0002-0249-6439")),
+    person("Jayani P.", "Gamage", , "jayanilakshika76@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-6265-6481")),
+    person("Eun-Kyung", "Lee", , "lee.eunk@gmail.com", role = "aut")
+  )
+Description: A 'shiny' application for visualizing high-dimensional data
+    using non-linear dimensionality reduction (NLDR) techniques such as
+    t-SNE and UMAP. It provides an interactive platform to explore
+    high-dimensional datasets, diagnose the quality of the embeddings
+    using the 'quollr' package, and compare different NLDR methods.
+License: MIT + file LICENSE
+URL: https://github.com/Divendra2006/polarisR,
+        https://divendra2006.github.io/polarisR/
+BugReports: https://github.com/Divendra2006/polarisR/issues
+Depends: R (>= 4.1.0)
+Imports: bslib, crosstalk, detourr, dplyr, DT, FNN, future, ggplot2,
+        magrittr, plotly, quollr, Rtsne, scales, shiny, stats, tools,
+        tourr, umap, utils
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-23 13:59:41 UTC; yadav
+Author: Divendra Yadav [aut, cre],
+  Ursula Laa [aut] (ORCID: <https://orcid.org/0000-0002-0249-6439>),
+  Jayani P. Gamage [aut] (ORCID: <https://orcid.org/0000-0002-6265-6481>),
+  Eun-Kyung Lee [aut]
+Maintainer: Divendra Yadav <divendrasinghyadaviit@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-23 14:10:02 UTC

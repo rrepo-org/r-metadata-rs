@@ -1,0 +1,34 @@
+Package: robustDIF
+Type: Package
+Title: Differential Item Functioning Using Robust Scaling
+Version: 0.2.0
+Authors@R: 
+  c(
+    person(given = "Peter",
+           family = "Halpin",
+           role = c("aut", "cre"),
+           email = "peter.halpin@unc.edu"),
+    person(given = "Kyle",
+           family = "Nickodem",
+           role = "ctb"),
+    person(given = "James",
+           family = "Eagle",
+           role = "ctb")
+  )
+Description: Provides tools for testing differential item functioning (DIF) and differential test functioning (DTF) in two-group item response theory models. The package estimates robust scaling parameters via iteratively reweighted least squares with Tukey's bisquare loss, and supports Wald-type tests of item-level and test-level differences from robust scaling parameters. Inputs can be supplied directly from model parameter/covariance objects or extracted from fitted 'mirt' and 'lavaan' models. Methods are described in Halpin (2022) <doi:10.48550/arXiv.2207.04598>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R(>= 3.5.0), Matrix
+Imports: mirt, lavaan
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-16 13:50:06 UTC; peterhalpin
+Author: Peter Halpin [aut, cre],
+  Kyle Nickodem [ctb],
+  James Eagle [ctb]
+Maintainer: Peter Halpin <peter.halpin@unc.edu>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:42:07 UTC

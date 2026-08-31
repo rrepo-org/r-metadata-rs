@@ -1,0 +1,31 @@
+Package: BATSS
+Title: Bayesian Adaptive Trial Simulator Software (BATSS) for
+        Generalised Linear Models
+Version: 1.2.0
+Authors@R: c(
+  person("Dominique-Laurent", "Couturier", role = c("aut", "cre"), email = "dominique.couturier@mrc-bsu.cam.ac.uk", comment = c(ORCID = "0000-0001-5774-5036")),
+  person("Liz", "Ryan", role = "aut", comment = c(ORCID = "0000-0001-9367-4204")),
+  person("Rainer", "Puhr", role = "aut"),
+  person("Thomas", "Jaki", role = "aut", comment = c(ORCID = "0000-0002-1096-188X")),
+  person("Stephane", "Heritier", role = "aut", comment = c(ORCID = "0000-0002-3640-079X")))
+Description: Defines operating characteristics of Bayesian Adaptive Trials considering a generalised linear model response via Monte Carlo simulations of Bayesian GLM fitted via integrated Laplace approximations (INLA). 
+URL: https://batss-stable.github.io/BATSS/
+License: GPL-2
+Encoding: UTF-8
+Suggests: INLA
+Imports: parallel, methods, stats, grDevices, abind, plyr, rlang,
+        R.utils, cli, sm
+Additional_repositories: https://inla.r-inla-download.org/R/testing
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-28 16:19:14 UTC; research
+Author: Dominique-Laurent Couturier [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5774-5036>),
+  Liz Ryan [aut] (ORCID: <https://orcid.org/0000-0001-9367-4204>),
+  Rainer Puhr [aut],
+  Thomas Jaki [aut] (ORCID: <https://orcid.org/0000-0002-1096-188X>),
+  Stephane Heritier [aut] (ORCID:
+    <https://orcid.org/0000-0002-3640-079X>)
+Maintainer: Dominique-Laurent Couturier <dominique.couturier@mrc-bsu.cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-05-28 17:00:12 UTC

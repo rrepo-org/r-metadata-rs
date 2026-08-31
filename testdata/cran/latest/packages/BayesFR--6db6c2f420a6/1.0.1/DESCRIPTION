@@ -1,0 +1,24 @@
+Package: BayesFR
+Title: Fitting Functional Responses in 1- and 2-Prey Systems
+Version: 1.0.1
+Authors@R: 
+    person("Benjamin", "Rosenbaum", , "benjamin.rosenbaum@idiv.de", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-2815-0874"))
+Description: Easy application of Bayesian inference for functional responses via 'brms'. This package allows to fit various FR models for single- and multi-prey experiments by providing nonlinear prediction functions for 'brms'. It uses dynamical prediction models to correct for prey depletion. The 'brms' framework facilitates statistical modeling and enables users to conveniently incorporate covariates such as temperature gradients, experimental treatment variables, or random effects that account for grouping in experimental units. Default 'brms' functions make it easy to perform model checking, model comparison and hypothesis testing. Potential statistical issues with data from feeding trials, such as overdispersion, can be resolved by effortlessly switching between likelihood functions. This package, together with its tutorials, should provide students and researchers with a comprehensive and integrated statistical framework for easily testing their hypotheses on trophic interactions. References: Rosenbaum and Rall (2018) <doi:10.1111/2041-210X.13039>; Rosenbaum et al. (2024) <doi:10.1111/2041-210X.14372>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/benjamin-rosenbaum/BayesFR
+BugReports: https://github.com/benjamin-rosenbaum/BayesFR/issues
+LazyData: TRUE
+Imports: brms, ggplot2, tidyr
+Depends: R (>= 3.5)
+Config/roxygen2/version: 8.0.0
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-18 12:25:07 UTC; br86redu
+Author: Benjamin Rosenbaum [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2815-0874>)
+Maintainer: Benjamin Rosenbaum <benjamin.rosenbaum@idiv.de>
+Repository: CRAN
+Date/Publication: 2026-06-23 14:50:08 UTC

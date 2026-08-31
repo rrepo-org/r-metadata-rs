@@ -1,0 +1,27 @@
+Package: apisensr
+Title: Interface to 'episensr' for Sensitivity Analysis of
+        Epidemiological Results
+Version: 2.0.1
+Authors@R: 
+    person("Denis", "Haine", , "cheval@zaclys.net", role = c("aut", "cre"),
+	   comment = c(ORCID = "0000-0002-6691-7335"))
+Description: API for using 'episensr', Basic sensitivity analysis of the
+    observed relative risks adjusting for unmeasured confounding and
+    misclassification of the exposure/outcome, or both. See
+    <https://cran.r-project.org/package=episensr>.
+License: GPL-2
+URL: https://codeberg.org/dhaine/apisensr
+BugReports: https://codeberg.org/dhaine/apisensr/issues
+Depends: episensr (>= 2.1.0), ggplot2 (>= 4.0.0), R (>= 4.3.0)
+Imports: attempt, config, ggraph, glue, golem, htmltools, igraph,
+        rhandsontable, rmarkdown, shiny, shinyjs, shinymaterial
+Suggests: knitr, rlang, testthat, roxygen2
+VignetteBuilder: knitr
+Encoding: UTF-8
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-28 13:14:23 UTC; denis
+Author: Denis Haine [aut, cre] (ORCID: <https://orcid.org/0000-0002-6691-7335>)
+Maintainer: Denis Haine <cheval@zaclys.net>
+Repository: CRAN
+Date/Publication: 2026-08-28 15:40:24 UTC

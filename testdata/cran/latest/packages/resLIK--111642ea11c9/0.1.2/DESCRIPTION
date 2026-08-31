@@ -1,0 +1,21 @@
+Package: resLIK
+Type: Package
+Title: Representation-Level Control Surfaces for Reliability Sensing
+Version: 0.1.2
+Authors@R: person(given = "MD.",
+                  family = "Arshad",
+                  role = c("aut", "cre"),
+                  email = "arshad10867c@gmail.com")
+Description: Implements the Representation-Level Control Surfaces (RLCS) paradigm for ensuring the reliability of autonomous systems and AI models. It provides three deterministic sensors: Residual Likelihood (ResLik) for population-level anomaly detection, Temporal Consistency Sensor (TCS) for drift and shock detection, and Agreement Sensor for multi-modal redundancy checks. These sensors feed into a standardized control surface that issues 'PROCEED', 'DEFER', or 'ABSTAIN' signals based on strict safety invariants, allowing systems to detect and react to out-of-distribution states, sensor failures, and environmental shifts before they propagate to decision-making layers.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: utils
+Suggests: testthat, stats, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-03 14:10:32 UTC; sulky
+Author: MD. Arshad [aut, cre]
+Maintainer: MD. Arshad <arshad10867c@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-06 14:10:02 UTC

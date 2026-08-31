@@ -1,0 +1,34 @@
+Package: CFtime
+Title: Using CF-Compliant Calendars with Climate Projection Data
+Version: 1.7.3
+Authors@R: 
+    person("Patrick", "Van Laake", , "patrick@vanlaake.net", role = c("aut", "cre", "cph"))
+Description: Support for all calendars as specified in the Climate and Forecast 
+    (CF) Metadata Conventions for climate and forecasting data. The CF Metadata 
+    Conventions is widely used for distributing files with climate observations 
+    or projections, including the Coupled Model Intercomparison Project (CMIP) 
+    data used by climate change scientists and the Intergovernmental Panel on
+    Climate Change (IPCC). This package specifically allows the user to work 
+    with any of the CF-compliant calendars (many of which are not compliant with 
+    POSIXt). The CF time coordinate is formally defined in the CF Metadata 
+    Conventions document available at <https://cf-convention.github.io/Data/cf-conventions/cf-conventions-1.13/cf-conventions.html#time-coordinate>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: R6
+Suggests: rmarkdown, testthat (>= 3.0.0), stringr
+URL: https://r-cf.github.io/CFtime/, https://github.com/R-CF/CFtime
+BugReports: https://github.com/R-CF/CFtime/issues
+Config/testthat/edition: 3
+Collate: 'api.R' 'CFCalendar.R' 'CFCalendar360.R' 'CFCalendar365.R'
+        'CFCalendar366.R' 'CFCalendarJulian.R' 'CFCalendarNone.R'
+        'CFCalendarProleptic.R' 'CFCalendarStandard.R'
+        'CFCalendarTAI.R' 'CFCalendarUTC.R' 'CFClimatology.R'
+        'CFtime-package.R' 'CFtime.R' 'helpers.R' 'zzz.R'
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2026-04-01 19:32:17 UTC; patrickvanlaake
+Author: Patrick Van Laake [aut, cre, cph]
+Maintainer: Patrick Van Laake <patrick@vanlaake.net>
+Repository: CRAN
+Date/Publication: 2026-04-02 09:10:02 UTC

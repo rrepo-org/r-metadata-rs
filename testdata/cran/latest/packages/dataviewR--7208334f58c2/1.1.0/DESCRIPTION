@@ -1,0 +1,31 @@
+Package: dataviewR
+Title: An Interactive and Feature-Rich Data Viewer
+Version: 1.1.0
+Depends: R (>= 4.2.0)
+Authors@R: 
+    c(person("Madhan", "Kumar N", , "madhanmanoj1999@gmail.com", role = c("aut", "cre")),
+      person("Siddhesh", "Pujari", , "siddheshpujari25@gmail.com", role = "aut"),
+      person("Gomathi", "S", , "gomathisudhakar1998@gmail.com", role = "aut"),
+      person("Mackenzie", "Haight", , "mackenzie.haight@gmail.com", role = "aut"))
+Description: Provides an interactive viewer for 'data.frame', 'tibble' and 'data.table' objects using 'shiny' <https://shiny.posit.co/> and 'DT' <https://rstudio.github.io/DT/>. It supports complex filtering, column selection, and automatic generation of reproducible 'dplyr' <https://dplyr.tidyverse.org/> code for data manipulation. The package is designed for ease of use in data exploration and reporting workflows.
+URL: https://github.com/madhankumarnagaraji/dataviewR,
+        https://madhankumarnagaraji.github.io/dataviewR/
+BugReports: https://github.com/madhankumarnagaraji/dataviewR/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: shiny (>= 1.11.1), shinyjs, DT, dplyr, labelled, forcats,
+        stringr, purrr, tibble, datamods, htmlwidgets, callr,
+        rstudioapi, writexl
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), shinytest2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-06 12:03:29 UTC; Dell
+Author: Madhan Kumar N [aut, cre],
+  Siddhesh Pujari [aut],
+  Gomathi S [aut],
+  Mackenzie Haight [aut]
+Maintainer: Madhan Kumar N <madhanmanoj1999@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-06 12:20:02 UTC

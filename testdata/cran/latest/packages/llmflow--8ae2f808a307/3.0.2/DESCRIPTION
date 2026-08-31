@@ -1,0 +1,24 @@
+Package: llmflow
+Type: Package
+Title: Reasoning and Acting Workflow for Automated Data Analysis
+Version: 3.0.2
+Authors@R: person("Zaoqu", "Liu", 
+                  email = "liuzaoqu@163.com", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0002-0452-742X"))
+Description: Provides a framework for integrating Large Language Models (LLMs) with R programming through workflow automation. Built on the ReAct (Reasoning and Acting) architecture, enables bi-directional communication between LLMs and R environments. Features include automated code generation and execution, intelligent error handling with retry mechanisms, persistent session management, structured JSON output validation, and context-aware conversation management.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/Zaoqu-Liu/llmflow
+BugReports: https://github.com/Zaoqu-Liu/llmflow/issues
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: callr, cli, glue, jsonlite, jsonvalidate
+Suggests: ellmer, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-27 09:58:31 UTC; liuzaoqu
+Author: Zaoqu Liu [aut, cre] (ORCID: <https://orcid.org/0000-0002-0452-742X>)
+Maintainer: Zaoqu Liu <liuzaoqu@163.com>
+Repository: CRAN
+Date/Publication: 2026-01-31 18:50:12 UTC

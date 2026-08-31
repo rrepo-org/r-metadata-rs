@@ -1,0 +1,36 @@
+Package: valueprhr
+Type: Package
+Title: Value-Price Analysis with Bayesian and Panel Data Methods
+Version: 0.1.0
+Authors@R: person(
+    given = "Jose Mauricio",
+    family = "Gomez Julian",
+    email = "isadore.nabi@pm.me",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0009-0000-2412-3150"))
+Description: Provides tools for analyzing the relationship between direct
+    prices (based on labor values) and prices of production using Bayesian
+    generalized linear models, panel data methods, partial least squares
+    regression, canonical correlation analysis, and panel vector
+    autoregression. Includes functions for model comparison, out-of-sample
+    validation, and structural break detection. Here, methods use raw accounting data with explicit temporal structure, following Gomez Julian (2023) <doi:10.17605/OSF.IO/7J8KF>
+    and standard econometric techniques for panel data analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: stats, utils, Metrics
+Suggests: rstanarm, loo, plm, lme4, pls, vars, panelvar, strucchange,
+        lmtest, sandwich, dplyr, tidyr, tibble, testthat (>= 3.0.0),
+        knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/isadorenabi/valueprhr
+BugReports: https://github.com/isadorenabi/valueprhr/issues
+NeedsCompilation: no
+Packaged: 2025-12-02 21:29:21 UTC; ROG
+Author: Jose Mauricio Gomez Julian [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-2412-3150>)
+Maintainer: Jose Mauricio Gomez Julian <isadore.nabi@pm.me>
+Repository: CRAN
+Date/Publication: 2025-12-09 08:10:02 UTC

@@ -1,0 +1,25 @@
+Package: dpGMM
+Type: Package
+Title: Dynamic Programming Based Gaussian Mixture Modelling Tool for 1D
+        and 2D Data
+Version: 1.0.0
+Authors@R: c(
+    person("Michal", "Marczyk", email = "michal.marczyk@polsl.pl", role = c("aut","ctb")),
+    person("Kamila", "Szumala", email = "kamila.szumala@polsl.pl", role = c("aut","cre")),
+    person("Joanna", "Zyla",  email = "joanna.zyla@polsl.pl",role = c("aut","ctb")))
+Maintainer: Kamila Szumala <kamila.szumala@polsl.pl>
+Description: Gaussian mixture modeling of one- and two-dimensional data, provided in original or binned form, with an option to estimate the number of model components. The method uses Gaussian Mixture Models (GMM) with initial parameters determined by a dynamic programming algorithm, leading to stable and reproducible model fitting. For more details see Zyla, J., Szumala, K., Polanski, A., Polanska, J., & Marczyk, M. (2026) <doi:10.1016/j.jocs.2026.102811>.
+Depends: R (>= 3.5), ggplot2, RColorBrewer, stats, pracma
+Imports: grDevices, ggpubr, Matrix, reshape2, graphics, methods,
+        mvtnorm
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-02 13:50:23 UTC; kamil
+Author: Michal Marczyk [aut, ctb],
+  Kamila Szumala [aut, cre],
+  Joanna Zyla [aut, ctb]
+Repository: CRAN
+Date/Publication: 2026-03-02 14:40:02 UTC

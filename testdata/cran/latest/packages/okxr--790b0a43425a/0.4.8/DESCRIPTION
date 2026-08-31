@@ -1,0 +1,34 @@
+Package: okxr
+Title: R Interface to the 'OKX' REST API
+Version: 0.4.8
+Authors@R: c(
+    person('Oliver', 'Zhou', email = 'oliver.yxzhou@gmail.com', role = c('aut', 'cre')),
+    person('Lily', 'Li', email = 'lilyli.qc.hk@gmail.com', role = 'aut')
+    )
+Author: Oliver Zhou [aut, cre],
+  Lily Li [aut]
+Maintainer: Oliver Zhou <oliver.yxzhou@gmail.com>
+Description: Provides lightweight R wrappers for the 'OKX' REST API, covering 
+    endpoints for market data, trading, account management, asset balances, 
+    and copy trading. The upstream API reference is available at
+    <https://www.okx.com/docs-v5/en/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Imports: rlang, httr, jsonlite, digest, base64enc, data.table
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Collate: okxr-package.R def_constants.R utils_request_helpers.R
+        utils_auth.R utils_parser.R utils_get_generator.R
+        utils_post_generator.R utils_labels.R wrappers_get_market.R
+        wrappers_get_asset.R wrappers_get_account.R
+        wrappers_get_trade.R wrappers_get_copy_trade.R
+        wrappers_post_asset.R wrappers_post_configure.R
+        wrappers_post_trade.R
+URL: https://github.com/OliverLDS/okxr
+BugReports: https://github.com/OliverLDS/okxr/issues
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-01 13:38:39 UTC; oliver
+Repository: CRAN
+Date/Publication: 2026-08-01 13:50:02 UTC

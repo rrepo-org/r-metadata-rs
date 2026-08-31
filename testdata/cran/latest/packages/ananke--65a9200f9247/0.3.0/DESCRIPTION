@@ -1,0 +1,50 @@
+Package: ananke
+Title: Quantitative Chronology in Archaeology
+Version: 0.3.0
+Authors@R: c(
+    person("Nicolas", "Frerebeau", , "nicolas.frerebeau@u-bordeaux-montaigne.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5759-4944")),
+    person("Université Bordeaux Montaigne", role = "fnd",
+           comment = c(ROR = "03pbgwk21")),
+    person("CNRS", role = "fnd",
+           comment = c(ROR = "02feahw73"))
+  )
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Description: Simple radiocarbon calibration and chronological analysis.
+    This package allows the calibration of radiocarbon ages and modern
+    carbon fraction values using multiple calibration curves. It allows
+    the calculation of highest density region intervals and credible
+    intervals. The package also provides tools for visualising results and
+    estimating statistical summaries.
+License: GPL (>= 3)
+URL: https://codeberg.org/tesselle/ananke,
+        https://packages.tesselle.org/ananke/,
+        https://tesselle.r-universe.dev/ananke
+BugReports: https://codeberg.org/tesselle/ananke/issues
+Depends: aion (>= 1.7.0), R (>= 4.1)
+Imports: arkhe (>= 1.10.0), graphics, grDevices, methods, utils
+Suggests: folio, fontquiver, khroma, knitr, markdown, rsvg, svglite,
+        tinysnapshot (>= 0.2.0), tinytest
+Encoding: UTF-8
+LazyData: true
+X-schema.org-applicationCategory: Archaeological Science
+X-schema.org-isPartOf: https://www.tesselle.org
+X-schema.org-keywords: time-series, archaeology,
+        archaeological-science, chronology, radiocarbon-dates,
+        radiocarbon-calibration, r-package
+Collate: 'AllClasses.R' 'AllGenerics.R' 'ananke-internal.R'
+        'ananke-package.R' 'c14_calibrate.R' 'c14_combine.R'
+        'c14_count.R' 'c14_curve.R' 'c14_f14c.R' 'c14_sample.R'
+        'c14_spd.R' 'c14_uncalibrate.R' 'c14_validate.R' 'coerce.R'
+        'data.R' 'describe.R' 'interval.R' 'mutators.R' 'pb_age.R'
+        'plot.R' 'proxy.R' 'radialplot.R' 'statistics.R' 'subset.R'
+        'validate.R' 'zzz.R'
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-15 13:38:24 UTC; nfrerebeau
+Author: Nicolas Frerebeau [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5759-4944>),
+  Université Bordeaux Montaigne [fnd] (ROR: <https://ror.org/03pbgwk21>),
+  CNRS [fnd] (ROR: <https://ror.org/02feahw73>)
+Repository: CRAN
+Date/Publication: 2026-06-15 14:30:02 UTC

@@ -1,0 +1,21 @@
+Package: loclm
+Title: Local Linear Regression
+Version: 1.0.0
+Authors@R: 
+    person("Jonathan", "Rougier", , "j.c.rougier@bristol.ac.uk", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3072-7043"))
+Description: A bare-bones implementation of local linear regression, using high-level functions.  Can handle both numerical and non-numerical (factor) variables.  See Loader (1999) <doi:10.1007/b98858>, ch2, or Hastie et al (2009) <doi:10.1007/978-0-387-84858-7>, ch6. The package also contains a scale_df() function which only scales the numeric variables in a dataframe. 
+License: GPL (>= 3)
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: stats
+Depends: R (>= 4.1.0)
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-30 06:00:31 UTC; jonathan
+Author: Jonathan Rougier [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3072-7043>)
+Maintainer: Jonathan Rougier <j.c.rougier@bristol.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-08-07 16:30:02 UTC

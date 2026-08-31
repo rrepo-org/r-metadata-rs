@@ -1,0 +1,31 @@
+Package: causalWins
+Title: Compute the Causal Win Ratio Using Nearest Neighbor Matching
+Version: 0.1.0
+Authors@R: 
+  c(person(given = "Francisco",
+           family = "Andrade",
+           role = "aut",
+           ),
+    person(given = "Mathieu",
+           family = "Even",
+           role = c("aut", "cre"),
+           email = "mathieu.even@inria.fr",
+           ),
+    person(given = "Julie",
+           family = "Josse",
+           role = "aut"))
+Description: Based on “Rethinking the Win Ratio: A Causal Framework for Hierarchical Outcome Analysis” (M. Even and J. Josse, 2025), this package provides implementations of three approaches - nearest neighbor matching, distributional regression forests, and efficient influence functions - to estimate the causal win ratio, win proportion, and net benefit.
+Encoding: UTF-8
+License: AGPL (>= 3)
+RoxygenNote: 7.3.3
+Imports: drf, FactoMineR, grf, MatchIt
+Suggests: knitr, rmarkdown, WINS, MASS
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-15 13:43:40 UTC; fdelimaa
+Author: Francisco Andrade [aut],
+  Mathieu Even [aut, cre],
+  Julie Josse [aut]
+Maintainer: Mathieu Even <mathieu.even@inria.fr>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:22:13 UTC

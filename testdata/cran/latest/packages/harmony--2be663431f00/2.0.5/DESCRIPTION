@@ -1,0 +1,58 @@
+Package: harmony
+Title: Fast, Sensitive, and Accurate Integration of Single Cell Data
+Version: 2.0.5
+Authors@R: c(
+    person("Nikolaos", "Patikas", email = "nik.patik@gmail.com",
+        role = c("aut", "ctb"), comment = c(ORCID = "0000-0002-3978-0134")),
+    person("Hongcheng", "Yao", email = "hongchengyaonk@gmail.com",
+        role = c("aut", "ctb"), comment = c(ORCID = "0000-0002-0743-4835")),
+    person("Ilya", "Korsunsky", email = "ilya.korsunsky@gmail.com",
+        role = c("cre", "aut"), comment = c(ORCID = "0000-0003-4848-3948")),
+    person("Martin", "Hemberg", email = "mhemberg@bwh.harvard.edu",
+        role = c("aut"), comment = c(ORCID = "0000-0001-8895-5239")),   
+    person("Nghia", "Millard", email = "nmillard@g.harvard.edu",
+        role = "aut", comment = c(ORCID = "0000-0002-0518-7674")),
+    person("Jean", "Fan", email = "jeanfan@fas.harvard.edu",
+        role = c("aut", "ctb"), comment = c(ORCID = "0000-0002-0212-5451")),
+    person("Kamil", "Slowikowski", email = "kslowikowski@gmail.com",
+        role = c("aut", "ctb"), comment = c(ORCID = "0000-0002-2843-6370")),
+    person("Miles", "Smith",
+        role = c("ctb")),
+    person("Soumya", "Raychaudhuri",
+        role = c("aut"), comment = c(ORCID = "0000-0002-1901-8265"))
+    )
+Description: Implementation of the Harmony algorithm for single cell integration, described in Patikas, Yao, et al. <doi:10.64898/2026.03.16.711825>. Package includes a standalone Harmony function and interfaces to external frameworks.
+URL: https://github.com/immunogenomics/harmony,
+        https://pati-ni.github.io/harmony/
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R(>= 4.2.0), Rcpp
+LazyData: true
+LazyDataCompression: gzip
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+Imports: dplyr, cowplot, ggplot2, Matrix, methods, tibble, rlang,
+        RhpcBLASctl, cli
+Suggests: SingleCellExperiment, Seurat (>= 4.1.1), testthat, knitr,
+        rmarkdown, ggthemes, ggrepel, patchwork, tidyverse, tidyr,
+        data.table
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-06-12 18:25:08 UTC; main
+Author: Nikolaos Patikas [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-3978-0134>),
+  Hongcheng Yao [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-0743-4835>),
+  Ilya Korsunsky [cre, aut] (ORCID:
+    <https://orcid.org/0000-0003-4848-3948>),
+  Martin Hemberg [aut] (ORCID: <https://orcid.org/0000-0001-8895-5239>),
+  Nghia Millard [aut] (ORCID: <https://orcid.org/0000-0002-0518-7674>),
+  Jean Fan [aut, ctb] (ORCID: <https://orcid.org/0000-0002-0212-5451>),
+  Kamil Slowikowski [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-2843-6370>),
+  Miles Smith [ctb],
+  Soumya Raychaudhuri [aut] (ORCID:
+    <https://orcid.org/0000-0002-1901-8265>)
+Maintainer: Ilya Korsunsky <ilya.korsunsky@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-12 23:20:07 UTC

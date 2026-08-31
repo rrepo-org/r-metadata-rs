@@ -1,0 +1,24 @@
+Package: countprop
+Type: Package
+Title: Calculate Model-Based Metrics of Proportionality on Count-Based
+        Compositional Data
+Version: 1.1.1
+Authors@R: c(
+  person("Kevin", "McGregor", email="kevin.mcgregor@umanitoba.ca", role = c("aut", "cre", "cph")),
+  person("Nneka", "Okaeme", email="nokaeme@uwaterloo.ca", role = c("aut")))
+Maintainer: Kevin McGregor <kevin.mcgregor@umanitoba.ca>
+Description: Calculates metrics of proportionality using the logit-normal multinomial model.  It can also provide empirical and plugin estimates of these metrics.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: glasso, compositions, parallel, zCompositions
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-10 20:54:33 UTC; kevin
+Author: Kevin McGregor [aut, cre, cph],
+  Nneka Okaeme [aut]
+Repository: CRAN
+Date/Publication: 2025-12-11 10:10:43 UTC

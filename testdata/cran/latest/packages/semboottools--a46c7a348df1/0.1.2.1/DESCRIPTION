@@ -1,0 +1,39 @@
+Package: semboottools
+Title: Bootstrapping Helpers for Structural Equation Modelling
+Version: 0.1.2.1
+Authors@R: 
+    c(person(given = "Wendie",
+             family ="Yang",
+             role = c("aut", "cre"),
+             email = "1581075494q@gmail.com",
+             comment = c(ORCID = "0009-0000-8388-6481")),
+      person(given = "Shu Fai",
+             family = "Cheung",
+             role = c("aut"),
+             email = "shufai.cheung@gmail.com",
+             comment = c(ORCID = "0000-0002-9871-9448")))
+Description: A collection of helper functions for forming
+  bootstrapping confidence intervals and examining bootstrap
+  estimates in structural equation modelling,
+  introduced in Yang and Cheung (2026) <doi: 10.3758/s13428-025-02911-z>
+  The function currently
+  support models fitted by the 'lavaan' package by
+  Rosseel (2012) <doi:10.18637/jss.v048.i02>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+VignetteBuilder: knitr
+Imports: boot, lavaan, psych, lavaan.printer, ggplot2, GGally, rlang,
+        patchwork
+URL: https://Yangzhen1999.github.io/semboottools/
+BugReports: https://github.com/Yangzhen1999/semboottools/issues
+NeedsCompilation: no
+Packaged: 2026-03-26 02:35:03 UTC; Administrator
+Author: Wendie Yang [aut, cre] (ORCID: <https://orcid.org/0009-0000-8388-6481>),
+  Shu Fai Cheung [aut] (ORCID: <https://orcid.org/0000-0002-9871-9448>)
+Maintainer: Wendie Yang <1581075494q@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-26 13:20:08 UTC

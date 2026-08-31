@@ -1,0 +1,36 @@
+Package: RIFanalysis
+Title: Relative Importance Factor Analysis
+Version: 0.9.2
+Authors@R: c(
+    person("Humberto J.", "Llinás M.", email = "lhumberto@uninorte.edu.co", role = c("aut", "cre")),
+    person("Humberto J.", "Llinás S.", email = "hllinas@uninorte.edu.co", role = "aut"),
+    person("Javier A.", "De la Hoz M.", email = "jdelahoz@unimagdalena.edu.co", role = "aut"),
+    person("Brian J.", "Llinás M.", email = "bllin001@odu.edu", role = "aut"),
+    person("José J.", "Padilla", email = "jpadilla@odu.edu", role = "aut")
+    )
+Description: Tools for estimating, comparing, and visualizing Relative
+    Importance Factor (RIF) indices based on rank-frequency distributions
+    and discrete power-law models. The package provides reproducible
+    workflows for data preparation, model fitting, goodness-of-fit
+    assessment, bootstrap inference, and publication-ready outputs.
+    The implemented methodology is described in Llinas et al. (2026)
+    <doi:10.3390/math14060966>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Depends: R (>= 4.1.0)
+Imports: checkmate, dplyr, ggplot2, ggraph, cowplot, igraph, openxlsx,
+        poweRlaw (>= 0.70.0), rlang, ggrepel, stringr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-17 19:17:53 UTC; zirox
+Author: Humberto J. Llinás M. [aut, cre],
+  Humberto J. Llinás S. [aut],
+  Javier A. De la Hoz M. [aut],
+  Brian J. Llinás M. [aut],
+  José J. Padilla [aut]
+Maintainer: Humberto J. Llinás M. <lhumberto@uninorte.edu.co>
+Repository: CRAN
+Date/Publication: 2026-08-20 08:12:11 UTC

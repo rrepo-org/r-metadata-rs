@@ -1,0 +1,33 @@
+Package: meow
+Title: Unified Framework for Computer Adaptive Testing Simulations
+Version: 1.0.0
+Authors@R: c(
+    person("Klint", "Kanopka", , "klint.kanopka@nyu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3196-9538")),
+    person("Sophia", "Deng", role = "aut")
+  )
+Description: Provides an extensible framework for conducting simulations to
+    compare data generating processes, item selection algorithms, parameter
+    update algorithms, and stopping rules in computer adaptive testing (CAT)
+    applications. Bundled algorithms include the Elo-based update rules of
+    Klinkenberg, Straatemeier and van der Maas (2011)
+    <doi:10.1016/j.compedu.2011.02.003> and Vermeiren, Kruis, Bolsinova, van der
+    Maas and Hofman (2025) <doi:10.1016/j.caeai.2025.100376>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: Rfast, stats
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://klintkanopka.com/meow/
+BugReports: https://github.com/klintkanopka/meow/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-06-30 16:40:20 UTC; klintkanopka
+Author: Klint Kanopka [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3196-9538>),
+  Sophia Deng [aut]
+Maintainer: Klint Kanopka <klint.kanopka@nyu.edu>
+Repository: CRAN
+Date/Publication: 2026-07-06 13:30:08 UTC

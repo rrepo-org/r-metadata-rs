@@ -1,0 +1,32 @@
+Package: GRANDpriv
+Type: Package
+Title: Graph Release with Assured Node Differential Privacy
+Version: 0.1.3
+Authors@R: c(person(given = "Suqing",
+                    family = "Liu", 
+                    email = "liusuqing0123@uchicago.edu", 
+                    role = c("aut", "cre")),
+             person(given = "Xuan",
+                    family = "Bi", 
+                    email = "xbi@umn.edu", 
+                    role = "aut"),
+             person(given = "Tianxi",
+                    family = "Li", 
+                    email = "tianxili@umn.edu", 
+                    role = "aut"))
+Description: Implements a novel method for privatizing network data using differential privacy. Provides functions for generating synthetic networks based on LSM (Latent Space Model), applying differential privacy to network latent positions to achieve overall network privatization, and evaluating the utility of privatized networks through various network statistics. The privatize and evaluate functions support both LSM and RDPG (Random Dot Product Graph). For generating RDPG networks, users are encouraged to use the 'randnet' package <https://CRAN.R-project.org/package=randnet>. For more details, see the "proposed method" section of Liu, Bi, and Li (2025) <doi:10.48550/arXiv.2507.00402>.
+License: GPL (>= 3)
+URL: https://github.com/lsq0000/GRANDpriv
+BugReports: https://github.com/lsq0000/GRANDpriv/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: EnvStats, rmutil, RSpectra, diffpriv, truncnorm, randnet,
+        igraph, HCD, transport
+NeedsCompilation: no
+Packaged: 2025-08-19 01:32:31 UTC; liusu
+Author: Suqing Liu [aut, cre],
+  Xuan Bi [aut],
+  Tianxi Li [aut]
+Maintainer: Suqing Liu <liusuqing0123@uchicago.edu>
+Repository: CRAN
+Date/Publication: 2025-08-22 17:50:07 UTC

@@ -1,0 +1,24 @@
+Package: TTE
+Type: Package
+Title: Design and Analysis Tools for Target Trial Emulation
+Version: 1.1.2
+Date: 2026-08-28
+Authors@R: 
+    c(person("Hisashi", "Noma", email = "noma@ism.ac.jp",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-2520-9949")))
+Maintainer: Hisashi Noma <noma@ism.ac.jp>
+Description: Design and analysis tools for target trial emulation using longitudinal observational data. Functions are provided for checking person-period data, expanding longitudinal data into sequentially nested trials, estimating inverse probability weights for intention-to-treat and per-protocol analyses, and assessing weight distributions and covariate balance. Additional functions fit weighted pooled discrete-time outcome models, obtain standardized risks and treatment contrasts, and estimate weighted Kaplan-Meier and Aalen-Johansen curves. Two worked examples based on fully synthetic data illustrate an active-comparator new-user study comparing sodium-glucose cotransporter 2 inhibitors with dipeptidyl peptidase-4 inhibitors and an analysis of sequentially nested trials comparing angiotensin receptor blocker and calcium channel blocker strategies.
+URL: https://github.com/nomahi/TTE/
+Depends: R (>= 4.1.0)
+Imports: graphics, nnet, sandwich, stats, utils
+Suggests: testthat (>= 3.0.0)
+License: GPL-3
+Encoding: UTF-8
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-28 09:47:02 UTC; nomah
+Author: Hisashi Noma [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2520-9949>)
+Repository: CRAN
+Date/Publication: 2026-08-28 10:00:21 UTC

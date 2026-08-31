@@ -1,0 +1,46 @@
+Package: bsamGP
+Type: Package
+Title: Bayesian Spectral Analysis Models using Gaussian Process Priors
+Version: 1.2.7
+Date: 2025-07-17
+Author: Seongil Jo [aut],
+  Taeryon Choi [aut],
+  Beomjo Park [aut, cre],
+  Peter J. Lenk [ctb]
+Authors@R: c(person(given = "Seongil",
+                    family = "Jo",
+                    role = "aut"),
+             person(given = "Taeryon",
+                    family = "Choi",
+                    role = "aut"),
+             person(given = "Beomjo",
+                    family = "Park",
+                    role = c("aut", "cre"),
+                    email = "beomjop@gmail.com"),
+             person(given = c("Peter", "J."),
+                    family = "Lenk",
+                    role = "ctb"))
+Maintainer: Beomjo Park <beomjop@gmail.com>
+Imports: MASS, ggplot2, gridExtra
+Description: Contains functions to perform Bayesian inference
+    using a spectral analysis of Gaussian process priors.
+    Gaussian processes are represented with a Fourier series 
+    based on cosine basis functions. Currently the package
+    includes parametric linear models, partial linear additive
+    models with/without shape restrictions, generalized linear
+    additive models with/without shape restrictions, and  
+    density estimation model. To maximize computational 
+    efficiency, the actual Markov chain Monte Carlo sampling 
+    for each model is done using codes written in FORTRAN 90.
+    This software has been developed using funding supported by
+    Basic Science Research Program through the National Research
+    Foundation of Korea (NRF) funded by the Ministry of Education
+    (no. NRF-2016R1D1A1B03932178 and no. NRF-2017R1D1A3B03035235).
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2025-07-18 06:12:45 UTC; beomjo
+Repository: CRAN
+Date/Publication: 2025-07-18 08:40:12 UTC

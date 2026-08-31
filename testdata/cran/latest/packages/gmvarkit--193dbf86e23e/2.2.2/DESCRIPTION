@@ -1,0 +1,35 @@
+Package: gmvarkit
+Title: Estimate Gaussian and Student's t Mixture Vector Autoregressive
+        Models
+Version: 2.2.2
+Authors@R: person("Savi", "Virolainen",
+                  email = "savi.virolainen@gmail.com",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "https://orcid.org/0000-0002-5075-6821"))
+Author: Savi Virolainen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5075-6821>)
+Maintainer: Savi Virolainen <savi.virolainen@gmail.com>
+Description: Unconstrained and constrained maximum likelihood estimation of structural and reduced form 
+    Gaussian mixture vector autoregressive, Student's t mixture vector autoregressive, and Gaussian and Student's t
+    mixture vector autoregressive models, quantile residual tests, graphical diagnostics,
+    simulations, forecasting, and estimation of generalized impulse response function and generalized 
+    forecast error variance decomposition.
+    Leena Kalliovirta, Mika Meitz, Pentti Saikkonen (2016) <doi:10.1016/j.jeconom.2016.02.012>,
+    Savi Virolainen (2025) <doi:10.1080/07350015.2024.2322090>,
+    Savi Virolainen (in press) <doi:10.1016/j.ecosta.2025.09.003>.
+Depends: R (>= 3.6.0)
+BugReports: https://github.com/saviviro/gmvarkit/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: Brobdingnag (>= 1.2-4), mvnfast (>= 0.2.5), parallel (>=
+        3.0.0), stats (>= 3.0.0), pbapply (>= 1.4-2), graphics (>=
+        3.0.0), grDevices (>= 3.0.0), gsl (>= 2.1-6), methods (>=
+        3.0.0)
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-04 18:30:59 UTC; savi
+Repository: CRAN
+Date/Publication: 2026-08-04 22:50:20 UTC
+Config/roxygen2/version: 8.0.0

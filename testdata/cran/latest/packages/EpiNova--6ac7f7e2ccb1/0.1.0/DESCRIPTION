@@ -1,0 +1,45 @@
+Package: EpiNova
+Title: Flexible Extended State-Space Epidemiological Models with Modern
+        Inference
+Version: 0.1.0
+Authors@R: 
+    person("Subir", "Hait",
+           email = "haitsubi@msu.edu",
+           role  = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-9871-9677"))
+Description: 
+    An extended epidemiological modelling framework that goes beyond the
+    classical SIR (Susceptible-Infectious-Recovered) model. Supports
+    SEIR (Susceptible-Exposed-Infectious-Recovered),
+    SEIRD (Susceptible-Exposed-Infectious-Recovered-Deceased),
+    SVEIRD (Susceptible-Vaccinated-Exposed-Infectious-Recovered-Deceased),
+    and age-stratified compartmental models with flexible intervention
+    functions (spline-based, Gaussian process, or user-defined). Inference
+    is available via maximum likelihood or sequential Monte Carlo (SMC,
+    also known as particle filtering) with no external binary dependencies.
+    Includes a dependency-free real-time effective reproduction number (Rt)
+    estimator, spatial multi-patch models with gravity-model mobility,
+    ensemble forecasting via Bayesian model averaging (BMA), and proper
+    scoring rules including CRPS (Continuous Ranked Probability Score),
+    coverage, and MAE (Mean Absolute Error) for forecast evaluation.
+    Methods follow Anderson and May (1991, ISBN:9780198545996),
+    Doucet, de Freitas, and Gordon (2001) <doi:10.1007/978-1-4757-3437-9>,
+    Cori et al. (2013) <doi:10.1093/aje/kwt133>,
+    and Gneiting and Raftery (2007) <doi:10.1198/016214506000001437>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: deSolve, ggplot2, dplyr, tidyr, splines, scales
+Suggests: DEoptim, MASS, numDeriv, rstan, TMB, EpiEstim, knitr,
+        rmarkdown, testthat (>= 3.0.0), ggpubr, patchwork
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/causalfragility-lab/EpiNova
+BugReports: https://github.com/causalfragility-lab/EpiNova/issues
+NeedsCompilation: no
+Packaged: 2026-04-21 22:48:21 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-22 08:20:26 UTC

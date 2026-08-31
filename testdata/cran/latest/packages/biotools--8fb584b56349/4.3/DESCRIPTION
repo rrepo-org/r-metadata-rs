@@ -1,0 +1,36 @@
+Package: biotools
+Type: Package
+Title: Tools for Biometry and Applied Statistics in Agricultural
+        Science
+Version: 4.3
+Date: 2025-04-01
+LazyLoad: yes
+LazyData: yes
+Authors@R: c(person(given = c("Anderson", "Rodrigo"),
+             family = "da Silva",
+             role = c("aut", "cre"),
+             email = "anderson.agro@hotmail.com",
+             comment = c(ORCID = "0000-0003-2518-542X")))
+Author: Anderson Rodrigo da Silva [aut, cre]
+    (<https://orcid.org/0000-0003-2518-542X>)
+Maintainer: Anderson Rodrigo da Silva <anderson.agro@hotmail.com>
+Depends: MASS
+Imports: utils, stats, graphics, boot, grDevices, datasets
+Suggests: soilphysics, tkrplot, tcltk, rpanel, lattice, SpatialEpi,
+        knitr, rmarkdown, testthat (>= 3.0.0)
+Description: Tools designed to perform and evaluate cluster analysis (including Tocher's algorithm), 
+	discriminant analysis and path analysis (standard and under collinearity), as well as some 
+	useful miscellaneous tools for dealing with sample size and optimum plot size calculations. 
+	A test for seed sample heterogeneity is now available. Mantel's permutation test can be found in this package. 
+	A new approach for calculating its power is implemented. biotools also contains tests for genetic covariance components.
+	Heuristic approaches for performing non-parametric spatial predictions of generic response variables and 
+	spatial gene diversity are implemented.
+License: GPL (>= 2)
+VignetteBuilder: knitr
+URL: https://arsilva87.github.io/biotools/
+BugReports: https://github.com/arsilva87/biotools/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-04-02 13:31:41 UTC; LIVRE
+Repository: CRAN
+Date/Publication: 2025-04-02 14:00:02 UTC

@@ -1,0 +1,40 @@
+Package: appac
+Title: Atmospheric Pressure Peak Area Correction for Gas Chromatography
+        with Standard Detectors
+Version: 4.0.3
+Authors@R: 
+    person("Ruediger", "Forster", , "meticulous.measurements@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-4851-7430"))
+Description: Corrects gas-chromatography peak areas for the influence of ambient
+    air pressure on standard detectors open to the ambient atmosphere, such as
+    the flame ionization detector, whose pressure sensitivity was
+    characterised by Bocek, Novak and Janak (1969)
+    <doi:10.1016/S0021-9673(00)99223-9>. Unlike the pressure compensation of
+    Ayers and Clardy (1985) <https://patents.google.com/patent/US4512181A>, which
+    is combined with a calibration and valid only for a single calibration period
+    of a few days, per-cylinder peak areas are decomposed by principal components
+    into a pressure-correlated component and per-peak drift; a common
+    pressure-sensitivity coefficient (kappa) is estimated with a heavy-tail-robust
+    fit on a drift-reduced signal, and slow drift plus a daily factor are removed.
+    Returns the corrected areas together with a chi-square goodness-of-fit
+    diagnostic. Structural-break detection (package 'strucchange', Zeileis and
+    others (2002) <doi:10.18637/jss.v007.i02>) is provided for episode-level and
+    variance breakpoint analysis.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: methods, stats, utils, data.table, dplyr, tibble, purrr, kza,
+        robustbase, strucchange
+Suggests: ggplot2, patchwork, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-06 18:31:49 UTC; ruedi
+Author: Ruediger Forster [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-4851-7430>)
+Maintainer: Ruediger Forster <meticulous.measurements@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-15 18:00:02 UTC

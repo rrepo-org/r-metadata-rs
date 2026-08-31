@@ -1,0 +1,52 @@
+Package: trud
+Title: Query the 'NHS TRUD API'
+Version: 0.2.1
+Authors@R: c(
+    person(given = "Alasdair",
+           family = "Warwick",
+           role = c("aut", "cre", "cph"),
+           email = "alasdair.warwick.19@ucl.ac.uk",
+           comment = c(ORCID = "0000-0002-0800-2890")),
+    person("Robert", "Luben", role = "aut",
+           comment = c(ORCID = "0000-0002-5088-6343")),
+    person("Abraham", "Olvera-Barrios", role = "aut",
+           comment = c(ORCID = "0000-0002-3305-4465")),
+    person("Chuin Ying", "Ung", role = "aut",
+           comment = c(ORCID = "0000-0001-8487-4589")),
+    person(given = "Jon",
+           family = "Clayden",
+           role = c("rev"),
+           comment=c(ORCID="0000-0002-6608-0619")),
+    person(given = "Alexandros",
+           family = "Kouretsis",
+           role = c("rev"))
+    )
+Description: Provides a convenient R interface to the 'National Health Service 
+    NHS Technology Reference Update Distribution (TRUD) API', allowing users 
+    to list available releases for their subscribed items, retrieve metadata, 
+    and download release files. For more information on the API, see 
+    <https://isd.digital.nhs.uk/trud/users/guest/filters/0/api>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2.0)
+Imports: cli, dplyr, httr2, purrr, rlang, rvest, stringr, tibble
+URL: https://docs.ropensci.org/trud/, https://github.com/ropensci/trud
+BugReports: https://github.com/ropensci/trud/issues
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Language: en-US
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-16 21:09:05 UTC; alasdair
+Author: Alasdair Warwick [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0800-2890>),
+  Robert Luben [aut] (ORCID: <https://orcid.org/0000-0002-5088-6343>),
+  Abraham Olvera-Barrios [aut] (ORCID:
+    <https://orcid.org/0000-0002-3305-4465>),
+  Chuin Ying Ung [aut] (ORCID: <https://orcid.org/0000-0001-8487-4589>),
+  Jon Clayden [rev] (ORCID: <https://orcid.org/0000-0002-6608-0619>),
+  Alexandros Kouretsis [rev]
+Maintainer: Alasdair Warwick <alasdair.warwick.19@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-03-16 22:20:02 UTC

@@ -1,0 +1,75 @@
+Package: multiscape
+Type: Package
+Version: 1.0.7
+Title: Multi-Objective Spatial Planning
+Description: Provides a modular framework for exact multi-objective spatial
+    planning using mixed-integer programming. The package supports the
+    definition of planning problems through planning units, features,
+    management actions, action effects, spatial relations, targets,
+    constraints, and objective functions. It enables the optimisation of
+    spatial planning portfolios under considerations such as boundary
+    structure, connectivity, and fragmentation. Supported multi-objective
+    methods include weighted-sum aggregation, epsilon-constraint, and the
+    augmented epsilon-constraint method. Problems can be solved with several
+    commercial and open-source optimisation solvers. Optional solver backends 
+    include the 'gurobi' R package, which is distributed with the Gurobi Optimizer 
+    installation <https://docs.gurobi.com/projects/optimizer/en/13.0/reference/r/setup.html>, 
+    and the 'rcbc' R package, available from GitHub at 
+    <https://github.com/dirkschumacher/rcbc>. For background on multi-objective 
+    optimisation methods, see Halffmann et al.
+    (2022) <doi:10.1002/mcda.1780>; for the augmented epsilon-constraint method,
+    see Mavrotas (2009) <doi:10.1016/j.amc.2009.03.037>.
+Authors@R: c(
+    person('José', 'Salgado-Rojas',
+        email='jose.salgroj@gmail.com', 
+        role = c('aut','cre'),
+        comment = c(ORCID = "0000-0001-9817-2625")
+    ),
+    person('Matías', 'Moreno-Faguett',
+        email='matias.moreno.faguett@gmail.com', 
+        role = c('aut'),
+        comment = c(ORCID = "0009-0003-6561-234X")
+    ),
+    person('Núria', 'Aquilué',
+        email='nuria.aquilue@ctfc.cat', 
+        role = c('aut'),
+        comment = c(ORCID = "0000-0001-7911-3144")
+    ))
+Depends: R (>= 4.1.0)
+Imports: assertthat (>= 0.2.0), Matrix, proto, magrittr, dplyr, Rcpp,
+        cli, sf, methods, RANN, exactextractr, ggplot2, terra, ggrepel
+Suggests: roxygen2, prioritizr, Rsymphony (>= 0.1-31), Rcplex, slam,
+        rlang, testthat (>= 3.0.0), raster, tmap, sp, viridis,
+        markdown, data.table, purrr, readr, tibble, reshape2, rcbc,
+        gurobi
+LinkingTo: Rcpp, RcppArmadillo (>= 0.10.1.0.0), BH
+Encoding: UTF-8
+LazyData: true
+License: GPL (>= 3)
+Language: en-US
+RoxygenNote: 7.3.3
+URL: https://josesalgr.github.io/multiscape/
+BugReports: https://github.com/josesalgr/multiscape/issues
+Collate: 'RcppExports.R' 'internal.R' 'add_action_max_per_pu.R'
+        'add_actions.R' 'add_constraint_area.R'
+        'add_constraint_budget.R' 'add_constraint_locked_actions.R'
+        'add_constraint_locked_pu.R' 'add_constraint_targets.R'
+        'add_effects.R' 'add_objectives.R' 'add_profit.R'
+        'add_spatial_relations.R' 'build_model.R' 'compile_model.R'
+        'create_problem.R' 'data-sim.R' 'internalMO.R' 'get_solution.R'
+        'globals.R' 'load_sim.R' 'package.R' 'plot.R' 'print.R'
+        'problem-class.R' 'set_method_augmecon.R'
+        'set_method_epsilon_constraint.R' 'set_method_weighted_sum.R'
+        'set_solver.R' 'solutionset-class.R' 'solution-class.R'
+        'show.R' 'solve.R' 'utils-pipe.R' 'zzz.R'
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-04-29 18:14:57 UTC; Y6026159N
+Author: José Salgado-Rojas [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9817-2625>),
+  Matías Moreno-Faguett [aut] (ORCID:
+    <https://orcid.org/0009-0003-6561-234X>),
+  Núria Aquilué [aut] (ORCID: <https://orcid.org/0000-0001-7911-3144>)
+Maintainer: José Salgado-Rojas <jose.salgroj@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-30 08:30:19 UTC

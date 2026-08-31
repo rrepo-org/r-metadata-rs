@@ -1,0 +1,36 @@
+Package: logKDE
+Type: Package
+Title: Computing Log-Transformed Kernel Density Estimates for Positive
+        Data
+Version: 0.3.3
+Date: 2025-11-29
+Authors@R: c(person(given = c("Hien", "D."),
+                      family = "Nguyen",
+                      role = "aut"),
+               person(given = c("Andrew", "T."),
+                      family = "Jones",
+                      role = "aut"),
+               person(given = c("Geoffrey", "J."),
+                      family = "McLachlan",
+                      role = "aut"),
+               person(given = c("Andrew", "Thomas"),
+                      family = "Jones",
+                      role = "cre",
+                      email = "andrewthomasjones@gmail.com"))
+Description: Computes log-transformed kernel density estimates for positive data using a variety of kernels. It follows the methods described in Jones, Nguyen and McLachlan (2018) <doi:10.21105/joss.00870>.
+License: GPL-3
+Encoding: UTF-8
+LinkingTo: Rcpp
+Imports: Rcpp, pracma
+RoxygenNote: 7.3.3
+Suggests: R.rsp, testthat
+VignetteBuilder: R.rsp
+NeedsCompilation: yes
+Packaged: 2025-11-29 05:37:51 UTC; uqajon14
+Author: Hien D. Nguyen [aut],
+  Andrew T. Jones [aut],
+  Geoffrey J. McLachlan [aut],
+  Andrew Thomas Jones [cre]
+Maintainer: Andrew Thomas Jones <andrewthomasjones@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-29 05:50:02 UTC

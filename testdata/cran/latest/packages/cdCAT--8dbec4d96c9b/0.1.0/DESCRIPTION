@@ -1,0 +1,49 @@
+Package: cdCAT
+Type: Package
+Title: Computerized Adaptive Testing with Cognitive Diagnostic Models
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Thiago", "Miranda",
+      email = "thiagofm.pa@gmail.com",
+      role = c("aut", "cre")
+    ),
+    person(
+      "Bruno", "Silvestre",
+      email = "bruno.ap.silvestre@gmail.com",
+      role = "aut"
+    )
+  )
+Description: A session-based engine for cognitive diagnostic computerized
+    adaptive testing (CD-CAT), the application of adaptive testing to
+    cognitive diagnosis models. Three models are supported: the deterministic
+    inputs, noisy "and" gate (DINA), the deterministic inputs, noisy "or"
+    gate (DINO), and the generalized DINA (GDINA) model. Item selection
+    criteria include Kullback-Leibler (KL) information, posterior-weighted
+    Kullback-Leibler (PWKL), modified posterior-weighted Kullback-Leibler
+    (MPWKL), and Shannon entropy (SHE). Latent attribute profiles are
+    estimated by maximum likelihood estimation (MLE), maximum a posteriori
+    (MAP), or expected a posteriori (EAP). Content balancing, item exposure
+    control, and shadow testing are configurable through constraint
+    functions. The implemented methods follow Cheng (2009)
+    <doi:10.1007/s11336-009-9123-2> and de la Torre (2011)
+    <doi:10.1007/s11336-011-9207-7>. Designed for real-time, item-by-item
+    adaptive applications.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: R6
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr, GDINA, usethis
+Config/testthat/edition: 3
+URL: https://github.com/thiagofmiranda/cdCAT
+BugReports: https://github.com/thiagofmiranda/cdCAT/issues
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-07 23:03:36 UTC; thiag
+Author: Thiago Miranda [aut, cre],
+  Bruno Silvestre [aut]
+Maintainer: Thiago Miranda <thiagofm.pa@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-15 13:40:08 UTC

@@ -1,0 +1,64 @@
+Package: mlr3learners
+Title: Recommended Learners for 'mlr3'
+Version: 0.15.1
+Authors@R: c(
+    person("Michel", "Lang", , "michellang@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9754-0393")),
+    person("Quay", "Au", , "quayau@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-5252-8902")),
+    person("Stefan", "Coors", , "mail@stefancoors.de", role = "aut",
+           comment = c(ORCID = "0000-0002-7465-2146")),
+    person("Patrick", "Schratz", , "patrick.schratz@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-0748-6624")),
+    person("Marc", "Becker", , "marcbecker@posteo.de", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-8115-0400")),
+    person("John", "Zobolas", , "bblodfon@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-3609-8674")),
+    person("Alexander", "Winterstetter", , "alexanderwinterstetter@gmail.com", role = "ctb"),
+    person("Toby", "Hocking", , "toby.hocking@r-project.org", role = "ctb",
+           comment = c(ORCID = "0000-0002-3146-0865"))
+  )
+Description: Recommended Learners for 'mlr3'. Extends 'mlr3' with
+    interfaces to essential machine learning packages on CRAN.  This
+    includes, but is not limited to: (penalized) linear and logistic
+    regression, linear and quadratic discriminant analysis, k-nearest
+    neighbors, naive Bayes, support vector machines, and gradient
+    boosting.
+License: LGPL-3
+URL: https://mlr3learners.mlr-org.com,
+        https://github.com/mlr-org/mlr3learners
+BugReports: https://github.com/mlr-org/mlr3learners/issues
+Depends: mlr3 (>= 1.2.0), R (>= 3.4.0)
+Imports: checkmate, data.table, methods, mlr3misc (>= 0.9.4), paradox
+        (>= 1.0.0), R6
+Suggests: DiceKriging, e1071, future, glmnet, kknn, knitr, lgr, MASS,
+        mirai, nnet, pracma, ranger, rgenoud, rmarkdown, testthat (>=
+        3.0.0), xgboost (>= 3.2.0.1)
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: yes
+Collate: 'aaa.R' 'LearnerClassifCVGlmnet.R' 'LearnerClassifGlmnet.R'
+        'LearnerClassifKKNN.R' 'LearnerClassifLDA.R'
+        'LearnerClassifLogReg.R' 'LearnerClassifMultinom.R'
+        'LearnerClassifNaiveBayes.R' 'LearnerClassifNnet.R'
+        'LearnerClassifQDA.R' 'LearnerClassifRanger.R'
+        'LearnerClassifSVM.R' 'LearnerClassifXgboost.R'
+        'LearnerRegrCVGlmnet.R' 'LearnerRegrGlmnet.R'
+        'LearnerRegrKKNN.R' 'LearnerRegrKM.R' 'LearnerRegrLM.R'
+        'LearnerRegrNnet.R' 'LearnerRegrRanger.R' 'LearnerRegrSVM.R'
+        'LearnerRegrXgboost.R' 'bibentries.R' 'helpers.R'
+        'helpers_glmnet.R' 'helpers_ranger.R' 'helpers_xgboost.R'
+        'zzz.R'
+Config/roxygen2/version: 8.0.0.9000
+Packaged: 2026-07-25 09:40:46 UTC; marc
+Author: Michel Lang [aut] (ORCID: <https://orcid.org/0000-0001-9754-0393>),
+  Quay Au [aut] (ORCID: <https://orcid.org/0000-0002-5252-8902>),
+  Stefan Coors [aut] (ORCID: <https://orcid.org/0000-0002-7465-2146>),
+  Patrick Schratz [aut] (ORCID: <https://orcid.org/0000-0003-0748-6624>),
+  Marc Becker [cre, aut] (ORCID: <https://orcid.org/0000-0002-8115-0400>),
+  John Zobolas [aut] (ORCID: <https://orcid.org/0000-0002-3609-8674>),
+  Alexander Winterstetter [ctb],
+  Toby Hocking [ctb] (ORCID: <https://orcid.org/0000-0002-3146-0865>)
+Maintainer: Marc Becker <marcbecker@posteo.de>
+Repository: CRAN
+Date/Publication: 2026-07-25 11:40:02 UTC

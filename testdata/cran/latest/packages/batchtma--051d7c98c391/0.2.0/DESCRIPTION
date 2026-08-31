@@ -1,0 +1,39 @@
+Package: batchtma
+Title: Batch Effect Adjustments
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Konrad",
+           family = "Stopsack",
+           role = c("aut", "cre"),
+           email = "stopsack@post.harvard.edu",
+           comment = c(ORCID = "0000-0002-0722-1311")),
+    person(given = "Travis",
+           family = "Gerke",
+           role = c("aut"),
+           email = "gerket@mskcc.org",
+           comment = c(ORCID = "0000-0002-9500-8907")))
+Description: Different adjustment methods for batch effects in biomarker data,
+  such as from tissue microarrays. Some methods attempt to retain differences 
+  between batches that may be due to between-batch differences in "biological"
+  factors that influence biomarker values.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+biocViews:
+Depends: R (>= 4.1.0)
+Imports: broom (>= 0.7.0), dplyr (>= 1.0.4), geepack, ggplot2, limma,
+        nnet, purrr (>= 0.3.0), quantreg, rlang (>= 0.4.0), stringr,
+        tibble, tidyr (>= 1.1.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://stopsack.github.io/batchtma/,
+        https://github.com/stopsack/batchtma/
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-23 17:37:59 UTC; stopsack
+Author: Konrad Stopsack [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0722-1311>),
+  Travis Gerke [aut] (ORCID: <https://orcid.org/0000-0002-9500-8907>)
+Maintainer: Konrad Stopsack <stopsack@post.harvard.edu>
+Repository: CRAN
+Date/Publication: 2026-02-23 20:10:02 UTC

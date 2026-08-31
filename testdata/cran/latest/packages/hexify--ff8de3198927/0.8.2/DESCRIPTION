@@ -1,0 +1,42 @@
+Package: hexify
+Title: Equal-Area Hex Grids on the Snyder ISEA Icosahedron
+Version: 0.8.2
+Authors@R: c(
+    person("Gilles", "Colling", , "gilles.colling051@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-3070-6066")),
+    person("Uber Technologies, Inc.", role = c("ctb", "cph"),
+           comment = "H3 C library, src/h3 (Apache-2.0)")
+  )
+Description: Provides functions to build and use hexagonal discrete global grids
+    using the Icosahedral Snyder Equal Area ('ISEA') projection (Snyder 1992
+    <doi:10.3138/27H7-8K88-4882-1752>) and the 'H3' hierarchical hexagonal system
+    (Uber Technologies). Implements the 'ISEA' discrete global grid system
+    (Sahr, White and Kimerling 2003 <doi:10.1559/152304003100011090>).
+    Includes a fast C++ core for 'ISEA' projection and aperture quantization,
+    an included 'H3' v4.4.1 C library for native 'H3' grid operations, and
+    'sf'/'terra'-compatible R wrappers for grid generation and coordinate assignment.
+    Output is compatible with 'dggridR' for interoperability.
+License: MIT + file LICENSE
+SystemRequirements: C99
+Language: en-US
+Encoding: UTF-8
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, terra, raster,
+        ggplot2, RColorBrewer, rnaturalearth, tibble, gridExtra,
+        leaflet
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+Imports: sf, Rcpp, methods, rlang
+URL: https://gillescolling.com/hexify/
+BugReports: https://github.com/gcol33/hexify/issues
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-21 22:29:04 UTC; Gilles Colling
+Author: Gilles Colling [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3070-6066>),
+  Uber Technologies, Inc. [ctb, cph] (H3 C library, src/h3 (Apache-2.0))
+Maintainer: Gilles Colling <gilles.colling051@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-22 16:00:03 UTC

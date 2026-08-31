@@ -1,0 +1,41 @@
+Package: fjohansen
+Type: Package
+Title: Johansen Cointegration Test with Fourier-Type Smooth Nonlinear
+        Trends
+Version: 0.1.0
+Date: 2026-05-29
+Authors@R: c(
+    person(given = "Merwan",
+           family = "Roudane",
+           email  = "merwanroudane920@gmail.com",
+           role   = c("aut", "cre"),
+           comment = c(ORCID = "")))
+Maintainer: Merwan Roudane <merwanroudane920@gmail.com>
+Description: Implements the Johansen cointegration test with Fourier-type
+    smooth nonlinear deterministic trends restricted to cointegrating
+    relations, as developed by Kurita and Shintani (2025)
+    <doi:10.1080/07474938.2025.2530640>. Six model variants are
+    supported: CNR (constant plus nonlinear, restricted in the
+    cointegrating space), LNR (linear plus nonlinear, restricted),
+    CNU (constant restricted, nonlinear unrestricted), LNU (linear
+    restricted, nonlinear unrestricted), plus the standard constant-
+    and linear-trend restricted Johansen models. The package also
+    bundles the feasible generalised least squares (FGLS) Wald test of
+    Perron, Shintani and Yabu (2017) <doi:10.1111/obes.12169> used as
+    a frequency-selection pre-step, together with bundled critical-value
+    tables, a vectorised simulator for the limiting distribution,
+    publication-quality table exports (LaTeX and HTML) and 'ggplot2'
+    figures matching those of the paper.
+URL: https://github.com/merwanroudane/fjohansen
+BugReports: https://github.com/merwanroudane/fjohansen/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats, utils, grDevices, graphics, ggplot2 (>= 3.4.0), scales
+Suggests: testthat (>= 3.0.0), kableExtra, knitr, rmarkdown, patchwork
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-29 12:04:25 UTC; HP
+Author: Merwan Roudane [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-06-02 08:30:09 UTC

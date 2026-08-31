@@ -1,0 +1,37 @@
+Package: basepenguins
+Title: Convert Files that Use 'palmerpenguins' to Work with 'datasets'
+Version: 0.1.0
+Authors@R: c(
+    person("Ella", "Kaye", , "ella.kaye@gmail.com", 
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-7300-3718")),
+    person("Heather", "Turner", role = c("aut"),
+           comment = c(ORCID = "0000-0002-1256-3375")),
+    person("Achim", "Zeileis", role = c("ctb"),
+           comment = c(ORCID = "0000-0003-0918-3766")))
+Description: From 'R' 4.5.0, the 'datasets' package includes the penguins and 
+    penguins_raw data sets popularised in the 'palmerpenguins' package.
+    'basepenguins' takes files that use the 'palmerpenguins' package and 
+    converts them to work with the versions from 'datasets' ('R' >= 4.5.0). 
+    It does this by removing calls to library(palmerpenguins) and making the 
+    necessary changes to column names. Additionally, it provides helper 
+    functions to define new files paths for saving the output and a directory
+    of example files to experiment with.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2.9000
+URL: https://github.com/EllaKaye/basepenguins,
+        https://ellakaye.github.io/basepenguins/
+BugReports: https://github.com/EllaKaye/basepenguins/issues
+Depends: R (>= 4.2.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-04-05 16:36:14 UTC; u2175871
+Author: Ella Kaye [aut, cre, cph] (<https://orcid.org/0000-0002-7300-3718>),
+  Heather Turner [aut] (<https://orcid.org/0000-0002-1256-3375>),
+  Achim Zeileis [ctb] (<https://orcid.org/0000-0003-0918-3766>)
+Maintainer: Ella Kaye <ella.kaye@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-08 08:40:06 UTC

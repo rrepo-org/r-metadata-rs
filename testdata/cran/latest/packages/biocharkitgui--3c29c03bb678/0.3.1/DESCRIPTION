@@ -1,0 +1,36 @@
+Package: biocharkitgui
+Title: 'Shiny' GUI for the 'biocharkit' Biochar Analysis Toolkit
+Version: 0.3.1
+Authors@R: 
+    person("Sukamal", "Sarkar", email = "sukamal.sarkar@gm.rkmvu.ac.in",
+           role = c("aut", "cre"))
+Description: A point-and-click 'Shiny' interface to the 'biocharkit' package.
+    Lets a user upload Excel workbooks of biochar characterisation and batch
+    adsorption data, map spreadsheet columns to the required variables via
+    dropdown menus, and run sample-ID parsing, adsorption capacity and
+    removal efficiency calculations, isotherm fitting (Langmuir, Freundlich,
+    Temkin, Dubinin-Radushkevich, Sips), kinetics fitting (pseudo-first/
+    second-order, Elovich, intraparticle diffusion), van't Hoff
+    thermodynamics, batch fitting across many samples at once, FTIR
+    baseline correction, automatic peak picking and functional-group
+    analysis, XRD peak deconvolution and crystallinity index, BET surface
+    area, TGA analysis (DTG curve with auto-detected decomposition peaks,
+    moisture/volatile-matter/ash/fixed-carbon straight off a curve for a
+    single sample or in batch across many, and Kissinger non-isothermal
+    kinetics from multi-heating-rate data), proximate/ultimate analysis,
+    and correlation matrices, without writing any R code. Results and 600
+    dpi TIFF figures can be downloaded directly from the browser, along
+    with a combined analysis report.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 4.0)
+Imports: biocharkit (>= 0.3.0), shiny, readxl, DT, rmarkdown, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-05 14:34:05 UTC; root
+Author: Sukamal Sarkar [aut, cre]
+Maintainer: Sukamal Sarkar <sukamal.sarkar@gm.rkmvu.ac.in>
+Repository: CRAN
+Date/Publication: 2026-08-19 12:20:07 UTC

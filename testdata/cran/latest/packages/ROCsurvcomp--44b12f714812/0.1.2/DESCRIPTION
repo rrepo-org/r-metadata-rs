@@ -1,0 +1,25 @@
+Package: ROCsurvcomp
+Title: ROC-Based Methods for Comparing Survival Distributions with
+        Right, Left, and Doubly Censored Data
+Version: 0.1.2
+Date: 2026-05-05
+Authors@R: c(person("Mohammod Mahmudur", "Rahman", role = c("aut", "cre"),
+             email = "mahmudur.asif13@gmail.com"),
+             person("Leonidas", "Bantis", role = "aut",
+             email = "lbantis@kumc.edu"))
+Maintainer: Mohammod Mahmudur Rahman <mahmudur.asif13@gmail.com>
+Description: Implements nonparametric and semiparametric methods for comparing two survival distributions under non-proportional hazards (non-PH). The methods are based on the Receiver Operating Characteristic (ROC) curve length (Bantis et al. (2021) <doi:10.1002/sim.8869>) and the overlap coefficient (OVL) (Franco-Pereira et al. (2021) <doi:10.1177/09622802211046386>), as well as a joint ROC length-OVL-based approach. These methods do not require prior knowledge of the underlying non-PH pattern and can accommodate right, left, and doubly censored data.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: survival, interval, stats, utils, ggplot2
+Suggests: knitr, rmarkdown, PWEXP, testthat (>= 3.0.0)
+Depends: R (>= 3.5)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-05 20:42:34 UTC; mahmudur_asif
+Author: Mohammod Mahmudur Rahman [aut, cre],
+  Leonidas Bantis [aut]
+Repository: CRAN
+Date/Publication: 2026-05-11 18:50:31 UTC

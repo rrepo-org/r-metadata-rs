@@ -1,0 +1,32 @@
+Package: shadowVIMP
+Title: Covariate Selection Based on VIMP Permutation-Like Testing
+Version: 1.0.2
+Authors@R: c(
+    person("Tim", "Mueller", , "mueller@staburo.de", role = "aut"),
+    person("Oktawia", "Miluch", , "oktawia.miluch@staburo.de", role = c("aut", "cre")),
+    person("Staburo GmbH", role = c("cph", "fnd"))
+  )
+Description: A statistical method for reducing the number of covariates in
+    an analysis by evaluating Variable Importance Measures (VIMPs) derived
+    from the Random Forest algorithm. It performs statistical tests on the
+    VIMPs and outputs whether the covariate is significant along with the
+    p-values.
+License: Apache License (>= 2)
+Imports: dplyr, ggforce, ggplot2, ggpubr, magrittr, parallel,
+        patchwork, ranger, rlang, stats, stringr, tidyr
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.2
+URL: https://github.com/OktawiaStaburo/shadowVIMP
+BugReports: https://github.com/OktawiaStaburo/shadowVIMP/issues
+NeedsCompilation: no
+Packaged: 2025-06-18 11:58:37 UTC; oktawia.miluch
+Author: Tim Mueller [aut],
+  Oktawia Miluch [aut, cre],
+  Staburo GmbH [cph, fnd]
+Maintainer: Oktawia Miluch <oktawia.miluch@staburo.de>
+Repository: CRAN
+Date/Publication: 2025-06-19 15:00:02 UTC

@@ -1,0 +1,29 @@
+Package: pkgmd
+Title: Generate Markdown Reference Documentation for R Packages
+Version: 0.1
+Authors@R: c(
+    person("Peter", "Czerner", email = "peterretep@posteo.de", role = c("aut", "cre"))
+    )
+Description: Generates plain Markdown reference documentation for any R
+    package, installed or a local development source tree, optimized for
+    rendering in the 'GitHub'/'Gitea' browser UI and for use as LLM context
+    (e.g. 'Claude Code'). Reads Rd documentation via tools::Rd_db() (installed
+    packages) or directly from man/*.Rd (development packages, no
+    installation required) and renders one file per topic plus a
+    navigable index.
+License: MIT + file LICENSE
+URL: https://github.com/peterczerner/pkgmd
+BugReports: https://github.com/peterczerner/pkgmd/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: purrr (>= 1.0.0), glue (>= 1.6.0), cli (>= 3.0.0), fs (>=
+        1.6.0)
+Suggests: testthat (>= 3.0.0), dplyr, withr, roxygen2 (>= 7.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-29 19:41:54 UTC; peter
+Author: Peter Czerner [aut, cre]
+Maintainer: Peter Czerner <peterretep@posteo.de>
+Repository: CRAN
+Date/Publication: 2026-08-07 16:10:10 UTC

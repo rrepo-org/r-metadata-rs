@@ -1,0 +1,40 @@
+Package: shinymrp
+Title: Interface for Multilevel Regression and Poststratification
+Version: 0.10.0
+Authors@R: c(
+    person("Toan", "Tran", email = "trannttoan97@gmail.com", role = c("cre", "aut", "cph")),
+    person("Jonah", "Gabry", email = "jgabry@gmail.com", role = c("aut", "cph")),
+    person("Yajuan", "Si", email = "yajuan@umich.edu", role = c("aut", "cph"))
+  )
+Author: Toan Tran [cre, aut, cph],
+  Jonah Gabry [aut, cph],
+  Yajuan Si [aut, cph]
+Maintainer: Toan Tran <trannttoan97@gmail.com>
+Description: Dual interfaces, graphical and programmatic, designed for
+    intuitive applications of Multilevel Regression and Poststratification (MRP).
+    Users can apply the method to a variety of datasets, from electronic health records
+    to sample survey data, through an end-to-end Bayesian data analysis workflow.
+    The package provides robust tools for data cleaning, exploratory analysis,
+    flexible model building, and insightful result visualization. For more details, see
+    Si et al. (2020) <https://www150.statcan.gc.ca/n1/en/pub/12-001-x/2020002/article/00003-eng.pdf?st=iF1_Fbrh>
+    and Si (2025) <doi:10.1214/24-STS932>.
+License: MIT + file LICENSE
+URL: https://mrp-interface.github.io/shinymrp/
+BugReports: https://github.com/mrp-interface/shinymrp/issues
+Depends: R (>= 3.6.0)
+Imports: bsicons, bslib, checkmate, config (>= 0.3.2), dplyr, DT,
+        ggplot2, golem (>= 0.4.1), highcharter, htmlwidgets, httr2,
+        loo, lubridate, magrittr, Matrix, patchwork, posterior, purrr,
+        qs2, R6, RColorBrewer, readr, rlang, scales, shiny (>= 1.8.0),
+        shinyjs, shinyWidgets, stringr, tidyr, waiter
+Suggests: cmdstanr, knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+Additional_repositories: https://stan-dev.r-universe.dev/
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-04 15:32:42 UTC; tntoan
+Repository: CRAN
+Date/Publication: 2025-12-04 16:00:02 UTC

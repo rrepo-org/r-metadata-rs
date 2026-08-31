@@ -1,0 +1,46 @@
+Package: statdecideR
+Title: Automated Statistical Analysis and Plotting with CLD
+Version: 0.1.6
+Authors@R: 
+    c(
+      person(given = "Subhradip", family = "Bhattacharjee", role = c("aut", "cre"),
+             email = "subhradip25@gmail.com", comment = c(ORCID = "0000-0003-2330-2979")),
+      person("Bappa", "Das", email = "bappa.iari.1989@gmail.com", role = c("aut", "ctb"),
+             comment = c(ORCID = "0000-0003-1286-1492")),
+      person("Parveen", "Kumar", email = "pkumarcssri@gmail.com", role = c("aut", "ctb"),
+             comment = c(ORCID = "0000-0001-9352-8303")),
+      person("Rakesh", "Kumar", email = "drdudi_rk@rediffmail.com", role = c("aut", "ctb"),
+             comment = c(ORCID = "0000-0002-9711-0964")),
+      person("Amitava", "Panja", email = "amitavapanja3@gmail.com", role = c("aut", "ctb"),
+             comment = c(ORCID = "0000-0002-6226-2933")),
+      person("Pritam", "Roy", email = "proy60988@gmail.com", role = c("aut", "ctb")),
+      person("Divyacrotu", "Majumder", email = "divyacrotu@gmail.com", role = c("aut", "ctb")),
+      person("Susanta", "Dutta", email = "susantadutta19@gmail.com", role = c("aut", "ctb"),
+             comment = c(ORCID = "0000-0003-0885-9744")),
+      person("Indian Council of Agricultural Research", role = "cph")
+    )
+Description: A lightweight tool that provides a reproducible workflow for selecting and executing appropriate statistical analysis in one-way or two-way experimental designs. The package automatically checks for data normality, conducts parametric (ANOVA) or non-parametric (Kruskal-Wallis) tests, performs post-hoc comparisons with Compact Letter Displays (CLD), and generates publication-ready boxplots, faceted plots, and heatmaps. It is designed for researchers seeking fast, automated statistical summaries and visualization. Based on established statistical methods including Shapiro and Wilk (1965) <doi:10.2307/2333709>, Kruskal and Wallis (1952) <doi:10.1080/01621459.1952.10483441>, Tukey (1949) <doi:10.2307/3001913>, Fisher (1925) <ISBN:0050021702>, and Wickham (2016) <ISBN:978-3-319-24277-4>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1)
+Imports: ggplot2, dplyr, agricolae, effectsize, stringr, stats
+NeedsCompilation: no
+Packaged: 2025-04-29 10:20:44 UTC; Subhradip
+Author: Subhradip Bhattacharjee [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2330-2979>),
+  Bappa Das [aut, ctb] (ORCID: <https://orcid.org/0000-0003-1286-1492>),
+  Parveen Kumar [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0001-9352-8303>),
+  Rakesh Kumar [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-9711-0964>),
+  Amitava Panja [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-6226-2933>),
+  Pritam Roy [aut, ctb],
+  Divyacrotu Majumder [aut, ctb],
+  Susanta Dutta [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0003-0885-9744>),
+  Indian Council of Agricultural Research [cph]
+Maintainer: Subhradip Bhattacharjee <subhradip25@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-01 10:30:01 UTC

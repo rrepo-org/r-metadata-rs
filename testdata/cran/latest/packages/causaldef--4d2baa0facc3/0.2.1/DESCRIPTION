@@ -1,0 +1,39 @@
+Package: causaldef
+Type: Package
+Title: Decision-Theoretic Causal Diagnostics via Experiment Deficiency
+Version: 0.2.1
+Authors@R: 
+    person(given = "Deniz",
+           family = "Akdemir",
+           role = c("aut", "cre"),
+           email = "deniz.akdemir.work@gmail.com")
+Author: Deniz Akdemir [aut, cre]
+Maintainer: Deniz Akdemir <deniz.akdemir.work@gmail.com>
+Description: Implements a deficiency-theoretic framework for causal inference,
+    grounded in the classical theory of statistical experiment comparison,
+    as described in Akdemir (2026) <doi:10.5281/zenodo.21877511>. Provides
+    theorem-backed bounds together with computable proxy diagnostics for
+    information loss from confounding, selection bias, and distributional
+    shift. Supports continuous, binary, count, survival, and competing risks
+    outcomes. Key features include propensity-score total-variation deficiency
+    proxies, negative control diagnostics, policy regret bounds, and
+    sensitivity analysis via confounding frontiers.
+License: MIT + file LICENSE
+URL: https://github.com/denizakdemir/causaldef
+BugReports: https://github.com/denizakdemir/causaldef/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.6.0)
+Imports: checkmate, cli, ggplot2, stats, graphics
+Suggests: survival, MatchIt, tmle, SuperLearner, grf, future.apply,
+        glue, shiny, plumber, jsonlite, cmprsk, testthat (>= 3.0.0),
+        knitr, rmarkdown
+Config/testthat/edition: 2
+Config/Needs/website: pkgdown
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-08-10 18:42:58 UTC; dakdemir
+Repository: CRAN
+Date/Publication: 2026-08-23 05:10:02 UTC

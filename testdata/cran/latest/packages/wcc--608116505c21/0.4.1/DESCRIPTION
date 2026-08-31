@@ -1,0 +1,42 @@
+Encoding: UTF-8
+Package: wcc
+Date: 2026-07-17
+Title: Windowed Cross Correlation
+Authors@R: c(person(c("Steven"), "Boker", email="smb3u@virginia.edu", role=c("aut","cre")),
+    person("Minquan", "Xu", role="aut"),
+    person("Sareena", "Chadha", role="aut"),
+    person("Christopher", "Welker", role="aut"),
+    person("Jingyun", "Wu", role="aut"),
+    person("Pascal", "Deboeck", role="aut"),
+    person("Aaron", "Peikert", role="aut"),
+    person("Claude", " ", role="aut"))
+Maintainer: Steven Boker <smb3u@virginia.edu>
+Author: Steven Boker [aut, cre],
+  Minquan Xu [aut],
+  Sareena Chadha [aut],
+  Christopher Welker [aut],
+  Jingyun Wu [aut],
+  Pascal Deboeck [aut],
+  Aaron Peikert [aut],
+  Claude [aut]
+Description: Calculates Windowed Cross Correlation for pairs of time series.
+    Provides support for surrogate analysis for nonparametric test of significance.
+    Calculates aggregate statistics over a range of parameter values.
+    Plots the results as Windowed Cross Correlation plots and heat maps.
+    The software is described in Boker, S. M., Rotondo, J. L., Xu, M., & King, K. (2002). Windowed cross-correlation and peak picking for the analysis of variability in the association between behavioral time series. Psychological Methods, 7(3), 338.
+SystemRequirements: GNU make
+ByteCompile: no
+Language: en-US
+License: Apache License (== 2.0)
+Depends: R (>= 4.1.0)
+Imports: pheatmap, grid, gtable
+LazyLoad: yes
+Collate: 'GLLAfunctions.R' 'wccCalc.R' 'wccCalcBatch.R'
+        'wccAggregate.R' 'wccFindDyadParam.R' 'wccHeatMap.R'
+        'wccPeakPick.R' 'wccPlot.R' 'wccSurrogateDyads.R'
+Biarch: true
+Version: 0.4.1
+NeedsCompilation: yes
+Packaged: 2026-07-17 15:02:49 UTC; sboker
+Repository: CRAN
+Date/Publication: 2026-07-17 23:00:02 UTC

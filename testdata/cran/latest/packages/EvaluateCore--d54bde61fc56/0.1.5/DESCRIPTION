@@ -1,0 +1,54 @@
+Package: EvaluateCore
+Title: Quality Evaluation of Core Collections
+Version: 0.1.5
+Authors@R: c(
+    person(given = "J.", family = "Aravind",
+           email = "j.aravind@icar.org.in",
+           role = c("aut", "cre"),
+		       comment = c(ORCID = "0000-0002-4791-442X")),
+    person(given = "Vikender", family = "Kaur",
+           email = "vikender.kaur@icar.org.in",
+		       role = "aut",
+		       comment = c(ORCID = "0000-0001-9698-7329")),
+	  person(given = c("Dhammaprakash", "Pandhari"), family = "Wankhede", 
+           email = "d.wankhede@icar.org.in",
+		       role = "aut",
+		       comment = c(ORCID = "0000-0001-6384-8664")),
+	  person(given = "Joghee", family = "Nanjundan", 
+           email = "j.nanjundan@icar.org.in",
+		       role = "aut",
+		       comment = c(ORCID = "0000-0001-6254-7341")),
+    person("ICAR-NBGPR",
+           role = c("cph"),
+		       comment = c(url = "https://nbpgr.org.in/")))
+Description: Implements various quality evaluation statistics to assess the
+    value of plant germplasm core collections using qualitative and 
+    quantitative phenotypic trait data according to Odong et al. (2015) 
+    <doi:10.1007/s00122-012-1971-y>.
+Copyright: 2018-2026, ICAR-NBPGR
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/aravind-j/EvaluateCore
+        https://CRAN.R-project.org/package=EvaluateCore
+        https://aravind-j.github.io/EvaluateCore/
+        https://doi.org/10.5281/zenodo.3875930
+BugReports: https://github.com/aravind-j/EvaluateCore/issues
+RdMacros: mathjaxr, Rdpack
+Depends: R (>= 3.5.0)
+Imports: agricolae, boot, car, cluster, dplyr, entropy, ggcorrplot,
+        ggplot2, ggtext, grDevices, gridExtra, kSamples, mathjaxr,
+        missMDA, psych, reshape2, Rdpack, stats, tibble, vegan
+Suggests: corehunter, httr, pander, RCurl, rJava (>= 0.9-8), XML
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-04-21 10:52:05 UTC; Aravind-DGC
+Author: J. Aravind [aut, cre] (ORCID: <https://orcid.org/0000-0002-4791-442X>),
+  Vikender Kaur [aut] (ORCID: <https://orcid.org/0000-0001-9698-7329>),
+  Dhammaprakash Pandhari Wankhede [aut] (ORCID:
+    <https://orcid.org/0000-0001-6384-8664>),
+  Joghee Nanjundan [aut] (ORCID: <https://orcid.org/0000-0001-6254-7341>),
+  ICAR-NBGPR [cph] (url: https://nbpgr.org.in/)
+Maintainer: J. Aravind <j.aravind@icar.org.in>
+Repository: CRAN
+Date/Publication: 2026-04-22 07:20:09 UTC

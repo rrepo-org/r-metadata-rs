@@ -1,0 +1,62 @@
+Package: drogonR
+Type: Package
+Title: High-Performance HTTP Server for R via 'Drogon'
+Version: 0.1.9
+Authors@R: c(
+    person("Yuri", "Baramykov",
+        email = "lbsbmsu@mail.ru",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0009-0000-7627-4217")),
+    person("An", "Tao", role = c("ctb", "cph"),
+        comment = "Author of the bundled Drogon and Trantor C++ libraries"),
+    person("Shuo", "Chen", role = c("ctb", "cph"),
+        comment = "Author of the Muduo library, on which Trantor is based"),
+    person("Baptiste", "Lepilleur", role = c("ctb", "cph"),
+        comment = "Original author of the bundled JsonCpp library"),
+    person("Christopher", "Dunn", role = "ctb",
+        comment = "Maintainer of JsonCpp"),
+    person(family = "JsonCpp Contributors", role = c("ctb", "cph"),
+        comment = "See src/drogon/third_party/jsoncpp/AUTHORS in the package source"),
+    person("Bert", "Belder", role = c("ctb", "cph"),
+        comment = "Author of the bundled wepoll library (Windows epoll shim)"),
+    person(family = "mman-win32 contributors", role = c("ctb", "cph"),
+        comment = "Authors of the bundled mman-win32 library; see src/mman-win32/LICENSE"))
+Description: Provides an 'R' interface to the 'Drogon' high-performance
+    'C++' 'HTTP' server framework
+    (<https://github.com/drogonframework/drogon>). Offers a 'plumber'-style
+    application programming interface for building 'REST' services from
+    'R' with substantially higher throughput, including streaming
+    responses and full-duplex 'WebSocket' endpoints.
+Depends: R (>= 4.1.0)
+Imports: jsonlite, processx, later (>= 1.4.4)
+LinkingTo: later
+Suggests: testthat (>= 3.0.0), httr2, curl, websocket, plumber, knitr,
+        rmarkdown
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+SystemRequirements: C++17, GNU make, OpenSSL (optional, for HTTPS)
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://github.com/Zabis13/drogonR
+BugReports: https://github.com/Zabis13/drogonR/issues
+Packaged: 2026-08-26 19:56:23 UTC; yuri
+Author: Yuri Baramykov [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-7627-4217>),
+  An Tao [ctb, cph] (Author of the bundled Drogon and Trantor C++
+    libraries),
+  Shuo Chen [ctb, cph] (Author of the Muduo library, on which Trantor is
+    based),
+  Baptiste Lepilleur [ctb, cph] (Original author of the bundled JsonCpp
+    library),
+  Christopher Dunn [ctb] (Maintainer of JsonCpp),
+  JsonCpp Contributors [ctb, cph] (See
+    src/drogon/third_party/jsoncpp/AUTHORS in the package source),
+  Bert Belder [ctb, cph] (Author of the bundled wepoll library (Windows
+    epoll shim)),
+  mman-win32 contributors [ctb, cph] (Authors of the bundled mman-win32
+    library; see src/mman-win32/LICENSE)
+Maintainer: Yuri Baramykov <lbsbmsu@mail.ru>
+Repository: CRAN
+Date/Publication: 2026-08-27 12:00:19 UTC

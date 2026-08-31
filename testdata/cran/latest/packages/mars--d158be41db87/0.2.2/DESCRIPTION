@@ -1,0 +1,36 @@
+Package: mars
+Title: Meta Analysis and Research Synthesis
+Version: 0.2.2
+Authors@R: c(
+   person("Brandon", "LeBeau", email = "lebebr01+mars@gmail.com", role = c("aut", "cre"),
+   comment = c(ORCID = "0000-0002-1265-8761")),
+   person(c("Ariel", "M."), "Aloe", email = "amaloe+mars@gmail.com", role = c("aut")),
+   person(c("Betsy", "Jane"), "Becker", email = "bbecker@fsu.edu", role = c("ctb")),
+   person("Seohee", "Park", email = "seohee-park@uiowa.edu", role = c("ctb")),
+   person(c("Roberto", "C."), "Toro Rodriguez", email = "rctororodriguez@ua.edu",
+   role = c("ctb"))
+   )
+Description: Includes functions for conducting univariate and multivariate meta-analysis.
+   This includes the estimation of the asymptotic variance-covariance matrix of effect sizes.
+   For more details see Becker (1992) <doi:10.2307/1165128>, 
+   Cooper, Hedges, and Valentine (2019) <doi:10.7758/9781610448864>, and
+   Schmid, Stijnen, and White (2020) <doi:10.1201/9781315119403>.
+Depends: R (>= 4.2)
+Imports: Matrix, corpcor, matrixcalc
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, rmarkdown, dplyr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-26 16:11:16 UTC; blebeau
+Author: Brandon LeBeau [aut, cre] (<https://orcid.org/0000-0002-1265-8761>),
+  Ariel M. Aloe [aut],
+  Betsy Jane Becker [ctb],
+  Seohee Park [ctb],
+  Roberto C. Toro Rodriguez [ctb]
+Maintainer: Brandon LeBeau <lebebr01+mars@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-27 18:00:05 UTC

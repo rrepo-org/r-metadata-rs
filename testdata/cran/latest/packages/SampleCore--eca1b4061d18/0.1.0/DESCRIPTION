@@ -1,0 +1,55 @@
+Package: SampleCore
+Title: Sampling Strategies for Constructing Core Collections
+Version: 0.1.0
+Authors@R: c(
+    person(given = "J.", family = "Aravind",
+           email = "j.aravind@icar.org.in",
+           role = c("aut", "cre"),
+		       comment = c(ORCID = "0000-0002-4791-442X")),
+    person(given = "Suman", family = "Roy",
+           email = "suman.roy@icar.org.in",
+           role = c("aut"),
+		       comment = c(ORCID = "0000-0001-5612-8415")),
+    person(given = "Anju Mahendru", family = "Singh",
+           email = "anju.singh@icar.org.in",
+		       role = "aut",
+		       comment = c(ORCID = "0000-0001-6958-1630")),
+    person("ICAR-NBGPR",
+           role = c("cph"),
+		       comment = c(ROR = "https://ror.org/00scbd467",
+		                   url = "https://nbpgr.org.in/")))
+Description: Implements multiple allocation and selection strategies of 
+    sampling to construct core collections primarily from clustered or grouped 
+    germplasm collection data. Provides methods for allocating entries to 
+    clusters/groups based on group sizes, group-wise distance-based diversity 
+    metrics, and group-wise diversity index estimates. Includes procedures for 
+    selecting entries within clusters/groups through random sampling, genetic 
+    distance-based approaches, and optimized diversity metric–based selection 
+    methods. See the package documentation for more, including full list of 
+    references for the methods implemented.
+License: GPL (>= 2)
+Encoding: UTF-8
+BuildManual: TRUE
+Imports: cluster, DiversityStats, ggplot2, igraph, MASS, mathjaxr,
+        prospectr, Rdpack, Rtsne, stats, vegan
+Suggests: biotools, dbscan, EvaluateCore, fastcluster, knitr, pander,
+        rmarkdown
+RdMacros: mathjaxr, Rdpack
+Copyright: 2024-2026, ICAR-NBPGR
+URL: https://github.com/aravind-j/SampleCore
+        https://aravind-j.github.io/SampleCore/
+BugReports: https://github.com/aravind-j/SampleCore/issues
+Depends: R (>= 3.5)
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-21 04:21:51 UTC; Aravind-DGC
+Author: J. Aravind [aut, cre] (ORCID: <https://orcid.org/0000-0002-4791-442X>),
+  Suman Roy [aut] (ORCID: <https://orcid.org/0000-0001-5612-8415>),
+  Anju Mahendru Singh [aut] (ORCID:
+    <https://orcid.org/0000-0001-6958-1630>),
+  ICAR-NBGPR [cph] (ROR: <https://ror.org/00scbd467>, url:
+    https://nbpgr.org.in/)
+Maintainer: J. Aravind <j.aravind@icar.org.in>
+Repository: CRAN
+Date/Publication: 2026-05-28 13:00:02 UTC

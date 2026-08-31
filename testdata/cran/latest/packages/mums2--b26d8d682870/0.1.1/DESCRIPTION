@@ -1,0 +1,45 @@
+Package: mums2
+Title: Microbial Ecology by Tandem Mass Spectrometry
+Version: 0.1.1
+Authors@R: c(
+    person("Allison", "Mason", , "masonar@umich.edu", role = c("aut"),
+            comment = c(ORCID = "0000-0003-1339-1592")),
+    person("Gregory", "Johnson", , "grejoh@umich.edu", role = c("aut"),
+            comment = c(ORCID = "0009-0008-3890-0297")),
+    person("Patrick", "Schloss", , "pschloss@umich.edu", role = c("aut", "cre"),
+            comment = c(ORCID = "0000-0002-6935-4275")),
+    person("Anton", "Pervukhin", , "apervukh@minet.uni-jena.de", role = c("ctb", "cph")),
+    person("Florian", "Rasche", , "m3rafl@minet.uni-jena.de", role = c("ctb", "cph")),
+    person("Henner", "Sudek", , "Henner.Sudek@CeBiTec.Uni-Bielefeld.DE", role = c("ctb", "cph")),
+    person("Marcel", "Martin", , "Marcel.Martin@CeBiTec.Uni-Bielefeld.DE", role = c("ctb", "cph")),
+    person("Yuanyue", "Li", , "mail@yli.one", role = c("ctb", "cph"))
+            )
+Description: Tools that researchers can use to analyze untargeted metabolomics data generated using tandem mass spectroscopy from microbial communities. The overall approach taken to analyze metabolomics data parallels that used to analyze microbial communities using 16S rRNA gene sequencing data. Thus, we have a number of methods a user is able to use to generate data. Firstly, users can import Mass Spectrometry 1(MS1) data and filter it. Users are then able to match Mass Spectrometry 2(MS2) data to the filtered (or unfiltered) MS1 data. With the matched data users are able to cluster it, annotate it, predict de novo chemical formulas and calculate alpha and beta diversity. For chemical formula predictions, this was the method used; "Towards de novo identification of metabolites by analyzing tandem mass spectra" (Sebastian Böcker, Florian Rasche (2008) <doi:10.1093/bioinformatics/btn270>). The similarity/dissimilarity calculations we used to cluster our data together was: "Spectral entropy outperforms MS/MS dot product similarity for small-molecule compound identification" (Li, Y., Kind, T., Folz, J. et al. (2021) <doi:10.1038/s41592-021-01331-z>) and "Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking" (Wang, M., Carver, J., Phelan, V. et al. (2021) <doi:10.1038/nbt.3597>). 
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/mums2/mums2, https://www.mums2.org/mums2/
+BugReports: https://github.com/mums2/mums2/issues
+LinkingTo: sitmo, Rcpp, RcppThread, testthat, RcppProgress
+Imports: clustur, Rcpp, data.table, mpactr, utils, stats, parallel,
+        xml2, RaMS
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tidyverse, networkD3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-06-24 15:12:59 UTC; grejoh
+Author: Allison Mason [aut] (ORCID: <https://orcid.org/0000-0003-1339-1592>),
+  Gregory Johnson [aut] (ORCID: <https://orcid.org/0009-0008-3890-0297>),
+  Patrick Schloss [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6935-4275>),
+  Anton Pervukhin [ctb, cph],
+  Florian Rasche [ctb, cph],
+  Henner Sudek [ctb, cph],
+  Marcel Martin [ctb, cph],
+  Yuanyue Li [ctb, cph]
+Maintainer: Patrick Schloss <pschloss@umich.edu>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-06-25 05:30:02 UTC

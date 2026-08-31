@@ -1,0 +1,33 @@
+Package: truncSP
+Title: Semi-Parametric Estimators of Truncated Regression Models
+Version: 1.2.4
+Authors@R: c(person(given = "Anita",
+                        family = "Lindmark",
+                        role = c("aut", "cre", "cph"),
+                        email = "anita.lindmark@umu.se"),
+                 person(given = "Maria",
+                        family = "Karlsson",
+                        role = "aut",
+                        email = "maria.karlsson@umu.se")) 
+Description: Estimators for semi-parametric linear regression models with truncated response variables (fixed truncation point). The estimators implemented are the Symmetrically Trimmed Least Squares (STLS) estimator introduced by Powell (1986) <doi:10.2307/1914308>, the Quadratic Mode (QME) estimator introduced by Lee (1993) <doi:10.1016/0304-4076(93)90056-B>, and the Left Truncated (LT) estimator introduced by Karlsson (2006) <doi:10.1007/s00184-005-0023-x>.
+Depends: R (>= 3.4.0)
+Imports: stats, methods, truncreg, boot
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Collate: 'PM10-data.R' 'PM10trunc-data.R' 'bootconfint.R'
+        'covar.boot.R' 'funcval.LT.R' 'mlcoef.R' 'funcLT.R'
+        'funcval.QME.R' 'funcQME.R' 'funcval.STLS.R' 'funcSTLS.R'
+        'lt-class.R' 'lt.fit.R' 'lt.R' 'summary.lt-class.R'
+        'ltmethods.r' 'qme-class.R' 'qme.fit.R' 'qme.R'
+        'summary.qme-class.R' 'qmemethods.r' 'stls-class.R'
+        'stls.fit.R' 'stls.R' 'summary.stls-class.R' 'stlsmethods.r'
+        'truncSP-package.R'
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-09-11 12:58:15 UTC; anli0053
+Author: Anita Lindmark [aut, cre, cph],
+  Maria Karlsson [aut]
+Maintainer: Anita Lindmark <anita.lindmark@umu.se>
+Repository: CRAN
+Date/Publication: 2025-09-11 14:00:02 UTC

@@ -1,0 +1,33 @@
+Type: Package
+Package: asympDiag
+Title: Diagnostic Tools for Asymptotic Theory
+Version: 0.3.3
+Authors@R: c(
+    person("Álvaro", "Kothe", , "kothe65@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-2114-3193")),
+    person("Alexandre", "Patriota", role = "aut")
+  )
+Description: Leveraging Monte Carlo simulations, this package provides
+    tools for diagnosing regression models. It implements a parametric
+    bootstrap framework to compute statistics, generates diagnostic
+    envelopes to assess goodness-of-fit, and evaluates type I error
+    control for Wald tests. By simulating data under the assumption that
+    the model is true, it helps to identify model mis-specifications and
+    enhances the reliability of the model inferences.
+License: MIT + file LICENSE
+URL: https://github.com/Alvaro-Kothe/asympDiag
+BugReports: https://github.com/Alvaro-Kothe/asympDiag/issues
+Imports: cli
+Suggests: glmmTMB, lme4, MASS, Matrix, rlang, sandwich, survival,
+        testthat (>= 3.0.0), vctrs, withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-01 00:12:42 UTC; alvarojsk
+Author: Álvaro Kothe [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2114-3193>),
+  Alexandre Patriota [aut]
+Maintainer: Álvaro Kothe <kothe65@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-02 03:30:02 UTC

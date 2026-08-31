@@ -1,0 +1,36 @@
+Package: rsgl
+Title: An Implementation of the 'SGL' Graphics Language
+Version: 0.1.0
+Authors@R: c(
+    person("Jon", "Chapman", , "jochapjo@icloud.com",
+           role = c("aut", "cre", "cph")),
+    person("Free Software Foundation, Inc.", role = "cph",
+           comment = "Bison parser skeleton"))
+Description: Generates plots from a database connection
+    and a 'SGL' statement. 'SGL' is a graphics language designed
+    to look and feel like 'SQL'. It is especially useful for
+    those familiar with 'SQL' who want to specify plots in a
+    similar manner. The 'SGL' language is described in
+    Chapman (2025) <doi:10.48550/arXiv.2505.14690>.
+License: MIT + file LICENSE
+URL: https://github.com/sgl-projects/rsgl,
+        https://sgl-projects.github.io/rsgl/,
+        https://arxiv.org/abs/2505.14690
+BugReports: https://github.com/sgl-projects/rsgl/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), vdiffr, lubridate, knitr, rmarkdown,
+        patrick, tibble, withr
+Config/testthat/edition: 3
+Imports: DBI, dplyr, duckdb, ggplot2, purrr, Rcpp, rlang
+LinkingTo: Rcpp
+VignetteBuilder: knitr, rmarkdown
+Depends: R (>= 4.1)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-06-02 16:46:56 UTC; jochapjo
+Author: Jon Chapman [aut, cre, cph],
+  Free Software Foundation, Inc. [cph] (Bison parser skeleton)
+Maintainer: Jon Chapman <jochapjo@icloud.com>
+Repository: CRAN
+Date/Publication: 2026-06-08 18:20:02 UTC

@@ -1,0 +1,40 @@
+Package: mRpostman
+Type: Package
+Title: An IMAP Client for R
+Version: 1.4.0
+Date: 2026-07-12
+Authors@R: c(
+    person(given="Allan", family="Quadros",
+    role = c("aut", "cre"),
+    email = "allanvcq@gmail.com",
+    comment = c(ORCID = "0000-0003-3250-5380")),
+    person(given="Paul", family="Smith",
+    role = c("ctb")),
+    person(given="Kurt", family="Hornik",
+    role = c("ctb"))
+    )
+Description: A session-based IMAP client that implements the full functionality of
+    the IMAP4rev1 protocol (RFC 3501), allowing virtually all e-mail operations to be
+    performed from within R, paving the way for e-mail data analysis.
+License: GPL-3
+Encoding: UTF-8
+Imports: curl, R6, stringr, stringi, magrittr, assertthat, base64enc,
+        utils, rvest, xml2
+Depends: R (>= 3.1.0)
+URL: https://allanvc.github.io/mRpostman/
+BugReports: https://github.com/allanvc/mRpostman/issues/
+SystemRequirements: libcurl: libcurl-devel (rpm) or
+        libcurl4-openssl-dev (deb)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), httr, jsonlite
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-07-12 15:42:48 UTC; allan
+Author: Allan Quadros [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3250-5380>),
+  Paul Smith [ctb],
+  Kurt Hornik [ctb]
+Maintainer: Allan Quadros <allanvcq@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-28 06:00:02 UTC

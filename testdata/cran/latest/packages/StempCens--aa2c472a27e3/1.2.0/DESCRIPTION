@@ -1,0 +1,38 @@
+Package: StempCens
+Type: Package
+Title: Spatio-Temporal Estimation and Prediction for Censored/Missing
+        Responses
+Version: 1.2.0
+Authors@R: 
+  c(person(given = "Larissa",
+           family = "A. Matos",
+           role = c("aut", "cre"),
+           email = "larissa.amatos@gmail.com",
+           comment = c(ORCID = "0000-0002-2635-0901")),
+    person(given = "Katherine",
+           family = "L. Valeriano",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-6388-4753")),
+    person(given = "Victor H.",
+           family = "Lachos",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-7239-2459")))
+Description: It estimates the parameters of spatio-temporal models with censored or missing data using the SAEM algorithm (Delyon et al., 1999). This algorithm is a stochastic approximation of the widely used EM algorithm and is particularly valuable for models in which the E-step lacks a closed-form expression. It also provides a function to compute the observed information matrix using the method developed by Louis (1982). To assess the performance of the fitted model, case-deletion diagnostics are provided.
+License: GPL (>= 2)
+Imports: Rcpp, stats, utils, mvtnorm, tmvtnorm, MCMCglmm, ggplot2,
+        grid, Rdpack
+RdMacros: Rdpack
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat
+NeedsCompilation: yes
+Packaged: 2025-06-11 20:51:28 UTC; 55199
+Author: Larissa A. Matos [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2635-0901>),
+  Katherine L. Valeriano [aut] (ORCID:
+    <https://orcid.org/0000-0001-6388-4753>),
+  Victor H. Lachos [ctb] (ORCID: <https://orcid.org/0000-0002-7239-2459>)
+Maintainer: Larissa A. Matos <larissa.amatos@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-11 21:50:02 UTC

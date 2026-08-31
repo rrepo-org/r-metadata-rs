@@ -1,0 +1,164 @@
+Type: Package
+Package: EpiNow2
+Title: Estimate and Forecast Real-Time Infection Dynamics
+Version: 1.9.0
+Authors@R: 
+    c(person(given = "Sam",
+             family = "Abbott",
+             role = c("aut"),
+             email = "sam.abbott@lshtm.ac.uk",
+             comment = c(ORCID = "0000-0001-8057-8037")),
+      person(given = "Joel",
+             family = "Hellewell",
+             role = "aut",
+             email = "joel.hellewell@lshtm.ac.uk",
+             comment = c(ORCID = "0000-0003-2683-0849")),
+      person(given = "Katharine",
+             family = "Sherratt",
+             role = "aut",
+             email = "katharine.sherratt@lshtm.ac.uk"),
+      person(given = "Katelyn",
+             family = "Gostic",
+             role = "aut",
+             email = "kgostic@uchicago.edu"),
+      person(given = "Joe",
+             family = "Hickson",
+             role = "aut",
+             email = "joseph.hickson@metoffice.gov.uk"),
+      person(given = "Hamada S.",
+             family = "Badr",
+             role = "aut",
+             email = "badr@jhu.edu",
+             comment = c(ORCID = "0000-0002-9808-2344")),
+      person(given = "Michael",
+             family = "DeWitt",
+             role = "aut",
+             email = "me.dewitt.jr@gmail.com",
+             comment = c(ORCID = "0000-0001-8940-1967")),
+      person(given = "James M.",
+             family = "Azam",
+             role = "aut",
+             email = "james.azam@lshtm.ac.uk",
+             comment = c(ORCID = "0000-0001-5782-7330")),
+      person(given = "Adrian",
+             family = "Lison",
+             role = "aut",
+             email = "adrian.lison@bsse.ethz.ch",
+             comment = c(ORCID = "0000-0002-6822-8437")),
+      person(given = "Robin",
+             family = "Thompson",
+             role = "ctb",
+             email = "robin.thompson@lshtm.ac.uk"),
+      person(given = "Sophie",
+             family = "Meakin",
+             role = "ctb",
+             email = "sophie.meakin@lshtm.ac.uk"),
+      person(given = "James",
+             family = "Munday",
+             role = "ctb",
+             email = "james.munday@lshtm.ac.uk"),
+      person(given = "Nikos",
+             family = "Bosse",
+             role = "ctb"),
+      person(given = "Paul",
+             family = "Mee",
+             role = "ctb",
+             email = "paul.mee@lshtm.ac.uk"),
+      person(given = "Peter",
+             family = "Ellis",
+             role = "ctb",
+             email = "peter.ellis2013nz@gmail.com"),
+      person(given = "Pietro",
+             family = "Monticone",
+             role = "ctb",
+             email = "pietro.monticone@edu.unito.it"),
+      person(given = "Lloyd",
+             family = "Chapman",
+             role = "ctb",
+             email = "lloyd.chapman1@lshtm.ac.uk"),
+      person(given = "Andrew",
+             family = "Johnson",
+             role = "ctb",
+             email = "andrew.johnson@arjohnsonau.com"),
+      person(given = "Kaitlyn",
+             family = "Johnson",
+             role = "ctb",
+             email = "johnsonkaitlyne9@gmail.com",
+             comment = c(ORCID = "0000-0001-8011-0012")),
+      person(given = "Adam",
+             family = "Howes",
+             role = "ctb",
+             email = "adamthowes@gmail.com",
+             comment = c(ORCID = "0000-0003-2386-4031")),
+      person(given = "Sebastian",
+             family = "Funk",
+             role = c("aut", "cre"),
+             email = "sebastian.funk@lshtm.ac.uk",
+             comment = c(ORCID = "0000-0002-2842-3406"))
+    )
+Description: Estimates the time-varying reproduction number, rate of
+    spread, and doubling time using a renewal equation approach combined
+    with Bayesian inference via Stan. Supports Gaussian process and
+    random walk priors for modelling changes in
+    transmission over time. Accounts for delays between infection and
+    observation (incubation period, reporting delays), right-truncation
+    in recent data, day-of-week effects, and observation overdispersion.
+    Can estimate relationships between primary and secondary outcomes
+    (e.g., cases to hospitalisations or deaths) and forecast both. Runs
+    across multiple regions in parallel. Based on
+    Abbott et al. (2020) <doi:10.12688/wellcomeopenres.16006.1> and
+    Gostic et al. (2020) <doi:10.1101/2020.06.18.20134858>.
+License: MIT + file LICENSE
+URL: https://epiforecasts.io/EpiNow2/,
+        https://epiforecasts.io/EpiNow2/dev/,
+        https://github.com/epiforecasts/EpiNow2
+BugReports: https://github.com/epiforecasts/EpiNow2/issues
+Depends: R (>= 3.5.0)
+Imports: checkmate, cli, data.table (>= 1.15.0), futile.logger (>=
+        1.4), ggplot2, lifecycle, lubridate, methods, patchwork,
+        posterior, primarycensored, purrr, R.utils (>= 2.0.0), Rcpp (>=
+        0.12.0), rlang (>= 0.4.7), rstan (>= 2.26.0), rstantools (>=
+        2.2.0), runner, scales, stats, truncnorm, utils
+Suggests: cmdstanr, future, future.apply, knitr, parallelly, progressr,
+        rmarkdown, scoringutils, spelling, testthat, withr
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.26.0), StanHeaders (>=
+        2.26.0)
+Additional_repositories: https://production.r-multiverse.org/2026-03-15
+Biarch: true
+Config/testthat/edition: 3
+Config/Needs/dev: covr, here, hexSticker, lintr, magick, pkgdown,
+        precommit, styler, usethis
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+SystemRequirements: GNU make C++17
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-16 21:36:46 UTC; sebfunk
+Author: Sam Abbott [aut] (ORCID: <https://orcid.org/0000-0001-8057-8037>),
+  Joel Hellewell [aut] (ORCID: <https://orcid.org/0000-0003-2683-0849>),
+  Katharine Sherratt [aut],
+  Katelyn Gostic [aut],
+  Joe Hickson [aut],
+  Hamada S. Badr [aut] (ORCID: <https://orcid.org/0000-0002-9808-2344>),
+  Michael DeWitt [aut] (ORCID: <https://orcid.org/0000-0001-8940-1967>),
+  James M. Azam [aut] (ORCID: <https://orcid.org/0000-0001-5782-7330>),
+  Adrian Lison [aut] (ORCID: <https://orcid.org/0000-0002-6822-8437>),
+  Robin Thompson [ctb],
+  Sophie Meakin [ctb],
+  James Munday [ctb],
+  Nikos Bosse [ctb],
+  Paul Mee [ctb],
+  Peter Ellis [ctb],
+  Pietro Monticone [ctb],
+  Lloyd Chapman [ctb],
+  Andrew Johnson [ctb],
+  Kaitlyn Johnson [ctb] (ORCID: <https://orcid.org/0000-0001-8011-0012>),
+  Adam Howes [ctb] (ORCID: <https://orcid.org/0000-0003-2386-4031>),
+  Sebastian Funk [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2842-3406>)
+Maintainer: Sebastian Funk <sebastian.funk@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-06-16 23:30:15 UTC

@@ -1,0 +1,63 @@
+Package: tidyILD
+Title: Tidy Intensive Longitudinal Data Analysis
+Version: 0.4.1
+Authors@R: 
+  person(
+    given = "Alex",
+    family = "Litovchenko",
+    role = c("aut", "cre"),
+    email = "al4877@columbia.edu"
+  )
+Description: A reproducible, tidyverse-style framework for intensive longitudinal
+  data analysis in R, with built-in methodological safeguards, provenance
+  tracking, and reporting tools. Encodes time structure, enforces
+  within-between decomposition, provides spacing-aware lags, and integrates
+  diagnostics and visualization. Use ild_prepare(), ild_center(), ild_lag(),
+  and related functions for a unified pipeline from raw EMA/diary data to
+  interpretable models.
+URL: https://github.com/alitovchenko/tidyILD
+BugReports: https://github.com/alitovchenko/tidyILD/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: tibble, dplyr, lubridate, rlang, lme4, nlme, ggplot2, mgcv
+Suggests: BH, testthat (>= 3.0.0), roxygen2, knitr, rmarkdown, rstan,
+        RcppEigen, broom.mixed, clubSandwich, jsonlite, yaml, tsibble,
+        brms, KFAS, ctsem
+VignetteBuilder: knitr
+Collate: 'package.R' 'ild-class.R' 'ild_provenance.R' 'ild_methods.R'
+        'ild_compare_pipelines.R' 'ild_compare_fits.R' 'utils.R'
+        'ild_schema_tidy_augment.R' 'ild_tidy_helpers.R'
+        'ild_augment_helpers.R' 'ild_tsibble.R' 'ild_prepare_wide.R'
+        'ild_prepare.R' 'ild_summary.R' 'ild_center.R'
+        'ild_decomposition.R' 'ild_lag.R' 'ild_spacing_class.R'
+        'ild_spacing.R' 'ild_design_check.R' 'ild_missing_extensions.R'
+        'ild_missing_pattern.R' 'ild_missing_bias.R'
+        'ild_missing_model.R' 'ild_ipw_helpers.R' 'ild_ipw_weights.R'
+        'ild_iptw_weights.R' 'ild_iptw_msm_weights.R'
+        'ild_ipcw_weights.R' 'ild_joint_msm_weights.R'
+        'ild_ipw_refit.R' 'ild_msm_bootstrap.R' 'ild_msm_balance.R'
+        'ild_tvem.R' 'ild_tvem_plot.R' 'ild_check_lags.R'
+        'ild_panel_lag_prepare.R' 'ild_msm_history.R' 'ild_crosslag.R'
+        'ild_acf.R' 'ild_align.R' 'ild_lme.R' 'ild_person_model.R'
+        'ild_heterogeneity.R' 'ild_robust_se.R' 'ild_model_tidiers.R'
+        'ild_guardrail_registry.R' 'ild_missingness_report.R'
+        'ild_diagnostics_bundle.R' 'ild_diagnostics_utilities.R'
+        'ild_diagnostics.R' 'ild_manifest.R' 'ild_plot.R'
+        'ild_generics.R' 'ild_brms.R' 'ild_brms_s3.R'
+        'ild_brms_dynamics_formula.R' 'ild_ctsem.R' 'ild_ctsem_s3.R'
+        'ild_kfas_spec.R' 'ild_kfas_helpers.R' 'ild_kfas.R'
+        'ild_kfas_guardrails.R' 'ild_kfas_tidiers.R'
+        'ild_kfas_augment.R' 'ild_kfas_diagnose.R' 'ild_kfas_plot.R'
+        'ild_kfas_autoplot.R' 'ild_diagnose_fillers.R'
+        'ild_diagnose_methods.R' 'ild_autoplot_bundle.R'
+        'ild_circadian.R' 'ild_simulate.R' 'ild_msm_estimand.R'
+        'ild_msm_fit.R' 'ild_msm_contrast.R' 'ild_msm_simulation.R'
+        'ild_power.R' 'ild_recovery_metrics.R' 'data.R' 'broom.R'
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-12 18:45:08 UTC; alexanderlitovchenko
+Author: Alex Litovchenko [aut, cre]
+Maintainer: Alex Litovchenko <al4877@columbia.edu>
+Repository: CRAN
+Date/Publication: 2026-06-13 16:10:02 UTC

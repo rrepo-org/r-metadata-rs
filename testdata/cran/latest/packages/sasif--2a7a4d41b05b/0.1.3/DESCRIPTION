@@ -1,0 +1,32 @@
+Package: sasif
+Type: Package
+Title: 'SAS' IF Style Data Step Logic for Data Tables
+Version: 0.1.3
+Authors@R: 
+    person("Thiyagarajan", "Chandrasekaran", 
+           email = "chandrt23@gmail.com",
+           role = c("aut", "cre"))
+Description: Provides 'SAS'-style IF/ELSE chains, independent IF rules,
+    and DELETE logic for 'data.table', enabling clinical programmers to
+    express Study Data Tabulation Model (SDTM) and Analysis Data Model
+    (ADaM)-style derivations in familiar SAS-like syntax.
+    Methods are informed by clinical data standards described in CDISC
+    SDTM and ADaM implementation guides. See
+    <https://www.cdisc.org/standards/foundational/sdtm> and
+    <https://www.cdisc.org/standards/foundational/adam>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://chandrt23-lang.github.io/sasif/,
+        https://github.com/chandrt23-lang/sasif
+BugReports: https://github.com/chandrt23-lang/sasif/issues
+Imports: data.table
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-19 08:51:41 UTC; Thiyagarajan
+Author: Thiyagarajan Chandrasekaran [aut, cre]
+Maintainer: Thiyagarajan Chandrasekaran <chandrt23@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-19 09:00:02 UTC

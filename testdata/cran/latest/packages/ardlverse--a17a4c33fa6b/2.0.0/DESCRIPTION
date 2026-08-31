@@ -1,0 +1,51 @@
+Package: ardlverse
+Type: Package
+Title: Comprehensive ARDL: Panel, Bootstrap and Fourier Methods
+Version: 2.0.0
+Date: 2026-06-29
+Authors@R: c(
+    person("Muhammad Abdullah", "Alkhalaf", 
+           email = "muhammedalkhalaf@gmail.com", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-2677-9246")),
+    person("Merwan", "Roudane", 
+           role = "ctb",
+           comment = "Original Stata implementations"),
+    person("Yeleazar", "Levchenko", 
+           role = "ctb",
+           comment = "Bug fixes and PMG/MG/DFE corrections for panel_ardl in v2.0.0 (KSE)"))
+Description: A unified framework for Autoregressive Distributed Lag (ARDL) modeling 
+    and cointegration analysis. Implements Panel ARDL with Pooled Mean Group (PMG), 
+    Mean Group (MG), and Dynamic Fixed Effects (DFE) estimators following 
+    Pesaran, Shin & Smith (1999) <doi:10.1002/jae.616>. 
+    Provides bootstrap-based bounds testing per Pesaran, Shin & Smith (2001) 
+    <doi:10.1002/jae.616>. Includes Quantile Nonlinear ARDL (QNARDL) combining 
+    distributional and asymmetric effects based on Shin, Yu & Greenwood-Nimmo (2014) 
+    <doi:10.1007/978-1-4899-8008-3_9>, and Fourier ARDL for modeling smooth 
+    structural breaks following Enders & Lee (2012) <doi:10.1016/j.econlet.2012.05.019>. 
+    Features include Augmented ARDL (AARDL) with deferred t and F tests, 
+    Multiple-Threshold NARDL for complex asymmetries, Rolling/Recursive ARDL 
+    for time-varying relationships, and Panel NARDL for nonlinear panel cointegration. 
+    All methods include comprehensive diagnostics, publication-ready outputs, 
+    and visualization tools.
+License: GPL-3
+URL: https://github.com/muhammedalkhalaf/ardlverse
+BugReports: https://github.com/muhammedalkhalaf/ardlverse/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: stats, MASS, quantreg, lmtest, ggplot2, gridExtra, graphics,
+        grDevices
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-29 07:49:08 UTC; acad_
+Author: Muhammad Abdullah Alkhalaf [aut, cre] (ORCID:
+    <https://orcid.org/0009-0002-2677-9246>),
+  Merwan Roudane [ctb] (Original Stata implementations),
+  Yeleazar Levchenko [ctb] (Bug fixes and PMG/MG/DFE corrections for
+    panel_ardl in v2.0.0 (KSE))
+Maintainer: Muhammad Abdullah Alkhalaf <muhammedalkhalaf@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-29 08:30:07 UTC

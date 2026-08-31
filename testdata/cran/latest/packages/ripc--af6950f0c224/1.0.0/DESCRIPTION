@@ -1,0 +1,32 @@
+Package: ripc
+Title: Download and Tidy IPC and CH Data
+Version: 1.0.0
+Authors@R: 
+    person(
+      given = "Giulia",
+      family = "Martini", 
+      email = "giulia.martini@un.org",
+      role = c("aut", "cre", "cph")
+    )
+Description: Utilities to access Integrated Food Security Phase Classification
+    (IPC) and Cadre Harmonisé (CH) food security data. Wrapper functions are
+    available for all of the 'IPC-CH' Public API (<https://docs.api.ipcinfo.org>)
+    simplified and advanced endpoints to easily download the data in a clean and
+    tidy format.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/ocha-dap/ripc
+BugReports: https://github.com/ocha-dap/ripc/issues
+Depends: R (>= 4.1.0)
+Imports: countrycode, dplyr, httr, jsonlite, lifecycle, lubridate,
+        purrr, readr, rlang, sf, stringr, tidyr
+Suggests: knitr, rmarkdown, spelling
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-01-22 15:04:48 UTC; marti
+Author: Giulia Martini [aut, cre, cph]
+Maintainer: Giulia Martini <giulia.martini@un.org>
+Repository: CRAN
+Date/Publication: 2026-01-22 15:30:02 UTC

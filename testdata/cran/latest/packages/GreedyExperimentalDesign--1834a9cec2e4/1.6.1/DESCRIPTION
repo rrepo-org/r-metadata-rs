@@ -1,0 +1,56 @@
+Package: GreedyExperimentalDesign
+Type: Package
+Title: Greedy Experimental Design Construction
+Version: 1.6.1
+Date: 2026-04-30
+Author: Adam Kapelner [aut, cre] (ORCID: 0000-0001-5985-6792),
+  David Azriel [aut],
+  Abba Krieger [aut]
+Authors@R: c(person(given = "Adam",
+                      family = "Kapelner",
+                      role = c("aut", "cre"),
+                      email = "kapelner@qc.cuny.edu",
+                      comment = "ORCID: 0000-0001-5985-6792"),
+               person(given = "David",
+                      family = "Azriel",
+                      role = "aut"),
+               person(given = "Abba",
+                      family = "Krieger",
+                      role = "aut"))
+Maintainer: Adam Kapelner <kapelner@qc.cuny.edu>
+Description: Computes experimental designs for two-arm experiments with
+    covariates using multiple methods, including: (0) complete randomization
+    and randomization with forced-balance; (1) greedy optimization of a balance
+    objective function via pairwise switching; (2) numerical optimization via
+    'gurobi'; (3) rerandomization; (4) Karp's method for one covariate; (5)
+    exhaustive enumeration for small sample sizes; (6) binary pair matching
+    using 'nbpMatching'; (7) binary pair matching plus method (1) to further
+    optimize balance; (8) binary pair matching plus method (3) to further
+    optimize balance; (9) Hadamard designs; and (10) simultaneous multiple
+    kernels. For the greedy, rerandomization, and related methods, three
+    objective functions are supported: Mahalanobis distance, standardized sums
+    of absolute differences, and kernel distances via the 'kernlab' library.
+    This package is the result of a stream of research that can be found in
+    Krieger, A. M., Azriel, D. A., and Kapelner, A. (2019). "Nearly Random
+    Designs with Greatly Improved Balance." Biometrika 106(3), 695-701
+    <doi:10.1093/biomet/asz026>. Krieger, A. M., Azriel, D. A., and
+    Kapelner, A. (2023). "Better experimental design by hybridizing binary
+    matching with imbalance optimization." Canadian Journal of Statistics,
+    51(1), 275-292 <doi:10.1002/cjs.11685>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0), rJava (>= 0.9-6)
+SystemRequirements: Java (>= 22.0); wgpu-native >= 0.19.0 (optional,
+        for GPU acceleration, see
+        https://github.com/gfx-rs/wgpu-native)
+LinkingTo: Rcpp
+Imports: Rcpp, checkmate, nbpMatching, rlist, stringr, stringi,
+        kernlab, ggplot2, graphics, grDevices, stats
+Suggests: testthat (>= 3.0.0), pkgload, R6
+Config/testthat/edition: 3
+URL: https://github.com/kapelner/GreedyExperimentalDesign
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-04-30 05:54:19 UTC; kapelner
+Repository: CRAN
+Date/Publication: 2026-04-30 07:40:09 UTC

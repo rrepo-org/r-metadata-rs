@@ -1,0 +1,48 @@
+Package: isoorbi
+Type: Package
+Title: Process Orbitrap Isotopocule Data
+Version: 1.5.2
+Authors@R: 
+    c(person(
+        given = "Caj", family = "Neubauer",
+        email = "caj.neubauer@colorado.edu",
+        role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0000-0002-5348-5609")),
+    person(
+        given = "Sebastian", family = "Kopf",
+        email = "sebastian.kopf@colorado.edu",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0002-2044-0201")),
+    person(
+        given = "Kristýna", family = "Kantnerová",
+        email = "kristyna.kantnerova@colorado.edu",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0001-6259-3225"))
+    )
+URL: https://isoorbi.isoverse.org/, https://github.com/isoverse/isoorbi
+BugReports: https://github.com/isoverse/isoorbi/issues
+Depends: R (>= 4.4.0)
+Imports: utils (>= 4.1.0), stats (>= 4.1.0), methods, rlang (>= 1.0.0),
+        cli (>= 3.6.0), glue, withr (>= 3.0.0), lifecycle (>= 1.0.0),
+        tidyr (>= 1.2.0), tibble, tidyselect (>= 1.2.0), dplyr (>=
+        1.1.1), ggplot2 (>= 3.4.0), scales (>= 1.2.1), readr (>=
+        2.1.0), readxl, openxlsx, purrr, prettyunits (>= 1.2.0), arrow
+        (>= 21.0.0.0), knitr(>= 1.5.0)
+Suggests: devtools, fansi, rmarkdown, testthat (>= 3.0.0), vdiffr,
+        forcats
+Description: Read and process isotopocule data from an Orbitrap Isotope Solutions mass spectrometer. Citation: Kantnerova et al. (Nature Protocols, 2024).
+License: MIT + file LICENSE
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-03 20:53:33 UTC; seko0922
+Author: Caj Neubauer [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-5348-5609>),
+  Sebastian Kopf [aut] (ORCID: <https://orcid.org/0000-0002-2044-0201>),
+  Kristýna Kantnerová [aut] (ORCID:
+    <https://orcid.org/0000-0001-6259-3225>)
+Maintainer: Caj Neubauer <caj.neubauer@colorado.edu>
+Repository: CRAN
+Date/Publication: 2025-10-03 21:10:02 UTC

@@ -1,0 +1,51 @@
+Package: SeaGraphs
+Type: Package
+Title: Sea Currents to Connectivity Transformation
+Version: 0.1.3
+Authors@R: c(person("Nikolaos", "Nagkoulis", role = "aut",
+             email = "nikolaosn@civil.auth.gr",
+             comment = c(ORCID = "0000-0002-1900-2634")),
+             person("Christos", "Adam", role = c("aut", "cre"),
+             email = "econp266@econ.soc.uoc.gr",
+             comment = c(ORCID = "0009-0003-3244-7034")),
+             person("Ioannis G.", "Mamoutos", role = "aut",
+             email = "i.mamoutos@marine.aegean.gr",
+             comment = c(ORCID = "0000-0002-2697-2620")),
+             person("Antonios D.", "Mazaris", role = "aut",
+             email = "amazaris@bio.auth.gr",
+             comment = c(ORCID = "0000-0002-4961-5490")),
+             person("Stelios", "Katsanevakis", role = "aut",
+             email = "stelios@katsanevakis.com",
+             comment = c(ORCID = "0000-0002-5137-7540"))
+             )
+Maintainer: Christos Adam <econp266@econ.soc.uoc.gr>
+Description: Transformation of sea currents to connectivity data. Two files of
+ horizontal and vertical currents flows are transformed into connectivity data
+ in the form of 'sfnetwork', shapefile, edge list and adjacency matrix. An
+ application example is shown at Nagkoulis et al. (2025)
+ <doi:10.1016/j.dib.2024.111268>.
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/cadam00/SeaGraphs,
+        https://cadam00.github.io/SeaGraphs/
+BugReports: https://github.com/cadam00/SeaGraphs/issues
+Imports: sfnetworks, sf, terra, leaflet, leaflet.minicharts,
+        leaflet.extras2, methods, stats
+Depends: R (>= 4.1.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2025-08-22 08:59:21 UTC; Administrator
+Author: Nikolaos Nagkoulis [aut] (ORCID:
+    <https://orcid.org/0000-0002-1900-2634>),
+  Christos Adam [aut, cre] (ORCID:
+    <https://orcid.org/0009-0003-3244-7034>),
+  Ioannis G. Mamoutos [aut] (ORCID:
+    <https://orcid.org/0000-0002-2697-2620>),
+  Antonios D. Mazaris [aut] (ORCID:
+    <https://orcid.org/0000-0002-4961-5490>),
+  Stelios Katsanevakis [aut] (ORCID:
+    <https://orcid.org/0000-0002-5137-7540>)
+Repository: CRAN
+Date/Publication: 2025-08-22 09:20:08 UTC

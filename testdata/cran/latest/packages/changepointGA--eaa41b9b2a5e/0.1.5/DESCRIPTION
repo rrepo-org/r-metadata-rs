@@ -1,0 +1,35 @@
+Package: changepointGA
+Type: Package
+Title: Changepoint Detection via Modified Genetic Algorithms
+Version: 0.1.5
+Date: 2026-05-18
+Authors@R: c(
+           person(given = "Mo",
+                  family = "Li",
+                  role = c("aut", "cre"),
+                  email = "mo.li@louisiana.edu"),
+           person(given = "QiQi", 
+                  family = "Lu", 
+                  role = "aut", 
+                  email = "qlu2@vcu.edu")
+            )
+Description: The Genetic Algorithm (GA) is used to perform changepoint analysis in time series data. The package also includes an extended island version of GA, as described in Lu, Lund, and Lee (2010, <doi:10.1214/09-AOAS289>). By mimicking the principles of natural selection and evolution, GA provides a powerful stochastic search technique for solving combinatorial optimization problems. In 'changepointGA', each chromosome represents a changepoint configuration, including the number and locations of changepoints, hyperparameters, and model parameters. The package employs genetic operators—selection, crossover, and mutation—to iteratively improve solutions based on the given fitness (objective) function. Key features of 'changepointGA' include encoding changepoint configurations in an integer format, enabling dynamic and simultaneous estimation of model hyperparameters, changepoint configurations, and associated parameters. The detailed algorithmic implementation can be found in the package vignettes and in the paper of Li (2024, <doi:10.48550/arXiv.2410.15571>).
+License: MIT + file LICENSE
+Depends: R (>= 4.3.0)
+Imports: methods, foreach, doParallel, Rcpp, clue, stats, utils
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: C++17
+URL: https://github.com/mli171/changepointGA
+BugReports: https://github.com/mli171/changepointGA/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-18 11:40:47 UTC; mli171
+Author: Mo Li [aut, cre],
+  QiQi Lu [aut]
+Maintainer: Mo Li <mo.li@louisiana.edu>
+Repository: CRAN
+Date/Publication: 2026-05-18 15:50:02 UTC

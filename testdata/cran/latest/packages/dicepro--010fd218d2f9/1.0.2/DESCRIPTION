@@ -1,0 +1,44 @@
+Package: dicepro
+Title: Semi-Supervised Deconvolution of Bulk RNA-Seq Data with
+        Hyperparameter Optimization
+Version: 1.0.2
+Authors@R: c(
+    person("Kalidou", "BA",
+           role  = c("aut", "cre"),
+           email = "sistm.soft.maintain@gmail.com"),
+    person("Boris P.", "Hejblum",
+           role  = "aut",
+           email = "boris.hejblum@u-bordeaux.fr"))
+Description: Performs semi-supervised deconvolution of bulk RNA sequencing
+    (RNA-seq) data. Known cell-type proportions are estimated using
+    supervised methods -- 'CIBERSORTx' (CSx), 'CIBERSORT' (CS), 'FARDEEP' (Fast
+    And Robust DEconvolution of Expression Profiles), and 'DCQ' (Digital
+    Cell Quantifier) -- while unknown components are inferred using
+    non-negative matrix factorization ('NMF') with limited-memory
+    Broyden-Fletcher-Goldfarb-Shanno with bounds ('L-BFGS-B') optimization.
+    Hyperparameters are selected automatically using a Pareto-frontier-based
+    approach with knee-point detection, allowing application when the
+    reference signature matrix is incomplete. More details about 'DICEpro' can 
+    be found in Ba et al. (2026) <doi:10.64898/2026.06.17.732876>.
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+License: MIT + file LICENSE
+LazyData: true
+LazyDataCompression: xz
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LinkingTo: Rcpp (>= 1.0.12), RcppEigen
+Imports: Rcpp (>= 1.0.12), lbfgsb3c, KraljicMatrix, ggplot2, patchwork,
+        FARDEEP, ComICS, lme4, e1071, preprocessCore, parallel
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://github.com/kalidouBA/dicepro
+BugReports: https://github.com/kalidouBA/dicepro/issues
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-06-24 10:46:56 UTC; kalidou
+Author: Kalidou BA [aut, cre],
+  Boris P. Hejblum [aut]
+Maintainer: Kalidou BA <sistm.soft.maintain@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 12:20:14 UTC

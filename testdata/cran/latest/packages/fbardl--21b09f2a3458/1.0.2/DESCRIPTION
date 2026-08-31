@@ -1,0 +1,40 @@
+Package: fbardl
+Type: Package
+Title: Fourier Bootstrap ARDL Cointegration Test
+Version: 1.0.2
+Authors@R: c(
+    person("Muhammad", "Alkhalaf", 
+           email = "muhammedalkhalaf@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-2677-9246")),
+    person("Merwan", "Roudane",
+           role = "ctb",
+           comment = "Original Stata implementation"))
+Description: Implements the Fourier Bootstrap Autoregressive Distributed Lag 
+    (FBARDL) bounds testing approach for cointegration analysis. Combines the 
+    Pesaran, Shin & Smith (2001) <doi:10.1002/jae.616> ARDL bounds testing 
+    framework with Fourier terms to capture structural breaks following 
+    Yilanci, Bozoklu & Gorus (2020) <doi:10.1080/00036846.2019.1686454>, 
+    and bootstrap critical values based on McNown, Sam & Goh (2018) 
+    <doi:10.1080/00036846.2017.1366643> and Bertelli, Vacca & Zoia (2022) 
+    <doi:10.1016/j.econmod.2022.105987>. Features include automatic lag 
+    selection via AIC/BIC, optimal Fourier frequency selection by minimum 
+    SSR, long-run and short-run coefficient estimation, diagnostic tests, 
+    and dynamic multiplier analysis.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+LazyData: true
+RoxygenNote: 7.3.3
+URL: https://github.com/muhammedalkhalaf/fbardl
+BugReports: https://github.com/muhammedalkhalaf/fbardl/issues
+NeedsCompilation: no
+Packaged: 2026-03-08 11:05:20 UTC; acad_
+Author: Muhammad Alkhalaf [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-2677-9246>),
+  Merwan Roudane [ctb] (Original Stata implementation)
+Maintainer: Muhammad Alkhalaf <muhammedalkhalaf@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-12 08:40:02 UTC

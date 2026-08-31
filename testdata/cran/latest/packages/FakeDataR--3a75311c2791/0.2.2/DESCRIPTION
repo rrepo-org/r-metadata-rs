@@ -1,0 +1,26 @@
+Package: FakeDataR
+Title: Privacy-Preserving Synthetic Data for 'LLM' Workflows
+Version: 0.2.2
+Authors@R: 
+    person(given = "Zobaer", family = "Ahmed",
+           email = "zunnun09@gmail.com",
+           role = c("aut","cre"))
+Description: Generate privacy-preserving synthetic datasets that mirror structure, types, factor levels, and missingness; export bundles for 'LLM' workflows (data plus 'JSON' schema and guidance); and build fake data directly from 'SQL' database tables without reading real rows. Methods are related to approaches in Nowok, Raab and Dibben (2016) <doi:10.32614/RJ-2016-019> and the foundation-model overview by Bommasani et al. (2021) <doi:10.48550/arXiv.2108.07258>.
+License: MIT + file LICENSE
+URL: https://zobaer09.github.io/FakeDataR/,
+        https://github.com/zobaer09/FakeDataR
+BugReports: https://github.com/zobaer09/FakeDataR/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, jsonlite, zip
+Suggests: readr, testthat (>= 3.0.0), knitr, rmarkdown, DBI, RSQLite,
+        tibble, nycflights13, palmerpenguins, gapminder, arrow, withr
+VignetteBuilder: knitr, rmarkdown
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-09-30 03:48:13 UTC; Zobaer Ahmed
+Author: Zobaer Ahmed [aut, cre]
+Maintainer: Zobaer Ahmed <zunnun09@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-06 08:10:19 UTC

@@ -1,0 +1,23 @@
+Package: ui
+Title: Uncertainty Intervals and Sensitivity Analysis for Missing Data
+Version: 1.0.1
+Authors@R: 
+    c(
+      person("Minna", "Genbäck", email = "minna.genback@umu.se", role = c("aut", "cre")),
+      person("Tetiana", "Gorbach", email = "tetiana.gorbach@umu.se", role = "aut")
+    )
+Description: Implements functions to derive uncertainty intervals for (i) regression (linear and probit) parameters under missing not at random (non-ignorable missingness) as introduced in Genbäck, M., Stanghellini, E., and de Luna, X. (2015) <doi:10.1007/s00362-014-0610-x> and Genbäck, M., Ng, N., Stanghellini, E., and de Luna, X. (2018) <doi:10.1007/s10433-017-0448-x>. Also includes methods for doubly robust and outcome regression estimators of average causal effects under unobserved confounding as in Genbäck, M. and de Luna, X. (2018) <doi:10.1111/biom.13001>, and for partial correlation analysis following Gorbach, T. and de Luna, X. (2018) <doi:10.1016/j.spl.2018.05.027>.
+Depends: R (>= 4.1)
+Imports: Matrix, maxLik, mvtnorm, numDeriv, graphics, stats, dplyr,
+        plotly, ggplot2
+Suggests: MASS, testthat (>= 3.0.0)
+Encoding: UTF-8
+License: GPL-3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-25 08:36:31 UTC; miahjr04
+Author: Minna Genbäck [aut, cre],
+  Tetiana Gorbach [aut]
+Maintainer: Minna Genbäck <minna.genback@umu.se>
+Repository: CRAN
+Date/Publication: 2026-06-25 11:00:02 UTC

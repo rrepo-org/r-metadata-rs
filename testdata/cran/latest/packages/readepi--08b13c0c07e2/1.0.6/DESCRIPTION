@@ -1,0 +1,63 @@
+Package: readepi
+Title: Read Data from Relational Database Management Systems and Health
+        Information Systems
+Version: 1.0.6
+Authors@R: c(
+    person("Karim", "Mané", , "karim.mane@lshtm.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0002-9892-2999")),
+    person("Emmanuel", "Kabuga", , "kabuga@aims.ac.za", role = "aut",
+           comment = c(ORCID = "0009-0006-2291-709X")),
+    person("Bubacarr", "Bah", , "Bubacarr.Bah1@lshtm.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3318-6668")),
+    person("Bankolé", "Ahadzie", , "Bankole.Ahadzie@lshtm.ac.uk", role = "ctb"),
+    person("Nuredin", "Mohammed", , "Nuredin.Mohammed@lshtm.ac.uk", role = "ctb"),
+    person("Abdoelnaser", "Degoot", , "abdoelnaser-mahmood.degoot@lshtm.ac.uk", role = "ctb"),
+    person("Hugo", "Gruson", , "hugo@data.org", role = "rev",
+           comment = c(ORCID = "0000-0002-4094-1476")),
+    person("Pratik", "Gupte", , "pratik.gupte@lshtm.ac.uk", role = "rev",
+           comment = c(ORCID = "0000-0001-5294-7819")),
+    person("Andree", "Valle-Campos", , "andree.valle-campos@lshtm.ac.uk", role = "rev",
+           comment = c(ORCID = "0000-0002-7779-481X")),
+    person("London School of Hygiene and Tropical Medicine, LSHTM", role = "cph"),
+    person("data.org", role = "fnd")
+  )
+Description: Import Data from Relational Database Management Systems
+    (RDBMS) and Health Information Systems ('HIS'). The current version of the
+    package supports importing data from RDBMS including 'MS SQL', 'MySQL',
+    'PostGRESQL', and 'SQLite', as well as from two HIS platforms: 'DHIS2' and
+    'SORMAS'.
+License: MIT + file LICENSE
+URL: https://epiverse-trace.github.io/readepi/,
+        https://github.com/epiverse-trace/readepi/,
+        https://github.com/epiverse-trace/readepi
+BugReports: https://github.com/epiverse-trace/readepi/issues
+Depends: R (>= 4.1.0)
+Imports: checkmate, cli, DBI, dplyr, httr2, odbc, pool, purrr, RMySQL,
+        RSQLite, tidyr
+Suggests: cyclocomp, DiagrammeR, httptest, kableExtra, knitr,
+        rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/Needs/website: epiverse-trace/epiversetheme
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+SystemRequirements: odbc, libmariadbclient-dev
+NeedsCompilation: no
+Packaged: 2026-04-23 11:55:55 UTC; r
+Author: Karim Mané [aut] (ORCID: <https://orcid.org/0000-0002-9892-2999>),
+  Emmanuel Kabuga [aut] (ORCID: <https://orcid.org/0009-0006-2291-709X>),
+  Bubacarr Bah [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3318-6668>),
+  Bankolé Ahadzie [ctb],
+  Nuredin Mohammed [ctb],
+  Abdoelnaser Degoot [ctb],
+  Hugo Gruson [rev] (ORCID: <https://orcid.org/0000-0002-4094-1476>),
+  Pratik Gupte [rev] (ORCID: <https://orcid.org/0000-0001-5294-7819>),
+  Andree Valle-Campos [rev] (ORCID:
+    <https://orcid.org/0000-0002-7779-481X>),
+  London School of Hygiene and Tropical Medicine, LSHTM [cph],
+  data.org [fnd]
+Maintainer: Bubacarr Bah <Bubacarr.Bah1@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-04-23 14:40:45 UTC

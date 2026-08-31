@@ -1,0 +1,26 @@
+Package: wompwomp
+Version: 0.99.0
+Date: 2026-06-23
+Title: Optimizing Alluvial Plots
+Authors@R: c(person("Joseph", "Rich", role = c("aut", "cre"), email = "jmrich@caltech.edu", comment = c(ORCID = "0000-0003-1400-8479")), person("Conrad", "Oakes", role = "aut", email = "coakes@caltech.edu"), person("Lior", "Pachter", role = "aut", comment = c(ORCID = "0000-0002-9164-6231")))
+Description: Sort k-partite graphs with node order, layer order, and node grouping optimized with a heuristic to (nearly) minimize edge crossings. Useful for improving visualizations with alluvial plots by "untangling" the graphs.
+License: MIT + file LICENSE
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Imports: dplyr, igraph, tibble, rlang, tidyr, purrr, TSP, R6, stats,
+        tidyselect, vctrs, utils
+Depends: R (>= 4.1.0)
+Suggests: testthat, vdiffr, magick, knitr, rmarkdown, gtools, mclust,
+        here, stringr, reticulate, ggplot2, ggalluvial, sessioninfo
+Config/testthat/edition: 3
+URL: https://github.com/pachterlab/wompwomp
+BugReports: https://github.com/pachterlab/wompwomp/issues
+NeedsCompilation: no
+Packaged: 2026-06-23 09:38:00 UTC; joeyrich
+Author: Joseph Rich [aut, cre] (ORCID: <https://orcid.org/0000-0003-1400-8479>),
+  Conrad Oakes [aut],
+  Lior Pachter [aut] (ORCID: <https://orcid.org/0000-0002-9164-6231>)
+Maintainer: Joseph Rich <jmrich@caltech.edu>
+Repository: CRAN
+Date/Publication: 2026-06-29 13:50:02 UTC

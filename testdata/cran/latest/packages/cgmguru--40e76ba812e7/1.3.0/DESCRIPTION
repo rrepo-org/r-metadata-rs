@@ -1,0 +1,41 @@
+Package: cgmguru
+Type: Package
+Title: Advanced Continuous Glucose Monitoring Analysis with
+        High-Performance C++ Backend
+Version: 1.3.0
+Authors@R: c(person(given = c("Sang", "Ho"),
+                        family = "Park",
+                        role = c("aut", "cre"),
+                        email = "shstat1729@gmail.com"),
+                 person(given = "Rosa",
+                        family = "Oh",
+                        role = c("aut", "ctb")),
+                 person(given = "Sang-Man",
+                        family = "Jin",
+                        role = c("aut", "ctb")))
+Maintainer: Sang Ho Park <shstat1729@gmail.com>
+Description: Tools for advanced analysis of continuous glucose monitoring (CGM)
+    time-series, implementing GRID (Glucose Rate Increase Detector) and GRID-based
+    algorithms for postprandial peak detection, and detection of hypoglycemic and
+    hyperglycemic episodes (Levels 1/2/Extended) aligned with international consensus
+    CGM metrics. Core algorithms are implemented in optimized C++ using 'Rcpp' to
+    provide accurate and fast analysis on large datasets.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp
+Imports: Rcpp
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, iglu, dplyr, covr,
+        ggplot2, microbenchmark
+VignetteBuilder: knitr
+URL: https://github.com/shstat1729/cgmguru,
+        https://shstat1729.github.io/cgmguru/
+BugReports: https://github.com/shstat1729/cgmguru/issues
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-08-20 11:46:46 UTC; sanghopark
+Author: Sang Ho Park [aut, cre],
+  Rosa Oh [aut, ctb],
+  Sang-Man Jin [aut, ctb]
+Repository: CRAN
+Date/Publication: 2026-08-21 05:44:51 UTC

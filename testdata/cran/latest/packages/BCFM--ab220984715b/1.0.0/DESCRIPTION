@@ -1,0 +1,37 @@
+Package: BCFM
+Type: Package
+Title: Bayesian Clustering Factor Models
+Version: 1.0.0
+Authors@R: c(
+    person("Allison", "Tegge", email = "ategge@vt.edu", role = "aut"),
+    person("Marco", "Ferreira", email = "marf@vt.edu", role = "aut"),
+    person("Hwasoo", "Shin", email = "hshin2@hfhs.org", role = "aut"),
+    person("Meriem", "Touami", email = "meriemt@vt.edu", role = c("aut", "cre")))
+Description: Implements the Bayesian Clustering Factor Models (BCFM) for 
+    simultaneous clustering and latent factor analysis of multivariate longitudinal data. 
+    The model accounts for within-cluster dependence through shared latent factors while allowing heterogeneity across clusters, enabling flexible covariance modeling in high-dimensional settings. 
+    Inference is performed using Markov chain Monte Carlo (MCMC) methods with computationally intensive steps implemented via 'Rcpp'. 
+    Model selection and visualization tools are provided. The methodology is described in Shin, Ferreira, and Tegge (2018) <doi:10.1002/sim.70350>.
+License: GPL (>= 3)
+SystemRequirements: pandoc (>= 1.12.3) for building vignettes
+Imports: Rcpp, RcppArmadillo, dplyr, fastmatrix, ggplot2, grDevices,
+        gridExtra, LaplacesDemon, mvtnorm, psych, RColorBrewer, stats,
+        tidyr, ggpubr, tibble
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+URL: https://github.com/ategge/BCFM
+BugReports: https://github.com/ategge/BCFM/issues
+NeedsCompilation: yes
+Packaged: 2026-02-07 03:28:36 UTC; meriem
+Author: Allison Tegge [aut],
+  Marco Ferreira [aut],
+  Hwasoo Shin [aut],
+  Meriem Touami [aut, cre]
+Maintainer: Meriem Touami <meriemt@vt.edu>
+Repository: CRAN
+Date/Publication: 2026-02-10 20:20:10 UTC

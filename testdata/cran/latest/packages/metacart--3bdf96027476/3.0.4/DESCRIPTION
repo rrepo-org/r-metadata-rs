@@ -1,0 +1,40 @@
+Package: metacart
+Type: Package
+Title: Meta-CART: A Flexible Approach to Identify Moderators in
+        Meta-Analysis
+Version: 3.0.4
+Encoding: UTF-8
+Authors@R: c(person(given = "Xinru",
+                      family = "Li",
+                      role = "aut"),
+               person(given = "Elise",
+                      family = "Dusseldorp",
+                      role = c("aut", "cph")),
+               person(given = "Kaihua",
+                      family = "Liu",
+                      role = "ctb",
+                      comment = "supported with the plot function"),
+               person(given = "Juan",
+                      family = "Claramunt",
+                      role = c("aut", "cre"),
+                      email = "j.claramunt.gonzalez@fsw.leidenuniv.nl"),
+               person(given = "Jacqueline",
+                      family = "Meulman",
+                      role = "ctb"))
+Author: Xinru Li [aut],
+  Elise Dusseldorp [aut, cph],
+  Kaihua Liu [ctb] (supported with the plot function),
+  Juan Claramunt [aut, cre],
+  Jacqueline Meulman [ctb]
+Maintainer: Juan Claramunt <j.claramunt.gonzalez@fsw.leidenuniv.nl>
+Description: Meta-CART integrates classification and regression trees (CART) into meta-analysis. Meta-CART is a flexible approach to identify interaction effects between moderators in meta-analysis. The method is described in Dusseldorp et al. (2014) <doi:10.1037/hea0000018> and Li et al. (2017) <doi:10.1111/bmsp.12088>.
+LazyData: TRUE
+Depends: R (>= 3.0.2), stats, ggplot2, gridExtra, methods, rpart
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-08-18 07:50:44 UTC; prueba
+Repository: CRAN
+Date/Publication: 2025-08-18 09:00:02 UTC

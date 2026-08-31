@@ -1,0 +1,40 @@
+Package: risdr
+Title: Regularised and Information-Theoretic Sufficient Dimension
+        Reduction
+Version: 0.3.1
+Authors@R: 
+    person("Kabir", "Olorede", email = "kabirolorede@gmail.com", role = c("aut", "cre"))
+Description: Implements covariance-stabilised sufficient dimension reduction
+ for continuous responses with information-theoretic structural dimension
+ selection. Supported methods include sliced inverse regression, sliced
+ average variance estimation, directional regression, and principal Hessian
+ directions. Sample, ridge, Oracle Approximating Shrinkage, Ledoit-Wolf, and
+ Maximum Entropy Covariance (MEC) estimators are provided alongside
+ prediction, resampling, simulation, and diagnostic utilities. The
+ sufficient dimension reduction
+ methods build on Li (1991) <doi:10.1080/01621459.1991.10475035>, Li (1992)
+ <doi:10.1080/01621459.1992.10476258>, and Li and Wang (2007)
+ <doi:10.1198/016214507000000536>. Covariance shrinkage follows Olorede and
+ Yahya (2019) <doi:10.48550/arXiv.1909.13017>, Ledoit and
+ Wolf (2004) <doi:10.1016/S0047-259X(03)00096-4> and Chen et al. (2010)
+ <doi:10.1109/TSP.2010.2053029>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.3
+Imports: stats, graphics, utils, MASS, Matrix
+Suggests: dplyr, knitr, readr, rmarkdown, testthat (>= 3.0.0), VIM
+Config/testthat/edition: 3
+Config/Needs/coverage: covr, xml2
+Config/Needs/website: r-lib/pkgdown
+VignetteBuilder: knitr, rmarkdown
+URL: https://github.com/ilovemaths/risdr,
+        https://ilovemaths.github.io/risdr/
+BugReports: https://github.com/ilovemaths/risdr/issues
+NeedsCompilation: no
+Packaged: 2026-07-19 20:33:30 UTC; DR OLOREDE
+Author: Kabir Olorede [aut, cre]
+Maintainer: Kabir Olorede <kabirolorede@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-28 16:40:02 UTC

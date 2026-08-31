@@ -1,0 +1,24 @@
+Package: aisdk.providers
+Title: Additional Model Provider Adapters for the 'aisdk' Toolkit
+Version: 0.1.0
+Authors@R: person("Yonghe", "Xia", , "xiayh17@gmail.com", role = c("aut", "cre"))
+Description: Additional AI model provider adapters for the 'aisdk' toolkit,
+    covering OpenAI-compatible and Anthropic-compatible services such as
+    'DeepSeek', 'Moonshot'/'Kimi', 'Stepfun', 'Volcengine', 'AiHubMix',
+    'xAI', 'OpenRouter', 'Bailian', and 'NVIDIA'. Providers register themselves
+    with the core 'aisdk' provider registry on load.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: aisdk (>= 1.4.12), R6, rlang, base64enc, jsonlite, curl, utils
+Suggests: withr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/YuLab-SMU/aisdk.providers
+BugReports: https://github.com/YuLab-SMU/aisdk.providers/issues
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-06-02 10:47:44 UTC; xiayh
+Author: Yonghe Xia [aut, cre]
+Maintainer: Yonghe Xia <xiayh17@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-08 17:50:20 UTC

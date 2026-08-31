@@ -1,0 +1,45 @@
+Package: exactGMH
+Type: Package
+Title: Exact and Permutation-Based Mantel Tests for Differential Item
+        Functioning in Dichotomous and Polytomous Items
+Version: 0.1.0
+Authors@R: c(
+    person("Tri Zahra", "Ningsih", email = "trizahra10019@gmail.com", role = c("aut", "cre")),
+    person("Aman", role = "aut"),
+    person("Ahmad", "Nasrulloh", role = "aut"),
+    person("Hera", "Hastuti", email = "herahastuti@fis.unp.ac.id", role = "aut"),
+    person("Suci Kurnia", "Putri", role = "aut"))
+Description: Screens dichotomous and polytomous test items for
+    Differential Item Functioning (DIF) using an extension of the
+    Mantel (1963) <doi:10.1080/01621459.1963.10500879> and generalized
+    Mantel-Haenszel statistic, with statistical significance computed
+    via permutation rather than the conventional asymptotic
+    chi-square approximation. Following Hemerik and Goeman (2018)
+    <doi:10.1007/s11749-017-0571-1>, the permutation p-value is exact
+    at the nominal level rather than an approximation, even for a
+    finite number of permutations. This makes the test valid for
+    small samples (fewer than 200 examinees per group), a condition
+    common in classroom-, program-, and institution-level assessment
+    where existing exact-inference options in other software are
+    restricted to dichotomous items only. An optional
+    Benjamini-Hochberg or Bonferroni correction addresses multiple
+    comparisons when screening many items at once.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 4.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), shiny
+Config/testthat/edition: 3
+URL: https://github.com/exactGMH-project/exactGMH
+BugReports: https://github.com/exactGMH-project/exactGMH/issues
+NeedsCompilation: no
+Packaged: 2026-08-04 16:17:04 UTC; root
+Author: Tri Zahra Ningsih [aut, cre],
+  Aman [aut],
+  Ahmad Nasrulloh [aut],
+  Hera Hastuti [aut],
+  Suci Kurnia Putri [aut]
+Maintainer: Tri Zahra Ningsih <trizahra10019@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-09 08:10:06 UTC

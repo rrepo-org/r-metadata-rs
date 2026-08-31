@@ -1,0 +1,29 @@
+Package: FunctionalCalibration
+Type: Package
+Title: Aggregated Functional Data Calibration using Splines and
+        Wavelets
+Version: 2.0.0
+Authors@R: c(
+    person("Vitor", "Perrone", email = "vitor.perrone10@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0009-0009-6923-7712")),
+    person("Alex", "Sousa", email = "asousa@unicamp.br", role = c("aut"), comment = c(ORCID = "0000-0001-5887-3638"))
+  )
+Description: Implements methods for calibrating an aggregated functional data model using 
+    wavelets or splines. Each aggregated curve is modeled as a linear combination of 
+    component functions and known weights. The component functions are estimated using 
+    wavelets or splines. The package is based on dos Santos Sousa (2024) <doi:10.1515/mcma-2023-2016>, 
+    Saraiva and Dias (2009) <doi:10.47749/T/UNICAMP.2009.471073> and Johnstone and Silverman (1997) <doi:10.1111/1467-9868.00071>.
+URL: https://github.com/VitorRibasP/FunctionalCalibration
+Imports: wavethresh
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-08-02 13:20:45 UTC; vitor
+Author: Vitor Perrone [aut, cre] (ORCID:
+    <https://orcid.org/0009-0009-6923-7712>),
+  Alex Sousa [aut] (ORCID: <https://orcid.org/0000-0001-5887-3638>)
+Maintainer: Vitor Perrone <vitor.perrone10@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-02 18:40:12 UTC

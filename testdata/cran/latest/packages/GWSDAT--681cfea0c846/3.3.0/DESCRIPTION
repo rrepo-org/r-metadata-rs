@@ -1,0 +1,26 @@
+Package: GWSDAT
+Title: GroundWater Spatiotemporal Data Analysis Tool (GWSDAT)
+Version: 3.3.0
+Authors@R: c(person(given = "Wayne",
+                      family = "Jones",
+                      role = c("aut", "cre"),
+                      email = "wayne.w.jones@shell.com"))
+Maintainer: Wayne Jones <wayne.w.jones@shell.com>
+Description: Shiny application for the analysis of groundwater
+    monitoring data, designed to work with simple time-series data for
+    solute concentration and ground water elevation, but can also plot
+    non-aqueous phase liquid (NAPL) thickness if required. Also provides
+    the import of a site basemap in GIS shapefile format.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: deldir, digest, geometry, Kendall, lattice, lubridate, MASS,
+        Matrix, officer (>= 0.3.8), raster, readxl, rhandsontable, sf,
+        shiny, shinycssloaders, shinydashboard, shinyjs, sm, sp,
+        splancs, zoo
+Suggests: DBI, RSQLite
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-02-06 07:34:01 UTC; Wayne.W.Jones
+Author: Wayne Jones [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-02-06 08:00:02 UTC

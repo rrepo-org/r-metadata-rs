@@ -1,0 +1,22 @@
+Package: dryingkineticmodels
+Title: Drying Kinetic Models Comparison and Analysis
+Version: 1.0.0
+Authors@R: c(
+    person("Joshy", "C G", email = "cgjoshy@gmail.com", role = c("aut", "cre")),
+    person("Devika", "S", email = "devikas2104@gmail.com", role = "aut"))
+Description: Fits multiple thin-layer drying kinetic models to experimental moisture ratio data, compares model performance using statistical criteria, performs residual diagnostics, identifies the best-fitting model, and exports results to Word documents. Twenty models from Ertekin and Firat (2017) <doi:10.1016/j.jfoodeng.2016.09.030> are fitted using the Levenberg-Marquardt algorithm described in Marquardt (1963) <doi:10.1137/0111030>.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: readxl, lmtest, minpack.lm, tseries, officer, flextable
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-12 07:50:54 UTC; Sanand
+Author: Joshy C G [aut, cre],
+  Devika S [aut]
+Maintainer: Joshy C G <cgjoshy@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 11:10:08 UTC

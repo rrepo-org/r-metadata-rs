@@ -1,0 +1,23 @@
+Type: Package
+Package: MonteCarloSEM
+Title: Monte Carlo Simulation for Structural Equation Modeling
+Version: 2.0.0
+Authors@R: person(given = "Fatih", family = "Orçan", role = c("aut", "cre"), 
+  email = "fatihorcan84@gmail.com", 
+  comment = c(ORCID = "0000-0003-1727-0456"))
+Description: Provides tools to conduct Monte Carlo simulations under different conditions (e.g., varying sample size, data normality) for structural equation models (SEMs).
+  Data can be simulated based on user-defined factor loadings and correlations, with optional non-normality added via Fleishman's power method (1978) <doi:10.1007/BF02293811>.
+  Once generated, models can be estimated using 'lavaan'. This package facilitates testing model performance across multiple simulation scenarios.
+  When data generation is completed (or when generated data sets are given) model tests can also be run.
+  Please cite as "Orçan, F. (2021). MonteCarloSEM An R Package to Simulate Data for SEM. International Journal of Assessment Tools in Education, 8 (3), 704-713."
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: Matrix, stats, utils, lavaan
+Copyright: Fatih Orçan, Kahramanmaraş Sütçü İmam University, Türkiye
+NeedsCompilation: no
+Packaged: 2026-01-28 09:26:45 UTC; USER
+Author: Fatih Orçan [aut, cre] (ORCID: <https://orcid.org/0000-0003-1727-0456>)
+Maintainer: Fatih Orçan <fatihorcan84@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-28 13:40:07 UTC

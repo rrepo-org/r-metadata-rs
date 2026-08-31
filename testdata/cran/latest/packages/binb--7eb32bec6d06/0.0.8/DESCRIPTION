@@ -1,0 +1,35 @@
+Package: binb
+Type: Package
+Title: 'binb' is not 'Beamer'
+Version: 0.0.8
+Date: 2026-05-01
+Authors@R: c(person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
+                    comment = c(ORCID = "0000-0001-6419-907X")),
+             person("Ista", "Zahn", role = "aut",
+                    comment = c(ORCID = "0009-0009-7604-6420")),
+             person("Rob", "Hyndman", role = "aut",
+                    comment = c(ORCID = "0000-0002-2140-5352")))
+Description: A collection of 'LaTeX' styles using 'Beamer' customization for
+ pdf-based presentation slides in 'RMarkdown'. At present it contains
+ 'RMarkdown' adaptations of the LaTeX themes 'Metropolis' (formerly 'mtheme')
+ theme by Matthias Vogelgesang and others (now included in 'TeXLive'), the
+ 'IQSS' them by Ista Zahn (which is included here), and the 'Monash' theme by
+ Rob J Hyndman. Additional (free) fonts may be needed: 'Metropolis' prefers
+ 'Fira', and 'IQSS' requires 'Libertinus'.
+URL: https://github.com/eddelbuettel/binb,
+        https://dirk.eddelbuettel.com/code/binb.html
+BugReports: https://github.com/eddelbuettel/binb/issues
+Imports: rmarkdown, knitr, codetools
+VignetteBuilder: knitr
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2026-05-01 12:20:55 UTC; edd
+Author: Dirk Eddelbuettel [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6419-907X>),
+  Ista Zahn [aut] (ORCID: <https://orcid.org/0009-0009-7604-6420>),
+  Rob Hyndman [aut] (ORCID: <https://orcid.org/0000-0002-2140-5352>)
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Repository: CRAN
+Date/Publication: 2026-05-01 12:40:02 UTC

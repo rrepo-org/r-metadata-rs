@@ -1,0 +1,23 @@
+Package: SampleSizeCalculator
+Type: Package
+Title: Sample Size Calculator under Complex Survey Design
+Version: 0.1.0
+Authors@R: c( person("Nobin Chandra", "Paul", role = c("aut", "cre", "cph"), email = "ncp375@gmail.com"),  person("Pradip","Basak",role=c("aut","cph"),email="pradipbasak.99@gmail.com"))
+Depends: R(>= 2.10)
+Suggests: roxygen2, knitr, rmarkdown, testthat (>= 3.0.0)
+Description: It helps in determination of sample size for estimating population mean or proportion under simple random sampling with or without replacement and stratified random sampling without replacement.
+             When prior information on the population coefficient of variation (CV) is unavailable, then a preliminary sample is drawn to estimate the CV which is used to compute the final sample size. If the final
+             size exceeds the preliminary sample size, then additional units are drawn; otherwise, the preliminary sample size is considered as final sample size. For stratified random sampling without replacement design,
+             it also calculates the sample size in each stratum under different allocation methods for estimation of population mean and proportion based upon the availability of prior information on sizes of the strata,
+             standard deviations of the strata and costs of drawing a sampling unit in the strata.For details on sampling methodology, see, Cochran (1977) "Sampling Techniques" <https://archive.org/details/samplingtechniqu0000coch_t4x6>. 
+License: GPL (>= 2.0)
+Encoding: UTF-8
+Imports: stats, shiny, shinythemes, DT, bslib
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-08-22 09:34:14 UTC; Asus
+Author: Nobin Chandra Paul [aut, cre, cph],
+  Pradip Basak [aut, cph]
+Maintainer: Nobin Chandra Paul <ncp375@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-08-27 16:40:08 UTC

@@ -1,0 +1,53 @@
+Package: distributions3
+Title: Probability Distributions as S3 Objects
+Version: 0.3.0
+Authors@R: c(
+    person(given = "Alex", family = "Hayes", email = "alexpghayes@gmail.com", role = "aut", comment = c(ORCID = "0000-0002-4985-5160")),
+    person(given = "Ralph", family = "Moller-Trane", role = "aut", comment = c(ORCID = "0000-0001-7824-1785")),
+    person(given = "Daniel", family = "Jordan", email = "dandermotj@gmail.com", role = "aut"),
+    person(given = "Paul", family = "Northrop", email = "p.northrop@ucl.ac.uk", role = "aut", comment = c(ORCID = "0000-0002-1992-4882")),
+    person(given = c("Moritz", "N."), family = "Lang", email = "moritz.n.lang@gmail.com", role = "aut", comment = c(ORCID = "0000-0002-2533-9903")),
+    person(given = "Reto", family = "Stauffer", email = "reto.stauffer@uibk.ac.at", role = "aut", comment = c(ORCID = "0000-0002-3798-5507")),
+    person(given = "Achim", family = "Zeileis", email = "Achim.Zeileis@R-project.org", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0918-3766")),
+    person(given = "Emil", family = "Hvitfeldt", email = "emilhhvitfeldt@gmail.com", role = "ctb", comment = c(ORCID = "0000-0002-0679-1945")),
+    person(given = "Bruna", family = "Wundervald", email = "brunadaviesw@gmail.com", role = "ctb", comment = c(ORCID = "0000-0001-8163-220X")),
+    person(given = "Alessandro", family = "Gasparini", email = "alessandro.gasparini@ki.se", role = "ctb", comment = c(ORCID = "0000-0002-8319-7624"))
+  )
+Description: Tools to create and manipulate probability distributions
+    using S3.  Generics pdf(), cdf(), quantile(), and random() provide
+    replacements for base R's d/p/q/r style functions.  Functions and
+    arguments have been named carefully to minimize confusion for students
+    in intro stats courses. The documentation for each distribution
+    contains detailed mathematical notes.
+License: MIT + file LICENSE
+URL: https://github.com/zeileis/distributions3,
+        https://zeileis.github.io/distributions3/
+BugReports: https://github.com/zeileis/distributions3/issues
+Depends: R (>= 3.0.2)
+Imports: rlang
+Suggests: cowplot, crch (>= 1.1-1), ggplot2 (>= 3.4.0), knitr,
+        numDeriv, PoissonBinomial, revdbayes (>= 1.3.5), rmarkdown,
+        scoringRules, testthat (>= 3.0.0), tibble, vctrs
+VignetteBuilder: knitr
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-19 19:29:03 UTC; zeileis
+Author: Alex Hayes [aut] (ORCID: <https://orcid.org/0000-0002-4985-5160>),
+  Ralph Moller-Trane [aut] (ORCID:
+    <https://orcid.org/0000-0001-7824-1785>),
+  Daniel Jordan [aut],
+  Paul Northrop [aut] (ORCID: <https://orcid.org/0000-0002-1992-4882>),
+  Moritz N. Lang [aut] (ORCID: <https://orcid.org/0000-0002-2533-9903>),
+  Reto Stauffer [aut] (ORCID: <https://orcid.org/0000-0002-3798-5507>),
+  Achim Zeileis [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0918-3766>),
+  Emil Hvitfeldt [ctb] (ORCID: <https://orcid.org/0000-0002-0679-1945>),
+  Bruna Wundervald [ctb] (ORCID: <https://orcid.org/0000-0001-8163-220X>),
+  Alessandro Gasparini [ctb] (ORCID:
+    <https://orcid.org/0000-0002-8319-7624>)
+Maintainer: Achim Zeileis <Achim.Zeileis@R-project.org>
+Repository: CRAN
+Date/Publication: 2026-08-20 05:21:11 UTC

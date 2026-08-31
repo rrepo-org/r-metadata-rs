@@ -1,0 +1,50 @@
+Package: JumpDiffSim
+Type: Package
+Title: Jump Diffusion Simulation and Calibration for Merton and Kou
+        Models
+Version: 0.1.0
+Authors@R: c(
+    person(
+      given = c ("Kennedy", "Titus"),
+      family = "Kayaki",
+      email = "kennedy_2244@yu.ac.kr",
+      role = c("aut", "cre")),
+    person (given = "Dohyun", family = "Oh", role = "aut"),
+    person (given = "Ju Seong", family = "Hyeon", role = "aut"),
+    person (given = "Lee", family = "Se Eun", role = "aut"),
+    person (given = "Choi", family = "Jiwoo", role = "aut"),
+    person (given = "Yuri", family = "Shin", role = "aut")
+    )
+Description: Implements the Merton (1976) <doi:10.1016/0304-405X(76)90022-2>
+    and Kou (2002) <doi:10.1287/mnsc.48.8.1086.166> jump-diffusion models
+    through a unified S4 object-oriented interface. Provides exact
+    compound-Poisson asset price simulation, maximum likelihood parameter
+    estimation with Hessian-based standard errors, Wald-type confidence
+    intervals, European option pricing via the Merton analytic series
+    expansion, and publication-quality diagnostic plots. All functionality
+    operates entirely offline without market data dependencies.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Collate: 'generics.R' 'kou_fit.R' 'kou_model.R' 'kou_sim.R'
+        'merton_model.R' 'merton_fit.R' 'merton_price.R' 'merton_sim.R'
+        'utils.R'
+Depends: R (>= 4.1.0)
+Imports: methods, stats, ggplot2 (>= 4.0.2), numDeriv (>= 2016.8.1.1)
+Suggests: knitr, pkgdown, rmarkdown, covr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://kennedy2244.github.io/JumpDiffSim/,
+        https://github.com/kennedy2244/JumpDiffSim
+BugReports: https://github.com/kennedy2244/JumpDiffSim/issues
+NeedsCompilation: no
+Packaged: 2026-05-30 10:25:35 UTC; kenne
+Author: Kennedy Titus Kayaki [aut, cre],
+  Dohyun Oh [aut],
+  Ju Seong Hyeon [aut],
+  Lee Se Eun [aut],
+  Choi Jiwoo [aut],
+  Yuri Shin [aut]
+Maintainer: Kennedy Titus Kayaki <kennedy_2244@yu.ac.kr>
+Repository: CRAN
+Date/Publication: 2026-06-03 13:40:08 UTC

@@ -1,0 +1,20 @@
+Package: DICErClust
+Title: Deep Significance Clustering for Clinical Risk Stratification
+Version: 0.1.3
+Authors@R: 
+    c(person(given="Sarah", family="Ayton", , "sarah.ayton@columbia.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5247-9912")),
+    person(given="Yiye", family="Zhang", , "yiz2014@med.cornell.edu", role = c("aut"), comment = c(ORCID = "0000-0003-3494-2699")))
+Description: We provide an R implementation of Deep Significance Clustering (DICE), a self-supervised learning framework designed to identify clinically meaningful and risk-stratified patient subgroups from electronic health record (EHR) data. DICE jointly optimizes deep representation learning, clustering, and outcome prediction while enforcing statistical significance between predicted outcomes and cluster membership. This integrated optimization produces subgroups that are both clinically coherent and predictive, addressing a gap where traditional unsupervised clustering methods and supervised risk prediction models alone may fail to generate actionable clinical groupings. See Huang et al. (2021) <doi:10.1093/jamia/ocab203>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: argparser, ggplot2, torch, pROC
+Suggests: knitr, rmarkdown, scales
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-08 15:50:21 UTC; sarahayton
+Author: Sarah Ayton [aut, cre] (ORCID: <https://orcid.org/0000-0001-5247-9912>),
+  Yiye Zhang [aut] (ORCID: <https://orcid.org/0000-0003-3494-2699>)
+Maintainer: Sarah Ayton <sarah.ayton@columbia.edu>
+Config/roxygen2/version: 8.0.0
+Repository: CRAN
+Date/Publication: 2026-07-08 18:10:08 UTC

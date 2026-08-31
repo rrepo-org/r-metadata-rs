@@ -1,0 +1,27 @@
+Package: prome
+Title: Patient-Reported Outcome Data Analysis with Stan
+Type: Package
+Version: 4.0.2.5
+Authors@R: person(given = "Bin",
+	   family = "Wang", role = c("aut", "cre"),
+	   email = "bwang831@gmail.com")
+Description: Estimation for blinding bias in randomized controlled trials with
+  a latent continuous outcome, a binary response depending on treatment and the
+  latent outcome, and a noisy surrogate subject to possibly response-dependent
+  measurement error. Implements EM estimators in R backed by compiled C routines
+  for models with and without the restriction delta0 = 0, and Bayesian Stan
+  wrappers for the same two models. Functions were added for latent outcome
+  models with differential measurement error.
+License: Unlimited
+Encoding: UTF-8
+Depends: R (>= 4.1.0), BI
+Imports: stats, utils, rstan, bridgesampling
+LinkingTo: Rcpp, RcppEigen, StanHeaders
+Suggests: posterior
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-04-24 01:46:09 UTC; alkb
+Author: Bin Wang [aut, cre]
+Maintainer: Bin Wang <bwang831@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-26 19:50:02 UTC

@@ -1,0 +1,33 @@
+Package: EMOTIONS
+Type: Package
+Title: Ensemble Models for Lactation Curves
+Version: 1.3
+Authors@R: c(person(given = "Pablo",
+           family = "Fonseca",
+           role = c("aut", "cre"),
+           email = "p.fonseca@csic.es"),person("Marcos", "Prates", email = "marcosop@gmail.com", role = "aut"), 
+           person("Aroa", "Suarez-Vega", email = "asuav@unileon.es", role = "aut"),
+           person("Ruth Arribas", "Gonzalo", email = "rarrg@unileon.es", role = "aut"),
+           person("Beatriz", "Gutierrez-Gil", email = "beatriz.gutierrez@unileon.es", role = "aut"),
+           person("Juan José", "Arranz", email = "jjarrs@unileon.es", role = "aut"))
+Description: Lactation curves describe temporal changes in milk yield and are key to breeding and managing dairy animals more efficiently. The use of ensemble modeling, which consists of combining predictions from multiple models, has the potential to yields more accurate and robust estimates of lactation patterns than relying solely on single model estimates. The package EMOTIONS fits 47 models for lactation curves and creates ensemble models using model averaging based on Akaike information criterion (AIC), Bayesian information criterion (BIC), root mean square percentage error (RMSPE) and mean squared error (MAE), variance of the predictions, cosine similarity for each model's predictions, and Bayesian Model Average (BMA). The daily production values predicted through the ensemble models can be used to estimate resilience indicators in the package. The package allows the graphical visualization of the model ranks and the predicted lactation curves. Additionally, the packages allows the user to detect milk loss events and estimate residual-based resilience indicators.
+Depends: R (>= 4.2)
+Imports: dplyr, orthopolynom, quantreg, minpack.lm, tidyr, ggplot2,
+        ggridges, parameters, rlang, tidyselect, splines, tibble
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-31 15:50:33 UTC; pablofonseca
+Author: Pablo Fonseca [aut, cre],
+  Marcos Prates [aut],
+  Aroa Suarez-Vega [aut],
+  Ruth Arribas Gonzalo [aut],
+  Beatriz Gutierrez-Gil [aut],
+  Juan José Arranz [aut]
+Maintainer: Pablo Fonseca <p.fonseca@csic.es>
+Repository: CRAN
+Date/Publication: 2026-04-01 19:30:16 UTC

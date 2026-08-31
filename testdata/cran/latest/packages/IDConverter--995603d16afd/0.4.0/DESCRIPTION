@@ -1,0 +1,31 @@
+Package: IDConverter
+Title: Convert Identifiers in Biological Databases
+Version: 0.4.0
+Date: 2026-07-25
+Authors@R: 
+    person("Shixiang", "Wang", , "w_shixiang@163.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9855-7357"))
+Maintainer: Shixiang Wang <w_shixiang@163.com>
+Description: Identifiers in biological databases connect different levels
+    of metadata, phenotype data or genotype data. This tool is designed to
+    easily convert identifiers within or between different biological
+    databases (Wang, Shixiang, et al. (2021) <DOI:10.1371/journal.pgen.1009557>).
+License: MIT + file LICENSE
+URL: https://github.com/WangLabCSU/IDConverter,
+        https://wanglabcsu.github.io/IDConverter/
+BugReports: https://github.com/WangLabCSU/IDConverter/issues
+Depends: R (>= 3.5.0)
+Imports: data.table, httr, tibble
+Suggests: biomaRt, covr, knitr, readr, testthat
+VignetteBuilder: knitr
+biocViews:
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-25 07:38:24 UTC; wsx
+Author: Shixiang Wang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9855-7357>)
+Repository: CRAN
+Date/Publication: 2026-07-25 17:00:11 UTC

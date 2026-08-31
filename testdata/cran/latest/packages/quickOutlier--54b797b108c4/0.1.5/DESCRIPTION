@@ -1,0 +1,32 @@
+Package: quickOutlier
+Title: Detect and Treat Outliers in Data Mining
+Version: 0.1.5
+Authors@R: 
+    person(
+      given  = "Daniel",
+      family = "López Pérez",
+      email  = "dlopez350@icloud.com",
+      role   = c("aut", "cre"),
+      comment = c(ORCID = "0009-0008-1695-9837"))
+Description: Implements a suite of tools for outlier detection and treatment 
+    in data mining. It includes univariate methods (Z-score, Interquartile Range), 
+    multivariate detection using Mahalanobis distance, and density-based 
+    detection (Local Outlier Factor) via the 'dbscan' package. It also 
+    provides functions for visualization using 'ggplot2' and data cleaning 
+    via Winsorization.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dbscan, ggplot2, isotree, plotly, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/daniellop1/quickOutlier
+BugReports: https://github.com/daniellop1/quickOutlier/issues
+NeedsCompilation: no
+Packaged: 2026-02-13 19:27:34 UTC; dlopez
+Author: Daniel López Pérez [aut, cre] (ORCID:
+    <https://orcid.org/0009-0008-1695-9837>)
+Maintainer: Daniel López Pérez <dlopez350@icloud.com>
+Repository: CRAN
+Date/Publication: 2026-02-13 19:40:02 UTC

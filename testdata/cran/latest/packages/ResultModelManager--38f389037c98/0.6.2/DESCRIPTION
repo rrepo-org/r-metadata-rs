@@ -1,0 +1,27 @@
+Package: ResultModelManager
+Title: Result Model Manager
+Version: 0.6.2
+Authors@R: 
+    person("Jamie", "Gilbert", , "gilbert@ohdsi.org", role = c("aut", "cre"))
+Description: Database data model management utilities for R packages in the Observational Health Data Sciences and
+    Informatics programme. 'ResultModelManager' provides utility functions to allow package
+    maintainers to migrate existing SQL database models, export and import results in consistent patterns.
+URL: https://github.com/OHDSI/ResultModelManager,
+        https://ohdsi.github.io/ResultModelManager/
+BugReports: https://github.com/OHDSI/ResultModelManager/issues
+License: Apache License (== 2.0)
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0), R6, DatabaseConnector (>= 7.0.0)
+Imports: SqlRender, ParallelLogger, checkmate, DBI, pool, readr, zip,
+        dplyr, dbplyr, rlang, lubridate, fastmap, withr
+Suggests: testthat (>= 3.0.0), RSQLite, duckdb, knitr, rmarkdown,
+        keyring, devtools, pkgdown, remotes, styler, rJava, reticulate
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-02 15:40:01 UTC; jgilber2
+Author: Jamie Gilbert [aut, cre]
+Maintainer: Jamie Gilbert <gilbert@ohdsi.org>
+Repository: CRAN
+Date/Publication: 2025-10-02 16:50:02 UTC

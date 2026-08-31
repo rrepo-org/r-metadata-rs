@@ -1,0 +1,39 @@
+Package: AMDconfigurations
+Type: Package
+Title: Geometric Analysis of Configurations in High-Dimensional Spaces
+Version: 0.1.0
+Authors@R: person("Manuel", "Mendoza", role = c("aut", "cre"),
+  email = "mmendoza@mncn.csic.es",
+  comment = c(ORCID = "0000-0002-2143-8138"))
+Description: Tools for analysing the geometry of configurations in high-dimensional
+    spaces using the Average Membership Degree (AMD) framework and synthetic
+    configuration generation. The package supports a domain-agnostic approach
+    to studying the shape, dispersion, and internal structure of point clouds,
+    with applications across biological and ecological datasets, including
+    those derived from deep-time records. The AMD framework builds on the idea
+    that strongly coupled systems may occupy a limited set of recurrent regimes
+    in state space, producing high-occupancy regions separated by sparsely
+    populated transitional configurations. The package focuses on detecting
+    these concentration patterns and quantifying their geometric definition
+    without assuming any underlying dynamical model. It provides AMD curve
+    computation, cluster assignment, and sigma-equivalent estimation, together
+    with S3 methods for plotting, printing, and summarising AMD and
+    sigma-equivalent objects. Mendoza (2025) <https://mmendoza1967.github.io/AMDconfigurations/>.
+License: MIT + file LICENSE
+URL: https://github.com/mmendoza1967/AMDconfigurations,
+        https://mmendoza1967.github.io/AMDconfigurations/
+BugReports: https://github.com/mmendoza1967/AMDconfigurations/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: e1071, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, pkgdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-12 04:30:56 UTC; Manuel Mendoza
+Author: Manuel Mendoza [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2143-8138>)
+Maintainer: Manuel Mendoza <mmendoza@mncn.csic.es>
+Repository: CRAN
+Date/Publication: 2026-03-17 18:10:03 UTC

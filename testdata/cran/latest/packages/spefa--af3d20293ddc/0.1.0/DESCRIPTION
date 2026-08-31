@@ -1,0 +1,29 @@
+Package: spefa
+Type: Package
+Title: Spatial Stochastic Frontier with Fixed Effects and Endogeneity
+Version: 0.1.0
+Authors@R: person("Massimo", "Giannini", role = c("aut", "cre"),
+                   email = "massimo.giannini@uniroma2.it",
+                   comment = "University of Rome Tor Vergata, Department of Enterprise Engineering")
+Description: Maximum-likelihood estimation of the spatial autoregressive
+    stochastic frontier model with individual fixed effects (removed by
+    first differencing) and endogenous regressors handled through a Gaussian
+    control function, as in Giannini (2025) <doi:10.1080/17421772.2024.2414962>.
+    Returns coefficient estimates and standard errors, spatially-corrected
+    technical (in)efficiency scores, and direct, indirect and total marginal
+    impacts. Depends only on base R.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2026-05-21 06:32:07 UTC; root
+Author: Massimo Giannini [aut, cre] (University of Rome Tor Vergata, Department
+    of Enterprise Engineering)
+Maintainer: Massimo Giannini <massimo.giannini@uniroma2.it>
+Repository: CRAN
+Date/Publication: 2026-05-28 11:10:17 UTC

@@ -1,0 +1,34 @@
+Package: chronicler
+Title: Add Logging to Functions
+Version: 0.3.0
+Authors@R: c(
+    person("Bruno", "Rodrigues", , "bruno@brodrigues.co", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-3211-3689")),
+    person("Matouš", "Eibich", , "matous.eibich@seznam.cz", role = "ctb")
+  )
+Description: Decorate functions to make them return enhanced output. The
+    enhanced output consists in an object of type 'chronicle' containing
+    the result of the function applied to its arguments, as well as a log
+    detailing when the function was run, what were its inputs, what were
+    the errors (if the function failed to run) and other useful
+    information. Tools to handle decorated functions are included, such as
+    a forward pipe operator that makes chaining decorated functions
+    possible.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: diffobj, dplyr, ggplot2, maybe, rlang, tibble, utils
+Suggests: clipr, knitr, lubridate, openxlsx, purrr, rmarkdown,
+        testthat, tidyr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: TRUE
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-08-18 08:57:48 UTC; brodrigues
+Author: Bruno Rodrigues [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3211-3689>),
+  Matouš Eibich [ctb]
+Maintainer: Bruno Rodrigues <bruno@brodrigues.co>
+Repository: CRAN
+Date/Publication: 2025-08-18 09:20:33 UTC

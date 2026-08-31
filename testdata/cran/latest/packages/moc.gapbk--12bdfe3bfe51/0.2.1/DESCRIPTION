@@ -1,0 +1,42 @@
+Package: moc.gapbk
+Type: Package
+Title: Multi-Objective Clustering Algorithm Guided by a-Priori
+        Biological Knowledge
+Version: 0.2.1
+Authors@R: c(
+    person("Jorge", "Parraga-Alava",
+           email = "jorge.parraga@utm.edu.ec",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8558-9122")),
+    person("Marcio", "Dorn", role = "aut"),
+    person("Mario", "Inostroza-Ponta", role = "aut"))
+Description: Implements the Multi-Objective Clustering Algorithm Guided
+    by a-Priori Biological Knowledge ('MOC-GaPBK') proposed by
+    Parraga-Alava and others (2018) <doi:10.1186/s13040-018-0178-4>.
+    The algorithm performs gene clustering using 'NSGA-II' as the
+    underlying multi-objective evolutionary engine, together with
+    Path-Relinking and Pareto Local Search as intensification and
+    diversification strategies. Two versions of the Xie-Beni validity
+    index are used as objective functions, one per distance matrix,
+    so that prior biological knowledge can be incorporated through
+    the second matrix.
+License: GPL-2
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 3.5.0)
+Imports: stats, utils, nsga2R, foreach, parallel, doParallel
+Suggests: amap, testthat (>= 3.0.0), knitr, rmarkdown
+URL: https://github.com/jorgeklz/package-moc.gapbk
+BugReports: https://github.com/jorgeklz/package-moc.gapbk/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-13 21:10:01 UTC; jorge
+Author: Jorge Parraga-Alava [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8558-9122>),
+  Marcio Dorn [aut],
+  Mario Inostroza-Ponta [aut]
+Maintainer: Jorge Parraga-Alava <jorge.parraga@utm.edu.ec>
+Repository: CRAN
+Date/Publication: 2026-05-14 14:10:10 UTC

@@ -1,0 +1,32 @@
+Package: investdatar
+Title: Investment Data Access and Preparation Toolkit
+Version: 0.1.5
+Authors@R: 
+    person("Oliver", "Zhou", email = "oliver.yxzhou@gmail.com", role = c("aut", "cre"))
+Description: A toolkit for loading, transforming, and managing 
+    structured investment-related data. Includes functions for retrieving
+    macroeconomic and public financial series, regulatory filings, futures
+    positioning, energy and fiscal data, market open-high-low-close-volume
+    data, fund holdings, narrative feeds, and crypto derivatives from multiple
+    providers. It detects
+    time-series gaps and synchronizes local '.rds' data stores with sidecar
+    metadata for analysis and trading workflows. It also generates structured
+    dataset descriptions for LLM-based analyst agents that produce R code for
+    analysis and visualization.
+License: MIT + file LICENSE
+URL: https://github.com/OliverLDS/investdatar
+BugReports: https://github.com/OliverLDS/investdatar/issues
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: data.table, jsonlite, curl, httr, xml2, yaml
+Suggests: binxr, okxr, quantmod, testthat (>= 3.0.0), xts, waldo,
+        wbstats, withr, zoo
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-20 00:51:53 UTC; oliver
+Author: Oliver Zhou [aut, cre]
+Maintainer: Oliver Zhou <oliver.yxzhou@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 13:40:07 UTC

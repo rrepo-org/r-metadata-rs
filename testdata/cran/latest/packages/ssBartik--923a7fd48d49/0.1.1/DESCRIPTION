@@ -1,0 +1,31 @@
+Package: ssBartik
+Type: Package
+Title: End-to-End Pipeline for Shift-Share (Bartik) Instrumental
+        Variables
+Version: 0.1.1
+Authors@R: person("Takuma", "Iwasaki", email = "iwasakit@stanford.edu",
+    role = c("aut", "cre"), comment = c(affiliation = "Stanford University"))
+Description: Construction, diagnostics, estimation, exposure-robust inference
+    and publication-ready visualisation for shift-share (Bartik) instrumental
+    variable designs, in one consistent workflow. Organised around the two
+    identification routes of the modern literature. The exogenous share
+    approach refers to Goldsmith-Pinkham, Sorkin and Swift (2020) <doi:10.1257/aer.20181047>
+    and the exogenous shift approach refers to Borusyak, Hull and
+    Jaravel (2022) <doi:10.1093/restud/rdab030> and Adao, Kolesar and Morales
+    (2019) <doi:10.1093/qje/qjz025>. Wraps
+    'ShiftShareSE' for exposure-robust inference when available.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: ggplot2 (>= 3.5.0), grDevices, grid, stats, utils
+Suggests: ShiftShareSE, testthat (>= 3.0.0)
+URL: https://github.com/takuma1102/ssBartik,
+        https://takuma1102.github.io/ssBartik/
+BugReports: https://github.com/takuma1102/ssBartik/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-09 18:33:11 UTC; 81809
+Author: Takuma Iwasaki [aut, cre] (affiliation: Stanford University)
+Maintainer: Takuma Iwasaki <iwasakit@stanford.edu>
+Repository: CRAN
+Date/Publication: 2026-07-19 12:30:02 UTC

@@ -1,0 +1,23 @@
+Package: funIHC
+Type: Package
+Title: Functional Iterative Hierarchical Clustering
+Version: 0.1.0
+Authors@R: 
+    c(person("Catherine", "Higgins", , "catherine.higgins@ucd.ie", role = c("aut", "cre")),
+    person("Michelle", "Carey", , "michelle.carey@ucd.ie", role = c("aut")))
+Description: Functional clustering aims to group curves exhibiting similar temporal behaviour and to obtain representative curves summarising the typical dynamics within each cluster. A key challenge in this setting is class imbalance, where some clusters contain substantially more curves than others, which can adversely affect clustering performance. While class imbalance has been extensively studied in supervised classification, it has received comparatively little attention in unsupervised clustering. This package implements functional iterative hierarchical clustering ('funIHC'), an adaptation of the iterative hierarchical clustering method originally developed for multivariate data, to the functional data setting. For further details, please see Higgins and Carey (2024) <doi:10.1007/s11634-024-00611-8>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: fda, stats, cluster, mclust
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-08 12:41:14 UTC; crtuser
+Author: Catherine Higgins [aut, cre],
+  Michelle Carey [aut]
+Maintainer: Catherine Higgins <catherine.higgins@ucd.ie>
+Repository: CRAN
+Date/Publication: 2026-01-09 19:40:02 UTC

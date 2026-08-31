@@ -1,0 +1,42 @@
+Package: GMX
+Type: Package
+Title: Extended Graphical Model Checks for the Rasch Family of Models
+Version: 0.9-3
+Date: 2026-07-20
+Authors@R: person(given  = c('Rainer', 'W.'),
+                              family = 'Alexandrowicz',
+                              role   = c('aut', 'cre'),
+                              email  = 'rainer.alexandrowicz@aau.at') 
+Description: 
+  The function plotLRT() draws pairwise graphical model checks for
+      the Rasch Model (RM; Rasch, 1960), 
+      the Partial Credit Model (PCM; Masters, 1982), and 
+      the Rating Scale Model (RSM; Andrich, 1978)
+  using the output object of eRm::LRtest().
+  The function cLRT() provides a conditional Likelihood Ratio Test
+  (Andersen, 1973), using the routines of 'psychotools' (Zeileis et al., 2026).
+  Users may choose to plot
+      the threshold parameters, 
+      the cumulative thresholds, 
+      the average thresholds per item, or
+      the person parameters.
+  Extended coloring options allow for automated item-wise or
+  threshold-wise coloring. For multi-group splits, all pairwise
+  group comparisons are drawn automatically.
+  The function plotMLT() draws a graphical model check
+  for the Martin-Loef-Test (MLT).
+  If type='persons', it draws scatterplots of the person parameter 
+  estimates of each pair of item sub-groups.
+  If type='items', it draws a scatterplot of the item/threshold 
+  parameter estimates of each of the two sub-groups vertically 
+  against the estimates of the total sample horizontally.
+Depends: R (>= 3.0.0)
+License: GPL (>= 3)
+Imports: psychotools
+Suggests: eRm
+NeedsCompilation: no
+Packaged: 2026-07-20 19:47:48 UTC; aa
+Author: Rainer W. Alexandrowicz [aut, cre]
+Maintainer: Rainer W. Alexandrowicz <rainer.alexandrowicz@aau.at>
+Repository: CRAN
+Date/Publication: 2026-07-20 22:30:07 UTC

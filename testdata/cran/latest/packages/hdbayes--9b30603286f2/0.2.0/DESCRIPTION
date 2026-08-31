@@ -1,0 +1,88 @@
+Package: hdbayes
+Title: Bayesian Analysis of Generalized Linear Models with Historical
+        Data
+Version: 0.2.0
+Authors@R: c(person("Ethan M.", "Alt", email = "ethanalt@live.unc.edu", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-6112-9030")), 
+    person("Xinxin", "Chen", role = "aut"), 
+    person("Luiz M.", "Carvalho", role = "aut"),
+    person("Joseph G.", "Ibrahim", role = "aut"),
+    person("Xiuya", "Chang", role = "ctb")
+    )
+Description: User-friendly functions for leveraging (multiple) historical data set(s) in Bayesian analysis of generalized 
+    linear models (GLMs) and survival models, along with support for Bayesian model averaging (BMA). The package provides 
+    functions for sampling from posterior distributions under various informative priors, including the prior induced by the 
+    Bayesian hierarchical model, power prior by Ibrahim and Chen (2000) <doi:10.1214/ss/1009212673>, normalized power prior by 
+    Duan et al. (2006) <doi:10.1002/env.752>, normalized asymptotic power prior by Ibrahim et al. (2015) <doi:10.1002/sim.6728>, 
+    commensurate prior by Hobbs et al. (2011) <doi:10.1111/j.1541-0420.2011.01564.x>, robust meta-analytic-predictive 
+    prior by Schmidli et al. (2014) <doi:10.1111/biom.12242>, latent exchangeability prior by Alt et al. (2024) 
+    <doi:10.1093/biomtc/ujae083>, and a normal (or half-normal) prior. The package also includes functions for computing
+    model averaging weights, such as BMA, pseudo-BMA, pseudo-BMA with the Bayesian bootstrap, and stacking (Yao et al.,
+    2018 <doi:10.1214/17-BA1091>), as well as for generating posterior samples from the ensemble distributions to reflect 
+    model uncertainty. In addition to GLMs, the package supports survival models including: (1) accelerated failure time 
+    (AFT) models, (2) piecewise exponential (PWE) models, i.e., proportional hazards models with piecewise constant
+    baseline hazards, and (3) mixture cure rate models that assume a common probability of cure across subjects, paired 
+    with a PWE model for the non-cured population. Functions for computing marginal log-likelihoods under each implemented 
+    prior are also included. The package compiles all the 'CmdStan' models once during installation using the 'instantiate' package.
+License: MIT + file LICENSE
+URL: https://github.com/ethan-alt/hdbayes
+BugReports: https://github.com/ethan-alt/hdbayes/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2.0)
+Imports: instantiate (>= 0.1.0), callr, fs, formula.tools, stats,
+        posterior, enrichwith, bridgesampling, mvtnorm, loo
+Suggests: cmdstanr (>= 0.6.0), ggplot2, ggthemes, knitr, parallel,
+        rmarkdown, tibble, dplyr, survival
+Additional_repositories: https://mc-stan.org/r-packages/
+SystemRequirements: CmdStan
+        (https://mc-stan.org/users/interfaces/cmdstan)
+LazyData: true
+Collate: 'E1684-data.R' 'E1690-data.R' 'E1694-data.R' 'E2696-data.R'
+        'IBCSG_curr-data.R' 'IBCSG_hist-data.R' 'actg019-data.R'
+        'actg036-data.R' 'data_checks_aft.R' 'get_stan_data_aft.R'
+        'aft_bhm.R' 'aft_loglik.R' 'aft_bhm_lognc.R'
+        'aft_commensurate.R' 'expfam_loglik.R' 'mixture_loglik.R'
+        'aft_commensurate_lognc.R' 'aft_leap.R' 'mixture_aft_loglik.R'
+        'aft_leap_lognc.R' 'aft_logml_commensurate.R'
+        'aft_logml_leap.R' 'aft_logml_map.R' 'aft_logml_npp.R'
+        'aft_logml_post.R' 'aft_pp_lognc.R' 'aft_logml_pp.R'
+        'aft_stratified_pp_lognc.R' 'aft_logml_stratified_pp.R'
+        'aft_npp_lognc.R' 'aft_npp.R' 'aft_post.R' 'aft_pp.R'
+        'aft_stratified_pp.R' 'compute_ensemble_weights.R'
+        'data_checks_pwe.R' 'get_stan_data_pwe.R' 'curepwe_bhm.R'
+        'pwe_loglik.R' 'curepwe_bhm_lognc.R' 'curepwe_commensurate.R'
+        'curepwe_commensurate_lognc.R' 'curepwe_leap.R'
+        'curepwe_leap_lognc.R' 'curepwe_logml_commensurate.R'
+        'curepwe_logml_leap.R' 'curepwe_logml_map.R'
+        'curepwe_logml_npp.R' 'curepwe_logml_post.R'
+        'curepwe_pp_lognc.R' 'curepwe_logml_pp.R'
+        'curepwe_stratified_pp_lognc.R' 'curepwe_logml_stratified_pp.R'
+        'curepwe_npp_lognc.R' 'curepwe_npp.R' 'curepwe_post.R'
+        'curepwe_pp.R' 'curepwe_stratified_pp.R' 'data_checks.R'
+        'get_stan_data.R' 'glm_bhm.R' 'glm_bhm_lognc.R'
+        'glm_commensurate.R' 'glm_commensurate_lognc.R' 'glm_leap.R'
+        'glm_leap_lognc.R' 'glm_logml_commensurate.R'
+        'glm_logml_leap.R' 'glm_logml_map.R' 'glm_logml_napp.R'
+        'glm_logml_npp.R' 'glm_logml_post.R' 'glm_pp_lognc.R'
+        'glm_logml_pp.R' 'glm_napp.R' 'glm_npp_lognc.R' 'glm_npp.R'
+        'glm_post.R' 'glm_pp.R' 'glm_rmap.R' 'hdbayes-package.R'
+        'lm_npp.R' 'pwe_bhm.R' 'pwe_bhm_lognc.R' 'pwe_commensurate.R'
+        'pwe_commensurate_lognc.R' 'pwe_leap.R' 'pwe_leap_lognc.R'
+        'pwe_logml_commensurate.R' 'pwe_logml_leap.R' 'pwe_logml_map.R'
+        'pwe_logml_npp.R' 'pwe_logml_post.R' 'pwe_pp_lognc.R'
+        'pwe_logml_pp.R' 'pwe_stratified_pp_lognc.R'
+        'pwe_logml_stratified_pp.R' 'pwe_npp_lognc.R' 'pwe_npp.R'
+        'pwe_post.R' 'pwe_pp.R' 'pwe_stratified_pp.R'
+        'sample_ensemble.R' 'zzz.R'
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-11-14 12:54:10 UTC; xinxin
+Author: Ethan M. Alt [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6112-9030>),
+  Xinxin Chen [aut],
+  Luiz M. Carvalho [aut],
+  Joseph G. Ibrahim [aut],
+  Xiuya Chang [ctb]
+Maintainer: Ethan M. Alt <ethanalt@live.unc.edu>
+Repository: CRAN
+Date/Publication: 2025-11-15 12:10:02 UTC

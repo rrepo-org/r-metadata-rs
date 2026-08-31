@@ -1,0 +1,39 @@
+Package: RcppMeCab
+Title: 'rcpp' Wrapper for 'mecab' Library
+Version: 0.0.1.7
+Authors@R: c(person("Junhewk", "Kim", role = c("aut", "cre"),
+                    email = "junhewk.kim@gmail.com"),
+             person("Taku", "Kudo", role = c("aut"),
+                    email = "taku@chasen.org"),
+             person("Akiru", "Kato", role = c("ctb")),
+             person("Patrick", "Schratz", role = c("ctb")))
+Description: R package based on 'Rcpp' for 'MeCab': Yet Another Part-of-Speech and Morphological Analyzer.
+    It provides install-time engine profiles and dictionaries for Japanese,
+    Korean, and Mandarin Chinese text. Runtime dictionary selection does not
+    change the installed engine.
+    This package utilizes parallel programming for providing highly efficient text preprocessing 'posParallel()' function.
+    For installation, please refer to README.md file.
+Depends: R (>= 3.4.0)
+License: GPL
+Encoding: UTF-8
+BugReports: https://github.com/junhewk/RcppMeCab/issues
+RoxygenNote: 7.3.3
+Language: en-US
+Config/roxygen2/version: 8.0.0
+LinkingTo: Rcpp, RcppParallel, BH
+Imports: Rcpp, RcppParallel
+Suggests: testthat, spelling
+SystemRequirements: MeCab 0.996 or higher for Japanese and Chinese
+        (libmecab-dev (deb), mecab-devel (rpm)), mecab-jieba 0.1.1 for
+        Mandarin Chinese (https://github.com/lindera/mecab-jieba),
+        mecab-ko 0.999 (https://github.com/Pusnow/mecab-ko-msvc) for
+        Korean
+NeedsCompilation: yes
+Packaged: 2026-07-13 02:44:26 UTC; jk
+Author: Junhewk Kim [aut, cre],
+  Taku Kudo [aut],
+  Akiru Kato [ctb],
+  Patrick Schratz [ctb]
+Maintainer: Junhewk Kim <junhewk.kim@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-13 09:00:02 UTC

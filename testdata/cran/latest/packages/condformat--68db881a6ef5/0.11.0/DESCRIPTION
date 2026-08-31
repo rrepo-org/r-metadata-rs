@@ -1,0 +1,37 @@
+Package: condformat
+Type: Package
+Title: Conditional Formatting in Data Frames
+Version: 0.11.0
+Date: 2026-07-09
+Authors@R: person(given = "Sergio", family = "Oller Moreno",
+                  email = "sergioller@gmail.com", role = c("aut", "cph", "cre"),
+                  comment = c(ORCID = "0000-0002-8994-1549"))
+URL: https://zeehio.github.io/condformat/,
+        https://github.com/zeehio/condformat
+BugReports: https://github.com/zeehio/condformat/issues
+Description: Apply and visualize conditional formatting to data frames in R.
+    It renders a data frame with cells formatted according to
+    criteria defined by rules, using a tidy evaluation syntax. The table is
+    printed either opening a web browser or within the 'RStudio' viewer if
+    available. The conditional formatting rules allow to highlight cells
+    matching a condition or add a gradient background to a given column. This
+    package supports both 'HTML' and 'LaTeX' outputs in 'knitr' reports, and
+    exporting to an 'xlsx' file.
+License: BSD_3_clause + file LICENSE
+NeedsCompilation: no
+Depends: R (>= 4.1)
+Imports: dplyr (>= 1.1.4), grDevices, htmlTable (>= 2.4.3), htmltools
+        (>= 0.5.8.1), knitr (>= 1.50), rlang (>= 1.1.6), scales (>=
+        1.4.0), tibble (>= 3.3.0), tidyselect (>= 1.2.1)
+Suggests: gridExtra (>= 2.3), gtable (>= 0.3.6), openxlsx (>= 4.2.8),
+        promises, rmarkdown (>= 2.29), shiny (>= 1.11.1), testthat (>=
+        3.2.3), vdiffr (>= 1.0.8)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-09 20:47:53 UTC; root
+Author: Sergio Oller Moreno [aut, cph, cre] (ORCID:
+    <https://orcid.org/0000-0002-8994-1549>)
+Maintainer: Sergio Oller Moreno <sergioller@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-09 21:10:02 UTC

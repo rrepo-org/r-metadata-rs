@@ -1,0 +1,48 @@
+Package: PeerPerformance
+Version: 2.4.0
+Title: Luck-Corrected Peer Performance Analysis in R
+Authors@R: c(person("David", "Ardia", role = c("aut", "cre", "cph", "fnd"),
+             email = "david.ardia.ch@gmail.com",
+             comment = c(ORCID = "0000-0003-2823-782X")),
+             person("Nabil", "Bouamara", role = "ctb"),
+             person("Kris", "Boudt", role = "aut",
+             comment = c(ORCID = "0000-0002-1000-5142")),
+             person("Sebastien", "Legros", role = "ctb"),
+             person("Murilo Andre", "Peres Pereira", role = "ctb",
+             comment = c(ORCID = "0009-0007-0086-4801")),
+             person("Benjamin", "Seguin", role = "ctb"))
+Depends: R (>= 3.5.0)
+Imports: compiler, graphics, grDevices, lmtest, parallel, sandwich,
+        stats
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Description: Provides functions to perform the peer performance analysis of
+    funds' returns as described in Ardia and Boudt (2018)
+    <doi:10.1016/j.jbankfin.2017.10.014>. For each fund, the package estimates
+    the proportion of peers it outperforms, is equalled by, and is outperformed
+    by, correcting for luck with the false discovery approach of Storey (2002)
+    <doi:10.1111/1467-9868.00346>. Screenings can be based on factor-model
+    alphas, Sharpe ratios, or modified Sharpe ratios, the latter using the
+    equality test of Ardia and Boudt (2015) <doi:10.1016/j.frl.2015.02.008>.
+    Funds can be screened within a universe or against a separate peer group,
+    over rolling windows, and results come with bootstrap confidence intervals,
+    summary, plot, and tidy data frame methods.
+BugReports: https://github.com/ArdiaD/PeerPerformance/issues
+URL: https://github.com/ArdiaD/PeerPerformance
+License: GPL (>= 2)
+LazyData: true
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-02 20:33:38 UTC; ardiad
+Author: David Ardia [aut, cre, cph, fnd] (ORCID:
+    <https://orcid.org/0000-0003-2823-782X>),
+  Nabil Bouamara [ctb],
+  Kris Boudt [aut] (ORCID: <https://orcid.org/0000-0002-1000-5142>),
+  Sebastien Legros [ctb],
+  Murilo Andre Peres Pereira [ctb] (ORCID:
+    <https://orcid.org/0009-0007-0086-4801>),
+  Benjamin Seguin [ctb]
+Maintainer: David Ardia <david.ardia.ch@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-02 20:50:02 UTC

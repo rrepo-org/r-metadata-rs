@@ -1,0 +1,27 @@
+Package: amp.dm
+Title: Data Management Tools for Pharmacometrics
+Version: 0.2.1
+Authors@R: c(person("Richard", "Hooijmaijers", email = "richardhooijmaijers@gmail.com", role = c("aut", "cre","cph")),
+             person("LAPP Consultants",email = "info@lapp.nl", role=c("fnd","cph")))
+Description: Tools and functions to efficiently create datasets used in pharmacometric analysis.
+  Additional functionality is added to create documentation and prepare files for submission and 
+  quality control purposes. 
+Depends: R (>= 4.3.0)
+License: GPL (>= 3)
+URL: https://leidenadvancedpkpd.github.io/amp.dm/,
+        https://github.com/LeidenAdvancedPKPD/amp.dm
+BugReports: https://github.com/LeidenAdvancedPKPD/amp.dm/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: quarto
+Imports: tools, utils, stats, grDevices, cli, rlang, dplyr, vctrs,
+        forcats, readxl, haven, fs, xtable
+Suggests: ggplot2, patchwork, rstudioapi, knitr, R3port, testthat,
+        quarto, tidyr
+NeedsCompilation: no
+Packaged: 2026-03-30 08:10:49 UTC; r.hooijmaijers
+Author: Richard Hooijmaijers [aut, cre, cph],
+  LAPP Consultants [fnd, cph]
+Maintainer: Richard Hooijmaijers <richardhooijmaijers@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-30 09:30:31 UTC

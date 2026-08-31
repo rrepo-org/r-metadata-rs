@@ -1,0 +1,63 @@
+Package: StressCensoR
+Type: Package
+Title: Generalized Stress-Strength Reliability Estimation Under
+        Censoring Schemes
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi",
+           email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey",
+           email = "arvindmzu@gmail.com",
+           role = "aut"),
+    person("Bhupendra", "Singh",
+           email = "bhupendra.rana@gmail.com",
+           role = "aut"),
+    person("Vrijesh", "Tripathi",
+           email = "vrijesh.tripathi@uwi.edu",
+           role = "aut"))
+Description: Generalized framework for data generation, Maximum Likelihood Estimation,
+    and Bayesian estimation of stress-strength reliability R = P(Y < X) for arbitrary continuous
+    distributions under censoring schemes based on Chapter 9 of 'Balakrishnan', 'Cramer',
+    and 'Kundu' (2023) <ISBN:978-0-12-398387-9>. Users provide probability density functions,
+    cumulative distribution functions, survival functions, support bounds, parameter ranges,
+    and sample sizes. Implements data generation under Type-I, Type-II, progressive
+    Type-II, Type-I hybrid, Type-II hybrid, generalized hybrid, progressive hybrid, joint, block
+    random, middle, and truncation censoring schemes, accompanied by diagnostic histograms, dot
+    plots, and autocorrelation plots. Maximum Likelihood Estimation supports optimization routines
+    including 'Newton-Raphson', 'Broyden'-'Fletcher'-'Goldfarb'-'Shanno' ('BFGS'), 'BFGS' in R ('BFGSR'),
+    'Berndt'-'Hall'-'Hall'-'Hausman' ('BHHH'), Simulated Annealing ('SANN'), Conjugate Gradients ('CG'), and
+    'Nelder'-'Mead' ('NM'), returning summaries ('AIC', 'coef', 'logLik', 'nIter', 'stdEr', summary, 'vcov'). Bayesian
+    estimation of stress-strength reliability R = P(Y < X) is performed via Gibbs sampling,
+    Metropolis-Hastings algorithm, Importance Sampling, and 'Lindley' approximation (1980).
+    Methods and censoring schemes are described in
+    'Balakrishnan', 'Cramer', and 'Kundu' (2023, ISBN:978-0-12-398387-9),
+    'Lindley' (1980) <doi:10.1111/j.2517-6161.1980.tb01102.x>,
+    'Geweke' (1989) <doi:10.2307/2290062>,
+    'Metropolis' (1953) <doi:10.1063/1.1699114>,
+    'Hastings' (1970) <doi:10.1093/biomet/57.1.97>,
+    'Geman' and 'Geman' (1984) <doi:10.1109/TPAMI.1984.4767596>,
+    'Kundu' and 'Gupta' (2005) <doi:10.1016/j.jspi.2004.09.006>,
+    'Kundu' and 'Gupta' (2006) <doi:10.1016/j.csda.2005.02.007>,
+    'Berndt', 'Hall', 'Hall', and 'Hausman' (1974) <doi:10.3386/t0003>,
+    'Fletcher' (1987, ISBN:978-0-471-91547-8), and
+    'Nelder' and 'Mead' (1965) <doi:10.1093/comjnl/7.4.308>.
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.0.0)
+Imports: graphics, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-25 16:47:34 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 06:40:23 UTC

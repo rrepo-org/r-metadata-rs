@@ -1,0 +1,39 @@
+Type: Package
+Package: setweaver
+Title: Building Sets of Variables in a Probabilistic Framework
+Version: 1.0.0
+Authors@R: c(
+    person("Nicolas", "Leenaerts", , "nicolas.leenaerts@kuleuven.be", role = c("aut", "cre","cph"),
+           comment = c(ORCID = "0000-0003-2421-6845")),
+    person("Aaron", "Fisher", , "afisher@berkeley.edu", role = c("aut","cph"),
+           comment = c(ORCID = "0000-0001-9754-4618"))
+  )
+Description: Create sets of variables based on a mutual
+    information approach. In this context, a set is a collection of
+    distinct elements (e.g., variables) that can also be treated as a
+    single entity.  Mutual information, a concept from probability theory,
+    quantifies the dependence between two variables by expressing how much
+    information about one variable can be gained from observing the other.
+    Furthermore, you can analyze, and visualize
+    these sets in order to better understand the relationships among
+    variables.
+License: CC BY 4.0
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.1.4), igraph (>= 2.1.2), permutes (>= 2.8),
+        pheatmap (>= 1.0.13), splitTools (>= 1.0.1)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/nicolasleenaerts/setweaver
+NeedsCompilation: no
+Packaged: 2026-02-01 18:17:26 UTC; u0127988
+Author: Nicolas Leenaerts [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2421-6845>),
+  Aaron Fisher [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-9754-4618>)
+Maintainer: Nicolas Leenaerts <nicolas.leenaerts@kuleuven.be>
+Repository: CRAN
+Date/Publication: 2026-02-04 18:00:08 UTC

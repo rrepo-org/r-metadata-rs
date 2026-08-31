@@ -1,0 +1,70 @@
+Package: leaf
+Type: Package
+Title: Learning Equations for Automated Function Discovery
+Version: 0.1.0
+Authors@R: c(
+    person("Francisco", "Martins", 
+      role = c("cre", "aut", "cph"),
+      email = "francisco.martins@tecnico.ulisboa.pt",
+      comment = c(ORCID = "https://orcid.org/0009-0007-9941-2994")),
+    person("Pedro", "Cardoso",
+      role = "aut",
+      email = "pmcardoso@ciencias.ulisboa.pt", 
+      comment = c(ORCID = "https://orcid.org/0000-0001-8119-9960")),
+    person("Manuel", "Lopes",
+      role = "aut",
+      comment = c(ORCID = "https://orcid.org/0000-0002-6238-8974")),
+    person("Vasco", "Branco",
+      role = "aut",
+      email = "vasco.branco@helsinki.fi",
+      comment = c(ORCID = "https://orcid.org/0000-0001-7797-3183")),
+    person("INESC-ID", role = "fnd", 
+           comment = "Financed by FCT - PTDC/CCI-COM/5060/2021"),
+    person("intell-sci-comput", role = "cph",
+      comment = "Copyright holder of RSRM (<https://github.com/intell-sci-comput/RSRM>)"))
+Maintainer: Francisco Martins <francisco.martins@tecnico.ulisboa.pt>
+Description: A unified framework for symbolic regression (SR) and multi-view 
+    symbolic regression (MvSR) designed for complex, nonlinear systems, 
+    with particular applicability to ecological datasets. The package 
+    implements a four-stage workflow: data subset generation, 
+    functional form discovery, numerical parameter optimization, and 
+    multi-objective evaluation. It provides a high-level formula-style interface that 
+    abstracts and extends multiple discovery engines: genetic programming 
+    (via PySR), Reinforcement Learning with Monte Carlo Tree Search 
+    (via RSRM), and exhaustive generalized linear model search. 'leaf' 
+    extends these methods by enabling multi-view discovery, where 
+    functional structures are shared across groups while parameters are 
+    fitted locally, and by supporting the enforcement of domain-specific 
+    constraints, such as sign consistency across groups. The framework 
+    automatically handles data normalization, link functions, and 
+    back-transformation, ensuring that discovered symbolic equations 
+    remain interpretable and valid on the original data scale. 
+    Implements methods following ongoing work by the authors 
+    (2026, in preparation).
+URL: https://github.com/NabiaAI/Leaf
+Note: Includes modified Python code from the RSRM project
+        (<https://github.com/intell-sci-comput/RSRM>) under the MIT
+        License.
+License: MIT + file LICENSE
+Copyright: see inst/COPYRIGHTS
+Encoding: UTF-8
+Imports: R6, utils, reticulate (>= 1.30), ggplot2, dplyr, rlang,
+        rappdirs, rstudioapi
+SystemRequirements: Conda, Python (>= 3.10)
+RoxygenNote: 7.3.3
+Config/Needs/website: rmarkdown
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-20 21:50:08 UTC; marti
+Config/testthat/edition: 3
+Author: Francisco Martins [cre, aut, cph] (ORCID:
+    <https://orcid.org/0009-0007-9941-2994>),
+  Pedro Cardoso [aut] (ORCID: <https://orcid.org/0000-0001-8119-9960>),
+  Manuel Lopes [aut] (ORCID: <https://orcid.org/0000-0002-6238-8974>),
+  Vasco Branco [aut] (ORCID: <https://orcid.org/0000-0001-7797-3183>),
+  INESC-ID [fnd] (Financed by FCT - PTDC/CCI-COM/5060/2021),
+  intell-sci-comput [cph] (Copyright holder of RSRM
+    (<https://github.com/intell-sci-comput/RSRM>))
+Repository: CRAN
+Date/Publication: 2026-04-21 20:52:15 UTC

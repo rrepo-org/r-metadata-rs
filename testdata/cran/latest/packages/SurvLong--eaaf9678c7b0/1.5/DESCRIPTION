@@ -1,0 +1,45 @@
+Package: SurvLong
+Type: Package
+Title: Analysis of Proportional Hazards Model with Sparse Longitudinal
+        Covariates
+Version: 1.5
+Date: 2025-05-04
+Author: Hongyuan Cao [aut],
+  Mathew M. Churpek [aut],
+  Donglin Zeng [aut],
+  Jason P. Fine [aut],
+  Shannon T. Holloway [aut, cre]
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Authors@R: c(person(given = "Hongyuan",
+                        family = "Cao",
+                        role = "aut"),
+                 person(given = c("Mathew", "M."),
+                        family = "Churpek",
+                        role = "aut"),
+                 person(given = "Donglin",
+                        family = "Zeng",
+                        role = "aut"),
+                 person(given = c("Jason", "P."),
+                        family = "Fine",
+                        role = "aut"),
+                 person(given = c("Shannon", "T."),
+                        family = "Holloway",
+                        role = c("aut", "cre"),
+                        email = "shannon.t.holloway@gmail.com"))
+Description: Provides kernel weighting methods for estimation of proportional 
+    hazards models with intermittently observed longitudinal covariates. 
+    Cao H., Churpek M. M., Zeng D., and Fine J. P. (2015) 
+    <doi:10.1080/01621459.2014.957289>.
+License: GPL-2
+Depends: R (>= 4.1.0)
+Imports: stats
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Collate: 'betaEst.R' 'dataset.R' 'local_kernel.R' 'scoreNVCF.R'
+        'scoreLVCF.R' 'scoreHalf.R' 'scoreFull.R' 'preprocessInputs.R'
+        'kernelFixed.R' 'kernelAuto.R' 'fullKernel.R' 'halfKernel.R'
+        'lastValue.R' 'nearValue.R'
+Packaged: 2025-05-04 15:47:01 UTC; 19194
+Repository: CRAN
+Date/Publication: 2025-05-04 16:00:02 UTC

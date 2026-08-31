@@ -1,0 +1,60 @@
+Package: drlate
+Type: Package
+Title: Doubly Robust Estimation of Local Average Treatment Effects
+Version: 0.3.1
+Authors@R: c(
+    person("Kailas", "Venkitasubramanian", email = "kailasv@gmail.com",
+           role = c("aut", "cre")),
+    person("S. Derya", "Uysal", role = c("ctb", "cph"),
+           comment = "Author of the original Stata package 'drlate'"),
+    person("Tymon", "Sloczynski", role = c("ctb", "cph"),
+           comment = "Author of the original Stata package 'drlate'"),
+    person("Jeffrey M.", "Wooldridge", role = c("ctb", "cph"),
+           comment = "Author of the original Stata package 'drlate'"))
+Description: Estimates the local average treatment effect (LATE) and the
+    local average treatment effect on the treated (LATT) using observational
+    data with a binary instrument, implementing the complete estimator suite
+    of Sloczynski, Uysal, and Wooldridge: the doubly robust estimators of
+    Sloczynski, Uysal, and Wooldridge (2022) <doi:10.48550/arXiv.2208.01300>
+    -- inverse probability weighted regression adjustment (IPWRA), inverse
+    probability weighting (IPW), augmented inverse probability weighting
+    (AIPW), and regression adjustment (RA) -- and the Abadie-kappa weighting
+    estimators of Sloczynski, Uysal, and Wooldridge (2025)
+    <doi:10.1080/07350015.2024.2332763>. Supports linear, logistic, probit,
+    Poisson, and fractional (fractional-logit and fractional-probit) outcome
+    and treatment models, and instrument propensity scores
+    estimated by maximum likelihood, covariate balancing (CBPS), or inverse
+    probability tilting (IPT). Standard errors are computed jointly for all
+    estimation stages by stacking the moment conditions of every model into
+    a single M-estimation system; weak-instrument-robust Fieller confidence
+    sets, cluster-aware bootstrap inference, design diagnostics, and a
+    doubly robust Hausman-type test of unconfoundedness are included.
+    Estimates and standard errors are validated against the authors' Stata
+    commands 'drlate' (Statistical Software Components S459708) and
+    'kappalate' (S459257).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: stats, numDeriv
+Suggests: ggplot2, testthat (>= 3.0.0), knitr, rmarkdown, haven
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+VignetteBuilder: knitr
+URL: https://github.com/kvenkita/drlate,
+        https://kvenkita.github.io/drlate/
+BugReports: https://github.com/kvenkita/drlate/issues
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-20 14:14:49 UTC; kyle
+Author: Kailas Venkitasubramanian [aut, cre],
+  S. Derya Uysal [ctb, cph] (Author of the original Stata package
+    'drlate'),
+  Tymon Sloczynski [ctb, cph] (Author of the original Stata package
+    'drlate'),
+  Jeffrey M. Wooldridge [ctb, cph] (Author of the original Stata package
+    'drlate')
+Maintainer: Kailas Venkitasubramanian <kailasv@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-24 09:50:12 UTC

@@ -1,0 +1,42 @@
+Package: AGHmatrix
+Type: Package
+Title: Relationship Matrices for Diploid and Autopolyploid Species
+Version: 3.0.1
+Description: Fast computation of A (pedigree), G (genomic-base), and H (A corrected
+    by G) relationship matrices for diploid and autopolyploid species. Several methods
+    are implemented considering additive and non-additive models.
+Authors@R: 
+    c(
+        person("Rodrigo","Amadeu", role = c("aut","cre"), email = "rramadeu@gmail.com"),
+        person("Luis", "Ferrao", role = c("aut","ctb")),
+        person("Thiago", "Oliveira", role = c("aut","ctb")),
+        person("Catherine", "Cellon", role = "ctb"),
+        person("Leticia", "Lara", role = "ctb"),
+        person("Marcio", "Resende", role = "ctb"),
+        person("Ivone", "Oliveira", role = "ctb"),
+        person("Patricio", "Munoz", role = "ctb"),
+        person("Augusto", "Garcia", role = "ctb")
+    )
+Maintainer: Rodrigo Amadeu <rramadeu@gmail.com>
+Depends: R (>= 3.6.0)
+Imports: Rcpp (>= 1.1.0), matrixStats (>= 1.5.0)
+Suggests: knitr, MASS, rmarkdown, testthat, zoo
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Encoding: UTF-8
+License: GPL-3
+URL: https://github.com/rramadeu/AGHmatrix
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-07-22 02:46:31 UTC; rstudio
+Author: Rodrigo Amadeu [aut, cre],
+  Luis Ferrao [aut, ctb],
+  Thiago Oliveira [aut, ctb],
+  Catherine Cellon [ctb],
+  Leticia Lara [ctb],
+  Marcio Resende [ctb],
+  Ivone Oliveira [ctb],
+  Patricio Munoz [ctb],
+  Augusto Garcia [ctb]
+Repository: CRAN
+Date/Publication: 2026-07-22 06:30:02 UTC

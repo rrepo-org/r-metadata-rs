@@ -1,0 +1,32 @@
+Package: simsalapar
+Version: 1.0-13
+Date: 2025-07-24
+Title: Tools for Simulation Studies in Parallel
+Description: Tools for setting up ("design"), conducting, and evaluating
+  large-scale simulation studies with graphics and tables, including
+  parallel computations.
+Authors@R: c(person(given = "Marius", family = "Hofert", role = c("aut", "cre"),
+                    email = "mhofert@hku.hk",
+		    comment = c(ORCID = "0000-0001-8009-4665")),
+             person(given = "Martin", family = "Maechler", role = "aut",
+                    email = "maechler@stat.math.ethz.ch",
+		    comment = c(ORCID = "0000-0002-8685-9910")))
+Maintainer: Marius Hofert <mhofert@hku.hk>
+Depends: R (>= 3.1.0), graphics
+Imports: stats, parallel, utils, grDevices, methods, grid, sfsmisc,
+        gridBase (>= 0.4-6), colorspace
+Suggests: lattice, Rmpi, Hmisc, copula, foreach, doParallel, fGarch,
+        robustbase, codetools
+SuggestsNote: copula is only used for the vignettes, see their
+        VignetteDepends; fGarch: only used in demo(TGforecasts),
+        robustbase in another demo.
+KeepSource: yes
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-07-24 04:33:10 UTC; mhofert
+Author: Marius Hofert [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8009-4665>),
+  Martin Maechler [aut] (ORCID: <https://orcid.org/0000-0002-8685-9910>)
+Repository: CRAN
+Date/Publication: 2025-07-24 05:30:02 UTC

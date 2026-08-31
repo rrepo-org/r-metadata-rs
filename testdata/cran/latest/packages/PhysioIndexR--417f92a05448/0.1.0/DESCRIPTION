@@ -1,0 +1,56 @@
+Package: PhysioIndexR
+Title: Physiological and Stress Indices for Crop Evaluation
+Version: 0.1.0
+Authors@R: c(person(family = "Vinayaka",
+           role = c("aut", "cre"),
+           email = "vinayaka.b3vs@gmail.com",
+           comment = c(ORCID = "0000-0001-5004-0084")),
+    person(given = "Vengavasi",
+           family = "Krishnapriya",
+           role = c("aut", "ctb"),
+           email = "krishnapriya19@gmail.com",
+           comment = c(ORCID = "0000-0002-7496-5302")),
+    person(given = "T.",
+           family = "Lakshmi Pathy",
+           role = c("aut", "ctb"),
+           email = "pathy4u76@gmail.com",
+           comment = c(ORCID = "0000-0001-8940-7971")),       
+    person(family = "Amaresh",
+           role = c("aut", "ctb"),
+           email = "amaresh541@gmail.com",
+           comment = c(ORCID = "0009-0000-5201-5755")),    
+    person(given = "K.",
+           family = "Gopalareddy",
+           role = c("aut", "ctb"),
+           email = "gopalgpb@gmail.com",
+           comment = c(ORCID = "0000-0002-8825-6363")),
+    person(given = "G.S.",
+           family = "Suresha",
+           role = c("aut", "ctb"),
+           email = "sureshgiriyapur@gmail.com",
+           comment = c(ORCID = "0000-0002-3283-6617")),
+    person(given = "P.",
+           family = "Govindaraj",
+           role = c("aut", "ctb")))
+Maintainer: Vinayaka <vinayaka.b3vs@gmail.com>
+Description: Crop production systems are increasingly challenged by climate variability, resource limitations, and biotic–abiotic stresses. In this context, stress tolerance indices and physiological trait estimators are essential tools to identify stable and superior genotypes, quantify yield stability under stress versus non-stress conditions, and understand plant adaptive responses. The 'PhysioIndexR' package provides a unified framework to compute commonly used stress indices, physiological traits, and derived metrics that are critical in crop improvement, crop physiology, and other agricultural sciences. The package includes functions to calculate classical stress tolerance indices (See Lamba et al., 2023; <doi:10.1038/s41598-023-37634-8>) such as Tolerance (TOL), Stress Tolerance Index (STI), Stress Susceptibility Percentage Index (SSPI), Yield Index (YI), Yield Stability Index (YSI), Relative Stress Index (RSI), Mean Productivity (MP), Geometric Mean Productivity (GMP), Harmonic Mean (HM), Mean Relative Performance (MRP), and Percent Yield Reduction (PYR), along with a convenience wrapper all_indices() that returns all indices simultaneously. The function mfvst_from_indices() integrates these indices into a composite stress score using direction-aware membership values (0–1 scaling) and also averaging, facilitating genotype ranking and selection (See Vinu et al., 2025; <doi:10.1007/s12355-025-01595-1>). The package also implements two novel composite functions: WMFVST(), which computes the Weighted Mean Membership Function Value for Stress Tolerance, and WASI(), which computes the Weighted Average Stress Index, both derived from membership function values (MFV) and raw stress index values, respectively. Beyond stress indices, the package provides functions for key physiological traits relevant to sugarcane and other crops: bmap() computes biomass accumulation and partitioning between leaf, cane/shoot, and root fractions. chl() estimates total chlorophyll content from Soil-Plant Analysis Development (SPAD) and Chlorophyll Content Index (CCI) values using validated quadratic models particularly for sugarcane (See Krishnapriya et al., 2020; <doi:10.37580/JSR.2019.2.9.150-163>). ctd() calculates canopy temperature depression (CTD) from ambient and canopy temperatures, an important indicator of transpiration efficiency. growth() computes key growth analysis parameters, including Leaf Area Index (LAI), Net Assimilation Rate (NAR), and Crop Growth Rate (CGR) across crop growth stages (See Watson, 1958; <doi:10.1093/oxfordjournals.aob.a083596>). ranking() provides flexible ranking utilities for genotype performance with multiple tie-handling and NA-placement options. Through these tools, the package enables researchers to: (i) quantify crop responses to stress environments, (ii) partition physiological components of yield, (iii) integrate multiple indices into composite metrics for genotype evaluation, and (iv) facilitate informed decision making in breeding pipelines, and plant physiology experiments. By combining physiology-based traits with quantitative stress indices, 'PhysioIndexR' supports comprehensive crop evaluation and helps researchers identify multi-stress-resilient superior genotypes, thereby contributing to genetic improvement and ensuring sustainable production of food, fuel, and fibre in the era of limited resources and climate change.
+Imports: stats
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-11-08 06:32:30 UTC; user
+Author: Vinayaka [aut, cre] (ORCID: <https://orcid.org/0000-0001-5004-0084>),
+  Vengavasi Krishnapriya [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-7496-5302>),
+  T. Lakshmi Pathy [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0001-8940-7971>),
+  Amaresh [aut, ctb] (ORCID: <https://orcid.org/0009-0000-5201-5755>),
+  K. Gopalareddy [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-8825-6363>),
+  G.S. Suresha [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-3283-6617>),
+  P. Govindaraj [aut, ctb]
+Repository: CRAN
+Date/Publication: 2025-11-12 10:50:01 UTC

@@ -1,0 +1,64 @@
+Package: statim
+Type: Package
+Title: A Declarative Interface for Statistical Inference
+Version: 0.1.0
+Authors@R: c(
+    person("Joshua", "Marie", 
+           email = "joshua.marie.k@gmail.com", 
+           role = c("aut", "cre")),
+    person("Antoine", "Soetewey", 
+           email = "antoine.soetewey@uclouvain.be", 
+           role = "aut",
+           comment = c(ORCID = "0000-0001-8159-0804"))
+    )
+Description: A declarative interface for statistical inference built on the S7 object
+    system. The layouts of the statistical inference are described using expressive variable mappers,
+    null hypotheses are stated as mathematical expressions over population parameters,
+    and estimation is deferred until explicitly requested. Supports estimation method involving
+    hypothesis testing and model-based inference with an extensible variant system for
+    registering custom estimation methods.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: rlang (>= 1.2.0), cli, vctrs (>= 0.7.0), tibble, S7,
+        tidyselect, stats, utils, tabstats (>= 0.2.0), pillar
+Suggests: testthat (>= 3.0.0), magrittr, box, rmarkdown, broom, pander,
+        Rfast2, purrr, tidyr, dplyr, forcats, ggplot2, patchwork,
+        sysfonts, showtext, ggdist, ggtext, boot, knitr, fansi, lintr,
+        rstatix, readr, withr
+Collate: 'statim-package.R' 'ops.R' 'utils.R' 'add-option.R'
+        'add-stat-define.R' 'zzz.R' 'define-var-ids.R'
+        'define-var-ids-process.R' 'define-var-ids-info.R'
+        'define-model.R' 'define-var-id-process-helpers.R'
+        'generate-pairs.R' 'inject-and-run.R' 'stat-construct.R'
+        'stat-infer-class.R' 'baseline-variant.R' 'stat-spec.R'
+        'htest-prepare.R' 'model-prepare.R' 'stat-prepare.R'
+        'recalibrator-via.R' 'hypothesis-params.R'
+        'hypothesis-parser.R' 'hypothesis-helpers.R'
+        'hypothesis-mappers.R' 'hypothesis-core.R'
+        'hypothesis-validators.R' 'stat-exec.R' 'tidy-core.R'
+        'predict-core.R' 'gauge-core.R' 'htest-impl-container.R'
+        'htest-proptest-defs.R' 'htest-proptest.R'
+        'htest-ttest-defs-on.R' 'htest-ttest-defs-xby.R'
+        'htest-ttest-defs-formula.R' 'htest-ttest-defs-pairwise.R'
+        'htest-ttest-one.R' 'htest-ttest.R' 'tidy-ttest-def-two.R'
+        'tidy-ttest-def-formula.R' 'gauge-ttest-def-formula.R'
+        'htest-testcor-defs-rel.R' 'htest-testcor-defs-formula.R'
+        'htest-testcor.R' 'model-impl-container.R' 'model-expand.R'
+        'model-anova-mod.R' 'model-linear-reg-defs.R'
+        'model-linear-reg.R' 'model-glm-defs.R' 'model-glm.R'
+        'display-meta.R' 'tidy-auto.R' 'predict-auto.R' 'gauge-auto.R'
+        'global_variables.R'
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+URL: https://s7-stats.github.io/statim/,
+        https://github.com/s7-stats/statim
+BugReports: https://github.com/s7-stats/statim/issues
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-30 23:19:01 UTC; DESKTOP
+Author: Joshua Marie [aut, cre],
+  Antoine Soetewey [aut] (ORCID: <https://orcid.org/0000-0001-8159-0804>)
+Maintainer: Joshua Marie <joshua.marie.k@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 19:50:02 UTC

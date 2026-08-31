@@ -1,0 +1,33 @@
+Package: epibyhand
+Type: Package
+Title: Worked Derivations for Classical Epidemiological Measures
+Version: 0.1.0
+Authors@R: person("Raj", "Subedi", email = "rajsubediresearch@gmail.com",
+    role = c("aut", "cre"))
+Description: Computes classical epidemiological measures and returns the
+    complete worked derivation alongside the result: every intermediate
+    quantity, the formula, and the formula with the observed numbers
+    substituted in. Intended for teaching, for checking hand calculations,
+    and for generating worked solutions in course materials. Scope is
+    deliberately limited to methods a student can compute by hand on paper.
+    Methods follow Mantel and Haenszel (1959) <doi:10.1093/jnci/22.4.719>,
+    Greenland and Robins (1985, Biometrics 41, 55-68), Robins, Breslow and
+    Greenland (1986, Biometrics 42, 311-323), and Breslow and Day (1980,
+    IARC Scientific Publications No. 32).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 4.0.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+URL: https://github.com/rajsubediresearch/epibyhand
+BugReports: https://github.com/rajsubediresearch/epibyhand/issues
+NeedsCompilation: no
+Packaged: 2026-07-27 18:40:05 UTC; razsu
+Author: Raj Subedi [aut, cre]
+Maintainer: Raj Subedi <rajsubediresearch@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 10:10:02 UTC

@@ -1,0 +1,40 @@
+Type: Package
+Package: ecoXCorr
+Title: Lagged Cross-Correlation Analysis of Environmental Time Series
+Version: 0.2.2
+Authors@R: c(
+    person("Nicolas", "Moiroux", , "nicolas.moiroux@ird.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6755-6167")),
+    person("Colombine", "Bartholomée", , "colombine.bartholomee@ird.fr", role = "aut",
+           comment = c(ORCID = "0000-0001-7291-5195")),
+    person("Paul", "Taconet", , "paul.taconet@ird.fr", role = "aut",
+           comment = c(ORCID = "0000-0001-7429-7204"))
+  )
+Description: Tools for analysing lagged relationships between
+    environmental variables and ecological or epidemiological time series.
+    The package implements a workflow to aggregate meteorological data
+    over multiple lagged intervals, fit regression models, including
+    mixed-effect models using 'glmmTMB', for each lag window, and
+    visualise varied models outcomes (effect strength and direction, model
+    prediction error...) using cross-correlation maps ('CCM').
+License: GPL (>= 3)
+URL: https://github.com/Nmoiroux/ecoXCorr
+BugReports: https://github.com/Nmoiroux/ecoXCorr/issues
+Depends: R (>= 3.5)
+Imports: ggplot2, glmmTMB, performance, Rdpack, scales, shiny, stats
+Suggests: testthat (>= 3.0.0)
+RdMacros: Rdpack
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-01 10:13:49 UTC; nm
+Author: Nicolas Moiroux [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6755-6167>),
+  Colombine Bartholomée [aut] (ORCID:
+    <https://orcid.org/0000-0001-7291-5195>),
+  Paul Taconet [aut] (ORCID: <https://orcid.org/0000-0001-7429-7204>)
+Maintainer: Nicolas Moiroux <nicolas.moiroux@ird.fr>
+Repository: CRAN
+Date/Publication: 2026-05-01 10:30:02 UTC

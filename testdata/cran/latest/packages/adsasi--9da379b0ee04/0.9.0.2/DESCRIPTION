@@ -1,0 +1,19 @@
+Package: adsasi
+Title: Adaptive Sample Size Simulator
+Version: 0.9.0.2
+Authors@R: 
+    person(given = "Skerdi", 
+           family = "Haviari", 
+           role = c("aut","cre"), 
+           email = "skerdi.haviari@aphp.fr")
+Description: A simulations-first sample size determination package that aims at making sample size formulae obsolete for most easily computable statistical experiments ; the main envisioned use case is clinical trials. The proposed clinical trial must be written by the user in the form of a function that takes as argument a sample size and returns a boolean (for whether or not the trial is a success). The 'adsasi' functions will then use it to find the correct sample size empirically. The unavoidable mis-specification is obviated by trying sample size values close to the right value, the latter being understood as the value that gives the probability of success the user wants (usually 80 or 90% in biostatistics, corresponding to 20 or 10% type II error).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: abind, grDevices, graphics, stats
+NeedsCompilation: no
+Packaged: 2026-04-02 20:46:23 UTC; Skerdi_HAVIARI
+Author: Skerdi Haviari [aut, cre]
+Maintainer: Skerdi Haviari <skerdi.haviari@aphp.fr>
+Repository: CRAN
+Date/Publication: 2026-04-02 21:10:12 UTC

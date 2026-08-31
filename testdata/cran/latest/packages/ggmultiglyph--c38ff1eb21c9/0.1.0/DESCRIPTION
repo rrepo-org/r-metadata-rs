@@ -1,0 +1,43 @@
+Package: ggmultiglyph
+Title: Multivariate Data Visualization using Glyphs
+Version: 0.1.0
+Authors@R: c(
+    person(given = "J.", family = "Aravind",
+           email = "j.aravind@icar.org.in",
+           role = c("aut", "cre"),
+		       comment = c(ORCID = "0000-0002-4791-442X")),
+		person(given = "Kamil", family = "Slowikowski",
+           role=c("ctb"),
+           comment = c(ORCID = "0000-0002-2843-6370",
+                       "Repel algorithm")),
+    person("ICAR-NBGPR",
+           role = c("cph"),
+		       comment = c(url = "https://nbpgr.org.in/")))
+Description: Provides 'ggplot2' geoms for visualizing multivariate data using 
+    glyphs. The package implements several established glyph designs described 
+    in the information visualization literature, including the review by Borgo 
+    et al. (2013) <doi:10.2312/conf/EG2013/stars/039-063>.
+Copyright: 2021-2026, ICAR-NBPGR
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+RdMacros: Rdpack
+LinkingTo: Rcpp
+Depends: R (>= 3.5.0)
+Imports: cli, ggplot2, grid, methods, packcircles, Rcpp, Rdpack, rlang,
+        scales
+Suggests: ggrepel, gridExtra, RColorBrewer
+URL: https://github.com/aravind-j/ggmultiglyph,
+        https://aravind-j.github.io/ggmultiglyph/
+BugReports: https://github.com/aravind-j/ggmultiglyph/issues
+Language: en-GB
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-03 09:17:45 UTC; Aravind-DGC
+Author: J. Aravind [aut, cre] (ORCID: <https://orcid.org/0000-0002-4791-442X>),
+  Kamil Slowikowski [ctb] (ORCID:
+    <https://orcid.org/0000-0002-2843-6370>, Repel algorithm),
+  ICAR-NBGPR [cph] (url: https://nbpgr.org.in/)
+Maintainer: J. Aravind <j.aravind@icar.org.in>
+Repository: CRAN
+Date/Publication: 2026-08-08 13:50:03 UTC

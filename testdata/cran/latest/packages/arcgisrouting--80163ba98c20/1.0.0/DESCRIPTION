@@ -1,0 +1,33 @@
+Package: arcgisrouting
+Title: Access the ArcGIS Routing and Network Analysis Services
+Version: 1.0.0
+Authors@R: 
+    person("Josiah", "Parry", , "josiah.parry@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9910-865X"))
+Description: Bindings to the ArcGIS Routing REST API
+    (<https://developers.arcgis.com/rest/routing/>) for solving network
+    analysis problems. Plan routes and generate driving directions, measure
+    travel time and distance with origin-destination cost matrices, build
+    service areas, find the closest facilities, route fleets of vehicles, and
+    snap GPS tracks to roads. Both synchronous requests and asynchronous
+    geoprocessing jobs are supported, returning simple features ('sf') objects
+    ready for analysis and mapping.
+License: Apache License (>= 2)
+Encoding: UTF-8
+Language: en
+RoxygenNote: 7.3.3
+Imports: arcgisutils, cli, httr2, sf, yyjsonr, vctrs, RcppSimdJson,
+        rlang, hms
+Depends: R (>= 4.3)
+Suggests: readr, heck, brio, wk, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: http://r.esri.com/arcgisrouting/,
+        https://github.com/r-arcgis/arcgisrouting
+BugReports: https://github.com/r-arcgis/arcgisrouting/issues
+NeedsCompilation: yes
+Packaged: 2026-06-30 21:55:24 UTC; josiahparry
+Author: Josiah Parry [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9910-865X>)
+Maintainer: Josiah Parry <josiah.parry@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-07 09:30:21 UTC

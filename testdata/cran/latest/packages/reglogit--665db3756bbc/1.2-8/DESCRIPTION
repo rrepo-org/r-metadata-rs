@@ -1,0 +1,26 @@
+Package: reglogit
+Type: Package
+Title: Simulation-Based Regularized Logistic Regression
+Version: 1.2-8
+Date: 2025-07-25
+Authors@R: person(given = c("Robert", "B."),
+                  family = "Gramacy",
+                  role = c("cre", "aut"),
+                  email = "rbg@vt.edu")
+Maintainer: Robert B. Gramacy <rbg@vt.edu>
+Depends: R (>= 2.14.0), methods, mvtnorm, boot, Matrix
+Suggests: plgp
+Description: Regularized (polychotomous) logistic regression 
+  by Gibbs sampling. The package implements subtly different 
+  MCMC schemes with varying efficiency depending on the data type 
+  (binary v. binomial, say) and the desired estimator (regularized maximum
+  likelihood, or Bayesian maximum a posteriori/posterior mean, etc.) through a 
+  unified interface. For details, see Gramacy & Polson (2012 <doi:10.1214/12-BA719>).
+License: LGPL
+URL: https://bobby.gramacy.com/r_packages/reglogit/
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2025-07-24 23:13:59 UTC; bobby
+Author: Robert B. Gramacy [cre, aut]
+Repository: CRAN
+Date/Publication: 2025-07-24 23:30:02 UTC

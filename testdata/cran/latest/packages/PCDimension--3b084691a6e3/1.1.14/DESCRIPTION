@@ -1,0 +1,26 @@
+Package: PCDimension
+Version: 1.1.14
+Date: 2025-04-07
+Title: Finding the Number of Significant Principal Components
+Authors@R: c(person(given = "Min", family = "Wang", role = "aut"),
+	    person(given = c("Kevin", "R."), family = "Coombes",
+                   role = c("aut", "cre"), email = "krc@silicovore.com"))
+Description: Implements methods to automate the Auer-Gervini graphical
+  Bayesian approach for determining the number of significant
+  principal components. Automation uses clustering, change points, or
+  simple statistical models to distinguish "long" from "short" steps
+  in a graph showing the posterior number of components as a function
+  of a prior parameter. See <doi:10.1101/237883>.
+Depends: R (>= 4.4), ClassDiscovery
+Imports: methods, stats, graphics, oompaBase, kernlab, changepoint, cpm
+Suggests: MASS, nFactors
+License: Apache License (== 2.0)
+biocViews: Clustering
+URL: http://oompa.r-forge.r-project.org/
+NeedsCompilation: no
+Packaged: 2025-04-07 21:09:12 UTC; kevin
+Author: Min Wang [aut],
+  Kevin R. Coombes [aut, cre]
+Maintainer: Kevin R. Coombes <krc@silicovore.com>
+Repository: CRAN
+Date/Publication: 2025-04-07 22:20:02 UTC

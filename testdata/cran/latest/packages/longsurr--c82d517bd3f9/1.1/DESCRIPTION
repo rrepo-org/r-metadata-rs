@@ -1,0 +1,20 @@
+Package: longsurr
+Type: Package
+Title: Longitudinal Surrogate Marker Analysis
+Version: 1.1
+Authors@R: c(person("Layla", "Parast", role = c("aut", "cre"), email = "parast@austin.utexas.edu"), person("Denis", "Agniel", role = "aut"), person("Xuan", "Wang", role = "aut"))
+Description: Assess the proportion of treatment effect explained by a longitudinal surrogate marker as described in Agniel D and Parast L (2021) <doi:10.1111/biom.13310>; and estimate the treatment effect on a longitudinal surrogate marker as described in Wang et al. (2025) <doi:10.1093/biomtc/ujaf104>. A tutorial for this package can be found at <https://www.laylaparast.com/longsurr>.
+License: GPL
+Imports: stringr, splines, mgcv, Rsurrogate, dplyr, here, tidyr, fs,
+        KernSmooth, stats, fdapace, grf, lme4, mvnfast, plyr, tibble,
+        magrittr, glue, purrr, readr, refund, fda, fda.usc, survival,
+        MASS
+NeedsCompilation: no
+Packaged: 2025-11-09 11:33:25 UTC; parastlm
+Author: Layla Parast [aut, cre],
+  Denis Agniel [aut],
+  Xuan Wang [aut]
+Maintainer: Layla Parast <parast@austin.utexas.edu>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-11-09 12:40:02 UTC

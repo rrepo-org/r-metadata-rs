@@ -1,0 +1,44 @@
+Package: mupet
+Title: Multiclass Performance Evaluation Toolkit
+Version: 0.1.0
+Authors@R: c(
+    person(
+        "Lise", "Bellanger",
+        role = "aut"
+    ),
+    person(
+        "Manon", "Simonot", 
+        role = "aut"
+    ),
+    person(
+        "Aymeric", "Stamm", 
+        email = "aymeric.stamm@cnrs.fr", 
+        role = c("aut", "cre"), 
+        comment = c(ORCID = "0000-0002-8725-3654")
+    ))
+Description: Implementation of custom 'tidymodels' metrics for multi-class
+    prediction models with a single negative class. Currently are implemented
+    macro-average sensitivity and specificity as in Mortaz, Ebrahim (2020)
+    "Imbalance accuracy metric for model selection in multi-class imbalance
+    classification problems” <doi:10.1016/j.knosys.2020.106490> and a
+    generalized weighted Youden index as in Li, D.L., Shen F., Yin Y., Peng
+    J.X and Chen P.Y. (2013) “Weighted Youden index and its
+    two-independent-sample comparison based on weighted sensitivity and
+    specificity” <doi:10.3760/cma.j.issn.0366-6999.20123102>.
+License: MIT + file LICENSE
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/astamm/mupet, https://astamm.github.io/mupet/
+BugReports: https://github.com/astamm/mupet/issues
+Imports: rlang, yardstick
+NeedsCompilation: no
+Packaged: 2026-01-16 14:36:25 UTC; stamm-a
+Author: Lise Bellanger [aut],
+  Manon Simonot [aut],
+  Aymeric Stamm [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8725-3654>)
+Maintainer: Aymeric Stamm <aymeric.stamm@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2026-01-21 20:10:09 UTC

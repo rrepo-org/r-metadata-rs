@@ -1,0 +1,34 @@
+Package: tabulergm
+Title: Publication-Ready Tables and Summaries for Exponential-Family
+        Random Graph Models
+Version: 0.1.0
+Authors@R: 
+    person("George", "Vega Yon", , "g.vegayon@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3171-0844"))
+Description: Creates publication-ready tables documenting
+    exponential-family random graph models (ERGMs), a class of statistical
+    models for social networks (Robins et al., 2007,
+    <doi:10.1016/j.socnet.2006.08.002>). Tables describe model terms
+    through their definitions, mathematical representations, and graphical
+    representations, and can be generated from ERGM formulas or from
+    models fitted with the 'ergm' package (Hunter et al., 2008,
+    <doi:10.18637/jss.v024.i03>). Resulting tables can be integrated into
+    'quarto' and 'rmarkdown' documents.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.2)
+Imports: base64enc, ergm (>= 4.0), netplot (>= 0.4-0), network, yaml
+Suggests: knitr, rmarkdown, rstudioapi, tinytest
+URL: https://gvegayon.github.io/tabulergm/,
+        https://github.com/gvegayon/tabulergm
+BugReports: https://github.com/gvegayon/tabulergm/issues
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-20 02:21:33 UTC; runner
+Author: George Vega Yon [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3171-0844>)
+Maintainer: George Vega Yon <g.vegayon@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 13:50:02 UTC

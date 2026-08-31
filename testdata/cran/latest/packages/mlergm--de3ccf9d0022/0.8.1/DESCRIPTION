@@ -1,0 +1,23 @@
+Package: mlergm
+Title: Multilevel Exponential-Family Random Graph Models
+Version: 0.8.1
+Authors@R: c(
+           person("Jonathan", "Stewart", email = "jrstewart@fsu.edu", role = c("cre", "aut")),
+           person("Michael", "Schweinberger", email = "michael.schweinberger@rice.edu", role = c("ctb")))
+Description: Estimates exponential-family random graph models for multilevel network data, assuming the multilevel structure is observed. The scope, at present, covers multilevel models where the set of nodes is nested within known blocks. The estimation method uses Monte-Carlo maximum likelihood estimation (MCMLE) methods to estimate a variety of canonical or curved exponential family models for binary random graphs. MCMLE methods for curved exponential-family random graph models can be found in Hunter and Handcock (JCGS, 2006). The package supports parallel computing, and provides methods for assessing goodness-of-fit of models and visualization of networks. 
+Depends: R (>= 4.0.0), ergm (>= 4.2.2), network (>= 1.17.2)
+Imports: parallel, Matrix, stringr, stats, GGally, ggplot2, cowplot,
+        reshape2, plyr, methods, graphics, lpSolve, sna, statnet.common
+Suggests: RColorBrewer, knitr, rmarkdown
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+VignetteBuilder: knitr
+Packaged: 2025-05-22 14:50:24 UTC; jstew
+Author: Jonathan Stewart [cre, aut],
+  Michael Schweinberger [ctb]
+Maintainer: Jonathan Stewart <jrstewart@fsu.edu>
+Repository: CRAN
+Date/Publication: 2025-05-22 15:50:10 UTC

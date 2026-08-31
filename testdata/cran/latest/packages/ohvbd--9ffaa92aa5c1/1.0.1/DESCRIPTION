@@ -1,0 +1,28 @@
+Package: ohvbd
+Title: One Health VBD Hub
+Version: 1.0.1
+Authors@R: 
+    person("Francis", "Windram", , "francis.windram17@imperial.ac.uk", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-2129-826X"))
+Description: Interface with the One Health VBD (vector-borne disease) Hub <https://vbdhub.org/> and related repositories (VectorByte <https://www.vectorbyte.org>, GBIF <https://www.gbif.org> and AREAdata <https://pearselab.github.io/areadata/>) directly to find, download, and subset vector-borne disease data.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/fwimp/ohvbd, https://ohvbd.vbdhub.org
+BugReports: https://github.com/fwimp/ohvbd/issues
+Imports: cli (>= 3.0.0), curl (>= 6.4.0), data.table, dplyr, generics,
+        httr2 (>= 1.1.1), lubridate, rlang (>= 1.1.0), stats, stringr,
+        terra, tibble, tidyr, utils
+Suggests: knitr, parsermd, rgbif, rmarkdown, rnaturalearth, testthat
+        (>= 3.0.0), vcr, withr
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+NeedsCompilation: no
+Packaged: 2026-03-09 16:47:00 UTC; Francis
+Author: Francis Windram [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-2129-826X>)
+Maintainer: Francis Windram <francis.windram17@imperial.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-03-09 17:20:02 UTC

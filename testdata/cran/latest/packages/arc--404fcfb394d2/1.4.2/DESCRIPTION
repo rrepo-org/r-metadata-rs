@@ -1,0 +1,34 @@
+Package: arc
+Title: Association Rule Classification
+Version: 1.4.2
+Date: 2025-04-03
+Authors@R: person(given = "Tomas",
+                    family = "Kliegr",
+                    role = c("aut", "cre"),
+                    email = "kliegr@gmail.com")
+Maintainer: Tomas Kliegr <kliegr@gmail.com>
+Description: Implements the Classification-based on
+    Association Rules (CBA) algorithm for association rule classification.
+    The package, also described in Hahsler et al. (2019) <doi:10.32614/RJ-2019-048>,
+    contains several convenience methods that allow to automatically
+    set CBA parameters (minimum confidence, minimum support) and it also natively
+    handles numeric attributes by integrating a pre-discretization step.
+    The rule generation phase is handled by the 'arules' package. 
+    To further decrease the size of the CBA models produced by the 'arc' package, postprocessing by the 
+    'qCBA' package is suggested.
+Copyright: The mdlp2.R script reuses parts of the code from the R
+        `discretization` package by HyunJi Kim (GPL license).
+Depends: R (>= 3.5.0), arules (>= 1.7-4), R.utils, discretization
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/kliegr/arc
+BugReports: https://github.com/kliegr/arc/issues
+Imports: Matrix (>= 0.5-0), methods, datasets, utils
+Suggests: qCBA
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-04-03 11:39:17 UTC; tomas
+Author: Tomas Kliegr [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-04-03 12:10:02 UTC

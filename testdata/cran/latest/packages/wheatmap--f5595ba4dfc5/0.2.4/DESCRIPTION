@@ -1,0 +1,22 @@
+Package: wheatmap
+Type: Package
+Title: Incrementally Build Complex Plots using Natural Semantics
+Version: 0.2.4
+Authors@R: person("Wanding", "Zhou", email="zhouwanding@gmail.com", role=c("aut","cre"))
+URL: https://github.com/zwdzwd/wheatmap
+BugReports: https://github.com/zwdzwd/wheatmap/issues
+Description: Builds complex plots, heatmaps in particular, using natural semantics. Bigger plots can be assembled using directives such as 'LeftOf', 'RightOf', 'TopOf', and 'Beneath' and more. Other features include clustering, dendrograms and integration with 'ggplot2' generated grid objects. This package is particularly designed for bioinformaticians to assemble complex plots for publication.
+Encoding: UTF-8
+License: GPL-3
+RoxygenNote: 7.3.3
+Imports: grid, gtable, stats, colorspace, RColorBrewer, pals
+Suggests: knitr, rmarkdown, png, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-05-30 18:40:07 UTC; zhouw3
+Author: Wanding Zhou [aut, cre]
+Maintainer: Wanding Zhou <zhouwanding@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-30 18:50:02 UTC

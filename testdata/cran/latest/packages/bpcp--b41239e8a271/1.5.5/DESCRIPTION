@@ -1,0 +1,30 @@
+Package: bpcp
+Type: Package
+Title: Beta Product Confidence Procedure for Right Censored Data
+Version: 1.5.5
+Date: 2026-07-22
+Authors@R: c(person(given = c("Michael", "P."),
+                    family = "Fay",
+                    role = c("aut", "cre"),
+                    email = "mfay@niaid.nih.gov"),
+             person(given = "Allyson",
+                    family = "Mateja",
+                    role = "ctb"),
+             person(given = "Megan",
+                    family = "Grieco",
+                    role = "ctb"))
+Depends: stats, survival, ggplot2, methods
+Description: Calculates nonparametric pointwise confidence intervals for the survival distribution for right censored data, and for medians [Fay and Brittain <DOI:10.1002/sim.6905>]. Has two-sample tests for dissimilarity (e.g., difference, ratio or odds ratio) in survival at a fixed time, and differences in medians [Fay, Proschan, and Brittain <DOI:10.1111/biom.12231>]. Basically, the package gives exact inference methods for one- and two-sample exact inferences for Kaplan-Meier curves (e.g., generalizing Fisher's exact test to allow for right censoring), which are especially important for latter parts of the survival curve, small sample sizes or heavily censored data. Includes mid-p options.
+License: GPL (>= 2)
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2026-07-22 19:54:35 UTC; faym
+Repository: CRAN
+Date/Publication: 2026-07-22 20:30:08 UTC
+Suggests: testthat (>= 3.0.0), exact2x2, exactci, scales, survminer,
+        tidyverse, purrr, abind, data.table, dplyr, tidyr
+Config/testthat/edition: 3
+Author: Michael P. Fay [aut, cre],
+  Allyson Mateja [ctb],
+  Megan Grieco [ctb]
+Maintainer: Michael P. Fay <mfay@niaid.nih.gov>

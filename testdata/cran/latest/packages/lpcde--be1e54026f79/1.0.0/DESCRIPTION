@@ -1,0 +1,32 @@
+Package: lpcde
+Type: Package
+Title: Boundary Adaptive Local Polynomial Conditional Density Estimator
+Version: 1.0.0
+Authors@R: c(
+    person("Matias D.", "Cattaneo", email = "matias.d.cattaneo@gmail.com", role = c("aut", "cre")),
+    person("Rajita", "Chandak", email = "rajita.chandak@gmail.com", role = "aut"),
+    person("Michael", "Jansson", email = "michael.jansson.berkeley@gmail.com", role = "aut"),
+    person("Xinwei", "Ma", email = "xinweima.pku@gmail.com", role = "aut"))
+Author: Matias D. Cattaneo [aut, cre],
+  Rajita Chandak [aut],
+  Michael Jansson [aut],
+  Xinwei Ma [aut]
+Maintainer: Matias D. Cattaneo <matias.d.cattaneo@gmail.com>
+Description: Tools for estimation and inference of conditional densities, derivatives and functions. This is the companion software for Cattaneo, Chandak, Jansson and Ma (2024) <doi:10.3150/23-BEJ1711>.
+Depends: R (>= 3.3.0)
+License: GPL-3
+URL: https://nppackages.github.io/lpcde/,
+        https://github.com/nppackages/lpcde
+BugReports: https://github.com/nppackages/lpcde/issues
+Encoding: UTF-8
+Imports: Rcpp (>= 0.12.8), ggplot2, purrr, MASS, mvtnorm, combinat,
+        Matrix, Rdpack, stats
+RdMacros: Rdpack
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0), covr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-21 10:59:20 UTC; cattaneo
+Repository: CRAN
+Date/Publication: 2026-05-21 12:20:02 UTC

@@ -1,0 +1,33 @@
+Package: SurvSPro
+Type: Package
+Title: Survival Prediction with Spatially Adjusted Protein Summaries
+Version: 0.1.0
+Authors@R: 
+    c(person("Seungjun", "Ahn", email = "seungjun.ahn@mountsinai.org",
+		 role = c("cre", "aut"),
+	    comment = c(ORCID = "0000-0002-4816-8924")),
+    person("Eun Jeong", "Oh", email = "eoh2@northwell.edu",
+		 role = c("aut"),
+	    comment = c(ORCID = "0000-0001-8949-6564")),
+    person("Diddier", "Prada", email = "diddier.prada@mountsinai.org",
+		 role = c("ctb")),
+    person("Ali", "Shojaie", email = "ashojaie@uw.edu",
+		 role = c("ctb")))
+Maintainer: Seungjun Ahn <seungjun.ahn@mountsinai.org>
+Description: A survival prediction framework using spatially adjusted protein summaries from spatial proteomics data, including imaging mass cytometry data. Cell-level protein intensities are modeled with spatial spline regression to estimate spatially adjusted mean expression and residual variance. Methodological details are described in Ahn et al. (2026) <doi:10.64898/2026.06.08.730964>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: dplyr, mgcv, survival, sp
+Suggests: testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-11 23:54:25 UTC; seungjunahn
+Author: Seungjun Ahn [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-4816-8924>),
+  Eun Jeong Oh [aut] (ORCID: <https://orcid.org/0000-0001-8949-6564>),
+  Diddier Prada [ctb],
+  Ali Shojaie [ctb]
+Repository: CRAN
+Date/Publication: 2026-06-19 11:30:07 UTC

@@ -1,0 +1,61 @@
+Package: clustord
+Type: Package
+Title: Cluster Ordinal Data via Proportional Odds or Ordered Stereotype
+Version: 2.0.1
+Date: 2026-03-03
+Authors@R: c(
+    person(given = "Louise", 
+           family = "McMillan", 
+           email = "louise.mcmillan@vuw.ac.nz", 
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0536-8563")), 
+    person(given = "Daniel", 
+           family = "Fernández Martínez", 
+           email = "daniel.fernandez.martinez@upc.edu", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-0012-2094")), 
+    person(given = "Ying", 
+           family = "Cui", 
+           email = "ying.cui@sms.vuw.ac.nz", 
+           role = c("aut")), 
+    person(given = "Eleni", 
+           family = "Matechou", 
+           email = "e.matechou@kent.ac.uk", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-3626-844X")),
+    person(given = "W. N.",
+           family = "Venables",
+           role = c("ctb","cph"),
+           comment = "clustord osm regression functions and S3 methods derived by Louise McMillan from MASS package polr function by Venables and Ripley"),
+    person(given = "B. D.",
+           family = "Ripley",
+           role = c("ctb","cph"),
+           comment = "clustord osm regression functions and S3 methods derived by Louise McMillan from MASS package polr function by Venables and Ripley"))
+Maintainer: Louise McMillan <louise.mcmillan@vuw.ac.nz>
+Description: Biclustering, row clustering and column clustering using the proportional odds model (POM), ordered stereotype model (OSM) or binary model for ordinal categorical data. Fernández, D., Arnold, R., Pledger, S., Liu, I., & Costilla, R. (2019) <doi:10.1007/s11634-018-0324-3>.
+License: GPL-3
+URL: https://vuw-clustering.github.io/clustord/
+Depends: R (>= 3.5.0), stats, utils
+Imports: Rcpp (>= 1.0.1), MASS, nnet, flexclust, methods
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, formatR, rmarkdown, testthat (>= 2.1.0), multgee,
+        parallel
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr, formatR
+NeedsCompilation: yes
+Packaged: 2026-03-03 07:03:38 UTC; LFM
+Author: Louise McMillan [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0536-8563>),
+  Daniel Fernández Martínez [aut] (ORCID:
+    <https://orcid.org/0000-0003-0012-2094>),
+  Ying Cui [aut],
+  Eleni Matechou [aut] (ORCID: <https://orcid.org/0000-0003-3626-844X>),
+  W. N. Venables [ctb, cph] (clustord osm regression functions and S3
+    methods derived by Louise McMillan from MASS package polr function
+    by Venables and Ripley),
+  B. D. Ripley [ctb, cph] (clustord osm regression functions and S3
+    methods derived by Louise McMillan from MASS package polr function
+    by Venables and Ripley)
+Repository: CRAN
+Date/Publication: 2026-03-03 08:40:14 UTC

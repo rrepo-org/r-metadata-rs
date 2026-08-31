@@ -1,0 +1,63 @@
+Package: ffaframework
+Title: Flood Frequency Analysis Framework
+Description: Tools to support systematic and reproducible workflows for both
+	stationary and nonstationary flood frequency analysis, with applications
+	extending to other hydroclimate extremes, such as precipitation frequency
+	analysis. This package implements the FFA framework proposed by Vidrio-
+	Sahagún et al. (2024) <doi:10.1016/j.envsoft.2024.105940>, originally
+	developed in 'MATLAB', now adapted for the 'R' environment. This work was
+	funded by the Flood Hazard Identification and Mapping Program of Environment
+	and Climate Change Canada, as well as the Canada Research Chair (Tier 1)
+	awarded to Dr. Pietroniro.
+Version: 0.1.2
+Authors@R: 
+    c(person(
+        "Riley",
+        "Wheadon", 
+        email = "rileywheadon@gmail.com", 
+        role = c("aut", "cre")
+    ),
+	person(
+		"Cuauhtémoc",
+		"Vidrio-Sahagún",
+		email = "ct.vidrio-sahagun@usask.ca",
+		role = "aut"
+	),
+	person(
+		"Alain",
+		"Pietroniro",
+		email = "alain.pietroniro@ucalgary.ca",
+		role = c("aut", "fnd")
+	),
+	person(
+		"Jianxun",
+		"He",
+		email = "jianhe@ucalgary.ca",
+		role = "aut"
+	),
+	person(
+		"Environment and Climate Change Canada (ECCC)",
+		role = "fnd"
+	)) 
+URL: https://rileywheadon.github.io/ffa-framework/
+BugReports: https://github.com/rileywheadon/ffa-framework/issues
+License: AGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.4.0)
+Imports: ggplot2, patchwork, httr, stats, glue, jsonlite, base64enc
+Suggests: knitr, rmarkdown, spelling, testthat, vdiffr
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/Needs/website: rmarkdown
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-10-26 22:05:06 UTC; rileywheadon
+Author: Riley Wheadon [aut, cre],
+  Cuauhtémoc Vidrio-Sahagún [aut],
+  Alain Pietroniro [aut, fnd],
+  Jianxun He [aut],
+  Environment and Climate Change Canada (ECCC) [fnd]
+Maintainer: Riley Wheadon <rileywheadon@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-27 07:50:02 UTC

@@ -1,0 +1,60 @@
+Package: censo2022arg
+Type: Package
+Title: Extraction and Analysis of 2022 Argentina Census Microdata from
+        REDATAM Databases
+Version: 1.0.1
+Authors@R: c(
+    person(
+      given   = "Rodrigo Javier",
+      family  = "Duran",
+      role    = c("aut", "cre"),
+      email   = "rodrigo.duran@exa.unsa.edu.ar",
+      comment = c(ORCID = "0000-0002-3957-9510")
+    ),
+    person(
+      given   = "Jaime",
+      family  = "Salvador",
+      role    = "ctb",
+      comment = "Autor original de red_execute.cpp, red_initialize.cpp y redengine_c.h (paquete redatamx)"
+    ),
+    person(
+      "CELADE - Centro Latinoamericano y Caribeno de Demografia",
+      role = "cph",
+      comment = "Titular de derechos sobre el motor REDATAM"
+    )
+  )
+Description: Provides tools to extract, label, and read microdata from the
+    2022 National Census of Population, Households and Dwellings of Argentina
+    stored in REDATAM databases officially distributed by INDEC. Implements
+    a complete province-by-province extraction pipeline with efficient memory
+    management, reconstruction of hierarchical identifiers, automatic variable
+    labeling from official INDEC dictionaries, and integrity verification
+    against published totals. Allows working with census data directly in R
+    without knowledge of REDATAM syntax, and supports export to multiple
+    formats including Parquet, CSV, SPSS and SAS. Census data must be
+    downloaded directly from the official INDEC portal
+    (<https://www.indec.gob.ar>). This package does not distribute census data.
+    Duran (2026) <doi:10.5281/zenodo.19560728>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: es
+Depends: R (>= 4.1.0)
+Imports: redatamx, callr (>= 3.7.0), arrow, data.table, haven, readxl,
+        dplyr
+Suggests: tibble, testthat (>= 3.0.0), knitr, rmarkdown
+LinkingTo: cpp11
+VignetteBuilder: knitr
+URL: https://github.com/RodriDuran/censo2022arg
+BugReports: https://github.com/RodriDuran/censo2022arg/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-04-15 19:39:09 UTC; LABOTERMO
+Author: Rodrigo Javier Duran [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3957-9510>),
+  Jaime Salvador [ctb] (Autor original de red_execute.cpp,
+    red_initialize.cpp y redengine_c.h (paquete redatamx)),
+  CELADE - Centro Latinoamericano y Caribeno de Demografia [cph] (Titular
+    de derechos sobre el motor REDATAM)
+Maintainer: Rodrigo Javier Duran <rodrigo.duran@exa.unsa.edu.ar>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:42:24 UTC

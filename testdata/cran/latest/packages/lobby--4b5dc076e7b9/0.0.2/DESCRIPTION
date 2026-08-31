@@ -1,0 +1,31 @@
+Package: lobby
+Title: Interact with the 'US Senate Lobbying Disclosure API'
+Version: 0.0.2
+Authors@R: 
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "cre"),
+           email = "ctkenny@proton.me",
+           comment = c(ORCID = "0000-0002-9386-6860"))
+Description: Download and read data on lobbying in the United States Congress.
+    Data is queried from the Senate's Application Programming Interface
+    (<https://lda.senate.gov/api/>). This supports filings since 2008. Functions
+    exist for all primary data endpoints, including queries by filings,
+    contributions, registrations, clients, and lobbyists.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, dplyr, httr2, jsonlite, purrr, tibble
+Suggests: spelling, testthat (>= 3.0.0), vcr (>= 2.0.0)
+Depends: R (>= 4.1.0)
+Config/testthat/edition: 3
+URL: https://github.com/christopherkenny/lobby,
+        https://christophertkenny.com/lobby/
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-02-25 15:05:40 UTC; chris
+Author: Christopher T. Kenny [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9386-6860>)
+Maintainer: Christopher T. Kenny <ctkenny@proton.me>
+Repository: CRAN
+Date/Publication: 2026-03-03 11:00:02 UTC

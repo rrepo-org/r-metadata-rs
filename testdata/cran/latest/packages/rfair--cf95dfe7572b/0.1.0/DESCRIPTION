@@ -1,0 +1,47 @@
+Package: rfair
+Title: Assess the FAIRness of Research Data Objects and Software
+Version: 0.1.0
+Authors@R: c(
+    person("Ahmad", "Sofi-Mahmudi", email = "a.sofimahmudi@gmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6829-0823")),
+    person("Steffen", "Neumann", email = "sneumann@ipb-halle.de", role = "ctb",
+           comment = "Author of the original rfuji F-UJI API client that rfair grew from"),
+    person("PANGAEA", role = "cph",
+           comment = "Copyright holder of the F-UJI service whose metrics rfair reimplements"))
+Description: A native R implementation of the F-UJI (FAIRsFAIR Research Data
+    Object Assessment) and FRSM (FAIR for Research Software) metrics for
+    evaluating how well a research data object or piece of research software
+    satisfies the FAIR principles (Findable, Accessible, Interoperable,
+    Reusable). The software metrics operationalize the FAIR Principles for
+    Research Software (FAIR4RS) of Chue Hong et al. (2022)
+    <doi:10.15497/RDA00068>. Given a persistent identifier, URL, or code
+    repository, 'rfair'
+    resolves it, harvests metadata from landing pages and registries, and scores
+    it against the FAIRsFAIR metrics of Devaraju and Huber (2020)
+    <doi:10.5281/zenodo.3775793> entirely in R, without requiring an external
+    assessment server. 'rfair' began as a fork of the 'rfuji' F-UJI API client
+    and reimplements the assessment engine natively.
+License: GPL-3
+URL: https://github.com/choxos/rfair, https://choxos.github.io/rfair/
+BugReports: https://github.com/choxos/rfair/issues
+Depends: R (>= 4.1)
+Imports: digest, httr2, jsonlite, mime, rvest, stats, stringdist,
+        utils, xml2, yaml
+Suggests: bslib, chromote, covr, DT, httptest2, jqr, knitr, plumber,
+        rdflib, rmarkdown, shiny, testthat (>= 3.0.0), wand
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-25 11:44:53 UTC; choxos
+Author: Ahmad Sofi-Mahmudi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6829-0823>),
+  Steffen Neumann [ctb] (Author of the original rfuji F-UJI API client
+    that rfair grew from),
+  PANGAEA [cph] (Copyright holder of the F-UJI service whose metrics
+    rfair reimplements)
+Maintainer: Ahmad Sofi-Mahmudi <a.sofimahmudi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-01 09:10:02 UTC

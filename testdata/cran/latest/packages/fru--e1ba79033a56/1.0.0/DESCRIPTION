@@ -1,0 +1,28 @@
+Package: fru
+Title: A Blazing Fast Implementation of Random Forest
+Version: 1.0.0
+Authors@R: c(
+	  person(
+	   c("Miron","Bartosz"),"Kursa",role=c("aut","cre"),email="m@mbq.me",comment=c(ORCID="0000-0001-7672-648X")
+	  ),
+	  person(
+	   c("Krzysztof","Piotr"),"Piwoński",role=c("aut"),email="xrf.os@kpiwonski.com",comment=c(ORCID="0000-0002-0977-5959")
+	  )
+	)
+Description: Yet another implementation of the Random Forest method by Breiman (2001) <doi:10.1023/A:1010933404324>, written in Rust and tailored towards stability, correctness, efficiency and scalability on modern multi-core machines.
+ Handles both classification and regression, as well as provides permutation feature importance via a novel, highly optimised algorithm.
+URL: https://gitlab.com/mbq/fru
+SystemRequirements: Cargo (Rust's package manager) >= 1.85, rustc >=
+        1.85
+License: GPL-3
+Encoding: UTF-8
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: yes
+Packaged: 2026-08-19 22:54:33 UTC; mbq
+Author: Miron Bartosz Kursa [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7672-648X>),
+  Krzysztof Piotr Piwoński [aut] (ORCID:
+    <https://orcid.org/0000-0002-0977-5959>)
+Maintainer: Miron Bartosz Kursa <m@mbq.me>
+Repository: CRAN
+Date/Publication: 2026-08-20 08:30:02 UTC

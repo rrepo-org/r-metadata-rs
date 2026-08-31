@@ -1,0 +1,32 @@
+Package: stgam
+Title: Spatially and Temporally Varying Coefficient Models Using
+        Generalized Additive Models
+Version: 1.2.1
+Authors@R: c(
+    person("Lex", "Comber", email = "a.comber@leeds.ac.uk", role = c("aut", "cre")),
+    person("Paul", "Harris", email = "paul.harris@rothamsted.ac.uk", role = c("ctb")),
+    person("Gonzalo", "Irisarri", email = "jirisarr@uwyo.edu", role = c("ctb")),
+    person("Chris", "Brunsdon", email = "christopher.brunsdon@mu.ie", role = c("ctb"))
+           )
+Author: Lex Comber [aut, cre],
+  Paul Harris [ctb],
+  Gonzalo Irisarri [ctb],
+  Chris Brunsdon [ctb]
+Maintainer: Lex Comber <a.comber@leeds.ac.uk>
+Description: A framework for undertaking space and time varying coefficient models (varying parameter models) using a Generalized Additive Model (GAM) with smooths approach. The framework suggests the need to investigate for the presence and nature of any space-time dependencies in the data. It proposes a workflow that creates and refines an initial space-time GAM and includes tools to create and evaluate multiple model forms. The workflow sequence is to: i) Prepare the data by lengthening it to have a single location and time variables for each observation. ii) Create all possible space and/or time models in which each predictor is specified in different ways in smooths. iii) Evaluate each model via their AIC value and pick the best one. iv) Create the final model. v) Calculate the varying coefficient estimates to quantify how the relationships between the target and predictor variables vary over space, time or space-time. vi) Create maps, time series plots etc. The number of knots used in each smooth can be specified directly or iteratively increased. This is illustrated with a climate point dataset of the dry rain forest in South America. This builds on work in Comber et al (2024) <doi:10.1080/13658816.2023.2270285> and Comber et al (2026) <doi:10.1080/13658816.2026.2671964>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: cols4all, knitr, ggplot2, cowplot, rmarkdown, testthat (>=
+        3.0.0), tidyr, lubridate, sf, gratia, kableExtra
+Config/testthat/edition: 3
+URL: https://github.com/lexcomber/stgam
+BugReports: https://github.com/lexcomber/stgam/issues
+Depends: R (>= 4.1.0), mgcv (>= 1.9-1), glue
+LazyData: true
+Imports: foreach, doParallel, parallel, dplyr, magrittr, purrr, stringr
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-19 16:50:56 UTC; geoaco
+Repository: CRAN
+Date/Publication: 2026-08-19 22:10:02 UTC

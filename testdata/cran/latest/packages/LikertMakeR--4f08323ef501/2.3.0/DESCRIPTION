@@ -1,0 +1,44 @@
+Type: Package
+Package: LikertMakeR
+Title: Synthesise and Correlate Likert Scale and Rating-Scale Data
+        Based on Summary Statistics
+Version: 2.3.0
+Date: 2026-04-28
+Authors@R: 
+    person("Hume", "Winzar", , "winzar@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0001-7475-2641"))
+Description: Generate and correlate synthetic Likert and rating-scale
+    questionnaire responses with predefined means, standard deviations, 
+    Cronbach's Alpha, Factor Loading table, coefficients, and other summary 
+    statistics. 
+    It can be used to simulate Likert data, construct multi-item scales, 
+    generate correlation matrices, and create example survey datasets for 
+    teaching statistics, psychometrics, and methodological research.
+    Worked examples and documentation are available in the package 
+    articles, accessible via the package website,
+    <https://winzarh.github.io/LikertMakeR/>. 
+License: MIT + file LICENSE
+URL: https://github.com/WinzarH/LikertMakeR/,
+        https://winzarh.github.io/LikertMakeR/,
+        https://github.com/WinzarH/LikertMakeR
+BugReports: https://github.com/WinzarH/LikertMakeR/issues
+Depends: R (>= 4.2.0)
+Imports: dplyr, gtools, Matrix, matrixStats, Rcpp, stats, tibble,
+        utils,
+Suggests: effectsize, kableExtra, knitr, ggplot2, ggrepel, psych,
+        polycor, psychTools, rmarkdown, testthat (>= 3.0.0), tidyr
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Config/Needs/website: dplyr, effectsize, ggplot2, kableExtra, lavaan,
+        matrixcalc, matrixStats, pkgdown, psych, quarto, rmarkdown,
+        semPlot, semptools, stringr, tibble, tidyr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-21 03:35:24 UTC; winza
+Author: Hume Winzar [cre, aut] (ORCID: <https://orcid.org/0000-0001-7475-2641>)
+Maintainer: Hume Winzar <winzar@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-21 04:10:02 UTC

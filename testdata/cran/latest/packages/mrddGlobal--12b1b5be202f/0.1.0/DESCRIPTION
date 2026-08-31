@@ -1,0 +1,19 @@
+Package: mrddGlobal
+Title: Global Testing for Multivariate Regression Discontinuity Designs
+Version: 0.1.0
+Authors@R: 
+    person("Artem", "Samiahulin", , "artem.samiahulin@outlook.com", role = c("aut", "cre"))
+Description: Global testing for regression discontinuity designs with more than one running variable. The function cef_disc_test() is used for testing whether there exist non-zero treatment effects along the boundary of the treated region. The function density_disc_test() is used for testing whether there exist discontinuities in the joint density of the running variables along the boundary of the treated region. The methodology follows Samiahulin (2026), "Global Testing for Regression Discontinuity Designs with Multiple Running Variables" <doi:10.48550/arXiv.2602.03819>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: grf, lpdensity, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: dplyr, ggplot2, patchwork, rmarkdown, sf, RANN, knitr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-03-17 21:14:44 UTC; User
+Author: Artem Samiahulin [aut, cre]
+Maintainer: Artem Samiahulin <artem.samiahulin@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-03-21 10:20:02 UTC

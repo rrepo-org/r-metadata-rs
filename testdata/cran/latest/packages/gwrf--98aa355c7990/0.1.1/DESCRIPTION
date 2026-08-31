@@ -1,0 +1,32 @@
+Package: gwrf
+Title: Geographically Weighted Random Forests
+Version: 0.1.1
+Authors@R: 
+    person(
+        "Erich", "Seamon",
+        email = "erich_seamon@baylor.edu",
+        role = c("aut", "cre", "cph")
+    )
+Description: Fits geographically weighted random forest models using spatially
+    localized training neighborhoods and 'ranger' as the random forest engine.
+    Supports fixed-distance and adaptive neighborhoods defined by observation
+    rows or unique spatial locations, including repeated observations at the
+    same location. Provides local predictions and permutation-based variable
+    importance for examining spatial variation in predictive relationships.
+    The geographical random forest approach is described by Georganos et al.
+    (2021) <doi:10.1080/10106049.2019.1595177>, and the 'ranger' engine by
+    Wright and Ziegler (2017) <doi:10.18637/jss.v077.i01>.
+License: MIT + file LICENSE
+URL: https://github.com/hac-lab/gwrf
+BugReports: https://github.com/hac-lab/gwrf/issues
+Encoding: UTF-8
+Imports: ranger, tibble, dplyr, pbapply, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-10 17:36:46 UTC; seamone
+Author: Erich Seamon [aut, cre, cph]
+Maintainer: Erich Seamon <erich_seamon@baylor.edu>
+Repository: CRAN
+Date/Publication: 2026-08-24 14:50:08 UTC

@@ -1,0 +1,41 @@
+Package: qatarcars
+Type: Package
+Title: Data on Cars in Qatar
+Version: 1.1.0
+Date: 2026-02-12
+Authors@R: c(
+    person(
+      given = "Paul", 
+      family = "Musgrave",
+      email = "rpm47@georgetown.edu",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-8984-4992")
+    ),
+    person(
+      given = "Andrew", 
+      family = "Heiss",
+      email = "andrew@andrewheiss.com",
+      role = c("aut"),
+      comment = c(ORCID = "0000-0002-3948-3914")
+    )
+  )
+Description: Fuel economy, size, performance, and price data for cars in Qatar in 2025. Mirrors many of the columns in mtcars, but uses (1) non-US-centric makes and models, (2) 2025 prices, and (3) metric measurements, making it more appropriate for use as an example dataset outside the United States. For more details see Musgrave (2025) <doi:10.1080/15512169.2025.2572320>.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3.9000
+Depends: R (>= 4.1.0)
+URL: https://profmusgrave.github.io/qatarcars/,
+        https://github.com/profmusgrave/qatarcars
+BugReports: https://github.com/profmusgrave/qatarcars/issues
+Suggests: altdoc, downlit, dplyr, ggplot2, scales, testthat (>= 3.0.0),
+        tibble, units, xml2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-12 20:23:13 UTC; andrew
+Author: Paul Musgrave [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8984-4992>),
+  Andrew Heiss [aut] (ORCID: <https://orcid.org/0000-0002-3948-3914>)
+Maintainer: Paul Musgrave <rpm47@georgetown.edu>
+Repository: CRAN
+Date/Publication: 2026-02-13 09:40:08 UTC

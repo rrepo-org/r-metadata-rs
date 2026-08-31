@@ -1,0 +1,36 @@
+Package: spqdep
+Title: Testing for Spatial Independence of Cross-Sectional Qualitative
+        Data
+Version: 0.1.3.6
+Date: 2025-03-14
+Authors@R: 
+    c(person("Fernando", "Lopez", email = "fernando.lopez@upct.es", 
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5397-9748")),
+          person("Roman", "Minguez", email = "roman.minguez@uclm.es", 
+                  role = c("aut"), comment = c(ORCID = "0000-0002-0490-3181")),
+          person("Antonio", "Paez", email = "paezha@gmail.com", 
+                  role = c("aut"), comment = c(ORCID = "0000-0001-6912-9919")),
+          person("Manuel", "Ruiz", email = "manuel.ruiz@upct.es", 
+                  role = c("aut"), comment = c(ORCID = "0000-0001-9228-6410")))
+Description: Testing for Spatial Dependence of Qualitative Data in Cross Section. The list of functions includes join-count tests, Q test, spatial scan test, similarity test and spatial runs test. The methodology of these models can be found in <doi:10.1007/s10109-009-0100-1> and <doi:10.1080/13658816.2011.586327>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://f8l5h9.github.io/spqdep/
+LazyData: true
+VignetteBuilder: knitr
+Imports: broom, dplyr, ggplot2, gt, gtools, igraph, magrittr, Matrix,
+        methods, purrr, rsample, sf, sp, spatialreg, spdep, stats,
+        tidyr, units
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown
+BugReports: https://github.com/f8l5h9/spqdep/issues
+NeedsCompilation: no
+Packaged: 2025-04-02 00:07:27 UTC; antonio-paez
+Author: Fernando Lopez [aut, cre] (<https://orcid.org/0000-0002-5397-9748>),
+  Roman Minguez [aut] (<https://orcid.org/0000-0002-0490-3181>),
+  Antonio Paez [aut] (<https://orcid.org/0000-0001-6912-9919>),
+  Manuel Ruiz [aut] (<https://orcid.org/0000-0001-9228-6410>)
+Maintainer: Fernando Lopez <fernando.lopez@upct.es>
+Repository: CRAN
+Date/Publication: 2025-04-02 05:10:02 UTC

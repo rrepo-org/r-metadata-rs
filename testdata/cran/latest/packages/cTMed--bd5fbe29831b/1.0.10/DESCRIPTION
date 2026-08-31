@@ -1,0 +1,45 @@
+Package: cTMed
+Title: Continuous-Time Mediation
+Version: 1.0.10
+Authors@R: c(
+    person(given = "Ivan Jacob Agaloos",
+           family = "Pesigan",
+           role = c("aut", "cre", "cph"),
+           email = "r.jeksterslab@gmail.com",
+           comment = c(ORCID = "0000-0003-4818-8420")),
+    person(given = "Michael A.",
+           family = "Russell",
+           role = "ctb",
+           email = "mar60@psu.edu",
+           comment = c(ORCID = "0000-0002-3956-604X")),
+    person(given = "Sy-Miin",
+           family = "Chow",
+           role = "ctb",
+           email = "quc16@psu.edu",
+           comment = c(ORCID = "0000-0003-1938-027X"))
+    )    
+Description: Computes effect sizes, standard errors, and confidence intervals
+    for total, direct, and indirect effects in continuous-time mediation models
+    as described in Pesigan, Russell, and Chow (2025) <doi:10.1037/met0000779>.
+URL: https://github.com/jeksterslab/cTMed,
+        https://jeksterslab.github.io/cTMed/
+BugReports: https://github.com/jeksterslab/cTMed/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+LinkingTo: Rcpp (>= 1.0.12), RcppArmadillo (>= 15.0.2-2)
+Imports: Rcpp (>= 1.0.12), numDeriv, parallel, simStateSpace
+Suggests: knitr, rmarkdown, testthat, expm, dynr, betaDelta,
+        bootStateSpace
+SystemRequirements: GNU GSL (>= 2.5)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-20 15:49:32 UTC; root
+Author: Ivan Jacob Agaloos Pesigan [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-4818-8420>),
+  Michael A. Russell [ctb] (ORCID:
+    <https://orcid.org/0000-0002-3956-604X>),
+  Sy-Miin Chow [ctb] (ORCID: <https://orcid.org/0000-0003-1938-027X>)
+Maintainer: Ivan Jacob Agaloos Pesigan <r.jeksterslab@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 13:40:02 UTC

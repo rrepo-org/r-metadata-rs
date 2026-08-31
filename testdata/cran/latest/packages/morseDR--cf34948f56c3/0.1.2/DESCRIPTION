@@ -1,0 +1,43 @@
+Package: morseDR
+Title: Bayesian Inference of Binary, Count and Continuous Data in
+        Toxicology
+Version: 0.1.2
+Authors@R: c(
+    person("Virgile", "Baudrot", , "virgile.baudrot@qonfluens.com", role = c("aut", "cre")),
+    person("Sandrine", "Charles", role = "aut"),
+    person("Marie Laure", "Delignette-Muller", role = "aut"),
+    person("Nils", "Kehrein", role = "ctb"),
+    person("Guillaume", "Kon-Kam-King", role = "ctb"),
+    person("Christelle", "Lopes", role = "ctb"),
+    person("Philippe", "Veber", role = "aut")
+  )
+Description: Advanced methods for a valuable quantitative environmental
+    risk assessment using Bayesian inference of several type of
+    toxicological data. 'binary' (e.g., survival, mobility), 'count'
+    (e.g., reproduction) and 'continuous' (e.g., growth as length,
+    weight).  Estimation procedures can be used without a deep knowledge
+    of their underlying probabilistic model or inference methods. Rather,
+    they were designed to behave as well as possible without requiring a
+    user to provide values for some obscure parameters. That said, models
+    can also be used as a first step to tailor new models for more
+    specific situations.
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+Imports: coda, ggplot2, grDevices, methods, rjags, stats
+Suggests: GGally, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-05-27 06:56:20 UTC; virgile
+Author: Virgile Baudrot [aut, cre],
+  Sandrine Charles [aut],
+  Marie Laure Delignette-Muller [aut],
+  Nils Kehrein [ctb],
+  Guillaume Kon-Kam-King [ctb],
+  Christelle Lopes [ctb],
+  Philippe Veber [aut]
+Maintainer: Virgile Baudrot <virgile.baudrot@qonfluens.com>
+Repository: CRAN
+Date/Publication: 2025-05-29 08:50:06 UTC

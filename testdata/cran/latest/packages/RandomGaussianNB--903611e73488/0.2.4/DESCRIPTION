@@ -1,0 +1,33 @@
+Package: RandomGaussianNB
+Type: Package
+Title: Randomized Feature and Bootstrap-Enhanced Gaussian Naive Bayes
+        Classifier
+Version: 0.2.4
+Date: 2025-12-21
+Authors@R: 
+    person(
+        given  = "Patchanok",
+        family = "Srisuradetchai",
+        email  = "patchanok@mathstat.sci.tu.ac.th",
+        role   = c("aut", "cre")
+    )
+Description: Provides an accessible and efficient implementation of a randomized
+    feature and bootstrap-enhanced Gaussian naive Bayes classifier. The method
+    combines stratified bootstrap resampling with random feature subsampling and
+    aggregates predictions via posterior averaging. Support is provided for
+    mixed-type predictors and parallel computation. Methods are described in
+    Srisuradetchai (2025) <doi:10.3389/fdata.2025.1706417> "Posterior averaging
+    with Gaussian naive Bayes and the R package RandomGaussianNB for big-data
+    classification".
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: parallel, stats
+RoxygenNote: 7.3.3
+Suggests: mlbench, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-21 16:57:28 UTC; spatc
+Author: Patchanok Srisuradetchai [aut, cre]
+Maintainer: Patchanok Srisuradetchai <patchanok@mathstat.sci.tu.ac.th>
+Repository: CRAN
+Date/Publication: 2026-01-07 08:00:14 UTC

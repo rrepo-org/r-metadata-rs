@@ -1,0 +1,34 @@
+Package: heritable
+Title: Heritability Estimation from Mixed Models
+Version: 0.1.0
+Authors@R: 
+    c(
+    person(given = "Fonti", family = "Kar", role = c("aut", "cre"), email = c("fonti.kar@anu.edu.au"), comment = c(ORCID = "0000-0002-2760-3974")),
+    person(given = "Yidi", family = "Deng", role = c("aut"), comment = c(ORCID = "0000-0003-0380-2124")),
+    person(given = "Emi", family = "Tanaka", role = c("aut", "cph"), comment = c(ORCID = "0000-0002-1455-259X"))
+    )
+Description: Reporting heritability estimates is an important to quantitative genetics 
+  studies and breeding experiments. Here we provide functions to calculate various broad-sense
+  heritabilities from 'asreml' and 'lme4' model objects. All methods we have implemented 
+  in this package have extensively discussed in the article by Schmidt et al. (2019) <doi:10.1534/genetics.119.302134>.
+License: GPL (>= 3)
+Imports: cli, emmeans, Matrix, methods, stringr, vctrs
+Suggests: testthat (>= 3.0.0), agridat, knitr, rmarkdown, lme4,
+        pbkrtest, dplyr, ggplot2, tidyr, purrr, here
+SystemRequirements: asreml (4.2.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://anu-aagi.github.io/heritable/
+Language: en
+NeedsCompilation: no
+Packaged: 2026-01-08 06:34:59 UTC; fontikar
+Author: Fonti Kar [aut, cre] (ORCID: <https://orcid.org/0000-0002-2760-3974>),
+  Yidi Deng [aut] (ORCID: <https://orcid.org/0000-0003-0380-2124>),
+  Emi Tanaka [aut, cph] (ORCID: <https://orcid.org/0000-0002-1455-259X>)
+Maintainer: Fonti Kar <fonti.kar@anu.edu.au>
+Repository: CRAN
+Date/Publication: 2026-01-09 19:00:02 UTC

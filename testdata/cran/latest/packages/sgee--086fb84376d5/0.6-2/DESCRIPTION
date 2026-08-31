@@ -1,0 +1,29 @@
+Package: sgee
+Type: Package
+Title: Stagewise Generalized Estimating Equations
+Version: 0.6-2
+Date: 2026-08-29
+Authors@R: c(person(given = "Gregory",
+                        family = "Vaughan",
+                        role = c("aut", "cre"),
+                        email = "gvaughan@bentley.edu"),
+                 person(given = "Kun",
+                        family = "Chen",
+                        role = "ctb"),
+                 person(given = "Jun",
+                        family = "Yan",
+                        role = "ctb"))
+Description: Stagewise techniques implemented with Generalized Estimating Equations to handle individual, group, bi-level, and interaction selection. Stagewise approaches start with an empty model and slowly build the model over several iterations, which yields a 'path' of candidate models from which model selection can be performed. This 'slow brewing' approach gives stagewise techniques a unique flexibility that allows simple incorporation of Generalized Estimating Equations; see Vaughan, G., Aseltine, R., Chen, K., Yan, J., (2017) <doi:10.1111/biom.12669> for details.
+Imports: mvtnorm, copula, stats, utils
+Encoding: UTF-8
+Depends: R (>= 3.0.0)
+License: GPL (>= 3)
+Packaged: 2026-08-31 15:03:21 UTC; GVAUGHAN
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Author: Gregory Vaughan [aut, cre],
+  Kun Chen [ctb],
+  Jun Yan [ctb]
+Maintainer: Gregory Vaughan <gvaughan@bentley.edu>
+Repository: CRAN
+Date/Publication: 2026-08-31 19:50:02 UTC

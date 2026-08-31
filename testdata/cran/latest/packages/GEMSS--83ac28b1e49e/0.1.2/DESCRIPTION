@@ -1,0 +1,23 @@
+Package: GEMSS
+Title: Generalization Error Minimization in SubSampling for Gaussian
+        Processes
+Version: 0.1.2
+Authors@R: 
+    person("Sheng-Zhan", "Hua", , "szhua@g.ucla.edu", role = c("aut", "cre"))
+Description: Implements the GEMSS algorithm for sequential subdata selection 
+    in large-scale Gaussian process modeling (Chang, Hua, and Wu, 2026) 
+    <doi:10.1080/00401706.2026.2670596>. The method selects data points 
+    by a criterion consisting of predictive and space-filling parts, enabling 
+    efficient surrogate modeling for massive datasets.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.0), hetGP, twinning
+Suggests: ContourFunctions,
+LinkingTo: Rcpp, RcppArmadillo
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-16 17:56:44 UTC; shengzhanhua
+Author: Sheng-Zhan Hua [aut, cre]
+Maintainer: Sheng-Zhan Hua <szhua@g.ucla.edu>
+Repository: CRAN
+Date/Publication: 2026-07-16 19:00:02 UTC

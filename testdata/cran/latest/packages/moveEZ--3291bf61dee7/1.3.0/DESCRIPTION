@@ -1,0 +1,28 @@
+Package: moveEZ
+Title: Animated Biplots
+Version: 1.3.0
+Authors@R: 
+    c(person("Raeesa", "Ganey", , "raeesa.ganey@wits.ac.za", role = c("aut", "cre","cph"),
+           comment = c(ORCID = "0009-0008-6973-0999")),
+      person("Johané", "Nienkemper-Swanepoel", ,"nienkemperj@sun.ac.za", role =  c("aut","cph"),
+       comment = c(ORCID = "0000-0001-6086-8272")))
+Description: Create animated biplots that enables dynamic visualisation of temporal or sequential changes in multivariate data by animating a single biplot across the levels of a time variable. It builds on objects from the 'biplotEZ' package, Lubbe S, le Roux N, Nienkemper-Swanepoel J, Ganey R, Buys R, Adams Z, Manefeldt P (2024) <doi:10.32614/CRAN.package.biplotEZ>, allowing users to create animated biplots that reveal how both samples and variables evolve over time.
+License: MIT + file LICENSE
+Encoding: UTF-8
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+Imports: dplyr, biplotEZ, gganimate, ggplot2, GPAbin
+Suggests: testthat, rmarkdown, knitr, tibble, scales, RColorBrewer,
+        purrr
+Config/Needs/website: rmarkdown
+URL: https://muvisu.github.io/moveEZ/
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-26 15:15:06 UTC; raeesaganey
+Author: Raeesa Ganey [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0008-6973-0999>),
+  Johané Nienkemper-Swanepoel [aut, cph] (ORCID:
+    <https://orcid.org/0000-0001-6086-8272>)
+Maintainer: Raeesa Ganey <raeesa.ganey@wits.ac.za>
+Repository: CRAN
+Date/Publication: 2026-08-26 21:20:02 UTC

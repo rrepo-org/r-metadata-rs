@@ -1,0 +1,29 @@
+Package: KRONX
+Type: Package
+Title: Clock of Regimes for Regime-Switching Fragility Analysis
+Version: 0.1.0
+Date: 2026-04-22
+Authors@R: person("Oscar", "Linares",
+    email = "olinares@umich.edu",
+    role = c("aut", "cre"))
+Description: Implements the Clock of Regimes (KRONX) framework for
+    regime-switching fragility analysis of financial time series. The
+    package fits Gaussian and Student-t Hidden Markov Models (HMMs) to
+    return data, constructs a hazard-adjusted transition operator Q,
+    derives the associated generator K = Q - I, and computes the
+    fundamental matrix N = -K inverse to characterize expected residence
+    times under structural fragility.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: utils
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-22 21:02:59 UTC; olinaresmd
+Author: Oscar Linares [aut, cre]
+Maintainer: Oscar Linares <olinares@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-04-24 20:20:27 UTC

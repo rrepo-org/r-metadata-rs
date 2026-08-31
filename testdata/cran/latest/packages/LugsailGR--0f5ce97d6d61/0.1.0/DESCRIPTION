@@ -1,0 +1,30 @@
+Package: LugsailGR
+Type: Package
+Title: Generalized Gelman-Rubin Diagnostic and Effective Sample Size
+        for MCMC
+Version: 0.1.0
+Date: 2026-07-26
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut")
+  )
+Description: Provides generalized univariate and multivariate 'Gelman-Rubin' convergence diagnostics, effective sample size ('ESS') estimates, and principled termination thresholds for Markov chain Monte Carlo ('MCMC') simulations, based on Vats and Knudson (2021) <doi:10.1214/20-STS812>. The package incorporates replicated lugsail batch means variance estimators to construct stable convergence statistics for single and multiple chains. Additionally, it offers comprehensive tools for evaluating 'MCMC' output generated from user-supplied probability density functions ('PDF') or log-likelihoods, including implementations for censored data models under right, left, interval, 'Type-I', 'Type-II', progressive, and hybrid censoring schemes.
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-26 17:38:52 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 07:40:09 UTC

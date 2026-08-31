@@ -1,0 +1,30 @@
+Package: statgen
+Type: Package
+Title: Statistical Genetics Data Objects and Loaders
+Version: 0.3.2
+Authors@R: c(
+    person("Oleksandr", "Frei", role = c("aut", "cph"),
+        email = "oleksandr.frei@gmail.com"),
+    person("Andrew", "Morris", role = c("cre", "ctb"),
+        email = "a.h.morris@mn.uio.no")
+    )
+Description: Loads and manages statistical genetics data objects including reference
+    panels, genotypes, LD matrices, annotations, and summary statistics. Follows
+    the 'statgen' specification for use across 'Python', 'R', and 'MATLAB'/'Octave'
+    runtimes.
+License: MIT + file LICENSE
+URL: https://github.com/precimed/statgen
+BugReports: https://github.com/precimed/statgen/issues
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: Matrix, jsonlite, digest, bit64, methods, data.table
+Suggests: R.utils, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-20 18:59:34 UTC; andrewmorris
+Author: Oleksandr Frei [aut, cph],
+  Andrew Morris [cre, ctb]
+Maintainer: Andrew Morris <a.h.morris@mn.uio.no>
+Repository: CRAN
+Date/Publication: 2026-05-27 20:10:17 UTC

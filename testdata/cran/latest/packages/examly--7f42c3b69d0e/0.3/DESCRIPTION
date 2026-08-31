@@ -1,0 +1,34 @@
+Package: examly
+Title: Statistical Metrics and Reporting Tool
+Version: 0.3
+Authors@R: 
+    c(person(given = "Ahmet", family = "Çalışkan",
+             email = "ahmetcaliskan1987@gmail.com", role = c("aut", "cre")),
+      person(given = "Abdullah Faruk", family = "Kılıç",
+             email = "afarukkilic@trakya.edu.tr", role = "aut"))
+Description: A 'Shiny'-based toolkit for item/test analysis. It is
+    designed for multiple-choice, true-false, and open-ended questions.
+    The toolkit is usable with datasets in 1-0 or other formats. Key
+    analyses include difficulty, discrimination, response-option analysis,
+    and reports. The classical test theory methods used are described in
+    Ebel and Frisbie (1991, ISBN:978-0132892314).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: dplyr, flextable, ggplot2, glue, htmltools, jsonlite,
+        magrittr, officer, purrr, readr, readxl, shiny, stringr,
+        tibble, tidyr
+Suggests: knitr, psychometric, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/ahmetcaliskan1987/examly
+BugReports: https://github.com/ahmetcaliskan1987/examly/issues
+RoxygenNote: 7.3.3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-05-04 18:41:55 UTC; Faruk
+Author: Ahmet Çalışkan [aut, cre],
+  Abdullah Faruk Kılıç [aut]
+Maintainer: Ahmet Çalışkan <ahmetcaliskan1987@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-05 19:20:07 UTC

@@ -1,0 +1,43 @@
+Package: etwfe
+Type: Package
+Title: Extended Two-Way Fixed Effects
+Version: 0.6.2
+Date: 2026-03-22
+Authors@R: 
+    c(
+    person(given = "Grant",
+           family = "McDermott",
+           role = c("aut", "cre"),
+           email = "contact@grantmcdermott.com",
+           comment = c(ORCID = "0000-0001-7883-8573")),
+    person(given = "Frederic",
+          family = "Kluser",
+          role = "ctb",
+          email = "frederic.kluser@unibe.ch"),
+    person(given = "Ulrich",
+          family = "Morawetz",
+          role = "ctb",
+          email = "ulrich.morawetz@boku.ac.at")
+          )
+Description: Convenience functions for implementing extended two-way 
+  fixed effect regressions a la Wooldridge (2023, 2025)
+  <doi:10.1093/ectj/utad016>, <doi:10.1007/s00181-025-02807-z>.
+License: MIT + file LICENSE
+Imports: fixest (>= 0.13.2), data.table (>= 1.15.0), Formula,
+        marginaleffects (>= 0.29.0), stats, tinyplot (>= 0.6.0)
+Suggests: broom, did (>= 2.3.0), ggplot2, knitr, modelsummary (>=
+        2.2.0), rmarkdown, tinytest
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://grantmcdermott.com/etwfe/
+BugReports: https://github.com/grantmcdermott/etwfe/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-23 02:46:11 UTC; gmcd
+Author: Grant McDermott [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7883-8573>),
+  Frederic Kluser [ctb],
+  Ulrich Morawetz [ctb]
+Maintainer: Grant McDermott <contact@grantmcdermott.com>
+Repository: CRAN
+Date/Publication: 2026-03-23 03:40:16 UTC

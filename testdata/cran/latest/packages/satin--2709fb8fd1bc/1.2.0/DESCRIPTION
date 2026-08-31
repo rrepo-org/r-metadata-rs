@@ -1,0 +1,36 @@
+Package: satin
+Type: Package
+Title: Visualisation and Analysis of Ocean Data Derived from Satellites
+Version: 1.2.0
+Date: 2025-09-29
+Encoding: UTF-8
+Authors@R: c(person(given = "Héctor",
+                  family = "Villalobos",
+                  role = c("aut", "cre"),
+                  email = "hvillalo@ipn.mx",
+                  comment = c(ORCID = "0000-0002-6424-4050")),
+			 person(given = "Eduardo",
+                  family = "González-Rodríguez",
+                  role = "aut",
+                  email = "egonzale@cicese.mx"))	  
+Maintainer: Héctor Villalobos <hvillalo@ipn.mx>
+Description: With 'satin' functions, visualisation, data extraction and further analysis like producing climatologies from several images, and anomalies of satellite derived ocean data can be easily done.  Reading functions can import a user defined geographical extent of data stored in netCDF files.  Currently supported ocean data sources include NASA's Oceancolor web page <https://oceancolor.gsfc.nasa.gov/>, sensors VIIRS-SNPP; MODIS-Terra; MODIS-Aqua; and SeaWiFS.  Available variables from this source includes chlorophyll concentration, sea surface temperature (SST), and several others.  Data sources specific for SST that can be imported too includes Pathfinder AVHRR <https://www.ncei.noaa.gov/products/avhrr-pathfinder-sst> and GHRSST <https://www.ghrsst.org/>.  In addition, ocean productivity data produced by Oregon State University can also be handled previous conversion from HDF4 to HDF5 format.  Many other ocean variables can be processed by importing netCDF data files from two European Union's Copernicus Marine Service databases <https://marine.copernicus.eu/>, namely Global Ocean Physical Reanalysis and Global Ocean Biogeochemistry Hindcast.
+Depends: R (>= 3.5.0)
+License: GPL-3
+URL: https://github.com/hvillalo/satin
+BugReports: https://github.com/hvillalo/satin/issues
+Collate: satin-class.R read.cmems.R read.ghrsst.R read.nasaoc.R
+        read.osunpp.R fmainPos.R imageScale.R plot.satin.R
+        satinPalette.R quiver.R verticalProfiles.R satinDataframe.R
+        pixelate.R climatology.R crop.R extractPts.R isolines.R
+        satinMean.R anomaly.R velocity.R name_ncvars.R
+Imports: ncdf4, maps, PBSmapping, grDevices, splancs, sp, geosphere,
+        graphics, methods
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-30 02:31:35 UTC; Usuario
+Author: Héctor Villalobos [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6424-4050>),
+  Eduardo González-Rodríguez [aut]
+Repository: CRAN
+Date/Publication: 2025-09-30 08:50:07 UTC

@@ -1,0 +1,38 @@
+Package: astronomyengine
+Title: R Bindings to the 'Astronomy Engine' C Library
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Mitchell",
+             family = "O'Hara-Wild",
+             email = "mail@mitchelloharawild.com",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-6729-7695")),
+      person(given = "Don",
+             family = "Cross",
+             role = c("aut", "cph"),
+             comment = "Author of the bundled Astronomy Engine C library"))
+Description: Provides access to the 'Astronomy Engine' C library
+    (<https://github.com/cosinekitty/astronomy>) by Don Cross. The library
+    calculates positions of the Sun, Moon, and planets, and predicts
+    astronomical events such as rise/set times, lunar phases, equinoxes,
+    solstices, eclipses, and transits. It is based on the 'VSOP87' planetary
+    model and is accurate to within approximately one arcminute. This package
+    bundles the single-file C source so that other R packages can link against
+    it via 'LinkingTo' without shipping their own copy.
+License: MIT + file LICENSE
+URL: https://github.com/mitchelloharawild/astronomyengine
+BugReports: https://github.com/mitchelloharawild/astronomyengine/issues
+LinkingTo: cpp11
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/cpp11/version: 0.5.0
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-02-23 12:09:33 UTC; mitchell
+Author: Mitchell O'Hara-Wild [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6729-7695>),
+  Don Cross [aut, cph] (Author of the bundled Astronomy Engine C library)
+Maintainer: Mitchell O'Hara-Wild <mail@mitchelloharawild.com>
+Repository: CRAN
+Date/Publication: 2026-02-27 20:32:11 UTC

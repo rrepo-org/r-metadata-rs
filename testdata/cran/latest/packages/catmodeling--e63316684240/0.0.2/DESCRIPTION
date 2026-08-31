@@ -1,0 +1,37 @@
+Package: catmodeling
+Type: Package
+Title: Catastrophe Model Simulation and Adjustment
+Version: 0.0.2
+Authors@R: 
+    person(given="Stephen",
+	family="Jewson",
+	email= "stephen.jewson@gmail.com", 
+	role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-6011-6262"))
+Maintainer: Stephen Jewson <stephen.jewson@gmail.com>
+Description: Manipulation of catastrophe model outputs, including
+    tasks such as simulating year loss tables (YLTs) from event loss tables (ELTs), 
+    adjusting the frequencies of events in YLTs to create new YLTs, 
+    applying catastrophe exceedance of loss contracts (catXL),
+    applying hours clauses,
+    and calculating diagnostics from ELTs and YLTs, such as average annual loss 
+    and exceedance probability curves. Frequency adjustment routines are 
+    based on the paper "A new simulation algorithm for 
+    more precise estimates of change in catastrophe risk models, with application to 
+    hurricanes and climate change", Jewson, S. (2023); <doi:10.1007/s00477-023-02409-0>.
+    Version 0.0.2 no longer uses rust.
+Imports: stats, dplyr, utils, pracma, geosphere
+Depends: R (>= 4.2)
+License: AGPL-3
+BugReports: https://github.com/stephenjewson/catmodeling/issues
+URL: https://www.catmodeling.info
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/rextendr/version: 0.5.0
+SystemRequirements: xz
+NeedsCompilation: no
+Packaged: 2026-07-31 16:05:07 UTC; steph
+Author: Stephen Jewson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6011-6262>)
+Repository: CRAN
+Date/Publication: 2026-08-01 09:10:16 UTC

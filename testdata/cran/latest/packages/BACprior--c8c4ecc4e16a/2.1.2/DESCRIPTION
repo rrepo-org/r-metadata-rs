@@ -1,0 +1,30 @@
+Package: BACprior
+Type: Package
+Title: Choice of Omega in the BAC Algorithm
+Version: 2.1.2
+Date: 2025-08-28
+Authors@R: c(person("Denis", "Talbot", role = c("aut", "cre"),
+                    email = "denis.talbot@fmed.ulaval.ca",
+                    comment = "main author of original code and maintainer"),
+             person("Genevieve", "Lefebvre", role = "aut",
+                    email = "lefebvre.gen@uqam.ca",
+                    comment = "revision of original code"),
+             person("Juli", "Atherton", role = "aut",
+                    email = "atherton.juli@uqam.ca",
+                    comment = "revision of original code"))
+Author: Denis Talbot [aut, cre] (main author of original code and maintainer),
+  Genevieve Lefebvre [aut] (revision of original code),
+  Juli Atherton [aut] (revision of original code)
+Maintainer: Denis Talbot <denis.talbot@fmed.ulaval.ca>
+Description: The Bayesian Adjustment for Confounding (BAC) algorithm (Wang et al., 2012)
+ can be used to estimate the causal effect of a continuous exposure on a continuous outcome.
+ This package provides an approximate sensitivity analysis of BAC with regards to the
+ hyperparameter omega. BACprior also provides functions to guide the user in their choice
+ of an appropriate omega value. The method is based on Lefebvre, Atherton and Talbot (2014).
+License: GPL (>= 2)
+Depends: mvtnorm, leaps, boot
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-08-28 21:04:00 UTC; denis
+Repository: CRAN
+Date/Publication: 2025-08-28 21:30:02 UTC

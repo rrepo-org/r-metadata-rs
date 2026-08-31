@@ -1,0 +1,49 @@
+Package: funcml
+Type: Package
+Title: Functional Machine Learning Framework
+Version: 0.9.0
+Depends: R (>= 3.5.0)
+Authors@R: c(
+    person(given = "Imad", family = "El Badisy", role = c("aut", "cre"), email = "elbadisyimad@gmail.com")
+  )
+Description: A compact and explicit machine learning framework for
+    supervised learning, resampling-based evaluation, hyperparameter
+    tuning, learner comparison, interpretation, and plug-in
+    g-computation. The package uses standard formulas for model
+    specification and provides stable S3 interfaces for fitting,
+    evaluation, tuning, interpretation, and causal estimation across a
+    learner registry with multiple backend engines. Implemented
+    interpretation methods build on established approaches such as
+    permutation-based variable importance, partial dependence,
+    individual conditional expectation, accumulated local effects, SHAP,
+    and LIME; see Friedman (2001) <doi:10.1214/aos/1013203451>,
+    Goldstein et al. (2015) <doi:10.1080/10618600.2014.907095>, Apley
+    and Zhu (2020) <doi:10.1111/rssb.12377>, Lundberg and Lee (2017)
+    <doi:10.48550/arXiv.1705.07874>, and Ribeiro et al. (2016)
+    <doi:10.48550/arXiv.1602.04938>. The framework is intentionally
+    opinionated: preprocessing is expected to occur outside the modeling
+    step, and the API emphasizes explicit inputs, consistent object
+    contracts, and compact interfaces rather than feature-by-feature
+    competition with larger machine learning ecosystems. Plug-in
+    g-computation follows Naimi, Cole, and Kennedy (2016)
+    <doi:10.1093/ije/dyw323>.
+License: GPL-3
+URL: https://CRAN.R-project.org/package=funcml
+BugReports: https://github.com/ielbadisy/funcml/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: stats, utils, ggplot2, functionals, grDevices, tools,
+        data.table, MASS, mgcv, nnet, rpart, glmnet, ranger, e1071,
+        randomForest, gbm, C50, kknn, earth, naivebayes, mda, ada, pls,
+        partykit, dbarts, torch, xgboost, lightgbm, densemlp
+Suggests: testthat (>= 3.1.0), knitr, rmarkdown, roxygen2, gggenes,
+        ggfittext, pROC
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-21 09:09:57 UTC; imad-el-badisy
+Author: Imad El Badisy [aut, cre]
+Maintainer: Imad El Badisy <elbadisyimad@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-22 15:10:24 UTC

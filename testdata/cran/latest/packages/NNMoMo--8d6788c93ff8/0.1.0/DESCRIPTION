@@ -1,0 +1,24 @@
+Package: NNMoMo
+Type: Package
+Title: Neural Network Extension to 'StMoMo' for Lee-Carter Modeling
+Version: 0.1.0
+Authors@R: person(given = "Daniel",
+                  family = "Herzog",
+                  role = c("aut", "cre"),
+                  email = "studium.daniel.herzog@gmail.com")
+Description: Provides extensions to the 'StMoMo' package by incorporating neural network functionality for Lee-Carter and Poisson Lee-Carter mortality models. Includes tools for constructing mortality datasets from 'demogdata' objects and fitting neural network-based mortality models. Further analysis, such as plotting and forecasting, can be done with 'StMoMo' functions.
+License: GPL-3
+Depends: R (>= 4.1.0)
+Imports: demography, torch, luz, StMoMo
+Suggests: testthat, knitr, rmarkdown
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-02-17 13:06:23 UTC; daniel
+Author: Daniel Herzog [aut, cre]
+Maintainer: Daniel Herzog <studium.daniel.herzog@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-20 08:30:02 UTC

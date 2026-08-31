@@ -1,0 +1,28 @@
+Package: OpenStreetMap
+Maintainer: Ian Fellows <ian@fellstat.com>
+License: GPL-2 | file LICENCE
+Title: Access to Open Street Map Raster Images
+Authors@R: c(person(given = "Ian",
+                      family = "Fellows",
+                      role = c("aut", "cre"),
+                      email = "ian@fellstat.com"),
+                      person(given="Jan-Peter", family="Stotz",role="aut"))
+Description: Accesses high resolution raster maps using the OpenStreetMap
+    protocol. Dozens of road, satellite, and topographic map servers are directly
+    supported. Additionally raster maps
+    may be constructed using custom tile servers.  Maps can be
+    plotted using either base graphics, or ggplot2. This package is not affiliated
+    with the OpenStreetMap.org mapping project.
+SystemRequirements: Java (>= 1.8), JRI
+Version: 0.4.1
+URL: https://github.com/ifellows/ROSM https://www.fellstat.com
+Depends: methods, R (>= 4.2.0)
+Imports: grDevices, ggplot2 (>= 0.9.0), rJava, raster, sp
+Collate: 'OpenStreetMap-package.R' 'osm.R' 'autoplot.R' 'zzz.R'
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-09-29 22:17:37 UTC; ianfellows
+Author: Ian Fellows [aut, cre],
+  Jan-Peter Stotz [aut]
+Repository: CRAN
+Date/Publication: 2025-09-29 23:30:02 UTC

@@ -1,0 +1,42 @@
+Package: elastic
+Title: Database Interface to 'Elasticsearch' and 'OpenSearch'
+Description: Connect to 'Elasticsearch' and 'OpenSearch', 'NoSQL' databases 
+    built on the 'Java' Virtual Machine and using the 'Apache' 'Lucene' library. 
+    Interacts with the 'Elasticsearch' 'HTTP' API' 
+    (<https://www.elastic.co/elasticsearch/>) and the
+    'OpenSearch' 'HTTP' 'API' (<https://opensearch.org/>). 
+    Includes functions for setting connection details to 'Elasticsearch' and 
+    'OpenSearch' instances, loading bulk data, searching for documents with 
+    both 'HTTP' query variables and 'JSON' based body requests. 
+    In addition, 'elastic' provides functions for interacting with APIs
+    for 'indices', documents, nodes, clusters, an interface to the cat API, 
+    and more.
+Version: 1.2.2
+License: MIT + file LICENSE
+Authors@R: c(
+    person(given = "Ralf", family = "Herold", role = c("cre"),
+    email = "ralf.herold@mailbox.org", 
+    comment = c(ORCID = "0000-0002-8148-6748")), 
+    person("Scott", "Chamberlain", role = c("aut"),
+    email = "myrmecocystus@gmail.com",
+    comment = c(ORCID="0000-0003-1444-9135"))
+    )
+URL: https://rfhb.github.io/elastic/,
+        https://www.elastic.co/docs/solutions/search
+BugReports: https://github.com/rfhb/elastic/issues
+Encoding: UTF-8
+Language: en-US
+Imports: utils, curl (>= 2.2), crul (>= 0.9.0), jsonlite, R6
+Suggests: testthat
+RoxygenNote: 7.3.3
+X-schema.org-applicationCategory: Databases
+X-schema.org-keywords: database, Elasticsearch, OpenSearch, Lucene,
+        HTTP, API, search, NoSQL, Java, JSON, documents
+NeedsCompilation: no
+Packaged: 2026-01-24 22:47:58 UTC; ralfherold
+Author: Ralf Herold [cre] (ORCID: <https://orcid.org/0000-0002-8148-6748>),
+  Scott Chamberlain [aut] (ORCID:
+    <https://orcid.org/0000-0003-1444-9135>)
+Maintainer: Ralf Herold <ralf.herold@mailbox.org>
+Repository: CRAN
+Date/Publication: 2026-01-25 21:50:13 UTC

@@ -1,0 +1,42 @@
+Package: qcapower
+Type: Package
+Title: Estimate Power and Required Sample Size in QCA
+Version: 0.2.0
+Imports: ggplot2, ggforce, stats
+Authors@R: c(
+  person("Ingo", "Rohlfing", 
+    email = "ingo.rohlfing@uni-passau.de", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0001-8715-4771")),
+  person("Holger", "Doering", 
+    email = "doering@uni-bremen.de", 
+    role = c("aut"),
+    comment = c(ORCID = "0000-0002-6616-8805")),
+  person("Ayjeren", "Rozyjumayeva", role = c("aut")))
+Depends: R (>= 2.10)
+Description: Researchers working with Qualitative Comparative Analysis (QCA)
+    can use the package to estimate power of a sufficient term
+    using permutation tests. A term can be anything: A condition, conjunction or 
+    disjunction of any combination of these. The package further allows users to plot 
+    the estimation results and to estimate the number of cases required to achieve a
+    certain level of power, given a prespecified null and alternative hypothesis.
+    Reference for the article introducing power estimation for QCA is: 
+    Rohlfing, Ingo (2018) <doi:10.1017/pan.2017.30> 
+    (ungated version: <doi:10.17605/OSF.IO/PC4DF>).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/ingorohlfing/qcapower
+BugReports: https://github.com/ingorohlfing/qcapower/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-16 12:24:58 UTC; ingor
+Author: Ingo Rohlfing [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8715-4771>),
+  Holger Doering [aut] (ORCID: <https://orcid.org/0000-0002-6616-8805>),
+  Ayjeren Rozyjumayeva [aut]
+Maintainer: Ingo Rohlfing <ingo.rohlfing@uni-passau.de>
+Repository: CRAN
+Date/Publication: 2026-05-16 15:50:01 UTC

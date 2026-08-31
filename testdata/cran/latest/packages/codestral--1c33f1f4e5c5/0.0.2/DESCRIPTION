@@ -1,0 +1,27 @@
+Package: codestral
+Title: Chat and FIM with 'Codestral'
+Version: 0.0.2
+Date: 2026-01-13
+Authors@R: c(
+    person("Marc", "Grossouvre", , "marcgrossouvre@urbs.fr", role = c("aut", "cre")),
+    person(, "URBS company", , "contact@rubs.fr", role = c("cph", "fnd"))
+  )
+Description: Create an addin in 'Rstudio' to do fill-in-the-middle (FIM) and chat with latest Mistral AI models for coding, 'Codestral' and 'Codestral Mamba'. For more details about 'Mistral AI API': <https://docs.mistral.ai/getting-started/quickstart/> and <https://docs.mistral.ai/api/>. For more details about 'Codestral' model: <https://mistral.ai/news/codestral>; about 'Codestral Mamba': <https://mistral.ai/news/codestral-mamba>. 
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, httr, jsonlite, magrittr, rstudioapi, stringr, utils
+Depends: R (>= 4.1)
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://urbs-dev.github.io/codestral/
+BugReports: https://github.com/urbs-dev/codestral/issues
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+NeedsCompilation: no
+Packaged: 2026-01-15 09:52:25 UTC; marcgrossouvre2
+Author: Marc Grossouvre [aut, cre],
+  URBS company [cph, fnd]
+Maintainer: Marc Grossouvre <marcgrossouvre@urbs.fr>
+Repository: CRAN
+Date/Publication: 2026-01-15 10:10:02 UTC

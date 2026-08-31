@@ -1,0 +1,49 @@
+Package: integrity
+Type: Package
+Title: Assessing the Integrity and Trustworthiness of Clinical Trials
+        Data
+Version: 1.0.1
+Date: 2026-05-19
+Authors@R: 
+    c(
+    person(given = "Sol", family = "Libesman", email = "sol.libesman@sydney.edu.au", role = c("aut", "cre")),
+    person(given = "Kylie", family = "Hunter", email = "kylie.hunter@sydney.edu.au", role = "aut"),
+    person(given = "David", family = "Nguyen", email = "david.nguyen1@sydney.edu.au", role = "aut"),
+    person(given = "Dario", family = "Strbenac", email = "dario.strbenac@sydney.edu.au", role = "aut"),
+    person(given = "Anne Lene", family = "Seidler", email = "AnnaLene.Seidler@med.uni-rostock.de", role = "aut"),
+    person(given = "Jie", family = "Kang", email = "jie.kang@sydney.edu.au", role = "aut")
+    )
+VignetteBuilder: knitr
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: ggplot2, dplyr, janitor, gtsummary, ggpubr, lubridate, car,
+        rlang
+Suggests: knitr, pkgload, readxl, rmarkdown, testthat (>= 3.0.0), yaml
+Description: The integrity package implements the IPD Integrity Tool, a
+    structured and transparent framework for evaluating the integrity of
+    individual participant data (IPD) from randomised trials (see Hunter et
+    al. (2024) <doi:10.1002/jrsm.1738> and <doi:10.32614/RJ-2017-008>). It
+    supports users to identify potential issues, such as unusual data
+    patterns, implausible values, lack of expected correlations, date
+    violations, and inconsistencies. The package provides reproducible
+    workflows for screening, documenting and summarising integrity concerns,
+    and may be applied by evidence synthesists, editors, and others to
+    determine whether a randomised trial may be considered sufficiently
+    trustworthy to contribute to the evidence base that informs policy and
+    practice.
+License: GPL-3
+URL:
+        https://github.sydney.edu.au/Charles-Perkins-Centre-Data-Science-Hub/CPCDASH0010
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-25 23:23:47 UTC; jkan0113
+Author: Sol Libesman [aut, cre],
+  Kylie Hunter [aut],
+  David Nguyen [aut],
+  Dario Strbenac [aut],
+  Anne Lene Seidler [aut],
+  Jie Kang [aut]
+Maintainer: Sol Libesman <sol.libesman@sydney.edu.au>
+Repository: CRAN
+Date/Publication: 2026-05-26 10:10:02 UTC

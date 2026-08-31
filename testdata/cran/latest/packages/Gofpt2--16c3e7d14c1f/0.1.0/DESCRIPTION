@@ -1,0 +1,37 @@
+Package: Gofpt2
+Type: Package
+Title: Generalized Goodness-of-Fit Test for Progressive Type-II
+        Censored Data
+Version: 0.1.0
+Date: 2026-07-22
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut")
+    )
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Description: Implements a generalized goodness-of-fit test based on spacings 
+    for general progressive Type-II censored data. The test statistic is based 
+    on the work of Qin et al. (2022) <doi:10.1080/02664763.2020.1821613> and 
+    extends the methodology of Balakrishnan et al. (2003) 
+    <doi:10.1007/978-1-4612-0103-8_8>. Users can test data against any 
+    distribution by providing custom pdf, cdf, and survival functions. The 
+    package supports both normal approximation and Monte Carlo simulation 
+    approaches for computing p-values and critical values.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-23 13:07:02 UTC; shikhar tyagi
+Repository: CRAN
+Date/Publication: 2026-08-02 16:40:02 UTC

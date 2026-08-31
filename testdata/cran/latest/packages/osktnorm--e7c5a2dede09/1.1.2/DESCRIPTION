@@ -1,0 +1,37 @@
+Package: osktnorm
+Type: Package
+Title: A Moment-Targeting Normality Transformation Based on Tukey g-h
+        Distribution
+Version: 1.1.2
+Date: 2026-03-07
+Authors@R: 
+    c(person("Zeynel", "Cebeci", email = "cebeciz@gmail.com", role = c("aut", "cre")),
+      person("Figen", "Ceritoglu", role = "aut"),
+      person("Melis", "Celik Guney", role = "aut"),
+      person("Adnan", "Unalan", role = "aut"))
+Maintainer: Zeynel Cebeci <cebeciz@gmail.com>
+Description: Implements a moment-targeting normality transformation based on the
+    simultaneous optimization of Tukey g-h distribution parameters. The method 
+    is designed to minimize both asymmetry (skewness) and excess peakedness 
+    (kurtosis) in non-normal data by mapping it to a standard normal distribution
+    Cebeci et al (2026) <doi:10.3390/sym18030458>. Optimization is performed 
+    by minimizing an objective function derived from the Anderson-Darling 
+    goodness-of-fit statistic with Stephens's correction factor, utilizing the
+    L-BFGS-B algorithm for robust parameter estimation. This approach provides an 
+    effective alternative to power transformations like Box-Cox and Yeo-Johnson, 
+    particularly for data requiring precise tail-behavior adjustment.
+Depends: R (>= 4.1.0)
+Imports: Rcpp, stats, doParallel, foreach, parallel, groupcompare
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown, readxl, writexl
+VignetteBuilder: knitr
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2026-03-12 12:54:26 UTC; user1
+Author: Zeynel Cebeci [aut, cre],
+  Figen Ceritoglu [aut],
+  Melis Celik Guney [aut],
+  Adnan Unalan [aut]
+Repository: CRAN
+Date/Publication: 2026-03-17 18:20:02 UTC

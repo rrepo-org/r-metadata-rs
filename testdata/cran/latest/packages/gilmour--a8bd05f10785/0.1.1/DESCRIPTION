@@ -1,0 +1,32 @@
+Package: gilmour
+Type: Package
+Title: The Interpretation of Adjusted Cp Statistic
+Version: 0.1.1
+Authors@R: c(
+    person(
+      "Josef", "Dolejs",
+      email = "josef.dolejs@uhk.cz",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-3224-585X")
+    )
+  )
+    #> [1] "Josef Dolejs <josef.dolejs@uhk.cz> [aut, cre] (ORCID <https//orcid.org/0000-0002-3224-585X>)"
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown
+Description: Several methods may be found for selecting a subset of regressors from a set of k candidate variables in multiple linear regression.
+        One possibility is to evaluate all possible regression models and comparing them using Mallows's Cp statistic (Cp) according to Gilmour original study.
+        Full model is calculated, all possible combinations of regressors are generated, adjusted Cp for each submodel are computed, and the submodel with the minimum adjusted value Cp (ModelMin) is calculated.
+        To identify the final model, the package applies a sequence of hypothesis tests on submodels nested within ModelMin, following the approach outlined in Gilmour's original paper.
+        For more details see the help of the function final_model() and the original study (1996) <doi:10.2307/2348411>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2025-07-06 04:56:05 UTC; djose
+Author: Josef Dolejs [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3224-585X>)
+Maintainer: Josef Dolejs <josef.dolejs@uhk.cz>
+Repository: CRAN
+Date/Publication: 2025-07-10 13:50:02 UTC

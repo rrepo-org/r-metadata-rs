@@ -1,0 +1,52 @@
+Package: isodistrreg
+Type: Package
+Title: Isotonic Distributional Regression (IDR)
+Version: 0.6.0
+Date: 2026-08-20
+Authors@R: 
+  c(person(
+        "Bram",
+        "van den Heuvel",
+        email = "bram.vandenheuvel@stat.math.ethz.ch",
+        role = c("aut", "cre")),
+    person(
+        "Alexander",
+        "Henzi",
+        email = "henzi.alexander@gmail.com",
+        role = "aut"),
+    person(
+        "Martin",
+        "Bladt",
+        email = "martinbladt@math.ku.dk",
+        role = "aut"),
+    person(
+        "Johanna",
+        "Ziegel",
+        email = "johanna.ziegel@stat.math.ethz.ch",
+        role = "ths"))
+Description: Distributional regression under stochastic order restrictions for
+    numeric and binary response variables and partially ordered covariates,
+    including right-censored responses via Survival-IDR. See Henzi, Ziegel,
+    Gneiting (2021) <doi:10.1111/rssb.12450> and Bladt, Henzi, van den Heuvel,
+    Ziegel (2026) <doi:10.48550/arXiv.2608.02914>.
+License: GPL (>= 2)
+Depends: R (>= 4.2)
+Imports: utils
+Encoding: UTF-8
+URL: https://github.com/AlexanderHenzi/isodistrreg
+BugReports: https://github.com/AlexanderHenzi/isodistrreg/issues
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/rextendr/version: 0.5.0
+Config/roxygen2/version: 8.1.0
+Config/build/bootstrap: TRUE
+SystemRequirements: Cargo (Rust's package manager), rustc
+NeedsCompilation: yes
+Packaged: 2026-08-21 12:21:08 UTC; runner
+Author: Bram van den Heuvel [aut, cre],
+  Alexander Henzi [aut],
+  Martin Bladt [aut],
+  Johanna Ziegel [ths]
+Maintainer: Bram van den Heuvel <bram.vandenheuvel@stat.math.ethz.ch>
+Repository: CRAN
+Date/Publication: 2026-08-21 14:40:26 UTC

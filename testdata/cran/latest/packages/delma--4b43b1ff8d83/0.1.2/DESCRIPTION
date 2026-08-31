@@ -1,0 +1,43 @@
+Package: delma
+Type: Package
+Title: Convert 'R Markdown' and 'Quarto' Documents to Ecological
+        Metadata Language
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Martin",
+             family = "Westgate",
+             email = "martin.westgate@csiro.au",
+             role = c("aut", "cre")),
+      person(given = "Shandiya",
+             family = "Balasubramaniam",
+             email = "shandiya.balasubramaniam@csiro.au",
+             role = c("aut")),
+      person(given = "Dax",
+             family = "Kellie",
+             email = "dax.kellie@csiro.au",
+             role = c("aut")))
+Description: Ecological Metadata Language or 'EML' is a long-established format
+  for describing ecological datasets to facilitate sharing and re-use. Because
+  'EML' is effectively a modified 'xml' schema, however, it is challenging to 
+  write and manipulate for non-expert users. 'delma' supports users to write 
+  metadata statements in 'R Markdown' or 'Quarto markdown' format, and parse 
+  them to 'EML' and (optionally) back again.
+Depends: R (>= 4.3.0)
+Imports: cli, dplyr, glue, lightparser, purrr, quarto, rlang,
+        rmarkdown, snakecase, stringr, tibble, withr, xfun, xml2
+Suggests: knitr, testthat (>= 3.0.0)
+License: GPL-3
+URL: https://delma.ala.org.au/R/
+BugReports: https://github.com/AtlasOfLivingAustralia/delma/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-20 05:14:55 UTC; wes186
+Author: Martin Westgate [aut, cre],
+  Shandiya Balasubramaniam [aut],
+  Dax Kellie [aut]
+Maintainer: Martin Westgate <martin.westgate@csiro.au>
+Repository: CRAN
+Date/Publication: 2026-01-20 10:20:21 UTC

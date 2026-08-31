@@ -1,0 +1,35 @@
+Package: iv.sensemakr
+Type: Package
+Title: Sensitivity Analysis Tools for Instrumental Variable Estimates
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Carlos",
+           family = "Cinelli",
+           role = c("aut", "cre", "cph"),
+           email = "carloscinelli@hotmail.com"),
+    person(given = "Chad",
+           family = "Hazlett",
+           role = c("aut", "cph"))
+  )
+Description: Implements a suite of sensitivity analysis tools for instrumental
+  variable estimates as described in Cinelli and Hazlett (2025)
+  <doi:10.1093/biomet/asaf004>.
+License: GPL-3
+URL: https://carloscinelli.com/iv.sensemakr/,
+        https://github.com/carloscinelli/iv.sensemakr
+BugReports: https://github.com/carloscinelli/iv.sensemakr/issues
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Imports: sensemakr (>= 0.1.5)
+Depends: R (>= 3.1.0)
+NeedsCompilation: no
+Packaged: 2026-02-09 08:18:58 UTC; cinelli
+Author: Carlos Cinelli [aut, cre, cph],
+  Chad Hazlett [aut, cph]
+Maintainer: Carlos Cinelli <carloscinelli@hotmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-11 20:10:02 UTC

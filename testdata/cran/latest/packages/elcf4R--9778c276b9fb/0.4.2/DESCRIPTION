@@ -1,0 +1,41 @@
+Package: elcf4R
+Title: Electricity Load Curves Forecasting at Individual Level
+Version: 0.4.2
+Date: 2026-05-26
+Depends: R (>= 3.5.0)
+Imports: stats, utils, mgcv, earth, keras3, Rcpp, tensorflow,
+        data.table, wavelets, jsonlite, xml2, DBI, RSQLite
+LinkingTo: Rcpp
+Suggests: knitr, reticulate, rmarkdown, testthat (>= 3.0.0)
+Authors@R: c(
+	person(given = "Frederic", family= "Bertrand", role = c("cre", "aut"), email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281")),
+	person(given = "Fatima", family= "Fahs", role = c("aut"), email = "fatima.fahs@es.fr"),
+	person(given = "Myriam", family= "Maumy-Bertrand", role = c("aut"), email = "myriam.maumy@ehesp.fr", comment = c(ORCID = "0000-0002-4615-1512")))
+Author: Frederic Bertrand [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-0837-8281>),
+  Fatima Fahs [aut],
+  Myriam Maumy-Bertrand [aut] (ORCID:
+    <https://orcid.org/0000-0002-4615-1512>)
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
+Description: Implements forecasting methods for individual electricity load
+    curves, including Kernel Wavelet Functional (KWF), clustered KWF,
+    Generalized Additive Models (GAM), Multivariate Adaptive Regression
+    Splines (MARS), and Long Short-Term Memory (LSTM) models. Provides
+    normalized dataset adapters for iFlex, StoreNet, Smart-Grid Smart-City,
+    Low Carbon London, and REFIT; download and read support for IDEAL and GX;
+    explicit Python backend selection for TensorFlow-based LSTM fits; helpers
+    for daily segmentation and rolling-origin benchmarking; and compact
+    shipped example panels and benchmark-result datasets.
+LazyLoad: yes
+LazyData: yes
+VignetteBuilder: knitr
+License: GPL-3
+Encoding: UTF-8
+URL: https://fbertran.github.io/elcf4R/,
+        https://github.com/fbertran/elcf4R
+BugReports: https://github.com/fbertran/elcf4R/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-05-26 17:00:18 UTC; bertran7
+Repository: CRAN
+Date/Publication: 2026-05-26 17:40:02 UTC

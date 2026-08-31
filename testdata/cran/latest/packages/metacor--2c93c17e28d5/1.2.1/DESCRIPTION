@@ -1,0 +1,28 @@
+Package: metacor
+Type: Package
+Title: Meta-Analytic Effect Size Calculation for Pre-Post Designs with
+        Correlation Imputation
+Version: 1.2.1
+Authors@R: c(
+  person(given = c("Iker","J."), family = "Bautista", role = c("aut","cre"), email = "ikerugr@gmail.com"),
+  person(given = c("Saul","M."),  family = "Rodriguez", role = "ctb",        email = "saulmrguez@gmail.com")
+ )
+Description: Tools for the calculation of effect sizes (standardised mean difference) and mean difference in pre-post controlled studies, including robust imputation of missing variances (standard deviation of changes) and correlations (Pearson correlation coefficient). The main function 'metacor_dual()' implements several methods for imputing missing standard deviation of changes or Pearson correlation coefficient, and generates transparent imputation reports. Designed for meta-analyses with incomplete summary statistics. For details on the methods, see Higgins et al. (2023) and Fu et al. (2013).
+License: MIT + file LICENSE
+URL: https://github.com/ikerugr/metacor,
+        https://ikerugr.r-universe.dev/metacor
+BugReports: https://github.com/ikerugr/metacor/issues
+Depends: R (>= 3.6)
+Imports: stats, officer, stringr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-09 15:31:20 UTC; Iker
+Author: Iker J. Bautista [aut, cre],
+  Saul M. Rodriguez [ctb]
+Maintainer: Iker J. Bautista <ikerugr@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-09 16:20:02 UTC

@@ -1,0 +1,48 @@
+Package: sleacr
+Type: Package
+Title: Simplified Lot Quality Assurance Sampling Evaluation of Access
+        and Coverage (SLEAC) Tools
+Version: 0.1.3
+Authors@R: c(
+    person("Ernest", "Guevarra", 
+           comment = c(ORCID = "0000-0002-4887-4415"), 
+           email = "ernest@guevarra.io", 
+           role = c("aut", "cre", "cph")),
+    person("Mark", "Myatt", 
+           comment = c(ORCID = "0000-0003-1119-1474"),
+           email = "mark@brixtonhealth.com", 
+           role = c("aut", "cph")))
+Description: In the recent past, measurement of coverage has been mainly through
+    two-stage cluster sampled surveys either as part of a nutrition assessment
+    or through a specific coverage survey known as Centric Systematic Area
+    Sampling (CSAS). However, such methods are resource intensive and often only
+    used for final programme evaluation meaning results arrive too late for
+    programme adaptation. SLEAC, which stands for Simplified Lot Quality
+    Assurance Sampling Evaluation of Access and Coverage, is a low resource
+    method designed specifically to address this limitation and is used
+    regularly for monitoring, planning and importantly, timely improvement to
+    programme quality, both for agency and Ministry of Health (MoH) led
+    programmes. SLEAC is designed to complement the Semi-quantitative Evaluation
+    of Access and Coverage (SQUEAC) method. This package provides functions for
+    use in conducting a SLEAC assessment.
+License: GPL (>= 3)
+Depends: R (>= 4.2.0)
+Imports: cli, methods, parallel, parallelly, stats
+Suggests: covr, knitr, rmarkdown, spelling, testthat (>= 3.0.0), tibble
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.3.3
+URL: https://nutriverse.io/sleacr/,
+        https://github.com/nutriverse/sleacr
+BugReports: https://github.com/nutriverse/sleacr/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-31 21:40:03 UTC; ernestguevarra
+Author: Ernest Guevarra [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-4887-4415>),
+  Mark Myatt [aut, cph] (ORCID: <https://orcid.org/0000-0003-1119-1474>)
+Maintainer: Ernest Guevarra <ernest@guevarra.io>
+Repository: CRAN
+Date/Publication: 2026-02-03 14:30:02 UTC

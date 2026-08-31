@@ -1,0 +1,31 @@
+Package: datey
+Title: Exact Date and Duration Arithmetic on an Annual Grid
+Version: 0.1.1
+Authors@R: 
+    person("Tim", "Gordon", , "tim.gordon@btinternet.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-3087-4384"))
+Description: Standardised mapping of dates onto a discrete annual grid,
+    together with exact date and duration arithmetic.  This matters when
+    the primary unit is years but the input data uses dates.  Examples are
+    actuarial mortality experience analysis and valuation of life
+    assurance and annuities, for which mortality rates are defined per
+    year but experience and valuation data are typically defined using
+    dates.
+License: MIT + file LICENSE
+URL: https://github.com/logmu-org/r-datey, https://r-datey.logmu.org/
+BugReports: https://github.com/logmu-org/r-datey/issues
+Depends: R (>= 4.0.0)
+Suggests: knitr, pillar, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: cpp11
+VignetteBuilder: knitr
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+NeedsCompilation: yes
+Packaged: 2026-07-14 15:30:19 UTC; Tim Gordon
+Author: Tim Gordon [aut, cre] (ORCID: <https://orcid.org/0009-0006-3087-4384>)
+Maintainer: Tim Gordon <tim.gordon@btinternet.com>
+Repository: CRAN
+Date/Publication: 2026-07-14 16:40:13 UTC

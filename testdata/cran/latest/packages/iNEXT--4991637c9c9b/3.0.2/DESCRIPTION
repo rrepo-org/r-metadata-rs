@@ -1,0 +1,40 @@
+Package: iNEXT
+Type: Package
+Title: Interpolation and Extrapolation for Species Diversity
+Version: 3.0.2
+Authors@R: c(person(given = c("T.", "C."),
+          family = "Hsieh",
+          role = "aut",
+          email = "euler96@gmail.com"),
+      person(given = c("K.", "H."),
+          family = "Ma",
+          role = "aut"),
+      person(given = "Anne",
+          family = "Chao",
+          role = c("aut","cre"), 
+          email = "chao@stat.nthu.edu.tw"))
+Description: Provides simple functions to compute and plot two types 
+    (sample-size- and coverage-based) rarefaction and extrapolation curves for species
+    diversity (Hill numbers) based on individual-based abundance data or sampling-unit-
+    based incidence data; see Chao and others (2014, Ecological Monographs) for pertinent
+    theory and methodologies, and Hsieh, Ma and Chao (2016, Methods in Ecology and Evolution)
+    for an introduction of the R package.
+License: GPL (>= 3)
+URL: https://sites.google.com/view/chao-lab-website/software/inext
+Maintainer: Anne Chao <chao@stat.nthu.edu.tw>
+Depends: R (>= 3.4)
+Imports: stats, graphics, ggplot2, reshape2, Rcpp
+BugReports: https://github.com/AnneChao/iNEXT/issues
+LazyLoad: yes
+RoxygenNote: 7.2.0
+Suggests: testthat, knitr, rmarkdown, gridExtra, ggthemes
+VignetteBuilder: knitr
+ByteCompile: true
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2025-07-30 12:59:43 UTC; johnson
+Author: T. C. Hsieh [aut],
+  K. H. Ma [aut],
+  Anne Chao [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-07-30 15:20:02 UTC

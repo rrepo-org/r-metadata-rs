@@ -1,0 +1,43 @@
+Package: blockr.dag
+Title: A Directed Acyclic Graph Extension for 'blockr'
+Version: 0.1.5
+Authors@R: 
+    c(person(given = "David",
+             family = "Granjon",
+             role = c("aut", "cre"),
+             email = "david@cynkra.com"),
+      person(given = "Nicolas",
+             family = "Bennett",
+             role = c("aut"),
+             email = "nicolas@cynkra.com"),
+      person(given = "Christoph",
+             family = "Sax",
+             role = c("aut"),
+             email = "christoph@cynkra.com"),
+      person(family = "Bristol Myers Squibb",
+             role = "fnd")
+    )
+Description: Building on the docking layout manager provided by 'blockr.dock', this
+    provides an extension that allows for visualizing and manipulating a 'blockr'
+    board using a DAG-based user interface powered by the 'g6R' 
+    graph visualisation HTML widget.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: blockr.core (>= 0.1.3), blockr.dock (>= 0.1.2), shiny, g6R (>=
+        0.6.5), jsonlite, htmltools
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), roxy.shinylive,
+        webshot2, quarto, cyclocomp, shinytest2, chromote, withr,
+        colorspace
+Config/testthat/edition: 3
+URL: https://bristolmyerssquibb.github.io/blockr.dag/
+VignetteBuilder: quarto
+NeedsCompilation: no
+Packaged: 2026-07-30 14:00:42 UTC; davidgranjon
+Author: David Granjon [aut, cre],
+  Nicolas Bennett [aut],
+  Christoph Sax [aut],
+  Bristol Myers Squibb [fnd]
+Maintainer: David Granjon <david@cynkra.com>
+Repository: CRAN
+Date/Publication: 2026-07-30 16:20:21 UTC

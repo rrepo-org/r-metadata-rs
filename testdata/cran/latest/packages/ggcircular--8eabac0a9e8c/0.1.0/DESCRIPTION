@@ -1,0 +1,29 @@
+Package: ggcircular
+Title: A 'ggplot2' Extension for Circular and Directional Data
+Version: 0.1.0
+Authors@R: 
+    person("Aurélien", "Nicosia", email = "aurelien.nicosia@mat.ulaval.ca", role = c("aut", "cre"))
+Description: Provides a 'ggplot2' grammar for circular, axial and directional data, including rose diagrams, circular densities, mean directions, confidence arcs, theoretical circular distributions and movement data visualizations.
+License: MIT + file LICENSE
+URL: https://github.com/AurelienNicosiaULaval/ggcircular,
+        https://aureliennicosiaulaval.github.io/ggcircular/
+BugReports: https://github.com/AurelienNicosiaULaval/ggcircular/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, grid, rlang, scales, stats, tibble, utils,
+        vctrs
+Suggests: circular, knitr, momentuHMM, posterior, rmarkdown, testthat
+        (>= 3.0.0)
+Config/Needs/coverage: covr
+Config/Needs/website: pkgdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-05-31 15:45:12 UTC; aureliennicosia
+Author: Aurélien Nicosia [aut, cre]
+Maintainer: Aurélien Nicosia <aurelien.nicosia@mat.ulaval.ca>
+Repository: CRAN
+Date/Publication: 2026-06-04 12:10:03 UTC

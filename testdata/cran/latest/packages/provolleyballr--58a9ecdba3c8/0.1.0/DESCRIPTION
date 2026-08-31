@@ -1,0 +1,27 @@
+Package: provolleyballr
+Type: Package
+Title: Extract Data from US Women's Professional Volleyball Websites
+Version: 0.1.0
+Authors@R: 
+    person("Jeffrey R.", "Stevens", , "jeffrey.r.stevens@protonmail.com", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0003-2375-1360"))
+Maintainer: Jeffrey R. Stevens <jeffrey.r.stevens@protonmail.com>
+Description: Tools for scraping match statistics and player data from the Athletes Unlimited (UA) website <https://auprosports.com/volleyball/>, the League One Volleyball website <https://lovb.com>, and the Major League (MLV) website <https://provolleyball.com>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.2)
+RoxygenNote: 7.3.3
+Imports: cli, curl, dplyr, janitor, lifecycle, purrr, rlang, rvest,
+        stringr, selenider
+Suggests: chromote, knitr, readr, rmarkdown, testthat (>= 3.0.0), tidyr
+SystemRequirements: Google Chrome browser
+URL: https://github.com/JeffreyRStevens/provolleyballr
+BugReports: https://github.com/JeffreyRStevens/provolleyballr/issues
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-01-12 01:56:22 UTC; jstevens
+Author: Jeffrey R. Stevens [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2375-1360>)
+Repository: CRAN
+Date/Publication: 2026-01-17 11:10:07 UTC

@@ -1,0 +1,35 @@
+Package: opencesp
+Type: Package
+Title: Generation and Evaluation of Synthetic Tabular Datasets
+Version: 0.4.0
+Authors@R: 
+    c(person(given = "Rémy",
+            family = "Chapelle",
+            email = "remy.chapelle@universite-paris-saclay.fr",
+            role = c("aut", "cre"),
+            comment = c(ORCID = "0009-0006-3088-0354")),
+      person(given = "Centre de recherche en Epidémiologie et Santé des Populations",
+            role = "cph"))
+Maintainer: Rémy Chapelle <remy.chapelle@universite-paris-saclay.fr>
+Description: Various tools developed as part of the Open-CESP (Centre de recherche
+    en Epidémiologie et Santé des Populations) initiative to generate and
+    evaluate synthetic datasets for statistical disclosure control.
+    This includes tools to investigate the risk-utility tradeoff achievable with
+    given synthesis methods, as well as statistical tools to estimate (conditional)
+    probability distributions. The main eventual aim is to help researchers and
+    statisticians disseminate open research data.
+License: GPL-3
+URL: https://opencesp.vjf.inserm.fr/en
+Encoding: UTF-8
+NeedsCompilation: yes
+Imports: stats, cluster, rpart, parallel, fastmap, PCAmixdata,
+        randomForest, mice
+Suggests: gbm
+RoxygenNote: 8.0.0
+Language: en-US
+Packaged: 2026-05-27 22:04:49 UTC; remyc
+Author: Rémy Chapelle [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-3088-0354>),
+  Centre de recherche en Epidémiologie et Santé des Populations [cph]
+Repository: CRAN
+Date/Publication: 2026-06-01 08:30:09 UTC

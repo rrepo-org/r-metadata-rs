@@ -1,0 +1,39 @@
+Package: xplainfi
+Title: Feature Importance Methods for Global Explanations
+Version: 1.2.0
+Authors@R: 
+    person("Lukas", "Burk", , "cran@lukasburk.de", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-7528-3795"))
+Description: Provides a consistent interface for common feature importance
+    methods as described in Ewald et al. (2024)
+    <doi:10.1007/978-3-031-63797-1_22>, including permutation feature
+    importance (PFI), conditional and relative feature importance (CFI,
+    RFI), leave one covariate out (LOCO), and Shapley additive global
+    importance (SAGE), as well as feature sampling mechanisms to support
+    conditional importance methods.
+License: LGPL (>= 3)
+URL: https://mlr-org.github.io/xplainfi/,
+        https://github.com/mlr-org/xplainfi
+BugReports: https://github.com/mlr-org/xplainfi/issues
+Depends: R (>= 4.1.0)
+Imports: checkmate, cli, data.table (>= 1.15.0), mirai, mlr3 (>=
+        1.1.0), mlr3fselect, mvtnorm, paradox (>= 1.0.0), R6, stats,
+        utils
+Suggests: arf, DiagrammeR, foreach, future, future.apply, ggplot2,
+        glue, gower, knitr, knockoff, lgr, mlr3data, mlr3learners,
+        partykit, patchwork, ranger, rmarkdown, rpart, testthat (>=
+        3.0.0), withr
+VignetteBuilder: knitr
+Config/Needs/website: rmarkdown, here, jsonlite, cpi
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-07-24 16:43:13 UTC; Lukas
+Author: Lukas Burk [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7528-3795>)
+Maintainer: Lukas Burk <cran@lukasburk.de>
+Repository: CRAN
+Date/Publication: 2026-07-24 17:30:02 UTC

@@ -1,0 +1,25 @@
+Package: icecdr
+Type: Package
+Title: Download Sea Ice Concentration Data from the NSIDC Climate Data
+        Record
+Version: 1.2.0
+Authors@R: person("Elio", "Campitelli", , "eliocampitelli@gmail.com", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0002-7742-9230"))
+Description: Programmatic access to NSIDC's sea ice concentration CDR <https://nsidc.org/data/g02202> via ERDAPP server and Sea Ice index <https://nsidc.org/data/g02135>. Supports caching results and optional fixes for some inconsistencies of the raw files.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.3.0)
+Suggests: here, ncdf4, rcdo, testthat (>= 3.0.0), vcr
+Imports: cli, digest, glue, httr2, rlang
+URL: https://github.com/eliocamp/icecdr,
+        https://eliocamp.github.io/icecdr/
+BugReports: https://github.com/eliocamp/icecdr/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-08 05:16:33 UTC; user1
+Author: Elio Campitelli [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-7742-9230>)
+Maintainer: Elio Campitelli <eliocampitelli@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-08 05:31:46 UTC

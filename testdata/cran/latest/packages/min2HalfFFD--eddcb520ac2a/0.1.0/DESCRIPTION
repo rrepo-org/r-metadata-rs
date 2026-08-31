@@ -1,0 +1,30 @@
+Package: min2HalfFFD
+Type: Package
+Title: Minimally Changed Two-Level Half-Fractional Factorial Designs
+Version: 0.1.0
+Authors@R: c(person(given = "Bijoy", family = "Chanda", role = c("aut","cre","ctb"),email = "bijoychanda08@gmail.com"),
+  person(given = "Arpan", family = "Bhowmik", role = c("aut","ctb"), email = "arpan.stat@gmail.com"),
+  person(given = "Seema", family = "Jaggi", role = "aut",email = "seema.jaggi@icar.gov.in" ),
+  person(given = "Eldho", family = "Varghese", role = c("aut", "ctb"),email ="eldhoiasri@gmail.com" ),
+  person(given = "Cini", family = "Varghese", role = "aut",email = "cini.varghese@icar.gov.in"),
+  person(given = "Anindita", family = "Datta", role = "aut",email = "aninditaiasri@gmail.com" ),
+  person(given = "Dibyendu", family = "Deb", role = "aut",email = "debiasri@gmail.com" ))
+Maintainer: Bijoy Chanda <bijoychanda08@gmail.com>
+Description: In many agricultural, engineering, industrial, post-harvest and processing experiments, the number of factor level changes and hence the total number of changes is of serious concern as such experiments may consists of hard-to-change factors where it is physically very difficult to change levels of some factors or sometime such experiments may require normalization time to obtain adequate operating condition. For this reason, run orders that offer the minimum  number of factor level changes and at the same time minimize the possible influence of systematic trend effects on the experimentation have been sought. Factorial designs with minimum changes in factors level may be preferred for such situations as these minimally changed run orders will minimize the cost of the experiments. This technique can be employed to any half replicate of two level factorial run order where the number of factors are greater than two. For method details see, Bhowmik, A., Varghese, E., Jaggi, S. and Varghese, C. (2017) <doi:10.1080/03610926.2016.1152490>. This package generates all possible minimally changed two-level half-fractional factorial designs for different experimental setups along with various statistical criteria to measure the performance of these designs through a user-friendly interface. It consist of the function minimal.2halfFFD() which launches the application interface.
+License: GPL-3
+Encoding: UTF-8
+Imports: shiny, hrtlFMC, shinybusy
+Suggests: testthat (>= 3.0.0), roxygen2, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+RoxygenNote: 7.3.2
+Packaged: 2025-11-27 05:12:34 UTC; Bijoy Chanda
+Author: Bijoy Chanda [aut, cre, ctb],
+  Arpan Bhowmik [aut, ctb],
+  Seema Jaggi [aut],
+  Eldho Varghese [aut, ctb],
+  Cini Varghese [aut],
+  Anindita Datta [aut],
+  Dibyendu Deb [aut]
+Repository: CRAN
+Date/Publication: 2025-12-02 15:10:02 UTC

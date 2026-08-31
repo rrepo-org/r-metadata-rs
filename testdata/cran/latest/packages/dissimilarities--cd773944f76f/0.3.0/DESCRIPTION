@@ -1,0 +1,24 @@
+Package: dissimilarities
+Type: Package
+Title: Creating, Manipulating, and Subsetting "dist" Objects
+Version: 0.3.0
+Authors@R: person(given = "Minh Long",
+                  family = "Nguyen",
+                  role = c("aut", "cre"),
+                  email = "edelweiss611428@gmail.com")
+Maintainer: Minh Long Nguyen <edelweiss611428@gmail.com>
+Description: Efficiently creates, manipulates, and subsets "dist" objects, commonly used in cluster analysis. Designed to minimise unnecessary conversions and computational overhead while enabling seamless interaction with distance matrices.
+License: CC BY 4.0
+Encoding: UTF-8
+URL: https://github.com/edelweiss611428/dissimilarities
+BugReports: https://github.com/edelweiss611428/dissimilarities/issues
+Imports: Rcpp, microbenchmark, proxy, stats
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-06-28 15:28:22 UTC; edelweiss
+Author: Minh Long Nguyen [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-06-28 15:40:01 UTC

@@ -1,0 +1,24 @@
+Package: QuanDA
+Title: Quantile-Based Discriminant Analysis for High-Dimensional
+        Imbalanced Classification
+Version: 1.0.0
+Authors@R: c(person(given = "Qian", family = "Tang", role = c("aut", "cre"), email = "tang1015@umn.edu"),
+              person(given = "Yuwen", family = "Gu", role = "aut", email = "yuwen.gu@uconn.edu"),
+              person(given = "Boxiang", family = "Wang", role = "aut", email = "boxiang-wang@uiowa.edu"))
+Description: Implements quantile-based discriminant analysis (QuanDA) for
+    imbalanced classification in high-dimensional, low-sample-size settings.
+    The method fits penalized quantile regression directly on discrete class labels and
+    tunes the quantile level to reflect class imbalance.
+Depends: R (>= 3.5.0)
+Imports: hdqr, pROC, stats, methods
+License: GPL-2
+NeedsCompilation: yes
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Packaged: 2025-11-18 22:10:57 UTC; qtang7
+Author: Qian Tang [aut, cre],
+  Yuwen Gu [aut],
+  Boxiang Wang [aut]
+Maintainer: Qian Tang <tang1015@umn.edu>
+Repository: CRAN
+Date/Publication: 2025-11-24 09:10:02 UTC

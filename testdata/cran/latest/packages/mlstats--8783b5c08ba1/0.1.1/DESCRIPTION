@@ -1,0 +1,34 @@
+Package: mlstats
+Title: Multilevel Descriptive Statistics and Data Preparation
+Version: 0.1.1
+Authors@R: 
+    person("Felix", "Dietrich", , "mail@felix-dietrich.de", role = c("aut", "cre", "cph"))
+Description: Provides tools for multilevel descriptive statistics and data preparation.
+    Computes within-group and between-group correlations (via variance decomposition or
+    two-level structural equation modeling), intraclass correlation coefficients (ICCs),
+    and descriptive statistics for nested data (e.g., repeated measurements per person),
+    supporting both frequentist (via 'lme4' or 'lavaan') and Bayesian (via 'brms')
+    estimation. Results are formatted according to APA standards and can be exported as
+    tables using 'gt' or 'tinytable'. Also includes functions for decomposing variables
+    into within-group and between-group components for use in Random Effects
+    Within-Between (REWB) models.
+License: MIT + file LICENSE
+URL: https://felixdidi.github.io/mlstats/,
+        https://github.com/felixdidi/mlstats
+BugReports: https://github.com/felixdidi/mlstats/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Suggests: brms, gt, knitr, lavaan, lmerTest, rmarkdown, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Imports: cli, dplyr, lme4, pillar, rlang, scales, stringr, tibble,
+        tinytable, vctrs
+NeedsCompilation: no
+Packaged: 2026-07-15 12:44:36 UTC; felix
+Author: Felix Dietrich [aut, cre, cph]
+Maintainer: Felix Dietrich <mail@felix-dietrich.de>
+Repository: CRAN
+Date/Publication: 2026-07-15 13:20:02 UTC

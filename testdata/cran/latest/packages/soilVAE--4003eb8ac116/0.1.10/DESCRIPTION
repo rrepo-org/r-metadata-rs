@@ -1,0 +1,36 @@
+Package: soilVAE
+Type: Package
+Title: Supervised Variational Autoencoder Regression via 'reticulate'
+Version: 0.1.10
+Authors@R: c(
+    person("Hugo", "Rodrigues", email = "rodrigues.machado.hugo@gmail.com", role = c("aut", "cre")),
+    person("Alexandre M. J.-C.", "Wadoux", role = "cph",
+           comment = "Copyright holder of the 'soilspec' package (MIT, 2020), from which the bundled 'datsoilspc' dataset is redistributed")
+  )
+Description: Supervised latent-variable regression for high-dimensional predictors
+    such as soil reflectance spectra. The model uses an encoder-decoder neural
+    network with a stochastic Gaussian latent representation regularized by a
+    Kullback-Leibler term, and a supervised prediction head trained jointly with
+    the reconstruction objective. The implementation interfaces R with a 'Python'
+    deep-learning backend and provides utilities for training, tuning, and
+    prediction.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: reticulate, stats
+Suggests: knitr, rmarkdown, prospectr, pls
+VignetteBuilder: knitr
+SystemRequirements: Python (>= 3.9); TensorFlow (>= 2.13); Keras (>= 3)
+URL: https://hugomachadorodrigues.github.io/soilVAE/,
+        https://github.com/HugoMachadoRodrigues/soilVAE/
+BugReports: https://github.com/HugoMachadoRodrigues/soilVAE/issues
+NeedsCompilation: no
+Packaged: 2026-08-22 16:35:05 UTC; rodrigues.h
+Author: Hugo Rodrigues [aut, cre],
+  Alexandre M. J.-C. Wadoux [cph] (Copyright holder of the 'soilspec'
+    package (MIT, 2020), from which the bundled 'datsoilspc' dataset is
+    redistributed)
+Maintainer: Hugo Rodrigues <rodrigues.machado.hugo@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-08-22 17:50:02 UTC

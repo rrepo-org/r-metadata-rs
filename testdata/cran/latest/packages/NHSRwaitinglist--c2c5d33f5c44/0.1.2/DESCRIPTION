@@ -1,0 +1,47 @@
+Package: NHSRwaitinglist
+Title: Waiting List Metrics Using Queuing Theory
+Version: 0.1.2
+Authors@R: c(
+          person("Neil", "Walton", ,"neil.walton@durham.ac.uk", "aut", comment = c(ORCID ="0000-0002-5241-9765")),
+          person("Jacqueline", "Grout", ,"jacqueline.grout1@nhs.net", "ctb"),
+          person("Zoë", "Turner", , "zoe.turner3@nhs.net", "ctb", comment = c(ORCID = "0000-0003-1033-9158")),
+          person("Matt", "Dray", , "matt.dray@nhs.net", "aut"),
+          person("Paul", "Fenton", , "paul.fenton@nca.nhs.uk", "ctb"),
+          person("Peter", "Shakeshaft", , "peter.shakeshaft1@nhs.net", "ctb"),
+          person("David", "Foord", , "david.foord1@nhs.net", "ctb"),
+          person("Tom", "Smith", ,"thomas.smith103@nhs.net", "aut"),
+          person("Chris", "Mainey", ,"c.mainey1@nhs.net", c("cre","aut"), comment = c(ORCID ="0000-0002-3018-6171")),
+          person("Mohammed", "Mohammed", , "m.mohammed2@nhs.net", "ctb"),
+          person("NHS-R community", email = "nhs.rcommunity@nhs.net", role = "cph")
+          )
+Maintainer: Chris Mainey <c.mainey1@nhs.net>
+Description: Waiting list management using queuing theory to analyse, predict and manage queues, based on the approach described in Fong et al. (2022) <doi:10.1101/2022.08.23.22279117>.  Aimed at UK National Health Service (NHS) applications, waiting list summary statistics, target-value calculations, waiting list simulation, and scheduling functions are included.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+URL: https://nhs-r-community.github.io/NHSRwaitinglist/,
+        https://github.com/nhs-r-community/NHSRwaitinglist
+BugReports: https://github.com/nhs-r-community/NHSRwaitinglist/issues
+Config/testthat/edition: 3
+Imports: cli, dplyr, rlang, utils, stats, randomNames
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 4.1.0)
+LazyData: true
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2025-07-15 13:28:29 UTC; ChrisMainey(Birmingh
+Author: Neil Walton [aut] (ORCID: <https://orcid.org/0000-0002-5241-9765>),
+  Jacqueline Grout [ctb],
+  Zoë Turner [ctb] (ORCID: <https://orcid.org/0000-0003-1033-9158>),
+  Matt Dray [aut],
+  Paul Fenton [ctb],
+  Peter Shakeshaft [ctb],
+  David Foord [ctb],
+  Tom Smith [aut],
+  Chris Mainey [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-3018-6171>),
+  Mohammed Mohammed [ctb],
+  NHS-R community [cph]
+Repository: CRAN
+Date/Publication: 2025-07-15 15:50:02 UTC

@@ -1,0 +1,35 @@
+Package: cutpoint
+Type: Package
+Title: Estimate Cutpoints of Metric Variables in the Context of Cox
+        Regression
+Version: 1.0.0
+Authors@R: c(
+      person("Jan", "Porthun", email = "jan.porthun@ntnu.no", 
+      role = c("aut", "cre","cph"), comment = c(ORCID = "0000-0002-4100-4361")
+    )
+  )
+Description: Estimate one or two cutpoints of a metric or ordinal-scaled 
+    variable in the multivariable context of survival data or 
+    time-to-event data. Visualise the cutpoint estimation process using contour 
+    plots, index plots, and spline plots. It is also possible to estimate 
+    cutpoints based on the assumption of a U-shaped or inverted U-shaped 
+    relationship between the predictor and the hazard ratio.
+    Govindarajulu, U., and Tarpey, T. (2022) <doi:10.1080/02664763.2020.1846690>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+Imports: graphics, magrittr, plotly, RcppAlgos, stats, survival, utils
+RoxygenNote: 7.3.2
+URL: https://github.com/jan-por/cutpoint
+BugReports: https://github.com/jan-por/cutpoint/issues
+Depends: R (>= 3.5)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-05-08 16:09:54 UTC; janpo
+Author: Jan Porthun [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-4100-4361>)
+Maintainer: Jan Porthun <jan.porthun@ntnu.no>
+Repository: CRAN
+Date/Publication: 2025-05-09 15:20:09 UTC

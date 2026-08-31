@@ -1,0 +1,29 @@
+Package: mrgsim.sa
+Type: Package
+Title: Sensitivity Analysis with 'mrgsolve'
+Version: 0.3.0
+Authors@R: c(person("Kyle", "Baron", "", "kylebtwin@imap.cc", c("aut", "cre")))
+Maintainer: Kyle Baron <kylebtwin@imap.cc>
+Description: Perform sensitivity analysis on ordinary differential equation 
+    based models, including ad-hoc graphical analyses based on structured 
+    sequences of parameters as well as local sensitivity analysis. Functions 
+    are provided for creating inputs, simulating scenarios and plotting outputs.
+License: GPL (>= 2)
+URL: https://github.com/kylebaron/mrgsim.sa,
+        https://kylebaron.github.io/mrgsim.sa/
+BugReports: https://github.com/kylebaron/mrgsim.sa/issues
+Suggests: testthat, knitr, rmarkdown, ggsci
+Imports: withr, purrr, dplyr, assertthat, rlang, ggplot2, tidyselect,
+        tidyr, methods, tibble, patchwork, glue, lattice, lifecycle
+Encoding: UTF-8
+Language: en-US
+Depends: mrgsolve
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Collate: 'utils.R' 'parseq.R' 'sens.R' 'AAA.R' 'lsa.R' 'sens_each.R'
+        'sens_grid.R' 'sens_plot.R' 'sens_run.R' 'seq.R'
+NeedsCompilation: no
+Packaged: 2026-04-02 17:44:50 UTC; kyleb
+Author: Kyle Baron [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-04-02 19:00:02 UTC

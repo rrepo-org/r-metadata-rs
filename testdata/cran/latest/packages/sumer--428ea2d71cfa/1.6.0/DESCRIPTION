@@ -1,0 +1,29 @@
+Package: sumer
+Type: Package
+Title: Sumerian Cuneiform Text Analysis
+Version: 1.6.0
+Authors@R: c(
+    person(
+			given = "Robin",
+           family = "Wellmann",
+           role = c("aut", "cre"),
+           email = "ro.wellmann@gmail.com"
+		)
+	)
+Description: Provides functions for converting transliterated Sumerian texts to sign names and cuneiform characters,
+    creating and querying dictionaries, analyzing the structure of
+    Sumerian words, and creating translations. Includes a built-in dictionary and supports both
+    forward lookup (Sumerian to English) and reverse lookup (English to
+    Sumerian).
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stringr, officer, xml2, cli, rlang, ggplot2, ragg, shiny
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Maintainer: Robin Wellmann <ro.wellmann@gmail.com>
+Packaged: 2026-05-05 07:56:57 UTC; rowel
+Author: Robin Wellmann [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-05-05 08:20:02 UTC

@@ -1,0 +1,33 @@
+Type: Package
+Package: sourcoise
+Title: Source a Script and Cache
+Version: 1.1.0
+Authors@R: 
+    person("Xavier", "Timbeau", , "xavier.timbeau@sciencespo.fr", role = c("aut", "cre", "cph"))
+Description: Provides a function that behaves nearly as base::source() but
+    implements a caching mechanism on disk, project based.  It allows to
+    quasi source() R scripts that gather data but can fail or consume to
+    much time to respond even if nothing new is expected.  It comes with
+    tools to check and execute on demand or when cache is invalid the
+    script.
+License: MIT + file LICENSE
+URL: https://xtimbeau.github.io/sourcoise/,
+        https://github.com/xtimbeau/sourcoise
+BugReports: https://github.com/xtimbeau/sourcoise/issues
+Depends: R (>= 4.2.0)
+Imports: cli, digest, dplyr, fs, glue, jsonlite, knitr, lobstr, logger,
+        lubridate, memoise, purrr, qs2, RcppSimdJson, rlang, rprojroot,
+        stringr, tibble, tidyr, utils
+Suggests: quarto, bench, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: Quarto command line tools
+        (https://github.com/quarto-dev/quarto-cli).
+NeedsCompilation: no
+Packaged: 2026-01-07 08:30:49 UTC; timbe
+Author: Xavier Timbeau [aut, cre, cph]
+Maintainer: Xavier Timbeau <xavier.timbeau@sciencespo.fr>
+Repository: CRAN
+Date/Publication: 2026-01-07 19:50:02 UTC

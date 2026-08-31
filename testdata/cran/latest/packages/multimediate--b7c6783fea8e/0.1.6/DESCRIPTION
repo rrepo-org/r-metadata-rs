@@ -1,0 +1,41 @@
+Package: multimediate
+Title: Causal Mediation Analysis in Presence of Multiple Mediators
+        Uncausally Related
+Version: 0.1.6
+Authors@R: 
+    c(person(given = "Allan",
+             family = "Jerolon",
+             role = c("aut")),
+      person(given = "Arce",
+             family = "Domingo-Relloso",
+             role = c("aut")),       
+      person(given = "Samara",
+             family = "Kiihl",
+             role = c("cre", "aut"),
+             email = "samarak@unicamp.br"),
+      person(given = "Maria",
+             family = "Tellez-Plaza",
+             role = c("aut")))       
+Description: Estimates key quantities in causal mediation analysis - including 
+    average causal mediation effects (indirect effects), average direct 
+    effects, total effects, and proportions mediated - in the presence of 
+    multiple uncausally related mediators. Methods are described by 
+    Jerolon et al., (2021) <doi:10.1515/ijb-2019-0088> and extended to 
+    accommodate survival outcomes as described by Domingo-Relloso et al., 
+    (2024) <doi:10.1101/2024.02.16.24302923>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://samarafk.github.io/multimediate/
+Imports: rmutil, MASS, mvtnorm, stats, graphics, timereg
+Suggests: rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-20 15:46:34 UTC; samara
+Author: Allan Jerolon [aut],
+  Arce Domingo-Relloso [aut],
+  Samara Kiihl [cre, aut],
+  Maria Tellez-Plaza [aut]
+Maintainer: Samara Kiihl <samarak@unicamp.br>
+Repository: CRAN
+Date/Publication: 2026-05-21 07:20:21 UTC

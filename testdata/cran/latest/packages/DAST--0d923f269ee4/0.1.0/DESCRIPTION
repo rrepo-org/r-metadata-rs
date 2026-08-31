@@ -1,0 +1,38 @@
+Package: DAST
+Type: Package
+Title: Spatio-Temporal Disaggregation for Maps with Changing Areal
+        Boundaries
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Noah", "Ripstein",
+      email = "noah.ripstein@mail.utoronto.ca",
+      role = c("aut", "cre")
+    )
+  )
+Description: Tools for spatio-temporal disaggregation of areal data across multiple 
+    time points, including support for changing polygon boundaries. Implements 
+    methods for spatially aggregated log-Gaussian Cox process models with 
+    changing areal boundaries as described in Ripstein, Brown and Stafford 
+    (2026) "Spatio-Temporal Disaggregation with Changing Areal Boundaries" 
+    <doi:10.48550/arXiv.2606.25074>. Combines polygon-level 
+    observations, population rasters and optional covariate rasters to infer fine-scale 
+    spatial fields over time. Models can be efficiently fit using 'TMB' (Template Model 
+    Builder) and adaptive Gauss-Hermite quadrature for fast approximate inference
+    or via 'tmbstan' for MCMC.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/nripstein/DAST
+LinkingTo: TMB, RcppEigen
+Imports: aghq, cowplot, disaggregation, fmesher, ggplot2, Matrix,
+        numDeriv, rSPDE, sf, sparseMVN, terra, TMB
+Suggests: knitr, rmarkdown, rstan, testthat (>= 3.0.0), tmbstan
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-06-25 02:47:03 UTC; NoahRipstein
+Author: Noah Ripstein [aut, cre]
+Maintainer: Noah Ripstein <noah.ripstein@mail.utoronto.ca>
+Repository: CRAN
+Date/Publication: 2026-06-30 19:40:02 UTC

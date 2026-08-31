@@ -1,0 +1,34 @@
+Package: lame
+Title: Longitudinal Additive and Multiplicative Effects Models for
+        Networks
+Version: 1.3.4
+Authors@R: c(
+    person("Cassy", "Dorff", role = "aut"),
+    person("Shahryar", "Minhas", , "minhassh@msu.edu", role = c("aut", "cre")),
+    person("Tosin", "Salau", role = "aut"))
+Description: Additive and multiplicative effects models for both cross-sectional and longitudinal network analysis. The package provides two main functions: ame() for cross-sectional networks and lame() for longitudinal networks. It supports square and rectangular network structures. Key features include: (1) Cross-sectional network analysis via ame() with support for binary, continuous, ordinal, and count data; (2) Longitudinal network analysis via lame() with additive sender/receiver and multiplicative latent-factor effects that can evolve over time through AR(1) processes (Sewell and Chen (2015) <doi:10.1080/01621459.2014.988214>; Durante and Dunson (2014) <doi:10.1093/biomet/asu040>); (3) Handling of changing actor compositions across time periods in longitudinal models; (4) Performance improvements through C++ implementations via 'Rcpp' and 'RcppArmadillo'.
+Author: Cassy Dorff [aut],
+  Shahryar Minhas [aut, cre],
+  Tosin Salau [aut]
+Maintainer: Shahryar Minhas <minhassh@msu.edu>
+License: MIT + file LICENSE
+URL: https://netify-dev.github.io/lame/,
+        https://github.com/netify-dev/lame
+BugReports: https://github.com/netify-dev/lame/issues
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, ggplot2, ggrepel, ggforce, gridExtra, coda, patchwork,
+        cli, MASS, Matrix, abind, netify (>= 1.5.3), graphics,
+        grDevices, parallel, stats, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), igraph, network,
+        posterior, loo, digest, tibble, broom, generics, pROC, precrec,
+        statmod, dplyr, modelsummary, callr, amen
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-24 16:23:37 UTC; s7m
+Repository: CRAN
+Date/Publication: 2026-08-04 15:10:03 UTC

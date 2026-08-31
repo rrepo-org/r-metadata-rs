@@ -1,0 +1,23 @@
+Package: VariableSelection
+Title: Select Variables for Linear Models
+Version: 1.0.0
+Authors@R: 
+    person("Shuangshuang", "Xu", ,"xshuangshuang@vt.edu", role = c("aut", "cre"))
+Description: Provides variable selection for linear models and generalized linear models using Bayesian information criterion (BIC) and model posterior probability (MPP). 
+             Given a set of candidate predictors, it evaluates candidate models and returns model-level summaries (BIC and MPP) and predictor-level posterior inclusion probabilities (PIP).
+             For more details see Xu, S., Ferreira, M. A., & Tegge, A. N. (2025) <doi:10.48550/arXiv.2510.02628>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: stats (>= 4.2.2), GA (>= 3.2.3), memoise (>= 2.0.1)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+LazyData: true
+Depends: R (>= 3.5.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-12 19:32:40 UTC; xushu
+Author: Shuangshuang Xu [aut, cre]
+Maintainer: Shuangshuang Xu <xshuangshuang@vt.edu>
+Repository: CRAN
+Date/Publication: 2026-02-17 16:00:08 UTC

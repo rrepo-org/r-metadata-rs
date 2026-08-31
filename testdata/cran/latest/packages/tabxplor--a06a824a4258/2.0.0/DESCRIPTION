@@ -1,0 +1,54 @@
+Package: tabxplor
+Title: User-Friendly Tables with Color Helpers for Data Exploration
+Version: 2.0.0
+Authors@R: 
+    person(given = "Brice",
+           family = "Nocenti",
+           role = c("aut", "cre"),
+           email = "brice.nocenti@protonmail.com")
+Description: Make it easy to deal with multiple cross-tables in data exploration, by
+  creating them, manipulating them, and adding color helpers to highlight deviations 
+  (differences from totals, comparisons between lines or columns, contributions to 
+  variance, odds ratios, etc.) and significance (confidence intervals, stars, etc.).
+  Create the same kind of tables for regression models, with a framework to compare
+  model effects with their crude/observed counterpart systematically.
+  All functions render data frames which can be easily manipulated. 
+  All tables can be exported with formats and colors to 'Excel', html and markdown.
+URL: https://github.com/BriceNocenti/tabxplor,
+        https://bricenocenti.github.io/tabxplor/
+BugReports: https://github.com/BriceNocenti/tabxplor/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Suggests: fansi (>= 0.5.0), htmltools (>= 0.5.0), jmvcore (>= 2.4.0),
+        knitr, mirai (>= 2.5.0), openxlsx2 (>= 1.0.0), pkgload (>=
+        1.3.0), parallelly (>= 1.32.0), R6, RhpcBLASctl, ggplot2 (>=
+        3.5.0), rmarkdown, rstudioapi (>= 0.1), testthat (>= 3.0.0),
+        brant (>= 0.3.0), svyVGAM (>= 1.2), VGAM (>= 1.1.0),
+        marginaleffects (>= 0.20.0), withr (>= 3.0.0), yaml, gridExtra
+        (>= 2.3.0), clipr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: tab-reg, plots, tab-xl, reg-estimand,
+        survey-variance, tab-classes, golden, tab-render-html,
+        reg-assumptions, tab-display, tab, tab-transpose-render,
+        tab-export, tab-palettes, reg-influence, survey-design, jmvtab,
+        tab-export-prep, reg-cross, tab-args
+Config/Needs/website: pkgdown, BriceNocenti/txtheme
+Config/Needs/coverage: covr
+Imports: dplyr (>= 1.0.3), forcats (>= 0.5.0), purrr (>= 0.3.0), rlang
+        (>= 1.0.0), tibble (>= 3.1.0), tidyr (>= 1.1.0), vctrs (>=
+        0.3.0), cli (>= 2.0.0), tidyselect (>= 1.2.0), pillar (>=
+        1.6.0), stats (>= 4.0.0), utils, lifecycle (>= 1.0.0),
+        data.table, grid, survey (>= 3.0.0), nnet (>= 7.3.0), MASS (>=
+        7.3.0),
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr, rmarkdown
+Config/potools/style: explicit
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-29 09:44:25 UTC; dev1
+Author: Brice Nocenti [aut, cre]
+Maintainer: Brice Nocenti <brice.nocenti@protonmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-29 15:30:08 UTC

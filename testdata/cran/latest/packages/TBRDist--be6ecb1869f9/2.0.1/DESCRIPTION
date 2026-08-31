@@ -1,0 +1,47 @@
+Package: TBRDist
+Title: Rearrangement Distances Between Phylogenetic Trees
+Version: 2.0.1
+Authors@R: c(person("Martin R.", 'Smith',
+                  email = "martin.smith@durham.ac.uk", 
+                  role = c("aut", "cre", "cph"), 
+                  comment = c(ORCID = "0000-0001-5660-1727", GitHub = "ms609")),
+               person(given = "Chris", family = "Whidden",
+                  email = "cwhidden@fredhutch.org", role = c("cph"),
+                  comment = c("rspr, uspr", GitHub = "cwhidden"))
+            )
+License: GPL (>= 3)
+Copyright: Underlying C++ code copyright 2009-2021 Chris Whidden.
+Description: Fast calculation of tree rearrangement distances.
+  For unrooted trees: Subtree Prune and Regraft (SPR), Tree Bisection and
+  Reconnection (TBR), and Replug distances, using the algorithms of Whidden
+  and Matsen (2017) <doi:10.48550/arXiv.1511.07529>.
+  For rooted trees: rooted SPR (rSPR) distance, using the fixed-parameter
+  algorithms of Whidden, Beiko, and Zeh (2013) <doi:10.1137/110845045>.
+URL: https://ms609.github.io/TBRDist/,
+        https://github.com/ms609/TBRDist/,
+        https://github.com/cwhidden/uspr/,
+        https://github.com/cwhidden/rspr/
+BugReports: https://github.com/ms609/TBRDist/issues/
+SystemRequirements: C++17
+Depends: R (>= 3.6.0)
+Imports: ape, Rdpack, TreeDist, TreeTools (>= 2.2.0),
+Suggests: knitr, rmarkdown, testthat,
+LinkingTo: BH, Rcpp, TreeTools,
+Config/Needs/check: rcmdcheck, testthat
+Config/Needs/coverage: covr
+Config/Needs/memcheck: testthat
+RdMacros: Rdpack
+VignetteBuilder: knitr
+ByteCompile: true
+Encoding: UTF-8
+X-schema.org-keywords: phylogenetics, tree-distance
+Language: en-GB
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-07-21 14:43:12 UTC; pjjg18
+Author: Martin R. Smith [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5660-1727>, GitHub: ms609),
+  Chris Whidden [cph] (rspr, uspr, GitHub: cwhidden)
+Maintainer: Martin R. Smith <martin.smith@durham.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-07-21 16:30:02 UTC

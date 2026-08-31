@@ -1,0 +1,58 @@
+Package: CVXR
+Type: Package
+Title: Disciplined Convex Optimization
+Version: 1.9.2
+Date: 2026-08-23
+Authors@R: c(
+    person("Anqi", "Fu",
+           role = c("aut", "cre"),
+           email = "anqif@alumni.stanford.edu"),
+    person("Balasubramanian", "Narasimhan",
+           role = c("aut"),
+           email = "naras@stat.stanford.edu"),
+    person("Steven", "Diamond",
+           role = c("aut")),
+    person("John", "Miller",
+           role = c("aut")),
+    person("Stephen", "Boyd",
+           role = c("ctb"),
+           email = "boyd@stanford.edu")
+    )
+URL: https://cvxr.rbind.io, https://www.cvxgrp.org/CVXR/
+BugReports: https://github.com/cvxgrp/CVXR/issues
+Description: An object-oriented modeling language for disciplined
+    convex programming (DCP) as described in Fu, Narasimhan, and Boyd
+    (2020, <doi:10.18637/jss.v094.i14>). It allows the user to
+    formulate convex optimization problems in a natural way following
+    mathematical convention and DCP rules. The system analyzes the
+    problem, verifies its convexity, converts it into a canonical
+    form, and hands it off to an appropriate solver to obtain the
+    solution. This version uses the S7 object system for improved
+    performance and maintainability.
+Depends: R (>= 4.3.0)
+Imports: S7 (>= 0.2), methods, Matrix (>= 1.7), Rcpp (>= 1.1), clarabel
+        (>= 0.11), cli (>= 3.6), gmp (>= 0.7), highs (>= 1.14), osqp
+        (>= 1.0), scs (>= 3.2), slam (>= 0.1)
+Suggests: jsonlite (>= 1.9), knitr, rmarkdown, testthat (>= 3.3), rlang
+Enhances: Rmosek, gurobi (>= 13.0), Rglpk (>= 0.6), ECOSolveR (>= 0.6),
+        Rcplex (>= 0.3), cccp (>= 0.3), piqp (>= 0.6), scip, xpress,
+        diffcp (>= 0.1.2), ipopt, sparsediff, Uno
+Additional_repositories: https://bnaras.r-universe.dev,
+        https://bnaras.github.io/drat
+LinkingTo: Rcpp, RcppEigen
+License: Apache License 2.0 | file LICENSE
+LazyData: true
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: yes
+Packaged: 2026-08-23 20:52:42 UTC; naras
+Author: Anqi Fu [aut, cre],
+  Balasubramanian Narasimhan [aut],
+  Steven Diamond [aut],
+  John Miller [aut],
+  Stephen Boyd [ctb]
+Maintainer: Anqi Fu <anqif@alumni.stanford.edu>
+Repository: CRAN
+Date/Publication: 2026-08-24 05:21:00 UTC

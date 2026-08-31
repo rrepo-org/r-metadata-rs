@@ -1,0 +1,32 @@
+Package: fz
+Type: Package
+Title: R Wrapper for the 'funz-fz' Parametric Simulation Framework
+Version: 1.1
+Authors@R: c(
+    person("Yann", "Richet", email = "yann.richet@asnr.fr",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5677-8458"))
+    )
+Description: Provides R bindings to the 'funz-fz' Python package using
+    'reticulate'. The 'fz' framework wraps arbitrary simulation codes to run
+    parameter sweeps, design-of-experiments studies, and iterative
+    algorithm-driven analyses by substituting variable placeholders in text
+    input files and collecting outputs into data frames. Calculators can run
+    locally (shell), over SSH, or on 'SLURM' clusters.
+    See <https://github.com/Funz/fz> for the underlying framework.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+SystemRequirements: Python (>= 3.8), funz-fz Python package
+Imports: reticulate (>= 1.28)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/reticulate: list( packages = list( list(package = "funz-fz") ) )
+VignetteBuilder: knitr
+URL: https://github.com/Funz/fz.R
+BugReports: https://github.com/Funz/fz.R/issues
+NeedsCompilation: no
+Packaged: 2026-06-22 20:39:38 UTC; richet
+Author: Yann Richet [aut, cre] (ORCID: <https://orcid.org/0000-0002-5677-8458>)
+Maintainer: Yann Richet <yann.richet@asnr.fr>
+Repository: CRAN
+Date/Publication: 2026-06-29 13:30:02 UTC

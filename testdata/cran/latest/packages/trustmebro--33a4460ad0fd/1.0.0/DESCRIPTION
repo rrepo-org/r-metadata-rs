@@ -1,0 +1,36 @@
+Package: trustmebro
+Type: Package
+Title: Inspect and Clean Subject-Generated ID Codes and Related Data
+Version: 1.0.0
+Authors@R: c(
+    person("Annemarie", "Pläschke", , "anneplaeschke@gmail.com", role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0009-0005-7115-8790")
+    ),
+    person("Tobias", "Brändle", role = "aut",
+      comment = c(ORCID = "0000-0001-8872-9872")
+    )
+  )
+Maintainer: Annemarie Pläschke <anneplaeschke@gmail.com>
+Description: Makes data wrangling with ID-related aspects more comfortable.
+    Provides functions that make it easy to inspect various subject-generated ID codes (SGIC) for plausibility.
+    Also helps with inspecting other common identifiers, ensuring that your data stays clean and reliable.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+Imports: dplyr, tibble, rlang
+VignetteBuilder: knitr
+URL: https://kuuuwe.github.io/trustmebro/,
+        https://github.com/kuuuwe/trustmebro
+Language: en-US
+BugReports: https://github.com/kuuuwe/trustmebro/issues
+NeedsCompilation: no
+Packaged: 2025-05-07 20:50:26 UTC; Anwender
+Author: Annemarie Pläschke [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0005-7115-8790>),
+  Tobias Brändle [aut] (ORCID: <https://orcid.org/0000-0001-8872-9872>)
+Repository: CRAN
+Date/Publication: 2025-05-09 14:10:02 UTC

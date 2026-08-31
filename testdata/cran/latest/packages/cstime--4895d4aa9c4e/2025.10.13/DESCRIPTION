@@ -1,0 +1,35 @@
+Package: cstime
+Title: Date and Time Functions for Public Health Purposes
+Version: 2025.10.13
+Authors@R: c(
+  person("Chi", "Zhang", email = "andreachizhang@yahoo.com", role = c("aut"), 
+    comment = c(ORCID = "0000-0003-0501-5909")
+  ),
+  person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-6747-1726")
+  ),
+  person("CSIDS", email = "hello@csids.no", role = c("cph"))
+  )
+Description: Provides easy and consistent time conversion for public health purposes. The time conversion functions provided here are between date, ISO week, ISO yearweek, ISO year, calendar month/year, season, season week.  
+License: MIT + file LICENSE
+URL: https://www.csids.no/cstime/, https://github.com/csids/cstime
+BugReports: https://github.com/csids/cstime/issues
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: data.table, magrittr
+Suggests: rmarkdown, ggplot2, knitr, testthat (>= 3.0.0), readxl, glue,
+        lubridate
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-10-13 15:46:01 UTC; raw996
+Author: Chi Zhang [aut] (ORCID: <https://orcid.org/0000-0003-0501-5909>),
+  Richard Aubrey White [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6747-1726>),
+  CSIDS [cph]
+Maintainer: Richard Aubrey White <hello@rwhite.no>
+Repository: CRAN
+Date/Publication: 2025-10-14 13:20:02 UTC

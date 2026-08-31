@@ -1,0 +1,31 @@
+Package: statMatchLCM
+Type: Package
+Title: Statistical Matching Using Latent Class Models
+Version: 1.2
+Authors@R: c(
+  person("Alicja", "Wolny-Dominiak",
+         email = "woali@ue.katowice.pl",
+         role = c("aut", "cre")),
+  person("Israa", "Lewaaelhamd",
+         email = "israa.lewaa@bue.edu.eg",
+         role = "aut"),
+  person("Mohammed Ali", "Ismail",
+         email = "mismail@feps.edu.eg",
+         role = "aut")
+ )
+Description: Tools for statistical matching based on latent class models. The package implements statistical matching procedures based on latent class models. It allows researchers to perform data integration when no unique identifiers are available by modeling the joint distribution of variables through latent categorical structures. The package supports estimation of latent class models, probabilistic matching between donor and recipient data sets, and generation of synthetic linked data under uncertainty. It is particularly useful in survey research and data fusion applications where combining information from multiple sources is required while preserving statistical properties and accounting for measurement error and missing data mechanisms.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: nnet, StatMatch
+Suggests: NPBayesImputeCat
+Depends: R (>= 4.1.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-05-11 17:11:33 UTC; woali
+Author: Alicja Wolny-Dominiak [aut, cre],
+  Israa Lewaaelhamd [aut],
+  Mohammed Ali Ismail [aut]
+Maintainer: Alicja Wolny-Dominiak <woali@ue.katowice.pl>
+Repository: CRAN
+Date/Publication: 2026-05-15 20:20:08 UTC

@@ -1,0 +1,30 @@
+Package: azuremapsr
+Title: Interface to the 'Azure Maps' API
+Version: 0.0.2
+Authors@R: c(
+    person("Juan P.", "Fonseca-Zamora",
+    email = "ts18jpf@leeds.ac.uk",
+    role = c("aut", "cre"))
+  )
+Description: Provides a wrapper for the Microsoft 'Azure Maps' REST APIs <https://learn.microsoft.com/en-us/rest/api/maps/route?view=rest-maps-2025-01-01>,
+    enabling users to access mapping and geospatial services directly from R.
+    This package simplifies authenticating, building, and sending requests for
+    services like route directions. It handles conversions between R objects
+    (such as 'sf' objects) and the GeoJSON+JSON format required by the API,
+     making it easier to integrate 'Azure Maps' into R-based data analysis workflows.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/juanfonsecaLS1/azuremapsr
+BugReports: https://github.com/juanfonsecaLS1/azuremapsr/issues
+RoxygenNote: 7.3.2
+Imports: geojsonsf (>= 2.0.3), httr2 (>= 1.2.1), jsonlite (>= 2.0.0),
+        lubridate (>= 1.9.4), purrr (>= 1.1.0), rlist (>= 0.4.6.2), sf
+        (>= 1.0.21), stringr (>= 1.5.1)
+Depends: R (>= 4.1.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-08-27 10:08:42 UTC; ts18jpf
+Author: Juan P. Fonseca-Zamora [aut, cre]
+Maintainer: Juan P. Fonseca-Zamora <ts18jpf@leeds.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-08-27 12:00:19 UTC

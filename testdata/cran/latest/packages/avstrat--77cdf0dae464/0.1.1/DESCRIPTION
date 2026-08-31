@@ -1,0 +1,39 @@
+Package: avstrat
+Title: Stratigraphic Data Processing and Section Plots
+Version: 0.1.1
+Authors@R: 
+    person("Matthew", "Loewen", 
+    email = "mloewen@usgs.gov", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-5621-285X"))
+Description: Data processing and generating stratigraphic sections 
+    for volcanic deposits and tephrastratigraphy. Package was developed for
+    studies on Alaska volcanoes ("av") where stratigraphic ("strat") figures 
+    are needed for interpreting eruptive histories, but the methods are applicable
+    to any sediment stratigraphy project. Plotting styles inspired by "SedLog"
+    (Zervas et al. 2009) <doi:10.1016/j.cageo.2009.02.009> but with 
+    more customizable outputs and flexible data input based on best practice
+    recommendations for the tephra community (Wallace et al. 2022) 
+    <doi:10.1038/s41597-022-01515-y>.
+License: CC0
+Copyright: This software is in the public domain because it contains
+        materials that originally came from the United States
+        Geological Survey, an agency of the United States Department of
+        the Interior.
+BugReports: https://code.usgs.gov/vsc/tephra/tools/avstrat/-/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, tidyr, ggplot2 (>= 4.0), grid, patchwork, rlang, shiny,
+        leaflet
+Suggests: knitr, readxl, rmarkdown, testthat (>= 3.0.0), tibble, withr
+Depends: R (>= 4.1.0)
+LazyData: true
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-02 05:49:06 UTC; mloewen
+Author: Matthew Loewen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5621-285X>)
+Maintainer: Matthew Loewen <mloewen@usgs.gov>
+Repository: CRAN
+Date/Publication: 2026-02-04 18:20:02 UTC

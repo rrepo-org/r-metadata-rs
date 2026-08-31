@@ -1,0 +1,31 @@
+Package: PredPsych
+Type: Package
+Title: Predictive Approaches in Psychology
+Version: 0.5
+Date: 2025-10-31
+Authors@R: person(given = "Atesh",
+                  family = "Koul",
+                  role = c("aut", "cre"),
+                  email = "atesh.koul@gmail.com")
+Maintainer: Atesh Koul <atesh.koul@gmail.com>
+Description: 
+    Recent years have seen an increased interest in novel methods
+    for analyzing quantitative data from experimental psychology. Currently, however, they lack an
+    established and accessible software framework. Many existing implementations provide no guidelines,
+    consisting of small code snippets, or sets of packages. In addition, the use of existing packages
+    often requires advanced programming experience. 'PredPsych' is a user-friendly toolbox based on
+    machine learning predictive algorithms. It comprises of multiple functionalities for multivariate
+    analyses of quantitative behavioral data based on machine learning models.
+License: GPL-3
+LazyData: TRUE
+Depends: R (>= 3.5.0)
+Imports: plyr, ggplot2, caret, rpart, e1071, mclust, MASS, party,
+        randomForest, statmod
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2025-10-31 15:39:34 UTC; Atesh
+Date/Publication: 2025-10-31 16:00:17 UTC
+Author: Atesh Koul [aut, cre]

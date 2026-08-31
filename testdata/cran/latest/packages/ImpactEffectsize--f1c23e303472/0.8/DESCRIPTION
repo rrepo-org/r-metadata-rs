@@ -1,0 +1,30 @@
+Package: ImpactEffectsize
+Type: Package
+Title: Calculation and Visualization of the Impact Effect Size Measure
+Version: 0.8
+Date: 2025-09-02
+Authors@R: c(person(given = "Jorn", family = "Lotsch",
+                    role = c("aut", "cre"),
+                    email = "j.loetsch@em.uni-frankfurt.de",
+                    comment = c(ORCID = "0000-0002-5818-6958")),
+             person(given = "Alfred", family = "Ultsch",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-7845-3283")))
+Description: A non-parametric effect size measure capturing changes in central tendency or shape of data distributions. The package provides the necessary functions to calculate and plot the Impact effect size measure between two groups.
+URL: https://cran.r-project.org/package=ImpactEffectsize
+Encoding: UTF-8
+LazyData: true
+Imports: caTools, matrixStats, parallelDist, methods, stats, graphics,
+        Rcpp, withr
+Suggests: testthat
+Depends: R (>= 3.5.0)
+License: GPL-3
+RoxygenNote: 6.1.1
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2025-09-02 17:31:23 UTC; joern
+Author: Jorn Lotsch [aut, cre] (ORCID: <https://orcid.org/0000-0002-5818-6958>),
+  Alfred Ultsch [aut] (ORCID: <https://orcid.org/0000-0002-7845-3283>)
+Maintainer: Jorn Lotsch <j.loetsch@em.uni-frankfurt.de>
+Repository: CRAN
+Date/Publication: 2025-09-02 18:00:02 UTC

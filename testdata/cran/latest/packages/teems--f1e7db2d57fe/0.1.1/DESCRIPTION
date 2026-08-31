@@ -1,0 +1,62 @@
+Package: teems
+Title: Trade and Environment Equilibrium Modeling System
+Version: 0.1.1
+Authors@R: c(
+    person(
+      given = "Matthew",
+      family = "Cantele",
+      role = c("aut", "cre", "cph"),
+      email = "matthew.cantele@protonmail.com",
+      comment = c(ORCID = "0000-0003-3729-1764")
+    ),
+    person(
+      given = "Tom",
+      family = "Kompas",
+      role = c("ctb", "ths"),
+      email = "tom.kompas@unimelb.edu.au",
+      comment = c(ORCID = "0000-0002-0665-0966")
+    ),
+    person(
+      given = c("Ha", "Van"),
+      family = "Pham",
+      role = "ctb",
+      email = "havan.pham@unimelb.edu.au",
+      comment = c(ORCID = "0000-0002-5927-6568")
+    ),
+    person(
+      given = "Martin",
+      family = "Ingram",
+      role = "ctb",
+      email = "martin.ingram@gmail.com",
+      comment = c(ORCID = "0000-0001-6269-8342")
+    ))
+Description: Equilibrium models are frequently employed to examine the
+    potential impacts of economic, energy, and trade policies as well as
+    form the foundation of most integrated assessment models. The 'teems'
+    package handles all aspects of running equilibrium models while
+    facilitating transparent and reproducible workflows.
+License: AGPL (>= 3)
+URL: https://teemsphere.github.io/,
+        https://github.com/teemsphere/teems/
+BugReports: https://github.com/teemsphere/teems/issues
+Depends: R (>= 4.3.0)
+Imports: cli (>= 3.4.0), data.table (>= 1.15.0), purrr (>= 1.0.0), R6
+        (>= 2.4.0), rlang (>= 1.0.0), stats, tibble (>= 3.0.0), tools,
+        utils
+Suggests: testthat (>= 3.0.0), withr (>= 3.0.0)
+LinkingTo: cpp11
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+SystemRequirements: Docker (https://www.docker.com)
+NeedsCompilation: yes
+Packaged: 2026-06-10 02:37:44 UTC; mpc
+Author: Matthew Cantele [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3729-1764>),
+  Tom Kompas [ctb, ths] (ORCID: <https://orcid.org/0000-0002-0665-0966>),
+  Ha Van Pham [ctb] (ORCID: <https://orcid.org/0000-0002-5927-6568>),
+  Martin Ingram [ctb] (ORCID: <https://orcid.org/0000-0001-6269-8342>)
+Maintainer: Matthew Cantele <matthew.cantele@protonmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-17 14:10:03 UTC

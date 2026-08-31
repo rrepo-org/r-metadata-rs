@@ -1,0 +1,53 @@
+Package: ggpsychro
+Title: Create Psychrometric Charts
+Version: 0.1.0
+Authors@R: 
+    person(given = "Hongyuan",
+           family = "Jia",
+           role = c("aut", "cre", "cph"),
+           email = "hongyuanjia@cqust.edu.cn",
+           comment = c(ORCID = "0000-0002-0075-8183"))
+Description: 
+    Provides 'ggplot2' coordinates, layers, scales, themes, and presets for
+    creating psychrometric charts. The package supports metric and inch-pound
+    unit systems, psychrometric grids, state points, process lines, zones, and
+    thermal comfort overlays for heating, ventilation, air conditioning, and
+    building performance workflows. Psychrometric property calculations are
+    based on 'PsychroLib' (Meyer and Thevenard, 2019)
+    <doi:10.21105/joss.01137> where appropriate.
+Depends: R (>= 4.1), ggplot2 (>= 4.0.0)
+Imports: gridGeometry, polyclip, isoband, checkmate, psychrolib, S7,
+        scales (>= 1.1.0)
+Suggests: testthat (>= 3.0.0), vdiffr
+License: MIT + file LICENSE
+URL: https://hongyuanjia.github.io/ggpsychro/,
+        https://github.com/hongyuanjia/ggpsychro
+BugReports: https://github.com/hongyuanjia/ggpsychro/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Collate: 'aaa-.R' 'stat.R' 'utils.R' 'stat-psychro-bin.R'
+        'psychro-extra.R' 'psychro-state.R' 'comfort-core.R'
+        'comfort-adaptive.R' 'comfort-grid.R' 'comfort-band.R'
+        'comfort-heat-index.R' 'comfort-pmv-label.R' 'comfort-native.R'
+        'comfort-model.R' 'comfort-dispatch.R' 'comfort-pmv-curve.R'
+        'comfort-pmv-band.R' 'comfort-pmv.R' 'comfort-calc.R'
+        'comfort-contour.R' 'comfort-givoni.R' 'comfort-zone.R'
+        'comfort-stat.R' 'comfort-stat-pmv.R' 'comfort-layer-field.R'
+        'scale-comfort.R' 'comfort-stat-givoni.R'
+        'comfort-layer-givoni.R' 'comfort-stat-heat-index.R'
+        'comfort-layer-heat-index.R' 'comfort-layer-pmv.R'
+        'coord-psychro.R' 'coord-clip.R' 'coord-foreground.R'
+        'psychro-tile-grid.R' 'psychro-zone.R' 'psychro-tile-clip.R'
+        'geom-psychro-tile.R' 'ggpsychro-package.R' 'ggpsychro.R'
+        'grid-label-renderer.R' 'grid-layer.R' 'guide-label.R'
+        'guide-panel.R' 'guide-protractor.R' 'guides-grid.R' 'labels.R'
+        'layer.R' 'layout.R' 'plot-build.R' 'plot-construction.R'
+        'trans.R' 'scale.R' 'theme.R' 'zzz.R'
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-19 22:00:18 UTC; hongyuanjia
+Author: Hongyuan Jia [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0075-8183>)
+Maintainer: Hongyuan Jia <hongyuanjia@cqust.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-07-30 12:40:13 UTC

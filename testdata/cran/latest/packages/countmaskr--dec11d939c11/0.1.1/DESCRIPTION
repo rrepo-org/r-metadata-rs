@@ -1,0 +1,53 @@
+Package: countmaskr
+Title: Small Cell Masking Tool for One- & Two-Way Tabular Reports
+Version: 0.1.1
+Authors@R: c(
+    person("Sahal", "Master", , "sahalmaster@outlook.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-8518-8107")),
+    person("Amy", "Goodwin Davies", , "goodwindaa@chop.edu", 
+            comment = c(ORCID = "0000-0002-2942-4654"), role = "aut"),
+    person("Allison", "Zelinski", , "zelinskia@chop.edu", role = "aut"),
+    person("Qiwei", "Shen", , "shenq@chop.edu", 
+            comment = c(ORCID = "0009-0003-0631-0026"), role = "aut"),
+    person("Charles", "Bailey", , "BAILEYC@chop.edu", 
+            comment = c(ORCID = "0000-0002-8967-0662"), role = "aut"),  
+    person("Nicole", "Marchesani", , "MARCHESANN@chop.edu", 
+           comment = c(ORCID = "0009-0006-0683-7575"),role = "ctb"),
+    person("Aqsa", "Khan", , "khana8@chop.edu",
+            comment = c(ORCID = "0009-0000-9574-4704"),role = "ctb"),
+    person("Rhonda", "DeCook", , "rhonda-decook@uiowa.edu", role = "ctb")
+  )
+Description: Provides automated small-cell suppression for one- and two-way 
+        frequency tables. Cells falling below a user-defined frequency 
+        threshold are masked, with suppression propagated to secondary 
+        cells to prevent indirect disclosure. Designed for clinical and 
+        health administrative data, the package supports a range of tabular 
+        structures and fits into reproducible reporting pipelines, reducing 
+        manual review while applying consistent suppression rules across data 
+        sharing workflows.
+License: MPL-2.0
+Depends: R (>= 2.10), dplyr, tibble, tidyr
+Imports: lifecycle
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+URL: https://query-fulfillment.github.io/countmaskr/
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-06 17:48:04 UTC; masters2
+Author: Sahal Master [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-8518-8107>),
+  Amy Goodwin Davies [aut] (ORCID:
+    <https://orcid.org/0000-0002-2942-4654>),
+  Allison Zelinski [aut],
+  Qiwei Shen [aut] (ORCID: <https://orcid.org/0009-0003-0631-0026>),
+  Charles Bailey [aut] (ORCID: <https://orcid.org/0000-0002-8967-0662>),
+  Nicole Marchesani [ctb] (ORCID:
+    <https://orcid.org/0009-0006-0683-7575>),
+  Aqsa Khan [ctb] (ORCID: <https://orcid.org/0009-0000-9574-4704>),
+  Rhonda DeCook [ctb]
+Maintainer: Sahal Master <sahalmaster@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-04-10 14:10:02 UTC

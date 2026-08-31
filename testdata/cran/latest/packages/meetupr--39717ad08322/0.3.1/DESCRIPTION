@@ -1,0 +1,62 @@
+Type: Package
+Package: meetupr
+Title: Access Meetup Data
+Version: 0.3.1
+Authors@R: c(
+    person("Athanasia Mo", "Mowinckel", , "a.m.mowinckel@psykologi.uio.no", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5756-0223")),
+    person("Erin", "LeDell", , "oss@ledell.org", role = "aut"),
+    person("Olga", "Mierzwa-Sulima", , "olga@rladies.org", role = "aut"),
+    person("Lucy", "D'Agostino McGowan", , "lucy@rladies.org", role = "aut"),
+    person("Claudia", "Vitolo", role = "aut"),
+    person("Gabriela", "De Queiroz", , "gabriela@rladies.org", role = "ctb"),
+    person("Michael", "Beigelmacher", role = "ctb"),
+    person("Augustina", "Ragwitz", , "augustina.ragwitz@ibm.com", role = "ctb"),
+    person("Greg", "Sutcliffe", , "github@emeraldverie.org", role = "ctb"),
+    person("Rick", "Pack", , "rickeyhp@gmail.com", role = "ctb"),
+    person("Ben", "Ubah", , "ubah.ben22@gmail.com", role = "ctb"),
+    person("Maëlle", "Salmon", , "maelle.salmon@yahoo.se", role = "ctb",
+           comment = c(ORCID = "0000-0002-2815-0399")),
+    person("Barret", "Schloerke", , "barret@rstudio.com", role = "ctb",
+           comment = c(ORCID = "0000-0001-9986-114X")),
+    person("R-Ladies Global", role = "cph")
+  )
+Description: Provides programmatic access to the 'Meetup' 'GraphQL' API 
+    (<https://www.meetup.com/graphql/>), enabling users to retrieve
+    information about groups, events, and members from 'Meetup' 
+    (<https://www.meetup.com/>). Supports authentication via 'OAuth2' and
+    includes functions for common queries and data manipulation tasks.
+License: MIT + file LICENSE
+Depends: R (>= 4.2)
+Imports: countrycode, cli, clipr, dplyr, fs, glue, httr2, jsonlite,
+        lifecycle, purrr, rlang, rlist, S7, tools, stats, utils, withr,
+        rstudioapi
+Suggests: covr, cyphr, ggplot2, ggwordcloud, httpuv, jose, knitr,
+        openssl, rmarkdown, sodium, testthat, tidyr, tidytext, vcr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://rladies.org/meetupr/
+BugReports: https://github.com/rladies/meetupr/issues
+NeedsCompilation: no
+Packaged: 2025-12-18 15:45:12 UTC; athanasm
+Author: Athanasia Mo Mowinckel [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5756-0223>),
+  Erin LeDell [aut],
+  Olga Mierzwa-Sulima [aut],
+  Lucy D'Agostino McGowan [aut],
+  Claudia Vitolo [aut],
+  Gabriela De Queiroz [ctb],
+  Michael Beigelmacher [ctb],
+  Augustina Ragwitz [ctb],
+  Greg Sutcliffe [ctb],
+  Rick Pack [ctb],
+  Ben Ubah [ctb],
+  Maëlle Salmon [ctb] (ORCID: <https://orcid.org/0000-0002-2815-0399>),
+  Barret Schloerke [ctb] (ORCID: <https://orcid.org/0000-0001-9986-114X>),
+  R-Ladies Global [cph]
+Maintainer: Athanasia Mo Mowinckel <a.m.mowinckel@psykologi.uio.no>
+Repository: CRAN
+Date/Publication: 2025-12-22 19:50:02 UTC

@@ -1,0 +1,47 @@
+Package: NHSRplotthedots
+Type: Package
+Title: Draw XmR Charts for NHS 'Making Data Count' Programme
+Version: 0.2.2
+Authors@R: c(
+        person("Tom", "Smith", ,"thomas.smith103@nhs.net", c("cre", "aut")),
+        person("Christopher", "Reading", ,"christopher.reading1@nhs.net", "aut"),
+        person("Simon", "Wellesley-Miller", ,"simon.wellesley-miller@nhs.net", "aut"),
+        person("Zoë", "Turner", , "zoe.turner3@nhs.net", "aut", comment = c(ORCID = "0000-0003-1033-9158")),
+        person("Tom", "Jemmett", ,"thomas.jemmett@nhs.net", "aut", comment = c(ORCID="0000-0002-6943-2990")),
+        person("Chris", "Mainey", ,"c.mainey@nhs.net", "aut", comment = c(ORCID ="0000-0002-3018-6171")),
+        person("John", "MacKintosh", ,"john.mackintosh3@nhs.scot", "aut"),
+        person("Marcos", "Fabietti", ,"marcos.fabietti@nhs.net", "aut"),
+        person("Fran", "Barton", ,"francis.barton@nhs.net", "aut", comment = c(ORCID = "0000-0002-5650-1176")),
+        person("NHS-R community", , ,"nhs.rcommunity@nhs.net", "cph")
+        )
+Maintainer: Tom Smith <thomas.smith103@nhs.net>
+Description: Provides tools for drawing Statistical Process Control (SPC) charts. This package supports the NHS 'Making Data Count' programme, and allows users to draw XmR charts, use change points and apply rules with summary indicators for when rules are breached.
+URL: https://nhsrplotthedots.nhsrcommunity.com,
+        https://github.com/nhs-r-community/NHSRplotthedots
+BugReports: https://github.com/nhs-r-community/NHSRplotthedots/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: assertthat, base64enc, crayon, dplyr, ggplot2, grid, magrittr,
+        plotly, rlang, rsvg, scales, stringr, tidyselect (>= 1.2.0)
+Suggests: covr, cyclocomp, hexSticker, knitr, lintr (>= 3.0.0),
+        mockery, NHSRdatasets, pillar, rmarkdown, spelling, testthat
+        (>= 3.0.0), tibble, utils, withr
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2025-09-26 16:09:33 UTC; Tom Smith
+Author: Tom Smith [cre, aut],
+  Christopher Reading [aut],
+  Simon Wellesley-Miller [aut],
+  Zoë Turner [aut] (ORCID: <https://orcid.org/0000-0003-1033-9158>),
+  Tom Jemmett [aut] (ORCID: <https://orcid.org/0000-0002-6943-2990>),
+  Chris Mainey [aut] (ORCID: <https://orcid.org/0000-0002-3018-6171>),
+  John MacKintosh [aut],
+  Marcos Fabietti [aut],
+  Fran Barton [aut] (ORCID: <https://orcid.org/0000-0002-5650-1176>),
+  NHS-R community [cph]
+Repository: CRAN
+Date/Publication: 2025-09-29 11:00:02 UTC

@@ -1,0 +1,39 @@
+Package: rasterpic
+Title: Convert Images to Spatially Referenced 'SpatRaster' Objects
+Version: 1.0.0
+Authors@R: 
+    person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8457-4658"))
+Description: Convert digital images to spatially referenced 'SpatRaster'
+    objects, as defined by the 'terra' package, using coordinates from
+    supported spatial input classes. Supported inputs include numeric
+    coordinate vectors and objects from the 'sf', 'terra' and 'stars'
+    packages. The main function is an S3 generic, allowing other packages
+    to extend support to additional spatial classes.
+License: MIT + file LICENSE
+URL: https://dieghernan.github.io/rasterpic/,
+        https://github.com/dieghernan/rasterpic
+BugReports: https://github.com/dieghernan/rasterpic/issues
+Depends: R (>= 4.1.0)
+Imports: cli, png, sf (>= 1.0.0), terra (>= 1.8-21), tools, utils
+Suggests: ggplot2, knitr, quarto, stars, testthat (>= 3.3.0),
+        tidyterra, withr
+VignetteBuilder: quarto
+Config/Needs/check: curl
+Config/Needs/coverage: curl
+Config/Needs/website: cpp11, curl, devtools, dieghernan/gitdevr, mapsf,
+        maptiles, remotes, tmap
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+X-schema.org-keywords: cran, jpeg, jpg, maps, png, r, r-package,
+        r-stats, raster, rstats, sf, stars, terra, tif, tiff, cran-r
+NeedsCompilation: no
+Packaged: 2026-08-24 14:18:46 UTC; diego
+Author: Diego Hernangómez [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8457-4658>)
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 16:30:03 UTC

@@ -1,0 +1,29 @@
+Package: fntl
+Title: Numerical Tools for 'Rcpp' and Lambda Functions
+Version: 0.1.3.2
+Authors@R: 
+    person("Andrew M.", "Raim", email = "andrew.raim@gmail.com",
+        role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4440-2330"))
+Description: 
+    Provides a 'C++' API for routinely used numerical tools such as integration,
+    root-finding, and optimization, where function arguments are given as
+    lambdas. This facilitates 'Rcpp' programming, enabling the development of
+    'R'-like code in 'C++' where functions can be defined on the fly and use
+    variables in the surrounding environment.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/andrewraim/fntl
+Depends: R (>= 4.3)
+Suggests: knitr, Matrix, numDeriv, rmarkdown, quarto, RcppArmadillo,
+        tidyverse, tinytest
+LinkingTo: Rcpp
+Imports: Rcpp
+VignetteBuilder: quarto
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: yes
+Packaged: 2026-08-26 12:55:08 UTC; araim
+Author: Andrew M. Raim [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4440-2330>)
+Maintainer: Andrew M. Raim <andrew.raim@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 10:00:08 UTC

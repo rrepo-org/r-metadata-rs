@@ -1,0 +1,31 @@
+Package: redeem
+Type: Package
+Title: Relational Event and Durational Event Models
+Version: 1.1.0
+Date: 2026-08-21
+Author: Cornelius Fritz [aut, cre]
+Maintainer: Cornelius Fritz <corneliusfritz2010@gmail.com>
+Authors@R: person("Cornelius", "Fritz", , "corneliusfritz2010@gmail.com", role = c("aut", "cre"))
+Description: Model relational and durational events in a
+    counting process framework, with functions for estimating and simulating
+    Relational Event Models (REM) and Durational Event Models (DEM). Includes
+    support for time-varying covariates, windowed statistics, and
+    high-dimensional node-level fixed effects. References include
+    Fritz et al. (2026) "Scalable Durational Event Models: Application to
+    Physical and Digital Interactions" <doi:10.48550/arXiv.2504.00049>.
+License: GPL-3
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.12), data.table, MASS, survival, stats,
+        grDevices, graphics, utils, digest
+LinkingTo: Rcpp, RcppProgress, RcppArmadillo
+Suggests: testthat (>= 3.0.0), network, knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+URL: https://corneliusfritz.github.io/redeem/
+BugReports: https://github.com/corneliusfritz/redeem/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-21 09:02:43 UTC; corneliusfritz
+Repository: CRAN
+Date/Publication: 2026-08-21 10:30:02 UTC

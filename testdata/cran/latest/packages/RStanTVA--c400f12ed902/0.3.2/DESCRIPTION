@@ -1,0 +1,30 @@
+Package: RStanTVA
+Type: Package
+Title: TVA Models in 'Stan' using 'R' and 'StanTVA'
+Version: 0.3.2
+Authors@R: c(
+    person(given = "Maximilian M.", family = "Rabe", email = "maximilian.rabe@uni-potsdam.de", role = c("aut","cre"), comment = c(ORCID = "0000-0002-2556-5644")),
+    person(given = "S\u00f8ren", family = "Kyllingsb\u00e6k", email = "soeren.kyllingsbaek@psy.ku.dk", role = c("aut"), comment = c(ORCID = "0000-0002-4100-437X")))
+Description: 'Stan' implementation of the Theory of Visual Attention (TVA; Bundesen, 1990; <doi:10.1037/0033-295X.97.4.523>) and numerous convenience functions for generating, compiling, fitting, and analyzing TVA models.
+License: GPL (>= 3)
+Encoding: UTF-8
+BugReports: https://github.com/mmrabe/RStanTVA/issues
+URL: https://github.com/mmrabe/RStanTVA
+Date: 2025-12-16
+Depends: rstan, R (>= 3.6)
+Imports: dplyr, readr, tidyr, methods, utils, tibble, stats, cli, lme4,
+        brms, rlang
+Suggests: cmdstanr, knitr, rmarkdown, ggplot2
+Additional_repositories: https://stan-dev.r-universe.dev
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-16 22:51:46 UTC; max
+Author: Maximilian M. Rabe [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2556-5644>),
+  Søren Kyllingsbæk [aut] (ORCID:
+    <https://orcid.org/0000-0002-4100-437X>)
+Maintainer: Maximilian M. Rabe <maximilian.rabe@uni-potsdam.de>
+Repository: CRAN
+Date/Publication: 2025-12-16 23:10:02 UTC

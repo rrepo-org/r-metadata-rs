@@ -1,0 +1,49 @@
+Package: autoMR
+Type: Package
+Title: Automated Mendelian Randomization Pipelines and Visualizations
+Version: 1.2.1
+Authors@R: 
+    c(
+      person("Kelin", "Zhong", email = "kelinzhonguconn@gmail.com", role = c("aut", "cre")),
+      person("Chia-Ling", "Kuo", email = "kuo@uchc.edu", role = "aut")
+    )
+Maintainer: Kelin Zhong <kelinzhonguconn@gmail.com>
+Description: Provides tools to summarize, analyze, and visualize results
+    from Mendelian randomization studies using summarized genetic
+    association data. The package includes functions for generating forest
+    plots and scatter plots at the single-nucleotide polymorphism
+    and Mendelian randomization method levels, and for fitting multiple
+    estimators in a unified pipeline, including inverse-variance weighted
+    estimation, Mendelian randomization Egger regression,
+    the weighted median estimator, the robust adjusted
+    profile score, Mendelian randomization pleiotropy residual sum
+    and outlier, Mendelian randomization with the genotype
+    recoding invariance property, and a Bayesian horseshoe
+    method. Related methods are described by Burgess (2013)
+    <doi:10.1002/gepi.21758>, Bowden (2015) <doi:10.1093/ije/dyv080>,
+    Bowden (2016) <doi:10.1002/gepi.21965>, Zhao (2020)
+    <doi:10.1214/19-AOS1866>, Verbanck (2018)
+    <doi:10.1038/s41588-018-0099-7>, Dudbridge (2025)
+    <doi:10.1371/journal.pgen.1011967>, and Grant and Burgess (2024)
+    <doi:10.1016/j.ajhg.2023.12.002>. Related open-source software
+    includes 'TwoSampleMR' <https://github.com/MRCIEU/TwoSampleMR>,
+    'mr.raps' <https://github.com/qingyuanzhao/mr.raps>,
+    'MR-PRESSO' <https://github.com/rondolab/MR-PRESSO>, and
+    'MR-Horse' <https://github.com/aj-grant/mrhorse>.
+Depends: R (>= 4.2)
+Imports: ggplot2 (>= 4.0.1), dplyr (>= 1.1.4), tidyr (>= 1.3.1),
+        MendelianRandomization (>= 0.10.0), R2jags (>= 0.8-9), coda (>=
+        0.19-4.1), nortest (>= 1.0-4), grDevices, graphics, stats,
+        utils, methods
+URL: https://github.com/KelinZhong/autoMR
+BugReports: https://github.com/KelinZhong/autoMR/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-14 17:25:48 UTC; Colin
+Author: Kelin Zhong [aut, cre],
+  Chia-Ling Kuo [aut]
+Repository: CRAN
+Date/Publication: 2026-07-14 17:50:02 UTC

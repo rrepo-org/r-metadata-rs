@@ -1,0 +1,22 @@
+Package: forecastADAPT
+Title: Computation of Adaptive Forecast
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Violetta", family = "Dalla", email = "vidalla@econ.uoa.gr", role = c("aut", "cre")),
+    person(given = "Liudas", family =  "Giraitis", role = "aut"),
+    person(given = "George", family =  "Kapetanios", role = "aut"))
+Description: The function forAD() implements the adaptive forecasting procedure of Giraitis, Kapetanios and Price (2013) <doi:10.1016/j.jeconom.2013.04.003>. The method can be iterated (e.g., adapt²) and combined with autoregressive (AR) forecasting. These approaches are computationally simple and adapt automatically to structural changes without requiring prior specification of the underlying data-generating process. They are applicable to both stationary and non-stationary time series. The numerical and graphical outputs assist in selecting an appropriate forecasting method, particularly one that minimises mean squared forecast error (MSFE) and yields uncorrelated forecast errors.
+License: GPL-3
+Encoding: UTF-8
+Imports: stats, graphics, lubridate, grDevices, knitr, testcorr, xts,
+        zoo
+RoxygenNote: 7.3.3
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2026-05-05 10:34:53 UTC; drvio
+Author: Violetta Dalla [aut, cre],
+  Liudas Giraitis [aut],
+  George Kapetanios [aut]
+Maintainer: Violetta Dalla <vidalla@econ.uoa.gr>
+Repository: CRAN
+Date/Publication: 2026-05-08 14:40:08 UTC

@@ -1,0 +1,32 @@
+Package: BayesMallowsSMC2
+Type: Package
+Title: Nested Sequential Monte Carlo for the Bayesian Mallows Model
+Version: 0.3.0
+Authors@R: c(person("Oystein", "Sorensen",
+                    email = "oystein.sorensen.1985@gmail.com",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0003-0724-3542")))
+Description: Provides nested sequential Monte Carlo algorithms for performing
+    sequential inference in the Bayesian Mallows model, which is a widely used
+    probability model for rank and preference data. The package implements the
+    SMC2 (Sequential Monte Carlo Squared) algorithm for handling sequentially
+    arriving rankings and pairwise preferences, including support for complete
+    rankings, partial rankings, and pairwise comparisons. The methods are based
+    on Sorensen (2025) <doi:10.1214/25-BA1564>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, ggplot2, Rdpack
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0), label.switching (>= 1.8)
+RdMacros: Rdpack
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-08 05:10:23 UTC; oyss
+Author: Oystein Sorensen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0724-3542>)
+Maintainer: Oystein Sorensen <oystein.sorensen.1985@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-08 05:34:51 UTC

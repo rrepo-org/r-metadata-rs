@@ -1,0 +1,35 @@
+Package: flassomsm
+Type: Package
+Title: Penalized Estimation for Multi-State Models with Lasso and Fused
+        Penalties
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Atanu", "Bhattacharjee",
+           email = "atanustat@gmail.com",
+           role = c("aut", "cre", "ctb")),
+    person("Gajendra Kumar", "Vishwakarma",
+           role = c("aut", "ctb")),
+    person("Abhipsa", "Tripathy",
+           role = c("aut", "ctb")))
+Maintainer: Atanu Bhattacharjee <atanustat@gmail.com>
+Description: Provides a suite of methods for detecting influential 
+    subjects in longitudinal datasets, particularly when observations 
+    occur at irregular time points. The methods identify individuals 
+    whose response trajectories deviate significantly from the population 
+    pattern, enabling detection of anomalies or subjects exerting undue 
+    influence on model outcomes.
+Imports: dplyr, corpcor, future, future.apply, glmnet, mstate,numDeriv,
+        penalized, progress, progressr, survival
+Suggests: ggplot2, rlang, mice
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-11-05 04:56:53 UTC; ABHIPSA TRIPATHY
+Author: Atanu Bhattacharjee [aut, cre, ctb],
+  Gajendra Kumar Vishwakarma [aut, ctb],
+  Abhipsa Tripathy [aut, ctb]
+Repository: CRAN
+Date/Publication: 2025-11-26 09:30:02 UTC

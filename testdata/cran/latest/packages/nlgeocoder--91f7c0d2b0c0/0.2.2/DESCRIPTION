@@ -1,0 +1,30 @@
+Package: nlgeocoder
+Title: Geocoding for the Netherlands
+Version: 0.2.2
+Authors@R: c(person("Willy", "Tadema", role = c("aut")),
+    person("Egge-Jan", "Pollé", role = c("aut"))
+   ,person("Edwin", "de Jonge", email = "edwindjonge@gmail.com"
+          , role = c("aut", "cre"), comment=c(ORCID="0000-0002-6580-4718"))
+   ,person("Juris", "Breidaks", role = c("ctb")))
+Description: Interface to the open location server API of 'Publieke Diensten Op de Kaart' (<http://www.pdok.nl>). It offers geocoding, address suggestions and lookup of geographical objects. Included is an utility function for displaying leaflet tiles restricted to the Netherlands.
+Depends: R (>= 3.4)
+License: GPL-2
+BugReports: https://github.com/uRosConf/nlgeocoder/issues
+URL: https://github.com/uRosConf/nlgeocoder,
+        https://urosconf.github.io/nlgeocoder/
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: testthat, knitr, rmarkdown, sf, shiny, leaflet
+VignetteBuilder: knitr
+Imports: jsonlite
+NeedsCompilation: no
+Packaged: 2025-12-10 21:35:03 UTC; edwin
+Author: Willy Tadema [aut],
+  Egge-Jan Pollé [aut],
+  Edwin de Jonge [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6580-4718>),
+  Juris Breidaks [ctb]
+Maintainer: Edwin de Jonge <edwindjonge@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-16 14:40:02 UTC

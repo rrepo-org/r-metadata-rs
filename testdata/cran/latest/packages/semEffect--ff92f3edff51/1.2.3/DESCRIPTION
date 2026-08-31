@@ -1,0 +1,28 @@
+Package: semEffect
+Title: Structural Equation Model Effect Analysis and Visualization
+Version: 1.2.3
+Authors@R: 
+    person(given = "Weiping", 
+	family = "Mei", 
+	role = c("aut", "cre"),
+	email = "meiweipingg@163.com", 
+	comment = c(ORCID = "0000-0001-6400-9862"))
+Description: Provides standardized effect decomposition (direct, indirect, and total effects) for three major structural equation modeling frameworks: 
+	'lavaan', 'piecewiseSEM', and 'plspm'. Automatically handles zero-effect variables, generates publication-ready 'ggplot2' visualizations, and returns 
+	both wide-format and long-format effect tables. Supports effect filtering, multi-model object inputs, and customizable visualization parameters.
+	For a general overview of the methods used in this package, see Rosseel (2012) <doi:10.18637/jss.v048.i02> and Lefcheck (2016) <doi:10.1111/2041-210X.12512>.
+URL: https://github.com/PhDMeiwp/semEffect/
+BugReports: https://github.com/PhDMeiwp/semEffect/issues
+Depends: R (>= 4.4.0)
+License: GPL-3
+Encoding: UTF-8
+Imports: lavaan, piecewiseSEM, plspm, ggplot2, tidyr, dplyr, utils,
+        checkmate, RColorBrewer
+Suggests: testthat
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-06-30 06:54:47 UTC; meiwe
+Author: Weiping Mei [aut, cre] (ORCID: <https://orcid.org/0000-0001-6400-9862>)
+Maintainer: Weiping Mei <meiweipingg@163.com>
+Repository: CRAN
+Date/Publication: 2025-07-04 19:30:01 UTC

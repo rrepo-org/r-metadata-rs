@@ -1,0 +1,38 @@
+Package: midi
+Title: Microstructure Information from Diffusion Imaging
+Version: 0.2.0
+Authors@R: 
+    person("Aymeric", "Stamm", , "aymeric.stamm@cnrs.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8725-3654"))
+Description: An implementation of a taxonomy of models of restricted diffusion
+    in biological tissues parametrized by the tissue geometry (axis, diameter,
+    density, etc.). This is primarily used in the context of diffusion magnetic
+    resonance (MR) imaging to model the MR signal attenuation in the presence of
+    diffusion gradients. The goal is to provide tools to simulate the MR signal
+    attenuation predicted by these models under different experimental
+    conditions. The package feeds a companion 'shiny' app available at
+    <https://midi-pastrami.apps.math.cnrs.fr> that serves as a graphical
+    interface to the models and tools provided by the package. Models currently
+    available are the ones in Neuman (1974) <doi:10.1063/1.1680931>, Van
+    Gelderen et al. (1994) <doi:10.1006/jmrb.1994.1038>, Stanisz et al. (1997)
+    <doi:10.1002/mrm.1910370115>, Soderman & Jonsson (1995)
+    <doi:10.1006/jmra.1995.0014> and Callaghan (1995)
+    <doi:10.1006/jmra.1995.1055>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5)
+URL: https://github.com/tractoverse/midi,
+        https://tractoverse.github.io/midi/
+BugReports: https://github.com/tractoverse/midi/issues
+Imports: cli, ggplot2, plotly, purrr, R6, rlang, withr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Config/roxygen2/markdown: TRUE
+NeedsCompilation: no
+Packaged: 2026-07-05 19:31:43 UTC; stamm-a
+Author: Aymeric Stamm [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8725-3654>)
+Maintainer: Aymeric Stamm <aymeric.stamm@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2026-07-05 19:40:02 UTC

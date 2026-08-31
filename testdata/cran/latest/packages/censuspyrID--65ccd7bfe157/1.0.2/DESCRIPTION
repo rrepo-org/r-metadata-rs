@@ -1,0 +1,45 @@
+Package: censuspyrID
+Type: Package
+Title: Explorer of Indonesian Population Pyramids from Harmonized and
+        Non-Harmonized Census Data
+Version: 1.0.2
+Date: 2025-10-09
+Authors@R: c(
+    person(
+      given = "Ari Purwanto Sarwo", family = "Prasojo",
+      role = c("aut", "cre"),
+      email = "ari.prasojo18@gmail.com",
+      comment = c(ORCID = "0000-0002-4862-5523")
+    ),
+    person(
+      given = "Puguh", family = "Prasetyoputra",
+      role = "aut",
+      email = "pprasetyoputra@gmail.com",
+      comment = c(ORCID = "0000-0001-5494-7003")
+    ),
+    person(
+      given = "Nur Fitri Mustika", family = "Ayu",
+      role = "aut",
+      email = "nurfitrimustikaayu@gmail.com"
+    )
+  )
+Description: Provides harmonized and non-harmonized population pyramid datasets from the Indonesian population censuses (1971–2020), along with tools for visualization and an interactive 'shiny'-based explorer application. Data are processed from IPUMS International (1971–2010) and the Population Census 2020 (BPS Indonesia).
+License: GPL-3
+Depends: R (>= 4.1)
+Imports: shiny (>= 0.13.0), shinythemes, shinyWidgets, shinyjs, dplyr,
+        tidyr, DT, ggplot2, ggthemes, scales, networkD3
+Suggests: tibble
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/aripurwantosp/censuspyrID
+BugReports: https://github.com/aripurwantosp/censuspyrID/issues
+NeedsCompilation: no
+Packaged: 2025-10-09 06:19:49 UTC; ari_prasojo2
+Author: Ari Purwanto Sarwo Prasojo [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4862-5523>),
+  Puguh Prasetyoputra [aut] (ORCID:
+    <https://orcid.org/0000-0001-5494-7003>),
+  Nur Fitri Mustika Ayu [aut]
+Maintainer: Ari Purwanto Sarwo Prasojo <ari.prasojo18@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-15 19:20:14 UTC

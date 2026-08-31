@@ -1,0 +1,29 @@
+Package: elixir
+Type: Package
+Title: Transmutation of Languages
+Version: 0.1.1
+Authors@R: person("Nicholas", "Davies", email = "nicholas.davies@lshtm.ac.uk", role = c("cre", "aut", "cph"), comment = c(ORCID = "0000-0002-1740-1412"))
+Description: Tools for transforming 'R' expressions. Provides functions for 
+ finding, extracting, and replacing patterns in 'R' language objects, similarly 
+ to how regular expressions can be used to find, extract, and replace patterns 
+ in text. Also provides functions for generating code using specially-formatted 
+ template files and for translating 'R' expressions into similar expressions in 
+ other programming languages. The package may be helpful for advanced uses of 
+ 'R' expressions, such as developing domain-specific languages.
+URL: https://github.com/nicholasdavies/elixir,
+        https://nicholasdavies.github.io/elixir/
+BugReports: https://github.com/nicholasdavies/elixir/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: rlang, stringr, glue
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-02 12:35:02 UTC; nick
+Author: Nicholas Davies [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-1740-1412>)
+Maintainer: Nicholas Davies <nicholas.davies@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-12-02 13:00:02 UTC

@@ -1,0 +1,40 @@
+Package: autotune
+Type: Package
+Title: Faster and more Efficient Lasso (than 'glmnet' and 'scalreg')
+        with Data-Driven Tuning
+Version: 0.1.0
+Maintainer: Tathagata Sadhukhan <ts767@cornell.edu>
+Description: Fits Lasso paths for high-dimensional regression using coordinate descent with automatic, data-driven tuning of the regularization parameter. The implementation is 10 to 50 times faster than the standard 'glmnet' implementation of Lasso and over 100 times faster than scaled Lasso. It also provides a reliable estimate of the regression noise level.
+    For details of the method, see Sadhukhan, Wilms, Smeekes and Basu (2025)
+    "Autotune: fast, accurate, and automatic tuning parameter selection for Lasso"
+    <doi:10.48550/arXiv.2512.11139>.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 2.10)
+Imports: Rcpp (>= 1.0.13)
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, glmnet, AUC, ggplot2, ggExtra, dplyr,
+        tidyr, Matrix
+VignetteBuilder: knitr
+Authors@R: c(person(given = "Tathagata",
+                        family = "Sadhukhan",
+                        role = c("aut", "cre"),
+                        email = "ts767@cornell.edu"),
+                 person(given = "Ines",
+                        family = "Wilms",
+                        role = "aut"),
+                 person(given = "Stephan",
+                        family = "Smeekes",
+                        role = "aut"),
+                 person(given = "Sumanta",
+                        family = "Basu",
+                        role = "aut"))
+NeedsCompilation: yes
+Packaged: 2026-08-20 00:18:39 UTC; ts767
+Author: Tathagata Sadhukhan [aut, cre],
+  Ines Wilms [aut],
+  Stephan Smeekes [aut],
+  Sumanta Basu [aut]
+Repository: CRAN
+Date/Publication: 2026-08-21 13:40:26 UTC

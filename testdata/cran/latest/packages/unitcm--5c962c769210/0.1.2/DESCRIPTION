@@ -1,0 +1,31 @@
+Package: unitcm
+Version: 0.1.2
+Title: Client for the 'UniTCM' Traditional Chinese Medicine Platform
+Description: Provides functions to query the 'UniTCM' API
+    (<https://unitcm.qfxulab.com>), covering herb exploration,
+    compound/ADMET (Absorption, Distribution, Metabolism, Excretion, and
+    Toxicity) data, disease-formula associations, Traditional Chinese
+    Medicine (TCM) ontology, transcriptomics, and gene-disease analysis
+    (MIDAS, Mining Integrated Disease Association Sources).
+Authors@R: person("Xiao", "Zheng", email = "12519088@zju.edu.cn",
+    role = c("aut", "cre"), comment = c(ORCID = "0009-0000-3918-5725"))
+Author: Xiao Zheng [aut, cre] (ORCID: <https://orcid.org/0009-0000-3918-5725>)
+Maintainer: Xiao Zheng <12519088@zju.edu.cn>
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: httr2 (>= 1.0.0), tibble (>= 3.0.0), dplyr (>= 1.1.0), rlang
+        (>= 1.0.0), cli, glue
+Suggests: igraph (>= 1.4.0), tidygraph, ggplot2 (>= 3.4.0), ggraph,
+        keyring, testthat (>= 3.0.0), httptest2, withr, knitr,
+        rmarkdown, pkgdown
+URL: https://zx122ty.github.io/UniTCM_R_Package/,
+        https://github.com/zx122ty/UniTCM_R_Package
+BugReports: https://github.com/zx122ty/UniTCM_R_Package/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-21 02:10:50 UTC; since
+Repository: CRAN
+Date/Publication: 2026-05-28 11:10:08 UTC

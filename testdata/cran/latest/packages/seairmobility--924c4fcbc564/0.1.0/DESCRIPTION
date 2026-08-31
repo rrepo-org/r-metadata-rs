@@ -1,0 +1,33 @@
+Package: seairmobility
+Type: Package
+Title: Mobility-Based SEAIR Epidemic Models
+Version: 0.1.0
+Authors@R: person(given = "Weinan",
+                  family = "Wang",
+                  role = c("aut", "cre"),
+                  email = "ww@ou.edu")
+Description: Tools for simulating, analysing, and fitting mobility-based
+    SEAIR (Susceptible-Exposed-Asymptomatic-Infectious-Recovered)
+    compartmental epidemic models with heterogeneous individual
+    mobility. Each individual carries a fixed mobility trait that
+    scales susceptibility and infectiousness through a rank-one
+    kernel, extending the mobility-based compartmental framework of
+    Jiang et al. (2025) <doi:10.1137/24M1691557> by adding a latent
+    stage and a behavioural split between asymptomatic and symptomatic
+    infectiousness. Provides a numerical solver for the underlying
+    partial differential equation system, closed-form computation of
+    the basic reproduction number R0 and the final epidemic size, and
+    a parametric least-squares routine for recovering the mobility
+    distribution from an observed aggregate symptomatic time series.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: deSolve (>= 1.30), stats, graphics
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-25 01:30:00 UTC; cran-review
+Author: Weinan Wang [aut, cre]
+Maintainer: Weinan Wang <ww@ou.edu>
+Repository: CRAN
+Date/Publication: 2026-04-28 19:30:13 UTC

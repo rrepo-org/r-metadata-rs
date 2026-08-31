@@ -1,0 +1,44 @@
+Package: xegaMigration
+Title: 'Xega' Island Models
+Version: 0.5.0.4
+Authors@R: c(
+    person(given = "Andreas",
+           family = "Geyer-Schulz",
+           role = c("aut", "cre"),
+           email = "Andreas.Geyer-Schulz@kit.edu",
+           comment = c(ORCID = "0009-0000-5237-3579")),
+    person(given = "Seyedmostafa",
+           family = "Zamanishandiz",
+           role = c("aut"),
+           email = "mostafa-shandiz@partner.kit.edu",
+           comment = c(ORCID = "0009-0000-3324-4739"))
+           )
+Description: 
+    Implements asynchronous message-passing communication protocols
+    for island models of extended and evolutionary algorithms 
+    (see Tomassini, Marco (2005, ISBN:978-3-540-24193-5)) for the 
+    R-package 'xega' <https://CRAN.R-project.org/package=xega>.
+    Basic asynchronous as well as synchronized communication primitives 
+    are supplied based on file I/O operations ('rds') on a shared file system 
+    or by 'openMPI' (MPI) messages.  The gene selection and replacement 
+    strategies, the migration policy as well as the communication topology 
+    between islands are configurable.  
+    Homogeneous and heterogeneous island algorithms are supported. 
+    For examples (R and shell-scripts), see
+    <https://github.com/ageyerschulz/xega/tree/main/examples/IslandModels>.
+License: MIT + file LICENSE
+URL: https://github.com/ageyerschulz/xegaMigration
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: xegaSelectGene (>= 1.0.0.4), xegaPopulation
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-07-31 16:16:01 UTC; dj2333
+Author: Andreas Geyer-Schulz [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-5237-3579>),
+  Seyedmostafa Zamanishandiz [aut] (ORCID:
+    <https://orcid.org/0009-0000-3324-4739>)
+Maintainer: Andreas Geyer-Schulz <Andreas.Geyer-Schulz@kit.edu>
+Repository: CRAN
+Date/Publication: 2026-08-08 11:30:02 UTC

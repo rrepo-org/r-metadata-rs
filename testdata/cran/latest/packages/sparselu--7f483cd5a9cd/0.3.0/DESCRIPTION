@@ -1,0 +1,29 @@
+Package: sparselu
+Type: Package
+Title: Sparse LU Decomposition via SuiteSparse
+Version: 0.3.0
+Authors@R: c(person("Kevin Michael", "Frick", role = c("aut", "cre"), email = "kmfrick@proton.me"),
+           person("Timothy A.", "Davis", role = "ctb",
+	         comment = c(affiliation = "SuiteSparse Project",
+	                     contribution = "SuiteSparse libraries and collaborators listed in dir(system.file(\"doc\", \"SuiteSparse\", package = \"Matrix\"), pattern = \"License\", full.names = TRUE, recursive = TRUE)")))
+Maintainer: Kevin Michael Frick <kmfrick@proton.me>
+Description: Provides an interface to the SuiteSparse UMFPACK LU factorisation routines for sparse matrices stored in compressed column format. Implements the algorithm described in Davis (2004) <doi:10.1145/992200.992206>.
+License: GPL-3
+Depends: R (>= 3.6.0)
+LinkingTo: Rcpp
+SystemRequirements: SuiteSparse (UMFPACK, AMD, SuiteSparse_config)
+Imports: Rcpp (>= 0.11.0)
+Suggests: Matrix, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+OS_type: unix
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-03-06 08:43:52 UTC; kmfrick
+Author: Kevin Michael Frick [aut, cre],
+  Timothy A. Davis [ctb] (affiliation: SuiteSparse Project, contribution:
+    SuiteSparse libraries and collaborators listed in
+    dir(system.file("doc", "SuiteSparse", package = "Matrix"), pattern
+    = "License", full.names = TRUE, recursive = TRUE))
+Repository: CRAN
+Date/Publication: 2026-03-10 20:50:11 UTC

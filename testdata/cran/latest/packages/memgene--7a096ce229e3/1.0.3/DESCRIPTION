@@ -1,0 +1,25 @@
+Package: memgene
+Type: Package
+Title: Spatial Pattern Detection in Genetic Distance Data Using Moran's
+        Eigenvector Maps
+Version: 1.0.3
+Authors@R: c(person(given = "Pedro",
+                    family = "Peres-Neto",
+                    role = "aut"),
+             person(given = "Paul",
+                    family = "Galpern",
+                    role = c("aut", "cre"),
+                    email = "pgalpern@ucalgary.ca"))
+Description: Can detect relatively weak spatial genetic patterns by using Moran's Eigenvector Maps (MEM) to extract only the spatial component of genetic variation.  Has applications in landscape genetics where the movement and dispersal of organisms are studied using neutral genetic variation.
+License: GPL (>= 2)
+Imports: ade4, gdistance, raster, sp, vegan
+Suggests: adegenet, geosphere, knitr
+VignetteBuilder: knitr
+BuildVignettes: true
+NeedsCompilation: no
+Packaged: 2025-07-22 15:06:41 UTC; hornik
+Repository: CRAN
+Date/Publication: 2025-07-22 17:22:54 UTC
+Author: Pedro Peres-Neto [aut],
+  Paul Galpern [aut, cre]
+Maintainer: Paul Galpern <pgalpern@ucalgary.ca>

@@ -1,0 +1,45 @@
+Package: ncar
+Version: 0.7.1
+Date: 2026-08-05
+Title: Noncompartmental Analysis for Pharmacokinetic Report
+Description: Conduct a noncompartmental analysis with industrial strength.
+             Some features are
+             1) CDISC SDTM terms
+             2) Automatic or manual slope selection
+             3) Supporting both 'linear-up linear-down' and 'linear-up log-down' method
+             4) Interval(partial) AUCs with 'linear' or 'log' interpolation method
+             5) Produce pdf, rtf, text report files.
+             6) Produce Installation and Operational Qualification (IQ/OQ) reports in pdf.
+             After installation, qualify the package in your own environment:
+             run pdfIQ() for Installation Qualification and pdfOQ() for Operational
+             Qualification. Run writeMD5() once after installation so the IQ
+             file-integrity check passes. To approve a report, sign it digitally in
+             Adobe Acrobat Reader (generate with sigField=TRUE, or run addSigField(),
+             to add click-to-sign fields), instead of printing and scanning; or use
+             signPDF()/verifyPDF() for a scriptable signature.
+             * Reference: Gabrielsson J, Weiner D. Pharmacokinetic and Pharmacodynamic Data Analysis - Concepts and Applications. 5th ed. 2016. (ISBN:9198299107).
+Depends: R (>= 3.5.0)
+Imports: NonCompart (>= 0.8.3), R.oo, R.methodsS3, tools
+Suggests: openssl
+Author: Kyun-Seop Bae [aut, cre],
+  Michael E. Schaffer [ctb, cph] (Original author of the 'rtf' functions
+    vendored in R/rtf_utils.R)
+Maintainer: Kyun-Seop Bae <k@acr.kr>
+Authors@R: c(
+                  person(given = "Kyun-Seop",
+                         family = "Bae",
+                         role = c("aut", "cre"),
+                         email = "k@acr.kr"),
+                  person(given = "Michael E.",
+                         family = "Schaffer",
+                         role = c("ctb", "cph"),
+                         comment = "Original author of the 'rtf' functions vendored in R/rtf_utils.R"))
+Copyright: 2016-, Kyun-Seop Bae; portions Copyright (c) Michael E.
+        Schaffer (vendored from the 'rtf' package, GPL (>= 2))
+License: GPL-3
+NeedsCompilation: no
+LazyLoad: yes
+URL: https://cran.r-project.org/package=ncar
+Packaged: 2026-08-05 17:46:13 UTC; Kyun-SeopBae
+Repository: CRAN
+Date/Publication: 2026-08-27 10:50:02 UTC

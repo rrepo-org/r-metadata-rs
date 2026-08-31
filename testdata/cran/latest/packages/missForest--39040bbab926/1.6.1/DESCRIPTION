@@ -1,0 +1,34 @@
+Package: missForest
+Type: Package
+Title: Nonparametric Missing Value Imputation using Random Forest
+Version: 1.6.1
+Date: 2025-10-22
+Authors@R: 
+    c(person(given = c("Daniel","J."),
+             family = "Stekhoven",
+             role = c("aut","cre"),
+             email = "stekhoven@nexus.ethz.ch"))
+Maintainer: Daniel J. Stekhoven <stekhoven@nexus.ethz.ch>
+Imports: randomForest, ranger, foreach, iterators, itertools, doRNG,
+        stats, Rdpack
+Suggests: doParallel, knitr, rmarkdown
+VignetteBuilder: knitr
+Description: The function 'missForest' in this package is used to
+    impute missing values particularly in the case of mixed-type
+    data. It uses a random forest (via 'ranger' or 'randomForest') trained on the observed values of
+    a data matrix to predict the missing values. It can be used to
+    impute continuous and/or categorical data including complex
+    interactions and non-linear relations. It yields an out-of-bag
+    (OOB) imputation error estimate without the need of a test set
+    or elaborate cross-validation. It can be run in parallel to 
+    save computation time.
+License: GPL (>= 2)
+URL: https://www.r-project.org, https://github.com/stekhoven/missForest
+BugReports: https://github.com/stekhoven/missForest/issues
+RdMacros: Rdpack
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-10-22 19:01:01 UTC; danistek
+Author: Daniel J. Stekhoven [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-10-26 12:30:02 UTC

@@ -1,0 +1,47 @@
+Package: savvySh
+Type: Package
+Title: Slab and Shrinkage Linear Regression Estimation
+Version: 0.1.1
+Authors@R: 
+    c(person(given = "Ziwei", family = "Chen", role = c("aut", "cre"),
+             email = "Ziwei.Chen.3@citystgeorges.ac.uk", 
+             comment = c(ORCID = "0009-0009-6376-3850")),
+      person(given = "Vali", family = "Asimit", role = "aut",
+             email = "asimit@citystgeorges.ac.uk", 
+             comment = c(ORCID = "0000-0002-7706-0066")),
+      person(given = "Marina Anca", family = "Cidota", role = "aut",
+             email = "cidota@fmi.unibuc.ro", 
+             comment = c(ORCID = "0009-0004-9505-7233")),
+      person(given = "Jennifer", family = "Asimit", role = "aut",
+             email = "jennifer.asimit@mrc-bsu.cam.ac.uk", 
+             comment = c(ORCID = "0000-0002-4857-2249")))
+Description: Implements a suite of shrinkage estimators for multivariate linear 
+    regression to improve estimation stability and predictive accuracy. 
+    Provides methods including the Stein estimator, Diagonal Shrinkage, 
+    the general Shrinkage estimator (solving a Sylvester equation), and 
+    Slab Regression (Simple and Generalized). These methods address Stein's 
+    paradox by introducing structured bias to reduce variance without requiring 
+    cross-validation, except for 'ShrinkageRR' where the intensity 
+    is chosen by minimizing an explicit Mean Squared Error (MSE) criterion. 
+    Methods are based on Asimit, V., Cidota, M. A., Chen, Z., and Asimit, J. (2025) 
+    <https://openaccess.city.ac.uk/id/eprint/35005/>.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://ziwei-chenchen.github.io/savvySh/
+BugReports: https://github.com/ziwei-chenchen/savvySh/issues
+RoxygenNote: 7.3.2
+Depends: R (>= 3.6.0)
+Imports: Matrix, glmnet, MASS, expm, mnormt, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-08 16:38:07 UTC; lanceyun
+Author: Ziwei Chen [aut, cre] (ORCID: <https://orcid.org/0009-0009-6376-3850>),
+  Vali Asimit [aut] (ORCID: <https://orcid.org/0000-0002-7706-0066>),
+  Marina Anca Cidota [aut] (ORCID:
+    <https://orcid.org/0009-0004-9505-7233>),
+  Jennifer Asimit [aut] (ORCID: <https://orcid.org/0000-0002-4857-2249>)
+Maintainer: Ziwei Chen <Ziwei.Chen.3@citystgeorges.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-03-08 17:20:02 UTC

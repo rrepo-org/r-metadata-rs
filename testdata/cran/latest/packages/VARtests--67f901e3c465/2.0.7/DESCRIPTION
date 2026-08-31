@@ -1,0 +1,46 @@
+Package: VARtests
+Type: Package
+Title: Bootstrap Tests for Cointegration and Autocorrelation in VARs
+Version: 2.0.7
+Authors@R: 
+    c(
+      person(
+        given = "Markus",
+        family = "Belfrage",
+        role   = c("aut","cre"),
+        email  = "markus.belfrage@gmail.com"
+      ),
+      person(
+        given  = "Paul",
+        family = "Catani",
+        role   = "ctb"
+      ),
+      person(
+        given  = "Niklas",
+        family = "Ahlgren",
+        role   = "ctb"
+      )
+    )	
+Depends: R (>= 3.0.2)
+LinkingTo: Rcpp (>= 0.12.10), RcppArmadillo
+Imports: methods, Rcpp, sn
+Suggests: vars
+Description: Implements wild bootstrap tests for autocorrelation in Vector
+    Autoregressive (VAR) models based on Ahlgren and Catani (2016)
+    <doi:10.1007/s00362-016-0744-0>, a combined Lagrange Multiplier (LM)
+    test for Autoregressive Conditional Heteroskedasticity (ARCH) in VAR
+    models from Catani and Ahlgren (2016) <doi:10.1016/j.ecosta.2016.10.006>,
+    and bootstrap-based methods for determining the cointegration rank from
+    Cavaliere, Rahbek, and Taylor (2012) <doi:10.3982/ECTA9099> and
+    Cavaliere, Rahbek, and Taylor (2014) <doi:10.1080/07474938.2013.825175>.
+LazyData: yes
+NeedsCompilation: yes
+Encoding: UTF-8
+License: GPL (>= 3)
+Packaged: 2025-07-23 10:26:39 UTC; Markus
+Author: Markus Belfrage [aut, cre],
+  Paul Catani [ctb],
+  Niklas Ahlgren [ctb]
+Maintainer: Markus Belfrage <markus.belfrage@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-25 09:40:02 UTC

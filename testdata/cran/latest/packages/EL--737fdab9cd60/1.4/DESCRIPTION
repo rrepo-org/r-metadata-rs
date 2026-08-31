@@ -1,0 +1,34 @@
+Package: EL
+Version: 1.4
+Date: 2026-05-11
+Title: Two-Sample Empirical Likelihood
+Authors@R: c(
+    person("Janis", "Valeinis", role = "aut", email = "janis.valeinis@lu.lv", comment = c(ORCID = "0000-0003-0989-0444")),
+    person("Edmunds", "Cers", role = "aut", email = "edmunds.cers@gmail.com"),
+    person("Janis", "Gredzens", role = "cre", email = "janis.gredzens@lu.lv", comment = c(ORCID = "0009-0009-4890-4897")),
+    person("Reinis", "Alksnis", role = "ctb", email = "reinis.alksnis@lu.lv", comment = c(ORCID = "0000-0002-5512-5463")))
+License: GPL (>= 2)
+Description: Empirical likelihood (EL) inference for two-sample problems.
+    The following statistics are included: the difference of two-sample means,
+    smooth Huber estimators, quantile (qdiff) and cumulative distribution
+    functions (fdiff), probability-probability (P-P) and quantile-quantile
+    (Q-Q) plots as well as receiver operating characteristic (ROC) curves.
+    Also includes two-sample block-wise empirical likelihood (BEL) and a
+    frequency-domain empirical likelihood test for autocorrelation differences
+    (FDEL). Methods for EL, P-P, Q-Q, ROC, qdiff and fdiff are based on
+    Valeinis and Cers (2011)
+    <http://home.lu.lv/~valeinis/lv/petnieciba/EL_TwoSample_2011.pdf>.
+Maintainer: Janis Gredzens <janis.gredzens@lu.lv>
+NeedsCompilation: yes
+RoxygenNote: 8.0.0
+Encoding: UTF-8
+Imports: stats, nleqslv, ggplot2
+Language: en-US
+Suggests: spelling
+Packaged: 2026-05-11 21:10:22 UTC; gredz
+Author: Janis Valeinis [aut] (ORCID: <https://orcid.org/0000-0003-0989-0444>),
+  Edmunds Cers [aut],
+  Janis Gredzens [cre] (ORCID: <https://orcid.org/0009-0009-4890-4897>),
+  Reinis Alksnis [ctb] (ORCID: <https://orcid.org/0000-0002-5512-5463>)
+Repository: CRAN
+Date/Publication: 2026-05-12 18:41:01 UTC

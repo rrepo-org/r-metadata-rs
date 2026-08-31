@@ -1,0 +1,71 @@
+Package: telegramR
+Type: Package
+Title: Interact with the 'Telegram' 'MTProto' API
+Version: 0.0.1
+Authors@R: c(
+    person(
+      "Roman", "Kyrychenko",
+      email = "roman.kyrychenko@helsinki.fi",
+      role = c("aut", "cre", "cph")
+    )
+  )
+Description: Provides a full-featured client for the 'Telegram' 'MTProto' protocol
+    (<https://core.telegram.org/api>), enabling programmatic access to 'Telegram'
+    chats, channels, messages, media, and stories. Implements binary encoding and
+    decoding of the 'Telegram' 'TL' (Type Language) schema, authentication
+    (including two-factor), encrypted transport, and high-level helpers for
+    downloading channel history and reactions at scale. Intended for
+    social-science research and data collection tasks that require direct API
+    access rather than the 'Bot API'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+ByteCompile: no
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.0), digest (>= 0.6.37), openssl (>= 2.2.2),
+        base64enc (>= 0.1-3), jsonlite (>= 1.8.9), R6, future, httr,
+        logger, promises, later, bitops, gmp, xml2, mime, tibble,
+        dplyr, callr
+LinkingTo: Rcpp
+Suggests: data.table, testthat (>= 3.0.0), withr, exiftoolr, fs,
+        getPass, magick, knitr, rmarkdown, ggplot2, lubridate, tidyr,
+        covr, devtools, readr, stringr, stopwords, RColorBrewer,
+        scales, stringi
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Collate: 'RcppExports.R' 'abstract.R' 'account.R' 'add_user_to_chat.R'
+        'aes.R' 'aesctr.R' 'authentificator.R' 'authkey.R'
+        'binaryreader.R' 'channel_downloads.R' 'tlobject.R' 'types.R'
+        'chats.R' 'common.R' 'compat_promises.R' 'connection.R'
+        'dialogs.R' 'downloads.R' 'entitycache.R' 'factorization.R'
+        'functions.R' 'functions_account.R' 'functions_auth.R'
+        'functions_bots.R' 'functions_channels.R'
+        'functions_chatlists.R' 'functions_contacts.R'
+        'functions_folders.R' 'functions_fragment.R' 'functions_help.R'
+        'functions_langpack.R' 'functions_messages.R'
+        'functions_payments.R' 'functions_phone.R' 'functions_photos.R'
+        'functions_premium.R' 'functions_smsjobs.R' 'functions_stats.R'
+        'functions_stickers.R' 'functions_stories.R'
+        'functions_updates.R' 'functions_upload.R' 'functions_users.R'
+        'gzippacked.R' 'helpers.R' 'html.R' 'http.R' 'libssl.R'
+        'join_channel.R' 'markdown.R' 'messagecontainer.R'
+        'messagepacker.R' 'messageparse.R' 'messages.R'
+        'mtprotoplainsender.R' 'mtprotosender.R' 'mtprotostate.R'
+        'namespace.R' 'password.R' 'phone_number_checker.R'
+        'requestiter.R' 'requests.R' 'requeststate.R' 'rpcresult.R'
+        'rsa.R' 'send_audio.R' 'send_document.R' 'send_file.R'
+        'send_message.R' 'send_photo.R' 'send_video.R' 'tcpabridget.R'
+        'tcpfull.R' 'tcpintermediate.R' 'tcpmtproxy.R'
+        'tcpobfuscated.R' 'telegrambaseclient.R' 'telegramclient.R'
+        'tlmessage.R' 'updates.R' 'users_profile.R' 'utils.R'
+        'check_invite_link.R' 'increase_view_count.R' 'utils_bridge.R'
+        'zzz.R'
+URL: https://romankyrychenko.github.io/telegramR/,
+        https://github.com/RomanKyrychenko/telegramR
+BugReports: https://github.com/RomanKyrychenko/telegramR/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-05-29 05:44:10 UTC; romankyrychenko
+Author: Roman Kyrychenko [aut, cre, cph]
+Maintainer: Roman Kyrychenko <roman.kyrychenko@helsinki.fi>
+Repository: CRAN
+Date/Publication: 2026-06-02 08:00:02 UTC

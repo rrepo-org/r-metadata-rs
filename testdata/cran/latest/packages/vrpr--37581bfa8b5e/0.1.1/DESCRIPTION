@@ -1,0 +1,49 @@
+Package: vrpr
+Title: Vehicle Routing Problem Solver Built on 'PyVRP'
+Version: 0.1.1
+Authors@R: c(
+    person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+    person("Marcos", "Wasilew", email = "marcos.wasilew@gmail.com", role = "aut"),
+    person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+    person("Carlos", "Amorim", email = "carlos.agaf@ufpe.br", role = "aut"),
+    person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"),
+    person("Niels", "Wouda", role = c("ctb", "cph"),
+           comment = "author of the vendored PyVRP C++ core"),
+    person("Thibaut", "Vidal", role = "cph",
+           comment = "HGS-CVRP, parts of the vendored C++ core"),
+    person("ORTEC", role = "cph",
+           comment = "HGS-DIMACS, parts of the vendored C++ core")
+  )
+Description: A 'tidyverse'-style interface to high-performance vehicle routing
+    problem (VRP) solving. Vendors the C++ core of the 'PyVRP' solver
+    (<https://github.com/PyVRP/PyVRP>) and rewires it through 'cpp11', with no
+    'Python' runtime dependency. Supports the capacitated VRP, time windows,
+    multiple depots, heterogeneous fleets, prize-collecting and multi-trip
+    variants, driven by an iterated local search metaheuristic.
+License: MIT + file LICENSE
+URL: https://github.com/StrategicProjects/vrpr,
+        https://strategicprojects.github.io/vrpr/
+BugReports: https://github.com/StrategicProjects/vrpr/issues
+Encoding: UTF-8
+Depends: R (>= 4.3)
+Imports: cli, rlang, stats, tibble, vctrs
+LinkingTo: cpp11
+Suggests: ggplot2, knitr, reticulate, rmarkdown, testthat (>= 3.0.0),
+        withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+SystemRequirements: C++20, GNU make
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-26 20:51:35 UTC; leite
+Author: Andre Leite [aut, cre],
+  Marcos Wasilew [aut],
+  Hugo Vasconcelos [aut],
+  Carlos Amorim [aut],
+  Diogo Bezerra [aut],
+  Niels Wouda [ctb, cph] (author of the vendored PyVRP C++ core),
+  Thibaut Vidal [cph] (HGS-CVRP, parts of the vendored C++ core),
+  ORTEC [cph] (HGS-DIMACS, parts of the vendored C++ core)
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-08-27 12:00:02 UTC

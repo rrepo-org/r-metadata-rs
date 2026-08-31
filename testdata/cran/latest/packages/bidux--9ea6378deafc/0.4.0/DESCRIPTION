@@ -1,0 +1,38 @@
+Package: bidux
+Title: Behavioral Insight Design: A Toolkit for Integrating Behavioral
+        Science in UI/UX Design
+Version: 0.4.0
+Authors@R: 
+    person(
+        given = "Jeremy",
+        family = "Winget",
+        role = c("aut", "cre"),
+        email="contact@jrwinget.com",
+        comment = c(ORCID = "0000-0002-3783-4354")
+    )
+Description: Provides a framework and toolkit to guide R dashboard developers in
+    implementing the Behavioral Insight Design (BID) framework. The package offers
+    functions for documenting each of the five stages (Interpret, Notice,
+    Anticipate, Structure, and Validate), along with a comprehensive concept
+    dictionary. Works with both 'shiny' applications and 'Quarto' dashboards.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.3
+Imports: cli, DBI, dplyr, glue, janitor, jsonlite, memoise, readr (>=
+        2.1.5), rlang, RSQLite, stats, stringdist (>= 0.9.15), tibble
+        (>= 3.2.1), tools, utils
+Suggests: DiagrammeR, knitr, otel, otelsdk, rmarkdown, spelling,
+        testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+URL: https://jrwinget.github.io/bidux/
+BugReports: https://github.com/jrwinget/bidux/issues
+NeedsCompilation: no
+Packaged: 2026-02-27 21:39:12 UTC; user
+Author: Jeremy Winget [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3783-4354>)
+Maintainer: Jeremy Winget <contact@jrwinget.com>
+Repository: CRAN
+Date/Publication: 2026-02-27 22:02:06 UTC

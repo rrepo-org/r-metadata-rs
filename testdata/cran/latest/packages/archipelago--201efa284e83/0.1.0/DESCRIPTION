@@ -1,0 +1,35 @@
+Package: archipelago
+Title: Visualising Variant Set Association Test Results
+Version: 0.1.0
+License: MIT + file LICENSE
+Language: en-GB
+Authors@R: 
+    person(
+        given = "Dylan",
+        family = "Lawless",
+        email = "admin@switzerlandomics.ch",
+        role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0000-0001-8496-3725")
+    )
+Description: Provides a graphical method for joint visualisation of
+    Variant Set Association Test (VSAT) results and individual variant
+    association statistics. The Archipelago method assigns genomic
+    coordinates to variant set statistics, allowing simultaneous display
+    of variant-level and set-level signals in a unified plot. This supports
+    interpretation of both collective and individual variant contributions
+    in genetic association studies using variant aggregation approaches. For more see Lawless et al. (2026) <doi:10.1002/gepi.70025>. 
+Encoding: UTF-8
+Imports: ggplot2, dplyr
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-02-07 16:48:28 UTC; akira
+Author: Dylan Lawless [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8496-3725>)
+Maintainer: Dylan Lawless <admin@switzerlandomics.ch>
+Repository: CRAN
+Date/Publication: 2026-02-10 21:00:02 UTC

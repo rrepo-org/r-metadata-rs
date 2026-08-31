@@ -1,0 +1,31 @@
+Package: ROCket
+Type: Package
+Title: Simple and Fast ROC Curves
+Version: 1.0.3
+Authors@R: person("Daniel", "Lazar", email = "da-zar@gmx.net", role = c("aut", "cre"))
+Description: A set of functions for receiver operating characteristic (ROC) curve 
+    estimation and area under the curve (AUC) calculation.
+    All functions are designed to work with aggregated data; 
+    nevertheless, they can also handle raw samples. 
+    In 'ROCket', we distinguish two types of ROC curve representations:
+    1) parametric curves - the true positive rate (TPR) and the false positive rate (FPR) 
+    are functions of a parameter (the score),
+    2) functions - TPR is a function of FPR.
+    There are several ROC curve estimation methods available. An introduction to 
+    the mathematical background of the implemented methods (and much more) can be found in 
+    de Zea Bermudez, Gonçalves, Oliveira & Subtil (2014) and Cai & Pepe (2004).
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/da-zar/ROCket
+BugReports: https://github.com/da-zar/ROCket/issues
+Imports: data.table (>= 1.13.0)
+Suggests: testthat
+RoxygenNote: 7.2.0
+Collate: 'ROCket.R' 'generics.R' 'auc.R' 'mwu.R' 'rkt_ecdf.R'
+        'rkt_prep.R' 'rkt_roc.R' 'roc_methods.R' 'utils.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2025-05-09 16:06:52 UTC; daniel
+Author: Daniel Lazar [aut, cre]
+Maintainer: Daniel Lazar <da-zar@gmx.net>
+Repository: CRAN
+Date/Publication: 2025-05-09 16:20:05 UTC

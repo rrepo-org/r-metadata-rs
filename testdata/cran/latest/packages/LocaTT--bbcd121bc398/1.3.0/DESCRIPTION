@@ -1,0 +1,34 @@
+Package: LocaTT
+Title: Geographically-Conscious Taxonomic Assignment for Metabarcoding
+Version: 1.3.0
+Authors@R: c(
+    person(given="Kenen B", family="Goodwin",
+           email="urodelan@gmail.com", role=c("aut","cre"),
+           comment=c(ORCID="0000-0002-9219-7693")),
+    person(given="Christopher", family="Cousins", role="ctb"),
+    person(given="Taal", family="Levi", role="ctb"),
+    person(given="Tiffany S", family="Garcia", role="ths")
+    )
+Description: A bioinformatics pipeline for performing taxonomic
+    assignment of DNA metabarcoding sequence data while considering
+    geographic location. A detailed tutorial is available at
+    <https://urodelan.github.io/LocaTT_Tutorial/>.
+    A manuscript describing these methods is in preparation.
+License: GPL (>= 3)
+URL: https://github.com/Urodelan/LocaTT
+BugReports: https://github.com/Urodelan/LocaTT/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: utils, stats, parallel
+Suggests: taxize, rstan
+NeedsCompilation: no
+Packaged: 2026-06-13 17:10:53 UTC; kenengoodwin
+Author: Kenen B Goodwin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9219-7693>),
+  Christopher Cousins [ctb],
+  Taal Levi [ctb],
+  Tiffany S Garcia [ths]
+Maintainer: Kenen B Goodwin <urodelan@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-13 17:30:02 UTC

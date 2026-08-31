@@ -1,0 +1,32 @@
+Package: kernelPhil
+Title: Kernel Smoothing Tools for Philology and Historical Dialectology
+Version: 0.2
+Authors@R: 
+    person(given = "Tamsin",
+           family = "Blaxter",
+           role = c("aut", "cre"),
+           email = "tamsinblaxter@gmail.com",
+           comment = c(ORCID = "0000-0002-1466-8306"))
+URL: http://www.icge.co.uk/
+Description: Contains kernel smoothing tools designed for use by historical
+    dialectologists and philologists for exploring spatial and temporal patterns
+    in noisy historical language data, such as that obtained from historical texts.
+    The main way in which these might differ from other implementations of kernel
+    smoothing is that they assume that the function (linguistic variable) being
+    explored has the form of the relative frequency of a series of discrete
+    possibilities (linguistic variants). This package also offers a way of exploring
+    distributions in 2-dimensional space and in time with separate kernels, and
+    tools for identifying appropriate bandwidths for these.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: benchmarkme, directlabels, dplyr, ggplot2, grDevices,
+        gridExtra, Hmisc, pbapply, reshape2, rlang, stats, terra,
+        utils, wordspace
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-11-09 17:37:11 UTC; tamsinn
+Author: Tamsin Blaxter [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1466-8306>)
+Maintainer: Tamsin Blaxter <tamsinblaxter@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-12 21:10:02 UTC

@@ -1,0 +1,25 @@
+Package: vismeteor
+Type: Package
+Title: Analysis of Visual Meteor Data
+Version: 3.0.1
+Authors@R: c(person("Janko", "Richter", role = c("aut", "cre"), email = "janko@richtej.de"))
+Author: Janko Richter [aut, cre]
+Maintainer: Janko Richter <janko@richtej.de>
+Description: Provides a suite of analytical functionalities to process and analyze
+    visual meteor observations from the Visual Meteor Database
+    of the International Meteor Organization <https://www.imo.net/>.
+License: MIT + file LICENSE
+URL: https://github.com/jankorichter/vismeteor
+BugReports: https://github.com/jankorichter/vismeteor/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: methods, stats, httr2 (>= 1.0.0)
+Suggests: testthat (>= 3.2.0), httptest2, knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-19 18:05:10 UTC; j.richter
+Repository: CRAN
+Date/Publication: 2026-05-19 21:30:02 UTC

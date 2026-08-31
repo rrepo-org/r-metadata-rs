@@ -1,0 +1,42 @@
+Package: SelectBoost.gamlss
+Type: Package
+Title: Stability-Selection via Correlated Resampling for 'GAMLSS'
+        Models
+Version: 0.2.2
+Date: 2025-11-20
+Depends: R (>= 4.1.0)
+Imports: gamlss, Rcpp, rlang, SelectBoost, stats, utils
+Suggests: doParallel, foreach, future, future.apply, gamlss.data,
+        gamlss.dist, ggplot2, glmnet, grpreg, knitr, knockoff, MASS,
+        microbenchmark, nlme, parallel, pkgdown, pscl, rmarkdown, SGL,
+        testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+Authors@R: c(
+	person(given = "Frederic", family= "Bertrand", role = c("cre", "aut"), 
+	email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281")))
+Author: Frederic Bertrand [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-0837-8281>)
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
+Description: Extends the 'SelectBoost' approach to Generalized Additive Models for
+    Location, Scale and Shape (GAMLSS). Implements bootstrap stability-selection
+    across parameter-specific formulas (mu, sigma, nu, tau) via gamlss::stepGAIC().
+    Includes optional standardization of predictors and helper functions for
+    corrected AIC calculation. More details can be found in Bertrand and Maumy (2024) 
+    <https://hal.science/hal-05352041> that highlights correlation-aware resampling to improve
+    variable selection for GAMLSS and quantile regression when predictors are
+    numerous and highly correlated.
+License: GPL-3
+Encoding: UTF-8
+Classification/MSC: 62H11, 62J12, 62J99
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+URL: https://fbertran.github.io/SelectBoost.gamlss/,
+        https://github.com/fbertran/SelectBoost.gamlss
+BugReports: https://github.com/fbertran/SelectBoost.gamlss/issues
+Config/testthat/edition: 3
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2025-11-21 00:44:35 UTC; bertran7
+Repository: CRAN
+Date/Publication: 2025-11-25 20:22:11 UTC

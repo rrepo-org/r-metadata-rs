@@ -1,0 +1,44 @@
+Package: confoundvis
+Type: Package
+Title: Visualization Tools for Sensitivity Analysis of Unmeasured
+        Confounding
+Version: 0.1.0
+Authors@R: 
+    person(
+      given = "Subir",
+      family = "Hait",
+      role = c("aut", "cre"),
+      email = "haitsubi@msu.edu",
+      comment = c(ORCID = "0009-0004-9871-9677")
+    )
+Description: Provides visualization tools for sensitivity analysis to
+    unmeasured confounding in observational studies. Includes contour-based
+    sensitivity plots, robustness curves, and benchmark-oriented graphics
+    that help researchers assess how strong omitted confounding would need
+    to be to attenuate, invalidate, or reverse estimated effects. Supports
+    regression-based sensitivity analysis frameworks, including impact
+    threshold approaches (Frank, 2000,
+    <doi:10.1177/0049124100029002001>), partial R-squared methods
+    (Cinelli and Hazlett, 2020, <doi:10.1111/rssb.12348>), and E-value
+    style metrics (VanderWeele and Ding, 2017,
+    <doi:10.7326/M16-2607>). Emphasizes clear, interpretable, and
+    publication-ready graphical summaries for transparent reporting of
+    causal sensitivity analyses across the social, behavioral, health,
+    and educational sciences.
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: ggplot2 (>= 3.4.0), rlang, graphics, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, gridExtra
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/causalfragility-lab/confoundvis
+BugReports: https://github.com/causalfragility-lab/confoundvis/issues
+NeedsCompilation: no
+Packaged: 2026-03-25 13:24:31 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-03-30 09:30:26 UTC

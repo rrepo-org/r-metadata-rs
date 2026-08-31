@@ -1,0 +1,37 @@
+Package: ggincerta
+Title: Extend 'ggplot2' with Layers and Scales for Spatial Uncertainty
+        Visualization
+Version: 0.2.0
+Authors@R: 
+    c(person("Xueqi", "Ma", , "maggiexma07@gmail.com", role = c("aut", "cre", "cph")),
+      person("Emi", "Tanaka", , "dr.emi.tanaka@gmail.com", role = c("aut", "ths"),
+             comment = c(ORCID = "0000-0002-1455-259X")),
+      person(given = "Weihao", family = "Li", role = c("ths"),
+             email = "llreczx@gmail.com", comment = c(ORCID = "0000-0003-4959-106X")),
+      person("Quan", "Vu", , role = c("ths")),
+      person("Francis", "Hui", , role = c("ths"), 
+             email = "fhui28@gmail.com", comment = c(ORCID = "0000-0003-0765-3533")))
+Description: Provide specialized 'ggplot2' layers and scales for spatial
+    uncertainty visualization, including bivariate choropleth maps, pixel maps,
+    glyph maps, and exceedance probability maps.
+Imports: cli, colorspace, dplyr, grDevices, grid, gtable, purrr, rlang,
+        scales, sf, withr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: ggChernoff, testthat (>= 3.0.0), vdiffr
+Config/testthat/edition: 3
+Depends: ggplot2 (>= 3.5.0), R (>= 4.1.0)
+LazyData: true
+URL: https://github.com/maggiexma/ggincerta
+BugReports: https://github.com/maggiexma/ggincerta/issues
+NeedsCompilation: no
+Packaged: 2026-05-25 04:21:27 UTC; maxueqi
+Author: Xueqi Ma [aut, cre, cph],
+  Emi Tanaka [aut, ths] (ORCID: <https://orcid.org/0000-0002-1455-259X>),
+  Weihao Li [ths] (ORCID: <https://orcid.org/0000-0003-4959-106X>),
+  Quan Vu [ths],
+  Francis Hui [ths] (ORCID: <https://orcid.org/0000-0003-0765-3533>)
+Maintainer: Xueqi Ma <maggiexma07@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-25 04:30:02 UTC

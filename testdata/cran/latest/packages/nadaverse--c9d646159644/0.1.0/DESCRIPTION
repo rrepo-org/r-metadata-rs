@@ -1,0 +1,37 @@
+Package: nadaverse
+Type: Package
+Title: Browse Microdata Catalogs Using 'NADA' REST API
+Version: 0.1.0
+Date: 2025-11-18
+Authors@R: c(
+    person(
+      "Gutama Girja", "Urago",
+      email = "girjagutama@gmail.com",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0001-5588-2301")
+    )
+  )
+Description: Provides a unified, programmatic interface for searching, browsing,
+  and retrieving metadata from various international organization data repositories
+  that use the National Data Archive ('NADA') software, such as the World Bank,
+  'FAO', and the International Household Survey Network ('IHSN'). Functions allow users to
+  discover available data collections, country codes, and access types, perform
+  complex searches using keyword and spatial/temporal filters, and retrieve
+  detailed study information, including file lists and variable-level data
+  dictionaries. It simplifies access to microdata for researchers and policy
+  analysts globally.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: cli, httr2
+RoxygenNote: 7.3.2
+URL: https://github.com/guturago/nadaverse
+BugReports: https://github.com/guturago/nadaverse/issues
+Suggests: httptest2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-06 19:11:17 UTC; Gute
+Author: Gutama Girja Urago [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5588-2301>)
+Maintainer: Gutama Girja Urago <girjagutama@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-11 13:50:07 UTC

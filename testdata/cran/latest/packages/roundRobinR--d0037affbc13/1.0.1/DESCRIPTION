@@ -1,0 +1,39 @@
+Package: roundRobinR
+Title: Manipulate and Analyze Round Robin Dyadic Data
+Version: 1.0.1
+Authors@R: 
+    person(given = "Andrew",
+           family = "Knight",
+           role = c("aut", "cre", "cph"),
+           email = "knightap@wustl.edu",
+           comment = c(ORCID = "0000-0001-6700-1903"))
+Description: Provides utilities for processing and analyzing dyadic data
+    collected using a round-robin design, in which each person in a group
+    rates or interacts with every other person on at least one variable.
+    Data manipulation functions prepare datasets for dyadic data analysis by
+    creating the actor and partner dummy variables required by the social
+    relations model (SRM). Analysis functions implement the SRM using
+    multilevel modeling via a custom 'nlme' covariance class ('pdSRM'),
+    following the approach of Snijders and Kenny (1999)
+    <doi:10.1111/j.1475-6811.1999.tb00204.x> and Knight and Humphrey (2019)
+    <doi:10.1037/0000115-019>. The package estimates group, actor, partner,
+    and relationship variance components along with generalized and dyadic
+    reciprocity correlations, and supports both null and fixed-effects models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: data.table (>= 1.14.0), nlme (>= 3.1-150), stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/andrewpknight/roundRobinR
+BugReports: https://github.com/andrewpknight/roundRobinR/issues
+NeedsCompilation: no
+Packaged: 2026-04-16 19:01:32 UTC; apk
+Author: Andrew Knight [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-6700-1903>)
+Maintainer: Andrew Knight <knightap@wustl.edu>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:52:23 UTC

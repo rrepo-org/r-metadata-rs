@@ -1,0 +1,40 @@
+Package: rolescry
+Title: Name-Blind Variable-Role Detection by Data Signature
+Version: 0.2.0
+Authors@R: c(
+    person("Can", "Boynukara", role = c("aut", "cre", "cph"),
+           email = "canboynukara1@gmail.com",
+           comment = c(ORCID = "0000-0002-6075-3923")),
+    person(c("M.", "Yasir"), "Ceyhan", role = "ctb",
+           comment = c(ORCID = "0009-0008-0985-9838")))
+Description: Deterministic, name-blind detection of variable roles (group,
+    outcome, survival time and event, paired and agreement measurements,
+    repeated measures, scale items, subject identifier, covariate) in tabular
+    data. Roles are assigned from each column's information-theoretic signature
+    -- Shannon entropy, normalized mutual information, and distributional shape
+    -- rather than from column names, so renaming columns to 'col_1', 'col_2',
+    ... does not change the result ("Data inspice, non nomen"). An optional,
+    capped name-based hint and automatic header-row detection are also provided.
+    No large language models and no external data transmission. Extracted from
+    the 'MDStatR' biostatistics engine; see Boynukara (2026)
+    <doi:10.5281/zenodo.20707791>.
+License: Apache License (== 2.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, utils
+Suggests: moments, diptest, stringdist, readxl, openxlsx, haven,
+        testthat (>= 3.0.0), knitr, rmarkdown, spelling
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/canboynukara/rolescry
+BugReports: https://github.com/canboynukara/rolescry/issues
+Language: en-US
+NeedsCompilation: no
+Author: Can Boynukara [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6075-3923>),
+  M. Yasir Ceyhan [ctb] (ORCID: <https://orcid.org/0009-0008-0985-9838>)
+Maintainer: Can Boynukara <canboynukara1@gmail.com>
+Packaged: 2026-07-19 17:55:36 UTC; cboyn
+Repository: CRAN
+Date/Publication: 2026-07-19 18:50:02 UTC

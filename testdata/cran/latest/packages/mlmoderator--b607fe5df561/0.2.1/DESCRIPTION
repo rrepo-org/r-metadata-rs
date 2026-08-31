@@ -1,0 +1,49 @@
+Package: mlmoderator
+Type: Package
+Title: Probing, Plotting, and Interpreting Multilevel Interaction
+        Effects
+Version: 0.2.1
+Authors@R: 
+    person(
+      given   = "Subir",
+      family  = "Hait",
+      role    = c("aut", "cre"),
+      email   = "haitsubi@msu.edu",
+      comment = c(ORCID = "0009-0004-9871-9677")
+    )
+Description: Provides a unified workflow for probing, plotting, and assessing
+    the robustness of cross-level interaction effects in two-level mixed-effects
+    models fitted with 'lme4' (Bates et al., 2015)
+    <doi:10.18637/jss.v067.i01>. Implements simple slopes analysis following
+    Aiken and West (1991, ISBN:9780761907121), Johnson-Neyman intervals
+    following Johnson and Fay (1950) <doi:10.1007/BF02288864> and Bauer
+    and Curran (2005) <doi:10.1207/s15327906mbr4003_5>, and grand- or
+    group-mean centering as described in Enders and Tofighi (2007)
+    <doi:10.1037/1082-989X.12.2.121>. Includes a slope variance decomposition
+    that separates fixed-effect uncertainty from random-slope variance
+    (tau11), a contour surface plot of predicted outcomes over the full
+    predictor-by-moderator space, and robustness diagnostics comprising
+    intraclass correlation coefficient shift analysis and
+    leave-one-cluster-out (LOCO) stability checks. Designed for researchers
+    in education, psychology, biostatistics, epidemiology, organizational
+    science, and other fields where outcomes are clustered within
+    higher-level units.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: lme4, ggplot2, stats, utils, grDevices, rlang
+Suggests: testthat (>= 3.0.0), dplyr, tibble, knitr, rmarkdown,
+        patchwork
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/causalfragility-lab/mlmoderator
+BugReports: https://github.com/causalfragility-lab/mlmoderator/issues
+NeedsCompilation: no
+Packaged: 2026-04-03 22:42:05 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-03 23:40:01 UTC

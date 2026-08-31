@@ -1,0 +1,25 @@
+Package: evalHTE
+Title: Evaluating Heterogeneous Treatment Effects
+Version: 0.1.1
+Authors@R: c(
+    person("Michael Lingzhi", "Li", email = "mili@hbs.edu", role = c("aut", "cre")),
+    person("Kosuke", "Imai", email = "imai@harvard.edu", role = "aut"),
+    person("Jialu", "Li",  email = "jialu_li@g.harvard.edu", role = "ctb")
+  )
+Description: Provides various statistical methods for evaluating heterogeneous treatment effects (HTE) in randomized experiments. The package includes tools to estimate uniform confidence bands for estimation of the group average treatment effect sorted by generic machine learning algorithms (GATES). It also provides the tools to identify a subgroup of individuals who are likely to benefit from a treatment the most "exceptional responders" or those who are harmed by it. Detailed reference in Imai and Li (2023) <doi:10.48550/arXiv.2310.07973>.
+License: MIT + file LICENSE
+Depends: R (>= 3.50), dplyr (>= 1.0.10)
+Imports: cli, evalITR, ggplot2, ggthemes, rlang, zoo, furrr, ggdist,
+        scales, tidyr, stats, purrr, Matrix, MASS, quadprog, caret
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, future, grf, magrittr, tibble
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-02 01:41:36 UTC; michaelli
+Author: Michael Lingzhi Li [aut, cre],
+  Kosuke Imai [aut],
+  Jialu Li [ctb]
+Maintainer: Michael Lingzhi Li <mili@hbs.edu>
+Repository: CRAN
+Date/Publication: 2026-02-03 09:00:02 UTC

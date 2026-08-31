@@ -1,0 +1,25 @@
+Package: cowfootR
+Type: Package
+Title: Dairy Farm Carbon Footprint Assessment
+Version: 0.1.3
+Authors@R: 
+    person("Juan", "Moreno", email = "juanmarcosmoreno@gmail.com", role = c("aut", "cre"))
+Description: Calculates the carbon footprint of dairy farms based on methodologies of the International Dairy Federation and the Intergovernmental Panel on Climate Change. Includes tools for single-farm and batch analysis, report generation, and visualization. Methods follow International Dairy Federation (2022) "The IDF global Carbon Footprint standard for the dairy sector" (Bulletin of the IDF n° 520/2022) <doi:10.56169/FKRK7166> and IPCC (2019) "2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Chapter 10: Emissions from Livestock and Manure Management" <https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/4_Volume4/19R_V4_Ch10_Livestock.pdf> guidelines.
+License: MIT + file LICENSE
+URL: https://github.com/juanmarcosmoreno-arch/cowfootR,
+        https://juanmarcosmoreno-arch.github.io/cowfootR/
+BugReports: https://github.com/juanmarcosmoreno-arch/cowfootR/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: writexl
+Suggests: testthat, knitr, readxl, rmarkdown, plotly, gt, dplyr,
+        ggplot2, tidyr, withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-13 12:53:31 UTC; juanmoreno
+Author: Juan Moreno [aut, cre]
+Maintainer: Juan Moreno <juanmarcosmoreno@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-13 13:10:02 UTC

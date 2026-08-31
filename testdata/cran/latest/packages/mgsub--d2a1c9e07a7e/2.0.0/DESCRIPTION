@@ -1,0 +1,23 @@
+Package: mgsub
+Type: Package
+Title: Safe, Multiple, Simultaneous String Substitution
+Version: 2.0.0
+Authors@R: c(
+  person("Mark", "Ewing", email="b.mark.ewing@gmail.com", role=c("aut","cre"))
+  )
+BugReports: https://github.com/bmewing/mgsub/issues
+Description: Designed to enable simultaneous substitution in strings in a safe fashion.
+    Safe means it does not rely on placeholders (which can cause errors in same length matches).
+License: MIT + file LICENSE
+Encoding: UTF-8
+ByteCompile: true
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/bmewing/mgsub, https://bmewing.github.io/mgsub/
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-05 16:41:20 UTC; bmark
+Author: Mark Ewing [aut, cre]
+Maintainer: Mark Ewing <b.mark.ewing@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-06 05:10:16 UTC

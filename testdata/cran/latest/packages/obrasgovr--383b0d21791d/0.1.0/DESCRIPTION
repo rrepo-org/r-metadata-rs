@@ -1,0 +1,47 @@
+Package: obrasgovr
+Title: Access the 'ObrasGov' Open Data API
+Version: 0.1.0
+Authors@R: c(
+    person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4718-9766")),
+    person("Marcos", "Wasiliew", email = "marcos.wasiliew@sepe.pe.gov.br", role = "aut"),
+    person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut",
+           comment = c(ORCID = "0000-0001-6249-0920")),
+    person("Carlos", "Amorim", email = "carlos.agaf@ufpe.br", role = "aut",
+           comment = c(ORCID = "0000-0001-6315-8305")),
+    person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut",
+           comment = c(ORCID = "0000-0002-1216-8674"))
+  )
+Description: Provides a modern interface to the Brazilian federal
+    government's 'ObrasGov' open data application programming interface
+    (<https://api-publica.obrasgov.gestao.gov.br>). Retrieves data about
+    public infrastructure projects, physical execution, contracts,
+    commitments, geometries, feasibility studies, and project status
+    histories. Results are returned as tidy tibbles with typed date columns,
+    preserved nested relationships, pagination metadata, and optional
+    multi-page collection.
+License: MIT + file LICENSE
+URL: https://github.com/StrategicProjects/obrasgovr,
+        https://strategicprojects.github.io/obrasgovr/,
+        https://api-publica.obrasgov.gestao.gov.br/obras/docs
+BugReports: https://github.com/StrategicProjects/obrasgovr/issues
+Depends: R (>= 4.1.0)
+Imports: cli, httr2 (>= 1.2.2), purrr (>= 1.0.0), rlang (>= 1.1.0),
+        tibble (>= 3.2.0)
+Suggests: covr, dplyr, knitr, rmarkdown, testthat (>= 3.2.0), tidyr
+VignetteBuilder: knitr
+Config/Needs/website: pkgdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-16 19:26:18 UTC; leite
+Author: Andre Leite [aut, cre] (ORCID: <https://orcid.org/0000-0002-4718-9766>),
+  Marcos Wasiliew [aut],
+  Hugo Vasconcelos [aut] (ORCID: <https://orcid.org/0000-0001-6249-0920>),
+  Carlos Amorim [aut] (ORCID: <https://orcid.org/0000-0001-6315-8305>),
+  Diogo Bezerra [aut] (ORCID: <https://orcid.org/0000-0002-1216-8674>)
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-07-24 09:30:09 UTC

@@ -1,0 +1,37 @@
+Package: TheOrdinals
+Type: Package
+Title: Aggregation and Consensus Methods for Preference-Approvals
+Version: 0.1.0
+Authors@R: c(
+    person("Maurizio", "Romano", role = c("aut", "cre"),
+           email = "romano.maurizio@unica.it"),
+    person("Alessandro", "Albano", role = "aut",
+           email = "alessandro.albano@unipa.it"))
+Description: Tools for aggregating ordinal preference data into a group
+    consensus. The package implements DIVA (Divide and Conquer for
+    Preference-Approvals), a distance-based aggregation method for
+    preference-approvals, that is, preference data in which voters express
+    both a (weak) ranking and an approval of the alternatives. The consensus
+    is the preference-approval minimising the average distance to the set of
+    voters, measured through the family of distances of Erdamar, Garcia-Lapresta,
+    Perez-Roman and Sanver (2014) <doi:10.1016/j.mathsocsci.2013.10.005>.
+    Methods and applications are described in Albano and Romano (2026)
+    <doi:10.1007/s11634-025-00663-4>. The package is designed to be extended
+    with further methods for ordinal preference data.
+License: GPL-3
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 3.5.0)
+Imports: ConsRank
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-05 09:28:12 UTC; 39346
+Author: Maurizio Romano [aut, cre],
+  Alessandro Albano [aut]
+Maintainer: Maurizio Romano <romano.maurizio@unica.it>
+Repository: CRAN
+Date/Publication: 2026-07-11 09:00:07 UTC

@@ -1,0 +1,34 @@
+Package: MSclassifR
+Type: Package
+Title: Automated Classification of Mass Spectra
+Version: 0.5.0
+Authors@R: c(
+    person("Alexandre", "Godmer", role = c("aut", "cre"), email = "alexandre.godmer@aphp.fr"),
+    person("Quentin", "Giai Gianetto", role = "aut", email = "quentin.giaigianetto@pasteur.fr"),
+    person("Karen", "Druart", role = "aut")
+    )
+Maintainer: Alexandre Godmer <alexandre.godmer@aphp.fr>
+Description: Functions to classify mass spectra in known categories and to determine discriminant mass-to-charge values (m/z). Includes easy-to-use preprocessing pipelines for Matrix Assisted Laser Desorption Ionisation - Time Of Flight Mass Spectrometry (MALDI-TOF) mass spectra, methods to select discriminant m/z from labelled libraries, and tools to predict categories (species, phenotypes, etc.) from selected features. Also provides utilities to build design matrices from peak intensities and labels. While this package was developed with the aim of identifying very similar species or phenotypes of bacteria from  MALDI-TOF MS, the functions of this package can also be used to classify other categories associated to mass spectra; or from mass spectra obtained with other mass spectrometry techniques. Parallelized processing and optional C++-accelerated functions are available (notably to deal with large datasets) from version 0.5.0.  If you use this package in your research, please cite the associated publication (<doi:10.1016/j.eswa.2025.128796>). For a comprehensive guide, additional applications, and detailed examples, see <https://github.com/agodmer/MSclassifR_examples>.
+URL: https://github.com/agodmer/MSclassifR_examples,
+        https://doi.org/10.1016/j.eswa.2025.128796
+BugReports: https://github.com/agodmer/MSclassifR_examples/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Language: en-US
+Depends: R (>= 4.0), cp4p, caret, statmod, MALDIquant, MALDIrppa
+Imports: reshape2, ggplot2, dplyr, stats, limma, car, Rcpp, Matrix,
+        methods
+Suggests: doParallel, foreach, ranger, randomForest, mixOmics, VSURF,
+        vita, Boruta, glmnet, e1071, xgboost, nnet, mclust, mltools,
+        metap, MALDIquantForeign, matrixStats, rmarkdown
+LinkingTo: Rcpp
+NeedsCompilation: yes
+RoxygenNote: 7.3.1
+Packaged: 2025-12-09 10:29:48 UTC; alexa
+Author: Alexandre Godmer [aut, cre],
+  Quentin Giai Gianetto [aut],
+  Karen Druart [aut]
+ByteCompile: true
+Repository: CRAN
+Date/Publication: 2025-12-09 11:20:01 UTC

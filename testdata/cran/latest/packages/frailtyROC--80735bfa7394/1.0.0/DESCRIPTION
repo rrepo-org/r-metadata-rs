@@ -1,0 +1,33 @@
+Package: frailtyROC
+Type: Package
+Title: Time-Dependent ROC Curve Estimation for Correlated
+        Right-Censored Survival Data
+Version: 1.0.0
+Authors@R: c(person(given = "Kassu Mehari",
+           family = "Beyene",
+           role = c("aut", "cre"),
+           email = "m2kassu@gmail.com",
+           comment = c(ORCID = "0000-0002-2067-6054")),
+           person(given = "Ding-Geng",
+           family = "Chen",
+           role = "ctb")
+           )
+Description: This contains functions that can be used to estimate a smoothed and 
+              a non-smoothed (empirical) time-dependent receiver operating characteristic
+              curve and the corresponding area under the receiver operating characteristic
+              curve for correlated right-censored time-to-event data. See
+              Beyene and Chen (2024) <doi:10.1177/09622802231220496>.
+License: GPL (>= 2)
+Depends: R(>= 4.2)
+Imports: frailtypack, stats, survival, xpectr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-10-08 20:35:38 UTC; m2kas
+Author: Kassu Mehari Beyene [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2067-6054>),
+  Ding-Geng Chen [ctb]
+Maintainer: Kassu Mehari Beyene <m2kassu@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-14 18:20:09 UTC

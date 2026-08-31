@@ -1,0 +1,34 @@
+Package: survkl
+Title: Estimate Survival Data with Data Integration
+Version: 1.0.2
+URL: https://um-kevinhe.github.io/survkl/
+Authors@R: c(
+    person("Yubo","Shao",role=c("aut","cre"),email="ybshao@umich.edu"),
+    person("Lingfeng","Luo",role=c("aut"),email="lfluo@umich.edu"),
+    person("Xiaohan","Liu",role=c("aut"),email="xhliuu@umich.edu"),
+    person("Junyi","Qiu",role=c("aut"),email="junyiqiu@umich.edu"),
+    person("Di","Wang",role=c("aut"),email="dwwang@umich.edu"),
+    person("Kevin","He",role=c("aut"),email="kevinhe@umich.edu")
+  )
+Description: Provides flexible and efficient tools for integrating external risk scores into Cox proportional hazards models while accounting for population heterogeneity. Enables robust estimation, improved predictive accuracy, and user-friendly workflows for modern survival analysis. For more information, see Wang et al. (2023) <doi:10.48550/arXiv.2302.11123>.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+License: GPL-3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, ggplot2, stats, cowplot, Matrix, rlang
+Depends: R (>= 4.0)
+Suggests: knitr, rmarkdown, survival
+VignetteBuilder: knitr
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2026-07-02 03:02:14 UTC; emilyliu
+Author: Yubo Shao [aut, cre],
+  Lingfeng Luo [aut],
+  Xiaohan Liu [aut],
+  Junyi Qiu [aut],
+  Di Wang [aut],
+  Kevin He [aut]
+Maintainer: Yubo Shao <ybshao@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-07-02 06:10:02 UTC

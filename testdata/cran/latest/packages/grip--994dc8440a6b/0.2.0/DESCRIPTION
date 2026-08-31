@@ -1,0 +1,33 @@
+Package: grip
+Type: Package
+Title: Graph Drawing with Intelligent Placement (GRIP)
+Version: 0.2.0
+Authors@R: 
+    person("Pawel", "Gajer", , "pgajer@gmail.com", role = c("aut", "cre"))
+Description: Implements GRIP multiscale graph layout with a unified choice
+    between hop-count and geometry-aware edge-length graph metrics in 2D and
+    3D. Provides layout scoring, candidate
+    comparison, multiscale trace diagnostics, synthetic graph families,
+    and advanced experimental geodesic-KK utilities for weighted-layout
+    evaluation and polish. Based on Gajer and Kobourov (2002)
+    <doi:10.7155/jgaa.00052> and Gajer, Goodrich and Kobourov (2004)
+    <doi:10.1016/j.comgeo.2004.03.014>.
+License: GPL (>= 3)
+URL: https://pgajer.github.io/grip/, https://github.com/pgajer/grip
+BugReports: https://github.com/pgajer/grip/issues
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Rcpp
+Suggests: bslib, DT, FNN, geometry, igraph, htmltools, htmlwidgets,
+        knitr, later, rmarkdown, rgl, shiny, testthat (>= 3.0.0)
+LinkingTo: Rcpp
+SystemRequirements: C++17
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-29 23:29:17 UTC; pgajer
+Author: Pawel Gajer [aut, cre]
+Maintainer: Pawel Gajer <pgajer@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-31 16:10:09 UTC

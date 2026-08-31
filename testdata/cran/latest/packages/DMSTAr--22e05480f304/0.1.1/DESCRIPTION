@@ -1,0 +1,32 @@
+Package: DMSTAr
+Type: Package
+Title: Dynamic Model for Stormwater Treatment Areas
+Version: 0.1.1
+Date: 2026-07-23
+Authors@R: c(
+    person(
+        "Paul", "Julian",
+        role = c("aut", "cre"),
+        email = "pjulian@evergladesfoundation.org",
+        comment = c(ORCID = "0000-0002-7617-1354")
+    ))
+Maintainer: Paul Julian <pjulian@evergladesfoundation.org>
+URL: https://github.com/SwampThingPaul/DMSTAr
+BugReports: https://github.com/SwampThingPaul/DMSTAr/issues
+Description: Performs treatment wetland modeling consistent with the original 
+             'Excel' spreadsheet and VBA code version of DMSTA2 developed by
+             Dr. Bill Walker <http://wwwalker.net/dmsta/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: stats, utils
+Depends: R (>= 4.1.0)
+Suggests: knitr, rmarkdown, kableExtra, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-23 11:45:54 UTC; PaulJulian
+Author: Paul Julian [aut, cre] (ORCID: <https://orcid.org/0000-0002-7617-1354>)
+Repository: CRAN
+Date/Publication: 2026-08-02 16:30:18 UTC

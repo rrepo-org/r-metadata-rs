@@ -1,0 +1,26 @@
+Package: vectorsurvR
+Type: Package
+Title: Data Access and Analytical Tools for 'VectorSurv' Users
+Version: 1.6.3
+Authors@R: c(person("Christina", "De Cesaris", email = "cmdecesaris@ucdavis.edu", role = c("aut")),person("Lincoln", "Wells", email = "lcwells@ucdavus.edu", role = c("aut")),person("VectorSurv", "Staff", email = "help@vectorsurv.org", role = c("aut","cre")))
+Description: Allows registered 'VectorSurv' <https://vectorsurv.org/> users access to data through the 'VectorSurv API' <https://api.vectorsurv.org/>. Additionally provides functions for analysis and visualization.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: rstudioapi, jsonlite, kableExtra, knitr, lubridate, stringr,
+        httr2, tidyr, magrittr, DT, sf, scales, ggplot2, rlang,
+        leaflet, base64enc, viridis, leaflet.minicharts
+Suggests: testthat (>= 3.0.0), rmarkdown, devtools, mockery, webshot2,
+        htmlwidgets
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: dplyr, R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2026-03-05 03:29:42 UTC; Christina
+Author: Christina De Cesaris [aut],
+  Lincoln Wells [aut],
+  VectorSurv Staff [aut, cre]
+Maintainer: VectorSurv Staff <help@vectorsurv.org>
+Repository: CRAN
+Date/Publication: 2026-03-05 08:00:02 UTC

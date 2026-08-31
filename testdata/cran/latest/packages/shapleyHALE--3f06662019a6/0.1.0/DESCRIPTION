@@ -1,0 +1,29 @@
+Package: shapleyHALE
+Title: Shapley Value Decomposition of Health-Adjusted Life Expectancy
+Version: 0.1.0
+Authors@R: c(person("Jun-Yan", "Xi",
+                     email = "xijy3@mail2.sysu.edu.cn",
+                     role = c("aut", "cre"),
+                     comment = c(ORCID = "https://orcid.org/0000-0001-7473-7783",
+                                 affiliation = "Sun Yat-sen University")))
+Description: Implements a Shapley-value framework to decompose changes in
+    health-adjusted life expectancy (HALE) into additive contributions of
+    individual diseases or causes, fully accounting for higher-order interactions.
+    Separates mortality and disability effects and provides second-order Shapley
+    interaction indices. Uncertainty is propagated via parametric bootstrap.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: data.table, foreach, doParallel, stats
+Suggests: testthat (>= 3.0.0), ggplot2, knitr, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-21 05:25:11 UTC; admin
+Author: Jun-Yan Xi [aut, cre] (ORCID: <https://orcid.org/0000-0001-7473-7783>,
+    affiliation: Sun Yat-sen University)
+Maintainer: Jun-Yan Xi <xijy3@mail2.sysu.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-07-30 16:10:01 UTC

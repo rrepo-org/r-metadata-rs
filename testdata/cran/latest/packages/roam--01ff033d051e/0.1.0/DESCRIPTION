@@ -1,0 +1,34 @@
+Package: roam
+Title: Remote Objects with Active-Binding Magic
+Version: 0.1.0
+Authors@R: c(
+     person(given = "Mitchell",
+            family = "O'Hara-Wild",
+            email = "mail@mitchelloharawild.com",
+            role = c("aut"),
+            comment = c(ORCID = "0000-0001-6729-7695")),
+     person(given = "Yangzhuoran Fin", 
+            family = "Yang", 
+            email = "yangyangzhuoran@gmail.com", 
+            role = c("aut", "cre"),
+            comment = c(ORCID = "0000-0002-1232-8017"))
+     )
+Description: Provide helper functions for package developers to create 
+    active bindings that looks like data embedded in the package, but 
+    are downloaded from remote sources.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: rappdirs, utils
+Suggests: devtools, knitr, rmarkdown, testthat (>= 3.0.0), usethis
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-25 01:25:54 UTC; yangy
+Author: Mitchell O'Hara-Wild [aut] (ORCID:
+    <https://orcid.org/0000-0001-6729-7695>),
+  Yangzhuoran Fin Yang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1232-8017>)
+Maintainer: Yangzhuoran Fin Yang <yangyangzhuoran@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-29 16:40:03 UTC

@@ -1,0 +1,59 @@
+Package: freqTLS
+Title: Frequentist Inference for Thermal Load Sensitivity Models
+Version: 0.1.0
+Authors@R: c(
+    person("Shinichi", "Nakagawa", email = "itchyshin@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-7765-5182")),
+    person("Pieter A.", "Arnold", role = "aut",
+           comment = c(ORCID = "0000-0002-6158-7752",
+                       "co-author of the bayesTLS framework")),
+    person("Patrice", "Pottier", role = "aut",
+           comment = c(ORCID = "0000-0003-2106-6597",
+                       "co-author of the bayesTLS framework")),
+    person("Daniel W. A.", "Noble", role = "aut",
+           comment = c(ORCID = "0000-0001-9460-8743",
+                       "senior author of the bayesTLS thermal-load-sensitivity framework")))
+Description: A maximum-likelihood implementation of the thermal-load-sensitivity
+    framework for thermal death-time modelling introduced by Noble, Arnold and
+    Pottier in the 'bayesTLS' package, providing the frequentist counterpart to
+    that Bayesian workflow. The modelling idea and the four-parameter logistic
+    parameterisation are theirs; 'freqTLS' contributes a 'Template Model Builder'
+    ('TMB') likelihood whose midpoint is written directly in terms of critical
+    thermal maximum ('CTmax') and
+    thermal sensitivity (z) so both headline quantities are estimable, and reports
+    uncertainty through a unified trio of frequentist intervals -- Wald (delta),
+    profile-likelihood, and bootstrap -- for binomial and beta-binomial survival
+    counts and beta-distributed proportions. Column and formula interfaces support
+    fixed and grouped designs plus limited independent random intercepts; prediction
+    includes survival curves and deterministic heat-injury scenarios. Equivalence
+    claims are restricted to the matched relative-threshold, constant-shape
+    'bayesTLS' configuration.
+License: GPL (>= 3)
+Copyright: See file inst/COPYRIGHTS.
+URL: https://github.com/itchyshin/freqTLS,
+        https://itchyshin.github.io/freqTLS/
+BugReports: https://github.com/itchyshin/freqTLS/issues
+Encoding: UTF-8
+Depends: R (>= 4.2)
+Imports: cli, ggplot2, MASS, parallel, rlang, stats, tibble, TMB, utils
+LinkingTo: RcppEigen, TMB
+Suggests: glmmTMB, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-12 14:17:04 UTC; z3437171
+Author: Shinichi Nakagawa [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-7765-5182>),
+  Pieter A. Arnold [aut] (ORCID: <https://orcid.org/0000-0002-6158-7752>,
+    co-author of the bayesTLS framework),
+  Patrice Pottier [aut] (ORCID: <https://orcid.org/0000-0003-2106-6597>,
+    co-author of the bayesTLS framework),
+  Daniel W. A. Noble [aut] (ORCID:
+    <https://orcid.org/0000-0001-9460-8743>, senior author of the
+    bayesTLS thermal-load-sensitivity framework)
+Maintainer: Shinichi Nakagawa <itchyshin@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 11:00:10 UTC

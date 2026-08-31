@@ -1,0 +1,26 @@
+Package: FSSF
+Type: Package
+Title: Generate Fully-Sequential Space-Filling Designs Inside a Unit
+        Hypercube
+Version: 0.1.2
+Date: 2025-10-09
+Authors@R: c(person(given = "Boyang",
+                      family = "Shang",
+                      role = c("aut", "cre"),
+                      email = "boyangshang2015@u.northwestern.edu"),
+               person(given = c("Daniel", "W."),
+                      family = "Apley",
+                      role = "aut"))
+Maintainer: Boyang Shang <boyangshang2015@u.northwestern.edu>
+Copyright: ANN library is copyright University of Maryland and Sunil
+        Arya and David Mount. See file COPYRIGHTS for details.
+Description: Provides three methods to generate fully-sequential space-filling designs inside a unit hypercube. A 'fully-sequential space-filling design' means a sequence of nested designs (as the design size varies from one point up to some maximum number of points) with the design points added one at a time and such that the design at each size has good space-filling properties. Two methods target the minimum pairwise distance criterion and generate maximin designs, among which one method is more efficient when design size is large. One method targets the maximum hole size criterion and uses a heuristic to generate what is closer to a minimax design. 
+License: GPL-2
+Imports: Rcpp (>= 0.12.10)
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2025-10-09 01:57:42 UTC; boyangshang
+Author: Boyang Shang [aut, cre],
+  Daniel W. Apley [aut]
+Repository: CRAN
+Date/Publication: 2025-10-09 05:10:41 UTC

@@ -1,0 +1,26 @@
+Package: irid
+Title: Component-Based 'Shiny' UI with Fine-Grained Reactivity
+Version: 0.3.0
+Authors@R: person("Kyle", "Husmann", role = c("aut", "cre"),
+    email = "irid@kylehusmann.com")
+Description: A component-based reactive UI framework for 'Shiny' that binds
+    reactive values directly to DOM attributes, enabling fine-grained updates
+    without re-rendering or 'update*Input' callbacks.
+License: MIT + file LICENSE
+URL: https://irid.kylehusmann.com, https://github.com/khusmann/irid
+BugReports: https://github.com/khusmann/irid/issues
+Depends: R (>= 4.1.0)
+Imports: cli, htmltools, rlang (>= 1.2.0), shiny
+Suggests: bslib, callr, chromote, DT, ggplot2, httpuv, jsonlite, knitr,
+        pkgload, plotly, purrr, rmarkdown, testthat (>= 3.0.0), tibble,
+        vctrs, withr
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-23 01:54:48 UTC; khusmann
+Author: Kyle Husmann [aut, cre]
+Maintainer: Kyle Husmann <irid@kylehusmann.com>
+Repository: CRAN
+Date/Publication: 2026-08-02 16:10:02 UTC

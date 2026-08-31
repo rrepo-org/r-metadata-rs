@@ -1,0 +1,32 @@
+Package: easyViz
+Title: Easy Visualization of Conditional Effects from Regression Models
+Version: 2.1.0
+Authors@R: person("Luca", "Corlatti", role = c("aut", "cre"), email="lucac1980@yahoo.it")
+Description: Offers a flexible and user-friendly interface for visualizing conditional 
+ effects from a broad range of regression models, including mixed-effects and generalized 
+ additive (mixed) models. Compatible model types include lm(), rlm(), glm(), glm.nb(),
+ betareg(), and gam() (from 'mgcv'); nonlinear models via nls(); generalized least 
+ squares via gls(); and survival models via coxph() (from 'survival'). 
+ Mixed-effects models with random intercepts and/or slopes can be fitted using lmer(), 
+ glmer(), glmer.nb(), glmmTMB(), or gam() (from 'mgcv', via smooth terms). 
+ Plots are rendered using base R graphics with extensive customization options. 
+ Approximate confidence intervals for nls() and betareg() models are computed using 
+ the delta method. Robust standard errors for rlm() are computed using the sandwich 
+ estimator (Zeileis 2004) <doi:10.18637/jss.v011.i10>. For beta regression using 
+ 'betareg', see Cribari-Neto and Zeileis (2010) <doi:10.18637/jss.v034.i02>. For 
+ mixed-effects models with 'lme4', see Bates et al. (2015) <doi:10.18637/jss.v067.i01>. 
+ For models using 'glmmTMB', see Brooks et al. (2017) <doi:10.32614/RJ-2017-066>. 
+ Methods for generalized additive models using 'mgcv' follow Wood (2017)
+ <doi:10.1201/9781315370279>.
+Maintainer: Luca Corlatti <lucac1980@yahoo.it>
+Imports: stats, utils, graphics, grDevices
+Suggests: MASS, sandwich, nlme, numDeriv, reformulas, betareg, statmod,
+        survival, lme4, glmmTMB, mgcv
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-05 19:22:06 UTC; lucacorlatti
+Author: Luca Corlatti [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-03-05 19:40:19 UTC

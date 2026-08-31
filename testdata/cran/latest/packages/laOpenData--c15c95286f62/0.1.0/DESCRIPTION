@@ -1,0 +1,37 @@
+Package: laOpenData
+Type: Package
+Title: Convenient Access to Los Angeles Open Data API Endpoints
+Version: 0.1.0
+Authors@R: 
+    c(
+      person("Christian", "Martinez", 
+             email = "c.martinez0@outlook.com", 
+             role = c("aut", "cre"),
+             comment = c(
+               GitHub = "martinezc1",
+               ORCID = "0009-0005-6026-6454"
+             ))
+    )
+Description: Provides simple, reproducible access to datasets from the
+    Los Angeles Open Data portal <https://data.lacity.org/>. Functions return
+    results as tidy tibbles and support optional filtering, sorting,
+    and row limits via the Socrata API.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, tibble, jsonlite, httr, janitor, rlang
+Suggests: curl, knitr, ggplot2, rmarkdown, testthat (>= 3.0.0), tidyr,
+        vcr (>= 0.6.0), webmockr
+URL: https://martinezc1.github.io/laOpenData/,
+        https://github.com/martinezc1/laOpenData
+BugReports: https://github.com/martinezc1/laOpenData/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-04-13 00:23:48 UTC; christianmartinez
+Author: Christian Martinez [aut, cre] (GitHub: martinezc1, ORCID:
+    <https://orcid.org/0009-0005-6026-6454>)
+Maintainer: Christian Martinez <c.martinez0@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-04-16 19:40:08 UTC

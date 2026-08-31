@@ -1,0 +1,41 @@
+Package: connector.sharepoint
+Title: 'Microsoft SharePoint' Interface for the 'connector' Package
+Version: 0.1.0
+Authors@R: c(
+    person("Vladimir", "Obucina", , "vlob@novonordisk.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0008-2608-2661")),
+    person("Cervan", "Girard", , "cgid@novonordisk.com", role = "aut"),
+    person("Aksel", "Thomsen", , "oath@novonordisk.com", role = "aut"),
+    person("Steffen Falgreen", "Larsen", , "sffl@novonordisk.com", role = "aut"),
+    person("Novo Nordisk A/S", role = "cph")
+  )
+Description: Extends the 'connector' package to provide a convenient
+    interface for accessing and interacting with 'Microsoft SharePoint' directly
+    from 'R'. Supports listing, reading, writing, uploading, downloading, and
+    removing files and directories on 'SharePoint' document libraries.
+    Authentication is handled through 'Azure' tokens via the 'AzureAuth' package.
+License: Apache License (>= 2)
+URL: https://novonordisk-opensource.github.io/connector.sharepoint/,
+        https://github.com/novonordisk-opensource/connector.sharepoint
+BugReports: https://github.com/NovoNordisk-OpenSource/connector.sharepoint/issues
+Depends: R (>= 4.1.0)
+Imports: AzureAuth, checkmate, cli, connector (>= 1.0.0),
+        Microsoft365R, R6, tools, zephyr, rlang
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tibble, withr, whirl
+        (>= 0.2.0), glue, mockery
+VignetteBuilder: knitr, rmarkdown
+Config/Needs/website: rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-28 10:07:34 UTC; vlob
+Author: Vladimir Obucina [aut, cre] (ORCID:
+    <https://orcid.org/0009-0008-2608-2661>),
+  Cervan Girard [aut],
+  Aksel Thomsen [aut],
+  Steffen Falgreen Larsen [aut],
+  Novo Nordisk A/S [cph]
+Maintainer: Vladimir Obucina <vlob@novonordisk.com>
+Repository: CRAN
+Date/Publication: 2026-06-01 08:50:06 UTC

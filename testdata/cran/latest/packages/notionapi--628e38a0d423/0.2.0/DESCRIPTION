@@ -1,0 +1,27 @@
+Package: notionapi
+Title: Client for the 'Notion API'
+Version: 0.2.0
+Authors@R: 
+    person("Brenwin", "Ang", , "brenwinalj@gmail.com", role = c("aut", "cre", "cph"))
+Description: Enable programmatic interaction with 'Notion' pages,
+    databases, blocks, comments, and users through the 'Notion API'
+    <https://developers.notion.com/>.  Provides both synchronous and
+    asynchronous client interfaces for building workflows and automations
+    that integrate with 'Notion' workspaces. Supports all 'Notion API'
+    endpoints including content creation, data retrieval, and workspace
+    management.
+License: MIT + file LICENSE
+URL: https://brenwin1.github.io/notionapi/,
+        https://github.com/brenwin1/notionapi
+BugReports: https://github.com/brenwin1/notionapi/issues
+Imports: cli, httr2, jsonlite, R6, rlang
+Suggests: curl, promises, testthat (>= 3.0.0), vcr (>= 2.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-12 21:41:59 UTC; brenwin
+Author: Brenwin Ang [aut, cre, cph]
+Maintainer: Brenwin Ang <brenwinalj@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-13 07:30:15 UTC

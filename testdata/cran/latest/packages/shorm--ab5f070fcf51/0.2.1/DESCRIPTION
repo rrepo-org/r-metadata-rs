@@ -1,0 +1,25 @@
+Package: shorm
+Title: Detect the Shape of Dose-Response Curves
+Version: 0.2.1
+Authors@R: c( 
+    person(given = "Eric",
+    	   family = "Bair",
+	   role = c("aut", "cre"),
+	   email = "software.tools@sciome.com"),
+    person(given = "Ying",
+           family = "Jin",
+	   role = c("aut", "cph")))
+Description: Provides functions for hormesis screening by classifying the shapes of dose-response curves based on semiparametric tests. The shapes are indications of different potential toxicology effect. It also offers a scalable visualization scheme to present testing conclusions for large-scale dataset with a large number of dose-response curves. For more information, see Jin et al. (2026) <https://github.com/YinglJin-0203/shorm/blob/main/Manuscripts/BotanicalHormesisTestingFinalDraft.docx>.
+License: GPL-3
+Encoding: UTF-8
+Imports: SRMERS, ggplot2, scales, dplyr
+Collate: 'RepeatSHARP.R' 'SHARPtest.R' 'SharpScatter.R'
+URL: https://github.com/YinglJin-0203/shorm
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-04 20:25:51 UTC; ebair
+Author: Eric Bair [aut, cre],
+  Ying Jin [aut, cph]
+Maintainer: Eric Bair <software.tools@sciome.com>
+Repository: CRAN
+Date/Publication: 2026-06-04 20:40:02 UTC

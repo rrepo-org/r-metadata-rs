@@ -1,0 +1,27 @@
+Package: TrialSimulator
+Type: Package
+Title: Clinical Trial Simulator
+Version: 1.20.1
+Description: Simulate phase II and/or phase III clinical trials. It supports various types of endpoints and adaptive strategies. Tools for carrying out graphical testing procedure and combination test under group sequential design are also provided. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: base64enc, dplyr, emmeans, ggplot2, gMCPLite, htmltools,
+        mvtnorm, R6, Rcpp, rlang, rpact, rstudioapi, survival, utils
+LinkingTo: Rcpp
+Authors@R: 
+    person("Han", "Zhang", , "zhangh.ustc@gmail.com", role = c("cre", "aut"))
+RoxygenNote: 7.3.3
+Suggests: data.table, DoseFinding, graphicalMCP, kableExtra, knitr,
+        mirai, PWEALL, PWEXP, rmarkdown, simdata, survminer, testthat
+        (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://zhangh12.github.io/TrialSimulator/
+BugReports: https://github.com/zhangh12/TrialSimulator/issues
+Depends: R (>= 4.1.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-06-15 07:05:08 UTC; zhhan
+Author: Han Zhang [cre, aut]
+Maintainer: Han Zhang <zhangh.ustc@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-15 07:40:08 UTC

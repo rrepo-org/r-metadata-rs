@@ -1,0 +1,34 @@
+Package: LBDiscover
+Title: Literature-Based Discovery Tools for Biomedical Research
+Version: 0.1.0
+Date: 2025-06-12
+Authors@R: 
+    person("Chao Liu", email = "chaoliu@cedarville.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9979-8272"))
+Description: A suite of tools for literature-based discovery in biomedical research. 
+    Provides functions for retrieving scientific articles from 'PubMed' and 
+    other NCBI databases, extracting biomedical entities (diseases, drugs, genes, etc.), 
+    building co-occurrence networks, and applying various discovery models 
+    including 'ABC', 'AnC', 'LSI', and 'BITOLA'. The package also includes 
+    visualization tools for exploring discovered connections.
+License: GPL-3
+URL: https://github.com/chaoliu-cl/LBDiscover,
+        https://liu-chao.site/LBDiscover/
+BugReports: https://github.com/chaoliu-cl/LBDiscover/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: httr (>= 1.4.0), xml2 (>= 1.3.0), igraph (>= 1.2.0), Matrix
+        (>= 1.3.0), utils, stats, grDevices, graphics, tools, rentrez
+        (>= 1.2.0), jsonlite (>= 1.7.0)
+Suggests: openxlsx (>= 4.2.0), SnowballC (>= 0.7.0), visNetwork (>=
+        2.1.0), spacyr (>= 1.2.0), parallel, digest (>= 0.6.0), irlba
+        (>= 2.3.0), knitr, rmarkdown, base64enc, reticulate, testthat
+        (>= 3.0.0), mockery, covr, htmltools, data.table, tibble
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-06-13 04:00:30 UTC; chaoliu
+Author: Chao Liu [aut, cre] (ORCID: <https://orcid.org/0000-0002-9979-8272>)
+Maintainer: Chao Liu <chaoliu@cedarville.edu>
+Repository: CRAN
+Date/Publication: 2025-06-16 10:50:02 UTC

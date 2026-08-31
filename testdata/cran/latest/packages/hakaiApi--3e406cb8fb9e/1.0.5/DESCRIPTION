@@ -1,0 +1,37 @@
+Package: hakaiApi
+Title: Authenticated HTTP Request Client for the 'Hakai' API
+Version: 1.0.5
+Authors@R: c(
+    person("Sam", "Albers", , "sam.albers@hakai.org", role = c("aut", "cre")),
+    person("Taylor", "Denouden", , "taylor.denouden@hakai.org", role = "aut"),
+    person("Brett", "Johnson", , "brett.johnson@hakai.org", role = "aut"),
+    person("Nate", "Rosenstock", , "nate.rosenstock@hakai.org", role = "ctb"),
+    person("Chris", "Davis", , "chris.davis@hakai.org", role = "ctb"),
+    person("Hakai Institute", , role = "cph")
+  )
+Description: Initializes a class that obtains API credentials and provides
+    a method to use those credentials to make GET requests to the 'Hakai'
+    API server. Usage instructions are documented at
+    <https://hakaiinstitute.github.io/hakai-api/>.
+License: MIT + file LICENSE
+URL: https://github.com/HakaiInstitute/hakai-api-client-r
+BugReports: https://github.com/HakaiInstitute/hakai-api-client-r/issues
+Depends: R (>= 4.2.0)
+Imports: dplyr, httr2, R6, readr, tibble
+Suggests: knitr, markdown, rmarkdown, withr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-CA
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-07-10 18:37:05 UTC; sam.albers
+Author: Sam Albers [aut, cre],
+  Taylor Denouden [aut],
+  Brett Johnson [aut],
+  Nate Rosenstock [ctb],
+  Chris Davis [ctb],
+  Hakai Institute [cph]
+Maintainer: Sam Albers <sam.albers@hakai.org>
+Repository: CRAN
+Date/Publication: 2025-07-10 21:40:13 UTC

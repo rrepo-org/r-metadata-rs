@@ -1,0 +1,72 @@
+Package: ABCDscores
+Title: Summary Scores of the Adolescent Brain Cognitive Development
+        (ABCD) Study
+Description: Provides functions to compute summary scores
+  (besides proprietary ones) reported in the tabulated data resource that is
+  released by the Adolescent Brain Cognitive Development (ABCD) study.
+URL: https://software.nbdc-datahub.org/ABCDscores/
+Version: 7.0.0
+Authors@R: c(
+  person(given = "Le",
+         family = "Zhang",
+         email = "dairc.service@gmail.com",
+         role = c("aut", "cre"),
+         comment = c(ORCID = "0009-0008-0205-2150")), 
+  person(given = "Janosch",
+         family = "Linkersdoerfer",
+         email = "linkersdoerfer@gmail.com",
+         role = c("aut"),
+         comment = c(ORCID = "0000-0002-1577-1233")), 
+  person(given = "Olivier",
+         family = "Celhay",
+         email = "olivier.celhay@gmail.com",
+         role = c("aut"),
+         comment = c(ORCID = "0000-0002-2971-9110")), 
+  person(given = "Biplabendu",
+         family = "Das",
+         email = "biplabendu.das@gmail.com",
+         role = c("aut"),
+         comment = c(ORCID = "0000-0003-0855-262X")),
+  person(given = "Sammy",
+         family = "Berman",
+         email = "sammyberman@gmail.com",
+         role = c("aut"),
+         comment = c(ORCID = "0000-0002-9803-019X")), 
+  person(given = "Laura",
+         family = "Ziemer",
+         email = "lrziemer@gmail.com",
+         role = c("aut"),
+         comment = c(ORCID = "0000-0003-0026-3823")),
+  person(given = "Shermaine",
+         family = "Abad",
+         email = "shermaineabad@gmail.com",
+         role = c("aut"),
+         comment = c(ORCID = "0009-0009-6013-9147")))
+Depends: R (>= 4.3.0)
+Imports: chk, cli, dplyr, glue, lubridate, magrittr, purrr, rlang,
+        stringr, tibble, tidyr, stats, utils, hms, data.table
+Suggests: arrow, rmarkdown, roxyglobals, testthat (>= 3.0.0), knitr,
+        reactable, readr, usethis
+License: GPL (>= 3)
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/Needs/website: rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: TRUE
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-15 23:02:06 UTC; lz
+Author: Le Zhang [aut, cre] (ORCID: <https://orcid.org/0009-0008-0205-2150>),
+  Janosch Linkersdoerfer [aut] (ORCID:
+    <https://orcid.org/0000-0002-1577-1233>),
+  Olivier Celhay [aut] (ORCID: <https://orcid.org/0000-0002-2971-9110>),
+  Biplabendu Das [aut] (ORCID: <https://orcid.org/0000-0003-0855-262X>),
+  Sammy Berman [aut] (ORCID: <https://orcid.org/0000-0002-9803-019X>),
+  Laura Ziemer [aut] (ORCID: <https://orcid.org/0000-0003-0026-3823>),
+  Shermaine Abad [aut] (ORCID: <https://orcid.org/0009-0009-6013-9147>)
+Maintainer: Le Zhang <dairc.service@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-15 23:30:02 UTC

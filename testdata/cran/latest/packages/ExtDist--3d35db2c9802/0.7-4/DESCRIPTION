@@ -1,0 +1,51 @@
+Package: ExtDist
+Version: 0.7-4
+License: GPL (>= 2)
+Title: Extending the Range of Functions for Probability Distributions
+Description: A consistent, unified and extensible
+    framework for estimation of parameters for probability distributions,
+    including parameter estimation procedures that allow for weighted samples;
+    the current set of distributions included are: the standard beta,
+    The four-parameter beta, Burr, gamma, Gumbel, Johnson SB and SU, Laplace,
+    logistic, normal, symmetric truncated normal, truncated normal,
+    symmetric-reflected truncated beta, standard symmetric-reflected truncated
+    beta, triangular, uniform, and Weibull distributions; decision criteria
+    and selections based on these decision criteria.
+Repository: CRAN
+Authors@R: c(person(given = "Haizhen",
+                    family = "Wu",
+                    role = "aut",
+                    email = "h.wu2@massey.ac.nz"),
+             person(given = c("A.", "Jonathan", "R."),
+                    family = "Godfrey",
+                    role = "aut",
+                    email = "A.J.Godfrey@massey.ac.nz"),
+             person(given = "Kondaswamy",
+                    family = "Govindaraju",
+                    role = "aut",
+                    email = "k.govindaraju@massey.ac.nz"),
+             person(given = "Sarah",
+                    family = "Pirikahu",
+                    role = "aut",
+                    email = "s.pirikahu@massey.ac.nz"),
+             person(given = "Oleksii",
+                    family = "Nikolaienko",
+                    role = c("cre", "ctb"),
+                    email = "oleksii.nikolaienko@gmail.com"))
+URL: https://github.com/oleksii-nikolaienko/ExtDist
+BugReports: https://github.com/oleksii-nikolaienko/ExtDist/issues
+Imports: numDeriv, optimx
+Suggests: ggplot2, knitr, PerformanceAnalytics, stats, SuppDists,
+        truncdist, VGAM, xtable, graphics, utils, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Packaged: 2025-09-22 07:08:52 UTC; oni062
+Author: Haizhen Wu [aut],
+  A. Jonathan R. Godfrey [aut],
+  Kondaswamy Govindaraju [aut],
+  Sarah Pirikahu [aut],
+  Oleksii Nikolaienko [cre, ctb]
+Maintainer: Oleksii Nikolaienko <oleksii.nikolaienko@gmail.com>
+Date/Publication: 2025-09-23 07:50:02 UTC

@@ -1,0 +1,38 @@
+Package: dspline
+Title: Tools for Computations with Discrete Splines
+Version: 1.0.4
+Authors@R: c(
+    person("Logan", "Brooks", role = "ctb"),
+    person("Addison", "Hu", role = "aut"),
+    person("Daniel", "McDonald", role = "ctb"),
+    person("Ryan", "Tibshirani", , "ryantibs@gmail.com", 
+        role = c("aut", "cre", "cph"))
+  )
+Description: Discrete splines are a class of univariate piecewise polynomial
+    functions which are analogous to splines, but whose smoothness is defined
+    via divided differences rather than derivatives. Tools for efficient
+    computations relating to discrete splines are provided here. These tools
+    include discrete differentiation and integration, various matrix
+    computations with discrete derivative or discrete spline bases matrices, and
+    interpolation within discrete spline spaces. These techniques are described
+    in Tibshirani (2020) <doi:10.48550/arXiv.2003.03886>.
+License: MIT + file LICENSE
+URL: https://github.com/glmgen/dspline,
+        https://glmgen.github.io/dspline/
+BugReports: https://github.com/glmgen/dspline/issues
+Imports: Matrix, Rcpp, rlang
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppEigen
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-03-18 16:15:23 UTC; ryantibshirani
+Author: Logan Brooks [ctb],
+  Addison Hu [aut],
+  Daniel McDonald [ctb],
+  Ryan Tibshirani [aut, cre, cph]
+Maintainer: Ryan Tibshirani <ryantibs@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-18 17:00:09 UTC

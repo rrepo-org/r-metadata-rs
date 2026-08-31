@@ -1,0 +1,29 @@
+Package: DBmaps
+Title: An R Tool for Streamlining Database Joins
+Version: 0.1.1
+Authors@R: 
+    c(
+        person("Akshat", "Maurya", ,"codingmaster902@gmail.com", role = c("aut", "cre")),
+        person("David", "Shilane", ,"david.shilane@columbia.edu", role = c("aut"))
+    )
+Description: 
+    Simplifies and automates the process of exploring and merging 
+    data from relational databases. This package allows users to discover 
+    table relationships, create a map of all possible joins, and generate 
+    executable plans to merge data based on a structured metadata framework.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), DiagrammeR
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Imports: data.table
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-08-31 06:25:21 UTC; akshat
+Author: Akshat Maurya [aut, cre],
+  David Shilane [aut]
+Maintainer: Akshat Maurya <codingmaster902@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-31 16:40:02 UTC

@@ -1,0 +1,33 @@
+Package: grumpy
+Title: Read 'NumPy' '.npy' and '.npz' Files
+Version: 0.1.1
+Authors@R: c(
+    person("Hugo", "Gruson", , "hugo.gruson+R@normalesup.org", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-4094-1476")),
+    person("Mike", "Smith", role = c("aut", "cph"),
+           comment = c("Original author of portions of the C code migrated from the Rarr package")),
+        person("German Network for Bioinformatics Infrastructure - de.NBI", role = "fnd")
+    )
+Description: Lightweight way to read 'NumPy' '.npy' and '.npz' files in R. All data types supported
+    by 'NumPy', with all sizes (converted internally to R native size), both C and 'Fortran' order,
+    and any shape, up to an arbitrary number of dimensions, are supported.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://hugogruson.fr/grumpy/, https://github.com/Bisaloo/grumpy
+BugReports: https://github.com/Bisaloo/grumpy/issues
+Imports: jsonlite
+Config/roxygen2/version: 8.0.0
+Depends: R (>= 4.2.0)
+NeedsCompilation: yes
+Packaged: 2026-05-15 08:52:32 UTC; hgruson
+Author: Hugo Gruson [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-4094-1476>),
+  Mike Smith [aut, cph] (Original author of portions of the C code
+    migrated from the Rarr package),
+  German Network for Bioinformatics Infrastructure - de.NBI [fnd]
+Maintainer: Hugo Gruson <hugo.gruson+R@normalesup.org>
+Repository: CRAN
+Date/Publication: 2026-05-19 09:30:08 UTC

@@ -1,0 +1,41 @@
+Package: otelsdk
+Title: R SDK and Exporters for OpenTelemetry
+Version: 0.2.4
+Authors@R: c(
+    person("Gábor", "Csárdi", , "csardi.gabor@gmail.com",
+        role = c("aut", "cre")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+        comment = c(ROR = "03wc8by49")),
+    person(family = "opentelemetry-cpp authors", role = "ctb")
+  )
+Description: OpenTelemetry is a collection of tools,
+    APIs, and SDKs used to instrument, generate, collect, and export
+    telemetry data (metrics, logs, and traces) for analysis in order to
+    understand your software's performance and behavior.
+    This package contains the OpenTelemetry SDK, and exporters.
+    Use this package to export traces, metrics, logs from instrumented
+    R code. Use the otel package to instrument your R code for
+    OpenTelemetry.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: cmake, protobuf-compiler, libprotobuf, libcurl,
+        zlib, GNU make
+Imports: otel, utils
+Suggests: callr, cli, curl, gh, jsonlite, processx, ps, rlang,
+        spelling, testthat (>= 3.0.0), webfakes, withr
+Config/testthat/edition: 3
+Config/testthat/parallel: TRUE
+URL: https://otelsdk.r-lib.org, https://github.com/r-lib/otelsdk
+Config/Needs/check: r-lib/otel, gaborcsardi/testthatlabs
+Config/Needs/coverage: r-lib/otel, gaborcsardi/testthatlabs
+Config/Needs/website: tidyverse/tidytemplate, r-lib/otel
+BugReports: https://github.com/r-lib/otelsdk/issues
+NeedsCompilation: yes
+Packaged: 2026-04-08 08:11:07 UTC; gaborcsardi
+Author: Gábor Csárdi [aut, cre],
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>),
+  opentelemetry-cpp authors [ctb]
+Maintainer: Gábor Csárdi <csardi.gabor@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-08 09:00:02 UTC

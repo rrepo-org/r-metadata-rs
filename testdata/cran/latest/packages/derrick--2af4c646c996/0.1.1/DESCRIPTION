@@ -1,0 +1,33 @@
+Type: Package
+Package: derrick
+Title: Export 'gtsummary' Tables with 'reporter'
+Version: 0.1.1
+Date: 2026-06-26
+Authors@R: c(
+    person("Xiecheng", "Gu", email = "guxc0405med@163.com", role = c("aut", "cre")),
+    person("Joe", "Zhu", email = "sha.joe.zhu@gmail.com", role = c("aut")),
+    person("Bill", "Huang", email = "Bill.Huang@Toastmasters.org.tw", role = c("aut")))
+Maintainer: Xiecheng Gu <guxc0405med@163.com>
+Description: Convert 'gtsummary' tables and plain data frames into clinical-style
+    Rich Text Format, plain text, Word, PDF, and HTML outputs using 'reporter',
+    with managed widths, pagination, indentation, spanning headers, and optional
+    intermediate data exports.
+License: Apache License 2.0
+URL: https://github.com/openpharma/derrick/
+BugReports: https://github.com/openpharma/derrick/issues
+Depends: R (>= 4.4)
+Imports: dplyr, purrr, reporter (>= 1.4.7), rlang, stringi, tibble
+Suggests: cards (>= 0.8.0), gtsummary (>= 2.5.1), knitr, rmarkdown,
+        testthat (>= 3.3.0)
+Config/Needs/website: pkgdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-03 11:03:37 UTC; Kathy Zhang
+Author: Xiecheng Gu [aut, cre],
+  Joe Zhu [aut],
+  Bill Huang [aut]
+Repository: CRAN
+Date/Publication: 2026-07-10 20:30:31 UTC

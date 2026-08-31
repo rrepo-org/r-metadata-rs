@@ -1,0 +1,29 @@
+Package: SBMTrees
+Type: Package
+Title: Longitudinal Sequential Imputation and Prediction with Bayesian
+        Trees Mixed-Effects Models for Longitudinal Data
+Version: 1.5
+Date: 2026-02-06
+Author: Jungang Zou [aut, cre],
+  Liangyuan Hu [aut],
+  Robert McCulloch [ctb],
+  Rodney Sparapani [ctb],
+  Charles Spanbauer [ctb],
+  Robert Gramacy [ctb],
+  Jean-Sebastien Roy [ctb]
+Authors@R: c(person("Jungang", "Zou", role = c("aut", "cre"), email = "jungang.zou@gmail.com"), person("Liangyuan", "Hu", role = "aut"), person("Robert", "McCulloch", role = "ctb"), person("Rodney", "Sparapani", role = "ctb"), person("Charles", "Spanbauer", role = "ctb"), person("Robert", "Gramacy", role = "ctb"), person("Jean-Sebastien", "Roy", role = "ctb"))
+Maintainer: Jungang Zou <jungang.zou@gmail.com>
+Description: Implements a sequential imputation framework using Bayesian Mixed-Effects Trees ('SBMTrees') for handling missing data in longitudinal studies. The package supports a variety of models, including non-linear relationships and non-normal random effects and residuals, leveraging Dirichlet Process priors for increased flexibility. Key features include handling Missing at Random (MAR) longitudinal data, imputation of both covariates and outcomes, and generating posterior predictive samples for further analysis. The methodology is designed for applications in epidemiology, biostatistics, and other fields requiring robust handling of missing data in longitudinal settings.
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: Rcpp, lme4, Matrix, arm, dplyr, mvtnorm, sn, mice, nnet, MASS
+LinkingTo: Rcpp, RcppArmadillo, RcppDist, RcppProgress, pg
+RoxygenNote: 7.3.3
+SystemRequirements: GNU make
+Suggests: knitr, rmarkdown, mitml
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-02-06 21:12:55 UTC; jz3183
+Repository: CRAN
+Date/Publication: 2026-02-12 08:10:27 UTC

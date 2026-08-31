@@ -1,0 +1,44 @@
+Package: GINAX
+Type: Package
+Title: Performs Genome-Wide Iterative Fine-Mapping for Non-Gaussian
+        Data using GINA-X
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Shuangshuang",
+           family = "Xu",
+           email = "xshuangshuang@vt.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-7262-2978")),
+    person(given = "Jacob",
+           family = "Williams",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-6425-1365")),
+    person(given = "Allison",
+           family = "Tegge",
+           role = "aut"),
+    person(given = "Marco",
+           family = "Ferreira",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-4705-5661")))
+Description: Implements GINA-X, a genome-wide iterative fine-mapping method designed for non-Gaussian traits. It supports the identification of credible sets of genetic variants.
+License: GPL-3
+Encoding: UTF-8
+LazyData: false
+biocViews: Software, StatisticalMethod, VariantAnnotation
+Imports: GA (>= 3.2), caret (>= 6.0-86), memoise (>= 1.1.0), Matrix (>=
+        1.2-18), stats (>= 4.2.2)
+Depends: R (>= 4.2.0)
+Suggests: knitr, rmarkdown, formatR, rrBLUP, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-08 21:08:02 UTC; xushu
+Author: Shuangshuang Xu [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-7262-2978>),
+  Jacob Williams [aut] (ORCID: <https://orcid.org/0000-0002-6425-1365>),
+  Allison Tegge [aut],
+  Marco Ferreira [aut] (ORCID: <https://orcid.org/0000-0002-4705-5661>)
+Maintainer: Shuangshuang Xu <xshuangshuang@vt.edu>
+Repository: CRAN
+Date/Publication: 2025-10-14 18:20:25 UTC

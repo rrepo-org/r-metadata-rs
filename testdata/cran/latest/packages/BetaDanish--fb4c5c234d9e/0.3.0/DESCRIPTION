@@ -1,0 +1,51 @@
+Package: BetaDanish
+Type: Package
+Title: The Beta-Danish Distribution for Lifetime Data Analysis
+Version: 0.3.0
+Authors@R: c(
+    person("Bilal", "Ahmad", email = "bilalahmad.imcbh9@gmail.com",
+           role = c("aut", "cre")),
+    person("Muhammad Yameen", "Danish", email = "yameen.danish@aiou.edu.pk", 
+           role = "aut")
+    )
+Description: Implements the four-parameter Beta-Danish distribution and its
+    three-parameter Exponentiated Danish submodel for survival, reliability
+    and lifetime data analysis, following Ahmad and Danish (2025)
+    <doi:10.2478/jamsi-2025-0010>. Density, distribution, quantile, survival,
+    hazard and random generation functions are evaluated so as to retain
+    accuracy in the heavy upper tail, where the survival function is regularly
+    varying. Estimation covers maximum likelihood for complete and
+    right-censored samples, ridge-penalized fitting for weakly identified
+    regimes, a grouped likelihood for times recorded on a coarse grid, and
+    Bayesian sampling. Inference provides log-scale Wald and profile
+    likelihood intervals, together with a reparameterization in terms of the
+    identified composite of the two shape parameters. Structural properties
+    include raw, incomplete and conditional moments with their existence
+    conditions, Shannon, Renyi and Tsallis entropies, mean residual life,
+    mean deviations, Lorenz and Bonferroni curves, probability weighted
+    moments, order statistics, stress-strength reliability, hazard shape
+    classification and the tail index. Regression modules cover accelerated
+    failure time models, mixture and promotion-time cure models, and competing
+    risks with Aalen-Johansen comparison and Gray's test. Analyses can be run
+    directly from a delimited text file or spreadsheet.
+URL: https://bilal-aiou.github.io/BetaDanish/,
+        https://github.com/bilal-aiou/BetaDanish
+BugReports: https://github.com/bilal-aiou/BetaDanish/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: grDevices, maxLik, survival, stats, graphics, utils, tools
+Suggests: readxl, flexsurv, testthat (>= 3.0.0), knitr, rmarkdown,
+        cmprsk, coda, MCMCpack
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+Config/roxygen2/version: 8.0.0
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-07-31 11:18:26 UTC; hp
+Author: Bilal Ahmad [aut, cre],
+  Muhammad Yameen Danish [aut]
+Maintainer: Bilal Ahmad <bilalahmad.imcbh9@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-31 15:20:40 UTC

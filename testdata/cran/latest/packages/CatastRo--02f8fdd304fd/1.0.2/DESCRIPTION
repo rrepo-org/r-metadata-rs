@@ -1,0 +1,48 @@
+Package: CatastRo
+Title: Interface to the Spanish 'Catastro' Web Services
+Version: 1.0.2
+Authors@R: c(
+    person("Ángel", "Delgado Panadero", , "delgadopanadero@gmail.com", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0002-8189-9251")),
+    person("Iñaki", "Ucar", role = "ctb",
+           comment = c(ORCID = "0000-0001-6403-5550")),
+    person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8457-4658"))
+  )
+Description: Access public spatial data from the Spanish 'Catastro'
+    through its 'INSPIRE' and related web services. Retrieve parcel,
+    building, address and map image data, and convert between parcel
+    references and coordinates.
+License: GPL-2
+URL: https://ropenspain.github.io/CatastRo/,
+        https://github.com/rOpenSpain/CatastRo
+BugReports: https://github.com/rOpenSpain/CatastRo/issues
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, httr2 (>= 1.0.0), lifecycle, mapSpain (>= 1.0.0),
+        rappdirs (>= 0.3.0), sf (>= 1.0.0), terra, tibble, tools,
+        utils, xml2
+Suggests: ggplot2, knitr, quarto, testthat (>= 3.0.0), tidyterra, withr
+VignetteBuilder: quarto
+Config/Needs/website: ropenspain/rostemplate, devtools, sessioninfo,
+        remotes, sfheaders, rapidjsonr, jsonify, geometries, magick
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Copyright: © Dirección General del Catastro
+        <https://www.catastro.meh.es/>
+Encoding: UTF-8
+LazyData: true
+X-schema.org-isPartOf: https://ropenspain.es/
+X-schema.org-keywords: catastro, cran, cran-r, gis, maps, r, r-package,
+        ropenspain, rstats, spain, spatial, static-tiles
+NeedsCompilation: no
+Packaged: 2026-06-03 19:01:18 UTC; diego
+Author: Ángel Delgado Panadero [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-8189-9251>),
+  Iñaki Ucar [ctb] (ORCID: <https://orcid.org/0000-0001-6403-5550>),
+  Diego Hernangómez [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8457-4658>)
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-03 19:10:02 UTC

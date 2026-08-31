@@ -1,0 +1,30 @@
+Package: MIRDD
+Type: Package
+Title: Diagnostic Tool by Multiple Imputation for Regression
+        Discontinuity Designs
+Version: 0.2.4
+Date: 2026-05-17
+Authors@R: person(given = "Masayoshi",
+                    family = "Takahashi",
+                    role = c("aut", "cre"),
+                    email = "mtakahashi615@g.chuo-u.ac.jp",
+                    comment = c(ORCID = "0000-0002-2616-0614"))
+Maintainer: Masayoshi Takahashi <mtakahashi615@g.chuo-u.ac.jp>
+Description: Estimates average treatment effects at the cutoff based on sharp 
+    regression discontinuity designs (RDD) and multiple imputation regression 
+    discontinuity designs (MIRDD). It provides diagnostic tools for RDD by 
+    comparing results with those from MIRDD, as proposed in Takahashi (2023) 
+    <doi:10.1080/03610918.2021.1960374>. The package includes datasets from
+    Takahashi (2023) and Takahashi (2026) <doi:10.1016/j.softx.2026.102707>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: Amelia, rdrobust, stats, graphics
+NeedsCompilation: no
+Packaged: 2026-05-16 15:45:22 UTC; Masayoshi Takahashi
+Depends: R (>= 3.5.0)
+Author: Masayoshi Takahashi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2616-0614>)
+Repository: CRAN
+Date/Publication: 2026-05-16 16:20:02 UTC

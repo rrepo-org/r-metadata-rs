@@ -1,0 +1,24 @@
+Package: PwePred
+Type: Package
+Title: Event/Timeline Prediction Model Based on Piecewise Exponential
+Imports: graphics, grDevices, stats, methods, utils, segmented,
+        fastmatch, foreach, doSNOW, parallel
+Depends: survival, R (>= 2.10)
+Suggests: knitr, RColorBrewer, rmarkdown
+Version: 1.1.2
+Authors@R: person(given = "Tianchen",
+                    family = "Xu",
+                    role = c("aut", "cre"),
+                    email = "zjph602xutianchen@gmail.com",
+                    comment = c(ORCID = "0000-0002-0102-7630"))
+Maintainer: Tianchen Xu <zjph602xutianchen@gmail.com>
+Description: Efficient algorithm for estimating piecewise exponential hazard models for right-censored data, and is useful for reliable power calculation, study design, and event/timeline prediction for study monitoring. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+Repository: CRAN
+Packaged: 2026-03-26 04:57:37 UTC; xut13
+Date/Publication: 2026-03-26 09:00:02 UTC
+NeedsCompilation: no
+Author: Tianchen Xu [aut, cre] (ORCID: <https://orcid.org/0000-0002-0102-7630>)

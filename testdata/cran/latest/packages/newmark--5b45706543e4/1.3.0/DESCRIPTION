@@ -1,0 +1,52 @@
+Package: newmark
+Type: Package
+Title: Uncertainty Analysis in Dynamic Site and Slope Response
+Version: 1.3.0
+Authors@R: 
+    person(given = "Alejandro",
+           family = "Verri Kozlowski",
+           email = "averri@fi.uba.ar",
+           role = c("aut", "cre", "cph"))
+Description: Implements a four-stage pipeline for probabilistic seismic
+  performance analysis of slopes and embankments. The package takes a
+  uniform-hazard spectrum at multiple return periods as input (any
+  source) and produces: (1) synthetic soil profile generation and
+  fundamental period estimation from USCS classification via Ishihara's
+  small-strain shear-modulus model and the inhomogeneous truncated
+  shear-beam theory of Gazetas and Dakoulas; (2) nonlinear site
+  amplification using the NGA-East ergodic site-response models
+  (Stewart et al. (2020) <doi:10.1177/8755293019878185> and
+  Hashash et al. (2020) <doi:10.1177/8755293019878193>, with the
+  2017 PEER-report generation retained as an option), with
+  inter-period correlation via
+  Baker & Jayaram (2008) <doi:10.1193/1.2857544>; (3) Monte Carlo
+  ensemble of six empirical Newmark sliding-block displacement models
+  (Ambraseys & Menu (1988) <doi:10.1002/eqe.4290160704>,
+   Jibson (2007) <doi:10.1016/j.enggeo.2007.01.013>,
+   Saygili & Rathje (2008) <doi:10.1061/(ASCE)1090-0241(2008)134:6(790)>,
+   Bray & Travasarou (2007) <doi:10.1061/(ASCE)1090-0241(2007)133:4(381)>,
+   Bray & Macedo (2017) <doi:10.1016/j.soildyn.2017.05.024>,
+   and the Bray and Macedo shallow-crustal update) with coherent
+  correlated draws; (4) log-log inversion to the performance-based
+  seismic coefficient kmax at user-specified displacement targets. All
+  outputs are 'data.table' objects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyDataCompression: xz
+URL: https://averriK.github.io/newmark/
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2)
+Imports: data.table, digest, Hmisc, mvtnorm, randomForest, rpart,
+        readxl, stats, stringr, triangle, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, devtools
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-16 12:20:49 UTC; averrik
+Author: Alejandro Verri Kozlowski [aut, cre, cph]
+Maintainer: Alejandro Verri Kozlowski <averri@fi.uba.ar>
+Repository: CRAN
+Date/Publication: 2026-07-16 14:00:24 UTC

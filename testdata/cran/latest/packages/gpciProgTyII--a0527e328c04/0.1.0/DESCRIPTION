@@ -1,0 +1,65 @@
+Package: gpciProgTyII
+Type: Package
+Title: Generalized Process Capability Indices under Progressive Type-II
+        Censoring
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi",
+           email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Sumit", "Kumar",
+           email = "stats.sumitbhal@gmail.com",
+           role = "aut"),
+    person("Arvind", "Pandey",
+           email = "arvindmzu@gmail.com",
+           role = "aut"),
+    person("Bhupendra", "Singh",
+           email = "bhupendra.rana@gmail.com",
+           role = "aut"),
+    person("Vrijesh", "Tripathi",
+           email = "vrijesh.tripathi@uwi.edu",
+           role = "aut")
+    )
+Description: Provides a comprehensive generalized framework for parameter estimation 
+    and Generalized Process Capability Indices (GPCIs) under Progressive Type-II 
+    censored data using the MleCensoR package. Accepts user-supplied probability 
+    density functions (PDF/PMF), cumulative distribution functions (CDF), and survival 
+    functions (SF). Computes classical and generalized capability indices including Cpy 
+    (Maiti et al., 2010 <doi:10.1080/16843703.2010.11673233>), Spmk (Dey & Saha, 2019 
+    <doi:10.1007/s41872-019-00081-4>), CpTk (Saha et al., 2019), Cpc (Saha et al., 2022 
+    <doi:10.1080/02664763.2021.1971632>), CNpmc (Alotaibi et al., 2022 
+    <doi:10.1155/2022/3135264>), CNpmkc (Saha et al., 2024 <doi:10.1142/S021853932450013X>), 
+    CNpk (Saha et al., 2018 <doi:10.1080/21681015.2018.1437793>), and Vannman's Cp(u,v) 
+    family. Evaluates parametric and non-parametric bootstrap confidence intervals 
+    at 90%, 95%, and 99% levels of significance. Computes Standard Errors, Mean 
+    Squared Error (MSE), Bias, and Coverage Probabilities for model parameters and 
+    capability indices.
+    References:
+    Balakrishnan & Aggarwala (2000) <doi:10.1007/978-1-4612-1186-0>,
+    Maiti, Saha & Nanda (2010) <doi:10.1080/16843703.2010.11673233>,
+    Saha, Dey & Maiti (2018) <doi:10.1080/21681015.2018.1437793>,
+    Dey & Saha (2019) <doi:10.1007/s41872-019-00081-4>,
+    Saha, Dey & Maiti (2019),
+    Alotaibi, Dey & Saha (2022) <doi:10.1155/2022/3135264>,
+    Saha, Dey & Nadarajah (2022) <doi:10.1080/02664763.2021.1971632>,
+    Saha, Tripathi & Dey (2024) <doi:10.1142/S021853932450013X>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices, numDeriv, boot, MleCensoR
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-31 00:05:22 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Sumit Kumar [aut],
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 19:20:02 UTC

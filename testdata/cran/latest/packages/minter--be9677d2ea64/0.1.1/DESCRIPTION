@@ -1,0 +1,31 @@
+Package: minter
+Title: Effect Sizes for Meta-Analysis of Interactions from Factorial
+        Experiments
+Version: 0.1.1
+Authors@R: c(
+    person("Facundo", "Decunta", email = "fdecunta@agro.uba.ar", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-5774-1085")),
+    person("Shinichi", "Nakagawa", email = "shinichi.nakagawa@ualberta.ca", role = c("ctb")),
+    person("Daniel", "Noble", email = "daniel.noble@anu.edu.au", role = c("ctb"))
+    )
+Description: Compute effect sizes and their sampling variances from factorial experimental designs. The package supports calculation of simple effects, overall effects, and interaction effects for use in factorial meta-analyses. See Gurevitch et al. (2000) <doi:10.1086/303337>, Morris et al. (2007) <doi:10.1890/06-0442>, Lajeunesse (2011) <doi:10.1890/11-0423.1> and Macartney et al. (2022) <doi:10.1016/j.neubiorev.2022.104554>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://fdecunta.github.io/minter/
+BugReports: https://github.com/fdecunta/minter/issues
+Imports: checkmate
+Depends: R (>= 3.5)
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-03 15:18:52 UTC; fd
+Author: Facundo Decunta [aut, cre] (ORCID:
+    <https://orcid.org/0009-0004-5774-1085>),
+  Shinichi Nakagawa [ctb],
+  Daniel Noble [ctb]
+Maintainer: Facundo Decunta <fdecunta@agro.uba.ar>
+Repository: CRAN
+Date/Publication: 2026-05-03 15:50:02 UTC

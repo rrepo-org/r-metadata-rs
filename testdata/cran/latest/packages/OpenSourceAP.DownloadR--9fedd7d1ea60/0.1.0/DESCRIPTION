@@ -1,0 +1,23 @@
+Package: OpenSourceAP.DownloadR
+Title: Download Open Source Asset Pricing (OpenAP) Data Directly
+Version: 0.1.0
+Authors@R: 
+    c(person("Tom", "Zimmermann", email = "tom.zimmermann@uni-koeln.de", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0368-5303")),
+    person("Justus", "Boeker", email = "jboeker2@smail.uni-koeln.de", role = c("ctb")))
+Description: Convenient download functions enabling access Open Source Asset Pricing (OpenAP) data. This package enables users to download predictor portfolio returns (over 200 cross-sectional predictors with multiple portfolio construction methods) and firm characteristics (over 200 characteristics replicated from the academic asset pricing literature). Center for Research in Security Prices (CRSP)-based variables such as Price, Size, and Short-term Reversal can be downloaded with a Wharton Research Data Services (WRDS, <https://wrds-www.wharton.upenn.edu/>) subscription. For a full list of what is available, see <https://www.openassetpricing.com/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+Imports: httr, rvest, stringr, jsonlite, magrittr, dplyr, data.table,
+        R6, withr, lubridate, DBI, RPostgres, getPass
+NeedsCompilation: no
+Packaged: 2026-01-12 16:39:12 UTC; wme889
+Author: Tom Zimmermann [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0368-5303>),
+  Justus Boeker [ctb]
+Maintainer: Tom Zimmermann <tom.zimmermann@uni-koeln.de>
+Repository: CRAN
+Date/Publication: 2026-01-17 19:50:13 UTC

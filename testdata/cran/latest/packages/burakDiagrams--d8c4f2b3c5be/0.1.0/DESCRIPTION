@@ -1,0 +1,43 @@
+Package: burakDiagrams
+Title: Interactive Burak Diagrams for Model Performance Evaluation
+Version: 0.1.0
+Authors@R: 
+    person(
+      given = "Omer Burak",
+      family = "Akgun",
+      email = "oburakakgun@gmail.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-9856-9662")
+    )
+Description: Creates interactive 3D Burak Diagrams for evaluating
+    climatological and hydrological simulations. The BD-Clim framework
+    evaluates climatological simulations by representing correlation,
+    standard deviation, centered root mean-square difference, bias, and
+    root mean-square difference. The BD-HydNSE framework evaluates
+    hydrological simulations using correlation, standard deviation,
+    centered root mean-square difference, percent bias, and
+    Nash-Sutcliffe efficiency. The BD-HydKGE framework evaluates
+    hydrological simulations using correlation, standard deviation,
+    centered root mean-square difference, percent bias, and Kling-Gupta
+    efficiency. The frameworks extend the Taylor Diagram (
+    Taylor (2001) <doi:10.1029/2000JD900719> ) by introducing an orthogonal
+    axis for bias and representing selected performance metrics as
+    surfaces in the resulting 3D space. Nash-Sutcliffe efficiency was
+    introduced by Nash and Sutcliffe (1970)
+    <doi:10.1016/0022-1694(70)90255-6>, and Kling-Gupta efficiency was
+    proposed by Gupta et al. (2009)
+    <doi:10.1016/j.jhydrol.2009.08.003>. The diagrams are interactive and
+    can optionally be saved as HTML files.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: htmlwidgets, magrittr, plotly, scales, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-16 12:03:52 UTC; omerburakakgun
+Author: Omer Burak Akgun [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9856-9662>)
+Maintainer: Omer Burak Akgun <oburakakgun@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-23 13:50:26 UTC

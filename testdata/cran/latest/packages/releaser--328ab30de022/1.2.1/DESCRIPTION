@@ -1,0 +1,24 @@
+Type: Package
+Package: releaser
+Title: Help with Preparing a New Version of an R Package
+Version: 1.2.1
+Authors@R: 
+    person("Tanguy", "Barthelemy", , "tanguy.barthelemy@insee.fr", role = c("aut", "cre", "art", "cph"))
+Description: Helps to prepare a release. Before releasing an R package it is important to update the DESCRIPTION file and the changelog. This package prepares these files and also updates the versions according to the branches. It relies heavily on the 'desc' packages.
+License: MIT + file LICENSE
+URL: https://github.com/TanguyBarthelemy/releaser,
+        https://tanguybarthelemy.github.io/releaser/
+BugReports: https://github.com/TanguyBarthelemy/releaser/issues
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: gh, desc, base64enc, roxygen2
+Suggests: rlang, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-GB
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-30 14:37:07 UTC; onyxia
+Author: Tanguy Barthelemy [aut, cre, art, cph]
+Maintainer: Tanguy Barthelemy <tanguy.barthelemy@insee.fr>
+Repository: CRAN
+Date/Publication: 2026-07-30 16:50:08 UTC

@@ -1,0 +1,49 @@
+Package: Upsilon
+Type: Package
+Title: Another Test of Association for Count Data
+Version: 0.1.1
+Date: 2026-03-07
+Authors@R: c(person(given = "Xuye",
+                    family = "Luo",
+                    role = c("aut"),
+                    email = "luoxuye@nmsu.edu"),
+             person(given = "Joe",
+                    family = "Song",
+                    role = c("aut", "cre"),
+                    email = "joemsong@nmsu.edu",
+                    comment = c(ORCID = "0000-0002-6883-6547")))
+Description: The Upsilon test assesses association among
+ categorical variables against the null hypothesis of
+ independence (Luo 2021 MS thesis; ProQuest Publication
+ No. 28649813). While promoting dominant function patterns,
+ it demotes non-dominant function patterns. It is robust
+ to low expected count---continuity correction
+ like Yates's seems unnecessary. Using a common null
+ population following a uniform distribution, contingency
+ tables are comparable by statistical significance---not
+ the case for most association tests defining a varying
+ null population by tensor product of observed marginals.
+ Although Pearson's chi-squared test, Fisher's exact test,
+ and Woolf's G-test (related to mutual information) are
+ useful in some contexts, the Upsilon test appeals to
+ ranking association patterns not necessarily following
+ same marginal distributions, such as in count data
+ from DNA and RNA sequencing---a rapidly expanding frontier
+ in modern science.
+Encoding: UTF-8
+License: LGPL (>= 3)
+Imports: Rcpp (>= 1.0.8), Rdpack, ggplot2 (>= 3.4.0)
+RdMacros: Rdpack
+LinkingTo: Rcpp
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), DescTools, USP, metan,
+        FunChisq, patchwork
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-03-07 12:54:01 UTC; joesong
+Author: Xuye Luo [aut],
+  Joe Song [aut, cre] (ORCID: <https://orcid.org/0000-0002-6883-6547>)
+Maintainer: Joe Song <joemsong@nmsu.edu>
+Repository: CRAN
+Date/Publication: 2026-03-07 13:20:08 UTC

@@ -1,0 +1,36 @@
+Package: drhur
+Type: Package
+Title: Learning R with Dr. Hu
+Version: 2.0.1
+Authors@R: c(
+    person("Yue", "Hu", role = c("aut", "cre"), email = "yuehu@tsinghua.edu.cn"),
+    person("Qian", "Qiu", role = c("ctb", "trl"), email = "qianlaile96@gmail.com"),
+    person("Xinyi", "Ye", role = c("ctb", "trl"), email = "yexinyi98@outlook.com"),
+    person("Yufei", "Sun", role = c("ctb"), email = "sunyf20@mails.tsinghua.edu.cn")
+    )
+Description: Provides interactive workshops for learning R easily and happily.
+    Each workshop is a self-contained 'Quarto' Live document whose code cells run
+    in the browser via 'WebAssembly', so learners can read the instructions and
+    run the exercises side by side without a local R setup. The materials
+    accompany the "Learning R with Dr. Hu" workshop series.
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+Encoding: UTF-8
+URL: https://www.drhuyue.site/drhur/,
+        https://github.com/sammo3182/drhur
+BugReports: https://github.com/sammo3182/drhur/issues
+LazyData: true
+SystemRequirements: Quarto command-line tool (https://quarto.org)
+Depends: R(>= 3.6.0)
+Imports: quarto
+Suggests: servr, rmarkdown, scales, modelsummary, knitr, tidyverse
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-14 01:37:46 UTC; HU Yue
+Author: Yue Hu [aut, cre],
+  Qian Qiu [ctb, trl],
+  Xinyi Ye [ctb, trl],
+  Yufei Sun [ctb]
+Maintainer: Yue Hu <yuehu@tsinghua.edu.cn>
+Repository: CRAN
+Date/Publication: 2026-07-14 02:30:02 UTC

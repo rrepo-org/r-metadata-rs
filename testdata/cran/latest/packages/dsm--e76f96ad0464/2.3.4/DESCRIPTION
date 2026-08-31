@@ -1,0 +1,57 @@
+Package: dsm
+Maintainer: Laura Marshall <lhm@st-andrews.ac.uk>
+License: GPL (>= 2)
+Title: Density Surface Modelling of Distance Sampling Data
+LazyLoad: yes
+Authors@R: 
+  c(person(given=c("Laura"),
+           family="Marshall",
+           email = "lhm@st-andrews.ac.uk" , 
+           role = "cre"),
+    person(given=c("David", "L."),
+           family="Miller",
+           role=c("aut")),
+    person(given="Eric",
+           family="Rexstad",
+           role="ctb"),
+    person(given="Louise",
+           family="Burt",
+           role="ctb"),
+    person(given=c("Mark", "V."),
+           family="Bravington",
+           role="ctb"),
+    person(given="Sharon",
+           family="Hedley",
+           role="ctb"),
+    person(given="Megan",
+           family="Ferguson",
+           role="ctb"),
+    person(given="Natalie",
+           family="Kelly",
+           role="ctb"))
+Description: Density surface modelling of line transect data. A Generalized
+    Additive Model-based approach is used to calculate spatially-explicit estimates
+    of animal abundance from distance sampling (also presence/absence and strip
+    transect) data. Several utility functions are provided for model checking,
+    plotting and variance estimation.
+Version: 2.3.4
+Language: en-GB
+Encoding: UTF-8
+URL: https://github.com/DistanceDevelopment/dsm
+BugReports: https://github.com/DistanceDevelopment/dsm/issues
+Depends: R (>= 3.5.0), mgcv (>= 1.8-23), mrds (>= 2.1.16), numDeriv
+Imports: nlme, ggplot2, plyr, statmod
+Suggests: Distance, sp, tweedie, testthat
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-08-04 17:05:58 UTC; lhm
+Author: Laura Marshall [cre],
+  David L. Miller [aut],
+  Eric Rexstad [ctb],
+  Louise Burt [ctb],
+  Mark V. Bravington [ctb],
+  Sharon Hedley [ctb],
+  Megan Ferguson [ctb],
+  Natalie Kelly [ctb]
+Repository: CRAN
+Date/Publication: 2025-09-02 09:50:02 UTC

@@ -1,0 +1,44 @@
+Package: Qploidy
+Title: Estimation of Ploidy and Detection of Aneuploidy Using
+        Genotyping Data
+Version: 1.5.4
+Authors@R: c(person(given='Cristiane', 
+                    family='Taniguti', 
+                    email = 'ctaniguti@ufl.edu', 
+                    role = c('cre', 'aut')),
+             person(given='Jeekin', 
+                    family='Lau', 
+                    email = 'Jeekin.Lau@usda.gov', 
+                    role = c('ctb')),
+             person(given = "Oscar",
+                    family = "Riera-Lizarazu",
+                    role = c("ctb"))
+             )
+Description: Provides functions for estimating ploidy levels and detecting aneuploidy 
+             in individuals using allele intensities or allele count data from high-throughput genotyping platforms, including 
+             single nucleotide polymorphism (SNP) arrays and sequencing-based technologies. Implements method described 
+             in Taniguti et al. (2025) <doi:10.1002/tpg2.70044> an extended version of the 'PennCNV' 
+             signal standardization method by Wang et al. (2007) <doi:10.1101/gr.6861907> for higher ploidy 
+             levels. Computes B-allele frequencies (BAF), z-scores, and identifies copy number variation patterns.
+License: AGPL (>= 3)
+Depends: R (>= 3.6.0)
+biocViews:
+Imports: dplyr, ggplot2, tidyr, vroom, ggpubr, multtest, vcfR, stringr,
+        magrittr
+Encoding: UTF-8
+URL: https://github.com/Cristianetaniguti/Qploidy
+BugReports: https://github.com/Cristianetaniguti/Qploidy/issues
+RoxygenNote: 7.3.3
+Suggests: covr, spelling, updog, rmdformats, knitr (>= 1.10),
+        rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-10 14:37:34 UTC; ctaniguti
+Author: Cristiane Taniguti [cre, aut],
+  Jeekin Lau [ctb],
+  Oscar Riera-Lizarazu [ctb]
+Maintainer: Cristiane Taniguti <ctaniguti@ufl.edu>
+Repository: CRAN
+Date/Publication: 2026-07-11 16:20:08 UTC

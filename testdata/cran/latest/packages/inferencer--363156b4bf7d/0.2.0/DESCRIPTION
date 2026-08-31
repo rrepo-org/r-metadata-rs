@@ -1,0 +1,41 @@
+Package: inferencer
+Type: Package
+Title: Simple Unified Wrappers for Hosted Foundation Model Inference
+        APIs
+Version: 0.2.0
+Authors@R: 
+    person(
+      given = "Oliver",
+      family = "Zhou",
+      role = c("aut", "cre"),
+      email = "oliver.yxzhou@gmail.com"
+    )
+Author: Oliver Zhou [aut, cre]
+Maintainer: Oliver Zhou <oliver.yxzhou@gmail.com>
+Description: Provides lightweight R wrappers for querying and listing models
+    from several hosted foundation model inference platforms, currently
+    including 'OpenAI' <https://developers.openai.com/api/docs/>,
+    'Google Gemini' <https://ai.google.dev/gemini-api/docs>,
+    'Groq' <https://console.groq.com/docs/>,
+    'OpenRouter' <https://openrouter.ai/docs/>,
+    'Cerebras' <https://inference-docs.cerebras.ai/>, and
+    'Ollama Cloud' <https://docs.ollama.com/cloud>.
+    The package is designed for simple inference workflows and quick
+    experimentation, with minimal abstraction and a consistent interface
+    across providers. It includes helper functions for model discovery, text
+    generation, embeddings, image generation, and multimodal inputs, while
+    leaving room for future support of provider-specific parameters and
+    advanced options.
+License: MIT + file LICENSE
+URL: https://github.com/OliverLDS/inferencer
+BugReports: https://github.com/OliverLDS/inferencer/issues
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: data.table, httr2, jsonlite
+Suggests: knitr, rmarkdown, testthat
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-04 05:11:00 UTC; oliver
+Repository: CRAN
+Date/Publication: 2026-08-04 06:50:02 UTC

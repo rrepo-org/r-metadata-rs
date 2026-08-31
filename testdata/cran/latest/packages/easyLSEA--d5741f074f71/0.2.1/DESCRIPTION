@@ -1,0 +1,41 @@
+Package: easyLSEA
+Title: Lipid Set Enrichment Analysis with Dual KS and 'fgsea' Engines
+Version: 0.2.1
+Authors@R: 
+    person("David", "Guardamino Ojeda",
+           role = c("aut", "cre"),
+           email = "david.guardamino@gmail.com",
+           comment = c(ORCID = "0000-0002-3122-2218"))
+Description: Provides biology-aware lipid set enrichment analysis (LSEA)
+    for lipidomics data using dual engines: the Kolmogorov-Smirnov test
+    and the fast gene set enrichment algorithm from the 'fgsea' package.
+    Annotates lipids into biological groups at three levels (lipid class,
+    LIPID MAPS category, functional category) and tests for coordinated
+    directional shifts between conditions. Includes fatty acid chain
+    analysis with trend plots weighted by lipid abundance (Spearman rank
+    correlation, configurable smoothing), wide-format chain position
+    output (sn-1, sn-2, sn-3, sn-4), annotation confidence filtering, and
+    export utilities for reproducible reporting in CSV, 'Excel', and PDF
+    formats. Vignettes are available in English and Spanish. Methods are
+    based on Subramanian et al. (2005) <doi:10.1073/pnas.0506580102> and
+    Korotkevich et al. (2021) <doi:10.1101/060012>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+RoxygenNote: 8.0.0
+Imports: ggplot2, withr
+Suggests: fgsea, knitr, openxlsx, rmarkdown, spelling, testthat (>=
+        3.0.0)
+URL: https://github.com/DavidGO464/easyLSEA
+BugReports: https://github.com/DavidGO464/easyLSEA/issues
+LazyData: true
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-08 17:35:46 UTC; david_md
+Author: David Guardamino Ojeda [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3122-2218>)
+Maintainer: David Guardamino Ojeda <david.guardamino@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-16 19:40:02 UTC

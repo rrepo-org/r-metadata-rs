@@ -1,0 +1,24 @@
+Package: KernSmoothIRT
+Type: Package
+Title: Nonparametric Item Response Theory
+Version: 6.6
+Date: 2026-07-22
+Authors@R: c(
+    person(given = "Angelo", family = "Mazza", role = "aut"),
+    person(given = "Antonio", family = "Punzo", role = "aut"),
+    person(given = "Brian", family = "McGuire",
+           email = "mcguirebc@gmail.com", role = c("aut", "cre"))
+    )
+Description: Fits nonparametric item and option characteristic curves using kernel smoothing. It allows for optimal selection of the smoothing bandwidth using cross-validation and a variety of exploratory plotting tools. The kernel smoothing is based on methods described in Silverman, B.W. (1986). Density Estimation for Statistics and Data Analysis. Chapman & Hall, London.
+License: GPL-2
+LazyLoad: yes
+Imports: Rcpp, plotrix, rgl, methods
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-07-22 23:50:29 UTC; brianmcguire
+Author: Angelo Mazza [aut],
+  Antonio Punzo [aut],
+  Brian McGuire [aut, cre]
+Maintainer: Brian McGuire <mcguirebc@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-23 02:10:02 UTC

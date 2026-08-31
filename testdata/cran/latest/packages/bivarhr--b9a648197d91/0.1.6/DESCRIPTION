@@ -1,0 +1,34 @@
+Package: bivarhr
+Title: Bivariate Hurdle Regression with Bayesian Model Averaging
+Version: 0.1.6
+Authors@R: 
+    person(given = "José Mauricio",
+           family = "Gómez Julián",
+           email = "isadore.nabi@pm.me",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-2412-3150"))
+Description: Provides tools for fitting bivariate hurdle negative binomial 
+    models with horseshoe priors, Bayesian Model Averaging (BMA) via stacking, 
+    and comprehensive causal inference methods including G-computation, 
+    transfer entropy, Threshold Vector Autoregressive (TVAR) and Smooth 
+    Transition Autoregressive (STAR) models, Dynamic Bayesian Networks (DBN), 
+    Hidden Markov Models (HMM), and sensitivity analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats, utils, grDevices, dplyr (>= 1.1.0), rlang, data.table
+        (>= 1.14.0), tidyr, tibble, readr, cli, furrr, future,
+        future.apply, posterior, loo (>= 2.5.0), progressr
+Suggests: cmdstanr, testthat (>= 3.0.0), MASS, RTransferEntropy,
+        bnlearn, sensemakr, CausalImpact, bsts, vars, tsDyn, openxlsx,
+        Rgraphviz
+Additional_repositories: https://stan-dev.r-universe.dev
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-06 20:29:42 UTC; josemgomezj
+Author: José Mauricio Gómez Julián [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-2412-3150>)
+Maintainer: José Mauricio Gómez Julián <isadore.nabi@pm.me>
+Config/roxygen2/version: 8.0.0
+Repository: CRAN
+Date/Publication: 2026-07-06 21:10:02 UTC

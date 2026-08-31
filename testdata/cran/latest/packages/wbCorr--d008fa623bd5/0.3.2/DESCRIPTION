@@ -1,0 +1,40 @@
+Package: wbCorr
+Title: Bivariate Within- and Between-Cluster Correlations
+Version: 0.3.2
+Authors@R: 
+    c(person("Pascal", "Küng", , "pascal.kueng@psychologie.uzh.ch", 
+             role = c("aut", "cre", "cph"),
+             comment = c(ORCID = "0000-0001-7346-9414")))
+Description: Separates supplied variables into within- and
+    between-cluster components and calculates bivariate correlations for
+    each level separately. For Pearson correlations, the centered-score
+    decomposition corresponds to commonly used between- and within-cluster
+    correlations reviewed by Tu et al. (2025) <doi:10.1002/sim.10326>.
+    The package's descriptive Spearman option is distinct from the clustered
+    rank parameters introduced in that paper. The package is also
+    motivated by the distinction between within- and between-person
+    variation described by Curran and Bauer (2011)
+    <doi:10.1146/annurev.psych.093008.100356> and by Hamaker (2024)
+    <doi:10.1080/00273171.2022.2155930>.
+    The package is intended for longitudinal or otherwise clustered data
+    where researchers need transparent correlation matrices before fitting
+    more complex multilevel models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Suggests: httr, knitr, psych, rmarkdown, spelling, testthat (>= 3.0.0)
+Imports: methods, writexl
+Config/testthat/edition: 3
+Language: en-US
+URL: https://pascal-kueng.github.io/wbCorr/,
+        https://github.com/Pascal-Kueng/wbCorr
+BugReports: https://github.com/Pascal-Kueng/wbCorr/issues
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-23 11:16:08 UTC; pascalkueng
+Author: Pascal Küng [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7346-9414>)
+Maintainer: Pascal Küng <pascal.kueng@psychologie.uzh.ch>
+Repository: CRAN
+Date/Publication: 2026-07-23 18:20:02 UTC

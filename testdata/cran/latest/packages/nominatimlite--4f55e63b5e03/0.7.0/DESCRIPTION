@@ -1,0 +1,55 @@
+Type: Package
+Package: nominatimlite
+Title: Interface to the 'Nominatim' API
+Version: 0.7.0
+Authors@R: c(
+    person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8457-4658")),
+    person("Jindra", "Lacko", role = c("ctb", "rev"),
+           comment = c(ORCID = "0000-0002-0375-5156")),
+    person("Alex", "White", role = "ctb"),
+    person("OpenStreetMap contributors", role = "cph",
+           comment = "For the osm_amenities data")
+  )
+Description: Provides a lightweight interface to the 'Nominatim' API
+    <https://nominatim.org/release-docs/latest/>. It supports free-form
+    and structured address searches, searches for addresses from
+    coordinates, amenity lookup and address lookup by 'OpenStreetMap'
+    object identifier. It returns results as 'tibble' data frames or 'sf'
+    objects.
+License: MIT + file LICENSE
+URL: https://dieghernan.github.io/nominatimlite/,
+        https://github.com/dieghernan/nominatimlite
+BugReports: https://github.com/dieghernan/nominatimlite/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.0.0), jsonlite (>= 1.7.0), sf (>= 0.9.0), tools,
+        utils
+Suggests: curl, ggplot2, knitr, quarto, testthat (>= 3.3.0), tibble,
+        withr
+VignetteBuilder: quarto
+Config/Needs/website: dieghernan/gitdevr, pak, tidyverse, leaflet,
+        reactable, crosstalk, tidyr, htmltools, arcgeocoder,
+        tidygeocoder
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Copyright: See file inst/COPYRIGHTS.
+Encoding: UTF-8
+LazyData: true
+X-schema.org-applicationCategory: cartography
+X-schema.org-keywords: r, openstreetmap, address, coordinates,
+        nominatim, reverse-search, rstats, r-package, cran,
+        api-wrapper, api, geocoder, geocoding, gis, reverse-geocoder,
+        reverse-geocoding, shapefile, spatial
+NeedsCompilation: no
+Packaged: 2026-08-25 10:16:18 UTC; diego
+Author: Diego Hernangómez [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8457-4658>),
+  Jindra Lacko [ctb, rev] (ORCID:
+    <https://orcid.org/0000-0002-0375-5156>),
+  Alex White [ctb],
+  OpenStreetMap contributors [cph] (For the osm_amenities data)
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 11:20:18 UTC

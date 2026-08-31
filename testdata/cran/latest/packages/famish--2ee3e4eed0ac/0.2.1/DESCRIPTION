@@ -1,0 +1,29 @@
+Package: famish
+Type: Package
+Title: Flexibly Tune Families of Probability Distributions
+Version: 0.2.1
+Authors@R: c(
+    person("Vincenzo", "Coia", email = "vincenzo.coia@gmail.com", 
+           role = c("aut", "cre", "cph"))
+  )
+Description: Fits probability distributions to data and plugs into the
+    'probaverse' suite of R packages so distribution objects are ready for
+    further manipulation and evaluation. Supports methods such as maximum
+    likelihood and L-moments, and provides diagnostics including empirical
+    ranking and quantile score.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: checkmate, distionary, fitdistrplus, ismev, lmom, rlang,
+        stats, vctrs
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://famish.probaverse.com/,
+        https://github.com/probaverse/famish/
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-05 15:11:27 UTC; VCoia
+Author: Vincenzo Coia [aut, cre, cph]
+Maintainer: Vincenzo Coia <vincenzo.coia@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-05 15:50:02 UTC

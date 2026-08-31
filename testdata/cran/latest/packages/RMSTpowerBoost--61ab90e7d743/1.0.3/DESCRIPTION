@@ -1,0 +1,45 @@
+Package: RMSTpowerBoost
+Type: Package
+Title: Power and Sample Size for Restricted Mean Survival Time Based
+        Clinical Trials
+Version: 1.0.3
+Authors@R: c(
+  person(given = "Arnab", family = "Aich",
+         role = c("aut", "cre"),
+         email = "aaich@fsu.edu",
+         comment = c(ORCID = "0009-0005-7801-6701")),
+  person(given = "Yuan", family = "Zhang",
+         role = "aut",
+         email = "yzhang@uthsc.edu",
+         comment = c(ORCID = "0000-0001-7626-9514"))
+         )
+Description: Tools for Restricted Mean Survival Time based study design and 
+    analysis planning. Provides power and sample size calculations for two-arm studies using direct 
+    modeling approaches from the literature, including
+    semiparametric additive models, 
+    linear Inverse Probability Weighting based models 
+    from Wei (2014) <doi:10.1093/biostatistics/kxt050>, 
+    multiplicative stratified models from 
+    Wang (2019) <doi:10.1002/sim.8356>, and
+    covariate-dependent censoring methods from 
+    Wang (2018) <doi:10.1007/s10985-017-9391-6>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: survival, mgcv, ggplot2, stats, utils, dplyr, magrittr,
+        future, future.apply, knitr
+Suggests: roxygen2, shiny, shinyjs, bslib, DT, plotly, kableExtra,
+        survminer, rmarkdown, mice, tidyr, purrr, tibble, htmltools,
+        tinytex, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+URL: https://uthsc-zhang.github.io/RMSTpowerBoost-Package/,
+BugReports: https://github.com/UTHSC-Zhang/RMSTpowerBoost-Package/issues
+NeedsCompilation: no
+Packaged: 2026-04-26 19:51:30 UTC; arnab
+Author: Arnab Aich [aut, cre] (ORCID: <https://orcid.org/0009-0005-7801-6701>),
+  Yuan Zhang [aut] (ORCID: <https://orcid.org/0000-0001-7626-9514>)
+Maintainer: Arnab Aich <aaich@fsu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-28 19:50:02 UTC

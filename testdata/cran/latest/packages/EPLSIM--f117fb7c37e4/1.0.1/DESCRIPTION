@@ -1,0 +1,30 @@
+Package: EPLSIM
+Type: Package
+Title: Partial Linear Single Index Models for Environmental Mixture
+        Analysis
+Version: 1.0.1
+Date: 2026-07-20
+Authors@R: c(person("Yuyan", "Wang", role = c("aut", "cre"), 
+             email = "yuyan.wang@nyumc.org", comment = c(ORCID = "0000-0003-3747-0762")),
+             person("Mengling", "Liu", role = c("aut", "ctb") ),
+             person("Myeonggyun", "Lee", role = c("ctb") ))
+Maintainer: Yuyan Wang <yuyan.wang@nyumc.org>
+Description: Collection of ancillary functions and utilities for Partial Linear Single Index Models for Environmental mixture analyses, which currently provides functions for scalar, binary and count outcomes. The outputs of these functions include the single index function, single index coefficients, partial linear coefficients, mixture overall effect, exposure main and interaction effects, and differences of quartile effects. In the future, we will add functions for ordinal, survival, and longitudinal outcomes, as well as models for time-dependent exposures. See Wang et al (2020) <doi:10.1186/s12940-020-00644-4> for an overview.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 2.10)
+Imports: splines, ggplot2, MASS, ciTools, mgcv, stats, graphics, utils
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+URL: https://github.com/YuyanWangSixTwo/EPLSIM
+BugReports: https://github.com/YuyanWangSixTwo/EPLSIM/issues
+VignetteBuilder: knitr
+LazyData: true
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-20 15:31:46 UTC; wangy40
+Author: Yuyan Wang [aut, cre] (ORCID: <https://orcid.org/0000-0003-3747-0762>),
+  Mengling Liu [aut, ctb],
+  Myeonggyun Lee [ctb]
+Repository: CRAN
+Date/Publication: 2026-07-20 18:30:02 UTC

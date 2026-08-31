@@ -1,0 +1,36 @@
+Package: ctlr
+Title: Clinical Tolerance Limits for Assessing Agreement
+Version: 0.1.0
+Authors@R: 
+    c(
+        person("Eliane", "Maalouf", email = "eliane.malouf@gmail.com", role = "aut", comment = c(ORCID = "0000-0003-1549-7948")), 
+        person("Patrick", "Taffé", email = "patrick.taffe@unisante.ch", role = c("cre", "aut", "cph"), comment = c(ORCID = "0000-0002-2049-6651"))
+    )
+Description: Implements clinical tolerance limits (CTL) methodology for assessing 
+    agreement between two measurement methods. Estimates the true latent trait using 
+    Best Linear Unbiased Predictors (BLUP), models bias and variance components, and 
+    calculates overall and conditional agreement probabilities. Provides visualization 
+    tools including tolerance limit plots and conditional probability of agreement plots 
+    with confidence bands. 
+    This package is based on methods described in Taffé (2016)
+    <doi:10.1177/0962280216666667>, Taffé (2019) 
+    <doi:10.1177/0962280219844535>, and 'Stata' package Taffé (2025) 
+    <doi:10.1177/1536867X251365501>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+LazyData: true
+Suggests: testthat (>= 3.0.0), withr (>= 2.0.0)
+Config/testthat/edition: 3
+Imports: binom (>= 1.1-1.1), dplyr (>= 1.1.0), ggplot2 (>= 3.3.0), lme4
+        (>= 1.1-35), lmtest (>= 0.9-40), MASS (>= 7.3-60), mfp2 (>=
+        1.0.1), sandwich (>= 3.0-0), stats, utils
+NeedsCompilation: no
+Packaged: 2026-03-16 18:02:07 UTC; dl-rookie
+Author: Eliane Maalouf [aut] (ORCID: <https://orcid.org/0000-0003-1549-7948>),
+  Patrick Taffé [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-2049-6651>)
+Maintainer: Patrick Taffé <patrick.taffe@unisante.ch>
+Repository: CRAN
+Date/Publication: 2026-03-20 10:50:02 UTC

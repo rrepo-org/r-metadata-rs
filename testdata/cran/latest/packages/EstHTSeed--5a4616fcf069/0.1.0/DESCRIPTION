@@ -1,0 +1,19 @@
+Package: EstHTSeed
+Type: Package
+Title: Hydro Time Analysis of Seed Germination
+Version: 0.1.0
+Description: Dry seed germinates by imbibing water from soil where the physiological process of germination starts after sufficient water has been imbibed by the seed. The germination time of the seed is inversely proportion to the difference between soil water potential and the base seed water potential which is described by hydro time model (Bradford, 2002 <https://www.jstor.org/stable/4046371>). The parameters of the model like speed of germination, stress tolerance, uniformity of germination are unknown fixed values (Ghosh et al., 2026 <doi:10.1111/aab.70041>) which are to be estimated using statistical regression model where the validity of the adopted statistical  model has been established theoretically. The package will help to estimate the tuning parameter for proportion of viable seeds along with standard error and p- values for inference.
+Authors@R: c(person("Dr. Himadri", "Ghosh", role = c("aut", "cre"), email = "hghosh@gmail.com"), person("Dr. Debopam", "Rakshit", role = "aut"), person("Dr. Md", "Yeasin", role = "aut"), person("Mr. Saikath", "Das", role = "aut"))
+Author: Dr. Himadri Ghosh [aut, cre],
+  Dr. Debopam Rakshit [aut],
+  Dr. Md Yeasin [aut],
+  Mr. Saikath Das [aut]
+Maintainer: Dr. Himadri Ghosh <hghosh@gmail.com>
+Imports: stats, dplyr, ggplot2, tidyr
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-05 11:50:08 UTC; Debopam
+Repository: CRAN
+Date/Publication: 2026-03-09 17:10:12 UTC

@@ -1,0 +1,26 @@
+Package: TrackTrap
+Title: Model Cumulative Growing Degree-Days for Pest Monitoring
+Version: 1.0.1
+Authors@R: c(
+  person("Santosh", "Bhandari", email = "santoshbhandari4556@gmail.com", role = c("aut", "cre")),
+  person("Lalit", "Kharel", email = "klalitkharel@gmail.com", role = c("aut")),
+  person("Mahesh", "Ghimire", email = "maesghimire@gmail.com", role = c("aut"))
+  )
+Description: Pest monitoring is crucial, especially during the early season, to understand the distribution and the proliferation of the target pest. Raw count data from pest monitoring/traps can be coupled with derived environmental variables such as growing degree-day ('GDD') to get useful insights about the pest phenology. This package pulls temperature data from the 'Daymet' application programming interface ('API', <https://daymet.ornl.gov>), or 'Open-Meteo' ('API', <https://open-meteo.com/>) or manual user-supplied CSV file from the California Irrigation Management Information System ('CIMIS', <https://cimis.water.ca.gov>), for a user-specified time period and calculates cumulative growing degree-days. Users provide intended date range, pest of concern, and the geographic coordinates of the trap location to track pest emergence and phenology throughout the growing season.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5)
+LazyData: true
+Imports: daymetr, dplyr, degday, ggplot2, httr, magrittr, utils, rlang
+Config/roxygen2/version: 8.1.0
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-19 21:45:28 UTC; r3113219
+Author: Santosh Bhandari [aut, cre],
+  Lalit Kharel [aut],
+  Mahesh Ghimire [aut]
+Maintainer: Santosh Bhandari <santoshbhandari4556@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 06:42:04 UTC

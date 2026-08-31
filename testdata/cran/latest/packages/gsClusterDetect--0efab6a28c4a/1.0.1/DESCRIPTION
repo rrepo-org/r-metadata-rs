@@ -1,0 +1,32 @@
+Package: gsClusterDetect
+Type: Package
+Title: Utilities for Geo-Spatial Cluster Detection and Significance
+        Classification
+Version: 1.0.1
+Authors@R: 
+    c(
+        person("Luke C.", "Mullany", email = "luke.mullany@jhuapl.edu", role = c("aut", "cre")),
+        person("Howard S.", "Burkom", role = "aut")
+    )
+Description: Provides utilities for manipulating time series of location-based counts of events to detect geo-spatial clusters. Significance of these clusters is determined using a set of models that classify based on a learned relationship between observed and the log(observed/expected) ratio of counts. The approach implemented here is similar to prospective space-time estimation of clusters using the scan statistic.
+URL: https://github.com/lmullany/gsClusterDetect,
+        https://lmullany.github.io/gsClusterDetect/
+BugReports: https://github.com/lmullany/gsClusterDetect/issues
+License: Apache License (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: cli, data.table (>= 1.16.0), sf
+Depends: R (>= 4.3)
+Suggests: ggplot2, plotly, tigris, testthat (>= 3.0.0), withr, knitr,
+        rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 13:39:59 UTC; mullalc1
+Author: Luke C. Mullany [aut, cre],
+  Howard S. Burkom [aut]
+Maintainer: Luke C. Mullany <luke.mullany@jhuapl.edu>
+Repository: CRAN
+Date/Publication: 2026-07-27 15:10:02 UTC

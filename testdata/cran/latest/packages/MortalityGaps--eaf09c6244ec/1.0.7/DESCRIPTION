@@ -1,0 +1,33 @@
+Package: MortalityGaps
+Type: Package
+Title: The Double-Gap Life Expectancy Forecasting Model
+Version: 1.0.7
+Authors@R: c(person("Marius D.", "Pascariu", role = c("aut", "cre"), email = "rpascariu@outlook.com", comment = c(ORCID = "0000-0002-2568-6489")))
+Description: Life expectancy is highly correlated over time among countries and 
+  between males and females. These associations can be used to improve forecasts. 
+  Here we have implemented a method for forecasting female life expectancy based on 
+  analysis of the gap between female life expectancy in a country compared with
+  the record level of female life expectancy in the world. Second, to forecast 
+  male life expectancy, the gap between male life expectancy and female life 
+  expectancy in a country is analysed. We named this method the Double-Gap model.
+  For a detailed description of the method see Pascariu et al. (2018). 
+  <doi:10.1016/j.insmatheco.2017.09.011>.
+License: GPL-3
+LazyData: TRUE
+Depends: R (>= 3.4.0)
+Imports: forecast (>= 8.4), MASS (>= 7.3), crch (>= 1.0), pbapply (>=
+        1.3), Rdpack (>= 0.9-0)
+Suggests: MortalityLaws (>= 1.6.0), knitr (>= 1.20), rmarkdown (>=
+        1.10), testthat (>= 2.0.0), covr (>= 3.1.0)
+RdMacros: Rdpack
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://github.com/mpascariu/MortalityGaps
+BugReports: https://github.com/mpascariu/MortalityGaps/issues
+NeedsCompilation: no
+Packaged: 2025-04-02 06:03:48 UTC; dump_
+Author: Marius D. Pascariu [aut, cre] (<https://orcid.org/0000-0002-2568-6489>)
+Maintainer: Marius D. Pascariu <rpascariu@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-04-02 06:30:02 UTC

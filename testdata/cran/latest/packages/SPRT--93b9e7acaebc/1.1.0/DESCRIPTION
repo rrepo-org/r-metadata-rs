@@ -1,0 +1,26 @@
+Package: SPRT
+Version: 1.1.0
+Title: Sequential Probability Ratio Test (SPRT) Method
+Authors@R: person("Huchesh", "Budihal", email = "hhbudihal17@gmail.com", role = c("aut", "cre"))
+Description: Provides functions to perform the Sequential Probability Ratio Test (SPRT) 
+  for hypothesis testing in Binomial, Poisson and Normal distributions. 
+  The package allows users to specify Type I and Type II error probabilities, 
+  decision thresholds, and compare null and alternative hypotheses sequentially 
+  as data accumulate. It includes visualization tools for plotting the likelihood 
+  ratio path and decision boundaries, making it easier to interpret results. 
+  The methods are based on Wald (1945) <doi:10.1214/aoms/1177731118>, 
+  who introduced the SPRT as one of the earliest and most powerful sequential 
+  analysis techniques. This package is useful in quality control, clinical trials, 
+  and other applications requiring early decision-making.The term 'SPRT' is an abbreviation and used intentionally.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Imports: stats, ggplot2, rlang
+NeedsCompilation: no
+Packaged: 2025-09-10 07:46:19 UTC; ADMIN
+Author: Huchesh Budihal [aut, cre]
+Maintainer: Huchesh Budihal <hhbudihal17@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-15 07:50:09 UTC

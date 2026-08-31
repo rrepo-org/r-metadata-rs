@@ -1,0 +1,42 @@
+Package: valytics
+Title: Statistical Methods for Analytical Method Comparison and
+        Validation
+Version: 0.4.1
+Date: 2026-02-19
+Authors@R: 
+    person("Marcello", "Grassi", , "marcello.grassi@tum.de", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0008-8904-4988"))
+Description: Provides statistical methods for analytical method comparison and 
+    validation studies. Implements Bland-Altman analysis for assessing agreement 
+    between measurement methods (Bland & Altman (1986) <doi:10.1016/S0140-6736(86)90837-8>), 
+    Passing-Bablok regression for non-parametric method comparison 
+    (Passing & Bablok (1983) <doi:10.1515/cclm.1983.21.11.709>), and Deming 
+    regression accounting for measurement error in both variables 
+    (Linnet (1993) <doi:10.1093/clinchem/39.3.424>). Also includes tools for 
+    setting quality goals based on biological variation (Fraser & Petersen (1993) 
+    <doi:10.1093/clinchem/39.7.1447>) and calculating Six Sigma metrics, 
+    precision experiments with variance component analysis, precision
+    profiles for functional sensitivity estimation (Kroll & Emancipator (1993) 
+    <https://pubmed.ncbi.nlm.nih.gov/8448849/>). Commonly used in clinical 
+    laboratory method validation. Provides publication-ready plots and 
+    comprehensive statistical summaries.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: ggplot2, robslopes, stats, utils
+Suggests: testthat (>= 3.0.0), knitr (>= 1.43), rmarkdown (>= 2.22),
+        lme4 (>= 1.1-33)
+Config/testthat/edition: 3
+URL: https://github.com/marcellogr/valytics
+BugReports: https://github.com/marcellogr/valytics/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-19 09:00:39 UTC; MarcelloG
+Author: Marcello Grassi [aut, cre] (ORCID:
+    <https://orcid.org/0009-0008-8904-4988>)
+Maintainer: Marcello Grassi <marcello.grassi@tum.de>
+Repository: CRAN
+Date/Publication: 2026-02-19 09:20:02 UTC

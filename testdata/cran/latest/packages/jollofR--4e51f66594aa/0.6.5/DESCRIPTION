@@ -1,0 +1,46 @@
+Package: jollofR
+Type: Package
+Title: Small Area Population Estimation by Demographics
+Version: 0.6.5
+Authors@R: c(
+    person("Chibuzor Christopher", "Nnanatu", , "cc.nnanatu@soton.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5841-3700")),
+    person("Mohamed A.", "Yusuf", role = c("aut"),
+           comment = c(ORCID = "0000-0002-9339-4613")),
+    person("Somnath", "Chaudhuri", role = "aut",
+           comment = c(ORCID = "0000-0003-4899-1870")),
+    person("Ortis", "Yankey", role = "aut",
+           comment = c(ORCID = "0000-0002-0808-884X")),
+    person("Attila N", "Lazar", role = "aut",
+           comment = c(ORCID = "0000-0003-2033-2013")),
+    person("Andrew J", "Tatem", role = "aut",
+           comment = c(ORCID = "0000-0002-7270-941X"))
+  )
+Description: Automatic disaggregation of small-area population estimates by demographic groups (e.g., age, sex, race, marital status, educational level, etc) along with the estimates of uncertainty, using advanced Bayesian statistical modelling approaches based on integrated nested Laplace approximation (INLA) Rue et al. (2009) <doi:10.1111/j.1467-9868.2008.00700.x> and stochastic partial differential equation (SPDE) methods Lindgren et al. (2011) <doi:10.1111/j.1467-9868.2011.00777.x>. The package implements hierarchical Bayesian modeling frameworks for small area estimation as described in Leasure et al. (2020) <doi:10.1073/pnas.1913050117> and Nnanatu et al. (2025) <doi:10.1038/s41467-025-59862-4>.
+License: MIT + file LICENSE
+URL: https://github.com/wpgp/jollofR/, https://wpgp.github.io/jollofR/
+BugReports: https://github.com/wpgp/jollofR/issues
+Depends: R (>= 4.1.0)
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+Imports: terra, raster, ggplot2, dplyr, tidyr, sf, ggpubr, reshape2,
+        utils
+Suggests: INLA, withr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Language: en-US
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2025-12-15 09:30:34 UTC; mohamedyusuf
+Author: Chibuzor Christopher Nnanatu [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5841-3700>),
+  Mohamed A. Yusuf [aut] (ORCID: <https://orcid.org/0000-0002-9339-4613>),
+  Somnath Chaudhuri [aut] (ORCID:
+    <https://orcid.org/0000-0003-4899-1870>),
+  Ortis Yankey [aut] (ORCID: <https://orcid.org/0000-0002-0808-884X>),
+  Attila N Lazar [aut] (ORCID: <https://orcid.org/0000-0003-2033-2013>),
+  Andrew J Tatem [aut] (ORCID: <https://orcid.org/0000-0002-7270-941X>)
+Maintainer: Chibuzor Christopher Nnanatu <cc.nnanatu@soton.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-12-16 00:00:02 UTC

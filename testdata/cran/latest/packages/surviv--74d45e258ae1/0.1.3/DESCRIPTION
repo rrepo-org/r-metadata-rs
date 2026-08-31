@@ -1,0 +1,28 @@
+Package: surviv
+Type: Package
+Title: Flexible Instrumental Variable Methods for Survival Analysis
+Version: 0.1.3
+Authors@R: c(
+    person("Haobin", "Chen", email = "tony.haobin.chen@alumni.emory.edu", role = c("aut", "cre")),
+    person("James", "O'Malley", email = "James.OMalley@dartmouth.edu", role = "aut"),
+    person("Pablo", "Martinez-Camblor", role = "aut"), 
+    person("Todd", "MacKenzie", role = "aut")
+    )
+Description: Instrumental variable analysis methods for causal inference on survival data based on the Cox model allowing for various treatment and effect types, including orthogonality method-of-moments instrumental variable estimation for the Cox model, two-stage residual inclusion Cox estimation with frailty, sequential trial emulation, sequential Cox analyses, and sequential two-stage residual inclusion Cox analyses. Methodological background includes MacKenzie et al. (2014) <doi:10.1007/s10742-014-0117-x>, Martinez-Camblor et al. (2019) <doi:10.1093/biostatistics/kxx062>, Martinez-Camblor et al. (2019) <doi:10.1111/rssc.12341>, Gran et al. (2010) <doi:10.1002/sim.4048>, and Keogh et al. (2023) <doi:10.1002/sim.9718>.
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: MASS, survival (>= 3.4-0), rootSolve
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+URL: https://github.com/tonyhbc/surviv
+BugReports: https://github.com/tonyhbc/surviv/issues
+NeedsCompilation: no
+Packaged: 2026-04-22 16:52:05 UTC; tonyhchen
+Author: Haobin Chen [aut, cre],
+  James O'Malley [aut],
+  Pablo Martinez-Camblor [aut],
+  Todd MacKenzie [aut]
+Maintainer: Haobin Chen <tony.haobin.chen@alumni.emory.edu>
+Repository: CRAN
+Date/Publication: 2026-04-24 18:30:02 UTC

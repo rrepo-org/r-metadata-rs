@@ -1,0 +1,60 @@
+Package: ggpaintr
+Type: Package
+Title: Build Formula-Driven 'shiny' Apps for 'ggplot2'
+Version: 0.11.1
+Authors@R: c(
+    person(
+      given = "Wangqian",
+      family = "Ju",
+      email = "wju@iastate.edu",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-9977-377X")
+    ),
+    person(
+      given = "Jinji",
+      family = "Pang",
+      email = "pjj0702@iastate.edu",
+      role = "aut",
+      comment = c(ORCID = "0000-0002-2267-2313")
+    ),
+    person(
+      given = "Zhili",
+      family = "Qiao",
+      email = "zlqiao@iastate.edu",
+      role = "aut",
+      comment = c(ORCID = "0000-0002-8154-0898")
+    )
+  )
+Description: Turns a single 'ggplot2'-style formula string into a small
+    'shiny' application. Placeholder tokens in the formula become input
+    widgets automatically; the package completes the expression with the
+    current input values, renders the plot, shows the generated code, and
+    supports uploaded datasets in different formats.
+License: GPL-3
+URL: https://willju-wangqian.github.io/ggpaintr/,
+        https://github.com/willju-wangqian/ggpaintr
+BugReports: https://github.com/willju-wangqian/ggpaintr/issues
+Depends: R (>= 4.1.0), ggplot2 (>= 3.3.0)
+Imports: assertthat (>= 0.2.0), cli (>= 2.2.0), htmltools, rlang (>=
+        1.0.0), shiny (>= 1.6.0), shinyWidgets (>= 0.6.4)
+Suggests: bslib (>= 0.5.0), dplyr, ellmer, jsonlite, knitr, miniUI,
+        pkgdown, plotly, purrr, readxl, rmarkdown, rstudioapi,
+        shinytest2, testthat (>= 3.1.7), withr, writexl, xaringanExtra
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Config/testthat/start-first: e2e-vignette-examples-shinytest2,
+        j12-spec-and-renderui-emission-journey,
+        shared-source-panel-multi-instance,
+        adr0024-companion-entry-point, prologue-reader-fn-mirror,
+        j2-prologue-csv-upload-journey, j11-app-basic-journey,
+        default-seeding-with-source-upstream, adr15-consumer-binding
+NeedsCompilation: no
+Packaged: 2026-07-02 06:36:08 UTC; willju
+Author: Wangqian Ju [aut, cre] (ORCID: <https://orcid.org/0000-0002-9977-377X>),
+  Jinji Pang [aut] (ORCID: <https://orcid.org/0000-0002-2267-2313>),
+  Zhili Qiao [aut] (ORCID: <https://orcid.org/0000-0002-8154-0898>)
+Maintainer: Wangqian Ju <wju@iastate.edu>
+Repository: CRAN
+Date/Publication: 2026-07-07 10:10:02 UTC

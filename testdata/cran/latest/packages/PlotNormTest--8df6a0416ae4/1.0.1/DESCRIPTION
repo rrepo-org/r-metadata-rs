@@ -1,0 +1,29 @@
+Package: PlotNormTest
+Title: Graphical Univariate/Multivariate Assessments for Normality
+        Assumption
+Version: 1.0.1
+Authors@R: c(person("Huong", "Tran", email =  "quynhhuong5335@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3828-3862")), 
+           person("Ravindra", "Khattree", role = "aut", 
+           comment = c(ORCID = "0000-0002-9305-2365")
+           )
+           )
+Maintainer: Huong Tran <quynhhuong5335@gmail.com>
+Description: Graphical methods testing multivariate normality assumption. Methods including assessing score function, and moment generating functions,independent transformations and linear transformations. For more details see Tran (2024),"Contributions to Multivariate Data Science: Assessment and Identification of Multivariate Distributions and Supervised Learning for Groups of Objects." , PhD thesis,
+  <https://our.oakland.edu/items/c8942577-2562-4d2f-8677-cb8ec0bf6234>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: Rdpack, ggplot2, stats, Matrix, MatrixExtra, MASS, rlang
+RdMacros: Rdpack
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+SysDataCompression: xz
+NeedsCompilation: no
+Packaged: 2025-03-24 14:00:35 UTC; huongtran
+Author: Huong Tran [aut, cre] (<https://orcid.org/0000-0003-3828-3862>),
+  Ravindra Khattree [aut] (<https://orcid.org/0000-0002-9305-2365>)
+Repository: CRAN
+Date/Publication: 2025-03-25 09:10:05 UTC

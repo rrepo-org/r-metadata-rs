@@ -1,0 +1,43 @@
+Package: Anthropometry
+Type: Package
+Title: Statistical Methods for Anthropometric Data
+Version: 1.22
+Date: 2026-08-21
+Authors@R: c(person(given = "Guillermo",
+                        family = "Vinue",
+                        role = c("aut", "cre"),
+                        email = "guillermo.vinue@uv.es"),
+                 person(given = "Irene",
+                        family = "Epifanio",
+                        role = "aut"),
+                 person(given = "Amelia",
+                        family = "Simo",
+                        role = "aut"),
+                 person(given = c("M.", "Victoria"),
+                        family = "Ibanez",
+                        role = "aut"),
+                 person(given = "Juan",
+                        family = "Domingo",
+                        role = "aut"),
+                 person(given = "Guillermo",
+                        family = "Ayala",
+                        role = "aut"))
+Maintainer: Guillermo Vinue <guillermo.vinue@uv.es>
+Description: Statistical methodologies especially developed to analyze anthropometric data. These methods are aimed 		at providing effective solutions to some commons problems related to Ergonomics and Anthropometry. They are based on clustering, the 		statistical concept of data depth, statistical shape analysis and archetypal analysis. Please see Vinue (2017) <doi:10.18637/jss.v077.i06>.
+License: GPL (>= 2)
+URL: https://www.R-project.org, https://www.uv.es/vivigui/
+Depends: R (>= 3.5.0)
+Imports: shapes, rgl, archetypes, nnls, ddalpha, FNN, ICGE, cluster
+Suggests: knitr, calibrate, mvtnorm, RColorBrewer, plotrix, abind
+VignetteBuilder: knitr
+LazyData: yes
+NeedsCompilation: yes
+Packaged: 2026-08-21 15:05:12 UTC; guillermo
+Repository: CRAN
+Date/Publication: 2026-08-21 21:51:03 UTC
+Author: Guillermo Vinue [aut, cre],
+  Irene Epifanio [aut],
+  Amelia Simo [aut],
+  M. Victoria Ibanez [aut],
+  Juan Domingo [aut],
+  Guillermo Ayala [aut]

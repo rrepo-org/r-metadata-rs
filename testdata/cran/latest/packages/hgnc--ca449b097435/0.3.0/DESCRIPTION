@@ -1,0 +1,48 @@
+Package: hgnc
+Type: Package
+Title: Import Human Gene Nomenclature
+Version: 0.3.0
+Authors@R: c(
+    person(given = "Ramiro", family = "Magno",
+      email = "rmagno@pattern.institute",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-5226-3441")),
+    person(given = "Isabel", family = "Duarte",
+      email = "iduarte@pattern.institute",
+      role = "aut",
+      comment = c(ORCID = "0000-0003-0060-2936")),  
+    person(given = "Jacob", family = "Munro",
+      email = "jacob.e.munro@gmail.com",
+      role = c("aut"),
+      comment = c(ORCID = "0000-0002-2751-0989")),  
+    person(given = "Ana-Teresa", family = "Maia",
+      email = "maia.anateresa@gmail.com", role = "ctb", 
+      comment = c(ORCID = "0000-0002-0454-9207")),
+    person("Pattern Institute", role = c("cph", "fnd"), comment = c(ROR = "04jrgd746"))
+    )
+Description: A set of routines to quickly download and import the
+    HUGO Gene Nomenclature Committee (HGNC) data set on mapping of
+    gene symbols to gene entries in other genomic databases or resources.
+License: MIT + file LICENSE
+URL: https://github.com/patterninstitute/hgnc,
+        https://www.pattern.institute/hgnc/
+BugReports: https://github.com/patterninstitute/hgnc/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2.0)
+Imports: cli, dplyr, httr2, memoise, prettyunits, purrr, readr,
+        stringr, tibble
+Suggests: lubridate, spelling, tidyr
+Language: en-US
+Config/Needs/website: patterninstitute/chic, rmarkdown
+NeedsCompilation: no
+Packaged: 2025-06-18 00:08:18 UTC; rmagno
+Author: Ramiro Magno [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5226-3441>),
+  Isabel Duarte [aut] (ORCID: <https://orcid.org/0000-0003-0060-2936>),
+  Jacob Munro [aut] (ORCID: <https://orcid.org/0000-0002-2751-0989>),
+  Ana-Teresa Maia [ctb] (ORCID: <https://orcid.org/0000-0002-0454-9207>),
+  Pattern Institute [cph, fnd] (ROR: <https://ror.org/04jrgd746>)
+Maintainer: Ramiro Magno <rmagno@pattern.institute>
+Repository: CRAN
+Date/Publication: 2025-06-18 02:10:02 UTC

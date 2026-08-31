@@ -1,0 +1,34 @@
+Package: vivaglint
+Type: Package
+Title: Analysis Tools for 'Viva Glint' Survey Data
+Version: 0.1.1
+Authors@R: 
+    c(
+        person("Eric", "Knudsen", , "ericknudsen@microsoft.com", role = c("aut", "cre")),
+        person("Microsoft Corporation", role = "cph")
+    )
+Description: Provides functions for importing, validating, and analyzing 'Viva Glint'
+    survey data exports, with optional API-based import via the 'Microsoft Graph'
+    API. Includes tools for data reshaping, question-level analysis, multi-cycle
+    comparisons, organizational hierarchy analysis, factor analysis, and
+    correlation analysis. Harman (1960, ISBN: 0226316513); Husser (2017)
+    <doi:10.1002/9781118901731.iecrm0048>.
+License: MIT + file LICENSE
+URL: https://github.com/microsoft/vivaglint
+BugReports: https://github.com/microsoft/vivaglint/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr (>= 1.0.0), tidyr (>= 1.0.0), readr (>= 2.0.0), stringr
+        (>= 1.4.0), lubridate (>= 1.7.0), purrr (>= 0.3.0), rlang (>=
+        0.4.0), httr (>= 1.4.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, psych (>= 2.0.0),
+        ggplot2 (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-22 21:30:09 UTC; ericknudsen
+Author: Eric Knudsen [aut, cre],
+  Microsoft Corporation [cph]
+Maintainer: Eric Knudsen <ericknudsen@microsoft.com>
+Repository: CRAN
+Date/Publication: 2026-04-24 20:20:02 UTC

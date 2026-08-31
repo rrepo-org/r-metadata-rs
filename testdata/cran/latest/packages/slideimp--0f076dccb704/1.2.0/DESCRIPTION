@@ -1,0 +1,53 @@
+Type: Package
+Package: slideimp
+Title: Numeric Matrices K-NN and PCA Imputation
+Version: 1.2.0
+Authors@R: c(
+    person("Hung", "Pham", , "amser.hoanghung@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-8271-9355")),
+    person("Posit Software, PBC", role = "cph",
+           comment = "Copyright holder of code adapted from the 'carrier' package, MIT licensed")
+  )
+Description: Fast k-nearest neighbors (K-NN) and principal component
+    analysis (PCA) imputation algorithms for missing values in epigenetic
+    data or other high-dimensional numeric matrices. For PCA, a locally
+    optimal block preconditioned conjugate gradient (LOBPCG) eigensolver
+    with warm starts of both the eigenblock and search direction is also
+    supported. Two complementary imputation strategies are available.
+    Group-wise imputation (e.g., by chromosome) is recommended for
+    Illumina DNA methylation microarrays (e.g., 450K, EPIC) and other
+    matrices with groupable columns. A sliding window approach for K-NN or
+    PCA imputation is recommended only for whole-genome methylation data
+    such as whole-genome bisulfite sequencing (WGBS) or Enzymatic
+    Methyl-seq (EM-seq). The package also supports hyperparameter tuning
+    via repeated cross-validation. The K-NN algorithm is described in:
+    Hastie, T., Tibshirani, R., Sherlock, G., Eisen, M., Brown, P. and
+    Botstein, D.  (1999) "Imputing Missing Data for Gene Expression
+    Arrays". The PCA imputation is an optimized reimplementation of the
+    imputePCA() function from the 'missMDA' package described in: Josse,
+    J. and Husson, F. (2016) <doi:10.18637/jss.v070.i01> "missMDA: A
+    Package for Handling Missing Values in Multivariate Data Analysis".
+License: GPL (>= 2)
+URL: https://github.com/hhp94/slideimp,
+        https://hhp94.github.io/slideimp/
+BugReports: https://github.com/hhp94/slideimp/issues
+Depends: R (>= 4.3.0)
+Imports: bigmemory, checkmate, cli, collapse, mirai, Rcpp, stats, utils
+Suggests: knitr, missMDA, RhpcBLASctl, rmarkdown, testthat (>= 3.0.0),
+        withr
+LinkingTo: Rcpp, RcppArmadillo, RcppThread
+VignetteBuilder: knitr
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-06-16 04:45:24 UTC; amser
+Author: Hung Pham [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8271-9355>),
+  Posit Software, PBC [cph] (Copyright holder of code adapted from the
+    'carrier' package, MIT licensed)
+Maintainer: Hung Pham <amser.hoanghung@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-16 06:50:02 UTC

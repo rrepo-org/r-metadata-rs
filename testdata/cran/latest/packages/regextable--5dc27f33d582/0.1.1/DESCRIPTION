@@ -1,0 +1,34 @@
+Package: regextable
+Title: Pattern-Based Text Extraction and Standardization with Lookup
+        Tables
+Version: 0.1.1
+Authors@R: c(
+    person("Shirlyn", "Dong", email = "shirlynd@umich.edu", role = c("aut", "cre")),
+    person("Devin", "Judge-Lord", role = c("aut"))
+    )
+Description: Extracts information from text using lookup tables of regular
+    expressions. Each text entry is compared against all patterns, and all
+    matching patterns and their corresponding substrings are returned. If a
+    text entry matches multiple patterns, multiple rows are generated to
+    capture each match. This approach enables comprehensive pattern coverage
+    when processing large or complex text datasets.
+LazyData: true
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: chk, dplyr, stringi, stringr, pbapply, stats
+Suggests: kableExtra, knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/judgelord/regextable,
+        https://judgelord.github.io/regextable/
+BugReports: https://github.com/judgelord/regextable/issues
+Config/testthat/edition: 3
+Depends: R (>= 4.1)
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-02-02 19:17:37 UTC; shirl
+Author: Shirlyn Dong [aut, cre],
+  Devin Judge-Lord [aut]
+Maintainer: Shirlyn Dong <shirlynd@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-02-05 09:10:02 UTC

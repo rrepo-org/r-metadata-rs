@@ -1,0 +1,29 @@
+Package: abcel
+Title: Empirical Likelihood-Based Approximate Bayesian Computation
+Version: 1.0
+Authors@R: 
+    c(person(given = "Nicholas",
+           family = "Chua",
+           role = c("aut"),
+           email = "nicholaschua_kb@u.nus.edu"),
+      person(given = "Riddhimoy",
+           family = "Ghosh",
+           role = c("aut"),
+           email = "rghosh3@unl.edu"),   
+      person(given = "Sanjay",
+           family = "Chaudhuri",
+           role = c("aut", "cre"),
+           email = "schaudhuri2@unl.edu"))
+Description: Empirical likelihood-based approximate Bayesian Computation.  Approximates the required posterior using empirical likelihood and estimated differential entropy.  This is achieved without requiring any specification of the likelihood or estimating equations that connects the observations with the underlying parameters. The procedure is known to be posterior consistent.  More details can be found in Chaudhuri, Ghosh, and Kim (2024) <doi:10.1002/SAM.11711>.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: MASS, emplik, methods, FNN, corpcor
+NeedsCompilation: yes
+Packaged: 2025-11-07 21:12:34 UTC; schaudhuri2
+Author: Nicholas Chua [aut],
+  Riddhimoy Ghosh [aut],
+  Sanjay Chaudhuri [aut, cre]
+Maintainer: Sanjay Chaudhuri <schaudhuri2@unl.edu>
+Repository: CRAN
+Date/Publication: 2025-11-21 14:40:02 UTC

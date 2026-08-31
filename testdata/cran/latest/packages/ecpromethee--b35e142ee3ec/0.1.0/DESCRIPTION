@@ -1,0 +1,29 @@
+Package: ecpromethee
+Type: Package
+Title: EC-PROMETHEE Multi-Criteria Decision Method
+Version: 0.1.0
+Authors@R: c(
+    person("Marcio", "Basilio", role = c("aut", "cre"),
+           email = "marciopbasilio@gmail.com"),
+    person("Valdecy", "Pereira", role = "aut"),
+    person("Fatih", "Yigit", role = "aut"))
+Description: Implements the EC-PROMETHEE multi-criteria decision method
+    described by Basilio, Pereira and Yigit (2023)
+    <doi:10.3390/math11214432>. The method combines objective criteria
+    weights from ENTROPY and CRITIC with optional subjective weights,
+    generates random normalized weights inside criterion-specific ranges,
+    and aggregates repeated PROMETHEE II rankings into a final score.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-23 02:01:23 UTC; marci
+Author: Marcio Basilio [aut, cre],
+  Valdecy Pereira [aut],
+  Fatih Yigit [aut]
+Maintainer: Marcio Basilio <marciopbasilio@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-29 13:00:35 UTC

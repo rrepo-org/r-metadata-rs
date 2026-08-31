@@ -1,0 +1,30 @@
+Package: stow
+Title: Durable Managed Local Copies of Remote Files
+Version: 0.3.0
+Authors@R: 
+    person("Cole", "Brokamp", , "cole@colebrokamp.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0289-3151"))
+Description: Turns remote file URLs into paths to durable managed local copies
+    stored in a fixed subdirectory of platform-appropriate, package-specific
+    user data directories. Matching copies are reused across R sessions and
+    remain available for offline use. Supports optional ETag-based versions,
+    content validation, and staged replacement that prevents failed downloads
+    and files that fail a supplied validator from becoming managed local
+    copies. Includes tools to inspect, conservatively prune, and explicitly
+    remove retained copies.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Depends: R (>= 4.0.0)
+Imports: curl, digest
+Suggests: testthat (>= 3.2.0), withr
+Config/testthat/edition: 3
+URL: https://github.com/cole-brokamp/stow
+BugReports: https://github.com/cole-brokamp/stow/issues
+NeedsCompilation: no
+Packaged: 2026-08-21 14:06:26 UTC; cole
+Author: Cole Brokamp [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0289-3151>)
+Maintainer: Cole Brokamp <cole@colebrokamp.com>
+Repository: CRAN
+Date/Publication: 2026-08-30 10:00:02 UTC

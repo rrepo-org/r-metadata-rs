@@ -1,0 +1,40 @@
+Package: unityForest
+Type: Package
+Title: Improving Interaction Modelling and Interpretability in Random
+        Forests
+Version: 0.2.0
+Date: 2026-02-25
+Authors@R: c(person("Roman", "Hornung", role = c("aut", "cre"),
+                     email = "hornung@ibe.med.uni-muenchen.de"),
+              person("Marvin N.", "Wright", role = c("ctb", "cph")))
+Maintainer: Roman Hornung <hornung@ibe.med.uni-muenchen.de>
+Description: Implementation of the unity forest (UFO) framework (Hornung & Hapfelmeier, 2026,
+  <doi:10.48550/arXiv.2601.07003>).
+  UFOs are a random forest variant designed to better take covariates with purely
+  interaction-based effects into account, including interactions for which none of the involved
+  covariates exhibits a marginal effect.
+  While this framework tends to improve discrimination and predictive accuracy compared
+  to standard random forests, it also facilitates the identification and interpretation of
+  (marginal or interactive) effects: In addition to the UFO algorithm for tree construction,
+  the package includes the unity variable importance measure (unity VIM), which quantifies
+  covariate effects under the conditions in which they are strongest - either marginally 
+  or within subgroups defined by interactions - as well as covariate-representative tree
+  roots (CRTRs) that provide interpretable visualizations of these conditions.
+  Categorical and continuous outcomes are supported.
+  This package is a fork of the R package 'ranger' (main author: Marvin N. Wright), which
+  implements random forests using an efficient C++ backend.
+SystemRequirements: C++17
+Encoding: UTF-8
+License: GPL-3
+Imports: Rcpp (>= 0.11.2), Matrix, ggplot2, ggrepel, dplyr, scales,
+        rlang
+LinkingTo: Rcpp, RcppEigen
+Depends: R (>= 3.5)
+Suggests: patchwork
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-02-25 15:25:05 UTC; hornung
+Author: Roman Hornung [aut, cre],
+  Marvin N. Wright [ctb, cph]
+Repository: CRAN
+Date/Publication: 2026-02-25 17:50:02 UTC

@@ -1,0 +1,27 @@
+Package: mlspatial
+Title: Machine Learning and Mapping for Spatial Epidemiology
+Version: 0.1.1
+Authors@R: 
+    c(
+      person("Adeboye", "Azeez", , "azizadeboye@gmail.com", role = c("aut", "cre")),
+      person("Colin", "Noel", role = "aut")
+    )
+Description: Provides tools for the integration, visualisation, and modelling of spatial epidemiological data using the method described in Azeez, A., & Noel, C. (2025). 'Predictive Modelling and Spatial Distribution of Pancreatic Cancer in Africa Using Machine Learning-Based Spatial Model' <doi:10.5281/zenodo.16529986> and <doi:10.5281/zenodo.16529016>. It facilitates the analysis of geographic health data by combining modern spatial mapping tools with advanced machine learning (ML) algorithms. 'mlspatial' enables users to import and pre-process shapefile and associated demographic or disease incidence data, generate richly annotated thematic maps, and apply predictive models, including Random Forest, 'XGBoost', and Support Vector Regression, to identify spatial patterns and risk factors. It is suited for spatial epidemiologists, public health researchers, and GIS analysts aiming to uncover hidden geographic patterns in health-related outcomes and inform evidence-based interventions.
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, tidyr, kernlab, writexl, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 4.1)
+Imports: sf, readxl, dplyr, ggplot2, randomForest, xgboost, e1071,
+        caret, tmap, spdep, ggpubr, stats, methods
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-12-26 07:47:18 UTC; azeez
+Author: Adeboye Azeez [aut, cre],
+  Colin Noel [aut]
+Maintainer: Adeboye Azeez <azizadeboye@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-08 00:00:02 UTC

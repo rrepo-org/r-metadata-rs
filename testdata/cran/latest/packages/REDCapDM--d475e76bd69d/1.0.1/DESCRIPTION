@@ -1,0 +1,39 @@
+Package: REDCapDM
+Type: Package
+Title: 'REDCap' Data Management
+Version: 1.0.1
+Authors@R: c(
+    person("João", "Carmezim", email = "jcarmezim@igtp.cat", role = c("aut", "cre")),
+    person("Pau", "Satorra", role = c("aut")),
+    person("Judith", "Peñafiel", role = c("aut")),
+    person("Esther", "García", role = c("aut")),
+    person("Natàlia", "Pallarès", role = c("aut")),
+    person("Cristian", "Tebé", role = c("aut"))
+    )
+Maintainer: João Carmezim <jcarmezim@igtp.cat>
+Description: REDCap Data Management - 'REDCap' (Research Electronic Data CAPture; <https://projectredcap.org>) is a web application developed at Vanderbilt University, designed for creating and managing online surveys and databases and the REDCap API is an interface that allows external applications to connect to REDCap remotely, and is used to programmatically retrieve or modify project data or settings within REDCap, such as importing or exporting data. REDCapDM is an R package that allows users to manage data exported directly from REDCap or using an API connection. This package includes several functions designed for pre-processing data, generating reports of queries such as outliers or missing values, and following up on previously identified queries. 
+License: MIT + file LICENSE
+URL: https://bruigtp.github.io/REDCapDM/,
+        https://doi.org/10.1186/s12874-024-02178-6
+BugReports: https://github.com/bruigtp/REDCapDM/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, janitor, openxlsx, purrr, REDCapR, rlang, stringr,
+        tibble, tidyr, tidyselect, labelled, utils, stringi, cli,
+        forcats, lifecycle, magrittr
+Suggests: knitr, rmarkdown, kableExtra, testthat (>= 3.0.0), mockery
+VignetteBuilder: knitr
+Depends: R (>= 4.1)
+LazyData: true
+Config/testthat/edition: 3
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2026-01-24 16:07:17 UTC; jcarmezim
+Author: João Carmezim [aut, cre],
+  Pau Satorra [aut],
+  Judith Peñafiel [aut],
+  Esther García [aut],
+  Natàlia Pallarès [aut],
+  Cristian Tebé [aut]
+Repository: CRAN
+Date/Publication: 2026-01-24 16:20:02 UTC

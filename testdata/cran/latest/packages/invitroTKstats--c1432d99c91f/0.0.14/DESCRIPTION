@@ -1,0 +1,59 @@
+Package: invitroTKstats
+Version: 0.0.14
+Date: 2026-01-22
+Title: In Vitro Toxicokinetic Data Processing and Analysis Pipeline
+Description: A set of tools for processing and analyzing in vitro toxicokinetic
+             measurements in a standardized and reproducible pipeline. The package
+             was developed to perform frequentist and Bayesian estimation on a
+             variety of in vitro toxicokinetic measurements including -- but not
+             limited to -- chemical fraction unbound in the presence of plasma
+             (f_up), intrinsic hepatic clearance (Clint,
+             uL/min/million hepatocytes), and membrane permeability for
+             oral absorption (Caco2). The methods provided
+             by the package were described in Wambaugh et al. (2019) <doi:10.1093/toxsci/kfz205>.
+Authors@R: c(
+           person("John", "Wambaugh", 
+             role = c("aut"),comment = c(ORCID = "0000-0002-4024-534X")), 
+           person("Caroline", "Ring", email = "ring.caroline@epa.gov",
+             role = c("cre"), comment = c(ORCID = "0000-0002-0463-1251")),
+           person("Sarah E.", "Davidson-Fritz", email = "davidsonfritz.sarah@epa.gov", 
+             role = c("aut"), comment = c(ORCID = "0000-0002-2891-9380")),
+           person("Lindsay","Knupp",role = c("ctb")),
+           person("Barbara A.","Wetmore",role = c("ctb"),
+            comment = c(ORCID = "0000-0002-6878-5348")),
+           person("Zhao", "Zhihui", role = c("ctb")),
+           person("Chantel", "Nicolas", role = c("ctb"),
+             comment = c(ORCID = "0000-0003-2061-5830")),
+           person("Anna", "Kreutz", role = c("ctb"),
+             comment = c(ORCID = "0000-0002-7787-0683")),
+           person("U.S. Federal Government",role = "cph",comment = "Copyright holder of this package")
+           )
+Depends: R (>= 3.5.0)
+Imports: runjags, parallel, readxl, coda, ggplot2, scales, stats4,
+        Rdpack, methods, stats, utils, dplyr, rlang
+RdMacros: Rdpack
+Suggests: knitr, R.rsp, tidyverse, gridExtra, gridtext, flextable,
+        rmarkdown, magrittr, stringr
+License: MIT + file LICENSE
+LazyData: true
+Encoding: UTF-8
+VignetteBuilder: knitr, R.rsp
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Maintainer: Caroline Ring <ring.caroline@epa.gov>
+URL: https://github.com/USEPA/invitroTKstats
+BugReports: https://github.com/USEPA/invitroTKstats/issues
+Packaged: 2026-01-22 21:36:47 UTC; CRING
+Author: John Wambaugh [aut] (ORCID: <https://orcid.org/0000-0002-4024-534X>),
+  Caroline Ring [cre] (ORCID: <https://orcid.org/0000-0002-0463-1251>),
+  Sarah E. Davidson-Fritz [aut] (ORCID:
+    <https://orcid.org/0000-0002-2891-9380>),
+  Lindsay Knupp [ctb],
+  Barbara A. Wetmore [ctb] (ORCID:
+    <https://orcid.org/0000-0002-6878-5348>),
+  Zhao Zhihui [ctb],
+  Chantel Nicolas [ctb] (ORCID: <https://orcid.org/0000-0003-2061-5830>),
+  Anna Kreutz [ctb] (ORCID: <https://orcid.org/0000-0002-7787-0683>),
+  U.S. Federal Government [cph] (Copyright holder of this package)
+Repository: CRAN
+Date/Publication: 2026-01-26 10:20:09 UTC

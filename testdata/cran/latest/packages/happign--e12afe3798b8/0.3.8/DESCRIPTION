@@ -1,0 +1,33 @@
+Package: happign
+Title: R Interface to 'IGN' Web Services
+Version: 0.3.8
+Authors@R: 
+    person("Paul", "Carteron", , "carteronpaul@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6942-6662"))
+Maintainer: Paul Carteron <carteronpaul@gmail.com>
+Description: Automatic open data acquisition from resources of IGN
+    ('Institut National de Information Geographique et forestiere')
+    (<https://www.ign.fr/>). Available datasets include various types of
+    raster and vector data, such as digital elevation models, state
+    borders, spatial databases, cadastral parcels, and more. 'happign' also 
+    provide access to API Carto (<https://apicarto.ign.fr/api/doc/>).
+License: GPL (>= 3)
+URL: https://paul-carteron.github.io/happign/,
+        https://github.com/paul-carteron/happign
+BugReports: https://github.com/paul-carteron/happign/issues
+Depends: R (>= 4.1.0)
+Imports: jsonlite, httr2 (>= 1.1.0), sf (>= 1.0-7), terra, xml2
+Suggests: covr, ggplot2, httptest2, tibble, knitr, rmarkdown, testthat
+        (>= 3.0.0), tmap (>= 4.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/Needs/website: rmarkdown
+Packaged: 2026-02-18 17:45:36 UTC; PaulCarteron
+Author: Paul Carteron [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6942-6662>)
+Repository: CRAN
+Date/Publication: 2026-02-19 06:10:14 UTC

@@ -1,0 +1,31 @@
+Package: splikit
+Title: Analysing RNA Splicing in Single-Cell RNA Sequencing Data
+Version: 2.3.1
+Authors@R: 
+    person("Arsham", "Mikaeili Namini", , "arsham.mikaeilinamini@mail.mcgill.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9453-6951"))
+Description: Provides analysis of high-dimensional single-cell splicing data.
+    Offers a framework to extract and work with ratio-based data structures
+    derived from single-cell RNA sequencing experiments. Provides both a modern
+    'R6' object-oriented interface and direct matrix manipulation functions. Core
+    functionalities are implemented in 'C++' via 'Rcpp' to ensure high performance
+    and scalability on large datasets.
+URL: https://csglab.github.io/splikit/,
+        https://github.com/csglab/splikit
+BugReports: https://github.com/csglab/splikit/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: Matrix, data.table, methods, stats, Rcpp, R6
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, ggplot2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: yes
+Packaged: 2026-05-09 02:10:17 UTC; arsham79
+Author: Arsham Mikaeili Namini [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9453-6951>)
+Maintainer: Arsham Mikaeili Namini <arsham.mikaeilinamini@mail.mcgill.ca>
+Repository: CRAN
+Date/Publication: 2026-05-13 08:10:02 UTC

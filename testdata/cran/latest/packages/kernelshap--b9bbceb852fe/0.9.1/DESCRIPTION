@@ -1,0 +1,40 @@
+Package: kernelshap
+Title: Kernel SHAP
+Version: 0.9.1
+Authors@R: c(
+    person("Michael", "Mayer", , "mayermichael79@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0007-2540-9629")),
+    person("David", "Watson", , "david.s.watson11@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9632-2159")),
+    person("Przemyslaw", "Biecek", , "przemyslaw.biecek@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0001-8423-1823"))
+  )
+Description: Efficient implementation of Kernel SHAP (Lundberg and Lee,
+    2017, <doi:10.48550/arXiv.1705.07874>) permutation SHAP, and additive
+    SHAP for model interpretability.  For Kernel SHAP and permutation
+    SHAP, if the number of features is too large for exact calculations,
+    the algorithms iterate until the SHAP values are sufficiently precise
+    in terms of their standard errors.  The package integrates smoothly
+    with meta-learning packages such as 'tidymodels', 'caret' or 'mlr3'.
+    It supports multi-output models, case weights, and parallel
+    computations.  Visualizations can be done using the R package
+    'shapviz'.
+License: GPL (>= 2)
+Depends: R (>= 3.2.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: doFuture, foreach, stats, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/ModelOriented/kernelshap
+BugReports: https://github.com/ModelOriented/kernelshap/issues
+NeedsCompilation: no
+Packaged: 2025-09-20 13:58:39 UTC; mayer
+Author: Michael Mayer [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-2540-9629>),
+  David Watson [aut] (ORCID: <https://orcid.org/0000-0001-9632-2159>),
+  Przemyslaw Biecek [ctb] (ORCID:
+    <https://orcid.org/0000-0001-8423-1823>)
+Maintainer: Michael Mayer <mayermichael79@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-20 14:20:02 UTC

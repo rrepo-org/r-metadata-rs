@@ -1,0 +1,56 @@
+Package: SamsaRaLight
+Title: Simulate Tree Light Transmission Using Ray-Tracing
+Version: 1.0.0
+Authors@R: 
+  c(
+    person("Natheo", "Beauchamp", email = "beauchamp.natheo@gmail.com",
+           role = c("aut", "cre"),
+           comment = c("R package developer",
+                       ORCID = "0009-0007-9103-5194")),
+    person("Gauthier", "Ligot", email = "gligot@uliege.be",
+           role = c("aut"),
+           comment = c("Java Capsis developer and algorithm improvement",
+                       ORCID = "0000-0002-5508-4358")),
+    person("Francois", "de Coligny", email = "francois.decoligny@inrae.fr",
+           role = "aut",
+           comment = c("Java Capsis developer",
+                       ORCID = "0000-0002-8538-3009")),
+    person("Maxime", "Jaunatre", email = "maxime.jaunatre@inrae.fr",
+           role = "aut",
+           comment = c("R package support developer",
+                       ORCID = "0009-0002-2816-1677")),
+    person("Benoit", "Courbaud", email = "benoit.courbaud@inrae.fr",
+           role = c("aut", "cph"),
+           comment = c("Algorithm and theory creator",
+                       ORCID = "0000-0002-3050-9559"))
+  )
+Description: Provides tools to simulate light transmission in forest stands using three-dimensional ray-tracing. The package allows users to build virtual stands from tree inventories and to estimate (1) light intercepted by individual trees, (2) light reaching the forest floor, and (3) light at virtual sensors. The package is designed for ecological and forestry applications, including the analysis of light competition, tree growth, and forest regeneration. The implementation builds on the individual-based ray-tracing model SamsaraLight developed by Courbaud et al. (2003) <doi:10.1016/S0168-1923(02)00254-X>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: concaveman, data.table, dplyr, ggforce, ggnewscale, ggplot2,
+        grid, httr, patchwork, Rcpp, RhpcBLASctl, scales, sf,
+        sfheaders, tidyr
+LinkingTo: Rcpp
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: cowplot, knitr, purrr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://natheob.github.io/SamsaRaLight/
+BugReports: https://github.com/natheob/SamsaRaLight/issues/
+NeedsCompilation: yes
+Packaged: 2026-04-10 13:03:26 UTC; Nathéo Beauchamp
+Author: Natheo Beauchamp [aut, cre] (R package developer, ORCID:
+    <https://orcid.org/0009-0007-9103-5194>),
+  Gauthier Ligot [aut] (Java Capsis developer and algorithm improvement,
+    ORCID: <https://orcid.org/0000-0002-5508-4358>),
+  Francois de Coligny [aut] (Java Capsis developer, ORCID:
+    <https://orcid.org/0000-0002-8538-3009>),
+  Maxime Jaunatre [aut] (R package support developer, ORCID:
+    <https://orcid.org/0009-0002-2816-1677>),
+  Benoit Courbaud [aut, cph] (Algorithm and theory creator, ORCID:
+    <https://orcid.org/0000-0002-3050-9559>)
+Maintainer: Natheo Beauchamp <beauchamp.natheo@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-16 10:12:16 UTC

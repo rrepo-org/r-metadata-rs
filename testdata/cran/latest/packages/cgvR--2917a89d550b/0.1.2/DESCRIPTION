@@ -1,0 +1,45 @@
+Package: cgvR
+Title: Interactive 3D Visualization of Large Cayley Graphs via Vulkan
+Version: 0.1.2
+Authors@R: c(
+    person("Yuri", "Baramykov",
+        email = "lbsbmsu@mail.ru",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0009-0000-7627-4217")),
+    person("Cyrille", "Rossant",
+        role = c("ctb", "cph"),
+        comment = "Author of the Datoviz library")
+    )
+Description: Provides interactive 3D visualization for large-scale Cayley graphs.
+    Specifically designed for analyzing state spaces of the 'TopSpin' puzzle.
+    Leverages the 'Datoviz' library and Vulkan-based GPU rendering for smooth
+    real-time exploration of large graphs and complex state transitions.
+    Implements efficient coordinate mapping for high-dimensional permutation
+    groups, allowing users to visualize the connectivity and structural
+    properties of the puzzle's state space. The rendering engine provides
+    high-performance visuals and interactive camera controls, making it suitable
+    for mathematical analysis of group-theoretic puzzles within the R
+    environment.
+Depends: R (>= 4.1.0)
+Imports: grDevices, stats
+Suggests: cayleyR, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+SystemRequirements: C17, C++17, GNU make, pkg-config, libvulkan-dev
+        (Linux) or LunarG 'Vulkan' 'SDK' (Windows, macOS), libglfw3-dev
+        (Linux) or glfw via Homebrew (macOS), ffmpeg (optional, for
+        cgv_record_*). Optional configure flags: --with-vulkan /
+        --without-vulkan, --with-simd for SSE4.1 + PCLMUL fpng.
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://github.com/Zabis13/cgvR
+BugReports: https://github.com/Zabis13/cgvR/issues
+NeedsCompilation: yes
+Packaged: 2026-05-06 09:08:39 UTC; yuri
+Author: Yuri Baramykov [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-7627-4217>),
+  Cyrille Rossant [ctb, cph] (Author of the Datoviz library)
+Maintainer: Yuri Baramykov <lbsbmsu@mail.ru>
+Repository: CRAN
+Date/Publication: 2026-05-11 19:20:07 UTC

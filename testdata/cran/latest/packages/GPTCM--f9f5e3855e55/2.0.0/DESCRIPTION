@@ -1,0 +1,26 @@
+Package: GPTCM
+Title: Generalized Promotion Time Cure Model with Bayesian Shrinkage
+        Priors
+Version: 2.0.0
+Description: Generalized promotion time cure model (GPTCM) via Bayesian hierarchical modeling for multiscale data integration (Zhao et al. (2025) <doi:10.48550/arXiv.2509.01001>). The Bayesian GPTCMs are applicable for both low- and high-dimensional data.
+Authors@R: c(person("Zhi", "Zhao", role=c("aut","cre"), email = "zhi.zhao@medisin.uio.no"))
+Maintainer: Zhi Zhao <zhi.zhao@medisin.uio.no>
+Copyright: The code in src/arms.cpp is slightly modified based on the
+        research paper implementation written by Wally Gilks.
+URL: https://github.com/ocbe-uio/GPTCM
+BugReports: https://github.com/ocbe-uio/GPTCM/issues
+License: GPL-3
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, survival, riskRegression, ggplot2, ggridges, miCoPTCM,
+        loo, mvnfast, Matrix, scales, utils, stats, graphics
+Suggests: knitr, survminer
+NeedsCompilation: yes
+SystemRequirements: C++17
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-03 14:38:46 UTC; zhiz
+Author: Zhi Zhao [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-06-03 15:10:02 UTC

@@ -1,0 +1,25 @@
+Package: ARCHISSUR
+Title: Active Recovery of a Constrained and Hidden Set by Stepwise
+        Uncertainty Reduction Strategy
+Version: 0.0.1
+Authors@R: 
+    c(person("Morgane", "Menz", role = c("aut","cre"), email = "morgane.menz@ifpen.fr"), 
+    person("Miguel", "Munoz-Zuniga", role = c("aut")),
+    person("Delphine", "Sinoquet", role = c("aut")),
+    person("Naoual", "Serraji", role = c("ctb")))
+Description: Stepwise Uncertainty Reduction criterion and algorithm for sequentially learning a Gaussian Process Classifier as described in Menz et al. (2025). 
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: GPCsign, DiceKriging, KrigInv, future.apply, stats,
+        TruncatedNormal, randtoolbox, rgenoud, graphics
+Suggests: future, DiceDesign, testthat, knitr
+NeedsCompilation: no
+Packaged: 2025-06-24 16:44:40 UTC; menzm
+Author: Morgane Menz [aut, cre],
+  Miguel Munoz-Zuniga [aut],
+  Delphine Sinoquet [aut],
+  Naoual Serraji [ctb]
+Maintainer: Morgane Menz <morgane.menz@ifpen.fr>
+Repository: CRAN
+Date/Publication: 2025-06-28 17:00:07 UTC

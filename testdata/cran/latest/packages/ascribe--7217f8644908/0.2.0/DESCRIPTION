@@ -1,0 +1,30 @@
+Package: ascribe
+Title: Static Detection and Citation of R Package and Function Usage
+Version: 0.2.0
+Authors@R: 
+    person("Visruth", "Srimath Kandali", , "public@visruth.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0005-9097-0688"))
+Description: Scans R source files for package and function use, then
+    builds citations from configurable package universes. Supports .R,
+    .Rmd, and .qmd files, resolves unqualified calls by attachment order
+    and re-export origin, and leaves each package collection to define its
+    own citations. See 'stanflow' <https://github.com/VisruthSK/stanflow>
+    for an example usage.
+License: MIT + file LICENSE
+URL: https://ascribe.visruth.com
+BugReports: https://github.com/VisruthSK/ascribe/issues
+Depends: R (>= 4.2.0)
+Imports: brio, cli, fastmatch
+Suggests: knitr, quarto, spelling, testthat (>= 3.0.0)
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-22 20:50:20 UTC; visru
+Author: Visruth Srimath Kandali [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0005-9097-0688>)
+Maintainer: Visruth Srimath Kandali <public@visruth.com>
+Repository: CRAN
+Date/Publication: 2026-08-22 23:20:43 UTC

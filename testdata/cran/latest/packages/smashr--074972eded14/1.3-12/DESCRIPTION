@@ -1,0 +1,52 @@
+Package: smashr
+Encoding: UTF-8
+Type: Package
+Maintainer: Peter Carbonetto <pcarbo@uchicago.edu>
+Authors@R: c(person("Zhengrong","Xing",role="aut"),
+	     person("Matthew","Stephens",role="aut"),
+	     person("Kaiqian","Zhang",role="ctb"),
+             person("Daniel","Nachun",role="ctb"),
+             person("Guy","Nason", role="cph"),
+             person("Stuart","Barber",role="cph"), 
+             person("Tim","Downie",role="cph"),
+             person("Piotr","Frylewicz",role="cph"),
+             person("Arne","Kovac",role="cph"),
+             person("Todd","Ogden",role="cph"),
+             person("Bernard","Silverman",role="cph"),
+             person("Peter","Carbonetto",role=c("aut","cre"),
+	            email="pcarbo@uchicago.edu"))
+Title: Smoothing by Adaptive Shrinkage
+Version: 1.3-12
+Date: 2025-12-09
+Description: Fast, wavelet-based Empirical Bayes shrinkage methods for
+    signal denoising, including smoothing Poisson-distributed data and
+    Gaussian-distributed data with possibly heteroskedastic error. The
+    algorithms implement the methods described Z. Xing, P. Carbonetto & 
+    M. Stephens (2021) <https://jmlr.org/papers/v22/19-042.html>.
+License: GPL (>= 3)
+Copyright: file COPYRIGHTS
+Depends: R (>= 3.1.1),
+Imports: utils, stats, data.table, caTools, wavethresh, ashr, Rcpp (>=
+        1.1.0)
+Suggests: knitr, rmarkdown, MASS, EbayesThresh, testthat
+LinkingTo: Rcpp
+NeedsCompilation: yes
+LazyData: true
+URL: https://github.com/stephenslab/smashr
+BugReports: https://github.com/stephenslab/smashr/issues
+RoxygenNote: 7.3.1
+Packaged: 2025-12-09 16:54:02 UTC; pcarbo
+Author: Zhengrong Xing [aut],
+  Matthew Stephens [aut],
+  Kaiqian Zhang [ctb],
+  Daniel Nachun [ctb],
+  Guy Nason [cph],
+  Stuart Barber [cph],
+  Tim Downie [cph],
+  Piotr Frylewicz [cph],
+  Arne Kovac [cph],
+  Todd Ogden [cph],
+  Bernard Silverman [cph],
+  Peter Carbonetto [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-12-15 20:10:02 UTC

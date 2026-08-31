@@ -1,0 +1,46 @@
+Package: Rmonize
+Type: Package
+Title: Tools for Data Harmonization
+Version: 2.0.0
+Authors@R: 
+    c(person(given = "Guillaume",
+             family = "Fabre",
+             role = c("aut","cre"),
+             email = "guijoseph.fabre@gmail.com",
+             comment = c(ORCID = "0000-0002-0124-9970")),
+      person("Maelstrom Research",
+             role=c("aut","fnd","cph"),
+             email="info@maelstrom-research.org"))
+Maintainer: Guillaume Fabre <guijoseph.fabre@gmail.com>
+Description: Integrated tools to support rigorous and well documented data 
+    harmonization based on Maelstrom Research guidelines. The package includes 
+    functions to assess and prepare input elements, apply specified processing 
+    rules to generate harmonized datasets, validate data processing and identify 
+    processing errors, and document and summarize harmonized outputs. The 
+    harmonization process is defined and structured by two key user-generated 
+    documents: the DataSchema (specifying the list of harmonized variables to 
+    generate across datasets) and the Data Processing Elements (specifying the 
+    input elements and processing algorithms to generate harmonized variables 
+    in DataSchema formats). The package was developed to address key  challenges 
+    of retrospective data harmonization in epidemiology (as described in 
+    Fortier I and al. (2017) <doi:10.1093/ije/dyw075>) but can be used for any 
+    data harmonization initiative.
+License: GPL-3
+LazyData: true
+Depends: R (>= 3.5)
+Imports: dplyr (>= 1.1.0), rlang, stringr, tidyr, crayon, haven, utils,
+        fs, fabR (>= 2.0.0), madshapR (>= 2.0.0)
+Suggests: janitor, car, lubridate, knitr
+URL: https://github.com/maelstrom-research/Rmonize/
+BugReports: https://github.com/maelstrom-research/Rmonize/issues
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-06-30 18:30:38 UTC; guill
+Author: Guillaume Fabre [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0124-9970>),
+  Maelstrom Research [aut, fnd, cph]
+Repository: CRAN
+Date/Publication: 2025-06-30 18:50:02 UTC

@@ -1,0 +1,25 @@
+Package: FCUSUM
+Type: Package
+Title: Fourier CUSUM Cointegration Test
+Version: 1.0.0
+Authors@R: c(
+    person("Taha", "Zaghdoudi", email = "zedtaha@gmail.com", 
+           role = c("aut", "cre")))
+Description: Implements the Fourier cumulative sum (CUSUM) cointegration test 
+    for detecting cointegration relationships in time series data with 
+    structural breaks. The test uses Fourier approximations to capture smooth 
+    structural changes and CUSUM statistics to test for cointegration stability.
+    Based on methodology described in Zaghdoudi (2025) 
+    <doi:10.46557/001c.144076>. The corrected Akaike Information Criterion 
+    (AICc) is used for optimal frequency selection.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2025-11-09 16:11:47 UTC; admin
+Author: Taha Zaghdoudi [aut, cre]
+Maintainer: Taha Zaghdoudi <zedtaha@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-12 21:10:11 UTC

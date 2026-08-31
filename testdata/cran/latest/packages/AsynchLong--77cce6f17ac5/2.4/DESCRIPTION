@@ -1,0 +1,41 @@
+Package: AsynchLong
+Type: Package
+Title: Regression Analysis of Sparse Asynchronous Longitudinal Data
+Version: 2.4
+Date: 2025-05-03
+Author: Hongyuan Cao [aut],
+  Donglin Zeng [aut],
+  Jialiang Li [aut],
+  Jason P. Fine [aut],
+  Shannon T. Holloway [aut, cre]
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Authors@R: c(person(given = "Hongyuan",
+                      family = "Cao",
+                      role = "aut"),
+               person(given = "Donglin",
+                      family = "Zeng",
+                      role = "aut"),
+               person(given = "Jialiang",
+                      family = "Li",
+                      role = "aut"),
+               person(given = c("Jason", "P."),
+                      family = "Fine",
+                      role = "aut"),
+               person(given = c("Shannon", "T."),
+                      family = "Holloway",
+                      role = c("aut", "cre"),
+                      email = "shannon.t.holloway@gmail.com"))
+Description: Estimation of regression models for sparse asynchronous 
+    longitudinal observations, where time-dependent response and covariates 
+    are mismatched and observed intermittently within subjects. Kernel 
+    weighted estimating equations are used for generalized linear models 
+    with either time-invariant or time-dependent coefficients. Cao, H.,
+    Li, J., and Fine, J. P. (2016) <doi:10.1214/16-EJS1141>. Cao, H., 
+    Zeng, D., and Fine, J. P. (2015) <doi:10.1111/rssb.12086>.
+Depends: compiler, parallel, stats, graphics, methods
+License: GPL-2
+NeedsCompilation: no
+RoxygenNote: 7.2.1
+Packaged: 2025-05-03 17:35:12 UTC; 19194
+Repository: CRAN
+Date/Publication: 2025-05-03 17:50:02 UTC

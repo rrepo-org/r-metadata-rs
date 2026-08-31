@@ -1,0 +1,39 @@
+Package: topocast
+Title: Moving-Window Regression Downscaling of Raster Data
+Version: 0.0.5
+Authors@R: 
+    person("Gilles", "Colling", email = "gilles.colling051@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-3070-6066"))
+Description: Downscales coarse-resolution raster data to a finer grid by fitting
+    local linear regressions of a response, such as a climate variable, on one or
+    more fine-resolution predictors, such as elevation and other terrain indices,
+    within a moving window. Regression coefficients are estimated for every cell
+    using summed-area tables, so the cost is independent of the window size, then
+    resampled to the target resolution and applied to the fine-resolution
+    predictors. Multiplicative and additive anomaly application downscale time
+    series relative to a baseline climatology, following the regression-on-elevation
+    approach used for high-resolution climate surfaces described in Karger et al.
+    (2017) <doi:10.1038/sdata.2017.122>.
+License: MIT + file LICENSE
+Language: en-US
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: Rcpp (>= 1.0.0), terra (>= 1.7.0)
+Suggests: knitr, raster, rmarkdown, sf, stars, svglite, testthat (>=
+        3.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: C++17
+VignetteBuilder: knitr
+URL: https://gillescolling.com/topocast/,
+        https://github.com/gcol33/topocast
+BugReports: https://github.com/gcol33/topocast/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-30 18:51:39 UTC; Gilles Colling
+Author: Gilles Colling [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3070-6066>)
+Maintainer: Gilles Colling <gilles.colling051@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 17:20:08 UTC

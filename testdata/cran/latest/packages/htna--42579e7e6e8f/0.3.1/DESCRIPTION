@@ -1,0 +1,40 @@
+Package: htna
+Title: Heterogeneous Transition Network Analysis
+Version: 0.3.1
+Authors@R: c(
+    person("Sonsoles", "L\u00f3pez-Pernas", email = "sonsoles.lopez@uef.fi",
+           role = c("aut", "cre", "cph")),
+    person("Kamila", "Misiejuk", role = c("aut", "cph")),
+    person("Mohammed", "Saqr", email = "saqr@saqr.me",
+           role = c("aut", "cph"))
+  )
+Description: Implements the Heterogeneous Transition Network Analysis (HTNA)
+    method described by López-Pernas et al. (2026) <doi:10.1002/jcal.70285>.
+    The method is an extension of transition network analysis (TNA) where
+    actions or events belong to two or more distinct actor types (e.g. Human
+    and AI), preserving the actor type partition on the resulting network.
+    Provides a thin, focused API on top of the 'Nestimate' estimation engine
+    and the 'cograph' rendering engine, so downstream bootstrap, permutation,
+    reliability, centrality, and plotting functions treat each actor's
+    codes as a distinct node group.
+License: MIT + file LICENSE
+URL: https://sonsoles.me/htna/
+BugReports: https://github.com/sonsoleslp/htna/issues
+Depends: R (>= 4.1.0)
+Imports: Nestimate (>= 0.8.0), cograph, igraph
+Suggests: codyna, ggplot2, janitor, knitr, rmarkdown, gridExtra,
+        testthat (>= 3.0.0), tna
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-28 18:57:50 UTC; slopezpe
+Author: Sonsoles López-Pernas [aut, cre, cph],
+  Kamila Misiejuk [aut, cph],
+  Mohammed Saqr [aut, cph]
+Maintainer: Sonsoles López-Pernas <sonsoles.lopez@uef.fi>
+Repository: CRAN
+Date/Publication: 2026-07-28 20:00:02 UTC

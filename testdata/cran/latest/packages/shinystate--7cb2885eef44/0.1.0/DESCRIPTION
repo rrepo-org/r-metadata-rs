@@ -1,0 +1,37 @@
+Package: shinystate
+Title: Customization of Shiny Bookmarkable State
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Eric",
+      "Nantz",
+      email = "theRcast@gmail.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = '0000-0001-8104-7510')
+    ),
+    person(
+      family = "Eli Lilly and Company",
+      role = c("cph", "fnd")
+    ))
+Description: Enhance the bookmarkable state feature of 'shiny' with additional
+    customization such as storage location and storage repositories leveraging
+    the 'pins' package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0.0)
+Imports: archive, fs, htmltools, pins, R6, shiny (>= 0.14),
+Suggests: bslib, DT, knitr, lubridate, rlang, rmarkdown,
+        roxy.shinylive, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+URL: https://rpodcast.github.io/shinystate/,
+        https://github.com/rpodcast/shinystate
+BugReports: https://github.com/rpodcast/shinystate/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-09-13 02:34:20 UTC; eric
+Author: Eric Nantz [aut, cre] (ORCID: <https://orcid.org/0000-0001-8104-7510>),
+  Eli Lilly and Company [cph, fnd]
+Maintainer: Eric Nantz <theRcast@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-18 08:10:01 UTC

@@ -1,0 +1,28 @@
+Package: segMGarch
+Type: Package
+Title: Multiple Change-Point Detection for High-Dimensional GARCH
+        Processes
+Version: 1.3
+Date: 2025-07-05
+Authors@R: c(person(given = "Haeran",
+                        family = "Cho",
+                        role = "aut"),
+                 person(given = "Karolos",
+                        family = "Korkas",
+                        role = c("aut", "cre"),
+                        email = "kkorkas@yahoo.co.uk"))
+Maintainer: Karolos Korkas <kkorkas@yahoo.co.uk>
+Description: Implements a segmentation algorithm for multiple change-point detection in high-dimensional GARCH processes. It simultaneously segments GARCH processes by identifying 'common' change-points, each of which can be shared by a subset or all of the component time series as a change-point in their within-series and/or cross-sectional correlation structure. 
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.12), foreach, iterators, doParallel, fGarch,
+        corpcor, mvtnorm, methods
+Suggests: MASS
+LinkingTo: Rcpp,RcppArmadillo
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2025-07-06 21:59:10 UTC; kkork
+Repository: CRAN
+Date/Publication: 2025-07-06 23:20:01 UTC
+Author: Haeran Cho [aut],
+  Karolos Korkas [aut, cre]

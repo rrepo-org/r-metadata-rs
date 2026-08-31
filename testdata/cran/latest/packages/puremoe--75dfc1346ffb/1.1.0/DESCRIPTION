@@ -1,0 +1,36 @@
+Package: puremoe
+Type: Package
+Title: Integrated Retrieval and Analysis of 'PubMed', 'NIH', and 'NLM'
+        Literature Data
+Version: 1.1.0
+Authors@R: c(person("Jason", "Timm", role = c("aut", "cre"), email = "JaTimm@salud.unm.edu"))
+Author: Jason Timm [aut, cre]
+Maintainer: Jason Timm <JaTimm@salud.unm.edu>
+Description: Retrieve and analyze biomedical literature from 'PubMed' and
+    the wider 'NIH'/'NLM' data stack through a single, PMID-centered
+    interface. A PubMed search resolves to a set of PMIDs, which can be used
+    to retrieve article metadata and abstracts, author affiliations,
+    'iCite' citation data and links, 'PubTator3' entity and relation
+    annotations, and open-access full text from 'PMC'. A local analysis layer
+    operates on the retrieved tables, supporting corpus expansion through
+    citation links, citation network construction, sentence-level entity
+    co-occurrence, inspection of relation evidence, and 'MeSH' descriptor
+    keyness.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Depends: R (>= 3.5)
+Imports: rentrez, textshape, xml2, data.table, httr, pbapply, jsonlite,
+        rappdirs, textpress, parallel, tools, utils
+Suggests: knitr, rmarkdown, DT, dplyr, testthat (>= 3.0.0)
+URL: https://github.com/jaytimm/puremoe,
+        https://jaytimm.github.io/puremoe/
+BugReports: https://github.com/jaytimm/puremoe/issues
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-24 00:27:18 UTC; jtimm
+Repository: CRAN
+Date/Publication: 2026-06-24 07:40:19 UTC

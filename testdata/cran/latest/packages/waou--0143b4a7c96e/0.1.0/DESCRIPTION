@@ -1,0 +1,27 @@
+Package: waou
+Title: Weighting All of Us
+Version: 0.1.0
+Authors@R: c(
+    person("Daniel", "Brannock", , "mbrannock@rti.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8095-547X")),
+    person("Mahmoud", "Elkasabi", , , role = "aut",
+           comment = c(ORCID = "0000-0002-0720-4319"))
+  )
+Description: Utilities for using a probability sample to reweight prevalence estimates calculated from the All of Us research program. Weighted estimates will still not be representative of the general U.S. population. However, they will provide an early indication for how unweighted estimates may be biased by the sampling bias in the All of Us sample.
+License: AGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Imports: glmnet, dplyr, stringr, stats, glue, mice, nonprobsvy, survey,
+        ggplot2, purrr
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-09-10 20:51:53 UTC; mbrannock
+Author: Daniel Brannock [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8095-547X>),
+  Mahmoud Elkasabi [aut] (ORCID: <https://orcid.org/0000-0002-0720-4319>)
+Maintainer: Daniel Brannock <mbrannock@rti.org>
+Repository: CRAN
+Date/Publication: 2025-09-15 09:10:02 UTC

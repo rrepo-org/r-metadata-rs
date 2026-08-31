@@ -1,0 +1,36 @@
+Package: cusna
+Type: Package
+Title: Native GPU-Accelerated Simulation and Estimation of Network
+        Models
+Version: 0.1.0
+Authors@R: person("Artem", "Maltsev", email = "MaltsevSNA@proton.me",
+    role = c("aut", "cre"))
+Author: Artem Maltsev [aut, cre]
+Maintainer: Artem Maltsev <MaltsevSNA@proton.me>
+Description: A self-contained native engine (a C interface over 'CUDA'
+    kernels and C++ host logic) for stochastic actor-oriented models (the
+    model family of 'RSiena'), exponential random graph models
+    (cross-sectional, temporal, and separable temporal), and models for
+    binary actor attributes, callable from R without a Python runtime.
+    Modelled on the 'torch' package: the CRAN build is CPU-only from
+    source; the GPU path is compiled from source when a 'CUDA' toolkit is
+    detected at configure time. The data preparation, host statistics
+    ('RSiena' Appendix B conventions), and moment targets are validated
+    bit-for-bit against the reference implementation and reproduce 'RSiena'
+    targets on public datasets to machine precision; the estimators match
+    'RSiena', 'ergm', 'btergm', and 'tergm' on public benchmark models.
+License: MIT + file LICENSE
+URL: https://github.com/artemmaltsev74-techcom/cusna
+BugReports: https://github.com/artemmaltsev74-techcom/cusna/issues
+Encoding: UTF-8
+SystemRequirements: C++17; optionally a CUDA 12.x toolkit (nvcc) for
+        the GPU path
+LinkingTo: cpp11
+Imports: stats, utils
+Suggests: testthat (>= 3.0.0), jsonlite, litedown, RSiena (>= 1.4)
+VignetteBuilder: litedown
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-06 18:18:28 UTC; Artem
+Repository: CRAN
+Date/Publication: 2026-07-15 18:10:15 UTC

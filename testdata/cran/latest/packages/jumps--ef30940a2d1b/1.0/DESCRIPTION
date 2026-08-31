@@ -1,0 +1,34 @@
+Package: jumps
+Type: Package
+Title: Hodrick-Prescott Filter with Jumps
+Version: 1.0
+Date: 2025-03-20
+Authors@R: c(
+    person("Matteo", "Pelagatti", , "matteo.pelagatti@unimib.it", role = c("aut","cre","cph"),
+		   comment = c(ORCID = "0000-0002-1860-7535")),
+    person("Paolo", "Maranzano", , "pmaranzano.ricercastatistica@gmail.com", role = c("aut","cph"),
+           comment = c(ORCID = "0000-0002-9228-2759"))
+  )
+Maintainer: Matteo Pelagatti <matteo.pelagatti@unimib.it>
+Description: A set of functions to compute the Hodrick-Prescott (HP)
+    filter with automatically selected jumps. The original
+    HP filter extracts a smooth trend from a time series, and our version
+    allows for a small number of automatically identified jumps.
+    See Maranzano and Pelagatti (2024) <doi:10.2139/ssrn.4896170> for details.
+License: GPL-3
+Imports: Rcpp (>= 1.0.10), stats, nloptr
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), ggplot2, xts
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2025-03-23 21:43:25 UTC; pelagatti
+Author: Matteo Pelagatti [aut, cre, cph]
+    (<https://orcid.org/0000-0002-1860-7535>),
+  Paolo Maranzano [aut, cph] (<https://orcid.org/0000-0002-9228-2759>)
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-03-24 15:00:06 UTC

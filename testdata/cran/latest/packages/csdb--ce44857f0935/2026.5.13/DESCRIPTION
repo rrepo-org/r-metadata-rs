@@ -1,0 +1,28 @@
+Package: csdb
+Title: An Abstracted System for Easily Working with Databases with
+        Large Datasets
+Version: 2026.5.13
+Authors@R: c(
+  person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6747-1726")),
+  person(c("August", "Sørli"), "Mathisen", email = "august.sorli.mathisen@fhi.no", role = c("aut"))
+  )
+Description: Provides object-oriented database management tools for working with large datasets across multiple database systems. Features include robust connection management for 'PostgreSQL' databases, advanced table operations with bulk data loading and upsert functionality, comprehensive data validation through customizable field type and content validators, efficient index management, and cross-database compatibility. Designed for high-performance data operations in surveillance systems and large-scale data processing workflows.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+URL: https://niphr.github.io/csdb/, https://github.com/niphr/csdb
+BugReports: https://github.com/niphr/csdb/issues
+Encoding: UTF-8
+LazyData: true
+Imports: csutil, data.table, DBI, dplyr, fs, ggplot2, glue, methods,
+        odbc, R6, S7, stringr, uuid
+Suggests: testthat, knitr, rmarkdown, rstudioapi, digest, crayon
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-13 04:59:48 UTC; raw996
+Author: Richard Aubrey White [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6747-1726>),
+  August Sørli Mathisen [aut]
+Maintainer: Richard Aubrey White <hello@rwhite.no>
+Repository: CRAN
+Date/Publication: 2026-05-13 05:20:09 UTC

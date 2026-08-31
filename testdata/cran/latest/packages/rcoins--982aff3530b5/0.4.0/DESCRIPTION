@@ -1,0 +1,45 @@
+Package: rcoins
+Title: Identify Naturally Continuous Lines in a Spatial Network
+Version: 0.4.0
+Authors@R: c(
+    person("Francesco", "Nattino", , "f.nattino@esciencecenter.nl", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-3286-0139")),
+    person("Claudiu", "Forgaci", , "c.forgaci@tudelft.nl", role = "aut",
+           comment = c(ORCID = "0000-0003-3218-5102")),
+    person("Fakhereh", "Alidoost", , "f.alidoost@esciencecenter.nl", role = "aut",
+           comment = c(ORCID = "0000-0001-8407-6472")),
+    person("Thijs", "van Lankveld", , "t.vanlankveld@esciencecenter.nl", role = "ctb",
+           comment = c(ORCID = "0009-0001-1147-4813")),
+    person("Netherlands eScience Center", , , "info@esciencecenter.nl", role = "fnd")
+  )
+Description: Provides functionality to group lines that form naturally
+    continuous lines in a spatial network. The algorithm implemented is based
+    on the Continuity in Street Networks (COINS) method from Tripathy et al.
+    (2021) <doi:10.1177/2399808320967680>, which identifies continuous
+    "strokes" in the network as the line strings that maximize the angles
+    between consecutive segments.
+License: Apache License (>= 2)
+URL: https://cityriverspaces.github.io/rcoins/,
+        https://doi.org/10.5281/zenodo.14501804,
+        https://github.com/CityRiverSpaces/rcoins
+BugReports: https://github.com/CityRiverSpaces/rcoins/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: ggplot2, knitr, rmarkdown, sfnetworks, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: dplyr, rlang, sf, sfheaders
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2025-08-20 14:14:17 UTC; fnattino
+Author: Francesco Nattino [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3286-0139>),
+  Claudiu Forgaci [aut] (ORCID: <https://orcid.org/0000-0003-3218-5102>),
+  Fakhereh Alidoost [aut] (ORCID:
+    <https://orcid.org/0000-0001-8407-6472>),
+  Thijs van Lankveld [ctb] (ORCID:
+    <https://orcid.org/0009-0001-1147-4813>),
+  Netherlands eScience Center [fnd]
+Maintainer: Francesco Nattino <f.nattino@esciencecenter.nl>
+Repository: CRAN
+Date/Publication: 2025-08-20 14:50:08 UTC

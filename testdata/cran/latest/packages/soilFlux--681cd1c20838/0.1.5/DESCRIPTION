@@ -1,0 +1,50 @@
+Package: soilFlux
+Title: Physics-Informed Neural Networks for Soil Water Retention Curves
+Version: 0.1.5
+Authors@R: 
+    person(
+      "Hugo", "Rodrigues",
+      email = "rodrigues.machado.hugo@gmail.com",
+      role  = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-8070-8126")
+    )
+Description: Implements a physics-informed one-dimensional convolutional
+    neural network (CNN1D-PINN) for estimating the complete soil water
+    retention curve (SWRC) as a continuous function of matric potential,
+    from soil texture, organic carbon, bulk density, and depth.
+    The network architecture ensures strict monotonic decrease of
+    volumetric water content with increasing suction by construction,
+    through cumulative integration of non-negative slope outputs
+    (monotone integral architecture). Four physics-based residual
+    constraints adapted from Norouzi et al. (2025) <doi:10.1029/2024WR038149>
+    are embedded in the loss function: (S1) linearity at the dry end
+    (pF in [5, 7.6]); (S2) non-negativity at pF = 6.2;
+    (S3) non-positivity at pF = 7.6; and (S4) a near-zero derivative
+    in the saturated plateau region (pF in [-2, -0.3]). Includes tools
+    for data preparation, model training, dense prediction, performance
+    metrics, texture classification, and publication-quality visualisation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+SystemRequirements: Python (>= 3.8), TensorFlow (>= 2.14), Keras (>=
+        3.0)
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.1.0), tidyr (>= 1.3.0), ggplot2 (>= 3.4.0), purrr
+        (>= 1.0.0), tibble (>= 3.2.0), stringr (>= 1.5.0), reticulate
+        (>= 1.34.0), tensorflow (>= 2.14.0), rlang (>= 1.1.0)
+Suggests: keras3 (>= 1.0.0), ggtern, readxl (>= 1.4.0), scales (>=
+        1.2.0), knitr, rmarkdown, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/HugoMachadoRodrigues/soilFlux,
+        https://hugomachadorodrigues.github.io/soilFlux/
+BugReports: https://github.com/HugoMachadoRodrigues/soilFlux/issues
+NeedsCompilation: no
+Packaged: 2026-03-21 21:09:59 UTC; rodrigues.h
+Author: Hugo Rodrigues [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8070-8126>)
+Maintainer: Hugo Rodrigues <rodrigues.machado.hugo@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-26 09:30:02 UTC

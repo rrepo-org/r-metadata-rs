@@ -1,0 +1,39 @@
+Package: epidm
+Version: 1.0.6
+Title: UK Epidemiological Data Management
+Authors@R: 
+    c(
+        person("Alice", "Graham", email = "graham.alice@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0003-3000-2771")),
+        person("Harshana", "Liyanage", email = "harshanal@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0001-9738-6349")),
+        person("Frederick", "Sloots", email = "frederick.sloots@ukhsa.gov.uk", role = c("aut", "cre"), comment = c(ORCID = "0009-0006-4927-8937")), 
+        person("Emma", "Parker", email = "emma.k.parker@ukhsa.gov.uk", role = c("aut"), comment = c(ORCID = "0009-0007-8485-5303")),
+        person("Alex", "Bhattacharya", email = "alex.bhatt@gmail.com", role = c("aut"))
+    )
+Description: Contains utilities and functions for the cleaning, processing and
+    management of patient level public health data for surveillance
+    and analysis held by the UK Health Security Agency, UKHSA.
+URL: https://github.com/ukhsa-collaboration/epidm
+BugReports: https://github.com/ukhsa-collaboration/epidm/issues
+License: GPL (>= 3)
+Depends: R (>= 4.4.0)
+Imports: data.table, DBI, odbc, phonics, purrr, readr, stats, stringi,
+        stringr, utils, lubridate
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), patrick, ggplot2,
+        dplyr, tibble
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-20 13:52:56 UTC; Frederick.Sloots
+Author: Alice Graham [aut] (ORCID: <https://orcid.org/0000-0003-3000-2771>),
+  Harshana Liyanage [aut] (ORCID:
+    <https://orcid.org/0000-0001-9738-6349>),
+  Frederick Sloots [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-4927-8937>),
+  Emma Parker [aut] (ORCID: <https://orcid.org/0009-0007-8485-5303>),
+  Alex Bhattacharya [aut]
+Maintainer: Frederick Sloots <frederick.sloots@ukhsa.gov.uk>
+Repository: CRAN
+Date/Publication: 2026-02-25 14:30:03 UTC

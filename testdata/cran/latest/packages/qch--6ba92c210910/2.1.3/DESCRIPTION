@@ -1,0 +1,42 @@
+Package: qch
+Title: Query Composite Hypotheses
+Version: 2.1.3
+Authors@R: c(
+    person("Tristan", "Mary-Huard", , "tristan.mary-huard@agroparistech.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3839-9067")),
+    person("Annaig", "De Walsche", , "annaig.de-walsche@inrae.fr", role = "aut",
+           comment = c(ORCID = "0000-0003-0603-1716")),
+    person("Franck", "Gauthier", , "franck.gauthier@inrae.fr", role = "ctb",
+           comment = c(ORCID = "0000-0003-0574-065X"))
+  )
+Author: Tristan Mary-Huard [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3839-9067>),
+  Annaig De Walsche [aut] (ORCID:
+    <https://orcid.org/0000-0003-0603-1716>),
+  Franck Gauthier [ctb] (ORCID: <https://orcid.org/0000-0003-0574-065X>)
+Maintainer: Tristan Mary-Huard <tristan.mary-huard@agroparistech.fr>
+Description: Provides functions for the joint analysis of Q sets of
+    p-values obtained for the same list of items. This joint analysis is
+    performed by querying a composite hypothesis, i.e. an arbitrary
+    complex combination of simple hypotheses, as described in Mary-Huard
+    et al. (2021) <doi:10.1093/bioinformatics/btab592> and De Walsche et
+    al.(2025) <doi: 10.1093/nargab/lqaf118>. In this approach, the Q-uplet
+    of p-values associated with each item is distributed as a multivariate
+    mixture, where each of the 2^Q components corresponds to a specific
+    combination of simple hypotheses. The dependence between the p-value
+    series is considered using a Gaussian copula function. A p-value for
+    the composite hypothesis test is derived from the posterior
+    probabilities.
+License: GPL-3
+Depends: R (>= 2.10)
+Imports: copula, dplyr, graphics, ks, purrr, Rcpp, stats, stringr,
+        utils
+LinkingTo: Rcpp, RcppArmadillo
+biocViews:
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-05-27 12:56:12 UTC; adewalsc
+RoxygenNote: 7.3.3
+Repository: CRAN
+Date/Publication: 2026-05-27 14:10:02 UTC

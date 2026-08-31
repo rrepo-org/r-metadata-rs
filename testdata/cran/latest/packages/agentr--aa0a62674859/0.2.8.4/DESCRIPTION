@@ -1,0 +1,30 @@
+Package: agentr
+Type: Package
+Title: Specification and Review Scaffolding for AI Agent Workflows
+Version: 0.2.8.4
+Authors@R: 
+    person(given = "Oliver", 
+           family = "Zhou",
+           email = "oliver.yxzhou@gmail.com",
+           role = c("aut", "cre"))
+Description: 
+    Specification, review, and scaffolding helpers for AI agent systems.
+    The package standardizes workflow, memory, knowledge, interface, proposal,
+    and review artifacts so humans and coding assistants can infer, inspect,
+    revise, and hand off task designs. It intentionally excludes communication
+    layers, provider-specific model client code, and full runtime execution
+    engines so that design artifacts and implementation transport remain
+    cleanly separated.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: R6, jsonlite, rlang, yaml
+Suggests: DiagrammeR, DiagrammeRsvg, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2026-06-30 13:51:26 UTC; oliver
+Author: Oliver Zhou [aut, cre]
+Maintainer: Oliver Zhou <oliver.yxzhou@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-06 12:50:09 UTC

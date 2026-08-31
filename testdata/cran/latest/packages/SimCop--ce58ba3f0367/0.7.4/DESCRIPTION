@@ -1,0 +1,33 @@
+Package: SimCop
+Type: Package
+Title: Simulate from Arbitrary Copulae
+Version: 0.7.4
+Date: 2026-02-22
+Authors@R: c(person(c("Berwin", "A."), "Turlach",
+                    role=c("aut", "cre"),
+                    email="Berwin.Turlach@gmail.com",
+                    comment=c(ORCID = "0000-0001-8795-471X")),
+             person("Nader", "Tajvidi", role="ctb",
+                    email="Nader.Tajvidi@matstat.lu.se",
+                    comment=c(ORCID = "0000-0002-7193-5730")))
+Description: Provides a framework to generating random variates from
+             arbitrary multivariate copulae, while concentrating on
+             (bivariate) extreme value copulae.  Particularly useful if
+             the multivariate copulae are not available in closed
+             form.  Detailed discussion of the methodologies used can
+             be found in Tajvidi and Turlach (2018)
+             <doi:10.1111/anzs.12209>. 
+Depends: R (>= 4.5.0)
+Imports: grDevices, graphics, quadprog, rgl, stats
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-02-22 08:02:34 UTC; berwin
+Author: Berwin A. Turlach [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8795-471X>),
+  Nader Tajvidi [ctb] (ORCID: <https://orcid.org/0000-0002-7193-5730>)
+Maintainer: Berwin A. Turlach <Berwin.Turlach@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-22 15:30:13 UTC

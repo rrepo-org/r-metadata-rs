@@ -1,0 +1,43 @@
+Package: RobinCar
+Type: Package
+Title: Robust Inference for Covariate Adjustment in Randomized Clinical
+        Trials
+Version: 1.2.0
+Authors@R: c(
+    person("Marlena", "Bannick", 
+        email="marlena.bannick@outlook.com", 
+        role=c("cre", "aut"),
+        comment=c(ORCID="0000-0001-6279-5978")),
+    person("Yuhan", "Qian", role="aut"),
+    person("Ting", "Ye", role="aut"),
+    person("Yanyao", "Yi", role="aut"),
+    person("Faith", "Bian", role="aut")
+    )
+Description: Performs robust estimation and inference when using covariate adjustment and/or covariate-adaptive randomization in randomized clinical trials.
+    Ting Ye, Jun Shao, Yanyao Yi, Qinyuan Zhao (2023) <doi:10.1080/01621459.2022.2049278>.
+    Ting Ye, Marlena Bannick, Yanyao Yi, Jun Shao (2023) <doi:10.1080/24754269.2023.2205802>.
+    Ting Ye, Jun Shao, Yanyao Yi (2023) <doi:10.1093/biomet/asad045>.
+    Marlena Bannick, Jun Shao, Jingyi Liu, Yu Du, Yanyao Yi, Ting Ye (2024) <doi:10.1093/biomet/asaf029>.
+    Xiaoyu Qiu, Yuhan Qian, Jaehwan Yi, Jinqiu Wang, Yu Du, Yanyao Yi, Ting Ye (2025) <doi:10.48550/arXiv.2408.12541>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, magrittr, tidyr, emulator, numDeriv, tidyverse, stats,
+        rlang, survival, fastDummies, data.table, broom, SuperLearner,
+        AIPW, MASS, Rdpack (>= 0.7)
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, ranger, forcats, matrixcalc, testthat (>=
+        3.0.0)
+RdMacros: Rdpack
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-24 20:08:36 UTC; marlena
+Author: Marlena Bannick [cre, aut] (ORCID:
+    <https://orcid.org/0000-0001-6279-5978>),
+  Yuhan Qian [aut],
+  Ting Ye [aut],
+  Yanyao Yi [aut],
+  Faith Bian [aut]
+Maintainer: Marlena Bannick <marlena.bannick@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-04-24 20:20:16 UTC

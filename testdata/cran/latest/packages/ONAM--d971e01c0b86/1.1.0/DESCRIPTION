@@ -1,0 +1,30 @@
+Type: Package
+Package: ONAM
+Title: Fitting Interpretable Neural Additive Models Using
+        Orthogonalization
+Version: 1.1.0
+Authors@R: 
+    person("David", "Köhler", , "koehler@imbie.uni-bonn.de", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-0027-4046"))
+Description: An algorithm for fitting interpretable additive neural
+    networks for identifiable and visualizable feature effects using post
+    hoc orthogonalization. Fit custom neural networks intuitively using
+    established 'R' 'formula' notation, including interaction effects of
+    arbitrary order while preserving identifiability to enable a
+    functional decomposition of the prediction function. For more details see 
+    Koehler et al. (2025) <doi:10.1038/s44387-025-00033-7>.
+License: MIT + file LICENSE
+BugReports: https://github.com/Koehlibert/ONAM_R/issues
+Depends: keras3, reticulate
+Imports: dplyr, scales, rlang, ggplot2, pROC
+Suggests: akima, RColorBrewer, testthat (>= 3.0.0)
+Encoding: UTF-8
+Config/testthat/edition: 3
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-24 08:26:46 UTC; koehler
+Author: David Köhler [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-0027-4046>)
+Maintainer: David Köhler <koehler@imbie.uni-bonn.de>
+Repository: CRAN
+Date/Publication: 2026-08-24 09:20:15 UTC

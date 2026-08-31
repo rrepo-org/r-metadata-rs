@@ -1,0 +1,55 @@
+Package: rlistings
+Title: Clinical Trial Style Data Readout Listings
+Version: 0.2.13
+Date: 2025-12-05
+Authors@R: c(
+    person("Gabriel", "Becker", , "gabembecker@gmail.com", role = "aut",
+           comment = "original creator of the package"),
+    person("Adrian", "Waddell", , "adrian.waddell@gene.com", role = "aut"),
+    person("Joe", "Zhu", , "joe.zhu@roche.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7566-2787")),
+    person("Davide", "Garolini", , "davide.garolini@roche.com", role = "aut",
+           comment = c(ORCID = "0000-0002-1445-1369")),
+    person("Emily", "de la Rua", , "emily.de_la_rua@contractors.roche.com", role = "aut",
+           comment = c(ORCID = "0009-0000-8738-5561")),
+    person("Abinaya", "Yogasekaram", , "abinaya.yogasekaram@contractors.roche.com", role = "ctb",
+           comment = c(ORCID = "0009-0005-2083-1105")),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Listings are often part of the submission of clinical trial
+    data in regulatory settings.  We provide a framework for the specific
+    formatting features often used when displaying large datasets in that
+    context.
+License: Apache License 2.0
+URL: https://insightsengineering.github.io/rlistings/,
+        https://github.com/insightsengineering/rlistings/
+BugReports: https://github.com/insightsengineering/rlistings/issues
+Depends: formatters (>= 0.5.12), methods, R (>= 4.1.0), tibble (>=
+        3.2.1)
+Imports: checkmate (>= 2.1.0), grDevices, grid, stats, utils
+Suggests: dplyr (>= 1.1.4), knitr (>= 1.50), lifecycle (>= 1.0.4),
+        processx (>= 3.8.6), rmarkdown (>= 2.29), stringi (>= 1.8.7),
+        testthat (>= 3.2.3), withr (>= 3.0.2)
+VignetteBuilder: knitr, rmarkdown
+Config/Needs/verdepcheck: insightsengineering/formatters,
+        tidyverse/tibble, mllg/checkmate, tidyverse/dplyr, yihui/knitr,
+        r-lib/lifecycle, rstudio/rmarkdown, gagolews/stringi,
+        r-lib/testthat, r-lib/withr
+Config/Needs/website: insightsengineering/nesttemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-08 11:15:11 UTC; rstudio
+Author: Gabriel Becker [aut] (original creator of the package),
+  Adrian Waddell [aut],
+  Joe Zhu [aut, cre] (ORCID: <https://orcid.org/0000-0001-7566-2787>),
+  Davide Garolini [aut] (ORCID: <https://orcid.org/0000-0002-1445-1369>),
+  Emily de la Rua [aut] (ORCID: <https://orcid.org/0009-0000-8738-5561>),
+  Abinaya Yogasekaram [ctb] (ORCID:
+    <https://orcid.org/0009-0005-2083-1105>),
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Joe Zhu <joe.zhu@roche.com>
+Repository: CRAN
+Date/Publication: 2025-12-08 12:20:02 UTC

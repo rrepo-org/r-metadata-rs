@@ -1,0 +1,24 @@
+Package: arkhaia
+Title: Archaeological and Historical Analysis
+Version: 0.5.5
+Date: 2026-04-11
+Authors@R: 
+    person(c("Stephen", "A."), "Collins-Elliott", , "sce@utk.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5642-6903"))
+Description: Tools for quantitative analysis related to archaeological and historical problems for irregularly spaced time indexed observations, toward evaluating linear dependence and homogeneity over time. Methods include effect sizes for measuring homogeneity, simulation from a truncated Poisson distribution for random right-censoring of count data, and least-squares spectral analysis by lowest frequency iteration for model fitting. Collins-Elliott (2026) <https://volweb.utk.edu/~scolli46/sce_aqysuppl2026.pdf>.
+License: GPL (>= 3)
+Imports: Rcpp (>= 1.1.0), Rdpack, stats
+RdMacros: Rdpack
+Encoding: UTF-8
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-05-01 15:00:50 UTC; archaeologus
+Author: Stephen A. Collins-Elliott [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5642-6903>)
+Maintainer: Stephen A. Collins-Elliott <sce@utk.edu>
+Repository: CRAN
+Date/Publication: 2026-05-05 18:00:02 UTC

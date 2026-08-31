@@ -1,0 +1,32 @@
+Package: impala
+Type: Package
+Title: Bayesian Model Calibration
+Version: 0.1.4
+Authors@R: c(
+    person(given = "J. Derek", 
+           family = "Tucker", 
+           role = c("aut", "cre"), 
+           email = "jdtuck@sandia.gov", 
+           comment = c(ORCID = "0000-0001-8844-2169")),
+    person("Sandia National Laboratories", role = c("cph", "fnd")))
+Description: Package provides tools for modular Bayesian model calibration. these tools allow for 
+  posterior exploration with sampling methods including tempering and adaptive Markov Chain Monte Carlo (MCMC).
+  Allows for pooled calibration or hierarchal calibration of parameters.
+  For more information see Francom et al., 2025 <DOI:10.1137/24M1644092>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: cli, methods, progress, einsum,
+Suggests: fdasrvf, BASS, BayesPPR, mvBayes, coda, bayesplot, gridExtra,
+        hexbin, knitr, rmarkdown
+Config/roxygen2/version: 8.1.0
+URL: https://github.com/sandialabs/rImpala
+BugReports: https://github.com/sandialabs/rImpala/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-21 17:05:50 UTC; jdtuck
+Author: J. Derek Tucker [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8844-2169>),
+  Sandia National Laboratories [cph, fnd]
+Maintainer: J. Derek Tucker <jdtuck@sandia.gov>
+Repository: CRAN
+Date/Publication: 2026-08-21 19:30:02 UTC

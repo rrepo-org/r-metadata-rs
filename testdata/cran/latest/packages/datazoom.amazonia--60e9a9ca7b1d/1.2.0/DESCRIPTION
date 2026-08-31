@@ -1,0 +1,68 @@
+Package: datazoom.amazonia
+Title: Simplify Access to Data from the Amazon Region
+Version: 1.2.0
+Authors@R: c(
+  person("Laura", "Tavares Regadas", email = "lauratregadas@gmail.com", role = c("aut", "cre")),
+  person(given = "DataZoom (PUC-Rio)", email = "datazoom@econ.puc-rio.br", role = "fnd"),
+  person("Gustavo", "Gonzaga", email = "gonzaga@econ.puc-rio.br", role = "aut"),
+  person("Igor", "Rigolon Veiga", email = "igor.rilave@hotmail.com", role = "aut"),
+  person("Guilherme", "Jardim", email = "gnjardim1@gmail.com", role = "aut"),
+  person("Daniel", "AC Barbosa", email = "daniel.adrianocb@gmail.com", role = "aut"),
+  person("Bruno", "Alcantara Duarte", email = "brunoalcanduarte@gmail.com", role = "aut"),
+  person("Fredie", "Didier", email = "fdidier@terra.com.br", role = "aut"),
+  person("Tito", "Bruni", role = "aut"),
+  person("Luiz Guilherme", "Lopes Moussatche", email = "luizguilherme.lopesm@gmail.com", role = "aut"),
+  person("Victor", "Aliende da Matta", email = "victor.al.matta@gmail.com", role = "aut"),
+  person("Anna Carolina", "Dutra Saraiva", email = "annadutrasaraiva@gmail.com", role = "aut"),
+  person("Arthur", "Carvalho Brito", email = "arthurcbps@gmail.com", role = "aut"),
+  person("Francisco", "de Lima Cavalcanti", email = "francisco.lima.cavalcanti@gmail.com", role = "aut"),
+  person("Maria", "Mittelbach", email = "mariamittelbach@gmail.com", role = "aut"),
+  person("Felipe", "de Moraes Nunes", email = "felipedmoraesn@gmail.com", role = "aut"),
+  person("Joao Paulo", "Santos P. Barbosa", email = "joao.31582129@gmail.com", role = "aut"),
+  person("Bernardo", "Furlanetto Sieira", email = "bernardo.sieira@gmail.com", role = "aut")
+ )
+Description: Provides tools for downloading and processing data on the
+    Brazilian Amazon region from a variety of official sources. Covers
+    environmental, agricultural, economic, and social indicators, including
+    deforestation and land use, greenhouse gas emissions, climate,
+    agricultural and livestock production, mining, energy, and foreign
+    trade, from providers such as the Brazilian Institute of Geography and
+    Statistics (IBGE), the National Institute for Space Research (INPE),
+    and MapBiomas. Data are cleaned and standardized for analysis at the
+    municipality, state, and regional levels.
+License: MIT + file LICENSE
+URL: https://datazoom.com.br/amazonia/en/,
+        https://github.com/datazoompuc/datazoom.amazonia
+Depends: R (>= 4.1.0)
+Imports: data.table, dplyr, googledrive, janitor, magrittr, openxlsx,
+        purrr, readr, readxl, sf, sidrar, stringi, stringr, tibble,
+        tidyr, tidyselect, utils, rlang
+Suggests: knitr, rmarkdown, terra, units
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+BugReports: https://github.com/datazoompuc/datazoom.amazonia/issues
+NeedsCompilation: no
+Packaged: 2026-07-03 13:50:48 UTC; Ro
+Author: Laura Tavares Regadas [aut, cre],
+  DataZoom (PUC-Rio) [fnd],
+  Gustavo Gonzaga [aut],
+  Igor Rigolon Veiga [aut],
+  Guilherme Jardim [aut],
+  Daniel AC Barbosa [aut],
+  Bruno Alcantara Duarte [aut],
+  Fredie Didier [aut],
+  Tito Bruni [aut],
+  Luiz Guilherme Lopes Moussatche [aut],
+  Victor Aliende da Matta [aut],
+  Anna Carolina Dutra Saraiva [aut],
+  Arthur Carvalho Brito [aut],
+  Francisco de Lima Cavalcanti [aut],
+  Maria Mittelbach [aut],
+  Felipe de Moraes Nunes [aut],
+  Joao Paulo Santos P. Barbosa [aut],
+  Bernardo Furlanetto Sieira [aut]
+Maintainer: Laura Tavares Regadas <lauratregadas@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-03 21:50:08 UTC

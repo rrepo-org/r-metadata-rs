@@ -1,0 +1,32 @@
+Package: paths
+Type: Package
+Title: An Imputation Approach to Estimating Path-Specific Causal
+        Effects
+Version: 0.1.2
+Date: 2025-12-22
+Authors@R: c(
+    person("Minh", "Trinh", email = "mdtrinh@austin.utexas.edu", role = "aut"),
+    person("Teppei", "Yamamoto", email = "tyamam@waseda.jp", role = "aut"),
+    person("Xiang", "Zhou", email = "xiang_zhou@fas.harvard.edu", role = "cre"))
+Description: In causal mediation analysis with multiple causally ordered mediators, a set of path-specific
+  effects are identified under standard ignorability assumptions. This package implements an imputation
+  approach to estimating these effects along with a set of bias formulas for conducting sensitivity analysis
+  (Zhou and Yamamoto <doi:10.31235/osf.io/2rx6p>). It contains two main functions: paths() for estimating 
+  path-specific effects and sens() for conducting sensitivity analysis. Estimation uncertainty is quantified 
+  using the nonparametric bootstrap.
+Encoding: UTF-8
+LazyLoad: yes
+LazyData: yes
+License: GPL (>= 2)
+Depends: R (>= 4.5.0)
+Suggests: knitr, rmarkdown
+Imports: BART, boot, gbm, ggplot2, metR, stats, twang, tidyr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-22 16:22:48 UTC; Xiang
+Author: Minh Trinh [aut],
+  Teppei Yamamoto [aut],
+  Xiang Zhou [cre]
+Maintainer: Xiang Zhou <xiang_zhou@fas.harvard.edu>
+Repository: CRAN
+Date/Publication: 2025-12-22 17:00:09 UTC

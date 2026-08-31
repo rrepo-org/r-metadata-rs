@@ -1,0 +1,24 @@
+Package: CellDEEP
+Type: Package
+Title: Cell DiffErential Expression by Pooling ('CellDEEP')
+Version: 1.0.1
+Authors@R: person("Yiyi", "Cheng", email = "2593244c@student.gla.ac.uk",role = c("aut", "cre"), comment = c(ORCID = "0009-0005-3329-6842"))
+Description: Pool cells together before running differentially expression (DE) analysis. 
+ Tell 'CellDEEP' how many cells you want to pool together (which shall be determined 
+ by the overall cell number of data), then run DE analysis.
+ Cheng et al. (2026) <doi:10.64898/2026.03.09.710522>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: Seurat
+Suggests: knitr, rmarkdown, testthat (>= 3.2.3)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-03-24 16:10:07 UTC; andrewmccluskey
+Author: Yiyi Cheng [aut, cre] (ORCID: <https://orcid.org/0009-0005-3329-6842>)
+Maintainer: Yiyi Cheng <2593244c@student.gla.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-03-29 15:30:02 UTC

@@ -1,0 +1,30 @@
+Package: stdbscan
+Title: Spatio-Temporal DBSCAN Clustering
+Version: 0.2.0
+Authors@R: 
+    person("Antoine", "Le Doeuff", , "antoine.ldoeuff@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0008-8807-3816"))
+Description: Implements the ST-DBSCAN (spatio-temporal density-based spatial
+    clustering of applications with noise) clustering algorithm for detecting
+    spatially and temporally dense regions in point data, with a fast C++ backend
+    via 'Rcpp'. Birant and Kut (2007) <doi:10.1016/j.datak.2006.01.013>.
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/MiboraMinima/stdbscan/,
+        https://miboraminima.github.io/stdbscan/
+BugReports: https://github.com/MiboraMinima/stdbscan/issues/
+LinkingTo: Rcpp
+Imports: Rcpp, dbscan
+Suggests: knitr, rmarkdown, readr, testthat, ggplot2, plotly, covr,
+        MetBrewer
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-03-14 15:23:16 UTC; miboraminima
+Author: Antoine Le Doeuff [aut, cre] (ORCID:
+    <https://orcid.org/0009-0008-8807-3816>)
+Maintainer: Antoine Le Doeuff <antoine.ldoeuff@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-14 15:40:02 UTC

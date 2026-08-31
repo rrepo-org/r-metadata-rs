@@ -1,0 +1,48 @@
+Package: icomb
+Title: Forecasting Hierarchical Time Series Using Information
+        Combination
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Shanika", 
+             family = "Wickramasuriya", 
+             email = "shanika.wickramasuriya@monash.edu", 
+             role = c("aut", "cre", "cph")),
+      person(given = "Mitchell",
+             family = "O'Hara-Wild",
+             role = "ctb"),
+      person(given = "Nuwani", 
+             family = "Palihawadana", 
+             role = "ctb"),
+      person(given = "Minh",
+             family = "Nguyen",
+             role = "ctb"))
+Description: Implements the Information Combination (IComb) approach proposed by Nguyen, 
+      Vahid and Wickramasuriya (2025)<https://www.monash.edu/business/ebs/research/publications/ebs/2025/wp11-2025.pdf> for hierarchical forecast reconciliation. The method
+      combines information from base forecasts constructed using different information
+      sets while ensuring coherence. It is implemented using a penalized regression-based
+      framework.
+License: GPL (>= 3)
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, distributional, dplyr, fabletools (>= 0.7.0),
+        future.apply, generics, glmnet, progressr, purrr, tsibble,
+        vctrs
+Suggests: broom, fable, feasts, forecast, future, ggplot2, ggtime, hts,
+        knitr, lubridate, plotly, rmarkdown, spelling, testthat (>=
+        3.0.0), tibble, tidyr
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+Config/testthat/edition: 3
+URL: https://shanikalw.github.io/icomb/,
+        https://github.com/ShanikaLW/icomb
+BugReports: https://github.com/ShanikaLW/icomb/issues
+NeedsCompilation: no
+Packaged: 2026-05-19 12:53:03 UTC; shanikaw
+Author: Shanika Wickramasuriya [aut, cre, cph],
+  Mitchell O'Hara-Wild [ctb],
+  Nuwani Palihawadana [ctb],
+  Minh Nguyen [ctb]
+Maintainer: Shanika Wickramasuriya <shanika.wickramasuriya@monash.edu>
+Repository: CRAN
+Date/Publication: 2026-05-27 09:30:08 UTC

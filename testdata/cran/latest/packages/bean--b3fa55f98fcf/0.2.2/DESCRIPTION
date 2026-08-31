@@ -1,0 +1,48 @@
+Package: bean
+Type: Package
+Title: Data Thinning of Species Occurrences in Environmental Space
+Version: 0.2.2
+Authors@R: c(
+    person("Paanwaris", "Paansri",
+           role = c("cre", "aut"),
+           email = "paanwaris@vt.edu",
+           comment = c(ORCID = "0000-0001-9992-098X")),
+    person("Luis E.", "Escobar",
+           role = c("aut", "ctb"),
+           email = "escobar1@vt.edu",
+           comment = c(ORCID = "0000-0001-5735-2750")))
+Maintainer: Paanwaris Paansri <paanwaris@vt.edu>
+Description: A suite of tools to mitigate sampling bias in species occurrence
+    records by thinning data in the environmental space (E-space). This process
+    can improve the accuracy and precision of species distribution models (SDM,
+    also known as ecological niche models, ENM). The package offers a
+    data-driven protocol to determine thinning parameters using kernel-density
+    bandwidth selection. Two thinning methods are provided (stochastic and
+    deterministic) to reduce over-sampled environmental conditions and down-weight
+    outlier observations. The name 'bean' reflects the core principle of the
+    method: each 'pod' (a grid cell in E-space) is allowed to contain only a
+    limited number of 'beans' (occurrence points). See Silverman (1986,
+    ISBN:978-0-412-24620-3) and Rousseeuw and Leroy (2003,
+    ISBN:978-0-471-48855-2) for the underlying statistical methods.
+License: MIT + file LICENSE
+URL: https://github.com/paanwaris/bean,
+        https://paanwaris.github.io/bean/
+BugReports: https://github.com/paanwaris/bean/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0)
+Imports: MASS, stats, terra
+Suggests: covr, knitr, rmarkdown, testthat (>= 3.0.0), ggplot2, rgl,
+        nicheR
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-19 18:44:13 UTC; paanw
+Author: Paanwaris Paansri [cre, aut] (ORCID:
+    <https://orcid.org/0000-0001-9992-098X>),
+  Luis E. Escobar [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0001-5735-2750>)
+Repository: CRAN
+Date/Publication: 2026-06-19 19:30:07 UTC

@@ -1,0 +1,42 @@
+Package: binaryRL
+Version: 0.9.9
+Title: Reinforcement Learning Tools for Two-Alternative Forced Choice
+        Tasks
+Description: Tools for building Rescorla-Wagner Models for Two-Alternative 
+  Forced Choice tasks, commonly employed in psychological research. 
+  Most concepts and ideas within this R package are referenced from 
+  Sutton and Barto (2018) <ISBN:9780262039246>. 
+  The package allows for the intuitive definition of RL models using simple 
+  if-else statements and three basic models built into this R package are 
+  referenced from 
+  Niv et al. (2012) <doi:10.1523/JNEUROSCI.5498-10.2012>. 
+  Our approach to constructing and evaluating these computational models 
+  is informed by the guidelines proposed in 
+  Wilson & Collins (2019) <doi:10.7554/eLife.49547>. 
+  Example datasets included with the package are sourced from the work of
+  Mason et al. (2024) <doi:10.3758/s13423-023-02415-x>.
+Authors@R: 
+  c(person(
+    given = "YuKi",
+    role = c("aut", "cre"),
+    email = "hmz1969a@gmail.com",
+    comment = c(ORCID = "0009-0000-1378-1318")
+  ))
+Maintainer: YuKi <hmz1969a@gmail.com>
+URL: https://yuki-961004.github.io/binaryRL/
+BugReports: https://github.com/yuki-961004/binaryRL/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: TRUE
+ByteCompile: TRUE
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: Rcpp, compiler, future, doFuture, foreach, doRNG, progressr
+LinkingTo: Rcpp
+Suggests: stats, GenSA, GA, DEoptim, pso, mlrMBO, mlr, ParamHelpers,
+        smoof, lhs, DiceKriging, rgenoud, cmaes, nloptr
+NeedsCompilation: yes
+Packaged: 2026-01-08 05:31:03 UTC; hmz19
+Author: YuKi [aut, cre] (ORCID: <https://orcid.org/0009-0000-1378-1318>)
+Repository: CRAN
+Date/Publication: 2026-01-08 09:00:07 UTC

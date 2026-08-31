@@ -1,0 +1,46 @@
+Package: pep725
+Title: Pan-European Phenological Data Analysis
+Version: 1.1.0
+Authors@R: 
+    c(person("Matthias", "Templ", , "matthias.templ@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8638-5276")),
+      person("Barbara", "Templ", , "barbara.a.templ@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-9391-5888"))
+           )
+Description: Provides a framework for quality-aware analysis of ground-based
+    phenological data from the PEP725 Pan-European Phenology Database
+    (Templ et al. (2018) <doi:10.1007/s00484-018-1512-8>;
+    Templ et al. (2026) <doi:10.1111/nph.70869>) and similar observation
+    networks. Implements station-level data quality grading, outlier
+    detection, phenological normals (climate baselines), anomaly detection,
+    elevation and latitude gradient estimation with robust regression,
+    spatial synchrony quantification, partial least squares (PLS) regression
+    for identifying temperature-sensitive periods, and sequential
+    Mann-Kendall trend analysis. Supports data import from PEP725 files,
+    conversion of user-supplied data, and downloadable synthetic datasets
+    for teaching without barriers of registration.
+    All analysis outputs provide 'print', 'summary', and
+    'plot' methods. Interactive spatial visualization is available via
+    'leaflet'.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1), data.table, ggplot2
+Imports: dplyr, mgcv, methods, patchwork, purrr, robustbase, stats,
+        tibble, tidyr, tidyselect, utils, rnaturalearth, sf
+Suggests: ggmap, Kendall, knitr, leaflet, miniUI, nlme, quantreg,
+        rmarkdown, rnaturalearthdata, pls, shiny, sp, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+BugReports: https://github.com/matthias-da/pep725/issues
+URL: https://github.com/matthias-da/pep725
+NeedsCompilation: no
+Packaged: 2026-04-23 12:11:16 UTC; matthias
+Author: Matthias Templ [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8638-5276>),
+  Barbara Templ [aut] (ORCID: <https://orcid.org/0000-0002-9391-5888>)
+Maintainer: Matthias Templ <matthias.templ@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-24 11:00:02 UTC

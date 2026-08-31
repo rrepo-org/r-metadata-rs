@@ -1,0 +1,25 @@
+Package: SurvRegCensCov
+Type: Package
+Title: Weibull Regression for a Right-Censored Endpoint with
+        Interval-Censored Covariate
+Version: 1.8
+Date: 2025-09-16
+Depends: R (>= 2.10), survival, stats, graphics
+Imports: numDeriv
+Description: The function SurvRegCens() of this package allows estimation of a Weibull Regression for a right-censored endpoint, one interval-censored covariate, and an arbitrary number of non-censored covariates. Additional functions allow to switch between different parametrizations of Weibull regression used by different R functions, inference for the mean difference of two arbitrarily censored Normal samples, and estimation of canonical parameters from censored samples for several distributional assumptions. Hubeaux, S. and Rufibach, K. (2014) <doi:10.48550/arXiv.1402.0432>.
+License: GPL (>= 2)
+NeedsCompilation: no
+Repository: CRAN
+Authors@R: c(person(given = "Stanislas",
+                        family = "Hubeaux",
+                        role = c("aut", "cre"),
+                        email = "stan.hubeaux@bluewin.ch"),
+                 person(given = "Kaspar",
+                        family = "Rufibach",
+                        role = "aut",
+                        email = "kaspar.rufibach@gmail.com"))
+Packaged: 2025-09-17 11:45:07 UTC; hubeauxs
+Author: Stanislas Hubeaux [aut, cre],
+  Kaspar Rufibach [aut]
+Maintainer: Stanislas Hubeaux <stan.hubeaux@bluewin.ch>
+Date/Publication: 2025-09-17 12:10:02 UTC

@@ -1,0 +1,32 @@
+Package: EasyPCA
+Type: Package
+Title: Principal Component Analysis with Automated Interpretation and
+        Visualization
+Version: 0.1.1
+Authors@R: c(person(given = "S. Vishnu", family = "Shankar", email = "S.vishnushankar55@gmail.com", role = c("aut", "cre")), person(given = "V.", family = "Lavanya", role = "aut"), person(given = "Santosha", family = "Rathod", role = "aut"), person(given = "Mrinmoy", family = "Ray", role = "aut"), person(given = "Anil", family = "Kumar", role = "aut"), person(given = "Balaji", family = "Kannan", role = "aut"))
+Description: Provides an automated workflow for Principal Component Analysis (PCA)
+   that simplifies multivariate data analysis by performing
+   essential preprocessing, statistical tests, component extraction,
+   and visualization in a single function call. The package automatically
+   standardizes variables, computes correlation matrices,
+   performs Kaiser-Meyer-Olkin (KMO) and Bartlett's tests, determines
+   the optimal number of principal components using multiple selection
+   criteria, generates component loadings and scores, and produces
+   publication-ready tables and graphical outputs for researchers and students.
+   Methodological background is described in Shankar et al. (2024) <doi:10.1007/s12665-024-11985-5>.
+License: GPL-3
+Encoding: UTF-8
+Imports: ggplot2, ggcorrplot, corrplot, psych, factoextra, stats,
+        graphics, utils
+NeedsCompilation: no
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-08-21 14:17:55 UTC; JARVIS
+Author: S. Vishnu Shankar [aut, cre],
+  V. Lavanya [aut],
+  Santosha Rathod [aut],
+  Mrinmoy Ray [aut],
+  Anil Kumar [aut],
+  Balaji Kannan [aut]
+Maintainer: S. Vishnu Shankar <S.vishnushankar55@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-30 10:00:22 UTC

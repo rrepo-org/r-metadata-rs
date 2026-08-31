@@ -1,0 +1,33 @@
+Package: spatialwidget
+Type: Package
+Title: Formats Spatial Data for Use in Htmlwidgets
+Version: 0.2.6
+Date: 2025-11-29
+Authors@R: c(
+    person("David", "Cooley", ,"dcooley@symbolix.com.au", role = c("aut", "cre"))
+    )
+Description: Many packages use 'htmlwidgets' <https://CRAN.R-project.org/package=htmlwidgets>
+    for interactive plotting of spatial data.
+    This package provides functions for converting R objects, such as simple features, 
+    into structures suitable for use in 'htmlwidgets' mapping libraries. 
+URL:
+        https://symbolixau.github.io/spatialwidget/articles/spatialwidget.html
+License: MIT + file LICENSE
+Depends: R (>= 3.3.0)
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp
+LinkingTo: BH (>= 1.87.0-1), colourvalues (>= 0.3.9), geojsonsf (>=
+        2.0.5), geometries (>= 0.2.5), interleave (>= 0.1.2), jsonify
+        (>= 1.2.3), rapidjsonr (>= 1.2.1), Rcpp (>= 1.1.0), sfheaders
+        (>= 0.4.5)
+RoxygenNote: 7.3.3
+Suggests: colourvalues, covr, geojsonsf, jsonify, sfheaders, knitr,
+        rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-11-29 03:47:02 UTC; david
+Author: David Cooley [aut, cre]
+Maintainer: David Cooley <dcooley@symbolix.com.au>
+Repository: CRAN
+Date/Publication: 2025-11-29 06:10:08 UTC

@@ -1,0 +1,45 @@
+Package: mixtime
+Title: Mixed Temporal Vectors and Operations
+Version: 0.3.0
+Authors@R: 
+    c(person(given = "Mitchell",
+             family = "O'Hara-Wild",
+             email = "mail@mitchelloharawild.com",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-6729-7695")))
+Description: Flexible time classes for time series analysis and forecasting with
+    mixed temporal granularities. Supports linear and cyclical time 
+    representations in discrete and continuous forms, with timezone support, 
+    across multiple calendar systems including Gregorian and ISO week date 
+    calendars. Time points are stored numerically relative to a chronon; an 
+    atomic time granule defined by time units of a calendar. Calendrical 
+    arithmetic enables conversion between time granules (e.g. days to months) 
+    and calendar systems. Multi-unit arithmetic allows for temporal analysis
+    with other granules of common calendars (e.g. fortnights are 2-week units).
+    Time vectors of different granularities (e.g. monthly and quarterly) can be
+    combined in a single vector, making 'mixtime' ideal for data that changes
+    observation frequency over time or requires temporal reconciliation across 
+    scales. The package is extensible, allowing users to define custom calendars 
+    that build upon civil and astronomical time systems.
+License: MIT + file LICENSE
+URL: https://pkg.mitchelloharawild.com/mixtime/,
+        https://github.com/mitchelloharawild/mixtime
+BugReports: https://github.com/mitchelloharawild/mixtime/issues
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 3.0.2)
+Imports: lifecycle, vctrs, rlang, cli, S7, vecvec (>= 1.2.0), tzdb,
+        methods
+Suggests: stats, tsibble, testthat, pillar, knitr, rmarkdown, ggplot2,
+        ggtime
+LinkingTo: cpp11 (>= 0.5.2), tzdb (>= 0.5.0)
+RdMacros: lifecycle
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-24 04:50:59 UTC; mitchell
+Author: Mitchell O'Hara-Wild [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6729-7695>)
+Maintainer: Mitchell O'Hara-Wild <mail@mitchelloharawild.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 05:30:02 UTC

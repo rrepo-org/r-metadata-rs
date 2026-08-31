@@ -1,0 +1,30 @@
+Package: rtmsEcho
+Title: Extract and Analyze EchoMS Data from Sciex Wiff Files
+Version: 0.2.4
+Authors@R: c(
+    person("Mary Ashley", "Rimmer", email="maryashley.rimmer@stjude.org", role = c("aut")),
+    person("Nathaniel", "Twarog", email="nathaniel.twarog@stjude.org", role = c("aut", "cre")),
+    person("Lei", "Yang", email="lei.yang@stjude.org", role = c("aut")))
+Description: Read raw and processed data from acoustic ejection mass
+	spectrometry (AEMS) files produced by the Sciex EchoMS instrument.  Includes
+	functions to create interactive reader objects, extract raw intensity 
+	measurements, mass spectra, and fully-processed mass-transition intensity
+	areas.  Methods for data processing and analysis are described in Rimmer et
+	al. (2025) <doi:10.1021/acs.analchem.5c03730>. Supports both multiple
+	reaction monitoring (MRM) and full-scan (neutral loss and precursor ion)
+	data formats.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: rtms
+Depends: R (>= 2.10)
+LazyData: true
+Suggests: ggplot2
+NeedsCompilation: no
+Packaged: 2026-01-09 20:52:48 UTC; ntwarog
+Author: Mary Ashley Rimmer [aut],
+  Nathaniel Twarog [aut, cre],
+  Lei Yang [aut]
+Maintainer: Nathaniel Twarog <nathaniel.twarog@stjude.org>
+Repository: CRAN
+Date/Publication: 2026-01-14 18:10:02 UTC

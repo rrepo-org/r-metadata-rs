@@ -1,0 +1,40 @@
+Package: splinemixmeta
+Title: Additive Mixed Meta-Analysis with Spline Meta-Regression
+Version: 1.0.1
+Authors@R: c(
+    person(given = "Perry",
+      family = "de Valpine",
+      role = c("aut"),
+      email = "pdevalpine@berkeley.edu",
+      comment = c(ORCID = "0000-0002-8329-6796")
+    ),
+    person(given = "Marcus",
+      family = "Beck",
+      role = c("aut", "cre"),
+      email = "mbeck@tbep.org",
+      comment = c(ORCID = "0000-0002-4996-0059")
+    )
+  )
+Description: Fit additive mixed meta-analysis (AMMA) models, extending
+  the 'mixmeta' package <https://cran.r-project.org/package=mixmeta> 
+  to allow for spline-based meta-regression. Functions combine features of 
+  'mgcv' <https://cran.r-project.org/package=mgcv> for building spline 
+  components and 'mixmeta' for estimating general mixed-effects meta-analysis 
+  models.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: <https://github.com/perrydv/splinemixmeta>
+BugReports: https://github.com/perrydv/splinemixmeta/issues
+Depends: R (>= 4.1)
+Imports: ggplot2, mgcv, mixmeta
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-07 20:09:03 UTC; mbeck
+Author: Perry de Valpine [aut] (ORCID: <https://orcid.org/0000-0002-8329-6796>),
+  Marcus Beck [aut, cre] (ORCID: <https://orcid.org/0000-0002-4996-0059>)
+Maintainer: Marcus Beck <mbeck@tbep.org>
+Repository: CRAN
+Date/Publication: 2026-04-08 09:40:02 UTC

@@ -1,0 +1,28 @@
+Package: seqcomp
+Type: Package
+Title: Sequential Comparison of Probabilistic Forecasts
+Version: 0.1.0
+Authors@R: person(
+    "Akbar", "Alasgarli",
+    email = "alasgarliakbar@gmail.com",
+    role = c("aut", "cre"))
+Description: Implements tools for sequential comparison of probabilistic
+    forecasts, including binary and categorical scoring rules, anytime-valid
+    confidence sequences, e-processes, Winkler-score comparisons, lag handling,
+    and predictable-bound e-processes.
+License: MIT + file LICENSE
+URL: https://github.com/alasgarliakbar/seqcomp
+BugReports: https://github.com/alasgarliakbar/seqcomp/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: lamW
+Suggests: scoringRules, VGAM, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-24 15:35:04 UTC; hp
+Author: Akbar Alasgarli [aut, cre]
+Maintainer: Akbar Alasgarli <alasgarliakbar@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 12:20:02 UTC

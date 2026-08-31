@@ -1,0 +1,43 @@
+Package: airr
+Type: Package
+Version: 2.0.0
+Date: 2026-06-05
+Authors@R: c(person("Jason", "Vander Heiden", role=c("aut", "cre"), 
+                    email="jason.vanderheiden@gmail.com"),
+             person("Susanna", "Marquez", role=c("aut"), 
+                    email="susanna.marquez@yale.edu"),
+             person("Scott", "Christley", role=c("aut"), 
+                    email="Scott.Christley@UTSouthwestern.edu"),
+             person("Katharina", "Imkeller", role=c("aut"), 
+                    email="imkeller@embl.de"),
+             person("Ulrik", " Stervbo", role=c("aut"),
+                    email="ulrik.stervbo@elisabethgruppe.de"),
+             person("Gisela", "Gabernet", role=c("aut"),
+                    email="gisela.gabernet@yale.edu"),
+             person("AIRR Community", role=c("cph")))
+Title: AIRR Data Representation Reference Library
+Description: Schema definitions and read, write and validation tools for data 
+    formatted in accordance with the AIRR Data Representation schemas defined 
+    by the AIRR Community <https://docs.airr-community.org>.
+License: CC BY 4.0
+URL: https://docs.airr-community.org
+BugReports: https://github.com/airr-community/airr-standards/issues
+BuildVignettes: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+Depends: R (>= 3.1.2)
+Imports: jsonlite, methods, readr, stats, stringi, tools, yaml
+Suggests: knitr, rmarkdown, tibble, testthat
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-06-06 07:38:49 UTC; vandej27
+Author: Jason Vander Heiden [aut, cre],
+  Susanna Marquez [aut],
+  Scott Christley [aut],
+  Katharina Imkeller [aut],
+  Ulrik Stervbo [aut],
+  Gisela Gabernet [aut],
+  AIRR Community [cph]
+Maintainer: Jason Vander Heiden <jason.vanderheiden@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-06 08:10:02 UTC

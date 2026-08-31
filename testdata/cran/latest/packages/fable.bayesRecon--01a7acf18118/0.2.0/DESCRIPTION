@@ -1,0 +1,61 @@
+Package: fable.bayesRecon
+Date: 2026-08-20
+Title: Bayesian Reconciliation in the 'fable' Framework
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Dario",
+             family = "Azzimonti",
+             role = c("aut","cre","cph"),
+             email = "dario.azzimonti@gmail.com",
+             comment = c(ORCID = "0000-0001-5080-3061")),
+      person(given = "Stefano",
+             family = "Damato",
+             role = c("aut"),
+             email = "stefano.damato@idsia.ch",
+             comment = c(ORCID = "0009-0001-0225-3736")),
+      person(given = "Lorenzo",
+             family = "Zambon",
+             role = c("aut"),
+             email = "lorenzo.zambon@idsia.ch",
+             comment = c(ORCID = "0000-0002-8939-993X")),
+      person(given = "Chiara",
+             family = "Carrara",
+             role = c("aut"),
+             email = "chiara.carrara03@universitadipavia.it",
+             comment = c(ORCID = "0009-0002-7349-6249")),       
+      person(given = "Giorgio",
+             family = "Corani",
+             role = c("aut"),
+             email = "giorgio.corani@idsia.ch",
+             comment = c(ORCID = "0000-0002-1541-8384")))
+Description: Implements the 'bayesRecon' probabilistic reconciliation methods
+    within the 'fable' framework for hierarchical time series forecasting.
+    Bayesian reconciliation (bayesRecon) methods are accessed via the 'reconcile' verb, following
+    'fable' conventions. For methodological background, see Corani et al. (2021)
+    <doi:10.1007/978-3-030-67664-3_13>, Zambon et al. (2024a)
+    <doi:10.1007/s11222-023-10343-y>, Zambon et al. (2024b)
+    <https://proceedings.mlr.press/v244/zambon24a.html>, and Carrara et al.
+    (2026) <doi:10.1016/j.ijforecast.2026.07.003>.
+License: LGPL (>= 3)
+URL: https://github.com/dazzimonti/fable.bayesRecon
+BugReports: https://github.com/dazzimonti/fable.bayesRecon/issues
+Encoding: UTF-8
+Imports: stats, bayesRecon, fabletools (>= 0.7.0), purrr, vctrs,
+        distributional, dplyr, tsibble, rlang
+Suggests: testthat (>= 3.0.0), cli, fable, fable.intermittent, ggtime,
+        tsibbledata, tibble, ggplot2, scales, tidyr, knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1)
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-20 10:39:46 UTC; dario.azzimonti
+Author: Dario Azzimonti [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5080-3061>),
+  Stefano Damato [aut] (ORCID: <https://orcid.org/0009-0001-0225-3736>),
+  Lorenzo Zambon [aut] (ORCID: <https://orcid.org/0000-0002-8939-993X>),
+  Chiara Carrara [aut] (ORCID: <https://orcid.org/0009-0002-7349-6249>),
+  Giorgio Corani [aut] (ORCID: <https://orcid.org/0000-0002-1541-8384>)
+Maintainer: Dario Azzimonti <dario.azzimonti@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 08:20:26 UTC

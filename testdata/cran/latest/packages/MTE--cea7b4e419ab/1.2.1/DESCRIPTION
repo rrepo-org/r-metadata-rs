@@ -1,0 +1,27 @@
+Package: MTE
+Type: Package
+Title: Maximum Tangent Likelihood Estimation for Robust Linear
+        Regression and Variable Selection
+Version: 1.2.1
+Encoding: UTF-8
+Date: 2025-04-30
+Authors@R: 
+  c(person("Shaobo", "Li", email="shaobo.li@ku.edu", role=c("aut", "cre")),
+    person("Yichen", "Qin", email="qinyn@ucmail.uc.edu", role=c("aut")))
+Maintainer: Shaobo Li <shaobo.li@ku.edu>
+Description: Several robust estimators for linear regression and variable selection are provided. 
+              Included are Maximum tangent likelihood estimator by Qin, et al., (2017), arXiv preprint <doi:10.48550/arXiv.1708.05439>, 
+              least absolute deviance estimator and Huber regression. The penalized version of each of these 
+              estimator incorporates L1 penalty function, i.e., LASSO and Adaptive Lasso. They are able to 
+              produce consistent estimates for both fixed and high-dimensional settings. 
+URL: https://github.com/shaobo-li/MTE
+Depends: R (>= 3.1.0)
+License: GPL-3
+RoxygenNote: 7.2.3
+Imports: stats, quantreg, glmnet, rqPen
+NeedsCompilation: no
+Packaged: 2025-04-30 21:54:54 UTC; s674l142
+Author: Shaobo Li [aut, cre],
+  Yichen Qin [aut]
+Repository: CRAN
+Date/Publication: 2025-05-01 13:30:13 UTC

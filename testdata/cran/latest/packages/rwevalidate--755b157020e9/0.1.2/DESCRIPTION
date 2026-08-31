@@ -1,0 +1,39 @@
+Package: rwevalidate
+Title: Validate Patient Cohorts for Real-World Evidence Studies on the
+        OMOP Common Data Model
+Version: 0.1.2
+Authors@R: 
+    person("Hamid", "Tavakoli", email = "htavakoli@gmail.com",
+           role = c("aut", "cre"))
+Description: Validates instantiated patient cohorts on an Observational
+    Medical Outcomes Partnership (OMOP) Common Data Model (CDM) database for
+    real-world-evidence (RWE) studies. From a single function call it produces
+    a structured validation report in Hypertext Markup Language (HTML) and
+    JavaScript Object Notation (JSON) covering concept coverage, cohort
+    attrition, temporal data density, and covariate feasibility against a
+    comparator. The checks are aligned with the United States Food and Drug
+    Administration (FDA) guidance on real-world data and evidence, FDA (2023)
+    <https://www.fda.gov/media/171667/download>, the Harmonized Protocol
+    Template to Enhance Reproducibility (HARPER), Wang and others (2022)
+    <doi:10.1002/pds.5507>, and the Reporting of Studies Conducted Using
+    Observational Routinely-Collected Data for Pharmacoepidemiology
+    (RECORD-PE) statement, Langan and others (2018) <doi:10.1136/bmj.k3532>.
+    A self-contained example database is bundled so the checks can be run
+    without a live database connection.
+License: MIT + file LICENSE
+URL: https://github.com/tavakohr/rwevalidate
+BugReports: https://github.com/tavakohr/rwevalidate/issues
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1)
+Imports: DBI, RPostgres, jsonlite, rmarkdown, glue, cli, utils
+Suggests: testthat (>= 3.0.0), duckdb, ggplot2, knitr, covr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-11 17:23:20 UTC; tavak
+Author: Hamid Tavakoli [aut, cre]
+Maintainer: Hamid Tavakoli <htavakoli@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 10:20:02 UTC

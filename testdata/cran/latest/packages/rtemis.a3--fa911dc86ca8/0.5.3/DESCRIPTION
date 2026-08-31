@@ -1,0 +1,29 @@
+Package: rtemis.a3
+Title: Amino Acid Annotation (A3) Format
+Version: 0.5.3
+Date: 2026-04-24
+Authors@R: 
+    person(given = "E.D.", family = "Gennatas", role = c("aut", "cre", "cph"),
+           email = "gennatas@gmail.com",
+           comment = c(ORCID = "0000-0001-9280-3609"))
+Description: Implements the Amino Acid Annotation (A3) format using 'S7' classes.
+    The A3 format is a structured schema for annotating amino acid sequences with site, region, 
+    post-translational modification (PTM), processing event, and variant information. 
+    Provides functions to create, read, and write A3 objects, and to import annotations from 
+    'UniProt', 'AlphaFold', 'PDBe', 'ClinVar', and 'Ensembl'.
+URL: https://a3.rtemis.org
+BugReports: https://github.com/rtemis-org/a3/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: cli, data.table, rtemis.core, S7, utils
+Suggests: biomaRt, httr, jsonlite, seqinr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-25 04:43:12 UTC; sdg
+Author: E.D. Gennatas [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-9280-3609>)
+Maintainer: E.D. Gennatas <gennatas@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-28 19:30:18 UTC

@@ -1,0 +1,20 @@
+Package: rinet
+Type: Package
+Title: Clinical Reference Interval Estimation with Reference Interval
+        Network (RINet)
+Version: 0.1.1
+Authors@R: person("Jack LeBien", "", email = "jackgl4124@gmail.com", role = c("aut", "cre"))
+Description: Predicts statistics of a reference distribution from a mixture of raw clinical measurements (healthy and pathological). Uses pretrained CNN models to estimate the mean, standard deviation, and reference fraction from 1D or 2D sample data. Methods are described in LeBien, Velev, and Roche-Lima (2026) "RINet: synthetic data training for indirect estimation of clinical reference distributions" <doi:10.1016/j.jbi.2026.104980>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: reticulate
+SystemRequirements: Python (>= 3.8), TensorFlow (>= 2.16), Keras (>=
+        3.0), scikit-learn
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-23 13:44:29 UTC; jack
+Author: Jack LeBien [aut, cre]
+Maintainer: Jack LeBien <jackgl4124@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-23 14:10:02 UTC

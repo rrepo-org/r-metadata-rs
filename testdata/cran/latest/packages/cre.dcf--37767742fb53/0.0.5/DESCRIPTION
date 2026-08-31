@@ -1,0 +1,35 @@
+Package: cre.dcf
+Title: Discounted Cash Flow Tools for Commercial Real Estate
+Version: 0.0.5
+Date: 2026-04-10
+Authors@R: 
+    person("Kevin", "Poisson", email = "kevin.poisson@parisgeo.cnrs.fr",
+           role = c("aut", "cre"))
+Author: Kevin Poisson [aut, cre]
+Maintainer: Kevin Poisson <kevin.poisson@parisgeo.cnrs.fr>
+Description: Provides 'R' utilities to build unlevered and levered discounted cash
+    flow (DCF) tables for commercial real estate (CRE) assets. Functions generate
+    bullet and amortising debt schedules, compute credit metrics such as debt
+    service coverage ratios (DSCR), debt yield ratios, and forward loan-to-value
+    ratios (LTV), and expose an explicit property-level operating chain from gross
+    effective income (GEI) to net operating income (NOI) and property before-tax
+    cash flow (PBTCF). The toolkit supports end-to-end scenario execution from a
+    YAML (YAML Ain't Markup Language) configuration file parsed with 'yaml',
+    includes helpers for effective rent, constrained loan underwriting, and
+    simplified SPV-level tax simulations, and ships reproducible vignettes for
+    methodological and applied use cases.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en
+Depends: R (>= 4.1)
+Imports: checkmate, dplyr, magrittr, purrr, stats, tibble, utils, yaml
+Suggests: ggplot2, knitr, readr, rmarkdown, scales, testthat (>=
+        3.0.0), tidyr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-04-10 10:13:21 UTC; kpoi
+Repository: CRAN
+Date/Publication: 2026-04-10 11:00:27 UTC

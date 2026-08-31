@@ -1,0 +1,45 @@
+Package: limonaid
+Title: Working with 'LimeSurvey' Surveys and Responses
+Version: 25.5.5
+Authors@R: 
+    c(person(given = "Gjalt-Jorn",
+             family = "Peters",
+             role = c("aut", "cre"),
+             email = "limonaid@opens.science",
+             comment = c(ORCID = "0000-0002-0336-9589")),
+      person(given = "Andrew",
+             family = "Heiss",
+             role = "aut",
+             email = "andrew@andrewheiss.com",
+             comment = c(ORCID = "0000-0002-3948-3914")),
+      person(given = "Urs",
+             family = "Wilke",
+             role = "aut",
+             email = "urs.wilke@gmail.com",
+             comment = c(ORCID = "0000-0001-7257-2524")))
+Maintainer: Gjalt-Jorn Peters <limonaid@opens.science>
+License: GPL (>= 3)
+Description: 'LimeSurvey' is Free/Libre Open Source Software for
+  the development and administrations of online studies, using
+  sophisticated tailoring capabilities to support multiple study
+  designs (see <https://www.limesurvey.org>). This package supports
+  programmatic creation of surveys that can then be imported into
+  'LimeSurvey', as well as user friendly import of responses from
+  'LimeSurvey' studies.
+Encoding: UTF-8
+URL: https://limonaid.opens.science
+BugReports: https://codeberg.org/R-packages/limonaid/issues
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+Imports: httr (>= 1.4), jsonlite (>= 1.7), R6 (>= 2.4), xml2
+Suggests: ggplot2, ggrepel, knitr, parallel, psyverse (>= 0.3),
+        rmarkdown, sticky, testthat
+NeedsCompilation: no
+Packaged: 2025-05-27 20:39:14 UTC; gjalt
+Author: Gjalt-Jorn Peters [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0336-9589>),
+  Andrew Heiss [aut] (ORCID: <https://orcid.org/0000-0002-3948-3914>),
+  Urs Wilke [aut] (ORCID: <https://orcid.org/0000-0001-7257-2524>)
+Repository: CRAN
+Date/Publication: 2025-05-27 23:00:09 UTC

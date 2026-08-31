@@ -1,0 +1,72 @@
+Package: wefnexus
+Type: Package
+Title: Water-Energy-Food-Nutrient-Carbon Nexus Analysis for Agronomic
+        Systems
+Version: 1.0.0
+Authors@R: c(
+    person("Lalit Kumar", "Rolaniya",
+           email = "lalitrolaniya@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8908-1211")),
+    person("Hemant", "Poonia",
+           email = "pooniaheman80@gmail.com",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-0945-8793")),
+    person("Ram Lal", "Jat",
+           email = "khokharagro1986@gmail.com",
+           role = "aut",
+           comment = c(ORCID = "0009-0003-4339-0555")),
+    person("Monika", "Punia",
+           email = "monikapunia02@gmail.com",
+           role = "aut",
+           comment = c(ORCID = "0009-0002-0294-6767")),
+    person("Raja Ram", "Choudhary",
+           email = "rajaramchoudhary26@gmail.com",
+           role = "aut"))
+Description: Provides functions for analysing Water-Energy-Food-Nutrient-Carbon
+    (WEFNC) nexus interactions in agricultural production systems. Includes
+    functions for computing water use efficiency (WUE), water productivity (WP),
+    and water footprint (WF) including green, blue, and grey components following
+    the methodology of Hoekstra et al. (2011, ISBN:9781849712798). Includes energy
+    budgeting tools for energy use efficiency (EUE), energy return on investment
+    (EROI), net energy (NE), and energy productivity (EP). Computes nutrient use
+    efficiency (NUE) metrics including agronomic efficiency (AE), physiological
+    efficiency (PE), recovery efficiency (RE), and partial factor productivity
+    (PFP) as defined by Dobermann (2007)
+    <https://digitalcommons.unl.edu/agronomyfacpub/316/> and
+    Congreves et al. (2021) <doi:10.3389/fpls.2021.637108>. Estimates carbon
+    footprint (CF), greenhouse gas (GHG) emissions, soil organic carbon (SOC)
+    stocks, and global warming potential (GWP) using Intergovernmental Panel on
+    Climate Change (IPCC) Sixth Assessment Report (AR6) default values
+    (CH4 = 27, N2O = 273) as reported in Forster et al. (2021)
+    <doi:10.1017/9781009157896.009>. Computes composite
+    Water-Energy-Food-Nutrient-Carbon (WEFNC) nexus indices,
+    trade-off correlation matrices, and generates radar and heatmap
+    visualizations for comparing agricultural treatments. Supports conservation
+    agriculture (CA), irrigated and rain-fed systems, and arid and semi-arid
+    production environments. Methods follow Lal (2004)
+    <doi:10.1016/j.envint.2004.03.005> for carbon emissions from farm
+    operations, and Hoover et al. (2023) <doi:10.1016/j.scitotenv.2022.160992>
+    for water use efficiency indicators.
+License: GPL (>= 3)
+URL: https://github.com/lalitrolaniya/wefnexus
+BugReports: https://github.com/lalitrolaniya/wefnexus/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices, rlang
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-06 11:12:28 UTC; lalitrolaniya
+Author: Lalit Kumar Rolaniya [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8908-1211>),
+  Hemant Poonia [aut] (ORCID: <https://orcid.org/0000-0002-0945-8793>),
+  Ram Lal Jat [aut] (ORCID: <https://orcid.org/0009-0003-4339-0555>),
+  Monika Punia [aut] (ORCID: <https://orcid.org/0009-0002-0294-6767>),
+  Raja Ram Choudhary [aut]
+Maintainer: Lalit Kumar Rolaniya <lalitrolaniya@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-10 20:50:02 UTC

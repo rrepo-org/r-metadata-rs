@@ -1,0 +1,28 @@
+Package: HaploDiploidEquilibrium
+Type: Package
+Title: Calculate F Statistics Using Mixed Haploid and Diploid Organism
+        Data
+Version: 0.1.0
+Authors@R: 
+    c(person("Paulo", "Sousa",
+             email = "sousapaulo16@gmail.com",
+             role = c("aut")
+            ),
+      person("Francisco", "Pina-Martins",
+             email = "f.pinamartins@gmail.com",
+             role = c("cre", "aut")
+            )
+     )
+Description: Provides functions to estimate population genetics summary statistics from haplo-diploid systems, where one sex is haploid and the other diploid (e.g. Hymenoptera insects). It implements a theoretical model assuming equal sex ratio, random mating, no selection, no mutation, and no gene flow, deriving expected genotype frequencies for both sexes under these equilibrium conditions. The package includes windowed calculations (operating over genomic sliding windows from VCF input) for allele and genotype frequencies, the inbreeding coefficient (Fis), pairwise Fst, Nei's H (gene diversity), Watterson's Theta, and sex-specific reference allele frequencies. Most statistics are agnostic to ploidy, allowing the package to be applied to both strictly haplo-diploid and fully diploid systems.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, vcfR, data.table, matrixStats
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-21 13:10:42 UTC; francisco
+Author: Paulo Sousa [aut],
+  Francisco Pina-Martins [cre, aut]
+Maintainer: Francisco Pina-Martins <f.pinamartins@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-25 19:30:12 UTC

@@ -1,0 +1,44 @@
+Package: klassR
+Type: Package
+Title: Classifications for Statistics Norway
+Version: 1.0.7
+Authors@R: 
+  c(person(given = "Susie",
+           family = "Jentoft",
+           role = "aut"),
+    person(given = "Diana-Cristina",
+           family = "Iancu",
+           role = "aut"),
+    person(given = "Lisa",
+           family = "Li",
+           role = "aut"),
+    person(given = "Øyvind I.",
+           family = "Berntsen",
+           role = c("aut", "cre"),
+           email = "Oyvind.Berntsen@ssb.no"),
+    person("Statistics Norway", role = "cph"))
+Description: Functions to search, retrieve, apply and update classification 
+  standards and code lists using Statistics Norway's API 
+  <https://www.ssb.no/klass> from the system 'KLASS'. Retrieves classifications 
+  by date with options to choose language, hierarchical level and formatting.
+Depends: R (>= 3.5.0)
+Imports: tm, httr, jsonlite, igraph (>= 2.1.1), methods
+URL: https://statisticsnorway.github.io/ssb-klassr/
+BugReports: https://github.com/statisticsnorway/ssb-klassr/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), kableExtra, magrittr,
+        dplyr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-21 10:55:00 UTC; onyxia
+Author: Susie Jentoft [aut],
+  Diana-Cristina Iancu [aut],
+  Lisa Li [aut],
+  Øyvind I. Berntsen [aut, cre],
+  Statistics Norway [cph]
+Maintainer: Øyvind I. Berntsen <Oyvind.Berntsen@ssb.no>
+Repository: CRAN
+Date/Publication: 2026-08-21 12:00:02 UTC

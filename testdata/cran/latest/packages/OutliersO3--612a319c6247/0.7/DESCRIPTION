@@ -1,0 +1,25 @@
+Package: OutliersO3
+Type: Package
+Title: Draws Overview of Outliers (O3) Plots
+Version: 0.7
+Date: 2026-06-25
+Authors@R: c(person("Antony", "Unwin", email="unwin@math.uni-augsburg.de", role=c("aut", "cre", "cph")))
+Maintainer: Antony Unwin <unwin@math.uni-augsburg.de>
+Description: Potential outliers are identified for all combinations of a dataset's variables. O3 plots are described in Unwin(2019) <doi:10.1080/10618600.2019.1575226>. The available methods are FastPCS() from the package 'FastPCS', mvBACON() from 'robustX', adjOutlyingness() from 'robustbase', DectectDeviatingCells() from 'cellWise', covMcd() from 'robustbase'.
+Depends: R (>= 3.3.0)
+Imports: stats, utils, grDevices, rlist, ggplot2, dplyr, tidyr,
+        forcats, robustbase, robustX, FastPCS, cellWise (>= 2.1.0),
+        GGally, memisc
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, gridExtra, rmarkdown, languageR
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+URL: https://github.com/antonr4/OutliersO3
+BugReports: https://github.com/antonr4/OutliersO3/issues
+NeedsCompilation: no
+Packaged: 2026-06-26 08:43:39 UTC; antonyunwin2
+Author: Antony Unwin [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2026-07-05 09:10:02 UTC

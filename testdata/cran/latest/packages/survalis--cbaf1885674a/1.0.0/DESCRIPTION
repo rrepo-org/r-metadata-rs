@@ -1,0 +1,47 @@
+Package: survalis
+Type: Package
+Title: Interpretable Survival Machine Learning Framework
+Version: 1.0.0
+Author: Imad El Badisy [aut, cre]
+Maintainer: Imad El Badisy <elbadisyimad@gmail.com>
+Authors@R: 
+    c(person(given = "Imad",
+             family = "El Badisy",
+             role = c("aut", "cre"),
+             email = "elbadisyimad@gmail.com"))
+Description: A modular toolkit for interpretable survival machine learning
+  with a unified interface for fitting, prediction, evaluation, and
+  interpretation.
+  It includes semiparametric, parametric, tree-based, ensemble, boosting,
+  kernel, and deep-learning survival learners, together with benchmarking,
+  scoring, calibration, and model-agnostic interpretation utilities.
+  Representative methodological anchors include Cox (1972)
+  <doi:10.1111/j.2517-6161.1972.tb00899.x>, Royston and Parmar (2002)
+  <doi:10.1002/sim.1203>, Ishwaran et al. (2008) <doi:10.1214/08-AOAS169>,
+  Jaeger et al. (2019) <doi:10.1214/19-AOAS1261>, Harrell et al. (1982)
+  <doi:10.1001/jama.1982.03320430047030>, Graf et al. (1999)
+  <doi:10.1002/(SICI)1097-0258(19990915/30)18:17/18%3C2529::AID-SIM274%3E3.0.CO;2-5>,
+  Friedman (2001) <doi:10.1214/aos/1013203451>, Apley and Zhu (2020)
+  <doi:10.1111/rssb.12377>, and Lundberg and Lee (2017)
+  <https://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions>,
+  and other related methods for survival modeling, prediction, and
+  interpretation.
+License: MIT + file LICENSE
+URL: https://CRAN.R-project.org/package=survalis
+BugReports: https://github.com/ielbadisy/survalis/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1)
+Imports: survival, ggplot2, functionals, nnls, rpart, rsample, aftgee,
+        aorsf, bnnSurvival, pec, party, ranger, survdnn, survivalsvm,
+        randomForestSRC, xgboost, CoxBoost, BART, flexsurv, glmnet,
+        mboost, rstpm2, timereg, partykit, gower, pracma, torch,
+        data.table, glue, cli, rlang
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, roxygen2, covr, stats,
+        utils, timeROC, patchwork
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-22 10:20:09 UTC; imad-el-badisy
+Repository: CRAN
+Date/Publication: 2026-08-22 15:10:08 UTC

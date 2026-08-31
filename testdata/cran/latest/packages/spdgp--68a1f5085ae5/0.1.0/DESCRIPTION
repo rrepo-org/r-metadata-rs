@@ -1,0 +1,32 @@
+Package: spdgp
+Title: Simulate Spatial Data Generation Processes
+Version: 0.1.0
+Authors@R: c(
+      person(given = "Josiah", family = "Parry", role = c("aut"),
+             email = "josiah.parry@gmail.com", 
+             comment = c(ORCID = "0000-0001-9910-865X")),
+      person(given = "Wenbo", family = "Lv", role = c("aut", "cre"),
+             email = "lyu.geosocial@gmail.com", 
+             comment = c(ORCID = "0009-0002-6003-3800")),
+      person(given = "Edzer", family = "Pebesma", role = "ctb",
+             email = "edzer.pebesma@uni-muenster.de",
+             comment = c(ORCID = "0000-0001-8049-7069"))
+      )
+Description: Provides functionality for simulating data generation processes across various spatial regression models, conceptually aligned with the 'dgp' module of the 'Python' library 'spreg' <https://pysal.org/spreg/api.html#dgp>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en
+RoxygenNote: 7.3.3
+URL: https://josiahparry.github.io/spdgp/,
+        https://github.com/josiahparry/spdgp
+BugReports: https://github.com/josiahparry/spdgp/issues
+Imports: cli, MASS, Matrix, methods, rlang, sf, smoothmest, spatialreg,
+        spdep, stats, vctrs
+NeedsCompilation: no
+Packaged: 2025-10-23 13:53:26 UTC; dell
+Author: Josiah Parry [aut] (ORCID: <https://orcid.org/0000-0001-9910-865X>),
+  Wenbo Lv [aut, cre] (ORCID: <https://orcid.org/0009-0002-6003-3800>),
+  Edzer Pebesma [ctb] (ORCID: <https://orcid.org/0000-0001-8049-7069>)
+Maintainer: Wenbo Lv <lyu.geosocial@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-28 12:20:02 UTC

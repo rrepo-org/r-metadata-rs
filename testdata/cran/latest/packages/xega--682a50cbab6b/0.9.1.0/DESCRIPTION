@@ -1,0 +1,49 @@
+Package: xega
+Title: Extended Evolutionary and Genetic Algorithms
+Version: 0.9.1.0
+Authors@R: 
+    person(given = "Andreas",
+           family = "Geyer-Schulz",
+           role = c("aut", "cre"),
+           email = "Andreas.Geyer-Schulz@kit.edu",
+           comment = c(ORCID = "0009-0000-5237-3579"))
+Description: 
+        Implementation of a scalable, highly configurable, and 
+        e(x)tended architecture for (e)volutionary and (g)enetic (a)lgorithms.
+        Multiple representations (binary, real-coded, permutation, and 
+        derivation-tree), a rich collection of genetic operators, 
+        as well as an extended processing pipeline are provided 
+        for genetic algorithms (Goldberg, D. E. (1989, ISBN:0-201-15767-5)),
+        differential evolution (Price, Kenneth V., Storn, Rainer M. and Lampinen, Jouni A. (2005)
+        <doi:10.1007/3-540-31306-0>), simulated annealing (Aarts, E., and Korst, J.
+        (1989, ISBN:0-471-92146-7)), grammar-based genetic programming 
+        (Geyer-Schulz (1997, ISBN:978-3-7908-0830-X)), grammatical evolution 
+        (Ryan, C., O'Neill, M., and Collins, J. J. (2018) <doi:10.1007/978-3-319-78717-6>), 
+        and grammatical differential evolution (O'Neill, M. and Brabazon, A. (2006) in  
+        Arabinia, H. (2006, ISBN:978-193-241596-3).
+        All algorithms reuse basic adaptive mechanisms for performance optimization.
+        For the architecture, see Geyer-Schulz, A. (2025) <doi:10.5445/IR/1000187255>.
+        Sequential or parallel execution with master-slave pattern (on multi-core machines, 
+        local clusters, and high-performance computing environments) 
+        is available for all algorithms. See 
+        <https://github.com/ageyerschulz/xega/tree/main/examples/executionModel>.
+        Homogeneous and heterogeneous island models with asynchronous and synchronous 
+        communication and configurable communication topology as well as 
+        migration strategy are supported. See 
+        <https://github.com/ageyerschulz/xega/tree/main/examples/IslandModels>.
+License: MIT + file LICENSE
+URL: https://github.com/ageyerschulz/xega
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0), parallelly, filelock
+Imports: xegaSelectGene (>= 1.0.0.4), xegaBNF, xegaDerivationTrees,
+        xegaGaGene, xegaGpGene, xegaGeGene, xegaDfGene, xegaPermGene,
+        xegaPopulation (>= 1.0.0.15), xegaMigration (>= 0.5.0.3)
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-08-12 15:15:06 UTC; dj2333
+Author: Andreas Geyer-Schulz [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-5237-3579>)
+Maintainer: Andreas Geyer-Schulz <Andreas.Geyer-Schulz@kit.edu>
+Repository: CRAN
+Date/Publication: 2026-08-20 13:20:15 UTC

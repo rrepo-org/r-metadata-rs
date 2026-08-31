@@ -1,0 +1,23 @@
+Package: MSCsimtester
+Type: Package
+Title: Tests of Multispecies Coalescent Gene Tree Simulator Output
+Version: 1.2
+Authors@R: c(
+  person("Elizabeth", "Allman", email = "e.allman@alaska.edu", role = c("aut", "cre", "cph")),
+  person("Hector", "Banos", email = "hbassnos@gmail.com", role = c("aut", "cph")),
+  person("John", "Rhodes", email = "j.rhodes@alaska.edu", role = c("aut", "cph")))
+Maintainer: Elizabeth Allman <e.allman@alaska.edu>
+Description: Statistical tests for validating multispecies coalescent gene tree simulators, using pairwise distances and rooted triple counts. See Allman ES, Baños HD, Rhodes JA 2023. Testing multispecies coalescent simulators using summary statistics, IEEE/ACM Trans Comput Biol Bioinformat, 20(2):1613–1618. <doi:10.1109/TCBB.2022.3177956>.
+License: MIT + file LICENSE
+Imports: Rdpack, kSamples, graphics, stats, methods
+RdMacros: Rdpack
+Depends: R(>= 2.10),ape(>= 5.0)
+Encoding: UTF-8
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-22 00:39:06 UTC; eallman
+Author: Elizabeth Allman [aut, cre, cph],
+  Hector Banos [aut, cph],
+  John Rhodes [aut, cph]
+Repository: CRAN
+Date/Publication: 2026-08-22 02:50:02 UTC

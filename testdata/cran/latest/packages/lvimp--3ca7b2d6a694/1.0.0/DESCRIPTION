@@ -1,0 +1,30 @@
+Package: lvimp
+Type: Package
+Title: Perform Inference on Summaries of Longitudinal
+        Algorithm-Agnostic Variable Importance
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Brian D.",
+             family = "Williamson",
+             role = c("aut", "cre"),
+             email = "brian.d.williamson@kp.org",
+             comment = c(ORCID = "0000-0002-7024-548X"))
+      )
+Description: Calculate point estimates of and valid confidence intervals for
+    longitudinal summaries of nonparametric, algorithm-agnostic variable importance measures. 
+    For more details, see Williamson et al. (2024) <doi:10.48550/arXiv.2311.01638>.
+License: MIT + file LICENSE
+Imports: vimp
+Suggests: knitr, rmarkdown, testthat, SuperLearner
+URL: https://bdwilliamson.github.io/lvimp/
+BugReports: https://github.com/bdwilliamson/lvimp/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-12-01 17:05:16 UTC; L107067
+Author: Brian D. Williamson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7024-548X>)
+Maintainer: Brian D. Williamson <brian.d.williamson@kp.org>
+Repository: CRAN
+Date/Publication: 2025-12-06 12:20:02 UTC

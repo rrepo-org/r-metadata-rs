@@ -1,0 +1,26 @@
+Package: r2pmml
+Version: 0.31.0
+Date: 2025-12-15
+Type: Package
+License: AGPL-3
+Title: Convert R Models to 'PMML'
+Description: R wrapper for the 'JPMML-R' library <https://github.com/jpmml/jpmml-r>,
+    which converts R models to Predictive Model Markup Language ('PMML').
+Authors@R: person(
+    given = "Villu", family = "Ruusmann",
+    email = "villu.ruusmann@gmail.com",
+    role = c("aut", "cre"))
+URL: https://github.com/jpmml/r2pmml
+LazyLoad: yes
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+Imports: methods
+Suggests: caret, e1071, earth, evtree, glmnet, lightgbm, mlbench, mlr,
+        partykit, randomForest, ranger, xgboost
+SystemRequirements: Java (>= 11.0)
+Encoding: UTF-8
+Packaged: 2025-12-18 07:30:36 UTC; vfed
+Author: Villu Ruusmann [aut, cre]
+Maintainer: Villu Ruusmann <villu.ruusmann@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-18 07:50:02 UTC

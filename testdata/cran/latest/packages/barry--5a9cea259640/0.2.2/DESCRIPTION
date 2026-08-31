@@ -1,0 +1,38 @@
+Package: barry
+Type: Package
+Title: Your Go-to Motif Accountant
+Version: 0.2.2
+Depends: R (>= 4.1.0)
+Authors@R: c(
+  person(given="George", family="Vega Yon", role=c("aut", "cre"),
+  email="g.vegayon@gmail.com", comment = c(ORCID = "0000-0002-3171-0844")),
+  person("U.S. Army Medical Research Acquisition Activity", role = "fnd",
+  comment = "ORION project, Award #W81XWH1910615"),
+  person("National Cancer Institute", role = "fnd",
+  comment = "IMAGE project, Grant #1P01CA196596")
+  )
+Description: Provides the 'C++' header-only library 'barry' for use in R packages. 
+ 'barry' is a 'C++' template library for counting sufficient statistics on binary 
+ arrays and building discrete exponential-family models. It provides tools for 
+ sparse arrays, user-defined count statistics, support set constraints, 
+ power set generation, and includes modules for Discrete Exponential Family Models 
+ (DEFMs) and network statistics. By placing these headers in this package, we 
+ offer an efficient distribution system for CRAN as replication of this code in 
+ the sources of other packages is avoided. This package follows the same 
+ approach as the 'BH' package which provides 'Boost' headers for R packages.
+URL: https://github.com/USCbiostats/barryr,
+        https://uscbiostats.github.io/barryr/
+BugReports: https://github.com/USCbiostats/barryr/issues
+License: MIT + file LICENSE
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-07-16 19:43:36 UTC; runner
+Author: George Vega Yon [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3171-0844>),
+  U.S. Army Medical Research Acquisition Activity [fnd] (ORION project,
+    Award #W81XWH1910615),
+  National Cancer Institute [fnd] (IMAGE project, Grant #1P01CA196596)
+Maintainer: George Vega Yon <g.vegayon@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-22 18:50:09 UTC

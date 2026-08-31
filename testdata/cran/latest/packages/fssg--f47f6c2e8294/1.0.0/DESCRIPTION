@@ -1,0 +1,28 @@
+Package: fssg
+Title: Parametric Survival Modeling in Bulk
+Version: 1.0.0
+Authors@R: 
+    person(given='John',family='Rothen',email='jmrothen.business@gmail.com',role = c('aut','cre','cph'), comment=c(ORCID = "0009-0008-4897-8004"))
+Description: 
+    A simple tool for the bulk creation and testing of parametric survival models. 
+    Simply provide 'fssg' with a formula and some data, and let it identify the best distributions for you.
+License: MIT + file LICENSE
+URL: https://github.com/jmrothen/fssg
+BugReports: https://github.com/jmrothen/fssg/issues
+Encoding: UTF-8
+LinkingTo: Rcpp
+Imports: actuar, dplyr, extraDistr, flexsurv, magrittr, methods, Rcpp,
+        rstudioapi, stats, survAUC, survival, SurvMetrics, tictoc, VGAM
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), splines2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-30 00:17:00 UTC; jmrot
+Author: John Rothen [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0008-4897-8004>)
+Maintainer: John Rothen <jmrothen.business@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-03 13:10:08 UTC

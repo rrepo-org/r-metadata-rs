@@ -1,0 +1,43 @@
+Package: qbrms
+Title: Quick Bayesian Regression Models Using 'INLA' with 'brms' Syntax
+Version: 1.0.1
+Date: 2025-11-26
+Authors@R: person(given = "Tony",
+                  family = "Myers", 
+                  role = c("aut", "cre"),
+                  email = "admyers@aol.com",
+                  comment = c(ORCID = "0000-0003-4516-4829"))
+Maintainer: Tony Myers <admyers@aol.com>
+Description: Provides a 'brms'-like interface for fitting Bayesian regression models 
+    using 'INLA' (Integrated Nested Laplace Approximations) and 'TMB' (Template Model Builder). 
+    The package offers faster model fitting while maintaining familiar 'brms' syntax and 
+    output formats. Supports fixed and mixed effects models, multiple probability distributions, 
+    conditional effects plots, and posterior predictive checks with summary methods compatible 
+    with 'brms'. 'TMB' integration provides fast ordinal regression capabilities. Implements 
+    methods adapted from 'emmeans' for marginal means estimation and 'bayestestR' for Bayesian 
+    inference assessment. Methods are based on Rue et al. (2009) <doi:10.1111/j.1467-9868.2008.00700.x>, 
+    Kristensen et al. (2016) <doi:10.18637/jss.v070.i05>, Lenth (2016) <doi:10.18637/jss.v069.i01>, 
+    Bürkner (2017) <doi:10.18637/jss.v080.i01>, Makowski et al. (2019) <doi:10.21105/joss.01541>, 
+    and Kruschke (2014, ISBN:9780124058880).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0.0)
+Imports: methods, ggplot2, mvtnorm, cowplot, lme4, patchwork,
+        posterior, scales, shiny, miniUI, future, future.apply, loo,
+        TMB, jsonlite
+Suggests: testthat (>= 3.0.0), INLA, knitr, rmarkdown, DHARMa, MASS,
+        ordinal, rstudioapi, emmeans, bayestestR, gridExtra,
+        data.table, tibble, quantreg, readxl, haven
+LinkingTo: Rcpp, RcppEigen, TMB
+Config/testthat/edition: 3
+URL: https://github.com/Tony-Myers/qbrms
+BugReports: https://github.com/Tony-Myers/qbrms/issues
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-12-04 18:58:52 UTC; tonymyers
+Author: Tony Myers [aut, cre] (ORCID: <https://orcid.org/0000-0003-4516-4829>)
+Repository: CRAN
+Date/Publication: 2025-12-10 21:10:13 UTC

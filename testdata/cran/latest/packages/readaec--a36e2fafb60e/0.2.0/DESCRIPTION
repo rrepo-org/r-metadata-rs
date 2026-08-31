@@ -1,0 +1,31 @@
+Package: readaec
+Title: Access Australian Electoral Commission Data
+Version: 0.2.0
+Authors@R: 
+    person("Charles", "Coverdale", email = "charlesfcoverdale@gmail.com",
+           role = c("aut", "cre"))
+Description: Provides clean, tidy access to Australian Electoral Commission
+    (AEC) federal election data. Includes results for the House of
+    Representatives and Senate from 2007 onwards, at both division and polling
+    place level, plus by-elections from 2008 onwards, the 2023 referendum,
+    and the full distribution of preferences. Data is downloaded directly from the AEC
+    <https://results.aec.gov.au> on first use and cached locally for
+    subsequent calls.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-AU
+RoxygenNote: 7.3.3
+Imports: httr2, readr, dplyr, cli, glue, tools
+Suggests: ggplot2, purrr, tidyr, sf, knitr, rmarkdown, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://charlescoverdale.github.io/readaec/,
+        https://github.com/charlescoverdale/readaec
+BugReports: https://github.com/charlescoverdale/readaec/issues
+NeedsCompilation: no
+Packaged: 2026-08-02 07:21:12 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-02 08:00:02 UTC

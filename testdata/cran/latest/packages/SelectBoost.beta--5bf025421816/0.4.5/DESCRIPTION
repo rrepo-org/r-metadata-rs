@@ -1,0 +1,39 @@
+Package: SelectBoost.beta
+Type: Package
+Title: Stability-Selection via Correlated Resampling for
+        Beta-Regression Models
+Version: 0.4.5
+Date: 2025-11-04
+Depends: R (>= 4.0)
+Imports: betareg, gamlss, gamlss.dist, glmnet, MASS, Rcpp, rlang,
+        stats, withr
+Suggests: future, future.apply, gamlss.lasso, ggplot2, knitr,
+        rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+Authors@R: c(
+	person(given = "Frederic", family= "Bertrand", role = c("cre", "aut"), email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281")))
+Author: Frederic Bertrand [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-0837-8281>)
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
+Description: Adds variable-selection functions for Beta regression models
+    (both mean and phi submodels) so they can be used within the 'SelectBoost' algorithm.
+    Includes stepwise AIC, BIC, and corrected AIC on betareg() fits, 'gamlss'-based 
+    LASSO/Elastic-Net, a pure 'glmnet' iterative re-weighted least squares-based selector 
+    with an optional standardization speedup, and 'C++' helpers for iterative 
+    re-weighted least squares working steps and precision updates. Also provides
+    a fastboost_interval() variant for interval responses, comparison helpers,
+    and a flexible simulator simulation_DATA.beta() for interval-valued data. 
+    For more details see Bertrand and Maumy (2023) <doi:10.7490/f1000research.1119552.1>.
+License: GPL-3
+Encoding: UTF-8
+Classification/MSC: 62H11, 62J12, 62J99
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+URL: https://fbertran.github.io/SelectBoost.beta/,
+        https://github.com/fbertran/SelectBoost.beta/
+BugReports: https://github.com/fbertran/SelectBoost.beta/issues/
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-11-04 09:49:20 UTC; bertran7
+Repository: CRAN
+Date/Publication: 2025-11-11 09:20:09 UTC

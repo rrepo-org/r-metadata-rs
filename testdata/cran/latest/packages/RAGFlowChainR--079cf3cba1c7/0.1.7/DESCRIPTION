@@ -1,0 +1,35 @@
+Package: RAGFlowChainR
+Type: Package
+Title: Retrieval-Augmented Generation (RAG) Workflows in R with Local
+        and Web Search
+Version: 0.1.7
+Authors@R: person(given = "Kwadwo Daddy Nyame",
+                  family = "Owusu Boakye",
+                  email = "kwadwo.owusuboakye@outlook.com",
+                  role = c("aut", "cre"))
+Maintainer: Kwadwo Daddy Nyame Owusu Boakye <kwadwo.owusuboakye@outlook.com>
+Description: Enables Retrieval-Augmented Generation (RAG) workflows in R by combining
+    local vector search using 'DuckDB' with optional web search via the 'Tavily' API.
+    Supports 'OpenAI'- and 'Ollama'-compatible embedding models, full-text and 'HNSW'
+    (Hierarchical Navigable Small World) indexing, and modular large language model
+    (LLM) invocation. Designed for advanced question-answering, chat-based
+    applications, and production-ready AI pipelines. This package is the R
+    equivalent of the 'python' package 'RAGFlowChain' available at
+    <https://pypi.org/project/RAGFlowChain/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/knowusuboaky/RAGFlowChainR,
+        https://knowusuboaky.github.io/RAGFlowChainR/
+BugReports: https://github.com/knowusuboaky/RAGFlowChainR/issues
+Depends: R (>= 4.1.0)
+Imports: DBI, duckdb (>= 0.10.0), httr, dplyr, pdftools, officer,
+        rvest, xml2, curl,
+Suggests: testthat (>= 3.0.0), jsonlite, stringi, magrittr, roxygen2,
+        knitr, rmarkdown, VectrixDB
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-22 17:40:39 UTC; kwadw
+Author: Kwadwo Daddy Nyame Owusu Boakye [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-02-22 23:00:38 UTC

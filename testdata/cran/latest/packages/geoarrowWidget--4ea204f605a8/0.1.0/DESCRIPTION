@@ -1,0 +1,36 @@
+Package: geoarrowWidget
+Title: Attach '(Geo)Arrow' and/or '(Geo)Parquet' Data to a Widget
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Tim",
+             family = "Appelhans",
+             role = c("cre", "aut"),
+             email = "tim.appelhans@gmail.com",
+             comment = c(ORCID = "0000-0002-9824-2707")))
+Maintainer: Tim Appelhans <tim.appelhans@gmail.com>
+Description: Provides functions and necessary 'JavaScript' bindings to quickly
+    transfer spatial data from R memory or remote URLs to the browser for use in
+    interactive 'HTML' widgets created with the 'htmlwidgets' R package. 
+    Leverages 'GeoArrow' (<https://geoarrow.org/>) data representation for data 
+    stored in local R memory which is generally faster than traditional 'GeoJSON' 
+    by minimising the amount of copy, serialization and deserialization steps 
+    necessary for the data transfer. Furthermore, provides functionality 
+    and 'JavaScript' bindings to consume 'GeoParquet' (<https://geoparquet.org/>) 
+    files from remote URLs in the browser.
+License: MIT + file LICENSE
+Imports: htmltools, htmlwidgets, listviewer, nanoarrow
+Suggests: geoarrow, quarto, tinytest, wk
+VignetteBuilder: quarto
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/r-spatial/geoarrowWidget,
+        https://r-spatial.github.io/geoarrowWidget/
+BugReports: https://github.com/r-spatial/geoarrowWidget/issues
+SystemRequirements: Quarto command line tool
+        (<https://github.com/quarto-dev/quarto-cli>).
+NeedsCompilation: no
+Packaged: 2026-02-15 08:38:41 UTC; tim
+Author: Tim Appelhans [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-9824-2707>)
+Repository: CRAN
+Date/Publication: 2026-02-18 19:10:03 UTC

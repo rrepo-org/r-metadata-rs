@@ -1,0 +1,36 @@
+Package: funbootband
+Title: Simultaneous Prediction and Confidence Bands for Time Series
+        Data
+Version: 0.2.0
+Authors@R: 
+    person("Daniel", "Koska", 
+           email = "dkoska@proton.me", 
+           role = c("aut", "cre", "cph"), 
+           comment = c(ORCID = "0000-0002-8245-5222"))
+Description: Provides methods to compute simultaneous prediction and confidence
+    bands for dense time series data. The implementation builds on the
+    functional bootstrap approach proposed by Lenhoff et al. (1999)
+    <doi:10.1016/S0966-6362(98)00043-5> and extended by Koska et al. (2023)
+    <doi:10.1016/j.jbiomech.2023.111506> to support both independent and
+    clustered (hierarchical) data. Includes a simple API (see band()) and an
+    'Rcpp' backend for performance.
+License: GPL-3
+URL: https://github.com/koda86/funbootband-cran
+BugReports: https://github.com/koda86/funbootband-cran/issues
+Depends: R (>= 3.5)
+Imports: Rcpp, stats
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: C++17
+Config/testthat/edition: 3
+ByteCompile: true
+NeedsCompilation: yes
+Packaged: 2025-10-14 13:25:59 UTC; daniel
+Author: Daniel Koska [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8245-5222>)
+Maintainer: Daniel Koska <dkoska@proton.me>
+Repository: CRAN
+Date/Publication: 2025-10-20 09:20:02 UTC

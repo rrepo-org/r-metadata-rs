@@ -1,0 +1,32 @@
+Type: Package
+Package: ppcc
+Version: 1.3
+Date: 2026-01-09
+Title: Probability Plot Correlation Coefficient Test
+Authors@R: person(given = "Thorsten",
+                    family = "Pohlert",
+                    role = c("aut", "cre"),
+                    email = "thorsten.pohlert@gmx.de",
+                    comment = c(ORCID = "0000-0003-3855-3025"))
+Description: Calculates the Probability Plot Correlation Coefficient (PPCC) 
+             between a continuous variable X and a specified distribution. The corresponding 
+	     composite hypothesis test that was first introduced by 
+	     Filliben (1975) <doi: 10.1080/00401706.1975.10489279> 
+	     can be performed to test whether the sample 
+	     X is element of either the Normal, log-Normal, Exponential,
+	     Uniform, Cauchy, Logistic, Generalized Logistic, Gumbel (GEVI), Weibull,
+	     Generalized Extreme Value, Pearson III (Gamma 2), Mielke's Kappa, Rayleigh
+	     or Generalized Logistic Distribution. The PPCC test is performed with
+	     a fast Monte-Carlo simulation.
+Depends: R(>= 3.0.0)
+Suggests: VGAM (>= 1.0), nortest(>= 1.0)
+License: GPL-3
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+Classification/MSC-2010: 62G10
+Packaged: 2026-01-09 19:17:15 UTC; thorsten
+Author: Thorsten Pohlert [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3855-3025>)
+Maintainer: Thorsten Pohlert <thorsten.pohlert@gmx.de>
+Repository: CRAN
+Date/Publication: 2026-01-09 19:30:02 UTC

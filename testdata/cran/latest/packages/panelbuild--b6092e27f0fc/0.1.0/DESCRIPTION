@@ -1,0 +1,24 @@
+Description: Provides tools for auditing, validating, and preparing panel datasets before statistical analysis. Functions identify duplicate unit-time observations, missing unit-time cells, panel gaps, and balance issues. The package also provides audit summaries, row-level diagnostic flags, panel-completion utilities, and a concise audit report.
+Package: panelbuild
+Title: Panel Data Auditing, Validation, and Preparation Tools
+Version: 0.1.0
+Authors@R: 
+    person("Lavanya", "Desiraju", email = "desirajulavanya@gmail.com", role = c("aut", "cre"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, tidyr, tibble, rlang
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://desirajulavanya.github.io/panelbuild/,
+        https://github.com/desirajulavanya/panelbuild
+BugReports: https://github.com/desirajulavanya/panelbuild/issues
+Depends: R (>= 4.1.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-28 00:24:29 UTC; nagal
+Author: Lavanya Desiraju [aut, cre]
+Maintainer: Lavanya Desiraju <desirajulavanya@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-03 13:00:02 UTC

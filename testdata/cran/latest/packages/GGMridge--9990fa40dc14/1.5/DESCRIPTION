@@ -1,0 +1,33 @@
+Package: GGMridge
+Type: Package
+Title: Gaussian Graphical Models Using Ridge Penalty Followed by
+        Thresholding and Reestimation
+Version: 1.5
+Date: 2025-05-03
+Author: Min Jin Ha [aut],
+  Shannon T. Holloway [ctb, cre]
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Authors@R: c(person(given = c("Min", "Jin"),
+                        family = "Ha",
+                        role = c("aut")),
+                 person(given = c("Shannon", "T."),
+                        family = "Holloway",
+                        role = c("ctb", "cre"),
+                        email = "shannon.t.holloway@gmail.com"))
+Depends: mvtnorm, MASS, stats, graphics
+Description: Estimation of partial correlation matrix using ridge penalty 
+    followed by thresholding and reestimation. Under multivariate Gaussian 
+    assumption, the matrix constitutes an Gaussian graphical model (GGM).
+License: GPL-2
+LazyLoad: yes
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Collate: 'EM.mixture.R' 'scaledMat.R' 'svdFunc.R' 'splitSets.R'
+        'ne.lambda.cv.R' 'R.separate.ridge.R' 'StructuredEstimate.R'
+        'ksStat.R' 'getEfronp.R' 'lambda.TargetD.R' 'lambda.cv.R'
+        'transFisher.R' 'lambda.pcut.cv1.R' 'lambda.pcut.cv.R'
+        'simulateData.R'
+Packaged: 2025-05-03 19:10:34 UTC; 19194
+Repository: CRAN
+Date/Publication: 2025-05-03 19:30:05 UTC

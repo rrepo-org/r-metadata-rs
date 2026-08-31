@@ -1,0 +1,43 @@
+Package: cookie
+Title: HTTP Cookies Parser Middleware
+Version: 1.0.0
+Authors@R: c(
+    person("Julio", "Collazos", , "amarullazo626@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0009-0006-5503-0997")),
+    person(, "cookie contributors", role = c("ctb", "cph"),
+           comment = "cookie contributors; authors listed in <https://github.com/jshttp/cookie/graphs/contributors>"),
+    person(, "cookie-parser contributors", role = c("ctb", "cph"),
+           comment = "cookie-parser contributors; authors listed in <https://github.com/expressjs/cookie-parser/graphs/contributors>"),
+    person(, "cookie-signature contributors", role = c("ctb", "cph"),
+           comment = "cookie-signature contributors; authors listed in <https://github.com/tj/node-cookie-signature/graphs/contributors>"),
+    person(, "httpuv authors", role = c("ctb", "cph"),
+           comment = "Development of the http_date_string function")
+  )
+Description: A cookie is a piece of data sent from a web server to a web client which helps
+    in overcoming the statelessness constraint of the HTTP protocol. This package provides the tools
+    to work with them in the form of a cookie parser middleware function, meant to be attached to
+    a bigger R web application, and utilities to write, sign and unsign a cookie. For more details
+    see the Mozilla Developer Network (MDN) web documentation in <https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: secretbase, utils
+Suggests: curl, httpuv, later, R6, routing, testthat (>= 3.0.0),
+        yyjsonr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-06 04:44:40 UTC; julio
+Author: Julio Collazos [aut, cre] (ORCID:
+    <https://orcid.org/0009-0006-5503-0997>),
+  cookie contributors [ctb, cph] (cookie contributors; authors listed in
+    <https://github.com/jshttp/cookie/graphs/contributors>),
+  cookie-parser contributors [ctb, cph] (cookie-parser contributors;
+    authors listed in
+    <https://github.com/expressjs/cookie-parser/graphs/contributors>),
+  cookie-signature contributors [ctb, cph] (cookie-signature
+    contributors; authors listed in
+    <https://github.com/tj/node-cookie-signature/graphs/contributors>),
+  httpuv authors [ctb, cph] (Development of the http_date_string
+    function)
+Maintainer: Julio Collazos <amarullazo626@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-12 10:10:09 UTC

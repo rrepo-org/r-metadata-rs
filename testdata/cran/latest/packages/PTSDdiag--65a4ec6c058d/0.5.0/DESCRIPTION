@@ -1,0 +1,61 @@
+Package: PTSDdiag
+Title: Optimize PTSD Diagnostic Criteria
+Version: 0.5.0
+Authors@R: c(
+    person(
+      "Laura", "Weidmann",
+      comment = c(ORCID = "0009-0006-5509-6961"),
+      role = c("aut")
+    ),
+    person(
+      "Tobias R.", "Spiller",
+      email = "tobias.spiller@access.uzh.ch",
+      comment = c(ORCID = "0000-0002-0107-0743"),
+      role = c("aut", "cre")
+    ),
+    person(
+      "Flavio A.", "Schüepp",
+      comment = c(ORCID = "0000-0002-0750-3888"),
+      role = c("aut")
+    )
+  )
+Description: Provides tools for analyzing and optimizing PTSD (Post-Traumatic
+    Stress Disorder) diagnostic criteria using PCL-5 (PTSD Checklist for DSM-5)
+    and CAPS-5 (Clinician-Administered PTSD Scale for DSM-5) data. Functions
+    identify optimal subsets of PCL-5 items that maintain diagnostic accuracy
+    while reducing assessment burden. Includes tools for both hierarchical
+    (cluster-based) and non-hierarchical symptom combinations, calculation of
+    diagnostic metrics, and comparison with standard DSM-5 criteria. Redundancy
+    analysis quantifies how many item subsets perform equivalently, through
+    plateau sizes and bootstrap stability, and reports item selection against
+    the chance baseline of the searched candidate space. A transport layer
+    allows a site to evaluate subsets derived elsewhere and return only
+    aggregate summaries, supporting multi-site validation without sharing
+    individual-level data. Model validation is conducted using holdout and
+    cross-validation methods to assess robustness and generalizability of the
+    results. For more details see Weidmann et al. (2025)
+    <doi:10.31219/osf.io/6rk72_v1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: cli, dplyr, jsonlite, lifecycle, magrittr, rlang, rsample,
+        stats, utils
+Depends: R (>= 3.5.0)
+Suggests: DT, future.apply, ggplot2, knitr, rmarkdown, testthat (>=
+        3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://tobiasrspiller.github.io/PTSDdiag/,
+        https://github.com/TobiasRSpiller/PTSDdiag
+BugReports: https://github.com/TobiasRSpiller/PTSDdiag/issues
+NeedsCompilation: no
+Packaged: 2026-08-04 13:38:57 UTC; trs
+Author: Laura Weidmann [aut] (ORCID: <https://orcid.org/0009-0006-5509-6961>),
+  Tobias R. Spiller [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0107-0743>),
+  Flavio A. Schüepp [aut] (ORCID:
+    <https://orcid.org/0000-0002-0750-3888>)
+Maintainer: Tobias R. Spiller <tobias.spiller@access.uzh.ch>
+Repository: CRAN
+Date/Publication: 2026-08-04 16:30:28 UTC

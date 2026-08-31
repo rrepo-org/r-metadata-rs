@@ -1,0 +1,35 @@
+Package: EEMDlstm
+Type: Package
+Title: EEMD Based LSTM Model for Time Series Forecasting
+Version: 1.0.1
+Authors@R: 
+  c(person(given = "Kapil",
+         family = "Choudhary",
+         role = c("aut")),
+  person(given = "Girish Kumar",
+         family = "Jha",
+         role =  c("aut", "ths", "ctb")),
+  person(given = "Ronit",
+         family = "Jaiswal",
+         role = c("ctb","cre"),
+         email = "ronitjaiswal2912@gmail.com"),
+  person(given = "Rajeev Ranjan ",
+         family = "Kumar",
+         role =  c( "ctb")))
+Maintainer: Ronit Jaiswal <ronitjaiswal2912@gmail.com>
+Description: Forecasting univariate time series with ensemble empirical mode decomposition (EEMD) with long short-term memory (LSTM). For method details see Jaiswal, R. et al. (2022). <doi:10.1007/s00521-021-06621-3>. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: keras, tensorflow, reticulate, tsutils, BiocGenerics, utils,
+        graphics, magrittr,Rlibeemd, TSdeeplearning
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2026-04-13 10:28:07 UTC; kapil
+Author: Kapil Choudhary [aut],
+  Girish Kumar Jha [aut, ths, ctb],
+  Ronit Jaiswal [ctb, cre],
+  Rajeev Ranjan Kumar [ctb]
+Repository: CRAN
+Date/Publication: 2026-04-13 15:00:08 UTC

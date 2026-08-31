@@ -1,0 +1,41 @@
+Package: ECDFniche
+Type: Package
+Title: Empirical Cumulative Distribution Function Niche Modeling Tools
+Version: 0.5
+Authors@R: c(
+    person("Luíz Fernando", "Esser", , "luizesser@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-2982-7223")),
+    person("Matheus", "Baumgartner", role = "aut",
+           comment = c(ORCID = "0000-0001-7472-8588")),
+    person("Dayani", "Bailly", role = "aut",
+           comment = c(ORCID = "0000-0002-6954-9902")),
+    person("Marcos", "R. Lima", role = "aut",
+           comment = c(ORCID = "0000-0002-5901-0911")),
+    person("Reginaldo", "Ré", role = "aut",
+           comment = c(ORCID = "0000-0001-6452-3466")))
+Description: Simulate ecological niche models using Mahalanobis distance, transform distances to 
+    suitability with 1 - empirical cumulative distribution function and 1 - chi-squared, and 
+    generate comparison figures.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: checkCLI, dplyr, ggpp, purrr, tidyr, ggplot2, lemon, MASS,
+        stats
+Suggests: knitr, rmarkdown, roxyglobals, tictoc
+VignetteBuilder: knitr
+Config/roxyglobals/filename: generated-globals.R
+Config/roxyglobals/unique: TRUE
+URL: https://luizesser.github.io/ECDFniche/
+NeedsCompilation: no
+Packaged: 2026-04-27 18:21:33 UTC; luizesser
+Author: Luíz Fernando Esser [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2982-7223>),
+  Matheus Baumgartner [aut] (ORCID:
+    <https://orcid.org/0000-0001-7472-8588>),
+  Dayani Bailly [aut] (ORCID: <https://orcid.org/0000-0002-6954-9902>),
+  Marcos R. Lima [aut] (ORCID: <https://orcid.org/0000-0002-5901-0911>),
+  Reginaldo Ré [aut] (ORCID: <https://orcid.org/0000-0001-6452-3466>)
+Maintainer: Luíz Fernando Esser <luizesser@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-27 18:40:09 UTC

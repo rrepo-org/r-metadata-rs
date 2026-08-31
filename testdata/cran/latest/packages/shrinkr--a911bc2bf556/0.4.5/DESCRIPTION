@@ -1,0 +1,52 @@
+Package: shrinkr
+Type: Package
+Title: Modular Bayesian Hierarchical Shrinkage Models
+Version: 0.4.5
+Date: 2026-06-29
+Authors@R: c(
+    person(given = c("Jacob", "M."),
+           family = "Maronge",
+           role = c("aut", "cre"),
+           email = "jacob.m.maronge@gsk.com",
+           comment = c(ORCID = "0000-0003-3606-0841")),
+    person("GlaxoSmithKline Research & Development Limited",
+           role = c("cph", "fnd")),
+    person("Trustees of", "Columbia University",
+           role = "cph",
+           comment = "R/stanmodels.R, configure, configure.win"))
+Description: 
+ Implements a two-stage Bayesian hierarchical modeling framework for
+    applying shrinkage to subgroup-specific effects. The package separates
+    model fitting (Stage 1) from hierarchical shrinkage (Stage 2), enabling
+    modular sensitivity analyses without refitting expensive Markov chain
+    Monte Carlo (MCMC) chains. Supports flexible prior specifications through
+    the 'distributional' package, mixture approximations via 'mclust', and
+    efficient 'Stan'-based inference.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: rstan (>= 2.32.7), mclust, posterior, distributional, cli,
+        tibble, dplyr, purrr, stats, utils, methods, Rcpp (>= 0.12.0),
+        RcppParallel (>= 5.0.1), rstantools (>= 2.5.0)
+Suggests: testthat (>= 3.0.0), ggplot2, knitr, rmarkdown, patchwork,
+        tidybayes, bayesplot, tidyverse, ggdist, ggridges, brms, tidyr,
+        survival, MASS, Matrix, beastt
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.32.7), StanHeaders (>=
+        2.32.10)
+SystemRequirements: GNU make, C++17 compiler
+Biarch: true
+URL: https://gsk-biostatistics.github.io/shrinkr/
+BugReports: https://github.com/GSK-Biostatistics/shrinkr/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-29 20:46:16 UTC; jmaro
+Author: Jacob M. Maronge [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3606-0841>),
+  GlaxoSmithKline Research & Development Limited [cph, fnd],
+  Trustees of Columbia University [cph] (R/stanmodels.R, configure,
+    configure.win)
+Maintainer: Jacob M. Maronge <jacob.m.maronge@gsk.com>
+Repository: CRAN
+Date/Publication: 2026-07-06 13:40:02 UTC

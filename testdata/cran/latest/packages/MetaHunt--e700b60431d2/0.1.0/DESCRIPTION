@@ -1,0 +1,36 @@
+Package: MetaHunt
+Title: Privacy-Preserving Meta-Analysis via Low-Rank Basis Hunting
+Version: 0.1.0
+Authors@R: c(
+    person("Wenqi", "Shi", , "wenqishi18@gmail.com", role = c("aut", "cre")),
+    person("Kosuke", "Imai", , "imai@harvard.edu", role = "aut"),
+    person("Yi", "Zhang", , "yizhang0017@gmail.com", role = "aut"))
+Description: Tools for privacy-preserving meta-analysis of function-valued
+    quantities across heterogeneous studies. Implements the 'MetaHunt'
+    pipeline, including the denoised functional Successive Projection
+    Algorithm (d-fSPA) for basis hunting, constrained weight estimation,
+    Dirichlet regression of weights on study-level covariates, target
+    prediction, and split/cross conformal prediction intervals. Operates
+    on aggregate-level function evaluations, so individual-level data
+    from source studies are not required. Methodology described in
+    Shi, Imai, and Zhang (2026) <doi:10.48550/arXiv.2604.23847>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0)
+Imports: quadprog, DirichletReg, stats, graphics, grDevices, withr
+Suggests: grf, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/WShi18/MetaHunt,
+        https://wshi18.github.io/MetaHunt/,
+        https://arxiv.org/abs/2604.23847
+BugReports: https://github.com/WShi18/MetaHunt/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-07 00:50:01 UTC; sophiashi
+Author: Wenqi Shi [aut, cre],
+  Kosuke Imai [aut],
+  Yi Zhang [aut]
+Maintainer: Wenqi Shi <wenqishi18@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-12 19:20:43 UTC

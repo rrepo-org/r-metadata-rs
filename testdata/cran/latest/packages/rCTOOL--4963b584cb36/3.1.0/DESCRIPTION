@@ -1,0 +1,49 @@
+Package: rCTOOL
+Type: Package
+Title: Soil Organic Carbon Turnover Modelling with 'C-TOOL'
+Version: 3.1.0
+Authors@R: c(
+    person(given = c("Evandro", "H.", "Figueiredo", "Moura", "da"),
+           family = "Silva",
+           role = "aut",
+           email = "ehfmsilva@agro.au.dk"),
+    person(given = "João",
+           family = "Serra",
+           role = "aut"),
+    person(given = "Franca",
+           family = "Giannini-Kurina",
+           role = c("aut", "cre"),
+           email = "francagk@agro.au.dk")
+    )
+Description: Provides an 'R' interface to the 'C-TOOL' soil carbon turnover model
+    for simulating soil organic carbon dynamics in agricultural systems. The
+    package supports the definition of carbon inputs, management schedules, soil
+    parameters, and temperature forcing, and includes tools for scenario analysis
+    and calibration of selected model parameters against observed soil organic
+    carbon stocks. The 'C-TOOL' model and related modelling framework are
+    described by Petersen et al. (2002) <doi:10.1016/S0304-3800(02)00034-0>,
+    Petersen et al. (2005) <doi:10.1016/j.soilbio.2004.08.006>, Petersen et al.
+    (2013) <doi:10.1016/j.jclepro.2013.03.007>, and Taghizadeh-Toosi et al.
+    (2014) <doi:10.1016/j.ecolmodel.2014.08.016>. Further applications and
+    developments are described by Taghizadeh-Toosi et al. (2016)
+    <doi:10.1016/j.agsy.2016.03.004>, Keel et al. (2017)
+    <doi:10.1111/ejss.12454>, Taghizadeh-Toosi et al. (2020)
+    <doi:10.1007/s11104-020-04500-9>, and Taghizadeh-Toosi and Christensen
+    (2021) <doi:10.1038/s41598-021-97744-z>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: data.table, utils
+Suggests: dplyr, ggplot2, knitr, rmarkdown, reshape2, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-30 06:59:36 UTC; au801188
+Author: Evandro H. Figueiredo Moura da Silva [aut],
+  João Serra [aut],
+  Franca Giannini-Kurina [aut, cre]
+Maintainer: Franca Giannini-Kurina <francagk@agro.au.dk>
+Repository: CRAN
+Date/Publication: 2026-07-04 08:50:02 UTC

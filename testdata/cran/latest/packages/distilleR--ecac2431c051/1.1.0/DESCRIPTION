@@ -1,0 +1,55 @@
+Package: distilleR
+Type: Package
+Title: A Wrap Around the 'DistillerSR' APIs
+Version: 1.1.0
+Maintainer: Luca Belmonte <luca.belmonte@efsa.europa.eu>
+Authors@R: 
+  c(person(given = "Lorenzo",
+           family = "Copelli",
+           role = "aut",
+           comment = c(ORCID = "0009-0002-4305-065X")),
+    person(given = "Fulvio",
+           family = "Barizzone",
+           role = "aut",
+           comment = c(ORCID = "0009-0006-3035-520X")),
+    person(given = "Dayana Stephanie",
+           family = "Buzle",
+           role = "aut",
+           comment = c(ORCID = "0009-0003-2990-7431")),
+    person(given = "Rafael",
+           family = "Vieira",
+           role = "aut",
+           comment = c(ORCID = "0009-0009-0289-5438")),
+    person(given = "Luca",
+           family = "Belmonte",
+           role = c("aut", "cre"),
+           email = "luca.belmonte@efsa.europa.eu",
+           comment = c(ORCID = "0000-0002-7977-9170")))
+Description: Interface to 'DistillerSR' APIs. See
+  <https://apidocs.evidencepartners.com/> for more details.
+License: EUPL-1.2
+URL: https://openefsa.github.io/distilleR/
+BugReports: https://github.com/openefsa/distilleR/issues
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.6.5), checkmate (>= 2.3.1), glue (>= 1.7.0), httr2
+        (>= 1.2.1), jsonlite (>= 1.8.7), readr (>= 2.1.5), readxl (>=
+        1.4.3), tibble (>= 3.3.0), purrr (>= 1.0.2)
+Suggests: devtools (>= 2.4.5), knitr (>= 1.0), rmarkdown (>= 2.0),
+        roxygen2 (>= 7.2.1), testthat (>= 3.0.0), usethis (>= 2.2.3),
+        covr (>= 3.6.4), openxlsx (>= 4.2.8), rlang (>= 1.1.4)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/Needs/website: pkgdown
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2026-07-03 07:18:04 UTC; copello
+Author: Lorenzo Copelli [aut] (ORCID: <https://orcid.org/0009-0002-4305-065X>),
+  Fulvio Barizzone [aut] (ORCID: <https://orcid.org/0009-0006-3035-520X>),
+  Dayana Stephanie Buzle [aut] (ORCID:
+    <https://orcid.org/0009-0003-2990-7431>),
+  Rafael Vieira [aut] (ORCID: <https://orcid.org/0009-0009-0289-5438>),
+  Luca Belmonte [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7977-9170>)
+Date/Publication: 2026-07-28 10:10:07 UTC

@@ -1,0 +1,54 @@
+Package: resemble
+Type: Package
+Title: Similarity Retrieval and Local Learning for Spectral
+        Chemometrics
+Version: 3.0.1
+Date: 2026-09-01
+Authors@R: c(
+  person(given = "Leonardo",
+         family = "Ramirez-Lopez",
+         role = c("aut", "cre"),
+         email = "ramirez.lopez.leo@gmail.com",
+         comment = c(ORCID = "0000-0002-5369-5120")),
+  person(given = "Antoine",
+         family = "Stevens",
+         role = c("aut", "ctb"),
+         comment = c(ORCID = "0000-0002-1588-7519")),
+  person(given = "Claudio",
+         family = "Orellano",
+         role = c("ctb"))
+  )
+BugReports: https://github.com/l-ramirez-lopez/resemble/issues
+Description: 
+    Functions for dissimilarity analysis and machine learning in complex
+    spectral data sets, including memory-based learning (MBL), optimal subset
+    search and selection, and retrieval-based modelling with model libraries.
+    Supports local learning, optimisation of spectral libraries, and
+    ensemble prediction from precomputed models. Most of these functions are
+    based on the methods presented in Ramirez-Lopez et al. (2013)
+    <doi:10.1016/j.geoderma.2012.12.014>, Ramirez-Lopez et al. (2026a)
+    <doi:10.1016/j.aca.2026.345682>, and Ramirez-Lopez et al. (2026b)
+    <doi:10.1016/j.aca.2026.345651>.
+License: MIT + file LICENSE
+URL: https://l-ramirez-lopez.github.io/resemble/,
+        https://github.com/l-ramirez-lopez/resemble
+Depends: R (>= 4.2.0)
+Imports: foreach, iterators, RhpcBLASctl, Rcpp (>= 1.0.3), mathjaxr (>=
+        1.0), lifecycle (>= 0.2.0)
+Suggests: prospectr, parallel, doParallel, testthat, quarto, knitr
+LinkingTo: Rcpp, RcppArmadillo
+RdMacros: mathjaxr
+VignetteBuilder: quarto
+NeedsCompilation: yes
+Repository: CRAN
+Encoding: UTF-8
+Config/VersionName: tarragona
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-30 20:59:21 UTC; leo
+Author: Leonardo Ramirez-Lopez [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5369-5120>),
+  Antoine Stevens [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-1588-7519>),
+  Claudio Orellano [ctb]
+Maintainer: Leonardo Ramirez-Lopez <ramirez.lopez.leo@gmail.com>
+Date/Publication: 2026-08-31 16:30:02 UTC

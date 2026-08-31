@@ -1,0 +1,23 @@
+Type: Package
+Package: ptvalue
+Title: Working with Precision Teaching Values
+Version: 0.2.0
+Authors@R: 
+    person("Alexandre", "Gellen-Kamel", , "kamel.ag@outlook.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0382-2478"))
+Description: An implementation of an S3 class based on a double vector for storing and displaying precision teaching measures, representing a growing or a decaying (multiplicative) change between two frequencies. The main format method allows researchers to display measures (including data.frame) that respect the established conventions in the precision teaching community (i.e., prefixed multiplication or division symbol, displayed number <= 1). Basic multiplication and division methods are allowed and other useful functions are provided for creating, converting or inverting precision teaching measures. For more details, see Pennypacker, Gutierrez and Lindsley (2003, ISBN: 1-881317-13-7).
+License: MIT + file LICENSE
+URL: https://github.com/agkamel/ptvalue
+BugReports: https://github.com/agkamel/ptvalue/issues
+Imports: rlang, vctrs
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-10-31 17:56:51 UTC; alexn
+Author: Alexandre Gellen-Kamel [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0382-2478>)
+Maintainer: Alexandre Gellen-Kamel <kamel.ag@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-10-31 18:10:02 UTC

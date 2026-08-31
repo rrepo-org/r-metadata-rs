@@ -1,0 +1,51 @@
+Package: R2WinBUGS
+Title: Running 'WinBUGS' and 'OpenBUGS' from 'R' / 'S-PLUS'
+Date: 2026-02-23
+Version: 2.1-24
+Authors@R: c(person(given = "Andrew",
+                        family = "Gelman",
+                        role = "aut",
+                        email = "gelman@stat.columbia.edu"),
+                 person(given = "Sibylle",
+                        family = "Sturtz",
+                        role = "aut",
+                        email = "sturtz@statistik.tu-dortmund.de"),
+                 person(given = "Uwe", 
+						family = "Ligges",
+						email = "ligges@statistik.tu-dortmund.de",
+					    role = c("cre", "aut")),
+				 person(given = "Gregor", 
+						family = "Gorjanc",
+                        role = "ctb",
+                        email = "gregor.gorjanc@bfro.uni-lj.si"),
+                 person(given = "Jouni", 
+				        family = "Kerman",
+						role = "ctb",
+                        email = "kerman@stat.columbia.edu"),
+				 person(family =  "Insightful Corp.",
+						comment = "Port to S-PLUS",
+                        role = "ctb")
+				)
+Description: Invoke a 'BUGS' model in 'OpenBUGS' or 'WinBUGS', a class "bugs" for 'BUGS' 
+  results and functions to work with that class.
+  Function write.model() allows a 'BUGS' model file to be written.  
+  The class and auxiliary functions could be used with other MCMC programs, including 'JAGS'.
+  The suggested package 'BRugs' (only needed for function openbugs()) is only available from the CRAN archives, 
+  see <https://cran.r-project.org/package=BRugs>.
+Depends: R (>= 2.13.0), coda (>= 0.11-0), boot
+Imports: utils, stats, graphics
+Suggests: BRugs
+SystemRequirements: OpenBugs for functions bugs() and openbugs() or
+        WinBUGS 1.4 for function bugs()
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2026-02-23 13:51:10 UTC; ligges
+Author: Andrew Gelman [aut],
+  Sibylle Sturtz [aut],
+  Uwe Ligges [cre, aut],
+  Gregor Gorjanc [ctb],
+  Jouni Kerman [ctb],
+  Insightful Corp. [ctb] (Port to S-PLUS)
+Maintainer: Uwe Ligges <ligges@statistik.tu-dortmund.de>
+Repository: CRAN
+Date/Publication: 2026-02-23 17:00:24 UTC

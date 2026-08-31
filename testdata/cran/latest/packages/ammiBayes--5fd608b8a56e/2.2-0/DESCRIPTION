@@ -1,0 +1,43 @@
+Package: ammiBayes
+Type: Package
+Title: Bayesian Ammi Model for Continuous Data with or without Additive
+        and Dominance Effect
+Version: 2.2-0
+Date: 2026-08-23
+Maintainer: Fabio M. Correa <fmcron@protonmail.com>
+Authors@R: c( person("Fabio M.", "Correa", role=c("aut","cre"), email="fmcron@protonmail.com", 
+   comment = c(ORCID = "0000-0002-6708-9316"))
+ , person("Luciano A.",  "Oliveira", role="aut")
+ , person("Carlos P.", "Silva", role="aut")
+ , person("Cristian T. E.", "Mendes", role="aut")
+ , person("Alessandra Q.", "Silva", role="aut")
+ , person("Joel J.", "Nuvunga", role="aut")
+ , person("Larissa C. V.", "Boas", role="aut")
+ , person("Marcio", "Balestre", role="ths")
+ , person("Diogenes F.", "Filho", role="ths")
+ , person("Julio S. S.", "Bueno-Filho", role="ths")
+   )
+Author: Fabio M. Correa [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6708-9316>),
+  Luciano A. Oliveira [aut],
+  Carlos P. Silva [aut],
+  Cristian T. E. Mendes [aut],
+  Alessandra Q. Silva [aut],
+  Joel J. Nuvunga [aut],
+  Larissa C. V. Boas [aut],
+  Marcio Balestre [ths],
+  Diogenes F. Filho [ths],
+  Julio S. S. Bueno-Filho [ths]
+Depends: R (>= 4.0.0)
+Encoding: UTF-8
+VignetteBuilder: R.rsp
+Imports: lattice, latticeExtra, distfree.cr, coda, spam, movMF, msm,
+        bayesplot, Hmisc, MASS
+Suggests: ggpubr, R.rsp
+Description: Flexible multi-environment trials analysis via MCMC method for Additive Main Effects and Multiplicative Interaction Model (AMMI) for continuous data. 
+ Biplot with the averages and regions of confidence can be generated. The chains run in parallel on Linux systems and run serially on Windows.
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2026-08-24 13:33:13 UTC; fmcron
+Repository: CRAN
+Date/Publication: 2026-08-24 16:50:12 UTC

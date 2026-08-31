@@ -1,0 +1,29 @@
+Package: svgedit
+Title: Insert Graphs, Images and Text in SVG Files
+Version: 1.0.0
+Authors@R: 
+  person(
+    "Daniel",
+    "Thedie",
+    email = "daniel.thedie@ed.ac.uk",
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0002-1352-7245")
+  )
+Description: Edit SVG files created in 'Inkscape' by replacing placeholders (e.g. a rectangle element or {} in a text box) by 'ggplot2' objects, images or text. This helps automate the creation of figures with complex layouts.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, rlang, xml2, ggplot2, base64enc
+Suggests: palmerpenguins, testthat (>= 3.0.0), svglite, knitr,
+        rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/DanielThedie/svgedit
+BugReports: https://github.com/DanielThedie/svgedit/issues
+NeedsCompilation: no
+Packaged: 2025-12-06 17:09:41 UTC; daniel
+Author: Daniel Thedie [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1352-7245>)
+Maintainer: Daniel Thedie <daniel.thedie@ed.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-12-11 13:50:02 UTC

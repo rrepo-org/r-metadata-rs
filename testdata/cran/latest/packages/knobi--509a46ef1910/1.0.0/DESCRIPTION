@@ -1,0 +1,27 @@
+Package: knobi
+Type: Package
+Title: Known-Biomass Production Model (KBPM)
+Version: 1.0.0
+Authors@R: c(person("Anxo", "Paz", email = "anxo.paz@hotmail.com", role = c("aut", "cre")),
+  person("Marta", "Cousido Rocha", email = "marta.cousido@ieo.csic.es", role = c("aut", "ths")),
+  person("Santiago", "Cervino Lopez", email = "santiago.cervino@ieo.csic.es", role = c("aut", "ths")),
+  person("Maria Grazia", "Peninno", email = "grazia.pennino@ieo.csic.es", role = c("aut")))
+Description: Application of a Known Biomass Production Model (KBPM): (1) the fitting of KBPM to each stock; (2) the estimation of the effects of environmental variability; (3) the retrospective analysis to identify regime shifts; (4) the estimation of forecasts. For more details see Schaefer (1954) <https://www.iattc.org/GetAttachment/62d510ee-13d0-40f2-847b-0fde415476b8/Vol-1-No-2-1954-SCHAEFER,-MILNER-B-_Some-aspects-of-the-dynamics-of-populations-important-to-the-management-of-the-commercial-marine-fisheries.pdf>, Pella and Tomlinson (1969) <https://www.iattc.org/GetAttachment/9865079c-6ee7-40e2-9e30-c4523ff81ddf/Vol-13-No-3-1969-PELLA,-JEROME-J-,-and-PATRICK-K-TOMLINSON_A-generalized-stock-production-model.pdf> and MacCall (2002) <doi:10.1577/1548-8675(2002)022%3C0272:UOKBPM%3E2.0.CO;2>.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: corrplot, ggplot2, gridExtra, grDevices, optimx, plot3D,
+        stats, dplyr, tidyr
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, icesSAG
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2026-05-14 11:40:22 UTC; apaz
+Author: Anxo Paz [aut, cre],
+  Marta Cousido Rocha [aut, ths],
+  Santiago Cervino Lopez [aut, ths],
+  Maria Grazia Peninno [aut]
+Maintainer: Anxo Paz <anxo.paz@hotmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-05-14 12:10:02 UTC

@@ -1,0 +1,35 @@
+Package: pphotspot
+Version: 0.1-2
+Date: 2026-07-18
+Title: Hotspot Detection of Point Events on a Linear Network
+Encoding: UTF-8
+Authors@R: c(
+    person(given = 'Mari', family = 'Myllymäki', role = c('aut', 'cre'),
+    email = 'mari.myllymaki@luke.fi', comment = c(ORCID = "0000-0002-2713-7088")),
+    person(given = 'Michal', family = 'Konopa', role = 'aut',
+    email = 'MKonopa@seznam.cz'),
+    person(given = 'Tomáš', family = 'Mrkvička', role = 'aut',
+    email = 'mrkvicka.toma@gmail.com'),
+    person(given = 'Mikko', family = 'Kuronen', role = 'ctb',
+    email = 'mikko.kuronen@luke.fi')
+    )
+Maintainer: Mari Myllymäki <mari.myllymaki@luke.fi>
+Imports: GET, parallel, sf, spatstat.geom, spatstat.Knet,
+        spatstat.linnet, spatstat.random, stats
+Suggests: R.rsp, spatstat.explore, spatstat.model, testthat
+Description: Detection of hotspots of point events on a linear network as proposed by Mrkvička et al. (2025) <doi:10.2139/ssrn.5337003> using the R package 'GET', see Myllymäki and Mrkvička (2024) <doi:10.18637/jss.v111.i03>.
+License: GPL-3
+RoxygenNote: 7.3.3
+URL: https://github.com/myllym/pphotspot
+BugReports: https://github.com/myllym/pphotspot/issues
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2026-07-18 20:13:18 UTC; marmylly
+Author: Mari Myllymäki [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2713-7088>),
+  Michal Konopa [aut],
+  Tomáš Mrkvička [aut],
+  Mikko Kuronen [ctb]
+Depends: R (>= 2.10)
+Repository: CRAN
+Date/Publication: 2026-07-28 16:10:02 UTC

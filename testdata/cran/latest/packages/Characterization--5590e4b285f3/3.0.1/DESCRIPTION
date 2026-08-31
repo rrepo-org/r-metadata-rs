@@ -1,0 +1,33 @@
+Package: Characterization
+Type: Package
+Title: Implement Descriptive Studies Using the Common Data Model
+Version: 3.0.1
+Date: 2026-4-15
+Authors@R: c(
+  person("Jenna", "Reps", , "jreps@its.jnj.com", role = c("aut", "cre")),
+  person("Patrick", "Ryan", , "ryan@ohdsi.org", role = c("aut")),
+  person("Chris", "Knoll", , "knoll@ohdsi.org", role = c("aut"))
+  )
+Maintainer: Jenna Reps <jreps@its.jnj.com>
+Description: An end-to-end framework that enables users to implement various descriptive studies for a given set of target and outcome cohorts for data mapped to the Observational Medical Outcomes Partnership Common Data Model.
+License: Apache License 2.0
+URL: https://ohdsi.github.io/Characterization/,
+        https://github.com/OHDSI/Characterization
+BugReports: https://github.com/OHDSI/Characterization/issues
+Depends: R (>= 4.0.0)
+Imports: Andromeda (>= 1.0.0), DatabaseConnector (>= 6.3.1), digest,
+        FeatureExtraction (>= 3.13.0), SqlRender (>= 1.9.0),
+        ParallelLogger (>= 3.0.0), ResultModelManager, checkmate,
+        dplyr, readr, rlang
+Suggests: devtools, formatR, testthat, kableExtra, knitr, markdown,
+        rmarkdown, OhdsiShinyAppBuilder, shiny, withr
+NeedsCompilation: no
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+Packaged: 2026-05-15 18:47:42 UTC; jreps
+Author: Jenna Reps [aut, cre],
+  Patrick Ryan [aut],
+  Chris Knoll [aut]
+Repository: CRAN
+Date/Publication: 2026-05-15 22:20:08 UTC

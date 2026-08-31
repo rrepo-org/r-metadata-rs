@@ -1,0 +1,37 @@
+Package: Rcppautodiff
+Type: Package
+Title: An Interface to the C++ Automatic Differentiation Library
+        'autodiff'
+Version: 0.1.0
+Date: 2026-06-27
+Authors@R: c(person(given = "Satyaprakash", family = "Nayak",
+                    role = c("aut", "cre"), email = "satyaprakash.nayak@gmail.com", 
+                    comment = c(ORCID = "0000-0001-7225-1317")))
+Maintainer: Satyaprakash Nayak <satyaprakash.nayak@gmail.com>
+URL: https://github.com/sn248/Rcppautodiff,
+        https://sn248.github.io/Rcppautodiff/
+BugReports: https://github.com/sn248/Rcppautodiff/issues
+Description: Provides an interface from R to the 'autodiff' library
+    <https://autodiff.github.io/>, a modern header-only
+    C++ library for automatic differentiation. Unlike numerical
+    differentiation, automatic differentiation computes derivatives of
+    functions to machine precision without truncation error, using either
+    forward or reverse mode. The 'autodiff' header files are shipped with
+    this package so that other R packages can use them by including
+    'Rcppautodiff' in the 'LinkingTo' field of their 'DESCRIPTION' file.
+    Example programs demonstrate computing derivatives of single-variable
+    and multi-variable functions, gradient vectors, Jacobian matrices and
+    derivatives with respect to parameters, using 'Rcpp' and 'RcppEigen'.
+License: GPL (>= 2)
+Suggests: knitr, rmarkdown, tinytest
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.8.3), RcppEigen
+LinkingTo: Rcpp, RcppEigen
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-09 23:00:58 UTC; quantilogy
+Author: Satyaprakash Nayak [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7225-1317>)
+Repository: CRAN
+Date/Publication: 2026-07-19 12:40:08 UTC

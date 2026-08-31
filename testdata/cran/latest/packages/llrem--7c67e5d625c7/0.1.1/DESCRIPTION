@@ -1,0 +1,28 @@
+Package: llrem
+Title: LLM Relational Event Models
+Version: 0.1.1
+Authors@R: 
+    person("C. Ben", "Gibson", email = "cbengibson@gmail.com",
+           role = c("aut", "cre"))
+Description: Fit Cox proportional hazards relational event models (REMs),
+    including a separable formulation that partitions events into initiation
+    and continuation sub-models. Optionally augments REM simulations with
+    large language model (LLM) agents that select targets conditioned on
+    event history, supporting multiple providers ('OpenAI', 'Anthropic',
+    'xAI'/'Grok', 'Google Gemini', 'Ollama', 'AWS Bedrock') through a common
+    interface. See Butts (2008) <doi:10.1111/j.1467-9531.2008.00203.x>
+    for description of relational event modeling.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: ggplot2, httr2 (>= 1.1.0), Rcpp, survival
+LinkingTo: Rcpp
+Suggests: igraph, parallel, relevent, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-05-13 14:03:13 UTC; cbeng
+Author: C. Ben Gibson [aut, cre]
+Maintainer: C. Ben Gibson <cbengibson@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-19 07:10:08 UTC

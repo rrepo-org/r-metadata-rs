@@ -1,0 +1,30 @@
+Package: hydrocan
+Title: Unified Access to Canadian Hydrometric Data
+Version: 0.0.1
+Authors@R: 
+    c(person("Sam", "Albers", email = "sam.albers@hakai.org", role = c("aut", "cre")),
+    person("Tula Foundation", , role = c("fnd", "cph")),
+    person("Canada Water Agency", , role = "fnd"))
+Description: Provides a unified interface for accessing diverse
+    web-published hydrometric data sources across Canada,
+    presenting users with consistent tabular output regardless
+    of the underlying data source.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/HakaiInstitute/hydrocan,
+        https://hakaiinstitute.github.io/hydrocan/
+BugReports: https://github.com/HakaiInstitute/hydrocan/issues
+Depends: R (>= 4.2.0)
+Imports: cli, dplyr, httr2, tibble
+Suggests: httptest2, knitr, rmarkdown, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-08 23:46:47 UTC; sam.albers
+Author: Sam Albers [aut, cre],
+  Tula Foundation [fnd, cph],
+  Canada Water Agency [fnd]
+Maintainer: Sam Albers <sam.albers@hakai.org>
+Repository: CRAN
+Date/Publication: 2026-06-16 20:10:07 UTC

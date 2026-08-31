@@ -1,0 +1,48 @@
+Package: AgeBandDecomposition
+Title: Age Band Decomposition Method for Tree Ring Standardization
+Version: 2.0.1
+Authors@R: c(
+  person(given = "Nicola", 
+         family = "Puletti", 
+         email = "nicola.puletti@crea.gov.it", 
+         role = c("aut", "cre"), 
+         comment = c(ORCID = "https://orcid.org/0000-0002-2142-959X")),
+  person(given = "Gianluigi", 
+         family = "Mazza", 
+         role = "aut", 
+         comment = c(ORCID = "https://orcid.org/0000-0002-2744-2330")),
+  person(given = "Dimitrios", 
+         family = "Sarris", 
+         role = "ctb", 
+         comment = c(ORCID = "https://orcid.org/0000-0003-1379-1465"))
+        )
+Description: Implements the Age Band Decomposition (ABD) method for 
+ standardizing tree ring width data while preserving both low and high frequency 
+ variability. Unlike traditional detrending approaches that can distort long term 
+ growth trends, ABD decomposes ring width series into multiple age classes, detrends 
+ each class separately, and then recombines them to create standardized chronologies. 
+ This approach improves the detection of growth signals linked to past climatic and 
+ environmental factors, making it particularly valuable for dendroecological and 
+ dendroclimatological studies. The package provides functions to perform ABD-based 
+ standardization, compare results with other common methods (e.g., BAI, C method, RCS), 
+ and facilitate the interpretation of growth patterns under current and future climate 
+ variability.
+URL: https://gitlab.com/Puletti/agebanddecomposition_rpackage
+Language: en-US
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+Imports: dplyr, tidyr, tibble, readxl, ggplot2, dplR, patchwork
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-04-10 17:22:18 UTC; nicolapuletti
+Author: Nicola Puletti [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2142-959X>),
+  Gianluigi Mazza [aut] (ORCID: <https://orcid.org/0000-0002-2744-2330>),
+  Dimitrios Sarris [ctb] (ORCID: <https://orcid.org/0000-0003-1379-1465>)
+Maintainer: Nicola Puletti <nicola.puletti@crea.gov.it>
+Repository: CRAN
+Date/Publication: 2026-04-10 17:40:02 UTC

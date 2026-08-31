@@ -1,0 +1,35 @@
+Package: hydromeso
+Title: Classify Fluvial Mesohabitats from Depth and Velocity
+Version: 0.1.0
+Date: 2026-07-19
+Authors@R: 
+    person("Elvin", "Cordero", email = "elvin.cordero@seamountgeo.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0003-8025-283X"))
+Description: Classifies hydraulic conditions into nominal fluvial mesohabitat
+    categories using water depth and velocity. It implements the eight-class
+    scheme in the preprint by Cordero and Harris <doi:10.2139/ssrn.7100727>, supports
+    validated rectangular custom schemes, and works with tabular and spatial
+    data through 'terra'. Outputs describe hydraulic classes and do not by
+    themselves establish biological habitat quality or species occurrence.
+License: GPL-3
+URL: https://el-cordero.github.io/hydromeso/,
+        https://github.com/el-cordero/hydromeso
+BugReports: https://github.com/el-cordero/hydromeso/issues
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: terra
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+NeedsCompilation: no
+Packaged: 2026-07-19 22:33:37 UTC; ec
+Author: Elvin Cordero [aut, cre] (ORCID:
+    <https://orcid.org/0009-0003-8025-283X>)
+Maintainer: Elvin Cordero <elvin.cordero@seamountgeo.com>
+Repository: CRAN
+Date/Publication: 2026-07-28 16:50:10 UTC

@@ -1,0 +1,34 @@
+Package: regressinator
+Type: Package
+Title: Simulate and Diagnose (Generalized) Linear Models
+Version: 0.3.1
+Date: 2026-08-20
+Authors@R: person("Alex", "Reinhart",
+                  email = "areinhar@stat.cmu.edu",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0002-6658-514X"))
+Description: Simulate samples from populations with known covariate
+    distributions, generate response variables according to common linear and
+    generalized linear model families, draw from sampling distributions of
+    regression estimates, and perform visual inference on diagnostics from model
+    fits.
+URL: https://www.refsmmat.com/regressinator/,
+        https://github.com/capnrefsmmat/regressinator
+BugReports: https://github.com/capnrefsmmat/regressinator/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: broom, cli, DHARMa, dplyr, ggplot2, insight, nullabor, purrr,
+        rlang, tibble, tidyr, tidyselect
+Suggests: rmarkdown, knitr, mvtnorm, palmerpenguins, patchwork,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-20 18:12:58 UTC; alexreinhart
+Author: Alex Reinhart [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6658-514X>)
+Maintainer: Alex Reinhart <areinhar@stat.cmu.edu>
+Repository: CRAN
+Date/Publication: 2026-08-21 16:30:02 UTC

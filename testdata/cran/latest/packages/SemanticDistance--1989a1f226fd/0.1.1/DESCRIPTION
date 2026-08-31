@@ -1,0 +1,42 @@
+Package: SemanticDistance
+Type: Package
+Version: 0.1.1
+Title: Compute Semantic Distance Between Text Constituents
+Authors@R: c(
+    person("Jamie", "Reilly", 
+           role = c("aut", "cre"), 
+           email = "jamie_reilly@temple.edu",
+           comment = c(ORCID = "0000-0002-0891-438X")),
+    person("Emily B.", "Myers", role = "aut"),
+    person("Hannah R.", "Mechtenberg", role = "aut"),
+    person("Jonathan E.", "Peelle", role = "aut"))
+Maintainer: Jamie Reilly <jamie_reilly@temple.edu>
+Description: Cleans and formats language transcripts guided by a series of transformation options (e.g., lemmatize words, omit stopwords, split strings across rows). 'SemanticDistance' computes two distinct metrics of cosine semantic distance (experiential and embedding). These values reflect pairwise cosine distance between different elements or chunks of a language sample. 'SemanticDistance' can process monologues (e.g., stories, ordered text), dialogues (e.g., conversation transcripts), word pairs arrayed in columns, and unordered word lists. Users specify options for how they wish to chunk distance calculations. These options include: rolling ngram-to-word distance (window of n-words to each new word), ngram-to-ngram distance (2-word chunk to the next 2-word chunk), pairwise distance between words arrayed in columns, matrix comparisons (i.e., all possible pairwise distances between words in an unordered list), turn-by-turn distance (talker to talker in a dialogue transcript). 'SemanticDistance' includes visualization options for analyzing distances as time series data and simple semantic network dynamics (e.g., clustering, undirected graph network).
+License: LGPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/Reilly-ConceptsCognitionLab/SemanticDistance,
+        https://reilly-conceptscognitionlab.github.io/SemanticDistance/
+BugReports: https://github.com/Reilly-ConceptsCognitionLab/SemanticDistance/issues
+Depends: R (>= 3.5)
+Imports: ape, cluster, dendextend, dplyr, graphics, httr, igraph, lsa,
+        magrittr, purrr, rlang, stats, stringi, stringr, textstem,
+        tidyselect, tm, tidyr, textclean, tools, utils, wesanderson,
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Collate: 'backup.R' 'clean_dialogue.R' 'clean_monologue_or_list.R'
+        'clean_paired_cols.R' 'data.R' 'dist_anchor.R'
+        'dist_dialogue.R' 'dist_ngram2ngram.R' 'dist_ngram2word.R'
+        'dist_paired_cols.R' 'eval_kmeans_clustersize.R' 'globals.R'
+        'reexports.R' 'replacements_25.R' 'utils.R'
+        'wordlist_to_network.R' 'zzz.R'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-08-27 08:02:07 UTC; Jamie
+Author: Jamie Reilly [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0891-438X>),
+  Emily B. Myers [aut],
+  Hannah R. Mechtenberg [aut],
+  Jonathan E. Peelle [aut]
+Repository: CRAN
+Date/Publication: 2025-09-01 16:50:02 UTC

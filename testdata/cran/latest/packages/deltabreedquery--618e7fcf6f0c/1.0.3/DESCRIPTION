@@ -1,0 +1,32 @@
+Package: deltabreedquery
+Type: Package
+Title: Fast, Simple API Tools for Retrieving Data from 'DeltaBreed'
+Version: 1.0.3
+Authors@R: c(
+    person("Tyr", "Wiesner-Hanks",
+    email = "twiesnerhanks@ufl.edu", role = c("aut","cre"),
+    comment = c(ORCID = "0000-0002-3280-5749"))
+    )
+Maintainer: Tyr Wiesner-Hanks <twiesnerhanks@ufl.edu>
+Description: Simplified data retrieval from the 'DeltaBreed' breeding
+  data management platform (<https://sandbox.breedinginsight.net/>) via the
+  'BrAPI' open-source breeding data API (<https://brapi.org/specification>).
+  Each of the four main data types stored in 'DeltaBreed' (germplasm, trait variables,
+  experiments/environments, and observations) are handled by a get_datatype()
+  function that constructs and executes the request, handles paginated responses,
+  and parses the retrieved data. Responses are reformatted into a consistent,
+  R-friendly data frame format that resembles how the data appears on the
+  'DeltaBreed' web interface as closely as possible.
+License: Apache License 2.0
+Encoding: UTF-8
+Suggests: testthat (>= 3.0.0), vcr
+Config/testthat/edition: 3
+Depends: R (>= 4.1)
+Imports: httr2, dplyr, tidyr, rlang, jsonlite
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-20 18:02:56 UTC; twiesnerhanks
+Author: Tyr Wiesner-Hanks [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3280-5749>)
+Repository: CRAN
+Date/Publication: 2026-08-25 14:50:09 UTC

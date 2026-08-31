@@ -1,0 +1,29 @@
+Package: MVLs
+Title: Model Validation Levels
+Version: 2.1
+Authors@R: c(
+    person("Kyle", "Provost", , "kyle.provost.1.ctr@us.af.mil", role = "aut"),
+    person("Corinne", "Stafford", , "corinne.stafford.ctr@us.af.mil", role = c("aut", "cre")),
+    person("Ronald", "Prescott", , "ronald.n.prescott.civ@army.mil", role = "ctb"),
+    person("Chloe", "Young", , "chloe.young.2.ctr@us.af.mil", role = "ctb"),
+    person("Nicholas", "Jones", , "nicholas.jones.27.ctr@us.af.mil", role = "ctb")
+  )
+Description: Calculates Model Validation Levels from user provided model data, referent data, and scope files as described by Stafford, Provost, & Jones (2025) <doi:10.1080/17477778.2025.2536096>. Data files must be structured according to one of the accepted Excel templates as shown by Jones, Provost, Stafford, & Young (2026) <https://www.afit.edu/docs/MVL%20User%20Guide%20v4.pdf>.
+License: MIT + file LICENSE
+Imports: dplyr, DT, geometry, htmlwidgets, lhs, magrittr, openxlsx,
+        purrr, RANN, readxl, shiny, shinyWidgets, stats, tibble,
+        tidyselect, markdown, utils
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: spelling
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-07-17 17:13:51 UTC; cweeks
+Author: Kyle Provost [aut],
+  Corinne Stafford [aut, cre],
+  Ronald Prescott [ctb],
+  Chloe Young [ctb],
+  Nicholas Jones [ctb]
+Maintainer: Corinne Stafford <corinne.stafford.ctr@us.af.mil>
+Repository: CRAN
+Date/Publication: 2026-07-27 14:40:24 UTC

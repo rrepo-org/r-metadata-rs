@@ -1,0 +1,40 @@
+Package: NeighborFinder
+Title: Find Neighbor Species of a Bacteria of Interest in the Human Gut
+        Microbiota
+Version: 1.0.1
+Authors@R: c(
+    person("Mathilde", "Sola", , "mathilde.sola@inrae.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0009-0436-5078")),
+    person("Mahendra", "Mariadassou", , "mahendra.mariadassou@inrae.fr", role = "aut",
+           comment = c(ORCID = "0000-0003-2986-354X")),
+    person("Magali", "Berland", , "magali.berland@inrae.fr", role = "aut",
+           comment = c(ORCID = "0000-0002-6762-5350"))
+  )
+Description: Implementation of the local approach described in Sola et
+    al., 2026 <doi:10.64898/2025.12.05.692507> to identify companion
+    species of a bacteria of interest. From several abundance tables of
+    metagenomic data, 'NeighborFinder' suggests a shortlist of companion
+    species based on the integration of results. A visualization via a
+    network is proposed.
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: dplyr, GGally, glmnet, glue, igraph, magrittr, Matrix,
+        mvtnorm, network, purrr, rlang, sna, stats, stringr, tibble,
+        tidyr, utils
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Config/fusen/version: 0.7.2
+Config/roxygen2/version: 8.0.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-24 15:05:58 UTC; mmariadasso
+Author: Mathilde Sola [aut, cre] (ORCID:
+    <https://orcid.org/0009-0009-0436-5078>),
+  Mahendra Mariadassou [aut] (ORCID:
+    <https://orcid.org/0000-0003-2986-354X>),
+  Magali Berland [aut] (ORCID: <https://orcid.org/0000-0002-6762-5350>)
+Maintainer: Mathilde Sola <mathilde.sola@inrae.fr>
+Repository: CRAN
+Date/Publication: 2026-06-30 12:20:32 UTC

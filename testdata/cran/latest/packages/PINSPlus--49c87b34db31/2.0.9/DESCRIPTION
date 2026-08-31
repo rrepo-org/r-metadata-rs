@@ -1,0 +1,41 @@
+Encoding: UTF-8
+Package: PINSPlus
+Type: Package
+Title: Clustering Algorithm for Data Integration and Disease Subtyping
+Version: 2.0.9
+Date: 2025-07-29
+Authors@R: c(person(given = "Hung",
+                      family = "Nguyen",
+                      role = "aut"),
+               person(given = "Bang",
+                      family = "Tran",
+                      role = "aut"),
+               person(given = "Duc",
+                      family = "Tran",
+                      role = "aut"),
+               person(given = "Tin",
+                      family = "Nguyen",
+                      role = "aut"),
+               person(given = "Van-Dung",
+                      family = "Pham",
+                      role = "cre",
+                      email = "dvp0001@auburn.edu"))
+Description: Provides a robust approach for omics data integration and disease subtyping. PINSPlus is fast and supports the analysis of large datasets with hundreds of thousands of samples and features. The software automatically determines the optimal number of clusters and then partitions the samples in a way such that the results are robust against noise and data perturbation (Nguyen et al. (2019) <DOI: 10.1093/bioinformatics/bty1049>, Nguyen et al. (2017)<DOI: 10.1101/gr.215129.116>, Nguyen et al. (2021)<DOI: 10.3389/fonc.2021.725133>).
+License: LGPL
+Depends: R (>= 2.10)
+Imports: foreach, entropy , doParallel, matrixStats, Rcpp,
+        RcppParallel, FNN, cluster, irlba, mclust, impute
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, survival, markdown
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-07-29 16:10:32 UTC; dungp
+Repository: CRAN
+Date/Publication: 2025-07-29 16:40:02 UTC
+Author: Hung Nguyen [aut],
+  Bang Tran [aut],
+  Duc Tran [aut],
+  Tin Nguyen [aut],
+  Van-Dung Pham [cre]
+Maintainer: Van-Dung Pham <dvp0001@auburn.edu>

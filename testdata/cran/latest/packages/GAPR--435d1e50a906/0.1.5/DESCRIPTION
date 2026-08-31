@@ -1,0 +1,25 @@
+Package: GAPR
+Title: Generalized Association Plots
+Version: 0.1.5
+Authors@R: 
+    c(
+        person("Shu-Yu", "Lin", , "shuyuuu89@gmail.com", role = c("aut", "cre")),
+        person("Chiun-How", "Kao", , "157294@mail.tku.edu.tw", role = c("aut", "ctb")),
+        person("Chun-Houh", "Chen", , "cchen@stat.sinica.edu.tw", role = c("aut", "ctb"))
+    )
+Description: Provides a comprehensive framework for visualizing associations and interaction structures in matrix-formatted data using Generalized Association Plots (GAP). The package implements multiple proximity computation methods (e.g., correlation, distance metrics), ordering techniques including hierarchical clustering (HCT) and Rank-2-Ellipse (R2E) seriation, and optional flipping strategies to enhance visual symmetry. It supports a variety of covariate-based color annotations, allows flexible customization of layout and output, and is suitable for analyzing multivariate data across domains such as social sciences, genomics, and medical research. The method is based on Generalized Association Plots introduced by Chen (2002) <https://www3.stat.sinica.edu.tw/statistica/J12N1/J12N11/J12N11.html> and further extended by Wu, Tien, and Chen (2010) <doi:10.1016/j.csda.2008.09.029>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: Rcpp, ComplexHeatmap, RColorBrewer, gridExtra, grid,
+        dendextend, circlize, seriation, magick,
+Suggests: MASS
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Maintainer: Shu-Yu Lin <shuyuuu89@gmail.com>
+Packaged: 2026-01-28 07:33:42 UTC; R108-4
+Author: Shu-Yu Lin [aut, cre],
+  Chiun-How Kao [aut, ctb],
+  Chun-Houh Chen [aut, ctb]
+Repository: CRAN
+Date/Publication: 2026-01-28 07:50:02 UTC

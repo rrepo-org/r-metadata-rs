@@ -1,0 +1,15 @@
+Package: TreeOrderTests
+Type: Package
+Title: Tests for Tree Ordered Alternatives in One-Way ANOVA
+Version: 0.1.0
+Authors@R: person("Subha", "Halder", email = "sb.halder123456@gmail.com", role = c("aut", "cre"))
+Description: Implements a likelihood ratio test and two pairwise standardized mean difference tests for testing equality of means against tree ordered alternatives in one-way ANOVA. The null hypothesis assumes all group means are equal, while the alternative assumes the control mean is less than or equal to each treatment mean with at least one strict inequality. Inputs are a list of numeric vectors (groups) and a significance level; outputs include the test statistic, critical value, and decision. Methods described in "Testing Against Tree Ordered Alternatives in One-way ANOVA" <doi:10.48550/arXiv.2507.17229>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2025-07-24 08:17:11 UTC; Subha Halder
+Author: Subha Halder [aut, cre]
+Maintainer: Subha Halder <sb.halder123456@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-25 15:50:09 UTC

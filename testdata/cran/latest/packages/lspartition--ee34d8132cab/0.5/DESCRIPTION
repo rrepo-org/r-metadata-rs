@@ -1,0 +1,30 @@
+Package: lspartition
+Type: Package
+Title: Nonparametric Estimation and Inference Procedures using
+        Partitioning-Based Least Squares Regression
+Version: 0.5
+Date: 2025-04-29
+Authors@R: c(person(given = c("Matias", "D."),
+                    family = "Cattaneo",
+                    role = "aut"),
+             person(given = c("Max", "H."),
+                    family = "Farrell",
+                    role = "aut"),
+             person(given = "Yingjie",
+                    family = "Feng",
+                    role = c("aut", "cre"),
+                    email = "fengyingjiepku@gmail.com"))
+Description: Tools for statistical analysis using partitioning-based least squares regression as described in Cattaneo, Farrell and Feng (2020a, <doi:10.48550/arXiv.1804.04916>) and Cattaneo, Farrell and Feng (2020b, <doi:10.48550/arXiv.1906.00202>): lsprobust() for nonparametric point estimation of regression functions and their derivatives and for robust bias-corrected (pointwise and uniform) inference; lspkselect() for data-driven selection of the IMSE-optimal number of knots; lsprobust.plot() for regression plots with robust confidence intervals and confidence bands; lsplincom() for estimation and inference for linear combinations of regression functions from different groups.
+Depends: R (>= 3.1)
+License: GPL-2
+Encoding: UTF-8
+Imports: ggplot2, pracma, mgcv, combinat, matrixStats, MASS, dplyr
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2025-04-29 08:13:21 UTC; yjfeng
+Author: Matias D. Cattaneo [aut],
+  Max H. Farrell [aut],
+  Yingjie Feng [aut, cre]
+Maintainer: Yingjie Feng <fengyingjiepku@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-29 10:30:06 UTC

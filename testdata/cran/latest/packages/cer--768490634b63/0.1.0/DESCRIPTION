@@ -1,0 +1,44 @@
+Package: cer
+Title: Download and Tidy Australian Clean Energy Regulator Data
+Version: 0.1.0
+Authors@R: 
+    person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
+Description: Fetch Australian Clean Energy Regulator data on carbon
+    credits, safeguard mechanism facilities, renewable energy
+    certificates, and greenhouse gas reporting. Provides tidy access
+    to the Australian Carbon Credit Unit ('ACCU') Scheme project
+    register, Safeguard Mechanism baselines and covered emissions,
+    Large-scale Renewable Energy Target ('LRET') power station
+    accreditations, Small-scale Renewable Energy Scheme ('SRES')
+    installation data, the National Greenhouse and Energy Reporting
+    ('NGER') scheme, and Quarterly Carbon Market Reports
+    <https://cer.gov.au/markets/reports-and-data>. Includes a
+    post-Chubb ACCU integrity layer (Chubb 2022 Independent Review),
+    Safeguard reform handling (declining industry baselines from
+    July 2023), National Greenhouse and Energy Reporting scope
+    discipline (Scope 1 / Scope 2 market vs location / Climate
+    Active), reconciliation against the Quarterly Carbon Market
+    Report, and reproducibility helpers (snapshot pinning,
+    SHA-256 cache integrity, session manifest, optional Zenodo
+    deposit). Data is published by the Clean Energy Regulator
+    under a Creative Commons Attribution 4.0 International licence.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: cli (>= 3.6.0), httr2 (>= 1.0.0), readxl (>= 1.4.0), tools,
+        utils
+Suggests: digest, jsonlite, knitr, openssl, rmarkdown, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://charlescoverdale.github.io/cer/,
+        https://github.com/charlescoverdale/cer
+BugReports: https://github.com/charlescoverdale/cer/issues
+NeedsCompilation: no
+Packaged: 2026-04-24 13:47:50 UTC; charlescoverdale
+Author: Charles Coverdale [aut, cre]
+Maintainer: Charles Coverdale <charlesfcoverdale@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-28 19:00:26 UTC

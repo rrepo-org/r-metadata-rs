@@ -1,0 +1,37 @@
+Package: jentre
+Title: Toolkit for the 'Entrez' API
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Carl",
+           family = "Suster",
+           email = "carl.suster@sydney.edu.au",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-7021-9380")))
+Description: Interact with the 'Entrez' API
+    hosted by the National Center for Biotechnology Information (NCBI),
+    <https://www.ncbi.nlm.nih.gov/books/NBK25499/>.
+    This package is focused on working with sequence metadata and links.
+    It handles pagination and compensates for some API limitations to simplify these tasks.
+    API calls are printed to the console to highlight how high-level queries are translated
+    into individual HTTP requests.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Collate: 'count.R' 'process.R' 'fetch.R' 'id_set.R' 'id_set_validate.R'
+        'info.R' 'jentre-package.R' 'link.R' 'post.R' 'request.R'
+        'search.R' 'utils.R'
+Depends: R (>= 4.1.0)
+Imports: cli, glue, httr2, purrr, rlang (>= 1.1.0), vctrs (>= 0.7.0),
+        xml2
+Suggests: httpuv, testthat (>= 3.0.0), tibble, withr
+Config/testthat/edition: 3
+URL: https://github.com/cidm-ph/jentre,
+        https://cidm-ph.github.io/jentre/
+BugReports: https://github.com/cidm-ph/jentre/issues
+NeedsCompilation: no
+Packaged: 2026-03-25 06:10:45 UTC; csus5157
+Author: Carl Suster [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7021-9380>)
+Maintainer: Carl Suster <carl.suster@sydney.edu.au>
+Repository: CRAN
+Date/Publication: 2026-03-30 08:50:13 UTC

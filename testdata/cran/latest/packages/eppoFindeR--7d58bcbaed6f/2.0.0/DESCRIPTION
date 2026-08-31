@@ -1,0 +1,59 @@
+Package: eppoFindeR
+Type: Package
+Title: Interface to the EPPO Database and Public APIs
+Version: 2.0.0
+Maintainer: Luca Belmonte <luca.belmonte@efsa.europa.eu>
+Authors@R: 
+  c(person(given = "Lorenzo",
+           family = "Copelli",
+           role = "aut",
+           comment = c(ORCID = "0009-0002-4305-065X")),
+    person(given = "Dayana Stephanie",
+           family = "Buzle",
+           role = "aut",
+           comment = c(ORCID = "0009-0003-2990-7431")),
+    person(given = "Rafael",
+           family = "Vieira",
+           role = "aut",
+           comment = c(ORCID = "0009-0009-0289-5438")),
+    person(given = "Agata",
+           family = "Kaczmarek",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-7463-5821")),
+    person(given = "Luca",
+           family = "Belmonte",
+           role = c("aut", "cre"),
+           email = "luca.belmonte@efsa.europa.eu",
+           comment = c(ORCID = "0000-0002-7977-9170")))
+Description: Provides an interface to the public APIs of the European and
+    Mediterranean Plant Protection Organization (EPPO) database. It enables
+    users to retrieve EPPO data by accessing specific services and datasets. The
+    package also includes utilities for data wrangling, including the
+    integration of taxonomy with rank information. See
+    <https://data.eppo.int/apis/> for more details.
+License: EUPL-1.2
+URL: https://openefsa.github.io/eppoFindeR/
+BugReports: https://github.com/openefsa/eppoFindeR/issues
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.6.5), httr2 (>= 1.2.1), jsonlite (>= 1.8.8), dplyr
+        (>= 1.1.4), glue (>= 1.7.0), purrr (>= 1.0.2), checkmate (>=
+        2.3.1), tibble(>= 3.3.0)
+Suggests: devtools (>= 2.4.5), roxygen2 (>= 7.3.1), testthat (>=
+        3.2.1), usethis (>= 2.2.3), knitr (>= 1.0), rmarkdown (>= 2.0),
+        covr (>= 3.6.4)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/Needs/website: pkgdown
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2026-04-22 08:06:59 UTC; copello
+Author: Lorenzo Copelli [aut] (ORCID: <https://orcid.org/0009-0002-4305-065X>),
+  Dayana Stephanie Buzle [aut] (ORCID:
+    <https://orcid.org/0009-0003-2990-7431>),
+  Rafael Vieira [aut] (ORCID: <https://orcid.org/0009-0009-0289-5438>),
+  Agata Kaczmarek [aut] (ORCID: <https://orcid.org/0000-0002-7463-5821>),
+  Luca Belmonte [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7977-9170>)
+Date/Publication: 2026-04-24 18:10:02 UTC

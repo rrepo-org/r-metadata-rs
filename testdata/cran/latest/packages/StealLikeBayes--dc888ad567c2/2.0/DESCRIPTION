@@ -1,0 +1,101 @@
+Package: StealLikeBayes
+Type: Package
+Title: A Compendium of Bayesian Statistical Routines Written in 'C++'
+Version: 2.0
+Date: 2026-08-31
+Maintainer: Tomasz Woźniak <wozniak.tom@pm.me>
+Authors@R: c(
+    person(
+      "Tomasz", 
+      "Woźniak",, 
+      "wozniak.tom@pm.me", 
+      role = c("aut", "cre"),
+      comment = c(
+        ORCID = "0000-0003-2212-2378", 
+        contributions = "contributions: rmvnorm1_precision_sampler, rgennorm, rgig1, rig2"
+      )
+    ),
+    person(
+      "Xiaolei", 
+      "Wang",, 
+      "adamwang15@gmail.com", 
+      role = c("aut"),
+      comment = c(
+        ORCID = "0009-0005-6192-9061", 
+        contributions = "contributions: rhaar1"
+      )
+    ),
+    person(
+      "Longcan",
+      "Li",,
+      "longcando@outlook.com", 
+      role = c("aut"),
+      comment = c(
+        ORCID = "0009-0007-2190-768X", 
+        contributions = "contributions: sample_variances_horseshoe"
+      )
+    ),
+    person(
+      "Jianying Shelly", 
+      "Xie",, 
+      "shellyyinggxie@gmail.com", 
+      role = c("aut"),
+      comment = c(
+        ORCID = "0009-0008-6451-6416", 
+        contributions = "contributions: sample_variances_normal_gamma"
+      )
+    ),
+    person(
+      "Filip",
+      "Reierson",,
+      "filip.reierson@gmail.com", 
+      role = c("aut"),
+      comment = c(
+        ORCID = "0009-0003-2393-5810", 
+        contributions = "contributions: rtmvnorm"
+        )
+    ),
+    person(
+      "Kenyon",
+      "Ng",,
+      "kenyon.ng@gmail.com",
+      role = c("aut"),
+      comment = c(
+        ORCID = "0000-0002-6315-9831",
+        contributions = "contributions: rtmvnorm_hmc"
+      )
+    )
+  )
+Description: 
+  This is a compendium of 'C++' routines useful for Bayesian statistics. We steal 
+  other people's 'C++' code, repurpose it, and export it so developers of 'R' 
+  packages can use it in their 'C++' code. We actually don't steal anything, or 
+  claim that Thomas Bayes did, but copy code that is compatible with our GPL 3 
+  licence, fully acknowledging the authorship of the original code.
+Imports: Rcpp (>= 1.1.0), GIGrvg
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen, GIGrvg
+Suggests: tinytest
+URL: https://bsvars.org/StealLikeBayes/
+BugReports: https://github.com/bsvars/StealLikeBayes/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-31 09:42:45 UTC; twozniak
+Author: Tomasz Woźniak [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2212-2378>, contributions:
+    contributions: rmvnorm1_precision_sampler, rgennorm, rgig1, rig2),
+  Xiaolei Wang [aut] (ORCID: <https://orcid.org/0009-0005-6192-9061>,
+    contributions: contributions: rhaar1),
+  Longcan Li [aut] (ORCID: <https://orcid.org/0009-0007-2190-768X>,
+    contributions: contributions: sample_variances_horseshoe),
+  Jianying Shelly Xie [aut] (ORCID:
+    <https://orcid.org/0009-0008-6451-6416>, contributions:
+    contributions: sample_variances_normal_gamma),
+  Filip Reierson [aut] (ORCID: <https://orcid.org/0009-0003-2393-5810>,
+    contributions: contributions: rtmvnorm),
+  Kenyon Ng [aut] (ORCID: <https://orcid.org/0000-0002-6315-9831>,
+    contributions: contributions: rtmvnorm_hmc)
+Repository: CRAN
+Date/Publication: 2026-08-31 17:20:08 UTC

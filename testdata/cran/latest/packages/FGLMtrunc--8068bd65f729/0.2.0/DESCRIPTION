@@ -1,0 +1,28 @@
+Package: FGLMtrunc
+Type: Package
+Title: Truncated Functional Generalized Linear Models
+Version: 0.2.0
+Date: 2025-12-20
+Authors@R: c(
+              person("Xi", "Liu", role = c("aut")),
+              person("Chau", "Tran", email = "cbtr@ucdavis.edu", role = c("aut", "cre")),
+              person("Alexander", "Petersen", role = c("aut")))
+Author: Xi Liu [aut],
+  Chau Tran [aut, cre],
+  Alexander Petersen [aut]
+Maintainer: Chau Tran <cbtr@ucdavis.edu>
+Description: An implementation of the methodologies described in Xi Liu, Afshin A. Divani, and Alexander Petersen (2022) <doi:10.1016/j.csda.2022.107421>, including 
+                truncated functional linear and truncated functional logistic regression models.
+License: GPL-2
+Depends: R (>= 3.6.0)
+Imports: foreach, glmnet, splines2
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: knitr, xfun, rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2025-12-21 01:11:05 UTC; chautran
+Repository: CRAN
+Date/Publication: 2025-12-22 18:10:14 UTC

@@ -1,0 +1,48 @@
+Package: craftgrn
+Title: Integrative Chromatin Accessibility and RNA Framework for Gene
+        Regulatory Networks
+Version: 0.1.7
+Authors@R: c(
+    person("Yaoxiang", "Li", , "liyaoxiang@outlook.com", role = c("aut", "cre")),
+    person("Chunling", "Yi", role = "aut")
+  )
+Description: Provides a reproducible framework for constructing and comparing
+    gene regulatory networks by integrating chromatin accessibility footprint
+    scores with matched RNA expression data. It implements context-specific
+    enhancer-gene linking, transcription factor focused network analysis,
+    differential network analysis, and regulatory topic modeling workflows for
+    systematic exploration of gene regulation across conditions. Methodological
+    background is described in Bentsen and others (2020)
+    <doi:10.1038/s41467-020-18035-1>, Blei, Ng and Jordan (2003)
+    <https://www.jmlr.org/papers/v3/blei03a.html>, and Chen, Li, Zhu and Chen
+    (2015) <doi:10.48550/arXiv.1510.08628>.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: cli, cluster, config, data.table, dplyr, digest, future,
+        future.apply, ggplot2, enrichR, jsonlite, LDAvis, methods,
+        pheatmap, readr, Rcpp, tibble, tidyr, yaml
+LinkingTo: Rcpp
+Suggests: AnnotationDbi, arrow, EnsDb.Hsapiens.v86,
+        EnsDb.Mmusculus.v79, fgsea, golem, ggraph, ggrepel, gtable,
+        gridExtra, htmlwidgets, igraph, Matrix, msigdbr, parallelly,
+        progressr, RColorBrewer, knitr, rmarkdown, rstudioapi, scales,
+        shiny, spelling, testthat, withr
+VignetteBuilder: knitr
+SystemRequirements: Optional Shiny app support on Linux may require
+        libuv headers, for example libuv1-dev, or cmake for bundled
+        libuv builds in transitive dependencies.
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+URL: https://oncologylab.github.io/craftgrn/,
+        https://github.com/oncologylab/craftgrn
+BugReports: https://github.com/oncologylab/craftgrn/issues
+Config/Needs/website: r-lib/pkgdown, tidyverse/tidytemplate
+NeedsCompilation: yes
+Packaged: 2026-06-19 16:01:05 UTC; yl814
+Author: Yaoxiang Li [aut, cre],
+  Chunling Yi [aut]
+Maintainer: Yaoxiang Li <liyaoxiang@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-06-19 19:40:11 UTC

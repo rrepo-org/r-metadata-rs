@@ -1,0 +1,35 @@
+Package: clmstan
+Type: Package
+Title: Cumulative Link Models with 'CmdStanR'
+Version: 0.1.2
+Authors@R: person("Tomotaka", "Momozaki",
+                  email = "momozaki.stat@gmail.com",
+                  role = c("aut", "cre"))
+Author: Tomotaka Momozaki [aut, cre]
+Maintainer: Tomotaka Momozaki <momozaki.stat@gmail.com>
+Description: Fits cumulative link models (CLMs) for ordinal categorical data
+    using 'CmdStanR'. Supports various link functions including logit, probit,
+    cloglog, loglog, cauchit, and flexible parametric links such as
+    Generalized Extreme Value (GEV), Asymmetric Exponential Power (AEP),
+    and Symmetric Power. Models are pre-compiled using the 'instantiate'
+    package for fast execution without runtime compilation. Methods are
+    described in Agresti (2010, ISBN:978-0-470-08289-8),
+    Wang and Dey (2011) <doi:10.1007/s10651-010-0154-8>, and
+    Naranjo, Perez, and Martin (2015) <doi:10.1007/s11222-014-9449-1>.
+License: MIT + file LICENSE
+URL: https://t-momozaki.github.io/clmstan/,
+        https://github.com/t-momozaki/clmstan
+BugReports: https://github.com/t-momozaki/clmstan/issues
+Depends: R (>= 4.0.0)
+Imports: instantiate, posterior, bayesplot, loo, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, ordinal, cmdstanr (>=
+        0.9.0)
+Additional_repositories: https://stan-dev.r-universe.dev
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-06-29 12:43:28 UTC; t_momozaki
+Repository: CRAN
+Date/Publication: 2026-06-29 13:00:40 UTC

@@ -1,0 +1,28 @@
+Package: MultiStatM
+Type: Package
+Title: Multivariate Statistical Methods
+Version: 2.1.0
+Authors@R: c(person("Gyorgy", "Terdik", role = "aut"),
+            person("Emanuele", "Taufer", role = c("aut", "cre"),
+           email = "emanuele.taufer@unitn.it"))
+LinkingTo: Rcpp
+Imports: arrangements, Matrix, EQL, stats, mvtnorm, Rcpp
+Description: Algorithms to build set partitions and commutator matrices and their use in the 
+    construction of multivariate d-Hermite polynomials;  estimation and derivation of theoretical  vector moments and vector
+    cumulants  of multivariate distributions; conversion formulae for multivariate moments and cumulants. Applications to
+    estimation and derivation of multivariate measures of skewness and kurtosis;  estimation and derivation of asymptotic 
+    covariances for d-variate Hermite polynomials, multivariate moments and cumulants and measures of skewness and kurtosis.
+    The formulae implemented are discussed in Terdik (2021, ISBN:9783030813925), "Multivariate Statistical Methods".
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.4.0)
+Suggests: MASS, rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-01-25 16:29:35 UTC; emanuele.taufer
+Author: Gyorgy Terdik [aut],
+  Emanuele Taufer [aut, cre]
+Maintainer: Emanuele Taufer <emanuele.taufer@unitn.it>
+Repository: CRAN
+Date/Publication: 2026-01-25 16:40:02 UTC

@@ -1,0 +1,28 @@
+Package: ggtintshade
+Type: Package
+Title: Tinting and Shading Aesthetics for 'ggplot2'
+Version: 0.1.2
+Authors@R: 
+    person("William", "Kumler", , "wkumler@uw.edu", role = c("aut", "cre"))
+Description: Adds a 'tintshade' aesthetic to 'ggplot2' that varies the
+    lightness of a mapped 'colour' or 'fill' within each hue group, keeping
+    the plotted layer and its legend in sync. Supports both nested designs
+    (each item belongs to one hue) and crossed designs (each lightness level
+    appears across hues).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1), ggplot2 (>= 4.0.0)
+Imports: cli, colorspace, grDevices, scales, stats
+Suggests: gtable, knitr, rmarkdown, patchwork, testthat (>= 3.0.0),
+        vdiffr
+Config/testthat/edition: 3
+URL: https://github.com/wkumler/ggtintshade
+BugReports: https://github.com/wkumler/ggtintshade/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-15 22:52:11 UTC; Will
+Author: William Kumler [aut, cre]
+Maintainer: William Kumler <wkumler@uw.edu>
+Repository: CRAN
+Date/Publication: 2026-07-23 13:20:02 UTC

@@ -1,0 +1,26 @@
+Package: gettz
+Type: Package
+Title: Get the Timezone Information
+Version: 0.0.6
+Date: 2026-08-25
+Authors@R: person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
+                  comment = c(ORCID = "0000-0001-6419-907X"))
+Description: A function to retrieve the system timezone on Unix systems
+ which has been found to find an answer when 'Sys.timezone()' has failed.
+ It is based on an answer by Duane McCully posted on 'StackOverflow', and
+ adapted to be callable from R. The package also builds on Windows, but
+ just returns NULL. The functionality it offers was not available in R when
+ the package was written, but has since been added which reduces the need for
+ this package.
+URL: https://github.com/eddelbuettel/gettz/,
+        https://dirk.eddelbuettel.com/code/gettz.html
+BugReports: https://github.com/eddelbuettel/gettz/issues
+License: GPL (>= 2)
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2026-08-25 12:27:03 UTC; edd
+Author: Dirk Eddelbuettel [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6419-907X>)
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Repository: CRAN
+Date/Publication: 2026-08-25 12:40:26 UTC

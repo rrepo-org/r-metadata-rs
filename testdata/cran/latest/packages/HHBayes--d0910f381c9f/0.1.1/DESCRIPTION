@@ -1,0 +1,41 @@
+Package: HHBayes
+Title: Bayesian Household Transmission Modeling with 'Stan'
+Version: 0.1.1
+Authors@R: c(
+  person(given = "Ke", family = "Li",
+         email = "ke.li.kl662@yale.edu",
+         role = c("aut","cre"),
+         comment = c(ORCID = "0000-0002-1252-670X")),
+  person(given = "Yiren", family = "Hou",
+         email = "yiren.hou@yale.edu",
+         role = "aut",
+         comment = c(ORCID = "0009-0005-0422-4268"))
+	)
+Description: Provides a streamlined pipeline to simulate household infection 
+    dynamics, estimate transmission parameters, and visualize epidemic timelines. 
+    Uses a Bayesian approach with 'Stan' that models transmission probability as a
+    function of viral load, seasonality and infectivity, multiple infection 
+    episodes (reinfections), and waning immunity modeling.
+    Li et al. (2026) <doi:10.64898/2026.04.01.26349903>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Biarch: true
+Depends: R (>= 3.4.0)
+Imports: methods, Rcpp (>= 0.12.0), rstan (>= 2.18.1), rstantools (>=
+        2.4.0), dplyr, ggplot2, tidyr, ggpubr, scales, deSolve, rlang
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Suggests: knitr, rmarkdown, RcppParallel (>= 5.0.1), cowplot
+VignetteBuilder: knitr
+URL: https://github.com/keli5734/HHBayes
+BugReports: https://github.com/keli5734/HHBayes/issues
+NeedsCompilation: yes
+Packaged: 2026-04-06 13:53:57 UTC; yh785
+Author: Ke Li [aut, cre] (ORCID: <https://orcid.org/0000-0002-1252-670X>),
+  Yiren Hou [aut] (ORCID: <https://orcid.org/0009-0005-0422-4268>)
+Maintainer: Ke Li <ke.li.kl662@yale.edu>
+Repository: CRAN
+Date/Publication: 2026-04-10 14:00:07 UTC

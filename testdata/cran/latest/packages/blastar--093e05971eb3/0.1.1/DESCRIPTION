@@ -1,0 +1,28 @@
+Package: blastar
+Title: BLAST and Sequence Analysis Tools
+Version: 0.1.1
+Authors@R: 
+    person("Loukas", "Theodosiou", 
+           email = "theodosiou@evolbio.mpg.de", 
+           role = c("aut", "cre"))
+Description: Description: Provides streamlined tools for retrieving sequences from NCBI,
+    performing sequence alignments (pairwise and multiple), and building
+    phylogenetic trees. Implements the Needleman-Wunsch algorithm for global
+    alignment (Needleman & Wunsch (1970) <doi:10.1016/0022-2836(70)90057-4>),
+    Smith-Waterman for local alignment (Smith & Waterman (1981) 
+    <doi:10.1016/0022-2836(81)90087-5>), and Neighbor-Joining for tree
+    construction (Saitou & Nei (1987) <doi:10.1093/oxfordjournals.molbev.a040454>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: rentrez, ape, Biostrings, dplyr, tibble
+Suggests: msa, pwalign, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/loukesio/blastar
+BugReports: https://github.com/loukesio/blastar/issues
+NeedsCompilation: no
+Packaged: 2026-01-09 20:09:51 UTC; theodosiou
+Author: Loukas Theodosiou [aut, cre]
+Maintainer: Loukas Theodosiou <theodosiou@evolbio.mpg.de>
+Repository: CRAN
+Date/Publication: 2026-01-14 18:00:22 UTC

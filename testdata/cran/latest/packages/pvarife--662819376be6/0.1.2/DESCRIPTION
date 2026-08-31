@@ -1,0 +1,37 @@
+Package: pvarife
+Type: Package
+Version: 0.1.2
+Title: Panel VAR Models with Interactive Fixed Effects
+Description: Implements the estimator of Tugan (2021) <doi:10.1093/ectj/utaa021>
+    for panel vector autoregression (VAR) models with interactive fixed effects.
+    Provides joint estimation of VAR coefficients, latent common factors, and
+    factor loadings via an iterative algorithm that alternates between principal
+    component estimation of the factors and least squares estimation of the VAR
+    coefficients, following the approach of Bai (2009) <doi:10.3982/ECTA6135>.
+    Supports
+    impulse response functions under recursive (Cholesky) identification,
+    parametric confidence bands from the joint asymptotic distribution of the
+    estimator (Theorem 2.3), and a classical residual bootstrap for robustness
+    checks.
+Authors@R: c(
+    person("Binzhi", "Chen",
+           email = "Binzhi.Chen9@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5094-7740")))
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: stats, mvtnorm, ggplot2, rlang
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/Rickchen0910/pvarife
+BugReports: https://github.com/Rickchen0910/pvarife/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-11 18:55:57 UTC; apple
+Author: Binzhi Chen [aut, cre] (ORCID: <https://orcid.org/0000-0002-5094-7740>)
+Maintainer: Binzhi Chen <Binzhi.Chen9@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-13 16:10:13 UTC

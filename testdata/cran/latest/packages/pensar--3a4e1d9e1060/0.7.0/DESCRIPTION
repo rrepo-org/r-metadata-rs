@@ -1,0 +1,38 @@
+Package: pensar
+Type: Package
+Title: LLM Wiki Engine
+Version: 0.7.0
+Date: 2026-08-04
+Authors@R: c(
+    person("Troy", "Hernandez", role = c("aut", "cre"),
+        email = "troy@cornball.ai",
+        comment = c(ORCID = "0009-0005-4248-604X")),
+    person("cornball.ai", role = "cph"))
+Description: Personal wiki engine with a large language model (LLM) as
+    research assistant. Supports guided sessions through a 'Claude Code'
+    <https://github.com/anthropics/claude-code> skill bundle and
+    autonomous research runs from R via autoresearch(). Results land in
+    a structured vault of markdown pages with 'YAML' frontmatter and
+    wikilinks, ready for hand-editing in your favourite editor
+    alongside the LLM. Vaults are seeded with 'CLAUDE.md' and
+    'AGENTS.md' so 'Claude Code', 'Codex'
+    <https://github.com/openai/codex>, and other agents share the same
+    operating instructions. Can adopt an existing 'Obsidian'
+    <https://obsidian.md/> vault in place via init_vault(adopt = TRUE).
+License: Apache License (>= 2)
+URL: https://github.com/cornball-ai/pensar
+BugReports: https://github.com/cornball-ai/pensar/issues
+SystemRequirements: pandoc (for vault_export()), git (for
+        vault_commit())
+Imports: curl, digest, stringdist, yaml
+Suggests: jsonlite, llm.api, saber, simplermarkdown, tinytest
+VignetteBuilder: simplermarkdown
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-08-04 22:45:47 UTC; troy
+Author: Troy Hernandez [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-4248-604X>),
+  cornball.ai [cph]
+Maintainer: Troy Hernandez <troy@cornball.ai>
+Repository: CRAN
+Date/Publication: 2026-08-04 23:50:02 UTC

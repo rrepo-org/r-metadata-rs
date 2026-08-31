@@ -1,0 +1,42 @@
+Package: LSTMfactors
+Type: Package
+Title: Determining the Number of Factors in Exploratory Factor Analysis
+        by LSTM
+Version: 1.0.0
+Date: 2025-06-25
+Author: Haijiang Qin [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0000-6721-5653>),
+  Lei Guo [aut, cph] (ORCID: <https://orcid.org/0000-0002-8273-3587>)
+Authors@R: c(person(given = "Haijiang", 
+                    family = "Qin", 
+                    role = c("aut", "cre", "cph"), 
+                    email = "haijiang133@outlook.com", 
+                    comment = c(ORCID = "0009-0000-6721-5653")),
+             person(given = "Lei", 
+                    family = "Guo", 
+                    role = c("aut", "cph"), 
+                    email = "happygl1229@swu.edu.cn", 
+                    comment = c(ORCID = "0000-0002-8273-3587")))
+Maintainer: Haijiang Qin <haijiang133@outlook.com>
+Description: A method for factor retention using a pre-trained Long Short Term Memory (LSTM) Network, 
+             which is originally developed by 
+             Hochreiter and Schmidhuber (1997) <doi:10.1162/neco.1997.9.8.1735>, is provided. 
+             The sample size of the dataset used to train the LSTM model is 1,000,000. 
+             Each sample is a batch of simulated response data with a specific latent factor structure. 
+             The eigenvalues of these response data will be used as sequential data to train the LSTM. 
+             The pre-trained LSTM is capable of factor retention for real response data with a 
+             true latent factor number ranging from 1 to 10, that is, determining the number of factors.
+License: GPL-3
+Depends: R (>= 4.3.0)
+Imports: reticulate, EFAfactors
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Collate: 'af.softmax.R' 'check_python_libraries.R' 'data.DAPCS.R'
+        'data.datasets.LSTM.R' 'data.scaler.LSTM.R' 'LSTM.R'
+        'extractor.feature.R' 'load.R' 'normalizor.R' 'plot.R'
+        'print.R' 'utils.R' 'zzz.R'
+Repository: CRAN
+URL: https://haijiangqin.com/LSTMfactors/
+Packaged: 2025-07-03 13:00:29 UTC; Haijiang
+Date/Publication: 2025-07-07 12:50:12 UTC

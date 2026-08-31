@@ -1,0 +1,42 @@
+Package: ParCC
+Title: Parameter Converter and Calculator for Health Technology
+        Assessment
+Version: 1.4.0
+Authors@R: c(
+    person("Abhijit", "Pakhare", email = "drpakhare@gmail.com",
+           role = c("aut", "cre")),
+    person("RRC-HTA Team, AIIMS Bhopal", role = "aut")
+    )
+Description: An interactive 'shiny' application for Health Technology
+    Assessment (HTA) parameter estimation. Converts between rates,
+    probabilities, odds, and hazard ratios (HR); extrapolates survival
+    curves (Exponential, Weibull, Log-Logistic); fits probabilistic
+    sensitivity analysis (PSA) distributions (Beta, Gamma, LogNormal,
+    Dirichlet) via the method of moments; calculates incremental
+    cost-effectiveness ratios (ICERs), net monetary benefit (NMB),
+    value-based pricing, and budget impact; adjusts costs for inflation,
+    discounting, and purchasing power parity (PPP) across 30 countries;
+    and adjusts background mortality using life-table methods. Designed
+    for researchers building cost-effectiveness and budget-impact models
+    who need auditable, formula-documented parameter transformations.
+    Methods include Zhang and Yu (1998)
+    <doi:10.1001/jama.280.19.1690> for odds ratio (OR) to relative
+    risk (RR) conversion and Chinn (2000, Statistics in Medicine, 19,
+    3127-3131) for effect-size transformations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: shiny, shinythemes, ggplot2, plotly, DT, rmarkdown, magrittr
+RoxygenNote: 7.3.3
+URL: https://drpakhare.github.io/ParCC/,
+        https://github.com/drpakhare/ParCC
+BugReports: https://github.com/drpakhare/ParCC/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Suggests: knitr, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-03-26 07:24:24 UTC; drpakhare
+Author: Abhijit Pakhare [aut, cre],
+  RRC-HTA Team, AIIMS Bhopal [aut]
+Maintainer: Abhijit Pakhare <drpakhare@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-30 18:30:07 UTC

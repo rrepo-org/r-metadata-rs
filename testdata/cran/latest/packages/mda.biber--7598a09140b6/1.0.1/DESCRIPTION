@@ -1,0 +1,39 @@
+Package: mda.biber
+Title: Functions for Multi-Dimensional Analysis
+Version: 1.0.1
+Date: 2025-09-22
+Authors@R: 
+    c(
+      person(given = "David",
+             family = "Brown",
+             role = c("aut", "cre"),
+             email = "dwb2@andrew.cmu.edu",
+             comment = c(ORCID = "0000-0001-7745-6354")),
+      person(given = "Alex",
+             family = "Reinhart",
+             role = "aut",
+             email = "areinhar@stat.cmu.edu",
+             comment = c(ORCID = "0000-0002-6658-514X")))
+Description: Multi-Dimensional Analysis (MDA) is an adaptation of factor
+  analysis developed by Douglas Biber (1992) <doi:10.1007/BF00136979>. Its most
+  common use is to describe language as it varies by genre, register, and use.
+  This package contains functions for carrying out the calculations needed to
+  describe and plot MDA results: dimension scores, dimension means, and factor
+  loadings.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: dplyr, ggplot2, ggpubr, ggrepel, nFactors, stats, tidyr,
+        viridis
+Depends: R (>= 2.10)
+Suggests: rmarkdown, knitr, corrplot, kableExtra, tidyverse, testthat
+        (>= 3.0.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-09-30 19:51:17 UTC; runner
+Author: David Brown [aut, cre] (ORCID: <https://orcid.org/0000-0001-7745-6354>),
+  Alex Reinhart [aut] (ORCID: <https://orcid.org/0000-0002-6658-514X>)
+Maintainer: David Brown <dwb2@andrew.cmu.edu>
+Repository: CRAN
+Date/Publication: 2025-10-07 18:00:02 UTC

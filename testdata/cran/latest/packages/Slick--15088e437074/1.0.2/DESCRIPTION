@@ -1,0 +1,64 @@
+Type: Package
+Package: Slick
+Title: Interactive Visualization of MSE Results
+Version: 1.0.2
+Authors@R: c(
+    person("Adrian", "Hordyk", , "adrian@bluematterscience.com", role = c("aut", "cre")),
+    person("Tom", "Carruthers", , "tom@bluematterscience.com", role = 'aut'),
+    person("Quang", "Huynh", , "quang@bluematterscience.com", role = 'aut'),
+    person("Shana", "Miller", , "smiller@oceanfdn.org", role = 'aut')
+  )
+Maintainer: Adrian Hordyk <adrian@bluematterscience.com>
+Description: A framework for visualizing and exploring results of a Management
+    Strategy Evaluation (MSE). The publication quality figures and tables
+    can be developed directly from the R console, or interactively explored
+    with the 'Slick' App. For more details, see the 'Slick' website 
+    <https://slick.bluematterscience.com>. 
+URL: https://slick.bluematterscience.com/,
+        https://github.com/Blue-Matter/Slick
+License: GPL-2
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, DT, ggplot2, ggrepel, golem, graphics, grDevices,
+        methods, scales, shiny, stats, tibble, utils
+Suggests: bookdown, colourpicker, colorspace, cowplot, esquisse,
+        flextable, fresh, httr, kableExtra, knitr, MSEtool, openMSE,
+        RColorBrewer, shiny.i18n, shinyalert, shinyBS, shinycssloaders,
+        shinydashboard, shinydashboardPlus, shinyhelper, shinyjs,
+        shinyWidgets, rmarkdown, testthat (>= 3.0.0), waiter
+Config/testthat/edition: 3
+Encoding: UTF-8
+Collate: 'RunSlick.R' 'Slick_tools.R' 'a_classunions.R' 'a_imports.R'
+        'aa_generics.R' 'app_config.R' 'app_server.R' 'app_ui.R'
+        'class_Boxplot.R' 'class_Check.R' 'class_Kobe.R' 'class_MPs.R'
+        'class_OMs.R' 'class_Quilt.R' 'class_Tradeoff.R'
+        'class_Timeseries.R' 'class_Spider.R' 'class_Slick.R'
+        'fct_FilterSlick.R' 'fct_Update.R'
+        'fct_check_required_packages.R' 'fct_check_slick.R'
+        'fct_colors.R' 'fct_dashboardHeader2.R'
+        'fct_fix_translations.R' 'fct_load_casestudies.R' 'fct_misc.R'
+        'fct_plotBoxplot.R' 'fct_plotKobe.R' 'fct_plotQuilt.R'
+        'fct_plotSpider.R' 'fct_plotTimeseries.R' 'fct_plotTradeoff.R'
+        'fct_translator.R' 'make_Slick_old.R' 'man_functions.R'
+        'misc.R' 'mod_About.R' 'mod_Boxplot.R' 'mod_Boxplot_OM.R'
+        'mod_Boxplot_overall.R' 'mod_Global_Filters.R' 'mod_Home.R'
+        'mod_Kobe.R' 'mod_Kobe_overall.R' 'mod_Kobe_time.R'
+        'mod_MP_Color.R' 'mod_MP_Info.R' 'mod_Metadata.R'
+        'mod_OM_Info.R' 'mod_PM_Info.R' 'mod_Page_Filter.R'
+        'mod_Quilt.R' 'mod_Report_Add.R' 'mod_Report_Add_Button.R'
+        'mod_Report_Page.R' 'mod_Report_Page_plot.R' 'mod_Resources.R'
+        'mod_Sidebar.R' 'mod_Spider.R' 'mod_Spider_MP.R'
+        'mod_Spider_OM.R' 'mod_Spider_overall.R' 'mod_Timeseries.R'
+        'mod_Timeseries_byMP.R' 'mod_Timeseries_byOM.R'
+        'mod_Timeseries_overall.R' 'mod_Tradeoff.R'
+        'mod_filter_selection.R' 'mod_filter_selection_OM.R'
+        'mod_subtitle.R' 'mod_toplink.R' 'utils_Table.R' 'utils_util.R'
+BugReports: https://github.com/Blue-Matter/Slick/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-30 19:35:48 UTC; Admin
+Author: Adrian Hordyk [aut, cre],
+  Tom Carruthers [aut],
+  Quang Huynh [aut],
+  Shana Miller [aut]
+Repository: CRAN
+Date/Publication: 2026-06-30 23:20:02 UTC

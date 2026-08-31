@@ -1,0 +1,28 @@
+Package: tmap.sources
+Title: Data Sources for 'tmap'
+Version: 0.1-1
+Authors@R: c(
+	person("Martijn", "Tennekes", email = "mtennekes@gmail.com", role = c("aut", "cre"))
+	)
+Description: 
+    Provides support for a variety of spatial data sources in 'tmap', 
+    including remote, tiled, and streaming formats. Enables the use 
+    of external vector and raster data without requiring full data 
+    import, facilitating efficient visualization workflows.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: tmap (>= 4.3), sf, httr2, jsonlite, freestiler, data.table,
+        servr, cli
+Suggests: tmap.mapgl (>= 0.2-1)
+Config/Needs/website: bookdown, rmarkdown, r-tmap/tmap, walkerke/mapgl,
+        r-tmap/tmap.mapgl
+URL: https://github.com/r-tmap/tmap.sources
+BugReports: https://github.com/r-tmap/tmap.sources/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-24 12:55:39 UTC; mtes
+Author: Martijn Tennekes [aut, cre]
+Maintainer: Martijn Tennekes <mtennekes@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 13:20:02 UTC

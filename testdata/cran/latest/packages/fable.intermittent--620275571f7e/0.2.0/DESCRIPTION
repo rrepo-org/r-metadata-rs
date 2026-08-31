@@ -1,0 +1,56 @@
+Package: fable.intermittent
+Title: Forecasting Models for Intermittent Time Series
+Version: 0.2.0
+Authors@R: 
+    c(person(given  ="Stefano", 
+             family ="Damato",
+             role   = c("aut", "cre", "cph"),
+             email  = "stefanodamato128@gmail.com",
+             comment = c(ORCID = "0009-0001-0225-3736")),
+      person(given = "Lorenzo",
+             family = "Zambon",
+             role = c("aut"),
+             email = "lorenzo.zambon@idsia.ch",
+             comment = c(ORCID = "0000-0002-8939-993X")),
+      person(given = "Dario",
+             family = "Azzimonti",
+             role = c("aut"),
+             email = "dario.azzimonti@gmail.com",
+             comment = c(ORCID = "0000-0001-5080-3061")))
+Description: Extends the 'fable' framework to support forecasting methods 
+    specifically designed for intermittent time series data, where demand 
+    occurs sporadically with many zero values. All methods produce probabilistic
+    forecasts returned as 'distributional' objects. The returned forecasts can be
+    used to evaluate accuracy, plot and print the results seamlessly with 'fable'.
+    The methods include:
+    Harvey, Fernandes (1989) <doi:10.1080/07350015.1989.10509750>,
+    Willemain, Smart, Schwarz (2004) <doi:10.1016/S0169-2070(03)00013-X>,
+    Zhou, Viswanathan (2011) <doi:10.1016/j.ijpe.2010.09.021>,
+    Snyder, Ord, Beaumont (2012) <doi:10.1016/j.ijforecast.2011.03.009>,
+    Kolassa (2016) <doi:10.1016/j.ijforecast.2015.12.004>,
+    Hasni, Aguir, Babai, Jemai (2019) <doi:10.1080/00207543.2018.1424375>,
+    Damato, Azzimonti, Corani (2025) <doi:10.1016/j.ijforecast.2025.10.001>,
+    Sbrana (2025) <doi:10.1080/01605682.2025.2569661>.
+License: LGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 4.1.0), fabletools (>= 0.6.0)
+Imports: tsibble (>= 1.0.0), distributional (>= 0.7.1), nloptr (>=
+        2.0.0), rlang (>= 1.0.0), Rcpp (>= 1.0.0), generics (>= 0.1.0),
+        tibble (>= 3.0.0), tweedieDistr (>= 0.1.0)
+Suggests: dplyr, testthat (>= 3.3.0), ggtime, ggplot2, knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/StefanoDamato/fable.intermittent
+BugReports: https://github.com/StefanoDamato/fable.intermittent/issues
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-07-27 16:59:31 UTC; stefano.damato
+Author: Stefano Damato [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0001-0225-3736>),
+  Lorenzo Zambon [aut] (ORCID: <https://orcid.org/0000-0002-8939-993X>),
+  Dario Azzimonti [aut] (ORCID: <https://orcid.org/0000-0001-5080-3061>)
+Maintainer: Stefano Damato <stefanodamato128@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-27 17:50:02 UTC

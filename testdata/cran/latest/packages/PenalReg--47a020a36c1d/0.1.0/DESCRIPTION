@@ -1,0 +1,33 @@
+Package: PenalReg
+Type: Package
+Title: Automated Penalized Regression Analysis Using Ridge, Lasso and
+        Elastic Net
+Version: 0.1.0
+Authors@R: c(person(given = "S. Vishnu", family = "Shankar", email = "S.vishnushankar55@gmail.com", role = c("aut", "cre")), person(given = "V.", family = "Lavanya", role = "aut"), person(given = "Santosha", family = "Rathod", role = "aut"), person(given = "Mrinmoy", family = "Ray", role = "aut"), person(given = "Anil", family = "Kumar", role = "aut"))
+Description: Provides an automated framework for penalized regression
+    analysis using Ridge Regression, Lasso Regression and Elastic Net
+    Regression. The package performs data standardization, training-testing
+    data partitioning, cross-validation for hyperparameter tuning, model
+    fitting, coefficient estimation, variable importance assessment,
+    prediction, and performance evaluation. It simplifies regularized
+    regression analysis by integrating the complete modeling workflow into
+    a single function suitable for researchers for better understanding
+    of the data.The methods are based on Hoerl
+    and Kennard (1970) <doi:10.1080/00401706.1970.10488634>, Zou and Hastie (2005) <doi:10.1111/j.1467-9868.2005.00503.x>,
+    and Friedman et al. (2010) <doi:10.18637/jss.v033.i01>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: caret, stats, utils
+Suggests: glmnet
+NeedsCompilation: no
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-08-17 14:58:54 UTC; JARVIS
+Author: S. Vishnu Shankar [aut, cre],
+  V. Lavanya [aut],
+  Santosha Rathod [aut],
+  Mrinmoy Ray [aut],
+  Anil Kumar [aut]
+Maintainer: S. Vishnu Shankar <S.vishnushankar55@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 14:40:07 UTC

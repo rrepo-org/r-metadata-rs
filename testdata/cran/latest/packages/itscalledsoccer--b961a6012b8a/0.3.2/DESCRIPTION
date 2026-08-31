@@ -1,0 +1,31 @@
+Package: itscalledsoccer
+Title: American Soccer Analysis API Client
+Version: 0.3.2
+Authors@R: c(
+    person("Tyler", "Richardett", , "tyler.richardett@gmail.com", role = c("aut", "cre")),
+    person("Akshay", "Easwaran", , "akeaswaran@me.com", role = c("aut")),
+    person("American Soccer Analysis", , , "americansocceranalysis@gmail.com", role = "cph")
+  )
+Description: Provides a wrapper around the same API <https://app.americansocceranalysis.com/api/v1/__docs__/>
+    that powers the American Soccer Analysis app.
+License: MIT + file LICENSE
+URL: https://github.com/American-Soccer-Analysis/itscalledsoccer-r,
+        https://american-soccer-analysis.github.io/itscalledsoccer-r/
+BugReports: https://github.com/American-Soccer-Analysis/itscalledsoccer-r/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.2.0)
+Imports: dplyr (>= 1.1.0), httpcache (>= 1.2.0), glue (>= 1.4.1), httr
+        (>= 1.4.2), jsonlite (>= 1.7.0), magrittr (>= 2.0.0), R6 (>=
+        2.5.0), tidyr (>= 1.1.1), stringi (>= 1.5.3), rlang (>=
+        0.4.10), data.table (>= 1.13.0), cli, methods
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-04-18 18:58:14 UTC; akeaswaran
+Author: Tyler Richardett [aut, cre],
+  Akshay Easwaran [aut],
+  American Soccer Analysis [cph]
+Maintainer: Tyler Richardett <tyler.richardett@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-04-18 21:50:02 UTC

@@ -1,0 +1,26 @@
+Package: FoRDM
+Type: Package
+Title: Forest Many-Objective Robust Decision Making ('FoRDM')
+Version: 1.0.3
+Authors@R: c(person(given = "Marc", family = "Djahangard", email = "marc.djahangard@ife.uni-freiburg.de", role = c("aut", "cre")), person(given = "Rasoul", family = "Yousefpour", role = c("aut")))
+Maintainer: Marc Djahangard <marc.djahangard@ife.uni-freiburg.de>
+Description: Forest Many-Objective Robust Decision Making ('FoRDM') is a R toolkit for supporting robust forest management under deep uncertainty.
+    It provides a forestry-focused application of Many-Objective Robust Decision Making ('MORDM') to forest simulation outputs, 
+    enabling users to evaluate robustness using regret- and 'satisficing'-based measures. 'FoRDM' identifies robust solutions, 
+    generates Pareto fronts, and offers interactive 2D, 3D, and parallel-coordinate visualizations.
+License: MIT + file LICENSE
+URL: https://github.com/mdjahan/FoRDM,
+        https://doi.org/10.1016/j.ecoinf.2026.103903
+Encoding: UTF-8
+Imports: dplyr (>= 1.0.0), ggplot2 (>= 3.3.0), magrittr (>= 2.0.0),
+        tidyr (>= 1.1.0), rlang (>= 0.4.0), tibble (>= 3.0.0), plotly
+        (>= 4.10.0), emoa (>= 0.5.0), wesanderson(>= 0.3.7), stats
+Suggests: testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-01 07:18:08 UTC; Marc Djahangard
+Author: Marc Djahangard [aut, cre],
+  Rasoul Yousefpour [aut]
+Repository: CRAN
+Date/Publication: 2026-07-02 04:10:02 UTC

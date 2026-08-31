@@ -1,0 +1,34 @@
+Package: circlecorR
+Title: Circular Correlation Wheel Plots
+Version: 0.1.0
+Authors@R: c(
+    person("Chris", "Varghese", email = "chris.varghese@auckland.ac.nz",
+           role = c("aut", "cre")),
+    person("Armen A.", "Gharibans", role = "aut"))
+Description: Draws circular "correlation wheel" plots in R, straight from a data frame of one
+    row per observation. Variables are arranged around a circle, grouped and
+    colour-tiled by category, and connected by curved links whose colour maps
+    to the correlation coefficient, computed via a thin wrapper around
+    corr.test() from the 'psych' package. Non-significant, weak, and
+    within-category correlations can be masked. Categories, colours, and
+    labels are all user-configurable.
+License: MIT + file LICENSE
+Language: en-GB
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: circlize (>= 0.4.0), graphics, psych, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+LazyData: true
+VignetteBuilder: knitr
+URL: https://kriz98.github.io/circlecorR/,
+        https://github.com/kriz98/circlecorR
+BugReports: https://github.com/kriz98/circlecorR/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-19 00:48:19 UTC; cvar706
+Author: Chris Varghese [aut, cre],
+  Armen A. Gharibans [aut]
+Maintainer: Chris Varghese <chris.varghese@auckland.ac.nz>
+Repository: CRAN
+Date/Publication: 2026-07-28 16:20:09 UTC

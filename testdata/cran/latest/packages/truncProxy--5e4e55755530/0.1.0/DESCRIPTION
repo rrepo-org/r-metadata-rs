@@ -1,0 +1,34 @@
+Package: truncProxy
+Type: Package
+Title: Proximal Weighting Estimation for Dependent Left Truncation
+Version: 0.1.0
+Authors@R: c(
+    person("Yuyao", "Wang", email = "yuw079@ucsd.edu", role = c("aut", "cre")),
+    person("Andrew", "Ying", role = "aut"),
+    person("Ronghui", "Xu", role = "aut")
+    )
+Description: Implements proximal weighting estimators for the expectation
+    of an arbitrarily transformed event time under dependent left truncation,
+    with optional inverse probability of censoring weighting to handle right
+    censoring. The methods leverage proxy variables to handle dependent left
+    truncation in settings where dependence-inducing factors are not fully
+    observed.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: Rcpp, survival
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/wangyuyao98/truncProxy_weighting,
+        https://arxiv.org/pdf/2512.21283
+BugReports: https://github.com/wangyuyao98/truncProxy_weighting/issues
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-04-19 18:10:14 UTC; yuyaowang
+Author: Yuyao Wang [aut, cre],
+  Andrew Ying [aut],
+  Ronghui Xu [aut]
+Maintainer: Yuyao Wang <yuw079@ucsd.edu>
+Repository: CRAN
+Date/Publication: 2026-04-21 20:40:09 UTC

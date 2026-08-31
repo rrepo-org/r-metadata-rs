@@ -1,0 +1,17 @@
+Package: dunn.test
+Version: 1.4.1
+Date: 2026-6-4
+Title: Dunn's Test of Multiple Comparisons Using Rank Sums
+Authors@R: c(person(given = "Alexis", family ="Dinno", role = c("aut", "cre", "cph"), email = "alexis.dinno@pdx.edu", comment = c(ORCID = "0000-0003-2560-310X")))
+Imports: rlang, scrutiny
+Description: Computes Dunn's test (1964) for stochastic superiority and reports the results among multiple pairwise comparisons after a Kruskal-Wallis test for stochastic superiority among k groups (Kruskal and Wallis, 1952). 'dunn.test' makes k(k-1)/2 multiple pairwise comparisons based on Dunn's z-test-statistic approximations to the actual rank statistics. The null hypothesis for each pairwise comparison is that the probability of observing a randomly selected value from the first group that is larger than a randomly selected value from the second group equals one half; this null hypothesis corresponds to that of the Wilcoxon-Mann-Whitney rank-sum test. 'dunn.test' accounts for tied ranks.
+License: GPL-2
+LazyData: true
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-06-05 15:36:29 UTC; alexis
+Author: Alexis Dinno [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2560-310X>)
+Maintainer: Alexis Dinno <alexis.dinno@pdx.edu>
+Repository: CRAN
+Date/Publication: 2026-06-05 16:50:10 UTC

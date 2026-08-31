@@ -1,0 +1,43 @@
+Package: rchime
+Type: Package
+Title: Detect and Remove Chimeras from Amplicon Sequence Analysis Data
+Version: 0.1.2
+Date: 2026-08-19
+Authors@R: c(
+  person("Sarah", "Westcott", , "swestcot@umich.edu", role = c("aut"),
+  comment = c(ORCID = "0009-0001-1529-8247")),
+  person("Pat", "Schloss", , "pschloss@umich.edu", role = c("cph", "cre"),
+  comment = c(ORCID = "0000-0002-6935-4275")),
+  person("Torbjorn", "Rognes", , "torognes@ifi.uio.no", role = c("cph")),
+  person("Frederic", "Mahe", , "mahe@rhrk.uni-kl.de", role = c("cph")),
+  person("Tomas", "Flouri", , "tomas.flouri@h-its.org", role = c("cph")),
+  person("Christopher", "Quince", , "c.quince@warwick.ac.uk", role = c("cph")),
+  person("Ben", "Nichols", , "b.nichols.1@research.gla.ac.uk", role = c("cph")))
+Maintainer: Pat Schloss <pschloss@umich.edu>
+Description: Detect and remove chimeras from your amplicon sequence analysis 
+    using reference-based or de novo approaches. The 'rchime' package 
+    implements the 'VSEARCH' algorithms described in Rognes et al. (2016) 
+    <doi:10.7717/peerj.2584>. 'VSEARCH' builds on the work of Edgar,R.C. et al.
+    (2011) <doi:10.1093/bioinformatics/btr381>.
+URL: https://github.com/mothur/rchime, https://mothur.org/rchime/
+BugReports: https://github.com/mothur/rchime/issues
+License: GPL (>= 3)
+Config/testthat/edition: 3
+Imports: cli, parallelly, RcppThread, utils
+Depends: Rcpp, R (>= 4.5.0), strollur(>= 0.1.3)
+Suggests: knitr, rmarkdown, xml2, pak, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppThread, RcppXsimd, cli
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-21 12:53:39 UTC; swestcot
+Author: Sarah Westcott [aut] (ORCID: <https://orcid.org/0009-0001-1529-8247>),
+  Pat Schloss [cph, cre] (ORCID: <https://orcid.org/0000-0002-6935-4275>),
+  Torbjorn Rognes [cph],
+  Frederic Mahe [cph],
+  Tomas Flouri [cph],
+  Christopher Quince [cph],
+  Ben Nichols [cph]
+Repository: CRAN
+Date/Publication: 2026-08-21 14:50:02 UTC

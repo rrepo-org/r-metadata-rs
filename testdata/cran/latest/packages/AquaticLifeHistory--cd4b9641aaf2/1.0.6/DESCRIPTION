@@ -1,0 +1,36 @@
+Package: AquaticLifeHistory
+Type: Package
+Title: Life History Analysis Tools
+Version: 1.0.6
+Date: 2026-01-09
+Authors@R: person("Jonathan", "Smart", 
+    email = "jonsmartphd@gmail.com", 
+    role = c("aut", "cre", "ctb"),
+    comment = c(ORCID = "0000-0003-2070-3208"))
+Maintainer: Jonathan Smart <jonsmartphd@gmail.com>
+Description: Estimate aquatic species life history using robust techniques.
+    This package supports users undertaking two types of analysis: 1) Growth from
+    length-at-age data, and 2) maturity analyses for length and/or age data.
+    Maturity analyses are performed using generalised linear model approaches incorporating
+    either a binomial or quasibinomial distribution.
+    Growth modelling is performed using the multimodel approach presented by
+    Smart et al. (2016) "Multimodel approaches in shark and ray growth studies:
+    strengths, weaknesses and the future" <doi:10.1111/faf.12154>.
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.3)
+Imports: plyr, MASS, readr, broom, MuMIn, magrittr, rlist, minpack.lm,
+        dplyr, tidyr, ggplot2
+RoxygenNote: 7.2.3
+License: GPL-3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/jonathansmart/AquaticLifeHistory,
+        https://jonathansmart.github.io/AquaticLifeHistory/
+BugReports: https://github.com/jonathansmart/AquaticLifeHistory/issues
+NeedsCompilation: no
+Packaged: 2026-01-09 06:37:03 UTC; jonathansmart
+Author: Jonathan Smart [aut, cre, ctb] (ORCID:
+    <https://orcid.org/0000-0003-2070-3208>)
+Repository: CRAN
+Date/Publication: 2026-01-10 07:53:19 UTC

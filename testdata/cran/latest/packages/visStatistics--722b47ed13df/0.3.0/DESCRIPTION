@@ -1,0 +1,77 @@
+Type: Package
+Package: visStatistics
+Title: Automated Selection and Visualisation of Statistical Hypothesis
+        Tests
+Version: 0.3.0
+Authors@R: c(
+    person("Sabine", "Schilling", , "sabineschilling@gmx.ch", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0002-8318-9421", year = "2026")),
+    person("Peter", "Kauf", , "peter.kauf@zhaw.ch", role = "ctb")
+  )
+Author: Sabine Schilling [cre, aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-8318-9421>, year: 2026),
+  Peter Kauf [ctb]
+Maintainer: Sabine Schilling <sabineschilling@gmx.ch>
+Description: Automated test selection, visualised. 'visStatistics'
+    automatically selects and visualises statistical hypothesis tests
+    comparing two vectors, based on their class and distribution. Visual 
+    outputs, including box plots, bar charts, regression
+    lines with confidence bands, mosaic plots, residual plots, and Q-Q
+    plots, are annotated with relevant test statistics, assumption checks,
+    and post-hoc analyses where applicable.  The algorithmic workflow
+    shifts attention from ad-hoc test selection to visual diagnostic
+    assessment and statistical interpretation. It is particularly suited
+    for server-side R applications, where end users interact solely
+    through a web interface to select data groups and receive a complete
+    visual statistical analysis automatically. The same automation makes
+    it useful in time-constrained contexts such as statistical consulting,
+    where it reduces effort spent on test selection and leaves more room
+    for interpretation.  The implemented tests cover the most frequently
+    applied inferential methods in biomedical research (Hayat et al.
+    (2017) <doi:10.1371/journal.pone.0179032>).  The test selection
+    algorithm proceeds as follows: Input vectors of class numeric or
+    integer are considered numerical; those of class factor are considered
+    categorical; those of class ordered are considered ordinal.
+    Assumptions of residual normality and homogeneity of variances are
+    considered met if the corresponding test yields a p-value greater than
+    the significance level alpha = 1 - conf.level.  (1) When the response
+    is numerical and the predictor is categorical, a test comparing
+    central tendencies is selected. In the default setting (group_test =
+    NULL), residual normality is assessed at every group size using
+    shapiro.test() applied to the standardised residuals of lm(). If
+    normality is not met, wilcox.test() is used when the predictor has two
+    levels and kruskal.test() followed by pairwise.wilcox.test()
+    otherwise. If normality is met, levene.test() assesses variance
+    homogeneity. For two-level predictors, Student's t.test(var.equal =
+    TRUE) is applied if variances are homogeneous and Welch's t.test()
+    otherwise. For predictors with more than two levels, aov() followed by
+    TukeyHSD() is applied if variances are homogeneous, and oneway.test()
+    followed by games.howell() otherwise. Setting group_test to "welch" or
+    "rank" bypasses these assumption tests and fixes the analysis to
+    Welch-type or to rank-based tests, respectively.
+    (2) When both vectors are numerical, lm() is fitted by
+    default (correlation = FALSE). If correlation = TRUE, Spearman rank
+    correlation is performed.  (3) When the response is ordinal, it is
+    converted to numeric ranks and the non-parametric path from (1) is
+    followed (Wilcoxon or Kruskal-Wallis). When both variables are
+    ordinal and correlation = TRUE, Kendall's tau_b is used instead.  (4)
+    When both vectors are categorical, Cochran's rule (Cochran (1954)
+    <doi:10.2307/3001666>) is applied to test independence either by
+    chisq.test() or fisher.test().
+License: MIT + file LICENSE
+URL: https://github.com/shhschilling/visStatistics,
+        https://shhschilling.github.io/visStatistics/
+BugReports: https://github.com/shhschilling/visStatistics/issues
+Imports: Cairo, graphics, grDevices, grid, multcompView, nortest,
+        stats, tools, utils, vcd
+Suggests: bookdown, knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+BuildVignettes: true
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2026-07-27 21:27:17 UTC; sschilli
+Repository: CRAN
+Date/Publication: 2026-07-27 21:50:02 UTC

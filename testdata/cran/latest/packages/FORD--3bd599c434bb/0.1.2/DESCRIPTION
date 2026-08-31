@@ -1,0 +1,34 @@
+Package: FORD
+Type: Package
+Title: Feature Ordering by Integrated R Square Dependence
+Version: 0.1.2
+Authors@R: c(
+    person(
+      "Pouya", "Roudaki",
+      email = "roudaki.pouya@gmail.com",
+      role = c("aut", "cre")
+    ),
+    person(
+      "Mona", "Azadkia",
+      email = "monaazadkia@gmail.com",
+      role = c("aut", "ctb")
+    )
+  )
+Description: Feature Ordering by Integrated R square Dependence (FORD) is a variable selection algorithm based on the new measure of dependence: Integrated R2 Dependence Coefficient (IRDC). For more information, see the paper: Azadkia and Roudaki (2025),"A New Measure Of Dependence: Integrated R2" <doi:10.48550/arXiv.2505.18146>.
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/PouyaRoudaki/FORD
+BugReports: https://github.com/PouyaRoudaki/FORD/issues
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, markdown, xfun, testthat, minerva,
+        devtools, FOCI, XICOR, KPC, dplyr, ggplot2
+VignetteBuilder: knitr
+Depends: R (>= 3.6.0), data.table
+Imports: RANN, parallel
+NeedsCompilation: no
+Packaged: 2025-05-28 16:38:48 UTC; rouda
+Author: Pouya Roudaki [aut, cre],
+  Mona Azadkia [aut, ctb]
+Maintainer: Pouya Roudaki <roudaki.pouya@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-30 09:40:12 UTC

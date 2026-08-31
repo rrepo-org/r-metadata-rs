@@ -1,0 +1,28 @@
+Package: UNPaC
+Title: Non-Parametric Cluster Significance Testing with Reference to a
+        Unimodal Null Distribution
+Version: 1.2.0
+Authors@R: 
+    c(person(given = c("Erika", "S."),
+                        family = "Helgeson",
+                        role = c("aut", "cre"),
+                        email = "helge@umn.edu"),
+                 person(given = "David",
+                        family = "Vock",
+                        role = "aut"),
+                 person(given = "Eric",
+                        family = "Bair",
+                        role = "aut"))
+Description: Assess the significance of identified clusters and estimates the true number of clusters by comparing the explained variation due to the clustering from the original data to that produced by clustering a unimodal reference distribution which preserves the covariance structure in the data. The reference distribution is generated using kernel density estimation and a Gaussian copula framework. A dimension reduction strategy and sparse covariance estimation optimize this method for the high-dimensional, low-sample size setting. This method is described in Helgeson, Vock, and Bair (2021) <doi:10.1111/biom.13376>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: glasso, PDSCE
+NeedsCompilation: no
+Packaged: 2026-01-30 00:05:29 UTC; Erika
+Author: Erika S. Helgeson [aut, cre],
+  David Vock [aut],
+  Eric Bair [aut]
+Maintainer: Erika S. Helgeson <helge@umn.edu>
+Repository: CRAN
+Date/Publication: 2026-01-30 00:30:02 UTC

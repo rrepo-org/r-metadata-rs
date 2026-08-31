@@ -1,0 +1,26 @@
+Package: DDRTree
+Type: Package
+Title: Learning Principal Graphs with DDRTree
+Version: 0.1.6
+Date: 2026-02-24
+Depends: irlba
+Imports: Rcpp
+LinkingTo: Rcpp, RcppEigen, BH
+Description: Provides an implementation of the framework of reversed graph embedding (RGE) which projects data into a reduced dimensional space while constructs a principal tree which passes through the middle of the data simultaneously. DDRTree shows superiority to alternatives (Wishbone, DPT) for inferring the ordering as well as the intrinsic structure of the single cell genomics data. In general, it could be used to reconstruct the temporal progression as well as bifurcation structure of any datatype. 
+License: Artistic License 2.0
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Authors@R: c(person("Xiaojie", "Qiu", role = "aut"),
+             person("Cole", "Trapnell", role = "aut"),
+             person("Qi", "Mao", role = "aut"),
+             person("Li", "Wang", role = "aut"),
+             person("Brent", "Ewing", email = "bge@uw.edu", role = "cre"))
+Packaged: 2026-02-24 18:48:44 UTC; bge
+Author: Xiaojie Qiu [aut],
+  Cole Trapnell [aut],
+  Qi Mao [aut],
+  Li Wang [aut],
+  Brent Ewing [cre]
+Maintainer: Brent Ewing <bge@uw.edu>
+Repository: CRAN
+Date/Publication: 2026-03-03 08:50:29 UTC

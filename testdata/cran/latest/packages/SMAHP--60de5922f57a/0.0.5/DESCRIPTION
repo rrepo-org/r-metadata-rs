@@ -1,0 +1,31 @@
+Package: SMAHP
+Type: Package
+Title: Survival Mediation Analysis of High-Dimensional Proteogenomic
+        Data
+Version: 0.0.5
+Authors@R: c(
+    person("Seungjun", "Ahn", email = "seungjun.ahn@mountsinai.org",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-4816-8924")),
+    person("Weijia", "Fu", email = "weijia.fu@mountsinai.org", 
+           role = c("cre", "aut"),
+           comment = c(ORCID = "0009-0002-5955-3534")),
+    person("Zhigang", "Li", email = "zhigang.li@ufl.edu", 
+           role = c("ctb")))
+Description: SMAHP (pronounced as SOO-MAP) is a novel multi-omics framework for causal mediation analysis of high-dimensional proteogenomic data with survival outcomes. The full methodological details can be found in our recent preprint by Ahn S et al. (2025) <doi:10.48550/arXiv.2503.08606>.
+License: GPL-3
+Encoding: UTF-8
+Imports: data.table, fdrtool, ncvreg, penAFT, survival, stats, glmnet
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Language: en-US
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2025-03-21 18:47:12 UTC; fuw01
+Author: Seungjun Ahn [aut] (<https://orcid.org/0000-0002-4816-8924>),
+  Weijia Fu [cre, aut] (<https://orcid.org/0009-0002-5955-3534>),
+  Zhigang Li [ctb]
+Maintainer: Weijia Fu <weijia.fu@mountsinai.org>
+Repository: CRAN
+Date/Publication: 2025-03-24 12:00:12 UTC

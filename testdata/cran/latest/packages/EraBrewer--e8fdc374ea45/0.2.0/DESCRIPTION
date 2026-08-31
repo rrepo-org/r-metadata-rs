@@ -1,0 +1,33 @@
+Package: EraBrewer
+Type: Package
+Title: Color Palettes from the Album Covers of Each Taylor Swift Era
+Version: 0.2.0
+URL: https://s-m.ac/EraBrewer/, https://github.com/mathias-sm/EraBrewer
+BugReports: https://github.com/mathias-sm/EraBrewer/issues
+Authors@R: c(
+    person("Mathias", "Sablé-Meyer", email = "mat-git@s-m.ac",
+    role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0003-0844-0775")),
+    person("Sandra", "Reinert", email = "sreinert694@gmail.com",
+    role = "aut", comment = c(ORCID = "0000-0003-4302-7433")))
+Description: Provides discrete and continuous color palettes derived from
+    the album cover artwork of each Taylor Swift Era. Each palette
+    ships with a curated order-of-use so that smaller discrete subsets
+    remain harmonious, and supports continuous interpolation via
+    'grDevices::colorRampPalette()' for arbitrary 'n'. Designed to plug
+    into 'ggplot2' workflows through standard manual and gradient
+    scales.
+License: CC0
+Encoding: UTF-8
+Language: en-US
+Imports: ggplot2, grDevices
+Config/roxygen2/version: 8.0.0
+Suggests: knitr, rmarkdown, ragg
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-23 19:38:37 UTC; msm
+Author: Mathias Sablé-Meyer [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-0844-0775>),
+  Sandra Reinert [aut] (ORCID: <https://orcid.org/0000-0003-4302-7433>)
+Maintainer: Mathias Sablé-Meyer <mat-git@s-m.ac>
+Repository: CRAN
+Date/Publication: 2026-05-29 11:30:20 UTC

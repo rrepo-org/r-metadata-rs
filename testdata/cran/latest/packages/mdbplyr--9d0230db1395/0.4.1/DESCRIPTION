@@ -1,0 +1,21 @@
+Package: mdbplyr
+Title: A Native Lazy Analytical Backend for MongoDB
+Version: 0.4.1
+Authors@R: person(given = "Paolo", family = "Bosetti", role = c("aut", "cre"), email = "paolo.bosetti@unitn.it")
+Description: Provides a disciplined, lazy subset of 'dplyr' semantics for
+    MongoDB aggregation pipelines. Queries remain lazy until collect() and
+    compile into MongoDB-native aggregation stages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.2.0)
+Imports: cli, dplyr, jsonlite, rlang, tibble, tidyselect
+Suggests: knitr, mongolite, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-10 08:32:55 UTC; p4010
+Author: Paolo Bosetti [aut, cre]
+Maintainer: Paolo Bosetti <paolo.bosetti@unitn.it>
+Repository: CRAN
+Date/Publication: 2026-07-10 08:50:02 UTC

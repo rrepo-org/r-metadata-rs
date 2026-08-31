@@ -1,0 +1,40 @@
+Package: boundedur
+Type: Package
+Title: Unit Root Tests for Bounded Time Series
+Version: 1.0.1
+Authors@R: c(
+    person("Muhammad", "Alkhalaf", 
+           email = "muhammedalkhalaf@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-2677-9246")),
+    person("Giuseppe", "Cavaliere", role = "ctb",
+           comment = "Original methodology"),
+    person("Fang", "Xu", role = "ctb",
+           comment = "Original methodology"))
+Description: Implements unit root tests for bounded time series following
+    Cavaliere and Xu (2014) <doi:10.1016/j.jeconom.2013.08.012>. Standard 
+    unit root tests (ADF, Phillips-Perron) have non-standard limiting 
+    distributions when the time series is bounded. This package provides 
+    modified ADF and M-type tests (MZ-alpha, MZ-t, MSB) with p-values computed 
+    via Monte Carlo simulation of bounded Brownian motion. Supports one-sided 
+    (lower bound only) and two-sided bounds, with automatic lag selection 
+    using the MAIC criterion of Ng and Perron (2001) 
+    <doi:10.1111/1468-0262.00256>.
+License: GPL-3
+URL: https://github.com/muhammedalkhalaf/boundedur
+BugReports: https://github.com/muhammedalkhalaf/boundedur/issues
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-09 17:14:10 UTC; acad_
+Author: Muhammad Alkhalaf [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-2677-9246>),
+  Giuseppe Cavaliere [ctb] (Original methodology),
+  Fang Xu [ctb] (Original methodology)
+Maintainer: Muhammad Alkhalaf <muhammedalkhalaf@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-16 15:50:22 UTC

@@ -1,0 +1,30 @@
+Package: MultiStepSSAD
+Type: Package
+Title: Multiple-Steps Step-Stress Accelerated Degradation Modeling
+Version: 0.1.0
+Authors@R: c(
+  person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+  person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+  person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+  person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut")
+  )
+Description: Implements statistical methods for multiple-steps step-stress accelerated degradation testing (SSADT) based on Wiener processes and Gamma processes as described by Pan and Balakrishnan (2010) <doi:10.1080/03610918.2010.496060>. Features maximum likelihood estimation (MLE), Bayesian Markov chain Monte Carlo (MCMC) sampling, Geweke convergence diagnostics, and reliability predictions under normal operating stress conditions.
+License: GPL (>= 3)
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-31 01:10:31 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 21:00:07 UTC

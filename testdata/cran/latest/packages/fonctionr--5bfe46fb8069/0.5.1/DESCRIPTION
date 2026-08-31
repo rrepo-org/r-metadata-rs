@@ -1,0 +1,34 @@
+Type: Package
+Package: fonctionr
+Title: Easy Estimation and Vizualisation of Indicators from Data with
+        Complex Design
+Version: 0.5.1
+Authors@R: c(
+    person("Joel", "Gires", , "joel.gires@vivalis.brussels", role = c("aut", "cre", "cph")),
+    person("Francois", "Ghesquiere", , "f.ghesquiere@iweps.be", role = "aut")
+  )
+Description: Many functions to easily vizualise and estimate indicators
+    such as proportions, means, medians and continuous/discrete
+    distributions from complex survey data. The package also estimates
+    confidence intervals for all indicators, compares different groups and
+    computes different statistical tests.
+License: GPL-3
+URL: https://jgires.github.io/fonctionr/,
+        https://github.com/jgires/fonctionr/
+BugReports: https://github.com/jgires/fonctionr/issues
+Depends: R (>= 4.1.0)
+Imports: doParallel, dplyr, forcats, foreach, ggnewscale, ggplot2,
+        ggtext, grDevices, rlang, scales, showtext, srvyr, stringr,
+        survey, sysfonts, tibble, tidyr
+Suggests: broom, colorspace, knitr, kableExtra, laeken, MetBrewer,
+        openxlsx, patchwork, PrettyCols, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-21 12:40:34 UTC; 00104504
+Author: Joel Gires [aut, cre, cph],
+  Francois Ghesquiere [aut]
+Maintainer: Joel Gires <joel.gires@vivalis.brussels>
+Repository: CRAN
+Date/Publication: 2026-03-25 21:00:16 UTC

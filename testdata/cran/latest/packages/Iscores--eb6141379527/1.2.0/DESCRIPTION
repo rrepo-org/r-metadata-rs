@@ -1,0 +1,47 @@
+Package: Iscores
+Type: Package
+Title: Proper Scoring Rules for Missing Value Imputation
+Version: 1.2.0
+Authors@R: c(person(given = "Krystyna", 
+                    family = "Grzesiak",
+                    email = "krygrz11@gmail.com",
+                    comment = c(ORCID = "0000-0003-2581-7722"),
+                    role = c("aut", "cre")),
+             person(given = "Loris", 
+                    family = "Michel",
+                    role = c("aut", "ctb")),
+             person(given = "Meta-Lina", 
+                    family = "Spohn",
+                    role = c("aut", "ctb")),
+             person(given = "Jeffrey", 
+                    family = "Näf",
+                    email = "jeffrey@my-sh.ch",
+                    comment = c(ORCID = "0000-0003-0920-1899"),
+                    role = c("aut", "ctb")))
+Description: Provides tools for evaluating and ranking missing value
+    imputation methods using proper scoring rules.
+    Implements the Energy-I-Score and the DR-I-Score for the assessment
+    of deterministic, stochastic and multiple imputation methods
+    for numerical and mixed datasets, following Näf et al. (2022)
+    <doi:10.48550/arXiv.2106.03742> and Näf et al. (2025)
+    <doi:10.48550/arXiv.2507.11297>.
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: energy, kernlab, pbapply, pbmcapply, ranger, scoringRules,
+        stats
+Suggests: knitr, mice, rmarkdown, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://krystynagrzesiak.github.io/Iscores/
+License: GPL-3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-08 17:05:50 UTC; Krysia
+Author: Krystyna Grzesiak [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2581-7722>),
+  Loris Michel [aut, ctb],
+  Meta-Lina Spohn [aut, ctb],
+  Jeffrey Näf [aut, ctb] (ORCID: <https://orcid.org/0000-0003-0920-1899>)
+Maintainer: Krystyna Grzesiak <krygrz11@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-08 18:20:25 UTC

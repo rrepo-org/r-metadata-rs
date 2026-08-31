@@ -1,0 +1,36 @@
+Package: rotio
+Type: Package
+Title: Pure-R 'OpenTimelineIO' Document Model
+Version: 0.1.0
+Date: 2026-06-12
+Authors@R: c(
+    person("Troy", "Hernandez", role = c("aut", "cre"),
+           email = "troy@cornball.ai",
+           comment = c(ORCID = "0009-0005-4248-604X")),
+    person("cornball.ai", role = "cph"))
+Description: A dependency-light 'OpenTimelineIO' (OTIO)
+    <https://github.com/AcademySoftwareFoundation/OpenTimelineIO>
+    document layer in pure R. Provides
+    constructors for the OTIO object model (timelines, tracks, clips,
+    gaps, media references, rational times and time ranges), functional
+    builders that return new objects, and readers and writers for
+    canonical '.otio' files through 'jsonlite'. The optional 'RcppOTIO'
+    package validates output against the real 'OpenTimelineIO' C++
+    library. No compiled code.
+License: Apache License (== 2.0)
+URL: https://github.com/cornball-ai/rotio
+BugReports: https://github.com/cornball-ai/rotio/issues
+Depends: R (>= 4.4.0)
+Imports: jsonlite
+Additional_repositories: https://cornball-ai.github.io/drat
+Suggests: tinytest, RcppOTIO
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-06-12 22:52:19 UTC; troy
+Author: Troy Hernandez [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-4248-604X>),
+  cornball.ai [cph]
+Maintainer: Troy Hernandez <troy@cornball.ai>
+Repository: CRAN
+Date/Publication: 2026-06-19 12:20:09 UTC

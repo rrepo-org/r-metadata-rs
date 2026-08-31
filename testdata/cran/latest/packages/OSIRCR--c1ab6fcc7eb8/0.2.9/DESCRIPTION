@@ -1,0 +1,24 @@
+Package: OSIRCR
+Type: Package
+Title: Cosine Regression-Based Online Sliced Inverse Regression
+        Algorithm
+Version: 0.2.9
+Authors@R: c(
+     person(given = "Guangbao", family = "Guo", role = c("aut", "cre"), email = "ggb11111111@163.com"),
+     person(given = "Sirui", family = "Yan", role = "aut", email = "yansr0601@163.com")
+   )
+Author: Guangbao Guo [aut, cre],
+  Sirui Yan [aut]
+Maintainer: Guangbao Guo <ggb11111111@163.com>
+Description: In high-dimensional streaming data analysis, extracting core periodic features under real-time constraints remains challenging. Traditional dimension reduction methods fail to adapt to incremental data and yield low accuracy due to irrelevant variables. This package provides the Online Sliced Inverse Regression framework for cosine regression with high-dimensional irrelevant variables. It integrates subspace extraction of sliced inverse regression and incremental learning of online algorithms to efficiently handle periodic streaming data. Cai, Z., Li, R., & Zhu, L. (2020) <doi:10.48550/arXiv.2002.02795>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats
+NeedsCompilation: no
+LazyData: true
+Packaged: 2026-05-20 14:17:04 UTC; Lenovo
+RoxygenNote: 7.3.3
+Language: en-US
+Repository: CRAN
+Date/Publication: 2026-05-28 11:10:28 UTC

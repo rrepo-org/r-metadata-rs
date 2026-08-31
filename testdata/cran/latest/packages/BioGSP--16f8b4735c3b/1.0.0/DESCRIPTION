@@ -1,0 +1,27 @@
+Package: BioGSP
+Type: Package
+Title: Biological Graph Signal Processing for Spatial Data Analysis
+Version: 1.0.0
+Authors@R: person(given = "Yuzhou",
+                  family = "Chang",
+                  role = c("aut", "cre"),
+                  email = "yuzhou.chang@osumc.edu")
+Description: Implementation of Graph Signal Processing (GSP) methods including Spectral 
+    Graph Wavelet Transform (SGWT) for analyzing spatial patterns in biological data. 
+    Based on Hammond, Vandergheynst, and Gribonval (2011) <doi:10.1016/j.acha.2010.04.005>. Provides tools for multi-scale analysis of biology spatial signals, including forward and inverse transforms, energy analysis, and visualization functions tailored for biological applications. Biological application example is on Stephanie, Yao, Yuzhou (2024) <doi:10.1101/2024.12.20.629650>.
+License: GPL-3
+URL: https://github.com/BMEngineeR/BioGSP
+BugReports: https://github.com/BMEngineeR/BioGSP/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: Matrix, igraph, RANN, RSpectra, ggplot2, patchwork, gridExtra,
+        viridis, methods, dplyr
+Suggests: knitr, rmarkdown, ggrepel
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2026-01-28 18:17:51 UTC; chang.1754
+Author: Yuzhou Chang [aut, cre]
+Maintainer: Yuzhou Chang <yuzhou.chang@osumc.edu>
+Repository: CRAN
+Date/Publication: 2026-02-02 10:30:08 UTC

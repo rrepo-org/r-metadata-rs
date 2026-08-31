@@ -1,0 +1,63 @@
+Package: RegCalib
+Title: Regression Calibration for Measurement Error Correction
+Version: 0.1.0
+Authors@R: c(
+	person(
+        given = "Jingyu",
+        family = "Cui",
+        email = "jingyu.cui@yale.edu",
+        role = c("aut", "cre"),
+        comment = c(
+            Affiliation = "Department of Biostatistics, Yale School of Public Health",
+            ORCID = "0000-0002-8073-1422"
+        )
+    ),
+    person(
+        given = "Wenze",
+        family = "Tang",
+        email = "wenzet@gmail.com",
+        role = "aut",
+        comment = c(
+            Affiliation = "Vertex Pharmaceuticals"
+        )
+    ),
+    person(
+        given = "Molin",
+        family = "Wang",
+        email = "stmow@channing.harvard.edu",
+        role = "aut",
+        comment = c(
+            Affiliation = "Department of Biostatistics, Department of Epidemiology, Harvard T.H. Chan School of Public Health"
+        )
+    )
+    )
+Description: Corrects for measurement error in continuous exposures and
+    covariates using regression calibration methods. Provides corrected
+    coefficients, standard errors, p-values, confidence intervals, and
+    variance-covariance matrices for linear and generalized linear outcome
+    models under an external validation study design. Implements the
+    deattenuation factor method (RegCalibDF) and the substitution approach
+    (RegCalibSub). Supports single and multiple error-prone exposures.
+License: GPL-3
+Encoding: UTF-8
+Imports: stats, dplyr, Matrix, matrixcalc
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/JingyuCui639/RegCalib
+Config/roxygen2/version: 8.0.0
+Depends: R (>= 3.5)
+LazyData: true
+VignetteBuilder: knitr
+BugReports: https://github.com/JingyuCui639/RegCalib/issues
+LazyDataCompression: xz
+NeedsCompilation: no
+Packaged: 2026-07-30 07:10:26 UTC; jc4428
+Author: Jingyu Cui [aut, cre] (Affiliation: Department of Biostatistics, Yale
+    School of Public Health, ORCID:
+    <https://orcid.org/0000-0002-8073-1422>),
+  Wenze Tang [aut] (Affiliation: Vertex Pharmaceuticals),
+  Molin Wang [aut] (Affiliation: Department of Biostatistics, Department
+    of Epidemiology, Harvard T.H. Chan School of Public Health)
+Maintainer: Jingyu Cui <jingyu.cui@yale.edu>
+Repository: CRAN
+Date/Publication: 2026-08-07 16:30:20 UTC

@@ -1,0 +1,33 @@
+Package: masc
+Title: Simulate the Multi-Attribute Search and Choice (MASC) Model
+Version: 0.1.0
+Authors@R: 
+    person("Kiante", "Fernandez", , "kiantefernan@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-8493-880X"))
+Description: Simulates the Multi-Attribute Search and Choice (MASC) model of
+    Gluth, Deakin and Rieskamp (2026) <doi:10.1037/rev0000614> for
+    multi-attribute decision-making, including sequential information search,
+    Bayesian belief updating, and choice. Beliefs may be treated as univariate
+    (independent attributes), or multivariate over correlated attributes
+    ('MASC-C'), in which observing one attribute updates beliefs about
+    correlated attributes via a Kalman filter.
+License: MIT + file LICENSE
+Imports: Rcpp, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), broom, patchwork,
+        ggplot2, dplyr, tibble, purrr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/kiante-fernandez/masc
+BugReports: https://github.com/kiante-fernandez/masc/issues
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-05-20 15:52:30 UTC; kiante
+Author: Kiante Fernandez [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8493-880X>)
+Maintainer: Kiante Fernandez <kiantefernan@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-27 19:50:10 UTC

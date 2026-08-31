@@ -1,0 +1,33 @@
+Package: InterpolateR
+Title: A Comprehensive Toolkit for Fast and Efficient Spatial
+        Interpolation
+Version: 1.4-3
+Authors@R: c(
+    person("Jonnathan", "Landi", email = "jonnathan.landi@outlook.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0003-3162-6647")),
+    person("Marco", "Mogro", email = "marcov.mogro@ucuenca.edu.ec",
+           role = c("aut"),
+           comment = c(ORCID = "0009-0007-1802-9417"))
+  )
+Maintainer: Jonnathan Landi <jonnathan.landi@outlook.com>
+Description: Spatial interpolation toolkit designed for environmental and geospatial applications. It includes a range of methods, from traditional techniques to advanced machine learning approaches, ensuring accurate and efficient estimation of values in unobserved locations.
+License: GPL (>= 3)
+Depends: R (>= 4.4.0)
+Imports: data.table, future.apply, future, stats, terra, pbapply,
+        randomForest, qmap
+URL: https://github.com/Jonnathan-Landi/InterpolateR
+BugReports: https://github.com/Jonnathan-Landi/InterpolateR/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), covr, withr, ncdf4
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-09-04 01:32:14 UTC; Jonna
+Author: Jonnathan Landi [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0003-3162-6647>),
+  Marco Mogro [aut] (ORCID: <https://orcid.org/0009-0007-1802-9417>)
+Repository: CRAN
+Date/Publication: 2025-09-04 04:50:02 UTC

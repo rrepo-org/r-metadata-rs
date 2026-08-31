@@ -1,0 +1,39 @@
+Package: qfa
+Type: Package
+Title: Quantile-Frequency Analysis (QFA) of Time Series and Spline
+        Quantile Regression (SQR)
+Version: 5.0
+Date: 2026-03-30
+Authors@R: c(
+	person("Ta-Hsin", "Li", role = c("cre","aut"), email = "thl024@outlook.com")
+	)
+Maintainer: Ta-Hsin Li <thl024@outlook.com>
+Description: Implementation of quantile frequency analysis (QFA) for time series based on trigonometric quantile regression and of spline quantile regression (SQR) for estimating the coefficients in linear quantile regression models as smooth functions of the quantile level.
+ References:
+    [1] Li, T.-H. (2012). ''Quantile periodograms,'' J. of the American Statistical Association,
+         107, 765–776. <doi:10.1080/01621459.2012.682815>
+    [2] Li, T.-H. (2014). Time Series with Mixed Spectra, CRC Press. <doi:10.1201/b15154>
+    [3] Li, T.-H. (2025). ''Quantile Fourier transform, quantile series, and nonparametric
+         estimation of quantile spectra,'' Communications in Statistics: Simulation and
+         Computation, 1–22. <doi:10.1080/03610918.2025.2509820>
+    [4] Li, T.-H. (2025). ''Quantile-crossing spectrum and spline autoregression estimation,''
+         Statistical Inference for Stochastic Processes, 28, 20. <doi:10.1007/s11203-025-09336-7>
+    [5] Li, T.-H. (2025). ''Spline autoregression method for estimation of quantile spectrum,'' J. of
+         Computational and Graphical Statistics, 1-15. <doi:10.1080/10618600.2025.2549452>
+    [6] Li, T.-H., and Megiddo, N. (2026). ''Spline quantile regression,'' J. of Statistical Theory
+         and Practice, 20, 30. <doi:10.1007/s42519-026-00545-8>
+    [7] Li, T.-H. (2026). ''Spline quantile regression with cubic and linear smoothing splines,''
+         <doi:10.48550/arXiv.2603.22408>.
+Depends: R (>= 3.5)
+Imports: RhpcBLASctl, doParallel, fields, foreach, stats, Matrix,
+        SparseM, methods, mgcv, nlme, parallel, quantreg, splines,
+        graphics, colorRamps, MASS, osqp, piqp, boot
+License: GPL (>= 2)
+URL: https://github.com/IBM/qfa, https://github.com/thl2019/QFA
+NeedsCompilation: yes
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Packaged: 2026-03-30 14:16:46 UTC; thl
+Author: Ta-Hsin Li [cre, aut]
+Repository: CRAN
+Date/Publication: 2026-03-30 14:50:02 UTC

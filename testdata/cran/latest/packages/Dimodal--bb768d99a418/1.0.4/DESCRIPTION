@@ -1,0 +1,29 @@
+Package: Dimodal
+Version: 1.0.4
+Date: 2026-04-23
+Title: Spacing Tests for Multi-Modality
+Authors@R: c(person("Greg", "Kreider", role=c("aut","cre"),
+                    email="support@primachvis.com"),
+             person("Melissa", "O'Neill", role=c("cph")),
+             person("Primordial Machine Vision Systems, Inc.", role=c("cph"),
+                    email="support@primachvis.com"))
+Copyright: Primordial Machine Vision Systems, Inc.
+Maintainer: Greg Kreider <support@primachvis.com>
+Description: Tests for modality of data using its spacing.  The main approach
+  evaluates features (peaks, flats) using a combination of parametric models
+  and non-parametric tests, either after smoothing the spacing by a low-pass
+  filter or by looking over larger intervals.
+License: BSD_3_clause + file LICENSE
+NeedsCompilation: yes
+Depends: statmod
+Note: This is the CRAN version of the package.  Due to limitations of
+        that platform it does not support the changepoint analysis of
+        the spacing.  The full definitive version of the package is
+        available at
+        https://www.primachvis.com/data/Dimodal_latest.tar.gz
+Packaged: 2026-05-01 18:14:49 UTC; kreider
+Author: Greg Kreider [aut, cre],
+  Melissa O'Neill [cph],
+  Primordial Machine Vision Systems, Inc. [cph]
+Repository: CRAN
+Date/Publication: 2026-05-01 18:50:11 UTC

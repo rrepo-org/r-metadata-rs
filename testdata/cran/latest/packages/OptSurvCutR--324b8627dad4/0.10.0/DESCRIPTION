@@ -1,0 +1,42 @@
+Package: OptSurvCutR
+Type: Package
+Title: Optimal Survival Cut-Point Discovery for Time-to-Event Analysis
+        with 'OptSurvCutR'
+Version: 0.10.0
+Authors@R: 
+    person(given = "Payton",
+           family = "Yau",
+           role = c("aut", "cre", "cph"),
+           email = "tungon@gmail.com",
+           comment = c(ORCID = "0000-0002-3283-0370"))
+Description: Provides a robust workflow for optimal cut-point analysis in
+    time-to-event ('survival') data. Functions determine the optimal number
+    of cut-points via find_cutpoint_number(), find their precise locations
+    via find_cutpoint() using systematic or genetic algorithms (via the
+    'rgenoud' package), and validate stability via bootstrapping using
+    validate_cutpoint(). Features include covariate adjustment, parallel
+    processing, and an extensible S3 plotting engine for clinical
+    dashboards and diagnostics.
+License: GPL-3
+URL: https://github.com/paytonyau/OptSurvCutR,
+        https://paytonyau.github.io/OptSurvCutR/
+BugReports: https://github.com/paytonyau/OptSurvCutR/issues
+Encoding: UTF-8
+VignetteBuilder: knitr
+Imports: cli, doParallel, doRNG, foreach, ggplot2, parallel, patchwork,
+        Rcpp, rgenoud, rlang, stats, survival, survminer, tidyr
+LinkingTo: Rcpp
+Suggests: broom, dplyr, knitr, plotly, readxl, rmarkdown, spelling,
+        testthat (>= 3.0.0), timeROC
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+Language: en-GB
+Config/Needs/website: logo.png
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-24 16:05:32 UTC; Payton
+Author: Payton Yau [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3283-0370>)
+Maintainer: Payton Yau <tungon@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-30 12:20:26 UTC

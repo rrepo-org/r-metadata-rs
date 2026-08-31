@@ -1,0 +1,28 @@
+Package: ebdm
+Type: Package
+Title: Estimating Bivariate Dependency from Marginal Data
+Version: 3.0.1
+Authors@R: 
+    c(
+      person(given = "Longwen", family = "Shang", role = c("aut"), email = "shanglongwen0918@gmail.com"),
+      person(given = "Min", family = "Tsao", role = "aut"),
+      person(given = "Xuekui", family = "Zhang", role = c("aut", "cre", "fnd"), email = "ubcxzhang@gmail.com")
+    )
+Description: Provides statistical methods for estimating bivariate dependency (correlation) from marginal summary statistics across multiple studies. 
+    The package supports three modules of bivariate joint distribution estimated from marginal summary data: (1) two binary, (2) two continuous, (3) one binary and one continuous
+    These methods enable privacy-preserving joint estimation when individual-level data are unavailable.
+    The approaches are detailed in Shang, Tsao, and Zhang (2025a) <doi:10.48550/arXiv.2505.03995> and Shang, Tsao, and Zhang (2025b) <doi:10.48550/arXiv.2508.02057>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: stats
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-04-21 04:10:01 UTC; shanglongwen
+Author: Longwen Shang [aut],
+  Min Tsao [aut],
+  Xuekui Zhang [aut, cre, fnd]
+Maintainer: Xuekui Zhang <ubcxzhang@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-23 13:50:02 UTC

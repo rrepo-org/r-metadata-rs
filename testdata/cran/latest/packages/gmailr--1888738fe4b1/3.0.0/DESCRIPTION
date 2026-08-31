@@ -1,0 +1,32 @@
+Package: gmailr
+Title: Access the 'Gmail' 'RESTful' API
+Version: 3.0.0
+Authors@R: c(
+    person("Jim", "Hester", role = "aut"),
+    person("Jennifer", "Bryan", , "jenny@posit.co", role = c("aut", "cre")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: An interface to the 'Gmail' 'RESTful' API.  Allows access to
+    your 'Gmail' messages, threads, drafts and labels.
+License: MIT + file LICENSE
+URL: https://gmailr.r-lib.org, https://github.com/r-lib/gmailr
+BugReports: https://github.com/r-lib/gmailr/issues
+Depends: R (>= 4.1)
+Imports: base64enc, cli, crayon, gargle (>= 1.6.1), glue, httr,
+        jsonlite, lifecycle, mime, rappdirs, rematch2, rlang (>= 1.1.0)
+Suggests: curl, knitr, methods, rmarkdown, testthat (>= 3.1.8), withr
+VignetteBuilder: knitr
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Config/usethis/last-upkeep: 2025-11-03
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-29 23:07:30 UTC; jenny
+Author: Jim Hester [aut],
+  Jennifer Bryan [aut, cre],
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
+Maintainer: Jennifer Bryan <jenny@posit.co>
+Repository: CRAN
+Date/Publication: 2026-01-30 10:20:02 UTC

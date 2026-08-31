@@ -1,0 +1,30 @@
+Package: motherduck
+Type: Package
+Title: Utilities for Managing a 'Motherduck' Database
+Version: 0.2.1
+Authors@R: 
+    person(
+      "Alejandro", "Hagan",
+      email = "alejandro.hagan@outlook.com",
+      role = c("aut", "cre")
+    )
+Description: Provides helper functions, metadata utilities, and workflows for 
+    administering and managing databases on the 'Motherduck' cloud platform. 
+    Some features require a 'Motherduck' account (<https://motherduck.com/>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LazyData: true
+Imports: DBI, assertthat, cli, dbplyr, dplyr, duckdb (>= 1.4.1), glue,
+        purrr, stringr, httr2, rlang, janitor, tibble
+Suggests: testthat (>= 3.0.0), quarto, contoso, openxlsx
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+URL: https://usrbinr.github.io/motherduck/
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2025-12-22 14:30:17 UTC; hagan
+Author: Alejandro Hagan [aut, cre]
+Maintainer: Alejandro Hagan <alejandro.hagan@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-12-22 14:50:02 UTC

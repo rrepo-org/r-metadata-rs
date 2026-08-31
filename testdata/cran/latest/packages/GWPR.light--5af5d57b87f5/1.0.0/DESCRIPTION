@@ -1,0 +1,28 @@
+Package: GWPR.light
+Type: Package
+Title: Geographically Weighted Panel Regression
+Version: 1.0.0
+Authors@R: c(person("Chao", "Li", role = c("aut", "cre"),
+                     email = "chaoli0394@gmail.com",
+                     comment = c(ORCID = "0000-0002-6854-4456")),
+              person("Shunsuke", "Managi", role = "aut",
+                     comment = c(ORCID = "0000-0001-7883-1427")))
+Description: A modern, first implementation of Geographically Weighted Panel Regression (GWPR) for spatial panel data. The package provides a unified public API supporting Gaussian and binomial family models, within/pooling/random panel effects, three bandwidth search strategies (grid, Stochastic Gradient Descent, random), five kernel functions, and optional parallel execution via the 'future' framework. Diagnostic tools include spatial Moran's I, local F-test, Hausman test, and Lagrange Multiplier test. 
+License: AGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: fixest, glmmTMB, lmtest, plm, sf, stats, utils
+Depends: R (>= 3.5.0)
+Suggests: future, future.apply, rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/MichaelChaoLi-cpu/GWPR.light
+BugReports: https://github.com/MichaelChaoLi-cpu/GWPR.light/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-22 00:18:34 UTC; lichao
+Author: Chao Li [aut, cre] (ORCID: <https://orcid.org/0000-0002-6854-4456>),
+  Shunsuke Managi [aut] (ORCID: <https://orcid.org/0000-0001-7883-1427>)
+Maintainer: Chao Li <chaoli0394@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-29 09:20:08 UTC

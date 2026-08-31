@@ -1,0 +1,41 @@
+Package: bibnets
+Title: Importing, Constructing, and Exporting Bibliometric Networks
+Version: 0.6.0
+Authors@R: c(
+    person("Mohammed", "Saqr", , "saqr@saqr.me", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-5881-3109")),
+    person("Sonsoles", "López-Pernas", role = "aut",
+           comment = c(ORCID = "0000-0002-9621-1392")))
+Description: Imports, constructs, and exports bibliometric networks from
+    scholarly metadata. Reads 'Scopus', 'Web of Science', 'BibTeX',
+    'RIS', 'OpenAlex', 'Lens.org', 'Dimensions', and 'Crossref'
+    exports. Goes beyond standard co-networks with attention-weighted
+    networks (lead, last, proximity, circular position weights),
+    position-aware counting (harmonic, arithmetic, geometric,
+    golden-ratio), similarity and dissimilarity normalisations,
+    temporal networks with fixed, sliding, and cumulative windows,
+    disparity-filter backbone extraction, historiograph construction,
+    and local citation scoring. Methods described in López-Pernas,
+    Saqr & Apiola (2023) <doi:10.1007/978-3-031-25336-2_5>.
+License: MIT + file LICENSE
+URL: https://github.com/mohsaqr/bibnets
+BugReports: https://github.com/mohsaqr/bibnets/issues
+Depends: R (>= 4.1.0)
+Imports: Matrix, stats, utils
+Suggests: cograph, igraph, knitr, openalexR, rcrossref, rmarkdown,
+        testthat (>= 3.0.0), tidygraph
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-18 18:29:30 UTC; mohammedsaqr
+Author: Mohammed Saqr [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5881-3109>),
+  Sonsoles López-Pernas [aut] (ORCID:
+    <https://orcid.org/0000-0002-9621-1392>)
+Maintainer: Mohammed Saqr <saqr@saqr.me>
+Repository: CRAN
+Date/Publication: 2026-06-18 19:00:02 UTC

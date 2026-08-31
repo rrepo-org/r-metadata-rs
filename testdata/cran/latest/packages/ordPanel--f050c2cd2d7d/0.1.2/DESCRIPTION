@@ -1,0 +1,32 @@
+Package: ordPanel
+Type: Package
+Title: Ordered Panel
+Version: 0.1.2
+Date: 2026-06-17
+Description: The ordered panel methodology (Zezulinski et al 2025 <doi:10.1159/000545366>) provides a structured framework for identifying and organizing sets of biomarkers, such as genetic variants, that distinguish between positive and negative subjects in a study when only a training cohort is available. This approach is particularly useful in situations where an independent validation cohort does not yet exist, rendering conventional performance metrics such as the receiver operating characteristic (ROC) curve and area under the ROC curve (AUC) inappropriate or potentially misleading. The methodology emphasizes transparent construction and evaluation of ordered signatures of biomarkers, allowing investigators to examine operating characteristics without establishing predictive performance.
+License: GPL-2
+Encoding: UTF-8
+Authors@R: c(person(given = "Tingting", family = "Zhan", role = c("aut",
+        "cre"), email = "tingtingzhan@gmail.com", comment = c(ORCID =
+        '0000-0001-9971-4844')), person(given = "Aejaz", family = "Sayeed", 
+        role = "dtc", comment = c(ORCID = '0000-0001-6900-7524')))
+Language: en-US
+LazyData: true
+LazyDataCompression: xz
+URL: https://github.com/tingtingzhan/ordPanel,
+        https://tingtingzhan.quarto.pub/ordpanel/,
+        https://tingtingzhan-ordpanel.netlify.app
+Depends: R (>= 4.6.0)
+Imports: cli, flextable, ggplot2, methods, consort, patchwork, scales
+Suggests: testthat
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Config/roxygen2/markdown: TRUE
+NeedsCompilation: no
+Packaged: 2026-06-17 20:42:26 UTC; tingtingzhan
+Author: Tingting Zhan [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9971-4844>),
+  Aejaz Sayeed [dtc] (ORCID: <https://orcid.org/0000-0001-6900-7524>)
+Maintainer: Tingting Zhan <tingtingzhan@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-17 21:00:02 UTC

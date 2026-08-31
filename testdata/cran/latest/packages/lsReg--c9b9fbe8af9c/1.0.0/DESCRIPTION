@@ -1,0 +1,46 @@
+Package: lsReg
+Type: Package
+Title: Performs Large Scale Regressions
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "John",
+             family = "Morrison",
+             role = c("aut", "cre"),
+             email = "jmorr@usc.edu"),
+      person(given = "NCI",
+             role = "fnd",
+             comment = "CA196559"),
+      person(given = "NCI",
+             role = "fnd",
+             comment = "CA201407"),
+      person(given = "NIEHS",
+             role = "fnd",
+             comment = "ES007048"),
+      person(given = "NHLBI",
+             role = "fnd",
+             comment = "HL115606"))
+Date: 2026-04-07
+Maintainer: John Morrison <jmorr@usc.edu>
+Description: Routines to perform large scale regression. Linear, logistic,
+    and Poisson regressions are supported. Large scale regression efficiently
+    fits models where a small number of covariates are changing and the
+    subjects have complete data. A genome wide association study would be
+    an example.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, statmod
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, methods
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-04-23 21:07:15 UTC; jmorr
+Author: John Morrison [aut, cre],
+  NCI [fnd] (CA196559),
+  NCI [fnd] (CA201407),
+  NIEHS [fnd] (ES007048),
+  NHLBI [fnd] (HL115606)
+Repository: CRAN
+Date/Publication: 2026-04-28 18:40:20 UTC

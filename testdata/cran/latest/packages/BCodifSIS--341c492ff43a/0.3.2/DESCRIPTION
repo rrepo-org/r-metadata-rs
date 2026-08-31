@@ -1,0 +1,28 @@
+Package: BCodifSIS
+Type: Package
+Title: Ball-Codifference Sure Independence Screening
+Version: 0.3.2
+Authors@R: c(
+    person(given = "Mohsen", family = "Rezapour", role = c("aut", "cre"),
+           email = "mohsenrzp@gmail.com")
+    )
+Description: Computes Ball-codifference scores and performs sure independence
+    screening for high-dimensional predictors. The score combines random-ball
+    empirical probabilities with a bounded local codifference weight based on
+    trigonometric characteristic-function contrasts. The functions are intended
+    for marginal screening when moment-based dependence summaries may be unstable
+    or undefined, such as in heavy-tailed data. The implemented methodology is
+    described in Rezapour and Maroufy (2026) "Ball-Codifference Screening for
+    Heavy-Tailed Predictors" <doi:10.48550/arXiv.2607.20821>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: stats
+NeedsCompilation: yes
+SystemRequirements: C99
+URL: https://arxiv.org/abs/2607.20821
+Collate: 'bcodif.R' 'quick_check.R'
+Packaged: 2026-07-28 20:12:54 UTC; mrezapou
+Author: Mohsen Rezapour [aut, cre]
+Maintainer: Mohsen Rezapour <mohsenrzp@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-06 13:00:08 UTC

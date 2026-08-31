@@ -1,0 +1,32 @@
+Package: evacpath
+Title: Least-Cost Pedestrian Evacuation Modeling
+Version: 0.1.0
+Authors@R: c(
+    person("Elvin", "Cordero", role = c("aut", "cre"), email = "elvin.cordero1@upr.edu")
+  )
+Description: Tools for road-constrained, least-cost pedestrian evacuation modeling.
+    The package provides reusable functions for preparing hazard zones, generating
+    road-based evacuation origin points, identifying escape/safety points, creating
+    slope-based conductance surfaces, calculating least-cost distance to safety,
+    and converting distance outputs into evacuation-time polygons. It is designed
+    to support workflows like tsunami evacuation modeling while remaining
+    adaptable to other regions and hazards. Tsunami-specific helpers support separate
+    land-only hazard zones, water-combined escape zones, road-aware escape
+    boundaries, and study-area inset cropping for quality assurance and quality
+    control. Methods build on Cordero et al. (2025) <doi:10.1007/s44367-025-00018-y>,
+    Lewis (2021) <doi:10.1007/s10816-021-09522-w>, and Joseph Lewis's
+    'leastcostpath' package (2023) <https://CRAN.R-project.org/package=leastcostpath>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: terra, leastcostpath, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), devtools, fields
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-22 17:19:23 UTC; ec
+Author: Elvin Cordero [aut, cre]
+Maintainer: Elvin Cordero <elvin.cordero1@upr.edu>
+Repository: CRAN
+Date/Publication: 2026-05-28 18:50:02 UTC

@@ -1,0 +1,19 @@
+Package: ganDataModel
+Type: Package
+Title: Build a Metric Subspaces Data Model for a Data Source
+Version: 2.0.1
+Date: 2025-12-19
+Author: Werner Mueller [aut, cre]
+Maintainer: Werner Mueller <werner.mueller5@chello.at>
+Description: Neural networks are applied to create a density value function which approximates density values for a data source. The trained neural network is analyzed for different levels. For each level metric subspaces with density values above a level are determined. The obtained set of metric subspaces and the trained neural network are assembled into a data model. A prerequisite is the definition of a data source, the generation of generative data and the calculation of density values. These tasks are executed using package 'ganGenerativeData' <https://cran.r-project.org/package=ganGenerativeData>.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.3), tensorflow (>= 2.0.0)
+LinkingTo: Rcpp
+RoxygenNote: 7.3.3
+SystemRequirements: TensorFlow (https://www.tensorflow.org)
+NeedsCompilation: yes
+Encoding: UTF-8
+Authors@R: person(given = "Werner", family = "Mueller", role = c("aut", "cre"), email = "werner.mueller5@chello.at")
+Packaged: 2025-12-19 11:28:54 UTC; ubuntu
+Repository: CRAN
+Date/Publication: 2025-12-19 11:40:02 UTC

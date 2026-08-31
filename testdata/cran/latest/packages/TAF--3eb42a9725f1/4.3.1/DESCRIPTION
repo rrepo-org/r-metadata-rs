@@ -1,0 +1,37 @@
+Package: TAF
+Version: 4.3.1
+Date: 2025-09-18
+Title: Transparent Assessment Framework for Reproducible Research
+Authors@R: c(person("Arni", "Magnusson", role=c("aut","cre"), email="thisisarni@gmail.com"),
+             person("Colin", "Millar", role="aut"),
+             person("Iago", "Mosqueira", role="aut"),
+             person("Alexandros", "Kokkalis", role="ctb"),
+             person("Ibrahim", "Umar", role="ctb"),
+             person("Hjalte", "Parner", role="ctb"))
+Imports: grDevices, lattice, methods, stats, tools, utils
+LazyData: yes
+Description: General framework to organize data, methods, and results used in
+  reproducible scientific analyses. A TAF analysis consists of four scripts
+  (data.R, model.R, output.R, report.R) that are run sequentially. Each script
+  starts by reading files from a previous step and ends with writing out files
+  for the next step. Convenience functions are provided to version control the
+  required data and software, run analyses, clean residues from previous runs,
+  manage files, manipulate tables, and produce figures. With a focus on
+  stability and reproducible analyses, the TAF package comes with no
+  dependencies. TAF forms a base layer for the 'icesTAF' package and other
+  scientific applications.
+License: GPL-3
+URL: https://github.com/ices-tools-prod/TAF
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-09-18 10:21:02 UTC; arnim
+Author: Arni Magnusson [aut, cre],
+  Colin Millar [aut],
+  Iago Mosqueira [aut],
+  Alexandros Kokkalis [ctb],
+  Ibrahim Umar [ctb],
+  Hjalte Parner [ctb]
+Maintainer: Arni Magnusson <thisisarni@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-18 12:50:21 UTC

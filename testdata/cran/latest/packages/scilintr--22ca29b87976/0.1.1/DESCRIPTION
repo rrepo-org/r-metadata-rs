@@ -1,0 +1,27 @@
+Package: scilintr
+Title: Scientific Code Lint for R Analyses
+Version: 0.1.1
+Authors@R: person("Arjun", "Raj", email = "arjunraj@seas.upenn.edu",
+                  role = c("aut", "cre"))
+Description: Static analysis for R scientific data analysis code. Flags
+    patterns that often correspond to hidden scientific commitments --
+    silent error swallowing, smuggled defaults, label leakage in
+    selection-stage code, magic-eps floors in 'BIC' formulas, and
+    shadow-overwrite of sourced helpers. Designed for agentic coding
+    workflows; high recall over precision; structured 'ANALYSIS_OK'
+    waivers as the audit trail.
+License: MIT + file LICENSE
+URL: https://github.com/arjunrajlaboratory/scilintr
+BugReports: https://github.com/arjunrajlaboratory/scilintr/issues
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: lintr (>= 3.0.0), xml2, xmlparsedata, yaml
+Suggests: testthat (>= 3.0.0), roxygen2
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-06 12:33:15 UTC; arjunraj
+Author: Arjun Raj [aut, cre]
+Maintainer: Arjun Raj <arjunraj@seas.upenn.edu>
+Repository: CRAN
+Date/Publication: 2026-06-12 11:20:02 UTC

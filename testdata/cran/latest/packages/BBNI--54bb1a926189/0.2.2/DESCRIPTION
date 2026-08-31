@@ -1,0 +1,32 @@
+Package: BBNI
+Title: Bayesian Inference of Boolean Genetic Networks
+Version: 0.2.2
+Authors@R: c(
+    person(given = "Anson", family = "Li",
+           email = "liyuanrui618@gmail.com",
+           role = c("aut", "cre")),
+    person(given = "Shengtong", family = "Han",
+           email = "shengtong.han@marquette.edu",
+           role = "aut")
+    )
+Description: Implements a fully Bayesian Markov chain Monte Carlo (MCMC) approach for inferring the topology and Boolean logic transition functions of gene regulatory networks from noisy, binary time-series expression data. Network structure and Boolean rules are sampled jointly from their posterior distribution, providing principled uncertainty quantification rather than a single point estimate. Method described in Han et al. (2014) <doi:10.1371/journal.pone.0115806>.
+Depends: R (>= 4.1.0)
+License: BSD_3_clause + file LICENSE
+URL: https://anson-li8.github.io/BBNI/,
+        https://github.com/anson-li8/BBNI
+BugReports: https://github.com/anson-li8/BBNI/issues
+Encoding: UTF-8
+Language: en-US
+Imports: stats, igraph
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-17 16:53:18 UTC; Anson
+Author: Anson Li [aut, cre],
+  Shengtong Han [aut]
+Maintainer: Anson Li <liyuanrui618@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-19 19:20:12 UTC

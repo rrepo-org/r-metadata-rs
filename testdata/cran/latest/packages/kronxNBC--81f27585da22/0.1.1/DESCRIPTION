@@ -1,0 +1,29 @@
+Package: kronxNBC
+Type: Package
+Title: Clock of Regimes Naive Bayes Classifier (Student-t)
+Version: 0.1.1
+Authors@R: person(
+    given  = "Oscar",
+    family = "Linares",
+    email  = "olinares@umich.edu",
+    role   = c("aut", "cre")
+  )
+Description: Computes and fits a heavy-tailed Student-t Naive Bayes classifier
+    for non-stationary financial market regime analysis (Clock of Regimes, COR).
+    The core innovation is a profile grid search over the degrees-of-freedom
+    parameter nu that prevents numerical underflow and structural classification
+    failures when identifying fat-tailed Stress regimes. Provides S3 methods
+    for fitting, prediction, summarising, plotting, and parameter extraction.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: stats, graphics, utils, naivebayes
+Suggests: zoo, testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-27 19:22:36 UTC; olinaresmd
+Author: Oscar Linares [aut, cre]
+Maintainer: Oscar Linares <olinares@umich.edu>
+Repository: CRAN
+Date/Publication: 2026-05-30 13:50:02 UTC

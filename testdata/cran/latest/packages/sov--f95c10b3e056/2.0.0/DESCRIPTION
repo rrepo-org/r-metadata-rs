@@ -1,0 +1,24 @@
+Package: sov
+Title: Calculate vs-SOVs and SOVs for Assemblies with D-Dimensional
+        Voting
+Version: 2.0.0
+Authors@R: c(
+    person("Keith", "Dougherty", email = "dougherk@uga.edu", role = "aut"),
+    person("Emma", "Bibina", email = "emma.bibina@uga.edu", role = c("aut", "cre"))
+    )
+Description: Calculates vote-specific and traditional Shapley-Owen power indices (vs-SOVs and SOVs) for spatial voting games in one to four dimensions. Evaluates voter influence through an a posteriori analysis of relative preferences. Supports weighted voting and various voting thresholds. Compatible with ideal point estimates from NOMINATE, Optimal Classification, and 'MCMCpack'. The method builds on Bibina and Dougherty (2025) <doi:10.2139/ssrn.6324519>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, openxlsx, tibble, tidyr
+Suggests: testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+URL: https://github.com/spatial-voting-lab/sov
+BugReports: https://github.com/spatial-voting-lab/sov/issues
+NeedsCompilation: no
+Packaged: 2026-08-20 13:35:41 UTC; emmab
+Author: Keith Dougherty [aut],
+  Emma Bibina [aut, cre]
+Maintainer: Emma Bibina <emma.bibina@uga.edu>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:40:36 UTC

@@ -1,0 +1,33 @@
+Package: VOWR
+Title: Vital Operational Waiting Risk for Healthcare Systems
+Version: 0.1.0
+Authors@R: person("Muhammad Zahir", "Khan", 
+    email = "zahirstat007@gmail.com", 
+    role = c("aut", "cre"), 
+    comment = c(ORCID = "0009-0005-7645-8960"))
+Description: Vital Operational Waiting Risk (VOWR) provides tools for
+    analysing monthly Referral-to-Treatment (RTT) panel data in healthcare
+    systems. The package supports provider-level profiling, operational risk
+    classification, waiting-time volatility assessment, Kaplan-Meier survival
+    analysis, Cox proportional hazards modelling, and visualisation of
+    time-to-threshold breach patterns. It is designed to help analysts and
+    decision-makers identify providers with high waiting times, unstable
+    performance, and increased risk of earlier threshold breach. The survival
+    modelling methods follow Cox (1972)
+    <doi:10.1111/j.2517-6161.1972.tb00899.x> and Kaplan and Meier (1958)
+    <doi:10.1080/01621459.1958.10501452>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, ggplot2, survival, stats, utils, survminer
+Suggests: testthat (>= 3.0.0),
+Config/testthat/edition: 3
+URL: https://github.com/zerish12/VOWR
+BugReports: https://github.com/zerish12/VOWR/issues
+NeedsCompilation: no
+Packaged: 2026-05-17 08:24:39 UTC; muhammadzahirkhan
+Author: Muhammad Zahir Khan [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-7645-8960>)
+Maintainer: Muhammad Zahir Khan <zahirstat007@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-20 09:10:21 UTC

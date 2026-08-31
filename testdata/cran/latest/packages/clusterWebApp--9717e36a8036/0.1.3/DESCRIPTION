@@ -1,0 +1,26 @@
+Package: clusterWebApp
+Title: Universal Clustering Analysis Platform
+Version: 0.1.3
+Authors@R: 
+    person("Yijin", "Zhou", email = "yijin_zhou1116@163.com", role = c("aut", "cre"))
+Description: An interactive platform for clustering analysis and teaching based on the 'shiny' web application framework.
+    Supports multiple popular clustering algorithms including k-means, hierarchical clustering,
+    DBSCAN (Density-Based Spatial Clustering of Applications with Noise), PAM (Partitioning Around Medoids),
+    GMM (Gaussian Mixture Model), and spectral clustering. Users can upload datasets or use built-in ones,
+    visualize clustering results using dimensionality reduction methods such as Principal Component Analysis (PCA)
+    and t-distributed Stochastic Neighbor Embedding (t-SNE), evaluate clustering quality via silhouette plots,
+    and explore method-specific visualizations and guides. For details on implemented methods, see:
+    Reynolds (2009, ISBN:9781598296975) for GMM;
+    Luxburg (2007) <doi:10.1007/s11222-007-9033-z> for spectral clustering.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: shiny, shinythemes, shinycssloaders, cluster, factoextra,
+        datasets, ggplot2, dbscan, mclust, kernlab, Rtsne, DT, dplyr,
+        tidyr, mlbench, magrittr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-07-09 11:49:37 UTC; 86136
+Author: Yijin Zhou [aut, cre]
+Maintainer: Yijin Zhou <yijin_zhou1116@163.com>
+Repository: CRAN
+Date/Publication: 2025-07-14 16:50:02 UTC

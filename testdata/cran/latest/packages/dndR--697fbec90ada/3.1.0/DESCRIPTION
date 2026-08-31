@@ -1,0 +1,42 @@
+Package: dndR
+Type: Package
+Title: Dungeons & Dragons Functions for Players and Dungeon Masters
+Version: 3.1.0
+Date: 2025-06-11
+Authors@R: c(
+  person(given = "Nicholas", family = "Lyon", 
+         role = c("aut", "cre", "cph"),
+         email = "njlyon@alumni.iastate.edu",
+         comment = "https://orcid.org/0000-0003-3905-1078"),
+  person(given = "Tim", family = "Schatto-Eckrodt",
+         role = "aut", comment = "https://kudusch.de"),
+  person(given = "Humberto", family = "Nappo",
+         role = "aut", comment = "https://orcid.org/0000-0001-7810-1635"),
+  person(given = "Billy", family = "Mitchell",
+         role = "aut", comment = "https://wj-mitchell.github.io/")
+         )
+Maintainer: Nicholas Lyon <njlyon@alumni.iastate.edu>
+Description: The goal of 'dndR' is to provide a suite of Dungeons & Dragons related functions.
+    This package is meant to be useful both to players and Dungeon Masters (DMs).
+    Some functions apply to many tabletop role-playing games (e.g., dice rolling), but others are focused on Fifth Edition (a.k.a. "5e") and where possible both the 2014 and 2024 versions are supported.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Language: en-US
+RoxygenNote: 7.3.1
+URL: https://njlyon0.github.io/dndR/
+BugReports: https://github.com/njlyon0/dndR/issues
+Depends: R (>= 3.5)
+Imports: dplyr, ggplot2, magrittr, purrr, stringr, tidyr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-06-11 14:23:31 UTC; nick.lyon
+Author: Nicholas Lyon [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3905-1078>),
+  Tim Schatto-Eckrodt [aut] (https://kudusch.de),
+  Humberto Nappo [aut] (ORCID: <https://orcid.org/0000-0001-7810-1635>),
+  Billy Mitchell [aut] (https://wj-mitchell.github.io/)
+Repository: CRAN
+Date/Publication: 2025-06-11 14:40:02 UTC

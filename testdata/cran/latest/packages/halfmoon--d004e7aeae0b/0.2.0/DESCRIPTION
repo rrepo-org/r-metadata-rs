@@ -1,0 +1,31 @@
+Package: halfmoon
+Title: Techniques to Build Better Balance
+Version: 0.2.0
+Authors@R: 
+    person("Malcolm", "Barrett", , "malcolmbarrett@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-0299-5825"))
+Description: Build better balance in causal inference models. 'halfmoon'
+    helps you assess propensity score models for balance between groups
+    using metrics like standardized mean differences and visualization
+    techniques like mirrored histograms. 'halfmoon' supports both
+    weighting and matching techniques.
+License: MIT + file LICENSE
+URL: https://github.com/r-causal/halfmoon,
+        https://r-causal.github.io/halfmoon/
+BugReports: https://github.com/r-causal/halfmoon/issues
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, ggplot2, gtsummary (>= 2.1.0), propensity, purrr,
+        rlang, scales, smd, tibble, tidyr, tidyselect, tidysmd, vctrs
+Suggests: cards, cardx (>= 0.2.3), cobalt, covr, mgcv, survey, testthat
+        (>= 3.0.0), vdiffr, withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-04 16:56:30 UTC; malcolmbarrett
+Author: Malcolm Barrett [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-0299-5825>)
+Maintainer: Malcolm Barrett <malcolmbarrett@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-04 17:20:02 UTC

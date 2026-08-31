@@ -1,0 +1,29 @@
+Package: fastrda
+Type: Package
+Title: Fast Redundancy Analysis (RDA) with High-Performance 'C++'
+        Backend
+Version: 0.2.0
+Authors@R: person("Zeynel", "Cebeci", email = "cebeciz@gmail.com", role = c("aut", "cre"))
+Description: Provides a high-performance implementation of redundancy
+    analysis (RDA) in 'C++' using 'Armadillo' and 'OpenMP'. Supports standard
+    and partial RDA, centering, scaling, overall and axis-wise
+    permutation tests, biplot visualization, score extraction, and
+    prediction. Designed for large ecological, genomic, and other
+    multivariate data sets where computational speed and memory
+    efficiency are required.
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.0), parallel, ggplot2 (>= 3.3.0)
+Suggests: RhpcBLASctl, ggrepel (>= 0.9.0), RColorBrewer (>= 1.1-2),
+        knitr, rmarkdown, vegan
+LinkingTo: Rcpp, RcppArmadillo (>= 0.12.0)
+VignetteBuilder: knitr
+License: GPL (>= 3)
+Encoding: UTF-8
+SystemRequirements: OpenMP
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-21 07:16:15 UTC; user1
+Author: Zeynel Cebeci [aut, cre]
+Maintainer: Zeynel Cebeci <cebeciz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 14:30:02 UTC

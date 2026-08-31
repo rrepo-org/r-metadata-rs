@@ -1,0 +1,38 @@
+Package: dist.structure
+Title: Structured Random Variables for Reliability System Distributions
+Version: 0.5.0
+Authors@R: person("Alexander", "Towell",
+    email = "lex@metafunctor.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0001-6443-9897"))
+Description: Extends the 'algebraic.dist' distribution algebra to
+    random variables with internal structure: coherent reliability
+    systems decomposed into components arranged by a structure function
+    (series, parallel, k-out-of-n, bridge, and arbitrary topologies via
+    minimal path sets). Every 'dist_structure' object is a 'dist', so
+    the full distribution algebra (mean, vcov, sampler, surv, cdf) works
+    automatically via default methods that compose component-level
+    distributions through the topology. Adds structural queries:
+    structure function evaluation, minimal path and cut sets, system
+    signature, critical states, dual, Birnbaum structural importance,
+    and system reliability. Topology shortcut constructors (series_dist,
+    parallel_dist, kofn_dist, bridge_dist) produce ready-to-use dists
+    from component dists and a chosen structure.
+License: MIT + file LICENSE
+URL: https://github.com/queelius/dist.structure
+BugReports: https://github.com/queelius/dist.structure/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: algebraic.dist, stats, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, spelling, withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-07 07:57:13 UTC; spinoza
+Author: Alexander Towell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6443-9897>)
+Maintainer: Alexander Towell <lex@metafunctor.com>
+Repository: CRAN
+Date/Publication: 2026-05-12 18:10:02 UTC

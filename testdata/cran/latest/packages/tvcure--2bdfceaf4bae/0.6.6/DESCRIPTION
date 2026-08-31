@@ -1,0 +1,20 @@
+Package: tvcure
+Type: Package
+Title: Additive Cure Survival Model with Time-Varying Covariates
+Version: 0.6.6
+Authors@R: person("Philippe","Lambert", 
+ email="p.lambert@uliege.be", role=c("aut","cre"),
+ comment=c(ORCID ="0000-0002-3670-3328"))
+Maintainer: Philippe Lambert <p.lambert@uliege.be>
+BugReports: https://github.com/plambertULiege/tvcure/issues
+Description: Fit of a double additive cure survival model with time-varying covariates. The additive terms in the long- and short-term survival submodels, modelling the cure probability and the event timing for susceptible units, are estimated using Laplace P-splines. For more details, see Lambert and Kreyenfeld (2025) <doi:10.1093/jrsssa/qnaf035>.
+License: GPL-3
+URL: <https://github.com/plambertULiege/tvcure>
+Encoding: UTF-8
+Imports: cubicBsplines, Rfast, MASS, Matrix, mgcv
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-04-03 18:11:51 UTC; plambert
+Author: Philippe Lambert [aut, cre] (<https://orcid.org/0000-0002-3670-3328>)
+Repository: CRAN
+Date/Publication: 2025-04-07 16:00:01 UTC

@@ -1,0 +1,35 @@
+Package: dineR
+Title: Differential Network Estimation in R
+Version: 2.0.0
+Authors@R: 
+    c(person(given = "Ricardo Daniel",
+           family = "Marques Salgado",
+           role = c("aut", "cre"),
+           email = "ricardodansalgado@gmail.com",
+           comment = c(ORCID = "0000-0002-3125-5159")),
+    person(given = "Mohammad",
+           family = "Arashi",
+           role = "ctb"),
+    person(given = "Andriette",
+       family = "Bekker",
+       role = "ctb"))
+Description: An efficient and convenient set of functions to perform differential network estimation through the use of alternating direction method of multipliers optimization with a variety of different loss functions. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://ricsalgado.github.io/dineR/,
+        https://github.com/RicSalgado/dineR
+BugReports: https://github.com/RicSalgado/dineR/issues
+Imports: doSNOW, foreach, MASS, Matrix, parallel, progress
+Suggests: doParallel, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-30 15:34:39 UTC; ricardomarques
+Author: Ricardo Daniel Marques Salgado [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3125-5159>),
+  Mohammad Arashi [ctb],
+  Andriette Bekker [ctb]
+Maintainer: Ricardo Daniel Marques Salgado <ricardodansalgado@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-01 18:10:02 UTC

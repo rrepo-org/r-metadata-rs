@@ -1,0 +1,29 @@
+Package: WaveST
+Type: Package
+Title: Wavelet-Based Spatial Time Series Models
+Version: 0.1.0
+Authors@R: 
+    c(
+      person(given = "Dr. Md", family = "Yeasin",
+             email = "yeasin.iasri@gmail.com",
+             role = c("aut")),
+      person(given = "Dr. Ranjit Kumar", family = "Paul",
+             email = "ranjitstat@gmail.com",
+             role = c("aut", "cre")),
+      person(given = "Akarsh Kumar", family = "Singh",
+             role = c("aut"))
+      )
+Maintainer: Dr. Ranjit Kumar Paul <ranjitstat@gmail.com>
+Description: An integrated wavelet-based spatial time series modelling framework designed to enhance predictive accuracy under noisy and nonstationary conditions by jointly exploiting multi-resolution (wavelet) information and spatial dependence. The package implements WaveSARIMA() (Wavelet Based Spatial AutoRegressive Integrated Moving Average model using regression features with forecast::auto.arima()) and WaveSNN() (Wavelet Based Spatial Neural Network model using neuralnet with hyperparameter search). Both functions support spatial transformation via a user-supplied spatial matrix, lag feature construction, MODWT-based wavelet sub-series feature generation, time-ordered train/test splitting, and performance evaluation (Root Mean Square Error (RMSE), Mean Absolute Error (MAE), R-squared (R²), and Mean Absolute Percentage Error (MAPE)), returning fitted models and actual vs predicted values for train and test sets. The package has been developed using the algorithm of Paul et al. (2023) <doi:10.1007/s43538-025-00581-1>.   
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: forecast, stats, neuralnet, tsutils, wavelets
+Suggests: devtools, roxygen2, usethis
+License: GPL-3
+NeedsCompilation: no
+Packaged: 2026-03-11 05:54:57 UTC; YEASIN
+Author: Dr. Md Yeasin [aut],
+  Dr. Ranjit Kumar Paul [aut, cre],
+  Akarsh Kumar Singh [aut]
+Repository: CRAN
+Date/Publication: 2026-03-16 18:50:02 UTC

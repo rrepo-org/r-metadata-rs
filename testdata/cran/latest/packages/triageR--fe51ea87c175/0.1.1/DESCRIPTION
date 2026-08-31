@@ -1,0 +1,25 @@
+Package: triageR
+Title: Automated Machine Learning and AI Agent Tools for Clinical
+        Prediction Modelling
+Version: 0.1.1
+Authors@R: 
+    person("Uwakmfon", "Paul", , "uwakmfon31@gmail.com", role = c("aut", "cre", "cph"))
+Description: Provides a streamlined workflow for building, validating, and reporting clinical prediction models. Combines standard machine learning tools with an optional AI agent that recommends appropriate statistical methods, runs sensitivity analyses, and flags common pitfalls. Includes automated generation of reports aligned with TRIPOD+AI reporting guidance (Collins et al. (2024 <doi:10.1136/bmj-2023-078378>)) for reproducible, guideline-aligned research.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+URL: https://github.com/DevWebWacky/triageR
+BugReports: https://github.com/DevWebWacky/triageR/issues
+Suggests: knitr, rmarkdown, mlbench, missForest, ranger, spelling,
+        testthat (>= 3.0.0), xgboost, MASS
+Config/testthat/edition: 3
+Imports: DALEX, dplyr, ellmer, ggplot2, mice, naniar, parsnip, pROC,
+        quarto, recipes, tibble, tidyr, workflows, yardstick
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-01 16:07:18 UTC; Wacky
+Author: Uwakmfon Paul [aut, cre, cph]
+Maintainer: Uwakmfon Paul <uwakmfon31@gmail.com>
+Depends: R (>= 4.1.0)
+Repository: CRAN
+Date/Publication: 2026-08-02 18:50:02 UTC

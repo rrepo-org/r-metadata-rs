@@ -1,0 +1,31 @@
+Package: CustomDerivative
+Type: Package
+Title: Extensible Derivative Pricing and Risk Analytics
+Version: 0.2.0
+Authors@R: c(
+    person("Amit Kumar", "Jha", role = c("aut", "cre", "cph"),
+           email = "jha.8@iitj.ac.in")
+    )
+Description: Tools for pricing and analysing financial derivatives under
+    the classical lognormal diffusion model and geometric Brownian motion
+    assumptions. The package provides analytical European option prices,
+    Monte Carlo pricing with antithetic and control variates, confidence
+    intervals, finite-difference Greeks, and path simulation for
+    path-dependent payoffs. The simulation interfaces accept user-defined
+    payoff functions, enabling transparent construction of custom contracts
+    while reporting numerical uncertainty.
+License: MIT + file LICENSE
+URL: https://github.com/AIM-IT4/CustomDerivative
+BugReports: https://github.com/AIM-IT4/CustomDerivative/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: R6, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-28 03:13:21 UTC; runner
+Author: Amit Kumar Jha [aut, cre, cph]
+Maintainer: Amit Kumar Jha <jha.8@iitj.ac.in>
+Repository: CRAN
+Date/Publication: 2026-07-28 07:00:02 UTC

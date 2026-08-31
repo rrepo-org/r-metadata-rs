@@ -1,0 +1,37 @@
+Package: forrest
+Title: Publication-Ready Forest Plots
+Version: 0.3.0
+Authors@R: c(
+    person("Lorenzo", "Fabbri", email = "lorenzo.fabbri92sm@gmail.com",
+           role = c("aut", "cre", "cph"))
+  )
+Description: Creates publication-ready forest plots from any tabular data
+    containing point estimates and confidence intervals. Suitable for
+    visualising results from regression models, meta-analyses, subgroup
+    analyses, or any comparative study. Supports group and subgroup
+    headings, summary estimates displayed as diamonds, grouped estimates
+    with automatic colour and shape mapping, vertical dodging of multiple
+    estimates within the same row, customisable text columns alongside the
+    plot, and optional row striping. Provides a helper to export plots
+    to PDF, PNG, SVG, or TIFF. Built on 'tinyplot' for clean, consistent
+    visual styling with a minimal dependency footprint.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: tinyplot (>= 0.2.0)
+Suggests: broom, covr, data.table, knitr, marginaleffects, MatchIt,
+        quarto, rmarkdown, tibble, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/Needs/coverage: covr
+VignetteBuilder: quarto, knitr
+URL: https://lorenzofabbri.github.io/forrest/,
+        https://github.com/lorenzoFabbri/forrest
+BugReports: https://github.com/lorenzoFabbri/forrest/issues
+NeedsCompilation: no
+Packaged: 2026-03-27 11:47:54 UTC; lorenzo
+Author: Lorenzo Fabbri [aut, cre, cph]
+Maintainer: Lorenzo Fabbri <lorenzo.fabbri92sm@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-31 15:10:02 UTC

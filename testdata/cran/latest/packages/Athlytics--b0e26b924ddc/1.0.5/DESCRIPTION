@@ -1,0 +1,42 @@
+Package: Athlytics
+Title: Sports Physiology Analysis from Local 'Strava' Data
+Version: 1.0.5
+Authors@R: c(
+    person("Zhiang", "He", email = "ang@hezhiang.com", role = c("aut", "cre")),
+    person("Eunseop", "Kim", role = "rev",
+           comment = "Eunseop Kim reviewed the package (v. 1.0.4) for rOpenSci, see https://github.com/ropensci/software-review/issues/728"),
+    person("Simon", "Nolte", role = "rev",
+           comment = "Simon Nolte reviewed the package (v. 1.0.4) for rOpenSci, see https://github.com/ropensci/software-review/issues/728")
+    )
+Description: Tools for reproducible, offline analysis of endurance-training data
+    exported from 'Strava'. Provides data import, quality-control,
+    cohort-reference, and visualization helpers for sports-science indicators
+    including acute:chronic workload ratio, aerobic efficiency, cardiovascular
+    decoupling, exposure, and personal-best profiles.
+License: MIT + file LICENSE
+URL: https://docs.ropensci.org/Athlytics/,
+        https://github.com/ropensci/Athlytics
+BugReports: https://github.com/ropensci/Athlytics/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.0.0), ggplot2, lubridate, rlang (>= 0.4.0), tidyr,
+        zoo, tools, utils
+Suggests: FITfileR, knitr, pkgdown, R.utils, readr, rmarkdown, testthat
+        (>= 3.1.5), vdiffr, xml2
+Additional_repositories: https://grimbough.r-universe.dev
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-05-27 17:37:23 UTC; ang
+Author: Zhiang He [aut, cre],
+  Eunseop Kim [rev] (Eunseop Kim reviewed the package (v. 1.0.4) for
+    rOpenSci, see
+    https://github.com/ropensci/software-review/issues/728),
+  Simon Nolte [rev] (Simon Nolte reviewed the package (v. 1.0.4) for
+    rOpenSci, see
+    https://github.com/ropensci/software-review/issues/728)
+Maintainer: Zhiang He <ang@hezhiang.com>
+Repository: CRAN
+Date/Publication: 2026-05-28 03:10:02 UTC

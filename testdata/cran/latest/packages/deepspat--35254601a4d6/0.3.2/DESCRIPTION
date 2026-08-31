@@ -1,0 +1,40 @@
+Package: deepspat
+Type: Package
+Title: Deep Compositional Spatial Models
+Date: 2026-08-28
+Version: 0.3.2
+Authors@R: c(person(given = "Andrew", family = "Zammit-Mangion", role = "aut"), 
+             person(given = "Quan", family = "Vu", role = c("aut", "cre"),
+             email = "quanvustats@gmail.com"),
+             person(given = "Xuanjie", family = "Shao", role = "aut")
+             )
+Maintainer: Quan Vu <quanvustats@gmail.com>
+Description: Deep compositional spatial models are standard spatial covariance
+             models coupled with an injective warping function of the spatial 
+             domain. The warping function is constructed through a composition 
+             of multiple elemental injective functions in a deep-learning 
+             framework. The package implements two cases for the univariate setting; first,
+	     when these warping functions are known up to some weights that
+	     need to be estimated, and, second, when the weights in each layer are random.
+	     In the multivariate setting only the former case is available.
+	     Estimation and inference is done using `tensorflow`, which makes use of 
+             graphics processing units. 
+             For more details see Zammit-Mangion et al. (2022) <doi:10.1080/01621459.2021.1887741>,
+             Vu et al. (2022) <doi:10.5705/ss.202020.0156>,
+             Vu et al. (2023) <doi:10.1016/j.spasta.2023.100742>, and
+             Shao et al. (2025) <doi:10.48550/arXiv.2505.12548>.
+License: Apache License 2.0
+Imports: data.table, dplyr, Matrix, methods, rlang, reticulate, keras,
+        tensorflow, tfprobability, evd, SpatialExtremes, fields
+SystemRequirements: TensorFlow (https://www.tensorflow.org/),
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+URL: https://cran.r-project.org/package=deepspat
+BugReports: https://github.com/andrewzm/deepspat/issues
+Packaged: 2026-08-28 08:50:14 UTC; vudan
+Author: Andrew Zammit-Mangion [aut],
+  Quan Vu [aut, cre],
+  Xuanjie Shao [aut]
+Repository: CRAN
+Date/Publication: 2026-08-28 09:20:02 UTC

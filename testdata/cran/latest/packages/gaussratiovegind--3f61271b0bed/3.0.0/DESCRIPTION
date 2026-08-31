@@ -1,0 +1,38 @@
+Package: gaussratiovegind
+Title: Distribution of Gaussian Ratios
+Version: 3.0.0
+Authors@R: c(person("Pierre", family = "Santagostini", role = c("aut", "cre"), email = "pierre.santagostini@institut-agro.fr"),
+    person(given = "Nizar", family = "Bouhlel", role = "aut"),
+    person(given = "Angélina", family = "El Ghaziri", role = "aut"),
+    person(given = "David", family = "Rousseau", role = "ctb")
+    )
+Maintainer: Pierre Santagostini <pierre.santagostini@institut-agro.fr>
+Description: It is well known that the distribution of a Gaussian ratio
+    does not follow a Gaussian distribution.
+    The lack of awareness among users of vegetation indices about this
+    non-Gaussian nature could lead to incorrect statistical modeling
+    and interpretation.
+    This package provides tools to accurately handle and analyse such
+    ratios: density function, parameter estimation, simulation.
+    An example on the study of chlorophyll fluorescence can be found in
+    A. El Ghaziri et al. (2023) <doi:10.3390/rs15020528>
+    and another method for parameter estimation is given in Bouhlel et al. (2023)
+    <doi:10.23919/EUSIPCO58844.2023.10290111>.
+License: GPL (>= 3)
+URL: https://forge.inrae.fr/imhorphen/gaussratiovegind
+BugReports: https://forge.inrae.fr/imhorphen/gaussratiovegind/-/issues
+Encoding: UTF-8
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+Imports: MASS
+LazyData: true
+Suggests: testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-19 15:09:51 UTC; psantagosti
+Author: Pierre Santagostini [aut, cre],
+  Nizar Bouhlel [aut],
+  Angélina El Ghaziri [aut],
+  David Rousseau [ctb]
+Repository: CRAN
+Date/Publication: 2026-02-19 16:50:02 UTC

@@ -1,0 +1,42 @@
+Package: smoothedIPW
+Title: Time-Smoothed Inverse Probability Weighting for Repeatedly
+        Measured Outcomes
+Version: 0.1.0
+Authors@R: 
+    c(person("Sean", "McGrath", 
+             role = c("aut", "cre"),
+             email = "sean.mcgrath514@gmail.com", 
+             comment = c(ORCID = "0000-0002-7281-3516")),
+      person("Takuya", "Kawahara", 
+             role = c("aut")),
+      person("Jessica", "Young", 
+             role = c("aut"), 
+             email = "jyoung@hsph.harvard.edu", 
+             comment = c(ORCID = "0000-0002-2758-6932")))
+Description: Implements several methods to estimate effects of generalized 
+    time-varying treatment strategies on the mean of an outcome at one or more 
+    selected follow-up times of interest. Specifically, the package implements 
+    the time-smoothed inverse probability weighted estimators described in  
+    McGrath et al. (2025) <doi:10.48550/arXiv.2509.13971>. Outcomes may be repeatedly, 
+    non-monotonically, informatively, and sparsely measured in the data source. 
+    The package also supports settings where outcomes are truncated by death, 
+    i.e. some individuals die during follow-up which renders the outcome of 
+    interest undefined at the follow-up time of interest. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: data.table, progress
+Depends: R (>= 2.10)
+LazyData: true
+BugReports: https://github.com/stmcg/smoothedIPW/issues
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-07 17:21:08 UTC; Sean
+Author: Sean McGrath [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7281-3516>),
+  Takuya Kawahara [aut],
+  Jessica Young [aut] (ORCID: <https://orcid.org/0000-0002-2758-6932>)
+Maintainer: Sean McGrath <sean.mcgrath514@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-09 15:00:02 UTC

@@ -1,0 +1,50 @@
+Package: landmaRk
+Title: Time-to-Event Landmark Analysis using an Array of Longitudinal
+        and Survival Sub-Models
+Version: 0.1.3
+Authors@R: c(
+    person("Victor", "Velasco-Pardo", , "vvelasco@ed.ac.uk",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7166-1573")),
+    person("Nathan", "Constantine-Cooke", , "nathan.constantine-cooke@ed.ac.uk",
+           role = "aut", comment = c(ORCID = "0000-0002-4437-8713")),
+    person("Charlie", "Lees", , "charlie.lees@ed.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0002-0732-8215")),
+    person("Catalina", "Vallejos", , "catalina.vallejos@ed.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0003-3638-1960"))
+  )
+Description: Provides a modular end-to-end framework for dynamic risk prediction
+  based on time-to-event and longitudinal data. This allows flexible specifications
+  for the longitudinal and survival sub-models. The 'landmaRk' package enables
+  reproducible benchmarks of different model choices, including cross-validation
+  to assess out-of-sample predictive performance. Methods are described in
+  Velasco-Pardo, Constantine-Cooke, Lees and Vallejos (2026, manuscript under
+  preparation) 'Landmarking with Latent Class Mixed Models for Dynamic Prediction
+  of Time-to-event Data with Heterogeneous Biomarker Trajectories'.
+License: GPL (>= 3)
+BugReports: https://github.com/VallejosGroup/landmaRk/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0), survival
+Imports: dplyr, ggplot2, lme4, Matrix, methods, pec, riskRegression,
+        rlang, lcmm (>= 2.2.2), doParallel, foreach, utils, prodlim
+Suggests: JMbayes2, knitr, rmarkdown, testthat (>= 3.0.0), xml2,
+        tidyverse, spelling, joineR, survminer, withr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+LazyData: true
+VignetteBuilder: knitr
+URL: https://vallejosgroup.github.io/landmaRk/,
+        https://github.com/VallejosGroup/landmaRk
+Language: en-GB
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-01 16:54:57 UTC; vvelasco
+Author: Victor Velasco-Pardo [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7166-1573>),
+  Nathan Constantine-Cooke [aut] (ORCID:
+    <https://orcid.org/0000-0002-4437-8713>),
+  Charlie Lees [aut] (ORCID: <https://orcid.org/0000-0002-0732-8215>),
+  Catalina Vallejos [aut] (ORCID:
+    <https://orcid.org/0000-0003-3638-1960>)
+Maintainer: Victor Velasco-Pardo <vvelasco@ed.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-07-02 07:20:11 UTC

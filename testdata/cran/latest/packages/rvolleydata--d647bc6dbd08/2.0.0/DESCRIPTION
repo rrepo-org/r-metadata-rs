@@ -1,0 +1,31 @@
+Package: rvolleydata
+Title: Extract Data from Professional Volleyball Leagues in North
+        America
+Version: 2.0.0
+Authors@R: 
+    c(person("David", "Awosoga", , "odo.awosoga@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-2741-5770")),
+    person("Matthew", "Chow", , "mc2chow@uwaterloo.ca", role = c("aut"),
+           comment = c(ORCID = "0009-0009-6045-6839")),
+    person("Ryan", "Du", , "ryandu343@gmail.com", role = c("aut"))       
+           )
+Description: Gather boxscore, play-by-play, and auxiliary data from Major League Volleyball (MLV) <https://provolleyball.com>, League One Volleyball Pro (LOVB) <https://www.lovb.com/pro-league>, and Athletes Unlimited Pro Volleyball (AU) <https://auprosports.com/volleyball/> to create a repository of basic and advanced statistics for teams and players.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/awosoga/rvolleydata,
+        https://awosoga.github.io/rvolleydata/
+BugReports: https://github.com/awosoga/rvolleydata/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, lubridate, readr, tibble
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-07 21:07:16 UTC; ddawosog
+Author: David Awosoga [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-2741-5770>),
+  Matthew Chow [aut] (ORCID: <https://orcid.org/0009-0009-6045-6839>),
+  Ryan Du [aut]
+Maintainer: David Awosoga <odo.awosoga@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-08 04:00:02 UTC

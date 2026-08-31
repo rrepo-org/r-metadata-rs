@@ -1,0 +1,25 @@
+Package: vprint
+Version: 1.3
+Date: 2026-07-23
+Title: More Flexible Form of Boolean Verbose
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Author: Barry Zeeberg [aut, cre]
+Depends: R (>= 4.2.0)
+Description: R functions are not supposed to print text without giving
+ the user the option to turn the printing off or on using a Boolean
+ 'verbose' in a construct like 'if(verbose) print(...)'. But this black/white
+ approach is rather rigid, and an approach with shades of gray might be more
+ appropriate in many circumstances.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-23 15:30:47 UTC; barryzeeberg
+Repository: CRAN
+Date/Publication: 2026-07-23 16:10:02 UTC
+Config/roxygen2/version: 8.0.0

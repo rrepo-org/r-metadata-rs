@@ -1,0 +1,30 @@
+Package: flexlsx
+Type: Package
+Title: Exporting 'flextable' to 'xlsx' Files
+Version: 1.0.0
+Authors@R: person(given = "Tobias",
+                    family = "Heidler",
+                    role = c("aut", "cre", "cph"),
+                    email = "flexlsx@heidler.ovh",
+                    comment = c(ORCID = "0000-0001-9193-0980"))
+Description: Exports 'flextable' objects to 'xlsx' files,
+    utilizing functionalities provided by 'flextable' and 'openxlsx2'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: dplyr (>= 1.1.1), grDevices, openxlsx2 (>= 1.23), purrr, Rcpp,
+        rlang, stringi, tibble, tidyr (>= 1.0.0)
+Suggests: covr, gtsummary, flextable (>= 0.9.11), testthat (>= 3.0.0),
+        officer
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+URL: https://github.com/pteridin/flexlsx
+BugReports: https://github.com/pteridin/flexlsx/issues
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-02-14 14:25:24 UTC; tobias
+Author: Tobias Heidler [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-9193-0980>)
+Maintainer: Tobias Heidler <flexlsx@heidler.ovh>
+Repository: CRAN
+Date/Publication: 2026-02-14 14:40:28 UTC

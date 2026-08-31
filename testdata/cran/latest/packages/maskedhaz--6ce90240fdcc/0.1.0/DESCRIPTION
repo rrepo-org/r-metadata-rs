@@ -1,0 +1,32 @@
+Package: maskedhaz
+Title: Masked-Cause Likelihood Models for Series Systems with Arbitrary
+        Hazard Components
+Version: 0.1.0
+Authors@R: person("Alexander", "Towell", , "lex@metafunctor.com",
+                  role = c("aut", "cre"))
+Description: Likelihood-based inference for series systems with masked
+    component cause of failure, using arbitrary dynamic failure rate
+    component distributions. Computes log-likelihood, score, Hessian, and
+    maximum likelihood estimates for masked data satisfying conditions
+    C1, C2, C3 under general component hazard functions. Implements the
+    'series_md' protocol defined in the 'maskedcauses' package.
+License: GPL (>= 3)
+URL: https://github.com/queelius/maskedhaz,
+        https://queelius.github.io/maskedhaz/
+BugReports: https://github.com/queelius/maskedhaz/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: serieshaz, flexhaz, algebraic.dist, likelihood.model,
+        maskedcauses, generics, numDeriv, stats
+Suggests: testthat (>= 3.0.0), algebraic.mle, hypothesize, knitr,
+        rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-15 23:02:58 UTC; spinoza
+Author: Alexander Towell [aut, cre]
+Maintainer: Alexander Towell <lex@metafunctor.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 17:52:08 UTC

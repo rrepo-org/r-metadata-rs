@@ -1,0 +1,59 @@
+Package: targeted
+Type: Package
+Title: Targeted Inference
+Version: 0.9.0
+Authors@R: c(person(given = "Klaus K.",
+                    family = "Holst",
+                    role = c("aut", "cre"),
+                    email = "klaus@holst.it"),
+             person(given = "Benedikt",
+                    family = "Sommer",
+                    role = c("aut"),
+                    email = "benediktsommer92@gmail.com"),
+             person(given = "Andreas",
+                    family = "Nordland",
+                    role = c("aut"),
+                    email = "andreasnordland@gmail.com"),
+             person(given = "Christian B.",
+                    family = "Pipper",
+                    role = c("ctb"),
+                    email = "cbpipper@gmail.com"))
+Author: Klaus K. Holst [aut, cre],
+  Benedikt Sommer [aut],
+  Andreas Nordland [aut],
+  Christian B. Pipper [ctb]
+Maintainer: Klaus K. Holst <klaus@holst.it>
+Description: Various methods for targeted and semiparametric inference including
+	     augmented inverse probability weighted (AIPW) estimators for missing data and
+	     causal inference (Bang and Robins (2005) <doi:10.1111/j.1541-0420.2005.00377.x>),
+         one-step imputation (Nordland et al (2026)) <doi:10.48550/arXiv.2606.07174>),
+         variable importance and conditional average treatment effects (CATE)
+         (van der Laan (2006) <doi:10.2202/1557-4679.1008>),
+	     estimators for risk differences and relative risks (Richardson et al. (2017)
+	     <doi:10.1080/01621459.2016.1192546>), assumption lean inference for generalized
+         linear model parameters (Vansteelandt et al. (2022) <doi:10.1111/rssb.12504>).
+Depends: R (>= 4.1)
+Imports: R6, Rcpp (>= 1.1.1), abind, cli, future.apply, lava (>=
+        1.9.2), methods, mets (>= 1.3.12), quadprog, progressr, rlang,
+        survival
+Suggests: SuperLearner (>= 2.0-28), MASS, cmprsk, data.table, e1071,
+        earth, glmnet, grf, hal9001, mgcv, nnls, optimx, polle (>=
+        1.5), pracma, quarto, randomForestSRC, ranger, riskRegression,
+        scatterplot3d, tinytest, viridisLite, xgboost (>= 3.1.2.1),
+BugReports: https://github.com/kkholst/targeted/issues
+URL: https://kkholst.github.io/targeted/,
+        https://github.com/kkholst/targeted
+License: Apache License (== 2.0)
+LinkingTo: Rcpp, RcppArmadillo
+LazyLoad: yes
+NeedsCompilation: yes
+ByteCompile: yes
+RcppModules: riskregmodel
+Encoding: UTF-8
+VignetteBuilder: quarto
+SystemRequirements: Quarto command line tools
+        (https://github.com/quarto-dev/quarto-cli).
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-08-20 08:35:05 UTC; kkzh
+Repository: CRAN
+Date/Publication: 2026-08-21 09:50:02 UTC

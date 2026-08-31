@@ -1,0 +1,24 @@
+Package: gtakeout
+Title: Extract Data from Google Takeout
+Version: 0.1.0
+Authors@R: 
+    person("Jordi", "Rosell", , "jroselln@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-4349-1458"))
+Description: Provides functions to analyze data exported from 'Google Takeout'. The package supports unzipping archives and extracting user review data from Google Business Profile exports into tidy data frames for further analysis.
+License: MIT + file LICENSE
+Depends: R (>= 4.1)
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Imports: dplyr, fs, here, jsonlite, purrr, rlang, stringr, zip
+URL: https://github.com/jrosell/gtakeout
+BugReports: https://github.com/jrosell/gtakeout/issues
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-13 08:56:35 UTC; jordi
+Author: Jordi Rosell [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-4349-1458>)
+Maintainer: Jordi Rosell <jroselln@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-18 11:20:10 UTC

@@ -1,0 +1,48 @@
+Package: Rtinycc
+Title: Builds the 'TinyCC' Command-Line Interface and Library for 'C'
+        Scripting in 'R'
+Version: 0.1.15
+Authors@R: c(
+    person(given = "Sounkou Mahamane", family = "Toure", 
+    email = "sounkoutoure@gmail.com", role = c("aut", "cre")),
+    person(given = "Mike", family = "Cheng", role = c("cph"),
+    comment = "Adapted parts of the vignette knitr engine from the callme package"),
+    person(given = "Adam", family = "Dunkels", role = c("ctb"),
+    comment = "Author of the bundled Protothreads headers"),
+    person(family = "Swedish Institute of Computer Science", role = c("cph"),
+    comment = "Copyright holder for the bundled Protothreads headers"),
+    person(given = "Fabrice Bellard and TinyCC authors", role = c("cph"),
+    comment = "TinyCC compiler authors and copyright holders")
+    )
+Description: Builds the 'TinyCC' (Tiny 'C' Compiler) command-line interface
+    and library for package use in 'R'. The package compiles 'TinyCC' from source and
+    provides R functions to interact with the compiler. 'TinyCC' can be
+    used for header preprocessing, just-in-time compilation of 'C' code in
+    'R', and lightweight 'C' scripting workflows.
+License: GPL (>= 3)
+Copyright: See inst/LICENSE.note for bundled TinyCC copyright and
+        licensing details.
+Depends: R (>= 4.4.0)
+Imports: lambda.r
+Suggests: bench, callme, knitr, rmarkdown, tinytest, treesitter.c (>=
+        0.0.4)
+VignetteBuilder: knitr
+SystemRequirements: GNU make
+Encoding: UTF-8
+URL: https://github.com/sounkou-bioinfo/Rtinycc,
+        https://sounkou-bioinfo.github.io/Rtinycc/
+BugReports: https://github.com/sounkou-bioinfo/Rtinycc/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-25 21:34:33 UTC; sounkoutoure
+Author: Sounkou Mahamane Toure [aut, cre],
+  Mike Cheng [cph] (Adapted parts of the vignette knitr engine from the
+    callme package),
+  Adam Dunkels [ctb] (Author of the bundled Protothreads headers),
+  Swedish Institute of Computer Science [cph] (Copyright holder for the
+    bundled Protothreads headers),
+  Fabrice Bellard and TinyCC authors [cph] (TinyCC compiler authors and
+    copyright holders)
+Maintainer: Sounkou Mahamane Toure <sounkoutoure@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-26 00:20:02 UTC

@@ -1,0 +1,36 @@
+Package: PsyMetricTools
+Version: 1.2.2
+Title: Psychometric and Statistical Analysis Tools
+Description: Provides tools for psychometric and statistical analysis in
+    social sciences, including functions for data preprocessing, factor
+    analysis, reliability testing, descriptive statistics, visualization of
+    Likert-scale items, measurement invariance analysis, and handling of
+    multi-class imbalance. Facilitates advanced data analysis tasks commonly
+    encountered in psychological and educational research. Includes an
+    updated easy_invariance() function for ordinal data following
+    Wu and Estabrook (2016) <doi:10.1037/met0000051>.
+Authors@R: person("Jose", "Ventura-Leon",
+                  email = "jventuraleon@gmail.com",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0003-2996-4244"))
+License: GPL (>= 3)
+URL: https://github.com/jventural/PsyMetricTools
+BugReports: https://github.com/jventural/PsyMetricTools/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: lavaan, semTools, psych, dplyr, tidyr, ggplot2, purrr, tibble,
+        stringr, gridExtra, gtable, grid, pbapply, tidyselect, rlang,
+        grDevices, scales, stats, utils
+Suggests: testthat (>= 3.0.0), EGAnet, bootnet, future, future.apply,
+        progressr, progress, careless, qgraph, semPlot, ggridges,
+        ggpubr, forcats, RColorBrewer, openxlsx, lavaan.mi, blavaan,
+        HDInterval, ggplotify, patchwork, wesanderson, circlize
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-07-28 17:49:55 UTC; PC
+Author: Jose Ventura-Leon [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2996-4244>)
+Maintainer: Jose Ventura-Leon <jventuraleon@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-06 13:10:21 UTC

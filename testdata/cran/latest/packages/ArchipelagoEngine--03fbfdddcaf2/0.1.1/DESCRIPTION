@@ -1,0 +1,29 @@
+Package: ArchipelagoEngine
+Title: Spatial Weight Construction for Archipelagic Geographies
+Version: 0.1.1
+Authors@R: 
+    person("NJ", "Talingting", 
+           email = "ninotalingting77@gmail.com", 
+           role = c("aut", "cre"))
+Description: Implements specialized K-Nearest Neighbor (KNN) logic to 
+    address the unique challenges of spatial modeling in archipelagic 
+    environments. Standard contiguity models often leave significant 
+    portions of island nations (e.g., 20% of the Philippines) 
+    mathematically isolated. This package provides tools to ensure 
+    100% network connectivity, neutralizing spatial bias and 
+    enabling robust econometric inference. Methodology follows 
+    Anselin (1988, ISBN:9024737354) and LeSage and Pace (2009) <doi:10.1201/9781420064254>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: sf, spdep, magrittr
+Suggests: splm, spatialreg, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-03-06 03:54:00 UTC; Nino Jay Talingting
+Author: NJ Talingting [aut, cre]
+Maintainer: NJ Talingting <ninotalingting77@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-10 12:10:07 UTC

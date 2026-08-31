@@ -1,0 +1,24 @@
+Package: abms
+Title: Augmented Bayesian Model Selection for Regression Models
+Version: 0.2
+Authors@R: c(
+    person("Francisco", "Segovia", role = c("aut", "cre"), email = "fasegovia@uc.cl"),
+    person("Luis", "Gutierres", role = c("aut"), email = "llgutier@mat.uc.cl"),
+    person("Ramses", "Mena", role = c("aut"), email = "ramses@sigma.iimas.unam.mx")
+    )
+Description: Tools to perform model selection alongside estimation under Linear, Logistic, Negative binomial, Quantile, and Skew-Normal regression. Under the spike-and-slab method, a probability for each possible model is estimated with the posterior mean, credibility interval, and standard deviation of coefficients and parameters under the most probable model.
+License: GPL (>= 3)
+URL: https://github.com/SirCornflake/BMS
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+Imports: BayesLogit, GIGrvg, mvtnorm, truncnorm
+Depends: R (>= 3.6.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-04-05 21:17:15 UTC; asus
+Author: Francisco Segovia [aut, cre],
+  Luis Gutierres [aut],
+  Ramses Mena [aut]
+Maintainer: Francisco Segovia <fasegovia@uc.cl>
+Repository: CRAN
+Date/Publication: 2025-04-05 21:30:03 UTC

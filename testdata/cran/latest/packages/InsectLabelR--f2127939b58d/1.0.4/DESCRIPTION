@@ -1,0 +1,33 @@
+Package: InsectLabelR
+Title: Create Labels for Insect in Collection
+Version: 1.0.4
+Authors@R: 
+    c(person(given = "Nicolas", 
+           family = "Moiroux", 
+           email = "nicolas.moiroux@ird.fr", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6755-6167")),
+    person(given = "Nil", 
+           family = "Rahola", 
+           email = "nil.rahola@ird.fr", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-4067-6438")))
+Description: Streamlines the creation of high-quality labels for insect pinning. By taking a dataset as input, the package allow to generate printable labels in 'LaTeX' and PDF format, helping researchers and entomologists maintain accurate and standardized specimen records. Requires a compatible installation of 'pdflatex' (e.g. <https://www.tug.org/texlive/>). For enhanced accessibility, the package includes a user-friendly 'shiny' application (accessible online <https://nicolas-moiroux.shinyapps.io/InsectLabelR/>), which provides a graphical interface for generating labels without requiring programming expertise. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, stringr, magrittr, shiny, tools
+Suggests: testthat (>= 3.0.0), shinyjs, readxl, readr, readODS, DT,
+        editbl (>= 1.1.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.0)
+LazyData: true
+SystemRequirements: pdflatex
+NeedsCompilation: no
+Packaged: 2026-03-26 09:14:19 UTC; nm
+Author: Nicolas Moiroux [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6755-6167>),
+  Nil Rahola [aut] (ORCID: <https://orcid.org/0000-0003-4067-6438>)
+Maintainer: Nicolas Moiroux <nicolas.moiroux@ird.fr>
+Repository: CRAN
+Date/Publication: 2026-03-30 19:00:02 UTC

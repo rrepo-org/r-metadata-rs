@@ -1,0 +1,36 @@
+Package: iDIFr
+Type: Package
+Title: Intersectional Differential Item Functioning Analysis
+Version: 1.0.1
+Authors@R: person("Thomas", "Rogers", email = "thomas.rogers@britishcouncil.org", role = c("aut", "cre"))
+Description: A toolkit for detecting Differential Item Functioning (DIF) 
+    using Logistic Regression (LR) as described in Swaminathan and Rogers 
+    (1990) <doi:10.1111/j.1745-3984.1990.tb00754.x>, the IRT Likelihood Ratio Test 
+    (LRT) following Thissen, Steinberg & Wainer
+    (1993, ISBN:0-8058-0972-4), and model-based recursive partitioning 
+    (MOB) as implemented in 'strucchange' following Strobl, Kopf and Zeileis 
+    (2015) <doi:10.1007/s11336-013-9388-3>. Designed for both standard two-group 
+    and intersectional multi-group designs, 'iDIFr' prioritises effect size 
+    reporting alongside statistical significance, clear guidance on group 
+    construction, and interpretable output suitable for applied testing 
+    contexts. Built-in Intersectional Contrast Analysis (ICA) classifies 
+    items as amplified, pure-intersection, obscured, or none by comparing 
+    single-variable and intersectional analyses. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: Rcpp (>= 1.0.0), generics, parallel, stats, cli, dplyr,
+        ggplot2, rlang, strucchange
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, openxlsx
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/thmsrgrs/iDIFr
+BugReports: https://github.com/thmsrgrs/iDIFr/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-02 10:59:57 UTC; TMRog
+Author: Thomas Rogers [aut, cre]
+Maintainer: Thomas Rogers <thomas.rogers@britishcouncil.org>
+Repository: CRAN
+Date/Publication: 2026-06-08 17:50:06 UTC

@@ -1,0 +1,36 @@
+Package: reptiledbr
+Title: Interface to 'The Reptile Database' Taxon Data
+Version: 0.1.0
+Authors@R: c(
+    person(
+        given = "Paul Efren",
+        family = "Santos Andrade",
+        role = c("aut", "cre", "cph"),
+        email = "paulefrens@gmail.com",
+        comment = c(ORCID = "0000-0002-6635-0375")
+    ))
+Description: Provides tools to search, access, and format taxonomic information 
+    from 'The Reptile Database' (<https://reptile-database.org>) directly within 'R'. 
+    Users can retrieve species-level data, distribution, etymology, synonyms, 
+    common names, and other relevant information for reptiles. Designed for 
+    taxonomists, ecologists, and biodiversity researchers.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: xml2, stringr, purrr, tibble, tidyr, dplyr, utils, lifecycle,
+        fuzzyjoin, cli
+Suggests: covr, knitr, reptiledb.data, rlang, rmarkdown, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+URL: https://github.com/PaulESantos/reptiledbr,
+        https://paulesantos.github.io/reptiledbr/
+BugReports: https://github.com/PaulESantos/reptiledbr/issues
+VignetteBuilder: knitr
+Maintainer: Paul Efren Santos Andrade <paulefrens@gmail.com>
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-01 03:39:25 UTC; PC
+Author: Paul Efren Santos Andrade [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6635-0375>)
+Repository: CRAN
+Date/Publication: 2026-08-01 09:10:02 UTC

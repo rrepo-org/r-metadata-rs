@@ -1,0 +1,48 @@
+Package: shoppingwords
+Title: Text Processing Tools for Turkish E-Commerce Data
+Description: Provides several datasets useful for processing and analysis of text in Turkish from an online shopping platform.
+Version: 0.1.0
+Maintainer: Betul Kan-Kilinc <bkan@eskisehir.edu.tr>
+Authors@R: 
+    c(
+        person(
+            given = "Betul",
+            family = "Kan-Kilinc",
+            email = "bkan@eskisehir.edu.tr",
+            comment = c(ORCID = "0000-0002-3746-2327"),
+            role = c("aut", "cre")
+        ),
+    person(
+            given = "Mine", 
+            family = "\u00C7etinkaya-Rundel", 
+            email = "cetinkaya.mine@gmail.com", 
+            comment = c(ORCID = "0000-0001-6452-2420"),
+            role = c("ctb")
+        ),
+    person(
+            given = "Colin",
+            family = "Rundel",
+            email = "cr173@duke.edu",
+            comment = c(ORCID = "0000-0002-6058-8251"), 
+            role = c("ctb"),
+        )
+    )
+Imports: stringi, stopwords, stringdist, tibble
+Depends: R (>= 4.0.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+Suggests: knitr, rmarkdown, dplyr, ggplot2
+VignetteBuilder: knitr
+LazyDataCompression: xz
+URL: https://bkanx.github.io/shoppingwords/
+NeedsCompilation: no
+Packaged: 2025-07-22 19:48:22 UTC; mac
+Author: Betul Kan-Kilinc [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3746-2327>),
+  Mine Çetinkaya-Rundel [ctb] (ORCID:
+    <https://orcid.org/0000-0001-6452-2420>),
+  Colin Rundel [ctb] (ORCID: <https://orcid.org/0000-0002-6058-8251>)
+Repository: CRAN
+Date/Publication: 2025-07-23 19:20:02 UTC

@@ -1,0 +1,38 @@
+Package: trps
+Type: Package
+Title: Bayesian Trophic Position Models using 'stan'
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Benjamin L.", "Hlina",
+      email = "benjamin.hlina@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Bayesian trophic position models using 'stan' by leveraging 'brms' for 
+             stable isotope data. Trophic position models are derived by using 
+             equations from 
+             Post (2002) <doi:10.1890/0012-9658(2002)083[0703:USITET]2.0.CO;2>,
+             Vander Zanden and Vadeboncoeur (2002) <doi:10.1890/0012-9658(2002)083[2152:FAIOBA]2.0.CO;2>, 
+             and 
+             Heuvel et al. (2024) <doi:10.1139/cjfas-2024-0028>. 
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports: brms, cli, dplyr, lifecycle
+Suggests: bayesplot, ggdist, ggplot2, grid, knitr, purrr, rmarkdown,
+        testthat (>= 3.0.0), tidybayes, tidyr, viridis
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+URL: https://benjaminhlina.github.io/trps/,
+        https://github.com/benjaminhlina/trps
+BugReports: https://github.com/benjaminhlina/trps/issues
+VignetteBuilder: knitr
+LazyDataCompression: xz
+NeedsCompilation: no
+Packaged: 2025-03-19 17:24:31 UTC; benhlina
+Author: Benjamin L. Hlina [aut, cre]
+Maintainer: Benjamin L. Hlina <benjamin.hlina@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-21 16:00:02 UTC

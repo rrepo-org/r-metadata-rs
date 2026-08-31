@@ -1,0 +1,27 @@
+Package: RFIF
+Type: Package
+Title: Fast Iterative Filtering (FIF) with Portable FFT Backend
+Version: 1.0.2
+Authors@R: 
+    person("Chuck", "Coleman", role = c("aut","cre"), email = "cdcoleman113@gmail.com",
+    	comment = c(ORCID = "0000-0001-6940-8117"))
+Description: Provides an R interface to a C implementation of Fast Iterative Filtering (FIF)
+    for decomposing a univariate signal into intrinsic mode functions (IMFs) and a residual.
+    The package uses Fast Fourier Transform library FFTW, if found.  If not, it provides
+    instructions to install it for your OS.  This is recommended, as R's internal fft(), while
+    avoiding external FFT dependencies, is two orders of magnitude slower.  See vignette
+    'Installing FFTW for RFIF' for RFIF installation instructions.
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+License: MIT + file LICENSE
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://github.com/ChuckColeman/RFIF
+BugReports: https://github.com/ChuckColeman/RFIF/issues
+NeedsCompilation: yes
+Packaged: 2026-05-23 22:25:57 UTC; Common
+Author: Chuck Coleman [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6940-8117>)
+Maintainer: Chuck Coleman <cdcoleman113@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-24 14:40:08 UTC

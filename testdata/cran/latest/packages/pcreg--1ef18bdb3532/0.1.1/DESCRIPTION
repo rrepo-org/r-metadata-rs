@@ -1,0 +1,26 @@
+Package: pcreg
+Title: Advanced Methods for Principal Component Analysis and Principal
+        Component Regression
+Type: Package
+Version: 0.1.1
+Authors@R: c(person("Dr. Pramit", "Pandit", role = c("aut", "cre"), email = "pramitpandit@gmail.com"),
+  person("Dr. Halagundegowda", "G R", role = "aut"),
+  person("Dr. Kamidi", "Rahul", role = "aut"),
+  person("Dr. S. Gandhi", "Doss", role = "aut"))
+Author: Dr. Pramit Pandit [aut, cre],
+  Dr. Halagundegowda G R [aut],
+  Dr. Kamidi Rahul [aut],
+  Dr. S. Gandhi Doss [aut]
+Description: Provides a unified framework for principal component analysis (PCA) and principal component regression (PCR), including standard PCA, sparse PCA, robust PCA, and supervised PCA. The package supports automatic selection of the number of components using cumulative variance and elbow methods and integrates PCA with regression modelling through PCR models. It includes tools for PCA suitability assessment using Bartlett's test of sphericity and the Kaiser-Meyer-Olkin (KMO) measure. Visualisation utilities such as scree plots and biplots are provided for interpretation. The methods are designed to handle multicollinearity, outliers, and high-dimensional data, making them suitable for applied statistical modelling and data analysis. The methodology is based on established approaches described in Jolliffe (2002) <doi:10.1007/b98835>, Zou et al. (2006) <doi:10.1111/j.1467-9868.2005.00503.x>, and Hubert et al. (2005) <doi:10.1198/004017004000000563>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats, ggplot2, ggrepel, gridExtra, scales, psych, elasticnet,
+        robustbase, grid
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-31 09:23:30 UTC; prami
+Maintainer: Dr. Pramit Pandit <pramitpandit@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-31 15:00:08 UTC

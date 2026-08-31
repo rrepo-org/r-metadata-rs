@@ -1,0 +1,37 @@
+Package: ssel
+Type: Package
+Title: Semi-Supervised Ensemble Learning
+Version: 0.4.0
+Authors@R: 
+    person("Alejandro", "Verri Kozlowski", , "averri@fi.uba.ar",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-8535-1170"))
+Description: Weighted-ensemble regression over base learners supported by
+    'caret' (Kuhn (2008) <doi:10.18637/jss.v028.i05>), with cross-validated
+    hyperparameter selection, out-of-fold diagnostics, and signed residual-
+    offset estimates. Multi-response problems use iterative input-space
+    expansion related to Spyromitros-Xioufis et al. (2016)
+    <doi:10.1007/s10994-016-5546-z>, with Jacobi or 'Gauss-Seidel' sweeps,
+    package-defined companion gates and per-response iteration stitching.
+    A package-defined pseudo-label stage promotes prediction rows by a
+    cross-model and cross-dataset range ratio and accepts rounds with an
+    out-of-fold squared-correlation gauge.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+URL: https://averriK.github.io/ssel/
+Depends: R (>= 4.1.0)
+Imports: caret, crayon, data.table, dbscan, digest, doParallel, earth,
+        foreach, gbm, jsonlite, ranger, stats, utils
+Suggests: devtools, htmlwidgets, knitr, pak, pkgdown, rcmdcheck,
+        rmarkdown, roxygen2, rhub, testthat (>= 3.0.0), webshot2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-24 18:30:03 UTC; averrik
+Author: Alejandro Verri Kozlowski [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8535-1170>)
+Maintainer: Alejandro Verri Kozlowski <averri@fi.uba.ar>
+Repository: CRAN
+Date/Publication: 2026-08-24 18:50:02 UTC

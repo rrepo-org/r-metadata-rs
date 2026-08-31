@@ -1,0 +1,39 @@
+Package: PhotoGEA
+Version: 1.4.0
+Date: 2025-08-25
+Title: Photosynthetic Gas Exchange Analysis
+Description: Read, process, fit, and analyze photosynthetic gas exchange
+    measurements. Documentation is provided by several vignettes; also see
+    Lochocki, Salesse-Smith, & McGrath (2025) <doi:10.1111/pce.15501>.
+Authors@R: c(
+    person("Edward B.", "Lochocki", role = c('cre', 'aut'),
+           email = "eloch@illinois.edu",
+           comment = c(ORCID = "0000-0002-4912-9783")),
+    person("Coralie E.", "Salesse-Smith", role = 'aut',
+           comment = c(ORCID = "0000-0002-2856-4217")),
+    person("Justin M.", "McGrath", role = 'aut',
+           comment = c(ORCID = "0000-0002-7025-3906")),
+    person("PhotoGEA authors", role = "cph")
+    )
+Depends: R (>= 3.6.0)
+Imports: openxlsx, lattice, dfoptim, DEoptim
+Suggests: knitr, rmarkdown, plantecophys, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/eloch216/PhotoGEA,
+        https://eloch216.github.io/PhotoGEA/
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-08-25 15:30:56 UTC; eloch
+Author: Edward B. Lochocki [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-4912-9783>),
+  Coralie E. Salesse-Smith [aut] (ORCID:
+    <https://orcid.org/0000-0002-2856-4217>),
+  Justin M. McGrath [aut] (ORCID:
+    <https://orcid.org/0000-0002-7025-3906>),
+  PhotoGEA authors [cph]
+Maintainer: Edward B. Lochocki <eloch@illinois.edu>
+Repository: CRAN
+Date/Publication: 2025-08-25 15:50:08 UTC

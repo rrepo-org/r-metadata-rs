@@ -1,0 +1,22 @@
+Package: QualityMeasure
+Title: Methods for Analyzing Quality Measure Performance
+Version: 2.0.2
+Date: 2026-07-09
+Authors@R: 
+    person("Kenneth", "Nieser", , "nieser@stanford.edu", role = c("aut", "cre", "cph"))
+Description: Quality of care is compared across accountable entities, including hospitals, provider groups, and insurance plans, using standardized quality measures. However, observed variations in quality measure performance might be the result of chance sampling or measurement errors. Contains functions for estimating the reliability of unadjusted and risk-standardized quality measures.
+License: GPL (>= 3)
+Depends: R (>= 4.0), ggplot2, doParallel, lme4
+Imports: foreach, parallel, rlang
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-09 21:12:56 UTC; knies
+Author: Kenneth Nieser [aut, cre, cph]
+Maintainer: Kenneth Nieser <nieser@stanford.edu>
+Repository: CRAN
+Date/Publication: 2026-07-09 21:40:02 UTC

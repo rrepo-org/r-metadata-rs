@@ -1,0 +1,29 @@
+Package: SparseBiplots
+Type: Package
+Title: 'HJ-Biplot' using Different Ways of Penalization Plotting with
+        'ggplot2'
+Version: 4.1.1
+Authors@R: c(
+  person(given = c("Mitzi", "Isabel"), family = "Cubilla-Montilla", role = c("aut", "cre"), email = "mitzi@usal.es"),
+  person(given = c("Carlos", "Alfredo"), family = "Torres-Cubilla", role = "aut", email = "carlos_t22@usal.es"),
+  person(given = c("Maria", "Purificación"), family = "Galindo Villardón", role = "aut", email = "pgalindo@usal.es"),
+  person(given = c("Ana", "Belen"), family = "Nieto-Librero", role = "aut", email = "ananieto@usal.es")
+  )
+Maintainer: Mitzi Isabel Cubilla-Montilla <mitzi@usal.es>
+Description: The 'HJ-Biplot' is a multivariate method that represents high-dimensional data in a low-dimensional subspace, capturing most of the information’s variability in just a few dimensions. This package implements three new regularized versions of the HJ-Biplot: Ridge, LASSO, and Elastic Net. These versions introduce restrictions that shrink or zero-out variable weights to improve interpretability based on regularization theory. All methods provide graphical representations using 'ggplot2'.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.3.0), ggplot2
+Imports: ggrepel, stats, sparsepca
+Suggests: testthat
+URL: https://github.com/mitzicubillamontilla/SparseBiplots
+BugReports: https://github.com/mitzicubillamontilla/SparseBiplots/issues
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-07-10 17:48:30 UTC; calic
+Author: Mitzi Isabel Cubilla-Montilla [aut, cre],
+  Carlos Alfredo Torres-Cubilla [aut],
+  Maria Purificación Galindo Villardón [aut],
+  Ana Belen Nieto-Librero [aut]
+Repository: CRAN
+Date/Publication: 2025-07-11 04:40:02 UTC

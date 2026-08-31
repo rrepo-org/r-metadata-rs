@@ -1,0 +1,30 @@
+Package: LISTO
+Type: Package
+Title: Performing Comprehensive Overlap Assessments
+Version: 0.8.1
+Authors@R: person('Andrei-Florian', 'Stoica', 
+      email='andreistoica@foxmail.com',
+     role=c('aut','cre'),
+     comment=c(ORCID='0000-0002-5253-0826'))
+Description: The implementation of a statistical framework for performing overlap assessments on
+    lists comprising sets of strings (such as lists of gene sets) described in Stoica (2023)
+    <https://ora.ox.ac.uk/objects/uuid:b0847284-a02f-47ee-88e3-a3c4e0cdb8b1>.
+    It can assess overlaps of pairs of sets of strings selected either from the same universe or 
+    from different universes, and overlaps of triplets of sets of strings selected from the same
+    universe. Designed for single-cell RNA-sequencing data analysis applications, but suitable
+    for other purposes as well.
+License: MIT + file LICENSE
+Imports: methods, parallel, primes, statisfactory, stats
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: qs2, scRNAseq, scuttle, Seurat, testthat (>= 3.0.0), withr
+URL: https://github.com/andrei-stoica26/LISTO
+BugReports: https://github.com/andrei-stoica26/LISTO/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-13 02:37:03 UTC; Andrei
+Author: Andrei-Florian Stoica [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5253-0826>)
+Maintainer: Andrei-Florian Stoica <andreistoica@foxmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-13 05:50:08 UTC

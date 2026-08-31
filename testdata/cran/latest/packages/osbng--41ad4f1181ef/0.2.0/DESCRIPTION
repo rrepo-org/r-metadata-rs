@@ -1,0 +1,38 @@
+Package: osbng
+Title: Geospatial Grid Indexing with the British National Grid
+Version: 0.2.0
+Authors@R: c(
+    person("Chris", "Jochem", email = "chris.jochem@os.uk", role = c("cre", "aut")),
+    person("Ordnance Survey Ltd", role = c("cph", "fnd")),
+    person("Steve", "Kingston", role = c("ctb")),
+    person("Kate", "New", role = c("ctb")),
+    person("Tom", "Peterken", role = c("ctb")))
+Description: Offers a streamlined programmatic interface to Ordnance Survey's 
+    British National Grid (BNG) index system, enabling efficient spatial 
+    indexing and analysis based on grid references. It supports a range of 
+    geospatial applications, including statistical aggregation, data 
+    visualisation, and interoperability across datasets. Designed for 
+    developers and analysts working with geospatial data in Great Britain, 
+    'osbng' simplifies integration with geospatial workflows and provides 
+    intuitive tools for exploring the structure and logic of the BNG system.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, sf, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+Imports: geos
+VignetteBuilder: knitr
+URL: https://ordnancesurvey.github.io/osbng-r/,
+        https://github.com/OrdnanceSurvey/osbng-r
+BugReports: https://github.com/OrdnanceSurvey/osbng-r/issues
+NeedsCompilation: no
+Packaged: 2025-07-01 08:54:29 UTC; wjochem
+Author: Chris Jochem [cre, aut],
+  Ordnance Survey Ltd [cph, fnd],
+  Steve Kingston [ctb],
+  Kate New [ctb],
+  Tom Peterken [ctb]
+Maintainer: Chris Jochem <chris.jochem@os.uk>
+Repository: CRAN
+Date/Publication: 2025-07-05 18:30:06 UTC

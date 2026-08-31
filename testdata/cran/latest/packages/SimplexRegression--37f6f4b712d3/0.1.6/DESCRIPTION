@@ -1,0 +1,47 @@
+Type: Package
+Package: SimplexRegression
+Title: Simplex Regression Models with Parametric or Fixed Mean Link
+        Functions
+Version: 0.1.6
+Authors@R: c(
+    person("Maria Eduarda da Cruz", "Justino", , "eueduardacruz@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9501-2642")),
+    person("Francisco", "Cribari-Neto", , "francisco.cribari@ufpe.br", role = c("ctb", "ths"),
+           comment = c(ORCID = "0000-0002-5909-6698"))
+  )
+Author: Maria Eduarda da Cruz Justino [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9501-2642>),
+  Francisco Cribari-Neto [ctb, ths] (ORCID:
+    <https://orcid.org/0000-0002-5909-6698>)
+Maintainer: Maria Eduarda da Cruz Justino <eueduardacruz@gmail.com>
+Description: Fits and analyzes simplex regression models with either
+    fixed or parametric mean link functions. Implements the simplex
+    probability density function, cumulative distribution function,
+    quantile function, random number generation, and variance evaluation.
+    Offers several fixed and parametric link functions for the mean
+    submodel, tools for residual analysis and diagnostic plotting,
+    hypothesis testing procedures, and influence measures such as Cook's
+    distance and leverage (hat values). Includes the Scout Score (SS)
+    criterion for model selection, enabling comprehensive inference and
+    diagnostic analysis within the simplex regression framework.
+    For more details see Barndorff-Nielsen and Jorgensen (1991)
+    <doi:10.1016/0047-259X(91)90008-P> and Justino and Cribari-Neto (2026) 
+    <doi:10.1016/j.apm.2025.116713>.
+License: MIT + file LICENSE
+URL: https://github.com/dudajustino/SimplexRegression
+BugReports: https://github.com/dudajustino/SimplexRegression/issues
+Depends: R (>= 3.5)
+Imports: Formula, lmtest, Matrix, moments, parallel, pracma, sandwich
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0), tseries
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-20 13:33:32 UTC; euedu
+Repository: CRAN
+Date/Publication: 2026-08-21 05:45:35 UTC

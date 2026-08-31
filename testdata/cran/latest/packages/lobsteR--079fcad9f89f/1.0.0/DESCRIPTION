@@ -1,0 +1,32 @@
+Type: Package
+Package: lobsteR
+Title: Access and Process 'LOBSTER' High-Frequency Data
+Version: 1.0.0
+Authors@R: c(
+    person("Karol", "Kulma", , "kulmakarol@gmail.com", role = c("aut")),
+    person("Stefan", "Voigt", , "stefan.voigt@econ.ku.dk", role = c("aut", "cre", "cph"))
+  )
+Description: Provides tools to authenticate with 'LOBSTER' (Limit Order Book
+    System - The Efficient Reconstruction, <https://app.lobsterdata.com/>),
+    request, download, and process high-frequency limit order book data.
+    Streamlines the end-to-end workflow from data request to analysis-ready
+    datasets. For advanced high-frequency econometric analysis, see the
+    'highfrequency' package.
+Depends: R (>= 4.2.0)
+License: MIT + file LICENSE
+URL: https://github.com/voigtstefan/lobsteR,
+        https://voigtstefan.github.io/lobsteR/
+BugReports: https://github.com/voigtstefan/lobsteR/issues
+Imports: archive, assertthat, callr, dplyr, httr, lubridate, purrr,
+        rvest, timeDate
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), xml2
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-24 16:11:20 UTC; ncj140
+Author: Karol Kulma [aut],
+  Stefan Voigt [aut, cre, cph]
+Maintainer: Stefan Voigt <stefan.voigt@econ.ku.dk>
+Repository: CRAN
+Date/Publication: 2026-03-03 09:50:02 UTC

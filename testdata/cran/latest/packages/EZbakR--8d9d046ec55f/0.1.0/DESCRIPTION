@@ -1,0 +1,42 @@
+Package: EZbakR
+Title: Analyze and Integrate Any Type of Nucleotide Recoding RNA-Seq
+        Data
+Version: 0.1.0
+Authors@R: 
+    person(given = "Isaac",
+           family = "Vock",
+           role = c("aut", "cre", "cph"),
+           email = "isaac.vock@gmail.com",
+           comment = c(ORCID = "0000-0002-7178-6886"))
+Description: A complete rewrite and reimagining of 'bakR' (see 'Vock et al.' (2025) <doi:10.1371/journal.pcbi.1013179>).
+  Designed to support a wide array of analyses of nucleotide recoding RNA-seq (NR-seq) datasets of any
+	type, including TimeLapse-seq/SLAM-seq/TUC-seq, Start-TimeLapse-seq (STL-seq),
+	TT-TimeLapse-seq (TT-TL-seq), and subcellular NR-seq. 'EZbakR' extends
+	standard NR-seq standard NR-seq mutational modeling to support multi-label analyses
+	(e.g., 4sU and 6sG dual labeling), and implements an improved hierarchical model to better
+	account for transcript-to-transcript variance in metabolic label incorporation.
+	'EZbakR' also generalized dynamical systems modeling of NR-seq data to support analyses
+	of premature mRNA processing and flow between subcellular compartments. Finally,
+	'EZbakR' implements flexible and well-powered comparative analyses of all
+	estimated parameters via design matrix-specified generalized linear modeling.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, MASS, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+biocViews:
+Imports: arrow, data.table, dplyr, ggplot2, magrittr, methods, purrr,
+        rlang, tidyr, tximport
+Depends: R (>= 3.5)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://isaacvock.github.io/EZbakR/,
+        https://github.com/isaacvock/EZbakR
+BugReports: https://github.com/isaacvock/EZbakR/issues
+NeedsCompilation: no
+Packaged: 2025-12-04 22:09:30 UTC; isaac
+Author: Isaac Vock [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-7178-6886>)
+Maintainer: Isaac Vock <isaac.vock@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-10 21:20:08 UTC

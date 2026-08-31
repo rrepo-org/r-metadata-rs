@@ -1,0 +1,43 @@
+Package: glscalibrator
+Type: Package
+Title: Automated Calibration and Analysis of 'GLS' (Global Location
+        Sensor) Data
+Version: 0.1.0
+Authors@R: c(
+    person("Fabio", "Favoretto", email = "favoretto.fabio@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6493-4254")),
+    person("Cecilia", "Soldatini", email = "csoldatini@cicese.mx",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-8112-3162")))
+Maintainer: Fabio Favoretto <favoretto.fabio@gmail.com>
+Description: Provides a fully automated workflow for calibrating and analyzing
+    light-level geolocation ('GLS') data from seabirds and other wildlife. The
+    'glscalibrator' package auto-discovers birds from directory structures,
+    automatically detects calibration periods from the first days of deployment,
+    processes multiple individuals in batch mode, and generates standardized
+    outputs including position estimates, diagnostic plots, and quality control
+    metrics. Implements the established threshold workflow internally, following
+    the methods described in 'SGAT' (Wotherspoon et al. (2016)
+    <https://github.com/SWotherspoon/SGAT>), 'GeoLight' (Lisovski et al. (2012)
+    <doi:10.1111/j.2041-210X.2012.00185.x>), and 'TwGeos' (Lisovski et al.
+    (2019) <https://github.com/slisovski/TwGeos>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: magrittr, maps, dplyr, lubridate, stringr, utils, grDevices,
+        graphics, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/fabbiologia/glscalibrator
+BugReports: https://github.com/fabbiologia/glscalibrator/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-11-24 15:28:27 UTC; aburtolab
+Author: Fabio Favoretto [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6493-4254>),
+  Cecilia Soldatini [aut] (ORCID:
+    <https://orcid.org/0000-0002-8112-3162>)
+Repository: CRAN
+Date/Publication: 2025-11-27 19:50:02 UTC

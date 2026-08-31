@@ -1,0 +1,33 @@
+Package: lstar
+Title: Uniform Data Model and 'Zarr' Interchange for Single-Cell Omics
+Version: 0.2.2
+Date: 2026-07-27
+Authors@R: 
+    person("Peter", "Kharchenko", role = c("aut", "cre"),
+           email = "pk.restricted@gmail.com")
+Description: A lightweight interchange layer for single-cell and spatial omics
+    data, built on the L-star model of labelled axes and typed fields over them,
+    serialized to the 'Zarr' format. Provides bidirectional converters
+    ("profiles") for 'Seurat', 'SingleCellExperiment', 'Conos', and 'pagoda2'
+    objects, including collections of heterogeneous samples, via a shared C++
+    core ('libstar') so the same store is readable from R, 'Python', and C++.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/kharchenkolab/lstar
+BugReports: https://github.com/kharchenkolab/lstar/issues
+LinkingTo: cpp11
+Imports: Matrix, methods, stats, utils
+Suggests: SeuratObject, Seurat, SingleCellExperiment,
+        SummarizedExperiment, S4Vectors, GenomicRanges, igraph, conos,
+        pagoda2, HDF5Array, testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+SystemRequirements: C++17, zlib, GNU make, libzstd (optional, for
+        reading Zstd-compressed Zarr v3 stores)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-30 16:54:22 UTC; pkharchenko
+Author: Peter Kharchenko [aut, cre]
+Maintainer: Peter Kharchenko <pk.restricted@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 17:10:09 UTC

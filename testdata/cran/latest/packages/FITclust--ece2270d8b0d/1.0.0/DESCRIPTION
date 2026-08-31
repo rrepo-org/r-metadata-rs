@@ -1,0 +1,31 @@
+Package: FITclust
+Type: Package
+Title: Fair Interpolated Transport for Group-Fair Clustering
+Version: 1.0.0
+Date: 2026-08-19
+Authors@R: c(person("Jesse S.","Ghashti", email="jesse.ghashti@ubc.ca", role = c("aut","cre")),
+	     person("Warren","Hare", email="warren.hare@ubc.ca", role = "aut"),
+	     person("John R.J.", "Thompson", email="john.thompson@ubc.ca", role = "aut"))
+Author: Jesse S. Ghashti [aut, cre],
+  Warren Hare [aut],
+  John R.J. Thompson [aut]
+Maintainer: Jesse S. Ghashti <jesse.ghashti@ubc.ca>
+Description: Implementation of Fair Interpolated Transport (FIT), an
+    algorithm-agnostic preprocessing framework for group-fair clustering.
+    Group-conditional empirical distributions are moved along Wasserstein-2
+    geodesics toward a shared barycenter at a tunable transport intensity, and
+    the smallest intensity meeting a soft-fairness tolerance is selected. Three
+    soft clustering families are provided, centroid based, graph based, and
+    model based.
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats, transport, Matrix, mvtnorm
+Suggests: ggplot2, knitr, rmarkdown, devtools, spelling,
+VignetteBuilder: knitr
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+Language: en-US
+Packaged: 2026-08-20 01:36:55 UTC; jesseghashti
+Repository: CRAN
+Date/Publication: 2026-08-21 13:40:48 UTC

@@ -1,0 +1,30 @@
+Package: TTR.PGM
+Type: Package
+Title: Thornley Transport Resistance Plant Growth Model
+Version: 1.0.0
+Authors@R: c(person(given = "Steven",
+                      family = "Higgins",
+                      role = c("aut", "cre", "cph"),
+                      email = "steven.higgins@uni-bayreuth.de"),
+               person(given = "Arne",
+                      family = "Burkhardt",
+                      role = "ctb"))        
+Maintainer: Steven Higgins <steven.higgins@uni-bayreuth.de>
+Description: An implementation of the Thornley transport resistance plant growth model. The package can be used to simulate plant growth as forced by climate system variables. The package provides methods for formatting forcing variables, simulating growth dynamics and calibrating model parameters. For more information see Higgins et al. (2025) TTR.PGM: An R package for modelling the distributions and dynamics of plants using the Thornley transport resistance plant growth model. Methods in Ecology and Evolution. in press.
+License: LGPL-3
+Date: 2025-04-17
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.9), checkmate, abind
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: CXX17
+Suggests: DEoptim, testthat (>= 3.0.0), LaplacesDemon, ROCR, pals,
+        plotrix, rnaturalearth, terra, rmarkdown, knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-04-17 07:31:00 UTC; higgins
+Author: Steven Higgins [aut, cre, cph],
+  Arne Burkhardt [ctb]
+Repository: CRAN
+Date/Publication: 2025-04-19 12:32:05 UTC

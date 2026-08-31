@@ -1,0 +1,28 @@
+Package: knn.covertree
+Type: Package
+Title: An Accurate kNN Implementation with Multiple Distance Measures
+Version: 1.1
+Date: 2025-12-08
+Authors@R: c(
+    person('Philipp', 'Angerer', NULL, 'philipp.angerer@helmholtz-muenchen.de', c('cre', 'aut'), comment = c(ORCID = '0000-0002-0369-2888')),
+    person('David', 'Crane', NULL, 'dncrane@gmail.com', c('cph', 'aut')))
+Maintainer: Philipp Angerer <philipp.angerer@helmholtz-muenchen.de>
+Description: 
+    Similarly to the 'FNN' package, this package allows calculation of the k nearest neighbors (kNN) of a data matrix.
+    The implementation is based on cover trees introduced by
+    Alina Beygelzimer, Sham Kakade, and John Langford (2006) <doi:10.1145/1143844.1143857>.
+URL: https://github.com/flying-sheep/knn.covertree
+BugReports: https://github.com/flying-sheep/knn.covertree/issues
+License: AGPL-3
+Imports: Rcpp (>= 1.0.2), RcppEigen (>= 0.3.3.5.0), Matrix, methods
+Suggests: testthat, FNN
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Packaged: 2025-12-08 12:39:44 UTC; philipp.angerer
+Author: Philipp Angerer [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-0369-2888>),
+  David Crane [cph, aut]
+Repository: CRAN
+Date/Publication: 2025-12-08 12:50:07 UTC

@@ -1,0 +1,18 @@
+Package: LMERConvenienceFunctions
+Type: Package
+Title: Model Selection and Post-Hoc Analysis for (G)LMER Models
+Version: 3.2
+Date: 2026-08-24
+Authors@R: c(person('Antoine', 'Tremblay', role = c('aut', 'cre'), email = 'trea26@gmail.com'), person('Johannes','Ransijn', role = 'ctb', email='Johannes.Ransijn@uni-bayreuth.de'))
+Author: Antoine Tremblay [aut, cre],
+  Johannes Ransijn [ctb]
+Maintainer: Antoine Tremblay <trea26@gmail.com>
+Description: The main function of the package is to perform backward selection of fixed effects, forward fitting of the random effects, and post-hoc analysis using parallel capabilities. Other functionality includes the computation of ANOVAs with upper- or lower-bound p-values and R-squared values for each model term, model criticism plots, data trimming on model residuals, and data visualization. The data to run examples is contained in package LCF_data.
+Depends: lme4
+Imports: Matrix, LCFdata, fields, mgcv, parallel, methods, graphics
+License: GPL-2
+LazyLoad: yes
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2026-08-24 19:47:39 UTC; tremant
+Date/Publication: 2026-08-24 20:10:02 UTC

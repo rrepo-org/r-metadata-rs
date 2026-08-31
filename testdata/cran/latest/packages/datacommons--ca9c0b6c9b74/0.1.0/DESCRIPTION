@@ -1,0 +1,30 @@
+Package: datacommons
+Title: Client for the 'Google Data Commons API V2'
+Version: 0.1.0
+Authors@R: 
+    c(person("Christoph", "Scheuch", , "christoph@tidy-intelligence.com",
+             role = c("aut", "cre", "cph"), comment = c(ORCID = "0009-0004-0423-6819")),
+      person("Teal", "Emery", , "lte@tealinsights.com", role = c("aut")))
+Description: Access the 'Google Data Commons API V2' <https://docs.datacommons.org/api/rest/v2/>.
+    Data Commons provides programmatic access to statistical and demographic data from
+    dozens of sources organized in a knowledge graph. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: httr2, jsonlite, cli
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, dplyr, tidyr, stringr,
+        ggplot2, scales, withr, httpuv
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/tidy-intelligence/r-datacommons,
+        https://tidy-intelligence.github.io/r-datacommons/
+BugReports: https://github.com/tidy-intelligence/r-datacommons/issues
+NeedsCompilation: no
+Packaged: 2025-08-24 15:01:01 UTC; krise
+Author: Christoph Scheuch [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0004-0423-6819>),
+  Teal Emery [aut]
+Maintainer: Christoph Scheuch <christoph@tidy-intelligence.com>
+Repository: CRAN
+Date/Publication: 2025-08-28 13:20:02 UTC

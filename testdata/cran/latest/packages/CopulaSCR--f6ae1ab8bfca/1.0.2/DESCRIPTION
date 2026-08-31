@@ -1,0 +1,40 @@
+Type: Package
+Package: CopulaSCR
+Title: Analysis of Semi-Competing Risks Data Using Copula-Based Models
+Version: 1.0.2
+Authors@R: c(
+    person(given = "Tonghui",
+    family = "Yu",
+    role = c("aut", "cre"),
+    email = "tonghui_yu@126.com"),
+    person(given = "Binhui",
+    family = "Zhang",
+    role = "aut")
+    )
+Description: Simulate and analyze Semi-competing Risks Data using
+    copula-based models. The Semi-competing Risks Data consist of a
+    terminal event time and single or multiple intermediate event times.
+    The marginal survival functions of these event times are estimated
+    without parametric assumptions. The association parameters measuring dependency
+    among these event times involving the copula model are yielded from
+    solving a concordance estimating equations or maximizing a
+    pseudo-likelihood function. Details can be found in the article by
+    Tonghui Yu and Liming Xiang (2026) <doi:10.1093/biomtc/ujag087>.
+License: GPL-3
+Depends: R (>= 4.3.0)
+Imports: acopula, copula (>= 1.1-3), cowplot, doParallel (>= 1.0.17),
+        foreach, graph (>= 1.80.0), graphics, parallel, pracma, prodlim
+        (>= 2023.08.28), quantreg (>= 5.97), Rcpp, Rgraphviz (>=
+        2.46.0), stats, SurvCorr, survival, survminer, utils
+LinkingTo: Rcpp
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-08-21 04:13:12 UTC; Administrator
+Author: Tonghui Yu [aut, cre],
+  Binhui Zhang [aut]
+Maintainer: Tonghui Yu <tonghui_yu@126.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 06:50:13 UTC

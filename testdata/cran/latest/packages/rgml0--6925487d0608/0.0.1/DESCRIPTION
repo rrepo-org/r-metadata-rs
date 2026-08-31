@@ -1,0 +1,33 @@
+Package: rgml0
+Type: Package
+Title: Random Graphical Model Estimation under L0 Penalty
+Version: 0.0.1
+Authors@R: c(
+    person("Mahdieh Farzin", "Asanjan",
+           email = "mah.farzin2010@gmail.com",
+           role = c("aut", "cre")),
+    person("Vilda", "Purutcuoglu",
+           email = "vpurutcu@metu.edu.tr",
+           role = "aut"),
+    person("Ernst", "Wit",
+           role = "aut")
+ )
+Description: Provides functions for estimating sparse precision matrices
+    using a random graphical model framework under an L0-style penalty.
+    The method evaluates candidate theta values and returns both
+    continuous and binary precision matrices representing inferred
+    network structures.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: MASS
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-26 18:43:47 UTC; Matan
+Author: Mahdieh Farzin Asanjan [aut, cre],
+  Vilda Purutcuoglu [aut],
+  Ernst Wit [aut]
+Maintainer: Mahdieh Farzin Asanjan <mah.farzin2010@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-28 19:40:07 UTC

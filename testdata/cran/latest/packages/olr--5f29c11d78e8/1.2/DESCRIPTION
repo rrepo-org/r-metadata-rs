@@ -1,0 +1,21 @@
+Package: olr
+Title: Optimal Linear Regression
+Version: 1.2
+Date: 2025-05-05
+Authors@R: person(given = "Mathew", family = "Fok", role = c("aut", "cre"), email = "quiksilver67213@yahoo.com")
+Description: The olr function systematically evaluates multiple linear regression models by exhaustively fitting all possible combinations of independent variables against the specified dependent variable. It selects the model that yields the highest adjusted R-squared (by default) or R-squared, depending on user preference. In model evaluation, both R-squared and adjusted R-squared are key metrics: R-squared measures the proportion of variance explained but tends to increase with the addition of predictors—regardless of relevance—potentially leading to overfitting. Adjusted R-squared compensates for this by penalizing model complexity, providing a more balanced view of fit quality. The goal of olr is to identify the most suitable model that captures the underlying structure of the data while avoiding unnecessary complexity. By comparing both metrics, it offers a robust evaluation framework that balances predictive power with model parsimony. Example Analogy: Imagine a gardener trying to understand what influences plant growth (the dependent variable). They might consider variables like sunlight, watering frequency, soil type, and nutrients (independent variables). Instead of manually guessing which combination works best, the olr function automatically tests every possible combination of predictors and identifies the most effective model—based on either the highest R-squared or adjusted R-squared value. This saves the user from trial-and-error modeling and highlights only the most meaningful variables for explaining the outcome. A Python version is also available at <https://pypi.org/project/olr>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 2.10)
+Imports: plyr, utils, stats, readxl, htmltools
+Suggests: knitr, rmarkdown, ggplot2
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+URL: https://github.com/MatHatter/olr_r, https://pypi.org/project/olr/
+BugReports: https://github.com/MatHatter/olr_r/issues
+NeedsCompilation: no
+Packaged: 2025-05-13 14:56:54 UTC; wfky1
+Author: Mathew Fok [aut, cre]
+Maintainer: Mathew Fok <quiksilver67213@yahoo.com>
+Repository: CRAN
+Date/Publication: 2025-05-20 05:30:20 UTC

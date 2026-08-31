@@ -1,0 +1,125 @@
+Package: inlabru
+Type: Package
+Title: Bayesian Latent Gaussian Modelling using INLA and Extensions
+Version: 2.15.0
+Authors@R: c(
+  person("Finn", "Lindgren", email = "finn.lindgren@gmail.com",
+         role = c("aut", "cre", "cph"),
+         comment = c(ORCID = "0000-0002-5833-2011",
+                     "Finn Lindgren continued development of the main code")),
+  person("Fabian E.", "Bachl", email = "bachlfab@gmail.com",
+         role = c("aut", "cph"),
+         comment = "Fabian Bachl wrote the main code"),
+  person("David L.", "Borchers", email = "dlb@st-andrews.ac.uk",
+         role = c("ctb", "dtc", "cph"),
+         comment = "David Borchers wrote code for Gorilla data import and sampling, multiplot tool"),
+  person("Daniel", "Simpson", email = "dp.simpson@gmail.com",
+         role = c("ctb", "cph"),
+         comment = "Daniel Simpson wrote the basic LGCP sampling method"),
+  person("Lindesay", "Scott-Howard", email = "lass@st-andrews.ac.uk",
+         role = c("ctb", "dtc", "cph"),
+         comment = "Lindesay Scott-Howard provided MRSea data import code"),
+  person("Andy", "Seaton", email = "andy.e.seaton@gmail.com", role = c("ctb"),
+         comment = "Andy Seaton provided testing, bugfixes, and vignettes"),
+  person("Man Ho", "Suen", email = "m.suen19@imperial.ac.uk", role = c("ctb", "cph"),
+         comment = c(ORCID = "0009-0003-2281-0776",
+                     "Man Ho Suen contributed features for aggregated responses and vignette updates")),
+  person("Pierre", "Roudier", email = "", role = c("ctb", "cph"),
+         comment = "Pierre Roudier contributed general quantile summaries"),
+  person("Tim", "Meehan", email = "tmeeha@gmail.com", role = c("ctb", "cph"),
+         comment = "Tim Meehan contributed the SVC vignette and robins data"),
+  person("Niharika", "Reddy Peddinenikalva", role = c("ctb", "cph"),
+         comment = "Niharika Peddinenikalva contributed the LGCP residuals vignette"),
+  person("Dmytro", "Perepolkin", email = "dperepolkin@gmail.com",
+         role = c("ctb", "cph"),
+         comment = "Dmytro Perepolkin contributed the ZIP/ZAP vignette"),
+  person("Novica", "Nakov", email = "nnovica@gmail.com", role = c("ctb"),
+         comment = c(ORCID = "0009-0005-7773-7718")),
+  person("Hans", "Montcho", email = "hansmontcho@yahoo.fr",
+         role = c("ctb", "cph"),
+         comment = c(ORCID = "0000-0003-2510-2102",
+                     "Hans Montcho contributed features for joint cross validation"))       
+  )
+URL: http://www.inlabru.org, https://inlabru-org.github.io/inlabru/,
+        https://github.com/inlabru-org/inlabru
+BugReports: https://github.com/inlabru-org/inlabru/issues
+Description: Facilitates spatial and general latent Gaussian modelling using
+  integrated nested Laplace approximation via the INLA package (<https://www.r-inla.org>).
+  Additionally, extends the GAM-like model class to more general nonlinear predictor
+  expressions, and implements a log Gaussian Cox process likelihood for 
+  modelling univariate and spatial point processes based on ecological survey data.
+  Model components are specified with general inputs and mapping methods to the
+  latent variables, and the predictors are specified via general R expressions,
+  with separate expressions for each observation likelihood model in
+  multi-likelihood models. A prediction method based on fast Monte Carlo sampling
+  allows posterior prediction of general expressions of the latent variables.
+  Ecology-focused introduction in Bachl, Lindgren, Borchers, and Illian (2019)
+  <doi:10.1111/2041-210X.13168>.
+License: GPL (>= 2)
+Additional_repositories: https://inla.r-inla-download.org/R/testing
+Encoding: UTF-8
+Depends: methods, R (>= 4.1.0)
+Imports: dplyr, fmesher (>= 0.7.0), generics, glue, lifecycle,
+        MatrixModels, Matrix, Rcpp, rlang, sf, stats, tibble, utils,
+        withr
+Suggests: covr, ggplot2, graphics, INLA (>= 23.01.31), knitr, maps,
+        mgcv, patchwork, raster, RColorBrewer, rgl, rmarkdown, scales,
+        scoringRules, shiny, sn, sp (>= 2.1), spatstat.geom,
+        spatstat.data, sphereplot, splancs, terra (>= 1.7-66),
+        tidyterra, testthat (>= 3.2.0), tidyr, DiagrammeR, doclisting
+Enhances: stars
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+Collate: '0_inlabru_envir.R' 'RcppExports.R' 'access_trace.R'
+        'access_trace_methods.R' 'bru.gof.R' 'bru.inference.R'
+        'bru_conversion.R' 'bru_index.R' 'deprecated.R' 'bru_input.R'
+        'bru_is.R' 'bru_sp.R' 'data.Poisson1_1D.R' 'data.Poisson2_1D.R'
+        'data.Poisson3_1D.R' 'data.gorillas.R' 'data.mexdolphin.R'
+        'data.mrsea.R' 'data.robins_subset.R' 'data.shrimp.R'
+        'data.toygroups.R' 'data.toypoints.R' 'deltaIC.R' 'effect.R'
+        'environment.R' 'fmesher.R' 'gcpo.R' 'ggplot.R'
+        'hexagon_tiling.R' 'mappers.R' 'hierarchical_basis.R' 'inla.R'
+        'inlabru-package.R' 'inlabru-reexports.R' 'legacy_methods.R'
+        'local_testthat.R' 'mapper_collect.R' 'mapper_expr.R'
+        'mapper_repeat.R' 'mapper_sum.R' 'model.R' 'nlinla.R'
+        'object_upgrade.R' 'plotsample.R' 'pred_expr.R' 'rgl.R'
+        'sampling.R' 'spatstat.R' 'spde.R' 'stack.R' 'tidiers.R'
+        'track_plotting.R' 'transformation.R' 'used.R' 'utils.R'
+VignetteBuilder: knitr
+BuildVignettes: true
+LazyData: true
+LazyDataCompression: xz
+LinkingTo: Rcpp
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-27 23:12:24 UTC; flindgre
+Author: Finn Lindgren [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-5833-2011>, Finn Lindgren continued
+    development of the main code),
+  Fabian E. Bachl [aut, cph] (Fabian Bachl wrote the main code),
+  David L. Borchers [ctb, dtc, cph] (David Borchers wrote code for
+    Gorilla data import and sampling, multiplot tool),
+  Daniel Simpson [ctb, cph] (Daniel Simpson wrote the basic LGCP sampling
+    method),
+  Lindesay Scott-Howard [ctb, dtc, cph] (Lindesay Scott-Howard provided
+    MRSea data import code),
+  Andy Seaton [ctb] (Andy Seaton provided testing, bugfixes, and
+    vignettes),
+  Man Ho Suen [ctb, cph] (ORCID: <https://orcid.org/0009-0003-2281-0776>,
+    Man Ho Suen contributed features for aggregated responses and
+    vignette updates),
+  Pierre Roudier [ctb, cph] (Pierre Roudier contributed general quantile
+    summaries),
+  Tim Meehan [ctb, cph] (Tim Meehan contributed the SVC vignette and
+    robins data),
+  Niharika Reddy Peddinenikalva [ctb, cph] (Niharika Peddinenikalva
+    contributed the LGCP residuals vignette),
+  Dmytro Perepolkin [ctb, cph] (Dmytro Perepolkin contributed the ZIP/ZAP
+    vignette),
+  Novica Nakov [ctb] (ORCID: <https://orcid.org/0009-0005-7773-7718>),
+  Hans Montcho [ctb, cph] (ORCID:
+    <https://orcid.org/0000-0003-2510-2102>, Hans Montcho contributed
+    features for joint cross validation)
+Maintainer: Finn Lindgren <finn.lindgren@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-28 09:00:03 UTC

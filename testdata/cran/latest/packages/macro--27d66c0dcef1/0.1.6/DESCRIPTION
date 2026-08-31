@@ -1,0 +1,32 @@
+Package: macro
+Type: Package
+Title: A Macro Language for 'R' Programs
+Version: 0.1.6
+Authors@R: c(
+    person("David", "Bosak", email = "dbosak01@gmail.com", role = c("aut", "cre")),
+    person("Bill", "Huang", email = "Bill.Huang@Toastmasters.org.tw", role = "ctb"),
+    person("Duong", "Tran", email = "trand000@aol.com", role = c("ctb"))
+  )
+Description: A macro language for 'R' programs, which 
+    provides a macro facility similar to 'SAS®'.  This 
+    package contains basic macro capabilities 
+    like defining macro variables, executing conditional
+    logic, and defining macro functions.
+License: CC0
+Encoding: UTF-8
+URL: https://macro.r-sassy.org, https://github.com/dbosak01/macro
+BugReports: https://github.com/dbosak01/macro/issues
+Depends: R (>= 4.0), common
+Suggests: sassy, knitr, rmarkdown, testthat (>= 3.0.0), rstudioapi
+Imports: fmtr, utils, crayon
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-13 20:20:52 UTC; dbosa
+Author: David Bosak [aut, cre],
+  Bill Huang [ctb],
+  Duong Tran [ctb]
+Maintainer: David Bosak <dbosak01@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-14 06:10:11 UTC

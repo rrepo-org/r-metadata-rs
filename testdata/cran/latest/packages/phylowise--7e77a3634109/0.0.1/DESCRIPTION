@@ -1,0 +1,21 @@
+Package: phylowise
+Title: Phylogenetic Pairwise Contrasts
+Version: 0.0.1
+Authors@R: 
+    c(person(given="Jordan", family="Douglas", email="jordan.douglas@auckland.ac.nz", role=c("aut", "cre")),
+    person(given="Lindell", family="Bromham", role="aut"))
+Maintainer: Jordan Douglas <jordan.douglas@auckland.ac.nz>
+Author: Jordan Douglas [aut, cre],
+  Lindell Bromham [aut]
+Description: A phylogenetic comparative method for finding associations between biological traits and molecular evolutionary rates. The method samples pairs from a phylogeny such that each pair has non-overlapping edge paths, and can therefore be treated as statistically independent observations. Linear regression is performed on the pair contrasts. This approach is similar to phylogenetically independent contrasts (PIC) but without reconstructing the traits at internal nodes, and is better suited for finding trait-rate associations than phylogenetic generalised least squares (PGLS). Refer to Douglas and Bromham (2026)  <doi:10.64898/2026.08.13.744736> for further details.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+URL: https://github.com/jordandouglas/phylowise
+Depends: ape, BMA, phylotate
+Imports: Rcpp
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-08-16 11:28:21 UTC; jdou557
+Repository: CRAN
+Date/Publication: 2026-08-21 13:40:02 UTC

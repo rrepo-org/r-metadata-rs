@@ -1,0 +1,33 @@
+Package: DegreeDayCalc
+Type: Package
+Title: Degree-Day Phenology Calculator ('shiny' Application)
+Version: 0.1.1
+Authors@R: c(
+    person(given = c("Victor", "Manuel"), family = "Almaraz Valle",
+           role = c("aut", "cre"),
+           email = "almarazkrae@gmail.com",
+           comment = c(ORCID = "0000-0002-3673-8002")),
+    person(given = c("J.", "Concepción"), family = "Rodríguez Maciel", role = "aut"),
+    person(given = "Gustavo", family = "Ramírez Valverde", role = "aut"),
+    person(given = c("Jaime", "Alfredo"), family = "Urzua Gutierrez", role = "aut"),
+    person(given = c("Manuel", "Alejandro"), family = "Tejeda Reyes", role = "aut")
+  )
+Description: Provides a 'shiny' application to compute daily and cumulative degree-days from minimum and maximum temperatures using average, single triangle, and single sine methods, with optional upper temperature thresholds. The application maps cumulative thermal accumulation to user-defined developmental stage thresholds and supports exporting tabular and graphical outputs. The degree-day approach follows assumptions described by Higley et al. (1986) <doi:10.1093/ee/15.5.999>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: shiny, DT, ggplot2, readxl
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-01 08:10:33 UTC; rosy_
+Author: Victor Manuel Almaraz Valle [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3673-8002>),
+  J. Concepción Rodríguez Maciel [aut],
+  Gustavo Ramírez Valverde [aut],
+  Jaime Alfredo Urzua Gutierrez [aut],
+  Manuel Alejandro Tejeda Reyes [aut]
+Maintainer: Victor Manuel Almaraz Valle <almarazkrae@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-02 05:00:02 UTC

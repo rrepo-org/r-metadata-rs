@@ -1,0 +1,38 @@
+Package: adaptDiag
+Type: Package
+Title: Bayesian Adaptive Designs for Diagnostic Trials
+Version: 0.1.1
+Authors@R: c(
+    person("Graeme L.", "Hickey",
+           email = "graemeleehickey@gmail.com", 
+           role = c("cre", "aut")),
+    person("Yongqiang", "Zhang",
+           email = "yongqiang.zhang@bd.com", 
+           role = "aut"),
+    person(given = "Becton, Dickinson and Company",
+           role = "cph")
+    )
+Description: Simulate clinical trials for diagnostic test devices and evaluate 
+    the operating characteristics under an adaptive design with futility
+    assessment determined via the posterior predictive probabilities.
+License: GPL-3
+Encoding: UTF-8
+URL: https://graemeleehickey.github.io/adaptDiag/,
+        https://github.com/graemeleehickey/adaptDiag,
+        https://CRAN.R-project.org/package=adaptDiag
+BugReports: https://github.com/graemeleehickey/adaptDiag/issues
+Depends: R (>= 3.6.0)
+Imports: doParallel, doRNG, extraDistr, foreach, parallel, stats
+Language: en-US
+RoxygenNote: 7.3.3
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), VGAM, covr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-28 18:47:01 UTC; hickeg3
+Author: Graeme L. Hickey [cre, aut],
+  Yongqiang Zhang [aut],
+  Becton, Dickinson and Company [cph]
+Maintainer: Graeme L. Hickey <graemeleehickey@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-28 19:20:02 UTC

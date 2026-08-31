@@ -1,0 +1,31 @@
+Package: catviz
+Title: Visualizing Causal Assignment Trees for CSDiD and DR-DDD Designs
+Version: 0.1.1
+Authors@R: 
+    person("Victor", "Kilanko", email = "victorkilanko@gmail.com", role = c("aut", "cre"))
+Description: Tools for constructing, labeling, and visualizing Causal Assignment Trees
+    (CATs) in settings with staggered adoption. Supports Callaway and Sant'Anna
+    difference-in-differences (CSDiD) and doubly robust difference-in-difference-differences
+    (DR-DDD) designs. The package helps clarify treatment timing, never-treated vs.
+    not-yet-treated composition, and subgroup structure, and produces publication-quality
+    diagrams and summary tables. Current functionality focuses on data-to-node mapping,
+    node counts, cohort-year summaries, and high-quality tree plots suitable for empirical
+    applications prior to estimation.
+    Methods are based on Callaway and Sant'Anna (2021) <doi:10.1016/j.jeconom.2020.12.001>,
+    Sant'Anna and Zhao (2020) <doi:10.1016/j.jeconom.2020.06.003>, and
+    Kilanko (2026) <https://github.com/VictorKilanko/catviz>.
+License: MIT + file LICENSE
+URL: https://github.com/VictorKilanko/catviz
+BugReports: https://github.com/VictorKilanko/catviz/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, glue, tidyr, purrr, tibble, grid, rlang
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-27 19:13:26 UTC; victo
+Author: Victor Kilanko [aut, cre]
+Maintainer: Victor Kilanko <victorkilanko@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-01 08:00:20 UTC

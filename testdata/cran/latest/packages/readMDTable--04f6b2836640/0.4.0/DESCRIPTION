@@ -1,0 +1,30 @@
+Package: readMDTable
+Title: Read Markdown Tables into Tibbles
+Version: 0.4.0
+Authors@R: 
+    person("Jordan", "Bradford", , "jrdnbradford@gmail.com", role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0009-0000-8570-3474"))
+Description: Efficient reading of raw markdown tables into tibbles. Designed to
+    accept content from strings, files, and URLs with the ability to extract
+    and read multiple tables from markdown for analysis.
+Depends: R (>= 4.1.0)
+Imports: cli, httr2, lifecycle, readr (>= 2.2.0), purrr, stringr
+URL: https://github.com/jrdnbradford/readMDTable,
+        https://jrdnbradford.github.io/readMDTable/
+BugReports: https://github.com/jrdnbradford/readMDTable/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+Config/roxygen2/markdown: TRUE
+Suggests: covr, devtools, dplyr, ggplot2, knitr, lubridate,
+        microbenchmark, precommit, rmarkdown, rvest, testthat (>=
+        3.0.0), tibble, usethis
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-23 17:13:40 UTC; bradfojb
+Author: Jordan Bradford [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0000-8570-3474>)
+Maintainer: Jordan Bradford <jrdnbradford@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-24 05:20:02 UTC

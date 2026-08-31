@@ -1,0 +1,26 @@
+Package: formulaiv
+Title: Sensitivity of Formula Instrument to Shock Design
+Version: 0.1.0
+Authors@R: 
+    person("Peizan", "Sheng", , "peizan@uchicago.edu", role = c("aut", "cre"))
+Description: Functions to implement the formula instrument method in
+    Borusyak and Hull (2023) <doi:10.3982/ECTA19367> and examine its sensitivity
+    to the assumed distributional of counterfactual shocks.
+License: MIT + file LICENSE
+URL: https://github.com/peizansheng/formulaiv
+BugReports: https://github.com/peizansheng/formulaiv/issues
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+Imports: stats, lpSolve
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-19 15:38:42 UTC; peizan
+Author: Peizan Sheng [aut, cre]
+Maintainer: Peizan Sheng <peizan@uchicago.edu>
+Repository: CRAN
+Date/Publication: 2026-06-24 09:00:11 UTC

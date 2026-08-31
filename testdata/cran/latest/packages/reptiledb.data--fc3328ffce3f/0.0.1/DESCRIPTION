@@ -1,0 +1,29 @@
+Package: reptiledb.data
+Title: Reptile Database Data
+Version: 0.0.1
+Authors@R: c(
+    person(
+        given = "Paul Efren",
+        family = "Santos Andrade",
+        role = c("aut", "cre"),
+        email = "paulefrens@gmail.com",
+        comment = c(ORCID = "0000-0002-6635-0375")
+    ))
+Description: Provides easy access to 'The Reptile Database', a comprehensive catalogue of all living reptile species and their classification. This package includes taxonomic data for over 10,000 reptile species, approximately 2,800 of which are subspecies, covering all extant reptiles. The dataset features taxonomic names, synonyms, distribution data, type specimens, and literature references, making it ready for research and analysis. Data is sourced from 'The Reptile Database' <http://www.reptile-database.org/>.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/PaulESantos/reptiledb.data
+BugReports: https://github.com/PaulESantos/reptiledb.data/issues
+Imports: cli, dplyr, httr, purrr, readxl, rvest, stringr, tidyr
+Maintainer: Paul Efren Santos Andrade <paulefrens@gmail.com>
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-01 04:04:49 UTC; PC
+Author: Paul Efren Santos Andrade [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6635-0375>)
+Repository: CRAN
+Date/Publication: 2026-08-01 04:50:02 UTC

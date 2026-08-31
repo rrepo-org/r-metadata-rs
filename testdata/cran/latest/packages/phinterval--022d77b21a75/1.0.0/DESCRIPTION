@@ -1,0 +1,37 @@
+Package: phinterval
+Title: Set Operations on Time Intervals
+Version: 1.0.0
+Authors@R: 
+    person(
+      "Ethan", "Sansom", 
+      email = "ethan.sansom29@gmail.com", 
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0009-0000-1573-0186")
+    )
+Description: Implements the phinterval vector class for representing time
+    spans that may contain gaps (disjoint intervals) or be empty. This class
+    generalizes the 'lubridate' package's interval class to support vectorized
+    set operations (intersection, union, difference, complement) that always
+    return a valid time span, even when disjoint or empty intervals are created.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/EthanSansom/phinterval,
+        https://ethansansom.github.io/phinterval/
+BugReports: https://github.com/EthanSansom/phinterval/issues
+Depends: R (>= 4.0.0)
+Imports: lubridate, methods, pillar, Rcpp, rlang, tibble, tzdb, vctrs
+        (>= 0.7.0)
+Suggests: dplyr, knitr, rmarkdown, testthat (>= 3.0.0), tidyr, withr
+Config/testthat/edition: 3
+LinkingTo: Rcpp, tzdb
+VignetteBuilder: knitr
+SystemRequirements: C++17
+Config/Needs/website: rmarkdown
+NeedsCompilation: yes
+Packaged: 2026-01-29 22:40:09 UTC; ethansansom
+Author: Ethan Sansom [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0000-1573-0186>)
+Maintainer: Ethan Sansom <ethan.sansom29@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-03 12:40:06 UTC

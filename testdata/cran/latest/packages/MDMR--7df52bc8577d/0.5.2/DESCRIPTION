@@ -1,0 +1,27 @@
+Package: MDMR
+Type: Package
+Title: Multivariate Distance Matrix Regression
+Version: 0.5.2
+Date: 2025-03-27
+Authors@R: person(given = "Dan",
+                  family = "McArtor",
+                  role = c("aut", "cre"),
+                  email = "dmcartor@gmail.com",
+                  comment = "dmcartor@gmail.com")
+Description: Allows users to conduct multivariate distance matrix regression using analytic p-values and compute measures of effect size. For details on the method, see McArtor, Lubke, & Bergeman (2017) <doi:10.1007/s11336-016-9527-8>.
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: R (>= 3.0.0), CompQuadForm, lme4,
+Imports: parallel, car
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/dmcartor/mdmr
+BugReports: https://github.com/dmcartor/mdmr/issues
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-03-28 14:10:49 UTC; mcartor
+Author: Dan McArtor [aut, cre] (dmcartor@gmail.com)
+Maintainer: Dan McArtor <dmcartor@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-28 14:40:01 UTC

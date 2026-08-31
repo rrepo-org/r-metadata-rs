@@ -1,0 +1,56 @@
+Package: exams2ilias
+Title: ILIAS Export Interface for R/Exams
+Version: 0.0.1
+Authors@R: c(
+    person(
+      "Michael", "Bücker",
+      email = "michael.buecker@fh-muenster.de",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0003-0045-8460")
+    ),
+    person(
+      "Amar", "Jeeth",
+      email = "aj349177@fh-muenster.de",
+      role = "ctb"
+    ),
+    person(
+      "Achim", "Zeileis",
+      email = "Achim.Zeileis@R-project.org",
+      role = "ctb",
+      comment = c(ORCID = "0000-0003-0918-3766")
+    ),
+    person(
+      "Florian", "Wickelmaier",
+      email = "Florian.Wickelmaier@uni-tuebingen.de",
+      role = "ctb"
+    )
+  )
+Description: Utilities for exporting exercises from 'R/exams' to
+    question pools for the learning management system 'ILIAS'. The
+    package implements a Question and Test Interoperability 1.2
+    rendering path tailored to 'ILIAS' and writes the question-pool XML
+    layout validated for imports in 'ILIAS' 9.17. Supported exercise
+    types include single-choice, multiple-choice, numeric, string, and
+    combined gap questions. The underlying 'R/exams' framework is
+    described in Zeileis, Umlauf, and Leisch (2014)
+    <doi:10.18637/jss.v058.i01>.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+Imports: base64enc, exams, tools, utils
+Suggests: knitr, pkgdown, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/mchlbckr/exams2ilias,
+        https://buecker.ms/exams2ilias/
+BugReports: https://github.com/mchlbckr/exams2ilias/issues
+Config/Needs/website: pkgdown
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-27 15:00:16 UTC; michael
+Author: Michael Bücker [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-0045-8460>),
+  Amar Jeeth [ctb],
+  Achim Zeileis [ctb] (ORCID: <https://orcid.org/0000-0003-0918-3766>),
+  Florian Wickelmaier [ctb]
+Maintainer: Michael Bücker <michael.buecker@fh-muenster.de>
+Repository: CRAN
+Date/Publication: 2026-04-28 20:10:08 UTC

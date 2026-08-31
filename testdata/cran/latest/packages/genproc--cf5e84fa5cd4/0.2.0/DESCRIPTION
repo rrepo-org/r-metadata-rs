@@ -1,0 +1,37 @@
+Package: genproc
+Title: Robust, Logged and Reproducible Iteration at Organizational
+        Scale
+Version: 0.2.0
+Authors@R: 
+    person("Daniel", "Rakotomalala", , "rakdanielh@gmail.com", role = c("aut", "cre"))
+Description: Turns one-off iterative R procedures (such as for loops,
+    lapply() or pmap() from 'purrr') into production-grade workflows by
+    wrapping them with orthogonal, composable execution layers. Two layers
+    are always active: structured logging with real traceback and per-case
+    timing; and reproducibility capture, which records the R version,
+    loaded package versions, execution environment, the exact iteration
+    mask, and a stat-based fingerprint of every input file referenced in
+    the mask (with a diff_inputs() helper to detect silent drift between
+    runs). Parallel execution (built on the 'future' framework, Bengtsson
+    (2021) <doi:10.32614/RJ-2021-048>), non-blocking background jobs, and
+    opt-in progress reporting (via 'progressr') are implemented as
+    optional, composable layers. Further layers (error replay,
+    content-hash input fingerprinting, content-based case identifiers) are
+    planned and will remain composable with the default layers.
+License: MIT + file LICENSE
+URL: https://danielrak.github.io/genproc/,
+        https://github.com/danielrak/genproc
+BugReports: https://github.com/danielrak/genproc/issues
+Imports: future, future.apply, parallel, progressr, stats, utils
+Suggests: dplyr, knitr, magrittr, purrr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-07 19:14:20 UTC; rheri
+Author: Daniel Rakotomalala [aut, cre]
+Maintainer: Daniel Rakotomalala <rakdanielh@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-12 19:20:25 UTC

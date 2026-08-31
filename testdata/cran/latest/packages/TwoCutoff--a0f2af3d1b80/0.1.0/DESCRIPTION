@@ -1,0 +1,33 @@
+Package: TwoCutoff
+Type: Package
+Title: Deriving Clinically Interpretable Cutoffs for Disease Biomarkers
+Version: 0.1.0
+Authors@R: c(person(("Bhrigu Kumar"), "Rajbongshi",
+                    email="kumarbhrigu536@gmail.com",
+                    role=c("aut", "cre","ctb")),
+             person(("Seyed Ehsan"), "Saffari", role=c("aut","ctb")),
+             person(("Nastaran"), "Marzban", role=c("aut","ctb")))
+Maintainer: Bhrigu Kumar Rajbongshi <kumarbhrigu536@gmail.com>
+Description: Provides a reproducible pipeline for deriving two clinically meaningful cutoffs 
+    for disease biomarkers using a unified two-stage framework. The package integrates finite
+    mixture modeling with risk prediction using biomarker plus clinical features, followed by decision 
+    curve analysis to evaluate clinical utility. Outputs include biomarker density plots, 
+    risk calibration curves, decision curves, and summary tables of diagnostic performance. 
+    Designed for researchers in bio-statistics, neurology, and data science, this package
+    emphasizes reproducibility, transparency, and clear clinical relevance.
+Imports: dplyr, mixtools, stats, pROC, xgboost, ggplot2, caret,
+        patchwork, gridExtra
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Suggests: rmarkdown, DiagrammeR, knitr, devtools
+VignetteBuilder: knitr
+Author: Bhrigu Kumar Rajbongshi [aut, cre, ctb],
+  Seyed Ehsan Saffari [aut, ctb],
+  Nastaran Marzban [aut, ctb]
+Packaged: 2026-06-20 14:38:03 UTC; bhrigu
+Repository: CRAN
+Date/Publication: 2026-06-24 10:00:13 UTC

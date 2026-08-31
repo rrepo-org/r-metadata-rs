@@ -1,0 +1,27 @@
+Package: OpEnCAST
+Type: Package
+Title: Optimized Ensemble Model for C and A Methylation Search in Plant
+Version: 0.1.1
+Authors@R: c(person("Abhik", "Sarkar", role = c("aut","cre"), email = "abhik.iasri@gmail.com"),
+             person("Dipro", "Sinha", role = c("aut")),
+             person("Sneha","Murmu", role=c("aut")),
+             person("Md", "Yeasin", role = c("aut")),
+             person("Dwijesh Chandra","Mishra", role = c("aut")),
+             person("Sunil", "Archak", role = c("aut")))
+Author: Abhik Sarkar [aut, cre],
+  Dipro Sinha [aut],
+  Sneha Murmu [aut],
+  Md Yeasin [aut],
+  Dwijesh Chandra Mishra [aut],
+  Sunil Archak [aut]
+Maintainer: Abhik Sarkar <abhik.iasri@gmail.com>
+Description: DNA methylation is an important epigenetic process that regulates gene activity through chemical modifications of DNA without changing its sequence. 'OpEnCAST' is a plant-specific  ensemble-based prediction package that identifies 4mC, 5mC and 6mA methylation sites directly from DNA sequences. It combines multiple machine learning algorithms trained on monocot (Oryza sp.) and dicot (Arabidopsis sp.) reference models to deliver accurate predictions. This methodology is being inspired by the ensemble algorithm for methylation prediction developed by Wang et al. (2022) <doi:10.1186/s12859-022-04756-1>.
+Imports: Biostrings, seqinr, stringr, tibble, entropy, ftrCOOL, stats
+Suggests: caret, kernlab, ranger, xgboost, gbm
+Encoding: UTF-8
+License: GPL-3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-22 20:24:59 UTC; Abhik
+Repository: CRAN
+Date/Publication: 2026-01-08 19:20:22 UTC

@@ -1,0 +1,33 @@
+Package: tidyEdSurvey
+Version: 0.1.4
+Date: 2025-12-03
+Title: Integration of 'dplyr' and 'ggplot2' with 'EdSurvey'
+Authors@R: c(person("Paul",
+                    "Bailey",
+                    email="pbailey@air.org",
+                    role=c("cre", "ctb"),
+                    comment=c(ORCID="0000-0003-0989-8729")),
+             person("Blue",
+                    "Webb",
+                    role="aut",
+                    comment = c(ORCID = "0009-0004-4080-9864")),
+              person("Tom",
+                     "Fink",
+                     role = "ctb",
+                     comment = c(ORCID = "0009-0003-9308-2833")))
+Maintainer: Paul Bailey <pbailey@air.org>
+Depends: R (>= 3.5.0), EdSurvey (>= 4.0.1),
+Imports: dplyr, ggplot2, tidyselect, lifecycle, cli, stats, rlang,
+        methods
+Suggests: testthat
+Description: Takes objects of class edsurvey.data.frame and converts them to a data.frame within the calling environment of 'dplyr' and 'ggplot2' functions. Additionally, for plotting with 'ggplot2', users can map aesthetics to subject scales and all plausible values will be used. This package supports student level data; to work with school or teacher level data, see '?EdSurvey::getData'.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-03 17:01:39 UTC; pbailey
+Author: Paul Bailey [cre, ctb] (ORCID: <https://orcid.org/0000-0003-0989-8729>),
+  Blue Webb [aut] (ORCID: <https://orcid.org/0009-0004-4080-9864>),
+  Tom Fink [ctb] (ORCID: <https://orcid.org/0009-0003-9308-2833>)
+Repository: CRAN
+Date/Publication: 2025-12-03 23:50:02 UTC

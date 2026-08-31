@@ -1,0 +1,33 @@
+Package: sdafilter
+Title: Symmetrized Data Aggregation
+Version: 1.0.1
+Authors@R: 
+    c(person(given = "Lilun",
+           family = "Du",
+           role = c("aut", "cre"),
+           email = "lilundu@cityu.edu.hk"), 
+           person(given = "Xu",
+           family = "Guo",
+           role = c("aut")),
+           person(given = "Wenguang",
+           family = "Sun",
+           role = c("aut")),
+           person(given = "Changliang",
+           family = "Zou",
+           role = c("aut"))
+           )
+Author: Lilun Du [aut, cre],
+  Xu Guo [aut],
+  Wenguang Sun [aut],
+  Changliang Zou [aut]
+Maintainer: Lilun Du <lilundu@cityu.edu.hk>
+Description: We develop a new class of distribution free multiple testing rules for false discovery rate (FDR) control under general dependence. A key element in our proposal is a symmetrized data aggregation (SDA) approach to incorporating the dependence structure via sample splitting, data screening and information pooling. The proposed SDA filter first constructs a sequence of ranking statistics that fulfill global symmetry properties, and then chooses a data driven threshold along the ranking to control the FDR. For more information, see the website below and the accompanying paper: Du et al. (2023), "False Discovery Rate Control Under General Dependence By Symmetrized Data Aggregation", <doi:10.1080/01621459.2021.1945459>. Some optional functionality uses the archived R packages ‘huge’ and ‘pfa’, which are not available from CRAN’s main repositories. Users who need this optional functionality can obtain them from the CRAN Archive as follows: ‘huge’ at <https://cran.r-project.org/src/contrib/Archive/huge/>; ‘pfa’ at <https://cran.r-project.org/src/contrib/Archive/pfa/>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: glmnet, glasso, POET, stats, selectiveInference,
+Suggests: testthat (>= 2.1.0), huge, pfa, MASS
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2026-02-13 15:11:59 UTC; dulilun
+Date/Publication: 2026-02-13 16:30:02 UTC

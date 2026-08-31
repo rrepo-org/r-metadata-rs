@@ -1,0 +1,37 @@
+Package: DT2
+Type: Package
+Title: 'DataTables' 2.x for R
+Version: 0.1.2
+Date: 2026-06-14
+Authors@R: c(
+    person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+    person("Marcos", "Wasilew", email = "marcos.wasilew@gmail.com", role = "aut"),
+    person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+    person("Carlos", "Amorin", email = "carlos.agaf@ufpe.br", role = "aut"),
+    person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"))
+Description: A modern R binding for 'DataTables' V2 with modular
+    extension loading, 'Bootstrap 5' styling, 'Shiny' integration (proxy, events,
+    inline inputs), server-side processing helpers, and standalone (non-Shiny)
+    support. Configure 'DataTables' options directly via R lists, a 1:1 mapping
+    to the 'JavaScript' API.
+License: MIT + file LICENSE
+URL: https://github.com/StrategicProjects/DT2,
+        https://strategicprojects.github.io/DT2/
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: htmlwidgets (>= 1.6.0), htmltools, jsonlite, cli
+Suggests: shiny, rlang, dplyr, lubridate, tibble, bslib, knitr,
+        rmarkdown, testthat (>= 3.1.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-14 00:53:34 UTC; leite
+Author: Andre Leite [aut, cre],
+  Marcos Wasilew [aut],
+  Hugo Vasconcelos [aut],
+  Carlos Amorin [aut],
+  Diogo Bezerra [aut]
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-06-14 05:20:09 UTC

@@ -1,0 +1,42 @@
+Package: MUGS
+Type: Package
+Title: Multisource Graph Synthesis with EHR Data
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Mengyan", family = "Li", email = "mengyanli@bentley.edu", role = c("cre", "aut")),
+    person(given = "Thomas", family = "Charlon", role = "ctb", comment = "ORCID: 0000-0001-7497-0470"),
+    person(given = "Xiaoou", family = "Li", role = "aut"),
+    person(given = "Tianxi", family = "Cai", role = "aut"),
+    person(given = "PARSE", family = "LTD", email = "software@parse-health.org", role = "aut"),
+    person(given = "CELEHS", family = "Team", role = "aut")
+  )
+Description: We develop Multi-source Graph Synthesis (MUGS), an algorithm designed to create 
+    embeddings for pediatric Electronic Health Record (EHR) codes by leveraging graphical information from three distinct sources:
+    (1) pediatric EHR data, (2) EHR data from the general patient population, and 
+    (3) existing hierarchical medical ontology knowledge shared across different patient populations. 
+    See Li et al. (2024) <doi:10.1038/s41746-024-01320-4> for details.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.2
+URL: https://github.com/celehs/MUGS, https://celehs.github.io/MUGS/,
+        https://doi.org/10.1038/s41746-024-01320-4
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Imports: MASS, Matrix, fastDummies, doSNOW, dplyr, grplasso, foreach,
+        glmnet, grpreg, inline, mvtnorm, pROC, parallel, RcppArmadillo,
+        rsvd, methods
+Depends: R (>= 3.5.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-05-15 03:56:15 UTC; User1
+Author: Mengyan Li [cre, aut],
+  Thomas Charlon [ctb] (ORCID: 0000-0001-7497-0470),
+  Xiaoou Li [aut],
+  Tianxi Cai [aut],
+  PARSE LTD [aut],
+  CELEHS Team [aut]
+Maintainer: Mengyan Li <mengyanli@bentley.edu>
+Repository: CRAN
+Date/Publication: 2025-05-19 13:40:09 UTC

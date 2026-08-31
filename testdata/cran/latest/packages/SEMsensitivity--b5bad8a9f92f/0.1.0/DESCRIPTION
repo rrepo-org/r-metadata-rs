@@ -1,0 +1,24 @@
+Package: SEMsensitivity
+Title: SEM Sensitivity Analysis
+Version: 0.1.0
+Authors@R: 
+    c(
+    person("Biying", "Zhou", email = "biying.zhou@psu.edu", role = c("aut", "cre"),
+       comment = c(ORCID = "0000-0002-3590-3408")),
+    person("Feng", "Ji", email = "f.ji@utoronto.ca", role = c("aut"),
+       comment = c(ORCID = "0000-0002-2051-5453"))
+    )
+Maintainer: Biying Zhou <biying.zhou@psu.edu>
+Description: Performs sensitivity analysis for Structural Equation Modeling (SEM). It determines which sample points need to be removed for the sign of a specific path in the SEM model to change, thus assessing the robustness of the model. Methodological manuscript in preparation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: lavaan, dplyr, R.utils, semfindr, stats, methods,
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-27 22:43:23 UTC; zby15
+Author: Biying Zhou [aut, cre] (ORCID: <https://orcid.org/0000-0002-3590-3408>),
+  Feng Ji [aut] (ORCID: <https://orcid.org/0000-0002-2051-5453>)
+Repository: CRAN
+Date/Publication: 2025-10-31 18:10:08 UTC

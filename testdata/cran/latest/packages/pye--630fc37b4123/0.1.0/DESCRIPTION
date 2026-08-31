@@ -1,0 +1,32 @@
+Package: pye
+Type: Package
+Title: Penalized Youden Index Estimator
+Version: 0.1.0
+Date: 2026-05-31
+Authors@R: c(person(given = c("Claudio", "J."),
+                    family = "Salaroli",
+                    email = "clasalar@ucm.es",
+                    role = c("aut", "cre")),
+             person(given = c("Maria", "del Carmen"),
+                    family = "Pardo",
+                    email = "mcapardo@ucm.es",
+                    role = "aut"))
+Description: Implements the Penalized Youden Index Estimator (PYE) and the Covariate-Adjusted Youden Index Estimator (covYI), providing a novel framework for feature and covariate selection and combination in high-dimensional binary classification problems. Methodologies are based on Salaroli and Pardo (2023) <doi:10.1016/j.chemolab.2023.104786> and an unpublished manuscript by Salaroli and Pardo (2026) under review.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, roxygen2, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+Imports: evmix, ggplot2, glmnet, MASS, Matrix, methods, ncvreg,
+        OptimalCutpoints, pROC, penalizedSVM, plyr, ROCnReg, Rmpfr,
+        sparseSVM, stats, survival
+NeedsCompilation: yes
+Packaged: 2026-05-31 14:24:37 UTC; claud
+Author: Claudio J. Salaroli [aut, cre],
+  Maria del Carmen Pardo [aut]
+Maintainer: Claudio J. Salaroli <clasalar@ucm.es>
+Repository: CRAN
+Date/Publication: 2026-06-04 11:50:07 UTC

@@ -1,0 +1,38 @@
+Type: Package
+Package: mermboost
+Title: Gradient Boosting for Generalized Additive Mixed Models
+Version: 0.1.2
+Authors@R: c(person(given = "Lars",
+                      family = "Knieper",
+                      role = c("aut", "cre"),
+                      email = "lars.knieper@uni-goettingen.de"),
+               person(given = "Torsten",
+                      family = "Hothorn",
+                      role = "aut"),
+               person(given = "Elisabeth",
+                      family = "Bergherr",
+                      role = "aut"),
+               person(given = "Colin",
+                      family = "Griesbach",
+                      role = "aut"))
+Author: Lars Knieper [aut, cre],
+  Torsten Hothorn [aut],
+  Elisabeth Bergherr [aut],
+  Colin Griesbach [aut]
+Maintainer: Lars Knieper <lars.knieper@uni-goettingen.de>
+Description: Provides a novel framework to estimate mixed models via gradient 
+    boosting. The implemented functions are based on the 'mboost' and 'lme4' packages, 
+    and the family range is therefore determined by 'lme4'. A correction mechanism 
+    for cluster-constant covariates is implemented, as well as estimation of the 
+    covariance of random effects. These methods are described in 
+    the accompanying publication; see <doi:10.1007/s11222-025-10612-y> for details.
+License: GPL-2
+Depends: R (>= 3.5.0), mboost, lme4
+Imports: stabs, data.table, MASS, Matrix, parallel, stringr, tibble,
+        reformulas
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-07-31 09:11:58 UTC; lars
+Repository: CRAN
+Date/Publication: 2026-07-31 09:40:02 UTC

@@ -1,0 +1,28 @@
+Package: CDF
+Type: Package
+Title: Centroid Decision Forest for High-Dimensional Classification
+Version: 0.1.0
+Authors@R: c(
+  person("Amjad", "Ali", email = "amjadali@uaeu.ac.ae",
+         role = c("aut", "cre")),
+  person("Saeed", "Aldahmani", role = "aut"),
+  person("Zardad", "Khan", role = "aut")
+  )
+Description: Implements the Centroid Decision Forest (CDF) as a single user-facing
+  function CDF(). The method selects discriminative features via a multi-class
+  class separability score (CSS), splits by nearest class centroid, and aggregates
+  tree votes to produce predictions and class probabilities. Returns CSS-based
+  feature importance as well. Amjad Ali, Saeed Aldahmani, Zardad Khan (2025) <doi:10.48550/arXiv.2503.19306>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.6)
+Imports: matrixStats, utils
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+Packaged: 2025-11-05 17:12:37 UTC; Admin
+Author: Amjad Ali [aut, cre],
+  Saeed Aldahmani [aut],
+  Zardad Khan [aut]
+Maintainer: Amjad Ali <amjadali@uaeu.ac.ae>
+Repository: CRAN
+Date/Publication: 2025-11-10 08:20:32 UTC

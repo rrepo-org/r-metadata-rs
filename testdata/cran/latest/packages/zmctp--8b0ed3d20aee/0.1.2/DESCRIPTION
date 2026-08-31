@@ -1,0 +1,36 @@
+Package: zmctp
+Type: Package
+Title: Zero-Modified Complex 'Tri-Parametric' Pearson Distribution for
+        Overdispersed Count Data
+Version: 0.1.2
+Authors@R: c(
+    person("Rasheedat", "Oladoja",
+           email = "roladoja@ttu.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-5883-8039"))
+    )
+Description: Implements zero-modified versions of the Complex 'Tri-Parametric'
+    Pearson distribution for overdispersed count data. The package addresses
+    limitations of existing implementations when the parameter b approaches
+    zero. It provides distribution functions, maximum likelihood estimation,
+    and diagnostic tools for modeling count data with excess zeros. The
+    methodology is based on 'Rodriguez-Avi' and coauthors (2003)
+    <doi:10.1007/s00362-002-0134-7>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, spelling
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+URL: https://github.com/roladoja/zmctp
+BugReports: https://github.com/roladoja/zmctp/issues
+Maintainer: Rasheedat Oladoja <roladoja@ttu.edu>
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-22 15:50:46 UTC; kemmi
+Author: Rasheedat Oladoja [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-5883-8039>)
+Repository: CRAN
+Date/Publication: 2026-07-22 16:10:02 UTC

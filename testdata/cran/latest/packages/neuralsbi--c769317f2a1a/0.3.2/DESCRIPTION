@@ -1,0 +1,25 @@
+Package: neuralsbi
+Title: Neural Simulation-Based Inference
+Version: 0.3.2
+Authors@R: 
+    person("Pedro", "Nascimento de Lima", email = "plima@rand.org",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9057-198X"))
+Description: A native R implementation of neural simulation-based inference, focused on Neural Posterior Estimation. Given a prior over parameters and a simulator, 'neuralsbi' trains a conditional neural density estimator to approximate the Bayesian posterior, enabling amortized, likelihood-free inference. Neural estimators run on the 'torch' back end. It targets applied researchers who want an approachable interface with sensible defaults and built-in posterior diagnostics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats, utils
+Suggests: torch (>= 0.11.0), testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://pedroliman.github.io/neuralsbi/,
+        https://github.com/pedroliman/neuralsbi
+BugReports: https://github.com/pedroliman/neuralsbi/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-23 20:35:02 UTC; plima
+Author: Pedro Nascimento de Lima [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9057-198X>)
+Maintainer: Pedro Nascimento de Lima <plima@rand.org>
+Repository: CRAN
+Date/Publication: 2026-08-03 18:10:07 UTC

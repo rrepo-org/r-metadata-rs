@@ -1,0 +1,26 @@
+Package: RGDrivers
+Title: Analysis of Stream Network Topology and Order
+Version: 0.1.0
+Authors@R: c(person("Diogo S. B.", "Rocha", email = "diogosbr@gmail.com", role = c("aut", "cre")), person("Renata T.", "Capellão", email = "renatacapellao@gmail.com", role = "aut"))
+Description: Provides tools for analyzing stream networks, including graph
+    construction, calculation of Link Magnitude, D-LINK, and export of
+    spatial data. The Link Magnitude (Shreve stream order) method follows
+    Shreve (1966) <doi:10.1086/627137>. The D-LINK metric follows
+    Osborne & Wiley (1992) <doi:10.1139/f92-076>.
+License: MIT + file LICENSE
+URL: https://github.com/diogosbr/RGDrivers
+BugReports: https://github.com/diogosbr/RGDrivers/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: terra, igraph, dplyr, sf, rlang
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-28 16:59:35 UTC; diogo
+Author: Diogo S. B. Rocha [aut, cre],
+  Renata T. Capellão [aut]
+Maintainer: Diogo S. B. Rocha <diogosbr@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-06 10:20:02 UTC

@@ -1,0 +1,43 @@
+Package: SelectSim
+Title: Selected Events Linked by Evolutionary Conditions in Cancer
+Version: 0.1.6
+Authors@R: c(
+    person("Arvind", "Iyer", , "ayalurarvind@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-8247-700X")),
+    person("Marco", "Mina", , "marco.mina.85@gmail.com", role = "aut"),
+    person("Miljan", "Petrovic", , "miljanpet93@gmail.com", role = c("aut", "cph")),
+    person("Giovanni", "Ciriello", , "giovanni.ciriello@unil.ch", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0003-2021-8683"))
+  )
+Description: Implements the 'SelectSim' methodology for identifying patterns of
+    co-occurrence and mutual exclusivity between functional genomic alterations
+    in cancer cohorts. The package processes mutation annotation data, constructs
+    alteration matrices, estimates expected alteration-pair frequencies, and
+    quantifies deviations associated with selective interactions. The methodology
+    is described in Iyer et al. (2026) <doi:10.1038/s41588-026-02661-4>.
+License: MIT + file LICENSE
+URL: https://csogroup.github.io/SelectSim/
+BugReports: https://github.com/CSOgroup/SelectSim/issues
+Depends: R (>= 3.5)
+Imports: doParallel, doRNG, dplyr, foreach, ggplot2, ggpubr, ggridges,
+        Matrix, parallel, Rcpp, Rfast, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tictoc
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 8.0.0
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-07-12 07:29:57 UTC; arvindiyer
+Author: Arvind Iyer [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8247-700X>),
+  Marco Mina [aut],
+  Miljan Petrovic [aut, cph],
+  Giovanni Ciriello [aut, cph] (ORCID:
+    <https://orcid.org/0000-0003-2021-8683>)
+Maintainer: Arvind Iyer <ayalurarvind@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 10:40:14 UTC

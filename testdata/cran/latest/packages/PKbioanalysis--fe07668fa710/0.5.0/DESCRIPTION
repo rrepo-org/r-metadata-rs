@@ -1,0 +1,46 @@
+Type: Package
+Package: PKbioanalysis
+Title: Pharmacokinetic Bioanalysis Experiments Design and Exploration
+Version: 0.5.0
+Authors@R: c(
+    person("Omar", "Elashkar", email = "omar.i.elashkar@gmail.com", 
+      role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5505-778X"))
+      )
+Maintainer: Omar Elashkar <omar.i.elashkar@gmail.com>
+Description: Automate pharmacokinetic/pharmacodynamic bioanalytical procedures based on best practices and regulatory recommendations.
+    The package impose regulatory constrains and sanity checking for common bioanalytical procedures. 
+    Additionally, 'PKbioanalysis' provides a relational infrastructure for plate management and injection sequence.
+License: AGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.3.0)
+Imports: dplyr, tidyselect, stringr (>= 1.5.1), ggplot2, ggforce (>=
+        0.4.1), tidyr, glue (>= 1.6.2), checkmate, shiny, DBI, duckdb
+        (>= 1.0.0), bslib, bsicons, cli, DiagrammeR, DT, shinyWidgets,
+        shinyjs, units, stats, shinyalert, htmltools, rlang, grDevices,
+        utils, yaml, rhandsontable, methods, reticulate (>= 1.44.1),
+        RTMB, janitor, tibble, xml2, RaMS, data.tree, nloptr, forcats,
+        ggiraph (>= 0.9.3), gt, plotly, pracma, reactable, gtools,
+        ellmer, htmlwidgets, jsonlite, nlme, scales, shinychat, uuid,
+        sortable, writexl
+Suggests: rxode2, knitr, patchwork, rmarkdown, testthat (>= 3.0.0)
+SystemRequirements: python (>= 3.10)
+URL: https://omarashkar.github.io/PKbioanalysis/
+BugReports: https://github.com/OmarAshkar/PKbioanalysis/issues
+Config/testthat/edition: 3
+Collate: 'PKbioanalysis-package.R' 'calc.R' 'chrom_anomaly_plots.R'
+        'chrom_app.R' 'chrom_parsers.R' 'chrom_utils.R' 'generics.R'
+        'class.R' 'chromatogram.R' 'config.R' 'dil_map.R'
+        'estim_residuals.R' 'genAI.R' 'gen_studydesign.R'
+        'generate_test_set.R' 'injec_list.R' 'linearitycheck.R'
+        'method_file.R' 'peak_integerate.R' 'plate.R' 'plate_expr.R'
+        'plates_class.R' 'process_chroms.R' 'quant_app.R'
+        'quant_misc.R' 'quant_object.R' 'quant_parsers.R'
+        'samples_profiles.R' 'study_app.R' 'suitability_utils.R'
+        'utils.R' 'writers.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2026-02-17 21:14:48 UTC; omar.elashkar
+Author: Omar Elashkar [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5505-778X>)
+Repository: CRAN
+Date/Publication: 2026-02-17 21:40:07 UTC

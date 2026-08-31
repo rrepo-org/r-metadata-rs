@@ -1,0 +1,41 @@
+Package: MATES
+Title: Multi-View Aggregated Two Sample Tests
+Version: 0.1
+Authors@R: 
+    c(
+    person("Zexi", "Cai", 
+            email = "zc2626@columbia.edu", 
+            role = c("aut", "cre"),
+            comment = c(ORCID = "0000-0002-0253-8045")),
+    person("Mingshuo", "Liu", 
+            email = "mshliu@ucdavis.edu", 
+            role = c("aut", "ctb"),
+             comment = c(ORCID = "0000-0001-9270-0298")),
+    person("Wenbo", "Fei", 
+            email = "wf2270@columbia.edu", 
+            role = c("aut", "ctb"),
+             comment = c(ORCID = "0009-0000-6377-3252")),
+    person("Doudou", "Zhou", 
+            email = "ddzhou@nus.edu.sg", 
+            role = c("aut", "ctb"),
+            comment = c(ORCID = "0000-0002-0830-2287"))
+    )
+Maintainer: Zexi Cai <zc2626@columbia.edu>
+Depends: R (>= 3.3.0)
+Description: Implements the Multi-view Aggregated Two-Sample (MATES) test, a powerful nonparametric method for testing equality of two multivariate distributions. The method constructs multiple graph-based statistics from various perspectives (views) including different distance metrics, graph types (nearest neighbor graphs, minimum spanning trees, and robust nearest neighbor graphs), and weighting schemes. These statistics are then aggregated through a quadratic form to achieve improved statistical power. The package provides both asymptotic closed-form inference and permutation-based testing procedures. For methodological details, see Cai and others (2026+) <doi:10.48550/arXiv.2412.16684>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/ZexiCAI/MATES
+BugReports: https://github.com/ZexiCAI/MATES/issues
+LinkingTo: Rcpp
+Imports: Rcpp, ade4, MASS, magrittr
+NeedsCompilation: yes
+Packaged: 2026-01-19 11:30:37 UTC; Zexi Cai
+Author: Zexi Cai [aut, cre] (ORCID: <https://orcid.org/0000-0002-0253-8045>),
+  Mingshuo Liu [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0001-9270-0298>),
+  Wenbo Fei [aut, ctb] (ORCID: <https://orcid.org/0009-0000-6377-3252>),
+  Doudou Zhou [aut, ctb] (ORCID: <https://orcid.org/0000-0002-0830-2287>)
+Repository: CRAN
+Date/Publication: 2026-01-22 21:40:07 UTC

@@ -1,0 +1,24 @@
+Package: xreg2
+Type: Package
+Title: Flexible Maximum Likelihood Regression with Gradient-Based
+        Optimisation
+Version: 0.1.4
+Authors@R: person("Kim", "Rand", email = "krand@krand.no", role = c("aut", "cre"))
+Description: Fits flexible maximum likelihood regression models supporting censored,
+    interval, and hybrid continuous/dichotomous data. Provides explicit analytic and
+    numerical gradient computation, random intercept models via Gauss-Hermite
+    quadrature, and multiple distribution families.
+URL: https://github.com/MathsinHealth/xreg2
+Depends: R (>= 4.0.0)
+Imports: ucminf, numDeriv
+Suggests: optimx, testthat (>= 3.0.0)
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-23 12:56:33 UTC; Eier
+Author: Kim Rand [aut, cre]
+Maintainer: Kim Rand <krand@krand.no>
+Repository: CRAN
+Date/Publication: 2026-04-28 18:10:02 UTC

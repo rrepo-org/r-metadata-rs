@@ -1,0 +1,26 @@
+Package: TrueWAP
+Type: Package
+Title: True Range-Weighted Average Price ('TrueWAP')
+Version: 0.1.0
+Author: Joshua Callaway [aut, cre]
+Maintainer: Joshua Callaway <Callaway@roar-analytics.com>
+Authors@R: person(given = "Joshua",
+                      family = "Callaway",
+                      role = c("aut", "cre"),
+                      email = "Callaway@roar-analytics.com")
+Description: This groundbreaking technical indicator directly integrates volatility into price averaging by weighting median range-bound prices using the True Range.  Unlike conventional metrics such as TWAP (Time-Weighted Average Price), which focuses solely on time, or VWAP (Volume-Weighted Average Price), which emphasizes volume, 'TrueWAP' captures fluctuating market behavior by reflecting true price movement within high/low performance boundaries.
+License: GPL (>= 2)
+URL: https://github.com/CallawayCross/TrueWAP
+BugReports: https://github.com/CallawayCross/TrueWAP/issues
+Depends: R (>= 4.3.2)
+Imports: zoo (>= 1.8-14), TTR (>= 0.24.4)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-07-02 17:33:57 UTC; snow_
+Repository: CRAN
+Date/Publication: 2025-07-07 09:20:06 UTC

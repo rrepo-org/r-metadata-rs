@@ -1,0 +1,104 @@
+Package: climatehealth
+Title: Statistical Tools for Modelling Climate-Health Impacts
+Version: 1.0.3
+Date: 2026-07-03
+Authors@R: 
+    c(
+      person("Charlie", "Browning", role = "aut"),
+      person("Kenechi", "Omeke", email = "climate.health@ons.gov.uk", role = c("aut", "cre")),
+      person("Etse Yawo", "Dzakpa", role = "aut"),
+      person("Gladin", "Jose", role = "aut"),
+      person("Matt", "Pearce", role = "aut"),
+      person("Ellie", "Watkins", role = "aut"),
+      person("Claire", "Hunt", role = "aut"),
+      person("Beatrice", "Byukusenge", role = "aut"),
+      person("Cassien", "Habyarimana", role = "aut"),
+      person("Venuste", "Nyagahakwa", role = "aut"),
+      person("Felix", "Scarbrough", role = "aut"),
+      person("Treesa", "Shaji", role = "aut"),
+      person("Bonnie", "Lewis", role = "aut"),
+      person("Maquines Odhiambo", "Sewe", role = "aut"),
+      person("Vijendra", "Ingole", role = "aut"),
+      person("Sean", "Lovell", role = "ctb"),
+      person("Antony", "Brown", role = "ctb"),
+      person("Euan", "Soutter", role = "ctb"),
+      person("Gillian", "Flower", role = "ctb"),
+      person("David", "Furley", role = "ctb"),
+      person("Joe", "Panes", role = "ctb"),
+      person("Charlotte", "Romaniuk", role = "ctb"),
+      person("Milly", "Powell", role = "ctb"),
+      person("Wellcome", role = "fnd"),
+      person("Office for National Statistics", role = "cph",
+             comment = "SOSCHI Project")
+    )
+Description: Tools for producing climate-health indicators and supporting
+              official statistics from health and climate data. Implements analytical
+              workflows for temperature-related mortality, wildfire smoke exposure,
+              air pollution, suicides related to extreme heat, malaria, and
+              diarrhoeal disease outcomes, with utilities for descriptive statistics, model
+              validation, attributable fraction and attributable number estimation,
+              relative risk estimation, minimum mortality temperature estimation,
+              and plotting for reporting. These six indicators are endorsed by
+              the United Nations Statistical Commission for inclusion in the
+              Global Set of Environment and Climate Change Statistics.
+              Implemented methods include distributed lag non-linear models (DLNM),
+              quasi-Poisson time-series regression, case-crossover analysis,
+              Bayesian spatio-temporal models using the Integrated Nested Laplace
+              Approximation ('INLA'), and multivariate meta-analysis for
+              sub-national estimates. The package is based on methods developed
+              in the Standards for Official Statistics on Climate-Health
+              Interactions (SOSCHI) project
+              <https://climate-health.officialstatistics.org>. For methodologies,
+              see Watkins et al. (2026) <doi:10.5281/zenodo.14865904>,
+              Jose et al. (2026) <doi:10.5281/zenodo.14052183>,
+              Pearce et al. (2026) <doi:10.5281/zenodo.14050224>,
+              Byukusenge et al. (2026) <doi:10.5281/zenodo.15585042>,
+              Dzakpa et al. (2026) <doi:10.5281/zenodo.14881886>, and
+              Dzakpa et al. (2026) <doi:10.5281/zenodo.14871506>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: car, data.table, dlnm, dplyr, Epi, forcats, exactextractr,
+        ggplot2, gnm, graphics, grDevices, lifecycle, lme4, lubridate,
+        metafor, mgcv, mixmeta, ncdf4, patchwork, pkgbuild, png, purrr,
+        raster, RColorBrewer, readr, readxl, reshape2, rlang, scales,
+        sf, spdep, splines, stats, stringr, tibble, tidyr, tools,
+        tseries, tsModel (>= 0.6-2), utils, xfun, zoo
+VignetteBuilder: knitr
+Suggests: covr, knitr, rmarkdown, devtools, DT, htmltools, INLA,
+        mockery, mvmeta, openxlsx, patrick, pkgload, stringdist, terra,
+        testthat (>= 3.2.1.1), withr
+URL: https://climate-health.officialstatistics.org
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+Depends: R (>= 4.4.0)
+Config/rcmdcheck/ignore-inconsequential-notes: true
+NeedsCompilation: no
+Packaged: 2026-07-03 20:20:24 UTC; omekek
+Author: Charlie Browning [aut],
+  Kenechi Omeke [aut, cre],
+  Etse Yawo Dzakpa [aut],
+  Gladin Jose [aut],
+  Matt Pearce [aut],
+  Ellie Watkins [aut],
+  Claire Hunt [aut],
+  Beatrice Byukusenge [aut],
+  Cassien Habyarimana [aut],
+  Venuste Nyagahakwa [aut],
+  Felix Scarbrough [aut],
+  Treesa Shaji [aut],
+  Bonnie Lewis [aut],
+  Maquines Odhiambo Sewe [aut],
+  Vijendra Ingole [aut],
+  Sean Lovell [ctb],
+  Antony Brown [ctb],
+  Euan Soutter [ctb],
+  Gillian Flower [ctb],
+  David Furley [ctb],
+  Joe Panes [ctb],
+  Charlotte Romaniuk [ctb],
+  Milly Powell [ctb],
+  Wellcome [fnd],
+  Office for National Statistics [cph] (SOSCHI Project)
+Maintainer: Kenechi Omeke <climate.health@ons.gov.uk>
+Repository: CRAN
+Date/Publication: 2026-07-05 18:50:02 UTC

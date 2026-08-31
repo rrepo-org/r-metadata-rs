@@ -1,0 +1,26 @@
+Package: dci
+Title: Calculate the Dendritic Connectivity Index in River Networks
+Version: 1.0.3
+Authors@R: 
+    person("Alex", "Arkilanian", , "a.arkilanian@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5427-2867"))
+Maintainer: Alex Arkilanian <a.arkilanian@gmail.com>
+Description: Calculate and analyze ecological connectivity across the watercourse of river networks using the Dendritic Connectivity Index.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/aarkilanian/dci
+BugReports: https://github.com/aarkilanian/dci/issues
+Suggests: furrr, future, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: rlang, dplyr, magrittr, units, sf, tidygraph, sfnetworks,
+        igraph, tidyselect
+Depends: R (>= 3.50)
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-26 17:40:02 UTC; alex
+Author: Alex Arkilanian [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5427-2867>)
+Repository: CRAN
+Date/Publication: 2026-02-26 18:20:02 UTC

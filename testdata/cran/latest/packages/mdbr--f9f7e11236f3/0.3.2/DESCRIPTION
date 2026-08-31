@@ -1,0 +1,33 @@
+Package: mdbr
+Title: Work with Microsoft Access Files
+Version: 0.3.2
+Authors@R: c(
+    person("Kiernan", "Nicholls", email = "k5cents@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-9229-7897")),
+    person("Bruno", "Tremblay", email = "cran@neoxone.com", role = c("ctb"),
+           comment = "DBI interface and bundled mdbtools source"))
+Description: Work with Microsoft Access '.mdb' and '.accdb' files using the
+    open source 'MDB Tools' library <https://github.com/mdbtools/mdbtools/>.
+    The library is compiled and bundled with the package, so no external
+    installation is required. Provides high-level helpers for reading tables,
+    exporting to CSV or JSON, inspecting table definitions, and running SQL queries.
+    Also exposes a full read-only 'DBI' interface for use with standard
+    database workflows.
+License: GPL-3 | LGPL-2
+URL: https://k5cents.github.io/mdbr/, https://github.com/k5cents/mdbr,
+        https://github.com/mdbtools/mdbtools/
+BugReports: https://github.com/k5cents/mdbr/issues
+Imports: DBI, lifecycle, methods, tibble, utils, jsonlite
+Suggests: readr, testthat (>= 3.0.0)
+Encoding: UTF-8
+NeedsCompilation: yes
+SystemRequirements: GNU make
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-18 16:33:44 UTC; kiernan
+Author: Kiernan Nicholls [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-9229-7897>),
+  Bruno Tremblay [ctb] (DBI interface and bundled mdbtools source)
+Maintainer: Kiernan Nicholls <k5cents@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-18 17:00:08 UTC

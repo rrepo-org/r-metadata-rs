@@ -1,0 +1,33 @@
+Package: DyadRatios
+Type: Package
+Title: Dyad Ratios Algorithm for Latent Variable Estimation
+Version: 2.1
+Date: 2026-05-11
+Authors@R: c(
+    person("James", "Stimson", role = c("aut"), comment = "Original C++ implementation"),
+    person("Dave", "Armstrong", role = c("cre", "aut"), email = "davearmstrong.ps@gmail.com")
+    )
+Description: Implements the Dyad Ratios algorithm for estimating latent
+    variables from time-series survey data. The algorithm estimates a
+    latent mood dimension (or two dimensions) from a set of issue opinion
+    series. Supports annual, quarterly, monthly, and daily aggregation
+    intervals, optional exponential smoothing, and up to two latent
+    dimensions. Input data can be provided as a data frame or read from
+    delimited text files. Based on Stimson's 'MCalc' C++ program. 
+    See Stimson (2018) <doi:10.1177/0759106318761614> for more details. 
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), ggplot2, knitr, rmarkdown, dplyr,
+        lubridate, rio, tidyr
+NeedsCompilation: yes
+Packaged: 2026-05-11 17:31:14 UTC; david
+Author: James Stimson [aut] (Original C++ implementation),
+  Dave Armstrong [cre, aut]
+Maintainer: Dave Armstrong <davearmstrong.ps@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-11 19:00:14 UTC

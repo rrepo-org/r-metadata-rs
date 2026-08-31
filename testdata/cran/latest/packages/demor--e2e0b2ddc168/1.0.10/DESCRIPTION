@@ -1,0 +1,30 @@
+Package: demor
+Title: Methods for Demographic Analysis
+Version: 1.0.10
+Authors@R: 
+    person("Vadim", "Ustyuzhanin", , "vadim.v.ustyuzhanin@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3800-1108"))
+Description: Implements life tables, fertility and mortality indicators,
+    decomposition methods, Lee-Carter mortality forecasting, Leslie
+    matrices, and population pyramids for demographic analysis. Methods
+    are described in Preston et al. (2001, ISBN:1557864519) and
+    Ustyuzhanin (2025) <doi:10.17323/demreview.v12i4.30415>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, forecast, ggplot2, magrittr, tidyr, scales, splines
+Depends: R (>= 4.0.0)
+LazyData: true
+LazyDataCompression: gzip
+LazyLoad: true
+Suggests: knitr, rmarkdown, stringr, testthat
+URL: https://vadvu.github.io/demor/, https://github.com/vadvu/demor
+BugReports: https://github.com/vadvu/demor/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-05-18 16:41:59 UTC; vvust
+Author: Vadim Ustyuzhanin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3800-1108>)
+Maintainer: Vadim Ustyuzhanin <vadim.v.ustyuzhanin@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-22 09:30:02 UTC

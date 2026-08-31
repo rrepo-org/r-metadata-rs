@@ -1,0 +1,28 @@
+Package: pkggraph
+Type: Package
+Title: Explore the R Package Dependencies on the Comprehensive R
+        Archive Network (CRAN) Like Repositories
+Version: 0.3.1
+Authors@R: c(
+    person("Komala Sheshachala", "Srikanth", email = "sri.teach@gmail.com", role = c("aut", "cre")),
+    person("Singh", "Nikhil", email = "nikhilsingh2009@gmail.com", role = c("aut"))
+    )
+Description: Explore various dependencies of a packages (on the Comprehensive R Archive Network Like repositories). The functions get_neighborhood() and get_dependencies() provide dependencies of packages and as_graph() can be used to convert into a 'igraph' object for further analysis and plotting.
+Imports: dplyr (>= 1.0.1), tidyr (>= 1.3.0), igraph (>= 1.0.1), ggplot2
+        (>= 4.0.0), tidygraph (>= 1.3.1), ggraph (>= 2.2.2), tibble (>=
+        1.3.0), rlang (>= 1.1.0), cli (>= 3.6.0), checkmate (>= 2.3.0),
+        stringr (>= 1.5.0), BiocManager (>= 1.30.27), tools, utils,
+Depends: R (>= 4.1.0),
+Suggests: rmarkdown
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/talegari/pkggraph
+BugReports: https://github.com/talegari/pkggraph/issues
+NeedsCompilation: no
+Packaged: 2026-04-19 09:05:23 UTC; srikanth-ks1
+Author: Komala Sheshachala Srikanth [aut, cre],
+  Singh Nikhil [aut]
+Maintainer: Komala Sheshachala Srikanth <sri.teach@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-22 12:00:09 UTC

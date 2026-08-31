@@ -1,0 +1,34 @@
+Package: VanillaCalendar
+Title: Interactive Calendar and Date Picker Widget
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Xavier", family = "Escribà Montagut", email = "xavier.escriba.montagut@gmail.com", role = c("aut", "cre")),
+    person(given = "Yury", family = "Uvarov", role = c("ctb", "cph"),
+           comment = "Author of the bundled 'Vanilla Calendar Pro' library"))
+Description: An R interface to the 'Vanilla Calendar Pro' 'JavaScript' library
+    (version 3.2.0, bundled) for creating interactive and customizable calendar
+    widgets and date pickers. The package enables integration of modern calendar
+    components in R and 'Shiny' applications, with support for date, month, year
+    and time selection, popup input mode, theming, and in-place updates from the
+    'Shiny' server.
+URL: https://github.com/ESCRI11/vanilla-calendar-r
+BugReports: https://github.com/ESCRI11/vanilla-calendar-r/issues
+License: GPL (>= 3)
+Copyright: The bundled Vanilla Calendar Pro library is copyright Yury
+        Uvarov and released under the MIT licence; see
+        inst/htmlwidgets/lib/VanillaCalendar-3.2.0/LICENSE.
+Encoding: UTF-8
+Config/roxygen2/version: 8.1.0
+Imports: htmlwidgets
+Suggests: shiny, testthat (>= 3.0.0), shinytest2, chromote, htmltools,
+        withr, knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-21 09:11:28 UTC; massagno
+Author: Xavier Escribà Montagut [aut, cre],
+  Yury Uvarov [ctb, cph] (Author of the bundled 'Vanilla Calendar Pro'
+    library)
+Maintainer: Xavier Escribà Montagut <xavier.escriba.montagut@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 10:00:15 UTC

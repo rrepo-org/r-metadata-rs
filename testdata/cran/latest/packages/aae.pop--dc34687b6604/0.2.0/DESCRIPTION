@@ -1,0 +1,36 @@
+Package: aae.pop
+Type: Package
+Title: Flexible Population Dynamics Simulations
+Version: 0.2.0
+Date: 2026-01-27
+Authors@R: c(
+  person(given = "Jian",
+         family = "Yen",
+         role = c("aut", "cre", "cph"),
+         email = "jdl.yen@gmail.com"),
+  person(given = "Arthur Rylah Institute for Environmental Research",
+         role = c("fnd"))
+  )
+Maintainer: Jian Yen <jdl.yen@gmail.com>
+Description: Simulate population dynamics from realistically complex matrix
+    population models in a plug-and-play fashion. Supports aspatial and 
+    spatially implicit models with one or more species and time-varying
+    covariates, stochasticity, density dependence, additions or removals of
+    individuals, interspecific interactions, and metapopulations.
+License: Apache License 2.0
+URL: https://aae-stats.github.io/aae.pop/,
+        https://github.com/aae-stats/aae.pop
+BugReports: https://github.com/aae-stats/aae.pop/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats, abind, cubature, future.apply, mc2d, nleqslv, rlang
+Suggests: knitr, DiagrammeR, testthat, covr, rmarkdown, remotes, scales
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2026-01-27 08:28:36 UTC; jy0f
+Author: Jian Yen [aut, cre, cph],
+  Arthur Rylah Institute for Environmental Research [fnd]
+Repository: CRAN
+Date/Publication: 2026-01-31 18:40:08 UTC

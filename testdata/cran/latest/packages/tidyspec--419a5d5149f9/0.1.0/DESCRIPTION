@@ -1,0 +1,39 @@
+Package: tidyspec
+Type: Package
+Title: Spectroscopy Analysis Using the Tidy Data Philosophy
+Version: 0.1.0
+Authors@R: c(
+    person("Marcel", "Ferreira", email = "marcel.ferreira@unesp.br",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3445-0945")),
+    person("Willian", "Zambuzzi", role = "dtc",
+           comment = c(ORCID = "0000-0002-4149-5965")),
+    person("Julia", "Moraes", role = c("dtc", "ctb"),
+           comment = c(ORCID = "0000-0003-4241-5389")),
+    person(given = "Emerson Araujo Alves dos", family = "Santos", role = "ctb",
+       comment = c(ORCID = "0000-0002-8200-0906"))
+  )
+Maintainer: Marcel Ferreira <marcel.ferreira@unesp.br>
+Description: Enables the analysis of spectroscopy data such as infrared ('IR'), Raman, and nuclear magnetic resonance ('NMR') using the tidy data framework from the 'tidyverse'. The 'tidyspec' package provides functions for data transformation, normalization, baseline correction, smoothing, derivatives, and both interactive and static visualization. It promotes structured, reproducible workflows for spectral data exploration and preprocessing. Implemented methods include Savitzky and Golay (1964) "Smoothing and Differentiation of Data by Simplified Least Squares Procedures" <doi:10.1021/ac60214a047>, Sternberg (1983) "Biomedical Image Processing" <https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1654163>, Zimmermann and Kohler (1996) "Baseline correction using the rolling ball algorithm" <doi:10.1016/0168-583X(95)00908-6>, Beattie and Esmonde-White (2021) "Exploration of Principal Component Analysis: Deriving Principal Component Analysis Visually Using Spectra" <doi:10.1177/0003702820987847>, Wickham et al. (2019) "Welcome to the tidyverse" <doi:10.21105/joss.01686>, and Kuhn, Wickham and Hvitfeldt (2024) "recipes: Preprocessing and Feature Engineering Steps for Modeling" <https://CRAN.R-project.org/package=recipes>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/marceelrf/tidyspec
+BugReports: https://github.com/marceelrf/tidyspec/issues
+RoxygenNote: 7.2.3
+Depends: R (>= 4.1.0)
+Imports: crayon, dplyr, ggplot2, glue, plotly, purrr, recipes, readr,
+        readxl, rlang, scales, signal, tibble, tidyr, tidyselect,
+        timetk
+Suggests: gridExtra, knitr, rmarkdown, tidyverse
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-06-10 12:57:32 UTC; madra
+Author: Marcel Ferreira [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3445-0945>),
+  Willian Zambuzzi [dtc] (ORCID: <https://orcid.org/0000-0002-4149-5965>),
+  Julia Moraes [dtc, ctb] (ORCID:
+    <https://orcid.org/0000-0003-4241-5389>),
+  Emerson Araujo Alves dos Santos [ctb] (ORCID:
+    <https://orcid.org/0000-0002-8200-0906>)
+Repository: CRAN
+Date/Publication: 2025-06-12 14:20:02 UTC

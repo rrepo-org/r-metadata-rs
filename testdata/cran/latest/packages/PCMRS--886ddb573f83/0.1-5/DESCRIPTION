@@ -1,0 +1,22 @@
+Package: PCMRS
+Type: Package
+Title: Model Response Styles in Partial Credit Models
+Version: 0.1-5
+Date: 2025-07-22
+Authors@R: person(given = "Gunther",
+                    family = "Schauberger",
+                    role = c("aut", "cre"),
+                    email = "gunther.schauberger@tum.de")
+Maintainer: Gunther Schauberger <gunther.schauberger@tum.de>
+Description: Implementation of PCMRS (Partial Credit Model with Response Styles) as proposed in by Tutz, Schauberger and Berger (2018) <doi:10.1177/0146621617748322> .  PCMRS is an extension of the regular partial credit model. PCMRS allows for an additional person parameter that characterizes the response style of the person. By taking the response style into account, the estimates of the item parameters are less biased than in partial credit models.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.4)
+Depends: ltm, statmod, cubature, mvtnorm, parallel
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2025-07-22 07:32:55 UTC; ge29weh
+Author: Gunther Schauberger [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-07-22 08:32:38 UTC

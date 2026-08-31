@@ -1,0 +1,43 @@
+Package: DOEpro
+Title: Analysis of Designed Agricultural Experiments
+Version: 2.0.1
+Authors@R: c(
+    person("Immad A.", "Shah", email = "immad11w@skuastkashmir.ac.in",
+           role = "aut", comment = c(ORCID = "0000-0003-2761-5112")),
+    person("Uzair Javid", "Khan", email = "uzairkhan11w@gmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0009-0001-6368-0977")),
+    person("M. Iqbal", "Jeelani", role = "aut",
+           comment = c(ORCID = "0000-0002-2974-2871")))
+Description: A 'shiny' application and supporting functions for the analysis of
+    designed agricultural experiments, following the procedures set out by Gomez
+    and Gomez (1984, ISBN:9780471870920). Handles completely randomised,
+    randomised complete block, Latin square, factorial (up to four factors),
+    split-plot and strip-plot designs, and pooled (combined) analysis over
+    environments including factorial treatments, after Yates and Cochran (1938)
+    <doi:10.1017/S0021859600050978>; analyses several response variables
+    simultaneously; recommends and applies variance-stabilising transformations
+    using the profile likelihood of Box and Cox (1964)
+    <doi:10.1111/j.2517-6161.1964.tb00553.x>; reports standard errors and
+    critical differences for every legitimate comparison, including the four
+    distinct comparisons of a split plot, the mixed ones using the approximation
+    of Satterthwaite (1946) <doi:10.2307/3002019>; and produces
+    publication-format tables of means, diagnostic plots and a written
+    interpretation.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: shiny, DT, ggplot2, rlang, stats, utils, graphics, grDevices
+Suggests: pagedown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/Uzairkhan11w/DOEpro, https://doepro.pages.dev
+BugReports: https://github.com/Uzairkhan11w/DOEpro/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-25 09:54:27 UTC; Uzair
+Author: Immad A. Shah [aut] (ORCID: <https://orcid.org/0000-0003-2761-5112>),
+  Uzair Javid Khan [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-6368-0977>),
+  M. Iqbal Jeelani [aut] (ORCID: <https://orcid.org/0000-0002-2974-2871>)
+Maintainer: Uzair Javid Khan <uzairkhan11w@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 14:10:39 UTC

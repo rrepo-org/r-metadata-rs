@@ -1,0 +1,27 @@
+Package: bertopicr
+Title: Topic Modeling with 'BERTopic'
+Version: 0.3.6
+Authors@R: 
+    person("Teodor", "Petrič", , "teodor.petric@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4397-9365"))
+Description: Provides topic modeling and visualization by interfacing with the
+    'BERTopic' library for 'Python' via 'reticulate'. See Grootendorst (2022)
+    <doi:10.48550/arXiv.2203.05794>.
+Imports: dplyr, tidyr, purrr, utils, reticulate, stringr, tibble,
+        htmltools, readr, rlang
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: ggplot2, knitr, rmarkdown, tictoc, wordcloud2
+SystemRequirements: Python (>= 3.8); BERTopic and Python packages:
+        sentence-transformers, umap-learn, hdbscan, scikit-learn
+Config/Needs/website: pkgdown, rmarkdown, knitr
+VignetteBuilder: knitr
+URL: https://tpetric7.github.io/bertopicr/
+NeedsCompilation: no
+Packaged: 2026-01-16 19:19:21 UTC; teodo
+Author: Teodor Petrič [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4397-9365>)
+Maintainer: Teodor Petrič <teodor.petric@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-22 09:00:07 UTC

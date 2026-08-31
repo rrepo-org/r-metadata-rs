@@ -1,0 +1,25 @@
+Package: PowRPriori
+Title: Power Analysis via Data Simulation for (Generalized) Linear
+        Mixed Effects Models
+Version: 0.2.0
+Authors@R: 
+    person("Markus", "Grill", email = "markus.grill@uni-wh.de", role = c("aut", "cre"))
+Description: Conduct a priori power analyses via Monte-Carlo style data simulation for linear and generalized linear mixed-effects models (LMMs/GLMMs). Provides a user-friendly workflow with helper functions to easily define fixed and random effects as well as diagnostic functions to evaluate the adequacy of the results of the power analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: dplyr, doFuture, foreach, future, ggplot2, lme4, lmerTest,
+        magrittr, MASS, purrr, rlang, scales, stats, tidyr, tidyselect,
+        utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/mirgll/PowRPriori
+BugReports: https://github.com/mirgll/PowRPriori/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-12 12:16:48 UTC; mgrill
+Author: Markus Grill [aut, cre]
+Maintainer: Markus Grill <markus.grill@uni-wh.de>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-05-12 12:30:07 UTC

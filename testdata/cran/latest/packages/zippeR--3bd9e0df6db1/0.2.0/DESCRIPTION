@@ -1,0 +1,45 @@
+Package: zippeR
+Title: Working with United States ZIP Code and ZIP Code Tabulation Area
+        Data
+Version: 0.2.0
+Authors@R: c(
+    person(
+      given = "Christopher", family = "Prener", email = "Christopher.Prener@pfizer.com", 
+      role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4310-9888")
+    ),
+    person(
+      given = "Timothy", family = "Wiemken", email = "Timothy.Wiemken@pfizer.com", 
+      role = "aut", comment = c(ORCID = "0000-0002-8251-3007")
+    ),
+    person(
+      given = "Angela", family = "Cook", email = "Angela.Cook@pfizer.com", 
+      role = "aut"
+    )
+  )
+Description: Provides a set of functions for working with American postal codes,
+   which are known as ZIP Codes. These include accessing ZIP Code to ZIP Code 
+   Tabulation Area (ZCTA) crosswalks, retrieving demographic data for ZCTAs, and 
+   tabulating demographic data for three-digit ZCTAs.
+Depends: R (>= 4.1)
+License: Apache License (>= 2)
+URL: https://github.com/pfizer-opensource/zippeR
+BugReports: https://github.com/pfizer-opensource/zippeR/issues
+Encoding: UTF-8
+LazyData: true
+Language: en-US
+Config/testthat/edition: 3
+Imports: cli (>= 3.0.0), dplyr (>= 1.0.0), httr2 (>= 1.0.0), jsonlite
+        (>= 1.7.0), sf (>= 1.0-0), tibble (>= 3.0.0), tidycensus (>=
+        1.0), tigris (>= 1.0)
+Suggests: knitr, lintr, rmarkdown, spelling, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-02 06:23:51 UTC; PRENEC
+Author: Christopher Prener [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4310-9888>),
+  Timothy Wiemken [aut] (ORCID: <https://orcid.org/0000-0002-8251-3007>),
+  Angela Cook [aut]
+Maintainer: Christopher Prener <Christopher.Prener@pfizer.com>
+Repository: CRAN
+Date/Publication: 2026-06-02 07:50:02 UTC

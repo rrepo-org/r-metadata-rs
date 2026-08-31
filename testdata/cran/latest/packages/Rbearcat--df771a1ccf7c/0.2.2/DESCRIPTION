@@ -1,0 +1,37 @@
+Package: Rbearcat
+Type: Package
+Title: University of Cincinnati Themes and Utilities for Econometrics
+        and Data Science
+Version: 0.2.2
+Authors@R: 
+    person(given = "Saannidhya",
+           family = "Rawat",
+           role = c("aut", "cre"),
+           email = "rawatsa@mail.uc.edu")
+Description: Provides plotting helpers, table-formatting utilities, and
+    report templates for econometrics, model development, and applied data
+    analysis. Includes University of Cincinnati branded themes for
+    'ggplot2', 'modelsummary', 'flextable', 'rmarkdown', 'bookdown', and
+    'quarto'.
+License: MIT + file LICENSE
+URL: https://github.com/saannidhya/Rbearcat
+BugReports: https://github.com/saannidhya/Rbearcat/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: knitr, kableExtra, magrittr, flextable, purrr, officer,
+        colorspace, ggplot2, scales, bookdown, forcats, dplyr,
+        lubridate, stringr, usethis, readr, rmarkdown, xaringan, git2r,
+        gert, modelsummary, broom, patchwork, lmtest, data.table,
+        tools, rlang
+Suggests: testthat (>= 2.1.0), tibble, gapminder, ggrepel, gt,
+        reactable, RColorBrewer, fivethirtyeight, gcookbook, haven,
+        here, tidyverse, viridis, fixest, plm, ivreg, forecast, xts,
+        zoo, car, janitor, ssh, askpass, crayon, rstudioapi, ragg,
+        systemfonts
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-21 22:50:50 UTC; rawatsa
+Author: Saannidhya Rawat [aut, cre]
+Maintainer: Saannidhya Rawat <rawatsa@mail.uc.edu>
+Repository: CRAN
+Date/Publication: 2026-03-23 07:20:08 UTC

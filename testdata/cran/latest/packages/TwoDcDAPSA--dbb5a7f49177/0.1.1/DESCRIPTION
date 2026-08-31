@@ -1,0 +1,37 @@
+Type: Package
+Package: TwoDcDAPSA
+Title: Calculate TwoDcDAPSA: PROs-Joint Contrast (PJC) and
+        Swollen–Tender Joints Contrast (STC) Scores and Quartiles
+Version: 0.1.1
+Authors@R: c(
+    person(given = "Ning",      family = "Meng",   email = "nmeng2@jh.edu", role = c("aut", "cre")),
+    person(given = "Ji Soo",    family = "Kim",                                role = "aut"),
+    person(given = "Ana-Maria", family = "Orbai",                              role = "aut"),
+    person(given = "Scott L.",  family = "Zeger",                              role = "aut"))
+Description: Provides a calculator for the two-dimensional clinical Disease Activity
+    index for Psoriatic Arthritis (TwoDcDAPSA), a principal component-derived measure
+    that complements the conventional clinical DAPSA score. TwoDcDAPSA captures
+    residual variation in patient-reported outcomes (pain and patient global assessment)
+    and joint counts (swollen and tender) after adjusting for standardized cDAPSA using
+    natural spline coefficients derived from published models. Residuals are
+    standardized and combined with fixed principal component loadings to yield two
+    continuous component scores: the PROs-Joint Contrast (PJC) and the
+    Swollen–Tender joints Contrast (STC), along with quartile-based groupings
+    (including optional combined quartile groupings). The package applies pre-specified
+    coefficients, residual standardization, and loadings to new datasets but does not
+    estimate spline models or principal components itself.
+License: MIT + file LICENSE
+Depends: R (>= 3.6)
+Imports: dplyr, splines, rlang
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-26 22:07:51 UTC; nmeng2
+Author: Ning Meng [aut, cre],
+  Ji Soo Kim [aut],
+  Ana-Maria Orbai [aut],
+  Scott L. Zeger [aut]
+Maintainer: Ning Meng <nmeng2@jh.edu>
+Repository: CRAN
+Date/Publication: 2026-02-26 22:30:02 UTC

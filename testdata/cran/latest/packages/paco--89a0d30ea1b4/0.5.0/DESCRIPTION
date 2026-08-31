@@ -1,0 +1,50 @@
+Package: paco
+Version: 0.5.0
+Date: 2026-07-13
+Title: Procrustes Application to Cophylogenetic Analysis
+Description: Procrustes analyses to infer co-phylogenetic
+    matching between pairs of phylogenetic trees.
+Authors@R: c(
+    person(
+      given = "Juan Antonio",
+      family = "Balbuena",
+      email = "j.a.balbuena@uv.es",
+      role = c("aut", "cre")
+    ),
+    person(
+      given = "Timothée",
+      family = "Poisot",
+      email = "timothee.poisot@umontreal.ca",
+      role = "aut"
+    ),
+    person(
+      given = "Matthew",
+      family = "Hutchinson",
+      email = "mhutchinson6@ucmerced.edu",
+      role = "aut"
+    ),
+    person(
+      given = "Fernando",
+      family = "Cagua",
+      email = "fernando@cagua.co",
+      role = "aut"
+    )
+  )
+Depends: R (>= 3.0.0)
+Imports: vegan (>= 2.2-0), plyr
+Suggests: ape, testthat
+Note: The previous version (0.4.2) fixed a numerical issue with
+        symmetric implementation of the paco_links function.
+License: MIT + file LICENSE
+URL: https://www.uv.es/cophylpaco/
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-13 19:12:12 UTC; matthewchutch
+Author: Juan Antonio Balbuena [aut, cre],
+  Timothée Poisot [aut],
+  Matthew Hutchinson [aut],
+  Fernando Cagua [aut]
+Maintainer: Juan Antonio Balbuena <j.a.balbuena@uv.es>
+Repository: CRAN
+Date/Publication: 2026-07-14 23:30:02 UTC

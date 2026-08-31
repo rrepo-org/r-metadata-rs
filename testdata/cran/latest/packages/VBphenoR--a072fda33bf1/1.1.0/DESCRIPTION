@@ -1,0 +1,33 @@
+Package: VBphenoR
+Title: Variational Bayes for Latent Patient Phenotypes in EHR
+Version: 1.1.0
+Authors@R: c(
+    person("Brian", "Buckley", , "brian.buckley.1@ucdconnect.ie", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-5478-5830")),
+    person("Adrian", "O'Hagan", , "adrian.ohagan@ucd.ie", role = c("aut"),
+           comment = "Co-author"),
+    person("Marie", "Galligan", , "marie.galligan@ucd.ie", role = c("aut"),
+           comment = "Co-author")
+  )
+Description: Identification of Latent Patient Phenotype from Electronic Health Records (EHR) Data using Variational Bayes Gaussian Mixture Model for Latent Class Analysis and Variational Bayes regression for Biomarker level shifts, both implemented by Coordinate Ascent Variational Inference algorithms.  Variational methods are used to enable Bayesian analysis of very large Electronic Health Records data. For VB GMM details see Bishop (2006,ISBN:9780-387-31073-2). For Logistic VB see Jaakkola and Jordan (2000) <doi:10.1023/A:1008932416310>. Please see preprint of JSS-submitted paper <doi:10.48550/arXiv.2512.14272>.
+License: MIT + file LICENCE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: rmarkdown, testthat (>= 3.0.0)
+Imports: stats, CholWishart, pracma, knitr, utils, dbscan, data.table,
+        ggplot2
+Depends: R (>= 3.5.0)
+LazyData: true
+Config/testthat/edition: 3
+URL: https://github.com/buckleybrian/VBphenoR
+BugReports: https://github.com/buckleybrian/VBphenoR/issues
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2025-12-17 09:59:51 UTC; buckl
+Author: Brian Buckley [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-5478-5830>),
+  Adrian O'Hagan [aut] (Co-author),
+  Marie Galligan [aut] (Co-author)
+Maintainer: Brian Buckley <brian.buckley.1@ucdconnect.ie>
+Repository: CRAN
+Date/Publication: 2025-12-17 23:20:18 UTC

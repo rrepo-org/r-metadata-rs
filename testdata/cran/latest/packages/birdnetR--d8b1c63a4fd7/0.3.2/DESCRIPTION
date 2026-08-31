@@ -1,0 +1,32 @@
+Type: Package
+Package: birdnetR
+Title: Deep Learning for Automated (Bird) Sound Identification
+Version: 0.3.2
+Authors@R: c(
+    person("Felix", "Günther", , "felix.guenther@informatik.tu-chemnitz.de", role = "cre"),
+    person("Stefan", "Kahl", , "stefan.kahl@cornell.edu", role = c("aut", "cph")),
+    person("BirdNET", "Team", role = "aut")
+  )
+Description: Use 'BirdNET', a state-of-the-art deep learning classifier, to automatically identify (bird) sounds.
+    Analyze bioacoustic datasets without any computer science background using a pre-trained model or a custom trained classifier.
+    Predict bird species occurrence based on location and week of the year.
+    Kahl, S., Wood, C. M., Eibl, M., & Klinck, H. (2021) <doi:10.1016/j.ecoinf.2021.101236>.
+License: MIT + file LICENSE
+URL: https://birdnet-team.github.io/birdnetR/,
+        https://github.com/birdnet-team/birdnetR
+Depends: R (>= 4.0)
+Imports: reticulate (>= 1.41)
+Suggests: arrow, curl, devtools, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+BugReports: https://github.com/birdnet-team/birdnetR/issues
+NeedsCompilation: no
+Packaged: 2025-04-29 06:44:06 UTC; fegue
+Author: Felix Günther [cre],
+  Stefan Kahl [aut, cph],
+  BirdNET Team [aut]
+Maintainer: Felix Günther <felix.guenther@informatik.tu-chemnitz.de>
+Repository: CRAN
+Date/Publication: 2025-04-30 11:50:06 UTC

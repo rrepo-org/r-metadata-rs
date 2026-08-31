@@ -1,0 +1,38 @@
+Package: electoral
+Type: Package
+Title: Allocating Seats Methods and Party System Scores
+Version: 0.1.4
+Maintainer: Jorge Albuja <albuja@yahoo.com>
+Authors@R: person(given = "Jorge",
+                  family = "Albuja",
+                  role = c("aut", "cre"),
+                  email = "albuja@yahoo.com")
+Description: Highest averages & largest remainders allocating seats methods and
+    several party system scores.
+    Implemented highest averages allocating seats methods are D'Hondt, Webster,
+    Danish, Imperiali, Hill-Huntington, Dean, Modified Sainte-Lague,
+    equal proportions and Adams.
+    Implemented largest remainders allocating seats methods are Hare, Droop,
+    Hangenbach-Bischoff, Imperial, modified Imperial and quotas & remainders.
+    The main advantage of this package is that ties are always reported
+    and not incorrectly allocated.
+    Party system scores provided are competitiveness, concentration,
+    effective number of parties, party nationalization score,
+    party system nationalization score and volatility.
+    References:
+    Gallagher (1991) <doi:10.1016/0261-3794(91)90004-C>.
+    Norris (2004, ISBN:0-521-82977-1).
+    Laakso & Taagepera (1979) <https://escholarship.org/uc/item/703827nv>.
+    Jones & Mainwaring (2003) <https://kellogg.nd.edu/sites/default/files/old_files/documents/304_0.pdf>.
+    Pedersen (1979) <https://janda.org/c24/Readings/Pedersen/Pedersen.htm>.
+    Golosov (2010) <doi:10.1177/1354068809339538>.
+    Golosov (2014) <doi:10.1177/1354068814549342>.
+License: GPL-3
+Encoding: UTF-8
+Imports: dplyr, ineq, tibble
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2025-05-01 00:56:02 UTC; jorgea
+Author: Jorge Albuja [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-05-01 05:00:02 UTC

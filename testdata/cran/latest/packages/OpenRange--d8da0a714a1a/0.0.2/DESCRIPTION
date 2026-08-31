@@ -1,0 +1,36 @@
+Package: OpenRange
+Title: Code to Access Open Access Species Range Maps
+Version: 0.0.2
+Authors@R: 
+    c(
+      person("Brian", "Maitner", , "bmaitner@usf.edu", role = c("aut", "cre"),
+      comment = c(ORCID = "https://orcid.org/0000-0002-2118-9880")),
+    person("Cory", "Merow", , "cory.merow@gmail.com", role = c("aut")),
+    person("Brad", "Boyle", , "bboyle@arizona.edu", role = c("aut")),
+    person("Xiao", "Feng", , "xiao.feng@unc.edu", role = c("aut")),
+    person("Rethvick Sriram Yugendra", "Babu", email = "rethvick@arizona.edu",
+    role = c("aut")),
+    person("Brian", "Enquist", , "benquist@arizona.edu", role = c("aut"))
+    )
+Description: Allows access to a proof-of-concept database containing Open Access species range models and relevant metadata. Access to the database is via both 'PostgreSQL' connection and API <https://github.com/EnquistLab/Biendata-Frontend>, allowing diverse use-cases.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0), RPostgreSQL
+Imports: DBI, sf, httr, jsonlite
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), maps, tidyverse, vcr,
+        ggplot2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-24 18:59:11 UTC; bmaitner
+Author: Brian Maitner [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2118-9880>),
+  Cory Merow [aut],
+  Brad Boyle [aut],
+  Xiao Feng [aut],
+  Rethvick Sriram Yugendra Babu [aut],
+  Brian Enquist [aut]
+Maintainer: Brian Maitner <bmaitner@usf.edu>
+Repository: CRAN
+Date/Publication: 2026-08-25 07:10:02 UTC

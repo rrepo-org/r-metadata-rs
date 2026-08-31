@@ -1,0 +1,41 @@
+Package: lessR
+Version: 4.5.6
+Title: Less Code with More Comprehensive Results
+Authors@R: person(given = "David W.", family = "Gerbing", email = "gerbing@pdx.edu",
+  role = c("aut", "cre"),
+  comment = c(ORCID = "0000-0001-6998-8350",
+              Affiliation = "School of Business, Portland State University"))
+Description: Each function replaces multiple standard R functions. For example,
+    two function calls, Read() and CountAll(), generate summary statistics for
+    all variables in the data frame, plus histograms and bar charts. Other
+    functions provide data aggregation via pivot tables; comprehensive
+    regression, ANOVA, and t-test; visualizations including integrated
+    Violin/Box/Scatter plot for a numerical variable, bar chart, histogram,
+    box plot, density curves, calibrated power curve; reading multiple data
+    formats with the same call; variable labels; time series with aggregation
+    and forecasting; color themes; and Trellis (facet) graphics. Also includes
+    a confirmatory factor analysis of multiple-indicator measurement models,
+    pedagogical routines for data simulation (e.g., Central Limit Theorem),
+    generation and rendering of regression instructions for interpretative output,
+    and both interactive construction of visualizations and interactive
+    visualizations with plotly.
+Depends: R (>= 3.6.0)
+Imports: graphics, grDevices, grid, stats, utils, methods, lattice,
+        latticeExtra, robustbase, ellipse, leaps, openxlsx, colorspace,
+        shiny, knitr, kableExtra, xts, zoo, MASS, conflicted, plotly
+        (>= 4.11.0), htmlwidgets, htmltools
+Suggests: KernSmooth, haven, hexbin, readODS, triangle, arrow,
+        rmarkdown, wesanderson, tsibble, fable, fabletools,
+        distributional, rstudioapi
+VignetteBuilder: knitr
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2026-08-02 18:13:19 UTC; davidgerbing
+Maintainer: David W. Gerbing <gerbing@pdx.edu>
+Author: David W. Gerbing [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6998-8350>, Affiliation: School of
+    Business, Portland State University)
+Repository: CRAN
+Date/Publication: 2026-08-03 05:10:09 UTC

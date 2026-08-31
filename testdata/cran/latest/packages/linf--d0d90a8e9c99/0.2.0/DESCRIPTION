@@ -1,0 +1,33 @@
+Package: linf
+Type: Package
+Title: L-Infinity Normalization and Dominant Community State Types
+Version: 0.2.0
+Authors@R: 
+    person("Pawel", "Gajer", , "pgajer@gmail.com", role = c("aut", "cre"))
+Author: Pawel Gajer [aut, cre]
+Maintainer: Pawel Gajer <pgajer@gmail.com>
+Description: Implements L-infinity normalization for compositional matrices,
+    assigns samples to dominant features, constructs truncated and
+    hierarchically refined dominant community state types, and computes
+    representative landmark profiles. The methods are described in the
+    accompanying publication <doi:10.48550/arXiv.2503.21543>. Bundled vaginal
+    and gut microbiome data support reproducible demonstrations of the package
+    interface; phenotype fields in the stratified gut subset are illustrative
+    and are not suitable for population-level inference.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Depends: R (>= 4.0)
+Imports: Matrix, methods
+Suggests: testthat (>= 3.2.0), htmltools, knitr, plotly, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/pgajer/linf, https://arxiv.org/abs/2503.21543
+BugReports: https://github.com/pgajer/linf/issues
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-20 09:37:14 UTC; pgajer
+Repository: CRAN
+Date/Publication: 2026-08-21 05:42:17 UTC

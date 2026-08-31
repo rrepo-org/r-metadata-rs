@@ -1,0 +1,34 @@
+Package: colorize
+Title: Render Text in Color for Markdown/Quarto Documents
+Description: Provides some simple functions for printing text in color in 'markdown' or 'Quarto' documents, to be rendered as HTML or LaTeX. This is useful when writing about the use of colors in graphs or tables, where you want to print their names in their actual color to give a direct impression of the color, like “red” shown in red, or “blue” shown in blue. 
+Version: 0.2.1
+Date: 2025-11-24
+Authors@R: 
+    c(person("Michael", "Friendly",  
+             email = "friendly@yorku.ca", role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-3237-0941")),
+      person(given = "Achim", family = "Zeileis", role = "aut",
+	           email = "Achim.Zeileis@R-project.org",
+             comment = c(ORCID = "0000-0003-0918-3766")),
+      person("Richard", "Brath", role = "ctb",
+             email = "rbrath@uncharted.software")
+    )
+Depends: R (>= 4.1.0)
+Imports: colorspace, knitr
+Suggests: quarto, glue, crayon
+License: MIT + file LICENSE
+Encoding: UTF-8
+VignetteBuilder: quarto
+RoxygenNote: 7.3.3
+Language: en-US
+URL: https://github.com/friendly/colorize
+BugReports: https://github.com/friendly/colorize/issues
+NeedsCompilation: no
+Packaged: 2025-11-24 14:30:40 UTC; friendly
+Author: Michael Friendly [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3237-0941>),
+  Achim Zeileis [aut] (ORCID: <https://orcid.org/0000-0003-0918-3766>),
+  Richard Brath [ctb]
+Maintainer: Michael Friendly <friendly@yorku.ca>
+Repository: CRAN
+Date/Publication: 2025-11-27 19:50:07 UTC

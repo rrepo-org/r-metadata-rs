@@ -1,0 +1,31 @@
+Package: ibdfindr
+Title: HMM Toolkit for Inferring IBD Segments from SNP Genotypes
+Version: 0.3.1
+Authors@R: 
+    person("Magnus Dehli", "Vigeland", , "m.d.vigeland@medisin.uio.no", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9134-4962"))
+Description: Implements continuous-time hidden Markov models (HMMs) to
+    infer identity-by-descent (IBD) segments shared by two individuals
+    from their single-nucleotide polymorphism (SNP) genotypes. Provides
+    posterior probabilities at each marker (forward-backward algorithm),
+    prediction of IBD segments (Viterbi algorithm), and functions for
+    visualising results. Supports both autosomal data and X-chromosomal
+    data.
+License: GPL (>= 3)
+URL: https://github.com/magnusdv/ibdfindr
+BugReports: https://github.com/magnusdv/ibdfindr/issues
+Depends: R (>= 4.2)
+Imports: forrel, ggplot2, ibdsim2, pedtools, ribd
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-07-30 09:12:51 UTC; magnu
+Author: Magnus Dehli Vigeland [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9134-4962>)
+Maintainer: Magnus Dehli Vigeland <m.d.vigeland@medisin.uio.no>
+Repository: CRAN
+Date/Publication: 2025-08-18 14:10:02 UTC

@@ -1,0 +1,30 @@
+Package: stargazer2
+Type: Package
+Title: Beautiful Regression Tables for Modern Econometrics Packages
+Version: 0.1.0
+Date: 2026-06-30
+Authors@R: c(
+    person("Tom", "Zylkin", role = c("aut", "cre"),
+           email = "tzylkin@richmond.edu"))
+Description: Produces publication-quality LaTeX, ASCII, and HTML regression
+    tables. Designed as a drop-in replacement for the 'stargazer' package
+    for 'lm' and 'glm' models, with added native support for 'fixest',
+    'plm', and 'alpaca' objects including automatic fixed-effect and
+    random-effect indicator rows and SE-type detection. Standard errors can
+    be supplied as variance-covariance matrices, numeric vectors, or
+    auto-extracted from supported model objects. Follows the interface of
+    Hlavac (2022) <https://CRAN.R-project.org/package=stargazer>.
+License: GPL-3
+Encoding: UTF-8
+Imports: stats
+Suggests: fixest (>= 0.11.0), alpaca, plm, sandwich, wooldridge,
+        stargazer, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-09 12:50:53 UTC; tzylkin
+Author: Tom Zylkin [aut, cre]
+Maintainer: Tom Zylkin <tzylkin@richmond.edu>
+Repository: CRAN
+Date/Publication: 2026-07-17 14:20:02 UTC

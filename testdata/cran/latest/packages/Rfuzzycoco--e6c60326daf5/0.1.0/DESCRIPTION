@@ -1,0 +1,37 @@
+Type: Package
+Package: Rfuzzycoco
+Title: Provides an R Interface to the 'FuzzyCoCo' C++ Library and
+        Extends It
+Version: 0.1.0
+Authors@R: 
+    person("Karl", "Forner", , "karl.forner@gmail.com", role = c("aut", "cre"))
+Description: Provides and extends the 'Fuzzy Coco' algorithm by wrapping the
+    'FuzzyCoCo' 'C++' Library, cf
+    <https://github.com/Lonza-RND-Data-Science/fuzzycoco>. 'Fuzzy Coco'
+    constructs systems that predict the outcome of a human decision-making
+    process while providing an understandable explanation of a possible
+    reasoning leading to it.  The constructed fuzzy systems are composed
+    of rules and linguistic variables.  This package provides a 'S3' classic
+    interface (fit_xy()/fit()/predict()/evaluate()) and a 'tidymodels'/'parsnip'
+    interface, a custom engine with custom iteration stop criterion and
+    progress bar support as well as a systematic implementation that do
+    not rely on genetic programming but rather explore all possible
+    combinations.
+License: GPL (>= 3)
+URL: https://github.com/Lonza-RND-Data-Science/Rfuzzycoco
+BugReports: https://github.com/Lonza-RND-Data-Science/Rfuzzycoco/issues
+Depends: R (>= 4.1.0)
+Imports: generics, methods, Rcpp, stats, utils
+Suggests: knitr, parsnip, progressr, rlang, rmarkdown, testthat
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2025-10-16 13:11:13 UTC; ubuntu
+Author: Karl Forner [aut, cre]
+Maintainer: Karl Forner <karl.forner@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-21 09:10:51 UTC

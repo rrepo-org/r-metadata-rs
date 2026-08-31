@@ -1,0 +1,80 @@
+Type: Package
+Package: admiralneuro
+Title: Neuroscience Extension Package for ADaM in 'R' Asset Library
+Version: 0.3.0
+Authors@R: c(
+    person("Jian", "Wang", role = "aut",
+           comment = c(ORCID = "0009-0002-4677-3781")),
+    person("Meilin", "Jiang", , "meilin.jiang@lilly.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4515-4567")),
+    person("Miles", "Almond", role = "aut",
+           comment = c(ORCID = "0009-0007-1784-0355")),
+    person("Xiao", "Chen", role = "aut",
+           comment = c(ORCID = "0009-0000-6959-5151")),
+    person("Fanny", "Gautier", role = "aut",
+           comment = c(ORCID = "0009-0004-3581-0131")),
+    person("Gayatri", "G.", role = "aut"),
+    person("Leena", "Khatri", role = "aut",
+           comment = c(ORCID = "0000-0002-2268-4023")),
+    person("Edoardo", "Mancini", role = "aut",
+           comment = c(ORCID = "0009-0006-4899-8641")),
+    person("Eric", "Nantz", role = "aut"),
+    person("Lina", "Patil", role = "aut"),
+    person("Chris", "Pelentrides", role = "aut"),
+    person("Katie", "Withycombe", role = "aut",
+           comment = c(ORCID = "0009-0005-5376-1932")),
+    person("Eli Lilly and Company", role = c("cph", "fnd")),
+    person("Cytel Inc.", role = c("cph", "fnd")),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Programming neuroscience specific Clinical Data Standards
+    Interchange Consortium (CDISC) compliant Analysis Data Model (ADaM)
+    datasets in 'R'.  ADaM datasets are a mandatory part of any New Drug
+    or Biologics License Application submitted to the United States Food
+    and Drug Administration (FDA). Analysis derivations are implemented in
+    accordance with the "Analysis Data Model Implementation Guide" (CDISC
+    Analysis Data Model Team, 2021,
+    <https://www.cdisc.org/standards/foundational/adam>). This package
+    extends the 'admiral' package.
+License: Apache License (>= 2)
+URL: https://pharmaverse.github.io/admiralneuro/,
+        https://github.com/pharmaverse/admiralneuro
+BugReports: https://github.com/pharmaverse/admiralneuro/issues
+Depends: R (>= 4.1)
+Imports: admiral (>= 1.4.1), admiraldev (>= 1.5.0), cli (>= 3.6.2),
+        dplyr (>= 1.1.1), hms (>= 0.5.3), lifecycle (>= 0.1.0),
+        lubridate (>= 1.7.4), magrittr (>= 1.5), purrr (>= 0.3.3),
+        rlang (>= 0.4.4), stringr (>= 1.4.0), tibble (>= 3.2.1), tidyr
+        (>= 1.0.2), tidyselect (>= 1.1.0)
+Suggests: diffdf, DT, here, htmltools, knitr, metatools, methods,
+        pharmaversesdtm (>= 1.5.0), reactable, readxl, rmarkdown,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/roclets: collate, namespace, admiraldev::rdx_roclet
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-08-19 21:50:24 UTC; l032474
+Author: Jian Wang [aut] (ORCID: <https://orcid.org/0009-0002-4677-3781>),
+  Meilin Jiang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4515-4567>),
+  Miles Almond [aut] (ORCID: <https://orcid.org/0009-0007-1784-0355>),
+  Xiao Chen [aut] (ORCID: <https://orcid.org/0009-0000-6959-5151>),
+  Fanny Gautier [aut] (ORCID: <https://orcid.org/0009-0004-3581-0131>),
+  Gayatri G. [aut],
+  Leena Khatri [aut] (ORCID: <https://orcid.org/0000-0002-2268-4023>),
+  Edoardo Mancini [aut] (ORCID: <https://orcid.org/0009-0006-4899-8641>),
+  Eric Nantz [aut],
+  Lina Patil [aut],
+  Chris Pelentrides [aut],
+  Katie Withycombe [aut] (ORCID: <https://orcid.org/0009-0005-5376-1932>),
+  Eli Lilly and Company [cph, fnd],
+  Cytel Inc. [cph, fnd],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Meilin Jiang <meilin.jiang@lilly.com>
+Repository: CRAN
+Date/Publication: 2026-08-20 22:52:08 UTC

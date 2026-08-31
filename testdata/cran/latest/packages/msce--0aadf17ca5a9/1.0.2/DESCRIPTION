@@ -1,0 +1,29 @@
+Package: msce
+Type: Package
+Title: Hazard of Multi-Stage Clonal Expansion Models
+Version: 1.0.2
+Date: 2025-12-05
+Authors@R: c(person(given = "Cristoforo",
+                    family = "Simonetto",
+                    role = c("aut", "cre"),
+                    email = "cristoforo.simonetto@ph.tum.de",
+                    comment = c(ORCID = "0000-0003-4816-3514")),
+             person(given = c("Jan", "Christian"),
+                    family = "Kaiser",
+                    role = "ctb"))
+Author: Cristoforo Simonetto [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4816-3514>),
+  Jan Christian Kaiser [ctb]
+Maintainer: Cristoforo Simonetto <cristoforo.simonetto@ph.tum.de>
+Description: Functions to calculate hazard and survival function of Multi-Stage Clonal Expansion Models used in cancer epidemiology. For the Two-Stage Clonal Expansion Model an exact solution is implemented assuming piecewise constant parameters, see Heidenreich, Luebeck, Moolgavkar (1997) <doi:10.1111/j.1539-6924.1997.tb00878.x>. Numerical solutions are provided for its extensions, see also Little, Vineis, Li (2008) <doi:10.1016/j.jtbi.2008.05.027>.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.3), RcppParallel (>= 5.0.0)
+LinkingTo: Rcpp, RcppParallel
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-12-16 23:37:14 UTC; cristoforo
+Repository: CRAN
+Date/Publication: 2025-12-17 00:00:02 UTC

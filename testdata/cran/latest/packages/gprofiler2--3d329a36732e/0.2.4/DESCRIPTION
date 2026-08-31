@@ -1,0 +1,28 @@
+Package: gprofiler2
+Type: Package
+Title: Interface to the 'g:Profiler' Toolset
+Version: 0.2.4
+Maintainer: Liis Kolberg <liis.kolberg@ut.ee>
+Authors@R: c(person(given = "Liis", family = "Kolberg", role = c("aut","cre"), email = "liis.kolberg@ut.ee"), person(given = "Uku",  family = "Raudvere", role = "aut", email = "uku.raudvere@ut.ee"))
+Description: A toolset for functional enrichment analysis and visualization, gene/protein/SNP identifier conversion and mapping orthologous genes across species via 'g:Profiler' (<https://biit.cs.ut.ee/gprofiler/>). 
+    The main tools are: 
+    (1) 'g:GOSt' - functional enrichment analysis and visualization of gene lists; 
+    (2) 'g:Convert' - gene/protein/transcript identifier conversion across various namespaces;
+    (3) 'g:Orth' - orthology search across species;
+    (4) 'g:SNPense' - mapping SNP rs identifiers to chromosome positions, genes and variant effects.
+    This package is an R interface corresponding to the 2019 update of 'g:Profiler' and provides access to 'g:Profiler' for versions 'e94_eg41_p11' and higher. See the package 'gProfileR' for accessing older versions from the 'g:Profiler' toolset.  
+BugReports: https://biit.cs.ut.ee/gprofiler/page/contact
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: jsonlite, RCurl, ggplot2, plotly, tidyr (>= 1.0.0), crosstalk,
+        grDevices, gridExtra, grid, viridisLite, dplyr, curl
+Depends: R (>= 3.5)
+Suggests: knitr, rmarkdown, prettydoc
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2025-11-10 20:57:25 UTC; Liis
+Repository: CRAN
+Date/Publication: 2025-11-11 08:20:02 UTC
+Author: Liis Kolberg [aut, cre],
+  Uku Raudvere [aut]

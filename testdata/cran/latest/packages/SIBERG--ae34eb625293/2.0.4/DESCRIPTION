@@ -1,0 +1,29 @@
+Package: SIBERG
+Type: Package
+LazyData: true
+Date: 2025-04-08
+Title: Systematic Identification of Bimodally Expressed Genes Using
+        RNAseq Data
+Version: 2.0.4
+Authors@R: c(person(given = "Pan", family = "Tong", role = "aut"),
+	    person(given = c("Kevin", "R."), family = "Coombes",
+                   role = c("aut", "cre"), email = "krc@silicovore.com"))
+Description: Provides models to identify bimodally expressed genes from
+ RNAseq data based on the Bimodality Index. SIBERG models the  RNAseq data in
+ the finite mixture modeling framework and incorporates mechanisms  for
+ dealing with RNAseq normalization. Three types of mixture models are
+ implemented,  namely, the mixture of log normal, negative binomial, or 
+ generalized Poisson distribution. See Tong et al. (2013)
+ <doi:10.1093/bioinformatics/bts713>.
+License: Apache License (== 2.0)
+Imports: mclust
+Suggests: edgeR, doParallel
+URL: http://oompa.r-forge.r-project.org/
+NeedsCompilation: no
+Packaged: 2025-04-08 13:13:17 UTC; kevin
+Author: Pan Tong [aut],
+  Kevin R. Coombes [aut, cre]
+Maintainer: Kevin R. Coombes <krc@silicovore.com>
+Depends: R (>= 2.10)
+Repository: CRAN
+Date/Publication: 2025-04-08 14:00:02 UTC

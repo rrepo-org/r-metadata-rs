@@ -1,0 +1,47 @@
+Package: RealSurvSim
+Title: Simulate Survival Data
+Version: 1.0.0
+Date: 2025-11-05
+Authors@R: 
+    c(person("Maria", "Thurow",
+        email = "maria.thurow@tu-dortmund.de",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-8710-6857")), 
+        person("Manasi", "Butee",
+        email = "manasi.butee@tu-dortmund.de",
+        role="aut"),
+	person("Ina", "Dormuth",
+        email = "ina.dormuth@tu-dortmund.de",
+        role="ctb"),
+	person("Christina", "Sauer",
+        email = "christina.sauer@stat.uni-muenchen.de",
+        role="ctb"),
+	person("Marc", "Ditzhaus",
+	role = "ctb"),
+	person("Markus", "Pauly",
+	email = "markus.pauly@tu-dortmund.de",
+	role = "ctb"))
+Description: Provides tools for simulating synthetic survival data using a variety of
+    methods, including kernel density estimation, parametric distribution fitting,
+    and bootstrap resampling techniques for a desired sample size.
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: fitdistrplus, kdensity, survival, univariateML, actuar,
+        flexsurv, stats, FAdist
+Depends: R (>= 3.5)
+LazyData: true
+License: MIT + file LICENSE
+NeedsCompilation: no
+Packaged: 2025-12-02 10:42:34 UTC; thurow
+Author: Maria Thurow [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8710-6857>),
+  Manasi Butee [aut],
+  Ina Dormuth [ctb],
+  Christina Sauer [ctb],
+  Marc Ditzhaus [ctb],
+  Markus Pauly [ctb]
+Maintainer: Maria Thurow <maria.thurow@tu-dortmund.de>
+Repository: CRAN
+Date/Publication: 2025-12-09 07:50:18 UTC

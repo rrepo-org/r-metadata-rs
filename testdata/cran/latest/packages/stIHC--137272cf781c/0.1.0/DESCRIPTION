@@ -1,0 +1,25 @@
+Package: stIHC
+Type: Package
+Title: Spatial Transcriptomics Iterative Hierarchical Clustering
+Version: 0.1.0
+Authors@R: 
+    c(person("Catherine", "Higgins", , "catherine.higgins@ucd.ie", role = c("aut", "cre")),
+    person("Jingyi Jessica", "Li", , "lijy03@fredhutch.org", role = c("aut")),
+    person("Michelle", "Carey", , "michelle.carey@ucd.ie", role = c("aut")))
+Description: Spatial transcriptomics iterative hierarchical clustering ('stIHC'), is a method for identifying spatial gene co-expression modules, defined as groups of genes with shared spatial expression patterns. The method is applicable across spatial transcriptomics technologies with differing spatial resolution, and provides a framework for investigating the spatial organisation of gene expression in tissues. For further details, see Higgins C., Li J.J., Carey M. <doi:10.1002/qub2.70011>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: fdaPDE, stats, cluster, mclust
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-08 13:37:37 UTC; crtuser
+Author: Catherine Higgins [aut, cre],
+  Jingyi Jessica Li [aut],
+  Michelle Carey [aut]
+Maintainer: Catherine Higgins <catherine.higgins@ucd.ie>
+Repository: CRAN
+Date/Publication: 2026-01-12 18:50:10 UTC

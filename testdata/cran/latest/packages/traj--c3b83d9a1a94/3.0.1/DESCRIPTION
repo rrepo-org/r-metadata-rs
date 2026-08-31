@@ -1,0 +1,26 @@
+Package: traj
+Title: Feature-Based Clustering of Longitudinal Trajectories
+Version: 3.0.1
+Authors@R: c(person("Marie-Pierre", "Sylvestre", role = "aut", email="marie-pierre.sylvestre@umontreal.ca"),
+              person("Laurence", "Boulanger", role = c("aut","cre"), email="laurence.boulanger@umontreal.ca"),
+              person("Gillis Delmas", "Tchouangue Dinkou", role = "ctb"),
+              person("Dan", "Vatnik", role = "ctb"))
+Description: Identifies clusters of individual longitudinal trajectories. In the spirit of Leffondre et al. (2004), the procedure involves identifying each trajectory to a point in the space of measures. In this context, a measure is a quantity meant to capture a certain characteristic feature of the trajectory. The points in the space of measures are then clustered using a version of the Spectral Clustering algorithm.
+License: MIT + file LICENSE
+URL: https://CRAN.R-project.org/package=traj
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: stats, cluster, clusterCrit, fclust, igraph, e1071
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-03-15 18:47:34 UTC; Moi
+Author: Marie-Pierre Sylvestre [aut],
+  Laurence Boulanger [aut, cre],
+  Gillis Delmas Tchouangue Dinkou [ctb],
+  Dan Vatnik [ctb]
+Maintainer: Laurence Boulanger <laurence.boulanger@umontreal.ca>
+Repository: CRAN
+Date/Publication: 2026-03-16 01:00:02 UTC

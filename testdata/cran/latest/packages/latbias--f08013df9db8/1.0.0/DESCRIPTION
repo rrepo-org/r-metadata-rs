@@ -1,0 +1,38 @@
+Package: latbias
+Type: Package
+Title: Calculate the Latitudinal Bias Index
+Version: 1.0.0
+Authors@R: c(
+  person("Pierre", "Denelle", email = "pierre.denelle@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5037-2281")),
+    person("Pieter", "Sanczuk", email = "Pieter.Sanczuk@UGent.be",
+    role = c("aut" ), comment = c(ORCID = "0000-0003-1107-4905"))
+  )
+Description: Studies that report shifts in species distributions may be biased
+  by the shape of the study area. The main functionality of this package is to
+  calculate the Latitudinal Bias Index (LBI) for any given shape. The LBI is
+  bounded between +1 (100% probability to exclusively record latitudinal
+  shifts, i.e., range shifts data sampled along a perfectly South-North
+  oriented straight line) and -1 (100% probability to exclusively record
+  longitudinal shifts, i.e., range shifts data sampled along a perfectly
+  East-West oriented straight line).
+Depends: R (>= 3.5.3)
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: dplyr, geosphere, ggplot2, psych, RColorBrewer, reshape2, sf,
+        sp, terra, tidyr, units
+RoxygenNote: 7.3.3
+Suggests: elevatr, knitr, progress, rmarkdown, rnaturalearth,
+        rnaturalearthdata, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/pierredenelle/latbias,
+BugReports: https://github.com/pierredenelle/latbias/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-10-21 16:01:25 UTC; Pierre
+Author: Pierre Denelle [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5037-2281>),
+  Pieter Sanczuk [aut] (ORCID: <https://orcid.org/0000-0003-1107-4905>)
+Maintainer: Pierre Denelle <pierre.denelle@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-25 12:40:02 UTC

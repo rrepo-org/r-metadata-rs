@@ -1,0 +1,57 @@
+Package: rextendr
+Title: Build 'Rust' Powered 'R' Packages
+Version: 0.5.0
+Authors@R: c(
+    person("Claus O.", "Wilke", , "wilke@austin.utexas.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-7470-9261")),
+    person("Andy", "Thomason", , "andy@andythomason.com", role = "aut"),
+    person("Mossa M.", "Reimert", , "mossa@sund.ku.dk", role = "aut"),
+    person("Ilia", "Kosenkov", , "ilia.kosenkov@outlook.com", role = "aut",
+           comment = c(ORCID = "0000-0001-5563-7840")),
+    person("Malcolm", "Barrett", , "malcolmbarrett@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-0299-5825")),
+    person("Josiah", "Parry", , "josiah.parry@gmail.con", role = "aut",
+           comment = c(ORCID = "0000-0001-9910-865X")),
+    person("Kenneth", "Vernon", , "kenneth.b.vernon@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0098-5092")),
+    person("Alberson", "Miranda", , "albersonmiranda@hotmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0001-9252-4175"))
+  )
+Description: Provides a framework for creating high-performance 'R'
+    packages powered by the 'Rust' programming language using the
+    'extendr' Rust crate.  It offers 'usethis'-like functions to scaffold
+    and develop 'Rust' powered 'R' packages, including utilities for
+    publishing to CRAN, managing dependencies, configuring development
+    environments, and rendering 'Rust' code in 'knitr' documents.
+    Additionally, it provides functions to compile and evaluate 'Rust'
+    code directly from 'R' for interactive development.
+License: MIT + file LICENSE
+URL: https://extendr.rs/rextendr/, https://github.com/extendr/rextendr
+BugReports: https://github.com/extendr/rextendr/issues
+Depends: R (>= 4.2)
+Imports: brio, cli, desc, dplyr, glue (>= 1.7.0), jsonlite, lifecycle,
+        pkgbuild (>= 1.4.0), processx, rlang (>= 1.0.5), rprojroot,
+        stringi, vctrs, withr
+Suggests: devtools, knitr, lintr, rcmdcheck, rmarkdown, testthat (>=
+        3.1.7), usethis
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: Rust 'cargo'; the crate 'libR-sys' must compile
+        without error
+NeedsCompilation: no
+Packaged: 2026-04-16 18:36:45 UTC; josiahparry
+Author: Claus O. Wilke [aut] (ORCID: <https://orcid.org/0000-0002-7470-9261>),
+  Andy Thomason [aut],
+  Mossa M. Reimert [aut],
+  Ilia Kosenkov [aut] (ORCID: <https://orcid.org/0000-0001-5563-7840>),
+  Malcolm Barrett [aut] (ORCID: <https://orcid.org/0000-0003-0299-5825>),
+  Josiah Parry [aut] (ORCID: <https://orcid.org/0000-0001-9910-865X>),
+  Kenneth Vernon [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0098-5092>),
+  Alberson Miranda [ctb] (ORCID: <https://orcid.org/0000-0001-9252-4175>)
+Maintainer: Kenneth Vernon <kenneth.b.vernon@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-18 16:40:02 UTC

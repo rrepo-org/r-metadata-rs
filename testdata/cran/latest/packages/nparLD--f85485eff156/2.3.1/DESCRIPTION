@@ -1,0 +1,52 @@
+Package: nparLD
+Type: Package
+Title: Nonparametric Analysis of Longitudinal Data in Factorial
+        Experiments
+Version: 2.3.1
+Authors@R: c(
+    person(given = "Frank",
+           family = "Konietschke",
+           role = c("aut", "cre"),
+           email = "frank.konietschke@charite.de"),
+    person(given = "Kimihiro",
+           family = "Noguchi",
+           role = "ctb",
+           comment = "Original package author"),
+    person(given = "Mahbub",
+           family = "Latif",
+           role = "ctb",
+           comment = "Original package author"),
+    person(given = "Karthinathan",
+           family = "Thangavelu",
+           role = "ctb",
+           comment = "Original package author"),
+    person(given = c("Yulia", "R."),
+           family = "Gel",
+           role = "ctb",
+           comment = "Original package author"),
+    person(given = "Edgar",
+           family = "Brunner",
+           role = "ctb")
+ )
+Description: Provides nonparametric procedures for the analysis of longitudinal data in factorial experiments. The package implements hypothesis tests on marginal distribution functions and unweighted relative marginal effects. It supports arbitrary crossed factorial designs with longitudinal or repeated-measures factors, missing observations, dependent replicates, rank- and pseudo-rank-based inference, Wald-type and ANOVA-type statistics, multiple contrast tests, and simultaneous confidence intervals.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: MASS, Matrix, ggplot2, mvtnorm, multcomp, rlang
+Config/roxygen2/version: 8.0.0
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-08-27 17:00:32 UTC; konietsf
+Author: Frank Konietschke [aut, cre],
+  Kimihiro Noguchi [ctb] (Original package author),
+  Mahbub Latif [ctb] (Original package author),
+  Karthinathan Thangavelu [ctb] (Original package author),
+  Yulia R. Gel [ctb] (Original package author),
+  Edgar Brunner [ctb]
+Maintainer: Frank Konietschke <frank.konietschke@charite.de>
+Repository: CRAN
+Date/Publication: 2026-08-28 15:10:02 UTC

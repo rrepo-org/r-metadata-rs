@@ -1,0 +1,44 @@
+Package: clinpubr
+Title: Clinical Publication
+Version: 1.4.1
+Authors@R: 
+    c(person("Yue", "Niu", email = "niuyuesam@163.com", role = c("aut", "cre", "cph"),
+             comment = c(ORCID = "0000-0001-6843-3548")),
+      person("Keyun", "Wang", email = "1225616356@qq.com", role = c("aut"))
+    )
+Description: Accelerate the process from clinical data to medical publication,
+    including clinical data cleaning, significant result screening, and the
+    generation of publish-ready tables and figures.
+Maintainer: Yue Niu <niuyuesam@163.com>
+URL: https://github.com/yotasama/clinpubr,
+        https://gitee.com/yotasama/clinpubr
+BugReports: https://github.com/yotasama/clinpubr/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Collate: 'RcppExports.R' 'answer_check.R' 'baseline_table.R'
+        'calculate_index.R' 'check_nonnum.R' 'classif_model_compare.R'
+        'combine_files.R' 'cut_by.R' 'data_overview.R' 'data_screen.R'
+        'exclusion_count.R' 'extract_history.R' 'extract_num.R'
+        'get_valid.R' 'get_valid_subset.R' 'group_by_range.R'
+        'importance_plot.R' 'initial_cleaning.R' 'interactions.R'
+        'mark_outlier.R' 'merge.R' 'utils.R' 'misc.R' 'multichoice.R'
+        'predictor_effect_plot.R' 'rcs_plot.R' 'regressions.R'
+        'subgroup_forest.R' 'subject_standardize.R' 'time_roc.R'
+        'to_date.R' 'unit_standardize.R'
+LinkingTo: Rcpp
+Imports: Rcpp, broom, car, data.table, DescTools, dplyr, fBasics,
+        forestploter, ggplot2, Hmisc, rlang, rms, stringi, stringr,
+        survival, survminer, tidyr
+Suggests: caret, dcurves, dtplyr, geepack, knitr, pROC,
+        ResourceSelection, rmarkdown, rstatix, tableone, testthat (>=
+        3.0.0), timeROC, vdiffr, withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-13 08:55:18 UTC; niuyu
+Author: Yue Niu [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-6843-3548>),
+  Keyun Wang [aut]
+Repository: CRAN
+Date/Publication: 2026-07-13 10:10:02 UTC

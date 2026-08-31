@@ -1,0 +1,34 @@
+Package: bluertopo
+Title: Download and Extract BlueTopo Bathymetry with Terra
+Version: 0.0.2
+Authors@R: c(
+    person("Elvin", "Cordero", email = "elvin.cordero@seamountgeo.com", role = c("aut", "cre", "cph"))
+  )
+Description: Discovers, downloads, verifies, and opens bathymetry assets from
+    the National Oceanic and Atmospheric Administration (NOAA) BlueTopo product
+    for user supplied areas of interest. The package keeps source files intact
+    by default, uses 'terra' for spatial data access, supports explicit
+    native-resolution selection policies, and records provenance for
+    reproducible extraction workflows. It accesses the NOAA BlueTopo web
+    service at <https://noaa-ocs-nationalbathymetry-pds.s3.amazonaws.com/> and
+    references product documentation at
+    <https://nauticalcharts.noaa.gov/data/bluetopo.html>.
+License: MIT + file LICENSE
+URL: https://el-cordero.github.io/bluer-topo/,
+        https://github.com/el-cordero/bluer-topo
+BugReports: https://github.com/el-cordero/bluer-topo/issues
+Depends: R (>= 4.1), terra
+Imports: cli, curl, digest, jsonlite, stats, tools, utils, xml2
+Suggests: knitr, lintr, pkgdown, pkgload, rmarkdown, roxygen2, sf,
+        styler, testthat (>= 3.0.0), urlchecker, withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: r-lib/pkgdown
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-06 09:28:08 UTC; ec
+Author: Elvin Cordero [aut, cre, cph]
+Maintainer: Elvin Cordero <elvin.cordero@seamountgeo.com>
+Repository: CRAN
+Date/Publication: 2026-08-27 02:10:02 UTC

@@ -1,0 +1,39 @@
+Package: deaviz
+Type: Package
+Title: Visualization of Data Envelopment Analysis Problems
+Version: 0.1.0
+Authors@R: person("Shahin", "Ashkiani", role = c("aut", "cre"),
+                  email = "Contact@Shahin-Ashkiani.com")
+Description: High-dimensional visualization methods for data envelopment
+    analysis (DEA), gathering in one place techniques that have appeared in the
+    literature but remained scattered and largely unimplemented: cross-efficiency
+    matrix unfolding, the Porembski network with lambda edges,
+    principal component analysis biplots, multidimensional-scaling
+    colour-plots, self-organizing maps, the Costa bi-dimensional efficient
+    frontier, parallel coordinates, radar charts, panel-data trajectory biplots,
+    peer and reference networks, and a set of descriptive plots. The package is
+    built around a single validated dea_data() object and uses the 'Benchmarking'
+    package as its DEA engine. The implemented methods draw on a body of
+    literature; representative references include Doyle and Green (1994)
+    <doi:10.1057/jors.1994.84>, Porembski, Breitenstein and Alpar (2005)
+    <doi:10.1007/s11123-005-1328-5> and Bana e Costa, Soares de Mello and Angulo
+    Meza (2016) <doi:10.1016/j.ejor.2016.05.012>.
+License: AGPL (>= 3)
+Encoding: UTF-8
+Language: en-GB
+URL: https://github.com/Pomelo64/deaviz
+BugReports: https://github.com/Pomelo64/deaviz/issues
+LazyData: true
+Depends: R (>= 3.6.0)
+Imports: rlang, stats, utils, grDevices, graphics, ggplot2 (>= 3.4.0)
+Suggests: Benchmarking, lpSolve, lpSolveAPI, kohonen, smacof, plotly,
+        ggrepel, igraph, graphlayouts, MASS, testthat (>= 3.0.0),
+        knitr, rmarkdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-26 16:56:01 UTC; shaahin
+Author: Shahin Ashkiani [aut, cre]
+Maintainer: Shahin Ashkiani <Contact@Shahin-Ashkiani.com>
+Repository: CRAN
+Date/Publication: 2026-07-02 18:30:07 UTC

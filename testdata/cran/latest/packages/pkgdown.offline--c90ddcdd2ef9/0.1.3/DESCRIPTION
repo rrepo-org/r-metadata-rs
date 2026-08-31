@@ -1,0 +1,59 @@
+Package: pkgdown.offline
+Title: Build 'pkgdown' Websites Offline
+Version: 0.1.3
+Authors@R: c(
+    person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0250-5673")),
+    person("John", "Blischak", role = c("aut"),
+           comment = c(ORCID = "0000-0003-2634-9879")),
+    person("Algolia, Inc. and other contributors", role = c("ctb", "cph"),
+           comment = "autocomplete.js library"),
+    person("Aidan", "Feldman", role = c("ctb", "cph"),
+           comment = "bootstrap-toc library"),
+    person("Zeno", "Rocha", role = c("ctb", "cph"),
+           comment = "clipboard.js library"),
+    person("Nick", "Williams", role = c("ctb", "cph"),
+           comment = "headroom.js library"),
+    person("Julian", "Kühnel", role = c("ctb", "cph"),
+           comment = "mark.js library"),
+    person("Kiro", "Risk", role = c("ctb", "cph"),
+           comment = "Fuse.js library"),
+    person("Khan Academy and other contributors", role = c("ctb", "cph"),
+           comment = "KaTeX library"),
+    person("The MathJax Consortium", role = c("ctb", "cph"),
+           comment = "MathJax library")
+    )
+Description: Provides support for building 'pkgdown' websites without an
+    internet connection. Works by bundling cached dependencies and
+    implementing drop-in replacements for key 'pkgdown' functions.
+    Enables package documentation websites to be built in environments
+    where internet access is unavailable or restricted.
+    For more details on generating 'pkgdown' websites, see
+    Wickham et al. (2025) <doi:10.32614/CRAN.package.pkgdown>.
+License: MIT + file LICENSE
+URL: https://nanx.me/pkgdown.offline/,
+        https://github.com/nanxstats/pkgdown.offline
+BugReports: https://github.com/nanxstats/pkgdown.offline/issues
+Encoding: UTF-8
+Imports: pkgdown
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-13 04:36:46 UTC; nanx
+Author: Nan Xiao [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0250-5673>),
+  John Blischak [aut] (ORCID: <https://orcid.org/0000-0003-2634-9879>),
+  Algolia, Inc. and other contributors [ctb, cph] (autocomplete.js
+    library),
+  Aidan Feldman [ctb, cph] (bootstrap-toc library),
+  Zeno Rocha [ctb, cph] (clipboard.js library),
+  Nick Williams [ctb, cph] (headroom.js library),
+  Julian Kühnel [ctb, cph] (mark.js library),
+  Kiro Risk [ctb, cph] (Fuse.js library),
+  Khan Academy and other contributors [ctb, cph] (KaTeX library),
+  The MathJax Consortium [ctb, cph] (MathJax library)
+Maintainer: Nan Xiao <me@nanx.me>
+Repository: CRAN
+Date/Publication: 2026-07-13 06:00:02 UTC

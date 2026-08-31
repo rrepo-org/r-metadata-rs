@@ -1,0 +1,26 @@
+Package: AdapSamp
+Type: Package
+Title: Adaptive Sampling Algorithms
+Version: 1.2.0
+Date: 2026-08-25
+Authors@R: person("Dong", "Zhang", email = "dzhang0716@126.com", role = c("aut", "cre"))
+Author: Dong Zhang [aut, cre]
+Maintainer: Dong Zhang <dzhang0716@126.com>
+Description: For distributions whose probability density functions are
+    log-concave, the adaptive rejection sampling algorithm can be used
+    to build envelope functions for sampling. For others, we can use
+    the modified adaptive rejection sampling algorithm, the
+    concave-convex adaptive rejection sampling algorithm and the
+    adaptive slice sampling algorithm. So we designed an R package
+    mainly including 4 functions: rARS(), rMARS(), rCCARS() and rASS().
+    These functions can realize sampling based on the algorithms above.
+    Version 1.2.0 fixes several correctness bugs and improves numerical
+    robustness.
+Imports: pracma, stats, utils
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+NeedsCompilation: no
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-08-25 09:14:10 UTC; Honor
+Repository: CRAN
+Date/Publication: 2026-08-25 09:50:17 UTC

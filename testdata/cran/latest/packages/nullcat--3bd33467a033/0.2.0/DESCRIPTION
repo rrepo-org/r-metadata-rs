@@ -1,0 +1,29 @@
+Package: nullcat
+Type: Package
+Title: Null Models for Categorical and Continuous Community Matrices
+Version: 0.2.0
+Authors@R: 
+    person("Matthew", "Kling", 
+           email = "mattkling@berkeley.edu", 
+           role = c("aut", "cre", "cph"))
+Description: Provides null model algorithms for categorical and quantitative 
+    community ecology data. Extends classic binary null models (e.g., 
+    'curveball', 'swap') to work with categorical data. Provides a stratified
+    randomization framework for continuous data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp
+Imports: Rcpp
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), vegan
+Config/testthat/edition: 3
+URL: https://github.com/matthewkling/nullcat,
+        https://matthewkling.github.io/nullcat/
+BugReports: https://github.com/matthewkling/nullcat/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-04-06 18:24:14 UTC; matthewkling
+Author: Matthew Kling [aut, cre, cph]
+Maintainer: Matthew Kling <mattkling@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2026-04-06 18:40:02 UTC

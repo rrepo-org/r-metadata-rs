@@ -1,0 +1,33 @@
+Package: EE.Data
+Type: Package
+Title: Objects for Predicting Energy Expenditure
+Version: 0.2.0
+Authors@R: c(
+      person(c("Paul", "R."), "Hibbing", email = "paulhibbing@gmail.com", role = c("aut","cre")),
+      person(c("Alexander", "H.K."), "Montoye", email = "alexander.montoye@montcalm.edu", role = "ctb"),
+      person("John", "Staudenmayer", email = "jstauden@math.umass.edu", role = "ctb"),
+      person("Children's Mercy Kansas City", role = "cph")
+    )
+Description: This is a data-only package containing model objects that predict
+    human energy expenditure from wearable sensor data. Supported methods include
+    the neural networks of Montoye et al. (2017) <doi:10.1080/1091367X.2017.1337638>
+    and the models of Staudenmayer et al. (2015) <doi:10.1152/japplphysiol.00026.2015>,
+    one a linear model and the other a random forest. The package is intended as
+    a spoke for the hub-package 'accelEE', which brings together the above methods
+    and others from packages such as 'Sojourn' and 'TwoRegression.'
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Suggests: nnet, randomForest
+Depends: R (>= 3.5)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-20 14:26:51 UTC; phibbing
+Author: Paul R. Hibbing [aut, cre],
+  Alexander H.K. Montoye [ctb],
+  John Staudenmayer [ctb],
+  Children's Mercy Kansas City [cph]
+Maintainer: Paul R. Hibbing <paulhibbing@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:46:50 UTC

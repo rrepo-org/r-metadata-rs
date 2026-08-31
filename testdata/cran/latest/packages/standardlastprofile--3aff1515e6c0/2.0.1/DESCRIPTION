@@ -1,0 +1,43 @@
+Package: standardlastprofile
+Title: BDEW Standard Load Profiles for Electricity and Gas
+Description: Provides standard load profiles (SLPs) for electricity and gas
+  published by the German Association of Energy and Water Industries (BDEW
+  Bundesverband der Energie- und Wasserwirtschaft e.V.) in a tidy format. The
+  electricity profiles cover the 1999 profiles — households (H0), commercial
+  (G0–G6), and agriculture (L0–L2) — and the updated 2025 profiles (H25, G25,
+  L25, P25, S25), which additionally represent households with photovoltaic
+  systems and battery storage. An interface generates an electricity load
+  profile over a user-defined date range. A second interface generates daily
+  standard load profiles for gas using the synthetic 'SigLinDe' method. More
+  information on the data and methodology for electricity is described in
+  "Standardlastprofile Strom",
+  <https://www.bdew.de/energie/standardlastprofile-strom/>, and for gas in
+  "Standardlastprofile Gas",
+  <https://www.bdew.de/energie/standardlastprofile-gas/>.
+Version: 2.0.1
+Authors@R: 
+    person(
+    given = "Markus",
+    family = "Döring",
+    email = "m4rkus.doering@gmail.com", 
+    role = c("aut", "cre", "cph")
+    )
+License: CC0
+Encoding: UTF-8
+Suggests: covr, ggplot2, httr2, testthat (>= 3.0.0), vdiffr, withr
+Config/testthat/edition: 3
+Config/Needs/website: jsonlite, knitr, rdwd, rmarkdown, scales
+URL: https://github.com/flrd/standardlastprofile,
+        https://flrd.github.io/standardlastprofile/
+BugReports: https://github.com/flrd/standardlastprofile/issues
+Imports: lifecycle
+Depends: R (>= 4.1)
+LazyData: true
+Language: en-GB
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-22 19:54:28 UTC; markus
+Author: Markus Döring [aut, cre, cph]
+Maintainer: Markus Döring <m4rkus.doering@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-22 20:10:02 UTC

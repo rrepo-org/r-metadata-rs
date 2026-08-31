@@ -1,0 +1,50 @@
+Package: grassr
+Type: Package
+Title: Context-Conditioned Reporting for Binary Rater Reliability
+Version: 0.7.4
+Authors@R: c(
+    person("Austin", "Semmel", email = "austinsemmel@gmail.com",
+           role = c("aut", "cre")),
+    person("Rachel", "Gidaro", role = "aut"))
+Description: Generates a Report Card for rater reliability on binary
+    outcomes from an N x k subject-by-rater rating matrix, on both the
+    inter-rater and intra-rater axes. Each panel coefficient is
+    positioned on a data-generating-process-calibrated reference surface
+    conditioned on the study's rater count, sample size, and prevalence,
+    yielding a pooled percentile (the coefficient's position within the
+    design's achievable agreement range) together with a consistency band
+    on panel quality: the quality levels whose sampling distributions are
+    consistent with the observed value at that design. The panel
+    coefficients are the prevalence-adjusted bias-adjusted kappa (PABAK)
+    of Byrt, Bishop, and Carlin (1993) <doi:10.1016/0895-4356(93)90018-V>,
+    the first-order agreement coefficient (AC1) of Gwet (2008)
+    <doi:10.1348/000711006X126600>, the multi-rater kappa of Fleiss (1971)
+    <doi:10.1037/h0031619>, and the observed intraclass correlation. A
+    cross-coefficient discordance diagnostic (delta-hat) reports the
+    spread of the coefficients' implied panel qualities and flags panels
+    for which no single coefficient is a stable summary by the spread's
+    percentile on a matched null distribution; for such divergent panels
+    the report routes to a pairwise PABAK matrix and per-rater sensitivity
+    and specificity recovered from the latent-class model of Dawid and
+    Skene (1979) <doi:10.2307/2346806>, with the two-rater bounds of Hui
+    and Walter (1980) <doi:10.2307/2530508>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: stats
+Suggests: boot, ggplot2, broom, future, future.apply, irr, irrCAC,
+        patchwork, progressr, knitr, lme4 (>= 1.1-30), rmarkdown,
+        testthat (>= 3.0.0), viridisLite
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+URL: https://defense031.github.io/grassr/,
+        https://github.com/defense031/grassr
+BugReports: https://github.com/defense031/grassr/issues
+NeedsCompilation: no
+Packaged: 2026-07-12 12:28:30 UTC; austinsemmel
+Author: Austin Semmel [aut, cre],
+  Rachel Gidaro [aut]
+Maintainer: Austin Semmel <austinsemmel@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 10:50:17 UTC

@@ -1,0 +1,42 @@
+Package: flexord
+Title: Flexible Clustering of Ordinal and Mixed-with-Ordinal Data
+Version: 1.0.0
+Authors@R: 
+    c(person('Lena', 'Ortega Menjivar', role=c('aut', 'cre'),
+             email='lena.ortega-menjivar@boku.ac.at',
+             comment=c(ORCID='0000-0001-5785-4021')),
+      person('Dominik', 'Ernst', role=c('aut'),
+             email='dominik.ernst@boku.ac.at',
+             comment=c(ORCID='0009-0005-5579-2636')),
+      person('Theresa', 'Scharl', role=c('ctb'),
+             email='theresa.scharl@boku.ac.at',
+             comment=c(ORCID='0000-0001-8850-3312')),
+      person("Bettina", "Gruen", role = c('ctb'),
+             email = "Bettina.Gruen@R-project.org",
+             comment = c(ORCID = "0000-0001-7265-4773")),
+      person("Ivan", "Kondofersky", role = c('ctb')))
+Description: Extends the capabilities for flexible partitioning and model-based clustering
+       available in the packages 'flexclust' and 'flexmix' to handle ordinal and
+       mixed-with-ordinal data types via new distance, centroid and driver functions that
+       make various assumptions regarding ordinality. Using them within the flex-scheme
+       allows for easy comparisons across methods.
+Imports: flexclust (>= 1.5.0), methods, mvtnorm, flexmix
+Suggests: rmarkdown, knitr
+License: GPL-2
+Encoding: UTF-8
+URL: https://zettlchen.github.io/flexord/
+BugReports: https://github.com/dernst/flexord/issues
+RoxygenNote: 7.3.2
+VignetteBuilder: rmarkdown, knitr
+Depends: R (>= 4.3)
+NeedsCompilation: no
+Packaged: 2025-03-26 12:02:37 UTC; zettlchen
+Author: Lena Ortega Menjivar [aut, cre]
+    (<https://orcid.org/0000-0001-5785-4021>),
+  Dominik Ernst [aut] (<https://orcid.org/0009-0005-5579-2636>),
+  Theresa Scharl [ctb] (<https://orcid.org/0000-0001-8850-3312>),
+  Bettina Gruen [ctb] (<https://orcid.org/0000-0001-7265-4773>),
+  Ivan Kondofersky [ctb]
+Maintainer: Lena Ortega Menjivar <lena.ortega-menjivar@boku.ac.at>
+Repository: CRAN
+Date/Publication: 2025-03-27 17:50:02 UTC

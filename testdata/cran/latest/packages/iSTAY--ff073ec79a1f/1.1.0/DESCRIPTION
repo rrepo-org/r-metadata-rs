@@ -1,0 +1,42 @@
+Package: iSTAY
+Type: Package
+Title: Information-Based Stability and Synchrony Measures
+Version: 1.1.0
+Date: 2026-06-15
+Author: Anne Chao [aut, cre],
+  Yu-Ti Lee [aut],
+  Keng-Lei Lin [aut],
+  Po-Yen Chuang [aut]
+Maintainer: Anne Chao <chao@stat.nthu.edu.tw>
+Authors@R: 
+  c(person("Anne",
+           "Chao",
+           role = c("aut", "cre"),
+           email = "chao@stat.nthu.edu.tw"),
+    person("Yu-Ti", 
+           "Lee", 
+           role = "aut",
+           email = "didil0907@gmail.com"),
+    person("Keng-Lei", 
+           "Lin", 
+           role = "aut",
+           email = "boolin20021106@gmail.com"),
+    person("Po-Yen", 
+           "Chuang", 
+           role = "aut",
+           email = "zerind0970983096@gmail.com")
+  )
+Description: Provides functions to compute a continuum of information-based measures for quantifying the temporal stability of populations, communities, and ecosystems, as well as their associated synchrony, based on species (or species assemblage) biomass, or other key variables. When biodiversity data are available, the package also enables the assessment of the corresponding diversity–stability and diversity–synchrony relationships. All measures are applicable in both temporal and spatial contexts. The theoretical and methodological background is detailed in Chao et al. (2025) 
+ <doi:10.1101/2025.08.20.671203>.
+License: GPL (>= 3)
+Imports: ggplot2 (>= 3.5.0), stringr, lmerTest, lme4, dplyr, ggpubr
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-17 15:18:35 UTC; nthu
+Repository: CRAN
+Date/Publication: 2026-06-17 17:30:02 UTC

@@ -1,0 +1,71 @@
+Package: TernTables
+Type: Package
+Title: Automated Statistical Analysis and Table Generation for
+        Biomedical Research
+Version: 1.7.2
+Authors@R: c(
+    person("Joshua D.", "Preston",
+           email = "joshua.preston@emory.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9834-3017")),
+    person("Helen", "Abadiotakis",
+           role = "aut",
+           comment = c(ORCID = "0009-0002-8268-927X")),
+    person("Ailin", "Tang",
+           role = "aut",
+           comment = c(ORCID = "0009-0007-8715-1678")),
+    person("Clayton J.", "Rust",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-5929-0733")),
+    person("Michael E.", "Halkos",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-9191-7743")),
+    person("Mani A.", "Daneshmand",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-0191-9911")),
+    person("Joshua L.", "Chan",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-7220-561X"))
+  )
+Description: Generates publication-ready summary tables for clinical research, 
+    supporting descriptive summaries and comparisons across two or three groups. 
+    The package streamlines the analytical workflow by detecting variable types 
+    and applying appropriate statistical tests (Welch t-test, Wilcoxon rank-sum, 
+    Welch ANOVA, Kruskal-Wallis, Chi-squared, or Fisher's exact test). Results are 
+    formatted as 'tibble' objects and can be exported to 'Word' or 'Excel' using
+    the 'officer', 'flextable', and 'writexl' packages. Optional pairwise
+    post-hoc testing for three-group comparisons (Games-Howell and Dunn's
+    test) is available via the 'rstatix' package. Example data are derived
+    from the landmark adjuvant colon cancer trial described in
+    Moertel et al. (1990) <doi:10.1056/NEJM199002083220602>.
+License: MIT + file LICENSE
+URL: https://cran.r-project.org/package=TernTables,
+        https://github.com/jdpreston30/TernTables,
+        https://tern-tables.com/
+BugReports: https://github.com/jdpreston30/TernTables/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, dplyr (>= 1.0.0), epitools, flextable (>= 0.9.0),
+        magrittr, multcompView, officer (>= 0.4.6), rlang, rstatix,
+        stats, stringr, tibble, withr, writexl
+Suggests: knitr, rmarkdown, survival, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-04 18:00:18 UTC; jdp2019
+Author: Joshua D. Preston [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9834-3017>),
+  Helen Abadiotakis [aut] (ORCID:
+    <https://orcid.org/0009-0002-8268-927X>),
+  Ailin Tang [aut] (ORCID: <https://orcid.org/0009-0007-8715-1678>),
+  Clayton J. Rust [aut] (ORCID: <https://orcid.org/0000-0001-5929-0733>),
+  Michael E. Halkos [aut] (ORCID:
+    <https://orcid.org/0000-0001-9191-7743>),
+  Mani A. Daneshmand [aut] (ORCID:
+    <https://orcid.org/0000-0002-0191-9911>),
+  Joshua L. Chan [aut] (ORCID: <https://orcid.org/0000-0001-7220-561X>)
+Maintainer: Joshua D. Preston <joshua.preston@emory.edu>
+Repository: CRAN
+Date/Publication: 2026-06-04 18:30:02 UTC

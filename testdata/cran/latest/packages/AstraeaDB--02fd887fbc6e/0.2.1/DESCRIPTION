@@ -1,0 +1,34 @@
+Package: AstraeaDB
+Type: Package
+Title: Client for the 'AstraeaDB' Graph Database
+Version: 0.2.1
+Authors@R: person("James", "Harris", role = c("aut", "cre"),
+    email = "jimeharrisjr@gmail.com")
+Description: Provides a client for 'AstraeaDB', a graph database with
+    vector search capabilities. Supports node and edge create, read, update,
+    and delete operations, label and edge-type lookups, graph traversals
+    (breadth-first search, depth-first search, shortest path), temporal
+    (time-travel) queries, graph algorithms (PageRank, Louvain community
+    detection, connected components, and degree and betweenness centrality),
+    vector similarity search, hybrid graph-vector search, Graph Query
+    Language (GQL) execution, and graph-based retrieval-augmented generation
+    (subgraph extraction with large language model integration). Communicates
+    with the 'AstraeaDB' server over a JSON-over-TCP protocol. An optional
+    'Apache Arrow Flight' transport is available for high-performance bulk
+    operations when the 'arrow' package is installed.
+License: MIT + file LICENSE
+URL: https://github.com/AstraeaDB/R-AstraeaDB
+BugReports: https://github.com/AstraeaDB/R-AstraeaDB/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: jsonlite, R6
+Suggests: arrow, knitr, rmarkdown, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-20 02:12:25 UTC; jimharris
+Author: James Harris [aut, cre]
+Maintainer: James Harris <jimeharrisjr@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 13:50:28 UTC

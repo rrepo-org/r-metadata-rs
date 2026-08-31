@@ -1,0 +1,39 @@
+Package: multiswc
+Type: Package
+Title: Multi-Regime Marginal Structural Cox Model for Multi-Way
+        Treatment Switching in Oncology Clinical Trials with Survival
+        Endpoints
+Version: 0.1.2
+Authors@R: c(
+    person(
+      "Haobin", "Chen",
+      email = "tony.haobin.chen@alumni.emory.edu",
+      role = c("aut", "cre")
+    ), 
+    person(
+      "Yuxuan", "Chen",
+      email = "yuxuan.chen@daiichisankyo.com",
+      role = c("aut")
+    ),
+    person(
+      "Philip", "He",
+      email = "philipyihe2018@gmail.com",
+      role = c("aut")
+    )
+  )
+Description: Estimate the causal effect of sustained treatment strategies on overall survival in  clinical trials with possible treatment crossover and switch to subsequent therapy. Simulate faithful longitudinal clinical trials data with survival endpoints and multi-way treatment switches allowing for time-dependent prognostic factors. For more on methodological background, please see: Keogh and colleagues (2021) <doi:10.1002/bimj.202000040> and Suarez and colleagues (2008) <doi:10.1016/j.jclinepi.2007.11.007>.
+License: MIT + file LICENSE
+Imports: nnet, survival
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+URL: https://github.com/tonyhbc/multiswc
+BugReports: https://github.com/tonyhbc/multiswc/issues
+NeedsCompilation: no
+Packaged: 2026-05-25 03:13:12 UTC; tonyhchen
+Author: Haobin Chen [aut, cre],
+  Yuxuan Chen [aut],
+  Philip He [aut]
+Maintainer: Haobin Chen <tony.haobin.chen@alumni.emory.edu>
+Repository: CRAN
+Date/Publication: 2026-05-29 10:00:02 UTC

@@ -1,0 +1,44 @@
+Package: ergm.ego
+Version: 1.1.4
+Date: 2026-03-02
+Title: Fit, Simulate and Diagnose Exponential-Family Random Graph
+        Models to Egocentrically Sampled Network Data
+Authors@R: c(
+            person(c("Pavel", "N."), "Krivitsky", role=c("aut","cre"), email="pavel@statnet.org", comment=c(ORCID="0000-0002-9101-3362")),
+            person(c("Steven", "M."), "Goodreau", role=c("ctb"), email="goodreau@u.washington.edu"),
+            person("Martina", "Morris", role=c("ctb"), email="morrism@u.washington.edu"),
+	    person("Kirk", "Li", role=c("ctb"), email="kirkli@uw.edu"),
+	    person(c("Emily", "N."), "Beylerian", role=c("ctb"), email="ebey@uw.edu"),
+	    person("Michał", "Bojanowski", role=c("ctb"), email="michal2992@gmail.com", comment=c(ORCID="0000-0001-7503-852X")),
+	    person("Chad", "Klumb", role=c("ctb"), email="cklumb@gmail.com"))
+Depends: R (>= 4.1.0), ergm (>= 4.12.0), egor (>= 1.25.10), network (>=
+        1.19.0)
+Imports: statnet.common (>= 4.13.0), RColorBrewer (>= 1.1-3), purrr (>=
+        1.2.1), tibble (>= 3.3.1), dplyr (>= 1.2.0), survey (>= 4.4-8),
+        Rdpack (>= 2.6.4), stats, methods
+LinkingTo: ergm
+Suggests: testthat (>= 3.3.2), covr (>= 3.6.5)
+RdMacros: Rdpack
+Description: Utilities for managing egocentrically sampled network data and a wrapper around the 'ergm' package to facilitate ERGM inference and simulation from such data. See Krivitsky and Morris (2017) <doi:10.1214/16-AOAS1010>.
+License: GPL-3 + file LICENSE
+URL: https://statnet.org
+BugReports: https://github.com/statnet/ergm.ego/issues
+RoxygenNote: 7.3.3.9000
+Encoding: UTF-8
+LazyData: true
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-03-01 23:30:04 UTC; pavel
+Author: Pavel N. Krivitsky [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9101-3362>),
+  Steven M. Goodreau [ctb],
+  Martina Morris [ctb],
+  Kirk Li [ctb],
+  Emily N. Beylerian [ctb],
+  Michał Bojanowski [ctb] (ORCID:
+    <https://orcid.org/0000-0001-7503-852X>),
+  Chad Klumb [ctb]
+Maintainer: Pavel N. Krivitsky <pavel@statnet.org>
+Repository: CRAN
+Date/Publication: 2026-03-02 08:10:13 UTC

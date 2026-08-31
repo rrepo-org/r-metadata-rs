@@ -1,0 +1,39 @@
+Package: Rblpapi
+Title: R Interface to 'Bloomberg'
+Version: 0.3.16
+Date: 2025-03-31
+Authors@R: c(person("Whit", "Armstrong", role = "aut"),
+             person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
+                    comment = c(ORCID = "0000-0001-6419-907X")),
+             person("John", "Laing", role = "aut"))
+Imports: Rcpp (>= 0.11.0), utils
+Suggests: xts, zoo, data.table, simplermarkdown, tinytest
+VignetteBuilder: simplermarkdown
+LazyLoad: yes
+LinkingTo: Rcpp, BH
+Description: An R Interface to 'Bloomberg' is provided via the 'Blp API'.
+SystemRequirements: A valid Bloomberg installation. The API headers and
+        dynamic library are downloaded from
+        <https://github.com/Rblp/blp> during the build step. See
+        <https://bloomberg.github.io/blpapi-docs/cpp/3.24.6> as well as
+        <https://www.bloomberg.com/professional/support/api-library/>
+        for API documentation. Currently supported platforms are
+        Windows and Linux (both for x86-64 processors only) as well as
+        macOS (for arm64 only).  Other os-cpu pairings are not
+        supported by Bloomberg and can therefore not be fully supported
+        here.
+URL: https://dirk.eddelbuettel.com/code/rblpapi.html,
+        https://github.com/Rblp/Rblpapi
+BugReports: https://github.com/Rblp/Rblpapi/issues
+License: file LICENSE
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2025-03-31 12:24:40 UTC; edd
+Author: Whit Armstrong [aut],
+  Dirk Eddelbuettel [aut, cre] (<https://orcid.org/0000-0001-6419-907X>),
+  John Laing [aut]
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+License_restricts_use: no
+License_is_FOSS: no
+Repository: CRAN
+Date/Publication: 2025-03-31 19:00:03 UTC

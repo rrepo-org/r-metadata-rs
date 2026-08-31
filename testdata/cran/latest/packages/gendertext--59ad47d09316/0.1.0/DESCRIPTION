@@ -1,0 +1,41 @@
+Package: gendertext
+Title: Detect Gendered Words in Text and Suggest Neutral Alternatives
+Version: 0.1.0
+Authors@R: c(
+    person("S M Mashrur", "Arafin Ayon", email = "mashrur399@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-3659-2891")),
+    person("Rodaba", "Zaman Adrita", email = "Zamanrodaba@gmail.com",
+           role = c("aut", "dtc"),
+           comment = "Word collection and gender dictionary curation"))
+Description: Identifies gendered words and phrases in text using a built in
+    dictionary of more than two hundred gendered terms paired with gender
+    neutral alternatives. Reports the share of gendered language in a text,
+    lists every gendered term found together with its suggested neutral
+    replacement, and can rewrite a text in gender neutral form. Plain text
+    files are read with base R, while other document formats such as PDF and
+    Word are supported through the optional 'readtext' package. The
+    dictionary is informed by published guidance on gender inclusive
+    language, including the United Nations guidelines
+    <https://www.un.org/en/gender-inclusive-language/> and the European
+    Parliament guidance on gender neutral language.
+License: MIT + file LICENSE
+URL: https://github.com/mashrur-ayon/gendertext
+BugReports: https://github.com/mashrur-ayon/gendertext/issues
+Depends: R (>= 3.5)
+Suggests: knitr, readtext, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-11 14:36:06 UTC; mashr
+Author: S M Mashrur Arafin Ayon [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3659-2891>),
+  Rodaba Zaman Adrita [aut, dtc] (Word collection and gender dictionary
+    curation)
+Maintainer: S M Mashrur Arafin Ayon <mashrur399@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-18 14:30:02 UTC

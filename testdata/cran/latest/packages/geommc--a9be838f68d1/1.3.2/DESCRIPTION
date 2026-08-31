@@ -1,0 +1,28 @@
+Package: geommc
+Title: Geometric Markov Chain Sampling
+Type: Package
+Version: 1.3.2
+Authors@R: 
+    person("Vivekananda", "Roy", , "vroy@iastate.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2964-9503"))
+Maintainer: Vivekananda Roy <vroy@iastate.edu>
+Date: 2026-5-9
+Description: Simulates from discrete and continuous target distributions using geometric
+ Metropolis-Hastings (MH) algorithms. Users specify the target distribution by an R
+ function that evaluates the log un-normalized pdf or pmf. The package also contains a
+ function implementing a specific geometric MH algorithm for performing high-dimensional
+ Bayesian variable selection.
+Encoding: UTF-8
+Imports: Rcpp, cubature, Matrix, numDeriv, progress
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://github.com/vroys/geommc
+License: GPL (>= 3)
+Suggests: knitr, rmarkdown, sass, bslib
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-09 04:39:02 UTC; vroy
+Author: Vivekananda Roy [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2964-9503>)
+Repository: CRAN
+Date/Publication: 2026-05-09 05:30:55 UTC

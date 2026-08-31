@@ -1,0 +1,31 @@
+Package: pestr
+Title: Interface to Download Data on Pests and Hosts from 'EPPO'
+Version: 0.8.4
+Authors@R: person(given = "Michal Jan",
+           family = "Czyz",
+           role = c("aut", "cre"),
+           email = "m.czyz.j@gmail.com",
+           comment = c(ORCID = "0000-0001-7156-4530"))
+Description: Set of tools to automatize extraction of data on pests from 'EPPO
+    Data Services' and 'EPPO Global Database' and to put them into tables with
+    human readable format. Those function use 'EPPO database API', thus you 
+    first need to register on <https://data.eppo.int> (free of charge).
+    Additional helpers allow to download, check and connect to
+    'SQLite EPPO database'.
+Depends: R (>= 3.6.0)
+Imports: curl, DBI, dplyr (>= 1.0.0), httr, jsonlite, magrittr, readr,
+        rlang, RSQLite, tidyr (>= 1.0.0), tidyselect (>= 1.2.0), utils
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, mockr, rmarkdown, roxygen2, testthat
+URL: https://github.com/mczyzj/pestr
+BugReports: https://github.com/mczyzj/pestr/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-20 21:35:27 UTC; mczyz
+Author: Michal Jan Czyz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7156-4530>)
+Maintainer: Michal Jan Czyz <m.czyz.j@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-20 22:10:02 UTC

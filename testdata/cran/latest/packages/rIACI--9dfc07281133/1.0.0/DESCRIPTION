@@ -1,0 +1,32 @@
+Package: rIACI
+Type: Package
+Title: Iberian Actuarial Climate Index Calculations
+Version: 1.0.0
+Authors@R: 
+    c(
+      person(
+        given = "Nan",
+        family = "Zhou",
+        email = "zhounan@ucm.es",
+        role = c("aut", "cre"),
+        comment = c(
+          ORCID = "https://orcid.org/0009-0002-5166-6753"
+        )
+      )
+    )
+Description: Calculates the Iberian Actuarial Climate Index and its components—including temperature, precipitation, wind power, and sea level data—to support climate change analysis and risk assessment. See "Zhou et al." (2023) <doi:10.26360/2023_3> for further details.
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.5), dplyr, tidyr, lubridate, magrittr,
+        reticulate, ecmwfr, readr, stats, utils
+LinkingTo: Rcpp
+Suggests: roxygen2, devtools, knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-03-17 14:53:24 UTC; nnnn
+Author: Nan Zhou [aut, cre] (<https://orcid.org/0009-0002-5166-6753>)
+Maintainer: Nan Zhou <zhounan@ucm.es>
+Repository: CRAN
+Date/Publication: 2025-03-17 16:10:02 UTC

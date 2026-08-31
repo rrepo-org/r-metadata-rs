@@ -1,0 +1,39 @@
+Package: connector
+Title: Streamlining Data Access in Clinical Research
+Version: 1.0.0
+Authors@R: c(
+    person("Cervan", "Girard", , "cgid@novonordisk.com", role = c("aut", "cre")),
+    person("Aksel", "Thomsen", , "oath@novonordisk.com", role = "aut"),
+    person("Vladimir", "Obucina", , "vlob@novonordisk.com", role = "aut"),
+    person("Novo Nordisk A/S", role = "cph")
+  )
+Description: Provides a consistent interface for connecting R to various 
+    data sources including file systems and databases. 
+    Designed for clinical research, 'connector' streamlines access to 'ADAM', 
+    'SDTM' for example. It helps to deal with multiple data formats through a standardized API and centralized 
+    configuration.
+License: Apache License (>= 2)
+URL: https://novonordisk-opensource.github.io/connector/,
+        https://github.com/NovoNordisk-OpenSource/connector/
+BugReports: https://github.com/NovoNordisk-OpenSource/connector/issues
+Depends: R (>= 4.1)
+Imports: arrow, checkmate, cli, DBI, dplyr, fs, glue, haven, jsonlite,
+        lifecycle, purrr, R6 (>= 2.4.0), readr, readxl, rlang, utils,
+        vroom, writexl, yaml, zephyr (>= 0.1.1)
+Suggests: dbplyr, ggplot2, knitr, rmarkdown, RPostgres, RSQLite,
+        spelling, testthat (>= 3.0.0), tibble, usethis, whirl (>=
+        0.2.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-08-19 12:23:07 UTC; cgid
+Author: Cervan Girard [aut, cre],
+  Aksel Thomsen [aut],
+  Vladimir Obucina [aut],
+  Novo Nordisk A/S [cph]
+Maintainer: Cervan Girard <cgid@novonordisk.com>
+Repository: CRAN
+Date/Publication: 2025-08-19 12:50:07 UTC

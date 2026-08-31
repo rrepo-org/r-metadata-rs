@@ -1,0 +1,62 @@
+Package: allelematch
+Type: Package
+Title: Identifying Unique Multilocus Genotypes where Genotyping Error
+        and Missing Data may be Present
+Version: 3.0.0
+Date: 2026-07-21
+Author: Paul Galpern [aut],
+  Micheline Manseau [aut],
+  Pete Hettinga [aut],
+  Karen Smith [aut],
+  Paul Wilson [aut],
+  Todd Cross [cre]
+Authors@R: c(person(given = "Paul",
+                    family = "Galpern",
+                    role = c("aut"),
+                    email = "pgalpern@gmail.com"
+                    ),
+            person(given = "Micheline",
+                    family = "Manseau",
+                    role = c("aut")
+                    ),
+            person(given = "Pete",
+                    family = "Hettinga",
+                    role = c("aut")
+                    ),
+            person(given = "Karen",
+                    family = "Smith",
+                    role = c("aut")
+                    ),
+            person(given = "Paul",
+                    family = "Wilson",
+                    role = c("aut")
+                    ),
+            person(given = "Todd",
+                    family = "Cross",
+                    role = c("cre"),
+                    email = "todd.cross@gmail.com")
+                    )
+Maintainer: Todd Cross <todd.cross@gmail.com>
+Description: Tools for the identification of unique multilocus genotypes when
+    both genotyping error and missing data may be present. Includes a data
+    pre-screening utility to analyze pairwise locus overlap and protect against
+    underlying mathematical sorting constraints. Targeted for use with large
+    datasets and databases containing multiple samples of each individual (a common
+    situation in conservation genetics, particularly in non-invasive wildlife
+    sampling applications). Functions explicitly incorporate missing data and can
+    tolerate allele mismatches created by genotyping error. If you use this package,
+    please cite the original publication in Molecular Ecology Resources (Galpern
+    et al., 2012), the details for which can be generated using
+    citation('allelematch'). The complete user manual and analytical tutorials
+    are included locally as an R vignette and can be accessed within an active R
+    session using vignette('allelematch').
+License: GPL (>= 2)
+Depends: R (>= 3.5.0), dynamicTreeCut
+URL: <doi:10.1111%2Fj.1755-0998.2012.03137.x>
+LazyLoad: yes
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-23 22:23:33 UTC; toddbcross
+Repository: CRAN
+Date/Publication: 2026-07-24 04:30:02 UTC

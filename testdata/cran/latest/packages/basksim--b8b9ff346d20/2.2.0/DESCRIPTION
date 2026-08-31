@@ -1,0 +1,44 @@
+Package: basksim
+Type: Package
+Title: Simulation-Based Calculation of Basket Trial Operating
+        Characteristics
+Version: 2.2.0
+Authors@R: c(
+    person("Lukas", "Baumann", , "baumann@imbi.uni-heidelberg.de", 
+           role = c("aut", "cre"),
+	         comment = c(ORCID = "0000-0001-7931-7470")),
+    person("Lukas D", "Sauer", ,"sauer@imbi.uni-heidelberg.de", 
+           role = c("aut"),
+		       comment = c(ORCID = "0000-0002-1340-9994")),
+		person("Sabrina", "Schmitt", ,"sabrina.schmitt@uni-wuerzburg.de", 
+		       role = c("aut"),
+		       comment = c(ORCID = "0009-0008-2719-6513"))
+  )
+Description: Provides a unified syntax for the simulation-based comparison of 
+  different single-stage basket trial designs with a binary endpoint and equal 
+  sample sizes in all baskets. Methods include the designs by 
+	Baumann et al. (2025) <doi:10.1080/19466315.2024.2402275>, 
+	Schmitt and Baumann (2025) <doi:10.1080/19466315.2025.2486231>,
+	Fujikawa et al. (2020) <doi:10.1002/bimj.201800404>,
+	Berry et al. (2020) <doi:10.1177/1740774513497539>, and
+	Neuenschwander et al. (2016) <doi:10.1002/pst.1730>. For the 
+	latter two designs, the functions are mostly 
+	wrappers for functions provided by the package 'bhmbasket'.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: arrangements, bhmbasket (>= 1.0.0), doFuture, extraDistr,
+        foreach, HDInterval, progressr, purrr, stats
+Suggests: covr, testthat (>= 3.0.0), ggplot2
+Config/testthat/edition: 3
+URL: https://github.com/lbau7/basksim
+BugReports: https://github.com/lbau7/basksim/issues
+NeedsCompilation: no
+Packaged: 2026-05-11 21:18:48 UTC; or415
+Author: Lukas Baumann [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7931-7470>),
+  Lukas D Sauer [aut] (ORCID: <https://orcid.org/0000-0002-1340-9994>),
+  Sabrina Schmitt [aut] (ORCID: <https://orcid.org/0009-0008-2719-6513>)
+Maintainer: Lukas Baumann <baumann@imbi.uni-heidelberg.de>
+Repository: CRAN
+Date/Publication: 2026-05-12 07:30:02 UTC

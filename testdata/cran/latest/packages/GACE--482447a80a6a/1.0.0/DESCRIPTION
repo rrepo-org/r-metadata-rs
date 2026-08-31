@@ -1,0 +1,39 @@
+Package: GACE
+Title: Generalized Adaptive Capped Estimator for Time Series
+        Forecasting
+Version: 1.0.0
+Authors@R: 
+    person(given = "Vinodhkumar",
+           family = "Gunasekaran",
+           role = c("aut", "cre"),
+           email = "vinoalles@gmail.com")
+Maintainer: Vinodhkumar Gunasekaran <vinoalles@gmail.com>
+Description: 
+    Provides deterministic forecasting for weekly, monthly, quarterly, and yearly
+    time series using the Generalized Adaptive Capped Estimator. The method
+    includes preprocessing for missing and extreme values, extraction of multiple
+    growth components (including long-term, short-term, rolling, and drift-based
+    signals), volatility-aware asymmetric capping, optional seasonal adjustment
+    via damped and normalized seasonal factors, and a recursive forecast
+    formulation with moderated growth. The package includes a user-facing
+    forecasting interface and a plotting helper for visualization. Related
+    forecasting background is discussed in Hyndman and Athanasopoulos (2021)
+    <https://otexts.com/fpp3/> and Hyndman and Khandakar (2008)
+    <doi:10.18637/jss.v027.i03>. The method extends classical extrapolative
+    forecasting approaches and is suited for operational and business planning
+    contexts where stability and interpretability are important.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: ggplot2, stats, utils
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr, forecast
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/vinoalles/GACE
+BugReports: https://github.com/vinoalles/GACE/issues
+NeedsCompilation: no
+Packaged: 2025-12-07 20:32:14 UTC; vinodhkumargunasekaran
+Author: Vinodhkumar Gunasekaran [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-12-11 19:20:18 UTC

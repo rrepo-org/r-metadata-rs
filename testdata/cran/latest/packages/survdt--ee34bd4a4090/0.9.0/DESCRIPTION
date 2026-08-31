@@ -1,0 +1,35 @@
+Package: survdt
+Title: Improved Methods for Survival Analysis under Double Truncation
+Version: 0.9.0
+Authors@R: c(
+    person("Omar", "Vazquez", email = "omar.vazquez@pennmedicine.upenn.edu", 
+           role = c("aut", "cre", "cph"), 
+           comment = c(ORCID = "0009-0009-4137-3333")),
+    person(c("Sharon", "X."), "Xie", role = "ths", 
+           comment = c(ORCID = "0000-0002-7886-4103")))
+Description: Contains existing and novel methods for nonparametric analysis and 
+    Cox regression analysis with doubly truncated survival data, as described in 
+    Vazquez and Xie (2025) <doi:10.1007/s10985-025-09650-5>. Includes survival 
+    curves and hazard estimates through nonparametric maximum likelihood 
+    estimation, various tests for detecting group differences or non-ignorable 
+    sampling bias, and inverse probability weighted Cox regression with several 
+    options of nonparametric weights. Also implements diagnostics for key 
+    modeling assumptions such as quasi-independent truncation and the positivity
+    assumption. Closed-form standard errors are available for all estimates, i.e.
+    bootstrapping is not required.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: ggplot2, igraph, stats, survival
+Depends: R (>= 2.10)
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-03 21:12:41 UTC; ovazquez
+Author: Omar Vazquez [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0009-4137-3333>),
+  Sharon X. Xie [ths] (ORCID: <https://orcid.org/0000-0002-7886-4103>)
+Maintainer: Omar Vazquez <omar.vazquez@pennmedicine.upenn.edu>
+Repository: CRAN
+Date/Publication: 2026-05-06 19:30:02 UTC

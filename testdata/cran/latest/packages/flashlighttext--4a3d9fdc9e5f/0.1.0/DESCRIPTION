@@ -1,0 +1,64 @@
+Type: Package
+Package: flashlighttext
+Title: Flashlight Text R Interface
+Version: 0.1.0
+Authors@R: c(
+    person("Athos", "Damiani", email = "athos.damiani@gmail.com", role = c("aut", "cre", "cph")),
+    person("Daniel", "Falbel", role = c("aut")),
+    person("Facebook Inc.", role = c("cph"), comment="Flashlight Text C++ source code"),
+    person("Jacob", "Kahn", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Vineel", "Pratap", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Tatiana", "Likhomanenko", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Qiantong", "Xu", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Awni", "Hannun", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Jeff", "Cai", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Paden", "Tomasello", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Ann", "Lee", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Edouard", "Grave", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Gilad", "Avidov", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Benoit", "Steiner", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Vitaliy", "Liptchinsky", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Gabriel", "Synnaeve", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Ronan", "Collobert", role = c("cph", "aut"), comment="Flashlight Text C++ source code"),
+    person("Kenneth", "Heafield", role = c("cph", "aut"), comment="KenLM C++ source code")    
+    )
+Description: Provides bindings to part of the Flashlight's Text toolkit.
+    The Flashlight Text R package contains beam search decoder, KenLM api, and
+    Dictionary components.
+    Jacob Kahn et al. (2022) <arXiv:2201.12465> "Flashlight: Enabling Innovation in Tools for Machine Learning".
+    Kenneth Heafield (2011) <https://aclanthology.org/W11-2123.pdf> "KenLM: Faster and Smaller Language Model Queries".
+License: MIT + file LICENSE
+Imports: glue, magrittr, methods, R6, Rcpp (>= 1.0.10), rlang, zeallot
+Suggests: testthat (>= 3.0.0), purrr
+LinkingTo: Rcpp
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+LazyData: true
+SystemRequirements: C++17, GNU make, CMake (>= 3.16), Boost
+        (libboost-dev libboost-program-options-dev libboost-system-dev
+        libboost-thread-dev libboost-test-dev)
+NeedsCompilation: yes
+Packaged: 2023-06-26 20:02:58 UTC; ap_da
+Author: Athos Damiani [aut, cre, cph],
+  Daniel Falbel [aut],
+  Facebook Inc. [cph] (Flashlight Text C++ source code),
+  Jacob Kahn [cph, aut] (Flashlight Text C++ source code),
+  Vineel Pratap [cph, aut] (Flashlight Text C++ source code),
+  Tatiana Likhomanenko [cph, aut] (Flashlight Text C++ source code),
+  Qiantong Xu [cph, aut] (Flashlight Text C++ source code),
+  Awni Hannun [cph, aut] (Flashlight Text C++ source code),
+  Jeff Cai [cph, aut] (Flashlight Text C++ source code),
+  Paden Tomasello [cph, aut] (Flashlight Text C++ source code),
+  Ann Lee [cph, aut] (Flashlight Text C++ source code),
+  Edouard Grave [cph, aut] (Flashlight Text C++ source code),
+  Gilad Avidov [cph, aut] (Flashlight Text C++ source code),
+  Benoit Steiner [cph, aut] (Flashlight Text C++ source code),
+  Vitaliy Liptchinsky [cph, aut] (Flashlight Text C++ source code),
+  Gabriel Synnaeve [cph, aut] (Flashlight Text C++ source code),
+  Ronan Collobert [cph, aut] (Flashlight Text C++ source code),
+  Kenneth Heafield [cph, aut] (KenLM C++ source code)
+Maintainer: Athos Damiani <athos.damiani@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-28 13:50:12 UTC

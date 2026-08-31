@@ -1,0 +1,25 @@
+Package: CaMeA
+Type: Package
+Title: Causal Meta-Analysis for Aggregated Data
+Version: 0.1.2
+Authors@R: c(
+        person(given = "Clement", family = "Berenfeld", email = "clement.berenfeld@inria.fr", role = c("aut","cre")),
+        person(given = "Ahmed", family = "Boughdiri", email = "ahmed.boughdiri@inria.fr", role = "ctb"),
+        person(given = "Charif", family = "El Gataa", email = "charif.el-gataa@inria.fr", role = "aut"),
+        person(given = "Julie", family = "Josse", email = "julie.josse@inria.fr", role = "ctb"))
+Maintainer: Clement Berenfeld <clement.berenfeld@inria.fr>
+Description: A tool for causal meta-analysis. This package implements the aggregation formulas and inference methods proposed in Berenfeld et al. (2025) <doi:10.48550/arXiv.2505.20168>. Users can input aggregated data across multiple studies and compute causally meaningful aggregated effects of their choice (risk difference, risk ratio, odds ratio, etc) under user-specified population weighting. The built-in function camea() allows to obtain precise variance estimates for these effects and to compare the latter to a classical meta-analysis aggregate, the random effect model, as implemented in the 'metafor' package <https://CRAN.R-project.org/package=metafor>.  
+License: AGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: purrr, metafor, tibble, dplyr
+Suggests: knitr, rmarkdown, kableExtra
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-03-10 16:26:08 UTC; berenfeld
+Author: Clement Berenfeld [aut, cre],
+  Ahmed Boughdiri [ctb],
+  Charif El Gataa [aut],
+  Julie Josse [ctb]
+Repository: CRAN
+Date/Publication: 2026-03-10 17:20:02 UTC

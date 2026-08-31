@@ -1,0 +1,31 @@
+Package: hirisplexr
+Type: Package
+Title: From 'PLINK' to 'HIrisPlex'
+Version: 0.1.0
+Maintainer: Andrea Giardina <andrea.giardina1@open.ac.uk>
+Description: Read 'PLINK' 1.9 binary datasets (BED/BIM/FAM) and generate the CSV
+    files required by the Erasmus MC 'HIrisPlex' / 'HIrisPlex-S' webtool <https://hirisplex.erasmusmc.nl/>. It maps
+    'PLINK' alleles to the webtool's required 'rsID_Allele' columns (0/1/2/NA).
+    No external tools (e.g., 'PLINK CLI') are required.
+License: MIT + file LICENSE
+URL: https://github.com/adhikari-statgen-lab/hirisplexr
+BugReports: https://github.com/adhikari-statgen-lab/hirisplexr/issues
+Depends: R (>= 3.6)
+Imports: BEDMatrix, data.table, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Authors@R: 
+    person(given = "Andrea",
+           family = "Giardina",
+           role = c("aut", "cre"),
+           email = "andrea.giardina1@open.ac.uk",
+           comment = c(ORCID = "0000-0003-3409-8053"))
+NeedsCompilation: no
+Packaged: 2025-10-28 10:46:01 UTC; agiardina
+Author: Andrea Giardina [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3409-8053>)
+Repository: CRAN
+Date/Publication: 2025-10-31 18:20:17 UTC

@@ -1,0 +1,34 @@
+Package: multiCCA
+Title: Multiple Canonical Correlation Analysis (Kernel and Functional)
+Version: 0.1.0
+Authors@R: 
+    person("Tomasz", "Gorecki",
+        email = "tomasz.gorecki@amu.edu.pl",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-9969-5257"))
+Description: 
+    Implements methods for multiple canonical correlation analysis (CCA) for more than two data blocks, 
+    with a focus on multivariate repeated measures and functional data. The package provides two approaches: 
+    (i) multiple kernel CCA, which embeds each data block into a reproducing kernel Hilbert space to capture 
+    nonlinear dependencies, and (ii) multiple functional CCA, which represents repeated measurements as smooth 
+    functions and performs analysis in a Hilbert space framework. Both approaches are formulated via covariance 
+    operators and solved as generalized eigenvalue problems with regularization to ensure numerical stability. 
+    The methods allow estimation of canonical variables, generalized canonical correlations, and low-dimensional 
+    representations for exploratory analysis and visualization of dependence structures across multiple feature sets. 
+    The implementation follows the framework developed in Górecki, Krzyśko, Gnettner and Kokoszka (2025) 
+    <doi:10.48550/arXiv.2510.04457>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: fda, geigen, ggplot2, rlang
+URL: https://github.com/Halmaris/multiCCA
+BugReports: https://github.com/Halmaris/multiCCA/issues
+NeedsCompilation: no
+Packaged: 2026-03-19 14:57:46 UTC; Tomek
+Author: Tomasz Gorecki [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9969-5257>)
+Maintainer: Tomasz Gorecki <tomasz.gorecki@amu.edu.pl>
+Repository: CRAN
+Date/Publication: 2026-03-23 17:50:07 UTC

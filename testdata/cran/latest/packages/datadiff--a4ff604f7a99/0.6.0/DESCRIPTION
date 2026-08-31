@@ -1,0 +1,35 @@
+Package: datadiff
+Title: Data Validation Based on 'YAML' Rules
+Version: 0.6.0
+Authors@R: c(
+    person("Vincent", "Guyader", , "vincent@thinkr.fr", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0003-0671-9270")),
+    person("ThinkR", role = "cph"),
+    person("Agence technique de l'information sur l'hospitalisation", role = "spn") )
+Description: A comprehensive data validation package that allows comparing
+    datasets using configurable validation rules defined in 'YAML' files.
+    Built on top of the 'pointblank' package for robust data validation, it
+    supports exact matching, tolerance-based numeric comparisons, text
+    normalization, and row count validation.
+License: MIT + file LICENSE
+Depends: R (>= 4.0.0)
+Imports: dplyr (>= 1.0.0), pointblank (>= 0.12.3), rlang (>= 0.4.0),
+        tidyselect (>= 1.0.0), utils, yaml (>= 2.2.0)
+Suggests: arrow, DBI, dbplyr, duckdb, gt, knitr, rmarkdown, RSQLite,
+        stringr, testthat (>= 3.0.0), tibble
+VignetteBuilder: knitr
+URL: https://github.com/ThinkR-open/datadiff
+BugReports: https://github.com/ThinkR-open/datadiff/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-12 09:56:57 UTC; PC
+Author: Vincent Guyader [cre, aut] (ORCID:
+    <https://orcid.org/0000-0003-0671-9270>),
+  ThinkR [cph],
+  Agence technique de l'information sur l'hospitalisation [spn]
+Maintainer: Vincent Guyader <vincent@thinkr.fr>
+Repository: CRAN
+Date/Publication: 2026-07-12 11:40:02 UTC

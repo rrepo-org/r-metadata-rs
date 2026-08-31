@@ -1,0 +1,35 @@
+Package: HTGM4D
+Version: 1.0
+Date: 2026-04-29
+Title: Four Dimensional High Throughput 'GoMiner'
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Author: Barry Zeeberg [aut, cre]
+Depends: R (>= 4.2.0)
+Imports: minimalistGODB, GoMiner, HTGM, HTGM2D, grDevices, stats,
+        gplots, vprint, randomGODB, HGNChelper, png, magick, svglite,
+        utils, graphics
+LazyData: true
+LazyDataCompression: xz
+Description: The Gene Ontology (GO) Consortium <https://geneontology.org/> organizes genes
+  into hierarchical categories based on biological process (BP), molecular function (MF) and
+  cellular component (CC, i.e., subcellular localization). Tools such as 'GoMiner' (see Zeeberg, B.R.,
+  Feng, W., Wang, G. et al. (2003) <doi:10.1186/gb-2003-4-4-r28>) can leverage GO to perform
+  ontological analysis of microarray and proteomics studies, typically generating a list of
+  significant functional categories. Microarray studies are usually analyzed with BP, whereas
+  proteomics researchers often prefer CC. To capture the benefit of both of those ontologies,
+  I now present an enhancement of the existing two-dimensional version of 'High-Throughput GoMiner' ('HTGM2D'),
+  which is called 'HTGM4D'. The original 'HTGM2D' is augmented by adding two instances of the original
+  'GoMiner' genes versus categories heatmaps, aligned with the categories axes of the 'HTGM2D' heatmap.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-29 14:47:32 UTC; barryzeeberg
+Repository: CRAN
+Date/Publication: 2026-05-02 09:50:08 UTC

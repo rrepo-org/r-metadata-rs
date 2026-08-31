@@ -1,0 +1,23 @@
+Package: ssmooth
+Title: Smooth Raster Time Series
+Version: 0.1.0
+Authors@R: c(
+    person("Connor", "Duffin", , "c.duffin@protonmail.com", role = c("aut", "cre")),
+    person("The Trustees of The Natural History Museum, London", role = c("cph")))
+Description: Smooth a sequence of 'terra' rasters using various algorithms (currently moving average, weighted moving average, and exponential smoothing). Also includes wrappers to smooth a vector time-series using these same algorithms. All smoothers use 'Rcpp' implementations for performance.
+Imports: terra, Rcpp
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/Biodiversity-Futures-Lab/ssmooth
+BugReports: https://github.com/Biodiversity-Futures-Lab/ssmooth/issues
+NeedsCompilation: yes
+Packaged: 2026-05-28 13:36:47 UTC; connd
+Author: Connor Duffin [aut, cre],
+  The Trustees of The Natural History Museum, London [cph]
+Maintainer: Connor Duffin <c.duffin@protonmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-01 09:00:02 UTC

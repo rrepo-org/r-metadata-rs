@@ -1,0 +1,37 @@
+Package: DEplotting
+Type: Package
+Title: Visualization Tools for German Regional Data
+Version: 0.1.0
+Authors@R: 
+    c(
+        person("Leona", "Hoxha", 
+               email = "leonahxh@gmail.com",
+               role = c("aut"),
+               comment = c(ORCID = "0009-0006-5124-5974")), 
+        person("Jannis", "Burkhard", 
+               email = "j.burkhard@dipf.de", 
+               role = c("aut", "cre"), 
+               comment = c(ORCID = "0000-0001-7624-9548"))
+    )
+Description: 
+    Provides functions to download, process, and visualize German geospatial 
+    data across administrative levels, including states, districts, and municipalities. 
+    Supports interactive tables and customized maps using built-in or external datasets.
+    Official shapefiles are accessed from the German Federal Agency for Cartography and 
+    Geodesy (BKG) <https://gdz.bkg.bund.de/>, licensed under dl-de/by-2-0 <https://www.govdata.de/dl-de/by-2-0>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://codeberg.org/BBEdata/DEplotting
+BugReports: https://codeberg.org/BBEdata/DEplotting/issues
+Imports: dplyr, ggplot2, grDevices, grid, magrittr, patchwork, rlang,
+        scales, sf, stringr, utils, data.table, DT
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-05-30 09:45:39 UTC; l.hoxha
+Author: Leona Hoxha [aut] (ORCID: <https://orcid.org/0009-0006-5124-5974>),
+  Jannis Burkhard [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7624-9548>)
+Maintainer: Jannis Burkhard <j.burkhard@dipf.de>
+Repository: CRAN
+Date/Publication: 2025-06-03 09:40:05 UTC

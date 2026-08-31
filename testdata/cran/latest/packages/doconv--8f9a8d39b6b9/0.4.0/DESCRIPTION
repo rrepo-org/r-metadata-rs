@@ -1,0 +1,35 @@
+Type: Package
+Package: doconv
+Title: Document Conversion to 'PDF', Thumbnails and Visual Testing
+Version: 0.4.0
+Authors@R: c(
+    person("David", "Gohel", , "david.gohel@ardata.fr", role = c("aut", "cre")),
+    person("ArData", role = "cph"),
+    person("David", "Hajage", role = "ctb",
+           comment = "initial powershell code")
+  )
+Description: Provides the ability to generate images from documents of
+    different types. Three main features are provided: generating document
+    thumbnails, performing visual tests of documents, and updating fields
+    and tables of contents of a 'Microsoft Word' or 'RTF' document.
+    'Microsoft Word' and/or 'LibreOffice' must be installed on the
+    machine. If 'Microsoft Word' is available, it can produce PDF
+    documents or images identical to the originals; otherwise
+    'LibreOffice' is used and the rendering may sometimes differ from the
+    original documents.
+License: MIT + file LICENSE
+BugReports: https://github.com/ardata-fr/doconv/issues
+Depends: R (>= 4.0.0)
+Imports: gdtools, locatexec, magick, pdftools, processx, tools
+Suggests: curl, flextable, ragg, testthat, tinytest, webshot2
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: LibreOffice, Microsoft Word
+NeedsCompilation: no
+Packaged: 2026-02-14 17:54:41 UTC; davidgohel
+Author: David Gohel [aut, cre],
+  ArData [cph],
+  David Hajage [ctb] (initial powershell code)
+Maintainer: David Gohel <david.gohel@ardata.fr>
+Repository: CRAN
+Date/Publication: 2026-02-14 18:10:03 UTC

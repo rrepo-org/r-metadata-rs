@@ -1,0 +1,32 @@
+Package: plasso
+Type: Package
+Title: Cross-Validated Post-Lasso
+Version: 0.1.3
+Authors@R: c(
+    person("Michael C.", "Knaus", email = "michael.knaus@uni-tuebingen.de", role = c("aut","cre"), comment = c(ORCID = "0000-0002-7328-1363")),
+    person("Stefan", "Glaisner", email = "stefan-glaisner@posteo.de", role = "aut")
+    )
+Description: Provides tools for cross-validated Lasso and Post-Lasso estimation.
+  Built on top of the 'glmnet' package by Friedman, Hastie and Tibshirani (2010) <doi:10.18637/jss.v033.i01>,
+  the main function plasso() extends the standard 'glmnet' output with coefficient paths
+  for Post-Lasso models, while cv.plasso() performs cross-validation for both Lasso
+  and Post-Lasso models and different ways to select the penalty parameter lambda as discussed in Knaus (2021) <doi:10.1111/rssa.12623>.
+License: GPL-3
+VignetteBuilder: knitr
+Encoding: UTF-8
+URL: https://github.com/MCKnaus/plasso
+BugReports: https://github.com/MCKnaus/plasso/issues
+LazyData: true
+Imports: glmnet, Matrix, methods, parallel, doParallel, foreach,
+        iterators
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, xfun
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-28 09:26:22 UTC; Michael
+Author: Michael C. Knaus [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7328-1363>),
+  Stefan Glaisner [aut]
+Maintainer: Michael C. Knaus <michael.knaus@uni-tuebingen.de>
+Repository: CRAN
+Date/Publication: 2025-10-31 18:20:02 UTC

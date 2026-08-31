@@ -1,0 +1,33 @@
+Package: IGPFrailty
+Type: Package
+Title: Inverse Gaussian Process Degradation Models with Frailty
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut")
+  )
+Description: Maximum likelihood estimation and reliability inference for
+    Inverse Gaussian Process (IGP) degradation models with gamma and inverse
+    Gaussian frailty terms, as formulated by Morita et al. (2021)
+    <doi:10.1002/qre.2762>. Classical IGP degradation models are described in
+    Wasan (1968) and Meeker and Escobar (1998, ISBN:978-0471143284). The
+    package provides tools for calculating lifetime cumulative distribution
+    functions, probability density functions, lifetime quantiles with
+    confidence intervals, posterior individual unit frailties, and
+    goodness-of-fit diagnostics.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: stats, graphics, grDevices, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-24 16:43:23 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-25 05:21:06 UTC

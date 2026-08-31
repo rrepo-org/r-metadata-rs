@@ -1,0 +1,24 @@
+Package: BoneDensityMapping
+Type: Package
+Title: Maps Bone Densities from CT Scans to Surface Models
+Version: 0.1.4
+Authors@R: c(person("Scott", "Telfer", , "scott.telfer@gmail.com", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-0104-4027")), 
+             person("Lucas", "Lacambra", , "lucasal2@illinois.edu", role = c("aut")))
+Maintainer: Scott Telfer <scott.telfer@gmail.com>
+Description: Allows local bone density estimates to be derived from CT data and mapped to 3D bone models in a reproducible manner. Processing can be performed at the individual bone or group level. Also includes tools for visualizing the bone density estimates. Example methods are described in Telfer et al., (2021) <doi:10.1002/jor.24792>, Telfer et al., (2021) <doi:10.1016/j.jse.2021.05.011>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: cowplot, ggplot2, ggpubr, methods, oro.nifti, ptinpoly, rdist,
+        rjson, concaveman, geometry, sp, rgl, RNifti, Rvcg, FNN, nat
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), curl
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-10-08 16:11:30 UTC; telfe
+Author: Scott Telfer [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0104-4027>),
+  Lucas Lacambra [aut]
+Repository: CRAN
+Date/Publication: 2025-10-08 16:30:23 UTC

@@ -1,0 +1,39 @@
+Package: csemGT
+Type: Package
+Title: Conditional Standard Error of Measurement in Generalizability
+        Theory
+Version: 1.0.0
+Authors@R: c(
+    person("Ren\u00e9", "Gempp", email = "rene.gempp@udp.cl",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0427-6894"))
+  )
+Description: Estimates the per-person conditional standard error of
+    measurement (CSEM) under the persons-by-items single-facet
+    crossed design of Generalizability Theory, following
+    Brennan (1998) <doi:10.1177/014662169802200401>. Implements
+    three estimators of the relative error variance (full, large_a,
+    uncorrelated) and the closed-form absolute error variance, with
+    both analytical and item-resampling bootstrap sampling variances,
+    quadratic smoothing of CSEMs on observed score, D-study
+    extrapolation, and base-graphics plotting.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: stats, utils, graphics, grDevices
+Suggests: boot, mgcv, ggplot2, knitr, rmarkdown, testthat (>= 3.0.0),
+        vdiffr, covr, spelling, mirt, haven
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/rgempp/csemGT, https://gempp.cl/csemGT/
+BugReports: https://github.com/rgempp/csemGT/issues
+Language: en-GB
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-28 13:42:59 UTC; rene.gempp
+Author: René Gempp [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0427-6894>)
+Maintainer: René Gempp <rene.gempp@udp.cl>
+Repository: CRAN
+Date/Publication: 2026-06-01 09:10:08 UTC

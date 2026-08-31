@@ -1,0 +1,30 @@
+Package: Rvoterdistance
+Type: Package
+Title: Voter Distance to Polling Locations
+Version: 2.0.0
+Authors@R: person("Loren", "Collingwood", email = "lcollingwood@unm.edu",
+           role = c("aut", "cre"))
+Description: Calculates the distance between each voter in a voter file
+    (given lat/long coordinates or sf point geometries) and multiple
+    polling or vote-by-mail drop box locations. Returns nearest location,
+    k-nearest locations, or all locations within a distance threshold.
+    Core computation uses the Haversine formula implemented in C++ via
+    'Rcpp'.
+License: GPL (>= 2)
+URL: https://github.com/lorenc5/Rvoterdistance
+BugReports: https://github.com/lorenc5/Rvoterdistance/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0)
+Imports: Rcpp (>= 1.0.0)
+Suggests: sf, testthat (>= 3.0.0), knitr, rmarkdown
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-05-20 16:32:55 UTC; lorencollingwood
+Author: Loren Collingwood [aut, cre]
+Maintainer: Loren Collingwood <lcollingwood@unm.edu>
+Repository: CRAN
+Date/Publication: 2026-05-27 20:00:02 UTC

@@ -1,0 +1,28 @@
+Package: OnlineSurr
+Type: Package
+Title: Surrogate Evaluation for Jointly Longitudinal Outcome and
+        Surrogate
+Version: 0.0.4
+Authors@R: c(
+        person(given="Silvaneo", family ="dos Santos Jr.", email = "silvaneojunior@utexas.edu", role = c("aut", "cre")),
+        person(given="Layla", family ="Parast", email = "parast@austin.utexas.edu", role = c("aut")))
+Description: Tools for surrogate evaluation in longitudinal studies using state-space models as proposed in Santos Jr. and Parast (2026)<doi:10.48550/arXiv.2604.12882>. The package estimates treatment effects over time with and without adjustment for surrogate information, summarizes the proportion of treatment effect explained by a longitudinal surrogate, quantifies uncertainty via bootstrap resampling, and provides plotting and summary utilities for fitted models.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: kDGLM (>= 1.2.14), dplyr, ggplot2, tidyr, rlang, Rfast, stats,
+        latex2exp, Rdpack
+Suggests: knitr, rmarkdown
+RdMacros: Rdpack
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+URL: https://silvaneojunior.github.io/OnlineSurr/
+Repository: CRAN
+BugReports: https://github.com/silvaneojunior/OnlineSurr/issues
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-04-22 19:46:51 UTC; svd488
+Author: Silvaneo dos Santos Jr. [aut, cre],
+  Layla Parast [aut]
+Maintainer: Silvaneo dos Santos Jr. <silvaneojunior@utexas.edu>
+Date/Publication: 2026-04-22 20:30:16 UTC

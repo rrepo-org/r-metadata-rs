@@ -1,0 +1,37 @@
+Package: llamaR
+Type: Package
+Title: Interface for Large Language Models via 'llama.cpp'
+Version: 0.2.6
+Authors@R: c(
+    person("Yuri", "Baramykov", email = "lbsbmsu@mail.ru", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-7627-4217")),
+    person("Georgi", "Gerganov", role = "cph",
+           comment = "Author of the 'llama.cpp' library included in src/"))
+Description: Provides R bindings to 'llama.cpp' for running large language
+    models locally, with optional GPU acceleration via 'ggmlR'. Supports text
+    generation, embeddings, chat-based workflows, tool calling, and multimodal
+    (vision) inference. Includes 'OpenAI'- and 'Anthropic'-compatible HTTP
+    servers for serving local models, along with device selection and
+    multi-GPU support.
+License: MIT + file LICENSE
+URL: https://github.com/Zabis13/llamaR
+BugReports: https://github.com/Zabis13/llamaR/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0), ggmlR
+LinkingTo: ggmlR
+SystemRequirements: C++17, GNU make
+Imports: jsonlite, stats, tools, utils
+Suggests: testthat (>= 3.0.0), withr, drogonR, later, ellmer, coro,
+        callr, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-08-26 18:26:20 UTC; yuri
+Author: Yuri Baramykov [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-7627-4217>),
+  Georgi Gerganov [cph] (Author of the 'llama.cpp' library included in
+    src/)
+Maintainer: Yuri Baramykov <lbsbmsu@mail.ru>
+Repository: CRAN
+Date/Publication: 2026-08-27 12:00:09 UTC

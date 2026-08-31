@@ -1,0 +1,41 @@
+Package: scov
+Type: Package
+Title: Structured Covariances Estimators for Pairwise and Spatial
+        Covariates
+Version: 2.0.2
+Date: 2026-08-19
+Authors@R: 
+    c(person(given = "Martin",
+    family = "Metodiev",
+    role = c("aut","cre","cph"),
+    email = "m.metodiev@tutanota.com",
+    comment = c(ORCID = "0009-0000-9432-3756")),
+    person(given = "Marie",
+    family = "Perrot-Dockès",
+    role = "aut",
+    email = "marie.perrot-dockees@parisdescartes.fr"),
+    person(given = "Stéphane",
+    family = "Robin",
+    role = "aut",
+    email = "stephane.robin@sorbonne-universite.fr"))
+Description: Implements estimators for structured covariance matrices in the
+    presence of pairwise and spatial covariates.
+    Metodiev, Perrot-Dockès,
+    Ouadah, Fosdick, Robin, Latouche & Raftery (2026)
+    <doi:10.1214/26-AOAS2183>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: Matrix, missMDA, mvtnorm, ohenery, pracma, quadprog, withr,
+        purrr, future, future.apply
+VignetteBuilder: knitr
+Suggests: knitr, markdown, corrplot
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-28 12:06:33 UTC; metodiev
+Author: Martin Metodiev [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0000-9432-3756>),
+  Marie Perrot-Dockès [aut],
+  Stéphane Robin [aut]
+Maintainer: Martin Metodiev <m.metodiev@tutanota.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 12:20:02 UTC

@@ -1,0 +1,34 @@
+Package: hmmTensor
+Type: Package
+Title: Hidden Markov Model by Matrix and Tensor Decomposition
+Version: 0.1.0
+Authors@R: person(given = "Koki",
+    family = "Tsuyuzaki",
+    role = c("aut", "cre"),
+    email = "k.t.the-answer@hotmail.co.jp")
+Description: Solves Hidden Markov Models (HMMs) via matrix and tensor
+    decomposition. Converts observation sequences to co-occurrence
+    matrices/tensors and applies Symmetric Non-negative Matrix
+    Factorization (symNMF), Singular Value Decomposition (SVD),
+    CANDECOMP/PARAFAC (CP) decomposition, or Tensor-Train (TT)
+    decomposition to recover HMM parameters.
+    Also provides standard HMM algorithms (Forward, Backward, Viterbi,
+    Baum-Welch) for comparison.
+    The spectral learning approach for HMMs is based on
+    Hsu, Kakade, and Zhang (2012) <doi:10.1016/j.jcss.2011.12.025>.
+    The symNMF method is described in
+    Kuang, Yun, and Park (2015) <doi:10.1007/s10898-014-0247-2>.
+    The Tensor-Train decomposition is described in
+    Oseledets (2011) <doi:10.1137/090752286>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: rTensor, symTensor, methods, stats
+Suggests: testthat
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-05-19 11:03:11 UTC; koki
+Author: Koki Tsuyuzaki [aut, cre]
+Maintainer: Koki Tsuyuzaki <k.t.the-answer@hotmail.co.jp>
+Repository: CRAN
+Date/Publication: 2026-05-27 09:10:02 UTC

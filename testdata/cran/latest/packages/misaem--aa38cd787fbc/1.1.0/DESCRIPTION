@@ -1,0 +1,31 @@
+Package: misaem
+Type: Package
+Version: 1.1.0
+Title: Linear Regression and Logistic Regression with Missing
+        Covariates
+Date: 2025-09-11
+Authors@R: c( person("Wei", "Jiang", role = "aut", email = "wei.jiang@polytechnique.edu"),
+              person("Pavlo", "Mozharovskyi", role = "ctb", email = "pavlo.mozharovskyi@telecom-paristech.fr"),
+              person("Imke", "Mayer", role = "ctb", email = "mayer.imke@gmail.com"),
+              person("Christophe", "Muller", role = "ctb", email = "christophe.muller@jesus.ox.ac.uk"),
+              person("Julie", "Josse", role = c("aut", "cre"), email = "julie.josse@inria.fr"))
+Maintainer: Julie Josse <julie.josse@inria.fr>
+Depends: R (>= 3.4.0)
+Imports: mvtnorm, stats, MASS, norm, methods, abind, glmnet
+Suggests: knitr, rmarkdown, mice
+Description: Estimate parameters of linear regression and logistic regression with missing covariates with missing data, perform model selection and prediction, using EM-type algorithms. Jiang W., Josse J., Lavielle M., TraumaBase Group (2020) <doi:10.1016/j.csda.2019.106907>.
+Encoding: UTF-8
+License: GPL-3
+URL: https://github.com/julierennes/misaem
+BugReports: https://github.com/julierennes/misaem/issues
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-09-11 12:54:09 UTC; Carrefour
+Author: Wei Jiang [aut],
+  Pavlo Mozharovskyi [ctb],
+  Imke Mayer [ctb],
+  Christophe Muller [ctb],
+  Julie Josse [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-09-11 20:30:02 UTC

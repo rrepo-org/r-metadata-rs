@@ -1,0 +1,36 @@
+Package: axprism
+Type: Package
+Title: Client for the 'AxPrism' Institutional XBRL and Shariah
+        Compliance API
+Version: 0.2.0
+Authors@R: person(given = "Marco", family = "Corleone",
+    email = "dev@axprism.com", role = c("aut", "cre"))
+Description: Provides an R client for the 'AxPrism' Application Programming
+    Interface (API) (<https://axprism.com>), which serves institutional
+    financial data in the eXtensible Business Reporting Language (XBRL) format
+    together with Shariah compliance screening. Supported compliance rulesets
+    include those of the Accounting and Auditing Organization for Islamic
+    Financial Institutions (AAOIFI), the Morgan Stanley Capital International
+    (MSCI) Islamic methodology, the Dow Jones Islamic Market (DJIM), the
+    Financial Times Stock Exchange (FTSE) and the Saudi Capital Market Authority
+    (CMA). Convenience functions wrap company fundamentals, compliance verdicts
+    and portfolio screening, company profiles, equity screeners, regulatory
+    disclosures and filing text search, and the Tadawul (Saudi Exchange), Bursa
+    Malaysia and Indonesia Stock Exchange (IDX) markets, as well as webhooks and
+    bulk data export. Requests use 'X-API-Key' header authentication, automatic
+    retries with exponential backoff, and a generic request helper that covers
+    all endpoints.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://axprism.com, https://axprism.com/api-reference
+BugReports: https://axprism.com/contact
+Imports: httr, jsonlite
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-26 01:30:20 UTC; code
+Author: Marco Corleone [aut, cre]
+Maintainer: Marco Corleone <dev@axprism.com>
+Repository: CRAN
+Date/Publication: 2026-07-01 09:20:02 UTC

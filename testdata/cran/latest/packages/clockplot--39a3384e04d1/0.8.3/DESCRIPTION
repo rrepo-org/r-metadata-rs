@@ -1,0 +1,34 @@
+Package: clockplot
+Type: Package
+Title: Plot Event Times on a 24-Hour Clock
+Version: 0.8.3
+Authors@R: person(given = c("Abdullah", "Al"),
+                    family = "Mahmud",
+                    role = c("aut", "cre", "cph"),
+                    comment = c(ORCID = "0000-0003-2814-8798"),
+                    email = "almahmud.sbi@gmail.com")
+Description: Provides a novel visualization technique for plotting timestamped events
+    on a 24-hour circular clock face. This is particularly useful for analyzing
+    daily patterns, event clustering, and gaps in temporal data. The package
+    also generalizes this approach to create cyclic charts for other periods,
+    including weekly and monthly cycles, enabling effective event planning and
+    pattern analysis across multiple time frames.
+License: MIT + file LICENSE
+Imports: dplyr, tidyr, tibble, ggplot2, hms, rlang
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/mahmudstat/clockplot/
+BugReports: https://github.com/mahmudstat/clockplot/issues
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-09-13 04:46:59 UTC; mahmud
+Author: Abdullah Al Mahmud [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2814-8798>)
+Maintainer: Abdullah Al Mahmud <almahmud.sbi@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-13 22:50:02 UTC

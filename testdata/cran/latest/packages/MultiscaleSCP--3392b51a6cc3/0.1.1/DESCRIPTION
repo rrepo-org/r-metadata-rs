@@ -1,0 +1,47 @@
+Package: MultiscaleSCP
+Title: Multiscale Systematic Conservation Planning Across Nested H3
+        Grids
+Version: 0.1.1
+Authors@R: 
+    c(
+      person(given = "Pablo", family = "Merlo",
+             email = "pablo.merlo@universityofgalway.ie",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-0626-4993")),
+      person(given = "Oisín", family = "Callery",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-3388-0951")),
+      person(given = "Carlos", family = "Tighe",
+             role = "ctb"),
+      person(given = "Anthony", family = "Grehan",
+             role = "ctb")
+    )
+Maintainer: Pablo Merlo <pablo.merlo@universityofgalway.ie>
+Description: Provides tools for multiscale systematic conservation planning
+    using the H3 hierarchical hexagonal grid system (Uber Technologies (2024)
+    <https://h3geo.org>) and the 'prioritizr' package (Hanson et al. (2025)
+    <doi:10.1111/cobi.14376>). Supports the definition and solution of
+    conservation problems across nested H3 resolutions with resolution-specific
+    features, costs, and management attributes, including cross-scale
+    connectivity penalties derived from parent-child relationships. Also
+    includes utilities to evaluate solutions using multiscale-aware diagnostics
+    and to post-process optimization outputs into alternative area-targeted
+    conservation scenarios.
+Depends: R (>= 4.2)
+Imports: sf, terra, raster, dplyr, tibble, Matrix, methods, prioritizr,
+        exactextractr, stats, cli, R6, assertthat, h3jsr, rlang
+Suggests: ggplot2, rnaturalearth, rnaturalearthdata, rmapshaper, knitr,
+        rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-25 14:35:29 UTC; merlo
+Author: Pablo Merlo [aut, cre] (ORCID: <https://orcid.org/0000-0002-0626-4993>),
+  Oisín Callery [aut] (ORCID: <https://orcid.org/0000-0002-3388-0951>),
+  Carlos Tighe [ctb],
+  Anthony Grehan [ctb]
+Repository: CRAN
+Date/Publication: 2026-03-30 17:00:02 UTC

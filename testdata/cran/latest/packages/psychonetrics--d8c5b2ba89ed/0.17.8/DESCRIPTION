@@ -1,0 +1,27 @@
+Package: psychonetrics
+Type: Package
+Title: Structural Equation Modeling and Confirmatory Network Analysis
+Version: 0.17.8
+Authors@R: person(given = "Sacha",family = "Epskamp", role = c("aut", "cre"), email = "mail@sachaepskamp.com")
+Maintainer: Sacha Epskamp <mail@sachaepskamp.com>
+Description: Multi-group (dynamical) structural equation models in combination with confirmatory network models from cross-sectional, time-series and panel data <doi:10.31234/osf.io/8ha93>. Allows for confirmatory testing and fit as well as exploratory model search.
+License: GPL-2
+Copyright: see file COPYRIGHTS. Bundles the LBFGS++ (LBFGSpp) headers
+        by Yixuan Qiu and others (MIT license) in inst/include.
+LinkingTo: Rcpp (>= 0.11.3), RcppArmadillo, RcppEigen, pbv, roptim
+Depends: R (>= 4.3.0)
+Imports: methods, qgraph, numDeriv, dplyr, Matrix (>= 1.6-5), lavaan,
+        corpcor, glasso, mgcv, optimx, nloptr, pbapply, parallel,
+        magrittr, IsingSampler (>= 0.5), tidyr, psych, rlang, MASS
+Suggests: psychTools, semPlot, graphicalVAR, metaSEM, mvtnorm, ggplot2,
+        tinytest
+ByteCompile: true
+URL: https://psychonetrics.org/
+BugReports: https://github.com/SachaEpskamp/psychonetrics/issues
+StagedInstall: true
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+Packaged: 2026-08-03 23:45:07 UTC; galvoro
+Author: Sacha Epskamp [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-08-04 09:20:02 UTC

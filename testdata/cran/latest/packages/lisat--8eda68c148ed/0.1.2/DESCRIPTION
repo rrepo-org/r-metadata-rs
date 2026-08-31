@@ -1,0 +1,28 @@
+Package: lisat
+Title: Longitudinal Integration Site Analysis Toolkit
+Version: 0.1.2
+Authors@R: 
+    person("Shuai", "Ni", , "Nishuai@wakerbio.com", role = c("aut", "cre"))
+Description: A comprehensive toolkit for the analysis of longitudinal integration site data, including data cleaning, quality control, statistical modeling, and visualization. It streamlines the entire workflow of integration site analysis, supports simple input formats, and provides user-friendly functions for researchers in virus integration site analysis. Ni et al. (2025) <doi:10.64898/2025.12.20.695672>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+Imports: GenomicRanges (>= 1.50.0), IRanges (>= 2.32.0), tidyr (>=
+        1.3.0), dplyr (>= 1.1.4), AnnotationDbi (>= 1.50.0), S4Vectors
+        (>= 0.32.0), GenomicFeatures (>= 1.50.0), magrittr, ggplot2,
+        purrr, broom
+Suggests: TxDb.Hsapiens.UCSC.hg38.knownGene, org.Hs.eg.db, knitr,
+        rmarkdown, grid, gt (>= 0.9.0), gtable (>= 0.3.6), this.path
+        (>= 2.0.0), plotrix (>= 3.8-2), scales (>= 1.2.0), writexl (>=
+        1.4.0), ggrepel (>= 0.9.4), ggpubr (>= 0.6.0), viridisLite (>=
+        0.4.2), RIdeogram (>= 0.2.2), patchwork (>= 1.1.3),
+        RColorBrewer (>= 1.1-3), colorspace, treemapify, igraph,
+        visNetwork, Cairo (>= 1.6-1), testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-03-24 09:27:27 UTC; nishuai
+Author: Shuai Ni [aut, cre]
+Maintainer: Shuai Ni <Nishuai@wakerbio.com>
+Repository: CRAN
+Date/Publication: 2026-03-27 10:40:03 UTC

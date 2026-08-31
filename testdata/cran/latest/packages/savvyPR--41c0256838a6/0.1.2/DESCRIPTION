@@ -1,0 +1,46 @@
+Package: savvyPR
+Type: Package
+Title: Savvy Parity Regression Model Estimation with 'savvyPR'
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Ziwei", family = "Chen", role = c("aut", "cre"),
+             email = "Ziwei.Chen.3@citystgeorges.ac.uk",
+             comment = c(ORCID = "0009-0009-6376-3850")),
+      person(given = "Vali", family = "Asimit", role = "aut",
+             email = "asimit@citystgeorges.ac.uk",
+             comment = c(ORCID = "0000-0002-7706-0066")),
+      person(given = "Pietro", family = "Millossovich", role = "aut",
+             email = "Pietro.Millossovich.1@citystgeorges.ac.uk",
+             comment = c(ORCID = "0000-0001-8269-7507")))
+Description: Implements the Savvy Parity Regression 'savvyPR' methodology
+    for multivariate linear regression analysis. The package solves an
+    optimization problem that balances the contribution of each predictor
+    variable to ensure estimation stability in the presence of
+    multicollinearity. It supports two distinct parameterization methods,
+    a Budget-based approach that allocates a fixed loss contribution to
+    each predictor, and a Target-based approach (t-tuning) that utilizes
+    a relative elasticity weight for the response variable. The package
+    provides comprehensive tools for model estimation, risk distribution
+    analysis, and parameter tuning via cross-validation (PR1, PR2, and
+    PR3 model types) to optimize predictive accuracy. Methods are based
+    on Asimit, Chen, Ichim and Millossovich (2026)
+    <https://openaccess.city.ac.uk/id/eprint/37017/>.
+License: GPL (>= 3)
+URL: https://ziwei-chenchen.github.io/savvyPR/
+BugReports: https://github.com/ziwei-chenchen/savvyPR/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.6.0)
+Imports: glmnet, Matrix, stats, nleqslv, ggplot2, gridExtra
+Suggests: MASS, knitr, rmarkdown, testthat (>= 3.0.0), covr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-09 18:45:57 UTC; 11605
+Author: Ziwei Chen [aut, cre] (ORCID: <https://orcid.org/0009-0009-6376-3850>),
+  Vali Asimit [aut] (ORCID: <https://orcid.org/0000-0002-7706-0066>),
+  Pietro Millossovich [aut] (ORCID:
+    <https://orcid.org/0000-0001-8269-7507>)
+Maintainer: Ziwei Chen <Ziwei.Chen.3@citystgeorges.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-06-09 20:00:02 UTC

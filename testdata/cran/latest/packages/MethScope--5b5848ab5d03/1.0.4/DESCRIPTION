@@ -1,0 +1,42 @@
+Package: MethScope
+Title: Ultra-Fast Analysis of Sparse DNA Methylome via Recurrent
+        Pattern Encoding
+Version: 1.0.4
+Authors@R: c(
+    person("Hongxiang", "Fu", , "fhx@seas.upenn.edu", role = c("aut", "cre"),comment = c(ORCID = "0000-0002-9873-8606")),
+    person("Wanding", "Zhou", , "wanding.zhou@pennmedicine.upenn.edu", role = c("cph", "fnd")),
+    person("The SAMtools/HTSlib authors", role = c("ctb","cph"),
+         comment = "BGZF components; see inst/COPYRIGHTS"),
+    person(given = "Attractive", family = "Chaos",
+         role = c("ctb","cph"),
+         comment = "Author and copyright holder of khash.h (klib, MIT license)")
+    )
+Description: Methods for analyzing DNA methylation data via Most Recurrent
+    Methylation Patterns (MRMPs). Supports cell-type annotation, spatial
+    deconvolution, unsupervised clustering, and cancer cell-of-origin inference.
+    Includes C-backed summaries for YAME ".cg/.cm" files (overlap counts, log2
+    odds ratios, beta/depth aggregation), an XGBoost classifier, NNLS
+    deconvolution, and plotting utilities. Scales to large spatial and
+    single-cell methylomes and is robust to extreme sparsity.
+License: AGPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: xgboost, dplyr, utils, tidyr, stringr, caret, doParallel,
+        parallel, ggplot2, uwot, magrittr, FNN, data.table, nnls
+Suggests: knitr, rmarkdown, spelling, testthat
+VignetteBuilder: knitr
+Depends: R (>= 4.0)
+SystemRequirements: zlib
+NeedsCompilation: yes
+Language: en-US
+Packaged: 2026-08-26 20:48:56 UTC; fuh1
+Author: Hongxiang Fu [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9873-8606>),
+  Wanding Zhou [cph, fnd],
+  The SAMtools/HTSlib authors [ctb, cph] (BGZF components; see
+    inst/COPYRIGHTS),
+  Attractive Chaos [ctb, cph] (Author and copyright holder of khash.h
+    (klib, MIT license))
+Maintainer: Hongxiang Fu <fhx@seas.upenn.edu>
+Repository: CRAN
+Date/Publication: 2026-08-26 21:30:02 UTC

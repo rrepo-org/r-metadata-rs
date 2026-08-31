@@ -1,0 +1,27 @@
+Package: corMLPE
+Title: Correlation Structures for Symmetric Relational Data
+Version: 0.1.0
+Authors@R: c(
+    person("Nathaniel", "Pope", email = "nspope@utexas.edu", role = c("aut")),
+        person("Bill", "Peterman", email = "peterman.73@osu.edu", role = c("aut", "cre"))
+    )
+Description: Implements correlation structures for symmetric relational data
+    (e.g. pairwise distances and dissimilarities) that interface with models
+    using 'nlme'-style correlation structures. The maximum likelihood
+    population effects method is described by Clarke et al. (2002)
+    <doi:10.1198/108571102320>.
+Imports: MASS, Matrix, methods, nlme, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL-2
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+Suggests: covr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-05-28 14:55:26 UTC; peterman.73
+Author: Nathaniel Pope [aut],
+  Bill Peterman [aut, cre]
+Maintainer: Bill Peterman <peterman.73@osu.edu>
+Repository: CRAN
+Date/Publication: 2026-06-01 13:30:06 UTC

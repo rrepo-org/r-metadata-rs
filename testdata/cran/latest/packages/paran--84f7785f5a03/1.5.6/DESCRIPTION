@@ -1,0 +1,20 @@
+Package: paran
+Version: 1.5.6
+Date: 2026-07-09
+Title: Horn's Test of Principal Components/Factors
+Authors@R: c(person(given = "Alexis", family ="Dinno", role = c("aut", "cre", "cph"), email = "alexis.dinno@pdx.edu", comment = c(ORCID = "0000-0003-2560-310X")))
+Imports: rlang
+Depends: R (>= 1.8.0), MASS
+Description: An implementation of Horn's technique for numerically and graphically evaluating the components or factors retained in a principle components analysis (PCA) or common factor analysis (FA). Horn's method contrasts eigenvalues produced through a PCA or FA on a number of random data sets of uncorrelated variables with the same number of variables and observations as the experimental or observational data set to produce eigenvalues for components or factors that are adjusted for the sample error-induced inflation. Components with adjusted eigenvalues greater than one are retained. paran may also be used to conduct parallel analysis following Glorfeld's (1995) suggestions to reduce the likelihood of over-retention.
+URL: https://alexisdinno.com/Software/index.shtml#paran,
+        https://alexisdinno.com/Software/files/PA_for_PCA_vs_FA.pdf
+License: GPL-2
+LazyLoad: true
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-07-09 16:53:24 UTC; alexis
+Author: Alexis Dinno [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2560-310X>)
+Maintainer: Alexis Dinno <alexis.dinno@pdx.edu>
+Repository: CRAN
+Date/Publication: 2026-07-09 22:20:08 UTC

@@ -1,0 +1,33 @@
+Package: BayesianDisaggregation
+Title: Evidence-Based Bayesian Disaggregation of Aggregate Indices
+Version: 0.2.1
+Depends: R (>= 4.1.0)
+Authors@R: person("José Mauricio", "Gómez Julián", email = "isadore.nabi@pm.me", role = c("aut", "cre"), comment = c(ORCID = "0009-0000-2412-3150"))
+Description: Disaggregates an observed aggregate price index into sectoral
+    components with a Bayesian state-space model in which the aggregate enters as
+    a genuine observation density rather than as a renormalization identity. A
+    random-walk-with-drift transition in log space (with partial pooling on the
+    drift and the innovation scale) and an estimable cross-sectional
+    concentration produce posterior draws of the sectoral indices with credible
+    intervals, suitable as multiple-imputation input for downstream dynamic
+    models. The Hamiltonian Monte Carlo engine follows Stan (Carpenter et al.,
+    2017) <doi:10.18637/jss.v076.i01>; model comparison uses Pareto Smoothed
+    Importance Sampling Leave-One-Out cross-validation (Vehtari, Gelman and
+    Gabry, 2017) <doi:10.1007/s11222-016-9696-4>. A closed-form linear-Gaussian
+    Kalman/RTS smoother provides an exact, MCMC-free Bayesian alternative for the
+    same aggregate evidence.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: readxl, dplyr, tidyr, stringr, magrittr, stats, parallel
+Suggests: cmdstanr, rstan (>= 2.21.0), posterior, loo (>= 2.5.0),
+        knitr, rmarkdown, ggplot2, readr, testthat (>= 3.0.0)
+Additional_repositories: https://mc-stan.org/r-packages/
+VignetteBuilder: knitr
+NeedsCompilation: no
+Author: José Mauricio Gómez Julián [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-2412-3150>)
+Maintainer: José Mauricio Gómez Julián <isadore.nabi@pm.me>
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-18 19:27:15 UTC; josemgomezj
+Repository: CRAN
+Date/Publication: 2026-06-18 22:10:07 UTC

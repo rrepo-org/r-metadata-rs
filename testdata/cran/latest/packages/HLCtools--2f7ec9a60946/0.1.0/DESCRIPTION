@@ -1,0 +1,31 @@
+Package: HLCtools
+Title: Calculate Herd Lying Concordance Metrics
+Version: 0.1.0
+Authors@R: 
+    person(
+        given = "Guilherme",
+        family = "Amorim Franchi",
+        email = "gaf@anivet.au.dk",
+        role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0000-0001-7653-6512")
+    )
+Description: Calculates Herd Lying Concordance (HLC) metrics from individual animal lying-behaviour data. HLC is a continuous framework for quantifying group-level behavioural cohesion from between-animal dispersion within observation intervals. The package implements standard deviation, mean absolute deviation, interquartile range, and entropy formulations, lying-weighted extensions, threshold-based synchrony comparisons, temporal summaries, and descriptive method-ranking tools. The HLC formulations are introduced in this package; related approaches to cattle behavioural synchrony include Raussi et al. (2011) <doi:10.1017/S1751731110001928>, Kok et al. (2023) <doi:10.1016/j.applanim.2023.105906>, and the activity metric framework of van Dixhoorn et al. (2024) <doi:10.24072/pcjournal.489>.
+License: MIT + file LICENSE
+URL: https://github.com/guilhermefranchi/HLCtools
+BugReports: https://github.com/guilhermefranchi/HLCtools/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr, rlang
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-15 18:46:38 UTC; au588902
+Author: Guilherme Amorim Franchi [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7653-6512>)
+Maintainer: Guilherme Amorim Franchi <gaf@anivet.au.dk>
+Repository: CRAN
+Date/Publication: 2026-07-23 13:10:15 UTC

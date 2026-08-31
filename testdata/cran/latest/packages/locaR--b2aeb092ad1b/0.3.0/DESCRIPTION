@@ -1,0 +1,28 @@
+Package: locaR
+Type: Package
+Title: A Set of Tools for Sound Localization
+Version: 0.3.0
+Authors@R: c(
+    person("Richard", "Hedley", email = "rwhedley@gmail.com", role = c("cre", "aut"), comment = c(ORCID = "0000-0001-9588-5515")),
+    person("Marcus", "Becker", email = "mabecker@ualberta.ca", role = "aut"),
+    person("Tim", "Huang", role = "aut"))
+Maintainer: Richard Hedley <rwhedley@gmail.com>
+Description: A set of functions and tools to conduct acoustic source localization, as well as organize and check localization data and results. The localization functions implement the modified steered response power algorithm described by Cobos et al. (2011) <doi:10.1109/LSP.2010.2091502>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/rhedley/locaR
+BugReports: https://github.com/rhedley/locaR/issues
+RoxygenNote: 7.3.3
+Imports: seewave, tuneR, matrixStats, oce, signal, SynchWave, stats,
+        utils, graphics, grDevices
+Suggests: testthat (>= 2.0.0), knitr, rmarkdown
+Config/testthat/edition: 2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-12 17:56:00 UTC; hedley
+Author: Richard Hedley [cre, aut] (ORCID:
+    <https://orcid.org/0000-0001-9588-5515>),
+  Marcus Becker [aut],
+  Tim Huang [aut]
+Repository: CRAN
+Date/Publication: 2026-08-21 05:42:10 UTC

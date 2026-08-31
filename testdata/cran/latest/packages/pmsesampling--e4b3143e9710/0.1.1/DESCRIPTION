@@ -1,0 +1,27 @@
+Package: pmsesampling
+Title: Sample Size Determination for Accurate Predictive Linear
+        Regression
+Version: 0.1.1
+Authors@R: 
+    c(person("Louis", "Chen", email = "chenaters@gmail.com", role = c("aut","cre")),
+    person("Zheyang", "Wu", email = "zheyangwu@wpi.edu", role = c("aut", "ths")))
+Description: Provides analytic and simulation tools to estimate the minimum
+    sample size required for achieving a target prediction mean-squared error
+    (PMSE) or a specified proportional PMSE reduction (pPMSEr) in linear
+    regression models.  Functions implement the criteria of Ma (2023) 
+    <https://digital.wpi.edu/downloads/0g354j58c>, support covariance-matrix 
+    handling, and include helpers for root-finding and diagnostic plotting.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: Matrix, stats, rootSolve
+Suggests: rmarkdown, testthat(>= 3.0.0)
+BugReports: https://github.com/Chenaters/pmsesampling/issues
+URL: https://github.com/Chenaters/pmsesampling
+NeedsCompilation: no
+Packaged: 2025-09-04 04:29:42 UTC; 12245
+Author: Louis Chen [aut, cre],
+  Zheyang Wu [aut, ths]
+Maintainer: Louis Chen <chenaters@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-09 14:00:02 UTC

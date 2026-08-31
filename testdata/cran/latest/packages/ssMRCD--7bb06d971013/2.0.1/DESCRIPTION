@@ -1,0 +1,30 @@
+Package: ssMRCD
+Type: Package
+Title: Robust Estimators for Multi-Group and Spatial Data
+Version: 2.0.1
+Authors@R: 
+   c(
+   person(given = "Patricia", family = "Puchhammer", email = "patricia.puchhammer@tuwien.ac.at", role = c("aut", "cre", "cph")),
+   person(given = "Peter", family = "Filzmoser", role = c("aut"))
+   )
+Maintainer: Patricia Puchhammer <patricia.puchhammer@tuwien.ac.at>
+Description: Estimation of robust estimators for multi-group and spatial data including the casewise robust Spatially Smoothed Minimum Regularized Determinant (ssMRCD) estimator and its usage for local outlier detection as described in Puchhammer and Filzmoser (2023) <doi:10.1080/10618600.2023.2277875> as well as for sparse robust PCA for multi-source data described in Puchhammer, Wilms and Filzmoser (2024) <doi:10.48550/arXiv.2407.16299>. Moreover, a cellwise robust multi-group Gaussian mixture model (MG-GMM) is implemented as described in Puchhammer, Wilms and Filzmoser (2024) <doi:10.48550/arXiv.2504.02547>. Included are also complementary visualization and parameter tuning tools.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: stats, graphics, robustbase, scales, ellipse, dbscan, ggplot2,
+        expm, rrcov, DescTools, rootSolve, Matrix, Rcpp, RcppArmadillo,
+        cellWise, methods, utils
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), rnaturalearth,
+        rnaturalearthdata, dplyr, tidyr, ggridges
+Config/testthat/edition: 3
+Depends: R (>= 4.0.0)
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2025-09-16 09:04:11 UTC; puchhammer
+Author: Patricia Puchhammer [aut, cre, cph],
+  Peter Filzmoser [aut]
+Repository: CRAN
+Date/Publication: 2025-09-16 11:00:02 UTC

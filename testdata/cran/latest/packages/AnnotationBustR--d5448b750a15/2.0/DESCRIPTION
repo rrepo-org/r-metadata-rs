@@ -1,0 +1,40 @@
+Package: AnnotationBustR
+Version: 2.0
+Date: 2026-08-30
+Title: Extract Subsequences from GenBank Annotations
+Authors@R: 
+  c(person(given = "Samuel R.",
+           family = "Borstein",
+           role = c("aut", "cre"),
+           email = "sam@borstein.com",
+           comment = c(ORCID = "0000-0002-7258-141X")),
+    person(given = "Brian",
+           family = "O'Meara",
+           role = "aut",
+		   email = "bomeara@utk.ed",
+           comment = c(ORCID = "0000-0002-0337-5997")))
+Maintainer: Samuel R. Borstein <sam@borstein.com>
+Depends: R (>= 4.5)
+biocViews:
+Imports: Biostrings (>= 2.78.0), BSgenome (>= 1.78.0), dplyr (>=
+        1.2.1), GenomicFeatures (>= 1.62.0), GenomicRanges (>= 1.62.0),
+        magrittr (>= 2.0.5), rentrez (>= 1.2.4), stringr (>= 1.6.0)
+Description: Extraction of subsequences into FASTA files from GenBank annotations where gene names may vary among accessions. Borstein & O'Meara (2018) <doi:10.7717/peerj.5179>.
+License: GPL (>= 3)
+LazyData: true
+Suggests: knitr, rmarkdown, seqinr, testthat
+VignetteBuilder: knitr
+URL: https://github.com/sborstein/AnnotationBustR,
+        https://www.ncbi.nlm.nih.gov/nuccore,
+        https://peerj.com/articles/5179/,
+        http://sborstein.github.io/AnnotationBustR/
+BugReports: https://github.com/sborstein/AnnotationBustR/issues
+Encoding: UTF-8
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-31 03:38:11 UTC; sam
+Author: Samuel R. Borstein [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7258-141X>),
+  Brian O'Meara [aut] (ORCID: <https://orcid.org/0000-0002-0337-5997>)
+Repository: CRAN
+Date/Publication: 2026-08-31 19:00:19 UTC

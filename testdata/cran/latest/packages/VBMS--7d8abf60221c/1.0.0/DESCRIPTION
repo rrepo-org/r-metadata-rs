@@ -1,0 +1,33 @@
+Package: VBMS
+Title: Variational Bayesian Algorithm for Multi-Source Heterogeneous
+        Models
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Lu",
+             family = "Luo", 
+             email = "luolu@stu.ynu.edu.cn",
+             role = c("aut", "cre")),
+      person(given = "Huiqiong",
+             family = "Li",
+             role = "aut"))
+Description: A Variational Bayesian algorithm for high-dimensional multi-source 
+    heterogeneous linear models. More details have been written up in a paper 
+    submitted to the journal Statistics in Medicine, and the details of variational
+    Bayesian methods can be found in Ray and Szabo (2021) <doi:10.1080/01621459.2020.1847121>.
+    It simultaneously performs parameter estimation and variable selection. The 
+    algorithm supports two model settings: (1) local models, where variable selection
+    is only applied to homogeneous coefficients, and (2) global models, where variable
+    selection is also performed on heterogeneous coefficients. Two forms of 
+    Spike-and-Slab priors are available: the Laplace distribution and the Gaussian 
+    distribution as the Slab component.
+License: MIT + file LICENSE
+Imports: pracma, selectiveInference, MASS
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-10-04 02:34:22 UTC; 11877
+Author: Lu Luo [aut, cre],
+  Huiqiong Li [aut]
+Maintainer: Lu Luo <luolu@stu.ynu.edu.cn>
+Repository: CRAN
+Date/Publication: 2025-10-08 19:40:13 UTC

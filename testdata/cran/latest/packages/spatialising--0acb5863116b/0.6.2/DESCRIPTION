@@ -1,0 +1,32 @@
+Package: spatialising
+Title: Ising Model for Spatial Data
+Version: 0.6.2
+Authors@R: c(
+    person(given = "Jakub", family = "Nowosad", 
+    role = c("aut", "cre"),
+    email = "nowosad.jakub@gmail.com", 
+    comment = c(ORCID = "0000-0002-1057-3721")))
+Description: Performs simulations of binary spatial raster data using
+    the Ising model (Ising (1925) <doi:10.1007/BF02980577>; 
+    Onsager (1944) <doi:10.1103/PhysRev.65.117>). It allows to set a few
+    parameters that represent internal and external pressures, and the number 
+    of simulations (Stepinski and Nowosad (2023) <doi:10.1098/rsos.231005>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: comat, Rcpp, terra
+URL: https://jakubnowosad.com/spatialising/
+BugReports: https://github.com/Nowosad/spatialising/issues
+Suggests: covr, knitr, rmarkdown, optimization, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LazyData: false
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-09-30 13:09:22 UTC; jn
+Author: Jakub Nowosad [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1057-3721>)
+Maintainer: Jakub Nowosad <nowosad.jakub@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-30 13:30:02 UTC

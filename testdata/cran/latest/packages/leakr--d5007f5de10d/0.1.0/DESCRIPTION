@@ -1,0 +1,25 @@
+Package: leakr
+Type: Package
+Title: Data Leakage Detection Tools for Machine Learning
+Version: 0.1.0
+Authors@R: person(given = c("Cheryl", "Isabella"), family = "Lim", role = c("aut", "cre"), email =
+           "cheryl.academic@gmail.com")
+Description: Provides utilities to detect common data leakage patterns including train/test
+           contamination, temporal leakage, and data duplication, enhancing model reliability and
+           reproducibility in machine learning workflows. Generates diagnostic reports and visual
+           summaries to support data validation. Methods based on best practices from Hastie,
+           Tibshirani, and Friedman (2009, ISBN:978-0387848570).
+Imports: ggplot2, arrow, data.table, digest, htmltools, openxlsx,
+        readxl, stringr, workflows, jsonlite
+Suggests: testthat (>= 3.0.0), caret, mlr3, tidymodels, knitr,
+        rmarkdown
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-10-22 08:43:45 UTC; Isabella
+Author: Cheryl Isabella Lim [aut, cre]
+Maintainer: Cheryl Isabella Lim <cheryl.academic@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-10-26 18:50:02 UTC

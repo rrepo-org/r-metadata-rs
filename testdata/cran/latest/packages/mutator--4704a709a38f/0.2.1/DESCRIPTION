@@ -1,0 +1,35 @@
+Package: mutator
+Title: Mutation Testing
+Version: 0.2.1
+Authors@R: c(
+    person("Pierre", "Donat-Bouillud", email = "pierre.donat.bouillud@fit.cvut.cz", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0003-4455-1130")),
+    person("Assanali", "Amandykov", email = "amandass@fit.cvut.cz", role = c("aut", "cph")))
+Description: Performs mutation testing for 'R' packages to assess the
+    effectiveness of a test suite. It mutates source files, runs package tests
+    against each mutant, and reports which mutants were killed, survived, or
+    timed out. Parallel execution is supported for larger code bases. The
+    optional 'imputesrcref' package, available from
+    <https://github.com/PRL-PRG/imputesrcref>, improves source locations when
+    installed.
+URL: https://github.com/PRL-PRG/mutator,
+        https://prl-prg.github.io/mutator/
+BugReports: https://github.com/PRL-PRG/mutator/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: jsonlite, httr, pkgload, testthat, future, furrr, callr, covr,
+        R6
+Suggests: xml2, pkgbuild, cli, pbmcapply, knitr, rmarkdown, tinytest
+Enhances: imputesrcref
+LinkingTo: testthat
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+SystemRequirements: C++17
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-23 11:44:16 UTC; pierre
+Author: Pierre Donat-Bouillud [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-4455-1130>),
+  Assanali Amandykov [aut, cph]
+Maintainer: Pierre Donat-Bouillud <pierre.donat.bouillud@fit.cvut.cz>
+Repository: CRAN
+Date/Publication: 2026-08-02 16:30:02 UTC

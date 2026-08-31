@@ -1,0 +1,37 @@
+Package: EvalTest
+Title: Tools for Evaluating Diagnostic Test Performance
+Version: 1.0.6
+Authors@R: 
+    person(given = "Nassim", family = "AYAD", email = "nassim.ayad.ph@gmail.com", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "https://orcid.org/0000-0002-1809-0935", 
+                affiliation = "Laboratory of Modeling and Biostatistics,
+                               Pasteur Institute of Algeria"))
+Maintainer: Nassim AYAD <nassim.ayad.ph@gmail.com>
+Description: Evaluates diagnostic test performance using data from laboratory or 
+    diagnostic research. It includes functions to compute common performance 
+    indicators along with their confidence intervals, and offers an interactive 
+    'shiny' application for comprehensive analysis including ROC curve visualization
+    and related metrics. It supports both binary and continuous test variables. 
+    It allows users to compute key performance indicators and visualize Receiver
+    Operating Characteristic (ROC) curves, determine optimal cut-off thresholds,
+    display confusion matrix, and export publication-ready plot. It aims to facilitate
+    the application of statistical methods in diagnostic test evaluation by healthcare
+    professionals. Methodological details and references for the computation of 
+    performance indicators are provided in the package vignette.
+Depends: R (>= 4.2.1)
+Imports: DT, ggplot2, ggpubr, openxlsx, pROC, readxl, shiny,
+        shinydashboard, stats, binom
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-20 20:55:10 UTC; maison
+Author: Nassim AYAD [aut, cre] (ORCID: <https://orcid.org/0000-0002-1809-0935>,
+    affiliation: Laboratory of Modeling and Biostatistics, Pasteur
+    Institute of Algeria)
+Repository: CRAN
+Date/Publication: 2026-02-20 21:20:02 UTC

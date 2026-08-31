@@ -1,0 +1,18 @@
+Package: loopevd
+Title: Loop Functions for Extreme Value Distributions
+Version: 1.0.2
+Authors@R: 
+    person("Julian", "O'Grady", , "julian.ogrady@csiro.au", role = c("aut", "cre"))
+Description: Performs extreme value analysis at multiple locations using functions from the 'evd' package. Supports both point-based and gridded input data using the 'terra' package, enabling flexible looping across spatial datasets for batch processing of generalised extreme value, Gumbel fits.
+License: GPL (>= 3)
+Imports: terra, evd, ncdf4, stats, utils, ismev, parallel
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, zoo, ozmaps, raster, sp, methods
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-07-21 04:22:58 UTC; ogr013
+Author: Julian O'Grady [aut, cre]
+Maintainer: Julian O'Grady <julian.ogrady@csiro.au>
+Repository: CRAN
+Date/Publication: 2025-07-21 04:50:02 UTC

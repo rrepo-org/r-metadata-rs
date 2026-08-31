@@ -1,0 +1,31 @@
+Package: idendr0
+Type: Package
+Title: Interactive Dendrograms
+Version: 1.5.4
+Date: 2026-03-16
+Author: Tomas Sieger [aut, cre]
+Authors@R: person(given = "Tomas",
+    family = "Sieger",
+    role = c("aut", "cre"),
+    email = "tomas.sieger@seznam.cz")
+Depends:
+Imports: tcltk, tkrplot, grDevices, graphics, stats
+Suggests: DendSer, cluster, RColorBrewer, datasets, loon, MASS,
+        flowStats, hyperSpec
+URL: https://github.com/tsieger/idendr0
+Maintainer: Tomas Sieger <tomas.sieger@seznam.cz>
+BugReports: https://github.com/tsieger/idendr0/issues
+Description: Interactive dendrogram that enables the user to select and
+    color clusters, to zoom and pan the dendrogram, and to visualize
+    the clustered data not only in a built-in heat map, but also in
+    'GGobi' interactive plots and user-supplied plots. 
+    This is a backport of Qt-based 'idendro' 
+    (<https://github.com/tsieger/idendro>) to base R graphics and 
+    Tcl/Tk GUI.
+License: GPL-2
+LazyLoad: yes
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-03-16 22:21:26 UTC; sieger
+Repository: CRAN
+Date/Publication: 2026-03-17 08:10:02 UTC

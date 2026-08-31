@@ -1,0 +1,23 @@
+Package: dynsbm
+Type: Package
+Title: Dynamic Stochastic Block Models
+Version: 0.8
+Date: 2025-05-15
+Authors@R: c(person(given = "Catherine",
+                     family = "Matias",
+                     role = "aut"),
+              person(given = "Vincent",
+                     family = "Miele",
+                     role = c("aut", "cre"),
+                     email = "vincent.miele@cnrs.fr"))
+Maintainer: Vincent Miele <vincent.miele@cnrs.fr>
+Description: Dynamic stochastic block model that combines a stochastic block model (SBM) for its static part with independent Markov chains for the evolution of the nodes groups through time, developed in  Matias and Miele (2016) <doi:10.1111/rssb.12200>.
+Imports: Rcpp, parallel, RColorBrewer, grDevices, graphics, stats
+LinkingTo: Rcpp
+License: GPL-3
+NeedsCompilation: yes
+Packaged: 2025-05-21 13:57:01 UTC; vmiele
+Author: Catherine Matias [aut],
+  Vincent Miele [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-05-26 08:30:02 UTC

@@ -1,0 +1,61 @@
+Package: GRIN2
+Title: Genomic Random Interval (GRIN)
+Version: 2.1.0
+Authors@R: 
+    c(
+      person(
+        "Abdelrahman", "Elsayed",
+        email = "aelsayed@stjude.org",
+        role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0000-0002-8150-6825")
+      ),
+      person(
+        "Xueyuan", "Cao",
+        email = "xcao12@uthsc.edu",
+        role = "aut"
+      ),
+      person(
+        "Lakshmi Anuhya", "Patibandla",
+        email = "lakshmianuhya.patibandla@stjude.org",
+        role = "aut"
+      ),
+      person(
+        "Stanley", "Pounds",
+        email = "stanley.pounds@stjude.org",
+        role = c("aut", "cph")
+      )
+    )
+Description: Implements the Genomic Random Interval (GRIN) framework for
+    identifying genomic loci affected by genomic lesions more frequently than
+    expected by chance. Supports multiple lesion classes, lesion constellation
+    analysis, exon-level target-size modeling, genomic lesion visualization,
+    and gene-level association analyses linking genomic lesions or gene
+    expression with binary and time-to-event clinical outcomes. Includes tools
+    for retrieving versioned GRCh38 Ensembl gene, exon, and regulatory-element
+    annotations. The statistical framework is described in Pounds et al. (2013)
+    <doi:10.1093/bioinformatics/btt372>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Imports: circlize, data.table, dplyr, forcats, ggplot2, graphics,
+        grDevices, grid, magrittr, stats, survival, tibble, tools,
+        utils, writexl
+Suggests: AnnotationHub, biomaRt, ComplexHeatmap, ensembldb,
+        GenomeInfoDb, GenomicRanges, gridExtra, gridGraphics, Gviz,
+        IRanges, knitr, rmarkdown, S4Vectors
+VignetteBuilder: knitr, rmarkdown
+LazyData: true
+NeedsCompilation: no
+Maintainer: Abdelrahman Elsayed <aelsayed@stjude.org>
+URL: https://github.com/abdel-elsayed87/GRIN2
+BugReports: https://github.com/abdel-elsayed87/GRIN2/issues
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-22 04:34:08 UTC; aelsayed
+Author: Abdelrahman Elsayed [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8150-6825>),
+  Xueyuan Cao [aut],
+  Lakshmi Anuhya Patibandla [aut],
+  Stanley Pounds [aut, cph]
+Repository: CRAN
+Date/Publication: 2026-08-22 15:20:20 UTC

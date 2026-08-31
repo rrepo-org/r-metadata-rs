@@ -1,0 +1,37 @@
+Package: FinanceGraphs
+Title: Flexible Graphs for Analysis of Financial Data and Time Series
+Version: 0.9.21
+Authors@R: 
+    person("Derek", "Holmes", , "derek@derekholmes.com", role = c("aut", "cre", "cph"))
+Description: Flexible wrappers around R graphics modules 'dygraphs' <https://dygraphs.com/> and 'ggplot2' <https://ggplot2.tidyverse.org/> to visualize data commonly found in Financial Studies, with an emphasis on time series.
+    Interactive time series plots include multiple options for incorporating external data such as forecasts and events.  Other static plots useful for time 
+    series data include an intuitive and generic scatter plotter, a boxplot generator suitable for multiple time series, and event study plotters for time series analysis 
+    around sets of dates.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.0.0), purrr (>= 1.2.0), tibble (>= 1.0.0), broom
+        (>= 1.0.0), stringr (>= 1.2.0), forcats (>= 1.0.0), lubridate
+        (>= 1.7.0), utils (>= 4.0.0), tidyr (>= 0.6.3), xts (>=
+        0.10.0), qlcal (>= 0.1.0), graphics (>= 4.0.0), grDevices (>=
+        4.5.0), ggplot2 (>= 4.0.0), ggrepel (>= 0.9.0), ggiraph (>=
+        0.9.0), knitr (>= 1.45), usethis (>= 3.2.0), cpm (>= 2.0.0),
+        RegimeChange (>= 0.1.0), scales (>= 1.1.0), stats (>= 4.5.0),
+        utils (>= 4.5.0), data.table (>= 1.9.8), dygraphs (>= 1.1.0)
+Suggests: ecp (>= 3.1.0), tidyquant (>= 1.0.0), RColorBrewer (>=
+        1.0.0), prophet (>= 1.1.0), forecast (>= 9.0.0), timetk (>=
+        2.9.0), sweep (>= 0.2.0), alphavantagepf (>= 0.3.0), testthat,
+        rmarkdown (>= 2.25)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://github.com/derekholmes0/FinanceGraphs,
+        https://derekholmes0.github.io/FinanceGraphs/
+BugReports: https://github.com/derekholmes0/FinanceGraphs/issues
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-08-28 14:07:03 UTC; DFH
+Author: Derek Holmes [aut, cre, cph]
+Maintainer: Derek Holmes <derek@derekholmes.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 17:00:09 UTC

@@ -1,0 +1,26 @@
+Package: int3ract
+Type: Package
+Title: Plotting Two- and Three-Way Interactions
+Version: 1.0.7
+Authors@R: c(
+    person(
+      "Robert W.", "Krause",
+      email = "robert.w.krause@mailbox.org",
+      role = c("aut", "cre", "cph")
+    )
+  )
+Description: Provides two- and three-way Johnson-Neyman-(Krause) plots for easier interpretation of interactions. It extends the classic framework of Johnson and Neyman (1936) and Johnson and Fay (1950) <doi:10.1007/BF02288864> to Bayesian models and three-way interactions. The functions have dedicated routines for classic lm()/glm() models, as well as 'lme4' models and 'RSiena' results. However, the package can also be used model agnostic and thus extends the availability of JN(K)-plots beyond what is currently available. A detailed introduction can be found in Krause (2026) <doi:10.48550/arXiv.2604.22051>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.4.0)
+Imports: dplyr, tibble, tidyr, ggplot2, ggpattern, scales, lme4
+Suggests: MCMCpack, RSiena
+RoxygenNote: 7.3.3
+URL: https://github.com/RWKrause/int3ract
+BugReports: https://github.com/RWKrause/int3ract/issues
+NeedsCompilation: no
+Packaged: 2026-04-30 20:01:34 UTC; rkr235
+Author: Robert W. Krause [aut, cre, cph]
+Maintainer: Robert W. Krause <robert.w.krause@mailbox.org>
+Repository: CRAN
+Date/Publication: 2026-05-05 14:06:18 UTC

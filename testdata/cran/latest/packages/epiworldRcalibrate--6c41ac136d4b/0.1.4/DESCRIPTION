@@ -1,0 +1,54 @@
+URL: https://sima-njf.github.io/epiworldRcalibrate/,
+        https://github.com/sima-njf/epiworldRcalibrate
+BugReports: https://github.com/sima-njf/epiworldRcalibrate/issues
+Package: epiworldRcalibrate
+Title: Fast and Effortless Calibration of Agent-Based Models using
+        Machine Learning
+Version: 0.1.4
+Authors@R: c(
+  person(
+    "Sima", "Najafzadehkhoei", role=c("aut","cre"), email="sima.njf@utah.edu",
+    comment = c(ORCID = "0009-0002-6253-2910")
+  ),
+  person(
+    "George", "Vega Yon", role=c("aut"), email="g.vegayon@gmail.com",
+    comment = c(ORCID = "0000-0002-3171-0844")
+  ),
+  person(
+    "Jake", "Wagoner", role=c("aut"), email="jakew@sci.utah.edu"
+  ),
+  person(
+    "Bernardo", "Modenesi", role=c("aut"), email="bmodenesi@gmail.com"
+  ),
+  person("Centers for Disease Control and Prevention", role = "fnd",
+         comment = "Award number 1U01CK000585; 75D30121F00003")
+  )
+Description: 
+  Provides tools and pre-trained Machine Learning [ML] models for
+  calibration of Agent-Based Models [ABMs] built with the R package
+  'epiworldR'. Implements methods described in Najafzadehkhoei, Vega Yon,
+  Modenesi, and Meyer (2025) <doi:10.48550/arXiv.2509.07013>. Users can
+  automatically calibrate ABMs in seconds with pre-trained ML models,
+  effectively focusing on simulation rather than calibration. Bridges a gap
+  by allowing public health practitioners to run their own ABMs without the
+  advanced technical expertise often required by calibration.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0), epiworldR
+Config/testthat/edition: 3
+Imports: reticulate (>= 1.41), utils
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-04-02 18:53:07 UTC; u1418987
+Author: Sima Najafzadehkhoei [aut, cre] (ORCID:
+    <https://orcid.org/0009-0002-6253-2910>),
+  George Vega Yon [aut] (ORCID: <https://orcid.org/0000-0002-3171-0844>),
+  Jake Wagoner [aut],
+  Bernardo Modenesi [aut],
+  Centers for Disease Control and Prevention [fnd] (Award number
+    1U01CK000585; 75D30121F00003)
+Maintainer: Sima Najafzadehkhoei <sima.njf@utah.edu>
+Repository: CRAN
+Date/Publication: 2026-04-02 19:20:02 UTC

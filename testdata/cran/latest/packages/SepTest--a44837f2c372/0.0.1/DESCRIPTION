@@ -1,0 +1,32 @@
+Package: SepTest
+Title: Tests for First-Order Separability in Spatio-Temporal Point
+        Processes
+Version: 0.0.1
+Date: 2026-01-18
+Authors@R: c(person(given = "Mohammad",
+                        family = "Ghorbani",
+                        role = c("aut", "cre"),
+                        email = "mohammad.ghorbani@slu.se"),
+                 person(given = "Nafiseh",
+                        family = "Vafaei",
+                        role = "aut"))
+Maintainer: Mohammad Ghorbani <mohammad.ghorbani@slu.se>
+Author: Mohammad Ghorbani [aut, cre],
+  Nafiseh Vafaei [aut]
+Description: Provides statistical tools for testing first-order separability in spatio-temporal point processes, that is, assessing whether the spatio-temporal intensity function can be expressed as the product of spatial and temporal components. The package implements several hypothesis tests, including exact and asymptotic methods for Poisson and non-Poisson processes. Methods include global envelope tests, chi-squared type statistics, and a novel 
+ Hilbert-Schmidt independence criterion (HSIC) test, all with both block and pure permutation procedures. Simulation studies and real world examples, including the 2001 UK foot and mouth disease outbreak data, illustrate the utility of the proposed methods. The package contains all simulation studies and applications presented in Ghorbani et al. (2021) <doi:10.1016/j.csda.2021.107245> and Ghorbani et al. (2025) <doi:10.1007/s11749-025-00972-y>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: combinat, dHSIC, fields, GET, ggplot2, graphics, MASS,
+        patchwork, reshape2, scatterplot3d, spatstat.explore,
+        spatstat.geom, spatstat.model, splancs, stats
+Suggests: testthat (>= 3.0.0), rmarkdown, pkgdown, knitr, spatstat,
+        stpp, RColorBrewer, plot3D
+BugReports: https://github.com/mghorbani01/SepTest/issues
+URL: https://github.com/mghorbani01/SepTest
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-30 12:57:20 UTC; mdgi0001
+Repository: CRAN
+Date/Publication: 2026-02-03 13:30:14 UTC

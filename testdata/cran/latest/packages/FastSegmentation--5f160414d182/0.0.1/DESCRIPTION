@@ -1,0 +1,27 @@
+Package: FastSegmentation
+Title: Unsupervised Cell Segmentation by Fast Gaussian Processes
+Version: 0.0.1
+Authors@R: c(
+  person(given="Blythe", family="King", email="blyking@gmail.com", role=c("aut","cre")),
+  person(given="Haoran", family="Yan", email="hyan82@gatech.edu", role="aut"), 
+  person(given="Laura", family="Baracaldo", email="l.baracaldolancheros@lancaster.ac.uk", role="aut"), 
+  person(given="Mengyang", family="Gu", email="mengyang@pstat.ucsb.edu", role="aut"))
+Author: Blythe King [aut, cre],
+  Haoran Yan [aut],
+  Laura Baracaldo [aut],
+  Mengyang Gu [aut]
+Maintainer: Blythe King <blyking@gmail.com>
+Description: 
+  Performs fast Gaussian process-based segmentation of microscopy images using spatial smoothing and data-driven thresholding.
+  Code based on Baracaldo, L., King, B., Yan, H., Lin, Y., Miolane, N., & Gu, M. (2025). 
+  "Unsupervised cell segmentation by fast Gaussian processes."
+  arXiv preprint <doi:10.48550/arXiv.2505.18902>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: EBImage, stats, magick, pracma, RobustGaSP
+Suggests: plot3D
+NeedsCompilation: no
+Packaged: 2026-06-02 05:23:12 UTC; blyki
+Repository: CRAN
+Date/Publication: 2026-06-08 17:40:07 UTC

@@ -1,0 +1,47 @@
+Package: DataAudit
+Type: Package
+Title: Comprehensive Data Quality Auditing and Validation
+Version: 0.1.0
+Authors@R: 
+    c(
+        person(
+            given = "Vinodh Kumar",
+            family = "Obli Rajendran",
+            role = c("aut", "cre"),
+            email = "vinodhkumar.rajendran@gmail.com",
+            comment = c(
+                ORCID = "0000-0002-7232-4122"
+            )
+        ),
+        person(
+            given = "Keerthi",
+            family = "Aaradhana",
+            role = "aut",
+            email = "vkeerthi1817@gmail.com"
+        )
+    )
+Description: Provides tools for systematic assessment, validation, and
+    reporting of data quality. The package detects common data-quality
+    problems including missing or blank values, duplicate observations,
+    infinite values, constant and near-zero variance variables, outliers,
+    invalid ranges and categories, type and pattern violations, problematic
+    dates and identifiers, sequence errors, dependency violations, and
+    cross-variable inconsistencies. It also supports reusable validation
+    rules, integrated audit reports, and standardized data-quality scoring
+    for reproducible data-quality assessment workflows.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tibble
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/vinodhpmd/DataAudit
+BugReports: https://github.com/vinodhpmd/DataAudit/issues
+NeedsCompilation: no
+Packaged: 2026-07-28 12:21:45 UTC; m
+Author: Vinodh Kumar Obli Rajendran [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7232-4122>),
+  Keerthi Aaradhana [aut]
+Maintainer: Vinodh Kumar Obli Rajendran <vinodhkumar.rajendran@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-06 12:40:02 UTC

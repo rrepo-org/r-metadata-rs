@@ -1,0 +1,42 @@
+Type: Package
+Package: chooseGCM
+Title: Selecting General Circulation Models for Species Distribution
+        Modeling
+Version: 1.3
+Authors@R: c(
+    person("Dayani", "Bailly", role = "aut",
+           comment = c(ORCID = "0000-0002-6954-9902")),
+    person("Reginaldo", "Ré", role = "aut",
+           comment = c(ORCID = "0000-0001-6452-3466")),
+    person("Marcos", "R. Lima", role = "aut",
+           comment = c(ORCID = "0000-0002-5901-0911")),
+    person("Luíz", "Esser", , "luizesser@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-2982-7223")))
+Maintainer: Luíz Esser <luizesser@gmail.com>
+Description: Methods to help selecting General Circulation Models (GCMs) 
+    in the context of projecting models to future scenarios. It is provided
+    clusterization algorithms, distance and correlation metrics, as well as
+    a tailor-made algorithm to detect the optimum subset of GCMs that recreate
+    the environment of all GCMs as proposed in Esser et al. (2025) <doi:10.1111/gcb.70008>.
+License: MIT + file LICENSE
+Imports: checkmate, cli, cluster, cowplot, factoextra, ggcorrplot,
+        ggplot2, graphics, httr2, methods, reshape2, stats, terra,
+        usedist, utils
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: tictoc, testthat, sf, raster, rmarkdown, stars
+Config/testthat/edition: 3
+URL: https://luizesser.github.io/chooseGCM/,
+        https://github.com/luizesser/chooseGCM
+BugReports: https://github.com/luizesser/chooseGCM/issues
+Depends: R (>= 4.1)
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2026-01-08 23:40:41 UTC; luizesser
+Author: Dayani Bailly [aut] (ORCID: <https://orcid.org/0000-0002-6954-9902>),
+  Reginaldo Ré [aut] (ORCID: <https://orcid.org/0000-0001-6452-3466>),
+  Marcos R. Lima [aut] (ORCID: <https://orcid.org/0000-0002-5901-0911>),
+  Luíz Esser [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2982-7223>)
+Repository: CRAN
+Date/Publication: 2026-01-09 00:20:02 UTC

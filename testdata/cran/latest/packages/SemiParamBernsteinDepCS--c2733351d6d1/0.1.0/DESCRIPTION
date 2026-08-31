@@ -1,0 +1,30 @@
+Package: SemiParamBernsteinDepCS
+Type: Package
+Title: Semiparametric Bayesian Regression for Dependent Current Status
+        Data
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut"))
+Description: Implements a semiparametric Bayesian regression framework using Bernstein polynomial baseline models for analyzing dependent current status data. The package accommodates proportional hazards (PH) and proportional odds (PO) regression models with Archimedean copulas ('Gumbel', 'Frank', and 'Clayton') to model the joint dependence structure between event and observation or censoring times. Estimation is performed using a Robust Adaptive Metropolis (RAM) Markov Chain Monte Carlo ('MCMC') algorithm. Model comparison metrics including Deviance Information Criterion ('DIC') and posterior summaries with Highest Posterior Density ('HPD') intervals and Kendall's tau are provided. Methodological details are described in Sharma and Balakrishnan (2026) <doi:10.1080/02664763.2026.2701921>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-07-29 15:09:12 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 10:40:07 UTC

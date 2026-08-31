@@ -1,0 +1,26 @@
+Package: tinyroxygen
+Title: A Tiny 'Roxygen'-Style Documentation Generator
+Version: 0.1
+Authors@R: 
+    person("Mauricio", "Vargas Sepulveda", , "m.vargas.sepulveda@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1017-7574"))
+Description: A minimalistic, dependency-free alternative to 'roxygen2'. Reads
+    '#'' comment blocks above R functions and objects and turns them into
+    '.Rd' documentation files and a 'NAMESPACE' file. 'tinyroxygen' is to
+    'roxygen2' what 'tinytest' is to 'testthat', a lightweight alternative
+    built with base R only, with no recursive dependencies to install. 'Roxygen'
+    stands for R documentation inspired by the 'Doxygen' for 'C++' documentation
+    tools.
+License: Apache License 2.0
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+NeedsCompilation: yes
+Copyright: See file LICENSE.note for the license of the bundled 'cmark'
+        library used for Markdown support.
+Packaged: 2026-07-28 14:00:43 UTC; pacha
+Author: Mauricio Vargas Sepulveda [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1017-7574>)
+Maintainer: Mauricio Vargas Sepulveda <m.vargas.sepulveda@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-06 13:20:02 UTC

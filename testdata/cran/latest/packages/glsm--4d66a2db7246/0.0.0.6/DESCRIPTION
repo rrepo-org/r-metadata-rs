@@ -1,0 +1,29 @@
+Package: glsm
+Type: Package
+Title: Saturated Model Log-Likelihood for Multinomial Outcomes
+Version: 0.0.0.6
+Date: 2025-07-09
+Authors@R: c(
+  person("Jorge", "Villalba", email = "jvillalba@utb.edu.co", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-2888-9660")),
+  person("Humberto", "Llinas", email = "hllinas@uninorte.edu.co", role = c("aut"), comment = c(ORCID = "0000-0002-2976-5109")),
+  person("Jorge", "Borja", email = "jborjaa@uninorte.edu.co", role = "aut", comment = c(ORCID = "0009-0006-4824-5199")),
+  person("Jorge", "Tilano", email = "jtilano@uninorte.edu.co", role = "aut", comment = c(ORCID = "0009-0005-5793-4183"))
+  )
+Author: Jorge Villalba [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2888-9660>),
+  Humberto Llinas [aut] (ORCID: <https://orcid.org/0000-0002-2976-5109>),
+  Jorge Borja [aut] (ORCID: <https://orcid.org/0009-0006-4824-5199>),
+  Jorge Tilano [aut] (ORCID: <https://orcid.org/0009-0005-5793-4183>)
+Maintainer: Jorge Villalba <jvillalba@utb.edu.co>
+Description: When the response variable Y takes one of R > 1 values, the function 'glsm()' computes the maximum likelihood estimates (MLEs) of the parameters under four models: null, complete, saturated, and logistic. It also calculates the log-likelihood values for each model. This method assumes independent, non-identically distributed variables. For grouped data with a multinomial outcome, where observations are divided into J populations, the function 'glsm()' provides estimation for any number K of explanatory variables.
+Depends: R (>= 3.5.0)
+Imports: stats, dplyr (>= 1.0.0), ggplot2 (>= 1.0.0), VGAM (>= 1.0.0),
+        plyr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-07-09 14:14:12 UTC; jvillalba
+Repository: CRAN
+Date/Publication: 2025-07-14 17:10:02 UTC

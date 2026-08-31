@@ -1,0 +1,34 @@
+Package: frontmatter
+Title: Parse Front Matter from Documents
+Version: 0.3.0
+Authors@R: c(
+    person("Garrick", "Aden-Buie", , "garrick@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7111-0077")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: Extracts and parses structured metadata ('YAML' or 'TOML')
+    from the beginning of text documents. Front matter is a common pattern
+    in 'Quarto' documents, 'R Markdown' documents, static site generators,
+    documentation systems, content management tools and even 'Python' and
+    'R' scripts where metadata is placed at the top of a document,
+    separated from the main content by delimiter fences.
+License: MIT + file LICENSE
+URL: https://github.com/posit-dev/frontmatter,
+        https://posit-dev.github.io/frontmatter/
+BugReports: https://github.com/posit-dev/frontmatter/issues
+Imports: cpp11, rlang, tomledit, yaml12
+Suggests: testthat (>= 3.0.0), withr, yaml
+LinkingTo: cpp11
+Config/Needs/website: brand.yml
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-02 20:10:39 UTC; garrick
+Author: Garrick Aden-Buie [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7111-0077>),
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
+Maintainer: Garrick Aden-Buie <garrick@posit.co>
+Repository: CRAN
+Date/Publication: 2026-07-03 03:10:02 UTC

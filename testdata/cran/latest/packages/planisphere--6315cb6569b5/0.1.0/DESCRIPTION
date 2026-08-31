@@ -1,0 +1,26 @@
+Package: planisphere
+Title: Map Projections
+Version: 0.1.0
+Authors@R: person("Nicolas", "Lambert", email = "nicolas.lambert@cnrs.fr",
+  role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4976-6560"))
+Description: Applies cartographic projections to spatial data frames containing
+    geographic coordinates. Projection methods are based on the 'D3.js' ecosystem
+    <doi:10.1109/TVCG.2011.185> and use spherical geometry rather than
+    ellipsoidal geodesic models. 
+License: GPL (>= 3)
+URL: https://riatelab.github.io/planisphere/
+BugReports: https://github.com/riatelab/planisphere/issues/
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: utils, sf, V8, geojsonsf, graphics
+Suggests: knitr, r2d3
+Language: en-US
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-01 06:23:41 UTC; nlambert
+Author: Nicolas Lambert [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4976-6560>)
+Maintainer: Nicolas Lambert <nicolas.lambert@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2026-07-07 09:30:02 UTC

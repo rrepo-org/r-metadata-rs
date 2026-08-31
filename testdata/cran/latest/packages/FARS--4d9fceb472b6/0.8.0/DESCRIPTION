@@ -1,0 +1,29 @@
+Package: FARS
+Type: Package
+Title: Factor-Augmented Regression Scenarios
+Version: 0.8.0
+Authors@R: c(person("Gian Pietro", "Bellocca", email = "gbellocc@est-econ.uc3m.es", role = c("aut", "cre")),
+             person("Ignacio", "Garrón", role = c("aut")),
+             person("Vladimir", "Rodríguez-Caballero", role = c("aut")),
+             person("Esther", "Ruiz", role = c("aut")))
+Maintainer: Gian Pietro Bellocca <gbellocc@est-econ.uc3m.es>
+Description: Provides a comprehensive framework in R for modeling and forecasting economic scenarios based on multi-level dynamic factor model. The package enables users to: (i) extract global and group-specific factors using a flexible multi-level factor structure; (ii) compute asymptotically valid confidence regions for the estimated factors, accounting for uncertainty in the factor loadings; (iii) obtain estimates of the parameters of the factor-augmented quantile regressions together with their standard deviations; (iv) recover full predictive conditional densities from estimated quantiles; (v) obtain risk measures based on extreme quantiles of the conditional densities; (vi) estimate the conditional density and the corresponding extreme quantiles when the factors are stressed.
+Depends: R (>= 3.5.0)
+Imports: rlang, magrittr, ggplot2, plotly, sn, nloptr, ellipse,
+        SyScSelection, quantreg, tidyr, dplyr, forcats, MASS, reshape2,
+        stringr, stats,
+Suggests: R.rsp, devtools, knitr, rmarkdown, markdown, openxlsx,
+        readxl, zoo
+VignetteBuilder: R.rsp
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://arxiv.org/abs/2507.10679
+NeedsCompilation: no
+Packaged: 2026-02-17 10:36:20 UTC; gianpietro
+Author: Gian Pietro Bellocca [aut, cre],
+  Ignacio Garrón [aut],
+  Vladimir Rodríguez-Caballero [aut],
+  Esther Ruiz [aut]
+Repository: CRAN
+Date/Publication: 2026-02-17 11:00:02 UTC

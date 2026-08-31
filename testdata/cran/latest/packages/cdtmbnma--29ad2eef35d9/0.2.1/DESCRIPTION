@@ -1,0 +1,39 @@
+Package: cdtmbnma
+Type: Package
+Title: Component, Dose, and Time Network Meta-Analysis with
+        Dose-Dependent Interactions
+Version: 0.2.1
+Date: 2026-07-10
+Authors@R: 
+    person(given = "Tyler", family = "Pitre",
+           email = "pitretmed@gmail.com",
+           role = c("aut", "cre"))
+Description: Bayesian component model-based network meta-analysis for treatment
+    combinations with explicit component dose-response and dose-dependent
+    interaction surfaces. The main interface fits single-timepoint arm-level
+    networks with continuous or binary outcomes, any number of components,
+    additive, bilinear, or saturating pairwise interactions, study-level random
+    effects, and prediction at unobserved dose combinations. A stage-one
+    longitudinal interface fits a two-component exponential time-course model
+    with a bilinear interaction on the asymptote. Estimation uses 'Stan' through
+    'cmdstanr' or 'rstan'. Methods are described in Welton et al. (2009)
+    <doi:10.1093/aje/kwp014>, Mawdsley et al. (2016) <doi:10.1002/psp4.12091>,
+    Wicha et al. (2017) <doi:10.1038/s41467-017-01929-y>, and Pedder et al.
+    (2019) <doi:10.1002/jrsm.1351>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: posterior, stats, graphics, grDevices, utils
+Suggests: cmdstanr, rstan, testthat (>= 3.0.0), knitr, rmarkdown, loo
+Additional_repositories: https://stan-dev.r-universe.dev
+SystemRequirements: A working Stan backend through cmdstanr/CmdStan or
+        rstan.
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-10 12:39:43 UTC; tyler-pitre
+Author: Tyler Pitre [aut, cre]
+Maintainer: Tyler Pitre <pitretmed@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-22 08:30:21 UTC

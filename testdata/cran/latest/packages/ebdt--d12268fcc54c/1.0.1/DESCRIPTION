@@ -1,0 +1,39 @@
+Package: ebdt
+Type: Package
+Title: Evaluation of Binary Diagnostic Test
+Version: 1.0.1
+Authors@R: c(
+	person(given = "Miguel Ángel", 
+		family = "Montero-Alonso", 
+    	   	role = c("aut", "cre"), 
+	   	email = "mmontero@ugr.es", 
+	   	comment = c(ORCID = "0000-0002-1214-9035")),
+    	person(given = "Juan de Dios", 
+		family = "Luna del Castillo", 
+    	   	role = c("aut"), 
+	   	email = "jdluna@ugr.es", 
+	   	comment = c(ORCID = "0000-0002-1854-4968")))
+Description: Calculate the point estimator and its confidence interval for 
+	the quality parameters of a binary diagnostic test, such as sensitivity, 
+	specificity, positive and negative predictive value, positive and 
+	negative likelihood ratio, weighted Kappa coefficient, a global diagnostic 
+	accuracy index, prevalence in a cross-sectional study, and sensitivity, 
+	specificity, positive and negative likelihood ratio, and a global diagnostic 
+	accuracy index in a retrospective study.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+URL: https://github.com/migmontal/ebdt,
+        https://migmontal.github.io/ebdt/
+Imports: stats
+Suggests: knitr, readxl, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-20 12:38:04 UTC; Montero
+Author: Miguel Ángel Montero-Alonso [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1214-9035>),
+  Juan de Dios Luna del Castillo [aut] (ORCID:
+    <https://orcid.org/0000-0002-1854-4968>)
+Maintainer: Miguel Ángel Montero-Alonso <mmontero@ugr.es>
+Repository: CRAN
+Date/Publication: 2026-08-24 13:40:14 UTC

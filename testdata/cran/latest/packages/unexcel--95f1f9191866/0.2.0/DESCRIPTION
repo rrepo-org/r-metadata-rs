@@ -1,0 +1,38 @@
+Package: unexcel
+Title: Revert Spreadsheet Date Auto-Conversion to the Numbers Typed
+Version: 0.2.0
+Authors@R: c(
+    person(given = "Hercules R.",
+           family = "Freitas",
+           role = c("aut", "cre", "cph"),
+           email = "hercules.freitas@uerj.br",
+           comment = c(ORCID = "0000-0003-1584-9157")))
+Description: Spreadsheets silently turn entries such as '30.3' into dates, so
+    the imported data carry date serials instead of the numbers that were
+    typed. Reading the workbook directly recovers those numbers without
+    guesswork: an 'xlsx' file states its own date system, and records which
+    cells are formatted as dates and in which field order, so the values to
+    repair are identified from the file rather than inferred from their
+    magnitude. Functions are also provided for data already imported, where
+    that evidence is no longer available, using conservative and configurable
+    detection.
+License: MIT + file LICENSE
+URL: https://github.com/drhrf/unexcel, https://drhrf.github.io/unexcel/
+BugReports: https://github.com/drhrf/unexcel/issues
+Depends: R (>= 3.6)
+Imports: stats, utils, xml2 (>= 1.3.0)
+Suggests: knitr (>= 1.40), pkgdown (>= 2.0.0), rmarkdown (>= 2.20),
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 17:41:28 UTC; freitashr
+Author: Hercules R. Freitas [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-1584-9157>)
+Maintainer: Hercules R. Freitas <hercules.freitas@uerj.br>
+Repository: CRAN
+Date/Publication: 2026-07-28 15:30:02 UTC

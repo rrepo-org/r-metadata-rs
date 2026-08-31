@@ -1,0 +1,49 @@
+Package: TextAnalysisR
+Title: A Text Mining Workflow Tool
+Version: 0.1.4
+Authors@R: 
+    person("Mikyung", "Shin", , "shin.mikyung@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7907-9193"))
+Description: Provides a text mining and natural language processing
+    workflow for documents. Includes preprocessing
+    via 'quanteda', lexical analysis (term frequency-inverse document
+    frequency, log-odds ratios, lexical diversity) via 'tidytext',
+    topic modeling via 'stm' and the 'BERTopic' approach, semantic
+    similarity and document clustering on transformer representations,
+    an interactive 'Shiny' interface with 'ggplot2' visualization,
+    optional 'spaCy' preprocessing, and local 'sentence-transformers'
+    or web-based ('OpenAI', 'Gemini') model
+    providers for retrieval-augmented generation, as described in
+    Shin et al. (2026) <doi:10.1177/07319487251412879>.
+License: GPL (>= 3)
+Language: en-US
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Imports: dplyr, DT, ggplot2, htmltools, htmlwidgets, igraph, magrittr,
+        Matrix, methods, quanteda, quanteda.textstats, RColorBrewer,
+        rlang, scales, shiny, tibble, tidyr, tidytext, widyr, withr
+Suggests: aricode, tidylo, broom, patchwork, cluster, clusterCrit,
+        colourpicker, covr, dbscan, digest, httr, jsonlite, knitr,
+        markdown, MASS, moments, numform, officer, openxlsx, pdftools,
+        progress, proxy, pscl, purrr, readxl, reticulate (>= 1.28),
+        rmarkdown, roxygen2, Rtsne, shinyBS, shinybusy, shinyjs,
+        spelling, stm, stopwords, stringr, syuzhet, testthat (>=
+        3.0.0), textdata, umap, plotly
+Depends: R (>= 4.0)
+SystemRequirements: Python (>= 3.8) with spaCy (>= 3.5) for
+        lemmatization and sentence-transformers (>= 2.2) for embeddings
+        (optional)
+URL: https://mshin77.github.io/TextAnalysisR/,
+        https://github.com/mshin77/TextAnalysisR
+BugReports: https://github.com/mshin77/TextAnalysisR/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-17 17:44:05 UTC; shinm
+Author: Mikyung Shin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7907-9193>)
+Maintainer: Mikyung Shin <shin.mikyung@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-27 14:40:13 UTC

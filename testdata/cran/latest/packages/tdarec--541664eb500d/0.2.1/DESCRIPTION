@@ -1,0 +1,36 @@
+Package: tdarec
+Title: A 'recipes' Extension for Persistent Homology and Its
+        Vectorizations
+Version: 0.2.1
+Authors@R: 
+    person("Jason Cory", "Brunson", , "cornelioid@gmail.com", role = c("cre", "aut"))
+Description: Topological data analytic methods in machine learning rely on
+    vectorizations of the persistence diagrams that encode persistent
+    homology, as surveyed by Ali &al (2000)
+    <doi:10.48550/arXiv.2212.09703>.  Persistent homology can be computed
+    using 'TDA' and 'ripserr' and vectorized using 'TDAvec'.  The
+    Tidymodels package collection modularizes machine learning in R for
+    straightforward extensibility; see Kuhn & Silge (2022,
+    ISBN:978-1-4920-9644-3).  These 'recipe' steps and 'dials' tuners make
+    efficient algorithms for computing and vectorizing persistence
+    diagrams available for Tidymodels workflows.
+License: GPL (>= 3)
+URL: https://github.com/tdaverse/tdarec
+BugReports: https://github.com/tdaverse/tdarec/issues
+Depends: R (>= 3.5.0), recipes (>= 0.1.17), dials
+Imports: rlang (>= 1.1.0), vctrs (>= 0.5.0), scales, tibble, purrr (>=
+        1.0.0), tidyr, magrittr
+Suggests: cli, ripserr (>= 0.1.1), TDA, TDAvec (>= 0.1.4), testthat (>=
+        3.0.0), modeldata, tdaunif, knitr (>= 1.20), rmarkdown (>=
+        1.10), tidymodels, ranger
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-04-10 17:57:31 UTC; jason.brunson
+Author: Jason Cory Brunson [cre, aut]
+Maintainer: Jason Cory Brunson <cornelioid@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-10 18:20:02 UTC

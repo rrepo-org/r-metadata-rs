@@ -1,0 +1,26 @@
+Package: outlierspinner
+Title: Geometric Multivariate Outlier Detection via Random Directional
+        Probing
+Version: 0.1.0
+Authors@R: person("Polychronis", "Economou", , "peconom@upatras.gr", role = c("aut", "cre"))
+Description: Provides tools for multivariate outlier detection based on
+    geometric properties of multivariate data using random directional
+    projections. Observation-level outlier scores are computed by jointly
+    probing radial magnitude and angular alignment through repeated
+    projections onto random directions, with optional robust centering and
+    covariance adjustment. In addition to global outlier scoring, the method
+    produces dimension-level contribution measures to support interpretation
+    of detected anomalies. Visualization utilities are included to summarize
+    directional contributions for extreme observations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: ggplot2, MASS, tidyr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-06 08:09:39 UTC; peconom
+Author: Polychronis Economou [aut, cre]
+Maintainer: Polychronis Economou <peconom@upatras.gr>
+Repository: CRAN
+Date/Publication: 2026-01-08 18:50:07 UTC

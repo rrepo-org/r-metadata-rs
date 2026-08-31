@@ -1,0 +1,61 @@
+Package: GammaFrailty
+Type: Package
+Title: Gamma Frailty Regression Models with Multiple Baseline
+        Distributions
+Version: 0.1.0
+Authors@R: person("Shikhar", "Tyagi",
+    email = "shikhar1093tyagi@gmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-1606-0844"))
+Description: Implements univariate gamma frailty regression models for
+    survival data with six different baseline distributions: the Arvind
+    distribution (Pandey et al., 2024), the Lindley distribution
+    (Lindley, 1958), the Linear Failure Rate distribution (Bain, 1974),
+    the Power Xgamma distribution (Tyagi et al., 2022), the Modified
+    Topp-Leone distribution (Singh et al., 2025), and the Power Failure
+    Rate distribution (Mugdadi, 2005). The package supports uncensored
+    (complete) and censored data (right, left, interval, and progressive
+    censoring) with and without covariates. It provides maximum likelihood
+    estimation, standard errors, confidence intervals, t-statistics,
+    p-values, Akaike Information Criterion (AIC), Bayesian Information
+    Criterion (BIC), a bootstrap approximation of the Widely Applicable
+    Information Criterion (WAIC), k-fold cross-validation, variance
+    inflation factors, R-squared, adjusted R-squared, Mean Squared Error
+    (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), an
+    overall model F-test, frailty variance estimation, survival
+    probabilities at user-specified time points, median survival, expected
+    survival within a fixed window, risk predictions, marginal
+    predictions, martingale and deviance residuals, standardized and
+    studentized residuals, leverage values, Cook's distance, Difference
+    in Fits (DFFITS), Difference in Betas (DFBETAS), and a comprehensive
+    suite of diagnostic and survival plots including Kaplan-Meier overlays
+    and coefficient forest plots. Random number generation is available
+    for each baseline distribution and the full frailty model, and a
+    simulation study function evaluates parameter recovery across sample
+    sizes and censoring scenarios.
+    References are Lindley (1958) <doi:10.1111/j.2517-6161.1958.tb00278.x>,
+    Mugdadi (2005) <doi:10.1016/j.amc.2004.09.064>,
+    Bain (1974) <doi:10.1080/00401706.1974.10489237>,
+    Singh, Tyagi, Singh, and Tyagi (2025)
+    <https://ph02.tci-thaijo.org/index.php/thaistat/article/view/257215>,
+    Pandey, Singh, Tyagi, and Tyagi (2024)
+    <https://ssca.org.in/journal.html>, and
+    Tyagi, Kumar, Pandey, Saha, and Bagariya (2022)
+    <https://ijsreg.com/>.
+License: GPL-3
+Depends: R (>= 4.0.0)
+Imports: survival, maxLik, numDeriv, MASS, stats, graphics, grDevices,
+        utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-11 18:44:25 UTC; 30017827
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>)
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-18 17:00:02 UTC

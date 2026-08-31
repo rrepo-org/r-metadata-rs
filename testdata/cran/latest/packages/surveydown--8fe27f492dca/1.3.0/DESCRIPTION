@@ -1,0 +1,54 @@
+Package: surveydown
+Title: Markdown-Based Programmable Surveys Using 'Quarto' and 'shiny'
+Version: 1.3.0
+Authors@R: c(
+    person("John Paul", "Helveston", , "john.helveston@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-2657-9191")),
+    person("Pingfan", "Hu", , "pingfan0727@gmail.com", role = c("aut", "cph"),
+           comment = c(ORCID = "0009-0001-4877-4844")),
+    person("Bogdan", "Bunea", , "buneabt@yahoo.com", role = c("aut", "cph"),
+           comment = c(ORCID = "0009-0006-2942-0588")),
+    person("Stefan", "Munnes", , "stefan.munnes@wzb.eu", role = "ctb"), 
+    person("Reed", "Benkendorf", , , role = "ctb", comment = c(ORCID = "0000-0001-9178-3087")), 
+    person("Umair", "Durrani", , "umairdurrani@outlook.com", role = "ctb"), 
+    person("Dylan", "Pieper", , "dylanpieper@gmail.com", role = "ctb")
+  )
+Description: Generate programmable surveys using markdown and R code chunks. Surveys
+    are composed of two files: a survey.qmd 'Quarto' file defining the
+    survey content (pages, questions, etc), and an app.R file defining a
+    'shiny' app with global settings (libraries, database configuration,
+    etc.) and server configuration options (e.g., conditional skipping /
+    display, etc.). Survey data collected from respondents is stored in a
+    'PostgreSQL' database. Features include controls for conditional skip
+    logic (skip to a page based on an answer to a question), conditional
+    display logic (display a question based on an answer to a question), a
+    customizable progress bar, and a wide variety of question types,
+    including multiple choice (single choice and multiple choices),
+    select, text, numeric, multiple choice buttons, text area, and dates.
+    Because the surveys render into a 'shiny' app, designers can also
+    leverage the reactive capabilities of 'shiny' to create dynamic and
+    interactive surveys.
+License: MIT + file LICENSE
+URL: https://pkg.surveydown.org
+BugReports: https://github.com/surveydown-dev/surveydown/issues
+Depends: R (>= 4.1.0)
+Imports: cli, DBI, dotenv, fs, htmltools, jsonlite, markdown, miniUI,
+        pool, quarto, rmarkdown, RPostgres, rstudioapi, rvest, shiny,
+        shinyjs, shinyWidgets, utils, xml2, yaml
+Suggests: glue, knitr, leaflet, testthat
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-23 00:12:02 UTC; jhelvy
+Author: John Paul Helveston [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-2657-9191>),
+  Pingfan Hu [aut, cph] (ORCID: <https://orcid.org/0009-0001-4877-4844>),
+  Bogdan Bunea [aut, cph] (ORCID:
+    <https://orcid.org/0009-0006-2942-0588>),
+  Stefan Munnes [ctb],
+  Reed Benkendorf [ctb] (ORCID: <https://orcid.org/0000-0001-9178-3087>),
+  Umair Durrani [ctb],
+  Dylan Pieper [ctb]
+Maintainer: John Paul Helveston <john.helveston@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-23 05:10:14 UTC

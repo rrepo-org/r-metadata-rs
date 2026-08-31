@@ -1,0 +1,33 @@
+Package: baskwrap
+Title: Wrapper Package for Several Basket Trial R Packages
+Version: 1.0.3
+Authors@R: 
+    person("Lukas D", "Sauer", , "sauer@imbi.uni-heidelberg.de",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0002-1340-9994"))
+Description: A simple interface to switch between 
+    two methods for calculating basket trial characteristics, numerical 
+    integration ("exact") and Monte Carlo simulation ("simulated") for the
+    basket trial design by 
+    Fujikawa et al. 2020 <doi:10.1002/bimj.201800404>. 
+    The exact implementation is from the 'baskexact' package, see
+    Baumann (2024) <doi:10.1016/j.softx.2024.101793>. The simulated 
+    implementation is from the 'basksim' package, which was developed for
+    Baumann et al. (2024) <doi:10.1080/19466315.2024.2402275>. The package's 
+    syntax is compatible with the 'basksim' syntax and easily extendable.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: basksim (>= 0.1.0), baskexact
+URL: https://github.com/LukasDSauer/baskwrap
+BugReports: https://github.com/LukasDSauer/baskwrap/issues
+Suggests: testthat (>= 3.0.0), here, reticulate, ggplot2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-13 10:22:08 UTC; Lukas
+Author: Lukas D Sauer [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1340-9994>)
+Maintainer: Lukas D Sauer <sauer@imbi.uni-heidelberg.de>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-03-19 13:20:12 UTC

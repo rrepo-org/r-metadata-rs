@@ -1,0 +1,36 @@
+Package: mrangr
+Title: Mechanistic Metacommunity Simulator
+Version: 1.0.2
+Authors@R: c(
+    person("Katarzyna", "Markowska", , "katarzyna.markowska@amu.edu.pl", role = c("aut", "cre", "cph")),
+    person("Lechosław", "Kuczyński", , "lechu@amu.edu.pl", role = c("aut", "cph"))
+  )
+Description: A forward simulator for generating synthetic metacommunity data.
+    As an in silico experimental platform, it enables researchers to simulate
+    community shifts, test theoretical frameworks, and benchmark analytical
+    algorithms prior to empirical application. Key capabilities include
+    mechanistic simulations driven by demography, dispersal, and
+    interactions, GIS interoperability via the 'terra' package for dynamic
+    environments, and a virtual ecologist module that simulates imperfect
+    detection and survey errors to mimic real-world biodiversity data.
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: assertthat, FieldSimR, graphics, grDevices, gstat, methods,
+        mgcv, parallel, rangr, RColorBrewer, stats, terra, utils
+Suggests: bookdown, knitr, rmarkdown, testthat (>= 3.0.0), tools
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+URL: https://popecol.github.io/mrangr/,
+        https://github.com/popecol/mrangr,
+        https://cran.r-project.org/package=mrangr
+BugReports: https://github.com/popecol/mrangr/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-24 15:45:41 UTC; katar
+Author: Katarzyna Markowska [aut, cre, cph],
+  Lechosław Kuczyński [aut, cph]
+Maintainer: Katarzyna Markowska <katarzyna.markowska@amu.edu.pl>
+Repository: CRAN
+Date/Publication: 2026-08-24 18:40:34 UTC

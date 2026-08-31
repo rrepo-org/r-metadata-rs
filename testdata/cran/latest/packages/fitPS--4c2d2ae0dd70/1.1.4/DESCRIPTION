@@ -1,0 +1,34 @@
+Package: fitPS
+Type: Package
+Title: Fit Probability Models to Forensic Survey Data
+Version: 1.1.4
+Authors@R: 
+    person("James", "Curran", , "j.curran@auckland.ac.nz", role = c("aut", "cre"))
+Description: Fits probability models to P- and S-type count data arising
+    from forensic surveys of clothing for the background presence of glass,
+    paint, and related trace material. Built-in models include zeta,
+    zero-inflated zeta, and logarithmic distributions, with a public extension
+    interface for additional models. Inference is available by maximum
+    likelihood, parametric Bayesian methods, the ordinary nonparametric
+    bootstrap, and Rubin's Bayesian Bootstrap. The clothing-survey setting is
+    described by Coulson, Buckleton, Gummer, and Triggs (2001)
+    <doi:10.1016/S1355-0306(01)71847-3>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: cubature, doParallel, dplyr, foreach, Hmisc, iterators, knitr,
+        ks, methods, pbapply, Rdpack, readxl, VGAM
+RdMacros: Rdpack
+URL: https://github.com/jmcurran/fitPS
+BugReports: https://github.com/jmcurran/fitPS/issues
+Suggests: rmarkdown, sp, testthat (>= 3.0.0), xtable
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-27 02:00:04 UTC; jcur002
+Author: James Curran [aut, cre]
+Maintainer: James Curran <j.curran@auckland.ac.nz>
+Repository: CRAN
+Date/Publication: 2026-08-27 03:10:02 UTC

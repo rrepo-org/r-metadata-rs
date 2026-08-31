@@ -1,0 +1,20 @@
+Package: AGBQR
+Type: Package
+Title: Adaptive Generalized Bayesian Quantile Regression
+Version: 0.1.0
+Date: 2026-06-16
+Authors@R: person(given = "Khder",
+                  family = "Alakkari",
+                  email = "khderalakkari1990@gmail.com",
+                  role = c("aut", "cre"))
+Description: Implements adaptive generalized Bayesian quantile regression with quantile-specific learning rates, HAC-based calibration, Gibbs posterior simulation, posterior summaries, predictive evaluation, and visualization tools. The package builds on the generalized Bayesian composite quantile regression framework of Hardy and Korobilis (2026) <doi:10.2139/ssrn.6618603> by allowing learning rates to vary across quantile levels. The implementation is designed for empirical work with small and moderate time-series samples where posterior calibration and tail-specific inference are important.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: quantreg, MASS, stats
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2026-06-16 14:02:46 UTC; khder
+Author: Khder Alakkari [aut, cre]
+Maintainer: Khder Alakkari <khderalakkari1990@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-22 15:00:38 UTC

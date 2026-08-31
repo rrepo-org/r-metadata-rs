@@ -1,0 +1,36 @@
+Package: spqrp
+Title: Sample Provenance Quality Resolver in Proteomics
+Version: 0.1.0
+Authors@R: c(
+    person("Franziska", "Hradilak",
+           email = "Franziska.Hradilak@student.hpi.uni-potsdam.de",
+           role = c("aut", "cre")))
+Description: Detect sample-provenance inconsistencies and potential mix-ups in mass-spectrometry-based
+    plasma-proteome cohorts. Provides a clustering-based approach (build a
+    nearest-neighbour graph in a dimensionality-reduced space and iteratively
+    split large components by edge weight), a threshold-based approach
+    (classify sample pairs as belonging or not-belonging from a pairwise
+    distance cutoff), parameter optimization over distance metrics and
+    cutoffs, and a pairwise random-forest classifier for protein importance
+    ranking. This is a native R port of the author's Python package
+    'spqrp' (<https://github.com/fhradilak/spqrp>), implementing methods from an associated manuscript currently in preparation.
+License: GPL-3
+URL: https://github.com/fhradilak/spqrp_r
+BugReports: https://github.com/fhradilak/spqrp_r/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.5.0)
+Imports: cli, dplyr (>= 1.1.0), ggplot2 (>= 3.5.0), igraph (>= 2.0.0),
+        lgr, pROC, randomForest, ranger (>= 0.16.0), rlang, solitude
+        (>= 1.1.3), stats, tibble, tidyr (>= 1.3.0), utils, withr
+Suggests: knitr, plotly (>= 4.10.0), recipes, rmarkdown, smacof,
+        testthat (>= 3.0.0), themis, uwot (>= 0.2.0), vdiffr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-09 14:02:19 UTC; franziska
+Author: Franziska Hradilak [aut, cre]
+Maintainer: Franziska Hradilak <Franziska.Hradilak@student.hpi.uni-potsdam.de>
+Repository: CRAN
+Date/Publication: 2026-06-17 13:20:02 UTC

@@ -1,0 +1,50 @@
+Package: ucminfcpp
+Type: Package
+Title: 'C++' Reimplementation of the 'ucminf' Unconstrained Nonlinear
+        Optimizer
+Version: 1.0.0
+Authors@R: c(
+    person("Angel Luis", "Robles Fernández", 
+           role = c("aut", "cre"),
+           email = "a.l.robles.fernandez@gmail.com"),
+    person("Hans Bruun", "Nielsen",
+           role = "cph",
+           comment = "Original 'UCMINF' algorithm ('Fortran')"),
+    person("Rex", "Brown",
+           role = "ctb",
+           comment = "Contributor to original R package 'ucminf'"),
+    person("K Hervé", "Dakpo", email = "k-herve.dakpo@inrae.fr", 
+           role = c("ctb"),
+           comment = "Contributor to original R package 'ucminf'"))
+Description: 
+    A modern 'C++17/ reimplementation of the 'UCMINF/ algorithm for
+    unconstrained nonlinear optimization (Nielsen and Mortensen, 2011,
+    <doi:10.32614/CRAN.package.ucminf>), offering full API compatibility with
+    the original 'ucminf' R package but developed independently. The optimizer
+    core has been rewritten in 'C' with a modern header-only 'C++17' interface,
+    zero-allocation line search, and an 'Rcpp' interface. The goal is numerical
+    equivalence with improved performance, reproducibility, and extensibility.
+    Includes extensive test coverage, performance regression tests, and
+    compatibility checks against 'ucminf'. This package is not affiliated with
+    the original maintainers but acknowledges their authorship of the algorithm
+    and the original R interface.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Rcpp
+LinkingTo: Rcpp (>= 1.1.0)
+Suggests: testthat (>= 3.0.0), ucminf, microbenchmark
+Config/testthat/edition: 3
+URL: https://github.com/alrobles/ucminfcpp,
+        https://alrobles.github.io/ucminfcpp/
+BugReports: https://github.com/alrobles/ucminfcpp/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-04-22 02:53:28 UTC; alrob
+Author: Angel Luis Robles Fernández [aut, cre],
+  Hans Bruun Nielsen [cph] (Original 'UCMINF' algorithm ('Fortran')),
+  Rex Brown [ctb] (Contributor to original R package 'ucminf'),
+  K Hervé Dakpo [ctb] (Contributor to original R package 'ucminf')
+Maintainer: Angel Luis Robles Fernández <a.l.robles.fernandez@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-22 09:00:02 UTC

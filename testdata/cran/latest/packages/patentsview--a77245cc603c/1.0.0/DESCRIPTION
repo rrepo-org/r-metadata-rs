@@ -1,0 +1,33 @@
+Package: patentsview
+Type: Package
+Title: An R Client to the 'PatentsView' API
+Version: 1.0.0
+Authors@R: c(
+      person("Christopher", "Baker", email = "chriscrewbaker@gmail.com", 
+        role = c("aut", "cre")),
+      person("Russ", "Allen", email = "rrjallen@yahoo.com", role = "aut")
+    )
+Encoding: UTF-8
+Description: Provides functions to simplify the 'PatentsView' API
+    (<https://search.patentsview.org/docs/docs/Search%20API/SearchAPIReference/#api-query-language>) query language,
+    send GET and POST requests to the API's twenty seven endpoints, and parse the data
+    that comes back.
+URL: https://docs.ropensci.org/patentsview/index.html
+BugReports: https://github.com/ropensci/patentsview/issues
+License: MIT + file LICENSE
+LazyData: TRUE
+Depends: R (>= 4.1.0)
+Imports: httr2, lifecycle, jsonlite, utils, stats
+Suggests: dplyr, knitr, rmarkdown, testthat (>= 3.0.0), tidyr, vcr (>=
+        1.6.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Config/Needs/website: visNetwork, igraph, highcharter, dplyr, DT,
+        magrittr, stringr
+NeedsCompilation: no
+Packaged: 2026-02-26 13:47:29 UTC; rrjal
+Author: Christopher Baker [aut, cre],
+  Russ Allen [aut]
+Maintainer: Christopher Baker <chriscrewbaker@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-26 17:00:03 UTC

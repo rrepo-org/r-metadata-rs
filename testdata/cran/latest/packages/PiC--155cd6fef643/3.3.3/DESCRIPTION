@@ -1,0 +1,72 @@
+Package: PiC
+Type: Package
+Title: Interactive Processing and Segmentation of Forest TLS
+        Point-Cloud Data
+Version: 3.3.3
+Authors@R: c(
+    person(
+        given  = "Roberto",
+        family = "Ferrara",
+        email  = "roberto.ferrara@cnr.it",
+        role   = c("aut", "cre"),
+        comment = c(ORCID = "0009-0000-3627-6867")
+    ),
+    person(
+        given  = "Stefano",
+        family = "Arrizza",
+        email  = "stefano.arrizza@cnr.it",
+        role   = "ctb",
+        comment = c(ORCID = "0009-0009-2290-3650")
+    ),
+    person(
+        given  = "Nikolai",
+        family = "Chernov",
+        role   = "cph",
+        comment = "Author of the original circle-fitting algorithms and code"
+    ),
+    person(
+        given  = "Jose",
+        family = "Gama",
+        role   = "ctb",
+        comment = "Author of the R implementation of the circle-fitting code in the 'conicfit' package"
+    ))
+Description: Tools for the processing, segmentation, and analysis of terrestrial laser 
+    scanning (TLS and MLS) forest point-cloud data. The package provides fast 
+    voxel-based processing, classification of point clouds into forest 
+    floor, understory, canopy, and woody components, and algorithms for 
+    single-tree analysis and structural characterization. Methods are designed 
+    to handle large and dense point-cloud datasets efficiently, supporting 
+    applications in forest structure assessment, connectivity analysis, and
+    fire-risk evaluation. Input data are provided as '.xyz', '.txt', '.las', or '.laz' point-cloud files.
+    The circle-fitting routines used for diameter estimation are adapted, in
+    base R, from the 'conicfit' package (GPL-3) by Jose Gama, based on the
+    original algorithms and code by Nikolai Chernov.
+    For methodological details, see Ferrara and Arrizza (2025)
+    <https://hdl.handle.net/20.500.14243/533471> and Ferrara et al. (2018) 
+    <doi:10.1016/j.agrformet.2018.04.008>.
+License: GPL (>= 3)
+Depends: R (>= 4.3)
+Imports: collapse, data.table, dbscan, dplyr, magrittr, RANN, stats,
+        tictoc, terra, tools, utils
+Suggests: DT, fs, ggplot2, lidR, grid, gridExtra, later, plotly, shiny,
+        shinycssloaders, shinydashboard, shinydashboardPlus,
+        shinyFeedback, shinyFiles, shinyjs, shinythemes, scales,
+        shinyWidgets, testthat (>= 3.0.0), tidyr, viridis, withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/rupppy/PiC
+BugReports: https://github.com/rupppy/PiC/issues
+Additional_repositories: https://r-lidar.r-universe.dev
+NeedsCompilation: no
+Packaged: 2026-07-29 08:32:04 UTC; robertoferrara
+Author: Roberto Ferrara [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-3627-6867>),
+  Stefano Arrizza [ctb] (ORCID: <https://orcid.org/0009-0009-2290-3650>),
+  Nikolai Chernov [cph] (Author of the original circle-fitting algorithms
+    and code),
+  Jose Gama [ctb] (Author of the R implementation of the circle-fitting
+    code in the 'conicfit' package)
+Maintainer: Roberto Ferrara <roberto.ferrara@cnr.it>
+Repository: CRAN
+Date/Publication: 2026-07-29 13:40:09 UTC

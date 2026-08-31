@@ -1,0 +1,26 @@
+Package: tinycache
+Type: Package
+Title: Cache Objects in Disk or Memory
+Version: 0.1
+Authors@R: person("Mauricio", "Vargas Sepulveda", , "m.vargas.sepulveda@gmail.com", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-1017-7574"))
+Suggests: tinytest
+Imports: utils
+Depends: R(>= 4.0.0)
+Description: Reuse objects with a long processing time either by storing those in disk
+    or memory. Uses caching to identify R objects (e.g., data frames, plots, etc.) and allows
+    repeated access to those. Created with the specific goal of skipping the waiting time for
+    summary tables obtained from large 'SQL' tables. It is extensible to other uses, such as
+    caching plots in 'Tabler' dashboards to reduce waiting times.
+License: Apache License 2.0
+BugReports: https://github.com/pachadotdev/tinycache/issues
+URL: https://pacha.dev/tinycache/
+Encoding: UTF-8
+NeedsCompilation: yes
+LinkingTo: cpp4r
+Packaged: 2026-07-29 19:28:54 UTC; pacha
+Author: Mauricio Vargas Sepulveda [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1017-7574>)
+Maintainer: Mauricio Vargas Sepulveda <m.vargas.sepulveda@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 16:50:02 UTC

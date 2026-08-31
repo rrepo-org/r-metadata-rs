@@ -1,0 +1,49 @@
+Package: quickPlot
+Type: Package
+Title: A System of Plotting Optimized for Speed and Modularity
+Description: A high-level plotting system, compatible with `ggplot2` objects, 
+    maps from `sf`, `terra`, `raster`, `sp`. It is built primarily on the 
+    'grid' package. The objective of the package is to provide a plotting system 
+    that is built for speed and modularity. This is useful for quick visualizations 
+    when testing code and for plotting multiple figures to the same device from 
+    independent sources that may be independent of one another (i.e., different 
+    function or modules the create the visualizations).
+URL: https://quickplot.predictiveecology.org,
+        https://github.com/PredictiveEcology/quickPlot
+Version: 1.0.4
+Date: 2025-07-14
+Authors@R: c(
+    person("Eliot J B", "McIntire", email = "eliot.mcintire@canada.ca",
+           role = c("aut", "cre"), comment=c(ORCID = "https://orcid.org/0000-0002-6914-8316")),
+    person("Alex M", "Chubaty", email = "achubaty@for-cast.ca",
+           role = "aut", comment = c(ORCID = "https://orcid.org/0000-0001-7146-8135")),
+    person("His Majesty the King in Right of Canada, as represented by the Minister of Natural Resources Canada",
+           role = "cph")
+    )
+Depends: R (>= 4.3)
+Imports: data.table, fpCompare, ggplot2, grDevices, grid, methods,
+        stats, terra, utils
+Suggests: covr, knitr, raster, RColorBrewer, rmarkdown, sf, sp,
+        testthat (>= 1.0.2), withr
+Encoding: UTF-8
+Language: en-CA
+License: GPL-3
+VignetteBuilder: knitr, rmarkdown
+BugReports: https://github.com/PredictiveEcology/quickPlot/issues
+ByteCompile: yes
+RoxygenNote: 7.3.2
+Collate: 'environment.R' 'plotting-classes.R' 'plotting-colours.R'
+        'plotting-helpers.R' 'plotting-other.R' 'plotting.R'
+        'quickPlot-classes.R' 'quickPlot-package.R' 'testing-helpers.R'
+        'zzz.R'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-07-14 16:01:23 UTC; emcintir
+Author: Eliot J B McIntire [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6914-8316>),
+  Alex M Chubaty [aut] (ORCID: <https://orcid.org/0000-0001-7146-8135>),
+  His Majesty the King in Right of Canada, as represented by the Minister
+    of Natural Resources Canada [cph]
+Maintainer: Eliot J B McIntire <eliot.mcintire@canada.ca>
+Repository: CRAN
+Date/Publication: 2025-07-14 16:40:06 UTC

@@ -1,0 +1,29 @@
+Package: CepalStatR
+Title: Access to the 'CEPALSTAT API'
+Version: 0.9.0
+Authors@R: c(person("Henry", "Osorto", email = "henry.osorto@unah.edu.hn",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-4334-9179")))
+Description: Explore metadata and retrieve indicators from the statistical portal of the Economic Commission for Latin America and the Caribbean <https://statistics.cepal.org/portal/cepalstat/>.
+        Provides a reproducible interface to access the 'CEPALSTAT API', organize data into tidy formats, and generate both static and interactive visualizations.
+License: MIT + file LICENSE
+URL: https://github.com/Henry-Osorto/CepalStatR,
+        https://henry-osorto.github.io/CepalStatR/
+BugReports: https://github.com/Henry-Osorto/CepalStatR/issues
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: base64enc, dplyr, httr2, htmltools, jsonlite, magrittr,
+        reactable, stringr, tidyselect, rlang, collapsibleTree,
+        gridExtra, htmlwidgets
+Suggests: ggplot2, gt, knitr, rmarkdown, svglite, testthat (>= 3.0.0),
+        vcr, webmockr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-05-05 05:00:20 UTC; henry
+Author: Henry Osorto [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4334-9179>)
+Maintainer: Henry Osorto <henry.osorto@unah.edu.hn>
+Repository: CRAN
+Date/Publication: 2026-05-07 16:43:28 UTC

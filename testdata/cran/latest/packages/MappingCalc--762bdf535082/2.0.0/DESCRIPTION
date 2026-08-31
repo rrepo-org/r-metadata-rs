@@ -1,0 +1,33 @@
+Package: MappingCalc
+Title: Mapping Calculator for EQ-5D Utility Scores
+Version: 2.0.0
+Authors@R: person("Edimansyah", "Abdin",
+    email = "edimansyah.bin.abdin@gmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "https://orcid.org/0000-0002-1016-3298"))
+Description: Provides a 'shiny' web application to map scores from clinical
+    instruments (PANSS, SQLS, WHODAS 2.0, PHQ-8, EQ-5D-5L) to
+    preference-based EQ-5D-5L health utility values using validated
+    regression-based and beta-mixture mapping algorithms developed from
+    Singapore population studies. Intended for use in health economic
+    evaluations and cost-utility analyses.
+    Methods are based on:
+    Abdin et al. (2019) <doi:10.1007/s11136-018-2037-7>,
+    Seow et al. (2023) <doi:10.1080/14737167.2023.2215430>,
+    Abdin et al. (2021) <doi:10.1186/s12888-021-03463-0>,
+    Abdin et al. (2024) <doi:10.1080/14737167.2024.2376100>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: shiny (>= 1.7.0), bslib, ggplot2, readxl, haven, writexl,
+        tibble
+Suggests: DT, testthat (>= 3.0.0), spelling
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2026-03-24 01:01:22 UTC; Edi
+Author: Edimansyah Abdin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1016-3298>)
+Maintainer: Edimansyah Abdin <edimansyah.bin.abdin@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-27 10:20:12 UTC

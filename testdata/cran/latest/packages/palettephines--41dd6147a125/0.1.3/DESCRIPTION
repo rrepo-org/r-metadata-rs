@@ -1,0 +1,40 @@
+Package: palettephines
+Type: Package
+Title: Analytical Color Palettes for Philippine Phenology
+Version: 0.1.3
+Authors@R: 
+    person("NJ", "Talingting", 
+           email = "ninotalingting77@gmail.com", 
+           role = c("aut", "cre"), 
+           comment = c(ORCID = "0009-0003-7245-874X"))
+Description: Provides specialized color palettes representing phenological 
+    transitions and biological lifecycles within Philippine landscapes. 
+    Rather than abstract gradients, these scales are anchored to 
+    topologically grounded states such as agricultural maturity, 
+    seasonal vegetation shifts, and environmental readiness. Palettes 
+    are indexed against the Biologische Bundesanstalt, Bundessortenamt 
+    und CHemische Industrie (BBCH) scale (Meier, 2023) 
+    <https://www.openagrar.de/servlets/MCRFileNodeServlet/openagrar_derivate_00010428/BBCH-Skala_en.pdf> 
+    for terrestrial vegetation and the Reef Health Index (RHI) framework 
+    (McField and Kramer, 2007) <https://www.healthyreefs.org> for marine 
+    ecosystems. This ensures scientific interoperability across 
+    archipelagic spatial models, aligning with global standards for 
+    ecological state-transition modeling (Schwartz, 2013) 
+    <doi:10.1007/978-94-007-6925-0>.
+License: MIT + file LICENSE
+URL: https://github.com/pinasr/palettephines
+BugReports: https://github.com/pinasr/palettephines/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: ggplot2, graphics, grDevices
+Suggests: knitr, rmarkdown, sf, dplyr, sfdep, tidyr, roroph,
+        rnaturalearth, rnaturalearthdata
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-23 04:52:59 UTC; Nino Jay Talingting
+Author: NJ Talingting [aut, cre] (ORCID:
+    <https://orcid.org/0009-0003-7245-874X>)
+Maintainer: NJ Talingting <ninotalingting77@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-24 20:30:02 UTC

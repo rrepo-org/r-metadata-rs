@@ -1,0 +1,50 @@
+Package: artma
+Title: Automatic Replication Tools for Meta-Analysis
+Version: 0.4.1
+Authors@R: 
+    person("Petr", "Čala", , "61505008@fsv.cuni.cz", role = c("aut", "cre"))
+Author: Petr Čala [aut, cre]
+Maintainer: Petr Čala <61505008@fsv.cuni.cz>
+Description: Provides a unified and straightforward interface for
+    performing a variety of meta-analysis methods directly from user data.
+    Users can input a data frame, specify key parameters, and effortlessly
+    execute and compare multiple common meta-analytic models. Designed for
+    immediate usability, the package facilitates transparent, reproducible
+    research without manual implementation of each analytical method.
+    Ideal for researchers aiming for efficiency and reproducibility, it
+    streamlines workflows from data preparation to results interpretation.
+License: GPL-3
+URL: https://github.com/PetrCala/artma,
+        https://petrcala.github.io/artma/
+BugReports: https://github.com/PetrCala/artma/issues
+Depends: R (>= 4.4.0)
+Imports: box (>= 1.2.0), cli (>= 3.6.5), climenu (>= 0.1.7), ggplot2
+        (>= 3.4.0), lifecycle (>= 1.0.4), lmtest (>= 0.9-40), memoise
+        (>= 2.0.1), parallel, Rcpp (>= 1.0.12), rlang (>= 1.1.6),
+        sandwich (>= 3.1-0), withr (>= 3.0.2), yaml (>= 2.3.10)
+LinkingTo: Rcpp
+Suggests: AER (>= 1.2-10), bayesm (>= 3.1-5), BMS (>= 0.3.4), car (>=
+        3.1-0), corrplot (>= 0.92), fdrtool (>= 1.2.17), haven (>=
+        2.5.0), htmlwidgets (>= 1.6.0), jsonlite (>= 1.8.0), knitr (>=
+        1.50), lintr (>= 3.2.0), MAIVE (>= 0.2.4), mice (>= 3.16.0),
+        NlcOptim (>= 0.6), plm (>= 2.6-3), plotly (>= 4.10.0), quadprog
+        (>= 1.5-8), ragg (>= 1.5.0), rddensity (>= 2.5), readxl (>=
+        1.4.0), RhpcBLASctl (>= 0.23-42), rjags (>= 4.15), rmarkdown
+        (>= 2.30), RoBMA (>= 4.0.0), testthat (>= 3.2.3), writexl (>=
+        1.4.0)
+VignetteBuilder: knitr
+Config/Needs/coverage: covr, pkgload, xml2
+Config/Needs/dev: box.linters, devtools, languageserver, remotes
+Config/Needs/e2e: remotes
+Config/Needs/lint: box.linters, devtools, remotes
+Config/Needs/release: devtools, optparse, pkgbuild, remotes
+Config/Needs/website: pkgdown
+Config/testthat/edition: 3
+Config/testthat/parallel: TRUE
+Config/testthat/start-first: github-actions, release
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-19 14:37:50 UTC; runner
+Repository: CRAN
+Date/Publication: 2026-08-20 05:10:02 UTC

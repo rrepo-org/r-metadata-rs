@@ -1,0 +1,34 @@
+Package: balnet
+Title: Pathwise Estimation of Covariate Balancing Propensity Scores
+Version: 0.0.4
+Authors@R: c(
+    person("Erik", "Sverdrup", role = c("aut", "cre"), email = "erik.sverdrup@gmail.com"),
+    person("Trevor", "Hastie", role = "aut"),
+    person("James", "Yang", role = "ctb", comment = "Author of the bundled adelie C++ library.")
+    )
+Description: Provides pathwise estimation of regularized logistic propensity
+    score models using covariate balancing loss functions rather than maximum
+    likelihood. Regularization paths are fit via the 'adelie' elastic-net
+    solver with a 'glmnet'-like interface, yielding balancing weights that target
+    covariate balance for the ATE and ATT. Under lasso penalization, lambda
+    bounds the maximum covariate imbalance, so the regularization path traces a
+    sequence of decreasing imbalance tolerances. For details, see Sverdrup &
+    Hastie (2026) <doi:10.48550/arXiv.2602.18577>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp, RcppEigen
+SystemRequirements: C++17
+Imports: Rcpp, Matrix, methods
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+URL: https://github.com/erikcs/balnet
+BugReports: https://github.com/erikcs/balnet/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-08-23 08:16:08 UTC; erikcs
+Author: Erik Sverdrup [aut, cre],
+  Trevor Hastie [aut],
+  James Yang [ctb] (Author of the bundled adelie C++ library.)
+Maintainer: Erik Sverdrup <erik.sverdrup@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-23 10:10:23 UTC

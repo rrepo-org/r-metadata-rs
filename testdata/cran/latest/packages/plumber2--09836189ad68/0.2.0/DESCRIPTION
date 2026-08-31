@@ -1,0 +1,35 @@
+Package: plumber2
+Title: Easy and Powerful Web Servers
+Version: 0.2.0
+Authors@R: c(
+    person("Thomas Lin", "Pedersen", , "thomas.pedersen@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5147-4711")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: Automatically create a web server from annotated 'R' files or by
+    building it up programmatically. Provides automatic 'OpenAPI' documentation,
+    input handling, asynchronous evaluation, and plugin support.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.2)
+Imports: base64enc, cli, fiery (>= 1.5.0), fireproof, firesafety,
+        firesale, firestorm, fs, jsonlite, promises, R6, ragg, rapidoc,
+        readr, reqres (>= 1.0.0), rlang (>= 1.1.0), routr (>= 2.0.0),
+        roxygen2, stringi, svglite, utils, webutils, yaml
+Suggests: arrow, callr, geojsonsf, htmlwidgets, later, mirai,
+        nanoparquet, quarto, redoc, rmarkdown, shiny, storr, swagger,
+        testthat (>= 3.0.0), tomledit
+VignetteBuilder: quarto
+URL: https://plumber2.posit.co/, https://github.com/posit-dev/plumber2
+BugReports: https://github.com/posit-dev/plumber2/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-20 09:22:13 UTC; thomas
+Author: Thomas Lin Pedersen [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5147-4711>),
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
+Maintainer: Thomas Lin Pedersen <thomas.pedersen@posit.co>
+Repository: CRAN
+Date/Publication: 2026-01-20 10:20:08 UTC

@@ -1,0 +1,47 @@
+Package: mop
+Type: Package
+Title: Mobility Oriented-Parity Metric
+Version: 0.1.4
+Authors@R: c(
+    person("Marlon E.", "Cobos", email = "manubio13@gmail.com", 
+    role = c("aut","cre"), comment = c(ORCID = "0000-0002-2611-1767")),
+    person("Hannah L.", "Owens", email = "hannah.owens@gmail.com", role = "aut",
+    comment = c(ORCID = "0000-0003-0071-1745")),
+    person("Jorge", "Soberón", email = "jsoberon@ku.edu", role = "aut",
+    comment = c(ORCID = "0000-0003-2160-4148")),
+    person("A. Townsend", "Peterson", email = "town@ku.edu", role = "aut",
+    comment = c(ORCID = "0000-0003-0243-2379")))
+Maintainer: Marlon E. Cobos <manubio13@gmail.com>
+Date: 2026-04-16
+Description: A set of tools to perform multiple versions of the Mobility
+    Oriented-Parity metric. This multivariate analysis helps to characterize 
+    levels of dissimilarity between a set of conditions of reference and another
+    set of conditions of interest. If predictive models are transferred to 
+    conditions different from those over which models were calibrated (trained),
+    this metric helps to identify transfer conditions that differ 
+    substantially from those of calibration. These tools are implemented 
+    following principles proposed in Owens et al. (2013) 
+    <doi:10.1016/j.ecolmodel.2013.04.011>, and expanded to obtain more detailed 
+    results that aid in interpretation as in Cobos et al. (2024)
+    <doi:10.21425/fob.17.132916>.
+URL: https://github.com/marlonecobos/mop
+BugReports: https://github.com/marlonecobos/mop/issues
+Imports: doSNOW (>= 1.0), foreach (>= 1.5), methods, parallel, Rcpp,
+        snow (>= 0.4), stats, terra (>= 1.6-7), utils
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+LazyData: true
+LinkingTo: Rcpp (>= 1.0.14)
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2026-04-21 19:16:47 UTC; mec
+Author: Marlon E. Cobos [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2611-1767>),
+  Hannah L. Owens [aut] (ORCID: <https://orcid.org/0000-0003-0071-1745>),
+  Jorge Soberón [aut] (ORCID: <https://orcid.org/0000-0003-2160-4148>),
+  A. Townsend Peterson [aut] (ORCID:
+    <https://orcid.org/0000-0003-0243-2379>)
+Repository: CRAN
+Date/Publication: 2026-04-22 06:20:02 UTC

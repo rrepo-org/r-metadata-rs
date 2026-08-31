@@ -1,0 +1,64 @@
+Type: Package
+Package: raretrans
+Title: Bayesian Priors for Matrix Population Models
+Version: 1.0.5
+Authors@R: 
+    c(person(given = "Raymond",
+             family = "Tremblay",
+             role = c("aut","cre","cph"),
+             email = "raymond.tremblay@upr.edu",
+             comment = c(ORCID = "0000-0002-8588-4372")),
+      person(given = "Andrew",
+             family = "Tyre",
+             role = c("aut","cph"),
+             email = "atyre2@gmail.com",
+             comment = c(ORCID = "0000-0001-9736-641X")),
+      person(given = "Maria-Eglee",
+             family = "Perez",
+             role = "aut",
+             email = "mariaeglee@gmail.com",
+             comment = c(ORCID = "0000-0001-8641-8405")),
+      person(given = "Sasha",
+             family = "Tenhumberg",
+             role = "ctb"))
+Description: Provides functions to correct biased transition and fertility
+    estimates in population projection matrices caused by small sample sizes.
+    Small or short-term studies frequently produce structural zeros
+    (biologically possible transitions never observed) and structural ones
+    (transitions estimated at 100% survival, stasis, or mortality that are
+    biologically implausible). Both distort matrix structure and bias
+    estimates of population growth. Implements a multinomial-Dirichlet
+    Bayesian prior for transition probabilities and a Gamma-Poisson prior
+    for reproduction, allowing analysts to incorporate prior biological
+    knowledge and regularise estimates from rare or unobserved events.
+    Includes functions to compute marginal posterior credible intervals for
+    all transition probabilities (transition_CrI()), visualise those
+    intervals as point-range plots (plot_transition_CrI()), and display
+    the full posterior beta density for each matrix entry
+    (plot_transition_density()). Methods are described in Tremblay et al.
+    (2021) <doi:10.1016/j.ecolmodel.2021.109526>.
+URL: https://atiretoo.github.io/raretrans/,
+        https://github.com/atiretoo/raretrans
+BugReports: https://github.com/atiretoo/raretrans/issues
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: ggplot2, rlang, stats
+Suggests: bslib, dplyr, formatR, gridExtra, huxtable, knitr, popdemo,
+        popbio, purrr, rmarkdown, RColorBrewer, shiny, testthat,
+        tibble, tidyr
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-15 21:34:26 UTC; rlt
+Author: Raymond Tremblay [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8588-4372>),
+  Andrew Tyre [aut, cph] (ORCID: <https://orcid.org/0000-0001-9736-641X>),
+  Maria-Eglee Perez [aut] (ORCID:
+    <https://orcid.org/0000-0001-8641-8405>),
+  Sasha Tenhumberg [ctb]
+Maintainer: Raymond Tremblay <raymond.tremblay@upr.edu>
+Repository: CRAN
+Date/Publication: 2026-05-15 22:30:02 UTC

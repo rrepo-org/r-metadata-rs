@@ -1,0 +1,39 @@
+Package: HQM
+Type: Package
+Title: Superefficient Estimation of Future Conditional Hazards Based on
+        Marker Information
+Version: 2.1
+Authors@R: c(person(given = "Dimitrios",
+           family = "Bagkavos",
+           role = c("aut", "cre"),
+           email = "dimitrios.bagkavos@gmail.com"),
+    person(given = "Alex",
+           family = "Isakson",
+           role =  "ctb"),
+    person(given = "Enno",
+           family = "Mammen",
+           role = "ctb"),
+    person(given = "Jens",
+           family = "Nielsen",
+           role = "ctb"), 
+    person(given = "Cecile",
+           family = "Proust-Lima",
+           role = "ctb") 
+           )
+Maintainer: Dimitrios Bagkavos <dimitrios.bagkavos@gmail.com>
+Description: Provides univariate and indexed (multivariate) nonparametric smoothed kernel estimators for the future conditional hazard rate function when time-dependent covariates are present, a bandwidth selector for the estimator's implementation and pointwise and uniform confidence bands. Methods used in the package refer to Bagkavos, Isakson, Mammen, Nielsen and Proust-Lima (2025)  <doi:10.1093/biomet/asaf008>.
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: stats, utils, survival, pec, nlme, JM
+License: GPL (>= 2)
+NeedsCompilation: no
+RoxygenNote: 6.1.0
+Packaged: 2026-03-26 19:21:53 UTC; bagavosd
+Author: Dimitrios Bagkavos [aut, cre],
+  Alex Isakson [ctb],
+  Enno Mammen [ctb],
+  Jens Nielsen [ctb],
+  Cecile Proust-Lima [ctb]
+Repository: CRAN
+Date/Publication: 2026-03-26 21:10:14 UTC

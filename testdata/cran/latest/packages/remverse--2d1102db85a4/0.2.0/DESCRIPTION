@@ -1,0 +1,73 @@
+Package: remverse
+Title: Comprehensive Tools for Relational Event History Data
+Version: 0.2.0
+Authors@R: 
+    c(
+        person(
+            given = "Joris",
+            family = "Mulder",
+            role = c("aut", "cre"),
+            email = "j.mulder3@tilburguniversity.edu"),
+        person(
+            given = "Giuseppe",
+            family = "Arena",
+            role = c("aut"),
+            email = "g.arena@tilburguniversity.edu"),
+        person(
+            given = "Marlyne",
+            family = "Meijerink-Bosman",
+            role = c("aut"),
+            email = "m.l.meijerink@tilburguniversity.edu"),
+        person(
+            given = "Rumana",
+            family = "Lakdawala",
+            role = c("aut"),
+            email = "r.j.lakdawala@tilburguniversity.edu"),
+        person(
+            given = "Roger",
+            family = "Leenders",
+            role = c("aut"),
+            email = "r.t.a.j.leenders@tilburguniversity.edu"),
+        person(
+            given = "Fabio",
+            family = "Generoso Vieira",
+            role = c("aut"),
+            email = "f.v.generosovieira@tilburguniversity.edu"),
+        person(
+            given = "Mahdi",
+            family = "Shafiee Kamalabad",
+            role = c("aut"),
+            email = "m.shafiee@tilburguniversity.edu"),
+        person(
+            given = "Diana",
+            family = "Karimova",
+            role = c("ctb"),
+            email = "d.karimova@tilburguniversity.edu")
+    )
+Description: A unified interface for relational event history analysis.
+    The package re-exports key functions from 'remify', 'remstats', and 'remstimate' to support a
+    streamlined workflow from data processing to model estimation and diagnosis.
+License: MIT + file LICENSE
+BugReports: https://github.com/TilburgNetworkGroup/remverse/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: remify (>= 4.1.0), remstats (>= 4.1.0), remstimate (>= 3.1.0)
+Depends: R (>= 4.0), remdata (>= 0.2.1)
+Suggests: tinytest, knitr, rmarkdown, survival, coxme, lme4, glmmTMB,
+        glmnet, flexmix, shrinkem (>= 0.4.0)
+LazyData: true
+VignetteBuilder: knitr
+LazyDataCompression: gzip
+NeedsCompilation: no
+Packaged: 2026-07-18 18:09:57 UTC; jorismulder
+Author: Joris Mulder [aut, cre],
+  Giuseppe Arena [aut],
+  Marlyne Meijerink-Bosman [aut],
+  Rumana Lakdawala [aut],
+  Roger Leenders [aut],
+  Fabio Generoso Vieira [aut],
+  Mahdi Shafiee Kamalabad [aut],
+  Diana Karimova [ctb]
+Maintainer: Joris Mulder <j.mulder3@tilburguniversity.edu>
+Repository: CRAN
+Date/Publication: 2026-07-18 18:40:02 UTC

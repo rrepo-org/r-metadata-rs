@@ -1,0 +1,31 @@
+Package: snplist
+Type: Package
+Title: Tools to Create Gene Sets
+Version: 0.18.3
+Date: 2025-04-21
+Authors@R: c(person(given = "Chanhee",
+                    family = "Yi",
+                    role = "aut"),
+             person(given = "Alexander",
+                    family = "Sibley",
+                    role = c("aut", "cre"),
+                    email = "dcibioinformatics@duke.edu"),
+             person(given = "Kouros",
+                    family = "Owzar",
+                    role = "aut"))
+Author: Chanhee Yi [aut],
+  Alexander Sibley [aut, cre],
+  Kouros Owzar [aut]
+Maintainer: Alexander Sibley <dcibioinformatics@duke.edu>
+Description: A set of functions to create SQL tables of gene and SNP information and compose them into a SNP Set, for example to export to a PLINK set.
+License: GPL-3
+Depends: R (>= 3.0.0), RSQLite (>= 1.1)
+Imports: biomaRt (>= 2.16.0), Rcpp (>= 0.10.5), R.utils (>= 1.27.1),
+        DBI (>= 0.3.1), methods (>= 3.6.2)
+Suggests: knitr
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-04-21 17:55:26 UTC; abs33
+Repository: CRAN
+Date/Publication: 2025-04-21 18:40:02 UTC

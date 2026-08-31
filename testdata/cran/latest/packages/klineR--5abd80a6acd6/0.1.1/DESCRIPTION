@@ -1,0 +1,28 @@
+Package: klineR
+Title: Candlestick Pattern Detection and Stock Screening
+Version: 0.1.1
+Authors@R: 
+    person("po", "su", , "1848269440@qq.com", role = c("aut", "cre"))
+Description: Detects classical candlestick patterns and structure-based chart
+    patterns from open, high, low, close, and volume (OHLCV) time series and
+    provides reusable stock-screening workflows. Built-in detectors include
+    single- and multi-candle patterns, trend structures such as double bottoms
+    and ascending triangles, and a configurable "golden pit" recovery setup.
+    Includes a unified API to run pattern scans across one or many symbols.
+    Methods are informed by Nison (2001, ISBN:9780735201811) "Japanese
+    Candlestick Charting Techniques" and Bulkowski (2021,
+    ISBN:9781119739685) "Encyclopedia of Chart Patterns".
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/statlearner123/klineR
+BugReports: https://github.com/statlearner123/klineR/issues
+NeedsCompilation: no
+Packaged: 2026-05-20 14:53:18 UTC; supo
+Author: po su [aut, cre]
+Maintainer: po su <1848269440@qq.com>
+Repository: CRAN
+Date/Publication: 2026-05-27 19:50:16 UTC

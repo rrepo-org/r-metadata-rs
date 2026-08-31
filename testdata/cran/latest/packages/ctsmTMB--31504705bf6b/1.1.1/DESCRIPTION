@@ -1,0 +1,52 @@
+Type: Package
+Package: ctsmTMB
+Title: Continuous Time Stochastic Modelling using Template Model
+        Builder
+Version: 1.1.1
+Date: 2026-07-12
+Authors@R: c(
+    person("Phillip", "Vetter", , "pbrve@dtu.dk", role = c("aut", "cre", "cph")),
+    person("Jan", "Møller", , "jkmo@dtu.dk", role = "ctb"),
+    person("Uffe", "Thygesen", , "uhth@dtu.dk", role = "ctb"),
+    person("Peder", "Bacher", , "pbac@dtu.dk", role = "ctb"),
+    person("Henrik", "Madsen", , "hmad@dtu.dk", role = "ctb")
+  )
+Description: Perform state and parameter inference, and forecasting, in
+    stochastic state-space systems using the 'ctsmTMB' R6 class. This
+    class provides a user-friendly interface for working with stochastic
+    state space models. Inference is based on maximum likelihood
+    estimation, with derivatives efficiently computed through automatic
+    differentiation enabled by the 'TMB'/'RTMB' packages (Kristensen et
+    al., 2016) <doi:10.18637/jss.v070.i05>. The available inference
+    methods include Kalman filters, in addition to a Laplace
+    approximation-based smoothing method. For further details of these
+    methods refer to the documentation of the 'CTSMR' package
+    <https://ctsm.info/ctsmr-reference.pdf> and Thygesen (2025)
+    <doi:10.48550/arXiv.2503.21358>. Forecasting capabilities include
+    moment predictions and stochastic path simulations implemented in
+    'C++' using 'Rcpp' (Eddelbuettel et al., 2018)
+    <doi:10.1080/00031305.2017.1375990> for computational efficiency.
+License: GPL-3
+URL: https://github.com/phillipbvetter/ctsmTMB
+BugReports: https://github.com/phillipbvetter/ctsmTMB/issues
+Depends: R (>= 4.0.0)
+Imports: Deriv, ggplot2, graphics, grDevices, Matrix, patchwork, R6,
+        Rcpp, rlang, RTMB (>= 1.7), stats, stringr, TMB, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen, zigg
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Copyright: See the file COPYRIGHTS
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-14 20:52:38 UTC; pbrve
+Author: Phillip Vetter [aut, cre, cph],
+  Jan Møller [ctb],
+  Uffe Thygesen [ctb],
+  Peder Bacher [ctb],
+  Henrik Madsen [ctb]
+Maintainer: Phillip Vetter <pbrve@dtu.dk>
+Repository: CRAN
+Date/Publication: 2026-07-14 21:10:09 UTC

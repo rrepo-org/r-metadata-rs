@@ -1,0 +1,39 @@
+Package: weights
+Title: Weighting and Weighted Statistics
+Version: 1.1.2
+Date: 2025-06-18
+Authors@R: c(person(given = "Josh",
+                 family = "Pasek",
+                 role = c("aut", "cre"),
+                 email = "josh@joshpasek.com",
+		 comment = c(ORCID = "0000-0001-6099-6119")),
+           person(given = "Alex",
+                 family = "Tahk",
+                 role = c("ctb"),
+                 email = "atahk@wisc.edu",
+		 comment = c(ORCID = "0000-0001-7895-9420")),
+	   person(given="Gene",
+                 family = "Culter",
+                 role = c("ctb"),
+		 email = "gcutler@amgen.com"),
+           person(given = "Marcus",
+                 family = "Schwemmle",
+                 role = c("ctb"),
+		 email="marcus.schwemmle@gfk.com"),
+           person(given = c("Some", "code", "modified", "from", "R-core"), family = "", role = "ctb"))
+Imports: Hmisc, mice, gdata, stats, graphics, utils, lme4
+Suggests: pscl, vioplot, glmnet, nnet, MASS, mgcv
+Description: Provides a variety of functions for producing simple weighted statistics, such as weighted Pearson's correlations, partial correlations, Chi-Squared statistics, histograms, and t-tests as well as simple weighting graphics including weighted histograms, box plots, bar plots, and violin plots.  Also includes software for quickly recoding survey data and plotting estimates from interaction terms in regressions (and multiply imputed regressions) both with and without weights and summarizing various types of regressions. Some portions of this package were assisted by AI-generated suggestions using OpenAI's GPT model, with human review and integration.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2025-06-18 15:42:32 UTC; jpasek
+Author: Josh Pasek [aut, cre] (ORCID: <https://orcid.org/0000-0001-6099-6119>),
+  Alex Tahk [ctb] (ORCID: <https://orcid.org/0000-0001-7895-9420>),
+  Gene Culter [ctb],
+  Marcus Schwemmle [ctb],
+  Some code modified from R-core [ctb]
+Maintainer: Josh Pasek <josh@joshpasek.com>
+Repository: CRAN
+Date/Publication: 2025-06-18 16:10:02 UTC

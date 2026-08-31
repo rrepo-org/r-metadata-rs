@@ -1,0 +1,28 @@
+Package: PoweR
+Version: 1.1.4
+Date: 2025-07-14
+Title: Computation of Power and Level Tables for Hypothesis Tests
+Author: Pierre Lafaye De Micheaux [aut, cre],
+  Viet Anh Tran [aut],
+  Alain Desgagne [aut],
+  Frederic Ouimet [aut],
+  Steven G. Johnson [aut]
+Authors@R: c(person("Pierre", "Lafaye De Micheaux", role = c("aut", "cre"),
+	             email = "lafaye@unsw.edu.au"),
+             person("Viet Anh", "Tran", role = c("aut"),
+                    email = "vietanhtran184@yahoo.com"),
+             person("Alain", "Desgagne", role = c("aut"),
+                    email = "desgagne.alain@uqam.ca"),
+	     person("Frederic", "Ouimet", role = c("aut"),
+                    email = "ouimetfr@dms.umontreal.ca"),	     
+             person(c("Steven", "G."), "Johnson", role = c("aut"))
+             )
+Maintainer: Pierre Lafaye De Micheaux <lafaye@unsw.edu.au>
+Depends: R (>= 4.4.0), parallel, Rcpp
+Description: Computes power and level tables for goodness-of-fit tests for the normal, Laplace, and uniform distributions. Generates output in 'LaTeX' format to facilitate reporting and reproducibility. Explanatory graphs help visualize the statistical power of test statistics under various alternatives. For more details, see Lafaye De Micheaux and Tran (2016) <doi:10.18637/jss.v069.i03>.
+License: GPL (>= 2)
+Packaged: 2025-07-19 23:15:56 UTC; lafaye
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2025-07-22 10:20:13 UTC

@@ -1,0 +1,34 @@
+Package: bigKNN
+Type: Package
+Title: Exact Search and Graph Construction for 'bigmemory' Matrices
+Version: 0.3.0
+Date: 2026-03-26
+Authors@R: person("Frederic", "Bertrand", role = c("aut", "cre"),
+    email = "frederic.bertrand@lecnam.net")
+Author: Frederic Bertrand [aut, cre]
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
+Description: Exact nearest-neighbour and radius-search routines that operate
+    directly on 'bigmemory::big.matrix' objects. The package streams row
+    blocks through 'BLAS' kernels, supports self-search and external-query
+    search, exposes prepared references for repeated queries, and can build
+    exact k-nearest-neighbour, radius, mutual k-nearest-neighbour, and
+    shared-nearest-neighbour graphs. Version 0.3.0 adds execution plans,
+    serializable prepared caches, resumable streamed graph jobs, coercion
+    helpers, exact candidate reranking, and recall summaries for evaluating
+    approximate neighbours.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: Matrix, Rcpp (>= 1.0.12), methods
+Suggests: bigmemory, knitr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp, bigmemory, BH
+Encoding: UTF-8
+NeedsCompilation: yes
+URL: https://fbertran.github.io/bigKNN/,
+        https://github.com/fbertran/bigKNN
+BugReports: https://github.com/fbertran/bigKNN/issues
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Packaged: 2026-03-27 01:16:22 UTC; bertran7
+Repository: CRAN
+Date/Publication: 2026-04-01 08:00:26 UTC

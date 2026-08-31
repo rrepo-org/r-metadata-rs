@@ -1,0 +1,45 @@
+Package: thinr
+Title: Binary Image Thinning Algorithms
+Version: 0.3.0
+Authors@R: 
+    person("Bill", "Denney", , "wdenney@humanpredictions.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5759-428X",
+                       affiliation = "Human Predictions, LLC"))
+Description: Thinning (skeletonization) algorithms for binary raster
+    images. Provides seven algorithms behind a single dispatching
+    function: Zhang-Suen (Zhang and Suen 1984)
+    <doi:10.1145/357994.358023>, Guo-Hall (Guo and Hall 1989)
+    <doi:10.1145/62065.62074>, a 2-D adaptation of Lee
+    (Lee, Kashyap, and Chu 1994) <doi:10.1006/cgip.1994.1042>, K3M
+    (Saeed, Tabedzki, Rybnik, and Adamski 2010)
+    <doi:10.2478/v10006-010-0024-4>, the parallel form commonly
+    attributed to Hilditch (1969, in 'Machine Intelligence 4'),
+    OPTA / SPTA (Naccache and Shinghal 1984), and Holt and colleagues
+    (1987) <doi:10.1145/12527.12531>. Also provides the medial axis
+    transform (Blum 1967) and a distance transform implementation
+    following Felzenszwalb and Huttenlocher (2012)
+    <doi:10.4086/toc.2012.v008a019>. The thin() API selects the
+    algorithm by name, defaulting to Zhang-Suen. Complements the
+    morphology in the 'EBImage' package, which does not provide a
+    thinning operator.
+License: LGPL-3
+Encoding: UTF-8
+Depends: R (>= 4.2)
+LinkingTo: Rcpp
+Imports: Rcpp
+Suggests: bench, covr, knitr, lintr, rmarkdown, styler, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 8.0.0
+URL: https://github.com/humanpred/thinr,
+        https://humanpred.github.io/thinr/
+BugReports: https://github.com/humanpred/thinr/issues
+NeedsCompilation: yes
+Packaged: 2026-07-26 20:56:14 UTC; bill
+Author: Bill Denney [aut, cre] (ORCID: <https://orcid.org/0000-0002-5759-428X>,
+    affiliation: Human Predictions, LLC)
+Maintainer: Bill Denney <wdenney@humanpredictions.com>
+Repository: CRAN
+Date/Publication: 2026-07-26 21:10:02 UTC

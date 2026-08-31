@@ -1,0 +1,30 @@
+Package: bvarnet
+Title: Bayesian Estimation of Dynamic VAR Models using Stan
+Version: 1.0.2
+Authors@R: person("Florian", "Metwaly", , "f.j.metwaly@uva.nl", role = c("aut", "cre", "cph"), comment = c(ORCID = "0009-0001-8357-7870"))
+Author: Florian Metwaly [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0001-8357-7870>)
+Maintainer: Florian Metwaly <f.j.metwaly@uva.nl>
+Description: Bayesian estimation of multilevel Vector Autoregression (VAR) models
+    using Stan. Supports Gaussian, Binary, and Ordinal (adjacent category) outcome
+    variables with random effects and customizable priors.
+License: GPL (>= 3)
+Copyright: file inst/COPYRIGHTS
+Encoding: UTF-8
+URL: https://flo1met.github.io/bvarnet/,
+        https://github.com/flo1met/bvarnet
+BugReports: https://github.com/flo1met/bvarnet/issues
+RoxygenNote: 7.3.3
+Additional_repositories: https://stan-dev.r-universe.dev
+Imports: digest, instantiate, jsonlite, logspline, mvtnorm, posterior
+Suggests: cmdstanr, codetools, bayesplot, knitr, qgraph, rmarkdown,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-08-31 16:04:16 UTC; florianmetwaly
+Repository: CRAN
+Date/Publication: 2026-08-31 20:20:02 UTC

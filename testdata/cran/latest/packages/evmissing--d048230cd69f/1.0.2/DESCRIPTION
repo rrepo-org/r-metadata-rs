@@ -1,0 +1,38 @@
+Package: evmissing
+Type: Package
+Title: Extreme Value Analyses with Missing Data
+Version: 1.0.2
+Date: 2026-02-16
+Authors@R: c(
+    person(c("Paul", "J."), "Northrop", email = "p.northrop@ucl.ac.uk",
+      role = c("aut", "cre", "cph")),
+    person(c("Emma", "S."), "Simpson", role = c("aut", "cph"))
+    )
+Maintainer: Paul J. Northrop <p.northrop@ucl.ac.uk>
+Description: Performs likelihood-based extreme value inferences with 
+    adjustment for the presence of missing values based on Simpson and 
+    Northrop (2026) <doi:10.1002/env.70075>. A Generalised Extreme Value
+    distribution is fitted to block maxima using maximum likelihood estimation, 
+    with the location and scale parameters reflecting the numbers of 
+    non-missing raw values in each block. A Bayesian version is also provided. 
+    For the purposes of comparison, there are options to make no adjustment for 
+    missing values or to discard any block maximum for which greater than a 
+    percentage of the underlying raw values are missing. Example datasets 
+    containing missing values are provided. 
+Imports: gamlssx, graphics, itp, nieve, revdbayes, rust, stats
+License: GPL (>= 3)
+LazyData: TRUE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0)
+URL: https://paulnorthrop.github.io/evmissing/,
+        https://github.com/paulnorthrop/evmissing
+BugReports: https://github.com/paulnorthrop/evmissing/issues
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-16 10:17:59 UTC; Paul
+Author: Paul J. Northrop [aut, cre, cph],
+  Emma S. Simpson [aut, cph]
+Repository: CRAN
+Date/Publication: 2026-02-16 10:30:02 UTC

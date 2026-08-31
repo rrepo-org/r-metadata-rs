@@ -1,0 +1,22 @@
+Package: misspi
+Type: Package
+Title: Missing Value Imputation in Parallel
+Version: 0.1.1
+Authors@R: person("Zhongli", "Jiang", role = c("aut", "cre"), email = "happycatstat@gmail.com")
+Description: A framework that boosts the imputation of 'missForest' by Stekhoven, D.J. and Bühlmann, P. (2012) <doi:10.1093/bioinformatics/btr597> by harnessing parallel processing and through the fast Gradient Boosted Decision Trees (GBDT) implementation 'LightGBM' by Ke, Guolin et al.(2017) <https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision>. 'misspi' has the following main advantages: 1. Allows embrassingly parallel imputation on large scale data. 2. Accepts a variety of machine learning models as methods with friendly user portal. 3. Supports multiple initializations methods. 4. Supports early stopping that prohibits unnecessary iterations.
+License: GPL-2
+URL: https://github.com/catstats/misspi
+BugReports: https://github.com/catstats/misspi/issues
+Encoding: UTF-8
+LazyData: true
+Imports: lightgbm, doParallel, doSNOW, foreach, ggplot2, glmnet, SIS,
+        plotly
+Suggests: e1071, neuralnet
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-01-25 09:03:48 UTC; jiangzhongli
+Author: Zhongli Jiang [aut, cre]
+Maintainer: Zhongli Jiang <happycatstat@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-01-25 21:50:08 UTC

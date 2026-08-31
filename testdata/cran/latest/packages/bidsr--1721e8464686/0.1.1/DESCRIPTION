@@ -1,0 +1,48 @@
+Package: bidsr
+Title: A Brain Imaging Data Structure ('BIDS') Parser
+Version: 0.1.1
+URL: https://dipterix.org/bidsr/, https://github.com/dipterix/bidsr/
+BugReports: https://github.com/dipterix/bidsr/issues
+Authors@R: 
+    c(
+    person("Zhengjia", "Wang", email = "dipterix.wang@gmail.com", role = c("aut", "cre"),
+          comment = c(ORCID = "0000-0001-5629-1116")),
+    person("Trustees of the University of Pennsylvania", role = c("cph"), 
+          comment = "All files in this package unless explicitly stated in the file or listed in the 'Copyright' section below.")
+    )
+Description: 
+    Parse and read the files that comply with the brain imaging data 
+    structure, or 'BIDS' format, see the publication from Gorgolewski, K., 
+    Auer, T., Calhoun, V. et al. (2016) <doi:10.1038/sdata.2016.44>.
+    Provides query functions to extract and check the 'BIDS' entity 
+    information (such as subject, session, task, etc.) from the file paths
+    and suffixes according to the specification. The package is developed 
+    and used in the reproducible analysis and visualization of intracranial 
+    electroencephalography, or 'RAVE', see Magnotti, J. F., Wang, Z., and 
+    Beauchamp, M. S. (2020) <doi:10.1016/j.neuroimage.2020.117341>; see
+    'citation("bidsr")' for details and attributions.
+Copyright: This software includes material (schema files from directory
+        'inst/bids-schema') from the 'BIDS' specification, which is
+        licensed under a Creative Commons Attribution 4.0 International
+        License; see a copy of the license under
+        'inst/bids-schema/LICENSE.txt', and website
+        <https://bids.neuroimaging.io> for details.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Imports: checkmate, data.table, fastmap, fs, jsonlite, nanotime, S7 (>=
+        0.2.0), utils, uuid
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-07-22 17:36:45 UTC; dipterix
+Author: Zhengjia Wang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5629-1116>),
+  Trustees of the University of Pennsylvania [cph] (All files in this
+    package unless explicitly stated in the file or listed in the
+    'Copyright' section below.)
+Maintainer: Zhengjia Wang <dipterix.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-22 18:20:54 UTC

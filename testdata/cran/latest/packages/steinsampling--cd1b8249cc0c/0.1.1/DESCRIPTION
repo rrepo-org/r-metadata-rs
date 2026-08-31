@@ -1,0 +1,47 @@
+Package: steinsampling
+Title: Kernelized Stein Discrepancy for Goodness-of-Fit Tests and Stein
+        Sampling
+Version: 0.1.1
+Date: 2026-08-27
+Authors@R: c(
+    person("Junhao", "Gao",
+           email = "jug049@ucsd.edu",
+           role = c("aut", "cre")),
+    person("Ery", "Arias-Castro",
+           email = "eariascastro@ucsd.edu",
+           role = "aut")
+    )
+Description: Provides Stein-discrepancy goodness-of-fit tests and
+    Stein-method-based sampling tools. The tests include kernel Stein
+    discrepancy U- and V-statistics following Liu et al. (2016)
+    <doi:10.48550/arXiv.1602.03253> and Chwialkowski et al. (2016)
+    <doi:10.48550/arXiv.1602.02964>, plus the finite set Stein discrepancy
+    test of Jitkrittum et al. (2017) <doi:10.48550/arXiv.1705.07673>. The
+    sampling tools include Stein thinning, Stein Points, Stein Point Markov
+    chain Monte Carlo, and Stein variational gradient descent following
+    Riabiz et al. (2022) <doi:10.48550/arXiv.2005.03952>, Chen et al. (2018)
+    <doi:10.48550/arXiv.1803.10161>, Chen et al. (2019)
+    <doi:10.48550/arXiv.1905.03673>, and Liu and Wang (2016)
+    <doi:10.48550/arXiv.1608.04471>. Gaussian mixture utilities are included
+    for constructing example targets, simulation, density evaluation, and
+    score callbacks.
+URL: https://github.com/junhao7622/steinsampling
+BugReports: https://github.com/junhao7622/steinsampling/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: stats, mvtnorm (>= 0.9-9994)
+Suggests: testthat, withr
+Collate: 'steinsampling-package.R' 'stein_helpers.R' 'kernel_classes.R'
+        'bootstrap.R' 'gmm_model.R' 'ksd_u_test.R' 'ksd_v_test.R'
+        'fssd_test.R' 'svgd.R' 'stein_thinning.R' 'stein_points.R'
+        'stein_point_mcmc.R'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-28 05:59:24 UTC; junhao
+Author: Junhao Gao [aut, cre],
+  Ery Arias-Castro [aut]
+Maintainer: Junhao Gao <jug049@ucsd.edu>
+Repository: CRAN
+Date/Publication: 2026-08-28 11:10:02 UTC

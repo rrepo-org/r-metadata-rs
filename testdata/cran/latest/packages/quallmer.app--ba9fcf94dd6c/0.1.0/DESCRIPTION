@@ -1,0 +1,45 @@
+Package: quallmer.app
+Title: Interactive Validation App for 'quallmer'
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Seraphine F.", "Maerz",
+      email = "seraphine.maerz@unimelb.edu.au",
+      role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7173-9617")
+    ),
+    person(
+      "Kenneth", "Benoit",
+      email = "kbenoit@smu.edu.sg",
+      role = c("aut"), comment = c(ORCID = "0000-0002-0797-564X")
+    )
+  )
+Description: Companion package to 'quallmer' providing an interactive 'shiny'
+    application for manual coding, reviewing large language model (LLM)
+    generated annotations, and computing inter-rater reliability metrics.
+    Supports three modes: blind manual coding, LLM output validation, and
+    agreement calculation. Computes standard reliability metrics including
+    Krippendorff's alpha (Krippendorff 2019 <doi:10.4135/9781071878781>),
+    Cohen's kappa, Fleiss' kappa (Fleiss 1971 <doi:10.1037/h0031619>),
+    intraclass correlation coefficient (ICC), and percent agreement for
+    nominal, ordinal, interval, and ratio data. Also computes gold-standard
+    validation metrics including accuracy, precision, recall, and F1 scores
+    following Sokolova and Lapalme (2009 <doi:10.1016/j.ipm.2009.03.002>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: quallmer (>= 0.3.0), shiny, bslib, dplyr, tidyr, irr,
+        htmltools, cli, stats, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/quallmer/quallmer.app
+BugReports: https://github.com/quallmer/quallmer.app/issues
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-03-04 07:54:41 UTC; smaerz
+Author: Seraphine F. Maerz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7173-9617>),
+  Kenneth Benoit [aut] (ORCID: <https://orcid.org/0000-0002-0797-564X>)
+Maintainer: Seraphine F. Maerz <seraphine.maerz@unimelb.edu.au>
+Repository: CRAN
+Date/Publication: 2026-03-08 10:40:02 UTC

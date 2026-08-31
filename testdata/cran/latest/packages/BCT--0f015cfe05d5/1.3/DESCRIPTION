@@ -1,0 +1,31 @@
+Package: BCT
+Type: Package
+Title: Bayesian Context Trees for Discrete Time Series
+Version: 1.3
+Date: 2026-08-03
+Authors@R: c(person(given = "Ioannis",
+                    family = "Papageorgiou",
+                    role = "aut"),
+             person(given = c("Valentinian", "Mihai"),
+                    family = "Lungu",
+                    role = c("aut", "cre"),
+                    email = "valentinian.mihai@gmail.com"),
+             person(given = "Ioannis",
+                    family = "Kontoyiannis",
+                    role = "aut"))
+Description: An implementation of a collection of tools for exact Bayesian inference with discrete times series. This package contains functions that can be used for prediction, model selection, estimation, segmentation/change-point detection and other statistical tasks. Specifically, the functions provided can be used for the exact computation of the prior predictive likelihood of the data, for the identification of the a posteriori most likely (MAP) variable-memory Markov models, for calculating the exact posterior probabilities and the AIC and BIC scores of these models, for prediction with respect to log-loss and 0-1 loss and segmentation/change-point detection. Example data sets from finance, genetics, animal communication and meteorology are also provided. Detailed descriptions of the underlying theory and algorithms can be found in [Kontoyiannis et al. 'Bayesian Context Trees: Modelling and exact inference for discrete time series.' Journal of the Royal Statistical Society: Series B (Statistical Methodology), April 2022. Available at: <doi:10.48550/arXiv.2007.14900> [stat.ME], July 2020] and [Lungu et al. 'Change-point Detection and Segmentation of Discrete Data using Bayesian Context Trees' <doi:10.48550/arXiv.2203.04341> [stat.ME], March 2022]. 
+License: GPL (>= 2)
+LazyData: true
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.5), stringr, igraph, grDevices, graphics
+LinkingTo: Rcpp
+Depends: R (>= 4.0)
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-08-03 10:40:46 UTC; Valentinian
+Repository: CRAN
+Date/Publication: 2026-08-03 23:20:22 UTC
+Author: Ioannis Papageorgiou [aut],
+  Valentinian Mihai Lungu [aut, cre],
+  Ioannis Kontoyiannis [aut]
+Maintainer: Valentinian Mihai Lungu <valentinian.mihai@gmail.com>

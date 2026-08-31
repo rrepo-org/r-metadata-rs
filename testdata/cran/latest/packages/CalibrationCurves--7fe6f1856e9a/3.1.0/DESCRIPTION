@@ -1,0 +1,37 @@
+Package: CalibrationCurves
+Type: Package
+Title: Calibration Performance
+Version: 3.1.0
+Authors@R: c(person(given = "Bavo", family = "De Cock", role = c("aut", "cre"),
+		     email = "bavo.decock@kuleuven.be"),
+		    person(given = "Lasai", family = "Barrenada", role = "aut"),
+	      person(given = "Daan", family = "Nieboer", role = "aut"),
+	      person(given = "Ben", family = "Van Calster", role = "aut"),
+	      person(given = "Ewout", family = "Steyerberg", role = "aut"),
+	      person(given = "Yvonne", family = "Vergouwe", role = "aut"))
+Date: 2026-03-25
+Description: Plots calibration curves and computes statistics for assessing calibration performance. See Lasai et al. (2025) <doi:10.48550/arXiv.2503.08389>, De Cock Campo (2023) <doi:10.48550/arXiv.2309.08559> and Van Calster et al. (2016) <doi:10.1016/j.jclinepi.2015.12.005>.
+License: GPL (>= 3)
+LazyData: TRUE
+Depends: R (>= 3.5.0), rms (>= 7.0-0), ggplot2
+Imports: grDevices, graphics, methods, stats, utils, survival, Hmisc,
+        pec, riskRegression, meta, metafor, zoo, lme4, merTools, dplyr,
+        magrittr
+Suggests: knitr, rmarkdown, bookdown, rstudioapi, mgcv, MASS, Matrix,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://bavodc.github.io/websiteCalibrationCurves/
+NeedsCompilation: no
+Packaged: 2026-03-26 19:58:39 UTC; u0095171
+Author: Bavo De Cock [aut, cre],
+  Lasai Barrenada [aut],
+  Daan Nieboer [aut],
+  Ben Van Calster [aut],
+  Ewout Steyerberg [aut],
+  Yvonne Vergouwe [aut]
+Maintainer: Bavo De Cock <bavo.decock@kuleuven.be>
+Repository: CRAN
+Date/Publication: 2026-03-27 06:10:29 UTC

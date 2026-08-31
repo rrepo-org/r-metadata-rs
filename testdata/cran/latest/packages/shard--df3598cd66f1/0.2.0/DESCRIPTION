@@ -1,0 +1,33 @@
+Package: shard
+Type: Package
+Title: Deterministic, Zero-Copy Parallel Execution for R
+Version: 0.2.0
+Authors@R: 
+    person("Bradley", "Buchsbaum", email = "brad.buchsbaum@gmail.com", role = c("aut", "cre", "cph"))
+Description: Provides a parallel execution runtime for R that emphasizes
+    deterministic memory behavior and efficient handling of large shared inputs.
+    'shard' enables zero-copy parallel reads via shared/memory-mapped segments,
+    encourages explicit output buffers to avoid large result aggregation, and
+    supervises worker processes to mitigate memory drift via controlled recycling.
+    Diagnostics report peak memory usage, end-of-run memory return, and hidden
+    copy/materialization events to support reproducible performance benchmarking.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: methods, parallel, stats, tools, utils
+Suggests: knitr, pkgload, rmarkdown, testthat (>= 3.0.0), ps, jsonlite,
+        tibble, withr
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+URL: https://bbuchsbaum.github.io/shard/,
+        https://github.com/bbuchsbaum/shard
+BugReports: https://github.com/bbuchsbaum/shard/issues
+SystemRequirements: POSIX shared memory (optional), memory-mapped files
+Config/testthat/edition: 3
+Packaged: 2026-07-17 21:45:04 UTC; bbuchsbaum
+Author: Bradley Buchsbaum [aut, cre, cph]
+Maintainer: Bradley Buchsbaum <brad.buchsbaum@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-17 22:20:02 UTC

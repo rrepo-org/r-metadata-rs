@@ -1,0 +1,51 @@
+Package: geodiv
+Type: Package
+Title: Methods for Calculating Gradient Surface Metrics
+Version: 1.1.1
+Authors@R: c(person(given = c("Annie", "C."),
+                        family = "Smith",
+                        role = "aut"),
+                 person(given = "Phoebe",
+                        family = "Zarnetske",
+                        role = "aut", 
+                        email = "plz@msu.edu"),
+                 person(given = "Kyla",
+                        family = "Dahlin",
+                        role = c("aut", "cre"),
+                        email = "kdahlin@msu.edu"),
+                 person(given = "Adam",
+                        family = "Wilson",
+                        role = "aut"),
+                 person(given = "Andrew",
+                        family = "Latimer",
+                        role = "aut"), 
+                 person(given = "Kelly", 
+                        family = "Kapsar",
+                        role = "aut",
+                        email = "kapsarke@msu.edu"))
+Description: Methods for calculating gradient surface metrics for
+    continuous analysis of landscape features. 
+URL: https://github.com/bioXgeo/geodiv
+BugReports: https://github.com/bioXgeo/geodiv/issues
+Depends: R (>= 3.5)
+Imports: dplyr (>= 0.7.8), pracma (>= 2.2.2), spatial (>= 7.3-11),
+        e1071 (>= 1.7-0), parallel (>= 3.5.0), sf (>= 0.7-4), zoo (>=
+        1.8-5), Rcpp (>= 1.0.1), terra (>= 1.7), rlang
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 8.0.0
+Suggests: testthat, R.rsp
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: R.rsp
+NeedsCompilation: yes
+Packaged: 2026-07-21 15:50:38 UTC; Kyla Dahlin
+Author: Annie C. Smith [aut],
+  Phoebe Zarnetske [aut],
+  Kyla Dahlin [aut, cre],
+  Adam Wilson [aut],
+  Andrew Latimer [aut],
+  Kelly Kapsar [aut]
+Maintainer: Kyla Dahlin <kdahlin@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-07-21 22:50:02 UTC

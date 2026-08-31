@@ -1,0 +1,41 @@
+Package: SimuRg
+Title: Building, Fitting and Evaluating PK/PD Modeles
+Version: 0.2.2
+Authors@R: c(
+    person("Victor", "Sokolov", , "victor.sokolov@msdecisions.tech", role =  c("cph", "aut"), comment = c(ORCID = " 0000-0001-7066-0811")),
+    person("Anna", "Mikhailova", , "anna.mikhailova@msdecisions.tech", role = c("cre", "aut"), comment = c(ORCID = "0009-0007-1547-5200")),
+    person("Yaroslav", "Ugolkov", , "yaroslav.ugolkov@msdecisions.tech", role = "aut", comment = c(ORCID = "0000-0003-3590-7860")),
+    person("Anatoly", "Pokladyuk", , "anatoly.pokladyuk@msdecisions.tech", role = "aut", comment = c(ORCID = "0009-0003-4680-9518")),
+    person("Alina", "Melnikova", , "alina.melnikova@msdecisions.tech", role = "aut", comment = c(ORCID = "0000-0001-9019-0263")),
+    person("Victoria", "Kulesh", , "victoria.kulesh@msdecisions.tech", role = "aut", comment = c(ORCID = "0000-0001-9289-7262"))
+  )
+Description: Provides a unified workflow for building, fitting using external engines, and evaluating ordinary differential equation (ODE)-based pharmacokinetic/pharmacodynamic (PK/PD) models. Supports generation of estimation scenarios and control files for external engines (e.g., 'Monolix'), simulation of models using 'rxode2', and creation of goodness-of-fit diagnostics. Includes tools for covariate modeling, virtual population design, and local and global sensitivity analyses.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Imports: cluster, dplyr, fastDummies, forcats, ggplot2, jsonlite, MASS,
+        purrr, readr, recipes, rlang, rxode2, scales, stringr,
+        synthpop, sys, tibble, tidyr, uwot, zoo, lhs, sensitivity,
+        ppcor, withr
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+URL: https://ms-decisions.github.io/SimuRg/,
+        https://github.com/ms-decisions/SimuRg
+BugReports: https://github.com/ms-decisions/SimuRg/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-24 12:20:01 UTC; MikhailovaAnna
+Author: Victor Sokolov [cph, aut] (ORCID:
+    <https://orcid.org/0000-0001-7066-0811>),
+  Anna Mikhailova [cre, aut] (ORCID:
+    <https://orcid.org/0009-0007-1547-5200>),
+  Yaroslav Ugolkov [aut] (ORCID: <https://orcid.org/0000-0003-3590-7860>),
+  Anatoly Pokladyuk [aut] (ORCID:
+    <https://orcid.org/0009-0003-4680-9518>),
+  Alina Melnikova [aut] (ORCID: <https://orcid.org/0000-0001-9019-0263>),
+  Victoria Kulesh [aut] (ORCID: <https://orcid.org/0000-0001-9289-7262>)
+Maintainer: Anna Mikhailova <anna.mikhailova@msdecisions.tech>
+Repository: CRAN
+Date/Publication: 2026-08-24 12:50:08 UTC

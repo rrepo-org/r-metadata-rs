@@ -1,0 +1,41 @@
+Package: rbmiUtils
+Title: Utility Functions to Support and Extend the 'rbmi' Package
+Version: 0.3.0
+Date: 2026-02-14
+Authors@R: c(
+    person("Mark", "Baillie", email = "bailliem@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-5618-0667")),
+    person("Tobias", "Muetze", email = "tobias.muetze@novartis.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-4111-1941")),
+    person("Jack", "Talboys", email = "jack.talboys@novartis.com", role = c("aut")),
+    person("Lukas A.", "Widmer", role = "ctb", comment = c(ORCID = "0000-0003-1471-3493"))
+  )
+Maintainer: Mark Baillie <bailliem@gmail.com>
+Description: Provides utility functions that extend the capabilities of the 
+    reference-based multiple imputation package 'rbmi'. It supports clinical 
+    trial analysis workflows with functions for managing imputed datasets, 
+    applying analysis methods across imputations, and tidying results for 
+    reporting.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: cards, ggplot2, gt, knitr, patchwork, readr, rmarkdown,
+        rstan, spelling, testthat (>= 3.0.0), tibble
+Config/testthat/edition: 3
+Language: en-US
+Imports: assertthat, beeca, cli (>= 3.6.0), dplyr, lifecycle (>=
+        1.0.4), purrr, rbmi (>= 1.4), rlang, tidyr
+VignetteBuilder: knitr
+Depends: R (>= 4.1)
+LazyData: true
+URL: https://github.com/openpharma/rbmiUtils
+BugReports: https://github.com/openpharma/rbmiUtils/issues
+NeedsCompilation: no
+Packaged: 2026-02-16 21:09:40 UTC; bailliem
+Author: Mark Baillie [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-5618-0667>),
+  Tobias Muetze [aut] (ORCID: <https://orcid.org/0000-0002-4111-1941>),
+  Jack Talboys [aut],
+  Lukas A. Widmer [ctb] (ORCID: <https://orcid.org/0000-0003-1471-3493>)
+Repository: CRAN
+Date/Publication: 2026-02-16 21:40:02 UTC

@@ -1,0 +1,29 @@
+Package: DSDRM
+Type: Package
+Title: Distributed Sampling for Dynamic Regression Models
+Version: 0.1.3
+Authors@R: c(
+    person("Guangbao", "Guo", role = c("aut", "cre"),
+           email = "ggb11111111@163.com",
+           comment = c(ORCID = "0000-0002-4115-6218")))
+Depends: R (>= 4.1.0)
+Description: A toolbox for distributed dynamic regression modeling,
+    parallel estimation, multiple distributed sampling algorithms (Metropolis-Hastings,
+    block bootstrap, adaptive, hypergeometric), sparse matrix
+    optimization, model visualization, prediction and performance
+    evaluation.  The philosophy of the package is described in Guo (2025)
+    <doi:10.1038/s41598-025-93333-6>.
+License: Apache License 2.0
+Encoding: UTF-8
+Imports: parallel, Matrix
+RoxygenNote: 7.3.3
+Author: Guangbao Guo [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4115-6218>)
+Maintainer: Guangbao Guo <ggb11111111@163.com>
+Config/testthat/edition: 3
+NeedsCompilation: no
+Language: en-US
+Suggests: testthat
+Packaged: 2026-06-27 09:28:12 UTC; admin
+Repository: CRAN
+Date/Publication: 2026-07-10 19:30:02 UTC

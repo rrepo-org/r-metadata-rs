@@ -1,0 +1,32 @@
+Package: argminCS
+Type: Package
+Title: Argmin Inference over a Discrete Candidate Set
+Version: 1.1.0
+Date: 2025-07-07
+Authors@R: c(
+    person(given = "Tianyu", family = "Zhang", role = "aut"),
+    person(given = "Hao", family = "Lee", role = c("aut", "cre", "cph"), email = "haolee@andrew.cmu.edu"),
+    person(given = "Jing", family = "Lei", role = "aut")
+    )
+Description: Provides methods to construct frequentist confidence sets with valid marginal 
+    coverage for identifying the population-level argmin or argmax based on IID data. 
+    For instance, given an n by p loss matrix—where n is the sample size and p is the 
+    number of models—the CS.argmin() method produces a discrete confidence set that contains 
+    the model with the minimal (best) expected risk with desired probability. The argmin.HT() 
+    method helps check if a specific model should be included in such a confidence set. The main
+    implemented method is proposed by Tianyu Zhang, Hao Lee and Jing Lei (2024) 
+    "Winners with confidence: Discrete argmin inference with an application to model selection".
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+RdMacros: Rdpack
+Imports: BSDA, glue, LDATS, MASS, methods, Rdpack, stats, withr
+URL: https://github.com/xu3cl4/argminCS
+NeedsCompilation: no
+Packaged: 2025-07-09 02:22:50 UTC; haolee
+Author: Tianyu Zhang [aut],
+  Hao Lee [aut, cre, cph],
+  Jing Lei [aut]
+Maintainer: Hao Lee <haolee@andrew.cmu.edu>
+Repository: CRAN
+Date/Publication: 2025-07-14 16:30:09 UTC

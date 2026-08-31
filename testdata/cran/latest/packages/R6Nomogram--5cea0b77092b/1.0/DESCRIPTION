@@ -1,0 +1,30 @@
+Package: R6Nomogram
+Version: 1.0
+Title: Create, Edit, and Plot Nomograms using R6 Objects
+License: GPL (>= 2)
+Authors@R: c(person("Greg", "Snow", role=c("aut", "cre"),
+    email="538280@gmail.com"))
+Maintainer: Greg Snow <538280@gmail.com>
+Description: Nomograms are a type of plot for displaying 
+  linear models.  A scale is plotted for each predictor 
+  in the model that translates values of the variable into
+  "points", the sum of the "points" is then looked up on 
+  another scale to find the final prediction from the model.
+  This package provides an R6 object constructor that 
+  does the computations for you to create an object 
+  representing the nomogram for the model.  Methods and
+  fields in the object allow you to customize the nomogram.
+  You can then plot the nomogram, further customize, replot,
+  etc.  These types of nomograms are described in Harrell (2015) 
+  <doi:10.1007/978-3-319-19425-7>.
+URL: https://github.com/glsnow/R6Nomogram
+Imports: R6
+Suggests: quarto
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: quarto
+NeedsCompilation: no
+Packaged: 2026-06-30 19:03:53 UTC; gls33
+Author: Greg Snow [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-07-06 13:50:17 UTC

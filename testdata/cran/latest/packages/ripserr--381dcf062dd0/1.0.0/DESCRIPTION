@@ -1,0 +1,102 @@
+Package: ripserr
+Title: Calculate Persistent Homology with Ripser-Based Engines
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Raoul R.",
+             family = "Wadhwa",
+             role = "aut",
+             email = "raoulwadhwa@gmail.com",
+             comment = c(ORCID = "0000-0003-0503-9580")),
+      person(given = "Matt",
+             family = "Piekenbrock",
+             role = "aut",
+             email = "matt.piekenbrock@gmail.com"),
+      person(given = "Jason Cory",
+             family = "Brunson",
+             role = c("aut", "cre"),
+             email = "cornelioid@gmail.com",
+             comment = c(ORCID = "0000-0003-3126-9494")),
+      person(given = "Xinyi", 
+             family = "Zhang",
+             role = "aut",
+             email = "ezhang0927@gmail.com"),
+      person(given = "Alice",
+             family = "Zhang",
+             role = "aut",
+             email = "aliscezhang@gmail.com",
+             comment = c(ORCID = "0009-0001-3584-5869")),
+      person(given = "Kent",
+             family = "Phipps",
+             role = "aut"),
+      person(given = "Sean",
+             family = "Hershkowitz",
+             role = "aut",
+             email = "Sea7777.hers@gmail.com"),
+      person(given = "Emily",
+             family = "Noble",
+             role = "ctb"),
+      person(given = "Aymeric",
+             family = "Stamm",
+             role = "ctb",
+             email = "aymeric.stamm@cnrs.fr",
+             comment = c(ORCID = "0000-0002-8725-3654")),
+      person(given = "Aidan", 
+             family = "Bryant",
+             role = "ctb",
+             email = "bryant.aidan15@gmail.com"),
+      person(given = "James", 
+             family = "Golabek",
+             role = "ctb",
+             email = "jamesgolabek@gmail.com"),
+      person(given = "Jacob G.",
+             family = "Scott",
+             role = "ldr",
+             comment = c(ORCID = "0000-0003-2971-7673")),
+      person(given = "Ulrich", family = "Bauer",
+             role = c("cph", "ctb"),
+             comment = "Ripser; MIT license"),
+      person(given = "Takeki", family = "Sudo",
+             role = c("cph", "ctb"),
+             comment = "Cubical Ripser; GPL-3 license"),
+      person(given = "Kazushi", family = "Ahara",
+             role = c("cph", "ctb"),
+             comment = "Cubical Ripser; GPL-3 license")
+                            )
+Description: Ports the Ripser <doi:10.48550/arXiv.1908.02518>
+    and Cubical Ripser <doi:10.48550/arXiv.2005.12692>
+    persistent homology calculation engines from C++.
+    Can be used as a rapid calculation tool in topological data analysis
+    pipelines.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL: https://github.com/tdaverse/ripserr/
+BugReports: https://github.com/tdaverse/ripserr/issues
+LinkingTo: Rcpp
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0), stats (>= 3.0), utils (>= 3.0)
+Suggests: covr (>= 3.5), knitr (>= 1.29), rmarkdown (>= 2.3), testthat
+        (>= 2.3), lmtest
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-06-27 18:58:43 UTC; jasoncorybrunson
+Author: Raoul R. Wadhwa [aut] (ORCID: <https://orcid.org/0000-0003-0503-9580>),
+  Matt Piekenbrock [aut],
+  Jason Cory Brunson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3126-9494>),
+  Xinyi Zhang [aut],
+  Alice Zhang [aut] (ORCID: <https://orcid.org/0009-0001-3584-5869>),
+  Kent Phipps [aut],
+  Sean Hershkowitz [aut],
+  Emily Noble [ctb],
+  Aymeric Stamm [ctb] (ORCID: <https://orcid.org/0000-0002-8725-3654>),
+  Aidan Bryant [ctb],
+  James Golabek [ctb],
+  Jacob G. Scott [ldr] (ORCID: <https://orcid.org/0000-0003-2971-7673>),
+  Ulrich Bauer [cph, ctb] (Ripser; MIT license),
+  Takeki Sudo [cph, ctb] (Cubical Ripser; GPL-3 license),
+  Kazushi Ahara [cph, ctb] (Cubical Ripser; GPL-3 license)
+Maintainer: Jason Cory Brunson <cornelioid@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-27 19:10:02 UTC

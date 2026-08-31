@@ -1,0 +1,37 @@
+Package: ahocorasick
+Title: Fast Multi-Pattern String Matching with the 'Aho-Corasick'
+        Algorithm
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Hao",
+             family = "Cheng",
+             role = c("aut", "cre", "cph"),
+             email = "Yousa-Mirage@foxmail.com"))
+Description: Provide fast multi-pattern string matching for 'R' using the
+    'Aho-Corasick' algorithm, powered by the 'Rust' 'aho-corasick' crate. It
+    builds reusable automatons for detecting matches, counting matches, locating
+    character, extracting matched text, and replacing matches in character vectors.
+    For more details on the 'Aho-Corasick' algorithm, please see
+    Aho and Corasick (1975) <doi:10.1145/360825.360855>.
+License: MIT + file LICENSE
+URL: https://yousa-mirage.github.io/r-ahocorasick/,
+        https://github.com/Yousa-Mirage/r-ahocorasick
+BugReports: https://github.com/Yousa-Mirage/r-ahocorasick/issues
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/rextendr/version: 0.5.0
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.65.0, xz
+Depends: R (>= 4.2)
+Imports: checkmate, cli, fs, rlang
+Suggests: dplyr, knitr, pkgdown, rmarkdown, tibble, tidyr, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-29 15:07:59 UTC; Yousa-Mirage
+Author: Hao Cheng [aut, cre, cph]
+Maintainer: Hao Cheng <Yousa-Mirage@foxmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-02 11:00:07 UTC

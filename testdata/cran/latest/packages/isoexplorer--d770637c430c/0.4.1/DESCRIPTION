@@ -1,0 +1,35 @@
+Package: isoexplorer
+Title: GUI Components to Explore Stable Isotope Data Files
+Version: 0.4.1
+Authors@R: 
+    c(
+        person(
+        given = "Sebastian", family = "Kopf", 
+        email = "sebastian.kopf@colorado.edu", 
+        role = c("aut", "cre"), 
+        comment = c(ORCID = "0000-0002-2044-0201"))
+    )
+Description: Provides graphical user interface components to explore stable isotope
+    data files using the 'isoreader2' package, including browsing, visualizing, and 
+    exporting isotope data.
+License: AGPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.5.0)
+Imports: cli (>= 3.6.0), rlang (>= 1.1.0), tibble, dplyr, purrr,
+        stringr, htmltools, shiny, bslib, shinyjs, shinyAce,
+        shinycssloaders, rlog, DT, ggplot2, isoreader2 (>= 0.6.0),
+        stats, callr, httpuv, htmlwidgets, tidyr, tidyselect, tools,
+        utils, withr
+Suggests: testthat (>= 3.0.0), pkgload
+Config/testthat/edition: 3
+URL: https://github.com/isoverse/isoexplorer
+BugReports: https://github.com/isoverse/isoexplorer/issues
+Language: en-US
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-14 08:04:08 UTC; seko0922
+Author: Sebastian Kopf [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2044-0201>)
+Maintainer: Sebastian Kopf <sebastian.kopf@colorado.edu>
+Repository: CRAN
+Date/Publication: 2026-07-22 08:00:02 UTC

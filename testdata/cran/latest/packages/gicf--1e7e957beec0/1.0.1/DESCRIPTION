@@ -1,0 +1,28 @@
+Package: gicf
+Type: Package
+Title: Penalised Likelihood Estimation of a Covariance Matrix
+Description: Penalised likelihood estimation of a covariance matrix via the ridge-regularised covglasso estimator described in Cibinel et al. (2024) <doi:10.48550/arXiv.2410.02403>. Based on the 'C++' code of the 'R' package 'covglasso' (by Michael Fop, <https://orcid.org/0000-0003-3936-2757>) and the 'R' code of 'icf' (by Mathias Drton, <https://orcid.org/0000-0001-5614-3025>) within the 'R' package 'ggm'.
+Version: 1.0.1
+Date: 2025-08-21
+Authors@R: 
+    c(
+    person("Luca", "Cibinel", email = "lcibinel@gmail.com", role = c("cre", "aut"), comment = c(ORCID = "0009-0009-1274-8327")),
+    person("Alberto", "Roverato", role = "aut", comment = c(ORCID = "0000-0001-7984-3593")),
+    person("Veronica", "Vinciotti", role = "aut", comment = c(ORCID = "0000-0002-2625-7977"))
+    )
+Author: Luca Cibinel [cre, aut] (ORCID:
+    <https://orcid.org/0009-0009-1274-8327>),
+  Alberto Roverato [aut] (ORCID: <https://orcid.org/0000-0001-7984-3593>),
+  Veronica Vinciotti [aut] (ORCID:
+    <https://orcid.org/0000-0002-2625-7977>)
+Maintainer: Luca Cibinel <lcibinel@gmail.com>
+License: GPL-3
+Imports: Rcpp (>= 1.0.12), stats
+Suggests: mvtnorm
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2025-08-22 07:56:11 UTC; lucaci
+Repository: CRAN
+Date/Publication: 2025-08-22 10:10:06 UTC

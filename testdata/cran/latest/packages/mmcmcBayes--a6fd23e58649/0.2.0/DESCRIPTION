@@ -1,0 +1,41 @@
+Package: mmcmcBayes
+Type: Package
+Title: Multistage MCMC Method for Detecting DMRs
+Version: 0.2.0
+Authors@R: 
+    c(
+    person("Zhexuan", "Yang", 
+           email = "zky5198@psu.edu", 
+           role = c("aut", "cre")),
+    person("Duchwan", "Ryu", 
+           email = "dryu@niu.edu", 
+           role = "aut"),
+    person("Feng", "Luan", 
+           email = "fluan1@niu.edu", 
+           role = "aut")
+    )
+Description: Implements differential methylation region (DMR) detection using a
+    multistage Markov chain Monte Carlo (MCMC) algorithm based on the
+    alpha-skew generalized normal (ASGN) distribution. Version 0.2.0 removes
+    the Anderson-Darling test stage, improves computational efficiency of the
+    core ASGN and multistage MCMC routines, and adds convenience functions for
+    summarizing and visualizing detected DMRs. The methodology is based on
+    Yang (2025) <https://www.proquest.com/docview/3218878972>.
+License: GPL-3
+URL: https://github.com/zyang1919/mmcmcBayes
+BugReports: https://github.com/zyang1919/mmcmcBayes/issues
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, MCMCpack (>= 1.4-0)
+Suggests: kSamples, testthat (>= 3.0.0), knitr, rmarkdown
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-12-20 18:12:51 UTC; zhexuanyang
+Author: Zhexuan Yang [aut, cre],
+  Duchwan Ryu [aut],
+  Feng Luan [aut]
+Maintainer: Zhexuan Yang <zky5198@psu.edu>
+Repository: CRAN
+Date/Publication: 2025-12-20 23:50:02 UTC

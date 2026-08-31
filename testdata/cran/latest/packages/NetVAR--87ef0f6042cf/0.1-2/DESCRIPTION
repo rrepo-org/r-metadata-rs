@@ -1,0 +1,22 @@
+Package: NetVAR
+Type: Package
+Title: Network Structures in VAR Models
+Version: 0.1-2
+Date: 2025-08-26
+Authors@R: person(given = "Simon",
+			family = "Trimborn",
+			role = c("aut", "cre"), 
+			email = "trimborn.econometrics@gmail.com")
+LazyLoad: yes
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: fields, fGarch
+Description: Vector AutoRegressive (VAR) type models with tailored regularisation structures are provided to uncover network type structures in the data, such as influential time series (influencers). Currently the package implements the LISAR model from Zhang and Trimborn (2023) <doi:10.2139/ssrn.4619531>. The package automatically derives the required regularisation sequences and refines it during the estimation to provide the optimal model. The package allows for model optimisation under various loss functions such as Mean Squared Forecasting Error (MSFE), Akaike Information Criterion (AIC), and Bayesian Information Criterion (BIC). It provides a dedicated class, allowing for summary prints of the optimal model and a plotting function to conveniently analyse the optimal model via heatmaps.
+License: GPL (>= 3)
+NeedsCompilation: yes
+Packaged: 2025-09-17 09:04:31 UTC; simontrimborn
+RoxygenNote: 7.3.2
+Author: Simon Trimborn [aut, cre]
+Maintainer: Simon Trimborn <trimborn.econometrics@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-22 11:30:07 UTC

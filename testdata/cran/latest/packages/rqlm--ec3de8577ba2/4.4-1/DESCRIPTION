@@ -1,0 +1,21 @@
+Package: rqlm
+Type: Package
+Title: Modified Poisson Regression for Binary Outcome and Related
+        Methods
+Version: 4.4-1
+Date: 2026-07-13
+Authors@R: 
+  c( person("Hisashi", "Noma", , "noma@ism.ac.jp", role = c("aut","cre"), comment = c(ORCID = "0000-0002-2520-9949")))
+Maintainer: Hisashi Noma <noma@ism.ac.jp>
+Description: Modified Poisson, logistic and least-squares regression analyses for binary outcomes of Zou (2004) <doi:10.1093/aje/kwh090>, Noma (2026)<doi:10.1016/j.spl.2026.110698>, and Cheung (2007) <doi:10.1093/aje/kwm223> have been standard multivariate analysis methods to estimate risk ratio and risk difference in clinical and epidemiological studies. This R package involves an easy-to-handle function to implement these analyses by simple commands. Missing data analysis tools (multiple imputation) are also involved. In addition, recent studies have shown the ordinary robust variance estimator possibly has serious bias under small or moderate sample size situations for these methods. This package also provides computational tools to calculate alternative accurate confidence intervals.
+Depends: R (>= 3.5.0)
+Imports: stats, MASS, nnet, sandwich, mice, lme4
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-07-13 03:59:02 UTC; nomah
+Author: Hisashi Noma [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2520-9949>)
+Repository: CRAN
+Date/Publication: 2026-07-13 05:50:02 UTC

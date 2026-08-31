@@ -1,0 +1,39 @@
+Package: fdclassify
+Title: Supervised Classification for Functional Data via Signed Depth
+Version: 0.1.0
+Authors@R: c(
+    person("Diego Andrés", "Pérez Ruiz",
+           email = "diego.perezruiz@manchester.ac.uk",
+           role  = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9969-6065")),
+    person("Peter", "Foster",
+           role  = "ths"))
+Description: Provides a suite of supervised classifiers for functional data
+    based on the concept of signed depth. The core pipeline computes
+    Fraiman-Muniz (FM) functional depth in either its Tukey or Simplicial
+    variant, derives a signed depth by comparing each curve to a reference
+    median curve via the signed distance integral, and feeds the resulting
+    scalar summary into several classifiers: the k-Ranked Nearest Neighbour
+    (k-RNN) rule, a moving-average smoother, a kernel-density Bayes rule,
+    logistic regression on signed depth and distance to the mode, and a
+    generalised additive model (GAM) classifier. Cross-validation routines
+    for tuning the neighbourhood size k and parametric bootstrap confidence
+    intervals are also included.
+License: GPL-3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.1
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, mgcv, modeest
+Suggests: testthat (>= 3.0.0), spelling, knitr, rmarkdown
+Config/testthat/edition: 3
+URL: https://github.com/dapr12/fdclassify
+BugReports: https://github.com/dapr12/fdclassify/issues
+NeedsCompilation: no
+Packaged: 2026-04-22 14:53:05 UTC; mbbxkdp3
+Author: Diego Andrés Pérez Ruiz [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9969-6065>),
+  Peter Foster [ths]
+Maintainer: Diego Andrés Pérez Ruiz <diego.perezruiz@manchester.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-04-23 20:10:03 UTC

@@ -1,0 +1,38 @@
+Package: textures
+Title: Quad Mesh Primitives and Texture Mapping for Grids
+Version: 0.1.0
+Authors@R: 
+    person(given = "Michael D.",
+           family = "Sumner",
+           role = c("aut", "cre"),
+           email = "mdsumner@gmail.com",
+           comment = c(ORCID = "0000-0002-2471-7511"))
+Description: Generate quad mesh primitives from the compact specification of a
+ regular grid, its dimension and extent. Provides fast generation of mesh
+ indexes and vertices, an unexpanded intermediate form (the grid edge
+ coordinates), and a compact serializable specification for meshes that are
+ generated on demand. Meshes are 'mesh3d' objects as used by the 'rgl'
+ package, constructed without requiring any graphics engine, with support
+ for texture mapping (Heckbert (1986) <doi:10.1109/MCG.1986.276672>) where an image is draped over a mesh whose density is
+ independent of the image resolution. A C++ header library is installed so
+ that other packages may generate mesh components via 'LinkingTo'.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: graphics, grDevices
+Depends: R (>= 3.6.0)
+Suggests: knitr, png, rgl, rmarkdown, spelling, testthat
+LinkingTo: cpp11
+VignetteBuilder: knitr
+URL: https://hypertidy.github.io/textures/,
+        https://github.com/hypertidy/textures
+BugReports: https://github.com/hypertidy/textures/issues
+Config/roxygen2/version: 8.0.0
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-07-11 10:01:30 UTC; mdsumner
+Author: Michael D. Sumner [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2471-7511>)
+Maintainer: Michael D. Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-21 09:30:02 UTC

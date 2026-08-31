@@ -1,0 +1,53 @@
+Package: mammalcol
+Title: Access to the List of Mammal Species of Colombia
+Version: 0.2.9
+Authors@R: 
+    c(
+    person("Diego J.", "Lizcano", , "dj.lizcano@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9648-0576")),
+    person("Cristian A.", "Cruz-Rodríguez", , "cristian.alexander.cruz.rodriguez@umontreal.ca", role = c("ctb","aut"),
+           comment = c(ORCID = "0000-0002-8319-4706")),
+    person("Andres F.", "Suárez-Castro", , "a.suarezcastro@griffith.edu.au", role = c("ctb","aut"),
+           comment = c(ORCID = "0000-0002-6621-3821")),
+    person("Baltazar", "González", , "baltazargch@gmail.com", role = c("ctb","aut"),
+           comment = c(ORCID = "0000-0001-5805-8107")),
+    person("Alejandra", "Bonilla-Sánchez", , "alejabonilla.sanchez@gmail.com", role = c("ctb"),
+           comment = c(ORCID = "0000-0003-0803-5884")),
+    person("Camilo A.", "Calderón-Acevedo", , "calderon.mammalogy@gmail.com", role = c("ctb"),
+           comment = c(ORCID = "0000-0002-1468-3565"))
+           )
+Date: 2025-09-22
+Maintainer: Diego J. Lizcano <dj.lizcano@gmail.com>
+Description: The goal of 'mammalcol' is to provide easy access to a meticulously 
+            structured dataset of Colombian mammal species in R. The 2025 update includes 
+            comprehensive, detailed species accounts, and distribution information.
+License: MIT + file LICENSE
+URL: https://github.com/dlizcano/mammalcol,
+        https://dlizcano.github.io/mammalcol/
+BugReports: https://github.com/dlizcano/mammalcol/issues
+Depends: R (>= 3.5.0)
+Imports: ggplot2, magrittr, sf, geodata,
+Suggests: dplyr, finch, knitr, readr, readxl, rmarkdown, stringr,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-09-22 16:51:35 UTC; usuario
+Author: Diego J. Lizcano [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9648-0576>),
+  Cristian A. Cruz-Rodríguez [ctb, aut] (ORCID:
+    <https://orcid.org/0000-0002-8319-4706>),
+  Andres F. Suárez-Castro [ctb, aut] (ORCID:
+    <https://orcid.org/0000-0002-6621-3821>),
+  Baltazar González [ctb, aut] (ORCID:
+    <https://orcid.org/0000-0001-5805-8107>),
+  Alejandra Bonilla-Sánchez [ctb] (ORCID:
+    <https://orcid.org/0000-0003-0803-5884>),
+  Camilo A. Calderón-Acevedo [ctb] (ORCID:
+    <https://orcid.org/0000-0002-1468-3565>)
+Repository: CRAN
+Date/Publication: 2025-09-30 07:20:13 UTC

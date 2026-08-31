@@ -1,0 +1,39 @@
+Package: pgt
+Type: Package
+Title: Data Envelopment Analysis for Pollution-Generating Technologies
+Version: 0.6.1
+Authors@R: c(
+    person("Erik", "Enstad", email = "erik.enstad@nhh.no",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-1053-3849")))
+Description: Nonparametric efficiency analysis for pollution-generating
+    technologies under the materials-balance principle. Implements the
+    weak-G-disposability model of Rodseth (2025)
+    <doi:10.1007/s11123-025-00768-0> and its factorially determined
+    multi-output representation, the by-production intersection
+    technology of Murty, Russell and Levkoff (2012)
+    <doi:10.1016/j.jeem.2012.02.005>, the materials-balance cost model of
+    Coelli, Lauwers and Van Huylenbroeck (2007)
+    <doi:10.1007/s11123-007-0052-8> and a weak-disposability reference
+    model, with an enforced materials-balance identity, a pre-estimation
+    feasibility audit, metafrontier decompositions, bad-output shadow
+    prices, marginal abatement cost curves, a cross-axiom comparison
+    harness, a global Malmquist-Luenberger productivity index and
+    subsampling inference. Estimators are solved with 'lpSolveAPI'.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, utils, lpSolveAPI
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, frontier
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+URL: https://github.com/iik1/pgt
+BugReports: https://github.com/iik1/pgt/issues
+NeedsCompilation: no
+Packaged: 2026-08-11 17:38:16 UTC; s14454
+Author: Erik Enstad [aut, cre] (ORCID: <https://orcid.org/0009-0006-1053-3849>)
+Maintainer: Erik Enstad <erik.enstad@nhh.no>
+Repository: CRAN
+Date/Publication: 2026-08-19 11:30:02 UTC

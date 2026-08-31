@@ -1,0 +1,35 @@
+Package: gsDesignTune
+Title: Dependency-Aware Scenario Exploration for Group Sequential
+        Designs
+Version: 0.1.0
+Authors@R: c(
+    person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0250-5673")))
+Description: Provides systematic, dependency-aware exploration of
+    group sequential designs created with 'gsDesign'.
+    Supports reproducible grid and random search over user-defined
+    candidate sets, parallel evaluation via the 'future' framework,
+    standardized metric extraction, and auditable reporting for
+    design-space evaluation and trade-off analysis.
+    Methods for group sequential design are described in
+    Anderson (2025) <doi:10.32614/CRAN.package.gsDesign>.
+    The 'future' framework for parallel processing is described in
+    Bengtsson (2021) <doi:10.32614/RJ-2021-048>.
+License: MIT + file LICENSE
+URL: https://nanx.me/gsDesignTune/,
+        https://github.com/nanxstats/gsDesignTune
+BugReports: https://github.com/nanxstats/gsDesignTune/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: digest, future.apply, ggplot2, gsDesign, progressr, R6, rlang
+Suggests: future, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-02 01:17:01 UTC; nanx
+Author: Nan Xiao [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0250-5673>)
+Maintainer: Nan Xiao <me@nanx.me>
+Repository: CRAN
+Date/Publication: 2026-02-04 18:10:08 UTC

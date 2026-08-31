@@ -1,0 +1,45 @@
+Type: Package
+Package: IRISSeismic
+Version: 1.10.0
+Title: Classes and Methods for Seismic Data Analysis
+Authors@R: c(
+    person("Jonathan", "Callahan", email="jonathan@mazamascience.com", role=c("aut")),
+    person("Rob", "Casey", email="rob.casey@earthscope.org", role=c("aut")),
+    person("Gillian", "Sharer", email="gillian.sharer@earthscope.org", role=c("aut","cre")),
+    person("Mary", "Templeton", email="mary.templeton@earthscope.org", role=c("aut")),
+    person("Chad", "Trabant", email="chad.trabant@earthscope.org", role=c("ctb","cph"), comment="Author of the bundled libmseed library (LGPL-3)"),
+    person("H. Philip", "Crotwell", email="crotwell@seis.sc.edu", role=c("cph"), comment="Author of the bundled TauP, seisFile, and seedCodec libraries (LGPL-3)")
+    )
+Depends: R (>= 3.1.0)
+Imports: methods, pracma, RCurl, seismicRoll (>= 1.1.0), signal,
+        stringr, XML, stats
+Suggests: knitr,rmarkdown
+VignetteBuilder: knitr
+Description: Provides classes and methods for seismic data analysis. The
+             base classes and methods are inspired by the python code found in
+             the 'ObsPy' python toolbox <https://github.com/obspy/obspy>. Additional classes and
+             methods support data returned by web services provided by the EarthScope Consortium.
+             <https://service.earthscope.org/>.
+Collate: Class-Trace.R Class-Stream.R Class-IrisClient.R
+        mseedWrappers.R Utils.R spectralUtils.R zzz.R
+License: GPL (>= 2)
+Repository: CRAN
+SystemRequirements: Java JRE 8 or later
+NeedsCompilation: yes
+Author: Jonathan Callahan [aut],
+  Rob Casey [aut],
+  Gillian Sharer [aut, cre],
+  Mary Templeton [aut],
+  Chad Trabant [ctb, cph] (Author of the bundled libmseed library
+    (LGPL-3)),
+  H. Philip Crotwell [cph] (Author of the bundled TauP, seisFile, and
+    seedCodec libraries (LGPL-3))
+Maintainer: Gillian Sharer <gillian.sharer@earthscope.org>
+Copyright: IRISSeismic authors; libmseed (LGPL-3) by Chad Trabant, IRIS
+        Data Management Center https://github.com/iris-edu/libmseed;
+        TauP, seisFile, and seedCodec (LGPL-3) by H. Philip Crotwell
+        https://github.com/crotwell; reload4j and Gson (Apache-2.0) by
+        The Apache Software Foundation and Google Inc. respectively;
+        see inst/NOTICE for details
+Packaged: 2026-07-21 00:09:33 UTC; gilliansharer
+Date/Publication: 2026-07-21 03:40:02 UTC

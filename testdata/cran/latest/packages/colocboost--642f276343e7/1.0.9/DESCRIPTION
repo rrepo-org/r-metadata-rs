@@ -1,0 +1,41 @@
+Package: colocboost
+Type: Package
+Date: 2026-06-07
+Title: Multi-Context Colocalization Analysis for QTL and GWAS Studies
+Version: 1.0.9
+Authors@R: c(
+  person(given = "Xuewei", family = "Cao", email = "xc2270@cumc.columbia.edu", role = c("cre", "aut", "cph")),
+  person(given = "Haochen", family = "Sun", email = "hs3393@cumc.columbia.edu", role = c("aut", "cph")),
+  person(given = "Ru", family = "Feng", email = "rf2872@cumc.columbia.edu", role = c("aut", "cph")),
+  person(given = "Daniel", family = "Nachun", role = c("aut", "cph")),
+  person(given = "Kushal", family = "Dey", email = "deyk@mskcc.org", role = c("aut", "cph")),
+  person(given = "Gao", family = "Wang", email = "wang.gao@columbia.edu", role = c("aut", "cph"))
+  )
+Maintainer: Xuewei Cao <xc2270@cumc.columbia.edu>
+Description: A multi-task learning approach to variable selection regression with highly correlated predictors and sparse effects, 
+  based on frequentist statistical inference. It provides statistical evidence to identify which subsets of predictors have non-zero 
+  effects on which subsets of response variables, motivated and designed for colocalization analysis across genome-wide association studies (GWAS)
+  and quantitative trait loci (QTL) studies.
+  The ColocBoost model is described in Cao et. al. (2025) <doi:10.1101/2025.04.17.25326042>.
+Encoding: UTF-8
+LazyDataCompression: xz
+LazyData: true
+RoxygenNote: 7.3.3
+URL: https://github.com/StatFunGen/colocboost
+BugReports: https://github.com/StatFunGen/colocboost/issues
+Depends: R (>= 4.0.0)
+Imports: Rfast, matrixStats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, ashr, MASS, susieR
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+License: MIT + file LICENSE
+NeedsCompilation: no
+Packaged: 2026-06-07 14:30:03 UTC; xueweic
+Author: Xuewei Cao [cre, aut, cph],
+  Haochen Sun [aut, cph],
+  Ru Feng [aut, cph],
+  Daniel Nachun [aut, cph],
+  Kushal Dey [aut, cph],
+  Gao Wang [aut, cph]
+Repository: CRAN
+Date/Publication: 2026-06-08 06:40:02 UTC

@@ -1,0 +1,43 @@
+Package: SynthETIC
+Title: Synthetic Experience Tracking Insurance Claims
+Version: 1.1.2
+Authors@R: c(
+    person("Benjamin", "Avanzi", role = "aut", email = "b.avanzi@unimelb.edu.au"),
+    person("William", "Ho", role = "aut", email = "ho.w@unimelb.edu.au"),
+    person("Greg", "Taylor", role = "aut", email = "greg_taylor60@hotmail.com"),
+    person("Melantha", "Wang", role = c("aut", "cre"), email = "wang.melantha@gmail.com"),
+    person("Bernard", "Wong", role = "aut", email = "bernard.wong@unsw.edu.au"),
+    person("Patrick", "Laub", role = "ctb", email = "patrick.laub@gmail.com"))
+Author: Benjamin Avanzi [aut],
+  William Ho [aut],
+  Greg Taylor [aut],
+  Melantha Wang [aut, cre],
+  Bernard Wong [aut],
+  Patrick Laub [ctb]
+Maintainer: Melantha Wang <wang.melantha@gmail.com>
+Imports: stats, ggplot2, magrittr, rlang, methods, dplyr
+Description: Creation of an individual claims simulator which generates various
+    features of non-life insurance claims. An initial set of test parameters,
+    designed to mirror the experience of an Auto Liability portfolio, were set
+    up and applied by default to generate a realistic test data set of
+    individual claims (see vignette). The simulated data set then allows
+    practitioners to back-test the validity of various reserving models and to
+    prove and/or disprove certain actuarial assumptions made in claims
+    modelling. The distributional assumptions used to generate this data set can
+    be easily modified by users to match their experiences. Reference: Avanzi B,
+    Taylor G, Wang M, Wong B (2020) "SynthETIC: an individual insurance claim
+    simulator with feature control" <doi:10.48550/arXiv.2008.05693>.
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/agi-lab/SynthETIC
+BugReports: https://github.com/agi-lab/SynthETIC/issues
+LazyData: true
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, RColorBrewer, actuar, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-08 13:38:52 UTC; melantha
+Repository: CRAN
+Date/Publication: 2026-08-30 05:10:39 UTC

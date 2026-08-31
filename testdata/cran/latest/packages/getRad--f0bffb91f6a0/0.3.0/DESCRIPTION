@@ -1,0 +1,67 @@
+Package: getRad
+Title: Download Radar Data for Biological Research
+Version: 0.3.0
+Authors@R: c(
+    person("Bart", "Kranstauber", , "b.kranstauber@uva.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8303-780X", affiliation = "University of Amsterdam")),
+    person("Pieter", "Huybrechts", , "pieter.huybrechts@inbo.be", role = "aut",
+           comment = c(ORCID = "0000-0002-6658-6062", affiliation = "Research Institute for Nature and Forest (INBO)")),
+    person("Peter", "Desmet", , "peter.desmet@inbo.be", role = "aut",
+           comment = c(ORCID = "0000-0002-8442-8025", affiliation = "Research Institute for Nature and Forest (INBO)")),
+    person("Cecilia", "Nilsson", , "cecilia.nilsson@biol.lu.se", role = "ctb",
+           comment = c(ORCID = "0000-0001-8957-4411", affiliation = "Lund University")),
+    person("Alexander", "Tedeschi", , "at744@cornell.edu", role = "ctb",
+           comment = c(ORCID = "0000-0003-0772-6931", affiliation = "Cornell Lab of Ornithology")),
+    person("Hidde", "Leijnse", role = "ctb",
+           comment = c(ORCID = "0000-0001-7835-4480", affiliation = "Royal Netherlands Meteorological Institute")),
+    person("Bart", "Hoekstra", role = "ctb",
+           comment = c(ORCID = "0000-0002-7085-3805", affiliation = "University of Amsterdam")),
+    person("University of Amsterdam", role = "cph",
+           comment = c(ROR = "04dkp9463")),
+    person("Biodiversa+", role = "fnd",
+           comment = "https://hirad.science/")
+  )
+Description: Load polar volume and vertical profile data for
+    aeroecological research directly into R. With 'getRad' you can access
+    data from several sources in Europe and the US and standardize it to
+    facilitate further exploration in tools such as 'bioRad'.
+License: MIT + file LICENSE
+URL: https://github.com/aloftdata/getRad,
+        https://aloftdata.github.io/getRad/
+BugReports: https://github.com/aloftdata/getRad/issues
+Depends: R (>= 4.1.0)
+Imports: bioRad, cachem, cli, dplyr (>= 1.1.0), glue, httr2 (>= 1.1.1),
+        lubridate, purrr (>= 1.0.0), rlang, tibble, tools, utils,
+        vroom, withr, xml2
+Suggests: askpass, fs, htmltools, keyring, knitr, leaflet, rhdf5,
+        rnaturalearth, rnaturalearthdata, sf, testthat (>= 3.0.0),
+        tidyr, vol2birdR
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/Needs/website: rmarkdown, leafpop, htmltools
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-11 15:00:48 UTC; bart
+Author: Bart Kranstauber [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8303-780X>, affiliation: University of
+    Amsterdam),
+  Pieter Huybrechts [aut] (ORCID:
+    <https://orcid.org/0000-0002-6658-6062>, affiliation: Research
+    Institute for Nature and Forest (INBO)),
+  Peter Desmet [aut] (ORCID: <https://orcid.org/0000-0002-8442-8025>,
+    affiliation: Research Institute for Nature and Forest (INBO)),
+  Cecilia Nilsson [ctb] (ORCID: <https://orcid.org/0000-0001-8957-4411>,
+    affiliation: Lund University),
+  Alexander Tedeschi [ctb] (ORCID:
+    <https://orcid.org/0000-0003-0772-6931>, affiliation: Cornell Lab
+    of Ornithology),
+  Hidde Leijnse [ctb] (ORCID: <https://orcid.org/0000-0001-7835-4480>,
+    affiliation: Royal Netherlands Meteorological Institute),
+  Bart Hoekstra [ctb] (ORCID: <https://orcid.org/0000-0002-7085-3805>,
+    affiliation: University of Amsterdam),
+  University of Amsterdam [cph] (ROR: <https://ror.org/04dkp9463>),
+  Biodiversa+ [fnd] (https://hirad.science/)
+Maintainer: Bart Kranstauber <b.kranstauber@uva.nl>
+Repository: CRAN
+Date/Publication: 2026-06-11 15:20:02 UTC

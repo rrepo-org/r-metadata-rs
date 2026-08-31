@@ -1,0 +1,33 @@
+Package: factorana
+Type: Package
+Title: Factor Model Estimation with Latent Variables
+Version: 1.7.1
+Authors@R: c(
+    person("Greg", "Veramendi", email = "greg.veramendi@gmail.com",
+           role = c("aut", "cre")),
+    person("Jess", "Xiong", role = "aut")
+    )
+Description: A flexible framework for estimating factor models with multiple
+    latent variables. Supports linear, probit, ordered probit, and multinomial
+    logit model components. Features include multi-stage estimation, automatic
+    parameter initialization, analytical gradients and Hessians, and parallel
+    estimation. Methods are described in Heckman, Humphries, and Veramendi
+    (2016) <doi:10.1016/j.jeconom.2015.12.001>, Heckman, Humphries, and
+    Veramendi (2018) <doi:10.1086/698760>, and Humphries, Joensen, and
+    Veramendi (2024) <doi:10.1257/pandp.20241026>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: Rcpp (>= 1.0.0), MASS, nnet, parallel, stats, utils
+LinkingTo: Rcpp, RcppEigen
+Suggests: doParallel, foreach, jsonlite, knitr, nloptr, rmarkdown,
+        sandwich, testthat (>= 3.0.0), trustOptim
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-06-10 07:06:05 UTC; mendi
+Author: Greg Veramendi [aut, cre],
+  Jess Xiong [aut]
+Maintainer: Greg Veramendi <greg.veramendi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-10 07:30:02 UTC

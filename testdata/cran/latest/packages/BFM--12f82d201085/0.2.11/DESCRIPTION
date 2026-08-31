@@ -1,0 +1,22 @@
+Package: BFM
+Type: Package
+Title: Beta Factor Model
+Version: 0.2.11
+Authors@R: c(person(given = "Guangbao", family = "Guo", role = c("aut", "cre"), email = "ggb11111111@163.com"),
+    person(given = "Jiahui", family = "Feng", role = "aut", email = "fengjh0601@163.com"))
+Author: Guangbao Guo [aut, cre],
+  Jiahui Feng [aut]
+Maintainer: Guangbao Guo <ggb11111111@163.com>
+Description: Provides tools for factor analysis in financial and econometric settings under Beta factor models. It includes functions to simulate factor-model data with Beta-distributed idiosyncratic components (e.g., standard Beta, scaled Beta, and truncated Beta distributions) and to conduct model diagnostic assessments such as likelihood ratio tests for factor number selection and goodness-of-fit tests for Beta distribution assumptions. Estimation routines encompass maximum likelihood estimation for finite-dimensional Beta factor models, regularized Beta factor analysis for high-dimensional datasets, and shrinkage-based estimation for robust Beta factor loading recovery in noisy or incomplete data environments. The package's methodological framework is detailed in Guo G. (2023) <doi:10.1007/s00180-022-01270-z>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Suggests: testthat (>= 3.0.0), spelling, betareg, zoib
+NeedsCompilation: no
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: MASS, psych, stats
+Language: en-US
+Packaged: 2026-05-12 12:44:40 UTC; Administrator
+Repository: CRAN
+Date/Publication: 2026-05-18 18:20:13 UTC

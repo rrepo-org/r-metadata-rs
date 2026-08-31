@@ -1,0 +1,27 @@
+Package: slasso
+Type: Package
+Title: S-LASSO Estimator for the Function-on-Function Linear Regression
+Version: 1.0.1
+Authors@R: c(
+    person("Fabio", "Centofanti", 
+      email = "fabio.centofanti@kuleuven.be", 
+      role = c("cre","aut"))
+    )
+Description: Implements the smooth LASSO estimator for the function-on-function linear regression model described in Centofanti et al. (2022) <doi:10.1016/j.csda.2022.107556>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp, RcppArmadillo
+Depends: inline
+Imports: Rcpp, fda, fda.usc, matrixcalc, parallel, matrixStats, MASS,
+        plot3D, methods, cxxfunplus
+URL: https://github.com/fabiocentofanti/slasso
+BugReports: https://github.com/fabiocentofanti/slasso/issues
+SystemRequirements: GNU make
+Suggests: knitr, rmarkdown, testthat
+NeedsCompilation: yes
+Packaged: 2026-01-19 14:31:17 UTC; u0176071
+Author: Fabio Centofanti [cre, aut]
+Maintainer: Fabio Centofanti <fabio.centofanti@kuleuven.be>
+Repository: CRAN
+Date/Publication: 2026-01-19 14:50:02 UTC

@@ -1,0 +1,45 @@
+Package: twang
+Version: 2.6.2
+Date: 2025-12-22
+Title: Toolkit for Weighting and Analysis of Nonequivalent Groups
+Authors@R: c(person(given = "Matthew",
+                        family = "Cefalu",
+                        role = "aut"),
+                 person(given = "Greg",
+                        family = "Ridgeway",
+                        role = "aut"),
+                 person(given = "Dan",
+                        family = "McCaffrey",
+                        role = "aut"),
+                 person(given = "Andrew",
+                        family = "Morral",
+                        role = "aut"),
+                 person(given = c("Beth", "Ann"),
+                        family = "Griffin",
+                        role = "aut"),
+                 person(given = "Lane",
+                        family = "Burgette",
+                        role = c("aut", "cre"),
+                        email = "burgette@rand.org"))
+Maintainer: Lane Burgette <burgette@rand.org>
+Depends: R (>= 2.10)
+Imports: gbm (>= 1.5-3), survey, xtable, lattice, latticeExtra,
+        MatrixModels, data.table, ggplot2, xgboost
+Suggests: knitr
+Description: Provides functions for propensity score
+        estimating and weighting, nonresponse weighting, and diagnosis
+        of the weights.
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+NeedsCompilation: yes
+Repository: CRAN
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Packaged: 2025-12-22 17:14:00 UTC; burgette
+Date/Publication: 2025-12-23 06:10:02 UTC
+Author: Matthew Cefalu [aut],
+  Greg Ridgeway [aut],
+  Dan McCaffrey [aut],
+  Andrew Morral [aut],
+  Beth Ann Griffin [aut],
+  Lane Burgette [aut, cre]

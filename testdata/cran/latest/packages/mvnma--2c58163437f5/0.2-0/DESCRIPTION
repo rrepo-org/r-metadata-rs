@@ -1,0 +1,32 @@
+Package: mvnma
+Title: Multivariate Network Meta-Analysis using Bayesian Methods
+Version: 0.2-0
+Date: 2026-07-09
+Depends: R (>= 4.0.0), meta (>= 8.3-0), netmeta (>= 3.4-0)
+Imports: R2jags, coda, dplyr, magrittr, matrixStats, rlist, ggplot2,
+        forcats
+Authors@R: c(person("Theodoros", "Evrenoglou",
+                    role = c("aut", "cre"),
+                    email = "theodoros.evrenoglou@uniklinik-freiburg.de",
+                    comment = c(ORCID = "0000-0003-3336-8058")),
+             person("Guido", "Schwarzer",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0001-6214-9087")))
+Maintainer: Theodoros Evrenoglou <theodoros.evrenoglou@uniklinik-freiburg.de>
+URL: https://github.com/TEvrenoglou/mvnma
+Description: Tools to conduct Bayesian multivariate network meta-analysis providing
+ - the single correlation coefficient model by Efthimiou et al. (2015) <doi:10.1093/biostatistics/kxu030>;
+ - per-outcome treatment hierarchies using the surface under the cumulative ranking curve (SUCRA), the probability of best value, or median (or mean) ranks (Salanti et al., 2011) <doi:10.1016/j.jclinepi.2010.03.016>;
+ - across-outcomes benefit-risk assessment using the VišeKriterijumska Optimizacija I Kompromisno Rešenje (VIKOR) method (Opricovic & Tzeng, 2004) <doi:10.1016/S0377-2217(03)00020-1>;
+ - convergence checks using trace plots, density plots, or the R-hat statistic;
+ - forest plots of treatment estimates, scatter plots of per-outcome rankings, Hasse diagrams (Carlsen & Bruggemann, 2014) <doi:10.1002/cem.2569> to visualize the partial order of the treatments across all outcomes.
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-09 12:22:21 UTC; evrenogl
+Author: Theodoros Evrenoglou [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3336-8058>),
+  Guido Schwarzer [aut] (ORCID: <https://orcid.org/0000-0001-6214-9087>)
+Repository: CRAN
+Date/Publication: 2026-07-09 16:40:02 UTC

@@ -1,0 +1,41 @@
+Package: twoCoprimary
+Type: Package
+Title: Sample Size and Power Calculation for Two Co-Primary Endpoints
+Version: 1.1.0
+Authors@R: person(given = "Gosuke",
+                  family = "Homma",
+                  role = c("aut", "cre"),
+                  email = "my.name.is.gosuke@gmail.com",
+                  comment = c(ORCID = "0000-0002-6854-5627"))
+Description: Comprehensive functions to calculate sample size and power for 
+    clinical trials with two co-primary endpoints. The package supports five 
+    endpoint combinations: two continuous endpoints (Sozu et al. 2011 
+    <doi:10.1080/10543406.2011.551329>), two binary endpoints using asymptotic 
+    methods (Sozu et al. 2010 <doi:10.1002/sim.3972>) and exact methods (Homma 
+    and Yoshida 2025 <doi:10.1177/09622802251368697>), mixed continuous and 
+    binary endpoints (Sozu et al. 2012 <doi:10.1002/bimj.201100221>), and mixed 
+    count and continuous endpoints (Homma and Yoshida 2024 
+    <doi:10.1002/pst.2337>). All methods appropriately account for correlation 
+    between endpoints and provide both sample size and power calculation 
+    capabilities.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: mvtnorm, pbivnorm, fpCompare, Rcpp, stats
+LinkingTo: Rcpp
+Suggests: dplyr, Exact, knitr, readr, rmarkdown, spelling, testthat (>=
+        3.0.0), tibble, tidyr
+VignetteBuilder: knitr
+URL: https://gosukehommaex.github.io/twoCoprimary/,
+        https://github.com/gosukehommaEX/twoCoprimary
+BugReports: https://github.com/gosukehommaEX/twoCoprimary/issues
+Language: en-US
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-29 04:21:32 UTC; i_lik
+Author: Gosuke Homma [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6854-5627>)
+Maintainer: Gosuke Homma <my.name.is.gosuke@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-29 04:40:03 UTC

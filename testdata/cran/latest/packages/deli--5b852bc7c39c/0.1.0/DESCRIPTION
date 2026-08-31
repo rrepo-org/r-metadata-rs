@@ -1,0 +1,45 @@
+Package: deli
+Title: M-Estimation and Empirical Sandwich Variance Estimation
+Version: 0.1.0
+Authors@R: c(
+    person("Malcolm", "Barrett", , "malcolmbarrett@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-0299-5825")),
+    person("Paul", "Zivich", role = "ctb",
+           comment = c(ORCID = "0000-0002-9932-1095", "Author of the Python 'delicatessen' library, whose design deli ports"))
+  )
+Description: Solves estimating equations to obtain M-estimators together
+    with empirical sandwich variance estimates, providing a general
+    interface for both custom and built-in estimating equations.  Built-in
+    equations cover basic statistics, regression, causal inference,
+    survival analysis, measurement error, and more. An 'R' port of the
+    'Python' library 'delicatessen' described in 'Zivich et al. (2022)'
+    <doi:10.48550/arXiv.2203.11300>.
+License: MIT + file LICENSE
+URL: https://github.com/r-causal/deli, https://r-causal.github.io/deli/
+BugReports: https://github.com/r-causal/deli/issues
+Depends: R (>= 4.3)
+Imports: cli, generics, rlang (>= 1.0.0), rootSolve, S7 (>= 0.2.0),
+        stats
+Suggests: causaldata, jsonlite, knitr, MASS, minpack.lm, nleqslv, nlme,
+        quarto, readxl, rmarkdown, testthat (>= 3.0.0), yaml
+VignetteBuilder: knitr
+Config/Needs/website: ggplot2, quarto, reticulate
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: confidence-bands, autodiff, predictions,
+        estimate-solvers, validation, formula-interface
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyDataCompression: xz
+NeedsCompilation: no
+Packaged: 2026-08-21 08:13:57 UTC; malcolmbarrett
+Author: Malcolm Barrett [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-0299-5825>),
+  Paul Zivich [ctb] (ORCID: <https://orcid.org/0000-0002-9932-1095>,
+    Author of the Python 'delicatessen' library, whose design deli
+    ports)
+Maintainer: Malcolm Barrett <malcolmbarrett@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-28 09:40:02 UTC

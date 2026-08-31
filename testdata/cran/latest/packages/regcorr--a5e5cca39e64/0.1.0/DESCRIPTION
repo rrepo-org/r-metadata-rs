@@ -1,0 +1,33 @@
+Package: regcorr
+Type: Package
+Title: Regression Models of Pearson Correlation Coefficient
+Version: 0.1.0
+Authors@R: c(
+    person("Ze", "Lin", role = c("aut", "cre"), email = "zlin5858@163.com"),
+    person("Bo", "Li", role = "aut"),
+    person("Jinyao", "Shen", role = "aut")
+    )
+Description: Provides statistical tools for evaluating how covariates
+    influence the strength of Pearson correlation coefficients between
+    two response variables. Supports bivariate normal and bivariate
+    binary responses, with likelihood-based inference and bootstrap-based
+    significance testing. The methodology is based on Dufera, Liu and Xu
+    (2023) "Regression models of Pearson correlation coefficient"
+    <doi:10.1080/24754269.2023.2164970>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/lonze-nb/regcorr
+BugReports: https://github.com/lonze-nb/regcorr/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-30 13:32:53 UTC; 34351
+Author: Ze Lin [aut, cre],
+  Bo Li [aut],
+  Jinyao Shen [aut]
+Maintainer: Ze Lin <zlin5858@163.com>
+Repository: CRAN
+Date/Publication: 2026-06-03 13:50:02 UTC

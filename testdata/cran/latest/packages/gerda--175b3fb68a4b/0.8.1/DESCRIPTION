@@ -1,0 +1,34 @@
+Package: gerda
+Title: German Election Database (GERDA)
+Version: 0.8.1
+Author: Hanno Hilbig [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5849-9172>)
+Authors@R: 
+    person("Hanno", "Hilbig", , "hhilbig@ucdavis.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5849-9172"))
+Description: Provides tools to download datasets of German elections
+    covering local, state, federal, mayoral, European Parliament, and county
+    (Kreistag) elections, with federal county-level coverage from 1953 and
+    other families extending through 2025. The package supplies turnout, vote
+    shares, and derived indicators at the municipal and county level, including
+    geographically harmonized datasets that account for changes in municipal
+    boundaries over time and incorporate mail-in voting districts. Bundled data
+    includes county-level INKAR covariates (1995-2022) and municipality-level
+    Zensus 2022 indicators. Data is sourced from
+    <https://github.com/awiedem/german_election_data>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: dplyr, readr, stats, stringdist, tibble, tools, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/hhilbig/gerda,
+        https://github.com/awiedem/german_election_data
+BugReports: https://github.com/hhilbig/gerda/issues
+VignetteBuilder: knitr
+Maintainer: Hanno Hilbig <hhilbig@ucdavis.edu>
+NeedsCompilation: no
+Packaged: 2026-07-27 11:08:16 UTC; hanno
+Repository: CRAN
+Date/Publication: 2026-07-27 11:40:09 UTC

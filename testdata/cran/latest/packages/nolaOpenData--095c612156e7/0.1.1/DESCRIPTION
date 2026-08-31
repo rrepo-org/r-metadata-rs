@@ -1,0 +1,46 @@
+Package: nolaOpenData
+Type: Package
+Title: A Lightweight Interface to New Orleans Open Data APIs
+Version: 0.1.1
+Authors@R: 
+    c(
+      person("Shelby Lyn", "Gomes", 
+             email = "gomessh@mailbox.org", 
+             role = c("aut"),
+             comment = c(
+               GitHub = "gomes-sh"
+             )),
+      person("Christian", "Martinez", 
+             email = "c.martinez0@outlook.com", 
+             role = c("aut", "cre"),
+             comment = c(
+               GitHub = "martinezc1",
+               ORCID = "0009-0005-6026-6454"
+             ))
+    )
+Description: Provides a unified set of helper functions to access datasets
+    from the New Orleans Open Data platform <https://data.nola.gov/>.
+    Functions return results as tidy tibbles and support optional filtering,
+    sorting, and row limits via the Socrata API. The package provides a
+    consistent interface for discovering and downloading datasets from the
+    San Francisco Open Data Portal using human-readable dataset keys or official
+    Socrata dataset identifiers.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 8.0.0
+Imports: curl, dplyr, httr, janitor, jsonlite, rlang, tibble
+Suggests: ggplot2, knitr, rmarkdown, scales, testthat (>= 3.0.0),
+        tidyr, vcr (>= 0.6.0), webmockr
+URL: https://github.com/gomes-sh/nolaOpenData
+BugReports: https://github.com/gomes-sh/nolaOpenData/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-08-21 14:10:27 UTC; magic
+Author: Shelby Lyn Gomes [aut] (GitHub: gomes-sh),
+  Christian Martinez [aut, cre] (GitHub: martinezc1, ORCID:
+    <https://orcid.org/0009-0005-6026-6454>)
+Maintainer: Christian Martinez <c.martinez0@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-08-30 10:00:09 UTC

@@ -1,0 +1,25 @@
+Package: sumup
+Title: Utilizing Automated Text Analysis to Support Interpretation of
+        Narrative Feedback
+Version: 1.0.3
+Authors@R: 
+    person("Joyce", "Moonen - van Loon", , "j.moonen@maastrichtuniversity.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8883-8822"))
+Description: Combine topic modeling and sentiment analysis to identify individual students' gaps, and highlight their strengths and weaknesses across predefined competency domains and professional activities.
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: data.table, dplyr, jsonlite, magrittr, rlang, udpipe,
+        reticulate, stats, stringr, tibble, tidyr, tidytext,
+        topicmodels, utils
+Suggests: matrixStats, reshape2, sentimentr, slam, stopwords, stringi,
+        textstem, tokenizers
+LazyData: true
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-07-08 10:45:50 UTC; J.Moonen
+Author: Joyce Moonen - van Loon [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8883-8822>)
+Maintainer: Joyce Moonen - van Loon <j.moonen@maastrichtuniversity.nl>
+Repository: CRAN
+Date/Publication: 2026-07-10 07:00:02 UTC

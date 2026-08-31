@@ -1,0 +1,33 @@
+Package: akin
+Type: Package
+Title: Functional Utilities for Data Processing
+Version: 0.3.7
+Authors@R: c(
+    person(
+      "Dragos", "Bandur",
+      email = "dbandur@sympatico.ca",
+      role = c("aut", "cre")
+    )
+  )
+Description: Covers several areas of data processing: batch-splitting, reading and writing of large
+    data files, data tiling, one-hot encoding and decoding of data tiles, stratified proportional
+    (random or probabilistic) data sampling, data normalization and thresholding, substring location
+    and commonalities inside strings, and location and tabulation of amino acids, modifications or 
+    associated monoisotopic masses inside modified peptides. The extractor implements code from
+    'Matrix.utils', Varrichio C (2020), <https://cran.r-project.org/package=Matrix.utils>.
+License: GPL (>= 3)
+Imports: data.table (>= 1.18.2.0), RVerbalExpressions (>= 0.1.0),
+        methods
+Depends: R (>= 4.1.0), callr, fastmatch, listenv, Matrix, RcppAlgos,
+        utils
+Encoding: UTF-8
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+ByteCompile: yes
+Packaged: 2026-06-11 16:37:25 UTC; Dragos
+Author: Dragos Bandur [aut, cre]
+Maintainer: Dragos Bandur <dbandur@sympatico.ca>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2026-06-15 09:00:03 UTC

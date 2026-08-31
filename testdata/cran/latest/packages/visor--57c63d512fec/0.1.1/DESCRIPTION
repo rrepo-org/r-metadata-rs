@@ -1,0 +1,35 @@
+Package: visor
+Title: Geospatial Tools for Visibility Analysis
+Version: 0.1.1
+Authors@R: c(
+    person("Claudiu", "Forgaci", , "c.forgaci@tudelft.nl", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-3218-5102")),
+    person("Francesco", "Nattino", , "f.nattino@esciencecenter.nl", role = "aut",
+           comment = c(ORCID = "0000-0003-3286-0139")),
+    person("Netherlands eScience Center", , , "info@esciencecenter.nl", role = "fnd")
+  )
+Description: Provides tools for visibility analysis in geospatial data. It
+    offers functionality to perform isovist calculations, using arbitrary
+    geometries as both viewpoints and occluders.
+License: Apache License (>= 2)
+URL: https://cityriverspaces.github.io/visor/,
+        https://github.com/CityRiverSpaces/visor,
+        https://doi.org/10.5281/zenodo.15133420
+BugReports: https://github.com/CityRiverSpaces/visor/issues
+Imports: sf, sfheaders
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 4.2)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-04 21:50:26 UTC; claudiuforgaci
+Author: Claudiu Forgaci [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3218-5102>),
+  Francesco Nattino [aut] (ORCID:
+    <https://orcid.org/0000-0003-3286-0139>),
+  Netherlands eScience Center [fnd]
+Maintainer: Claudiu Forgaci <c.forgaci@tudelft.nl>
+Repository: CRAN
+Date/Publication: 2025-12-05 06:30:02 UTC

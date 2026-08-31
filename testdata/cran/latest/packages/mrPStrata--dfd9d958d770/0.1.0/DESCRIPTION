@@ -1,0 +1,42 @@
+Package: mrPStrata
+Type: Package
+Title: Multiply Robust Estimation in Causal Survival Analysis with
+        Treatment Noncompliance
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Chao",
+           family = "Cheng",
+           role = c("aut", "cre"),
+           email = "chaoc@wustl.edu"),
+    person(given = "Bo",
+           family = "Liu",
+           role = "aut",
+           email = "bo.liu1997@duke.edu"),
+    person(given = "Fan",
+           family = "Li",
+           role = "aut",
+           email = "fl35@duke.edu"),
+    person(given = "Fan",
+           family = "Li",
+           role = "aut",
+           email = "fan.f.li@yale.edu")
+    )
+Description: Provides multiply robust estimators of principal survival causal effects among always-takers, compliers, and never-takers in studies with treatment noncompliance. The methods are based on Cheng et al. (2026) <doi:10.1214/25-AOAS2117>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: dplyr, ggplot2, magrittr, progress, survival
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-06 16:44:20 UTC; chaocheng
+Author: Chao Cheng [aut, cre],
+  Bo Liu [aut],
+  Fan Li [aut],
+  Fan Li [aut]
+Maintainer: Chao Cheng <chaoc@wustl.edu>
+Repository: CRAN
+Date/Publication: 2026-05-12 17:40:02 UTC

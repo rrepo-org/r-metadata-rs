@@ -1,0 +1,31 @@
+Package: egnyte
+Title: Read and Write Files from 'Egnyte'
+Version: 0.1.2
+Authors@R: 
+    person(given = "Mike",
+           family = "Stackhouse",
+           role = c("aut", "cre"),
+           email = "mike.stackhouse@atorusresearch.com",
+           comment = c(ORCID = "0000-0001-6030-723X"))
+Description: Provides functions to read and write files from 'Egnyte' cloud
+    storage using the 'Egnyte' API <https://developers.egnyte.com/docs>.
+    Supports both API key and 'OAuth' 2.0 authentication for file transfer
+    operations.
+Depends: R (>= 4.1.0)
+License: Apache License 2.0 | file LICENSE
+URL: https://atorus-research.github.io/egnyte/
+BugReports: https://github.com/atorus-research/egnyte/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: cli, httr2
+Suggests: haven, jsonlite, knitr, readr, readxl, rmarkdown, testthat
+        (>= 3.0.0), withr, writexl
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-06 14:00:51 UTC; mstackhouse
+Author: Mike Stackhouse [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6030-723X>)
+Maintainer: Mike Stackhouse <mike.stackhouse@atorusresearch.com>
+Repository: CRAN
+Date/Publication: 2026-02-09 19:20:13 UTC

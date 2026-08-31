@@ -1,0 +1,38 @@
+Type: Package
+Package: invivoPKfit
+Title: Fits Toxicokinetic Models to In Vivo PK Data Sets
+Version: 2.0.2
+Date: 2025-8-26
+Authors@R: c(person("John", "Wambaugh", email = "wambaugh.john@epa.gov", 
+             role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4024-534X")),
+             person("Caroline", "Ring", email = "Ring.Caroline@epa.gov", 
+             role = c("aut"), comment = c(ORCID = "0000-0002-0463-1251")),
+             person("Gilberto", "Padilla Mercado", role = c("aut"),
+             comment = c(ORCID = "0000-0001-5423-1646")),
+             person("Chris", "Cook", role = c("aut"))
+             )
+Author: John Wambaugh [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4024-534X>),
+  Caroline Ring [aut] (ORCID: <https://orcid.org/0000-0002-0463-1251>),
+  Gilberto Padilla Mercado [aut] (ORCID:
+    <https://orcid.org/0000-0001-5423-1646>),
+  Chris Cook [aut]
+Maintainer: John Wambaugh <wambaugh.john@epa.gov>
+Description: Takes in vivo toxicokinetic concentration-time data and fits
+    parameters of 1-compartment and 2-compartment models for each
+    chemical. These methods are described in detail in "Informatics for Toxicokinetics" (2025).
+License: GPL-3
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, ggplot2, httk, MASS, Matrix, mirai, numDeriv,
+        optimx, PK, pracma, purrr, rlang, stats, scales, tibble, tidyr
+Suggests: cowplot, knitr, RColorBrewer, rmarkdown, stringr, testthat
+        (>= 3.0.0), glue, tidyverse
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: TRUE
+NeedsCompilation: no
+Packaged: 2025-08-26 13:29:28 UTC; GPADILLA
+RoxygenNote: 7.3.2
+Repository: CRAN
+Date/Publication: 2025-08-26 14:10:02 UTC

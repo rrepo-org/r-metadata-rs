@@ -1,0 +1,43 @@
+Package: ELAplus
+Language: en-US
+Type: Package
+Title: Energy Landscape Analysis for Ecological Communities
+Version: 1.0.2
+Date: 2026-05-15
+Author: Kenta Suzuki [aut, cre, cph],
+  Sotaro Takano [aut],
+  Hiroaki Fujita [aut],
+  Zeus Sato [ctb],
+  Fumihiko Ayabe [ctb]
+Authors@R: c(
+    person("Kenta", "Suzuki",
+           email = "kenta.suzuki.zk@riken.jp",
+           role = c("aut","cre","cph")),
+    person("Sotaro", "Takano",
+           email = "sotaro.takano@riken.jp",
+           role = "aut"),
+    person("Hiroaki", "Fujita",
+           email = "fujita.hiroaki.3x@kyoto-u.ac.jp",
+           role = "aut"),
+    person("Zeus", "Sato", role = "ctb"),
+    person("Fumihiko", "Ayabe", role = "ctb")
+           )
+Maintainer: Kenta Suzuki <kenta.suzuki.zk@riken.jp>
+Encoding: UTF-8
+License: BSD_3_clause + file LICENSE
+Description: Energy landscape analysis (ELA) is a systematic method for analyzing an energy landscape represented as a weighted network. This R package is especially designed to analyze ecological dynamics, i.e., transitions in community compositions. For details of the analysis framework, please visit Suzuki K et al. (2021) <doi:10.1002/ecm.1469>.
+Depends: R (>= 4.1.0)
+Imports: Rcpp (>= 1.0.11), doParallel, RColorBrewer, foreach, dplyr,
+        magrittr, stringdist, gtools, ggplot2, purrr, rlang, tidyr,
+        data.table, stringr, igraph
+Suggests: cluster, plot3D, fpc, quanteda, slam, stm, topicmodels,
+        tidyverse, Matrix, glmnet, gsubfn, zoo, ggsci, tidygraph,
+        vegan, knitr, rmarkdown
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+LazyData: true
+Packaged: 2026-05-15 08:49:40 UTC; str_mac
+Repository: CRAN
+Date/Publication: 2026-05-28 12:20:11 UTC

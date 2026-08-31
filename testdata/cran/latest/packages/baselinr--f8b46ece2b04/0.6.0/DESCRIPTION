@@ -1,0 +1,34 @@
+Package: baselinr
+Title: What Works Clearinghouse Standards for Education Impact
+        Evaluations
+Version: 0.6.0
+Authors@R: 
+    person("Yuxia", "Liang", email = "zl1212@uw.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0008-6489-3836"))
+Description: Applies the group-design determinations of the What Works
+    Clearinghouse (WWC) to education impact studies. Computes WWC effect sizes
+    (Hedges' g with the small-sample correction, and the Cox index) and
+    classifies baseline equivalence; classifies overall and differential
+    attrition against the WWC attrition boundary; returns the group-design
+    study rating; and reports the robustness of the baseline-equivalence
+    verdict as a multiverse over the computation choices an analyst could
+    defensibly make differently. Provides report-ready tables and Love plots.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Imports: rlang, stats
+Suggests: ggplot2, gt, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/zl1212-ship-it/baselinr,
+        https://zl1212-ship-it.github.io/baselinr/
+BugReports: https://github.com/zl1212-ship-it/baselinr/issues
+Config/roxygen2/version: 8.0.0
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-08-22 20:30:56 UTC; yuxialiang
+Author: Yuxia Liang [aut, cre] (ORCID: <https://orcid.org/0009-0008-6489-3836>)
+Maintainer: Yuxia Liang <zl1212@uw.edu>
+Repository: CRAN
+Date/Publication: 2026-08-22 23:20:37 UTC

@@ -1,0 +1,45 @@
+Package: hydrochem
+Title: Analysis and Visualization Tools for Hydrochemical Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Guillaume", "Cinkus", , "guillaume.cinkus@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2877-6551")),
+    person("Raphaël", "Bondu", , "raphael.bondu@umontpellier.fr", role = "aut",
+           comment = c(ORCID = "0000-0003-3838-6693"))
+  )
+Description: Provides a comprehensive suite of tools for processing,
+    analyzing, and visualizing hydrochemical data in a reproducible and
+    programmatic workflow. Implements unit conversion, censored data
+    management, ionic balance calculation, water type classification, and
+    a range of hydrochemical indices relevant to water quality assessment.
+    Offers advanced visualization functions for generating 
+    Piper (Piper, 1944, <doi:10.1029/TR025i006p00914>), 
+    Durov (Durov, 1948),
+    Stiff (Stiff, 1951, <doi:10.2118/951376-G>), 
+    Collins (Collins, 1923, <doi:10.1021/ie50160a030>), 
+    Schoeller (Schoeller, 1935), 
+    Gibbs (Gibbs, 1970, <doi:10.1126/science.170.3962.1088>), 
+    and ternary diagrams — the standard
+    graphical tools used in hydrochemical interpretation.  Unlike existing
+    solutions that rely on spreadsheets or proprietary graphical software,
+    'hydrochem' is designed for scalability and reproducibility, lowering
+    the technical barrier for hydrochemists working with datasets of
+    varying complexity. It integrates seamlessly into modern R workflows
+    and supports rigorous water resource management and research.
+License: GPL-2
+Depends: R (>= 4.1.0)
+Imports: cowplot (>= 1.2.0), data.table (>= 1.16.2), ggplot2 (>=
+        3.5.1), grDevices, scales (>= 1.4.0), stats
+Suggests: spelling
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-06-18 16:10:27 UTC; busemorose
+Author: Guillaume Cinkus [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2877-6551>),
+  Raphaël Bondu [aut] (ORCID: <https://orcid.org/0000-0003-3838-6693>)
+Maintainer: Guillaume Cinkus <guillaume.cinkus@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-24 08:00:16 UTC

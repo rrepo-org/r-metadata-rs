@@ -1,0 +1,31 @@
+Package: lionfish
+Title: Interactive 'tourr' Using 'python'
+Version: 1.0.27
+Authors@R: 
+    person("Matthias", "Medl", , "matthias.medl@chello.at", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3354-4579"))
+Description: Extends the functionality of the 'tourr' package by an interactive
+             graphical user interface. The interactivity allows users to
+             effortlessly refine their 'tourr' results by manual intervention,
+             which allows for integration of expert knowledge and aids the
+             interpretation of results. For more information on 'tourr' see
+             Wickham et. al (2011) <doi:10.18637/jss.v040.i02> or
+             <https://github.com/ggobi/tourr>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: reticulate, tourr (>= 1.2.4), data.table, utils
+Suggests: ggplot2, viridis, randomForest, knitr, rmarkdown, markdown,
+        colorspace, ggbeeswarm, patchwork, mvtnorm, tidyverse, dplyr,
+        gridExtra, flexclust
+VignetteBuilder: knitr
+URL: https://mmedl94.github.io/lionfish/
+Config/Needs/website: knitr
+Depends: R (>= 3.5.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-03-12 17:01:22 UTC; matthias
+Author: Matthias Medl [aut, cre] (<https://orcid.org/0000-0002-3354-4579>)
+Maintainer: Matthias Medl <matthias.medl@chello.at>
+Repository: CRAN
+Date/Publication: 2025-03-13 20:50:02 UTC

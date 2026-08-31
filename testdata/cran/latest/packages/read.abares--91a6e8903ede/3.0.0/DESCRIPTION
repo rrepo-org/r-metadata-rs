@@ -1,0 +1,65 @@
+Type: Package
+Package: read.abares
+Title: Read Australian Agricultural Data from Government Agencies
+Version: 3.0.0
+Authors@R: c(
+    person("Adam H.", "Sparks", , "adamhsparks@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-0061-8359")),
+    person("Curtin University", role = "cph",
+           comment = c("http://www.curtin.edu.au/", ROR = "02n415q13")),
+    person("Jacob", "Wujciak-Jens", , "jacob@wujciak.de", role = "ctb",
+           comment = c("Assisted with troubleshooting formatting in documentation to display '<' and '>' properly", ORCID = "0000-0002-7281-3989")),
+    person("Nicholas", "Potter", , "econpotter@gmail.com", role = "rev",
+           comment = c("rOpenSci Review https://github.com/ropensci/software-review/issues/667", ORCID = "0000-0002-3410-3732")),
+    person("María Paula", "Caldas", , "mpaulacaldas@gmail.com", role = "rev",
+           comment = c("rOpenSci Review https://github.com/ropensci/software-review/issues/667", ORCID = "0000-0002-1938-6471"))
+  )
+Description: Downloads and imports agricultural data from the Australian
+    Bureau of Agricultural and Resource Economics and Sciences (ABARES)
+    <https://www.agriculture.gov.au/abares> and the Australian Bureau of
+    Statistics (ABS) <https://www.abs.gov.au>. Supports multiple data
+    formats including spreadsheets, comma‑separated value (CSV) files, and
+    geospatial data such as shapefiles and GeoTIFFs. Covers topics such as
+    broadacre crops, livestock, soils, commodities and related
+    agricultural information. The package standardises field names and
+    data formats to improve interoperability and simplify analysis. It
+    also streamlines the import of geospatial data and corrects common
+    issues found in these data sources upon loading.
+License: MIT + file LICENSE
+URL: https://docs.ropensci.org/read.abares/,
+        https://codeberg.org/ropensci/read.abares
+BugReports: https://codeberg.org/ropensci/read.abares/issues
+Depends: R (>= 4.1.0)
+Imports: brio, cli, data.table, fs, htm2txt, httr2, lubridate, purrr,
+        readxl, rlang, sf, stars, stringr, terra, tidync, utils,
+        whoami, withr
+Suggests: bit64, knitr, openxlsx, pander, rmarkdown, roxyglobals,
+        skimr, spelling, testthat (>= 3.0.0), zip
+VignetteBuilder: knitr
+Config/Needs/build: moodymudskipper/devtag
+Config/roxygen2/version: 8.0.0
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-01 01:07:57 UTC; adamsparks
+Author: Adam H. Sparks [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-0061-8359>),
+  Curtin University [cph] (http://www.curtin.edu.au/, ROR:
+    <https://ror.org/02n415q13>),
+  Jacob Wujciak-Jens [ctb] (Assisted with troubleshooting formatting in
+    documentation to display '<' and '>' properly, ORCID:
+    <https://orcid.org/0000-0002-7281-3989>),
+  Nicholas Potter [rev] (rOpenSci Review
+    https://github.com/ropensci/software-review/issues/667, ORCID:
+    <https://orcid.org/0000-0002-3410-3732>),
+  María Paula Caldas [rev] (rOpenSci Review
+    https://github.com/ropensci/software-review/issues/667, ORCID:
+    <https://orcid.org/0000-0002-1938-6471>)
+Maintainer: Adam H. Sparks <adamhsparks@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-01 06:50:11 UTC

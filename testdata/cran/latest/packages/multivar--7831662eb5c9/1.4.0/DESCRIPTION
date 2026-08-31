@@ -1,0 +1,34 @@
+Package: multivar
+Title: Penalized Estimation of Multiple-Subject Vector Autoregressive
+        Models
+Version: 1.4.0
+Authors@R: c(
+    person("Zachary", "Fisher", email = "fish.zachary@gmail.com", role = c("aut", "cre")),
+    person("Christopher", "Crawford", role = "aut"),
+    person("Younghoon", "Kim", role = "ctb"),
+    person("Vladas", "Pipiras", role = "ctb")
+    )
+Description: Simulate, estimate, and forecast vector autoregressive (VAR)
+    models for multiple-subject data using structured penalization. Decomposes
+    dynamics into shared (common) and subject-specific (unique) components via
+    adaptive LASSO with FISTA optimization. Supports cross-validation and
+    extended BIC model selection and subgroup detection, and time-varying
+    parameters.
+Depends: R (>= 3.5.0)
+Imports: methods, stats, utils, MASS, Rcpp (>= 1.0.3), Matrix, ggplot2,
+        vars, reshape2, glmnet, igraph, viridis, scales
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-03-30 13:33:40 UTC; zacharyfisher
+Author: Zachary Fisher [aut, cre],
+  Christopher Crawford [aut],
+  Younghoon Kim [ctb],
+  Vladas Pipiras [ctb]
+Maintainer: Zachary Fisher <fish.zachary@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-30 14:20:02 UTC

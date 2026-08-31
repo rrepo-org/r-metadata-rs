@@ -1,0 +1,34 @@
+Package: papeR
+Title: A Toolbox for Writing Pretty Papers and Reports
+Version: 1.0-6
+Date: 2025-04-01
+Authors@R: c(person(given = "Benjamin", family = "Hofner", role = c("aut", "cre"),
+                    email = "benjamin.hofner@pei.de", 
+                    comment = c(ORCID = "0000-0003-2810-3186")),
+              person("Romain", "Francois", role = "ctb"),
+              person("Kurt", "Hornik", role = "ctb"),
+              person("Martin", "Maechler", role = "ctb"),
+              person("David", "Dahl", role = "ctb", comment = "see inst/CONTRIBUTIONS for details")
+              )
+Maintainer: Benjamin Hofner <benjamin.hofner@pei.de>
+Description: A toolbox for writing 'knitr', 'Sweave' or other 'LaTeX'- or 'markdown'-based
+	     reports and to prettify the output of various estimated models.
+Depends: car, xtable
+Enhances: lme4, survival
+Imports: utils, gmodels, graphics, stats
+Suggests: nlme, knitr, rmarkdown, testthat (>= 0.10.0), foreign
+License: GPL-2
+URL: https://github.com/hofnerb/papeR
+Copyright: See inst/COPYRIGHTS.
+VignetteBuilder: knitr
+Collate: 'helpers.R' 'labels.R' 'summarize.R' 'plot.R' 'prettify.R'
+        'toLatex.R'
+NeedsCompilation: no
+Packaged: 2025-04-01 11:20:07 UTC; Benjamin (PEI)
+Author: Benjamin Hofner [aut, cre] (<https://orcid.org/0000-0003-2810-3186>),
+  Romain Francois [ctb],
+  Kurt Hornik [ctb],
+  Martin Maechler [ctb],
+  David Dahl [ctb] (see inst/CONTRIBUTIONS for details)
+Repository: CRAN
+Date/Publication: 2025-04-01 15:20:02 UTC

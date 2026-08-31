@@ -1,0 +1,48 @@
+Type: Package
+Package: fastadi
+Title: Self-Tuning Data Adaptive Matrix Imputation
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Alex",
+             family = "Hayes",
+             role = c("aut", "cre", "cph"),
+             email = "alexpghayes@gmail.com",
+             comment = c(ORCID = "0000-0002-4985-5160")),
+      person(given = "Juhee",
+             family = "Cho",
+             role = "aut"),
+      person(given = "Donggyu",
+             family = "Kim",
+             role = "aut"),
+      person(given = "Karl",
+             family = "Rohe",
+             role = "aut"))
+Description: Implements the AdaptiveImpute matrix completion
+    algorithm of 'Intelligent Initialization and Adaptive Thresholding for
+    Iterative Matrix Completion' <doi:10.1080/10618600.2018.1518238> as
+    well as the specialized variant of 'Co-Factor Analysis of
+    Citation Networks' <doi:10.1080/10618600.2024.2394464>.
+    AdaptiveImpute is useful for embedding sparsely observed matrices,
+    often out performs competing matrix completion algorithms, and
+    self-tunes its hyperparameter, making usage easy.
+License: MIT + file LICENSE
+URL: https://rohelab.github.io/fastadi/,
+        https://github.com/RoheLab/fastadi
+BugReports: https://github.com/RoheLab/fastadi/issues
+Depends: LRMF3, Matrix, R (>= 3.1)
+Imports: glue, logger, methods, Rcpp, rlang, RSpectra,
+Suggests: invertiforms, covr, knitr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-05-02 15:36:36 UTC; alex
+Author: Alex Hayes [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-4985-5160>),
+  Juhee Cho [aut],
+  Donggyu Kim [aut],
+  Karl Rohe [aut]
+Maintainer: Alex Hayes <alexpghayes@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-02 16:00:02 UTC

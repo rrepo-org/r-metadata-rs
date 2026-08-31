@@ -1,0 +1,42 @@
+Package: ecotraj
+Type: Package
+Title: Ecological Trajectory Analysis
+Version: 1.2.2
+Date: 2026-06-17
+Authors@R: c(
+	person('Miquel', 'De Cáceres', role=c('aut','cre'),
+	email='miquelcaceres@gmail.com', comment = c(ORCID = "0000-0001-7132-2080")),
+	person('Nicolas', 'Djeghri', role = 'aut', comment = c(ORCID = "0000-0001-5740-3386")),
+	person('Anthony', 'Sturbois', role = 'aut', comment = c(ORCID = "0000-0002-9219-4468")),
+	person('Javier', 'De la Casa', role = 'ctb'))
+Description: Analysis of temporal changes (i.e. dynamics) of ecological entities, defined as trajectories on a chosen multivariate space, by providing a set of 
+    trajectory metrics and visual representations [De Caceres et al. (2019) <doi:10.1002/ecm.1350>; 
+    and Sturbois et al. (2021) <doi:10.1016/j.ecolmodel.2020.109400>; Djeghri et al. (2026a) <doi:10.1002/ecm.70058>; Djeghri et al. (2026b) <doi:10.24072/pcjournal.736>]. Includes functions
+    to estimate metrics for individual trajectories (length, directionality, angles, ...) as well as
+    metrics to relate pairs of trajectories (dissimilarity and convergence). Functions are also
+    provided to estimate the ecological quality of ecosystem with respect to reference conditions 
+    [Sturbois et al. (2023)  <doi:10.1002/ecs2.4726>].
+Depends: R (>= 3.5.0), Rcpp (>= 0.12.12)
+Imports: MASS
+LinkingTo: Rcpp
+License: GPL (>= 2)
+URL: https://emf-creaf.github.io/ecotraj/
+LazyLoad: yes
+Encoding: UTF-8
+NeedsCompilation: yes
+Suggests: ape, vegclust, knitr, rmarkdown, RColorBrewer, smacof, vegan,
+        ggplot2, reshape2, scales, tidyr, viridis, testthat (>= 3.0.0)
+LazyData: true
+BugReports: https://github.com/emf-creaf/ecotraj/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+Packaged: 2026-06-18 06:48:40 UTC; miquel
+Author: Miquel De Cáceres [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7132-2080>),
+  Nicolas Djeghri [aut] (ORCID: <https://orcid.org/0000-0001-5740-3386>),
+  Anthony Sturbois [aut] (ORCID: <https://orcid.org/0000-0002-9219-4468>),
+  Javier De la Casa [ctb]
+Maintainer: Miquel De Cáceres <miquelcaceres@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-18 09:50:02 UTC

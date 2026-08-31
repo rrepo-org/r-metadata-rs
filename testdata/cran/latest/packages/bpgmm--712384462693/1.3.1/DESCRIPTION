@@ -1,0 +1,36 @@
+Package: bpgmm
+Type: Package
+Title: Bayesian Model Selection Approach for Parsimonious Gaussian
+        Mixture Models
+Version: 1.3.1
+Date: 2026-05-26
+Depends: R(>= 3.1.0)
+Imports: methods (>= 3.5.1), mcmcse (>= 1.3-2), pgmm (>= 1.2.3),
+        mvtnorm (>= 1.0-10), MASS (>= 7.3-51.1), parallel, Rcpp (>=
+        1.0.1), gtools (>= 3.8.1), label.switching (>= 1.8), fabMix (>=
+        5.0), mclust (>= 5.4.3)
+Authors@R: c(
+    person(given = "Yaoxiang", family = "Li",  role = c("aut","cre"),email = "liyaoxiang@outlook.com"),
+    person(given = "Xiang",  family = "Lu",    role = "aut"),
+    person(given = "Tanzy",  family = "Love",  role = "aut"))
+Author: Yaoxiang Li [aut, cre],
+  Xiang Lu [aut],
+  Tanzy Love [aut]
+Maintainer: Yaoxiang Li <liyaoxiang@outlook.com>
+Description: Model-based clustering using Bayesian parsimonious Gaussian mixture models.
+  MCMC (Markov chain Monte Carlo) are used for parameter estimation. The RJMCMC (Reversible-jump Markov chain Monte Carlo) is used for model selection. 
+  GREEN et al. (1995) <doi:10.1093/biomet/82.4.711>.
+License: GPL-3
+URL: https://github.com/YaoxiangLi/bpgmm,
+        https://yaoxiangli.github.io/bpgmm/,
+        https://doi.org/10.1007/s00357-021-09391-8
+BugReports: https://github.com/YaoxiangLi/bpgmm/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-05-28 03:48:04 UTC; Li
+Repository: CRAN
+Date/Publication: 2026-05-28 07:10:17 UTC

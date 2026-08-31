@@ -1,0 +1,29 @@
+Type: Package
+Package: LLMRagent
+Title: Reproducible Language-Model Agents for Research
+Version: 0.8.1
+Authors@R: 
+    person("Ali", "Sanaei", , "sanaei@uchicago.edu", role = c("aut", "cre"))
+Description: Large language model agents as governed research instruments,
+  built on 'LLMR'. The package supports designed conversations and factorial
+  experiments with declared tools and budgets. Each run produces an
+  inspectable record that can be archived and checked.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.2)
+Imports: LLMR (>= 0.8.11), R6, tibble, rlang, cli, digest, jsonlite,
+        httr2, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, future, future.apply,
+        dplyr, withr, callr, jsonvalidate, htmltools
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/asanaei/LLMRagent,
+        https://asanaei.github.io/LLMRagent/
+BugReports: https://github.com/asanaei/LLMRagent/issues
+NeedsCompilation: no
+Packaged: 2026-07-27 12:58:10 UTC; ali
+Author: Ali Sanaei [aut, cre]
+Maintainer: Ali Sanaei <sanaei@uchicago.edu>
+Repository: CRAN
+Date/Publication: 2026-07-27 18:10:09 UTC

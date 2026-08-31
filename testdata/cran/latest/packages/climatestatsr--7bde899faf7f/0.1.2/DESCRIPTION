@@ -1,0 +1,43 @@
+Package: climatestatsr
+Type: Package
+Title: Statistical Tools for Climate Change Analysis
+Version: 0.1.2
+Date: 2026-05-21
+Authors@R: c(
+    person("Sadikul", "Islam", email = "sadikul.islamiasri@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-2924-7122")),
+    person("Rajesh", "Kaushal", role = "aut"))
+Maintainer: Sadikul Islam <sadikul.islamiasri@gmail.com>
+Description: A comprehensive collection of statistical functions for
+    climate change research. Provides tools for temporal trend detection
+    based on the Mann-Kendall (MK) test (Mann 1945 <doi:10.2307/1907187>;
+    Kendall 1975, ISBN:0852641990) and Sen's slope (Sen 1968
+    <doi:10.2307/2285891>), spatial autocorrelation using Moran's I
+    (Moran 1950 <doi:10.2307/2332142>), extreme value analysis using the
+    Generalised Extreme Value (GEV) distribution and Peaks-Over-Threshold
+    (POT) method (Coles 2001 <doi:10.1007/978-1-4471-3675-0>), standardised
+    drought indices including the Standardised Precipitation Index (SPI;
+    McKee et al. 1993) and the Standardised Precipitation Evapotranspiration
+    Index (SPEI; Vicente-Serrano et al. 2010 <doi:10.1175/2009JCLI2909.1>),
+    and formal detection-attribution methods via optimal fingerprint
+    regression and Empirical Orthogonal Function (EOF) analysis
+    (Allen and Tett 1999 <doi:10.1007/s003820050291>), and apparent
+    temperature via the heat index (Steadman 1979
+    <doi:10.1175/1520-0450(1979)018%3C0861:TAOSPI%3E2.0.CO;2>).
+    Suitable for both station-level time series and gridded climate fields.
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, utils
+Suggests: ggplot2 (>= 3.4.0), sf (>= 1.0-0), ncdf4 (>= 1.21), testthat
+        (>= 3.0.0), knitr (>= 1.42), rmarkdown (>= 2.20)
+VignetteBuilder: knitr
+NeedsCompilation: no
+ByteCompile: true
+RoxygenNote: 7.3.3
+Packaged: 2026-06-11 12:11:32 UTC; acer
+Author: Sadikul Islam [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2924-7122>),
+  Rajesh Kaushal [aut]
+Repository: CRAN
+Date/Publication: 2026-06-18 14:20:14 UTC

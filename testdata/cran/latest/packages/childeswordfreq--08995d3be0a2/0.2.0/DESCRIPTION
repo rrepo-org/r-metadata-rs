@@ -1,0 +1,35 @@
+Package: childeswordfreq
+Type: Package
+Title: Word and Phrase Frequency Tools for CHILDES
+Version: 0.2.0
+Authors@R: 
+    person(given = "Nahar",
+           family = "Albudoor",
+           role = c("aut", "cre"),
+           email = "n.albudoor@gmail.com")
+Description: 
+    Tools for extracting word and phrase frequencies from the Child Language Data Exchange System (CHILDES) 
+    database via the 'childesr' API. Supports type-level word counts, 
+    token-mode searches with simple wildcard patterns and part-of-speech 
+    filters, optional stemming, and Zipf-scaled frequencies. Provides 
+    normalization per number of tokens or utterances, speaker-role 
+    breakdowns, dataset summaries, and export to Excel workbooks for 
+    reproducible child language research. 
+    The CHILDES database is maintained at <https://talkbank.org/childes/>.
+License: MIT + file LICENSE
+URL: https://github.com/n-albudoor/childeswordfreq
+BugReports: https://github.com/n-albudoor/childeswordfreq/issues
+Depends: R (>= 4.4.0)
+Imports: cachem, childesr, dplyr, memoise, rappdirs, readr, rlang,
+        stats, tibble, tidyr, utils, writexl
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-11-15 21:13:24 UTC; albudoor.1
+Author: Nahar Albudoor [aut, cre]
+Maintainer: Nahar Albudoor <n.albudoor@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-15 22:40:09 UTC

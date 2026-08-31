@@ -1,0 +1,38 @@
+Package: nmw
+Version: 0.5.1
+Date: 2026-08-21
+Title: Understanding Nonlinear Mixed Effects Modeling for Population
+        Pharmacokinetics
+Description: This shows how 'NONMEM' (Beal SL, Sheiner LB, Boeckmann AJ,
+    Bauer RJ.  NONMEM 7.5 Users Guides.  Icon plc, 2020) software works.
+    'NONMEM' classical estimation methods such as 'First Order (FO)
+    approximation', 'First Order Conditional Estimation (FOCE)', and
+    'Laplacian approximation' are explained.  Functions are also provided
+    for post-run processing of NONMEM output files, generating PDF
+    diagnostic reports including objective function value analysis,
+    parameter estimates, prediction and residual diagnostics, empirical
+    Bayes estimate (EBE) analysis, input data summary, and individual
+    pharmacokinetic parameter distributions.  Helper utilities for
+    building NONMEM-ready datasets from SDTM-style source tables are
+    also included.
+Depends: R (>= 3.6.0), numDeriv
+Imports: simPDF (>= 0.1.1), MASS, grDevices, graphics, stats, utils
+ByteCompile: yes
+License: GPL-3
+Copyright: 2017-, Kyun-Seop Bae
+Author: Kyun-Seop Bae [aut, cre]
+Maintainer: Kyun-Seop Bae <k@acr.kr>
+Authors@R: person(given = "Kyun-Seop",
+                  family = "Bae",
+                  role = c("aut", "cre"),
+                  email = "k@acr.kr")
+URL: https://cran.r-project.org/package=nmw
+Contact: Kyun-Seop Bae <k@acr.kr>
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-08-20 20:13:05 UTC; CodexSandboxOffline
+Repository: CRAN
+Date/Publication: 2026-08-21 05:41:31 UTC

@@ -1,0 +1,19 @@
+Package: guidedPLS
+Type: Package
+Title: Supervised Dimensional Reduction by Guided Partial Least Squares
+Version: 1.2.1
+Authors@R: c(person("Koki", "Tsuyuzaki", role = c("aut", "cre"),
+                      email = "k.t.the-answer@hotmail.co.jp"))
+Depends: R (>= 3.4.0)
+Imports: irlba, Matrix, stats
+Suggests: fields, iTensor (>= 1.0.6), knitr, rmarkdown, testthat
+Description: Guided partial least squares (guided-PLS) is the combination of partial least squares by singular value decomposition (PLS-SVD) and guided principal component analysis (guided-PCA). This package provides implementations of PLS-SVD, guided-PLS, and guided-PCA for supervised dimensionality reduction. The guided-PCA function (new in v1.1.0) automatically handles mixed data types (continuous and categorical) in the supervision matrix and provides detailed contribution analysis for interpretability. For the details of the methods, see the reference section of GitHub README.md <https://github.com/rikenbit/guidedPLS>.
+License: MIT + file LICENSE
+URL: https://github.com/rikenbit/guidedPLS
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-28 12:48:51 UTC; koki
+Author: Koki Tsuyuzaki [aut, cre]
+Maintainer: Koki Tsuyuzaki <k.t.the-answer@hotmail.co.jp>
+Repository: CRAN
+Date/Publication: 2026-06-28 13:10:02 UTC

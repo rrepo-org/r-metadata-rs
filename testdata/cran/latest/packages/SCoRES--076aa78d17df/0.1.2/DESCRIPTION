@@ -1,0 +1,46 @@
+Package: SCoRES
+Title: Simultaneous Confidence Region Excursion Sets
+Version: 0.1.2
+Authors@R: 
+    c(
+      person(given = "Zhuoran", family = "Yu", ,"angela.yu@emory.edu", role = c("aut", "cre")),
+      person(given = "Armin", family = "Schwartzman", ,"armins@health.ucsd.edu", role = "aut"),
+      person(given = "Junting", family = "Ren", ,"junting.ren.stat@gmail.com", role = "aut"),
+      person(given = "Julia", family = "Wrobel", ,"julia.wrobel@emory.edu", role = "aut")
+    )
+Author: Zhuoran Yu [aut, cre],
+  Armin Schwartzman [aut],
+  Junting Ren [aut],
+  Julia Wrobel [aut]
+Maintainer: Zhuoran Yu <angela.yu@emory.edu>
+Description: Provides computational tools for estimating inverse regions and 
+  constructing the corresponding simultaneous outer and inner confidence regions. 
+  Acceptable input includes both one-dimensional and two-dimensional data for linear, 
+  logistic, functional, and spatial generalized least squares regression models. 
+  Functions are also available for constructing simultaneous confidence bands (SCBs) 
+  for these models. The definition of simultaneous confidence regions (SCRs) follows 
+  Sommerfeld et al. (2018) <doi:10.1080/01621459.2017.1341838>. Methods for estimating 
+  inverse regions, SCRs, and the nonparametric bootstrap are based on 
+  Ren et al. (2024) <doi:10.1093/jrsssc/qlae027>. Methods for constructing SCBs 
+  are described in Crainiceanu et al. (2024) <doi:10.1201/9781003278726> 
+  and Telschow et al. (2022) <doi:10.1016/j.jspi.2021.05.008>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://angelayustat.github.io/SCoRES/
+BugReports: https://github.com/AngelaYuStat/SCoRES/issues
+Imports: dplyr, forcats, ggplot2, grDevices, patchwork, MASS, Matrix,
+        matrixStats, metR, nlme, stats, tidyr, refund, reshape, tibble,
+        rlang, magrittr, utils
+Depends: R (>= 4.4)
+LazyData: true
+Suggests: knitr, mgcv, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr, rmarkdown
+BuildVignettes: true
+LazyLoad: no
+ByteCompile: false
+NeedsCompilation: no
+Packaged: 2025-11-12 23:27:25 UTC; PC
+Repository: CRAN
+Date/Publication: 2025-11-17 21:20:12 UTC

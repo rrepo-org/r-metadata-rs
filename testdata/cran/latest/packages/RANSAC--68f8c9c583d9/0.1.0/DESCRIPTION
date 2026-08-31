@@ -1,0 +1,18 @@
+Package: RANSAC
+Title: Robust Model Fitting Using the RANSAC Algorithm
+Version: 0.1.0
+Authors@R: person(given = "Jadson", family = "Abreu", email = "jadson.ap@gmail.com", role = c("aut", "cre"))
+Description: Provides tools for robust regression model fitting using the RANSAC (Random Sample Consensus) algorithm. RANSAC is an iterative method to estimate parameters of a model from a dataset that contains outliers. This package allows fitting both linear lm and nonlinear nls models using RANSAC, helping users obtain more reliable models in the presence of noisy or corrupted data. The methods are particularly useful in contexts where traditional least squares regression fails due to the influence of outliers. Implementations include support for performance metrics such as RMSE, MAE, and R² based on the inlier subset. For further details, see Fischler and Bolles (1981) <doi:10.1145/358669.358692>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0.0)
+Imports: stats
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-05-06 10:45:59 UTC; Jadson
+Author: Jadson Abreu [aut, cre]
+Maintainer: Jadson Abreu <jadson.ap@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-07 10:30:06 UTC

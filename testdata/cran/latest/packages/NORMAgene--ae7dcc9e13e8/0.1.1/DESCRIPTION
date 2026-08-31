@@ -1,0 +1,32 @@
+Package: NORMAgene
+Type: Package
+Title: Data-Driven qRT-PCR Normalization Using NORMAgene
+Version: 0.1.1
+Authors@R: person(
+  given="Grant C.",
+  family="O'Connell",
+  role = c("aut", "cre"),
+  email="goconnell.phd@gmail.com",
+  comment=c(ORCID = "0000-0002-2642-6670"))
+Description: Enables correction for technical variance in raw quantitative reverse
+  transcription polymerase chain reaction (qRT-PCR) data using the least
+  squares-based NORMAgene data-driven normalization algorithm originally
+  described by Heckmann et al. (2011) <doi:10.1186/1471-2105-12-250>.
+  Performs normalization of raw crossing threshold values (CT) and also
+  calculates relative variability metrics that can be used to assess the impact
+  of normalization on variance.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports:
+Suggests: testthat (>= 3.0.0)
+Author: Grant C. O'Connell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2642-6670>)
+Maintainer: Grant C. O'Connell <goconnell.phd@gmail.com>
+Repository: CRAN
+Depends: R (>= 3.5)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-22 15:31:06 UTC; gco6
+Date/Publication: 2026-02-28 20:40:13 UTC

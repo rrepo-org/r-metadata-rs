@@ -1,0 +1,31 @@
+Package: rkaf
+Title: Kolmogorov-Arnold Fourier Networks in R
+Version: 0.1.0
+Authors@R: 
+    person(
+      given = "Guillaume",
+      family = "Sidoine",
+      email = "gjh.sidoine@gmail.com",
+      role = c("aut", "cre")
+    )
+Description: Provides an R implementation of Kolmogorov-Arnold Fourier 
+    Networks using the torch backend. The package supports regression, binary 
+    classification, multiclass classification, formula and matrix interfaces, 
+    mini-batch training, validation splits, early stopping, standardization, 
+    best-model restoration, and KAF-specific diagnostics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, torch
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, pkgdown
+Config/testthat/edition: 3
+URL: https://github.com/gsidoine/rkaf, https://gsidoine.github.io/rkaf/
+BugReports: https://github.com/gsidoine/rkaf/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-26 17:46:14 UTC; gjhsi
+Author: Guillaume Sidoine [aut, cre]
+Maintainer: Guillaume Sidoine <gjh.sidoine@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-28 19:40:02 UTC

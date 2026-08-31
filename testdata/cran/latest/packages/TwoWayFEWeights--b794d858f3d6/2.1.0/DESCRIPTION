@@ -1,0 +1,40 @@
+Package: TwoWayFEWeights
+Type: Package
+Title: Estimation of the Weights Attached to the Two-Way Fixed Effects
+        Regressions
+Version: 2.1.0
+Authors@R: 
+    c(
+    person("Anzony", "Quispe", role = c("aut", "cre"), email = "anzony.quispe@gmail.com"),
+    person("Diego", "Ciccia", role = "aut", email = "diego.ciccia@kellogg.northwestern.edu"),
+    person("Felix", "Knau", role = "aut", email = "felix.knau@sciencespo.fr"),
+    person("Mélitine", "Malezieux", role = "aut", email = "melitine.malezieux@sciencespo.fr"),
+    person("Doulo", "Sow", role = "aut", email = "doulo.sow@ensae.fr"),
+    person("Shuo", "Zhang", role = "aut", email = "shuo_zhang@ucsb.edu"),
+    person("Clément", "de Chaisemartin", role = "aut", email = "clement.dechaisemartin@sciencespo.fr"),
+    person("Grant", "McDermott", role = "ctb", email = "gmcd@amazon.com")
+    )
+Maintainer: Anzony Quispe <anzony.quispe@gmail.com>
+Description: 
+    Computes the implicit weights attached to two-way fixed effects regressions, as well as summary measures of these regressions' robustness to heterogeneous treatment effects. Based on de Chaisemartin and D'Haultfoeuille (2020) <DOI:10.1257/aer.20181169>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R(>= 3.5.0)
+Imports: data.table, cli, fixest, Rcpp (>= 1.0.7), stats, utils, haven
+LinkingTo: Rcpp
+Suggests: tinytest, devtools
+NeedsCompilation: yes
+URL: https://github.com/Credible-Answers/twowayfeweights
+BugReports: https://github.com/Credible-Answers/twowayfeweights/issues
+RoxygenNote: 7.3.3
+Packaged: 2026-05-18 07:04:33 UTC; anzony.quisperojas
+Author: Anzony Quispe [aut, cre],
+  Diego Ciccia [aut],
+  Felix Knau [aut],
+  Mélitine Malezieux [aut],
+  Doulo Sow [aut],
+  Shuo Zhang [aut],
+  Clément de Chaisemartin [aut],
+  Grant McDermott [ctb]
+Repository: CRAN
+Date/Publication: 2026-05-27 07:00:32 UTC

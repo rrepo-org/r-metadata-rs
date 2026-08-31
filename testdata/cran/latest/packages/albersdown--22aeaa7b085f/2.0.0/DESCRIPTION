@@ -1,0 +1,32 @@
+Package: albersdown
+Type: Package
+Title: Minimalist Theme and Vignette Kit for 'pkgdown' and R Markdown
+Version: 2.0.0
+Authors@R: c(person(given = "Bradley R.", family = "Buchsbaum", role = c("aut","cre"),
+    email = "brad.buchsbaum@gmail.com"))
+Description: Provides a minimalist 'ggplot2' theme, colour scales, and
+    'pkgdown' template built around a curated colour palette system
+    inspired by Josef Albers' colour theory
+    (Albers (1963, ISBN:978-0-300-17935-4) "Interaction of Color").
+    Includes helpers to apply consistent theming to 'ggplot2' plots, 'gt'
+    tables, and 'bslib' Bootstrap 5 sites, along with one-command setup
+    functions for adopting the style across an R package.
+URL: https://github.com/bbuchsbaum/albersdown,
+        https://bbuchsbaum.github.io/albersdown/
+BugReports: https://github.com/bbuchsbaum/albersdown/issues
+Depends: R (>= 4.1)
+Imports: grDevices, grid, stats, ggplot2
+Suggests: gt, bslib, usethis, yaml, cli, testthat, viridisLite, knitr,
+        rmarkdown, pkgdown, systemfonts, ragg
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/Needs/website: albersdown
+License: MIT + file LICENSE
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-04 16:43:38 UTC; bbuchsbaum
+Author: Bradley R. Buchsbaum [aut, cre]
+Maintainer: Bradley R. Buchsbaum <brad.buchsbaum@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-05 12:20:08 UTC

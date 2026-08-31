@@ -1,0 +1,27 @@
+Package: snapr
+Title: Convenient Snapshot Testing Functions for Packages
+Version: 0.1.0
+Authors@R: 
+    person("Douglas Ezra", "Morrison", , "demorrison@ucdavis.edu", role = c("aut", "cre"))
+Description: Provides convenient snapshot testing functions for packages,
+    including expect_snapshot_data() for data.frames and
+    expect_snapshot_object() for any R object.
+License: MIT + file LICENSE
+Language: en-US
+Encoding: UTF-8
+URL: https://github.com/d-morrison/snapr,
+        https://d-morrison.github.io/snapr/
+BugReports: https://github.com/d-morrison/snapr/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, jsonlite, readr, testthat, tidyselect, tools, waldo
+Suggests: altdoc, bslib, knitr, quarto, rmarkdown, spelling, withr
+VignetteBuilder: knitr, quarto
+Config/testthat/edition: 3
+Config/Needs/website: quarto
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-18 22:19:34 UTC; ezramorrison
+Author: Douglas Ezra Morrison [aut, cre]
+Maintainer: Douglas Ezra Morrison <demorrison@ucdavis.edu>
+Repository: CRAN
+Date/Publication: 2026-05-22 20:20:02 UTC

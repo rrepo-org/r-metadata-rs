@@ -1,0 +1,37 @@
+Package: shinyelectron
+Title: Export 'Shiny' Applications as Desktop Apps using 'Electron'
+Version: 0.2.1
+Authors@R: c(
+    person("James Joseph", "Balamuta",
+            email = "james.balamuta@gmail.com", 
+            role = c("aut", "cre", "cph"),
+            comment = c(ORCID = "0000-0003-2826-8458")
+           )
+    )
+Description: Provides tools to export 'Shiny' applications written in 'R' or
+    'Python' as standalone desktop applications using 'Electron'. The
+    applications run as native, cross-platform programs. Depending on the
+    runtime strategy chosen, end users do not need 'R' or 'Python' installed on
+    their machine.
+License: AGPL (>= 3)
+URL: https://r-pkg.thecoatlessprofessor.com/shinyelectron/,
+        https://github.com/coatless-rpkg/shinyelectron
+BugReports: https://github.com/coatless-rpkg/shinyelectron/issues
+Depends: R (>= 4.4.0)
+Imports: cli (>= 3.6.6), fs (>= 2.1.0), jsonlite (>= 2.0.0), rappdirs
+        (>= 0.3.4), whisker (>= 0.4.1), processx (>= 3.9.0), stats,
+        tools, utils, yaml (>= 2.3.12)
+Suggests: testthat (>= 3.3.2), mockery (>= 0.4.5), quarto (>= 1.5.1),
+        renv (>= 1.2.3), shinylive (>= 0.5.0), withr (>= 3.0.3)
+VignetteBuilder: quarto
+SystemRequirements: Node.js (>= 22.0.0), npm (>= 11.5.0)
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-29 20:40:18 UTC; ronin
+Author: James Joseph Balamuta [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-2826-8458>)
+Maintainer: James Joseph Balamuta <james.balamuta@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-07 16:10:02 UTC

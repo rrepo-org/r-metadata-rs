@@ -1,0 +1,23 @@
+Package: genderapi
+Type: Package
+Language: en-US
+Title: Client for 'GenderAPI.io'
+Version: 1.0.3
+Authors@R: c(
+    person(given = "Onur", family = "Ozturk", email = "onurozturk1980@gmail.com", role = c("aut", "cre"))
+    )
+Description: Provides an interface to the 'GenderAPI.io' web service (<https://www.genderapi.io>) for determining gender from personal names, email addresses, or social media usernames. Functions are available to submit single or batch queries and retrieve additional information such as accuracy scores and country-specific gender predictions. This package simplifies integration of 'GenderAPI.io' into R workflows for data cleaning, user profiling, and analytics tasks.
+License: MIT + file LICENSE
+URL: https://github.com/GenderAPI/genderapi-R
+BugReports: https://github.com/GenderAPI/genderapi-R/issues
+Imports: httr, jsonlite
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+Suggests: testthat
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-07-09 12:03:21 UTC; onurozturk
+Author: Onur Ozturk [aut, cre]
+Maintainer: Onur Ozturk <onurozturk1980@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-07-14 17:00:10 UTC

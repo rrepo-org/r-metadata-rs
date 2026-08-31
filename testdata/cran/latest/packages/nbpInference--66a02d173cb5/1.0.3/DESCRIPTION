@@ -1,0 +1,30 @@
+Package: nbpInference
+Title: Inference on Average Treatment Effects for Continuous Treatments
+Version: 1.0.3
+Maintainer: Anthony Frazier <anthony.frazier@colostate.edu>
+Authors@R: c(
+  person("Anthony", "Frazier", email = "anthony.frazier@colostate.edu", role = c("aut", "cre", "cph")),
+  person("Siyu", "Heng", role = c("aut")),
+  person("Wen", "Zhou", role = c("aut")))
+Description: Conduct inference on the sample average treatment effect for a 
+    matched (observational) dataset with a continuous treatment. Equipped with
+    calipered non-bipartite matching, bias-corrected sample average treatment
+    effect estimation, and covariate-adjusted variance estimation. Matching, 
+    estimation, and inference methods are described in 
+    Frazier, Heng and Zhou (2024) <doi:10.48550/arXiv.2409.11701>.
+Imports: nbpMatching, stats, Rdpack
+RdMacros: Rdpack
+URL: https://github.com/AnthonyFrazierCSU/nbpInference
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+BugReports: https://github.com/AnthonyFrazierCSU/nbpInference/issues
+NeedsCompilation: no
+Packaged: 2025-10-12 21:17:37 UTC; iaman
+Author: Anthony Frazier [aut, cre, cph],
+  Siyu Heng [aut],
+  Wen Zhou [aut]
+Repository: CRAN
+Date/Publication: 2025-10-17 20:10:07 UTC

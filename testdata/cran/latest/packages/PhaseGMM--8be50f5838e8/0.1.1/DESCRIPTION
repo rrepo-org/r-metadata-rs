@@ -1,0 +1,35 @@
+Package: PhaseGMM
+Type: Package
+Title: Phase-Function Based Estimation and Inference for Linear
+        Errors-in-Variables (EIV) Models
+Version: 0.1.1
+Authors@R: c(
+    person(
+      "Chang", "Liu",
+      email = "leo12345liu@gmail.com",
+      role = c("aut", "cre")
+    ), person(
+      "Linh", "Nghiem",
+      email = "l.nghiemum@gmail.com",
+      role = c("aut")
+    )
+  )
+Description: Estimation and inference for coefficients of linear EIV models with symmetric measurement errors. 
+      The measurement errors can be homoscedastic or heteroscedastic, for the latter, replication for at least some observations needs to be available. The estimation method and asymptotic inference are 
+      based on a generalised method of moments framework, where the estimating equations are formed from (1) minimising the distance between the empirical phase function (normalised characteristic function) of the response and that of the linear combination of all the covariates at the estimates, 
+      and (2) minimising a corrected least-square discrepancy function. Specifically, for a linear EIV model with p error-prone and q error-free covariates, if replicates are available, the GMM approach is based on a 2(p+q) estimating equations if some replicates are available and based on p+2q estimating equations if no replicate is available. 
+      The details of the method are described in Nghiem and Potgieter (2020) <doi:10.1093/biomet/asaa025> and Nghiem and Potgieter (2025) <doi:10.5705/ss.202022.0331>.   
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+Imports: nleqslv
+Suggests: extraDistr
+NeedsCompilation: no
+Packaged: 2026-04-28 10:38:38 UTC; liuchang
+Author: Chang Liu [aut, cre],
+  Linh Nghiem [aut]
+Maintainer: Chang Liu <leo12345liu@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-28 11:00:02 UTC

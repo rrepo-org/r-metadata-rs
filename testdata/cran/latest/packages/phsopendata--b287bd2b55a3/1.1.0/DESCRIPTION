@@ -1,0 +1,42 @@
+Package: phsopendata
+Title: Extract from the Scottish Health and Social Care Open Data
+        Platform
+Version: 1.1.0
+Authors@R: c(
+    person("Public Health Scotland", , , "phs.datascience@phs.scot", role = "cph"),
+    person("Csilla", "Scharle", , "csilla.scharle2@phs.scot", role = c("cre", "aut")),
+    person("James", "Hayes", , "James.Hayes2@phs.scot", role = "aut",
+           comment = c(ORCID = "0000-0002-5380-2029")),
+    person("David", "Aikman", , "david.aikman@phs.scot", role = "aut"),
+    person("Ross", "Hull", , "ross.hull2@phs.scot", role = "aut"),
+    person("Haritha", "Jagadeesh", , "haritha.jagadeesh@phs.scot", role = "aut"),
+    person("Simon", "Barnes", , "simon.barnes@phs.scot", role = "ctb")
+  )
+Description: Extract and interact with data from the Scottish Health and
+    Social Care Open Data platform <https://www.opendata.nhs.scot>.
+License: MIT + file LICENSE
+URL: https://github.com/Public-Health-Scotland/phsopendata,
+        https://public-health-scotland.github.io/phsopendata/
+BugReports: https://github.com/Public-Health-Scotland/phsopendata/issues
+Imports: cli (>= 3.2.0), dplyr (>= 1.0.0), httr (>= 1.0.0), lifecycle,
+        magrittr (>= 1.0.0), purrr (>= 1.0.0), readr (>= 1.0.0), rlang
+        (>= 1.0.0), stringdist, tibble (>= 3.0.0)
+Suggests: covr, curl, jsonlite (>= 1.1), spelling, testthat (>= 3.0.0),
+        xml2
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2026-05-05 16:02:50 UTC; jamesm32
+Author: Public Health Scotland [cph],
+  Csilla Scharle [cre, aut],
+  James Hayes [aut] (ORCID: <https://orcid.org/0000-0002-5380-2029>),
+  David Aikman [aut],
+  Ross Hull [aut],
+  Haritha Jagadeesh [aut],
+  Simon Barnes [ctb]
+Maintainer: Csilla Scharle <csilla.scharle2@phs.scot>
+Repository: CRAN
+Date/Publication: 2026-05-06 08:50:02 UTC

@@ -1,0 +1,38 @@
+Package: rlppinv
+Type: Package
+Title: Linear Programming via Regularized Least Squares
+Version: 2.0.0
+Authors@R: 
+    c(
+        person("Ilya", "Bolotov", email = "ilya.bolotov@vse.cz",
+               role = c("aut", "cre"),
+               comment = c(ORCID = "0000-0003-1148-7144"))
+    )
+Description: The Linear Programming via Regularized Least Squares (LPPinv) is a
+             two-stage estimation method that reformulates linear programs as
+             structured least-squares problems. Based on the Convex Least
+             Squares Programming (CLSP) framework, LPPinv solves linear
+             inequality, equality, and bound constraints by (1) constructing a
+             canonical constraint system and computing a pseudoinverse
+             projection, followed by (2) a convex-programming correction stage
+             to refine the solution under additional regularization (e.g.,
+             Lasso, Ridge, or Elastic Net). LPPinv is intended for
+             underdetermined and ill-posed linear problems, for which standard
+             solvers fail.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.3)
+Imports: rclsp (>= 2.0.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/econcz/rlppinv
+BugReports: https://github.com/econcz/rlppinv/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-11 12:01:31 UTC; ilyabolotov
+Author: Ilya Bolotov [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1148-7144>)
+Maintainer: Ilya Bolotov <ilya.bolotov@vse.cz>
+Repository: CRAN
+Date/Publication: 2026-06-11 14:10:02 UTC

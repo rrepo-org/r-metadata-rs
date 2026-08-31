@@ -1,0 +1,34 @@
+Package: wordorientation
+Type: Package
+Title: Detect Attraction and Repulsion Between Words in Text
+Version: 0.1.0
+Authors@R: person("Yosley", "Carrero", email = "c3046338@newcastle.ac.uk",
+    role = c("aut", "cre"))
+Description: Provides tools to quantify how strongly pairs of words attract
+    or repel each other in a text corpus, based on co-occurrence patterns.
+    For each word pair, the phi coefficient (a correlation measure for binary
+    variables) is computed from a document-term matrix and tested for
+    significance, then classified as showing attraction (co-occurring more
+    than chance would predict), repulsion (co-occurring less than chance
+    would predict), or no significant relationship. A full pipeline is
+    provided from raw text to a labeled network visualization. Unlike
+    general-purpose pairwise correlation tools, 'wordorientation' is built
+    specifically for text: it handles tokenization and stopword removal,
+    applies significance-based classification rather than reporting a raw
+    correlation coefficient alone, and produces a ready-to-plot attraction/
+    repulsion network.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats, graphics, igraph, scales
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+URL: https://github.com/yosleycarrero2025/wordorientation
+BugReports: https://github.com/yosleycarrero2025/wordorientation/issues
+NeedsCompilation: no
+Packaged: 2026-08-03 22:16:13 UTC; yosle
+Author: Yosley Carrero [aut, cre]
+Maintainer: Yosley Carrero <c3046338@newcastle.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-08-08 14:40:02 UTC

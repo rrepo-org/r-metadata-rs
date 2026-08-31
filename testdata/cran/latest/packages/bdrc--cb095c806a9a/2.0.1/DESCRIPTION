@@ -1,0 +1,32 @@
+Package: bdrc
+Title: Bayesian Discharge Rating Curves
+Version: 2.0.1
+Authors@R: c(person("Birgir", "Hrafnkelsson", email = "birgirhr@hi.is", role = c("aut","cph"),comment=c(ORCID="0000-0003-1864-9652")),
+             person("Solvi", "Rognvaldsson", email = "solviro@gmail.com", role = c("aut"),comment=c(ORCID="0000-0002-4376-3361")),
+             person(given = "Rafael Daníel", family = "Vias", email = "raffidv@gmail.com", role = c("aut", "cre"), comment=c(ORCID = "0009-0007-2601-6800")),
+             person("Axel Orn", "Jansson", email = "axelorn94@gmail.com", role = c("aut"))
+             )
+Maintainer: Rafael Daníel Vias <raffidv@gmail.com>
+Description: Fits a discharge rating curve based on the power-law and the generalized power-law from data on paired stage and discharge measurements in a given river using a Bayesian hierarchical model as described in Hrafnkelsson et al. (2022) <doi:10.1002/env.2711>.
+Depends: R (>= 3.5.0)
+LazyData: true
+License: MIT + file LICENSE
+RoxygenNote: 7.3.2
+Imports: ggplot2, grid, gridExtra, Rcpp (>= 0.11.0), rlang, scales
+Suggests: testthat, knitr, rmarkdown, covr, vdiffr
+VignetteBuilder: knitr
+URL: https://sor16.github.io/bdrc/
+BugReports: https://github.com/sor16/bdrc/issues/
+Encoding: UTF-8
+LinkingTo: Rcpp (>= 0.11.0), RcppArmadillo (>= 0.2.35)
+NeedsCompilation: yes
+Packaged: 2026-02-17 21:32:17 UTC; vias
+Author: Birgir Hrafnkelsson [aut, cph] (ORCID:
+    <https://orcid.org/0000-0003-1864-9652>),
+  Solvi Rognvaldsson [aut] (ORCID:
+    <https://orcid.org/0000-0002-4376-3361>),
+  Rafael Daníel Vias [aut, cre] (ORCID:
+    <https://orcid.org/0009-0007-2601-6800>),
+  Axel Orn Jansson [aut]
+Repository: CRAN
+Date/Publication: 2026-02-17 23:10:21 UTC

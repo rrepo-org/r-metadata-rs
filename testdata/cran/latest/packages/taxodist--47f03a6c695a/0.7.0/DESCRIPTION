@@ -1,0 +1,38 @@
+Package: taxodist
+Title: Taxonomic Hierarchy Distances and Lineage Analysis
+Version: 0.7.0
+LazyData: true
+Authors@R: person("Rodrigo Fonseca", "Villa", email = "rodrigo03.villa@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0005-2938-2270"))
+Maintainer: Rodrigo Fonseca Villa <rodrigo03.villa@gmail.com>
+Description: Computes distances between taxonomic hierarchy nodes using lineage
+    data retrieved from The Taxonomicon <http://taxonomicon.taxonomy.nl>. For
+    distinct nodes, distance is defined as the reciprocal of the depth of their
+    most recent common ancestor; identical nodes have distance zero. This
+    definition yields an ultrametric within each connected hierarchy. Functions
+    are provided for lineage retrieval and comparison, clade membership,
+    pairwise and matrix distance calculation, hierarchical clustering,
+    principal coordinates analysis, and cache management. Distance matrices are
+    returned as base R 'dist' objects. The distances represent classification
+    depth rather than evolutionary time or phylogenetic branch length.
+Language: en-US
+License: GPL (>= 3)
+URL: https://github.com/rodrigosqrt3/taxodist
+BugReports: https://github.com/rodrigosqrt3/taxodist/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+SystemRequirements: internet access
+Depends: R (>= 4.1.0)
+Imports: httr (>= 1.4.0), rvest (>= 1.0.0), stringr (>= 1.4.0), purrr
+        (>= 0.3.0), cli (>= 3.0.0), utils, stats, graphics
+Suggests: testthat (>= 3.0.0), mockery, knitr, rmarkdown, xml2, ape,
+        vegan, webmockr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-28 22:46:55 UTC; rodri
+Author: Rodrigo Fonseca Villa [aut, cre] (ORCID:
+    <https://orcid.org/0009-0005-2938-2270>)
+Repository: CRAN
+Date/Publication: 2026-08-28 23:00:02 UTC

@@ -1,0 +1,35 @@
+Package: warmthcompetence
+Type: Package
+Title: Warmth and Competence Detectors
+Version: 0.1.5
+Authors@R: c(
+    person("Bushra", "Guenoun", email = "bushraguenoun@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0975-1620")),
+    person("Julian", "Zlatev", role = c("aut"), 
+	       comment = c(ORCID="0000-0002-9427-9887")),
+    person("Noah", "Greifer", role = c("ctb"), 
+         email = "ngreifer@iq.harvard.edu",
+	       comment = c(ORCID="0000-0003-3067-7154")))
+Description: Detects perceptions of warmth and competence in American English self-presentation language. Using trained elastic net regression models, this package provides a numerical representation of warmth and competence perceptions. Methods are described here:<https://github.com/bushraguenoun/warmthcompetence/tree/master/paper>. 
+License: AGPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/bushraguenoun/warmthcompetence,
+        https://bushraguenoun.github.io/warmthcompetence/
+BugReports: https://github.com/bushraguenoun/warmthcompetence/issues
+RoxygenNote: 7.3.3
+Imports: spacyr, caret, dplyr (>= 1.2.0), lexicon, ngram, qdap,
+        politeness, qdapDictionaries, quanteda (>= 4.0.2), sentimentr,
+        stats, tidyr, tidytext, tm, quanteda.textstats
+Depends: R (>= 4.1.0)
+Suggests: rmarkdown, knitr
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-05 18:39:49 UTC; bguenoun
+Author: Bushra Guenoun [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0975-1620>),
+  Julian Zlatev [aut] (ORCID: <https://orcid.org/0000-0002-9427-9887>),
+  Noah Greifer [ctb] (ORCID: <https://orcid.org/0000-0003-3067-7154>)
+Maintainer: Bushra Guenoun <bushraguenoun@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-11 18:40:02 UTC

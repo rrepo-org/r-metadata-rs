@@ -1,0 +1,35 @@
+Package: RSTr
+Type: Package
+Title: Gibbs Samplers for Discrete Bayesian Spatiotemporal Models
+Version: 1.2.0
+Authors@R: 
+  c(person(given = "David", 
+           family = "DeLara", 
+           role = c("aut", "cre"),
+           email = "sfq1@cdc.gov",
+           comment = c("https://orcid.org/0000-0003-0485-7549")),
+    person("Centers for Disease Control and Prevention", 
+           role = c("aut", "cph"),
+           comment = c("https://ror.org/042twtr12")))
+Maintainer: David DeLara <sfq1@cdc.gov>
+URL: https://cehi-code-repos.github.io/RSTr/
+Description: Takes Poisson or Binomial discrete spatial data and runs a Gibbs sampler for a variety of Spatiotemporal Conditional Autoregressive (CAR) models. Includes measures to prevent estimate over-smoothing through a restriction of model informativeness for select models. Also provides tools to load output and get median estimates. Implements methods from Besag, York, and Mollié (1991) "Bayesian image restoration, with two applications in spatial statistics" <doi:10.1007/BF00116466>, Gelfand and Vounatsou (2003) "Proper multivariate conditional autoregressive models for spatial data analysis" <doi:10.1093/biostatistics/4.1.11>, Quick et al. (2017) "Multivariate spatiotemporal modeling of age-specific stroke mortality" <doi:10.1214/17-AOAS1068>, and Quick et al. (2021) "Evaluating the informativeness of the Besag-York-Mollié CAR model" <doi:10.1016/j.sste.2021.100420>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LinkingTo: Rcpp (>= 1.1.0), RcppArmadillo (>= 15.2.2.1), RcppDist (>=
+        0.1.1.1)
+Suggests: ggplot2, knitr, rmarkdown, sf, testthat (>= 3.0.0)
+Imports: abind, matrixStats, spdep
+Depends: R (>= 4.3.0)
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr, rmarkdown
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-07-08 13:25:37 UTC; dave
+Author: David DeLara [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0485-7549>),
+  Centers for Disease Control and Prevention [aut, cph]
+    (https://ror.org/042twtr12)
+Repository: CRAN
+Date/Publication: 2026-07-08 22:10:02 UTC

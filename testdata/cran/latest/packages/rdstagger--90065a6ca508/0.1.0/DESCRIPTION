@@ -1,0 +1,32 @@
+Package: rdstagger
+Type: Package
+Title: Staggered Regression Discontinuity with Network Interference
+Version: 0.1.0
+Authors@R: 
+    person("Subir", "Hait", email = "haitsubi@msu.edu",
+           role = c("aut", "cre"))
+Description: Implements a unified framework combining staggered
+    difference-in-differences with regression discontinuity designs
+    and network interference. Extends Callaway and Sant'Anna (2021)
+    <doi:10.1016/j.jeconom.2020.12.001> to settings where treatment
+    assignment is determined by a running variable crossing a cutoff,
+    adoption timing is heterogeneous across units, and spillover effects
+    operate through a known network structure. Provides group-time average
+    treatment effects (direct and spillover), aggregation schemes,
+    bandwidth selection, and pre-treatment falsification tests.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, sandwich, ggplot2, rdrobust,
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, dplyr, covr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/causalfragility-lab/rdstagger
+BugReports: https://github.com/causalfragility-lab/rdstagger/issues
+NeedsCompilation: no
+Packaged: 2026-05-02 22:28:37 UTC; Subir
+Author: Subir Hait [aut, cre]
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-05-05 18:50:02 UTC

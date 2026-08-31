@@ -1,0 +1,44 @@
+Package: icarm
+Title: Interpretable Contextual-Accountable and Responsible Machine
+        Learning
+Version: 0.3.0
+Authors@R: c(person("Olushina Olawale", "Awe", email = "olawaleawe@gmail.com", role = c("aut", "cre")), person("Ludwigsburg University of Education", role = "fnd"))
+Description: A general-purpose framework for Interpretable Contextual-Accountable
+    and Responsible Machine Learning (ICARM) that works with any clean tabular
+    data across any application domain including healthcare, finance, social
+    science, business, and education. Automatically detects whether a prediction
+    task is binary classification, multi-class classification, or regression
+    from the target variable type. Provides a unified entry point icarm_fit()
+    supporting both interpretable learners (Classification and Regression Trees
+    (CART), logistic regression, linear regression, Generalized Additive Models
+    (GAM)) and extended learners (random forest, 'XGBoost', Support Vector
+    Machines (SVM)) with consistent interfaces for global and local model
+    explanation including approximate SHapley Additive exPlanations (SHAP)
+    values and Partial Dependence Profiles (PDPs), learning curve diagnostics,
+    group-level fairness auditing across protected attributes, probability
+    calibration, threshold analysis, multi-model comparison, reproducible
+    JavaScript Object Notation (JSON) audit trails, and accountability
+    scorecards. The contextual accountability framing emphasises that algorithmic
+    fairness and interpretability requirements depend on the deployment domain
+    and must be evaluated accordingly. Extends the 'civic.icarm' framework
+    (Awe 2025) <https://cran.r-project.org/package=civic.icarm> to
+    general-purpose applications beyond civic and political education.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 4.1.0)
+Imports: stats, utils, rpart, class, ggplot2, dplyr, tidyr, tibble,
+        purrr, rlang, jsonlite, digest
+Suggests: randomForest, xgboost, e1071, mgcv, glmnet, nnet, DALEX,
+        pROC, lightgbm, ipred, MASS, ggiraph, rmarkdown, future,
+        future.apply, testthat, covr
+Config/testthat/edition: 3
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-08-20 17:47:33 UTC; root
+Author: Olushina Olawale Awe [aut, cre],
+  Ludwigsburg University of Education [fnd]
+Maintainer: Olushina Olawale Awe <olawaleawe@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:42:36 UTC

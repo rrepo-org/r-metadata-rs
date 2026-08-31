@@ -1,0 +1,28 @@
+Package: GREENREG
+Title: Tool for Statistical and Environmental Analysis
+Version: 0.1.0
+Authors@R: 
+    person("Dayron Jared", "Bazan Guzman", , "dbazanguzman@gmail.com", role = c("aut", "cre"))
+Description: Provides a set of accessible and automated functions to apply 
+    statistical models such as Simple Linear Regression (RLS, from the Spanish 
+    'Regresión Lineal Simple'), Multiple Linear Regression (RLM, from the Spanish 
+    'Regresión Lineal Múltiple'), Generalized Linear Models (GLM), and time 
+    series analysis through Autoregressive Integrated Moving Average (ARIMA) 
+    models. Designed to support teaching at the Universidad Autónoma Chapingo, 
+    it facilitates results interpretation and assumption validation through 
+    automatic graphical diagnostics. Methods for regression and time series 
+    are based on Montgomery et al. (2021, ISBN:978-1119570141) and 
+    Box & Jenkins (1970, ISBN:978-0816211043).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+Imports: ggplot2, ggrepel, stats, lmtest,
+Suggests: pROC, broom, car, rmarkdown, tseries
+NeedsCompilation: no
+Packaged: 2026-05-25 03:56:12 UTC; dbaza
+Author: Dayron Jared Bazan Guzman [aut, cre]
+Maintainer: Dayron Jared Bazan Guzman <dbazanguzman@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-29 10:10:14 UTC

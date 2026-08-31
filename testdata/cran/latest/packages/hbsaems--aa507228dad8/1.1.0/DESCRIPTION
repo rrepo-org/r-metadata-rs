@@ -1,0 +1,58 @@
+Package: hbsaems
+Type: Package
+Title: Hierarchical Bayesian Area-Level Small Area Estimation Models
+Version: 1.1.0
+Date: 2026-05-31
+Authors@R: c(
+    person("Achmad Syahrul", "Choir",
+           email = "madsyair@stis.ac.id",
+           role  = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7088-0646")),
+    person("Saniyyah Sri", "Nurhayati",
+           role  = "aut"),
+    person("Sofi", "Zamzanah",
+           role  = "aut"),
+    person("Arsyka Laila", "Oktalia Siregar",
+           role  = "aut"))
+Maintainer: Achmad Syahrul Choir <madsyair@stis.ac.id>
+Description: Fits area-level Hierarchical Bayesian Small Area Estimation
+    models. The methodological foundation follows the standard area-level
+    Small Area Estimation literature, primarily Rao and Molina (2015,
+    ISBN: 9781118735787) <doi:10.1002/9781118735855>, while computational
+    implementation is adapted to the parameterisation and
+    prior-specification conventions of the 'brms' package
+    <doi:10.18637/jss.v080.i01>, which targets the
+    Stan back-end. Supports a principled Bayesian workflow
+    <doi:10.48550/arXiv.2011.01808>, with prior
+    predictive checks, convergence diagnostics, model comparison,
+    spatial random effects, custom distributions, missing-data
+    handling, and a bilingual 'shiny' application for non-programmer
+    analysts.
+License: GPL (>= 3)
+URL: https://madsyair.github.io/hbsaems/,
+        https://github.com/madsyair/hbsaems
+BugReports: https://github.com/madsyair/hbsaems/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: brms (>= 2.18.0), coda (>= 0.19-4), ggplot2 (>= 3.3.5), mice
+        (>= 3.14.0), rstantools (>= 2.4.0), stats, utils
+Suggests: bayesplot, bridgesampling, DT, energy, knitr (>= 1.40), loo,
+        mgcv, minerva, mockery, posterior, priorsense, readxl,
+        rmarkdown (>= 2.16), rstan, sf, shiny, shinydashboard (>=
+        0.7.2), shinyWidgets, shinytest2, spdep, spelling (>= 2.2),
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+Packaged: 2026-06-01 13:56:16 UTC; madsyair
+Author: Achmad Syahrul Choir [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7088-0646>),
+  Saniyyah Sri Nurhayati [aut],
+  Sofi Zamzanah [aut],
+  Arsyka Laila Oktalia Siregar [aut]
+Repository: CRAN
+Date/Publication: 2026-06-01 14:40:02 UTC

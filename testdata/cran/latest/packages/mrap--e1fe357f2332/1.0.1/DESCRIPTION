@@ -1,0 +1,34 @@
+Package: mrap
+Title: Machine-Readable Data Analysis Results with Function Wrappers
+Version: 1.0.1
+Authors@R: c(
+    person("Olga", "Lezhnina", , "olga.lezhnina@tib.eu", role = "aut",
+           comment = c(ORCID = "0000-0003-2237-7725")),
+    person("Manuel", "Prinz", , "manuel.prinz@tib.eu", role = "aut",
+           comment = c(ORCID = "0000-0003-2151-4556")),
+    person("Markus", "Stocker", , "markus.stocker@tib.eu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5492-3212")),
+    person("Open Research Knowledge Graph Project and Contributors", role = "cph")
+  )
+Description: You can use the set of wrappers for analytical schemata 
+    to reduce the effort in writing machine-readable data. The set of all-in-one
+    wrappers will cover widely used functions from data analysis packages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://gitlab.com/TIBHannover/lki/knowledge-loom/mrap-r
+BugReports: https://gitlab.com/TIBHannover/lki/knowledge-loom/mrap-r/-/issues
+Imports: dtreg, jsonlite, stringr
+Suggests: knitr, lme4, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-08 09:09:57 UTC; LezhninaO
+Author: Olga Lezhnina [aut] (ORCID: <https://orcid.org/0000-0003-2237-7725>),
+  Manuel Prinz [aut] (ORCID: <https://orcid.org/0000-0003-2151-4556>),
+  Markus Stocker [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5492-3212>),
+  Open Research Knowledge Graph Project and Contributors [cph]
+Maintainer: Markus Stocker <markus.stocker@tib.eu>
+Repository: CRAN
+Date/Publication: 2025-12-08 13:30:02 UTC

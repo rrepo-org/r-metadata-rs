@@ -1,0 +1,36 @@
+Package: brazilmaps
+Type: Package
+Title: Brazilian Maps from Different Geographic Levels
+Version: 1.0.0
+Authors@R: 
+    person("Renato", "Prado Siqueira",
+           email = "rpradosiqueira@gmail.com",
+           role = c("aut", "cre"))
+Copyright: Package code (c) 2018-2026 Renato Prado Siqueira. See
+        inst/COPYRIGHTS for bundled data attribution.
+Description: Provides simplified Brazilian territorial meshes derived from
+    official data published by the Brazilian Institute of Geography and
+    Statistics (IBGE) <https://www.ibge.gov.br/> as local spatial objects,
+    with no download required at use time. Municipal meshes cover selected
+    official editions from 2000 onwards whenever the number of municipalities
+    changes, and current meshes are available for states, regions and other
+    geographic levels. Convenience functions support filtering, joining and
+    plotting the maps, as well as consulting Brazilian territorial codes.
+Depends: R (>= 4.1.0)
+LazyData: true
+LazyDataCompression: xz
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/rpradosiqueira/brazilmaps
+BugReports: https://github.com/rpradosiqueira/brazilmaps/issues
+Imports: dplyr, ggplot2 (>= 3.5.0), rlang, sf
+Suggests: knitr, rmarkdown, sp, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-24 13:37:41 UTC; renat
+Author: Renato Prado Siqueira [aut, cre]
+Maintainer: Renato Prado Siqueira <rpradosiqueira@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-04 10:20:03 UTC

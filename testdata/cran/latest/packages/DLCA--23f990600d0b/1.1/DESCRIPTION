@@ -1,0 +1,24 @@
+Package: DLCA
+Version: 1.1
+Date: 2026-08-20
+Title: Divisive Latent Class Analysis
+Authors@R: c(person("Daniel W.", "van der Palm", role = c("aut", "cre"),
+		     email = "danielvdpalm@gmail.com"),
+	         person("L. Andries", "van der Ark", role = "ctb",
+			 email = "L.A.vanderArk@uva.nl"))
+Author: Daniel W. van der Palm [aut, cre],
+  L. Andries van der Ark [ctb]
+Maintainer: Daniel W. van der Palm <danielvdpalm@gmail.com>
+Imports: Rcpp (>= 0.11.4)
+LinkingTo: Rcpp
+SystemRequirements: OpenMP
+Description: Provides algorithms for estimating divisive and standard latent
+    class models. The divisive latent class method follows van der Palm,
+    van der Ark and Vermunt (2016) <doi:10.1007/s00357-016-9195-5>.
+    Both algorithms use expectation-maximization and Newton-Raphson
+    optimization and are implemented in 'C++' for speed through 'Rcpp'.
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2026-08-21 07:28:33 UTC; CodexSandboxOffline
+Repository: CRAN
+Date/Publication: 2026-08-21 09:10:02 UTC

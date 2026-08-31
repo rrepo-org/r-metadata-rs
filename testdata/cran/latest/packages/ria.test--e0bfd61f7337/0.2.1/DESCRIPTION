@@ -1,0 +1,64 @@
+Package: ria.test
+Type: Package
+Title: Testing Equality of Natural Mediation Effects and Their
+        Randomized Interventional Analogues
+Version: 0.2.1
+Authors@R: 
+    c(person(given = "Ang",
+             family = "Yu",
+             role = c("aut", "cre", "cph"),
+             email = "ang_yu@outlook.com",
+             comment = c("Author and copyright holder of ria.test-specific extensions")),
+      person(given = "Nicholas",
+             family = "Williams",
+             role = c("aut", "cph"),
+             email = "ntwilliams.personal@gmail.com", 
+             comment = c(
+                 ORCID = "0000-0002-1378-4831",
+                 "Author and copyright holder of code derived from crumble")),
+      person(given = "Richard", 
+             family = "Liu", 
+             email = "li.liu@nyulangone.org",
+             role = c("ctb"),
+             comment = c("Contributor to code derived from crumble")),
+      person(given = "Iván", 
+             family = "Díaz", 
+             email = "ivan.diaz@nyulangone.org",
+             role = c("aut", "cph"),
+             comment = c(
+                 ORCID = "0000-0001-9056-2047",
+                 "Author and copyright holder of code derived from crumble")))
+Maintainer: Ang Yu <ang_yu@outlook.com>
+Description: Implements the empirical test introduced by Yu, Ge, and Elwert
+    (2026) for detecting when randomized interventional analogues should not be
+    interpreted as natural mediation effects. The package estimates natural
+    effects, their randomized interventional analogues, and TE - TE^R, the
+    difference between the total effect and its randomized interventional
+    analogue. Rejecting TE - TE^R = 0 falsifies the composite null that the natural
+    indirect and direct effects equal their randomized interventional analogues.
+    The procedure remains valid in settings where the natural effects themselves
+    are not identified, and |TE - TE^R| provides a lower bound on the total
+    divergence between the natural and randomized interventional decompositions.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+URL: https://github.com/ang-yu/ria.test
+BugReports: https://github.com/ang-yu/ria.test/issues
+Imports: checkmate, Matrix, origami, torch, Rsymphony, purrr, cli, S7,
+        data.table, coro, generics, mlr3superlearner, progressr, ife
+        (>= 0.2.1)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-12 14:31:31 UTC; Ang
+Author: Ang Yu [aut, cre, cph] (Author and copyright holder of
+    ria.test-specific extensions),
+  Nicholas Williams [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-1378-4831>, Author and copyright
+    holder of code derived from crumble),
+  Richard Liu [ctb] (Contributor to code derived from crumble),
+  Iván Díaz [aut, cph] (ORCID: <https://orcid.org/0000-0001-9056-2047>,
+    Author and copyright holder of code derived from crumble)
+Repository: CRAN
+Date/Publication: 2026-07-21 10:50:07 UTC

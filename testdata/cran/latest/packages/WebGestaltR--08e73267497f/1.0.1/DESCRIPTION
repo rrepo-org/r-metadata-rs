@@ -1,0 +1,41 @@
+Package: WebGestaltR
+Type: Package
+Title: Gene Set Analysis Toolkit WebGestaltR
+Version: 1.0.1
+Date: 2026-07-31
+Authors@R: c(
+        person("John", "Elizarraras", email = "john.elizarraras@bcm.edu", role = "aut"),
+        person("Jing", "Wang", email = "jingwang.uestc@gmail.com", role = "aut"),
+        person("Yuxing", "Liao", email = "yuxingliao@gmail.com", role = c("aut")),
+        person("Eric", "Jaehnig", email = "Eric.Jaehnig@bcm.edu", role = c("ctb")),
+        person("Zhiao", "Shi", email = "zhiao.shi@gmail.com", role = c("aut", "cre")),
+        person("Quanhu", "Sheng", email = "shengqh@gmail.com", role = c("ctb"))
+        )
+Description: The web version WebGestalt <https://www.webgestalt.org> supports 12 organisms, 354 gene identifiers and 321,251 function categories. Users can upload the data and functional categories with their own gene identifiers. In addition to the Over-Representation Analysis, WebGestalt also supports Gene Set Enrichment Analysis and Network Topology Analysis. The user-friendly output report allows interactive and efficient exploration of enrichment results. The WebGestaltR package not only supports all above functions but also can be integrated into other pipeline or simultaneously analyze multiple gene lists.
+License: LGPL
+URL: https://github.com/bzhanglab/WebGestaltR,
+        https://bzhanglab.github.io/WebGestaltR/
+LazyLoad: yes
+Depends: R (>= 4.0)
+Imports: methods, dplyr, doRNG, readr, parallel (>= 3.3.2), doParallel
+        (>= 1.0.10), foreach (>= 1.4.0), jsonlite, httr, rlang,
+        svglite, whisker, apcluster, Rcpp, cluster, poolr
+NeedsCompilation: yes
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+SystemRequirements: Cargo (Rust's package manager), rustc v1.63.0+
+Config/rextendr/version: 0.4.2
+Config/WebGestaltR/MSRV: 1.63.0
+Encoding: UTF-8
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Packaged: 2026-07-31 14:34:44 UTC; shiz
+Author: John Elizarraras [aut],
+  Jing Wang [aut],
+  Yuxing Liao [aut],
+  Eric Jaehnig [ctb],
+  Zhiao Shi [aut, cre],
+  Quanhu Sheng [ctb]
+Maintainer: Zhiao Shi <zhiao.shi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 12:30:02 UTC

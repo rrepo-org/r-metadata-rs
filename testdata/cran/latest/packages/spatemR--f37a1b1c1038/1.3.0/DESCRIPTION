@@ -1,0 +1,26 @@
+Package: spatemR
+Type: Package
+Title: Generalized Spatial Autoregresive Models for Mean and Variance
+Version: 1.3.0
+Authors@R: c(person("Nelson Alirio", "Cruz Gutierrez", 
+                role = c("aut", "cre","cph"), email = "nelson-alirio.cruz@uib.es"), 
+          person("Oscar Orlando", "Melo", role = "aut",
+                email="oomelom@unal.edu.co"),
+          person("Jurgen", "Toloza-Delgado", role = "aut",
+                email="jdtolozad@unal.edu.co"))
+Description: Modeling spatial dependencies in dependent variables, extending traditional spatial regression approaches. It allows for the joint modeling of both the mean and the variance of the dependent variable, incorporating semiparametric effects in both models. Based on generalized additive models (GAM), the package enables the inclusion of non-parametric terms while maintaining the classical theoretical framework of spatial regression. Additionally, it implements the Generalized Spatial Autoregression (GSAR) model, which extends classical methods like logistic Spatial Autoregresive Models (SAR), probit Spatial Autoregresive Models (SAR), and Poisson Spatial Autoregresive Models (SAR), offering greater flexibility in modeling spatial dependencies and significantly improving computational efficiency and the statistical properties of the estimators. Related work includes: a) J.D. Toloza-Delgado, Melo O.O., Cruz N.A. (2024). "Joint spatial modeling of mean and non-homogeneous variance combining semiparametric SAR and GAMLSS models for hedonic prices". <doi:10.1016/j.spasta.2024.100864>. b) Cruz, N. A., Toloza-Delgado, J. D., Melo, O. O. (2024). "Generalized spatial autoregressive model". <doi:10.48550/arXiv.2412.00945>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: methods, stats, gamlss (>= 5.3-1), gamlss.dist, sphet, Matrix
+Suggests: testthat (>= 3.0.0), sp, spdep
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-14 17:49:17 UTC; UIB
+Author: Nelson Alirio Cruz Gutierrez [aut, cre, cph],
+  Oscar Orlando Melo [aut],
+  Jurgen Toloza-Delgado [aut]
+Maintainer: Nelson Alirio Cruz Gutierrez <nelson-alirio.cruz@uib.es>
+Repository: CRAN
+Date/Publication: 2026-04-14 18:00:09 UTC

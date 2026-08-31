@@ -1,0 +1,51 @@
+Package: TreeBUGS
+Version: 1.5.3
+Date: 2025-09-23
+Title: Hierarchical Multinomial Processing Tree Modeling
+Authors@R: c(person("Daniel W.", "Heck", role=c("aut","cre"),
+                    email="daniel.heck@uni-marburg.de", 
+                    comment = c(ORCID = "0000-0002-6302-9252")),
+             person("Nina R.", "Arnold", role = c("aut","dtc"), 
+                    email="arnold@uni-mannheim.de"),
+             person("Denis", "Arnold", role = c("aut"), 
+                    email="denis.arnold@uni-tuebingen.de"),
+             person("Alexander", "Ly", role = c("ctb"), 
+                    email="a.ly@uva.nl"),
+             person("Marius", "Barth", role = c("ctb"),
+                    email="marius.barth@uni-koeln.de",
+                    comment = c(ORCID = "0000-0002-3421-6665")))
+Maintainer: Daniel W. Heck <daniel.heck@uni-marburg.de>
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.0), stats, parallel, graphics, utils, grDevices,
+        MASS, runjags, rjags, coda, hypergeo, logspline
+Suggests: knitr, rmarkdown, testthat, R.rsp
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr, R.rsp
+NeedsCompilation: yes
+SystemRequirements: JAGS (https://mcmc-jags.sourceforge.io/)
+Description: User-friendly analysis of hierarchical multinomial processing tree (MPT) 
+    models that are often used in cognitive psychology. Implements the latent-trait 
+    MPT approach (Klauer, 2010) <DOI:10.1007/s11336-009-9141-0> and the beta-MPT 
+    approach (Smith & Batchelder, 2010) <DOI:10.1016/j.jmp.2009.06.007> to model 
+    heterogeneity of participants. MPT models are conveniently specified by an
+    .eqn-file as used by other MPT software and data are provided by a .csv-file 
+    or directly in R. Models are either fitted by calling JAGS or by an MPT-tailored 
+    Gibbs sampler in C++ (only for nonhierarchical and beta MPT models). Provides 
+    tests of heterogeneity and MPT-tailored summaries and plotting functions.
+    A detailed documentation is available in Heck, Arnold, & Arnold (2018) 
+    <DOI:10.3758/s13428-017-0869-7> and a tutorial on MPT modeling can be found 
+    in Schmidt, Erdfelder, & Heck (2023) <DOI:10.1037/met0000561>.
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/danheck/TreeBUGS
+RoxygenNote: 7.3.3
+LazyData: TRUE
+Packaged: 2025-09-23 12:57:40 UTC; Daniel
+Author: Daniel W. Heck [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6302-9252>),
+  Nina R. Arnold [aut, dtc],
+  Denis Arnold [aut],
+  Alexander Ly [ctb],
+  Marius Barth [ctb] (ORCID: <https://orcid.org/0000-0002-3421-6665>)
+Repository: CRAN
+Date/Publication: 2025-09-23 13:30:02 UTC

@@ -1,0 +1,39 @@
+Package: cppSim
+Title: Fast and Memory Efficient Spatial Interaction Models
+Version: 0.2
+Authors@R: 
+    person(given = "Ivann", family = "Schlosser", email = "ivann.schlosser.19@ucl.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-4099-3198"))
+Author: Ivann Schlosser [aut, cre] (ORCID:
+    <https://orcid.org/0009-0004-4099-3198>)
+Maintainer: Ivann Schlosser <ivann.schlosser.19@ucl.ac.uk>
+Description: Building on top of the 'RcppArmadillo' linear
+    algebra functionalities to do fast spatial interaction models in the
+    context of urban analytics, geography, transport modelling. It uses
+    the Newton root search algorithm to determine the optimal cost
+    exponent and can run country level models with thousands of origins
+    and destinations. It aims at implementing an easy approach based on
+    matrices, that can originate from various routing and processing steps earlier in an workflow. 
+    Currently, the simplest form of production, destination and
+    doubly constrained models are implemented.
+    Schlosser et al. (2023) <doi:10.48550/arXiv.2309.02112>.
+Date: 2025-08-29
+License: MIT + file LICENSE
+URL: https://ischlo.github.io/cppSim/, https://github.com/ischlo/cppSim
+Depends: R (>= 3.6)
+Imports: Rcpp
+Suggests: data.table, foreach, knitr, rlist, rmarkdown, cli, sf,
+        testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: bzip2
+RoxygenNote: 7.3.1
+SystemRequirements: Quarto command line tools
+        (https://github.com/quarto-dev/quarto-cli).
+NeedsCompilation: yes
+Packaged: 2025-08-29 14:44:01 UTC; cenv1069
+Repository: CRAN
+Date/Publication: 2025-09-03 21:00:14 UTC

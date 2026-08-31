@@ -1,0 +1,50 @@
+Package: neodistr
+Type: Package
+Title: Neo-Normal Distribution
+Version: 0.1.2
+Authors@R: c(
+  person("Achmad Syahrul", "Choir",
+         role = c("aut", "cre"),
+         email = "madsyair@stis.ac.id",
+         comment = c(ORCID = "0000-0001-7088-0646")),
+  person("Anisa", "Faoziah",
+         role = "aut"),
+  person("Nur", "Iriawan",
+         role = "aut",
+         comment = c(ORCID = "0000-0003-2833-6115")),
+  person("Almira", "Utami",
+         role = "ctb"),
+  person("Meischa Zahra Nur", "Adhelia",
+         role = "ctb"))
+Maintainer: Achmad Syahrul Choir <madsyair@stis.ac.id>
+Description: Calculating the density, cumulative distribution, quantile, and random number of
+    neo-normal distribution. It also interfaces with the 'brms' package,
+    allowing the use of the neo-normal distribution as a custom family.
+    This integration enables the application of various 'brms' formulas
+    for neo-normal regression.  Modified to be Stable as Normal from Burr (MSNBurr), 
+    Modified to be Stable as Normal from Burr-IIa (MSNBurr-IIa), Generalized of MSNBurr (GMSNBurr), 
+    Jones-Faddy Skew-t, Fernandez-Osiewalski-Steel Skew Exponential Power,  
+    and Jones Skew Exponential Power distributions are supported.
+    References: Choir, A. S. (2020).Unpublished Dissertation, Iriawan, N. (2000).Unpublished Dissertation,
+    Rigby, R. A., Stasinopoulos, M. D., Heller, G. Z., & Bastiani, F. D. (2019) <doi:10.1201/9780429298547>.
+License: GPL-3
+Depends: R (>= 3.6.0),shinythemes,plotly,brms
+Imports: rstan , stats,Rmpfr,ggplot2,shiny
+Suggests: spelling, kableExtra, knitr, rmarkdown, testthat, bayesplot,
+        loo
+URL: https://github.com/madsyair/neodistr
+BugReports: https://github.com/madsyair/neodistr/issues
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-07-12 03:18:23 UTC; madsyair
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr, rmarkdown
+Language: en-US
+Author: Achmad Syahrul Choir [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7088-0646>),
+  Anisa Faoziah [aut],
+  Nur Iriawan [aut] (ORCID: <https://orcid.org/0000-0003-2833-6115>),
+  Almira Utami [ctb],
+  Meischa Zahra Nur Adhelia [ctb]
+Repository: CRAN
+Date/Publication: 2025-07-12 07:10:02 UTC

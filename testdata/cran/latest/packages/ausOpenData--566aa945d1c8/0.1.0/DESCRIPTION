@@ -1,0 +1,41 @@
+Package: ausOpenData
+Type: Package
+Title: A Lightweight Interface to the Austin, Texas Open Data APIs
+Version: 0.1.0
+Authors@R: 
+    c(
+      person("Christian", "Martinez", 
+             email = "c.martinez0@outlook.com", 
+             role = c("aut", "cre"),
+             comment = c(
+               GitHub = "martinezc1",
+               ORCID = "0009-0005-6026-6454"
+             )),
+      person("Emma", "Tupone",
+             role = "ctb",
+             comment = c(GitHub = "emmatup0205"))
+    )
+Description: Provides a unified set of helper functions to access datasets 
+    from the Austin, Texas Open Data platform <https://data.austintexas.gov/>. 
+    Functions return results as tidy tibbles and support optional filtering, 
+    sorting, and row limits via the Socrata API.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: httr, jsonlite, tibble, janitor, curl, dplyr, rlang
+Suggests: ggplot2, knitr, rmarkdown, scales, testthat (>= 3.0.0),
+        tidyr, vcr (>= 0.6.0), webmockr
+URL: https://martinezc1.github.io/ausOpenData/,
+        https://github.com/martinezc1/ausOpenData
+BugReports: https://github.com/martinezc1/ausOpenData/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-07-19 06:10:55 UTC; christianmartinez
+Author: Christian Martinez [aut, cre] (GitHub: martinezc1, ORCID:
+    <https://orcid.org/0009-0005-6026-6454>),
+  Emma Tupone [ctb] (GitHub: emmatup0205)
+Maintainer: Christian Martinez <c.martinez0@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-07-28 16:20:15 UTC

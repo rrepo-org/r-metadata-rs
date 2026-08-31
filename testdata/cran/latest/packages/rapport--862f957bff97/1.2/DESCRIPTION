@@ -1,0 +1,30 @@
+Package: rapport
+Title: A Report Templating System
+Type: Package
+Encoding: UTF-8
+Description: Facilitating the creation of reproducible statistical
+    report templates. Once created, rapport templates can be exported to
+    various external formats (HTML, LaTeX, PDF, ODT etc.) with pandoc as the
+    converter backend.
+Authors@R: c(
+    person(given = "Aleksandar", family = "Blagotić", role = "aut", email = "alex@rapporter.net"),
+    person(given = "Gergely", family = "Daróczi", role = c("aut", "cre"), email = "daroczig@rapporter.net"))
+Version: 1.2
+Date: 2025-04-07
+URL: https://rapporter.github.io/rapport/
+BugReports: https://github.com/rapporter/rapport/issues
+License: AGPL-3
+LazyData: yes
+LazyLoad: yes
+Depends: R (>= 2.15.0)
+Imports: grDevices, utils, yaml, stringr, rapportools, pander
+SystemRequirements: pandoc (https://johnmacfarlane.net/pandoc) for
+        exporting markdown files to other formats.
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-04-07 21:29:42 UTC; daroczig
+Author: Aleksandar Blagotić [aut],
+  Gergely Daróczi [aut, cre]
+Maintainer: Gergely Daróczi <daroczig@rapporter.net>
+Repository: CRAN
+Date/Publication: 2025-04-07 22:50:01 UTC

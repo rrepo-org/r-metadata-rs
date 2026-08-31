@@ -1,0 +1,33 @@
+Package: quantbayes
+Type: Package
+Title: Bayesian Quantification of Evidence Sufficiency
+Version: 0.1.0
+License: MIT + file LICENSE
+Language: en-GB
+Authors@R: 
+    person(
+        given = "Dylan",
+        family = "Lawless",
+        email = "admin@switzerlandomics.ch",
+        role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0000-0001-8496-3725")
+    )
+Description: Implements the Quantification Evidence Standard algorithm for computing
+    Bayesian evidence sufficiency from binary evidence matrices. It provides
+    posterior estimates, credible intervals, percentiles, and optional visual
+    summaries. The method is universal, reproducible, and independent of
+    any specific clinical or rule based framework. For details see The Quantitative Omics Epidemiology Group et al. (2025) <doi:10.64898/2025.12.02.25341503>.
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1)
+Imports: ggplot2, tibble, dplyr, tidyr, purrr, stats, grDevices
+Suggests: knitr, rmarkdown, tidyverse
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-12-12 10:29:44 UTC; akira
+Author: Dylan Lawless [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8496-3725>)
+Maintainer: Dylan Lawless <admin@switzerlandomics.ch>
+Repository: CRAN
+Date/Publication: 2025-12-18 14:00:02 UTC

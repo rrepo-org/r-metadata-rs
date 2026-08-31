@@ -1,0 +1,46 @@
+Package: HVT
+Type: Package
+Date: 2026-04-29
+Title: Constructing Hierarchical Voronoi Tessellations and Overlay
+        Heatmaps for Data Analysis
+Version: 26.1.3
+Authors@R: c(
+  person("Zubin", "Dowlaty", email = "zubin.dowlaty@mu-sigma.com", role = c("aut", "cre")),
+  person("Mu Sigma, Inc.", role = "cph"))
+Description: Facilitates building topology preserving maps for data analysis.
+License: Apache License 2.0
+Encoding: UTF-8
+Imports: MASS, grDevices, splancs, stats, dplyr, NbClust, purrr,
+        magrittr, ggplot2, tidyr, scales, cluster, reshape2, FNN,
+        Rtsne, umap, plyr, markovchain, methods, deldir, gridExtra
+Depends: R (>= 4.0.0)
+BugReports: https://github.com/Mu-Sigma/HVT/issues
+URL: https://github.com/Mu-Sigma/HVT
+RoxygenNote: 7.3.3
+Suggests: knitr,rmarkdown,testthat,geozoo, plotly, rlang,
+        DT,patchwork,sp,Hmisc,data.table,gtable,
+        htmlwidgets,skimr,tibble,devtools,gifski,gganimate,
+        tidyverse,DataExplorer,htmltools,corrplot,kableExtra,polyclip,conf.design,
+        furrr, future, dendextend
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-29 20:21:30 UTC; vishwavani
+Maintainer: Zubin Dowlaty <zubin.dowlaty@mu-sigma.com>
+Repository: CRAN
+Date/Publication: 2026-04-29 21:40:02 UTC
+Collate: 'Add_boundary_points.R' 'Corrected_Tessellations.R'
+        'Transform_Coordinates.R' 'ScaleMat.R' 'DelaunayInfo.R'
+        'Delete_Outpoints.R' 'HVTMSM_support.R' 'HVTMSMoptimization.R'
+        'OptimizationResults.R' 'VQ_codebookSplit.R' 'constants.R'
+        'clusterPlot.R' 'clustHVT.R' 'diagPlot.R' 'diagSuggestion.R'
+        'displayTable.R' 'edaPlots.R' 'getCellId.R' 'getCentroids.R'
+        'getCentroids_for_opti.R' 'getOptimalCentroids.R'
+        'getTransitionProbability.R' 'global.R' 'hvq.R' 'madPlot.R'
+        'mcmc_plots.R' 'msm.R' 'utilities.R' 'plotAnimatedFlowmap.R'
+        'plotExAnteRawSeries.R' 'plotHVT.R' 'plotModelDiagnostics.R'
+        'plotMsmKN.R' 'plotNovelCells.R' 'plotQuantErrorHistogram.R'
+        'plotStateTransition.R' 'plotZscore.R'
+        'reconcileTransitionProbability.R' 'removeNovelty.R'
+        'scoreHVT.R' 'scoreLayeredHVT.R' 'summary.R' 'trainHVT.R'
+Author: Zubin Dowlaty [aut, cre],
+  Mu Sigma, Inc. [cph]

@@ -1,0 +1,38 @@
+Type: Package
+Package: writeAlizer
+Title: Generate Predicted Writing Quality Scores
+Version: 1.7.3
+Date: 2026-2-16
+Authors@R: 
+    person("Sterett H.", "Mercer", , "sterett.mercer@ubc.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7940-4221"))
+Description: Imports variables from 'ReaderBench' (Dascalu et al.,
+    2018)<doi:10.1007/978-3-319-66610-5_48>, 'Coh-Metrix' (McNamara et
+    al., 2014)<doi:10.1017/CBO9780511894664>, and/or 'GAMET' (Crossley et
+    al., 2019) <doi:10.17239/jowr-2019.11.02.01> output files; downloads
+    predictive scoring models described in Mercer & Cannon
+    (2022)<doi:10.31244/jero.2022.01.03> and Mercer et
+    al.(2021)<doi:10.1177/0829573520987753>; and generates predicted
+    writing quality and curriculum-based measurement (McMaster & Espin,
+    2007)<doi:10.1177/00224669070410020301> scores.
+License: MIT + file LICENSE
+URL: https://github.com/shmercer/writeAlizer/,
+        https://shmercer.github.io/writeAlizer/
+BugReports: https://github.com/shmercer/writeAlizer/issues
+Depends: R (>= 2.10)
+Imports: caret, cli, digest, dplyr, glue, magrittr, rlang (>= 1.1.0),
+        stats, tidyselect
+Suggests: caretEnsemble, Cubist, curl, earth, gbm, glmnet, kernlab,
+        knitr, pls, randomForest, rmarkdown, testthat (>= 3.1.0), withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-16 17:42:52 UTC; sterett
+Author: Sterett H. Mercer [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7940-4221>)
+Maintainer: Sterett H. Mercer <sterett.mercer@ubc.ca>
+Repository: CRAN
+Date/Publication: 2026-02-17 06:10:13 UTC

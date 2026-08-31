@@ -1,0 +1,44 @@
+Package: uddbart
+Type: Package
+Title: Unified Dynamic Deep 'BART' for Interval-Censored Survival
+Version: 0.2.0
+Authors@R: 
+    person("Xulin", "Pan", email = "xulinpanias@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1072-2539"))
+Author: Xulin Pan [aut, cre] (ORCID: <https://orcid.org/0000-0002-1072-2539>)
+Maintainer: Xulin Pan <xulinpanias@gmail.com>
+Description: Implements U-DDBART-IC, a unified Bayesian workflow for dynamic
+    risk prediction from irregular longitudinal biomarkers when event times are
+    interval-censored between clinical visits. The package turns long-format
+    biomarker histories and patient-level interval endpoints L, R, C and delta
+    into a discrete-time follow-up grid, summarises each landmark history with
+    nine interpretable trajectory features (current, baseline and previous
+    biomarker values, last visit gap, local slope, cumulative decline, best
+    value, elapsed time and visit count), fits discrete-time interval hazards
+    using optional logit-link Bayesian additive regression trees, a generalized
+    linear model fallback, or a lightweight variational approximation,
+    accumulates survival from the discrete-time product, and evaluates the
+    interval-censored likelihood. Fitted models return landmark risk
+    predictions over user-specified horizons with posterior or bootstrap
+    uncertainty by evaluating survival ratios across fitted hazard draws.
+    Utilities are provided for simulation, staged model fitting, plotting and
+    summarising dynamic risk curves, IPCW Brier scores, cumulative/dynamic
+    time-dependent area under the curve, calibration tables, and an anonymised
+    chronic myeloid leukaemia molecular-monitoring example data set.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, grDevices
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, BART (>= 2.9)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://github.com/xulinpan/uddbart
+BugReports: https://github.com/xulinpan/uddbart/issues
+NeedsCompilation: no
+Packaged: 2026-06-25 14:29:20 UTC; CodexSandboxOffline
+Repository: CRAN
+Date/Publication: 2026-06-30 20:20:02 UTC

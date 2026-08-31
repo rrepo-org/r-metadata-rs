@@ -1,0 +1,23 @@
+Package: TidyPanel
+Title: Universal Messy Panel Data Cleaner
+Version: 0.1.2
+Authors@R: person("Tony", "Lu", email = "xulunt123@gmail.com", role = c("aut", "cre"))
+Description: A robust toolkit designed to standardize and clean complex tabular data
+    from commercial enterprise systems, healthcare records, logistics software, and HR
+    databases. Features include intelligent regex parsing for domain-specific noise
+    (currencies, percentages), gap-based block clustering, and automated messy table
+    resolution. Methods draw on tidy data principles described in Wickham (2014)
+    <doi:10.18637/jss.v059.i10> and the 'readxl' parsing infrastructure described in
+    Wickham & Bryan (2023) <https://readxl.tidyverse.org>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, stringr, readxl
+Suggests: knitr, rmarkdown, testthat, writexl
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-06 03:35:31 UTC; TonyL
+Author: Tony Lu [aut, cre]
+Maintainer: Tony Lu <xulunt123@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-11 19:00:09 UTC

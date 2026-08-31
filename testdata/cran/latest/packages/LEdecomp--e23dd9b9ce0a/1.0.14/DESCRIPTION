@@ -1,0 +1,34 @@
+Package: LEdecomp
+Type: Package
+Title: Decompose Life Expectancy by Age (and Cause)
+Version: 1.0.14
+Date: 2026-04-14
+Authors@R: c(
+   person("Tim", "Riffe", role = c("aut", "cre"), 
+          email = "tim.riffe@gmail.com", comment = c("0000-0002-2673-4622")),
+   person("David", "Atance", role = c("aut"), 
+          email = "david.atance@uah.es", comment = c("0000-0001-5860-0584")),
+   person("Josep", "Lledo", role = c("aut"), 
+          email = "josep.lledo@uv.es", comment = c("0000-0002-7475-8549"))
+   )
+Description: A set of all-cause and cause-specific life expectancy sensitivity and decomposition methods, including Arriaga (1984) <doi:10.2307/2061029>, others documented by Ponnapalli (2005) <doi:10.4054/DemRes.2005.12.7>, lifetable, numerical, and other analytic or algorithmic approaches such as Horiuchi et al (2008) <doi:10.1353/dem.0.0033>, or Andreev et al (2002) <doi:10.4054/DemRes.2002.7.14>. 
+License: GPL-3
+LazyLoad: yes
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: numDeriv, Rdpack, DemoDecomp, data.table, ggplot2
+Depends: R (>= 4.3)
+RdMacros: Rdpack
+BugReports: https://github.com/timriffe/LEdecomp/issues
+Encoding: UTF-8
+URL: https://github.com/timriffe/LEdecomp
+Suggests: testthat (>= 3.0.0), tibble
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-15 18:26:16 UTC; tim
+Author: Tim Riffe [aut, cre] (0000-0002-2673-4622),
+  David Atance [aut] (0000-0001-5860-0584),
+  Josep Lledo [aut] (0000-0002-7475-8549)
+Maintainer: Tim Riffe <tim.riffe@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-15 18:40:02 UTC

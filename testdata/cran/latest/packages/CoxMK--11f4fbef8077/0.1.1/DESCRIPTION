@@ -1,0 +1,24 @@
+Package: CoxMK
+Type: Package
+Title: A Model-X Knockoff Method for Genome-Wide Survival Association
+        Analysis
+Version: 0.1.1
+Author: Yang Chen [aut, cre],
+  Contributors [ctb]
+Maintainer: Yang Chen <yangchen5@stu.scu.edu.cn>
+Authors@R: c(
+    person("Yang", "Chen", email = "yangchen5@stu.scu.edu.cn", role = c("aut", "cre")),
+    person("Contributors", "", role = "ctb")
+    )
+Description: A genome-wide survival framework that integrates sequential conditional independent tuples and saddlepoint approximation method, to provide SNP-level false discovery rate control while improving power, particularly for biobank-scale survival analyses with low event rates. The method is based on model-X knockoffs as described in Barber and Candes (2015) <doi:10.1214/15-AOS1337> and fast survival analysis methods from Bi et al. (2020) <doi:10.1016/j.ajhg.2020.06.003>. A shrinkage algorithmic leveraging accelerates multiple knockoffs generation in large genetic cohorts. This CRAN version uses standard Cox regression for association testing. For enhanced performance on very large datasets, users may optionally install the 'SPACox' package from GitHub which provides saddlepoint approximation methods for survival analysis.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: Matrix, survival, irlba, stats, utils, gdsfmt, BEDMatrix
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-08-28 16:30:31 UTC; fairy
+Repository: CRAN
+Date/Publication: 2025-09-03 08:00:29 UTC

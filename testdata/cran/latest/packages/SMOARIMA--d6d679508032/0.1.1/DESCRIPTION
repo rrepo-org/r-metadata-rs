@@ -1,0 +1,35 @@
+Package: SMOARIMA
+Type: Package
+Title: Automatic ARIMA Order Selection Using Spider Monkey Optimization
+Version: 0.1.1
+Authors@R: c(
+    person("Santosha", "Rathod", role = "aut"),
+    person("Mrinmoy", "Ray",
+           role = c("aut", "cre"),
+           email = "mrinmoy4848@gmail.com"),
+    person("Chiranjit", "Mazumder", role = "aut"),
+    person("Vishnu", "Shankar", role = "aut"),
+    person("Fasila", "K. P.", role = "aut"),
+    person("Sujith Arokiaswamy", "B.", role = "aut"),
+    person("Anil", "Kumar", role = "aut"))
+Maintainer: Mrinmoy Ray <mrinmoy4848@gmail.com>
+Depends: R (>= 4.0.0)
+Imports: forecast, stats
+Description: Implements automatic autoregressive integrated moving average
+    order selection using the Spider Monkey Optimization algorithm. Candidate
+    orders are evaluated using a weighted objective function that combines
+    the Akaike information criterion and root mean square error. Functions
+    support model fitting, forecasting, and forecast accuracy evaluation.
+License: GPL-3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-07-29 06:24:30 UTC; majum
+Author: Santosha Rathod [aut],
+  Mrinmoy Ray [aut, cre],
+  Chiranjit Mazumder [aut],
+  Vishnu Shankar [aut],
+  Fasila K. P. [aut],
+  Sujith Arokiaswamy B. [aut],
+  Anil Kumar [aut]
+Repository: CRAN
+Date/Publication: 2026-08-07 10:40:12 UTC

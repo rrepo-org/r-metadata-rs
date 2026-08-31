@@ -1,0 +1,27 @@
+Package: deepImp
+Type: Package
+Title: Imputation with Deep Learning Methods
+Version: 1.1.0
+Authors@R: c(
+  person("Matthias", "Templ", email = "matthias.templ@gmail.com",
+         role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8638-5276")))
+Description: Imputation of mixed-type and compositional data with neural networks. The
+    architecture (number and size of hidden layers, dropout, activation, optimiser) is
+    user-configurable. See Templ (2021) <doi:10.1007/978-3-030-71175-7>.
+License: GPL-2
+Encoding: UTF-8
+LazyData: TRUE
+ByteCompile: TRUE
+Depends: R (>= 4.1)
+Imports: torch, luz, VIM, robCompositions, stats, utils, graphics
+Suggests: keras3, knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-05 12:07:20 UTC; matthias
+Author: Matthias Templ [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8638-5276>)
+Maintainer: Matthias Templ <matthias.templ@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-10 08:10:20 UTC

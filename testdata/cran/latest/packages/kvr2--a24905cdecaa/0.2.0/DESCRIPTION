@@ -1,0 +1,30 @@
+Package: kvr2
+Type: Package
+Title: Calculate and Compare Multiple Definitions of Coefficient of
+        Determination
+Version: 0.2.0
+Authors@R: c(
+    person(
+      "Mao", "Kobayashi",
+      email = "kobamao.jp@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Calculate nine types of coefficients of determination (R-squared) based on the classification by Kvalseth (1985) <doi:10.1080/00031305.1985.10479448>. 
+    This package is designed for educational purposes to demonstrate how R-squared values can fluctuate depending on the choice of formula, particularly in power regression models or linear models without an intercept. 
+    By providing a comprehensive list of definitions, it helps users understand the mathematical sensitivity of goodness-of-fit indices.
+URL: https://github.com/indenkun/kvr2, https://indenkun.github.io/kvr2/
+BugReports: https://github.com/indenkun/kvr2/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: insight, ggplot2, grid, stats, tidyr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-10 13:48:57 UTC; kobayashi
+Author: Mao Kobayashi [aut, cre]
+Maintainer: Mao Kobayashi <kobamao.jp@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-10 16:00:02 UTC

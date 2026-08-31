@@ -1,0 +1,43 @@
+Package: beezdemand
+Version: 0.2.0
+Date: 2026-02-27
+Title: Behavioral Economic Easy Demand
+Authors@R: c(person("Brent", "Kaplan", email = "bkaplan.ku@gmail.com", role = c("aut", "cre", "cph"),
+             comment = c(ORCID = "0000-0002-3758-6776")),
+             person("Shawn", "Gilroy", email = "shawn.gilroy@temple.edu", role = "ctb"))
+Author: Brent Kaplan [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3758-6776>),
+  Shawn Gilroy [ctb]
+Maintainer: Brent Kaplan <bkaplan.ku@gmail.com>
+Description: Facilitates many of the analyses performed in studies of
+    behavioral economic demand. The package supports commonly-used options for
+    modeling operant demand including (1) data screening proposed by Stein,
+    Koffarnus, Snider, Quisenberry, & Bickel (2015; <doi:10.1037/pha0000020>),
+    (2) fitting models of demand such as linear (Hursh, Raslear, Bauman,
+    & Black, 1989, <doi:10.1007/978-94-009-2470-3_22>), exponential (Hursh & Silberberg, 2008,
+    <doi:10.1037/0033-295X.115.1.186>) and modified exponential (Koffarnus,
+    Franck, Stein, & Bickel, 2015, <doi:10.1037/pha0000045>), and (3) calculating
+    numerous measures relevant to applied behavioral economists (Intensity,
+    Pmax, Omax). Also supports plotting and comparing data.
+Depends: R (>= 4.1.0)
+Imports: nlsr, nlstools, nls2, ggplot2, stats, optimx, broom, lme4,
+        emmeans, minpack.lm, nls.multstart, performance, scales,
+        tibble, lifecycle, dplyr, tidyr, nlme, rlang, utils, TMB
+Suggests: broom.mixed, GGally, knitr, tidyverse, rmarkdown, purrr,
+        conflicted, devtools, here, readr, patchwork, testthat (>=
+        3.0.0)
+LinkingTo: TMB, RcppEigen
+License: GPL (>= 2)
+URL: https://brentkaplan.github.io/beezdemand/,
+        https://github.com/brentkaplan/beezdemand
+BugReports: https://github.com/brentkaplan/beezdemand/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+SystemRequirements: GNU make
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-03-03 01:10:39 UTC; brent
+Repository: CRAN
+Date/Publication: 2026-03-03 09:00:19 UTC

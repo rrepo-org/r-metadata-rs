@@ -1,0 +1,45 @@
+Package: cppally
+Title: A 'C++20' API for R
+Version: 1.1.0
+Authors@R: c(
+    person("Nick", "Christofides", , "nick.christofides.r@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-9743-7342")),
+    person("Martin Leitner-Ankerl", role = "cph",
+           comment = "Author of bundled ankerl::unordered_dense library"),
+    person("Malte Skarupke", role = "cph",
+           comment = "Author of bundled ska_sort library"),
+    person("Posit Software, PBC", role = "cph",
+           comment = "SEXP protection mechanism in r_protect.h inspired by cpp11"))
+Maintainer: Nick Christofides <nick.christofides.r@gmail.com>
+Description: A header-only 'C++20' API for manipulating R data structures
+    from 'C++'. Provides 'C++20' concepts specific to R, custom scalar and
+    vector classes with built-in NA handling, automatic object protection,
+    'SIMD' (single-instruction-multiple-data), parallelisation, and a
+    streamlined system for registering 'C++' functions, including
+    templates, to R. Full API reference and documentation are available at
+    <https://nicchr.github.io/cppally/>.
+License: MIT + file LICENSE
+URL: https://nicchr.github.io/cppally/
+BugReports: https://github.com/NicChr/cppally/issues/
+Depends: R (>= 4.5.0)
+Suggests: bench, bit64, brio, callr, cli, cpp11, decor, desc, devtools,
+        fs, glue, knitr, pkgload, purrr, readr, rmarkdown, roxygen2,
+        rstudioapi, stringr, testthat (>= 3.0.0), usethis, vctrs, withr
+VignetteBuilder: knitr
+Config/Needs/cppally/cpp_register: brio, cli, decor, desc, glue, purrr,
+        readr, stringr, vctrs, withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+SystemRequirements: C++20
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-12 11:33:38 UTC; Nmc5
+Author: Nick Christofides [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-9743-7342>),
+  Martin Leitner-Ankerl [cph] (Author of bundled ankerl::unordered_dense
+    library),
+  Malte Skarupke [cph] (Author of bundled ska_sort library),
+  Posit Software, PBC [cph] (SEXP protection mechanism in r_protect.h
+    inspired by cpp11)
+Repository: CRAN
+Date/Publication: 2026-07-12 12:10:02 UTC

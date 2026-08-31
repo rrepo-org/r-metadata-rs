@@ -1,0 +1,31 @@
+Package: phscs
+Type: Package
+Title: Philippine Statistical Classification Systems
+Version: 0.2.0
+Description: A unified interface to access and manipulate various Philippine statistical classifications. It allows users to retrieve, filter, and harmonize classification data, making it easier to work with Philippine statistical data in R.
+Authors@R: c(
+    person(
+      "Bhas", 
+      "Abdulsamad", 
+      email = "aeabdulsamad@gmail.com",
+      comment = c(ORCID = "0009-0002-5891-8124"),
+      role = c("aut", "cre", "cph")
+    )
+  )
+Author: Bhas Abdulsamad [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-5891-8124>)
+Maintainer: Bhas Abdulsamad <aeabdulsamad@gmail.com>
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: cli, psgc
+Suggests: jsonlite, testthat (>= 3.0.0), gt, rmarkdown, knitr, usethis
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+VignetteBuilder: knitr
+BugReports: https://github.com/yng-me/phscs/issues
+URL: https://yng-me.github.io/phscs/, https://github.com/yng-me/phscs
+NeedsCompilation: no
+Packaged: 2026-05-13 14:36:03 UTC; bhasabdulsamad
+Repository: CRAN
+Date/Publication: 2026-05-13 15:10:02 UTC

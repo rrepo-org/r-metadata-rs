@@ -1,0 +1,36 @@
+Package: choicer
+Title: Discrete Choice Models for Economic Applications
+Version: 0.2.0
+Authors@R: 
+    person("Fernando", "Cordeiro", , "fernandolpcordeiro@gmail.com", role = c("aut", "cre", "cph"))
+Description: Fast estimation of discrete-choice models for applied economics.
+    Frequentist likelihoods, analytical gradients, and Hessians are implemented
+    in C++ with 'OpenMP' parallelism, scaling efficiently to specifications with
+    many alternative-specific constants. Compiled Gibbs samplers provide Bayesian
+    multinomial probit and hierarchical models. Post-estimation routines cover
+    predicted shares, own- and cross-price elasticities, diversion ratios,
+    willingness to pay, and welfare counterfactuals. Supports multinomial logit
+    ('MNL'), mixed logit ('MXL'), nested logit ('NL'), Bayesian multinomial probit
+    ('MNP'), and hierarchical Bayesian multinomial logit and probit ('HMNL',
+    'HMNP').
+License: LGPL (>= 3)
+URL: https://github.com/fpcordeiro/choicer,
+        https://fpcordeiro.github.io/choicer/
+BugReports: https://github.com/fpcordeiro/choicer/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+LinkingTo: Rcpp, RcppArmadillo
+Imports: data.table, graphics, nloptr, randtoolbox, Rcpp, stats, utils
+Suggests: testthat (>= 3.0.0), numDeriv, future.apply, goftest, knitr,
+        rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+Config/Needs/website: pkgdown
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-14 01:41:27 UTC; fernando
+Author: Fernando Cordeiro [aut, cre, cph]
+Maintainer: Fernando Cordeiro <fernandolpcordeiro@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-14 02:40:02 UTC

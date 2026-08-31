@@ -1,0 +1,30 @@
+Package: McMiso
+Type: Package
+Title: Multicore Multivariable Isotonic Regression
+Version: 0.2.0
+Authors@R: person("Cheung", "Ken", email = "yc632@cumc.columbia.edu",
+    role = c("aut", "cre"))
+Description: Provides functions for isotonic regression and classification
+    when there are multiple independent variables. The functions solve the
+    optimization problem using a projective Bayes approach with recursive
+    sequential update algorithms, and are useful for situations with a
+    relatively large number of covariates. Supports binary outcomes via a
+    Beta-Binomial conjugate model ('miso', 'PBclassifier') and continuous
+    outcomes via a Normal-Inverse-Chi-Squared conjugate model ('misoN').
+    Parallel computing wrappers ('mcmiso', 'mcPBclassifier', 'mcmisoN') are
+    provided that run the down-up and up-down algorithms simultaneously and
+    return whichever finishes first. The estimation method follows the
+    projective Bayes solution described in Cheung and Diaz (2023)
+    <doi:10.1093/jrsssb/qkad014>.
+Depends: R (>= 4.0.0)
+Imports: stats, utils
+Suggests: future (>= 1.33.0)
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-04-03 17:21:04 UTC; yingkuencheung
+Author: Cheung Ken [aut, cre]
+Maintainer: Cheung Ken <yc632@cumc.columbia.edu>
+Repository: CRAN
+Date/Publication: 2026-04-03 17:40:02 UTC

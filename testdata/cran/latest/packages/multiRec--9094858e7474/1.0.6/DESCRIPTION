@@ -1,0 +1,29 @@
+Package: multiRec
+Type: Package
+Title: Analysis of Multi-Type Recurrent Events
+Version: 1.0.6
+Maintainer: Alokananda Ghosh <aghosh@alum.mit.edu>
+Author: Naji Younes [aut],
+  Alokananda Ghosh [aut, cre],
+  Medhasweta Sen [aut]
+Authors@R: c(
+    person("Naji", "Younes", email = "naji@gwu.edu", role = "aut"),
+    person("Alokananda", "Ghosh", email = "aghosh@alum.mit.edu", role = c("aut", "cre")),
+    person("Medhasweta", "Sen", email = "msen22@gwmail.gwu.edu", role = "aut")
+ )
+Depends: R (>= 4.2.0)
+Description: Implements likelihood-based estimation and diagnostics for multi-type recurrent
+    event data with dynamic risk that depends on prior events and accommodates terminating events.
+    Methods are described in Ghosh, Chan, Younes and Davis (2023) "A Dynamic Risk Model for Multitype Recurrent Events"
+    <doi:10.1093/aje/kwac213>.
+Imports: survival, numDeriv, MASS, Rfast
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Packaged: 2026-01-30 09:44:14 UTC; aghosh
+Repository: CRAN
+Date/Publication: 2026-02-03 13:20:02 UTC

@@ -1,0 +1,32 @@
+Package: nocturn
+Title: Sleep Data Filtering and Visualisation
+Version: 1.2.0
+Authors@R: 
+  person(
+    "Daniel",
+    "Thedie",
+    email = "daniel.thedie@ed.ac.uk",
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0002-1352-7245")
+  )
+Description: An online app and command-line utility to import, filter and visualise sleep data. Can be used with sleep data collected from any type of device (e.g. radar, sleep diary,...) as long as the data contains sleep onset and wake-up times for each sleep session.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: bslib, devtools, DT, markdown, readr, rvest, shinyjs,
+        shinyWidgets, svglite, testthat, xml2
+Config/testthat/edition: 3
+Imports: circular, cli, dplyr, edfReader, ggnewscale, ggplot2,
+        lubridate, readxl, rlang, scales, shiny, shinyalert, tibble,
+        tidyr, rsvg, svgedit, qpdf
+Depends: R (>= 4.3)
+LazyData: true
+URL: https://github.com/chronopsychiatry/AMBIENT-BD-nocturn
+BugReports: https://github.com/chronopsychiatry/AMBIENT-BD-nocturn/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-29 15:49:49 UTC; dthedie
+Author: Daniel Thedie [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1352-7245>)
+Maintainer: Daniel Thedie <daniel.thedie@ed.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-07-29 16:30:11 UTC

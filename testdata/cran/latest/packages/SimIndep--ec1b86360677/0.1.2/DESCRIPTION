@@ -1,0 +1,29 @@
+Package: SimIndep
+Type: Package
+Title: WISE: a Weighted Similarity Aggregation Test for Serial
+        Independence
+Version: 0.1.2
+Authors@R: c(person(given = "Qihua", family = "Zhu", email = "zhuqihua@u.nus.edu", role = c("aut","cre")),
+             person(given = "Mingshuo", family = "Liu", email = "mshliu@ucdavis.edu", role = c("aut")),
+             person(given = "Yuefeng", family = "Han", email = "yuefeng.han@nd.edu", role = c("aut")),
+             person(given = "Doudou", family = "Zhou", email = "ddzhou@nus.edu.sg", role = c("aut")))
+Description: A fast implementation of the weighted information similarity aggregation (WISE) 
+    test for detecting serial dependence, particularly suited for high-dimensional and 
+    non-Euclidean time series. Includes functions for constructing similarity matrices 
+    and conducting hypothesis testing. Users can use different similarity 
+    measures and define their own weighting schemes. For more details see Q Zhu, M Liu, 
+    Y Han, D Zhou (2025) <doi:10.48550/arXiv.2509.05678>.
+Imports: FNN, stats
+Suggests: MASS
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-10-09 07:57:42 UTC; zqh
+Author: Qihua Zhu [aut, cre],
+  Mingshuo Liu [aut],
+  Yuefeng Han [aut],
+  Doudou Zhou [aut]
+Maintainer: Qihua Zhu <zhuqihua@u.nus.edu>
+Repository: CRAN
+Date/Publication: 2025-10-15 19:30:10 UTC

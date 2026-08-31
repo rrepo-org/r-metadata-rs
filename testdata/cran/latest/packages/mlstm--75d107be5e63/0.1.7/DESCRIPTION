@@ -1,0 +1,30 @@
+Package: mlstm
+Type: Package
+Title: Multilevel Supervised Topic Models with Multiple Outcomes
+Version: 0.1.7
+Authors@R: 
+    person("Tomoya", "Himeno", email = "bd24f002@g.hit-u.ac.jp", role = c("aut", "cre"))
+Description: Fits latent Dirichlet allocation (LDA), supervised topic models,
+    and multilevel supervised topic models for text data with multiple
+    outcome variables. Core estimation routines are implemented in C++
+    using the 'Rcpp' ecosystem. 
+    For topic models, see Blei et al. (2003) <https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf>.
+    For supervised topic models, see Blei and McAuliffe (2007) <https://papers.nips.cc/paper_files/paper/2007/hash/d56b9fc4b0f1be8871f5e1c40c0067e7-Abstract.html>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: Rcpp, Matrix, data.table, RcppParallel, stats
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel, BH
+SystemRequirements: C++17
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://thimeno1993.github.io/mlstm/
+BugReports: https://github.com/thimeno1993/mlstm/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-04-14 12:52:31 UTC; tomoya
+Author: Tomoya Himeno [aut, cre]
+Maintainer: Tomoya Himeno <bd24f002@g.hit-u.ac.jp>
+Repository: CRAN
+Date/Publication: 2026-04-14 13:30:02 UTC

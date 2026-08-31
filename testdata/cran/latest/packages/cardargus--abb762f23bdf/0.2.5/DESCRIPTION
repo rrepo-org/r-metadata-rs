@@ -1,0 +1,38 @@
+Package: cardargus
+Title: Generate SVG Information Cards with Embedded Fonts and Badges
+Version: 0.2.5
+Date: 2026-07-27
+Authors@R: c(
+    person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+    person("Marcos", "Wasiliew", email = "marcos.wasilew@gmail.com", role = "aut"),
+    person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+    person("Carlos", "Amorim", email = "carlos.agaf@ufpe.br", role = "aut"),
+    person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"))
+Description: Create self-contained SVG information cards with embedded 'Google 
+    Fonts', shields-style badges, and custom logos. Cards are fully 
+    portable SVG files ideal for dashboards, reports, and web applications.
+    Includes functions to export cards to PNG and PDF formats and display them in 
+    'R Markdown' and 'Quarto' documents.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+URL: https://strategicprojects.github.io/cardargus/,
+        https://github.com/StrategicProjects/cardargus
+BugReports: https://github.com/StrategicProjects/cardargus/issues
+Imports: glue, cli, digest, gdtools, later
+Suggests: base64enc, chromote, curl, gfonts, htmltools, knitr, magick,
+        rmarkdown, rsvg, showtext, sysfonts, systemfonts, testthat (>=
+        3.0.0), xml2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 12:03:13 UTC; leite
+Author: Andre Leite [aut, cre],
+  Marcos Wasiliew [aut],
+  Hugo Vasconcelos [aut],
+  Carlos Amorim [aut],
+  Diogo Bezerra [aut]
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-07-27 12:20:02 UTC

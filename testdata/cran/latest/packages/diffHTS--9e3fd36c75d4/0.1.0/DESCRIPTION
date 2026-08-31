@@ -1,0 +1,35 @@
+Package: diffHTS
+Type: Package
+Title: Differential Drug Sensitivity Analysis for Two-Condition
+        High-Throughput Screens
+Version: 0.1.0
+Authors@R: 
+    person("Liang", "Tang", email = "xphdtangliang@gmail.com", role = c("aut", "cre"))
+Description: A complete workflow for large-scale, two-condition
+    high-throughput drug screening (HTS). It compares drug sensitivity between
+    any two experimental conditions - for example irradiated versus
+    non-irradiated cells, cancer versus normal cell lines, or treated versus
+    untreated samples - across many plates and experiments. The package covers
+    the full pipeline: control-based normalisation, plate-level quality-control
+    metrics (Z-factor, Z-prime, signal-to-background, signal-to-noise and
+    strictly standardised mean difference), replicate-consistency checks,
+    four-parameter logistic dose-response fitting with area under the curve
+    (AUC) estimation, differential (delta) AUC scoring with within-plate
+    standardisation, cut-off and sigma-based hit selection, and
+    publication-ready heatmap, scatter and quality-control visualisations.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1)
+Imports: tidyr, rlang, ggplot2, graphics, stats, utils
+Suggests: ComplexHeatmap, circlize, ggprism, ggrepel, grid, readxl,
+        testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-18 17:37:57 UTC; wd979071
+Author: Liang Tang [aut, cre]
+Maintainer: Liang Tang <xphdtangliang@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-28 16:10:08 UTC

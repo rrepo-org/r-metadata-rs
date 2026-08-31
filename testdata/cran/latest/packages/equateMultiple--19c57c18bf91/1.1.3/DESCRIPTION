@@ -1,0 +1,22 @@
+Package: equateMultiple
+Type: Package
+Title: Equating of Multiple Forms
+Version: 1.1.3
+Authors@R: c(
+   person("Michela", "Battauz", role = c("aut", "cre"), email = "michela.battauz@uniud.it"),
+   person("Waldir", "Leoncio", role = "ctb"))
+Author: Michela Battauz [aut, cre],
+  Waldir Leoncio [ctb]
+Maintainer: Michela Battauz <michela.battauz@uniud.it>
+Description: Equating of multiple forms using Item Response Theory (IRT) methods. See Battauz (2025) <doi:10.18637/jss.v115.i11> for a detailed description of the package. See Battauz M. (2017) <doi:10.1007/s11336-016-9517-x>, Battauz and 'Leoncio' (2023) <doi:10.1177/01466216231151702> and Haberman S. J. (2009) <doi:10.1002/j.2333-8504.2009.tb02197.x>) for the methods to link multiple test forms.
+License: GPL-3
+Imports: stats, graphics, numDeriv, statmod, Rcpp (>= 1.0.7), Matrix,
+        mvtnorm, data.table
+Depends: equateIRT(>= 2.5.2), R(>= 3.5.0)
+LinkingTo: Rcpp, RcppArmadillo, RcppDist
+Suggests: knitr, rmarkdown, ltm, mirt
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-01-15 13:21:57 UTC; Battauz
+Repository: CRAN
+Date/Publication: 2026-01-15 17:40:21 UTC

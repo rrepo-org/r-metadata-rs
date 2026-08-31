@@ -1,0 +1,51 @@
+Package: tidySEM
+Type: Package
+Title: Tidy Structural Equation Modeling
+Version: 0.2.11
+Authors@R: 
+    c(person(given = c("Caspar", "J."),
+             family = "van Lissa",
+             role = c("aut", "cre"),
+             email = "c.j.vanlissa@tilburguniversity.edu",
+             comment = c(ORCID = "0000-0002-0808-5024")),
+      person(given = c("Mauricio"),
+             family = "Garnier-Villarreal",
+             role = c("ctb"),
+             email = "mgv@pm.me",
+             comment = c(ORCID = "0000-0002-2951-6647")),
+      person(given = c("Frank", "C"),
+             family = "Gootjes",
+             role = c("ctb"),
+             email = "f.c.gootjes@uu.nl",
+             comment = c(ORCID = "0000-0002-0639-1001")) )
+Description: A tidy workflow for generating, estimating, reporting,
+    and plotting structural equation models using 'lavaan', 'OpenMx', or
+    'Mplus'. Throughout this workflow, elements of syntax, results, and graphs
+    are represented as 'tidy' data, making them easy to customize.
+    Includes functionality to estimate latent class analyses, and to plot
+    'dagitty' and 'igraph' objects.
+License: GPL (>= 3)
+URL: https://cjvanlissa.github.io/tidySEM/
+BugReports: https://github.com/cjvanlissa/tidySEM/issues
+Depends: R (>= 4.0.0), stats, utils
+Imports: ggplot2 (>= 3.5.0), lavaan (>= 0.6-21), MplusAutomation,
+        igraph (>= 2.0.0), psych, methods, gtable, dbscan, RANN,
+        Matrix, car, future.apply, progressr, progress, nonnest2 (>=
+        0.5.6)
+Suggests: testthat, knitr, dplyr, stringr, covr, tidyLPA, poLCA, umx,
+        mclust, MASS, scales, yaml, formatR, dagitty, mice, ggraph,
+        OpenMx (>= 2.21.13), rmarkdown, blavaan, bain, future
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-20 06:56:42 UTC; Studio
+Author: Caspar J. van Lissa [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0808-5024>),
+  Mauricio Garnier-Villarreal [ctb] (ORCID:
+    <https://orcid.org/0000-0002-2951-6647>),
+  Frank C Gootjes [ctb] (ORCID: <https://orcid.org/0000-0002-0639-1001>)
+Maintainer: Caspar J. van Lissa <c.j.vanlissa@tilburguniversity.edu>
+Repository: CRAN
+Date/Publication: 2026-08-20 13:50:02 UTC

@@ -1,0 +1,32 @@
+Package: basil
+Type: Package
+Title: Survival Prediction for Severe Limb Ischaemia (BASIL Model)
+Version: 0.1.0
+Authors@R: c(
+    person("Christos", "Longros", email = "chris.longros@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-2717-0857")),
+    person("Nikolaos", "Papatheodorou", role = "aut",
+           comment = c(ORCID = "0000-0002-7156-9443")))
+Description: Predicts survival for patients with severe limb ischaemia using the
+    prognostic model developed from the Bypass versus Angioplasty in Severe
+    Ischaemia of the Leg (BASIL) trial (Bradbury and others (2010)
+    <doi:10.1016/j.jvs.2010.01.077>). The model is an accelerated failure time
+    Weibull regression. The package is intended for research and audit; it is
+    not a substitute for clinical judgement and its predictions should not be
+    used as the sole basis for clinical decisions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/chrislongros/basil
+BugReports: https://github.com/chrislongros/basil/issues
+Suggests: tinytest
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-07 14:34:36 UTC; chris
+Author: Christos Longros [aut, cre] (ORCID:
+    <https://orcid.org/0009-0001-2717-0857>),
+  Nikolaos Papatheodorou [aut] (ORCID:
+    <https://orcid.org/0000-0002-7156-9443>)
+Maintainer: Christos Longros <chris.longros@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-16 13:00:12 UTC

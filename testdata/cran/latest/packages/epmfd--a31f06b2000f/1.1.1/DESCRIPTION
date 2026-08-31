@@ -1,0 +1,37 @@
+Package: epmfd
+Title: Exploratory and Person/Item Misfit Diagnostics for Polytomous
+        Data
+Version: 1.1.1
+Authors@R: c(
+    person("Hasan", "Bulut",
+           email   = "hasan.bulut@omu.edu.tr",
+           role    = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6924-9651")),
+    person("Asiye Şengül", "Avşar",
+           email   = "asiye.sengul@erdogan.edu.tr",
+           role    = "aut",
+           comment = c(ORCID = "0000-0001-5522-2514")))
+Description: Analysis of items and persons in data. To identify and remove person misfit in polytomous
+    item-response data using either 'mokken' or a graded response model (GRM, via 'mirt').
+    Provides automatic thresholds, visual diagnostics (2D/3D), and export utilities. 
+    Methods build on Mokken scaling as in Mokken (1971, ISBN:9789027968821) and on the
+    graded response model of Samejima (1969) <doi:10.1007/BF03372160>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/hsnbulut/epmfd
+BugReports: https://github.com/hsnbulut/epmfd/issues
+Imports: dplyr, fs, ggplot2, mirt, mokken, PerFit, readr, rlang, tibble
+Suggests: plotly, ggrepel, openxlsx, haven, patchwork, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-10-15 21:10:27 UTC; hsn
+Author: Hasan Bulut [aut, cre] (ORCID: <https://orcid.org/0000-0002-6924-9651>),
+  Asiye Şengül Avşar [aut] (ORCID:
+    <https://orcid.org/0000-0001-5522-2514>)
+Maintainer: Hasan Bulut <hasan.bulut@omu.edu.tr>
+Repository: CRAN
+Date/Publication: 2025-10-20 19:40:08 UTC

@@ -1,0 +1,20 @@
+Package: snowquery
+Title: SQL Interface to 'Snowflake', 'Redshift', 'Postgres', 'SQLite',
+        and 'DuckDB'
+Version: 1.3.0
+Authors@R: 
+    person("Dani", "Mermelstein", , "dmermelstein@hey.com", role = c("aut", "cre", "cph"))
+Maintainer: Dani Mermelstein <dmermelstein@hey.com>
+Description: Run 'SQL' queries across 'Snowflake', 'Amazon Redshift', 'PostgreSQL', 'SQLite', and 'DuckDB' from R with a single function. Optionally stream and cache large query results to a local 'DuckDB' database for efficient work with larger-than-memory datasets.
+URL: https://github.com/mermelstein/snowquery
+BugReports: https://github.com/mermelstein/snowquery/issues
+Imports: yaml, reticulate, RPostgres, RSQLite, DBI, duckdb, dplyr,
+        dbplyr
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+License: GPL (>= 3)
+NeedsCompilation: no
+Packaged: 2025-09-10 14:40:01 UTC; mermel
+Author: Dani Mermelstein [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2025-09-10 15:20:02 UTC

@@ -1,0 +1,38 @@
+Package: mtaOpenData
+Type: Package
+Title: Convenient Access to MTA Open Data API Endpoints
+Version: 0.1.1
+Authors@R: 
+    c(
+      person("Christian", "Martinez", 
+             email = "c.martinez0@outlook.com", 
+             role = c("aut", "cre"),
+             comment = c(
+               GitHub = "martinezc1",
+               ORCID = "0009-0005-6026-6454"
+             ))
+    )
+Description: Provides helper functions to access datasets from the
+    Metropolitan Transportation Authority (MTA) portion of the New York
+    State Open Data platform <https://data.ny.gov/>. Returns results as
+    tidy tibbles with support for optional filtering, sorting, and row
+    limits through the Socrata API.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, tibble, jsonlite, httr, janitor, rlang
+Suggests: curl, covr, knitr, testthat (>= 3.0.0), vcr, withr, webmockr,
+        ggplot2
+URL: https://martinezc1.github.io/mtaOpenData/,
+        https://github.com/martinezc1/mtaOpenData
+BugReports: https://github.com/martinezc1/mtaOpenData/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-07-20 21:50:29 UTC; christianmartinez
+Author: Christian Martinez [aut, cre] (GitHub: martinezc1, ORCID:
+    <https://orcid.org/0009-0005-6026-6454>)
+Maintainer: Christian Martinez <c.martinez0@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-07-20 22:30:02 UTC

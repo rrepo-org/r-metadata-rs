@@ -1,0 +1,36 @@
+Package: REMixed
+Type: Package
+Title: Regularized Estimation in Mixed Effects Model
+Version: 1.1.2
+Authors@R: c(person(given = "Auriane",
+                        family = "Gabaut",
+                        role = c("aut", "cre"),
+                        email = "aurianegabaut@gmail.com"),
+                 person(given = "Ariane",
+                        family = "Bercu",
+                        role = "aut"),
+                 person(given = "Mélanie",
+                        family = "Prague",
+                        role = "aut"),
+                 person(given = "Cécile",
+                        family = "Proust-Lima",
+                        role = "aut"))
+Maintainer: Auriane Gabaut <aurianegabaut@gmail.com>
+Description: Implementation of an algorithm in two steps to estimate parameters of a model whose latent dynamics are inferred through latent processes, jointly regularized. This package uses 'Monolix' software (<https://monolixsuite.slp-software.com/>), which provide robust statistical method for non-linear mixed effects modeling. 'Monolix' must have been installed prior to use. 
+SystemRequirements: 'Monolix'
+        (<https://monolixsuite.slp-software.com/>)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: deSolve, Rsmlx, doSNOW, dplyr, fastGHQuad, ggplot2, snow,
+        stringr, Rmpfr
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0), foreach
+NeedsCompilation: no
+Packaged: 2026-01-19 15:09:03 UTC; auria
+Author: Auriane Gabaut [aut, cre],
+  Ariane Bercu [aut],
+  Mélanie Prague [aut],
+  Cécile Proust-Lima [aut]
+Repository: CRAN
+Date/Publication: 2026-01-19 15:30:02 UTC

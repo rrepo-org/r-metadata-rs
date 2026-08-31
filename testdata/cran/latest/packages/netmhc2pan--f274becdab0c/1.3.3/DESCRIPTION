@@ -1,0 +1,37 @@
+Package: netmhc2pan
+Title: Interface to 'NetMHCIIpan'
+Version: 1.3.3
+Authors@R: c(
+    person("Richèl J.C.", "Bilderbeek", email = "rjcbilderbeek@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1107-7049")),
+    person("Lue Ping", "Zhao", role = "ctb"),
+    person("Byungkuk", "Min", role = "ctb"))
+Maintainer: Richèl J.C. Bilderbeek <rjcbilderbeek@gmail.com>
+Description: The field of immunology benefits from software that can
+    predict which peptide sequences trigger an immune response.
+    'NetMHCIIpan' is a such a tool: it predicts the
+    binding strength of a short peptide to a Major Histocompatibility
+    Complex class II (MHC-II) molecule.
+    'NetMHCIIpan' can be used from a web server at 
+    <https://services.healthtech.dtu.dk/services/NetMHCIIpan-3.2/>
+    or from the command-line, using a local installation. This package
+    allows to call 'NetMHCIIpan' from R.
+License: GPL-3
+Encoding: UTF-8
+Imports: dplyr, rappdirs, readr, seqinr, sessioninfo, stringr, testit,
+        tibble
+Suggests: knitr, rmarkdown, testthat, spelling
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Language: en-US
+URL: https://github.com/richelbilderbeek/netmhc2pan/
+BugReports: https://github.com/richelbilderbeek/netmhc2pan/issues
+SystemRequirements: NetMHC2pan
+        (https://services.healthtech.dtu.dk/service.php?NetMHCIIpan-3.2)
+NeedsCompilation: no
+Packaged: 2026-07-02 10:46:03 UTC; richel
+Author: Richèl J.C. Bilderbeek [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1107-7049>),
+  Lue Ping Zhao [ctb],
+  Byungkuk Min [ctb]
+Repository: CRAN
+Date/Publication: 2026-07-02 13:10:09 UTC

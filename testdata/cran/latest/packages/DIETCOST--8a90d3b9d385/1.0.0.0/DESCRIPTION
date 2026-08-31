@@ -1,0 +1,30 @@
+Package: DIETCOST
+Type: Package
+Title: Calculate the Cost and Environmental Impact of a Ideal Diet
+Version: 1.0.0.0
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+Imports: readxl, rlang, dplyr, tidyselect, stats, xlsx, magrittr
+Depends: R (>= 2.10)
+LazyData: true
+Description: Easily perform a Monte Carlo simulation to evaluate the cost and carbon, ecological, and water footprints of a set of ideal diets. Pre-processing tools are also available to quickly treat the data, along with basic statistical features to analyze the simulation results — including the ability to establish confidence intervals for selected parameters, such as nutrients and price/emissions. A 'standard version' of the datasets employed is included as well, allowing users easy access to customization. This package brings to R the 'Python' software initially developed by Vandevijvere, Young, Mackay, Swinburn and Gahegan (2018) <doi:10.1186/s12966-018-0648-6>.
+Authors@R: c(
+    person("Henrique", "Bracarense", , "hbracarense@hotmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0009-0001-5964-9969")),
+    person("Thais", "Marquezine", role = "aut",
+           comment = c(ORCID = "0000-0002-9415-5817")),
+    person("Rafael", "Claro", role = "aut",
+           comment = c(ORCID = "0000-0001-9690-575X"))
+  )
+License: MIT + file LICENSE
+URL: https://github.com/hbracarense/dietcost
+BugReports: https://github.com/hbracarense/dietcost/issues
+NeedsCompilation: no
+Packaged: 2025-05-07 19:28:15 UTC; hbrac
+Author: Henrique Bracarense [cre, aut] (ORCID:
+    <https://orcid.org/0009-0001-5964-9969>),
+  Thais Marquezine [aut] (ORCID: <https://orcid.org/0000-0002-9415-5817>),
+  Rafael Claro [aut] (ORCID: <https://orcid.org/0000-0001-9690-575X>)
+Maintainer: Henrique Bracarense <hbracarense@hotmail.com>
+Repository: CRAN
+Date/Publication: 2025-05-09 14:10:16 UTC

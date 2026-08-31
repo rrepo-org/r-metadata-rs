@@ -1,0 +1,53 @@
+Package: tesouror
+Title: Access Brazilian National Treasury Open Data APIs
+Version: 0.3.0
+Authors@R: c(
+    person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+    person("Marcos", "Wasilew", email = "marcos.wasilew@gmail.com", role = "aut"),
+    person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+    person("Carlos", "Amorim", email = "carlos.agaf@ufpe.br", role = "aut"),
+    person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"),
+    person("Tiago", "Pereira", email = "tiago.pereira@tesouro.gov.br", role = "aut"),
+    person("Fernando", "Barbalho", email = "fbarbalho@gmail.com", role = "aut"))
+Description: Provides a unified interface to access open data from the
+    Brazilian National Treasury ('Tesouro Nacional') and related government
+    APIs. Covers six data sources: 'SICONFI'
+    <https://apidatalake.tesouro.gov.br/docs/siconfi/> for fiscal reports
+    ('RREO', 'RGF', 'DCA', 'MSC') and entity information; 'CUSTOS'
+    <https://apidatalake.tesouro.gov.br/docs/custos/> for federal
+    government cost data; 'SADIPEM'
+    <https://apidatalake.tesouro.gov.br/docs/sadipem/> for public debt and
+    credit operations; 'Transferencias Constitucionais'
+    <https://apiapex.tesouro.gov.br/aria/v1/transferencias_constitucionais/docs>
+    for constitutional transfers to states and municipalities; 'SIORG'
+    <https://estruturaorganizacional.dados.gov.br> for federal
+    organizational structure; and 'SIOPE' ('FNDE'/'MEC') for education
+    spending data. Features automatic pagination, in-memory caching,
+    retry logic, and tidy output.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.6.0), dplyr (>= 1.1.0), httr2 (>= 1.0.0), janitor
+        (>= 2.2.0), stringi (>= 1.7.0), stringr (>= 1.5.0), tibble (>=
+        3.2.0)
+Suggests: httptest2 (>= 1.0.0), knitr, rmarkdown, testthat (>= 3.0.0),
+        withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/StrategicProjects/tesouror,
+        https://strategicprojects.github.io/tesouror/
+BugReports: https://github.com/StrategicProjects/tesouror/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-19 12:56:09 UTC; leite
+Author: Andre Leite [aut, cre],
+  Marcos Wasilew [aut],
+  Hugo Vasconcelos [aut],
+  Carlos Amorim [aut],
+  Diogo Bezerra [aut],
+  Tiago Pereira [aut],
+  Fernando Barbalho [aut]
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-08-19 15:50:02 UTC

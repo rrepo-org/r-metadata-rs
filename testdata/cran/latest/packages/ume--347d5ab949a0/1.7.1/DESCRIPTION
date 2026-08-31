@@ -1,0 +1,61 @@
+Package: ume
+Title: Ultrahigh-Resolution Mass Spectrometry Data Evaluation for
+        Complex Organic Matter
+Version: 1.7.1
+Authors@R: c(
+    person("Boris", "Koch",
+           email = "boris.koch@awi.de",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8453-731X")),
+    person("Stephan", "Frickenhaus",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-0356-9791")),
+    person("Shuxian", "Gao",
+           role = "ctb",
+           comment = c(ORCID = "0009-0004-7819-7525")),
+    person("Oliver", "Lechtenfeld",
+           role = "ctb",
+           comment = c(ORCID = "0000-0001-5313-6014")),
+    person("Tim", "Leefmann",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-5784-8657")),
+    person("Fabian", "Moye",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-4632-5033"))
+           )
+Description: Provides tools for assigning molecular formulas from exact masses 
+    obtained by ultrahigh-resolution mass spectrometry. The methodology follows 
+    the workflow described in Leefmann et al. (2019) <doi:10.1002/rcm.8315>. 
+    The package supports the inspection, filtering and visualization of 
+    molecular formula data and includes utilities for calculating common 
+    molecular parameters (e.g., double bond equivalents, DBE). A graphical 
+    user interface is available via the 'shiny'-based 'ume' application.
+URL: https://gitlab.awi.de/bkoch/ume, https://github.com/boriskoch/ume,
+        https://doi.org/10.5281/zenodo.20108477,
+        https://www.awi.de/en/ume
+Depends: R (>= 4.2.0)
+Imports: data.table, ggplot2 (>= 3.5.0), plotly, vegan, viridis,
+        jsonlite
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), xml2, pdftools,
+        KEGGREST, zCompositions
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-14 05:07:36 UTC; bkoch
+Author: Boris Koch [aut, cre] (ORCID: <https://orcid.org/0000-0002-8453-731X>),
+  Stephan Frickenhaus [ctb] (ORCID:
+    <https://orcid.org/0000-0002-0356-9791>),
+  Shuxian Gao [ctb] (ORCID: <https://orcid.org/0009-0004-7819-7525>),
+  Oliver Lechtenfeld [ctb] (ORCID:
+    <https://orcid.org/0000-0001-5313-6014>),
+  Tim Leefmann [ctb] (ORCID: <https://orcid.org/0000-0002-5784-8657>),
+  Fabian Moye [ctb] (ORCID: <https://orcid.org/0000-0002-4632-5033>)
+Maintainer: Boris Koch <boris.koch@awi.de>
+Repository: CRAN
+Date/Publication: 2026-07-14 05:40:02 UTC

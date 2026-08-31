@@ -1,0 +1,43 @@
+Package: TxEffectsSurvival
+Type: Package
+Title: Treatment Effect Inference for Terminal and Non-Terminal Events
+        under Competing Risks
+Version: 1.0.2
+Authors@R: c(
+    person(given = "Daewoo", family = "Pak", email = "dpak@yonsei.ac.kr", role = c("aut", "cre")),
+    person(given = "Song", family = "Yang", email = "yangso@nhlbi.nih.gov", role = c("aut"))
+    )
+Author: Daewoo Pak [aut, cre],
+  Song Yang [aut]
+Maintainer: Daewoo Pak <dpak@yonsei.ac.kr>
+Description: 
+    Provides several confidence interval and testing procedures, based on either 
+    semiparametric (using event-specific win ratios) or nonparametric measures, 
+    including the ratio of integrated cumulative hazard (RICH) and the ratio of 
+    integrated transformed cumulative hazard (RITCH), for treatment effect inference 
+    with terminal and non-terminal events under competing risks. The semiparametric 
+    results were developed in Yang et al. (2022 <doi:10.1002/sim.9266>), and the 
+    nonparametric results were developed in Yang (2025 <doi:10.1002/sim.70205>). 
+    For comparison, results for the win ratio (Finkelstein and Schoenfeld 1999 
+    <doi:10.1002/(SICI)1097-0258(19990615)18:11%3C1341::AID-SIM129%3E3.0.CO;2-7>), 
+    Pocock et al. 2012 <doi:10.1093/eurheartj/ehr352>, and Bebu and Lachin 2016 
+    <doi:10.1093/biostatistics/kxv032>) are included. The package also supports 
+    univariate survival analysis with a single event. In this package, effect size 
+    estimates and confidence intervals are obtained for each event type, and several 
+    testing procedures are implemented for the global null hypothesis of no treatment 
+    effect on either terminal or non-terminal events. Furthermore, a test of proportional 
+    hazards assumptions, under which the event-specific win ratios converge to hazard 
+    ratios, and a test of equal hazard ratios, are provided. For summarizing the treatment 
+    effect across all events, confidence intervals for linear combinations of the 
+    event-specific win ratios, RICH, or RITCH are available using pre-determined or 
+    data-driven weights. Asymptotic properties of these inference procedures are 
+    discussed in Yang et al. (2022 <doi:10.1002/sim.9266>) and Yang (2025 
+    <doi:10.1002/sim.70205>).
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-08 01:06:24 UTC; dpak
+Repository: CRAN
+Date/Publication: 2026-01-09 18:00:02 UTC

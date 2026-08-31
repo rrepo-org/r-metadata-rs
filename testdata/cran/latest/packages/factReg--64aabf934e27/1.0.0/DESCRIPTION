@@ -1,0 +1,42 @@
+Package: factReg
+Type: Package
+Title: Multi-Environment Genomic Prediction with Penalized Factorial
+        Regression
+Version: 1.0.0
+Date: 2023-07-05
+Authors@R: 
+    c(person(given = "Kruijer",
+             family = "Willem",
+             role = "aut",
+             comment = c(ORCID = "0000-0001-7179-1733")),
+      person(given = "Bart-Jan",
+             family = "van Rossum",
+             role = c("aut", "cre"),
+             email = "bart-jan.vanrossum@wur.nl",
+             comment = c(ORCID = "0000-0002-8673-2514")),
+      person(given = "Vahe",
+             family = "Avagyan",
+             role = "ctb",
+             comment = c(ORCID = "0000-0001-5838-4850")))
+Description: Multi-environment genomic prediction for training and test 
+    environments using penalized factorial regression. Predictions are made 
+    using genotype-specific environmental sensitivities as in Millet et al. 
+    (2019) <doi:10.1038/s41588-019-0414-y>.
+License: GPL-3
+Depends: R (>= 3.6)
+Imports: glmnet, mathjaxr, Matrix, rrBLUP, stats
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: gzip
+RoxygenNote: 7.2.3
+RdMacros: mathjaxr
+Suggests: tinytest
+NeedsCompilation: no
+Packaged: 2026-04-02 14:39:38 UTC; hornik
+Author: Kruijer Willem [aut] (ORCID: <https://orcid.org/0000-0001-7179-1733>),
+  Bart-Jan van Rossum [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8673-2514>),
+  Vahe Avagyan [ctb] (ORCID: <https://orcid.org/0000-0001-5838-4850>)
+Maintainer: Bart-Jan van Rossum <bart-jan.vanrossum@wur.nl>
+Repository: CRAN
+Date/Publication: 2026-04-02 16:47:39

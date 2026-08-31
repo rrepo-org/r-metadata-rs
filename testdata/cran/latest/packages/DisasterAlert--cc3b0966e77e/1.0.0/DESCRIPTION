@@ -1,0 +1,43 @@
+Package: DisasterAlert
+Type: Package
+Version: 1.0.0
+Title: Disaster Alert and Sentiment Analysis
+Authors@R: c(
+      person(given = "Hossein",
+        family = "Hassani",
+        role = c("aut"),
+        email = "Hassani.stat@gmail.com"
+        ),
+      person(given = "Nadejda",
+        family = "Komendantova",
+        role = c("aut"),
+        email = "komendan@iiasa.ac.at"
+        ),
+      person(given = "Leila",
+        family = "Marvian Mashhad",
+        role = c("aut","cre"),
+        email = "Leila.marveian@gmail.com"
+        )
+    )
+Description: By systematically aggregating and processing textual reports from earthquakes, floods, storms,
+  wildfires, and other natural disasters, the framework enables a holistic assessment of crisis narratives.  
+  Intelligent cleaning and normalization techniques transform raw commentary into structured data, ensuring
+  precise extraction of disaster-specific insights. Collective sentiments of affected communities are  
+  quantitatively scored and qualitatively categorized, providing a multifaceted view of societal responses  
+  under duress. Interactive geographic maps and temporal charts illustrate the evolution and spatial dispersion
+  of emotional reactions and impact indicators. 
+License: GPL-3
+Depends: R (>= 4.1.0)
+Imports: methods, tidyverse, ggplot2, leaflet, wordcloud,
+        textdata,tidytext, quanteda, tidyr, plotly, htmlwidgets,
+        RColorBrewer, dplyr, stringr, scales,DT
+Suggests: rmarkdown, testthat (>= 3.0.0)
+Maintainer: Leila Marvian Mashhad <Leila.marveian@gmail.com>
+NeedsCompilation: no
+Packaged: 2025-07-18 10:10:24 UTC; HAMIAN
+Author: Hossein Hassani [aut],
+  Nadejda Komendantova [aut],
+  Leila Marvian Mashhad [aut, cre]
+Encoding: UTF-8
+Repository: CRAN
+Date/Publication: 2025-07-21 09:01:56 UTC

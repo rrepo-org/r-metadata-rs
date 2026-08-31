@@ -1,0 +1,35 @@
+Package: jiebaRS
+Title: Chinese Text Segmentation, POS Tagging, and Keyword Extraction
+Version: 0.3.0
+Authors@R: 
+    c(person(given = "Hao",
+             family = "Cheng",
+             role = c("aut", "cre", "cph"),
+             email = "Yousa-Mirage@foxmail.com"))
+Description: Provides fast Chinese text segmentation, keyword extraction
+    via 'TF-IDF' and 'TextRank', and part-of-speech tagging, powered by a
+    'Rust' backend ('jieba-rs'). Supports custom dictionaries, user words,
+    stop words, IDF files, and HMM models, with parallel batch processing
+    of multiple strings. Serves as a modern, maintained replacement for
+    the 'jiebaR' package.
+License: MIT + file LICENSE
+URL: https://yousa-mirage.github.io/jiebaRS/,
+        https://github.com/Yousa-Mirage/jiebaRS
+BugReports: https://github.com/Yousa-Mirage/jiebaRS/issues
+Encoding: UTF-8
+LazyData: true
+Config/rextendr/version: 0.5.0
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.85.0, xz
+Depends: R (>= 4.2)
+Imports: cli, rlang
+Suggests: pkgdown, rmarkdown, spelling, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Language: en-US
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: yes
+Packaged: 2026-08-26 11:17:04 UTC; Yousa-Mirage
+Author: Hao Cheng [aut, cre, cph]
+Maintainer: Hao Cheng <Yousa-Mirage@foxmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-26 11:40:02 UTC

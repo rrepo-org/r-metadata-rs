@@ -1,0 +1,28 @@
+Package: minorparties
+Type: Package
+Title: Quantitatively Analyze Minor Political Parties
+Version: 1.0.0
+Authors@R: c(
+    person(
+      "Theodore", "Gercken",
+      email = "tgercken@hamilton.edu",
+      role = c("aut", "cre", "cph")
+    )
+  )
+Description: Tools for calculating I-Scores, a simple way to measure how successful minor political parties are at influencing the major parties in their environment. I-Scores are designed to be a more comprehensive measurement of minor party success than vote share and legislative seats won, the current standard measurements, which do not reflect the strategies that most minor parties employ. The procedure leverages the Manifesto Project's NLP model to identify the issue areas that sentences discuss, see Burst et al. (2024) <doi:10.25522/manifesto.manifestoberta.56topics.context.2024.1.1>, and the Wordfish algorithm to estimate the relative positions that platforms take on those issue areas, see Slapin and Proksch (2008) <doi:10.1111/j.1540-5907.2008.00338.x>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Imports: dplyr, purrr, quanteda, quanteda.textmodels, reticulate,
+        rlang, spacyr, stats, stringi, stringr, tibble, tidyr
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+URL: https://gerckentheodore.github.io/minorparties/
+NeedsCompilation: no
+Packaged: 2025-10-26 20:03:48 UTC; TheodoreGercken
+Author: Theodore Gercken [aut, cre, cph]
+Maintainer: Theodore Gercken <tgercken@hamilton.edu>
+Repository: CRAN
+Date/Publication: 2025-10-29 20:10:12 UTC

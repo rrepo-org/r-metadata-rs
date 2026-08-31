@@ -1,0 +1,32 @@
+Package: DepMod
+Title: Decision-Analytic Modelling for Depression Prevention and
+        Treatment
+Version: 0.1.0
+Authors@R: c(
+    person("Stijn", "Peeters", , "s.b.peeters@eshpm.eur.nl", role = c("aut", "cre"),comment = c(ORCID = "0009-0004-3684-3584")),
+    person("Frederick", "Thielen", ,"thielen@eshpm.eur.nl", role = c("aut"), comment = c(ORCID = "0000-0002-0312-5891")),
+    person("Ben", "Wijnen", , "bwijnen@trimbos.nl", role = c("aut"), comment = c(ORCID = "0000-0001-7993-1905"))
+    )
+Description: Provides functions and example datasets to run a decision-analytic model
+    for prevention and treatment strategies across depression severity states
+    (sub-clinical, mild, moderate, severe, and recurrent). The package supports
+    scenario analyses (base and alternative inputs) and summarises outcomes such
+    as coverage, adherence, effect sizes, and healthcare costs.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: shiny, stats, utils, DT, DiagrammeR, tidyverse, bslib, here
+Depends: R (>= 3.5)
+LazyData: true
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-09 10:29:40 UTC; 85304spe
+Author: Stijn Peeters [aut, cre] (ORCID:
+    <https://orcid.org/0009-0004-3684-3584>),
+  Frederick Thielen [aut] (ORCID:
+    <https://orcid.org/0000-0002-0312-5891>),
+  Ben Wijnen [aut] (ORCID: <https://orcid.org/0000-0001-7993-1905>)
+Maintainer: Stijn Peeters <s.b.peeters@eshpm.eur.nl>
+Repository: CRAN
+Date/Publication: 2026-02-11 20:10:08 UTC

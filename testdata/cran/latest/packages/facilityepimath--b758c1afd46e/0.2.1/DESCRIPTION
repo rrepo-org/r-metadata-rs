@@ -1,0 +1,36 @@
+Package: facilityepimath
+Title: Analyze Mathematical Models of Healthcare Facility Transmission
+Version: 0.2.1
+Authors@R: 
+    c(person("Damon", "Toth", , "damon.toth@hsc.utah.edu", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-7393-4814")),
+      person("Centers for Disease Control and Prevention", role="fnd",
+      comment = "Modeling Infectious Diseases in Healthcare Network award number
+      U01CK000585 and Insight Net award number CDC-RFA-FT-23-0069"))
+Description: Calculate useful quantities for a user-defined differential equation
+    model of infectious disease transmission among individuals in a healthcare
+    facility. Input rates of transition between states of individuals with and
+    without the disease-causing organism, distributions of states at facility
+    admission, relative infectivity of transmissible states, and the facility length
+    of stay distribution. Calculate the model equilibrium and the basic facility
+    reproduction number, as described in Toth et al. (2025) 
+    <doi:10.1371/journal.pcbi.1013577>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/EpiForeSITE/facilityepimath
+BugReports: https://github.com/EpiForeSITE/facilityepimath/issues
+Imports: MASS
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-11-06 23:01:16 UTC; runner
+Author: Damon Toth [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7393-4814>),
+  Centers for Disease Control and Prevention [fnd] (Modeling Infectious
+    Diseases in Healthcare Network award number U01CK000585 and Insight
+    Net award number CDC-RFA-FT-23-0069)
+Maintainer: Damon Toth <damon.toth@hsc.utah.edu>
+Repository: CRAN
+Date/Publication: 2025-11-07 00:10:02 UTC

@@ -1,0 +1,49 @@
+Package: Rpcop
+Type: Package
+Title: Principal Curves of Oriented Points
+Version: 1.2.3
+Date: 2026-06-10
+Authors@R: 
+    c(person(given = "Pedro",
+             family = "Delicado",
+             email = "pedro.delicado@upc.edu",
+             role = "aut",
+             comment = "Original C++ author"),
+      person(given = "Mario",
+             family = "Huerta",
+             email = "mario.huerta@uab.es",
+             role = "aut",
+             comment = "Original C++ author"),
+      person(given = "Kevin Michael",
+             family = "Frick",
+             email = "kmfrick@proton.me",
+             role = c("trl", "aut", "cre"),
+             comment = "Modern C++ fixes and Rcpp port, with permission from the original authors"),
+      person(given = "Stephen L.",
+             family = "Moshier",
+             email = "steve@moshier.net",
+             role = "cph",
+             comment = "Author of eigens() for symmetric matrix eigendecomposition"))
+Maintainer: Kevin Michael Frick <kmfrick@proton.me>
+Description: Principal curves generalize the notion of a first principal component to the case in which it is a nonlinear smooth curve. This package provides a function pcop(X) to compute principal curves with the algorithm defined in Delicado (2001) <doi:10.1006/jmva.2000.1917> from a data matrix X.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.7), princurve
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Encoding: UTF-8
+URL: https://github.com/kmfrick/Rpcop
+BugReports: https://github.com/kmfrick/Rpcop/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-06-16 18:25:06 UTC; kmfrick
+Author: Pedro Delicado [aut] (Original C++ author),
+  Mario Huerta [aut] (Original C++ author),
+  Kevin Michael Frick [trl, aut, cre] (Modern C++ fixes and Rcpp port,
+    with permission from the original authors),
+  Stephen L. Moshier [cph] (Author of eigens() for symmetric matrix
+    eigendecomposition)
+Repository: CRAN
+Date/Publication: 2026-06-24 15:10:14 UTC

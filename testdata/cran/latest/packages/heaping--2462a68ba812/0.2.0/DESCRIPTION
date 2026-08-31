@@ -1,0 +1,45 @@
+Package: heaping
+Type: Package
+Title: Correction of Heaping on Individual Level
+Version: 0.2.0
+Authors@R: c(
+    person("Matthias", "Templ",
+           email = "matthias.templ@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8638-5276")),
+    person("Bernhard", "Meindl",
+           role = "ctb")
+    )
+Description: Provides methods for correcting heaping (digit preference) in
+    survey data at the individual record level. Age heaping, where respondents
+    disproportionately report ages ending in 0 or 5, is a common phenomenon that
+    can distort demographic analyses. Unlike traditional smoothing methods that
+    only correct aggregated statistics, this package corrects individual values
+    by replacing a calculated proportion of heaped observations with draws from
+    fitted truncated distributions (log-normal, normal, or uniform). Supports
+    5-year and 10-year heaping patterns, single heap correction, survey
+    weights, and optional covariate-conditional (model-based) correction via
+    quantile regression forests or linear models to preserve relationships. A
+    multiple-imputation wrapper repeats the correction to propagate the added
+    uncertainty into downstream inference. 
+License: GPL (>= 2)
+URL: https://github.com/matthias-da/heaping
+BugReports: https://github.com/matthias-da/heaping/issues
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Depends: R (>= 3.5.0)
+Imports: fitdistrplus, EnvStats, stats
+Suggests: VIM, ranger, data.table, ggplot2, simPop, testthat (>=
+        3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-13 11:09:03 UTC; matthias
+Author: Matthias Templ [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8638-5276>),
+  Bernhard Meindl [ctb]
+Maintainer: Matthias Templ <matthias.templ@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-13 12:50:02 UTC

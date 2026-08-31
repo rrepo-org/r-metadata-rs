@@ -1,0 +1,50 @@
+Package: weightflow
+Title: Declarative Recipes for Staged Survey Weighting with
+        Recipe-Aware Replicate Variances
+Version: 1.2.0
+Authors@R: c(
+    person("Juan Pablo", "Ferreira", email = "juanpablo.ferreira@fcea.edu.uy",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-1884-8187")),
+    person("Andrés", "Gutiérrez", role = "aut",
+           comment = c(ORCID = "0009-0007-2918-1932")))
+Description: Builds survey analysis weights by declaring the whole weighting
+    process as an ordered recipe of explicit adjustments and estimating it in a
+    single call. Steps include within-cluster selection, second-phase
+    subsampling for two-phase sampling, nonresponse adjustment by weighting
+    classes or response-propensity models (including machine-learning learners
+    with optional cross-fitting), calibration to known totals following Deville
+    and Sarndal (1992) <doi:10.2307/2290268> with optional model-assisted
+    calibration following Wu and Sitter (2001)
+    <doi:10.1198/016214501750333054>, adjustment of non-probability samples by
+    pseudo-weighting, mass imputation and doubly robust estimators, and
+    range-restricted trimming. Variances come from a recipe-aware bootstrap and
+    jackknife that resample or delete primary sampling units and re-apply the
+    entire cascade on each replicate, following Rao and Wu (1988)
+    <doi:10.1080/01621459.1988.10478591>, and are separated into first- and
+    second-phase components (V = V1 + V2) for two-phase designs. A
+    self-contained HTML report documents each step, and the weights bridge to
+    the 'survey' and 'srvyr' packages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.1.0)
+Imports: stats, utils, graphics, parallel
+Suggests: MASS, rpart, ranger, testthat (>= 3.0.0), survey, srvyr,
+        dplyr, tidyr, ggplot2, haven, archive, knitr, rmarkdown,
+        spelling, xgboost, yaml
+Config/roxygen2/version: 8.0.0
+URL: https://github.com/jpferreira33/weightflow,
+        https://jpferreira33.github.io/weightflow/
+BugReports: https://github.com/jpferreira33/weightflow/issues
+Config/testthat/edition: 3
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-30 03:10:02 UTC; jp
+Author: Juan Pablo Ferreira [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1884-8187>),
+  Andrés Gutiérrez [aut] (ORCID: <https://orcid.org/0009-0007-2918-1932>)
+Maintainer: Juan Pablo Ferreira <juanpablo.ferreira@fcea.edu.uy>
+Repository: CRAN
+Date/Publication: 2026-08-30 03:30:02 UTC

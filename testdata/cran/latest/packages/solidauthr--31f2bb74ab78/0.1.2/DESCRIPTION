@@ -1,0 +1,29 @@
+Package: solidauthr
+Type: Package
+Title: Solid OIDC Client Credentials Authentication
+Version: 0.1.2
+Description: Authenticates against Community Solid Server identity
+    providers using OAuth client credentials with DPoP proofs and
+    performs authenticated requests against Solid resources.
+Authors@R: c(
+    person(
+      given = "Jackson",
+      family = "Morgan",
+      email = "jackson@setmeld.com",
+      role = c("aut", "cre", "cph")
+    )
+  )
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: httr2, jose, jsonlite, openssl, R6, uuid
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/SetMeld/solidauthr
+BugReports: https://github.com/SetMeld/solidauthr/issues
+NeedsCompilation: no
+Packaged: 2026-05-04 17:35:55 UTC; jacksonmorgan
+Author: Jackson Morgan [aut, cre, cph]
+Maintainer: Jackson Morgan <jackson@setmeld.com>
+Repository: CRAN
+Date/Publication: 2026-05-07 16:10:03 UTC

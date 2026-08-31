@@ -1,0 +1,51 @@
+Package: vbm
+Type: Package
+Title: Variance-Based Sensitivity Analysis for Weighting Estimators
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Jiayao", "Gan",
+      email = "u3612852@connect.hku.hk",
+      role = c("aut", "cre")
+    ),
+    person(
+      "Melody", "Huang",
+      email = "melody.huang@yale.edu",
+      role = "aut"
+    ),
+    person(
+      "Samuel D.","Pimentel",
+      email = "spi@berkeley.edu",
+      role = "aut"
+    ),
+    person(
+      "Andy A.","Shen",
+      email = "aashen@berkeley.edu",
+      role = "aut"
+    ),
+    person(
+      "National Science Foundation",
+      role="fnd",
+      comment="Grant #2142146"
+    )
+  )
+Maintainer: Jiayao Gan <u3612852@connect.hku.hk>
+Description: Provides methods for variance-based sensitivity analysis and weighting estimators in observational studies based on methodology by Huang & Pimentel (2025) <doi:10.1093/biomet/asae040>. Includes bootstrap inference, bias bounds estimation, and visualization tools for sensitivity parameters.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: parallel, magrittr, dplyr, WeightIt, estimatr, ggplot2, scales
+URL: https://github.com/Staniks0/vbm
+BugReports: https://github.com/Staniks0/vbm/issues
+RoxygenNote: 7.3.3
+Suggests: jointVIP, knitr, rmarkdown, pkgdown, cobalt, osqp
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-25 15:53:37 UTC; staniks
+Author: Jiayao Gan [aut, cre],
+  Melody Huang [aut],
+  Samuel D. Pimentel [aut],
+  Andy A. Shen [aut],
+  National Science Foundation [fnd] (Grant #2142146)
+Repository: CRAN
+Date/Publication: 2026-06-30 20:30:02 UTC

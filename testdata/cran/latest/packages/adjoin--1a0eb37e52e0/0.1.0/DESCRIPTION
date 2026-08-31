@@ -1,0 +1,36 @@
+Package: adjoin
+Title: Constructing Adjacency Matrices Based on Spatial and Feature
+        Similarity
+Version: 0.1.0
+Authors@R: person("Bradley R.", "Buchsbaum", email = "brad.buchsbaum@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-1108-4866"))
+Description: Constructs sparse adjacency matrices from spatial coordinates,
+    feature measurements, class labels, and temporal indices. Supports
+    nearest-neighbor graphs, heat-kernel weights, graph Laplacians, diffusion
+    operators, and bilateral smoothers for graph-based data analysis, following
+    spectral graph methods in von Luxburg (2007)
+    <doi:10.1007/s11222-007-9033-z>, diffusion maps in Coifman and Lafon (2006)
+    <doi:10.1016/j.acha.2006.04.006>, and bilateral filtering in Tomasi and
+    Manduchi (1998) <doi:10.1109/ICCV.1998.710815>.
+Depends: R (>= 4.0.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/bbuchsbaum/adjoin
+BugReports: https://github.com/bbuchsbaum/adjoin/issues
+RoxygenNote: 7.3.3
+Imports: Rcpp (>= 0.11.3), Matrix, assertthat, Rnanoflann, chk,
+        RSpectra, igraph, parallel, stats, methods, utils, mgcv, proxy,
+        corpcor
+Suggests: testthat (>= 3.0.0), RcppHNSW (>= 0.6.0), knitr, rmarkdown,
+        furrr, crayon, ggplot2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+Config/Needs/website: albersdown
+NeedsCompilation: yes
+Packaged: 2026-04-16 11:27:15 UTC; bbuchsbaum
+Author: Bradley R. Buchsbaum [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1108-4866>)
+Maintainer: Bradley R. Buchsbaum <brad.buchsbaum@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:12:30 UTC

@@ -1,0 +1,39 @@
+Package: kofn
+Title: Maximum Likelihood Estimation for k-Out-of-n System Data
+Version: 0.4.0
+Authors@R: person("Alexander", "Towell",
+    email = "lex@metafunctor.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0001-6443-9897"))
+Description: Maximum likelihood estimation of component lifetime parameters
+    from system-level observations of k-out-of-n systems. Supports
+    exponential and Weibull component distributions under multiple observation
+    schemes: Scheme 0 (system lifetime only), Scheme 1 (periodic inspection),
+    and Scheme 2 (complete monitoring). Provides an EM algorithm for Weibull
+    parallel systems and Fisher information comparison across schemes. The
+    k-out-of-n framework unifies series (k=1) and parallel (k=m) systems as
+    a censoring problem on component lifetimes. Conforms to the
+    'likelihood.model' generics and returns fitted objects compatible with
+    'algebraic.mle'. The data-generating process and topology infrastructure
+    (system survival, density, signature, structure function, importance
+    measures) are delegated to the 'dist.structure' package; 'kofn' focuses
+    exclusively on inference for the k-out-of-n family.
+License: MIT + file LICENSE
+URL: https://github.com/queelius/kofn, https://queelius.github.io/kofn/
+BugReports: https://github.com/queelius/kofn/issues
+Depends: R (>= 4.1.0)
+Imports: stats, numDeriv, likelihood.model, compositional.mle,
+        generics, dist.structure, algebraic.dist, flexhaz (>= 0.5.2)
+Suggests: algebraic.mle, maskedcauses, testthat (>= 3.0.0), knitr,
+        rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-11 11:33:51 UTC; spinoza
+Author: Alexander Towell [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6443-9897>)
+Maintainer: Alexander Towell <lex@metafunctor.com>
+Repository: CRAN
+Date/Publication: 2026-06-19 12:00:29 UTC

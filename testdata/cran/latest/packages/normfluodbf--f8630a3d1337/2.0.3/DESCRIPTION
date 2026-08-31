@@ -1,0 +1,35 @@
+Package: normfluodbf
+Type: Package
+Title: Cleans and Normalizes FLUOstar DBF and DAT Files from 'Liposome'
+        Flux Assays
+Version: 2.0.3
+Authors@R: 
+    c(person(given = "Tingwei", family = "Adeck", role = c("aut", "cre", "cph"), email = "awesome.tingwei@outlook.com", comment = c(ORCID = "0009-0009-7450-8863")), 
+    person(given = "Tesla", family = "Adeck", role="cph"), person(given = "Amina", family = "Adeck", role="cph") )
+Description: Cleans and Normalizes FLUOstar DBF and DAT Files obtained from liposome flux assays. Users should verify extended usage of the package on files from other assay types.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, learnr, rmarkdown
+Config/testthat/edition: 3
+Imports: shiny, tidyr (>= 1.3.1), tibble, emojifont, stats, badger,
+        stringr, magrittr (>= 2.0.3), assertthat, forcats, gridExtra,
+        pkgsearch, purrr (>= 1.0.2), rlang (>= 1.1.3), rstudioapi,
+        wesanderson, hexSticker, pbdZMQ, httr2, glue, cli, testthat (>=
+        3.2.1)
+Depends: R (>= 4.3.0), dplyr (>= 1.1.4), foreign (>= 0.8.86), ggplot2
+        (>= 3.5.0), plotly (>= 4.10.4), data.table (>= 1.15.2)
+LazyData: true
+URL: https://github.com/AlphaPrime7/normfluodbf,
+        https://alphaprime7.github.io/normfluodbf/
+BugReports: https://github.com/AlphaPrime7/normfluodbf/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-10-05 21:19:38 UTC; alphaprime7
+Author: Tingwei Adeck [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0009-7450-8863>),
+  Tesla Adeck [cph],
+  Amina Adeck [cph]
+Maintainer: Tingwei Adeck <awesome.tingwei@outlook.com>
+Repository: CRAN
+Date/Publication: 2025-10-10 10:50:02 UTC

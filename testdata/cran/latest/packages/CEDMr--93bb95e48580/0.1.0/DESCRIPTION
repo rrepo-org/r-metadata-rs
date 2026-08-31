@@ -1,0 +1,41 @@
+Package: CEDMr
+Title: Capability-Ecological Developmental Model (CEDM) Analysis
+Version: 0.1.0
+Authors@R: 
+    person("Subir", "Hait",
+           email   = "haitsubi@msu.edu",
+           role    = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-9871-9677"))
+Description: Implements the Capability-Ecological Developmental Model
+    (CEDM) for longitudinal and multilevel data. The package supports
+    estimation and interpretation of models examining how socioeconomic
+    status (SES), health indicators, and contextual factors jointly relate
+    to academic outcomes. Functionality includes: (1) classification of
+    ecological capability regimes (amplifying, neutral, compensatory);
+    (2) estimation of moderated multilevel models with higher-order
+    interaction terms; (3) causal mediation analysis using doubly robust
+    estimation; (4) random-effects within-between (REWB) decomposition;
+    (5) nonlinear moderation using restricted cubic splines; (6) clustering
+    of longitudinal health trajectories; and (7) sensitivity analysis using
+    the impact threshold for a confounding variable (ITCV) and
+    robustness-to-replacement (RIR) measures. The package is designed for
+    use with general longitudinal multilevel datasets.
+License: MIT + file LICENSE
+URL: https://github.com/causalfragility-lab/CEDMr
+BugReports: https://github.com/causalfragility-lab/CEDMr/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.1.0), ggplot2 (>= 3.4.0), lme4 (>= 1.1-31),
+        magrittr (>= 2.0.0), mediation (>= 4.5.0), rlang (>= 1.1.0),
+        rms (>= 6.7-0), stats, tidyr (>= 1.3.0)
+Suggests: cluster (>= 2.1.4), konfound (>= 0.4.0), mice (>= 3.16.0),
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-02 04:12:12 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-08 14:30:02 UTC

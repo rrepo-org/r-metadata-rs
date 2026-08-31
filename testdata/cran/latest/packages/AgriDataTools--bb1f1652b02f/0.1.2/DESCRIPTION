@@ -1,0 +1,41 @@
+Package: AgriDataTools
+Type: Package
+Title: Automated Statistical Analysis and Tools for Agricultural
+        Research
+Version: 0.1.2
+Authors@R: person(given = "Faheem",
+                  family = "Khan",
+                  role = c("aut", "cre"),
+                  email = "2022ag94@uaf.edu.pk",
+                  comment = c(ORCID = "0009-0002-8963-7157"))
+Description: A comprehensive suite of statistical tools tailored for agricultural
+    and plant breeding research. Provides automated pipelines for analysis of
+    variance and covariance under randomized complete block designs and completely
+    randomized designs, descriptive summary statistics, and post-hoc multiple
+    range tests including Least Significant Difference, Tukey, and Scheffe based on
+    Steel et al. (1997) <isbn:978-0070610286>. Quantitative genetic parameters including
+    genotypic, phenotypic, and environmental variance components and broad-sense
+    heritability follow Burton and Devane (1953) <doi:10.2134/agronj1953.00021962004500100005x>.
+    Genetic advance and genetic advance as percentage of mean estimation follow
+    Johnson et al. (1955) <doi:10.2134/agronj1955.00021962004700070009x>. Genotypic, phenotypic,
+    and environmental correlations follow Miller et al. (1958)
+    <doi:10.2134/agronj1958.00021962005000100020x>. Genotypic and phenotypic path coefficient
+    analysis direct and indirect effects decomposition follows Dewey and Lu (1959)
+    <doi:10.2134/agronj1959.00021962005100090002x>. Principal component analysis
+    follows Jolliffe (2002) <isbn:978-0387954424> and hierarchical clustering
+    follows Sneath and Sokal (1973) <isbn:978-0716706977>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: ggplot2, reshape2, factoextra, dendextend, circlize, stats,
+        graphics, dplyr, utils
+Config/roxygen2/version: 8.0.0
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2026-08-01 08:55:04 UTC; Faheem khan
+Author: Faheem Khan [aut, cre] (ORCID: <https://orcid.org/0009-0002-8963-7157>)
+Maintainer: Faheem Khan <2022ag94@uaf.edu.pk>
+Repository: CRAN
+Date/Publication: 2026-08-08 11:20:06 UTC

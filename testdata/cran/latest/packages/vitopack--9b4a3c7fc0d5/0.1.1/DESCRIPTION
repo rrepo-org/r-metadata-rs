@@ -1,0 +1,38 @@
+Package: vitopack
+Type: Package
+Title: Actuarial Helpers for Triangles, Exposures and Czech Birth
+        Numbers
+Version: 0.1.1
+Authors@R: 
+    person(given = "Ondřej",
+           family = "Vít",
+           email = "ondrej.vit@com-pass.cz",
+           role = c("aut", "cre"))
+Description: A collection of utilities that grew out of day-to-day non-life
+    actuarial work at Com-PASS Advisory. Provides helpers for building
+    chain-ladder triangles (cumulative, decumulative, run-off, development
+    factors with optional weighting), constructing exposure columns from
+    policy start/end dates, parsing Czech birth numbers ('rodné číslo')
+    into dates, generating smooth RGB color palettes for charts, and
+    loading multi-sheet 'xlsx'/'xlsb' files into a list of data frames.
+    The chain-ladder helpers follow the standard methodology of
+    Mack (1993) <doi:10.2143/AST.23.2.2005092>.
+License: MIT + file LICENSE
+URL: https://github.com/Com-PASS-OV/vitopack,
+        https://Com-PASS-OV.github.io/vitopack/
+BugReports: https://github.com/Com-PASS-OV/vitopack/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: data.table, dplyr, tibble, tidyselect, rlang, lubridate,
+        grDevices, graphics, stats, utils
+Suggests: readxl, plotly, testthat (>= 3.0.0), knitr, rmarkdown, covr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-07 17:39:03 UTC; OndřejVít
+Author: Ondřej Vít [aut, cre]
+Maintainer: Ondřej Vít <ondrej.vit@com-pass.cz>
+Repository: CRAN
+Date/Publication: 2026-05-12 19:20:02 UTC

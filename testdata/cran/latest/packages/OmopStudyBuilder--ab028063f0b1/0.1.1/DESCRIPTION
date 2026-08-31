@@ -1,0 +1,42 @@
+Type: Package
+Package: OmopStudyBuilder
+Title: Build Reproducible Network Studies for OMOP Common Data Model
+Version: 0.1.1
+Authors@R: c(
+    person("Folu", "Akintola", , "folu.akintola@ndorms.ox.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0588-2298")),
+    person("Edward", "Burn", , "edward.burn@ndorms.ox.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0002-9286-1128")),
+    person("Martí", "Català", , "marti.catalasabate@ndorms.ox.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0003-3308-9905")),
+    person("Marta", "Alcalde-Herraiz", , "marta.alcaldeherraiz@ndorms.ox.ac.uk", role = "ctb",
+           comment = c(ORCID = "0009-0002-4405-1814"))
+  )
+Description: Streamlines the setup and execution of network studies using
+    the Observational Medical Outcomes Partnership (OMOP) Common Data
+    Model (CDM). Creates standardised project structures with template
+    code, manages dependencies with 'renv', provides code review
+    utilities, and supports containerised execution with 'Docker' for
+    reproducible multi-site studies.  Includes 'GitHub' integration for
+    collaboration and version control.
+License: Apache License (>= 2)
+URL: https://oxford-pharmacoepi.github.io/OmopStudyBuilder/
+Depends: R (>= 4.1.0)
+Imports: cli, jsonlite, omopgenerics, rlang, whisker
+Suggests: dplyr, gert, getPass, gh, here, knitr, processx, purrr, renv,
+        rmarkdown, scales, stringr, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+BugReports: https://github.com/oxford-pharmacoepi/OmopStudyBuilder/issues
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-11 21:45:18 UTC; foluwa
+Author: Folu Akintola [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0588-2298>),
+  Edward Burn [aut] (ORCID: <https://orcid.org/0000-0002-9286-1128>),
+  Martí Català [aut] (ORCID: <https://orcid.org/0000-0003-3308-9905>),
+  Marta Alcalde-Herraiz [ctb] (ORCID:
+    <https://orcid.org/0009-0002-4405-1814>)
+Maintainer: Folu Akintola <folu.akintola@ndorms.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-05-11 22:10:12 UTC

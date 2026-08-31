@@ -1,0 +1,63 @@
+Package: aggreCAT
+Type: Package
+Title: Mathematically Aggregating Expert Judgments
+Version: 1.1.0
+Authors@R: c(person(given = "David",
+                    family = "Wilkinson",
+                    role = c("aut", "cre"),
+                    email = "david.wilkinson.research@gmail.com",
+                    comment = c(ORCID = "0000-0002-9560-6499")),
+             person(given = "Elliot",
+                    family = "Gould",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-6585-538X")),
+             person(given = "Aaron",
+                    family = "Willcox",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0003-2536-2596")),
+             person(given = "Charles T.",
+                    family = "Gray",
+                    role = c("aut")),
+             person(given = "Rose",
+                    family = "E. O'Dea",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0001-8177-5075")),
+             person(given = "Rebecca",
+                    family = "Groenewegen",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0001-9177-8536")))
+Description: The use of structured elicitation to inform decision making has grown dramatically in recent decades, however, judgements from multiple experts must be aggregated into a single estimate. Empirical evidence suggests that mathematical aggregation provides more reliable estimates than enforcing behavioural consensus on group estimates. 'aggreCAT' provides state-of-the-art mathematical aggregation methods for elicitation data including those defined in Hanea, A. et al. (2021) <doi:10.1371/journal.pone.0256919>. The package also provides functions to visualise and evaluate the performance of your aggregated estimates on validation data.
+URL: https://replicats.research.unimelb.edu.au/,
+        https://github.com/metamelb-repliCATS/aggreCAT,
+        https://metamelb-replicats.github.io/aggreCAT/
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown, covr, pointblank,
+        janitor, qualtRics, here, readxl, readr, lubridate, forcats,
+        ggforce, ggpubr, ggridges, rjags, tidybayes, tidyverse,
+        usethis, nlme, gt, gtExtras, R.rsp
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+Imports: magrittr, GoFKernel, purrr, R2jags, coda, precrec, mathjaxr,
+        cli, VGAM, crayon, dplyr, stats, stringr, tidyr, tibble,
+        ggplot2, insight, DescTools, MLmetrics
+VignetteBuilder: knitr, R.rsp
+RdMacros: mathjaxr
+BuildManual: TRUE
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-04 12:42:37 UTC; wilko
+Author: David Wilkinson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9560-6499>),
+  Elliot Gould [aut] (ORCID: <https://orcid.org/0000-0002-6585-538X>),
+  Aaron Willcox [aut] (ORCID: <https://orcid.org/0000-0003-2536-2596>),
+  Charles T. Gray [aut],
+  Rose E. O'Dea [aut] (ORCID: <https://orcid.org/0000-0001-8177-5075>),
+  Rebecca Groenewegen [aut] (ORCID:
+    <https://orcid.org/0000-0001-9177-8536>)
+Maintainer: David Wilkinson <david.wilkinson.research@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-04 13:40:11 UTC

@@ -1,0 +1,33 @@
+Package: WHORiskCalculator
+Title: WHO Cardiovascular Disease Risk Calculator
+Version: 1.0.0
+Authors@R: c(
+    person("WHO CVD Risk Chart Working Group", role = "aut"),
+    person("Andrea", "Pedot", , "andrea.pedot@unimi.it", role = c("cre", "ctb"))
+  )
+Description: Implements the 2019 World Health Organization (WHO) cardiovascular 
+    disease (CVD) risk prediction models, as described in Kaptoge et al. (2019) 
+    <doi:10.1016/S2214-109X(19)30318-3>. Provides two validated models for 
+    estimating 10-year risk of fatal and non-fatal cardiovascular events 
+    (myocardial infarction and stroke): a laboratory-based model using age, sex, 
+    systolic blood pressure, total cholesterol, smoking status, and diabetes 
+    history; and a non-laboratory-based model substituting body mass index (BMI) 
+    for cholesterol and diabetes, suitable for resource-limited settings. Risk 
+    estimates are recalibrated to 21 Global Burden of Disease regions using 
+    region-specific incidence rates and risk factor distributions derived from 
+    the Emerging Risk Factors Collaboration. Functions are fully vectorized for 
+    efficient batch calculations and support automatic country-to-region mapping 
+    via ISO 3166-1 alpha-3 country codes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: devtools, renv, spelling
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-01 09:59:18 UTC; r878876
+Author: WHO CVD Risk Chart Working Group [aut],
+  Andrea Pedot [cre, ctb]
+Maintainer: Andrea Pedot <andrea.pedot@unimi.it>
+Repository: CRAN
+Date/Publication: 2026-04-07 07:30:09 UTC

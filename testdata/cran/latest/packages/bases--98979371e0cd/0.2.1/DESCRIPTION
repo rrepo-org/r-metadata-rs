@@ -1,0 +1,38 @@
+Package: bases
+Title: Basis Expansions for Regression Modeling
+Version: 0.2.1
+Authors@R: 
+    person("Cory", "McCartan", , "mccartan@psu.edu", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-6251-669X"))
+Description: Provides various basis expansions for flexible regression modeling,
+    including random Fourier features (Rahimi & Recht, 2007)
+    <https://proceedings.neurips.cc/paper_files/paper/2007/file/013a006f03dbc5392effeb8f18fda755-Paper.pdf>,
+    exact kernel / Gaussian process feature maps, prior features for Bayesian
+    Additive Regression Trees (BART) (McCartan & Huang, 2026) <doi:10.48550/arXiv.2607.28844>,
+    and a helpful interface for n-way interactions. The provided functions may
+    be used within any modeling formula, allowing the use of kernel methods and
+    other basis expansions in modeling functions that do not otherwise support
+    them. Along with the basis expansions, a number of kernel functions are also
+    provided, which support kernel arithmetic to form new kernels. Basic ridge
+    regression functionality is included as well.
+Depends: R (>= 3.6.0)
+Imports: rlang, stats, methods
+Suggests: mgcv, recipes, tibble, adj (>= 0.1.0), RSpectra, igraph,
+        testthat (>= 3.0.0), knitr, rmarkdown
+LinkingTo: cpp11
+License: MIT + file LICENSE
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://corymccartan.com/bases/,
+        https://github.com/CoryMcCartan/bases/
+BugReports: https://github.com/CoryMcCartan/bases/issues
+Config/testthat/edition: 3
+Config/build/compilation-database: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-08-04 19:10:28 UTC; cmccartan
+Author: Cory McCartan [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6251-669X>)
+Maintainer: Cory McCartan <mccartan@psu.edu>
+Repository: CRAN
+Date/Publication: 2026-08-04 23:10:02 UTC

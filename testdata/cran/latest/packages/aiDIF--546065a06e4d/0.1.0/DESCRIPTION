@@ -1,0 +1,33 @@
+Package: aiDIF
+Type: Package
+Title: Differential Item Functioning for AI-Scored Assessments
+Version: 0.1.0
+Authors@R: 
+    person("Subir", "Hait",
+           email = "haitsubi@msu.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-9871-9677"))
+Description: Detects and quantifies differential item functioning (DIF) in
+    AI-scored educational and psychological assessments. Provides a fully
+    self-contained robust DIF engine (M-estimation via iteratively
+    re-weighted least squares with the bi-square loss) alongside the novel
+    Differential AI Scoring Bias (DASB) test, which detects item-level
+    scoring shifts that differ across subgroups when comparing human and AI
+    scoring conditions. Includes simulation utilities, anchor weight
+    diagnostics, and an AI-effect classification framework.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Matrix, stats, graphics
+Suggests: mirt, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+URL: https://github.com/causalfragility-lab/aiDIF
+BugReports: https://github.com/causalfragility-lab/aiDIF/issues
+NeedsCompilation: no
+Packaged: 2026-04-20 20:43:11 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-04-21 20:52:36 UTC

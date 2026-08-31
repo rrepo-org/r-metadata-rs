@@ -1,0 +1,25 @@
+Package: dpdr
+Title: Interface to Health Canada Drug Product Database API
+Version: 0.1.0
+Authors@R: 
+    person("Matthew T.", "Warkentin", , "matthew.warkentin@ucalgary.ca", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8730-3511"))
+Description: A programmatic interface to Health Canada's Drug Product 
+    Database (DPD) REST API for querying information about drugs 
+    approved for use in Canada. More information on the DPD can be found
+    in the API guide (<https://health-products.canada.ca/api/documentation/dpd-documentation-en.html>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3.9000
+Depends: R (>= 4.1.0)
+Imports: glue, httr2, jsonlite, memoise, rlang, tibble
+URL: https://github.com/mattwarkentin/dpdr,
+        https://mattwarkentin.github.io/dpdr/
+BugReports: https://github.com/mattwarkentin/dpdr/issues
+NeedsCompilation: no
+Packaged: 2026-02-23 23:00:23 UTC; matt
+Author: Matthew T. Warkentin [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8730-3511>)
+Maintainer: Matthew T. Warkentin <matthew.warkentin@ucalgary.ca>
+Repository: CRAN
+Date/Publication: 2026-03-02 21:40:02 UTC

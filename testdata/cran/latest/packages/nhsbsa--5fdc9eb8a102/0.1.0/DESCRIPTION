@@ -1,0 +1,34 @@
+Package: nhsbsa
+Title: Client for the NHS Business Services Authority Open Data Portal
+Version: 0.1.0
+Authors@R: 
+    person("Alasdair", "Warwick", , "alasdair.warwick.19@ucl.ac.uk",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0800-2890"))
+Description: A low-level client for the National Health Service Business
+    Services Authority (NHSBSA) Open Data Portal
+    <https://opendata.nhsbsa.net>, a 'CKAN' data catalogue. Provides thin
+    wrappers around the portal's API actions for listing datasets,
+    retrieving metadata, querying the datastore and downloading resource
+    files. Results are returned as plain data (tibbles and lists) for the
+    caller to interpret.
+License: MIT + file LICENSE
+URL: https://github.com/rmgpanw/nhsbsa,
+        https://rmgpanw.github.io/nhsbsa/
+BugReports: https://github.com/rmgpanw/nhsbsa/issues
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, httr2, jsonlite, purrr, rlang, stringr, tibble
+Suggests: curl, httptest2, knitr, rmarkdown, spelling, testthat (>=
+        3.0.0), withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-31 07:37:37 UTC; Alasdair
+Author: Alasdair Warwick [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0800-2890>)
+Maintainer: Alasdair Warwick <alasdair.warwick.19@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-08-07 22:00:02 UTC

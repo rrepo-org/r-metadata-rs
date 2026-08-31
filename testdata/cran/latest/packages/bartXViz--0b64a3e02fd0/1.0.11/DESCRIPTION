@@ -1,0 +1,23 @@
+Package: bartXViz
+Title: Visualization of BART and BARP using SHAP
+Version: 1.0.11
+Date: 2026-01-26
+Authors@R: c( person("Dong-eun", "Lee", , "ldongeun.leel@gmail.com", role = c("aut", "cre")),
+   person("Eun-Kyung", "Lee",, role = "aut"))
+Description: Complex machine learning models are often difficult to interpret. Shapley values serve as a powerful tool to understand and explain why a model makes a particular prediction. This package computes variable contributions using permutation-based Shapley values for Bayesian Additive Regression Trees (BART) and its extension with Post-Stratification (BARP). The permutation-based SHAP method proposed by Strumbel and Kononenko (2014) <doi:10.1007/s10115-013-0679-x> is grounded in data obtained via MCMC sampling. Similar to the BART model introduced by Chipman, George, and McCulloch (2010) <doi:10.1214/09-AOAS285>, this package leverages Bayesian posterior samples generated during model estimation, allowing variable contributions to be computed without requiring additional sampling. The BART model is designed to work with the following R packages: 'BART' <doi:10.18637/jss.v097.i01>, 'bartMachine' <doi:10.18637/jss.v070.i04>, and 'dbarts' <https://CRAN.R-project.org/package=dbarts>. For XGBoost and baseline adjustments, the approach by Lundberg et al. (2020) <doi:10.1038/s42256-019-0138-9> is also considered. The BARP model proposed by Bisbee (2019) <doi:10.1017/S0003055419000480> was implemented with reference to <https://github.com/jbisbee1/BARP> and is designed to work with modified functions based on that implementation. BARP extends post-stratification by computing variable contributions within each stratum defined by stratifying variables. The resulting Shapley values are visualized through both global and local explanation methods.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0), SuperLearner
+Imports: bartMachine, BART, ggplot2, ggforce, data.table, ggfittext,
+        ggpubr, foreach, gggenes, Rcpp, dplyr, tidyr, stringr,abind,
+        utils,grid,dbarts, forcats, gridExtra,reshape2, missForest
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/ldongeunl/bartXViz
+NeedsCompilation: yes
+Packaged: 2026-01-26 12:46:12 UTC; ddong
+Author: Dong-eun Lee [aut, cre],
+  Eun-Kyung Lee [aut]
+Maintainer: Dong-eun Lee <ldongeun.leel@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-01-26 13:10:02 UTC

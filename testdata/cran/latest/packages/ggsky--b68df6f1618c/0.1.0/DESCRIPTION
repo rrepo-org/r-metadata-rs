@@ -1,0 +1,30 @@
+Type: Package
+Package: ggsky
+Title: Galactic and Equatorial Coordinate Implementation for 'ggplot2'
+Version: 0.1.0
+Authors@R: 
+    person("Grigory", "Uskov", , "uskov.russia@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0274-1350"))
+Description: Simple tools to draw sky maps in 'ggplot2' using galactic or
+    equatorial coordinates. Includes custom coordinate systems, grid
+    labels, and helpers for sky map breaks.
+License: MIT + file LICENSE
+URL: https://uskovgs.github.io/ggsky/
+BugReports: https://github.com/uskovgs/ggsky/issues
+Imports: ggplot2, grid
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Collate: 'data.R' 'sky_utils.R' 'sky_projection.R' 'sky_segmentize.R'
+        'sky_grobs.R' 'coord_galactic.R' 'coord_equatorial.R'
+        'sky_scales.R'
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-03-06 14:24:00 UTC; uskov
+Author: Grigory Uskov [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0274-1350>)
+Maintainer: Grigory Uskov <uskov.russia@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-10 21:10:09 UTC

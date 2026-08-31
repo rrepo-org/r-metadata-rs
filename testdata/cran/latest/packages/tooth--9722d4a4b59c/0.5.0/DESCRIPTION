@@ -1,0 +1,35 @@
+Package: tooth
+Title: Dental Public Health Indices and Odontogram Visualizations
+Version: 0.5.0
+Authors@R: c(
+    person("David", "Selvaraj", , "dms256@case.edu",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-4055-9493")),
+    person("Suchitra", "Nelson", , role = "aut"))
+Description: Computes dental caries indices (DMFT, DMFS, dmft, dmfs) from
+    surface-level clinical examination data and produces odontogram heatmap
+    visualizations of per-tooth-surface outcomes. Supports primary and
+    permanent dentition with configurable teeth per quadrant (5 to 8),
+    separate root and coronal caries tallying, long and wide input formats,
+    stratified output, and FDI/Universal/quadrant tooth numbering conversion.
+License: MIT + file LICENSE
+URL: https://github.com/ddmsel/tooth
+BugReports: https://github.com/ddmsel/tooth/issues
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.0.0), ggplot2 (>= 3.4.0), patchwork, purrr, rlang,
+        tibble
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-13 19:59:42 UTC; root
+Author: David Selvaraj [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-4055-9493>),
+  Suchitra Nelson [aut]
+Maintainer: David Selvaraj <dms256@case.edu>
+Repository: CRAN
+Date/Publication: 2026-07-22 07:10:02 UTC

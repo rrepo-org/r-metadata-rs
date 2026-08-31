@@ -1,0 +1,43 @@
+Package: BSW
+Type: Package
+Title: Fitting a Log-Binomial Model Using the Bekhit–Schöpe–Wagenpfeil
+        (BSW) Algorithm
+Version: 0.1.2
+Date: 2025-10-06
+Authors@R: 
+    c(
+      	person("Adam", "Bekhit", role = "aut"),
+	      person("Jakob", "Schöpe", role = "aut"),
+	      person("Thomas", "Wolf",
+	            comment = c(ORCID="0009-0004-9532-1487"),
+	            role = "aut"),
+      	person("Julius Johannes", "Weise",
+	            comment = c(ORCID="0000-0002-0908-5579"),
+	            role = c("aut", "cre"), email = "imbei@med-imbei.uni-saarland.de"),
+      	person("Stefan", "Wagenpfeil",
+	            comment = c(ORCID="0000-0002-4558-4041"), 
+               role = "aut")
+    )
+Description: Implements a modified Newton-type algorithm (BSW algorithm) for solving the maximum likelihood estimation problem in fitting a log-binomial model under linear inequality constraints.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/UdS-MF-IMBEI/BSW
+BugReports: https://github.com/UdS-MF-IMBEI/BSW/issues
+VignetteBuilder: knitr
+Depends: R (>= 4.0)
+Imports: Matrix, matrixStats, quadprog, methods, stats, boot, checkmate
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-06 10:08:06 UTC; juw
+Author: Adam Bekhit [aut],
+  Jakob Schöpe [aut],
+  Thomas Wolf [aut] (ORCID: <https://orcid.org/0009-0004-9532-1487>),
+  Julius Johannes Weise [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0908-5579>),
+  Stefan Wagenpfeil [aut] (ORCID:
+    <https://orcid.org/0000-0002-4558-4041>)
+Maintainer: Julius Johannes Weise <imbei@med-imbei.uni-saarland.de>
+Repository: CRAN
+Date/Publication: 2025-10-06 10:50:02 UTC

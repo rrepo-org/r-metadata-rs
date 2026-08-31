@@ -1,0 +1,31 @@
+Package: emery
+Title: Accuracy Statistic Estimation for Imperfect Gold Standards
+Version: 0.7.1
+Authors@R: 
+    person("Corie", "Drake", , "therealcfdrake@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-1517-7103"))
+Description: Produce maximum likelihood estimates of common accuracy statistics
+ for multiple measurement methods when a gold standard is not available. An R 
+ implementation of the expectation maximization algorithms described in Zhou et 
+ al. (2011) <doi:10.1002/9780470906514> with additional functions for creating 
+ simulated data and visualizing results. Supports binary, ordinal, and 
+ continuous measurement methods.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/therealcfdrake/emery
+BugReports: https://github.com/therealcfdrake/emery/issues
+Imports: stats, dplyr, ggplot2, purrr, tibble, tidyr, utils, methods,
+        mvtnorm, stringr, Rdpack
+RdMacros: Rdpack
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-02-25 02:44:35 UTC; corie
+Author: Corie Drake [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1517-7103>)
+Maintainer: Corie Drake <therealcfdrake@gmail.com>
+Depends: R (>= 4.2.0)
+Repository: CRAN
+Date/Publication: 2026-02-25 11:50:21 UTC

@@ -1,0 +1,34 @@
+Package: reems
+Title: Estimating Effective Migration Surfaces from Single Nucleotide
+        Polymorphism Data
+Version: 0.1.0
+Authors@R: c(
+	   person(given = "Felix", family = "Weitkämper", email = "felix.weitkaemper@german-uds.de", role = c("aut", "cre","cph"), comment = c(ORCID = "0000-0002-3895-8279")),
+	   person(given = "Desislava", family = "Petkova", role = c("cph"), comment = c(ORCID = "0000-0001-9129-1787", "Author of the 'EEMS' command-line utility and the 'EEMS' plotting 'R' scripts adapted for this wrapper package.")))
+Description: Wrapper and plotting utilities for the spatial population genetics tool 'EEMS' (Estimated Effective Migration Surfaces) for SNP (Single Nucleotide Polymorphism) data, originally provided as a command-line tool written in 'C++' together with an accompanying 'R' package for plotting the output of the 'EEMS' tool itself (<https://github.com/dipetkov/eems/>). There are four main motivations for offering this to 'R' users as a package. Firstly, to remove the installation and configuration burden for the 'EEMS' command-line tool, which relies on manually installed 'Boost' and 'Eigen' system libraries and configuring their location; secondly, to streamline the workflow by having a singe environment (the 'R' system) for the entire analysis rather than a file-based command-line executable whose output files are then to be imported and analysed by a separate 'R' script; thirdly, to make the input formats compatible with other, 'R'-based spatial population genetics tools such as the 'ConStruct' package; and lastly, to allow for easily running several chains in parallel and combining them for plotting and further analysis. The package also adds more intuitive, streamlined tooling around creating more complex habitats. The method of estimating effective migration surfaces was first described by Petkova, D., Novembre, J. & Stephens, M. (2016) <doi:10.1038/ng.3464>.     
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LinkingTo: BH (>= 1.76.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.9.1)
+Imports: Rcpp, methods, raster (>= 2.4-15), sp (>= 1.1-1), sf, stats
+        (>= 3.3.2), utils (>= 3.3.2)
+Suggests: future, future.apply, Matrix (>= 1.2.7.1), RColorBrewer (>=
+        1.1), deldir (>= 0.1), dichromat, rworldmap (>= 1.3),
+        rworldxtra (>= 1.01), knitr, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 4.1.0)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://codeberg.org/felix_weitkaemper/reems
+BugReports: https://codeberg.org/felix_weitkaemper/reems/issues
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-05-02 10:18:33 UTC; weitkaemper
+Author: Felix Weitkämper [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-3895-8279>),
+  Desislava Petkova [cph] (ORCID:
+    <https://orcid.org/0000-0001-9129-1787>, Author of the 'EEMS'
+    command-line utility and the 'EEMS' plotting 'R' scripts adapted
+    for this wrapper package.)
+Maintainer: Felix Weitkämper <felix.weitkaemper@german-uds.de>
+Repository: CRAN
+Date/Publication: 2026-05-05 18:20:02 UTC

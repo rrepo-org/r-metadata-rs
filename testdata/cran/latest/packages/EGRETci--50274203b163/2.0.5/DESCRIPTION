@@ -1,0 +1,51 @@
+Package: EGRETci
+Type: Package
+Title: Exploration and Graphics for RivEr Trends Confidence Intervals
+Version: 2.0.5
+Authors@R: c(person("Laura", "DeCicco", role = c("aut","cre"),
+    email = "ldecicco@usgs.gov",
+    comment=c(ORCID="0000-0002-3915-9487")),
+    person("Robert", "Hirsch", role = c("aut"),
+    email = "rhirsch@usgs.gov",
+    comment=c(ORCID="0000-0002-4534-075X")),
+    person("Stacey","Archfield", role = c("ctb"),
+    email = "sarch@usgs.gov",
+    comment=c(ORCID="0000-0002-9011-3871")),   
+    person("Jennifer","Murphy", role = c("ctb"),
+    email = "jmurphy@usgs.gov",
+    comment=c(ORCID="0000-0002-0881-0919")))
+Description: Collection of functions to evaluate uncertainty of results from
+    water quality analysis using the Weighted Regressions on Time Discharge and
+    Season (WRTDS) method. This package is an add-on to the EGRET package that
+    performs the WRTDS analysis. The WRTDS modeling
+    method was initially introduced and discussed in Hirsch et al. (2010) <doi:10.1111/j.1752-1688.2010.00482.x>,
+    and expanded in Hirsch and De Cicco (2015) <doi:10.3133/tm4A10>. The 
+    paper describing the uncertainty and confidence interval calculations 
+    is Hirsch et al. (2015) <doi:10.1016/j.envsoft.2015.07.017>.
+License: CC0
+Depends: R (>= 3.5.0)
+Imports: EGRET(>= 3.0.5), binom, stats, graphics, utils, foreach
+Suggests: knitr, testthat, doParallel, iterators, rmarkdown, pkgdown,
+        covr
+LazyLoad: yes
+LazyData: yes
+VignetteBuilder: knitr
+BuildVignettes: true
+BugReports: https://github.com/DOI-USGS/EGRETci/issues
+Copyright: This software is in the public domain because it contains
+        materials that originally came from the United States
+        Geological Survey, an agency of the United States Department of
+        Interior. For more information, see the official USGS copyright
+        policy at
+        hhttps://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-04-17 19:03:07 UTC; ldecicco
+Author: Laura DeCicco [aut, cre] (<https://orcid.org/0000-0002-3915-9487>),
+  Robert Hirsch [aut] (<https://orcid.org/0000-0002-4534-075X>),
+  Stacey Archfield [ctb] (<https://orcid.org/0000-0002-9011-3871>),
+  Jennifer Murphy [ctb] (<https://orcid.org/0000-0002-0881-0919>)
+Maintainer: Laura DeCicco <ldecicco@usgs.gov>
+Repository: CRAN
+Date/Publication: 2025-04-17 20:00:01 UTC

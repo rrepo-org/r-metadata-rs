@@ -1,0 +1,33 @@
+Package: SplitWise
+Type: Package
+Title: Hybrid Stepwise Regression with Single-Split Dummy Encoding
+Version: 1.0.2
+Authors@R: c(
+  person("Marcell T.", "Kurbucz", email = "m.kurbucz@ucl.ac.uk", role = c("aut", "cre")),
+  person("Nikolaos", "Tzivanakis", role = "aut"),
+  person("Nilufer Sari", "Aslam", role = "aut"),
+  person("Adam M.", "Sykulski", role = "aut"))
+Description: Implements 'SplitWise', a hybrid regression approach that transforms
+    numeric variables into either single-split (0/1) dummy variables or retains
+    them as continuous predictors. The transformation is followed by stepwise
+    selection to identify the most relevant variables. The default 'iterative'
+    mode adaptively explores partial synergies among variables to enhance model
+    performance, while an alternative 'univariate' mode applies simpler
+    transformations independently to each predictor. For details, see Kurbucz et al. (2025) <doi:10.48550/arXiv.2505.15423>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: rpart, stats
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-07-31 05:22:34 UTC; Marcell
+Author: Marcell T. Kurbucz [aut, cre],
+  Nikolaos Tzivanakis [aut],
+  Nilufer Sari Aslam [aut],
+  Adam M. Sykulski [aut]
+Maintainer: Marcell T. Kurbucz <m.kurbucz@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-07-31 05:40:02 UTC

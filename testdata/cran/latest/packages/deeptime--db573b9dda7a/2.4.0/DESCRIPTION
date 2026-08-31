@@ -1,0 +1,37 @@
+Package: deeptime
+Title: Plotting Tools for Anyone Working in Deep Time
+Version: 2.4.0
+Authors@R: person("William", "Gearty", email = "willgearty@gmail.com", role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0003-0076-3262"))
+Maintainer: William Gearty <willgearty@gmail.com>
+Description: Extends the functionality of other plotting packages (notably 'ggplot2')
+    to help facilitate the plotting of data over long time intervals, including,
+    but not limited to, geological, evolutionary, and ecological data. The
+    primary goal of 'deeptime' is to enable users to add highly customizable
+    timescales to their visualizations. Other functions are also included to
+    assist with other areas of deep time visualization.
+URL: https://williamgearty.com/deeptime/,
+        https://github.com/willgearty/deeptime
+BugReports: https://github.com/willgearty/deeptime/issues
+Depends: R (>= 4.1)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+biocViews:
+Imports: deeptimedata, ggplot2 (>= 3.5.0), utils, ggforce, grid,
+        gridExtra, gtable, methods, stats, lattice, rlang (>= 1.1.0),
+        scales, ggfittext, curl, cli, lifecycle, grImport2, ggh4x
+Suggests: geomtextpath, phytools, dplyr, divDyn, gsloid, ape,
+        palaeoverse, paleotree, dispRity, ggtree (>= 3.6.1), tidytree,
+        testthat (>= 3.0.0), vdiffr (>= 1.0.8), knitr, rmarkdown,
+        withr, ggpattern, ggrepel, rmacrostrat, svglite
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/revdeps: revdepcheck
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-09 22:39:31 UTC; willg
+Author: William Gearty [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0076-3262>)
+Repository: CRAN
+Date/Publication: 2026-07-10 06:50:02 UTC

@@ -1,0 +1,31 @@
+Package: MVNGmod
+Type: Package
+Title: Matrix-Variate Non-Gaussian Linear Regression Models
+Version: 0.1.2
+Authors@R: 
+    c(person("Samuel", "Soon", , "samksoon2@gmail.com", role = c("aut", "cre"),
+           comment = c()),
+           person("Dipankar", "Bandyopadhyay", , "dbandyop@vcu.edu", role = c("aut"),
+           comment = c()),
+           person("Qingyang", "Liu", , "qliu432@wisc.edu", role = c("aut"),
+           comment = c()))           
+Maintainer: Samuel Soon <samksoon2@gmail.com>
+Description: Fits matrix-variate variance-gamma (MVVG) and matrix-variate normal-inverse-Gaussian (MVNIG) linear regression models using expectation-conditional maximization (ECM) algorithms. The models accommodate clustered matrix-valued responses, with unequal numbers of observations across subjects, correlated responses, skewness, and within-subject dependence. Functions are provided for model fitting, prediction, and subject-level influence assessment using approximate generalized Cook's distances. The package also includes motivating periodontal data from Gullah-speaking African Americans with Type-II diabetes. For details on the underlying matrix-variate distributions (MVVG and MVNIG), see Gallaugher and McNicholas (2019, <doi:10.1016/j.spl.2018.08.012>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: Bessel, clusterGeneration, DistributionUtils, matlib, maxLik,
+        truncnorm, pracma, matrixcalc, purrr
+URL: https://github.com/soonsk-vcu/MVNGmod
+BugReports: https://github.com/soonsk-vcu/MVNGmod/issues
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-07-16 21:26:36 UTC; soonsk
+Author: Samuel Soon [aut, cre],
+  Dipankar Bandyopadhyay [aut],
+  Qingyang Liu [aut]
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-07-16 21:40:02 UTC

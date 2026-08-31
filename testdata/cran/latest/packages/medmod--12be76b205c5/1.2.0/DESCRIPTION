@@ -1,0 +1,29 @@
+Package: medmod
+Type: Package
+Title: Simple Mediation and Moderation Analysis
+Version: 1.2.0
+Date: 2026-07-14
+Authors@R: person("Ravi", "Selker", email = "selker.ravi@gmail.com",
+    role = c("aut", "cre"))
+Description: This toolbox allows you to do simple mediation and moderation
+    analysis. Models are estimated with the 'lavaan' package by Rosseel (2012)
+    <doi:10.18637/jss.v048.i02>; standard errors for the mediation estimates
+    are computed with the delta method following Sobel (1982)
+    <doi:10.2307/270723> or by bootstrapping. It is also available as a module
+    for 'jamovi' (see <https://www.jamovi.org> for more information). You can
+    find an in depth tutorial on the 'lavaan' model syntax used for this
+    package on <https://lavaan.ugent.be/tutorial/index.html>.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.2)
+Imports: jmvcore (>= 1.0.0), R6, lavaan, ggplot2 (>= 3.4.0), rlang
+Suggests: testthat
+URL: https://github.com/raviselker/medmod
+BugReports: https://github.com/raviselker/medmod/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-15 21:14:14 UTC; raviselker
+Author: Ravi Selker [aut, cre]
+Maintainer: Ravi Selker <selker.ravi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-16 04:10:02 UTC

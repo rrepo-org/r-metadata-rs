@@ -1,0 +1,52 @@
+Package: aftPenCDA
+Title: Estimating Penalized AFT Models via Coordinate Descent
+Version: 0.1.1
+Authors@R: c(
+    person(given = "Suyeon", family = "Seon",
+           role = c("aut", "cre"),
+           email = "seonsy429@gmail.com"),
+    person(given = "Taehwa", family = "Choi",
+           role = c("aut"),
+           email = "taehwa015@gmail.com"),
+    person(given = "Dipankar", family = "Bandyopadhyay",
+           role = c("aut"),
+           email = "bandyopd@gmail.com"),
+    person(given = "Dongha", family = "Kim",
+           role = c("aut"),
+           email = "dongha0718@gmail.com"),
+    person(given = "Seongoh", family = "Park",
+           role = c("aut"),
+           email = "inmybrain6@gmail.com")
+    )
+Maintainer: Suyeon Seon <seonsy429@gmail.com>
+Description: Provides penalized accelerated failure time (AFT) model estimation
+    for right-censored and partly interval-censored survival data using induced
+    smoothing and coordinate descent algorithms. Supported penalties include
+    broken adaptive ridge (BAR), LASSO, adaptive LASSO, and SCAD. Core
+    estimation routines are implemented in 'C++' via 'Rcpp' and 'RcppArmadillo' for
+    computational efficiency. The methodology is related to Zeng and Lin (2008)
+    <doi:10.1093/biostatistics/kxm034>, Xu et al. (2010)
+    <doi:10.1002/sim.2576>, Dai et al. (2018)
+    <doi:10.1016/j.jmva.2018.08.007>, and Choi et al. (2025)
+    <doi:10.48550/arXiv.2503.11268>.
+URL: https://github.com/seonsy/aftPenCDA
+BugReports: https://github.com/seonsy/aftPenCDA/issues
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-04-23 02:57:34 UTC; seonsuyeon
+Author: Suyeon Seon [aut, cre],
+  Taehwa Choi [aut],
+  Dipankar Bandyopadhyay [aut],
+  Dongha Kim [aut],
+  Seongoh Park [aut]
+Repository: CRAN
+Date/Publication: 2026-04-23 05:10:29 UTC

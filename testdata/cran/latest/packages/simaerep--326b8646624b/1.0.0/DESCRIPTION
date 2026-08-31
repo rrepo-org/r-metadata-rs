@@ -1,0 +1,42 @@
+Package: simaerep
+Title: Detect Clinical Trial Sites Over- or Under-Reporting Clinical
+        Events
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Bjoern",
+           family = "Koneswarakantha",
+           role = c("aut", "cre", "cph"),
+           email = "bjoern.koneswarakantha@roche.com",
+           comment = c(ORCID = "0000-0003-4585-7799")),
+    person("F. Hoffmann-La Roche Ltd",
+           role = c("cph"))
+  )
+Description: Monitoring reporting rates of subject-level clinical events (e.g.
+  adverse events, protocol deviations) reported by clinical trial sites is an
+  important aspect of risk-based quality monitoring strategy. Sites that are 
+  under-reporting or over-reporting events can be detected using bootstrap
+  simulations during which patients are redistributed between sites. Site-specific
+  distributions of event reporting rates  are generated that are used to assign
+  probabilities to the observed reporting rates.
+  (Koneswarakantha 2024 <doi:10.1007/s43441-024-00631-8>).
+URL: https://openpharma.github.io/simaerep/,
+        https://github.com/openpharma/simaerep/
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0), ggplot2
+Imports: dplyr (>= 1.1.0), tidyr (>= 1.1.0), magrittr, purrr, rlang,
+        stringr, forcats, cowplot, RColorBrewer, furrr (>= 0.2.1),
+        progressr, knitr, tibble, dbplyr, glue
+Suggests: testthat, devtools, pkgdown, spelling, haven, vdiffr, lintr,
+        DBI, duckdb, ggExtra
+RoxygenNote: 7.3.2
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-28 11:22:11 UTC; koneswab
+Author: Bjoern Koneswarakantha [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-4585-7799>),
+  F. Hoffmann-La Roche Ltd [cph]
+Maintainer: Bjoern Koneswarakantha <bjoern.koneswarakantha@roche.com>
+Repository: CRAN
+Date/Publication: 2025-10-28 11:40:02 UTC

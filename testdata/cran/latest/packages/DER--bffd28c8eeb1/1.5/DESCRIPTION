@@ -1,0 +1,23 @@
+Package: DER
+Type: Package
+Title: Income Polarization Index
+Version: 1.5
+Date: 2026-03-28
+Authors@R: c(person("Michail", "Tsagris", role = c("aut", "cre"), email = "mtsagris@uoc.gr"),
+            person("Christos", "Adam", role = "aut", email = "econp266@econ.soc.uoc.gr",
+             comment = c(ORCID = "0009-0003-3244-7034")))
+Maintainer: Michail Tsagris <mtsagris@uoc.gr>
+Depends: R (>= 4.0)
+Imports: rangen, Rfast, Rfast2, Rcpp, RcppParallel, stats
+LinkingTo: Rcpp, RcppParallel
+Encoding: UTF-8
+SystemRequirements: GNU make
+Description: Extremely fast and memory efficient computation of the DER (or PaF) income polarization index as proposed by Duclos J. Y., Esteban, J. and Ray D. (2004). "Polarization: concepts, measurement, estimation". Econometrica, 72(6): 1737--1772. <doi:10.1111/j.1468-0262.2004.00552.x>. The index may be computed for a single or for a range of values of the alpha-parameter and bootstrapping is also available. 
+License: GPL (>= 2)
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-03-28 14:39:08 UTC; mtsag
+Author: Michail Tsagris [aut, cre],
+  Christos Adam [aut] (ORCID: <https://orcid.org/0009-0003-3244-7034>)
+Repository: CRAN
+Date/Publication: 2026-03-29 15:50:36 UTC

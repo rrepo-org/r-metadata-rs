@@ -1,0 +1,44 @@
+Package: pmml
+Type: Package
+Title: Generate PMML for Various Models
+Version: 2.6.1
+Date: 2026-07-07
+Authors@R: c(
+    person("Michael", "Hahsler", email = "mhahsler@lyle.smu.edu", role = c("aut", "cre")),
+    person("Bruno", "Rodrigues", role = "aut"),
+    person("Dmitriy", "Bolotov", email = "dmitriy.bolotov@softwareag.com", role = "aut"),
+    person("Tridivesh", "Jena", email = "tridivesh.jena@softwareag.com", role = "aut"),
+    person("Graham", "Williams", email = "graham.williams@togaware.net", role = "aut"),
+    person("Wen-Ching", "Lin", role = "aut"),
+    person("Hemant", "Ishwaran", role = "aut"),
+    person("Udaya B.", "Kogalur", role = "aut"),
+    person("Rajarshi", "Guha", email = "rguha@indiana.edu", role = "aut"),
+    person("Software AG", role = c("cph")))
+Depends: XML
+Suggests: ada, amap, arules, caret, clue, data.table, forecast, gbm,
+        glmnet, magrittr, Matrix, nnet, rpart, randomForest, rattle,
+        kernlab, e1071, testthat, survival, xgboost, knitr, rmarkdown,
+        covr, tibble
+Imports: methods, stats, utils, stringr
+License: GPL-3 | file LICENSE
+Description: The Predictive Model Markup Language (PMML) is an XML-based language which provides a way for applications to define machine learning, statistical and data mining models and to share models between PMML compliant applications. More information about the PMML industry standard and the Data Mining Group can be found at <https://dmg.org/>. The generated PMML can be imported into any PMML consuming application, such as Zementis Predictive Analytics products.
+URL: https://github.com/mhahsler/r-pmml
+BugReports: https://github.com/mhahsler/r-pmml/issues
+NeedsCompilation: no
+VignetteBuilder: knitr
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-09 19:26:26 UTC; mhahsler
+Author: Michael Hahsler [aut, cre],
+  Bruno Rodrigues [aut],
+  Dmitriy Bolotov [aut],
+  Tridivesh Jena [aut],
+  Graham Williams [aut],
+  Wen-Ching Lin [aut],
+  Hemant Ishwaran [aut],
+  Udaya B. Kogalur [aut],
+  Rajarshi Guha [aut],
+  Software AG [cph]
+Maintainer: Michael Hahsler <mhahsler@lyle.smu.edu>
+Repository: CRAN
+Date/Publication: 2026-07-09 21:20:02 UTC

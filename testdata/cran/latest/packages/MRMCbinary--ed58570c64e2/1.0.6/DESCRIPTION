@@ -1,0 +1,30 @@
+Package: MRMCbinary
+Title: Multi-Reader Multi-Case Analysis of Binary Diagnostic Tests
+Version: 1.0.6
+Description: Implements methods for comparing sensitivities and specificities in balanced (or fully crossed) multi-reader multi-case (MRMC) studies with binary diagnostic test results. It implements conditional logistic regression and provides score tests equivalent to Cochran's Q test (which corresponds to McNemar's test when comparing two modalities only). The methodology is based on Lee et al. (2026) <doi:10.1002/sim.70471>.
+License: MIT + file LICENSE
+URL: https://github.com/seungjae2525/MRMCbinary
+BugReports: https://github.com/seungjae2525/MRMCbinary/issues
+Depends: R (>= 4.2.0)
+Imports: DescTools, stats, survival (>= 3.8-1)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+NeedsCompilation: no
+Authors@R: 
+  c(person(given = "Seungjae",
+           family = "Lee",
+           role = c("aut", "cre"),
+           email = "seungjae2525@gmail.com",
+           comment = c(ORCID = "0000-0001-5508-8634")),
+    person(given = "Woojoo",
+           family = "Lee",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-7447-7045")))
+Packaged: 2026-03-23 14:29:05 UTC; seung
+Author: Seungjae Lee [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5508-8634>),
+  Woojoo Lee [aut] (ORCID: <https://orcid.org/0000-0001-7447-7045>)
+Maintainer: Seungjae Lee <seungjae2525@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-23 15:00:02 UTC

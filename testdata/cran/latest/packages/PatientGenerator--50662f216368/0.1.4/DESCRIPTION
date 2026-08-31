@@ -1,0 +1,37 @@
+Package: PatientGenerator
+Type: Package
+Title: Generator of Synthetic Patient Data for the OMOP Common Data
+        Model
+Version: 0.1.4
+Authors@R: c(
+    person("Cesar", "Barboza", , "c.barboza@mi-erasmusmc.nl", role = c("aut", "cre"), comment = c(ORCID = "0009-0002-4453-3071")),
+    person("Ger", "Inberg", , "g.inberg@erasmusmc.nl", role = "aut", comment = c(ORCID = "0000-0001-8993-8748")),
+    person("Adam", "Black", , "black@ohdsi.org", role = "aut", comment = c(ORCID = "0000-0001-5576-8701"))
+  )
+Description: Tools to generate synthetic patient-level test datasets in the
+    Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM).
+    Includes a chat-driven generator backed by large language models and an
+    interactive 'shiny' designer for editing CDM test sets.
+URL: https://github.com/mi-erasmusmc/PatientGenerator,
+        https://mi-erasmusmc.github.io/PatientGenerator/
+BugReports: https://github.com/mi-erasmusmc/PatientGenerator/issues
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: bslib, checkmate, data.table, DBI, dplyr, DT, duckdb, ellmer,
+        glue, httr2, jsonlite, r2d3, R6, shiny, stringr, testthat
+Suggests: CDMConnector, CohortCharacteristics, CohortConstructor, covr,
+        ggplot2, knitr, rmarkdown, TestGenerator
+VignetteBuilder: knitr
+Config/Needs/website: pkgdown
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-27 09:48:57 UTC; cbarboza
+Author: Cesar Barboza [aut, cre] (ORCID:
+    <https://orcid.org/0009-0002-4453-3071>),
+  Ger Inberg [aut] (ORCID: <https://orcid.org/0000-0001-8993-8748>),
+  Adam Black [aut] (ORCID: <https://orcid.org/0000-0001-5576-8701>)
+Maintainer: Cesar Barboza <c.barboza@mi-erasmusmc.nl>
+Repository: CRAN
+Date/Publication: 2026-05-04 19:10:02 UTC

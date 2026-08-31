@@ -1,0 +1,38 @@
+Package: BioMonTools
+Type: Package
+Title: Biomonitoring and Bioassessment Calculations
+Version: 1.3.2
+Authors@R: c(
+    person("Erik W.", "Leppo", 
+           email="Erik.Leppo@tetratech.com", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8026-7474")),
+    person("Jen", "Stamp", role = "ctb"),
+    person("John", "van Sickles", role = "ctb"),
+    person("Ben", "Block", role = "ctb")
+  )
+Maintainer: Erik W. Leppo <Erik.Leppo@tetratech.com>
+Description: An aid for manipulating data associated with biomonitoring and bioassessment. Calculations include metric calculation, marking of excluded taxa, 
+    subsampling, and multimetric index calculation.  Targeted communities are benthic macroinvertebrates, fish, periphyton, and coral.  As described in the Revised Rapid Bioassessment Protocols (Barbour et al. 1999) <https://archive.epa.gov/water/archive/web/html/index-14.html>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: dplyr, maps, rlang, stats, tidyselect, tidyr
+Suggests: DataExplorer, DT, ggplot2, knitr, lazyeval, readxl, reshape2,
+        rmarkdown, testthat, shiny, shinydashboard, shinydashboardPlus,
+        shinyjs, shinyWidgets, utils, writexl, shinyalert, stringr,
+        stringdist
+URL: https://github.com/leppott/BioMonTools
+BugReports: https://github.com/leppott/BioMonTools/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-04 21:02:53 UTC; Erik.Leppo
+Author: Erik W. Leppo [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8026-7474>),
+  Jen Stamp [ctb],
+  John van Sickles [ctb],
+  Ben Block [ctb]
+Repository: CRAN
+Date/Publication: 2026-08-04 22:30:02 UTC

@@ -1,0 +1,31 @@
+Package: ClusterRandSSAdj
+Title: Small Sample Adjustment of Cluster Randomized Trial
+Version: 1.0.0
+Authors@R: c(
+    person("Barry", "Eggleston", email = "beggleston@rti.org", role = c("aut", "cre")),
+	person("Rouba", "Chahine", email = "rchahine@rti.org", role = c("aut")),
+	person("Phil", "Westgate", email = "philip.westgate@uky.edu", role = c("aut")),
+	person("Nathan", "Vandergrift", email = "nvandergrift@rti.org", role = c("fnd")))
+Description: A set of functions to apply 'HC3' (FIRORES) and 'HC2' (ROOT) sandwich estimators to make small-sample
+             adjustments to standard errors of Generalized Linear Model statistics used to analyze cluster 
+			 randomized trial data.  The functions in the 'ClusterRandSSAdj' package make small-sample adjustments 
+			 to Generalized Linear Model parameter estimates, least squares means and pair-wise comparison of least 
+			 squares means, Type III tests, and estimates from linear combinations of Generalized Linear Model 
+			 parameters. For more details see Ford (2017) <doi:10.1002/bimj.201600182> and Westgate (2022) <doi:10.1177/17407745211063479>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: dplyr, car, emmeans, lmtest, Matrix, multcomp, sandwich
+Depends: R (>= 4.1)
+LazyData: true
+Suggests: MASS, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-22 17:06:29 UTC; beggleston
+Author: Barry Eggleston [aut, cre],
+  Rouba Chahine [aut],
+  Phil Westgate [aut],
+  Nathan Vandergrift [fnd]
+Maintainer: Barry Eggleston <beggleston@rti.org>
+Repository: CRAN
+Date/Publication: 2026-06-26 09:50:15 UTC

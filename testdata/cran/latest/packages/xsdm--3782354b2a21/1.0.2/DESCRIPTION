@@ -1,0 +1,45 @@
+Package: xsdm
+Type: Package
+Title: Demographic Approach to Species Distribution Model
+Version: 1.0.2
+Authors@R: c(
+    person("Emilio", "Berti", , "emilio.berti@idiv.de", role = c("aut"),
+           comment = c(ORCID = "0000-0001-9286-011X")),
+    person("Daniel C.", "Reuman", , "reuman@ku.edu", role = c("aut"),
+           comment = c(ORCID = "0000-0002-1407-8947")),
+    person("Angel Luis", "Robles Fernandez", , "a.l.robles.fernandez@gmail.com",
+    role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4674-4270"))
+  )
+Description: Integrates concepts of stochastic demography into species 
+    distribution modelling. The main approach maximizes a likelihood function 
+    based on environmental information and presence/absence records. 
+    This is used to reconstruct species' fundamental ecological niches and to
+    project their potential geographic range. Data requirements include species
+    presence/absence records and a timeseries of environmental data. 
+License: AGPL (>= 3)
+Imports: checkmate, expm, Rcpp (>= 1.1.0), RcppParallel (>= 5.1.10),
+        stats, terra, tibble, ucminfcpp, furrr, future, future.callr,
+        sobol, purrr
+LinkingTo: Rcpp, RcppParallel, ucminfcpp
+SystemRequirements: GNU make, C++17
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+LazyData: true
+LazyDataCompression: xz
+Suggests: clue, knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://xsdm-project.github.io/xsdm/,
+        https://xsdm-project.github.io/xsdm-devel/
+BugReports: https://github.com/xsdm-project/xsdm-devel/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-08-03 17:40:22 UTC; alrobles
+Author: Emilio Berti [aut] (ORCID: <https://orcid.org/0000-0001-9286-011X>),
+  Daniel C. Reuman [aut] (ORCID: <https://orcid.org/0000-0002-1407-8947>),
+  Angel Luis Robles Fernandez [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4674-4270>)
+Maintainer: Angel Luis Robles Fernandez <a.l.robles.fernandez@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-08 14:50:02 UTC

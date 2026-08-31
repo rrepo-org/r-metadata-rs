@@ -1,0 +1,37 @@
+Package: toolero
+Title: A Toolkit for Research Workflows
+Version: 0.4.0
+Authors@R: 
+    person("Erwin", "Lares", , "erwin.lares@wisc.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3284-828X"))
+Description: Provides utility functions to help researchers implement best
+    practices for their coding projects. Includes tools for reading and
+    cleaning data files, initializing R projects with a standard folder
+    structure and optional YAML configuration, creating 'Quarto' documents
+    from reproducible templates with optional sample data and custom styling,
+    detecting the execution context across interactive, 'Quarto', and
+    script-based workflows, splitting data frames into group-level output
+    files, applying analysis functions to each group with optional parallel
+    execution, and rendering syntactic tree diagrams as standalone PNG images
+    via 'Typst'.
+License: MIT + file LICENSE
+Depends: R (>= 4.2.0)
+Encoding: UTF-8
+Language: en-US
+Suggests: dplyr, furrr, future, knitr, pdftools, rmarkdown, spelling,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: cli, fs, glue, janitor, lifecycle, parallelly, purrr, quarto,
+        readr, renv, rlang, rvest, tibble, tidyr, usethis, withr, xml2,
+        yaml
+URL: https://github.com/erwinlares/toolero,
+        https://erwinlares.github.io/toolero/
+BugReports: https://github.com/erwinlares/toolero/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-16 17:49:07 UTC; lares
+Author: Erwin Lares [aut, cre] (ORCID: <https://orcid.org/0000-0002-3284-828X>)
+Maintainer: Erwin Lares <erwin.lares@wisc.edu>
+Repository: CRAN
+Date/Publication: 2026-07-16 19:40:02 UTC

@@ -1,0 +1,51 @@
+Package: lmmprobe
+Type: Package
+Title: Sparse High-Dimensional Linear Mixed Modeling with a Partitioned
+        Empirical Bayes ECM Algorithm
+Version: 0.1.0
+Date: 2026-02-27
+Authors@R: c(person(given = "Anja",
+                    family = "Zgodic",
+                    role = c("aut", "cre"),
+                    email = "anja.zgodic@gmail.com"),
+             person(given = "Ray",
+                    family = "Bai",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0001-7150-7229")),
+             person(given = "Jiajia",
+                    family = "Zhang",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0001-8281-8532")),
+             person(given = "Alex",
+                    family = "McLain",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-5475-0670")),
+             person(given = "Peter",
+                    family = "Olejua",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-2478-0908")))
+Description: Implements a partitioned Empirical Bayes Expectation Conditional
+    Maximization (ECM) algorithm for sparse high-dimensional linear mixed
+    modeling as described in Zgodic, Bai, Zhang, and McLain (2025)
+    <doi:10.1007/s11222-025-10649-z>. The package provides efficient estimation
+    and inference for mixed models with high-dimensional fixed effects.
+License: GPL (>= 2)
+URL: https://github.com/anjazgodic/lmmprobe
+BugReports: https://github.com/anjazgodic/lmmprobe/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.8.3), lme4 (>= 1.1-29), future.apply (>= 1.10.0)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, MASS
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2026-03-08 16:13:58 UTC; peter
+Author: Anja Zgodic [aut, cre],
+  Ray Bai [aut] (ORCID: <https://orcid.org/0000-0001-7150-7229>),
+  Jiajia Zhang [aut] (ORCID: <https://orcid.org/0000-0001-8281-8532>),
+  Alex McLain [aut] (ORCID: <https://orcid.org/0000-0002-5475-0670>),
+  Peter Olejua [aut] (ORCID: <https://orcid.org/0000-0002-2478-0908>)
+Maintainer: Anja Zgodic <anja.zgodic@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-12 09:00:09 UTC

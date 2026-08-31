@@ -1,0 +1,33 @@
+Package: ccar3
+Title: Canonical Correlation Analysis via Reduced Rank Regression
+Version: 0.1.2
+Date: 2026-06-12
+Authors@R: c(
+    person("Claire", "Donnat", , "cdonnat@uchicago.edu", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0001-7079-8060")),
+    person("Elena", "Tuzhilina", , "elena.tuzhilina@utoronto.ca", 
+           role = "aut",
+           comment = c(ORCID = "https://orcid.org/0000-0002-1898-6010")),
+    person("Zixuan", "Wu", , "zixuanwu@uchicago.edu", 
+           role = "aut",
+           comment = c(ORCID = "https://orcid.org/0009-0006-4745-0000")))
+Author: Claire Donnat [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7079-8060>),
+  Elena Tuzhilina [aut] (ORCID: <https://orcid.org/0000-0002-1898-6010>),
+  Zixuan Wu [aut] (ORCID: <https://orcid.org/0009-0006-4745-0000>)
+Maintainer: Claire Donnat <cdonnat@uchicago.edu>
+Description: Canonical correlation analysis (CCA) via reduced-rank regression with support for regularization and cross-validation. Several methods for estimating CCA in high-dimensional settings are implemented. The first set of methods, cca_rrr() (and variants: cca_group_rrr() and cca_graph_rrr()), assumes that one dataset is high-dimensional and the other is low-dimensional, while the second, ecca() (for Efficient CCA) assumes that both datasets are high-dimensional. For both methods, standard l1 regularization as well as group-lasso regularization are available. cca_graph_rrr further supports total variation regularization when there is a known graph structure among the variables of the high-dimensional dataset. In this case, the loadings of the canonical directions of the high-dimensional dataset are assumed  to be smooth on the graph. For more details see Donnat and Tuzhilina (2024)  <doi:10.48550/arXiv.2405.19539> and Wu, Tuzhilina and Donnat (2025) <doi:10.48550/arXiv.2507.11160>.
+Depends: R (>= 3.5.0)
+Imports: methods, magrittr, tidyr, dplyr, foreach, pracma, corpcor,
+        matrixStats, RSpectra
+Suggests: codetools, SMUT, igraph, testthat (>= 3.0.0), pkgload,
+        rrpack, Matrix, glmnet, CCA, CVXR, PMA, doParallel, crayon
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-06-12 19:18:09 UTC; clairedonnat
+Repository: CRAN
+Date/Publication: 2026-06-13 06:10:02 UTC

@@ -1,0 +1,31 @@
+Package: vismi
+Type: Package
+Title: Visual Diagnostics for Multiple Imputation
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Yongshi", family ="Deng", email = "agnes.yongshideng@gmail.com",
+           role = c("aut","cre"),comment =c(ORCID = "0000-0001-5845-859X")),
+    person(given = "Thomas", family = "Lumley", email = "t.lumley@auckland.ac.nz",
+           role = "ths")
+  ) 
+Description: A comprehensive suite of static and interactive visual diagnostics for assessing the quality of multiply-imputed data obtained from packages such as 'mixgb' and 'mice'. The package supports inspection of distributional characteristics, diagnostics based on masking observed values and comparing them with re-imputed values, and convergence diagnostics.
+URL: https://agnesdeng.github.io/vismi/
+BugReports: https://github.com/agnesdeng/vismi/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+Depends: R (>= 4.3.0)
+Imports: cli, data.table, dplyr, GGally, ggplot2 (>= 4.0.1), ggtext,
+        gridExtra, ggridges, patchwork, plotly, purrr, rlang, stats,
+        scales, tidyr, trelliscopejs
+Suggests: mice, mixgb (>= 2.2.3), ranger
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-24 08:40:08 UTC; agnes
+Author: Yongshi Deng [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5845-859X>),
+  Thomas Lumley [ths]
+Maintainer: Yongshi Deng <agnes.yongshideng@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-24 09:20:02 UTC

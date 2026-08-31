@@ -1,0 +1,34 @@
+Package: aplms
+Type: Package
+Title: Additive Partial Linear Models with Symmetric Autoregressive
+        Errors
+Version: 0.1.0
+Authors@R: c(
+  person("Shu Wei", "Chou-Chen", email = "shuwei.chou@ucr.ac.cr", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-5495-2486")),
+  person("Rodrigo A.", "Oliveira", email = "rodrigo.sef@hotmail.com", role = c("aut"), comment = c(ORCID = "0000-0003-3328-6669")),
+  person("Gilberto A.", "Paula", email = "giapaula@ime.usp.br", role = c("aut"), comment = c(ORCID = "0000-0002-9906-9942")),
+  person("Sebastian", "Sanchez Sandi", email = "sebastian.sanchezsandi@ucr.ac.cr ", role = c("ctb"))
+  )
+Maintainer: Shu Wei Chou-Chen <shuwei.chou@ucr.ac.cr>
+Description: Set of tools for fitting the additive partial linear models with symmetric autoregressive errors of order p, or APLMS-AR(p). This setup enables the modeling of a time series response variable using linear and nonlinear structures of a set of explanatory variables, with nonparametric components approximated by natural cubic splines or P-splines. It also accounts for autoregressive error terms with distributions that have lighter or heavier tails than the normal distribution. The package includes various error distributions, such as normal, generalized normal, Student's t, generalized Student's t, power-exponential, and Cauchy distributions. Chou-Chen, S.W., Oliveira, R.A., Raicher, I., Gilberto A. Paula (2024) <doi:10.1007/s00362-024-01590-w>.
+License: GPL-2
+URL: https://github.com/shuwei325/aplms
+BugReports: https://github.com/shuwei325/aplms/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0), mgcv
+Imports: MASS, Matrix, rlist, stats, methods, psych, rmutil
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-11-05 13:29:35 UTC; shuwe
+Author: Shu Wei Chou-Chen [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5495-2486>),
+  Rodrigo A. Oliveira [aut] (ORCID:
+    <https://orcid.org/0000-0003-3328-6669>),
+  Gilberto A. Paula [aut] (ORCID:
+    <https://orcid.org/0000-0002-9906-9942>),
+  Sebastian Sanchez Sandi [ctb]
+Repository: CRAN
+Date/Publication: 2025-11-07 14:00:25 UTC

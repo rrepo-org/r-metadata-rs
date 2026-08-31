@@ -1,0 +1,37 @@
+Package: PBSddesolve
+Version: 1.13.7
+Date: 2025-11-12
+Title: Solver for Delay Differential Equations
+Authors@R: c(
+   person("Alex", "Couture-Beil", role = "aut", email = "alex@mofo.ca"),
+   person(c("Jon", "T."), "Schnute", role = "aut", email = "schnutej@shaw.ca"),
+   person("Rowan", "Haigh", role = c("aut"), email = "rowan.haigh@dfo-mpo.gc.ca"),
+   person(c("Simon", "N."), "Wood", role = "aut", email = "s.wood@bath.ac.uk"),
+   person(c("Benjamin", "J."), "Cairns", role = "aut"),
+   person("Nicholas", "Boers", role = "ctb", email = "nboers@gmail.com"),
+   person("Nick", "Fisch", role = "cre", email = "nick.fisch@dfo-mpo.gc.ca"))
+Author: Alex Couture-Beil [aut],
+  Jon T. Schnute [aut],
+  Rowan Haigh [aut],
+  Simon N. Wood [aut],
+  Benjamin J. Cairns [aut],
+  Nicholas Boers [ctb],
+  Nick Fisch [cre]
+Maintainer: Nick Fisch <nick.fisch@dfo-mpo.gc.ca>
+Copyright: 2007-2025, Fisheries and Oceans Canada
+Depends: R (>= 4.2.0)
+Suggests: PBSmodelling
+NeedsCompilation: yes
+Description: Functions for solving systems of delay differential equations by
+   interfacing with numerical routines written by Simon N. Wood, including
+   contributions from Benjamin J. Cairns. These numerical routines first
+   appeared in Simon Wood's 'solv95' program. This package includes a vignette
+   and a complete user's guide. 'PBSddesolve' originally appeared on CRAN under
+   the name 'ddesolve'. That version is no longer supported. The current name
+   emphasizes a close association with other 'PBS' packages, particularly
+   'PBSmodelling'.
+License: GPL (>= 2)
+URL: https://github.com/pbs-software/pbs-ddesolve
+Packaged: 2025-11-13 18:16:20 UTC; FISCHN
+Repository: CRAN
+Date/Publication: 2025-11-14 12:50:17 UTC

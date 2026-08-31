@@ -1,0 +1,32 @@
+Package: nimbleQuad
+Title: Laplace Approximation, Quadrature, and Nested Deterministic
+        Approximation Methods for 'nimble'
+Description: Provides deterministic approximation methods for use with the 'nimble' package. These include Laplace approximation and higher-order extension of Laplace approximation using adaptive Gauss-Hermite quadrature (AGHQ), plus nested deterministic approximation methods related to the 'INLA' approach. Additional information is available in the NIMBLE User Manual and a 'nimbleQuad' tutorial, both available at <https://r-nimble.org/documentation.html>.
+Version: 1.4.0
+Date: 2026-01-08
+Maintainer: Christopher Paciorek <paciorek@stat.berkeley.edu>
+Authors@R: c(
+    person("Paul", "van Dam-Bates", role = "aut"),
+    person("Perry", "de Valpine", role = "aut"),
+    person("Wei", "Zhang", role = "aut"),
+    person("Christopher", "Paciorek", , "paciorek@stat.berkeley.edu", role = c("aut", "cre")),
+    person("Daniel", "Turek", role = "aut")
+    )
+Depends: R (>= 3.5.0), nimble (>= 1.4.0)
+Imports: methods, R6, pracma, polynom
+Suggests: testthat, mvQuad, faraway
+License: BSD_3_clause + file LICENSE | GPL (>= 2)
+Copyright: See COPYRIGHTS file.
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: quadratureRules.R quadratureGrids.R Laplace.R
+        buildNestedApprox.R runNestedApprox.R summaryUtils.R
+NeedsCompilation: no
+Packaged: 2026-01-09 17:32:12 UTC; paciorek
+Author: Paul van Dam-Bates [aut],
+  Perry de Valpine [aut],
+  Wei Zhang [aut],
+  Christopher Paciorek [aut, cre],
+  Daniel Turek [aut]
+Repository: CRAN
+Date/Publication: 2026-01-14 09:10:08 UTC

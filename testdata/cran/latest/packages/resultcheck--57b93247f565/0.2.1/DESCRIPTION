@@ -1,0 +1,29 @@
+Package: resultcheck
+Title: Result Stability Checks for Empirical R Projects
+Version: 0.2.1
+Authors@R: 
+    person("Dianyi", "Yang", , "dianyi.yang@politics.ox.ac.uk", role = c("aut", "cre", "ctb"), comment = c(ORCID = "0009-0004-4652-3429"))
+Description: 
+    Lightweight helpers for checking whether empirical results remain 
+    substantively unchanged across code revisions, platform differences, 
+    and package updates. The package supports regression-style testing of 
+    derived datasets, statistical model outputs, tables, and plots, helping 
+    researchers detect unintended result drift early and distinguish material 
+    from non-material changes in empirical workflows.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: withr, rprojroot, yaml
+Suggests: broom, knitr, rmarkdown, rstudioapi, testthat (>= 3.0.0),
+        waldo
+URL: https://github.com/kv9898/resultcheck/,
+        https://kv9898.github.io/resultcheck/
+BugReports: https://github.com/kv9898/resultcheck/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-05-08 12:38:06 UTC; Dianyi
+Author: Dianyi Yang [aut, cre, ctb] (ORCID:
+    <https://orcid.org/0009-0004-4652-3429>)
+Maintainer: Dianyi Yang <dianyi.yang@politics.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-05-08 16:40:02 UTC

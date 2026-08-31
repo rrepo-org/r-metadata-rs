@@ -1,0 +1,25 @@
+Package: Boom
+Version: 0.9.16
+Date: 2025-09-02
+Title: Bayesian Object Oriented Modeling
+Authors@R: c(person(
+           given = c("Steven", "L."),
+           family = "Scott",
+           role = c("aut", "cre"),
+           email = "steve.the.bayesian@gmail.com"))
+Description: A C++ library for Bayesian modeling, with an emphasis on Markov
+   chain Monte Carlo.  Although boom contains a few R utilities (mainly plotting
+   functions), its primary purpose is to install the BOOM C++ library on your
+   system so that other packages can link against it.
+License: LGPL-2.1 | file LICENSE
+Depends: R(>= 4.5.0)
+Imports: MASS
+Suggests: testthat
+Encoding: UTF-8
+SystemRequirements: GNU Make
+NeedsCompilation: yes
+Packaged: 2025-09-02 17:50:24 UTC; steve
+Author: Steven L. Scott [aut, cre]
+Maintainer: Steven L. Scott <steve.the.bayesian@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-09-02 19:30:22 UTC

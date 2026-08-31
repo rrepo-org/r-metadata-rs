@@ -1,0 +1,37 @@
+Package: gctsc
+Title: Gaussian and Student-t Copula Models for Count Time Series
+Version: 0.2.5
+Authors@R: 
+    c(person("Quynh", "Nguyen", role = c("aut", "cre"),
+             email = "nqnhu2209@gmail.com"))
+Description: Provides likelihood-based inference for Gaussian and Student-t 
+    copula models for univariate count time series. Supports Poisson, 
+    negative binomial, binomial, beta-binomial, and zero-inflated 
+    marginals with ARMA dependence structures. Includes simulation, 
+    maximum-likelihood estimation, residual diagnostics, and predictive 
+    inference. Implements Time Series Minimax Exponential Tilting (TMET) 
+    <doi:10.1016/j.csda.2026.108344>, an adaptation of minimax exponential 
+    tilting of Botev (2017) <doi:10.1111/rssb.12162>. Also provides a 
+    linear-cost implementation of the Geweke–Hajivassiliou–Keane (GHK) 
+    simulator following Masarotto and Varin (2012) <doi:10.1214/12-EJS721>, 
+    and the Continuous Extension (CE) approximation of Nguyen and 
+    De Oliveira (2025) <doi:10.1080/02664763.2025.2498502>. The package 
+    follows the S3 design philosophy of 'gcmr' but is developed independently.
+License: GPL-3
+Imports: Rcpp, Matrix, TruncatedNormal, VGAM, truncnorm, nlme, car
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://github.com/QNNHU/gctsc
+BugReports: https://github.com/QNNHU/gctsc/issues
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LazyData: false
+NeedsCompilation: yes
+Packaged: 2026-07-12 16:59:28 UTC; Nhu
+Author: Quynh Nguyen [aut, cre]
+Maintainer: Quynh Nguyen <nqnhu2209@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-12 17:30:02 UTC

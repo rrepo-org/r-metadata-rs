@@ -1,0 +1,39 @@
+Package: clusterGGM
+Type: Package
+Title: Sparse Gaussian Graphical Modeling with Variable Clustering
+Version: 0.1.1
+Date: 2025-10-21
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.9), dplyr, parallel, rlang, stats
+Suggests: mvtnorm
+LinkingTo: Rcpp, RcppEigen
+Description: Perform sparse estimation of a Gaussian graphical model (GGM) with node aggregation through variable clustering. Currently, the package implements the clusterpath estimator of the Gaussian graphical model (CGGM) (Touw, Alfons, Groenen & Wilms, 2025; <doi:10.48550/arXiv.2407.00644>).
+License: GPL (>= 3)
+URL: https://github.com/aalfons/clusterGGM
+BugReports: https://github.com/aalfons/clusterGGM/issues
+Authors@R: 
+    c(person("Daniel J.W.", "Touw", role = "aut",
+             comment = c(ORCID = "0000-0003-3074-5401")),
+      person("Andreas", "Alfons",
+             email = "alfons@ese.eur.nl",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-2513-3788")),
+      person("Ines", "Wilms", role = "aut",
+             comment = c(ORCID = "0000-0003-3269-4601")),
+      person("Patrick J.F.", "Groenen", role = "ths",
+             comment = c(ORCID = "0000-0001-6683-8971",
+                         "PhD advisor of Daniel J.W. Touw")))
+Author: Daniel J.W. Touw [aut] (ORCID: <https://orcid.org/0000-0003-3074-5401>),
+  Andreas Alfons [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2513-3788>),
+  Ines Wilms [aut] (ORCID: <https://orcid.org/0000-0003-3269-4601>),
+  Patrick J.F. Groenen [ths] (ORCID:
+    <https://orcid.org/0000-0001-6683-8971>, PhD advisor of Daniel J.W.
+    Touw)
+Maintainer: Andreas Alfons <alfons@ese.eur.nl>
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2025-10-21 17:03:36 UTC; alfons
+Repository: CRAN
+Date/Publication: 2025-10-22 07:40:24 UTC

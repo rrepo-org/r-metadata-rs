@@ -1,0 +1,33 @@
+Package: EWAScaller
+Title: Query and Analyse the 'EWAS Atlas' Database
+Version: 0.1.0
+Authors@R: person("Saadat", "Abu", email = "saadatabu1996@gmail.com", role = c("aut", "cre"))
+Description: Provides a client for the 'EWAS Atlas' web services
+    (<https://ngdc.cncb.ac.cn/ewas/>; Li et al. (2019)
+    <doi:10.1093/nar/gky1027>), allowing users to query epigenome-wide
+    association study (EWAS) data by CpG (cytosine-phosphate-guanine)
+    probe identifier, gene symbol, or genomic region, and to run trait,
+    Gene Ontology, KEGG (Kyoto Encyclopedia of Genes and Genomes) pathway,
+    and genomic location enrichment analyses on a set of CpG probes. Query
+    functions support concurrent, rate-limited requests to the remote
+    service. Results are returned as tidy data frames with dedicated
+    summary and plotting methods, including word clouds of enriched
+    'EWAS Atlas' trait terms.
+License: MIT + file LICENSE
+URL: https://github.com/SAADAT-Abu/EWAScaller
+BugReports: https://github.com/SAADAT-Abu/EWAScaller/issues
+Depends: R (>= 4.1.0)
+Imports: httr, jsonlite, digest, parallel, ggplot2, ggwordcloud, stats,
+        utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Encoding: UTF-8
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 09:13:18 UTC; saadat
+Author: Saadat Abu [aut, cre]
+Maintainer: Saadat Abu <saadatabu1996@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-05 08:40:09 UTC

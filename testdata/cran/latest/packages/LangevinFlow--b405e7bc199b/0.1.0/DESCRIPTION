@@ -1,0 +1,39 @@
+Package: LangevinFlow
+Type: Package
+Title: Langevin Diffusion Samplers with a C++ Backend
+Version: 0.1.0
+Authors@R: 
+    person(given = "Behrooz",
+           family = "Moosavi",
+           role = c("aut", "cre"),
+           email = "bem159@pitt.edu",
+           comment = c(ORCID = "0000-0003-4378-3167"))
+Description: Provides lightweight, dependency-minimal implementations of
+    Langevin diffusion based Markov chain Monte Carlo samplers, including
+    the Unadjusted Langevin Algorithm (ULA) and the Metropolis-Adjusted
+    Langevin Algorithm (MALA). The core sampling loops are written in C++
+    via 'Rcpp' and 'RcppArmadillo' for performance, while exposing a simple
+    R-level interface where the user supplies the gradient of the negative
+    log-density (and, for MALA, the negative log-density itself). Intended
+    as a building block for Bayesian inference and stochastic optimization
+    rather than a full probabilistic programming framework. Methods follow
+    Roberts and Tweedie (1996) <doi:10.2307/3318418> and Roberts and
+    Rosenthal (1998) <doi:10.1111/1467-9868.00123>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.0), stats, graphics
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, covr
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+URL: https://github.com/BehroozMoosavi/LangevinFlow
+BugReports: https://github.com/BehroozMoosavi/LangevinFlow/issues
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-05-26 20:57:48 UTC; behroozmoosavi
+Author: Behrooz Moosavi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4378-3167>)
+Maintainer: Behrooz Moosavi <bem159@pitt.edu>
+Repository: CRAN
+Date/Publication: 2026-05-29 12:30:03 UTC

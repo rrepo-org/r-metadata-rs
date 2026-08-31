@@ -1,0 +1,20 @@
+Package: GPpenalty
+Title: Penalized Likelihood in Gaussian Processes
+Version: 1.0.1
+Authors@R: 
+    person("Ayumi", "Mutoh", , "amutoh@ncsu.edu", role = c("aut", "cre"))
+Description: Implements maximum likelihood estimation for Gaussian processes, supporting both isotropic and separable models with predictive capabilities. Includes penalized likelihood estimation following Li and Sudjianto (2005, <doi:10.1198/004017004000000671>), with cross-validation guided by decorrelated prediction error (DPE) metric. DPE metric, motivated by Mahalanobis distance, serves as evaluation criteria that accounts for predictive uncertainty in tuning parameter selection (Mutoh, Booth, and Stallrich, 2025, <doi:10.48550/arXiv.2511.18111>). Designed specifically for small datasets.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, doParallel, foreach
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-11-26 13:54:35 UTC; ayumi
+Author: Ayumi Mutoh [aut, cre]
+Maintainer: Ayumi Mutoh <amutoh@ncsu.edu>
+Repository: CRAN
+Date/Publication: 2025-11-26 14:20:07 UTC

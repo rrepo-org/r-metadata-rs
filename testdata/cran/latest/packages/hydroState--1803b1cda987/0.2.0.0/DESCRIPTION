@@ -1,0 +1,49 @@
+Package: hydroState
+Title: Hidden Markov Modelling of Hydrological State Change
+Version: 0.2.0.0
+Authors@R: c(
+    person("Tim", "Peterson", email = "tim.peterson@monash.edu", role = c("aut", "cre","cph"), comment = c(ORCID = "0000-0002-1885-0826")),
+    person("Thomas", "Westfall", email = "thomas.westfall1@monash.edu", role = "aut", comment = c(ORCID = "0009-0000-0529-881X"))) 
+Maintainer: Tim Peterson <tim.peterson@monash.edu>
+Depends: R (>= 3.5.0)
+Description: Identifies regime changes in streamflow runoff not explained by variations in precipitation. The package builds a flexible set of Hidden Markov Models of annual, seasonal or monthly streamflow runoff with precipitation as a predictor. Suites of models can be built for a single site, ranging from one to three states and each with differing combinations of error models and auto-correlation terms. The most parsimonious model is easily identified by AIC, and useful for understanding catchment drought non-recovery: Peterson TJ, Saft M, Peel MC & John A (2021) <doi:10.1126/science.abd5085>.
+Imports: methods, DEoptim, sn, truncnorm, diagram, padr, zoo, graphics,
+        checkmate
+BugReports: https://github.com/peterson-tim-j/HydroState/issues
+URL: https://github.com/peterson-tim-j/HydroState,
+        https://peterson-tim-j.github.io/HydroState/
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+ByteCompile: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), V8
+Config/testthat/edition: 3
+Collate: 'abstracts.R' 'parameters.R' 'Qhat.boxcox.R' 'Qhat.burbidge.R'
+        'Qhat.log.R' 'Qhat.none.R' 'QhatModel.homo.normal.linear.R'
+        'QhatModel.homo.normal.linear.AR1.R'
+        'QhatModel.homo.gamma.linear.R'
+        'QhatModel.homo.gamma.linear.AR1.R'
+        'QhatModel.homo.normal.linear.AR2.R'
+        'QhatModel.homo.gamma.linear.AR2.R'
+        'QhatModel.homo.normal.linear.AR3.R'
+        'QhatModel.homo.gamma.linear.AR3.R'
+        'QhatModel.homo.skewedNormal.linear.R'
+        'QhatModel.homo.skewedNormal.linear.AR1.R'
+        'QhatModel.homo.skewedNormal.linear.AR2.R'
+        'QhatModel.homo.skewedNormal.linear.AR3.R'
+        'QhatModel.subAnnual.homo.gamma.linear.R'
+        'QhatModel.subAnnual.homo.gamma.linear.AR1.R'
+        'QhatModel.subAnnual.homo.gamma.linear.AR2.R'
+        'QhatModel.subAnnual.homo.gamma.linear.AR3.R'
+        'RhatModel.homo.normal.linear.R' 'hydroState-package.R'
+        'markov.annualHomogeneous.R' 'hydroState.R'
+        'hydroState.allModels.R' 'hydroState.subAnnual.allModels.R'
+        'markov.annualHomogeneous.flickering.R' 'wrapper.R'
+NeedsCompilation: no
+Packaged: 2025-09-16 01:32:24 UTC; twes0006
+Author: Tim Peterson [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-1885-0826>),
+  Thomas Westfall [aut] (ORCID: <https://orcid.org/0009-0000-0529-881X>)
+Repository: CRAN
+Date/Publication: 2025-09-22 07:40:02 UTC

@@ -1,0 +1,28 @@
+Package: modelscompete4
+Title: Compare Nested and Non-Nested Structural Equation Models
+Version: 0.2.6
+Date: 2026-04-23
+Authors@R: 
+    person("Jerf", "Yeung", email = "ssjerf@gmail.com", role = c("aut", "cre"))
+Description: A comprehensive package for comparing multiple Structural
+    Equation Models (SEM). Supports both nested and non-nested
+    model comparisons, chi-square difference tests, and extraction
+    of multiple fit indices including AIC (Akaike Information Criterion),
+    BIC (Bayesian Information Criterion), CFI (Comparative Fit Index),
+    TLI (Tucker-Lewis Index), RMSEA (Root Mean Square Error of Approximation),
+    and SRMR (Standardized Root Mean Square Residual). Built on top of the
+    'lavaan' package for seamless SEM model comparison workflows. The Vuong test
+    (Vuong, 1989) for non-nested models is used as the statistical test.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: lavaan (>= 0.6), stats, boot, ggplot2, nonnest2, tidyr
+Suggests: testthat (>= 3.0.0)
+URL: https://github.com/ssjerf-stack/modelscompete4
+BugReports: https://github.com/ssjerf-stack/modelscompete4/issues
+NeedsCompilation: no
+Packaged: 2026-04-22 18:45:29 UTC; jerf
+Author: Jerf Yeung [aut, cre]
+Maintainer: Jerf Yeung <ssjerf@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-24 20:10:02 UTC

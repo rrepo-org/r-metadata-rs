@@ -1,0 +1,32 @@
+Package: decorrelate
+Type: Package
+Title: Decorrelation Projection Scalable to High Dimensional Data
+Version: 0.1.6.4
+Date: 2025-06-18
+Authors@R: 
+  c(person(given = "Gabriel",
+           family = "Hoffman",
+           role = c("aut", "cre"),
+           email = "gabriel.hoffman@mssm.edu",
+           comment = c(ORCID = "0000-0002-0957-0224")))
+Description: Data whitening is a widely used preprocessing step to remove correlation structure since statistical models often assume independence. Here we use a probabilistic model of the observed data to apply a whitening transformation. This Gaussian Inverse Wishart Empirical Bayes model substantially reduces computational complexity, and regularizes the eigen-values of the sample covariance matrix to improve out-of-sample performance.
+License: Artistic-2.0
+Encoding: UTF-8
+URL: https://gabrielhoffman.github.io/decorrelate/
+BugReports: https://github.com/GabrielHoffman/decorrelate/issues
+Suggests: knitr, pander, whitening, CCA, yacca, mvtnorm, ggplot2,
+        cowplot, colorRamps, RUnit, latex2exp, clusterGeneration,
+        rmarkdown
+Depends: R (>= 4.2.0), methods
+Imports: Rfast, irlba, graphics, Rcpp, CholWishart, Matrix, utils,
+        stats
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2025-07-18 12:21:58 UTC; gabrielhoffman
+Author: Gabriel Hoffman [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0957-0224>)
+Maintainer: Gabriel Hoffman <gabriel.hoffman@mssm.edu>
+Repository: CRAN
+Date/Publication: 2025-07-18 13:10:03 UTC

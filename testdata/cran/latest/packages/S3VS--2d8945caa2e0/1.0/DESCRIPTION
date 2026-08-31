@@ -1,0 +1,20 @@
+Package: S3VS
+Type: Package
+Title: Structured Screen-and-Select Variable Selection in Linear,
+        Generalized Linear, and Survival Models
+Version: 1.0
+Date: 2025-12-30
+Authors@R: c( person("Nilotpal", "Sanyal", role = c("aut", "cre"), email = "nsanyal@utep.edu"), person("Padmore N.", "Prempeh", role = c("aut"), email = "pprempeh@albany.edu") )
+Maintainer: Nilotpal Sanyal <nsanyal@utep.edu>
+Description: Performs variable selection using the structured screen-and-select (S3VS) framework in linear models, generalized linear models with binary data, and survival models such as the Cox model and accelerated failure time (AFT) model.
+License: GPL (>= 2)
+Imports: glmnet, ncvreg, survival, mombf, future.apply, eha, pec,
+        aftgee, afthd
+Suggests: rjags, knitr, doParallel
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-01-09 13:00:43 UTC; nsanyal
+Author: Nilotpal Sanyal [aut, cre],
+  Padmore N. Prempeh [aut]
+Repository: CRAN
+Date/Publication: 2026-01-13 18:00:14 UTC

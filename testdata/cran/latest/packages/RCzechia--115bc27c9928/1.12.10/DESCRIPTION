@@ -1,0 +1,35 @@
+Package: RCzechia
+Type: Package
+Title: Spatial Objects of the Czech Republic
+Version: 1.12.10
+Date: 2026-06-04
+Authors@R: c(
+    person(given = "Jindra", family = "Lacko", email = "jindra.lacko@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0375-5156")),
+    person(given = "Nick", family = "Bearman", role = "rev",
+           comment = c(ORCID = "0000-0002-8396-4061", "Nick reviewed the package for JOSS, providing helpful comments leading to significant improvement of the package."))
+  )
+Description: Administrative regions and other spatial objects of the Czech Republic.
+URL: https://rczechia.jla-data.net
+BugReports: https://github.com/jlacko/RCzechia/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0), sf
+Imports: terra, curl, httr, jsonlite, magrittr
+Suggests: units, ggplot2, tidyterra, knitr, testthat, roxygen2,
+        rmarkdown, dplyr, s2, lwgeom, covr, czso
+SystemRequirements: GDAL (>= 2.2.3), GEOS (>= 3.6.2), PROJ (>= 4.9.3)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-06-04 09:08:01 UTC; jindra
+Author: Jindra Lacko [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-0375-5156>),
+  Nick Bearman [rev] (ORCID: <https://orcid.org/0000-0002-8396-4061>,
+    Nick reviewed the package for JOSS, providing helpful comments
+    leading to significant improvement of the package.)
+Maintainer: Jindra Lacko <jindra.lacko@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-04 09:30:08 UTC

@@ -1,0 +1,71 @@
+Package: joinery
+Type: Package
+Title: Heuristic Index-Based Record Linkage
+Version: 1.0.1
+Authors@R: person("Eduard", "Brüll", email = "eduard.bruell@zew.de", role = c("aut", "cre"))
+Description: Links records that refer to the same entity across sources that
+    share no common key, such as people, firms, or addresses with spelling
+    variation, abbreviations, or reordered words. Linkage is described
+    declaratively as a strategy that normalises, tokenises, phonetically
+    encodes, weights, and blocks each field; candidate pairs are then scored
+    by the rarity-weighted overlap of their tokens and every score is
+    attributed back to individual tokens for explainability. Strategies
+    compose into staged pipelines of exact, fuzzy, and optional
+    embedding-based matching that carry unmatched records forward and resolve
+    entities as connected components. The same strategy runs on an in-memory
+    'data.table' backend or an out-of-core 'DuckDB' backend, and diagnostic
+    and calibration tools help tune a strategy and filter false positives.
+    The token-retrieval heuristic follows Doherr (2023)
+    <doi:10.2139/ssrn.4326848>.
+URL: https://edubruell.github.io/joinery/,
+        https://github.com/edubruell/joinery
+BugReports: https://github.com/edubruell/joinery/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Imports: S7, rlang (>= 1.1.0), data.table, igraph, stringi, phonics,
+        lubridate, cli, glue, tinyplot, graphics
+Collate: 'joinery-package.R' 'import-standalone-purrr.R'
+        'import-standalone-types-check.R'
+        'import-standalone-obj-type.R' 'internal_validation.R'
+        'internal_fanout.R' 'internal_progress.R' 'internal_chunking.R'
+        'internal_staging.R' 'strategy_step.R' 'strategy_smoothing.R'
+        'strategy_search.R' 'strategy_blocking.R'
+        'strategy_embedding.R' 'strategy_exact.R' 'generics_core.R'
+        'generics_calibration.R' 'generics_embedding.R'
+        'methods_datatable_prepare.R' 'methods_datatable_resolve.R'
+        'methods_datatable_materialize.R' 'methods_datatable_dedup.R'
+        'methods_datatable_search.R' 'methods_datatable_multistage.R'
+        'methods_datatable_inspect.R' 'embedding_cache.R'
+        'embedding_methods_datatable.R' 'exact_methods_datatable.R'
+        'methods_tibble.R' 'embedding_methods_tibble.R'
+        'preparer_word.R' 'preparer_tokens.R' 'duckdb_control.R'
+        'methods_duckdb_batch.R' 'methods_duckdb_prepare.R'
+        'methods_duckdb_resolve.R' 'methods_duckdb_materialize.R'
+        'methods_duckdb_dedup.R' 'methods_duckdb_search.R'
+        'methods_duckdb_multistage.R' 'methods_duckdb_inspect.R'
+        'preparer_stopwords.R' 'embedding_methods_duckdb.R'
+        'exact_methods_duckdb.R' 'calibration_aip.R'
+        'generics_diagnostic.R' 'diagnostic_classes.R'
+        'calibration_classes.R' 'diagnostic_recommendations.R'
+        'diagnostic_summarise.R' 'diagnostic_audit.R'
+        'diagnostic_compare.R' 'diagnostic_explain.R'
+        'diagnostic_sample.R' 'diagnostic_rarity.R' 'plan_strategy.R'
+        'calibration_labelling.R' 'calibration_features.R'
+        'calibration_features_embedding.R' 'calibration_filter.R'
+        'calibration_tidymodels.R' 'calibration_dispatch.R'
+        'calibration_calibrate.R' 'calibration_recipe.R'
+        'diagnostic_plots.R' 'data.R'
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+LazyData: true
+VignetteBuilder: knitr
+Suggests: duckdb, DBI, dbplyr, dplyr, tidyllm, tibble, stringdist,
+        generics, parsnip, recipes, workflows, yardstick, probably,
+        testthat (>= 3.0.0), withr, knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2026-07-07 14:02:43 UTC; ebr
+Author: Eduard Brüll [aut, cre]
+Maintainer: Eduard Brüll <eduard.bruell@zew.de>
+Repository: CRAN
+Date/Publication: 2026-07-07 19:40:19 UTC

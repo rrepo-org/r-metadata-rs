@@ -1,0 +1,53 @@
+Package: smatr
+Version: 3.5-1
+Title: (Standardised) Major Axis Estimation and Testing Routines
+Authors@R: c(
+    person("David", "Warton", email = "david.warton@unsw.edu.au", role = "aut"),
+    person("Remko", "Duursma", email = "remkoduursma@gmail.com", role = "aut"),
+    person("Daniel", "Falster", email = "daniel.falster@unsw.edu.au", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-9814-092X")),
+    person("Sara", "Taskinen", role = "aut"),
+     person(given = "Fonti",
+             family = "Kar",
+             role = "aut",
+             email = "f.kar@unsw.edu.au",
+             comment = c(ORCID = "0000-0002-2760-3974"))
+    )
+Description: Methods for fitting bivariate lines in
+    allometry using the major axis (MA) or standardised major axis (SMA), and
+    for making inferences about such lines. The available methods of inference
+    include confidence intervals and one-sample tests for slope and elevation,
+    testing for a common slope or elevation amongst several allometric lines,
+    constructing a confidence interval for a common slope or elevation, and
+    testing for no shift along a common axis, amongst several samples. 
+    See Warton et al. 2012 <doi:10.1111/j.2041-210X.2011.00153.x> for methods description.
+License: GPL (>= 3)
+URL: https://github.com/traitecoevo/smatr,
+        https://traitecoevo.github.io/smatr/
+Imports: dplyr, tidyr, stringr, rlang, magrittr, ggplot2
+Collate: 'alpha.fun.R' 'b.com.est.R' 'coef.sma.R' 'com.ci.R'
+        'confint.sma.R' 'defineAxis.R' 'elev.com.R' 'elev.test.R'
+        'fitted.sma.R' 'ggplot.sma.R' 'huber.M.R' 'leaflife.R'
+        'leafmeas.R' 'line.cis.R' 'logLik.sma.R' 'lr.b.com.R' 'ma.R'
+        'makeLogMinor.R' 'meas.est.R' 'multcompmatrix.R' 'nicePlot.R'
+        'plot.sma.R' 'predict.sma.R' 'print.sma.R' 'residuals.sma.R'
+        'robust.factor.R' 'seqLog.R' 'shift.com.R' 'slope.com.R'
+        'slope.test.R' 'sma.R' 'smatr.R' 'summary.sma.R' 'utils.R'
+Suggests: covr, knitr, rmarkdown, markdown, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+BugReports: https://github.com/traitecoevo/smatr/issues
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-27 20:32:05 UTC; z2209343
+Author: David Warton [aut],
+  Remko Duursma [aut],
+  Daniel Falster [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9814-092X>),
+  Sara Taskinen [aut],
+  Fonti Kar [aut] (ORCID: <https://orcid.org/0000-0002-2760-3974>)
+Maintainer: Daniel Falster <daniel.falster@unsw.edu.au>
+Repository: CRAN
+Date/Publication: 2026-07-28 09:10:02 UTC

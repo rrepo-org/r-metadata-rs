@@ -1,0 +1,33 @@
+Package: bitfield
+Type: Package
+Title: Handle Bitfields to Record Meta Data
+Version: 1.0.0
+Authors@R: c(
+    person("Steffen", "Ehrmann", role = c("aut", "cre"), 
+           email = "steffen.ehrmann@posteo.de", 
+           comment = c(ORCID = "0000-0002-2958-0796"))
+    )
+Description: Record algorithmic and analytic meta data along a workflow to store 
+    that in a bitfield, which can be published alongside any (modelled) data 
+    products.
+URL: https://github.com/bitfloat/bitfield,
+        https://bitfloat.github.io/bitfield/
+BugReports: https://github.com/bitfloat/bitfield/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: base64enc, checkmate, codetools, dplyr, gh, gitcreds, glue,
+        httr, jsonlite, methods, purrr, rlang, stringr, terra, tibble,
+        tidyr, yaml
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 4.1.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-16 19:31:19 UTC; steff
+Author: Steffen Ehrmann [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-2958-0796>)
+Maintainer: Steffen Ehrmann <steffen.ehrmann@posteo.de>
+Repository: CRAN
+Date/Publication: 2026-02-16 19:50:08 UTC

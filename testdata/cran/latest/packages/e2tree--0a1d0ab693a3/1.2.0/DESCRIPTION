@@ -1,0 +1,40 @@
+Package: e2tree
+Title: Explainable Ensemble Trees
+Version: 1.2.0
+Authors@R: c(
+    person(given = "Massimo",
+           family = "Aria",
+           role = c("aut", "cre", "cph"),
+           email = "aria@unina.it",
+           comment = c(ORCID = "0000-0002-8517-9411")),
+           person(given = "Agostino",
+           family = "Gnasso",
+           role = c("aut", "cph"),
+           email = "agostino.gnasso@unina.it",
+           comment = c(ORCID = "0000-0002-8046-3923"))
+           )
+Description: The Explainable Ensemble Trees 'e2tree' approach has been proposed by Aria et al. (2024) <doi:10.1007/s00180-022-01312-6>. It aims to explain and interpret decision tree ensemble models using a single tree-like structure. 'e2tree' is a new way of explaining an ensemble tree trained through 'randomForest' or 'xgboost' packages.
+License: MIT + file LICENSE
+URL: https://github.com/massimoaria/e2tree
+BugReports: https://github.com/massimoaria/e2tree/issues
+Encoding: UTF-8
+Imports: ape, dplyr, parallel, future.apply, ggplot2, Matrix,
+        partitions, purrr, rpart.plot, tidyr, Rcpp
+LazyData: true
+LinkingTo: Rcpp
+Suggests: doParallel, foreach, htmlwidgets, jsonlite, knitr, partykit,
+        gbm, lightgbm, randomForest, ranger, xgboost, rmarkdown,
+        RSpectra, testthat (>= 3.0.0), visNetwork
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-05-15 12:20:50 UTC; massimoaria
+Author: Massimo Aria [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8517-9411>),
+  Agostino Gnasso [aut, cph] (ORCID:
+    <https://orcid.org/0000-0002-8046-3923>)
+Maintainer: Massimo Aria <aria@unina.it>
+Repository: CRAN
+Date/Publication: 2026-05-15 13:00:02 UTC

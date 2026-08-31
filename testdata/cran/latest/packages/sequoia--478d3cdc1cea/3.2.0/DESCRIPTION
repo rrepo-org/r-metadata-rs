@@ -1,0 +1,26 @@
+Package: sequoia
+Type: Package
+Title: Pedigree Inference from SNPs
+Version: 3.2.0
+Date: 2025-12-30
+Authors@R: c(person("Jisca", "Huisman", email = "jisca.huisman@gmail.com",
+    role = c("aut", "cre")))
+Author: Jisca Huisman [aut, cre]
+Maintainer: Jisca Huisman <jisca.huisman@gmail.com>
+Description: Multi-generational pedigree inference from incomplete data on
+    hundreds of SNPs, including parentage assignment and sibship clustering.
+    See Huisman (2017) (<DOI:10.1111/1755-0998.12665>) for more information.
+License: GPL-2
+URL: https://jiscah.github.io/
+LazyData: TRUE
+Imports: plyr (>= 1.8.0), stats, utils, graphics, cli
+RoxygenNote: 7.3.3
+Suggests: openxlsx, knitr, rmarkdown, bookdown, kinship2, R.rsp,
+        hexbin, data.table, vcfR, adegenet
+VignetteBuilder: knitr, R.rsp
+NeedsCompilation: yes
+Depends: R (>= 3.5.0)
+SystemRequirements: Fortran95
+Packaged: 2026-01-09 15:56:34 UTC; jisca
+Repository: CRAN
+Date/Publication: 2026-01-09 16:40:02 UTC

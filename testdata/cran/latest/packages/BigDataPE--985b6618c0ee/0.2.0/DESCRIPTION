@@ -1,0 +1,31 @@
+Package: BigDataPE
+Title: Secure and Intuitive Access to 'BigDataPE' 'API' Datasets
+Version: 0.2.0
+Date: 2026-07-14
+Authors@R: c(
+            person("André", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+            person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+            person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"),
+            person("Marcos", "Wasiliew", email = "marcos.wasilew@gmail.com", role = "aut"),
+            person("Carlos", "Amorim", email = "carlos.agaf@ufpe.br", role = "aut"))
+Description: Designed to simplify the process of retrieving datasets from the 'Big Data PE' platform using secure token-based authentication. It provides functions for securely storing, retrieving, and managing tokens associated with specific datasets, as well as fetching and processing data. The data-retrieval engine is provided by the generic 'apifetch' package, which 'BigDataPE' configures for the Big Data PE service.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: apifetch (>= 0.1.0)
+URL: <https://strategicprojects.github.io/BigDataPE/>,
+        <https://github.com/StrategicProjects/bigdatape>
+Suggests: knitr, rmarkdown, tidyr, dplyr, tibble
+VignetteBuilder: knitr
+Config/Needs/website: tidyverse/tidytemplate
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-15 12:05:45 UTC; leite
+Author: André Leite [aut, cre],
+  Hugo Vasconcelos [aut],
+  Diogo Bezerra [aut],
+  Marcos Wasiliew [aut],
+  Carlos Amorim [aut]
+Maintainer: André Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-07-15 12:30:02 UTC

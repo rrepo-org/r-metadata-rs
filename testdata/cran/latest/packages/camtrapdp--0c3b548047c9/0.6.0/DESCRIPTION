@@ -1,0 +1,52 @@
+Package: camtrapdp
+Title: Read and Manipulate Camera Trap Data Packages
+Version: 0.6.0
+Date: 2026-07-31
+Authors@R: c(
+    person("Peter", "Desmet", , "peter.desmet@inbo.be", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8442-8025", affiliation = "Research Institute for Nature and Forest (INBO)")),
+    person("Sanne", "Govaert", , "sanne.govaert@inbo.be", role = "aut",
+           comment = c(ORCID = "0000-0002-8939-1305", affiliation = "Research Institute for Nature and Forest (INBO)")),
+    person("Pieter", "Huybrechts", , "pieter.huybrechts@inbo.be", role = "aut",
+           comment = c(ORCID = "0000-0002-6658-6062", affiliation = "Research Institute for Nature and Forest (INBO)")),
+    person("Damiano", "Oldoni", , "damiano.oldoni@inbo.be", role = "aut",
+           comment = c(ORCID = "0000-0003-3445-7562", affiliation = "Research Institute for Nature and Forest (INBO)")),
+    person("Research Institute for Nature and Forest (INBO)", role = "cph",
+           comment = c(ROR = "00j54wy13")),
+    person("Research Foundation - Flanders", role = "fnd",
+           comment = "https://lifewatch.be")
+  )
+Description: Read and manipulate Camera Trap Data Packages ('Camtrap DP').
+    'Camtrap DP' (<https://camtrap-dp.tdwg.org>) is a data exchange format
+    for camera trap data. With 'camtrapdp' you can read, filter and
+    transform data (including to Darwin Core) before further analysis in
+    e.g. 'camtraptor' or 'camtrapR'.
+License: MIT + file LICENSE
+URL: https://github.com/inbo/camtrapdp,
+        https://inbo.github.io/camtrapdp/
+BugReports: https://github.com/inbo/camtrapdp/issues
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr (>= 1.2.0), EML, frictionless (>= 1.3.0), memoise,
+        purrr, readr, rlang, stringr, uuid
+Suggests: jsonlite, lubridate, testthat (>= 3.0.0), tibble, xml2
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-31 12:17:54 UTC; peter_desmet
+Author: Peter Desmet [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8442-8025>, affiliation: Research
+    Institute for Nature and Forest (INBO)),
+  Sanne Govaert [aut] (ORCID: <https://orcid.org/0000-0002-8939-1305>,
+    affiliation: Research Institute for Nature and Forest (INBO)),
+  Pieter Huybrechts [aut] (ORCID:
+    <https://orcid.org/0000-0002-6658-6062>, affiliation: Research
+    Institute for Nature and Forest (INBO)),
+  Damiano Oldoni [aut] (ORCID: <https://orcid.org/0000-0003-3445-7562>,
+    affiliation: Research Institute for Nature and Forest (INBO)),
+  Research Institute for Nature and Forest (INBO) [cph] (ROR:
+    <https://ror.org/00j54wy13>),
+  Research Foundation - Flanders [fnd] (https://lifewatch.be)
+Maintainer: Peter Desmet <peter.desmet@inbo.be>
+Repository: CRAN
+Date/Publication: 2026-07-31 13:20:02 UTC

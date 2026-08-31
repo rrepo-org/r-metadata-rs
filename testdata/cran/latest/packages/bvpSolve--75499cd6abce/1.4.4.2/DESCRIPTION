@@ -1,0 +1,45 @@
+Package: bvpSolve
+Version: 1.4.4.2
+Title: Solvers for Boundary Value Problems of Differential Equations
+Authors@R: c(person("Karline","Soetaert", role = "aut", 
+                     email = "karline.soetaert@nioz.nl", 
+		     comment = c(ORCID = "0000-0003-4603-7100")),
+             person("Jeff","Cash", role = "aut", 
+                     email = "j.cash@imperial.ac.uk"),
+             person("Francesca","Mazzia", role = "aut", 
+                     email = "mazzia@dm.uniba.it"),
+             person("Uri M.","Ascher", role = "ctb", 
+                     comment = "files colsysR.f, colnewR.f, coldaeR.f"),
+             person("G.","Bader", role = "ctb", 
+                     comment = "file colnewR.f"),
+             person("J.","Christiansen", role = "ctb", 
+                     comment = "file colsysR.f"),
+             person("Robert R.","Russell", role = "ctb", 
+                     comment = "file colsysR.f"),
+             person("George","Helffrich", role = c("cre","ctb"),
+                     email = "ghfbsd@gmail.com", 
+                     comment = c(ORCID = "0000-0002-7363-4552")))
+Maintainer: George Helffrich <ghfbsd@gmail.com>
+Depends: R (>= 2.01), deSolve
+Imports: rootSolve, stats, graphics, grDevices
+Description: Functions that solve boundary value problems ('BVP') of systems of ordinary
+             differential equations ('ODE') and differential algebraic equations ('DAE').
+             The functions provide an interface to the FORTRAN functions
+             'twpbvpC', 'colnew/colsys', and an R-implementation of the shooting method.
+             Mazzia, F., J.R. Cash and K. Soetaert (2014),
+             "Solving Boundary Value Problems in the Open Source Software R:
+             Package bvpSolve" <doi:10.7494/OpMath.2014.34.2.387>. 
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2026-08-19 14:01:53 UTC; george
+Repository: CRAN
+Date/Publication: 2026-08-20 16:52:10 UTC
+Author: Karline Soetaert [aut] (ORCID: <https://orcid.org/0000-0003-4603-7100>),
+  Jeff Cash [aut],
+  Francesca Mazzia [aut],
+  Uri M. Ascher [ctb] (files colsysR.f, colnewR.f, coldaeR.f),
+  G. Bader [ctb] (file colnewR.f),
+  J. Christiansen [ctb] (file colsysR.f),
+  Robert R. Russell [ctb] (file colsysR.f),
+  George Helffrich [cre, ctb] (ORCID:
+    <https://orcid.org/0000-0002-7363-4552>)

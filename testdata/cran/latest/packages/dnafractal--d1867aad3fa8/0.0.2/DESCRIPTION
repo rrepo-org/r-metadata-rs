@@ -1,0 +1,19 @@
+Package: dnafractal
+Version: 0.0.2
+Date: 2025-05-09
+Title: Generates a Fractal Image of a DNA Sequence
+Authors@R: person("Matthew", "Cserhati", email = "matthew.cserhati@cui.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3673-9152"))
+Maintainer: Matthew Cserhati <matthew.cserhati@cui.edu>
+Description: The function takes a DNA sequence, a start point, an end point in the sequence, dot size and dot color and draws a fractal image of the sequence. The fractal starts in the center of the canvas. The image is drawn by moving base by base along the sequence and dropping a midpoint between the actual point and the corner designated by the actual base. For more details see Jeffrey (1990) <doi:10.1093/nar/18.8.2163>, Hill, Schisler, and Singh (1992) <doi:10.1007/BF00178602>, and Löchel and Heider (2021) <doi:10.1016/j.csbj.2021.11.008>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: stringr, DescTools
+NeedsCompilation: no
+Packaged: 2025-05-09 18:33:52 UTC; E00358676
+Author: Matthew Cserhati [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3673-9152>)
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-05-09 22:50:07 UTC

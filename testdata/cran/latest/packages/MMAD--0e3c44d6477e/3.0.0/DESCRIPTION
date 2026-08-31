@@ -1,0 +1,33 @@
+Package: MMAD
+Title: Minorization-Maximization via Assembly-Decomposition Technology
+Version: 3.0.0
+Authors@R: 
+    c(person(given = "Xifen", family = "Huang", role = "aut", email = "xf_yellow@126.com"),
+      person(given = "Jinfeng", family = "Xu",   role = "aut", email = "jinfenxu@cityu.edu.hk"),
+      person(given = "Jiaqi",  family = "Gu",    role = c("aut", "cre"), email = "jiaqigu@usf.edu"))
+Description: A formula-driven framework for maximizing target functions
+    via the minorization-maximization (MM) algorithm. The package
+    represents the target as a symbolic expression tree, infers its
+    curvature via disciplined-convex-programming rules, and constructs
+    a separable surrogate at each iterate using only Jensen's
+    inequality and the supporting hyperplane. The driver maximizes the
+    surrogate via block-coordinate Newton with line search, falling
+    back to a multivariate step on any non-separable residue. A
+    formula interface accepts standard R expressions (including
+    `sum()` reductions and `X %*% theta` design-matrix products) so
+    statistical models such as Poisson regression can be written in
+    one line.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 2.10)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-07 14:22:34 UTC; jiaqigu
+Author: Xifen Huang [aut],
+  Jinfeng Xu [aut],
+  Jiaqi Gu [aut, cre]
+Maintainer: Jiaqi Gu <jiaqigu@usf.edu>
+Repository: CRAN
+Date/Publication: 2026-07-07 15:00:02 UTC

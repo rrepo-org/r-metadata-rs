@@ -1,0 +1,47 @@
+Package: RtForecastR
+Type: Package
+Title: Real-Time Effective Reproduction Number Estimation and
+        Forecasting
+Version: 0.1.1
+Authors@R: c(
+    person("Raj", "Subedi", email = "rajsubediresearch@gmail.com", role = c("aut", "cre", "cph"),
+           comment = "Copyright holder for all files except epiFilter.R, epiSmoother.R, and the original recursPredict.R logic (see Kris V. Parag entry); author of R/recursPredict.R's configurable-grid maxI extension and R/recursPredictQuantiles.R"),
+    person("Kris V.", "Parag", role = c("ctb", "cph"),
+           comment = "Author/copyright holder of the original EpiFilter algorithm (epiFilter, epiSmoother, recursPredict); files R/epiFilter.R, R/epiSmoother.R and R/recursPredict.R are unmodified or lightly modified ports of that work, released under GPL-3"))
+Description: Filtered (real-time/causal) and smoothed (retrospective)
+    estimation of the time-varying effective reproduction number (Rt)
+    from case-count time series, using the EpiFilter algorithm of
+    Parag (2021) <doi:10.1371/journal.pcbi.1009347>, together with a
+    one-step-ahead in-sample prediction check, a genuine out-of-sample
+    one-step forecast with predictive intervals, elimination
+    probability P(Rt < 1), and forecast calibration metrics (mean
+    absolute error, mean squared error, root mean squared error,
+    empirical coverage, and the weighted interval score of Bracher
+    et al. (2021) <doi:10.1371/journal.pcbi.1008618>).
+    Disease-agnostic: works for any pathogen given a known generation
+    interval.
+Language: en-US
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+Imports: graphics, grDevices, stats, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+RoxygenNote: 8.0.0
+VignetteBuilder: knitr
+URL: https://github.com/rajsubediresearch/RtForecastR
+BugReports: https://github.com/rajsubediresearch/RtForecastR/issues
+NeedsCompilation: no
+Packaged: 2026-08-20 21:39:41 UTC; razsu
+Author: Raj Subedi [aut, cre, cph] (Copyright holder for all files except
+    epiFilter.R, epiSmoother.R, and the original recursPredict.R logic
+    (see Kris V. Parag entry); author of R/recursPredict.R's
+    configurable-grid maxI extension and R/recursPredictQuantiles.R),
+  Kris V. Parag [ctb, cph] (Author/copyright holder of the original
+    EpiFilter algorithm (epiFilter, epiSmoother, recursPredict); files
+    R/epiFilter.R, R/epiSmoother.R and R/recursPredict.R are unmodified
+    or lightly modified ports of that work, released under GPL-3)
+Maintainer: Raj Subedi <rajsubediresearch@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 13:10:37 UTC

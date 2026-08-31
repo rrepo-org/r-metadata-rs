@@ -1,0 +1,30 @@
+Package: micsr
+Version: 0.1-5
+Date: 2026-06-01
+Title: Microeconometrics with R
+Authors@R: person("Yves",
+                  "Croissant",
+		  role = c("aut", "cre"),
+		  email = "yves.croissant@univ-reunion.fr",
+		  comment = c(ORCID = "0000-0002-4857-7736"))
+Depends: R (>= 4.1.0)
+Imports: Formula, Rdpack, sandwich, generics, numDeriv, survival, Rcpp,
+        CompQuadForm, dfidx
+Suggests: quarto, AER, censReg, sampleSelection, mlogit, MASS, lmtest,
+        tinytest, ggplot2, modelsummary
+LinkingTo: Rcpp
+Description: Functions, data sets and examples for the book: Yves Croissant (2025) "Microeconometrics with R", Chapman and Hall/CRC The R Series <doi:10.1201/9781003100263>. The package includes a set of estimators for models used in microeconometrics, especially for count data and limited dependent variables. Test functions include score test, Hausman test, Vuong test, Sargan test and conditional moment test. A small subset of the data set used in the book is also included.
+Encoding: UTF-8
+License: GPL (>= 2)
+URL: https://www.r-project.org
+VignetteBuilder: quarto
+NeedsCompilation: yes
+RoxygenNote: 7.3.3
+LazyData: true
+RdMacros: Rdpack
+Packaged: 2026-06-01 17:15:23 UTC; yves
+Author: Yves Croissant [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4857-7736>)
+Maintainer: Yves Croissant <yves.croissant@univ-reunion.fr>
+Repository: CRAN
+Date/Publication: 2026-06-01 18:20:09 UTC

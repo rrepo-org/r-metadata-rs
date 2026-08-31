@@ -1,0 +1,62 @@
+Package: blockr.core
+Title: Graphical Web-Framework for Data Manipulation and Visualization
+Version: 0.1.3
+Authors@R: 
+    c(person(given = "Nicolas",
+             family = "Bennett",
+             role = c("aut", "cre"),
+             email = "nicolas@cynkra.com"),
+      person(given = "David",
+             family = "Granjon",
+             role = c("aut"),
+             email = "david@cynkra.com"),
+      person(given = "Christoph",
+             family = "Sax",
+             role = c("aut"),
+             email = "christoph@cynkra.com"),
+      person(family = "Bristol Myers Squibb",
+             role = "fnd")
+    )
+Description: A framework for data manipulation and visualization using a
+    web-based point and click user interface where analysis pipelines are decomposed into re-usable and parameterizable blocks.
+URL: https://bristolmyerssquibb.github.io/blockr.core/
+BugReports: https://github.com/BristolMyersSquibb/blockr.core/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: shiny (>= 1.5.0), DT, bslib, bsicons, datasets, grDevices,
+        graphics, methods, utils, jsonlite, vctrs, generics, rlang,
+        htmltools, evaluate, shinyFiles, digest, cli, glue, yaml
+Suggests: testthat (>= 3.0.0), memuse, withr, shinytest2, chromote,
+        roxy.shinylive, roxygen2, knitr, rmarkdown, quarto, scoutbaR,
+        thematic, ids, ellmer
+Config/testthat/edition: 3
+VignetteBuilder: quarto
+Collate: 'block-args.R' 'block-class.R' 'block-eval.R' 'block-meta.R'
+        'block-registry.R' 'block-roclet.R' 'block-server.R'
+        'block-ui.R' 'blocks-class.R' 'board-class.R' 'board-loader.R'
+        'board-lock.R' 'board-option.R' 'board-options.R'
+        'board-plugins.R' 'board-server.R' 'board-ui.R' 'utils-dt.R'
+        'data-block.R' 'data-dataset.R' 'data-static.R' 'file-block.R'
+        'file-browser.R' 'file-upload.R' 'link-class.R' 'links-class.R'
+        'parser-block.R' 'parser-csv.R' 'plot-block.R' 'plot-scatter.R'
+        'plugin-block.R' 'plugin-blocks.R' 'plugin-code.R'
+        'plugin-control.R' 'plugin-links.R' 'plugin-notification.R'
+        'plugin-serdes.R' 'plugin-stack.R' 'plugin-stacks.R'
+        'reactives.R' 'stack-class.R' 'stack-ui.R' 'stacks-class.R'
+        'str-value.R' 'text-block.R' 'text-glue.R' 'transform-block.R'
+        'transform-fixed.R' 'transform-head.R' 'transform-merge.R'
+        'transform-rbind.R' 'transform-subset.R' 'utils-assertions.R'
+        'utils-cnd.R' 'utils-code.R' 'utils-expr.R' 'utils-graph.R'
+        'utils-logging.R' 'utils-misc.R' 'utils-pkg.R' 'utils-ply.R'
+        'utils-serdes.R' 'utils-serve.R' 'utils-shiny.R'
+        'utils-tests.R' 'zzz-onload.R'
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-12 20:07:25 UTC; coder
+Author: Nicolas Bennett [aut, cre],
+  David Granjon [aut],
+  Christoph Sax [aut],
+  Bristol Myers Squibb [fnd]
+Maintainer: Nicolas Bennett <nicolas@cynkra.com>
+Repository: CRAN
+Date/Publication: 2026-07-12 21:00:02 UTC

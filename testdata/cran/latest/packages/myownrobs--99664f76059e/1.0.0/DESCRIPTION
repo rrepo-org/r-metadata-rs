@@ -1,0 +1,29 @@
+Package: myownrobs
+Type: Package
+Title: AI Coding Agent for 'RStudio'
+Version: 1.0.0
+Authors@R: c(
+    person(
+      "Juan Cruz", "Rodriguez",
+      email = "jcrodriguez@unc.edu.ar",
+      role = c("aut", "cre")
+    )
+  )
+Maintainer: Juan Cruz Rodriguez <jcrodriguez@unc.edu.ar>
+Description: Provides an 'RStudio' extension with a chat interface for an AI coding agent to help
+    users with R programming tasks.
+License: MIT + file LICENSE
+URL: https://myownrobs.github.io/myownrobs/,
+        https://github.com/MyOwnRobs/myownrobs
+BugReports: https://github.com/MyOwnRobs/myownrobs/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: ellmer, fs, httr, jsonlite, methods, promises, rstudio.prefs,
+        rstudioapi, shiny, tools, uuid, yaml
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-22 15:00:42 UTC; jcrodriguez
+Author: Juan Cruz Rodriguez [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-01-22 15:20:02 UTC

@@ -1,0 +1,36 @@
+Package: zenplots
+Title: Zigzag Expanded Navigation Plots
+Version: 1.0.7
+Date: 2025-09-08
+Authors@R: c(
+    person("Marius", "Hofert", , "marius.hofert@uwaterloo.ca", role = "aut"),
+    person("Wayne", "Oldford", , "rwoldford@uwaterloo.ca", role = c("aut", "cre"))
+  )
+Maintainer: Wayne Oldford <rwoldford@uwaterloo.ca>
+Description: Graphical tools for visualizing high-dimensional data along a
+    path of alternating one- and two-dimensional plots. Includes optional
+    interactive graphics via 'loon' (which uses 'tcltk' from base R).
+    Support is provided for constructing graph structures and, when
+    available, plotting them with Bioconductor packages (e.g., 'graph',
+    'Rgraphviz'); these are optional and examples/vignettes are skipped if
+    they are not installed. For algorithms and further details, see
+    <doi:10.18637/jss.v095.i04>.
+License: GPL-2 | GPL-3
+URL: https://great-northern-diver.github.io/zenplots/,
+        https://github.com/great-northern-diver/zenplots/
+BugReports: https://github.com/great-northern-diver/zenplots/issues
+Depends: R (>= 3.4.0)
+Imports: graphics, grid, MASS, methods, PairViz, stats
+Suggests: ADGofTest, BiocManager, copula, crop, ggplot2, graph,
+        gridExtra, knitr, lattice, loon, Matrix, mvtnorm, pcaPP,
+        qqtest, qrmdata, qrmtools, Rgraphviz, rmarkdown, rugarch,
+        scagnostics, testthat, zoo
+VignetteBuilder: knitr, rmarkdown
+Encoding: UTF-8
+NeedsCompilation: yes
+Repository: CRAN
+RoxygenNote: 7.3.3
+Packaged: 2025-09-08 21:23:33 UTC; rwoldford
+Author: Marius Hofert [aut],
+  Wayne Oldford [aut, cre]
+Date/Publication: 2025-09-09 07:50:03 UTC

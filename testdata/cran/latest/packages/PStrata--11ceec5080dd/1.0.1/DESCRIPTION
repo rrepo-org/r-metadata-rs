@@ -1,0 +1,35 @@
+Package: PStrata
+Type: Package
+Title: Principal Stratification Analysis in R
+Version: 1.0.1
+Date: 2026-05-15
+Encoding: UTF-8
+Authors@R: c(
+    person(given = "Bo", family = "Liu", role = c("aut", "cre"), email = "bo.liu1997@gmail.com"),
+    person(given = "Fan", family = "Li", role = "ctb", email = "fl35@duke.edu"))
+Author: Bo Liu [aut, cre],
+  Fan Li [ctb]
+Maintainer: Bo Liu <bo.liu1997@gmail.com>
+Description: Estimating causal effects in the presence of post-treatment confounding
+    using principal stratification. 'PStrata' allows for customized monotonicity
+    assumptions and exclusion restriction assumptions, with automatic full Bayesian
+    inference supported by 'Stan'. The main workflow is PStrataModel() to specify the
+    model, fit() to run MCMC sampling, estimate() to extract potential outcomes, and
+    contrast() to compute causal effects. Visualization tools are provided for
+    diagnosis and interpretation. See Liu and Li (2023)
+    <doi:10.48550/arXiv.2304.02740> for details.
+URL: https://github.com/LauBok/PStrata
+BugReports: https://github.com/LauBok/PStrata/issues
+Depends: R (>= 3.5.0)
+Collate: PStrata-package.R utils.R survival.R prior.R make_stancode.R
+        sim_data_normal.R sim_data_Cox.R PStrataModel.R fit.R
+        estimate.R contrast.R
+License: GPL (>= 2)
+Suggests: R.rsp
+Imports: ggplot2, rstan, lme4, reformulas, purrr, stringr, stats
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-15 12:23:21 UTC; boliu
+Repository: CRAN
+Date/Publication: 2026-05-15 15:50:20 UTC

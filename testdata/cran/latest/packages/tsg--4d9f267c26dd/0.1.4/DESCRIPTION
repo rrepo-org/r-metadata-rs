@@ -1,0 +1,36 @@
+Package: tsg
+Type: Package
+Title: Generate Publication-Ready Statistical Tables
+Version: 0.1.4
+Description: A collection of functions for generating frequency tables and cross-tabulations of categorical variables. The resulting tables can be exported to various formats (Excel, PDF, HTML, etc.) with extensive formatting and layout customization options.
+Authors@R: c(
+    person(
+      "Bhas", 
+      "Abdulsamad", 
+      email = "aeabdulsamad@gmail.com",
+      comment = c(ORCID = "0009-0002-5891-8124"),
+      role = c("aut", "cre", "cph")
+    )
+  )
+Author: Bhas Abdulsamad [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0002-5891-8124>)
+Maintainer: Bhas Abdulsamad <aeabdulsamad@gmail.com>
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: haven, openxlsx, fs, forcats, purrr, tidyr, glue, jsonlite (>=
+        2.0.0), yaml (>= 2.3.10), dplyr (>= 1.1.0), stringr (>= 1.4.0),
+        rlang (>= 1.0.2), gt, lifecycle, stats, utils, officer,
+        flextable, qpdf
+Suggests: testthat (>= 3.0.0), cli, devtools, knitr, rmarkdown, tibble,
+        webshot2, withr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+URL: https://yng-me.github.io/tsg/, https://github.com/yng-me/tsg
+BugReports: https://github.com/yng-me/tsg/issues
+NeedsCompilation: no
+Packaged: 2026-05-05 10:56:05 UTC; bhasabdulsamad
+Repository: CRAN
+Date/Publication: 2026-05-05 11:10:02 UTC

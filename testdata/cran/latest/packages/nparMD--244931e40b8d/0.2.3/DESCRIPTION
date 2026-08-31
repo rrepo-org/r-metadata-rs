@@ -1,0 +1,32 @@
+Package: nparMD
+Type: Package
+Title: Nonparametric Analysis of Multivariate Data in Factorial Designs
+Version: 0.2.3
+Depends: R (>= 3.1.0)
+Imports: matrixStats, matrixcalc, MASS, gtools, Formula, methods, stats
+Authors@R: c(person(given = "Maximilian", family = "Kiefel", role = c("cre", "aut"),
+                        email = "physik210@hotmail.com"),
+             person(given = c("Arne", "C."),
+                        family = "Bathke",
+                        role = "ctb"))
+Maintainer: Maximilian Kiefel <physik210@hotmail.com>
+Description: Analysis of multivariate data with two-way completely randomized
+    factorial design. The analysis is based on fully nonparametric, rank-based
+    methods and uses test statistics based on the Dempster's ANOVA, Wilk's Lambda,
+    Lawley-Hotelling and Bartlett-Nanda-Pillai criteria. The multivariate
+    response is allowed to be ordinal, quantitative, binary or a mixture of the
+    different variable types. The package offers two functions performing the
+    analysis, one for small and the other for large sample sizes. The underlying methodology
+    is largely described in Bathke and Harrar (2016) <doi:10.1007/978-3-319-39065-9_7> and in 
+    Munzel and Brunner (2000) <doi:10.1016/S0378-3758(99)00212-8> and in 
+    Kiefel and Bathke (2022) <doi:10.1515/stat-2022-0112>.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2025-10-27 13:19:21 UTC; mk
+Author: Maximilian Kiefel [cre, aut],
+  Arne C. Bathke [ctb]
+Repository: CRAN
+Date/Publication: 2025-10-27 14:00:02 UTC

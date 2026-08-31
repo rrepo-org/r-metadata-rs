@@ -1,0 +1,36 @@
+Package: palettecore
+Title: Derive, Optimise and Audit a Scientific Colour Palette from One
+        Seed Colour
+Version: 0.4.1
+Authors@R: person("Heidi Helena", "Andersén", role = c("aut", "cre"),
+    email = "andersenheidihelena@gmail.com",
+    comment = c(ORCID = "0000-0001-5923-5865"))
+Description: Generates sequential, diverging and categorical colour palettes
+    from a single seed colour in OKLCH (the cylindrical lightness-chroma-hue
+    representation of the Oklab perceptual colour space), with spacing
+    measured by the CIEDE2000 colour-difference formula of the International
+    Commission on Illumination. Audits every palette under simulated
+    colour-vision deficiency, greyscale conversion, the standard Red Green
+    Blue (sRGB) gamut and Web Content Accessibility Guidelines (WCAG)
+    contrast. Colour-vision deficiency is
+    simulated at severity 1.0 with the model of Machado, Oliveira and
+    Fernandes (2009) <doi:10.1109/TVCG.2009.113>; the design rationale
+    follows Crameri, Shephard and Heron (2020) <doi:10.1038/s41467-020-19160-7>.
+    Mirrors the 'Python' reference implementation maintained in the same
+    repository and is validated against shared parity fixtures. Thresholds
+    are configurable design rules, not established accessibility cut-offs.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1)
+Imports: stats, utils
+Suggests: ggplot2, jsonlite
+URL: https://github.com/heidihelena/palettecore
+BugReports: https://github.com/heidihelena/palettecore/issues
+NeedsCompilation: no
+Packaged: 2026-08-03 20:36:25 UTC; root
+Author: Heidi Helena Andersén [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5923-5865>)
+Maintainer: Heidi Helena Andersén <andersenheidihelena@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-09 08:10:02 UTC

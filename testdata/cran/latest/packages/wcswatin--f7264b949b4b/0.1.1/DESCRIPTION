@@ -1,0 +1,49 @@
+Package: wcswatin
+Title: Weather and Climate Inputs for 'SWAT'
+Version: 0.1.1
+Authors@R: c(
+    person(given = "Réginal",
+           family = "Exavier",
+           role = c("aut", "cre"),
+           email = "reginalexavier@rocketmail.com",
+           comment = c(ORCID = "0000-0002-5237-523X")),
+    person(given = "Fernando Shinji",
+           family = "Kawakubo",
+           role = "aut",
+           email = "fskgeo@gmail.com",
+           comment = c(ORCID = "0000-0002-2045-6318")),
+    person(given = "Peter",
+           family = "Zeilhofer",
+           role = "aut",
+           email = "zeilhoferpeter@gmail.com",
+           comment = c(ORCID = "0000-0002-7579-6408")))
+Description: Provides workflows to prepare weather and climate time series from
+    gridded and station data for 'SWAT' ('Soil and Water Assessment Tool').
+    Supports data extraction, aggregation, interpolation, quality control, unit
+    conversion, and export of per-location model input files. For the underlying
+    model, see Arnold et al. (1998) "Large Area Hydrologic Modeling and
+    Assessment Part I: Model Development"
+    <doi:10.1111/j.1752-1688.1998.tb05961.x>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Suggests: future, knitr, rmarkdown, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Imports: dplyr, tidyr, raster, ncdf4, data.table, glue, stringr, sf,
+        lubridate, hyfo, ggplot2, terra, future.apply, progressr,
+        methods
+URL: https://github.com/reginalexavier/wcswatin,
+        https://reginalexavier.github.io/wcswatin/
+BugReports: https://github.com/reginalexavier/wcswatin/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-10 16:55:33 UTC; tredgi
+Author: Réginal Exavier [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-5237-523X>),
+  Fernando Shinji Kawakubo [aut] (ORCID:
+    <https://orcid.org/0000-0002-2045-6318>),
+  Peter Zeilhofer [aut] (ORCID: <https://orcid.org/0000-0002-7579-6408>)
+Maintainer: Réginal Exavier <reginalexavier@rocketmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-19 13:10:02 UTC

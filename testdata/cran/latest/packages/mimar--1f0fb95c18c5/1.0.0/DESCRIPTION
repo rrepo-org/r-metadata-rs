@@ -1,0 +1,25 @@
+Package: mimar
+Title: Compact Multiple Imputation, Assessment, and Reporting
+Version: 1.0.0
+Authors@R: c(person(given = "Imad", family = "El Badisy", role = c("aut", "cre"), email = "elbadisyimad@gmail.com"))
+Author: Imad El Badisy [aut, cre]
+Maintainer: Imad El Badisy <elbadisyimad@gmail.com>
+Description: Provides compact tools for missing-data analysis, including
+    artificial amputation, chained single and multiple imputation, statistical
+    and machine-learning-based imputation methods, diagnostic evaluation, and
+    post-imputation pooling.
+License: MIT + file LICENSE
+URL: https://CRAN.R-project.org/package=mimar
+BugReports: https://github.com/ielbadisy/mimar/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: BART, data.table, densemlp, e1071, functionals, gbm, ggplot2,
+        glmnet, missknn, missMDA, naivebayes, ranger, rpart, stats,
+        xgboost
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, pkgload, survival
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-21 09:10:00 UTC; imad-el-badisy
+Repository: CRAN
+Date/Publication: 2026-08-22 00:50:10 UTC

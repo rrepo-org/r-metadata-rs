@@ -1,0 +1,36 @@
+Package: chiOpenData
+Type: Package
+Title: Convenient Access to Chicago Open Data API Endpoints
+Version: 0.1.1
+Authors@R: 
+    c(
+      person("Christian", "Martinez", 
+             email = "c.martinez0@outlook.com", 
+             role = c("aut", "cre"),
+             comment = c(
+               GitHub = "martinezc1",
+               ORCID = "0009-0005-6026-6454"
+             ))
+    )
+Description: Provides simple, reproducible access to datasets from the
+    Chicago Open Data portal <https://data.cityofchicago.org/>. Functions return
+    results as tidy tibbles and support optional filtering, sorting,
+    and row limits via the Socrata API.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, tibble, jsonlite, httr, janitor, rlang
+Suggests: curl, knitr, ggplot2, rmarkdown
+URL: https://martinezc1.github.io/chiOpenData/,
+        https://github.com/martinezc1/chiOpenData
+BugReports: https://github.com/martinezc1/chiOpenData/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-08-21 18:41:09 UTC; christianmartinez
+Author: Christian Martinez [aut, cre] (GitHub: martinezc1, ORCID:
+    <https://orcid.org/0009-0005-6026-6454>)
+Maintainer: Christian Martinez <c.martinez0@outlook.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 21:01:10 UTC

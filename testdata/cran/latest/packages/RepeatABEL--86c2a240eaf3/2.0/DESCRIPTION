@@ -1,0 +1,22 @@
+Package: RepeatABEL
+Title: GWAS for Multiple Observations on Related Individuals
+Version: 2.0
+Authors@R: 
+    person("Lars", "Ronnegard", , "lars.ronnegard@slu.se", role = c("aut", "cre"))
+Description: Performs genome-wide association studies (GWAS) on individuals that are both related and have repeated measurements. For each Single Nucleotide Polymorphism (SNP), it computes score statistic based p-values for a linear mixed model including random polygenic effects and a random effect for repeated measurements. The computed p-values can be visualized in a Manhattan plot. For more details see Ronnegard et al. (2016) <doi:10.1111/2041-210X.12535> and for more examples see <https://github.com/larsronn/RepeatABEL_Tutorials>.
+License: GPL
+Depends: hglm, methods
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Collate: 'Compute_GRM2.R' 'Create_gwaa_data2.R' 'Create_gwaa_scan2.R'
+        'SmoothSNPmatrix.R' 'chromosome.R' 'constructV.R'
+        'estlambda2.R' 'snp.data.R' 'gwaa.data2.R' 'idnames.R'
+        'keep_gwaa_data.R' 'map.R' 'nids.R' 'plot.scan.gwaa2.R'
+        'preFitModel.R' 'rGLS.R' 'scan.gwaa2.R' 'simulate_PhenData.R'
+        'simulate_gendata.R' 'snpnames.R' 'summary_scan_gwaa2.R'
+NeedsCompilation: no
+Packaged: 2025-12-19 15:28:54 UTC; larsronn
+Author: Lars Ronnegard [aut, cre]
+Maintainer: Lars Ronnegard <lars.ronnegard@slu.se>
+Repository: CRAN
+Date/Publication: 2026-01-06 11:00:15 UTC

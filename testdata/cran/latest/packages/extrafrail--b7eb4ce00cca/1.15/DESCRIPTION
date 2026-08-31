@@ -1,0 +1,44 @@
+Package: extrafrail
+Type: Package
+Title: Estimation and Additional Tools for Alternative Shared Frailty
+        Models
+Version: 1.15
+Date: 2026-08-15
+Authors@R: c(person("Diego", "Gallardo", role = c("aut","cre"), email = "dgallardo@ubiobio.cl"),
+	person("Marcelo", "Bourguignon", role = "aut", email = "m.p.bourguignon@gmail.com"),
+	person("John","Santibanez",role="ctb", email="john.santibanez.15@alumnos.uda.cl"),
+	person("Gilbert","Kiprotich",role="ctb",email="gilbert.kiprotich@stat.uni-muenchen.de"),
+	person("Pedro","Ramos",role="ctb",email="pedro.ramos@mat.uc.cl"),
+	person("Thomas","Augustin",role="ctb",email="thomas.augustin@stat.uni-muenchen.de"),
+	person("Zohreh","Mohammadi",role="ctb",email="mohammadi_6111@yahoo.com"),
+	person("Paulo","Ferreira", role="ctb", email="paulohenri@ufba.br"),
+	person("Gerson","Primo", role="ctb", email="gersonprimo@gmail.com"))
+Maintainer: Diego Gallardo <dgallardo@ubiobio.cl>
+Description: Provide estimation and data generation tools for new multivariate frailty models.
+             This version includes the gamma, inverse Gaussian, weighted Lindley, Birnbaum-Saunders,
+	     truncated normal, mixture of inverse Gaussian, mixture of Birnbaum-Saunders, 
+             generalized exponential, Jorgensen-Seshadri-Whitmore, weighted Akash, weighted Shanker and
+             weighted Sujatha as the distribution for frailty terms. For the basal model, it 
+             is considered a parametric approach based on the exponential, Weibull and the 
+             piecewise exponential distributions as well as a semiparametric approach. For 
+             details, see Gallardo et al. (2024) <doi:10.1007/s11222-024-10458-w>,
+             Gallardo et al. (2025) <doi:10.1002/bimj.70044>, Kiprotich et al. (2025) <doi:10.1177/09622802251338984>,
+             Gallardo et al. (2025) <doi:10.1038/s41598-025-15903-y>, Kiprotich et al. (2026) <doi:10.1080/00949655.2025.2584734
+             and Mohammadi et al. (2026).
+Depends: R (>= 4.0.0), stats
+Imports: survival, pracma, expint, msm
+Suggests: frailtyHL
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2026-08-28 19:04:33 UTC; Diego
+Author: Diego Gallardo [aut, cre],
+  Marcelo Bourguignon [aut],
+  John Santibanez [ctb],
+  Gilbert Kiprotich [ctb],
+  Pedro Ramos [ctb],
+  Thomas Augustin [ctb],
+  Zohreh Mohammadi [ctb],
+  Paulo Ferreira [ctb],
+  Gerson Primo [ctb]
+Repository: CRAN
+Date/Publication: 2026-08-28 21:20:07 UTC

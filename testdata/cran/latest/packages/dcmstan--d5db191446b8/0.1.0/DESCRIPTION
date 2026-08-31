@@ -1,0 +1,50 @@
+Package: dcmstan
+Title: Generate 'Stan' Code for Diagnostic Classification Models
+Version: 0.1.0
+Authors@R: c(
+    person("W. Jake", "Thompson", , "wjakethompson@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7339-0300")),
+    person("Jeffrey", "Hoover", , "jeffrey.c.hoover@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-0276-0308")),
+    person("Auburn", "Jimenez", , "auburn.jimenez34@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-7072-2960")),
+    person("University of Kansas", role = "cph"),
+    person("Institute of Education Sciences", role = "fnd")
+  )
+Description: Diagnostic classification models are psychometric models used
+    to categorically estimate respondents mastery, or proficiency, on a
+    set of predefined skills (Bradshaw, 2016,
+    <doi:10.1002/9781118956588.ch13>).  Diagnostic models can be estimated
+    with 'Stan'; however, the necessary scripts can be long and
+    complicated. This package automates the creation of 'Stan' scripts for
+    diagnostic classification models. Specify different types of
+    diagnostic models, define prior distributions, and automatically
+    generate the necessary 'Stan' code for estimating the model.
+License: MIT + file LICENSE
+URL: https://dcmstan.r-dcm.org, https://github.com/r-dcm/dcmstan
+BugReports: https://github.com/r-dcm/dcmstan/issues
+Depends: R (>= 4.3.0)
+Imports: cli, dagitty, dplyr, ggdag, glue, lifecycle, rdcmchecks, rlang
+        (>= 1.1.0), S7, tibble, tidyr
+Suggests: cmdstanr, dcmdata, knitr, rmarkdown, spelling, testthat (>=
+        3.0.0), withr
+Additional_repositories: https://stan-dev.r-universe.dev
+Config/Needs/website: r-dcm/rdcmtemplate, ggplot2
+Config/Needs/documentation: openpharma/roxylint
+Config/roxylint: list(linters = roxylint::tidy)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-11-19 01:12:20 UTC; jakethompson
+Author: W. Jake Thompson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7339-0300>),
+  Jeffrey Hoover [aut] (ORCID: <https://orcid.org/0000-0002-0276-0308>),
+  Auburn Jimenez [aut] (ORCID: <https://orcid.org/0000-0002-7072-2960>),
+  University of Kansas [cph],
+  Institute of Education Sciences [fnd]
+Maintainer: W. Jake Thompson <wjakethompson@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-11-24 09:20:02 UTC

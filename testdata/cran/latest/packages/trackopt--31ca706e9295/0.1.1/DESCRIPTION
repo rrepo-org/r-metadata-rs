@@ -1,0 +1,29 @@
+Package: trackopt
+Type: Package
+Title: Track Numerical Optimization
+Version: 0.1.1
+Authors@R: 
+    person(
+        "Lennart", "Oelschl\u00e4ger",
+        email = "oelschlaeger.lennart@gmail.com",
+        role = c("aut", "cre")
+    )
+Description: Tracks parameter values, gradients, and Hessians at each
+    iteration of numerical optimizers. Useful for analyzing optimization
+    progress, diagnosing issues, and studying convergence behavior.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: checkmate, cli, ggplot2, oeli (>= 0.7.2), optimizeR (>=
+        1.2.0), stats, tibble, utils
+Suggests: testthat (>= 3.0.0)
+Depends: R (>= 4.1.0)
+Config/testthat/edition: 3
+URL: https://github.com/loelschlaeger/trackopt
+BugReports: https://github.com/loelschlaeger/trackopt/issues
+NeedsCompilation: no
+Packaged: 2026-05-12 15:52:33 UTC; Lennart Oelschläger
+Author: Lennart Oelschläger [aut, cre]
+Maintainer: Lennart Oelschläger <oelschlaeger.lennart@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-12 18:40:09 UTC

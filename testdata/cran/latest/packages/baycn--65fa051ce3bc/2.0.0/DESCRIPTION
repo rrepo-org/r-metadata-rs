@@ -1,0 +1,38 @@
+Encoding: UTF-8
+Package: baycn
+Type: Package
+Title: Bayesian Inference for Causal Networks
+Version: 2.0.0
+Authors@R: c(person(given = c("Evan", "A"),
+                      family = "Martin",
+                      role = c("aut")),
+               person(given = "Venkata",
+                      family = "Patchigolla",
+                      role = "ctb"),
+               person(given = "Audrey",
+                      family = "Fu",
+                      role = c("aut", "cre"),
+                      email = "audreyqyfu@gmail.com"))
+Description: An approximate Bayesian method for inferring Directed Acyclic Graphs
+    (DAGs) for continuous, discrete, and mixed data. The algorithm can use the 
+    graph inferred by another more efficient graph inference method as input;
+    the input graph may contain false edges or undirected edges but can help
+    reduce the search space to a more manageable size. A Metropolis-Hastings-like 
+    sampling algorithm is then used to infer the posterior probabilities of 
+    edge direction and edge absence.
+    References:
+    Martin, Patchigolla and Fu (2026) <doi:10.48550/arXiv.1909.10678>.
+License: GPL-3 | file LICENSE
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: egg, ggplot2, igraph, MASS, methods, expm
+RoxygenNote: 7.3.3
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2026-03-09 01:59:36 UTC; audreyq.fu
+Author: Evan A Martin [aut],
+  Venkata Patchigolla [ctb],
+  Audrey Fu [aut, cre]
+Maintainer: Audrey Fu <audreyqyfu@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-10 09:40:40 UTC

@@ -1,0 +1,35 @@
+Type: Package
+Package: wrswoR
+Title: Weighted Random Sampling without Replacement
+Version: 1.2.1
+Date: 2026-05-13
+Authors@R: 
+    person(given = "Kirill",
+           family = "M\u00fcller",
+           role = c("aut", "cre"),
+           email = "kirill@cynkra.com",
+           comment = c(ORCID = "0000-0002-1416-3412"))
+Description: A collection of implementations of classical and
+    novel algorithms for weighted sampling without replacement.
+License: GPL-3
+URL: https://krlmlr.github.io/wrswoR/
+BugReports: https://github.com/krlmlr/wrswoR/issues
+Depends: R (>= 3.0.2)
+Imports: Rcpp
+Suggests: BatchExperiments, BiocManager, dplyr, ggplot2, import, kimisc
+        (>= 0.2-4), knitcitations, knitr, metap, microbenchmark, otel,
+        rmarkdown, roxygen2, rticles (>= 0.1), sampling, testthat (>=
+        3.0.0), tidyr, tikzDevice (>= 0.9-1)
+LinkingTo: Rcpp (>= 0.11.5)
+Encoding: UTF-8
+URLNote: https://github.com/krlmlr/wrswoR
+Config/gha/extra-packages: metap=?ignore-before-r=4.3.0
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0.9000
+NeedsCompilation: yes
+Packaged: 2026-05-13 03:42:16 UTC; kirill
+Author: Kirill Müller [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1416-3412>)
+Maintainer: Kirill Müller <kirill@cynkra.com>
+Repository: CRAN
+Date/Publication: 2026-05-13 05:10:09 UTC

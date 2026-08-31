@@ -1,0 +1,34 @@
+Package: OtsuFire
+Type: Package
+Title: Fire Scars, Severity and Regeneration Mapping Using 'Otsu'
+        Thresholding
+Version: 0.1.4
+Authors@R: c(person("Natalia", "Quintero", email = "natalia.quintero@alu.uclm.es", role = c("aut")),
+             person("Olga", "Viedma", email = "olga.viedma@uclm.es", role = c("aut", "cre")),
+             person("Hammadi", "Achour", email = "hammadi.achour@gmail.com", role = "ctb"),
+             person("Jose Manuel", "Moreno", email = "jm.moreno@uclm.es", role = "ctb"))
+Description: 
+    Tools to segment fire scars and assess severity and vegetation regeneration using 
+    'Otsu' thresholding on Relative Burn Ratio (RBR) and differenced Normalized Burn Ratio (dNBR) image composites. 
+    Includes support for mosaic handling, polygon metrics, post-fire regeneration detection, day-of-year flagging, 
+    and validation against reference datasets. Designed for analysis of fire history in the Iberian Peninsula. 
+    Input Landsat composites follow the methodology described in Quintero et al. (2025) <doi:10.2139/ssrn.4929831>.
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/olgaviedma/OtsuFire
+BugReports: https://github.com/olgaviedma/OtsuFire/issues
+Depends: R (>= 4.1.0)
+Imports: data.table, dplyr, gdalUtilities, glue, purrr, raster, sf,
+        stringr, terra, magrittr, tidyr, rlang, OtsuSeg
+Suggests: testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-06-12 18:07:15 UTC; Olga.Viedma
+Author: Natalia Quintero [aut],
+  Olga Viedma [aut, cre],
+  Hammadi Achour [ctb],
+  Jose Manuel Moreno [ctb]
+Maintainer: Olga Viedma <olga.viedma@uclm.es>
+Repository: CRAN
+Date/Publication: 2025-06-14 09:00:06 UTC

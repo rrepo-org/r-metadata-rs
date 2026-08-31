@@ -1,0 +1,20 @@
+Package: linreg
+Title: Linear Regression and Model Selection Framework
+Type: Package
+Version: 0.1.0
+Authors@R: c(person("Dr. Pramit", "Pandit", role = c("aut","cre"), email = "pramitpandit@gmail.com"),
+             person("Dr. Bikramjeet", "Ghose", role = "aut"),
+             person("Dr. Chiranjit", "Mazumder", role = "aut"))
+Author: Dr. Pramit Pandit [aut, cre],
+  Dr. Bikramjeet Ghose [aut],
+  Dr. Chiranjit Mazumder [aut]
+Maintainer: Dr. Pramit Pandit <pramitpandit@gmail.com>
+Description: Provides a comprehensive framework for linear regression modeling and associated statistical analysis. The package implements methods for correlation analysis, including computation of correlation matrices with corresponding significance levels and visualization via correlation heatmaps. It supports estimation of multiple linear regression models, along with automated model selection through backward elimination procedures based on statistical significance criteria. In addition, the package offers a suite of diagnostic tools to assess key assumptions of linear regression, including multicollinearity using variance inflation factors, heteroscedasticity using the Goldfeld-Quandt test, and normality of residuals using the Shapiro-Wilk test. These functionalities, as described in Draper and Smith (1998) <doi:10.1002/9781118625590>, are designed to facilitate robust model building, evaluation, and interpretation in applied statistical and data analytical contexts.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats, Hmisc, corrplot, car, lmtest
+NeedsCompilation: no
+Packaged: 2026-04-11 14:05:51 UTC; prami
+Repository: CRAN
+Date/Publication: 2026-04-16 18:20:18 UTC

@@ -1,0 +1,36 @@
+Package: ShiftHappens
+Type: Package
+Title: Detecting, Visualizing and Estimating Shifts
+Version: 1.0.1
+Authors@R: c(
+    person("Felipe", "Mendez", email = "felipe-alberto.mendez-rios@inrae.fr",role = c("aut"),comment = c(ORCID = "0009-0004-0371-8699")),
+    person("Benjamin", "Renard", email = "benjamin.renard@inrae.fr",role = c("aut", "cre","cph"),comment = c(ORCID = "0000-0001-8447-5430")),
+    person("Matteo", "Darienzo", role = c("aut")),
+    person("INRAE", role = c("fnd")),
+    person("Ministère de la Transition Ecologique - SCHAPI", role = c("fnd")))
+Description: Detecting, visualizing and estimating shifts, 
+    with a specific focus on stage-discharge rating shifts.
+    The main methods are described in Darienzo et al. (2021) <doi:10.1029/2020WR028607>
+    and Mansanarez et al. (2019) <doi:10.1029/2018WR023389>.
+    See also 'BayDERS' <https://github.com/MatteoDarienzo/BayDERS> for similar tools, 
+    and 'RatingShiftHappens' <https://github.com/Felipemendezrios/RatingShiftHappens> for an older version of this package. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/benRenard/ShiftHappens
+RoxygenNote: 7.3.3
+Imports: lubridate, RBaM, ggplot2, scales, dplyr, tidyr, patchwork,
+        RColorBrewer
+Suggests: knitr, rmarkdown
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2026-07-20 05:41:28 UTC; brenard
+Author: Felipe Mendez [aut] (ORCID: <https://orcid.org/0009-0004-0371-8699>),
+  Benjamin Renard [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8447-5430>),
+  Matteo Darienzo [aut],
+  INRAE [fnd],
+  Ministère de la Transition Ecologique - SCHAPI [fnd]
+Maintainer: Benjamin Renard <benjamin.renard@inrae.fr>
+Repository: CRAN
+Date/Publication: 2026-07-29 16:40:45 UTC

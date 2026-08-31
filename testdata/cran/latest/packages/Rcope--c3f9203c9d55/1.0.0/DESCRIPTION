@@ -1,0 +1,45 @@
+Package: Rcope
+Type: Package
+Title: Tools to Cope with Endogeneity Problems
+Version: 1.0.0
+Authors@R: c(person(given = "Anthony",
+                      family = "Obrzut",
+                      role = c("aut", "cre"),
+                      email = "anthony_obrzut@sfu.ca"),
+               person(given = "Yi",
+                      family = "Qian",
+                      role = "aut"),
+               person(given = "Hui",
+                      family = "Xie",
+                      role = "aut"))
+Description: Researchers across disciplines often face biased regression
+    model estimates due to endogenous regressors correlated with the error
+    term. Traditional solutions require instrumental variables (IVs), which
+    are often difficult to find and validate. This package provides
+    flexible, alternative IV-free methods using copulas, as described in
+    the practical guide to endogeneity correction using copulas (Yi Qian,
+    Tony Koschmann, and Hui Xie 2025) <doi:10.1177/00222429251410844>. The
+    current version implements the two-stage copula endogeneity correction
+    (2sCOPE) method to fit models with continuous endogenous regressors and
+    both continuous and discrete exogenous regressors, as described in Fan
+    Yang, Yi Qian, and Hui Xie (2024)
+    <doi:10.1177/00222437241296453>. Using this method, users can address
+    regressor endogeneity problems in nonexperimental data without
+    requiring IVs.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, Formula, car
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/Needs/quarto: false
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2026-02-25 00:00:03 UTC; anton
+Author: Anthony Obrzut [aut, cre],
+  Yi Qian [aut],
+  Hui Xie [aut]
+Maintainer: Anthony Obrzut <anthony_obrzut@sfu.ca>
+Repository: CRAN
+Date/Publication: 2026-03-03 10:20:24 UTC

@@ -1,0 +1,26 @@
+Package: citsr
+Title: Controlled Interrupted Time Series Analysis and Visualization
+Version: 0.1.4
+Authors@R: 
+    person("Hanmin", "Gu", email = "ghm21@yonsei.ac.kr", role = c("aut", "cre"))
+Description: Implements controlled interrupted time series (CITS) analysis for evaluating interventions in comparative time-series data. 
+    The package provides tools for preparing panel time-series datasets, fitting models using generalized least squares (GLS) with optional autoregressive–moving-average (ARMA) error structures, 
+    and computing fitted values and robust standard errors using cluster-robust variance estimators (CR2). 
+    Visualization functions enable clear presentation of estimated effects and counterfactual trajectories following interventions. 
+    Background on methods for causal inference in interrupted time series can be found in Linden and Adams (2011) <doi:10.1111/j.1365-2753.2010.01504.x> 
+    and Lopez Bernal, Cummins, and Gasparrini (2018) <doi:10.1093/ije/dyy135>.
+License: MIT + file LICENSE
+Imports: dplyr, nlme, clubSandwich, ggplot2, stats, AICcmodavg
+Suggests: knitr, rmarkdown, lmtest, testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-12 14:39:31 UTC; Gu
+Author: Hanmin Gu [aut, cre]
+Maintainer: Hanmin Gu <ghm21@yonsei.ac.kr>
+Repository: CRAN
+Date/Publication: 2026-07-12 15:10:02 UTC

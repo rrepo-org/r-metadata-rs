@@ -1,0 +1,81 @@
+Package: mlr3forecast
+Title: Extending 'mlr3' to Time Series Forecasting
+Version: 0.2.0
+Authors@R: c(
+    person("Maximilian", "Mücke", , "muecke.maximilian@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-9432-9795")),
+    person("Marc", "Becker", , "marcbecker@posteo.de", role = "aut",
+           comment = c(ORCID = "0000-0002-8115-0400")),
+    person("Bernd", "Bischl", , "bernd.bischl@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-6002-6980"))
+  )
+Description: Extends the 'mlr3' package and ecosystem to time series
+    forecasting. Provides forecasting tasks, learners, resampling
+    strategies, performance measures, and 'mlr3pipelines' operators for
+    time-series feature engineering. Machine learning regression learners
+    can be turned into forecasters through recursive and direct multi-step
+    strategies.
+License: LGPL-3
+URL: https://mlr3forecast.mlr-org.com,
+        https://github.com/mlr-org/mlr3forecast
+BugReports: https://github.com/mlr-org/mlr3forecast/issues
+Depends: mlr3 (>= 1.7.0), R (>= 3.6.0)
+Imports: backports (>= 1.5.0), checkmate (>= 2.0.0), cli, data.table
+        (>= 1.18.0), generics (>= 0.1.2), lgr, mlr3misc (>= 0.22.0),
+        mlr3pipelines (>= 0.11.0), paradox (>= 1.0.1), R6 (>= 2.4.1),
+        stats, utils
+Suggests: distributional, fabletools, feasts, forecast (>= 9.0.2),
+        ggplot2 (>= 3.4.0), greybox, mlr3tuning, nnet, nnfor (>=
+        0.9.9), prophet (>= 1.1.7), Rcatch22, Rlgt (>= 0.2.3), rpart,
+        smooth (>= 4.4.0), testthat (>= 3.2.0), tidyselect, timeSeries,
+        tsbox, tscount (>= 1.4.3), tsfeatures, tsibble, tsibbledata,
+        vctrs, vdiffr (>= 1.0.0), withr (>= 3.0.0), xts, zoo
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/r6: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+Collate: 'DirectForecaster.R' 'LearnerFcst.R' 'zzz.R'
+        'LearnerFcstAdam.R' 'LearnerFcstAr.R' 'LearnerFcstArfima.R'
+        'LearnerFcstArima.R' 'LearnerFcstAutoAdam.R'
+        'LearnerFcstAutoArima.R' 'LearnerFcstAutoCes.R'
+        'LearnerFcstAutoGum.R' 'LearnerFcstAutoMsarima.R'
+        'LearnerFcstAutoSsarima.R' 'LearnerFcstBaggedModel.R'
+        'LearnerFcstBats.R' 'LearnerFcstCes.R' 'LearnerFcstCroston.R'
+        'LearnerFcstElm.R' 'LearnerFcstEs.R' 'LearnerFcstEts.R'
+        'LearnerFcstForecast.R' 'LearnerFcstGum.R'
+        'LearnerFcstHoltWinters.R' 'LearnerFcstMean.R'
+        'LearnerFcstMlp.R' 'LearnerFcstMsarima.R' 'LearnerFcstNnetar.R'
+        'LearnerFcstProphet.R' 'LearnerFcstRandomWalk.R'
+        'LearnerFcstRlgt.R' 'LearnerFcstSma.R' 'LearnerFcstSmooth.R'
+        'LearnerFcstSparma.R' 'LearnerFcstSpline.R'
+        'LearnerFcstSsarima.R' 'LearnerFcstStlm.R'
+        'LearnerFcstStructTS.R' 'LearnerFcstTbats.R'
+        'LearnerFcstTheta.R' 'LearnerFcstTscount.R' 'LearnerFcstTslm.R'
+        'MeasureACF1.R' 'MeasureCoverage.R' 'MeasureDirectional.R'
+        'MeasureMPE.R' 'MeasureMSIS.R' 'MeasurePinball.R'
+        'MeasureScaled.R' 'MeasureWAPE.R' 'MeasureWinkler.R'
+        'PipeOpFcstAvg.R' 'PipeOpFcstCatch22.R' 'PipeOpFcstFeasts.R'
+        'PipeOpFcstFourier.R' 'PipeOpFcstLags.R' 'PipeOpFcstRolling.R'
+        'PipeOpFcstSplitKey.R' 'PipeOpFcstTsfeats.R'
+        'PipeOpFcstUniteKey.R' 'PipeOpTargetTrafo.R'
+        'PipeOpTargetTrafoBoxCox.R' 'PredictionDataFcst.R'
+        'PredictionFcst.R' 'RecursiveForecaster.R' 'ResamplingFcstCV.R'
+        'ResamplingFcstHoldout.R' 'TaskFcst.R'
+        'TaskFcstAirpassengers.R' 'TaskFcstElectricity.R'
+        'TaskFcstLivestock.R' 'TaskFcstLynx.R' 'TaskFcstUsaccdeaths.R'
+        'as_task_fcst.R' 'assertions.R' 'autoplot.R' 'bibentries.R'
+        'direct_forecaster.R' 'forecast.R' 'helper.R'
+        'helper_data_table.R' 'helper_freq.R' 'helper_key.R'
+        'partition.R' 'pipeline_fcst_local.R' 'recursive_forecaster.R'
+        'reexports.R' 'selector.R' 'tsf.R'
+NeedsCompilation: no
+Packaged: 2026-08-24 09:14:07 UTC; mmuecke
+Author: Maximilian Mücke [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-9432-9795>),
+  Marc Becker [aut] (ORCID: <https://orcid.org/0000-0002-8115-0400>),
+  Bernd Bischl [aut] (ORCID: <https://orcid.org/0000-0001-6002-6980>)
+Maintainer: Maximilian Mücke <muecke.maximilian@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-24 10:10:08 UTC

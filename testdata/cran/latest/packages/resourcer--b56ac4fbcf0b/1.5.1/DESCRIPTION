@@ -1,0 +1,35 @@
+Package: resourcer
+Type: Package
+Title: Resource Resolver
+Version: 1.5.1
+Authors@R: 
+    c(person(given = "Yannick",
+             family = "Marcon",
+             role = c("aut", "cre"),
+             email = "yannick.marcon@obiba.org",
+             comment = c(ORCID = "0000-0003-0138-2023")),
+      person("OBiBa group",
+             role="cph",
+             email="info@obiba.org"))
+Description: A resource represents some data or a computation unit. It is 
+    described by a URL and credentials. This package proposes a Resource model
+    with "resolver" and "client" classes to facilitate the access and the usage of the 
+    resources.
+License: LGPL (>= 2.1)
+Depends: R (>= 3.5.0), R6, httr
+Suggests: testthat, knitr, haven, readr, readxl, ssh, sys, mongolite,
+        dplyr, dbplyr, DBI, RMariaDB, RPostgres, sparklyr, RPresto (>=
+        1.4.0), nodbi, rmarkdown
+URL: https://www.obiba.org/resourcer/
+BugReports: https://github.com/obiba/resourcer/issues
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-03-23 19:15:30 UTC; ymarcon
+Author: Yannick Marcon [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0138-2023>),
+  OBiBa group [cph]
+Maintainer: Yannick Marcon <yannick.marcon@obiba.org>
+Repository: CRAN
+Date/Publication: 2026-03-24 10:20:02 UTC

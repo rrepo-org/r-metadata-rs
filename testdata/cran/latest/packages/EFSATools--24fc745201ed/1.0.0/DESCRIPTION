@@ -1,0 +1,41 @@
+Package: EFSATools
+Type: Package
+Title: EFSA Ensemble of Data Collections Tools
+Version: 1.0.0
+Maintainer: Luca Belmonte <luca.belmonte@efsa.europa.eu>
+Authors@R: 
+  c(person(given = "Lorenzo",
+           family = "Copelli",
+           role = "aut",
+           comment = c(ORCID = "0009-0002-4305-065X")),
+    person(given = "Luca",
+           family = "Belmonte",
+           role = c("aut", "cre"),
+           email = "luca.belmonte@efsa.europa.eu",
+           comment = c(ORCID = "0000-0002-7977-9170")))
+Description: Provides tools for dataset operations and utilities designed to
+  preserve data history within EFSA's ad hoc data collections. It also
+  imports packages developed by EFSA that provide additional support for data
+  collection activities.
+License: EUPL-1.2
+URL: https://openefsa.github.io/EFSATools/
+BugReports: https://github.com/openefsa/EFSATools/issues
+Depends: R (>= 4.1.0)
+Imports: checkmate (>= 2.3.1), dplyr (>= 1.1.4), glue (>= 1.7.0), rlang
+        (>= 1.1.4), stringr (>= 1.5.1), tidyr (>= 1.3.1), eppoFindeR
+        (>= 2.0.0), distilleR (>= 1.0.0)
+Suggests: devtools (>= 2.4.5), tibble (>= 3.3.0), covr (>= 3.6.4),
+        knitr (>= 1.0), rmarkdown (>= 2.0), testthat (>= 3.0.0),
+        usethis (>= 2.2.3), roxygen2 (>= 7.2.1), cli (>= 3.6.5)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/Needs/website: pkgdown
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2026-04-27 10:05:51 UTC; copello
+Author: Lorenzo Copelli [aut] (ORCID: <https://orcid.org/0009-0002-4305-065X>),
+  Luca Belmonte [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-7977-9170>)
+Date/Publication: 2026-04-28 20:00:08 UTC

@@ -1,0 +1,43 @@
+Package: biomes
+Title: Reproducible Occurrence-to-Biome Classification Using 31 Global
+        Biome Schemes
+Version: 0.9.4
+Authors@R: 
+    c(person("Hans Christian", "Groß", email = "hc.gross@gmx.de", role = c("cre", "aut")),
+        person("Alexander", "Zizka", email = "alexander.zizka@biologie.uni-marburg.de", role = c("aut", "fnd")),
+        person("Anna", "Walentowitz", role = "aut"),
+        person("Jan-Christopher", "Fischer", role = "aut"))
+Description: Reproducibly classifies occurrence records into biome classes using
+ 31 published global terrestrial biome schemes compiled by Fischer and colleagues
+ (2022) <doi:10.1111/geb.13574>, provided as harmonised raster layers at 10x10 km
+ resolution globally. Includes functions to choose the most suitable biome scheme
+ for a dataset by a data-driven ranking, to classify occurrence records, and to
+ tabulate and visualise the result. Works with user-provided occurrences or a
+ taxon name, in which case occurrences are downloaded from GBIF
+ (<https://www.gbif.org>) and
+ cleaned automatically.
+URL: https://azizka.github.io/biomes/, https://github.com/azizka/biomes
+BugReports: https://github.com/azizka/biomes/issues
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 8.0.0
+Depends: R (>= 4.1.0), terra
+Imports: readr, checkmate, rlang, ggplot2, sf, viridis, tidyterra,
+        utils
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), dplyr, tidyr, rgbif,
+        CoordinateCleaner, cowplot, ggforce, rstudioapi
+Config/testthat/edition: 3
+License: CC BY 4.0
+LazyData: true
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-21 15:07:14 UTC; hcgro
+Author: Hans Christian Groß [cre, aut],
+  Alexander Zizka [aut, fnd],
+  Anna Walentowitz [aut],
+  Jan-Christopher Fischer [aut]
+Maintainer: Hans Christian Groß <hc.gross@gmx.de>
+Repository: CRAN
+Date/Publication: 2026-08-31 13:40:02 UTC

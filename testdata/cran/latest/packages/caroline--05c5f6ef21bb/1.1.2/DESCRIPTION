@@ -1,0 +1,30 @@
+Package: caroline
+Version: 1.1.2
+Date: 2026-07-13
+Title: A Collection of Database, Data Structure, Data Conversion,
+        Visualization, Reporting, and General Utility Functions
+Author: David Schruth [aut, cre]
+Maintainer: David Schruth <code@anthropoidea.org>
+Depends: R (>= 2.0.0), methods
+Suggests: MASS, RSQLite, grid
+Enhances: DBI, gplots
+Description: This R-extension package contains dozens of functions useful
+ for: database style joins [nerge()] & aggregation [bestBy(), groupBy() & regroup()],
+ database migration [dbWriteTable2()], file I/O [write.delim(), read.tab()], 
+ text parsing / data mining [m()], data structure conversion [nv(), tab2df()], 
+ summarizing & reporting [pct(), fit.1ln.rprt()], character string manipulation [m() & pad()],
+ legend table making [sstable() & leghead()] & plot placement [legend.position()],  
+ plot annotation [labsegs() & mvlabs()], data visualization [pies(), spie(), & heatmatrix()], 
+ and data exploration [hyperplot(), plot.xy.ab.p()], batch scripting [parseArgString()].
+ The package's greatest contributions stem from its database style merge, 
+ aggregation and interface functions as well as in it's extensive
+ use and propagation of row, column and vector names in most functions. 
+ The latest additions are plotting functions [confound.grid() & sparge()] that intake 
+ a dataframe & formulas to visually resolve variable confounding (Simpson, 1951). 
+License: Artistic-2.0
+LazyLoad: yes
+Authors@R: person(given="David",family="Schruth", role=c('aut','cre'),email="code@anthropoidea.org")
+NeedsCompilation: no
+Packaged: 2026-07-15 05:26:08 UTC; mint
+Repository: CRAN
+Date/Publication: 2026-07-15 06:40:20 UTC

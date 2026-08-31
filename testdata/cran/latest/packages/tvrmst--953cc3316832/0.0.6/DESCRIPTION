@@ -1,0 +1,27 @@
+Package: tvrmst
+Type: Package
+Title: Time-Varying Restricted Mean Survival Time from Survival
+        Matrices
+Version: 0.0.6
+Authors@R: person(given = c("Imad"),
+  family = "EL BADISY",
+  role = c("aut", "cre"),
+  email = "elbadisyimad@gmail.com")
+Author: Imad EL BADISY [aut, cre]
+Maintainer: Imad EL BADISY <elbadisyimad@gmail.com>
+Description: Utilities for restricted mean survival time (RMST) and
+  time-varying restricted mean survival time quantities computed from survival
+  curves provided on a time grid. The package is model-agnostic and accepts
+  only a time vector and survival matrices, returning RMST-based quantities and
+  bootstrap summaries. For restricted mean survival time methodology, see Royston 
+  and Parmar (2013) <doi:10.1186/1471-2288-13-152>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: stats
+Suggests: ggplot2, survival, testthat (>= 3.0.0), roxygen2 (>= 7.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-11 15:19:35 UTC; imad-el-badisy
+Repository: CRAN
+Date/Publication: 2026-03-16 19:40:02 UTC

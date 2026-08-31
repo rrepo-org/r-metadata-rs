@@ -1,0 +1,31 @@
+Package: tidyextreme
+Title: A Tidy Toolbox for Climate Extreme Indices
+Version: 1.0.0
+Authors@R: 
+    person(
+      given = "Marcio",
+      family = "Baldissera Cure", 
+      email = "marciobcure@gmail.com",
+      role = c("aut", "cre", "cph")
+    )
+URL: https://github.com/Mauritia-flexuosa/tidyextreme
+BugReports: https://github.com/Mauritia-flexuosa/tidyextreme/issues
+Description: Calculate Expert Team on Climate Change Detection and Indices (ETCCDI) <-- (acronym)
+    climate indices from daily or hourly temperature and precipitation data. Provides flexible data handling.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: dplyr (>= 1.0.0), lubridate (>= 1.8.0), zoo (>= 1.8.0),
+        data.table (>= 1.14.0), cli (>= 3.0.0), rlang (>= 1.0.0),
+        tidyselect (>= 1.2.1)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, ggplot2, tidyr, DT,
+        tibble
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-01 21:18:45 UTC; mcure
+Author: Marcio Baldissera Cure [aut, cre, cph]
+Maintainer: Marcio Baldissera Cure <marciobcure@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-04 18:00:03 UTC

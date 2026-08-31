@@ -1,0 +1,38 @@
+Package: diegr
+Title: Dynamic and Interactive EEG Graphics
+Version: 0.3.1
+Authors@R: 
+    c(
+    person("Zdeňka", "Geršlová", email = "gerslovaz@math.muni.cz", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1973-0479")),
+    person("Stanislav", "Katina", email = "katina@math.muni.cz", role = c("rev"),
+               comment = c(ORCID = "0000-0002-3256-5482", "Reviewer and Supervisor")),
+    person("Martin", "Lamoš", role = c("ctb"),
+    comment = "Provided anonymized data from the project AZV NU21-04-0044")
+    )
+Description: Allows to visualize high-density electroencephalography (HD-EEG) data through interactive plots and animations, enabling exploratory and communicative analysis of temporal-spatial brain signals. Funder: Masaryk University (Grant No. MUNI/A/1457/2023).
+License: MIT + file LICENSE
+Date: 2026-08-19
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: dplyr, rlang, ggplot2, gganimate, plotly, rgl, sf, scales,
+        stats, purrr, tidyr, MASS
+LazyData: true
+Suggests: av, gifski, magick, knitr, rmarkdown, RSQLite, DBI, dbplyr,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://gerslovaz.github.io/diegr/
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2026-08-20 08:34:19 UTC; zdenda
+Author: Zdeňka Geršlová [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1973-0479>),
+  Stanislav Katina [rev] (ORCID: <https://orcid.org/0000-0002-3256-5482>,
+    Reviewer and Supervisor),
+  Martin Lamoš [ctb] (Provided anonymized data from the project AZV
+    NU21-04-0044)
+Maintainer: Zdeňka Geršlová <gerslovaz@math.muni.cz>
+Repository: CRAN
+Date/Publication: 2026-08-21 05:44:05 UTC

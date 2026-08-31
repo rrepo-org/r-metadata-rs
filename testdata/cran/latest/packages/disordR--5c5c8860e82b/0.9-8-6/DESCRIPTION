@@ -1,0 +1,28 @@
+Package: disordR
+Type: Package
+Title: Non-Ordered Vectors
+Version: 0.9-8-6
+Authors@R: person(given=c("Robin", "K. S."), family="Hankin", role = c("aut","cre"), email="hankin.robin@gmail.com", comment = c(ORCID = "0000-0001-5982-0415"))
+Imports: digest, methods, Matrix (>= 1.3-3)
+Suggests: mvp,knitr,rmarkdown,testthat,covr
+VignetteBuilder: knitr
+Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
+Description: Functionality for manipulating values of associative
+  maps.  The package is a dependency for mvp-type
+  packages that use the STL map class: it traps
+  plausible idiom that is ill-defined (implementation-specific) and
+  returns an informative error, rather than returning a possibly
+  incorrect result.  To cite the package in publications please use
+  Hankin (2022) <doi:10.48550/ARXIV.2210.03856>.
+License: GPL (>= 2)
+URL: https://github.com/RobinHankin/disordR,
+        https://robinhankin.github.io/disordR/
+BugReports: https://github.com/RobinHankin/disordR/issues
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2026-03-11 15:40:28 UTC; rhankin
+Author: Robin K. S. Hankin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5982-0415>)
+Repository: CRAN
+Date/Publication: 2026-03-12 09:50:02 UTC

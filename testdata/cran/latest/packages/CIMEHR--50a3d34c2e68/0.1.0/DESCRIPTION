@@ -1,0 +1,35 @@
+Package: CIMEHR
+Title: Gaussian Clinically Informative Visiting and Observation
+        Processes in Electronic Health Record (EHR) Data
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Cheng-Han", family = "Yang",
+         email = "chenghanyang728@gmail.com",
+         role = c("aut","cre"),
+         comment = c(ORCID = "0000-0002-4161-3140")),
+  person(given = "Yiren", family = "Hou",
+         email = "yiren.hou@yale.edu",
+         role = c("aut"), 
+         comment = c(ORCID = "0009-0005-0422-4268"))
+ )
+Description: Fits semiparametric joint models for longitudinal electronic health record (EHR) data that addresses two-stage hierarchical missingness mechanism. The first stage is the visiting process, and the second stage is the observation process. The core CIMEHR method (Clinical Informative Missingness for Electronic Health Records) uses a three-stage procedure: partial likelihood with log-normal frailty for visit intensity, probit regression with shared latent factor-linked random effects for observation, and weighted least squares with risk-set centering for the outcome. These three stages are connected through a shared latent factor that induces dependence across all three processes. A data simulator and implementations of common benchmark methods (linear mixed models, multiple imputation, and others) are included for comparative studies. Detailed methods are described in Yang, Shi, and Mukherjee (2026) <doi:10.48550/arXiv.2602.15374>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: tibble, dplyr, tidyr, knitr, rmarkdown
+Imports: MASS, Rcpp, nleqslv, pbivnorm, numDeriv, stats, utils,
+        data.table, mice, nlme, slim
+LinkingTo: Rcpp
+URL: https://github.com/ysph-dsde/CIMEHR
+BugReports: https://github.com/ysph-dsde/CIMEHR/issues
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-06-02 13:29:18 UTC; yh785
+Author: Cheng-Han Yang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-4161-3140>),
+  Yiren Hou [aut] (ORCID: <https://orcid.org/0009-0005-0422-4268>)
+Maintainer: Cheng-Han Yang <chenghanyang728@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-08 18:00:25 UTC

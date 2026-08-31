@@ -1,0 +1,32 @@
+Package: pwr4exp
+Title: Power Analysis for Research Experiments
+Version: 1.0.1
+Authors@R: c(
+    person("Kai", "Wang", , "kai.wang@usys.ethz.ch", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-6672-1121")),
+    person("Mutian", "Niu", , "mutian.niu@usys.ethz.ch", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0003-4484-4611"))
+  )
+Description: Provides tools for calculating statistical power for experiments 
+    analyzed using linear mixed models. It supports standard designs, including 
+    randomized block, split-plot, and Latin Square designs, while offering flexibility 
+    to accommodate a variety of other complex study designs.
+License: GPL (>= 2)
+URL: https://github.com/an-ethz/pwr4exp,
+        https://an-ethz.github.io/pwr4exp/
+BugReports: https://github.com/an-ethz/pwr4exp/issues
+Depends: R (>= 2.10), stats
+Suggests: agricolae, AlgDesign, crossdes, FrF2, knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: emmeans, MASS, Matrix, methods, nlme, numDeriv
+NeedsCompilation: no
+Packaged: 2025-11-11 11:20:28 UTC; wangkai
+Author: Kai Wang [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-6672-1121>),
+  Mutian Niu [aut, cph] (ORCID: <https://orcid.org/0000-0003-4484-4611>)
+Maintainer: Kai Wang <kai.wang@usys.ethz.ch>
+Repository: CRAN
+Date/Publication: 2025-11-11 11:50:02 UTC

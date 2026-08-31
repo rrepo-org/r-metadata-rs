@@ -1,0 +1,34 @@
+Package: netsubsamp
+Type: Package
+Title: Multivariate Inference of Network Moments by Subsampling
+Version: 1.0.0
+Authors@R: c(
+    person("Mingyu",    "Qi",   role = "aut"),
+    person("Chen-Wei",  "Hua",  role = "aut"),
+    person("Tianxi",    "Li",   email = "tianxili@umn.edu", role = c("aut", "cre")),
+    person("Wen",       "Zhou", role = "aut"))
+Description: Implements node subsampling methods for multivariate inference on
+    network moments (rescaled motif counts), including: uniform node subsampling
+    to approximate the joint distribution of multiple network moments (Algorithm 1);
+    externally sparsified moments for density-matched comparisons (Algorithm 2);
+    and a two-sample test for unmatchable networks with unequal edge densities
+    via a split-and-sparsify subsampling procedure (Algorithm 3). Built-in support
+    for V-shape (2-star), triangle, and 3-star motifs, with a user-extensible
+    interface for arbitrary additional motifs. Parallel execution is supported
+    via 'doParallel' and 'foreach'. Based on Qi, Hua, Li and Zhou (2024)
+    <doi:10.48550/arXiv.2409.01599>.
+License: GPL-3
+Encoding: UTF-8
+Imports: foreach, doParallel, parallel, stats
+Suggests: Matrix, randnet, testthat (>= 3.0.0)
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-15 14:32:26 UTC; tianxili
+Author: Mingyu Qi [aut],
+  Chen-Wei Hua [aut],
+  Tianxi Li [aut, cre],
+  Wen Zhou [aut]
+Maintainer: Tianxi Li <tianxili@umn.edu>
+Repository: CRAN
+Date/Publication: 2026-04-21 18:22:07 UTC

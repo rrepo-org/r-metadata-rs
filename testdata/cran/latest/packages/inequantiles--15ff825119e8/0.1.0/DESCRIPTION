@@ -1,0 +1,39 @@
+Package: inequantiles
+Title: Quantile-Based Inequality Indicators for Complex Survey Data
+Version: 0.1.0
+Authors@R: c(
+    person("Silvia", "Scarpa", , "silvia.scarpa@unimore.it", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0003-4003-1621")),
+    person("Stefan", "Sperlich", email = "Stefan.Sperlich@unige.ch", 
+    role = "aut"))
+Description: Estimates quantile-based inequality indicators from complex
+    survey data, including the quantile ratio index (QRI), quintile share
+    Ratio (QSR), Palma ratio, and percentile ratios, together with the Gini
+    coefficient. Influence functions are provided for linearization and
+    variance estimation, along with a rescaled bootstrap for complex sampling
+    designs. Estimation from grouped data is also supported.
+    See Scarpa et al. (2025) <doi:10.1093/jssam/smaf024> for details.
+License: MIT + file LICENSE
+URL: https://silviascarpa.github.io/inequantiles/,
+        https://github.com/silviascarpa/inequantiles/
+BugReports: https://github.com/silviascarpa/inequantiles/issues/
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+LazyData: true
+Imports: Rdpack
+RdMacros: Rdpack
+Suggests: knitr, rmarkdown, ggplot2, scales, kableExtra, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-05-26 12:52:36 UTC; scarp
+Author: Silvia Scarpa [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-4003-1621>),
+  Stefan Sperlich [aut]
+Maintainer: Silvia Scarpa <silvia.scarpa@unimore.it>
+Repository: CRAN
+Date/Publication: 2026-05-29 12:00:02 UTC

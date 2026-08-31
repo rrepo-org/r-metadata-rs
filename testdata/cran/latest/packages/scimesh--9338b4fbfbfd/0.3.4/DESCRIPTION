@@ -1,0 +1,65 @@
+Package: scimesh
+Type: Package
+Title: Headless Publication-Quality 3D Mesh Rendering Engine
+Version: 0.3.4
+Authors@R: c(
+    person("Tim", "Sch\u00e4fer", email = "ts+code@rcmd.org",
+           role = c("aut", "cre")),
+    person("Martin", "Ho\u0159e\u0148ovsk\u00fd", role = "ctb",
+           comment = "Author of Catch2 (cpp_tests/catch_amalgamated.{h,cpp})"),
+    person("Christophe", "Riccio", role = "ctb",
+           comment = "Author of GLM - OpenGL Mathematics (src/third_party/glm/)"),
+    person("Dimitri", "Diakopoulos", role = "ctb",
+           comment = "Author of tinyply (src/third_party/tinyply.{h,cpp})"),
+    person("Syoyo", "Fujita", role = "ctb",
+           comment = "Author of tinyobjloader (src/third_party/tiny_obj_loader.h)"),
+    person("Tim", "Sch\u00e4fer", role = "ctb",
+           comment = "Author of libfs (src/third_party/libfs.h)"),
+    person("Sebastian", "Reiter", role = "ctb",
+           comment = "Author of stl_reader (src/third_party/stl_reader.h)"),
+    person("Sean", "Barrett", role = "ctb",
+           comment = "Author of stb libraries (src/third_party/stb_image*.h)")
+    )
+Description: A fast, GPU-free 3D software renderer written in modern C++17 with
+    native R bindings. Renders triangle meshes to publication-quality images
+    entirely on the CPU, requiring no display server or graphics hardware.
+    Features multi-light Blinn-Phong shading, screen-space ambient occlusion,
+    anti-aliasing, depth fog, transparency, wireframe rendering, texture
+    mapping, and procedural geometry generation. Supports standard mesh
+    file formats with PNG and PPM output. Works on high-performance
+    computing clusters, headless servers, containers, and continuous
+    integration pipelines, making it suitable for scientific visualization
+    across neuro-imaging, molecular structures, and general 3D graphics.
+License: MIT + file LICENSE
+URL: https://github.com/dfsp-spirit/scimesh,
+        https://dfsp-spirit.github.io/scimesh/
+BugReports: https://github.com/dfsp-spirit/scimesh/issues
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0), png, freesurferformats, viridisLite,
+        knitr, rmarkdown
+VignetteBuilder: knitr
+SystemRequirements: C++17
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: yes
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+Packaged: 2026-08-20 18:45:07 UTC; ts
+Author: Tim Schäfer [aut, cre],
+  Martin Hořeňovský [ctb] (Author of Catch2
+    (cpp_tests/catch_amalgamated.{h,cpp})),
+  Christophe Riccio [ctb] (Author of GLM - OpenGL Mathematics
+    (src/third_party/glm/)),
+  Dimitri Diakopoulos [ctb] (Author of tinyply
+    (src/third_party/tinyply.{h,cpp})),
+  Syoyo Fujita [ctb] (Author of tinyobjloader
+    (src/third_party/tiny_obj_loader.h)),
+  Tim Schäfer [ctb] (Author of libfs (src/third_party/libfs.h)),
+  Sebastian Reiter [ctb] (Author of stl_reader
+    (src/third_party/stl_reader.h)),
+  Sean Barrett [ctb] (Author of stb libraries
+    (src/third_party/stb_image*.h))
+Maintainer: Tim Schäfer <ts+code@rcmd.org>
+Repository: CRAN
+Date/Publication: 2026-08-21 14:10:10 UTC

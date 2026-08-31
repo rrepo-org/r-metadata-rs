@@ -1,0 +1,39 @@
+Package: plantTracker
+Title: Extract Demographic and Competition Data from Fine-Scale Maps
+Version: 1.2.1
+Date: 2026-01-09
+Authors@R: c(
+    person("Alice", "Stears", , "alice.e.stears@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1325-6641")),
+    person("Jared", "Studyvin", , "studyvin@uwyo.edu", role = "aut"),
+    person("David", "Atkins", , "datkins8@uwyo.edu", role = "aut")
+  )
+Author: Alice Stears [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-1325-6641>),
+  Jared Studyvin [aut],
+  David Atkins [aut]
+Maintainer: Alice Stears <alice.e.stears@gmail.com>
+Description: Extracts growth, survival, and local neighborhood density
+    information from repeated, fine-scale maps of organism occurrence.
+    Further information about this package can be found in our journal
+    article, "plantTracker: An R package to translate maps of plant
+    occurrence into demographic data" published in 2022 in Methods in
+    Ecology and Evolution (Stears, et al., 2022)
+    <doi:10.1111/2041-210X.13950>.
+License: MIT + file LICENSE
+URL: https://github.com/aestears/plantTracker
+Depends: R (>= 2.10)
+Imports: graphics, grDevices, igraph, Matrix, methods, sf, stats,
+        units, utils
+Suggests: ggplot2, knitr, minidown, rmarkdown, spelling, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-01-09 22:19:52 UTC; astears
+Repository: CRAN
+Date/Publication: 2026-01-10 00:50:08 UTC

@@ -1,0 +1,22 @@
+Package: ggchord
+Title: Multi-Sequence Alignment Chord Diagram Visualization Tool
+Version: 0.8.0
+Authors@R: person(given = "Jem", family = "Dang", email = "dangjem0730@gmail.com", role = c("aut", "cre"))
+Description: A 'ggplot2'-based R package that visualizes multi-sequence alignment results as chord diagrams using layered grammar of graphics. Users build chord plots by stacking geom layers (geom_seq, geom_ribbon, geom_gene, geom_axis). Layout parameters are specified within each geom layer, following 'ggplot2' conventions. Homologous regions between query and subject sequences are intuitively displayed.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: ggplot2 (>= 4.0.0), grDevices, grid
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, qpdf, dplyr, plotly, testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/DangJem/ggchord,
+        https://dangjem.github.io/ggchord/
+BugReports: https://github.com/DangJem/ggchord/issues
+NeedsCompilation: no
+Packaged: 2026-08-24 07:29:47 UTC; vutmvu
+Author: Jem Dang [aut, cre]
+Maintainer: Jem Dang <dangjem0730@gmail.com>
+Config/roxygen2/version: 8.0.0
+Repository: CRAN
+Date/Publication: 2026-08-24 08:20:19 UTC

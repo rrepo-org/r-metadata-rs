@@ -1,0 +1,39 @@
+Package: apifetch
+Type: Package
+Title: Token-Authenticated REST API Retrieval Toolkit
+Version: 0.1.0
+Date: 2026-06-26
+Authors@R: c(
+    person("André", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+    person("Hugo", "Vasconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+    person("Diogo", "Bezerra", email = "diogo.bezerra@ufpe.br", role = "aut"),
+    person("Marcos", "Wasilew", email = "marcos.wasilew@gmail.com", role = "aut"),
+    person("Carlos", "Amorin", email = "carlos.agaf@ufpe.br", role = "aut"))
+Description: A small, dependency-light toolkit for talking to token-authenticated
+    REST APIs. It manages authentication tokens in process environment variables
+    (never written to disk), builds requests with configurable authentication and
+    pagination strategies, and retrieves paginated data either one page at a time
+    or in chunks combined into a single tibble. The design is API-agnostic: a
+    single 'apifetch_api' profile describes an endpoint together with how it
+    authenticates and paginates, so the same verbs work across different services.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, httr2, stats, tibble, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/StrategicProjects/apifetch,
+        https://strategicprojects.github.io/apifetch/
+BugReports: https://github.com/StrategicProjects/apifetch/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-26 19:37:47 UTC; leite
+Author: André Leite [aut, cre],
+  Hugo Vasconcelos [aut],
+  Diogo Bezerra [aut],
+  Marcos Wasilew [aut],
+  Carlos Amorin [aut]
+Maintainer: André Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2026-07-02 18:40:19 UTC

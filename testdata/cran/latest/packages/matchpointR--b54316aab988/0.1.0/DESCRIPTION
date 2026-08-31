@@ -1,0 +1,35 @@
+Package: matchpointR
+Type: Package
+Title: Tidy Access to Women's Tennis Association (WTA) Data
+Version: 0.1.0
+Authors@R: person(
+    given = "Alejandro",
+    family = "Navas González",
+    email = "angnar@telaris.es",
+    role = c("aut", "cre"),
+    comment = c(alias = "Angnar"))
+Description: Scrapes and tidies publicly available data from the
+    Women's Tennis Association website (<https://www.wtatennis.com>).
+    Provides helpers to retrieve player biographies, singles and doubles
+    career overviews, match histories, live rankings and aggregate
+    statistics. Dynamic pages are rendered through a headless 'Chrome'
+    session so 'JavaScript'-generated content is fully captured, and
+    all outputs are returned as tidy data frames suitable for downstream
+    analysis or visualisation.
+License: Apache License (>= 2)
+URL: https://github.com/Angnar-97/matchpointR
+BugReports: https://github.com/Angnar-97/matchpointR/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: chromote, cli, jsonlite, magick, purrr, rvest, stringr,
+        tibble, xml2
+Suggests: httr2, knitr, rmarkdown, rsvg, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-04-26 14:34:10 UTC; User
+Author: Alejandro Navas González [aut, cre] (alias: Angnar)
+Maintainer: Alejandro Navas González <angnar@telaris.es>
+Repository: CRAN
+Date/Publication: 2026-04-28 19:40:12 UTC

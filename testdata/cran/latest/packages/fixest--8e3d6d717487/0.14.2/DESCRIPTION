@@ -1,0 +1,53 @@
+Package: fixest
+Type: Package
+Title: Fast Fixed-Effects Estimations
+Version: 0.14.2
+Authors@R: 
+    c(person(given = "Laurent",
+             family = "Berge",
+             role = c("aut", "cre"),
+             email = "laurent.berge@u-bordeaux.fr"),
+      person(given = "Sebastian",
+             family = "Krantz",
+             role = "ctb"),
+      person(given = "Grant",
+             family = "McDermott",
+             role = "ctb",
+             email = "grantmcd@uoregon.edu",
+             comment = c(ORCID = "0000-0001-7883-8573")),
+       person(given = "Russell",
+             family = "Lenth",
+             role = "ctb",
+             email = "russell-lenth@uiowa.edu"),
+      person(given = "Kyle",
+             family = "Butts",
+             role = "ctb",
+             email = "buttskyle96@gmail.com"))
+Imports: stats, graphics, grDevices, tools, utils, methods, numDeriv,
+        nlme, sandwich, Rcpp(>= 1.0.5), dreamerr(>= 1.4.0),
+        stringmagic(>= 1.2.0)
+Suggests: knitr, rmarkdown, data.table, plm, MASS, pander, ggplot2,
+        lfe, tinytex, pdftools, emmeans, estimability, AER, Matrix
+LinkingTo: Rcpp
+Depends: R(>= 3.5.0)
+Description: Fast and user-friendly estimation of econometric models with multiple fixed-effects. Includes ordinary least squares (OLS), instrumental variables (IV), generalized linear models (GLM), maximum likelihood estimation (ML), and the negative binomial.
+    The core of the package is based on optimized parallel C++ code, scaling especially well for large data sets. The method to obtain the fixed-effects coefficients is based on Bergé, Butts, McDermott (2026) <doi:10.48550/arXiv.2601.21749>.
+    Further provides tools to export and view the results of several estimations with intuitive design to change the standard-errors.
+License: GPL-3
+BugReports: https://github.com/lrberge/fixest/issues
+URL: https://lrberge.github.io/fixest/,
+        https://github.com/lrberge/fixest
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.3.2.9000
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2026-06-26 12:18:47 UTC; berge028
+Author: Laurent Berge [aut, cre],
+  Sebastian Krantz [ctb],
+  Grant McDermott [ctb] (ORCID: <https://orcid.org/0000-0001-7883-8573>),
+  Russell Lenth [ctb],
+  Kyle Butts [ctb]
+Maintainer: Laurent Berge <laurent.berge@u-bordeaux.fr>
+Repository: CRAN
+Date/Publication: 2026-06-26 13:10:02 UTC

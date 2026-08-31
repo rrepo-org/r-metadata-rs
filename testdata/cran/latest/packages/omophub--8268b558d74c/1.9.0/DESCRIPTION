@@ -1,0 +1,32 @@
+Package: omophub
+Title: R Client for the 'OMOPHub' Medical Vocabulary API
+Version: 1.9.0
+Authors@R: c(
+    person("Alex", "Chen", email = "alex@omophub.com", role = c("aut", "cre", "cph")),
+    person("Observational Health Data Science and Informatics", role = c("cph"))
+  )
+Description: Provides an R interface to the 'OMOPHub' API for accessing
+    'OHDSI ATHENA' standardized medical vocabularies. Supports concept search,
+    semantic search using neural embeddings, concept similarity, vocabulary
+    exploration, hierarchy navigation, relationship queries, concept
+    mappings, and FHIR-to-OMOP concept resolution with automatic pagination.
+License: MIT + file LICENSE
+URL: https://github.com/omopHub/omophub-R, https://docs.omophub.com,
+        https://omophub.github.io/omophub-R/, https://omophub.com
+BugReports: https://github.com/omopHub/omophub-R/issues
+Depends: R (>= 4.1)
+Imports: httr2 (>= 1.0.0), R6, rlang (>= 1.0.0), cli, tibble, purrr,
+        glue, checkmate
+Suggests: testthat (>= 3.0.0), httptest2, webmockr, knitr, rmarkdown,
+        keyring, withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-08-12 10:53:36 UTC; konstantin
+Author: Alex Chen [aut, cre, cph],
+  Observational Health Data Science and Informatics [cph]
+Maintainer: Alex Chen <alex@omophub.com>
+Repository: CRAN
+Date/Publication: 2026-08-19 18:20:02 UTC

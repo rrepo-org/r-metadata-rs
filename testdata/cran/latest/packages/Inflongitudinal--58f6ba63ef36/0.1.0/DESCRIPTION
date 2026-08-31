@@ -1,0 +1,29 @@
+Package: Inflongitudinal
+Type: Package
+Title: Detecting Influential Subjects in Longitudinal Data
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Atanu", family = "Bhattacharjee", role = "aut"),
+    person(given = "Tanmoy", family = "Majumdar",
+           email = "tanmoy.stat.ku@gmail.com",
+           role = c("aut", "cre")),
+    person(given = "Gajendra", family = "Kumar Vishwakarma", role = "aut"))
+Description: Provides methods for detecting influential subjects in
+    longitudinal data, particularly when observations are collected at
+    irregular time points. The package identifies subjects whose response
+    trajectories deviate substantially from population-level patterns,
+    helping to diagnose anomalies and undue influence on model estimates.
+Imports: ggplot2, dplyr, mice
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-02-19 17:00:23 UTC; Tanmoy
+Author: Atanu Bhattacharjee [aut],
+  Tanmoy Majumdar [aut, cre],
+  Gajendra Kumar Vishwakarma [aut]
+Maintainer: Tanmoy Majumdar <tanmoy.stat.ku@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-24 19:20:15 UTC

@@ -1,0 +1,22 @@
+Package: profmem
+Version: 0.7.0
+Title: Simple Memory Profiling for R
+Imports: utils
+Suggests: R.rsp, markdown, microbenchmark
+VignetteBuilder: R.rsp
+Authors@R: c(person("Henrik", "Bengtsson", role=c("aut", "cre", "cph"),
+                                          email = "henrikb@braju.com"))
+Description: A simple and light-weight API for memory profiling of R expressions.  The profiling is built on top of R's built-in memory profiler ('utils::Rprofmem()'), which records every memory allocation done by R (also native code).
+License: LGPL (>= 2.1)
+LazyLoad: TRUE
+URL: https://henrikbengtsson.github.io/profmem/,
+        https://github.com/HenrikBengtsson/profmem
+BugReports: https://github.com/HenrikBengtsson/profmem/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-05-02 20:14:48 UTC; henrik
+Author: Henrik Bengtsson [aut, cre, cph]
+Maintainer: Henrik Bengtsson <henrikb@braju.com>
+Repository: CRAN
+Date/Publication: 2025-05-02 21:00:02 UTC

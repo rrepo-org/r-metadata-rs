@@ -1,0 +1,27 @@
+Package: fcmfd
+Type: Package
+Title: Fuzzy C-Means for Fuzzy Data
+Version: 0.1.2
+Authors@R: person("José", "Ortigas", email = "jose.ortigas@unmsm.edu.pe", role = c("aut", "cre"))
+Description: Implements a fuzzy clustering approach for ordinal Likert-type data
+    using triangular fuzzy numbers (TFNs). The package extends the classical
+    fuzzy C-means algorithm to better handle uncertainty in ordinal scales and
+    includes automatic selection of the number of clusters using the Xie-Beni
+    validity index. References: Coppi, R., D'Urso, P., and Giordani, P. (2012),
+    "Fuzzy and possibilistic clustering for fuzzy data", <doi:10.1016/j.csda.2010.09.013>. Xie, X. L. and Beni, G.
+    (1991), "A validity measure for fuzzy clustering", <doi:10.1109/34.85677>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+Imports: stats, graphics
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-05 04:17:36 UTC; pepeo
+Author: José Ortigas [aut, cre]
+Maintainer: José Ortigas <jose.ortigas@unmsm.edu.pe>
+Repository: CRAN
+Date/Publication: 2026-07-05 06:10:17 UTC

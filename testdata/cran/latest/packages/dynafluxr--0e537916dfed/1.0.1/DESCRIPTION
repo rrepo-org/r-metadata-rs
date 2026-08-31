@@ -1,0 +1,33 @@
+Package: dynafluxr
+Type: Package
+Title: Retrieve Reaction Rate Dynamics from Metabolite Concentration
+        Time Courses
+Version: 1.0.1
+Authors@R: person(given = "Serguei",
+                    family = "Sokol",
+                    role = c("aut", "cre"),
+                    email = "sokol@insa-toulouse.fr")
+Description: Reaction rate dynamics can be retrieved from metabolite
+  concentration time courses. User has to provide corresponding stoichiometric
+  matrix but not a regulation model (Michaelis-Menten or similar).
+  Instead of solving an ordinary differential equation (ODE) system describing the evolution of concentrations,
+  we use B-splines to catch the concentration and rate dynamics then
+  solve a least square problem on their coefficients with non-negativity
+  (and optionally monotonicity) constraints.
+  Constraints can be also set on initial values of concentration.
+  The package 'dynafluxr' can be used as a library but also as
+  an application with command line interface dynafluxr::cli("-h") or graphical user interface dynafluxr::gui().
+License: GPL-2
+Encoding: UTF-8
+Depends: bspline (>= 2.5.0), nlsic (>= 1.1.1)
+Imports: optparse, qpdf, arrApply, slam, gmresls (>= 0.2), shiny,
+        shinyjs, shinyFiles
+RoxygenNote: 7.3.2
+Suggests: RUnit, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-07-07 08:27:14 UTC; sokol
+Author: Serguei Sokol [aut, cre]
+Maintainer: Serguei Sokol <sokol@insa-toulouse.fr>
+Repository: CRAN
+Date/Publication: 2025-07-10 14:50:09 UTC

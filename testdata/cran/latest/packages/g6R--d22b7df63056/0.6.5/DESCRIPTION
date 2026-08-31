@@ -1,0 +1,39 @@
+Package: g6R
+Title: Graph Visualisation Engine Widget for R and 'shiny' Apps
+Version: 0.6.5
+Authors@R: 
+    c(
+    person("David", "Granjon", , "dgranjon@ymail.com", role = c("aut", "cre")),
+    person("David", "Schoch", , "david@schochastics.net", role = c("aut")),
+    person(family = "cynkra GmbH", role = "fnd"),
+    person(family = "Bristol Myers Squibb", role = "fnd")
+    )
+Description: Create stunning network experiences powered by the 'G6' graph visualisation engine
+    'JavaScript' library <https://g6.antv.antgroup.com/en>. In 'shiny' mode, modify your
+    graph directly from the server function to dynamically interact with nodes and edges.
+    Select your favorite layout among 20 choices. 15 behaviors are available such as
+    interactive edge creation, collapse-expand and brush select.
+    17 plugins designed to improve the user experience such as a mini-map,
+    toolbars and grid lines. Customise the look and feel of your graph with comprehensive
+    options for nodes, edges and more.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/cynkra/g6R, https://cynkra.github.io/g6R/
+BugReports: https://github.com/cynkra/g6R/issues
+Imports: htmlwidgets, shiny
+Suggests: knitr, rmarkdown, quarto, igraph, roxy.shinylive, testthat
+        (>= 3.0.0), withr, stringr, htmltools, bslib
+VignetteBuilder: quarto, knitr
+Depends: R (>= 4.1.0)
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-17 11:56:44 UTC; davidgranjon
+Author: David Granjon [aut, cre],
+  David Schoch [aut],
+  cynkra GmbH [fnd],
+  Bristol Myers Squibb [fnd]
+Maintainer: David Granjon <dgranjon@ymail.com>
+Repository: CRAN
+Date/Publication: 2026-07-17 12:50:14 UTC

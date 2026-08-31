@@ -1,0 +1,35 @@
+Package: xegaDfGene
+Title: Gene Operations for Real-Coded Genes
+Version: 1.0.0.10
+Authors@R: 
+    person(given = "Andreas",
+           family = "Geyer-Schulz",
+           role = c("aut", "cre"),
+           email = "Andreas.Geyer-Schulz@kit.edu",
+          comment = c(ORCID = "0009-0000-5237-3579"))
+Description: Representation-dependent gene-level operations  
+        for genetic and evolutionary algorithms with real-coded genes
+        used in the R-package 'xega' <https://CRAN.R-project.org/package=xega>
+        are collected in this package. The common feature of the gene
+        operations is that all of them are useful for derivation-free
+        optimization algorithms. At the moment the package  
+        implements initialization, mutation, crossover, and replication 
+        operations for differential evolution as described in
+        Price, Kenneth V., Storn, Rainer M. and Lampinen, Jouni A. (2005)
+        <doi:10.1007/3-540-31306-0>.  In addition, several (more recent) 
+        methods for determining the scale factor are provided.
+        For 'xega''s architecture,
+        see Geyer-Schulz, A. (2025) <doi:10.5445/IR/1000187255>.
+License: MIT + file LICENSE
+URL: https://github.com/ageyerschulz/xegaDfGene
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Imports: rlang, xegaSelectGene
+NeedsCompilation: no
+Packaged: 2026-08-20 07:23:06 UTC; dj2333
+Author: Andreas Geyer-Schulz [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-5237-3579>)
+Maintainer: Andreas Geyer-Schulz <Andreas.Geyer-Schulz@kit.edu>
+Repository: CRAN
+Date/Publication: 2026-08-20 14:20:02 UTC

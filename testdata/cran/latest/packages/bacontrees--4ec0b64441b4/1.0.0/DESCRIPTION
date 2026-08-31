@@ -1,0 +1,40 @@
+Package: bacontrees
+Title: Bayesian Context Trees for Discrete Sequence Data
+Version: 1.0.0
+Authors@R: c(
+    person("Victor", "Freguglia", email = "victorfreguglia@gmail.com",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-6189-4453")),
+    person("Thiago", "Paulichen",
+             role = "ctb",
+             comment = c(ORCID = "0009-0002-5505-2409")))
+Description: Models discrete sequential data using Bayesian Context Trees.
+    Context trees, also known as Variable Length Markov
+    Chains (VLMCs), are parsimonious Markov models where the order of
+    dependence can vary with the observed past. Provides a generic 'R6'
+    class structure that exposes the full tree
+    for building custom algorithms, exact Bayesian inference via a
+    bottom-up recursive algorithm (closed-form marginal likelihood,
+    Maximum A Posteriori (MAP) tree, exact posterior probabilities, and
+    exact sampling from the posterior), a frequentist estimator via the
+    context algorithm with likelihood-ratio pruning,
+    simulation utilities, and a Metropolis-Hastings sampler.
+    See Paulichen and Freguglia (2026) <doi:10.48550/arXiv.2603.25806>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: R6, stringr, glue, purrr, dplyr, progressr, Rcpp, igraph,
+        ggraph, ggplot2, Brobdingnag
+Depends: R (>= 4.1.0)
+LazyData: true
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2026-05-07 21:53:03 UTC; victo
+Author: Victor Freguglia [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-6189-4453>),
+  Thiago Paulichen [ctb] (ORCID: <https://orcid.org/0009-0002-5505-2409>)
+Maintainer: Victor Freguglia <victorfreguglia@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-12 19:20:31 UTC

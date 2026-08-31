@@ -1,0 +1,43 @@
+Package: gpcihybridIIEM
+Type: Package
+Title: Generalized Process Capability Indices via EM for Hybrid Type-II
+        Data
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1606-0844"))
+  )
+Description: Implements the Expectation-Maximization (EM) algorithm of
+    Dempster, Laird, and Rubin (1977) <doi:10.1111/j.2517-6161.1977.tb01600.x>
+    for parameter estimation under Hybrid Type-II censored data (Childs
+    et al. (2003) <doi:10.1007/BF02517803>; Balakrishnan and Kundu (2013)
+    <doi:10.1002/nav.21545>) using the 'UniCensorEM' package and computes
+    Generalized Process Capability Indices (GPCIs). Supports classical and
+    generalized capability indices including Cpy (Maiti et al. (2010)
+    <doi:10.1080/16843703.2010.11673233>), Cp, Cpk, Cpu, Cpl, Cpm, Cpmk,
+    Spmk (Dey and Saha (2019) <doi:10.1007/s41872-019-00081-4>), CpTk
+    (Saha et al. (2018) <doi:10.1080/21681015.2018.1437793>), Cpc, CNpmc
+    (Alotaibi et al. (2022) <doi:10.1155/2022/3135264>), CNpmkc (Saha et al.
+    (2024) <doi:10.1142/S021853932450013X>), and CNpk (Saha et al. (2022)
+    <doi:10.1080/02664763.2021.1971632>). Computes point estimates, bias,
+    mean squared error, risk, Heidelberger and Welch convergence diagnostics,
+    convergence probability, Bayesian MCMC sampling chains, goodness-of-fit
+    testing via 'gofPHCS', and bootstrap confidence intervals at 90 percent,
+    95 percent, and 99 percent levels. Accommodates user-defined probability
+    density or mass functions, cumulative distribution functions, and survival
+    functions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, UniCensorEM, gofPHCS
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-17 00:13:14 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>)
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-21 13:00:31 UTC

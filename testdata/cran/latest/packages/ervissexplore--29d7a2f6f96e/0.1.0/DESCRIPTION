@@ -1,0 +1,27 @@
+Package: ervissexplore
+Title: Retrieve and Explore ERVISS Respiratory Virus Surveillance Data
+Version: 0.1.0
+Authors@R: 
+    person("Yohann", "Mansiaux", , "y.mansiaux@epiconcept.fr", role = c("aut", "cre"))
+Description: Provides easy access to ERVISS (European Respiratory Virus 
+    Surveillance Summary) data from the EU-ECDC <https://github.com/EU-ECDC/Respiratory_viruses_weekly_data>. Enables retrieval, filtering,
+    and optional visualization of data across European countries. Data is fetched
+    directly from the EU-ECDC Respiratory Viruses Weekly Data repository, with
+    support for both latest data and historical snapshots for reproducible 
+    analyses.
+License: MIT + file LICENSE
+URL: https://github.com/Epiconcept-Paris/ervissexplore,
+        https://epiconcept-paris.github.io/ervissexplore/
+BugReports: https://github.com/Epiconcept-Paris/ervissexplore/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, data.table, ggplot2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-02-16 08:58:47 UTC; Yohann Mansiaux
+Author: Yohann Mansiaux [aut, cre]
+Maintainer: Yohann Mansiaux <y.mansiaux@epiconcept.fr>
+Repository: CRAN
+Date/Publication: 2026-02-19 19:50:08 UTC

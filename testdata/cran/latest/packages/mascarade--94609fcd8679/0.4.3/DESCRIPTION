@@ -1,0 +1,32 @@
+Package: mascarade
+Type: Package
+Title: Generating Cluster Masks for Single-Cell Dimensional Reduction
+        Plots
+Version: 0.4.3
+Authors@R: person("Alexey", "Sergushichev", email = "alsergbox@gmail.com", role = c("aut", "cre"))
+Description: Implements a procedure to automatically generate 2D masks
+    for clusters on dimensional reduction plots from methods like 
+    t-SNE (t-distributed stochastic neighbor embedding) or 
+    UMAP (uniform manifold approximation and projection),
+    with a focus on single-cell RNA-sequencing data.
+Imports: data.table, spatstat.geom (>= 3.7-3), spatstat.explore,
+        lifecycle, ggplot2, polyclip, polylabelr, ggforce, vctrs,
+        rlang, cli, systemfonts (>= 1.3.0), Rcpp
+LinkingTo: Rcpp, BH
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+Suggests: testthat (>= 3.1.5), rmarkdown, knitr, patchwork, Seurat,
+        scales, SeuratObject, svglite, colorrepel (>= 0.5.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://alserglab.github.io/mascarade/
+BugReports: https://github.com/alserglab/mascarade/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-28 16:59:17 UTC; runner
+Author: Alexey Sergushichev [aut, cre]
+Maintainer: Alexey Sergushichev <alsergbox@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-30 23:30:10 UTC

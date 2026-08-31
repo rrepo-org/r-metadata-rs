@@ -1,0 +1,29 @@
+Package: MultiNMix
+Title: Multi-Species N-Mixture (MNM) Models with 'nimble'
+Version: 0.1.0
+Authors@R: 
+  c(person(given = "Niamh",
+           family = "Mimnagh",
+           role = c("aut", "cre"),
+           email = "niamhmimnagh@gmail.com"),
+    person(given = "Rafael",
+           family = "de Andrade Moral",
+           role = "aut"))
+Description: Simulating data and fitting multi-species N-mixture models using 'nimble'. Includes features for handling zero-inflation and temporal correlation, Bayesian inference, model diagnostics, parameter estimation, and predictive checks. Designed for ecological studies with zero-altered or time-series data. Mimnagh, N., Parnell, A., Prado, E., & Moral, R. A. (2022) <doi:10.1007/s10651-022-00542-7>. Royle, J. A. (2004) <doi:10.1111/j.0006-341X.2004.00142.x>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: clusterGeneration, mvtnorm, extraDistr, rstan, stats, abind,
+        methods, coda
+Depends: nimble, R (>= 3.5)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+LazyData: true
+URL: https://github.com/niamhmimnagh/MultiNMix
+BugReports: https://github.com/niamhmimnagh/MultiNMix/issues
+NeedsCompilation: no
+Packaged: 2025-03-17 17:21:20 UTC; niamh
+Author: Niamh Mimnagh [aut, cre],
+  Rafael de Andrade Moral [aut]
+Maintainer: Niamh Mimnagh <niamhmimnagh@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-19 12:50:02 UTC

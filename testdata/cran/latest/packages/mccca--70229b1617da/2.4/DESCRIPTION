@@ -1,0 +1,24 @@
+Package: mccca
+Type: Package
+Title: Visualizing Class Specific Heterogeneous Tendencies in
+        Categorical Data
+Version: 2.4
+Date: 2026-07-17
+Author: Mariko Takagishi [aut, cre]
+Authors@R: c(person(given = "Mariko", family = "Takagishi", role = c("aut","cre"), email = "m.takagishi0728@gmail.com"))
+Maintainer: Mariko Takagishi <m.takagishi0728@gmail.com>
+Description: Provides functions for performing multiple-class cluster correspondence analysis(MCCCA). The main functions are create.MCCCAdata() to create a list to be applied to MCCCA, MCCCA() to apply MCCCA, and plot.mccca() for visualizing MCCCA result. Methods used in the package are described in Mariko Takagishi and Michel van de Velden (2022)<doi:10.1080/10618600.2022.2035737>.
+License: GPL (>= 2)
+Depends: R (>= 4.1.0)
+Imports: magic, stringr, ggplot2, gridExtra, wordcloud, RColorBrewer,
+        stats, utils, colorspace, clusterSim, MASS, grDevices, Rcpp (>=
+        1.0.11)
+NeedsCompilation: yes
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.3
+Packaged: 2026-07-17 07:34:31 UTC; takagishimariko
+Repository: CRAN
+Date/Publication: 2026-07-21 07:20:02 UTC

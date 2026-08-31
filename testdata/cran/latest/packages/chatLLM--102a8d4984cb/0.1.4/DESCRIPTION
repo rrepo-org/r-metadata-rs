@@ -1,0 +1,29 @@
+Package: chatLLM
+Type: Package
+Title: A Flexible Interface for 'LLM' API Interactions
+Version: 0.1.4
+Authors@R: person(given = "Kwadwo Daddy Nyame",
+                  family = "Owusu Boakye",
+                  email = "kwadwo.owusuboakye@outlook.com",
+                  role = c("aut", "cre"))
+Maintainer: Kwadwo Daddy Nyame Owusu Boakye <kwadwo.owusuboakye@outlook.com>
+Description: Provides a flexible interface for interacting with Large Language Model ('LLM') 
+    providers including 'OpenAI', 'Azure OpenAI', 'Azure AI Foundry', 'Groq', 'Anthropic', 
+    'DeepSeek', 'DashScope', 'Gemini', 'Grok', 'GitHub Models', and AWS Bedrock. Supports both synchronous and asynchronous 
+    chat-completion APIs, with
+    features such as retry logic, dynamic model selection, customizable parameters, and
+    multi-message conversation handling. Designed to streamline integration with
+    state-of-the-art LLM services across multiple platforms.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: httr (>= 1.4.0), jsonlite (>= 1.7.2), stats
+Suggests: aws.signature, future, promises, later, testthat, roxygen2
+URL: https://github.com/knowusuboaky/chatLLM,
+        https://knowusuboaky.github.io/chatLLM/
+BugReports: https://github.com/knowusuboaky/chatLLM/issues
+NeedsCompilation: no
+Packaged: 2026-02-15 11:12:50 UTC; kwadw
+Author: Kwadwo Daddy Nyame Owusu Boakye [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-02-15 11:30:02 UTC

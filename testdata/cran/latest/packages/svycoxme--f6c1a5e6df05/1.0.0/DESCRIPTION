@@ -1,0 +1,30 @@
+Package: svycoxme
+Title: Mixed-Effects Cox Models for Complex Samples
+Version: 1.0.0
+Authors@R: 
+    person(given = "Bradley",
+           family = "Drayton",
+           role = c("aut", "cre", "cph"),
+           email = "brad.drayton@auckland.ac.nz")
+Description: Mixed-effect proportional hazards models for multistage stratified, 
+   cluster-sampled, unequally weighted survey samples. Provides variance 
+   estimation by Taylor series linearisation or replicate weights. 
+Depends: R (>= 4.1.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports: survey, coxme, survival, Rcpp, lme4, Matrix, future,
+        parallelly
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown, future.apply, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/bdrayton/svycoxme
+BugReports: https://github.com/bdrayton/svycoxme/issues
+NeedsCompilation: yes
+Packaged: 2025-05-07 01:35:10 UTC; bdra011
+Author: Bradley Drayton [aut, cre, cph]
+Maintainer: Bradley Drayton <brad.drayton@auckland.ac.nz>
+Repository: CRAN
+Date/Publication: 2025-05-09 09:50:06 UTC

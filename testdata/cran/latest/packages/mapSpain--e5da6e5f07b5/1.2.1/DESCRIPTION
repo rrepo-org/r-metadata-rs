@@ -1,0 +1,65 @@
+Type: Package
+Package: mapSpain
+Title: Administrative Boundaries and Static Map Tiles for Spain
+Version: 1.2.1
+Authors@R: c(
+    person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8457-4658")),
+    person("Eurostat", role = "cph",
+           comment = c(ROR = "033d3q980")),
+    person("Instituto Geográfico Nacional", role = "cph",
+           comment = c(ROR = "03yycdv57")),
+    person("Francisco J.", "Goerlich", role = "ctb",
+           comment = c(ORCID = "0000-0003-1626-525X"))
+  )
+Description: Administrative boundaries of Spain at several levels
+    (Autonomous Communities and Cities, provinces, municipalities and
+    'NUTS'), based on 'GISCO' from 'Eurostat'
+    <https://ec.europa.eu/eurostat/web/gisco> and 'CartoBase ANE' from
+    'Instituto Geográfico Nacional' <https://www.ign.es/>. Includes tools
+    to download and process static map tiles and a 'leaflet' plugin for
+    Spanish public administration tile providers.
+License: GPL-3
+URL: https://ropenspain.github.io/mapSpain/,
+        https://github.com/rOpenSpain/mapSpain
+BugReports: https://github.com/rOpenSpain/mapSpain/issues
+Depends: R (>= 4.1.0)
+Imports: cli (>= 3.6.0), countrycode (>= 1.2.0), giscoR (>= 1.0.0),
+        httr2 (>= 1.2.0), jsonlite, leaflet (>= 2.0.0), lifecycle,
+        rappdirs (>= 0.3.0), sf (>= 1.0.0), terra (>= 1.1-4), tibble,
+        tools, utils
+Suggests: dplyr, ggplot2 (>= 3.5.0), knitr, quarto, testthat (>=
+        3.0.0), tidyterra, withr
+VignetteBuilder: quarto
+Config/Needs/check: curl
+Config/Needs/coverage: covr
+Config/Needs/website: ragg, reactable, rnaturalearth, tidyverse,
+        devtools, remotes, ropenspain/rostemplate,
+        ropensci/rnaturalearthhires, geodata, sessioninfo, sfheaders,
+        rapidjsonr, jsonify, geometries, geobounds
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Copyright: © EuroGeographics for the administrative boundaries. Atlas
+        Nacional de España (ANE) CC-BY 4.0 <https://www.ign.es>. INE
+        <https://www.ine.es/en/index.htm>
+Encoding: UTF-8
+LazyData: true
+X-schema.org-applicationCategory: cartography
+X-schema.org-isPartOf: https://ropenspain.es/
+X-schema.org-keywords: ropenspain, tiles, r, maps, spatial, rstats,
+        r-package, municipalities, spain, gisco, provinces, ign,
+        autonomous-communities, administrative-boundaries,
+        static-tiles, cran, ggplot2, gis, nuts, ccaa
+NeedsCompilation: no
+Packaged: 2026-08-31 09:00:32 UTC; diego
+Author: Diego Hernangómez [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8457-4658>),
+  Eurostat [cph] (ROR: <https://ror.org/033d3q980>),
+  Instituto Geográfico Nacional [cph] (ROR: <https://ror.org/03yycdv57>),
+  Francisco J. Goerlich [ctb] (ORCID:
+    <https://orcid.org/0000-0003-1626-525X>)
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-31 17:00:13 UTC

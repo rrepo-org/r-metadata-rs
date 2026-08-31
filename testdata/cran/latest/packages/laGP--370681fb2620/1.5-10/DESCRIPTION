@@ -1,0 +1,25 @@
+Package: laGP
+Title: Local Approximate Gaussian Process Regression
+Version: 1.5-10
+Date: 2026-08-25
+Authors@R: c(person(given = c("Robert", "B."),
+                    family = "Gramacy",
+                    role = c("aut", "cre"),
+                    email = "rbg@vt.edu"),
+             person(given = "Furong",
+                    family = "Sun",
+                    role = "aut",
+                    email = "furongs@vt.edu"))
+Depends: R (>= 2.14)
+Imports: tgp, parallel
+Suggests: mvtnorm, MASS, interp, lhs, crs, DiceOptim
+Description: Performs approximate GP regression for large computer experiments and spatial datasets.  The approximation is based on finding small local designs for prediction (independently) at particular inputs. OpenMP and SNOW parallelization are supported for prediction over a vast out-of-sample testing set; GPU acceleration is also supported for an important subroutine.  OpenMP and GPU features may require special compilation.  An interface to lower-level (full) GP inference and prediction is provided. Wrapper routines for blackbox optimization under mixed equality and inequality constraints via an augmented Lagrangian scheme, and for large scale computer model calibration, are also provided.  For details and tutorial, see Gramacy (2016 <doi:10.18637/jss.v072.i01>.
+Maintainer: Robert B. Gramacy  <rbg@vt.edu>
+License: LGPL
+URL: https://bobby.gramacy.com/r_packages/laGP/
+NeedsCompilation: yes
+Packaged: 2026-08-25 16:19:23 UTC; bobby
+Author: Robert B. Gramacy [aut, cre],
+  Furong Sun [aut]
+Repository: CRAN
+Date/Publication: 2026-08-25 21:40:08 UTC

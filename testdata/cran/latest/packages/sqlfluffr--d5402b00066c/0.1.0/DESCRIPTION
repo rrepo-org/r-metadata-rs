@@ -1,0 +1,30 @@
+Package: sqlfluffr
+Type: Package
+Title: Wrapper to the 'SQL' Linter and Formatter 'sqlfluff'
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Brenden", "Smith",
+      email = "brendensmithmi@gmail.com",
+      role = c("aut", "cre", "cph")
+    )
+  )
+Description: An R interface to the 'Python' 'sqlfluff' 'SQL' linter and
+    formatter via the 'reticulate' package. Enables linting, fixing, and
+    parsing of 'SQL' queries with support for multiple dialects. Includes
+    special handling for 'glue' 'SQL' syntax with curly-brace placeholders.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: reticulate
+Suggests: testthat (>= 3.2.0), glue, rstudioapi, withr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+URL: https://github.com/brendensm/sqlfluffr
+BugReports: https://github.com/brendensm/sqlfluffr/issues
+NeedsCompilation: no
+Packaged: 2026-02-20 20:49:41 UTC; b
+Author: Brenden Smith [aut, cre, cph]
+Maintainer: Brenden Smith <brendensmithmi@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-02-25 18:50:03 UTC

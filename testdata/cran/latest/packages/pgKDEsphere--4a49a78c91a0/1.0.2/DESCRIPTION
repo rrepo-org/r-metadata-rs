@@ -1,0 +1,25 @@
+Package: pgKDEsphere
+Type: Package
+Title: Parametrically Guided Kernel Density Estimator for Spherical
+        Data
+Version: 1.0.2
+Date: 2025-10-28
+Authors@R: c(person("María", "Alonso-Pena", role = c("aut", "cre"),
+                     email = "mariaalonso.pena@usc.es"),
+            person("Gerda", "Claeskens", role = "aut"),
+			person("Irène", "Gijbels", role = "aut"))
+Author: María Alonso-Pena [aut, cre],
+  Gerda Claeskens [aut],
+  Irène Gijbels [aut]
+Maintainer: María Alonso-Pena <mariaalonso.pena@usc.es>
+Description: Nonparametric density estimation for (hyper)spherical data by means of a parametrically guided kernel estimator (Alonso-Pena et al. (2024) <doi:10.1111/sjos.12737>. The package also allows the data-driven selection of the smoothing parameter and the representation of the estimated density for circular and spherical data. Estimators of the density without guide can also be obtained.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.11), rgl, Directional, DirStats, circular,
+        matrixStats, rotasym, movMF
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2025-10-28 11:56:42 UTC; littl
+Repository: CRAN
+Date/Publication: 2025-10-28 21:20:02 UTC

@@ -1,0 +1,33 @@
+Package: DPComb
+Title: Discrete p-Value Combination Tests
+Version: 1.0.1
+Authors@R: c(
+      person("Gonzalo", "Contador", email = "gonzalo.contador@usm.cl", role = "aut"),
+      person("Shuaichuan", "Feng", email = "sfeng2@wpi.edu", role = "aut"),
+      person("Zheyang", "Wu", email = "zheyangwu@wpi.edu", role = c("aut", "cre")))  
+Depends: R (>= 3.5.0)
+Description: Provides tools for performing p-value combination tests with discrete input p-values. These tests combine significance evidence derived from independent discrete statistics to test a global null hypothesis, which is defined by the specified null distribution(s) of these discrete statistics. The testing procedure involves two main steps: 
+ (1) Wasserstein Adjustment: Each component of the combination statistic is replaced by an adjusted Z statistic. This adjustment, based on the minimum Wasserstein distance, preserves the discrete nature of the original statistics while better aligning them with their counterparts under continuity. 
+ (2) Calculation of the Significance of the Combination Statistic: A continuous distribution that optimally matches the discrete distribution of the combination statistic is obtained, and the testing p-value for the global null hypothesis is computed. 
+ The first step is analogous to Lancaster's approach but is generalized based on Wasserstein optimization. The second step allows for asymptotic control of Type I error with higher statistical power. The package implements several p-value combination methods, including Fisher’s, Pearson’s, George’s, Stouffer’s, and Edgington’s methods. The individual tests to be combined can be right-sided, left-sided, or two-sided, and can be based on binomial, Poisson, hypergeometric, noncentral hypergeometric, negative binomial, or geometric distributions, or a mixture of them. 
+ The underlying methodology and its foundations are described in the following references: 
+ Contador, Gonzalo and Wu, Zheyang (2025). A minimum Wasserstein distance approach to Fisher's combination of independent, discrete p-values. Scandinavian Journal of Statistics, 52(3), 1281-1300. <doi:10.1111/sjos.12787>
+ Contador, Gonzalo and Wu, Zheyang (2026). Optimal Adjustment and Combination of Independent Discrete p-Values. Under revision at the Journal of Computational and Graphical Statistics. <doi:10.48550/arXiv.2508.02647>
+ Lancaster, HO (1949). The combination of probabilities arising from data in discrete distributions. Biometrika, 36(3/4), 370-382. <doi:10.1093/biomet/36.3-4.370>. 
+License: MIT + file LICENSE
+URL: https://github.com/ZWuLab/DPComb
+BugReports: https://github.com/ZWuLab/DPComb/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: MCMCpack
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-08-09 18:03:07 UTC; zheyangwu
+Author: Gonzalo Contador [aut],
+  Shuaichuan Feng [aut],
+  Zheyang Wu [aut, cre]
+Maintainer: Zheyang Wu <zheyangwu@wpi.edu>
+Repository: CRAN
+Date/Publication: 2026-08-22 16:30:22 UTC

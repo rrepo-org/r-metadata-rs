@@ -1,0 +1,40 @@
+Package: AIGovernance
+Type: Package
+Title: Statistical Auditing and Governance Reporting for Employment AI
+        Systems
+Version: 0.1.0
+Authors@R: person("Subir", "Hait",
+    email = "haitsubi@msu.edu",
+    role  = c("aut", "cre"),
+    comment = c(ORCID = "0009-0004-9871-9677"))
+Description: Provides statistical auditing, risk documentation, and reporting
+    tools to support AI governance workflows for employment and hiring decision
+    systems. Implements the EEOC four-fifths adverse impact rule
+    (Equal Employment Opportunity Commission, 1978,
+    <https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XIV/part-1607>),
+    NYC Local Law 144 bias audit requirements (New York City, 2023,
+    <https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page>),
+    and the AI Risk Management Framework checklist items from the National
+    Institute of Standards and Technology
+    (2023, <doi:10.6028/NIST.AI.100-1>). Optionally supports EU AI Act
+    high-risk classification (European Parliament and Council, 2024,
+    <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689>).
+    The package does not provide legal advice or certify legal compliance; it
+    is a statistical and documentation support tool.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: cli, rlang, stats, tibble, dplyr
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Language: en-US
+URL: https://github.com/causalfragility-lab/AIGovernance
+BugReports: https://github.com/causalfragility-lab/AIGovernance/issues
+NeedsCompilation: no
+Packaged: 2026-05-19 14:37:57 UTC; Subir
+Author: Subir Hait [aut, cre] (ORCID: <https://orcid.org/0009-0004-9871-9677>)
+Maintainer: Subir Hait <haitsubi@msu.edu>
+Repository: CRAN
+Date/Publication: 2026-05-27 09:50:07 UTC

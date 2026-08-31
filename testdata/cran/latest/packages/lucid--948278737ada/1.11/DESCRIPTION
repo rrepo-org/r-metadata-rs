@@ -1,0 +1,30 @@
+Package: lucid
+Title: Printing Floating Point Numbers in a Human-Friendly Format
+Version: 1.11
+Authors@R: 
+    person("Kevin", "Wright", , "kw.stat@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0617-8673"))
+Description: Print vectors (and data frames) of floating point numbers
+    using a non-scientific format optimized for human readers.  Vectors of
+    numbers are rounded using significant digits, aligned at the decimal
+    point, and all zeros trailing the decimal point are dropped.  See:
+    Wright (2016). Lucid: An R Package for Pretty-Printing Floating Point
+    Numbers. In JSM Proceedings, Statistical Computing Section.
+    Alexandria, VA: American Statistical Association. 2270-2279.
+License: MIT + file LICENSE
+URL: https://kwstat.github.io/lucid/, http://kwstat.github.io/lucid/
+BugReports: https://github.com/kwstat/lucid/issues
+Imports: nlme
+Suggests: broom, dplyr, knitr, lattice, lme4, rjags, rmarkdown, sommer,
+        testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-03-03 19:45:58 UTC; wrightkevi
+Author: Kevin Wright [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-0617-8673>)
+Maintainer: Kevin Wright <kw.stat@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-03-03 21:20:37 UTC

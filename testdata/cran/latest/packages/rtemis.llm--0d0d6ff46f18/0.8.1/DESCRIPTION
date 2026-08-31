@@ -1,0 +1,29 @@
+Package: rtemis.llm
+Title: Large Language Models and Agentic AI
+Version: 0.8.1
+Date: 2026-04-28
+Authors@R: person(given = "E.D.", family = "Gennatas", role = c("aut", "cre", "cph"),
+    email = "gennatas@gmail.com", comment = c(ORCID = "0000-0001-9280-3609"))
+Description: Unified interface for creating LLM and Agent objects, generating responses and 
+    performing batch inference based on a type-checked and validated 'S7' backend. Features 
+    reasoning, structured output, memory management, and tool use. Supports 'Ollama' 
+    <https://docs.ollama.com/api>, 
+    'OpenAI'-compatible <https://developers.openai.com/api/reference/overview>, and 
+    'Anthropic'-compatible <https://platform.claude.com/docs/en/api/getting-started> endpoints.
+License: GPL (>= 3)
+URL: https://www.rtemis.org, https://docs.rtemis.org/r/llm,
+        https://docs.rtemis.org/r/llm-api
+BugReports: https://github.com/rtemis-org/llm/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli, data.table, digest, httr2, jsonlite, rtemis.core, S7
+Suggests: keyring, testthat (>= 3.0.0), xml2
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2026-04-29 23:50:32 UTC; sdg
+Author: E.D. Gennatas [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-9280-3609>)
+Maintainer: E.D. Gennatas <gennatas@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-04 12:10:02 UTC

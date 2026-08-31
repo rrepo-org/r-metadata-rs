@@ -1,0 +1,35 @@
+Package: nemoR
+Title: Access Open 'NeMO Archive' Datasets
+Version: 0.99.3
+Authors@R: 
+    c(
+        person("Maciej", "Pietrzak", email = "pietrzak.20@osu.edu",
+               role = c("aut", "cre"),
+               comment = c(ORCID = "0000-0001-5768-7884")),
+        person(given = "AbdElrahman", family = "Amer", role = "aut")
+    )
+Author: Maciej Pietrzak [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5768-7884>),
+  AbdElrahman Amer [aut]
+Maintainer: Maciej Pietrzak <pietrzak.20@osu.edu>
+Description: Provides helpers for discovering, planning, and downloading
+    open-access datasets from the Neuroscience Multi-Omic Archive ('NeMO';
+    <https://nemoarchive.org/>). The package builds reproducible file
+    manifests that record search parameters, file metadata, download URLs,
+    checksums, and local file paths. It supports exploratory 'NeMO' metadata
+    queries and provides first-pass bridges from downloaded files into
+    'SingleCellExperiment' and 'Seurat' workflows.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.3)
+Imports: httr2, jsonlite, tibble
+Suggests: BiocFileCache, BiocStyle, DropletUtils, knitr, Matrix,
+        rmarkdown, Seurat, SingleCellExperiment, S4Vectors, testthat
+        (>= 3.0.0), zellkonverter
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-30 13:01:17 UTC; pietrzak.20
+Repository: CRAN
+Date/Publication: 2026-07-06 12:30:02 UTC

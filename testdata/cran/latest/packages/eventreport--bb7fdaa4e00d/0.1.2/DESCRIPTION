@@ -1,0 +1,46 @@
+Package: eventreport
+Type: Package
+Title: Diagnose, Visualize, and Aggregate Event Report Level Data
+Version: 0.1.2
+Authors@R: c(
+  person(given = "Sebastian", family = "van Baalen", 
+  email = "sebastian.van-baalen@pcr.uu.se", 
+  role = c("aut", "cre", "cph"),
+  comment = c(ORCID = "0000-0003-3098-5587")),
+  person(given = "Kristine", family = "Höglund", 
+  email = "kristine.hoglund@pcr.uu.se", 
+  role = "aut",
+  comment = c(ORCID = "0000-0001-7167-609X")))
+Maintainer: Sebastian van Baalen <sebastian.van-baalen@pcr.uu.se>
+Description: Diagnose, visualize, and aggregate event report 
+    level data to the event level. Users provide an event report level 
+    dataset, specify their aggregation rules, and the package produces a
+    dataset aggregated at the event level. Also includes the Modes and 
+    Agents of Election-Related Violence in Côte d'Ivoire and Kenya (MAVERICK) dataset,
+    an event report level dataset that records all documented instances of 
+    electoral violence from the first multiparty election to 2022 in 
+    Côte d'Ivoire (1995-2022) and Kenya (1992-2022).
+    For more details see van Baalen and Höglund (2026)
+    <doi:10.1093/isq/sqag014>. Users of the enclosed MAVERICK dataset
+    should also cite van Baalen and Höglund (2026)
+    <doi:10.1093/jopres/xjaf012>.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, lubridate, purrr, tidyr, ggplot2, magrittr, rlang,
+        scales, tidyselect, tibble
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, devtools, tidyverse,
+        tinytable
+Depends: R (>= 3.5.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/sebastianvanbaalen/eventreport
+BugReports: https://github.com/sebastianvanbaalen/eventreport/issues
+NeedsCompilation: no
+Packaged: 2026-03-10 18:04:28 UTC; sebastian
+Author: Sebastian van Baalen [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-3098-5587>),
+  Kristine Höglund [aut] (ORCID: <https://orcid.org/0000-0001-7167-609X>)
+Repository: CRAN
+Date/Publication: 2026-03-11 00:20:16 UTC

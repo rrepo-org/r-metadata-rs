@@ -1,0 +1,37 @@
+Package: doseminer
+Type: Package
+Title: Extract Drug Dosages from Free-Text Prescriptions
+Version: 0.2.1
+Authors@R: 
+  c(person(given = 'David',
+           family = 'Selby',
+           role = c('aut', 'cre'),
+           email = 'david_antony.selby@dfki.de',
+           comment = c(ORCID = '0000-0001-8026-5663')),
+    person(given = 'Belay Birlie',
+           family = 'Yimer',
+           email = 'belaybirlie.yimer@astellas.com',
+           role = 'ctb'),
+    person(given = 'Ben',
+           family = 'Marwick',
+           email = 'benmarwick@gmail.com',
+           role = 'ctb'))
+Description: Utilities for converting unstructured electronic prescribing instructions into structured medication data. Extracts drug dose, units, daily dosing frequency and intervals from English-language prescriptions. Based on Karystianis et al. (2015) <doi:10.1186/s12911-016-0255-x>.
+BugReports: https://github.com/Selbosh/doseminer/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: magrittr(>= 2.0.1), stringr(>= 1.4.0)
+Suggests: rmarkdown, knitr, testthat, tidyr, dplyr, ggplot2, prettydoc
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+Language: en-GB
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-22 14:01:15 UTC; david
+Author: David Selby [aut, cre] (ORCID: <https://orcid.org/0000-0001-8026-5663>),
+  Belay Birlie Yimer [ctb],
+  Ben Marwick [ctb]
+Maintainer: David Selby <david_antony.selby@dfki.de>
+Repository: CRAN
+Date/Publication: 2026-07-22 16:10:09 UTC

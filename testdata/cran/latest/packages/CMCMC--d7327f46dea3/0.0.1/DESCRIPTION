@@ -1,0 +1,47 @@
+Package: CMCMC
+Type: Package
+Title: Contemporaneous Markov Chain Monte Carlo
+Version: 0.0.1
+Authors@R: c(
+    person("Ahmad", "ALQabandi", email = "ahmad.alqabandi@durham.ac.uk",
+           role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0009-0006-0055-3846")),
+    person("Louis", "Aslett", email = "louis.aslett@durham.ac.uk",
+           role = c("aut", "ths", "cph"),
+           comment = c(ORCID = "0000-0003-2211-233X")),
+    person("Murray", "Pollock", email = "murray.pollock@newcastle.ac.uk",
+           role = "aut"),
+    person("Gareth", "Roberts", email = "gareth.o.roberts@warwick.ac.uk",
+           role = "aut"))
+Description: Implements contemporaneous Markov chain Monte Carlo (CMCMC)
+    and interchain adaptive Markov chain Monte Carlo (INCA) samplers of
+    Craiu, Rosenthal and Yang (2009) <doi:10.1198/jasa.2009.tm08393> for
+    targets known up to a normalising
+    constant. The samplers run multiple Metropolis chains in parallel and
+    update proposal covariance estimates using
+    contemporaneous particle groups. Built-in target kernels include
+    multivariate normal, logistic regression, Poisson, Gaussian, Gamma, and
+    hierarchical models, with support for user-provided target kernels. The
+    formula interface glm_cmcmc() fits supported generalized linear models
+    using the built-in kernels. 'CUDA' is used when available, and an
+    'OpenMP'-enabled CPU backend is available on systems without a 'CUDA'
+    compiler.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+SystemRequirements: Optional CUDA toolkit and NVIDIA GPU for the CUDA
+        backend; OpenMP for parallel CPU execution.
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-15 15:15:09 UTC; ahmad
+Author: Ahmad ALQabandi [cre, aut, cph] (ORCID:
+    <https://orcid.org/0009-0006-0055-3846>),
+  Louis Aslett [aut, ths, cph] (ORCID:
+    <https://orcid.org/0000-0003-2211-233X>),
+  Murray Pollock [aut],
+  Gareth Roberts [aut]
+Maintainer: Ahmad ALQabandi <ahmad.alqabandi@durham.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-07-23 13:10:21 UTC

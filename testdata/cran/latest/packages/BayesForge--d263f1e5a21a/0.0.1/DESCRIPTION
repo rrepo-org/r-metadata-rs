@@ -1,0 +1,28 @@
+Package: BayesForge
+Type: Package
+Title: Bayesian Inference using 'numpyro' and 'XLA'
+Version: 0.0.1
+Authors@R: c(
+    person(
+      "Sebastian", "Sosa",
+      email = "bf@s-sosa.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: A high-performance probabilistic programming library that aims to unify the modeling experience by providing an intuitive model-building syntax together with the flexibility of low-level abstraction coding. It also includes pre-built functions for high-level abstraction and supports hardware-accelerated computation for improved scalability, including parallelization, vectorization, and execution on CPU (Central Processing Unit), GPU (Graphics Processing Unit), or TPU (Tensor Processing Unit) using 'JAX' (Just-In-Time compiled Accelerated linear algebra) as the computational backend: Sosa (2026) <doi:10.64898/2026.01.19.700318>.
+URL: https://s-sosa.com/BF/
+Encoding: UTF-8
+Imports: reticulate, abind, methods
+SystemRequirements: Python (>= 3.6), 'bayesforge' python library.
+Depends: R (>= 3.5.0)
+Suggests: testthat (>= 3.0.0), brms, rstan
+Config/testthat/edition: 3
+RoxygenNote: 8.0.0
+License: GPL (>= 3)
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-02 07:55:20 UTC; sebastian_sosa
+Author: Sebastian Sosa [aut, cre]
+Maintainer: Sebastian Sosa <bf@s-sosa.com>
+Repository: CRAN
+Date/Publication: 2026-06-08 17:50:31 UTC

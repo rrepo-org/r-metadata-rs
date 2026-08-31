@@ -1,0 +1,36 @@
+Package: opImputation
+Type: Package
+Title: Optimal Selection of Imputation Methods for Pain-Related
+        Numerical Data
+Version: 0.6
+Description: A model-agnostic framework for selecting dataset-specific imputation methods 
+        for missing values in numerical data related to pain. Lotsch J, Ultsch A (2025) 
+        "A model-agnostic framework for dataset-specific selection of missing value imputation 
+        methods in pain-related numerical data" Canadian Journal of Pain (in minor revision).
+Depends: R (>= 3.5.0)
+Imports: parallel, Rfit, methods, stats, caret, ABCanalysis, ggplot2,
+        future, future.apply, progressr, missForest, utils, mice,
+        miceRanger, multiUS, Amelia, mi, reshape2, DataVisualizations,
+        abind, cowplot, twosamples, ggh4x, ggrepel, tools
+LazyData: true
+Suggests: testthat (>= 3.0.0)
+License: GPL-3
+URL: https://github.com/JornLotsch/opImputation
+Encoding: UTF-8
+Authors@R: c(person(given = "Jorn",
+                      family = "Lotsch",
+                      role = c("aut", "cre"),
+                      email = "j.lotsch@em.uni-frankfurt.de",
+                      comment = c(ORCID = "0000-0002-5818-6958")),
+               person(given = "Alfred",
+                      family = "Ultsch",
+                      role = "aut",
+                      comment = c(ORCID = "0000-0002-7845-3283")))
+Date: 2025-11-04
+NeedsCompilation: no
+Packaged: 2025-11-04 12:22:21 UTC; joern
+Author: Jorn Lotsch [aut, cre] (ORCID: <https://orcid.org/0000-0002-5818-6958>),
+  Alfred Ultsch [aut] (ORCID: <https://orcid.org/0000-0002-7845-3283>)
+Maintainer: Jorn Lotsch <j.lotsch@em.uni-frankfurt.de>
+Repository: CRAN
+Date/Publication: 2025-11-07 13:50:02 UTC

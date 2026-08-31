@@ -1,0 +1,30 @@
+Package: OdysseusPathwayModule
+Title: Cohort Pathway Analysis with Pre-Index Event Support
+Version: 0.0.1
+Authors@R: 
+    person("Alexander", "Alexeyuk",
+           email = "AlexanderAlexeyuk@gmail.com", role = c("aut", "cre"))
+Maintainer: Alexander Alexeyuk <AlexanderAlexeyuk@gmail.com>
+Description: Provides cohort pathway analysis for Observational Medical
+    Outcomes Partnership (OMOP) Common Data Model databases,
+    including both standard (post-index) and pre-index pathway analyses.
+    The pre-index analysis identifies sequences of events occurring in a
+    lookback window before the target cohort index date. Built on the
+    'CohortPathways' analysis framework originally developed by Christopher
+    Knoll and the Observational Health Data Sciences and Informatics
+    community through 'WebAPI'. Methodological background and the
+    originating implementation are described in
+    <https://github.com/OHDSI/CohortPathways>.
+License: Apache License (>= 2)
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: DatabaseConnector, SqlRender
+Suggests: Eunomia, igraph, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-17 08:02:35 UTC; AlexanderAleksiayuk
+Author: Alexander Alexeyuk [aut, cre]
+Repository: CRAN
+Date/Publication: 2026-04-21 19:22:15 UTC

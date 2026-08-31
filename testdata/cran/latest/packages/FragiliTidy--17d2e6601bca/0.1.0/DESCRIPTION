@@ -1,0 +1,27 @@
+Package: FragiliTidy
+Title: Tidyverse-Compatible Fragility Index Calculations
+Version: 0.1.0
+Authors@R: person(given = "Tom",
+                  family = "Drake",
+                  role = c("aut", "cre"),
+                  email = "t.drake@ed.ac.uk")
+Description: Provides optimized, Tidyverse-compatible functions for calculating
+    the Fragility Index and Reverse Fragility Index for 2x2 contingency tables
+    from clinical trials. Uses customized hypergeometric and algebraic
+    calculations along with binary search algorithms to achieve substantial
+    speedups over standard implementations, with seamless integration into
+    'dplyr' pipelines.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: dplyr, purrr, rlang, tibble, stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/tomdrake/fragilitidy
+BugReports: https://github.com/tomdrake/fragilitidy/issues
+NeedsCompilation: no
+Packaged: 2026-06-22 04:02:09 UTC; tdrake
+Author: Tom Drake [aut, cre]
+Maintainer: Tom Drake <t.drake@ed.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-06-25 15:50:21 UTC

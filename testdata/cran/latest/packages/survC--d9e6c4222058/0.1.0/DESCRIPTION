@@ -1,0 +1,25 @@
+Package: survC
+Title: Survival Model Validation Utilities
+Version: 0.1.0
+Authors@R: 
+    c(person("Minhyuk", "Kim", email = "mhkim@zarathu.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0000-8083-5099")))
+Author: Minhyuk Kim [aut, cre] (ORCID: <https://orcid.org/0009-0000-8083-5099>)
+Maintainer: Minhyuk Kim <mhkim@zarathu.com>
+Description: Provides helper functions to compute linear predictors, time-dependent ROC curves,
+    and Harrell's concordance index for Cox proportional hazards models as described in Therneau (2024) <https://CRAN.R-project.org/package=survival>,
+    Therneau and Grambsch (2000, ISBN:0-387-98784-3), Hung and Chiang (2010) <doi:10.1002/cjs.10046>, Uno et al. (2007) <doi:10.1198/016214507000000149>,
+    Blanche, Dartigues, and Jacqmin-Gadda (2013) <doi:10.1002/sim.5958>, Blanche, Latouche, and Viallon (2013) <doi:10.1007/978-1-4614-8981-8_11>,
+    Harrell et al. (1982) <doi:10.1001/jama.1982.03320430047030>, Peto and Peto (1972) <doi:10.2307/2344317>, Schemper (1992) <doi:10.2307/2349009>,
+    and Uno et al. (2011) <doi:10.1002/sim.4154>.
+Imports: survival, stats, timeROC, officer, rvg
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://newjoseph.github.io/survC/
+Suggests: magrittr, jstable, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-24 00:33:07 UTC; minhyuk.kim
+Repository: CRAN
+Date/Publication: 2025-10-29 19:40:02 UTC

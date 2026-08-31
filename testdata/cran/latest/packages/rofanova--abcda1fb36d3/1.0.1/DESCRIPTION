@@ -1,0 +1,28 @@
+Package: rofanova
+Type: Package
+Title: Robust Functional Analysis of Variance
+Version: 1.0.1
+Authors@R: c(
+    person("Fabio", "Centofanti", 
+      email = "fabio.centofanti@kuleuven.be", 
+      role = c("cre","aut"))
+    )
+Description: Implements the robust functional analysis of variance (RoFANOVA), described in Centofanti et al. (2023) <doi:10.1093/jrsssc/qlad074>. 
+    It allows testing mean differences among groups of  functional data by being robust against the presence of outliers.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp,RcppArmadillo
+Imports: Rcpp, abind, parallel, stats
+Depends: fda.usc, robustbase
+URL: https://github.com/fabiocentofanti/rofanova
+BugReports: https://github.com/fabiocentofanti/rofanova/issues
+SystemRequirements: GNU make
+Suggests: knitr, rmarkdown, spelling, testthat
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2026-01-16 10:03:02 UTC; u0176071
+Author: Fabio Centofanti [cre, aut]
+Maintainer: Fabio Centofanti <fabio.centofanti@kuleuven.be>
+Repository: CRAN
+Date/Publication: 2026-01-16 11:30:15 UTC

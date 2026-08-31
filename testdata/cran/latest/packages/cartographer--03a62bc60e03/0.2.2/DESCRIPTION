@@ -1,0 +1,41 @@
+Package: cartographer
+Title: Turn Place Names into Map Data
+Version: 0.2.2
+Authors@R: 
+    c(person(given = "Carl",
+             family = "Suster",
+             email = "carl.suster@sydney.edu.au",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-7021-9380")),
+      person("Western Sydney Local Health District, NSW Health",
+             role = "cph",
+             comment = "2023-2025"))
+Description: A tool for easily matching spatial data when you have a list of
+    place/region names. You might have a data frame that came from a
+    spreadsheet tracking some data by suburb or state. This package can
+    convert it into a spatial data frame ready for plotting. The actual map
+    data is provided by other packages (or your own code).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: cli (>= 3.6.0), rlang (>= 1.1.0), sf (>= 1.0.12)
+Collate: 'cartographer-global.R' 'cartographer-package.R'
+        'add_geometry.R' 'data.R' 'resolve.R' 'zzz.R'
+Additional_repositories: http://packages.ropensci.org
+Depends: R (>= 4.1)
+LazyData: true
+Suggests: dplyr (>= 1.2.0), ggplot2 (>= 3.4.2), knitr, maps,
+        rnaturalearth, rnaturalearthhires, rmarkdown, testthat (>=
+        3.0.0)
+URL: https://github.com/cidm-ph/cartographer,
+        https://cidm-ph.github.io/cartographer/
+BugReports: https://github.com/cidm-ph/cartographer/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-03-19 05:34:34 UTC; csus5157
+Author: Carl Suster [aut, cre] (ORCID: <https://orcid.org/0000-0001-7021-9380>),
+  Western Sydney Local Health District, NSW Health [cph] (2023-2025)
+Maintainer: Carl Suster <carl.suster@sydney.edu.au>
+Repository: CRAN
+Date/Publication: 2026-03-19 13:20:07 UTC

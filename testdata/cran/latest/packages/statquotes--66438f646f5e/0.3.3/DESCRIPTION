@@ -1,0 +1,45 @@
+Package: statquotes
+Title: Quotes on Statistics, Data Visualization and Science
+Version: 0.3.3
+Date: 2025-07-28
+Authors@R: c(person("Michael", "Friendly", 
+                    email = "friendly@yorku.ca", 
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-3237-0941", Twitter="@datavisFriendly")),
+             person("Kevin", "Wright", 
+                    email = "kw.stat@gmail.com", 
+                    comment=c(ORCID = "0000-0002-0617-8673"),
+                    role = c("aut")),
+             person("Phil", "Chalmers", 
+                    email = "rphilip.chalmers@gmail.com", 
+                    role = c("aut")),
+             person("Matthew", "Sigal", 
+                    email = "matthewsigal@gmail.com", 
+                    role = c("ctb"))
+            )
+Language: en-US
+Description: Generates a random quotation from a database of quotes on topics
+    in statistics, data visualization and science. Other functions allow searching
+    the quotes database by key term tags, or authors or creating a word cloud.
+    The output is designed to be suitable for use at the console, in Rmarkdown
+    and LaTeX.
+Depends: R (>= 4.1.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Maintainer: Michael Friendly <friendly@yorku.ca>
+BugReports: https://github.com/friendly/statquotes/issues
+URL: https://github.com/friendly/statquotes/
+Imports: stringr, tidytext, wordcloud
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, dplyr, forcats, ggplot2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-07-23 19:35:35 UTC; friendly
+Author: Michael Friendly [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3237-0941>, Twitter: @datavisFriendly),
+  Kevin Wright [aut] (ORCID: <https://orcid.org/0000-0002-0617-8673>),
+  Phil Chalmers [aut],
+  Matthew Sigal [ctb]
+Repository: CRAN
+Date/Publication: 2025-07-23 19:50:02 UTC

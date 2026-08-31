@@ -1,0 +1,51 @@
+Package: uteals
+Title: Shared Utilities to Extend the 'teal' Modules
+Language: en-US
+Version: 0.0.5
+Date: 2026-07-09
+URL: https://github.com/phuse-org/uteals
+Authors@R: 
+    c(
+      person("Nadia", "Abraham", , "NAbraha5@ITS.JNJ.com", role = "aut"),
+      person("Chanchal", "Bhalla", , "CBhalla@ITS.JNJ.com", role = "aut"),
+      person("Peyman", "Eshghi", , "peymaan.es@gmail.com", role = c("aut", "cre")),
+      person("Pranith", "Gourisetty", , "PGourise@ITS.JNJ.com", role = "aut"),
+      person("Sohan", "Lal", , "SLal8@ITS.JNJ.com", role = "aut"),
+      person("Przemyslaw", "Posiadala", , "PPosiada@ITS.JNJ.com", role = "aut"),
+      person("Alina", "Tselinina", , "ATselini@ITS.JNJ.com", role = "aut"),
+      person("Konrad", "Pagacz", , "konrad.pagacz@gmail.com", role = c("aut")),
+      person(given = "PHUSE",  role = "cph")
+    )
+Description: Provides decorators, transformators, and utility functions
+    to extend the 'teal' framework for interactive data analysis
+    applications. Implements methods for data visualization enhancement,
+    statistical data transformations, and workflow integration tools.
+    Designed to support clinical and pharmaceutical research workflows
+    within the 'teal' ecosystem through modular and reusable components.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: DT, R6, checkmate, cowplot, dplyr, formatters, ggplot2,
+        ggplotify, gridify, jsonlite, junco, methods, openxlsx,
+        patchwork, rlang, rtables, shiny (>= 1.11.0), shinyWidgets,
+        shinyjs, teal, teal.code, teal.modules.clinical, teal.reporter,
+        tern, yaml, zip
+Suggests: forcats, knitr, rAccess, rmarkdown, teal.data,
+        teal.modules.general, teal.transform
+VignetteBuilder: knitr
+Config/Needs/website: insightsengineering/nesttemplate
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-09 12:35:48 UTC; kpagacz
+Author: Nadia Abraham [aut],
+  Chanchal Bhalla [aut],
+  Peyman Eshghi [aut, cre],
+  Pranith Gourisetty [aut],
+  Sohan Lal [aut],
+  Przemyslaw Posiadala [aut],
+  Alina Tselinina [aut],
+  Konrad Pagacz [aut],
+  PHUSE [cph]
+Maintainer: Peyman Eshghi <peymaan.es@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-09 13:50:02 UTC

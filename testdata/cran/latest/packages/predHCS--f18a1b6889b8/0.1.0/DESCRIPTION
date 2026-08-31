@@ -1,0 +1,49 @@
+Package: predHCS
+Type: Package
+Title: Point and Interval Prediction for Censored Data under Various
+        Hybrid Censoring Schemes
+Version: 0.1.0
+Authors@R: c(
+    person("Shikhar", "Tyagi", email = "shikhar1093tyagi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1606-0844")),
+    person("Arvind", "Pandey", email = "arvindmzu@gmail.com", role = "aut"),
+    person("Bhupendra", "Singh", email = "bhupendra.rana@gmail.com", role = "aut"),
+    person("Vrijesh", "Tripathi", email = "vrijesh.tripathi@uwi.edu", role = "aut")
+    )
+Maintainer: Shikhar Tyagi <shikhar1093tyagi@gmail.com>
+Description: Implements generalized statistical point prediction and prediction
+    intervals for future failure times under various hybrid censoring schemes.
+    Supported censoring schemes include Type-I, Type-II, Generalized Type-I,
+    Generalized Type-II, Unified, Progressive Type-I, and Progressive Type-II
+    hybrid censoring schemes. Available prediction methods include Best Unbiased
+    Predictor (BUP), Conditional Median Predictor (CMP), Maximum Likelihood
+    Predictor (MLP), equal-tailed classical prediction intervals, Highest
+    Conditional Density (HCD) prediction intervals, and Bayesian prediction
+    intervals. Algorithms accept user-defined continuous probability density
+    functions, cumulative distribution functions, quantile functions, or survival
+    functions along with estimated parameter values. Methodological foundations
+    are based on Balakrishnan, Cramer, and Kundu (2023, ISBN:978-0123983879),
+    Shafay and Balakrishnan (2012) <doi:10.1080/03610918.2011.579367> for Type-I
+    hybrid censoring, Balakrishnan and Shafay (2012)
+    <doi:10.1080/03610926.2010.543300> for Type-II hybrid censoring, Shafay
+    (2017) <doi:10.1080/03610926.2016.1200093> for Generalized Type-I hybrid
+    censoring, Shafay (2016) <doi:10.1080/00949655.2015.1096361> for Generalized
+    Type-II hybrid censoring, Mohie El-Din, Nagy, and Shafay (2017)
+    <doi:10.18576/jsap/060113> for Unified hybrid censoring, Ebrahimi (1992)
+    <doi:10.1109/24.126685>, Valiollahi, Asgharzadeh, and Kundu (2017)
+    <doi:10.1214/15-BJPS302>, and Asgharzadeh, Valiollahi, and Kundu (2015)
+    <doi:10.1080/00949655.2013.848451>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0)
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2026-07-27 16:10:11 UTC; shikhar tyagi
+Author: Shikhar Tyagi [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1606-0844>),
+  Arvind Pandey [aut],
+  Bhupendra Singh [aut],
+  Vrijesh Tripathi [aut]
+Repository: CRAN
+Date/Publication: 2026-08-05 09:20:09 UTC

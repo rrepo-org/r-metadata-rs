@@ -1,0 +1,22 @@
+Package: PenCoxFrail
+Type: Package
+Title: Regularization in Cox Frailty Models
+Version: 2.0.1
+Date: 2025-12-22
+Authors@R: person(given = "Andreas", family = "Groll",
+                  role = c("aut", "cre"),
+                  email = "groll@statistik.tu-dortmund.de")
+Description: Different regularization approaches for Cox Frailty Models by penalization methods are provided.
+	see Groll et al. (2017) <doi:10.1111/biom.12637> for effects selection.
+	See also Groll and Hohberg (2024) <doi:10.1002/bimj.202300020> for classical LASSO approach.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.11.6), Matrix, methods, coxme
+Depends: survival
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: mgcv
+NeedsCompilation: yes
+Packaged: 2025-12-22 16:32:13 UTC; ligges
+Author: Andreas Groll [aut, cre]
+Maintainer: Andreas Groll <groll@statistik.tu-dortmund.de>
+Repository: CRAN
+Date/Publication: 2025-12-22 17:50:11 UTC

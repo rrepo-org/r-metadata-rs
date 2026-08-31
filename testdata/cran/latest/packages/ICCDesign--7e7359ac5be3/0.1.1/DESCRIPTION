@@ -1,0 +1,45 @@
+Package: ICCDesign
+Title: Intraclass Correlation Coefficient (ICC) Design, Calculation and
+        Interactive 'shiny' Toolkit
+Version: 0.1.1
+Authors@R: c(
+    person("Ziyu", "Liu", 
+           email = "1755454769@qq.com",
+           role = c("aut", "cre")),
+    person("Ruilin", "Ma", 
+           role = "aut"),
+    person("Chenge", "Gao", 
+           role = "aut"),
+    person("Yundan", "Zhang", 
+           role = "aut")
+  )
+Description: A comprehensive toolkit for intraclass correlation coefficient (ICC) analysis,
+    integrating three core functionalities: (1) Closed-form sample size calculation for ICC
+    estimation with assurance probability, based on Zou (2012) <doi:10.1002/sim.5466>;
+    (2) Full implementation of all 10 ICC types (6 common + 4 supplementary) for point
+    estimation, exact confidence interval calculation, and formal hypothesis testing,
+    following the methods of McGraw & Wong (1996) <doi:10.1037/1082-989X.1.1.30> and
+    the standard decision framework; (3) An interactive 'shiny' application that guides users
+    through ICC type selection, performs calculations, and provides reliability evaluation
+    based on the Koo & Li (2016) <doi:10.1016/j.jcm.2016.02.012> criteria.
+    Compared to existing packages, it provides a unified decision workflow and supports
+    all less common ICC variants.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: stats, shiny
+Suggests: testthat, knitr, rmarkdown
+Encoding: UTF-8
+LazyData: false
+URL: https://github.com/KlariZhang/ICCDesign
+BugReports: https://github.com/KlariZhang/ICCDesign/issues
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-06-02 10:25:35 UTC; Lenovo
+Author: Ziyu Liu [aut, cre],
+  Ruilin Ma [aut],
+  Chenge Gao [aut],
+  Yundan Zhang [aut]
+Maintainer: Ziyu Liu <1755454769@qq.com>
+Repository: CRAN
+Date/Publication: 2026-06-02 11:00:13 UTC

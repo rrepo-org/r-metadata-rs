@@ -1,0 +1,26 @@
+Package: L1centrality
+Title: Graph/Network Analysis Based on L1 Centrality
+Version: 0.5.2
+Authors@R: c(
+  person("Seungwoo", "Kang", email = "kangsw@skku.edu", role = c("aut", "cre"), 
+  comment=c(ORCID="0000-0001-8082-0794")),
+  person("Hee-Seok", "Oh", email = "heeseok@stats.snu.ac.kr", role = c("aut")))
+Description: Analyze graph/network data using L1 centrality and prestige. Functions for deriving global, local, and group L1 centrality/prestige are provided. Routines for visual inspection of a graph/network are also provided. Details are in Kang and Oh (2026a) <doi:10.1080/01621459.2025.2520467>, Kang and Oh (2026b) <doi:10.1080/00031305.2025.2563730>, and Kang (2025) <doi:10.23170/snu.000000188358.11032.0001856>.
+URL: https://github.com/seungwoo-stat/L1centrality
+BugReports: https://github.com/seungwoo-stat/L1centrality/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 2.10)
+LazyData: true
+Imports: doParallel, foreach, graphics, igraph, methods, parallel,
+        Rcpp, stats, utils, withr
+LinkingTo: Rcpp
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-14 01:41:52 UTC; seungwookang
+Author: Seungwoo Kang [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-8082-0794>),
+  Hee-Seok Oh [aut]
+Maintainer: Seungwoo Kang <kangsw@skku.edu>
+Repository: CRAN
+Date/Publication: 2026-07-14 02:40:12 UTC

@@ -1,0 +1,28 @@
+Package: rgsrs
+Title: Query the FDA Global Substance Registration System (GSRS) API
+Version: 0.1.0
+Authors@R: 
+    person("Claudio", "Zanettini", , "claudio.zanettini@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5043-8033"))
+Description: Provides functions to query the FDA Global Substance
+    Registration System (GSRS) REST API
+    (<https://gsrs.ncats.nih.gov/api/v1/>). Enables programmatic access to
+    substance records, UNII identifiers, synonyms, external codes, and
+    chemical structures for over 170,000 registered substances.
+License: MIT + file LICENSE
+URL: https://c1au6i0.github.io/rgsrs/, https://github.com/c1au6i0/rgsrs
+BugReports: https://github.com/c1au6i0/rgsrs/issues
+Depends: R (>= 4.1)
+Imports: cli, httr2, janitor, pingr
+Suggests: fs, openxlsx, spelling, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-05-01 11:28:15 UTC; heverz
+Author: Claudio Zanettini [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5043-8033>)
+Maintainer: Claudio Zanettini <claudio.zanettini@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-05 15:08:24 UTC

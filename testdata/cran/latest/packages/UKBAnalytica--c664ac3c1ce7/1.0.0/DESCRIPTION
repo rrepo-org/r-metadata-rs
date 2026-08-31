@@ -1,0 +1,38 @@
+Package: UKBAnalytica
+Title: UK Biobank Data Processing and Survival Analysis Toolkit
+Version: 1.0.0
+Authors@R: person(given = "Nan", family = "He", email = "hinna01@163.com", role = c("aut", "cre"), comment = c(ORCID = "0009-0008-6932-3867"))
+Author: Nan He [aut, cre] (ORCID: <https://orcid.org/0009-0008-6932-3867>)
+Maintainer: Nan He <hinna01@163.com>
+Description: Provides an integrated workflow for UK Biobank Research
+    Analysis Platform (RAP) hosted and RAP-generated analysis tables. The
+    package supports RAP phenotype extraction planning, predefined variable
+    sets and disease definitions, standardized baseline preprocessing,
+    multi-source endpoint ascertainment, prevalent and incident case
+    classification, survival-ready cohort construction, regression, multiple
+    imputation, propensity score analysis, mediation analysis, subgroup and
+    sensitivity analyses, machine learning, proteomics enrichment and
+    protein-protein interaction analysis, and publication-oriented
+    visualization. The package workflow is described in He et al. (2026)
+    <doi:10.64898/2026.06.19.26356057>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+URL: https://github.com/Hinna0818/UKBAnalytica,
+        https://hinna0818.github.io/UKBAnalytica/
+BugReports: https://github.com/Hinna0818/UKBAnalytica/issues
+Imports: data.table, stringi, ggplot2, rlang, scales, survival, pROC,
+        tableone, mice, mitools, sandwich, lmtest, MASS, mgcv, xml2,
+        igraph
+Suggests: testthat, rms, gbm, cobalt, survminer, MatchIt, regmedint,
+        ranger, xgboost, glmnet, e1071, nnet, rpart, Boruta,
+        rBayesianOptimization, randomForestSRC, clusterProfiler,
+        AnnotationDbi, org.Hs.eg.db, qs2
+Config/testthat/edition: 3
+Config/Needs/bioc: TRUE
+Depends: R (>= 4.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-06-24 04:06:19 UTC; hinna
+Repository: CRAN
+Date/Publication: 2026-06-30 11:00:07 UTC

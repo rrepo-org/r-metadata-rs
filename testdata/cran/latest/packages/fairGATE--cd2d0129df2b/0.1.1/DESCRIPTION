@@ -1,0 +1,38 @@
+Package: fairGATE
+Title: Fair Gated Algorithm for Targeted Equity
+Version: 0.1.1
+Authors@R: 
+    c(
+      person("Rhys", "Holland", email = "rhys.holland@icloud.com",
+             role = c("aut", "cre")),
+      person("Raquel", "Iniesta", 
+             email = "raquel.iniesta@kcl.ac.uk",
+             role = "aut")
+    )
+Description: Tools for training and analysing fairness-aware gated neural 
+    networks for subgroup-aware prediction and interpretation in clinical datasets. 
+    Methods draw on prior work in mixture-of-experts neural networks by
+    Jordan and Jacobs (1994) <doi:10.1007/978-1-4471-2097-1_113>,
+    fairness-aware learning by Hardt, Price, and Srebro (2016) <doi:10.48550/arXiv.1610.02413>,
+    and personalised treatment prediction for depression by Iniesta, Stahl, and McGuffin (2016) 
+    <doi:10.1016/j.jpsychires.2016.03.016>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, tibble, ggplot2, readr, pROC, magrittr, tidyr, purrr,
+        utils, stats, ggalluvial, tidyselect, rlang
+Suggests: knitr, torch, testthat, readxl, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/rhysholland/FairGATE
+BugReports: https://github.com/rhysholland/FairGate/issues
+Depends: R (>= 4.1.0)
+SystemRequirements: Optional 'LibTorch' backend; install via
+        torch::install_torch().
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-12-08 12:27:22 UTC; rhysholland
+Author: Rhys Holland [aut, cre],
+  Raquel Iniesta [aut]
+Maintainer: Rhys Holland <rhys.holland@icloud.com>
+Repository: CRAN
+Date/Publication: 2025-12-08 13:00:12 UTC

@@ -1,0 +1,25 @@
+Package: dumbbell
+Type: Package
+Title: Displaying Changes Between Two Points Using Dumbbell Plots
+Version: 0.2
+Authors@R: person(given = "Foo", family = "Cheung",
+    email = "foocheung@yahoo.com", role = c("aut", "cre"))
+Description: Creates dumbbell plots to visualize changes between two
+    measurements for the same observations. The package provides
+    customization options for labels, colors, arrows, delta values,
+    and paired statistical test annotations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: dplyr, ggplot2, grid, rlang, tidyr, utils
+URL: https://github.com/foocheung/dumbbell
+BugReports: https://github.com/foocheung/dumbbell/issues
+NeedsCompilation: no
+RoxygenNote: 7.3.3
+Collate: 'global.R' 'dumbbell.R'
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Packaged: 2026-07-06 19:13:58 UTC; cheungf
+Author: Foo Cheung [aut, cre]
+Maintainer: Foo Cheung <foocheung@yahoo.com>
+Repository: CRAN
+Date/Publication: 2026-07-06 19:40:02 UTC

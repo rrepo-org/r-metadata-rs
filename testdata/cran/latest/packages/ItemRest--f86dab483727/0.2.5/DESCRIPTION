@@ -1,0 +1,37 @@
+Package: ItemRest
+Title: Automated Item Removal Strategies for Exploratory Factor
+        Analysis
+Version: 0.2.5
+Authors@R: 
+    c(
+      person(given = "Ahmet", family = "Çalışkan",
+             email = "ahmetcaliskan1987@gmail.com",
+             role = c("aut", "cre")),
+      person(given = "Abdullah Faruk", family = "Kılıç",
+             email = "abdullahfarukkilic@gmail.com",
+             role = c("aut"))
+    )
+Description: Automates the identification and comparative evaluation of 
+    item-removal strategies in exploratory factor analysis, producing 
+    transparent summaries (explained variance, loading ranges, reliability) 
+    to support comfortable, reproducible decisions. The criteria are 
+    based on best practices and established heuristics (e.g., Costello & 
+    Osborne (2005) <doi:10.7275/jyj1-4868>, Howard (2016) 
+    <doi:10.1080/10447318.2015.1087664>). Includes flexible thresholds for 
+    factor loadings (min_loading) and cross-loading differences (loading_diff).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: gtools, psych, qgraph, stats, utils
+URL: https://github.com/ahmetcaliskan1987/ItemRest
+BugReports: https://github.com/ahmetcaliskan1987/ItemRest/issues
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-14 11:23:36 UTC; ahmetcaliskan
+Author: Ahmet Çalışkan [aut, cre],
+  Abdullah Faruk Kılıç [aut]
+Maintainer: Ahmet Çalışkan <ahmetcaliskan1987@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-14 13:30:08 UTC

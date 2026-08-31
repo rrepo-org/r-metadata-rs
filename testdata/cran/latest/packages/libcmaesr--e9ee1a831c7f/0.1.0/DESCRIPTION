@@ -1,0 +1,52 @@
+Package: libcmaesr
+Title: R Interface to 'libcmaes'
+Version: 0.1.0
+Authors@R: c(
+    person("Marc", "Becker", , "marcbecker@posteo.de", role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0000-0002-8115-0400")),
+    person("Bernd", "Bischl", , "bernd_bischl@gmx.net", role = "aut",
+           comment = c(ORCID = "0000-0001-6002-6980")),
+    person("Martin", "Binder", , "mlr.developer@mb706.com", role = "aut"),
+    person("Lars", "Kotthoff", , "lk223@st-andrews.ac.uk", role = "aut"),
+    person("Emmanuel", "Benazera", role = c("ctb", "cph"),
+           comment = "author of the bundled 'libcmaes' library"),
+    person("Inria", role = "cph",
+           comment = "copyright holder of parts of the bundled 'libcmaes' library")
+  )
+Copyright: See the file COPYRIGHTS for details on the bundled
+        'libcmaes' copyrights
+Description: A lightweight interface to the 'libcmaes' C++ library for the
+  Covariance Matrix Adaptation Evolution Strategy (CMA-ES). CMA-ES is a
+  state-of-the-art evolutionary algorithm for the optimization of difficult
+  non-linear, non-convex black-box functions, as described in Hansen and
+  Ostermeier (2001) <doi:10.1162/106365601750190398>. Supports the active,
+  separable, and VD (diagonal plus rank-one covariance) variants of the
+  algorithm as well as the IPOP (increasing population size) and BIPOP
+  (bi-population) restart strategies. A patched copy of 'libcmaes'
+  (LGPL >= 3) is bundled; see the COPYRIGHTS file for details.
+License: LGPL (>= 3)
+URL: https://libcmaesr.mlr-org.com,
+        https://github.com/mlr-org/libcmaesr
+BugReports: https://github.com/mlr-org/libcmaesr/issues
+Depends: R (>= 4.2.0)
+Imports: checkmate, mlr3misc, stats
+LinkingTo: RcppEigen
+Suggests: testthat (>= 3.0.0), callr
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: yes
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-29 07:47:25 UTC; marc
+Author: Marc Becker [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-8115-0400>),
+  Bernd Bischl [aut] (ORCID: <https://orcid.org/0000-0001-6002-6980>),
+  Martin Binder [aut],
+  Lars Kotthoff [aut],
+  Emmanuel Benazera [ctb, cph] (author of the bundled 'libcmaes' library),
+  Inria [cph] (copyright holder of parts of the bundled 'libcmaes'
+    library)
+Maintainer: Marc Becker <marcbecker@posteo.de>
+Repository: CRAN
+Date/Publication: 2026-08-07 10:30:02 UTC

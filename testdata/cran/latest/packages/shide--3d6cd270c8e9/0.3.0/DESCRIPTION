@@ -1,0 +1,25 @@
+Package: shide
+Type: Package
+Title: Date/Time Classes Based on Jalali Calendar
+Version: 0.3.0
+Authors@R: 
+    person("Mohsen", "Mollayi", role = c("aut", "cre", "cph"), email = "mmollayi@gmail.com")
+Description: Implements S3 classes for storing dates and date-times based on the Jalali calendar. 
+    The main design goal of 'shide' is consistency with base R's 'Date' and 'POSIXct'.
+    It provide features such as: date-time parsing, formatting and arithmetic.
+License: MIT + file LICENSE
+URL: https://github.com/mmollayi/shide
+BugReports: https://github.com/mmollayi/shide/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: cpp11 (>= 0.5.2), tzdb (>= 0.5.0)
+Depends: R (>= 4.3.0)
+Imports: cli, methods, rlang, tzdb (>= 0.5.0), vctrs
+Suggests: covr, lubridate, pillar, testthat (>= 3.2.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-08-23 14:25:50 UTC; mohsen
+Author: Mohsen Mollayi [aut, cre, cph]
+Maintainer: Mohsen Mollayi <mmollayi@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-08-23 14:40:02 UTC

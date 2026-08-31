@@ -1,0 +1,25 @@
+Package: SAFEPG
+Type: Package
+Title: A Novel SAFE Model for Predicting Climate-Related Extreme Losses
+Version: 0.0.1
+Date: 2025-05-01
+Authors@R: c(
+  person(given = "Qian", family = "Tang", role = c("aut", "cre"), email = "qian-tang@uiowa.edu"),
+  person(given = "Yikai", family = "Zhang", role = "aut", email = "yikai-zhang@uiowa.edu"),
+  person(given = "Boxiang", family = "Wang", role = "aut", email = "boxiang-wang@uiowa.edu"))
+Maintainer: Qian Tang <qian-tang@uiowa.edu>
+Description: The goal of 'SAFEPG' is to predict climate-related extreme losses by fitting a frequency-severity model. It improves predictive performance by introducing a sign-aligned regularization term, which ensures consistent signs for the coefficients across the frequency and severity components. This enhancement not only increases model accuracy but also enhances its interpretability, making it more suitable for practical applications in risk assessment.
+Depends: R (>= 3.5.0)
+License: GPL-2
+Imports: stats, Matrix, methods
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2025-05-07 00:14:45 UTC; qtang7
+Author: Qian Tang [aut, cre],
+  Yikai Zhang [aut],
+  Boxiang Wang [aut]
+Repository: CRAN
+Date/Publication: 2025-05-09 09:40:02 UTC

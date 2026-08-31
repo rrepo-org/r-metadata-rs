@@ -1,0 +1,32 @@
+Title: Constrained Single Index Model Estimation
+Type: Package
+Package: simest
+Version: 0.4-1-1
+Authors@R: c(person(c("Arun", "Kumar"), "Kuchibhotla", role = "aut", email = "arunku@stat.cmu.edu",
+             comment = c(ORCID = "0000-0003-4459-5352"))
+           , person(c("Rohit", "Kumar"), "Patra", role = "aut", email = "rohit@stat.columbia.edu")
+           , person("Martin", "Maechler", role = c("ctb", "cre"), email = "maechler@stat.math.ethz.ch",
+	            comment = c("fix *.Rd, etc to get back on CRAN", ORCID = "0000-0002-8685-9910"))
+	    )
+Date: 2025-11-28
+Imports: nnls, cobs, stats, graphics
+Description: Estimation of function and index vector in single index model ('sim')
+    with (and w/o) shape constraints including different smoothness conditions.
+    See, e.g., Kuchibhotla and Patra (2020) <doi:10.3150/19-BEJ1183>.
+License: GPL-2
+BugReports: https://r-forge.r-project.org/tracker/?group_id=846
+URL: https://curves-etc.r-forge.r-project.org/,
+        https://r-forge.r-project.org/R/?group_id=846,
+        https://r-forge.r-project.org/scm/viewvc.php/pkg/simest/?root=curves-etc,
+        svn://svn.r-forge.r-project.org/svnroot/curves-etc/pkg/simest
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2025-11-28 21:30:45 UTC; maechler
+Author: Arun Kumar Kuchibhotla [aut] (ORCID:
+    <https://orcid.org/0000-0003-4459-5352>),
+  Rohit Kumar Patra [aut],
+  Martin Maechler [ctb, cre] (fix *.Rd, etc to get back on CRAN, ORCID:
+    <https://orcid.org/0000-0002-8685-9910>)
+Maintainer: Martin Maechler <maechler@stat.math.ethz.ch>
+Repository: CRAN
+Date/Publication: 2025-12-03 21:10:02 UTC

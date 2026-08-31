@@ -1,0 +1,43 @@
+Package: PFCI
+Title: Penalized Fast Causal Inference for High-Dimensional Structure
+        Learning
+Version: 0.1.1
+Date: 2026-05-28
+Authors@R: c(
+    person("Samhita", "Pal", email = "spal4@ncsu.edu",
+           role = c("aut"), comment = c(ORCID = "0009-0001-4930-916X")),
+    person("Dhrubajyoti", "Ghosh", email = "dghosh3@kennesaw.edu",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3360-3786")),
+    person("Shu", "Yang", email = "syang24@ncsu.edu",
+           role = c("aut"), comment = c(ORCID = "0000-0001-7703-707X"))       
+    )
+Description: Implements Penalized Fast Causal Inference (PFCI), a two-stage
+    causal structure learning procedure for high-dimensional settings with
+    potential latent variables and selection bias. In the first stage,
+    neighborhood selection via the Lasso constructs a sparse undirected
+    skeleton. In the second stage, the Fast Causal Inference (FCI) algorithm
+    orients edges on this reduced graph, producing a Partial Ancestral Graph
+    (PAG) that accounts for latent confounders. The method is consistent
+    under sparsity assumptions and substantially faster than standard FCI
+    and RFCI in high dimensions. See Pal, Ghosh, and Yang (2025)
+    <doi:10.48550/arXiv.2507.00173> for the underlying theory.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/djghosh1123/PFCI
+BugReports: https://github.com/djghosh1123/PFCI/issues
+RoxygenNote: 7.3.3
+Imports: stats, glasso, methods
+Suggests: pcalg, graph, RBGL, Rgraphviz, testthat (>= 3.0.0), knitr,
+        rmarkdown, spelling
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-06-03 05:13:14 UTC; dghosh3
+Author: Samhita Pal [aut] (ORCID: <https://orcid.org/0009-0001-4930-916X>),
+  Dhrubajyoti Ghosh [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3360-3786>),
+  Shu Yang [aut] (ORCID: <https://orcid.org/0000-0001-7703-707X>)
+Maintainer: Dhrubajyoti Ghosh <dghosh3@kennesaw.edu>
+Repository: CRAN
+Date/Publication: 2026-06-03 08:40:02 UTC

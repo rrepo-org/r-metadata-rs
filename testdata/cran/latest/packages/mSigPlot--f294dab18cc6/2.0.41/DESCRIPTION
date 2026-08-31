@@ -1,0 +1,28 @@
+Package: mSigPlot
+Title: Plotting Mutational Signatures and Mutational Spectra
+Version: 2.0.41
+Authors@R: 
+    person("Steven", "Rozen", , "steverozen@pm.me", role = c("aut", "cre"))
+Description: Plotting functions for mutational signatures and mutational
+    spectra, including single base substitutions (SBS), doublet base
+    substitutions (DBS), and small insertions and deletions (indels).
+    Generates plots similar to those used previously in 
+    Alexandrov et al. (2020)<doi:10.1038/s41586-020-1943-3> and
+    Rozen et al. (2026)<doi:10.5281/zenodo.18451842>.
+License: GPL (>= 3)
+URL: https://steverozen.github.io/mSigPlot/,
+        https://github.com/steverozen/mSigPlot
+BugReports: https://github.com/steverozen/mSigPlot/issues
+Imports: Cairo, dplyr, ggplot2, ggrepel, gridExtra, patchwork, scales
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+Suggests: knitr, pkgdown, rmarkdown, testthat (>= 3.0.0), tibble
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-15 10:35:09 UTC; steve
+Author: Steven Rozen [aut, cre]
+Maintainer: Steven Rozen <steverozen@pm.me>
+Repository: CRAN
+Date/Publication: 2026-07-15 11:10:02 UTC

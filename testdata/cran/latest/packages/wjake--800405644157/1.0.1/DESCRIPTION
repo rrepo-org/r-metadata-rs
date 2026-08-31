@@ -1,0 +1,37 @@
+Package: wjake
+Title: Personal Themes and Formatting Preferences
+Version: 1.0.1
+Authors@R: 
+    person(given = "W. Jake",
+           family = "Thompson",
+           role = c("aut", "cre", "cph"),
+           email = "wjakethompson@gmail.com",
+           comment = c(ORCID = "0000-0001-7339-0300"))
+Description: A collection of utility functions, themes, and templates to
+    support personal data analysis workflows. Includes functions for
+    formatting numeric values as text, custom themes and color scales for
+    'ggplot2', and automatic formatting for tables created with 'gt'.
+License: MIT + file LICENSE
+URL: https://github.com/wjakethompson/wjake,
+        https://wjake.wjakethompson.com
+BugReports: https://github.com/wjakethompson/wjake/issues
+Depends: R (>= 4.5.0)
+Imports: cli, colorspace, dplyr, english, ggplot2 (>= 4.0.0), ggtext,
+        gh, glue, grDevices, gt, knitr, pak, rlang (>= 1.1.0),
+        rstudioapi, scales, showtextdb, stringr, sysfonts, systemfonts,
+        xfun
+Suggests: spelling, taylor, testthat, vdiffr, withr
+Config/testthat/edition: 3
+Config/Needs/website: wjakethompson/wjaketemplate
+Config/Needs/check: wjakethompson/wjaketemplate
+Config/Needs/coverage: wjakethompson/wjaketemplate
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-06-09 18:48:57 UTC; jakethompson
+Author: W. Jake Thompson [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7339-0300>)
+Maintainer: W. Jake Thompson <wjakethompson@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-09 19:00:02 UTC

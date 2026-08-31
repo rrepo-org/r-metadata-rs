@@ -1,0 +1,35 @@
+Package: baf
+Title: Block Assignment Files
+Version: 0.0.4
+Authors@R: c(
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "cre"),
+           email = "ctkenny@proton.me",
+           comment = c(ORCID = "0000-0002-9386-6860")),
+    person("Cory", "McCartan", email = "mccartan@psu.edu",
+            role = "ctb", comment = c(ORCID = "0000-0002-6251-669X"))
+    )
+Description: Download and read US Census Bureau data relationship files. Provides 
+    support for cleaning and using block assignment files since 2010, as described in 
+    <https://www.census.gov/geographies/reference-files/time-series/geo/block-assignment-files.html>. 
+    Also includes support for working with block equivalency files, used for years 
+    outside of decennial census years.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: cli, curl, dplyr, fs, glue, readr
+Depends: R (>= 4.2.0)
+URL: http://christophertkenny.com/baf/,
+        https://github.com/christopherkenny/baf
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-10-14 15:01:17 UTC; chris
+Author: Christopher T. Kenny [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-9386-6860>),
+  Cory McCartan [ctb] (ORCID: <https://orcid.org/0000-0002-6251-669X>)
+Maintainer: Christopher T. Kenny <ctkenny@proton.me>
+Repository: CRAN
+Date/Publication: 2025-10-14 16:20:02 UTC

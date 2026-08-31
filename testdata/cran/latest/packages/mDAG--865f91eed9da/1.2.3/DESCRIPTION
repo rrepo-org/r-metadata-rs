@@ -1,0 +1,36 @@
+Package: mDAG
+Type: Package
+Title: Inferring Causal Network from Mixed Observational Data Using a
+        Directed Acyclic Graph
+Version: 1.2.3
+Date: 2025-9-25
+Authors@R: c(person(given = "Wujuan",
+                family = "Zhong",
+                role = c("aut", "cre"),
+                email = "zhongwujuan@gmail.com"),
+                person(given = "Li",
+                family = "Dong",
+                role = "aut"),
+                person(given = "Quefeng",
+                family = "Li",
+                role = "aut"),
+                person(given = "Xiaojing",
+                family = "Zheng",
+                role = "aut"))
+Maintainer: Wujuan Zhong <zhongwujuan@gmail.com>
+Description: Learning a mixed directed acyclic graph based on both continuous and categorical data.
+LazyData: true
+Encoding: UTF-8
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.14), pcalg, mgm, bnlearn, methods, nnet
+Depends: R (>= 2.10), logistf
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-09-26 01:32:31 UTC; zorin
+Repository: CRAN
+Author: Wujuan Zhong [aut, cre],
+  Li Dong [aut],
+  Quefeng Li [aut],
+  Xiaojing Zheng [aut]
+Date/Publication: 2025-09-26 07:30:08 UTC

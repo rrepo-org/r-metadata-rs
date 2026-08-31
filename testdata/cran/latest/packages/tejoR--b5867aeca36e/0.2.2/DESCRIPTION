@@ -1,0 +1,39 @@
+Package: tejoR
+Title: Statistical Harmonization of Territorial Series Across Changing
+        Geographies
+Version: 0.2.2
+Authors@R: person("Luz Adriana", "Gutierrez Rodriguez",
+    role = c("aut", "cre"), email = "adrig63@gmail.com")
+Description: Builds, validates, seals and applies weighting matrices
+    ('crosswalks') to carry statistical series across changing zoning
+    systems, such as the transition from the 112 Unidades de Planeamiento
+    Zonal (UPZ) to the 33 Unidades de Planeamiento Local (UPL) in Bogota
+    (Decree 555 of 2021). Implements the 'tejo-crosswalk/0.2' specification
+    shared with the 'Python' package 'tejo': 'sha256'-sealed artifacts,
+    non-negative weights that sum to one for each source unit, dasymetric
+    weighting with vector ancillary data via 'sf', rates that are never
+    interpolated directly, and missing values that propagate instead of
+    being silently imputed. Methods: Tobler (1979)
+    <doi:10.1080/01621459.1979.10481647>; Mennis (2003)
+    <doi:10.1111/0033-0124.10042>. Descripcion en espanol: construye,
+    valida, sella y aplica matrices de ponderadores ('crosswalks') para
+    trasladar series estadisticas entre mallas geograficas que cambian,
+    como la transicion de UPZ a UPL en Bogota (Decreto 555 de 2021):
+    integridad por 'sha256', pesos no negativos que suman uno por unidad
+    fuente, metodo dasimetrico con ancilar vectorial via 'sf', tasas que
+    nunca se interpolan directamente y valores faltantes que se propagan
+    en lugar de imputarse.
+License: MIT + file LICENSE
+URL: https://github.com/adriGr52/tejoR
+BugReports: https://github.com/adriGr52/tejoR/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: sf, jsonlite, digest, stats, utils
+Suggests: testthat
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2026-07-17 15:22:12 UTC; root
+Author: Luz Adriana Gutierrez Rodriguez [aut, cre]
+Maintainer: Luz Adriana Gutierrez Rodriguez <adrig63@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-08-06 13:50:02 UTC

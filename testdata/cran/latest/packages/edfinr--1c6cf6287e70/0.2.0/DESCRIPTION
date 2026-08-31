@@ -1,0 +1,51 @@
+Package: edfinr
+Type: Package
+Title: Access Tidy Education Finance Data
+Version: 0.2.0
+Authors@R: c(
+    person(
+      "Alex", "Spurrier",
+      email = "alex.spurrier@bellwether.org",
+      role = c("aut", "cre")
+    ),
+    person(
+      "Krista", "Kaput",
+      role = "aut"
+    ),
+    person(
+      "Michael", "Chrzan",
+      role = "ctb"
+    ),
+    person("Bellwether", role = "cph")
+  )
+Description: Provides easy access to tidy education finance data using Bellwether's methodology
+    to combine NCES F-33 Survey, Census Bureau Small Area Income Poverty Estimates (SAIPE),
+    community data from the ACS 5-Year Estimates, the Comparable Wage Index for
+    Teachers (CWIFT) from NCES EDGE, and school district land area from U.S. Census Bureau
+    Gazetteer Files. The package simplifies
+    downloading, caching, and filtering education finance data by year and state,
+    enabling researchers and analysts to explore K-12 education funding patterns,
+    revenue sources, expenditure categories, and demographic factors across 
+    U.S. school districts.
+License: CC BY 4.0
+URL: https://github.com/bellwetherorg/edfinr,
+        https://bellwetherorg.github.io/edfinr/
+BugReports: https://github.com/bellwetherorg/edfinr/issues
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, nanoparquet (>= 0.5.0), rlang, tibble, utils
+Encoding: UTF-8
+Suggests: ggplot2, knitr, rmarkdown, scales, stringr, testthat (>=
+        3.0.0), tidyr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: sf, tigris
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-21 17:53:14 UTC; alexspurrier
+Author: Alex Spurrier [aut, cre],
+  Krista Kaput [aut],
+  Michael Chrzan [ctb],
+  Bellwether [cph]
+Maintainer: Alex Spurrier <alex.spurrier@bellwether.org>
+Repository: CRAN
+Date/Publication: 2026-08-21 21:01:02 UTC

@@ -1,0 +1,40 @@
+Package: authoritative
+Title: Parse and Deduplicate Author Names
+Version: 0.2.0
+Authors@R: c(
+    person("Hugo", "Gruson", , "hugo.gruson+R@normalesup.org", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-4094-1476")),
+    person("Chris", "Hartgerink", role = "rev",
+           comment = c(ORCID = "0000-0003-1050-6809")),
+    person("data.org", role = "fnd",
+           comment = "until version 0.2.0 included")
+    )
+Description: Utilities to parse authors fields from DESCRIPTION files and
+    general purpose functions to deduplicate names in database, beyond the
+    specific case of R package authors.
+License: MIT + file LICENSE
+URL: https://github.com/Bisaloo/authoritative,
+        https://hugogruson.fr/authoritative/
+BugReports: https://github.com/Bisaloo/authoritative/issues
+Depends: R (>= 4.1.0)
+Imports: stringi, utils
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/Needs/website: epiverse-trace/epiversetheme, tidyverse, igraph,
+        netUtils
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.3.2
+Config/Needs/build: moodymudskipper/devtag
+NeedsCompilation: no
+Packaged: 2025-06-23 16:56:27 UTC; hugo
+Author: Hugo Gruson [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0002-4094-1476>),
+  Chris Hartgerink [rev] (ORCID: <https://orcid.org/0000-0003-1050-6809>),
+  data.org [fnd] (until version 0.2.0 included)
+Maintainer: Hugo Gruson <hugo.gruson+R@normalesup.org>
+Repository: CRAN
+Date/Publication: 2025-06-24 07:50:11 UTC

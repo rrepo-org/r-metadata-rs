@@ -1,0 +1,36 @@
+Package: EcoNiche
+Type: Package
+Title: Community Niche Position and Width Estimation Tools
+Version: 1.0.3
+Authors@R: c(
+    person("Shuotao", "Zhou", , "zhoushuotao@stu.hunau.edu.cn", role = c("aut", "cre")),
+    person("Kai", "Feng", , "kaifeng@rcees.ac.cn", role = "aut"),
+    person("Ye", "Deng", , "yedeng@rcees.ac.cn", role = "aut")
+  )
+Description: Provides methods for estimating species niche position and niche
+    breadth under continuous environmental gradients. The package implements
+    canonical correspondence analysis (CCA), partial CCA (pCCA), generalized
+    additive models (GAM), and Levins' niche breadth metrics for species-level
+    and community-level analyses. Methods are based on ter Braak (1986)
+    <doi:10.2307/1938672>, Okie et al. (2015) <doi:10.1098/rspb.2014.2630>,
+    Feng et al. (2020) <doi:10.1111/mec.15441>, Wood (2017)
+    <doi:10.1201/9781315370279>, and Levins (1968, ISBN:978-0691080628).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, mgcv, vegan,
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, viridisLite
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+URL: https://github.com/yedeng-lab/EcoNiche
+BugReports: https://github.com/yedeng-lab/EcoNiche/issues
+NeedsCompilation: no
+Packaged: 2026-06-16 06:59:11 UTC; 12857
+Author: Shuotao Zhou [aut, cre],
+  Kai Feng [aut],
+  Ye Deng [aut]
+Maintainer: Shuotao Zhou <zhoushuotao@stu.hunau.edu.cn>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2026-06-16 15:20:07 UTC

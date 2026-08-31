@@ -1,0 +1,24 @@
+Package: FDOTT
+Type: Package
+Title: Optimal Transport Based Testing in Factorial Designs
+Version: 0.2.0
+Date: 2026-07-24
+Authors@R: c(person(given = "Michel", family = "Groppe", role = c("aut", "cre"),
+                    email = "michel.groppe@uni-goettingen.de"),
+             person(given = "Linus", family = "Niemöller", role = "aut"))
+Description: Perform optimal transport based tests in factorial designs as introduced in Groppe et al. (2025) <doi:10.48550/arXiv.2509.13970> via the FDOTT() function. These tests are inspired by ANOVA and its nonparametric counterparts. They allow for testing linear relationships in factorial designs between finitely supported probability measures on a metric space. Such relationships include equality of all measures (no treatment effect), interaction effects between a number of factors, as well as main and simple factor effects.
+License: GPL (>= 3)
+Imports: Rcpp (>= 1.0.12), ROI, future.apply, progressr, transport,
+        slam, rrapply, stats, methods
+Depends: R (>= 4.1)
+Suggests: ROI.plugin.glpk, future
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-07-24 10:28:38 UTC; mgroppe
+Author: Michel Groppe [aut, cre],
+  Linus Niemöller [aut]
+Maintainer: Michel Groppe <michel.groppe@uni-goettingen.de>
+Repository: CRAN
+Date/Publication: 2026-07-24 11:30:08 UTC

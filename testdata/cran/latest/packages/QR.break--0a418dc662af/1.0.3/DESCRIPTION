@@ -1,0 +1,39 @@
+Package: QR.break
+Title: Structural Breaks in Quantile Regression
+Version: 1.0.3
+Authors@R: c(
+    person("Zhongjun", "Qu", , "qu@bu.edu", role = c("aut", "cre")),
+    person("Tatsushi", "Oka", , "oka.econ@gmail.com", role = "aut"),
+    person("Samuel", "Messer", , "snmesser@bu.edu", role = "ctb")
+  )
+Maintainer: Zhongjun Qu <qu@bu.edu>
+Description: Methods for detecting structural breaks, determining the
+    number of breaks, and estimating break locations in linear quantile
+    regression, using one or multiple quantiles, based on Qu (2008) and
+    Oka and Qu (2011).  Applicable to both time series and repeated
+    cross-sectional data. The main function is rq.break().
+ .
+          References for detailed theoretical and empirical explanations:
+ .
+          (1) Qu, Z. (2008).  "Testing for Structural Change in Regression
+    Quantiles."  Journal of Econometrics, 146(1), 170-184
+    <doi:10.1016/j.jeconom.2008.08.006>
+ .
+          (2) Oka, T., and Qu, Z. (2011).  "Estimating Structural Changes in
+    Regression Quantiles."  Journal of Econometrics, 162(2), 248-267
+    <doi:10.1016/j.jeconom.2011.01.005>.
+License: GPL (>= 3)
+Depends: R (>= 4.3.0)
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.3.2
+Imports: quantreg
+Suggests: knitr, rmarkdown, SparseM
+VignetteBuilder: knitr
+LazyData: true
+Packaged: 2026-07-29 18:23:09 UTC; zquem
+Author: Zhongjun Qu [aut, cre],
+  Tatsushi Oka [aut],
+  Samuel Messer [ctb]
+Repository: CRAN
+Date/Publication: 2026-07-29 19:00:02 UTC

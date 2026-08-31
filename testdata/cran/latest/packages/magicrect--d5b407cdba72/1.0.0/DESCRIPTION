@@ -1,0 +1,33 @@
+Package: magicrect
+Type: Package
+Title: Construct Magic Rectangles and Nearly Magic Rectangles
+Version: 1.0.0
+Authors@R: c(person("Arijit", "Ray", email = "ray.asokekumar@gmail.com",
+                    role = c("aut", "cre")))
+Description: Constructs a magic rectangle or a nearly magic rectangle of
+    order p x q for every order for which one exists, together with
+    existence classification and verification utilities. A magic rectangle
+    arranges the integers 1 to p*q so that all row sums are equal and all
+    column sums are equal; it exists exactly when p and q have the same
+    parity, excluding 2 x 2 and degenerate single-row/column cases
+    (Hagedorn, 1999, <doi:10.1016/S0012-365X(99)00041-2>). When p and q have
+    opposite parity a nearly magic rectangle exists instead, with constant
+    sums along one direction and sums differing by at most one along the
+    other (Chai, Singh and Stufken, 2019, Journal of Combinatorial Designs
+    27(6), 368-376).
+    Implements the constructions of De Los Reyes, Das, Midha and Vellaisamy
+    (2009) for even by even orders, Chai, Das and Midha (2013) for odd by
+    odd orders, and Chai, Singh and Stufken (2019) for the nearly magic
+    (even by odd) case.
+License: MIT + file LICENSE
+URL: https://github.com/Arijitray2/magic-rectangles,
+        https://arijitray2.github.io/magic-rectangles/
+BugReports: https://github.com/Arijitray2/magic-rectangles/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2026-07-10 15:54:51 UTC; root
+Author: Arijit Ray [aut, cre]
+Maintainer: Arijit Ray <ray.asokekumar@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-19 13:10:13 UTC

@@ -1,0 +1,30 @@
+Package: datetoiso
+Type: Package
+Title: Convert and Impute Dates to ISO 8601 Format and Reconcile Data
+        Sets
+Version: 1.2.1
+Authors@R: person("Lukasz", "Andrzejewski", email = "lukasz.coding@gmail.com",
+  role = c("aut", "cre"))
+URL: https://github.com/andzoluk
+Language: en-US
+Description: Provides tools for converting and imputing date values to the ISO 8601
+  standard format and for reconciling differences between two versions of a
+  data set. The package automatically detects date patterns within data
+  frame columns and converts them to consistent ISO-formatted dates, with
+  optional imputation of missing day or month components based on
+  user-defined rules. It also includes functionality to identify inserted,
+  deleted, and updated records, as well as column- and value-level changes,
+  when comparing old and new versions of a data frame. Only one date format
+  may be applied within a single column.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: stringr, lubridate, data.table, dplyr, purrr, glue, magrittr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2025-12-16 14:32:32 UTC; Andrzejewski
+Author: Lukasz Andrzejewski [aut, cre]
+Maintainer: Lukasz Andrzejewski <lukasz.coding@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-16 15:10:02 UTC

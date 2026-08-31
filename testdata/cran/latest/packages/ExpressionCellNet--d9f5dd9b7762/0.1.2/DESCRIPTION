@@ -1,0 +1,24 @@
+Package: ExpressionCellNet
+Type: Package
+Title: Network-Based Analysis of Gene Expression Perturbations
+Version: 0.1.2
+Authors@R: 
+    person("Ehsan", "Keramati", email = "ehsan.keramati14@gmail.com", role = c("aut", "cre"))
+Description: Network-centric framework for integrative analysis of
+    high-throughput gene expression data using user-supplied gene-gene
+    interaction graphs. Constructs seed-centered multi-generation networks
+    constrained by expression correlations and simulates expression
+    perturbation scenarios via regression-based prediction (van Dam, 2018).
+URL: https://doi.org/10.1093/bib/bbw139
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: igraph, ggplot2, uwot, Metrics, crayon
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-07-04 12:20:43 UTC; Ehsan
+Author: Ehsan Keramati [aut, cre]
+Maintainer: Ehsan Keramati <ehsan.keramati14@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-07-04 12:50:02 UTC

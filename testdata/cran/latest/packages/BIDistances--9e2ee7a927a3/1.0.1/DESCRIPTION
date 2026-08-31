@@ -1,0 +1,62 @@
+Package: BIDistances
+Type: Package
+Title: Bioinformatic Distances
+Version: 1.0.1
+Date: 2026-08-19
+Authors@R: c(
+    person(
+        "Quirin", "Stier",
+        email = "Quirin_Stier@gmx.de",
+        role = c("aut", "rev", "ctb"),
+        comment = c(ORCID = "0000-0002-7896-4737")
+    ),
+    person(
+        "Michael", "Thrun",
+        email = "m.thrun@gmx.net",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0001-9542-5543")
+    ),
+    person(
+        "Luca", "Brinkmann",
+        role = "ctb"
+    )
+  )
+Maintainer: Michael Thrun <m.thrun@gmx.net>
+Description: Provides a unified interface for computing, comparing, and
+    examining distances, dissimilarities, divergences, and selected
+    similarities for bioinformatics data. The core installation exposes 60
+    canonical named routes for numerical data and more than 90 when the
+    suggested 'philentropy' backend is installed; aliases, user-defined
+    functions, and mixed-data combinations are not included in these counts.
+    Weighted Minkowski distances can be computed through 'parallelDist', an
+    internal multicore implementation, or optional 'OpenCL' kernels, while the
+    established weighted Euclidean GPU implementation is retained as the
+    optimized p = 2 route. The package also supports theory-guided comparison
+    of distance distributions for clustering, explicit mathematical property
+    classifications, mixed-data constructions through 'manydist', and a
+    specialized Gene Ontology-derived TF-IDF distance.
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.8), RcppParallel (>= 5.1.1), parallelDist,
+        parallel, DataVisualizations, diptest, e1071, pracma, ggplot2
+Suggests: knitr, rmarkdown, OpenCL, transport, ineq, ScatterDensity,
+        memshare, philentropy (>= 0.10.0), dtw, proxy, manydist (>=
+        0.5.0), testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppParallel (>= 5.1.1)
+NeedsCompilation: yes
+SystemRequirements: GNU make, OpenCL library (optional, for GPU
+        acceleration), pandoc (>=1.12.3, needed for vignettes)
+License: GPL-3
+LazyLoad: yes
+LazyData: TRUE
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+BugReports: https://github.com/Mthrun/BIDistances/issues
+Packaged: 2026-08-20 05:34:18 UTC; mct
+Author: Quirin Stier [aut, rev, ctb] (ORCID:
+    <https://orcid.org/0000-0002-7896-4737>),
+  Michael Thrun [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-9542-5543>),
+  Luca Brinkmann [ctb]
+Repository: CRAN
+Date/Publication: 2026-08-20 23:22:16 UTC

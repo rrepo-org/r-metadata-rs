@@ -1,0 +1,84 @@
+Package: RMark
+Version: 3.1.0
+Date: 2026-7-24
+Title: R Code for Mark Analysis
+Authors@R: c(person(given = "Simon",
+                        family = "Bonner",
+                        role = c("cre"),
+                        email = "simon.bonner@uwo.ca"),
+                        person(given = "Jeff",
+                        family = "Laake",
+                        role = c("aut"),
+                        email = "jefflaake@gmail.com"),
+                        person(given = "Eldar",
+                        family = "Rakhimberdiev",
+                        role = "ctb",
+                        email = "jefflaake@gmail.com"),
+                 person(given = "Ben",
+                        family = "Augustine",
+                        role = "ctb"),
+                 person(given = "Daniel",
+                        family = "Turek",
+                        role = "ctb"),
+                 person(given = "Brett",
+                        family = "McClintock",
+                        role = "ctb"),
+                 person(given = "Jim",
+                        family = "Hines",
+                        role = "ctb"),
+                 person(given = "Bret",
+                        family = "Collier",
+                        role = "ctb"),
+                 person(given = "Jay",
+                        family = "Rotella",
+                        role = "ctb"),
+                 person(given = "David",
+                        family = "Pavlacky",
+                        role = "ctb"),
+                 person(given = "Andrew",
+                        family = "Paul",
+                        role = "ctb"),
+                 person(given = c("Luke", "Eberhart-"),
+                        family = "Phillips",
+                        role = "ctb"),
+                 person(given = "Jake",
+                        family = "Ivan",
+                        role = "ctb"),
+                 person(given = "Connor",
+                        family = "Wood.",
+                        role = "ctb"))
+Description: An interface to the software package MARK that constructs input
+    files for MARK and extracts the output. MARK was developed by Gary White
+    and is freely available at <http://www.phidot.org/software/mark/downloads/>
+    but is not open source.
+SystemRequirements: notepad.exe, mark32.exe or mark64.exe on Windows
+        and only mark on Linux (>= 11.2) (see README.txt in package
+        directory)
+Depends: R (>= 2.13.0),
+Imports: parallel, matrixcalc, msm, coda
+Suggests: lattice, splines, nlme, plotrix
+URL: https://github.com/sjbonner/RMark
+BugReports: https://github.com/sjbonner/RMark/issues
+LazyLoad: yes
+License: GPL (>= 2)
+Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-25 18:23:02 UTC; jeffl
+Author: Simon Bonner [cre],
+  Jeff Laake [aut],
+  Eldar Rakhimberdiev [ctb],
+  Ben Augustine [ctb],
+  Daniel Turek [ctb],
+  Brett McClintock [ctb],
+  Jim Hines [ctb],
+  Bret Collier [ctb],
+  Jay Rotella [ctb],
+  David Pavlacky [ctb],
+  Andrew Paul [ctb],
+  Luke Eberhart- Phillips [ctb],
+  Jake Ivan [ctb],
+  Connor Wood. [ctb]
+Maintainer: Simon Bonner <simon.bonner@uwo.ca>
+Repository: CRAN
+Date/Publication: 2026-07-27 18:30:02 UTC

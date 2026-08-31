@@ -1,0 +1,44 @@
+Package: birddog
+Title: Sniffing Emergence and Trajectories in Academic Papers and
+        Patents
+Version: 1.0.4
+Authors@R: c( person( given = c("Roney", "Fraga"), family = "Souza", role = c("aut", "cre", "cph"), email = "roneyfraga@gmail.com", comment = c(ORCID = "orcid.org/0000-0001-5750-489X")), person( given = c("Luis", "Felipe"), family = "de Souza Rodrigues", role = "ctb", email = "lfsouza25@gmail.com"))
+Description: Provides a unified set of methods to detect scientific emergence
+    and technological trajectories in academic papers and patents. The package
+    combines citation network analysis with community detection and attribute
+    extraction, also applying natural language processing (NLP) and structural
+    topic modeling (STM) to uncover the contents of research communities. It
+    implements metrics and visualizations of community trajectories, including
+    novelty indicators, citation cycle time, and main path analysis, allowing
+    researchers to map and interpret the dynamics of emerging knowledge fields.
+    Applications of the method include: Souza et al. (2022)
+    <doi:10.1002/bbb.2441>, Souza et al. (2022)
+    <doi:10.14211/ibjesb.e1742>, Matos et al. (2023)
+    <doi:10.1007/s43938-023-00036-3>, Maria et al. (2023)
+    <doi:10.3390/su15020967>, Biazatti et al. (2024)
+    <doi:10.1016/j.envdev.2024.101074>, Felizardo et al. (2025)
+    <doi:10.1007/s12649-025-03136-z>, and Miranda et al. (2025)
+    <doi:10.1016/j.ijhydene.2025.01.089>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Imports: dplyr, ggraph, ggplot2, plotly, igraph, tidygraph, tidyr,
+        tibble, Matrix, purrr, readr, rlang, glue, openalexR,
+        RColorBrewer, scales, stringr
+VignetteBuilder: knitr
+Suggests: benchmarkme, knitr, rmarkdown, cli, ggHoriPlot, ggrepel,
+        ggthemes, janitor, gt, testthat (>= 3.0.0), tictoc, viridis,
+        zoo, stm, tidytext, udpipe
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+URL: http://roneyfraga.com/birddog/,
+        https://github.com/roneyfraga/birddog
+BugReports: https://github.com/roneyfraga/birddog/issues
+NeedsCompilation: no
+Packaged: 2026-04-04 18:40:17 UTC; roney
+Author: Roney Fraga Souza [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5750-489X>),
+  Luis Felipe de Souza Rodrigues [ctb]
+Maintainer: Roney Fraga Souza <roneyfraga@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-04 19:00:03 UTC

@@ -1,0 +1,40 @@
+Package: ensembleML
+Type: Package
+Title: Unified Interface for Ensemble Machine Learning Methods
+Version: 0.2.5
+Date: 2026-05-20
+Authors@R: 
+    person(
+        given = "Sadikul",
+        family = "Islam",
+        email = "sadikul.islamiasri@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-2924-7122")
+    )
+Description: Provides a clean, unified interface for training, predicting,
+    and evaluating ensemble machine learning models including Random Forest,
+    Gradient Boosting ('XGBoost'), 'AdaBoost', and 'Bagging'. All algorithms share
+    a consistent API: em_fit(), em_predict(), em_evaluate(), and em_tune().
+    Includes built-in cross-validation, feature importance, calibration
+    diagnostics, partial dependence plots, and model comparison utilities.
+    Methods: Breiman (2001) <doi:10.1023/A:1010933404324>;
+    Chen and Guestrin (2016) <doi:10.1145/2939672.2939785>;
+    Freund and Schapire (1997) <doi:10.1006/jcss.1997.1504>;
+    Breiman (1996) <doi:10.1007/BF00058655>.
+Language: en-US
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports: randomForest (>= 4.7-1), xgboost (>= 1.7.0), adabag (>= 4.2),
+        ggplot2 (>= 3.4.0), rlang (>= 1.1.0), stats, utils
+Suggests: pROC (>= 1.18.0), gridExtra (>= 2.3), testthat (>= 3.0.0),
+        knitr, rmarkdown, mlbench
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-06-01 07:29:28 UTC; acer
+Author: Sadikul Islam [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2924-7122>)
+Maintainer: Sadikul Islam <sadikul.islamiasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-06-05 15:00:07 UTC

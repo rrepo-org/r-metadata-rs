@@ -1,0 +1,24 @@
+Package: Thresher
+Version: 1.1.5
+Date: 2025-04-07
+Title: Threshing and Reaping for Principal Components
+Authors@R: c(person(given = c("Kevin", "R."), family = "Coombes",
+                    role = c("aut", "cre"), email = "krc@silicovore.com"))
+Description: Defines the classes used to identify
+  outliers (threshing) and compute the number of significant principal
+  components and number of clusters (reaping) in a joint application
+  of PCA and hierarchical clustering. See Wang et al., 2018,
+  <doi:10.1186/s12859-017-1998-9>.
+Depends: R (>= 4.4), ClassDiscovery, PCDimension
+Imports: methods, stats, graphics, grDevices, MASS, colorspace, movMF,
+        ade4, oompaBase
+Suggests: NbClust
+License: Apache License (== 2.0)
+biocViews: Clustering
+URL: http://oompa.r-forge.r-project.org/
+NeedsCompilation: no
+Packaged: 2025-04-07 21:47:48 UTC; kevin
+Author: Kevin R. Coombes [aut, cre]
+Maintainer: Kevin R. Coombes <krc@silicovore.com>
+Repository: CRAN
+Date/Publication: 2025-04-07 23:00:02 UTC

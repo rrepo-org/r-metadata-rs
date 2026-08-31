@@ -1,0 +1,61 @@
+Package: tf
+Title: S3 Classes and Methods for Tidy Functional Data
+Version: 0.5.0
+Authors@R: c(
+    person("Fabian", "Scheipl", , "fabian.scheipl@googlemail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8172-3603")),
+    person("Jeff", "Goldsmith", role = "aut"),
+    person("Maximilian", "Mücke", role = "aut",
+           comment = c(ORCID = "0009-0000-9432-9795")),
+    person("Julia", "Wrobel", role = "ctb",
+           comment = c(ORCID = "0000-0001-6783-1421")),
+    person("Sebastian", "Fischer", role = "ctb",
+           comment = c(ORCID = "0000-0002-9609-3197"))
+  )
+Description: Provides S3 vector types for functional data represented on
+    grids, in spline bases, or via functional principal components.
+    Supports arithmetic and summary methods, plotting, derivation,
+    integration, smoothing, registration, and data import/export for these
+    functional vectors. Includes data-wrangling tools for re-evaluation,
+    subsetting, sub-assignment, zooming into sub-domains, and extracting
+    functional features such as minima, maxima, and their locations.
+    Enables joint analysis of functional and scalar variables by integrating
+    functional vectors into standard data frames.
+License: AGPL (>= 3)
+URL: https://tidyfun.github.io/tf/, https://github.com/tidyfun/tf/
+BugReports: https://github.com/tidyfun/tf/issues
+Depends: R (>= 4.1)
+Imports: checkmate, cli, methods, mgcv, purrr (>= 1.0.0), rlang, stats,
+        vctrs (>= 0.2.4), zoo
+Suggests: covr, dplyr, fda, fdasrvf (>= 2.4.0), pillar, refund,
+        testthat (>= 3.0.0), tibble, tidyr, withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Collate: 'tfb-class.R' 'tfd-class.R' 'tfd-mv.R' 'tfb-mv.R' 'vctrs-mv.R'
+        'accessors-mv.R' 'approx.R' 'assertions.R' 'bibentries.R'
+        'brackets-mv.R' 'brackets.R' 'calculus-mv.R' 'calculus.R'
+        'convert-construct-utils.R' 'convert-mv.R' 'convert.R' 'data.R'
+        'depth.R' 'evaluate.R' 'fda-connectors.R' 'fwise.R'
+        'geometry-mv.R' 'globals.R' 'graphics.R' 'interpolate.R'
+        'landmarks.R' 'ops.R' 'math.R' 'methods.R' 'mv-stubs.R'
+        'ops-mv.R' 'plot-mv.R' 'print-format-mv.R' 'print-format.R'
+        'rebase.R' 'register-cc.R' 'register-mv.R' 'register-utils.R'
+        'register.R' 'registration-class.R' 'rng.R' 'smooth.R'
+        'soft-impute-svd.R' 'split-combine.R' 'summarize.R'
+        'tf-package.R' 'tfb-fpc.R' 'tfb-spline.R' 'tf-s4.R'
+        'tfb-fpc-utils.R' 'tfb-mfpc.R' 'tfb-spline-utils.R' 'utils.R'
+        'vctrs-cast.R' 'vctrs-ptype2.R' 'where.R' 'zoom.R' 'zzz.R'
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-07-14 09:05:43 UTC; fabians
+Author: Fabian Scheipl [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-8172-3603>),
+  Jeff Goldsmith [aut],
+  Maximilian Mücke [aut] (ORCID: <https://orcid.org/0009-0000-9432-9795>),
+  Julia Wrobel [ctb] (ORCID: <https://orcid.org/0000-0001-6783-1421>),
+  Sebastian Fischer [ctb] (ORCID:
+    <https://orcid.org/0000-0002-9609-3197>)
+Maintainer: Fabian Scheipl <fabian.scheipl@googlemail.com>
+Repository: CRAN
+Date/Publication: 2026-07-14 10:40:02 UTC

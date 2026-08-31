@@ -1,0 +1,41 @@
+Package: ribiosIO
+Type: Package
+Title: Input/Output Utilities of the 'ribios' Suite
+Version: 1.1.0
+Date: 2026-01-24
+Authors@R: 
+  c(person(given = "Jitao David",
+           family = "Zhang",
+           role = c("aut", "cre", "ctb"),
+           email = "jitao_david.zhang@roche.com",
+           comment = c(ORCID="0000-0002-3085-0909")),
+    person(given = "Balazs",
+           family = "Banfai",
+           role = "ctb"),
+    person("F.Hoffmann-La Roche AG", role="cph"))
+Description: Provides data structures and functions for file input/output in the 'ribios' software suite, supporting common bioinformatics and computational biology file formats, designed for fast loading and high performance with minimal dependencies.
+Depends: R (>= 3.4.0)
+Imports: ribiosUtils, methods, utils
+Suggests: testthat
+License: GPL-3
+URL: https://github.com/bedapub/ribiosIO
+BugReports: https://github.com/bedapub/ribiosIO/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Collate: 'GctMatrix.R' 'ampliseq.R' 'checkfile.R' 'iofile.R'
+        'isGctFile.R' 'loadFile.R' 'read_bed.R' 'read_biokit_exprs.R'
+        'read_chip.R' 'read_cls.R' 'read_david.R' 'read_exprs_matrix.R'
+        'read_fasta.R' 'read_gct.R' 'read_gmt.R'
+        'read_illumina_sampleSheet.R' 'read_pheno.R'
+        'read_trimmed_lines.R' 'ribiosIO.R' 'write.tableList.R'
+        'writeMatrix.R' 'writeMatrix.tableList.R' 'writeStrList.R'
+        'write_gct.R' 'write_gmt.R'
+NeedsCompilation: yes
+Packaged: 2026-02-18 09:08:49 UTC; david
+Author: Jitao David Zhang [aut, cre, ctb] (ORCID:
+    <https://orcid.org/0000-0002-3085-0909>),
+  Balazs Banfai [ctb],
+  F.Hoffmann-La Roche AG [cph]
+Maintainer: Jitao David Zhang <jitao_david.zhang@roche.com>
+Repository: CRAN
+Date/Publication: 2026-02-20 10:40:07 UTC

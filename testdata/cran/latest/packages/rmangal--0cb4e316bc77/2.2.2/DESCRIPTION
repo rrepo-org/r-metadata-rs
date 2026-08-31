@@ -1,0 +1,61 @@
+Package: rmangal
+Type: Package
+Title: 'Mangal' Client
+Version: 2.2.2
+Authors@R: c(
+    person(given = "Steve", family = "Vissault", comment = c(ORCID = "0000-0002-0866-4376"),
+      email = "s.vissault@yahoo.fr", role = c("aut", "ctb")),
+    person(given = "Kevin", family = "Cazelles", comment = c(ORCID = "0000-0001-6619-9874"),
+        email = "kevin.cazelles@insileco.io", role = c("aut","cre")),
+    person(given = "Gabriel", family = "Bergeron",
+      email = "gabriel.bergeron3@usherbrooke.ca", role = c("aut","ctb")),
+    person(given = "Benjamin", family = "Mercier",
+      email = "Benjamin.B.Mercier@usherbrooke.ca", role = c("aut","ctb")),
+    person(given = "Clément", family = "Violet",
+      email = "Clement.Violet@etudiant.univ-brest.fr", role = c("aut","ctb")),
+    person(given = "Dominique", family = "Gravel",
+      email = "dominique.gravel@usherbrooke.ca", role = c("aut")),
+    person(given = "Timothée", family = "Poisot",
+      email = "timothee.poisot@umontreal.ca", role = c("aut")),
+    person(given = "Thomas Lin", family = "Pedersen", role = "rev",
+           comment = c(ORCID = "0000-0002-5147-4711")),
+    person(given = "Anna Willoughby", role = "rev",
+      comment = c(ORCID = "0000-0002-0504-0605"))
+    )
+Description: An interface to the 'Mangal' database - a collection of ecological networks. This package includes functions to work with the 'Mangal RESTful API' methods (<https://mangal-interactions.github.io/mangal-api/>).
+URL: https://docs.ropensci.org/rmangal/, https://mangal.io,
+        https://github.com/ropensci/rmangal
+BugReports: https://github.com/ropensci/rmangal/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Depends: R (>= 4.1)
+Imports: cli, httr2 (>= 1.2.0), igraph (>= 2.0.0), jsonlite (>= 1.5),
+        methods, rlang
+RoxygenNote: 7.3.3
+Suggests: ggraph (>= 2.0.0), knitr, mapview, rmarkdown, sf, spelling,
+        tidygraph, testthat (>= 3.0.0), tibble, vcr, withr
+VignetteBuilder: knitr
+X-schema.org-applicationCategory: ecologicalNetworks
+X-schema.org-keywords: ecology, networks, food webs, interactions, data
+        publications, open access
+X-schema.org-isPartOf: https://ropensci.org
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-01-15 19:39:03 UTC; kc
+Author: Steve Vissault [aut, ctb] (ORCID:
+    <https://orcid.org/0000-0002-0866-4376>),
+  Kevin Cazelles [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6619-9874>),
+  Gabriel Bergeron [aut, ctb],
+  Benjamin Mercier [aut, ctb],
+  Clément Violet [aut, ctb],
+  Dominique Gravel [aut],
+  Timothée Poisot [aut],
+  Thomas Lin Pedersen [rev] (ORCID:
+    <https://orcid.org/0000-0002-5147-4711>),
+  Anna Willoughby [rev] (ORCID: <https://orcid.org/0000-0002-0504-0605>)
+Maintainer: Kevin Cazelles <kevin.cazelles@insileco.io>
+Repository: CRAN
+Date/Publication: 2026-01-21 19:10:08 UTC

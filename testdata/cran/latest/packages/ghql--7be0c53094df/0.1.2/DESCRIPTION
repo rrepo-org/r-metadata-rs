@@ -1,0 +1,35 @@
+Type: Package
+Package: ghql
+Title: General Purpose 'GraphQL' Client
+Version: 0.1.2
+Authors@R: c(
+    person("Scott", "Chamberlain", , "myrmecocystus@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-1444-9135")),
+    person("Mark", "Padgham", , "mark.padgham@email.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2172-5265"))
+  )
+Description: A 'GraphQL' client, with an R6 interface for initializing a
+    connection to a 'GraphQL' instance, and methods for constructing
+    queries, including fragments and parameterized queries. Queries are
+    checked with the 'libgraphqlparser' C++ parser via the 'graphql'
+    package.
+License: MIT + file LICENSE
+URL: https://docs.ropensci.org/ghql/, https://github.com/ropensci/ghql
+BugReports: https://github.com/ropensci/ghql/issues
+Imports: crul, graphql, jsonlite, R6
+Suggests: testthat
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+X-schema.org-applicationCategory: Web
+X-schema.org-isPartOf: https://ropensci.org
+X-schema.org-keywords: http, API, web-services, curl, data, GraphQL
+NeedsCompilation: no
+Packaged: 2025-09-01 07:25:09 UTC; smexus
+Author: Scott Chamberlain [aut] (ORCID:
+    <https://orcid.org/0000-0003-1444-9135>),
+  Mark Padgham [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2172-5265>)
+Maintainer: Mark Padgham <mark.padgham@email.com>
+Repository: CRAN
+Date/Publication: 2025-09-02 22:00:02 UTC

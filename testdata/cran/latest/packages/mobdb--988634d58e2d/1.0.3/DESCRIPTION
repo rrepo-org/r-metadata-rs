@@ -1,0 +1,30 @@
+Package: mobdb
+Type: Package
+Title: Access the 'Mobility Database' API to Discover Transit Feeds
+Version: 1.0.3
+Authors@R: 
+    person("Jason", "Adle", , "developer@jasonadle.dev", role = c("aut", "cre", "cph"))
+Description: Search and access transit feed data from the
+    'Mobility Database' <https://mobilitydatabase.org>. The package wraps the 'Mobility Database'
+    API, allowing users to discover 'GTFS' (General Transit Feed Specification) and
+    'GBFS' (General Bikeshare Feed Specification) feeds from agencies worldwide.
+    Functions are designed to integrate seamlessly with
+    packages like 'tidytransit' and 'gtfstools' for subsequent feed analysis.
+URL: https://mobdb.jasonadle.dev, https://github.com/jasonad123/mobdb
+BugReports: https://github.com/jasonad123/mobdb/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: curl, httr2 (>= 1.0.0), cli (>= 3.0.0), rlang (>= 1.0.0),
+        tibble (>= 3.0.0), dplyr (>= 1.0.0), lifecycle, digest
+Suggests: testthat (>= 3.0.0), withr (>= 2.0.0), httptest2, knitr,
+        rmarkdown, tidytransit, gtfsio, keyring, sf, gbfs, zip, hms
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-08-28 16:30:26 UTC; jasonadle
+Author: Jason Adle [aut, cre, cph]
+Maintainer: Jason Adle <developer@jasonadle.dev>
+Repository: CRAN
+Date/Publication: 2026-08-28 21:40:02 UTC

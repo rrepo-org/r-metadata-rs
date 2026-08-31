@@ -1,0 +1,22 @@
+Package: SecretsProvider
+Type: Package
+Title: Save and Retrieve Name-Value Pairs to and from a File
+Version: 1.0.1
+Authors@R: c(person("Koen", "Greuell", role = c("aut", "cre"), email = "vlic@lifewatch.eu"))
+Maintainer: Koen Greuell <vlic@lifewatch.eu>
+Description: Facilitates secret management by storing credentials in a dedicated file, 
+          keeping them out of your code base. 
+          The secrets are stored without encryption.  
+          This package is compatible with secrets stored by the 'SecretsProvider' 'Python' package <https://pypi.org/project/SecretsProvider/>.
+License: Apache License (== 2.0)
+Imports: getPass
+Suggests: testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+URL: https://CRAN.R-project.org/package=SecretsProvider
+BugReports: https://github.com/NaaVRE/SecretsProviderR/issues
+NeedsCompilation: no
+Packaged: 2025-08-19 11:48:30 UTC; koen-greuell
+Author: Koen Greuell [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-08-19 12:20:12 UTC

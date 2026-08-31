@@ -1,0 +1,31 @@
+Package: stagsynth
+Type: Package
+Title: Staggered Synthetic Control Estimation and Inference
+Version: 0.1.0
+Authors@R: c(
+    person("Zhanchao", "Fu", role = c("aut", "cre"),
+           email = "fuzhanchao2001@gmail.com"),
+    person("Jianfei", "Cao", role = "aut",
+           email = "jianfeicao7@gmail.com")
+    )
+Description: Implements the Staggered Synthetic Control (SSC) method for
+    estimating treatment effects in panel data with staggered adoption, as
+    proposed by Cao, Lu, and Wu (2020) <doi:10.48550/arXiv.1912.06320>.
+    Constructs synthetic control weights via constrained quadratic
+    programming, estimates heterogeneous treatment effects and event-time
+    average treatment effects on the treated (ATT), and provides
+    placebo-in-time confidence intervals and p-values.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: quadprog
+Suggests: ggplot2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-24 19:22:18 UTC; Administrator
+Author: Zhanchao Fu [aut, cre],
+  Jianfei Cao [aut]
+Maintainer: Zhanchao Fu <fuzhanchao2001@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-04-28 19:20:03 UTC

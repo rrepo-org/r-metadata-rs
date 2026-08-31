@@ -1,0 +1,43 @@
+Package: rpanel
+Type: Package
+Title: Simple Interactive Controls for R using the 'tcltk' Package
+Version: 1.1-6.3
+Date: 2026-04-09
+Authors@R: 
+  c(person(given = "Adrian",
+           family = "Bowman",
+           role = c("aut", "cre", "cph"),
+           email = "adrian.bowman@glasgow.ac.uk"),
+    person(given = "Ewan",
+           family = "Crawford",
+           role = "aut"),
+    person(given = "Gavin",
+           family = "Alexander",
+           role = "aut"),
+    person(given = "Richard",
+           family = "Bowman",
+           role = "aut"))
+Depends: R (>= 4.1), tcltk
+Suggests: rgl, sp, geoR, interp, MASS, denstrip, lattice, sm, maps,
+        mgcv, colorspace, ggplot2, dplyr, scales, tidyr, fields,
+        ggforce, readr, readxl, sn, testthat (>= 3.0.0)
+Description: A set of functions to build simple 
+        GUI controls for R functions.  These are built on the 'tcltk' package. 
+        Uses could include changing a parameter on a graph by animating it 
+        with a slider or a "doublebutton", up to more sophisticated control 
+        panels.
+        Some functions for specific graphical tasks, referred to as 'cartoons',
+        are provided.
+License: GPL (>= 2)
+BugReports: https://github.com/adrian-bowman/rpanel/issues
+LazyData: TRUE
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-04-09 09:15:57 UTC; adrianbowman
+Author: Adrian Bowman [aut, cre, cph],
+  Ewan Crawford [aut],
+  Gavin Alexander [aut],
+  Richard Bowman [aut]
+Maintainer: Adrian Bowman <adrian.bowman@glasgow.ac.uk>
+Repository: CRAN
+Date/Publication: 2026-04-09 09:50:09 UTC

@@ -1,0 +1,32 @@
+Package: catool
+Type: Package
+Title: Compensation Analysis Tool for Instructor Overload Pay
+Version: 1.0.1
+Date: 2025-06-09
+Authors@R: 
+    person("Dawit", "Aberra", email = "dawit3000@hotmail.com", role = c("aut", "cre"))
+Description: Calculates equitable overload compensation for college instructors
+    based on institutional policies, enrollment thresholds, and regular teaching load limits.
+    Compensation is awarded only for credit hours that exceed the regular load and meet
+    minimum enrollment criteria. When enrollment is below a specified threshold, pay is
+    prorated accordingly. The package prioritizes compensation from high-enrollment courses,
+    or optionally from low-enrollment courses for fairness, depending on user-defined strategy.
+    Includes tools for flexible policy settings, instructor filtering, and produces
+    clean, audit-ready summary tables suitable for payroll and administrative reporting.
+License: AGPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+Imports: dplyr, purrr, tibble, rlang, scales
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/dawit3000/catool
+BugReports: https://github.com/dawit3000/catool/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-06-10 04:47:48 UTC; dawit
+Author: Dawit Aberra [aut, cre]
+Maintainer: Dawit Aberra <dawit3000@hotmail.com>
+Repository: CRAN
+Date/Publication: 2025-06-11 11:40:01 UTC

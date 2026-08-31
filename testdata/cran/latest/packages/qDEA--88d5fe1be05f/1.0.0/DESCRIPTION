@@ -1,0 +1,38 @@
+Package: qDEA
+Type: Package
+Title: Quantile Data Envelopment Analysis
+Version: 1.0.0
+Authors@R: c(person("Joe", "Atwood", email = "jatwood@montana.edu",role = c("aut", "cre")),
+             person("John","Walden",role="aut")) 
+Depends: R (>= 4.2)
+Imports: dplyr, doBy, highs, Matrix, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Description: R implementation of Quantile Data Envelopment Analysis. 
+ The package 'qDEA' allows a user specified proportion of observations to lie external to a given
+ Decision Making Units's (DMU's)reference hyperplane. 'qDEA' can be used to detect and
+ address influential outliers or to implement quantile benchmarking, as discussed in Atwood and
+ Shaik (2020). 
+ Quantile benchmarking is accomplished by using heuristic procedures to find a DMU's closest
+ input-output projection point in a specified direction while allowing a specified 
+ proportion of observations to lie external to the projected point's hyperplane. 
+ The 'qDEA' package accommodates standard (DEA) and quantile DEA estimation, 
+ returns to scale CRS(constant),VRS(variable),DRS(decreasing) or IRS(increasing),
+ the use of directional vectors, bias correction through subsample bootstrapping and subsample size 
+ selection procedures. The user can also recover each DMU's reference DMUs and external DMUs if desired.
+ The implemented procedures are based on discussions in: 
+ Atwood and Shaik (2020) <doi:10.1016/j.ejor.2020.03.054>
+ Atwood and Shaik (2018) <doi:10.1007/978-3-319-68678-3_4>
+ Walden and Atwood (2023) <doi:10.1086/724932>
+ Walden and Atwood (2025) <doi:10.1086/736554>.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-04-07 21:56:40 UTC; h22v519
+Author: Joe Atwood [aut, cre],
+  John Walden [aut]
+Maintainer: Joe Atwood <jatwood@montana.edu>
+Repository: CRAN
+Date/Publication: 2026-04-13 14:40:07 UTC

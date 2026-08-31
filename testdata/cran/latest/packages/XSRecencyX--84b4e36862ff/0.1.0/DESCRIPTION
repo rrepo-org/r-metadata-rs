@@ -1,0 +1,35 @@
+Package: XSRecencyX
+Type: Package
+Title: HIV Incidence Estimation using Recency Testing Data with
+        Population Adjustment
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Sirong",
+           family = "Li",
+           email = "lisr2002aawzy@gmail.com",
+           role = c("aut")),
+    person(given = "Fei",
+           family = "Gao",
+           email = "fgao@fredhutch.org",
+           role = c("aut","cre"),
+           comment = c(ORCID = "0000-0001-6797-5468")),
+    person(given = "Marlena",
+           family = "Bannick",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-6797-5978"))
+    )
+Description: Tools for estimating HIV incidence using cross-sectional recency testing data, adjusting for internal and external target populations and supporting subtype-specific parameters. The statistical methodology implemented builds on the framework described in Wang, Duerr, and Gao(2025) <doi:10.1002/sim.70216>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0)
+Imports: data.table, dplyr, geepack, purrr, magrittr, methods
+NeedsCompilation: no
+Packaged: 2026-04-18 20:31:46 UTC; sirongli
+Author: Sirong Li [aut],
+  Fei Gao [aut, cre] (ORCID: <https://orcid.org/0000-0001-6797-5468>),
+  Marlena Bannick [aut] (ORCID: <https://orcid.org/0000-0001-6797-5978>)
+Maintainer: Fei Gao <fgao@fredhutch.org>
+Repository: CRAN
+Date/Publication: 2026-04-21 20:02:15 UTC

@@ -1,0 +1,44 @@
+Package: raptools
+Title: Risk Assessment Plot and Reclassification Metrics
+Version: 1.23.0
+Authors@R: c(
+        person(
+        given = "John W", 
+        family = "Pickering", 
+        email = "John.Pickering@otago.ac.nz", 
+        role = "aut"
+        ),
+        person(
+        given = "Dimitrios", 
+        family = "Doudesis", 
+        email = "dimitrios.doudesis@ed.ac.uk", 
+        role = "aut"
+        ),
+        person(
+        given = "Daniel", 
+        family = "Perez Vicencio", 
+        email = "dvicencio947@gmail.com", 
+        role = "cre"
+        )
+    )
+Description: Assessing the comparative performance of two logistic regression models or results of such models or classification models. Discrimination metrics include Integrated Discrimination Improvement (IDI), Net Reclassification Improvement (NRI), and difference in Area Under the Curves (AUCs), Brier scores and Brier skill. Plots include Risk Assessment Plots, Decision curves and Calibration plots. Methods are described in Pickering and Endre (2012) <doi:10.1373/clinchem.2011.167965> and Pencina et al. (2008) <doi:10.1002/sim.2929>.  
+Depends: R (>= 4.1.0)
+Imports: rms, Hmisc, dplyr, ggplot2, pROC, stats, tidyr, forcats,
+        pracma, ggrepel
+License: GPL-3
+LazyData: true
+LazyLoad: true
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Suggests:
+URL: https://github.com/Researchverse/raptools,
+        https://researchverse.github.io/raptools/
+BugReports: https://github.com/Researchverse/raptools/issues
+NeedsCompilation: no
+Packaged: 2025-12-09 21:29:36 UTC; danielperez
+Author: John W Pickering [aut],
+  Dimitrios Doudesis [aut],
+  Daniel Perez Vicencio [cre]
+Maintainer: Daniel Perez Vicencio <dvicencio947@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-12-09 21:50:13 UTC
