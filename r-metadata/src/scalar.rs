@@ -81,12 +81,18 @@ pub enum Priority {
     Base,
     /// Recommended package.
     Recommended,
+    /// Ordinary optional package, used by historical repository metadata.
+    Optional,
+    /// Contributed package, used by historical repository metadata.
+    Contrib,
 }
 impl std::fmt::Display for Priority {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         f.write_str(match self {
             Self::Base => "base",
             Self::Recommended => "recommended",
+            Self::Optional => "optional",
+            Self::Contrib => "contrib",
         })
     }
 }
@@ -96,11 +102,13 @@ impl FromStr for Priority {
         match value {
             "base" => Ok(Self::Base),
             "recommended" => Ok(Self::Recommended),
+            "optional" => Ok(Self::Optional),
+            "contrib" => Ok(Self::Contrib),
             _ => Err(PriorityParseError),
         }
     }
 }
 /// Error parsing package priority.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, thiserror::Error)]
-#[error("expected base or recommended")]
+#[error("expected base, recommended, optional, or contrib")]
 pub struct PriorityParseError;

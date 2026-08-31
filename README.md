@@ -30,3 +30,17 @@ assert_eq!(description.to_string().lines().next(), Some("Package: example"));
 The lossless syntax model currently accepts valid UTF-8 input. Arbitrary
 non-UTF-8 DESCRIPTION encodings require a separate byte-preserving source
 layer and are outside this version's contract.
+
+## CRAN corpus
+
+`testdata/cran/latest` contains the latest DESCRIPTION available for every
+package in rrepo's CRAN mirror. Refresh and verify the snapshot with:
+
+```sh
+cargo run -p xtask --release -- cran-snapshot
+```
+
+The corpus regression test parses every fixture, checks exact byte round-trip,
+and invokes every raw and typed accessor. Semantic errors remain field-local
+results because the mirror intentionally includes malformed historical
+metadata.

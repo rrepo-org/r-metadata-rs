@@ -216,11 +216,6 @@ fn validate_collections(description: &Description, issues: &mut Vec<ValidationIs
     collection_issues(
         issues,
         "invalid-url",
-        description.bug_reports_parsed().issues(),
-    );
-    collection_issues(
-        issues,
-        "invalid-url",
         description.additional_repositories_parsed().issues(),
     );
     collection_issues(

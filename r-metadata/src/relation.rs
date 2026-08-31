@@ -245,7 +245,13 @@ impl RelationList {
     /// Parses all entries, recovering after every comma.
     pub fn parse(input: &str) -> Self {
         let mut result = Self::default();
-        for (start, end) in segments(input) {
+        let segments = segments(input);
+        for (index, &(start, end)) in segments.iter().enumerate() {
+            if input[start..end].trim().is_empty()
+                && (segments.len() == 1 || index == segments.len() - 1)
+            {
+                continue;
+            }
             let (entry, entry_issues) = parse_one(input, start, end);
             if let Some((value, span)) = entry {
                 result.entries.push(Spanned { value, span });

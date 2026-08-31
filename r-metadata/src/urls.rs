@@ -120,11 +120,15 @@ fn parse_urls(input: &str, whitespace: bool) -> (Vec<SpannedUrl>, Vec<Positioned
     let mut entries = Vec::new();
     let mut issues = Vec::new();
     let mut start = 0;
-    for end in input
+    let ends = input
         .match_indices(',')
         .map(|(i, _)| i)
         .chain(std::iter::once(input.len()))
-    {
+        .collect::<Vec<_>>();
+    for (index, &end) in ends.iter().enumerate() {
+        if input[start..end].trim().is_empty() && (ends.len() == 1 || index == ends.len() - 1) {
+            break;
+        }
         if whitespace {
             parse_ws_segment(input, start, end, &mut entries, &mut issues);
         } else {

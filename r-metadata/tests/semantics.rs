@@ -63,7 +63,9 @@ fn relation_lists_recover_valid_entries_and_precise_issues() {
         &input[parsed.issues()[0].span().start()..parsed.issues()[0].span().end()],
         "="
     );
-    assert!(parsed.issues().last().unwrap().span().is_empty());
+    assert_eq!(parsed.issues().len(), 1);
+    assert!(RelationList::parse("").issues().is_empty());
+    assert!(RelationList::parse("cli,").issues().is_empty());
 }
 
 #[test]
@@ -78,6 +80,8 @@ fn url_lists_apply_field_specific_delimiters_and_recover() {
         AdditionalRepositories::parse("https://one.example https://two.example,https://ok.example");
     assert_eq!(repositories.entries().len(), 1);
     assert_eq!(repositories.issues().len(), 1);
+    assert!(UrlList::parse("").issues().is_empty());
+    assert!(UrlList::parse("https://one.example,").issues().is_empty());
 }
 
 #[test]
