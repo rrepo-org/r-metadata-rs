@@ -44,7 +44,7 @@ fn collections_merge_duplicates_and_recover_entries() {
     let values = parsed.values().cloned().collect::<BTreeSet<_>>();
     assert_eq!(
         values.iter().map(Relation::package).collect::<Vec<_>>(),
-        ["R", "good", "later"]
+        ["good", "later", "R"]
     );
     assert_eq!(parsed.issues().len(), 2);
 }
@@ -281,6 +281,26 @@ fn whole_document_normalization_is_canonical_and_idempotent() {
             "X-Z: one\n",
             "X-Z: two\n",
             "Collate: 'b.R' 'a.R'\n",
+        )
+    );
+    assert_eq!(normalized.normalize().unwrap(), normalized);
+}
+
+#[test]
+fn normalization_sorts_package_relations_case_insensitively() {
+    let normalized = Description::parse("Imports: XML, curl, Rcpp, askpass, xml2\n")
+        .normalize()
+        .unwrap();
+
+    assert_eq!(
+        normalized.to_string(),
+        concat!(
+            "Imports:\n",
+            "    askpass,\n",
+            "    curl,\n",
+            "    Rcpp,\n",
+            "    XML,\n",
+            "    xml2\n",
         )
     );
     assert_eq!(normalized.normalize().unwrap(), normalized);

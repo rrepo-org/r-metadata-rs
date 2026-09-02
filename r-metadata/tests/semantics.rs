@@ -6,7 +6,7 @@ use r_metadata::{
     RemoteSource, RequirementVersion, Span, UrlList, Version, VersionRequirement,
 };
 use static_assertions::assert_impl_all;
-use std::collections::HashSet;
+use std::collections::{BTreeSet, HashSet};
 
 assert_impl_all!(Version: Send, Sync);
 assert_impl_all!(Relation: Send, Sync);
@@ -49,6 +49,33 @@ fn relations_support_every_operator_and_r_revisions() {
             matches!(operand, RequirementVersion::Revision(revision) if revision.number() == 56_550)
         );
     }
+}
+
+#[test]
+fn relations_sort_by_package_case_insensitively() {
+    let relations = ["Rcpp", "curl", "askpass", "XML", "xml2"]
+        .into_iter()
+        .map(str::parse::<Relation>)
+        .collect::<Result<BTreeSet<_>, _>>()
+        .unwrap();
+
+    assert_eq!(
+        relations.iter().map(Relation::package).collect::<Vec<_>>(),
+        ["askpass", "curl", "Rcpp", "XML", "xml2"]
+    );
+
+    let case_variants = ["pkg (>= 2.0)", "Pkg", "pkg"]
+        .into_iter()
+        .map(str::parse::<Relation>)
+        .collect::<Result<BTreeSet<_>, _>>()
+        .unwrap();
+    assert_eq!(
+        case_variants
+            .iter()
+            .map(ToString::to_string)
+            .collect::<Vec<_>>(),
+        ["Pkg", "pkg", "pkg (>= 2.0)"]
+    );
 }
 
 #[test]
