@@ -7,6 +7,8 @@
 
 mod builder;
 mod collections;
+mod normalization;
+mod schema;
 mod typed;
 mod validation;
 
@@ -14,6 +16,7 @@ use std::{fmt, str::Utf8Error};
 
 pub use builder::DescriptionBuilder;
 pub use collections::CollectionEditError;
+pub use normalization::{NormalizationDiagnostic, NormalizationError};
 pub use r_dcf_syntax::{
     Diagnostic as SyntaxDiagnostic, DiagnosticKind as SyntaxDiagnosticKind, EditError, Field,
     FieldName, FormatStyle, InvalidFieldName, InvalidLogicalValue, LineEnding, LogicalValue, Parse,
