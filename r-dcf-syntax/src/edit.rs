@@ -124,6 +124,26 @@ impl Parse {
             &[(SourceSpan::new(offset, offset), insertion)],
         )))
     }
+
+    /// Sets one canonical field, removing earlier matching declarations.
+    ///
+    /// If the field is absent, it is inserted after the final valid field in
+    /// the selected record. The supplied style applies only to the field being
+    /// set; all other source text is preserved.
+    ///
+    /// # Errors
+    ///
+    /// Returns an error if the record is absent or an absent field has no
+    /// valid insertion anchor.
+    pub fn set_unique(
+        &self,
+        record: usize,
+        name: &FieldName,
+        value: &LogicalValue,
+        style: &FormatStyle,
+    ) -> Result<Self, EditError> {
+        set_unique(self, record, name, value, style)
+    }
 }
 
 /// A chainable editing session. Each operation is atomic; `finish` returns the
@@ -200,6 +220,23 @@ impl Editor {
         Ok(self)
     }
 
+    /// Sets one canonical field and removes earlier matching declarations.
+    ///
+    /// # Errors
+    ///
+    /// Returns an error if the record is absent or an absent field has no
+    /// valid insertion anchor.
+    pub fn set_unique(
+        mut self,
+        record: usize,
+        name: &FieldName,
+        value: &LogicalValue,
+        style: &FormatStyle,
+    ) -> Result<Self, EditError> {
+        self.current = self.current.set_unique(record, name, value, style)?;
+        Ok(self)
+    }
+
     /// Completes the transaction.
     pub fn finish(self) -> Parse {
         self.current
@@ -267,6 +304,57 @@ fn remove(
         &parse_result.to_string(),
         &replacements,
     )))
+}
+
+fn set_unique(
+    parse_result: &Parse,
+    record_index: usize,
+    name: &FieldName,
+    value: &LogicalValue,
+    style: &FormatStyle,
+) -> Result<Parse, EditError> {
+    let record = parse_result
+        .records()
+        .nth(record_index)
+        .ok_or(EditError::RecordOutOfBounds {
+            index: record_index,
+        })?;
+    let fields = record.fields_named(name.as_str()).collect::<Vec<_>>();
+    let source = parse_result.to_string();
+
+    if fields.is_empty() {
+        let anchor = record
+            .fields()
+            .last()
+            .ok_or_else(|| EditError::FieldNotFound {
+                name: "<insertion anchor>".to_owned(),
+            })?;
+        let raw = anchor.raw_text();
+        let ending = final_ending(&raw);
+        let field = make::field(name, value, style);
+        let insertion = if ending.is_empty() {
+            format!("{}{field}", style.line_ending.as_str())
+        } else {
+            format!("{field}{ending}")
+        };
+        let offset = anchor.source_range().end;
+        return Ok(parse(&replace_ranges(
+            &source,
+            &[(SourceSpan::new(offset, offset), insertion)],
+        )));
+    }
+
+    let Some((last, earlier)) = fields.split_last() else {
+        return Ok(parse_result.clone());
+    };
+    let ending = final_ending(&last.raw_text()).to_owned();
+    let replacement = format!("{}{ending}", make::field(name, value, style));
+    let mut replacements = earlier
+        .iter()
+        .map(|field| (field.source_range(), String::new()))
+        .collect::<Vec<_>>();
+    replacements.push((last.source_range(), replacement));
+    Ok(parse(&replace_ranges(&source, &replacements)))
 }
 
 fn styled_replacement(field: &Field, value: &LogicalValue) -> String {

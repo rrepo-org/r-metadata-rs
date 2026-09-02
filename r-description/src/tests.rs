@@ -1,6 +1,12 @@
+use std::{collections::BTreeSet, str::FromStr};
+
 use static_assertions::assert_impl_all;
 
-use crate::{Description, DescriptionBuilder, FieldName, FormatStyle, LogicalValue, Severity};
+use crate::{
+    Description, DescriptionBuilder, FieldName, FormatStyle, LogicalValue, Relation, Remote,
+    Severity, Url,
+};
+use r_metadata::RemoteSource;
 
 assert_impl_all!(Description: Clone, Send, Sync);
 
@@ -33,6 +39,13 @@ fn collections_merge_duplicates_and_recover_entries() {
         .map(|entry| entry.value.package())
         .collect::<Vec<_>>();
     assert_eq!(names, ["R", "good", "later"]);
+    assert_eq!(parsed.issues().len(), 2);
+
+    let values = parsed.values().cloned().collect::<BTreeSet<_>>();
+    assert_eq!(
+        values.iter().map(Relation::package).collect::<Vec<_>>(),
+        ["R", "good", "later"]
+    );
     assert_eq!(parsed.issues().len(), 2);
 }
 
@@ -97,4 +110,140 @@ fn builder_and_immutable_edits_preserve_structure() {
     assert_eq!(inserted.url().unwrap().as_str(), "https://example.com");
     let removed = inserted.remove_all("URL").unwrap();
     assert!(removed.url().is_none());
+}
+
+#[test]
+fn relation_setters_normalize_the_complete_collection() {
+    let source =
+        "Package: demo\r\nDepends: old\r\nbroken text\r\nDepends:\r\n old-two\r\nTitle: Kept";
+    let description = Description::parse(source);
+    let relations = [
+        Relation::from_str("zeta (>= 2.0)").unwrap(),
+        Relation::from_str("alpha").unwrap(),
+    ]
+    .into_iter()
+    .collect::<BTreeSet<_>>();
+
+    let changed = description.set_depends(&relations).unwrap();
+    assert_eq!(
+        changed.to_string(),
+        "Package: demo\r\nbroken text\r\nDepends:\r\n    alpha,\r\n    zeta (>= 2.0)\r\nTitle: Kept"
+    );
+    assert_eq!(description.to_string(), source);
+    assert_eq!(changed.fields("Depends").count(), 1);
+    assert_eq!(changed.depends_parsed().values().count(), 2);
+
+    let one = Description::parse("Package: demo\nTitle: Kept")
+        .set_imports([Relation::from_str("only").unwrap()])
+        .unwrap();
+    assert_eq!(
+        one.to_string(),
+        "Package: demo\nTitle: Kept\nImports:\n    only"
+    );
+}
+
+#[test]
+fn every_relation_collection_has_a_typed_setter() {
+    let relation = Relation::from_str("pkg").unwrap();
+    let description = Description::parse("Package: demo\n");
+
+    assert!(
+        description
+            .set_depends([&relation])
+            .unwrap()
+            .depends()
+            .is_some()
+    );
+    assert!(
+        description
+            .set_imports([&relation])
+            .unwrap()
+            .imports()
+            .is_some()
+    );
+    assert!(
+        description
+            .set_suggests([&relation])
+            .unwrap()
+            .suggests()
+            .is_some()
+    );
+    assert!(
+        description
+            .set_enhances([&relation])
+            .unwrap()
+            .enhances()
+            .is_some()
+    );
+    assert!(
+        description
+            .set_linking_to([&relation])
+            .unwrap()
+            .linking_to()
+            .is_some()
+    );
+    assert!(
+        description
+            .set_vignette_builder([&relation])
+            .unwrap()
+            .vignette_builder()
+            .is_some()
+    );
+}
+
+#[test]
+fn remote_and_repository_setters_preserve_iteration_order() {
+    let remotes = ["github::z/repo", "cran::alpha"]
+        .into_iter()
+        .map(Remote::from_str)
+        .collect::<Result<Vec<_>, _>>()
+        .unwrap();
+    let repositories = [
+        Url::parse("https://z.example/repo").unwrap(),
+        Url::parse("https://a.example/repo").unwrap(),
+    ];
+    let description = Description::parse("Package: demo\nRemotes: old\nTail: kept\n");
+
+    let changed = description
+        .set_remotes(&remotes)
+        .unwrap()
+        .set_additional_repositories(&repositories)
+        .unwrap();
+    assert_eq!(
+        changed.to_string(),
+        "Package: demo\nRemotes:\n    github::z/repo,\n    cran::alpha\nTail: kept\nAdditional_repositories:\n    https://z.example/repo,\n    https://a.example/repo\n"
+    );
+    assert!(changed.remotes_parsed().issues().is_empty());
+    assert!(changed.additional_repositories_parsed().issues().is_empty());
+
+    let sorted = remotes.into_iter().collect::<BTreeSet<_>>();
+    assert_eq!(sorted.len(), 2);
+}
+
+#[test]
+fn empty_collections_remove_duplicates_or_leave_absent_fields_unchanged() {
+    let description = Description::parse("Package: demo\nDepends: one\nDepends: two\nTail: kept\n");
+    let empty = Vec::<Relation>::new();
+    let changed = description.set_depends(&empty).unwrap();
+    assert_eq!(changed.to_string(), "Package: demo\nTail: kept\n");
+
+    let unchanged = changed.set_imports(&empty).unwrap();
+    assert_eq!(unchanged, changed);
+}
+
+#[test]
+fn invalid_constructed_remote_returns_an_error_without_an_edit() {
+    let description = Description::parse("Package: demo\nRemotes: cran::old\n");
+    let remote = Remote {
+        package: None,
+        host: None,
+        source: RemoteSource::Unspecified("contains whitespace".to_owned()),
+    };
+
+    let error = description.set_remotes([remote]).unwrap_err();
+    assert!(error.to_string().contains("collection index 0"));
+    assert_eq!(
+        description.to_string(),
+        "Package: demo\nRemotes: cran::old\n"
+    );
 }

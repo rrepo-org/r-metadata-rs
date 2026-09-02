@@ -7,7 +7,7 @@ use std::{
 };
 
 /// A parsed remote specification.
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct Remote {
     /// Optional package alias.
     pub package: Option<String>,
@@ -18,7 +18,7 @@ pub struct Remote {
 }
 
 /// Supported remote source forms.
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub enum RemoteSource {
     /// An implicit package name.
     Unspecified(String),
@@ -45,13 +45,13 @@ pub enum RemoteSource {
 }
 
 /// CRAN remote data.
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct CranRemote {
     /// Package name.
     pub package: String,
 }
 /// Hosted Git remote data.
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct HostedGitRemote {
     /// Owner or top-level namespace.
     pub owner: String,
@@ -63,7 +63,7 @@ pub struct HostedGitRemote {
     pub reference: Option<String>,
 }
 /// Generic Git remote data. Debug output redacts recognized credentials.
-#[derive(Clone, PartialEq, Eq, Hash)]
+#[derive(Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct GenericGitRemote {
     /// Clone URL, including scp syntax.
     pub url: String,
@@ -71,25 +71,25 @@ pub struct GenericGitRemote {
     pub reference: Option<String>,
 }
 /// Typed URL remote data. Debug output redacts URL credentials.
-#[derive(Clone, PartialEq, Eq, Hash)]
+#[derive(Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct UrlRemote {
     /// Archive URL.
     pub url: Url,
 }
 /// Local remote data.
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct LocalRemote {
     /// Filesystem path.
     pub path: String,
 }
 /// Subversion remote data. Debug output redacts URL credentials.
-#[derive(Clone, PartialEq, Eq, Hash)]
+#[derive(Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct SvnRemote {
     /// Repository URL.
     pub url: Url,
 }
 /// Bioconductor credentials. Debug output always redacts both fields.
-#[derive(Clone, PartialEq, Eq, Hash)]
+#[derive(Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct BioconductorCredentials {
     /// Username.
     pub username: String,
@@ -97,7 +97,7 @@ pub struct BioconductorCredentials {
     pub password: String,
 }
 /// Bioconductor remote data.
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct BioconductorRemote {
     /// Optional credentials.
     pub credentials: Option<BioconductorCredentials>,
@@ -109,7 +109,7 @@ pub struct BioconductorRemote {
     pub reference: Option<String>,
 }
 /// Unknown explicit remote data.
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct UnknownRemote {
     /// Source kind with original case.
     pub kind: String,
