@@ -4,7 +4,7 @@ use r_packages::Packages;
 
 #[test]
 fn real_packages_index_roundtrips_and_validates() {
-    let source = include_str!("../../testdata/real-packages.dcf");
+    let source = include_str!("data/real-packages.dcf");
     let packages = Packages::parse(source);
 
     assert_eq!(packages.to_string(), source);

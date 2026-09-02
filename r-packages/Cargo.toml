@@ -5,13 +5,17 @@ edition.workspace = true
 license.workspace = true
 repository.workspace = true
 description = "Lossless, failure-tolerant R PACKAGES metadata"
+documentation = "https://docs.rs/r-packages-parser"
+readme = "README.md"
+keywords = ["r", "packages", "cran", "parser", "metadata"]
+categories = ["parser-implementations"]
 
 [lib]
 name = "r_packages"
 
 [dependencies]
-r-dcf-syntax = { path = "../r-dcf-syntax" }
-r-metadata = { path = "../r-metadata" }
+r-dcf-syntax = { version = "0.1.0", path = "../r-dcf-syntax" }
+r-metadata = { version = "0.1.0", path = "../r-metadata" }
 thiserror.workspace = true
 
 [dev-dependencies]

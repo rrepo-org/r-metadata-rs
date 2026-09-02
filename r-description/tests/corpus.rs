@@ -4,7 +4,7 @@ use r_description::Description;
 
 #[test]
 fn real_description_roundtrips_and_exposes_custom_fields() {
-    let source = include_str!("../../testdata/real-description.dcf");
+    let source = include_str!("data/real-description.dcf");
     let document = Description::parse(source);
 
     assert_eq!(document.to_string(), source);
