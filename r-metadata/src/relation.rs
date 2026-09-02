@@ -158,10 +158,30 @@ impl VersionRequirement {
 }
 
 /// A case-sensitive package name and optional version requirement.
-#[derive(Debug, Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
+///
+/// Ordering compares package names case-insensitively, then uses their exact
+/// spelling and version requirement as deterministic tie-breakers.
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Relation {
     package: String,
     requirement: VersionRequirement,
+}
+
+impl PartialOrd for Relation {
+    fn partial_cmp(&self, other: &Self) -> Option<std::cmp::Ordering> {
+        Some(self.cmp(other))
+    }
+}
+
+impl Ord for Relation {
+    fn cmp(&self, other: &Self) -> std::cmp::Ordering {
+        self.package
+            .bytes()
+            .map(|byte| byte.to_ascii_lowercase())
+            .cmp(other.package.bytes().map(|byte| byte.to_ascii_lowercase()))
+            .then_with(|| self.package.cmp(&other.package))
+            .then_with(|| self.requirement.cmp(&other.requirement))
+    }
 }
 
 impl Relation {
