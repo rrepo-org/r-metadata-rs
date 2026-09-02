@@ -54,6 +54,10 @@ impl<T, E> CollectionResult<T, E> {
     pub fn entries(&self) -> &[CollectionEntry<T>] {
         &self.entries
     }
+    /// Iterates over parsed values without hiding the separately retained issues.
+    pub fn values(&self) -> impl ExactSizeIterator<Item = &T> + DoubleEndedIterator {
+        self.entries.iter().map(|entry| &entry.value)
+    }
     /// Returns issues in declaration and issue source order.
     pub fn issues(&self) -> &[CollectionIssue<E>] {
         &self.issues

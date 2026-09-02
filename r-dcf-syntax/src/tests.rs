@@ -93,6 +93,20 @@ fn builders_and_edits_work() {
         )
         .unwrap();
     assert_eq!(inserted.to_string(), "Y: 3\r\nAuthors@R: person\r\n");
+
+    let normalized = parsed
+        .set_unique(
+            0,
+            &FieldName::new("X").unwrap(),
+            &LogicalValue::new("\na,\nb").unwrap(),
+            &FormatStyle {
+                line_ending: crate::LineEnding::CrLf,
+                continuation_indent: "    ".to_owned(),
+                space_after_colon: false,
+            },
+        )
+        .unwrap();
+    assert_eq!(normalized.to_string(), "X:\r\n    a,\r\n    b\r\nY: 3\r\n");
 }
 
 proptest! {

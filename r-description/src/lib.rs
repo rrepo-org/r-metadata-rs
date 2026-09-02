@@ -6,17 +6,20 @@
 #![forbid(unsafe_code)]
 
 mod builder;
+mod collections;
 mod typed;
 mod validation;
 
 use std::{fmt, str::Utf8Error};
 
 pub use builder::DescriptionBuilder;
+pub use collections::CollectionEditError;
 pub use r_dcf_syntax::{
     Diagnostic as SyntaxDiagnostic, DiagnosticKind as SyntaxDiagnosticKind, EditError, Field,
     FieldName, FormatStyle, InvalidFieldName, InvalidLogicalValue, LineEnding, LogicalValue, Parse,
     Record, SourceSpan, ValueText,
 };
+pub use r_metadata::{Relation, Remote, Url};
 pub use typed::{CollectionEntry, CollectionIssue, CollectionResult};
 pub use validation::{Severity, Validation, ValidationIssue};
 
