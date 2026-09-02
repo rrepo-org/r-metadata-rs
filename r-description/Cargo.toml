@@ -1,10 +1,13 @@
 [package]
-name = "r-description"
+name = "r-description-parser"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 repository.workspace = true
 description = "Lossless, failure-tolerant R DESCRIPTION metadata"
+
+[lib]
+name = "r_description"
 
 [dependencies]
 r-dcf-syntax = { path = "../r-dcf-syntax" }

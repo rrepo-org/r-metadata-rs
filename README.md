@@ -3,8 +3,8 @@
 This workspace provides lossless, failure-tolerant parsing and editing of R
 package metadata.
 
-- `r-description` is the public facade for one `DESCRIPTION` record.
-- `r-packages` is the public facade for multi-record `PACKAGES` indexes.
+- `r-description-parser` is the public facade for one `DESCRIPTION` record.
+- `r-packages-parser` is the public facade for multi-record `PACKAGES` indexes.
 - `r-metadata` contains shared versions, dependency relations, URLs, logical
   values, and remote-source specifications.
 - `r-dcf-syntax` contains the Rowan 0.17 lossless DCF syntax tree.

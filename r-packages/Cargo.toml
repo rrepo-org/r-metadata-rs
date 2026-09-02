@@ -1,10 +1,13 @@
 [package]
-name = "r-packages"
+name = "r-packages-parser"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 repository.workspace = true
 description = "Lossless, failure-tolerant R PACKAGES metadata"
+
+[lib]
+name = "r_packages"
 
 [dependencies]
 r-dcf-syntax = { path = "../r-dcf-syntax" }
