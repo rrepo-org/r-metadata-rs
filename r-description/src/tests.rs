@@ -334,3 +334,27 @@ fn normalization_rejects_a_record_that_would_become_empty() {
     let error = Description::parse("Encoding:\n").normalize().unwrap_err();
     assert_eq!(error.diagnostics()[0].code(), "empty-record");
 }
+
+#[test]
+fn normalization_preserves_repository_and_remote_priority_order() {
+    let source = concat!(
+        "Remotes: github::z/repo, cran::alpha\n",
+        "Additional_repositories: https://z.example/repo\n",
+        "Remotes: github::z/repo\n",
+        "Additional_repositories: https://a.example/repo, https://z.example/repo\n",
+    );
+    let normalized = Description::parse(source).normalize().unwrap();
+
+    assert_eq!(
+        normalized.to_string(),
+        concat!(
+            "Remotes:\n",
+            "    github::z/repo,\n",
+            "    cran::alpha\n",
+            "Additional_repositories:\n",
+            "    https://z.example/repo,\n",
+            "    https://a.example/repo\n",
+        )
+    );
+    assert_eq!(normalized.normalize().unwrap(), normalized);
+}

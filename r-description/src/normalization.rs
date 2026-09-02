@@ -286,23 +286,23 @@ fn normalize_fields(fields: &[InputField]) -> Vec<OutputField> {
                 push_collection(&mut output, name, &values, &declarations);
             }
             Some(schema::FieldKind::Repositories) => {
-                let values = declarations
-                    .iter()
-                    .flat_map(|field| AdditionalRepositories::parse(&field.value).into_parts().0)
-                    .map(|entry| entry.value.to_string())
-                    .collect::<BTreeSet<_>>()
-                    .into_iter()
-                    .collect::<Vec<_>>();
+                let values = stable_unique(
+                    declarations
+                        .iter()
+                        .flat_map(|field| {
+                            AdditionalRepositories::parse(&field.value).into_parts().0
+                        })
+                        .map(|entry| entry.value.to_string()),
+                );
                 push_collection(&mut output, name, &values, &declarations);
             }
             Some(schema::FieldKind::Remotes) => {
-                let values = declarations
-                    .iter()
-                    .flat_map(|field| RemoteList::parse(&field.value).into_parts().0)
-                    .map(|entry| entry.value.to_string())
-                    .collect::<BTreeSet<_>>()
-                    .into_iter()
-                    .collect::<Vec<_>>();
+                let values = stable_unique(
+                    declarations
+                        .iter()
+                        .flat_map(|field| RemoteList::parse(&field.value).into_parts().0)
+                        .map(|entry| entry.value.to_string()),
+                );
                 push_collection(&mut output, name, &values, &declarations);
             }
             Some(schema::FieldKind::Scalar | schema::FieldKind::Ordered) => {
@@ -318,6 +318,14 @@ fn normalize_fields(fields: &[InputField]) -> Vec<OutputField> {
         }
     }
     output
+}
+
+fn stable_unique(values: impl IntoIterator<Item = String>) -> Vec<String> {
+    let mut seen = BTreeSet::new();
+    values
+        .into_iter()
+        .filter(|value| seen.insert(value.clone()))
+        .collect()
 }
 
 fn push_collection(
