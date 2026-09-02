@@ -62,6 +62,32 @@ fn audit_description(bytes: &[u8], entry: &ManifestEntry, identity: &str, failur
     touch_raw_accessors(&document);
     touch_syntax_accessors(&document);
     touch_typed_accessors(&document);
+    match document.normalize() {
+        Ok(normalized) => {
+            if !normalized.diagnostics().is_empty() {
+                failures.record(
+                    "normalization.syntax",
+                    identity,
+                    "normalized output has syntax diagnostics",
+                );
+            }
+            match normalized.normalize() {
+                Ok(second) if second == normalized => {}
+                Ok(_) => failures.record(
+                    "normalization.idempotence",
+                    identity,
+                    "second normalization changed output",
+                ),
+                Err(error) => failures.record("normalization.second-pass", identity, error),
+            }
+        }
+        Err(error) if error.diagnostics().is_empty() => failures.record(
+            "normalization.empty-diagnostics",
+            identity,
+            "normalization failed without diagnostics",
+        ),
+        Err(_) => {}
+    }
 }
 
 #[allow(clippy::too_many_lines)]

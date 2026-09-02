@@ -2,19 +2,7 @@
 
 use std::fmt::Display;
 
-use crate::{Description, SourceSpan, SyntaxDiagnosticKind};
-
-const COLLECTION_FIELDS: &[&str] = &[
-    "Depends",
-    "Imports",
-    "Suggests",
-    "Enhances",
-    "LinkingTo",
-    "URL",
-    "Additional_repositories",
-    "Remotes",
-    "VignetteBuilder",
-];
+use crate::{Description, SourceSpan, SyntaxDiagnosticKind, schema};
 
 /// Validation issue severity.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
@@ -142,7 +130,7 @@ impl Description {
         let mut seen = std::collections::BTreeSet::new();
         for field in record.fields() {
             if let Some(name) = field.name()
-                && !COLLECTION_FIELDS.contains(&name.as_str())
+                && !schema::permits_duplicate_declarations(&name)
                 && !seen.insert(name.clone())
             {
                 push(
