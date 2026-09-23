@@ -3,10 +3,16 @@
 //! Parsing never rejects DCF syntax. Use [`Packages::validate`] when semantic
 //! findings are wanted, and the typed methods on [`PackageRecord`] when only a
 //! particular field should be interpreted.
+//!
+//! Individual records convert losslessly to [`r_description::Description`] via
+//! `Description::from(&record)`. Convert back with
+//! `PackageRecord::try_from(&description)`, which requires exactly one record
+//! (see [`RecordConversionError`]). Both conversions also accept owned values.
 
 #![forbid(unsafe_code)]
 
 mod builder;
+mod conversion;
 mod edit;
 mod validation;
 
@@ -19,6 +25,7 @@ use r_metadata::{
 };
 
 pub use builder::{BuildError, PackagesBuilder, RecordBuilder};
+pub use conversion::RecordConversionError;
 pub use edit::EditError;
 pub use r_dcf_syntax::{FormatStyle, LineEnding};
 pub use validation::{Finding, FindingKind};
