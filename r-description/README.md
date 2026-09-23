@@ -35,6 +35,13 @@ behavior.
 See the [workspace overview](https://github.com/rrepo-org/r-metadata-rs) for
 the lower-level syntax and semantic-value crates.
 
+## PACKAGES record conversion
+
+The `r-packages-parser` crate provides lossless conversions between `Description`
+and `r_packages::PackageRecord`, using `From` and `TryFrom`. See its
+[conversion documentation](https://github.com/rrepo-org/r-metadata-rs/tree/main/r-packages#converting-individual-records)
+for examples and the record-count, malformed-input, and formatting contract.
+
 ## License
 
 MIT
