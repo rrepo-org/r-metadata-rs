@@ -49,10 +49,10 @@ impl Packages {
     /// Construction takes linear time and memory in the total text size.
     /// See [`PackagesBuilder`] for mixing existing and newly constructed records.
     pub fn from_records<R: Borrow<PackageRecord>>(records: impl IntoIterator<Item = R>) -> Self {
-        Self::builder().existing_records(records).build()
+        Self::builder().records(records).build()
     }
 
-    /// Starts a canonical `PACKAGES` builder.
+    /// Starts a lossless `PACKAGES` assembly builder.
     pub fn builder() -> PackagesBuilder {
         PackagesBuilder::new()
     }
@@ -127,6 +127,15 @@ impl fmt::Display for PackageRecord {
 }
 
 impl PackageRecord {
+    /// Starts a standalone record builder with checked initial identity fields.
+    ///
+    /// # Errors
+    ///
+    /// Returns an error for an invalid package name or version.
+    pub fn builder(package: &str, version: &str) -> Result<RecordBuilder, BuildError> {
+        RecordBuilder::new(package, version)
+    }
+
     /// Returns the last value whose field name exactly equals `name`.
     pub fn field(&self, name: &str) -> Option<ValueText> {
         self.record.last_field(name).map(|field| field.value())

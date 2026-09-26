@@ -1,8 +1,8 @@
-use std::{error::Error, fmt};
+use std::{borrow::Borrow, error::Error, fmt};
 
 use r_dcf_syntax::{FieldName, InvalidFieldName, InvalidLogicalValue, LogicalValue};
 
-use crate::{FormatStyle, Packages, RecordBuilder};
+use crate::{LineEnding, PackageRecord, Packages, builder::separate_record};
 
 /// A failure to apply an immutable structured edit.
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -120,22 +120,22 @@ impl Packages {
             .map_err(Into::into)
     }
 
-    /// Appends a clean record using `style`, preserving all existing text.
-    pub fn append_record(&self, record: &RecordBuilder, style: &FormatStyle) -> Self {
-        let source = self.to_string();
-        let rendered = record.render(style);
-        let ending = style.line_ending.as_str();
-        let has_blank_separator = source
-            .strip_suffix(ending)
-            .is_some_and(|prefix| prefix.ends_with(ending));
-        let separator = if source.is_empty() || has_blank_separator {
-            String::new()
-        } else if source.ends_with(ending) {
-            ending.to_owned()
-        } else {
-            format!("{ending}{ending}")
-        };
-        Self::parse(&format!("{source}{separator}{rendered}"))
+    /// Appends an owned or borrowed record, preserving all existing document text.
+    /// Reuses existing blank separators, completing an unterminated blank line
+    /// when necessary. Otherwise uses the preceding newline convention, or
+    /// `line_ending` if the last record has no trailing newline.
+    ///
+    /// This immutable edit copies and reparses the document. For bulk construction,
+    /// use [`Self::from_records`] or [`Self::builder`] instead of repeated appends.
+    pub fn append_record(
+        &self,
+        record: impl Borrow<PackageRecord>,
+        line_ending: LineEnding,
+    ) -> Self {
+        let mut source = self.to_string();
+        separate_record(&mut source, line_ending);
+        source.push_str(&record.borrow().to_string());
+        Self::parse(&source)
     }
 
     /// Removes a complete record and its adjacent record separator.

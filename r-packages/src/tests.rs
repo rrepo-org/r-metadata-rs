@@ -1,6 +1,6 @@
 use static_assertions::assert_impl_all;
 
-use crate::{FindingKind, FormatStyle, Packages, PackagesBuilder, RecordBuilder};
+use crate::{FindingKind, FormatStyle, LineEnding, Packages, PackagesBuilder, RecordBuilder};
 
 assert_impl_all!(Packages: Clone, Send, Sync);
 
@@ -57,8 +57,9 @@ fn builder_emits_structurally_clean_records() {
     let first = RecordBuilder::new("alpha", "1.0")
         .unwrap()
         .field("Title", "One\nTwo")
-        .unwrap();
-    let second = RecordBuilder::new("beta", "2.0").unwrap();
+        .unwrap()
+        .build();
+    let second = RecordBuilder::new("beta", "2.0").unwrap().build();
     let packages = PackagesBuilder::new().record(first).record(second).build();
     assert_eq!(packages.len(), 2);
     assert!(packages.validate().is_empty());
@@ -72,12 +73,13 @@ fn builder_emits_structurally_clean_records() {
         ..FormatStyle::default()
     };
     let clean = PackagesBuilder::new()
-        .format_style(unsafe_style)
         .record(
             RecordBuilder::new("alpha", "1.0")
                 .unwrap()
                 .field("Title", "One\nTwo")
-                .unwrap(),
+                .unwrap()
+                .format_style(unsafe_style)
+                .build(),
         )
         .build();
     assert!(clean.validate().is_empty());
@@ -105,15 +107,15 @@ fn edits_are_immutable_and_record_scoped() {
         .unwrap();
     assert_eq!(removed.len(), 1);
     let appended = removed.append_record(
-        &RecordBuilder::new("gamma", "3.0").unwrap(),
-        &FormatStyle::default(),
+        RecordBuilder::new("gamma", "3.0").unwrap().build(),
+        LineEnding::Lf,
     );
     assert_eq!(appended.len(), 2);
 
     let trailing_blank = Packages::parse("Package: alpha\nVersion: 1.0\n\n");
     let appended = trailing_blank.append_record(
-        &RecordBuilder::new("beta", "2.0").unwrap(),
-        &FormatStyle::default(),
+        RecordBuilder::new("beta", "2.0").unwrap().build(),
+        LineEnding::Lf,
     );
     assert_eq!(appended.to_string().matches("\n\n\n").count(), 0);
 }

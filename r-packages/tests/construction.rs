@@ -30,11 +30,8 @@ fn all_boundary_combinations_keep_records_and_values_separate() {
                 let last = format!("X-Last:\t東京{last_ending}");
                 let inputs = [record(&first), record(&last)];
                 let packages = Packages::builder()
-                    .existing_records(&inputs)
-                    .format_style(FormatStyle {
-                        line_ending,
-                        ..FormatStyle::default()
-                    })
+                    .records(&inputs)
+                    .line_ending(line_ending)
                     .build();
                 let separator = if first_ending.is_empty() {
                     line_ending.as_str().repeat(2)
@@ -96,9 +93,9 @@ fn normalized_descriptions_compose_with_new_records() {
     let assembled = Packages::from_records(&records);
     assert_eq!(assembled.len(), 2);
     let mixed = Packages::builder()
-        .existing_record(&records[0])
-        .record(RecordBuilder::new("middle", "2.0").unwrap())
-        .existing_record(records[1].clone())
+        .record(&records[0])
+        .record(RecordBuilder::new("middle", "2.0").unwrap().build())
+        .record(records[1].clone())
         .build();
     let names = mixed
         .records()
@@ -110,22 +107,108 @@ fn normalized_descriptions_compose_with_new_records() {
 }
 
 #[test]
-fn builder_formatting_applies_only_to_new_records() {
+fn record_formatting_is_independent_of_document_boundaries() {
     let existing = record("X: preserved\n\tindent\n");
-    let packages = Packages::builder()
-        .record(RecordBuilder::new("alpha", "1.0").unwrap())
-        .existing_record(existing)
-        .record(RecordBuilder::new("beta", "2.0").unwrap())
+    let first = PackageRecord::builder("alpha", "1.0")
+        .unwrap()
         .format_style(FormatStyle {
             line_ending: LineEnding::CrLf,
             space_after_colon: false,
             ..FormatStyle::default()
         })
         .build();
+    assert_eq!(first.to_string(), "Package:alpha\r\nVersion:1.0");
+    let packages = Packages::builder()
+        .record(&first)
+        .record(existing)
+        .record(PackageRecord::builder("beta", "2.0").unwrap().build())
+        .line_ending(LineEnding::Cr)
+        .build();
     assert_eq!(
         packages.to_string(),
-        "Package:alpha\r\nVersion:1.0\r\n\r\nX: preserved\n\tindent\n\nPackage:beta\r\nVersion:2.0"
+        "Package:alpha\r\nVersion:1.0\r\rX: preserved\n\tindent\n\nPackage: beta\nVersion: 2.0"
     );
+}
+
+#[test]
+fn standalone_builder_checks_structure_but_leaves_semantics_explicit() {
+    assert!(PackageRecord::builder("bad name", "1.0").is_err());
+    assert!(PackageRecord::builder("alpha", "nope").is_err());
+    assert!(
+        PackageRecord::builder("alpha", "1.0")
+            .unwrap()
+            .field("Bad Name", "value")
+            .is_err()
+    );
+    let built = PackageRecord::builder("alpha", "1.0")
+        .unwrap()
+        .field("X-Custom", "café\n東京")
+        .unwrap()
+        .field("Version", "nope")
+        .unwrap()
+        .format_style(FormatStyle {
+            continuation_indent: "invalid".to_owned(),
+            ..FormatStyle::default()
+        })
+        .build();
+    assert_eq!(built.fields("Version").count(), 2);
+    assert_eq!(built.field("X-Custom").unwrap().as_str(), "café\n東京");
+    assert!(built.parsed_version().unwrap().is_err());
+    let description = Description::from(&built);
+    assert!(description.diagnostics().is_empty());
+    assert_eq!(
+        PackageRecord::try_from(description).unwrap().to_string(),
+        built.to_string()
+    );
+    assert!(!Packages::from_records([built]).validate().is_empty());
+}
+
+#[test]
+fn append_and_assembly_share_boundaries_for_all_record_origins() {
+    let inputs = [
+        record(" orphan\nVersion: nope"),
+        PackageRecord::builder("alpha", "1.0").unwrap().build(),
+    ];
+    for ending in ["", "\n", "\r\n", "\r"] {
+        let text = format!("Package: first{ending}");
+        let original = Packages::parse(&text);
+        for line_ending in [LineEnding::Lf, LineEnding::CrLf, LineEnding::Cr] {
+            for input in &inputs {
+                let appended = original.append_record(input, line_ending);
+                let assembled = Packages::builder()
+                    .records(original.records())
+                    .record(input)
+                    .line_ending(line_ending)
+                    .build();
+                assert_eq!(appended.to_string(), assembled.to_string());
+                assert_eq!(appended.len(), 2);
+                assert_eq!(appended.record(1).unwrap().to_string(), input.to_string());
+            }
+        }
+        assert_eq!(original.to_string(), text);
+    }
+}
+
+#[test]
+fn append_preserves_and_completes_existing_blank_separators() {
+    let next = record("X: next");
+    for (source, expected_prefix) in [
+        ("", ""),
+        ("\n", "\n"),
+        (" \t", " \t\n"),
+        ("X: old\n\n", "X: old\n\n"),
+        ("X: old\r\n \t\r\n", "X: old\r\n \t\r\n"),
+        ("X: old\r\r\r", "X: old\r\r\r"),
+        ("X: old\r\n \t", "X: old\r\n \t\r\n"),
+        ("X: old\r\u{c}", "X: old\r\u{c}\r"),
+        ("X: old\n\r\n \t\n", "X: old\n\r\n \t\n"),
+    ] {
+        let original = Packages::parse(source);
+        let appended = original.append_record(&next, LineEnding::Lf);
+        assert_eq!(appended.to_string(), format!("{expected_prefix}X: next"));
+        assert_eq!(appended.len(), original.len() + 1);
+        assert_eq!(original.to_string(), source);
+    }
 }
 
 #[test]
