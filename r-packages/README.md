@@ -65,6 +65,71 @@ blank-only documents return `RecordConversionError::NoRecords`; multiple records
 return `RecordConversionError::MultipleRecords`. A single malformed record is
 accepted. These conversions do not generate a filtered repository index.
 
+## Constructing documents from existing records
+
+`Packages::from_records` accepts an iterator of owned or borrowed package records.
+Normalization remains an explicit caller choice:
+
+```rust
+use r_description::{Description, LogicalValue};
+use r_packages::{PackageRecord, Packages};
+
+let mut records = Vec::new();
+for name in ["alpha", "beta"] {
+    let description = Description::builder()
+        .package(LogicalValue::new(name).unwrap())
+        .version(LogicalValue::new("1.0").unwrap())
+        .build()
+        .normalize()
+        .unwrap();
+    records.push(PackageRecord::try_from(description).unwrap());
+}
+let packages = Packages::from_records(&records);
+assert_eq!(packages.len(), 2);
+
+let mixed = Packages::builder()
+    .record(&records[0])
+    .record(PackageRecord::builder("gamma", "2.0").unwrap().build())
+    .records(&records[1..])
+    .build();
+assert_eq!(mixed.len(), 3);
+```
+
+Assembly preserves record order and all record-local text, including custom and
+duplicate fields, multiline values, Unicode, and malformed content. It does not
+normalize, sort, deduplicate, filter, or validate existing records. Builder format
+settings belong to `RecordBuilder::format_style(...)`: every record is built
+independently before being assembled. `RecordBuilder::new(...)` is equivalent to
+`PackageRecord::builder(...)`. Initial package/version fields are checked and
+added fields must be structurally representable; full semantic validation remains
+explicit, including for duplicate identity fields.
+
+Empty input produces empty text. A single existing record is unchanged. Between
+records, assembly inserts one blank separator line: if the preceding record has a
+trailing newline, that newline convention is reused for the separator; otherwise,
+two line endings configured by `PackagesBuilder::line_ending(...)` are added (LF
+by default). This setting never reformats record content. The final record's newline
+state is preserved. Document-level blank lines surrounding an original record
+are not part of the record and are not copied.
+
+Construction appends text into one buffer and parses the completed document once,
+with time and memory proportional to total input/output size.
+
+For occasional immutable edits, `packages.append_record(&record, LineEnding::Lf)`
+returns an updated document while preserving the original document text and
+reusing existing blank separators. It uses the same boundary rules as assembly,
+completing an unterminated trailing blank line when necessary. Repeated append
+copies and reparses the growing document; use bulk assembly for large indexes.
+
+### Migrating to 0.4
+
+- Build standalone records with `RecordBuilder::build()` before passing them to
+  `.record(...)` or `append_record(...)`.
+- Move `.format_style(...)` from the document builder to the record builder.
+- Use `.record(...)` and `.records(...)` for all record origins; no separate
+  existing-record API is needed.
+- Pass a `LineEnding` to `append_record` instead of a `FormatStyle`.
+
 ## License
 
 MIT

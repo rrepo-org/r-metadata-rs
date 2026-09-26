@@ -16,7 +16,7 @@ mod conversion;
 mod edit;
 mod validation;
 
-use std::{fmt, str::Utf8Error};
+use std::{borrow::Borrow, fmt, str::Utf8Error};
 
 use r_dcf_syntax::{Field, Parse, ValueText};
 use r_metadata::{
@@ -40,7 +40,19 @@ pub struct Packages {
 }
 
 impl Packages {
-    /// Starts a canonical `PACKAGES` builder.
+    /// Assembles owned or borrowed records in iteration order without normalization
+    /// or validation. Empty input produces an empty document.
+    ///
+    /// Record-local text is preserved. Between records, adds one blank line using
+    /// the preceding trailing newline convention, or two LF line endings if the
+    /// preceding record has no newline. The final record is unchanged.
+    /// Construction takes linear time and memory in the total text size.
+    /// See [`PackagesBuilder`] for mixing existing and newly constructed records.
+    pub fn from_records<R: Borrow<PackageRecord>>(records: impl IntoIterator<Item = R>) -> Self {
+        Self::builder().records(records).build()
+    }
+
+    /// Starts a lossless `PACKAGES` assembly builder.
     pub fn builder() -> PackagesBuilder {
         PackagesBuilder::new()
     }
@@ -115,6 +127,15 @@ impl fmt::Display for PackageRecord {
 }
 
 impl PackageRecord {
+    /// Starts a standalone record builder with checked initial identity fields.
+    ///
+    /// # Errors
+    ///
+    /// Returns an error for an invalid package name or version.
+    pub fn builder(package: &str, version: &str) -> Result<RecordBuilder, BuildError> {
+        RecordBuilder::new(package, version)
+    }
+
     /// Returns the last value whose field name exactly equals `name`.
     pub fn field(&self, name: &str) -> Option<ValueText> {
         self.record.last_field(name).map(|field| field.value())
