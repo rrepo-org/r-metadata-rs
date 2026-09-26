@@ -16,7 +16,7 @@ mod conversion;
 mod edit;
 mod validation;
 
-use std::{fmt, str::Utf8Error};
+use std::{borrow::Borrow, fmt, str::Utf8Error};
 
 use r_dcf_syntax::{Field, Parse, ValueText};
 use r_metadata::{
@@ -40,6 +40,18 @@ pub struct Packages {
 }
 
 impl Packages {
+    /// Assembles owned or borrowed records in iteration order without normalization
+    /// or validation. Empty input produces an empty document.
+    ///
+    /// Record-local text is preserved. Between records, adds one blank line using
+    /// the preceding trailing newline convention, or two LF line endings if the
+    /// preceding record has no newline. The final record is unchanged.
+    /// Construction takes linear time and memory in the total text size.
+    /// See [`PackagesBuilder`] for mixing existing and newly constructed records.
+    pub fn from_records<R: Borrow<PackageRecord>>(records: impl IntoIterator<Item = R>) -> Self {
+        Self::builder().existing_records(records).build()
+    }
+
     /// Starts a canonical `PACKAGES` builder.
     pub fn builder() -> PackagesBuilder {
         PackagesBuilder::new()

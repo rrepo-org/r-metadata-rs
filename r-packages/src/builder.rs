@@ -1,9 +1,9 @@
-use std::{error::Error, fmt};
+use std::{borrow::Borrow, error::Error, fmt};
 
 use r_dcf_syntax::{FieldName, InvalidFieldName, InvalidLogicalValue, LogicalValue, make};
 use r_metadata::{Version, VersionParseError};
 
-use crate::{FormatStyle, Packages, validation::valid_package_name};
+use crate::{FormatStyle, PackageRecord, Packages, validation::valid_package_name};
 
 /// An invalid value supplied to a structural builder.
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -91,10 +91,19 @@ impl RecordBuilder {
     }
 }
 
-/// A builder for a structurally clean zero-or-more-record `PACKAGES` file.
+#[derive(Debug, Clone)]
+enum RecordInput {
+    New(RecordBuilder),
+    Existing(String),
+}
+
+/// A builder for a zero-or-more-record `PACKAGES` file.
+///
+/// Newly built records are structurally validated; existing records are preserved
+/// without normalization or validation.
 #[derive(Debug, Clone, Default)]
 pub struct PackagesBuilder {
-    records: Vec<RecordBuilder>,
+    records: Vec<RecordInput>,
     style: FormatStyle,
 }
 
@@ -104,7 +113,9 @@ impl PackagesBuilder {
         Self::default()
     }
 
-    /// Sets formatting used for every subsequently rendered field and record.
+    /// Sets formatting for all newly built records, including those already added.
+    /// Existing record text is unaffected. Also supplies boundary line endings
+    /// when the preceding record has no trailing newline.
     pub fn format_style(mut self, style: FormatStyle) -> Self {
         self.style = style;
         self
@@ -112,19 +123,63 @@ impl PackagesBuilder {
 
     /// Appends one validated record.
     pub fn record(mut self, record: RecordBuilder) -> Self {
-        self.records.push(record);
+        self.records.push(RecordInput::New(record));
         self
     }
 
-    /// Constructs the persistent document directly from clean rendered text.
+    /// Appends an owned or borrowed record, preserving its exact text.
+    /// No normalization, filtering, or validation is performed.
+    pub fn existing_record(mut self, record: impl Borrow<PackageRecord>) -> Self {
+        self.records
+            .push(RecordInput::Existing(record.borrow().to_string()));
+        self
+    }
+
+    /// Appends owned or borrowed records in iteration order.
+    pub fn existing_records<R: Borrow<PackageRecord>>(
+        mut self,
+        records: impl IntoIterator<Item = R>,
+    ) -> Self {
+        self.records.extend(
+            records
+                .into_iter()
+                .map(|record| RecordInput::Existing(record.borrow().to_string())),
+        );
+        self
+    }
+
+    /// Constructs the document in linear time and memory in the total text size.
+    ///
+    /// Empty input produces empty text. Existing record text is retained verbatim,
+    /// with one blank line inserted between records. A preceding record's trailing
+    /// line ending supplies the separator convention; if absent, two configured
+    /// line endings are inserted. The final record's newline state is preserved.
+    /// The completed text is parsed once, retaining malformed content and findings.
     pub fn build(self) -> Packages {
         let style = clean_style(&self.style);
-        let records = self
-            .records
-            .iter()
-            .map(|record| record.render(&style))
-            .collect::<Vec<_>>();
-        Packages::parse(&make::document(&records, &style))
+        let mut output = String::new();
+        for record in self.records {
+            if !output.is_empty() {
+                // Reuse the preceding delimiter to avoid coalescing a lone CR
+                // and an inserted LF into a single CRLF (losing the blank line).
+                let separator = if output.ends_with("\r\n") {
+                    "\r\n"
+                } else if output.ends_with('\r') {
+                    "\r"
+                } else if output.ends_with('\n') {
+                    "\n"
+                } else {
+                    output.push_str(style.line_ending.as_str());
+                    style.line_ending.as_str()
+                };
+                output.push_str(separator);
+            }
+            match record {
+                RecordInput::New(record) => output.push_str(&record.render(&style)),
+                RecordInput::Existing(text) => output.push_str(&text),
+            }
+        }
+        Packages::parse(&output)
     }
 }
 

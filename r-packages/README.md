@@ -65,6 +65,51 @@ blank-only documents return `RecordConversionError::NoRecords`; multiple records
 return `RecordConversionError::MultipleRecords`. A single malformed record is
 accepted. These conversions do not generate a filtered repository index.
 
+## Constructing documents from existing records
+
+`Packages::from_records` accepts an iterator of owned or borrowed package records.
+Normalization remains an explicit caller choice:
+
+```rust
+use r_description::{Description, LogicalValue};
+use r_packages::{PackageRecord, Packages, RecordBuilder};
+
+let mut records = Vec::new();
+for name in ["alpha", "beta"] {
+    let description = Description::builder()
+        .package(LogicalValue::new(name).unwrap())
+        .version(LogicalValue::new("1.0").unwrap())
+        .build()
+        .normalize()
+        .unwrap();
+    records.push(PackageRecord::try_from(description).unwrap());
+}
+let packages = Packages::from_records(&records);
+assert_eq!(packages.len(), 2);
+
+let mixed = Packages::builder()
+    .existing_record(&records[0])
+    .record(RecordBuilder::new("gamma", "2.0").unwrap())
+    .existing_records(&records[1..])
+    .build();
+assert_eq!(mixed.len(), 3);
+```
+
+Assembly preserves record order and all record-local text, including custom and
+duplicate fields, multiline values, Unicode, and malformed content. It does not
+normalize, sort, deduplicate, filter, or validate existing records. Builder format
+settings apply to newly constructed records, not existing text.
+
+Empty input produces empty text. A single existing record is unchanged. Between
+records, assembly inserts one blank separator line: if the preceding record has a
+trailing newline, that newline convention is reused for the separator; otherwise,
+two configured line endings are added (LF by default). The final record's newline
+state is preserved. Document-level blank lines surrounding an original record
+are not part of the record and are not copied.
+
+Construction appends text into one buffer and parses the completed document once,
+with time and memory proportional to total input/output size.
+
 ## License
 
 MIT
